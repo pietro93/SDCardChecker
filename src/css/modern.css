@@ -81,7 +81,7 @@ border-bottom: 1px solid #e5e5e5;
 padding: 0;
 position: sticky;
 top: 0;
-z-index: 1000;
+z-index: 50;
 backdrop-filter: blur(8px);
 }
 
@@ -328,7 +328,7 @@ label {
   border-radius: 6px;
   max-height: 350px;
   overflow-y: auto;
-  z-index: 100;
+  z-index: 50;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -653,7 +653,7 @@ label {
   border-radius: 6px;
   max-height: 400px;
   overflow-y: auto;
-  z-index: 50;
+  z-index: 20;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   display: block;
 }
