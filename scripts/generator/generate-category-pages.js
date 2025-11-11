@@ -74,7 +74,7 @@ const categoryIntro = getCategoryIntro(category);
       { name: "Home", url: "/" },
       { name: category, url: `/categories/${categorySlug}/` }
     ];
-    const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, baseUrl);
+    const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 
     let html = template
         .replace(/{{CATEGORY_TITLE}}/g, categoryTitle)

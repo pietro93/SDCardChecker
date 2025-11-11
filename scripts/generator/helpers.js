@@ -151,7 +151,7 @@ function getCardImageFallback(card) {
 /**
  * Generate BreadcrumbList schema for breadcrumb navigation
  */
-function generateBreadcrumbSchema(breadcrumbs, baseUrl) {
+function generateBreadcrumbSchema(breadcrumbs, baseUrl = "https://sdcardchecker.com") {
   const itemListElements = breadcrumbs.map((item, index) => ({
     "@type": "ListItem",
     "position": index + 1,
@@ -169,7 +169,7 @@ function generateBreadcrumbSchema(breadcrumbs, baseUrl) {
 /**
  * Generate Product schema for SD card recommendations
  */
-function generateProductSchema(brandReferences, sdcardsMap, baseUrl) {
+function generateProductSchema(brandReferences, sdcardsMap, baseUrl = "https://sdcardchecker.com") {
   const products = brandReferences
     .slice(0, 3) // Top 3 recommendations
     .map((ref) => {

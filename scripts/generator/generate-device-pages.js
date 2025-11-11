@@ -208,7 +208,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
 
     const relatedDevicesSection = generateRelatedDevices(device, allDevices);
     const faqSchema = generateFAQSchema(faqsWithFirstQuestion);
-    const productSchema = generateProductSchema(device.recommendedBrands, sdcardsMap, baseUrl);
+    const productSchema = generateProductSchema(device.recommendedBrands, sdcardsMap);
     
     // Generate breadcrumb schema
     const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
@@ -217,7 +217,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
       { name: device.category, url: `/categories/${categorySlug}/` },
       { name: device.name, url: `/devices/${device.slug}/` }
     ];
-    const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, baseUrl);
+    const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 
     const deviceIcon = getCategoryIcon(device.category);
 
