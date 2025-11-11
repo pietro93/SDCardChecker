@@ -961,14 +961,13 @@ label {
 }
 
 .faq-answer.open {
-  display: block;
+   display: block;
 }
 
 /* ============================================
     Trust Indicators Section
     ============================================ */
-    
-    
+
 .trust-indicators {
   background: transparent;
   padding: 0;
@@ -1020,11 +1019,11 @@ label {
     ============================================ */
 
 .related-devices {
-   background: white;
-   padding: 2rem;
-   border-radius: 6px;
-   margin-bottom: 2rem;
-   border: 1px solid #e5e5e5;
+  background: white;
+  padding: 2rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  border: 1px solid #e5e5e5;
 }
 
 .devices-grid {
@@ -1202,9 +1201,9 @@ Sidebar Navigation (Tailwind-based, in components.js)
   .trust-indicators {
     padding: 2rem 0;
   }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
   h1 {
     font-size: 1.5rem;
   }
