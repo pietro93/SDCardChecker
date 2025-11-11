@@ -37,7 +37,7 @@ function generateSitemap(allDevices, distPath) {
   // Add category pages
   const categories = [...new Set(allDevices.map((d) => d.category))];
   categories.forEach((category) => {
-    const slug = category.toLowerCase().replace(/\s+/g, "-").replace(/&/g, "&amp;");
+    const slug = category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
     sitemapXML += `  <url>
      <loc>https://sdcardchecker.com/categories/${slug}/</loc>
     <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
