@@ -8,6 +8,7 @@
     "build:site": "node scripts/generator/build.js",
     "clean:dist": "rimraf dist",
     "build": "npm run clean:dist && npm run build:css && npm run build:site && npx http-server dist",
+    "build:prod": "npm run clean:dist && npm run build:css && npm run build:site",
     "dev": "npm run build:site && concurrently \"tailwindcss -i ./src/css/input.css -o ./src/css/tailwind.css --watch\" \"npm run build:site\" \"http-server dist\"",
     "start": "http-server dist"
   },
@@ -30,9 +31,5 @@
     "postcss-cli": "^10.1.0",
     "rimraf": "^5.0.10",
     "tailwindcss": "^3.3.6"
-  },
-  "dependencies": {
-    "@heroui/react": "^2.8.5",
-    "framer-motion": "^12.23.24"
   }
 }
