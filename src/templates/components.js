@@ -18,16 +18,16 @@ return `<!-- Header -->
       Devices
       <i class="fas fa-chevron-down text-xs"></i>
       </a>
-      <div class="absolute left-0 top-full pt-0 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-      <div class="bg-white rounded-lg shadow-lg border border-slate-200 mt-2">
-      <a href="/categories/action-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">Action Cameras</a>
-      <a href="/categories/computing-and-tablets/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Computing & Tablets</a>
-      <a href="/categories/drones/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Drones</a>
-      <a href="/categories/gaming-handhelds/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Gaming Handhelds</a>
-      <a href="/categories/mirrorless-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Mirrorless Cameras</a>
-       <a href="/categories/security-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Security Cameras</a>
+      <div class="absolute left-0 top-full pt-2 w-48 hidden group-hover:block">
+      <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+       <a href="/categories/action-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">Action Cameras</a>
+       <a href="/categories/computing-and-tablets/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Computing & Tablets</a>
+       <a href="/categories/drones/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Drones</a>
+       <a href="/categories/gaming-handhelds/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Gaming Handhelds</a>
+       <a href="/categories/mirrorless-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Mirrorless Cameras</a>
+        <a href="/categories/security-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Security Cameras</a>
+        </div>
        </div>
-      </div>
       </div>
 
       <div class="relative group flex items-center">
@@ -35,13 +35,13 @@ return `<!-- Header -->
       Resources
       <i class="fas fa-chevron-down text-xs"></i>
       </a>
-      <div class="absolute left-0 top-full pt-0 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-      <div class="bg-white rounded-lg shadow-lg border border-slate-200 mt-2">
-      <a href="/sd-card-guide.html" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SD Card Guide</a>
-      <a href="/speed-classes.html" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Speed Classes</a>
-      <a href="/faq.html" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">FAQ</a>
-      </div>
-      </div>
+      <div class="absolute left-0 top-full pt-2 w-48 hidden group-hover:block">
+      <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+       <a href="/sd-card-guide.html" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SD Card Guide</a>
+       <a href="/speed-classes.html" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Speed Classes</a>
+       <a href="/faq.html" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">FAQ</a>
+       </div>
+       </div>
       </div>
 
       <a href="/about.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">About</a>

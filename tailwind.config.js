@@ -2,11 +2,15 @@
 module.exports = {
   content: [
     "./src/templates/**/*.html",
+    "./src/templates/**/*.js",
     "./src/js/**/*.js",
   ],
   safelist: [
     "md:min-w-[315px]",
     "md:max-w-[380px]",
+    "hidden",
+    "group-hover:block",
+    "group-hover:opacity-100",
   ],
   theme: {
     extend: {
