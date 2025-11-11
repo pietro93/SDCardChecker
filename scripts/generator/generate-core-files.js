@@ -5,7 +5,7 @@
 
 const path = require("path");
 const { readTemplate, writeFile } = require("./helpers");
-const { generateHeader, generateFooter, generateSidebar } = require("../../src/templates/components");
+const { generateHeader, generateFooter, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 
 const srcPath = path.join(__dirname, "../../src");
 
@@ -70,13 +70,15 @@ function generateLegalPages(distPath) {
 const header = generateHeader();
 const footer = generateFooter();
 const sidebar = generateSidebar();
+const growScript = generateGrowScript();
 
 // Generate Privacy Policy
 const privacyTemplate = readTemplate(path.join(srcPath, "templates/privacy.html"));
 const privacyHtml = privacyTemplate
 .replace("{{HEADER}}", header)
 .replace("{{FOOTER}}", footer)
-.replace("{{SIDEBAR}}", sidebar);
+.replace("{{SIDEBAR}}", sidebar)
+.replace("{{GROW_SCRIPT}}", growScript);
 writeFile(path.join(distPath, "privacy.html"), privacyHtml);
 
 // Generate Terms of Use
@@ -84,7 +86,8 @@ const termsTemplate = readTemplate(path.join(srcPath, "templates/terms.html"));
 const termsHtml = termsTemplate
 .replace("{{HEADER}}", header)
 .replace("{{FOOTER}}", footer)
-.replace("{{SIDEBAR}}", sidebar);
+.replace("{{SIDEBAR}}", sidebar)
+.replace("{{GROW_SCRIPT}}", growScript);
 writeFile(path.join(distPath, "terms.html"), termsHtml);
 
 // Generate Affiliate Disclosure
@@ -92,7 +95,8 @@ const affiliateTemplate = readTemplate(path.join(srcPath, "templates/affiliate-d
 const affiliateHtml = affiliateTemplate
 .replace("{{HEADER}}", header)
 .replace("{{FOOTER}}", footer)
-.replace("{{SIDEBAR}}", sidebar);
+.replace("{{SIDEBAR}}", sidebar)
+.replace("{{GROW_SCRIPT}}", growScript);
 writeFile(path.join(distPath, "affiliate-disclosure.html"), affiliateHtml);
 
 // Generate About Page
@@ -100,7 +104,8 @@ const aboutTemplate = readTemplate(path.join(srcPath, "templates/about.html"));
 const aboutHtml = aboutTemplate
   .replace("{{HEADER}}", header)
   .replace("{{FOOTER}}", footer)
-  .replace("{{SIDEBAR}}", sidebar);
+  .replace("{{SIDEBAR}}", sidebar)
+  .replace("{{GROW_SCRIPT}}", growScript);
 writeFile(path.join(distPath, "about.html"), aboutHtml);
 
 // Generate Contact Page
@@ -108,7 +113,8 @@ const contactTemplate = readTemplate(path.join(srcPath, "templates/contact.html"
 const contactHtml = contactTemplate
   .replace("{{HEADER}}", header)
   .replace("{{FOOTER}}", footer)
-  .replace("{{SIDEBAR}}", sidebar);
+  .replace("{{SIDEBAR}}", sidebar)
+  .replace("{{GROW_SCRIPT}}", growScript);
 writeFile(path.join(distPath, "contact.html"), contactHtml);
 
 // Generate Sitemap Page
@@ -116,7 +122,8 @@ const sitemapTemplate = readTemplate(path.join(srcPath, "templates/sitemap.html"
 const sitemapHtml = sitemapTemplate
   .replace("{{HEADER}}", header)
   .replace("{{FOOTER}}", footer)
-  .replace("{{SIDEBAR}}", sidebar);
+  .replace("{{SIDEBAR}}", sidebar)
+  .replace("{{GROW_SCRIPT}}", growScript);
 writeFile(path.join(distPath, "sitemap.html"), sitemapHtml);
 }
 
@@ -126,10 +133,12 @@ writeFile(path.join(distPath, "sitemap.html"), sitemapHtml);
 function generateHomepage(distPath) {
 const header = generateHeader();
 const footer = generateFooter();
+const growScript = generateGrowScript();
    const homeTemplate = readTemplate(path.join(srcPath, "templates/home.html"));
    const homeHtml = homeTemplate
      .replace("{{HEADER}}", header)
-     .replace("{{FOOTER}}", footer);
+     .replace("{{FOOTER}}", footer)
+     .replace("{{GROW_SCRIPT}}", growScript);
    writeFile(path.join(distPath, "index.html"), homeHtml);
 }
 

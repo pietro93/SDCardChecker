@@ -5,7 +5,7 @@
 const path = require("path");
 const fs = require("fs");
 const { readTemplate, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices } = require("./helpers");
-const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar } = require("../../src/templates/components");
+const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 const { generateFAQs, mergeFAQs } = require("./generateFAQs");
 
 const srcPath = path.join(__dirname, "../../src");
@@ -246,6 +246,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{SIDEBAR}}/g, generateSidebar())
         .replace(/{{HEADER}}/g, generateHeader())
         .replace(/{{FOOTER}}/g, generateFooter())
+        .replace(/{{GROW_SCRIPT}}/g, generateGrowScript())
         .replace(/{{AFFILIATE_DISCLOSURE}}/g, generateAffiliateDisclosure(true));
 
     return html;

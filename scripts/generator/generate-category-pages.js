@@ -4,7 +4,7 @@
 
 const path = require("path");
 const { readTemplate, writeFile, generateBreadcrumbSchema, getDeviceImageFallback } = require("./helpers");
-const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar } = require("../../src/templates/components");
+const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 
 const srcPath = path.join(__dirname, "../../src");
 
@@ -87,6 +87,7 @@ const categoryIntro = getCategoryIntro(category);
         .replace(/{{SIDEBAR}}/g, generateSidebar())
         .replace(/{{HEADER}}/g, generateHeader())
         .replace(/{{FOOTER}}/g, generateFooter())
+        .replace(/{{GROW_SCRIPT}}/g, generateGrowScript())
         .replace(/{{AFFILIATE_DISCLOSURE}}/g, "");
 
     return html;

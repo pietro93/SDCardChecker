@@ -5,7 +5,7 @@
 
 const path = require("path");
 const { readTemplate, writeFile } = require("./helpers");
-const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar } = require("../../src/templates/components");
+const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 
 const srcPath = path.join(__dirname, "../../src");
 
@@ -20,6 +20,7 @@ function generateResourcePage(templatePath, distPath, fileName) {
         .replace(/{{SIDEBAR}}/g, generateSidebar())
         .replace(/{{HEADER}}/g, generateHeader())
         .replace(/{{FOOTER}}/g, generateFooter())
+        .replace(/{{GROW_SCRIPT}}/g, generateGrowScript())
         .replace(/{{AFFILIATE_DISCLOSURE}}/g, generateAffiliateDisclosure());
 
     const outputPath = path.join(distPath, fileName);
