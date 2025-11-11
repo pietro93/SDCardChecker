@@ -31,77 +31,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="/assets/js/search.js"></script>
-
-    <style>
-        /* Trust Indicators Section Styles */
-        .trust-indicators {
-            background: transparent;
-            padding: 0;
-            border-top: none;
-            border-bottom: none;
-        }
-
-        .indicators-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .indicator-card {
-            text-align: center;
-            padding: 2rem;
-            border-radius: 12px;
-            background: white;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .indicator-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        }
-
-        .indicator-number {
-            font-size: 2.5rem;
-            font-weight: 900;
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.5rem;
-        }
-
-        .indicator-label {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #475569;
-            letter-spacing: 0.5px;
-        }
-
-        @media (max-width: 768px) {
-            .trust-indicators {
-                padding: 2rem 0;
-            }
-
-            .indicators-grid {
-                gap: 1.5rem;
-            }
-
-            .indicator-card {
-                padding: 1.5rem;
-            }
-
-            .indicator-number {
-                font-size: 2rem;
-            }
-
-            .indicator-label {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -119,7 +48,7 @@
         </div>
 
         <!-- Search Section -->
-        <div class="container" style="position: relative; z-index: 50; margin-top: 2rem;">
+        <div class="container" style="position: relative; z-index: 20; margin-top: 2rem;">
             <div x-data="deviceSearch()" x-init="init()" @click.outside="open = false" class="search-section">
                 <div class="search-container">
                     <i class="fas fa-search search-icon"></i>
