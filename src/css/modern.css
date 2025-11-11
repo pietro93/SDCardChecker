@@ -965,56 +965,6 @@ label {
 }
 
 /* ============================================
-    Trust Indicators Section
-    ============================================ */
-
-.trust-indicators {
-  background: transparent;
-  padding: 0;
-  border-top: none;
-  border-bottom: none;
-}
-
-.indicators-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.indicator-card {
-  text-align: center;
-  padding: 2rem;
-  border-radius: 12px;
-  background: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.indicator-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.indicator-number {
-  font-size: 2.5rem;
-  font-weight: 900;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.5rem;
-}
-
-.indicator-label {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #475569;
-  letter-spacing: 0.5px;
-}
-
-/* ============================================
     Related Devices
     ============================================ */
 
@@ -1181,26 +1131,6 @@ Sidebar Navigation (Tailwind-based, in components.js)
   .footer-content {
      gap: 1.5rem;
    }
-
-  .indicator-card {
-    padding: 1.5rem;
-  }
-
-  .indicators-grid {
-    gap: 1.5rem;
-  }
-
-  .indicator-number {
-    font-size: 2rem;
-  }
-
-  .indicator-label {
-    font-size: 0.9rem;
-  }
-
-  .trust-indicators {
-    padding: 2rem 0;
-  }
 }
 
 @media (max-width: 480px) {
