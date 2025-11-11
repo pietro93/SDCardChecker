@@ -1,0 +1,176 @@
+/**
+ * Reusable HTML components for consistent headers, footers, sidebars
+ */
+
+function generateHeader() {
+return `<!-- Header -->
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+<div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+<a href="/" class="flex items-center gap-3 group">
+<img src="/img/brand/logo.webp" alt="SD Card Checker Logo" class="w-10 h-10 rounded-lg shadow-md group-hover:shadow-lg transition-shadow">
+<span class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">SD Card Checker</span>
+</a>
+    <nav class="flex gap-8 items-center">
+    <a href="/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Home</a>
+    
+    <div class="relative group flex items-center">
+    <a href="#" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1">
+      Devices
+      <i class="fas fa-chevron-down text-xs"></i>
+      </a>
+      <div class="absolute left-0 top-full pt-0 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+      <div class="bg-white rounded-lg shadow-lg border border-slate-200 mt-2">
+      <a href="/categories/action-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">Action Cameras</a>
+      <a href="/categories/computing-and-tablets/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Computing & Tablets</a>
+      <a href="/categories/drones/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Drones</a>
+      <a href="/categories/gaming-handhelds/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Gaming Handhelds</a>
+      <a href="/categories/mirrorless-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Mirrorless Cameras</a>
+       <a href="/categories/security-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Security Cameras</a>
+       </div>
+      </div>
+      </div>
+
+      <div class="relative group flex items-center">
+      <a href="#" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1">
+      Resources
+      <i class="fas fa-chevron-down text-xs"></i>
+      </a>
+      <div class="absolute left-0 top-full pt-0 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+      <div class="bg-white rounded-lg shadow-lg border border-slate-200 mt-2">
+      <a href="/sd-card-guide.html" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SD Card Guide</a>
+      <a href="/speed-classes.html" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Speed Classes</a>
+      <a href="/faq.html" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">FAQ</a>
+      </div>
+      </div>
+      </div>
+
+      <a href="/about.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">About</a>
+    </nav>
+  </div>
+</header>`;
+}
+
+function generateFooter() {
+    return `<!-- Footer -->
+<footer class="bg-slate-900 text-slate-200 py-12 mt-20">
+<div class="max-w-7xl mx-auto px-4">
+<div class="grid md:grid-cols-5 gap-8 mb-8">
+<div>
+<h4 class="font-bold text-white mb-4">Company</h4>
+<ul class="space-y-2 text-sm">
+    <li><a href="/about.html" class="hover:text-white transition-colors">About Us</a></li>
+    <li><a href="/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+
+<div>
+<h4 class="font-bold text-white mb-4">Legal</h4>
+<ul class="space-y-2 text-sm">
+<li><a href="/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+<li><a href="/terms.html" class="hover:text-white transition-colors">Terms of Use</a></li>
+</ul>
+</div>
+
+<div>
+<h4 class="font-bold text-white mb-4">Site</h4>
+<ul class="space-y-2 text-sm">
+<li><a href="/sitemap.xml" class="hover:text-white transition-colors">Sitemap</a></li>
+</ul>
+</div>
+</div>
+
+<div class="border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
+  <p>&copy; 2025 SD Card Checker. All rights reserved.</p>
+</div>
+</div>
+</footer>`;
+}
+
+function generateAffiliateDisclosure(compact = false) {
+    const baseClasses = "border-l-4 border-amber-400 rounded-r-lg";
+    const sizeClasses = compact ? "p-2 mb-4 mx-0" : "p-4 mb-8 mx-4";
+    const bgClass = compact ? "" : "";
+    const opacity = compact ? "opacity-80" : "";
+    const textSize = compact ? "text-xs" : "text-sm";
+
+    return `<!-- Affiliate Disclosure -->
+<section class="${baseClasses} ${sizeClasses} ${bgClass} ${opacity}">
+   <center><p class="${textSize} text-grey-900">
+     <i class="fas fa-circle-info mr-2"></i>
+     <strong>Disclosure:</strong> SD Card Checker contains affiliate links. When you purchase through our links, we earn a small commission at no extra cost to you.
+   </p></center>
+ </section>`;
+}
+
+function generateSidebar() {
+    return `<!-- Right Sidebar Navigation -->
+<aside class="w-full md:w-80 md:min-w-[315px] md:max-w-[380px] flex-shrink-0 mt-12 md:mt-0 md:sticky md:top-20 bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
+  <!-- Search Bar at Top -->
+  <div x-data="deviceSearch()" x-init="init()" @click.outside="open = false" class="relative mb-6">
+    <div class="relative">
+      <i class="fas fa-search absolute left-3 top-3 text-slate-400"></i>
+      <input
+        type="text"
+        x-model="query"
+        @input="filterDevices()"
+        @focus="open = true; filterDevices()"
+        @keydown="handleKeydown($event)"
+        placeholder="Search devices..."
+        class="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+    </div>
+    <div class="absolute top-full left-0 right-0 mt-1 bg-white border border-slate-300 rounded-lg shadow-lg z-50" :class="{ hidden: !open || filtered.length === 0 }">
+      <template x-for="(group, category) in groupedDevices()" :key="category">
+        <div>
+          <div class="px-4 py-2 text-xs font-bold text-slate-500 uppercase bg-slate-50" x-text="category"></div>
+          <template x-for="device in groupedDevices()[category]" :key="device.id">
+            <a :href="\`/devices/\${device.slug}/\`" class="block px-4 py-2 text-slate-700 hover:bg-blue-50 hover:text-blue-600" x-text="device.name"></a>
+          </template>
+        </div>
+      </template>
+    </div>
+  </div>
+
+  <!-- Category Links -->
+  <div class="mb-6 border-t border-slate-200 pt-6">
+  <h3 class="text-sm font-semibold text-slate-900 mb-3">Categories</h3>
+  <ul class="space-y-2">
+  <li><a href="/categories/action-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Action Cameras</a></li>
+  <li><a href="/categories/computing-and-tablets/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Computing & Tablets</a></li>
+  <li><a href="/categories/drones/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Drones</a></li>
+  <li><a href="/categories/gaming-handhelds/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Gaming Handhelds</a></li>
+    <li><a href="/categories/mirrorless-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Mirrorless Cameras</a></li>
+      <li><a href="/categories/security-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Security Cameras</a></li>
+     </ul>
+   </div>
+
+  <!-- Resource Links -->
+  <div class="mb-6 border-t border-slate-200 pt-6">
+    <h3 class="text-sm font-semibold text-slate-900 mb-3">Resources</h3>
+    <ul class="space-y-2">
+      <li><a href="/sd-card-guide.html" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">SD Card Guide</a></li>
+      <li><a href="/speed-classes.html" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Speed Classes</a></li>
+      <li><a href="/faq.html" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">FAQ</a></li>
+    </ul>
+  </div>
+
+  <!-- About Section -->
+  <div class="mb-6 border-t border-slate-200 pt-6">
+    <h3 class="text-sm font-semibold text-slate-900 mb-3">About</h3>
+    <p class="text-sm italic text-slate-600 opacity-80">SD Card Checker helps you find the perfect SD card for any device with expert recommendations and detailed specs.</p>
+  </div>
+
+  <!-- Disclaimer Section -->
+  <div class="border-t border-slate-200 pt-6">
+    <h3 class="text-sm font-semibold text-slate-900 mb-3">Disclaimer</h3>
+    <p class="text-sm italic text-slate-600 opacity-80">The information presented on this site is provided as-is and may contain inaccuracies. SD Card Checker contains affiliate links. We may earn a small commission when you purchase through our links at no extra cost to you.</p>
+  </div>
+</aside>`;
+}
+
+module.exports = {
+    generateHeader,
+    generateFooter,
+    generateAffiliateDisclosure,
+    generateSidebar,
+};

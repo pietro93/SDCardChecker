@@ -1,0 +1,1084 @@
+{
+  "devices": [
+    {
+      "id": "gopro-hero-13",
+      "name": "GoPro Hero 13 Black",
+      "category": "Action Cameras",
+      "slug": "gopro-hero-13",
+      "searchTerms": ["gopro hero 13", "gopro 13", "hero 13", "gopro black"],
+      "imageUrl": "/img/devices/gopro-hero-13.webp",
+      "sdCard": {
+        "type": "microSD UHS-I (UHS-II Compatible)",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB", "512GB"],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "Shoots 5.3K at high frame rates. V30 ensures 30MB/s sustained write speed needed to prevent dropped frames or corrupted files. GoPro's 5.3K bitrate (~60-80 Mbps) requires reliable, fast cards for stable recording.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-microsd" },
+        { "id": "lexar-professional-633x" },
+        { "id": "kingston-canvas-select" }
+      ],
+      "faq": [
+        {
+          "q": "Can I use a regular SD card with adapter?",
+          "a": "<b>No, the GoPro Hero 13 Black only accepts microSD cards</b>. Full-size SD cards will not work even with an adapter. The device specifically requires <b>microSD format cards</b> for compatibility."
+        },
+        {
+          "q": "What's the fastest card I should get?",
+          "a": "<b>V30 speed class is sufficient for standard GoPro Hero 13 recording</b>. V60 or faster cards are useful only for professional multi-camera workflows, simultaneous backup recording, or future-proofing for newer, more demanding cameras."
+        },
+        {
+          "q": "How often should I replace my SD card?",
+          "a": "<b>Quality V30 microSD cards typically last 3-5 years</b> with regular use. <b>Replace your card immediately if you experience error messages, file corruption, or refused write operations</b> to prevent loss of critical footage."
+        }
+      ],
+      "relatedDevices": ["gopro-hero-12", "gopro-hero-max", "gopro-hero-11-black", "dji-mini-4-pro"],
+      "notes": "Same specs as Hero 12. Official GoPro tests show V30 cards optimal for 5.3K 60fps stability. UHS-II cards offer faster offload speeds when using a UHS-II card reader."
+    },
+    {
+      "id": "gopro-hero-12",
+      "name": "GoPro Hero 12 Black",
+      "category": "Action Cameras",
+      "slug": "gopro-hero-12",
+      "searchTerms": ["gopro hero 12", "gopro 12", "hero 12"],
+      "imageUrl": "/img/devices/gopro-hero-12.webp",
+      "sdCard": {
+        "type": "microSD UHS-I (UHS-II Compatible)",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Shoots 5.3K video at various frame rates. V30 cards ensure 30MB/s sustained write speed. Critical for preventing dropped frames during high bitrate recording.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-microsd" },
+        { "id": "lexar-professional-1000x-microsd" },
+        { "id": "kingston-canvas-go" }
+      ],
+      "faq": [
+        {
+          "q": "Can I record 5K with V20 cards?",
+          "a": "<b>Recording 5.3K video with V20 cards is not recommended</b>. While V20 cards may technically record, they only guarantee 20MB/s write speed, which is insufficient for stable 5.3K recording. <b>V30 is the safe minimum speed class</b> for this device."
+        },
+        {
+          "q": "Can I use older microSD cards?",
+          "a": "<b>Older microSD cards below V30 rating are not reliable for 5.3K recording</b> and risk file corruption. <b>Best to upgrade to a modern V30 or faster microSD card</b> for guaranteed compatibility and stable performance with your Hero 12."
+        }
+      ],
+      "relatedDevices": ["gopro-hero-13", "gopro-hero-max", "gopro-hero-11-black"],
+      "notes": "Official GoPro recommendation: V30 cards. Compatible with all GoPro Hero series. UHS-II cards offer faster offload speeds when using a UHS-II card reader."
+    },
+    {
+      "id": "nintendo-switch",
+      "name": "Nintendo Switch",
+      "category": "Gaming Handhelds",
+      "slug": "nintendo-switch",
+      "searchTerms": ["nintendo switch", "switch sd card", "switch memory card", "switch storage"],
+      "imageUrl": "/img/devices/nintendo-switch.webp",
+      "sdCard": {
+        "type": "microSD, microSDHC, microSDXC",
+        "minSpeed": "No minimum required",
+        "minWriteSpeed": "Not specified",
+        "recommendedCapacity": ["64GB", "128GB", "256GB"],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "Nintendo Switch doesn't require high-speed cards for game loading. Any microSD card works, but V30 cards offer best reliability. Cheaper slower cards still work but may have slightly longer load times.",
+      "recommendedBrands": [
+        { "id": "sandisk-ultra-microsd" },
+        { "id": "kingston-canvas-go-plus" },
+        { "id": "noname-class-10-microsd" }
+      ],
+      "faq": [
+        {
+          "q": "Can I use a phone's microSD card?",
+          "a": "<b>Yes, any microSD card works with Nintendo Switch</b>. However, <b>back up all phone data first</b> before transferring, as formatting the card for Switch will erase all existing data on it."
+        },
+        {
+          "q": "Does the card need to be formatted?",
+          "a": "<b>Yes, Nintendo Switch will format the microSD card automatically on first use</b>. <b>This process erases all existing data</b>, so ensure you've backed up any files before inserting an existing card into your Switch."
+        },
+        {
+          "q": "What happens if I use a slower card?",
+          "a": "<b>Slower cards may result in slightly longer game load times</b>. Games will still function properly with minimal speed impact. <b>There is no risk of data loss or game corruption</b> from using slower speed-rated cards."
+        }
+      ],
+      "relatedDevices": ["nintendo-switch-oled", "nintendo-switch-lite", "steam-deck"],
+      "notes": "Switch is least demanding of all devices. Any microSD card works. V30 not necessary but provides reliability."
+    },
+    {
+      "id": "nintendo-switch-oled",
+      "name": "Nintendo Switch OLED",
+      "category": "Gaming Handhelds",
+      "slug": "nintendo-switch-oled",
+      "searchTerms": ["nintendo switch oled", "switch oled", "switch oled memory card"],
+      "imageUrl": "/img/devices/nintendo-switch-oled.webp",
+      "sdCard": {
+        "type": "microSD, microSDHC, microSDXC",
+        "minSpeed": "No minimum required",
+        "minWriteSpeed": "Not specified",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "OLED model has identical storage requirements as original Switch. Any microSD works. V30 recommended for reliability but not required.",
+      "recommendedBrands": [
+        { "id": "sandisk-ultra-microsd" },
+        { "id": "crucial-mx500-microsd" },
+        { "id": "budget-class-10-microsd" }
+      ],
+      "faq": [
+        {
+          "q": "Can I use the same card from my original Switch?",
+          "a": "<b>Yes, microSD cards are completely compatible between the original Switch and OLED model</b>. The OLED version has identical storage architecture and interface specifications as the original Switch."
+        },
+        {
+          "q": "Is there a speed difference between models?",
+          "a": "<b>No, Nintendo Switch OLED uses the same microSD card slot and speed limitations as the original Switch</b>. Both models support the same card speeds and types, with no performance difference between OLED and original Switch storage."
+        }
+      ],
+      "relatedDevices": ["nintendo-switch", "nintendo-switch-lite"],
+      "notes": "OLED model shares identical storage requirements with original Switch."
+    },
+    {
+      "id": "dji-mini-4-pro",
+      "name": "DJI Mini 4 Pro",
+      "category": "Drones",
+      "slug": "dji-mini-4-pro",
+      "searchTerms": ["dji mini 4 pro", "mini 4 pro", "dji mini 4 sd card"],
+      "imageUrl": "/img/devices/dji-mini-4-pro.webp",
+      "sdCard": {
+        "type": "microSD UHS-I (UHS-II Compatible)",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Records 4K video at up to 60fps. V30 ensures smooth recording without dropped frames. 4K bitrate requires sustained 30MB/s write speed minimum.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-microsd" },
+        { "id": "lexar-professional-1000x-microsd" },
+        { "id": "kingston-canvas-go" }
+      ],
+      "faq": [
+        {
+          "q": "Can I use V20 cards with DJI Mini 4 Pro?",
+          "a": "<b>Using V20 cards is not recommended for DJI Mini 4 Pro</b>. <b>V30 speed class is the minimum required for stable 4K video recording</b>, especially at higher frame rates, to prevent dropped frames and file corruption during flight."
+        },
+        {
+          "q": "Does the brand matter for drones?",
+          "a": "<b>Yes, brand reliability is critical for drone operations</b>. <b>Use trusted brands like SanDisk, Lexar, or Kingston</b> to avoid mid-flight card failures that could result in lost footage or worse, emergency landings."
+        },
+        {
+          "q": "What about older used cards?",
+          "a": "<b>Avoid used or degraded microSD cards for drone operations</b>. Reliability is paramount because <b>a card failure during flight is expensive and dangerous</b>. Always use new or professionally tested cards of known reliability."
+        }
+      ],
+      "relatedDevices": ["dji-mini-3-pro", "dji-air-3s"],
+      "notes": "DJI officially recommends V30 cards for safe recording. Test new cards before flights. UHS-II cards offer faster offload speeds when using a UHS-II card reader."
+    },
+    {
+      "id": "canon-eos-r5",
+      "name": "Canon EOS R5",
+      "category": "Mirrorless Cameras",
+      "slug": "canon-eos-r5",
+      "searchTerms": ["canon eos r5", "canon r5", "eos r5 sd card"],
+      "imageUrl": "/img/devices/canon-eos-r5.webp",
+      "sdCard": {
+        "type": "CFast 2.0 and SD UHS-II",
+        "minSpeed": "V60",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Professional 8K camera recording. Requires V60 minimum for 8K RAW video. High bitrate (1.6 Gbps) demands fast, dual card slots for safety.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-pro-cfast-2.0" },
+        { "id": "lexar-professional-1000x-sd" }
+      ],
+      "faq": [
+        {
+          "q": "Do I need two cards for R5?",
+          "a": "<b>Yes, the Canon EOS R5 has dual card slots and Canon recommends using two V60 cards for safety</b>. <b>When shooting 8K video, dual cards provide backup recording and increased reliability</b>, protecting against a single card failure during critical sessions."
+        },
+        {
+          "q": "Can I shoot 4K with V30 cards?",
+          "a": "<b>Yes, 4K video recording works perfectly fine with V30 speed class cards</b>. However, <b>8K recording requires V60 minimum speed class</b> due to the much higher bitrate and data throughput demands of 8K capture."
+        },
+        {
+          "q": "What's the difference between CFast and SD?",
+          "a": "<b>CFast 2.0 cards are significantly faster than SD UHS-II</b> and are <b>best suited for 8K RAW video recording</b>. <b>SD UHS-II cards are faster, more affordable, and sufficient for 4K recording</b>, making them the preferred choice for most users."
+        }
+      ],
+      "relatedDevices": ["canon-eos-r6-mark-ii", "canon-eos-r3"],
+      "notes": "Canon EOS R5 is professional 8K camera. Dual V60 cards strongly recommended."
+    },
+    {
+      "id": "sony-a6700",
+      "name": "Sony A6700",
+      "category": "Mirrorless Cameras",
+      "slug": "sony-a6700",
+      "searchTerms": ["sony a6700", "a6700", "sony a6700 sd card"],
+      "imageUrl": "/img/devices/sony-a6700.webp",
+      "sdCard": {
+        "type": "SD UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Excellent for 4K 60fps video and high-speed photography. V30 ensures reliable performance. Professional mirrorless users benefit from dual card slots.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-pro-sd-uhs2" },
+        { "id": "lexar-professional-silver-sd" },
+        { "id": "kingston-canvas-go-pro-sd" }
+      ],
+      "faq": [
+        {
+          "q": "Is V30 enough for 4K 60fps?",
+          "a": "<b>Yes, V30 speed class provides the necessary 30MB/s minimum write speed for stable 4K 60fps video</b> on the Sony A6700. <b>Professional and advanced users often prefer V60 or faster cards for additional performance headroom and insurance</b> during critical shoots."
+        },
+        {
+          "q": "Do I need two cards?",
+          "a": "<b>The Sony A6700 provides dual SD UHS-II card slots</b>. <b>Using two cards is recommended for extended shooting sessions and automatic backup</b>, allowing continuous recording when one card fills and seamless workflow for professional video production."
+        }
+      ],
+      "relatedDevices": ["sony-a6400", "sony-a7-iv", "fujifilm-x-s20"],
+      "notes": "Popular choice for content creators. Dual SD UHS-II card slots for professional workflow."
+    },
+    {
+      "id": "fujifilm-x-s20",
+      "name": "Fujifilm X-S20",
+      "category": "Mirrorless Cameras",
+      "slug": "fujifilm-x-s20",
+      "searchTerms": ["fujifilm x-s20", "x-s20", "xs20 sd card"],
+      "imageUrl": "/img/devices/fujifilm-x-s20.webp",
+      "sdCard": {
+        "type": "SD UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Great for travel and video. V30 handles 4K recording reliably. Single card slot, so reliability is key.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-pro-sd-uhs2" },
+        { "id": "lexar-professional-silver-sd" },
+        { "id": "kingston-canvas-go" }
+      ],
+      "faq": [
+        {
+          "q": "Is there a backup card slot?",
+          "a": "<b>No, the Fujifilm X-S20 has only a single SD UHS-II card slot</b>. <b>Make regular backup copies of your footage</b> to prevent data loss and consider carrying a second card as a replacement if the first card fills during a shoot."
+        }
+      ],
+      "relatedDevices": ["fujifilm-x-s10", "fujifilm-x-t5", "sony-a6700"],
+      "notes": "Popular travel camera. Single card slot makes reliable card choice important."
+    },
+    {
+      "id": "steam-deck",
+      "name": "Steam Deck",
+      "category": "Gaming Handhelds",
+      "slug": "steam-deck",
+      "searchTerms": ["steam deck", "steam deck sd card", "deck microsd"],
+      "imageUrl": "/img/devices/steam-deck.webp",
+      "sdCard": {
+        "type": "microSD UHS-I (not UHS-II)",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["256GB", "512GB"],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "Steam Deck uses UHS-I interface. While V30 works, actual performance limited by UHS-I speeds. Any V30 microSD card sufficient.",
+      "recommendedBrands": [
+        { "id": "sandisk-ultra-microsd" },
+        { "id": "kingston-canvas-go-plus" },
+        { "id": "crucial-mx500-microsd" }
+      ],
+      "faq": [
+        {
+          "q": "Can I use fast V60 cards?",
+          "a": "<b>Yes, V60 and faster microSD cards work perfectly with Steam Deck</b>. However, <b>the device's UHS-I interface limits the speed benefit</b>, so faster cards provide no practical advantage over V30 cards for Steam Deck gaming."
+        }
+      ],
+      "relatedDevices": ["nintendo-switch", "asus-rog-ally"],
+      "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library."
+    },
+    {
+      "id": "gopro-hero-max",
+      "name": "GoPro Hero Max",
+      "category": "Action Cameras",
+      "slug": "gopro-hero-max",
+      "searchTerms": ["gopro hero max", "gopro max", "hero max"],
+      "imageUrl": "/img/devices/gopro-hero-max.webp",
+      "sdCard": {
+        "type": "microSD UHS-I (UHS-II Compatible)",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Shoots 360-degree video and standard 4K. V30 ensures stable recording for both modes.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-microsd" },
+        { "id": "lexar-professional-633x" },
+        { "id": "kingston-canvas-select" }
+      ],
+      "faq": [
+        {
+          "q": "Is V30 needed for 360 video?",
+          "a": "<b>Yes, V30 speed class is required for 360-degree video recording</b>. <b>360 video mode has significantly higher bitrate than standard GoPro recording</b> due to the increased resolution and field of view, demanding reliable V30 performance."
+        },
+        {
+          "q": "How much storage for 360 content?",
+          "a": "<b>In 360 mode, a 128GB microSD card provides approximately 1.5 hours of recording time</b>. Storage consumption is higher in 360 mode compared to standard video, so plan accordingly for extended 360 capture sessions."
+        }
+      ],
+      "relatedDevices": ["gopro-hero-13", "gopro-hero-12", "gopro-hero-11-black"],
+      "notes": "360-degree camera. V30 important for both 360 and standard recording modes. UHS-II cards offer faster offload speeds when using a UHS-II card reader."
+    },
+    {
+      "id": "dji-mini-3-pro",
+      "name": "DJI Mini 3 Pro",
+      "category": "Drones",
+      "slug": "dji-mini-3-pro",
+      "searchTerms": ["dji mini 3 pro", "mini 3 pro", "dji mini 3"],
+      "imageUrl": "/img/devices/dji-mini-3-pro.webp",
+      "sdCard": {
+        "type": "microSD UHS-I (UHS-II Compatible)",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "4K video recording requires V30 minimum. DJI officially recommends high-speed cards.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-microsd" },
+        { "id": "lexar-professional-1000x-microsd" }
+      ],
+      "faq": [
+        {
+          "q": "Can V20 cards work?",
+          "a": "<b>V20 cards are not safe for DJI Mini 3 Pro's 4K recording</b>. <b>V30 minimum speed class is required</b> to guarantee stable video capture without dropped frames or corruption during flight operations."
+        }
+      ],
+      "relatedDevices": ["dji-mini-4-pro", "dji-air-3s", "dji-air-3"],
+      "notes": "Previous generation Mini series. Same V30 requirements as Mini 4 Pro. UHS-II cards offer faster offload speeds when using a UHS-II card reader."
+    },
+    {
+      "id": "dji-air-3s",
+      "name": "DJI Air 3S",
+      "category": "Drones",
+      "slug": "dji-air-3s",
+      "searchTerms": ["dji air 3s", "air 3s", "dji air 3"],
+      "imageUrl": "/img/devices/dji-air-3s.webp",
+      "sdCard": {
+        "type": "microSD UHS-I (UHS-II Compatible)",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["256GB", "512GB"],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "Professional 4K 60fps drone. Higher bitrate than Mini series. V30 minimum, V60 recommended for professional use.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-pro-microsd-v60" },
+        { "id": "lexar-professional-silver-microsd" },
+        { "id": "kingston-canvas-go-plus" }
+      ],
+      "faq": [
+        {
+          "q": "Is V60 required for Air 3S?",
+          "a": "<b>V30 speed class cards will function for basic 4K recording on the DJI Air 3S</b>. However, <b>V60 is strongly recommended for professional 4K 60fps work</b> to ensure optimal write performance and reliability during demanding video operations."
+        }
+      ],
+      "relatedDevices": ["dji-mini-4-pro", "dji-mavic-3", "dji-air-3"],
+      "notes": "Professional prosumer drone. V60 preferred for stable 4K 60fps recording. UHS-II cards offer faster offload speeds when using a UHS-II card reader."
+    },
+    {
+      "id": "dji-mavic-3",
+      "name": "DJI Mavic 3",
+      "category": "Drones",
+      "slug": "dji-mavic-3",
+      "searchTerms": ["dji mavic 3", "mavic 3", "dji mavic"],
+      "imageUrl": "/img/devices/dji-mavic-3.webp",
+      "sdCard": {
+        "type": "microSD UHS-I (UHS-II Compatible)",
+        "minSpeed": "V60",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": ["256GB", "512GB"],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "Premium 4K and 8K drone. Supports Cine 8K recording at high bitrate. V60 minimum required. V90 recommended for 8K work.",
+      "recommendedBrands": [
+        { "id": "lexar-professional-1000x-v60" },
+        { "id": "sandisk-extreme-pro-microsd-v60" }
+      ],
+      "faq": [
+        {
+          "q": "Can I use V30 cards for 8K?",
+          "a": "<b>V30 cards are not recommended for 8K recording on the DJI Mavic 3</b>. <b>V60 minimum speed class is required</b>, with <b>V90 ideal for uninterrupted 8K Cine recording</b> to ensure optimal write performance and eliminate frame drops."
+        }
+      ],
+      "relatedDevices": ["dji-air-3s", "dji-mini-4-pro", "dji-air-3"],
+      "notes": "Premium DJI flagship. V60+ cards essential for 8K recording capability. UHS-II cards offer faster offload speeds when using a UHS-II card reader."
+    },
+    {
+      "id": "nikon-z9",
+      "name": "Nikon Z9",
+      "category": "Mirrorless Cameras",
+      "slug": "nikon-z9",
+      "searchTerms": ["nikon z9", "z9", "nikon z9 sd card"],
+      "imageUrl": "/img/devices/nikon-z9.webp",
+      "sdCard": {
+        "type": "CFexpress Type B and XQD",
+        "minSpeed": "V90",
+        "minWriteSpeed": "90 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Professional flagship 8K camera. Requires CFexpress Type B for maximum performance. Dual card slots for backup.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-pro-cfexpress" },
+        { "id": "nikon-xqd-memory-card" }
+      ],
+      "faq": [
+        {
+          "q": "Do I need two cards?",
+          "a": "<b>Yes, the Nikon Z9 has dual card slots and using two cards is strongly recommended</b>. <b>Dual cards provide automatic backup recording and extended shooting capacity</b>, critical for professional workflows where card failure cannot be tolerated."
+        },
+        {
+          "q": "Are CFexpress and XQD compatible?",
+          "a": "<b>No, CFexpress Type B and XQD cards are not compatible</b>. <b>The Nikon Z9 supports both formats but uses different card slots</b> for each type, allowing you to choose either format for your specific workflow needs."
+        }
+      ],
+      "relatedDevices": ["nikon-z8", "canon-eos-r5"],
+      "notes": "Professional flagship. CFexpress Type B recommended for future-proofing."
+    },
+    {
+      "id": "asus-rog-ally",
+      "name": "ASUS ROG Ally",
+      "category": "Gaming Handhelds",
+      "slug": "asus-rog-ally",
+      "searchTerms": ["asus rog ally sd card", "rog ally microsd", "rog ally memory card"],
+      "imageUrl": "/img/devices/asus-rog-ally.webp",
+      "sdCard": {
+        "type": "microSD UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["256GB", "512GB", "1TB"],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "The ROG Ally features a high-speed UHS-II card reader. Using a UHS-II card is highly recommended to minimize game loading times and accelerate file transfers. A V30 speed class is the minimum for stable performance.",
+      "recommendedBrands": [
+        { "id": "sandisk-rog-ally-microsd" },
+        { "id": "sandisk-extreme-microsd" },
+        { "id": "kingston-canvas-go-plus" }
+      ],
+      "faq": [
+        {
+          "q": "Should I use a faster UHS-II card in the ROG Ally?",
+          "a": "<b>Yes, you absolutely should if you want the best performance.</b> The ROG Ally's UHS-II card reader takes full advantage of the extra speed from a UHS-II card, resulting in faster game load times. Using a slower UHS-I card will work, but will bottleneck performance."
+        },
+        {
+          "q": "What is the best capacity for the ROG Ally?",
+          "a": "<b>A 512GB or 1TB card is the sweet spot for most users.</b> Modern PC games are very large, and this capacity allows you to store a good number of AAA titles without constantly managing storage."
+        }
+      ],
+      "relatedDevices": ["steam-deck", "nintendo-switch-oled", "nintendo-switch"],
+      "notes": "Heat from the device's exhaust can affect the SD card reader in some units. Using a high-quality, reputable UHS-II card is crucial for both reliability and optimal performance."
+    },
+    {
+      "id": "nintendo-switch-lite",
+      "name": "Nintendo Switch Lite",
+      "category": "Gaming Handhelds",
+      "slug": "nintendo-switch-lite",
+      "searchTerms": ["nintendo switch lite sd card", "switch lite memory card", "switch lite storage"],
+      "imageUrl": "/img/devices/nintendo-switch.webp",
+      "sdCard": {
+        "type": "microSD, microSDHC, microSDXC",
+        "minSpeed": "No minimum required",
+        "minWriteSpeed": "Not specified",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "The Switch Lite has identical storage requirements to the original Switch. It does not need high-speed cards, so any reputable microSD card will work perfectly for storing and playing games.",
+      "recommendedBrands": [
+        { "id": "sandisk-ultra-microsd" },
+        { "id": "kingston-canvas-select" },
+        { "id": "crucial-mx500-microsd" }
+      ],
+      "faq": [
+        {
+          "q": "Is the SD card slot different on the Switch Lite?",
+          "a": "<b>No, the SD card slot and its speed capabilities are identical</b> to the standard Nintendo Switch and the OLED model. Any card that works on one will work on the others."
+        }
+      ],
+      "relatedDevices": ["nintendo-switch", "nintendo-switch-oled"],
+      "notes": "Completes the Switch family lineup. Same requirements as other models."
+    },
+    {
+      "id": "sony-a7-iv",
+      "name": "Sony A7 IV",
+      "category": "Mirrorless Cameras",
+      "slug": "sony-a7-iv",
+      "searchTerms": ["sony a7 iv sd card", "a7iv card", "alpha 7 iv memory card"],
+      "imageUrl": "/img/devices/sony-a7iv.webp",
+      "sdCard": {
+        "type": "CFexpress Type A or SD UHS-II",
+        "minSpeed": "V60 (V90 for S&Q modes)",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "No official limit"
+      },
+      "whySpecs": "The A7 IV records high-bitrate 4K video. Slot 1 accepts ultra-fast CFexpress Type A cards or SD cards, while Slot 2 is SD-only. A V60 SD card is needed for most 4K modes, while V90 is required for the highest quality S&Q (Slow & Quick) recording to prevent buffer issues.",
+      "recommendedBrands": [
+        { "id": "lexar-professional-1000x-sd" }
+      ],
+      "faq": [
+        {
+          "q": "Do I need a CFexpress Type A card for the Sony A7 IV?",
+          "a": "<b>No, it's not required for most shooting.</b> A V60 or V90 SD UHS-II card is sufficient for almost all video modes. CFexpress Type A is only necessary for clearing the buffer faster during intense burst photography or for the absolute highest video bitrates."
+        },
+        {
+          "q": "What is the difference between the two card slots?",
+          "a": "<b>Slot 1 is a combo slot</b> that fits either one CFexpress Type A card or one SD card (UHS-I/II). <b>Slot 2 only fits one SD card</b> (UHS-I/II). You can use both for simultaneous backup or relay recording."
+        }
+      ],
+      "relatedDevices": ["canon-eos-r6-mark-ii", "sony-a6700", "nikon-z8"],
+      "notes": "Extremely popular camera. Note: Your sdcards.json has limited V60+ SD card options, so only compliant cards are recommended."
+    },
+    {
+      "id": "insta360-x3",
+      "name": "Insta360 X3",
+      "category": "Action Cameras",
+      "slug": "insta360-x3",
+      "searchTerms": ["insta360 x3 sd card", "insta 360 x3 memory card", "x3 microsd"],
+      "imageUrl": "/img/devices/insta360-x3.webp",
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "Recording 5.7K 360-degree video generates a large amount of data. Insta360 officially recommends a V30 speed class microSD card to ensure smooth, stable recording without dropped frames or corruption.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-microsd" },
+        { "id": "lexar-professional-1000x-microsd" },
+        { "id": "kingston-canvas-go-plus" }
+      ],
+      "faq": [
+        {
+          "q": "Can I use a SanDisk Ultra card in the Insta360 X3?",
+          "a": "<b>It is not recommended.</b> While some Ultra cards are rated V10, the X3 requires a minimum of V30. Using a slower card can lead to recording failure, especially in high-resolution modes. Stick to the SanDisk Extreme series or equivalent."
+        }
+      ],
+      "relatedDevices": ["gopro-hero-max", "gopro-hero-13"],
+      "notes": "GoPro's biggest competitor in the 360 space. Very high search volume."
+    },
+    {
+      "id": "dji-osmo-pocket-3",
+      "name": "DJI Osmo Pocket 3",
+      "category": "Action Cameras",
+      "slug": "dji-osmo-pocket-3",
+      "searchTerms": ["dji pocket 3 sd card", "osmo pocket 3 microsd"],
+      "imageUrl": "/img/devices/dji-pocket-3.webp",
+      "sdCard": {
+        "type": "microSD UHS-I/UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "The Pocket 3 shoots high-quality 4K/120fps video. DJI recommends a V30 card as the minimum to reliably handle the data rate. Faster UHS-II cards can be used for quicker file transfers to a computer but offer no recording benefit in-camera.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-microsd" },
+        { "id": "lexar-professional-silver-microsd" },
+        { "id": "kingston-canvas-go-plus" }
+      ],
+      "faq": [
+        {
+          "q": "How much 4K video can a 128GB card hold on the Pocket 3?",
+          "a": "A 128GB card will hold approximately 2 hours of 4K/60fps footage. If you plan on shooting for an entire day, carrying a second card or choosing a 256GB capacity is a good idea."
+        }
+      ],
+      "relatedDevices": ["gopro-hero-13", "gopro-hero-11-black", "dji-mini-4-pro"],
+      "notes": "Extremely popular vlogging device. Clear need for reliable, fast cards."
+    },
+    {
+      "id": "raspberry-pi-5",
+      "name": "Raspberry Pi 5",
+      "category": "Computing & Tablets",
+      "slug": "raspberry-pi-5",
+      "searchTerms": ["raspberry pi 5 sd card", "pi 5 microsd", "raspberry pi 5 storage"],
+      "imageUrl": "/img/devices/raspberry-pi-5.webp",
+      "sdCard": {
+        "type": "microSD",
+        "minSpeed": "A1 or A2 rated",
+        "minWriteSpeed": "10 MB/s (Class 10)",
+        "recommendedCapacity": ["32GB", "64GB", "128GB"],
+        "maxCapacity": "No official limit"
+      },
+      "whySpecs": "The Raspberry Pi 5 boots its operating system from the microSD card. An 'A1' or, ideally, an 'A2' rated card is crucial for performance. These ratings signify faster random read/write speeds, which dramatically improves OS responsiveness and application loading times.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-microsd" },
+        { "id": "kingston-canvas-go-plus" },
+        { "id": "sandisk-ultra-microsd" }
+      ],
+      "faq": [
+        {
+          "q": "What's more important for the Raspberry Pi 5, V30 or A2?",
+          "a": "<b>The A2 rating is more important.</b> The 'V' rating (e.g., V30) is for sustained video recording speed, while the 'A' rating (Application Performance Class) is for random read/write operations, which is what an operating system does. An A2 card will feel much faster in daily use."
+        }
+      ],
+      "relatedDevices": [],
+      "notes": "Targets a huge DIY and technical audience. The card is a mandatory component."
+    },
+    {
+      "id": "samsung-galaxy-tab-s9",
+      "name": "Samsung Galaxy Tab S9",
+      "category": "Computing & Tablets",
+      "slug": "samsung-galaxy-tab-s9",
+      "searchTerms": ["galaxy tab s9 sd card", "samsung tab s9 memory card", "tab s9 storage"],
+      "imageUrl": "/img/devices/samsung-tab-s9.webp",
+      "sdCard": {
+        "type": "microSDXC",
+        "minSpeed": "No minimum required",
+        "minWriteSpeed": "Not specified",
+        "recommendedCapacity": ["256GB", "512GB"],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "The Galaxy Tab S9 supports microSD cards up to 1TB for expanding storage for media, apps, and files. While there is no minimum speed requirement, a U3/V30 card is recommended for smooth 4K video playback and faster file transfers.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-microsd" },
+        { "id": "crucial-mx500-microsd" },
+        { "id": "kingston-canvas-select" }
+      ],
+      "faq": [
+        {
+          "q": "Can I install apps on the SD card on the Tab S9?",
+          "a": "<b>Yes, Android allows some apps to be moved to the SD card</b> to free up internal storage. However, performance will be best for apps installed on the tablet's faster internal memory. The SD card is ideal for media like movies, photos, and music."
+        }
+        ],
+        "relatedDevices": ["amazon-fire-max-11", "amazon-fire-hd-10"],
+        "notes": "One of the few premium modern devices to retain the SD card slot. Catches a large consumer audience."
+    },
+    {
+      "id": "canon-eos-r6-mark-ii",
+      "name": "Canon EOS R6 Mark II",
+      "category": "Mirrorless Cameras",
+      "slug": "canon-eos-r6-mark-ii",
+      "searchTerms": ["canon r6 ii sd card", "eos r6 mark ii memory card", "r6 mk2 card"],
+      "imageUrl": "/img/devices/canon-r6-mk2.webp",
+      "sdCard": {
+        "type": "SD UHS-II",
+        "minSpeed": "V60 (V90 recommended for burst)",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "No official limit"
+      },
+      "whySpecs": "The R6 Mark II features two SD UHS-II card slots. For video recording at up to 42.5 MB/s bitrate, a V60 card is sufficient. However, for high-speed burst shooting at 40fps with RAW, V90 cards are recommended to clear the buffer quickly and prevent missed shots.",
+      "recommendedBrands": [
+        { "id": "lexar-professional-1000x-sd" }
+      ],
+      "faq": [
+        {
+          "q": "Do I need two cards for the R6 Mark II?",
+          "a": "<b>It is highly recommended for professional work.</b> Using both slots allows for instant backup, overflow (relay) recording, or separating file types (e.g., RAW to Slot 1, JPEG to Slot 2). For casual use, one card is sufficient."
+        },
+        {
+          "q": "Is V60 enough, or do I need V90?",
+          "a": "<b>For video: V60 is sufficient.</b> <b>For burst shooting: V90 is recommended.</b> If you shoot both, V90 provides the best performance across all modes. V60 cards offer better value if you primarily shoot video or landscapes."
+        }
+      ],
+      "relatedDevices": ["canon-eos-r5", "sony-a7-iv", "nikon-z8", "panasonic-lumix-s1h"],
+      "notes": "Supports both UHS-I and UHS-II cards, but UHS-II is strongly recommended for optimal performance."
+    },
+    {
+      "id": "bmpcc-4k",
+      "name": "Blackmagic Pocket Cinema Camera 4K",
+      "category": "Mirrorless Cameras",
+      "slug": "bmpcc-4k",
+      "searchTerms": ["bmpcc 4k card", "blackmagic pocket 4k sd card", "bmpcc 4k cfast"],
+      "imageUrl": "/img/devices/blackmagic-pocket-cinema-camera-4k.webp",
+      "sdCard": {
+        "type": "CFast 2.0 and SD UHS-II",
+        "minSpeed": "V90 (for SD)",
+        "minWriteSpeed": "90 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "No official limit"
+      },
+      "whySpecs": "The BMPCC 4K records professional RAW and ProRes formats at very high data rates. A fast V90 SD card is required for many compressed RAW options, while a CFast 2.0 card is needed for the highest-quality settings.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-pro-cfast-2.0" }
+      ],
+      "faq": [
+        {
+          "q": "Which card type should I use for the BMPCC 4K?",
+          "a": "<b>It depends on your codec.</b> For the highest quality Blackmagic RAW settings (e.g., 3:1), you will need a <b>CFast 2.0 card</b>. For more compressed RAW formats and most ProRes options, a fast <b>V90 SD card</b> will suffice and is more cost-effective."
+        }
+      ],
+      "relatedDevices": ["canon-eos-r5", "sony-a7-iv"],
+      "notes": "A staple for indie filmmakers with very specific card requirements. Your sdcards.json has no V90 SD cards, so only the CFast 2.0 option is recommended."
+    },
+  {
+    "id": "viofo-a229-duo",
+    "name": "VIOFO A229 Duo",
+    "category": "Action Cameras",
+    "slug": "viofo-a229-duo",
+    "searchTerms": ["viofo a229 sd card", "viofo a229 duo microsd", "a229 dash cam storage"],
+    "imageUrl": "/img/devices/viofo-a229.webp",
+    "sdCard": {
+      "type": "High Endurance microSD",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": ["128GB", "256GB"],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "The VIOFO A229 Duo records dual-channel 2K video continuously in loop mode. VIOFO officially recommends U3/V30 High Endurance cards to handle the high bitrate and constant rewriting. Regular cards will fail within months; High Endurance cards are rated for years of 24/7 recording.",
+    "recommendedBrands": [
+      { "id": "sandisk-max-endurance" },
+      { "id": "samsung-pro-endurance" }
+    ],
+    "faq": [
+      {
+        "q": "What capacity should I use for the VIOFO A229?",
+        "a": "<b>128GB to 256GB is recommended for the A229 Duo.</b> A 128GB card provides approximately 10-12 hours of dual-channel recording before loop overwrite begins. For longer retention, use 256GB for 20-24 hours of footage."
+      },
+      {
+        "q": "Can I use a regular SD card instead of High Endurance?",
+        "a": "<b>No, absolutely not.</b> VIOFO explicitly warns that regular cards will fail quickly due to constant rewriting. Always use High Endurance cards (SanDisk MAX Endurance or Samsung PRO Endurance) to prevent data loss and card failure."
+      }
+    ],
+    "relatedDevices": ["nextbase-622gw", "wyze-cam-v3", "eufy-solocam-s340"],
+    "notes": "One of the most popular dual-channel dash cams. VIOFO official documentation specifies U3/V30 High Endurance cards. Very high search volume for 'VIOFO A229 SD card'."
+  },
+  {
+    "id": "nextbase-622gw",
+    "name": "Nextbase 622GW",
+    "category": "Action Cameras",
+    "slug": "nextbase-622gw",
+    "searchTerms": ["nextbase 622gw sd card", "nextbase 622 microsd", "622gw dash cam storage"],
+    "imageUrl": "/img/devices/nextbase-622gw.webp",
+    "sdCard": {
+      "type": "High Endurance microSD",
+      "minSpeed": "U3 / Class 10",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": ["64GB", "128GB", "256GB"],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "The Nextbase 622GW records 4K video at 30fps with image stabilization. Nextbase officially recommends U3 High Endurance cards (specifically SanDisk MAX Endurance or Samsung PRO Endurance) for reliable continuous recording. The 4K bitrate demands fast write speeds and endurance ratings.",
+    "recommendedBrands": [
+      { "id": "sandisk-max-endurance" },
+      { "id": "samsung-pro-endurance" }
+    ],
+    "faq": [
+      {
+        "q": "Does the Nextbase 622GW come with an SD card?",
+        "a": "<b>No, SD cards are sold separately.</b> Nextbase strongly recommends purchasing a High Endurance card (U3 rated) from their approved list. Using non-approved cards can void your warranty if card failure causes issues."
+      },
+      {
+        "q": "What's the best capacity for 4K recording?",
+        "a": "<b>128GB is the sweet spot for most users.</b> A 128GB High Endurance card stores approximately 6-8 hours of 4K footage before loop recording begins. For maximum retention, use 256GB for 12-16 hours of recording."
+      }
+    ],
+    "relatedDevices": ["viofo-a229-duo", "wyze-cam-v3", "eufy-solocam-s340"],
+    "notes": "Premium UK dash cam brand with strong search volume. Nextbase official support specifically lists approved High Endurance cards and warns against using standard cards. 256GB is official maximum tested capacity."
+  },
+    {
+      "id": "dji-air-3",
+      "name": "DJI Air 3",
+      "category": "Drones",
+      "slug": "dji-air-3",
+      "searchTerms": ["dji air 3 sd card", "air 3 microsd", "dji air 3 memory card"],
+      "imageUrl": "/img/devices/dji-air-3.webp",
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "The Air 3 shoots 4K video at up to 100fps. DJI officially recommends V30 speed class cards to ensure smooth, stable recording without dropped frames. Reliable performance is critical for drone operations where card failure can be expensive and dangerous.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-microsd" },
+        { "id": "lexar-professional-1000x-microsd" },
+        { "id": "kingston-canvas-go-plus" }
+      ],
+      "faq": [
+        {
+          "q": "Is V30 truly the minimum for DJI Air 3?",
+          "a": "<b>Yes, V30 is the official minimum recommendation.</b> Using slower cards risks dropped frames and file corruption during flight. Always use tested, reputable V30 or faster cards for drone operations."
+        }
+      ],
+      "relatedDevices": ["dji-mini-4-pro", "dji-air-3s", "dji-mavic-3", "dji-air-3"],
+      "notes": "A popular prosumer drone with dual cameras, requiring reliable V30 cards for its high-quality video modes."
+    },
+    {
+      "id": "bmpcc-6k-pro",
+      "name": "Blackmagic Pocket Cinema Camera 6K Pro",
+      "category": "Mirrorless Cameras",
+      "slug": "bmpcc-6k-pro",
+      "searchTerms": ["bmpcc 6k pro card", "blackmagic 6k pro sd card", "pocket 6k memory"],
+      "imageUrl": "/img/devices/blackmagic-pocket-cinema-camera-6k-pro.webp",
+      "sdCard": {
+        "type": "CFast 2.0 and SD UHS-II",
+        "minSpeed": "V90 (for SD)",
+        "minWriteSpeed": "90 MB/s",
+        "recommendedCapacity": ["256GB", "512GB"],
+        "maxCapacity": "No official limit"
+      },
+      "whySpecs": "The BMPCC 6K Pro records professional 6K RAW and ProRes at extremely high bitrates. CFast 2.0 is required for the highest quality 6K RAW formats, while SD UHS-II V90 cards can handle high-quality ProRes and some compressed RAW codecs.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-pro-cfast-2.0" }
+      ],
+      "faq": [
+        {
+          "q": "Do I need CFast for the BMPCC 6K Pro?",
+          "a": "<b>For full 6K RAW recording, yes.</b> CFast 2.0 is essential for the highest bitrate 6K RAW codecs. However, for recording in DCI 4K or many ProRes formats, a fast SD UHS-II V90 card will work and is more affordable."
+        }
+      ],
+      "relatedDevices": ["bmpcc-4k", "canon-eos-r5", "nikon-z8"],
+      "notes": "Professional-grade 6K cinema camera. Your sdcards.json does not contain any V90 SD cards, so only the compliant CFast 2.0 card is recommended."
+    },
+    {
+      "id": "nikon-z8",
+      "name": "Nikon Z8",
+      "category": "Mirrorless Cameras",
+      "slug": "nikon-z8",
+      "searchTerms": ["nikon z8 sd card", "z8 memory card", "nikon z8 storage"],
+      "imageUrl": "/img/devices/nikon-z8.webp",
+      "sdCard": {
+        "type": "SD UHS-II or CFexpress Type B",
+        "minSpeed": "V60 (V90 or CFexpress recommended)",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": ["256GB", "512GB"],
+        "maxCapacity": "No official limit"
+      },
+      "whySpecs": "The Z8 is a professional powerhouse with dual slots: one CFexpress Type B and one SD UHS-II. For 8K RAW video and the fastest burst shooting, a CFexpress card is required. For most other 4K video modes, a V60 or V90 SD card is sufficient.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-pro-cfexpress" },
+        { "id": "lexar-professional-1000x-sd" }
+      ],
+      "faq": [
+        {
+          "q": "Which card slot should I use on the Nikon Z8?",
+          "a": "<b>Use the CFexpress slot for maximum performance</b>, especially for 8K video or long bursts of high-resolution photos. Use the SD slot for backup, overflow, or for less demanding 4K video work."
+        }
+      ],
+      "relatedDevices": ["nikon-z9", "canon-eos-r5", "sony-a7-iv", "panasonic-lumix-s1h"],
+      "notes": "Often called the 'baby Z9', it packs flagship performance into a smaller body, with demanding media requirements to match."
+    },
+    {
+      "id": "panasonic-lumix-s1h",
+      "name": "Panasonic Lumix S1H",
+      "category": "Mirrorless Cameras",
+      "slug": "panasonic-lumix-s1h",
+      "searchTerms": ["panasonic lumix s1h sd card", "s1h memory card", "lumix s1h storage"],
+      "imageUrl": "/img/devices/panasonic-s1h.webp",
+      "sdCard": {
+        "type": "SD UHS-II",
+        "minSpeed": "V90",
+        "minWriteSpeed": "90 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "No official limit"
+      },
+      "whySpecs": "The S1H is a Netflix-approved cinema camera that records 6K video at very high bitrates. It features dual SD UHS-II slots, and V90-rated cards are essential to reliably capture its highest quality internal recording formats without any dropped frames.",
+      "recommendedBrands": [
+        { "id": "sony-tough-g-v90" }
+      ],
+      "faq": [
+        {
+          "q": "Is V90 truly required for the S1H?",
+          "a": "<b>Yes, V90 is essential for 6K and other high-bitrate recording modes.</b> While V60 cards may work for lower-quality settings, they will fail in the camera's most demanding professional formats. Always use V90 cards for reliable performance."
+        }
+      ],
+      "relatedDevices": ["nikon-z9", "canon-eos-r5", "nikon-z8"],
+      "notes": "A professional 6K hybrid camera. Now that Sony TOUGH G V90 has been added to your sdcards.json, it is the recommended card."
+    },
+    {
+    "id": "gopro-hero-11-black",
+    "name": "GoPro Hero 11 Black",
+    "category": "Action Cameras",
+    "slug": "gopro-hero-11-black",
+    "searchTerms": ["gopro hero 11 black", "hero 11", "gopro 11 sd card"],
+    "imageUrl": "/img/devices/gopro-hero-11.webp",
+    "sdCard": {
+    "type": "microSD UHS-I (UHS-II Compatible)",
+    "minSpeed": "V30",
+    "minWriteSpeed": "30 MB/s",
+    "recommendedCapacity": ["128GB", "256GB"],
+    "maxCapacity": "512GB"
+    },
+    "whySpecs": "The Hero 11 Black shoots high-quality 5.3K video. GoPro officially endorses using a V30 speed class card to guarantee the 30MB/s minimum write speed required for stable, reliable recording without dropped frames or file corruption.",
+    "recommendedBrands": [
+    { "id": "sandisk-extreme-microsd" },
+    { "id": "lexar-professional-1000x-microsd" },
+    { "id": "kingston-canvas-go-plus" }
+    ],
+    "faq": [
+    {
+    "q": "Are Hero 11 and Hero 12 card requirements the same?",
+    "a": "<b>Yes, both require V30 microSD cards.</b> The Hero 11 Black has very similar video specifications to the Hero 12, so the same card recommendations apply for guaranteed performance."
+    }
+    ],
+    "relatedDevices": ["gopro-hero-13", "gopro-hero-12", "gopro-hero-max", "dji-pocket-3"],
+    "notes": "The predecessor to the Hero 12, this model introduced the 8:7 sensor and maintains the same V30 card requirements. UHS-II cards offer faster offload speeds when using a UHS-II card reader."
+    },
+      {
+       "id": "amazon-fire-hd-10",
+       "name": "Amazon Fire HD 10",
+       "category": "Computing & Tablets",
+       "slug": "amazon-fire-hd-10",
+       "searchTerms": ["fire hd 10 sd card", "amazon fire hd 10 microsd", "fire tablet sd card"],
+       "imageUrl": "/img/devices/fire-hd-10.webp",
+       "sdCard": {
+         "type": "microSDXC",
+         "minSpeed": "Class 10 / U1 (V30 recommended for video)",
+         "minWriteSpeed": "10 MB/s",
+         "recommendedCapacity": ["128GB", "256GB", "512GB"],
+         "maxCapacity": "1TB"
+       },
+       "whySpecs": "The Fire HD 10 supports microSD expansion up to 1TB for storing apps, videos, books, and photos. While any Class 10 card works for basic use, a V30 card is recommended for downloading and playing HD video content smoothly.",
+       "recommendedBrands": [
+         { "id": "sandisk-ultra-microsd" },
+         { "id": "kingston-canvas-select" },
+         { "id": "samsung-evo-select-microsd" }
+       ],
+       "faq": [
+         {
+           "q": "Can I move apps to the SD card on Fire HD 10?",
+           "a": "<b>Yes, you can move compatible apps to the microSD card</b> through Settings > Storage to free up internal space. However, some Amazon apps and system files must stay on internal storage."
+         },
+         {
+           "q": "What's the best capacity for a Fire HD 10?",
+           "a": "<b>128GB to 256GB is the sweet spot for most users.</b> This provides ample space for offline videos, music, books, and photos without breaking the bank. Heavy users downloading lots of video content may want 512GB."
+         }
+       ],
+       "relatedDevices": ["amazon-fire-max-11", "samsung-galaxy-tab-s9"],
+       "notes": "One of Amazon's best-selling tablets. Official Amazon specs confirm microSD expansion up to 1TB. Budget-friendly option with huge search volume for SD card recommendations."
+     },
+     {
+       "id": "amazon-fire-max-11",
+       "name": "Amazon Fire Max 11",
+       "category": "Computing & Tablets",
+       "slug": "amazon-fire-max-11",
+       "searchTerms": ["fire max 11 sd card", "amazon fire max 11 microsd", "fire max storage"],
+       "imageUrl": "/img/devices/fire-max-11.webp",
+       "sdCard": {
+         "type": "microSDXC",
+         "minSpeed": "Class 10 / U1 (V30 recommended for video)",
+         "minWriteSpeed": "10 MB/s",
+         "recommendedCapacity": ["256GB", "512GB"],
+         "maxCapacity": "1TB"
+       },
+       "whySpecs": "The Fire Max 11 is Amazon's premium tablet with a large 11-inch display. It supports microSD expansion up to 1TB, making it ideal for storing large media libraries. A V30 card ensures smooth playback of high-quality video content.",
+       "recommendedBrands": [
+         { "id": "sandisk-extreme-microsd" },
+         { "id": "kingston-canvas-go-plus" },
+         { "id": "samsung-evo-select-microsd" }
+       ],
+       "faq": [
+         {
+           "q": "Is the Fire Max 11 better for SD cards than Fire HD 10?",
+           "a": "<b>Both tablets have identical microSD support (up to 1TB)</b>. The Max 11 has a larger screen and better specs overall, but SD card functionality is the same. Choose based on your screen size and performance needs, not storage."
+         }
+       ],
+       "relatedDevices": ["amazon-fire-hd-10", "samsung-galaxy-tab-s9"],
+       "notes": "Amazon's premium tablet model. Same 1TB microSD support as Fire HD 10, confirmed by official Amazon product specifications."
+     },
+     {
+       "id": "wyze-cam-v3",
+       "name": "Wyze Cam v3",
+       "category": "Security Cameras",
+       "slug": "wyze-cam-v3",
+       "searchTerms": ["wyze cam v3 sd card", "wyze v3 microsd", "wyze cam storage"],
+       "imageUrl": "/img/devices/wyze-cam-v3.webp",
+       "sdCard": {
+         "type": "microSD (FAT32 or exFAT)",
+         "minSpeed": "Class 10 / U1",
+         "minWriteSpeed": "10 MB/s",
+         "recommendedCapacity": ["32GB", "64GB", "128GB"],
+         "maxCapacity": "256GB"
+       },
+       "whySpecs": "Wyze Cam v3 records continuous video locally to a microSD card. Wyze officially supports and has tested cards up to 256GB. A Class 10 card is the minimum for reliable recording; High Endurance cards are strongly recommended for 24/7 recording to prevent premature failure.",
+       "recommendedBrands": [
+         { "id": "sandisk-max-endurance" },
+         { "id": "samsung-pro-endurance" }
+       ],
+       "faq": [
+         {
+           "q": "Do I need a special SD card for security cameras?",
+           "a": "<b>Yes, always use a High Endurance microSD card for security cameras.</b> Regular cards are not built for constant rewriting and will fail quickly with 24/7 recording. High Endurance cards are specifically designed for this workload and last much longer."
+         },
+         {
+           "q": "What capacity should I get for continuous recording?",
+           "a": "<b>64GB to 128GB is ideal for most users.</b> A 64GB card stores approximately 1-2 weeks of continuous video on standard settings. Heavy users or those wanting longer retention should opt for 128GB or 256GB."
+         }
+       ],
+       "relatedDevices": ["viofo-a229-duo", "nextbase-622gw", "eufy-solocam-s340"],
+       "notes": "Extremely popular budget security camera with massive search volume. Wyze official documentation confirms microSD support up to 256GB (tested). Requires FAT32 for 32GB or smaller, exFAT for 64GB+."
+     },
+     {
+       "id": "eufy-solocam-s340",
+       "name": "Eufy Security SoloCam S340",
+       "category": "Security Cameras",
+       "slug": "eufy-solocam-s340",
+       "searchTerms": ["eufy solocam s340 sd card", "eufy s340 microsd", "solocam storage"],
+       "imageUrl": "/img/devices/eufy-solocam-s340.webp",
+       "sdCard": {
+         "type": "microSD",
+         "minSpeed": "Class 10 / U1",
+         "minWriteSpeed": "10 MB/s",
+         "recommendedCapacity": ["32GB", "64GB", "128GB"],
+         "maxCapacity": "128GB"
+       },
+       "whySpecs": "The SoloCam S340 features dual cameras with pan/tilt and records locally to microSD (up to 128GB). Eufy recommends Class 10 cards minimum; High Endurance cards are essential for continuous recording to ensure long-term reliability.",
+       "recommendedBrands": [
+         { "id": "sandisk-max-endurance" },
+         { "id": "samsung-pro-endurance" }
+       ],
+       "faq": [
+         {
+           "q": "How much video can a 128GB card hold?",
+           "a": "<b>A 128GB High Endurance card stores approximately 2-3 weeks of continuous recording</b> on standard quality settings. The exact duration varies based on your motion detection settings and video quality preferences."
+         }
+       ],
+       "relatedDevices": ["wyze-cam-v3", "viofo-a229-duo", "nextbase-622gw"],
+       "notes": "Popular wire-free security camera with built-in solar panel option. Eufy official specs confirm microSD support up to 128GB. Growing search volume as Eufy gains market share."
+     },
+     {
+       "id": "hp-chromebook-14",
+       "name": "HP Chromebook 14",
+       "category": "Computing & Tablets",
+       "slug": "hp-chromebook-14",
+       "searchTerms": ["hp chromebook 14 sd card", "hp chromebook microsd", "chromebook sd card slot"],
+       "imageUrl": "/img/devices/hp-chromebook-14.webp",
+       "sdCard": {
+         "type": "microSD",
+         "minSpeed": "No minimum required (Class 10 / V10 recommended)",
+         "minWriteSpeed": "10 MB/s",
+         "recommendedCapacity": ["64GB", "128GB", "256GB"],
+         "maxCapacity": "No official limit (512GB+ commonly works)"
+       },
+       "whySpecs": "HP Chromebook 14 models include a microSD card reader for expanding storage. While Chromebooks primarily use cloud storage, a microSD card is useful for offline files, media libraries, and Linux apps. A Class 10 card provides smooth file access.",
+       "recommendedBrands": [
+         { "id": "sandisk-ultra-microsd" },
+         { "id": "kingston-canvas-select" },
+         { "id": "samsung-evo-select-microsd" }
+       ],
+       "faq": [
+         {
+           "q": "Can I install apps on the SD card in a Chromebook?",
+           "a": "<b>ChromeOS does not allow installing Android apps directly to SD cards.</b> However, you can use the SD card for storing files, media, and as storage for Linux applications if you have Linux (Beta) enabled."
+         },
+         {
+           "q": "What's the best SD card capacity for students?",
+           "a": "<b>64GB to 128GB is ideal for most students.</b> This provides ample space for offline Google Drive files, downloaded videos for offline viewing, and document storage without excessive cost."
+         }
+       ],
+       "relatedDevices": ["amazon-fire-hd-10", "samsung-galaxy-tab-s9"],
+       "notes": "HP Chromebook 14 represents a popular category of budget Chromebooks with microSD slots. HP official spec sheets confirm microSD reader on 2023+ models. High search volume from students and educators."
+     }
+   ]
+}

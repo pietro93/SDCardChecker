@@ -1,0 +1,28 @@
+
+> sd-card-checker@1.0.0 build:site
+> node scripts/generator/build.js
+
+
+🚀 Starting SD Card Checker site generation...
+
+📊 Loading device data...
+  ✓ Loaded 35 devices
+
+📁 Copying assets...
+📁 Copying assets...
+  ✓ Copied CSS files
+  ✓ Copied JS files
+  ✓ data/devices.json
+  ✓ Copied img folder
+
+📄 Generating device pages...
+  ✓ dist\devices\gopro-hero-13\index.html
+  ✓ dist\devices\gopro-hero-12\index.html
+  ✓ dist\devices\nintendo-switch\index.html
+  ✓ dist\devices\nintendo-switch-oled\index.html
+  ✓ dist\devices\dji-mini-4-pro\index.html
+  ✓ dist\devices\canon-eos-r5\index.html
+  ✓ dist\devices\sony-a6700\index.html
+  ✓ dist\devices\fujifilm-x-s20\index.html
+  ✓ dist\devices\steam-deck\index.html
+❌ Error during generation: EPERM: operation not permitted, open 'c:\Users\Pietro\Desktop\SDCardChecker\dist\devices\gopro-hero-max\index.html'

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Card Checker - Find the Perfect SD Card for Any Device</title>
+    <meta name="description"
+        content="Instantly find the perfect SD card for your device. Compare speeds, brands, and get personalized recommendations for cameras, drones, gaming handhelds, and more.">
+    <meta name="keywords" content="SD card, microSD, best SD card, SD card recommendations, device compatibility">
+    <link rel="canonical" href="https://sdcardchecker.com/">
+    <link rel="icon" type="image/x-icon" href="/img/brand/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/brand/logo.webp">
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SD Card Checker - Find the Perfect SD Card for Any Device">
+    <meta property="og:description" content="Instantly find the perfect SD card for your device. Compare speeds, brands, and get personalized recommendations for cameras, drones, gaming handhelds, and more.">
+    <meta property="og:image" content="https://sdcardchecker.com/img/home-hero.webp">
+    <meta property="og:url" content="https://sdcardchecker.com/">
+    <meta property="og:site_name" content="SD Card Checker">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SD Card Checker - Find the Perfect SD Card for Any Device">
+    <meta name="twitter:description" content="Instantly find the perfect SD card for your device. Compare speeds, brands, and get personalized recommendations for cameras, drones, gaming handhelds, and more.">
+    <meta name="twitter:image" content="https://sdcardchecker.com/img/home-hero.webp">
+
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/assets/css/modern.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/assets/js/search.js"></script>
+
+    <style>
+        /* Trust Indicators Section Styles */
+        .trust-indicators {
+            background: transparent;
+            padding: 0;
+            border-top: none;
+            border-bottom: none;
+        }
+
+        .indicators-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .indicator-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .indicator-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .indicator-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .indicator-label {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #475569;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .trust-indicators {
+                padding: 2rem 0;
+            }
+
+            .indicators-grid {
+                gap: 1.5rem;
+            }
+
+            .indicator-card {
+                padding: 1.5rem;
+            }
+
+            .indicator-number {
+                font-size: 2rem;
+            }
+
+            .indicator-label {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    {{HEADER}}
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('/img/home-hero.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="text-white" style="text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);">Find the Perfect SD Card for Your Device in Seconds</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="container" style="position: relative; z-index: 50; margin-top: 2rem;">
+            <div x-data="deviceSearch()" x-init="init()" @click.outside="open = false" class="search-section">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" x-model="query" @input="filterDevices()" @focus="open = true; filterDevices()"
+                        @keydown="handleKeydown($event)"
+                        placeholder="Search devices... (e.g., GoPro Hero 13, Nintendo Switch)" class="search-input"
+                        aria-label="Search for devices and recommended SD cards">
+                    <div class="search-dropdown" :class="{ hidden: !open || filtered.length === 0 }">
+                        <template x-for="(group, category) in groupedDevices()" :key="category">
+                            <div>
+                                <div class="search-group-header" x-text="category"></div>
+                                <template x-for="device in groupedDevices()[category]" :key="device.id">
+                                    <a :href="`/devices/${device.slug}/`" class="search-item">
+                                        <div class="search-item-name" x-text="device.name"></div>
+                                        <div class="search-item-category" x-text="device.category"></div>
+                                    </a>
+                                </template>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subtitle Section -->
+        <div class="container" style="position: relative; z-index: 10; margin-top: 2rem;">
+            <p style="margin: 0; color: rgba(255,255,255,0.9); text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); font-weight: 500; letter-spacing: 0.3px;">Expert recommendations for every device. Compare speeds, capacities, and brands. Get the best card for your camera, drone, gaming handheld, or tablet.</p>
+        </div>
+
+        <!-- Trust Indicators Section -->
+        <div style="padding: 3rem 0; margin-top: 2rem;">
+            <div class="container">
+                <div class="indicators-grid">
+                    <div class="indicator-card">
+                        <div class="indicator-number">34+</div>
+                        <div class="indicator-label">Devices Covered</div>
+                    </div>
+                    <div class="indicator-card">
+                        <div class="indicator-number">50+</div>
+                        <div class="indicator-label">SD Cards Reviewed</div>
+                    </div>
+                    <div class="indicator-card">
+                        <div class="indicator-number">10</div>
+                        <div class="indicator-label">Categories</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Devices -->
+    <section class="popular-devices">
+        <div class="container">
+            <h2 id="devices">Popular Devices</h2>
+            <p>Start with one of these popular devices, or search above for your specific model.</p>
+            <div class="devices-list">
+                <div class="device-tag">
+                    <a href="/devices/gopro-hero-13/">GoPro Hero 13</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/devices/dji-mini-4-pro/">DJI Mini 4 Pro</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/devices/nintendo-switch/">Nintendo Switch</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/devices/canon-eos-r5/">Canon EOS R5</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/devices/sony-a6700/">Sony A6700</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/devices/steam-deck/">Steam Deck</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/devices/dji-mavic-3/">DJI Mavic 3</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/devices/nikon-z9/">Nikon Z9</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section style="padding: 4rem 0; background: white;">
+        <div class="container">
+            <h2 id="categories">Categories</h2>
+            <div class="features-grid" style="margin-top: 2rem;">
+                <a href="/categories/action-cameras/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">📹</div>
+                    <h3>Action Cameras</h3>
+                    <p>GoPro, DJI Osmo, and more. High-bitrate video requirements.</p>
+                </a>
+                <a href="/categories/gaming-handhelds/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Gaming Handhelds</h3>
+                    <p>Nintendo Switch, Steam Deck, ROG Ally. Fast load times matter.</p>
+                </a>
+                <a href="/categories/computing-and-tablets/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">💻</div>
+                    <h3>Computing & Tablets</h3>
+                    <p>Raspberry Pi, Samsung tablets. Expand your storage instantly.</p>
+                </a>
+                <a href="/categories/drones/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">🚁</div>
+                    <h3>Drones</h3>
+                    <p>4K video recording. Reliability is critical.</p>
+                </a>
+                <a href="/categories/mirrorless-cameras/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">📷</div>
+                    <h3>Mirrorless Cameras</h3>
+                    <p>RAW photo and 4K video. Professional specs needed.</p>
+                </a>
+                <a href="/categories/security-cameras/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">📹</div>
+                    <h3>Security Cameras</h3>
+                    <p>24/7 recording. High Endurance cards recommended.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section style="padding: 4rem 0;">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Speed Guides</h3>
+                    <p>Detailed specs for each device type. Know exactly what speed class and capacity you need.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Brand Ratings</h3>
+                    <p>Compare top SD card brands. See pros, cons, and pricing for each recommendation tier.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Best Value</h3>
+                    <p>Budget, recommended, and professional tiers. Find the right card at the right price.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{FOOTER}}
+
+    <script>
+        // Add groupedDevices method to deviceSearch component
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('deviceSearch', () => ({
+                query: '',
+                allDevices: [],
+                filtered: [],
+                open: false,
+
+                init() {
+                    this.loadDevices();
+                },
+
+                loadDevices() {
+                    fetch('/data/devices.json')
+                        .then(res => res.json())
+                        .then(data => {
+                            this.allDevices = data.devices;
+                            this.filtered = this.allDevices.slice(0, 30);
+                        })
+                        .catch(err => console.error('Failed to load devices:', err));
+                },
+
+                filterDevices() {
+                    const q = this.query.toLowerCase();
+                    if (!q) {
+                        this.filtered = this.allDevices.slice(0, 30);
+                        return;
+                    }
+
+                    this.filtered = this.allDevices.filter(device =>
+                        device.name.toLowerCase().includes(q) ||
+                        device.category.toLowerCase().includes(q) ||
+                        (device.searchTerms && device.searchTerms.some(term =>
+                            term.toLowerCase().includes(q)
+                        ))
+                    );
+                },
+
+                groupedDevices() {
+                    const grouped = {};
+                    this.filtered.forEach(device => {
+                        if (!grouped[device.category]) {
+                            grouped[device.category] = [];
+                        }
+                        grouped[device.category].push(device);
+                    });
+                    return Object.keys(grouped).sort().reduce((acc, key) => {
+                        acc[key] = grouped[key];
+                        return acc;
+                    }, {});
+                },
+
+                handleKeydown(e) {
+                    if (e.key === 'Escape') {
+                        this.open = false;
+                    }
+                }
+            }));
+        });
+    </script>
+</body>
+
+</html>

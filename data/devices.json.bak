@@ -1,0 +1,828 @@
+{
+  "devices": [
+    {
+      "id": "gopro-hero-13",
+      "name": "GoPro Hero 13 Black",
+      "category": "Action Cameras",
+      "slug": "gopro-hero-13",
+      "searchTerms": ["gopro hero 13", "gopro 13", "hero 13", "gopro black"],
+      "imageUrl": "/assets/images/devices/gopro-hero-13.jpg",
+      "sdCard": {
+        "type": "microSD UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB", "512GB"],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "Shoots 5.3K at high frame rates. V30 ensures 30MB/s sustained write speed needed to prevent dropped frames or corrupted files. GoPro's 5.3K bitrate (~60-80 Mbps) requires reliable, fast cards for stable recording.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-microsd" },
+        { "id": "lexar-professional-633x" },
+        { "id": "kingston-canvas-select" }
+      ],
+      "faq": [
+        {
+          "q": "Will a V30 card work for GoPro Hero 13's 5.3K video?",
+          "a": "Yes. V30 guarantees 30MB/s sustained write. GoPro's 5.3K bitrate is well within spec."
+        },
+        {
+          "q": "How much storage for a day of shooting?",
+          "a": "256GB holds approximately 3 hours of 5.3K 60fps video. Recommend 256GB minimum for full-day trips."
+        },
+        {
+          "q": "Can I use a regular SD card with adapter?",
+          "a": "No, GoPro Hero 13 only accepts microSD cards. Full-size SD cards won't work."
+        },
+        {
+          "q": "Do I need UHS-II or is UHS-I enough?",
+          "a": "UHS-II is recommended for 5.3K recording stability, but UHS-I V30 cards will work."
+        },
+        {
+          "q": "What's the fastest card I should get?",
+          "a": "V30 is sufficient for standard GoPro shooting. V60 useful only for professional work or future-proofing."
+        },
+        {
+          "q": "How often should I replace my SD card?",
+          "a": "Most quality V30 cards last 3-5 years. Replace if you experience errors or corrupted files."
+        }
+      ],
+      "relatedDevices": ["gopro-hero-12", "gopro-hero-max", "dji-mini-4-pro"],
+      "notes": "Same specs as Hero 12. Official GoPro tests show V30 cards optimal for 5.3K 60fps stability."
+    },
+    {
+      "id": "gopro-hero-12",
+      "name": "GoPro Hero 12 Black",
+      "category": "Action Cameras",
+      "slug": "gopro-hero-12",
+      "searchTerms": ["gopro hero 12", "gopro 12", "hero 12"],
+      "imageUrl": "/assets/images/devices/gopro-hero-12.jpg",
+      "sdCard": {
+        "type": "microSD UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Shoots 5.3K video at various frame rates. V30 cards ensure 30MB/s sustained write speed. Critical for preventing dropped frames during high bitrate recording.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-microsd" },
+        { "id": "lexar-professional-1000x-microsd" },
+        { "id": "kingston-canvas-go" }
+      ],
+      "faq": [
+        {
+          "q": "Is V30 required for Hero 12?",
+          "a": "Yes, V30 is recommended by GoPro for 5.3K recording without dropped frames."
+        },
+        {
+          "q": "Can I record 5K with V20 cards?",
+          "a": "Not recommended. V20 may cause issues. V30 is the safe minimum."
+        },
+        {
+          "q": "How long can I record on 256GB?",
+          "a": "Approximately 2.5-3 hours of 5.3K 60fps video."
+        },
+        {
+          "q": "Does brand matter?",
+          "a": "Yes. Use trusted brands like SanDisk, Lexar, or Kingston to avoid data loss."
+        },
+        {
+          "q": "Can I use older microSD cards?",
+          "a": "Older cards below V30 are risky. Best to upgrade to V30 for reliability."
+        }
+      ],
+      "relatedDevices": ["gopro-hero-13", "gopro-hero-max"],
+      "notes": "Official GoPro recommendation: UHS-II V30 cards. Compatible with all GoPro Hero series."
+    },
+    {
+      "id": "nintendo-switch",
+      "name": "Nintendo Switch",
+      "category": "Gaming Consoles",
+      "slug": "nintendo-switch",
+      "searchTerms": ["nintendo switch", "switch sd card", "switch memory card", "switch storage"],
+      "imageUrl": "/assets/images/devices/nintendo-switch.jpg",
+      "sdCard": {
+        "type": "microSD, microSDHC, microSDXC",
+        "minSpeed": "No minimum required",
+        "minWriteSpeed": "Not specified",
+        "recommendedCapacity": ["64GB", "128GB", "256GB"],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "Nintendo Switch doesn't require high-speed cards for game loading. Any microSD card works, but V30 cards offer best reliability. Cheaper slower cards still work but may have slightly longer load times.",
+      "recommendedBrands": [
+        {
+          "name": "SanDisk Ultra microSD",
+          "speed": "V30",
+          "writeSpeed": "90 MB/s",
+          "priceEstimate": 20,
+          "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Ultra+microSD+128GB&tag=AFFILIATETAG",
+          "pros": "Budget-friendly, reliable, widely available",
+          "cons": "None really",
+          "tier": "recommended"
+        },
+        {
+          "name": "Kingston Canvas Go! Plus",
+          "speed": "V30",
+          "writeSpeed": "90 MB/s",
+          "priceEstimate": 22,
+          "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+Go+Plus&tag=AFFILIATETAG",
+          "pros": "Good value, fast, reliable",
+          "cons": "Slightly pricier than SanDisk",
+          "tier": "recommended"
+        },
+        {
+          "name": "No-Name Class 10 microSD",
+          "speed": "Class 10",
+          "writeSpeed": "20 MB/s",
+          "priceEstimate": 8,
+          "amazonSearchUrl": "https://amazon.com/s?k=microSD+128GB+class+10&tag=AFFILIATETAG",
+          "pros": "Cheapest option available",
+          "cons": "Slow, unreliable, higher failure rate",
+          "tier": "budget"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I really need a fast card for Switch?",
+          "a": "No. Switch loads fine with any microSD. V30 provides better reliability but isn't required."
+        },
+        {
+          "q": "How much storage for Switch games?",
+          "a": "Games range 1-30GB. 128GB holds 5-10 games comfortably. 256GB for extensive library."
+        },
+        {
+          "q": "Can I use a phone's microSD card?",
+          "a": "Yes, any microSD works. Back up phone data first before transferring."
+        },
+        {
+          "q": "Does the card need to be formatted?",
+          "a": "Yes, Switch will format the card on first use. This erases existing data."
+        },
+        {
+          "q": "Is UHS-II necessary?",
+          "a": "No, Switch uses UHS-I. UHS-II cards work but offer no performance benefit."
+        },
+        {
+          "q": "What happens if I use a slower card?",
+          "a": "Slightly longer load times. Games still work fine. No risk of data loss."
+        }
+      ],
+      "relatedDevices": ["nintendo-switch-oled", "nintendo-switch-lite", "steam-deck"],
+      "notes": "Switch is least demanding of all devices. Any microSD card works. V30 not necessary but provides reliability."
+    },
+    {
+      "id": "nintendo-switch-oled",
+      "name": "Nintendo Switch OLED",
+      "category": "Gaming Consoles",
+      "slug": "nintendo-switch-oled",
+      "searchTerms": ["nintendo switch oled", "switch oled", "switch oled memory card"],
+      "imageUrl": "/assets/images/devices/nintendo-switch-oled.jpg",
+      "sdCard": {
+        "type": "microSD, microSDHC, microSDXC",
+        "minSpeed": "No minimum required",
+        "minWriteSpeed": "Not specified",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "OLED model has identical storage requirements as original Switch. Any microSD works. V30 recommended for reliability but not required.",
+      "recommendedBrands": [
+        {
+          "name": "SanDisk Ultra microSD",
+          "speed": "V30",
+          "writeSpeed": "90 MB/s",
+          "priceEstimate": 20,
+          "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Ultra+microSD+128GB&tag=AFFILIATETAG",
+          "pros": "Perfect for Switch OLED, affordable",
+          "cons": "None",
+          "tier": "recommended"
+        },
+        {
+          "name": "Crucial MX500 microSD",
+          "speed": "V30",
+          "writeSpeed": "85 MB/s",
+          "priceEstimate": 19,
+          "amazonSearchUrl": "https://amazon.com/s?k=Crucial+microSD+128GB&tag=AFFILIATETAG",
+          "pros": "Reliable, good price",
+          "cons": "Less common than SanDisk",
+          "tier": "recommended"
+        },
+        {
+          "name": "Budget microSD Class 10",
+          "speed": "Class 10",
+          "writeSpeed": "15 MB/s",
+          "priceEstimate": 10,
+          "amazonSearchUrl": "https://amazon.com/s?k=microSD+Class+10+128GB&tag=AFFILIATETAG",
+          "pros": "Cheapest available",
+          "cons": "Slow, unreliable",
+          "tier": "budget"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I use the same card from my original Switch?",
+          "a": "Yes, completely compatible. OLED has same storage as original Switch."
+        },
+        {
+          "q": "What size card do I need?",
+          "a": "128GB minimum recommended. 256GB better if you have many games."
+        },
+        {
+          "q": "Is there a speed difference between models?",
+          "a": "No. OLED uses same microSD slot and speeds as original Switch."
+        }
+      ],
+      "relatedDevices": ["nintendo-switch", "nintendo-switch-lite"],
+      "notes": "OLED model shares identical storage requirements with original Switch."
+    },
+    {
+      "id": "dji-mini-4-pro",
+      "name": "DJI Mini 4 Pro",
+      "category": "Drones",
+      "slug": "dji-mini-4-pro",
+      "searchTerms": ["dji mini 4 pro", "mini 4 pro", "dji mini 4 sd card"],
+      "imageUrl": "/assets/images/devices/dji-mini-4-pro.jpg",
+      "sdCard": {
+        "type": "microSD UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Records 4K video at up to 60fps. V30 ensures smooth recording without dropped frames. 4K bitrate requires sustained 30MB/s write speed minimum.",
+      "recommendedBrands": [
+        {
+          "name": "SanDisk Extreme microSD",
+          "speed": "V30",
+          "writeSpeed": "90 MB/s",
+          "priceEstimate": 35,
+          "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+microSD+V30&tag=AFFILIATETAG",
+          "pros": "DJI tested and approved, fast, reliable",
+          "cons": "Mid-price",
+          "tier": "recommended"
+        },
+        {
+          "name": "Lexar Professional 1000x",
+          "speed": "V30",
+          "writeSpeed": "70 MB/s",
+          "priceEstimate": 38,
+          "amazonSearchUrl": "https://amazon.com/s?k=Lexar+1000x+microSD&tag=AFFILIATETAG",
+          "pros": "Professional grade, excellent performance",
+          "cons": "Premium pricing",
+          "tier": "recommended"
+        },
+        {
+          "name": "Kingston Canvas Go!",
+          "speed": "V30",
+          "writeSpeed": "60 MB/s",
+          "priceEstimate": 16,
+          "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+Go+microSD&tag=AFFILIATETAG",
+          "pros": "Budget option, still V30",
+          "cons": "Lower speeds than premium brands",
+          "tier": "budget"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I use V20 cards with DJI Mini 4 Pro?",
+          "a": "Not recommended. V30 minimum required for 4K 60fps recording."
+        },
+        {
+          "q": "How long can I record on 256GB?",
+          "a": "Approximately 4-5 hours of 4K 30fps video."
+        },
+        {
+          "q": "Does the brand matter for drones?",
+          "a": "Yes. Use trusted brands to avoid mid-flight card failures."
+        },
+        {
+          "q": "Is UHS-II required?",
+          "a": "Recommended for best performance, but UHS-I V30 cards work."
+        },
+        {
+          "q": "What about older used cards?",
+          "a": "Avoid used or degraded cards. Drone crashes are expensive."
+        }
+      ],
+      "relatedDevices": ["dji-mini-3-pro", "dji-air-3s"],
+      "notes": "DJI officially recommends V30 cards for safe recording. Test new cards before flights."
+    },
+    {
+      "id": "canon-eos-r5",
+      "name": "Canon EOS R5",
+      "category": "Mirrorless Cameras",
+      "slug": "canon-eos-r5",
+      "searchTerms": ["canon eos r5", "canon r5", "eos r5 sd card"],
+      "imageUrl": "/assets/images/devices/canon-eos-r5.jpg",
+      "sdCard": {
+        "type": "CFast 2.0 and SD UHS-II",
+        "minSpeed": "V60",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Professional 8K camera recording. Requires V60 minimum for 8K RAW video. High bitrate (1.6 Gbps) demands fast, dual card slots for safety.",
+      "recommendedBrands": [
+        {
+          "name": "SanDisk Extreme PRO CFast 2.0",
+          "speed": "V60",
+          "writeSpeed": "150 MB/s",
+          "priceEstimate": 110,
+          "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+CFast+2.0&tag=AFFILIATETAG",
+          "pros": "Professional-grade, extremely fast",
+          "cons": "Expensive",
+          "tier": "recommended"
+        },
+        {
+          "name": "Lexar Professional 1000x SD UHS-II",
+          "speed": "V60",
+          "writeSpeed": "100 MB/s",
+          "priceEstimate": 80,
+          "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+1000x+SD&tag=AFFILIATETAG",
+          "pros": "Great for SD slot, professional performance",
+          "cons": "Slower than CFast",
+          "tier": "recommended"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need two cards for R5?",
+          "a": "Yes. Dual card slots. Use two V60 cards for safety when shooting 8K."
+        },
+        {
+          "q": "Can I shoot 4K with V30 cards?",
+          "a": "Yes, 4K works fine. 8K requires V60 minimum."
+        },
+        {
+          "q": "What's the difference between CFast and SD?",
+          "a": "CFast 2.0 is significantly faster. Best for 8K RAW. SD UHS-II faster and cheaper for 4K."
+        }
+      ],
+      "relatedDevices": ["canon-eos-r6", "canon-eos-r3"],
+      "notes": "Canon EOS R5 is professional 8K camera. Dual V60 cards strongly recommended."
+    },
+    {
+      "id": "sony-a6700",
+      "name": "Sony A6700",
+      "category": "Mirrorless Cameras",
+      "slug": "sony-a6700",
+      "searchTerms": ["sony a6700", "a6700", "sony a6700 sd card"],
+      "imageUrl": "/assets/images/devices/sony-a6700.jpg",
+      "sdCard": {
+        "type": "SD UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Excellent for 4K 60fps video and high-speed photography. V30 ensures reliable performance. Professional mirrorless users benefit from dual card slots.",
+      "recommendedBrands": [
+        {
+          "name": "SanDisk Extreme PRO SD UHS-II",
+          "speed": "V30",
+          "writeSpeed": "70 MB/s",
+          "priceEstimate": 45,
+          "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+SD&tag=AFFILIATETAG",
+          "pros": "Professional grade, fast, reliable",
+          "cons": "Premium pricing",
+          "tier": "recommended"
+        },
+        {
+          "name": "Lexar Professional Silver SD UHS-II",
+          "speed": "V30",
+          "writeSpeed": "65 MB/s",
+          "priceEstimate": 42,
+          "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+Silver+SD&tag=AFFILIATETAG",
+          "pros": "Excellent build, professional performance",
+          "cons": "Premium price",
+          "tier": "recommended"
+        },
+        {
+          "name": "Kingston Canvas Go! Pro SD",
+          "speed": "V30",
+          "writeSpeed": "260 MB/s",
+          "priceEstimate": 50,
+          "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+Go+Pro+SD&tag=AFFILIATETAG",
+          "pros": "Extremely fast UHS-II",
+          "cons": "Higher price",
+          "tier": "professional"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is V30 enough for 4K 60fps?",
+          "a": "Yes. V30 provides necessary 30MB/s. Professional users prefer V60+ for insurance."
+        },
+        {
+          "q": "Do I need two cards?",
+          "a": "Dual slots provided. Use two cards for backup and extended shooting."
+        }
+      ],
+      "relatedDevices": ["sony-a6400", "sony-a7r5"],
+      "notes": "Popular choice for content creators. Dual SD UHS-II card slots for professional workflow."
+    },
+    {
+      "id": "fujifilm-x-s20",
+      "name": "Fujifilm X-S20",
+      "category": "Mirrorless Cameras",
+      "slug": "fujifilm-x-s20",
+      "searchTerms": ["fujifilm x-s20", "x-s20", "xs20 sd card"],
+      "imageUrl": "/assets/images/devices/fujifilm-x-s20.jpg",
+      "sdCard": {
+        "type": "SD UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Great for travel and video. V30 handles 4K recording reliably. Single card slot, so reliability is key.",
+      "recommendedBrands": [
+        {
+          "name": "SanDisk Extreme Pro SD UHS-II",
+          "speed": "V30",
+          "writeSpeed": "70 MB/s",
+          "priceEstimate": 45,
+          "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+SD+UHS-II&tag=AFFILIATETAG",
+          "pros": "Fast, reliable, professional grade",
+          "cons": "Premium price",
+          "tier": "recommended"
+        },
+        {
+          "name": "Lexar Professional Silver SD",
+          "speed": "V30",
+          "writeSpeed": "65 MB/s",
+          "priceEstimate": 42,
+          "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+Silver+SD&tag=AFFILIATETAG",
+          "pros": "Great build, excellent warranty",
+          "cons": "Mid-to-premium price",
+          "tier": "recommended"
+        },
+        {
+          "name": "Kingston Canvas Go!",
+          "speed": "V30",
+          "writeSpeed": "60 MB/s",
+          "priceEstimate": 35,
+          "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+Go+SD&tag=AFFILIATETAG",
+          "pros": "Good value, reliable",
+          "cons": "Less common for Fujifilm",
+          "tier": "budget"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does X-S20 really need V30?",
+          "a": "Yes for 4K video. Still photos work with slower cards but V30 recommended."
+        },
+        {
+          "q": "Is there a backup card slot?",
+          "a": "No, single SD card slot. Make backup copies regularly."
+        }
+      ],
+      "relatedDevices": ["fujifilm-x-s10", "fujifilm-x-t5"],
+      "notes": "Popular travel camera. Single card slot makes reliable card choice important."
+    },
+    {
+      "id": "steam-deck",
+      "name": "Steam Deck",
+      "category": "Gaming Consoles",
+      "slug": "steam-deck",
+      "searchTerms": ["steam deck", "steam deck sd card", "deck microsd"],
+      "imageUrl": "/assets/images/devices/steam-deck.jpg",
+      "sdCard": {
+        "type": "microSD UHS-I (not UHS-II)",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["256GB", "512GB"],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "Steam Deck uses UHS-I interface. While V30 works, actual performance limited by UHS-I speeds. Any V30 microSD card sufficient.",
+      "recommendedBrands": [
+        {
+          "name": "SanDisk Ultra microSD",
+          "speed": "V30",
+          "writeSpeed": "90 MB/s",
+          "priceEstimate": 30,
+          "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Ultra+microSD+256GB&tag=AFFILIATETAG",
+          "pros": "Good value, reliable, widely available",
+          "cons": "None for Deck usage",
+          "tier": "recommended"
+        },
+        {
+          "name": "Kingston Canvas Go! Plus",
+          "speed": "V30",
+          "writeSpeed": "90 MB/s",
+          "priceEstimate": 32,
+          "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+Go+Plus+256GB&tag=AFFILIATETAG",
+          "pros": "Good performance, decent price",
+          "cons": "Slightly pricier",
+          "tier": "recommended"
+        },
+        {
+          "name": "Crucial MX500 microSD",
+          "speed": "V30",
+          "writeSpeed": "85 MB/s",
+          "priceEstimate": 25,
+          "amazonSearchUrl": "https://amazon.com/s?k=Crucial+microSD+256GB&tag=AFFILIATETAG",
+          "pros": "Budget-friendly, reliable",
+          "cons": "Less popular for Deck",
+          "tier": "budget"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need UHS-II for Steam Deck?",
+          "a": "No. Deck only uses UHS-I. UHS-II cards work but provide no benefit."
+        },
+        {
+          "q": "How much storage for games?",
+          "a": "Steam games range 10-100GB. 256GB holds 5-15 games. 512GB recommended."
+        },
+        {
+          "q": "Can I use fast V60 cards?",
+          "a": "Yes, they work, but Deck's UHS-I interface limits speed benefit."
+        }
+      ],
+      "relatedDevices": ["nintendo-switch", "asus-rog-ally"],
+      "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library."
+    },
+    {
+      "id": "gopro-hero-max",
+      "name": "GoPro Hero Max",
+      "category": "Action Cameras",
+      "slug": "gopro-hero-max",
+      "searchTerms": ["gopro hero max", "gopro max", "hero max"],
+      "imageUrl": "/assets/images/devices/gopro-hero-max.jpg",
+      "sdCard": {
+        "type": "microSD UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Shoots 360-degree video and standard 4K. V30 ensures stable recording for both modes.",
+      "recommendedBrands": [
+        {
+          "name": "SanDisk Extreme microSD",
+          "speed": "V30",
+          "writeSpeed": "90 MB/s",
+          "priceEstimate": 35,
+          "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+microSD+V30&tag=AFFILIATETAG",
+          "pros": "Fast, reliable",
+          "cons": "Mid-price",
+          "tier": "recommended"
+        },
+        {
+          "name": "Lexar Professional 633x",
+          "speed": "V30",
+          "writeSpeed": "70 MB/s",
+          "priceEstimate": 40,
+          "amazonSearchUrl": "https://amazon.com/s?k=Lexar+633x+microSD&tag=AFFILIATETAG",
+          "pros": "Professional grade, excellent warranty",
+          "cons": "More expensive",
+          "tier": "recommended"
+        },
+        {
+          "name": "Kingston Canvas Select",
+          "speed": "V30",
+          "writeSpeed": "60 MB/s",
+          "priceEstimate": 18,
+          "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+Select+microSD&tag=AFFILIATETAG",
+          "pros": "Budget-friendly",
+          "cons": "Lower performance",
+          "tier": "budget"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is V30 needed for 360 video?",
+          "a": "Yes. 360 mode has higher bitrate than standard video."
+        },
+        {
+          "q": "How much storage for 360 content?",
+          "a": "Roughly 1.5 hours per 128GB in 360 mode."
+        }
+      ],
+      "relatedDevices": ["gopro-hero-13", "gopro-hero-12"],
+      "notes": "360-degree camera. V30 important for both 360 and standard recording modes."
+    },
+    {
+      "id": "dji-mini-3-pro",
+      "name": "DJI Mini 3 Pro",
+      "category": "Drones",
+      "slug": "dji-mini-3-pro",
+      "searchTerms": ["dji mini 3 pro", "mini 3 pro", "dji mini 3"],
+      "imageUrl": "/assets/images/devices/dji-mini-3-pro.jpg",
+      "sdCard": {
+        "type": "microSD UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "4K video recording requires V30 minimum. DJI officially recommends high-speed cards.",
+      "recommendedBrands": [
+        {
+          "name": "SanDisk Extreme microSD",
+          "speed": "V30",
+          "writeSpeed": "90 MB/s",
+          "priceEstimate": 35,
+          "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+microSD+V30&tag=AFFILIATETAG",
+          "pros": "DJI approved, reliable",
+          "cons": "Mid-price",
+          "tier": "recommended"
+        },
+        {
+          "name": "Lexar Professional 1000x",
+          "speed": "V30",
+          "writeSpeed": "70 MB/s",
+          "priceEstimate": 38,
+          "amazonSearchUrl": "https://amazon.com/s?k=Lexar+1000x+microSD&tag=AFFILIATETAG",
+          "pros": "Professional performance",
+          "cons": "Premium price",
+          "tier": "recommended"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can V20 cards work?",
+          "a": "Not safely. V30 minimum for 4K recording."
+        },
+        {
+          "q": "How long flight on 256GB?",
+          "a": "Approximately 8-10 hours of 4K video recording time."
+        }
+      ],
+      "relatedDevices": ["dji-mini-4-pro", "dji-air-3s"],
+      "notes": "Previous generation Mini series. Same V30 requirements as Mini 4 Pro."
+    },
+    {
+      "id": "dji-air-3s",
+      "name": "DJI Air 3S",
+      "category": "Drones",
+      "slug": "dji-air-3s",
+      "searchTerms": ["dji air 3s", "air 3s", "dji air 3"],
+      "imageUrl": "/assets/images/devices/dji-air-3s.jpg",
+      "sdCard": {
+        "type": "microSD UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": ["256GB", "512GB"],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "Professional 4K 60fps drone. Higher bitrate than Mini series. V30 minimum, V60 recommended for professional use.",
+      "recommendedBrands": [
+        {
+          "name": "SanDisk Extreme PRO microSD",
+          "speed": "V60",
+          "writeSpeed": "170 MB/s",
+          "priceEstimate": 70,
+          "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+microSD+V60&tag=AFFILIATETAG",
+          "pros": "Professional-grade, very fast",
+          "cons": "Premium pricing",
+          "tier": "professional"
+        },
+        {
+          "name": "Lexar Professional Silver microSD",
+          "speed": "V30",
+          "writeSpeed": "110 MB/s",
+          "priceEstimate": 45,
+          "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+Silver+microSD&tag=AFFILIATETAG",
+          "pros": "Good balance of speed and price",
+          "cons": "None really",
+          "tier": "recommended"
+        },
+        {
+          "name": "Kingston Canvas Go! Plus",
+          "speed": "V30",
+          "writeSpeed": "90 MB/s",
+          "priceEstimate": 32,
+          "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+Go+Plus&tag=AFFILIATETAG",
+          "pros": "Budget-friendly V30",
+          "cons": "Lower write speeds",
+          "tier": "budget"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is V60 required for Air 3S?",
+          "a": "V30 works, but V60 recommended for professional 4K 60fps work."
+        },
+        {
+          "q": "How much storage for a day of professional filming?",
+          "a": "256GB ≈ 8 hours of 4K footage. 512GB recommended for full day."
+        }
+      ],
+      "relatedDevices": ["dji-mini-4-pro", "dji-mavic-3"],
+      "notes": "Professional prosumer drone. V60 preferred for stable 4K 60fps recording."
+    },
+    {
+      "id": "dji-mavic-3",
+      "name": "DJI Mavic 3",
+      "category": "Drones",
+      "slug": "dji-mavic-3",
+      "searchTerms": ["dji mavic 3", "mavic 3", "dji mavic"],
+      "imageUrl": "/assets/images/devices/dji-mavic-3.jpg",
+      "sdCard": {
+        "type": "microSD UHS-II",
+        "minSpeed": "V60",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": ["256GB", "512GB"],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "Premium 4K and 8K drone. Supports Cine 8K recording at high bitrate. V60 minimum required. V90 recommended for 8K work.",
+      "recommendedBrands": [
+        {
+          "name": "Lexar Professional 1000x V60",
+          "speed": "V60",
+          "writeSpeed": "150 MB/s",
+          "priceEstimate": 80,
+          "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+1000x+V60&tag=AFFILIATETAG",
+          "pros": "Professional-grade, excellent for 8K",
+          "cons": "Expensive",
+          "tier": "professional"
+        },
+        {
+          "name": "SanDisk Extreme PRO V60",
+          "speed": "V60",
+          "writeSpeed": "170 MB/s",
+          "priceEstimate": 85,
+          "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+microSD+V60&tag=AFFILIATETAG",
+          "pros": "Very fast, reliable for 8K",
+          "cons": "Premium price",
+          "tier": "professional"
+        },
+        {
+          "name": "Kingston Canvas Go! Pro V30",
+          "speed": "V30",
+          "writeSpeed": "90 MB/s",
+          "priceEstimate": 40,
+          "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+Go+Pro&tag=AFFILIATETAG",
+          "pros": "Budget option, 4K capable",
+          "cons": "Can't reliably record 8K",
+          "tier": "budget"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I use V30 cards for 8K?",
+          "a": "Not recommended. V60 minimum for 8K. V90 ideal for uninterrupted 8K recording."
+        },
+        {
+          "q": "How much storage for 8K footage?",
+          "a": "8K bitrate is high. 512GB ≈ 1 hour of Cine 8K. Plan accordingly."
+        }
+      ],
+      "relatedDevices": ["dji-air-3s", "dji-mini-4-pro"],
+      "notes": "Premium DJI flagship. V60+ cards essential for 8K recording capability."
+    },
+    {
+      "id": "nikon-z9",
+      "name": "Nikon Z9",
+      "category": "Mirrorless Cameras",
+      "slug": "nikon-z9",
+      "searchTerms": ["nikon z9", "z9", "nikon z9 sd card"],
+      "imageUrl": "/assets/images/devices/nikon-z9.jpg",
+      "sdCard": {
+        "type": "CFexpress Type B and XQD",
+        "minSpeed": "V90",
+        "minWriteSpeed": "90 MB/s",
+        "recommendedCapacity": ["128GB", "256GB"],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Professional flagship 8K camera. Requires CFexpress Type B for maximum performance. Dual card slots for backup.",
+      "recommendedBrands": [
+        {
+          "name": "SanDisk Extreme PRO CFexpress",
+          "speed": "V90",
+          "writeSpeed": "1400 MB/s",
+          "priceEstimate": 280,
+          "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+CFexpress&tag=AFFILIATETAG",
+          "pros": "Fastest available, 8K ready",
+          "cons": "Very expensive",
+          "tier": "professional"
+        },
+        {
+          "name": "Nikon XQD Memory Card",
+          "speed": "V90",
+          "writeSpeed": "500 MB/s",
+          "priceEstimate": 200,
+          "amazonSearchUrl": "https://amazon.com/s?k=Nikon+XQD+Memory+Card&tag=AFFILIATETAG",
+          "pros": "Official Nikon solution",
+          "cons": "Legacy format, expensive",
+          "tier": "professional"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need two cards?",
+          "a": "Yes, dual card slots. Use two for backup and extended shooting."
+        },
+        {
+          "q": "Are CFexpress and XQD compatible?",
+          "a": "No, camera supports both but they use different slots."
+        }
+      ],
+      "relatedDevices": ["nikon-z8", "canon-eos-r5"],
+      "notes": "Professional flagship. CFexpress Type B recommended for future-proofing."
+    }
+  ]
+}

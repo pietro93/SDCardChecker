@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom color palette */
+:root {
+  --primary-color: #0066cc;
+  --primary-hover: #0052a3;
+  --dark-text: #1a1a1a;
+  --body-text: #555;
+  --light-text: #999;
+  --border-color: #e5e5e5;
+  --background-light: #f8f8f8;
+  --background-white: #ffffff;
+  --amazon-orange: #ff9900;
+  --amazon-hover: #e68900;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --gray-500: #6b7280;
+}
