@@ -3,6 +3,8 @@
     {
       "id": "sandisk-extreme-microsd",
       "name": "SanDisk Extreme microSD",
+      "type": "microSD",
+      "uhs": "UHS-I",
       "speed": "V30",
       "writeSpeed": "90 MB/s",
       "priceEstimate": 35,
@@ -16,6 +18,8 @@
     {
       "id": "lexar-professional-633x",
       "name": "Lexar Professional 633x",
+      "type": "microSD",
+      "uhs": "UHS-I",
       "speed": "V30",
       "writeSpeed": "70 MB/s",
       "priceEstimate": 40,
@@ -29,6 +33,8 @@
     {
       "id": "kingston-canvas-select",
       "name": "Kingston Canvas Select",
+      "type": "microSD",
+      "uhs": "UHS-I",
       "speed": "V30",
       "writeSpeed": "60 MB/s",
       "priceEstimate": 18,
@@ -41,6 +47,8 @@
     {
       "id": "sandisk-ultra-microsd",
       "name": "SanDisk Ultra microSD",
+      "type": "microSD",
+      "uhs": "UHS-I",
       "speed": "V30",
       "writeSpeed": "90 MB/s",
       "priceEstimate": 20,
@@ -53,6 +61,8 @@
     {
       "id": "kingston-canvas-go-plus",
       "name": "Kingston Canvas Go! Plus",
+      "type": "microSD",
+      "uhs": "UHS-I",
       "speed": "V30",
       "writeSpeed": "90 MB/s",
       "priceEstimate": 22,
@@ -65,6 +75,8 @@
     {
       "id": "noname-class-10-microsd",
       "name": "No-Name Class 10 microSD",
+      "type": "microSD",
+      "uhs": "None",
       "speed": "Class 10",
       "writeSpeed": "20 MB/s",
       "priceEstimate": 8,
@@ -77,6 +89,8 @@
     {
       "id": "crucial-mx500-microsd",
       "name": "Crucial MX500 microSD",
+      "type": "microSD",
+      "uhs": "UHS-I",
       "speed": "V30",
       "writeSpeed": "85 MB/s",
       "priceEstimate": 19,
@@ -89,6 +103,8 @@
     {
       "id": "budget-class-10-microsd",
       "name": "Budget microSD Class 10",
+      "type": "microSD",
+      "uhs": "None",
       "speed": "Class 10",
       "writeSpeed": "15 MB/s",
       "priceEstimate": 10,
@@ -101,6 +117,8 @@
     {
       "id": "lexar-professional-1000x-microsd",
       "name": "Lexar Professional 1000x",
+      "type": "microSD",
+      "uhs": "UHS-I",
       "speed": "V30",
       "writeSpeed": "70 MB/s",
       "priceEstimate": 38,
@@ -113,6 +131,8 @@
     {
       "id": "kingston-canvas-go",
       "name": "Kingston Canvas Go!",
+      "type": "microSD",
+      "uhs": "UHS-I",
       "speed": "V30",
       "writeSpeed": "60 MB/s",
       "priceEstimate": 16,
@@ -126,6 +146,8 @@
     {
       "id": "sandisk-extreme-pro-cfast-2.0",
       "name": "SanDisk Extreme PRO CFast 2.0",
+      "type": "CFast",
+      "uhs": "None",
       "speed": "V60",
       "writeSpeed": "150 MB/s",
       "priceEstimate": 110,
@@ -138,6 +160,8 @@
     {
       "id": "lexar-professional-1000x-sd",
       "name": "Lexar Professional 1000x SD UHS-II",
+      "type": "SD",
+      "uhs": "UHS-II",
       "speed": "V60",
       "writeSpeed": "100 MB/s",
       "priceEstimate": 80,
@@ -150,6 +174,8 @@
     {
       "id": "sandisk-extreme-pro-sd-uhs2",
       "name": "SanDisk Extreme PRO SD UHS-II",
+      "type": "SD",
+      "uhs": "UHS-II",
       "speed": "V30",
       "writeSpeed": "70 MB/s",
       "priceEstimate": 45,
@@ -163,6 +189,8 @@
     {
       "id": "lexar-professional-silver-sd",
       "name": "Lexar Professional Silver SD UHS-II",
+      "type": "SD",
+      "uhs": "UHS-II",
       "speed": "V30",
       "writeSpeed": "65 MB/s",
       "priceEstimate": 42,
@@ -176,6 +204,8 @@
     {
       "id": "kingston-canvas-go-pro-sd",
       "name": "Kingston Canvas Go! Pro SD",
+      "type": "SD",
+      "uhs": "UHS-II",
       "speed": "V30",
       "writeSpeed": "260 MB/s",
       "priceEstimate": 50,
@@ -188,6 +218,8 @@
     {
       "id": "sandisk-extreme-pro-microsd-v60",
       "name": "SanDisk Extreme PRO microSD",
+      "type": "microSD",
+      "uhs": "UHS-II",
       "speed": "V60",
       "writeSpeed": "170 MB/s",
       "priceEstimate": 70,
@@ -200,6 +232,8 @@
     {
       "id": "lexar-professional-silver-microsd",
       "name": "Lexar Professional Silver microSD",
+      "type": "microSD",
+      "uhs": "UHS-II",
       "speed": "V30",
       "writeSpeed": "110 MB/s",
       "priceEstimate": 45,
@@ -212,6 +246,8 @@
     {
       "id": "kingston-canvas-go-pro-v30",
       "name": "Kingston Canvas Go! Pro V30",
+      "type": "microSD",
+      "uhs": "UHS-I",
       "speed": "V30",
       "writeSpeed": "90 MB/s",
       "priceEstimate": 40,
@@ -224,6 +260,8 @@
     {
       "id": "lexar-professional-1000x-v60",
       "name": "Lexar Professional 1000x V60",
+      "type": "SD",
+      "uhs": "UHS-II",
       "speed": "V60",
       "writeSpeed": "150 MB/s",
       "priceEstimate": 80,
@@ -236,6 +274,8 @@
     {
       "id": "sandisk-extreme-pro-cfexpress",
       "name": "SanDisk Extreme PRO CFexpress",
+      "type": "CFexpress",
+      "uhs": "None",
       "speed": "V90",
       "writeSpeed": "1400 MB/s",
       "priceEstimate": 280,
@@ -248,6 +288,8 @@
     {
       "id": "nikon-xqd-memory-card",
       "name": "Nikon XQD Memory Card",
+      "type": "XQD",
+      "uhs": "None",
       "speed": "V90",
       "writeSpeed": "500 MB/s",
       "priceEstimate": 200,
@@ -260,6 +302,8 @@
     {
       "id": "sandisk-rog-ally-microsd",
       "name": "SanDisk microSD ROG Xbox Ally",
+      "type": "microSD",
+      "uhs": "UHS-II",
       "speed": "UHS-II V30",
       "writeSpeed": "140 MB/s",
       "priceEstimate": 55,
@@ -272,6 +316,8 @@
     {
       "id": "sandisk-max-endurance",
       "name": "SanDisk MAX ENDURANCE microSD",
+      "type": "microSD",
+      "uhs": "UHS-I",
       "speed": "V30 / U3 / Class 10",
       "writeSpeed": "40 MB/s",
       "priceEstimate": 25,
@@ -284,6 +330,8 @@
     {
       "id": "sony-tough-g-v90",
       "name": "Sony TOUGH G-Series SD Card",
+      "type": "SD",
+      "uhs": "UHS-II",
       "speed": "V90 / U3 / Class 10",
       "writeSpeed": "299 MB/s",
       "priceEstimate": 180,
@@ -296,6 +344,8 @@
     {
       "id": "samsung-pro-endurance",
       "name": "Samsung PRO Endurance microSD",
+      "type": "microSD",
+      "uhs": "UHS-I",
       "speed": "U3 / Class 10",
       "writeSpeed": "40 MB/s",
       "priceEstimate": 22,
@@ -308,6 +358,8 @@
     {
       "id": "samsung-evo-select-microsd",
       "name": "Samsung EVO Select microSD",
+      "type": "microSD",
+      "uhs": "UHS-I",
       "speed": "V30 / U3 / Class 10",
       "writeSpeed": "30 MB/s (or higher depending on capacity)",
       "priceEstimate": 13,

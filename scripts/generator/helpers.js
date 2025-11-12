@@ -135,14 +135,16 @@ function getCardImageFallback(card) {
     }
   }
   
+  // Check if it's a microSD card
+  const isMicroSD = card.name && card.name.toLowerCase().includes("microsd");
+  
   // Check for UHS-II in name
   if (card.name.toLowerCase().includes("uhs-ii") || card.name.toLowerCase().includes("uhs ii")) {
-    return "/img/cards/uhs2-generic.webp";
+    return isMicroSD ? "/img/cards/micro-uhs2-generic.webp" : "/img/cards/uhs2-generic.webp";
   }
   // Check for UHS-I or if it's a microSD V30/V60 (typically UHS-I)
   if (card.speed && (card.speed.includes("V30") || card.speed.includes("V60"))) {
-    // Default to UHS-I for standard microSD V30/V60
-    return "/img/cards/uhs1-generic.webp";
+    return isMicroSD ? "/img/cards/micro-uhs1-generic.webp" : "/img/cards/uhs1-generic.webp";
   }
 
   return "/img/cards/placeholder.webp";

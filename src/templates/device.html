@@ -118,12 +118,12 @@
                 <div class="overflow-x-auto brands-table-container">
                     <table class="brands-table w-full">
                         <thead>
-                            <tr class="border-b-2 border-slate-200">
-                                <th class="text-left py-4 px-4 font-semibold text-slate-900">SD Card</th>
-                                <th class="text-left py-4 px-4 font-semibold text-slate-900">Speed Class</th>
-                                <th class="text-left py-4 px-4 font-semibold text-slate-900">Write Speed</th>
-                                <th class="text-left py-4 px-4 font-semibold text-slate-900">Pros</th>
-                                <th class="text-left py-4 px-4 font-semibold text-slate-900">Price</th>
+                            <tr>
+                                <th class="text-left py-4 px-4 font-semibold">SD Card</th>
+                                <th class="text-left py-4 px-4 font-semibold">Speed Class</th>
+                                <th class="text-left py-4 px-4 font-semibold">Write Speed</th>
+                                <th class="text-left py-4 px-4 font-semibold">Pros</th>
+                                <th class="text-left py-4 px-4 font-semibold">Price</th>
                             </tr>
                         </thead>
                         <tbody class="brands-table-body">
@@ -210,11 +210,19 @@
         }
 
         .brands-table td {
-            @apply py-4 px-4 align-middle;
+            @apply py-4 px-4;
+            vertical-align: middle;
+        }
+
+        .table-card-cell {
+            text-align: center;
         }
 
         .table-card-link-wrapper {
-            @apply block text-decoration-none;
+            @apply block no-underline;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .table-card-image {
@@ -225,6 +233,11 @@
 
         .table-card-image img {
             @apply w-full h-full object-contain;
+        }
+
+        .table-card-name {
+            font-weight: bold;
+            margin-top: 0.5rem;
         }
 
         .table-cta-button {
@@ -257,8 +270,8 @@
             flex-direction: column;
             gap: 0.5rem;
             align-items: center;
-            justify-content: flex-start;
-            vertical-align: top;
+            justify-content: center;
+            height: 100%;
         }
 
         .btn-check-price {

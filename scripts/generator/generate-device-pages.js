@@ -77,25 +77,24 @@ function generateBrandsTable(brandReferences, sdcardsMap) {
             <tr>
             <td class="table-card-cell">
             <a href="${brand.amazonSearchUrl}" target="_blank" class="table-card-link-wrapper">
-            <center>
             <div class="table-card-image">
             <img src="${cardImage}" alt="${brand.name} ${brand.speed} SD card - ${brand.priceEstimate}USD" loading="lazy" onerror="this.src='/img/cards/placeholder.webp'" />
-</div>
-<b>${brand.name}</b></center>
+            </div>
+            <div class="table-card-name">${brand.name}</div>
             </a>
-</td>
-<td data-label="Speed Class">${brand.speed}</td>
-<td data-label="Write Speed">${brand.writeSpeed}</td>
-<td data-label="Pros">${brand.pros}</td>
-<td data-label="Price" class="price-column">
-<span class="price-badge ${priceTierClass}">
-${priceTierSymbol}
-</span>
-<a href="${brand.amazonSearchUrl}" target="_blank" class="btn-check-price">
-  <i class="fas fa-shopping-cart"></i> Check Price
-</a>
-</td>
-</tr>
+            </td>
+            <td data-label="Speed Class">${brand.speed}</td>
+            <td data-label="Write Speed">${brand.writeSpeed}</td>
+            <td data-label="Pros">${brand.pros}</td>
+            <td data-label="Price" class="price-column">
+            <span class="price-badge ${priceTierClass}">
+            ${priceTierSymbol}
+            </span>
+            <a href="${brand.amazonSearchUrl}" target="_blank" class="btn-check-price">
+              <i class="fas fa-shopping-cart"></i> Check Price
+            </a>
+            </td>
+            </tr>
 `;
         })
         .join("");
