@@ -789,12 +789,18 @@ label {
   padding: 1rem;
   border-bottom: 1px solid #e5e5e5;
   text-align: left;
+  vertical-align: middle;
 }
 
 .brands-table th {
-  background: #f8f8f8;
+  background: #1a1a1a;
+  color: #ffffff;
   font-weight: 600;
   font-size: 0.9rem;
+}
+
+.brands-table tbody tr {
+  background: #ffffff;
 }
 
 .brands-table tbody tr:hover {

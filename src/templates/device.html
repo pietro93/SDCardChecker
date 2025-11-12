@@ -189,16 +189,28 @@
             @apply text-xl font-bold text-slate-900;
         }
 
+        .brands-table thead {
+            @apply bg-slate-900;
+        }
+
+        .brands-table thead tr {
+            @apply border-b border-slate-200;
+        }
+
+        .brands-table thead th {
+            @apply text-white;
+        }
+
         .brands-table tbody tr {
-            @apply border-b border-slate-100;
+            @apply border-b border-slate-100 bg-white;
         }
 
         .brands-table tbody tr:hover {
-            @apply bg-blue-50;
+            @apply bg-slate-50;
         }
 
         .brands-table td {
-            @apply py-4 px-4;
+            @apply py-4 px-4 align-middle;
         }
 
         .table-card-link-wrapper {
@@ -243,10 +255,10 @@
         .price-column {
             display: flex;
             flex-direction: column;
-            gap: 0.25rem;
+            gap: 0.5rem;
             align-items: center;
-            justify-content: center;
-            vertical-align: middle;
+            justify-content: flex-start;
+            vertical-align: top;
         }
 
         .btn-check-price {
