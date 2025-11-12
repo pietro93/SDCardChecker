@@ -165,10 +165,11 @@ function generateSidebar() {
   </div>
 
   <!-- Disclaimer Section -->
-  <div class="border-t border-slate-200 pt-6">
-    <h3 class="text-sm font-semibold text-slate-900 mb-3">Disclaimer</h3>
-    <p class="text-sm italic text-slate-600 opacity-80">The information presented on this site is provided as-is and may contain inaccuracies. SD Card Checker contains affiliate links. We may earn a small commission when you purchase through our links at no extra cost to you.</p>
-  </div>
+   <div class="border-t border-slate-200 pt-6">
+     <h3 class="text-sm font-semibold text-slate-900 mb-3">Disclaimer</h3>
+     <p class="text-sm italic text-slate-600 opacity-80">The content on this site is presented for informational purposes only. SD Card Checker makes no guarantees regarding the completeness or accuracy of the data and provides it on an "as-is" basis.</p>
+     <p class="text-sm italic text-slate-600 opacity-80 mt-3">This website contains affiliate links. We may earn a small commission when you purchase through our links at no extra cost to you.</p>
+   </div>
 </aside>`;
 }
 
