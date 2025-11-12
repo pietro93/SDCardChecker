@@ -78,7 +78,7 @@ function generateBrandsTable(brandReferences, sdcardsMap) {
             <td class="table-card-cell">
             <a href="${brand.amazonSearchUrl}" target="_blank" class="table-card-link-wrapper">
             <div class="table-card-image">
-            <img src="${cardImage}" alt="${brand.name} ${brand.speed} SD card - ${brand.priceEstimate}USD" loading="lazy" onerror="this.src='/img/cards/placeholder.webp'" />
+            <img src="${cardImage}" alt="${brand.name} ${brand.speed} SD card - ${brand.priceEstimate}USD" loading="lazy" />
             </div>
             <div class="table-card-name">${brand.name}</div>
             </a>
@@ -128,7 +128,7 @@ function generateAlternatives(device, sdcardsMap) {
     <div class="alternative-card card">
     <div class="alternative-label">${label}</div>
     <div class="alternative-image">
-    <img src="${cardImage}" alt="${brand.name} ${brand.speed} microSD card - ${label}" loading="lazy" onerror="this.src='/img/cards/placeholder.webp'" />
+    <img src="${cardImage}" alt="${brand.name} ${brand.speed} microSD card - ${label}" loading="lazy" />
     </div>
       <div class="alternative-content">
         <div class="alternative-title">${brand.name}</div>
