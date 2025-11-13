@@ -111,7 +111,7 @@ function getDeviceImageFallback(device) {
 
   // Category-based placeholders
   if (category.includes("action camera")) 
-    return "/img/devices/gopro-hero-13.webp";
+    return "/img/devices/gopro-placeholder.webp";
   if (category.includes("security camera")) 
     return "/img/devices/wyze-cam-v3.webp";
   if (category.includes("mirrorless")) 
