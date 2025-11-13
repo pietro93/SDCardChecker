@@ -18,6 +18,9 @@
 
 ## 🚀 IN PROGRESS (Active Sprint)
 
+### P0 - Error fixing
+- [x] **SD Card images not loading due to not formatting name correctly !! URGENT** (FIXED: Nov 13 - corrected imageUrl formatting in sdcards.json)
+
 ### P0 - Critical Path
 - [ ] **KANBAN-1** | Phase 2 UX Features Implementation
   - Subtask: Add category filtering & sorting
