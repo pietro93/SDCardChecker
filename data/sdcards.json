@@ -368,6 +368,51 @@
       "pros": "Excellent performance for the price. A fantastic all-around card for smartphones, tablets, Nintendo Switch, and 4K action cameras. Great value and reliability.",
       "cons": "Not as fast as Samsung's 'PRO' series. Not designed for the continuous rewriting required by dash cams.",
       "tier": "recommended"
-    }
+    },
+    {
+    "id": "lexar-professional-1000x-sd",
+    "name": "Lexar Professional 1000x SD UHS-II",
+    "type": "SD",
+    "uhs": "UHS-II",
+    "speed": "V60 / V90 (both available)",
+    "writeSpeed": "150 MB/s",
+    "priceEstimate": 80,
+    "priceTier": "Premium",
+    "imageUrl": "/img/cards/lexar-professional-1000x-sd.webp",
+    "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+1000x+SD&tag=sd-cc-20",
+    "pros": "Available in both V60 and V90 versions. Widely respected among pros. Dual compatibility and extreme reliability.",
+    "cons": "Expensive for V90 variant. V60 variant cheaper but may not suffice for 8K.",
+    "tier": "professional"
+  },
+  {
+    "id": "sandisk-extreme-pro-cfexpress-type-a",
+    "name": "SanDisk Extreme PRO CFexpress Type A",
+    "type": "CFexpress Type A",
+    "uhs": "None",
+    "speed": "V90+",
+    "writeSpeed": "800 MB/s",
+    "priceEstimate": 270,
+    "priceTier": "Premium",
+    "imageUrl": "/img/cards/sandisk-extreme-pro-cfexpress-type-a.webp",
+    "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+CFexpress+Type+A&tag=sd-cc-20",
+    "pros": "Exceptional speeds, required for Sony FX3/FX30 high-bitrate modes. Widely trusted brand.",
+    "cons": "Very expensive, only useful for cameras with CFexpress Type A slots.",
+    "tier": "professional"
+  },
+  {
+    "id": "lexar-professional-633x-sd",
+    "name": "Lexar Professional 633x SD",
+    "type": "SD",
+    "uhs": "UHS-I",
+    "speed": "V30",
+    "writeSpeed": "45 MB/s",
+    "priceEstimate": 25,
+    "priceTier": "Budget",
+    "imageUrl": "/img/cards/lexar-professional-633x-sd.webp",
+    "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+633x+SD&tag=sd-cc-20",
+    "pros": "Affordable, reliable, trusted by many photographers for general-purpose use.",
+    "cons": "Slower than UHS-II cards for bursts and 4K/6K high-bitrate recording.",
+    "tier": "budget"
+  }
   ]
 }
