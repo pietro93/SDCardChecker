@@ -128,7 +128,7 @@ function generateAlternatives(device, sdcardsMap) {
     <div class="alternative-card card">
     <div class="alternative-label">${label}</div>
     <div class="alternative-image">
-    <img src="${cardImage}" alt="${brand.name} ${brand.speed} microSD card - ${label}" loading="lazy" />
+    <img src="${cardImage}" alt="${brand.name} ${brand.speed} microSD card - ${label}" width="150" height="150" loading="lazy" />
     </div>
       <div class="alternative-content">
         <div class="alternative-title">${brand.name}</div>
