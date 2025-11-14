@@ -11,7 +11,7 @@ return `<!-- Header -->
 <header class="sticky top-0 z-50 bg-white shadow-sm">
 <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
 <a href="/" class="flex items-center gap-3 group">
-<img src="/img/brand/logo.webp" alt="SD Card Checker Logo" class="w-10 h-10 rounded-lg shadow-md group-hover:shadow-lg transition-shadow">
+<img src="/img/brand/logo.webp" alt="SD Card Checker Logo" class="w-10 h-10 rounded-lg shadow-md group-hover:shadow-lg transition-shadow" width="40" height="40">
 <span class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">SD Card Checker</span>
 </a>
     <nav class="flex gap-8 items-center">
