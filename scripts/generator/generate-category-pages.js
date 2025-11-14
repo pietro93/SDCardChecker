@@ -3,10 +3,24 @@
  */
 
 const path = require("path");
+const fs = require("fs");
 const { readTemplate, writeFile, generateBreadcrumbSchema, getDeviceImageFallback } = require("./helpers");
 const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 
 const srcPath = path.join(__dirname, "../../src");
+
+/**
+* Get device image URL with fallback for missing files
+*/
+function getDeviceImage(device) {
+  if (device.imageUrl) {
+    const imagePath = path.join(__dirname, "../../img/devices", device.imageUrl.replace("/img/devices/", ""));
+    if (fs.existsSync(imagePath)) {
+      return device.imageUrl;
+    }
+  }
+  return getDeviceImageFallback(device);
+}
 
 /**
 * Generate device cards for category page
@@ -15,7 +29,7 @@ function generateDeviceCards(devices) {
 return devices
 .map(
 (device) => `
-<div class="device-card" style="background-image: url('${device.imageUrl || getDeviceImageFallback(device)}'); background-size: cover; background-position: center; position: relative;" role="article" aria-label="SD card recommendation for ${device.name}" tabindex="0" onmouseover="this.querySelector('.device-card-overlay').style.opacity='0.95'" onmouseout="this.querySelector('.device-card-overlay').style.opacity='0.85'">
+<div class="device-card" style="background-image: url('${getDeviceImage(device)}'); background-size: cover; background-position: center; position: relative;" role="article" aria-label="SD card recommendation for ${device.name}" tabindex="0" onmouseover="this.querySelector('.device-card-overlay').style.opacity='0.95'" onmouseout="this.querySelector('.device-card-overlay').style.opacity='0.85'">
 <div class="device-card-overlay" style="position: absolute; inset: 0; background: rgba(240, 240, 240, 0.85); transition: opacity 0.3s ease;"></div>
 <a href="/devices/${device.slug}/" style="position: relative; z-index: 1; text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; width: 100%; height: 100%;">
 <div class="device-card-name" style="color: #2563eb; opacity: 1; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);">${device.name}</div>
