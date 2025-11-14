@@ -4323,6 +4323,180 @@
         "anbernic-rg35xx-plus"
       ],
       "notes": "A very popular mid-range Android tablet. Official support for up to 1TB microSD cards."
+    },
+    {
+      "id": "sony-a6400",
+      "name": "Sony a6400",
+      "category": "Mirrorless Cameras",
+      "slug": "sony-a6400",
+      "searchTerms": [
+        "sony a6400 sd card",
+        "a6400 memory card",
+        "a6400 4k card"
+      ],
+      "sdCard": {
+        "type": "SD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "No official limit (512GB+ tested)"
+      },
+      "whySpecs": "The a6400 shoots high-bitrate 4K video (XAVC S). To record at the highest quality (100Mbps), Sony requires a U3/V30 speed class card to prevent recording from stopping unexpectedly.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-sd-uhs1"
+        },
+        {
+          "id": "lexar-professional-1000x-sd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is a V30 card really necessary for the a6400?",
+          "a": "<b>Yes, for 4K video.</b> If you plan to shoot in the highest quality 4K XAVC S format, the camera will refuse to record unless a U3/V30 card is inserted. For photos only, a slower card will work, but a V30 card is essential for video shooters."
+        }
+      ],
+      "relatedDevices": [
+        "sony-a6700",
+        "sony-zv-e10",
+        "fujifilm-x-s10"
+      ],
+      "notes": "A landmark APS-C camera with a massive user base. The V30 card requirement for 4K video is a critical and frequently searched topic."
+    },
+    {
+      "id": "fujifilm-x-s10",
+      "name": "Fujifilm X-S10",
+      "category": "Mirrorless Cameras",
+      "slug": "fujifilm-x-s10",
+      "searchTerms": [
+        "fujifilm x-s10 sd card",
+        "x-s10 memory card",
+        "xs10 4k card"
+      ],
+      "sdCard": {
+        "type": "SD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "No official limit (512GB+ tested)"
+      },
+      "whySpecs": "The X-S10 records high-quality 4K/30p video and F-Log. A V30 speed class card is required to handle the data rate reliably and prevent dropped frames or recording errors.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-sd-uhs1"
+        },
+        {
+          "id": "lexar-professional-633x"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I use the same card for the X-S10 and the X-S20?",
+          "a": "<b>Yes. Both cameras have a UHS-I slot and require a V30 card for 4K video.</b> While you can use a faster UHS-II card in the newer X-S20, it will operate at slower UHS-I speeds and provide no performance benefit over a standard V30 UHS-I card."
+        }
+      ],
+      "relatedDevices": [
+        "fujifilm-x-s20",
+        "sony-a6400",
+        "canon-eos-r100"
+      ],
+      "notes": "The highly popular predecessor to the X-S20. Shares similar card requirements but lacks the newer model's 6.2K video capability."
+    },
+    {
+      "id": "fujifilm-x-t5",
+      "name": "Fujifilm X-T5",
+      "category": "Mirrorless Cameras",
+      "slug": "fujifilm-xt5",
+      "searchTerms": [
+        "fujifilm xt5 sd card",
+        "x-t5 memory card",
+        "xt5 storage"
+      ],
+      "sdCard": {
+        "type": "Dual SD UHS-II",
+        "minSpeed": "V60 (V90 for high bitrate video)",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "No official limit (1TB+ tested)"
+      },
+      "whySpecs": "The X-T5's 40MP sensor and 6.2K video generate large files. V60 is sufficient for most work, but V90 is recommended for the highest quality video codecs and to clear the buffer faster during high-speed burst shooting.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-sd-uhs2"
+        },
+        {
+          "id": "lexar-professional-1000x-sd"
+        },
+        {
+          "id": "sony-tough-g-v90"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need V90 cards for the X-T5, or is V60 enough?",
+          "a": "<b>V60 is sufficient for most users, including 4K video and general photography.</b> You only need a V90 card if you plan to shoot frequently in the highest bitrate 6.2K modes or need the absolute fastest buffer clearing for continuous action photography."
+        }
+      ],
+      "relatedDevices": [
+        "fujifilm-x-t4",
+        "sony-a6700",
+        "canon-eos-r7"
+      ],
+      "notes": "Fujifilm's flagship photo-centric APS-C camera with dual UHS-II slots. Card speed is a critical consideration for unlocking its full potential."
+    },
+    {
+      "id": "canon-eos-r6",
+      "name": "Canon EOS R6",
+      "category": "Mirrorless Cameras",
+      "slug": "canon-eos-r6",
+      "searchTerms": [
+        "canon r6 sd card",
+        "eos r6 memory card",
+        "r6 storage"
+      ],
+      "sdCard": {
+        "type": "Dual SD UHS-II",
+        "minSpeed": "V60 (V90 recommended for burst)",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "No official limit (1TB+ tested)"
+      },
+      "whySpecs": "The EOS R6 is a high-performance hybrid camera with 4K/60p video and a 20fps electronic shutter. V60 cards are needed for stable recording of high-bitrate video, while V90 cards are recommended to clear the buffer quickly during intense burst shooting.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-sd-uhs2"
+        },
+        {
+          "id": "lexar-professional-1000x-sd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Are the card requirements for the R6 and R6 Mark II the same?",
+          "a": "<b>They are very similar. Both have dual UHS-II slots and benefit from V60/V90 cards.</b> The Mark II has higher resolution and faster burst modes, making fast cards even more beneficial, but a good V60 card that works in an R6 will also work well in a Mark II for most video shooting."
+        }
+      ],
+      "relatedDevices": [
+        "canon-eos-r6-mark-ii",
+        "sony-a7-iii",
+        "nikon-z6-ii"
+      ],
+      "notes": "The original, landmark R6 model with a massive user base. Its dual UHS-II slots and high-speed capabilities make card choice a critical topic."
     }
   ]
 }
