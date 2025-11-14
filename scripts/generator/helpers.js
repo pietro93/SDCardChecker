@@ -85,40 +85,30 @@ function getDeviceImageFallback(device) {
   const name = device.name.toLowerCase();
   const category = device.category.toLowerCase();
 
-  // Brand-specific placeholders (exact match first)
-  if (name.includes("gopro")) return "/img/devices/action-cameras/gopro-hero-13.webp";
-  if (name.includes("insta360")) return "/img/devices/action-cameras/insta360-x3.webp";
-  if (name.includes("dji mavic")) return "/img/devices/drones/dji-mavic-3.webp";
-  if (name.includes("dji mini")) return "/img/devices/drones/dji-mini-4-pro.webp";
+  // Brand-specific placeholders (using only files that actually exist)
+  if (name.includes("gopro")) return "/img/devices/action-cameras/gopro-placeholder.webp";
+  if (name.includes("insta360")) return "/img/devices/action-cameras/gopro-placeholder.webp";
   if (name.includes("dji")) return "/img/devices/drones/drone-placeholder.webp";
-  if (name.includes("steam deck")) return "/img/devices/gaming-consoles/steam-deck.webp";
-  if (name.includes("switch lite")) return "/img/devices/gaming-consoles/nintendo-switch.webp";
-  if (name.includes("nintendo")) return "/img/devices/gaming-consoles/nintendo-switch-oled.webp";
-  if (name.includes("asus rog")) return "/img/devices/gaming-consoles/asus-rog-ally.webp";
-  if (name.includes("amazon fire")) return "/img/devices/computing/amazon-fire-max-11.webp";
-  if (name.includes("raspberry pi")) return "/img/devices/computing/raspberry-pi-5.webp";
-  if (name.includes("wyze")) return "/img/devices/security-cameras/wyze-cam-v3.webp";
-  if (name.includes("eufy")) return "/img/devices/security-cameras/eufy-solocam-s340.webp";
+  if (name.includes("steam deck")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
+  if (name.includes("switch")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
+  if (name.includes("nintendo")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
+  if (name.includes("asus rog")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
+  if (name.includes("amazon fire")) return "/img/devices/computing/tablet-placeholder.webp";
+  if (name.includes("raspberry pi")) return "/img/devices/computing/tablet-placeholder.webp";
   if (name.includes("canon")) return "/img/devices/cameras/canon-placeholder.webp";
   if (name.includes("nikon")) return "/img/devices/cameras/nikon-placeholder.webp";
   if (name.includes("sony")) return "/img/devices/cameras/sony-placeholder.webp";
   if (name.includes("fujifilm")) return "/img/devices/cameras/fujifilm-placeholder.webp";
-  if (name.includes("blackmagic")) return "/img/devices/cameras/blackmagic-pocket-cinema-camera-6k-pro.webp";
-  if (name.includes("samsung galaxy")) return "/img/devices/placeholder.webp";
-  if (name.includes("chromebook")) return "/img/devices/placeholder.webp";
-  if (name.includes("hp")) return "/img/devices/placeholder.webp";
 
   // Category-based placeholders
   if (category.includes("action camera")) 
     return "/img/devices/action-cameras/gopro-placeholder.webp";
-  if (category.includes("security camera")) 
-    return "/img/devices/security-cameras/wyze-cam-v3.webp";
   if (category.includes("dslr")) 
     return "/img/devices/cameras/canon-placeholder.webp";
   if (category.includes("mirrorless")) 
     return "/img/devices/cameras/sony-placeholder.webp";
   if (category.includes("camera")) 
-    return "/img/devices/placeholder.webp";
+    return "/img/devices/cameras/placeholder.webp";
   if (category.includes("drone")) 
     return "/img/devices/drones/drone-placeholder.webp";
   if (category.includes("gaming")) 
@@ -126,6 +116,7 @@ function getDeviceImageFallback(device) {
   if (category.includes("computing") || category.includes("tablet")) 
     return "/img/devices/computing/tablet-placeholder.webp";
 
+  // Default placeholder
   return "/img/devices/placeholder.webp";
 }
 
