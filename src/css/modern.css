@@ -1310,27 +1310,27 @@ Sidebar Navigation (Tailwind-based, in components.js)
 }
 
 /* ============================================
-   Trust Grid Mobile Fix
-   ============================================ */
+    Trust Grid Mobile Fix
+    ============================================ */
 
 .trust-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  max-width: 800px;
-  margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1.5rem;
+   max-width: 800px;
+   margin: 0 auto;
 }
 
-@media (min-width: 600px) {
-  .trust-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media (max-width: 768px) {
+   .trust-grid {
+     grid-template-columns: repeat(2, 1fr);
+   }
 }
 
-@media (min-width: 900px) {
-  .trust-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+@media (max-width: 480px) {
+   .trust-grid {
+     grid-template-columns: 1fr;
+   }
 }
 
 /* ============================================
@@ -1488,23 +1488,23 @@ body {
 
 /* Issue #3: Trust Grid Mobile Columns */
 .trust-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  max-width: 800px;
-  margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1.5rem;
+   max-width: 800px;
+   margin: 0 auto;
 }
 
-@media (min-width: 600px) {
-  .trust-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media (max-width: 768px) {
+   .trust-grid {
+     grid-template-columns: repeat(2, 1fr);
+   }
 }
 
-@media (min-width: 900px) {
-  .trust-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+@media (max-width: 480px) {
+   .trust-grid {
+     grid-template-columns: 1fr;
+   }
 }
 
 /* Issue #4: Table Scroll Indicators */
