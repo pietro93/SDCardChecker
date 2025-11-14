@@ -1,4 +1,4 @@
-{
+﻿{
   "devices": [
     {
       "id": "gopro-hero-13",
@@ -6,7 +6,7 @@
       "category": "Action Cameras",
       "slug": "gopro-hero-13",
       "searchTerms": ["gopro hero 13", "gopro 13", "hero 13", "gopro black"],
-      "imageUrl": "/img/devices/gopro-hero-13.webp",
+      "imageUrl": "/img/devices/action-cameras/gopro-hero-13.webp",
       "sdCard": {
         "type": "microSD UHS-I (UHS-II Compatible)",
         "minSpeed": "V30",
@@ -43,7 +43,7 @@
       "category": "Action Cameras",
       "slug": "gopro-hero-12",
       "searchTerms": ["gopro hero 12", "gopro 12", "hero 12"],
-      "imageUrl": "/img/devices/gopro-hero-12.webp",
+      "imageUrl": "/img/devices/action-cameras/gopro-hero-12.webp",
       "sdCard": {
         "type": "microSD UHS-I (UHS-II Compatible)",
         "minSpeed": "V30",
@@ -76,7 +76,7 @@
       "category": "Gaming Handhelds",
       "slug": "nintendo-switch",
       "searchTerms": ["nintendo switch", "switch sd card", "switch memory card", "switch storage"],
-      "imageUrl": "/img/devices/nintendo-switch.webp",
+      "imageUrl": "/img/devices/gaming-consoles/nintendo-switch.webp",
       "sdCard": {
         "type": "microSD, microSDHC, microSDXC",
         "minSpeed": "No minimum required",
@@ -113,7 +113,7 @@
       "category": "Gaming Handhelds",
       "slug": "nintendo-switch-oled",
       "searchTerms": ["nintendo switch oled", "switch oled", "switch oled memory card"],
-      "imageUrl": "/img/devices/nintendo-switch-oled.webp",
+      "imageUrl": "/img/devices/gaming-consoles/nintendo-switch-oled.webp",
       "sdCard": {
         "type": "microSD, microSDHC, microSDXC",
         "minSpeed": "No minimum required",
@@ -146,7 +146,7 @@
       "category": "Drones",
       "slug": "dji-mini-4-pro",
       "searchTerms": ["dji mini 4 pro", "mini 4 pro", "dji mini 4 sd card"],
-      "imageUrl": "/img/devices/dji-mini-4-pro.webp",
+      "imageUrl": "/img/devices/drones/dji-mini-4-pro.webp",
       "sdCard": {
         "type": "microSD UHS-I (UHS-II Compatible)",
         "minSpeed": "V30",
@@ -183,7 +183,7 @@
       "category": "Mirrorless Cameras",
       "slug": "canon-eos-r5",
       "searchTerms": ["canon eos r5", "canon r5", "eos r5 sd card"],
-      "imageUrl": "/img/devices/canon-eos-r5.webp",
+      "imageUrl": "/img/devices/cameras/canon-eos-r5.webp",
       "sdCard": {
         "type": "CFast 2.0 and SD UHS-II",
         "minSpeed": "V60",
@@ -219,7 +219,7 @@
       "category": "Mirrorless Cameras",
       "slug": "sony-a6700",
       "searchTerms": ["sony a6700", "a6700", "sony a6700 sd card"],
-      "imageUrl": "/img/devices/sony-a6700.webp",
+      "imageUrl": "/img/devices/cameras/sony-a6700.webp",
       "sdCard": {
         "type": "SD UHS-II",
         "minSpeed": "V30",
@@ -252,7 +252,7 @@
       "category": "Mirrorless Cameras",
       "slug": "fujifilm-x-s20",
       "searchTerms": ["fujifilm x-s20", "x-s20", "xs20 sd card"],
-      "imageUrl": "/img/devices/fujifilm-x-s20.webp",
+      "imageUrl": "/img/devices/cameras/fujifilm-x-s20.webp",
       "sdCard": {
         "type": "SD UHS-II",
         "minSpeed": "V30",
@@ -281,7 +281,7 @@
       "category": "Gaming Handhelds",
       "slug": "steam-deck",
       "searchTerms": ["steam deck", "steam deck sd card", "deck microsd"],
-      "imageUrl": "/img/devices/steam-deck.webp",
+      "imageUrl": "/img/devices/gaming-consoles/steam-deck.webp",
       "sdCard": {
         "type": "microSD UHS-I (not UHS-II)",
         "minSpeed": "V30",
@@ -310,7 +310,7 @@
       "category": "Action Cameras",
       "slug": "gopro-hero-max",
       "searchTerms": ["gopro hero max", "gopro max", "hero max"],
-      "imageUrl": "/img/devices/gopro-hero-max.webp",
+      "imageUrl": "/img/devices/action-cameras/gopro-hero-max.webp",
       "sdCard": {
         "type": "microSD UHS-I (UHS-II Compatible)",
         "minSpeed": "V30",
@@ -343,7 +343,7 @@
       "category": "Drones",
       "slug": "dji-mini-3-pro",
       "searchTerms": ["dji mini 3 pro", "mini 3 pro", "dji mini 3"],
-      "imageUrl": "/img/devices/dji-mini-3-pro.webp",
+      "imageUrl": "/img/devices/drones/dji-mini-3-pro.webp",
       "sdCard": {
         "type": "microSD UHS-I (UHS-II Compatible)",
         "minSpeed": "V30",
@@ -371,7 +371,7 @@
       "category": "Drones",
       "slug": "dji-air-3s",
       "searchTerms": ["dji air 3s", "air 3s", "dji air 3"],
-      "imageUrl": "/img/devices/dji-air-3s.webp",
+      "imageUrl": "/img/devices/drones/dji-air-3s.webp",
       "sdCard": {
         "type": "microSD UHS-I (UHS-II Compatible)",
         "minSpeed": "V30",
@@ -400,7 +400,7 @@
       "category": "Drones",
       "slug": "dji-mavic-3",
       "searchTerms": ["dji mavic 3", "mavic 3", "dji mavic"],
-      "imageUrl": "/img/devices/dji-mavic-3.webp",
+      "imageUrl": "/img/devices/drones/dji-mavic-3.webp",
       "sdCard": {
         "type": "microSD UHS-I (UHS-II Compatible)",
         "minSpeed": "V60",
@@ -428,7 +428,7 @@
       "category": "Mirrorless Cameras",
       "slug": "nikon-z9",
       "searchTerms": ["nikon z9", "z9", "nikon z9 sd card"],
-      "imageUrl": "/img/devices/nikon-z9.webp",
+      "imageUrl": "/img/devices/cameras/nikon-z9.webp",
       "sdCard": {
         "type": "CFexpress Type B and XQD",
         "minSpeed": "V90",
@@ -460,7 +460,7 @@
       "category": "Gaming Handhelds",
       "slug": "asus-rog-ally",
       "searchTerms": ["asus rog ally sd card", "rog ally microsd", "rog ally memory card"],
-      "imageUrl": "/img/devices/asus-rog-ally.webp",
+      "imageUrl": "/img/devices/gaming-consoles/asus-rog-ally.webp",
       "sdCard": {
         "type": "microSD UHS-II",
         "minSpeed": "V30",
@@ -493,7 +493,7 @@
       "category": "Gaming Handhelds",
       "slug": "nintendo-switch-lite",
       "searchTerms": ["nintendo switch lite sd card", "switch lite memory card", "switch lite storage"],
-      "imageUrl": "/img/devices/nintendo-switch.webp",
+      "imageUrl": "/img/devices/gaming-consoles/nintendo-switch.webp",
       "sdCard": {
         "type": "microSD, microSDHC, microSDXC",
         "minSpeed": "No minimum required",
@@ -522,7 +522,7 @@
       "category": "Mirrorless Cameras",
       "slug": "sony-a7-iv",
       "searchTerms": ["sony a7 iv sd card", "a7iv card", "alpha 7 iv memory card"],
-      "imageUrl": "/img/devices/sony-a7iv.webp",
+      "imageUrl": "/img/devices/cameras/sony-a7iv.webp",
       "sdCard": {
         "type": "CFexpress Type A or SD UHS-II",
         "minSpeed": "V60 (V90 for S&Q modes)",
@@ -553,7 +553,7 @@
       "category": "Action Cameras",
       "slug": "insta360-x3",
       "searchTerms": ["insta360 x3 sd card", "insta 360 x3 memory card", "x3 microsd"],
-      "imageUrl": "/img/devices/insta360-x3.webp",
+      "imageUrl": "/img/devices/action-cameras/insta360-x3.webp",
       "sdCard": {
         "type": "microSD UHS-I",
         "minSpeed": "V30",
@@ -582,7 +582,7 @@
       "category": "Action Cameras",
       "slug": "dji-osmo-pocket-3",
       "searchTerms": ["dji pocket 3 sd card", "osmo pocket 3 microsd"],
-      "imageUrl": "/img/devices/dji-pocket-3.webp",
+      "imageUrl": "/img/devices/drones/dji-pocket-3.webp",
       "sdCard": {
         "type": "microSD UHS-I/UHS-II",
         "minSpeed": "V30",
@@ -611,7 +611,7 @@
       "category": "Computing & Tablets",
       "slug": "raspberry-pi-5",
       "searchTerms": ["raspberry pi 5 sd card", "pi 5 microsd", "raspberry pi 5 storage"],
-      "imageUrl": "/img/devices/raspberry-pi-5.webp",
+      "imageUrl": "/img/devices/computing/raspberry-pi-5.webp",
       "sdCard": {
         "type": "microSD",
         "minSpeed": "A1 or A2 rated",
@@ -669,7 +669,7 @@
       "category": "Mirrorless Cameras",
       "slug": "canon-eos-r6-mark-ii",
       "searchTerms": ["canon r6 ii sd card", "eos r6 mark ii memory card", "r6 mk2 card"],
-      "imageUrl": "/img/devices/canon-r6-mk2.webp",
+      "imageUrl": "/img/devices/cameras/canon-r6-mk2.webp",
       "sdCard": {
         "type": "SD UHS-II",
         "minSpeed": "V60 (V90 recommended for burst)",
@@ -700,7 +700,7 @@
       "category": "Mirrorless Cameras",
       "slug": "bmpcc-4k",
       "searchTerms": ["bmpcc 4k card", "blackmagic pocket 4k sd card", "bmpcc 4k cfast"],
-      "imageUrl": "/img/devices/blackmagic-pocket-cinema-camera-4k.webp",
+      "imageUrl": "/img/devices/cameras/blackmagic-pocket-cinema-camera-4k.webp",
       "sdCard": {
         "type": "CFast 2.0 and SD UHS-II",
         "minSpeed": "V90 (for SD)",
@@ -791,7 +791,7 @@
       "category": "Drones",
       "slug": "dji-air-3",
       "searchTerms": ["dji air 3 sd card", "air 3 microsd", "dji air 3 memory card"],
-      "imageUrl": "/img/devices/dji-air-3.webp",
+      "imageUrl": "/img/devices/drones/dji-air-3.webp",
       "sdCard": {
         "type": "microSD UHS-I",
         "minSpeed": "V30",
@@ -820,7 +820,7 @@
       "category": "Mirrorless Cameras",
       "slug": "bmpcc-6k-pro",
       "searchTerms": ["bmpcc 6k pro card", "blackmagic 6k pro sd card", "pocket 6k memory"],
-      "imageUrl": "/img/devices/blackmagic-pocket-cinema-camera-6k-pro.webp",
+      "imageUrl": "/img/devices/cameras/blackmagic-pocket-cinema-camera-6k-pro.webp",
       "sdCard": {
         "type": "CFast 2.0 and SD UHS-II",
         "minSpeed": "V90 (for SD)",
@@ -847,7 +847,7 @@
       "category": "Mirrorless Cameras",
       "slug": "nikon-z8",
       "searchTerms": ["nikon z8 sd card", "z8 memory card", "nikon z8 storage"],
-      "imageUrl": "/img/devices/nikon-z8.webp",
+      "imageUrl": "/img/devices/cameras/nikon-z8.webp",
       "sdCard": {
         "type": "SD UHS-II or CFexpress Type B",
         "minSpeed": "V60 (V90 or CFexpress recommended)",
@@ -902,7 +902,7 @@
     "category": "Action Cameras",
     "slug": "gopro-hero-11-black",
     "searchTerms": ["gopro hero 11 black", "hero 11", "gopro 11 sd card"],
-    "imageUrl": "/img/devices/gopro-hero-11.webp",
+    "imageUrl": "/img/devices/action-cameras/gopro-hero-11.webp",
     "sdCard": {
     "type": "microSD UHS-I (UHS-II Compatible)",
     "minSpeed": "V30",
@@ -993,7 +993,7 @@
        "category": "Security Cameras",
        "slug": "wyze-cam-v3",
        "searchTerms": ["wyze cam v3 sd card", "wyze v3 microsd", "wyze cam storage"],
-       "imageUrl": "/img/devices/wyze-cam-v3.webp",
+       "imageUrl": "/img/devices/security-cameras/wyze-cam-v3.webp",
        "sdCard": {
          "type": "microSD (FAT32 or exFAT)",
          "minSpeed": "Class 10 / U1",
@@ -1025,7 +1025,7 @@
        "category": "Security Cameras",
        "slug": "eufy-solocam-s340",
        "searchTerms": ["eufy solocam s340 sd card", "eufy s340 microsd", "solocam storage"],
-       "imageUrl": "/img/devices/eufy-solocam-s340.webp",
+       "imageUrl": "/img/devices/security-cameras/eufy-solocam-s340.webp",
        "sdCard": {
          "type": "microSD",
          "minSpeed": "Class 10 / U1",
@@ -1086,7 +1086,7 @@
     "category": "Action Cameras",
     "slug": "insta360-x4",
     "searchTerms": ["insta360 x4", "insta360 x4 sd card", "x4 360 camera", "insta360 8k"],
-    "imageUrl": "/img/devices/insta360-x4.webp",
+    "imageUrl": "/img/devices/action-cameras/insta360-x4.webp",
     "sdCard": {
       "type": "microSD UHS-I",
       "minSpeed": "V30",
@@ -1119,7 +1119,7 @@
     "category": "Mirrorless Cameras",
     "slug": "fujifilm-x100vi",
     "searchTerms": ["fujifilm x100vi", "x100vi sd card", "x100 6", "fujifilm x100vi memory card"],
-    "imageUrl": "/img/devices/fujifilm-x100vi.webp",
+    "imageUrl": "/img/devices/cameras/fujifilm-x100vi.webp",
     "sdCard": {
       "type": "SD UHS-II",
       "minSpeed": "V60",
@@ -1152,7 +1152,7 @@
     "category": "Action Cameras",
     "slug": "dji-osmo-action-4",
     "searchTerms": ["dji action 4", "osmo action 4 sd card", "dji action cam", "dji osmo action 4 memory card"],
-    "imageUrl": "/img/devices/dji-action-4.webp",
+    "imageUrl": "/img/devices/drones/dji-action-4.webp",
     "sdCard": {
       "type": "microSD UHS-I",
       "minSpeed": "V30",
@@ -1185,7 +1185,7 @@
     "category": "Gaming Handhelds",
     "slug": "nintendo-3ds-xl",
     "searchTerms": ["3ds sd card", "new 3ds xl sd card", "3ds memory card", "3ds xl storage", "nintendo 3ds sd card"],
-    "imageUrl": "/img/devices/nintendo-3ds.webp",
+    "imageUrl": "/img/devices/gaming-consoles/nintendo-3ds.webp",
     "sdCard": {
       "type": "SDHC (officially up to 32GB, SDXC works unofficially)",
       "minSpeed": "Class 4 (Class 10 recommended)",
@@ -1251,7 +1251,7 @@
     "category": "Gaming Handhelds",
     "slug": "asus-rog-ally-x",
     "searchTerms": ["rog ally x sd card", "ally x microsd", "rog ally x storage", "asus rog ally x memory card"],
-    "imageUrl": "/img/devices/asus-rog-ally-x.webp",
+    "imageUrl": "/img/devices/gaming-consoles/asus-rog-ally-x.webp",
     "sdCard": {
       "type": "microSD UHS-II",
       "minSpeed": "V30 (V60 recommended)",
@@ -1284,7 +1284,7 @@
     "category": "Mirrorless Cameras",
     "slug": "canon-eos-r50",
     "searchTerms": ["canon r50 sd card", "eos r50 memory card", "canon r50 storage"],
-    "imageUrl": "/img/devices/canon-r50.webp",
+    "imageUrl": "/img/devices/cameras/canon-r50.webp",
     "sdCard": {
       "type": "SD UHS-II (UHS-I compatible)",
       "minSpeed": "V30",
@@ -1317,7 +1317,7 @@
     "category": "Mirrorless Cameras",
     "slug": "canon-eos-r7",
     "searchTerms": ["canon r7 sd card", "eos r7 memory card", "canon r7 storage"],
-    "imageUrl": "/img/devices/canon-r7.webp",
+    "imageUrl": "/img/devices/cameras/canon-r7.webp",
     "sdCard": {
       "type": "Dual SD UHS-II",
       "minSpeed": "V60",
@@ -1349,7 +1349,7 @@
     "category": "Mirrorless Cameras",
     "slug": "canon-eos-r10",
     "searchTerms": ["canon r10 sd card", "eos r10 memory card", "r10 storage"],
-    "imageUrl": "/img/devices/canon-r10.webp",
+    "imageUrl": "/img/devices/cameras/canon-r10.webp",
     "sdCard": {
       "type": "SD UHS-II (UHS-I compatible)",
       "minSpeed": "V30 (V60 recommended for 4K 60fps)",
@@ -1382,7 +1382,7 @@
     "category": "Mirrorless Cameras",
     "slug": "canon-eos-r8",
     "searchTerms": ["canon r8 sd card", "eos r8 memory card", "r8 storage"],
-    "imageUrl": "/img/devices/canon-r8.webp",
+    "imageUrl": "/img/devices/cameras/canon-r8.webp",
     "sdCard": {
       "type": "SD UHS-II (UHS-I compatible)",
       "minSpeed": "V60",
@@ -1414,7 +1414,7 @@
     "category": "DSLR Cameras",
     "slug": "canon-rebel-t7",
     "searchTerms": ["canon rebel t7 sd card", "canon t7 memory card", "canon 2000d sd card", "rebel t7 storage"],
-    "imageUrl": "/img/devices/canon-rebel-t7.webp",
+    "imageUrl": "/img/devices/cameras/canon-rebel-t7.webp",
     "sdCard": {
       "type": "SD UHS-I",
       "minSpeed": "Class 10 / U1",
@@ -1447,7 +1447,7 @@
     "category": "Mirrorless Cameras",
     "slug": "canon-g7x-mark-iii",
     "searchTerms": ["canon g7x mark iii sd card", "g7x iii memory card", "g7x 3 sd card"],
-    "imageUrl": "/img/devices/canon-g7x-mark-iii.webp",
+    "imageUrl": "/img/devices/cameras/canon-g7x-mark-iii.webp",
     "sdCard": {
       "type": "SD UHS-I",
       "minSpeed": "V30",
@@ -1480,7 +1480,7 @@
     "category": "Mirrorless Cameras",
     "slug": "canon-g7x-mark-ii",
     "searchTerms": ["canon g7x mark ii sd card", "g7x ii memory card", "g7x 2 sd card"],
-    "imageUrl": "/img/devices/canon-g7x-mark-ii.webp",
+    "imageUrl": "/img/devices/cameras/canon-g7x-mark-ii.webp",
     "sdCard": {
       "type": "SD UHS-I",
       "minSpeed": "Class 10 / U1",
@@ -1513,7 +1513,7 @@
     "category": "Drones",
     "slug": "dji-mini-4k",
     "searchTerms": ["dji mini 4k sd card", "mini 4k microsd", "dji mini 4k storage"],
-    "imageUrl": "/img/devices/dji-mini-4k.webp",
+    "imageUrl": "/img/devices/drones/dji-mini-4k.webp",
     "sdCard": {
       "type": "microSD UHS-I",
       "minSpeed": "V30",
@@ -1546,7 +1546,7 @@
     "category": "Drones",
     "slug": "dji-mini-3",
     "searchTerms": ["dji mini 3 sd card", "mini 3 microsd", "dji mini 3 storage"],
-    "imageUrl": "/img/devices/dji-mini-3.webp",
+    "imageUrl": "/img/devices/drones/dji-mini-3.webp",
     "sdCard": {
       "type": "microSD UHS-I",
       "minSpeed": "V30",
@@ -1575,7 +1575,7 @@
     "category": "Mirrorless Cameras",
     "slug": "fujifilm-xt5",
     "searchTerms": ["fujifilm xt5 sd card", "x-t5 memory card", "xt5 storage"],
-    "imageUrl": "/img/devices/fujifilm-xt5.webp",
+    "imageUrl": "/img/devices/cameras/fujifilm-xt5.webp",
     "sdCard": {
       "type": "Dual SD UHS-II",
       "minSpeed": "V60 (V90 recommended for high bitrate video)",
@@ -1608,7 +1608,7 @@
     "category": "Mirrorless Cameras",
     "slug": "fujifilm-xm5",
     "searchTerms": ["fujifilm xm5 sd card", "x-m5 memory card", "xm5 storage"],
-    "imageUrl": "/img/devices/fujifilm-xm5.webp",
+    "imageUrl": "/img/devices/cameras/fujifilm-xm5.webp",
     "sdCard": {
       "type": "SD UHS-I",
       "minSpeed": "V30",
@@ -1637,7 +1637,7 @@
     "category": "Mirrorless Cameras",
     "slug": "fujifilm-xt30-ii",
     "searchTerms": ["fujifilm xt30 ii sd card", "x-t30 ii memory card", "xt30 2 storage"],
-    "imageUrl": "/img/devices/fujifilm-xt30-ii.webp",
+    "imageUrl": "/img/devices/cameras/fujifilm-xt30-ii.webp",
     "sdCard": {
       "type": "SD UHS-I",
       "minSpeed": "V30",
@@ -1666,7 +1666,7 @@
     "category": "Mirrorless Cameras",
     "slug": "fujifilm-xt50",
     "searchTerms": ["fujifilm xt50 sd card", "x-t50 memory card", "xt50 storage"],
-    "imageUrl": "/img/devices/fujifilm-xt50.webp",
+    "imageUrl": "/img/devices/cameras/fujifilm-xt50.webp",
     "sdCard": {
       "type": "SD UHS-II",
       "minSpeed": "V60",
@@ -1695,7 +1695,7 @@
     "category": "Mirrorless Cameras",
     "slug": "sony-fx30",
     "searchTerms": ["sony fx30 sd card", "fx30 memory card", "fx30 cfexpress", "sony fx30 media"],
-    "imageUrl": "/img/devices/sony-fx30.webp",
+    "imageUrl": "/img/devices/cameras/sony-fx30.webp",
     "sdCard": {
       "type": "Dual slots: CFexpress Type A or SD UHS-II",
       "minSpeed": "V60 (SD), V90 recommended for high bitrates",
@@ -1728,7 +1728,7 @@
     "category": "Mirrorless Cameras",
     "slug": "sony-fx3",
     "searchTerms": ["sony fx3 sd card", "fx3 memory card", "fx3 cfexpress", "sony fx3 media"],
-    "imageUrl": "/img/devices/sony-fx3.webp",
+    "imageUrl": "/img/devices/cameras/sony-fx3.webp",
     "sdCard": {
       "type": "Dual slots: CFexpress Type A or SD UHS-II",
       "minSpeed": "V60 (SD), V90 recommended for 4K 120fps",
@@ -1761,7 +1761,7 @@
     "category": "Mirrorless Cameras",
     "slug": "fujifilm-xe5",
     "searchTerms": ["fujifilm xe5 sd card", "x-e5 memory card", "xe5 storage"],
-    "imageUrl": "/img/devices/fujifilm-xe5.webp",
+    "imageUrl": "/img/devices/cameras/fujifilm-xe5.webp",
     "sdCard": {
       "type": "SD UHS-I",
       "minSpeed": "V30",
@@ -1790,7 +1790,7 @@
     "category": "Mirrorless Cameras",
     "slug": "fujifilm-x100v",
     "searchTerms": ["fujifilm x100v sd card", "x100v memory card", "x100 5", "fujifilm x100v storage"],
-    "imageUrl": "/img/devices/fujifilm-x100v.webp",
+    "imageUrl": "/img/devices/cameras/fujifilm-x100v.webp",
     "sdCard": {
       "type": "SD UHS-I",
       "minSpeed": "V30",
@@ -1823,7 +1823,7 @@
     "category": "Mirrorless Cameras",
     "slug": "fujifilm-xt3",
     "searchTerms": ["fujifilm xt3 sd card", "x-t3 memory card", "xt3 storage"],
-    "imageUrl": "/img/devices/fujifilm-xt3.webp",
+    "imageUrl": "/img/devices/cameras/fujifilm-xt3.webp",
     "sdCard": {
       "type": "Dual SD UHS-II",
       "minSpeed": "V60 (V90 for 400Mbps video)",
@@ -1856,7 +1856,7 @@
     "category": "Action Cameras",
     "slug": "insta360-go-3",
     "searchTerms": ["insta360 go 3 sd card", "go 3 microsd", "insta360 go3 storage"],
-    "imageUrl": "/img/devices/insta360-go-3.webp",
+    "imageUrl": "/img/devices/action-cameras/insta360-go-3.webp",
     "sdCard": {
       "type": "microSD UHS-I",
       "minSpeed": "V30",
@@ -1884,7 +1884,7 @@
     "category": "Action Cameras",
     "slug": "insta360-ace-pro",
     "searchTerms": ["insta360 ace pro sd card", "ace pro microsd", "insta360 ace pro memory card"],
-    "imageUrl": "/img/devices/insta360-ace-pro.webp",
+    "imageUrl": "/img/devices/action-cameras/insta360-ace-pro.webp",
     "sdCard": {
       "type": "microSD UHS-I",
       "minSpeed": "V30",
@@ -1913,7 +1913,7 @@
     "category": "Action Cameras",
     "slug": "insta360-one-x2",
     "searchTerms": ["insta360 one x2 sd card", "one x2 microsd", "insta360 one x2 memory card"],
-    "imageUrl": "/img/devices/insta360-one-x2.webp",
+    "imageUrl": "/img/devices/action-cameras/insta360-one-x2.webp",
     "sdCard": {
       "type": "microSD UHS-I",
       "minSpeed": "V30",
@@ -2270,7 +2270,7 @@
     "category": "DSLR Cameras",
     "slug": "nikon-d7500",
     "searchTerms": ["nikon d7500 sd card", "d7500 memory card", "d7500 storage"],
-    "imageUrl": "/img/devices/nikon-d7500.webp",
+    "imageUrl": "/img/devices/cameras/nikon-d7500.webp",
     "sdCard": {
       "type": "Dual SD UHS-I",
       "minSpeed": "U3 / V30",
@@ -2303,7 +2303,7 @@
     "category": "Mirrorless Cameras",
     "slug": "nikon-zf",
     "searchTerms": ["nikon zf sd card", "zf memory card", "nikon zf storage"],
-    "imageUrl": "/img/devices/nikon-zf.webp",
+    "imageUrl": "/img/devices/cameras/nikon-zf.webp",
     "sdCard": {
       "type": "Dual SD UHS-II",
       "minSpeed": "V60 (V90 for high frame rate video)",
@@ -2336,7 +2336,7 @@
     "category": "Mirrorless Cameras",
     "slug": "nikon-z50-ii",
     "searchTerms": ["nikon z50 ii sd card", "z50 ii memory card", "z50 2 storage"],
-    "imageUrl": "/img/devices/nikon-z50-ii.webp",
+    "imageUrl": "/img/devices/cameras/nikon-z50-ii.webp",
     "sdCard": {
       "type": "SD UHS-I",
       "minSpeed": "U3 / V30",
@@ -2365,7 +2365,7 @@
     "category": "Mirrorless Cameras",
     "slug": "nikon-z6-iii",
     "searchTerms": ["nikon z6 iii sd card", "z6 iii memory card", "z6 3 cfexpress", "nikon z6 iii media"],
-    "imageUrl": "/img/devices/nikon-z6-iii.webp",
+    "imageUrl": "/img/devices/cameras/nikon-z6-iii.webp",
     "sdCard": {
       "type": "CFexpress Type B + SD UHS-II",
       "minSpeed": "V60 (SD), V90 for high frame rate video",
@@ -2397,7 +2397,7 @@
     "category": "Mirrorless Cameras",
     "slug": "nikon-z6-ii",
     "searchTerms": ["nikon z6 ii sd card", "z6 ii memory card", "z6 2 storage"],
-    "imageUrl": "/img/devices/nikon-z6-ii.webp",
+    "imageUrl": "/img/devices/cameras/nikon-z6-ii.webp",
     "sdCard": {
       "type": "Dual SD UHS-II",
       "minSpeed": "V60",
@@ -2425,7 +2425,7 @@
     "category": "DSLR Cameras",
     "slug": "nikon-d850",
     "searchTerms": ["nikon d850 sd card", "d850 memory card", "d850 xqd", "nikon d850 media"],
-    "imageUrl": "/img/devices/nikon-d850.webp",
+    "imageUrl": "/img/devices/cameras/nikon-d850.webp",
     "sdCard": {
       "type": "XQD + SD UHS-II",
       "minSpeed": "V30 (SD), V60 recommended",
@@ -2462,7 +2462,7 @@
     "category": "DSLR Cameras",
     "slug": "nikon-d750",
     "searchTerms": ["nikon d750 sd card", "d750 memory card", "d750 storage"],
-    "imageUrl": "/img/devices/nikon-d750.webp",
+    "imageUrl": "/img/devices/cameras/nikon-d750.webp",
     "sdCard": {
       "type": "Dual SD UHS-I",
       "minSpeed": "U1 / Class 10 (U3 recommended for video)",

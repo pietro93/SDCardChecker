@@ -86,46 +86,45 @@ function getDeviceImageFallback(device) {
   const category = device.category.toLowerCase();
 
   // Brand-specific placeholders (exact match first)
-  if (name.includes("gopro")) return "/img/devices/gopro-hero-13.webp";
-  if (name.includes("dji mavic")) return "/img/devices/dji-mavic-3.webp";
-  if (name.includes("dji mini")) return "/img/devices/dji-mini-4-pro.webp";
-  if (name.includes("dji osmo")) return "/img/devices/dji-pocket-3.webp";
-  if (name.includes("dji")) return "/img/devices/drone-placeholder.webp";
-  if (name.includes("steam deck")) return "/img/devices/steam-deck.webp";
-  if (name.includes("switch lite")) return "/img/devices/nintendo-switch.webp";
-  if (name.includes("nintendo")) return "/img/devices/nintendo-switch-oled.webp";
-  if (name.includes("amazon fire")) return "/img/devices/amazon-fire-max-11.webp";
+  if (name.includes("gopro")) return "/img/devices/action-cameras/gopro-hero-13.webp";
+  if (name.includes("insta360")) return "/img/devices/action-cameras/insta360-x3.webp";
+  if (name.includes("dji mavic")) return "/img/devices/drones/dji-mavic-3.webp";
+  if (name.includes("dji mini")) return "/img/devices/drones/dji-mini-4-pro.webp";
+  if (name.includes("dji")) return "/img/devices/drones/drone-placeholder.webp";
+  if (name.includes("steam deck")) return "/img/devices/gaming-consoles/steam-deck.webp";
+  if (name.includes("switch lite")) return "/img/devices/gaming-consoles/nintendo-switch.webp";
+  if (name.includes("nintendo")) return "/img/devices/gaming-consoles/nintendo-switch-oled.webp";
+  if (name.includes("asus rog")) return "/img/devices/gaming-consoles/asus-rog-ally.webp";
+  if (name.includes("amazon fire")) return "/img/devices/computing/amazon-fire-max-11.webp";
+  if (name.includes("raspberry pi")) return "/img/devices/computing/raspberry-pi-5.webp";
+  if (name.includes("wyze")) return "/img/devices/security-cameras/wyze-cam-v3.webp";
+  if (name.includes("eufy")) return "/img/devices/security-cameras/eufy-solocam-s340.webp";
+  if (name.includes("canon")) return "/img/devices/cameras/canon-placeholder.webp";
+  if (name.includes("nikon")) return "/img/devices/cameras/nikon-placeholder.webp";
+  if (name.includes("sony")) return "/img/devices/cameras/sony-placeholder.webp";
+  if (name.includes("fujifilm")) return "/img/devices/cameras/fujifilm-placeholder.webp";
+  if (name.includes("blackmagic")) return "/img/devices/cameras/blackmagic-pocket-cinema-camera-6k-pro.webp";
   if (name.includes("samsung galaxy")) return "/img/devices/placeholder.webp";
-  if (name.includes("wyze")) return "/img/devices/wyze-cam-v3.webp";
-  if (name.includes("eufy")) return "/img/devices/eufy-solocam-s340.webp";
-  if (name.includes("insta360")) return "/img/devices/insta360-x3.webp";
-  if (name.includes("raspberry pi")) return "/img/devices/raspberry-pi-5.webp";
-  if (name.includes("asus rog")) return "/img/devices/asus-rog-ally.webp";
   if (name.includes("chromebook")) return "/img/devices/placeholder.webp";
   if (name.includes("hp")) return "/img/devices/placeholder.webp";
-  if (name.includes("canon")) return "/img/devices/canon-placeholder.webp";
-  if (name.includes("nikon")) return "/img/devices/nikon-placeholder.webp";
-  if (name.includes("sony")) return "/img/devices/sony-placeholder.webp";
-  if (name.includes("fujifilm")) return "/img/devices/fujifilm-placeholder.webp";
-  if (name.includes("blackmagic")) return "/img/devices/blackmagic-pocket-cinema-camera-6k-pro.webp";
 
   // Category-based placeholders
   if (category.includes("action camera")) 
-    return "/img/devices/gopro-placeholder.webp";
+    return "/img/devices/action-cameras/gopro-placeholder.webp";
   if (category.includes("security camera")) 
-    return "/img/devices/wyze-cam-v3.webp";
+    return "/img/devices/security-cameras/wyze-cam-v3.webp";
   if (category.includes("dslr")) 
-    return "/img/devices/canon-placeholder.webp";
+    return "/img/devices/cameras/canon-placeholder.webp";
   if (category.includes("mirrorless")) 
-    return "/img/devices/sony-placeholder.webp";
+    return "/img/devices/cameras/sony-placeholder.webp";
   if (category.includes("camera")) 
     return "/img/devices/placeholder.webp";
   if (category.includes("drone")) 
-    return "/img/devices/drone-placeholder.webp";
+    return "/img/devices/drones/drone-placeholder.webp";
   if (category.includes("gaming")) 
-    return "/img/devices/gaming-handheld-console-placeholder.webp";
+    return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
   if (category.includes("computing") || category.includes("tablet")) 
-    return "/img/devices/tablet-placeholder.webp";
+    return "/img/devices/computing/tablet-placeholder.webp";
 
   return "/img/devices/placeholder.webp";
 }
