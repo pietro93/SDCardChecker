@@ -147,6 +147,14 @@ function getCardImageFallback(card) {
   const isMicroSD = card.type === "microSD";
   const uhs = card.uhs ? card.uhs.toUpperCase() : "";
   
+  // Type-specific placeholders for specialty formats
+  if (card.type === "CFast") {
+    return "/img/cards/cfast-generic.webp";
+  }
+  if (card.type === "XQD") {
+    return "/img/cards/xqd-generic.webp";
+  }
+  
   // UHS-II cards
   if (uhs.includes("UHS-II")) {
     return isMicroSD ? "/img/cards/micro-uhs2-generic.webp" : "/img/cards/uhs2-generic.webp";
