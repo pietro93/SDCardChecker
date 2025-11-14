@@ -103,7 +103,7 @@ function getDeviceImageFallback(device) {
   if (name.includes("asus rog")) return "/img/devices/asus-rog-ally.webp";
   if (name.includes("chromebook")) return "/img/devices/placeholder.webp";
   if (name.includes("hp")) return "/img/devices/placeholder.webp";
-  if (name.includes("canon")) return "/img/devices/canon-eos-r5.webp";
+  if (name.includes("canon")) return "/img/devices/canon-placeholder.webp";
   if (name.includes("nikon")) return "/img/devices/nikon-placeholder.webp";
   if (name.includes("sony")) return "/img/devices/sony-placeholder.webp";
   if (name.includes("fujifilm")) return "/img/devices/fujifilm-placeholder.webp";
@@ -114,6 +114,8 @@ function getDeviceImageFallback(device) {
     return "/img/devices/gopro-placeholder.webp";
   if (category.includes("security camera")) 
     return "/img/devices/wyze-cam-v3.webp";
+  if (category.includes("dslr")) 
+    return "/img/devices/canon-placeholder.webp";
   if (category.includes("mirrorless")) 
     return "/img/devices/sony-placeholder.webp";
   if (category.includes("camera")) 
@@ -121,9 +123,9 @@ function getDeviceImageFallback(device) {
   if (category.includes("drone")) 
     return "/img/devices/drone-placeholder.webp";
   if (category.includes("gaming")) 
-    return "/img/devices/nintendo-switch-oled.webp";
+    return "/img/devices/gaming-handheld-console-placeholder.webp";
   if (category.includes("computing") || category.includes("tablet")) 
-    return "/img/devices/placeholder.webp";
+    return "/img/devices/tablet-placeholder.webp";
 
   return "/img/devices/placeholder.webp";
 }
