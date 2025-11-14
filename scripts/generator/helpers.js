@@ -242,6 +242,21 @@ function generateSpecsHTML(device) {
     },
   ];
 
+  // Add max capacity display
+  if (device.sdCard.maxCapacity) {
+    let maxCapacityValue = device.sdCard.maxCapacity;
+    
+    // If testedMaxCapacity exists, show both values side by side
+    if (device.sdCard.testedMaxCapacity) {
+      maxCapacityValue = `${device.sdCard.maxCapacity} (${device.sdCard.testedMaxCapacity} tested)`;
+    }
+    
+    specs.push({
+      label: "Max Capacity",
+      value: maxCapacityValue,
+    });
+  }
+
   return specs
     .map(
       (spec) => `

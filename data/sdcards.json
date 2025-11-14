@@ -413,6 +413,51 @@
     "pros": "Affordable, reliable, trusted by many photographers for general-purpose use.",
     "cons": "Slower than UHS-II cards for bursts and 4K/6K high-bitrate recording.",
     "tier": "budget"
+  },
+  {
+    "id": "sandisk-extreme-sd-uhs1",
+    "name": "SanDisk Extreme SD UHS-I",
+    "type": "SD",
+    "uhs": "UHS-I",
+    "speed": "V30",
+    "writeSpeed": "60 MB/s",
+    "priceEstimate": 35,
+    "priceTier": "Mid-Range",
+    "imageUrl": "/img/cards/sandisk-extreme-sd-uhs1.webp",
+    "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+SD+UHS-I+V30&tag=sd-cc-20",
+    "pros": "Fast, reliable, excellent for 4K video and burst photography. Good balance of performance and price.",
+    "cons": "Slower than UHS-II alternatives for professional 8K work.",
+    "tier": "recommended"
+  },
+  {
+    "id": "sandisk-ultra-sd-uhs1",
+    "name": "SanDisk Ultra SD UHS-I",
+    "type": "SD",
+    "uhs": "UHS-I",
+    "speed": "Class 10 / U1",
+    "writeSpeed": "30 MB/s",
+    "priceEstimate": 18,
+    "priceTier": "Budget",
+    "imageUrl": "/img/cards/sandisk-ultra-sd-uhs1.webp",
+    "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Ultra+SD+Class+10&tag=sd-cc-20",
+    "pros": "Budget-friendly, reliable from a trusted brand, suitable for standard photography and HD video.",
+    "cons": "Slower speeds than V30 cards, not ideal for 4K video.",
+    "tier": "budget"
+  },
+  {
+    "id": "sandisk-extreme-pro-sd-uhs1",
+    "name": "SanDisk Extreme PRO SD UHS-I",
+    "type": "SD",
+    "uhs": "UHS-I",
+    "speed": "V30",
+    "writeSpeed": "90 MB/s",
+    "priceEstimate": 55,
+    "priceTier": "Mid-Range",
+    "imageUrl": "/img/cards/sandisk-extreme-pro-sd-uhs1.webp",
+    "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+SD+UHS-I&tag=sd-cc-20",
+    "pros": "Very fast UHS-I performance, excellent for 4K video recording and high-speed burst photography. Professional-grade reliability.",
+    "cons": "Slower than UHS-II alternatives. Premium pricing for UHS-I.",
+    "tier": "recommended"
   }
   ]
-}
+  }

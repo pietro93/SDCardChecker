@@ -14,6 +14,7 @@ function generateFAQs(device, sdcardsMap) {
   const cardType = device.sdCard.type;
   const capacity = device.sdCard.recommendedCapacity;
   const maxCapacity = device.sdCard.maxCapacity;
+  const testedMaxCapacity = device.sdCard.testedMaxCapacity;
 
   // Determine if this device has demanding speed requirements
   const isDemandingDevice = ["V60", "V90", "U3"].some((v) =>
@@ -31,9 +32,15 @@ function generateFAQs(device, sdcardsMap) {
   }
 
   // 2. Storage Capacity Question
+  let capacityAnswer = `We recommend ${capacity.join(" or ")} cards. A ${capacity[0]} card is good for typical use, with ${maxCapacity} as the maximum supported capacity`;
+  if (testedMaxCapacity) {
+    capacityAnswer += ` (${testedMaxCapacity} tested and verified working)`;
+  }
+  capacityAnswer += `. Larger sizes are useful if you shoot frequently and want to minimize card swaps.`;
+  
   faqs.push({
     q: `What storage capacity should I get for ${device.name}?`,
-    a: `We recommend ${capacity.join(" or ")} cards. A ${capacity[0]} card is good for typical use, with ${maxCapacity} as the maximum supported capacity. Larger sizes are useful if you shoot frequently and want to minimize card swaps.`,
+    a: capacityAnswer,
   });
 
   // 3. Older/Budget Card Compatibility
