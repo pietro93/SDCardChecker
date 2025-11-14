@@ -79,9 +79,9 @@
         <!-- Main Content -->
         <main class="flex-1">
             <!-- Hero Image with Overlay Title -->
-            <div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative">
-                <img src="{{DEVICE_IMAGE}}" alt="{{DEVICE_NAME}} SD card requirements" class="w-full object-cover"
-                    style="height: 350px;" width="1200" height="350" loading="lazy" />
+             <div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative">
+                 <img src="{{DEVICE_IMAGE}}" alt="{{DEVICE_NAME}} SD card requirements" class="w-full object-cover hero-image"
+                     width="1200" height="350" loading="lazy" />
                 <div class="hero-overlay">
                     <h1 class="hero-title" style="color: #ffffff;">
                         Best SD Card for {{DEVICE_NAME_SHORT}}
@@ -275,25 +275,26 @@
         }
 
         .btn-check-price {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.125rem;
-        background-color: #f59e0b;
-        color: white;
-        font-weight: 700;
-        padding: 0.35rem 0.4rem;
-        border-radius: 0.375rem;
-        font-size: 0.85rem;
-        transition: all 0.2s ease;
-        text-align: center;
-        font-size: 0.85rem;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          white-space: nowrap;
-    }
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         gap: 0.125rem;
+         background-color: #f59e0b;
+         color: white;
+         font-weight: 700;
+         padding: 0.5rem 0.75rem;
+         border-radius: 0.375rem;
+         font-size: 0.9rem;
+         transition: all 0.2s ease;
+         text-align: center;
+         text-decoration: none;
+         border: none;
+         cursor: pointer;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         white-space: nowrap;
+         min-height: 44px;
+         min-width: 44px;
+        }
 
         .btn-check-price:hover {
         background-color: #d97706;
@@ -310,12 +311,22 @@
         }
 
         .faq-question {
-            @apply p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors;
-        }
+             @apply p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors;
+             min-height: 48px;
+             user-select: none;
+             -webkit-user-select: none;
+         }
+         
+         .faq-question:active {
+             background-color: rgba(59, 130, 246, 0.05);
+             transition: background-color 0.1s ease;
+         }
 
-        .faq-toggle {
-            @apply text-slate-400 transition-transform duration-300;
-        }
+         .faq-toggle {
+             @apply text-slate-400 transition-transform duration-300;
+             font-size: 1.5rem;
+             flex-shrink: 0;
+         }
 
         .faq-toggle.open {
             @apply rotate-180;

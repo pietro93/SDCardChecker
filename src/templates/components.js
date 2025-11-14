@@ -8,17 +8,17 @@ function generateGrowScript() {
 
 function generateHeader() {
 return `<!-- Header -->
-<header class="sticky top-0 z-50 bg-white shadow-sm">
+<header class="sticky top-0 z-50 bg-white shadow-sm header-nav-container">
 <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-<a href="/" class="flex items-center gap-3 group">
+<a href="/" class="flex items-center gap-3 group flex-shrink-0">
 <img src="/img/brand/logo.webp" alt="SD Card Checker Logo" class="w-10 h-10 rounded-lg shadow-md group-hover:shadow-lg transition-shadow" width="40" height="40">
-<span class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">SD Card Checker</span>
+<span class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors hidden sm:inline">SD Card Checker</span>
 </a>
-    <nav class="flex gap-8 items-center">
-    <a href="/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Home</a>
+    <nav class="header-nav hidden md:flex gap-8 items-center">
+    <a href="/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">Home</a>
     
     <div class="relative group flex items-center">
-    <a href="#" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1">
+    <a href="#" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
       Devices
       <i class="fas fa-chevron-down text-xs"></i>
       </a>
@@ -35,7 +35,7 @@ return `<!-- Header -->
       </div>
 
       <div class="relative group flex items-center">
-      <a href="#" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1">
+      <a href="#" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
       Resources
       <i class="fas fa-chevron-down text-xs"></i>
       </a>
@@ -48,10 +48,55 @@ return `<!-- Header -->
        </div>
       </div>
 
-      <a href="/about.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">About</a>
+      <a href="/about.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">About</a>
     </nav>
+    
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden text-slate-600 hover:text-blue-600 mobile-menu-toggle" aria-label="Toggle menu" id="mobileMenuBtn">
+      <i class="fas fa-bars text-xl"></i>
+    </button>
   </div>
-</header>`;
+  
+  <!-- Mobile Navigation Menu -->
+  <nav class="mobile-menu hidden md:hidden bg-slate-50 border-t border-slate-200" id="mobileMenu">
+    <div class="px-4 py-3 space-y-2">
+      <a href="/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Home</a>
+      <a href="/categories/action-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Action Cameras</a>
+      <a href="/categories/computing-and-tablets/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Computing & Tablets</a>
+      <a href="/categories/drones/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Drones</a>
+      <a href="/categories/gaming-handhelds/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Gaming Handhelds</a>
+      <a href="/categories/mirrorless-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Mirrorless Cameras</a>
+      <a href="/categories/security-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Security Cameras</a>
+      <div class="border-t border-slate-300 my-2"></div>
+      <a href="/sd-card-guide.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">SD Card Guide</a>
+      <a href="/speed-classes.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Speed Classes</a>
+      <a href="/faq.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">FAQ</a>
+      <div class="border-t border-slate-300 my-2"></div>
+      <a href="/about.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">About</a>
+    </div>
+  </nav>
+</header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Close menu when a link is clicked
+    const menuLinks = mobileMenu.querySelectorAll('a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+});
+</script>`;
 }
 
 function generateFooter() {

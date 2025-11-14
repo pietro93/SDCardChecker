@@ -67,6 +67,19 @@ li {
   padding: 0 1.5rem;
 }
 
+/* Reduce padding on very small screens for zoom compatibility */
+@media (max-width: 375px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -116,6 +129,52 @@ header nav a:hover {
   color: #0066cc;
 }
 
+/* Mobile Menu Styles */
+.mobile-menu-toggle {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu {
+  animation: slideDown 0.2s ease-out;
+}
+
+.mobile-menu.hidden {
+  animation: slideUp 0.2s ease-in;
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    max-height: 500px;
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    display: none !important;
+  }
+}
+
 /* ============================================
    Main Content
    ============================================ */
@@ -132,10 +191,23 @@ main {
 
 .breadcrumb a {
   color: #0066cc;
+  font-weight: 500;
 }
 
 .breadcrumb span {
   margin: 0 0.5rem;
+  color: #ccc;
+}
+
+@media (max-width: 480px) {
+  .breadcrumb {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .breadcrumb span {
+    margin: 0 0.25rem;
+  }
 }
 
 /* ============================================
@@ -245,6 +317,28 @@ color: #ffffff;
 position: relative;
 z-index: 2;
 text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-title {
+  /* Use relative units for text-shadow so it scales with zoom */
+  text-shadow: 0 0.3em 0.8em rgba(0, 0, 0, 0.5) !important;
+}
+
+.hero-image {
+  height: 200px;
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .hero-image {
+    height: 280px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-image {
+    height: 350px;
+  }
 }
 
 .hero-subtitle {
@@ -752,6 +846,18 @@ label {
   border: 1px solid #e5e5e5;
 }
 
+@media (max-width: 480px) {
+  .spec-item {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .spec-item {
+    padding: 0.85rem;
+  }
+}
+
 .spec-label {
   font-size: 0.8rem;
   font-weight: 600;
@@ -1139,6 +1245,310 @@ Sidebar Navigation (Tailwind-based, in components.js)
    }
 }
 
+/* ============================================
+   Search Dropdown Mobile Fix
+   ============================================ */
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 100;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+  .search-dropdown {
+    max-width: calc(100vw - 2rem);
+    overflow-y: auto;
+    max-height: 300px;
+    right: 0;
+    left: auto;
+  }
+}
+
+.search-group-header {
+  padding: 0.75rem 1rem;
+  background: #f8f8f8;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #999;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.search-item {
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  border-bottom: 1px solid #f5f5f5;
+  font-size: 0.95rem;
+  display: block;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.search-item:hover {
+  background-color: #e6f2ff;
+  color: #0066cc;
+}
+
+.search-item-name {
+  font-weight: 600;
+}
+
+.search-item-category {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 0.25rem;
+}
+
+/* ============================================
+   Trust Grid Mobile Fix
+   ============================================ */
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .trust-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ============================================
+   Text Shadow Responsive Fix
+   ============================================ */
+
+body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    text-shadow: none;
+    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* ============================================
+   Table Scroll Indicators
+   ============================================ */
+
+.brands-table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  position: relative;
+  box-shadow: inset -40px 0 40px -40px rgba(0, 0, 0, 0.1);
+}
+
+.brands-table > * {
+  scroll-snap-align: start;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .brands-table-container::after {
+    content: "← Scroll →";
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    font-size: 0.75rem;
+    color: #999;
+    animation: pulse 2s infinite;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ============================================
+   Touch Target Size Fix
+   ============================================ */
+
+.search-input {
+  min-height: 48px;
+  padding: 0.75rem 1.5rem;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+}
+
+/* ============================================
+   CRITICAL MOBILE UX FIXES
+   ============================================ */
+
+/* Issue #1: Search Dropdown Overflow on Mobile */
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 100;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+  .search-dropdown {
+    max-width: calc(100vw - 2rem);
+    overflow-y: auto;
+    max-height: 300px;
+    right: 0;
+    left: auto;
+  }
+}
+
+.search-group-header {
+  padding: 0.75rem 1rem;
+  background: #f8f8f8;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #999;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.search-item {
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  border-bottom: 1px solid #f5f5f5;
+  font-size: 0.95rem;
+  display: block;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.search-item:hover {
+  background-color: #e6f2ff;
+  color: #0066cc;
+}
+
+.search-item-name {
+  font-weight: 600;
+}
+
+.search-item-category {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 0.25rem;
+}
+
+/* Issue #2: Hero Section Text Shadow Responsive */
+body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    text-shadow: none;
+  }
+}
+
+/* Issue #3: Trust Grid Mobile Columns */
+.trust-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .trust-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Issue #4: Table Scroll Indicators */
+.brands-table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  position: relative;
+  box-shadow: inset -40px 0 40px -40px rgba(0, 0, 0, 0.1);
+}
+
+.brands-table > * {
+  scroll-snap-align: start;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Issue #5: Touch Target Sizes */
+.search-input {
+  min-height: 48px;
+  padding: 0.75rem 1.5rem;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+}
+
 @media (max-width: 480px) {
   h1 {
     font-size: 1.5rem;
@@ -1155,11 +1565,13 @@ Sidebar Navigation (Tailwind-based, in components.js)
   .btn {
     padding: 0.75rem 1rem;
     font-size: 0.95rem;
+    min-height: 48px;
   }
 
   .btn-primary {
     padding: 0.85rem;
     font-size: 1rem;
+    min-height: 48px;
   }
 
   .answer-text {
@@ -1201,5 +1613,9 @@ Sidebar Navigation (Tailwind-based, in components.js)
 
   .logo {
     font-size: 1.1rem;
+  }
+
+  a, button, input, select, textarea {
+    min-height: 44px;
   }
 }
