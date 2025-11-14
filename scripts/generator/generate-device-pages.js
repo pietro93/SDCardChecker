@@ -78,7 +78,7 @@ function generateBrandsTable(brandReferences, sdcardsMap) {
             <td class="table-card-cell">
             <a href="${brand.amazonSearchUrl}" target="_blank" class="table-card-link-wrapper">
             <div class="table-card-image">
-            <img src="${cardImage}" alt="${brand.name} ${brand.speed} SD card - ${brand.priceEstimate}USD" loading="lazy" />
+            <img src="${cardImage}" alt="${brand.name} ${brand.speed} SD card - ${brand.priceEstimate}USD" width="115" height="115" loading="lazy" />
             </div>
             <div class="table-card-name">${brand.name}</div>
             </a>
