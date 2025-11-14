@@ -1392,8 +1392,8 @@ body {
    ============================================ */
 
 .search-input {
-  min-height: 48px;
-  padding: 0.75rem 1.5rem;
+   min-height: 48px;
+   padding: 0.75rem 1.5rem 0.75rem 3rem;
 }
 
 .search-container {
@@ -1401,12 +1401,12 @@ body {
 }
 
 .search-icon {
-  position: absolute;
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #999;
-  pointer-events: none;
+   position: absolute;
+   left: 1.5rem;
+   top: 50%;
+   transform: translateY(-50%);
+   color: #999;
+   pointer-events: none;
 }
 
 /* ============================================

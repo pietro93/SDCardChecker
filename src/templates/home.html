@@ -55,7 +55,7 @@
                     <i class="fas fa-search search-icon"></i>
                     <input type="text" x-model="query" @input="filterDevices()" @focus="open = true; filterDevices()"
                         @keydown="handleKeydown($event)"
-                        placeholder="Search devices... (e.g., GoPro Hero 13, Nintendo Switch)" class="search-input"
+                        placeholder="Search devices..." class="search-input"
                         aria-label="Search for devices and recommended SD cards">
                     <div class="search-dropdown" :class="{ hidden: !open || filtered.length === 0 }">
                         <template x-for="(group, category) in groupedDevices()" :key="category">
