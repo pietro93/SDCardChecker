@@ -178,7 +178,10 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace("Hero 13 Black", "Hero 13")
         .replace("Hero 12 Black", "Hero 12");
 
-    const title = `Best SD Card for ${device.name} | ${device.sdCard.type} ${device.sdCard.minSpeed}`;
+    const title = `Best SD Cards for ${device.name} | ${device.sdCard.type} Requirements & Recommendations`;
+    const ogTitle = `${device.name} ${device.sdCard.type} Guide | Requirements & Best Cards`;
+    const twitterTitle = `${device.name} SD Card Guide | Best Recommendations`;
+    const schemaHeadline = `${device.name} ${device.sdCard.type} Compatibility & Recommendations`;
     const description = generateUniqueMetaDescription(device, brandNames, deviceIndex);
 
     let answerText = device.sdCard.type;
@@ -225,6 +228,9 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
 
     let html = template
         .replace(/{{DEVICE_TITLE}}/g, title)
+        .replace(/{{OG_TITLE}}/g, ogTitle)
+        .replace(/{{TWITTER_TITLE}}/g, twitterTitle)
+        .replace(/{{SCHEMA_HEADLINE}}/g, schemaHeadline)
         .replace(/{{DEVICE_DESCRIPTION}}/g, description)
         .replace(/{{DEVICE_URL}}/g, deviceUrl)
         .replace(/{{BASE_URL}}/g, baseUrl)

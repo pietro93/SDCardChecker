@@ -12,8 +12,8 @@
 | Column | Count | Health |
 |--------|-------|--------|
 | **MONITORING** | 1 | 👀 Passive tracking |
-| **ACTIVE WORK** | 2 | 🔧 In progress |
-| **BACKLOG** | 3 | 🟡 Defer 60+ days |
+| **ACTIVE WORK** | 3 | 🔧 In progress |
+| **BACKLOG** | 2 | 🟡 Defer 60+ days |
 | **DONE** | 27 | ✅ Complete |
 
 ---
@@ -62,28 +62,99 @@
 
 ---
 
-### KANBAN-8 | Device Database Expansion (Phase 2)
+### KANBAN-11 | SEO Keyword Optimization Based on GSC Data (NEW)
+- **Status:** PENDING - Medium priority, high impact
+- **Owner:** You
+- **Deadline:** Next 2 weeks (Nov 21 - Dec 5)
+- **Effort:** ~3-4 hours (implementation + testing)
+- **Why:** GSC shows specific search patterns. Fixing content gaps = easy clicks. Already showing impressions = proven demand.
+- **Key findings from first day of GSC data:**
+  - ✅ You have impressions (2-1 per query) - proven demand exists
+  - ❌ 0 clicks on all queries - search intent not matching content
+  - Pattern: Users searching "X requirements" or "X recommendations" or "X compatible cards"
+  
+- **QUICK FIXES (Easy wins - 2 hrs):**
+  1. Add keyword variations to title tags
+     - Current: `Best SD Card for {{DEVICE_NAME}} | {{TYPE}} {{SPEED}}`
+     - Add: Include "requirements" or "recommendations" in meta description
+     - Devices to prioritize: DJI Mini 4 Pro, Sony A6700, GoPro Hero 13, Steam Deck
+  
+  2. Enhance FAQ section with exact search queries
+     - Current FAQs: Generic questions
+     - Add FAQ entries that exactly match search queries (e.g., "What are the SD card requirements for DJI Mini 4 Pro?")
+     - This targets featured snippet opportunities
+  
+  3. Improve answer box clarity
+     - Ensure first FAQ answer explicitly states "requirements"
+     - Example: "The DJI Mini 4 Pro **requires** microSD UHS-I V30..."
+  
+- **CRITICAL DEVICES (Showing impressions):**
+  - **DJI Mini 4 Pro** (2 impressions for "memory card requirements")
+    - Add alt text: "DJI Mini 4 Pro memory card requirements specification"
+    - Add FAQ: "What are the DJI Mini 4 Pro SD card requirements?"
+    - Enhance title: Include "requirements" variant
+  
+  - **DJI Osmo Pocket 3** (1 impression)
+    - Add FAQ: "What SD card does DJI Osmo Pocket 3 require?"
+    - Add searchable text: "DJI Osmo Pocket 3 microSD requirements"
+  
+  - **Sony A6700** (3 impressions total)
+    - Add FAQ: "What are Sony A6700 SD card requirements?"
+    - Clarify dual card slots in title meta description
+  
+  - **GoPro Hero 13** (1 impression)
+    - Add "microSD recommendations" to FAQ
+  
+  - **Canon EOS R6 Mark II** (1 impression)
+    - Add "memory card requirements" to all sections
+  
+  - **Steam Deck** (3 impressions)
+    - Add FAQ: "What are Steam Deck microSD card requirements?"
+  
+  - **Nintendo Switch Lite** (1 impression)
+    - Add alt text referencing "SD card requirements"
+
+- **CONTENT ADDITIONS (1.5 hrs):**
+  - Add "Requirements" section before FAQs in template
+  - List: Card type, speed class, capacity, dual-slot info
+  - Make it scannable for featured snippets
+
+- **Technical SEO:**
+  - Add H3s for keyword variations (e.g., "Requirements", "Specifications", "Compatibility")
+  - Update searchTerms in devices.json to include "requirements" variants
+
+- **Next steps:**
+  1. Update device.html template with "Requirements" section
+  2. Add new searchTerms to devices.json for matching devices
+  3. Update FAQ generator to create "requirements" questions
+  4. Test pages for featured snippet eligibility
+  5. Submit updated pages to GSC
+
+---
+
+### KANBAN-8 | Device Database Expansion (Phase 2) - UPDATED
 - **Status:** PENDING - High priority, longer timeline
 - **Owner:** You
 - **Deadline:** Ongoing (target: 10-15 new devices/week)
-- **Why:** 34 devices is your current ceiling. Each new device = potential new Google keyword = potential new affiliate click.
+- **Priority:** After KANBAN-11 quick wins (content optimization should complete first)
+- **Why:** Current 34 devices are showing up in GSC. Expanding 50%+ should increase impressions 2-3x.// we expand making informed decisions based on GSC results
 - **Strategy:**
-  - Start adding devices **next week** once you've tested affiliate links
-  - Prioritize based on search volume + competitor gaps
+  - Complete KANBAN-11 optimization first (2-3 days)
+  - Then start adding devices **next week** once you've tested affiliate links
+  - Prioritize based on current GSC keywords missing from your site
   - Aim for 50+ new pages by Dec 15
-- **Research categories (pick one to start):**
-  - Gaming: Switch OLED, PS5, Xbox Series X, Steam Deck
-  - Cameras: Sony A6400, Canon EOS R6, GoPro, action cams
-  - Phones: iPhones with expandable SD, Android flagships (Pixel, Samsung)
-  - Tablets: iPad Pro, Android tablets
-  - Automotive: Dashcams (huge market), car headunits
+- **Target devices based on GSC patterns:**
+  - **Drones (High priority):** DJI Osmo Pocket 3, DJI Mini 4K, other DJI models
+  - **Cameras (High priority):** Canon R6 Mark II, Sony A6700 variants
+  - **Gaming (Medium priority):** Nintendo Switch Lite alternatives
+  - **Raspberry Pi:** New emerging search (1 impression in first day)
 - **Process per device:**
   - Research official specs (max capacity, speed class, card type)
   - Create device page (reuse existing template + schema)
   - Test page renders correctly
   - Deploy
   - Estimate: 20-30 min per device once you dial in the process
-- **Next step:** Pick one category to research this week. Don't add yet—just identify 10 devices you want to target.
+- **Next step:** After KANBAN-11, pick DJI/Canon/Sony category to expand.
 
 ---
 
