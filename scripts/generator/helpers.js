@@ -103,10 +103,6 @@ function getDeviceImageFallback(device) {
   // Category-based placeholders
   if (category.includes("action camera")) 
     return "/img/devices/action-cameras/gopro-placeholder.webp";
-  if (category.includes("dslr")) 
-    return "/img/devices/cameras/canon-placeholder.webp";
-  if (category.includes("mirrorless")) 
-    return "/img/devices/cameras/sony-placeholder.webp";
   if (category.includes("camera")) 
     return "/img/devices/cameras/placeholder.webp";
   if (category.includes("drone")) 

@@ -29,11 +29,11 @@ function loadSDCardData() {
 function getCategoryIcon(category) {
     const iconMap = {
         "Action Cameras": "fas fa-video",
+        Cameras: "fas fa-camera",
         "Drones": "fas fa-drone",
-        "Mirrorless Cameras": "fas fa-camera",
-        "Gaming Consoles": "fas fa-gamepad",
-        "Smartphones": "fas fa-mobile",
-        "Tablets": "fas fa-tablet",
+        "Gaming Handhelds": "fas fa-gamepad",
+        "Security Cameras": "fas fa-video",
+        "Computing & Tablets": "fas fa-tablet",
     };
     return iconMap[category] || "fas fa-sd-card";
 }

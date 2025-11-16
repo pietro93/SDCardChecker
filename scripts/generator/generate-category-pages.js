@@ -51,14 +51,14 @@ function getCategoryIntro(category) {
 const intros = {
 "Action Cameras":
 "Action cameras require fast SD cards to handle high-bitrate video recording. Find the best cards for GoPro, DJI, and other action cameras.",
+Cameras:
+"Professional cameras including DSLRs, mirrorless, and cinema cameras require fast, reliable cards for RAW photo and high-bitrate video recording. Find the perfect card for your setup.",
 "Computing & Tablets":
 "Tablets and Chromebooks benefit from reliable microSD cards for expanded storage and media. Compare options for Amazon Fire, Samsung Galaxy, and more.",
 Drones:
 "Drones demand reliable, high-speed SD cards for smooth 4K video capture. Compare top recommendations for popular drone models.",
 "Gaming Handhelds":
 "Gaming handhelds need reliable cards for smooth game installation and loading. See the best options for Nintendo Switch, Steam Deck, and more.",
-"Mirrorless Cameras":
-"Professional and mirrorless cameras require fast, reliable cards for RAW photo and video recording. Find the perfect card for your setup.",
 "Security Cameras":
 "Security cameras require High Endurance microSD cards designed for continuous recording. Find the best cards for 24/7 surveillance systems.",
 };
