@@ -1,6 +1,6 @@
 # GSC Analysis & Insights
 
-**Last Updated:** November 15, 2025  
+**Last Updated:** November 15, 2025 (9PM)
 **Data Period:** Nov 11 - Nov 15, 2025  
 **Link:** Referenced in KANBAN_BOARD.md
 
@@ -15,6 +15,49 @@
 | CTR | 0.12% (1 click / 838 clicks?) | — | ⚠️ Low but improving |
 | Top Device (Impressions) | DJI Osmo Pocket 3 (20 queries) | DJI Osmo Pocket 3 (168 impressions) | 🔴 0% CTR |
 | Winning Page | "best sd card for raspberry pi 5" | Raspberry Pi 5 (1 click, 2.04% CTR) | 🟢 Only converter |
+
+---
+
+## 🕐 24-Hour Update (Nov 15, 9PM - Past 24 Hours)
+
+**Discrepancy Note:** GSC reports only 1 click on queries, but **8 total clicks observed** across pages in past 24 hours. Due to low traffic volume, GSC cannot attribute which specific queries drove these clicks.
+
+### Pages Receiving Clicks (8 total)
+
+| Page | Clicks | Impressions | CTR |
+|------|--------|-------------|-----|
+| DJI Osmo Pocket 3 | 1 | 43 | 2.33% |
+| Sony FX3 | 1 | 18 | 5.56% |
+| Nikon Z8 | 1 | 16 | 6.25% |
+| Canon EOS R6 Mark II | 1 | 10 | 10% |
+| Fujifilm X100VI | 1 | 5 | 20% |
+| Leica Q3-43 | 1 | 4 | 25% |
+| Miyoo Mini Plus | 1 | 3 | 33.33% |
+| /about | 1 | 1 | 100% |
+
+**Key Insight:** Different devices are now converting clicks - not just Raspberry Pi 5. The Osmo Pocket 3 got its first click (43 impressions → 1 click). Camera devices (Sony, Canon, Leica, Nikon, Fujifilm) showing better CTR patterns than gaming devices.
+
+### 📸 Hero Image Status & Action Items
+
+All devices currently use fallback placeholders (no custom imageUrl in devices.json). Devices with HIGH and MEDIUM priority should get custom hero images.
+
+| Device Page | Clicks | Impressions | Image Status | Priority | Action |
+|---|---|---|---|---|---|
+| **DJI Osmo Pocket 3** | 1 | 43 | 🔴 Placeholder | **CRITICAL** | CREATE - Most impressions, no custom image |
+| **Sony FX3** | 1 | 18 | 🔴 Sony placeholder | **HIGH** | CREATE - Premium camera, important for CTR |
+| **Nikon Z8** | 1 | 16 | ✅ Custom image | DONE | Monitoring |
+| Canon EOS R6 Mark II | 1 | 10 | 🔴 Canon placeholder | MEDIUM | CREATE when possible |
+| Fujifilm X100VI | 1 | 5 | 🔴 Fujifilm placeholder | MEDIUM | CREATE when possible |
+| Leica Q3-43 | 1 | 4 | 🔴 Sony placeholder | LOW | CREATE when possible |
+| Miyoo Mini Plus | 1 | 3 | 🔴 Gaming placeholder | LOW | CREATE when possible |
+| **DJI Mini 4 Pro** | 0 | 98 | ✅ Custom image | DONE | Most impressions - has image |
+| **Steam Deck** | 0 | 96 | ✅ Custom image | DONE | Gaming, has image |
+| **Sony A6700** | 0 | 46 | ✅ Custom image | DONE | Cameras, has image |
+| Nintendo Switch Lite | 0 | 36 | 🔴 Gaming placeholder | MEDIUM | CREATE when possible |
+| ASUS ROG Ally | 0 | 33 | ✅ Custom image | DONE | Gaming, has image |
+| GoPro Hero 13 | 0 | 30 | ✅ Custom image | DONE | Action cam, has image |
+
+**Key Finding:** DJI Osmo Pocket 3 (43 impressions, 1 click = 2.33% CTR) and Sony FX3 (18 impressions, 1 click = 5.56% CTR) are missing custom images despite high traffic. These should be top priority.
 
 ---
 
