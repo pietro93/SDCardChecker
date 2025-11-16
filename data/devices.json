@@ -4499,6 +4499,187 @@
         "nikon-z6-ii"
       ],
       "notes": "The original, landmark R6 model with a massive user base. Its dual UHS-II slots and high-speed capabilities make card choice a critical topic."
+    },
+    {
+      "id": "raspberry-pi-5",
+      "name": "Raspberry Pi 5",
+      "category": "Single-Board Computers",
+      "slug": "raspberry-pi-5",
+      "searchTerms": [
+        "raspberry pi 5 sd card",
+        "pi 5 microsd",
+        "raspberry pi 5 storage",
+        "best sd card for pi 5"
+      ],
+      "sdCard": {
+        "type": "microSD (SDR104 mode supported)",
+        "minSpeed": "A1 (A2 Recommended)",
+        "minWriteSpeed": "10 MB/s (Class 10)",
+        "recommendedCapacity": [
+          "32GB",
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "No official limit"
+      },
+      "whySpecs": "The Raspberry Pi 5's performance is heavily dependent on microSD card speed, as it runs the entire operating system from it. The Pi 5 supports the faster SDR104 mode. An 'A2' rated card is highly recommended for its superior random read/write speeds (IOPS), which dramatically improves OS responsiveness, application loading, and multitasking compared to 'A1' or non-rated cards.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        },
+        {
+          "id": "samsung-evo-select-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "What's more important for the Raspberry Pi 5, V30 or A2?",
+          "a": "<b>The A2 rating is far more important.</b> The 'V' rating (e.g., V30) measures sustained sequential write speed for video recording. The 'A' rating (Application Performance Class) measures random read/write speed, which is what an operating system needs. An A2 card will make the Pi 5 feel much faster in everyday use."
+        },
+        {
+          "q": "Do I need a specific 'Raspberry Pi' branded SD card?",
+          "a": "<b>No, you do not.</b> While some official cards exist, any high-quality microSD card from a reputable brand like SanDisk, Samsung, or Kingston that meets the A2 speed rating will perform excellently. Focus on the A2 rating, not the branding."
+        }
+      ],
+      "relatedDevices": [
+        "raspberry-pi-4-model-b",
+        "steam-deck"
+      ],
+      "notes": "Targets a huge DIY and technical audience. The A2 speed rating is critical for performance. The card is a mandatory component for operation."
+    },
+    {
+      "id": "raspberry-pi-4-model-b",
+      "name": "Raspberry Pi 4 Model B",
+      "category": "Single-Board Computers",
+      "slug": "raspberry-pi-4-model-b",
+      "searchTerms": [
+        "raspberry pi 4 sd card",
+        "pi 4 microsd",
+        "raspberry pi 4 storage"
+      ],
+      "sdCard": {
+        "type": "microSD",
+        "minSpeed": "A1 (A2 Recommended)",
+        "minWriteSpeed": "10 MB/s (Class 10)",
+        "recommendedCapacity": [
+          "32GB",
+          "64GB"
+        ],
+        "maxCapacity": "No official limit"
+      },
+      "whySpecs": "Like all Raspberry Pis, the Pi 4 runs its OS from the microSD card. An 'A1' or 'A2' rated card is crucial for good performance. The A-rating signifies faster random access speeds, which translates to a more responsive desktop experience and faster application launch times.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-ultra-microsd"
+        },
+        {
+          "id": "kingston-canvas-select"
+        },
+        {
+          "id": "samsung-evo-select-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is a V30 card good for a Raspberry Pi 4?",
+          "a": "<b>A V30 rating is not the most important spec. Look for an A1 or A2 rating instead.</b> The V30 rating is for video and doesn't affect OS performance. The Application Performance Class (A1/A2) is what makes the Pi 4 feel fast and responsive."
+        },
+        {
+          "q": "What is the minimum recommended capacity for Raspberry Pi 4?",
+          "a": "<b>A 32GB card is a good minimum for Raspberry Pi OS with a desktop environment.</b> This leaves enough space for installing several applications and for project files. For more complex projects or storing media, 64GB or larger is recommended."
+        }
+      ],
+      "relatedDevices": [
+        "raspberry-pi-5",
+        "raspberry-pi-3-model-b-plus"
+      ],
+      "notes": "Still one of the most popular SBCs in the world. The distinction between video speed (V) and application speed (A) is a key point for users."
+    },
+    {
+      "id": "raspberry-pi-3-model-b-plus",
+      "name": "Raspberry Pi 3 Model B+",
+      "category": "Single-Board Computers",
+      "slug": "raspberry-pi-3-model-b-plus",
+      "searchTerms": [
+        "raspberry pi 3 sd card",
+        "pi 3 microsd",
+        "raspberry pi 3 storage",
+        "pi 3 b+ sd card"
+      ],
+      "sdCard": {
+        "type": "microSD",
+        "minSpeed": "Class 10 / U1 (A1 Recommended)",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "16GB",
+          "32GB"
+        ],
+        "maxCapacity": "No official limit"
+      },
+      "whySpecs": "The Raspberry Pi 3 is less powerful than newer models, but its performance still benefits from a fast card. A Class 10 card is the minimum for a usable experience. An A1-rated card is recommended as it provides a noticeable boost in OS responsiveness, especially when launching applications or booting up.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-ultra-microsd"
+        },
+        {
+          "id": "kingston-canvas-select"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need a fast card for the Raspberry Pi 3?",
+          "a": "<b>Yes, a Class 10 card is the minimum you should use.</b> While the Pi 3 is not as fast as a Pi 4 or 5, using a slow, non-rated card will result in a very sluggish and frustrating user experience. An A1-rated card is the best value for performance."
+        }
+      ],
+      "relatedDevices": [
+        "raspberry-pi-4-model-b",
+        "raspberry-pi-zero-2-w"
+      ],
+      "notes": "An older but still widely used model for many DIY projects. Card requirements are less stringent than for Pi 4/5, but a quality card is still important."
+    },
+    {
+      "id": "raspberry-pi-zero-2-w",
+      "name": "Raspberry Pi Zero 2 W",
+      "category": "Single-Board Computers",
+      "slug": "raspberry-pi-zero-2-w",
+      "searchTerms": [
+        "raspberry pi zero 2 sd card",
+        "pi zero 2 w microsd",
+        "pi zero storage"
+      ],
+      "sdCard": {
+        "type": "microSD",
+        "minSpeed": "Class 10 / U1",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "16GB",
+          "32GB"
+        ],
+        "maxCapacity": "No official limit"
+      },
+      "whySpecs": "The Pi Zero 2 W is used for compact, embedded projects. A reliable Class 10 card is essential for the operating system to run smoothly. Since these projects are often 'headless' (no monitor), card reliability is more important than extreme speed, but a slow card will still impact boot time and script execution.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-ultra-microsd"
+        },
+        {
+          "id": "kingston-canvas-select"
+        }
+      ],
+      "faq": [
+        {
+          "q": "How much storage do I need for a Pi Zero 2 W project?",
+          "a": "<b>For most headless projects, a 16GB card is sufficient.</b> It provides enough space for Raspberry Pi OS Lite and project scripts. If you are running a desktop environment or a project that logs a lot of data, choose a 32GB card."
+        }
+      ],
+      "relatedDevices": [
+        "raspberry-pi-3-model-b-plus",
+        "raspberry-pi-pico"
+      ],
+      "notes": "Extremely popular for small-form-factor projects like Pi-hole or robotics. Card reliability is key for 'set-it-and-forget-it' applications."
     }
   ]
 }

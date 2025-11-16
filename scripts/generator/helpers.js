@@ -94,7 +94,7 @@ function getDeviceImageFallback(device) {
   if (name.includes("nintendo")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
   if (name.includes("asus rog")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
   if (name.includes("amazon fire")) return "/img/devices/computing/tablet-placeholder.webp";
-  if (name.includes("raspberry pi")) return "/img/devices/computing/tablet-placeholder.webp";
+  if (name.includes("raspberry pi")) return "/img/devices/computing/raspberry-placeholder.webp";
   if (name.includes("canon")) return "/img/devices/cameras/canon-placeholder.webp";
   if (name.includes("nikon")) return "/img/devices/cameras/nikon-placeholder.webp";
   if (name.includes("sony")) return "/img/devices/cameras/sony-placeholder.webp";
