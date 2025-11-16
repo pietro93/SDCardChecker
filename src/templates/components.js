@@ -38,11 +38,10 @@ return `<!-- Header -->
       <div class="absolute left-0 top-full pt-2 w-48 hidden group-hover:block">
       <div class="bg-white rounded-lg shadow-lg border border-slate-200">
        <a href="/categories/action-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">Action Cameras</a>
+       <a href="/categories/cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Cameras</a>
        <a href="/categories/computing-and-tablets/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Computing & Tablets</a>
        <a href="/categories/drones/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Drones</a>
-       <a href="/categories/gaming-handhelds/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Gaming Handhelds</a>
-       <a href="/categories/mirrorless-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Mirrorless Cameras</a>
-        <a href="/categories/security-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Security Cameras</a>
+       <a href="/categories/gaming-handhelds/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Gaming Handhelds</a>
         </div>
        </div>
       </div>
@@ -75,11 +74,10 @@ return `<!-- Header -->
     <div class="px-4 py-3 space-y-2">
       <a href="/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Home</a>
       <a href="/categories/action-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Action Cameras</a>
+      <a href="/categories/cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Cameras</a>
       <a href="/categories/computing-and-tablets/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Computing & Tablets</a>
       <a href="/categories/drones/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Drones</a>
       <a href="/categories/gaming-handhelds/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Gaming Handhelds</a>
-      <a href="/categories/mirrorless-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Mirrorless Cameras</a>
-      <a href="/categories/security-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Security Cameras</a>
       <div class="border-t border-slate-300 my-2"></div>
       <a href="/sd-card-guide.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">SD Card Guide</a>
       <a href="/speed-classes.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Speed Classes</a>
@@ -198,13 +196,12 @@ function generateSidebar() {
   <h3 class="text-sm font-semibold text-slate-900 mb-3">Categories</h3>
   <ul class="space-y-2">
   <li><a href="/categories/action-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Action Cameras</a></li>
+  <li><a href="/categories/cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Cameras</a></li>
   <li><a href="/categories/computing-and-tablets/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Computing & Tablets</a></li>
   <li><a href="/categories/drones/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Drones</a></li>
   <li><a href="/categories/gaming-handhelds/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Gaming Handhelds</a></li>
-    <li><a href="/categories/mirrorless-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Mirrorless Cameras</a></li>
-      <li><a href="/categories/security-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Security Cameras</a></li>
      </ul>
-   </div>
+  </div>
 
   <!-- Resource Links -->
   <div class="mb-6 border-t border-slate-200 pt-6">
