@@ -31,8 +31,10 @@
   - CTR patterns (which queries are converting?)
 - **Data collection:**
   - You share daily snapshots or weekly summaries
-  - I maintain documentation for trend analysis
+  - I maintain detailed analysis in **[GSC_ANALYSIS.md](GSC_ANALYSIS.md)**
   - Goal: By end of Nov, identify 3-5 clear expansion opportunities
+
+**📌 Current Status (Nov 15):** 705 impressions, 1 click. Analysis complete - see GSC_ANALYSIS.md
 
 ---
 
@@ -150,6 +152,17 @@ WEEK 13+: Mediavine Application
 - Adding devices randomly
 - Chasing vanity metrics
 - Overthinking the process
+
+---
+
+## 🟡 BACKLOG (Future Opportunities - Monitor Before Acting)
+
+### Brand Category Pages (e.g., "Best SD Cards for GoPro", "Best SD Cards for Nikon")
+- **Status:** Idea phase - monitoring GSC
+- **Trigger to act:** If GSC shows brand-level queries (e.g., "best sd card for gopro", "dji sd card requirements")
+- **Why:** Easy content win if users search by brand instead of device model. Reuses existing dataset.
+- **Current signal:** No brand-level queries in GSC data yet (all queries are device-specific)
+- **Next review:** Nov 22 - check if any brand-level patterns emerging
 
 ---
 

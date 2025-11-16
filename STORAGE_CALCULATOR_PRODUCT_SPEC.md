@@ -228,6 +228,7 @@ All Phase 1 pages are built, tested, and published simultaneously once bitrate d
 ---
 
 ## PHASE 0: LAUNCH IMMEDIATELY (No Device Data Required)
+- make sure to refer to STORAGE_CALCULATOR_PRODUCT_SPEC.md
 
 ### Page 1: "Video Storage Calculator"
 - **URL:** `/tools/video-storage-calculator/`
