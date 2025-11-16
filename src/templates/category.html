@@ -107,40 +107,22 @@
               const categoryName = '{{CATEGORY_NAME}}';
               this.allDevices = data.devices.filter(d => d.category === categoryName);
               
-              // Extract unique brands from recommendedBrands
+              // Extract unique device brands from device names
               const brands = new Set();
               this.allDevices.forEach(device => {
-                if (device.recommendedBrands && Array.isArray(device.recommendedBrands)) {
-                  device.recommendedBrands.forEach(brand => {
-                    // Extract brand name from ID (e.g., "sandisk-extreme" -> "SanDisk")
-                    const brandName = this.extractBrandName(brand.id);
-                    if (brandName) brands.add(brandName);
-                  });
-                }
+                const brand = this.extractDeviceBrand(device.name);
+                if (brand) brands.add(brand);
               });
               this.availableBrands = Array.from(brands).sort();
             })
             .catch(err => console.error('Failed to load devices:', err));
         },
 
-        extractBrandName(brandId) {
-          if (!brandId) return null;
-          // Convert brand ID to display name (e.g., "sandisk-extreme" -> "SanDisk")
-          const brandMap = {
-            'sandisk': 'SanDisk',
-            'lexar': 'Lexar',
-            'kingston': 'Kingston',
-            'samsung': 'Samsung',
-            'transcend': 'Transcend',
-            'pro-grade': 'Pro Grade',
-            'crucial': 'Crucial',
-            'corsair': 'Corsair',
-            'adata': 'ADATA',
-            'western-digital': 'Western Digital',
-          };
-          
-          const prefix = brandId.split('-')[0];
-          return brandMap[prefix] || null;
+        extractDeviceBrand(deviceName) {
+          // Extract manufacturer from device name
+          // "Canon EOS R5" -> "Canon", "Sony A6700" -> "Sony", etc.
+          const parts = deviceName.split(' ');
+          return parts.length > 0 ? parts[0] : null;
         },
 
         filterByBrand() {
@@ -153,16 +135,8 @@
               card.style.display = '';
             } else {
               const deviceName = card.querySelector('.device-card-name')?.textContent || '';
-              const device = this.allDevices.find(d => d.name === deviceName);
-              
-              if (device && device.recommendedBrands) {
-                const hasBrand = device.recommendedBrands.some(brand => {
-                  return this.extractBrandName(brand.id) === this.selectedBrand;
-                });
-                card.style.display = hasBrand ? '' : 'none';
-              } else {
-                card.style.display = 'none';
-              }
+              const brand = this.extractDeviceBrand(deviceName);
+              card.style.display = (brand === this.selectedBrand) ? '' : 'none';
             }
           });
         }
