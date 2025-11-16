@@ -836,6 +836,10 @@ video {
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1534,6 +1538,10 @@ video {
     display: none;
   }
 
+  .md\:w-48 {
+    width: 12rem;
+  }
+
   .md\:w-80 {
     width: 20rem;
   }
@@ -1556,6 +1564,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:p-12 {

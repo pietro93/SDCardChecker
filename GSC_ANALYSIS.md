@@ -1,8 +1,82 @@
 # GSC Analysis & Insights
 
-**Last Updated:** November 15, 2025 (9PM)
-**Data Period:** Nov 11 - Nov 15, 2025  
+**Last Updated:** November 16, 2025
+**Data Period:** Nov 11 - Nov 16, 2025 (5 days since launch)
 **Link:** Referenced in KANBAN_BOARD.md
+
+---
+
+## 📊 Latest Update (Nov 16 - All Time Since Launch)
+
+**Total Search Performance (Cumulative):**
+- **Total Impressions:** 1,693 total across all pages
+- **Total Clicks:** 12 total
+- **Overall CTR:** 0.71%
+
+### Pages with Clicks (Winning Pages)
+| Page | Clicks | Impressions | CTR | Status |
+|------|--------|-------------|-----|--------|
+| Canon EOS R6 Mark II | **2** | 95 | 2.1% | 🟢 BEST CTR |
+| DJI Osmo Pocket 3 | 1 | 332 | 0.3% | 🔴 Most traffic, lowest CTR |
+| Raspberry Pi 5 | 1 | 82 | 1.22% | 🟡 Consistent |
+| Nikon Z8 | 1 | 74 | 1.35% | 🟡 Consistent |
+| Sony FX3 | 1 | 44 | 2.27% | 🟢 Good CTR |
+| Fujifilm X100VI | 1 | 13 | 7.69% | 🟢 Excellent CTR |
+| Miyoo Mini Plus | 1 | 5 | 20% | 🟢 Excellent CTR |
+| Leica Q3-43 | 1 | 4 | 25% | 🟢 Excellent CTR |
+| /about | 1 | 1 | 100% | Referral traffic |
+
+### Pages with HIGH Traffic but 0 Clicks (Problem Areas)
+| Page | Impressions | CTR | Issue |
+|------|-------------|-----|-------|
+| DJI Mini 4 Pro | 171 | 0% | 🔴 2nd highest traffic, zero conversion |
+| Steam Deck | 167 | 0% | 🔴 3rd highest traffic, zero conversion |
+| DJI Osmo Action 4 | 102 | 0% | 🔴 High volume, no CTR |
+| Sony A6700 | 75 | 0% | 🔴 High volume, no CTR |
+
+---
+
+## 🎯 Critical Insights from Page-Level Data
+
+### Pattern #1: Smaller Audience = Better CTR
+**Fujifilm X100VI, Miyoo Mini Plus, Leica Q3-43 show 7-25% CTR**
+- These pages have lower impression volume (4-13 impressions)
+- But they convert at 5-10x the rate of high-volume pages
+- **Hypothesis:** Niche queries are more intent-driven; generic "requirements" queries are less
+
+### Pattern #2: High Volume, Zero Conversion (RED FLAG)
+**DJI Mini 4 Pro (171 impressions, 0%) and Steam Deck (167 impressions, 0%)**
+- These are #2 and #3 highest traffic pages
+- Getting massive organic visibility but ZERO clicks
+- **Root cause likely:** Page content doesn't match search intent well enough
+- These pages need immediate optimization
+
+### Pattern #3: Canon R6 Mark II Success
+**Only page with 2+ clicks (2 clicks from 95 impressions = 2.1%)**
+- This is the highest converting high-volume page
+- What's working on this page that DJI Mini 4 Pro isn't?
+- **Action:** Study Canon R6 Mark II page structure for replication
+
+### Pattern #4: Category Pages Getting Traffic But No Conversions
+- /categories/mirrorless-cameras/ → 0 clicks from 2 impressions
+- /categories/security-cameras/ → 0 clicks from 1 impression
+- /categories/computing-and-tablets/ → 0 clicks from 2 impressions
+- **Note:** These shouldn't be getting traffic since we unified to /categories/cameras/
+- Check if old category pages still being indexed
+
+---
+
+## 🔥 Highest Demand Devices (All Time)
+
+| Device | Primary Query | Impressions | Status |
+|--------|---------------|-------------|--------|
+| DJI Osmo Pocket 3 | "sd card requirements" | 12+ | 🔴 0% CTR, CRITICAL |
+| DJI Mini 4K | "microsd requirements" | 9 | 🟡 Needs attention |
+| DJI Mini 4 Pro | "microsd requirements" | 7-10 | 🔴 0% CTR |
+| DJI Osmo Action 4 | "memory card requirements" | 5 | New focus area |
+| Steam Deck | "microsd specs" | 5-10 | 🔴 0% CTR |
+| Canon R8 | "memory card requirements" | 4 | Emerging |
+| GoPro 13 | "sd card requirements" | 3 | Emerging |
 
 ---
 
@@ -192,19 +266,55 @@ This is our #1 priority. The page is getting visibility but NOT converting searc
 
 ---
 
-## ⚠️ Next Steps
+## ⚠️ Immediate Action Items (Priority Order)
 
-1. **FIX Osmo Pocket 3 page** (highest impact - 20% of traffic)
-2. **Review Mini 4 Pro & Steam Deck** (11% traffic each)
-3. **Wait for re-indexing** (titles changed Nov 15, Google needs 3-7 days to update)
-4. **Study Raspberry Pi 5 page** - document what's working
-5. **Collect more data** - Nov 22 review to see if title changes help
+**CRITICAL (Fix within 24-48 hours):**
+1. **DJI Mini 4 Pro page** (171 impressions, 0% CTR)
+   - Compare structure with Canon R6 Mark II (which converts at 2.1%)
+   - Check: Answer box clarity, spec layout, title matching
+   
+2. **Steam Deck page** (167 impressions, 0% CTR)
+   - Same audit as Mini 4 Pro
+   - Check if microSD-specific page is needed
+
+3. **DJI Osmo Action 4 page** (102 impressions, 0% CTR)
+   - Getting high traffic but zero conversions
+
+**HIGH (This week):**
+4. **Analyze Canon R6 Mark II success** (2.1% CTR, only high-volume converter)
+   - Document page structure/layout that works
+   - Apply learnings to Mini 4 Pro/Steam Deck
+
+5. **Check old category pages** (mirrorless-cameras, security-cameras)
+   - These should redirect or be removed
+   - Currently getting 0% CTR impressions
+
+**RESEARCH:**
+6. **Understand niche page success pattern**
+   - Why does Fujifilm X100VI (7.69% CTR) outperform DJI Mini 4 Pro (0%)?
+   - Query type? Content clarity? Page design?
 
 ---
 
 ## 📅 Next Review Date
 
 **Nov 22** (7 days of post-title-optimization data)
+
+---
+
+## 📝 Page Comparison Framework
+
+To understand why Canon R6 Mark II converts and DJI Mini 4 Pro doesn't:
+
+```html
+Questions to investigate for each page:
+1. Title format - does it match query intent?
+2. First FAQ answer - is it scannable?
+3. "Requirements" section - prominent and clear?
+4. Hero image - does it exist and is it relevant?
+5. Page structure - specs first or buried?
+6. Call-to-action clarity - where to find SD cards?
+```
 
 ---
 
@@ -216,7 +326,18 @@ When you share GSC updates:
 Date: Nov [X]
 Total Impressions: [X]
 Total Clicks: [X]
-New Top Queries: [list any new devices/queries]
-CTR Changes: [any improvements?]
-Notes: [anything unusual?]
+Pages with 0% CTR but 100+ impressions: [list]
+Best CTR performers: [list]
+New/changed rankings: [any?]
+Action taken: [what did we fix?]
 ```
+
+---
+
+## 🎓 Key Learnings So Far
+
+1. **Page-level traffic ≠ clicks** - DJI Mini 4 Pro getting 10x more traffic than Canon R6 Mark II, but zero conversions vs 2 clicks
+2. **Niche products convert better** - Fujifilm X100VI (7.69% CTR) vs DJI products (0%)
+3. **Smaller audience, clearer intent** - 4-13 impression pages have 5-10x better CTR
+4. **One page found the formula** - Canon R6 Mark II is our gold standard (2.1% CTR on high volume)
+5. **Search traffic is real** - 1,693 impressions in 5 days validates product-market fit

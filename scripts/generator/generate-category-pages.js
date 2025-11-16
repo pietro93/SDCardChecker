@@ -26,7 +26,9 @@ function getDeviceImage(device) {
 * Generate device cards for category page
 */
 function generateDeviceCards(devices) {
-return devices
+// Sort devices alphabetically by name
+const sortedDevices = [...devices].sort((a, b) => a.name.localeCompare(b.name));
+return sortedDevices
 .map(
 (device) => {
   const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");

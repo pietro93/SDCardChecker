@@ -62,9 +62,21 @@
       </section>
 
     <!-- Devices Grid -->
-    <section>
-      <h2 class="text-2xl font-bold text-slate-900 mb-8">All {{CATEGORY_NAME}} Devices</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    <section x-data="categoryDevices()" x-init="init()">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
+        <h2 class="text-2xl font-bold text-slate-900">All {{CATEGORY_NAME}} Devices</h2>
+        <!-- Brand Filter -->
+        <div class="w-full md:w-48" x-cloak>
+          <label class="text-sm font-semibold text-slate-600 block mb-2">Filter by Brand:</label>
+          <select x-model="selectedBrand" @change="filterByBrand()" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+            <option value="">All Brands</option>
+            <template x-for="brand in availableBrands" :key="brand">
+              <option :value="brand" x-text="brand"></option>
+            </template>
+          </select>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="deviceGrid">
         {{DEVICE_CARDS_HTML}}
       </div>
     </section>
@@ -76,6 +88,87 @@
   {{FOOTER}}
 
   <script>
+    // Category Devices Filter Component
+    function categoryDevices() {
+      return {
+        selectedBrand: '',
+        availableBrands: [],
+        allDevices: [],
+
+        init() {
+          this.loadDevices();
+        },
+
+        loadDevices() {
+          fetch('/data/devices.json')
+            .then(res => res.json())
+            .then(data => {
+              // Filter devices to only those in this category
+              const categoryName = '{{CATEGORY_NAME}}';
+              this.allDevices = data.devices.filter(d => d.category === categoryName);
+              
+              // Extract unique brands from recommendedBrands
+              const brands = new Set();
+              this.allDevices.forEach(device => {
+                if (device.recommendedBrands && Array.isArray(device.recommendedBrands)) {
+                  device.recommendedBrands.forEach(brand => {
+                    // Extract brand name from ID (e.g., "sandisk-extreme" -> "SanDisk")
+                    const brandName = this.extractBrandName(brand.id);
+                    if (brandName) brands.add(brandName);
+                  });
+                }
+              });
+              this.availableBrands = Array.from(brands).sort();
+            })
+            .catch(err => console.error('Failed to load devices:', err));
+        },
+
+        extractBrandName(brandId) {
+          if (!brandId) return null;
+          // Convert brand ID to display name (e.g., "sandisk-extreme" -> "SanDisk")
+          const brandMap = {
+            'sandisk': 'SanDisk',
+            'lexar': 'Lexar',
+            'kingston': 'Kingston',
+            'samsung': 'Samsung',
+            'transcend': 'Transcend',
+            'pro-grade': 'Pro Grade',
+            'crucial': 'Crucial',
+            'corsair': 'Corsair',
+            'adata': 'ADATA',
+            'western-digital': 'Western Digital',
+          };
+          
+          const prefix = brandId.split('-')[0];
+          return brandMap[prefix] || null;
+        },
+
+        filterByBrand() {
+          const deviceGrid = document.getElementById('deviceGrid');
+          if (!deviceGrid) return;
+          
+          const cards = deviceGrid.querySelectorAll('.device-card');
+          cards.forEach(card => {
+            if (!this.selectedBrand) {
+              card.style.display = '';
+            } else {
+              const deviceName = card.querySelector('.device-card-name')?.textContent || '';
+              const device = this.allDevices.find(d => d.name === deviceName);
+              
+              if (device && device.recommendedBrands) {
+                const hasBrand = device.recommendedBrands.some(brand => {
+                  return this.extractBrandName(brand.id) === this.selectedBrand;
+                });
+                card.style.display = hasBrand ? '' : 'none';
+              } else {
+                card.style.display = 'none';
+              }
+            }
+          });
+        }
+      };
+    }
+
     // Add groupedDevices method to deviceSearch component
     document.addEventListener('alpine:init', () => {
       Alpine.data('deviceSearch', () => ({
