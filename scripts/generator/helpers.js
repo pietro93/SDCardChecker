@@ -81,13 +81,20 @@ function generateFAQSchema(faqItems) {
 /**
  * Get smart fallback image for device based on name/category
  * First tries to find specific device image, then falls back to category/brand placeholders
+ * Always validates that the file exists before returning the path
  */
 function getDeviceImageFallback(device) {
   const name = device.name.toLowerCase();
   const slug = device.slug.toLowerCase();
   const category = device.category.toLowerCase();
 
-  // Try to find device-specific image first
+  // Helper function to check if image file exists
+  function imageExists(imagePath) {
+    const fullPath = path.join(__dirname, "../../img/devices", imagePath.replace("/img/devices/", ""));
+    return fs.existsSync(fullPath);
+  }
+
+  // Try to find device-specific image first (maps slug to actual image file)
   const deviceSpecificImages = {
     "nintendo-switch": "/img/devices/gaming-consoles/nintendo-switch.webp",
     "nintendo-switch-oled": "/img/devices/gaming-consoles/nintendo-switch-oled.webp",
@@ -146,7 +153,7 @@ function getDeviceImageFallback(device) {
     "miyoo-mini-plus": "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp"
   };
 
-  if (deviceSpecificImages[slug]) {
+  if (deviceSpecificImages[slug] && imageExists(deviceSpecificImages[slug])) {
     return deviceSpecificImages[slug];
   }
 
@@ -171,7 +178,7 @@ function getDeviceImageFallback(device) {
   if (category.includes("security camera"))
     return "/img/devices/security-cameras/wyze-cam-v3.webp";
   if (category.includes("camera")) 
-    return "/img/devices/cameras/placeholder.webp";
+    return "/img/devices/cameras/sony-placeholder.webp";
   if (category.includes("drone")) 
     return "/img/devices/drones/drone-placeholder.webp";
   if (category.includes("gaming")) 
