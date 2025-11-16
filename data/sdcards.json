@@ -115,19 +115,20 @@
       "tier": "budget"
     },
     {
-      "id": "lexar-professional-1000x-microsd",
-      "name": "Lexar Professional 1000x",
-      "type": "microSD",
-      "uhs": "UHS-I",
-      "speed": "V30",
-      "writeSpeed": "70 MB/s",
-      "priceEstimate": 38,
-      "priceTier": "Mid-Range",
-      "amazonSearchUrl": "https://amazon.com/s?k=Lexar+1000x+microSD&tag=sd-cc-20",
-      "pros": "Professional quality, excellent performance",
-      "cons": "Premium pricing",
-      "tier": "recommended"
-    },
+       "id": "lexar-professional-1000x-microsd",
+       "name": "Lexar Professional 1000x",
+       "type": "microSD",
+       "uhs": "UHS-I",
+       "speed": "V30",
+       "writeSpeed": "70 MB/s",
+       "priceEstimate": 38,
+       "priceTier": "Mid-Range",
+       "imageUrl": "/img/cards/lexar-professional-1000x.webp",
+       "amazonSearchUrl": "https://amazon.com/s?k=Lexar+1000x+microSD&tag=sd-cc-20",
+       "pros": "Professional quality, excellent performance",
+       "cons": "Premium pricing",
+       "tier": "recommended"
+     },
     {
       "id": "kingston-canvas-go",
       "name": "Kingston Canvas Go!",
