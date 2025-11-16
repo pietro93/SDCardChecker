@@ -80,10 +80,75 @@ function generateFAQSchema(faqItems) {
 
 /**
  * Get smart fallback image for device based on name/category
+ * First tries to find specific device image, then falls back to category/brand placeholders
  */
 function getDeviceImageFallback(device) {
   const name = device.name.toLowerCase();
+  const slug = device.slug.toLowerCase();
   const category = device.category.toLowerCase();
+
+  // Try to find device-specific image first
+  const deviceSpecificImages = {
+    "nintendo-switch": "/img/devices/gaming-consoles/nintendo-switch.webp",
+    "nintendo-switch-oled": "/img/devices/gaming-consoles/nintendo-switch-oled.webp",
+    "nintendo-switch-lite": "/img/devices/gaming-consoles/nintendo-switch.webp",
+    "steam-deck": "/img/devices/gaming-consoles/steam-deck.webp",
+    "asus-rog-ally": "/img/devices/gaming-consoles/asus-rog-ally.webp",
+    "nintendo-3ds": "/img/devices/gaming-consoles/nintendo-3ds.webp",
+    "gopro-hero-13": "/img/devices/action-cameras/gopro-hero-13.webp",
+    "gopro-hero-12": "/img/devices/action-cameras/gopro-hero-12.webp",
+    "gopro-hero-max": "/img/devices/action-cameras/gopro-placeholder.webp",
+    "gopro-hero-11-black": "/img/devices/action-cameras/gopro-placeholder.webp",
+    "insta360-x3": "/img/devices/action-cameras/insta360-x3.webp",
+    "insta360-ace-pro": "/img/devices/action-cameras/insta360-ace-pro.webp",
+    "insta360-go-3": "/img/devices/action-cameras/insta360-go-3.webp",
+    "insta360-one-x2": "/img/devices/action-cameras/insta360-one-x2.webp",
+    "dji-mini-4-pro": "/img/devices/drones/dji-mini-4-pro.webp",
+    "dji-mini-3-pro": "/img/devices/drones/drone-placeholder.webp",
+    "dji-air-3s": "/img/devices/drones/drone-placeholder.webp",
+    "dji-mavic-3": "/img/devices/drones/dji-mavic-3.webp",
+    "dji-osmo-pocket-3": "/img/devices/drones/dji-osmo-pocket-3.webp",
+    "wyze-cam-v3": "/img/devices/security-cameras/wyze-cam-v3.webp",
+    "reolink-e1-pro": "/img/devices/security-cameras/eufy-solocam-s340.webp",
+    "eufy-solocam-s340": "/img/devices/security-cameras/eufy-solocam-s340.webp",
+    "garmin-66s-dash-cam": "/img/devices/security-cameras/eufy-solocam-s340.webp",
+    "canon-eos-r5": "/img/devices/cameras/canon-eos-r5.webp",
+    "canon-eos-r6": "/img/devices/cameras/canon-placeholder.webp",
+    "canon-eos-r6-mark-ii": "/img/devices/cameras/canon-placeholder.webp",
+    "canon-eos-r3": "/img/devices/cameras/canon-placeholder.webp",
+    "canon-eos-r7": "/img/devices/cameras/canon-placeholder.webp",
+    "canon-eos-r100": "/img/devices/cameras/canon-placeholder.webp",
+    "sony-a6700": "/img/devices/cameras/sony-a6700.webp",
+    "sony-a6400": "/img/devices/cameras/sony-placeholder.webp",
+    "sony-a7-iii": "/img/devices/cameras/sony-placeholder.webp",
+    "sony-a7-iv": "/img/devices/cameras/sony-placeholder.webp",
+    "sony-zv-e10": "/img/devices/cameras/sony-placeholder.webp",
+    "sony-fx3": "/img/devices/cameras/sony-fx3.webp",
+    "sony-tough-g-v90": "/img/devices/cameras/sony-placeholder.webp",
+    "fujifilm-x-s20": "/img/devices/cameras/fujifilm-x-s20.webp",
+    "fujifilm-x-s10": "/img/devices/cameras/fujifilm-placeholder.webp",
+    "fujifilm-x-t5": "/img/devices/cameras/fujifilm-placeholder.webp",
+    "fujifilm-x-t4": "/img/devices/cameras/fujifilm-placeholder.webp",
+    "nikon-z6-ii": "/img/devices/cameras/nikon-placeholder.webp",
+    "nikon-z8": "/img/devices/cameras/nikon-z8.webp",
+    "blackmagic-pocket-cinema-camera-4k": "/img/devices/cameras/blackmagic-pocket-cinema-camera-4k.webp",
+    "blackmagic-pocket-cinema-camera-6k-pro": "/img/devices/cameras/blackmagic-pocket-cinema-camera-6k-pro.webp",
+    "raspberry-pi-5": "/img/devices/computing/raspberry-pi-5.webp",
+    "raspberry-pi-4-model-b": "/img/devices/computing/raspberry-placeholder.webp",
+    "raspberry-pi-3-model-b-plus": "/img/devices/computing/raspberry-placeholder.webp",
+    "raspberry-pi-zero-2-w": "/img/devices/computing/raspberry-placeholder.webp",
+    "raspberry-pi-pico": "/img/devices/computing/raspberry-placeholder.webp",
+    "amazon-fire-hd-10": "/img/devices/computing/amazon-fire-hd-10.webp",
+    "amazon-fire-max-11": "/img/devices/computing/amazon-fire-max-11.webp",
+    "lenovo-tab-m10-plus": "/img/devices/computing/tablet-placeholder.webp",
+    "anbernic-rg35xx-plus": "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp",
+    "anbernic-rg353v": "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp",
+    "miyoo-mini-plus": "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp"
+  };
+
+  if (deviceSpecificImages[slug]) {
+    return deviceSpecificImages[slug];
+  }
 
   // Brand-specific placeholders (using only files that actually exist)
   if (name.includes("gopro")) return "/img/devices/action-cameras/gopro-placeholder.webp";
@@ -103,6 +168,8 @@ function getDeviceImageFallback(device) {
   // Category-based placeholders
   if (category.includes("action camera")) 
     return "/img/devices/action-cameras/gopro-placeholder.webp";
+  if (category.includes("security camera"))
+    return "/img/devices/security-cameras/wyze-cam-v3.webp";
   if (category.includes("camera")) 
     return "/img/devices/cameras/placeholder.webp";
   if (category.includes("drone")) 
