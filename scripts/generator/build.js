@@ -12,6 +12,7 @@ const { generateDevicePages } = require("./generate-device-pages");
 const { generateCategoryPages } = require("./generate-category-pages");
 const { generateResourcePages } = require("./generate-resource-pages");
 const { generateCoreFiles } = require("./generate-core-files");
+const { generateRedirects } = require("./generate-redirects");
 
 // Paths
 const dataPath = path.join(__dirname, "../../data/devices.json");
@@ -44,7 +45,11 @@ async function build() {
     await generateResourcePages(distPath);
     console.log();
 
-     // 6. Generate Core Files (Sitemap, robots.txt, etc.)
+    // 6. Generate URL Redirects for SEO migration
+    await generateRedirects(allDevices, distPath);
+    console.log();
+
+     // 7. Generate Core Files (Sitemap, robots.txt, etc.)
      console.log("📝 Generating core files...");
      await generateCoreFiles(allDevices, distPath);
      console.log();

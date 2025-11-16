@@ -25,8 +25,9 @@ function generateSitemap(allDevices, distPath) {
 
   // Add device pages
   allDevices.forEach((device) => {
+    const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
     sitemapXML += `  <url>
-    <loc>https://sdcardchecker.com/devices/${device.slug}/</loc>
+    <loc>https://sdcardchecker.com/categories/${categorySlug}/${device.slug}/</loc>
     <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -192,7 +193,7 @@ const page404Html = `<!DOCTYPE html>
                                 <div>
                                     <div class="search-group-header" x-text="category"></div>
                                     <template x-for="device in groupedDevices()[category]" :key="device.id">
-                                        <a :href="\`/devices/\${device.slug}/\`" class="search-item">
+                                        <a :href="\`/categories/\${$root.getCategorySlug(device.category)}/\${device.slug}/\`" class="search-item">
                                             <div class="search-item-name" x-text="device.name"></div>
                                             <div class="search-item-category" x-text="device.category"></div>
                                         </a>
@@ -274,6 +275,10 @@ const page404Html = `<!DOCTYPE html>
                     if (e.key === 'Escape') {
                         this.open = false;
                     }
+                },
+
+                getCategorySlug(category) {
+                    return category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
                 }
             }));
         });

@@ -28,15 +28,18 @@ function getDeviceImage(device) {
 function generateDeviceCards(devices) {
 return devices
 .map(
-(device) => `
+(device) => {
+  const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
+  return `
 <div class="device-card" style="background-image: url('${getDeviceImage(device)}'); background-size: cover; background-position: center; position: relative;" role="article" aria-label="SD card recommendation for ${device.name}" tabindex="0" onmouseover="this.querySelector('.device-card-overlay').style.opacity='0.95'" onmouseout="this.querySelector('.device-card-overlay').style.opacity='0.85'">
 <div class="device-card-overlay" style="position: absolute; inset: 0; background: rgba(240, 240, 240, 0.85); transition: opacity 0.3s ease;"></div>
-<a href="/devices/${device.slug}/" style="position: relative; z-index: 1; text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; width: 100%; height: 100%;">
+<a href="/categories/${categorySlug}/${device.slug}/" style="position: relative; z-index: 1; text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; width: 100%; height: 100%;">
 <div class="device-card-name" style="color: #2563eb; opacity: 1; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);">${device.name}</div>
 <span class="device-card-link" style="color: #666; opacity: 0.75; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);">View →</span>
 </a>
 </div>
-`
+`;
+}
 )
 .join("");
 }

@@ -161,7 +161,8 @@ function generateAlternatives(device, sdcardsMap) {
  */
 function generateDevicePage(device, template, allDevices, sdcardsMap, deviceIndex = 0) {
     const baseUrl = "https://sdcardchecker.com";
-    const deviceUrl = `${baseUrl}/devices/${device.slug}/`;
+    const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
+    const deviceUrl = `${baseUrl}/categories/${categorySlug}/${device.slug}/`;
 
     // Get brand names from sdcards data for description
     const brandNames = device.recommendedBrands
@@ -213,11 +214,10 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const productSchema = generateProductSchema(device.recommendedBrands, sdcardsMap);
     
     // Generate breadcrumb schema
-    const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
     const breadcrumbs = [
       { name: "Home", url: "/" },
       { name: device.category, url: `/categories/${categorySlug}/` },
-      { name: device.name, url: `/devices/${device.slug}/` }
+      { name: device.name, url: `/categories/${categorySlug}/${device.slug}/` }
     ];
     const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 
@@ -274,7 +274,8 @@ async function generateDevicePages(allDevices, distPath) {
     allDevices.forEach((device, index) => {
         try {
             const deviceHTML = generateDevicePage(device, deviceTemplate, allDevices, sdcardsMap, index);
-            const devicePath = path.join(distPath, "devices", device.slug, "index.html");
+            const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
+            const devicePath = path.join(distPath, "categories", categorySlug, device.slug, "index.html");
             writeFile(devicePath, deviceHTML);
             successCount++;
         } catch (error) {
