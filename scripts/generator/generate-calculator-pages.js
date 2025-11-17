@@ -15,6 +15,9 @@ const srcPath = path.join(__dirname, "../../src");
 function generateCalculatorPage(templatePath, distPath, outputPath) {
     let template = readTemplate(templatePath);
 
+    // Remove YAML frontmatter (---...---)
+    template = template.replace(/^---[\s\S]*?---\n/m, '');
+
     // Replace placeholders
     let html = template
         .replace(/{{SIDEBAR}}/g, generateSidebar())
