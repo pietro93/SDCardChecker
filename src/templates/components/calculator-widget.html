@@ -351,133 +351,135 @@
         </div>
 
         <template x-if="result">
-            <!-- Forward Result Card -->
-            <div x-show="mode === 'forward'" class="space-y-6">
-                <div class="p-6 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-2">You Need:</h3>
-                    <div class="text-4xl font-bold mb-3">
-                        <span x-text="`${result.recommendedCapacity}GB`"></span>
-                        <span class="text-lg ml-2">Minimum</span>
-                    </div>
-                    <p class="text-blue-50">
-                        <span x-text="`${result.totalGB}GB total storage`"></span><br>
-                        <span class="text-sm text-blue-100"
-                            x-text="`(${result.rawGB}GB footage + ${result.overheadGB}GB overhead)`"></span>
-                    </p>
-                </div>
-
-                <div x-show="activeScenario === 'continuous' && forward.continuous.hoursPerDay >= 12"
-                     class="p-4 bg-amber-50 border border-amber-200 rounded text-amber-900 text-sm">
-                    <strong>⚠️ Important:</strong> For extended continuous recording, use <strong>HIGH_ENDURANCE</strong> cards (not speed cards). These are designed for 24/7 use and will last much longer.
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="p-4 border border-gray-300 rounded-lg">
-                        <h4 class="font-bold text-sm text-gray-600 mb-2">Speed Class</h4>
-                        <p class="text-2xl font-bold" x-text="`${result.speedClass}`"></p>
-                        <p class="text-xs text-gray-600">Minimum for this bitrate</p>
-                    </div>
-
-                    <div class="p-4 border border-gray-300 rounded-lg">
-                        <h4 class="font-bold text-sm text-gray-600 mb-2">Min Write Speed</h4>
-                        <p class="text-2xl font-bold" x-text="`${result.minWriteSpeed} MB/s`"></p>
-                        <p class="text-xs text-gray-600">Required write performance</p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <button @click="reset()"
-                        class="px-4 py-2 border border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition h-10">
-                        Calculate Another
-                    </button>
-                    <a :href="`/cards/?speedClass=${result.speedClass}`" target="_blank" rel="noopener noreferrer"
-                        class="px-4 py-2 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition h-10 flex items-center justify-center">
-                        Find Matching Cards ↗
-                    </a>
-                </div>
-            </div>
-
-            <!-- Reverse Result Card -->
-            <div x-show="mode === 'reverse'" class="space-y-6">
-                <div class="p-6 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-2">Your Card Duration:</h3>
-
-                    <!-- Photo Result -->
-                    <div x-show="activeScenario === 'photo'">
+            <div>
+                <!-- Forward Result Card -->
+                <div x-show="mode === 'forward'" class="space-y-6">
+                    <div class="p-6 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-2">You Need:</h3>
                         <div class="text-4xl font-bold mb-3">
-                            <span x-text="`${result.photoCount.toLocaleString()}`"></span>
-                            <span class="text-lg ml-2">Photos</span>
+                            <span x-text="`${result.recommendedCapacity}GB`"></span>
+                            <span class="text-lg ml-2">Minimum</span>
                         </div>
-                        <p class="text-emerald-50">
-                            On your <span x-text="`${reverse.cardCapacityGB}GB`"></span> card
+                        <p class="text-blue-50">
+                            <span x-text="`${result.totalGB}GB total storage`"></span><br>
+                            <span class="text-sm text-blue-100"
+                                x-text="`(${result.rawGB}GB footage + ${result.overheadGB}GB overhead)`"></span>
                         </p>
                     </div>
 
-                    <!-- Video/Continuous Result -->
-                    <div x-show="activeScenario !== 'photo'">
-                        <div class="text-4xl font-bold mb-3" x-text="`${result.recordingTimeString}`"></div>
-                        <p class="text-emerald-50">
-                            <span x-text="`${result.recordingHours} hours total`"></span><br>
-                            <span class="text-sm text-emerald-100">For 24/7 continuous: <span
-                                    x-text="`~${result.daysFor24h} days`"></span></span>
-                        </p>
+                    <div x-show="activeScenario === 'continuous' && forward.continuous.hoursPerDay >= 12"
+                         class="p-4 bg-amber-50 border border-amber-200 rounded text-amber-900 text-sm">
+                        <strong>⚠️ Important:</strong> For extended continuous recording, use <strong>HIGH_ENDURANCE</strong> cards (not speed cards). These are designed for 24/7 use and will last much longer.
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 border border-gray-300 rounded-lg">
+                            <h4 class="font-bold text-sm text-gray-600 mb-2">Speed Class</h4>
+                            <p class="text-2xl font-bold" x-text="`${result.speedClass}`"></p>
+                            <p class="text-xs text-gray-600">Minimum for this bitrate</p>
+                        </div>
+
+                        <div class="p-4 border border-gray-300 rounded-lg">
+                            <h4 class="font-bold text-sm text-gray-600 mb-2">Min Write Speed</h4>
+                            <p class="text-2xl font-bold" x-text="`${result.minWriteSpeed} MB/s`"></p>
+                            <p class="text-xs text-gray-600">Required write performance</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <button @click="reset()"
+                            class="px-4 py-2 border border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition h-10">
+                            Calculate Another
+                        </button>
+                        <a :href="`/cards/?speedClass=${result.speedClass}`" target="_blank" rel="noopener noreferrer"
+                            class="px-4 py-2 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition h-10 flex items-center justify-center">
+                            Find Matching Cards ↗
+                        </a>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="p-4 border border-gray-300 rounded-lg">
-                        <h4 class="font-bold text-sm text-gray-600 mb-2">Speed Class</h4>
-                        <p class="text-2xl font-bold" x-text="`${result.speedClass}`"></p>
+                <!-- Reverse Result Card -->
+                <div x-show="mode === 'reverse'" class="space-y-6">
+                    <div class="p-6 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-2">Your Card Duration:</h3>
+
+                        <!-- Photo Result -->
+                        <div x-show="activeScenario === 'photo'">
+                            <div class="text-4xl font-bold mb-3">
+                                <span x-text="`${result.photoCount.toLocaleString()}`"></span>
+                                <span class="text-lg ml-2">Photos</span>
+                            </div>
+                            <p class="text-emerald-50">
+                                On your <span x-text="`${reverse.cardCapacityGB}GB`"></span> card
+                            </p>
+                        </div>
+
+                        <!-- Video/Continuous Result -->
+                        <div x-show="activeScenario !== 'photo'">
+                            <div class="text-4xl font-bold mb-3" x-text="`${result.recordingTimeString}`"></div>
+                            <p class="text-emerald-50">
+                                <span x-text="`${result.recordingHours} hours total`"></span><br>
+                                <span class="text-sm text-emerald-100">For 24/7 continuous: <span
+                                        x-text="`~${result.daysFor24h} days`"></span></span>
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="p-4 border border-gray-300 rounded-lg">
-                        <h4 class="font-bold text-sm text-gray-600 mb-2">Min Write Speed</h4>
-                        <p class="text-2xl font-bold" x-text="`${result.minWriteSpeed} MB/s`"></p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 border border-gray-300 rounded-lg">
+                            <h4 class="font-bold text-sm text-gray-600 mb-2">Speed Class</h4>
+                            <p class="text-2xl font-bold" x-text="`${result.speedClass}`"></p>
+                        </div>
+
+                        <div class="p-4 border border-gray-300 rounded-lg">
+                            <h4 class="font-bold text-sm text-gray-600 mb-2">Min Write Speed</h4>
+                            <p class="text-2xl font-bold" x-text="`${result.minWriteSpeed} MB/s`"></p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <button @click="reset()"
+                            class="px-4 py-2 border border-emerald-600 text-emerald-600 font-bold rounded-lg hover:bg-emerald-50 transition h-10">
+                            Calculate Another
+                        </button>
+                        <a :href="`/cards/?speedClass=${result.speedClass}`" target="_blank" rel="noopener noreferrer"
+                            class="px-4 py-2 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition h-10 flex items-center justify-center">
+                            Find Matching Cards ↗
+                        </a>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <button @click="reset()"
-                        class="px-4 py-2 border border-emerald-600 text-emerald-600 font-bold rounded-lg hover:bg-emerald-50 transition h-10">
-                        Calculate Another
+                <!-- Speed Class Reference Table -->
+                <div class="mt-6 border border-gray-300 rounded-lg overflow-hidden">
+                    <button type="button" @click="speedClassExpanded = !speedClassExpanded" :aria-expanded="speedClassExpanded"
+                        aria-controls="speed-class-content"
+                        class="w-full cursor-pointer font-bold text-sm py-2 px-4 hover:bg-gray-100 text-left flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition">
+                        <span>📊 Speed Class Reference</span>
+                        <span :class="speedClassExpanded ? 'rotate-180' : ''" class="transition-transform">▼</span>
                     </button>
-                    <a :href="`/cards/?speedClass=${result.speedClass}`" target="_blank" rel="noopener noreferrer"
-                        class="px-4 py-2 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition h-10 flex items-center justify-center">
-                        Find Matching Cards ↗
-                    </a>
-                </div>
-            </div>
 
-            <!-- Speed Class Reference Table -->
-            <div class="mt-6 border border-gray-300 rounded-lg overflow-hidden">
-                <button type="button" @click="speedClassExpanded = !speedClassExpanded" :aria-expanded="speedClassExpanded"
-                    aria-controls="speed-class-content"
-                    class="w-full cursor-pointer font-bold text-sm py-2 px-4 hover:bg-gray-100 text-left flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition">
-                    <span>📊 Speed Class Reference</span>
-                    <span :class="speedClassExpanded ? 'rotate-180' : ''" class="transition-transform">▼</span>
-                </button>
-
-                <div id="speed-class-content" class="p-4 overflow-x-auto" x-show="speedClassExpanded">
-                    <table class="w-full text-sm" role="table">
-                        <thead class="bg-gray-100">
-                            <tr>
-                                <th class="px-4 py-2 text-left">Bitrate Range</th>
-                                <th class="px-4 py-2 text-left">Speed Class</th>
-                                <th class="px-4 py-2 text-left">Write Speed</th>
-                                <th class="px-4 py-2 text-left">Use Case</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <template x-for="row in result.speedClassTable" :key="row.speedClass">
-                                <tr class="border-t">
-                                    <td class="px-4 py-2" x-text="row.bitrateMbps"></td>
-                                    <td class="px-4 py-2 font-bold" x-text="row.speedClass"></td>
-                                    <td class="px-4 py-2" x-text="row.writeSpeed"></td>
-                                    <td class="px-4 py-2 text-gray-600" x-text="row.useCase"></td>
+                    <div id="speed-class-content" class="p-4 overflow-x-auto" x-show="speedClassExpanded">
+                        <table class="w-full text-sm" role="table">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="px-4 py-2 text-left">Bitrate Range</th>
+                                    <th class="px-4 py-2 text-left">Speed Class</th>
+                                    <th class="px-4 py-2 text-left">Write Speed</th>
+                                    <th class="px-4 py-2 text-left">Use Case</th>
                                 </tr>
-                            </template>
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                <template x-for="row in result.speedClassTable" :key="row.speedClass">
+                                    <tr class="border-t">
+                                        <td class="px-4 py-2" x-text="row.bitrateMbps"></td>
+                                        <td class="px-4 py-2 font-bold" x-text="row.speedClass"></td>
+                                        <td class="px-4 py-2" x-text="row.writeSpeed"></td>
+                                        <td class="px-4 py-2 text-gray-600" x-text="row.useCase"></td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </template>
