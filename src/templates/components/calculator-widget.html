@@ -261,7 +261,8 @@
     </div>
 
     <!-- Layer 2: Scenario Details (Reverse) -->
-    <div x-show="currentLayer === 'details' && mode === 'reverse'" class="animate-fade">
+    <div x-show="currentLayer === 'details' && mode === 'reverse'" class="animate-fade" @load="initCardSelector()"
+         x-effect="if (currentLayer === 'details' && mode === 'reverse') { initCardSelector(); }">
         <div class="flex items-center justify-between mb-6">
             <h3 class="text-xl font-bold">
                 I have a card — how long can I record?
@@ -272,43 +273,8 @@
             </button>
         </div>
 
-        <!-- Card Selector -->
-        <div class="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-            <label class="block text-sm font-bold mb-3">📋 Or select a card from our database:</label>
-            <div class="relative">
-                <input type="text" x-model="cardSelectorSearch" @input="filterCardsList()" placeholder="Search by card name, speed class, type..."
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
-                    aria-label="Search cards database" />
-                
-                <template x-if="cardSelectorSearch || cardSelectorOpen">
-                    <div class="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-300 rounded-lg shadow-lg z-50 max-h-64 overflow-y-auto">
-                        <template x-if="filteredCards.length > 0">
-                            <ul role="listbox">
-                                <template x-for="card in filteredCards.slice(0, 10)" :key="card.id">
-                                    <li>
-                                        <button type="button" @click="selectCard(card)" @focus="cardSelectorOpen = true" @blur="cardSelectorOpen = false"
-                                            class="w-full text-left px-4 py-2 hover:bg-blue-50 border-b border-gray-100 focus:outline-none focus:bg-blue-100"
-                                            role="option">
-                                            <div class="font-bold text-sm" x-text="card.name"></div>
-                                            <div class="text-xs text-gray-600">
-                                                <span x-text="`${card.speed} • ${card.writeSpeed}`"></span>
-                                                <span x-show="card.type" x-text="`• ${card.type}`"></span>
-                                            </div>
-                                        </button>
-                                    </li>
-                                </template>
-                            </ul>
-                        </template>
-                        <template x-if="filteredCards.length === 0 && cardSelectorSearch">
-                            <div class="px-4 py-3 text-sm text-gray-500">No cards found</div>
-                        </template>
-                    </div>
-                </template>
-            </div>
-            <p class="text-xs text-gray-600 mt-2">Selecting a card will auto-fill speed class and estimated bitrate.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Manual Input Fields -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div>
                 <label class="block text-sm font-bold mb-2">Card Capacity (GB)</label>
                 <select x-model.number="reverse.cardCapacityGB"
@@ -335,8 +301,41 @@
             </div>
         </div>
 
+        <!-- Card Selector -->
+        <div class="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg" @click.away="cardSelectorOpen = false">
+            <label class="block text-sm font-bold mb-3">📋 Or select a card from our database:</label>
+            <div class="relative">
+                <input type="text" x-model="cardSelectorSearch" @input="filterCardsList()" @click="cardSelectorOpen = true" @focus="cardSelectorOpen = true"
+                    placeholder="Search by card name, speed class, type..."
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+                    aria-label="Search cards database" aria-autocomplete="list" :aria-expanded="cardSelectorOpen" />
+                
+                <div x-show="cardSelectorOpen && allCards.length > 0" class="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-300 rounded-lg shadow-lg z-50 max-h-64 overflow-y-auto">
+                    <div x-show="filteredCards.length > 0">
+                        <ul role="listbox">
+                            <template x-for="card in filteredCards.slice(0, 10)" :key="card.id">
+                                <li>
+                                    <button type="button" @click="selectCard(card)"
+                                        class="w-full text-left px-4 py-2 hover:bg-blue-50 border-b border-gray-100 focus:outline-none focus:bg-blue-100"
+                                        role="option">
+                                        <div class="font-bold text-sm" x-text="card.name"></div>
+                                        <div class="text-xs text-gray-600">
+                                            <span x-text="`${card.speed} • ${card.writeSpeed}`"></span>
+                                            <span x-show="card.type" x-text="`• ${card.type}`"></span>
+                                        </div>
+                                    </button>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                    <div x-show="filteredCards.length === 0 && cardSelectorSearch" class="px-4 py-3 text-sm text-gray-500">No cards found</div>
+                </div>
+            </div>
+            <p class="text-xs text-gray-600 mt-2">Start typing to search, or click to see all cards. Selecting a card will auto-fill bitrate.</p>
+        </div>
+
         <button @click="calculateReverse()" :disabled="!isReverseInputValid()"
-            class="mt-6 w-full px-4 py-3 h-12 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 disabled:opacity-50 disabled:cursor-not-allowed transition">
+            class="w-full px-4 py-3 h-12 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 disabled:opacity-50 disabled:cursor-not-allowed transition">
             Calculate Duration
         </button>
     </div>

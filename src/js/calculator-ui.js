@@ -490,9 +490,14 @@ class CalculatorUI {
        },
 
        /**
-        * Load all cards for selector (on component init)
+        * Load all cards for selector (on component init or reverse layer load)
         */
        async initCardSelector() {
+         // Skip if already loaded
+         if (this.allCards.length > 0) {
+           return;
+         }
+
          if (typeof CardSelector === 'undefined') {
            console.warn('CardSelector module not loaded');
            return;
@@ -501,6 +506,7 @@ class CalculatorUI {
          try {
            this.allCards = await CardSelector.loadCards();
            this.filteredCards = this.allCards;
+           console.log(`Loaded ${this.allCards.length} cards for selector`);
          } catch (error) {
            console.error('Failed to load cards for selector:', error);
          }
@@ -511,11 +517,17 @@ class CalculatorUI {
         */
        filterCardsList() {
          if (typeof CardSelector === 'undefined') {
+           console.warn('CardSelector module not loaded');
+           return;
+         }
+
+         if (this.allCards.length === 0) {
+           console.warn('No cards loaded yet');
            return;
          }
 
          this.filteredCards = CardSelector.searchCards(this.allCards, this.cardSelectorSearch);
-         this.cardSelectorOpen = true;
+         console.log(`Filtered to ${this.filteredCards.length} cards for search: "${this.cardSelectorSearch}"`);
        },
 
        /**
@@ -531,15 +543,18 @@ class CalculatorUI {
          this.selectedCard = specs;
 
          // Auto-fill reverse calculator fields
-         // Set bitrate to estimated value
          if (this.activeScenario === 'photo') {
-           // For photo, we might not need bitrate
+           // For photo, check if card has capacity and potentially update fileSizeMB
+           // but don't override user input if already set
          } else {
+           // For video/continuous, set bitrate to estimated value
            this.reverse.video.bitrateMbps = specs.estimatedBitrateMbps;
          }
 
          // Update search display to show selected card name
          this.cardSelectorSearch = specs.name;
+         
+         // Close dropdown after selection
          this.cardSelectorOpen = false;
 
          // Track event
@@ -549,7 +564,7 @@ class CalculatorUI {
            scenario: this.activeScenario
          });
 
-         console.log('Card selected and fields updated:', specs);
+         console.log('✓ Card selected:', specs);
        }
        };
        }
