@@ -150,24 +150,35 @@ class CalculatorCardRecommendations {
                 const fallbackUrl = this.getCardImageFallback(card);
                 return `
           <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
-            <!-- Card Image -->
-            <div class="aspect-square bg-gray-100 flex items-center justify-center p-3">
+            <!-- Card Image - Clickable -->
+            <a 
+              href="${formatted.amazonUrl}" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="aspect-square bg-gray-100 flex items-center justify-center p-3 block hover:bg-gray-200 transition-colors"
+              title="View on Amazon">
               <img 
                 src="${formatted.imageUrl}" 
                 alt="${formatted.name} ${formatted.speed} SD Card" 
-                class="w-full h-full object-contain"
+                class="w-full h-full object-contain cursor-pointer"
                 loading="lazy"
                 width="180"
                 height="180"
                 onerror="this.src='${fallbackUrl}'"
               />
-            </div>
+            </a>
 
             <!-- Card Details -->
             <div class="p-4">
-              <!-- Brand & Model -->
+              <!-- Brand & Model - Clickable -->
               <h4 class="font-bold text-base text-gray-900 mb-1">
-                ${formatted.name}
+                <a 
+                  href="${formatted.amazonUrl}" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="hover:text-orange-600 transition-colors">
+                  ${formatted.name}
+                </a>
               </h4>
 
               <!-- Specs Grid -->
