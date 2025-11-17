@@ -57,14 +57,14 @@ return `<!-- Favicon -->
       </a>
       <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
       <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-       <a href="/tools/calculators/video-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">Video Storage Calculator</a>
-       <a href="/tools/calculators/photo-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Photo Storage Calculator</a>
-       <a href="/tools/calculators/drone-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Drone Recording Calculator</a>
-       <a href="/tools/calculators/security-camera-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Security Camera Calculator</a>
-       <a href="/tools/calculators/dashcam-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Dashcam Calculator</a>
-       <a href="/tools/calculators/action-camera-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Action Camera Calculator</a>
-       <a href="/tools/calculators/gopro-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">GoPro Calculator</a>
-       <a href="/tools/calculators/timelapse-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Timelapse Calculator</a>
+       <a href="/tools/calculators/video-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">Video Storage & Recording Time</a>
+       <a href="/tools/calculators/photo-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Photo Storage & Capacity</a>
+       <a href="/tools/calculators/drone-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Drone Recording Time & Storage</a>
+       <a href="/tools/calculators/security-camera-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Security Camera Recording Time</a>
+       <a href="/tools/calculators/dashcam-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Dashcam Storage & Loop Time</a>
+       <a href="/tools/calculators/action-camera-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Action Camera Storage & Capacity</a>
+       <a href="/tools/calculators/gopro-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">GoPro Recording Time & Storage</a>
+       <a href="/tools/calculators/timelapse-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Timelapse Storage & Photo Count</a>
        </div>
        </div>
       </div>
@@ -103,14 +103,14 @@ return `<!-- Favicon -->
       <a href="/categories/gaming-handhelds/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Gaming Handhelds</a>
       <a href="/categories/security-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Security Cameras</a>
       <div class="border-t border-slate-300 my-2"></div>
-      <a href="/tools/calculators/video-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Video Storage Calculator</a>
-      <a href="/tools/calculators/photo-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Photo Storage Calculator</a>
-      <a href="/tools/calculators/drone-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Drone Recording Calculator</a>
-      <a href="/tools/calculators/security-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Security Camera Calculator</a>
-      <a href="/tools/calculators/dashcam-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Dashcam Calculator</a>
-      <a href="/tools/calculators/action-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Action Camera Calculator</a>
-      <a href="/tools/calculators/gopro-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">GoPro Calculator</a>
-      <a href="/tools/calculators/timelapse-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Timelapse Calculator</a>
+      <a href="/tools/calculators/video-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Video Storage & Recording Time</a>
+      <a href="/tools/calculators/photo-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Photo Storage & Capacity</a>
+      <a href="/tools/calculators/drone-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Drone Recording Time & Storage</a>
+      <a href="/tools/calculators/security-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Security Camera Recording Time</a>
+      <a href="/tools/calculators/dashcam-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Dashcam Storage & Loop Time</a>
+      <a href="/tools/calculators/action-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Action Camera Storage & Capacity</a>
+      <a href="/tools/calculators/gopro-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">GoPro Recording Time & Storage</a>
+      <a href="/tools/calculators/timelapse-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Timelapse Storage & Photo Count</a>
       <div class="border-t border-slate-300 my-2"></div>
       <a href="/sd-card-guide.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">SD Card Guide</a>
       <a href="/speed-classes.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Speed Classes</a>
@@ -241,14 +241,14 @@ function generateSidebar() {
   <div class="mb-6 border-t border-slate-200 pt-6">
     <h3 class="text-sm font-semibold text-slate-900 mb-3">Calculators</h3>
     <ul class="space-y-2">
-      <li><a href="/tools/calculators/video-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Video Storage Calculator</a></li>
-      <li><a href="/tools/calculators/photo-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Photo Storage Calculator</a></li>
-      <li><a href="/tools/calculators/drone-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Drone Recording Calculator</a></li>
-      <li><a href="/tools/calculators/security-camera-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Security Camera Calculator</a></li>
-      <li><a href="/tools/calculators/dashcam-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Dashcam Calculator</a></li>
-      <li><a href="/tools/calculators/action-camera-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Action Camera Calculator</a></li>
-      <li><a href="/tools/calculators/gopro-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">GoPro Calculator</a></li>
-      <li><a href="/tools/calculators/timelapse-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Timelapse Calculator</a></li>
+      <li><a href="/tools/calculators/video-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Video Storage & Recording Time</a></li>
+      <li><a href="/tools/calculators/photo-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Photo Storage & Capacity</a></li>
+      <li><a href="/tools/calculators/drone-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Drone Recording Time & Storage</a></li>
+      <li><a href="/tools/calculators/security-camera-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Security Camera Recording Time</a></li>
+      <li><a href="/tools/calculators/dashcam-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Dashcam Storage & Loop Time</a></li>
+      <li><a href="/tools/calculators/action-camera-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Action Camera Storage & Capacity</a></li>
+      <li><a href="/tools/calculators/gopro-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">GoPro Recording Time & Storage</a></li>
+      <li><a href="/tools/calculators/timelapse-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Timelapse Storage & Photo Count</a></li>
     </ul>
   </div>
 
