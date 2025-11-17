@@ -97,26 +97,41 @@
 
 #### Content & Copy
 
-- [ ] **Hero Section**
-  - [ ] Title: "Video Storage Calculator — How Much Can You Record?"
-  - [ ] Subtitle (friendly, benefit-focused)
+- ✅ **Hero Section** (COMPLETE)
+  - ✅ Title: "How Much 4K Video Fits On Your SD Card?" (benefit-focused)
+  - ✅ Subtitle: "Calculate Recording Time, Compare Codecs & Get Speed Recommendations"
+  - ✅ Expanded intro: ~250 words covering pain points (dropped frames, buffer overflow, bitrate confusion)
   - [ ] Background image (video camera or filming scene)
   - [ ] Dark overlay gradient (matches brand)
 
-- [ ] **Intro Copy**
-  - [ ] 150–200 words (creator, vlogger angle)
-  - [ ] Value proposition: "Find out if your SD card fits your shoot"
-  - [ ] Call to action: "Calculate now"
+- ✅ **Intro Copy** (COMPLETE)
+  - ✅ ~250 words (videographer angle, real-world consequences)
+  - ✅ Value prop: "Remove guesswork, film with confidence"
 
-- [ ] **FAQ Section (5–7 questions)**
-  - [ ] What is bitrate?
-  - [ ] What resolution should I choose?
-  - [ ] What codec is best for my camera?
-  - [ ] What speed class do I need?
-  - [ ] Why do I need overhead?
-  - [ ] Can I use multiple cards?
-  - [ ] How do I verify my bitrate?
-  - Schema: FAQPage (JSON-LD)
+- ✅ **Why This Matters Section** (COMPLETE)
+  - ✅ "The High Cost of Video Recording Failures" (3 paragraphs)
+  - ✅ Addresses dropped frames, corrupted footage, buffer overflow, bitrate miscalculation
+
+- ✅ **FAQ Section** (COMPLETE - Expanded)
+  - ✅ Q1: H.264 vs H.265 vs ProRes (expanded, ~150 words)
+  - ✅ Q2: Speed class for 4K video (expanded, ~120 words)
+  - ✅ Q3: How to calculate bitrate (expanded, ~150 words, 3 methods)
+  - ✅ Q4: MicroSD support (expanded, ~100 words)
+  - ✅ Q5: UHS-II vs UHS-III (expanded, ~120 words)
+  - ✅ Q6: Overprovision recommendations (expanded, ~150 words)
+  - Schema: FAQPage (JSON-LD) ✅
+
+- [ ] **Related Resources Section** (TODO)
+  - [ ] Link to "SD Card Speed Class Guide" (need to create page)
+  - [ ] Link to "Video Bitrate Comparison Guide" (need to create page)
+  - [ ] Link to related calculators (Photo, Drone, GoPro)
+
+- [ ] **Images & Icons** (TODO)
+  - [ ] Hero section background image (video camera/filming)
+  - [ ] Icon for codec comparison (H.264, H.265, ProRes)
+  - [ ] Icon for speed classes (V30, V60, V90)
+  - [ ] Icon for UHS interface types
+  - [ ] Card recommendation images (with descriptive alt text)
 
 #### Technical & Testing
 
