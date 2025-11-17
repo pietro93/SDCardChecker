@@ -175,23 +175,26 @@ class CalculatorUI {
       /**
        * Perform forward calculation
        */
-      calculate() {
-        try {
-          const input = this._buildForwardInput();
-          this.result = StorageCalculator.calculateForward(input);
-          this.currentLayer = 'results';
-          this.hasCalculated = true;
+       calculate() {
+         try {
+           const input = this._buildForwardInput();
+           this.result = StorageCalculator.calculateForward(input);
+           this.currentLayer = 'results';
+           this.hasCalculated = true;
 
-          // Trigger GA4 event
-          this._trackEvent('calculator_calculate', {
-            scenario: this.activeScenario,
-            mode: 'forward'
-          });
-        } catch (error) {
-          console.error('Calculation error:', error);
-          alert('Calculation error. Please check your inputs.');
-        }
-      },
+           // Load and display card recommendations
+           this._loadAndDisplayCardRecommendations();
+
+           // Trigger GA4 event
+           this._trackEvent('calculator_calculate', {
+             scenario: this.activeScenario,
+             mode: 'forward'
+           });
+         } catch (error) {
+           console.error('Calculation error:', error);
+           alert('Calculation error. Please check your inputs.');
+         }
+       },
 
       /**
        * Perform reverse calculation
@@ -361,27 +364,61 @@ class CalculatorUI {
        * Check if reverse input is valid
        */
       isReverseInputValid() {
-        switch (this.activeScenario) {
-          case 'video':
-          case 'continuous':
-            return this.reverse.cardCapacityGB > 0 && this.reverse.video.bitrateMbps > 0;
-          case 'photo':
-            return this.reverse.cardCapacityGB > 0 && this.reverse.photo.fileSizeMB > 0;
-          default:
-            return false;
-        }
-      }
-    };
-  }
+         switch (this.activeScenario) {
+           case 'video':
+           case 'continuous':
+             return this.reverse.cardCapacityGB > 0 && this.reverse.video.bitrateMbps > 0;
+           case 'photo':
+             return this.reverse.cardCapacityGB > 0 && this.reverse.photo.fileSizeMB > 0;
+           default:
+             return false;
+         }
+       },
 
-  /**
-   * Get preset data for a scenario
-   * @static
-   */
-  static getPresets() {
-    return StorageCalculator.getPresets();
-  }
-}
+       /**
+        * Load cards and display recommendations
+        * @private
+        */
+       _loadAndDisplayCardRecommendations() {
+         if (typeof CardRecommendations === 'undefined') {
+           console.warn('CardRecommendations module not loaded');
+           return;
+         }
+
+         CardRecommendations.loadCards().then(allCards => {
+           const speedClass = this.result.speedClass;
+           const minCapacity = this.result.recommendedCapacity;
+           
+           const recommendations = CardRecommendations.getTopRecommendations(
+             allCards,
+             speedClass,
+             5,
+             minCapacity
+           );
+
+           CardRecommendations.injectRecommendations(recommendations, 'card-recommendations');
+
+           // Track event
+           this._trackEvent('calculator_recommendations_shown', {
+             speedClass: speedClass,
+             minCapacity: minCapacity,
+             cardsShown: recommendations.length
+           });
+         }).catch(error => {
+           console.error('Failed to load card recommendations:', error);
+         });
+       }
+      };
+      }
+
+      /**
+      * Get preset data for a scenario
+      * @static
+      */
+      static getPresets() {
+      return StorageCalculator.getPresets();
+      }
+      }
 
 // Export for module environments
 if (typeof module !== 'undefined' && module.exports) {

@@ -231,7 +231,7 @@ All Phase 1 pages are built, tested, and published simultaneously once bitrate d
 - make sure to refer to STORAGE_CALCULATOR_PRODUCT_SPEC.md
 
 ### Page 1: "Video Storage Calculator"
-- **URL:** `/tools/video-storage-calculator/`
+- **URL:** `/tools/calculator/video-storage-calculator/`
 - **Primary Keyword:** "video storage calculator," "4K video storage," "how much video fits on [capacity]"
 - **Copy Focus:** For content creators, vloggers, videographers
 - **Default Presets:** Video use case (4K 60fps, H.264, 150Mbps)
@@ -241,7 +241,7 @@ All Phase 1 pages are built, tested, and published simultaneously once bitrate d
 - **Status:** ✅ Launch Week 1
 
 ### Page 2: "Photo Storage Calculator"
-- **URL:** `/tools/photo-storage-calculator/`
+- **URL:** `/tools/calculator/photo-storage-calculator/`
 - **Primary Keyword:** "photo storage calculator," "how many photos fit on," "RAW file size calculator"
 - **Copy Focus:** Photographers, burst shooters, RAW enthusiasts
 - **Default Presets:** Photo use case (5MP JPEG, 10fps burst)
@@ -256,8 +256,8 @@ All Phase 1 pages are built, tested, and published simultaneously once bitrate d
 
 Each Phase 1 page includes a device dropdown selector. Pages are built and tested with **placeholder bitrate data**. When real bitrate data is collected (see Section 5A), swap placeholder → real data and publish simultaneously.
 
-### Page 3: "Drone Recording Time Calculator"
-- **URL:** `/tools/drone-recording-calculator/`
+### Page 3: "Drone Storage Calculator"
+- **URL:** `/tools/calculator/drone-storage-calculator/`
 - **Primary Keyword:** "drone recording time calculator," "DJI Mavic storage," "how long can DJI record"
 - **Copy Focus:** Drone pilots, aerial videographers
 - **Default Presets:** Video use case (4K 60fps, optimized for drone bitrates)
@@ -267,7 +267,7 @@ Each Phase 1 page includes a device dropdown selector. Pages are built and teste
 - **Status:** 🟡 Built, awaiting DJI bitrate data
 
 ### Page 4: "GoPro Storage Calculator"
-- **URL:** `/tools/gopro-storage-calculator/`
+- **URL:** `/tools/calculator/gopro-storage-calculator/`
 - **Primary Keyword:** "GoPro storage calculator," "how much video on GoPro," "GoPro Hero 12 storage"
 - **Copy Focus:** Action sports, content creators, vloggers
 - **Default Presets:** GoPro 4K 60fps (~150Mbps)
@@ -277,7 +277,7 @@ Each Phase 1 page includes a device dropdown selector. Pages are built and teste
 - **Status:** 🟡 Built, awaiting GoPro bitrate data
 
 ### Page 5: "Dashcam Storage Calculator"
-- **URL:** `/tools/dashcam-storage-calculator/`
+- **URL:** `/tools/calculator/dashcam-storage-calculator/`
 - **Primary Keyword:** "dashcam storage calculator," "how long can dashcam record," "continuous dashcam recording"
 - **Copy Focus:** Vehicle owners, insurance-conscious drivers
 - **Default Presets:** 1080p continuous recording (~5Mbps), with loop recording mode toggle
@@ -288,7 +288,7 @@ Each Phase 1 page includes a device dropdown selector. Pages are built and teste
 - **Status:** 🟡 Built, awaiting dashcam bitrate data
 
 ### Page 6: "Action Camera Storage Calculator"
-- **URL:** `/tools/action-camera-storage-calculator/`
+- **URL:** `/tools/calculator/action-camera-storage-calculator/`
 - **Primary Keyword:** "action camera storage calculator," "Insta360 storage," "DJI Osmo Action storage"
 - **Copy Focus:** Adventure/sports videographers, creative professionals
 - **Default Presets:** 4K 60fps (~150Mbps), with note on 360° recording mode
@@ -298,8 +298,8 @@ Each Phase 1 page includes a device dropdown selector. Pages are built and teste
 - **Hero Title:** "Action Camera Storage Calculator — 4K, 360°, & Beyond"
 - **Status:** 🟡 Built, awaiting action camera bitrate data
 
-### Page 7: "Surveillance Recording Calculator"
-- **URL:** `/tools/surveillance-storage-calculator/`
+### Page 7: "Surveillance Storage Calculator"
+- **URL:** `/tools/calculator/surveillance-storage-calculator/`
 - **Primary Keyword:** "surveillance storage calculator," "security camera storage," "24/7 recording hours"
 - **Copy Focus:** Security-conscious homeowners, business owners
 - **Default Presets:** 1080p continuous 24/7 recording (~5Mbps), with endurance card recommendations
@@ -310,7 +310,7 @@ Each Phase 1 page includes a device dropdown selector. Pages are built and teste
 - **Status:** 🟡 Built, awaiting surveillance camera bitrate data
 
 ### Page 8: "Timelapse Storage Calculator"
-- **URL:** `/tools/timelapse-calculator/`
+- **URL:** `/tools/calculator/timelapse-storage-calculator/`
 - **Primary Keyword:** "timelapse storage calculator," "24-hour timelapse," "construction timelapse storage"
 - **Copy Focus:** Photographers, architects, nature documentarians
 - **Default Presets:** 1 photo per 2 seconds, 5MP JPEG (~2.5MB per photo)

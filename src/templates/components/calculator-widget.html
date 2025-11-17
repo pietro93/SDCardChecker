@@ -12,28 +12,28 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <button
         @click="selectUseCase('video')"
-        class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition text-center"
+        class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-600 hover:bg-blue-50 transition text-center"
       >
         <div class="text-4xl mb-2">🎥</div>
-        <h4 class="font-bold">Video Recording</h4>
+        <h4 class="font-bold text-lg">Video Recording</h4>
         <p class="text-sm text-gray-600">4K, 1080p, any bitrate</p>
       </button>
 
       <button
         @click="selectUseCase('photo')"
-        class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition text-center"
+        class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-600 hover:bg-blue-50 transition text-center"
       >
         <div class="text-4xl mb-2">📸</div>
-        <h4 class="font-bold">Photo Burst</h4>
+        <h4 class="font-bold text-lg">Photo Burst</h4>
         <p class="text-sm text-gray-600">JPEG, RAW, timelapse</p>
       </button>
 
       <button
         @click="selectUseCase('continuous')"
-        class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition text-center"
+        class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-600 hover:bg-blue-50 transition text-center"
       >
         <div class="text-4xl mb-2">🔴</div>
-        <h4 class="font-bold">Continuous</h4>
+        <h4 class="font-bold text-lg">Continuous</h4>
         <p class="text-sm text-gray-600">24/7, dashcam, surveillance</p>
       </button>
     </div>
@@ -258,7 +258,7 @@
     <button
       @click="calculate()"
       :disabled="!isInputValid()"
-      class="mt-6 w-full px-4 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
+      class="mt-6 w-full px-4 py-3 h-12 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 disabled:opacity-50 disabled:cursor-not-allowed transition"
     >
       Calculate Storage Needed
     </button>
@@ -314,7 +314,7 @@
     <button
       @click="calculateReverse()"
       :disabled="!isReverseInputValid()"
-      class="mt-6 w-full px-4 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
+      class="mt-6 w-full px-4 py-3 h-12 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 disabled:opacity-50 disabled:cursor-not-allowed transition"
     >
       Calculate Duration
     </button>
@@ -334,15 +334,15 @@
     <template x-if="result">
       <!-- Forward Result Card -->
       <div x-show="mode === 'forward'" class="space-y-6">
-        <div class="p-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg">
-          <h3 class="text-2xl font-bold mb-4">You Need:</h3>
-          <div class="text-4xl font-bold mb-2">
+        <div class="p-6 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-2">You Need:</h3>
+          <div class="text-4xl font-bold mb-3">
             <span x-text="`${result.recommendedCapacity}GB`"></span>
-            <span class="text-xl ml-2">Minimum</span>
+            <span class="text-lg ml-2">Minimum</span>
           </div>
-          <p class="text-blue-100">
-            <span x-text="`${result.totalGB}GB total storage`"></span>
-            <span x-text="`(${result.rawGB}GB footage + ${result.overheadGB}GB overhead)`"></span>
+          <p class="text-blue-50">
+            <span x-text="`${result.totalGB}GB total storage`"></span><br>
+            <span class="text-sm text-blue-100" x-text="`(${result.rawGB}GB footage + ${result.overheadGB}GB overhead)`"></span>
           </p>
         </div>
 
@@ -361,25 +361,25 @@
         </div>
 
         <button
-          @click="reset()"
-          class="w-full px-4 py-2 border border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition"
-        >
-          Calculate Another Scenario
-        </button>
-      </div>
+           @click="reset()"
+           class="w-full px-4 py-2 border border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition h-10"
+         >
+           Calculate Another Scenario
+         </button>
+        </div>
 
-      <!-- Reverse Result Card -->
-      <div x-show="mode === 'reverse'" class="space-y-6">
-        <div class="p-6 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg">
-          <h3 class="text-2xl font-bold mb-4">Your Card Duration:</h3>
+        <!-- Reverse Result Card -->
+        <div x-show="mode === 'reverse'" class="space-y-6">
+        <div class="p-6 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-2">Your Card Duration:</h3>
           
           <template x-if="activeScenario === 'photo'">
             <div>
-              <div class="text-4xl font-bold mb-2">
+              <div class="text-4xl font-bold mb-3">
                 <span x-text="`${result.photoCount.toLocaleString()}`"></span>
-                <span class="text-xl ml-2">Photos</span>
+                <span class="text-lg ml-2">Photos</span>
               </div>
-              <p class="text-green-100">
+              <p class="text-emerald-50">
                 On your <span x-text="`${reverse.cardCapacityGB}GB`"></span> card
               </p>
             </div>
@@ -387,12 +387,10 @@
 
           <template x-if="activeScenario !== 'photo'">
             <div>
-              <div class="text-4xl font-bold mb-2" x-text="`${result.recordingTimeString}`"></div>
-              <p class="text-green-100">
-                <span x-text="`${result.recordingHours} hours total`"></span>
-              </p>
-              <p class="text-green-100 text-sm">
-                For 24/7 continuous: <span x-text="`~${result.daysFor24h} days`"></span>
+              <div class="text-4xl font-bold mb-3" x-text="`${result.recordingTimeString}`"></div>
+              <p class="text-emerald-50">
+                <span x-text="`${result.recordingHours} hours total`"></span><br>
+                <span class="text-sm text-emerald-100">For 24/7 continuous: <span x-text="`~${result.daysFor24h} days`"></span></span>
               </p>
             </div>
           </template>
@@ -411,11 +409,11 @@
         </div>
 
         <button
-          @click="reset()"
-          class="w-full px-4 py-2 border border-green-600 text-green-600 font-bold rounded-lg hover:bg-green-50 transition"
-        >
-          Calculate Another Card
-        </button>
+           @click="reset()"
+           class="w-full px-4 py-2 border border-emerald-600 text-emerald-600 font-bold rounded-lg hover:bg-emerald-50 transition h-10"
+         >
+           Calculate Another Card
+         </button>
       </div>
 
       <!-- Speed Class Reference Table -->

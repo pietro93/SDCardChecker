@@ -11,6 +11,7 @@ const { copyAssets } = require("./copy-assets");
 const { generateDevicePages } = require("./generate-device-pages");
 const { generateCategoryPages } = require("./generate-category-pages");
 const { generateResourcePages } = require("./generate-resource-pages");
+const { generateCalculatorPages } = require("./generate-calculator-pages");
 const { generateCoreFiles } = require("./generate-core-files");
 const { generateRedirects } = require("./generate-redirects");
 
@@ -45,11 +46,15 @@ async function build() {
     await generateResourcePages(distPath);
     console.log();
 
-    // 6. Generate URL Redirects for SEO migration
+    // 6. Generate Calculator Pages
+    await generateCalculatorPages(distPath);
+    console.log();
+
+    // 7. Generate URL Redirects for SEO migration
     await generateRedirects(allDevices, distPath);
     console.log();
 
-     // 7. Generate Core Files (Sitemap, robots.txt, etc.)
+     // 8. Generate Core Files (Sitemap, robots.txt, etc.)
      console.log("📝 Generating core files...");
      await generateCoreFiles(allDevices, distPath);
      console.log();

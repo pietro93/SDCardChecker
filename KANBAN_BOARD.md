@@ -82,18 +82,20 @@ When GSC shows demand for a device:
 ### Phase 0: Storage Calculator (Video + Photo)
 - **Owner:** Amp
 - **Timeline:** Week 1 (Nov 17-24)
-- **Status:** 🔴 Core Engine Built
+- **Status:** 🟡 Templates Complete
 - **Progress:**
   - ✅ calculator.js (math engine, all formulas, speed class mapping)
   - ✅ calculator-ui.js (Alpine.js state, form management, results)
-  - 🔄 calculator-widget.html (reusable template, next)
-  - 🔄 Video Storage Calculator page (presets, copy, schema)
-  - 🔄 Photo Storage Calculator page (presets, copy, schema)
-  - ⏳ Testing (form inputs, reverse toggle, mobile UX)
-  - ⏳ GA4 event tracking setup
-  - ⏳ Deployment to /tools/video-storage-calculator/ & /tools/photo-storage-calculator/
+  - ✅ calculator-widget.html (reusable component, all 3 layers + reverse)
+  - ✅ Video Storage Calculator page (Hero, FAQ, schema, copy)
+  - ✅ Photo Storage Calculator page (Hero, FAQ, schema, copy)
+  - 🔄 Testing (form inputs, reverse toggle, mobile UX, GA4)
+  - 🔄 Deployment routing setup
+  - ⏳ Integration with existing card recommendation data
+  - ⏳ Mobile responsiveness check (44px tap targets)
+  - ⏳ Core Web Vitals optimization (LCP, CLS, INP)
 - **Blockers:** None
-- **Next step:** Build calculator-widget.html template, integrate with pages
+- **Next step:** Test full flow, integrate card recommendations, verify GA4 tracking
 
 ---
 
