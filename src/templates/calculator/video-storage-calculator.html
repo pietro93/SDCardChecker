@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col lg:flex-row gap-8">
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
     <main class="flex-1">
       <!-- Hero Section -->
       <div class="mb-8">
@@ -87,70 +87,70 @@
         <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
         
         <div class="space-y-4">
-          <details class="bg-white rounded-lg shadow-sm border border-slate-200 p-6 cursor-pointer group">
-            <summary class="font-bold text-slate-900 text-lg select-none flex items-center justify-between">
+          <div class="faq-item">
+            <div class="faq-question">
               What's the difference between H.264, H.265, and ProRes?
-              <i class="fas fa-chevron-right text-slate-400 group-open:rotate-90 transition-transform"></i>
-            </summary>
-            <div class="mt-4 text-slate-700 space-y-3">
+              <span class="faq-toggle">↓</span>
+            </div>
+            <div class="faq-answer">
               <p><strong>H.264:</strong> The industry standard for video compression. Good quality at manageable file sizes. Compatible with almost all devices.</p>
               <p><strong>H.265 (HEVC):</strong> Newer codec with better compression. Files are 40-50% smaller than H.264 at the same quality. Some older devices may not support it.</p>
               <p><strong>ProRes:</strong> Professional mezzanine codec. Much larger files but superior quality for color grading and post-production. Used in professional workflows.</p>
             </div>
-          </details>
+          </div>
 
-          <details class="bg-white rounded-lg shadow-sm border border-slate-200 p-6 cursor-pointer group">
-            <summary class="font-bold text-slate-900 text-lg select-none flex items-center justify-between">
+          <div class="faq-item">
+            <div class="faq-question">
               What Speed Class do I need for 4K video?
-              <i class="fas fa-chevron-right text-slate-400 group-open:rotate-90 transition-transform"></i>
-            </summary>
-            <div class="mt-4 text-slate-700 space-y-3">
+              <span class="faq-toggle">↓</span>
+            </div>
+            <div class="faq-answer">
               <p><strong>4K 30fps:</strong> V30 minimum. Write speed of 30 MB/s ensures consistent recording without dropped frames.</p>
               <p><strong>4K 60fps:</strong> V60 recommended. Higher frame rate requires faster sustained writes.</p>
               <p><strong>8K or professional:</strong> V90 required. Highest performance for demanding workflows.</p>
             </div>
-          </details>
+          </div>
 
-          <details class="bg-white rounded-lg shadow-sm border border-slate-200 p-6 cursor-pointer group">
-            <summary class="font-bold text-slate-900 text-lg select-none flex items-center justify-between">
+          <div class="faq-item">
+            <div class="faq-question">
               How do I calculate bitrate for my camera?
-              <i class="fas fa-chevron-right text-slate-400 group-open:rotate-90 transition-transform"></i>
-            </summary>
-            <div class="mt-4 text-slate-700 space-y-3">
+              <span class="faq-toggle">↓</span>
+            </div>
+            <div class="faq-answer">
               <p><strong>Check your manual:</strong> Most cameras specify bitrate for each recording mode.</p>
               <p><strong>Test recording:</strong> Record for a known duration, check file size. Divide file size (in MB) by duration (in minutes) × 8 = bitrate in Mbps.</p>
               <p><strong>Use our presets:</strong> Start with our common bitrate presets (150 Mbps for 4K, 50 Mbps for 1080p).</p>
             </div>
-          </details>
+          </div>
 
-          <details class="bg-white rounded-lg shadow-sm border border-slate-200 p-6 cursor-pointer group">
-            <summary class="font-bold text-slate-900 text-lg select-none flex items-center justify-between">
+          <div class="faq-item">
+            <div class="faq-question">
               Can I use microSD cards for video recording?
-              <i class="fas fa-chevron-right text-slate-400 group-open:rotate-90 transition-transform"></i>
-            </summary>
-            <div class="mt-4 text-slate-700 space-y-3">
+              <span class="faq-toggle">↓</span>
+            </div>
+            <div class="faq-answer">
               <p>Yes, if your device supports microSD. Action cameras, drones, and some smartphones use microSD. Performance is identical to full-size SD cards with the same speed class.</p>
             </div>
-          </details>
+          </div>
 
-          <details class="bg-white rounded-lg shadow-sm border border-slate-200 p-6 cursor-pointer group">
-            <summary class="font-bold text-slate-900 text-lg select-none flex items-center justify-between">
+          <div class="faq-item">
+            <div class="faq-question">
               What's the difference between UHS-II and UHS-III?
-              <i class="fas fa-chevron-right text-slate-400 group-open:rotate-90 transition-transform"></i>
-            </summary>
-            <div class="mt-4 text-slate-700 space-y-3">
+              <span class="faq-toggle">↓</span>
+            </div>
+            <div class="faq-answer">
               <p><strong>UHS-II:</strong> Up to 312 MB/s theoretical speed. Supports most 4K workflows.</p>
               <p><strong>UHS-III:</strong> Up to 624 MB/s theoretical speed. Designed for 8K and high-bitrate professional work.</p>
               <p>For most users, UHS-II is sufficient. Your camera determines which you can use.</p>
             </div>
-          </details>
+          </div>
 
-          <details class="bg-white rounded-lg shadow-sm border border-slate-200 p-6 cursor-pointer group">
-            <summary class="font-bold text-slate-900 text-lg select-none flex items-center justify-between">
+          <div class="faq-item">
+            <div class="faq-question">
               How much should I overprovision my card?
-              <i class="fas fa-chevron-right text-slate-400 group-open:rotate-90 transition-transform"></i>
-            </summary>
-            <div class="mt-4 text-slate-700 space-y-3">
+              <span class="faq-toggle">↓</span>
+            </div>
+            <div class="faq-answer">
               <p>We recommend buying cards 20-30% larger than your calculated needs. This provides:</p>
               <ul class="list-disc list-inside space-y-2 ml-2">
                 <li>Headroom for camera firmware and other files</li>
@@ -158,7 +158,7 @@
                 <li>Safety margin against calculation variations</li>
               </ul>
             </div>
-          </details>
+          </div>
         </div>
       </div>
 
@@ -217,5 +217,69 @@
 
   {{FOOTER}}
   {{GROW_SCRIPT}}
+
+  <style>
+    .faq-item {
+      @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow;
+    }
+
+    .faq-question {
+      @apply p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors;
+      min-height: 48px;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .faq-question:active {
+      background-color: rgba(59, 130, 246, 0.05);
+      transition: background-color 0.1s ease;
+    }
+
+    .faq-toggle {
+      @apply text-slate-400 transition-transform duration-300;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .faq-toggle.open {
+      @apply rotate-180;
+    }
+
+    .faq-answer {
+      @apply px-6 pb-6 text-slate-700 leading-relaxed border-t border-slate-200 hidden;
+    }
+
+    .faq-answer.open {
+      @apply block;
+    }
+  </style>
+
+  <script>
+    // Initialize FAQ accordion on load
+    document.addEventListener('DOMContentLoaded', () => {
+      const items = document.querySelectorAll('.faq-item');
+      items.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        const toggle = item.querySelector('.faq-toggle');
+
+        if (question) {
+          question.addEventListener('click', () => {
+            const isOpen = answer.classList.contains('open');
+
+            // Close all others
+            document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+            document.querySelectorAll('.faq-toggle').forEach(t => t.classList.remove('open'));
+
+            // Toggle current
+            if (!isOpen) {
+              answer.classList.add('open');
+              toggle.classList.add('open');
+            }
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
