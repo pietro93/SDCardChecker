@@ -104,10 +104,14 @@
   - ✅ Q6: Overprovision recommendations (expanded, ~150 words)
   - Schema: FAQPage (JSON-LD) ✅
 
-  - [ ] **Integration with sdcards.json dataset**
-   - [ ] Give user option to select a specific card from list instead of inputting data manually
-   - [ ] Selecting card from list should automatically fill input fields based on data
-   - [ ] User shold be able to start typing in name of card to better filter/search dataset
+  - [ ] **Card Recommendations in Results** (REPLACING broken "Find Matching Cards" link)
+   - [ ] Display 3-5 matching cards directly in results (no page navigation)
+   - [ ] Each card shows: brand, model, capacity, speed class, write speed, affiliate links
+   - [ ] Include card images (with fallback placeholder if missing)
+   - [ ] Show Amazon, B&H, other affiliate links (similar to device HTML pages)
+   - [ ] "See all matching cards" link below recommendations (filters by speed class)
+   - [ ] Mobile-responsive grid layout (1-2 cards per row on mobile)
+   - [ ] Use existing CardRecommendations utility but render inline instead of linking away
 
 - [ ] **Related Resources Section** (TODO)
   - [ ] Link to "SD Card Speed Class Guide" (need to create page)

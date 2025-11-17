@@ -390,16 +390,10 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <button @click="reset()"
-                            class="px-4 py-2 border border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition h-10">
-                            Calculate Another
-                        </button>
-                        <a :href="`/cards/?speedClass=${result.speedClass}`" target="_blank" rel="noopener noreferrer"
-                            class="px-4 py-2 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition h-10 flex items-center justify-center">
-                            Find Matching Cards ↗
-                        </a>
-                    </div>
+                    <button @click="reset()"
+                        class="w-full px-4 py-2 border border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition h-10">
+                        ← Calculate Another
+                    </button>
                 </div>
 
                 <!-- Reverse Result Card -->
@@ -484,6 +478,11 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
+
+                <!-- Card Recommendations Section -->
+                <div id="calculator-recommendations" class="mt-8 p-6 bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg border border-orange-200">
+                    <div class="animate-pulse text-center text-gray-600">Loading recommendations...</div>
                 </div>
             </div>
         </template>

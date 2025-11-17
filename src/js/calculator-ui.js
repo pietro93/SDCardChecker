@@ -262,6 +262,9 @@ class CalculatorUI {
           this.currentLayer = 'results';
           this.hasCalculated = true;
 
+          // Load and display card recommendations
+          this._loadAndDisplayCardRecommendations();
+
           this._trackEvent('calculator_calculate', {
             scenario: this.activeScenario,
             mode: 'reverse'
@@ -456,38 +459,34 @@ class CalculatorUI {
        },
 
        /**
-        * Load cards and display recommendations
-        * @private
-        */
-       _loadAndDisplayCardRecommendations() {
-         if (typeof CardRecommendations === 'undefined') {
-           console.warn('CardRecommendations module not loaded');
-           return;
-         }
+         * Load and display card recommendations after calculation
+         * Uses CalculatorCardRecommendations for inline display
+         * @private
+         */
+        async _loadAndDisplayCardRecommendations() {
+          if (typeof CalculatorCardRecommendations === 'undefined') {
+            console.warn('CalculatorCardRecommendations module not loaded');
+            return;
+          }
 
-         CardRecommendations.loadCards().then(allCards => {
-           const speedClass = this.result.speedClass;
-           const minCapacity = this.result.recommendedCapacity;
-           
-           const recommendations = CardRecommendations.getTopRecommendations(
-             allCards,
-             speedClass,
-             5,
-             minCapacity
-           );
+          try {
+            const speedClass = this.result.speedClass;
+            
+            // Display recommendations in the results section
+            await CalculatorCardRecommendations.displayRecommendations(
+              speedClass,
+              'calculator-recommendations'
+            );
 
-           CardRecommendations.injectRecommendations(recommendations, 'card-recommendations');
-
-           // Track event
-           this._trackEvent('calculator_recommendations_shown', {
-             speedClass: speedClass,
-             minCapacity: minCapacity,
-             cardsShown: recommendations.length
-           });
-         }).catch(error => {
-           console.error('Failed to load card recommendations:', error);
-         });
-       },
+            // Track event
+            this._trackEvent('calculator_recommendations_shown', {
+              speedClass: speedClass,
+              scenario: this.activeScenario
+            });
+          } catch (error) {
+            console.error('Failed to load card recommendations:', error);
+          }
+        },
 
        /**
         * Load all cards for selector (on component init or reverse layer load)
