@@ -37,6 +37,7 @@
 
   <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
     <main class="flex-1">
+      <!-- Hero Section -->
       <div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative">
         <img src="/img/calculator/video-storage.webp" alt="Video recording footage quality comparison" class="w-full object-cover hero-image" width="1200" height="350" loading="lazy" />
         <div class="hero-overlay">
@@ -50,7 +51,7 @@
           </div>
         </div>
       </div>
-      <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
           Dropped frames, corrupted footage, and failed recordings are photographer and videographer nightmares—and they often happen because of the wrong card. This calculator helps you plan every shoot with confidence by showing exactly how long you can record on your SD card based on resolution, bitrate, and codec.
         </p>
         <p class="text-lg text-slate-600 mb-6 leading-relaxed">
@@ -78,10 +79,9 @@
               <h4 class="font-bold text-slate-900 mb-1">Speed Class Match</h4>
               <p class="text-slate-600 text-sm">Automatic recommendations</p>
             </div>
-          </div>
-          </div>
+            </div>
 
-          <!-- Calculator Widget -->
+            <!-- Calculator Widget -->
       <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
         <div class="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
           <p class="text-sm text-slate-700"><strong>Quick note:</strong> Bitrate is measured in Mbps (megabits per second). Write speed is measured in MB/s (megabytes per second). To convert: 1 MB/s = 8 Mbps.</p>
@@ -277,43 +277,6 @@
   {{GROW_SCRIPT}}
 
   <style>
-    /* Hero Image with Overlay Title */
-    .hero-image-container {
-      position: relative;
-    }
-
-    .hero-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
-    }
-
-    .hero-title-wrapper {
-      text-align: center;
-    }
-
-    .hero-title {
-      @apply text-3xl md:text-4xl font-bold text-center px-4;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero-subtitle {
-      @apply text-lg md:text-xl text-center px-4;
-    }
-
-    .hero-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
     .faq-item {
       @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow;
     }
