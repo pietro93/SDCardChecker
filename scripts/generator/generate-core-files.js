@@ -171,6 +171,7 @@ const page404Html = `<!DOCTYPE html>
     <link rel="stylesheet" href="/assets/css/tailwind.css">
     <link rel="stylesheet" href="/assets/css/modern.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="/assets/js/device-search.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     {{GROW_SCRIPT}}
 </head>
@@ -225,71 +226,6 @@ const page404Html = `<!DOCTYPE html>
     </section>
 
     {{FOOTER}}
-
-    <script>
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('deviceSearch', () => ({
-                query: '',
-                allDevices: [],
-                filtered: [],
-                open: false,
-
-                init() {
-                    this.loadDevices();
-                },
-
-                loadDevices() {
-                    fetch('/data/devices.json')
-                        .then(res => res.json())
-                        .then(data => {
-                            this.allDevices = data.devices;
-                            this.filtered = this.allDevices.slice(0, 30);
-                        })
-                        .catch(err => console.error('Failed to load devices:', err));
-                },
-
-                filterDevices() {
-                    const q = this.query.toLowerCase();
-                    if (!q) {
-                        this.filtered = this.allDevices.slice(0, 30);
-                        return;
-                    }
-
-                    this.filtered = this.allDevices.filter(device =>
-                        device.name.toLowerCase().includes(q) ||
-                        device.category.toLowerCase().includes(q) ||
-                        (device.searchTerms && device.searchTerms.some(term =>
-                            term.toLowerCase().includes(q)
-                        ))
-                    );
-                },
-
-                groupedDevices() {
-                    const grouped = {};
-                    this.filtered.forEach(device => {
-                        if (!grouped[device.category]) {
-                            grouped[device.category] = [];
-                        }
-                        grouped[device.category].push(device);
-                    });
-                    return Object.keys(grouped).sort().reduce((acc, key) => {
-                        acc[key] = grouped[key];
-                        return acc;
-                    }, {});
-                },
-
-                handleKeydown(e) {
-                    if (e.key === 'Escape') {
-                        this.open = false;
-                    }
-                },
-
-                getCategorySlug(category) {
-                    return category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
-                }
-            }));
-        });
-    </script>
 </body>
 
 </html>`;
