@@ -5,590 +5,592 @@
  */
 
 class CalculatorUI {
-  /**
-   * Initialize calculator state object for Alpine.js
-   * @param {Object} options - Configuration options
-   * @returns {Object} Alpine.js data object
-   */
-  static init(options = {}) {
-    return {
-      // UI State
-      mode: 'forward', // 'forward' or 'reverse'
-      currentLayer: 'usecase', // 'usecase', 'details', 'results'
-      activeScenario: options.defaultScenario || 'video', // 'video', 'photo', 'continuous'
+    /**
+     * Initialize calculator state object for Alpine.js
+     * @param {Object} options - Configuration options
+     * @returns {Object} Alpine.js data object
+     */
+    static init(options = {}) {
+        return {
+            // UI State
+            mode: 'forward', // 'forward' or 'reverse'
+            currentLayer: 'usecase', // 'usecase', 'details', 'results'
+            activeScenario: options.defaultScenario || 'video', // 'video', 'photo', 'continuous'
 
-      // Use Case Presets
-      scenarios: {
-        video: { name: 'Video Recording', icon: '🎥' },
-        photo: { name: 'Photo Burst/Timelapse', icon: '📸' },
-        continuous: { name: 'Continuous Recording', icon: '🔴' }
-      },
+            // Use Case Presets
+            scenarios: {
+                video: { name: 'Video Recording', icon: '🎥' },
+                photo: { name: 'Photo Burst/Timelapse', icon: '📸' },
+                continuous: { name: 'Continuous Recording', icon: '🔴' }
+            },
 
-      // Forward Calculation Form
-      forward: {
-        scenario: options.defaultScenario || 'video',
-        
-        // Video inputs
-        video: {
-          resolution: '4K',
-          fps: 60,
-          codec: 'H.264',
-          bitrateMbps: 150,
-          durationHours: 2,
-          durationMinutes: 0
-        },
+            // Forward Calculation Form
+            forward: {
+                scenario: options.defaultScenario || 'video',
 
-        // Photo inputs
-        photo: {
-          photoCount: 1000,
-          fileSizeMB: 2.5, // 5MP JPEG default
-          isRaw: false,
-          rawToggleOptions: {
-            jpeg5mp: 2.5,
-            jpeg20mp: 8,
-            raw20mp: 30,
-            raw45mp: 65
-          }
-        },
+                // Video inputs
+                video: {
+                    resolution: '4K',
+                    fps: 60,
+                    codec: 'H.264',
+                    bitrateMbps: 150,
+                    durationHours: 2,
+                    durationMinutes: 0
+                },
 
-        // Continuous inputs
-        continuous: {
-          bitrateMbps: 5, // 1080p default
-          hoursPerDay: 24,
-          daysNeeded: 7
-        },
+                // Photo inputs
+                photo: {
+                    photoCount: 1000,
+                    fileSizeMB: 2.5, // 5MP JPEG default
+                    isRaw: false,
+                    rawToggleOptions: {
+                        jpeg5mp: 2.5,
+                        jpeg20mp: 8,
+                        raw20mp: 30,
+                        raw45mp: 65
+                    }
+                },
 
-        // Advanced options
-        overheadPercent: 10,
-        overheadMin: 5,
-        overheadMax: 25,
-        compareFormats: false
-      },
+                // Continuous inputs
+                continuous: {
+                    bitrateMbps: 5, // 1080p default
+                    hoursPerDay: 24,
+                    daysNeeded: 7
+                },
 
-      // Reverse Calculation Form
-      reverse: {
-        scenario: options.defaultScenario || 'video',
-        cardCapacityGB: 128,
-        cardCapacityOptions: [32, 64, 128, 256, 512],
+                // Advanced options
+                overheadPercent: 10,
+                overheadMin: 5,
+                overheadMax: 25,
+                compareFormats: false
+            },
 
-        // Video/continuous reverse
-        video: {
-          bitrateMbps: 150
-        },
+            // Reverse Calculation Form
+            reverse: {
+                scenario: options.defaultScenario || 'video',
+                cardCapacityGB: 128,
+                cardCapacityOptions: [32, 64, 128, 256, 512],
 
-        // Photo reverse
-        photo: {
-          fileSizeMB: 2.5
-        },
+                // Video/continuous reverse
+                video: {
+                    bitrateMbps: 150
+                },
 
-        overheadPercent: 10
-      },
+                // Photo reverse
+                photo: {
+                    fileSizeMB: 2.5
+                },
 
-      // Device Selector (Phase 1)
-      deviceSelector: {
-        enabled: options.deviceSelectorEnabled || false,
-        selectedDeviceId: null,
-        devices: options.devices || [],
-        selectedDeviceData: null
-      },
+                overheadPercent: 10
+            },
 
-      // Card Selector (for reverse mode)
-      cardSelectorSearch: '',
-      cardSelectorOpen: false,
-      allCards: [],
-      filteredCards: [],
-      selectedCard: null,
+            // Device Selector (Phase 1)
+            deviceSelector: {
+                enabled: options.deviceSelectorEnabled || false,
+                selectedDeviceId: null,
+                devices: options.devices || [],
+                selectedDeviceData: null
+            },
 
-      // Calculation Results
-       result: null,
-       hasCalculated: false,
-       showDefaultResult: true, // Show pre-calculated result on page load
+            // Card Selector (for reverse mode)
+            cardSelectorSearch: '',
+            cardSelectorOpen: false,
+            allCards: [],
+            filteredCards: [],
+            selectedCard: null,
 
-       // UI State
-       advancedExpanded: false,
-       speedClassExpanded: false,
+            // Calculation Results
+            result: null,
+            hasCalculated: false,
+            showDefaultResult: true, // Show pre-calculated result on page load
 
-       // UI Helpers
-       readonly: {
-         resolutions: ['1080p', '2K', '4K', '6K'],
-         fpsOptions: [24, 30, 60, 120],
-         codecOptions: ['H.264', 'H.265', 'ProRes'],
-         cardCapacities: [32, 64, 128, 256, 512]
-       },
+            // UI State
+            advancedExpanded: false,
+            speedClassExpanded: false,
 
-      /**
-       * Validate numeric input with range checking
-       * @private
-       */
-      validateNumericInput(event, min, max) {
-        const input = event.target;
-        const value = parseFloat(input.value);
-        
-        if (isNaN(value)) {
-          input.classList.add('border-red-500');
-          return false;
-        }
-        
-        if (min !== undefined && value < min) {
-          input.value = min;
-        }
-        
-        if (max !== undefined && value > max) {
-          input.value = max;
-        }
-        
-        input.classList.remove('border-red-500');
-        return true;
-      },
+            // UI Helpers
+            readonly: {
+                resolutions: ['1080p', '2K', '4K', '6K'],
+                fpsOptions: [24, 30, 60, 120],
+                codecOptions: ['H.264', 'H.265', 'ProRes'],
+                cardCapacities: [32, 64, 128, 256, 512]
+            },
 
-      /**
-       * Select use case and move to details layer
-       */
-      selectUseCase(scenario) {
-        this.activeScenario = scenario;
-        this.forward.scenario = scenario;
-        this.reverse.scenario = scenario;
-        this.currentLayer = 'details';
-      },
+            /**
+             * Validate numeric input with range checking
+             * @private
+             */
+            validateNumericInput(event, min, max) {
+                const input = event.target;
+                const value = parseFloat(input.value);
 
-      /**
-       * Toggle between forward and reverse modes
-       */
-      toggleMode() {
-        this.mode = this.mode === 'forward' ? 'reverse' : 'forward';
-        this.currentLayer = 'details';
-        this.result = null;
-        this.hasCalculated = false;
-      },
+                if (isNaN(value)) {
+                    input.classList.add('border-red-500');
+                    return false;
+                }
 
-      /**
-       * Select device and auto-fill bitrates (Phase 1)
-       */
-      selectDevice(deviceId) {
-        if (!this.deviceSelector.devices) return;
+                if (min !== undefined && value < min) {
+                    input.value = min;
+                }
 
-        const device = this.deviceSelector.devices.find(d => d.id === deviceId);
-        if (!device) return;
+                if (max !== undefined && value > max) {
+                    input.value = max;
+                }
 
-        this.deviceSelector.selectedDeviceId = deviceId;
-        this.deviceSelector.selectedDeviceData = device;
+                input.classList.remove('border-red-500');
+                return true;
+            },
 
-        // Auto-fill form based on device presets
-        if (device.recordingModes && device.recordingModes.length > 0) {
-          const defaultMode = device.recordingModes.find(m => m.isDefault) || device.recordingModes[0];
+            /**
+             * Select use case and move to details layer
+             */
+            selectUseCase(scenario) {
+                this.activeScenario = scenario;
+                this.forward.scenario = scenario;
+                this.reverse.scenario = scenario;
+                this.currentLayer = 'details';
+            },
 
-          if (this.mode === 'forward') {
-            this.forward.video.bitrateMbps = defaultMode.bitrateMbps;
-            this.forward.video.fps = defaultMode.fps;
-            this.forward.video.resolution = defaultMode.resolution;
-            this.forward.video.codec = defaultMode.codec;
-          } else {
-            this.reverse.video.bitrateMbps = defaultMode.bitrateMbps;
-          }
-        }
-      },
+            /**
+             * Toggle between forward and reverse modes
+             */
+            toggleMode() {
+                this.mode = this.mode === 'forward' ? 'reverse' : 'forward';
+                this.currentLayer = 'details';
+                this.result = null;
+                this.hasCalculated = false;
+            },
 
-      /**
-       * Toggle RAW for photo mode
-       */
-      toggleRaw() {
-        this.forward.photo.isRaw = !this.forward.photo.isRaw;
-        
-        // Update file size based on RAW toggle
-        if (this.forward.photo.isRaw) {
-          this.forward.photo.fileSizeMB = 30; // RAW 20MP default
-        } else {
-          this.forward.photo.fileSizeMB = 2.5; // JPEG 5MP default
-        }
-      },
+            /**
+             * Select device and auto-fill bitrates (Phase 1)
+             */
+            selectDevice(deviceId) {
+                if (!this.deviceSelector.devices) return;
 
-      /**
-       * Update photo file size from preset
-       */
-      updatePhotoFileSize(preset) {
-        this.forward.photo.fileSizeMB = this.forward.photo.rawToggleOptions[preset];
-      },
+                const device = this.deviceSelector.devices.find(d => d.id === deviceId);
+                if (!device) return;
 
-      /**
-       * Perform forward calculation
-       */
-       calculate() {
-         try {
-           const input = this._buildForwardInput();
-           
-           // Validate numeric fields to prevent NaN errors
-           const numericFields = Object.entries(input).filter(([key]) => key !== 'scenario');
-           if (numericFields.some(([, val]) => isNaN(val) || val === '')) {
-             alert('Invalid input. Please enter valid numbers.');
-             return;
-           }
-           
-           this.result = StorageCalculator.calculateForward(input);
-           this.currentLayer = 'results';
-           this.hasCalculated = true;
+                this.deviceSelector.selectedDeviceId = deviceId;
+                this.deviceSelector.selectedDeviceData = device;
 
-           // Load and display card recommendations
-           this._loadAndDisplayCardRecommendations();
+                // Auto-fill form based on device presets
+                if (device.recordingModes && device.recordingModes.length > 0) {
+                    const defaultMode = device.recordingModes.find(m => m.isDefault) || device.recordingModes[0];
 
-           // Trigger GA4 event
-           this._trackEvent('calculator_calculate', {
-             scenario: this.activeScenario,
-             mode: 'forward'
-           });
-         } catch (error) {
-           console.error('Calculation error:', error);
-           alert('Calculation error. Please check your inputs.');
-         }
-       },
+                    if (this.mode === 'forward') {
+                        this.forward.video.bitrateMbps = defaultMode.bitrateMbps;
+                        this.forward.video.fps = defaultMode.fps;
+                        this.forward.video.resolution = defaultMode.resolution;
+                        this.forward.video.codec = defaultMode.codec;
+                    } else {
+                        this.reverse.video.bitrateMbps = defaultMode.bitrateMbps;
+                    }
+                }
+            },
 
-      /**
-       * Perform reverse calculation
-       */
-      calculateReverse() {
-        try {
-          const input = this._buildReverseInput();
-          console.log('Reverse input:', input);
-          
-          // Validate numeric fields to prevent NaN errors
-          const numericFields = Object.entries(input).filter(([key]) => key !== 'scenario');
-          if (numericFields.some(([, val]) => isNaN(val) || val === '')) {
-            console.warn('Invalid numeric fields:', numericFields.filter(([, val]) => isNaN(val) || val === ''));
-            alert('Invalid input. Please enter valid numbers.');
-            return;
-          }
-          
-          this.result = StorageCalculator.calculateReverse(input);
-          console.log('Reverse result:', this.result);
-          this.currentLayer = 'results';
-          this.hasCalculated = true;
+            /**
+             * Toggle RAW for photo mode
+             */
+            toggleRaw() {
+                this.forward.photo.isRaw = !this.forward.photo.isRaw;
 
-          // Load and display card recommendations
-          this._loadAndDisplayCardRecommendations();
+                // Update file size based on RAW toggle
+                if (this.forward.photo.isRaw) {
+                    this.forward.photo.fileSizeMB = 30; // RAW 20MP default
+                } else {
+                    this.forward.photo.fileSizeMB = 2.5; // JPEG 5MP default
+                }
+            },
 
-          this._trackEvent('calculator_calculate', {
-            scenario: this.activeScenario,
-            mode: 'reverse'
-          });
-        } catch (error) {
-          console.error('Calculation error:', error);
-          alert('Calculation error. Please check your inputs.');
-        }
-      },
+            /**
+             * Update photo file size from preset
+             */
+            updatePhotoFileSize(preset) {
+                this.forward.photo.fileSizeMB = this.forward.photo.rawToggleOptions[preset];
+            },
 
-      /**
-       * Build input object for forward calculation
-       * @private
-       */
-      _buildForwardInput() {
-        const base = {
-          scenario: this.activeScenario,
-          overheadPercent: this.forward.overheadPercent
+            /**
+             * Perform forward calculation
+             */
+            calculate() {
+                try {
+                    const input = this._buildForwardInput();
+
+                    // Validate numeric fields to prevent NaN errors
+                    const numericFields = Object.entries(input).filter(([key]) => key !== 'scenario');
+                    if (numericFields.some(([, val]) => isNaN(val) || val === '')) {
+                        alert('Invalid input. Please enter valid numbers.');
+                        return;
+                    }
+
+                    this.result = StorageCalculator.calculateForward(input);
+                    this.currentLayer = 'results';
+                    this.hasCalculated = true;
+
+                    // Load and display card recommendations
+                    this._loadAndDisplayCardRecommendations();
+
+                    // Trigger GA4 event
+                    this._trackEvent('calculator_calculate', {
+                        scenario: this.activeScenario,
+                        mode: 'forward'
+                    });
+                } catch (error) {
+                    console.error('Calculation error:', error);
+                    alert('Calculation error. Please check your inputs.');
+                }
+            },
+
+            /**
+             * Perform reverse calculation
+             */
+            calculateReverse() {
+                try {
+                    const input = this._buildReverseInput();
+                    console.log('Reverse input:', input);
+
+                    // Validate numeric fields to prevent NaN errors
+                    const numericFields = Object.entries(input).filter(([key]) => key !== 'scenario');
+                    if (numericFields.some(([, val]) => isNaN(val) || val === '')) {
+                        console.warn('Invalid numeric fields:', numericFields.filter(([, val]) => isNaN(val) || val === ''));
+                        alert('Invalid input. Please enter valid numbers.');
+                        return;
+                    }
+
+                    this.result = StorageCalculator.calculateReverse(input);
+                    console.log('Reverse result:', this.result);
+                    this.currentLayer = 'results';
+                    this.hasCalculated = true;
+
+                    // Load and display card recommendations
+                    this._loadAndDisplayCardRecommendations();
+
+                    this._trackEvent('calculator_calculate', {
+                        scenario: this.activeScenario,
+                        mode: 'reverse'
+                    });
+                } catch (error) {
+                    console.error('Calculation error:', error);
+                    alert('Calculation error. Please check your inputs.');
+                }
+            },
+
+            /**
+             * Build input object for forward calculation
+             * @private
+             */
+            _buildForwardInput() {
+                const base = {
+                    scenario: this.activeScenario,
+                    overheadPercent: this.forward.overheadPercent
+                };
+
+                switch (this.activeScenario) {
+                    case 'video':
+                        return {
+                            ...base,
+                            bitrateMbps: parseFloat(this.forward.video.bitrateMbps),
+                            durationHours: parseFloat(this.forward.video.durationHours) + parseFloat(this.forward.video.durationMinutes) / 60
+                        };
+
+                    case 'photo':
+                        return {
+                            ...base,
+                            photoCount: parseInt(this.forward.photo.photoCount),
+                            fileSizeMB: parseFloat(this.forward.photo.fileSizeMB),
+                            shootingStyle: this.forward.photo.shootingStyle
+                        };
+
+                    case 'continuous':
+                        return {
+                            ...base,
+                            bitrateMbps: parseFloat(this.forward.continuous.bitrateMbps),
+                            hoursPerDay: parseFloat(this.forward.continuous.hoursPerDay),
+                            daysNeeded: parseFloat(this.forward.continuous.daysNeeded)
+                        };
+
+                    default:
+                        throw new Error(`Unknown scenario: ${this.activeScenario}`);
+                }
+            },
+
+            /**
+             * Build input object for reverse calculation
+             * @private
+             */
+            _buildReverseInput() {
+                const base = {
+                    scenario: this.activeScenario,
+                    cardCapacityGB: parseFloat(this.reverse.cardCapacityGB),
+                    overheadPercent: this.reverse.overheadPercent
+                };
+
+                switch (this.activeScenario) {
+                    case 'video':
+                    case 'continuous':
+                        return {
+                            ...base,
+                            bitrateMbps: parseFloat(this.reverse.video.bitrateMbps)
+                        };
+
+                    case 'photo':
+                        return {
+                            ...base,
+                            fileSizeMB: parseFloat(this.reverse.photo.fileSizeMB)
+                        };
+
+                    default:
+                        throw new Error(`Unknown scenario: ${this.activeScenario}`);
+                }
+            },
+
+            /**
+             * Track GA4 events
+             * @private
+             */
+            _trackEvent(eventName, eventData) {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', eventName, eventData);
+                }
+            },
+
+            /**
+             * Format storage result for display
+             */
+            getResultDisplay() {
+                if (!this.result) return null;
+
+                if (this.mode === 'forward') {
+                    return {
+                        title: 'You Need:',
+                        capacity: `${this.result.recommendedCapacity}GB Minimum`,
+                        storageRequired: `${this.result.totalGB}GB`,
+                        rawFootage: `${this.result.rawGB}GB`,
+                        overhead: `${this.result.overheadGB}GB`,
+                        speedClass: this.result.speedClass,
+                        minWriteSpeed: this.result.minWriteSpeed,
+                        isSufficient: StorageCalculator.isCardSufficient(this.result.recommendedCapacity, this.result.totalGB)
+                    };
+                } else {
+                    // Reverse
+                    if (this.activeScenario === 'photo') {
+                        return {
+                            title: 'Photo Capacity:',
+                            photoCount: this.result?.photoCount || 0,
+                            recordingTimeString: null,
+                            speedClass: this.result?.speedClass || 'V30',
+                            minWriteSpeed: this.result?.minWriteSpeed || 30
+                        };
+                    } else {
+                        return {
+                            title: 'Your Card Duration:',
+                            recordingTimeString: this.result?.recordingTimeString || '0 hours',
+                            recordingHours: this.result?.recordingHours || 0,
+                            daysFor24h: this.result?.daysFor24h || 0,
+                            speedClass: this.result?.speedClass || 'V30',
+                            minWriteSpeed: this.result?.minWriteSpeed || 30
+                        };
+                    }
+                }
+            },
+
+            /**
+             * Reset form to initial state
+             */
+            reset() {
+                this.currentLayer = 'usecase';
+                this.result = null;
+                this.hasCalculated = false;
+                this.mode = 'forward';
+                this.advancedExpanded = false;
+                this.speedClassExpanded = false;
+            },
+
+            /**
+             * Calculate and display default result on page load
+             * Shows immediate value before user interaction
+             */
+            loadDefaultResult() {
+                if (!this.showDefaultResult) return;
+
+                try {
+                    const input = {
+                        scenario: this.activeScenario,
+                        bitrateMbps: this.forward.video.bitrateMbps,
+                        durationHours: this.forward.video.durationHours,
+                        overheadPercent: this.forward.overheadPercent
+                    };
+
+                    this.result = StorageCalculator.calculateForward(input);
+                } catch (error) {
+                    console.warn('Failed to load default result:', error);
+                }
+            },
+
+            /**
+             * Check if current input is valid
+             */
+            isInputValid() {
+                switch (this.activeScenario) {
+                    case 'video':
+                        return this.forward.video.durationHours > 0 && this.forward.video.bitrateMbps > 0;
+                    case 'photo':
+                        return this.forward.photo.photoCount > 0 && this.forward.photo.fileSizeMB > 0;
+                    case 'continuous':
+                        return this.forward.continuous.hoursPerDay > 0 && this.forward.continuous.daysNeeded > 0 && this.forward.continuous.bitrateMbps > 0;
+                    default:
+                        return false;
+                }
+            },
+
+            /**
+             * Check if reverse input is valid
+             */
+            isReverseInputValid() {
+                switch (this.activeScenario) {
+                    case 'video':
+                    case 'continuous':
+                        return this.reverse.cardCapacityGB > 0 && this.reverse.video.bitrateMbps > 0;
+                    case 'photo':
+                        return this.reverse.cardCapacityGB > 0 && this.reverse.photo.fileSizeMB > 0;
+                    default:
+                        return false;
+                }
+            },
+
+            /**
+              * Load and display card recommendations after calculation
+              * Uses CalculatorCardRecommendations for inline display
+              * @private
+              */
+            async _loadAndDisplayCardRecommendations() {
+                if (typeof CalculatorCardRecommendations === 'undefined') {
+                    console.warn('CalculatorCardRecommendations module not loaded');
+                    return;
+                }
+
+                try {
+                    const speedClass = this.result.speedClass;
+
+                    // Display recommendations in the results section
+                    await CalculatorCardRecommendations.displayRecommendations(
+                        speedClass,
+                        'calculator-recommendations'
+                    );
+
+                    // Track event
+                    this._trackEvent('calculator_recommendations_shown', {
+                        speedClass: speedClass,
+                        scenario: this.activeScenario
+                    });
+                } catch (error) {
+                    console.error('Failed to load card recommendations:', error);
+                }
+            },
+
+            /**
+             * Load all cards for selector (on component init or reverse layer load)
+             */
+            async initCardSelector() {
+                // Skip if already loaded
+                if (this.allCards && this.allCards.length > 0) {
+                    console.log('[CalculatorUI] Cards already loaded, skipping reload');
+                    return;
+                }
+
+                if (typeof CardSelector === 'undefined') {
+                    console.error('[CalculatorUI] CardSelector module not loaded - ensure card-selector.js is included');
+                    return;
+                }
+
+                try {
+                    console.log('[CalculatorUI] Starting card load...');
+                    const cards = await CardSelector.loadCards();
+
+                    if (!cards || cards.length === 0) {
+                        console.warn('[CalculatorUI] ⚠️ No cards returned from CardSelector.loadCards()');
+                        this.allCards = [];
+                        this.filteredCards = [];
+                        return;
+                    }
+
+                    this.allCards = cards;
+                    this.filteredCards = cards;
+                    console.log(`[CalculatorUI] ✓ Successfully loaded ${this.allCards.length} cards`);
+                } catch (error) {
+                    console.error('[CalculatorUI] Failed to load cards for selector:', error);
+                    this.allCards = [];
+                    this.filteredCards = [];
+                }
+            },
+
+            /**
+             * Filter cards based on search input
+             */
+            filterCardsList() {
+                if (typeof CardSelector === 'undefined') {
+                    console.warn('CardSelector module not loaded');
+                    return;
+                }
+
+                if (this.allCards.length === 0) {
+                    console.warn('No cards loaded yet');
+                    return;
+                }
+
+                this.filteredCards = CardSelector.searchCards(this.allCards, this.cardSelectorSearch);
+                console.log(`Filtered to ${this.filteredCards.length} cards for search: "${this.cardSelectorSearch}"`);
+            },
+
+            /**
+             * Select a card and auto-fill calculator fields
+             */
+            selectCard(card) {
+                if (typeof CardSelector === 'undefined') {
+                    console.warn('CardSelector module not loaded');
+                    return;
+                }
+
+                const specs = CardSelector.getCardSpecs(card);
+                this.selectedCard = specs;
+
+                // Auto-fill reverse calculator fields
+                if (this.activeScenario === 'photo') {
+                    // For photo, check if card has capacity and potentially update fileSizeMB
+                    // but don't override user input if already set
+                } else {
+                    // For video/continuous, set bitrate to estimated value
+                    this.reverse.video.bitrateMbps = specs.estimatedBitrateMbps;
+                }
+
+                // Update search display to show selected card name
+                this.cardSelectorSearch = specs.name;
+
+                // Close dropdown after selection
+                this.cardSelectorOpen = false;
+
+                // Track event
+                this._trackEvent('calculator_card_selected', {
+                    cardId: specs.id,
+                    speedClass: specs.speedClass,
+                    scenario: this.activeScenario
+                });
+
+                console.log('✓ Card selected:', specs);
+            }
         };
+    }
 
-        switch (this.activeScenario) {
-          case 'video':
-            return {
-              ...base,
-              bitrateMbps: parseFloat(this.forward.video.bitrateMbps),
-              durationHours: parseFloat(this.forward.video.durationHours) + parseFloat(this.forward.video.durationMinutes) / 60
-            };
-
-          case 'photo':
-            return {
-              ...base,
-              photoCount: parseInt(this.forward.photo.photoCount),
-              fileSizeMB: parseFloat(this.forward.photo.fileSizeMB),
-              shootingStyle: this.forward.photo.shootingStyle
-            };
-
-          case 'continuous':
-            return {
-              ...base,
-              bitrateMbps: parseFloat(this.forward.continuous.bitrateMbps),
-              hoursPerDay: parseFloat(this.forward.continuous.hoursPerDay),
-              daysNeeded: parseFloat(this.forward.continuous.daysNeeded)
-            };
-
-          default:
-            throw new Error(`Unknown scenario: ${this.activeScenario}`);
-        }
-      },
-
-      /**
-       * Build input object for reverse calculation
-       * @private
-       */
-      _buildReverseInput() {
-        const base = {
-          scenario: this.activeScenario,
-          cardCapacityGB: parseFloat(this.reverse.cardCapacityGB),
-          overheadPercent: this.reverse.overheadPercent
-        };
-
-        switch (this.activeScenario) {
-          case 'video':
-          case 'continuous':
-            return {
-              ...base,
-              bitrateMbps: parseFloat(this.reverse.video.bitrateMbps)
-            };
-
-          case 'photo':
-            return {
-              ...base,
-              fileSizeMB: parseFloat(this.reverse.photo.fileSizeMB)
-            };
-
-          default:
-            throw new Error(`Unknown scenario: ${this.activeScenario}`);
-        }
-      },
-
-      /**
-       * Track GA4 events
-       * @private
-       */
-      _trackEvent(eventName, eventData) {
-        if (typeof gtag !== 'undefined') {
-          gtag('event', eventName, eventData);
-        }
-      },
-
-      /**
-       * Format storage result for display
-       */
-      getResultDisplay() {
-        if (!this.result) return null;
-
-        if (this.mode === 'forward') {
-          return {
-            title: 'You Need:',
-            capacity: `${this.result.recommendedCapacity}GB Minimum`,
-            storageRequired: `${this.result.totalGB}GB`,
-            rawFootage: `${this.result.rawGB}GB`,
-            overhead: `${this.result.overheadGB}GB`,
-            speedClass: this.result.speedClass,
-            minWriteSpeed: this.result.minWriteSpeed,
-            isSufficient: StorageCalculator.isCardSufficient(this.result.recommendedCapacity, this.result.totalGB)
-          };
-        } else {
-          // Reverse
-          if (this.activeScenario === 'photo') {
-            return {
-              title: 'Photo Capacity:',
-              photoCount: this.result?.photoCount || 0,
-              recordingTimeString: null,
-              speedClass: this.result?.speedClass || 'V30',
-              minWriteSpeed: this.result?.minWriteSpeed || 30
-            };
-          } else {
-            return {
-              title: 'Your Card Duration:',
-              recordingTimeString: this.result?.recordingTimeString || '0 hours',
-              recordingHours: this.result?.recordingHours || 0,
-              daysFor24h: this.result?.daysFor24h || 0,
-              speedClass: this.result?.speedClass || 'V30',
-              minWriteSpeed: this.result?.minWriteSpeed || 30
-            };
-          }
-        }
-      },
-
-      /**
-       * Reset form to initial state
-       */
-      reset() {
-        this.currentLayer = 'usecase';
-        this.result = null;
-        this.hasCalculated = false;
-        this.mode = 'forward';
-        this.advancedExpanded = false;
-        this.speedClassExpanded = false;
-      },
-
-      /**
-       * Calculate and display default result on page load
-       * Shows immediate value before user interaction
-       */
-      loadDefaultResult() {
-        if (!this.showDefaultResult) return;
-        
-        try {
-          const input = {
-            scenario: this.activeScenario,
-            bitrateMbps: this.forward.video.bitrateMbps,
-            durationHours: this.forward.video.durationHours,
-            overheadPercent: this.forward.overheadPercent
-          };
-          
-          this.result = StorageCalculator.calculateForward(input);
-        } catch (error) {
-          console.warn('Failed to load default result:', error);
-        }
-      },
-
-      /**
-       * Check if current input is valid
-       */
-      isInputValid() {
-        switch (this.activeScenario) {
-          case 'video':
-            return this.forward.video.durationHours > 0 && this.forward.video.bitrateMbps > 0;
-          case 'photo':
-            return this.forward.photo.photoCount > 0 && this.forward.photo.fileSizeMB > 0;
-          case 'continuous':
-            return this.forward.continuous.hoursPerDay > 0 && this.forward.continuous.daysNeeded > 0 && this.forward.continuous.bitrateMbps > 0;
-          default:
-            return false;
-        }
-      },
-
-      /**
-       * Check if reverse input is valid
-       */
-      isReverseInputValid() {
-         switch (this.activeScenario) {
-           case 'video':
-           case 'continuous':
-             return this.reverse.cardCapacityGB > 0 && this.reverse.video.bitrateMbps > 0;
-           case 'photo':
-             return this.reverse.cardCapacityGB > 0 && this.reverse.photo.fileSizeMB > 0;
-           default:
-             return false;
-         }
-       },
-
-       /**
-         * Load and display card recommendations after calculation
-         * Uses CalculatorCardRecommendations for inline display
-         * @private
-         */
-        async _loadAndDisplayCardRecommendations() {
-          if (typeof CalculatorCardRecommendations === 'undefined') {
-            console.warn('CalculatorCardRecommendations module not loaded');
-            return;
-          }
-
-          try {
-            const speedClass = this.result.speedClass;
-            
-            // Display recommendations in the results section
-            await CalculatorCardRecommendations.displayRecommendations(
-              speedClass,
-              'calculator-recommendations'
-            );
-
-            // Track event
-            this._trackEvent('calculator_recommendations_shown', {
-              speedClass: speedClass,
-              scenario: this.activeScenario
-            });
-          } catch (error) {
-            console.error('Failed to load card recommendations:', error);
-          }
-        },
-
-       /**
-        * Load all cards for selector (on component init or reverse layer load)
-        */
-       async initCardSelector() {
-         // Skip if already loaded
-         if (this.allCards && this.allCards.length > 0) {
-           console.log('Cards already loaded, skipping reload');
-           return;
-         }
-
-         if (typeof CardSelector === 'undefined') {
-           console.error('CardSelector module not loaded - ensure card-selector.js is included');
-           return;
-         }
-
-         try {
-           console.log('Starting card load...');
-           const cards = await CardSelector.loadCards();
-           
-           if (!cards || cards.length === 0) {
-             console.warn('No cards returned from CardSelector.loadCards()');
-             return;
-           }
-           
-           this.allCards = cards;
-           this.filteredCards = cards;
-           console.log(`✓ Successfully loaded ${this.allCards.length} cards`);
-         } catch (error) {
-           console.error('Failed to load cards for selector:', error);
-           this.allCards = [];
-           this.filteredCards = [];
-         }
-       },
-
-       /**
-        * Filter cards based on search input
-        */
-       filterCardsList() {
-         if (typeof CardSelector === 'undefined') {
-           console.warn('CardSelector module not loaded');
-           return;
-         }
-
-         if (this.allCards.length === 0) {
-           console.warn('No cards loaded yet');
-           return;
-         }
-
-         this.filteredCards = CardSelector.searchCards(this.allCards, this.cardSelectorSearch);
-         console.log(`Filtered to ${this.filteredCards.length} cards for search: "${this.cardSelectorSearch}"`);
-       },
-
-       /**
-        * Select a card and auto-fill calculator fields
-        */
-       selectCard(card) {
-         if (typeof CardSelector === 'undefined') {
-           console.warn('CardSelector module not loaded');
-           return;
-         }
-
-         const specs = CardSelector.getCardSpecs(card);
-         this.selectedCard = specs;
-
-         // Auto-fill reverse calculator fields
-         if (this.activeScenario === 'photo') {
-           // For photo, check if card has capacity and potentially update fileSizeMB
-           // but don't override user input if already set
-         } else {
-           // For video/continuous, set bitrate to estimated value
-           this.reverse.video.bitrateMbps = specs.estimatedBitrateMbps;
-         }
-
-         // Update search display to show selected card name
-         this.cardSelectorSearch = specs.name;
-         
-         // Close dropdown after selection
-         this.cardSelectorOpen = false;
-
-         // Track event
-         this._trackEvent('calculator_card_selected', {
-           cardId: specs.id,
-           speedClass: specs.speedClass,
-           scenario: this.activeScenario
-         });
-
-         console.log('✓ Card selected:', specs);
-       }
-       };
-       }
-
-      /**
-      * Get preset data for a scenario
-      * @static
-      */
-      static getPresets() {
-      return StorageCalculator.getPresets();
-      }
-      }
+    /**
+    * Get preset data for a scenario
+    * @static
+    */
+    static getPresets() {
+        return StorageCalculator.getPresets();
+    }
+}
 
 // Export for module environments
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = CalculatorUI;
+    module.exports = CalculatorUI;
 }

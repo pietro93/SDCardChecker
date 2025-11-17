@@ -333,7 +333,9 @@
                     <div x-show="filteredCards.length === 0 && cardSelectorSearch" class="px-4 py-3 text-sm text-gray-500">No cards found</div>
                     
                     <!-- Loading Message -->
-                    <div x-show="allCards.length === 0 && !cardSelectorSearch" class="px-4 py-3 text-sm text-gray-600">Loading cards...</div>
+                    <div x-show="allCards.length === 0 && !cardSelectorSearch" class="px-4 py-3 text-sm text-gray-600">
+                      <span class="animate-spin inline-block mr-2">⟳</span> Loading cards...
+                    </div>
                 </div>
             </div>
             <p class="text-xs text-gray-600 mt-2">Start typing to search, or click to see all cards. Selecting a card will auto-fill bitrate.</p>
@@ -440,9 +442,9 @@
                             class="px-4 py-2 border border-emerald-600 text-emerald-600 font-bold rounded-lg hover:bg-emerald-50 transition h-10">
                             Calculate Another
                         </button>
-                        <a :href="`/cards/?speedClass=${result.speedClass}`" target="_blank" rel="noopener noreferrer"
+                        <a :href="`/sd-card-guide/`" target="_blank" rel="noopener noreferrer"
                             class="px-4 py-2 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition h-10 flex items-center justify-center">
-                            Find Matching Cards ↗
+                            Learn More About Cards ↗
                         </a>
                     </div>
                 </div>
@@ -482,7 +484,10 @@
 
                 <!-- Card Recommendations Section -->
                 <div id="calculator-recommendations" class="mt-8 p-6 bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg border border-orange-200">
-                    <div class="animate-pulse text-center text-gray-600">Loading recommendations...</div>
+                    <div class="text-center text-gray-600">
+                        <span class="inline-block animate-spin mr-2">⟳</span>
+                        Loading recommendations...
+                    </div>
                 </div>
             </div>
         </template>

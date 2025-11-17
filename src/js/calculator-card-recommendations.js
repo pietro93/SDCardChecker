@@ -6,124 +6,124 @@
  */
 
 class CalculatorCardRecommendations {
-  /**
-   * Get fallback image for card if missing real image
-   * @param {Object} card - Card object
-   * @returns {String} Fallback image URL
-   */
-  static getCardImageFallback(card) {
-    return '/img/fallback/sd-card-placeholder.webp';
-  }
-
-  /**
-   * Load cards from JSON
-   * @returns {Promise<Array>} Cards array
-   */
-  static async loadCards() {
-    try {
-      const response = await fetch('/data/sdcards.json');
-      const data = await response.json();
-      return data.sdcards || [];
-    } catch (error) {
-      console.error('Failed to load cards:', error);
-      return [];
+    /**
+     * Get fallback image for card if missing real image
+     * @param {Object} card - Card object
+     * @returns {String} Fallback image URL
+     */
+    static getCardImageFallback(card) {
+        return '/img/fallback/sd-card-placeholder.webp';
     }
-  }
 
-  /**
-   * Filter cards by speed class
-   * @param {Array} allCards - All cards from JSON
-   * @param {String} requiredSpeedClass - Speed class (V30, V60, V90)
-   * @param {Number} limit - Max cards to return
-   * @returns {Array} Filtered and sorted cards
-   */
-  static filterBySpeedClass(allCards, requiredSpeedClass, limit = 5) {
-    const speedClassOrder = {
-      'V6': 1,
-      'V30': 2,
-      'V60': 3,
-      'V90': 4,
-      'U3': 2.5,
-      'Class 10': 1.5
-    };
+    /**
+     * Load cards from JSON
+     * @returns {Promise<Array>} Cards array
+     */
+    static async loadCards() {
+        try {
+            const response = await fetch('/data/sdcards.json');
+            const data = await response.json();
+            return data.sdcards || [];
+        } catch (error) {
+            console.error('Failed to load cards:', error);
+            return [];
+        }
+    }
 
-    const requiredRank = speedClassOrder[requiredSpeedClass] || 2;
+    /**
+     * Filter cards by speed class
+     * @param {Array} allCards - All cards from JSON
+     * @param {String} requiredSpeedClass - Speed class (V30, V60, V90)
+     * @param {Number} limit - Max cards to return
+     * @returns {Array} Filtered and sorted cards
+     */
+    static filterBySpeedClass(allCards, requiredSpeedClass, limit = 5) {
+        const speedClassOrder = {
+            'V6': 1,
+            'V30': 2,
+            'V60': 3,
+            'V90': 4,
+            'U3': 2.5,
+            'Class 10': 1.5
+        };
 
-    // Filter for sufficient speed class
-    let filtered = allCards.filter(card => {
-      const cardRank = speedClassOrder[card.speed] || 0;
-      return cardRank >= requiredRank;
-    });
+        const requiredRank = speedClassOrder[requiredSpeedClass] || 2;
 
-    // Sort by: speed class (ascending), then price
-    filtered.sort((a, b) => {
-      const rankA = speedClassOrder[a.speed] || 0;
-      const rankB = speedClassOrder[b.speed] || 0;
+        // Filter for sufficient speed class
+        let filtered = allCards.filter(card => {
+            const cardRank = speedClassOrder[card.speed] || 0;
+            return cardRank >= requiredRank;
+        });
 
-      if (rankA !== rankB) {
-        return rankA - rankB;
-      }
+        // Sort by: speed class (ascending), then price
+        filtered.sort((a, b) => {
+            const rankA = speedClassOrder[a.speed] || 0;
+            const rankB = speedClassOrder[b.speed] || 0;
 
-      return (a.priceEstimate || 0) - (b.priceEstimate || 0);
-    });
+            if (rankA !== rankB) {
+                return rankA - rankB;
+            }
 
-    return filtered.slice(0, limit);
-  }
+            return (a.priceEstimate || 0) - (b.priceEstimate || 0);
+        });
 
-  /**
-   * Format single card for calculator results display
-   * @param {Object} card - Card from sdcards.json
-   * @returns {Object} Formatted card
-   */
-  static formatCard(card) {
-    const priceTierClass = card.priceTier
-      ? `price-${card.priceTier.toLowerCase().replace(/\s+/g, '-')}`
-      : 'price-mid-range';
+        return filtered.slice(0, limit);
+    }
 
-    const priceTierSymbol = card.priceTier
-      ? card.priceTier.toLowerCase().includes('budget')
-        ? '$'
-        : card.priceTier.toLowerCase().includes('premium')
-        ? '$$$'
-        : '$$'
-      : '$$';
+    /**
+     * Format single card for calculator results display
+     * @param {Object} card - Card from sdcards.json
+     * @returns {Object} Formatted card
+     */
+    static formatCard(card) {
+        const priceTierClass = card.priceTier
+            ? `price-${card.priceTier.toLowerCase().replace(/\s+/g, '-')}`
+            : 'price-mid-range';
 
-    return {
-      id: card.id,
-      name: card.name,
-      speed: card.speed,
-      writeSpeed: card.writeSpeed,
-      capacity: card.capacity,
-      imageUrl: card.imageUrl || this.getCardImageFallback(card),
-      amazonUrl: card.amazonSearchUrl,
-      priceTier: card.priceTier || 'Standard',
-      priceTierClass: priceTierClass,
-      priceTierSymbol: priceTierSymbol,
-      priceEstimate: card.priceEstimate || 'N/A',
-      pros: card.pros,
-      tier: card.tier || 'standard'
-    };
-  }
+        const priceTierSymbol = card.priceTier
+            ? card.priceTier.toLowerCase().includes('budget')
+                ? '$'
+                : card.priceTier.toLowerCase().includes('premium')
+                    ? '$$$'
+                    : '$$'
+            : '$$';
 
-  /**
-   * Build HTML grid of recommendation cards
-   * @param {Array} cards - Filtered cards
-   * @param {String} speedClass - Speed class for reference
-   * @returns {String} HTML markup
-   */
-  static buildRecommendationHTML(cards, speedClass) {
-    if (!cards || cards.length === 0) {
-      return `
+        return {
+            id: card.id,
+            name: card.name,
+            speed: card.speed,
+            writeSpeed: card.writeSpeed,
+            capacity: card.capacity,
+            imageUrl: card.imageUrl || this.getCardImageFallback(card),
+            amazonUrl: card.amazonSearchUrl,
+            priceTier: card.priceTier || 'Standard',
+            priceTierClass: priceTierClass,
+            priceTierSymbol: priceTierSymbol,
+            priceEstimate: card.priceEstimate || 'N/A',
+            pros: card.pros,
+            tier: card.tier || 'standard'
+        };
+    }
+
+    /**
+     * Build HTML grid of recommendation cards
+     * @param {Array} cards - Filtered cards
+     * @param {String} speedClass - Speed class for reference
+     * @returns {String} HTML markup
+     */
+    static buildRecommendationHTML(cards, speedClass) {
+        if (!cards || cards.length === 0) {
+            return `
         <div class="p-4 bg-gray-50 rounded-lg text-gray-600 text-sm">
           No matching cards found. Adjust your speed class filter and try again.
         </div>
       `;
-    }
+        }
 
-    const cardHTML = cards
-      .map(card => {
-        const formatted = this.formatCard(card);
-        return `
+        const cardHTML = cards
+            .map(card => {
+                const formatted = this.formatCard(card);
+                return `
           <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
             <!-- Card Image -->
             <div class="aspect-square bg-gray-100 flex items-center justify-center p-3">
@@ -158,11 +158,10 @@ class CalculatorCardRecommendations {
 
               <!-- Price Tier Badge -->
               <div class="text-center mb-4">
-                <span class="text-xs font-bold ${
-                  formatted.priceTierClass === 'price-budget' ? 'text-green-600' :
-                  formatted.priceTierClass === 'price-premium' ? 'text-red-600' :
-                  'text-amber-600'
-                }">
+                <span class="text-xs font-bold ${formatted.priceTierClass === 'price-budget' ? 'text-green-600' :
+                        formatted.priceTierClass === 'price-premium' ? 'text-red-600' :
+                            'text-amber-600'
+                    }">
                   ${formatted.priceTierSymbol} ${formatted.priceTier}
                 </span>
               </div>
@@ -179,10 +178,10 @@ class CalculatorCardRecommendations {
             </div>
           </div>
         `;
-      })
-      .join('');
+            })
+            .join('');
 
-    return `
+        return `
       <div class="space-y-4">
         <!-- Header -->
         <div>
@@ -202,55 +201,79 @@ class CalculatorCardRecommendations {
         <!-- View All Link -->
         <div class="text-center pt-2">
           <a 
-            href="/cards/?speedClass=${speedClass}" 
+            href="/sd-card-guide/" 
             target="_blank"
             rel="noopener noreferrer"
             class="text-blue-600 hover:text-blue-800 text-sm font-medium"
           >
-            View all ${speedClass} cards →
+            Learn more about SD cards →
           </a>
         </div>
       </div>
     `;
-  }
-
-  /**
-   * Get and display recommendations for calculator result
-   * @param {String} speedClass - Required speed class
-   * @param {String} containerId - HTML element ID to inject into
-   * @returns {Promise<void>}
-   */
-  static async displayRecommendations(speedClass, containerId = 'calculator-recommendations') {
-    const container = document.getElementById(containerId);
-    if (!container) {
-      console.warn(`Container #${containerId} not found`);
-      return;
     }
 
-    try {
-      // Show loading state
-      container.innerHTML = '<div class="p-4 text-gray-600 text-center">Loading recommendations...</div>';
+    /**
+     * Get and display recommendations for calculator result
+     * @param {String} speedClass - Required speed class
+     * @param {String} containerId - HTML element ID to inject into
+     * @returns {Promise<void>}
+     */
+    static async displayRecommendations(speedClass, containerId = 'calculator-recommendations') {
+        const container = document.getElementById(containerId);
+        if (!container) {
+            console.warn(`[CalculatorCardRecommendations] Container #${containerId} not found`);
+            return;
+        }
 
-      // Load all cards
-      const allCards = await this.loadCards();
-      
-      // Filter for speed class
-      const recommended = this.filterBySpeedClass(allCards, speedClass, 5);
+        try {
+            console.log(`[CalculatorCardRecommendations] Loading recommendations for ${speedClass}...`);
 
-      // Build and inject HTML
-      const html = this.buildRecommendationHTML(recommended, speedClass);
-      container.innerHTML = html;
+            // Load all cards
+            const allCards = await this.loadCards();
 
-      // Make container visible if hidden
-      container.style.display = 'block';
-    } catch (error) {
-      console.error('Error displaying recommendations:', error);
-      container.innerHTML = '<div class="p-4 text-red-600">Failed to load recommendations</div>';
+            if (!allCards || allCards.length === 0) {
+                console.warn('[CalculatorCardRecommendations] No cards loaded');
+                container.innerHTML = `
+          <div class="p-4 bg-red-50 rounded-lg text-red-600 text-sm">
+            Unable to load card recommendations at this time. Please try <a href="/sd-card-guide/" class="font-bold underline">browsing the SD card guide</a>.
+          </div>
+        `;
+                return;
+            }
+
+            // Filter for speed class
+            const recommended = this.filterBySpeedClass(allCards, speedClass, 5);
+
+            if (!recommended || recommended.length === 0) {
+                console.warn(`[CalculatorCardRecommendations] No cards match ${speedClass}`);
+                container.innerHTML = `
+          <div class="p-4 bg-yellow-50 rounded-lg text-yellow-600 text-sm">
+            No cards matching ${speedClass} found. <a href="/sd-card-guide/" class="font-bold underline">Learn more about speed classes</a>.
+          </div>
+        `;
+                return;
+            }
+
+            // Build and inject HTML
+            const html = this.buildRecommendationHTML(recommended, speedClass);
+            container.innerHTML = html;
+            console.log(`[CalculatorCardRecommendations] ✓ Displayed ${recommended.length} recommendations`);
+
+            // Make container visible if hidden
+            container.style.display = 'block';
+        } catch (error) {
+            console.error('[CalculatorCardRecommendations] Error displaying recommendations:', error);
+            container.innerHTML = `
+        <div class="p-4 bg-red-50 rounded-lg text-red-600 text-sm">
+          Failed to load recommendations. <a href="/sd-card-guide/" class="font-bold underline">Learn more about cards</a>.
+        </div>
+      `;
+        }
     }
-  }
 }
 
 // Export for module environments
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = CalculatorCardRecommendations;
+    module.exports = CalculatorCardRecommendations;
 }

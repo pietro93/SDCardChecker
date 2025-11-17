@@ -20,10 +20,17 @@ class CardSelector {
       
       const data = await response.json();
       const cards = data.sdcards || [];
+      
+      if (!cards || cards.length === 0) {
+        console.warn('[CardSelector] ⚠️ No cards found in sdcards.json');
+        return [];
+      }
+      
       console.log(`[CardSelector] ✓ Loaded ${cards.length} cards from JSON`);
       return cards;
     } catch (error) {
-      console.error('[CardSelector] ✗ Failed to load cards:', error.message);
+      console.error('[CardSelector] ✗ Failed to load cards:', error);
+      console.error('[CardSelector] URL attempted:', '/data/sdcards.json');
       return [];
     }
   }
