@@ -4218,52 +4218,6 @@
       "notes": "A very popular retro gaming handheld. The community is large and very active in searching for performance and setup guides."
     },
     {
-      "id": "wyze-cam-v3",
-      "name": "Wyze Cam v3",
-      "category": "Security Cameras",
-      "slug": "wyze-cam-v3",
-      "searchTerms": [
-        "wyze cam v3 sd card",
-        "wyze v3 microsd",
-        "wyze cam storage"
-      ],
-      "sdCard": {
-        "type": "microSD (FAT32 or exFAT)",
-        "minSpeed": "Class 10 / U1",
-        "minWriteSpeed": "10 MB/s",
-        "recommendedCapacity": [
-          "32GB",
-          "64GB",
-          "128GB"
-        ],
-        "maxCapacity": "256GB"
-      },
-      "whySpecs": "Wyze Cam v3 records continuous video locally to a microSD card. Wyze officially supports and has tested cards up to 256GB. A Class 10 card is the minimum for reliable recording; High Endurance cards are strongly recommended for 24/7 recording to prevent premature failure.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-max-endurance"
-        },
-        {
-          "id": "samsung-pro-endurance"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Do I need a special SD card for security cameras?",
-          "a": "<b>Yes, always use a High Endurance microSD card for security cameras.</b> Non-endurance cards are not built for constant rewriting and will fail quickly with 24/7 recording. High Endurance cards are specifically designed for this workload and last much longer."
-        },
-        {
-          "q": "What capacity should I get for continuous recording?",
-          "a": "<b>64GB to 128GB is ideal for most users.</b> A 64GB card stores approximately 1-2 weeks of continuous video on standard settings. Heavy users or those wanting longer retention should opt for 128GB or 256GB."
-        }
-        ],
-        "relatedDevices": [
-        "reolink-e1-pro",
-        "garmin-66s-dash-cam"
-        ],
-        "notes": "Extremely popular budget security camera with massive search volume. Wyze official documentation confirms microSD support up to 256GB (tested). Requires FAT32 for 32GB or smaller, exFAT for 64GB+."
-    },
-    {
       "id": "lenovo-tab-m10-plus-gen3",
       "name": "Lenovo Tab M10 Plus (3rd Gen)",
       "category": "Computing & Tablets",

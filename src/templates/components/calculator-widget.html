@@ -85,14 +85,30 @@
         </div>
 
         <div>
-          <label class="block text-sm font-bold mb-2">Bitrate (Mbps)</label>
-          <input
-            x-model.number="forward.video.bitrateMbps"
-            type="number"
-            placeholder="150"
-            class="w-full px-3 py-2 border border-gray-300 rounded-lg"
-          />
-        </div>
+           <label class="block text-sm font-bold mb-2">
+             Bitrate (Mbps)
+             <button
+               type="button"
+               class="inline-block ml-1 text-blue-600 hover:text-blue-800 cursor-help font-normal"
+               aria-label="Bitrate help"
+               title="Mbps = Megabits per second. 1 Mbps ≈ 0.125 MB/s"
+             >
+               ℹ️
+             </button>
+           </label>
+           <input
+             x-model.number="forward.video.bitrateMbps"
+             type="number"
+             placeholder="150"
+             min="1"
+             step="1"
+             @input="validateNumericInput($event, 1)"
+             class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+             aria-label="Video bitrate in Mbps (Megabits per second)"
+             aria-describedby="bitrate-help"
+           />
+           <p id="bitrate-help" class="text-xs text-gray-600 mt-1">Mbps = Megabits/sec. 1 Mbps ≈ 0.125 MB/s</p>
+         </div>
       </div>
 
       <div class="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
@@ -104,7 +120,11 @@
               x-model.number="forward.video.durationHours"
               type="number"
               placeholder="2"
+              min="0"
+              step="1"
+              @input="validateNumericInput($event, 0, 999)"
               class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+              aria-label="Recording duration in hours"
             />
           </div>
           <div>
@@ -115,7 +135,10 @@
               placeholder="0"
               min="0"
               max="59"
+              step="1"
+              @input="validateNumericInput($event, 0, 59)"
               class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+              aria-label="Recording duration in minutes"
             />
           </div>
         </div>
@@ -131,7 +154,11 @@
             x-model.number="forward.photo.photoCount"
             type="number"
             placeholder="1000"
+            min="1"
+            step="1"
+            @input="validateNumericInput($event, 1)"
             class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+            aria-label="Total number of photos to store"
           />
         </div>
 
@@ -142,7 +169,10 @@
             type="number"
             step="0.1"
             placeholder="2.5"
+            min="0.1"
+            @input="validateNumericInput($event, 0.1)"
             class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+            aria-label="File size per photo in megabytes"
           />
         </div>
       </div>
@@ -191,7 +221,11 @@
             x-model.number="forward.continuous.bitrateMbps"
             type="number"
             placeholder="5"
+            min="1"
+            step="0.1"
+            @input="validateNumericInput($event, 1)"
             class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+            aria-label="Continuous recording bitrate in Mbps"
           />
         </div>
 
@@ -201,7 +235,12 @@
             x-model.number="forward.continuous.hoursPerDay"
             type="number"
             placeholder="24"
+            min="0"
+            max="24"
+            step="1"
+            @input="validateNumericInput($event, 0, 24)"
             class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+            aria-label="Hours of recording per day"
           />
         </div>
 
@@ -211,7 +250,11 @@
             x-model.number="forward.continuous.daysNeeded"
             type="number"
             placeholder="7"
+            min="1"
+            step="1"
+            @input="validateNumericInput($event, 1)"
             class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+            aria-label="Number of days continuous recording is needed"
           />
         </div>
       </div>
@@ -222,10 +265,19 @@
     </div>
 
     <!-- Advanced Options (All Modes) -->
-    <details class="mt-6 p-4 border border-gray-300 rounded-lg">
-      <summary class="cursor-pointer font-bold text-sm">⚙️ Advanced Options</summary>
+    <details class="mt-6 p-4 border border-gray-300 rounded-lg" x-ref="advancedOptions">
+      <summary 
+        role="button" 
+        tabindex="0"
+        class="cursor-pointer font-bold text-sm py-2 px-2 hover:bg-gray-100 rounded"
+        @click.prevent="advancedExpanded = !advancedExpanded"
+        :aria-expanded="advancedExpanded"
+        aria-controls="advanced-content"
+      >
+        ⚙️ Advanced Options
+      </summary>
       
-      <div class="mt-4 space-y-4">
+      <div id="advanced-content" class="mt-4 space-y-4" x-show="advancedExpanded">
         <div>
           <label class="block text-sm font-bold mb-2">
             Overhead Buffer: <span x-text="`${forward.overheadPercent}%`"></span>
@@ -237,6 +289,9 @@
             :max="forward.overheadMax"
             step="1"
             class="w-full"
+            aria-label="Overhead buffer percentage"
+            aria-valuemin="5"
+            aria-valuemax="25"
           />
           <p class="text-xs text-gray-600 mt-2">
             Add buffer for metadata, camera system files, and write inefficiency
@@ -248,6 +303,7 @@
             type="checkbox"
             x-model="forward.compareFormats"
             class="mr-2"
+            aria-label="Compare H.264, H.265, and ProRes file sizes"
           />
           <span class="text-sm font-bold">Compare H.264 vs H.265 vs ProRes</span>
         </label>
@@ -282,7 +338,11 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div>
         <label class="block text-sm font-bold mb-2">Card Capacity (GB)</label>
-        <select x-model.number="reverse.cardCapacityGB" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+        <select 
+          x-model.number="reverse.cardCapacityGB" 
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+          aria-label="Select SD card capacity"
+        >
           <template x-for="cap in reverse.cardCapacityOptions" :key="cap">
             <option :value="cap" x-text="`${cap}GB`"></option>
           </template>
@@ -296,7 +356,10 @@
           type="number"
           step="0.1"
           placeholder="2.5"
+          min="0.1"
+          @input="validateNumericInput($event, 0.1)"
           class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+          aria-label="File size per photo in megabytes"
         />
       </div>
 
@@ -306,7 +369,11 @@
           x-model.number="reverse.video.bitrateMbps"
           type="number"
           placeholder="150"
+          min="1"
+          step="1"
+          @input="validateNumericInput($event, 1)"
           class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+          aria-label="Video bitrate in Mbps"
         />
       </div>
     </div>
@@ -418,13 +485,22 @@
 
       <!-- Speed Class Reference Table -->
       <details class="mt-6 p-4 border border-gray-300 rounded-lg">
-        <summary class="cursor-pointer font-bold text-sm">📊 Speed Class Reference</summary>
+        <summary 
+          role="button"
+          tabindex="0"
+          class="cursor-pointer font-bold text-sm py-2 px-2 hover:bg-gray-100 rounded"
+          @click.prevent="speedClassExpanded = !speedClassExpanded"
+          :aria-expanded="speedClassExpanded"
+          aria-controls="speed-class-content"
+        >
+          📊 Speed Class Reference
+        </summary>
         
-        <div class="mt-4 overflow-x-auto">
-          <table class="w-full text-sm">
+        <div id="speed-class-content" class="mt-4 overflow-x-auto" x-show="speedClassExpanded">
+          <table class="w-full text-sm" role="table">
             <thead class="bg-gray-100">
               <tr>
-                <th class="px-4 py-2 text-left">Bitrate</th>
+                <th class="px-4 py-2 text-left">Bitrate Range</th>
                 <th class="px-4 py-2 text-left">Speed Class</th>
                 <th class="px-4 py-2 text-left">Write Speed</th>
                 <th class="px-4 py-2 text-left">Use Case</th>

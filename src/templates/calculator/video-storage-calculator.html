@@ -71,6 +71,9 @@
 
       <!-- Calculator Widget -->
       <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
+        <div class="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+          <p class="text-sm text-slate-700"><strong>Quick note:</strong> Bitrate is measured in Mbps (megabits per second). Write speed is measured in MB/s (megabytes per second). To convert: 1 MB/s = 8 Mbps.</p>
+        </div>
         <script>
           document.addEventListener('alpine:init', () => {
             Alpine.data('calculatorState', () => CalculatorUI.init({
@@ -88,11 +91,13 @@
         
         <div class="space-y-4">
           <div class="faq-item">
-            <div class="faq-question">
-              What's the difference between H.264, H.265, and ProRes?
-              <span class="faq-toggle">↓</span>
-            </div>
-            <div class="faq-answer">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                What's the difference between H.264, H.265, and ProRes?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-1" class="faq-answer">
               <p><strong>H.264:</strong> The industry standard for video compression. Good quality at manageable file sizes. Compatible with almost all devices.</p>
               <p><strong>H.265 (HEVC):</strong> Newer codec with better compression. Files are 40-50% smaller than H.264 at the same quality. Some older devices may not support it.</p>
               <p><strong>ProRes:</strong> Professional mezzanine codec. Much larger files but superior quality for color grading and post-production. Used in professional workflows.</p>
@@ -100,11 +105,13 @@
           </div>
 
           <div class="faq-item">
-            <div class="faq-question">
-              What Speed Class do I need for 4K video?
-              <span class="faq-toggle">↓</span>
-            </div>
-            <div class="faq-answer">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                What Speed Class do I need for 4K video?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-2" class="faq-answer">
               <p><strong>4K 30fps:</strong> V30 minimum. Write speed of 30 MB/s ensures consistent recording without dropped frames.</p>
               <p><strong>4K 60fps:</strong> V60 recommended. Higher frame rate requires faster sustained writes.</p>
               <p><strong>8K or professional:</strong> V90 required. Highest performance for demanding workflows.</p>
@@ -112,11 +119,13 @@
           </div>
 
           <div class="faq-item">
-            <div class="faq-question">
-              How do I calculate bitrate for my camera?
-              <span class="faq-toggle">↓</span>
-            </div>
-            <div class="faq-answer">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                How do I calculate bitrate for my camera?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-3" class="faq-answer">
               <p><strong>Check your manual:</strong> Most cameras specify bitrate for each recording mode.</p>
               <p><strong>Test recording:</strong> Record for a known duration, check file size. Divide file size (in MB) by duration (in minutes) × 8 = bitrate in Mbps.</p>
               <p><strong>Use our presets:</strong> Start with our common bitrate presets (150 Mbps for 4K, 50 Mbps for 1080p).</p>
@@ -124,21 +133,25 @@
           </div>
 
           <div class="faq-item">
-            <div class="faq-question">
-              Can I use microSD cards for video recording?
-              <span class="faq-toggle">↓</span>
-            </div>
-            <div class="faq-answer">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                Can I use microSD cards for video recording?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-4" class="faq-answer">
               <p>Yes, if your device supports microSD. Action cameras, drones, and some smartphones use microSD. Performance is identical to full-size SD cards with the same speed class.</p>
             </div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-question">
-              What's the difference between UHS-II and UHS-III?
-              <span class="faq-toggle">↓</span>
-            </div>
-            <div class="faq-answer">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                What's the difference between UHS-II and UHS-III?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-5" class="faq-answer">
               <p><strong>UHS-II:</strong> Up to 312 MB/s theoretical speed. Supports most 4K workflows.</p>
               <p><strong>UHS-III:</strong> Up to 624 MB/s theoretical speed. Designed for 8K and high-bitrate professional work.</p>
               <p>For most users, UHS-II is sufficient. Your camera determines which you can use.</p>
@@ -146,11 +159,13 @@
           </div>
 
           <div class="faq-item">
-            <div class="faq-question">
-              How much should I overprovision my card?
-              <span class="faq-toggle">↓</span>
-            </div>
-            <div class="faq-answer">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                How much should I overprovision my card?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-6" class="faq-answer">
               <p>We recommend buying cards 20-30% larger than your calculated needs. This provides:</p>
               <ul class="list-disc list-inside space-y-2 ml-2">
                 <li>Headroom for camera firmware and other files</li>
@@ -223,11 +238,20 @@
       @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow;
     }
 
+    .faq-heading {
+      @apply m-0;
+    }
+
     .faq-question {
-      @apply p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors;
+      @apply w-full p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors bg-transparent border-none;
       min-height: 48px;
       user-select: none;
       -webkit-user-select: none;
+      text-align: left;
+    }
+
+    .faq-question:focus {
+      @apply outline-2 outline-offset-2 outline-blue-500;
     }
 
     .faq-question:active {
@@ -257,27 +281,29 @@
   <script>
     // Initialize FAQ accordion on load
     document.addEventListener('DOMContentLoaded', () => {
-      const items = document.querySelectorAll('.faq-item');
-      items.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        const answer = item.querySelector('.faq-answer');
-        const toggle = item.querySelector('.faq-toggle');
+      const buttons = document.querySelectorAll('.faq-question');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const answerId = button.getAttribute('aria-controls');
+          const answer = document.getElementById(answerId);
+          const toggle = button.querySelector('.faq-toggle');
+          const isOpen = button.getAttribute('aria-expanded') === 'true';
 
-        if (question) {
-          question.addEventListener('click', () => {
-            const isOpen = answer.classList.contains('open');
-
-            // Close all others
-            document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
-            document.querySelectorAll('.faq-toggle').forEach(t => t.classList.remove('open'));
-
-            // Toggle current
-            if (!isOpen) {
-              answer.classList.add('open');
-              toggle.classList.add('open');
-            }
+          // Close all others
+          document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.setAttribute('aria-expanded', 'false');
           });
-        }
+          document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+          document.querySelectorAll('.faq-toggle').forEach(t => t.classList.remove('open'));
+
+          // Toggle current
+          if (!isOpen) {
+            button.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+            toggle.classList.add('open');
+          }
+        });
       });
     });
   </script>

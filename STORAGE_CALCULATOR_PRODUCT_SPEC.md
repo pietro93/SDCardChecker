@@ -356,6 +356,127 @@ All devices are ready for Phase 0 and Phase 1 pages.
 
 ---
 
+## 6. Implementation Quality Requirements
+
+### 6A. Accessibility (WCAG 2.1 AA Compliance)
+
+#### Form Controls
+- **All numeric inputs:**
+  - Include `min`, `max`, and `step` attributes
+  - Include `aria-label` describing the field
+  - Validate on `@input` event to prevent invalid values
+  - Display error feedback via visual indicator (red border)
+
+- **FAQ/Advanced Options (Accordion):**
+  - Use semantic `<button>` element (not `<summary>` alone)
+  - Include `role="button"` and `tabindex="0"` for keyboard access
+  - Add `aria-expanded` attribute (true/false)
+  - Add `aria-controls="id"` pointing to content container
+  - Content container has `id` matching `aria-controls`
+  - Keyboard support: Enter/Space toggles state
+
+- **Unit Clarification:**
+  - Bitrate fields include tooltip/help text
+  - Tooltip explains Mbps vs MB/s conversion (1 Mbps ≈ 0.125 MB/s)
+  - Use `aria-describedby` to link input to help text
+  - Help text in `<p>` with matching `id`
+
+#### Input Validation
+```javascript
+validateNumericInput(event, min, max) {
+  const input = event.target;
+  const value = parseFloat(input.value);
+  
+  // Prevent NaN
+  if (isNaN(value)) {
+    input.classList.add('border-red-500');
+    return false;
+  }
+  
+  // Clamp to min/max
+  if (min !== undefined && value < min) input.value = min;
+  if (max !== undefined && value > max) input.value = max;
+  
+  input.classList.remove('border-red-500');
+  return true;
+}
+```
+
+**Applied to all numeric inputs:**
+- Video: resolution, fps, bitrate, duration (hours/minutes)
+- Photo: photo count, file size
+- Continuous: bitrate, hours per day, days needed
+- Reverse: bitrate, file size
+
+### 6B. Default State (Page Load Optimization)
+
+**On page load, show pre-calculated result:**
+- Prevents empty results view
+- Provides immediate value demonstration
+- Uses default preset values:
+  - **Video:** 4K 60fps H.264 (150Mbps) × 2 hours
+  - **Photo:** 1000 photos × 2.5MB (5MP JPEG)
+  - **Continuous:** 1080p (5Mbps) × 24 hours/day × 7 days
+
+**Implementation:**
+```javascript
+loadDefaultResult() {
+  if (!this.showDefaultResult) return;
+  
+  const input = {
+    scenario: this.activeScenario,
+    bitrateMbps: this.forward.video.bitrateMbps,
+    durationHours: this.forward.video.durationHours,
+    overheadPercent: this.forward.overheadPercent
+  };
+  
+  this.result = StorageCalculator.calculateForward(input);
+}
+```
+
+**Benefits:**
+- Users see immediate answer before interaction
+- Demonstrates calculator utility upfront
+- Increases engagement and reduces bounce rate
+- Can be disabled via `showDefaultResult: false`
+
+### 6C. Data Loading & Performance
+
+**Calculator Presets Bundle:**
+- All device presets pre-loaded with HTML (no async fetch on load)
+- For Phase 0 (Video/Photo), no device data needed
+- For Phase 1, presets bundled in `calculator-devices.json`
+
+**Loading Strategy:**
+1. Inline presets in page `<script>` or early fetch
+2. Show loading state in device dropdown while fetching
+3. Cache loaded devices in sessionStorage
+
+### 6D. Error Handling
+
+**Input Validation Feedback:**
+- Invalid numeric input: Red border on field
+- Alert user only for critical errors (calculation failure)
+- Log non-critical errors to console (e.g., card recommendations load failure)
+- Graceful degradation: Show basic results even if card recommendations fail
+
+**Example:**
+```javascript
+calculate() {
+  const input = this._buildForwardInput();
+  
+  // Client-side validation
+  if (numericFields.some(val => isNaN(val) || val === '')) {
+    // Visual feedback already applied by validateNumericInput
+    return;
+  }
+  
+  this.result = StorageCalculator.calculateForward(input);
+}
+```
+
+---
+
 This section defines the exact data structure needed to populate device dropdowns in Phase 1 calculators. Reference `data/calculator-devices.json` for the schema implementation:
 
 ```json

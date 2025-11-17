@@ -93,15 +93,45 @@ class CalculatorUI {
       },
 
       // Calculation Results
-      result: null,
-      hasCalculated: false,
+       result: null,
+       hasCalculated: false,
+       showDefaultResult: true, // Show pre-calculated result on page load
 
-      // UI Helpers
-      readonly: {
-        resolutions: ['1080p', '2K', '4K', '6K'],
-        fpsOptions: [24, 30, 60, 120],
-        codecOptions: ['H.264', 'H.265', 'ProRes'],
-        cardCapacities: [32, 64, 128, 256, 512]
+       // UI State
+       advancedExpanded: false,
+       speedClassExpanded: false,
+
+       // UI Helpers
+       readonly: {
+         resolutions: ['1080p', '2K', '4K', '6K'],
+         fpsOptions: [24, 30, 60, 120],
+         codecOptions: ['H.264', 'H.265', 'ProRes'],
+         cardCapacities: [32, 64, 128, 256, 512]
+       },
+
+      /**
+       * Validate numeric input with range checking
+       * @private
+       */
+      validateNumericInput(event, min, max) {
+        const input = event.target;
+        const value = parseFloat(input.value);
+        
+        if (isNaN(value)) {
+          input.classList.add('border-red-500');
+          return false;
+        }
+        
+        if (min !== undefined && value < min) {
+          input.value = min;
+        }
+        
+        if (max !== undefined && value > max) {
+          input.value = max;
+        }
+        
+        input.classList.remove('border-red-500');
+        return true;
       },
 
       /**
@@ -358,6 +388,29 @@ class CalculatorUI {
         this.result = null;
         this.hasCalculated = false;
         this.mode = 'forward';
+        this.advancedExpanded = false;
+        this.speedClassExpanded = false;
+      },
+
+      /**
+       * Calculate and display default result on page load
+       * Shows immediate value before user interaction
+       */
+      loadDefaultResult() {
+        if (!this.showDefaultResult) return;
+        
+        try {
+          const input = {
+            scenario: this.activeScenario,
+            bitrateMbps: this.forward.video.bitrateMbps,
+            durationHours: this.forward.video.durationHours,
+            overheadPercent: this.forward.overheadPercent
+          };
+          
+          this.result = StorageCalculator.calculateForward(input);
+        } catch (error) {
+          console.warn('Failed to load default result:', error);
+        }
       },
 
       /**
