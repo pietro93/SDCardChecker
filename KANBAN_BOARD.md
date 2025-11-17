@@ -82,27 +82,28 @@ When GSC shows demand for a device:
 ### Phase 0: Storage Calculator (Video + Photo)
 - **Owner:** Amp
 - **Timeline:** Week 1 (Nov 17-24)
-- **Status:** 🟡 Templates Complete
+- **Status:** 🟡 Build Path Issues (Template fixes applied)
 - **Files:**
   - `src/js/calculator.js` (math engine, formulas, speed class mapping)
   - `src/js/calculator-ui.js` (Alpine.js state, form management)
-  - `src/templates/calculator/video-storage-calculator.html`
-  - `src/templates/calculator/photo-storage-calculator.html`
-  - Build output: `dist/tools/video-storage-calculator/index.html`
-  - Build output: `dist/tools/photo-storage-calculator/index.html`
+  - `src/templates/calculator/video-storage-calculator.html` ✅ Fixed asset paths
+  - `src/templates/calculator/photo-storage-calculator.html` ✅ Fixed asset paths
+  - Build output target: `dist/tools/calculators/video-storage/index.html`
+  - Build output target: `dist/tools/calculators/photo-storage/index.html`
 - **Progress:**
   - ✅ calculator.js (math engine, all formulas, speed class mapping)
   - ✅ calculator-ui.js (Alpine.js state, form management, results)
-  - ✅ Video Storage Calculator page (Hero, FAQ, schema, copy)
-  - ✅ Photo Storage Calculator page (Hero, FAQ, schema, copy)
-  - ✅ Build script generating to dist/tools/
-  - 🔄 Testing (form inputs, reverse toggle, mobile UX, GA4)
-  - 🔄 Deployment routing setup
+  - ✅ Video Storage Calculator page (Hero, FAQ, schema, copy, asset paths fixed)
+  - ✅ Photo Storage Calculator page (Hero, FAQ, schema, copy, asset paths fixed)
+  - ✅ Build script paths updated to `/tools/calculators/[slug]/`
+  - ✅ CSS & JS paths updated to `/assets/css/` and `/assets/js/`
+  - 🔄 Full build deployment (file lock issue blocking)
+  - ⏳ Testing (form inputs, reverse toggle, mobile UX, GA4)
   - ⏳ Integration with existing card recommendation data
   - ⏳ Mobile responsiveness check (44px tap targets)
   - ⏳ Core Web Vitals optimization (LCP, CLS, INP)
-- **Blockers:** None
-- **Next step:** Test full flow, integrate card recommendations, verify GA4 tracking
+- **Blockers:** Windows file lock on dist/categories/cameras/index.html blocking full build
+- **Next step:** Close file explorer/antivirus locks, retry build, then test full flow
 
 ---
 
