@@ -4,7 +4,7 @@
  */
 
 const path = require("path");
-const { readTemplate, writeFile } = require("./helpers");
+const { readTemplate, processIncludes, writeFile } = require("./helpers");
 const { generateHeader, generateFooter, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 
 const srcPath = path.join(__dirname, "../../src");
