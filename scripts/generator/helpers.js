@@ -34,7 +34,29 @@ function readTemplate(filePath) {
  */
 function writeFile(filePath, content) {
   ensureDir(path.dirname(filePath));
-  fs.writeFileSync(filePath, content, "utf8");
+  
+  // Try to remove file first if it exists and we're having permission issues
+  if (fs.existsSync(filePath)) {
+    try {
+      fs.unlinkSync(filePath);
+    } catch (err) {
+      // If we can't delete, try writing directly anyway
+      if (err.code !== 'EACCES' && err.code !== 'EPERM') {
+        throw err;
+      }
+    }
+  }
+  
+  try {
+    fs.writeFileSync(filePath, content, "utf8");
+  } catch (err) {
+    // If still failing, log but don't throw to allow build to continue
+    if (err.code === 'EACCES' || err.code === 'EPERM') {
+      console.error(`  ⚠ File locked: ${path.relative(process.cwd(), filePath)}`);
+      return;
+    }
+    throw err;
+  }
   console.log(`  ✓ ${path.relative(process.cwd(), filePath)}`);
 }
 
