@@ -38,14 +38,14 @@
     <main class="flex-1">
       <!-- Hero Section -->
       <div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative">
-        <img src="/img/calculator/timelapse.webp" alt="Timelapse photography storage planning" class="w-full object-cover hero-image" width="1200" height="350" loading="lazy" />
+        <img src="/img/calculator/timelapse.webp" alt="Timelapse photography long-duration project" class="w-full object-cover hero-image" width="1200" height="350" loading="lazy" />
         <div class="hero-overlay">
           <div class="hero-title-wrapper">
             <h1 class="hero-title" style="color: #ffffff;">
               How Much Storage Does Your Timelapse Project Need?
             </h1>
             <h2 class="hero-subtitle" style="color: #ffffff;">
-              Calculate Photo Count, Storage Requirements & Final Video Duration
+              Calculate Intervals, Video Length & Storage for Multi-Day Projects
             </h2>
           </div>
         </div>
@@ -280,6 +280,42 @@
   {{GROW_SCRIPT}}
 
   <style>
+    /* Hero Image with Overlay Title */
+    .hero-image-container {
+      position: relative;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+    }
+
+    .hero-title-wrapper {
+      text-align: center;
+    }
+
+    .hero-title {
+      @apply text-3xl md:text-4xl font-bold text-center px-4;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.5);
+      filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+      @apply text-lg md:text-xl font-semibold text-center px-4;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.5);
+      filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+    }
+
     .faq-item { @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow; }
     .faq-heading { @apply m-0; }
     .faq-question {
