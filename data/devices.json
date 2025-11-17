@@ -131,13 +131,13 @@
       "whySpecs": "Nintendo Switch doesn't require high-speed cards for game loading. Any microSD card works, but V30 cards offer best reliability. Cheaper slower cards still work but may have slightly longer load times. Note: While Nintendo theoretically supports up to 2TB, the largest tested and verified working capacity is 1TB.",
       "recommendedBrands": [
         {
+          "id": "adata-premier-microsd"
+        },
+        {
+          "id": "transcend-standard-microsd"
+        },
+        {
           "id": "sandisk-ultra-microsd"
-        },
-        {
-          "id": "kingston-canvas-go-plus"
-        },
-        {
-          "id": "noname-class-10-microsd"
         }
       ],
       "faq": [
@@ -185,13 +185,13 @@
       "whySpecs": "OLED model has identical storage requirements as original Switch. Any microSD works. V30 recommended for reliability but not required. Note: While Nintendo theoretically supports up to 2TB, the largest tested and verified working capacity is 1TB.",
       "recommendedBrands": [
         {
-          "id": "sandisk-ultra-microsd"
+          "id": "adata-premier-microsd"
         },
         {
-          "id": "crucial-mx500-microsd"
+          "id": "transcend-standard-microsd"
         },
         {
-          "id": "budget-class-10-microsd"
+          "id": "kingston-canvas-go-plus-ultra"
         }
       ],
       "faq": [
@@ -429,13 +429,13 @@
       "whySpecs": "Steam Deck uses UHS-I interface. While V30 works, actual performance limited by UHS-I speeds. Any V30 microSD card sufficient. Note: While theoretically supporting up to 2TB, the largest tested and verified working capacity is 1TB.",
       "recommendedBrands": [
         {
+          "id": "kingston-canvas-go-plus-ultra"
+        },
+        {
+          "id": "adata-premier-pro-microsd"
+        },
+        {
           "id": "sandisk-ultra-microsd"
-        },
-        {
-          "id": "kingston-canvas-go-plus"
-        },
-        {
-          "id": "crucial-mx500-microsd"
         }
       ],
       "faq": [
@@ -3970,13 +3970,19 @@
         ],
         "maxCapacity": "512GB tested"
       },
-      "whySpecs": "Features two microSD slots. Slot 1 is for the Operating System (OS); using an A1/A2 card here improves menu speed. Slot 2 is for games, where a standard, large-capacity card is perfect. Do not use the cheap generic cards that come with the device.",
+      "whySpecs": "Features two microSD slots. Slot 1 is for the Operating System (OS); using an A1/A2 application-rated card here significantly improves menu speed and system responsiveness. Slot 2 is for games, where a standard large-capacity card works well. We strongly recommend replacing the low-quality cards that come included with the device with trusted brands.",
       "recommendedBrands": [
+        {
+          "id": "kingston-canvas-go-plus-ultra"
+        },
         {
           "id": "sandisk-ultra-microsd"
         },
         {
           "id": "samsung-evo-select-microsd"
+        },
+        {
+          "id": "transcend-standard-microsd"
         }
       ],
       "faq": [
@@ -6872,19 +6878,25 @@
       ],
       "maxCapacity": "512GB tested"
     },
-    "whySpecs": "Features two microSD slots. Slot 1 is for the Operating System (OS); using an A1/A2 card here improves menu speed. Slot 2 is for games, where a standard, large-capacity card is perfect. Do not use the cheap generic cards that come with the device.",
+    "whySpecs": "Features two microSD slots. Slot 1 is for the Operating System (OS); using an A1/A2 application-rated card here significantly improves menu speed and system responsiveness. Slot 2 is for games, where a standard large-capacity card works well. We strongly recommend replacing the low-quality cards that come included with the device with trusted brands.",
     "recommendedBrands": [
+      {
+        "id": "kingston-canvas-go-plus-ultra"
+      },
       {
         "id": "sandisk-ultra-microsd"
       },
       {
         "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "transcend-standard-microsd"
       }
     ],
     "faq": [
       {
         "q": "Should I replace the SD card that came with my RG35XX?",
-        "a": "<b>Yes, immediately.</b> The stock SD cards included with these devices are very low quality and prone to failure. For a reliable experience, purchase two new cards from a reputable brand like SanDisk or Samsung."
+        "a": "<b>Yes, immediately.</b> The stock SD cards included with these devices are very low quality and prone to failure. For a reliable experience, purchase two new cards from a reputable brand like SanDisk, Kingston, Samsung, or Transcend."
       }
     ],
     "relatedDevices": [
