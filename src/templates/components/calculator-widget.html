@@ -7,6 +7,13 @@
 <div x-data="calculatorState" class="calculator-widget py-8">
     <!-- Layer 1: Use Case Selection -->
     <div x-show="currentLayer === 'usecase'" class="animate-fade">
+        <div class="mb-6">
+            <button @click="reset()" x-show="hasCalculated"
+                class="text-sm px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 transition">
+                ← Change Scenario
+            </button>
+        </div>
+
         <h3 class="text-xl font-bold mb-6">What are you recording?</h3>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -200,15 +207,15 @@
         </div>
 
         <!-- Advanced Options (All Modes) -->
-        <details class="mt-6 p-4 border border-gray-300 rounded-lg" x-ref="advancedOptions">
-            <summary role="button" tabindex="0"
-                class="cursor-pointer font-bold text-sm py-2 px-2 hover:bg-gray-100 rounded"
-                @click.prevent="advancedExpanded = !advancedExpanded" :aria-expanded="advancedExpanded"
-                aria-controls="advanced-content">
-                ⚙️ Advanced Options
-            </summary>
+        <div class="mt-6 border border-gray-300 rounded-lg overflow-hidden">
+            <button type="button" @click="advancedExpanded = !advancedExpanded" :aria-expanded="advancedExpanded"
+                aria-controls="advanced-content"
+                class="w-full cursor-pointer font-bold text-sm py-2 px-4 hover:bg-gray-100 text-left flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition">
+                <span>⚙️ Advanced Options</span>
+                <span :class="advancedExpanded ? 'rotate-180' : ''" class="transition-transform">▼</span>
+            </button>
 
-            <div id="advanced-content" class="mt-4 space-y-4" x-show="advancedExpanded">
+            <div id="advanced-content" class="p-4 space-y-4" x-show="advancedExpanded" @click.outside="advancedExpanded = false">
                 <div>
                     <label class="block text-sm font-bold mb-2">
                         Overhead Buffer: <span x-text="`${forward.overheadPercent}%`"></span>
@@ -227,7 +234,7 @@
                     <span class="text-sm font-bold">Compare H.264 vs H.265 vs ProRes</span>
                 </label>
             </div>
-        </details>
+        </div>
 
         <!-- Calculate Button -->
         <button @click="calculate()" :disabled="!isInputValid()"
@@ -374,15 +381,15 @@
             </div>
 
             <!-- Speed Class Reference Table -->
-            <details class="mt-6 p-4 border border-gray-300 rounded-lg">
-                <summary role="button" tabindex="0"
-                    class="cursor-pointer font-bold text-sm py-2 px-2 hover:bg-gray-100 rounded"
-                    @click.prevent="speedClassExpanded = !speedClassExpanded" :aria-expanded="speedClassExpanded"
-                    aria-controls="speed-class-content">
-                    📊 Speed Class Reference
-                </summary>
+            <div class="mt-6 border border-gray-300 rounded-lg overflow-hidden">
+                <button type="button" @click="speedClassExpanded = !speedClassExpanded" :aria-expanded="speedClassExpanded"
+                    aria-controls="speed-class-content"
+                    class="w-full cursor-pointer font-bold text-sm py-2 px-4 hover:bg-gray-100 text-left flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition">
+                    <span>📊 Speed Class Reference</span>
+                    <span :class="speedClassExpanded ? 'rotate-180' : ''" class="transition-transform">▼</span>
+                </button>
 
-                <div id="speed-class-content" class="mt-4 overflow-x-auto" x-show="speedClassExpanded">
+                <div id="speed-class-content" class="p-4 overflow-x-auto" x-show="speedClassExpanded">
                     <table class="w-full text-sm" role="table">
                         <thead class="bg-gray-100">
                             <tr>
@@ -404,7 +411,7 @@
                         </tbody>
                     </table>
                 </div>
-            </details>
+            </div>
         </template>
     </div>
 </div>

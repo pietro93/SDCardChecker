@@ -362,19 +362,19 @@ class CalculatorUI {
           if (this.activeScenario === 'photo') {
             return {
               title: 'Photo Capacity:',
-              photoCount: this.result.photoCount,
+              photoCount: this.result?.photoCount || 0,
               recordingTimeString: null,
-              speedClass: 'V30',
-              minWriteSpeed: 30
+              speedClass: this.result?.speedClass || 'V30',
+              minWriteSpeed: this.result?.minWriteSpeed || 30
             };
           } else {
             return {
               title: 'Your Card Duration:',
-              recordingTimeString: this.result.recordingTimeString,
-              recordingHours: this.result.recordingHours,
-              daysFor24h: this.result.daysFor24h,
-              speedClass: this.result.speedClass,
-              minWriteSpeed: this.result.minWriteSpeed
+              recordingTimeString: this.result?.recordingTimeString || '0 hours',
+              recordingHours: this.result?.recordingHours || 0,
+              daysFor24h: this.result?.daysFor24h || 0,
+              speedClass: this.result?.speedClass || 'V30',
+              minWriteSpeed: this.result?.minWriteSpeed || 30
             };
           }
         }

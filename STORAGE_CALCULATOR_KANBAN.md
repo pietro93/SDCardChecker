@@ -121,6 +121,11 @@
   - ✅ Q6: Overprovision recommendations (expanded, ~150 words)
   - Schema: FAQPage (JSON-LD) ✅
 
+  - [ ] **Integration with sdcards.json dataset**
+   - [ ] Give user option to select a specific card from list instead of inputting data manually
+   - [ ] Selecting card from list should automatically fill input fields based on data
+   - [ ] User shold be able to start typing in name of card to better filter/search dataset
+
 - [ ] **Related Resources Section** (TODO)
   - [ ] Link to "SD Card Speed Class Guide" (need to create page)
   - [ ] Link to "Video Bitrate Comparison Guide" (need to create page)
