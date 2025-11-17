@@ -182,7 +182,7 @@
         "maxCapacity": "2TB (theoretical)",
         "testedMaxCapacity": "1TB"
       },
-      "whySpecs": "OLED model has identical storage requirements as original Switch. Any microSD works. V30 recommended for reliability but not required. Note: While Nintendo theoretically supports up to 2TB, the largest tested and verified working capacity is 1TB.",
+      "whySpecs": "OLED model has identical storage requirements as original Switch. While the device is not demanding, quality microSD cards from reputable brands ensure reliability and longevity. V30 rated cards are recommended for peace of mind. Note: While Nintendo theoretically supports up to 2TB, the largest tested and verified working capacity is 1TB.",
       "recommendedBrands": [
         {
           "id": "adata-premier-microsd"
@@ -426,7 +426,7 @@
         "maxCapacity": "2TB (theoretical)",
         "testedMaxCapacity": "1TB"
       },
-      "whySpecs": "Steam Deck uses UHS-I interface. While V30 works, actual performance limited by UHS-I speeds. Any V30 microSD card sufficient. Note: While theoretically supporting up to 2TB, the largest tested and verified working capacity is 1TB.",
+      "whySpecs": "Steam Deck uses UHS-I interface. While V30 works, actual performance is limited by UHS-I speeds. Select from reputable brands offering V30 rated cards to ensure reliable performance. Note: While theoretically supporting up to 2TB, the largest tested and verified working capacity is 1TB.",
       "recommendedBrands": [
         {
           "id": "kingston-canvas-go-plus-ultra"
@@ -648,10 +648,13 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Professional flagship 8K camera. Requires CFexpress Type B for maximum performance. Dual card slots for backup.",
+      "whySpecs": "Professional flagship 8K camera. Requires CFexpress Type B for maximum performance or XQD as a legacy option. Dual card slots for backup and redundancy.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-cfexpress"
+        },
+        {
+          "id": "lexar-professional-1000x-sd"
         },
         {
           "id": "nikon-xqd-memory-card"
@@ -744,7 +747,7 @@
         "maxCapacity": "2TB (theoretical)",
         "testedMaxCapacity": "1TB"
       },
-      "whySpecs": "The Switch Lite has identical storage requirements to the original Switch. It does not need high-speed cards, so any reputable microSD card will work perfectly for storing and playing games.",
+      "whySpecs": "The Switch Lite has identical storage requirements to the original Switch. While it doesn't need high-speed cards, choosing from trusted brands ensures reliability and longevity for all your games.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -1090,7 +1093,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "The VIOFO A229 Duo records dual-channel 2K video continuously in loop mode. VIOFO officially recommends U3/V30 High Endurance cards to handle the high bitrate and constant rewriting. Regular cards will fail within months; High Endurance cards are rated for years of 24/7 recording.",
+      "whySpecs": "The VIOFO A229 Duo records dual-channel 2K video continuously in loop mode. VIOFO officially recommends U3/V30 High Endurance cards to handle the high bitrate and constant rewriting. Non-endurance cards will fail within months; High Endurance cards are rated for years of 24/7 recording.",
       "recommendedBrands": [
         {
           "id": "sandisk-max-endurance"
@@ -1105,8 +1108,8 @@
           "a": "<b>128GB to 256GB is recommended for the A229 Duo.</b> A 128GB card provides approximately 10-12 hours of dual-channel recording before loop overwrite begins. For longer retention, use 256GB for 20-24 hours of footage."
         },
         {
-          "q": "Can I use a regular SD card instead of High Endurance?",
-          "a": "<b>No, absolutely not.</b> VIOFO explicitly warns that regular cards will fail quickly due to constant rewriting. Always use High Endurance cards (SanDisk MAX Endurance or Samsung PRO Endurance) to prevent data loss and card failure."
+          "q": "Can I use a non-endurance SD card instead of High Endurance?",
+          "a": "<b>No, absolutely not.</b> VIOFO explicitly warns that non-endurance cards will fail quickly due to constant rewriting. Always use High Endurance cards (SanDisk MAX Endurance or Samsung PRO Endurance) to prevent data loss and card failure."
         }
       ],
       "relatedDevices": [
@@ -1161,7 +1164,7 @@
         "wyze-cam-v3",
         "eufy-solocam-s340"
       ],
-      "notes": "Premium UK dash cam brand with strong search volume. Nextbase official support specifically lists approved High Endurance cards and warns against using standard cards. 256GB is official maximum tested capacity."
+      "notes": "Premium UK dash cam brand with strong search volume. Nextbase official support specifically lists approved High Endurance cards and warns against using non-endurance cards. 256GB is official maximum tested capacity."
     },
     {
       "id": "dji-air-3",
@@ -1399,7 +1402,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "The Fire HD 10 supports microSD expansion up to 1TB for storing apps, videos, books, and photos. While any Class 10 card works for basic use, a V30 card is recommended for downloading and playing HD video content smoothly.",
+      "whySpecs": "The Fire HD 10 supports microSD expansion up to 1TB for storing apps, videos, books, and photos. For basic use, Class 10 cards suffice; however, a V30 card from a reputable brand is recommended for smooth downloading and playback of HD video content.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -1504,7 +1507,7 @@
       "faq": [
         {
           "q": "Do I need a special SD card for security cameras?",
-          "a": "<b>Yes, always use a High Endurance microSD card for security cameras.</b> Regular cards are not built for constant rewriting and will fail quickly with 24/7 recording. High Endurance cards are specifically designed for this workload and last much longer."
+          "a": "<b>Yes, always use a High Endurance microSD card for security cameras.</b> Non-endurance cards are not built for constant rewriting and will fail quickly with 24/7 recording. High Endurance cards are specifically designed for this workload and last much longer."
         },
         {
           "q": "What capacity should I get for continuous recording?",
@@ -3846,7 +3849,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Dash cams constantly rewrite data, which destroys regular cards. A High Endurance card is mandatory. Garmin requires Class 10 minimum, but U3 is recommended for stable 1080p recording and reliability.",
+      "whySpecs": "Dash cams constantly rewrite data, which destroys non-endurance cards. A High Endurance card is mandatory. Garmin requires Class 10 minimum, but U3 is recommended for stable 1080p recording and reliability.",
       "recommendedBrands": [
         {
           "id": "sandisk-max-endurance"
@@ -3858,7 +3861,7 @@
       "faq": [
         {
           "q": "Why do I need a 'High Endurance' card for my Garmin?",
-          "a": "<b>Because regular cards will fail.</b> Dash cams record in a continuous loop, writing and rewriting data constantly. This intense workload wears out standard cards quickly. High Endurance cards are specifically designed for this and last many times longer."
+          "a": "<b>Because non-endurance cards will fail.</b> Dash cams record in a continuous loop, writing and rewriting data constantly. This intense workload wears out standard cards quickly. High Endurance cards are specifically designed for this and last many times longer."
         }
       ],
       "relatedDevices": [
@@ -4060,15 +4063,18 @@
         ],
         "maxCapacity": "No official limit (256GB+ tested)"
       },
-      "whySpecs": "The D3500 is an entry-level DSLR shooting 1080p video. A standard Class 10 card is sufficient for all photo and video functions. V30 cards are not necessary and provide no performance benefit.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-ultra-sd-uhs1"
-        },
-        {
-          "id": "kingston-canvas-select"
-        }
-      ],
+      "whySpecs": "The D3500 is an entry-level DSLR shooting 1080p video. A reliable Class 10 (U1) card from a trusted brand is sufficient for all photo and video functions. V30 cards are not necessary and provide no performance benefit.",
+       "recommendedBrands": [
+         {
+           "id": "sandisk-ultra-sd-uhs1"
+         },
+         {
+           "id": "kingston-canvas-select"
+         },
+         {
+           "id": "lexar-professional-633x-sd"
+         }
+       ],
       "faq": [
         {
           "q": "Do I need a fast SD card for the Nikon D3500?",
@@ -4244,18 +4250,18 @@
       "faq": [
         {
           "q": "Do I need a special SD card for security cameras?",
-          "a": "<b>Yes, always use a High Endurance microSD card for security cameras.</b> Regular cards are not built for constant rewriting and will fail quickly with 24/7 recording. High Endurance cards are specifically designed for this workload and last much longer."
+          "a": "<b>Yes, always use a High Endurance microSD card for security cameras.</b> Non-endurance cards are not built for constant rewriting and will fail quickly with 24/7 recording. High Endurance cards are specifically designed for this workload and last much longer."
         },
         {
           "q": "What capacity should I get for continuous recording?",
           "a": "<b>64GB to 128GB is ideal for most users.</b> A 64GB card stores approximately 1-2 weeks of continuous video on standard settings. Heavy users or those wanting longer retention should opt for 128GB or 256GB."
         }
-      ],
-      "relatedDevices": [
+        ],
+        "relatedDevices": [
         "reolink-e1-pro",
         "garmin-66s-dash-cam"
-      ],
-      "notes": "Extremely popular budget security camera with massive search volume. Wyze official documentation confirms microSD support up to 256GB (tested). Requires FAT32 for 32GB or smaller, exFAT for 64GB+."
+        ],
+        "notes": "Extremely popular budget security camera with massive search volume. Wyze official documentation confirms microSD support up to 256GB (tested). Requires FAT32 for 32GB or smaller, exFAT for 64GB+."
     },
     {
       "id": "lenovo-tab-m10-plus-gen3",
@@ -6754,7 +6760,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "Dash cams constantly rewrite data, which destroys regular cards. A High Endurance card is mandatory. Garmin requires Class 10 minimum, but U3 is recommended for stable 1080p recording and reliability.",
+    "whySpecs": "Dash cams constantly rewrite data, which destroys non-endurance cards. A High Endurance card is mandatory. Garmin requires Class 10 minimum, but U3 is recommended for stable 1080p recording and reliability.",
     "recommendedBrands": [
       {
         "id": "sandisk-max-endurance"
@@ -6766,10 +6772,10 @@
     "faq": [
       {
         "q": "Why do I need a 'High Endurance' card for my Garmin?",
-        "a": "<b>Because regular cards will fail.</b> Dash cams record in a continuous loop, writing and rewriting data constantly. This intense workload wears out standard cards quickly. High Endurance cards are specifically designed for this and last many times longer."
+        "a": "<b>Because non-endurance cards will fail.</b> Dash cams record in a continuous loop, writing and rewriting data constantly. This intense workload wears out standard cards quickly. High Endurance cards are specifically designed for this and last many times longer."
       }
-    ],
-    "relatedDevices": [
+      ],
+      "relatedDevices": [
       "viofo-a229-duo",
       "nextbase-622gw"
     ],
