@@ -1,12 +1,12 @@
 # GSC Analysis & Insights
 
-**Last Updated:** November 16, 2025
-**Data Period:** Nov 11 - Nov 16, 2025 (5 days since launch)
+**Last Updated:** November 17, 2025
+**Data Period:** Nov 11 - Nov 17, 2025 (6 days since launch)
 **Link:** Referenced in KANBAN_BOARD.md
 
 ---
 
-## 📊 Latest Update (Nov 16 - All Time Since Launch)
+## 📊 Latest Update (Nov 17 - All Time Since Launch)
 
 **Total Search Performance (Cumulative):**
 - **Total Impressions:** 1,693 total across all pages
@@ -110,6 +110,113 @@
 | /about | 1 | 1 | 100% |
 
 **Key Insight:** Different devices are now converting clicks - not just Raspberry Pi 5. The Osmo Pocket 3 got its first click (43 impressions → 1 click). Camera devices (Sony, Canon, Leica, Nikon, Fujifilm) showing better CTR patterns than gaming devices.
+
+## 📊 24-Hour Update (Nov 17, Past 24 Hours)
+
+**Data Summary:**
+- Impressions: Growing from organic search visibility
+- Clicks: 1 (ROG Ally X - new device breakthrough!)
+- **Top new observation:** Gaming devices dominating search intent (Legion Go variants, ROG Ally)
+
+### New Top Search Queries (24-hour data)
+
+**Highest Volume (Emerging Patterns):**
+1. **Gaming Handhelds** (Legion Go family) - 4+ impression queries
+   - "sd card for legion go" (4 impressions)
+   - "best sd card for legion go" (2 impressions)
+   - "legion go s sd card speed" (2 impressions)
+   - "best sd card for legion go s" (1 impression)
+   - "legion go s sd card compatibility" (not shown but related)
+   - **Status:** NOT IN DATASET - CRITICAL GAP
+   - **Note:** These are appearing in search but we don't have Legion Go pages
+
+2. **DJI Action Cameras** (Action-oriented, high specs)
+   - "dji mini 4k micro sd card compatibility" (2 impressions)
+   - "dji mini 4k sd card requirements" (1 impression)
+   - "dji mini 3 sd card requirements" (1 impression)
+   - "what sd card does dji mini 3 use" (1 impression)
+   - **Status:** DJI Mini 4K & Mini 3 pages exist, need optimization
+
+3. **Mirrorless Cameras** (Premium, high-end specs)
+   - "fujifilm x-t50 sd card compatibility" (2 impressions)
+   - "best sd card for fx30" (2 impressions)
+   - "fx30 sd card requirements" (1 impression)
+   - "canon eos r50 sd card type" (2 impressions)
+   - "canon eos r50 sd card" (1 impression)
+   - "canon r10 recommended sd card" (1 impression)
+   - "sony a6700 sd card" (implied from previous)
+
+4. **Niche/Premium Cameras** (High intent, low volume but convertible)
+   - "best sd card for leica q2" (1 impression) - We have Leica Q3-43 but not Q2
+   - "leica d-lux 8 sd card" (1 impression) - NEW DEVICE
+   - "best sd card for canon g7x mark ii" (1 impression) - NEW DEVICE
+   - "x100v sd card" (1 impression) - Fujifilm, NEW DEVICE variant
+   - "nikon z50 ii sd card" (2 impressions) - NEW DEVICE
+   - "nikon z50 ii recommended sd card" (1 impression) - NEW DEVICE
+   - "nikon d7500 memory card type" (1 impression) - NEW DEVICE
+   - "sony fx3 sd card" (1 impression) - Duplicate of FX3 (we have)
+   - "best sd card for insta360 x4" (1 impression) - NEW DEVICE
+   - "insta360 x4 memory card spec" (1 impression) - NEW DEVICE
+   - "insta 360 ace pro memory card" (1 impression) - NEW DEVICE
+
+5. **Specialty Hardware** (Rare but specific)
+   - "raspberry pi 5 16gb power consumption" (1 impression) - Related query, not SD card specific
+   - "uhs-i speed grade 3" (1 impression) - Technical spec search, potential SEO opportunity
+
+6. **NEW GAME CONSOLE/DEVICE:**
+   - "rog ally x sd card compatibility" (1 click!) - **WINNING PAGE**
+   - Already getting conversions despite limited visibility
+
+### 🎯 Critical Insights - Device Gap Analysis
+
+**IMMEDIATE ADDITIONS NEEDED (Getting 2+ impressions):**
+1. **Lenovo Legion Go** - 4+ combined search queries
+   - Variations: "Legion Go", "Legion Go S", "Legion Go 2"
+   - Search intent: Handheld gaming + SD card specs
+   - Priority: **CRITICAL** - Multiple distinct queries, zero pages
+
+2. **Fujifilm X-T50** - 2 impressions
+   - New camera model, getting visibility
+   - We have X100VI but not X-T50
+   - Priority: **HIGH**
+
+3. **Canon EOS R50** - 2+ impressions
+   - We may have R6 Mark II but not R50
+   - Priority: **HIGH**
+
+**ADD THIS WEEK (1-2 impressions, high intent):**
+4. **Nikon Z50 II** - 2 impressions
+   - Mirrorless, mid-range, specific search intent
+5. **Sony FX30** - 2 impressions  
+   - Cinema camera, high-value queries
+6. **Insta360 X4** - 1+ impressions
+   - Action camera, emerging product
+7. **Insta360 Ace Pro** - 1 impression
+   - Action camera variant
+8. **Leica D-Lux 8** - 1 impression
+   - Premium compact camera, high CTR potential
+9. **Fujifilm X100V** - 1 impression variant (we have VI, need V)
+10. **Canon PowerShot G7X Mark II** - 1 impression
+   - Premium compact, niche audience
+11. **Nikon D7500** - 1 impression
+   - DSLR, older but still relevant
+12. **Nikon ZF** - 1 impression
+   - New Nikon mount, needs coverage
+13. **DJI Mini 3** - 1+ impressions
+   - Older DJI model, still getting searches (we have Mini 4 Pro, Mini 4K)
+
+**SPECIAL CASE:**
+- **Legion Go (all variants)** should be treated as 3 separate devices or 1 device with variant options due to different SD card specs
+
+### 🚀 NEW REVENUE OPPORTUNITIES
+
+**ROG Ally X Success:** Got 1 click on "rog ally x sd card compatibility" query - this validates the gaming handheld market is converting. **Legion Go family will likely perform even better** (higher search volume = 4 impressions vs 1).
+
+**Action Camera Resurgence:** DJI Mini 4K and action camera queries are increasing. These devices have HIGH specs requirements (UHS-II, V60+) which means higher-value SD card purchases.
+
+**Specialty Camera Market:** Leica, high-end Fujifilm, Canon EOS series - these niche products get fewer impressions but tend to convert better (high-intent users).
+
+---
 
 ### 📸 Hero Image Status & Action Items
 
@@ -296,9 +403,32 @@ This is our #1 priority. The page is getting visibility but NOT converting searc
 
 ---
 
+## ⚡ QUICK ACTION PLAN (Nov 17 Priority Order)
+
+**TODAY/TOMORROW (Add missing high-demand devices):**
+1. **Lenovo Legion Go** (CRITICAL - 4+ impressions, 0 pages)
+   - Create 3 variants: Legion Go, Legion Go S, Legion Go 2
+   - Game handheld category, high specs (UHS-II, V90)
+   - Expected CTR: HIGH (gaming + niche audience pattern)
+
+2. **Canon EOS R50** (HIGH - 2+ impressions)
+3. **Fujifilm X-T50** (HIGH - 2 impressions)
+4. **Sony FX30** (HIGH - 2 impressions)
+5. **Nikon Z50 II** (HIGH - 2 impressions)
+
+**THIS WEEK (Secondary high-intent devices):**
+- Insta360 X4 + Ace Pro (action camera gap)
+- Leica D-Lux 8 (premium, convertible)
+- DJI Mini 3 (older model, still converting)
+- Fujifilm X100V (variant of X100VI)
+
+**RESULT:** Adding these 13 devices should capture ~30+ additional monthly search impressions and unlock new conversion opportunities, especially in gaming handhelds and premium camera niches.
+
+---
+
 ## 📅 Next Review Date
 
-**Nov 22** (7 days of post-title-optimization data)
+**Nov 22** (7 days of post-title-optimization data + new device additions)
 
 ---
 
