@@ -1,0 +1,208 @@
+---
+title: "Video Storage Calculator — How Much Can You Record?"
+description: "Calculate how much 4K video fits on your SD card. Instant bitrate-to-storage conversion. Compare speeds, codecs, and get card recommendations."
+url: /tools/video-storage-calculator/
+keywords: "video storage calculator, 4K video storage, how much video fits, SD card capacity, bitrate calculator"
+layout: base
+---
+
+<script src="/js/calculator.js"></script>
+<script src="/js/calculator-ui.js"></script>
+
+<div class="container py-8">
+  <!-- Hero Section -->
+  <div class="mb-12">
+    <h1 class="text-4xl font-bold mb-4">Video Storage Calculator</h1>
+    <h2 class="text-2xl text-gray-700 mb-4">How Much Can You Record?</h2>
+    <p class="text-lg text-gray-600 max-w-2xl mb-6">
+      Find out if your SD card has enough space for your next shoot. Just pick your recording quality, card size, 
+      and we'll tell you how long you can film — or how much storage you need.
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+      <div class="flex items-start">
+        <span class="text-2xl mr-3">✓</span>
+        <div>
+          <h4 class="font-bold">Instant Calculations</h4>
+          <p class="text-gray-600">Get results in seconds</p>
+        </div>
+      </div>
+      <div class="flex items-start">
+        <span class="text-2xl mr-3">✓</span>
+        <div>
+          <h4 class="font-bold">All Codecs & Bitrates</h4>
+          <p class="text-gray-600">H.264, H.265, ProRes</p>
+        </div>
+      </div>
+      <div class="flex items-start">
+        <span class="text-2xl mr-3">✓</span>
+        <div>
+          <h4 class="font-bold">Card Recommendations</h4>
+          <p class="text-gray-600">See matching cards below</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Calculator Widget -->
+  <div class="mb-12 bg-white p-8 rounded-lg border border-gray-200">
+    <script>
+      // Initialize Alpine.js data
+      document.addEventListener('alpine:init', () => {
+        Alpine.data('calculatorState', () => CalculatorUI.init({
+          defaultScenario: 'video',
+          deviceSelectorEnabled: false
+        }));
+      });
+    </script>
+    {% include "components/calculator-widget.html" %}
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="mb-12">
+    <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+    
+    <div class="space-y-4">
+      <details class="p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+        <summary class="font-bold">What's the difference between H.264, H.265, and ProRes?</summary>
+        <div class="mt-4 text-gray-700 space-y-2">
+          <p><strong>H.264:</strong> Standard codec used by most cameras. Good balance of quality and file size.</p>
+          <p><strong>H.265:</strong> Newer, more efficient. Smaller files at same quality, but requires compatible playback.</p>
+          <p><strong>ProRes:</strong> Professional codec. Larger files, but optimized for editing workflows. Requires V90 cards.</p>
+        </div>
+      </details>
+
+      <details class="p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+        <summary class="font-bold">Why do I need overhead buffer?</summary>
+        <div class="mt-4 text-gray-700">
+          <p>SD cards reserve space for metadata, file system overhead, and write inefficiency. A 10–15% buffer 
+          (default) accounts for this. If you adjust to 0%, the card will work but may fail under stress.</p>
+        </div>
+      </details>
+
+      <details class="p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+        <summary class="font-bold">What's the difference between Speed Class (V30, V60, V90)?</summary>
+        <div class="mt-4 text-gray-700 space-y-2">
+          <p><strong>V30:</strong> Minimum 30MB/s write speed. Good for 4K 30fps and most video.</p>
+          <p><strong>V60:</strong> Minimum 60MB/s write speed. Required for high-bitrate 4K 60fps video.</p>
+          <p><strong>V90:</strong> Minimum 90MB/s write speed. Professional use, 8K video, or intensive workflows.</p>
+          <p>Higher class = more expensive, but smoother recording with less risk of dropped frames.</p>
+        </div>
+      </details>
+
+      <details class="p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+        <summary class="font-bold">How do I check my camera's bitrate?</summary>
+        <div class="mt-4 text-gray-700 space-y-2">
+          <p>1. Check your camera's manual or specs page</p>
+          <p>2. Record a short video and check file properties</p>
+          <p>3. Search "[Camera Model] 4K bitrate" on YouTube — reviewers often list this</p>
+          <p>Not sure? Use the defaults in the calculator — they're appropriate for most cameras.</p>
+        </div>
+      </details>
+
+      <details class="p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+        <summary class="font-bold">Can I use slower cards (Class 10) for 4K video?</summary>
+        <div class="mt-4 text-gray-700">
+          <p>Technically possible, but risky. Class 10 cards have no guaranteed write speed, so you may experience 
+          frame drops or failed recordings during intensive shooting. Always use the recommended Speed Class.</p>
+        </div>
+      </details>
+
+      <details class="p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+        <summary class="font-bold">What if my calculation shows I need more storage than my card has?</summary>
+        <div class="mt-4 text-gray-700 space-y-2">
+          <p>You have two options:</p>
+          <p><strong>1. Bring backup cards</strong> — Swap cards when full. Practical for trips.</p>
+          <p><strong>2. Upgrade to larger capacity</strong> — Check the recommendations below for cards in your size range.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <!-- Recommended Cards Section (Post-Calc) -->
+  <div class="mb-12" id="card-recommendations" style="display: none;">
+    <h2 class="text-2xl font-bold mb-6">Recommended SD Cards for Your Needs</h2>
+    <div id="card-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Populated by JavaScript after calculation -->
+    </div>
+  </div>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Video Storage Calculator — How Much Can You Record?",
+      "description": "Calculate how much 4K video fits on your SD card. Instant bitrate-to-storage conversion. Compare speeds, codecs, and get card recommendations.",
+      "url": "https://sdcardchecker.com/tools/video-storage-calculator/",
+      "mainEntity": {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What's the difference between H.264, H.265, and ProRes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "H.264 is the standard codec. H.265 is more efficient (smaller files). ProRes is for professional editing (larger files, V90 required)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What Speed Class do I need for 4K video?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "V30 for 4K 30fps, V60 for 4K 60fps, V90 for intensive professional work."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I find my camera's bitrate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check your camera manual, record a test video and check file properties, or search for your camera model on YouTube."
+            }
+          }
+        ]
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://sdcardchecker.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://sdcardchecker.com/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Video Storage Calculator",
+            "item": "https://sdcardchecker.com/tools/video-storage-calculator/"
+          }
+        ]
+      }
+    }
+  </script>
+</div>
+
+<style>
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  details summary::before {
+    content: "▶ ";
+    margin-right: 0.5rem;
+    transition: transform 0.2s;
+  }
+  
+  details[open] summary::before {
+    transform: rotate(90deg);
+  }
+</style>

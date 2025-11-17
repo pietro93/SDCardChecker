@@ -324,7 +324,40 @@ Each Phase 1 page includes a device dropdown selector. Pages are built and teste
 
 ## 5A. Bitrate Data Schema (For Phase 1 Pages)
 
-This section defines the exact data structure needed to populate device dropdowns in Phase 1 calculators. Create `data/calculator-presets.json` with the following schema:
+### ✅ DATASETS ALREADY CREATED
+
+The following 10 devices have been added to `data/calculator-devices.json` and `data/calculator-content.json`:
+
+**Action Cameras:**
+- GoPro Hero Max (360° recording, 5.6K 30fps)
+- GoPro Hero 11 Black (5.3K 60fps, 4K 120fps)
+
+**Mirrorless/DSLR Cameras:**
+- Canon EOS R6 (4K 60fps, dual-slot recording)
+- Fujifilm X-S10 (4K 30fps, single slot)
+- Fujifilm X-S20 (6.2K 30fps, V60 required)
+- Fujifilm X-T5 (6.2K + ProRes internal, V90 for ProRes)
+- Sony a6400 (4K 30fps XAVC S)
+
+**Drones:**
+- DJI Mini 3 Pro (4K 60fps)
+
+**Surveillance & Continuous:**
+- Reolink E1 Pro (2K continuous, HIGH_ENDURANCE required)
+- Garmin Dash Cam 66W (1440p 60fps continuous, HIGH_ENDURANCE required)
+
+These datasets include:
+- Bitrate specifications for each recording mode
+- Speed class requirements (V30, V60, V90)
+- Compatible card recommendations
+- FAQ content and SEO metadata
+- Related device links for cross-page navigation
+
+All devices are ready for Phase 0 and Phase 1 pages.
+
+---
+
+This section defines the exact data structure needed to populate device dropdowns in Phase 1 calculators. Reference `data/calculator-devices.json` for the schema implementation:
 
 ```json
 {

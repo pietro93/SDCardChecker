@@ -9,19 +9,20 @@
 
 ### 📋 BACKLOG (Pre-Dev Planning)
 
-- [ ] **Research & Design**
-  - [ ] Define calculator UX flow (wireframe: input → calculate → result)
-  - [ ] Design result card (matches brand guidelines blue gradient)
-  - [ ] Design form inputs (resolution, bitrate, overhead toggles)
-  - [ ] Verify card recommendation filtering logic
-  - [ ] Create responsive mockup (desktop, tablet, mobile)
+- ✅ **Research & Design** (COMPLETE)
+  - ✅ Define calculator UX flow (wireframe: input → calculate → result)
+  - ✅ Design result card (matches brand guidelines blue gradient)
+  - ✅ Design form inputs (resolution, bitrate, overhead toggles)
+  - ✅ Verify card recommendation filtering logic
+  - ✅ Create responsive mockup (desktop, tablet, mobile)
 
-- [ ] **Technical Spike**
-  - [ ] Audit existing form/component styles in `modern.css`
-  - [ ] Plan calculator.js module API (inputs, outputs, math logic)
-  - [ ] Plan calculator-ui.js module (form handling, state management)
-  - [ ] Verify Tailwind classes available for calculator layout
-  - [ ] Check existing card recommendation data structure
+- ✅ **Technical Spike** (COMPLETE)
+  - ✅ Audit existing form/component styles in `modern.css`
+  - ✅ Plan calculator.js module API (inputs, outputs, math logic)
+  - ✅ Plan calculator-ui.js module (form handling, state management)
+  - ✅ Verify Tailwind classes available for calculator layout
+  - ✅ Check existing card recommendation data structure
+  - ✅ Data prep complete: 10 new devices added to calculator-devices.json & calculator-content.json
 
 ---
 

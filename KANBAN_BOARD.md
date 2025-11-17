@@ -79,7 +79,21 @@ When GSC shows demand for a device:
 
 ## 🛠️ IN PROGRESS
 
-*(Nothing yet - waiting for GSC analysis to identify priorities)*
+### Phase 0: Storage Calculator (Video + Photo)
+- **Owner:** Amp
+- **Timeline:** Week 1 (Nov 17-24)
+- **Status:** 🔴 Core Engine Built
+- **Progress:**
+  - ✅ calculator.js (math engine, all formulas, speed class mapping)
+  - ✅ calculator-ui.js (Alpine.js state, form management, results)
+  - 🔄 calculator-widget.html (reusable template, next)
+  - 🔄 Video Storage Calculator page (presets, copy, schema)
+  - 🔄 Photo Storage Calculator page (presets, copy, schema)
+  - ⏳ Testing (form inputs, reverse toggle, mobile UX)
+  - ⏳ GA4 event tracking setup
+  - ⏳ Deployment to /tools/video-storage-calculator/ & /tools/photo-storage-calculator/
+- **Blockers:** None
+- **Next step:** Build calculator-widget.html template, integrate with pages
 
 ---
 

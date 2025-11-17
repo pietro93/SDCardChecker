@@ -25,7 +25,7 @@ return `<!-- Header -->
 <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
 <a href="/" class="flex items-center gap-3 group flex-shrink-0">
 <img src="/img/brand/logo.webp" alt="SD Card Checker Logo" class="w-10 h-10 rounded-lg shadow-md group-hover:shadow-lg transition-shadow" width="40" height="40">
-<span class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors hidden sm:inline">SD Card Checker</span>
+<span class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">SD Card Checker</span>
 </a>
     <nav class="header-nav hidden md:flex gap-8 items-center">
     <a href="/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">Home</a>

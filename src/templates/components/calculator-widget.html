@@ -1,0 +1,467 @@
+<!-- 
+  Storage Calculator Widget - Reusable Component
+  Alpine.js driven, calls StorageCalculator.js for math
+  Supports: Video, Photo, Continuous, Reverse modes
+-->
+
+<div x-data="calculatorState" class="calculator-widget py-8">
+  <!-- Layer 1: Use Case Selection -->
+  <div x-show="currentLayer === 'usecase'" class="animate-fade">
+    <h3 class="text-xl font-bold mb-6">What are you recording?</h3>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <button
+        @click="selectUseCase('video')"
+        class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition text-center"
+      >
+        <div class="text-4xl mb-2">🎥</div>
+        <h4 class="font-bold">Video Recording</h4>
+        <p class="text-sm text-gray-600">4K, 1080p, any bitrate</p>
+      </button>
+
+      <button
+        @click="selectUseCase('photo')"
+        class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition text-center"
+      >
+        <div class="text-4xl mb-2">📸</div>
+        <h4 class="font-bold">Photo Burst</h4>
+        <p class="text-sm text-gray-600">JPEG, RAW, timelapse</p>
+      </button>
+
+      <button
+        @click="selectUseCase('continuous')"
+        class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition text-center"
+      >
+        <div class="text-4xl mb-2">🔴</div>
+        <h4 class="font-bold">Continuous</h4>
+        <p class="text-sm text-gray-600">24/7, dashcam, surveillance</p>
+      </button>
+    </div>
+  </div>
+
+  <!-- Layer 2: Scenario Details (Forward) -->
+  <div x-show="currentLayer === 'details' && mode === 'forward'" class="animate-fade">
+    <div class="flex items-center justify-between mb-6">
+      <h3 class="text-xl font-bold">
+        <span x-text="scenarios[activeScenario].name"></span>
+      </h3>
+      <button
+        @click="toggleMode()"
+        class="text-sm px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 transition"
+        title="Switch to: I have a card, how long can I record?"
+      >
+        ↔️ Reverse
+      </button>
+    </div>
+
+    <!-- Video Mode -->
+    <div x-show="activeScenario === 'video'" class="space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-bold mb-2">Resolution</label>
+          <select x-model="forward.video.resolution" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+            <template x-for="res in readonly.resolutions" :key="res">
+              <option :value="res" x-text="res"></option>
+            </template>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold mb-2">Frame Rate</label>
+          <select x-model.number="forward.video.fps" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+            <template x-for="fps in readonly.fpsOptions" :key="fps">
+              <option :value="fps" x-text="`${fps}fps`"></option>
+            </template>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold mb-2">Codec</label>
+          <select x-model="forward.video.codec" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+            <template x-for="codec in readonly.codecOptions" :key="codec">
+              <option :value="codec" x-text="codec"></option>
+            </template>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold mb-2">Bitrate (Mbps)</label>
+          <input
+            x-model.number="forward.video.bitrateMbps"
+            type="number"
+            placeholder="150"
+            class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+          />
+        </div>
+      </div>
+
+      <div class="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+        <label class="block text-sm font-bold mb-2">Recording Duration</label>
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="text-xs text-gray-600">Hours</label>
+            <input
+              x-model.number="forward.video.durationHours"
+              type="number"
+              placeholder="2"
+              class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+            />
+          </div>
+          <div>
+            <label class="text-xs text-gray-600">Minutes</label>
+            <input
+              x-model.number="forward.video.durationMinutes"
+              type="number"
+              placeholder="0"
+              min="0"
+              max="59"
+              class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo Mode -->
+    <div x-show="activeScenario === 'photo'" class="space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-bold mb-2">Total Photos</label>
+          <input
+            x-model.number="forward.photo.photoCount"
+            type="number"
+            placeholder="1000"
+            class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold mb-2">File Size per Photo (MB)</label>
+          <input
+            x-model.number="forward.photo.fileSizeMB"
+            type="number"
+            step="0.1"
+            placeholder="2.5"
+            class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+          />
+        </div>
+      </div>
+
+      <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+        <label class="flex items-center">
+          <input
+            type="checkbox"
+            @change="toggleRaw()"
+            :checked="forward.photo.isRaw"
+            class="mr-2"
+          />
+          <span class="text-sm font-bold">RAW Format</span>
+        </label>
+        <p class="text-xs text-gray-600 mt-2">
+          <span x-text="forward.photo.isRaw ? 'RAW (uncompressed)' : 'JPEG (compressed)'"></span>
+          - File size updated
+        </p>
+      </div>
+
+      <div class="text-xs text-gray-600 p-3 bg-gray-100 rounded">
+        <strong>Quick presets:</strong>
+        <div class="grid grid-cols-2 gap-2 mt-2">
+          <button @click="updatePhotoFileSize('jpeg5mp')" class="text-left hover:text-blue-600">
+            → 5MP JPEG (2.5MB)
+          </button>
+          <button @click="updatePhotoFileSize('jpeg20mp')" class="text-left hover:text-blue-600">
+            → 20MP JPEG (8MB)
+          </button>
+          <button @click="updatePhotoFileSize('raw20mp')" class="text-left hover:text-blue-600">
+            → 20MP RAW (30MB)
+          </button>
+          <button @click="updatePhotoFileSize('raw45mp')" class="text-left hover:text-blue-600">
+            → 45MP RAW (65MB)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Continuous Mode -->
+    <div x-show="activeScenario === 'continuous'" class="space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+          <label class="block text-sm font-bold mb-2">Bitrate (Mbps)</label>
+          <input
+            x-model.number="forward.continuous.bitrateMbps"
+            type="number"
+            placeholder="5"
+            class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold mb-2">Hours per Day</label>
+          <input
+            x-model.number="forward.continuous.hoursPerDay"
+            type="number"
+            placeholder="24"
+            class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold mb-2">Days Needed</label>
+          <input
+            x-model.number="forward.continuous.daysNeeded"
+            type="number"
+            placeholder="7"
+            class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+          />
+        </div>
+      </div>
+
+      <div class="text-xs text-gray-600 p-3 bg-gray-100 rounded">
+        <strong>💡 Tip:</strong> For 24/7 continuous recording, use <strong>HIGH_ENDURANCE</strong> cards, not speed cards.
+      </div>
+    </div>
+
+    <!-- Advanced Options (All Modes) -->
+    <details class="mt-6 p-4 border border-gray-300 rounded-lg">
+      <summary class="cursor-pointer font-bold text-sm">⚙️ Advanced Options</summary>
+      
+      <div class="mt-4 space-y-4">
+        <div>
+          <label class="block text-sm font-bold mb-2">
+            Overhead Buffer: <span x-text="`${forward.overheadPercent}%`"></span>
+          </label>
+          <input
+            type="range"
+            x-model.number="forward.overheadPercent"
+            :min="forward.overheadMin"
+            :max="forward.overheadMax"
+            step="1"
+            class="w-full"
+          />
+          <p class="text-xs text-gray-600 mt-2">
+            Add buffer for metadata, camera system files, and write inefficiency
+          </p>
+        </div>
+
+        <label class="flex items-center">
+          <input
+            type="checkbox"
+            x-model="forward.compareFormats"
+            class="mr-2"
+          />
+          <span class="text-sm font-bold">Compare H.264 vs H.265 vs ProRes</span>
+        </label>
+      </div>
+    </details>
+
+    <!-- Calculate Button -->
+    <button
+      @click="calculate()"
+      :disabled="!isInputValid()"
+      class="mt-6 w-full px-4 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
+    >
+      Calculate Storage Needed
+    </button>
+  </div>
+
+  <!-- Layer 2: Scenario Details (Reverse) -->
+  <div x-show="currentLayer === 'details' && mode === 'reverse'" class="animate-fade">
+    <div class="flex items-center justify-between mb-6">
+      <h3 class="text-xl font-bold">
+        I have a card — how long can I record?
+      </h3>
+      <button
+        @click="toggleMode()"
+        class="text-sm px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 transition"
+        title="Switch to: How much storage do I need?"
+      >
+        ↔️ Forward
+      </button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <label class="block text-sm font-bold mb-2">Card Capacity (GB)</label>
+        <select x-model.number="reverse.cardCapacityGB" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+          <template x-for="cap in reverse.cardCapacityOptions" :key="cap">
+            <option :value="cap" x-text="`${cap}GB`"></option>
+          </template>
+        </select>
+      </div>
+
+      <div x-show="activeScenario === 'photo'">
+        <label class="block text-sm font-bold mb-2">File Size per Photo (MB)</label>
+        <input
+          x-model.number="reverse.photo.fileSizeMB"
+          type="number"
+          step="0.1"
+          placeholder="2.5"
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+        />
+      </div>
+
+      <div x-show="activeScenario !== 'photo'">
+        <label class="block text-sm font-bold mb-2">Bitrate (Mbps)</label>
+        <input
+          x-model.number="reverse.video.bitrateMbps"
+          type="number"
+          placeholder="150"
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+        />
+      </div>
+    </div>
+
+    <button
+      @click="calculateReverse()"
+      :disabled="!isReverseInputValid()"
+      class="mt-6 w-full px-4 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
+    >
+      Calculate Duration
+    </button>
+  </div>
+
+  <!-- Layer 3: Results -->
+  <div x-show="currentLayer === 'results'" class="animate-fade">
+    <div class="mb-6">
+      <button
+        @click="currentLayer = 'details'"
+        class="text-sm px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 transition"
+      >
+        ← Back to Inputs
+      </button>
+    </div>
+
+    <template x-if="result">
+      <!-- Forward Result Card -->
+      <div x-show="mode === 'forward'" class="space-y-6">
+        <div class="p-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg">
+          <h3 class="text-2xl font-bold mb-4">You Need:</h3>
+          <div class="text-4xl font-bold mb-2">
+            <span x-text="`${result.recommendedCapacity}GB`"></span>
+            <span class="text-xl ml-2">Minimum</span>
+          </div>
+          <p class="text-blue-100">
+            <span x-text="`${result.totalGB}GB total storage`"></span>
+            <span x-text="`(${result.rawGB}GB footage + ${result.overheadGB}GB overhead)`"></span>
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-4 border border-gray-300 rounded-lg">
+            <h4 class="font-bold text-sm text-gray-600 mb-2">Speed Class</h4>
+            <p class="text-2xl font-bold" x-text="`${result.speedClass}`"></p>
+            <p class="text-xs text-gray-600">Minimum for this bitrate</p>
+          </div>
+
+          <div class="p-4 border border-gray-300 rounded-lg">
+            <h4 class="font-bold text-sm text-gray-600 mb-2">Min Write Speed</h4>
+            <p class="text-2xl font-bold" x-text="`${result.minWriteSpeed} MB/s`"></p>
+            <p class="text-xs text-gray-600">Required write performance</p>
+          </div>
+        </div>
+
+        <button
+          @click="reset()"
+          class="w-full px-4 py-2 border border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition"
+        >
+          Calculate Another Scenario
+        </button>
+      </div>
+
+      <!-- Reverse Result Card -->
+      <div x-show="mode === 'reverse'" class="space-y-6">
+        <div class="p-6 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg">
+          <h3 class="text-2xl font-bold mb-4">Your Card Duration:</h3>
+          
+          <template x-if="activeScenario === 'photo'">
+            <div>
+              <div class="text-4xl font-bold mb-2">
+                <span x-text="`${result.photoCount.toLocaleString()}`"></span>
+                <span class="text-xl ml-2">Photos</span>
+              </div>
+              <p class="text-green-100">
+                On your <span x-text="`${reverse.cardCapacityGB}GB`"></span> card
+              </p>
+            </div>
+          </template>
+
+          <template x-if="activeScenario !== 'photo'">
+            <div>
+              <div class="text-4xl font-bold mb-2" x-text="`${result.recordingTimeString}`"></div>
+              <p class="text-green-100">
+                <span x-text="`${result.recordingHours} hours total`"></span>
+              </p>
+              <p class="text-green-100 text-sm">
+                For 24/7 continuous: <span x-text="`~${result.daysFor24h} days`"></span>
+              </p>
+            </div>
+          </template>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-4 border border-gray-300 rounded-lg">
+            <h4 class="font-bold text-sm text-gray-600 mb-2">Speed Class</h4>
+            <p class="text-2xl font-bold" x-text="`${result.speedClass}`"></p>
+          </div>
+
+          <div class="p-4 border border-gray-300 rounded-lg">
+            <h4 class="font-bold text-sm text-gray-600 mb-2">Min Write Speed</h4>
+            <p class="text-2xl font-bold" x-text="`${result.minWriteSpeed} MB/s`"></p>
+          </div>
+        </div>
+
+        <button
+          @click="reset()"
+          class="w-full px-4 py-2 border border-green-600 text-green-600 font-bold rounded-lg hover:bg-green-50 transition"
+        >
+          Calculate Another Card
+        </button>
+      </div>
+
+      <!-- Speed Class Reference Table -->
+      <details class="mt-6 p-4 border border-gray-300 rounded-lg">
+        <summary class="cursor-pointer font-bold text-sm">📊 Speed Class Reference</summary>
+        
+        <div class="mt-4 overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="px-4 py-2 text-left">Bitrate</th>
+                <th class="px-4 py-2 text-left">Speed Class</th>
+                <th class="px-4 py-2 text-left">Write Speed</th>
+                <th class="px-4 py-2 text-left">Use Case</th>
+              </tr>
+            </thead>
+            <tbody>
+              <template x-for="row in result.speedClassTable" :key="row.speedClass">
+                <tr class="border-t">
+                  <td class="px-4 py-2" x-text="row.bitrateMbps"></td>
+                  <td class="px-4 py-2 font-bold" x-text="row.speedClass"></td>
+                  <td class="px-4 py-2" x-text="row.writeSpeed"></td>
+                  <td class="px-4 py-2 text-gray-600" x-text="row.useCase"></td>
+                </tr>
+              </template>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </template>
+  </div>
+</div>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+</style>

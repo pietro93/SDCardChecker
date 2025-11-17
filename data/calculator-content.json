@@ -1,0 +1,459 @@
+{
+  "version": "2.1",
+  "lastUpdated": "2025-11-16",
+  "content": {
+    "dji-mavic-3": {
+      "url": "/tools/drone-recording-calculator/?device=dji-mavic-3",
+      "seo": {
+        "title": "DJI Mavic 3 Recording Time Calculator | How Long Can You Record?",
+        "description": "Calculate how long you can record on your DJI Mavic 3 with different SD card capacities. Includes presets for 4K 120fps, 5.1K 50fps, and ProRes modes with bitrate optimization.",
+        "keywords": ["dji mavic 3 recording time", "mavic 3 storage calculator", "how long can dji mavic 3 record", "mavic 3 sd card capacity"],
+        "faq": [
+          {
+            "question": "How long can DJI Mavic 3 record on 256GB?",
+            "answer": "With 4K 60fps at 150Mbps, you can record approximately 3.7 hours on a 256GB card. For 5.1K at 200Mbps, it's about 2.8 hours."
+          },
+          {
+            "question": "Do I need V60 cards for my DJI Mavic 3?",
+            "answer": "While V30 is the minimum for standard modes, DJI strongly recommends V60-rated cards for 4K 120fps and Apple ProRes recording to ensure no dropped frames."
+          },
+          {
+            "question": "What's the difference between H.264 and H.265 on Mavic 3?",
+            "answer": "H.265 (HEVC) provides better compression, allowing you to store approximately 30% more footage compared to H.264 at the same quality level, but requires more processing power to edit."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "Plan your aerial missions with confidence. Calculate exactly how much 4K, 5.1K, and ProRes footage fits on your SD card.",
+        "introParagraph": "The DJI Mavic 3 records stunning 5.1K video at up to 200Mbps. Our calculator helps you plan storage capacity for different recording modes, from cinematic 4K footage to high-resolution still photography.",
+        "usageScenarios": ["Aerial Cinematography", "Real Estate Videography", "Outdoor Adventures", "Professional Mapping"]
+      },
+      "notes": "Always format new cards in the drone before flying. Avoid changing cards mid-flight to prevent corruption.",
+      "commonIssues": ["Recording stops unexpectedly when using V30 cards at high bitrates.", "Card errors after a major firmware update often require reformatting.", "Sustained high-bitrate recording can cause overheating warnings in hot climates."]
+    },
+    "gopro-hero-13": {
+      "url": "/tools/action-camera-storage-calculator/?device=gopro-hero-13",
+      "seo": {
+        "title": "GoPro HERO 13 Storage Calculator | 5.3K Video Recording Time",
+        "description": "Calculate how much 5.3K, 4K, and Super Slo-Mo video fits on your GoPro HERO 13. Optimized for action sports with bitrate recommendations.",
+        "keywords": ["gopro hero 13 storage", "gopro 13 recording time", "gopro hero 13 sd card capacity", "gopro 5.3K recording time"],
+        "faq": [
+          {
+            "question": "How much 5.3K video fits on a 128GB card?",
+            "answer": "A 128GB card holds about 2.3 hours of 5.3K 60fps video. For 4K 120fps, which has a higher bitrate, it's about 1.8 hours."
+          },
+          {
+            "question": "Do I need V60 for 4K 120fps on HERO 13?",
+            "answer": "While V30 is the official minimum, GoPro strongly recommends V60-rated cards for 4K 120fps to prevent dropped frames during high-action recording."
+          },
+          {
+            "question": "What's the difference between HERO 12 and HERO 13?",
+            "answer": "The HERO 13 offers improved battery life (1.5x), enhanced HyperSmooth 6.0 stabilization, and better low-light performance, but uses the same card speed requirements as the HERO 12."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "Never miss a moment. Calculate exactly how much extreme action fits on your SD card before you go.",
+        "introParagraph": "The GoPro HERO 13 captures stunning 5.3K video at up to 120Mbps. Our calculator helps you plan storage for high-bitrate modes, from epic action sequences to time-lapse adventures.",
+        "usageScenarios": ["Extreme Sports", "Vlogging", "Travel Adventures", "Water Sports", "Helmet Cam"]
+      },
+      "notes": "For best performance in cold weather, keep the camera and batteries warm. Always use cards from GoPro's official recommended list.",
+      "commonIssues": ["Recording automatically stops in extreme cold or heat.", "Fogging inside the waterproof housing in humid conditions.", "Rapid battery drain when recording in 4K or 5.3K."]
+    },
+    "gopro-hero-12": {
+      "url": "/tools/action-camera-storage-calculator/?device=gopro-hero-12",
+      "seo": {
+        "title": "GoPro HERO 12 Storage Calculator | 5.3K Video Recording Time",
+        "description": "Calculate how much 5.3K, 4K, and video fits on your GoPro HERO 12. Get bitrate recommendations for action recording.",
+        "keywords": ["gopro hero 12 storage", "gopro 12 recording time", "gopro hero 12 sd card", "hero 12 5.3k recording"],
+        "faq": [
+          {
+            "question": "How much 5.3K video fits on a 128GB card?",
+            "answer": "A 128GB card holds about 2.6 hours of 5.3K 60fps video on the Hero 12. For 4K 120fps, it's about 2 hours."
+          },
+          {
+            "question": "Is V30 enough for Hero 12?",
+            "answer": "Yes, V30 is officially recommended for Hero 12 recording in all modes. V60 provides extra headroom but is not necessary for standard operation."
+          },
+          {
+            "question": "What's the best card for Hero 12?",
+            "answer": "SanDisk Extreme, Lexar Professional, or Kingston Canvas series microSD cards rated V30 or higher work excellently with the Hero 12."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "Capture your adventures with confidence. Know exactly how much video fits before you hit record.",
+        "introParagraph": "The GoPro HERO 12 delivers professional-quality 5.3K video. Our calculator helps you choose the right card capacity and understand bitrate trade-offs for your shooting style.",
+        "usageScenarios": ["Action Sports", "Vlogging", "Travel", "Underwater Filming", "Motorsports"]
+      },
+      "notes": "The Hero 12 supports up to 512GB cards. Format cards in-camera for best compatibility.",
+      "commonIssues": ["File corruption if card is removed during recording.", "Slower performance with older or no-name brand cards.", "Battery drains faster at high altitudes or in cold."]
+    },
+    "canon-eos-r5": {
+      "url": "/tools/timelapse-calculator/?device=canon-eos-r5",
+      "seo": {
+        "title": "Canon EOS R5 Storage Calculator | 8K Video & RAW Photography",
+        "description": "Calculate storage needs for Canon EOS R5 8K video recording and RAW/timelapse photography. Includes bitrate calculations for professional workflows.",
+        "keywords": ["canon eos r5 storage", "canon r5 8k recording time", "canon r5 raw file size", "r5 timelapse storage"],
+        "faq": [
+          {
+            "question": "How much 8K RAW video fits on a 256GB card?",
+            "answer": "A 256GB card holds about 13 minutes of 8K 30fps RAW video. For 4K 60fps in H.265, it's about 1.1 hours."
+          },
+          {
+            "question": "What's the file size difference between RAW and C-RAW?",
+            "answer": "C-RAW (Compressed RAW) files are approximately 45% smaller than uncompressed RAW, allowing for many more photos on the same card while preserving excellent editing flexibility."
+          },
+          {
+            "question": "Do I absolutely need CFexpress cards for the R5?",
+            "answer": "For 8K RAW and 4K 120fps recording, a CFexpress Type B card is mandatory. For all other photography and most 4K video modes, a fast V90 SD card will perform excellently."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "Professional workflows, perfectly calculated. Plan your storage for 8K RAW video and 45MP RAW photography.",
+        "introParagraph": "The Canon EOS R5 is a professional powerhouse capturing 8K RAW video and 45MP photos. Our calculator helps you plan storage for demanding productions, from cinematic films to multi-day timelapses.",
+        "usageScenarios": ["Professional Video Production", "Commercial Photography", "Wildlife & Sports", "Studio Portraiture"]
+      },
+      "notes": "The camera features dual card slots (1x CFexpress Type B, 1x SD UHS-II). Be aware of recording time limits due to potential overheating in 8K mode.",
+      "commonIssues": ["Overheating can limit 8K recording to ~20 minutes.", "Buffer fills quickly during continuous RAW bursts when using slower SD cards.", "CFexpress cards are significantly more expensive than SD cards."]
+    },
+    "sony-a6700": {
+      "url": "/tools/action-camera-storage-calculator/?device=sony-a6700",
+      "seo": {
+        "title": "Sony A6700 Storage Calculator | 4K 120fps Video & RAW Photography",
+        "description": "Calculate storage for Sony A6700 4K 120fps video and high-speed RAW burst photography. Find the right SD card for content creation.",
+        "keywords": ["sony a6700 storage", "a6700 4k 120fps recording", "sony a6700 sd card", "a6700 raw file size"],
+        "faq": [
+          {
+            "question": "How much 4K 120fps fits on a 256GB card?",
+            "answer": "A 256GB V60 SD card holds approximately 1.2 hours of 4K 120fps video on the Sony A6700."
+          },
+          {
+            "question": "Do I need V60 or V90 cards?",
+            "answer": "V60 is the official minimum for 4K 120fps. V90 provides extra headroom for continuous shooting and faster buffer clearing, beneficial for professionals."
+          },
+          {
+            "question": "What's the RAW file size for A6700?",
+            "answer": "Uncompressed RAW files are approximately 48MB each. Compressed RAW reduces this to about 25MB per file, allowing nearly double the shots per card."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "High-speed hybrid powerhouse. Calculate storage for 4K 120fps video and rapid-fire RAW bursts.",
+        "introParagraph": "The Sony A6700 is perfect for content creators needing both high-speed video and professional RAW photography. Our calculator helps you optimize storage for mixed workflows.",
+        "usageScenarios": ["Content Creation", "Fast-Action Photography", "4K Filmmaking", "Product Photography", "Event Coverage"]
+      },
+      "notes": "The A6700 has dual SD UHS-II card slots. Using two cards allows seamless recording continuation when one fills.",
+      "commonIssues": ["Buffer fills quickly during extended 4K 120fps bursts with V30 cards.", "Slower cards may cause recording interruptions.", "Heat can build up during sustained 4K 120fps recording."]
+    },
+    "wyze-cam-v3": {
+      "url": "/tools/surveillance-recording-calculator/?device=wyze-cam-v3",
+      "seo": {
+        "title": "Wyze Cam v3 24/7 Recording Calculator | Surveillance Storage",
+        "description": "Calculate continuous recording duration for the Wyze Cam v3. Find out how many days of 1080p surveillance video fit on your High Endurance SD card.",
+        "keywords": ["wyze cam v3 recording days", "wyze cam 24/7 calculator", "surveillance camera storage", "wyze cam sd card endurance"],
+        "faq": [
+          {
+            "question": "How long will a Wyze Cam v3 record on a 128GB card?",
+            "answer": "At 1080p, a 128GB High Endurance card can record continuously for about 47 days before loop recording overwrites the oldest footage."
+          },
+          {
+            "question": "Why must I use a 'High Endurance' card?",
+            "answer": "Because security cameras record 24/7, constantly writing and rewriting data. This intense workload will destroy a regular SD card in a few weeks or months. High Endurance cards are built to last for years under this strain."
+          },
+          {
+            "question": "What's the max SD card size for Wyze Cam v3?",
+            "answer": "Wyze officially supports microSD cards up to 256GB. While larger cards might format and work, they are not guaranteed to be stable."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "24/7 security, perfectly calculated. Maximize your surveillance coverage without running out of space.",
+        "introParagraph": "The Wyze Cam v3 offers affordable around-the-clock security monitoring. Our calculator helps you determine exactly how many continuous days of surveillance footage will fit on different SD card sizes.",
+        "usageScenarios": ["Home Security", "Baby Monitoring", "Business Surveillance", "Pet Cam", "Neighborhood Watch"]
+      },
+      "notes": "The camera is weather-resistant (IP65). Continuous recording requires a microSD card. A Wyze Cam Plus subscription is optional for cloud-based event recording.",
+      "commonIssues": ["Rapid card failure when using non-endurance cards.", "Recording stops in very extreme temperatures.", "Corrupted files after an unexpected power outage if the write cycle was interrupted."]
+    },
+    "dji-mini-4-pro": {
+      "url": "/tools/drone-recording-calculator/?device=dji-mini-4-pro",
+      "seo": {
+        "title": "DJI Mini 4 Pro Recording Calculator | Flight Storage Planning",
+        "description": "Calculate how long you can record on your DJI Mini 4 Pro. Plan storage for 4K and 1080p recording with quick SD card recommendations.",
+        "keywords": ["dji mini 4 pro recording time", "mini 4 pro storage", "dji mini 4 sd card", "how long can mini 4 pro record"],
+        "faq": [
+          {
+            "question": "How long can Mini 4 Pro record on 128GB?",
+            "answer": "At 4K 60fps (H.265, 100Mbps), a 128GB card provides approximately 3 hours of recording time."
+          },
+          {
+            "question": "Is V30 enough for Mini 4 Pro?",
+            "answer": "Yes, V30 is the official requirement and works perfectly for all Mini 4 Pro recording modes."
+          },
+          {
+            "question": "What's the flight time relationship to battery?",
+            "answer": "Mini 4 Pro has approximately 25-31 minutes of flight time depending on conditions. Always carry at least two cards per full battery to avoid running out of storage mid-flight."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "Lightweight, mighty storage. Calculate exactly how much 4K fits on your Mini 4 Pro missions.",
+        "introParagraph": "The DJI Mini 4 Pro is a compact powerhouse recording 4K video. Our calculator helps you plan the right card capacity for your flights, ensuring you capture every moment without storage worries.",
+        "usageScenarios": ["Portable Filmmaking", "Travel Video", "Real Estate Tours", "Casual Aerial Photography"]
+      },
+      "notes": "The Mini 4 Pro is lightweight and portable—perfect for travel. Always format cards in the drone before first use.",
+      "commonIssues": ["Wind can cause unwanted movement in footage.", "Cold weather reduces battery life significantly.", "Always use official DJI accessories for best compatibility."]
+    },
+    "gopro-hero-max": {
+      "url": "/tools/action-camera-storage-calculator/?device=gopro-hero-max",
+      "seo": {
+        "title": "GoPro Hero Max 360° Storage & Recording Time Calculator",
+        "description": "Calculate how much 5.6K 360-degree video your GoPro Hero Max can record. Find storage needs for both 360 and standard HERO modes.",
+        "keywords": ["gopro hero max storage", "gopro max recording time", "gopro 360 storage calculator", "gopro max sd card"],
+        "faq": [
+          {
+            "question": "How is 360° video storage calculated?",
+            "answer": "360° video captures from multiple lenses simultaneously, roughly doubling the bitrate and storage needed compared to a standard single-lens camera at a similar resolution."
+          },
+          {
+            "question": "How much 360° video fits on a 128GB card?",
+            "answer": "On a GoPro Hero Max, a 128GB card can hold approximately 1.9 hours of 5.6K 360° video at its 120Mbps bitrate."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "Capture Everything. Calculate Your 360° Storage.",
+        "introParagraph": "The GoPro Hero Max records immersive 5.6K 360° video. Our calculator helps you plan for the larger file sizes of spherical video, ensuring you have enough space for your entire adventure.",
+        "usageScenarios": ["Immersive Vlogging", "Virtual Tours", "Action Sports POV", "Creative Video Projects"]
+      },
+      "notes": "Ensure you are using a V30 rated card as a minimum for stable 360° recording.",
+      "commonIssues": ["Stitching errors can occur with slower cards.", "Battery life is shorter in 360° mode.", "Editing 360° footage requires powerful computer hardware."]
+    },
+    "gopro-hero-11-black": {
+      "url": "/tools/action-camera-storage-calculator/?device=gopro-hero-11-black",
+      "seo": {
+        "title": "GoPro Hero 11 Black Storage & Recording Time Calculator",
+        "description": "Calculate recording time for your GoPro Hero 11 Black. Find out how much 5.3K 60fps and 4K 120fps video fits on your SD card.",
+        "keywords": ["gopro hero 11 storage", "hero 11 recording time", "gopro 11 sd card", "5.3k video storage"],
+        "faq": [
+          {
+            "question": "Are the card requirements for Hero 11 and Hero 12 the same?",
+            "answer": "Yes, both the Hero 11 and Hero 12 have nearly identical bitrate requirements and officially require a minimum of a V30 rated microSD card for all high-resolution modes."
+          },
+          {
+            "question": "How much 5.3K video can a 256GB card hold?",
+            "answer": "A 256GB card can store about 4.7 hours of 5.3K 60fps video on a GoPro Hero 11 Black."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "Your Adventure, Your Storage. Calculated.",
+        "introParagraph": "The GoPro Hero 11 Black introduced 10-bit color and a larger sensor. Use our calculator to plan storage for its demanding 5.3K 60fps and high frame rate modes.",
+        "usageScenarios": ["Travel Vlogging", "Mountain Biking", "Skiing & Snowboarding", "Family Vacations"]
+      },
+      "notes": "10-bit color provides more editing flexibility but results in larger file sizes. A V30 card is sufficient for all modes.",
+      "commonIssues": ["Firmware updates can sometimes cause card compatibility issues until a patch is released.", "Reduced battery performance in cold weather."]
+    },
+    "canon-eos-r6": {
+      "url": "/tools/camera-storage-calculator/?device=canon-eos-r6",
+      "seo": {
+        "title": "Canon EOS R6 Storage Calculator | 4K Video & RAW Photos",
+        "description": "Calculate how much 4K 60fps video and 20MP RAW photos your Canon EOS R6 can store. Plan for dual-card setups and professional hybrid shooting.",
+        "keywords": ["canon eos r6 storage", "r6 recording time", "canon r6 raw file size", "eos r6 card capacity"],
+        "faq": [
+          {
+            "question": "Do I need V60 cards for the Canon R6?",
+            "answer": "For reliable 4K 60fps recording at 230Mbps, a V60-rated SD card is highly recommended. While V30 may work for 4K 30fps, it can struggle with higher frame rates."
+          },
+          {
+            "question": "Should I use both SD card slots on the R6?",
+            "answer": "Yes, for any critical work. Using the dual UHS-II slots for backup (writing to both cards simultaneously) provides redundancy and protects against data loss from a single card failure."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "The Hybrid Shooter's Calculator.",
+        "introParagraph": "The Canon EOS R6 is a popular choice for hybrid shooters. Our calculator helps you balance storage for high-quality 4K 60fps video and fast 20fps RAW photo bursts.",
+        "usageScenarios": ["Wedding Photography", "Event Videography", "Portrait Sessions", "Content Creation"]
+      },
+      "notes": "The R6 has dual UHS-II SD card slots, allowing for fast write speeds to both cards simultaneously.",
+      "commonIssues": ["Recording can be limited by overheating in 4K 60fps mode, though less so than the R5.", "Buffer can fill during long RAW bursts if using slower V30 cards."]
+    },
+    "fujifilm-x-s10": {
+      "url": "/tools/camera-storage-calculator/?device=fujifilm-x-s10",
+      "seo": {
+        "title": "Fujifilm X-S10 Storage & Recording Time Calculator",
+        "description": "Calculate storage needs for the Fujifilm X-S10. Find out how much 4K 30fps video and 26MP RAW photos fit on your SD card.",
+        "keywords": ["fujifilm x-s10 sd card", "x-s10 storage", "xs10 recording time", "fujifilm travel camera card"],
+        "faq": [
+          {
+            "question": "What is the best SD card for the Fujifilm X-S10?",
+            "answer": "A reliable V30 UHS-I SD card is perfect for the X-S10. It can handle all of the camera's 4K video modes at 200Mbps and photo burst rates without any issues."
+          },
+          {
+            "question": "Does the X-S10 have a dual card slot?",
+            "answer": "No, the X-S10 has a single UHS-I SD card slot. This makes choosing a high-quality, reliable card important as there is no in-camera backup."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "Compact Power, Calculated Storage.",
+        "introParagraph": "The Fujifilm X-S10 is a favorite for travelers and content creators. Plan your trip's storage needs for its high-quality 4K video and beautiful film simulations.",
+        "usageScenarios": ["Travel Photography", "YouTube Vlogging", "Street Photography", "Everyday Use"]
+      },
+      "notes": "The camera's single card slot means regular backups to a laptop or external drive are recommended during long trips.",
+      "commonIssues": ["Battery life can be short when shooting 4K video extensively.", "The single card slot is a point of concern for professional event work."]
+    },
+    "fujifilm-x-s20": {
+      "url": "/tools/camera-storage-calculator/?device=fujifilm-x-s20",
+      "seo": {
+        "title": "Fujifilm X-S20 Storage Calculator | 6.2K Video & V-Log",
+        "description": "Calculate how much 6.2K 'open gate' video your Fujifilm X-S20 can record. Plan for its demanding 360Mbps bitrate and RAW photography.",
+        "keywords": ["fujifilm x-s20 sd card", "x-s20 storage", "xs20 6.2k recording time", "fujifilm v-log storage"],
+        "faq": [
+          {
+            "question": "Do I need a V60 card for the X-S20?",
+            "answer": "Yes, for recording in the highest quality 6.2K or 4K 60fps modes at 360Mbps, a V60-rated SD card is required to prevent recording from stopping."
+          },
+          {
+            "question": "What is 'Open Gate' recording?",
+            "answer": "'Open Gate' uses the entire sensor to record, giving you a larger canvas with more flexibility to crop your video for different aspect ratios (e.g., vertical for social media) in post-production."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "Creator's Choice. Calculated Capacity.",
+        "introParagraph": "The Fujifilm X-S20 is a content creator's powerhouse, offering 6.2K open gate recording. Our calculator helps you manage the large files from its 360Mbps high-bitrate video modes.",
+        "usageScenarios": ["Content Creation", "Independent Filmmaking", "Advanced Vlogging", "Hybrid Photography"]
+      },
+      "notes": "The X-S20 uses a single SD card slot, but it is UHS-II compatible, allowing for faster V60/V90 cards.",
+      "commonIssues": ["The high bitrate modes fill cards quickly.", "Requires a powerful computer for editing 6.2K H.265 files smoothly."]
+    },
+    "fujifilm-x-t5": {
+      "url": "/tools/camera-storage-calculator/?device=fujifilm-x-t5",
+      "seo": {
+        "title": "Fujifilm X-T5 Storage Calculator | 6.2K & Apple ProRes",
+        "description": "Calculate storage needs for the Fujifilm X-T5. Plan for massive file sizes from 6.2K video, 40MP RAW photos, and internal Apple ProRes recording.",
+        "keywords": ["fujifilm x-t5 sd card", "x-t5 storage", "xt5 prores recording", "fujifilm 40mp raw size"],
+        "faq": [
+          {
+            "question": "Do I need a V90 card for the Fujifilm X-T5?",
+            "answer": "For recording internally in Apple ProRes at 4K 60fps (1225Mbps), a V90 card is mandatory. For standard H.265 6.2K recording at 360Mbps, a V60 card is sufficient."
+          },
+          {
+            "question": "How large are the 40MP RAW files from the X-T5?",
+            "answer": "An uncompressed RAW file from the X-T5 is approximately 80MB. The lossless compressed RAW is about 40MB, offering a great balance of quality and file size."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "Resolution without Limits. Storage without Guesswork.",
+        "introParagraph": "The Fujifilm X-T5's 40MP sensor and internal ProRes recording create massive files. Use our calculator to accurately plan storage for your professional photo and video projects.",
+        "usageScenarios": ["Landscape Photography", "Commercial Video", "Studio Portraits", "Documentary Filmmaking"]
+      },
+      "notes": "The dual UHS-II slots allow for flexible backup options or extended recording. ProRes recording generates very large files quickly.",
+      "commonIssues": ["ProRes files require significant storage and a fast editing workflow.", "The 40MP sensor reveals any imperfections in older lenses."]
+    },
+    "sony-a6400": {
+      "url": "/tools/camera-storage-calculator/?device=sony-a6400",
+      "seo": {
+        "title": "Sony a6400 Storage Calculator | 4K XAVC S Recording Time",
+        "description": "Calculate how much 4K video in Sony's XAVC S format your a6400 can store. Find the right V30 card for its 100Mbps bitrate.",
+        "keywords": ["sony a6400 sd card", "a6400 recording time", "sony xavc s storage", "a6400 4k card"],
+        "faq": [
+          {
+            "question": "Why does my a6400 say a U3/V30 card is required for 4K?",
+            "answer": "Sony's high-quality XAVC S format for 4K video records at 100Mbps. The camera's software requires a card that guarantees at least 30MB/s (U3/V30) sustained write speed to enable this mode."
+          },
+          {
+            "question": "Is the Sony a6400 still a good camera?",
+            "answer": "Absolutely. It remains one of the most popular and capable APS-C cameras for vlogging and content creation, known for its excellent autofocus and 4K video quality."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "The Vlogger's Workhorse. Storage Solved.",
+        "introParagraph": "The Sony a6400 is a vlogging legend. Our calculator ensures you have the right V30 card to handle its high-quality 100Mbps XAVC S 4K video format without any errors.",
+        "usageScenarios": ["YouTube Content", "Vlogging", "Travel Photography", "Streaming"]
+      },
+      "notes": "The camera has a single UHS-I card slot. Using a V30-rated card is mandatory to unlock the 100Mbps 4K recording option.",
+      "commonIssues": ["The screen does not fully articulate forward for vlogging, a common complaint.", "Lacks in-body image stabilization (IBIS)."]
+    },
+    "dji-mini-3-pro": {
+      "url": "/tools/drone-recording-calculator/?device=dji-mini-3-pro",
+      "seo": {
+        "title": "DJI Mini 3 Pro Recording Time & Storage Calculator",
+        "description": "Calculate how long your DJI Mini 3 Pro can fly and record 4K 60fps video. Plan your storage for this sub-250g drone powerhouse.",
+        "keywords": ["dji mini 3 pro sd card", "mini 3 pro recording time", "dji mini 3 storage", "sub 250g drone 4k"],
+        "faq": [
+          {
+            "question": "What's the best SD card for the Mini 3 Pro?",
+            "answer": "DJI recommends a V30 rated microSD card to reliably handle the 150Mbps bitrate of its 4K 60fps video mode."
+          },
+          {
+            "question": "How much 4K 60fps video fits on a 128GB card?",
+            "answer": "A 128GB card will hold approximately 1.8 hours of 4K 60fps footage from the Mini 3 Pro."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "Pro Power, Pocket Size. Plan Your Flight.",
+        "introParagraph": "The DJI Mini 3 Pro packs professional features into a sub-250g frame. Use our calculator to match your flight time with your storage capacity for its 150Mbps 4K 60fps video.",
+        "usageScenarios": ["Travel Videography", "Social Media Content", "Hobbyist Flying", "Real Estate Fly-throughs"]
+      },
+      "notes": "Being under 250g, the Mini 3 Pro has fewer flight restrictions in many regions. Always check local laws.",
+      "commonIssues": ["Can be susceptible to high winds due to its light weight.", "Lack of side obstacle sensors requires more careful flying."]
+    },
+    "reolink-e1-pro": {
+      "url": "/tools/surveillance-recording-calculator/?device=reolink-e1-pro",
+      "seo": {
+        "title": "Reolink E1 Pro Recording Storage Calculator | 2K Continuous",
+        "description": "Calculate how many days of continuous 2K surveillance footage your Reolink E1 Pro can store on a High Endurance microSD card.",
+        "keywords": ["reolink e1 pro sd card", "reolink storage calculator", "reolink recording days", "2k security camera storage"],
+        "faq": [
+          {
+            "question": "How do I install the SD card in a Reolink E1 Pro?",
+            "answer": "You need to physically tilt the camera's lens all the way up to reveal the hidden microSD card slot. Insert the card until it clicks, then format it within the Reolink app."
+          },
+          {
+            "question": "How many days of 2K video can a 128GB card hold?",
+            "answer": "A 128GB High Endurance card can store about 37 days of continuous 2K video from the Reolink E1 Pro before it begins to loop record."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "Your Home, Always Recording. Know Your Capacity.",
+        "introParagraph": "The Reolink E1 Pro is a popular indoor security camera with local storage. Use our calculator to find out how many days of footage you can save on your card.",
+        "usageScenarios": ["Indoor Home Security", "Pet Monitoring", "Nanny Cam", "Small Business Surveillance"]
+      },
+      "notes": "Always use High Endurance cards for any camera that records 24/7. Regular cards will fail.",
+      "commonIssues": ["Initial setup can be tricky if the camera is far from the Wi-Fi router.", "The pan-and-tilt motor can be audible in a quiet room."]
+    },
+    "garmin-66s-dash-cam": {
+      "url": "/tools/dashcam-storage-calculator/?device=garmin-66s-dash-cam",
+      "seo": {
+        "title": "Garmin Dash Cam 66W Storage & Loop Recording Calculator",
+        "description": "Calculate how many hours of driving your Garmin 66W Dash Cam can record. Plan for loop recording with High Endurance cards.",
+        "keywords": ["garmin 66w sd card", "garmin dash cam storage", "dash cam loop recording calculator", "1440p dash cam storage"],
+        "faq": [
+          {
+            "question": "Why is a 'High Endurance' card mandatory for a dash cam?",
+            "answer": "Dash cams are always recording and rewriting old footage (looping). This constant, intense workload will destroy a normal SD card in months. High Endurance cards are built to withstand this for years."
+          },
+          {
+            "question": "How much footage does a 128GB card hold on the Garmin 66W?",
+            "answer": "A 128GB card will store about 14 hours of 1440p footage at 20Mbps before the camera starts overwriting the oldest files."
+          }
+        ]
+      },
+      "contentChunks": {
+        "heroText": "Your Witness on the Road. Never Run Out of Space.",
+        "introParagraph": "The Garmin 66W captures critical moments on the road in 1440p. Our calculator helps you select the right High Endurance card to ensure you always have enough loop recording capacity.",
+        "usageScenarios": ["Daily Commuting", "Road Trips", "Insurance Protection", "Fleet Vehicles"]
+      },
+      "notes": "The 'W' in 66W stands for its extra-wide 180-degree field of view. Format the card in the dash cam itself for best results.",
+      "commonIssues": ["The adhesive mount can be difficult to remove.", "Voice commands can sometimes be accidentally triggered by music or conversation."]
+    }
+  }
+}
