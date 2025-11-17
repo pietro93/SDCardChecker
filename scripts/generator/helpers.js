@@ -123,7 +123,14 @@ function getDeviceImageFallback(device) {
     "nintendo-switch-lite": "/img/devices/gaming-consoles/nintendo-switch.webp",
     "steam-deck": "/img/devices/gaming-consoles/steam-deck.webp",
     "asus-rog-ally": "/img/devices/gaming-consoles/asus-rog-ally.webp",
+    "asus-rog-ally-x": "/img/devices/gaming-consoles/asus-rog-ally.webp",
+    "lenovo-legion-go": "/img/devices/gaming-consoles/lenovo-legion-go.webp",
+    "anbernic-rg35xx-plus": "/img/devices/gaming-consoles/anbernic.webp",
+    "anbernic-rg353v": "/img/devices/gaming-consoles/anbernic.webp",
+    "retroid-pocket": "/img/devices/gaming-consoles/retroid-pocket.webp",
+    "miyoo-mini-plus": "/img/devices/gaming-consoles/miyyo-mini.webp",
     "nintendo-3ds": "/img/devices/gaming-consoles/nintendo-3ds.webp",
+    "nintendo-3ds-xl": "/img/devices/gaming-consoles/nintendo-3ds.webp",
     "gopro-hero-13": "/img/devices/action-cameras/gopro-hero-13.webp",
     "gopro-hero-12": "/img/devices/action-cameras/gopro-hero-12.webp",
     "gopro-hero-max": "/img/devices/action-cameras/gopro-placeholder.webp",
@@ -134,13 +141,16 @@ function getDeviceImageFallback(device) {
     "insta360-one-x2": "/img/devices/action-cameras/insta360-one-x2.webp",
     "dji-mini-4-pro": "/img/devices/drones/dji-mini-4-pro.webp",
     "dji-mini-3-pro": "/img/devices/drones/drone-placeholder.webp",
-    "dji-air-3s": "/img/devices/drones/drone-placeholder.webp",
+    "dji-air-3": "/img/devices/drones/dji-air-3.webp",
+    "dji-air-3s": "/img/devices/drones/dji-air-3.webp",
     "dji-mavic-3": "/img/devices/drones/dji-mavic-3.webp",
     "dji-osmo-pocket-3": "/img/devices/drones/dji-osmo-pocket-3.webp",
     "wyze-cam-v3": "/img/devices/security-cameras/wyze-cam-v3.webp",
-    "reolink-e1-pro": "/img/devices/security-cameras/eufy-solocam-s340.webp",
+    "reolink-e1-pro": "/img/devices/security-cameras/reolink-e1-pro.webp",
     "eufy-solocam-s340": "/img/devices/security-cameras/eufy-solocam-s340.webp",
-    "garmin-66s-dash-cam": "/img/devices/security-cameras/eufy-solocam-s340.webp",
+    "garmin-66s-dash-cam": "/img/devices/action-cameras/dash-cam-placeholder.webp",
+    "viofo-a229-duo": "/img/devices/action-cameras/dash-cam-placeholder.webp",
+    "nextbase-622gw": "/img/devices/action-cameras/dash-cam-placeholder.webp",
     "canon-eos-r5": "/img/devices/cameras/canon-eos-r5.webp",
     "canon-eos-r6": "/img/devices/cameras/canon-placeholder.webp",
     "canon-eos-r6-mark-ii": "/img/devices/cameras/canon-placeholder.webp",
@@ -162,6 +172,8 @@ function getDeviceImageFallback(device) {
     "nikon-z8": "/img/devices/cameras/nikon-z8.webp",
     "blackmagic-pocket-cinema-camera-4k": "/img/devices/cameras/blackmagic-pocket-cinema-camera-4k.webp",
     "blackmagic-pocket-cinema-camera-6k-pro": "/img/devices/cameras/blackmagic-pocket-cinema-camera-6k-pro.webp",
+    "leica-q3": "/img/devices/cameras/leica-q3.webp",
+    "panasonic-lumix-s1h": "/img/devices/cameras/lumix.webp",
     "raspberry-pi-5": "/img/devices/computing/raspberry-pi-5.webp",
     "raspberry-pi-4-model-b": "/img/devices/computing/raspberry-placeholder.webp",
     "raspberry-pi-3-model-b-plus": "/img/devices/computing/raspberry-placeholder.webp",
@@ -169,10 +181,7 @@ function getDeviceImageFallback(device) {
     "raspberry-pi-pico": "/img/devices/computing/raspberry-placeholder.webp",
     "amazon-fire-hd-10": "/img/devices/computing/amazon-fire-hd-10.webp",
     "amazon-fire-max-11": "/img/devices/computing/amazon-fire-max-11.webp",
-    "lenovo-tab-m10-plus": "/img/devices/computing/tablet-placeholder.webp",
-    "anbernic-rg35xx-plus": "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp",
-    "anbernic-rg353v": "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp",
-    "miyoo-mini-plus": "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp"
+    "lenovo-tab-m10-plus": "/img/devices/computing/tablet-placeholder.webp"
   };
 
   if (deviceSpecificImages[slug] && imageExists(deviceSpecificImages[slug])) {
@@ -186,13 +195,21 @@ function getDeviceImageFallback(device) {
   if (name.includes("steam deck")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
   if (name.includes("switch")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
   if (name.includes("nintendo")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
-  if (name.includes("asus rog")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
+  if (name.includes("asus rog")) return "/img/devices/gaming-consoles/asus-rog-ally.webp";
+  if (name.includes("lenovo legion")) return "/img/devices/gaming-consoles/lenovo-legion-go.webp";
+  if (name.includes("anbernic")) return "/img/devices/gaming-consoles/anbernic.webp";
+  if (name.includes("retroid")) return "/img/devices/gaming-consoles/retroid-pocket.webp";
+  if (name.includes("miyoo")) return "/img/devices/gaming-consoles/miyyo-mini.webp";
   if (name.includes("amazon fire")) return "/img/devices/computing/tablet-placeholder.webp";
   if (name.includes("raspberry pi")) return "/img/devices/computing/raspberry-placeholder.webp";
   if (name.includes("canon")) return "/img/devices/cameras/canon-placeholder.webp";
   if (name.includes("nikon")) return "/img/devices/cameras/nikon-placeholder.webp";
   if (name.includes("sony")) return "/img/devices/cameras/sony-placeholder.webp";
   if (name.includes("fujifilm")) return "/img/devices/cameras/fujifilm-placeholder.webp";
+  if (name.includes("leica")) return "/img/devices/cameras/leica-q3.webp";
+  if (name.includes("panasonic") || name.includes("lumix")) return "/img/devices/cameras/lumix.webp";
+  if (name.includes("dash cam") || name.includes("dash-cam")) return "/img/devices/action-cameras/dash-cam-placeholder.webp";
+  if (name.includes("reolink")) return "/img/devices/security-cameras/reolink-e1-pro.webp";
 
   // Category-based placeholders
   if (category.includes("action camera")) 
