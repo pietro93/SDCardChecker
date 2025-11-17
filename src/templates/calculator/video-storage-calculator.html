@@ -51,37 +51,39 @@
           </div>
         </div>
       </div>
-        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-          Dropped frames, corrupted footage, and failed recordings are photographer and videographer nightmares—and they often happen because of the wrong card. This calculator helps you plan every shoot with confidence by showing exactly how long you can record on your SD card based on resolution, bitrate, and codec.
-        </p>
-        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-          Whether you're shooting 1080p or 8K, using H.264 or ProRes, this tool instantly calculates recording time, recommends the minimum speed class (V30, V60, V90), and suggests the ideal card capacity. No more guessing what bitrate your camera uses, no more surprises when your card fills mid-take—just the assurance that your card can handle your workflow.
-        </p>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-          <div class="flex gap-3 items-start">
-            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
-            <div>
-              <h4 class="font-bold text-slate-900 mb-1">4K to 1080p Support</h4>
-              <p class="text-slate-600 text-sm">Any resolution, any bitrate</p>
-            </div>
-          </div>
-          <div class="flex gap-3 items-start">
-            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
-            <div>
-              <h4 class="font-bold text-slate-900 mb-1">Codec Comparisons</h4>
-              <p class="text-slate-600 text-sm">H.264, H.265, ProRes</p>
-            </div>
-          </div>
-          <div class="flex gap-3 items-start">
-            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
-            <div>
-              <h4 class="font-bold text-slate-900 mb-1">Speed Class Match</h4>
-              <p class="text-slate-600 text-sm">Automatic recommendations</p>
-            </div>
 
+      <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+        Dropped frames, corrupted footage, and failed recordings are photographer and videographer nightmares—and they often happen because of the wrong card. This calculator helps you plan every shoot with confidence by showing exactly how long you can record on your SD card based on resolution, bitrate, and codec.
+      </p>
+      <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+        Whether you're shooting 1080p or 8K, using H.264 or ProRes, this tool instantly calculates recording time, recommends the minimum speed class (V30, V60, V90), and suggests the ideal card capacity. No more guessing what bitrate your camera uses, no more surprises when your card fills mid-take—just the assurance that your card can handle your workflow.
+      </p>
 
-            <!-- Calculator Widget -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+          <div>
+            <h4 class="font-bold text-slate-900 mb-1">4K to 1080p Support</h4>
+            <p class="text-slate-600 text-sm">Any resolution, any bitrate</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+          <div>
+            <h4 class="font-bold text-slate-900 mb-1">Codec Comparisons</h4>
+            <p class="text-slate-600 text-sm">H.264, H.265, ProRes</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+          <div>
+            <h4 class="font-bold text-slate-900 mb-1">Speed Class Match</h4>
+            <p class="text-slate-600 text-sm">Automatic recommendations</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calculator Widget -->
       <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
         <div class="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
           <p class="text-sm text-slate-700"><strong>Quick note:</strong> Bitrate is measured in Mbps (megabits per second). Write speed is measured in MB/s (megabytes per second). To convert: 1 MB/s = 8 Mbps.</p>
@@ -93,12 +95,12 @@
                 defaultScenario: 'video',
                 deviceSelectorEnabled: false
               });
-              
+
               // Initialize card selector when component is ready
               Alpine.nextTick(() => {
                 state.initCardSelector();
               });
-              
+
               return state;
             });
           });
@@ -123,7 +125,7 @@
       <!-- FAQ Section -->
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
-        
+
         <div class="space-y-4">
           <div class="faq-item">
             <h3 class="faq-heading">
@@ -276,19 +278,11 @@
   {{FOOTER}}
   {{GROW_SCRIPT}}
 
-  
   <style>
     /* Hero Image with Overlay Title */
     .hero-image-container {
       position: relative;
     }
-
-    .hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
 
     .hero-overlay {
       position: absolute;
@@ -319,6 +313,13 @@
       color: #ffffff;
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.5);
       filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .faq-item {
@@ -369,37 +370,7 @@
     // Initialize FAQ accordion on load
     document.addEventListener('DOMContentLoaded', () => {
       const buttons = document.querySelectorAll('.faq-question');
-      
-      buttons.forEach(button => {
-        button.addEventListener('click', () => {
-          const answerId = button.getAttribute('aria-controls');
-          const answer = document.getElementById(answerId);
-          const toggle = button.querySelector('.faq-toggle');
-          const isOpen = button.getAttribute('aria-expanded') === 'true';
 
-          // Close all others
-          document.querySelectorAll('.faq-question').forEach(btn => {
-            btn.setAttribute('aria-expanded', 'false');
-          });
-          document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
-          document.querySelectorAll('.faq-toggle').forEach(t => t.classList.remove('open'));
-
-          // Toggle current
-          if (!isOpen) {
-            button.setAttribute('aria-expanded', 'true');
-            answer.classList.add('open');
-            toggle.classList.add('open');
-          }
-        });
-      });
-    });
-  </script>
-
-  <script>
-    // Initialize FAQ accordion on load
-    document.addEventListener('DOMContentLoaded', () => {
-      const buttons = document.querySelectorAll('.faq-question');
-      
       buttons.forEach(button => {
         button.addEventListener('click', () => {
           const answerId = button.getAttribute('aria-controls');
