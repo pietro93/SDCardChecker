@@ -2805,6 +2805,597 @@
           "sony-tough-g-v90"
       ],
       "relatedDevices": ["canon-eos-r5", "sony-a7-iv"]
-  }
+  },
+  {
+  "id": "dji-air-3s",
+  "brand": "DJI",
+  "model": "Air 3S",
+  "category": "drone",
+  "releaseYear": 2024,
+  "supportedFormats": ["microSD"],
+  "enduranceRequired": "STANDARD",
+  "maxCapacity": "512GB",
+  "recordingModes": [
+    {
+      "name": "4K 60fps (H.265)",
+      "resolution": "4K",
+      "fps": 60,
+      "codec": "H.265",
+      "bitrateMbps": 130,
+      "colorDepth": "10-bit",
+      "requiredSpeedClass": "V30",
+      "requiredCardType": "microSD",
+      "isDefault": true
+    },
+    {
+      "name": "4K 120fps (H.265)",
+      "resolution": "4K",
+      "fps": 120,
+      "codec": "H.265",
+      "bitrateMbps": 150,
+      "colorDepth": "10-bit",
+      "requiredSpeedClass": "V30",
+      "requiredCardType": "microSD"
+    }
+  ],
+  "photoSpecs": {
+    "jpegSizeMB": 6,
+    "rawSizeMB": 25,
+    "burstRateFps": 8
+  },
+  "specialFeatures": {
+    "flightTimeIntegration": true
+  },
+  "compatibleCards": [
+    "sandisk-extreme-microsd",
+    "lexar-professional-1000x-microsd",
+    "kingston-canvas-go-plus"
+  ],
+  "relatedDevices": ["dji-mavic-3", "dji-mini-4-pro"]
+},
+{
+  "id": "insta360-x4",
+  "brand": "Insta360",
+  "model": "X4",
+  "category": "action_camera",
+  "releaseYear": 2024,
+  "supportedFormats": ["microSD"],
+  "enduranceRequired": "STANDARD",
+  "maxCapacity": "1TB",
+  "recordingModes": [
+    {
+      "name": "8K 30fps (360°)",
+      "resolution": "8K",
+      "fps": 30,
+      "codec": "H.265",
+      "bitrateMbps": 200,
+      "colorDepth": "8-bit",
+      "requiredSpeedClass": "V30",
+      "requiredCardType": "microSD",
+      "isDefault": true,
+      "notes": "Spherical 360° capture"
+    },
+    {
+      "name": "5.7K 60fps (360°)",
+      "resolution": "5.7K",
+      "fps": 60,
+      "codec": "H.265",
+      "bitrateMbps": 150,
+      "colorDepth": "8-bit",
+      "requiredSpeedClass": "V30",
+      "requiredCardType": "microSD"
+    }
+  ],
+  "photoSpecs": {
+    "jpegSizeMB": 8,
+    "rawSizeMB": 40,
+    "burstRateFps": 0
+  },
+  "specialFeatures": {
+    "is360": true,
+    "waterproofing": "10m"
+  },
+  "compatibleCards": [
+    "sandisk-extreme-microsd",
+    "lexar-professional-1000x-microsd",
+    "kingston-canvas-go-plus"
+  ],
+  "relatedDevices": ["insta360-x3", "gopro-hero-max", "gopro-hero-13"]
+},
+{
+  "id": "insta360-ace-pro",
+  "brand": "Insta360",
+  "model": "Ace Pro",
+  "category": "action_camera",
+  "releaseYear": 2023,
+  "supportedFormats": ["microSD"],
+  "enduranceRequired": "STANDARD",
+  "maxCapacity": "512GB",
+  "recordingModes": [
+    {
+      "name": "8K 24fps (H.265)",
+      "resolution": "8K",
+      "fps": 24,
+      "codec": "H.265",
+      "bitrateMbps": 120,
+      "colorDepth": "10-bit",
+      "requiredSpeedClass": "V30",
+      "requiredCardType": "microSD"
+    },
+    {
+      "name": "4K 120fps (H.265)",
+      "resolution": "4K",
+      "fps": 120,
+      "codec": "H.265",
+      "bitrateMbps": 170,
+      "colorDepth": "10-bit",
+      "requiredSpeedClass": "V30",
+      "requiredCardType": "microSD",
+      "isDefault": true
+    }
+  ],
+  "photoSpecs": {
+    "jpegSizeMB": 6,
+    "rawSizeMB": 25,
+    "burstRateFps": 30
+  },
+  "specialFeatures": {
+    "flipScreen": true
+  },
+  "compatibleCards": [
+    "sandisk-extreme-microsd",
+    "lexar-professional-1000x-microsd",
+    "kingston-canvas-go-plus"
+  ],
+  "relatedDevices": ["gopro-hero-13", "dji-osmo-action-4"]
+},
+{
+  "id": "insta360-x3",
+  "brand": "Insta360",
+  "model": "X3",
+  "category": "action_camera",
+  "releaseYear": 2022,
+  "supportedFormats": ["microSD"],
+  "enduranceRequired": "STANDARD",
+  "maxCapacity": "1TB",
+  "recordingModes": [
+    {
+      "name": "5.7K 30fps (360°)",
+      "resolution": "5.7K",
+      "fps": 30,
+      "codec": "H.265",
+      "bitrateMbps": 120,
+      "colorDepth": "8-bit",
+      "requiredSpeedClass": "V30",
+      "requiredCardType": "microSD",
+      "isDefault": true,
+      "notes": "Spherical 360° capture"
+    },
+    {
+      "name": "4K 30fps (Single Lens)",
+      "resolution": "4K",
+      "fps": 30,
+      "codec": "H.265",
+      "bitrateMbps": 100,
+      "colorDepth": "8-bit",
+      "requiredSpeedClass": "V30",
+      "requiredCardType": "microSD"
+    }
+  ],
+  "photoSpecs": {
+    "jpegSizeMB": 7,
+    "rawSizeMB": 35,
+    "burstRateFps": 0
+  },
+  "specialFeatures": {
+    "is360": true
+  },
+  "compatibleCards": [
+    "sandisk-extreme-microsd",
+    "lexar-professional-1000x-microsd",
+    "kingston-canvas-go-plus"
+  ],
+  "relatedDevices": ["insta360-x4", "insta360-one-x2", "gopro-hero-max"]
+},
+{
+  "id": "dji-osmo-pocket-3",
+  "brand": "DJI",
+  "model": "Osmo Pocket 3",
+  "category": "action_camera",
+  "releaseYear": 2023,
+  "supportedFormats": ["microSD"],
+  "enduranceRequired": "STANDARD",
+  "maxCapacity": "512GB",
+  "recordingModes": [
+    {
+      "name": "4K 120fps (H.265)",
+      "resolution": "4K",
+      "fps": 120,
+      "codec": "H.265",
+      "bitrateMbps": 130,
+      "colorDepth": "10-bit",
+      "requiredSpeedClass": "V30",
+      "requiredCardType": "microSD",
+      "isDefault": true
+    },
+    {
+      "name": "1080p 60fps (H.265)",
+      "resolution": "1080p",
+      "fps": 60,
+      "codec": "H.265",
+      "bitrateMbps": 40,
+      "colorDepth": "8-bit",
+      "requiredSpeedClass": "V30",
+      "requiredCardType": "microSD"
+    }
+  ],
+  "photoSpecs": {
+    "jpegSizeMB": 12,
+    "rawSizeMB": 35,
+    "burstRateFps": 0
+  },
+  "specialFeatures": {
+    "gimbal": true,
+    "compact": true
+  },
+  "compatibleCards": [
+    "sandisk-extreme-microsd",
+    "lexar-professional-1000x-microsd",
+    "kingston-canvas-go-plus"
+  ],
+  "relatedDevices": ["dji-osmo-action-4", "gopro-hero-13", "insta360-go-3"]
+},
+{
+  "id": "canon-eos-r6-mark-ii",
+  "brand": "Canon",
+  "model": "EOS R6 Mark II",
+  "category": "camera",
+  "releaseYear": 2022,
+  "supportedFormats": ["SD"],
+  "enduranceRequired": "STANDARD",
+  "maxCapacity": "2TB",
+  "recordingModes": [
+    {
+      "name": "4K 60fps (H.265)",
+      "resolution": "4K",
+      "fps": 60,
+      "codec": "H.265",
+      "bitrateMbps": 340,
+      "colorDepth": "10-bit",
+      "requiredSpeedClass": "V60",
+      "requiredCardType": "SD",
+      "isDefault": true
+    },
+    {
+      "name": "4K 30fps (H.265)",
+      "resolution": "4K",
+      "fps": 30,
+      "codec": "H.265",
+      "bitrateMbps": 170,
+      "colorDepth": "10-bit",
+      "requiredSpeedClass": "V60",
+      "requiredCardType": "SD"
+    }
+  ],
+  "photoSpecs": {
+    "jpegSizeMB": 10,
+    "rawSizeMB": 30,
+    "compressedRawSizeMB": 18,
+    "burstRateFps": 40
+  },
+  "specialFeatures": {
+    "dualSlotRecording": true
+  },
+  "compatibleCards": [
+    "sandisk-extreme-pro-sd-uhs2",
+    "lexar-professional-1000x-sd",
+    "sony-tough-g-v90"
+  ],
+  "relatedDevices": ["canon-eos-r6", "canon-eos-r5", "sony-a7-iv", "nikon-z6-iii"]
+},
+{
+  "id": "sony-a7-iv",
+  "brand": "Sony",
+  "model": "A7 IV",
+  "category": "camera",
+  "releaseYear": 2021,
+  "supportedFormats": ["SD", "CFexpress Type A"],
+  "enduranceRequired": "STANDARD",
+  "maxCapacity": "2TB",
+  "recordingModes": [
+    {
+      "name": "4K 60fps (XAVC S-I)",
+      "resolution": "4K",
+      "fps": 60,
+      "codec": "H.264",
+      "bitrateMbps": 600,
+      "colorDepth": "10-bit",
+      "requiredSpeedClass": "V90",
+      "requiredCardType": "SD",
+      "isDefault": true,
+      "notes": "1.5x crop in 4K 60p"
+    },
+    {
+      "name": "4K 30fps (XAVC S)",
+      "resolution": "4K",
+      "fps": 30,
+      "codec": "H.264",
+      "bitrateMbps": 200,
+      "colorDepth": "10-bit",
+      "requiredSpeedClass": "V60",
+      "requiredCardType": "SD"
+    }
+  ],
+  "photoSpecs": {
+    "jpegSizeMB": 11,
+    "rawSizeMB": 52,
+    "compressedRawSizeMB": 26,
+    "burstRateFps": 10
+  },
+  "specialFeatures": {
+    "dualSlotRecording": true,
+    "notes": "Slot 1: UHS-II/CFexpress Type A, Slot 2: UHS-II"
+  },
+  "compatibleCards": [
+    "sandisk-extreme-pro-sd-uhs2",
+    "lexar-professional-1000x-sd",
+    "sony-tough-g-v90",
+    "sandisk-extreme-pro-cfexpress-type-a"
+  ],
+  "relatedDevices": ["sony-a7-iii", "canon-eos-r6-mark-ii", "nikon-z6-iii", "sony-fx30"]
+},
+{
+  "id": "sony-a6400",
+  "brand": "Sony",
+  "model": "A6400",
+  "category": "camera",
+  "releaseYear": 2019,
+  "supportedFormats": ["SD"],
+  "enduranceRequired": "STANDARD",
+  "maxCapacity": "512GB",
+  "recordingModes": [
+    {
+      "name": "4K 30fps (XAVC S)",
+      "resolution": "4K",
+      "fps": 30,
+      "codec": "H.264",
+      "bitrateMbps": 100,
+      "colorDepth": "8-bit",
+      "requiredSpeedClass": "V30",
+      "requiredCardType": "SD",
+      "isDefault": true
+    },
+    {
+      "name": "1080p 120fps (XAVC S)",
+      "resolution": "1080p",
+      "fps": 120,
+      "codec": "H.264",
+      "bitrateMbps": 100,
+      "colorDepth": "8-bit",
+      "requiredSpeedClass": "V30",
+      "requiredCardType": "SD"
+    }
+  ],
+  "photoSpecs": {
+    "jpegSizeMB": 9,
+    "rawSizeMB": 24,
+    "burstRateFps": 11
+  },
+  "compatibleCards": [
+    "sandisk-extreme-pro-sd-uhs1",
+    "lexar-professional-633x-sd"
+  ],
+  "relatedDevices": ["sony-a6700", "fujifilm-x-s10", "canon-eos-m50"]
+},
+{
+  "id": "nikon-z9",
+  "brand": "Nikon",
+  "model": "Z9",
+  "category": "camera",
+  "releaseYear": 2021,
+  "supportedFormats": ["CFexpress Type B"],
+  "enduranceRequired": "STANDARD",
+  "maxCapacity": "2TB",
+  "recordingModes": [
+    {
+      "name": "8K 60fps (N-RAW)",
+      "resolution": "8K",
+      "fps": 60,
+      "codec": "N-RAW",
+      "bitrateMbps": 5800,
+      "colorDepth": "12-bit",
+      "requiredSpeedClass": null,
+      "requiredCardType": "CFexpress Type B"
+    },
+    {
+      "name": "4K 120fps (H.265)",
+      "resolution": "4K",
+      "fps": 120,
+      "codec": "H.265",
+      "bitrateMbps": 400,
+      "colorDepth": "10-bit",
+      "requiredSpeedClass": null,
+      "requiredCardType": "CFexpress Type B",
+      "isDefault": true
+    }
+  ],
+  "photoSpecs": {
+    "jpegSizeMB": 18,
+    "rawSizeMB": 55,
+    "burstRateFps": 20
+  },
+  "specialFeatures": {
+    "dualSlotRecording": true,
+    "flagship": true
+  },
+  "compatibleCards": [
+    "sandisk-extreme-pro-cfexpress",
+    "lexar-professional-cfexpress"
+  ],
+  "relatedDevices": ["nikon-z8", "canon-eos-r5", "sony-a1"]
+},
+{
+  "id": "nikon-z6-ii",
+  "brand": "Nikon",
+  "model": "Z6 II",
+  "category": "camera",
+  "releaseYear": 2020,
+  "supportedFormats": ["SD", "CFexpress Type B"],
+  "enduranceRequired": "STANDARD",
+  "maxCapacity": "2TB",
+  "recordingModes": [
+    {
+      "name": "4K 60fps (H.264)",
+      "resolution": "4K",
+      "fps": 60,
+      "codec": "H.264",
+      "bitrateMbps": 200,
+      "colorDepth": "8-bit",
+      "requiredSpeedClass": "V60",
+      "requiredCardType": "SD",
+      "isDefault": true
+    },
+    {
+      "name": "4K 30fps (H.264)",
+      "resolution": "4K",
+      "fps": 30,
+      "codec": "H.264",
+      "bitrateMbps": 144,
+      "colorDepth": "8-bit",
+      "requiredSpeedClass": "V30",
+      "requiredCardType": "SD"
+    }
+  ],
+  "photoSpecs": {
+    "jpegSizeMB": 10,
+    "rawSizeMB": 35,
+    "burstRateFps": 14
+  },
+  "specialFeatures": {
+    "dualSlotRecording": true
+  },
+  "compatibleCards": [
+    "sandisk-extreme-pro-sd-uhs2",
+    "lexar-professional-1000x-sd"
+  ],
+  "relatedDevices": ["nikon-z6-iii", "sony-a7-iv", "canon-eos-r6-mark-ii"]
+},
+{
+  "id": "fujifilm-x-s20",
+  "brand": "Fujifilm",
+  "model": "X-S20",
+  "category": "camera",
+  "releaseYear": 2023,
+  "supportedFormats": ["SD"],
+  "enduranceRequired": "STANDARD",
+  "maxCapacity": "2TB",
+  "recordingModes": [
+    {
+      "name": "6.2K 30fps (H.265)",
+      "resolution": "6.2K",
+      "fps": 30,
+      "codec": "H.265",
+      "bitrateMbps": 360,
+      "colorDepth": "10-bit",
+      "requiredSpeedClass": "V60",
+      "requiredCardType": "SD",
+      "isDefault": true
+    },
+    {
+      "name": "4K 60fps (H.265)",
+      "resolution": "4K",
+      "fps": 60,
+      "codec": "H.265",
+      "bitrateMbps": 360,
+      "colorDepth": "10-bit",
+      "requiredSpeedClass": "V60",
+      "requiredCardType": "SD"
+    }
+  ],
+  "photoSpecs": {
+    "jpegSizeMB": 10,
+    "rawSizeMB": 50,
+    "compressedRawSizeMB": 25,
+    "burstRateFps": 20
+  },
+  "compatibleCards": [
+    "sandisk-extreme-pro-sd-uhs2",
+    "lexar-professional-1000x-sd"
+  ],
+  "relatedDevices": ["fujifilm-x-s10", "fujifilm-x-t5", "sony-a6700"]
+},
+{
+  "id": "wyze-cam-pan",
+  "brand": "Wyze",
+  "model": "Cam Pan v3",
+  "category": "surveillance",
+  "releaseYear": 2022,
+  "supportedFormats": ["microSD"],
+  "enduranceRequired": "HIGH_ENDURANCE",
+  "maxCapacity": "256GB",
+  "recordingModes": [
+    {
+      "name": "2K 20fps (Continuous)",
+      "resolution": "2K",
+      "fps": 20,
+      "codec": "H.264",
+      "bitrateMbps": 3,
+      "colorDepth": "8-bit",
+      "requiredSpeedClass": "Class 10",
+      "requiredCardType": "microSD",
+      "isDefault": true,
+      "continuousMode": true
+    }
+  ],
+  "photoSpecs": null,
+  "specialFeatures": {
+    "enduranceRecommendation": {
+      "critical": true,
+      "explanation": "Pan/tilt cameras with 24/7 recording require High Endurance cards to handle constant write cycles."
+    },
+    "panTilt": true
+  },
+  "compatibleCards": [
+    "sandisk-max-endurance",
+    "samsung-pro-endurance"
+  ],
+  "relatedDevices": ["wyze-cam-v3", "reolink-e1-pro"]
+},
+{
+  "id": "garmin-dash-cam-mini-2",
+  "brand": "Garmin",
+  "model": "Dash Cam Mini 2",
+  "category": "dashcam",
+  "releaseYear": 2021,
+  "supportedFormats": ["microSD"],
+  "enduranceRequired": "HIGH_ENDURANCE",
+  "maxCapacity": "512GB",
+  "recordingModes": [
+    {
+      "name": "1080p 30fps (Continuous)",
+      "resolution": "1080p",
+      "fps": 30,
+      "codec": "H.264",
+      "bitrateMbps": 15,
+      "colorDepth": "8-bit",
+      "requiredSpeedClass": "U3",
+      "requiredCardType": "microSD",
+      "isDefault": true,
+      "continuousMode": true
+    }
+  ],
+  "photoSpecs": null,
+  "specialFeatures": {
+    "enduranceRecommendation": {
+      "critical": true,
+      "explanation": "Continuous loop recording requires High Endurance cards to prevent data corruption and failure."
+    }
+  },
+  "compatibleCards": [
+    "sandisk-max-endurance",
+    "samsung-pro-endurance"
+  ],
+  "relatedDevices": ["viofo-a229-duo", "nextbase-622gw", "garmin-66s-dash-cam"]
+}
       ]
       }
