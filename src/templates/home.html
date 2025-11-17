@@ -58,7 +58,7 @@
                         placeholder="Search devices..." class="search-input"
                         aria-label="Search for devices and recommended SD cards">
                     <div class="search-dropdown" :class="{ hidden: !open || (filtered && filtered.length === 0) }">
-                         <template x-for="(group, category) in Object.keys(groupedDevices()).sort()" :key="category">
+                         <template x-for="category in Object.keys(groupedDevices()).sort()" :key="category">
                             <div>
                                 <div class="search-group-header" x-text="category"></div>
                                 <template x-for="device in (groupedDevices()[category] || [])" :key="device.id">

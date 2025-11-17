@@ -105,19 +105,21 @@
   - Schema: FAQPage (JSON-LD) ✅
 
   - ✅ **Navigation Integration** (COMPLETE)
-      - ✅ Added "Tools" dropdown to navbar (desktop & mobile)
-      - ✅ Added "Tools" section to sidebar
-      - ✅ Video & Photo calculator links in navbar, mobile menu, sidebar
+      - ✅ Added "Calculators" dropdown to navbar (desktop & mobile)
+      - ✅ Added "Calculators" section to sidebar
+      - ✅ Video & Photo Storage Calculator links in navbar, mobile menu, sidebar
       - ✅ Updated components.js with navigation markup
+      - ✅ Fixed URLs: `/tools/calculators/video-storage/` and `/tools/calculators/photo-storage/`
 
-  - [ ] **Card Recommendations in Results** (REPLACING broken "Find Matching Cards" link)
-      - [ ] Display 3-5 matching cards directly in results (no page navigation)
-      - [ ] Each card shows: brand, model, capacity, speed class, write speed, affiliate links
-      - [ ] Include card images (with fallback placeholder if missing)
-      - [ ] Show Amazon, B&H, other affiliate links (similar to device HTML pages)
-      - [ ] "See all matching cards" link below recommendations (filters by speed class)
-      - [ ] Mobile-responsive grid layout (1-2 cards per row on mobile)
-      - [ ] Use existing CardRecommendations utility but render inline instead of linking away
+  - ✅ **Card Recommendations in Results** (COMPLETE)
+      - ✅ Implemented CalculatorCardRecommendations.js class
+      - ✅ Displays 3-5 matching cards directly in results (no page navigation)
+      - ✅ Each card shows: brand, model, speed class, write speed, price tier
+      - ✅ Card images with fallback placeholders (UHS-II, UHS-I, type-based)
+      - ✅ Amazon affiliate links with "Check Price" button
+      - ✅ Mobile-responsive grid layout (1-3 columns by breakpoint)
+      - ✅ Filters by speed class, sorts by price
+      - ✅ Called from calculator-ui.js after result calculation
 
 - [ ] **Related Resources Section** (TODO)
   - [ ] Link to "SD Card Speed Class Guide" (need to create page)
