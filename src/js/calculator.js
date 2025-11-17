@@ -45,22 +45,26 @@ class StorageCalculator {
    * @param {number} photoCount - Total number of photos
    * @param {number} fileSizeMB - File size per photo in MB
    * @param {number} overheadPercent - Overhead percentage (default 10)
-   * @returns {Object} { rawGB, totalGB }
+   * @param {string} burstRate - Burst rate style: 'casual' (2-5fps), 'normal' (10fps), 'highspeed' (20+fps)
+   * @returns {Object} { rawGB, totalGB, speedClass, minWriteSpeed }
    */
-  static calculatePhotoStorage(photoCount, fileSizeMB, overheadPercent = 10) {
+  static calculatePhotoStorage(photoCount, fileSizeMB, overheadPercent = 10, burstRate = 'normal') {
     const totalMB = photoCount * fileSizeMB;
     const rawGB = totalMB / 1024;
 
     const overheadMultiplier = 1 + overheadPercent / 100;
     const totalGB = rawGB * overheadMultiplier;
 
-    // Determine speed class based on burst shooting scenario
-    const isHighBurst = photoCount > 500 && fileSizeMB > 20;
+    // Determine speed class based on file size + burst rate
+    // Higher burst rates and larger files require faster cards
+    const isLargeFile = fileSizeMB > 20;
+    const isHighBurst = burstRate === 'highspeed' || (burstRate === 'normal' && isLargeFile);
     const speedClass = isHighBurst ? 'V60' : 'V30';
 
     return {
       totalPhotos: photoCount,
       fileSizePerPhotoMB: fileSizeMB,
+      burstRate: burstRate,
       rawGB: this._round(rawGB, 2),
       overheadGB: this._round(totalGB - rawGB, 2),
       totalGB: this._round(totalGB, 2),
@@ -205,7 +209,7 @@ class StorageCalculator {
    * @returns {Object} Complete calculation result
    */
   static calculateForward(input) {
-    const { scenario, bitrateMbps, durationHours, photoCount, fileSizeMB, hoursPerDay, daysNeeded, overheadPercent = 10 } = input;
+    const { scenario, bitrateMbps, durationHours, photoCount, fileSizeMB, shootingStyle, hoursPerDay, daysNeeded, overheadPercent = 10 } = input;
 
     let calc;
 
@@ -214,7 +218,7 @@ class StorageCalculator {
         calc = this.calculateVideoStorage(bitrateMbps, durationHours, overheadPercent);
         break;
       case 'photo':
-        calc = this.calculatePhotoStorage(photoCount, fileSizeMB, overheadPercent);
+        calc = this.calculatePhotoStorage(photoCount, fileSizeMB, overheadPercent, shootingStyle);
         break;
       case 'continuous':
         calc = this.calculateContinuousStorage(bitrateMbps, hoursPerDay, daysNeeded, overheadPercent);

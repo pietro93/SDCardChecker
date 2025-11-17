@@ -240,15 +240,18 @@ class CalculatorUI {
       calculateReverse() {
         try {
           const input = this._buildReverseInput();
+          console.log('Reverse input:', input);
           
           // Validate numeric fields to prevent NaN errors
           const numericFields = Object.entries(input).filter(([key]) => key !== 'scenario');
           if (numericFields.some(([, val]) => isNaN(val) || val === '')) {
+            console.warn('Invalid numeric fields:', numericFields.filter(([, val]) => isNaN(val) || val === ''));
             alert('Invalid input. Please enter valid numbers.');
             return;
           }
           
           this.result = StorageCalculator.calculateReverse(input);
+          console.log('Reverse result:', this.result);
           this.currentLayer = 'results';
           this.hasCalculated = true;
 
@@ -284,7 +287,8 @@ class CalculatorUI {
             return {
               ...base,
               photoCount: parseInt(this.forward.photo.photoCount),
-              fileSizeMB: parseFloat(this.forward.photo.fileSizeMB)
+              fileSizeMB: parseFloat(this.forward.photo.fileSizeMB),
+              shootingStyle: this.forward.photo.shootingStyle
             };
 
           case 'continuous':

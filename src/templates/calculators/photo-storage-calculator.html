@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Storage Calculator - How Many Photos Fit On Your SD Card?</title>
+    <meta name="description" content="Calculate storage for photo burst and timelapse. Compare JPEG vs RAW file sizes, get speed class recommendations, and find the right SD card.">
+    <link rel="canonical" href="{{BASE_URL}}/tools/photo-storage-calculator/">
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Photo Storage Calculator - Burst & RAW">
+    <meta property="og:description" content="Calculate storage for photos. Compare JPEG vs RAW and find the right SD card for burst shooting.">
+    <meta property="og:image" content="{{BASE_URL}}/img/calculators/photo-hero.webp">
+    <meta property="og:url" content="{{BASE_URL}}/tools/photo-storage-calculator/">
+    <meta property="og:site_name" content="SD Card Checker">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Photo Storage Calculator">
+    <meta name="twitter:description" content="Calculate storage for photos. Compare JPEG vs RAW.">
+    <meta name="twitter:image" content="{{BASE_URL}}/img/calculators/photo-hero.webp">
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Photo Storage Calculator",
+        "description": "Calculate storage needed for photo burst and timelapse",
+        "url": "{{BASE_URL}}/tools/photo-storage-calculator/",
+        "publisher": {
+            "@type": "Organization",
+            "name": "SD Card Checker",
+            "logo": "{{BASE_URL}}/img/logo.webp"
+        }
+    }
+    </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What's the difference between JPEG and RAW?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "JPEG is compressed (smaller files, 2-8 MB per photo). RAW is uncompressed (larger files, 30-65 MB per photo) with maximum editing flexibility. Professionals shoot RAW for critical work, JPEG for casual shooting."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I find my camera's file size?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Take a test photo and check the file properties. Or check your camera manual for specs. Common sizes: 5MP = 2.5MB, 20MP = 8MB JPEG or 30MB RAW, 45MP = 20MB JPEG or 65MB RAW."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What speed class do I need for burst shooting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "V30 minimum for casual burst (2-10 fps). V60 for high-speed burst (20+ fps) with large files. Check your camera specs to determine required speed class."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "{{BASE_URL}}/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Tools",
+                "item": "{{BASE_URL}}/tools/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Photo Storage Calculator",
+                "item": "{{BASE_URL}}/tools/photo-storage-calculator/"
+            }
+        ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/assets/css/modern.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    {{GROW_SCRIPT}}
+</head>
+
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+    {{HEADER}}
+
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <nav class="text-sm text-slate-600 flex items-center gap-2">
+                <a href="/" class="text-blue-600 hover:underline">Home</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="/tools/" class="text-blue-600 hover:underline">Tools</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-slate-900">Photo Storage Calculator</span>
+            </nav>
+        </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section class="mb-12">
+            <div class="relative rounded-xl overflow-hidden h-96 bg-gradient-to-r from-emerald-600 to-emerald-700 flex items-center">
+                <div class="absolute inset-0 bg-black opacity-20"></div>
+                <div class="relative z-10 w-full text-white px-8 py-12">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">How Many Photos Fit On Your SD Card?</h1>
+                    <p class="text-xl text-emerald-100 mb-6">Instantly Compare JPEG vs RAW and Plan Your Shoot</p>
+                    <p class="text-emerald-50 max-w-2xl">Running out of storage mid-burst is every photographer's nightmare. This calculator lets you see exactly how many photos you can capture before your card fills up. Compare JPEG vs RAW, choose your burst rate, and find the perfect card.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculator Widget -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            {{CALCULATOR_WIDGET}}
+        </section>
+
+        <!-- Why This Matters Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-8">Why This Matters: The Hidden Cost of Wrong Card Choices</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded">
+                    <h3 class="text-xl font-bold text-red-900 mb-3">Buffer Slowdown Kills the Moment</h3>
+                    <p>A slow card with insufficient write speed causes buffer delays. Your camera pauses between burst sequences, and you miss the perfect shot. The decisive moment has passed. No second chances with fast-moving subjects.</p>
+                </div>
+
+                <div class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded">
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">Underestimating RAW File Size</h3>
+                    <p>RAW files are 5-10x larger than JPEG. A 20MP camera shooting RAW burst uses ~30 MB per frame. Your 128GB card holds only 4,300 photos—not the 15,000 you expected. You run out mid-session and have to stop shooting.</p>
+                </div>
+
+                <div class="bg-orange-50 border-l-4 border-orange-500 p-6 rounded">
+                    <h3 class="text-xl font-bold text-orange-900 mb-3">Expensive Mistakes on Assignment</h3>
+                    <p>A wedding photographer with insufficient cards can't reshoot. A wildlife photographer misses rare moments. A corporate client expects full coverage. Using this calculator ensures you have enough capacity—no excuses, no do-overs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <!-- Q1 -->
+                <div class="border border-gray-300 rounded-lg overflow-hidden" x-data="{ open: false }">
+                    <button @click="open = !open" :aria-expanded="open" class="w-full px-6 py-4 bg-gray-50 hover:bg-gray-100 text-left font-bold flex items-center justify-between transition">
+                        <span>What's the difference between JPEG and RAW?</span>
+                        <span :class="open ? 'rotate-180' : ''" class="transition-transform">▼</span>
+                    </button>
+                    <div x-show="open" class="px-6 py-4 bg-white text-gray-700 space-y-3">
+                        <p><strong>JPEG:</strong> Compressed format. File sizes range from 2-8 MB depending on resolution and quality. JPEG is "locked in"—limited editing flexibility. Great for casual photography, social media, quick sharing.</p>
+                        <p><strong>RAW:</strong> Uncompressed format. File sizes range from 30-65 MB depending on resolution. RAW contains maximum editing data: white balance, exposure, shadows, highlights all adjustable in post. Essential for professional work where control matters.</p>
+                        <p><strong>Storage impact:</strong> A 20MP camera: 8 MB per JPEG vs. 30 MB per RAW. On a 256 GB card: ~30,000 JPEGs vs. 8,000 RAWs.</p>
+                        <p><strong>Mixed shooting:</strong> Many professionals shoot JPEG + RAW simultaneously. Your card needs enough space for both—use the calculator with combined file sizes.</p>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="border border-gray-300 rounded-lg overflow-hidden" x-data="{ open: false }">
+                    <button @click="open = !open" :aria-expanded="open" class="w-full px-6 py-4 bg-gray-50 hover:bg-gray-100 text-left font-bold flex items-center justify-between transition">
+                        <span>How do I find my camera's file size?</span>
+                        <span :class="open ? 'rotate-180' : ''" class="transition-transform">▼</span>
+                    </button>
+                    <div x-show="open" class="px-6 py-4 bg-white text-gray-700 space-y-3">
+                        <p>Three easy methods:</p>
+                        <p><strong>Method 1: Check File Properties</strong><br>Take a photo in JPEG and RAW modes. Right-click the file → Properties → Size. This is the most accurate for your exact camera.</p>
+                        <p><strong>Method 2: Check Your Manual</strong><br>Search "[Camera Model] file size specifications" or check the manual's technical specs. Most manufacturers list JPEG and RAW file sizes.</p>
+                        <p><strong>Method 3: Use Common Benchmarks</strong><br>
+                            • 5MP = 2.5 MB JPEG, 15 MB RAW<br>
+                            • 20MP = 8 MB JPEG, 30 MB RAW<br>
+                            • 45MP = 20 MB JPEG, 65 MB RAW<br>
+                            Exact sizes vary by camera model, so Method 1 is most reliable.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="border border-gray-300 rounded-lg overflow-hidden" x-data="{ open: false }">
+                    <button @click="open = !open" :aria-expanded="open" class="w-full px-6 py-4 bg-gray-50 hover:bg-gray-100 text-left font-bold flex items-center justify-between transition">
+                        <span>What speed class do I need for burst shooting?</span>
+                        <span :class="open ? 'rotate-180' : ''" class="transition-transform">▼</span>
+                    </button>
+                    <div x-show="open" class="px-6 py-4 bg-white text-gray-700 space-y-3">
+                        <p>Speed class depends on burst rate and file size:</p>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><strong>V30:</strong> Minimum for most burst shooting (2-10 fps). Safe for JPEG bursts and smaller RAW files.</li>
+                            <li><strong>V60:</strong> For high-speed burst (20+ fps) or large RAW files. Professional cameras shooting 12+ fps bursts need V60.</li>
+                            <li><strong>V90:</strong> Overkill for photography. Mainly for video or extreme professional use.</li>
+                        </ul>
+                        <p><strong>Quick rule:</strong> Check your camera's burst specs. If it can shoot 10+ fps in RAW, use V60. Otherwise, V30 is fine.</p>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="border border-gray-300 rounded-lg overflow-hidden" x-data="{ open: false }">
+                    <button @click="open = !open" :aria-expanded="open" class="w-full px-6 py-4 bg-gray-50 hover:bg-gray-100 text-left font-bold flex items-center justify-between transition">
+                        <span>Can I mix JPEG and RAW on the same card?</span>
+                        <span :class="open ? 'rotate-180' : ''" class="transition-transform">▼</span>
+                    </button>
+                    <div x-show="open" class="px-6 py-4 bg-white text-gray-700 space-y-3">
+                        <p>Yes, many cameras let you shoot JPEG + RAW simultaneously, saving both formats from every shot. This doubles file size but gives you maximum flexibility in post-processing.</p>
+                        <p><strong>Storage calculation:</strong> Add file sizes together. If JPEG is 8 MB and RAW is 30 MB, each photo takes 38 MB. A 256 GB card holds ~6,700 JPEG+RAW pairs.</p>
+                        <p><strong>Use case:</strong> Professional photographers often shoot JPEG+RAW for critical work (weddings, portraits) where you want instant JPEG reviews and full RAW editing power later.</p>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="border border-gray-300 rounded-lg overflow-hidden" x-data="{ open: false }">
+                    <button @click="open = !open" :aria-expanded="open" class="w-full px-6 py-4 bg-gray-50 hover:bg-gray-100 text-left font-bold flex items-center justify-between transition">
+                        <span>Is 256GB overkill for photography?</span>
+                        <span :class="open ? 'rotate-180' : ''" class="transition-transform">▼</span>
+                    </button>
+                    <div x-show="open" class="px-6 py-4 bg-white text-gray-700 space-y-3">
+                        <p><strong>Short answer:</strong> No. For professional work, bigger is better. Here's why:</p>
+                        <ul class="list-disc pl-5 space-y-3">
+                            <li><strong>Overprovision for reliability:</strong> Filling a card to 100% capacity reduces lifespan. Professionals keep cards 50-70% full to maximize durability.</li>
+                            <li><strong>Reduce card swaps:</strong> One 256 GB card beats three 64 GB cards. Fewer swaps = lower corruption risk and faster workflow.</li>
+                            <li><strong>Future-proof:</strong> Camera resolutions increase. What fits today might not fit your next camera.</li>
+                            <li><strong>Price-to-capacity ratio:</strong> A 256 GB card costs only 2-3x more than 64 GB, but holds 4x the data.</li>
+                        </ul>
+                        <p><strong>Pro recommendation:</strong> Buy cards larger than your immediate need. Use 50-70% of capacity, then archive to external drives.</p>
+                    </div>
+                </div>
+
+                <!-- Q6 -->
+                <div class="border border-gray-300 rounded-lg overflow-hidden" x-data="{ open: false }">
+                    <button @click="open = !open" :aria-expanded="open" class="w-full px-6 py-4 bg-gray-50 hover:bg-gray-100 text-left font-bold flex items-center justify-between transition">
+                        <span>Should I shoot RAW or JPEG?</span>
+                        <span :class="open ? 'rotate-180' : ''" class="transition-transform">▼</span>
+                    </button>
+                    <div x-show="open" class="px-6 py-4 bg-white text-gray-700 space-y-3">
+                        <p><strong>Shoot RAW if:</strong> You do professional work, care about post-processing control, or want maximum editing flexibility. Examples: portraits, weddings, product photography.</p>
+                        <p><strong>Shoot JPEG if:</strong> You prioritize speed, storage efficiency, or don't edit photos much. Examples: social media, travel, casual events, real estate.</p>
+                        <p><strong>Shoot both (JPEG+RAW) if:</strong> You're a professional who wants instant JPEGs for client previews plus RAW for final editing. Storage is not an issue for professional work.</p>
+                        <p><strong>Storage rule of thumb:</strong> RAW requires 4-6 TB of storage per 10,000 photos. JPEG requires only 40-60 GB. If you shoot 10,000 photos per month, archive to external drives immediately.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Resources -->
+        <section class="bg-emerald-50 border border-emerald-200 rounded-lg p-8 mb-12">
+            <h3 class="text-2xl font-bold mb-4">Learn More</h3>
+            <p class="text-gray-700 mb-6">Dive deeper into file formats and find the perfect card for your photography style.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="/guides/raw-vs-jpeg/" class="bg-white px-4 py-3 rounded border border-emerald-300 text-emerald-600 hover:bg-emerald-100 transition">
+                    🎨 RAW vs JPEG Guide → Complete format comparison
+                </a>
+                <a href="/guides/sd-card-speed-classes/" class="bg-white px-4 py-3 rounded border border-emerald-300 text-emerald-600 hover:bg-emerald-100 transition">
+                    📊 Speed Class Guide → V30, V60, V90 explained
+                </a>
+                <a href="/tools/video-storage-calculator/" class="bg-white px-4 py-3 rounded border border-emerald-300 text-emerald-600 hover:bg-emerald-100 transition">
+                    🎬 Video Storage Calculator → For video recording
+                </a>
+                <a href="/guides/sd-cards/" class="bg-white px-4 py-3 rounded border border-emerald-300 text-emerald-600 hover:bg-emerald-100 transition">
+                    🔍 SD Card Comparison → All cards by speed class & price
+                </a>
+            </div>
+        </section>
+    </main>
+
+    {{FOOTER}}
+
+    <!-- Calculator Scripts -->
+    <script src="/src/js/calculator.js"></script>
+    <script src="/src/js/calculator-ui.js"></script>
+    <script src="/src/js/card-recommender.js"></script>
+    
+    <!-- Initialize Calculator -->
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('calculatorState', () => CalculatorUI.init({
+                defaultScenario: 'photo'
+            }));
+        });
+    </script>
+</body>
+
+</html>

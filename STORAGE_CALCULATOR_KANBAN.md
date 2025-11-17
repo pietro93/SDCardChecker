@@ -28,56 +28,39 @@
 
 ### 🚀 IN PROGRESS (Core Engine Development)
 
-- [ ] **Build Reusable Calculator Engine**
-  - **Task:** Create `src/js/calculator.js`
-  - Inputs:
-    - Scenario type (video, photo, continuous, reverse)
-    - Capacity (GB)
-    - Bitrate (Mbps) or file size (MB)
-    - Duration (hours/minutes/photos)
-    - Codec (H.264, H.265, ProRes)
-    - Overhead % (5–25%, default 10%)
-  - Outputs:
-    - `storageRequired` (GB)
-    - `recommendedCapacity` (GB)
-    - `speedClass` (V6, V30, V60, V90)
-    - `minWriteSpeed` (MB/s)
-    - `recordingTime` (HH:MM)
-    - `isEnough` (boolean)
-    - `breakdown` { rawFootage, overhead }
-  - Math validation against spec Table (Section 3, Output section)
-  - [ ] Unit tests (8+ scenarios)
-  - [ ] Support reverse calculation toggle
+- ✅ **Build Reusable Calculator Engine** (COMPLETE)
+   - ✅ Created `src/js/calculator.js`
+   - ✅ All input/output scenarios implemented
+   - ✅ Speed class mapping: V6, V30, V60, V90
+   - ✅ Photo burst rate logic integrated (casual, normal, highspeed)
+   - ✅ Reverse calculations for video and photo
+   - ✅ Overhead buffer support (5-25%, default 10%)
 
-- [ ] **Build Calculator UI Component**
-  - **Task:** Create `src/js/calculator-ui.js`
-  - [ ] Form state management (update on input)
-  - [ ] Layer 1 toggle (use case selection)
-  - [ ] Layer 2 dynamic fields (resolution, fps, codec, bitrate)
-  - [ ] Layer 3 advanced options (collapsible accordion)
-  - [ ] Forward/reverse mode toggle (same URL, different flow)
-  - [ ] "Calculate" button handler
-  - [ ] Result card display (matches brand card styling)
-  - [ ] Error handling (validation messages)
-  - [ ] Alpine.js integration for interactivity
+- ✅ **Build Calculator UI Component** (COMPLETE)
+   - ✅ Created `src/js/calculator-ui.js`
+   - ✅ Form state management with Alpine.js
+   - ✅ Three-layer flow: Use Case → Details → Results
+   - ✅ Forward/reverse mode toggle
+   - ✅ Shooting style (burst rate) passed to calculator
+   - ✅ Advanced options accordion (collapsible)
+   - ✅ Input validation
 
-- [ ] **Build Calculator Widget Template**
-  - **Task:** Create `src/templates/components/calculator-widget.html`
-  - [ ] Reusable HTML structure (no page-specific copy yet)
-  - [ ] Form fields with proper labels + helper text
-  - [ ] Advanced options accordion (collapsed by default)
-  - [ ] Calculate button (orange, 44px min height)
-  - [ ] Result card placeholder (blue gradient, matches recommendation cards)
-  - [ ] Mobile responsive (single column, touch-friendly inputs)
-  - [ ] Schema markup hooks (data attributes for JSON-LD)
+- ✅ **Build Calculator Widget Template** (COMPLETE)
+   - ✅ Created `src/templates/components/calculator-widget.html`
+   - ✅ Reusable component (video, photo, continuous modes)
+   - ✅ Mobile responsive (44px tap targets)
+   - ✅ Advanced options accordion (collapsed by default)
+   - ✅ Improved bitrate helper text (quality vs file size framing)
+   - ✅ HIGH_ENDURANCE warning for continuous mode
+   - ✅ Burst rate selector with clear labels
 
-- [ ] **Build Card Recommendation Filter**
-  - **Task:** Create recommendation display logic
-  - [ ] Query `data/cards.json` by speed class (V30, V60, V90)
-  - [ ] Filter by capacity (min required)
-  - [ ] Sort by: speed class (min sufficient first), then price tier
-  - [ ] Display: card name, speed class, write speed, price badge, Amazon button
-  - [ ] Limit to 3–5 card options per result
+- ✅ **Build Card Recommendation Filter** (COMPLETE)
+   - ✅ Created `src/js/card-recommender.js`
+   - ✅ Loads sdcards.json on-demand (cached)
+   - ✅ Filters by speed class
+   - ✅ Sorts by: tier (recommended first), price, write speed
+   - ✅ Added "Find Matching Cards" button to results
+   - ✅ Links to `/cards/?speedClass=V30` (etc.)
 
 ---
 
@@ -140,12 +123,14 @@
 
 #### Technical & Testing
 
-- [ ] **Page Template**
-  - [ ] Create `src/templates/calculator/video-storage-calculator.html`
-  - [ ] Inherit base layout (container, spacing from brand guidelines)
-  - [ ] Load calculator-widget component
-  - [ ] Load calculator.js and calculator-ui.js
-  - [ ] Set default presets: 4K 60fps H.264 150Mbps
+- ✅ **Page Template** (COMPLETE)
+   - ✅ Created `src/templates/calculators/video-storage-calculator.html`
+   - ✅ Hero section with benefit-focused copy
+   - ✅ Calculator widget embedded
+   - ✅ "Why This Matters" section (3 paragraphs on failure scenarios)
+   - ✅ 6 expanded FAQ answers with examples
+   - ✅ Related Resources links
+   - ✅ All Schema markup (WebPage, FAQPage, Breadcrumb)
 
 - [ ] **SEO & Schema**
   - [ ] Meta description (150–160 chars, "video storage calculator" keyword)
@@ -250,10 +235,14 @@
 
 #### Technical & Testing
 
-- [ ] **Page Template**
-  - [ ] Create `src/templates/calculator/photo-storage-calculator.html`
-  - [ ] Set default presets: Photo use case, 5MP JPEG, 10fps burst
-  - [ ] Load same calculator engine (scenario: "photo")
+- ✅ **Page Template** (COMPLETE)
+   - ✅ Created `src/templates/calculators/photo-storage-calculator.html`
+   - ✅ Hero section with photographer angle
+   - ✅ Calculator widget embedded
+   - ✅ "Why This Matters" section (3 paragraphs on photography scenarios)
+   - ✅ 6 expanded FAQ answers (JPEG vs RAW, file sizes, burst rates, etc.)
+   - ✅ Related Resources links
+   - ✅ All Schema markup (WebPage, FAQPage, Breadcrumb)
 
 - [ ] **Functional Testing**
   - [ ] Input validation:
