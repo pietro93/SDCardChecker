@@ -54,14 +54,18 @@ class StorageCalculator {
     const overheadMultiplier = 1 + overheadPercent / 100;
     const totalGB = rawGB * overheadMultiplier;
 
+    // Determine speed class based on burst shooting scenario
+    const isHighBurst = photoCount > 500 && fileSizeMB > 20;
+    const speedClass = isHighBurst ? 'V60' : 'V30';
+
     return {
       totalPhotos: photoCount,
-      fileSizePerPhotaMB: fileSizeMB,
+      fileSizePerPhotoMB: fileSizeMB,
       rawGB: this._round(rawGB, 2),
       overheadGB: this._round(totalGB - rawGB, 2),
       totalGB: this._round(totalGB, 2),
-      speedClass: 'V30', // Photos typically don't need high speed class
-      minWriteSpeed: 30
+      speedClass: speedClass,
+      minWriteSpeed: speedClass === 'V60' ? 60 : 30
     };
   }
 
@@ -127,7 +131,7 @@ class StorageCalculator {
     return {
       photoCount: photoCount,
       usableGB: this._round(usableGB, 2),
-      fileSizePerPhotaMB: fileSizeMB
+      fileSizePerPhotoMB: fileSizeMB
     };
   }
 

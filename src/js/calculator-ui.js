@@ -178,6 +178,14 @@ class CalculatorUI {
        calculate() {
          try {
            const input = this._buildForwardInput();
+           
+           // Validate numeric fields to prevent NaN errors
+           const numericFields = Object.entries(input).filter(([key]) => key !== 'scenario');
+           if (numericFields.some(([, val]) => isNaN(val) || val === '')) {
+             alert('Invalid input. Please enter valid numbers.');
+             return;
+           }
+           
            this.result = StorageCalculator.calculateForward(input);
            this.currentLayer = 'results';
            this.hasCalculated = true;
@@ -202,6 +210,14 @@ class CalculatorUI {
       calculateReverse() {
         try {
           const input = this._buildReverseInput();
+          
+          // Validate numeric fields to prevent NaN errors
+          const numericFields = Object.entries(input).filter(([key]) => key !== 'scenario');
+          if (numericFields.some(([, val]) => isNaN(val) || val === '')) {
+            alert('Invalid input. Please enter valid numbers.');
+            return;
+          }
+          
           this.result = StorageCalculator.calculateReverse(input);
           this.currentLayer = 'results';
           this.hasCalculated = true;

@@ -61,7 +61,7 @@ class CardRecommendations {
       const rankB = this.SPEED_CLASS_ORDER[b.speed] || 0;
 
       if (rankA !== rankB) {
-        return rankA - rankB; // Lower rank = faster
+        return rankA - rankB; // Sort by ascending rank (V6 -> V90)
       }
 
       // If same speed class, sort by price
