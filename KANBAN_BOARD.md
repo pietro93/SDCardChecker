@@ -83,12 +83,19 @@ When GSC shows demand for a device:
 - **Owner:** Amp
 - **Timeline:** Week 1 (Nov 17-24)
 - **Status:** 🟡 Templates Complete
+- **Files:**
+  - `src/js/calculator.js` (math engine, formulas, speed class mapping)
+  - `src/js/calculator-ui.js` (Alpine.js state, form management)
+  - `src/templates/calculator/video-storage-calculator.html`
+  - `src/templates/calculator/photo-storage-calculator.html`
+  - Build output: `dist/tools/video-storage-calculator/index.html`
+  - Build output: `dist/tools/photo-storage-calculator/index.html`
 - **Progress:**
   - ✅ calculator.js (math engine, all formulas, speed class mapping)
   - ✅ calculator-ui.js (Alpine.js state, form management, results)
-  - ✅ calculator-widget.html (reusable component, all 3 layers + reverse)
   - ✅ Video Storage Calculator page (Hero, FAQ, schema, copy)
   - ✅ Photo Storage Calculator page (Hero, FAQ, schema, copy)
+  - ✅ Build script generating to dist/tools/
   - 🔄 Testing (form inputs, reverse toggle, mobile UX, GA4)
   - 🔄 Deployment routing setup
   - ⏳ Integration with existing card recommendation data

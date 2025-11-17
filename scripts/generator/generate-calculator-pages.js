@@ -38,12 +38,12 @@ async function generateCalculatorPages(distPath) {
     const calculators = [
         {
             template: path.join(srcPath, "templates/calculator/video-storage-calculator.html"),
-            file: "tools/video-storage-calculator/index.html",
+            file: "tools/calculators/video-storage/index.html",
             name: "Video Storage Calculator"
         },
         {
             template: path.join(srcPath, "templates/calculator/photo-storage-calculator.html"),
-            file: "tools/photo-storage-calculator/index.html",
+            file: "tools/calculators/photo-storage/index.html",
             name: "Photo Storage Calculator"
         }
     ];
