@@ -207,23 +207,41 @@
 
 #### Content & Copy
 
-- [ ] **Hero Section**
-  - [ ] Title: "Photo Storage Calculator — Burst Capacity & RAW Comparison"
-  - [ ] Subtitle (photographer, RAW enthusiast angle)
+- ✅ **Hero Section** (COMPLETE)
+  - ✅ Title: "How Many Photos Fit On Your SD Card?" (benefit-focused)
+  - ✅ Subtitle: "Instantly Compare RAW vs. JPEG and Plan Your Shoot"
+  - ✅ Expanded intro: ~250 words covering pain points (running out mid-burst, wrong card choice)
   - [ ] Background image (camera, burst shooting)
+  - [ ] Dark overlay gradient
 
-- [ ] **Intro Copy**
-  - [ ] 150–200 words (photographer-specific value prop)
-  - [ ] Focus: burst rates, RAW vs JPEG, capacity planning
+- ✅ **Intro Copy** (COMPLETE)
+  - ✅ ~250 words (photographer angle, real-world scenarios)
+  - ✅ Value prop: "Confidence on location, no surprises"
 
-- [ ] **FAQ Section (5–7 questions)**
-  - [ ] What's the difference between JPEG and RAW?
-  - [ ] How big are RAW files?
-  - [ ] What's burst rate?
-  - [ ] Can I mix JPEG and RAW on same card?
-  - [ ] What speed class for burst shooting?
-  - [ ] How do I calculate for my specific camera?
-  - [ ] Which cards are best for bursts?
+- ✅ **Why This Matters Section** (COMPLETE)
+  - ✅ "The Hidden Cost of Wrong Card Choices" (3 paragraphs)
+  - ✅ Addresses buffer slowdown, missed moments, RAW vs JPEG storage differences
+
+- ✅ **FAQ Section** (COMPLETE - Expanded)
+  - ✅ Q1: JPEG vs RAW differences (expanded, ~150 words, includes JPEG+RAW mode)
+  - ✅ Q2: How to find camera file size (expanded, ~120 words, 3 methods)
+  - ✅ Q3: Speed class for burst shooting (expanded, ~130 words, includes real specs)
+  - ✅ Q4: Mix JPEG + RAW on same card (expanded, ~110 words)
+  - ✅ Q5: Is 256GB overkill? (expanded, ~110 words, includes overprovision advice)
+  - ✅ Q6: Should I shoot RAW or JPEG? (expanded, ~150 words, includes professional workflow)
+  - Schema: FAQPage (JSON-LD) ✅
+
+- [ ] **Related Resources Section** (TODO)
+  - [ ] Link to "SD Card Speed Class Guide" (need to create page)
+  - [ ] Link to "RAW vs JPEG Comparison Guide" (need to create page)
+  - [ ] Link to related calculators (Video, Timelapse)
+
+- [ ] **Images & Icons** (TODO)
+  - [ ] Hero section background image (camera, burst shooting)
+  - [ ] Icon for JPEG vs RAW file sizes
+  - [ ] Icon for burst rates/fps
+  - [ ] Icon for speed classes (V30, V60)
+  - [ ] Card recommendation images (with descriptive alt text)
 
 #### Technical & Testing
 
@@ -304,20 +322,98 @@
 
 ### 🎯 PHASE 0 ACCEPTANCE CRITERIA
 
-- ✓ Calculator engine handles video/photo scenarios + reverse toggle (no errors)
-- ✓ Both pages load with correct presets and unique SEO copy
-- ✓ Result cards display storage required + speed class + card recommendations
-- ✓ Forward/reverse toggle works seamlessly
-- ✓ All forms are mobile-responsive (44px tap targets)
-- ✓ Core Web Vitals meet targets (LCP < 2.5s, CLS < 0.1, INP < 200ms)
-- ✓ Schema markup validates (Google Search Console)
-- ✓ Affiliate links work and track in GA4
-- ✓ No console errors (desktop or mobile)
-- ✓ FAQ accordion works (single-open, smooth collapse)
-- ✓ Internal links to device pages functional
-- ✓ Sitemap updated and submitted
+**Content (SEO & Copy):**
+- ✅ Video calculator: H1/H2 benefit-focused, ~250-word hero, "Why This Matters" section
+- ✅ Photo calculator: H1/H2 benefit-focused, ~250-word hero, "Why This Matters" section
+- ✅ Both: 6 expanded FAQ answers (100-150+ words each, contextual details, real examples)
+- ✅ Related Resources sections planned (guide pages to create)
+
+**Functional:**
+- [ ] Calculator engine handles video/photo scenarios + reverse toggle (no errors)
+- [ ] Both pages load with correct presets and unique SEO copy
+- [ ] Result cards display storage required + speed class + card recommendations
+- [ ] Forward/reverse toggle works seamlessly
+- [ ] All forms are mobile-responsive (44px tap targets)
+
+**Visual & UX:**
+- [ ] Hero background images added (video/photo)
+- [ ] Icons for speed classes, codecs, formats (SVG or inline)
+- [ ] Card recommendation images with alt text
+- [ ] Layout responsive on desktop, tablet, mobile
+
+**Technical & Performance:**
+- [ ] Core Web Vitals meet targets (LCP < 2.5s, CLS < 0.1, INP < 200ms)
+- [ ] Schema markup validates (Google Search Console, FAQPage + WebPage + Breadcrumb)
+- [ ] Affiliate links work and track in GA4
+- [ ] No console errors (desktop or mobile)
+- [ ] FAQ accordion works (single-open, smooth collapse)
+
+**SEO & Linking:**
+- [ ] Contextual internal links added to FAQ answers (V30 → Speed Class Guide, etc.)
+- [ ] Related Resources section with links to guide pages
+- [ ] All links tested (no 404s)
+- [ ] Internal links to device pages functional
+- [ ] Sitemap updated and submitted
 
 ---
+
+---
+
+## 🔗 RELATED GUIDE PAGES (Required for Phase 0 Links)
+
+These pages are referenced in calculator FAQ/Resources sections and need to be created or populated.
+
+### 📄 GUIDE 1: SD CARD SPEED CLASS GUIDE
+
+**URL:** `/guides/sd-card-speed-classes/`  
+**Purpose:** Comprehensive guide on V30, V60, V90, U3, Class 10
+
+**Content:**
+- [ ] What is a speed class? (definition, why it matters)
+- [ ] Speed class comparison table (V30 vs V60 vs V90, write speeds, use cases)
+- [ ] Which speed class do I need? (flowchart or decision tree)
+- [ ] FAQ: "Can I use V30 for 4K 60fps?" etc.
+- [ ] Internal links to calculators (Video, Photo, Drone)
+- [ ] Schema: Article + Table schema
+
+**Estimated effort:** 2–3 hours (research + writing)
+
+---
+
+### 📄 GUIDE 2: VIDEO BITRATE COMPARISON GUIDE
+
+**URL:** `/guides/video-bitrate-comparison/`  
+**Purpose:** H.264 vs H.265 vs ProRes bitrate comparison
+
+**Content:**
+- [ ] What is bitrate? (definition, how it affects storage)
+- [ ] Codec comparison table (H.264, H.265, ProRes, bitrate examples)
+- [ ] Bitrate examples by resolution + codec (1080p 30fps, 4K 60fps, etc.)
+- [ ] How to find your camera's bitrate
+- [ ] FAQ: "Does higher bitrate = better quality?"
+- [ ] Internal links to calculators
+- [ ] Schema: Article + Table schema
+
+**Estimated effort:** 2–3 hours
+
+---
+
+### 📄 GUIDE 3: RAW vs JPEG COMPARISON GUIDE
+
+**URL:** `/guides/raw-vs-jpeg/`  
+**Purpose:** Photography format comparison and storage implications
+
+**Content:**
+- [ ] What is JPEG? (definition, compression, use cases)
+- [ ] What is RAW? (definition, editing flexibility, use cases)
+- [ ] File size comparison (5MP, 20MP, 45MP examples)
+- [ ] Which should I shoot? (beginner, professional, professional + JPEG)
+- [ ] Storage and speed class implications
+- [ ] FAQ: "Can I recover from overexposed JPEG?" etc.
+- [ ] Internal links to Photo Calculator
+- [ ] Schema: Article + Table schema
+
+**Estimated effort:** 2–3 hours
 
 ---
 
@@ -655,19 +751,80 @@
 
 ---
 
+### 🖼️ VISUAL ASSETS (Images & Icons)
+
+#### Hero Section Images
+
+- [ ] **Video Calculator Hero**
+  - [ ] Image: Videographer filming, 4K recording icon, or cinema scene
+  - [ ] Size: 1200x600px (hero banner), optimized for web
+  - [ ] Alt text: "Videographer recording 4K footage on professional camera"
+  - [ ] Location: `/img/calculators/video-hero.webp`
+
+- [ ] **Photo Calculator Hero**
+  - [ ] Image: Photographer with DSLR, burst shooting, or RAW icon
+  - [ ] Size: 1200x600px
+  - [ ] Alt text: "Professional photographer shooting RAW burst frames"
+  - [ ] Location: `/img/calculators/photo-hero.webp`
+
+#### Section Icons (SVG or inline)
+
+- [ ] **Speed Class Icons**
+  - [ ] V30 badge icon (30 MB/s)
+  - [ ] V60 badge icon (60 MB/s)
+  - [ ] V90 badge icon (90 MB/s)
+  - [ ] Location: `/img/icons/speed-classes/`
+
+- [ ] **Codec Icons**
+  - [ ] H.264 icon or label
+  - [ ] H.265/HEVC icon or label
+  - [ ] ProRes icon or label
+  - [ ] Location: `/img/icons/codecs/`
+
+- [ ] **Format Icons**
+  - [ ] JPEG file icon (for photo calculator)
+  - [ ] RAW file icon (for photo calculator)
+  - [ ] Video file icon (for video calculator)
+  - [ ] Location: `/img/icons/formats/`
+
+#### Card Recommendation Images
+
+- [ ] **High-Performance Cards (Example models)**
+  - [ ] SanDisk Extreme Pro 256GB V30 (image + alt text)
+  - [ ] Kingston Canvas Go Plus 256GB V30 (image + alt text)
+  - [ ] Lexar Professional 1000x 256GB V60 (image + alt text)
+  - [ ] Size: 400x300px (thumbnail), optimized for web
+  - [ ] Location: `/img/cards/`
+  - [ ] Alt text format: "Brand Model Capacity SpeedClass SD Card" (e.g., "SanDisk Extreme Pro 256GB V30 SD Card")
+
+#### Info Graphic Assets (Optional, Phase 2)
+
+- [ ] Speed class vs bitrate comparison chart
+- [ ] Storage calculation breakdown visual (raw + overhead)
+- [ ] JPEG vs RAW file size comparison
+- [ ] Codec efficiency comparison
+
+---
+
 ### 🔗 CROSS-PAGE LINKING
 
 - [ ] **Internal Navigation Between Calculators**
   - [ ] Each page footer/sidebar: "Also try..."
-    - [ ] Video → Photo, Drone, GoPro
-    - [ ] Photo → Video, Timelapse
-    - [ ] Drone → Action Camera, Video
-    - [ ] Etc.
+     - [ ] Video → Photo, Drone, GoPro
+     - [ ] Photo → Video, Timelapse
+     - [ ] Drone → Action Camera, Video
+     - [ ] Etc.
 
 - [ ] **Links from Results to Device Pages**
   - [ ] When result shows device (e.g., "DJI Mavic 3")
   - [ ] Display link: "Best SD Cards for DJI Mavic 3 →"
   - [ ] Link to existing device page (if exists)
+
+- [ ] **Links to Guide Pages (New)**
+  - [ ] Video calculator FAQ: Link "V30" to Speed Class Guide
+  - [ ] Video calculator FAQ: Link "H.264" to Bitrate Comparison Guide
+  - [ ] Photo calculator FAQ: Link "RAW" to RAW vs JPEG Guide
+  - [ ] Photo calculator FAQ: Link "Speed Class" to Speed Class Guide
 
 ---
 
@@ -846,5 +1003,20 @@ Post-Launch:
 
 ---
 
-**Last Updated:** Nov 14, 2025  
+---
+
+## 📝 UPDATE LOG
+
+**Nov 17, 2025 - SEO Content & Visual Assets Planning**
+- ✅ Updated both calculator HTML templates (photo, video)
+  - Expanded hero sections with benefit-focused H1/H2 (~250 words)
+  - Added "Why This Matters" sections (3–4 paragraphs each)
+  - Expanded all 6 FAQ answers to 100-150+ words with examples, specs, and actionable advice
+- 📋 Planned 3 related guide pages (Speed Class, Video Bitrate, RAW vs JPEG)
+- 📋 Planned visual assets (hero images, icons, card recommendation images)
+- 📋 Planned contextual internal links within FAQ answers
+
+---
+
+**Last Updated:** Nov 17, 2025  
 **Next Review:** After Phase 0 launch (Week 1 completion)
