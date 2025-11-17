@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Timelapse Storage Calculator — Long-Duration Project Planning | SD Card Checker</title>
-  <meta name="description" content="Calculate storage needs for timelapse projects. Plan photo intervals, playback duration, and file sizes for 24-hour timelapses and beyond.">
+  <title>Timelapse Storage Calculator — Plan Long-Duration Projects | SD Card Checker</title>
+  <meta name="description" content="Calculate timelapse photo storage. Plan 24-hour, multi-day, and long-duration projects. Compare JPEG vs RAW, intervals, and playback duration.">
   <link rel="canonical" href="https://sdcardchecker.com/tools/calculators/timelapse-storage/">
   <link rel="stylesheet" href="/assets/css/tailwind.css">
   <link rel="stylesheet" href="/assets/css/modern.css">
@@ -20,7 +20,6 @@
 <body class="bg-gradient-to-br from-slate-50 to-slate-100">
   {{HEADER}}
 
-  <!-- Breadcrumb -->
   <div class="bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 py-3">
       <nav class="text-sm text-slate-600 flex items-center gap-2">
@@ -37,56 +36,54 @@
 
   <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
     <main class="flex-1">
-      <!-- Hero Section -->
       <div class="mb-8">
-        <h1 class="text-4xl font-bold text-slate-900 mb-4">How Much Storage Does Your Timelapse Project Need?</h1>
-        <h2 class="text-2xl font-semibold text-slate-700 mb-4">Plan Intervals, Playback Duration & Storage for Long-Capture Projects</h2>
+        <h1 class="text-4xl font-bold text-slate-900 mb-4">Timelapse Storage Calculator</h1>
+        <h2 class="text-2xl font-semibold text-slate-700 mb-4">Plan Long-Duration Projects & Shooting Intervals</h2>
         <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-          Timelapse photography transforms hours or days of shooting into seconds of compelling video—but it requires careful planning. A 24-hour timelapse project with a 2-second interval means capturing 43,200 photos. Whether you're shooting RAW or JPEG, the total storage can be staggering, and running out of space mid-project means starting over.
+          Timelapse photography compresses hours, days, or even months into seconds of video—but the math is complex. A 24-hour construction timelapse requires thousands of photos. Calculate exactly how many shots you need, how much storage they consume, and how long the final video will be.
         </p>
         <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-          This calculator helps you plan every aspect of your timelapse: how many photos you'll need for a desired playback duration, total storage required, playback timing, and the ideal SD card capacity. Whether you're documenting a 24-hour construction project, capturing a sunset, or creating a weeks-long landscape sequence, know exactly what you need before you press the shutter.
+          Whether you're documenting a building project, weather phenomena, plant growth, or creative composition sequences, this calculator helps you plan every detail. Know your storage requirements before you start shooting, so you can focus on composition instead of worrying about capacity.
         </p>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
           <div class="flex gap-3 items-start">
             <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
             <div>
-              <h4 class="font-bold text-slate-900 mb-1">Interval Calculation</h4>
-              <p class="text-slate-600 text-sm">Photos needed for any duration</p>
+              <h4 class="font-bold text-slate-900 mb-1">Interval Calculations</h4>
+              <p class="text-slate-600 text-sm">Photo count for any duration</p>
             </div>
           </div>
           <div class="flex gap-3 items-start">
             <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
             <div>
               <h4 class="font-bold text-slate-900 mb-1">Playback Duration</h4>
-              <p class="text-slate-600 text-sm">Convert photos to video seconds</p>
+              <p class="text-slate-600 text-sm">Final video length estimation</p>
             </div>
           </div>
           <div class="flex gap-3 items-start">
             <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
             <div>
-              <h4 class="font-bold text-slate-900 mb-1">RAW vs JPEG</h4>
-              <p class="text-slate-600 text-sm">Maximum editing flexibility</p>
+              <h4 class="font-bold text-slate-900 mb-1">JPEG vs RAW</h4>
+              <p class="text-slate-600 text-sm">File size comparison</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Calculator Widget -->
       <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
         <div class="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
-          <p class="text-sm text-slate-700"><strong>Quick note:</strong> File sizes are measured in MB (megabytes). For a 24-hour timelapse at 2-second intervals and 24fps playback, you'll need 43,200 photos that play back in about 30 minutes.</p>
+          <p class="text-sm text-slate-700"><strong>Quick note:</strong> Timelapse storage depends on your shooting interval (seconds between photos), project duration, and file format. A 2-second interval over 24 hours requires 43,200 photos. Plan your card capacity before you start.</p>
         </div>
         <script>
           document.addEventListener('alpine:init', () => {
             Alpine.data('calculatorState', () => {
               const state = CalculatorUI.init({
-                defaultScenario: 'timelapse',
-                deviceSelectorEnabled: false
+                defaultScenario: 'photo',
+                deviceSelectorEnabled: true,
+                deviceCategory: 'camera'
               });
               
-              // Initialize card selector when component is ready
               Alpine.nextTick(() => {
                 state.initCardSelector();
               });
@@ -98,164 +95,167 @@
         {% include "../components/calculator-widget.html" %}
       </div>
 
-      <!-- Why This Matters Section -->
-      <div class="mb-8 bg-purple-50 border-l-4 border-purple-500 rounded-lg p-8">
-        <h2 class="text-2xl font-bold text-slate-900 mb-4">Why This Matters: The Challenge of Long-Duration Timelapse</h2>
+      <div class="mb-8 bg-amber-50 border-l-4 border-amber-500 rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Why This Matters: Complex Math Made Simple</h2>
         <p class="text-slate-700 mb-4 leading-relaxed">
-          Timelapse photography can reveal the beauty in time itself—clouds drifting across a landscape, stars wheeling overhead, a building rising from foundation to completion. But the math is unforgiving. A simple 2-second interval (one photo every 2 seconds) over 24 hours produces 43,200 individual photos. If you're shooting RAW at 40MB per file, that's 1.7 terabytes of storage.
+          Timelapse requires unusual planning. Most photographers think in terms of a few hundred shots per session. Timelapse thinks in thousands. A 24-hour construction project at 2-second intervals = 43,200 photos. At 30MB RAW, that's 1.3TB. Miss this math and you'll run out of storage mid-project.
         </p>
         <p class="text-slate-700 mb-4 leading-relaxed">
-          Many photographers underestimate this and arrive on location with insufficient SD cards. Others run out mid-project and have to scrap hours of work. Worse, some discover too late that their chosen interval will result in jittery playback or footage that's too slow or too fast for their vision. Proper planning prevents all of this.
+          The final playback duration adds another layer: 43,200 photos at 24fps playback = 1800 seconds = 30 minutes of video. Understanding how your shooting interval translates to final video length is critical for planning content and duration targets.
         </p>
         <p class="text-slate-700 leading-relaxed">
-          This calculator ensures you know your numbers before you start. Calculate the exact photo count, total storage, and playback duration—so you can focus on composition and capturing the moment, not worrying about running out of space.
+          This calculator handles all the math instantly. Adjust intervals, durations, and file formats to find the perfect balance between project scope, storage capacity, and final video length.
         </p>
       </div>
 
-      <!-- FAQ Section -->
       <div class="mb-8">
-        <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Timelapse Shooting Guide</h2>
         
         <div class="space-y-4">
           <div class="faq-item">
             <h3 class="faq-heading">
               <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
-                How many photos do I need for a 24-hour timelapse?
+                How do I calculate the right shooting interval?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
             <div id="faq-answer-1" class="faq-answer">
-              <p>It depends on your interval (time between shots) and desired playback framerate. <strong>The formula:</strong> Photos Needed = (Hours × 3600) ÷ Interval (seconds). For example, a 24-hour timelapse with a 2-second interval = (24 × 3600) ÷ 2 = 43,200 photos. At 24fps playback, these 43,200 photos create about 30 minutes of video. At 30fps, it's 24 minutes. Shorter intervals = more photos = more storage but smoother motion.</p>
-              <p><strong>Common intervals:</strong> 1-second (very fast motion, huge storage), 2-second (standard), 3-5 seconds (slower, good for clouds/water), 10+ seconds (very slow, ideal for sunsets or star trails).</p>
+              <p><strong>Basic formula:</strong> Shooting Interval (seconds) = (Project Duration in hours × 3600) ÷ Desired Video Length in seconds ÷ Playback FPS</p>
+              <p><strong>Example:</strong> 24-hour project, 30-second final video, 24fps playback = (24 × 3600) ÷ 30 ÷ 24 = 120-second interval (2 minutes between photos).</p>
+              <p><strong>Common intervals:</strong></p>
+              <ul class="list-disc list-inside ml-2 space-y-1">
+                <li><strong>2 seconds:</strong> Fast motion (clouds, sun movement, traffic). Dense photo count for smooth playback.</li>
+                <li><strong>5-10 seconds:</strong> Moderate motion (construction, weather changes). Balanced file size and smooth video.</li>
+                <li><strong>30 seconds:</strong> Slow motion (plant growth, sunrise/sunset). Very manageable file sizes for long projects.</li>
+                <li><strong>60+ seconds:</strong> Ultra-long projects (architectural time-lapses). Minimal storage, sparse but effective.</li>
+              </ul>
+              <p><strong>Speed rule of thumb:</strong> Slower interval = more photos = smoother video = larger files. Faster interval = fewer photos = choppier video = smaller files. Find your sweet spot.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-heading">
               <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
-                What's the difference between playback framerate and interval?
+                How much storage does a 24-hour timelapse need?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
             <div id="faq-answer-2" class="faq-answer">
-              <p><strong>Interval:</strong> The time between each photo capture (set on your camera or intervalometer). A 2-second interval means the camera shoots one photo every 2 seconds.</p>
-              <p><strong>Playback framerate:</strong> How fast the photos play when compiled into video, typically 24fps (cinema standard), 30fps (broadcast), or 60fps (smooth). This is set in post-production when you create the video file.</p>
-              <p><strong>Example:</strong> 43,200 photos with a 2-second interval = 24 hours of capture. When played at 24fps, it becomes a ~30-minute video. The same 43,200 photos played at 60fps becomes a ~12-minute video. The playback rate doesn't change how many photos you need—only how long the final video runs.</p>
+              <p><strong>At 2-second intervals (dense, smooth video):</strong></p>
+              <ul class="list-disc list-inside ml-2 space-y-1">
+                <li>JPEG (8MB avg): ~345GB</li>
+                <li>RAW (30MB avg): ~1.3TB</li>
+              </ul>
+              <p><strong>At 5-second intervals (moderate):</strong></p>
+              <ul class="list-disc list-inside ml-2 space-y-1">
+                <li>JPEG: ~138GB</li>
+                <li>RAW: ~518GB</li>
+              </ul>
+              <p><strong>At 10-second intervals:</strong></p>
+              <ul class="list-disc list-inside ml-2 space-y-1">
+                <li>JPEG: ~69GB</li>
+                <li>RAW: ~259GB</li>
+              </ul>
+              <p><strong>Practical takeaway:</strong> A 256GB card handles 24-hour timelapse at 5+ second intervals in JPEG, or 10+ second intervals in RAW. Larger intervals or multi-card systems needed for dense (2-second) RAW shooting.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-heading">
               <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
-                Can I shoot timelapse in RAW?
+                Should I shoot JPEG or RAW for timelapse?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
             <div id="faq-answer-3" class="faq-answer">
-              <p>Absolutely, and many professionals do. RAW timelapse is ideal for projects requiring maximum editing control—sunrises/sunsets, star trails, or architectural photography where color grading is critical. However, RAW files are massive (20-100MB per file depending on camera), so storage requirements multiply quickly.</p>
-              <p><strong>Storage comparison:</strong> A 24-hour timelapse at 2-second intervals (43,200 photos) requires: JPEG: ~360GB (8MB average), RAW: ~1.7TB (40MB average). RAW is 4-5x larger. Many timelapse photographers compromise by shooting RAW for short intervals (sunset, 30 minutes) and JPEG for longer projects.</p>
-              <p><strong>Pro tip:</strong> Some cameras allow RAW+JPEG mode for timelapse. This captures both formats simultaneously, but uses the space of both. Use our calculator to estimate real-world needs for your specific camera and project.</p>
+              <p><strong>JPEG (smaller files, faster workflow):</strong> Better for long-duration timelapses where storage is tight. Smaller file sizes fit more photos on cards. Acceptable for most timelapse content—the final video is compressed anyway. In-camera color grading already applied.</p>
+              <p><strong>RAW (maximum editing control, large files):</strong> Ideal for high-value projects where final quality is critical. Allows post-processing color correction, exposure compensation across the sequence. Worth the extra storage if you're doing professional work.</p>
+              <p><strong>Hybrid approach:</strong> Some cameras allow JPEG+RAW mode. Capture JPEG for quick editing reference, RAW for final quality. Uses roughly 2x storage but gives maximum flexibility.</p>
+              <p><strong>Recommendation:</strong> For casual/documentary timelapse, JPEG is fine. For professional or creative work, RAW. Use our calculator to estimate file sizes and decide based on your project budget and storage availability.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-heading">
               <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
-                What's an intervalometer and do I need one?
+                How do I set up interval shooting on my camera?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
             <div id="faq-answer-4" class="faq-answer">
-              <p>An intervalometer is a device (or built-in camera feature) that automatically triggers the shutter at set intervals. Without one, you'd need to manually press the shutter 43,200 times for a 24-hour timelapse—impossible.</p>
-              <p><strong>Built-in timelapse modes:</strong> Most modern cameras (Canon, Nikon, Sony, Fujifilm) have built-in timelapse functions accessible through the menu. These work perfectly for standard intervals and are free. Just set your interval and let the camera run.</p>
-              <p><strong>External intervalometer:</strong> If your camera lacks this feature or you need advanced control (ramp exposure, focus shifts), external wireless intervalometers ($50–300) offer more flexibility. Popular models include Magic Lantern (for Canon DSLR), Peak Design Capture Clip, or dedicated brands like Promote Control.</p>
-              <p><strong>Bottom line:</strong> Check your camera's manual. Most modern cameras have built-in timelapse—use that. Only invest in external gear if you need advanced features.</p>
+              <p><strong>Canon (DSLRs/Mirrorless):</strong> Menu → Interval Shooting (or similar). Set interval (in seconds) and number of shots. Camera handles the rest automatically.</p>
+              <p><strong>Nikon:</strong> Menu → Interval Timer Shooting → Set interval and repetitions.</p>
+              <p><strong>Sony:</strong> Menu → Interval Shooting → Set interval length and shot count.</p>
+              <p><strong>Fujifilm:</strong> Menu → Interval Shooting → Configure interval and repeats.</p>
+              <p><strong>General tips:</strong> (1) Use fully charged battery (extended interval shooting draws significant power). (2) Format card in camera before starting. (3) Set focus to manual and lock focus distance (autofocus uses more power). (4) Use manual exposure (M-mode) so lighting doesn't change between shots. (5) Disable image stabilization (unnecessary for stationary tripod). (6) Monitor first 10-20 shots to confirm focus and exposure are consistent.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-heading">
               <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
-                How do I prevent card failure during long timelapse shoots?
+                What is playback frame rate and how does it affect my video?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
             <div id="faq-answer-5" class="faq-answer">
-              <p>Long timelapse projects write constantly to the SD card, which can degrade performance or cause failure if the card overheats or fills. Here are essential practices:</p>
-              <ul class="list-disc list-inside space-y-2 ml-2">
-                <li><strong>Use fast, high-capacity cards:</strong> V30 minimum, V60 recommended. A fast card handles sustained writes without throttling. Larger cards (128GB+) distribute write operations, reducing stress.</li>
-                <li><strong>Multiple cards:</strong> For projects exceeding 50,000 photos, use multiple cards. Format one, swap it when full, and continue on the next. Safer than relying on a single card.</li>
-                <li><strong>Keep the card cool:</strong> Sustained writing generates heat. In hot climates, consider shading your camera or using a fan. Card failure is more likely when cards overheat.</li>
-                <li><strong>Format in-camera:</strong> Always format cards in your camera before starting. Formatting on your computer can cause compatibility issues.</li>
-                <li><strong>Avoid full cards:</strong> If your card approaches 100% capacity, stop and swap. A completely full card risks corrupting the last few frames or crashing your camera.</li>
-              </ul>
-              <p>Using our calculator, you can plan your shoot to ensure no single card exceeds 80% capacity, giving you a safety margin.</p>
+              <p><strong>Playback FPS:</strong> Frames per second at which your photos are played back as video. 24fps is cinema standard. 30fps is TV standard.</p>
+              <p><strong>How it affects duration:</strong> Same photo count at different fps creates different video lengths. 1000 photos at 24fps = 41.7 seconds. At 30fps = 33.3 seconds.</p>
+              <p><strong>How it affects motion smoothness:</strong> Higher fps (30, 60) = smoother motion. Lower fps (24, 12) = more jerky motion. Most timelapse uses 24fps as standard. Some creators intentionally use 12fps for artistic choppiness.</p>
+              <p><strong>For editing:</strong> Export your sequence as 24fps video unless your project requires otherwise. Most online platforms and delivery specs assume 24fps.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-heading">
               <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
-                What's a realistic interval for different timelapse subjects?
+                How do I compile my photos into a video?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
             <div id="faq-answer-6" class="faq-answer">
-              <p><strong>Fast-moving clouds:</strong> 1–2 second intervals. Clouds move visibly and result in dramatic, quick playback. Storage: highest.</p>
-              <p><strong>Sunrise/sunset:</strong> 2–5 second intervals. Longer intervals work because the light changes slowly. 5-second intervals over 1 hour of shooting (sunrise takes ~20 minutes) = 480 photos = manageable storage.</p>
-              <p><strong>Star trails (night sky):</strong> 15–30 second intervals. Stars move slowly across the sky. Longer intervals still create smooth trails with a fraction of the storage. A 2-hour star trail at 30-second intervals = 240 photos only.</p>
-              <p><strong>Construction/architecture:</strong> 10–60 second intervals. Changes happen over hours or days. Longer intervals prevent excessive storage while capturing visible progress. A 10-hour construction day at 30-second intervals = 1,200 photos.</p>
-              <p><strong>Water/waves:</strong> 1–3 second intervals. Water movement is fast and requires shorter intervals for smooth playback.</p>
-              <p><strong>General rule:</strong> The slower the real-world motion, the longer your interval can be. Use this to optimize storage: longer intervals = fewer photos = less storage.</p>
+              <p><strong>Adobe Lightroom (easiest):</strong> Import all photos. Select entire sequence. File → Create Slideshow Video. Choose fps, resolution, export format. Lightroom handles sorting and sequencing automatically.</p>
+              <p><strong>Adobe Premiere Pro (professional):</strong> Import sequence of images as continuous footage. Premiere auto-sequences based on filename numbering. Adjust fps in timeline settings. Export to desired format/codec.</p>
+              <p><strong>DaVinci Resolve (powerful, free):</strong> Import image sequence. Create new timeline with desired fps. Drag images to timeline. Resolve auto-sequences. Color grade if needed. Export video.</p>
+              <p><strong>FFmpeg (command-line, fast):</strong> For advanced users. Can batch-process large sequences quickly without GUI overhead.</p>
+              <p><strong>General workflow:</strong> (1) Import photos in sequence order (ensure filenames are numbered consistently). (2) Set playback fps (24 is standard). (3) Color grade/correct if needed. (4) Export to H.264 or H.265 codec for compatibility. (5) Add music/sound in final step.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Recommended Cards Section -->
       <div class="mb-8 hidden" id="card-recommendations">
-        <h2 class="text-2xl font-bold text-slate-900 mb-6">Recommended SD Cards for Your Needs</h2>
-        <div id="card-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Populated by JavaScript after calculation -->
-        </div>
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Recommended SD Cards</h2>
+        <div id="card-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
       </div>
 
-      <!-- Related Calculators -->
       <div class="bg-slate-100 rounded-lg p-8 mb-8">
         <h3 class="text-xl font-bold text-slate-900 mb-6">Related Calculators</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <a href="/tools/calculators/photo-storage/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
             <h4 class="font-bold text-slate-900 mb-2">📷 Photo Storage Calculator</h4>
-            <p class="text-sm text-slate-600">Compare JPEG vs RAW burst capacity</p>
+            <p class="text-sm text-slate-600">JPEG vs RAW burst capacity</p>
           </a>
           <a href="/tools/calculators/video-storage/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
             <h4 class="font-bold text-slate-900 mb-2">🎥 Video Storage Calculator</h4>
-            <p class="text-sm text-slate-600">Calculate 4K, 1080p, and any bitrate</p>
+            <p class="text-sm text-slate-600">Bitrate and resolution planning</p>
           </a>
         </div>
       </div>
 
-      <!-- Schema Markup -->
       <script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "WebPage",
-          "name": "Timelapse Storage Calculator — Long-Duration Project Planning",
-          "description": "Calculate storage needs for timelapse projects. Plan photo intervals, playback duration, and file sizes for 24-hour timelapses and beyond.",
+          "name": "Timelapse Storage Calculator",
+          "description": "Calculate timelapse photo storage. Plan 24-hour and multi-day projects. Compare JPEG vs RAW and calculate playback duration.",
           "url": "https://sdcardchecker.com/tools/calculators/timelapse-storage/",
           "breadcrumb": {
             "@type": "BreadcrumbList",
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sdcardchecker.com" },
               { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://sdcardchecker.com/tools/" },
-              { "@type": "ListItem", "position": 3, "name": "Timelapse Storage Calculator", "item": "https://sdcardchecker.com/tools/calculators/timelapse-storage/" }
-            ]
-          },
-          "mainEntity": {
-            "@type": "FAQPage",
-            "mainEntity": [
-              { "@type": "Question", "name": "How many photos do I need for a 24-hour timelapse?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on your interval. A 2-second interval over 24 hours requires 43,200 photos. Use the formula: (Hours × 3600) ÷ Interval." } },
-              { "@type": "Question", "name": "Can I shoot timelapse in RAW?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but RAW files are 4-5x larger than JPEG. A 24-hour timelapse in RAW requires ~1.7TB, vs ~360GB for JPEG." } }
+              { "@type": "ListItem", "position": 3, "name": "Timelapse Storage", "item": "https://sdcardchecker.com/tools/calculators/timelapse-storage/" }
             ]
           }
         }
@@ -269,70 +269,32 @@
   {{GROW_SCRIPT}}
 
   <style>
-    .faq-item {
-      @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow;
-    }
-
-    .faq-heading {
-      @apply m-0;
-    }
-
+    .faq-item { @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow; }
+    .faq-heading { @apply m-0; }
     .faq-question {
       @apply w-full p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors bg-transparent border-none;
       min-height: 48px;
       user-select: none;
-      -webkit-user-select: none;
       text-align: left;
     }
-
-    .faq-question:focus {
-      @apply outline-2 outline-offset-2 outline-blue-500;
-    }
-
-    .faq-question:active {
-      background-color: rgba(59, 130, 246, 0.05);
-      transition: background-color 0.1s ease;
-    }
-
-    .faq-toggle {
-      @apply text-slate-400 transition-transform duration-300;
-      font-size: 1.5rem;
-      flex-shrink: 0;
-    }
-
-    .faq-toggle.open {
-      @apply rotate-180;
-    }
-
-    .faq-answer {
-      @apply px-6 pb-6 text-slate-700 leading-relaxed border-t border-slate-200 hidden;
-    }
-
-    .faq-answer.open {
-      @apply block;
-    }
+    .faq-question:focus { @apply outline-2 outline-offset-2 outline-blue-500; }
+    .faq-question:active { background-color: rgba(59, 130, 246, 0.05); }
+    .faq-toggle { @apply text-slate-400 transition-transform duration-300; font-size: 1.5rem; flex-shrink: 0; }
+    .faq-toggle.open { @apply rotate-180; }
+    .faq-answer { @apply px-6 pb-6 text-slate-700 leading-relaxed border-t border-slate-200 hidden; }
+    .faq-answer.open { @apply block; }
   </style>
 
   <script>
-    // Initialize FAQ accordion on load
     document.addEventListener('DOMContentLoaded', () => {
-      const buttons = document.querySelectorAll('.faq-question');
-      
-      buttons.forEach(button => {
+      document.querySelectorAll('.faq-question').forEach(button => {
         button.addEventListener('click', () => {
-          const answerId = button.getAttribute('aria-controls');
-          const answer = document.getElementById(answerId);
+          const answer = document.getElementById(button.getAttribute('aria-controls'));
           const toggle = button.querySelector('.faq-toggle');
           const isOpen = button.getAttribute('aria-expanded') === 'true';
-
-          // Close all others
-          document.querySelectorAll('.faq-question').forEach(btn => {
-            btn.setAttribute('aria-expanded', 'false');
-          });
+          document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
           document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
           document.querySelectorAll('.faq-toggle').forEach(t => t.classList.remove('open'));
-
-          // Toggle current
           if (!isOpen) {
             button.setAttribute('aria-expanded', 'true');
             answer.classList.add('open');

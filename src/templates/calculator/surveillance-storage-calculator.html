@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surveillance Recording Calculator — 24/7 Coverage Planning | SD Card Checker</title>
+  <meta name="description" content="Calculate continuous 24/7 recording time for security cameras. Plan storage for IP cameras, NVRs, and local recording systems.">
+  <link rel="canonical" href="https://sdcardchecker.com/tools/calculators/surveillance-storage/">
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="/assets/js/calculator.js"></script>
+  <script src="/assets/js/card-selector.js"></script>
+  <script src="/assets/js/calculator-ui.js"></script>
+  <script src="/assets/js/calculator-card-recommendations.js"></script>
+  <script src="/assets/js/card-recommendations.js"></script>
+  {{GROW_SCRIPT}}
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/tools/" class="text-blue-600 hover:underline">Tools</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/tools/calculators/" class="text-blue-600 hover:underline">Calculators</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">Surveillance Storage</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="mb-8">
+        <h1 class="text-4xl font-bold text-slate-900 mb-4">How Long Will Your Security Camera Record?</h1>
+        <h2 class="text-2xl font-semibold text-slate-700 mb-4">Calculate 24/7 Coverage, Plan Storage, Understand Your Security Window</h2>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          A security camera is only useful if it's running reliably. Whether you're protecting your home, monitoring a business, or covering a parking lot, you need to know exactly how long your footage will be retained before it overwrites. A poorly chosen SD card will fail under the constant recording load, leaving you without evidence when you need it most.
+        </p>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          This calculator helps you plan the optimal storage for your surveillance system. Input your camera's bitrate, choose your card capacity, and instantly see how many days of footage you can store. For round-the-clock security, pair this knowledge with a High Endurance SD card rated for continuous 24/7 operation—your peace of mind depends on it.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">24/7 Planning</h4>
+              <p class="text-slate-600 text-sm">Continuous recording calculations</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">Endurance Focus</h4>
+              <p class="text-slate-600 text-sm">High-reliability card recommendations</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">Multi-Camera Support</h4>
+              <p class="text-slate-600 text-sm">Calculate total storage needs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calculator Widget -->
+      <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
+        <div class="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+          <p class="text-sm text-slate-700"><strong>Key insight:</strong> Security cameras typically record at 2–20Mbps depending on resolution (1080p, 2K, 4K) and compression. Surveillance cameras are designed for continuous operation; bitrate is typically lower than dashcams to prioritize storage efficiency over quality.</p>
+        </div>
+        <script>
+          document.addEventListener('alpine:init', () => {
+            Alpine.data('calculatorState', () => {
+              const state = CalculatorUI.init({
+                defaultScenario: 'video',
+                deviceSelectorEnabled: false
+              });
+              
+              // Initialize card selector when component is ready
+              Alpine.nextTick(() => {
+                state.initCardSelector();
+              });
+              
+              return state;
+            });
+          });
+        </script>
+        {% include "../components/calculator-widget.html" %}
+      </div>
+
+      <!-- Why This Matters Section -->
+      <div class="mb-8 bg-yellow-50 border-l-4 border-yellow-500 rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Why This Matters: Your Security Chain is Only as Strong as Your Storage</h2>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          When a break-in happens, attempted theft occurs, or a property damage claim is made, you need footage. But surveillance systems fail silently—a regular SD card writing continuously doesn't show obvious failure signs until you try to retrieve critical evidence and find it corrupted or missing. This is why reliable storage is non-negotiable.
+        </p>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          Additionally, many security cameras (Wyze Cam, Reolink, Eufy, Ring) use local microSD card storage as the backbone. Without cloud backup, your SD card is your only evidence. If the card fails, the footage is gone forever. Using a High Endurance card rated for 24/7 recording ensures your security system runs reliably for years without unexpected failure.
+        </p>
+        <p class="text-slate-700 leading-relaxed">
+          This calculator helps you understand your retention window. If you have 37 days of rolling footage on a 128GB card, any incident within the past 37 days is recoverable. If the card fails after just days of operation, you lose that protection entirely. Choose wisely, invest in endurance, and sleep soundly.
+        </p>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+        
+        <div class="space-y-4">
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                How long will a 256GB High Endurance card record 24/7?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-1" class="faq-answer">
+              <p>It depends on your camera's bitrate. Security cameras typically record at lower bitrates than other cameras to maximize storage efficiency.</p>
+              <p><strong>1080p camera (~5Mbps):</strong> A 256GB card holds approximately 456 hours of footage (19 days of continuous 24/7 recording). At typical office hours (8 hours/day), that's ~57 days of storage.</p>
+              <p><strong>2K camera (~10Mbps):</strong> A 256GB card holds approximately 228 hours of footage (9.5 days continuous). At 8 hours/day, that's ~28 days of coverage.</p>
+              <p><strong>4K camera (~20Mbps):</strong> A 256GB card holds approximately 114 hours of footage (4.8 days continuous). At 8 hours/day, that's ~14 days of coverage.</p>
+              <p><strong>Formula:</strong> Hours of recording = (Card Capacity in GB × 8) ÷ Bitrate (Mbps). For 256GB at 5Mbps: (256 × 8) ÷ 5 = 409.6 hours.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                What's the difference between an endurance card and a regular SD card?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-2" class="faq-answer">
+              <p><strong>Endurance rating:</strong> Specifies how many write cycles the card can endure before failure. Regular cards: 3,000–10,000 cycles. Endurance cards: 10,000–100,000+ cycles depending on brand and model.</p>
+              <p><strong>Why the difference matters:</strong> A security camera writing 5Mbps continuously will write approximately 432GB per day. In just 3 days, you'll have exhausted a regular card's write-cycle budget. An Endurance card is rated for years of this same workload.</p>
+              <p><strong>Real-world consequence:</strong> A regular SD card in a surveillance camera typically lasts 2–8 weeks before showing errors, corruption, or complete failure. An Endurance card lasts 1–3+ years. The cost difference ($10–15) is negligible compared to the reliability gain.</p>
+              <p><strong>Examples:</strong> SanDisk High Endurance, Samsung PRO Endurance, Kingston Endurance are all designed specifically for surveillance and dashcam use. Always look for the word "Endurance" on the card label.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                Can I use any SD card for surveillance?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-3" class="faq-answer">
+              <p>Technically, yes. Most cameras will accept any microSD card. But practically, no—you should always use High Endurance cards for security cameras.</p>
+              <p><strong>The problem with regular cards:</strong> Surveillance cameras are always writing, always stressing the card's flash memory. Regular cards are optimized for intermittent use (photography, occasional video). They have no built-in safeguards for continuous writing. Result: failure in weeks.</p>
+              <p><strong>The Endurance advantage:</strong> Endurance cards have firmware designed to level wear evenly across the entire chip, manage heat dissipation, and handle billions of write cycles. They're built for this specific workload.</p>
+              <p><strong>Warranty implications:</strong> Many camera manufacturers (Reolink, Wyze, Eufy) explicitly state in their documentation that using non-endurance cards voids the warranty. If the camera or card fails due to incompatibility, they won't replace it.</p>
+              <p><strong>Recommendation:</strong> Always buy endurance cards for surveillance. The reliability and peace of mind are worth the modest cost difference.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                How do I calculate storage for multiple cameras?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-4" class="faq-answer">
+              <p><strong>Scenario 1: Each camera has its own SD card</strong> (most common for IP cameras and local surveillance): Calculate storage for each camera independently. If you have 3 cameras at 5Mbps each with 128GB cards, each gets ~76 days of recording. The system's retention window is 76 days per camera.</p>
+              <p><strong>Scenario 2: Multiple cameras record to one shared NVR storage</strong> (some systems use a central NAS or NVR): Add bitrates. 3 cameras × 5Mbps = 15Mbps total. A 256GB drive (or SD card array) holds: (256 × 8) ÷ 15 = 136 hours (5.7 days of continuous recording).</p>
+              <p><strong>Pro setup (redundancy):</strong> Use a 256GB endurance card per camera for local backup + a cloud service (AWS, Google Cloud, or camera-native cloud like Wyze Plus) for additional redundancy. This ensures you don't lose footage if a single card fails.</p>
+              <p><strong>Fleet example:</strong> 10 vehicles with dashcams at 15Mbps each, 128GB endurance cards per vehicle: Each car stores ~19 hours (0.8 days) of continuous recording. For daily commutes, that's ~1 week of rolling footage per vehicle.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                What about heat and outdoor surveillance?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-5" class="faq-answer">
+              <p><strong>Heat risk:</strong> Continuous writing generates heat. In hot climates or direct sun, an outdoor camera and its SD card can reach 60–70°C (140–158°F). Regular cards throttle performance or fail at these temperatures. Endurance cards are engineered with better thermal management but still have limits.</p>
+              <p><strong>Mitigation:</strong> Install outdoor cameras in shaded areas if possible. Use UV-protective housings. Avoid east-facing or west-facing exposures during peak heat hours. In extreme climates (desert, tropical), monitor card temperature via the camera's app if available.</p>
+              <p><strong>Reduced bitrate option:</strong> If your outdoor camera overheats, consider lowering recording resolution from 4K to 2K. This reduces bitrate and heat generation while still providing good evidence quality. The temperature savings can extend card lifespan significantly.</p>
+              <p><strong>Premium cards:</strong> SanDisk Endurance cards and Samsung PRO Endurance cards are designed to handle thermal stress better than budget alternatives. In extreme heat, spend the extra money for premium endurance cards.</p>
+              <p><strong>Backup power:</strong> Consider a UPS or battery backup for outdoor cameras in case of power loss. This prevents abrupt shutdowns that can corrupt SD card data.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                Should I use cloud storage instead of SD cards?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-6" class="faq-answer">
+              <p><strong>Cloud vs. local storage:</strong> These are complementary, not mutually exclusive. Use both for maximum security.</p>
+              <p><strong>Local SD card advantages:</strong> No monthly subscription, works without internet, instant playback (no buffering), full privacy (footage doesn't leave your property unless you upload it), cheap backup solution (a 256GB endurance card costs $30–40 vs. $10–30/month for cloud).</p>
+              <p><strong>Cloud storage advantages:</strong> Redundancy (if your home is damaged or camera stolen, footage is safe), accessible from anywhere, automatic backups, no card failure risk, easier sharing (send a link to insurance company, police, etc.).</p>
+              <p><strong>Best practice:</strong> Use local SD card storage as your primary recording, with cloud backup for critical events. Wyze Cam Plus, Reolink, Eufy, and Ring all offer hybrid models. When an incident occurs, you have footage both locally and in the cloud.</p>
+              <p><strong>Cost analysis:</strong> A single 256GB endurance card ($35) + optional cloud ($10–30/month) gives you the best combination: reliable local storage + cloud redundancy. This is far cheaper than cloud-only and far more reliable than local-only.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommended Cards Section -->
+      <div class="mb-8 hidden" id="card-recommendations">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Recommended High Endurance Cards for Surveillance</h2>
+        <div id="card-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Populated by JavaScript after calculation -->
+        </div>
+      </div>
+
+      <!-- Related Calculators -->
+      <div class="bg-slate-100 rounded-lg p-8 mb-8">
+        <h3 class="text-xl font-bold text-slate-900 mb-6">Related Calculators</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <a href="/tools/calculators/dashcam-storage/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">🚗 Dashcam Storage Calculator</h4>
+            <p class="text-sm text-slate-600">Plan continuous recording & loop recording time</p>
+          </a>
+          <a href="/tools/calculators/video-storage/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">🎥 Video Storage Calculator</h4>
+            <p class="text-sm text-slate-600">Calculate any bitrate or resolution</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Schema Markup -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Surveillance Recording Calculator — 24/7 Coverage Planning",
+          "description": "Calculate continuous 24/7 recording time for security cameras. Plan storage for IP cameras, NVRs, and local recording systems.",
+          "url": "https://sdcardchecker.com/tools/calculators/surveillance-storage/",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sdcardchecker.com" },
+              { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://sdcardchecker.com/tools/" },
+              { "@type": "ListItem", "position": 3, "name": "Surveillance Storage Calculator", "item": "https://sdcardchecker.com/tools/calculators/surveillance-storage/" }
+            ]
+          },
+          "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "How long will a 256GB High Endurance card record 24/7?", "acceptedAnswer": { "@type": "Answer", "text": "Depends on bitrate. A 1080p camera at 5Mbps: ~19 days continuous. A 4K camera at 20Mbps: ~4.8 days continuous." } },
+              { "@type": "Question", "name": "What's the difference between an endurance card and a regular SD card?", "acceptedAnswer": { "@type": "Answer", "text": "Endurance cards are rated for 24/7 continuous writing and last 1-3+ years. Regular cards fail in weeks under the same workload." } }
+            ]
+          }
+        }
+      </script>
+    </main>
+
+    {{SIDEBAR}}
+  </div>
+
+  {{FOOTER}}
+  {{GROW_SCRIPT}}
+
+  <style>
+    .faq-item {
+      @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow;
+    }
+
+    .faq-heading {
+      @apply m-0;
+    }
+
+    .faq-question {
+      @apply w-full p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors bg-transparent border-none;
+      min-height: 48px;
+      user-select: none;
+      -webkit-user-select: none;
+      text-align: left;
+    }
+
+    .faq-question:focus {
+      @apply outline-2 outline-offset-2 outline-blue-500;
+    }
+
+    .faq-question:active {
+      background-color: rgba(59, 130, 246, 0.05);
+      transition: background-color 0.1s ease;
+    }
+
+    .faq-toggle {
+      @apply text-slate-400 transition-transform duration-300;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .faq-toggle.open {
+      @apply rotate-180;
+    }
+
+    .faq-answer {
+      @apply px-6 pb-6 text-slate-700 leading-relaxed border-t border-slate-200 hidden;
+    }
+
+    .faq-answer.open {
+      @apply block;
+    }
+  </style>
+
+  <script>
+    // Initialize FAQ accordion on load
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.faq-question');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const answerId = button.getAttribute('aria-controls');
+          const answer = document.getElementById(answerId);
+          const toggle = button.querySelector('.faq-toggle');
+          const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+          // Close all others
+          document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.setAttribute('aria-expanded', 'false');
+          });
+          document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+          document.querySelectorAll('.faq-toggle').forEach(t => t.classList.remove('open'));
+
+          // Toggle current
+          if (!isOpen) {
+            button.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+            toggle.classList.add('open');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

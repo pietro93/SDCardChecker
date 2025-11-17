@@ -51,6 +51,31 @@ async function generateCalculatorPages(distPath) {
             template: path.join(srcPath, "templates/calculator/photo-storage-calculator.html"),
             file: "tools/calculators/photo-storage/index.html",
             name: "Photo Storage Calculator"
+        },
+        {
+            template: path.join(srcPath, "templates/calculator/gopro-storage-calculator.html"),
+            file: "tools/calculators/gopro-storage/index.html",
+            name: "GoPro Storage Calculator"
+        },
+        {
+            template: path.join(srcPath, "templates/calculator/action-camera-storage-calculator.html"),
+            file: "tools/calculators/action-camera-storage/index.html",
+            name: "Action Camera Storage Calculator"
+        },
+        {
+            template: path.join(srcPath, "templates/calculator/drone-recording-calculator.html"),
+            file: "tools/calculators/drone-footage-time/index.html",
+            name: "Drone Recording Calculator"
+        },
+        {
+            template: path.join(srcPath, "templates/calculator/dashcam-storage-calculator.html"),
+            file: "tools/calculators/dashcam-footage-time/index.html",
+            name: "Dashcam Storage Calculator"
+        },
+        {
+            template: path.join(srcPath, "templates/calculator/surveillance-recording-calculator.html"),
+            file: "tools/calculators/continuous-recording-storage/index.html",
+            name: "Continuous Recording Storage Calculator"
         }
     ];
 
