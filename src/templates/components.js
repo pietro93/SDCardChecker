@@ -20,7 +20,10 @@ function generateGrowScript() {
 }
 
 function generateHeader() {
-return `<!-- Header -->
+return `<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+<!-- Header -->
 <header class="sticky top-0 z-50 bg-white shadow-sm header-nav-container">
 <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
 <a href="/" class="flex items-center gap-3 group flex-shrink-0">
