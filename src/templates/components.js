@@ -52,13 +52,13 @@ return `<!-- Favicon -->
 
       <div class="relative group flex items-center">
       <a href="#" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
-      Tools
+      Calculators
       <i class="fas fa-chevron-down text-xs"></i>
       </a>
-      <div class="absolute left-0 top-full pt-2 w-48 hidden group-hover:block">
+      <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
       <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-       <a href="/tools/video-storage-calculator/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">Video Calculator</a>
-       <a href="/tools/photo-storage-calculator/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Photo Calculator</a>
+       <a href="/tools/calculators/video-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">Video Storage Calculator</a>
+       <a href="/tools/calculators/photo-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Photo Storage Calculator</a>
        </div>
        </div>
       </div>
@@ -97,8 +97,8 @@ return `<!-- Favicon -->
       <a href="/categories/gaming-handhelds/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Gaming Handhelds</a>
       <a href="/categories/security-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Security Cameras</a>
       <div class="border-t border-slate-300 my-2"></div>
-      <a href="/tools/video-storage-calculator/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Video Calculator</a>
-      <a href="/tools/photo-storage-calculator/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Photo Calculator</a>
+      <a href="/tools/calculators/video-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Video Storage Calculator</a>
+      <a href="/tools/calculators/photo-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Photo Storage Calculator</a>
       <div class="border-t border-slate-300 my-2"></div>
       <a href="/sd-card-guide.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">SD Card Guide</a>
       <a href="/speed-classes.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Speed Classes</a>
@@ -227,10 +227,10 @@ function generateSidebar() {
 
   <!-- Tools Links -->
   <div class="mb-6 border-t border-slate-200 pt-6">
-    <h3 class="text-sm font-semibold text-slate-900 mb-3">Tools</h3>
+    <h3 class="text-sm font-semibold text-slate-900 mb-3">Calculators</h3>
     <ul class="space-y-2">
-      <li><a href="/tools/video-storage-calculator/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Video Calculator</a></li>
-      <li><a href="/tools/photo-storage-calculator/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Photo Calculator</a></li>
+      <li><a href="/tools/calculators/video-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Video Storage Calculator</a></li>
+      <li><a href="/tools/calculators/photo-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Photo Storage Calculator</a></li>
     </ul>
   </div>
 
