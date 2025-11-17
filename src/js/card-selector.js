@@ -11,12 +11,19 @@ class CardSelector {
    */
   static async loadCards() {
     try {
+      console.log('[CardSelector] Fetching cards from /data/sdcards.json');
       const response = await fetch('/data/sdcards.json');
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
       const data = await response.json();
-      return data.sdcards || [];
+      const cards = data.sdcards || [];
+      console.log(`[CardSelector] ✓ Loaded ${cards.length} cards from JSON`);
+      return cards;
     } catch (error) {
-      console.error('Failed to load cards:', error);
+      console.error('[CardSelector] ✗ Failed to load cards:', error.message);
       return [];
     }
   }
