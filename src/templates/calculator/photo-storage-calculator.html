@@ -37,11 +37,13 @@
     <main class="flex-1">
       <!-- Hero Section -->
       <div class="mb-8">
-        <h1 class="text-4xl font-bold text-slate-900 mb-4">Photo Storage Calculator</h1>
-        <h2 class="text-2xl font-semibold text-slate-700 mb-4">Burst Capacity & RAW Comparison</h2>
+        <h1 class="text-4xl font-bold text-slate-900 mb-4">How Many Photos Fit On Your SD Card?</h1>
+        <h2 class="text-2xl font-semibold text-slate-700 mb-4">Instantly Compare RAW vs. JPEG and Plan Your Shoot</h2>
         <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-          How many photos can you shoot on your SD card? Compare JPEG and RAW file sizes, 
-          calculate burst capacity for continuous shooting, and find the right card for your shooting style.
+          Running out of storage mid-shoot is frustrating—and choosing the wrong card can cost you critical moments. This calculator helps you plan ahead by showing exactly how many photos fit on your SD card based on your shooting style, file format, and burst rate.
+        </p>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          Whether you're shooting JPEG or RAW (or both), capturing bursts or single frames, this tool compares file sizes in seconds and recommends the ideal card capacity for your needs. No more guessing, no more surprises on location—just the confidence that your card has enough space.
         </p>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
@@ -85,6 +87,20 @@
         {% include "components/calculator-widget.html" %}
       </div>
 
+      <!-- Why This Matters Section -->
+      <div class="mb-8 bg-amber-50 border-l-4 border-amber-500 rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Why This Matters: The Hidden Cost of Wrong Card Choices</h2>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          Many photographers assume all SD cards are the same—or just grab whatever's cheapest. In reality, the wrong card can ruin your shoot. Running out of storage mid-burst forces you to stop shooting, format the card (risking data loss), or miss the moment entirely. Equally problematic is choosing a card that's too slow: it creates a buffer bottleneck that interrupts your shooting rhythm and can cause dropped frames.
+        </p>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          File format also matters more than most realize. A RAW file from a 45-megapixel camera can be 5x larger than a JPEG from the same camera. If you're shooting RAW and calculating storage as if you're shooting JPEG, you'll fill your card three shots from the end of an important session.
+        </p>
+        <p class="text-slate-700 leading-relaxed">
+          This calculator ensures you understand your needs before you buy, so you can invest in the right card size and speed class—giving you confidence on location.
+        </p>
+      </div>
+
       <!-- FAQ Section -->
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
@@ -98,9 +114,10 @@
               </button>
             </h3>
             <div id="faq-answer-1" class="faq-answer">
-              <p><strong>JPEG:</strong> Compressed format. Smaller files (2–12MB per photo). Ready to share, but limited editing flexibility. Processing happens in-camera.</p>
-              <p><strong>RAW:</strong> Uncompressed format. Larger files (20–80MB per photo depending on megapixels). Maximum editing control — you process in post-production with software like Lightroom or Capture One.</p>
-              <p><strong>Best for beginners?</strong> JPEG. Best for professionals or serious enthusiasts? RAW.</p>
+              <p><strong>JPEG:</strong> Compressed format. Smaller files (2–12MB per photo). The camera applies color grading, white balance, and sharpening in real-time, so photos are ready to share straight out of the camera. However, this also means limited post-production editing flexibility—you can't recover blown highlights or fix white balance like you can with RAW.</p>
+              <p><strong>RAW:</strong> Uncompressed format. Larger files (20–80MB per photo depending on megapixels and camera brand). RAW captures all sensor data without in-camera processing, giving you maximum editing control in post-production using software like Adobe Lightroom, Capture One, or DaVinci Resolve. You can adjust exposure, white balance, shadows, and highlights non-destructively and recover details that would be lost in JPEG.</p>
+              <p><strong>JPEG + RAW Mode:</strong> Many modern cameras allow you to shoot both simultaneously, capturing a processed JPEG for quick review and sharing while also archiving the RAW file for serious editing. This uses roughly double the storage but gives you the best of both worlds.</p>
+              <p><strong>Best for beginners?</strong> JPEG (simpler, faster workflow). Best for professionals or serious enthusiasts? RAW (maximum control, better recovery from mistakes). Use our calculator to estimate storage for your chosen format.</p>
             </div>
           </div>
 
@@ -112,9 +129,10 @@
               </button>
             </h3>
             <div id="faq-answer-2" class="faq-answer">
-              <p><strong>Method 1:</strong> Shoot a test photo, check file properties (right-click → Properties).</p>
-              <p><strong>Method 2:</strong> Search "[Camera Model] RAW file size" — reviews often list this.</p>
-              <p><strong>Method 3:</strong> Use our presets above — pick your megapixel range (5MP, 20MP, 45MP) and format.</p>
+              <p><strong>Method 1 (Quickest):</strong> Shoot a test photo in both JPEG and RAW formats, then check file properties (Windows: right-click → Properties; Mac: right-click → Get Info). Note the sizes in MB. This gives you exact data for your specific camera and settings.</p>
+              <p><strong>Method 2 (Research):</strong> Search "[Camera Model] RAW file size" on DPReview, Fred Miranda Tools, or your camera's manual. These sources often list exact file sizes for each recording format and resolution mode. Canon 5D Mark IV RAW files, for example, are typically 30–35MB; a 45MP Sony α7R V can produce 80–100MB RAW files.</p>
+              <p><strong>Method 3 (Estimate):</strong> Use our preset calculator above. Pick your megapixel range (5MP for smartphones, 20MP for entry DSLR, 45MP+ for high-end mirrorless) and format. We've calibrated these presets to common camera models, so you'll get a close estimate without manual testing.</p>
+              <p><strong>Pro tip:</strong> File size varies slightly based on scene complexity (busy scenes compress less than simple ones), so always round up when calculating storage needs.</p>
             </div>
           </div>
 
@@ -126,9 +144,10 @@
               </button>
             </h3>
             <div id="faq-answer-3" class="faq-answer">
-              <p><strong>For JPEG bursts:</strong> Class 10 or U3 is usually fine. Low write speed needed.</p>
-              <p><strong>For RAW bursts:</strong> V30 minimum. RAW is fast-writing, so faster cards prevent buffer slowdown.</p>
-              <p><strong>For high-speed burst (10+ fps):</strong> V60 or better. Professional bursting requires consistent performance.</p>
+              <p><strong>For JPEG bursts (under 6 fps):</strong> Class 10 or U3 is usually sufficient. JPEG files are small, so even modest write speeds (10 MB/s) can handle continuous shooting. Most entry-level DSLRs and mirrorless cameras shooting JPEG don't need anything faster.</p>
+              <p><strong>For RAW bursts (6–10 fps):</strong> V30 is the minimum recommended. V30 guarantees 30 MB/s sustained write speed, which is essential for RAW shooting. RAW files are large, and if your card can't keep up, the camera's buffer fills, forcing you to pause between shots. This kills momentum during critical moments.</p>
+              <p><strong>For high-speed burst (10+ fps) or professional work:</strong> V60 or V90. These cards guarantee 60 MB/s and 90 MB/s write speeds respectively. If you're shooting 12-14 fps RAW or using a professional cinema camera, these are necessary to prevent buffer overflow and ensure every frame is written reliably.</p>
+              <p><strong>Check your camera's specs:</strong> Your camera manual lists the minimum recommended speed class. Don't cheap out—a slow card makes your expensive camera feel sluggish and unreliable.</p>
             </div>
           </div>
 
