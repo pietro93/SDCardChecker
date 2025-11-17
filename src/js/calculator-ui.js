@@ -494,21 +494,32 @@ class CalculatorUI {
         */
        async initCardSelector() {
          // Skip if already loaded
-         if (this.allCards.length > 0) {
+         if (this.allCards && this.allCards.length > 0) {
+           console.log('Cards already loaded, skipping reload');
            return;
          }
 
          if (typeof CardSelector === 'undefined') {
-           console.warn('CardSelector module not loaded');
+           console.error('CardSelector module not loaded - ensure card-selector.js is included');
            return;
          }
 
          try {
-           this.allCards = await CardSelector.loadCards();
-           this.filteredCards = this.allCards;
-           console.log(`Loaded ${this.allCards.length} cards for selector`);
+           console.log('Starting card load...');
+           const cards = await CardSelector.loadCards();
+           
+           if (!cards || cards.length === 0) {
+             console.warn('No cards returned from CardSelector.loadCards()');
+             return;
+           }
+           
+           this.allCards = cards;
+           this.filteredCards = cards;
+           console.log(`✓ Successfully loaded ${this.allCards.length} cards`);
          } catch (error) {
            console.error('Failed to load cards for selector:', error);
+           this.allCards = [];
+           this.filteredCards = [];
          }
        },
 
