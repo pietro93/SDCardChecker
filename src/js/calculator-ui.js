@@ -92,6 +92,13 @@ class CalculatorUI {
         selectedDeviceData: null
       },
 
+      // Card Selector (for reverse mode)
+      cardSelectorSearch: '',
+      cardSelectorOpen: false,
+      allCards: [],
+      filteredCards: [],
+      selectedCard: null,
+
       // Calculation Results
        result: null,
        hasCalculated: false,
@@ -480,9 +487,72 @@ class CalculatorUI {
          }).catch(error => {
            console.error('Failed to load card recommendations:', error);
          });
+       },
+
+       /**
+        * Load all cards for selector (on component init)
+        */
+       async initCardSelector() {
+         if (typeof CardSelector === 'undefined') {
+           console.warn('CardSelector module not loaded');
+           return;
+         }
+
+         try {
+           this.allCards = await CardSelector.loadCards();
+           this.filteredCards = this.allCards;
+         } catch (error) {
+           console.error('Failed to load cards for selector:', error);
+         }
+       },
+
+       /**
+        * Filter cards based on search input
+        */
+       filterCardsList() {
+         if (typeof CardSelector === 'undefined') {
+           return;
+         }
+
+         this.filteredCards = CardSelector.searchCards(this.allCards, this.cardSelectorSearch);
+         this.cardSelectorOpen = true;
+       },
+
+       /**
+        * Select a card and auto-fill calculator fields
+        */
+       selectCard(card) {
+         if (typeof CardSelector === 'undefined') {
+           console.warn('CardSelector module not loaded');
+           return;
+         }
+
+         const specs = CardSelector.getCardSpecs(card);
+         this.selectedCard = specs;
+
+         // Auto-fill reverse calculator fields
+         // Set bitrate to estimated value
+         if (this.activeScenario === 'photo') {
+           // For photo, we might not need bitrate
+         } else {
+           this.reverse.video.bitrateMbps = specs.estimatedBitrateMbps;
+         }
+
+         // Update search display to show selected card name
+         this.cardSelectorSearch = specs.name;
+         this.cardSelectorOpen = false;
+
+         // Track event
+         this._trackEvent('calculator_card_selected', {
+           cardId: specs.id,
+           speedClass: specs.speedClass,
+           scenario: this.activeScenario
+         });
+
+         console.log('Card selected and fields updated:', specs);
        }
-      };
-      }
+       };
+       }
 
       /**
       * Get preset data for a scenario
