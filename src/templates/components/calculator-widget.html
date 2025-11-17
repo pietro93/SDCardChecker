@@ -89,15 +89,15 @@
                         Bitrate (Mbps)
                         <button type="button"
                             class="inline-block ml-1 text-blue-600 hover:text-blue-800 cursor-help font-normal"
-                            aria-label="Bitrate help" title="Mbps = Megabits per second. 1 Mbps ≈ 0.125 MB/s">
+                            aria-label="Bitrate help" title="Higher bitrate = better quality but larger files. Lower bitrate = smaller files but lower quality.">
                             ℹ️
                         </button>
                     </label>
                     <input x-model.number="forward.video.bitrateMbps" type="number" placeholder="150" min="1" step="1"
                         @input="validateNumericInput($event, 1)"
                         class="w-full px-3 py-2 border border-gray-300 rounded-lg"
-                        aria-label="Video bitrate in Mbps (Megabits per second)" aria-describedby="bitrate-help" />
-                    <p id="bitrate-help" class="text-xs text-gray-600 mt-1">Mbps = Megabits/sec. 1 Mbps ≈ 0.125 MB/s</p>
+                        aria-label="Video bitrate in Mbps" aria-describedby="bitrate-help" />
+                    <p id="bitrate-help" class="text-xs text-gray-600 mt-1">Standard: 50 Mbps for 1080p, 100-150 Mbps for 4K. Not sure? Start with 150 Mbps for good quality.</p>
                 </div>
             </div>
 
@@ -139,6 +139,24 @@
                         min="0.1" @input="validateNumericInput($event, 0.1)"
                         class="w-full px-3 py-2 border border-gray-300 rounded-lg"
                         aria-label="File size per photo in megabytes" />
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2">
+                        Burst Rate
+                        <button type="button"
+                            class="inline-block ml-1 text-blue-600 hover:text-blue-800 cursor-help font-normal"
+                            aria-label="Burst rate help" title="How fast you're shooting affects the card speed you'll need">
+                            ℹ️
+                        </button>
+                    </label>
+                    <select x-model="forward.photo.shootingStyle"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                        aria-label="Photo burst rate in frames per second">
+                        <option value="casual">Casual - 2-5 fps (slow shooting)</option>
+                        <option value="normal">Normal - 10 fps (typical burst)</option>
+                        <option value="highspeed">High-Speed - 20+ fps (rapid fire)</option>
+                    </select>
                 </div>
             </div>
 
@@ -200,9 +218,8 @@
                 </div>
             </div>
 
-            <div class="text-xs text-gray-600 p-3 bg-gray-100 rounded">
-                <strong>💡 Tip:</strong> For 24/7 continuous recording, use <strong>HIGH_ENDURANCE</strong> cards, not
-                speed cards.
+            <div class="p-3 bg-amber-50 border border-amber-200 rounded text-amber-900 text-xs">
+                <strong>⚠️ Important:</strong> For continuous recording, use <strong>HIGH_ENDURANCE</strong> cards (designed for 24/7 use). Regular V30/V60 cards will fail quickly.
             </div>
         </div>
 
@@ -311,6 +328,11 @@
                         <span class="text-sm text-blue-100"
                             x-text="`(${result.rawGB}GB footage + ${result.overheadGB}GB overhead)`"></span>
                     </p>
+                </div>
+
+                <div x-show="activeScenario === 'continuous' && forward.continuous.hoursPerDay >= 12"
+                     class="p-4 bg-amber-50 border border-amber-200 rounded text-amber-900 text-sm">
+                    <strong>⚠️ Important:</strong> For extended continuous recording, use <strong>HIGH_ENDURANCE</strong> cards (not speed cards). These are designed for 24/7 use and will last much longer.
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">

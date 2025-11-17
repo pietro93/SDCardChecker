@@ -121,17 +121,23 @@ class StorageCalculator {
    * @param {number} cardCapacityGB - Card capacity in GB
    * @param {number} fileSizeMB - File size per photo in MB
    * @param {number} overheadPercent - Overhead percentage (default 10)
-   * @returns {Object} { photoCount, usableGB }
+   * @returns {Object} { photoCount, usableGB, speedClass, minWriteSpeed }
    */
   static calculatePhotoCount(cardCapacityGB, fileSizeMB, overheadPercent = 10) {
     const usableGB = cardCapacityGB * (1 - overheadPercent / 100);
     const usableMB = usableGB * 1024;
     const photoCount = Math.floor(usableMB / fileSizeMB);
 
+    // Determine speed class based on file size (larger files need faster cards)
+    const isHighBurst = fileSizeMB > 20;
+    const speedClass = isHighBurst ? 'V60' : 'V30';
+
     return {
       photoCount: photoCount,
       usableGB: this._round(usableGB, 2),
-      fileSizePerPhotoMB: fileSizeMB
+      fileSizePerPhotoMB: fileSizeMB,
+      speedClass: speedClass,
+      minWriteSpeed: speedClass === 'V60' ? 60 : 30
     };
   }
 
