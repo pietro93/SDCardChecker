@@ -228,10 +228,9 @@ All Phase 1 pages are built, tested, and published simultaneously once bitrate d
 ---
 
 ## PHASE 0: LAUNCH IMMEDIATELY (No Device Data Required)
-- make sure to refer to STORAGE_CALCULATOR_PRODUCT_SPEC.md
 
 ### Page 1: "Video Storage Calculator"
-- **URL:** `/tools/calculator/video-storage-calculator/`
+- **URL:** `/tools/calculators/video-storage/`
 - **Primary Keyword:** "video storage calculator," "4K video storage," "how much video fits on [capacity]"
 - **Copy Focus:** For content creators, vloggers, videographers
 - **Default Presets:** Video use case (4K 60fps, H.264, 150Mbps)
@@ -241,7 +240,7 @@ All Phase 1 pages are built, tested, and published simultaneously once bitrate d
 - **Status:** ✅ Launch Week 1
 
 ### Page 2: "Photo Storage Calculator"
-- **URL:** `/tools/calculator/photo-storage-calculator/`
+- **URL:** `/tools/calculators/photo-storage/`
 - **Primary Keyword:** "photo storage calculator," "how many photos fit on," "RAW file size calculator"
 - **Copy Focus:** Photographers, burst shooters, RAW enthusiasts
 - **Default Presets:** Photo use case (5MP JPEG, 10fps burst)
@@ -256,62 +255,62 @@ All Phase 1 pages are built, tested, and published simultaneously once bitrate d
 
 Each Phase 1 page includes a device dropdown selector. Pages are built and tested with **placeholder bitrate data**. When real bitrate data is collected (see Section 5A), swap placeholder → real data and publish simultaneously.
 
-### Page 3: "Drone Storage Calculator"
-- **URL:** `/tools/calculator/drone-storage-calculator/`
-- **Primary Keyword:** "drone recording time calculator," "DJI Mavic storage," "how long can DJI record"
+### Page 3: "Drone Recording Time Calculator"
+- **URL:** `/tools/calculators/drone-recording-time/`
+- **Primary Keyword:** "drone recording time calculator," "DJI Mavic recording time," "how long can drone record"
 - **Copy Focus:** Drone pilots, aerial videographers
 - **Default Presets:** Video use case (4K 60fps, optimized for drone bitrates)
 - **Device Selector:** Dropdown with device presets (DJI Mavic 3, Air 3S, Mini 4 Pro, Phantom 4 Pro) — auto-fills bitrate + resolution
-- **Meta Description:** "Calculate recording time for DJI drones. Find how long you can shoot on your SD card with bitrate recommendations for each drone model."
+- **Meta Description:** "Calculate recording time for your drone. Find how long you can shoot on your SD card with DJI and other drone models."
 - **Hero Title:** "Drone Recording Time Calculator — Plan Your Flights"
 - **Status:** 🟡 Built, awaiting DJI bitrate data
 
-### Page 4: "GoPro Storage Calculator"
-- **URL:** `/tools/calculator/gopro-storage-calculator/`
-- **Primary Keyword:** "GoPro storage calculator," "how much video on GoPro," "GoPro Hero 12 storage"
+### Page 4: "GoPro Recording Time Calculator"
+- **URL:** `/tools/calculators/gopro-recording-time/`
+- **Primary Keyword:** "gopro recording time calculator," "gopro recording time sd card," "how much video GoPro"
 - **Copy Focus:** Action sports, content creators, vloggers
 - **Default Presets:** GoPro 4K 60fps (~150Mbps)
 - **Device Selector:** Dropdown with GoPro models (Hero 12, Hero 11, Hero 10, Max) — auto-fills bitrate + resolution options
-- **Meta Description:** "Calculate how much video your GoPro can record. Find storage needs for different recording modes and quality levels."
-- **Hero Title:** "GoPro Storage Calculator — How Much Video Fits?"
+- **Meta Description:** "Calculate GoPro recording time on your SD card. Find exactly how much 5.3K, 4K, and 1080p video fits."
+- **Hero Title:** "GoPro Recording Time Calculator — How Much Video Fits?"
 - **Status:** 🟡 Built, awaiting GoPro bitrate data
 
-### Page 5: "Dashcam Storage Calculator"
-- **URL:** `/tools/calculator/dashcam-storage-calculator/`
-- **Primary Keyword:** "dashcam storage calculator," "how long can dashcam record," "continuous dashcam recording"
+### Page 5: "Dashcam Recording Time Calculator"
+- **URL:** `/tools/calculators/dashcam-recording-time/`
+- **Primary Keyword:** "dashcam recording time calculator," "dashcam loop recording hours," "how long can dashcam record"
 - **Copy Focus:** Vehicle owners, insurance-conscious drivers
 - **Default Presets:** 1080p continuous recording (~5Mbps), with loop recording mode toggle
 - **Device Selector:** Dropdown with popular dashcams (Viofo A119 Mini, Thinkware, BlackVue, generic 1080p/4K) — auto-fills bitrate + continuous mode
 - **Special Feature:** Loop recording toggle (card fills, then overwrites oldest footage) + heat endurance notes
-- **Meta Description:** "Calculate dashcam recording time and storage needs. Includes loop recording mode and endurance ratings for continuous 24/7 use."
-- **Hero Title:** "Dashcam Storage Calculator — Plan Continuous Recording"
+- **Meta Description:** "Calculate dashcam recording time and loop recording hours. Plan 24/7 continuous recording with endurance recommendations."
+- **Hero Title:** "Dashcam Recording Time Calculator — Plan Continuous Recording"
 - **Status:** 🟡 Built, awaiting dashcam bitrate data
 
-### Page 6: "Action Camera Storage Calculator"
-- **URL:** `/tools/calculator/action-camera-storage-calculator/`
-- **Primary Keyword:** "action camera storage calculator," "Insta360 storage," "DJI Osmo Action storage"
+### Page 6: "Action Camera Recording Time Calculator"
+- **URL:** `/tools/calculators/action-camera-recording-time/`
+- **Primary Keyword:** "action camera recording time calculator," "Insta360 recording time," "action camera sd card"
 - **Copy Focus:** Adventure/sports videographers, creative professionals
 - **Default Presets:** 4K 60fps (~150Mbps), with note on 360° recording mode
 - **Device Selector:** Dropdown with action camera brands (GoPro, Insta360, DJI Osmo Action, generic action cam) — auto-fills bitrate for each
 - **Special Feature:** 360° recording toggle (doubles bitrate for Insta360 models)
-- **Meta Description:** "Calculate storage for action cameras including GoPro, Insta360, and DJI Osmo. Compare bitrates and recording modes."
-- **Hero Title:** "Action Camera Storage Calculator — 4K, 360°, & Beyond"
+- **Meta Description:** "Calculate recording time for action cameras including Insta360, DJI Osmo, and GoPro. Compare bitrates and recording modes."
+- **Hero Title:** "Action Camera Recording Time Calculator — 4K, 360°, & Beyond"
 - **Status:** 🟡 Built, awaiting action camera bitrate data
 
-### Page 7: "Surveillance Storage Calculator"
-- **URL:** `/tools/calculator/surveillance-storage-calculator/`
-- **Primary Keyword:** "surveillance storage calculator," "security camera storage," "24/7 recording hours"
+### Page 7: "Security Camera Storage Calculator"
+- **URL:** `/tools/calculators/security-camera-recording-time/`
+- **Primary Keyword:** "security camera recording time calculator," "24/7 camera storage," "continuous surveillance recording"
 - **Copy Focus:** Security-conscious homeowners, business owners
 - **Default Presets:** 1080p continuous 24/7 recording (~5Mbps), with endurance card recommendations
-- **Device Selector:** Dropdown with surveillance camera types (1080p, 4K, IP camera, analog, etc.) — auto-fills bitrate + continuous recording mode
-- **Special Feature:** 24/7 uptime toggle + endurance card recommendations (MAX endurance, not speed)
-- **Meta Description:** "Calculate storage for security cameras and surveillance systems. Plan 24/7 recording with endurance card recommendations."
-- **Hero Title:** "Surveillance Recording Calculator — 24/7 Coverage Planning"
-- **Status:** 🟡 Built, awaiting surveillance camera bitrate data
+- **Device Selector:** Dropdown with surveillance camera types (1080p, 4K, IP camera, etc.) — auto-fills bitrate + continuous recording mode
+- **Special Feature:** 24/7 uptime toggle + endurance card recommendations (HIGH_ENDURANCE focus)
+- **Meta Description:** "Calculate 24/7 security camera recording time and storage needs. Plan continuous surveillance with endurance card recommendations."
+- **Hero Title:** "Security Camera Recording Time Calculator — 24/7 Coverage Planning"
+- **Status:** 🟡 Built, awaiting security camera bitrate data
 
 ### Page 8: "Timelapse Storage Calculator"
-- **URL:** `/tools/calculator/timelapse-storage-calculator/`
-- **Primary Keyword:** "timelapse storage calculator," "24-hour timelapse," "construction timelapse storage"
+- **URL:** `/tools/calculators/timelapse-storage/`
+- **Primary Keyword:** "timelapse storage calculator," "timelapse photo count," "construction timelapse storage"
 - **Copy Focus:** Photographers, architects, nature documentarians
 - **Default Presets:** 1 photo per 2 seconds, 5MP JPEG (~2.5MB per photo)
 - **Device Selector:** Dropdown with camera brands (Canon, Sony, Nikon, etc.) — auto-fills typical RAW/JPEG file sizes
