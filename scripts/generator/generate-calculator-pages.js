@@ -64,18 +64,23 @@ async function generateCalculatorPages(distPath) {
         },
         {
             template: path.join(srcPath, "templates/calculator/drone-recording-calculator.html"),
-            file: "tools/calculators/drone-footage-time/index.html",
+            file: "tools/calculators/drone-storage/index.html",
             name: "Drone Recording Calculator"
         },
         {
             template: path.join(srcPath, "templates/calculator/dashcam-storage-calculator.html"),
-            file: "tools/calculators/dashcam-footage-time/index.html",
+            file: "tools/calculators/dashcam-storage/index.html",
             name: "Dashcam Storage Calculator"
         },
         {
-            template: path.join(srcPath, "templates/calculator/surveillance-recording-calculator.html"),
-            file: "tools/calculators/continuous-recording-storage/index.html",
-            name: "Continuous Recording Storage Calculator"
+            template: path.join(srcPath, "templates/calculator/security-camera-recording-time-calculator.html"),
+            file: "tools/calculators/security-camera-storage/index.html",
+            name: "Security Camera Storage Calculator"
+        },
+        {
+            template: path.join(srcPath, "templates/calculator/timelapse-storage-calculator.html"),
+            file: "tools/calculators/timelapse-storage/index.html",
+            name: "Timelapse Storage Calculator"
         }
     ];
 
