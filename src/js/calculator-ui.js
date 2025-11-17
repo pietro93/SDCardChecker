@@ -547,8 +547,8 @@ class CalculatorUI {
             },
 
             /**
-             * Select a card and auto-fill calculator fields
-             */
+              * Select a card and auto-fill calculator fields
+              */
             selectCard(card) {
                 if (typeof CardSelector === 'undefined') {
                     console.warn('CardSelector module not loaded');
@@ -558,10 +558,18 @@ class CalculatorUI {
                 const specs = CardSelector.getCardSpecs(card);
                 this.selectedCard = specs;
 
+                // Auto-fill card capacity (always available)
+                if (specs.capacity) {
+                    // Parse capacity (might be "128GB" or just "128")
+                    const capacityGB = parseInt(specs.capacity.toString().replace(/[^\d]/g, ''));
+                    if (!isNaN(capacityGB) && capacityGB > 0) {
+                        this.reverse.cardCapacityGB = capacityGB;
+                    }
+                }
+
                 // Auto-fill reverse calculator fields
                 if (this.activeScenario === 'photo') {
-                    // For photo, check if card has capacity and potentially update fileSizeMB
-                    // but don't override user input if already set
+                    // For photo, capacity is already set above
                 } else {
                     // For video/continuous, set bitrate to estimated value
                     this.reverse.video.bitrateMbps = specs.estimatedBitrateMbps;

@@ -7,12 +7,35 @@
 
 class CalculatorCardRecommendations {
     /**
-     * Get fallback image for card if missing real image
+     * Get smart fallback image for card based on type and speed class
+     * Uses UHS level and type to determine appropriate placeholder
      * @param {Object} card - Card object
      * @returns {String} Fallback image URL
      */
     static getCardImageFallback(card) {
-        return '/img/fallback/sd-card-placeholder.webp';
+        const isMicroSD = card.type && card.type.toLowerCase().includes('microsd');
+        const uhs = card.uhs ? card.uhs.toUpperCase() : '';
+        
+        // Type-specific placeholders for specialty formats
+        if (card.type === 'CFast') {
+            return '/img/cards/cfast-generic.webp';
+        }
+        if (card.type === 'XQD') {
+            return '/img/cards/xqd-generic.webp';
+        }
+        
+        // UHS-II cards
+        if (uhs.includes('UHS-II')) {
+            return isMicroSD ? '/img/cards/micro-uhs2-generic.webp' : '/img/cards/uhs2-generic.webp';
+        }
+        
+        // UHS-I cards
+        if (uhs.includes('UHS-I')) {
+            return isMicroSD ? '/img/cards/micro-uhs1-generic.webp' : '/img/cards/uhs1-generic.webp';
+        }
+
+        // Default fallback
+        return '/img/cards/placeholder.webp';
     }
 
     /**
@@ -123,6 +146,8 @@ class CalculatorCardRecommendations {
         const cardHTML = cards
             .map(card => {
                 const formatted = this.formatCard(card);
+                // Get fallback image URL for this card
+                const fallbackUrl = this.getCardImageFallback(card);
                 return `
           <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
             <!-- Card Image -->
@@ -134,6 +159,7 @@ class CalculatorCardRecommendations {
                 loading="lazy"
                 width="180"
                 height="180"
+                onerror="this.src='${fallbackUrl}'"
               />
             </div>
 
