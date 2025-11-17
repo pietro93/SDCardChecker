@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoPro Storage Calculator — How Much Video Fits? | SD Card Checker</title>
+  <meta name="description" content="Calculate GoPro recording time on your SD card. Hero 13, Hero 12, GoPro Max storage guide. Compare 5.3K, 4K, and bitrates instantly.">
+  <link rel="canonical" href="https://sdcardchecker.com/tools/calculators/gopro-storage/">
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="/assets/js/calculator.js"></script>
+  <script src="/assets/js/card-selector.js"></script>
+  <script src="/assets/js/calculator-ui.js"></script>
+  <script src="/assets/js/calculator-card-recommendations.js"></script>
+  <script src="/assets/js/card-recommendations.js"></script>
+  {{GROW_SCRIPT}}
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/tools/" class="text-blue-600 hover:underline">Tools</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/tools/calculators/" class="text-blue-600 hover:underline">Calculators</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">GoPro Storage</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="mb-8">
+        <h1 class="text-4xl font-bold text-slate-900 mb-4">How Much GoPro Video Fits On Your Card?</h1>
+        <h2 class="text-2xl font-semibold text-slate-700 mb-4">Calculate 5.3K, 4K, and High-FPS Recording Storage</h2>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          Whether you're filming extreme sports, vlogging, or documenting adventures, running out of storage mid-action isn't an option. This calculator helps GoPro users plan their recording capacity with confidence by showing exactly how much video fits on your microSD card based on your camera model and recording mode.
+        </p>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          From the latest Hero 13 Black shooting 5.3K 60fps to classic Hero 11 capturing 4K 120fps, to 360° recording on GoPro Max, this tool instantly calculates recording duration, recommends ideal card capacity, and ensures your speed class matches your GoPro's performance needs. No more guessing—just footage you can rely on.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">GoPro Device Presets</h4>
+              <p class="text-slate-600 text-sm">Hero 13, Hero 12, Max included</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">5.3K, 4K, 2.7K Support</h4>
+              <p class="text-slate-600 text-sm">All recording resolutions</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">360° Recording Mode</h4>
+              <p class="text-slate-600 text-sm">GoPro Max bitrate doubling</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calculator Widget -->
+      <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
+        <div class="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+          <p class="text-sm text-slate-700"><strong>Quick note:</strong> GoPro cameras use microSD cards. Card speed class (U3, V30, V60) affects burst write performance. H.265 saves 30-40% storage versus H.264 at the same resolution.</p>
+        </div>
+        <script>
+          document.addEventListener('alpine:init', () => {
+            Alpine.data('calculatorState', () => {
+              const state = CalculatorUI.init({
+                defaultScenario: 'video',
+                deviceSelectorEnabled: true,
+                deviceCategory: 'action_camera'
+              });
+              
+              Alpine.nextTick(() => {
+                state.initCardSelector();
+              });
+              
+              return state;
+            });
+          });
+        </script>
+        {% include "../components/calculator-widget.html" %}
+      </div>
+
+      <!-- Why This Matters Section -->
+      <div class="mb-8 bg-amber-50 border-l-4 border-amber-500 rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Why This Matters: Action Without Interruption</h2>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          GoPro cameras capture some of life's most intense moments—and missing footage because your card filled up is devastating. Action sports, travel vlogging, and adventure content don't get second takes. A full card stops your camera cold, forcing you to swap or format mid-action and risking data loss.
+        </p>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          GoPro bitrates vary dramatically by model and recording mode. A Hero 13 shooting 5.3K 60fps uses 120 Mbps, while 4K 120fps uses 150 Mbps—double the data compared to older Hero 11 at the same resolution. Add 360° recording on GoPro Max, and bitrates double again. Without accurate calculations, you'll either run out of space or overspend on larger cards than necessary.
+        </p>
+        <p class="text-slate-700 leading-relaxed">
+          This calculator removes doubt. Select your GoPro model, choose your recording mode, and instantly know exactly how much video fits on any card capacity. Whether you're planning a weekend trip, multi-day expedition, or content marathon, you'll have the storage confidence to focus on capturing instead of worrying about capacity.
+        </p>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+        
+        <div class="space-y-4">
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                What's the difference between GoPro Hero 13, Hero 12, and Hero Max?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-1" class="faq-answer">
+              <p><strong>Hero 13 Black (2024):</strong> Latest flagship. Records 5.3K 60fps at 120 Mbps H.265, 4K 120fps at 150 Mbps. Best overall video quality and dynamic range. Upgraded stabilization (HyperSmooth 6.0).</p>
+              <p><strong>Hero 12 Black (2023):</strong> Previous-generation flagship. Similar to Hero 13 but slightly lower bitrates on some modes. 5.3K 60fps at 100 Mbps H.265. Still excellent for most use cases and more affordable than Hero 13.</p>
+              <p><strong>GoPro Max (2019):</strong> 360° camera capturing spherical video. Bitrates are higher due to dual lens streams. 5.6K 30fps 360° recording at 120 Mbps. Can also record in standard (non-360°) HERO Mode. Unique for immersive content creation.</p>
+              <p><strong>Storage implications:</strong> Hero 13 uses more data than Hero 12 due to higher bitrates on some modes. GoPro Max uses roughly 2x a standard GoPro at similar resolution due to 360° capture. Use our calculator to compare exact storage for your model.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                Do I need V60 for GoPro 4K 120fps recording?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-2" class="faq-answer">
+              <p><strong>Short answer:</strong> V30 is typically sufficient for Hero 13 4K 120fps (150 Mbps = 18.75 MB/s), but V60 is recommended for margin of safety.</p>
+              <p><strong>Why the gap?</strong> GoPro officially recommends U3 or V30 for most recording modes. However, 4K 120fps creates sustained writes at the high end of V30's capability. A V60 card has double the headroom (60 MB/s vs 30 MB/s), preventing buffer issues if your card isn't quite at peak performance or if temperatures fluctuate.</p>
+              <p><strong>Practical guidance:</strong> V30 microSD cards work and are cheaper. If you're on a budget and stick to 4K 120fps (not higher bitrate modes), V30 is okay. If you want absolute reliability for extended recording or 5.3K modes, upgrade to V60. Professional content creators use V60+ to eliminate any risk of dropped frames.</p>
+              <p><strong>Pro tip:</strong> Always buy from reputable brands (SanDisk, Samsung, Lexar). Counterfeit cards are common in the microSD market and don't deliver promised speed classes. A fake V60 at V30 actual speed causes exactly the problems you're trying to avoid.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                How much 5.3K video fits on 128GB, 256GB, or 512GB?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-3" class="faq-answer">
+              <p><strong>Hero 13 5.3K 60fps H.265 (120 Mbps):</strong></p>
+              <ul class="list-disc list-inside ml-2 space-y-1">
+                <li>128GB: ~2.8 hours (182 minutes)</li>
+                <li>256GB: ~5.7 hours (342 minutes)</li>
+                <li>512GB: ~11.4 hours (684 minutes)</li>
+              </ul>
+              <p><strong>Hero 12 5.3K 60fps H.265 (100 Mbps):</strong></p>
+              <ul class="list-disc list-inside ml-2 space-y-1">
+                <li>128GB: ~3.4 hours (204 minutes)</li>
+                <li>256GB: ~6.8 hours (408 minutes)</li>
+                <li>512GB: ~13.6 hours (816 minutes)</li>
+              </ul>
+              <p><strong>GoPro Max 5.6K 30fps 360° (120 Mbps):</strong></p>
+              <ul class="list-disc list-inside ml-2 space-y-1">
+                <li>128GB: ~2.8 hours</li>
+                <li>256GB: ~5.7 hours</li>
+                <li>512GB: ~11.4 hours</li>
+              </ul>
+              <p><strong>For adventure vloggers:</strong> A 128GB card is fine for weekend trips (batches of 2-3 hour sessions). For full-day expeditions or multi-day travel, 256GB+ is recommended. These calculations include a 10% overhead buffer; actual usable space is slightly less.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                What's the best GoPro card for extreme sports and rough conditions?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-4" class="faq-answer">
+              <p><strong>Card recommendations for GoPro:</strong> Look for U3 or V30 microSD cards with H.265 support and reliable read/write performance. Brands: SanDisk Extreme, Samsung Pro, Lexar Professional.</p>
+              <p><strong>For extreme/rugged conditions:</strong> Consider cards with enhanced durability ratings. Some microSD cards are rated temperature-resistant (-25°C to 85°C), shock-resistant, and waterproof. Examples: SanDisk Extreme (rated for harsh environments), Samsung PRO Plus (durable design).</p>
+              <p><strong>Why durability matters:</strong> GoPro footage is often captured in extreme conditions—water, sand, cold, heat. A standard microSD works fine, but cards with shock/vibration resistance and temperature tolerance reduce risk of failure mid-adventure. You don't want card corruption while on a backcountry expedition with no backup.</p>
+              <p><strong>Backup strategy:</strong> Use our calculator to estimate storage per trip. Bring 2-3 cards instead of one massive card. If one card fails, you've still got footage. This is safer and faster (you can swap instead of waiting to transfer).</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                How do I format my microSD card for GoPro?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-5" class="faq-answer">
+              <p><strong>Best practice:</strong> Always format your microSD card in the GoPro camera, not on a computer. GoPro formats to the exact filesystem and structure it expects, ensuring compatibility and performance.</p>
+              <p><strong>Steps:</strong> (1) Insert new microSD card into GoPro. (2) Go to Settings > Formatting. (3) Select "Format Card" or similar (wording varies by model). (4) Confirm (this erases all data on the card). (5) Wait for completion (usually 30 seconds to 2 minutes depending on capacity).</p>
+              <p><strong>When to reformat:</strong> Before first use on a new camera. Periodically during intensive shooting (weekly if recording 8+ hours per day) to prevent filesystem fragmentation. Never during active recording or low battery—always charge first.</p>
+              <p><strong>Windows/Mac formatting:</strong> Avoid formatting in your computer. If you must (e.g., on a replacement/backup card), use exFAT format on Windows or Mac, then reformat in the GoPro. Computer-formatted cards sometimes cause compatibility quirks.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                Can I use the same card in GoPro and other devices?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-6" class="faq-answer">
+              <p><strong>Yes, microSD cards are universal.</strong> You can use the same card in GoPro, drone, smartphone, or tablet. MicroSD is a standard. Just swap physically and it works.</p>
+              <p><strong>Caveat:</strong> Always reformat in GoPro after using the card in another device. Different devices expect different filesystems (exFAT, FAT32, etc.). Reformatting ensures GoPro optimization. Takes 30 seconds and prevents potential compatibility issues.</p>
+              <p><strong>Speed class compatibility:</strong> A V30 card works in any device that accepts microSD, even if that device only needs U3. Backward compatibility means faster cards work fine in slower devices—you just don't get the speed benefit. Using a V30 in a V30-rated device? Perfect match.</p>
+              <p><strong>Practical tip for multi-device users:</strong> Dedicate cards by device (one set for GoPro, one for phone) to avoid reformatting overhead. Or buy 3-4 high-capacity V30 cards and rotate through devices as needed. Cheaper than replacing failed cards from constant reformatting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommended Cards Section -->
+      <div class="mb-8 hidden" id="card-recommendations">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Recommended microSD Cards for GoPro</h2>
+        <div id="card-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Populated by JavaScript after calculation -->
+        </div>
+      </div>
+
+      <!-- Related Calculators -->
+      <div class="bg-slate-100 rounded-lg p-8 mb-8">
+        <h3 class="text-xl font-bold text-slate-900 mb-6">Related Calculators</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <a href="/tools/calculators/video-storage/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">🎥 Video Storage Calculator</h4>
+            <p class="text-sm text-slate-600">Calculate any bitrate and resolution</p>
+          </a>
+          <a href="/tools/calculators/action-camera-storage/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">📹 Action Camera Storage Calculator</h4>
+            <p class="text-sm text-slate-600">GoPro Max, Insta360, and more</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Schema Markup -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "GoPro Storage Calculator — How Much Video Fits?",
+          "description": "Calculate GoPro recording time on your SD card. Hero 13, Hero 12, GoPro Max storage guide.",
+          "url": "https://sdcardchecker.com/tools/calculators/gopro-storage/",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sdcardchecker.com" },
+              { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://sdcardchecker.com/tools/" },
+              { "@type": "ListItem", "position": 3, "name": "GoPro Storage Calculator", "item": "https://sdcardchecker.com/tools/calculators/gopro-storage/" }
+            ]
+          },
+          "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "What's the difference between GoPro Hero 13, Hero 12, and Hero Max?", "acceptedAnswer": { "@type": "Answer", "text": "Hero 13 is latest flagship with highest bitrates. Hero 12 is previous gen. Hero Max is 360° camera with doubled bitrates." } },
+              { "@type": "Question", "name": "Do I need V60 for GoPro 4K 120fps?", "acceptedAnswer": { "@type": "Answer", "text": "V30 works but V60 is recommended for margin of safety and reliability." } }
+            ]
+          }
+        }
+      </script>
+    </main>
+
+    {{SIDEBAR}}
+  </div>
+
+  {{FOOTER}}
+  {{GROW_SCRIPT}}
+
+  <style>
+    .faq-item {
+      @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow;
+    }
+
+    .faq-heading {
+      @apply m-0;
+    }
+
+    .faq-question {
+      @apply w-full p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors bg-transparent border-none;
+      min-height: 48px;
+      user-select: none;
+      -webkit-user-select: none;
+      text-align: left;
+    }
+
+    .faq-question:focus {
+      @apply outline-2 outline-offset-2 outline-blue-500;
+    }
+
+    .faq-question:active {
+      background-color: rgba(59, 130, 246, 0.05);
+      transition: background-color 0.1s ease;
+    }
+
+    .faq-toggle {
+      @apply text-slate-400 transition-transform duration-300;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .faq-toggle.open {
+      @apply rotate-180;
+    }
+
+    .faq-answer {
+      @apply px-6 pb-6 text-slate-700 leading-relaxed border-t border-slate-200 hidden;
+    }
+
+    .faq-answer.open {
+      @apply block;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.faq-question');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const answerId = button.getAttribute('aria-controls');
+          const answer = document.getElementById(answerId);
+          const toggle = button.querySelector('.faq-toggle');
+          const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+          document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.setAttribute('aria-expanded', 'false');
+          });
+          document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+          document.querySelectorAll('.faq-toggle').forEach(t => t.classList.remove('open'));
+
+          if (!isOpen) {
+            button.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+            toggle.classList.add('open');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

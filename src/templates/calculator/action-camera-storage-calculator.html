@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Action Camera Storage Calculator — 4K, 360°, & Beyond | SD Card Checker</title>
+  <meta name="description" content="Calculate storage for action cameras. Plan 360° video, 4K recording, and GoPro, Insta360, DJI Osmo bitrates. Get SD card recommendations.">
+  <link rel="canonical" href="https://sdcardchecker.com/tools/calculators/action-camera-storage/">
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="/assets/js/calculator.js"></script>
+  <script src="/assets/js/card-selector.js"></script>
+  <script src="/assets/js/calculator-ui.js"></script>
+  <script src="/assets/js/calculator-card-recommendations.js"></script>
+  <script src="/assets/js/card-recommendations.js"></script>
+  {{GROW_SCRIPT}}
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/tools/" class="text-blue-600 hover:underline">Tools</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/tools/calculators/" class="text-blue-600 hover:underline">Calculators</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">Action Camera Storage</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="mb-8">
+        <h1 class="text-4xl font-bold text-slate-900 mb-4">How Much Action Camera Video Fits On Your SD Card?</h1>
+        <h2 class="text-2xl font-semibold text-slate-700 mb-4">Plan 4K, 5.3K, 360° & Beyond — GoPro, Insta360, DJI Osmo & More</h2>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          Action cameras are built for adventure—high bitrate 4K, slow-motion 120fps, and immersive 360° recording. But all that quality comes with a cost: data. A single hour of 4K 120fps GoPro footage can consume 50GB or more. Knowing exactly how much your SD card can hold before you hit the slopes, water, or trail prevents the frustration of running out of space mid-adventure.
+        </p>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          Whether you're comparing GoPro Hero 13 storage, planning Insta360 360° footage, or calculating DJI Osmo Action 4 capacity, this calculator handles it all. Choose your camera, recording mode, and SD card size—and instantly see exactly how much video you can capture. No surprises, no missed moments.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">All Major Brands</h4>
+              <p class="text-slate-600 text-sm">GoPro, Insta360, DJI Osmo</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">360° Recording Support</h4>
+              <p class="text-slate-600 text-sm">Double bitrate calculations</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">High-Speed Modes</h4>
+              <p class="text-slate-600 text-sm">4K 120fps, 5.3K 60fps & more</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calculator Widget -->
+      <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
+        <div class="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+          <p class="text-sm text-slate-700"><strong>Quick note:</strong> Action cameras have impressive video compression. GoPro Hero 13 at 5.3K 60fps uses about 75Mbps, while DJI Osmo Action 4 uses about 130Mbps for 4K 120fps. 360° recording roughly doubles bitrate.</p>
+        </div>
+        <script>
+          document.addEventListener('alpine:init', () => {
+            Alpine.data('calculatorState', () => {
+              const state = CalculatorUI.init({
+                defaultScenario: 'video',
+                deviceSelectorEnabled: false
+              });
+              
+              // Initialize card selector when component is ready
+              Alpine.nextTick(() => {
+                state.initCardSelector();
+              });
+              
+              return state;
+            });
+          });
+        </script>
+        {% include "../components/calculator-widget.html" %}
+      </div>
+
+      <!-- Why This Matters Section -->
+      <div class="mb-8 bg-green-50 border-l-4 border-green-500 rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Why This Matters: Adventures Don't Pause for Card Swaps</h2>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          Action cameras are designed for spontaneity: ski a run, film it. Hit the waves, capture it. Climb a peak, record the view. But unlike traditional cameras where you can swap SD cards between shots, action cameras are often mounted, waterproofed, or inaccessible mid-activity. Running out of storage mid-adventure means stopping, removing the camera, swapping cards, and losing momentum—or worse, missing the best part of the action.
+        </p>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          360° cameras compound this problem. A standard 4K GoPro at 5.3K 60fps uses ~75Mbps. The same camera recording in 360° mode (on capable models) roughly doubles the bitrate to ~150Mbps. Many users drastically underestimate this difference and arrive on location with insufficient storage. A 128GB card that holds 3+ hours of standard video might hold only 1.5 hours of 360° footage—a silent killer of content creation.
+        </p>
+        <p class="text-slate-700 leading-relaxed">
+          This calculator ensures you know your exact capacity for your specific camera and recording mode—before you head out. Plan with confidence, knowing you won't hit the card limit mid-adventure.
+        </p>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+        
+        <div class="space-y-4">
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                What is 360° recording and how much extra storage does it use?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-1" class="faq-answer">
+              <p><strong>360° recording:</strong> The camera captures video in all directions simultaneously using multiple lenses or a specialized sensor. This creates an immersive spherical video that viewers can explore by moving their screen or using VR headsets.</p>
+              <p><strong>Storage impact:</strong> Because the camera is capturing from all angles at once, the bitrate roughly doubles compared to standard single-lens recording. For example, an Insta360 X4 shooting 5.7K 30fps in standard mode uses ~100Mbps. In 360° mode, this jumps to ~200Mbps.</p>
+              <p><strong>Practical implication:</strong> A 128GB card holding 3.2 hours of standard 5.7K video will hold only 1.6 hours in 360° mode. This is crucial to know before you start shooting.</p>
+              <p><strong>Editing note:</strong> 360° footage requires special editing software (Adobe Premiere Pro with plugins, DaVinci Resolve with 360° tools, or dedicated software like Insta360 Studio). It's not as straightforward as standard video editing.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                How much does 4K 120fps cost in storage on action cameras?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-2" class="faq-answer">
+              <p><strong>High frame rates = high bitrate.</strong> Doubling framerate (60fps → 120fps) roughly doubles bitrate and storage consumption. A GoPro Hero 13 shooting 4K 60fps uses about 90Mbps. The same camera in 4K 120fps mode uses about 180Mbps—double the storage per hour.</p>
+              <p><strong>Real-world example:</strong> A 256GB card holds approximately 6 hours of 4K 60fps GoPro video. The same card holds only 3 hours of 4K 120fps. And that's before slow-motion playback—120fps footage, when played at normal speed, appears 5x slower, creating stunning slow-motion effects.</p>
+              <p><strong>Bitrate comparison:</strong> DJI Osmo Action 4 in 4K 120fps D-Log M (10-bit color): ~230Mbps. This is even more demanding than standard 4K 120fps, requiring fast V60 or V90 SD cards.</p>
+              <p><strong>Use case:</strong> 4K 120fps is perfect for action sports with fast motion (ski runs, skateboarding, mountain biking) where slow-motion replay is essential. Plan accordingly with larger cards.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                Can I use the same SD card in different action cameras?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-3" class="faq-answer">
+              <p>Yes, most action cameras (GoPro, Insta360, DJI Osmo) use standard microSD cards. A V30 microSD card will work in any of them. However, different cameras have different bitrate requirements.</p>
+              <p><strong>Example:</strong> A GoPro Hero 13 requires V30 for all modes. A DJI Osmo Action 4 requires V30 for 4K 120fps D-Log M. An Insta360 X4 requires V30 for 5.7K 360°. You can use the same V30 card in all three.</p>
+              <p><strong>The catch:</strong> If you use a card in a mode faster than you expect, you may experience dropped frames or file corruption. Always check your camera's manual for the specific speed class requirement per recording mode. When in doubt, use a V60 card for the highest compatibility across all action camera modes.</p>
+              <p><strong>Formatting:</strong> After using an SD card in one camera, format it in the new camera before first use. This ensures the file system is optimized for that camera's specific requirements.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                What is the difference between GoPro Hero 12 and Hero 13?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-4" class="faq-answer">
+              <p><strong>Storage & bitrate:</strong> The Hero 12 and Hero 13 have very similar bitrate requirements. Both shoot 5.3K 60fps at approximately the same ~75Mbps bitrate. The Hero 13 does not require faster SD cards than the Hero 12.</p>
+              <p><strong>Improvements on Hero 13:</strong> Better low-light performance, improved HyperSmooth 6.0 stabilization, and extended battery life (~1.5x longer than Hero 12). These don't affect storage calculations.</p>
+              <p><strong>Storage calculations are identical:</strong> A 256GB card holds the same ~6 hours of 5.3K 60fps footage on both Hero 12 and Hero 13. If you already own Hero 12 SD cards, they work perfectly on the Hero 13.</p>
+              <p><strong>Upgrade recommendation:</strong> The Hero 13 is worth upgrading to for its better performance in low light and stabilization. Not necessary for storage reasons—both cameras use the same V30 SD cards efficiently.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                What speed class do I need for 360° video?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-5" class="faq-answer">
+              <p>360° video recording is more demanding than standard video, so you need faster SD cards to prevent buffer overflow and dropped frames.</p>
+              <p><strong>Insta360 X4:</strong> V30 minimum for 5.7K 30fps 360°. V60 recommended for 360° 60fps or if shooting in full resolution.</p>
+              <p><strong>GoPro Hero Max (360°):</strong> V30 sufficient for 5.6K 360° at standard frame rates.</p>
+              <p><strong>DJI Osmo Action 4 (standard camera, not 360°):</strong> V30 for all modes, including 4K 120fps and D-Log.</p>
+              <p><strong>Rule of thumb:</strong> If the manufacturer recommends V30 for 4K 120fps standard video, use at least V60 for 360° at high frame rates. The doubled bitrate leaves little margin for error with V30 cards. Better to overprovision speed than risk dropped frames on an important adventure.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                How do I compare bitrates between GoPro, Insta360, and DJI Osmo?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-6" class="faq-answer">
+              <p>Different manufacturers compress video differently, so bitrates vary even for similar resolutions and frame rates.</p>
+              <p><strong>GoPro Hero 13:</strong> 5.3K 60fps ≈ 75Mbps. Excellent compression. Storage-efficient.</p>
+              <p><strong>DJI Osmo Action 4:</strong> 4K 120fps ≈ 130Mbps. Higher bitrate due to 10-bit color (D-Log M). Produces higher-quality, more grading-friendly footage at the cost of storage.</p>
+              <p><strong>Insta360 X4:</strong> 5.7K 30fps ≈ 100Mbps (standard), ~200Mbps (360°). 360° bitrate is roughly double standard mode.</p>
+              <p><strong>Comparison:</strong> For 1 hour of 4K 60fps, GoPro uses ~27GB, DJI Osmo uses ~47GB (due to higher bitrate), and Insta360 varies based on 360° mode. Use this calculator to input your specific bitrate and camera for exact numbers.</p>
+              <p><strong>Quality vs storage trade-off:</strong> Higher bitrate (like DJI Osmo's 10-bit D-Log) produces more grading-friendly footage but uses more storage. Choose based on your post-production needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommended Cards Section -->
+      <div class="mb-8 hidden" id="card-recommendations">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Recommended SD Cards for Your Needs</h2>
+        <div id="card-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Populated by JavaScript after calculation -->
+        </div>
+      </div>
+
+      <!-- Related Calculators -->
+      <div class="bg-slate-100 rounded-lg p-8 mb-8">
+        <h3 class="text-xl font-bold text-slate-900 mb-6">Related Calculators</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <a href="/tools/calculators/video-storage/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">🎥 Video Storage Calculator</h4>
+            <p class="text-sm text-slate-600">Calculate 4K, 1080p, and any bitrate</p>
+          </a>
+          <a href="/tools/calculators/photo-storage/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">📷 Photo Storage Calculator</h4>
+            <p class="text-sm text-slate-600">Compare JPEG vs RAW burst capacity</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Schema Markup -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Action Camera Storage Calculator — 4K, 360°, & Beyond",
+          "description": "Calculate storage for action cameras. Plan 360° video, 4K recording, and GoPro, Insta360, DJI Osmo bitrates. Get SD card recommendations.",
+          "url": "https://sdcardchecker.com/tools/calculators/action-camera-storage/",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sdcardchecker.com" },
+              { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://sdcardchecker.com/tools/" },
+              { "@type": "ListItem", "position": 3, "name": "Action Camera Storage Calculator", "item": "https://sdcardchecker.com/tools/calculators/action-camera-storage/" }
+            ]
+          },
+          "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "What is 360° recording and how much extra storage does it use?", "acceptedAnswer": { "@type": "Answer", "text": "360° recording captures video in all directions simultaneously. It roughly doubles bitrate and storage compared to standard video." } },
+              { "@type": "Question", "name": "How much does 4K 120fps cost in storage on action cameras?", "acceptedAnswer": { "@type": "Answer", "text": "4K 120fps uses roughly double the bitrate of 4K 60fps. A 256GB card holding 6 hours of 4K 60fps holds only 3 hours of 4K 120fps." } }
+            ]
+          }
+        }
+      </script>
+    </main>
+
+    {{SIDEBAR}}
+  </div>
+
+  {{FOOTER}}
+  {{GROW_SCRIPT}}
+
+  <style>
+    .faq-item {
+      @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow;
+    }
+
+    .faq-heading {
+      @apply m-0;
+    }
+
+    .faq-question {
+      @apply w-full p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors bg-transparent border-none;
+      min-height: 48px;
+      user-select: none;
+      -webkit-user-select: none;
+      text-align: left;
+    }
+
+    .faq-question:focus {
+      @apply outline-2 outline-offset-2 outline-blue-500;
+    }
+
+    .faq-question:active {
+      background-color: rgba(59, 130, 246, 0.05);
+      transition: background-color 0.1s ease;
+    }
+
+    .faq-toggle {
+      @apply text-slate-400 transition-transform duration-300;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .faq-toggle.open {
+      @apply rotate-180;
+    }
+
+    .faq-answer {
+      @apply px-6 pb-6 text-slate-700 leading-relaxed border-t border-slate-200 hidden;
+    }
+
+    .faq-answer.open {
+      @apply block;
+    }
+  </style>
+
+  <script>
+    // Initialize FAQ accordion on load
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.faq-question');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const answerId = button.getAttribute('aria-controls');
+          const answer = document.getElementById(answerId);
+          const toggle = button.querySelector('.faq-toggle');
+          const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+          // Close all others
+          document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.setAttribute('aria-expanded', 'false');
+          });
+          document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+          document.querySelectorAll('.faq-toggle').forEach(t => t.classList.remove('open'));
+
+          // Toggle current
+          if (!isOpen) {
+            button.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+            toggle.classList.add('open');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drone Recording Time Calculator — Plan Your Flights | SD Card Checker</title>
+  <meta name="description" content="Calculate drone recording time on your SD card. DJI bitrates, speed class recommendations, and card matching for Mavic, Air, Mini, and FPV.">
+  <link rel="canonical" href="https://sdcardchecker.com/tools/calculators/drone-recording/">
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="/assets/js/calculator.js"></script>
+  <script src="/assets/js/card-selector.js"></script>
+  <script src="/assets/js/calculator-ui.js"></script>
+  <script src="/assets/js/calculator-card-recommendations.js"></script>
+  <script src="/assets/js/card-recommendations.js"></script>
+  {{GROW_SCRIPT}}
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/tools/" class="text-blue-600 hover:underline">Tools</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/tools/calculators/" class="text-blue-600 hover:underline">Calculators</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">Drone Recording</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="mb-8">
+        <h1 class="text-4xl font-bold text-slate-900 mb-4">How Long Can You Record on Your Drone?</h1>
+        <h2 class="text-2xl font-semibold text-slate-700 mb-4">Calculate Recording Time, Compare Bitrates & Get Speed Recommendations</h2>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          Running out of storage mid-flight wastes flight time and ruins footage. This calculator helps drone pilots plan flights with confidence by showing exactly how much video fits on your microSD card based on your drone model, resolution, and frame rate.
+        </p>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          Whether you're flying a DJI Mavic 3 in 5.1K, an Air 3S in 4K, or a Mini 4 Pro for casual recording, this tool instantly calculates recording duration, recommends the ideal card capacity, and ensures your speed class matches your drone's requirements. No more guessing—just flight time you can rely on.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">DJI Device Presets</h4>
+              <p class="text-slate-600 text-sm">All recording modes included</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">H.264 & H.265 Comparison</h4>
+              <p class="text-slate-600 text-sm">Codec efficiency differences</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">Speed Class Matching</h4>
+              <p class="text-slate-600 text-sm">V30, V60 recommendations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calculator Widget -->
+      <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
+        <div class="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+          <p class="text-sm text-slate-700"><strong>Quick note:</strong> Bitrate is measured in Mbps (megabits per second). Card speed class (V30, V60) is measured in MB/s (megabytes per second). To convert: 1 MB/s = 8 Mbps.</p>
+        </div>
+        <script>
+          document.addEventListener('alpine:init', () => {
+            Alpine.data('calculatorState', () => {
+              const state = CalculatorUI.init({
+                defaultScenario: 'video',
+                deviceSelectorEnabled: true,
+                deviceCategory: 'drone'
+              });
+              
+              Alpine.nextTick(() => {
+                state.initCardSelector();
+              });
+              
+              return state;
+            });
+          });
+        </script>
+        {% include "../components/calculator-widget.html" %}
+      </div>
+
+      <!-- Why This Matters Section -->
+      <div class="mb-8 bg-blue-50 border-l-4 border-blue-500 rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Why This Matters: Flight Planning Confidence</h2>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          For drone pilots, storage limitations directly impact flight efficiency. Most commercial drones offer limited flight time per battery—typically 20-30 minutes. Filling your card mid-flight wastes that precious flight time and forces you to swap cards or format (risking data loss). A slow card creates buffer bottlenecks that can cause dropped frames, especially at high resolutions or frame rates.
+        </p>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          DJI drones record at varying bitrates depending on resolution and codec. A Mavic 3 shooting 5.1K at 50fps in H.265 uses 200 Mbps—far more data than a Mini 4 Pro's casual 4K 30fps at 60 Mbps. Miscalculating storage means you'll either buy unnecessarily large cards (wasting money) or run out mid-flight (wasting time and footage).
+        </p>
+        <p class="text-slate-700 leading-relaxed">
+          This calculator removes the guesswork. Select your drone model, choose your recording mode, and instantly see how many flights you can capture on your card. Whether you're flying for aerial photography, real estate, inspections, or content creation, you'll know exactly what capacity and speed class you need.
+        </p>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+        
+        <div class="space-y-4">
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                What's the difference between H.264 and H.265 on DJI drones?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-1" class="faq-answer">
+              <p><strong>H.264:</strong> The older, widely-compatible codec. Used on DJI Mini 4 Pro and most older DJI drones. Files are larger but play on any device without conversion. Typical bitrates: 50-150 Mbps depending on resolution and fps.</p>
+              <p><strong>H.265 (HEVC):</strong> Modern codec with 40-50% better compression. Used on Mavic 3, Air 3S, and newer drones. Same visual quality as H.264 but with 40-50% smaller files and lower storage requirements. Typical bitrates: 100-200 Mbps for equivalent quality. Requires H.265-capable editing software (most modern editors support it).</p>
+              <p><strong>For drone pilots:</strong> H.265 on newer DJI models means you can record longer on the same card, or use smaller cards for the same duration. This is especially valuable on drones with limited battery life.</p>
+              <p><strong>Pro tip:</strong> Check your specific DJI model's specs—some offer both H.264 and H.265 recording modes. Use our calculator to compare: H.265 typically saves 30-50% storage versus H.264 at the same resolution.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                What Speed Class do I need for drone recording?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-2" class="faq-answer">
+              <p><strong>For DJI drones recording 4K 30fps or lower:</strong> V30 is generally sufficient. V30 guarantees 30 MB/s sustained write speed, which handles most DJI recording modes. Popular drones like Mini 4 Pro and some Air modes work fine with V30.</p>
+              <p><strong>For DJI drones recording 4K 60fps or higher bitrates:</strong> V60 is recommended. DJI Mavic 3 in 5.1K, Air 3S in 4K 60fps, and other high-bitrate modes require V60 for sustained performance. V60 guarantees 60 MB/s minimum, preventing buffer overflow.</p>
+              <p><strong>For 8K or extreme bitrates:</strong> Check your specific drone's manual. Most consumer DJI drones work with V30-V60, but professional cinema modes may require faster cards. DJI always lists minimum recommended speed class in the specs.</p>
+              <p><strong>Rule of thumb:</strong> Always match or exceed the speed class your drone manual specifies. Using a slower card risks dropped frames, corrupted footage, and mid-flight recording failures—not worth the cost savings.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                How do I check my DJI drone's bitrate?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-3" class="faq-answer">
+              <p><strong>Method 1 (Easiest):</strong> Use our calculator's device dropdown. Select your DJI model (Mavic 3, Air 3S, Mini 4 Pro, etc.) and recording mode. We've pre-loaded all official DJI bitrates for each model and resolution combination.</p>
+              <p><strong>Method 2 (Manual research):</strong> Check DJI.com's official specs for your model. Search "[Drone Model] specifications" and look for "Video Recording Bitrate" or "Video Encoding." DJI lists bitrates for each resolution/fps combination. Example: DJI Mini 4 Pro lists 60 Mbps for 4K 30fps H.264, 100 Mbps for 4K 60fps H.265.</p>
+              <p><strong>Method 3 (Empirical):</strong> Record a test flight at your desired settings, check the resulting file size and duration, then calculate: File Size (MB) × 8 ÷ Duration (minutes) = Bitrate in Mbps. This gives you your drone's actual bitrate with your settings.</p>
+              <p><strong>Pro tip:</strong> DJI's specs are reliable. Most drones stick to published bitrates across firmware versions. Use official specs first, then test to confirm.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                What capacity microSD should I buy for my DJI drone?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-4" class="faq-answer">
+              <p><strong>For casual pilots (1-2 flights per session):</strong> A 128GB microSD card provides 2-4 hours of recording at typical 4K bitrates (100-150 Mbps). This covers most casual flights with room for multiple takes.</p>
+              <p><strong>For commercial/intensive use (all-day shoots):</strong> A 256GB or 512GB card ensures you won't run out mid-project. At 200 Mbps (Mavic 3 5.1K), a 256GB card gives ~3.4 hours of continuous recording—enough for a full day of flights with multiple batteries.</p>
+              <p><strong>Consider overprovision:</strong> Even if your math says 128GB is enough, buying 256GB gives you: (1) safety margin for multiple takes, (2) headroom to avoid performance degradation when nearly full, (3) space for camera firmware/metadata. Many professionals buy 2x their calculated need.</p>
+              <p><strong>Pro tip:</strong> DJI drones max out around 512GB on most models. Check your specific drone's maximum supported capacity—some older models cap at 256GB. Our calculator will show you exactly what duration you get on any capacity you're considering.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                Can I use the same microSD card in multiple DJI drones?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-5" class="faq-answer">
+              <p>Yes, all DJI drones use standard microSD cards, so you can swap cards between your Mavic 3, Air 3S, Mini 4 Pro, Avata, or any other DJI model. A V60 card works in every DJI drone (backward compatible with drones that only require V30).</p>
+              <p><strong>Best practice for professionals:</strong> Use cards rated for your highest-bitrate drone. If you fly both a Mavic 3 (V60 recommended) and Mini 4 Pro (V30 sufficient), equip all cards with V60 or higher. This eliminates card-swapping logistics and ensures every card handles every drone.</p>
+              <p><strong>Formatting:</strong> Always format cards in the drone itself before first use and periodically during intensive shooting. This ensures optimal filesystem compatibility. DJI drones format to exFAT, which is standard across devices.</p>
+              <p><strong>Wear consideration:</strong> MicroSD cards designed for continuous recording (endurance cards) degrade faster with heavy use. If you fly daily or shoot 8+ hours per session, high-endurance microSD cards extend lifespan. Otherwise, standard V60 cards work fine for typical drone use.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                Do I need high-endurance cards for my drone?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-6" class="faq-answer">
+              <p><strong>High-Endurance cards:</strong> Specialized for continuous 24/7 writing (dashcams, surveillance). They have optimized controllers and firmware to handle constant write cycles without degradation. Examples: SanDisk Max Endurance, Samsung Pro Endurance.</p>
+              <p><strong>For typical drone use:</strong> NOT necessary. Drones record in bursts (flight sessions), not continuous 24/7. A standard V60 microSD card (like SanDisk Extreme, Lexar Professional) will outlast most drone use patterns.</p>
+              <p><strong>When endurance cards make sense for drones:</strong> If you're flying continuous footage for cinema/documentary work (8-12 hours per day, multiple days) or running an autonomous aerial monitoring system that records constantly, endurance cards offer extra reliability. For recreational and commercial photography/cinematography, standard high-speed cards are ideal.</p>
+              <p><strong>Cost-benefit:</strong> Endurance cards cost 20-30% more than equivalent standard V60 cards. For typical drone use, invest that money in backup cards instead. Three standard 256GB V60 cards cost less than two endurance cards and provide better redundancy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommended Cards Section -->
+      <div class="mb-8 hidden" id="card-recommendations">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Recommended microSD Cards for Your Drone</h2>
+        <div id="card-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Populated by JavaScript after calculation -->
+        </div>
+      </div>
+
+      <!-- Related Calculators -->
+      <div class="bg-slate-100 rounded-lg p-8 mb-8">
+        <h3 class="text-xl font-bold text-slate-900 mb-6">Related Calculators</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <a href="/tools/calculators/video-storage/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">🎥 Video Storage Calculator</h4>
+            <p class="text-sm text-slate-600">Calculate any bitrate and resolution</p>
+          </a>
+          <a href="/tools/calculators/action-camera-storage/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">📹 Action Camera Storage Calculator</h4>
+            <p class="text-sm text-slate-600">GoPro, Insta360, and more</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Schema Markup -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Drone Recording Time Calculator — Plan Your Flights",
+          "description": "Calculate drone recording time on your SD card. DJI bitrates, speed class recommendations, and card matching.",
+          "url": "https://sdcardchecker.com/tools/calculators/drone-recording/",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sdcardchecker.com" },
+              { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://sdcardchecker.com/tools/" },
+              { "@type": "ListItem", "position": 3, "name": "Drone Recording Calculator", "item": "https://sdcardchecker.com/tools/calculators/drone-recording/" }
+            ]
+          },
+          "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "What's the difference between H.264 and H.265 on DJI drones?", "acceptedAnswer": { "@type": "Answer", "text": "H.264 is older and more compatible. H.265 is modern with 40-50% better compression for smaller files at same quality." } },
+              { "@type": "Question", "name": "What Speed Class do I need for drone recording?", "acceptedAnswer": { "@type": "Answer", "text": "V30 for most drones, V60 for high-bitrate modes like Mavic 3 5.1K." } }
+            ]
+          }
+        }
+      </script>
+    </main>
+
+    {{SIDEBAR}}
+  </div>
+
+  {{FOOTER}}
+  {{GROW_SCRIPT}}
+
+  <style>
+    .faq-item {
+      @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow;
+    }
+
+    .faq-heading {
+      @apply m-0;
+    }
+
+    .faq-question {
+      @apply w-full p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors bg-transparent border-none;
+      min-height: 48px;
+      user-select: none;
+      -webkit-user-select: none;
+      text-align: left;
+    }
+
+    .faq-question:focus {
+      @apply outline-2 outline-offset-2 outline-blue-500;
+    }
+
+    .faq-question:active {
+      background-color: rgba(59, 130, 246, 0.05);
+      transition: background-color 0.1s ease;
+    }
+
+    .faq-toggle {
+      @apply text-slate-400 transition-transform duration-300;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .faq-toggle.open {
+      @apply rotate-180;
+    }
+
+    .faq-answer {
+      @apply px-6 pb-6 text-slate-700 leading-relaxed border-t border-slate-200 hidden;
+    }
+
+    .faq-answer.open {
+      @apply block;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.faq-question');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const answerId = button.getAttribute('aria-controls');
+          const answer = document.getElementById(answerId);
+          const toggle = button.querySelector('.faq-toggle');
+          const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+          document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.setAttribute('aria-expanded', 'false');
+          });
+          document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+          document.querySelectorAll('.faq-toggle').forEach(t => t.classList.remove('open'));
+
+          if (!isOpen) {
+            button.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+            toggle.classList.add('open');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

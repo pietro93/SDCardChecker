@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashcam Storage Calculator — Plan Continuous Recording | SD Card Checker</title>
+  <meta name="description" content="Calculate dashcam storage for continuous loop recording. Understand endurance cards, loop recording duration, and card recommendations.">
+  <link rel="canonical" href="https://sdcardchecker.com/tools/calculators/dashcam-storage/">
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="/assets/js/calculator.js"></script>
+  <script src="/assets/js/card-selector.js"></script>
+  <script src="/assets/js/calculator-ui.js"></script>
+  <script src="/assets/js/calculator-card-recommendations.js"></script>
+  <script src="/assets/js/card-recommendations.js"></script>
+  {{GROW_SCRIPT}}
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/tools/" class="text-blue-600 hover:underline">Tools</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/tools/calculators/" class="text-blue-600 hover:underline">Calculators</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">Dashcam Storage</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="mb-8">
+        <h1 class="text-4xl font-bold text-slate-900 mb-4">How Long Can Your Dashcam Record?</h1>
+        <h2 class="text-2xl font-semibold text-slate-700 mb-4">Plan Continuous Recording Storage & Loop Duration</h2>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          Dashcams provide security and insurance protection—but only if they're recording when incidents happen. Understanding your storage capacity is critical: knowing how long your dashcam records before overwriting old footage ensures you never lose critical evidence of accidents, theft, or traffic violations.
+        </p>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          This calculator helps drivers understand dashcam storage by showing exactly how many days of continuous 24/7 recording your microSD card supports. It factors in loop recording (where old footage automatically overwrites when the card fills), endurance card requirements, and helps you choose the right capacity for your driving habits.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">Loop Recording Mode</h4>
+              <p class="text-slate-600 text-sm">Continuous overwrite capability</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">Endurance Card Recommendations</h4>
+              <p class="text-slate-600 text-sm">24/7 optimized cards</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">Dashcam Device Presets</h4>
+              <p class="text-slate-600 text-sm">Popular dashcam bitrates</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calculator Widget -->
+      <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
+        <div class="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+          <p class="text-sm text-slate-700"><strong>Quick note:</strong> Most dashcams use continuous loop recording: once the card fills, oldest footage overwrites automatically. Endurance cards are optimized for this constant write pattern and last significantly longer than standard cards.</p>
+        </div>
+        <script>
+          document.addEventListener('alpine:init', () => {
+            Alpine.data('calculatorState', () => {
+              const state = CalculatorUI.init({
+                defaultScenario: 'video',
+                deviceSelectorEnabled: true,
+                deviceCategory: 'dashcam'
+              });
+              
+              Alpine.nextTick(() => {
+                state.initCardSelector();
+              });
+              
+              return state;
+            });
+          });
+        </script>
+        {% include "../components/calculator-widget.html" %}
+      </div>
+
+      <!-- Why This Matters Section -->
+      <div class="mb-8 bg-green-50 border-l-4 border-green-500 rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Why This Matters: Evidence When You Need It</h2>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          A dashcam only protects you if it's recording when an incident happens. Many drivers assume their dashcam has "enough" storage without understanding the math: a 128GB card at typical 1080p 30fps bitrate (12 Mbps) gives you roughly 10 days of continuous 24/7 recording. If you leave your car parked overnight and it gets hit, you need that 10 days of buffer to ensure the footage exists when police ask for evidence.
+        </p>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          Dashcams write constantly—24/7 if parking mode is enabled. This brutal write pattern destroys standard SD cards within months, but high-endurance cards are specifically engineered to handle millions of write cycles. Using a standard card in a dashcam is false economy: it fails faster and may corrupt critical footage just when you need it.
+        </p>
+        <p class="text-slate-700 leading-relaxed">
+          This calculator ensures you buy the right card and understand your coverage window. Combined with endurance card recommendations, you'll have reliable evidence capture every time you drive.
+        </p>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+        
+        <div class="space-y-4">
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                What is loop recording and how does it work?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-1" class="faq-answer">
+              <p><strong>Loop Recording:</strong> Continuous circular buffer. Your dashcam records continuously. When the microSD card reaches capacity, the oldest footage automatically overwrites with new footage. This ensures you always have the most recent footage without manual card swaps.</p>
+              <p><strong>How it protects you:</strong> If your 256GB card records for 25 days of continuous 24/7 footage, you always have the last 25 days archived. If an accident happens today, footage from 30 days ago is gone, but today's incident is captured. This rolling buffer is critical for legal protection.</p>
+              <p><strong>Important consideration:</strong> If you have an accident or incident, immediately copy/backup that footage to a computer. Once the loop overwrites past that date, the footage is gone permanently. Many dashcams have "incident protection" that locks footage segments when impact is detected, preventing overwrite.</p>
+              <p><strong>For storage planning:</strong> Our calculator shows loop duration in days. A longer buffer is safer—aim for at least 14 days (covers two weeks of "emergency backup window") if possible. Most drivers are comfortable with 7-14 days.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                What's an endurance card and why do I need one for dashcams?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-2" class="faq-answer">
+              <p><strong>High-Endurance Cards:</strong> Specialized for constant write operations. Examples: SanDisk Max Endurance, Samsung PRO Endurance. These cards have firmware optimizations and wear-leveling algorithms specifically designed for 24/7 recording.</p>
+              <p><strong>Why standard cards fail:</strong> Standard microSD cards are rated for intermittent use (photography, casual video). They have limited write cycle budgets. Dashcam loop recording taxes this budget aggressively. A standard 256GB card might fail in 1-2 years of continuous operation. Endurance cards are engineered for 5+ years of 24/7 use.</p>
+              <p><strong>The math:</strong> Standard card might handle 10 million write cycles. Continuous dashcam recording cycles through data constantly, exhausting budget quickly. Endurance cards handle 100+ million write cycles, explicitly rated for dashcam/surveillance workloads.</p>
+              <p><strong>Cost consideration:</strong> Endurance cards cost 20-30% more, but last 5x longer. Over a 5-year car ownership, it's cheaper than replacing failed cards every year or two. Plus, a failed card mid-incident loses critical evidence.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                How many days of recording does a 256GB card provide?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-3" class="faq-answer">
+              <p><strong>For typical 1080p dashcam (12 Mbps / 1.5 MB/s):</strong> ~25 days of continuous 24/7 recording. This gives you a rolling 25-day archive.</p>
+              <p><strong>For 2K dashcam (20 Mbps / 2.5 MB/s):</strong> ~15 days of continuous recording.</p>
+              <p><strong>For 4K dashcam (40 Mbps / 5 MB/s):</strong> ~7-8 days of continuous recording.</p>
+              <p><strong>Practical meaning:</strong> 256GB is the "sweet spot" for most dashcam users. 25 days gives a solid buffer (covers a full month of weekday driving plus weekends). If an accident happens, there's plenty of footage history to capture context leading up to the incident.</p>
+              <p><strong>Tip:</strong> Our calculator shows exact duration for your dashcam model and bitrate. Input your dashcam's specifications to get precise numbers.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                Should I buy 128GB or 256GB for my dashcam?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-4" class="faq-answer">
+              <p><strong>128GB (smaller vehicles, budget option):</strong> ~12 days of continuous 1080p recording. Good for daily commutes; covers a work week plus a few days. May be risky if you park for extended periods and want longer historical buffer.</p>
+              <p><strong>256GB (recommended for most drivers):</strong> ~25 days of continuous 1080p recording. Covers a full month effectively. Safest balance of cost and protection. Our standard recommendation.</p>
+              <p><strong>512GB (extended buffer or 4K recording):</strong> ~50 days for 1080p or 14+ days for 4K. Ideal if you want maximum protection, 4K quality, or rarely delete footage. Higher capacity = longer evidence window if incident investigation is delayed.</p>
+              <p><strong>Our recommendation:</strong> Buy 256GB endurance card. It's the sweet spot: affordable, provides robust 25-day buffer, and excellent longevity. If your budget allows and you want peace of mind, upgrade to 512GB.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                Will my dashcam card overheat if it's recording 24/7?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-5" class="faq-answer">
+              <p><strong>Short answer:</strong> Unlikely, but heat is a concern for parking mode (24/7 recording with car parked).</p>
+              <p><strong>Normal driving (intermittent recording):</strong> Dashcam records while car is running/moving. Microchip is cool, card operates at normal temperatures (25-40°C). No thermal issues. Card lifespan unaffected.</p>
+              <p><strong>Parking mode (24/7, even when parked):</strong> Camera and card stay powered continuously. In hot climates, car interior can exceed 60°C (140°F) on hot days. Extended heat degrades microSD cards and shortens lifespan. Endurance cards have better thermal resistance than standard cards.</p>
+              <p><strong>If you use parking mode:</strong> (1) Use endurance cards rated for high temperatures. (2) Ensure dashcam has proper ventilation/cooling. (3) Consider parking in shade when possible. (4) Some dashcams let you reduce bitrate in parking mode to lower heat.</p>
+              <p><strong>For normal commute-only recording:</strong> Heat is not a practical concern. Standard or endurance cards both work fine.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                How do I protect crucial dashcam footage if the card overwrites it?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-6" class="faq-answer">
+              <p><strong>Incident Protection (built-in):</strong> Most modern dashcams have "incident detection" or "impact detection." When the camera detects sudden acceleration, deceleration, or impact, it locks that footage segment, preventing overwrites. Locked footage stays protected even when the loop continues. Check your dashcam's manual for this feature.</p>
+              <p><strong>Manual Backup:</strong> If you witness an incident or suspect your dashcam captured important footage, immediately power off the dashcam, remove the card, and back up footage to a computer. Don't wait—the loop may overwrite before you remember. Keep the card removed until the incident is resolved.</p>
+              <p><strong>Cloud Backup (if supported):</strong> Some newer dashcams offer WiFi cloud upload. Footage automatically uploads to cloud storage. This gives you off-device backup. Review your dashcam model's cloud capabilities.</p>
+              <p><strong>Multi-Card Rotation (professional setup):</strong> Use multiple cards and rotate them manually or with the camera's quick-swap design. When one card is full, swap to a fresh card and back up the full one. Overkill for casual drivers, but common in commercial fleets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommended Cards Section -->
+      <div class="mb-8 hidden" id="card-recommendations">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Recommended Endurance Cards for Dashcam</h2>
+        <div id="card-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Populated by JavaScript after calculation -->
+        </div>
+      </div>
+
+      <!-- Related Calculators -->
+      <div class="bg-slate-100 rounded-lg p-8 mb-8">
+        <h3 class="text-xl font-bold text-slate-900 mb-6">Related Calculators</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <a href="/tools/calculators/video-storage/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">🎥 Video Storage Calculator</h4>
+            <p class="text-sm text-slate-600">Calculate any bitrate and resolution</p>
+          </a>
+          <a href="/tools/calculators/surveillance-recording/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">📹 Surveillance Recording Calculator</h4>
+            <p class="text-sm text-slate-600">24/7 continuous recording planning</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Schema Markup -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Dashcam Storage Calculator — Plan Continuous Recording",
+          "description": "Calculate dashcam storage for continuous loop recording. Endurance cards, loop duration, and recommendations.",
+          "url": "https://sdcardchecker.com/tools/calculators/dashcam-storage/",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sdcardchecker.com" },
+              { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://sdcardchecker.com/tools/" },
+              { "@type": "ListItem", "position": 3, "name": "Dashcam Storage Calculator", "item": "https://sdcardchecker.com/tools/calculators/dashcam-storage/" }
+            ]
+          },
+          "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "What is loop recording?", "acceptedAnswer": { "@type": "Answer", "text": "Continuous circular buffer where oldest footage overwrites with new footage when card fills." } },
+              { "@type": "Question", "name": "Do I need an endurance card for dashcam?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, endurance cards last 5x longer for continuous 24/7 writing vs standard cards." } }
+            ]
+          }
+        }
+      </script>
+    </main>
+
+    {{SIDEBAR}}
+  </div>
+
+  {{FOOTER}}
+  {{GROW_SCRIPT}}
+
+  <style>
+    .faq-item {
+      @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow;
+    }
+
+    .faq-heading {
+      @apply m-0;
+    }
+
+    .faq-question {
+      @apply w-full p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors bg-transparent border-none;
+      min-height: 48px;
+      user-select: none;
+      -webkit-user-select: none;
+      text-align: left;
+    }
+
+    .faq-question:focus {
+      @apply outline-2 outline-offset-2 outline-blue-500;
+    }
+
+    .faq-question:active {
+      background-color: rgba(59, 130, 246, 0.05);
+      transition: background-color 0.1s ease;
+    }
+
+    .faq-toggle {
+      @apply text-slate-400 transition-transform duration-300;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .faq-toggle.open {
+      @apply rotate-180;
+    }
+
+    .faq-answer {
+      @apply px-6 pb-6 text-slate-700 leading-relaxed border-t border-slate-200 hidden;
+    }
+
+    .faq-answer.open {
+      @apply block;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.faq-question');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const answerId = button.getAttribute('aria-controls');
+          const answer = document.getElementById(answerId);
+          const toggle = button.querySelector('.faq-toggle');
+          const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+          document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.setAttribute('aria-expanded', 'false');
+          });
+          document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+          document.querySelectorAll('.faq-toggle').forEach(t => t.classList.remove('open'));
+
+          if (!isOpen) {
+            button.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+            toggle.classList.add('open');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
