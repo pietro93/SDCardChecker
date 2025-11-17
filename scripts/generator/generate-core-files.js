@@ -23,6 +23,65 @@ function generateSitemap(allDevices, distPath) {
   </url>
 `;
 
+  // Add calculator pages
+  const calculators = [
+    { path: "/tools/calculators/video-storage/", priority: 0.9 },
+    { path: "/tools/calculators/photo-storage/", priority: 0.9 },
+    { path: "/tools/calculators/drone-storage/", priority: 0.9 },
+    { path: "/tools/calculators/security-camera-storage/", priority: 0.9 },
+    { path: "/tools/calculators/dashcam-storage/", priority: 0.9 },
+    { path: "/tools/calculators/action-camera-storage/", priority: 0.9 },
+    { path: "/tools/calculators/gopro-storage/", priority: 0.9 },
+    { path: "/tools/calculators/timelapse-storage/", priority: 0.9 }
+  ];
+
+  calculators.forEach((calc) => {
+    sitemapXML += `  <url>
+    <loc>https://sdcardchecker.com${calc.path}</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>${calc.priority}</priority>
+  </url>
+`;
+  });
+
+  // Add resource pages
+  const resources = [
+    { path: "/sd-card-guide.html", priority: 0.8 },
+    { path: "/speed-classes.html", priority: 0.8 },
+    { path: "/faq.html", priority: 0.8 }
+  ];
+
+  resources.forEach((resource) => {
+    sitemapXML += `  <url>
+    <loc>https://sdcardchecker.com${resource.path}</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>${resource.priority}</priority>
+  </url>
+`;
+  });
+
+  // Add legal and info pages
+  const infoPages = [
+    { path: "/about.html", priority: 0.7 },
+    { path: "/contact.html", priority: 0.7 },
+    { path: "/privacy.html", priority: 0.5 },
+    { path: "/terms.html", priority: 0.5 },
+    { path: "/affiliate-disclosure.html", priority: 0.5 },
+    { path: "/sitemap.html", priority: 0.6 }
+  ];
+
+  infoPages.forEach((page) => {
+    sitemapXML += `  <url>
+    <loc>https://sdcardchecker.com${page.path}</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>${page.priority}</priority>
+  </url>
+`;
+  });
+
   // Add device pages
   allDevices.forEach((device) => {
     const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
@@ -40,7 +99,7 @@ function generateSitemap(allDevices, distPath) {
   categories.forEach((category) => {
     const slug = category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
     sitemapXML += `  <url>
-     <loc>https://sdcardchecker.com/categories/${slug}/</loc>
+    <loc>https://sdcardchecker.com/categories/${slug}/</loc>
     <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
