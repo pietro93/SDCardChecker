@@ -104,14 +104,20 @@
   - ✅ Q6: Overprovision recommendations (expanded, ~150 words)
   - Schema: FAQPage (JSON-LD) ✅
 
+  - ✅ **Navigation Integration** (COMPLETE)
+      - ✅ Added "Tools" dropdown to navbar (desktop & mobile)
+      - ✅ Added "Tools" section to sidebar
+      - ✅ Video & Photo calculator links in navbar, mobile menu, sidebar
+      - ✅ Updated components.js with navigation markup
+
   - [ ] **Card Recommendations in Results** (REPLACING broken "Find Matching Cards" link)
-   - [ ] Display 3-5 matching cards directly in results (no page navigation)
-   - [ ] Each card shows: brand, model, capacity, speed class, write speed, affiliate links
-   - [ ] Include card images (with fallback placeholder if missing)
-   - [ ] Show Amazon, B&H, other affiliate links (similar to device HTML pages)
-   - [ ] "See all matching cards" link below recommendations (filters by speed class)
-   - [ ] Mobile-responsive grid layout (1-2 cards per row on mobile)
-   - [ ] Use existing CardRecommendations utility but render inline instead of linking away
+      - [ ] Display 3-5 matching cards directly in results (no page navigation)
+      - [ ] Each card shows: brand, model, capacity, speed class, write speed, affiliate links
+      - [ ] Include card images (with fallback placeholder if missing)
+      - [ ] Show Amazon, B&H, other affiliate links (similar to device HTML pages)
+      - [ ] "See all matching cards" link below recommendations (filters by speed class)
+      - [ ] Mobile-responsive grid layout (1-2 cards per row on mobile)
+      - [ ] Use existing CardRecommendations utility but render inline instead of linking away
 
 - [ ] **Related Resources Section** (TODO)
   - [ ] Link to "SD Card Speed Class Guide" (need to create page)
@@ -347,6 +353,7 @@
 - [ ] FAQ accordion works (single-open, smooth collapse)
 
 **SEO & Linking:**
+- ✅ Navigation integration: Tools dropdown & sidebar links
 - [ ] Contextual internal links added to FAQ answers (V30 → Speed Class Guide, etc.)
 - [ ] Related Resources section with links to guide pages
 - [ ] All links tested (no 404s)
@@ -1005,11 +1012,16 @@ Post-Launch:
 
 ## 📝 UPDATE LOG
 
-**Nov 17, 2025 - SEO Content & Visual Assets Planning**
+**Nov 17, 2025 - Navigation Integration & Phase 0 Polish**
+- ✅ Integrated calculator tools into main navigation
+   - Added "Tools" dropdown to navbar (desktop & mobile views)
+   - Added "Tools" section to sidebar
+   - Video & Photo Calculator links now discoverable from all pages
+   - Updated components.js with complete navigation markup
 - ✅ Updated both calculator HTML templates (photo, video)
-  - Expanded hero sections with benefit-focused H1/H2 (~250 words)
-  - Added "Why This Matters" sections (3–4 paragraphs each)
-  - Expanded all 6 FAQ answers to 100-150+ words with examples, specs, and actionable advice
+   - Expanded hero sections with benefit-focused H1/H2 (~250 words)
+   - Added "Why This Matters" sections (3–4 paragraphs each)
+   - Expanded all 6 FAQ answers to 100-150+ words with examples, specs, and actionable advice
 - 📋 Planned 3 related guide pages (Speed Class, Video Bitrate, RAW vs JPEG)
 - 📋 Planned visual assets (hero images, icons, card recommendation images)
 - 📋 Planned contextual internal links within FAQ answers
@@ -1017,4 +1029,4 @@ Post-Launch:
 ---
 
 **Last Updated:** Nov 17, 2025  
-**Next Review:** After Phase 0 launch (Week 1 completion)
+**Next Review:** After Phase 0 functional testing (card recommendations, SEO schema validation)
