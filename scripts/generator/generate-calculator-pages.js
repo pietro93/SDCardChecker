@@ -4,7 +4,7 @@
  */
 
 const path = require("path");
-const { readTemplate, writeFile } = require("./helpers");
+const { readTemplate, processIncludes, writeFile } = require("./helpers");
 const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 
 const srcPath = path.join(__dirname, "../../src");
@@ -18,16 +18,8 @@ function generateCalculatorPage(templatePath, distPath, outputPath) {
     // Remove YAML frontmatter (---...---)
     template = template.replace(/^---[\s\S]*?---\n/m, '');
 
-    // Process includes: {% include "path/to/component.html" %}
-    template = template.replace(/{% include "([^"]+)" %}/g, (match, componentPath) => {
-        const fullComponentPath = path.join(srcPath, componentPath);
-        try {
-            return readTemplate(fullComponentPath);
-        } catch (error) {
-            console.warn(`  ⚠ Warning: Could not include ${componentPath}: ${error.message}`);
-            return match; // Return original if include fails
-        }
-    });
+    // Process {% include %} tags
+    template = processIncludes(template, path.dirname(templatePath));
 
     // Replace placeholders
     let html = template

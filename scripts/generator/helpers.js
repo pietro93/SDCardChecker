@@ -30,6 +30,34 @@ function readTemplate(filePath) {
 }
 
 /**
+ * Process {% include %} tags in template content
+ * Recursively resolves includes relative to the template directory
+ */
+function processIncludes(content, templateDir) {
+  const includeRegex = /\{%\s*include\s+['"]([^'"]+)['"]\s*%\}/g;
+  
+  let result = content;
+  let match;
+  
+  while ((match = includeRegex.exec(content)) !== null) {
+    const includePath = match[1];
+    const fullPath = path.join(templateDir, includePath);
+    
+    try {
+      const includeContent = fs.readFileSync(fullPath, "utf8");
+      // Recursively process includes in the included file
+      const processedInclude = processIncludes(includeContent, path.dirname(fullPath));
+      result = result.replace(match[0], processedInclude);
+    } catch (err) {
+      console.warn(`  ⚠️  Include file not found: ${includePath} (${fullPath})`);
+      result = result.replace(match[0], `<!-- Include not found: ${includePath} -->`);
+    }
+  }
+  
+  return result;
+}
+
+/**
  * Write file to disk
  */
 function writeFile(filePath, content) {
@@ -437,6 +465,7 @@ module.exports = {
   ensureDir,
   readJSON,
   readTemplate,
+  processIncludes,
   writeFile,
   copyDir,
   generateFAQSchema,

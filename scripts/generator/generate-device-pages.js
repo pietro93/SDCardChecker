@@ -4,7 +4,7 @@
 
 const path = require("path");
 const fs = require("fs");
-const { readTemplate, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices } = require("./helpers");
+const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices } = require("./helpers");
 const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 const { generateFAQs, mergeFAQs } = require("./generateFAQs");
 
@@ -263,9 +263,12 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
 async function generateDevicePages(allDevices, distPath) {
     console.log("📄 Generating device pages...");
 
-    const deviceTemplate = readTemplate(
+    let deviceTemplate = readTemplate(
         path.join(srcPath, "templates/device.html")
     );
+    // Process {% include %} tags
+    deviceTemplate = processIncludes(deviceTemplate, path.join(srcPath, "templates"));
+    
     const sdcardsMap = loadSDCardData();
 
     let successCount = 0;

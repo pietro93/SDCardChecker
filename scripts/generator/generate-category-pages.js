@@ -4,7 +4,7 @@
 
 const path = require("path");
 const fs = require("fs");
-const { readTemplate, writeFile, generateBreadcrumbSchema, getDeviceImageFallback } = require("./helpers");
+const { readTemplate, processIncludes, writeFile, generateBreadcrumbSchema, getDeviceImageFallback } = require("./helpers");
 const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 
 const srcPath = path.join(__dirname, "../../src");
@@ -118,9 +118,11 @@ const categoryIntro = getCategoryIntro(category);
 async function generateCategoryPages(allDevices, distPath) {
     console.log("📂 Generating category pages...");
 
-    const categoryTemplate = readTemplate(
+    let categoryTemplate = readTemplate(
         path.join(srcPath, "templates/category.html")
     );
+    // Process {% include %} tags
+    categoryTemplate = processIncludes(categoryTemplate, path.join(srcPath, "templates"));
 
     // Group devices by category
     const grouped = {};

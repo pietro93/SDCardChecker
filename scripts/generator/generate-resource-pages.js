@@ -4,7 +4,7 @@
  */
 
 const path = require("path");
-const { readTemplate, writeFile } = require("./helpers");
+const { readTemplate, processIncludes, writeFile } = require("./helpers");
 const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 
 const srcPath = path.join(__dirname, "../../src");
@@ -14,6 +14,9 @@ const srcPath = path.join(__dirname, "../../src");
  */
 function generateResourcePage(templatePath, distPath, fileName) {
     let template = readTemplate(templatePath);
+
+    // Process {% include %} tags
+    template = processIncludes(template, path.dirname(templatePath));
 
     // Replace placeholders
     let html = template
