@@ -18,6 +18,17 @@ function generateCalculatorPage(templatePath, distPath, outputPath) {
     // Remove YAML frontmatter (---...---)
     template = template.replace(/^---[\s\S]*?---\n/m, '');
 
+    // Process includes: {% include "path/to/component.html" %}
+    template = template.replace(/{% include "([^"]+)" %}/g, (match, componentPath) => {
+        const fullComponentPath = path.join(srcPath, componentPath);
+        try {
+            return readTemplate(fullComponentPath);
+        } catch (error) {
+            console.warn(`  ⚠ Warning: Could not include ${componentPath}: ${error.message}`);
+            return match; // Return original if include fails
+        }
+    });
+
     // Replace placeholders
     let html = template
         .replace(/{{SIDEBAR}}/g, generateSidebar())
