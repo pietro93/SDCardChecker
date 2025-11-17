@@ -74,7 +74,8 @@ const sidebar = generateSidebar();
 const growScript = generateGrowScript();
 
 // Generate Privacy Policy
-const privacyTemplate = readTemplate(path.join(srcPath, "templates/privacy.html"));
+let privacyTemplate = readTemplate(path.join(srcPath, "templates/privacy.html"));
+privacyTemplate = processIncludes(privacyTemplate, path.join(srcPath, "templates"));
 const privacyHtml = privacyTemplate
 .replace("{{HEADER}}", header)
 .replace("{{FOOTER}}", footer)
@@ -83,7 +84,8 @@ const privacyHtml = privacyTemplate
 writeFile(path.join(distPath, "privacy.html"), privacyHtml);
 
 // Generate Terms of Use
-const termsTemplate = readTemplate(path.join(srcPath, "templates/terms.html"));
+let termsTemplate = readTemplate(path.join(srcPath, "templates/terms.html"));
+termsTemplate = processIncludes(termsTemplate, path.join(srcPath, "templates"));
 const termsHtml = termsTemplate
 .replace("{{HEADER}}", header)
 .replace("{{FOOTER}}", footer)
@@ -92,7 +94,8 @@ const termsHtml = termsTemplate
 writeFile(path.join(distPath, "terms.html"), termsHtml);
 
 // Generate Affiliate Disclosure
-const affiliateTemplate = readTemplate(path.join(srcPath, "templates/affiliate-disclosure.html"));
+let affiliateTemplate = readTemplate(path.join(srcPath, "templates/affiliate-disclosure.html"));
+affiliateTemplate = processIncludes(affiliateTemplate, path.join(srcPath, "templates"));
 const affiliateHtml = affiliateTemplate
 .replace("{{HEADER}}", header)
 .replace("{{FOOTER}}", footer)
@@ -101,7 +104,8 @@ const affiliateHtml = affiliateTemplate
 writeFile(path.join(distPath, "affiliate-disclosure.html"), affiliateHtml);
 
 // Generate About Page
-const aboutTemplate = readTemplate(path.join(srcPath, "templates/about.html"));
+let aboutTemplate = readTemplate(path.join(srcPath, "templates/about.html"));
+aboutTemplate = processIncludes(aboutTemplate, path.join(srcPath, "templates"));
 const aboutHtml = aboutTemplate
   .replace("{{HEADER}}", header)
   .replace("{{FOOTER}}", footer)
@@ -110,7 +114,8 @@ const aboutHtml = aboutTemplate
 writeFile(path.join(distPath, "about.html"), aboutHtml);
 
 // Generate Contact Page
-const contactTemplate = readTemplate(path.join(srcPath, "templates/contact.html"));
+let contactTemplate = readTemplate(path.join(srcPath, "templates/contact.html"));
+contactTemplate = processIncludes(contactTemplate, path.join(srcPath, "templates"));
 const contactHtml = contactTemplate
   .replace("{{HEADER}}", header)
   .replace("{{FOOTER}}", footer)
@@ -119,7 +124,8 @@ const contactHtml = contactTemplate
 writeFile(path.join(distPath, "contact.html"), contactHtml);
 
 // Generate Sitemap Page
-const sitemapTemplate = readTemplate(path.join(srcPath, "templates/sitemap.html"));
+let sitemapTemplate = readTemplate(path.join(srcPath, "templates/sitemap.html"));
+sitemapTemplate = processIncludes(sitemapTemplate, path.join(srcPath, "templates"));
 const sitemapHtml = sitemapTemplate
   .replace("{{HEADER}}", header)
   .replace("{{FOOTER}}", footer)
@@ -135,7 +141,8 @@ function generateHomepage(distPath) {
 const header = generateHeader();
 const footer = generateFooter();
 const growScript = generateGrowScript();
-   const homeTemplate = readTemplate(path.join(srcPath, "templates/home.html"));
+   let homeTemplate = readTemplate(path.join(srcPath, "templates/home.html"));
+   homeTemplate = processIncludes(homeTemplate, path.join(srcPath, "templates"));
    const homeHtml = homeTemplate
      .replace("{{HEADER}}", header)
      .replace("{{FOOTER}}", footer)
