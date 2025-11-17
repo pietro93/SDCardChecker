@@ -36,11 +36,21 @@ async function copyAssets() {
   }
 
   // Copy devices.json for client-side search
-  const deviceJsonSrc = path.join(srcPath, "../data/devices.json");
-  const deviceJsonDest = path.join(distPath, "data/devices.json");
-  ensureDir(path.dirname(deviceJsonDest));
-  fs.copyFileSync(deviceJsonSrc, deviceJsonDest);
-  console.log(`  ✓ data/devices.json`);
+   const deviceJsonSrc = path.join(srcPath, "../data/devices.json");
+   const deviceJsonDest = path.join(distPath, "data/devices.json");
+   ensureDir(path.dirname(deviceJsonDest));
+   fs.copyFileSync(deviceJsonSrc, deviceJsonDest);
+   console.log(`  ✓ data/devices.json`);
+
+   // Copy sdcards.json for calculator widget
+   const sdcardsJsonSrc = path.join(srcPath, "../data/sdcards.json");
+   const sdcardsJsonDest = path.join(distPath, "data/sdcards.json");
+   if (fs.existsSync(sdcardsJsonSrc)) {
+     fs.copyFileSync(sdcardsJsonSrc, sdcardsJsonDest);
+     console.log(`  ✓ data/sdcards.json`);
+   } else {
+     console.warn(`  ⚠️  sdcards.json not found at ${sdcardsJsonSrc}`);
+   }
 
   // Copy images folder
   const imgPath = path.join(srcPath, "../img");

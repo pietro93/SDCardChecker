@@ -404,15 +404,15 @@
                         <h3 class="text-xl font-bold mb-2">Your Card Duration:</h3>
 
                         <!-- Photo Result -->
-                        <div x-show="activeScenario === 'photo'">
-                            <div class="text-4xl font-bold mb-3">
-                                <span x-text="`${result.photoCount.toLocaleString()}`"></span>
-                                <span class="text-lg ml-2">Photos</span>
-                            </div>
-                            <p class="text-emerald-50">
-                                On your <span x-text="`${reverse.cardCapacityGB}GB`"></span> card
-                            </p>
-                        </div>
+                         <div x-show="activeScenario === 'photo'">
+                             <div class="text-4xl font-bold mb-3">
+                                 <span x-text="`${(result.photoCount || 0).toLocaleString()}`"></span>
+                                 <span class="text-lg ml-2">Photos</span>
+                             </div>
+                             <p class="text-emerald-50">
+                                 On your <span x-text="`${reverse.cardCapacityGB}GB`"></span> card
+                             </p>
+                         </div>
 
                         <!-- Video/Continuous Result -->
                         <div x-show="activeScenario !== 'photo'">

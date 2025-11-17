@@ -463,30 +463,34 @@ class CalculatorUI {
               * Uses CalculatorCardRecommendations for inline display
               * @private
               */
-            async _loadAndDisplayCardRecommendations() {
-                if (typeof CalculatorCardRecommendations === 'undefined') {
-                    console.warn('CalculatorCardRecommendations module not loaded');
-                    return;
-                }
+             async _loadAndDisplayCardRecommendations() {
+               if (typeof CalculatorCardRecommendations === 'undefined') {
+                 console.warn('[CalculatorUI] CalculatorCardRecommendations module not loaded');
+                 return;
+               }
 
-                try {
-                    const speedClass = this.result.speedClass;
+               try {
+                 const speedClass = this.result.speedClass;
+                 
+                 // Wait for DOM to be ready (recommendations div should be rendered)
+                 // Use a small delay to ensure Alpine has finished rendering
+                 await new Promise(resolve => setTimeout(resolve, 100));
+                 
+                 // Display recommendations in the results section
+                 await CalculatorCardRecommendations.displayRecommendations(
+                   speedClass,
+                   'calculator-recommendations'
+                 );
 
-                    // Display recommendations in the results section
-                    await CalculatorCardRecommendations.displayRecommendations(
-                        speedClass,
-                        'calculator-recommendations'
-                    );
-
-                    // Track event
-                    this._trackEvent('calculator_recommendations_shown', {
-                        speedClass: speedClass,
-                        scenario: this.activeScenario
-                    });
-                } catch (error) {
-                    console.error('Failed to load card recommendations:', error);
-                }
-            },
+                 // Track event
+                 this._trackEvent('calculator_recommendations_shown', {
+                   speedClass: speedClass,
+                   scenario: this.activeScenario
+                 });
+               } catch (error) {
+                 console.error('[CalculatorUI] Failed to load card recommendations:', error);
+               }
+             },
 
             /**
              * Load all cards for selector (on component init or reverse layer load)
