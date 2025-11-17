@@ -92,12 +92,18 @@ class CalculatorUI {
                 selectedDeviceData: null
             },
 
-            // Card Selector (for reverse mode)
+            // Card Selector (for reverse mode - validator pattern)
             cardSelectorSearch: '',
             cardSelectorOpen: false,
             allCards: [],
             filteredCards: [],
             selectedCard: null,
+            cardValidation: {
+                isValid: null, // null = not checked, true = compatible, false = not compatible
+                message: '',
+                requiredSpeedClass: null,
+                cardSpeedClass: null
+            },
 
             // Calculation Results
             result: null,
@@ -107,6 +113,7 @@ class CalculatorUI {
             // UI State
             advancedExpanded: false,
             speedClassExpanded: false,
+            formatComparisonExpanded: false,
 
             // UI Helpers
             readonly: {
@@ -276,13 +283,14 @@ class CalculatorUI {
             },
 
             /**
-             * Build input object for forward calculation
-             * @private
-             */
+              * Build input object for forward calculation
+              * @private
+              */
             _buildForwardInput() {
                 const base = {
                     scenario: this.activeScenario,
-                    overheadPercent: this.forward.overheadPercent
+                    overheadPercent: this.forward.overheadPercent,
+                    compareFormats: this.forward.compareFormats
                 };
 
                 switch (this.activeScenario) {
@@ -547,48 +555,89 @@ class CalculatorUI {
             },
 
             /**
-              * Select a card and auto-fill calculator fields
+              * Select a card and show compatibility validation
+              * Changed from "auto-fill bitrate" to "validate card against calculated needs"
               */
             selectCard(card) {
-                if (typeof CardSelector === 'undefined') {
-                    console.warn('CardSelector module not loaded');
+               if (typeof CardSelector === 'undefined') {
+                   console.warn('CardSelector module not loaded');
+                   return;
+               }
+
+               const specs = CardSelector.getCardSpecs(card);
+               this.selectedCard = specs;
+
+               // Auto-fill card capacity if available (for reverse photo mode)
+               if (specs.capacityGB) {
+                   const capacityGB = parseInt(specs.capacityGB.toString().replace(/[^\d]/g, ''));
+                   if (!isNaN(capacityGB) && capacityGB > 0) {
+                       this.reverse.cardCapacityGB = capacityGB;
+                   }
+               }
+
+               // Update search display to show selected card name
+               this.cardSelectorSearch = specs.name;
+
+               // Close dropdown after selection
+               this.cardSelectorOpen = false;
+
+               // Generate validation message
+               this._generateCardValidationMessage();
+
+               // Track event
+               this._trackEvent('calculator_card_selected', {
+                   cardId: specs.id,
+                   speedClass: specs.speedClass,
+                   scenario: this.activeScenario,
+                   capacity: specs.capacityGB
+               });
+
+               console.log('✓ Card selected for validation:', specs);
+            },
+
+            /**
+             * Generate card compatibility validation message
+             * Compares selected card speed class against calculated requirements
+             * @private
+             */
+            _generateCardValidationMessage() {
+                if (!this.selectedCard) {
+                    this.cardValidation = { isValid: null, message: '', requiredSpeedClass: null, cardSpeedClass: null };
                     return;
                 }
 
-                const specs = CardSelector.getCardSpecs(card);
-                this.selectedCard = specs;
-
-                // Auto-fill card capacity (always available)
-                if (specs.capacity) {
-                    // Parse capacity (might be "128GB" or just "128")
-                    const capacityGB = parseInt(specs.capacity.toString().replace(/[^\d]/g, ''));
-                    if (!isNaN(capacityGB) && capacityGB > 0) {
-                        this.reverse.cardCapacityGB = capacityGB;
-                    }
+                // Get the required speed class from the current calculation (forward mode)
+                // If not calculated yet, skip validation
+                if (!this.result || !this.result.speedClass) {
+                    this.cardValidation = {
+                        isValid: null,
+                        message: '⚠️ Please calculate your storage needs first to validate card compatibility',
+                        requiredSpeedClass: null,
+                        cardSpeedClass: this.selectedCard.speedClass
+                    };
+                    return;
                 }
 
-                // Auto-fill reverse calculator fields
-                if (this.activeScenario === 'photo') {
-                    // For photo, capacity is already set above
-                } else {
-                    // For video/continuous, set bitrate to estimated value
-                    this.reverse.video.bitrateMbps = specs.estimatedBitrateMbps;
-                }
+                const requiredClass = this.result.speedClass;
+                const selectedClass = this.selectedCard.speedClass;
+                const speedClassOrder = { 'V6': 1, 'V30': 2, 'V60': 3, 'V90': 4 };
 
-                // Update search display to show selected card name
-                this.cardSelectorSearch = specs.name;
+                // Extract numeric part for comparison (handles V30, V60, V90, V90+ etc)
+                const requiredRank = speedClassOrder[requiredClass] || 0;
+                const selectedRank = speedClassOrder[selectedClass.split('+')[0]] || 0;
 
-                // Close dropdown after selection
-                this.cardSelectorOpen = false;
+                const isCompatible = selectedRank >= requiredRank;
 
-                // Track event
-                this._trackEvent('calculator_card_selected', {
-                    cardId: specs.id,
-                    speedClass: specs.speedClass,
-                    scenario: this.activeScenario
-                });
+                this.cardValidation = {
+                    isValid: isCompatible,
+                    message: isCompatible
+                        ? `✅ Your ${this.selectedCard.name} (${selectedClass}) meets the recommended speed for ${requiredClass}`
+                        : `⚠️ Your ${this.selectedCard.name} (${selectedClass}) may not meet the recommended speed (${requiredClass}) for this bitrate. You may experience dropped frames.`,
+                    requiredSpeedClass: requiredClass,
+                    cardSpeedClass: selectedClass
+                };
 
-                console.log('✓ Card selected:', specs);
+                console.log('[Card Validation]', this.cardValidation);
             }
         };
     }

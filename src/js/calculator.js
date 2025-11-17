@@ -168,13 +168,16 @@ class StorageCalculator {
   /**
    * Get speed class based on bitrate
    * @private
-   * @param {number} bitrateMbps
+   * @param {number} bitrateMbps - Bitrate in Megabits per second
    * @returns {string} Speed class (V6, V30, V60, V90)
    */
   static _getSpeedClass(bitrateMbps) {
-    if (bitrateMbps <= 6) return 'V6';
-    if (bitrateMbps <= 90) return 'V30';
-    if (bitrateMbps <= 200) return 'V60';
+    // Convert Mbps to MB/s (divide by 8)
+    const requiredMBps = bitrateMbps / 8;
+
+    if (requiredMBps <= 6) return 'V6';
+    if (requiredMBps <= 30) return 'V30';
+    if (requiredMBps <= 60) return 'V60';
     return 'V90';
   }
 
@@ -209,7 +212,7 @@ class StorageCalculator {
    * @returns {Object} Complete calculation result
    */
   static calculateForward(input) {
-    const { scenario, bitrateMbps, durationHours, photoCount, fileSizeMB, shootingStyle, hoursPerDay, daysNeeded, overheadPercent = 10 } = input;
+    const { scenario, bitrateMbps, durationHours, photoCount, fileSizeMB, shootingStyle, hoursPerDay, daysNeeded, overheadPercent = 10, compareFormats = false } = input;
 
     let calc;
 
@@ -228,13 +231,20 @@ class StorageCalculator {
     }
 
     const recommendedCapacity = this.getRecommendedCapacity(calc.totalGB);
-
-    return {
+    
+    let result = {
       scenario,
       ...calc,
       recommendedCapacity,
       speedClassTable: this._buildSpeedClassTable()
     };
+
+    // Add format comparison if requested (video/continuous only)
+    if (compareFormats && (scenario === 'video' || scenario === 'continuous')) {
+      result.formatComparison = this._buildFormatComparison(bitrateMbps, durationHours, overheadPercent);
+    }
+
+    return result;
   }
 
   /**
@@ -269,15 +279,60 @@ class StorageCalculator {
 
   /**
    * Build speed class reference table
+   * Bitrate ranges are in Mbps and converted to required MB/s for accuracy
    * @private
    * @returns {Array}
    */
   static _buildSpeedClassTable() {
     return [
-      { bitrateMbps: '≤ 6', speedClass: 'V6', writeSpeed: '6MB/s', useCase: 'Full HD, time-lapse' },
-      { bitrateMbps: '6–90', speedClass: 'V30', writeSpeed: '30MB/s', useCase: '4K, high-bitrate video' },
-      { bitrateMbps: '90–200', speedClass: 'V60', writeSpeed: '60MB/s', useCase: '4K 60fps, professional' },
-      { bitrateMbps: '200+', speedClass: 'V90', writeSpeed: '90MB/s', useCase: '8K, RAW video, streaming' }
+      { bitrateMbps: '≤ 48 Mbps', speedClass: 'V6', writeSpeed: '6 MB/s', useCase: 'HD video, time-lapse' },
+      { bitrateMbps: '49–240 Mbps', speedClass: 'V30', writeSpeed: '30 MB/s', useCase: '4K video, general use' },
+      { bitrateMbps: '241–480 Mbps', speedClass: 'V60', writeSpeed: '60 MB/s', useCase: 'High-framerate 4K, 8K' },
+      { bitrateMbps: '481+ Mbps', speedClass: 'V90', writeSpeed: '90 MB/s', useCase: 'RAW video, professional cinema' }
+    ];
+  }
+
+  /**
+   * Build format comparison table (H.264 vs H.265 vs ProRes)
+   * @private
+   * @param {number} bitrateMbps - Original bitrate in Mbps
+   * @param {number} durationHours - Recording duration in hours
+   * @param {number} overheadPercent - Overhead percentage
+   * @returns {Array} Format comparison rows
+   */
+  static _buildFormatComparison(bitrateMbps, durationHours, overheadPercent = 10) {
+    // H.264: baseline (100%)
+    // H.265: typically 40-50% smaller (use 45% for average)
+    // ProRes: typically 3-4x larger (use 3.5x for average)
+    
+    const h264 = this.calculateVideoStorage(bitrateMbps, durationHours, overheadPercent);
+    const h265Bitrate = bitrateMbps * 0.55; // 45% reduction
+    const h265 = this.calculateVideoStorage(h265Bitrate, durationHours, overheadPercent);
+    const proroesBitrate = bitrateMbps * 3.5;
+    const prores = this.calculateVideoStorage(proroesBitrate, durationHours, overheadPercent);
+
+    return [
+      {
+        codec: 'H.264 (AVC)',
+        bitrateMbps: this._round(bitrateMbps, 1),
+        totalGB: h264.totalGB,
+        speedClass: h264.speedClass,
+        notes: 'Your current selection'
+      },
+      {
+        codec: 'H.265 (HEVC)',
+        bitrateMbps: this._round(h265Bitrate, 1),
+        totalGB: h265.totalGB,
+        speedClass: h265.speedClass,
+        notes: '~45% smaller files'
+      },
+      {
+        codec: 'ProRes 422',
+        bitrateMbps: this._round(proroesBitrate, 1),
+        totalGB: prores.totalGB,
+        speedClass: prores.speedClass,
+        notes: '~3.5x larger (professional)'
+      }
     ];
   }
 

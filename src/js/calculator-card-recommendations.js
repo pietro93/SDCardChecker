@@ -220,22 +220,10 @@ class CalculatorCardRecommendations {
         </div>
 
         <!-- Cards Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          ${cardHTML}
+         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+           ${cardHTML}
+         </div>
         </div>
-
-        <!-- View All Link -->
-        <div class="text-center pt-2">
-          <a 
-            href="/sd-card-guide/" 
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-blue-600 hover:text-blue-800 text-sm font-medium"
-          >
-            Learn more about SD cards →
-          </a>
-        </div>
-      </div>
     `;
     }
 
