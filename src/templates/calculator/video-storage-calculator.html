@@ -279,6 +279,42 @@
   {{GROW_SCRIPT}}
 
   <style>
+    /* Hero Image with Overlay Title */
+    .hero-image-container {
+      position: relative;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+    }
+
+    .hero-title-wrapper {
+      text-align: center;
+    }
+
+    .hero-title {
+      @apply text-3xl md:text-4xl font-bold text-center px-4;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.5);
+      filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+      @apply text-lg md:text-xl font-semibold text-center px-4;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.5);
+      filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+    }
+
     .faq-item {
       @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow;
     }
@@ -322,6 +358,36 @@
       @apply block;
     }
   </style>
+
+  <script>
+    // Initialize FAQ accordion on load
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.faq-question');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const answerId = button.getAttribute('aria-controls');
+          const answer = document.getElementById(answerId);
+          const toggle = button.querySelector('.faq-toggle');
+          const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+          // Close all others
+          document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.setAttribute('aria-expanded', 'false');
+          });
+          document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+          document.querySelectorAll('.faq-toggle').forEach(t => t.classList.remove('open'));
+
+          // Toggle current
+          if (!isOpen) {
+            button.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+            toggle.classList.add('open');
+          }
+        });
+      });
+    });
+  </script>
 
   <script>
     // Initialize FAQ accordion on load
