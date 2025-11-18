@@ -1038,7 +1038,7 @@
       "id": "bmpcc-4k",
       "name": "Blackmagic Pocket Cinema Camera 4K",
       "category": "Cameras",
-      "slug": "bmpcc-4k",
+      "slug": "blackmagic-pocket-cinema-camera-4k",
       "imageUrl": "/img/devices/cameras/blackmagic-pocket-cinema-camera-4k.webp",
       "searchTerms": [
         "bmpcc 4k card",
@@ -1059,6 +1059,12 @@
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-cfast-2.0"
+        },
+        {
+          "id": "sony-tough-g-v90"
+        },
+        {
+          "id": "kingston-canvas-react-sd"
         }
       ],
       "faq": [
@@ -1071,7 +1077,7 @@
         "canon-eos-r5",
         "sony-a7-iv"
       ],
-      "notes": "A staple for indie filmmakers with very specific card requirements. Your sdcards.json has no V90 SD cards, so only the CFast 2.0 option is recommended."
+      "notes": "A staple for indie filmmakers with very specific card requirements. Both CFast 2.0 and V90 SD card options are now recommended for maximum flexibility."
     },
     {
       "id": "viofo-a229-duo",
@@ -1216,7 +1222,7 @@
       "id": "bmpcc-6k-pro",
       "name": "Blackmagic Pocket Cinema Camera 6K Pro",
       "category": "Cameras",
-      "slug": "bmpcc-6k-pro",
+      "slug": "blackmagic-pocket-cinema-camera-6k-pro",
       "imageUrl": "/img/devices/cameras/blackmagic-pocket-cinema-camera-6k-pro.webp",
       "searchTerms": [
         "bmpcc 6k pro card",
@@ -1237,6 +1243,12 @@
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-cfast-2.0"
+        },
+        {
+          "id": "sony-tough-g-v90"
+        },
+        {
+          "id": "kingston-canvas-react-sd"
         }
       ],
       "faq": [
@@ -1250,7 +1262,7 @@
         "canon-eos-r5",
         "nikon-z8"
       ],
-      "notes": "Professional-grade 6K cinema camera. Your sdcards.json does not contain any V90 SD cards, so only the compliant CFast 2.0 card is recommended."
+      "notes": "Professional-grade 6K cinema camera. Both CFast 2.0 and V90 SD card options are now recommended for maximum flexibility."
     },
     {
       "id": "nikon-z8",
