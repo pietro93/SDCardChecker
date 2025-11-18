@@ -269,18 +269,17 @@ function getDeviceImageFallback(device) {
 function getCardImageFallback(card) {
   const cardPath = path.join(__dirname, "../../img/cards");
   
-  // If card has imageUrl, check if file exists
-  if (card.imageUrl) {
-    const imagePath = path.join(__dirname, "../../img/cards", card.imageUrl.replace("/img/cards/", ""));
-    if (fs.existsSync(imagePath)) {
-      return card.imageUrl;
-    }
-  }
-  
   // Helper function to check if image file exists
   function imageExists(imagePath) {
     const fullPath = path.join(__dirname, "../../img/cards", imagePath.replace("/img/cards/", ""));
     return fs.existsSync(fullPath);
+  }
+  
+  // If card has imageUrl, check if file exists
+  if (card.imageUrl) {
+    if (imageExists(card.imageUrl)) {
+      return card.imageUrl;
+    }
   }
   
   // Brand-specific image matching (maps brand/series to actual image files)
