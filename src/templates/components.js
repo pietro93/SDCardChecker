@@ -79,7 +79,8 @@ return `<!-- Favicon -->
        <a href="/guides/sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SD Card Guide</a>
        <a href="/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Speed Classes</a>
        <a href="/guides/video-bitrate-comparison/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Video Bitrate Guide</a>
-       <a href="/guides/raw-vs-jpeg/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">RAW vs JPEG</a>
+       <a href="/guides/raw-vs-jpeg/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">RAW vs JPEG</a>
+       <a href="/guides/is-my-sd-card-fake/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Fake SD Card Checker</a>
        </div>
        </div>
       </div>
@@ -139,6 +140,7 @@ return `<!-- Favicon -->
         <a href="/guides/sd-card-speed-classes/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Speed Classes</a>
         <a href="/guides/video-bitrate-comparison/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Video Bitrate Guide</a>
         <a href="/guides/raw-vs-jpeg/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">RAW vs JPEG</a>
+        <a href="/guides/is-my-sd-card-fake/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Fake SD Card Checker</a>
       </div>
       
       <!-- Direct Links -->
@@ -302,6 +304,7 @@ function generateSidebar() {
       <li><a href="/guides/sd-card-speed-classes/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Speed Classes</a></li>
       <li><a href="/guides/video-bitrate-comparison/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Video Bitrate Guide</a></li>
       <li><a href="/guides/raw-vs-jpeg/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">RAW vs JPEG</a></li>
+      <li><a href="/guides/is-my-sd-card-fake/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Fake SD Card Checker</a></li>
     </ul>
   </div>
 
