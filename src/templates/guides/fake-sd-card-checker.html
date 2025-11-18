@@ -3,35 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fake SD Card Checker: Spot Counterfeits in 2 Minutes | SD Card Checker</title>
-  <meta name="description" content="Is your SD card fake? Use our interactive checker to spot counterfeits. Learn what to look for: packaging, price, printing quality, and how to test with software.">
+  <title>Fake SD Card Checker: How to Spot a Counterfeit in 2 Minutes | SD Card Checker</title>
+  <meta name="description" content="Is your SD card fake? Our interactive checker gives you a risk assessment in minutes. Learn the definitive signs of counterfeit cards and how to test with software.">
   <link rel="canonical" href="{{BASE_URL}}/guides/is-my-sd-card-fake/">
   
+  <!-- Open Graph & Twitter -->
   <meta property="og:type" content="article">
   <meta property="og:title" content="Fake SD Card Checker: Spot Counterfeits Fast">
-  <meta property="og:description" content="Interactive tool to check if your SD card is counterfeit. Get results in minutes.">
+  <meta property="og:description" content="Use our interactive tool to check if your SD card is counterfeit. Don't risk your data.">
   <meta property="og:image" content="{{BASE_URL}}/img/guides/fake-sd-card-checker-hero.webp">
   <meta property="og:url" content="{{BASE_URL}}/guides/is-my-sd-card-fake/">
   <meta property="og:site_name" content="SD Card Checker">
-
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Fake SD Card Checker">
-  <meta name="twitter:description" content="Spot a counterfeit SD card in 2 minutes.">
+  <meta name="twitter:title" content="Is My SD Card Fake? Test It In 2 Minutes.">
+  <meta name="twitter:description" content="Use our free diagnostic tool to check if your SD card is counterfeit before you lose data.">
   <meta name="twitter:image" content="{{BASE_URL}}/img/guides/fake-sd-card-checker-hero.webp">
 
+  <!-- Schema.org HowTo -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Fake SD Card Checker: How to Spot a Counterfeit",
-    "description": "Interactive tool and guide to identify counterfeit SD cards and protect your data.",
-    "url": "{{BASE_URL}}/guides/is-my-sd-card-fake/",
-    "author": {"@type": "Organization", "name": "SD Card Checker"},
-    "publisher": {"@type": "Organization", "name": "SD Card Checker"},
-    "image": "{{BASE_URL}}/img/guides/fake-sd-card-checker-hero.webp"
+    "@type": "HowTo",
+    "name": "How to Check if an SD Card is Fake",
+    "description": "A step-by-step guide to identify counterfeit SD cards using visual inspection and software tests to protect your data from being lost.",
+    "totalTime": "PT15M",
+    "step": [
+      { "@type": "HowToStep", "name": "Step 1: Evaluate the Purchase", "text": "Analyze where you bought the card and how much you paid. Unofficial sellers and suspiciously low prices are major red flags.", "url": "{{BASE_URL}}/guides/is-my-sd-card-fake/#step-guide-1" },
+      { "@type": "HowToStep", "name": "Step 2: Inspect the Packaging", "text": "Examine the retail packaging for signs of poor quality, such as blurry text, spelling errors, or missing security seals.", "url": "{{BASE_URL}}/guides/is-my-sd-card-fake/#step-guide-2" },
+      { "@type": "HowToStep", "name": "Step 3: Inspect the SD Card", "text": "Look at the physical card for misaligned labels, incorrect fonts, and poor print quality. Genuine cards have crisp, laser-etched text.", "url": "{{BASE_URL}}/guides/is-my-sd-card-fake/#step-guide-3" },
+      { "@type": "HowToStep", "name": "Step 4: Perform a Software Test", "text": "Use trusted software like H2testw (Windows) or F3 (macOS) to write to the entire card and verify its true capacity and speed. This is the only definitive test.", "url": "{{BASE_URL}}/guides/is-my-sd-card-fake/#software-test" }
+    ]
   }
   </script>
 
+  <!-- Schema.org FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Can Amazon sell fake SD cards?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, specifically from third-party sellers on the Amazon Marketplace. Items 'Shipped and Sold by Amazon' are almost always genuine. If the seller is an unknown entity, the risk is significantly higher." }},
+      {"@type": "Question", "name": "What happens if I use a fake SD card?", "acceptedAnswer": { "@type": "Answer", "text": "A fake card lies about its storage capacity. For example, a fake 512GB card may only have 32GB of real space. Once you save more than 32GB of data, the card will start overwriting your oldest files, leading to permanent data loss without any warning." }},
+      {"@type": "Question", "name": "Is there a SanDisk or Samsung authenticator app?", "acceptedAnswer": { "@type": "Answer", "text": "No, major brands like SanDisk and Samsung do not offer official authenticator apps for their SD cards. Any app claiming to do this is unofficial and should not be trusted. The only reliable verification method is a full capacity test with software like H2testw or F3." }},
+      {"@type": "Question", "name": "Can I recover files from a fake SD card?", "acceptedAnswer": { "@type": "Answer", "text": "Recovery is unlikely for overwritten data. If you have files on the card that haven't been overwritten yet, you should immediately back them up to a computer. After that, you can attempt to use recovery software like PhotoRec, but any data written beyond the card's true capacity is typically lost forever." }},
+      {"@type": "Question", "name": "How long does a capacity test take?", "acceptedAnswer": { "@type": "Answer", "text": "The test duration depends on the card's (claimed) capacity and your card reader's speed. A 64GB card can take over an hour, while a 256GB card can take several hours. It is a long process, but it is the only way to be 100% certain." }}
+    ]
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -67,8 +87,8 @@
   <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
     <main class="flex-1">
       <section class="mb-12">
-        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Fake SD Card Checker</h1>
-        <p class="text-xl text-slate-700">Think your SD card is counterfeit? Get a diagnosis in 2 minutes. Don't risk your data.</p>
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Fake SD Card Diagnostic</h1>
+        <p class="text-xl text-slate-700">Think your SD card is a fake? Get a risk assessment in 2 minutes before you lose data.</p>
       </section>
 
       {{AFFILIATE_DISCLOSURE}}
@@ -79,23 +99,23 @@
           
           <!-- STEP 1 -->
           <div id="step-1" class="wizard-step">
-            <h2 class="text-2xl font-bold text-slate-900 mb-2">Step 1 of 4: Where did you buy the card?</h2>
-            <p class="text-slate-600 mb-6">Purchase source is the #1 indicator of counterfeits.</p>
-            <div class="space-y-3">
-              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition">
-                <input type="radio" name="source" value="official" class="mr-3"> Official Brand Store (SanDisk.com, Samsung.com, etc.)
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">Step 1: The Source</h2>
+            <p class="text-slate-600 mb-6">Where the card came from is the #1 indicator of authenticity.</p>
+            <div class="space-y-3 wizard-options">
+              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="source" value="official" class="mr-3"> Official Brand or Major Retailer (SanDisk.com, Best Buy, B&H)
               </label>
-              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition">
-                <input type="radio" name="source" value="major-retailer" class="mr-3"> Major Retailer (Best Buy, Walmart, B&H Photo)
+              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="source" value="amazon-official" class="mr-3"> Amazon (Shipped & Sold directly by Amazon)
               </label>
-              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition">
-                <input type="radio" name="source" value="amazon-official" class="mr-3"> Amazon (Shipped & Sold by Amazon)
+              <label class="block border border-amber-300 bg-amber-50 p-4 rounded-lg hover:bg-amber-100 cursor-pointer transition has-[:checked]:bg-amber-100 has-[:checked]:border-amber-400">
+                <input type="radio" name="source" value="amazon-3rd" class="mr-3"> Amazon Marketplace (A third-party seller)
               </label>
-              <label class="block border border-red-300 bg-red-50 p-4 rounded-lg hover:bg-red-100 cursor-pointer transition">
-                <input type="radio" name="source" value="amazon-3rd" class="mr-3"> Amazon Marketplace (3rd-party seller)
+              <label class="block border border-red-300 bg-red-50 p-4 rounded-lg hover:bg-red-100 cursor-pointer transition has-[:checked]:bg-red-100 has-[:checked]:border-red-400">
+                <input type="radio" name="source" value="ebay-wish" class="mr-3"> eBay, AliExpress, Wish, Temu, or similar marketplace
               </label>
-              <label class="block border border-red-300 bg-red-50 p-4 rounded-lg hover:bg-red-100 cursor-pointer transition">
-                <input type="radio" name="source" value="ebay-wish" class="mr-3"> eBay, AliExpress, Wish, or similar
+              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="source" value="other" class="mr-3"> Other / Not Sure
               </label>
             </div>
             <div class="flex justify-end gap-3 mt-8">
@@ -105,14 +125,17 @@
 
           <!-- STEP 2 -->
           <div id="step-2" class="wizard-step" style="display: none;">
-            <h2 class="text-2xl font-bold text-slate-900 mb-2">Step 2 of 4: Was the price suspiciously low?</h2>
-            <p class="text-slate-600 mb-6">Compare to the official price. If it's 30-40% cheaper, that's a red flag.</p>
-            <div class="space-y-3">
-              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition">
-                <input type="radio" name="price" value="normal" class="mr-3"> No, the price was normal
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">Step 2: The Price</h2>
+            <p class="text-slate-600 mb-6">Authentic high-capacity cards are never 50-80% off. Compare to the price on the brand's official site.</p>
+            <div class="space-y-3 wizard-options">
+              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="price" value="normal" class="mr-3"> It was full price or on a minor sale (10-20% off).
               </label>
-              <label class="block border border-red-300 bg-red-50 p-4 rounded-lg hover:bg-red-100 cursor-pointer transition">
-                <input type="radio" name="price" value="cheap" class="mr-3"> Yes, it was significantly cheaper
+              <label class="block border border-red-300 bg-red-50 p-4 rounded-lg hover:bg-red-100 cursor-pointer transition has-[:checked]:bg-red-100 has-[:checked]:border-red-400">
+                <input type="radio" name="price" value="cheap" class="mr-3"> It was suspiciously cheap (30% off or more).
+              </label>
+              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="price" value="not-sure" class="mr-3"> I'm not sure.
               </label>
             </div>
             <div class="flex justify-between gap-3 mt-8">
@@ -123,30 +146,17 @@
 
           <!-- STEP 3 -->
           <div id="step-3" class="wizard-step" style="display: none;">
-            <h2 class="text-2xl font-bold text-slate-900 mb-2">Step 3 of 4: Inspect the packaging</h2>
-            <p class="text-slate-600 mb-6">Is the packaging professional and well-made?</p>
-            <div class="grid md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <h4 class="font-bold text-red-700 mb-3">Red Flags:</h4>
-                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-700">
-                  <li>Blurry or fuzzy text</li>
-                  <li>Spelling mistakes</li>
-                  <li>Colors seem "off"</li>
-                  <li>Missing hologram/security seal</li>
-                  <li>Flimsy or cheap plastic</li>
-                </ul>
-              </div>
-              <div class="bg-slate-100 p-4 rounded-lg text-center">
-                <img src="/img/guides/fake-sd-packaging-example.webp" alt="Fake SD card packaging example" class="w-full h-auto rounded">
-                <p class="text-xs text-slate-600 mt-2">Example of poor counterfeit packaging</p>
-              </div>
-            </div>
-            <div class="space-y-3">
-              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition">
-                <input type="radio" name="packaging" value="good" class="mr-3"> Everything looks professional
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">Step 3: The Packaging</h2>
+            <p class="text-slate-600 mb-6">Legitimate brands invest in high-quality, secure packaging. Counterfeits are often cheap and full of errors.</p>
+            <div class="space-y-3 wizard-options">
+              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="packaging" value="good" class="mr-3"> Looks professional: Crisp printing, no errors, proper seals.
               </label>
-              <label class="block border border-red-300 bg-red-50 p-4 rounded-lg hover:bg-red-100 cursor-pointer transition">
-                <input type="radio" name="packaging" value="bad" class="mr-3"> I see red flags
+              <label class="block border border-red-300 bg-red-50 p-4 rounded-lg hover:bg-red-100 cursor-pointer transition has-[:checked]:bg-red-100 has-[:checked]:border-red-400">
+                <input type="radio" name="packaging" value="bad" class="mr-3"> Looks suspicious: Blurry text, spelling errors, or flimsy plastic.
+              </label>
+               <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="packaging" value="not-sure" class="mr-3"> I don't have the packaging / I'm not sure.
               </label>
             </div>
             <div class="flex justify-between gap-3 mt-8">
@@ -154,116 +164,120 @@
               <button class="wizard-next-btn bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">Next &rarr;</button>
             </div>
           </div>
-
+          
           <!-- STEP 4 -->
           <div id="step-4" class="wizard-step" style="display: none;">
-            <h2 class="text-2xl font-bold text-slate-900 mb-2">Step 4 of 4: Inspect the card itself</h2>
-            <p class="text-slate-600 mb-6">Look closely at the printing on the physical card.</p>
-            <div class="grid md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <h4 class="font-bold text-red-700 mb-3">Red Flags:</h4>
-                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-700">
-                  <li>Misaligned or off-center label</li>
-                  <li>Blurry or smeared text</li>
-                  <li>Wrong font or color</li>
-                  <li>Text looks painted, not etched</li>
-                  <li>Rough or uneven edges</li>
-                </ul>
-              </div>
-              <div class="bg-slate-100 p-4 rounded-lg text-center">
-                <img src="/img/guides/fake-sd-card-example.webp" alt="Fake micro SD card example" class="w-full h-auto rounded">
-                <p class="text-xs text-slate-600 mt-2">Example of poor card printing</p>
-              </div>
-            </div>
-            <div class="space-y-3">
-              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition">
-                <input type="radio" name="card" value="good" class="mr-3"> The card looks genuine
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">Step 4: The Card Itself</h2>
+            <p class="text-slate-600 mb-6">Examine the print quality on the physical card. The difference is often obvious up close.</p>
+            <div class="space-y-3 wizard-options">
+              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="card" value="good" class="mr-3"> Looks genuine: Centered label, sharp text, smooth edges.
               </label>
-              <label class="block border border-red-300 bg-red-50 p-4 rounded-lg hover:bg-red-100 cursor-pointer transition">
-                <input type="radio" name="card" value="bad" class="mr-3"> The printing looks suspicious
+              <label class="block border border-red-300 bg-red-50 p-4 rounded-lg hover:bg-red-100 cursor-pointer transition has-[:checked]:bg-red-100 has-[:checked]:border-red-400">
+                <input type="radio" name="card" value="bad" class="mr-3"> Looks suspicious: Misaligned text, blurry font, or wrong color.
+              </label>
+               <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="card" value="not-sure" class="mr-3"> I can't tell the difference.
               </label>
             </div>
             <div class="flex justify-between gap-3 mt-8">
               <button class="wizard-back-btn bg-slate-200 text-slate-800 px-6 py-3 rounded-lg font-medium hover:bg-slate-300 transition">&larr; Back</button>
-              <button id="see-results-btn" class="bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition">See Results</button>
+              <button id="see-results-btn" class="bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition">Get My Assessment</button>
             </div>
           </div>
 
           <!-- RESULTS -->
-          <div id="results" style="display: none;">
-            <h2 class="text-2xl font-bold text-slate-900 mb-6">Your Assessment:</h2>
-            
-            <!-- LOW RISK -->
-            <div id="result-low" class="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg mb-4" style="display: none;">
-              <h3 class="text-2xl font-bold text-green-800 mb-3 flex items-center gap-2"><i class="fas fa-check-circle"></i> Low Risk</h3>
-              <p class="text-green-900">Your card is likely <strong>genuine</strong>. You bought from a reputable source and there are no visual red flags.</p>
-              <p class="text-green-800 text-sm mt-3">Still want to verify? <a href="#software-test" class="font-bold underline">See how to test with software →</a></p>
+          <div id="results" class="wizard-step" style="display: none;">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Your Risk Assessment:</h2>
+            <div id="result-low" class="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg" style="display: none;">
+              <h3 class="text-2xl font-bold text-green-800 mb-3 flex items-center gap-2"><i class="fas fa-check-circle"></i> Low Risk of Being Fake</h3>
+              <p class="text-green-900 leading-relaxed">Based on your answers, your card is likely <strong>genuine</strong>. You've avoided the common red flags. To be 100% certain, you can still perform a software test.</p>
             </div>
-
-            <!-- MEDIUM RISK -->
-            <div id="result-medium" class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg mb-4" style="display: none;">
-              <h3 class="text-2xl font-bold text-amber-800 mb-3 flex items-center gap-2"><i class="fas fa-exclamation-triangle"></i> Medium Risk</h3>
-              <p class="text-amber-900 mb-3">There are some potential red flags. We recommend you <strong>perform a software test</strong> to verify the card's true capacity.</p>
-              <a href="#software-test" class="font-bold text-amber-800 hover:underline text-lg">Learn how to test your card →</a>
+            <div id="result-medium" class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg" style="display: none;">
+              <h3 class="text-2xl font-bold text-amber-800 mb-3 flex items-center gap-2"><i class="fas fa-exclamation-triangle"></i> Medium Risk of Being Fake</h3>
+              <p class="text-amber-900 leading-relaxed mb-4">Your card shows one or more potential signs of being counterfeit. You should not trust it with important data until you <strong>perform a full software test</strong> to verify its true capacity.</p>
+              <a href="#software-test" class="font-bold text-amber-800 hover:underline">Learn How to Test Your Card Now &rarr;</a>
             </div>
-
-            <!-- HIGH RISK -->
-            <div id="result-high" class="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg mb-4" style="display: none;">
-              <h3 class="text-2xl font-bold text-red-800 mb-3 flex items-center gap-2"><i class="fas fa-times-circle"></i> High Risk</h3>
-              <p class="text-red-900 mb-3"><strong>Your card has multiple signs of being counterfeit.</strong> Stop using it immediately to avoid data loss.</p>
-              <p class="text-red-900 mb-3">We strongly recommend you:</p>
-              <ol class="list-decimal pl-5 space-y-1 text-red-900 mb-3">
-                <li><a href="#software-test" class="font-bold underline">Test the card with software</a> to confirm</li>
-                <li>Contact the seller for a refund</li>
-                <li>Report the seller to the platform</li>
-                <li>Buy from an official retailer</li>
+            <div id="result-high" class="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg" style="display: none;">
+              <h3 class="text-2xl font-bold text-red-800 mb-3 flex items-center gap-2"><i class="fas fa-times-circle"></i> High Risk of Being Fake</h3>
+              <p class="text-red-900 leading-relaxed mb-3">Your card has multiple, strong indicators of being counterfeit. <strong>Stop using it immediately to prevent data loss.</strong></p>
+              <p class="text-red-900 font-bold">Recommended Actions:</p>
+              <ol class="list-decimal pl-5 space-y-2 text-red-800 leading-relaxed mt-2">
+                <li>Immediately back up any data you can access.</li>
+                <li>Contact the seller and demand a refund. Report them to the platform (Amazon, eBay, etc.).</li>
+                <li><a href="#software-test" class="font-bold underline">Perform a software test</a> to gather definitive proof for your refund claim.</li>
               </ol>
             </div>
-
-            <button id="restart-btn" class="mt-6 bg-slate-200 text-slate-800 px-6 py-3 rounded-lg font-medium hover:bg-slate-300 transition">Start Over</button>
+            <button id="restart-btn" class="mt-8 bg-slate-200 text-slate-800 px-6 py-3 rounded-lg font-medium hover:bg-slate-300 transition"><i class="fas fa-redo mr-2"></i>Start Over</button>
           </div>
         </div>
       </section>
 
+      <!-- CTA BLOCK -->
+      <section class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg p-8 mb-12 text-white text-center">
+        <h2 class="text-2xl font-bold mb-3">The Only 100% Guarantee: Buy Genuine</h2>
+        <p class="max-w-2xl mx-auto mb-6">Counterfeits are everywhere. The safest strategy is to buy directly from authorized retailers you trust.</p>
+        <a href="/guides/best-sd-cards/" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-transform hover:scale-105">Shop Recommended & Vetted SD Cards &rarr;</a>
+      </section>
+
       <!-- FULL TEXT GUIDE -->
       <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
-        <h2 class="text-2xl font-bold text-slate-900 mb-6">Complete Guide: How to Spot a Fake SD Card</h2>
+        <h2 class="text-2xl font-bold text-slate-900 mb-2">Complete Guide: How to Spot a Fake SD Card</h2>
+        <p class="text-slate-600 mb-8">A counterfeit SD card is a data time bomb. It reports a fake capacity to your device, and once you pass its true limit, it begins silently overwriting your oldest files. Here is the definitive, 4-step process to identify a fake.</p>
         
-        <div class="space-y-8 text-slate-700 leading-relaxed">
-          <p>Counterfeit SD cards are programmed to lie about their capacity. A fake 256GB card might only have 16GB. Once you exceed the real limit, new files overwrite old ones. Data loss is permanent.</p>
-
-          <div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3 pb-2 border-b">1. Source & Price Are Everything</h3>
-            <p>Brands do not sell flagship cards at 80% off. If you bought from a marketplace seller at a suspiciously low price, the risk is extremely high.</p>
+        <div class="space-y-10 text-slate-700 leading-relaxed">
+          <div id="step-guide-1">
+            <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-3"><span class="flex items-center justify-center h-8 w-8 rounded-full bg-blue-100 text-blue-600 font-bold">1</span> Evaluate the Source and Price</h3>
+            <p class="mb-3">This is your first line of defense. Legitimate brands control their distribution channels tightly. If a deal seems too good to be true, it is. A brand new 512GB SanDisk Extreme Pro card will never sell for \$15 on a third-party marketplace.</p>
+            <ul class="list-disc pl-5 space-y-2 text-sm">
+                <li><strong>Safe Sources:</strong> The brand's official website (e.g., SanDisk.com), major electronics retailers (Best Buy, B&H Photo), or items listed as "Shipped and Sold by Amazon."</li>
+                <li><strong>Risky Sources:</strong> Third-party sellers on Amazon, eBay, AliExpress, Wish, and Temu. While some are legitimate, these platforms are flooded with fakes. Check seller ratings and history, but remain skeptical.</li>
+            </ul>
           </div>
 
-          <div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3 pb-2 border-b">2. Packaging Quality Matters</h3>
-            <p>Official manufacturers spend serious money on packaging. Counterfeits cut corners. Look for blurry logos, spelling errors, missing holograms, or flimsy plastic.</p>
+          <div id="step-guide-2">
+            <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-3"><span class="flex items-center justify-center h-8 w-8 rounded-full bg-blue-100 text-blue-600 font-bold">2</span> Scrutinize the Packaging</h3>
+            <p class="mb-3">Manufacturers of genuine cards invest heavily in packaging as a security feature. Counterfeiters do not. Hold the package in your hand and look for these common flaws:</p>
+             <ul class="list-disc pl-5 space-y-2 text-sm">
+                <li><strong>Print Quality:</strong> Genuine packaging has razor-sharp text and graphics. Fakes often have blurry, pixelated, or slightly "off" colors due to cheap printing methods.</li>
+                <li><strong>Errors:</strong> Look for spelling mistakes, awkward grammar, or incorrect brand logos.</li>
+                <li><strong>Security Seals:</strong> Most brands include a holographic security sticker. Check that it's present and appears legitimate. Tilt it in the light to see if it reflects correctly.</li>
+                <li><strong>Build Quality:</strong> The cardboard should be sturdy and the plastic shell should be perfectly formed and sealed. Fakes often use flimsy materials.</li>
+            </ul>
           </div>
 
-          <div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3 pb-2 border-b">3. Check the Card's Printing</h3>
-            <p>Genuine cards have laser-etched text that is perfectly centered and sharp. Fakes have misaligned, fuzzy, or painted-on text. The plastic edges should be smooth, not rough.</p>
+          <div id="step-guide-3">
+            <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-3"><span class="flex items-center justify-center h-8 w-8 rounded-full bg-blue-100 text-blue-600 font-bold">3</span> Examine the Physical SD Card</h3>
+            <p class="mb-3">The card itself holds the final clues. The difference in manufacturing quality between a multi-billion dollar corporation and a counterfeit operation is visible if you look closely.</p>
+             <ul class="list-disc pl-5 space-y-2 text-sm">
+                <li><strong>Label Alignment:</strong> The label on a fake card is often slightly crooked or off-center.</li>
+                <li><strong>Font and Color:</strong> Compare the font on the card to official product images online. Fakes frequently use the wrong font or a slightly different shade of color.</li>
+                <li><strong>Print Method:</strong> Genuine cards have sharp, laser-etched text. The text on fakes often looks and feels like it was painted on, and can be blurry or smear easily.</li>
+                <li><strong>Edge Quality:</strong> A real SD card has smooth, perfectly molded plastic edges. Fakes may have rough or uneven edges from a cheaper manufacturing process.</li>
+                <li><strong>Heat Seal Indentations:</strong> Genuine cards have clear indentations around the perimeter from the heat seal machine, including two small half-circles on the top. Fake cards made with cheaper self-adhesive technology won't have these.</li>
+                <li><strong>Retail Hook Hole:</strong> The hook hole (for store display) should be cleanly cut and clear. Fake cards often have an unclear hole with unremoved cut parts around it.</li>
+             </ul>
           </div>
 
           <div id="software-test">
-            <h3 class="text-xl font-bold text-slate-900 mb-3 pb-2 border-b">4. The Definitive Test: Software Verification</h3>
-            <p class="mb-4">This is the only 100% way to confirm. These tools write data to every sector and read it back to reveal the card's true capacity.</p>
+            <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-3"><span class="flex items-center justify-center h-8 w-8 rounded-full bg-blue-100 text-blue-600 font-bold">4</span> The Definitive Test: Software Verification</h3>
+            <p class="mb-4">Visual checks are helpful, but this is the only way to be 100% certain. Testing software writes data to every single block on the card and then reads it back. This process reveals the card's true capacity, exposing any lies.</p>
             
-            <div class="grid md:grid-cols-2 gap-4 mb-4">
-              <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
-                <h4 class="font-bold text-slate-900 mb-2">Windows: H2testw</h4>
-                <p class="text-sm text-slate-600">Free German utility. Download, select your card's drive letter, run the test. It reports true capacity and any errors.</p>
+            <div class="grid md:grid-cols-2 gap-6 mb-4">
+              <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                <h4 class="font-bold text-slate-900 mb-2">For Windows: H2testw</h4>
+                <p class="text-sm text-slate-600 mb-4">The gold standard for testing. It's a simple, portable utility that will report the true capacity and any write/read errors.</p>
+                <a href="https://www.heise.de/download/product/h2testw-50539" target="_blank" rel="noopener noreferrer" class="font-bold text-blue-600 text-sm hover:underline">Download from Heise.de &rarr;</a>
               </div>
-              <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
-                <h4 class="font-bold text-slate-900 mb-2">macOS: F3 (Fight Flash Fraud)</h4>
-                <p class="text-sm text-slate-600">Free command-line tool. Same function as H2testw. Reliable Mac alternative.</p>
+              <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                <h4 class="font-bold text-slate-900 mb-2">For macOS: F3 (Fight Flash Fraud)</h4>
+                <p class="text-sm text-slate-600 mb-4">A powerful command-line alternative for Mac users. It performs the same function as H2testw and is highly reliable.</p>
+                <a href="https://github.com/AltraMayor/f3" target="_blank" rel="noopener noreferrer" class="font-bold text-blue-600 text-sm hover:underline">Download from GitHub &rarr;</a>
               </div>
             </div>
 
-            <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-lg">
-              <p class="text-sm text-amber-900"><strong>⚠️ Important:</strong> Full tests take hours on large cards. It's destructive, so back up existing data first.</p>
+            <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-lg mt-6">
+              <p class="text-sm text-amber-900"><strong>⚠️ Warning:</strong> Before you begin, back up any files on the card. This test is destructive and will erase all data. A full test can take several hours on large-capacity cards. Be patient.</p>
             </div>
           </div>
         </div>
@@ -271,40 +285,59 @@
 
       <!-- FAQ -->
       <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8">
-        <h2 class="text-2xl font-bold text-slate-900 mb-6">FAQ</h2>
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
         <div class="space-y-4">
           <details class="group">
             <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
-              <span>Can Amazon sell fake cards?</span>
+              <span>Can Amazon sell fake SD cards?</span>
               <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
             </summary>
-            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm">
-              <p><strong>"Sold by Amazon"</strong> = very low risk. <strong>"Sold by 3rd party"</strong> = higher risk. Always check the seller. Third-party sellers on the Marketplace sell more counterfeits.</p>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm leading-relaxed">
+              <p>Yes, specifically from third-party sellers on the Amazon Marketplace. Items listed as "Shipped and Sold by Amazon.com" are sourced directly and are almost always genuine. If the seller is "XYZ Electronics" with 500 reviews, the risk is significantly higher. Always check the seller information before buying.</p>
             </div>
           </details>
 
           <details class="group">
             <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
-              <span>What software should I use to test?</span>
+              <span>What happens if I use a fake SD card?</span>
               <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
             </summary>
-            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm">
-              <p><strong>H2testw</strong> (Windows) and <strong>F3</strong> (macOS) are the industry standards. Both are free and trusted. They perform a full read/write test to verify true capacity.</p>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm leading-relaxed">
+              <p>A fake card lies about its storage capacity. For example, a fake 512GB card may only have 32GB of real space. Your device will appear to save files normally until you exceed 32GB. At that point, the card's controller will start overwriting your oldest files to make room for new ones, leading to silent, permanent data loss.</p>
             </div>
           </details>
 
           <details class="group">
             <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
-              <span>My fake card has photos on it. Can I recover them?</span>
+              <span>Is there a SanDisk or Samsung authenticator app?</span>
               <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
             </summary>
-            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm">
-              <p>If you've written past the card's true capacity, newer files have overwritten older ones. That data is permanently gone. Try <strong>PhotoRec</strong> or <strong>Recuva</strong> to scan, but don't expect full recovery. Stop using the card immediately.</p>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm leading-relaxed">
+              <p>No. This is a common misconception. Major brands like SanDisk, Samsung, and Lexar do not offer official "authenticator" apps. Any app in the app store claiming to do this is unofficial and should not be trusted. The only reliable verification method is a full capacity test with trusted, open-source software like H2testw or F3.</p>
+            </div>
+          </details>
+
+           <details class="group">
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>Can I recover files from a fake SD card?</span>
+              <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm leading-relaxed">
+              <p>Recovery is highly unlikely for data that has been overwritten. Your first step should be to immediately stop using the card and copy any visible files to your computer. After that, you can try running free recovery software like PhotoRec, but there is no guarantee you will get back files that were stored in the "fake" part of the memory.</p>
+            </div>
+          </details>
+
+           <details class="group">
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>How long does a capacity test take?</span>
+              <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm leading-relaxed">
+              <p>Be patient. The duration depends entirely on the card's advertised capacity and the speed of your card reader. A USB 3.0 reader will be much faster. As a rough guide: a 64GB card can take over an hour, and a 256GB card can take 4-5 hours or more. It is a long, but necessary, process for definitive proof.</p>
             </div>
           </details>
         </div>
       </section>
-
     </main>
 
     {{SIDEBAR}}
@@ -313,121 +346,136 @@
   {{FOOTER}}
 
   <script>
-    let currentStep = 1;
-    const maxSteps = 4;
-    let answers = {};
+    document.addEventListener('DOMContentLoaded', () => {
+      const wizardSteps = document.querySelectorAll('.wizard-step');
+      const nextButtons = document.querySelectorAll('.wizard-next-btn');
+      const backButtons = document.querySelectorAll('.wizard-back-btn');
+      const seeResultsBtn = document.getElementById('see-results-btn');
+      const restartBtn = document.getElementById('restart-btn');
 
-    // Navigation
-    document.querySelectorAll('.wizard-next-btn').forEach(btn => {
-      btn.addEventListener('click', nextStep);
-    });
+      let currentStep = 1;
+      const maxSteps = 4;
 
-    document.querySelectorAll('.wizard-back-btn').forEach(btn => {
-      btn.addEventListener('click', prevStep);
-    });
-
-    document.getElementById('see-results-btn').addEventListener('click', showResults);
-    document.getElementById('restart-btn').addEventListener('click', restart);
-
-    function nextStep() {
-      // Validate current step has an answer
-      if (!isStepComplete(currentStep)) {
-        alert('Please select an answer before proceeding.');
-        return;
-      }
+      const updateButtonStates = () => {
+        wizardSteps.forEach((step, index) => {
+          const stepNumber = index + 1;
+          if (step.style.display === 'block') {
+            const nextBtn = step.querySelector('.wizard-next-btn, #see-results-btn');
+            if (nextBtn) {
+              if (isStepComplete(stepNumber)) {
+                nextBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+              } else {
+                nextBtn.classList.add('opacity-50', 'cursor-not-allowed');
+              }
+            }
+          }
+        });
+      };
       
-      if (currentStep < maxSteps) {
-        document.getElementById(`step-${currentStep}`).style.display = 'none';
-        currentStep++;
-        document.getElementById(`step-${currentStep}`).style.display = 'block';
-        window.scrollTo(0, 0);
-      }
-    }
+      const setupStepListeners = () => {
+        wizardSteps.forEach(step => {
+            const options = step.querySelector('.wizard-options');
+            if(options) {
+                options.addEventListener('change', updateButtonStates);
+            }
+        });
+      };
 
-    function prevStep() {
-      if (currentStep > 1) {
-        document.getElementById(`step-${currentStep}`).style.display = 'none';
-        currentStep--;
-        document.getElementById(`step-${currentStep}`).style.display = 'block';
-        window.scrollTo(0, 0);
-      }
-    }
+      const goToStep = (stepNumber) => {
+        wizardSteps.forEach(step => step.style.display = 'none');
+        const targetStep = document.getElementById(`step-${stepNumber}`);
+        if (targetStep) {
+          targetStep.style.display = 'block';
+        } else {
+          // It's a result step
+          document.getElementById('results').style.display = 'block';
+        }
+        currentStep = stepNumber;
+        updateButtonStates();
+        window.scrollTo({ top: document.getElementById('wizard-section').offsetTop, behavior: 'smooth' });
+      };
 
-    function isStepComplete(step) {
-      const stepDiv = document.getElementById(`step-${step}`);
-      const checked = stepDiv.querySelector('input[type="radio"]:checked');
-      return checked !== null;
-    }
-
-    function showResults() {
-      if (!isStepComplete(4)) {
-        alert('Please select an answer.');
-        return;
-      }
-
-      // Collect all answers
-      answers.source = document.querySelector('input[name="source"]:checked').value;
-      answers.price = document.querySelector('input[name="price"]:checked').value;
-      answers.packaging = document.querySelector('input[name="packaging"]:checked').value;
-      answers.card = document.querySelector('input[name="card"]:checked').value;
-
-      // Calculate risk score
-      let riskScore = 0;
-      
-      // Source scoring
-      if (['ebay-wish'].includes(answers.source)) riskScore += 3;
-      else if (answers.source === 'amazon-3rd') riskScore += 2;
-      else if (answers.source === 'amazon-official') riskScore += 0;
-      else riskScore += 0;
-
-      // Price scoring
-      if (answers.price === 'cheap') riskScore += 2;
-
-      // Packaging scoring
-      if (answers.packaging === 'bad') riskScore += 2;
-
-      // Card scoring
-      if (answers.card === 'bad') riskScore += 2;
-
-      // Show results
-      document.getElementById(`step-${currentStep}`).style.display = 'none';
-      document.getElementById('results').style.display = 'block';
-
-      // Display appropriate result
-      document.getElementById('result-low').style.display = 'none';
-      document.getElementById('result-medium').style.display = 'none';
-      document.getElementById('result-high').style.display = 'none';
-
-      if (riskScore <= 2) {
-        document.getElementById('result-low').style.display = 'block';
-      } else if (riskScore <= 4) {
-        document.getElementById('result-medium').style.display = 'block';
-      } else {
-        document.getElementById('result-high').style.display = 'block';
-      }
-
-      window.scrollTo(0, 0);
-    }
-
-    function restart() {
-      currentStep = 1;
-      answers = {};
-      
-      // Hide all steps and results
-      for (let i = 1; i <= maxSteps; i++) {
-        document.getElementById(`step-${i}`).style.display = 'none';
-      }
-      document.getElementById('results').style.display = 'none';
-      
-      // Reset form
-      document.querySelectorAll('input[type="radio"]').forEach(input => {
-        input.checked = false;
+      nextButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (!btn.classList.contains('cursor-not-allowed')) {
+            goToStep(currentStep + 1);
+          }
+        });
       });
+
+      backButtons.forEach(btn => {
+        btn.addEventListener('click', () => goToStep(currentStep - 1));
+      });
+
+      seeResultsBtn.addEventListener('click', () => {
+        if (!seeResultsBtn.classList.contains('cursor-not-allowed')) {
+          showResults();
+        }
+      });
+
+      restartBtn.addEventListener('click', () => {
+        // Reset radio buttons
+        document.querySelectorAll('input[type="radio"]').forEach(radio => radio.checked = false);
+        // Hide result divs
+        document.getElementById('result-low').style.display = 'none';
+        document.getElementById('result-medium').style.display = 'none';
+        document.getElementById('result-high').style.display = 'none';
+        // Go back to start
+        goToStep(1);
+      });
+
+      const isStepComplete = (stepNumber) => {
+        const stepDiv = document.getElementById(`step-${stepNumber}`);
+        return stepDiv ? stepDiv.querySelector('input[type="radio"]:checked') !== null : false;
+      };
+
+      const showResults = () => {
+        const answers = {
+          source: document.querySelector('input[name="source"]:checked')?.value,
+          price: document.querySelector('input[name="price"]:checked')?.value,
+          packaging: document.querySelector('input[name="packaging"]:checked')?.value,
+          card: document.querySelector('input[name="card"]:checked')?.value
+        };
+
+        let riskScore = 0;
+        if (answers.source === 'ebay-wish') riskScore += 3;
+        if (answers.source === 'amazon-3rd') riskScore += 2;
+        if (answers.source === 'other') riskScore += 1;
+        
+        if (answers.price === 'cheap') riskScore += 3;
+        if (answers.price === 'not-sure') riskScore += 1;
+
+        if (answers.packaging === 'bad') riskScore += 2;
+        if (answers.packaging === 'not-sure') riskScore += 1;
+        
+        if (answers.card === 'bad') riskScore += 2;
+        if (answers.card === 'not-sure') riskScore += 1;
+
+        // Hide steps and show results container
+        wizardSteps.forEach(step => step.style.display = 'none');
+        document.getElementById('results').style.display = 'block';
+
+        // Hide all result divs first
+        document.getElementById('result-low').style.display = 'none';
+        document.getElementById('result-medium').style.display = 'none';
+        document.getElementById('result-high').style.display = 'none';
+        
+        // Show the correct result
+        if (riskScore <= 2) {
+          document.getElementById('result-low').style.display = 'block';
+        } else if (riskScore <= 5) {
+          document.getElementById('result-medium').style.display = 'block';
+        } else {
+          document.getElementById('result-high').style.display = 'block';
+        }
+        
+        window.scrollTo({ top: document.getElementById('wizard-section').offsetTop, behavior: 'smooth' });
+      };
       
-      // Show step 1
-      document.getElementById('step-1').style.display = 'block';
-      window.scrollTo(0, 0);
-    }
+      // Initialize
+      goToStep(1);
+      setupStepListeners();
+    });
   </script>
 </body>
 </html>
