@@ -93,29 +93,53 @@ return `<!-- Favicon -->
   </div>
   
   <!-- Mobile Navigation Menu -->
-  <nav class="mobile-menu hidden md:hidden bg-slate-50 border-t border-slate-200" id="mobileMenu">
-    <div class="px-4 py-3 space-y-2">
+  <nav class="mobile-menu hidden md:hidden bg-slate-50 border-t border-slate-200 max-h-[calc(100vh-80px)] overflow-y-auto" id="mobileMenu">
+    <div class="px-4 py-3 space-y-1">
+      <!-- Direct Links -->
       <a href="/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Home</a>
-      <a href="/categories/action-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Action Cameras</a>
-      <a href="/categories/cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Cameras</a>
-      <a href="/categories/computing-and-tablets/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Computing & Tablets</a>
-      <a href="/categories/drones/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Drones</a>
-      <a href="/categories/gaming-handhelds/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Gaming Handhelds</a>
-      <a href="/categories/security-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Security Cameras</a>
-      <div class="border-t border-slate-300 my-2"></div>
-      <a href="/tools/calculators/video-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Video Storage & Recording Time</a>
-      <a href="/tools/calculators/photo-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Photo Storage & Capacity</a>
-      <a href="/tools/calculators/drone-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Drone Recording Time & Storage</a>
-      <a href="/tools/calculators/security-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Security Camera Recording Time</a>
-      <a href="/tools/calculators/dashcam-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Dashcam Storage & Loop Time</a>
-      <a href="/tools/calculators/action-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Action Camera Storage & Capacity</a>
-      <a href="/tools/calculators/gopro-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">GoPro Recording Time & Storage</a>
-      <a href="/tools/calculators/timelapse-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Timelapse Storage & Photo Count</a>
-      <div class="border-t border-slate-300 my-2"></div>
-      <a href="/sd-card-guide.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">SD Card Guide</a>
-      <a href="/speed-classes.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Speed Classes</a>
-      <a href="/faq.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">FAQ</a>
-      <div class="border-t border-slate-300 my-2"></div>
+      
+      <!-- Devices Section -->
+      <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="devices">
+        <span>Devices</span>
+        <i class="fas fa-chevron-right transition-transform duration-300"></i>
+      </button>
+      <div class="mobile-section hidden pl-4 space-y-1" data-content="devices">
+        <a href="/categories/action-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Action Cameras</a>
+        <a href="/categories/cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Cameras</a>
+        <a href="/categories/computing-and-tablets/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Computing & Tablets</a>
+        <a href="/categories/drones/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Drones</a>
+        <a href="/categories/gaming-handhelds/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Gaming Handhelds</a>
+        <a href="/categories/security-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Security Cameras</a>
+      </div>
+      
+      <!-- Calculators Section -->
+      <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="calculators">
+        <span>Calculators</span>
+        <i class="fas fa-chevron-right transition-transform duration-300"></i>
+      </button>
+      <div class="mobile-section hidden pl-4 space-y-1" data-content="calculators">
+        <a href="/tools/calculators/video-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Video Storage & Recording Time</a>
+        <a href="/tools/calculators/photo-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Photo Storage & Capacity</a>
+        <a href="/tools/calculators/drone-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Drone Recording Time & Storage</a>
+        <a href="/tools/calculators/security-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Security Camera Recording Time</a>
+        <a href="/tools/calculators/dashcam-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Dashcam Storage & Loop Time</a>
+        <a href="/tools/calculators/action-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Action Camera Storage & Capacity</a>
+        <a href="/tools/calculators/gopro-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">GoPro Recording Time & Storage</a>
+        <a href="/tools/calculators/timelapse-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Timelapse Storage & Photo Count</a>
+      </div>
+      
+      <!-- Resources Section -->
+      <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="resources">
+        <span>Resources</span>
+        <i class="fas fa-chevron-right transition-transform duration-300"></i>
+      </button>
+      <div class="mobile-section hidden pl-4 space-y-1" data-content="resources">
+        <a href="/sd-card-guide.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">SD Card Guide</a>
+        <a href="/speed-classes.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Speed Classes</a>
+        <a href="/faq.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">FAQ</a>
+      </div>
+      
+      <!-- Direct Links -->
       <a href="/about.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">About</a>
     </div>
   </nav>
@@ -129,6 +153,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (mobileMenuBtn && mobileMenu) {
     mobileMenuBtn.addEventListener('click', function() {
       mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Handle section toggles
+    const sectionToggles = mobileMenu.querySelectorAll('.mobile-section-toggle');
+    sectionToggles.forEach(toggle => {
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        const section = this.getAttribute('data-section');
+        const content = mobileMenu.querySelector(`[data-content="${section}"]`);
+        const icon = this.querySelector('i');
+        
+        if (content) {
+          content.classList.toggle('hidden');
+          icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(90deg)';
+        }
+      });
     });
     
     // Close menu when a link is clicked
