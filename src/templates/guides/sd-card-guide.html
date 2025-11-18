@@ -3,26 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Complete SD Card Guide - Types, Speeds & Compatibility | SD Card Checker</title>
-  <meta name="description" content="Comprehensive guide to SD cards covering types (SDXC, SDHC, microSD), speed classes, and compatibility. Learn everything you need to know about SD cards.">
+  <title>Complete SD Card Guide: Types, Speeds & Compatibility 2025 | SD Card Checker</title>
+  <meta name="description" content="Learn everything about SD cards: SDXC, SDHC, microSD types, V30/V60/V90 speed classes, file systems, and compatibility. Choose the perfect card for your device.">
   <link rel="canonical" href="{{BASE_URL}}/guides/sd-card-guide/">
+  
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Complete SD Card Guide: Types, Speeds & Compatibility 2025">
+  <meta property="og:description" content="Master SD cards with our comprehensive guide covering all types, speed ratings, and how to pick the right card for your camera or device.">
+  <meta property="og:url" content="{{BASE_URL}}/guides/sd-card-guide/">
+  <meta property="og:site_name" content="SD Card Checker">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Complete SD Card Guide: Types, Speeds & Compatibility">
+  <meta name="twitter:description" content="Confused by SDHC vs SDXC? Learn what V30, U3, and speed classes actually mean for your device.">
+
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Complete SD Card Guide: Types, Speeds & Compatibility 2025",
+    "description": "Comprehensive guide to understanding SD card types (SDXC, SDHC, microSD), speed classes (V30, V60, V90, U1, U3), file systems, and how to choose the right card.",
+    "url": "{{BASE_URL}}/guides/sd-card-guide/",
+    "author": {
+      "@type": "Organization",
+      "name": "SD Card Checker"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SD Card Checker"
+    }
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{BASE_URL}}/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guides",
+        "item": "{{BASE_URL}}/guides/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "SD Card Guide",
+        "item": "{{BASE_URL}}/guides/sd-card-guide/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "What's the difference between SDHC and SDXC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SDHC (4GB-32GB) uses FAT32 file system with a 4GB individual file size limit, while SDXC (32GB-2TB) uses exFAT file system and supports much larger file sizes. SDXC is the modern standard."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Do I need V30 or V60 for 4K video?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most 4K video recording, V30 (30 MB/s minimum write speed) is sufficient. V60 (60 MB/s) is recommended for professional cinematography or high-bitrate 8K recording."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Is my old device compatible with SDXC cards?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Some older devices only support SDHC cards. Always check your device's manual or specifications before purchasing an SDXC card to ensure compatibility."
+      }
+    }]
+  }
+  </script>
+
   <link rel="stylesheet" href="/assets/css/tailwind.css">
   <link rel="stylesheet" href="/assets/css/modern.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.js" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   {{GROW_SCRIPT}}
-  </head>
+</head>
 <body class="bg-gradient-to-br from-slate-50 to-slate-100">
   {{HEADER}}
 
   <!-- Breadcrumb -->
   <div class="bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 py-3">
-      <nav class="text-sm text-slate-600 flex items-center gap-2">
+      <nav aria-label="breadcrumb" class="text-sm text-slate-600 flex items-center gap-2">
         <a href="/" class="text-blue-600 hover:underline">Home</a>
         <i class="fas fa-chevron-right text-xs"></i>
         <a href="/guides/" class="text-blue-600 hover:underline">Guides</a>
         <i class="fas fa-chevron-right text-xs"></i>
-        <span class="text-slate-900">SD Card Guide</span>
+        <span class="text-slate-900 font-medium" aria-current="page">SD Card Guide</span>
       </nav>
     </div>
   </div>
@@ -31,208 +121,480 @@
     <main class="flex-1">
       <!-- Hero Section -->
       <section class="mb-12">
-        <div class="relative rounded-xl overflow-hidden h-96 bg-gradient-to-r from-blue-600 to-cyan-700 flex items-center" style="background-image: url('/img/guides/sd-card-guide.webp'); background-size: cover; background-position: center;">
-          <div class="absolute inset-0 bg-black opacity-40"></div>
-          <div class="relative z-10 w-full text-white px-8 py-12">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Complete SD Card Guide</h1>
-            <p class="text-xl text-blue-100 mb-6">Types, Speeds & Compatibility Explained</p>
-            <p class="text-blue-50 max-w-2xl">Everything you need to know about SD cards, from types and speeds to compatibility and best practices. Make informed decisions about your storage.</p>
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Complete SD Card Guide: Find the Right Card for Your Device</h1>
+        <p class="text-xl text-slate-700 mb-4">Confused by SDHC vs SDXC? Wondering what V30 means? This guide explains everything about SD card types, speeds, and compatibility—so you buy exactly what you need.</p>
+      </section>
+
+      {{AFFILIATE_DISCLOSURE}}
+
+      <!-- Quick Answer Section -->
+      <section class="bg-blue-50 border-l-4 border-blue-500 rounded-b-lg p-8 mb-12 shadow-sm">
+        <h2 class="text-2xl font-bold text-blue-900 mb-4">Quick Answer: Which SD Card Should You Buy?</h2>
+        <div class="grid md:grid-cols-3 gap-6 text-sm">
+          <div class="bg-white p-4 rounded-lg border border-blue-200">
+            <h3 class="font-bold text-blue-800 mb-2">📱 For Phones & Tablets</h3>
+            <p class="text-slate-700"><strong>microSDXC, 128GB-256GB</strong>, V30 speed class. Look for brands like SanDisk or Samsung.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border border-blue-200">
+            <h3 class="font-bold text-blue-800 mb-2">📷 For 4K Video Cameras</h3>
+            <p class="text-slate-700"><strong>SDXC, 64GB-128GB</strong>, V30 or V60 minimum. Professional work demands V60.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border border-blue-200">
+            <h3 class="font-bold text-blue-800 mb-2">💻 For Computers</h3>
+            <p class="text-slate-700"><strong>SDXC, 256GB+</strong>, UHS-III for fastest speeds. Verify device compatibility first.</p>
           </div>
         </div>
       </section>
 
-      <!-- SD Card Types -->
-      <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
-        <h2 class="text-2xl font-bold text-slate-900 mb-4">SD Card Types</h2>
+      <!-- SD Card Types Section -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-2">What Are the Different SD Card Types?</h2>
+        <p class="text-slate-600 mb-6">SD cards come in four main types, each with different capacities and file systems. The type determines compatibility and performance.</p>
         
         <div class="space-y-6">
-          <div class="border-l-4 border-blue-600 pl-6">
-            <h3 class="font-bold text-slate-900 mb-2 text-lg">SD (Secure Digital)</h3>
-            <p class="text-slate-600 mb-2">Capacity: Up to 2GB</p>
-            <p class="text-slate-700 leading-relaxed">The original SD card format with limited storage capacity. Largely obsolete and rarely used in modern devices.</p>
+          <!-- SD Standard -->
+          <div class="border-l-4 border-slate-400 pl-6 pb-6 border-b">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-bold text-slate-900 text-lg">SD (Secure Digital) Standard</h3>
+              <span class="inline-block bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-xs font-semibold">Legacy</span>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4 text-sm mb-3">
+              <div><strong>Capacity:</strong> Up to 2GB</div>
+              <div><strong>File System:</strong> FAT12 or FAT16</div>
+              <div><strong>Released:</strong> 1999</div>
+            </div>
+            <p class="text-slate-700 leading-relaxed">The original SD card format is essentially obsolete. You won't find these in modern devices. Unless you have extremely old equipment, there's no reason to purchase an SD Standard card today.</p>
           </div>
 
-          <div class="border-l-4 border-blue-600 pl-6">
-            <h3 class="font-bold text-slate-900 mb-2 text-lg">SDHC (Secure Digital High Capacity)</h3>
-            <p class="text-slate-600 mb-2">Capacity: 4GB to 32GB</p>
-            <p class="text-slate-700 leading-relaxed">The most common SD card format for decades. Still widely supported but being replaced by SDXC in modern devices. Compatible with all SDHC-enabled devices.</p>
+          <!-- SDHC -->
+          <div class="border-l-4 border-blue-500 pl-6 pb-6 border-b">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-bold text-slate-900 text-lg">SDHC (Secure Digital High Capacity)</h3>
+              <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Still Common</span>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4 text-sm mb-3">
+              <div><strong>Capacity:</strong> 4GB to 32GB</div>
+              <div><strong>File System:</strong> FAT32</div>
+              <div><strong>Released:</strong> 2006</div>
+            </div>
+            <p class="text-slate-700 leading-relaxed mb-3">SDHC was the standard for nearly two decades and is still widely supported. However, its FAT32 file system has limitations: individual files cannot exceed 4GB, which is problematic for long video recordings.</p>
+            <div class="bg-blue-50 border border-blue-200 p-3 rounded text-sm">
+              <p><strong>Key Limitation:</strong> Due to FAT32, you cannot record a single video file larger than 4GB on an SDHC card. Most modern devices now use SDXC instead.</p>
+            </div>
           </div>
 
-          <div class="border-l-4 border-blue-600 pl-6">
-            <h3 class="font-bold text-slate-900 mb-2 text-lg">SDXC (Secure Digital eXtended Capacity)</h3>
-            <p class="text-slate-600 mb-2">Capacity: 32GB to 2TB</p>
-            <p class="text-slate-700 leading-relaxed">The modern standard for high-capacity SD cards. Offers significantly larger storage and faster speeds. Recommended for most new devices. Note: Some older devices may not support SDXC.</p>
+          <!-- SDXC -->
+          <div class="border-l-4 border-green-500 pl-6 pb-6 border-b">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-bold text-slate-900 text-lg">SDXC (Secure Digital eXtended Capacity)</h3>
+              <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">Recommended</span>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4 text-sm mb-3">
+              <div><strong>Capacity:</strong> 32GB to 2TB</div>
+              <div><strong>File System:</strong> exFAT</div>
+              <div><strong>Released:</strong> 2009</div>
+            </div>
+            <p class="text-slate-700 leading-relaxed mb-3">SDXC is the modern standard for high-capacity SD cards. It uses the exFAT file system, which was specifically designed for NAND flash memory and supports unlimited file sizes. This is the card type you should buy for new devices.</p>
+            <div class="bg-green-50 border border-green-200 p-3 rounded text-sm">
+              <p><strong>Best For:</strong> 4K video recording, large photo libraries, and any modern device. SDXC is forward-compatible with virtually all current cameras and computers.</p>
+            </div>
           </div>
 
-          <div class="border-l-4 border-blue-600 pl-6">
-            <h3 class="font-bold text-slate-900 mb-2 text-lg">microSD</h3>
-            <p class="text-slate-600 mb-2">Capacity: 128MB to 2TB | Size: 15mm × 11mm × 1mm</p>
-            <p class="text-slate-700 leading-relaxed">A miniaturized version of SD cards used in smartphones, tablets, action cameras, and drones. Often includes an adapter to use as a full-size SD card.</p>
+          <!-- microSD -->
+          <div class="border-l-4 border-purple-500 pl-6">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-bold text-slate-900 text-lg">microSD (Micro Secure Digital)</h3>
+              <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">Mobile & Compact</span>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4 text-sm mb-3">
+              <div><strong>Capacity:</strong> 128MB to 2TB</div>
+              <div><strong>Size:</strong> 15mm × 11mm × 1mm</div>
+              <div><strong>Released:</strong> 2005</div>
+            </div>
+            <p class="text-slate-700 leading-relaxed mb-3">MicroSD cards are miniaturized versions of SD cards designed for space-constrained devices like smartphones, tablets, drones, and action cameras. They're about 1/5th the size of full-size SD cards.</p>
+            <div class="bg-purple-50 border border-purple-200 p-3 rounded text-sm">
+              <p><strong>Pro Tip:</strong> Most microSD cards come with a full-size SD adapter, allowing you to use them in standard SD card slots. microSD also comes in SDHC and SDXC variants with the same file system rules.</p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Speed Classes -->
-      <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
-        <h2 class="text-2xl font-bold text-slate-900 mb-4">Speed Classes Explained</h2>
-        <p class="text-slate-700 leading-relaxed mb-6">Speed classes guarantee minimum write speeds for recording video. Different standards measure different aspects of performance:</p>
+      <!-- Speed Classes Comparison -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-2">Understanding SD Card Speed Classes</h2>
+        <p class="text-slate-600 mb-6">Speed classes measure how fast a card can write data. Different standards exist because different uses require different speeds. The faster the speed class, the more expensive the card.</p>
 
-        <div class="space-y-6">
-          <div class="bg-slate-50 p-6 rounded-lg">
-            <h3 class="font-bold text-slate-900 mb-2">U Speed Class (UHS Speed Class)</h3>
-            <p class="text-slate-600 mb-4">Minimum sustained write speed</p>
-            <div class="grid grid-cols-2 gap-4 text-sm">
-              <div><strong>U1:</strong> 10 MB/s minimum</div>
-              <div><strong>U3:</strong> 30 MB/s minimum</div>
+        <div class="space-y-6 mb-8">
+          <!-- V Speed Class -->
+          <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+            <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-red-100 text-red-600 font-bold text-sm">V</span>
+              V Speed Class (Video Speed Class) - For Video Recording
+            </h3>
+            <p class="text-slate-600 text-sm mb-4">Specifically designed for video recording. This is the most important rating for camera users.</p>
+            <div class="grid md:grid-cols-3 gap-4 mb-4">
+              <div class="bg-white p-3 rounded border border-slate-200">
+                <p class="font-bold text-red-600 text-lg">V6</p>
+                <p class="text-xs text-slate-600">6 MB/s minimum</p>
+                <p class="text-xs text-slate-500 mt-1">Basic HD video</p>
+              </div>
+              <div class="bg-white p-3 rounded border border-slate-200">
+                <p class="font-bold text-red-600 text-lg">V30</p>
+                <p class="text-xs text-slate-600">30 MB/s minimum</p>
+                <p class="text-xs text-slate-500 mt-1"><strong>4K video</strong> (most common)</p>
+              </div>
+              <div class="bg-white p-3 rounded border border-slate-200">
+                <p class="font-bold text-red-600 text-lg">V60</p>
+                <p class="text-xs text-slate-600">60 MB/s minimum</p>
+                <p class="text-xs text-slate-500 mt-1">Professional 8K</p>
+              </div>
             </div>
-            <p class="text-slate-600 text-sm mt-4">Recommended for most users. U3 is ideal for 4K video recording.</p>
+            <p class="text-slate-700 text-sm"><strong>Recommendation:</strong> Use V30 for 4K video on consumer cameras. Use V60 for professional work or high-bitrate 8K recording.</p>
           </div>
 
-          <div class="bg-slate-50 p-6 rounded-lg">
-            <h3 class="font-bold text-slate-900 mb-2">V Speed Class (Video Speed Class)</h3>
-            <p class="text-slate-600 mb-4">Minimum sustained write speed for video</p>
-            <div class="grid grid-cols-3 gap-4 text-sm">
-              <div><strong>V6:</strong> 6 MB/s</div>
-              <div><strong>V30:</strong> 30 MB/s</div>
-              <div><strong>V60:</strong> 60 MB/s</div>
+          <!-- U Speed Class -->
+          <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+            <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 font-bold text-sm">U</span>
+              U Speed Class (UHS Speed Class) - For General Use
+            </h3>
+            <p class="text-slate-600 text-sm mb-4">Guarantees minimum sustained write speed for general data. Less specific to video than V-class.</p>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div class="bg-white p-3 rounded border border-slate-200">
+                <p class="font-bold text-blue-600 text-lg">U1</p>
+                <p class="text-xs text-slate-600">10 MB/s minimum</p>
+                <p class="text-xs text-slate-500 mt-1">Photos, documents</p>
+              </div>
+              <div class="bg-white p-3 rounded border border-slate-200">
+                <p class="font-bold text-blue-600 text-lg">U3</p>
+                <p class="text-xs text-slate-600">30 MB/s minimum</p>
+                <p class="text-xs text-slate-500 mt-1">Fast I/O, 4K capable</p>
+              </div>
             </div>
-            <p class="text-slate-600 text-sm mt-4">Specifically designed for video recording. V30 is ideal for 4K, V60 for professional work.</p>
+            <p class="text-slate-700 text-sm"><strong>Note:</strong> V-class ratings are more important than U-class for video. Look for V30+ on cards marketed for video.</p>
           </div>
 
-          <div class="bg-slate-50 p-6 rounded-lg">
-            <h3 class="font-bold text-slate-900 mb-2">Speed Class (Original)</h3>
-            <p class="text-slate-600 mb-4">Minimum sustained write speed</p>
-            <div class="grid grid-cols-2 gap-4 text-sm">
-              <div><strong>Class 2:</strong> 2 MB/s</div>
-              <div><strong>Class 4:</strong> 4 MB/s</div>
-              <div><strong>Class 6:</strong> 6 MB/s</div>
-              <div><strong>Class 10:</strong> 10 MB/s</div>
+          <!-- Bus Speed -->
+          <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+            <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600 font-bold text-sm">🚀</span>
+              Bus Speed (UHS Interface) - Maximum Transfer Speeds
+            </h3>
+            <p class="text-slate-600 text-sm mb-4">Theoretical maximum speeds. Actual performance depends on your device supporting that interface.</p>
+            <div class="grid md:grid-cols-3 gap-4 mb-4">
+              <div class="bg-white p-3 rounded border border-slate-200">
+                <p class="font-bold text-green-600 text-lg">UHS-I</p>
+                <p class="text-xs text-slate-600">Up to 104 MB/s</p>
+                <p class="text-xs text-slate-500 mt-1">Older devices</p>
+              </div>
+              <div class="bg-white p-3 rounded border border-slate-200">
+                <p class="font-bold text-green-600 text-lg">UHS-II</p>
+                <p class="text-xs text-slate-600">Up to 312 MB/s</p>
+                <p class="text-xs text-slate-500 mt-1">Most modern</p>
+              </div>
+              <div class="bg-white p-3 rounded border border-slate-200">
+                <p class="font-bold text-green-600 text-lg">UHS-III</p>
+                <p class="text-xs text-slate-600">Up to 624 MB/s</p>
+                <p class="text-xs text-slate-500 mt-1">Newest cameras</p>
+              </div>
             </div>
-            <p class="text-slate-600 text-sm mt-4">Older standard, less commonly used today. Class 10 is the highest rating.</p>
-          </div>
-
-          <div class="bg-slate-50 p-6 rounded-lg">
-            <h3 class="font-bold text-slate-900 mb-2">Bus Speed (UHS Bus Interface)</h3>
-            <p class="text-slate-600 mb-4">Maximum theoretical transfer speeds</p>
-            <div class="grid grid-cols-3 gap-4 text-sm">
-              <div><strong>UHS-I:</strong> Up to 104 MB/s</div>
-              <div><strong>UHS-II:</strong> Up to 312 MB/s</div>
-              <div><strong>UHS-III:</strong> Up to 624 MB/s</div>
-            </div>
-            <p class="text-slate-600 text-sm mt-4">Higher bus speeds enable faster read/write operations. Requires compatible device.</p>
+            <p class="text-slate-700 text-sm"><strong>Important:</strong> Your device must support the bus speed to achieve these speeds. Check your camera or computer manual for compatibility.</p>
           </div>
         </div>
-      </div>
 
-      <!-- Choosing the Right Card -->
-      <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
-        <h2 class="text-2xl font-bold text-slate-900 mb-4">How to Choose the Right SD Card</h2>
-        
+        <!-- Speed Class Comparison Table -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead class="bg-slate-100 border-b border-slate-300">
+              <tr>
+                <th class="px-4 py-3 text-left font-bold text-slate-900">Speed Rating</th>
+                <th class="px-4 py-3 text-left font-bold text-slate-900">Min. Write Speed</th>
+                <th class="px-4 py-3 text-left font-bold text-slate-900">Best For</th>
+                <th class="px-4 py-3 text-left font-bold text-slate-900">Price Impact</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3 font-medium text-blue-600">Class 10</td>
+                <td class="px-4 py-3">10 MB/s</td>
+                <td class="px-4 py-3">HD video, older devices</td>
+                <td class="px-4 py-3">Budget-friendly</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3 font-medium text-red-600">V30</td>
+                <td class="px-4 py-3">30 MB/s</td>
+                <td class="px-4 py-3">4K video, most users</td>
+                <td class="px-4 py-3">Standard</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3 font-medium text-red-600">V60</td>
+                <td class="px-4 py-3">60 MB/s</td>
+                <td class="px-4 py-3">Professional video, 8K</td>
+                <td class="px-4 py-3">Premium</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3 font-medium text-purple-600">V90</td>
+                <td class="px-4 py-3">90 MB/s</td>
+                <td class="px-4 py-3">Ultra-high bitrate 8K</td>
+                <td class="px-4 py-3">Expensive</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- File Systems & Compatibility -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">File Systems: Why They Matter</h2>
+        <p class="text-slate-600 mb-6">The file system (FAT12, FAT32, exFAT) determines how data is organized on the card and affects compatibility and performance:</p>
+
         <div class="space-y-4">
+          <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+            <h3 class="font-bold text-blue-900 mb-2">FAT32 (SDHC Cards)</h3>
+            <p class="text-blue-800 text-sm"><strong>Limitation:</strong> Maximum file size is 4GB. This means you cannot record a single video file larger than 4GB, which is a problem for long recordings or high-bitrate 4K video.</p>
+          </div>
+
+          <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+            <h3 class="font-bold text-green-900 mb-2">exFAT (SDXC Cards)</h3>
+            <p class="text-green-800 text-sm"><strong>Advantage:</strong> Supports files larger than 4GB, unlimited by the file system. This is why SDXC cards are ideal for 4K video and professional work.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next-Gen Section -->
+      <section class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg shadow-sm border-2 border-orange-300 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-orange-900 mb-2">🚀 What's New: SD Express Cards (2025)</h2>
+        <p class="text-orange-800 mb-4">SD Express is the next-generation SD card format with PCIe NVMe speeds. It represents the future of SD card technology:</p>
+        <ul class="space-y-2 text-orange-900 text-sm">
+          <li><strong>Speed:</strong> Up to 4 GB/s (vs. 312 MB/s for UHS-II)</li>
+          <li><strong>Capacity:</strong> Up to 128TB (SDUC variant)</li>
+          <li><strong>Use Case:</strong> 8K video, professional cinematography, high-speed data transfer</li>
+          <li><strong>Availability:</strong> Limited adoption. Requires device support (some new mirrorless cameras, Nintendo Switch 2)</li>
+        </ul>
+        <p class="text-orange-800 text-sm mt-4"><strong>Current Status:</strong> SD Express is available but not yet mainstream. Most users don't need SD Express yet, but it's good to know about for future purchases.</p>
+      </section>
+
+      <!-- How to Choose -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">How to Choose the Right SD Card</h2>
+        
+        <div class="space-y-6">
           <div class="flex gap-4">
             <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-10 w-10 rounded-md bg-blue-500 text-white">
-                <span class="text-lg font-bold">1</span>
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white font-bold text-lg">
+                1
               </div>
             </div>
             <div>
-              <h3 class="font-bold text-slate-900">Check Your Device's Requirements</h3>
-              <p class="text-slate-600">Verify the maximum capacity and speed your device supports. Some older devices may not support SDXC cards.</p>
+              <h3 class="font-bold text-slate-900 mb-2 text-lg">Check Your Device's Specifications</h3>
+              <p class="text-slate-600">Visit your device's manual or manufacturer website. Look for: maximum supported capacity, supported card types (SDHC, SDXC, microSD), and required speed class. Some older devices may not support SDXC or V60 cards.</p>
             </div>
           </div>
 
           <div class="flex gap-4">
             <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-10 w-10 rounded-md bg-blue-500 text-white">
-                <span class="text-lg font-bold">2</span>
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white font-bold text-lg">
+                2
               </div>
             </div>
             <div>
-              <h3 class="font-bold text-slate-900">Determine Your Use Case</h3>
-              <p class="text-slate-600">Different activities require different speeds: 4K video needs at least U3/V30, photography needs fast random writes, everyday storage needs basic speed.</p>
+              <h3 class="font-bold text-slate-900 mb-2 text-lg">Match Speed to Your Use Case</h3>
+              <p class="text-slate-600 mb-3">Different activities have different requirements:</p>
+              <ul class="space-y-1 text-slate-600 text-sm pl-4">
+                <li><strong>Photography:</strong> Class 10 or U3 is sufficient</li>
+                <li><strong>HD Video:</strong> Class 10 or V10</li>
+                <li><strong>4K Video:</strong> V30 or faster (U3 minimum)</li>
+                <li><strong>Professional/8K:</strong> V60 or V90</li>
+              </ul>
             </div>
           </div>
 
           <div class="flex gap-4">
             <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-10 w-10 rounded-md bg-blue-500 text-white">
-                <span class="text-lg font-bold">3</span>
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white font-bold text-lg">
+                3
               </div>
             </div>
             <div>
-              <h3 class="font-bold text-slate-900">Choose the Right Capacity</h3>
-              <p class="text-slate-600">Get enough storage for your needs plus extra buffer. Consider that actual capacity is slightly less than advertised due to formatting.</p>
+              <h3 class="font-bold text-slate-900 mb-2 text-lg">Select the Right Capacity</h3>
+              <p class="text-slate-600">Calculate how much you need based on your typical recording time. As a rule of thumb, get 20% more than you think you'll need. Remember that actual usable space is about 5-10% less than advertised capacity due to formatting.</p>
+              <p class="text-slate-600 text-sm mt-2">Use our <a href="/tools/calculators/video-storage/" class="font-bold text-blue-600 hover:underline">video storage calculator</a> to determine exact capacity needs.</p>
             </div>
           </div>
 
           <div class="flex gap-4">
             <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-10 w-10 rounded-md bg-blue-500 text-white">
-                <span class="text-lg font-bold">4</span>
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white font-bold text-lg">
+                4
               </div>
             </div>
             <div>
-              <h3 class="font-bold text-slate-900">Buy From Reputable Brands</h3>
-              <p class="text-slate-600">Stick to well-known manufacturers like SanDisk, Kingston, Lexar, and Samsung to ensure authenticity and quality.</p>
+              <h3 class="font-bold text-slate-900 mb-2 text-lg">Buy From Reputable Brands</h3>
+              <p class="text-slate-600">Stick to well-known manufacturers: SanDisk, Kingston, Lexar, Samsung, Transcend, and Corsair. Avoid unknown brands on marketplace sites, as counterfeit cards are common. Authentic cards come with warranty support.</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Best Practices -->
-      <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8">
-        <h2 class="text-2xl font-bold text-slate-900 mb-4">Best Practices for SD Cards</h2>
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Best Practices for SD Card Care & Longevity</h2>
         
         <div class="grid md:grid-cols-2 gap-6">
           <div>
             <h3 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
-              <i class="fas fa-shield text-green-600"></i> Protect Your Data
+              <i class="fas fa-lock text-green-600"></i> Data Protection
             </h3>
             <ul class="space-y-2 text-slate-700 text-sm">
-              <li>Always back up important files</li>
-              <li>Use reliable card readers</li>
-              <li>Avoid removing card while writing</li>
-              <li>Keep cards in protective cases</li>
+              <li>✓ Back up important files immediately after recording</li>
+              <li>✓ Use a reliable USB card reader (not phone adapters)</li>
+              <li>✓ Never remove the card while writing or transferring</li>
+              <li>✓ Store in protective cases or sleeves</li>
+              <li>✓ Keep cards in a separate bag from your device</li>
             </ul>
           </div>
 
           <div>
             <h3 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
-              <i class="fas fa-wrench text-green-600"></i> Maintenance Tips
+              <i class="fas fa-wrench text-green-600"></i> Maintenance & Storage
             </h3>
             <ul class="space-y-2 text-slate-700 text-sm">
-              <li>Store in cool, dry environment</li>
-              <li>Avoid extreme temperatures</li>
-              <li>Keep away from magnetic fields</li>
-              <li>Use proper ejection procedures</li>
+              <li>✓ Store in cool, dry environment (avoid extreme heat)</li>
+              <li>✓ Keep away from moisture and liquids</li>
+              <li>✓ Avoid placing near magnets or electromagnetic devices</li>
+              <li>✓ Don't bend or apply pressure to the card</li>
+              <li>✓ Clean contacts gently with a dry cloth if needed</li>
             </ul>
           </div>
 
           <div>
             <h3 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
-              <i class="fas fa-check text-green-600"></i> Before Purchase
+              <i class="fas fa-check-circle text-green-600"></i> Before Purchase
             </h3>
             <ul class="space-y-2 text-slate-700 text-sm">
-              <li>Verify device compatibility</li>
-              <li>Check speed ratings needed</li>
-              <li>Compare prices across brands</li>
-              <li>Read recent reviews</li>
+              <li>✓ Verify device compatibility (check manual)</li>
+              <li>✓ Check speed requirements for your use case</li>
+              <li>✓ Compare prices across retailers</li>
+              <li>✓ Read recent customer reviews (last 3 months)</li>
+              <li>✓ Check warranty terms and return policy</li>
             </ul>
           </div>
 
           <div>
             <h3 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
-              <i class="fas fa-exclamation-triangle text-green-600"></i> Avoid Common Mistakes
+              <i class="fas fa-warning text-red-600"></i> Common Mistakes to Avoid
             </h3>
             <ul class="space-y-2 text-slate-700 text-sm">
-              <li>Don't buy counterfeit cards</li>
-              <li>Don't exceed capacity limits</li>
-              <li>Don't use unsupported formats</li>
-              <li>Don't ignore speed warnings</li>
+              <li>✗ Buying unknown brands to save money (counterfeit risk)</li>
+              <li>✗ Ignoring device compatibility warnings</li>
+              <li>✗ Purchasing SDHC when SDXC is required</li>
+              <li>✗ Using slow cards for 4K video recording</li>
+              <li>✗ Trusting cards beyond their typical lifespan (5-10 years)</li>
             </ul>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          <details class="group">
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>What's the real difference between SDHC and SDXC?</span>
+              <span class="transition group-open:rotate-180">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm">
+              <p class="mb-2">The main difference is the file system and capacity:</p>
+              <ul class="space-y-1 ml-4">
+                <li><strong>SDHC:</strong> Uses FAT32, supports 4GB-32GB, has a 4GB individual file limit</li>
+                <li><strong>SDXC:</strong> Uses exFAT, supports 32GB-2TB, no file size restrictions</li>
+              </ul>
+              <p class="mt-2 text-slate-600">For modern 4K video, SDXC is always better because you can record files larger than 4GB without the card splitting them.</p>
+            </div>
+          </details>
+
+          <details class="group">
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>Do I need V30 or V60 for 4K video?</span>
+              <span class="transition group-open:rotate-180">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm">
+              <p><strong>For most 4K video:</strong> V30 (30 MB/s minimum write speed) is sufficient and is the recommended standard.</p>
+              <p class="mt-2"><strong>When to use V60:</strong> Professional cinematography, high-bitrate 4K (like DCI 4K), or 8K video recording.</p>
+              <p class="mt-2 text-slate-600">V90 is overkill for virtually all users unless you're working with cinema equipment or ultra-high-bitrate formats.</p>
+            </div>
+          </details>
+
+          <details class="group">
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>Will an old device work with a new SDXC card?</span>
+              <span class="transition group-open:rotate-180">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm">
+              <p class="mb-2">Not necessarily. Compatibility depends on when your device was made:</p>
+              <ul class="space-y-1 ml-4 mb-2">
+                <li><strong>Pre-2009:</strong> Only supports SD or SDHC cards</li>
+                <li><strong>2009+:</strong> Most devices support SDXC</li>
+                <li><strong>Exception:</strong> Some older cameras intentionally locked to SDHC only</li>
+              </ul>
+              <p class="text-slate-600"><strong>Solution:</strong> Always check your device's manual before purchasing. If it says "SDHC compatible," it likely won't work with SDXC.</p>
+            </div>
+          </details>
+
+          <details class="group">
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>How long do SD cards last?</span>
+              <span class="transition group-open:rotate-180">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm">
+              <p>SD cards don't have moving parts, so they don't "wear out" like hard drives. However:</p>
+              <ul class="space-y-1 ml-4 mt-2">
+                <li>Flash memory degrades over time; typically good for 5-10 years</li>
+                <li>Proper storage (cool, dry) extends lifespan significantly</li>
+                <li>Extreme heat, moisture, and physical damage reduce lifespan</li>
+                <li>For archival use, plan for card replacement every 5-7 years</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="group">
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>Can I use a microSD card in a full-size SD slot with an adapter?</span>
+              <span class="transition group-open:rotate-180">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm">
+              <p>Yes, most microSD cards come with an SD adapter that allows them to fit into full-size SD slots. The adapter is passive (no electronics) and doesn't affect performance.</p>
+              <p class="mt-2 text-slate-600">However, make sure your device supports the microSD card type (microSDHC or microSDXC) and that speed ratings are compatible.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Related Resources -->
+      <section class="bg-slate-50 rounded-lg p-8 border border-slate-200">
+        <h3 class="text-xl font-bold text-slate-900 mb-4">Related Resources</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <a href="/guides/best-sd-cards-for-4k-video/" class="block bg-white p-4 rounded-lg border border-slate-200 hover:border-blue-400 hover:shadow-md transition">
+            <p class="font-bold text-slate-900 mb-1">🏆 Best SD Cards for 4K Video</p>
+            <p class="text-sm text-slate-600">Top-rated cards tested for real-world 4K recording performance</p>
+          </a>
+          <a href="/tools/calculators/video-storage/" class="block bg-white p-4 rounded-lg border border-slate-200 hover:border-blue-400 hover:shadow-md transition">
+            <p class="font-bold text-slate-900 mb-1">📊 Video Storage Calculator</p>
+            <p class="text-sm text-slate-600">Calculate exact storage capacity needed for your bitrate</p>
+          </a>
+        </div>
+      </section>
     </main>
 
     {{SIDEBAR}}
@@ -243,6 +605,15 @@
   <style>
     .bg-gradient-to-br {
       background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .group-open\:animate-fadeIn[open] {
+        animation: fadeIn 0.3s ease-in-out;
+      }
     }
   </style>
 </body>
