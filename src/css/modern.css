@@ -696,6 +696,18 @@ label {
   display: block;
 }
 
+/* Category Page Icon Hero */
+.category-icon-hero {
+  flex-shrink: 0;
+}
+
+.category-icon-hero img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+}
+
 .feature-card h3 {
   margin-top: 0;
   margin-bottom: 0.75rem;

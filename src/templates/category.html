@@ -50,8 +50,18 @@
   <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
     <main class="flex-1">
       <!-- Hero Section -->
-      <div class="mb-12">
-        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+      <div class="mb-12 flex items-center gap-6">
+        <div class="category-icon-hero">
+          <img 
+            src="/img/brand/icon-{{CATEGORY_ICON}}.webp" 
+            alt="{{CATEGORY_NAME}} icon" 
+            width="80" 
+            height="80" 
+            loading="eager"
+            decoding="async"
+          >
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900">
           Best SD Cards for {{CATEGORY_NAME}}
         </h1>
       </div>
