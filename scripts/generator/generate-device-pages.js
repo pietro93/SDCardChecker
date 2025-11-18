@@ -39,6 +39,21 @@ function getCategoryIcon(category) {
 }
 
 /**
+ * Map category names to image icon file names
+ */
+function getCategoryImageIcon(category) {
+  const iconMap = {
+    "Cameras": "camera",
+    "Action Cameras": "action-camera",
+    "Drones": "drone",
+    "Gaming Handhelds": "gaming",
+    "Computing & Tablets": "computing",
+    "Security Cameras": "security-camera"
+  };
+  return iconMap[category] || "camera"; // Default fallback
+}
+
+/**
  * Generate varied meta descriptions for better SEO
  */
 function generateUniqueMetaDescription(device, brandNames, index) {
@@ -222,6 +237,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 
     const deviceIcon = getCategoryIcon(device.category);
+    const categoryImageIcon = getCategoryImageIcon(device.category);
 
     // Featured device image
     const deviceImage = device.imageUrl || getDeviceImageFallback(device);
@@ -237,6 +253,9 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{DEVICE_NAME}}/g, device.name)
         .replace(/{{DEVICE_NAME_SHORT}}/g, deviceNameShort)
         .replace(/{{DEVICE_ICON}}/g, deviceIcon)
+        .replace(/{{CATEGORY_ICON}}/g, categoryImageIcon)
+        .replace(/{{CATEGORY_SLUG}}/g, categorySlug)
+        .replace(/{{CATEGORY_NAME}}/g, device.category)
         .replace(/{{DEVICE_IMAGE}}/g, deviceImage)
         .replace(/{{ANSWER_TEXT}}/g, answerText)
         .replace(/{{ANSWER_EXPLANATION}}/g, device.whySpecs)
