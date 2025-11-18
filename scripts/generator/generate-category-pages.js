@@ -47,6 +47,21 @@ return sortedDevices
 }
 
 /**
+ * Map category names to icon file names
+ */
+function getCategoryIcon(category) {
+  const iconMap = {
+    "Cameras": "camera",
+    "Action Cameras": "action-camera",
+    "Drones": "drone",
+    "Gaming Handhelds": "gaming",
+    "Computing & Tablets": "computing",
+    "Security Cameras": "security-camera"
+  };
+  return iconMap[category] || "camera"; // Default fallback
+}
+
+/**
  * Get category introduction text
  */
 function getCategoryIntro(category) {
@@ -95,11 +110,14 @@ const categoryIntro = getCategoryIntro(category);
     ];
     const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 
+    const categoryIcon = getCategoryIcon(category);
+
     let html = template
         .replace(/{{CATEGORY_TITLE}}/g, categoryTitle)
         .replace(/{{CATEGORY_DESCRIPTION}}/g, categoryDescription)
         .replace(/{{CATEGORY_URL}}/g, categoryUrl)
         .replace(/{{CATEGORY_NAME}}/g, category)
+        .replace(/{{CATEGORY_ICON}}/g, categoryIcon)
         .replace(/{{CATEGORY_INTRO}}/g, categoryIntro)
         .replace(/{{DEVICE_CARDS_HTML}}/g, deviceCardsHTML)
         .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
