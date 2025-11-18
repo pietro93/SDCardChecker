@@ -277,6 +277,115 @@ function getCardImageFallback(card) {
     }
   }
   
+  // Helper function to check if image file exists
+  function imageExists(imagePath) {
+    const fullPath = path.join(__dirname, "../../img/cards", imagePath.replace("/img/cards/", ""));
+    return fs.existsSync(fullPath);
+  }
+  
+  // Brand-specific image matching (maps brand/series to actual image files)
+  const cardId = card.id.toLowerCase();
+  const cardName = card.name.toLowerCase();
+  
+  // Exact card name matching first (highest priority)
+  const exactMatches = {
+    "kingston canvas select": "/img/cards/kingston-canvas-select-microsd.webp",
+    "sony tough g-series": "/img/cards/sony-tough-g-v90.webp",
+    "sandisk max endurance": "/img/cards/sandisk-max-endurance-microsd.webp",
+    "samsung pro endurance": "/img/cards/samsung-pro-endurance-microsd.webp",
+    "samsung evo select": "/img/cards/samsung-evo-select-microsd.webp"
+  };
+  
+  for (const [pattern, imagePath] of Object.entries(exactMatches)) {
+    if (cardName.includes(pattern) && imageExists(imagePath)) {
+      return imagePath;
+    }
+  }
+  
+  // Lexar brand fallbacks
+  if (cardName.includes("lexar professional 1000x")) {
+    if (imageExists("/img/cards/lexar-professional-1000x.webp")) {
+      return "/img/cards/lexar-professional-1000x.webp";
+    }
+  }
+  if (cardName.includes("lexar")) {
+    // Try to find any lexar image
+    const lexarImages = [
+      "/img/cards/lexar-professional-633x.webp",
+      "/img/cards/lexar-professional-1000x.webp"
+    ];
+    for (const img of lexarImages) {
+      if (imageExists(img)) return img;
+    }
+  }
+  
+  // Kingston Canvas brand fallbacks
+  if (cardName.includes("kingston canvas")) {
+    const kingtonImages = [
+      "/img/cards/kingston-canvas-select-microsd.webp",
+      "/img/cards/kingston-canvas-go.webp",
+      "/img/cards/kingston-canvas-select.webp"
+    ];
+    for (const img of kingtonImages) {
+      if (imageExists(img)) return img;
+    }
+  }
+  
+  // SanDisk brand fallbacks
+  if (cardName.includes("sandisk")) {
+    const sandiskImages = [
+      "/img/cards/sandisk-extreme-microsd.webp",
+      "/img/cards/sandisk-extreme-pro-sd-uhs-ii.webp",
+      "/img/cards/sandisk-ultra-microsd.webp",
+      "/img/cards/sandisk-max-endurance-microsd.webp"
+    ];
+    for (const img of sandiskImages) {
+      if (imageExists(img)) return img;
+    }
+  }
+  
+  // Samsung brand fallbacks
+  if (cardName.includes("samsung")) {
+    const samsungImages = [
+      "/img/cards/samsung-evo-select-microsd.webp",
+      "/img/cards/samsung-pro-endurance-microsd.webp"
+    ];
+    for (const img of samsungImages) {
+      if (imageExists(img)) return img;
+    }
+  }
+  
+  // Sony brand fallbacks
+  if (cardName.includes("sony")) {
+    const sonyImages = [
+      "/img/cards/sony-tough-g-v90.webp"
+    ];
+    for (const img of sonyImages) {
+      if (imageExists(img)) return img;
+    }
+  }
+  
+  // ADATA brand fallbacks
+  if (cardName.includes("adata")) {
+    const adataImages = [
+      "/img/cards/adata-premier-microsd.webp"
+    ];
+    for (const img of adataImages) {
+      if (imageExists(img)) return img;
+    }
+  }
+  
+  // Transcend brand fallbacks
+  if (cardName.includes("transcend")) {
+    const transcendImages = [
+      "/img/cards/transcend-superior-sd-uhs2.webp",
+      "/img/cards/transcend-microsd.webp"
+    ];
+    for (const img of transcendImages) {
+      if (imageExists(img)) return img;
+    }
+  }
+  
   // Use type and uhs fields from sdcards.json for smart fallback selection
   const isMicroSD = card.type === "microSD";
   const uhs = card.uhs ? card.uhs.toUpperCase() : "";
