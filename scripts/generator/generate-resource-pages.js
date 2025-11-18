@@ -86,6 +86,11 @@ async function generateResourcePages(distPath) {
             template: path.join(srcPath, "templates/guides/raw-vs-jpeg.html"),
             file: "raw-vs-jpeg/index.html",
             name: "RAW vs JPEG"
+        },
+        {
+            template: path.join(srcPath, "templates/guides/fake-sd-card-checker.html"),
+            file: "fake-sd-card-checker/index.html",
+            name: "Fake SD Card Checker"
         }
     ];
 
