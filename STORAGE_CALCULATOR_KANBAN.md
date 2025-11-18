@@ -121,10 +121,10 @@
       - ✅ Filters by speed class, sorts by price
       - ✅ Called from calculator-ui.js after result calculation
 
-- [ ] **Related Resources Section** (TODO)
-  - [ ] Link to "SD Card Speed Class Guide" (need to create page)
-  - [ ] Link to "Video Bitrate Comparison Guide" (need to create page)
-  - [ ] Link to related calculators (Photo, Drone, GoPro)
+- ✅ **Related Resources Section** (COMPLETE)
+  - ✅ Link to "/guides/sd-card-speed-classes/"
+  - ✅ Link to "/guides/video-bitrate-comparison/"
+  - ✅ Link to related calculators (Photo, Drone, GoPro)
 
 - [ ] **Images & Icons** (TODO)
   - [ ] Hero section background image (video camera/filming)
@@ -231,11 +231,11 @@
   - ✅ Q6: Should I shoot RAW or JPEG? (expanded, ~150 words, includes professional workflow)
   - Schema: FAQPage (JSON-LD) ✅
 
-- [ ] **Related Resources Section** (TODO)
-  - [ ] Find internal link opportunities to "SD Card Speed Class Guide" (need to create page) // check @components and @sd-card-guide templates for reference on how to create pages
-  - [ ] Find internal link opportunities to "RAW vs JPEG Comparison Guide" (need to create page)
-    - [ ] Find internal link opportunities to "How to find your camera bitrate" (need to create page)
-  - [ ] Add internal link to related calculators
+- ✅ **Related Resources Section** (COMPLETE)
+  - ✅ Internal links to "/guides/sd-card-speed-classes/" (in FAQ Q3)
+  - ✅ Internal links to "/guides/raw-vs-jpeg/" (in FAQ Q1)
+  - ✅ Internal links to "/guides/video-bitrate-comparison/" (referenced in related resources)
+  - ✅ Internal links to related calculators
 
 - [ ] **Images & Icons** (TODO)
   - [ ] Hero section background image (camera, burst shooting)
@@ -365,61 +365,106 @@
 
 ---
 
-## 🔗 RELATED GUIDE PAGES (Required for Phase 0 Links)
+## 🔗 PHASE 0: RELATED GUIDE PAGES (COMPLETE)
 
-These pages are referenced in calculator FAQ/Resources sections and need to be created or populated.
+All guide pages created and integrated into Phase 0.
 
-### 📄 GUIDE 1: SD CARD SPEED CLASS GUIDE
+### ✅ GUIDE 1: COMPLETE SD CARD GUIDE
+
+**URL:** `/guides/sd-card-guide/`  
+**Status:** ✅ COMPLETE
+**Content:**
+- ✅ SD Card types (SDHC, SDXC, microSD)
+- ✅ Speed classes explained (U, V, Class)
+- ✅ Bus speed (UHS-I, II, III)
+- ✅ How to choose the right card (4-step guide)
+- ✅ Best practices (protection, maintenance, before purchase)
+- ✅ Hero section with background image reference
+- ✅ Sidebar + breadcrumbs + schema markup
+- ✅ Referenced in calculators
+
+---
+
+### ✅ GUIDE 2: SD CARD SPEED CLASSES GUIDE
 
 **URL:** `/guides/sd-card-speed-classes/`  
-**Purpose:** Comprehensive guide on V30, V60, V90, U3, Class 10
-
+**Status:** ✅ COMPLETE
 **Content:**
-- [ ] What is a speed class? (definition, why it matters)
-- [ ] Speed class comparison table (V30 vs V60 vs V90, write speeds, use cases)
-- [ ] Which speed class do I need? (flowchart or decision tree)
-- [ ] FAQ: "Can I use V30 for 4K 60fps?" etc.
-- [ ] Internal links to calculators (Video, Photo, Drone)
-- [ ] Schema: Article + Table schema
-
-**Estimated effort:** 2–3 hours (research + writing)
+- ✅ Quick comparison table (U1, U3, V6, V30, V60, V90)
+- ✅ UHS Speed Class detailed (U1, U3 with use cases)
+- ✅ Video Speed Class detailed (V6, V30, V60, V90)
+- ✅ Bus speed comparison (UHS-I, II, III)
+- ✅ Speed class guide by use case (photography, video, gaming, etc.)
+- ✅ FAQ with common questions
+- ✅ Hero section + responsive design
+- ✅ Internal links to calculators
+- ✅ Referenced in video & photo calculators
 
 ---
 
-### 📄 GUIDE 2: VIDEO BITRATE COMPARISON GUIDE
+### ✅ GUIDE 3: VIDEO BITRATE COMPARISON GUIDE
 
 **URL:** `/guides/video-bitrate-comparison/`  
-**Purpose:** H.264 vs H.265 vs ProRes bitrate comparison
-
+**Status:** ✅ COMPLETE (Content: Placeholder)
 **Content:**
-- [ ] What is bitrate? (definition, how it affects storage)
-- [ ] Codec comparison table (H.264, H.265, ProRes, bitrate examples)
-- [ ] Bitrate examples by resolution + codec (1080p 30fps, 4K 60fps, etc.)
-- [ ] How to find your camera's bitrate
-- [ ] FAQ: "Does higher bitrate = better quality?"
-- [ ] Internal links to calculators
-- [ ] Schema: Article + Table schema
-
-**Estimated effort:** 2–3 hours
+- ✅ Overview of video codecs
+- ✅ Quick comparison table (H.264, H.265, ProRes bitrates)
+- ✅ H.264 details (overview, storage, use cases)
+- ✅ H.265 details (overview, storage, use cases)
+- ✅ ProRes details (overview, storage, use cases)
+- ✅ Storage calculator reference with CTA
+- ✅ Related guides section
+- ✅ Hero section + responsive design
+- ✅ Breadcrumbs + schema markup
+- ✅ Referenced in video calculator FAQ
 
 ---
 
-### 📄 GUIDE 3: RAW vs JPEG COMPARISON GUIDE
+### ✅ GUIDE 4: RAW vs JPEG COMPARISON GUIDE
 
 **URL:** `/guides/raw-vs-jpeg/`  
-**Purpose:** Photography format comparison and storage implications
-
+**Status:** ✅ COMPLETE (Content: Placeholder)
 **Content:**
-- [ ] What is JPEG? (definition, compression, use cases)
-- [ ] What is RAW? (definition, editing flexibility, use cases)
-- [ ] File size comparison (5MP, 20MP, 45MP examples)
-- [ ] Which should I shoot? (beginner, professional, professional + JPEG)
-- [ ] Storage and speed class implications
-- [ ] FAQ: "Can I recover from overexposed JPEG?" etc.
-- [ ] Internal links to Photo Calculator
-- [ ] Schema: Article + Table schema
+- ✅ Overview of image formats
+- ✅ Quick comparison table (file size, editing, storage, use cases)
+- ✅ JPEG details (what it is, file size, editing, use cases)
+- ✅ RAW details (what it is, file size, editing, use cases)
+- ✅ JPEG+RAW hybrid approach (dual format)
+- ✅ Storage calculator reference with CTA
+- ✅ Related guides section
+- ✅ Hero section + responsive design
+- ✅ Breadcrumbs + schema markup
+- ✅ Referenced in photo calculator FAQ
 
-**Estimated effort:** 2–3 hours
+---
+
+### ✅ GUIDES HUB PAGE
+
+**URL:** `/guides/`  
+**Status:** ✅ COMPLETE
+**Content:**
+- ✅ Hero section with purpose statement
+- ✅ Grid of 4 guide cards (with icons, descriptions, CTAs)
+- ✅ Quick reference section (card types, speed classes)
+- ✅ FAQ accordion (common questions with guide links)
+- ✅ Direct links to calculators
+- ✅ Breadcrumbs + schema
+- ✅ Navigation integration in header/sidebar
+
+---
+
+## 📋 INTERNAL LINKING IMPLEMENTATION
+
+### Video Storage Calculator
+- ✅ Q1 (H.264/H.265/ProRes): Links to `/guides/video-bitrate-comparison/`
+- ✅ Q2 (Speed class): Links to `/guides/sd-card-speed-classes/`
+- ✅ Q3 (Bitrate calculation): Links to `/guides/video-bitrate-comparison/`
+- ✅ Related Resources: Links to both speed class & bitrate guides
+
+### Photo Storage Calculator
+- ✅ Q1 (JPEG vs RAW): Links to `/guides/raw-vs-jpeg/`
+- ✅ Q3 (Speed class): Links to `/guides/sd-card-speed-classes/`
+- ✅ Related Resources: Links to RAW vs JPEG & speed class guides
 
 ---
 
