@@ -3,21 +3,21 @@
 ## Cards NOT Currently in sdcards.json (that need to be added)
 
 ### CFexpress Cards
-- [ ] **Kingston Canvas React Pro CFexpress Type B** 
+- [x] **Kingston Canvas React Pro CFexpress Type B** ✓ ADDED
   - Type: CFexpress Type B
   - Speed: V90
   - Write Speed: 1700 MB/s
   - Tier: Professional
   - Notes: High-performance CFexpress for cinema cameras
 
-- [ ] **ProGrade Digital UPX-M CFexpress Type B**
+- [x] **ProGrade Digital UPX-M CFexpress Type B** ✓ ADDED
   - Type: CFexpress Type B
   - Speed: V90
   - Write Speed: 1200+ MB/s
   - Tier: Professional
   - Notes: Cinema camera optimized
 
-- [ ] **ProGrade Digital UX500 CFexpress Type B**
+- [x] **ProGrade Digital UX500 CFexpress Type B** ✓ ADDED
   - Type: CFexpress Type B
   - Speed: V90
   - Write Speed: 1200+ MB/s
@@ -25,59 +25,57 @@
   - Notes: Professional 8K RAW support
 
 ### SD/SD UHS-II Cards
-- [ ] **Kingston Canvas Go Pro SD UHS-II (V60)**
+- [x] **Kingston Canvas Go Pro SD UHS-II (V60)** ✓ ADDED
   - Type: SD UHS-II
   - Speed: V60
   - Write Speed: 260 MB/s
   - Tier: Mid-Range/Professional
-  - Notes: Reliable mid-tier V60 option (NOTE: Kingston Canvas Go Pro SD exists but may need V60 variant)
+  - Notes: Reliable mid-tier V60 option
 
-- [ ] **ProGrade Digital UX500 SD V90**
+- [x] **ProGrade Digital UX500 SD V90** ✓ ADDED
   - Type: SD UHS-II
   - Speed: V90
   - Write Speed: 250 MB/s
   - Tier: Professional
   - Notes: Premium V90 for demanding workflows
 
-- [ ] **Kingston Canvas React Pro CFexpress Type B** (already noted above)
-
 ### microSD Cards - Endurance Variants
-- [ ] **Kingston High Endurance microSD**
+- [x] **Kingston High Endurance microSD** ✓ ADDED
   - Type: microSD
   - Speed: U3/Class 10
   - Write Speed: 40 MB/s
   - Tier: Specialty (Endurance)
   - Notes: For dash cams and security cameras
 
-- [ ] **Lexar Play High Endurance microSD**
+- [x] **Lexar Play High Endurance microSD** ✓ ADDED
   - Type: microSD
   - Speed: V30/U3
   - Write Speed: 100 MB/s
   - Tier: Specialty (Endurance)
   - Notes: Newer endurance-rated option for continuous recording
 
-- [ ] **Lexar Play microSD**
+- [x] **Lexar Play microSD** ✓ ADDED
   - Type: microSD
   - Speed: V30
   - Write Speed: 100 MB/s
   - Tier: Mid-Range
   - Notes: Consumer-grade Lexar option
 
-- [ ] **Transcend High Endurance microSD**
+- [x] **Transcend High Endurance microSD** ✓ ADDED
   - Type: microSD
   - Speed: U3/Class 10
   - Write Speed: 40 MB/s
   - Tier: Specialty (Endurance)
   - Notes: Budget-friendly endurance option for security cameras
 
-- [ ] **Transcend Standard SD UHS-I**
+- [x] **Transcend Standard SD UHS-I** ✓ ADDED
   - Type: SD UHS-I
   - Speed: V30
   - Write Speed: 45 MB/s
   - Tier: Budget
   - Notes: Budget alternative to Kingston/SanDisk
 
-- [ ] **Transcend Premium SD UHS-II**
+- [x] **Transcend Premium SD UHS-II** ✓ ADDED
   - Type: SD UHS-II
   - Speed: V30
   - Write Speed: 160 MB/s
@@ -86,7 +84,7 @@
 
 ---
 
-## TOTAL NEW CARDS NEEDED: ~13-14
+## ✓ ALL 12 NEW CARDS ADDED TO sdcards.json
 
 ## Already Existing in sdcards.json:
 - Kingston Canvas Go Pro SD (check if this is V30 or if V60 variant needed)
