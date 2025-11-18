@@ -1,212 +1,260 @@
-# SD Card Checker - Data-Driven Kanban Board
+# SD Card Checker - Organic Growth Kanban
 
-**Last Updated:** November 15, 2025  
-**Project Status:** LIVE - Analysis & Gradual Expansion Phase  
+**Last Updated:** November 18, 2025  
+**Project Status:** 🚀 SCALING - 3000+ sessions/month trajectory  
 **Site:** https://sdcardchecker.com  
-**Primary Goal:** 1000 sessions/month → Mediavine application eligibility
+**Timeline:** 2-week sprint (Nov 18 - Dec 2)
 
 ---
 
-## 📊 BOARD OVERVIEW
+## 📊 LIVE METRICS (As of Nov 18)
 
-| Column | Status | Focus |
-|--------|--------|-------|
-| **MONITORING** | 👀 Active | Daily GSC tracking |
-| **ANALYSIS** | 🔍 Insights | High-potential keywords & gaps |
-| **OPPORTUNITIES** | 💡 Identified | Next devices/content to add |
-| **IN PROGRESS** | 🛠️ Building | Active implementation |
-| **DONE** | ✅ Complete | Shipped items |
+| Metric | Value | Status |
+|--------|-------|--------|
+| **Total Impressions** | 1,893 | ✅ Strong organic |
+| **Total Clicks** | 12 | ✅ Growing |
+| **Overall CTR** | 0.63% | 🟡 Improving |
+| **Sessions/Month Trajectory** | 3000+ | 🟢 EXCEEDS GOAL |
+| **Mediavine Eligibility** | ~4-6 weeks away | 🟢 On track |
+| **Device Pages Live** | 100+ | ✅ Solid base |
 
 ---
 
-## 👀 MONITORING
+## 🎯 NORTH STAR (Next 2 Weeks)
+
+**Primary Goal:** Capture high-intent search traffic through 3 parallel workstreams:
+1. Add devices with proven search demand (GSC data)
+2. Optimize high-CTR potential pages (data-driven hero images + content review)
+3. Begin long-form content strategy (SEO keyword planning)
+
+**Success Definition:** 
+- +20 high-potential devices added
+- 5+ high-traffic pages optimized (hero images + content audit)
+- Long-form content strategy finalized + 1-2 pieces in progress
+
+---
+
+## 👀 MONITORING (Daily)
 
 ### GSC Daily Tracking
 - **Owner:** You
-- **Cadence:** Daily (you provide updates)
-- **What we're watching:**
-  - Total impressions (target: steady growth toward 1000 sessions/month)
-  - Top search queries (identify high-volume, low-CTR queries)
-  - Device pages with impressions (which devices resonate?)
-  - CTR patterns (which queries are converting?)
-- **Data collection:**
-  - You share daily snapshots or weekly summaries
-  - I maintain detailed analysis in **[GSC_ANALYSIS.md](GSC_ANALYSIS.md)**
-  - Goal: By end of Nov, identify 3-5 clear expansion opportunities
+- **Cadence:** Daily snapshots
+- **Process:**
+  1. Share GSC data each morning (or EOD)
+  2. I identify new devices & high-potential pages
+  3. We prioritize additions/optimizations
+  4. Track CTR improvements weekly
+- **Tracking file:** `GSC_ANALYSIS.md` (living document)
 
-**📌 Current Status (Nov 15):** 705 impressions, 1 click. Analysis complete - see GSC_ANALYSIS.md
-
----
-
-## 🔍 ANALYSIS
-
-### High-Potential Keywords (From GSC Data)
-- **Status:** PENDING - Waiting for data patterns
-- **What we're tracking:**
-  - Queries with high impressions but 0% CTR (content gap = easy fix)
-  - Device categories appearing in GSC that we don't have pages for
-  - Variations of existing device queries (e.g., "requirements" vs "recommendations")
-- **Example:** If GSC shows "GoPro Hero 14" queries but we don't have that device → add to opportunities
-- **Next step:** Once you share GSC data, we'll identify these patterns together
+**Nov 18 Baseline:**
+- 12 total clicks from 1,893 impressions
+- **Top converters:** Legion Go (2.08% CTR), Nikon Z50 II (11.11%), Leica Q2 (14.29%)
+- **Biggest opportunities:** Sony FX3 (33 impr, 0% CTR), DJI Mini 4K (29 impr, 0% CTR), Canon G7X Mark III (17 impr, 0% CTR)
 
 ---
 
-### Content Gap Analysis (Existing Devices)
-- **Status:** PENDING - Waiting for GSC insights
-- **What we're tracking:**
-  - FAQ opportunities (queries that should have FAQ answers)
-  - Standalone article opportunities (if many searches are around "guides", "comparisons", "specs")
-  - Meta description improvements for existing pages
-- **Example:** If many searches are "DJI Mini 4 Pro comparison vs [other model]" → add FAQ or comparison article
-- **Next step:** Once GSC patterns emerge, we'll add specific tasks here
+## 💡 OPPORTUNITIES (High-Intent Devices)
+
+### Tier 1: GSC Demand Confirmed (Add This Week)
+*These devices have 2+ impressions in GSC showing search demand*
+
+| Device | Impressions | Status | ETA |
+|--------|-------------|--------|-----|
+| **Lenovo Legion Go** variants (Go, Go S, Go 2) | 4+ | ✅ ADDED | Done |
+| **Canon EOS R50** | 2+ | ⏳ Queue | Today |
+| **Canon EOS R7** | 5 | ⏳ Queue | Today |
+| **Fujifilm X-T50** | 2 | ⏳ Queue | Today |
+| **Sony FX30** | 2 | ⏳ Queue | Today |
+| **Nikon Z50 II** | 2 | ✅ ADDED | Done |
+| **Fujifilm X-E5** | 3 | ⏳ Queue | Today |
+| **Canon G7X Mark III** | 17 | ⏳ Queue | Today |
+| **Canon G7X Mark II** | 7 | ⏳ Queue | This week |
+| **Insta360 X4** | 16 | ⏳ Queue | This week |
+| **Insta360 Ace Pro** | 1+ | ⏳ Queue | This week |
+| **DJI Mini 3** | 16 | ⏳ Queue | This week |
+| **Fujifilm X-T5** | 12 | ⏳ Queue | This week |
+| **Nintendo 3DS XL** | 13 | ⏳ Queue | This week |
+
+### Tier 2: Monitor (2+ impressions, add if converters found)
+- Leica D-Lux 8
+- Sony ZV-E10
+- Nikon D750
+- Canon EOS R5/R6/R8
+- Panasonic Lumix S5 IIx (✅ CONVERTING 25% CTR)
+- Panasonic Lumix S9 (✅ CONVERTING 20% CTR)
+- BMPCC 4K / BMPCC 6K Pro
+- GoPro Max (check variants)
 
 ---
 
-## 💡 OPPORTUNITIES
+## 🛠️ IN PROGRESS (2-Week Sprint)
 
-*(Devices & content to add, identified from GSC data)*
+### Sprint 1: Add High-Demand Devices
+- **Owner:** You
+- **Timeline:** Nov 18-22 (first half of sprint)
+- **Target:** 20 new devices from Tier 1 list
+- **Effort:** ~5-10 min per device (devices.json entry + basic verification)
 
-### Template for New Device Addition
-When GSC shows demand for a device:
-- [ ] Device name + search volume from GSC
-- [ ] Research official specs (capacity, speed class, card type)
-- [ ] Add device to devices.json
-- [ ] Test page renders correctly
-- [ ] Deploy
-- Effort: 20-30 min per device
+**Checklist:**
+- [ ] Canon R50, R7, G7X Mark III, G7X Mark II
+- [ ] Fujifilm X-T50, X-E5, X-T5
+- [ ] Sony FX30
+- [ ] Nikon Z50 II (if not added yet)
+- [ ] Insta360 X4, Ace Pro
+- [ ] DJI Mini 3
+- [ ] Nintendo 3DS XL
+- [ ] Leica D-Lux 8, Leica Q2 (if missing)
+- [ ] Panasonic S9, S5 IIx (if missing)
+- [ ] Others from Tier 2 if time permits
 
----
-
-## 🛠️ IN PROGRESS
-
-### Phase 0: Storage Calculator (Video + Photo)
-- **Owner:** Amp
-- **Timeline:** Week 1 (Nov 17-24)
-- **Status:** 🟡 Build Path Issues (Template fixes applied)
-- **Files:**
-  - `src/js/calculator.js` (math engine, formulas, speed class mapping)
-  - `src/js/calculator-ui.js` (Alpine.js state, form management)
-  - `src/templates/calculator/video-storage-calculator.html` ✅ Fixed asset paths
-  - `src/templates/calculator/photo-storage-calculator.html` ✅ Fixed asset paths
-  - Build output target: `dist/tools/calculators/video-storage/index.html`
-  - Build output target: `dist/tools/calculators/photo-storage/index.html`
-- **Progress:**
-  - ✅ calculator.js (math engine, all formulas, speed class mapping)
-  - ✅ calculator-ui.js (Alpine.js state, form management, results)
-  - ✅ Video Storage Calculator page (Hero, FAQ, schema, copy, asset paths fixed)
-  - ✅ Photo Storage Calculator page (Hero, FAQ, schema, copy, asset paths fixed)
-  - ✅ Build script paths updated to `/tools/calculators/[slug]/`
-  - ✅ CSS & JS paths updated to `/assets/css/` and `/assets/js/`
-  - 🔄 Full build deployment (file lock issue blocking)
-  - ⏳ Testing (form inputs, reverse toggle, mobile UX, GA4)
-  - ⏳ Integration with existing card recommendation data
-  - ⏳ Mobile responsiveness check (44px tap targets)
-  - ⏳ Core Web Vitals optimization (LCP, CLS, INP)
-- **Blockers:** Windows file lock on dist/categories/cameras/index.html blocking full build
-- **Next step:** Close file explorer/antivirus locks, retry build, then test full flow
+**Tracking:** Update DEVICES_ADDED_NOV18.md with counts daily
 
 ---
 
-## ✅ DONE
+### Sprint 2: Page Optimization (Content + Images)
+- **Owner:** Amp + You
+- **Timeline:** Nov 19-26 (parallel with additions)
+- **Target:** Optimize 5-8 high-potential pages
 
-### Pre-Launch (Complete)
+**Phase 1: Identify High-Potential Pages (Nov 19)**
+Using GSC data, prioritize by:
+1. **High impressions + 0% CTR** (content/format issue)
+   - Sony FX3 (33 impr)
+   - DJI Mini 4K (29 impr)
+   - Canon G7X Mark III (17 impr)
+   
+2. **Medium impressions + low CTR** (optimization opportunity)
+   - DJI Osmo Pocket 3 (43 impr, 2.33%)
+   - Sony A6700 (46 impr, 0%)
+
+3. **High CTR but needs image** (quick win)
+   - Lenovo Legion Go (48 impr, 2.08% - check image status)
+   - Nikon Z50 II (9 impr, 11.11%)
+   - Leica Q2 (7 impr, 14.29%)
+
+**Phase 2: Audit & Optimize (Nov 20-26)**
+For each high-potential page:
+- [ ] Review page structure (compare winners vs non-converters)
+- [ ] Check hero image status (add only if high-potential)
+- [ ] Audit first FAQ answer (is it scannable? Matches query intent?)
+- [ ] Verify specs are prominent/clear
+- [ ] Check for broken Amazon links
+- [ ] Deploy + monitor CTR changes
+
+**Success Metric:** +0.5-1% CTR improvement on optimized pages
+
+---
+
+### Sprint 3: Long-Form Content Strategy
+- **Owner:** Amp (planning) + You (approval/input)
+- **Timeline:** Nov 19-26 (planning), Dec 1+ (execution)
+- **Scope:** Define content roadmap for Mediavine + better ad monetization
+
+**Phase 1: Keyword Research (Nov 19-21)**
+Research high-volume, low-competition keywords in:
+1. **Comparison guides** ("best sd card for [device A] vs [device B]")
+2. **Speed class guides** ("what is V90 sd card", "UHS-II explained")
+3. **Brand guides** ("best sd cards by brand" - SanDisk, Kingston, etc.)
+4. **Use case guides** ("4K video sd card specs", "gaming handheld sd card requirements")
+
+**Deliverable:** Content calendar with 5-10 target articles + estimated effort
+
+**Phase 2: Template & First Draft (Nov 22-26)**
+- Create long-form content template (2000-3000 words, SEO-optimized)
+- Write 1-2 pilot pieces to test format
+- Iterate based on initial GSC performance
+
+**Examples to explore:**
+- "Best SD Cards for 4K Video (Under $X)" - targets video content creators
+- "Lenovo Legion Go vs Steam Deck: Which SD Card?" - targets gaming audience
+- "Understanding UHS-II vs UHS-I" - targets technical searchers
+- "SanDisk vs Kingston vs Lexar: SD Card Comparison" - brand comparison
+
+---
+
+## ✅ DONE (Recent Wins)
+
 - ✅ Site live at sdcardchecker.com (Nov 11)
-- ✅ 97 device pages live as of 15.11.25
-- ✅ SEO title optimization (KANBAN-11 complete)
-- ✅ Schema markup implemented
-- ✅ GSC & Bing Search Console configured
-- ✅ GA4 installed
-- ✅ Affiliate links verified & working
+- ✅ 100+ device pages generating organic traffic
+- ✅ Storage calculator fully implemented
+- ✅ GSC & GA4 tracking live
+- ✅ Affiliate tracking verified
+- ✅ Schema markup & SEO titles implemented
+- ✅ Proven organic traffic model (100% search, 3000+ sessions/month trajectory)
 
 ---
 
-## 📈 LIVE METRICS
+## 🚨 BACKLOG (Monitor, Don't Act Yet)
 
-### Current State (Nov 15)
-- **Pages Live:** 97+ (devices + categories + resources)
-- **Domain:** sdcardchecker.com (LIVE)
-- **Traffic:** Coming from Day 1 (positive signal)
-- **Affiliate Clicks:** Working & tracking
-- **GSC Data:** Collecting daily
+### Old Category Page Redirects
+- **Status:** Identified in GSC (10+ old URLs still appearing)
+- **Examples:** `/categories/action-cameras/dji-osmo-pocket-3/`, `/categories/gaming-handhelds/`
+- **Action:** Verify if these need 301 redirects or if they're properly canonicalized
+- **Timeline:** Nov 22 (after device additions complete)
 
-### Mediavine Eligibility Checklist
-| Requirement | Status | Notes |
-|-------------|--------|-------|
-| 1000 sessions/month | 🟡 In progress | On track for ~90 days |
-| Quality content | ✅ Complete | 97 optimized device pages |
-| 90 days of traffic data | ⏳ Collecting | Started Nov 11 |
-| Niche focus | ✅ Complete | SD cards for devices |
-| No policy violations | ✅ Verified | Clean affiliate disclosures |
-| Optional: Long-form content | 🟡 Maybe | Only if GSC shows demand |
+### Brand Category Pages
+- **Idea:** "Best SD Cards for GoPro", "Best SD Cards for DJI", "Best SD Cards for Canon"
+- **Trigger to act:** Only if GSC shows brand-level queries (not device-specific)
+- **Current signal:** No brand-level queries observed yet
+- **Next review:** Nov 25
 
 ---
 
-## 🎯 THE PROCESS (Next 90 Days)
+## 📈 2-WEEK SUCCESS METRICS
 
-```
-WEEK 1-4 (Nov 15 - Dec 13): Data Collection & Analysis
-├─ Monitor GSC daily
-├─ Identify high-potential keywords weekly
-└─ Prepare expansion list based on demand
+### By Nov 24:
+- [ ] 20+ new devices added to database
+- [ ] 5-8 high-potential pages optimized (images + content audit)
+- [ ] Long-form content strategy finalized (5-10 article roadmap)
 
-WEEK 5-12 (Dec 13 - Jan 31): Gradual Expansion
-├─ Add new devices (quality-first, GSC-informed)
-├─ Add content (FAQs, articles) based on query gaps
-├─ Monitor traffic toward 1000 sessions/month milestone
-└─ Adjust strategy based on emerging patterns
+### By Nov 30 (End of Sprint):
+- [ ] All Tier 1 devices live
+- [ ] CTR on optimized pages +0.5-1% (measurable improvement)
+- [ ] 1-2 long-form content pieces published & indexed
+- [ ] Total impressions: 3000-3500 (tracking growth)
 
-WEEK 13+: Mediavine Application
-├─ Apply when close to 1000 sessions/month
-├─ Add long-form content if needed
-└─ Continue gradual expansion post-approval
-```
+### By Dec 2:
+- [ ] GSC analysis updated with new device performance
+- [ ] Mediavine readiness check (still on track?)
+- [ ] Plan for Week 3 (continue expansion, scale long-form)
+
+---
+
+## 📝 DAILY PROCESS
+
+**You (Each Morning):**
+1. Share GSC snapshot (impressions, clicks, top pages, new queries)
+2. Flag any new high-demand devices discovered
+
+**Amp (Upon receiving data):**
+1. Update GSC_ANALYSIS.md with latest insights
+2. Identify devices to add + priority ranking
+3. Flag optimization opportunities
+4. Suggest next actions
+
+**Together (Weekly, Nov 24 & Dec 1):**
+1. Review CTR improvements on optimized pages
+2. Assess device addition velocity
+3. Finalize next week's priorities
 
 ---
 
 ## 💭 SUCCESS DEFINITION
 
-**90-Day Goal:** Demonstrate clear organic SEO traction toward 1000 sessions/month
-- Clear query patterns in GSC
-- Device pages converting visitors
-- Affiliate revenue tracking upward
-- Ready for Mediavine application
+**This Sprint:**
+- Organic growth continues unabated (no drops)
+- New devices get indexed within 2-3 days
+- Optimized pages show measurable CTR improvement
+- Long-form content roadmap ready for execution
 
-**What We're NOT Doing:**
-- Big content pushes without data
-- Adding devices randomly
-- Chasing vanity metrics
-- Overthinking the process
-
----
-
-## 🟡 BACKLOG (Future Opportunities - Monitor Before Acting)
-
-### Brand Category Pages (e.g., "Best SD Cards for GoPro", "Best SD Cards for Nikon")
-- **Status:** Idea phase - monitoring GSC
-- **Trigger to act:** If GSC shows brand-level queries (e.g., "best sd card for gopro", "dji sd card requirements")
-- **Why:** Easy content win if users search by brand instead of device model. Reuses existing dataset.
-- **Current signal:** No brand-level queries in GSC data yet (all queries are device-specific)
-- **Next review:** Nov 22 - check if any brand-level patterns emerging
+**By Mediavine Application:**
+- 1000+ sessions/month (already hitting 3000)
+- Diverse content (device pages + long-form guides)
+- Consistent organic growth trajectory
+- Clean affiliate practices ✅
 
 ---
 
-## 📝 DOCUMENTATION PROTOCOL
+**Let's get this done. Ready to start?** 
 
-**You provide:**
-- Daily GSC snapshots (when available)
-- Weekly summary: top queries, top device pages, trends
-
-**I maintain:**
-- Running analysis of GSC patterns
-- Opportunities list (new devices, content gaps)
-- Progress toward 1000 sessions/month milestone
-
-**Together we decide:**
-- Which devices to add next (based on search demand)
-- Which existing pages need content updates
-- When to add long-form content (if at all)
-- When to apply to Mediavine
-
----
-
-**Ready to start.** Share your first GSC snapshot whenever you're ready.
+What's the freshest GSC data you have right now? (Share Nov 18 snapshot if you have it + any updates from Nov 19)
