@@ -172,7 +172,7 @@ function getDeviceImageFallback(device) {
     "dji-air-3": "/img/devices/drones/dji-air-3.webp",
     "dji-air-3s": "/img/devices/drones/dji-air-3.webp",
     "dji-mavic-3": "/img/devices/drones/dji-mavic-3.webp",
-    "dji-osmo-pocket-3": "/img/devices/drones/dji-osmo-pocket-3.webp",
+    "dji-osmo-pocket-3": "/img/devices/action-cameras/dji-osmo-pocket-3.webp",
     "wyze-cam-v3": "/img/devices/security-cameras/wyze-cam-v3.webp",
     "reolink-e1-pro": "/img/devices/security-cameras/reolink-e1-pro.webp",
     "eufy-solocam-s340": "/img/devices/security-cameras/eufy-solocam-s340.webp",
