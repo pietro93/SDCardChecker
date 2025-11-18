@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
       toggle.addEventListener('click', function(e) {
         e.preventDefault();
         const section = this.getAttribute('data-section');
-        const content = mobileMenu.querySelector(`[data-content="${section}"]`);
+        const content = mobileMenu.querySelector('[data-content="' + section + '"]');
         const icon = this.querySelector('i');
         
         if (content) {

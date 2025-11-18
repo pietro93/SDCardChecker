@@ -213,8 +213,6 @@
   - ✅ Title: "How Many Photos Fit On Your SD Card?" (benefit-focused)
   - ✅ Subtitle: "Instantly Compare RAW vs. JPEG and Plan Your Shoot"
   - ✅ Expanded intro: ~250 words covering pain points (running out mid-burst, wrong card choice)
-  - [ ] Background image (camera, burst shooting)
-  - [ ] Dark overlay gradient
 
 - ✅ **Intro Copy** (COMPLETE)
   - ✅ ~250 words (photographer angle, real-world scenarios)
@@ -234,9 +232,10 @@
   - Schema: FAQPage (JSON-LD) ✅
 
 - [ ] **Related Resources Section** (TODO)
-  - [ ] Link to "SD Card Speed Class Guide" (need to create page)
-  - [ ] Link to "RAW vs JPEG Comparison Guide" (need to create page)
-  - [ ] Link to related calculators (Video, Timelapse)
+  - [ ] Find internal link opportunities to "SD Card Speed Class Guide" (need to create page) // check @components and @sd-card-guide templates for reference on how to create pages
+  - [ ] Find internal link opportunities to "RAW vs JPEG Comparison Guide" (need to create page)
+    - [ ] Find internal link opportunities to "How to find your camera bitrate" (need to create page)
+  - [ ] Add internal link to related calculators
 
 - [ ] **Images & Icons** (TODO)
   - [ ] Hero section background image (camera, burst shooting)

@@ -12,6 +12,7 @@ const { generateDevicePages } = require("./generate-device-pages");
 const { generateCategoryPages } = require("./generate-category-pages");
 const { generateResourcePages } = require("./generate-resource-pages");
 const { generateCalculatorPages } = require("./generate-calculator-pages");
+const { generateToolsPages } = require("./generate-tools-pages");
 const { generateCoreFiles } = require("./generate-core-files");
 const { generateRedirects } = require("./generate-redirects");
 
@@ -48,6 +49,10 @@ async function build() {
 
     // 6. Generate Calculator Pages
     await generateCalculatorPages(distPath);
+    console.log();
+
+    // 6.5. Generate Tools Pages (/tools/, /tools/calculators/)
+    await generateToolsPages(distPath);
     console.log();
 
     // 7. Generate URL Redirects for SEO migration

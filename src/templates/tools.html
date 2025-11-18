@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools — Storage Calculators & Resources | SD Card Checker</title>
+  <meta name="description" content="Free tools for SD card management. Storage calculators for video, photo, drone, dashcam, action camera, and security systems.">
+  <link rel="canonical" href="https://sdcardchecker.com/tools/">
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tools — Storage Calculators & Resources">
+  <meta property="og:description" content="Free tools for SD card management including storage calculators for all recording scenarios.">
+  <meta property="og:image" content="https://sdcardchecker.com/img/og-tools.webp">
+  <meta property="og:url" content="https://sdcardchecker.com/tools/">
+  <meta property="og:site_name" content="SD Card Checker">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tools — Storage Calculators & Resources">
+  <meta name="twitter:description" content="Free tools for SD card management including storage calculators.">
+  <meta name="twitter:image" content="https://sdcardchecker.com/img/og-tools.webp">
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sdcardchecker.com" },
+      { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://sdcardchecker.com/tools/" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="/assets/js/search.js"></script>
+  {{GROW_SCRIPT}}
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">Tools</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+          Tools
+        </h1>
+        <p class="text-xl text-slate-600 leading-relaxed">
+          Powerful, free tools to help you plan, calculate, and manage SD card storage for any recording scenario.
+        </p>
+      </div>
+
+      <!-- Accordions for Tool Categories -->
+      <div class="space-y-6">
+        <!-- Calculators Accordion -->
+        <div class="tools-accordion-item border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <button class="accordion-toggle w-full p-6 flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 hover:bg-slate-50 transition-colors"
+                  data-accordion="calculators" aria-expanded="true" aria-controls="calculators-content">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl">🧮</span>
+              <span>Storage Calculators</span>
+            </div>
+            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+          </button>
+          <div id="calculators-content" class="accordion-content border-t border-slate-200 p-6 bg-white">
+            <p class="text-slate-600 mb-6 leading-relaxed">
+              Calculate exact storage capacity and recording time for your specific device, bitrate, and SD card size. Whether you're shooting 4K video, 360° action cam footage, drone aerial, or security camera surveillance, we've got you covered.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {{CALCULATOR_CARDS}}
+            </div>
+            <div class="text-center">
+              <a href="/tools/calculators/" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors">
+                View All Calculators
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Future Tool Categories (Placeholder) -->
+      <div class="mt-12 p-8 bg-blue-50 border border-blue-200 rounded-lg">
+        <h2 class="text-xl font-bold text-slate-900 mb-4">Coming Soon</h2>
+        <p class="text-slate-600 mb-4">
+          We're working on additional tools to help you manage and optimize your SD card usage:
+        </p>
+        <ul class="space-y-2 text-slate-700">
+          <li class="flex gap-2">
+            <span class="text-blue-600">→</span>
+            <span><strong>Card Compatibility Checker:</strong> Find the best SD cards for your specific device</span>
+          </li>
+          <li class="flex gap-2">
+            <span class="text-blue-600">→</span>
+            <span><strong>Speed Class Calculator:</strong> Determine if your card meets your device's requirements</span>
+          </li>
+          <li class="flex gap-2">
+            <span class="text-blue-600">→</span>
+            <span><strong>Bulk Import Tool:</strong> Analyze multiple devices and get recommendations</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    {{SIDEBAR}}
+  </div>
+
+  {{FOOTER}}
+
+  <script>
+    // Accordion functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggles = document.querySelectorAll('.accordion-toggle');
+
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const accordion = toggle.getAttribute('data-accordion');
+          const content = document.getElementById(`${accordion}-content`);
+          const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+          const icon = toggle.querySelector('i');
+
+          // Toggle current
+          if (content) {
+            content.classList.toggle('hidden');
+            toggle.setAttribute('aria-expanded', !isExpanded);
+            icon.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+          }
+        });
+      });
+
+      // Initialize with expanded state
+      toggles.forEach(toggle => {
+        const accordion = toggle.getAttribute('data-accordion');
+        const content = document.getElementById(`${accordion}-content`);
+        const icon = toggle.querySelector('i');
+
+        if (toggle.getAttribute('aria-expanded') === 'true') {
+          if (content) content.classList.remove('hidden');
+          if (icon) icon.style.transform = 'rotate(180deg)';
+        } else {
+          if (content) content.classList.add('hidden');
+          if (icon) icon.style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+  </script>
+
+  <style>
+    .tools-accordion-item {
+      @apply bg-white;
+    }
+
+    .accordion-toggle {
+      @apply cursor-pointer;
+    }
+
+    .accordion-toggle:active {
+      background-color: rgba(59, 130, 246, 0.05);
+    }
+
+    .accordion-content {
+      max-height: 3000px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .accordion-content.hidden {
+      max-height: 0;
+      overflow: hidden;
+      padding-top: 0;
+      padding-bottom: 0;
+      border-top: none;
+    }
+
+    .calculator-card {
+      @apply relative rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all group cursor-pointer h-64;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%);
+    }
+
+    .calculator-card a {
+      @apply block absolute inset-0;
+    }
+
+    .calculator-card img {
+      @apply absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300;
+    }
+
+    .calculator-card-overlay {
+      @apply absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent flex flex-col justify-end p-6;
+    }
+
+    .calculator-card-content {
+      @apply relative z-10;
+    }
+
+    .calculator-card-title {
+      @apply text-lg font-bold text-white mb-1;
+    }
+
+    .calculator-card-description {
+      @apply text-sm text-slate-200;
+    }
+
+    .calculator-card:hover .calculator-card-overlay {
+      @apply bg-gradient-to-t from-slate-900 via-slate-900/50 to-slate-900/20;
+    }
+  </style>
+</body>
+</html>

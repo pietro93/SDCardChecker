@@ -23,6 +23,21 @@ function generateSitemap(allDevices, distPath) {
   </url>
 `;
 
+  // Add tools pages
+  sitemapXML += `  <url>
+    <loc>https://sdcardchecker.com/tools/</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://sdcardchecker.com/tools/calculators/</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+`;
+
   // Add calculator pages
   const calculators = [
     { path: "/tools/calculators/video-storage/", priority: 0.9 },
