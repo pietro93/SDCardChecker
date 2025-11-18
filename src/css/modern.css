@@ -708,6 +708,14 @@ label {
   display: block;
 }
 
+/* Device Page Breadcrumb Icon */
+.device-breadcrumb-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  display: inline-block;
+}
+
 .feature-card h3 {
   margin-top: 0;
   margin-bottom: 0.75rem;
