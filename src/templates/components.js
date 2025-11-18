@@ -71,14 +71,15 @@ return `<!-- Favicon -->
 
       <div class="relative group flex items-center">
       <a href="#" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
-      Resources
+      Guides
       <i class="fas fa-chevron-down text-xs"></i>
       </a>
-      <div class="absolute left-0 top-full pt-2 w-48 hidden group-hover:block">
+      <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
       <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-       <a href="/sd-card-guide.html" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SD Card Guide</a>
-       <a href="/speed-classes.html" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Speed Classes</a>
-       <a href="/faq.html" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">FAQ</a>
+       <a href="/guides/sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SD Card Guide</a>
+       <a href="/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Speed Classes</a>
+       <a href="/guides/video-bitrate-comparison/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Video Bitrate Guide</a>
+       <a href="/guides/raw-vs-jpeg/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">RAW vs JPEG</a>
        </div>
        </div>
       </div>
@@ -134,9 +135,10 @@ return `<!-- Favicon -->
         <i class="fas fa-chevron-right transition-transform duration-300"></i>
       </button>
       <div class="mobile-section hidden pl-4 space-y-1" data-content="resources">
-        <a href="/sd-card-guide.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">SD Card Guide</a>
-        <a href="/speed-classes.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Speed Classes</a>
-        <a href="/faq.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">FAQ</a>
+        <a href="/guides/sd-card-guide/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">SD Card Guide</a>
+        <a href="/guides/sd-card-speed-classes/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Speed Classes</a>
+        <a href="/guides/video-bitrate-comparison/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Video Bitrate Guide</a>
+        <a href="/guides/raw-vs-jpeg/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">RAW vs JPEG</a>
       </div>
       
       <!-- Direct Links -->
@@ -292,13 +294,14 @@ function generateSidebar() {
     </ul>
   </div>
 
-  <!-- Resource Links -->
+  <!-- Guide Links -->
   <div class="mb-6 border-t border-slate-200 pt-6">
-    <h3 class="text-sm font-semibold text-slate-900 mb-3">Resources</h3>
+    <h3 class="text-sm font-semibold text-slate-900 mb-3">Guides</h3>
     <ul class="space-y-2">
-      <li><a href="/sd-card-guide.html" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">SD Card Guide</a></li>
-      <li><a href="/speed-classes.html" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Speed Classes</a></li>
-      <li><a href="/faq.html" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">FAQ</a></li>
+      <li><a href="/guides/sd-card-guide/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">SD Card Guide</a></li>
+      <li><a href="/guides/sd-card-speed-classes/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Speed Classes</a></li>
+      <li><a href="/guides/video-bitrate-comparison/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Video Bitrate Guide</a></li>
+      <li><a href="/guides/raw-vs-jpeg/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">RAW vs JPEG</a></li>
     </ul>
   </div>
 
