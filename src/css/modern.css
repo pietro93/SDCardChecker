@@ -683,6 +683,17 @@ label {
 .feature-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.feature-icon img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
 }
 
 .feature-card h3 {
