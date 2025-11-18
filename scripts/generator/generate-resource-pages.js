@@ -89,7 +89,7 @@ async function generateResourcePages(distPath) {
         },
         {
             template: path.join(srcPath, "templates/guides/fake-sd-card-checker.html"),
-            file: "fake-sd-card-checker/index.html",
+            file: "is-my-sd-card-fake/index.html",
             name: "Fake SD Card Checker"
         }
     ];
