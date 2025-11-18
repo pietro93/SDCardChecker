@@ -200,8 +200,13 @@ function getDeviceImageFallback(device) {
     "nikon-z8": "/img/devices/cameras/nikon-z8.webp",
     "blackmagic-pocket-cinema-camera-4k": "/img/devices/cameras/blackmagic-pocket-cinema-camera-4k.webp",
     "blackmagic-pocket-cinema-camera-6k-pro": "/img/devices/cameras/blackmagic-pocket-cinema-camera-6k-pro.webp",
+    "leica-q2": "/img/devices/cameras/leica-q3.webp",
     "leica-q3": "/img/devices/cameras/leica-q3.webp",
-    "panasonic-lumix-s1h": "/img/devices/cameras/lumix.webp",
+    "panasonic-lumix-s1h": "/img/devices/cameras/lumix-placeholder.webp",
+    "panasonic-lumix-s5-ii": "/img/devices/cameras/lumix-placeholder.webp",
+    "panasonic-lumix-s5-iix": "/img/devices/cameras/lumix-placeholder.webp",
+    "panasonic-lumix-s9": "/img/devices/cameras/lumix-placeholder.webp",
+    "nikon-z50-ii": "/img/devices/cameras/nikon-placeholder.webp",
     "raspberry-pi-5": "/img/devices/computing/raspberry-pi-5.webp",
     "raspberry-pi-4-model-b": "/img/devices/computing/raspberry-placeholder.webp",
     "raspberry-pi-3-model-b-plus": "/img/devices/computing/raspberry-placeholder.webp",
@@ -235,7 +240,7 @@ function getDeviceImageFallback(device) {
   if (name.includes("sony")) return "/img/devices/cameras/sony-placeholder.webp";
   if (name.includes("fujifilm")) return "/img/devices/cameras/fujifilm-placeholder.webp";
   if (name.includes("leica")) return "/img/devices/cameras/leica-q3.webp";
-  if (name.includes("panasonic") || name.includes("lumix")) return "/img/devices/cameras/lumix.webp";
+  if (name.includes("panasonic") || name.includes("lumix")) return "/img/devices/cameras/lumix-placeholder.webp";
   if (name.includes("dash cam") || name.includes("dash-cam")) return "/img/devices/action-cameras/dash-cam-placeholder.webp";
   if (name.includes("reolink")) return "/img/devices/security-cameras/reolink-e1-pro.webp";
 
@@ -436,7 +441,7 @@ function generateRelatedDevices(device, allDevices) {
   const cards = relatedDevices
   .map(
   (d) => {
-        const imgUrl = d.imageUrl || getDeviceImageFallback(d);
+        const imgUrl = getDeviceImageFallback(d);
         return `
   <div class="device-card" style="background-image: url('${imgUrl}'); background-size: cover; background-position: center; position: relative; background-color: #f3f4f6;" role="article" aria-label="SD card recommendation for ${d.name}" onmouseover="this.querySelector('.device-card-overlay').style.opacity='0.95'" onmouseout="this.querySelector('.device-card-overlay').style.opacity='0.85'">
   <div class="device-card-overlay" style="position: absolute; inset: 0; background: rgba(240, 240, 240, 0.85); transition: opacity 0.3s ease;"></div>
