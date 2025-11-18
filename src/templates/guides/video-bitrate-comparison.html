@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Bitrate Comparison - H.264 vs H.265 vs ProRes | SD Card Checker</title>
-  <meta name="description" content="Complete guide comparing H.264, H.265 (HEVC), and ProRes codecs. Learn bitrate differences, file sizes, and which codec is best for your camera and use case.">
+  <title>Video Codec & Bitrate Guide: H.264 vs H.265 vs ProRes | SD Card Checker</title>
+  <meta name="description" content="Compare H.264, H.265 (HEVC), & ProRes codecs. See how bitrate impacts file size and quality for 4K video. Choose the right codec for your camera & workflow.">
   <link rel="canonical" href="{{BASE_URL}}/guides/video-bitrate-comparison/">
   
   <!-- Open Graph for Social Sharing -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Video Bitrate Comparison - H.264 vs H.265 vs ProRes">
-  <meta property="og:description" content="Compare video codecs and understand bitrate implications for storage and quality.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Video Codec & Bitrate Guide: H.264 vs H.265 vs ProRes">
+  <meta property="og:description" content="Choose the right codec to maximize video quality and minimize storage needs. Our guide makes it simple.">
   <meta property="og:image" content="{{BASE_URL}}/img/guides/video-bitrate-hero.webp">
   <meta property="og:url" content="{{BASE_URL}}/guides/video-bitrate-comparison/">
   <meta property="og:site_name" content="SD Card Checker">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Video Bitrate Comparison">
-  <meta name="twitter:description" content="H.264 vs H.265 vs ProRes - which codec is right for you?">
+  <meta name="twitter:title" content="Video Codec & Bitrate Guide: H.264 vs H.265 vs ProRes">
+  <meta name="twitter:description" content="H.264 vs H.265 vs ProRes - which video codec is right for you? Compare file sizes, quality, and storage needs.">
   <meta name="twitter:image" content="{{BASE_URL}}/img/guides/video-bitrate-hero.webp">
 
   <!-- Schema.org Markup -->
@@ -26,10 +26,22 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Video Bitrate Comparison Guide",
-    "description": "Complete comparison of H.264, H.265 (HEVC), and ProRes video codecs",
+    "headline": "Video Codec & Bitrate Comparison Guide: H.264 vs H.265 vs ProRes",
+    "description": "A complete comparison of H.264, H.265 (HEVC), and ProRes video codecs, explaining their impact on bitrate, file size, quality, and storage requirements.",
     "image": "{{BASE_URL}}/img/guides/video-bitrate-hero.webp",
-    "url": "{{BASE_URL}}/guides/video-bitrate-comparison/"
+    "url": "{{BASE_URL}}/guides/video-bitrate-comparison/",
+    "author": {
+      "@type": "Organization",
+      "name": "SD Card Checker"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SD Card Checker",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{BASE_URL}}/img/logo.png"
+      }
+    }
   }
   </script>
 
@@ -54,10 +66,40 @@
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Video Bitrate Comparison",
+        "name": "Video Codec & Bitrate Guide",
         "item": "{{BASE_URL}}/guides/video-bitrate-comparison/"
       }
     ]
+  }
+  </script>
+  
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "What codec is best for YouTube?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "H.264 is the most common and recommended codec for uploading to YouTube due to its universal compatibility. While YouTube accepts H.265, using H.264 ensures your video can be processed quickly and viewed on all devices."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Is H.265 really better than H.264?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, H.265 (HEVC) is technically superior. It offers the same visual quality as H.264 but at roughly half the file size, making it much more efficient for storage. The main trade-off is that it requires more powerful hardware to encode and decode, and it is not yet as universally supported as H.264."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Is ProRes worth the extra storage space?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For professional filmmakers, colorists, and editors, ProRes is absolutely worth the space. Its high bitrate and low compression preserve maximum image data, providing extensive flexibility in post-production for color grading and visual effects. For everyday use or direct-to-web content, it is generally overkill."
+      }
+    }]
   }
   </script>
 
@@ -72,12 +114,12 @@
   <!-- Breadcrumb -->
   <div class="bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 py-3">
-      <nav class="text-sm text-slate-600 flex items-center gap-2">
+      <nav aria-label="breadcrumb" class="text-sm text-slate-600 flex items-center gap-2">
         <a href="/" class="text-blue-600 hover:underline">Home</a>
         <i class="fas fa-chevron-right text-xs"></i>
         <a href="/guides/" class="text-blue-600 hover:underline">Guides</a>
         <i class="fas fa-chevron-right text-xs"></i>
-        <span class="text-slate-900">Video Bitrate Comparison</span>
+        <span class="text-slate-900 font-medium" aria-current="page">Video Codec & Bitrate Guide</span>
       </nav>
     </div>
   </div>
@@ -87,9 +129,9 @@
     <div class="relative rounded-xl overflow-hidden h-96 bg-gradient-to-r from-purple-600 to-blue-700 flex items-center" style="background-image: url('/img/guides/video-bitrate-hero.webp'); background-size: cover; background-position: center;">
       <div class="absolute inset-0 bg-black opacity-40"></div>
       <div class="relative z-10 w-full text-white px-8 py-12">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Video Codec & Bitrate Comparison</h1>
-        <p class="text-xl text-purple-100 mb-6">H.264 vs H.265 vs ProRes: Understand Codec Choices</p>
-        <p class="text-purple-50 max-w-2xl">Learn how different video codecs affect bitrate, file size, and storage requirements. Understand which codec is best for your camera, use case, and workflow.</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Video Codec & Bitrate Guide</h1>
+        <p class="text-xl text-purple-100 mb-6">H.264 vs. H.265 vs. ProRes: Choose the Right Codec to Maximize Quality & Minimize Storage</p>
+        <p class="text-purple-50 max-w-2xl">Don't let confusing terms like 'bitrate' and 'codec' compromise your video. This guide makes it simple to choose the perfect setting for your camera, workflow, and storage.</p>
       </div>
     </div>
   </section>
@@ -98,52 +140,83 @@
     <main class="flex-1">
       {{AFFILIATE_DISCLOSURE}}
 
+      <!-- Key Takeaways Section -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Key Takeaways: Which Codec to Use</h2>
+        <p class="text-slate-700 leading-relaxed mb-6">No time for details? Here’s the short answer:</p>
+        <div class="grid md:grid-cols-3 gap-6 text-center">
+            <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                <h3 class="font-bold text-lg text-blue-700 mb-2">Use H.264 For...</h3>
+                <p class="text-sm text-slate-600">Maximum compatibility. Perfect for social media, YouTube, and sharing, as it plays on virtually any device.</p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                <h3 class="font-bold text-lg text-green-700 mb-2">Use H.265 (HEVC) For...</h3>
+                <p class="text-sm text-slate-600">Saving storage. Get the same quality as H.264 in half the file size. Ideal for 4K/8K recording and modern devices.</p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                <h3 class="font-bold text-lg text-purple-700 mb-2">Use ProRes For...</h3>
+                <p class="text-sm text-slate-600">Professional editing. When you need maximum flexibility for color grading and post-production. The industry standard for filmmaking.</p>
+            </div>
+        </div>
+      </section>
+
       <!-- Introduction -->
       <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
-        <h2 class="text-2xl font-bold text-slate-900 mb-4">Understanding Video Codecs</h2>
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">What Is a Video Codec and Why Does It Matter?</h2>
         <p class="text-slate-700 leading-relaxed mb-4">
-          A video codec is an algorithm that compresses video data to reduce file size while maintaining quality. The codec you choose affects how much storage you need, what bitrate your camera outputs, and whether professionals can use your files in their workflows.
+          A video codec (short for coder-decoder) is a technology used to compress and decompress digital video. Think of it as a language your camera uses to shrink massive raw video files into manageable sizes.
         </p>
         <p class="text-slate-700 leading-relaxed">
-          This guide compares the three most common codecs: H.264 (industry standard), H.265 (modern efficient), and ProRes (professional quality).
+          The codec you choose directly impacts three key things: **file size** (how much storage you need), **video quality**, and **editing performance**. This guide compares the three most common codecs you'll find in modern cameras: H.264, H.265, and ProRes.
         </p>
       </section>
 
       <!-- Quick Comparison Table -->
       <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
-        <h2 class="text-2xl font-bold text-slate-900 mb-6">Quick Codec Comparison</h2>
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Codec Comparison at a Glance</h2>
         <div class="overflow-x-auto">
           <table class="w-full text-sm">
             <thead class="bg-slate-100 border-b border-slate-300">
               <tr>
                 <th class="px-4 py-3 text-left font-bold text-slate-900">Codec</th>
-                <th class="px-4 py-3 text-left font-bold text-slate-900">4K 30fps Bitrate</th>
-                <th class="px-4 py-3 text-left font-bold text-slate-900">File Size (per minute)</th>
-                <th class="px-4 py-3 text-left font-bold text-slate-900">Best For</th>
+                <th class="px-4 py-3 text-left font-bold text-slate-900">Typical 4K 30fps Bitrate</th>
+                <th class="px-4 py-3 text-left font-bold text-slate-900">File Size (1 Minute)</th>
+                <th class="px-4 py-3 text-left font-bold text-slate-900">Primary Use Case</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-200">
               <tr class="hover:bg-slate-50">
-                <td class="px-4 py-3 font-bold text-blue-600">H.264</td>
-                <td class="px-4 py-3">100-150 Mbps</td>
-                <td class="px-4 py-3">750 MB - 1.1 GB</td>
-                <td class="px-4 py-3">Consumer cameras, streaming</td>
+                <td class="px-4 py-3 font-medium"><span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">H.264</span></td>
+                <td class="px-4 py-3">~100 Mbps</td>
+                <td class="px-4 py-3">~750 MB</td>
+                <td class="px-4 py-3">Universal Compatibility & Streaming</td>
               </tr>
               <tr class="hover:bg-slate-50">
-                <td class="px-4 py-3 font-bold text-green-600">H.265</td>
-                <td class="px-4 py-3">50-75 Mbps</td>
-                <td class="px-4 py-3">375 MB - 560 MB</td>
-                <td class="px-4 py-3">Efficient storage, newer devices</td>
+                <td class="px-4 py-3 font-medium"><span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">H.265</span></td>
+                <td class="px-4 py-3">~50 Mbps</td>
+                <td class="px-4 py-3">~375 MB</td>
+                <td class="px-4 py-3">Efficient Storage (4K/8K)</td>
               </tr>
               <tr class="hover:bg-slate-50">
-                <td class="px-4 py-3 font-bold text-purple-600">ProRes</td>
-                <td class="px-4 py-3">200-500 Mbps</td>
-                <td class="px-4 py-3">1.5 GB - 3.75 GB</td>
-                <td class="px-4 py-3">Professional editing, cinema</td>
+                <td class="px-4 py-3 font-medium"><span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">ProRes</span></td>
+                <td class="px-4 py-3">400+ Mbps</td>
+                <td class="px-4 py-3">3 GB+</td>
+                <td class="px-4 py-3">Professional Post-Production</td>
               </tr>
             </tbody>
           </table>
         </div>
+      </section>
+
+      <!-- Real-World Example Section -->
+      <section class="bg-indigo-50 border-t-4 border-indigo-500 rounded-b-lg p-8 mb-12 shadow-sm">
+        <h3 class="text-xl font-bold text-indigo-900 mb-3 flex items-center gap-3"><i class="fas fa-calculator text-indigo-500"></i>Real-World Storage Impact</h3>
+        <p class="text-indigo-800 mb-4">To understand what these bitrates mean for a project, imagine recording **1 hour of 4K 30fps video**:</p>
+        <ul class="space-y-2 text-indigo-900">
+          <li><strong class="font-semibold text-blue-700">H.264:</strong> Would require approximately <strong class="font-bold">45 GB</strong> of storage.</li>
+          <li><strong class="font-semibold text-green-700">H.265:</strong> Would require approximately <strong class="font-bold">22.5 GB</strong> of storage (50% savings!).</li>
+          <li><strong class="font-semibold text-purple-700">ProRes 422:</strong> Would require approximately <strong class="font-bold">223 GB</strong> of storage.</li>
+        </ul>
       </section>
 
       <!-- Codec Details -->
@@ -151,29 +224,25 @@
         <!-- H.264 -->
         <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8">
           <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 font-bold">H</span>
-            H.264 (MPEG-4 AVC)
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 font-bold">1</span>
+            H.264 (AVC) - The Universal Standard
           </h3>
           <div class="space-y-4 text-slate-700">
             <div>
-              <h4 class="font-bold text-slate-900 mb-2">Overview</h4>
-              <p>H.264 is the most widely used video codec. It's been the industry standard for over 15 years and is supported by virtually all devices, cameras, and platforms.</p>
+              <h4 class="font-bold text-slate-900 mb-2">What Is It?</h4>
+              <p>For over a decade, H.264 (also known as AVC) has been the dominant video codec. It offers a great balance of quality and file size and is supported by virtually every camera, computer, smartphone, and website in existence.</p>
             </div>
             <div>
-              <h4 class="font-bold text-slate-900 mb-2">Storage Impact</h4>
-              <p>Requires more storage than H.265 due to less efficient compression. A 4K 30fps H.264 stream typically uses 100-150 Mbps.</p>
-            </div>
-            <div>
-              <h4 class="font-bold text-slate-900 mb-2">Best For</h4>
+              <h4 class="font-bold text-slate-900 mb-2">When Should You Use H.264?</h4>
               <ul class="list-disc pl-5 space-y-1">
-                <li>Consumer cameras and smartphones</li>
-                <li>Streaming (YouTube, social media)</li>
-                <li>Maximum device compatibility</li>
-                <li>Established workflows</li>
+                <li>When your top priority is ensuring the video plays everywhere.</li>
+                <li>For uploading content to YouTube, Instagram, or other social platforms.</li>
+                <li>If you are using older editing software or a less powerful computer.</li>
               </ul>
             </div>
-            <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mt-4">
-              <p class="text-sm"><strong>Speed Class Needed:</strong> V30 minimum for 4K 30fps H.264</p>
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mt-4 rounded">
+              <p class="text-sm"><strong>Verdict:</strong> The safe, reliable choice for everyday recording and sharing.</p>
+              <p class="text-sm mt-1"><strong>SD Card Needed:</strong> A <a href="/guides/sd-card-speed-classes/" class="font-bold text-blue-600 hover:underline">V30</a> rated card is sufficient for most 4K H.264 recording.</p>
             </div>
           </div>
         </div>
@@ -181,29 +250,25 @@
         <!-- H.265 -->
         <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8">
           <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-green-100 text-green-600 font-bold">H</span>
-            H.265 (HEVC)
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-green-100 text-green-600 font-bold">2</span>
+            H.265 (HEVC) - The Efficient Successor
           </h3>
           <div class="space-y-4 text-slate-700">
             <div>
-              <h4 class="font-bold text-slate-900 mb-2">Overview</h4>
-              <p>H.265 (High Efficiency Video Coding) is the modern successor to H.264. It provides better compression, achieving the same quality at ~50% lower bitrate.</p>
+              <h4 class="font-bold text-slate-900 mb-2">What Is It?</h4>
+              <p>H.265, or HEVC (High Efficiency Video Coding), is the modern successor to H.264. Its main advantage is superior compression: it can deliver the same video quality at about half the bitrate, which means file sizes are 50% smaller.</p>
             </div>
             <div>
-              <h4 class="font-bold text-slate-900 mb-2">Storage Impact</h4>
-              <p>Significantly reduces storage needs. A 4K 30fps H.265 stream uses only 50-75 Mbps, roughly half of H.264.</p>
-            </div>
-            <div>
-              <h4 class="font-bold text-slate-900 mb-2">Best For</h4>
+              <h4 class="font-bold text-slate-900 mb-2">When Should You Use H.265?</h4>
               <ul class="list-disc pl-5 space-y-1">
-                <li>Newer cameras and phones</li>
-                <li>Storage-constrained workflows</li>
-                <li>Longer recording sessions</li>
-                <li>4K and 8K content</li>
+                <li>When you want to save storage space on your SD cards and hard drives.</li>
+                <li>For recording high-resolution 4K or 8K footage.</li>
+                <li>If your camera, computer, and editing software are all relatively new (made in the last ~5 years).</li>
               </ul>
             </div>
-            <div class="bg-green-50 border-l-4 border-green-400 p-4 mt-4">
-              <p class="text-sm"><strong>Speed Class Needed:</strong> V30 for 4K 30fps H.265 (same as H.264)</p>
+            <div class="bg-green-50 border-l-4 border-green-400 p-4 mt-4 rounded">
+              <p class="text-sm"><strong>Verdict:</strong> The smart choice for future-proofing and saving space, if your gear supports it.</p>
+              <p class="text-sm mt-1"><strong>SD Card Needed:</strong> A <a href="/guides/sd-card-speed-classes/" class="font-bold text-green-600 hover:underline">V30</a> card is still often enough, as the bitrate is lower than H.264.</p>
             </div>
           </div>
         </div>
@@ -211,54 +276,92 @@
         <!-- ProRes -->
         <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8">
           <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-purple-100 text-purple-600 font-bold">P</span>
-            ProRes (Professional)
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-purple-100 text-purple-600 font-bold">3</span>
+            ProRes - The Professional's Choice
           </h3>
           <div class="space-y-4 text-slate-700">
             <div>
-              <h4 class="font-bold text-slate-900 mb-2">Overview</h4>
-              <p>ProRes is Apple's professional codec designed for post-production editing. It uses higher bitrates than H.264/H.265 for maximum quality and editing flexibility.</p>
+              <h4 class="font-bold text-slate-900 mb-2">What Is It?</h4>
+              <p>Developed by Apple, ProRes is a professional-grade codec designed for post-production. Unlike H.264/H.265 which prioritize small file sizes, ProRes prioritizes preserving image data. This makes files much larger but gives editors immense flexibility for color grading and effects work.</p>
             </div>
             <div>
-              <h4 class="font-bold text-slate-900 mb-2">Storage Impact</h4>
-              <p>Requires significantly more storage. ProRes 4K 30fps uses 200-500 Mbps depending on variant (ProRes 422, ProRes HQ, etc.).</p>
-            </div>
-            <div>
-              <h4 class="font-bold text-slate-900 mb-2">Best For</h4>
+              <h4 class="font-bold text-slate-900 mb-2">When Should You Use ProRes?</h4>
               <ul class="list-disc pl-5 space-y-1">
-                <li>Professional cinema production</li>
-                <li>High-end editing workflows</li>
-                <li>Color grading and effects</li>
-                <li>Archival quality footage</li>
+                <li>For professional film projects, commercials, or high-end client work.</li>
+                <li>When you plan to do intensive color grading or VFX.</li>
+                <li>If your final product needs to meet strict broadcast or cinema standards.</li>
               </ul>
             </div>
-            <div class="bg-purple-50 border-l-4 border-purple-400 p-4 mt-4">
-              <p class="text-sm"><strong>Speed Class Needed:</strong> V60-V90 for ProRes recording (higher bitrates)</p>
+            <div class="bg-purple-50 border-l-4 border-purple-400 p-4 mt-4 rounded">
+              <p class="text-sm"><strong>Verdict:</strong> The ultimate choice for quality and editing flexibility, but overkill for most users due to massive file sizes.</p>
+              <p class="text-sm mt-1"><strong>SD Card Needed:</strong> Requires very fast cards, typically <a href="/guides/sd-card-speed-classes/" class="font-bold text-purple-600 hover:underline">V60 or V90</a>, depending on the ProRes variant.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Storage Calculator Reference -->
-      <section class="bg-blue-50 border-l-4 border-blue-500 rounded-lg p-8 mb-12">
-        <h3 class="text-xl font-bold text-blue-900 mb-3">Calculate Your Storage Needs</h3>
-        <p class="text-blue-800 mb-4">Now that you understand codecs and bitrates, use our <strong>Video Storage Calculator</strong> to determine exactly how much SD card capacity you need for your specific bitrate.</p>
-        <a href="/tools/calculators/video-storage/" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
-          Go to Video Storage Calculator →
+      <!-- Storage Calculator CTA -->
+      <section class="bg-blue-600 text-white rounded-lg p-8 mb-12 text-center shadow-lg">
+        <h3 class="text-2xl font-bold mb-3">Ready to Plan Your Shoot?</h3>
+        <p class="max-w-2xl mx-auto mb-6">Now that you know your codec, use our free tool to see exactly how much recording time you'll get on any SD card.</p>
+        <a href="/tools/calculators/video-storage/" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition transform hover:scale-105">
+          Calculate Your Exact Storage Needs (Free) &rarr;
         </a>
+      </section>
+      
+      <!-- FAQ Section -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          <details class="group">
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900">
+              <span>What codec is best for YouTube?</span>
+              <span class="transition group-open:rotate-180">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </summary>
+            <p class="text-slate-600 mt-3 group-open:animate-fadeIn">
+              <strong>H.264 is the safest and most recommended codec for YouTube.</strong> While YouTube now accepts H.265, H.264 guarantees fast processing and flawless playback on all devices.
+            </p>
+          </details>
+          <hr class="border-slate-200">
+          <details class="group">
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900">
+              <span>Can I convert H.264 to H.265 to save space?</span>
+              <span class="transition group-open:rotate-180">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </summary>
+            <p class="text-slate-600 mt-3 group-open:animate-fadeIn">
+              Yes, you can convert (transcode) your files, but there's a catch. Converting from one compressed format to another (like H.264 to H.265) will always result in some quality loss. It's best to record in H.265 from the start if storage is your main concern.
+            </p>
+          </details>
+          <hr class="border-slate-200">
+          <details class="group">
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900">
+              <span>What's the difference between bitrate and resolution?</span>
+              <span class="transition group-open:rotate-180">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </summary>
+            <p class="text-slate-600 mt-3 group-open:animate-fadeIn">
+              <strong>Resolution</strong> (like 1080p or 4K) is the number of pixels in the image. <strong>Bitrate</strong> is the amount of data used to encode that image per second. You can have a 4K video with a low bitrate (poor, blocky quality) or a high bitrate (crisp, detailed quality). Higher quality demands a higher bitrate.
+            </p>
+          </details>
+        </div>
       </section>
 
       <!-- Related Guides -->
       <section class="bg-slate-50 rounded-lg p-8 border border-slate-200">
-        <h3 class="text-xl font-bold text-slate-900 mb-4">Related Guides</h3>
+        <h3 class="text-xl font-bold text-slate-900 mb-4">Continue Learning</h3>
         <div class="grid md:grid-cols-2 gap-4">
-          <a href="/guides/sd-card-speed-classes/" class="bg-white p-4 rounded border border-slate-200 hover:border-blue-300 hover:bg-blue-50 transition">
-            <p class="font-bold text-slate-900 mb-1">📊 Speed Classes Guide</p>
-            <p class="text-sm text-slate-600">Understand V30, V60, V90 and which you need</p>
+          <a href="/guides/sd-card-speed-classes/" class="block bg-white p-4 rounded-lg border border-slate-200 hover:border-blue-400 hover:shadow-md transition">
+            <p class="font-bold text-slate-900 mb-1">📊 Guide to SD Card Speed Classes</p>
+            <p class="text-sm text-slate-600">Decode V30, V60, and V90 to find the exact speed you need for your video.</p>
           </a>
-          <a href="/tools/calculators/video-storage/" class="bg-white p-4 rounded border border-slate-200 hover:border-blue-300 hover:bg-blue-50 transition">
-            <p class="font-bold text-slate-900 mb-1">🎬 Video Storage Calculator</p>
-            <p class="text-sm text-slate-600">Calculate storage for your bitrate</p>
+          <a href="/guides/best-sd-cards-for-4k-video/" class="block bg-white p-4 rounded-lg border border-slate-200 hover:border-blue-400 hover:shadow-md transition">
+            <p class="font-bold text-slate-900 mb-1">🏆 Best SD Cards for 4K Video</p>
+            <p class="text-sm text-slate-600">Our top picks for reliable 4K video recording across all budgets.</p>
           </a>
         </div>
       </section>
