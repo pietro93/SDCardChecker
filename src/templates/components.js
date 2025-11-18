@@ -70,7 +70,7 @@ return `<!-- Favicon -->
       </div>
 
       <div class="relative group flex items-center">
-      <a href="#" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
+      <a href="/guides/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
       Guides
       <i class="fas fa-chevron-down text-xs"></i>
       </a>
