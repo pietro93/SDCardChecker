@@ -348,22 +348,22 @@ This is **not** a content problem. Your pages are relevant. The problem is they'
 
 ---
 
-## 🌍 LANGUAGE LOCALIZATION STRATEGY
+## 🌍 LANGUAGE LOCALIZATION STRATEGY (UPDATED)
 
 ### Market Opportunity Analysis
 
-| Language | Search Volume | Monetization | Market Difficulty | Timeline | ROI |
-|----------|---------------|--------------|-------------------|----------|-----|
-| 🇯🇵 **Japanese** | ⭐⭐⭐⭐⭐ MASSIVE | ✅ Journey/Mediavine* | ⭐⭐⭐⭐ HARD | 12+ mo | 🟢 **BEST** |
-| 🇸🇪 **Swedish** | ⭐⭐⭐⭐ HIGH | ✅ Mediavine + OneLink | ⭐⭐⭐ MEDIUM | 6-9 mo | 🟢 **STRONG** |
-| 🇳🇱 **Dutch** | ⭐⭐⭐⭐ HIGH | ✅ Mediavine + OneLink | ⭐⭐⭐ MEDIUM | 6-9 mo | 🟢 **STRONG** |
-| 🇩🇪 German | ⭐⭐⭐⭐ HIGH | ✅ Mediavine + OneLink | ⭐⭐⭐ MEDIUM | 6-9 mo | 🟡 GOOD |
-| 🇫🇷 French | ⭐⭐⭐ MEDIUM | ✅ Mediavine + OneLink | ⭐⭐⭐ MEDIUM | 6-9 mo | 🟡 GOOD |
-| 🇪🇸 Spanish | ⭐⭐⭐⭐ HIGH | ✅ Mediavine + OneLink | ⭐⭐⭐⭐ HARD | 9-12 mo | 🟡 OKAY |
+| Language | Search Volume | Monetization | Market Difficulty | Timeline | ROI | Status |
+|----------|---------------|--------------|-------------------|----------|-----|--------|
+| 🇯🇵 **Japanese** | ⭐⭐⭐⭐⭐ MASSIVE | ✅ **Amazon Associates UNLOCKED** | ⭐⭐⭐⭐ HARD | **6-9 mo** | 🟢 **BEST** | 🔓 BLOCKER SOLVED |
+| 🇸🇪 **Swedish** | ⭐⭐⭐⭐ HIGH | ✅ Mediavine + OneLink | ⭐⭐⭐ MEDIUM | 6-9 mo | 🟢 **STRONG** | Ready |
+| 🇳🇱 **Dutch** | ⭐⭐⭐⭐ HIGH | ✅ Mediavine + OneLink | ⭐⭐⭐ MEDIUM | 6-9 mo | 🟢 **STRONG** | Ready |
+| 🇩🇪 German | ⭐⭐⭐⭐ HIGH | ✅ Mediavine + OneLink | ⭐⭐⭐ MEDIUM | 6-9 mo | 🟡 GOOD | Ready |
+| 🇫🇷 French | ⭐⭐⭐ MEDIUM | ✅ Mediavine + OneLink | ⭐⭐⭐ MEDIUM | 9-12 mo | 🟡 GOOD | Ready |
+| 🇪🇸 Spanish | ⭐⭐⭐⭐ HIGH | ✅ Mediavine + OneLink | ⭐⭐⭐⭐ HARD | 9-12 mo | 🟡 OKAY | Ready |
 
-**Legend:** *Journey/Mediavine requires alternative affiliate solution (Rakuten, local networks)
+**CRITICAL UPDATE:** Amazon Associates Japan is now available. This removes the biggest blocker for Japanese expansion and elevates it to Tier 1 priority.
 
-### Recommended Sequence (Timeline)
+### Recommended Sequence (Timeline - REVISED)
 
 **Phase 1: Build English Authority (Now - 6 months)**
 - Focus all SEO energy on English site
@@ -371,28 +371,31 @@ This is **not** a content problem. Your pages are relevant. The problem is they'
 - Target: 1000+ sessions/month from English
 - **Why:** Easier to expand once you have authority
 
-**Phase 2: Swedish + Dutch (Month 6-9)**
-- Both have high Mediavine RPM + OneLink coverage
-- Smaller competition pools = faster ranking
-- Investment: ~30% of English effort → 60-70% of revenue
-- **Why:** Best ROI per unit of effort
+**Phase 2: Parallel Track - Japanese + Swedish + Dutch (Month 6-9)**
+- **Japanese:** Largest market opportunity. Setup Amazon Associates Japan + Mediavine Journey. Translate 50-100 device pages + long-form content.
+- **Swedish + Dutch:** Smaller effort, fast ranking due to less competition. Setup Mediavine + OneLink.
+- Investment: ~50% of English effort split 3 ways → Potentially **150%+ of English revenue** (Japan alone could match English)
+- **Why:** Japan ROI justifies parallel effort now that monetization is solved
 
 **Phase 3: German (Month 9-12)**
 - Large market, established shopping culture
 - Similar monetization to English
 - Investment: ~40% of English effort → 75%+ of revenue
 
-**Phase 4: Japanese (Month 12+)**
-- Highest volume market
-- **Critical blocker:** Need to solve affiliate monetization
-- Options: Rakuten Ads (lower commission), Mediavive Journey only, wait for Amazon Japan Associates approval
+**Phase 4: Spanish + French (Month 12+)**
+- Lower priority due to harder competition + smaller markets
+- Can wait until Phases 1-3 are mature
 
 ### Action Items for Now
 
-1. **Do NOT localize yet** - Focus on English authority
-2. **Monitor Japan traffic** - If it remains high (100+ impr/week), prioritize solving affiliate problem by Month 6
-3. **Track Sweden/Netherlands search volume** - If they show up in GSC consistently, plan Swedish translation by Month 6
-4. **Document:** Bookmark this section for Month 6 planning
+1. **Build English authority first (Months 1-6)** - Master SEO on your primary market
+2. **Prepare Japanese expansion (Month 4-5)**
+   - Setup Amazon Associates Japan account (if not already done)
+   - Research Japanese SD card brands and terminology
+   - Plan 50-100 device page translations
+   - Identify Japanese tech blogs for backlink outreach
+3. **Monitor Sweden/Netherlands search volume** - If consistent traffic, confirm they'll be included in Phase 2
+4. **By Month 6:** Launch Japanese + Swedish + Dutch in parallel
 
 ---
 

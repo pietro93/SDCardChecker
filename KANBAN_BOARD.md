@@ -29,36 +29,61 @@
 
 ---
 
-## 🎯 NORTH STAR (Next 2 Weeks)
+## 🎯 NORTH STAR (Next 2 Weeks - REVISED)
 
-**Primary Goal:** Capture high-intent search traffic through 3 parallel workstreams:
-1. Add devices with proven search demand (GSC data)
-2. Optimize high-CTR potential pages (data-driven hero images + content review)
-3. Begin long-form content strategy (SEO keyword planning)
+**Primary Goal:** Determine root cause of low CTR through data collection, then optimize accordingly.
+
+**Phase 1 (Days 1-3): Investigation**
+1. Manual SERP inspection for top 10 zero-click queries (required)
+2. GSC "Search Appearance" audit (what's Google showing?)
+3. Mobile performance analysis (why 5.6x better CTR?)
+
+**Phase 2 (Days 4-14): Targeted Optimization**
+- Conditional on Phase 1 findings
+- If Featured Snippets are problem: optimize for featured snippet format
+- If SERP appearance is weak: rewrite titles/meta descriptions
+- If YouTube dominates: shift effort to niche queries where we can win
 
 **Success Definition:** 
-- +20 high-potential devices added
-- 5+ high-traffic pages optimized (hero images + content audit)
-- Long-form content strategy finalized + 1-2 pieces in progress
+- ✅ Root cause of low CTR identified
+- ✅ Optimization strategy determined
+- ✅ 20+ niche device pages added (Leica, retro gaming, premium cameras)
 
 ---
 
-## 👀 MONITORING (Daily)
+## 👀 IMMEDIATE INVESTIGATION REQUIRED (Before Any Changes)
 
-### GSC Daily Tracking
+### SERP Inspection Task (PRIORITY #1)
+- **Owner:** You
+- **Deadline:** Nov 20 EOD
+- **Instructions:**
+  1. Open Chrome Incognito window
+  2. Set region to United States
+  3. Search these 10 terms and document findings:
+     - `dji osmo pocket 3 sd card requirements`
+     - `steam deck sd card`
+     - `dji mini 4 pro microsd`
+     - `sony a6700 sd card`
+     - `canon g7x mark iii sd card`
+     - `sony fx3 sd card`
+     - `lenovo legion go sd card` (your converter—compare structure)
+     - `leica q3 sd card` (your converter—compare structure)
+  4. For each, document:
+     - Is there a Featured Snippet? Who owns it?
+     - What are positions #1-5?
+     - Where is your site ranking (if at all)?
+     - What's the top-ranking page type? (retailer, manufacturer, review, guide, etc.)
+  5. Take screenshots for comparison
+- **Deliverable:** Share findings with analysis in GSC_ANALYSIS.md
+
+### GSC Daily Tracking (Parallel)
 - **Owner:** You
 - **Cadence:** Daily snapshots
 - **Process:**
-  1. Share GSC data each morning (or EOD)
-  2. I identify new devices & high-potential pages
-  3. We prioritize additions/optimizations
-  4. Track CTR improvements weekly
-- **Tracking file:** `GSC_ANALYSIS.md` (living document)
-
-**Nov 18 Baseline:**
-- 12 total clicks from 1,893 impressions
-- **Top converters:** Legion Go (2.08% CTR), Nikon Z50 II (11.11%), Leica Q2 (14.29%)
-- **Biggest opportunities:** Sony FX3 (33 impr, 0% CTR), DJI Mini 4K (29 impr, 0% CTR), Canon G7X Mark III (17 impr, 0% CTR)
+  1. Share GSC data each morning
+  2. I flag new devices & opportunities
+  3. We track CTR trends weekly
+- **Tracking file:** `GSC_ANALYSIS.md`
 
 ---
 
@@ -195,16 +220,26 @@ Research high-volume, low-competition keywords in:
 
 ## 🚨 BACKLOG (Monitor, Don't Act Yet)
 
-### Language Localization Strategy (Month 6+)
-- **Status:** Not ready yet - focus on English authority first
-- **High-Value Markets Identified:**
-  - 🇯🇵 **Japan** - MASSIVE search volume, monetization blocker (need Rakuten or Journey-only solution)
-  - 🇸🇪 **Sweden** - HIGH volume, Mediavine + OneLink available, smallest effort for ROI
-  - 🇳🇱 **Dutch** - HIGH volume, Mediavine + OneLink available, smallest effort for ROI
+### Language Localization Strategy (Month 6+) - UPDATED
+
+**MAJOR UPDATE:** Amazon Associates Japan is now available—monetization blocker removed!
+
+- **Status:** Not ready yet - focus on English authority first (Months 1-6), prepare for parallel expansion
+- **Tier 1 Markets (Month 6-9 Parallel Launch):**
+  - 🇯🇵 **Japan** - ✅ BLOCKER SOLVED (Amazon Associates available). MASSIVE volume = highest ROI. Can match English revenue.
+  - 🇸🇪 **Sweden** - HIGH volume, Mediavine + OneLink, fastest ranking due to less competition
+  - 🇳🇱 **Dutch** - HIGH volume, Mediavine + OneLink, fastest ranking due to less competition
+- **Tier 2 Markets (Month 9-12):**
   - 🇩🇪 German - HIGH volume, established market, good monetization
-- **Action:** Monitor GSC for Japan, Sweden, Netherlands search volume patterns. If consistent high traffic (100+ impressions/week), plan Swedish translation by Month 6.
-- **Timeline:** Phase 2 (Month 6-9) = Swedish/Dutch, Phase 3 (Month 9-12) = German, Phase 4 (Month 12+) = Japanese
+- **Tier 3 Markets (Month 12+):**
+  - 🇫🇷 French, 🇪🇸 Spanish - Lower priority
 - **Reference:** See GSC_ANALYSIS.md "LANGUAGE LOCALIZATION STRATEGY" section
+
+**Preparation Tasks (Months 4-5):**
+1. Setup Amazon Associates Japan account
+2. Research Japanese SD card terminology
+3. Plan 50-100 device page translations
+4. Identify Japanese tech blogs for backlinks
 
 ### Old Category Page Redirects
 - **Status:** Identified in GSC (10+ old URLs still appearing)
