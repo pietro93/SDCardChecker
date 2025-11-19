@@ -88,6 +88,14 @@ function generateBrandsTable(brandReferences, sdcardsMap) {
             const priceTierSymbol = brand.priceTier 
             ? (brand.priceTier.toLowerCase().includes('budget') ? '$' : brand.priceTier.toLowerCase().includes('premium') ? '$$$' : '$$')
             : '$$';
+            
+            // Convert pros string to bullet list
+            const prosList = brand.pros
+                .split(',')
+                .map(pro => `<li>${pro.trim()}</li>`)
+                .join('');
+            const prosHtml = `<ul style="margin:0; padding-left:1.25rem; font-size:0.95rem;">${prosList}</ul>`;
+            
             return `
             <tr>
             <td class="table-card-cell">
@@ -100,7 +108,7 @@ function generateBrandsTable(brandReferences, sdcardsMap) {
             </td>
             <td data-label="Speed Class">${brand.speed}</td>
             <td data-label="Write Speed">${brand.writeSpeed}</td>
-            <td data-label="Pros">${brand.pros}</td>
+            <td data-label="Pros">${prosHtml}</td>
             <td data-label="Price" class="price-column">
             <span class="price-badge ${priceTierClass}">
             ${priceTierSymbol}

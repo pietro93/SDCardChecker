@@ -386,32 +386,44 @@
             .brands-table-body {
                 display: flex;
                 flex-direction: column;
-                gap: 1rem;
+                gap: 1.25rem;
             }
 
             .brands-table tbody tr {
-                @apply border border-slate-200 rounded-lg p-4 bg-white flex flex-col gap-4 mb-0;
+                @apply border border-slate-300 rounded-lg p-5 bg-white flex flex-col gap-4 mb-0;
                 display: flex;
                 flex-direction: column;
-                border: 1px solid #e2e8f0;
+                border: 1px solid #cbd5e1;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             }
 
             .brands-table tbody tr:hover {
-                @apply bg-white;
+                @apply bg-blue-50;
+                border-color: #3b82f6;
+                box-shadow: 0 4px 8px rgba(59, 130, 246, 0.1);
             }
 
             .brands-table td {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
-                padding: 0;
+                align-items: flex-start;
+                padding: 0.5rem 0;
+                border-bottom: 1px solid #e2e8f0;
+            }
+
+            .brands-table td:last-child {
+                border-bottom: none;
             }
 
             .brands-table td:before {
                 content: attr(data-label);
-                font-weight: bold;
-                color: #334155;
+                font-weight: 700;
+                color: #475569;
                 font-size: 0.75rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                flex-shrink: 0;
+                margin-right: 1rem;
             }
 
             .table-card-cell {
@@ -421,6 +433,8 @@
                 justify-content: center;
                 grid-column: 1 / -1 !important;
                 width: 100%;
+                border-bottom: 1px solid #e2e8f0 !important;
+                padding-bottom: 1rem;
             }
 
             .table-card-cell b {
@@ -439,6 +453,7 @@
                 align-items: flex-end;
                 justify-content: center;
                 gap: 0.75rem;
+                border-bottom: none !important;
             }
 
             .price-badge {

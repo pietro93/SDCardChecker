@@ -89,8 +89,8 @@ return `<!-- Favicon -->
     </nav>
     
     <!-- Mobile Menu Button -->
-    <button class="md:hidden text-slate-600 hover:text-blue-600 mobile-menu-toggle" aria-label="Toggle menu" id="mobileMenuBtn">
-      <i class="fas fa-bars text-xl"></i>
+    <button class="md:hidden text-slate-600 hover:text-blue-600 mobile-menu-toggle flex items-center justify-center" aria-label="Toggle menu" id="mobileMenuBtn" style="width: 44px; height: 44px; padding: 0;">
+      <i class="fas fa-bars text-xl" style="display: block;"></i>
     </button>
   </div>
   
