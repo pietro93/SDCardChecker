@@ -113,7 +113,7 @@ function generateBrandsTable(brandReferences, sdcardsMap) {
 /**
  * Generate requirements checklist box
  */
-function generateRequirementsBox(device) {
+function generateRequirementsBox(device, deviceNameShort) {
     const { sdCard, whySpecs } = device;
     
     const rows = [
@@ -128,14 +128,25 @@ function generateRequirementsBox(device) {
             label: 'Minimum Speed',
             value: `${sdCard.minSpeed} (${sdCard.minWriteSpeed} write)`,
             color: 'text-emerald-600'
-        },
-        {
-            icon: 'fas fa-database',
-            label: 'Maximum Capacity',
-            value: `Up to ${sdCard.maxCapacity}`,
-            color: 'text-violet-600'
         }
     ];
+
+    // Add App Performance row if it exists
+    if (sdCard.minAppPerformance) {
+        rows.push({
+            icon: 'fas fa-cogs',
+            label: 'App Performance',
+            value: `${sdCard.minAppPerformance} (Required for OS/Apps)`,
+            color: 'text-amber-600'
+        });
+    }
+
+    rows.push({
+        icon: 'fas fa-database',
+        label: 'Maximum Capacity',
+        value: `Up to ${sdCard.maxCapacity}`,
+        color: 'text-violet-600'
+    });
 
     const rowsHtml = rows
         .map(row => `
@@ -151,7 +162,7 @@ function generateRequirementsBox(device) {
 
     return `
     <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 mb-8">
-        <h2 class="text-lg font-bold text-slate-900 mb-4">Official {{DEVICE_NAME}} SD Card Requirements</h2>
+        <h2 class="text-lg font-bold text-slate-900 mb-4">Official ${deviceNameShort} SD Card Requirements</h2>
         <ul class="space-y-0">
             ${rowsHtml}
         </ul>
@@ -255,7 +266,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         answerText += ` (${device.sdCard.minSpeed} or faster)`;
     }
 
-    const requirementsBoxHTML = generateRequirementsBox(device);
+    const requirementsBoxHTML = generateRequirementsBox(device, deviceNameShort);
     const specsHTML = generateSpecsHTML(device);
     const brandsTableRows = generateBrandsTable(device.recommendedBrands, sdcardsMap);
     const alternativesHTML = generateAlternatives(device, sdcardsMap);

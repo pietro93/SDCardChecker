@@ -118,7 +118,7 @@
       ],
       "sdCard": {
         "type": "microSD, microSDHC, microSDXC",
-        "minSpeed": "No minimum required",
+        "minSpeed": "Class 10 / U1",
         "minWriteSpeed": "Not specified",
         "recommendedCapacity": [
           "64GB",
@@ -173,7 +173,7 @@
       ],
       "sdCard": {
         "type": "microSD, microSDHC, microSDXC",
-        "minSpeed": "No minimum required",
+        "minSpeed": "Class 10 / U1",
         "minWriteSpeed": "Not specified",
         "recommendedCapacity": [
           "128GB",
@@ -419,6 +419,7 @@
         "type": "microSD UHS-I (not UHS-II)",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A1",
         "recommendedCapacity": [
           "256GB",
           "512GB"
@@ -426,7 +427,7 @@
         "maxCapacity": "2TB (theoretical)",
         "testedMaxCapacity": "1TB"
       },
-      "whySpecs": "Steam Deck uses UHS-I interface. While V30 works, actual performance is limited by UHS-I speeds. Select from reputable brands offering V30 rated cards to ensure reliable performance. Note: While theoretically supporting up to 2TB, the largest tested and verified working capacity is 1TB.",
+      "whySpecs": "Steam Deck uses UHS-I interface and runs SteamOS from the card, so A1 app performance is important for OS responsiveness. While V30 works for gaming, A1 random IOPS are essential. Select from reputable brands offering V30 rated and A1-classified cards. Note: While theoretically supporting up to 2TB, the largest tested and verified working capacity is 1TB.",
       "recommendedBrands": [
         {
           "id": "kingston-canvas-go-plus-ultra"
@@ -738,7 +739,7 @@
       ],
       "sdCard": {
         "type": "microSD, microSDHC, microSDXC",
-        "minSpeed": "No minimum required",
+        "minSpeed": "Class 10 / U1",
         "minWriteSpeed": "Not specified",
         "recommendedCapacity": [
           "128GB",
@@ -954,15 +955,16 @@
       ],
       "sdCard": {
         "type": "microSDXC",
-        "minSpeed": "No minimum required",
-        "minWriteSpeed": "Not specified",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A2",
         "recommendedCapacity": [
           "256GB",
           "512GB"
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "The Galaxy Tab S9 supports microSD cards up to 1TB for expanding storage for media, apps, and files. While there is no minimum speed requirement, a U3/V30 card is recommended for smooth 4K video playback and faster file transfers.",
+      "whySpecs": "The Galaxy Tab S9 records 4K video and supports microSD cards up to 1TB for expanding storage. V30 speed is required for smooth 4K video recording and playback. A2 app performance ensures fast OS and app responsiveness when running applications from the card.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -1578,8 +1580,9 @@
       ],
       "sdCard": {
         "type": "microSD",
-        "minSpeed": "No minimum required (Class 10 / V10 recommended)",
-        "minWriteSpeed": "10 MB/s",
+        "minSpeed": "Class 10 / U1",
+        "minWriteSpeed": "Not specified",
+        "minAppPerformance": "A1",
         "recommendedCapacity": [
           "64GB",
           "128GB",
@@ -1587,7 +1590,7 @@
         ],
         "maxCapacity": "No official limit (512GB+ commonly works)"
       },
-      "whySpecs": "HP Chromebook 14 models include a microSD card reader for expanding storage. While Chromebooks primarily use cloud storage, a microSD card is useful for offline files, media libraries, and Linux apps. A Class 10 card provides smooth file access.",
+      "whySpecs": "HP Chromebook 14 models include a microSD card reader for expanding storage. While Chromebooks primarily use cloud storage, a microSD card is useful for offline files, media libraries, and Linux apps. Class 10 / U1 cards provide smooth file access and app performance.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -1781,8 +1784,8 @@
       ],
       "sdCard": {
         "type": "SDHC (officially up to 32GB, SDXC works unofficially)",
-        "minSpeed": "Class 4 (Class 10 recommended)",
-        "minWriteSpeed": "4 MB/s minimum, 10 MB/s recommended",
+        "minSpeed": "Class 10",
+        "minWriteSpeed": "Not specified",
         "recommendedCapacity": [
           "32GB",
           "64GB",
@@ -1790,7 +1793,7 @@
         ],
         "maxCapacity": "128GB (unofficial, requires FAT32 formatting)"
       },
-      "whySpecs": "Nintendo officially supports SDHC cards up to 32GB, but SDXC cards up to 128GB (or even larger, though 128GB is the practical limit) work perfectly when formatted to FAT32. Class 10 cards provide faster game loading and eShop download speeds, improving the overall user experience.",
+      "whySpecs": "Nintendo officially supports SDHC cards up to 32GB, but SDXC cards up to 128GB (or even larger, though 128GB is the practical limit) work perfectly when formatted to FAT32. Class 10 cards provide faster game loading and eShop download speeds, improving the overall user experience. Class 4 is obsolete; Class 10 is the modern minimum.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -1833,8 +1836,9 @@
       ],
       "sdCard": {
         "type": "Dual microSD (separate slots for OS and games)",
-        "minSpeed": "U1 / Class 10 (A2 recommended for OS card)",
-        "minWriteSpeed": "10 MB/s minimum, 30 MB/s recommended for OS",
+        "minSpeed": "Class 10 / U1",
+        "minWriteSpeed": "10 MB/s",
+        "minAppPerformance": "A2 (for OS card)",
         "recommendedCapacity": [
           "32GB-64GB for OS",
           "256GB-512GB for games"
@@ -1883,15 +1887,16 @@
       ],
       "sdCard": {
         "type": "microSD UHS-II",
-        "minSpeed": "V30 (V60 recommended)",
-        "minWriteSpeed": "30 MB/s minimum, 60+ MB/s recommended",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A1",
         "recommendedCapacity": [
           "512GB",
           "1TB"
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "The ROG Ally X features a high-speed UHS-II card reader, making it one of the few gaming handhelds that can fully utilize the increased speeds of UHS-II cards. This significantly improves game load times compared to UHS-I devices. V60 or faster cards provide the best experience for loading large, modern PC games.",
+      "whySpecs": "The ROG Ally X features a high-speed UHS-II card reader and runs Windows, so A1 app performance is important for OS responsiveness. This significantly improves game load times compared to UHS-I devices. V60 or faster cards provide the best experience for loading large, modern PC games, though V30 with A1 rating is the practical minimum.",
       "recommendedBrands": [
         {
           "id": "sandisk-rog-ally-microsd"
@@ -2935,8 +2940,9 @@
       ],
       "sdCard": {
         "type": "microSD UHS-I",
-        "minSpeed": "U3 / V30 (A2 recommended)",
+        "minSpeed": "U3 / V30",
         "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A2",
         "recommendedCapacity": [
           "512GB",
           "1TB"
@@ -3396,8 +3402,9 @@
       ],
       "sdCard": {
         "type": "microSD",
-        "minSpeed": "U1 / Class 10 (A1 or A2 recommended)",
-        "minWriteSpeed": "10 MB/s minimum",
+        "minSpeed": "Class 10 / U1",
+        "minWriteSpeed": "10 MB/s",
+        "minAppPerformance": "A1",
         "recommendedCapacity": [
           "64GB",
           "128GB",
@@ -3405,7 +3412,7 @@
         ],
         "maxCapacity": "512GB+"
       },
-      "whySpecs": "An ultra-portable retro gaming handheld. While most retro games are small and load quickly even from standard Class 10 cards, an A1 or A2 application performance rating significantly improves overall system responsiveness, including menu navigation and loading custom firmware. This enhances the user experience for this cult-favorite device.",
+      "whySpecs": "An ultra-portable retro gaming handheld. While most retro games are small and load quickly even from standard Class 10 cards, an A1 application performance rating significantly improves overall system responsiveness, including menu navigation and loading custom firmware. This enhances the user experience for this cult-favorite device.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -3957,15 +3964,16 @@
       ],
       "sdCard": {
         "type": "Dual microSD",
-        "minSpeed": "U1 / Class 10 (A1 recommended for OS)",
+        "minSpeed": "Class 10 / U1",
         "minWriteSpeed": "10 MB/s",
+        "minAppPerformance": "A1 (for OS slot)",
         "recommendedCapacity": [
           "16GB-32GB for OS",
           "128GB-256GB for Games"
         ],
         "maxCapacity": "512GB tested"
       },
-      "whySpecs": "Features two microSD slots. Slot 1 is for the Operating System (OS); using an A1/A2 application-rated card here significantly improves menu speed and system responsiveness. Slot 2 is for games, where a standard large-capacity card works well. We strongly recommend replacing the low-quality cards that come included with the device with trusted brands.",
+      "whySpecs": "Features two microSD slots. Slot 1 is for the Operating System (OS); using an A1 application-rated card here significantly improves menu speed and system responsiveness. Slot 2 is for games, where a standard large-capacity card works well. We strongly recommend replacing the low-quality cards that come included with the device with trusted brands.",
       "recommendedBrands": [
         {
           "id": "kingston-canvas-go-plus-ultra"
@@ -4175,8 +4183,9 @@
       ],
       "sdCard": {
         "type": "microSD",
-        "minSpeed": "U1 / Class 10 (A1 or A2 recommended)",
+        "minSpeed": "Class 10 / U1",
         "minWriteSpeed": "10 MB/s",
+        "minAppPerformance": "A1",
         "recommendedCapacity": [
           "128GB",
           "256GB",
@@ -4184,7 +4193,7 @@
         ],
         "maxCapacity": "1TB+ tested"
       },
-      "whySpecs": "For retro handhelds, an 'A1' or 'A2' rated card is recommended for faster OS and menu performance, especially when using custom front-ends. While a standard Class 10 card works for games, the 'A' rating improves the overall user experience.",
+      "whySpecs": "For retro handhelds, an A1 rated card is recommended for faster OS and menu performance, especially when using custom front-ends. While a standard Class 10 card works for games, the A1 rating improves the overall user experience.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -4221,15 +4230,16 @@
       ],
       "sdCard": {
         "type": "microSDXC",
-        "minSpeed": "Class 10 / U1 (V30 for 4K video)",
+        "minSpeed": "Class 10 / U1",
         "minWriteSpeed": "10 MB/s",
+        "minAppPerformance": "A1",
         "recommendedCapacity": [
           "128GB",
           "256GB"
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "An affordable way to expand storage for movies, music, and photos. While a standard Class 10 card works for most uses, a V30 card is recommended for smooth playback of downloaded 4K video content.",
+      "whySpecs": "An affordable way to expand storage for movies, music, and photos. A Class 10 / U1 card works for most uses including video playback. A1 app performance ensures responsive file browsing when running apps from the card.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -4394,15 +4404,16 @@
       ],
       "sdCard": {
         "type": "microSD",
-        "minSpeed": "A1 (A2 Recommended)",
-        "minWriteSpeed": "10 MB/s (Class 10)",
+        "minSpeed": "Class 10 / U1",
+        "minWriteSpeed": "10 MB/s",
+        "minAppPerformance": "A1",
         "recommendedCapacity": [
           "32GB",
           "64GB"
         ],
         "maxCapacity": "No official limit"
       },
-      "whySpecs": "Like all Raspberry Pis, the Pi 4 runs its OS from the microSD card. An 'A1' or 'A2' rated card is crucial for good performance. The A-rating signifies faster random access speeds, which translates to a more responsive desktop experience and faster application launch times.",
+      "whySpecs": "Like all Raspberry Pis, the Pi 4 runs its OS from the microSD card. An A1 or A2 rated card is crucial for good performance. The A-rating signifies faster random access speeds, which translates to a more responsive desktop experience and faster application launch times.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -4443,8 +4454,9 @@
       ],
       "sdCard": {
         "type": "microSD",
-        "minSpeed": "Class 10 / U1 (A1 Recommended)",
+        "minSpeed": "Class 10 / U1",
         "minWriteSpeed": "10 MB/s",
+        "minAppPerformance": "A1",
         "recommendedCapacity": [
           "16GB",
           "32GB"
@@ -4486,13 +4498,14 @@
         "type": "microSD",
         "minSpeed": "Class 10 / U1",
         "minWriteSpeed": "10 MB/s",
+        "minAppPerformance": "A1",
         "recommendedCapacity": [
           "16GB",
           "32GB"
         ],
         "maxCapacity": "No official limit"
       },
-      "whySpecs": "The Pi Zero 2 W is used for compact, embedded projects. A reliable Class 10 card is essential for the operating system to run smoothly. Since these projects are often 'headless' (no monitor), card reliability is more important than extreme speed, but a slow card will still impact boot time and script execution.",
+      "whySpecs": "The Pi Zero 2 W is used for compact, embedded projects. A reliable Class 10 card with A1 app performance is essential for the operating system to run smoothly. Since these projects are often 'headless' (no monitor), card reliability is more important than extreme speed, but a slow card will still impact boot time and script execution.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
