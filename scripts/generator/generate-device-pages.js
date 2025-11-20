@@ -111,6 +111,58 @@ function generateBrandsTable(brandReferences, sdcardsMap) {
 }
 
 /**
+ * Generate requirements checklist box
+ */
+function generateRequirementsBox(device) {
+    const { sdCard, whySpecs } = device;
+    
+    const rows = [
+        {
+            icon: 'fas fa-microchip',
+            label: 'Format',
+            value: sdCard.type,
+            color: 'text-blue-600'
+        },
+        {
+            icon: 'fas fa-tachometer-alt',
+            label: 'Minimum Speed',
+            value: `${sdCard.minSpeed} (${sdCard.minWriteSpeed} write)`,
+            color: 'text-emerald-600'
+        },
+        {
+            icon: 'fas fa-database',
+            label: 'Maximum Capacity',
+            value: `Up to ${sdCard.maxCapacity}`,
+            color: 'text-violet-600'
+        }
+    ];
+
+    const rowsHtml = rows
+        .map(row => `
+        <li class="flex items-start gap-3 pb-3 border-b border-slate-100 last:border-b-0 last:pb-0">
+            <i class="${row.icon} ${row.color} mt-1 flex-shrink-0"></i>
+            <div class="flex-1">
+                <span class="font-semibold text-slate-900">${row.label}:</span>
+                <span class="text-slate-700"> ${row.value}</span>
+            </div>
+        </li>
+        `)
+        .join('');
+
+    return `
+    <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 mb-8">
+        <h2 class="text-lg font-bold text-slate-900 mb-4">Official {{DEVICE_NAME}} SD Card Requirements</h2>
+        <ul class="space-y-0">
+            ${rowsHtml}
+        </ul>
+        <div class="mt-4 text-sm text-slate-600 bg-white p-3 rounded border border-slate-100">
+            <strong>Why these requirements?</strong> ${whySpecs}
+        </div>
+    </div>
+    `;
+}
+
+/**
  * Generate alternatives cards
  */
 function generateAlternatives(device, sdcardsMap) {
@@ -203,6 +255,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         answerText += ` (${device.sdCard.minSpeed} or faster)`;
     }
 
+    const requirementsBoxHTML = generateRequirementsBox(device);
     const specsHTML = generateSpecsHTML(device);
     const brandsTableRows = generateBrandsTable(device.recommendedBrands, sdcardsMap);
     const alternativesHTML = generateAlternatives(device, sdcardsMap);
@@ -257,6 +310,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{DEVICE_IMAGE}}/g, deviceImage)
         .replace(/{{ANSWER_TEXT}}/g, answerText)
         .replace(/{{ANSWER_EXPLANATION}}/g, device.whySpecs)
+        .replace(/{{REQUIREMENTS_BOX}}/g, requirementsBoxHTML)
         .replace(/{{SPECS_HTML}}/g, specsHTML)
         .replace(/{{BRANDS_TABLE_ROWS}}/g, brandsTableRows)
         .replace(/{{ALTERNATIVES_HTML}}/g, alternativesHTML)
