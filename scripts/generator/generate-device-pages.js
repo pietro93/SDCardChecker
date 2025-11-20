@@ -114,6 +114,8 @@ function generateBrandsTable(brandReferences, sdcardsMap) {
  * Generate requirements checklist box
  */
 function generateRequirementsBox(device, deviceNameShort) {
+    // Ensure deviceNameShort is always a string
+    const safeDeviceName = deviceNameShort || device.name;
     const { sdCard, whySpecs } = device;
     
     const rows = [
@@ -162,7 +164,7 @@ function generateRequirementsBox(device, deviceNameShort) {
 
     return `
     <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 mb-8">
-        <h2 class="text-lg font-bold text-slate-900 mb-4">Official ${deviceNameShort} SD Card Requirements</h2>
+        <h2 class="text-lg font-bold text-slate-900 mb-4">Official ${safeDeviceName} SD Card Requirements</h2>
         <ul class="space-y-0">
             ${rowsHtml}
         </ul>
