@@ -110,9 +110,10 @@ class CalculatorCardRecommendations {
      * Format single card for calculator results display
      * UPDATED: Handles both new nested specs format and old flat format
      * @param {Object} card - Card from sdcards.json
+     * @param {String} calculatorType - Type of calculator (video-storage, photo-storage, etc.)
      * @returns {Object} Formatted card
      */
-    static formatCard(card) {
+    static formatCard(card, calculatorType = 'calculator') {
         // Handle nested specs if they exist (New Series Format)
         const specs = card.specs || {};
         const speed = specs.speedClass || card.speed;
@@ -132,6 +133,12 @@ class CalculatorCardRecommendations {
             : '$$'
         );
 
+        // Add UTM parameters to Amazon URL
+        const utmParams = `utm_source=sdcardchecker&utm_medium=tool-page&utm_campaign=${calculatorType}&utm_content=${card.tier || 'featured'}`;
+        const amazonUrlWithUTM = card.amazonSearchUrl.includes('?') 
+            ? `${card.amazonSearchUrl}&${utmParams}`
+            : `${card.amazonSearchUrl}?${utmParams}`;
+
         return {
             id: card.id,
             name: card.name,
@@ -139,7 +146,7 @@ class CalculatorCardRecommendations {
             writeSpeed: writeSpeed,
             capacity: capacity,
             imageUrl: card.imageUrl || this.getCardImageFallback(card),
-            amazonUrl: card.amazonSearchUrl,
+            amazonUrl: amazonUrlWithUTM,
             priceTier: card.priceTier || 'Standard',
             priceTierClass: priceTierClass,
             priceTierSymbol: priceTierSymbol,
@@ -153,9 +160,10 @@ class CalculatorCardRecommendations {
      * Build HTML grid of recommendation cards
      * @param {Array} cards - Filtered cards
      * @param {String} speedClass - Speed class for reference
+     * @param {String} calculatorType - Type of calculator (video-storage, photo-storage, etc.)
      * @returns {String} HTML markup
      */
-    static buildRecommendationHTML(cards, speedClass) {
+    static buildRecommendationHTML(cards, speedClass, calculatorType = 'calculator') {
         if (!cards || cards.length === 0) {
             return `
         <div class="p-4 bg-gray-50 rounded-lg text-gray-600 text-sm">
@@ -166,7 +174,7 @@ class CalculatorCardRecommendations {
 
         const cardHTML = cards
             .map(card => {
-                const formatted = this.formatCard(card);
+                const formatted = this.formatCard(card, calculatorType);
                 // Get fallback image URL for this card
                 const fallbackUrl = this.getCardImageFallback(card);
                 return `
@@ -263,9 +271,10 @@ class CalculatorCardRecommendations {
      * Get and display recommendations for calculator result
      * @param {String} speedClass - Required speed class
      * @param {String} containerId - HTML element ID to inject into
+     * @param {String} calculatorType - Type of calculator (video-storage, photo-storage, etc.)
      * @returns {Promise<void>}
      */
-    static async displayRecommendations(speedClass, containerId = 'calculator-recommendations') {
+    static async displayRecommendations(speedClass, containerId = 'calculator-recommendations', calculatorType = 'calculator') {
         const container = document.getElementById(containerId);
         if (!container) {
             console.warn(`[CalculatorCardRecommendations] Container #${containerId} not found`);
@@ -302,7 +311,7 @@ class CalculatorCardRecommendations {
             }
 
             // Build and inject HTML
-            const html = this.buildRecommendationHTML(recommended, speedClass);
+            const html = this.buildRecommendationHTML(recommended, speedClass, calculatorType);
             container.innerHTML = html;
             console.log(`[CalculatorCardRecommendations] ✓ Displayed ${recommended.length} recommendations`);
 

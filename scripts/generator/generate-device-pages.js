@@ -62,7 +62,7 @@ function generateUniqueMetaDescription(device, brandNames, index) {
 /**
 * Generate brand comparison table rows
 */
-function generateBrandsTable(brandReferences, sdcardsMap) {
+function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug) {
     return brandReferences
         .map((ref) => {
             const brand = sdcardsMap[ref.id];
@@ -70,6 +70,13 @@ function generateBrandsTable(brandReferences, sdcardsMap) {
                 console.warn(`Warning: SD card not found: ${ref.id}`);
                 return "";
             }
+            
+            // Add UTM parameters to Amazon URL
+            const utmParams = `utm_source=sdcardchecker&utm_medium=device-page&utm_campaign=${deviceSlug}&utm_content=${brand.tier || 'featured'}`;
+            const amazonUrlWithUTM = brand.amazonSearchUrl.includes('?') 
+                ? `${brand.amazonSearchUrl}&${utmParams}`
+                : `${brand.amazonSearchUrl}?${utmParams}`;
+            
             const cardImage = brand.imageUrl || getCardImageFallback(brand);
             const priceTierClass = brand.priceTier ? `price-${brand.priceTier.toLowerCase().replace(/\s+/g, '-')}` : 'price-mid-range';
             const priceTierSymbol = brand.priceTier 
@@ -86,7 +93,7 @@ function generateBrandsTable(brandReferences, sdcardsMap) {
             return `
             <tr>
             <td class="table-card-cell">
-            <a href="${brand.amazonSearchUrl}" target="_blank" class="table-card-link-wrapper">
+            <a href="${amazonUrlWithUTM}" target="_blank" class="table-card-link-wrapper">
             <div class="table-card-image">
             <img src="${cardImage}" alt="${brand.name} ${brand.speed} SD card - ${brand.priceEstimate}USD" width="115" height="115" loading="lazy" />
             </div>
@@ -100,7 +107,7 @@ function generateBrandsTable(brandReferences, sdcardsMap) {
             <span class="price-badge ${priceTierClass}">
             ${priceTierSymbol}
             </span>
-            <a href="${brand.amazonSearchUrl}" target="_blank" class="btn-check-price">
+            <a href="${amazonUrlWithUTM}" target="_blank" class="btn-check-price">
               <i class="fas fa-shopping-cart"></i> Check Price
             </a>
             </td>
@@ -198,6 +205,12 @@ function generateAlternatives(device, sdcardsMap) {
     let html = "";
 
     const createCard = (brand, label) => {
+    // Add UTM parameters to Amazon URL
+    const utmParams = `utm_source=sdcardchecker&utm_medium=device-page&utm_campaign=${device.slug}&utm_content=${brand.tier || 'featured'}`;
+    const amazonUrlWithUTM = brand.amazonSearchUrl.includes('?') 
+        ? `${brand.amazonSearchUrl}&${utmParams}`
+        : `${brand.amazonSearchUrl}?${utmParams}`;
+    
     const cardImage = brand.imageUrl || getCardImageFallback(brand);
     // Use priceSymbol if available (new format), otherwise use numeric estimate
     const priceDisplay = brand.priceSymbol ? `${brand.priceSymbol} (${brand.priceTier})` : `$${brand.priceEstimate}`;
@@ -213,7 +226,7 @@ function generateAlternatives(device, sdcardsMap) {
         <div class="alternative-price">${priceDisplay}</div>
         <div class="pros">${brand.pros}</div>
         ${brand.cons ? `<div class="cons">${brand.cons}</div>` : ""}
-        <a href="${brand.amazonSearchUrl}" target="_blank" class="btn btn-amazon">
+        <a href="${amazonUrlWithUTM}" target="_blank" class="btn btn-amazon">
           Check on Amazon
         </a>
       </div>
@@ -270,7 +283,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
 
     const requirementsBoxHTML = generateRequirementsBox(device, deviceNameShort);
     const specsHTML = generateSpecsHTML(device);
-    const brandsTableRows = generateBrandsTable(device.recommendedBrands, sdcardsMap);
+    const brandsTableRows = generateBrandsTable(device.recommendedBrands, sdcardsMap, device.slug);
     const alternativesHTML = generateAlternatives(device, sdcardsMap);
 
     // Generate FAQs: use custom FAQs from data, or generate programmatically

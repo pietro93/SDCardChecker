@@ -467,38 +467,62 @@ class CalculatorUI {
             },
 
             /**
-              * Load and display card recommendations after calculation
-              * Uses CalculatorCardRecommendations for inline display
-              * @private
-              */
-             async _loadAndDisplayCardRecommendations() {
-               if (typeof CalculatorCardRecommendations === 'undefined') {
-                 console.warn('[CalculatorUI] CalculatorCardRecommendations module not loaded');
-                 return;
-               }
+             * Load and display card recommendations after calculation
+             * Uses CalculatorCardRecommendations for inline display
+             * @private
+             */
+            async _loadAndDisplayCardRecommendations() {
+              if (typeof CalculatorCardRecommendations === 'undefined') {
+                console.warn('[CalculatorUI] CalculatorCardRecommendations module not loaded');
+                return;
+              }
 
-               try {
-                 const speedClass = this.result.speedClass;
-                 
-                 // Wait for DOM to be ready (recommendations div should be rendered)
-                 // Use a small delay to ensure Alpine has finished rendering
-                 await new Promise(resolve => setTimeout(resolve, 100));
-                 
-                 // Display recommendations in the results section
-                 await CalculatorCardRecommendations.displayRecommendations(
-                   speedClass,
-                   'calculator-recommendations'
-                 );
+              try {
+                const speedClass = this.result.speedClass;
+                
+                // Determine calculator type from URL
+                const pathname = window.location.pathname.toLowerCase();
+                let calculatorType = 'calculator'; // default
+                
+                if (pathname.includes('video-storage')) {
+                  calculatorType = 'video-storage';
+                } else if (pathname.includes('photo-storage')) {
+                  calculatorType = 'photo-storage';
+                } else if (pathname.includes('gopro-storage')) {
+                  calculatorType = 'gopro-storage';
+                } else if (pathname.includes('action-camera-storage')) {
+                  calculatorType = 'action-camera-storage';
+                } else if (pathname.includes('drone-storage')) {
+                  calculatorType = 'drone-storage';
+                } else if (pathname.includes('dashcam-storage')) {
+                  calculatorType = 'dashcam-storage';
+                } else if (pathname.includes('security-camera-storage')) {
+                  calculatorType = 'security-camera-storage';
+                } else if (pathname.includes('timelapse-storage')) {
+                  calculatorType = 'timelapse-storage';
+                }
+                
+                // Wait for DOM to be ready (recommendations div should be rendered)
+                // Use a small delay to ensure Alpine has finished rendering
+                await new Promise(resolve => setTimeout(resolve, 100));
+                
+                // Display recommendations in the results section with UTM tracking
+                await CalculatorCardRecommendations.displayRecommendations(
+                  speedClass,
+                  'calculator-recommendations',
+                  calculatorType
+                );
 
-                 // Track event
-                 this._trackEvent('calculator_recommendations_shown', {
-                   speedClass: speedClass,
-                   scenario: this.activeScenario
-                 });
-               } catch (error) {
-                 console.error('[CalculatorUI] Failed to load card recommendations:', error);
-               }
-             },
+                // Track event
+                this._trackEvent('calculator_recommendations_shown', {
+                  speedClass: speedClass,
+                  scenario: this.activeScenario,
+                  calculator: calculatorType
+                });
+              } catch (error) {
+                console.error('[CalculatorUI] Failed to load card recommendations:', error);
+              }
+            },
 
             /**
              * Load all cards for selector (on component init or reverse layer load)
