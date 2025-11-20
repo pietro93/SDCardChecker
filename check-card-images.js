@@ -27,6 +27,7 @@ topCards.forEach((cardId, index) => {
   const card = sdcardsData.sdcards.find(c => c.id === cardId);
   
   if (card) {
+    // Support both new Series format and old flat format
     const type = card.type === 'microSD' ? 'microSD' : 'Regular SD';
     const imageSource = card.imageUrl ? `Has image: ${card.imageUrl}` : 'Uses fallback';
     const count = cardCounts[cardId];

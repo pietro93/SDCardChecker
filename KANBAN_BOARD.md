@@ -129,8 +129,10 @@
 - **Target:** 20 new devices from Tier 1 list
 - **Effort:** ~5-10 min per device (devices.json entry + basic verification)
 
+
 **Checklist:**
 - [ ] Canon R50, R7, G7X Mark III, G7X Mark II
+- [ ] Ezviz cameras + sd cards (new hyperniche)
 - [ ] Fujifilm X-T50, X-E5, X-T5
 - [ ] Sony FX30
 - [ ] Nikon Z50 II (if not added yet)

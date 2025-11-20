@@ -55,6 +55,7 @@ class CalculatorCardRecommendations {
 
     /**
      * Filter cards by speed class
+     * UPDATED: Handles both nested specs and flat format
      * @param {Array} allCards - All cards from JSON
      * @param {String} requiredSpeedClass - Speed class (V30, V60, V90)
      * @param {Number} limit - Max cards to return
@@ -74,14 +75,19 @@ class CalculatorCardRecommendations {
 
         // Filter for sufficient speed class
         let filtered = allCards.filter(card => {
-            const cardRank = speedClassOrder[card.speed] || 0;
+            // Support both old flat format and new nested spec format
+            const speed = card.specs ? card.specs.speedClass : card.speed;
+            const cardRank = speedClassOrder[speed] || 0;
             return cardRank >= requiredRank;
         });
 
         // Sort by: speed class (ascending), then price
         filtered.sort((a, b) => {
-            const rankA = speedClassOrder[a.speed] || 0;
-            const rankB = speedClassOrder[b.speed] || 0;
+            // Support both formats
+            const speedA = a.specs ? a.specs.speedClass : a.speed;
+            const speedB = b.specs ? b.specs.speedClass : b.speed;
+            const rankA = speedClassOrder[speedA] || 0;
+            const rankB = speedClassOrder[speedB] || 0;
 
             if (rankA !== rankB) {
                 return rankA - rankB;
@@ -95,34 +101,42 @@ class CalculatorCardRecommendations {
 
     /**
      * Format single card for calculator results display
+     * UPDATED: Handles both new nested specs format and old flat format
      * @param {Object} card - Card from sdcards.json
      * @returns {Object} Formatted card
      */
     static formatCard(card) {
+        // Handle nested specs if they exist (New Series Format)
+        const specs = card.specs || {};
+        const speed = specs.speedClass || card.speed;
+        const writeSpeed = specs.writeSpeed || card.writeSpeed;
+        const capacity = card.availableCapacities 
+            ? `${Math.min(...card.availableCapacities)}GB - ${Math.max(...card.availableCapacities)}GB`
+            : (card.capacity || 'Var.');
+        
         const priceTierClass = card.priceTier
             ? `price-${card.priceTier.toLowerCase().replace(/\s+/g, '-')}`
             : 'price-mid-range';
 
-        const priceTierSymbol = card.priceTier
-            ? card.priceTier.toLowerCase().includes('budget')
-                ? '$'
-                : card.priceTier.toLowerCase().includes('premium')
-                    ? '$$$'
-                    : '$$'
-            : '$$';
+        // Use priceSymbol from JSON if available, otherwise generate from priceTier
+        const priceTierSymbol = card.priceSymbol || (
+            card.priceTier && card.priceTier.toLowerCase().includes('budget') ? '$' 
+            : card.priceTier && card.priceTier.toLowerCase().includes('premium') ? '$$$' 
+            : '$$'
+        );
 
         return {
             id: card.id,
             name: card.name,
-            speed: card.speed,
-            writeSpeed: card.writeSpeed,
-            capacity: card.capacity,
+            speed: speed,
+            writeSpeed: writeSpeed,
+            capacity: capacity,
             imageUrl: card.imageUrl || this.getCardImageFallback(card),
             amazonUrl: card.amazonSearchUrl,
             priceTier: card.priceTier || 'Standard',
             priceTierClass: priceTierClass,
             priceTierSymbol: priceTierSymbol,
-            priceEstimate: card.priceEstimate || 'N/A',
+            priceEstimate: 'Check Amazon',
             pros: card.pros,
             tier: card.tier || 'standard'
         };

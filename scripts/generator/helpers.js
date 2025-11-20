@@ -575,6 +575,116 @@ function generateRelatedDevices(device, allDevices) {
   `;
 }
 
+/**
+ * SMART IMAGE FINDER
+ * Looks for an image in /img/cards/.
+ * 1. Checks for exact match from JSON.
+ * 2. Checks for any file starting with the Card ID (e.g., "card-id-128gb.webp" for "card-id").
+ * 3. Falls back to getCardImageFallback if nothing found.
+ */
+function findActualImageFile(cardId, definedPath) {
+  const imgDir = path.join(__dirname, "../../img/cards");
+  
+  // 1. Check exact path from JSON if it exists
+  if (definedPath) {
+    const fullPath = path.join(__dirname, "../..", definedPath);
+    if (fs.existsSync(fullPath)) return definedPath;
+  }
+
+  // 2. Fuzzy Search: Look for any file starting with the card ID
+  // This fixes the issue where you have "card-128gb.webp" but the ID is just "card"
+  try {
+    const files = fs.readdirSync(imgDir);
+    
+    // Look for ID match at the start of filename (exact match first)
+    const exactMatch = files.find(file => file === `${cardId}.webp`);
+    if (exactMatch) return `/img/cards/${exactMatch}`;
+    
+    // Then look for partial matches (e.g., "card-128gb.webp")
+    const partialMatch = files.find(file => 
+      file.startsWith(cardId) && 
+      (file.endsWith('.webp') || file.endsWith('.jpg') || file.endsWith('.png'))
+    );
+    
+    if (partialMatch) {
+      return `/img/cards/${partialMatch}`;
+    }
+  } catch (e) {
+    console.warn(`  ⚠️  Could not scan image directory for ${cardId}`);
+  }
+
+  return null;
+}
+
+/**
+ * Load and Adapt SD Card Data
+ * Reads the new "Series" format and converts it to "Flat" format
+ * compatible with existing templates and devices.json references.
+ * Uses Smart Image Finder to resolve image paths.
+ */
+function loadSDCardData() {
+  const sdcardsPath = path.join(__dirname, "../../data/sdcards.json");
+  const data = JSON.parse(fs.readFileSync(sdcardsPath, "utf8"));
+  const cardMap = {};
+
+  data.sdcards.forEach(series => {
+    // Check if this is the new Series format (has 'specs' object)
+    const isNewFormat = series.specs && typeof series.specs === 'object';
+    
+    // Create adapter card for backward compatibility
+    const adapterCard = {
+      id: series.id,
+      name: series.name,
+      type: series.type,
+      imageUrl: series.imageUrl,
+      amazonSearchUrl: series.amazonSearchUrl,
+      priceTier: series.priceTier,
+      priceSymbol: series.priceSymbol,
+      pros: series.pros,
+      cons: series.cons,
+      tier: series.tier,
+      
+      // Map nested specs to top-level for compatibility (New Format)
+      ...(isNewFormat ? {
+        uhs: series.specs.uhs,
+        speed: series.specs.speedClass,
+        readSpeed: series.specs.readSpeed,
+        writeSpeed: series.specs.writeSpeed,
+        appPerformance: series.specs.appPerformance,
+        enduranceRating: series.specs.endurance,
+        capacityGB: series.availableCapacities ? series.availableCapacities[Math.floor(series.availableCapacities.length / 2)] : null,
+        capacityString: series.availableCapacities ? series.availableCapacities.map(c => `${c}GB`).join(', ') : '',
+        availableCapacities: series.availableCapacities,
+      } : {
+        // Old flat format - use as-is
+        uhs: series.uhs,
+        speed: series.speed,
+        readSpeed: series.readSpeed,
+        writeSpeed: series.writeSpeed,
+        appPerformance: series.appPerformance,
+        enduranceRating: series.enduranceRating,
+      }),
+      
+      // Price estimate: Map symbols to approximation (for legacy compatibility)
+      priceEstimate: series.priceSymbol === '$$$' ? 100 : (series.priceSymbol === '$$' ? 45 : 20),
+      
+      // Preserve raw specs object for new code
+      specs: isNewFormat ? series.specs : undefined,
+    };
+
+    // SMART IMAGE RESOLUTION
+    // Try to find the actual image file (handles fuzzy matching)
+    const foundImage = findActualImageFile(series.id, series.imageUrl);
+    if (foundImage) {
+      adapterCard.imageUrl = foundImage;
+    }
+
+    cardMap[series.id] = adapterCard;
+  });
+
+  return cardMap;
+}
+
 module.exports = {
   ensureDir,
   readJSON,
@@ -590,4 +700,5 @@ module.exports = {
   generateSpecsHTML,
   generateFAQHTML,
   generateRelatedDevices,
+  loadSDCardData,
 };

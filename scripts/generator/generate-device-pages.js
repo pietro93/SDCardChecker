@@ -4,24 +4,11 @@
 
 const path = require("path");
 const fs = require("fs");
-const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices } = require("./helpers");
+const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, loadSDCardData } = require("./helpers");
 const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 const { generateFAQs, mergeFAQs } = require("./generateFAQs");
 
 const srcPath = path.join(__dirname, "../../src");
-
-/**
- * Load SD card data from sdcards.json
- */
-function loadSDCardData() {
-    const sdcardsPath = path.join(__dirname, "../../data/sdcards.json");
-    const data = JSON.parse(fs.readFileSync(sdcardsPath, "utf8"));
-    const cardMap = {};
-    data.sdcards.forEach(card => {
-        cardMap[card.id] = card;
-    });
-    return cardMap;
-}
 
 /**
  * Get Font Awesome icon for device category
@@ -147,6 +134,9 @@ function generateAlternatives(device, sdcardsMap) {
 
     const createCard = (brand, label) => {
     const cardImage = brand.imageUrl || getCardImageFallback(brand);
+    // Use priceSymbol if available (new format), otherwise use numeric estimate
+    const priceDisplay = brand.priceSymbol ? `${brand.priceSymbol} (${brand.priceTier})` : `$${brand.priceEstimate}`;
+    
     return `
     <div class="alternative-card card">
     <div class="alternative-label">${label}</div>
@@ -155,7 +145,7 @@ function generateAlternatives(device, sdcardsMap) {
     </div>
       <div class="alternative-content">
         <div class="alternative-title">${brand.name}</div>
-        <div class="alternative-price">$${brand.priceEstimate}</div>
+        <div class="alternative-price">${priceDisplay}</div>
         <div class="pros">${brand.pros}</div>
         ${brand.cons ? `<div class="cons">${brand.cons}</div>` : ""}
         <a href="${brand.amazonSearchUrl}" target="_blank" class="btn btn-amazon">
