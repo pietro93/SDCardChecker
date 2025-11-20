@@ -179,6 +179,7 @@ https://amazon.com/s?k=ProGrade+SDXC&tag=sd-cc-20&utm_source=sdcardchecker&utm_m
 - [ ] Implement UTM parameters on all affiliate links
 - [ ] Set up Google Analytics 4 conversion tracking
 - [ ] Add source/referrer field to this sheet for new sales
+- [ ] Are the SD cards driving sales in the sdcardchecker.json and devices.json datasets? If no, why?
 - [ ] Identify which device pages drove these 3 sales
 - [ ] Monitor K&F Concept for higher-margin opportunities
 - [ ] Test additional camera accessory affiliate programs

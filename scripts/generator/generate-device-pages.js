@@ -320,8 +320,9 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const deviceImage = device.imageUrl || getDeviceImageFallback(device);
 
     // Extract first sentence from whySpecs for the answer explanation
-    // This avoids duplication since the full whySpecs is also in the requirements box
-    const whySpecsFirstSentence = device.whySpecs.split('.')[0] + '.';
+     // Properly match sentence end: period followed by space or end of string (avoids splitting on decimal points like 2.7K)
+     const sentenceMatch = device.whySpecs.match(/[^.!?]*[.!?](?:\s|$)/);
+     const whySpecsFirstSentence = sentenceMatch ? sentenceMatch[0].trim() : device.whySpecs;
     
     let html = template
         .replace(/{{DEVICE_TITLE}}/g, title)

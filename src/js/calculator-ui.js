@@ -223,8 +223,10 @@ class CalculatorUI {
                 try {
                     const input = this._buildForwardInput();
 
-                    // Validate numeric fields to prevent NaN errors
-                    const numericFields = Object.entries(input).filter(([key]) => key !== 'scenario');
+                    // Validate numeric fields to prevent NaN errors (exclude scenario and string fields like shootingStyle)
+                    const numericFields = Object.entries(input).filter(([key, val]) => 
+                        key !== 'scenario' && key !== 'compareFormats' && typeof val === 'number'
+                    );
                     if (numericFields.some(([, val]) => isNaN(val) || val === '')) {
                         alert('Invalid input. Please enter valid numbers.');
                         return;
@@ -256,8 +258,10 @@ class CalculatorUI {
                     const input = this._buildReverseInput();
                     console.log('Reverse input:', input);
 
-                    // Validate numeric fields to prevent NaN errors
-                    const numericFields = Object.entries(input).filter(([key]) => key !== 'scenario');
+                    // Validate numeric fields to prevent NaN errors (exclude scenario and string fields)
+                    const numericFields = Object.entries(input).filter(([key, val]) => 
+                        key !== 'scenario' && typeof val === 'number'
+                    );
                     if (numericFields.some(([, val]) => isNaN(val) || val === '')) {
                         console.warn('Invalid numeric fields:', numericFields.filter(([, val]) => isNaN(val) || val === ''));
                         alert('Invalid input. Please enter valid numbers.');

@@ -145,6 +145,12 @@
 
 **Tracking:** Update DEVICES_ADDED_NOV18.md with counts daily
 
+- **Design: New Product! SD Cards Review and Comparison Tool**
+- [ ] conceptualise new tool to be integrated with sdcards.json
+- [ ] answers SEO queries such as "prograde v90 vs sandisk v90", and "prograde v90 review"
+- [ ] comparison tool between any two (or up to four?) SD cards in the dataset - better to keep everything in one page, or create hundreds of pages computationally with url slug e.g. prograde-v90-vs-sandisk-v90?
+- [ ] Keep an eye on GSC findings and Affiate sales to define SEO strategy
+
 ---
 
 ### Sprint 2: Page Optimization (Content + Images)
