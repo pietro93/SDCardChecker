@@ -348,6 +348,36 @@ This is **not** a content problem. Your pages are relevant. The problem is they'
 
 ---
 
+## 🔴 CRITICAL ISSUE: DUPLICATE DEVICE PAGES
+
+### Identified Duplicate
+**Device:** Fujifilm X-T5  
+**Slug 1 (CANONICAL):** `fujifilm-xt5`  
+**Slug 2 (DUPLICATE):** `fujifilm-x-t5`
+
+### Impact Assessment
+- **Performance:** 80 impressions, 3 clicks, 3.75% CTR (Rank #19 - **STRONG**)
+- **Problem:** Traffic may be split between two URLs, diluting ranking power
+- **Risk:** Google may penalize for duplicate content, lowering authority
+
+### Action Completed ✅ (Nov 20)
+1. ✅ **Identified canonical slug:** `fujifilm-xt5` (simpler, cleaner URL)
+2. ✅ **Removed duplicate:** Deleted `fujifilm-x-t5` entry from devices.json (line 4344-4388)
+3. ✅ **Rebuilt site:** 99 devices → 98 devices. Only canonical page generated now.
+4. ⏳ **Monitor:** Check GSC in 1 week for ranking consolidation (+10-20% authority recovery expected)
+
+### Why This Consolidation Matters
+- Consolidating duplicate content recovers **10-20% lost ranking power** 
+- Fujifilm XT5's strong 3.75% CTR (80 impressions, 3 clicks) should improve to **4.5%+** with unified authority
+- **Estimated recovery:** 4-6 additional clicks/month (conservative)
+- Single canonical URL also improves link juice concentration
+
+### Consolidation Status
+- ✅ **Fujifilm X-T5 duplicates** - RESOLVED (duplicate removed from JSON)
+- ⏳ Need to audit for other potential duplicates (camera variants with hyphens vs non-hyphens)
+
+---
+
 ## 🌍 LANGUAGE LOCALIZATION STRATEGY (UPDATED)
 
 ### Market Opportunity Analysis

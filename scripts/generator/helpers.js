@@ -631,12 +631,15 @@ function loadSDCardData() {
     // Check if this is the new Series format (has 'specs' object)
     const isNewFormat = series.specs && typeof series.specs === 'object';
     
+    // Use smart image finder to resolve actual image path (handles missing files)
+    const resolvedImageUrl = findActualImageFile(series.id, series.imageUrl);
+    
     // Create adapter card for backward compatibility
     const adapterCard = {
       id: series.id,
       name: series.name,
       type: series.type,
-      imageUrl: series.imageUrl,
+      imageUrl: resolvedImageUrl || series.imageUrl, // Use resolved path if found, else original
       amazonSearchUrl: series.amazonSearchUrl,
       priceTier: series.priceTier,
       priceSymbol: series.priceSymbol,

@@ -9,10 +9,17 @@ class CalculatorCardRecommendations {
     /**
      * Get smart fallback image for card based on type and speed class
      * Uses UHS level and type to determine appropriate placeholder
+     * First checks if card has a specific image, then falls back to type/speed-based placeholders
      * @param {Object} card - Card object
      * @returns {String} Fallback image URL
      */
     static getCardImageFallback(card) {
+        // Check if card has a valid image URL that should exist
+        if (card.imageUrl && card.imageUrl.includes('/img/cards/')) {
+            // Return the specified image (if file doesn't exist, browser's onerror will catch it)
+            return card.imageUrl;
+        }
+        
         const isMicroSD = card.type && card.type.toLowerCase().includes('microsd');
         const uhs = card.uhs ? card.uhs.toUpperCase() : '';
         
@@ -34,7 +41,7 @@ class CalculatorCardRecommendations {
             return isMicroSD ? '/img/cards/micro-uhs1-generic.webp' : '/img/cards/uhs1-generic.webp';
         }
 
-        // Default fallback
+        // Default fallback for any other card type
         return '/img/cards/placeholder.webp';
     }
 

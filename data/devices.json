@@ -4341,52 +4341,6 @@
       "notes": "The highly popular predecessor to the X-S20. Shares similar card requirements but lacks the newer model's 6.2K video capability."
     },
     {
-      "id": "fujifilm-x-t5",
-      "name": "Fujifilm X-T5",
-      "category": "Cameras",
-      "slug": "fujifilm-x-t5",
-      "searchTerms": [
-        "fujifilm xt5 sd card",
-        "x-t5 memory card",
-        "xt5 storage"
-      ],
-      "sdCard": {
-        "type": "Dual SD UHS-II",
-        "minSpeed": "V60 (V90 for high bitrate video)",
-        "minWriteSpeed": "60 MB/s",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB",
-          "512GB"
-        ],
-        "maxCapacity": "No official limit (1TB+ tested)"
-      },
-      "whySpecs": "The X-T5's 40MP sensor and 6.2K video generate large files. V60 is sufficient for most work, but V90 is recommended for the highest quality video codecs and to clear the buffer faster during high-speed burst shooting.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-pro-sd-uhs2"
-        },
-        {
-          "id": "lexar-professional-1000x-sd"
-        },
-        {
-          "id": "sony-tough-g-v90"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Do I need V90 cards for the X-T5, or is V60 enough?",
-          "a": "<b>V60 is sufficient for most users, including 4K video and general photography.</b> You only need a V90 card if you plan to shoot frequently in the highest bitrate 6.2K modes or need the absolute fastest buffer clearing for continuous action photography."
-        }
-      ],
-      "relatedDevices": [
-        "fujifilm-x-t4",
-        "sony-a6700",
-        "canon-eos-r7"
-      ],
-      "notes": "Fujifilm's flagship photo-centric APS-C camera with dual UHS-II slots. Card speed is a critical consideration for unlocking its full potential."
-    },
-    {
       "id": "canon-eos-r6",
       "name": "Canon EOS R6",
       "category": "Cameras",
