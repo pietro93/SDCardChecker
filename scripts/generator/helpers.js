@@ -302,16 +302,28 @@ function getCardImageFallback(card) {
   }
   
   // Lexar brand fallbacks
-  if (cardName.includes("lexar professional 1000x")) {
-    if (imageExists("/img/cards/lexar-professional-1000x.webp")) {
-      return "/img/cards/lexar-professional-1000x.webp";
-    }
-  }
   if (cardName.includes("lexar")) {
+    // Try specific variant matching first
+    if (cardName.includes("1667x") || cardName.includes("silver")) {
+      if (imageExists("/img/cards/lexar-professional-silver-sd-uhs-ii.webp")) {
+        return "/img/cards/lexar-professional-silver-sd-uhs-ii.webp";
+      }
+    }
+    if (cardName.includes("1000x")) {
+      if (imageExists("/img/cards/lexar-professional-1000x.webp")) {
+        return "/img/cards/lexar-professional-1000x.webp";
+      }
+    }
+    if (cardName.includes("633x")) {
+      if (imageExists("/img/cards/lexar-professional-633x.webp")) {
+        return "/img/cards/lexar-professional-633x.webp";
+      }
+    }
     // Try to find any lexar image
     const lexarImages = [
-      "/img/cards/lexar-professional-633x.webp",
-      "/img/cards/lexar-professional-1000x.webp"
+      "/img/cards/lexar-professional-silver-sd-uhs-ii.webp",
+      "/img/cards/lexar-professional-1000x.webp",
+      "/img/cards/lexar-professional-633x.webp"
     ];
     for (const img of lexarImages) {
       if (imageExists(img)) return img;
@@ -332,6 +344,29 @@ function getCardImageFallback(card) {
   
   // SanDisk brand fallbacks
   if (cardName.includes("sandisk")) {
+    // Try to match specific SanDisk variants
+    if (cardName.includes("ultra")) {
+      if (imageExists("/img/cards/sandisk-ultra-microsd.webp")) {
+        return "/img/cards/sandisk-ultra-microsd.webp";
+      }
+    }
+    if (cardName.includes("extreme")) {
+      if (cardName.includes("pro")) {
+        if (imageExists("/img/cards/sandisk-extreme-pro-sd-uhs-ii.webp")) {
+          return "/img/cards/sandisk-extreme-pro-sd-uhs-ii.webp";
+        }
+      } else {
+        if (imageExists("/img/cards/sandisk-extreme-microsd.webp")) {
+          return "/img/cards/sandisk-extreme-microsd.webp";
+        }
+      }
+    }
+    if (cardName.includes("max endurance")) {
+      if (imageExists("/img/cards/sandisk-max-endurance-microsd.webp")) {
+        return "/img/cards/sandisk-max-endurance-microsd.webp";
+      }
+    }
+    // Generic fallback for other SanDisk cards
     const sandiskImages = [
       "/img/cards/sandisk-extreme-microsd.webp",
       "/img/cards/sandisk-extreme-pro-sd-uhs-ii.webp",

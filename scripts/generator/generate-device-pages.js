@@ -304,6 +304,10 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     // Featured device image
     const deviceImage = device.imageUrl || getDeviceImageFallback(device);
 
+    // Extract first sentence from whySpecs for the answer explanation
+    // This avoids duplication since the full whySpecs is also in the requirements box
+    const whySpecsFirstSentence = device.whySpecs.split('.')[0] + '.';
+    
     let html = template
         .replace(/{{DEVICE_TITLE}}/g, title)
         .replace(/{{OG_TITLE}}/g, ogTitle)
@@ -320,7 +324,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{CATEGORY_NAME}}/g, device.category)
         .replace(/{{DEVICE_IMAGE}}/g, deviceImage)
         .replace(/{{ANSWER_TEXT}}/g, answerText)
-        .replace(/{{ANSWER_EXPLANATION}}/g, device.whySpecs)
+        .replace(/{{ANSWER_EXPLANATION}}/g, whySpecsFirstSentence)
         .replace(/{{REQUIREMENTS_BOX}}/g, requirementsBoxHTML)
         .replace(/{{SPECS_HTML}}/g, specsHTML)
         .replace(/{{BRANDS_TABLE_ROWS}}/g, brandsTableRows)
