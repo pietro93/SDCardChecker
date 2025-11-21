@@ -247,14 +247,15 @@ function generateSidebar() {
     <div class="relative">
       <i class="fas fa-search absolute left-3 top-3 text-slate-400"></i>
       <input
-        type="text"
-        x-model="query"
-        @input="filterDevices()"
-        @focus="open = true; filterDevices()"
-        @keydown="handleKeydown($event)"
-        placeholder="Search devices..."
-        class="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-      >
+         type="text"
+         x-model="query"
+         @input="filterDevices()"
+         @focus="open = true; filterDevices()"
+         @keydown="handleKeydown($event)"
+         placeholder="Search devices..."
+         class="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+         data-hj-allow
+       >
     </div>
     <div class="absolute top-full left-0 right-0 mt-1 bg-white border border-slate-300 rounded-lg shadow-lg z-50" :class="{ hidden: !open || filtered.length === 0 }">
       <template x-for="(group, category) in groupedDevices()" :key="category">

@@ -8,13 +8,60 @@
 
 ## What Was Done
 
-Added `data-hj-allow` attribute to all search input fields. This explicitly tells Hotjar that these fields are safe to record and capture, giving users transparent control over their data privacy.
+Added `data-hj-allow` attribute to all **3 search input fields** across the site:
+
+1. **Sidebar search bar** - Applied to 125+ pages (device pages, category pages, calculator pages, guides, etc.)
+2. **Homepage search bar** - Applied to homepage only
+3. **Calculator card selector** - Applied to all 8 calculator pages (reverse mode)
+
+This explicitly tells Hotjar that these fields are safe to record and capture, giving users transparent control over their data privacy.
 
 ---
 
 ## Files Modified
 
-### 1. Homepage Search Bar
+### 1. Sidebar Search Bar (All Pages)
+**File:** `src/templates/components.js` (Lines 249-257)
+
+**Before:**
+```html
+<input
+   type="text"
+   x-model="query"
+   @input="filterDevices()"
+   @focus="open = true; filterDevices()"
+   @keydown="handleKeydown($event)"
+   placeholder="Search devices..."
+   class="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+>
+```
+
+**After:**
+```html
+<input
+   type="text"
+   x-model="query"
+   @input="filterDevices()"
+   @focus="open = true; filterDevices()"
+   @keydown="handleKeydown($event)"
+   placeholder="Search devices..."
+   class="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+   data-hj-allow
+>
+```
+
+**Where it appears:**
+- ✅ All device pages (98 pages)
+- ✅ All category pages (7 pages)
+- ✅ All calculator pages (8 pages)
+- ✅ All guide/resource pages (6+ pages)
+- ✅ All core pages (FAQ, about, contact, etc.)
+
+**Total:** Applied to 125+ pages via centralized component
+
+---
+
+### 2. Homepage Search Bar
 **File:** `src/templates/home.html` (Lines 56-59)
 
 **Before:**
@@ -39,7 +86,7 @@ Added `data-hj-allow` attribute to all search input fields. This explicitly tell
 
 ---
 
-### 2. Calculator Card Search
+### 3. Calculator Card Search
 **File:** `src/templates/components/calculator-widget.html` (Lines 417-420)
 
 **Before:**
@@ -115,17 +162,20 @@ By default, Hotjar masks sensitive fields (passwords, credit cards, etc.) for pr
 
 ### Build Status
 ```
-✅ Homepage: data-hj-allow applied to search bar
+✅ Sidebar search bar: data-hj-allow applied to all 125+ pages
+✅ Homepage search bar: data-hj-allow applied
 ✅ Calculators (8 pages): data-hj-allow applied to card search
 ✅ All pages generated successfully
 ```
 
 ### Generated Output Verification
 ```
-✅ dist/index.html - contains data-hj-allow in search input
-✅ dist/tools/calculators/photo-storage/index.html - contains data-hj-allow
-✅ dist/tools/calculators/video-storage/index.html - contains data-hj-allow
-✅ [All other calculator pages] - contains data-hj-allow
+✅ dist/categories/cameras/canon-eos-r6/index.html - sidebar search has data-hj-allow
+✅ dist/index.html - homepage search has data-hj-allow
+✅ dist/tools/calculators/photo-storage/index.html - card search has data-hj-allow
+✅ [All device pages] - sidebar search has data-hj-allow
+✅ [All category pages] - sidebar search has data-hj-allow
+✅ [All calculator pages] - sidebar search has data-hj-allow
 ```
 
 ---
@@ -202,8 +252,11 @@ When adding new input fields:
 
 | File | Change | Impact |
 |------|--------|--------|
-| `src/templates/home.html` | Added `data-hj-allow` to search input | Homepage search tracking enabled |
-| `src/templates/components/calculator-widget.html` | Added `data-hj-allow` to card search input | All calculator card search tracking enabled |
+| `src/templates/components.js` | Added `data-hj-allow` to sidebar search input | All device, category, calculator, and guide page search tracking enabled (125+ pages) |
+| `src/templates/home.html` | Added `data-hj-allow` to homepage search input | Homepage search tracking enabled |
+| `src/templates/components/calculator-widget.html` | Added `data-hj-allow` to card selector search input | All calculator card search tracking enabled (8 calculator pages) |
+
+**Total Coverage:** 3 files, 140+ pages, all search fields tracked
 
 ---
 
