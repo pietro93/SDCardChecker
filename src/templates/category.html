@@ -73,18 +73,36 @@
 
     <!-- Devices Grid -->
     <section x-data="categoryDevices()" x-init="init()">
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
-        <h2 class="text-2xl font-bold text-slate-900">All {{CATEGORY_NAME}} Devices</h2>
-        <!-- Brand Filter -->
-        <div class="w-full md:w-48" x-cloak>
-          <label class="text-sm font-semibold text-slate-600 block mb-2">Filter by Brand:</label>
-          <select x-model="selectedBrand" @change="filterByBrand()" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
-            <option value="">All Brands</option>
-            <template x-for="brand in availableBrands" :key="brand">
-              <option :value="brand" x-text="brand"></option>
-            </template>
-          </select>
-        </div>
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">All {{CATEGORY_NAME}} Devices</h2>
+      
+      <!-- Modern Filter Buttons -->
+      <div class="mb-8 flex flex-wrap gap-3 items-center" x-cloak>
+        <!-- Clear All Button -->
+        <button 
+          @click="clearAllFilters()" 
+          :class="{
+            'bg-red-100 text-red-700 border-red-300 hover:bg-red-200': hasActiveFilters(),
+            'bg-slate-100 text-slate-400 border-slate-300 cursor-not-allowed': !hasActiveFilters()
+          }"
+          class="px-3 py-2 rounded-full border font-medium text-sm transition-all duration-200 flex items-center gap-2"
+          :disabled="!hasActiveFilters()"
+        >
+          <i class="fas fa-times text-lg leading-none"></i>
+          Clear
+        </button>
+        
+        <!-- Brand Filter Buttons -->
+        <template x-for="brand in availableBrands" :key="brand">
+          <button 
+            @click="toggleBrand(brand)" 
+            :class="{
+              'bg-blue-600 text-white border-blue-700': isSelected(brand),
+              'bg-white text-slate-700 border-slate-300 hover:border-blue-400': !isSelected(brand)
+            }"
+            class="px-4 py-2 rounded-full border font-medium text-sm transition-all duration-200 hover:shadow-md"
+            x-text="brand"
+          ></button>
+        </template>
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="deviceGrid">
         {{DEVICE_CARDS_HTML}}
@@ -101,7 +119,7 @@
     // Category Devices Filter Component
     function categoryDevices() {
       return {
-        selectedBrand: '',
+        selectedBrands: [],
         availableBrands: [],
         allDevices: [],
 
@@ -124,6 +142,10 @@
                 if (brand) brands.add(brand);
               });
               this.availableBrands = Array.from(brands).sort();
+              
+              // Select all brands by default
+              this.selectedBrands = [...this.availableBrands];
+              this.filterByBrand();
             })
             .catch(err => console.error('Failed to load devices:', err));
         },
@@ -135,19 +157,38 @@
           return parts.length > 0 ? parts[0] : null;
         },
 
+        toggleBrand(brand) {
+          const index = this.selectedBrands.indexOf(brand);
+          if (index > -1) {
+            this.selectedBrands.splice(index, 1);
+          } else {
+            this.selectedBrands.push(brand);
+          }
+          this.filterByBrand();
+        },
+
+        isSelected(brand) {
+          return this.selectedBrands.includes(brand);
+        },
+
+        hasActiveFilters() {
+          return this.selectedBrands.length < this.availableBrands.length;
+        },
+
+        clearAllFilters() {
+          this.selectedBrands = [...this.availableBrands];
+          this.filterByBrand();
+        },
+
         filterByBrand() {
           const deviceGrid = document.getElementById('deviceGrid');
           if (!deviceGrid) return;
           
           const cards = deviceGrid.querySelectorAll('.device-card');
           cards.forEach(card => {
-            if (!this.selectedBrand) {
-              card.style.display = '';
-            } else {
-              const deviceName = card.querySelector('.device-card-name')?.textContent || '';
-              const brand = this.extractDeviceBrand(deviceName);
-              card.style.display = (brand === this.selectedBrand) ? '' : 'none';
-            }
+            const deviceName = card.querySelector('.device-card-name')?.textContent || '';
+            const brand = this.extractDeviceBrand(deviceName);
+            card.style.display = (this.selectedBrands.includes(brand)) ? '' : 'none';
           });
         }
       };
