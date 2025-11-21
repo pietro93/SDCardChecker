@@ -1,10 +1,50 @@
 # GSC Analysis & Insights
 
-**Last Updated:** November 19, 2025
-**Data Period:** Nov 10 - Nov 19, 2025 (9 days since launch on Nov 10)
+**Last Updated:** November 21, 2025
+**Data Period:** Nov 10 - Nov 21, 2025 (11 days since launch)
 **Link:** Referenced in KANBAN_BOARD.md
 
-> **⚡ LAUNCH PERFORMANCE SUMMARY:** 9 days old, 4,482 all-time impressions, 26 clicks (0.58% CTR). Site is performing as expected for fresh launch with strong niche device performance.
+> **⚠️ CRITICAL UPDATE (Nov 21):** 11 days old. Past 30 days shows **only 2 clicks from 600+ impressions (0.33% CTR)**. Massive CTR collapse from initial 0.58%. Top 20 queries all have 0% CTR. **This is not normal—something is blocking clicks aggressively. SERP inspection is now URGENT.**
+
+---
+
+## 🚨 PAST 30 DAYS PERFORMANCE (CRITICAL DECLINE)
+
+### Raw Statistics (Nov 10-21 Full Data)
+- **Total Impressions (30 days):** 600+
+- **Total Clicks (30 days):** 2
+- **CTR (30 days):** **0.33%** ⚠️ DOWN 42% from initial 0.58%
+- **Queries with clicks:** Only 2 queries got ANY clicks
+  - `osmo pocket 3 micro sd` - 1 click / 2 impressions
+  - `rog ally x sd card compatibility` - 1 click / 1 impression
+
+### Top 20 Queries - All 0% CTR
+
+| Rank | Query | Impressions | Clicks | CTR |
+|------|-------|-------------|--------|-----|
+| 1 | dji mini 4k microsd requirements | 23 | 0 | 0% |
+| 2 | dji osmo pocket 3 sd card requirements | 14 | 0 | 0% |
+| 3 | osmo pocket 3 sd card requirements | 14 | 0 | 0% |
+| 4 | dji pocket 3 sd card requirements | 14 | 0 | 0% |
+| 5 | dji mini 4k microsd card requirements | 13 | 0 | 0% |
+| 6 | raspberry pi sd card | 11 | 0 | 0% |
+| 7 | dji osmo action 4 microsd requirements | 10 | 0 | 0% |
+| 8 | dji osmo action 4 sd card requirements | 9 | 0 | 0% |
+| 9 | dji mini 4 pro microsd requirements | 9 | 0 | 0% |
+| 10 | best microsd for steam deck | 9 | 0 | 0% |
+
+**Pattern:** Every major device query (DJI, Steam Deck, Sony, Canon, Raspberry Pi) is getting **zero** clicks despite showing in search results. This is abnormal.
+
+### What Changed?
+
+**Nov 10-19 (9 days):** 4,482 impressions, 26 clicks (0.58% CTR) - mixed results, some queries converting
+**Nov 10-21 (30 days):** 600 impressions/month pace, 2 clicks (0.33% CTR) - almost complete click blackout on major queries
+
+**Hypothesis for collapse:**
+1. Google algorithm update deprioritized new domains in this niche
+2. Featured snippets expanded coverage (answer boxes stealing all clicks)
+3. YouTube/retailers consolidated top positions after your launch
+4. Your pages are showing at positions #6+ instead of #3-4 (death zone for CTR)
 
 ---
 
@@ -109,6 +149,35 @@ This is **not** a content problem. Your pages are relevant. The problem is they'
 
 ---
 
+---
+
+## 🔴 SERP INSPECTION COMPLETE (Nov 21) - REALITY CHECK
+
+### The Verdict: We're Not Ranking. At All.
+
+Your pages aren't even on Page 1 for the top 5 queries. This isn't a "click blocking" problem—it's a "we're competing against manufacturers and 10-year-old authority sites" problem.
+
+### What's Actually Dominating the SERPs
+
+| Query | Position #1 | Featured Snippet | Your Site |
+|-------|------------|------------------|-----------|
+| dji osmo pocket 3 sd card requirements | DJI.com (Manufacturer) | DJI.com + Reddit | ❌ NOT RANKED |
+| steam deck sd card | Rock Paper Shotgun (Gaming Giant) | DeepSea Developments | ❌ NOT RANKED |
+| dji mini 4 pro microsd | DJI.com (Manufacturer) | DJI.com | ❌ NOT RANKED |
+| sony a6700 sd card | B&H Photo (E-commerce) | Alik Griffin | ❌ NOT RANKED |
+| raspberry pi sd card | Bret.dk + Jeff Geerling (Individual Bloggers) | DeepSea Developments | ❌ NOT RANKED |
+
+**The Real Problem:** You're not fighting featured snippets or weak meta descriptions. You're fighting:
+1. **Manufacturers** (DJI, Valve) - Unbeatable
+2. **Massive publishers** (Rock Paper Shotgun, B&H) - Established authority
+3. **Individual niche experts** (Alik Griffin, Jeff Geerling, Bret.dk) - Been around longer, deeper expertise
+
+**The One Opening:** Raspberry Pi queries are ranking individual bloggers, not corporations. This is winnable.
+
+---
+
+**Implication:** Meta description rewrites, answer boxes, and schema markup will NOT help us rank for these queries. Google isn't hiding our pages behind a snippet—Google isn't showing our pages at all because we're 11 days old and competing against manufacturers.
+
 ### ⚠️ CRITICAL ACTION REQUIRED (Before Any Changes)
 
 **You must manually inspect the SERPs to prove/disprove these hypotheses.** Changes based on wrong assumptions waste time.
@@ -172,118 +241,110 @@ This is **not** a content problem. Your pages are relevant. The problem is they'
 
 ---
 
-## 🔬 REVISED ACTION PLAN: Hypothesis-Driven Testing
+## 🎯 REVISED ACTION PLAN: Low-Competition Keywords Only
 
-### Phase 1: Proof (Next 2-3 Days)
+### The Reality Check
+Trying to rank for "dji osmo pocket 3 sd card requirements" is like a food truck trying to out-SEO McDonald's. We can't. We won't. We shouldn't try.
 
-**1️⃣ MANUAL SERP INSPECTION (Required)**
-- Search 10 key terms in incognito (US region)
-- Document exact SERP layout, featured snippets, competitor positions
-- **Deliverable:** Screenshots + findings to inform Phase 2 strategy
+**Our competitive advantage is NOT mass-market devices. It's technical specificity in markets where manufacturers don't bother.**
 
-**2️⃣ GSC "SEARCH APPEARANCE" AUDIT**
-- Check what title/meta Google is actually showing for your pages
-- Identify any auto-generated descriptions (sign of weak meta)
-- **Deliverable:** List of pages needing title/meta optimization
+### Phase 1: Immediate (This Week)
 
-**3️⃣ MOBILE PERFORMANCE DEEP DIVE**
-- Why is mobile 5.6x better? (Faster load? Better UX? Different user intent?)
-- Test your top pages on mobile (Chrome DevTools)
-- Check Core Web Vitals
-- **Deliverable:** Mobile optimization opportunities identified
+**1️⃣ AUDIT FOR LOW-COMPETITION LONG-TAIL KEYWORDS**
+Find queries where we CAN rank (individual bloggers, not corporations):
+- "Best SD card for Leica Q2" (Individual blogger tier, not manufacturer-dominated)
+- "Fujifilm X-T5 UHS-II speed test results" (Technical depth over generic specs)
+- "Raspberry Pi 5 A2 vs A1 performance" (Niche technical, not mainstream)
+- "Miyoo Mini Plus stability testing cards" (Retro gaming enthusiasts, small market)
 
-### Phase 2: Targeted Fixes (Based on Phase 1 Data)
+**Target:** Queries where position #1 is a personal blog with <50K monthly visitors, NOT a corporation.
 
-**IF Featured Snippets are the problem:**
-- Create scannable, snippet-friendly answer sections
-- Target featured snippet format (list, table, definition)
-- Focus on mobile presentation
+**2️⃣ IDENTIFY WINNING PATTERNS FROM CURRENT DATA**
+Look at your 1.5%+ CTR pages:
+- Leica Q3-43: 14.29% CTR
+- Fujifilm XT5: 3.75% CTR
+- Canon R6 Mark II: 1.56% CTR
+- Raspberry Pi 5: 1.61% CTR
 
-**IF Your SERP appearance is weak:**
-- Rewrite title tags to be more compelling
-- Craft unique meta descriptions that answer the query immediately
-- Add schema markup for better SERP display
+**Question:** What do these queries have in common? (Answer: Niche expertise market, not mass-market)
 
-**IF YouTube/retailers are ranking #1:**
-- Don't fight them on this query
-- Find adjacent, less-competitive queries to target
-- Focus optimization effort on niche markets where you can win
+Analyze:
+- What SERP rank are these queries at? (Likely #1-3, beating individual bloggers)
+- Who else is ranking? (Likely enthusiast sites, not manufacturers)
+- What content format is winning? (Detailed specs? Comparison tables? Speed tests?)
 
-### Phase 3: Growth (Month 2+)
+**3️⃣ BUILD CONTENT FOR UNDERSERVED NICHES ONLY**
+Stop creating generic pages. Start creating pages that answer questions manufacturers + big retailers don't:
 
-**Double down on what works:**
-- Add 20-30 niche device pages (Leica variants, premium cameras, retro gaming handhelds)
-- Build backlinks (outreach to tech blogs, review sites)
-- Create content for lower-competition queries in your winning categories
+Examples:
+- "Best V90 SD Cards for DJI Drones (2025 Speed Test Results)"
+- "Steam Deck vs Legion Go: microSD Card Compatibility Showdown"
+- "Retro Gaming Handheld SD Card Guide (Miyoo, Anbernic, Retroid)"
+- "Professional Cinema Camera SD Cards: Sony FX30 vs Canon R5C"
+
+**Why these work:** Specific comparison angles that DJI.com and B&H don't cover.
+
+### Phase 2: Content Strategy (Weeks 2-4)
+
+**DON'T create:**
+- "DJI Mini 4 Pro SD Card Requirements" (DJI owns this)
+- "How to Choose Steam Deck SD Card" (Valve + Rock Paper Shotgun own this)
+- Generic device pages competing on "specifications"
+
+**DO create:**
+- "7 SD Cards We Tested for [Niche Device]—This One Failed 3 Times"
+- "[Niche Camera] + [Specific SD Card Brand] = Perfect Match (Tested)"
+- "Why Enthusiasts Prefer [Card Type] Over [Card Type]"
+
+**Content must be:**
+- Based on actual testing/research (we have data, competitors have guesses)
+- Answering specific pain points ("Which V90 card is actually fastest?")
+- Targeting niche, high-intent audiences (Camera enthusiasts, retro gaming fans, developers)
+
+### Phase 3: Long-term (Month 2+)
+
+**Build authority in your winning categories:**
+- 20-30 new niche device pages (Leica variants, premium cameras, retro gaming, maker devices)
+- Backlink outreach to **small enthusiast blogs + YouTube channels** (not tech giants)
+- Create comparison content ("X vs Y for [device]") to capture intent
+
+**Stop trying to compete with manufacturers. Serve the nerds who want MORE detail than manufacturers provide.**
 
 ---
 
-## 🔧 IMMEDIATE UX/SEO PRIORITY FIXES (Conditional on Phase 1 Results)
+## 🔧 WHAT NOT TO DO (Based on SERP Reality)
 
-### 1️⃣ FIX THE ANSWER BOX (Recover 15-20 clicks)
+### ❌ DON'T Waste Time On These Fixes
 
-**For:** DJI Mini 4 Pro, Steam Deck, DJI Osmo Pocket 3
+**Answer boxes for DJI/Steam Deck pages:** Pointless. We're not ranked on page 1, so users never see the snippet. Manufacturers hold those positions and aren't going anywhere.
 
-**Action:**
-```html
-<!-- Add this BEFORE the main H1 -->
-<div class="answer-box" style="background: #f0f0f0; padding: 20px; border-left: 4px solid #3b82f6; margin-bottom: 30px;">
-  <h2 style="margin-top: 0;">Quick Answer</h2>
-  <p><strong>DJI Mini 4 Pro requires:</strong></p>
-  <ul style="margin: 10px 0;">
-    <li>UHS-II SD card</li>
-    <li>128GB capacity recommended</li>
-    <li>V30 or V60 speed class</li>
-    <li>Read speed: 90 MB/s minimum</li>
-  </ul>
-</div>
-```
+**Meta description rewrites for generic queries:** Irrelevant. Google isn't hiding our pages behind snippets; Google isn't showing our pages at all.
 
-**Why:** This matches the exact format Google uses for featured snippets. Users scanning results see the answer immediately.
+**Schema markup for "requirements" pages:** Doesn't matter. Schema helps with rich snippets, but only if you're already ranking. We're not.
 
-### 2️⃣ SCHEMA MARKUP ADDITION (Help Google understand what we offer)
+**Internal linking between competing pages:** Counterproductive. Linking "DJI Mini 4 Pro" to "Steam Deck" dilutes both pages' authority on low-competition keywords.
 
-**Add to every device page:**
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "DJI Mini 4 Pro SD Card Requirements",
-  "description": "Compatible SD card specifications for DJI Mini 4 Pro",
-  "isPartOf": {
-    "@type": "WebPage",
-    "name": "SD Card Checker"
-  },
-  "brand": {
-    "@type": "Brand",
-    "name": "DJI"
-  }
-}
-```
+---
 
-**Impact:** Google can show richer snippets. Better positioning in SERPs.
+### ✅ WHAT TO DO INSTEAD
 
-### 3️⃣ META DESCRIPTION AUDIT (Control your SERP snippet)
+**Focus energy on the winning pattern:**
 
-**Current issue:** Meta descriptions likely aren't being used.
+1. **Analyze your 1.5%+ CTR pages** (Leica Q3, Fujifilm XT5, Raspberry Pi 5)
+   - Where are they ranking in SERPs? (Bet: top 3)
+   - Who are the competitors? (Bet: individual bloggers, not manufacturers)
+   - What query angle are they winning? (Bet: specific technical details, not generic specs)
 
-**Fix:** Write unique 160-character descriptions for top 20 devices:
+2. **Create more content like the winners**
+   - Not "DJI Mini 4 Pro SD Card Requirements"
+   - But "Best SD Cards for DJI Mini 4 Pro: Speed Test Results (V60 vs V90)"
 
-```
-❌ Bad: "Find SD card requirements for DJI Mini 4 Pro"
-✅ Good: "DJI Mini 4 Pro: Requires UHS-II SD card, 128GB, V60 class. Complete compatibility guide & recommendations."
-```
+3. **Build authority through niche dominance**
+   - 20-30 pages in Leica, Fujifilm, Raspberry Pi, retro gaming niches
+   - Each page ranks #1-3 because we're the only ones deep-diving these specific markets
+   - Backlinks from enthusiast blogs amplify niche authority
 
-**Devices to fix first:** DJI Osmo Pocket 3, DJI Mini 4 Pro, Steam Deck, Sony A6700
-
-### 4️⃣ INTERNAL LINKING FIX (Keep users on your site)
-
-**Current issue:** No mention of internal links in GSC data. Check if device pages link to:
-- Speed classes page (currently 0% CTR despite 71 impressions)
-- Other device pages
-- SD card comparison tools
-
-**Fix:** Add 2-3 internal links per device page
+**This is how you get from 0.33% CTR to 2%+ CTR. Not by tweaking meta descriptions. By picking battles you can win.**
 
 ---
 

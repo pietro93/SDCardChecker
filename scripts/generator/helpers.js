@@ -192,6 +192,7 @@ function getDeviceImageFallback(device) {
     "sony-a7-iv": "/img/devices/cameras/sony-placeholder.webp",
     "sony-zv-e10": "/img/devices/cameras/sony-placeholder.webp",
     "sony-fx3": "/img/devices/cameras/sony-fx3.webp",
+    "sony-fx30": "/img/devices/cameras/sony-fx30.webp",
     "sony-tough-g-v90": "/img/devices/cameras/sony-placeholder.webp",
     "fujifilm-x-s20": "/img/devices/cameras/fujifilm-x-s20.webp",
     "fujifilm-x-s10": "/img/devices/cameras/fujifilm-placeholder.webp",
@@ -225,6 +226,7 @@ function getDeviceImageFallback(device) {
   // Brand-specific placeholders (using only files that actually exist)
   if (name.includes("gopro")) return "/img/devices/action-cameras/gopro-placeholder.webp";
   if (name.includes("insta360")) return "/img/devices/action-cameras/gopro-placeholder.webp";
+  if (name.includes("osmo")) return "/img/devices/action-cameras/gopro-placeholder.webp";
   if (name.includes("dji")) return "/img/devices/drones/drone-placeholder.webp";
   if (name.includes("steam deck")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
   if (name.includes("switch")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
