@@ -1,7 +1,7 @@
 # Affiliate Sales Tracker
 
 **Launch Date:** November 20, 2025  
-**First Sale Date:** November 20, 2025 (11 days post-launch)  
+**First Sale Date:** November 20, 2025  days post-launch)  
 **Last Updated:** November 20, 2025
 
 ---

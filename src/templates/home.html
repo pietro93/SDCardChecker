@@ -56,7 +56,8 @@
                     <input type="text" x-model="query" @input="filterDevices()" @focus="open = true; filterDevices()"
                         @keydown="handleKeydown($event)"
                         placeholder="Search devices..." class="search-input"
-                        aria-label="Search for devices and recommended SD cards">
+                        aria-label="Search for devices and recommended SD cards"
+                        data-hj-allow>
                     <div class="search-dropdown" :class="{ hidden: !open || (filtered && filtered.length === 0) }">
                          <template x-for="category in Object.keys(groupedDevices()).sort()" :key="category">
                             <div>
