@@ -176,7 +176,7 @@
         },
 
         clearAllFilters() {
-          this.selectedBrands = [];
+          this.selectedBrands = [...this.availableBrands];
           this.filterByBrand();
         },
 
