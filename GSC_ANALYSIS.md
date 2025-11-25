@@ -14,32 +14,34 @@
 
 **VERIFICATION COMPLETE - SUMMARY:**
 - ✅ **3 Educational Guides** – Not created yet (⬜ pending)
-- 🔴 **8 Missing Hero Images** (verified missing, ready to create):
-  - **PRIORITY #1:** Fujifilm XT5 (80+ impr, 3.75% CTR – top performer)
-  - **PRIORITY #2:** Lenovo Legion Go S (3 impr, 1 click = 33% CTR – converter)
+- ✅ **3 Hero Images Created & Mapped:**
+  - ✅ **PRIORITY #1 DONE:** Fujifilm XT5 – `/img/devices/cameras/fujifilm-xt5.webp` + mapped in helpers.js (80+ impr, 3.75% CTR – top performer)
+  - ✅ **PRIORITY #2 DONE:** Lenovo Legion Go S – `/img/devices/gaming-consoles/lenovo-legion-go-s.webp` + mapped in helpers.js (3 impr, 1 click = 33% CTR – converter)
+  - ✅ **PRIORITY #X DONE:** Fujifilm XT50 – `/img/devices/cameras/fujifilm-xt50.webp` + mapped in helpers.js (2 impr, new release)
+- 🔴 **5 Remaining Missing Hero Images** (ready to create):
   - **PRIORITY #3:** Nikon Z50 II (2 impr, 1 click = conversion proof)
   - **PRIORITY #4:** Leica D-Lux 8 (1 impr, Leica niche = high potential)
-  - Plus 4 others (Fujifilm XT50, Canon EOS R50, Nikon ZF, Nikon D7500, Canon G7X Mark II)
-- ✅ **4 Hero Images Already Exist:** Lenovo Legion Go, Sony FX30, GoPro Hero 13, Insta360 Ace Pro, Fujifilm X100V, Steam Deck
+  - Plus 3 others (Canon EOS R50, Nikon ZF, Nikon D7500, Canon G7X Mark II)
+- ✅ **7 Hero Images Already Exist:** Lenovo Legion Go, Sony FX30, GoPro Hero 13, Insta360 Ace Pro, Fujifilm X100V, Steam Deck, Fujifilm X-S20
 - ⬜ **1 Title Audit Pending:** GoPro Hero 13 (compare with Hero 12)
 - ⬜ **2 SERP Audits Pending:** Canon G7X Mark III, Insta360 X4 (manual checks needed)
-- **Estimated effort:** 5-7 hours for 4 priority images + 3 guides = +30-50 clicks/month by month 2
+- **Next step:** Rebuild site to deploy new images + Create remaining 3 guides
 
 ### CRITICAL (This Week - Do First)
 - ⬜ **CREATE GUIDE:** "SD Card Speed Classes Explained: V30 vs V60 vs V90" (3 impr baseline → 15-20/mo target, 1-2 clicks) – Keywords: `v30 sd card meaning`, `v60 card`, `v90 card` – Rationale: Educational, no manufacturer competition, bridges to video device pages
 - ⬜ **CREATE GUIDE:** "UHS-I vs UHS-II: Speed & Compatibility Guide" (4+3 impr baseline → 20-25/mo target, 2-3 clicks) – Keywords: `uhs-i speed grade 3`, `uhs-ii sd card` – Rationale: Cross-link to Sony FX3, Nikon Z8, Canon EOS R6 Mark II pages
 - ⬜ **CREATE GUIDE:** "A1 vs A2 SD Cards: Application Performance Class Explained" (<1 impr baseline → 10-15/mo target) – Keywords: `a1 vs a2 sd card raspberry pi`, `a2 sd card` – Rationale: Bridges Raspberry Pi page (26 impr currently getting 0% CTR), educational angle
 - ✅ **VERIFIED:** Lenovo Legion Go – `/img/devices/gaming-consoles/lenovo-legion-go.webp` EXISTS (70 impr, 2.86% CTR, already converting)
-- 🔴 **CREATE:** Fujifilm XT5 hero image – `/img/devices/cameras/fujifilm-xt5.webp` MISSING (80+ impr, 3.75% CTR – top performer, **PRIORITY #1**)
+- ✅ **DONE:** Fujifilm XT5 hero image – `/img/devices/cameras/fujifilm-xt5.webp` CREATED + mapped in helpers.js (80+ impr, 3.75% CTR – top performer)
 
 ### HIGH (This Week - Do Second) 
-- 🔴 **CREATE:** Lenovo Legion Go S hero image – `/img/devices/gaming-consoles/lenovo-legion-go-s.webp` MISSING (3 impr, 1 click = 33% CTR, proven converter – **PRIORITY #2**)
+- ✅ **DONE:** Lenovo Legion Go S hero image – `/img/devices/gaming-consoles/lenovo-legion-go-s.webp` CREATED + mapped in helpers.js (3 impr, 1 click = 33% CTR, proven converter)
 - ✅ **VERIFIED:** GoPro Hero 13 – `/img/devices/action-cameras/gopro-hero-13.webp` EXISTS (5 impr, 0% CTR issue is SERP position, not image)
 - ✅ **VERIFIED:** Insta360 Ace Pro – `/img/devices/action-cameras/insta360-ace-pro.webp` EXISTS (1 impr, emerging product)
 - ⬜ **AUDIT TITLE:** GoPro Hero 13 (5 impr, 0% CTR) – Compare title format with GoPro Hero 12 in devices.json – Check if keywords missing
 
 ### MEDIUM (Next 1-2 Weeks - Do Third)
-- 🔴 **CREATE:** Fujifilm X-T50 hero image – `/img/devices/cameras/fujifilm-xt50.webp` MISSING (2 impr, new release)
+- ✅ **DONE:** Fujifilm X-T50 hero image – `/img/devices/cameras/fujifilm-xt50.webp` CREATED + mapped in helpers.js (2 impr, new release)
 - 🔴 **CREATE:** Canon EOS R50 hero image – `/img/devices/cameras/canon-eos-r50.webp` MISSING (2+ impr)
 - ✅ **VERIFIED:** Sony FX30 – `/img/devices/cameras/sony-fx30.webp` EXISTS (2 impr, cinema camera)
 - 🔴 **CREATE:** Nikon Z50 II hero image – `/img/devices/cameras/nikon-z50-ii.webp` MISSING (2 impr, 1 click = conversion proof – **PRIORITY #3**)
@@ -78,27 +80,42 @@
 
 ---
 
+## 🎯 IMMEDIATE ACTION: REBUILD SITE
+
+**3 images have been created and mapped in helpers.js:**
+- ✅ Fujifilm XT5 (mapped as `fujifilm-xt5` and `fujifilm-x-t5`)
+- ✅ Lenovo Legion Go S (mapped as `lenovo-legion-go-s`)
+- ✅ Fujifilm XT50 (mapped as `fujifilm-xt50` and `fujifilm-x-t50`)
+
+**NEXT STEP:** Rebuild the site to deploy new images.
+```bash
+npm run build
+```
+This will regenerate all device pages with the new hero images and deploy them to the website.
+
+**Expected impact after rebuild:** +5-8 clicks/month from these 3 pages alone (Fujifilm XT5 at 3.75% CTR should see immediate benefit).
+
+---
+
 ## 🎯 FASTEST PATH TO +50 CLICKS/MONTH
 
-**Week 1 (Priority Order):**
+**Week 1 (Priority Order - AFTER REBUILD):**
 1. Create 3 educational guides (V30/V60/V90, UHS-I vs II, A1 vs A2) – 1 hour each = **3 hours**
-   - V30/V60/V90 guide can go live Monday
+   - V30/V60/V90 guide can go live next
    - Add internal links to all video device pages (DJI, GoPro, Sony cinema cameras)
    - Expected: 5-8 clicks by end of week, ramps to 15+ by week 3
 
-2. Create missing hero images for 5 PRIORITY devices – 30 mins per image = **2.5 hours**
-   - **MUST DO FIRST:** Fujifilm XT5 (80 impr, 3.75% CTR – top performer)
-   - **MUST DO:** Lenovo Legion Go S (3 impr, 1 click = 33% CTR – proven converter)
-   - **SHOULD DO:** Nikon Z50 II (2 impr, 1 click = high intent proof)
-   - **SHOULD DO:** Leica D-Lux 8 (1 impr but Leica pattern validates 10%+ potential)
-   - Can use placeholder.webp temporarily while sourcing real images
+2. Create remaining 5 missing hero images – 30 mins per image = **2.5 hours**
+   - **NEXT PRIORITY #3:** Nikon Z50 II (2 impr, 1 click = conversion proof)
+   - **NEXT PRIORITY #4:** Leica D-Lux 8 (1 impr, Leica niche validates 10%+ potential)
+   - Plus 3 others: Canon EOS R50, Nikon ZF, Nikon D7500, Canon G7X Mark II
 
 3. Audit GoPro Hero 13 title (5 impr, 0% CTR) – 15 mins
    - Compare with Hero 12 title in devices.json
    - If format different, may unlock 2-3 clicks
 
 **Week 2:**
-- Create remaining 5 missing hero images (Canon EOS R50, Fujifilm XT50, Nikon ZF, Nikon D7500, Canon G7X Mark II)
+- Deploy remaining 5 hero images + rebuild
 - Monitor guide performance in GSC
 
 **Week 3+:**
