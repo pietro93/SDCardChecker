@@ -153,6 +153,7 @@ function getDeviceImageFallback(device) {
     "asus-rog-ally": "/img/devices/gaming-consoles/asus-rog-ally.webp",
     "asus-rog-ally-x": "/img/devices/gaming-consoles/asus-rog-ally.webp",
     "lenovo-legion-go": "/img/devices/gaming-consoles/lenovo-legion-go.webp",
+    "lenovo-legion-go-s": "/img/devices/gaming-consoles/lenovo-legion-go-s.webp",
     "anbernic-rg35xx-plus": "/img/devices/gaming-consoles/anbernic.webp",
     "anbernic-rg353v": "/img/devices/gaming-consoles/anbernic.webp",
     "retroid-pocket": "/img/devices/gaming-consoles/retroid-pocket.webp",
