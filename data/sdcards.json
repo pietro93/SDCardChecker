@@ -883,6 +883,33 @@
       "pros": "Good budget option for light security.",
       "cons": "Lower endurance rating than Samsung/SanDisk.",
       "tier": "specialty"
+    },
+    {
+      "id": "amazon-basics-microsd",
+      "name": "Amazon Basics Micro SDXC",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "U3",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/amazon-basics-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Amazon+Basics+Micro+SDXC+Memory+Card&tag=sd-cc-20",
+      "pros": "Great value for budget buyers. Reliable performance for everyday use and basic 4K. A2 rated for app performance.",
+      "cons": "Limited to U3 (no V30 rating), slower sustained write speeds than premium cards.",
+      "tier": "budget"
     }
   ]
 }

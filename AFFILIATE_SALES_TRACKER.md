@@ -168,9 +168,52 @@ https://amazon.com/s?k=ProGrade+SDXC&tag=sd-cc-20&utm_source=sdcardchecker&utm_m
 | Week | Sales | Revenue | Commission | Notes |
 |------|-------|---------|------------|-------|
 | Week 1 (Nov 10-19) | 0 | $0 | $0 | Launch phase, building authority |
-| Week 2 (Nov 20-26) | 3 | $140.42 | $3.98 | **First sales!** |
+| Week 2 (Nov 20-26) | 5 | $191.36 | $5.70 | **Sales accelerating!** |
 | Week 3 (Nov 27-30) | - | - | - | *Pending* |
-| **November Total** | **3** | **$140.42** | **$3.98** | - |
+| **November Total** | **5** | **$191.36** | **$5.70** | - |
+
+---
+
+## 📋 NEW: Sales Log (Nov 21, 2025)
+
+### Sale #4: Amazon Basics Micro SDXC 512GB
+| Detail | Value |
+|--------|-------|
+| **Product Name** | Amazon Basics Micro SDXC Memory Card with Full Size Adapter, A2, U3, Read Speed up to 100 MB/s, 512 GB |
+| **Category** | SD Card (Budget) |
+| **Price** | $34.99 |
+| **Commission Rate** | 2.5% |
+| **Commission Earned** | $0.87 |
+| **Network** | Amazon Associates |
+| **Date Sold** | Nov 21, 2025 |
+| **Source Page** | Unknown (need UTM tracking) |
+| **Notes** | Budget-friendly option sold via affiliate link |
+
+### Sale #5: Purina Beggin' Flavor Stix
+| Detail | Value |
+|--------|-------|
+| **Product Name** | Purina Beggin' Flavor Stix With Bacon & Peanut Butter Flavor - 25 oz. Pouch |
+| **Category** | Pet Supplies (Unrelated) |
+| **Price** | $9.96 |
+| **Commission Rate** | N/A |
+| **Commission Earned** | $0.05 |
+| **Network** | Amazon Associates |
+| **Date Sold** | Nov 21, 2025 |
+| **Source Page** | Unknown |
+| **Notes** | ⚠️ User clicked affiliate link, browsed Amazon, bought unrelated item |
+
+---
+
+## 🔍 Nov 21 Analysis
+
+**Pattern Observed:** Users clicking affiliate links → arriving at Amazon → browsing other categories → purchasing unrelated items
+
+**Implication:** 
+- ✅ Affiliate links are driving traffic and purchases
+- ⚠️ Only 1 of 2 new clicks (Nov 21) resulted in SD card purchase
+- ⚠️ Need to optimize product selection or link strategy
+
+**Next Action:** Monitor if >30% of affiliate sales are unrelated items. If so, consider linking to search results instead of specific products.
 
 ---
 
