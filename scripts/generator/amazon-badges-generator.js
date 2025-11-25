@@ -39,9 +39,12 @@ function generateProductBadgeHTML(product, index) {
     image = '/img/fallback-product.jpg'
   } = product;
 
-  const stars = rating > 0 ? `⭐ ${rating.toFixed(1)}` : '(No ratings)';
-  const reviews = reviewCount > 0 ? ` (${reviewCount.toLocaleString()})` : '';
   const priceDisplay = price.startsWith('$') ? price : `$${price}`;
+  
+  // Only show rating if it exists
+  const ratingHtml = rating > 0 
+    ? `<div class="badge-rating">⭐ ${rating.toFixed(1)}${reviewCount > 0 ? ` (${reviewCount.toLocaleString()})` : ''}</div>`
+    : '';
 
   return `
     <div class="amazon-product-badge" data-index="${index}">
@@ -50,8 +53,8 @@ function generateProductBadgeHTML(product, index) {
       </div>
       <div class="badge-content">
         <h4 class="badge-title">${title}</h4>
-        <div class="badge-rating">${stars}${reviews}</div>
-        <div class="badge-price">Live: ${priceDisplay}</div>
+        ${ratingHtml}
+        <div class="badge-price">${priceDisplay}</div>
         <a href="${url}" target="_blank" rel="nofollow noopener" class="badge-link">
           View on Amazon →
         </a>
@@ -94,12 +97,9 @@ function generateAmazonBadgesSection() {
     return `
       <section id="amazon-products" class="mb-16 scroll-mt-20">
         <h3 class="text-2xl font-bold text-slate-900 mb-6">Featured Products on Amazon</h3>
-        <p class="text-sm text-slate-600 mb-6">Real-time pricing and availability from Amazon</p>
+        <p class="text-xs text-slate-500 mb-6">This website contains affiliate links. We may earn a small commission when you purchase through our links at no extra cost to you.</p>
         <div class="amazon-badges-grid">
           ${badgesHTML}
-        </div>
-        <div class="mt-6 text-center">
-          <p class="text-xs text-slate-500">Prices and availability updated at build time</p>
         </div>
       </section>
     `;
