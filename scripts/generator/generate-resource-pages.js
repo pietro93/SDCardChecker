@@ -7,6 +7,7 @@ const path = require("path");
 const fs = require("fs");
 const { readTemplate, processIncludes, writeFile } = require("./helpers");
 const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
+const { generateAmazonBadgeSectionByType } = require("./amazon-badges-generator");
 
 const srcPath = path.join(__dirname, "../../src");
 
@@ -22,7 +23,7 @@ function ensureDir(dirPath) {
 /**
  * Generate a resource page
  */
-function generateResourcePage(templatePath, distPath, fileName) {
+function generateResourcePage(templatePath, distPath, fileName, amazonProductType = null) {
     let template = readTemplate(templatePath);
 
     // Process {% include %} tags
@@ -35,11 +36,53 @@ function generateResourcePage(templatePath, distPath, fileName) {
         .replace(/{{FOOTER}}/g, generateFooter())
         .replace(/{{GROW_SCRIPT}}/g, generateGrowScript())
         .replace(/{{AFFILIATE_DISCLOSURE}}/g, generateAffiliateDisclosure());
+    
+    // Replace Amazon product placeholders if a product type is specified
+    if (amazonProductType) {
+        html = replaceAmazonProductPlaceholders(html, amazonProductType);
+    }
 
     const outputPath = path.join(distPath, fileName);
     writeFile(outputPath, html);
     
     return fileName;
+}
+
+/**
+ * Replace Amazon product placeholders in template
+ */
+function replaceAmazonProductPlaceholders(html, productType) {
+    // Map of placeholder patterns to product types and configurations
+    const placeholders = {
+        // Speed Classes guide
+        '{{AMAZON_FEATURED_SPEED_CLASSES}}': () => 
+            generateAmazonBadgeSectionByType('guide-speed-classes', 3, 'Speed Class Cards on Amazon'),
+        
+        // Professional Cameras guide
+        '{{AMAZON_FEATURED_PROFESSIONAL}}': () => 
+            generateAmazonBadgeSectionByType('guide-professional-cameras', 3, 'Professional SD Cards'),
+        
+        // RAW vs JPEG guide
+        '{{AMAZON_FEATURED_RAW_JPEG}}': () => 
+            generateAmazonBadgeSectionByType('guide-raw-jpeg', 3, 'Professional-Grade Cards'),
+        
+        // Fake SD Card Detector guide
+        '{{AMAZON_FEATURED_AUTHENTIC}}': () => 
+            generateAmazonBadgeSectionByType('guide-fake-detection', 3, 'Buy Authentic Cards'),
+        
+        // Video Bitrate guide
+        '{{AMAZON_FEATURED_VIDEO}}': () => 
+            generateAmazonBadgeSectionByType('guide-video-bitrate', 3, 'High-Speed Cards for 4K/8K Video')
+    };
+    
+    // Replace all placeholders
+    for (const [placeholder, generator] of Object.entries(placeholders)) {
+        if (html.includes(placeholder)) {
+            html = html.replace(placeholder, generator());
+        }
+    }
+    
+    return html;
 }
 
 /**
@@ -111,7 +154,8 @@ async function generateResourcePages(distPath) {
             const guideFileDir = path.dirname(guideFilePath);
             ensureDir(guideFileDir);
             
-            generateResourcePage(guide.template, guideFileDir, "index.html");
+            // Process Amazon products (all guides support it)
+            generateResourcePage(guide.template, guideFileDir, "index.html", true);
             console.log(`  ✓ Generated ${guide.name} (guides/${guide.file})`);
         } catch (error) {
             console.error(`  ✗ Failed to generate ${guide.name}: ${error.message}`);

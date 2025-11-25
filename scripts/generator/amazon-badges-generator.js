@@ -64,39 +64,37 @@ function generateProductBadgeHTML(product, index) {
 }
 
 /**
- * Generate the Amazon Badges Section HTML
+ * Generate the Amazon Badges Section HTML (default for device pages)
  */
 function generateAmazonBadgesSection() {
+  return generateAmazonBadgeSectionByType('featured-general', 3);
+}
+
+/**
+ * Generate Amazon Badges Section by type
+ * Allows different product sets for guides, calculators, etc.
+ * 
+ * @param {string} type - Cache file type (e.g., 'featured-general', 'guide-speed-classes')
+ * @param {number} count - How many products to show (default: 3)
+ * @param {string} title - Section title (default: 'Featured Products on Amazon')
+ * @returns {string} HTML section or empty string if no products
+ */
+function generateAmazonBadgeSectionByType(type = 'featured-general', count = 3, title = 'Featured Products on Amazon') {
   try {
-    // Load all cached product files
-    const cacheFiles = fs.readdirSync(CACHE_DIR).filter(f => f.endsWith('.json'));
+    const products = loadCachedProducts(`${type}.json`);
     
-    if (cacheFiles.length === 0) {
-      return ''; // No cache files, skip section
-    }
-
-    let allProducts = [];
-    for (const file of cacheFiles) {
-      const products = loadCachedProducts(file);
-      if (products.length > 0) {
-        allProducts = allProducts.concat(products);
-      }
-    }
-
-    if (allProducts.length === 0) {
+    if (!products || products.length === 0) {
       return '';
     }
 
-    // Take top 3 products
-    const topProducts = allProducts.slice(0, 3);
-
+    const topProducts = products.slice(0, count);
     const badgesHTML = topProducts
       .map((product, index) => generateProductBadgeHTML(product, index))
       .join('');
 
     return `
-      <section id="amazon-products" class="mb-16 scroll-mt-20">
-        <h3 class="text-2xl font-bold text-slate-900 mb-6">Featured Products on Amazon</h3>
+      <section id="amazon-products-${type}" class="mb-16 scroll-mt-20">
+        <h3 class="text-2xl font-bold text-slate-900 mb-6">${title}</h3>
         <p class="text-xs text-slate-500 mb-6">This website contains affiliate links. We may earn a small commission when you purchase through our links at no extra cost to you.</p>
         <div class="amazon-badges-grid">
           ${badgesHTML}
@@ -104,13 +102,14 @@ function generateAmazonBadgesSection() {
       </section>
     `;
   } catch (error) {
-    console.warn('  ⚠️  Error generating Amazon badges section:', error.message);
+    console.warn(`  ⚠️  Error generating Amazon badges section (${type}):`, error.message);
     return '';
   }
 }
 
 module.exports = {
   generateAmazonBadgesSection,
+  generateAmazonBadgeSectionByType,
   loadCachedProducts,
   generateProductBadgeHTML
 };

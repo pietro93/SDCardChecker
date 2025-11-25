@@ -48,6 +48,19 @@ function loadCache(filename) {
 }
 
 /**
+ * Delay between API requests (in milliseconds)
+ * Amazon allows ~1 req/sec for new associates, we use 2500ms to be safe
+ */
+const REQUEST_DELAY_MS = 2500;
+
+/**
+ * Sleep utility for request throttling
+ */
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+/**
  * Main build function
  */
 async function buildAmazonData() {
@@ -55,45 +68,149 @@ async function buildAmazonData() {
   
   ensureCacheDir();
 
-  // Define products to search for
-  const searches = [
-    { filename: 'kingston-canvas-go.json', keyword: 'Kingston Canvas Go Plus 128GB microSD' },
-    { filename: 'sandisk-extreme.json', keyword: 'SanDisk Extreme 128GB microSD' },
-    { filename: 'samsung-evo-plus.json', keyword: 'Samsung EVO Plus 128GB microSD' },
-    { filename: 'prograde-digital.json', keyword: 'ProGrade Digital UHS-II 128GB SD card' },
-    { filename: 'sabrent-rocket.json', keyword: 'Sabrent Rocket 128GB SDXC UHS-II' }
+  // Define search groups - each with multiple keywords to aggregate results
+  const searchGroups = [
+    // Default: General featured products (used on device pages)
+    {
+      filename: 'featured-general.json',
+      keywords: [
+        'Kingston Canvas Go Plus 128GB microSD',
+        'SanDisk Extreme 128GB microSD',
+        'Samsung EVO Plus 128GB microSD'
+      ]
+    },
+    
+    // GUIDES: Speed Classes
+    {
+      filename: 'guide-speed-classes.json',
+      keywords: [
+        'Kingston Canvas Go V10 microSD',
+        'SanDisk Extreme V30 microSD',
+        'Lexar Professional V60 SD card',
+        'Sony TOUGH V90 SD card'
+      ]
+    },
+    
+    // GUIDES: Professional Cameras
+    {
+      filename: 'guide-professional-cameras.json',
+      keywords: [
+        'SanDisk Extreme PRO SD UHS-II',
+        'Sony TOUGH G V90 SD card',
+        'Lexar Professional Gold UHS-II'
+      ]
+    },
+    
+    // GUIDES: RAW vs JPEG (Professional)
+    {
+      filename: 'guide-raw-jpeg.json',
+      keywords: [
+        'professional SDXC card fast write',
+        'SanDisk Extreme PRO SD card',
+        'Lexar Professional Silver microSD'
+      ]
+    },
+    
+    // GUIDES: Fake SD Card Detection
+    {
+      filename: 'guide-fake-detection.json',
+      keywords: [
+        'genuine SanDisk Extreme microSD',
+        'authentic Kingston Canvas microSD',
+        'SanDisk Ultra microSD card'
+      ]
+    },
+    
+    // GUIDES: Video Bitrate (for 4K/8K recording)
+    {
+      filename: 'guide-video-bitrate.json',
+      keywords: [
+        'SanDisk Extreme V30 SD card',
+        'Lexar Professional Silver V60 microSD',
+        'Sony TOUGH G V90 SD card'
+      ]
+    },
+    
+    // CALCULATORS: Recommended cards (for pricing lookup)
+    {
+      filename: 'calculator-recommended.json',
+      keywords: [
+        'Kingston Canvas Go Plus microSD',
+        'SanDisk Extreme microSD V30',
+        'Samsung EVO Select microSD',
+        'Lexar Professional Silver microSD',
+        'Kingston Canvas Select Plus',
+        'SanDisk MAX ENDURANCE',
+        'Samsung PRO Endurance',
+        'Lexar Professional Gold UHS-II',
+        'SanDisk Extreme PRO SD UHS-II'
+      ]
+    }
   ];
 
-  console.log(`Searching for ${searches.length} products...\n`);
+  const totalKeywords = searchGroups.reduce((sum, group) => sum + group.keywords.length, 0);
+  console.log(`Processing ${searchGroups.length} search groups with ${totalKeywords} total keywords...\n`);
 
-  // Search for each product
-  for (const { filename, keyword } of searches) {
-    try {
-      const products = await searchSDCards(keyword);
-      
-      if (products.length > 0) {
-        saveToCache(filename, products);
-      } else {
-        // Keep existing cache if API returns nothing
-        const existingCache = loadCache(filename);
-        if (existingCache.length > 0) {
-          console.log(`  ⚠️  No API results, keeping existing cache: ${filename}`);
-        } else {
-          console.log(`  ❌ No results found, no existing cache for: ${filename}`);
-          saveToCache(filename, []);
+  let requestCount = 0;
+
+  // Process each search group
+  for (const { filename, keywords } of searchGroups) {
+    console.log(`🔍 ${filename}:`);
+    let allResults = [];
+    
+    // Search for each keyword in the group
+    for (const keyword of keywords) {
+      try {
+        requestCount++;
+        
+        // Add delay between requests to respect rate limits
+        if (requestCount > 1) {
+          process.stdout.write(`   Waiting ${REQUEST_DELAY_MS}ms before next request...\r`);
+          await sleep(REQUEST_DELAY_MS);
         }
+        
+        process.stdout.write(`   Searching: "${keyword}"...\r`);
+        const products = await searchSDCards(keyword);
+        
+        if (products.length > 0) {
+          allResults = allResults.concat(products);
+          process.stdout.write(`   ✓ Found ${products.length} products for "${keyword}"\n`);
+        } else {
+          process.stdout.write(`   ⚠️  No results for "${keyword}"\n`);
+        }
+      } catch (error) {
+        process.stdout.write(`   ❌ Error searching "${keyword}": ${error.message}\n`);
       }
-    } catch (error) {
-      console.error(`  ❌ Error searching for ${filename}:`, error.message);
-      // Keep existing cache
+    }
+    
+    // De-duplicate by ASIN and take top 5
+    const uniqueProducts = [];
+    const seenAsins = new Set();
+    
+    for (const product of allResults) {
+      if (product.asin && !seenAsins.has(product.asin)) {
+        seenAsins.add(product.asin);
+        uniqueProducts.push(product);
+        if (uniqueProducts.length >= 5) break;
+      }
+    }
+    
+    if (uniqueProducts.length > 0) {
+      saveToCache(filename, uniqueProducts);
+      console.log(`  ✅ Saved ${uniqueProducts.length} unique products\n`);
+    } else {
+      // Keep existing cache if API returns nothing
       const existingCache = loadCache(filename);
-      if (existingCache.length === 0) {
+      if (existingCache.length > 0) {
+        console.log(`  ⚠️  No API results, keeping existing cache: ${filename}\n`);
+      } else {
+        console.log(`  ❌ No results found, no existing cache for: ${filename}\n`);
         saveToCache(filename, []);
       }
     }
   }
 
-  console.log('\n✅ Amazon data build complete!\n');
+  console.log('✅ Amazon data build complete!\n');
 }
 
 // Run if executed directly
