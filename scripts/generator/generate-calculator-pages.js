@@ -29,7 +29,7 @@ function generateCalculatorPage(templatePath, distPath, outputPath) {
         .replace(/{{FOOTER}}/g, generateFooter())
         .replace(/{{GROW_SCRIPT}}/g, generateGrowScript())
         .replace(/{{AFFILIATE_DISCLOSURE}}/g, generateAffiliateDisclosure())
-        .replace(/{{AMAZON_FEATURED_CALCULATOR_PRICE}}/g, generateAmazonBadgeSectionByType('calculator-recommended', 1, 'Check Current Pricing'));
+        .replace(/{{AMAZON_FEATURED_CALCULATOR_PRICE}}/g, generateAmazonBadgeSectionByType('calculator-recommended', 1, 'Featured Products'));
 
     const fullOutputPath = path.join(distPath, outputPath);
     writeFile(fullOutputPath, html);
