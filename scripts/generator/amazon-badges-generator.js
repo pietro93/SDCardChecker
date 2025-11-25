@@ -56,6 +56,7 @@ function generateProductBadgeHTML(product, index) {
         ${ratingHtml}
         <div class="badge-price">${priceDisplay}</div>
         <a href="${url}" target="_blank" rel="nofollow noopener" class="badge-link">
+          <i class="fas fa-shopping-cart"></i>
           View on Amazon
         </a>
       </div>

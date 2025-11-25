@@ -6,6 +6,7 @@
 const path = require("path");
 const { readTemplate, processIncludes, writeFile } = require("./helpers");
 const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
+const { generateAmazonBadgeSectionByType } = require("./amazon-badges-generator");
 
 const srcPath = path.join(__dirname, "../../src");
 
@@ -27,7 +28,8 @@ function generateCalculatorPage(templatePath, distPath, outputPath) {
         .replace(/{{HEADER}}/g, generateHeader())
         .replace(/{{FOOTER}}/g, generateFooter())
         .replace(/{{GROW_SCRIPT}}/g, generateGrowScript())
-        .replace(/{{AFFILIATE_DISCLOSURE}}/g, generateAffiliateDisclosure());
+        .replace(/{{AFFILIATE_DISCLOSURE}}/g, generateAffiliateDisclosure())
+        .replace(/{{AMAZON_FEATURED_CALCULATOR_PRICE}}/g, generateAmazonBadgeSectionByType('calculator-recommended', 1, 'Check Current Pricing'));
 
     const fullOutputPath = path.join(distPath, outputPath);
     writeFile(fullOutputPath, html);
