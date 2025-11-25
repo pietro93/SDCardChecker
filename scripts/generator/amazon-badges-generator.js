@@ -47,7 +47,7 @@ function generateProductBadgeHTML(product, index) {
     : '';
 
   return `
-    <div class="amazon-product-badge" data-index="${index}">
+    <a href="${url}" target="_blank" rel="nofollow noopener" class="amazon-product-badge" style="text-decoration: none; color: inherit;">
       <div class="badge-image">
         <img src="${image}" alt="${title}" loading="lazy" width="100" height="100" />
       </div>
@@ -55,11 +55,11 @@ function generateProductBadgeHTML(product, index) {
         <h4 class="badge-title">${title}</h4>
         ${ratingHtml}
         <div class="badge-price">${priceDisplay}</div>
-        <a href="${url}" target="_blank" rel="nofollow noopener" class="badge-link">
+        <div class="badge-link">
           View on Amazon →
-        </a>
+        </div>
       </div>
-    </div>
+    </a>
   `;
 }
 
