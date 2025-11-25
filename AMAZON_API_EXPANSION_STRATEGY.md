@@ -69,23 +69,11 @@ You currently have Amazon featured products on **device pages only** (104 pages)
 
 **Why:** Calculators **already show tailored recommendations**. Complement with live Amazon pricing for those exact cards.
 
-**Current Flow:**
-1. User selects: GoPro Hero 13 + 5.3K mode + 2TB needed
-2. System calculates: Need 128GB+ V30 card
-3. **Recommendation section shows:** "Kingston Canvas Go Plus" (tailored to their need)
-
 **With API Enhancement:**
 1. User sees tailored recommendation
-2. Below recs: "Check Current Pricing" section
+2. Below recs: "Featured Products" section
 3. Shows the **exact same card** with live Amazon price & availability
 4. Single button: "View on Amazon"
-
-**Why this works:**
-- No confusion (same card shown)
-- Answers user's next question: "Where can I buy this? What's the price today?"
-- Removes friction (direct link to product)
-- Higher conversion (user is ready to buy after calculation)
-- Better UX than generic products (contextual & relevant)
 
 **Product Search Strategy:**
 Search for the **exact recommended cards** from your sdcards.json:
@@ -94,6 +82,18 @@ Calculator page → Extract top recommendation → Search Amazon for that card �
 ```
 
 **No need for generic searches** - only search for cards you actually recommend
+
+**Current Flow:**
+1. User selects: GoPro Hero 13 + 5.3K mode + 2TB needed
+2. System calculates: Need 128GB+ V30 card
+3. **Recommendation section shows:** "Kingston Canvas Go Plus" (tailored to their need)
+
+**Why this works:**
+- No confusion (same card shown)
+- Answers user's next question: "Where can I buy this? What's the price today?"
+- Removes friction (direct link to product)
+- Higher conversion (user is ready to buy after calculation)
+- Better UX than generic products (contextual & relevant)
 
 ### ❌ CATEGORY PAGES - Maybe Later
 
@@ -359,7 +359,7 @@ module.exports = {
 
 | Page | Placement | Product Type | Count | UX Copy |
 |---|---|---|---|---|
-| **All Calculators** | Below recommendation section | Recommended cards only | 1 | "Check Current Pricing" |
+| **All Calculators** | Below recommendation section | Recommended cards only | 1 | "Featured Products" |
 | | | (same card as calculator suggests) | | Button: "View on Amazon" |
 
 **Why single product on calculators:** User already has their specific recommendation. Showing that exact card with live Amazon pricing removes friction to purchase. Multiple options create decision paralysis when they've already got their answer.
@@ -377,7 +377,7 @@ module.exports = {
 
 **Do Instead:**
 - Show the **exact same card** the calculator recommended
-- Use contextual header: "Check Current Pricing" (not "Featured Products")
+- Use contextual header: "Featured Products"
 - Single product card (not 3) to reduce decision fatigue
 
 ### ❌ Don't Show Irrelevant Products
