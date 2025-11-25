@@ -7,6 +7,7 @@ const fs = require("fs");
 const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, loadSDCardData } = require("./helpers");
 const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 const { generateFAQs, mergeFAQs } = require("./generateFAQs");
+const { generateAmazonBadgesSection } = require("./amazon-badges-generator");
 
 const srcPath = path.join(__dirname, "../../src");
 
@@ -304,6 +305,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const relatedDevicesSection = generateRelatedDevices(device, allDevices);
     const faqSchema = generateFAQSchema(faqsWithFirstQuestion);
     const productSchema = generateProductSchema(device.recommendedBrands, sdcardsMap);
+    const amazonBadgesSection = generateAmazonBadgesSection();
     
     // Generate breadcrumb schema
     const breadcrumbs = [
@@ -345,6 +347,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{SPECS_HTML}}/g, specsHTML)
         .replace(/{{BRANDS_TABLE_ROWS}}/g, brandsTableRows)
         .replace(/{{ALTERNATIVES_HTML}}/g, alternativesHTML)
+        .replace(/{{AMAZON_BADGES_SECTION}}/g, amazonBadgesSection)
         .replace(/{{FAQ_HTML}}/g, faqHTML)
         .replace(/{{RELATED_DEVICES_SECTION}}/g, relatedDevicesSection)
         .replace(/{{FAQ_SCHEMA}}/g, faqSchema)
