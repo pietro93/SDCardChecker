@@ -230,6 +230,12 @@ function getDeviceImageFallback(device) {
   if (name.includes("insta360")) return "/img/devices/action-cameras/gopro-placeholder.webp";
   if (name.includes("osmo")) return "/img/devices/action-cameras/gopro-placeholder.webp";
   if (name.includes("dji")) return "/img/devices/drones/drone-placeholder.webp";
+  if (name.includes("autel")) return "/img/devices/drones/drone-placeholder.webp";
+  if (name.includes("potensic")) return "/img/devices/drones/drone-placeholder.webp";
+  if (name.includes("skydio")) return "/img/devices/drones/drone-placeholder.webp";
+  if (name.includes("fimi")) return "/img/devices/drones/drone-placeholder.webp";
+  if (name.includes("holy stone")) return "/img/devices/drones/drone-placeholder.webp";
+  if (name.includes("hoverair")) return "/img/devices/drones/drone-placeholder.webp";
   if (name.includes("steam deck")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
   if (name.includes("switch")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
   if (name.includes("nintendo")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
@@ -339,7 +345,8 @@ function getCardImageFallback(card) {
     const kingtonImages = [
       "/img/cards/kingston-canvas-select-microsd.webp",
       "/img/cards/kingston-canvas-go.webp",
-      "/img/cards/kingston-canvas-select.webp"
+      "/img/cards/kingston-canvas-select.webp",
+      "/img/cards/kingston-canvas-react-plus.webp"
     ];
     for (const img of kingtonImages) {
       if (imageExists(img)) return img;
@@ -386,7 +393,8 @@ function getCardImageFallback(card) {
   if (cardName.includes("samsung")) {
     const samsungImages = [
       "/img/cards/samsung-evo-select-microsd.webp",
-      "/img/cards/samsung-pro-endurance-microsd.webp"
+      "/img/cards/samsung-pro-endurance-microsd.webp",
+      "/img/cards/samsung-pro-plus-microsd.webp"
     ];
     for (const img of samsungImages) {
       if (imageExists(img)) return img;
