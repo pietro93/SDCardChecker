@@ -898,6 +898,56 @@
       "pros": "Great value for budget buyers. Reliable performance for everyday use and basic 4K. A2 rated for app performance.",
       "cons": "Limited to U3 (no V30 rating), slower sustained write speeds than premium cards.",
       "tier": "budget"
+    },
+    {
+      "id": "samsung-pro-plus-microsd",
+      "name": "Samsung PRO Plus microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 160 MB/s",
+        "writeSpeed": "Up to 120 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "amazonSearchUrl": "https://amazon.com/s?k=Samsung+PRO+Plus+microSD&tag=sd-cc-20",
+      "pros": "Excellent performance for 4K video. Great thermal management. Durable design.",
+      "cons": "More expensive than Samsung EVO Select.",
+      "tier": "recommended"
+    },
+    {
+      "id": "kingston-canvas-react-plus-microsd",
+      "name": "Kingston Canvas React Plus microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V90",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 320 MB/s",
+        "writeSpeed": "Up to 260 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+React+Plus+microSD&tag=sd-cc-20",
+      "pros": "True UHS-II speeds. Excellent for 8K video and professional drones. Very fast writes.",
+      "cons": "High cost per GB. Overkill for casual use.",
+      "tier": "professional"
     }
   ]
 }

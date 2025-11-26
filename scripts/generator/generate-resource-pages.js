@@ -56,7 +56,7 @@ function replaceAmazonProductPlaceholders(html, productType) {
     const placeholders = {
         // Speed Classes guide
         '{{AMAZON_FEATURED_SPEED_CLASSES}}': () => 
-            generateAmazonBadgeSectionByType('guide-speed-classes', 3, 'Speed Class Cards on Amazon'),
+            generateAmazonBadgeSectionByType('guide-speed-classes', 3, 'Featured Products'),
         
         // Professional Cameras guide
         '{{AMAZON_FEATURED_PROFESSIONAL}}': () => 
