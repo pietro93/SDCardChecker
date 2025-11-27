@@ -236,9 +236,9 @@ function getDeviceImageFallback(device) {
   if (name.includes("fimi")) return "/img/devices/drones/drone-placeholder.webp";
   if (name.includes("holy stone")) return "/img/devices/drones/drone-placeholder.webp";
   if (name.includes("hoverair")) return "/img/devices/drones/drone-placeholder.webp";
-  if (name.includes("steam deck")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
-  if (name.includes("switch")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
-  if (name.includes("nintendo")) return "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp";
+  if (name.includes("steam deck")) return "/img/devices/gaming-consoles/steam-deck.webp";
+  if (name.includes("switch")) return "/img/devices/gaming-consoles/nintendo-switch.webp";
+  if (name.includes("nintendo")) return "/img/devices/gaming-consoles/nintendo-3ds.webp";
   if (name.includes("asus rog")) return "/img/devices/gaming-consoles/asus-rog-ally.webp";
   if (name.includes("lenovo legion")) return "/img/devices/gaming-consoles/lenovo-legion-go.webp";
   if (name.includes("anbernic")) return "/img/devices/gaming-consoles/anbernic.webp";
