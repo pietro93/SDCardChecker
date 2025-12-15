@@ -33,7 +33,7 @@ function generateSitemap(allDevices, allReaders, distPath) {
 `;
 
   // Add reader type index pages
-  const readerTypes = ["dongle", "viewer", "mobile-adapter", "professional-hub", "hub", "stick", "dock"];
+  const readerTypes = ["dongle", "viewer", "mobile-adapter", "professional-hub", "hub", "stick", "desktop-dock"];
   readerTypes.forEach((type) => {
     sitemapXML += `  <url>
     <loc>https://sdcardchecker.com/readers/${type}/</loc>
