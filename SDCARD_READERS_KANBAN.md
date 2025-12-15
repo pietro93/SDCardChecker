@@ -11,39 +11,93 @@
 
 | Status | Count | Target |
 |--------|-------|--------|
-| 🟢 Done | 5 | - |
-| 🔵 In Progress | 0 | - |
-| 🟡 To Do | 7 | - |
+| 🟢 Done | 9 | - |
+| 🔵 In Progress | 1 | - |
+| 🟡 To Do | 5 | - |
 | 🔴 Blocked | 0 | - |
+
+**Progress:** Phase 1 ✅ COMPLETE (Dec 15) | Phase 2 IN PROGRESS
 
 ---
 
 ## 🟢 DONE
 
 ### ✅ Dataset Creation (Dec 15, 2025)
-- **Task:** Create `data/sdcardreaders.json` with 10 initial readers
-- **Readers Included:** UGREEN, Muddy, Stealth Cam, Lexar Lightning, ProGrade, Sony MRW-G1, SanDisk, Apple, Satechi, Anker
+- **Task:** Create `data/sdcardreaders.json` with 14 readers
+- **Readers Included:** UGREEN, Muddy, Stealth Cam, Lexar Lightning, ProGrade, Sony MRW-G1, SanDisk, Apple, Satechi, Anker, Unitek, Transcend, Kingston, Sony MRW-G2
 - **Status:** ✅ Complete
 - **PR/Commit:** Manual file creation
-- **Notes:** Dataset includes full specs, FAQs, pros/cons, price tiers, compatibility matrix
+- **Notes:** Dataset includes full specs, SEO-optimized FAQs, pros/cons, price tiers, compatibility matrix
+
+### ✅ Task 1.5b: SEO-Optimized FAQs (Dec 15, 2025)
+- **Task:** Rewrite all 14 reader FAQs for high-intent search queries
+- **Status:** ✅ Complete
+- **Description:**
+  - Replaced generic FAQs with product-specific, searchable questions
+  - Model numbers and brand specificity added (e.g., "UGREEN CM185," "SanDisk SDDR-409")
+  - Real-world specs (e.g., "250-290 MB/s" instead of "up to 312 MB/s")
+  - Use-case targeting (iPhone 15, MacBook Air M2/M3, 4K 120fps RAW, etc.)
+  - Better FAQPage schema compatibility
+- **Notes:** All FAQs now target long-tail keywords like "best SD card reader for MacBook Air M2"
+
+### ✅ Task 1.6: Navigation Integration (Dec 15, 2025)
+- **Task:** Add reader navigation to main navbar and mobile menu
+- **Status:** ✅ Complete
+- **Files Updated:** `src/templates/components.js`
+- **Changes:**
+  - Desktop dropdown: "Readers" menu with "All Readers" + 6 type categories
+  - Mobile menu: Expandable "Readers" section with same 7 categories
+  - Links: `/readers/`, `/readers/dongle/`, `/readers/viewer/`, `/readers/mobile/`, `/readers/professional-hub/`, `/readers/hub/`, `/readers/dock/`
+- **Notes:** Navigation fully integrated with type-based filtering
+
+### ✅ Task 1.7: Internal Link Generator Setup (Dec 15, 2025)
+- **Task:** Update reader page generator to build internal link sections
+- **Status:** ✅ Complete
+- **Files Updated:** `scripts/generator/generate-reader-pages.js`
+- **Changes:**
+  - "Compare Similar Readers" section using `relatedReaders` field (grid of 3 cards)
+  - "Perfect For These Devices" section using `relatedDevices` field (grid of 3 cards with links to `/devices/[slug]/`)
+  - SEO-friendly card designs with hover effects
+  - Slug-based URLs for internal links
+- **Notes:** All 14 reader pages now auto-generate cross-linking sections
+
+### ✅ Task 1.8: Build & Sitemap Generation (Dec 15, 2025)
+- **Task:** Run full `npm run build` and verify sitemap includes all reader pages
+- **Status:** ✅ Complete
+- **Build Results:**
+  - ✅ 14 reader product pages generated
+  - ✅ 7 reader type category pages generated
+  - ✅ 1 readers hub page generated
+  - ✅ Sitemap updated with 14 reader + 7 type pages (priority 0.85-0.95)
+  - ✅ 117 device pages regenerated
+  - ✅ All 7 category pages regenerated
+  - ✅ Build completed without errors
+- **Files:** `dist/readers/[slug]/index.html`, `dist/sitemap.xml`
+- **Notes:** All pages ready for browser testing and deployment
 
 ---
 
 ## 🔵 IN PROGRESS
 
-### Task 1.3: Create Reader Page Generator Script ✅ COMPLETE
+### Task 2.1: Generate & Test 5 Priority Reader Pages (IN PROGRESS)
 - **Priority:** 🔴 P1
-- **Effort:** 3 hours
-- **Status:** DONE
-- **File:** `scripts/generator/generate-reader-pages.js`
-- **Features:**
-  - Loads `data/sdCardReaders.json` with 14 readers
-  - Builds all template variables (title, specs, FAQ, pros/cons)
-  - Generates HTML pages in `dist/readers/[slug]/index.html`
-  - Schema markup support (FAQPage, Breadcrumb, Product)
-  - UTM parameter handling for affiliate tracking
-  - Error handling for missing data
-  - Integration with build.js orchestrator
+- **Effort:** 2 hours
+- **Status:** 50% COMPLETE - Build Successful, Testing Started
+- **Description:** Generate all 14 reader pages and verify 5 priority pages
+- **Priority Readers:** UGREEN, Muddy, Lexar, ProGrade, Anker
+- **Build Completion (Dec 15, 2025):**
+  - ✅ All 14 reader pages generated in `dist/readers/`
+  - ✅ Sitemap updated with 14 reader + 7 type pages
+  - ✅ Navigation updated (navbar + mobile menu)
+  - ✅ Generator script enhanced (internal links, device recommendations)
+  - ✅ All FAQs SEO-optimized
+  - ✅ Related readers/devices cross-linking configured
+- **Remaining Tasks:**
+  1. [ ] Test 5 priority pages in browser
+  2. [ ] Verify schema markup with Google tool
+  3. [ ] Check Lighthouse scores
+  4. [ ] Test responsive design
+  5. [ ] Verify placeholder images load
 
 ---
 
@@ -146,6 +200,7 @@
   - Set up GSC alerts for ranking tracking
 - **Acceptance Criteria:**
   - [ ] Pages deployed to production
+  - [x] Sitemap updated with all 14 reader pages + 7 type categories (Dec 15, 2025)
   - [ ] Google Search Console updated
   - [ ] Pages indexed within 7 days
   - [ ] Baseline impressions tracked
@@ -313,10 +368,12 @@
 ## 📊 Metrics & Success Criteria
 
 ### Phase 1 Completion (Dec 15-17)
-- [x] `sdcardreaders.json` created with 10 readers
-- [ ] Generator loads dataset
-- [ ] Template created
-- [ ] Generator script created
+- [x] `sdcardreaders.json` created with 14 readers
+- [x] Generator loads dataset
+- [x] Template created
+- [x] Generator script created
+- [x] Sitemap updated with all reader pages
+- [x] Navigation integrated (navbar + mobile)
 
 ### Phase 2 Completion (Dec 18-19)
 - [ ] 5 product pages live

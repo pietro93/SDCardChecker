@@ -136,9 +136,10 @@ function generateRelatedReadersSection(reader, allReaders) {
             const related = allReaders.find(r => r.id === relatedId);
             if (!related) return "";
             
-            // SEO-friendly internal link
+            // SEO-friendly internal link using slug
+            const readerSlug = related.slug || related.id;
             return `
-                <a href="/readers/${related.id}/" class="group block border border-slate-200 rounded-lg p-4 hover:shadow-md transition bg-white no-underline">
+                <a href="/readers/${readerSlug}/" class="group block bg-white border border-slate-200 rounded-lg p-4 hover:shadow-md hover:border-blue-400 transition">
                     <div class="font-bold text-blue-600 group-hover:underline mb-1">${related.name}</div>
                     <div class="text-sm text-slate-500 mb-2">${related.brand} • ${related.type}</div>
                     <div class="text-xs text-slate-400">Max Speed: ${related.maxSpeed}</div>
@@ -168,16 +169,21 @@ function generateDeviceRecommendationsSection(reader) {
     }
 
     const deviceLinks = reader.relatedDevices
-        .map(deviceId => `<a href="/categories/${deviceId}/" class="text-white bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded-full text-sm font-medium transition inline-block mb-2 mr-1 no-underline">${formatDeviceName(deviceId)}</a>`)
+        .map(deviceId => `
+            <a href="/devices/${deviceId}/" class="group block bg-white border border-slate-200 rounded-lg p-4 hover:shadow-md hover:border-blue-400 transition">
+                <div class="font-semibold text-blue-600 group-hover:underline">${formatDeviceName(deviceId)}</div>
+                <div class="text-xs text-slate-400 mt-1">View compatibility guide</div>
+            </a>
+        `)
         .join("");
 
     return `
-        <section class="mb-12 bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6">
-            <h2 class="text-2xl font-bold text-slate-900 mb-4">Best For These Devices</h2>
-            <p class="text-slate-700 mb-4">
-                Based on our compatibility tests, the ${reader.name} is an excellent match for:
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">Perfect For These Devices</h2>
+            <p class="text-slate-700 mb-6">
+                Based on our compatibility testing, the ${reader.name} works excellently with:
             </p>
-            <div class="flex flex-wrap gap-2">
+            <div class="grid md:grid-cols-3 gap-4">
                 ${deviceLinks}
             </div>
         </section>

@@ -70,22 +70,40 @@ return `<!-- Favicon -->
       </div>
 
       <div class="relative group flex items-center">
-      <a href="/guides/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
-      Guides
-      <i class="fas fa-chevron-down text-xs"></i>
-      </a>
-      <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
-      <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-       <a href="/guides/sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SD Card Guide</a>
-       <a href="/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Speed Classes</a>
-       <a href="/guides/video-bitrate-comparison/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Video Bitrate Guide</a>
-       <a href="/guides/raw-vs-jpeg/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">RAW vs JPEG</a>
-       <a href="/guides/is-my-sd-card-fake/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Fake SD Card Checker</a>
+       <a href="/readers/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
+       Readers
+       <i class="fas fa-chevron-down text-xs"></i>
+       </a>
+       <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
+       <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+        <a href="/readers/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">All Readers</a>
+        <a href="/readers/dongle/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Dongles</a>
+        <a href="/readers/viewer/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Viewers</a>
+        <a href="/readers/mobile/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Mobile Adapters</a>
+        <a href="/readers/professional-hub/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Professional Hubs</a>
+        <a href="/readers/hub/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Multi-Port Hubs</a>
+        <a href="/readers/dock/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Docks & Stands</a>
+        </div>
+        </div>
        </div>
-       </div>
-      </div>
 
-      <a href="/about.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">About</a>
+       <div class="relative group flex items-center">
+       <a href="/guides/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
+       Guides
+       <i class="fas fa-chevron-down text-xs"></i>
+       </a>
+       <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
+       <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+        <a href="/guides/sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SD Card Guide</a>
+        <a href="/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Speed Classes</a>
+        <a href="/guides/video-bitrate-comparison/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Video Bitrate Guide</a>
+        <a href="/guides/raw-vs-jpeg/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">RAW vs JPEG</a>
+        <a href="/guides/is-my-sd-card-fake/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Fake SD Card Checker</a>
+        </div>
+        </div>
+       </div>
+
+       <a href="/about.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">About</a>
     </nav>
     
     <!-- Mobile Menu Button -->
@@ -128,6 +146,21 @@ return `<!-- Favicon -->
         <a href="/tools/calculators/action-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Action Camera Storage & Capacity</a>
         <a href="/tools/calculators/gopro-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">GoPro Recording Time & Storage</a>
         <a href="/tools/calculators/timelapse-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Timelapse Storage & Photo Count</a>
+      </div>
+      
+      <!-- Readers Section -->
+      <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="readers">
+        <span>Readers</span>
+        <i class="fas fa-chevron-right transition-transform duration-300"></i>
+      </button>
+      <div class="mobile-section hidden pl-4 space-y-1" data-content="readers">
+        <a href="/readers/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">All Readers</a>
+        <a href="/readers/dongle/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Dongles</a>
+        <a href="/readers/viewer/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Viewers</a>
+        <a href="/readers/mobile/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Mobile Adapters</a>
+        <a href="/readers/professional-hub/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Professional Hubs</a>
+        <a href="/readers/hub/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Multi-Port Hubs</a>
+        <a href="/readers/dock/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Docks & Stands</a>
       </div>
       
       <!-- Resources Section -->

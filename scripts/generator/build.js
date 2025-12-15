@@ -21,6 +21,7 @@ const { generateRedirects } = require("./generate-redirects");
 
 // Paths
 const dataPath = path.join(__dirname, "../../data/devices.json");
+const readersPath = path.join(__dirname, "../../data/sdCardReaders.json");
 const distPath = path.join(__dirname, "../../dist");
 
 async function build() {
@@ -31,7 +32,12 @@ async function build() {
     console.log("📊 Loading device data...");
     const devicesData = readJSON(dataPath);
     const allDevices = devicesData.devices;
-    console.log(`  ✓ Loaded ${allDevices.length} devices\n`);
+    console.log(`  ✓ Loaded ${allDevices.length} devices`);
+
+    console.log("📊 Loading SD Card Reader data...");
+    const readersData = readJSON(readersPath);
+    const allReaders = readersData.sdCardReaders || [];
+    console.log(`  ✓ Loaded ${allReaders.length} SD Card Readers\n`);
 
     // 2. Copy Assets
     console.log("📁 Copying assets...");
@@ -74,10 +80,10 @@ async function build() {
     await generateRedirects(allDevices, distPath);
     console.log();
 
-     // 8. Generate Core Files (Sitemap, robots.txt, etc.)
-     console.log("📝 Generating core files...");
-     await generateCoreFiles(allDevices, distPath);
-     console.log();
+    // 8. Generate Core Files (Sitemap, robots.txt, etc.)
+    console.log("📝 Generating core files...");
+    await generateCoreFiles(allDevices, allReaders, distPath);
+    console.log();
 
     // Success summary
     console.log("✅ Generation complete!");

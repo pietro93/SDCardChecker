@@ -12,7 +12,7 @@ const srcPath = path.join(__dirname, "../../src");
 /**
  * Generate sitemap.xml
  */
-function generateSitemap(allDevices, distPath) {
+function generateSitemap(allDevices, allReaders, distPath) {
   let sitemapXML = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -22,6 +22,27 @@ function generateSitemap(allDevices, distPath) {
     <priority>1.0</priority>
   </url>
 `;
+
+  // Add readers hub pages
+  sitemapXML += `  <url>
+    <loc>https://sdcardchecker.com/readers/</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+`;
+
+  // Add reader type index pages
+  const readerTypes = ["dongle", "viewer", "mobile-adapter", "professional-hub", "hub", "stick", "dock"];
+  readerTypes.forEach((type) => {
+    sitemapXML += `  <url>
+    <loc>https://sdcardchecker.com/readers/${type}/</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+`;
+  });
 
   // Add tools pages
   sitemapXML += `  <url>
@@ -96,6 +117,20 @@ function generateSitemap(allDevices, distPath) {
   </url>
 `;
   });
+
+  // Add reader product pages
+  if (allReaders && allReaders.length > 0) {
+    allReaders.forEach((reader) => {
+      const readerSlug = reader.slug || reader.id;
+      sitemapXML += `  <url>
+    <loc>https://sdcardchecker.com/readers/${readerSlug}/</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+`;
+    });
+  }
 
   // Add device pages
   allDevices.forEach((device) => {
@@ -313,11 +348,11 @@ writeFile(path.join(distPath, "404.html"), page404Html
 /**
 * Generate all core files
 */
-async function generateCoreFiles(allDevices, distPath) {
+async function generateCoreFiles(allDevices, allReaders, distPath) {
 console.log("📝 Generating core files...");
 generateHomepage(distPath);
 generate404Page(distPath);
-generateSitemap(allDevices, distPath);
+generateSitemap(allDevices, allReaders, distPath);
 generateRobots(distPath);
 generateLegalPages(distPath);
 console.log(`  ✓ Core files generated (homepage, 404, sitemap, robots.txt, privacy, terms, affiliate-disclosure, about, contact, sitemap-page)`);
