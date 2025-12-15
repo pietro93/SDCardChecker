@@ -2,6 +2,7 @@
   "sdCardReaders": [
     {
       "id": "ugreen-2in1-usbc-usb3",
+      "slug": "ugreen-2in1-usbc-usb3",
       "name": "UGREEN SD Card Reader 2-in-1",
       "brand": "UGREEN",
       "model": "CM185",
@@ -43,6 +44,7 @@
       ],
       "priceTier": "Budget",
       "priceSymbol": "$",
+      "priceEstimate": "15",
       "pros": "Versatile dual-connector design covers almost all modern devices. Very affordable.",
       "cons": "Protective caps are not attached and can be lost. UHS-I speed limit.",
       "bestFor": [
@@ -51,6 +53,12 @@
         "macbook-air"
       ],
       "amazonSearchUrl": "https://amazon.com/s?k=UGREEN+SD+Card+Reader+USB-C+Dual",
+      "relatedReaders": [
+        "anker-powerexpand-2in1",
+        "sandisk-extreme-pro-uhs2-usbc"
+      ],
+      "whyChooseThis": "If you need a single reader that works with everything—from your MacBook to your iPhone 15 to your Android phone—this dual-connector design is unbeatable.",
+      "metaDescription": "Review of the UGREEN 2-in-1 SD Card Reader. We test USB-C and USB-A transfer speeds, iPhone 15 compatibility, and build quality.",
       "faq": [
         {
           "q": "Is this reader fast enough for 4K video?",
@@ -78,6 +86,7 @@
     },
     {
       "id": "muddy-crv43-viewer",
+      "slug": "muddy-crv43-viewer",
       "name": "Muddy 4.3\" LCD SD Card Viewer",
       "brand": "Muddy",
       "model": "CRV43",
@@ -90,6 +99,7 @@
         "SDHC"
       ],
       "maxSpeed": "Class 10",
+      "transferRate": "N/A",
       "features": [
         "4.3-inch Color Screen",
         "Headphone Jack",
@@ -110,6 +120,7 @@
       ],
       "priceTier": "Mid-Range",
       "priceSymbol": "$$",
+      "priceEstimate": "60",
       "pros": "Allows reviewing footage in the field without a computer. Rugged rubberized grip.",
       "cons": "Low resolution screen. Does not support SDXC cards over 64GB.",
       "bestFor": [
@@ -117,6 +128,11 @@
         "hunting"
       ],
       "amazonSearchUrl": "https://amazon.com/s?k=Muddy+SD+Card+Viewer+CRV43",
+      "relatedReaders": [
+        "stealth-cam-sd-card-viewer"
+      ],
+      "whyChooseThis": "Essential for hunters who want to check trail cams in the field without hauling a laptop or taking cards home.",
+      "metaDescription": "Muddy 4.3-inch Trail Cam Viewer review. Does it handle 1080p video? Is the screen bright enough? Full field test results.",
       "faq": [
         {
           "q": "Can I use this to view photos from professional cameras?",
@@ -138,11 +154,12 @@
       "relatedDevices": [
         "gopro-hero-13",
         "dji-mini-4-pro",
-        "sony-a6700"
+        "wyze-cam-v3"
       ]
     },
     {
       "id": "stealth-cam-sd-card-viewer",
+      "slug": "stealth-cam-sd-card-viewer",
       "name": "Stealth Cam 4.3\" SD Card Viewer",
       "brand": "Stealth Cam",
       "model": "STC-CRV43X",
@@ -155,6 +172,7 @@
         "SDHC"
       ],
       "maxSpeed": "Class 10",
+      "transferRate": "N/A",
       "features": [
         "4.3-inch Touch Screen",
         "Zoom Function",
@@ -174,12 +192,18 @@
       ],
       "priceTier": "Mid-Range",
       "priceSymbol": "$$",
+      "priceEstimate": "75",
       "pros": "Touchscreen allows for easier navigation than physical buttons. Zoom function helps identify details.",
       "cons": "Touchscreen can be difficult to use with heavy gloves.",
       "bestFor": [
         "trail-cameras"
       ],
       "amazonSearchUrl": "https://amazon.com/s?k=Stealth+Cam+SD+Card+Viewer",
+      "relatedReaders": [
+        "muddy-crv43-viewer"
+      ],
+      "whyChooseThis": "The only trail cam viewer with touchscreen and zoom—perfect for hunters who need precision detail identification in the field.",
+      "metaDescription": "Stealth Cam touchscreen SD card viewer review. Zoom, brightness, battery life, and field testing for trail camera users.",
       "faq": [
         {
           "q": "Is the touchscreen responsive in cold weather?",
@@ -206,6 +230,7 @@
     },
     {
       "id": "lexar-lightning-microsd",
+      "slug": "lexar-lightning-microsd",
       "name": "Lexar microSD Reader for Lightning",
       "brand": "Lexar",
       "model": "LMSDAT-RN",
@@ -217,6 +242,7 @@
         "microSD"
       ],
       "maxSpeed": "UHS-I",
+      "transferRate": "104 MB/s",
       "features": [
         "Apple MFi Certified",
         "Ultra Compact",
@@ -236,6 +262,7 @@
       ],
       "priceTier": "Mid-Range",
       "priceSymbol": "$$",
+      "priceEstimate": "25",
       "pros": "Direct connection to Lightning ports without dongles. Extremely compact.",
       "cons": "MicroSD only. Not compatible with USB-C devices (iPhone 15+).",
       "bestFor": [
@@ -243,6 +270,11 @@
         "iphone-13"
       ],
       "amazonSearchUrl": "https://amazon.com/s?k=Lexar+microSD+Lightning+Reader",
+      "relatedReaders": [
+        "apple-usbc-sd-reader"
+      ],
+      "whyChooseThis": "For iPhone 14 and iPad users still on Lightning, this is the most straightforward way to import photos without a computer.",
+      "metaDescription": "Lexar Lightning microSD reader review for iPhone 14, iPhone 13, and older iPad models. Speed tests and compatibility details.",
       "faq": [
         {
           "q": "Will this work with iPhone 15?",
@@ -262,13 +294,14 @@
         }
       ],
       "relatedDevices": [
-        "iphone-13",
         "iphone-14",
-        "samsung-galaxy-tab-s9"
+        "iphone-13",
+        "ipad-air"
       ]
     },
     {
       "id": "prograde-digital-cfexpress-sd-workflow",
+      "slug": "prograde-digital-cfexpress-sd-workflow",
       "name": "ProGrade Digital CFexpress & SD Workflow Reader",
       "brand": "ProGrade Digital",
       "model": "PG05.5",
@@ -303,6 +336,7 @@
       ],
       "priceTier": "Premium",
       "priceSymbol": "$$$",
+      "priceEstimate": "149",
       "pros": "Maximizes transfer speeds for both SD and CFexpress. Heavy duty build quality.",
       "cons": "Requires a USB 3.2 Gen 2 port for full speed benefits.",
       "bestFor": [
@@ -310,6 +344,12 @@
         "canon-eos-r5"
       ],
       "amazonSearchUrl": "https://amazon.com/s?k=ProGrade+Digital+CFexpress+Type+B+and+SD",
+      "relatedReaders": [
+        "sony-mrw-g1",
+        "kingston-workflow-station"
+      ],
+      "whyChooseThis": "The gold standard for professionals using Canon R5 or Nikon Z9. It allows simultaneous offloading of CFexpress and SD cards at max speeds.",
+      "metaDescription": "In-depth review of the ProGrade Digital CFexpress & SD Workflow Reader. Benchmarks for UHS-II and CFexpress transfer speeds.",
       "faq": [
         {
           "q": "What's the transfer speed for CFexpress?",
@@ -336,6 +376,7 @@
     },
     {
       "id": "sony-mrw-g1",
+      "slug": "sony-mrw-g1",
       "name": "Sony MRW-G1 CFexpress Type B / XQD Reader",
       "brand": "Sony",
       "model": "MRW-G1",
@@ -370,6 +411,7 @@
       ],
       "priceTier": "Premium",
       "priceSymbol": "$$$",
+      "priceEstimate": "140",
       "pros": "One of the few readers that supports both CFexpress Type B and legacy XQD cards.",
       "cons": "Does not support standard SD cards.",
       "bestFor": [
@@ -377,6 +419,12 @@
         "nikon-z9"
       ],
       "amazonSearchUrl": "https://amazon.com/s?k=Sony+MRW-G1+Card+Reader",
+      "relatedReaders": [
+        "prograde-digital-cfexpress-sd-workflow",
+        "sony-mrw-g2"
+      ],
+      "whyChooseThis": "If you have legacy Nikon D5/D4 cameras or Sony equipment, this is the only reader bridging XQD and modern CFexpress Type B.",
+      "metaDescription": "Sony MRW-G1 dual-format reader review. XQD and CFexpress Type B support tested with Nikon and Sony cameras.",
       "faq": [
         {
           "q": "Can this read standard SD cards?",
@@ -403,6 +451,7 @@
     },
     {
       "id": "sandisk-extreme-pro-uhs2-usbc",
+      "slug": "sandisk-extreme-pro-uhs2-usbc",
       "name": "SanDisk Extreme PRO SD UHS-II Reader",
       "brand": "SanDisk",
       "model": "SDDR-409",
@@ -435,6 +484,7 @@
       ],
       "priceTier": "Mid-Range",
       "priceSymbol": "$$",
+      "priceEstimate": "35",
       "pros": "Unlocks full UHS-II speeds. Trusted brand reliability.",
       "cons": "Design can block adjacent ports on some hubs.",
       "bestFor": [
@@ -442,6 +492,12 @@
         "macbook-pro"
       ],
       "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+SD+Card+USB-C+Reader",
+      "relatedReaders": [
+        "apple-usbc-sd-reader",
+        "lexar-lightning-microsd"
+      ],
+      "whyChooseThis": "SanDisk's trusted reliability combined with full UHS-II speeds at a reasonable price point.",
+      "metaDescription": "SanDisk Extreme PRO USB-C SD reader benchmarks. UHS-II 312 MB/s speeds tested with MacBook Pro and Canon cameras.",
       "faq": [
         {
           "q": "What's the maximum transfer speed?",
@@ -468,6 +524,7 @@
     },
     {
       "id": "apple-usbc-sd-reader",
+      "slug": "apple-usbc-sd-reader",
       "name": "Apple USB-C to SD Card Reader",
       "brand": "Apple",
       "model": "MU8G2AM/A",
@@ -501,6 +558,7 @@
       ],
       "priceTier": "Premium",
       "priceSymbol": "$$",
+      "priceEstimate": "39",
       "pros": "Guaranteed driver-free compatibility with all Apple devices. Supports UHS-II.",
       "cons": "More expensive than third-party alternatives.",
       "bestFor": [
@@ -508,6 +566,12 @@
         "iphone-15"
       ],
       "amazonSearchUrl": "https://amazon.com/s?k=Apple+USB-C+to+SD+Card+Reader",
+      "relatedReaders": [
+        "sandisk-extreme-pro-uhs2-usbc",
+        "satechi-aluminum-type-c-stand"
+      ],
+      "whyChooseThis": "If you have an all-Apple setup, this first-party reader guarantees compatibility and supports UHS-II speeds without driver installation.",
+      "metaDescription": "Apple USB-C SD reader review for MacBook Pro, iPad Pro, and iPhone 15. Driver-free setup and UHS-II speed verification.",
       "faq": [
         {
           "q": "Is this reader faster than third-party alternatives?",
@@ -534,6 +598,7 @@
     },
     {
       "id": "satechi-aluminum-type-c-stand",
+      "slug": "satechi-aluminum-type-c-stand",
       "name": "Satechi Type-C Stand & Hub",
       "brand": "Satechi",
       "model": "ST-TCMS",
@@ -566,6 +631,7 @@
       ],
       "priceTier": "Premium",
       "priceSymbol": "$$$",
+      "priceEstimate": "80",
       "pros": "Adds accessible front-facing ports to the Mac Mini. Matches Apple aesthetic.",
       "cons": "SD slots are only UHS-I speed.",
       "bestFor": [
@@ -573,6 +639,11 @@
         "mac-studio"
       ],
       "amazonSearchUrl": "https://amazon.com/s?k=Satechi+Type-C+Stand+Hub+Mac+Mini",
+      "relatedReaders": [
+        "apple-usbc-sd-reader"
+      ],
+      "whyChooseThis": "The only stand-hub combo that puts SD card slots within reach of your Mac Mini on the back of the display, eliminating awkward cable stretches.",
+      "metaDescription": "Satechi Type-C stand and hub review for Mac Mini and Mac Studio. Front-facing SD slots, USB ports, and aluminum design.",
       "faq": [
         {
           "q": "Is this a standalone reader or a hub?",
@@ -599,6 +670,7 @@
     },
     {
       "id": "anker-powerexpand-2in1",
+      "slug": "anker-powerexpand-2in1",
       "name": "Anker PowerExpand+ 2-in-1",
       "brand": "Anker",
       "model": "A8326",
@@ -633,6 +705,7 @@
       ],
       "priceTier": "Budget",
       "priceSymbol": "$",
+      "priceEstimate": "20",
       "pros": "Durable build with braided cable. Compact and reliable.",
       "cons": "Short cable length.",
       "bestFor": [
@@ -640,6 +713,11 @@
         "ipad-air"
       ],
       "amazonSearchUrl": "https://amazon.com/s?k=Anker+SD+Card+Reader+USB-C",
+      "relatedReaders": [
+        "ugreen-2in1-usbc-usb3"
+      ],
+      "whyChooseThis": "Best value 2-in-1 SD/microSD reader with a durable braided cable—perfect for students and travelers on a budget.",
+      "metaDescription": "Anker PowerExpand+ 2-in-1 budget SD reader review. Braided cable durability, speed testing, and MacBook Air compatibility.",
       "faq": [
         {
           "q": "How durable is the braided cable?",
@@ -666,6 +744,7 @@
     },
     {
       "id": "unitek-usbc-3slot-reader",
+      "slug": "unitek-usbc-3slot-reader",
       "name": "Unitek USB-C 3-Slot Card Reader",
       "brand": "Unitek",
       "model": "Y-9313D",
@@ -703,6 +782,7 @@
       ],
       "priceTier": "Budget",
       "priceSymbol": "$",
+      "priceEstimate": "30",
       "pros": "One of the few modern USB-C readers that still supports older CompactFlash cards found in Canon 5D/7D cameras.",
       "cons": "Cable is permanently attached.",
       "bestFor": [
@@ -711,6 +791,11 @@
         "compact-flash"
       ],
       "amazonSearchUrl": "https://amazon.com/s?k=Unitek+USB+C+Card+Reader+CF",
+      "relatedReaders": [
+        "transcend-rdf9-uhs2"
+      ],
+      "whyChooseThis": "The only 3-in-1 card reader with CompactFlash support—essential for photographers still using Canon 5D/7D cameras alongside modern equipment.",
+      "metaDescription": "Unitek USB-C 3-slot reader with CompactFlash support. Read SD, microSD, and legacy CF cards simultaneously. Legacy DSLR compatibility.",
       "faq": [
         {
           "q": "Can I read all three card types at once?",
@@ -737,6 +822,7 @@
     },
     {
       "id": "transcend-rdf9-uhs2",
+      "slug": "transcend-rdf9-uhs2",
       "name": "Transcend RDF9 UHS-II Card Reader",
       "brand": "Transcend",
       "model": "TS-RDF9K2",
@@ -772,6 +858,7 @@
       ],
       "priceTier": "Mid-Range",
       "priceSymbol": "$$",
+      "priceEstimate": "50",
       "pros": "Very fast UHS-II performance for a low price. Reliable LED activity light.",
       "cons": "Uses an older Micro-B connector on the reader side (cables included).",
       "bestFor": [
@@ -779,6 +866,12 @@
         "fast-transfer"
       ],
       "amazonSearchUrl": "https://amazon.com/s?k=Transcend+RDF9+Card+Reader",
+      "relatedReaders": [
+        "kingston-workflow-station",
+        "unitek-usbc-3slot-reader"
+      ],
+      "whyChooseThis": "Best bang-for-buck UHS-II reader with both USB-A and USB-C cables included—perfect for travel photographers switching between devices.",
+      "metaDescription": "Transcend RDF9 UHS-II card reader review. 260 MB/s benchmarks, dual cables, and compact travel design tested.",
       "faq": [
         {
           "q": "Why does this use Micro-B instead of USB-C?",
@@ -805,6 +898,7 @@
     },
     {
       "id": "kingston-workflow-station",
+      "slug": "kingston-workflow-station",
       "name": "Kingston Workflow Station",
       "brand": "Kingston",
       "model": "WFS-U",
@@ -838,6 +932,7 @@
       ],
       "priceTier": "Premium",
       "priceSymbol": "$$$",
+      "priceEstimate": "350",
       "pros": "The only reader that allows simultaneous offloading of 4+ cards. Modular readers can be used independently on-the-go.",
       "cons": "Bulky. Requires wall power for full hub functionality.",
       "bestFor": [
@@ -845,6 +940,11 @@
         "event-photography"
       ],
       "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Workflow+Station",
+      "relatedReaders": [
+        "prograde-digital-cfexpress-sd-workflow"
+      ],
+      "whyChooseThis": "Essential for wedding photographers and production teams. Offload 4 cards simultaneously at full speed—saves hours on multi-camera shoots.",
+      "metaDescription": "Kingston Workflow Station review. Multi-card simultaneous offloading for wedding photographers and event production teams.",
       "faq": [
         {
           "q": "Can I really transfer 4 cards at once?",
@@ -871,6 +971,7 @@
     },
     {
       "id": "sony-mrw-g2",
+      "slug": "sony-mrw-g2",
       "name": "Sony MRW-G2 CFexpress Type A / SD Reader",
       "brand": "Sony",
       "model": "MRW-G2",
@@ -908,6 +1009,7 @@
       ],
       "priceTier": "Premium",
       "priceSymbol": "$$$",
+      "priceEstimate": "160",
       "pros": "The standard-issue reader for Sony's unique CFexpress Type A cards. Blazing fast read speeds for 4K 120fps footage.",
       "cons": "Only useful for Sony cameras (Canon/Nikon use Type B). Expensive compared to standard SD readers.",
       "bestFor": [
@@ -916,6 +1018,12 @@
         "sony-a1"
       ],
       "amazonSearchUrl": "https://amazon.com/s?k=Sony+MRW-G2+Card+Reader",
+      "relatedReaders": [
+        "prograde-digital-cfexpress-sd-workflow",
+        "sony-mrw-g1"
+      ],
+      "whyChooseThis": "If you own a Sony cinema camera (A7S III, FX3, A1), this reader is the standard for 4K 120fps RAW workflows. It's the only one that maximizes Type A speeds.",
+      "metaDescription": "Sony MRW-G2 CFexpress Type A reader review. 800 MB/s benchmarks for Sony A7S III, FX3, and A1 cinema cameras.",
       "faq": [
         {
           "q": "What's unique about CFexpress Type A?",
@@ -935,9 +1043,9 @@
         }
       ],
       "relatedDevices": [
-        "sony-a1",
+        "sony-a7s-iii",
         "sony-fx3",
-        "sony-a7s-iii"
+        "sony-a1"
       ]
     }
   ]

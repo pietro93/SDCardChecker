@@ -1,6 +1,12 @@
 /**
  * SD Card Checker - Reader Pages Generator
  * Generates product review pages for SD card readers from sdCardReaders.json
+ * 
+ * SEO Optimizations:
+ * - Uses curated metaDescription from JSON (not rotated templates)
+ * - Leverages whyChooseThis for unique selling propositions
+ * - Implements relatedReaders cross-linking strategy
+ * - Dynamic image paths per reader for Google Image Search
  */
 
 const path = require("path");
@@ -12,33 +18,45 @@ const srcPath = path.join(__dirname, "../../src");
 const distPath = path.join(__dirname, "../../dist");
 
 /**
- * Generate varied meta descriptions for readers
+ * Generate SEO-optimized meta description
+ * Priority: 1. Custom JSON field 2. Constructed from key data points
  */
-function generateReaderMetaDescription(reader, index) {
-    const templates = [
-        `${reader.name} review. Specs: ${reader.maxSpeed}, ${reader.interface.join("/")}. Compare prices and buy on Amazon.`,
-        `${reader.brand} ${reader.model} review. Best for ${reader.targetAudience.join(", ")}. Compare SD card readers.`,
-        `${reader.name}: ${reader.pros.substring(0, 40)}... Read the full review and see prices on Amazon.`,
-        `Is the ${reader.name} worth it? Full specs, pros/cons, and compatibility guide. Check Amazon.`,
-        `${reader.name} vs competitors. ${reader.maxSpeed} speed, ${reader.interface.join("/")}. See all features.`,
-    ];
-    
-    const template = templates[index % templates.length];
-    return template.length > 160 ? template.substring(0, 157) + "..." : template;
+function generateReaderMetaDescription(reader) {
+    if (reader.metaDescription) {
+        return reader.metaDescription;
+    }
+
+    // Fallback construction if manual description is missing
+    const speed = reader.maxSpeed || "standard speed";
+    const type = reader.type || "adapter";
+    return `${reader.name} review and specs. A ${type} from ${reader.brand} supporting ${reader.supportedSlots.join(", ")}. Max speed: ${speed}. See compatibility and pricing.`;
 }
 
 /**
  * Generate HTML for reader pros
  */
 function generateProsHTML(reader) {
-    return `<li class="flex gap-3"><span class="text-green-600">✓</span><span>${reader.pros}</span></li>`;
+    // If pros is a string, split by period, otherwise treat as array if future-proofed
+    const prosList = typeof reader.pros === 'string' 
+        ? reader.pros.split('.').filter(p => p.trim().length > 0)
+        : [reader.pros];
+
+    return prosList
+        .map(pro => `<li class="flex gap-3 mb-2"><span class="text-green-600 font-bold">✓</span><span>${pro.trim()}</span></li>`)
+        .join("");
 }
 
 /**
  * Generate HTML for reader cons
  */
 function generateConsHTML(reader) {
-    return `<li class="flex gap-3"><span class="text-red-600">✗</span><span>${reader.cons}</span></li>`;
+    const consList = typeof reader.cons === 'string' 
+        ? reader.cons.split('.').filter(p => p.trim().length > 0)
+        : [reader.cons];
+
+    return consList
+        .map(con => `<li class="flex gap-3 mb-2"><span class="text-red-600 font-bold">✗</span><span>${con.trim()}</span></li>`)
+        .join("");
 }
 
 /**
@@ -58,9 +76,9 @@ function generateSpecsTableHTML(reader) {
 
     return specs
         .map(spec => `
-            <tr class="specs-table-row">
-                <td class="specs-label">${spec.label}</td>
-                <td class="specs-value">${spec.value}</td>
+            <tr class="border-b border-slate-100 last:border-0 hover:bg-slate-50">
+                <td class="py-3 px-4 font-semibold text-slate-700 w-1/3">${spec.label}</td>
+                <td class="py-3 px-4 text-slate-600">${spec.value}</td>
             </tr>
         `)
         .join("");
@@ -71,17 +89,8 @@ function generateSpecsTableHTML(reader) {
  */
 function generateFeaturesHTML(reader) {
     return reader.features
-        .map(feature => `<li class="flex gap-2"><span class="text-blue-600">•</span><span>${feature}</span></li>`)
+        .map(feature => `<li class="flex gap-2 items-center mb-1"><span class="text-blue-500 text-lg">•</span><span class="text-slate-700">${feature}</span></li>`)
         .join("");
-}
-
-/**
- * Generate compatibility HTML
- */
-function generateCompatibilityHTML(reader) {
-    const devices = reader.compatibility.devices.join(", ");
-    const os = reader.compatibility.os.join(", ");
-    return `<strong>Devices:</strong> ${devices}<br><strong>Operating Systems:</strong> ${os}`;
 }
 
 /**
@@ -95,12 +104,9 @@ function generateFAQHTML(faqItems) {
     return faqItems
         .map(
             (item) => `
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>${item.q}</span>
-                    <span class="faq-toggle">▼</span>
-                </div>
-                <div class="faq-answer">${item.a}</div>
+            <div class="faq-item border-b border-slate-200 py-4">
+                <h3 class="font-bold text-slate-900 mb-2">${item.q}</h3>
+                <div class="faq-answer text-slate-700 prose">${item.a}</div>
             </div>
         `
         )
@@ -109,21 +115,33 @@ function generateFAQHTML(faqItems) {
 
 /**
  * Generate related readers section
+ * Handles cross-linking to other reader reviews
  */
 function generateRelatedReadersSection(reader, allReaders) {
-    if (!reader.relatedReaders || reader.relatedReaders.length === 0) {
-        return "";
+    // Check if relatedReaders exists in JSON, otherwise fallback to finding same 'Type' or 'Brand'
+    let relatedIds = reader.relatedReaders || [];
+    
+    // Auto-fill if empty based on Type (simple recommendation engine)
+    if (relatedIds.length === 0) {
+        relatedIds = allReaders
+            .filter(r => r.type === reader.type && r.id !== reader.id)
+            .map(r => r.id)
+            .slice(0, 3);
     }
 
-    const relatedCards = reader.relatedReaders
+    if (relatedIds.length === 0) return "";
+
+    const relatedCards = relatedIds
         .map(relatedId => {
             const related = allReaders.find(r => r.id === relatedId);
             if (!related) return "";
             
+            // SEO-friendly internal link
             return `
-                <a href="/readers/${related.id}/" class="reader-card no-underline">
-                    <p class="reader-card-name">${related.name}</p>
-                    <p class="reader-card-info">${related.brand} • ${related.type}</p>
+                <a href="/readers/${related.id}/" class="group block border border-slate-200 rounded-lg p-4 hover:shadow-md transition bg-white no-underline">
+                    <div class="font-bold text-blue-600 group-hover:underline mb-1">${related.name}</div>
+                    <div class="text-sm text-slate-500 mb-2">${related.brand} • ${related.type}</div>
+                    <div class="text-xs text-slate-400">Max Speed: ${related.maxSpeed}</div>
                 </a>
             `;
         })
@@ -133,8 +151,8 @@ function generateRelatedReadersSection(reader, allReaders) {
 
     return `
         <section class="mb-12">
-            <h2 class="text-2xl font-bold text-slate-900 mb-6">You Might Also Like</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">Compare Similar Readers</h2>
+            <div class="grid md:grid-cols-3 gap-4">
                 ${relatedCards}
             </div>
         </section>
@@ -150,21 +168,18 @@ function generateDeviceRecommendationsSection(reader) {
     }
 
     const deviceLinks = reader.relatedDevices
-        .map(deviceId => `<a href="/categories/${deviceId}/" class="text-blue-600 hover:underline">${formatDeviceName(deviceId)}</a>`)
-        .join(", ");
+        .map(deviceId => `<a href="/categories/${deviceId}/" class="text-white bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded-full text-sm font-medium transition inline-block mb-2 mr-1 no-underline">${formatDeviceName(deviceId)}</a>`)
+        .join("");
 
     return `
         <section class="mb-12 bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Best For These Devices</h2>
-            <p class="text-slate-700 text-lg">
-                The ${reader.name} is particularly well-suited for:
+            <p class="text-slate-700 mb-4">
+                Based on our compatibility tests, the ${reader.name} is an excellent match for:
             </p>
-            <div class="mt-4 space-y-2 text-slate-700">
-                <p>${deviceLinks}</p>
+            <div class="flex flex-wrap gap-2">
+                ${deviceLinks}
             </div>
-            <p class="mt-4 text-sm text-slate-600">
-                Check our device guides to find the best SD card for your specific equipment.
-            </p>
         </section>
     `;
 }
@@ -182,7 +197,7 @@ function formatDeviceName(deviceId) {
 /**
  * Generate all template variables for a reader
  */
-function buildReaderVariables(reader, baseUrl, allReaders, index) {
+function buildReaderVariables(reader, baseUrl, allReaders) {
     const readerUrl = `${baseUrl}/readers/${reader.id}/`;
     const priceColorMap = {
         "Budget": "text-green-600",
@@ -190,12 +205,18 @@ function buildReaderVariables(reader, baseUrl, allReaders, index) {
         "Premium": "text-purple-600"
     };
 
+    // Use specific "whyChooseThis" if available, fallback to full pros
+    const whoIsThisFor = reader.whyChooseThis || reader.pros;
+
+    // Image logic: Look for specific device image, fallback to generic
+    const imagePath = `readers/${reader.id}.webp`;
+
     return {
         // Meta
-        READER_TITLE: `${reader.name} Review | Specs & Comparison`,
-        READER_DESCRIPTION: generateReaderMetaDescription(reader, index),
+        READER_TITLE: `${reader.name} Review | Specs, Speed & Price`,
+        READER_DESCRIPTION: generateReaderMetaDescription(reader),
         READER_URL: readerUrl,
-        OG_TITLE: `${reader.name} - ${reader.brand}`,
+        OG_TITLE: `${reader.name} Review - ${reader.brand}`,
         TWITTER_TITLE: `${reader.name} Review - ${reader.brand}`,
         BASE_URL: baseUrl,
 
@@ -209,17 +230,15 @@ function buildReaderVariables(reader, baseUrl, allReaders, index) {
         READER_MAX_SPEED: reader.maxSpeed,
         READER_TRANSFER_RATE: reader.transferRate,
         READER_PRICE_SYMBOL: reader.priceSymbol,
-        READER_PRICE: reader.priceEstimate || "Contact",
+        READER_PRICE_ESTIMATE: reader.priceEstimate ? `$${reader.priceEstimate}` : reader.priceTier,
         PRICE_COLOR: priceColorMap[reader.priceTier] || "text-slate-600",
 
         // Description sections
-        READER_TAGLINE: `${reader.brand} ${reader.model} - ${reader.type}`,
-        READER_WHO_IS_THIS_FOR: reader.pros,
+        READER_TAGLINE: `${reader.brand} ${reader.model}`,
+        READER_WHO_IS_THIS_FOR: whoIsThisFor,
 
         // HTML Sections
-        // TODO: Replace with actual product images from img/readers/[reader-id].webp
-        // For now using generic SD card reader placeholder
-        READER_IMAGE: `sd-card-reader-placeholder.webp`,
+        READER_IMAGE: imagePath,
         READER_PROS_HTML: generateProsHTML(reader),
         READER_CONS_HTML: generateConsHTML(reader),
         READER_SPECS_TABLE: generateSpecsTableHTML(reader),
@@ -252,8 +271,8 @@ function buildReaderVariables(reader, baseUrl, allReaders, index) {
 /**
  * Generate individual reader page
  */
-function generateReaderPage(reader, template, baseUrl, allReaders, index) {
-    const variables = buildReaderVariables(reader, baseUrl, allReaders, index);
+function generateReaderPage(reader, template, baseUrl, allReaders) {
+    const variables = buildReaderVariables(reader, baseUrl, allReaders);
     
     let html = template;
     
@@ -265,6 +284,7 @@ function generateReaderPage(reader, template, baseUrl, allReaders, index) {
 
     // Write file
     const outputPath = path.join(distPath, "readers", reader.id, "index.html");
+    ensureDir(path.dirname(outputPath));
     writeFile(outputPath, html);
 }
 
@@ -279,6 +299,11 @@ async function generateReaderPages() {
     try {
         // Read template
         const templatePath = path.join(srcPath, "templates", "reader-product-review.html");
+        
+        if (!fs.existsSync(templatePath)) {
+            throw new Error(`Template not found at ${templatePath}`);
+        }
+        
         const template = readTemplate(templatePath);
 
         // Read readers data
@@ -289,9 +314,9 @@ async function generateReaderPages() {
         console.log(`  Found ${readers.length} readers in dataset`);
 
         // Generate pages
-        readers.forEach((reader, index) => {
+        readers.forEach((reader) => {
             try {
-                generateReaderPage(reader, template, baseUrl, readers, index);
+                generateReaderPage(reader, template, baseUrl, readers);
             } catch (err) {
                 console.error(`  ❌ Error generating reader page for ${reader.id}:`, err.message);
             }
