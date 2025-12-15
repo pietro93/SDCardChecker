@@ -145,6 +145,54 @@ async function buildAmazonData() {
         'Lexar Professional Gold UHS-II',
         'SanDisk Extreme PRO SD UHS-II'
       ]
+    },
+    
+    // READERS: Photographers
+    {
+      filename: 'readers-photographers.json',
+      keywords: [
+        'ProGrade Thunderbolt card reader',
+        'SanDisk Extreme PRO USB-C SD card reader',
+        'Satechi USB-C aluminum SD card reader',
+        'Lexar professional thunderbolt reader',
+        'Anker PowerExpand SD card reader'
+      ]
+    },
+    
+    // READERS: Android
+    {
+      filename: 'readers-android.json',
+      keywords: [
+        'USB-C SD card reader portable',
+        'Android phone SD card reader',
+        'Kingston MobileLite microSD reader',
+        'Anker PowerExpand USB-C reader',
+        'SanDisk microSD USB-C reader'
+      ]
+    },
+    
+    // READERS: iPhone
+    {
+      filename: 'readers-iphone.json',
+      keywords: [
+        'iPhone Lightning SD card reader',
+        'iPad Lightning microSD reader',
+        'Anker Lightning SD card reader',
+        'Satechi Lightning card reader',
+        'Apple certified SD card reader'
+      ]
+    },
+    
+    // READERS: MacBook
+    {
+      filename: 'readers-macbook.json',
+      keywords: [
+        'USB-C SD card reader Mac',
+        'Thunderbolt SD card reader MacBook',
+        'ProGrade Thunderbolt Mac reader',
+        'Satechi USB-C Mac reader',
+        'high speed Mac card reader'
+      ]
     }
   ];
 

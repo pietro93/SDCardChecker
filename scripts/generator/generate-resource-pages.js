@@ -72,7 +72,23 @@ function replaceAmazonProductPlaceholders(html, productType) {
         
         // Video Bitrate guide
         '{{AMAZON_FEATURED_VIDEO}}': () => 
-            generateAmazonBadgeSectionByType('guide-video-bitrate', 3, 'High-Speed Cards for 4K/8K Video')
+            generateAmazonBadgeSectionByType('guide-video-bitrate', 3, 'High-Speed Cards for 4K/8K Video'),
+        
+        // Readers: Photographers guide
+        '{{AMAZON_FEATURED_READERS_PHOTOGRAPHERS}}': () => 
+            generateAmazonBadgeSectionByType('readers-photographers', 3, 'Featured SD Card Readers on Amazon'),
+        
+        // Readers: Android guide
+        '{{AMAZON_FEATURED_READERS_ANDROID}}': () => 
+            generateAmazonBadgeSectionByType('readers-android', 3, 'Featured SD Card Readers on Amazon'),
+        
+        // Readers: iPhone guide
+        '{{AMAZON_FEATURED_READERS_IPHONE}}': () => 
+            generateAmazonBadgeSectionByType('readers-iphone', 3, 'Featured SD Card Readers on Amazon'),
+        
+        // Readers: MacBook guide
+        '{{AMAZON_FEATURED_READERS_MACBOOK}}': () => 
+            generateAmazonBadgeSectionByType('readers-macbook', 3, 'Featured SD Card Readers on Amazon')
     };
     
     // Replace all placeholders
