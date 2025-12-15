@@ -214,9 +214,6 @@ function buildReaderVariables(reader, baseUrl, allReaders) {
     // Use specific "whyChooseThis" if available, fallback to full pros
     const whoIsThisFor = reader.whyChooseThis || reader.pros;
 
-    // Image logic: Look for specific device image, fallback to generic
-    const imagePath = `${reader.id}.webp`;
-
     return {
         // Meta
         READER_TITLE: `${reader.name} Review | Specs, Speed & Price`,
@@ -244,7 +241,6 @@ function buildReaderVariables(reader, baseUrl, allReaders) {
         READER_WHO_IS_THIS_FOR: whoIsThisFor,
 
         // HTML Sections
-        READER_IMAGE: imagePath,
         READER_PROS_HTML: generateProsHTML(reader),
         READER_CONS_HTML: generateConsHTML(reader),
         READER_SPECS_TABLE: generateSpecsTableHTML(reader),

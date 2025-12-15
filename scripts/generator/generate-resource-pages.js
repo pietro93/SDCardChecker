@@ -127,6 +127,11 @@ async function generateResourcePages(distPath) {
             name: "Guides Hub"
         },
         {
+            template: path.join(srcPath, "templates/guides/readers-index.html"),
+            file: "readers/index.html",
+            name: "Reader Buying Guides Index"
+        },
+        {
             template: path.join(srcPath, "templates/guides/sd-card-guide.html"),
             file: "sd-card-guide/index.html",
             name: "SD Card Guide"
