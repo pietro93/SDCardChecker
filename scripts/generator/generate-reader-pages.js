@@ -142,6 +142,44 @@ function generateRelatedReadersSection(reader, allReaders) {
 }
 
 /**
+ * Generate device recommendations section
+ */
+function generateDeviceRecommendationsSection(reader) {
+    if (!reader.relatedDevices || reader.relatedDevices.length === 0) {
+        return "";
+    }
+
+    const deviceLinks = reader.relatedDevices
+        .map(deviceId => `<a href="/categories/${deviceId}/" class="text-blue-600 hover:underline">${formatDeviceName(deviceId)}</a>`)
+        .join(", ");
+
+    return `
+        <section class="mb-12 bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Best For These Devices</h2>
+            <p class="text-slate-700 text-lg">
+                The ${reader.name} is particularly well-suited for:
+            </p>
+            <div class="mt-4 space-y-2 text-slate-700">
+                <p>${deviceLinks}</p>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">
+                Check our device guides to find the best SD card for your specific equipment.
+            </p>
+        </section>
+    `;
+}
+
+/**
+ * Format device ID to readable name
+ */
+function formatDeviceName(deviceId) {
+    return deviceId
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+
+/**
  * Generate all template variables for a reader
  */
 function buildReaderVariables(reader, baseUrl, allReaders, index) {
@@ -200,6 +238,7 @@ function buildReaderVariables(reader, baseUrl, allReaders, index) {
 
         // Related content
         RELATED_READERS_SECTION: generateRelatedReadersSection(reader, allReaders),
+        DEVICE_RECOMMENDATIONS_SECTION: generateDeviceRecommendationsSection(reader),
 
         // Components
         HEADER: generateHeader(),
