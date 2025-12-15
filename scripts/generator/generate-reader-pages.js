@@ -13,6 +13,7 @@ const path = require("path");
 const fs = require("fs");
 const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, readJSON, ensureDir } = require("./helpers");
 const { generateHeader, generateFooter, generateSidebar, generateGrowScript } = require("../../src/templates/components");
+const { generateAmazonBadgeSectionByType } = require("./amazon-badges-generator");
 
 const srcPath = path.join(__dirname, "../../src");
 const distPath = path.join(__dirname, "../../dist");
@@ -260,6 +261,7 @@ function buildReaderVariables(reader, baseUrl, allReaders) {
         // Related content
         RELATED_READERS_SECTION: generateRelatedReadersSection(reader, allReaders),
         DEVICE_RECOMMENDATIONS_SECTION: generateDeviceRecommendationsSection(reader),
+        AMAZON_FEATURED_READERS: generateAmazonBadgeSectionByType('readers-photographers', 3, 'Featured SD Card Readers'),
 
         // Components
         HEADER: generateHeader(),

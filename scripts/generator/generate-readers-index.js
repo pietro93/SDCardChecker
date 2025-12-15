@@ -7,6 +7,7 @@ const path = require("path");
 const fs = require("fs");
 const { readTemplate, writeFile, generateBreadcrumbSchema, readJSON, ensureDir } = require("./helpers");
 const { generateHeader, generateFooter, generateSidebar, generateGrowScript } = require("../../src/templates/components");
+const { generateAmazonBadgeSectionByType } = require("./amazon-badges-generator");
 
 const srcPath = path.join(__dirname, "../../src");
 const distPath = path.join(__dirname, "../../dist");
@@ -123,6 +124,7 @@ async function generateReadersIndex() {
             // HTML Sections
             READERS_GRID_HTML: readers.map(generateReaderCard).join(""),
             READER_SCHEMA_LIST: generateReaderSchemaList(readers),
+            AMAZON_FEATURED_READERS: generateAmazonBadgeSectionByType('readers-photographers', 3, 'Featured SD Card Readers'),
 
             // Breadcrumbs
             BREADCRUMB_SCHEMA: generateBreadcrumbSchema([
