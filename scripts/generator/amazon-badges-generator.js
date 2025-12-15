@@ -81,15 +81,7 @@ function getFallbackReaderRecommendations() {
       price: '$34.99',
       rating: 4.6,
       reviewCount: 512,
-      url: 'https://www.amazon.com/s?k=SanDisk+Extreme+PRO+USB-C+SD+Card+Reader&tag=sd-cc-20',
-      image: '/img/readers/sd-card-reader-placeholder.webp'
-    },
-    {
-      title: 'ProGrade Digital Thunderbolt 3 SD Card Reader',
-      price: '$149.99',
-      rating: 4.8,
-      reviewCount: 245,
-      url: 'https://www.amazon.com/s?k=ProGrade+Digital+Thunderbolt+SD+Card+Reader&tag=sd-cc-20',
+      url: 'https://www.amazon.com/dp/B08F7TM5FG?tag=sd-cc-20&linkCode=osi&th=1&psc=1',
       image: '/img/readers/sd-card-reader-placeholder.webp'
     },
     {
@@ -97,7 +89,15 @@ function getFallbackReaderRecommendations() {
       price: '$24.99',
       rating: 4.5,
       reviewCount: 387,
-      url: 'https://www.amazon.com/s?k=Satechi+USB-C+Aluminum+SD+Card+Reader&tag=sd-cc-20',
+      url: 'https://www.amazon.com/dp/B08GMCPTH1?tag=sd-cc-20&linkCode=osi&th=1&psc=1',
+      image: '/img/readers/sd-card-reader-placeholder.webp'
+    },
+    {
+      title: 'Kingston Workflow Dual Slot SD Card Reader',
+      price: '$99.99',
+      rating: 4.7,
+      reviewCount: 156,
+      url: 'https://www.amazon.com/dp/B0BVDS17RY?tag=sd-cc-20&linkCode=osi&th=1&psc=1',
       image: '/img/readers/sd-card-reader-placeholder.webp'
     }
   ];
