@@ -215,7 +215,7 @@ function buildReaderVariables(reader, baseUrl, allReaders) {
     const whoIsThisFor = reader.whyChooseThis || reader.pros;
 
     // Image logic: Look for specific device image, fallback to generic
-    const imagePath = `readers/${reader.id}.webp`;
+    const imagePath = `${reader.id}.webp`;
 
     return {
         // Meta
