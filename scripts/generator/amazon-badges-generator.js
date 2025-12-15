@@ -72,6 +72,38 @@ function generateAmazonBadgesSection() {
 }
 
 /**
+ * Get fallback reader recommendations when cache is empty
+ */
+function getFallbackReaderRecommendations() {
+  return [
+    {
+      title: 'SanDisk Extreme PRO USB-C SD Card Reader',
+      price: '$34.99',
+      rating: 4.6,
+      reviewCount: 512,
+      url: 'https://www.amazon.com/s?k=SanDisk+Extreme+PRO+USB-C+SD+Card+Reader&tag=sd-cc-20',
+      image: '/img/readers/sd-card-reader-placeholder.webp'
+    },
+    {
+      title: 'ProGrade Digital Thunderbolt 3 SD Card Reader',
+      price: '$149.99',
+      rating: 4.8,
+      reviewCount: 245,
+      url: 'https://www.amazon.com/s?k=ProGrade+Digital+Thunderbolt+SD+Card+Reader&tag=sd-cc-20',
+      image: '/img/readers/sd-card-reader-placeholder.webp'
+    },
+    {
+      title: 'Satechi USB-C Aluminum SD Card Reader',
+      price: '$24.99',
+      rating: 4.5,
+      reviewCount: 387,
+      url: 'https://www.amazon.com/s?k=Satechi+USB-C+Aluminum+SD+Card+Reader&tag=sd-cc-20',
+      image: '/img/readers/sd-card-reader-placeholder.webp'
+    }
+  ];
+}
+
+/**
  * Generate Amazon Badges Section by type
  * Allows different product sets for guides, calculators, etc.
  * 
@@ -82,7 +114,12 @@ function generateAmazonBadgesSection() {
  */
 function generateAmazonBadgeSectionByType(type = 'featured-general', count = 3, title = 'Featured Products on Amazon') {
   try {
-    const products = loadCachedProducts(`${type}.json`);
+    let products = loadCachedProducts(`${type}.json`);
+    
+    // Fallback to reader recommendations if cache is empty and type is reader-related
+    if ((!products || products.length === 0) && type.includes('readers')) {
+      products = getFallbackReaderRecommendations();
+    }
     
     if (!products || products.length === 0) {
       return '';
