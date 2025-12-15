@@ -83,7 +83,12 @@ return `<!-- Favicon -->
         <a href="/readers/professional-hub/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Professional Hubs</a>
         <a href="/readers/hub/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Multi-Port Hubs</a>
         <a href="/readers/desktop-dock/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Docks & Stands</a>
-        <a href="/readers/stick/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Compact Readers</a>
+        <a href="/readers/stick/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Compact Readers</a>
+        <div class="border-t border-slate-200"></div>
+        <a href="/guides/readers/android/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Best for Android</a>
+        <a href="/guides/readers/iphone/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Best for iPhone</a>
+        <a href="/guides/readers/macbook/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Best for MacBook</a>
+        <a href="/guides/readers/photographers/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Best for Photographers</a>
         </div>
         </div>
        </div>
@@ -163,6 +168,11 @@ return `<!-- Favicon -->
         <a href="/readers/hub/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Multi-Port Hubs</a>
         <a href="/readers/desktop-dock/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Docks & Stands</a>
         <a href="/readers/stick/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Compact Readers</a>
+        <div class="border-t border-slate-200 my-1"></div>
+        <a href="/guides/readers/android/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Best for Android</a>
+        <a href="/guides/readers/iphone/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Best for iPhone</a>
+        <a href="/guides/readers/macbook/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Best for MacBook</a>
+        <a href="/guides/readers/photographers/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Best for Photographers</a>
       </div>
       
       <!-- Resources Section -->
