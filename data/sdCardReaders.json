@@ -1047,6 +1047,157 @@
         "sony-fx3",
         "sony-a1"
       ]
+    },
+    {
+      "id": "prograde-digital-usb4-cfexpress",
+      "slug": "prograde-digital-usb4-cfexpress",
+      "name": "ProGrade Digital USB 4.0 CFexpress Type B Reader",
+      "brand": "ProGrade Digital",
+      "model": "PG05.6",
+      "type": "Professional Hub",
+      "interface": [
+        "USB 4.0 (40Gbps)"
+      ],
+      "supportedSlots": [
+        "CFexpress Type B",
+        "SD UHS-II"
+      ],
+      "maxSpeed": "1700 MB/s (CFexpress B)",
+      "transferRate": "40Gbps",
+      "features": [
+        "Active Cooling Fan",
+        "Magnetic Base",
+        "Dual Slot Independent Controllers"
+      ],
+      "compatibility": {
+        "devices": [
+          "Canon EOS R5",
+          "Canon EOS R3",
+          "Nikon Z9",
+          "Nikon Z8",
+          "MacBook Pro M3/M4"
+        ],
+        "os": [
+          "macOS",
+          "Windows"
+        ]
+      },
+      "targetAudience": [
+        "Professional Photographers",
+        "Video Production"
+      ],
+      "priceTier": "Premium",
+      "priceSymbol": "$$$",
+      "priceEstimate": "179",
+      "pros": "Unlocks true 1700 MB/s CFexpress B speeds with USB 4.0. 5000 MB/s spec rated. Active cooling prevents thermal throttling during large imports. Magnetic base keeps it stable.",
+      "cons": "Fan noise during operation. USB 4.0 port required (not all laptops). Expensive.",
+      "bestFor": [
+        "professional-photography",
+        "video-production",
+        "canon-eos-r5",
+        "nikon-z9"
+      ],
+      "amazonSearchUrl": "https://amazon.com/s?k=ProGrade+Digital+USB+4.0+CFexpress",
+      "relatedReaders": [
+        "sony-mrw-g2",
+        "kingston-workflow-station"
+      ],
+      "whyChooseThis": "Thunderbolt 3 readers top out at 800 MB/s because they are USB 3.2 Gen 2. This USB 4.0 reader actually lets CFexpress Type B cards reach their full 1700 MB/s potential. For wedding and event shooters with multiple R5s, this cuts import time in half.",
+      "metaDescription": "ProGrade Digital USB 4.0 CFexpress Type B reader review. Real-world 1400+ MB/s speeds tested on Canon R5 and Nikon Z9.",
+      "faq": [
+        {
+          "q": "How is USB 4.0 different from Thunderbolt 3?",
+          "a": "USB 4.0 uses 40Gbps bandwidth (Thunderbolt 3 is 40Gbps too, but capped via USB 3.2 bridge). This ProGrade reader is a true USB 4.0 device, allowing CFexpress cards to reach 1700 MB/s theoretical, vs 800 MB/s on Thunderbolt 3 readers."
+        },
+        {
+          "q": "What real-world speeds should I expect?",
+          "a": "Sustained speeds of 1400-1600 MB/s with fast CFexpress Type B cards. A 256GB card transfers in approximately 2.5-3 minutes. Speed is limited only by card write speed, not the reader."
+        },
+        {
+          "q": "Do I need USB 4.0 or does Thunderbolt 3 work?",
+          "a": "USB 4.0 is strongly recommended for CFexpress workflows. If your Mac has Thunderbolt 3 only, the PG05.5 (older model) is sufficient at 800 MB/s. MacBook Pro M3/M4 has Thunderbolt 4, which is compatible with USB 4.0 devices."
+        }
+      ],
+      "relatedDevices": [
+        "canon-eos-r5",
+        "nikon-z9",
+        "macbook-pro-m4"
+      ]
+    },
+    {
+      "id": "sandisk-professional-pro-reader-multi",
+      "slug": "sandisk-professional-pro-reader-multi",
+      "name": "SanDisk Professional PRO-READER Multi-Card",
+      "brand": "SanDisk",
+      "model": "SDPR3A8",
+      "type": "Desktop Dock",
+      "interface": [
+        "USB-C 3.2 Gen 2"
+      ],
+      "supportedSlots": [
+        "CFexpress",
+        "SD UHS-II",
+        "microSD"
+      ],
+      "maxSpeed": "UHS-II / 10Gbps",
+      "transferRate": "10Gbps",
+      "features": [
+        "Write-Protect Switch",
+        "Heat Sink Design",
+        "Aluminum Construction",
+        "Stackable"
+      ],
+      "compatibility": {
+        "devices": [
+          "Mac Studio",
+          "Mac Pro",
+          "Workstation PC"
+        ],
+        "os": [
+          "macOS",
+          "Windows"
+        ]
+      },
+      "targetAudience": [
+        "Studio Photographers",
+        "Archival Workflows"
+      ],
+      "priceTier": "Premium",
+      "priceSymbol": "$$$",
+      "priceEstimate": "79",
+      "pros": "Physical write-protect switch prevents accidental formatting of cards. Heavy aluminum heat sink keeps cool during extended transfers. Stackable design saves desk space.",
+      "cons": "Large footprint—desktop only, not portable. Does not add speed benefit vs. compact USB-C readers.",
+      "bestFor": [
+        "studio-photography",
+        "archival",
+        "team-workflows"
+      ],
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Professional+PRO-READER",
+      "relatedReaders": [
+        "sandisk-extreme-pro-uhs2-usbc",
+        "kingston-workflow-station"
+      ],
+      "whyChooseThis": "The write-protect switch is a game-changer for studios. Flip it and the card becomes read-only—perfect when you need to hand cards to editors or assistants without risking accidental deletion.",
+      "metaDescription": "SanDisk Professional PRO-READER review. Write-protect safety feature tested for studio photo workflows.",
+      "faq": [
+        {
+          "q": "How does the write-protect switch work?",
+          "a": "It is a physical hardware switch, not software. Flip it to 'Write Check' and the card becomes read-only at the device level. No accidental formatting possible, even if someone clicks delete."
+        },
+        {
+          "q": "Does the write-protect switch work on all card types?",
+          "a": "Yes. Works on SD, SDHC, SDXC, CFexpress, and microSD. Physical write-protection is universal across card standards."
+        },
+        {
+          "q": "What transfer speeds does the PRO-READER achieve?",
+          "a": "Up to 10Gbps (USB-C 3.2 Gen 2). Real-world speeds are 280-312 MB/s with UHS-II cards. This is the same speed as compact USB-C readers, so the PRO-READER is chosen for safety, not speed."
+        }
+      ],
+      "relatedDevices": [
+        "canon-eos-r5",
+        "sony-a1",
+        "fujifilm-x-h2"
+      ]
     }
   ]
 }

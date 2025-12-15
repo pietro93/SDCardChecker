@@ -93,7 +93,7 @@ async function build() {
     const categories = [...new Set(allDevices.map((d) => d.category))];
     console.log(`  • Category pages: ${categories.length}`);
     console.log(`  • SD Card Reader pages: 14`);
-    console.log(`  • Resource pages: 3`);
+    console.log(`  • Reader Buying Guides: 4`);
     console.log(`  • Sitemap & robots.txt: ✓`);
     console.log(`\n📁 Output directory: ${distPath}`);
     console.log(`\n🚀 To view locally, run: npx http-server dist`);

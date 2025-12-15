@@ -134,6 +134,26 @@ async function generateResourcePages(distPath) {
             template: path.join(srcPath, "templates/guides/fake-sd-card-checker.html"),
             file: "is-my-sd-card-fake/index.html",
             name: "Fake SD Card Checker"
+        },
+        {
+            template: path.join(srcPath, "templates/guides/readers-macbook.html"),
+            file: "readers/macbook/index.html",
+            name: "Best Readers for MacBook"
+        },
+        {
+            template: path.join(srcPath, "templates/guides/readers-photographers.html"),
+            file: "readers/photographers/index.html",
+            name: "Best Readers for Photographers"
+        },
+        {
+            template: path.join(srcPath, "templates/guides/readers-iphone.html"),
+            file: "readers/iphone/index.html",
+            name: "Best Readers for iPhone"
+        },
+        {
+            template: path.join(srcPath, "templates/guides/readers-android.html"),
+            file: "readers/android/index.html",
+            name: "Best Readers for Android"
         }
     ];
 

@@ -82,7 +82,8 @@ return `<!-- Favicon -->
         <a href="/readers/mobile/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Mobile Adapters</a>
         <a href="/readers/professional-hub/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Professional Hubs</a>
         <a href="/readers/hub/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Multi-Port Hubs</a>
-        <a href="/readers/dock/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Docks & Stands</a>
+        <a href="/readers/desktop-dock/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Docks & Stands</a>
+        <a href="/readers/stick/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Compact Readers</a>
         </div>
         </div>
        </div>
@@ -160,7 +161,8 @@ return `<!-- Favicon -->
         <a href="/readers/mobile/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Mobile Adapters</a>
         <a href="/readers/professional-hub/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Professional Hubs</a>
         <a href="/readers/hub/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Multi-Port Hubs</a>
-        <a href="/readers/dock/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Docks & Stands</a>
+        <a href="/readers/desktop-dock/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Docks & Stands</a>
+        <a href="/readers/stick/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Compact Readers</a>
       </div>
       
       <!-- Resources Section -->

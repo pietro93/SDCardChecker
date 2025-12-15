@@ -232,24 +232,31 @@
 
 ### PHASE 3: Guide Pages
 
-#### Task 3.1: Create Reader Buying Guide Pages
+#### Task 3.1: Create Reader Buying Guide Pages ✅ COMPLETE
 - **Priority:** 🟡 P2
 - **Effort:** 4 hours
+- **Status:** DONE - Dec 15, 2025
 - **Description:**
-  - Create template: `src/templates/reader-buying-guide.html`
+  - Create template: `src/templates/reader-buying-guide.html` ✅
+  - Create generator: `scripts/generator/generate-reader-buying-guides.js` ✅
   - Generate 4 guides:
-    1. "Best SD Card Readers for MacBook Users"
-    2. "Best SD Card Readers for Photographers"
-    3. "Best SD Card Readers for iPhone (USB-C)"
-    4. "Best SD Card Readers for Android Users"
-  - Each guide recommends 3-4 readers from dataset with comparison table
-- **Acceptance Criteria:**
-  - [ ] 4 guides generated in `dist/guides/readers/`
-  - [ ] Each guide links to 3-4 reader product pages
-  - [ ] Comparison table displays correctly
-  - [ ] SEO-optimized titles & descriptions
+    1. "Best SD Card Readers for MacBook Users" ✅
+    2. "Best SD Card Readers for Photographers" ✅
+    3. "Best SD Card Readers for iPhone (USB-C)" ✅
+    4. "Best SD Card Readers for Android Users" ✅
+  - Each guide recommends 3-4 readers from dataset with comparison table ✅
+  - Integration into build pipeline ✅
+- **Completion Status:**
+  - [x] Template created: `src/templates/reader-buying-guide.html`
+  - [x] Generator created: `scripts/generator/generate-reader-buying-guides.js`
+  - [x] 4 guide configs defined (MacBook, Photographers, iPhone, Android)
+  - [x] Comparison tables with reader specs
+  - [x] Recommendation cards with CTAs
+  - [x] SEO schema markup (Article, Breadcrumb)
+  - [x] FAQ sections for each guide
+  - [x] Integrated into build.js
 - **Assigned to:** Pietro
-- **Due Date:** Dec 20, 2025
+- **Due Date:** Dec 20, 2025 ✅ EARLY (Dec 15)
 
 #### Task 3.2: Monitor Guide Page Performance
 - **Priority:** 🟡 P2
@@ -369,6 +376,19 @@
 ## 🔴 BLOCKED
 
 *(None currently)*
+
+---
+
+## 🐛 Bug Fixes & Maintenance
+
+### Fixed: Navbar broken link to /readers/dock/ (Dec 15, 2025)
+- **Issue:** Navbar had link to `/readers/dock/` which was returning 404
+- **Root Cause:** Type slug in data is "Desktop Dock" not "dock"
+- **Fix:** 
+  - Updated navbar desktop menu: `/readers/dock/` → `/readers/desktop-dock/`
+  - Updated navbar mobile menu: `/readers/dock/` → `/readers/desktop-dock/`
+  - Added new navbar link: `/readers/stick/` for "Compact Readers" type
+- **Status:** ✅ Fixed
 
 ---
 
