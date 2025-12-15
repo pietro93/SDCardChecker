@@ -1,0 +1,379 @@
+{
+  "sdCardReaders": [
+    {
+      "id": "ugreen-2in1-usbc-usb3",
+      "name": "UGREEN SD Card Reader 2-in-1",
+      "brand": "UGREEN",
+      "model": "CM185",
+      "type": "Dongle",
+      "interface": ["USB-C", "USB-A 3.0"],
+      "supportedSlots": ["SD", "microSD"],
+      "maxSpeed": "UHS-I (104 MB/s)",
+      "transferRate": "5Gbps",
+      "features": [
+        "OTG Support",
+        "Dual Caps Design",
+        "Keychain Loop",
+        "Plug and Play"
+      ],
+      "compatibility": {
+        "devices": ["MacBook Air", "MacBook Pro", "iPhone 15+", "Android Phones", "PC"],
+        "os": ["macOS", "Windows", "Android", "iOS"]
+      },
+      "targetAudience": ["Students", "General Users"],
+      "priceTier": "Budget",
+      "priceSymbol": "$",
+      "pros": "Versatile dual-connector design covers almost all modern devices. Very affordable.",
+      "cons": "Protective caps are not attached and can be lost. UHS-I speed limit.",
+      "bestFor": ["general-use", "android", "macbook-air"],
+      "amazonSearchUrl": "https://amazon.com/s?k=UGREEN+SD+Card+Reader+USB-C+Dual"
+    },
+    {
+      "id": "muddy-crv43-viewer",
+      "name": "Muddy 4.3\" LCD SD Card Viewer",
+      "brand": "Muddy",
+      "model": "CRV43",
+      "type": "Viewer",
+      "interface": ["None (Battery Powered)"],
+      "supportedSlots": ["SD", "SDHC"],
+      "maxSpeed": "Class 10",
+      "features": [
+        "4.3-inch Color Screen",
+        "Headphone Jack",
+        "Rugged Housing",
+        "Battery Powered (4x AAA)"
+      ],
+      "compatibility": {
+        "devices": ["Trail Cameras"],
+        "os": ["Standalone"]
+      },
+      "targetAudience": ["Hunters", "Outdoorsmen"],
+      "priceTier": "Mid-Range",
+      "priceSymbol": "$$",
+      "pros": "Allows reviewing footage in the field without a computer. Rugged rubberized grip.",
+      "cons": "Low resolution screen. Does not support SDXC cards over 64GB.",
+      "bestFor": ["trail-cameras", "hunting"],
+      "amazonSearchUrl": "https://amazon.com/s?k=Muddy+SD+Card+Viewer+CRV43"
+    },
+    {
+      "id": "stealth-cam-sd-card-viewer",
+      "name": "Stealth Cam 4.3\" SD Card Viewer",
+      "brand": "Stealth Cam",
+      "model": "STC-CRV43X",
+      "type": "Viewer",
+      "interface": ["None (Battery Powered)"],
+      "supportedSlots": ["SD", "SDHC"],
+      "maxSpeed": "Class 10",
+      "features": [
+        "4.3-inch Touch Screen",
+        "Zoom Function",
+        "Wrist Lanyard",
+        "Mini-USB out"
+      ],
+      "compatibility": {
+        "devices": ["Trail Cameras"],
+        "os": ["Standalone"]
+      },
+      "targetAudience": ["Hunters"],
+      "priceTier": "Mid-Range",
+      "priceSymbol": "$$",
+      "pros": "Touchscreen allows for easier navigation than physical buttons. Zoom function helps identify details.",
+      "cons": "Touchscreen can be difficult to use with heavy gloves.",
+      "bestFor": ["trail-cameras"],
+      "amazonSearchUrl": "https://amazon.com/s?k=Stealth+Cam+SD+Card+Viewer"
+    },
+    {
+      "id": "lexar-lightning-microsd",
+      "name": "Lexar microSD Reader for Lightning",
+      "brand": "Lexar",
+      "model": "LMSDAT-RN",
+      "type": "Mobile Adapter",
+      "interface": ["Lightning"],
+      "supportedSlots": ["microSD"],
+      "maxSpeed": "UHS-I",
+      "features": [
+        "Apple MFi Certified",
+        "Ultra Compact",
+        "App Integration"
+      ],
+      "compatibility": {
+        "devices": ["iPhone 14 and older", "iPad (Lightning)"],
+        "os": ["iOS"]
+      },
+      "targetAudience": ["iPhone Users (Legacy)"],
+      "priceTier": "Mid-Range",
+      "priceSymbol": "$$",
+      "pros": "Direct connection to Lightning ports without dongles. Extremely compact.",
+      "cons": "MicroSD only. Not compatible with USB-C devices (iPhone 15+).",
+      "bestFor": ["iphone-14", "iphone-13"],
+      "amazonSearchUrl": "https://amazon.com/s?k=Lexar+microSD+Lightning+Reader"
+    },
+    {
+      "id": "prograde-digital-cfexpress-sd-workflow",
+      "name": "ProGrade Digital CFexpress & SD Workflow Reader",
+      "brand": "ProGrade Digital",
+      "model": "PG05.5",
+      "type": "Professional Hub",
+      "interface": ["USB-C 3.2 Gen 2"],
+      "supportedSlots": ["CFexpress Type B", "SD UHS-II"],
+      "maxSpeed": "UHS-II / CFexpress (1250 MB/s)",
+      "transferRate": "10Gbps",
+      "features": [
+        "Magnetic Base",
+        "Heat Sink",
+        "Dual Slot Simultaneous"
+      ],
+      "compatibility": {
+        "devices": ["Mac Studio", "Workstation PC", "Canon R5"],
+        "os": ["macOS", "Windows"]
+      },
+      "targetAudience": ["Professional Photographers"],
+      "priceTier": "Premium",
+      "priceSymbol": "$$$",
+      "pros": "Maximizes transfer speeds for both SD and CFexpress. Heavy duty build quality.",
+      "cons": "Requires a USB 3.2 Gen 2 port for full speed benefits.",
+      "bestFor": ["professional-photography", "canon-eos-r5"],
+      "amazonSearchUrl": "https://amazon.com/s?k=ProGrade+Digital+CFexpress+Type+B+and+SD"
+    },
+    {
+      "id": "sony-mrw-g1",
+      "name": "Sony MRW-G1 CFexpress Type B / XQD Reader",
+      "brand": "Sony",
+      "model": "MRW-G1",
+      "type": "Professional Hub",
+      "interface": ["USB-C 3.1 Gen 2"],
+      "supportedSlots": ["CFexpress Type B", "XQD"],
+      "maxSpeed": "High Speed",
+      "transferRate": "10Gbps",
+      "features": [
+        "Supports XQD",
+        "Includes USB-A and C cables",
+        "Heat management"
+      ],
+      "compatibility": {
+        "devices": ["Sony A1", "Nikon Z9", "Nikon D850"],
+        "os": ["macOS", "Windows"]
+      },
+      "targetAudience": ["Sony/Nikon Professionals"],
+      "priceTier": "Premium",
+      "priceSymbol": "$$$",
+      "pros": "One of the few readers that supports both CFexpress Type B and legacy XQD cards.",
+      "cons": "Does not support standard SD cards.",
+      "bestFor": ["sony-a1", "nikon-z9"],
+      "amazonSearchUrl": "https://amazon.com/s?k=Sony+MRW-G1+Card+Reader"
+    },
+    {
+      "id": "sandisk-extreme-pro-uhs2-usbc",
+      "name": "SanDisk Extreme PRO SD UHS-II Reader",
+      "brand": "SanDisk",
+      "model": "SDDR-409",
+      "type": "Dongle",
+      "interface": ["USB-C"],
+      "supportedSlots": ["SD UHS-II"],
+      "maxSpeed": "UHS-II (312 MB/s)",
+      "transferRate": "High Speed",
+      "features": [
+        "Flexible Cable",
+        "Compact Design"
+      ],
+      "compatibility": {
+        "devices": ["MacBook Pro", "PC Laptops", "iPad Pro"],
+        "os": ["macOS", "Windows"]
+      },
+      "targetAudience": ["Photographers"],
+      "priceTier": "Mid-Range",
+      "priceSymbol": "$$",
+      "pros": "Unlocks full UHS-II speeds. Trusted brand reliability.",
+      "cons": "Design can block adjacent ports on some hubs.",
+      "bestFor": ["fast-transfer", "macbook-pro"],
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+SD+Card+USB-C+Reader"
+    },
+    {
+      "id": "apple-usbc-sd-reader",
+      "name": "Apple USB-C to SD Card Reader",
+      "brand": "Apple",
+      "model": "MU8G2AM/A",
+      "type": "Dongle",
+      "interface": ["USB-C"],
+      "supportedSlots": ["SD UHS-II"],
+      "maxSpeed": "UHS-II (312 MB/s)",
+      "transferRate": "High Speed",
+      "features": [
+        "UHS-II Support",
+        "Unblocks adjacent ports"
+      ],
+      "compatibility": {
+        "devices": ["MacBook Pro", "iPad Pro", "iPhone 15+"],
+        "os": ["macOS", "iOS", "iPadOS"]
+      },
+      "targetAudience": ["Apple Users"],
+      "priceTier": "Premium",
+      "priceSymbol": "$$",
+      "pros": "Guaranteed driver-free compatibility with all Apple devices. Supports UHS-II.",
+      "cons": "More expensive than third-party alternatives.",
+      "bestFor": ["macbook-pro", "iphone-15"],
+      "amazonSearchUrl": "https://amazon.com/s?k=Apple+USB-C+to+SD+Card+Reader"
+    },
+    {
+      "id": "satechi-aluminum-type-c-stand",
+      "name": "Satechi Type-C Stand & Hub",
+      "brand": "Satechi",
+      "model": "ST-TCMS",
+      "type": "Hub",
+      "interface": ["USB-C"],
+      "supportedSlots": ["SD", "microSD"],
+      "maxSpeed": "UHS-I",
+      "transferRate": "5Gbps",
+      "features": [
+        "Desktop Stand Design",
+        "Front-facing ports",
+        "Audio Jack"
+      ],
+      "compatibility": {
+        "devices": ["Mac Mini", "Mac Studio"],
+        "os": ["macOS"]
+      },
+      "targetAudience": ["Mac Mini Users"],
+      "priceTier": "Premium",
+      "priceSymbol": "$$$",
+      "pros": "Adds accessible front-facing ports to the Mac Mini. Matches Apple aesthetic.",
+      "cons": "SD slots are only UHS-I speed.",
+      "bestFor": ["mac-mini", "mac-studio"],
+      "amazonSearchUrl": "https://amazon.com/s?k=Satechi+Type-C+Stand+Hub+Mac+Mini"
+    },
+    {
+      "id": "anker-powerexpand-2in1",
+      "name": "Anker PowerExpand+ 2-in-1",
+      "brand": "Anker",
+      "model": "A8326",
+      "type": "Dongle",
+      "interface": ["USB-C"],
+      "supportedSlots": ["SD", "microSD"],
+      "maxSpeed": "UHS-I (104 MB/s)",
+      "transferRate": "5Gbps",
+      "features": [
+        "Aluminum Unibody",
+        "Braided Cable"
+      ],
+      "compatibility": {
+        "devices": ["MacBook Air", "iPad Air", "Chromebooks"],
+        "os": ["macOS", "Windows", "ChromeOS"]
+      },
+      "targetAudience": ["Laptop Users"],
+      "priceTier": "Budget",
+      "priceSymbol": "$",
+      "pros": "Durable build with braided cable. Compact and reliable.",
+      "cons": "Short cable length.",
+      "bestFor": ["macbook-air", "ipad-air"],
+      "amazonSearchUrl": "https://amazon.com/s?k=Anker+SD+Card+Reader+USB-C"
+    },
+    {
+      "id": "unitek-usbc-3slot-reader",
+      "name": "Unitek USB-C 3-Slot Card Reader",
+      "brand": "Unitek",
+      "model": "Y-9313D",
+      "type": "Hub",
+      "interface": ["USB-C"],
+      "supportedSlots": ["SD", "microSD", "CompactFlash (CF)"],
+      "maxSpeed": "UHS-I",
+      "transferRate": "5Gbps",
+      "features": [
+        "Reads 3 cards simultaneously",
+        "Aluminum Housing",
+        "CompactFlash Support"
+      ],
+      "compatibility": {
+        "devices": ["MacBook Pro", "PC", "iPad Pro"],
+        "os": ["macOS", "Windows", "Linux"]
+      },
+      "targetAudience": ["DSLR Users", "Legacy Photographers"],
+      "priceTier": "Budget",
+      "priceSymbol": "$",
+      "pros": "One of the few modern USB-C readers that still supports older CompactFlash cards found in Canon 5D/7D cameras.",
+      "cons": "Cable is permanently attached.",
+      "bestFor": ["canon-5d", "legacy-dslr", "compact-flash"],
+      "amazonSearchUrl": "https://amazon.com/s?k=Unitek+USB+C+Card+Reader+CF"
+    },
+    {
+      "id": "transcend-rdf9-uhs2",
+      "name": "Transcend RDF9 UHS-II Card Reader",
+      "brand": "Transcend",
+      "model": "TS-RDF9K2",
+      "type": "Stick / Box",
+      "interface": ["Micro-B to USB-A/C"],
+      "supportedSlots": ["SD UHS-II", "microSD UHS-II", "CompactFlash"],
+      "maxSpeed": "UHS-II (260 MB/s)",
+      "transferRate": "High Speed",
+      "features": [
+        "Includes USB-A and USB-C cables",
+        "LED Indicator",
+        "Compact Box Shape"
+      ],
+      "compatibility": {
+        "devices": ["PC", "Mac", "Laptops"],
+        "os": ["Windows", "macOS"]
+      },
+      "targetAudience": ["Travel Photographers"],
+      "priceTier": "Mid-Range",
+      "priceSymbol": "$$",
+      "pros": "Very fast UHS-II performance for a low price. Reliable LED activity light.",
+      "cons": "Uses an older Micro-B connector on the reader side (cables included).",
+      "bestFor": ["travel-photography", "fast-transfer"],
+      "amazonSearchUrl": "https://amazon.com/s?k=Transcend+RDF9+Card+Reader"
+    },
+    {
+      "id": "kingston-workflow-station",
+      "name": "Kingston Workflow Station",
+      "brand": "Kingston",
+      "model": "WFS-U",
+      "type": "Desktop Dock",
+      "interface": ["USB-C 3.2 Gen 2"],
+      "supportedSlots": ["Modular (SD, microSD)"],
+      "maxSpeed": "UHS-II",
+      "transferRate": "10Gbps",
+      "features": [
+        "Modular Design",
+        "Offload 4 cards at once",
+        "Includes mini-hubs"
+      ],
+      "compatibility": {
+        "devices": ["Mac Studio", "Desktop PC"],
+        "os": ["macOS", "Windows"]
+      },
+      "targetAudience": ["Production Teams", "Event Photographers"],
+      "priceTier": "Premium",
+      "priceSymbol": "$$$",
+      "pros": "The only reader that allows simultaneous offloading of 4+ cards. Modular readers can be used independently on-the-go.",
+      "cons": "Bulky. Requires wall power for full hub functionality.",
+      "bestFor": ["multi-cam-production", "event-photography"],
+      "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Workflow+Station"
+    },
+    {
+      "id": "sony-mrw-g2",
+      "name": "Sony MRW-G2 CFexpress Type A / SD Reader",
+      "brand": "Sony",
+      "model": "MRW-G2",
+      "type": "Professional Hub",
+      "interface": ["USB-C 3.2 Gen 2"],
+      "supportedSlots": ["CFexpress Type A", "SD UHS-II"],
+      "maxSpeed": "800 MB/s (Type A) / 300 MB/s (SD)",
+      "transferRate": "10Gbps",
+      "features": [
+        "SuperSpeed USB 10Gbps",
+        "Heat Sink Design",
+        "Includes USB-A and USB-C cables"
+      ],
+      "compatibility": {
+        "devices": ["Sony A7S III", "Sony FX3", "Sony A1", "Sony A7 IV", "Sony FX6"],
+        "os": ["macOS", "Windows"]
+      },
+      "targetAudience": ["Sony Videographers", "Cinema Camera Users"],
+      "priceTier": "Premium",
+      "priceSymbol": "$$$",
+      "pros": "The standard-issue reader for Sony's unique CFexpress Type A cards. Blazing fast read speeds for 4K 120fps footage.",
+      "cons": "Only useful for Sony cameras (Canon/Nikon use Type B). Expensive compared to standard SD readers.",
+      "bestFor": ["sony-a7s-iii", "sony-fx3", "sony-a1"],
+      "amazonSearchUrl": "https://amazon.com/s?k=Sony+MRW-G2+Card+Reader"
+    }
+  ]
+}

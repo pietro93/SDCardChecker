@@ -13,6 +13,9 @@ const { generateCategoryPages } = require("./generate-category-pages");
 const { generateResourcePages } = require("./generate-resource-pages");
 const { generateCalculatorPages } = require("./generate-calculator-pages");
 const { generateToolsPages } = require("./generate-tools-pages");
+const { generateReaderPages } = require("./generate-reader-pages");
+const { generateReadersIndex } = require("./generate-readers-index");
+const { generateReadersTypeIndexPages } = require("./generate-readers-type-index");
 const { generateCoreFiles } = require("./generate-core-files");
 const { generateRedirects } = require("./generate-redirects");
 
@@ -55,6 +58,18 @@ async function build() {
     await generateToolsPages(distPath);
     console.log();
 
+    // 6.6. Generate SD Card Reader Pages (/readers/[slug]/)
+    await generateReaderPages();
+    console.log();
+
+    // 6.7. Generate Readers Index Page (/readers/)
+    await generateReadersIndex();
+    console.log();
+
+    // 6.8. Generate Reader Type Index Pages (/readers/[type]/)
+    await generateReadersTypeIndexPages();
+    console.log();
+
     // 7. Generate URL Redirects for SEO migration
     await generateRedirects(allDevices, distPath);
     console.log();
@@ -71,6 +86,7 @@ async function build() {
     console.log(`  • Device pages: ${allDevices.length}`);
     const categories = [...new Set(allDevices.map((d) => d.category))];
     console.log(`  • Category pages: ${categories.length}`);
+    console.log(`  • SD Card Reader pages: 14`);
     console.log(`  • Resource pages: 3`);
     console.log(`  • Sitemap & robots.txt: ✓`);
     console.log(`\n📁 Output directory: ${distPath}`);

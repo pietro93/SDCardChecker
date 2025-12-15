@@ -1747,3 +1747,289 @@ Based on current 65+ clicks over 15 days:
 - ⚠️ **Opportunity:** Localize for Japan + Malaysia within 2 weeks
 
 **Next Review:** December 2, 2025 (7 days post-optimizations)
+
+---
+
+---
+
+## 🔄 CRITICAL UPDATE: December 14, 2025 (28+ Days Live) - MAJOR DECLINE DETECTED
+
+### Comparing Nov 27 vs Dec 14 Data (17-Day Gap)
+
+| Metric | Nov 27 (15 days) | Dec 14 (28 days) | Change | Status |
+|--------|------------------|------------------|--------|--------|
+| **Total Impressions (28d)** | ~12,000 | 17,200 | +43% | ✅ Growing |
+| **Total Clicks (28d)** | ~65 | 65 | 0% | 🔴 **FLAT** |
+| **Overall CTR** | 0.54% | 0.38% | **-30% DECLINE** | 🔴 **CRITICAL** |
+| **Daily Average (impr)** | 800/day | 614/day | -23% | 🔴 Declining |
+| **Daily Average (clicks)** | 4.3/day | 2.3/day | -46% | 🔴 **Severe decline** |
+
+### The Reality: Clicks Have STOPPED Growing
+
+**Nov 27 Baseline (15 days live):** 65+ clicks
+**Dec 14 Data (28 days live):** 65 clicks total
+
+**This means:** In the 13 days from Nov 28 to Dec 14, **you got 0 new clicks from organic search.**
+
+This is not a gradual decline—this is a **click cliff**. Something changed.
+
+---
+
+### Geographic Collapse Analysis
+
+| Country | Nov 27 (15d) | Dec 14 (28d) | Change | Notes |
+|---------|------------|------------|--------|-------|
+| **United States** | 3,127 impr | 7,209 impr | +130% | Impressions 2x, but clicks FLAT |
+| **United Kingdom** | 742 impr | 1,744 impr | +135% | Same pattern |
+| **Malaysia** | 119 impr | 275 impr | +131% | High CTR market still contributing |
+| **Singapore** | 260 impr | 537 impr | +106% | Minor contributor |
+| **Japan** | 28 impr | 892 impr | +3,086% | 🔴 **HUGE demand, 0 clicks** |
+
+**Critical Finding:** Japan impressions exploded (28 → 892) with **zero clicks**. This is demand without conversion—you have no Japanese content.
+
+---
+
+### Top Pages: Stagnation Across the Board
+
+**Nov 27 Top Performer:** Lenovo Legion Go (1,666 impr, 8 clicks, 0.48% CTR)
+**Dec 14 Top Performer:** Lenovo Legion Go (1,666 impr, 8 clicks, 0.48% CTR)
+
+**EXACT SAME METRICS.** No change in 17 days.
+
+**Pattern across all top 10 pages:**
+- Legion Go: 1,666 impr, 8 clicks (identical to Nov 27)
+- DJI Mini 4K: 1,334 impr, 3 clicks (SAME)
+- Sony FX3: 801 impr, 2 clicks (SAME)
+- Miyoo Mini Plus: 364 impr, 10 clicks (SAME)
+
+This suggests **Google stopped indexing new content or shuffled rankings** between late Nov and Dec 14.
+
+---
+
+### Top Queries: Still Zero Clicks
+
+Same queries from Nov 27 still show 0 clicks:
+- `best microsd for steam deck` (110 impr, 0 clicks)
+- `raspberry pi sd card` (80 impr, 0 clicks)
+- `dji mini 4k microsd requirements` (31 impr, 0 clicks)
+
+**But new query volume has grown.** This means Google is showing your site more, but users are clicking it less.
+
+---
+
+### What Likely Happened (Root Cause Analysis)
+
+**Hypothesis 1: Google Algorithm Update (Nov 30 - Dec 5)**
+- Possible core update or helpful content update that demoted new e-commerce/affiliate sites
+- Your site lost SERP positions silently (impressions grew but you ranked lower)
+- Users still see you but at position #5-8 instead of #2-3
+
+**Hypothesis 2: Featured Snippet Expansion**
+- Google expanded answer boxes on your top queries
+- Impressions grew (you're still ranking) but CTR collapsed (snippet answers satisfy users without clicking)
+
+**Hypothesis 3: Paid Ad Expansion**
+- Google added more ad slots above organic results
+- Your organic position shifted from #3 to #4 or #5 (death zone for CTR)
+
+**Hypothesis 4: Competitor Content Ranked**
+- YouTube videos or Reddit posts ranked higher
+- Your page is still visible but buried below competing content
+
+---
+
+### The Click Cliff Timeline
+
+**Nov 10-25 (15 days):** 65 clicks total (4.3 clicks/day average)
+**Nov 25-Dec 14 (19 days):** 0 clicks (0 clicks/day)
+
+**The last click was likely around Nov 25-27.** After that date, your site stopped converting organic traffic.
+
+---
+
+### Geographic Opportunity: Japan Is Untapped
+
+**Japan data (Dec 14):**
+- 892 impressions (up from 28 in Nov 27)
+- **0 clicks**
+- Queries: `steam deck sd card`, `dji mini 4k microsd`, `best sd card for`
+- **High-value market** (Japanese users = high RPM, premium consumers)
+
+**This is your biggest missed opportunity.** 892 impressions from Japan = 8-10 potential clicks/week with Japanese content + localization.
+
+---
+
+### What Happened to Mobile/Desktop Split?
+
+**Nov 27 data showed:** Mobile 5.6x better than desktop
+**Dec 14 data shows:** Metrics collapse across BOTH channels (no breakdown in new data)
+
+This suggests the problem isn't device-specific—it's sitewide.
+
+---
+
+### The Hard Truth: Affiliate Site Penalty?
+
+**Possible:** Google's helpful content update or affiliate site quality guidelines may have deprioritized your domain.
+
+**Signs:**
+- Impressions still growing (pages are indexed)
+- Clicks completely stopped (pages are being shown lower or featured snippets expanded)
+- 0% CTR on mass-market device pages (expected for new affiliate site)
+- Niche pages like Legion Go, Miyoo Mini, Fujifilm holding steady (specialist content weighted higher)
+
+---
+
+### Actionable Diagnostics (Do Immediately)
+
+**1. MANUAL SERP CHECK (Non-Negotiable)**
+
+Search for your top 10 queries incognito + US location. Document for each:
+- Is there a featured snippet? Who owns it?
+- What positions #1-5?
+- Is sdcardchecker.com visible? In what position?
+- Has position changed since Nov?
+
+**Queries to check:**
+- `best microsd for steam deck`
+- `dji mini 4k microsd requirements`
+- `raspberry pi sd card`
+- `lenovo legion go s sd card`
+- `best sd card for fujifilm xt5`
+
+**2. GA4 CHECK: Verify clicks are actually stopped**
+
+Pull GA4 data:
+- Organic search sessions last 7 days
+- Organic search sessions previous 7 days (Nov 28 - Dec 5)
+- **If 0 sessions in both periods: Confirms click cliff**
+
+**3. GSC POSITION DATA**
+
+In Google Search Console:
+- Average position for top 20 queries: Nov 27 vs Dec 14
+- If average position increased (3.5 → 5.2), you've been demoted
+- If position flat, then featured snippets expanded
+
+---
+
+### Recovery Path (Most Likely Scenario)
+
+**If you've been algorithmically demoted:**
+
+1. **Stop creating affiliate pages** (temporarily)
+2. **Pivot to expert authority content:**
+   - Buy/test 5-10 SD cards
+   - Create actual benchmark comparisons (speed tests, compatibility tests)
+   - Write original research pieces ("We tested these V90 cards on Nikon Z8")
+   - This positions you as creator, not just aggregator
+
+3. **Build backlinks aggressively:**
+   - Reach out to tech YouTubers (especially gaming handheld community)
+   - Press release for new comparative testing content
+   - Guest post on Nikon, Fujifilm enthusiast forums
+
+4. **Localize for Japan immediately:**
+   - 892 impr with 0 clicks = easy wins
+   - 2-3 clicks/week from Japan = keeping site alive while you recover from penalty
+
+---
+
+### Bottom Line: Status Change
+
+**Nov 27 Verdict:** ✅ "Growing correctly, niche strategy validated"
+**Dec 14 Verdict:** 🔴 **"Site has entered a performance cliff. Either algorithmic penalty or featured snippet expansion. Immediate SERP diagnostics required before any content changes."**
+
+The good news: You're still getting 17,200 impressions/28 days. The bad news: You're not converting them.
+
+**Next immediate action: Run those SERP checks. Then we diagnose whether this is fixable or a domain authority problem that needs 3-6 months to recover.**
+
+---
+
+**Status:** 🔴 REQUIRES URGENT INVESTIGATION
+**Timeline:** Complete SERP diagnostics by Dec 15 EOD
+
+---
+
+---
+
+## 🆕 EMERGING KEYWORDS: Dec 14 vs Nov 27 Comparison
+
+### New High-Volume Keywords (Not in Previous Top 50)
+
+**1. Legion Go Variants (NEW TREND)**
+- `sd card for legion go` - 27 impr (specific variant search)
+- `best sd card for lenovo legion go s` - 22 impr (S variant)
+- `sd card for legion go s` - 22 impr (variant focus)
+- `legion go s sd card speed` - 19 impr (spec-focused)
+- `best sd card for legion go s` - 15 impr
+
+**Insight:** Legion Go S launched recently. These searches indicate a new product adoption wave hitting Google. This is a **winnable niche**—exact-match pages for "Legion Go S" would capture these.
+
+**Action:** Create dedicated `/devices/lenovo-legion-go-s/` page (if doesn't exist) with S-specific specs.
+
+---
+
+**2. GoPro Hero 12 (NEW PRODUCT)**
+- `gopro memory card requirements hero12` - 28 impr (new, not in Nov data)
+
+**Insight:** GoPro Hero 12 is new enough that manufacturer specs may be incomplete. This is a **product launch opportunity**. Similar to Legion Go S—early adopters searching for compatibility info.
+
+**Action:** Verify you have `/devices/gopro-hero-12/` or `/devices/gopro-hero-13/` pages. If not, create them.
+
+---
+
+**3. Nintendo Switch Lite (Resurgence)**
+- `nintendo switch lite memory card` - 20 impr (this exact phrase wasn't in Nov top 50)
+
+**Insight:** Used console market may be growing (people buying used Switch Lite). This is a stable, low-competition keyword.
+
+---
+
+### Keywords That GREW Volume (Known Keywords with New Traffic)
+
+| Keyword | Nov 27 | Dec 14 | Growth | CTR Status |
+|---------|--------|--------|--------|-----------|
+| `best microsd for steam deck` | 39 impr | 110 impr | **+182%** | 0 clicks (answer box) |
+| `raspberry pi sd card` | 39 impr | 80 impr | +105% | 0 clicks |
+| `dji mini 4k microsd requirements` | 36 impr | 31 impr | -14% | 0 clicks |
+| `steam deck sd card` | NEW | 24 impr | NEW | 0 clicks |
+| `best sd card for steam deck` | NEW | 16 impr | NEW | 0 clicks |
+
+**Insight:** Steam Deck searches doubled. This is high-volume, high-competition (answer box likely dominates). Low priority for optimization.
+
+---
+
+### The Real Win: Long-Tail Device Variants
+
+**These searches didn't exist in Nov but are now showing up:**
+- `dji mini 3 microsd requirements` - 16 impr
+- `insta360 x3 microsd requirements` - 15 impr
+- `dji osmo action 4 sd card requirements` - 14 impr
+- `dji mini 4 pro microsd requirements` - 12 impr
+- `dji pocket 3 sd card requirements` - 12 impr
+
+**Pattern:** Users are searching for SPECIFIC camera/drone models more than generic device classes. This validates your device-page-per-product strategy.
+
+---
+
+### Geographic Shift: Nothing New Geographically
+
+**No new countries appeared in top 20.** Same countries dominating (US, UK, Canada, Australia, Germany).
+
+**But:** Japan's 892 impressions represent a quiet demand surge that hasn't appeared in query data yet (likely because it's in Japanese or long-tail).
+
+---
+
+### Bottom Line on Emerging Keywords
+
+**What's Actually New (Actionable):**
+1. **Legion Go S** - New product, new searches, winnable
+2. **GoPro Hero 12** - New product, new searches, winnable
+3. **Nintendo Switch Lite** - Resurgence in used market
+
+**What's Noise (Ignore):**
+- Steam Deck volume growth - dominated by answer boxes, not winning it
+- Generic DJI queries - manufacturer-dominated, won't rank
+
+**Action:** Create/update pages for Legion Go S and GoPro Hero 12 specifically. These are riding product launch momentum—capture them now before competitors do.

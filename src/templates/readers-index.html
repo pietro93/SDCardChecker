@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best SD Card Readers | Reviews & Comparison</title>
+  <meta name="description" content="Compare 14 top-rated SD card readers. Find the best USB-C, USB-A, and CFexpress readers with specs, pros/cons, and price comparisons.">
+  <link rel="canonical" href="https://sdcardchecker.com/readers/">
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Best SD Card Readers | 14 Reviewed & Compared">
+  <meta property="og:description" content="Compare 14 top-rated SD card readers. Find the best USB-C, USB-A, and CFexpress readers with specs, pros/cons, and prices.">
+  <meta property="og:image" content="https://sdcardchecker.com/img/og-readers.webp">
+  <meta property="og:url" content="https://sdcardchecker.com/readers/">
+  <meta property="og:site_name" content="SD Card Checker">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Best SD Card Readers - 14 Reviews">
+  <meta name="twitter:description" content="Compare top SD card readers: USB-C, USB-A, CFexpress. Full specs & prices.">
+  <meta name="twitter:image" content="https://sdcardchecker.com/img/og-readers.webp">
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {{BREADCRUMB_SCHEMA}}
+  </script>
+
+  <!-- CollectionPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Best SD Card Readers",
+    "description": "Compare 14 top-rated SD card readers with detailed reviews, specifications, pros/cons, and pricing.",
+    "url": "https://sdcardchecker.com/readers/",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {{READER_SCHEMA_LIST}}
+      ]
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  {{GROW_SCRIPT}}
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">SD Card Readers</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+          Best SD Card Readers
+        </h1>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Find the perfect SD card reader for your needs. Compare 14 top-rated models with detailed specs, pros/cons, compatibility, and Amazon pricing.
+        </p>
+      </div>
+
+      <!-- Quick Stats -->
+      <section class="grid md:grid-cols-3 gap-4 mb-12">
+        <div class="bg-white rounded-lg p-6 shadow-sm border-l-4 border-blue-500">
+          <div class="text-3xl font-bold text-blue-600 mb-2">14</div>
+          <div class="text-slate-700 font-medium">Readers Reviewed</div>
+        </div>
+        <div class="bg-white rounded-lg p-6 shadow-sm border-l-4 border-green-500">
+          <div class="text-3xl font-bold text-green-600 mb-2">{{READER_COUNT}}</div>
+          <div class="text-slate-700 font-medium">Detailed Comparisons</div>
+        </div>
+        <div class="bg-white rounded-lg p-6 shadow-sm border-l-4 border-purple-500">
+          <div class="text-3xl font-bold text-purple-600 mb-2">{{READER_TYPES_COUNT}}</div>
+          <div class="text-slate-700 font-medium">Reader Types</div>
+        </div>
+      </section>
+
+      <!-- Readers Grid -->
+      <section>
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">All SD Card Readers</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {{READERS_GRID_HTML}}
+        </div>
+      </section>
+
+      <!-- Information Section -->
+      <section class="mt-16 bg-white rounded-lg p-8 shadow-sm border border-slate-200">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">How to Choose an SD Card Reader</h2>
+        <div class="space-y-4 text-slate-700">
+          <p>
+            <strong>Interface Type:</strong> USB-C for modern devices, USB-A for broader compatibility, CFexpress for professional workflows.
+          </p>
+          <p>
+            <strong>Speed:</strong> UHS-I (104 MB/s) for general use, UHS-II (312 MB/s) for professional video/photography.
+          </p>
+          <p>
+            <strong>Slots:</strong> Single-slot readers are portable, multi-slot readers handle multiple card types simultaneously.
+          </p>
+          <p>
+            <strong>Compatibility:</strong> Check your device's ports and the card types you use (SD, microSD, CFexpress, etc.).
+          </p>
+        </div>
+      </section>
+    </main>
+
+    {{SIDEBAR}}
+  </div>
+
+  {{FOOTER}}
+</body>
+</html>

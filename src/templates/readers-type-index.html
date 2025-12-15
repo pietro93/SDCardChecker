@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TYPE_TITLE}} | Best SD Card Readers | {{TYPE_COUNT}} Models</title>
+  <meta name="description" content="{{TYPE_DESCRIPTION}}">
+  <link rel="canonical" href="https://sdcardchecker.com/readers/{{TYPE_SLUG}}/">
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{TYPE_TITLE}}">
+  <meta property="og:description" content="{{TYPE_DESCRIPTION}}">
+  <meta property="og:image" content="https://sdcardchecker.com/img/og-readers.webp">
+  <meta property="og:url" content="https://sdcardchecker.com/readers/{{TYPE_SLUG}}/">
+  <meta property="og:site_name" content="SD Card Checker">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{TYPE_TITLE}}">
+  <meta name="twitter:description" content="{{TYPE_DESCRIPTION}}">
+  <meta name="twitter:image" content="https://sdcardchecker.com/img/og-readers.webp">
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {{BREADCRUMB_SCHEMA}}
+  </script>
+
+  <!-- CollectionPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "{{TYPE_TITLE}}",
+    "description": "{{TYPE_DESCRIPTION}}",
+    "url": "https://sdcardchecker.com/readers/{{TYPE_SLUG}}/",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {{READER_SCHEMA_LIST}}
+      ]
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  {{GROW_SCRIPT}}
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/readers/" class="text-blue-600 hover:underline">SD Card Readers</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">{{TYPE_TITLE}}</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+          {{TYPE_TITLE}}
+        </h1>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          {{TYPE_INTRO}}
+        </p>
+      </div>
+
+      <!-- Type Stats -->
+      <section class="bg-white rounded-lg p-6 shadow-sm border border-slate-200 mb-12">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <div class="text-2xl font-bold text-blue-600 mb-1">{{TYPE_COUNT}}</div>
+            <div class="text-slate-700 font-medium">Readers in This Category</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-green-600 mb-1">{{TYPE_PRICE_RANGE}}</div>
+            <div class="text-slate-700 font-medium">Price Range</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Readers Grid -->
+      <section>
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">{{TYPE_TITLE}} Models</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {{READERS_GRID_HTML}}
+        </div>
+      </section>
+
+      <!-- Information Section -->
+      <section class="mt-16 bg-white rounded-lg p-8 shadow-sm border border-slate-200">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">{{TYPE_INFO_TITLE}}</h2>
+        <div class="space-y-4 text-slate-700">
+          {{TYPE_INFO_CONTENT}}
+        </div>
+      </section>
+    </main>
+
+    {{SIDEBAR}}
+  </div>
+
+  {{FOOTER}}
+</body>
+</html>
