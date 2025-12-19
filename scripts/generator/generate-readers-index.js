@@ -5,7 +5,7 @@
 
 const path = require("path");
 const fs = require("fs");
-const { readTemplate, writeFile, generateBreadcrumbSchema, readJSON, ensureDir } = require("./helpers");
+const { readTemplate, writeFile, generateBreadcrumbSchema, readJSON, ensureDir, getReaderImageFallback } = require("./helpers");
 const { generateHeader, generateFooter, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 const { generateAmazonBadgeSectionByType } = require("./amazon-badges-generator");
 
@@ -16,13 +16,14 @@ const distPath = path.join(__dirname, "../../dist");
  * Generate reader card HTML
  */
 function generateReaderCard(reader) {
+    const imageUrl = getReaderImageFallback(reader, path.join(__dirname, "../../img/readers"));
     return `
         <a href="/readers/${reader.id}/" class="reader-card-grid group block">
             <div class="bg-white rounded-lg shadow-sm hover:shadow-lg transition-shadow overflow-hidden border border-slate-200 h-full flex flex-col">
                 <!-- Image -->
                 <div class="aspect-square bg-slate-100 overflow-hidden">
                     <img 
-                        src="/img/readers/sd-card-reader-placeholder.webp" 
+                        src="${imageUrl}" 
                         alt="${reader.name}" 
                         class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform"
                         width="200"
@@ -76,12 +77,14 @@ function getPriceColor(priceTier) {
 function generateReaderSchemaList(readers) {
     return readers
         .map((reader, index) => {
+            const imageUrl = getReaderImageFallback(reader, path.join(__dirname, "../../img/readers"));
+            const fullImageUrl = imageUrl.startsWith('http') ? imageUrl : `https://sdcardchecker.com${imageUrl}`;
             return `{
         "@type": "ListItem",
         "position": ${index + 1},
         "name": "${reader.name}",
         "url": "https://sdcardchecker.com/readers/${reader.id}/",
-        "image": "https://sdcardchecker.com/img/readers/sd-card-reader-placeholder.webp"
+        "image": "${fullImageUrl}"
     }`;
         })
         .join(",\n        ");

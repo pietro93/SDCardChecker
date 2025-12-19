@@ -11,7 +11,7 @@
 
 const path = require("path");
 const fs = require("fs");
-const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, readJSON, ensureDir } = require("./helpers");
+const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, readJSON, ensureDir, getReaderImageFallback } = require("./helpers");
 const { generateHeader, generateFooter, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 const { generateAmazonBadgeSectionByType } = require("./amazon-badges-generator");
 
@@ -236,7 +236,7 @@ function buildReaderVariables(reader, baseUrl, allReaders) {
         READER_PRICE_SYMBOL: reader.priceSymbol,
         READER_PRICE_ESTIMATE: reader.priceEstimate ? `$${reader.priceEstimate}` : reader.priceTier,
         PRICE_COLOR: priceColorMap[reader.priceTier] || "text-slate-600",
-        HERO_IMAGE: reader.heroImage || '/img/readers/sd-card-reader-placeholder.webp',
+        HERO_IMAGE: getReaderImageFallback(reader, path.join(__dirname, "../../img/readers")),
 
         // Description sections
         READER_TAGLINE: `${reader.brand} ${reader.model}`,

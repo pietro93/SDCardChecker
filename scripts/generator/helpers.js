@@ -735,6 +735,31 @@ function loadSDCardData() {
   return cardMap;
 }
 
+/**
+ * Get reader image with brand-level fallback
+ * Priority:
+ * 1. Specific reader image (e.g., sony-mrw-g2-sd-reader.webp)
+ * 2. Brand-level image (e.g., sony.webp)
+ * 3. Generic placeholder
+ */
+function getReaderImageFallback(reader, imgDirectory = './img/readers') {
+  // Check if specific reader image exists
+  if (reader.heroImage) {
+    return reader.heroImage;
+  }
+
+  // Try brand-level fallback
+  const brandImagePath = `/img/readers/${reader.brand.toLowerCase()}.webp`;
+  const brandImageFullPath = path.join(imgDirectory, `${reader.brand.toLowerCase()}.webp`);
+  
+  if (fs.existsSync(brandImageFullPath)) {
+    return brandImagePath;
+  }
+
+  // Fall back to generic placeholder
+  return '/img/readers/sd-card-reader-placeholder.webp';
+}
+
 module.exports = {
   ensureDir,
   readJSON,
@@ -747,6 +772,7 @@ module.exports = {
   generateProductSchema,
   getDeviceImageFallback,
   getCardImageFallback,
+  getReaderImageFallback,
   generateSpecsHTML,
   generateFAQHTML,
   generateRelatedDevices,
