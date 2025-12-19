@@ -236,6 +236,7 @@ function buildReaderVariables(reader, baseUrl, allReaders) {
         READER_PRICE_SYMBOL: reader.priceSymbol,
         READER_PRICE_ESTIMATE: reader.priceEstimate ? `$${reader.priceEstimate}` : reader.priceTier,
         PRICE_COLOR: priceColorMap[reader.priceTier] || "text-slate-600",
+        HERO_IMAGE: reader.heroImage || '/img/readers/sd-card-reader-placeholder.webp',
 
         // Description sections
         READER_TAGLINE: `${reader.brand} ${reader.model}`,

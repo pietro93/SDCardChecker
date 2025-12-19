@@ -898,10 +898,11 @@
     },
     {
       "id": "kingston-workflow-station",
-      "slug": "kingston-workflow-station",
-      "name": "Kingston Workflow Station",
-      "brand": "Kingston",
-      "model": "WFS-U",
+       "slug": "kingston-workflow-station",
+       "name": "Kingston Workflow Station",
+       "brand": "Kingston",
+       "model": "WFS-U",
+       "heroImage": "/img/readers/kingston-workflow-station.webp",
       "type": "Desktop Dock",
       "interface": [
         "USB-C 3.2 Gen 2"
@@ -971,10 +972,11 @@
     },
     {
       "id": "sony-mrw-g2",
-      "slug": "sony-mrw-g2",
-      "name": "Sony MRW-G2 CFexpress Type A / SD Reader",
-      "brand": "Sony",
-      "model": "MRW-G2",
+       "slug": "sony-mrw-g2",
+       "name": "Sony MRW-G2 CFexpress Type A / SD Reader",
+       "brand": "Sony",
+       "model": "MRW-G2",
+       "heroImage": "/img/readers/sony-mrw-g2-sd-reader.webp",
       "type": "Professional Hub",
       "interface": [
         "USB-C 3.2 Gen 2"
@@ -1126,10 +1128,11 @@
     },
     {
       "id": "sandisk-professional-pro-reader-multi",
-      "slug": "sandisk-professional-pro-reader-multi",
-      "name": "SanDisk Professional PRO-READER Multi-Card",
-      "brand": "SanDisk",
-      "model": "SDPR3A8",
+       "slug": "sandisk-professional-pro-reader-multi",
+       "name": "SanDisk Professional PRO-READER Multi-Card",
+       "brand": "SanDisk",
+       "model": "SDPR3A8",
+       "heroImage": "/img/readers/sandisk-professional-pro-reader-multi-card.webp",
       "type": "Desktop Dock",
       "interface": [
         "USB-C 3.2 Gen 2"
