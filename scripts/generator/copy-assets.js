@@ -43,21 +43,29 @@ async function copyAssets() {
    console.log(`  ✓ data/devices.json`);
 
    // Copy sdcards.json for calculator widget
-   const sdcardsJsonSrc = path.join(srcPath, "../data/sdcards.json");
-   const sdcardsJsonDest = path.join(distPath, "data/sdcards.json");
-   if (fs.existsSync(sdcardsJsonSrc)) {
-     fs.copyFileSync(sdcardsJsonSrc, sdcardsJsonDest);
-     console.log(`  ✓ data/sdcards.json`);
-   } else {
-     console.warn(`  ⚠️  sdcards.json not found at ${sdcardsJsonSrc}`);
-   }
+    const sdcardsJsonSrc = path.join(srcPath, "../data/sdcards.json");
+    const sdcardsJsonDest = path.join(distPath, "data/sdcards.json");
+    if (fs.existsSync(sdcardsJsonSrc)) {
+      fs.copyFileSync(sdcardsJsonSrc, sdcardsJsonDest);
+      console.log(`  ✓ data/sdcards.json`);
+    } else {
+      console.warn(`  ⚠️  sdcards.json not found at ${sdcardsJsonSrc}`);
+    }
 
-  // Copy images folder
-  const imgPath = path.join(srcPath, "../img");
-  if (fs.existsSync(imgPath)) {
-    copyDir(imgPath, path.join(distPath, "img"));
-    console.log(`  ✓ Copied img folder`);
-  }
-}
+    // Copy Amazon cache directory for product badges
+    const amazonCacheSrc = path.join(srcPath, "../data/amazon-cache");
+    const amazonCacheDest = path.join(distPath, "data/amazon-cache");
+    if (fs.existsSync(amazonCacheSrc)) {
+      copyDir(amazonCacheSrc, amazonCacheDest);
+      console.log(`  ✓ Copied amazon-cache`);
+    }
+
+   // Copy images folder
+   const imgPath = path.join(srcPath, "../img");
+   if (fs.existsSync(imgPath)) {
+     copyDir(imgPath, path.join(distPath, "img"));
+     console.log(`  ✓ Copied img folder`);
+   }
+   }
 
 module.exports = { copyAssets };

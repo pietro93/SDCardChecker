@@ -116,8 +116,9 @@ function generateAmazonBadgeSectionByType(type = 'featured-general', count = 3, 
   try {
     let products = loadCachedProducts(`${type}.json`);
     
-    // Fallback to reader recommendations if cache is empty and type is reader-related
-    if ((!products || products.length === 0) && type.includes('readers')) {
+    // Fallback to reader recommendations if cache is missing or empty and type is reader-related
+    if ((products === null || products === undefined || products.length === 0) && type.includes('readers')) {
+      console.log(`  ℹ️  Using fallback recommendations for ${type}`);
       products = getFallbackReaderRecommendations();
     }
     
@@ -130,6 +131,10 @@ function generateAmazonBadgeSectionByType(type = 'featured-general', count = 3, 
       .map((product, index) => generateProductBadgeHTML(product, index))
       .join('');
 
+    if (!badgesHTML || badgesHTML.trim() === '') {
+      return '';
+    }
+
     return `
       <section id="amazon-products-${type}" class="mb-16 scroll-mt-20">
         <h3 class="text-2xl font-bold text-slate-900 mb-6">${title}</h3>
@@ -141,6 +146,29 @@ function generateAmazonBadgeSectionByType(type = 'featured-general', count = 3, 
     `;
   } catch (error) {
     console.warn(`  ⚠️  Error generating Amazon badges section (${type}):`, error.message);
+    
+    // For reader pages, return fallback even on error
+    if (type.includes('readers')) {
+      try {
+        const fallbackProducts = getFallbackReaderRecommendations().slice(0, count);
+        const badgesHTML = fallbackProducts
+          .map((product, index) => generateProductBadgeHTML(product, index))
+          .join('');
+        
+        return `
+          <section id="amazon-products-${type}" class="mb-16 scroll-mt-20">
+            <h3 class="text-2xl font-bold text-slate-900 mb-6">${title}</h3>
+            <p class="text-xs text-slate-500 mb-6">This website contains affiliate links. We may earn a small commission when you purchase through our links at no extra cost to you.</p>
+            <div class="amazon-badges-grid">
+              ${badgesHTML}
+            </div>
+          </section>
+        `;
+      } catch (fallbackError) {
+        console.warn(`  ⚠️  Fallback also failed:`, fallbackError.message);
+      }
+    }
+    
     return '';
   }
 }
