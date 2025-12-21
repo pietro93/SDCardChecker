@@ -79,7 +79,7 @@ return `<!-- Favicon -->
         <a href="/readers/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">All Readers</a>
         <a href="/readers/dongle/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Dongles</a>
         <a href="/readers/viewer/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Viewers</a>
-        <a href="/readers/mobile/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Mobile Adapters</a>
+        <a href="/readers/mobile-reader/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Mobile Adapters</a>
         <a href="/readers/professional-hub/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Professional Hubs</a>
         <a href="/readers/hub/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Multi-Port Hubs</a>
         <a href="/readers/desktop-dock/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Docks & Stands</a>
@@ -160,7 +160,7 @@ return `<!-- Favicon -->
         <a href="/readers/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">All Readers</a>
         <a href="/readers/dongle/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Dongles</a>
         <a href="/readers/viewer/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Viewers</a>
-        <a href="/readers/mobile/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Mobile Adapters</a>
+        <a href="/readers/mobile-reader/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Mobile Adapters</a>
         <a href="/readers/professional-hub/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Professional Hubs</a>
         <a href="/readers/hub/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Multi-Port Hubs</a>
         <a href="/readers/desktop-dock/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Docks & Stands</a>
