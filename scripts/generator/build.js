@@ -10,6 +10,7 @@ const { readJSON } = require("./helpers");
 const { copyAssets } = require("./copy-assets");
 const { generateDevicePages } = require("./generate-device-pages");
 const { generateCategoryPages } = require("./generate-category-pages");
+const { generateCategoriesIndexPages } = require("./generate-categories-index");
 const { generateResourcePages } = require("./generate-resource-pages");
 const { generateCalculatorPages } = require("./generate-calculator-pages");
 const { generateToolsPages } = require("./generate-tools-pages");
@@ -50,6 +51,10 @@ async function build() {
 
     // 4. Generate Category Pages
     await generateCategoryPages(allDevices, distPath);
+    console.log();
+
+    // 4.5. Generate Categories Index Pages (/categories/, /ja/categories/)
+    await generateCategoriesIndexPages(allDevices, distPath);
     console.log();
 
     // 5. Generate Resource Pages

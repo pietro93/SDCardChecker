@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SD Card Categories - Find the Best Card for Your Device | SD Card Checker</title>
+  <meta name="description" content="Browse SD card recommendations by device category. Find the best SD cards for cameras, drones, gaming handhelds, action cameras, computing devices, and more.">
+  <link rel="canonical" href="https://sdcardchecker.com/categories/">
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SD Card Categories - Find the Best Card for Your Device">
+  <meta property="og:description" content="Browse SD card recommendations by device category. Find the best SD cards for cameras, drones, gaming handhelds, action cameras, computing devices, and more.">
+  <meta property="og:image" content="https://sdcardchecker.com/img/og-category.webp">
+  <meta property="og:url" content="https://sdcardchecker.com/categories/">
+  <meta property="og:site_name" content="SD Card Checker">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SD Card Categories - Find the Best Card for Your Device">
+  <meta name="twitter:description" content="Browse SD card recommendations by device category. Find the best SD cards for cameras, drones, gaming handhelds, action cameras, computing devices, and more.">
+  <meta name="twitter:image" content="https://sdcardchecker.com/img/og-category.webp">
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sdcardchecker.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Categories",
+        "item": "https://sdcardchecker.com/categories/"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  {{GROW_SCRIPT}}
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">Categories</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12">
+    <main>
+      <!-- Hero Section -->
+      <div class="mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+          SD Card Categories
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed max-w-2xl">
+          Browse our comprehensive collection of SD card recommendations organized by device type. Whether you're looking for the best card for your camera, drone, gaming handheld, or any other device, we've got you covered.
+        </p>
+      </div>
+
+      <!-- Categories Grid -->
+      <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {{CATEGORIES_GRID}}
+      </section>
+    </main>
+  </div>
+
+  {{FOOTER}}
+
+  <style>
+    .category-card {
+      @apply bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all;
+    }
+
+    .category-card:hover {
+      @apply border-blue-300;
+    }
+
+    .category-card-icon {
+      @apply w-16 h-16 mb-4 flex items-center justify-center bg-blue-50 rounded-lg;
+    }
+
+    .category-card-icon img {
+      @apply w-10 h-10;
+    }
+
+    .category-card-title {
+      @apply text-xl font-bold text-slate-900 mb-2;
+    }
+
+    .category-card-description {
+      @apply text-sm text-slate-600 mb-4;
+    }
+
+    .category-card-link {
+      @apply text-blue-600 hover:text-blue-700 font-semibold transition-colors inline-flex items-center gap-2;
+    }
+
+    .category-card-count {
+      @apply text-xs text-slate-500 font-medium mt-4 pt-4 border-t border-slate-100;
+    }
+  </style>
+</body>
+</html>

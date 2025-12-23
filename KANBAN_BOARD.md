@@ -51,6 +51,23 @@
 
 ---
 
+## ✅ COMPLETED (Latest Wins)
+
+### Category Index Pages (Japanese + English) - DEPLOYED
+- **Status:** ✅ Live
+- **Details:**
+  - English: `/categories/index.html` - Landing page for all device categories
+  - Japanese: `/ja/categories/index.html` - Fully localized Japanese version
+  - Shows device count per category
+  - Responsive grid layout with category cards
+  - Proper breadcrumb navigation (localized)
+  - Schema markup for SEO
+  - All internal links use correct locale paths (`/ja/` prefix for Japanese)
+- **Impact:** Closes SEO gap for category taxonomy, improves discoverability
+- **Reference:** See `CATEGORIES_INDEX_IMPLEMENTATION.md`
+
+---
+
 ## 👀 IMMEDIATE INVESTIGATION REQUIRED (Before Any Changes)
 
 ### SERP Inspection Task (PRIORITY #1)
@@ -260,6 +277,13 @@ Research high-volume, low-competition keywords in:
 - **Trigger to act:** Only if GSC shows brand-level queries (not device-specific)
 - **Current signal:** No brand-level queries observed yet
 - **Next review:** Nov 25
+
+### Trail Camera Dataset Expansion (Month 6+)
+- **Status:** Category created (Trail Cameras), 0 specific devices yet
+- **Idea:** Add specific trail camera brands (Bushnell, Reconyx, Spypoint, Browning, Stealth Cam, etc.)
+- **Rationale:** Niche high-intent market, less competition than consumer devices
+- **Timeline:** Post-Japanese launch (Month 6+)
+- **Effort:** 15-20 device pages + 2-3 use-case guides
 
 ---
 
