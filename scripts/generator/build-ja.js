@@ -8,6 +8,7 @@
 const path = require("path");
 const { readJSON } = require("./helpers");
 const { generateCategoryPagesJa } = require("./generate-category-pages-ja");
+const { generateJapaneseHomePage } = require("./generate-ja-home");
 
 // Paths
 const devicesPath = path.join(__dirname, "../../data/devices-ja.json");
@@ -24,7 +25,12 @@ async function buildJapanese() {
     const allDevices = devicesData.devices;
     console.log(`  ✓ Loaded ${allDevices.length} devices\n`);
 
-    // 2. Generate Japanese Category Pages (no readers)
+    // 2. Generate Japanese Home Page
+    console.log("📄 Generating Japanese home page...");
+    generateJapaneseHomePage(distPath);
+    console.log();
+
+    // 3. Generate Japanese Category Pages (no readers)
     console.log("📄 Generating Japanese category pages...");
     generateCategoryPagesJa(allDevices, jaPath);
     console.log();
