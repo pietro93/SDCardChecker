@@ -5552,11 +5552,11 @@
         "autel-evo-ii-pro-v3"
       ],
       "notes": "One of the few consumer drones offering 8K. High-speed media is a necessity, not a luxury."
-      },
-      {
+    },
+    {
       "id": "iphone-15",
       "name": "iPhone 15",
-      "category": "Mobile Devices",
+      "category": "Computing & Tablets",
       "slug": "iphone-15",
       "searchTerms": [
         "iphone 15",
@@ -5566,7 +5566,10 @@
       "sdCard": {
         "type": "External via USB-C SD Reader",
         "minSpeed": "No official requirement",
-        "recommendedCapacity": ["64GB", "128GB"],
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ],
         "maxCapacity": "Limited by app storage"
       },
       "whySpecs": "iPhone 15 does not have SD card slot. Uses USB-C readers for external SD card access. Speed depends on reader, not device.",
@@ -5580,11 +5583,11 @@
         "iphone-13",
         "ipad-pro"
       ]
-      },
-      {
+    },
+    {
       "id": "macbook-air",
       "name": "MacBook Air",
-      "category": "Computers",
+      "category": "Computing & Tablets",
       "slug": "macbook-air",
       "searchTerms": [
         "macbook air",
@@ -5594,7 +5597,10 @@
       "sdCard": {
         "type": "External via USB-C Reader",
         "minSpeed": "UHS-I recommended",
-        "recommendedCapacity": ["128GB", "256GB"]
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
       },
       "whySpecs": "MacBook Air lacks SD card slot. USB-C readers achieve full speed potential on modern models.",
       "recommendedBrands": [
@@ -5606,11 +5612,11 @@
         "macbook-pro",
         "ipad-pro"
       ]
-      },
-      {
+    },
+    {
       "id": "iphone-14",
       "name": "iPhone 14",
-      "category": "Mobile Devices",
+      "category": "Computing & Tablets",
       "slug": "iphone-14",
       "searchTerms": [
         "iphone 14",
@@ -5619,7 +5625,10 @@
       "sdCard": {
         "type": "External via Lightning Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "iPhone 14 uses Lightning port. Lightning readers limited to USB 2.0 speeds for some models.",
       "recommendedBrands": [
@@ -5631,11 +5640,11 @@
         "iphone-15",
         "iphone-13"
       ]
-      },
-      {
+    },
+    {
       "id": "iphone-13",
       "name": "iPhone 13",
-      "category": "Mobile Devices",
+      "category": "Computing & Tablets",
       "slug": "iphone-13",
       "searchTerms": [
         "iphone 13",
@@ -5644,7 +5653,10 @@
       "sdCard": {
         "type": "External via Lightning Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "iPhone 13 uses Lightning port with microSD readers.",
       "recommendedBrands": [
@@ -5656,11 +5668,11 @@
         "iphone-14",
         "iphone-12"
       ]
-      },
-      {
+    },
+    {
       "id": "ipad-air",
       "name": "iPad Air",
-      "category": "Tablets",
+      "category": "Computing & Tablets",
       "slug": "ipad-air",
       "searchTerms": [
         "ipad air",
@@ -5670,7 +5682,10 @@
       "sdCard": {
         "type": "External via USB-C Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["128GB", "256GB"]
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
       },
       "whySpecs": "iPad Air M1 and newer use USB-C. Lightning models require Lightning readers.",
       "recommendedBrands": [
@@ -5682,8 +5697,8 @@
         "ipad-pro",
         "ipad-air-3"
       ]
-      },
-      {
+    },
+    {
       "id": "dji-mini-3",
       "name": "DJI Mini 3",
       "category": "Drones",
@@ -5696,7 +5711,10 @@
         "type": "microSD UHS-I",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": ["128GB", "256GB"]
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
       },
       "whySpecs": "DJI Mini 3 records 4K video. V30 ensures stable recording.",
       "recommendedBrands": [
@@ -5708,8 +5726,8 @@
         "dji-mini-4-pro",
         "dji-mini-2-se"
       ]
-      },
-      {
+    },
+    {
       "id": "wyze-cam-v3",
       "name": "Wyze Cam v3",
       "category": "Action Cameras",
@@ -5721,7 +5739,10 @@
       "sdCard": {
         "type": "microSD",
         "minSpeed": "Class 10",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "Wyze Cam v3 supports microSD for local recording storage.",
       "recommendedBrands": [
@@ -5732,11 +5753,11 @@
       "relatedDevices": [
         "gopro-hero-13"
       ]
-      },
-      {
+    },
+    {
       "id": "iphone-14-pro-max",
       "name": "iPhone 14 Pro Max",
-      "category": "Mobile Devices",
+      "category": "Computing & Tablets",
       "slug": "iphone-14-pro-max",
       "searchTerms": [
         "iphone 14 pro max",
@@ -5745,7 +5766,10 @@
       "sdCard": {
         "type": "External via Lightning Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "iPhone 14 Pro Max uses Lightning port.",
       "recommendedBrands": [
@@ -5757,11 +5781,11 @@
         "iphone-14",
         "iphone-15"
       ]
-      },
-      {
+    },
+    {
       "id": "ipad-air-3",
       "name": "iPad Air 3rd Generation",
-      "category": "Tablets",
+      "category": "Computing & Tablets",
       "slug": "ipad-air-3",
       "searchTerms": [
         "ipad air 3",
@@ -5770,7 +5794,10 @@
       "sdCard": {
         "type": "External via Lightning Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "iPad Air 3 uses Lightning port (older model).",
       "recommendedBrands": [
@@ -5782,11 +5809,11 @@
         "ipad-air",
         "ipad-pro"
       ]
-      },
-      {
+    },
+    {
       "id": "iphone-se",
       "name": "iPhone SE",
-      "category": "Mobile Devices",
+      "category": "Computing & Tablets",
       "slug": "iphone-se",
       "searchTerms": [
         "iphone se",
@@ -5795,7 +5822,9 @@
       "sdCard": {
         "type": "External via Lightning Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["64GB"]
+        "recommendedCapacity": [
+          "64GB"
+        ]
       },
       "whySpecs": "iPhone SE uses Lightning connector.",
       "recommendedBrands": [
@@ -5807,11 +5836,11 @@
         "iphone-13",
         "iphone-14"
       ]
-      },
-      {
+    },
+    {
       "id": "samsung-galaxy-s23",
       "name": "Samsung Galaxy S23",
-      "category": "Mobile Devices",
+      "category": "Computing & Tablets",
       "slug": "samsung-galaxy-s23",
       "searchTerms": [
         "samsung galaxy s23",
@@ -5820,7 +5849,10 @@
       "sdCard": {
         "type": "External via USB-C Reader (no slot)",
         "minSpeed": "No requirement",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "Galaxy S23 removed SD card slot. Uses USB-C readers for external access.",
       "recommendedBrands": [
@@ -5832,11 +5864,11 @@
         "google-pixel-8",
         "samsung-galaxy-s24"
       ]
-      },
-      {
+    },
+    {
       "id": "google-pixel-8",
       "name": "Google Pixel 8",
-      "category": "Mobile Devices",
+      "category": "Computing & Tablets",
       "slug": "google-pixel-8",
       "searchTerms": [
         "google pixel 8",
@@ -5845,7 +5877,10 @@
       "sdCard": {
         "type": "External via USB-C Reader (no slot)",
         "minSpeed": "No requirement",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "Pixel 8 does not have SD card slot. Uses USB-C readers.",
       "recommendedBrands": [
@@ -5857,11 +5892,11 @@
         "samsung-galaxy-s23",
         "iphone-15"
       ]
-      },
-      {
+    },
+    {
       "id": "trail-cameras",
       "name": "Trail Cameras",
-      "category": "Hunting Equipment",
+      "category": "Trail Cameras",
       "slug": "trail-cameras",
       "searchTerms": [
         "trail camera",
@@ -5871,7 +5906,10 @@
       "sdCard": {
         "type": "SD / SDHC",
         "minSpeed": "Class 10",
-        "recommendedCapacity": ["32GB", "64GB"]
+        "recommendedCapacity": [
+          "32GB",
+          "64GB"
+        ]
       },
       "whySpecs": "Trail cameras record to SD cards. Capacity dependent on resolution and frame rate.",
       "recommendedBrands": [
@@ -5883,11 +5921,11 @@
         "gopro-hero-13",
         "wyze-cam-v3"
       ]
-      },
-      {
+    },
+    {
       "id": "hp-chromebook",
       "name": "HP Chromebook",
-      "category": "Computers",
+      "category": "Computing & Tablets",
       "slug": "hp-chromebook",
       "searchTerms": [
         "hp chromebook",
@@ -5896,7 +5934,10 @@
       "sdCard": {
         "type": "External via USB Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "Chromebooks support external SD readers via USB.",
       "recommendedBrands": [
@@ -5907,11 +5948,11 @@
       "relatedDevices": [
         "dell-xps"
       ]
-      },
-      {
+    },
+    {
       "id": "dell-xps",
       "name": "Dell XPS Laptop",
-      "category": "Computers",
+      "category": "Computing & Tablets",
       "slug": "dell-xps",
       "searchTerms": [
         "dell xps",
@@ -5920,7 +5961,10 @@
       "sdCard": {
         "type": "External via USB-C Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["128GB", "256GB"]
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
       },
       "whySpecs": "Dell XPS laptops typically lack SD slot. USB-C readers compatible.",
       "recommendedBrands": [
@@ -5932,8 +5976,8 @@
         "macbook-pro",
         "hp-chromebook"
       ]
-      },
-      {
+    },
+    {
       "id": "canon-rebel-t7",
       "name": "Canon EOS Rebel T7",
       "category": "Cameras",
@@ -5946,7 +5990,10 @@
         "type": "SD UHS-I",
         "minSpeed": "Class 10",
         "minWriteSpeed": "10 MB/s",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "Entry-level DSLR. Class 10 sufficient for 1080p video.",
       "recommendedBrands": [
@@ -5957,11 +6004,11 @@
       "relatedDevices": [
         "canon-eos-r5"
       ]
-      },
-      {
+    },
+    {
       "id": "macbook-pro",
       "name": "MacBook Pro",
-      "category": "Computers",
+      "category": "Computing & Tablets",
       "slug": "macbook-pro",
       "searchTerms": [
         "macbook pro",
@@ -5971,7 +6018,10 @@
       "sdCard": {
         "type": "External via USB-C/Thunderbolt Reader",
         "minSpeed": "UHS-I to UHS-II",
-        "recommendedCapacity": ["128GB", "256GB"]
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
       },
       "whySpecs": "MacBook Pro uses Thunderbolt/USB-C. High-speed readers recommended for video workflows.",
       "recommendedBrands": [
@@ -5983,11 +6033,11 @@
         "macbook-air",
         "canon-eos-r5"
       ]
-      },
-      {
+    },
+    {
       "id": "ipad-pro",
       "name": "iPad Pro",
-      "category": "Tablets",
+      "category": "Computing & Tablets",
       "slug": "ipad-pro",
       "searchTerms": [
         "ipad pro",
@@ -5997,7 +6047,10 @@
       "sdCard": {
         "type": "External via USB-C Reader",
         "minSpeed": "UHS-I to UHS-II",
-        "recommendedCapacity": ["128GB", "256GB"]
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
       },
       "whySpecs": "iPad Pro uses USB-C or Thunderbolt. Supports fast external readers.",
       "recommendedBrands": [
@@ -6009,11 +6062,11 @@
         "ipad-air",
         "macbook-pro"
       ]
-      },
-      {
+    },
+    {
       "id": "ipad-9th-gen",
       "name": "iPad 9th Generation",
-      "category": "Tablets",
+      "category": "Computing & Tablets",
       "slug": "ipad-9th-gen",
       "searchTerms": [
         "ipad 9th generation",
@@ -6022,7 +6075,10 @@
       "sdCard": {
         "type": "External via Lightning Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "iPad 9th Gen uses Lightning port.",
       "recommendedBrands": [
@@ -6034,11 +6090,11 @@
         "ipad-air",
         "iphone-13"
       ]
-      },
-      {
+    },
+    {
       "id": "windows-laptop",
       "name": "Windows Laptop",
-      "category": "Computers",
+      "category": "Computing & Tablets",
       "slug": "windows-laptop",
       "searchTerms": [
         "windows laptop",
@@ -6047,7 +6103,10 @@
       "sdCard": {
         "type": "External via USB Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["128GB", "256GB"]
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
       },
       "whySpecs": "Most Windows laptops lack SD slot. USB readers required.",
       "recommendedBrands": [
@@ -6059,8 +6118,8 @@
         "dell-xps",
         "macbook-pro"
       ]
-      },
-      {
+    },
+    {
       "id": "sony-a1",
       "name": "Sony A1",
       "category": "Cameras",
@@ -6073,7 +6132,10 @@
         "type": "CFexpress Type A / SD UHS-II",
         "minSpeed": "V60",
         "minWriteSpeed": "60 MB/s",
-        "recommendedCapacity": ["128GB", "256GB"]
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
       },
       "whySpecs": "Professional mirrorless camera. Dual slots for CFexpress Type A and SD UHS-II.",
       "recommendedBrands": [
@@ -6085,8 +6147,8 @@
         "canon-eos-r5",
         "nikon-z9"
       ]
-      },
-      {
+    },
+    {
       "id": "nikon-d850",
       "name": "Nikon D850",
       "category": "Cameras",
@@ -6099,7 +6161,10 @@
         "type": "SD UHS-II / XQD",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": ["128GB", "256GB"]
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
       },
       "whySpecs": "Professional DSLR. Dual slots support both SD UHS-II and legacy XQD cards.",
       "recommendedBrands": [
@@ -6111,8 +6176,8 @@
         "nikon-z9",
         "canon-eos-r5"
       ]
-      },
-      {
+    },
+    {
       "id": "anker-powerexpand-2in1",
       "name": "Anker PowerExpand+ 2-in-1 Reader",
       "category": "Accessories",
@@ -6128,6 +6193,6 @@
         "macbook-air",
         "ipad-air"
       ]
-      }
-      ]
-      }
+    }
+  ]
+}
