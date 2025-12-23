@@ -1,0 +1,767 @@
+{
+  "sdcards": [
+    {
+      "id": "sandisk-extreme-microsd",
+      "name": "SanDisk Extreme microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "最大 190 MB/s",
+        "writeSpeed": "最大 130 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [32, 64, 128, 256, 512, 1024, 1500],
+      "priceSymbol": "$$",
+      "priceTier": "標準 (ミドルレンジ)",
+      "imageUrl": "/img/cards/sandisk-extreme-microsd.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=SanDisk+Extreme+microSD+V30&tag=sd-cc-22",
+      "pros": "定番中の定番。高速で信頼性が高く、A2規格に対応。日本国内でもどこでも入手しやすい。",
+      "cons": "32GB/64GBモデルは書き込み速度が少し遅い。",
+      "tier": "recommended"
+    },
+    {
+      "id": "samsung-evo-select-microsd",
+      "name": "Samsung EVO Select / Plus (Blue)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "最大 130 MB/s",
+        "writeSpeed": "最大 60 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256, 512],
+      "priceSymbol": "$",
+      "priceTier": "高コスパ",
+      "imageUrl": "/img/cards/samsung-evo-select-microsd.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Samsung+EVO+Plus+microSD&tag=sd-cc-22",
+      "pros": "圧倒的なコストパフォーマンス。安心の10年保証付き。",
+      "cons": "書き込み速度はSanDisk Extremeより劣る。",
+      "tier": "budget"
+    },
+    {
+      "id": "lexar-professional-633x",
+      "name": "Lexar Professional 633x (Blue Series)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "最大 100 MB/s",
+        "writeSpeed": "最大 45 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [32, 64, 128, 256, 512],
+      "priceSymbol": "$",
+      "priceTier": "高コスパ",
+      "imageUrl": "/img/cards/lexar-professional-633x.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Lexar+633x+microSD&tag=sd-cc-22",
+      "pros": "1080pや基本的な4K撮影に使える信頼性の高い安価なオプション。",
+      "cons": "SilverやGoldシリーズに比べて大幅に遅い。",
+      "tier": "budget"
+    },
+    {
+      "id": "kingston-canvas-go-plus",
+      "name": "Kingston Canvas Go! Plus",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "最大 170 MB/s",
+        "writeSpeed": "最大 90 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256, 512],
+      "priceSymbol": "$$",
+      "priceTier": "標準 (ミドルレンジ)",
+      "imageUrl": "/img/cards/kingston-canvas-go-plus.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Kingston+Canvas+Go+Plus+microSD&tag=sd-cc-22",
+      "pros": "素晴らしいパフォーマンス。高速カードリーダーが付属していることが多い。",
+      "cons": "実店舗ではSanDiskほど見かけない。",
+      "tier": "recommended"
+    },
+    {
+      "id": "kingston-canvas-go-plus-ultra",
+      "name": "Kingston Canvas Go! Plus (Mapped)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "最大 170 MB/s",
+        "writeSpeed": "最大 90 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256, 512],
+      "priceSymbol": "$$",
+      "priceTier": "標準 (ミドルレンジ)",
+      "imageUrl": "/img/cards/kingston-canvas-go-plus.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Kingston+Canvas+Go+Plus+microSD&tag=sd-cc-22",
+      "pros": "素晴らしいパフォーマンス。高速カードリーダーが付属していることが多い。",
+      "cons": "実店舗ではSanDiskほど見かけない。",
+      "tier": "recommended"
+    },
+    {
+      "id": "kingston-canvas-go",
+      "name": "Kingston Canvas Go! (旧モデル)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "最大 90 MB/s",
+        "writeSpeed": "最大 45 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [32, 64, 128],
+      "priceSymbol": "$",
+      "priceTier": "高コスパ",
+      "imageUrl": "/img/cards/kingston-canvas-go.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Kingston+Canvas+Go+microSD&tag=sd-cc-22",
+      "pros": "安く見つかれば悪くない選択肢。",
+      "cons": "はるかに高速な「Plus」モデルに取って代わられている。",
+      "tier": "budget"
+    },
+    {
+      "id": "lexar-professional-1000x-microsd",
+      "name": "Lexar Professional Gold (1800x)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V60",
+        "appPerformance": "A2",
+        "readSpeed": "最大 280 MB/s",
+        "writeSpeed": "最大 180 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256, 512],
+      "priceSymbol": "$$$",
+      "priceTier": "プレミアム",
+      "imageUrl": "/img/cards/lexar-professional-1000x.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Lexar+Professional+Gold+1800x+microSD&tag=sd-cc-22",
+      "pros": "真のUHS-II速度。ドローン撮影に最適。",
+      "cons": "GBあたりの価格が高い。",
+      "tier": "professional"
+    },
+    {
+      "id": "lexar-professional-silver-microsd",
+      "name": "Lexar Professional Silver (1066x)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "最大 160 MB/s",
+        "writeSpeed": "最大 120 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256, 512],
+      "priceSymbol": "$$",
+      "priceTier": "標準 (ミドルレンジ)",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Lexar+Professional+Silver+1066x+microSD&tag=sd-cc-22",
+      "pros": "V30カードとして非常にコスパが良い。書き込み速度が速い。",
+      "cons": "最大読み出し速度を出すにはLexar製リーダーが必要。",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-ultra-microsd",
+      "name": "SanDisk Ultra microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "C10",
+        "appPerformance": "A1",
+        "readSpeed": "最大 120 MB/s",
+        "writeSpeed": "最大 20 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [32, 64, 128, 256, 512, 1024, 1500],
+      "priceSymbol": "$",
+      "priceTier": "高コスパ",
+      "imageUrl": "/img/cards/sandisk-extreme-microsd.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=SanDisk+Ultra+microSD&tag=sd-cc-22",
+      "pros": "安価で信頼性が高く、大容量モデルも豊富。",
+      "cons": "4Kビデオ撮影には遅すぎる。",
+      "tier": "budget"
+    },
+    {
+      "id": "kingston-canvas-select",
+      "name": "Kingston Canvas Select Plus",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V10",
+        "appPerformance": "A1",
+        "readSpeed": "最大 100 MB/s",
+        "writeSpeed": "最大 85 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [32, 64, 128, 256, 512],
+      "priceSymbol": "$",
+      "priceTier": "高コスパ",
+      "imageUrl": "/img/cards/kingston-canvas-select-microsd.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Kingston+Canvas+Select+Plus+microSD&tag=sd-cc-22",
+      "pros": "超低価格で永久保証付き。",
+      "cons": "V30非対応。4K撮影は避けるべき。",
+      "tier": "budget"
+    },
+    {
+      "id": "sandisk-max-endurance",
+      "name": "SanDisk MAX ENDURANCE",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "U3",
+        "readSpeed": "最大 100 MB/s",
+        "writeSpeed": "最大 40 MB/s",
+        "endurance": "最大 120,000 時間"
+      },
+      "availableCapacities": [32, 64, 128, 256],
+      "priceSymbol": "$$$",
+      "priceTier": "特殊用途 (高耐久)",
+      "imageUrl": "/img/cards/sandisk-max-endurance-microsd.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=SanDisk+MAX+Endurance+microSD&tag=sd-cc-22",
+      "pros": "24時間365日の常時録画に耐える極めて高い耐久性。",
+      "cons": "書き込み速度は遅め。",
+      "tier": "specialty"
+    },
+    {
+      "id": "samsung-pro-endurance",
+      "name": "Samsung PRO Endurance",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "U3",
+        "readSpeed": "最大 100 MB/s",
+        "writeSpeed": "最大 40 MB/s",
+        "endurance": "最大 140,000 時間"
+      },
+      "availableCapacities": [32, 64, 128, 256],
+      "priceSymbol": "$$",
+      "priceTier": "特殊用途 (高耐久)",
+      "imageUrl": "/img/cards/samsung-pro-endurance-microsd.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Samsung+PRO+Endurance+microSD&tag=sd-cc-22",
+      "pros": "ドライブレコーダー市場のリーダー。非常に信頼性が高い。",
+      "cons": "速度よりも寿命を重視した設計。",
+      "tier": "specialty"
+    },
+    {
+      "id": "lexar-play-microsd",
+      "name": "Lexar Play microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "最大 150 MB/s",
+        "writeSpeed": "最大 90 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [128, 256, 512, 1024],
+      "priceSymbol": "$",
+      "priceTier": "高コスパ",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Lexar+Play+microSD&tag=sd-cc-22",
+      "pros": "1TBの大容量が安価。Switchに最適。",
+      "cons": "4Kビデオ撮影には信頼性が低い。",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-rog-ally-microsd",
+      "name": "SanDisk microSD for ROG Ally",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "最大 190 MB/s",
+        "writeSpeed": "最大 130 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [512, 1024],
+      "priceSymbol": "$$$",
+      "priceTier": "プレミアム",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=SanDisk+ROG+microSD&tag=sd-cc-22",
+      "pros": "公式ライセンス品。デザインがクール。",
+      "cons": "通常のExtremeより割高。",
+      "tier": "recommended"
+    },
+    {
+      "id": "adata-premier-microsd",
+      "name": "ADATA Premier microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V10",
+        "appPerformance": "A1",
+        "readSpeed": "最大 100 MB/s",
+        "writeSpeed": "最大 25 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [32, 64, 128],
+      "priceSymbol": "$",
+      "priceTier": "高コスパ",
+      "imageUrl": "/img/cards/adata-premier-microsd.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=ADATA+Premier+microSD&tag=sd-cc-22",
+      "pros": "極めて安い。",
+      "cons": "書き込みが非常に遅い。",
+      "tier": "budget"
+    },
+    {
+      "id": "transcend-standard-microsd",
+      "name": "Transcend 300S microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "最大 100 MB/s",
+        "writeSpeed": "最大 40 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [32, 64, 128],
+      "priceSymbol": "$",
+      "priceTier": "高コスパ",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Transcend+300S+microSD&tag=sd-cc-22",
+      "pros": "堅実な低価格の選択肢。",
+      "cons": "ランダムアクセス性能は低め。",
+      "tier": "budget"
+    },
+    {
+      "id": "adata-premier-pro-microsd",
+      "name": "ADATA Premier Pro microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "最大 100 MB/s",
+        "writeSpeed": "最大 80 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256, 512],
+      "priceSymbol": "$",
+      "priceTier": "標準 (ミドルレンジ)",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=ADATA+Premier+Pro+microSD&tag=sd-cc-22",
+      "pros": "価格に対してスペックが良い。",
+      "cons": "SanDiskに比べるとブランド知名度が低い。",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-extreme-pro-microsd-v60",
+      "name": "SanDisk Extreme PRO microSD UHS-II",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V60",
+        "appPerformance": "A2",
+        "readSpeed": "最大 280 MB/s",
+        "writeSpeed": "最大 100 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256],
+      "priceSymbol": "$$$",
+      "priceTier": "プレミアム",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=SanDisk+Extreme+PRO+microSD+UHS-II&tag=sd-cc-22",
+      "pros": "ドローン向けの真のUHS-II速度。",
+      "cons": "非常に高価。",
+      "tier": "professional"
+    },
+    {
+      "id": "sandisk-extreme-pro-cfexpress",
+      "name": "SanDisk Extreme PRO CFexpress Type B",
+      "type": "CFexpress Type B",
+      "specs": {
+        "uhs": "なし",
+        "speedClass": "VPG-400",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 1700 MB/s",
+        "writeSpeed": "最大 1400 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256, 512],
+      "priceSymbol": "$$$",
+      "priceTier": "プレミアム",
+      "imageUrl": "/img/cards/sandisk-extreme-pro-cfast-2.0.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=SanDisk+Extreme+PRO+CFexpress+Type+B&tag=sd-cc-22",
+      "pros": "Canon R5やNikon Z8の標準カード。",
+      "cons": "発熱しやすい。",
+      "tier": "professional"
+    },
+    {
+      "id": "lexar-professional-1000x-v60",
+      "name": "Lexar Professional Gold (1800x) V60",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V60",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 280 MB/s",
+        "writeSpeed": "最大 205 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256, 512],
+      "priceSymbol": "$$",
+      "priceTier": "標準 (ミドルレンジ)",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Lexar+Professional+Gold+UHS-II+SD&tag=sd-cc-22",
+      "pros": "V60の価格でV90に近い速度。",
+      "cons": "耐久性は平均的。",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-extreme-pro-sd-uhs2",
+      "name": "SanDisk Extreme PRO SD UHS-II",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V90",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 300 MB/s",
+        "writeSpeed": "最大 260 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [32, 64, 128, 256, 512],
+      "priceSymbol": "$$$",
+      "priceTier": "プレミアム",
+      "imageUrl": "/img/cards/sandisk-extreme-pro-sd-uhs-ii.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=SanDisk+Extreme+PRO+SD+UHS-II&tag=sd-cc-22",
+      "pros": "ウェディングやシネマ撮影のプロ標準。",
+      "cons": "GBあたりの単価が高い。",
+      "tier": "professional"
+    },
+    {
+      "id": "lexar-professional-silver-sd",
+      "name": "Lexar Professional Silver SD",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 160 MB/s",
+        "writeSpeed": "最大 120 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256],
+      "priceSymbol": "$",
+      "priceTier": "標準 (ミドルレンジ)",
+      "imageUrl": "/img/cards/lexar-professional-silver-sd-uhs-ii.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Lexar+Professional+Silver+SD&tag=sd-cc-22",
+      "pros": "V30カードとして非常にコスパが良い。",
+      "cons": "バッファが埋まると速度が低下する。",
+      "tier": "recommended"
+    },
+    {
+      "id": "kingston-canvas-go-pro-sd",
+      "name": "Kingston Canvas Go! Plus SD (Mapped)",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 170 MB/s",
+        "writeSpeed": "最大 90 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256, 512],
+      "priceSymbol": "$$",
+      "priceTier": "標準 (ミドルレンジ)",
+      "imageUrl": "/img/cards/kingston-canvas-go-pro-sd.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Kingston+Canvas+Go+Plus+SD&tag=sd-cc-22",
+      "pros": "優秀なUHS-I速度。",
+      "cons": "Reactシリーズとの名前の区別が紛らわしい。",
+      "tier": "recommended"
+    },
+    {
+      "id": "nikon-xqd-memory-card",
+      "name": "Nikon XQD Memory Card",
+      "type": "XQD",
+      "specs": {
+        "uhs": "なし",
+        "speedClass": "EB-Stream",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 440 MB/s",
+        "writeSpeed": "最大 400 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 120],
+      "priceSymbol": "$$$",
+      "priceTier": "プレミアム",
+      "imageUrl": "/img/cards/nikon-xqd-memory-card.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Nikon+XQD+Card&tag=sd-cc-22",
+      "pros": "D850/Z7向けの公式ソリューション。",
+      "cons": "レガシー規格である。",
+      "tier": "professional"
+    },
+    {
+      "id": "sandisk-extreme-pro-cfast-2.0",
+      "name": "SanDisk Extreme PRO CFast 2.0",
+      "type": "CFast",
+      "specs": {
+        "uhs": "なし",
+        "speedClass": "VPG-130",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 525 MB/s",
+        "writeSpeed": "最大 450 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256, 512],
+      "priceSymbol": "$$$",
+      "priceTier": "プレミアム",
+      "imageUrl": "/img/cards/sandisk-extreme-pro-cfast-2.0.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=SanDisk+Extreme+PRO+CFast+2.0&tag=sd-cc-22",
+      "pros": "シネマグレードの信頼性。",
+      "cons": "GBあたりの価格が高い。",
+      "tier": "professional"
+    },
+    {
+      "id": "sony-tough-g-v90",
+      "name": "Sony TOUGH G-Series SD",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V90",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 300 MB/s",
+        "writeSpeed": "最大 299 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [32, 64, 128],
+      "priceSymbol": "$$$",
+      "priceTier": "プレミアム",
+      "imageUrl": "/img/cards/sony-tough-g-v90.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Sony+TOUGH+G+V90+SD&tag=sd-cc-22",
+      "pros": "完全密閉のモノリシック構造で壊れにくい。書き込み速度最速クラス。",
+      "cons": "極めて高価。",
+      "tier": "professional"
+    },
+    {
+      "id": "kingston-canvas-react-sd",
+      "name": "Kingston Canvas React Plus SD",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V90",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 300 MB/s",
+        "writeSpeed": "最大 260 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [32, 64, 128, 256],
+      "priceSymbol": "$$",
+      "priceTier": "標準 (ミドルレンジ)",
+      "imageUrl": "/img/cards/kingston-canvas-react-sd.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Kingston+Canvas+React+Plus+SD&tag=sd-cc-22",
+      "pros": "最もコスパの良いV90カード。",
+      "cons": "実店舗では見つけにくい。",
+      "tier": "professional"
+    },
+    {
+      "id": "sandisk-extreme-pro-cfexpress-type-a",
+      "name": "SanDisk Extreme PRO CFexpress Type A",
+      "type": "CFexpress Type A",
+      "specs": {
+        "uhs": "なし",
+        "speedClass": "VPG-400",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 800 MB/s",
+        "writeSpeed": "最大 700 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [80, 160, 320],
+      "priceSymbol": "$$$",
+      "priceTier": "プレミアム",
+      "imageUrl": "/img/cards/sandisk-extreme-pro-cfast-2.0.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=SanDisk+Extreme+PRO+CFexpress+Type+A&tag=sd-cc-22",
+      "pros": "Sony機のS&Qモードに必須。",
+      "cons": "極めて高価。",
+      "tier": "professional"
+    },
+    {
+      "id": "lexar-professional-1000x-sd",
+      "name": "Lexar Professional 1667x Silver SD",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V60",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 250 MB/s",
+        "writeSpeed": "最大 120 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256],
+      "priceSymbol": "$$",
+      "priceTier": "標準 (ミドルレンジ)",
+      "imageUrl": "/img/cards/lexar-professional-silver-sd-uhs-ii.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Lexar+Professional+1667x+SD&tag=sd-cc-22",
+      "pros": "UHS-IIへの最も安価なエントリー。",
+      "cons": "V90よりは遅い。",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-extreme-sd-uhs1",
+      "name": "SanDisk Extreme SD UHS-I",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 180 MB/s",
+        "writeSpeed": "最大 90 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [32, 64, 128, 256, 512],
+      "priceSymbol": "$$",
+      "priceTier": "標準 (ミドルレンジ)",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=SanDisk+Extreme+SD+UHS-I+V30&tag=sd-cc-22",
+      "pros": "4Kビデオのゴールドスタンダード（基準）。",
+      "cons": "バッファクリアは遅め。",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-ultra-sd-uhs1",
+      "name": "SanDisk Ultra SD UHS-I",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "C10",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 120 MB/s",
+        "writeSpeed": "最大 40 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [32, 64, 128, 256, 512],
+      "priceSymbol": "$",
+      "priceTier": "高コスパ",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=SanDisk+Ultra+SD+UHS-I&tag=sd-cc-22",
+      "pros": "安価で写真用途には信頼できる。",
+      "cons": "4Kビデオには向かない。",
+      "tier": "budget"
+    },
+    {
+      "id": "lexar-professional-633x-sd",
+      "name": "Lexar Professional 633x SD (Blue Series)",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 95 MB/s",
+        "writeSpeed": "最大 45 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [32, 64, 128, 256, 512],
+      "priceSymbol": "$",
+      "priceTier": "高コスパ",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Lexar+Professional+633x+SD&tag=sd-cc-22",
+      "pros": "良い低価格オプション。",
+      "cons": "SilverやGoldシリーズより遅い。",
+      "tier": "budget"
+    },
+    {
+      "id": "sandisk-extreme-pro-sd-uhs1",
+      "name": "SanDisk Extreme PRO SD UHS-I",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "N/A",
+        "readSpeed": "最大 200 MB/s",
+        "writeSpeed": "最大 140 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256, 512, 1024],
+      "priceSymbol": "$$$",
+      "priceTier": "プレミアム",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=SanDisk+Extreme+PRO+SD+UHS-I&tag=sd-cc-22",
+      "pros": "入手可能な中で最速のUHS-Iカード。",
+      "cons": "価格が高い。",
+      "tier": "recommended"
+    },
+    {
+      "id": "kingston-high-endurance",
+      "name": "Kingston High Endurance microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V10",
+        "appPerformance": "A1",
+        "readSpeed": "最大 95 MB/s",
+        "writeSpeed": "最大 45 MB/s",
+        "endurance": "20,000 時間"
+      },
+      "availableCapacities": [32, 64, 128],
+      "priceSymbol": "$",
+      "priceTier": "高コスパ",
+      "imageUrl": "/img/cards/kingston-high-endurance-microsd.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Kingston+High+Endurance+microSD&tag=sd-cc-22",
+      "pros": "手軽な監視カメラ用途に良い安価なオプション。",
+      "cons": "耐久性評価はSamsungやSanDiskより低い。",
+      "tier": "specialty"
+    },
+    {
+      "id": "amazon-basics-microsd",
+      "name": "Amazon Basics Micro SDXC",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "U3",
+        "appPerformance": "A2",
+        "readSpeed": "最大 100 MB/s",
+        "writeSpeed": "最大 90 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [32, 64, 128, 256, 512],
+      "priceSymbol": "$",
+      "priceTier": "高コスパ",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Amazon+Basics+Micro+SDXC&tag=sd-cc-22",
+      "pros": "予算重視のバイヤーに最適。日常使用や基本的な4Kに信頼できる性能。アプリ向けのA2対応。",
+      "cons": "U3止まり（V30表記なしの場合あり）、プレミアムカードより持続書き込みが遅い。",
+      "tier": "budget"
+    },
+    {
+      "id": "samsung-pro-plus-microsd",
+      "name": "Samsung PRO Plus microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "最大 160 MB/s",
+        "writeSpeed": "最大 120 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256, 512],
+      "priceSymbol": "$$",
+      "priceTier": "標準 (ミドルレンジ)",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Samsung+PRO+Plus+microSD&tag=sd-cc-22",
+      "pros": "4Kビデオに優れたパフォーマンス。熱管理が優秀。耐久性が高い。",
+      "cons": "Samsung EVO Selectより高価。",
+      "tier": "recommended"
+    },
+    {
+      "id": "kingston-canvas-react-plus-microsd",
+      "name": "Kingston Canvas React Plus microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V90",
+        "appPerformance": "A2",
+        "readSpeed": "最大 320 MB/s",
+        "writeSpeed": "最大 260 MB/s",
+        "endurance": "標準"
+      },
+      "availableCapacities": [64, 128, 256, 512],
+      "priceSymbol": "$$$",
+      "priceTier": "プレミアム",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Kingston+Canvas+React+Plus+microSD&tag=sd-cc-22",
+      "pros": "真のUHS-II速度。8Kビデオやプロ用ドローンに最適。書き込みが非常に高速。",
+      "cons": "GBあたりのコストが高い。カジュアル用途にはオーバースペック。",
+      "tier": "professional"
+    }
+  ]
+}

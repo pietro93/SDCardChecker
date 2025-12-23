@@ -6,10 +6,12 @@
   "scripts": {
     "build:css": "tailwindcss -i ./src/css/input.css -o ./src/css/tailwind.css",
     "build:site": "node scripts/generator/build.js",
+    "build:ja": "node scripts/generator/build-ja.js",
+    "build:all": "npm run clean:dist && npm run build:css && npm run build:site && npm run build:ja",
     "clean:dist": "rimraf dist",
     "prebuild": "node scripts/build-amazon-data.js",
     "build": "npm run clean:dist && npm run build:css && npm run build:site && npx http-server dist",
-    "build:prod": "npm run clean:dist && npm run build:css && npm run build:site",
+    "build:prod": "npm run build:all",
     "dev": "npm run build:site && concurrently \"tailwindcss -i ./src/css/input.css -o ./src/css/tailwind.css --watch\" \"npm run build:site\" \"http-server dist\"",
     "start": "http-server dist"
   },

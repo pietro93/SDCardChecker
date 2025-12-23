@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{DEVICE_TITLE}}</title>
+    <meta name="description" content="{{DEVICE_DESCRIPTION}}">
+    <link rel="canonical" href="{{DEVICE_URL}}">
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{OG_TITLE}}">
+    <meta property="og:description" content="{{DEVICE_DESCRIPTION}}">
+    <meta property="og:image" content="{{BASE_URL}}{{DEVICE_IMAGE}}">
+    <meta property="og:url" content="{{DEVICE_URL}}">
+    <meta property="og:site_name" content="SD Card Checker">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{TWITTER_TITLE}}">
+    <meta name="twitter:description" content="{{DEVICE_DESCRIPTION}}">
+    <meta name="twitter:image" content="{{BASE_URL}}{{DEVICE_IMAGE}}">
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{SCHEMA_HEADLINE}}",
+  "description": "{{DEVICE_DESCRIPTION}}",
+  "image": "{{BASE_URL}}{{DEVICE_IMAGE}}",
+  "url": "{{DEVICE_URL}}",
+  "articleBody": "{{DEVICE_NAME}}に対応したSDカードの専門家による推奨情報です。詳細な仕様とトップブランドの比較をご覧ください。",
+  "author": {
+  "@type": "Organization",
+  "name": "SD Card Checker"
+  }
+  }
+  </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+   {{FAQ_SCHEMA}}
+   </script>
+
+    <!-- Product Schema -->
+    <script type="application/ld+json">
+    {{PRODUCT_SCHEMA}}
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {{BREADCRUMB_SCHEMA}}
+    </script>
+
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/assets/css/modern.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    {{GROW_SCRIPT}}
+    </head>
+
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+    {{HEADER}}
+
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <nav class="text-sm text-slate-600 flex items-center gap-2">
+                <a href="/ja/" class="text-blue-600 hover:underline">ホーム</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="/ja/categories/{{CATEGORY_SLUG}}/" class="text-blue-600 hover:underline inline-flex items-center gap-1">
+                    <img 
+                        src="/img/brand/icon-{{CATEGORY_ICON}}.webp" 
+                        alt="{{CATEGORY_NAME}} アイコン" 
+                        width="16" 
+                        height="16" 
+                        loading="eager"
+                        decoding="async"
+                        class="device-breadcrumb-icon"
+                    >
+                    {{CATEGORY_NAME}}
+                </a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-slate-900">{{DEVICE_NAME}}</span>
+            </nav>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+        <!-- Main Content -->
+        <main class="flex-1">
+            <!-- Hero Image with Overlay Title -->
+             <div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative">
+                 <img src="{{DEVICE_IMAGE}}" alt="{{DEVICE_NAME}} SDカード要件" class="w-full object-cover hero-image"
+                     width="1200" height="350" loading="lazy" />
+                <div class="hero-overlay">
+                    <h1 class="hero-title" style="color: #ffffff;">
+                        {{DEVICE_NAME_SHORT}}向けの最高のSDカード
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Expert Recommendations Section -->
+            <div class="mb-12">
+                <p class="text-xl text-slate-600">{{DEVICE_NAME}}の仕様に基づく専門家による推奨情報</p>
+            </div>
+
+            <!-- Answer Box - Quick Result -->
+            <div id="recommendations"
+                class="bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-2xl p-8 mb-12 shadow-sm scroll-mt-20">
+                <p class="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">推奨SDカード</p>
+                <p class="answer-text text-4xl font-bold text-blue-600 mb-4">{{ANSWER_TEXT}}</p>
+                <p class="answer-explanation text-lg text-slate-700 leading-relaxed">{{ANSWER_EXPLANATION}}</p>
+            </div>
+
+            <!-- Requirements Box -->
+            {{REQUIREMENTS_BOX}}
+
+            <!-- Specs Grid -->
+            <section id="specifications" class="mb-16 scroll-mt-20">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">詳細な仕様</h2>
+                <div class="specs-grid grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    {{SPECS_HTML}}
+                </div>
+            </section>
+
+            <!-- Recommended Brands Section -->
+            <section id="brands" class="mb-16 scroll-mt-20">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">トップSDカード推奨情報</h2>
+                <p class="text-xs text-slate-500 mb-4 opacity-70">このウェブサイトにはアフィリエイトリンクが含まれています。当社のリンクを通じて購入された場合、追加料金なしで小額のコミッションを獲得させていただく場合があります。</p>
+                <div class="overflow-x-auto brands-table-container">
+                    <table class="brands-table w-full">
+                        <thead>
+                            <tr>
+                                <th class="text-left py-4 px-4 font-semibold">SDカード</th>
+                                <th class="text-left py-4 px-4 font-semibold">速度クラス</th>
+                                <th class="text-left py-4 px-4 font-semibold">書き込み速度</th>
+                                <th class="text-left py-4 px-4 font-semibold">長所</th>
+                                <th class="text-left py-4 px-4 font-semibold">価格</th>
+                            </tr>
+                        </thead>
+                        <tbody class="brands-table-body">
+                            {{BRANDS_TABLE_ROWS}}
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Live Amazon Product Badges Section -->
+            {{AMAZON_BADGES_SECTION}}
+
+            <!-- FAQ Section -->
+            <section id="faq" class="mb-16 scroll-mt-20">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">よくある質問</h2>
+                <div class="faq-section space-y-3">
+                    {{FAQ_HTML}}
+                </div>
+            </section>
+
+            <!-- Related Devices -->
+            {{RELATED_DEVICES_SECTION}}
+        </main>
+
+        {{SIDEBAR}}
+    </div>
+
+    {{FOOTER}}
+
+    <script src="/assets/js/search.js"></script>
+
+    <style>
+        /* Hero Image with Overlay Title */
+        .hero-image-container {
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+        }
+
+        .hero-title {
+            @apply text-3xl md:text-4xl font-bold text-center px-4;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.5);
+            filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+        }
+
+        .specs-grid .spec-item {
+            @apply bg-white rounded-lg p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow;
+        }
+
+        .specs-grid .spec-label {
+            @apply text-xs font-bold text-slate-500 uppercase tracking-wide mb-2;
+        }
+
+        .specs-grid .spec-value {
+            @apply text-xl font-bold text-slate-900;
+        }
+
+        .brands-table thead {
+            @apply bg-slate-900;
+        }
+
+        .brands-table thead tr {
+            @apply border-b border-slate-200;
+        }
+
+        .brands-table thead th {
+            @apply text-white;
+        }
+
+        .brands-table tbody tr {
+            @apply border-b border-slate-100 bg-white;
+        }
+
+        .brands-table tbody tr:hover {
+            @apply bg-slate-50;
+        }
+
+        .brands-table td {
+            @apply py-4 px-4;
+            vertical-align: middle;
+        }
+
+        .table-card-cell {
+            text-align: center;
+        }
+
+        .table-card-link-wrapper {
+            @apply block no-underline;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .table-card-image {
+            @apply mb-3 mx-auto;
+            width: 115px;
+            height: 115px;
+        }
+
+        .table-card-image img {
+            @apply w-full h-full object-contain;
+        }
+
+        .table-card-name {
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .table-cta-button {
+            @apply bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-lg transition-all text-center text-base shadow-md hover:shadow-lg hover:scale-105;
+        }
+
+        .price-badge {
+        display: inline-block;
+        padding: 0.15rem 0.3rem;
+        border-radius: 0.375rem;
+        font-size: 0.95rem;
+        font-weight: 900;
+        text-align: center;
+        }
+
+    .price-badge.price-budget {
+          color: #16a34a;
+        }
+
+        .price-badge.price-mid-range {
+      color: #15803d;
+        }
+
+        .price-badge.price-premium {
+      color: #166534;
+        }
+
+        .price-column {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100%;
+            padding-top: 0.5rem;
+        }
+
+        .btn-check-price {
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         gap: 0.125rem;
+         padding: 0.5rem 1rem;
+         font-size: 0.875rem;
+         border-radius: 0.375rem;
+         text-decoration: none;
+         white-space: nowrap;
+         font-weight: 600;
+        }
+
+        .btn-check-price.btn-primary {
+         background-color: #e67e22;
+         color: white;
+        }
+
+        .btn-check-price.btn-primary:hover {
+         background-color: #d35400;
+        }
+
+        .btn-check-amazon {
+         background-color: #FF9900;
+         color: white;
+         padding: 0.75rem 1.5rem;
+         border-radius: 0.5rem;
+         text-decoration: none;
+         font-weight: 700;
+         display: inline-flex;
+         align-items: center;
+         gap: 0.5rem;
+         transition: background-color 0.3s;
+        }
+
+        .btn-check-amazon:hover {
+         background-color: #e68a00;
+        }
+
+        .faq-item {
+            @apply bg-white rounded-lg p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow;
+        }
+
+        .faq-item summary {
+            @apply font-semibold text-slate-900 cursor-pointer;
+        }
+
+        .faq-item[open] summary {
+            @apply text-blue-600;
+        }
+
+        .faq-item p {
+            @apply mt-3 text-slate-700 leading-relaxed;
+        }
+
+    </style>
+</body>
+
+</html>

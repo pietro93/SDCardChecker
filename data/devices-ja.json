@@ -1,18 +1,23 @@
 {
+  "_metadata": {
+    "language": "Japanese (日本語)",
+    "translationDate": "December 23, 2025",
+    "status": "Phase 1 - Dataset Translation (45/140 devices completed - bulk additions in progress)"
+  },
   "devices": [
     {
       "id": "gopro-hero-13",
       "name": "GoPro Hero 13 Black",
-      "category": "Action Cameras",
+      "category": "アクションカメラ",
       "slug": "gopro-hero-13",
       "searchTerms": [
-        "gopro hero 13",
-        "gopro 13",
-        "hero 13",
+        "ゴープロ ヒーロー 13",
+        "ゴープロ 13",
+        "gopro 13 sdカード",
         "gopro black"
       ],
       "sdCard": {
-        "type": "microSD UHS-I (UHS-II Compatible)",
+        "type": "microSD UHS-I (UHS-II 互換)",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
@@ -22,7 +27,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Shoots 5.3K at high frame rates. V30 ensures 30MB/s sustained write speed needed to prevent dropped frames or corrupted files. GoPro's 5.3K bitrate (~60-80 Mbps) requires reliable, fast cards for stable recording.",
+      "whySpecs": "5.3Kの高フレームレート撮影に対応しています。V30規格は、コマ落ちやファイル破損を防ぐために必要な30MB/秒の持続書き込み速度を保証します。GoProの5.3Kビットレート（約60-80 Mbps）には、安定した高速カードが不可欠です。",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -39,16 +44,16 @@
       ],
       "faq": [
         {
-          "q": "Can I use a regular SD card with adapter?",
-          "a": "<b>No, the GoPro Hero 13 Black only accepts microSD cards</b>. Full-size SD cards will not work even with an adapter. The device specifically requires <b>microSD format cards</b> for compatibility."
+          "q": "アダプターを使って通常のSDカードを使用できますか？",
+          "a": "<b>いいえ、GoPro Hero 13 BlackはmicroSDカードのみ対応しています。</b> フルサイズのSDカードはアダプターを使用しても機能しません。このデバイスは互換性のために<b>microSDフォーマットのカード</b>を明確に要求します。"
         },
         {
-          "q": "What's the fastest card I should get?",
-          "a": "<b>V30 speed class is sufficient for standard GoPro Hero 13 recording</b>. V60 or faster cards are useful only for professional multi-camera workflows, simultaneous backup recording, or future-proofing for newer, more demanding cameras."
+          "q": "購入すべき最速のカードは何ですか？",
+          "a": "<b>標準的なGoPro Hero 13の記録にはV30スピードクラスで十分です。</b> V60以上のカードは、プロ仕様のマルチカメラワークフローや同時バックアップ、あるいは将来のより高性能なカメラへの流用を考える場合にのみ有用です。"
         },
         {
-          "q": "How often should I replace my SD card?",
-          "a": "<b>Quality V30 microSD cards typically last 3-5 years</b> with regular use. <b>Replace your card immediately if you experience error messages, file corruption, or refused write operations</b> to prevent loss of critical footage."
+          "q": "SDカードはどのくらいの頻度で交換すべきですか？",
+          "a": "<b>高品質なV30 microSDカードは、通常の使用で3〜5年持ちます。</b> 重要な映像の消失を防ぐため、<b>エラーメッセージ、ファイルの破損、または書き込み拒否が発生した場合は、直ちにカードを交換してください。</b>"
         }
       ],
       "relatedDevices": [
@@ -57,20 +62,20 @@
         "gopro-hero-11-black",
         "dji-mini-4-pro"
       ],
-      "notes": "Same specs as Hero 12. Official GoPro tests show V30 cards optimal for 5.3K 60fps stability."
+      "notes": "Hero 12と同じ仕様です。GoPro公式テストでは、5.3K 60fpsの安定性にはV30カードが最適とされています。"
     },
     {
       "id": "gopro-hero-12",
       "name": "GoPro Hero 12 Black",
-      "category": "Action Cameras",
+      "category": "アクションカメラ",
       "slug": "gopro-hero-12",
       "searchTerms": [
-        "gopro hero 12",
+        "ゴープロ ヒーロー 12",
         "gopro 12",
-        "hero 12"
+        "ヒーロー 12"
       ],
       "sdCard": {
-        "type": "microSD UHS-I (UHS-II Compatible)",
+        "type": "microSD UHS-I (UHS-II 互換)",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
@@ -79,7 +84,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Shoots 5.3K video at various frame rates. V30 cards ensure 30MB/s sustained write speed. Critical for preventing dropped frames during high bitrate recording.",
+      "whySpecs": "様々なフレームレートで5.3Kビデオを撮影します。V30カードは30MB/秒の持続書き込み速度を確保します。これは高ビットレート録画時のコマ落ちを防ぐために非常に重要です。",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -93,12 +98,12 @@
       ],
       "faq": [
         {
-          "q": "Can I record 5K with V20 cards?",
-          "a": "<b>Recording 5.3K video with V20 cards is not recommended</b>. While V20 cards may technically record, they only guarantee 20MB/s write speed, which is insufficient for stable 5.3K recording. <b>V30 is the safe minimum speed class</b> for this device."
+          "q": "V20カードで5K録画できますか？",
+          "a": "<b>V20カードでの5.3Kビデオ録画は推奨されません。</b> V20カードでも録画できる場合がありますが、保証される書き込み速度は20MB/秒であり、安定した5.3K録画には不十分です。<b>V30がこのデバイスの安全な最低スピードクラスです。</b>"
         },
         {
-          "q": "Can I use older microSD cards?",
-          "a": "<b>Older microSD cards below V30 rating are not reliable for 5.3K recording</b> and risk file corruption. <b>Best to upgrade to a modern V30 or faster microSD card</b> for guaranteed compatibility and stable performance with your Hero 12."
+          "q": "古いmicroSDカードは使えますか？",
+          "a": "<b>V30定格未満の古いmicroSDカードは、5.3K録画には信頼性が低く、ファイル破損のリスクがあります。</b> Hero 12での保証された互換性と安定したパフォーマンスを得るには、<b>最新のV30以上のmicroSDカードにアップグレードするのが最善です。</b>"
         }
       ],
       "relatedDevices": [
@@ -106,32 +111,32 @@
         "gopro-hero-max",
         "gopro-hero-11-black"
       ],
-      "notes": "Official GoPro recommendation: V30 cards. Compatible with all GoPro Hero series."
+      "notes": "GoPro公式推奨：V30カード。すべてのGoPro Heroシリーズと互換性があります。"
     },
     {
       "id": "nintendo-switch",
-      "name": "Nintendo Switch",
-      "category": "Gaming Handhelds",
+      "name": "Nintendo Switch（ニンテンドースイッチ）",
+      "category": "携帯ゲーム機",
       "slug": "nintendo-switch",
       "searchTerms": [
-        "nintendo switch",
-        "switch sd card",
-        "switch memory card",
-        "switch storage"
+        "ニンテンドースイッチ",
+        "スイッチ sdカード",
+        "任天堂スイッチ 容量",
+        "スイッチ マイクロsd"
       ],
       "sdCard": {
         "type": "microSD, microSDHC, microSDXC",
         "minSpeed": "Class 10 / U1",
-        "minWriteSpeed": "Not specified",
+        "minWriteSpeed": "指定なし",
         "recommendedCapacity": [
           "64GB",
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "2TB (theoretical)",
+        "maxCapacity": "2TB (理論値)",
         "testedMaxCapacity": "1TB"
       },
-      "whySpecs": "Nintendo Switch doesn't require high-speed cards for game loading. Any microSD card works, but V30 cards offer best reliability. Cheaper slower cards still work but may have slightly longer load times. Note: While Nintendo theoretically supports up to 2TB, the largest tested and verified working capacity is 1TB.",
+      "whySpecs": "Nintendo Switchは、ゲームの読み込みに超高速カードを必要としません。どのmicroSDカードでも動作しますが、V30カードは信頼性が高いです。安価で低速なカードでも動作しますが、ロード時間が若干長くなる可能性があります。注：任天堂は理論上2TBまでサポートしていますが、テスト済みの最大容量は1TBです。",
       "recommendedBrands": [
         {
           "id": "adata-premier-microsd"
@@ -145,16 +150,16 @@
       ],
       "faq": [
         {
-          "q": "Can I use a phone's microSD card?",
-          "a": "<b>Yes, any microSD card works with Nintendo Switch</b>. However, <b>back up all phone data first</b> before transferring, as formatting the card for Switch will erase all existing data on it."
+          "q": "スマホのmicroSDカードは使えますか？",
+          "a": "<b>はい、Nintendo SwitchではどのmicroSDカードでも使用できます。</b> ただし、Switch用にフォーマットするとカード上の既存データはすべて消去されるため、<b>転送前に必ずスマホのデータをバックアップしてください。</b>"
         },
         {
-          "q": "Does the card need to be formatted?",
-          "a": "<b>Yes, Nintendo Switch will format the microSD card automatically on first use</b>. <b>This process erases all existing data</b>, so ensure you've backed up any files before inserting an existing card into your Switch."
+          "q": "カードのフォーマットは必要ですか？",
+          "a": "<b>はい、Nintendo Switchは初回使用時にmicroSDカードを自動的にフォーマットします。</b> <b>この処理により既存のデータはすべて消去されます</b>ので、既存のカードをSwitchに挿入する前にファイルのバックアップを確認してください。"
         },
         {
-          "q": "What happens if I use a slower card?",
-          "a": "<b>Slower cards may result in slightly longer game load times</b>. Games will still function properly with minimal speed impact. <b>There is no risk of data loss or game corruption</b> from using slower speed-rated cards."
+          "q": "遅いカードを使うとどうなりますか？",
+          "a": "<b>遅いカードを使用すると、ゲームのロード時間がわずかに長くなる可能性があります。</b> ゲーム自体は正常に動作し、速度の影響は最小限です。<b>速度定格の低いカードを使用しても、データ損失やゲーム破損のリスクはありません。</b>"
         }
       ],
       "relatedDevices": [
@@ -162,30 +167,30 @@
         "nintendo-switch-lite",
         "steam-deck"
       ],
-      "notes": "Switch is least demanding of all devices. Any microSD card works. V30 not necessary but provides reliability."
+      "notes": "Switchは最も要求の低いデバイスの一つです。どのmicroSDカードでも動作します。V30は必須ではありませんが、信頼性を提供します。"
     },
     {
       "id": "nintendo-switch-oled",
-      "name": "Nintendo Switch OLED",
-      "category": "Gaming Handhelds",
+      "name": "Nintendo Switch（有機ELモデル）",
+      "category": "携帯ゲーム機",
       "slug": "nintendo-switch-oled",
       "searchTerms": [
-        "nintendo switch oled",
-        "switch oled",
-        "switch oled memory card"
+        "ニンテンドースイッチ 有機EL",
+        "スイッチ OLED",
+        "有機EL スイッチ SDカード"
       ],
       "sdCard": {
         "type": "microSD, microSDHC, microSDXC",
         "minSpeed": "Class 10 / U1",
-        "minWriteSpeed": "Not specified",
+        "minWriteSpeed": "指定なし",
         "recommendedCapacity": [
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "2TB (theoretical)",
+        "maxCapacity": "2TB (理論値)",
         "testedMaxCapacity": "1TB"
       },
-      "whySpecs": "OLED model has identical storage requirements as original Switch. While the device is not demanding, quality microSD cards from reputable brands ensure reliability and longevity. V30 rated cards are recommended for peace of mind. Note: While Nintendo theoretically supports up to 2TB, the largest tested and verified working capacity is 1TB.",
+      "whySpecs": "有機ELモデルのストレージ要件は、従来のSwitchと同じです。要求は高くありませんが、信頼できるブランドの高品質なmicroSDカードを選ぶことで、信頼性と寿命が確保されます。安心のためにV30定格のカードが推奨されます。",
       "recommendedBrands": [
         {
           "id": "adata-premier-microsd"
@@ -199,32 +204,32 @@
       ],
       "faq": [
         {
-          "q": "Can I use the same card from my original Switch?",
-          "a": "<b>Yes, microSD cards are completely compatible between the original Switch and OLED model</b>. The OLED version has identical storage architecture and interface specifications as the original Switch."
+          "q": "従来のSwitchと同じカードを使用できますか？",
+          "a": "<b>はい、microSDカードは従来のSwitchと有機ELモデル間で完全に互換性があります。</b> 有機EL版は、従来のSwitchと同じストレージアーキテクチャとインターフェース仕様を持っています。"
         },
         {
-          "q": "Is there a speed difference between models?",
-          "a": "<b>No, Nintendo Switch OLED uses the same microSD card slot and speed limitations as the original Switch</b>. Both models support the same card speeds and types, with no performance difference between OLED and original Switch storage."
+          "q": "モデル間で速度の違いはありますか？",
+          "a": "<b>いいえ、有機ELモデルも従来のSwitchと同じmicroSDカードスロットと速度制限を使用しています。</b> 両モデルとも同じカード速度とタイプをサポートしており、ストレージ性能に違いはありません。"
         }
       ],
       "relatedDevices": [
         "nintendo-switch",
         "nintendo-switch-lite"
       ],
-      "notes": "OLED model shares identical storage requirements with original Switch."
+      "notes": "有機ELモデルは、従来のSwitchと同一のストレージ要件を共有しています。"
     },
     {
       "id": "dji-mini-4-pro",
       "name": "DJI Mini 4 Pro",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "dji-mini-4-pro",
       "searchTerms": [
         "dji mini 4 pro",
-        "mini 4 pro",
-        "dji mini 4 sd card"
+        "ミニ4プロ",
+        "dji mini 4 sdカード"
       ],
       "sdCard": {
-        "type": "microSD UHS-I (UHS-II Compatible)",
+        "type": "microSD UHS-I (UHS-II 互換)",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
@@ -233,7 +238,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Records 4K video at up to 60fps. V30 ensures smooth recording without dropped frames. 4K bitrate requires sustained 30MB/s write speed minimum.",
+      "whySpecs": "最大60fpsで4Kビデオを録画します。V30はコマ落ちのないスムーズな録画を保証します。4Kビットレートには、最低でも30MB/秒の持続書き込み速度が必要です。",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -247,36 +252,37 @@
       ],
       "faq": [
         {
-          "q": "Can I use V20 cards with DJI Mini 4 Pro?",
-          "a": "<b>Using V20 cards is not recommended for DJI Mini 4 Pro</b>. <b>V30 speed class is the minimum required for stable 4K video recording</b>, especially at higher frame rates, to prevent dropped frames and file corruption during flight."
+          "q": "DJI Mini 4 ProでV20カードを使用できますか？",
+          "a": "<b>DJI Mini 4 ProでのV20カードの使用は推奨されません。</b> 特に高フレームレートにおいて、コマ落ちやファイル破損を防ぐため、<b>安定した4Kビデオ録画にはV30スピードクラスが最低要件です。</b>"
         },
         {
-          "q": "Does the brand matter for drones?",
-          "a": "<b>Yes, brand reliability is critical for drone operations</b>. <b>Use trusted brands like SanDisk, Lexar, or Kingston</b> to avoid mid-flight card failures that could result in lost footage or worse, emergency landings."
+          "q": "ドローンにとってブランドは重要ですか？",
+          "a": "<b>はい、ドローンの運用においてブランドの信頼性は極めて重要です。</b> 映像の消失や、最悪の場合は緊急着陸につながる飛行中のカード障害を避けるため、<b>SanDisk、Lexar、Kingstonなどの信頼できるブランドを使用してください。</b>"
         },
         {
-          "q": "What about older used cards?",
-          "a": "<b>Avoid used or degraded microSD cards for drone operations</b>. Reliability is paramount because <b>a card failure during flight is expensive and dangerous</b>. Always use new or professionally tested cards of known reliability."
+          "q": "古い中古カードについてはどうですか？",
+          "a": "<b>ドローン運用では、中古や劣化したmicroSDカードの使用は避けてください。</b> <b>飛行中のカード障害は高価な損失や危険を招くため</b>、信頼性が第一です。常に新品または専門的にテストされた、信頼性の高いカードを使用してください。"
         }
       ],
       "relatedDevices": [
         "dji-mini-3-pro",
         "dji-air-3s"
       ],
-      "notes": "DJI officially recommends V30 cards for safe recording. Test new cards before flights."
+      "notes": "DJIは安全な録画のためにV30カードを公式に推奨しています。飛行前に新しいカードをテストしてください。"
     },
     {
       "id": "canon-eos-r5",
       "name": "Canon EOS R5",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "canon-eos-r5",
       "searchTerms": [
-        "canon eos r5",
+        "キャノン eos r5",
         "canon r5",
-        "eos r5 sd card"
+        "eos r5 sdカード",
+        "キヤノン r5"
       ],
       "sdCard": {
-        "type": "CFexpress Type B and SD UHS-II",
+        "type": "CFexpress Type B および SD UHS-II",
         "minSpeed": "V60",
         "minWriteSpeed": "60 MB/s",
         "recommendedCapacity": [
@@ -285,7 +291,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Professional 8K camera recording. Requires V60 minimum for 8K RAW video. High bitrate (1.6 Gbps) demands fast, dual card slots for safety.",
+      "whySpecs": "プロ仕様の8Kカメラです。8K RAWビデオには最低でもV60が必要です。高ビットレート（1.6 Gbps）のため、安全のために高速なデュアルカードスロットが必要です。",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-cfexpress"
@@ -296,33 +302,33 @@
       ],
       "faq": [
         {
-          "q": "Do I need two cards for R5?",
-          "a": "<b>Yes, the Canon EOS R5 has dual card slots and Canon recommends using two V60 cards for safety</b>. <b>When shooting 8K video, dual cards provide backup recording and increased reliability</b>, protecting against a single card failure during critical sessions."
+          "q": "R5には2枚のカードが必要ですか？",
+          "a": "<b>はい、Canon EOS R5はデュアルカードスロットを備えており、キヤノンは安全のために2枚のV60カードの使用を推奨しています。</b> <b>8Kビデオ撮影時、デュアルカードはバックアップ記録と信頼性の向上を提供し</b>、重要なセッション中の単一カード障害から保護します。"
         },
         {
-          "q": "Can I shoot 4K with V30 cards?",
-          "a": "<b>Yes, 4K video recording works perfectly fine with V30 speed class cards</b>. However, <b>8K recording requires V60 minimum speed class</b> due to the much higher bitrate and data throughput demands of 8K capture."
+          "q": "V30カードで4K撮影はできますか？",
+          "a": "<b>はい、4Kビデオ録画はV30スピードクラスのカードで問題なく動作します。</b> しかし、<b>8K録画には、はるかに高いビットレートとデータスループットの要求のため、最低でもV60スピードクラスが必要です。</b>"
         },
         {
-          "q": "What's the difference between CFexpress and SD?",
-          "a": "<b>CFexpress Type B cards are significantly faster than SD UHS-II</b> and are <b>best suited for 8K RAW video recording</b>. <b>SD UHS-II V60 cards are more affordable and sufficient for 4K recording</b>, making them the preferred choice for hybrid photo/video work."
+          "q": "CFexpressとSDの違いは何ですか？",
+          "a": "<b>CFexpress Type BカードはSD UHS-IIよりも大幅に高速で</b>、<b>8K RAWビデオ録画に最適です。</b> <b>SD UHS-II V60カードはより手頃で4K録画には十分なため、</b>写真とビデオのハイブリッドワークには適した選択肢です。"
         }
       ],
       "relatedDevices": [
         "canon-eos-r6-mark-ii",
         "canon-eos-r3"
       ],
-      "notes": "Canon EOS R5 is professional 8K camera. Dual V60 cards strongly recommended."
+      "notes": "Canon EOS R5はプロ用8Kカメラです。デュアルV60カードが強く推奨されます。"
     },
     {
       "id": "sony-a6700",
-      "name": "Sony A6700",
-      "category": "Cameras",
+      "name": "Sony α6700 (ILCE-6700)",
+      "category": "カメラ",
       "slug": "sony-a6700",
       "searchTerms": [
-        "sony a6700",
-        "a6700",
-        "sony a6700 sd card"
+        "ソニー a6700",
+        "alpha 6700",
+        "sony a6700 sdカード"
       ],
       "sdCard": {
         "type": "SD UHS-II",
@@ -334,7 +340,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Excellent for 4K 60fps video and high-speed photography. V30 ensures reliable performance. Professional mirrorless users benefit from dual card slots.",
+      "whySpecs": "4K 60fpsビデオや高速撮影に優れています。V30は信頼性の高いパフォーマンスを保証します。プロのミラーレスユーザーはデュアルカードスロットの恩恵を受けます。",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs2"
@@ -348,12 +354,12 @@
       ],
       "faq": [
         {
-          "q": "Is V30 enough for 4K 60fps?",
-          "a": "<b>Yes, V30 speed class provides the necessary 30MB/s minimum write speed for stable 4K 60fps video</b> on the Sony A6700. <b>Professional and advanced users often prefer V60 or faster cards for additional performance headroom and insurance</b> during critical shoots."
+          "q": "V30で4K 60fpsは十分ですか？",
+          "a": "<b>はい、V30スピードクラスは、Sony α6700での安定した4K 60fpsビデオに必要な最低30MB/秒の書き込み速度を提供します。</b> <b>プロや上級ユーザーは、重要な撮影時の予備性能と安心感のために、V60以上のカードを好むことが多いです。</b>"
         },
         {
-          "q": "Do I need two cards?",
-          "a": "<b>The Sony A6700 provides dual SD UHS-II card slots</b>. <b>Using two cards is recommended for extended shooting sessions and automatic backup</b>, allowing continuous recording when one card fills and seamless workflow for professional video production."
+          "q": "2枚のカードが必要ですか？",
+          "a": "<b>Sony α6700はデュアルSD UHS-IIカードスロットを備えています。</b> <b>長時間の撮影セッションや自動バックアップには2枚のカード使用が推奨され</b>、1枚が満杯になったときに継続録画が可能になり、プロのビデオ制作ワークフローがスムーズになります。"
         }
       ],
       "relatedDevices": [
@@ -361,12 +367,824 @@
         "sony-a7-iv",
         "fujifilm-x-s20"
       ],
-      "notes": "Popular choice for content creators. Dual SD UHS-II card slots for professional workflow."
+      "notes": "コンテンツクリエイターに人気の選択肢です。プロのワークフローのためのデュアルSD UHS-IIカードスロットを搭載。"
+    },
+    {
+      "id": "steam-deck",
+      "name": "Steam Deck（スチームデック）",
+      "category": "携帯ゲーム機",
+      "slug": "steam-deck",
+      "searchTerms": [
+        "スチームデック",
+        "steam deck sdカード",
+        "スチームデックス",
+        "デック microSD"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I (UHS-II 非対応)",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A1",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "2TB (理論値)",
+        "testedMaxCapacity": "1TB"
+      },
+      "whySpecs": "Steam DeckはUHS-Iインターフェースを使用し、カードからSteamOSを実行するため、OSの応答性にはA1アプリケーションパフォーマンスが重要です。ゲームにはV30で十分ですが、A1のランダムIOPSは必須です。V30定格かつA1分類の信頼できるブランドを選んでください。",
+      "recommendedBrands": [
+        {
+          "id": "kingston-canvas-go-plus-ultra"
+        },
+        {
+          "id": "adata-premier-pro-microsd"
+        },
+        {
+          "id": "sandisk-ultra-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "高速なV60カードは使えますか？",
+          "a": "<b>はい、V60以上のmicroSDカードもSteam Deckで問題なく動作します。</b> しかし、<b>デバイスのUHS-Iインターフェースが速度を制限するため</b>、Steam Deckでのゲームプレイにおいて、より高速なカードによる実用的な利点はV30カードと比較してありません。"
+        }
+      ],
+      "relatedDevices": [
+        "nintendo-switch",
+        "asus-rog-ally"
+      ],
+      "notes": "Steam DeckはUHS-Iのみ対応です。V30カードで十分です。ゲームライブラリ用には256GB以上を推奨します。"
+    },
+    {
+      "id": "dji-osmo-pocket-3",
+      "name": "DJI Osmo Pocket 3",
+      "category": "アクションカメラ",
+      "slug": "dji-osmo-pocket-3",
+      "searchTerms": [
+        "dji pocket 3 sdカード",
+        "オズモポケット3",
+        "osmo pocket 3 microsd"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I/UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Pocket 3は高品質な4K/120fpsビデオを撮影します。DJIは、データレートを確実に処理するための最低条件としてV30カードを推奨しています。高速なUHS-IIカードはPCへの転送には有利ですが、カメラ内での録画性能にメリットはありません。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "lexar-professional-silver-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "128GBのカードでどれくらい4K撮影できますか？",
+          "a": "128GBのカードで、4K/60fpsの映像を約2時間保存できます。丸一日撮影する場合は、予備のカードを持参するか、256GBの容量を選択することをお勧めします。"
+        }
+      ],
+      "relatedDevices": [
+        "gopro-hero-13",
+        "gopro-hero-11-black",
+        "dji-mini-4-pro"
+      ],
+      "notes": "非常に人気のあるVlog用デバイスです。信頼性の高い高速カードが明確に必要です。"
+    },
+    {
+      "id": "viofo-a229-duo",
+      "name": "VIOFO A229 Duo",
+      "category": "ドライブレコーダー",
+      "slug": "viofo-a229-duo",
+      "searchTerms": [
+        "viofo a229 sdカード",
+        "a229 ドラレコ",
+        "ドライブレコーダー sdカード"
+      ],
+      "sdCard": {
+        "type": "高耐久 (High Endurance) microSD",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "VIOFO A229 Duoは、デュアルチャンネルの2Kビデオをループモードで連続録画します。VIOFOは、高ビットレートと常時書き換えに対応するため、U3/V30の高耐久（High Endurance）カードを公式に推奨しています。非耐久カードは数ヶ月で故障しますが、高耐久カードは何年もの24時間365日の録画に耐えるよう設計されています。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-max-endurance"
+        },
+        {
+          "id": "samsung-pro-endurance"
+        }
+      ],
+      "faq": [
+        {
+          "q": "VIOFO A229にはどの容量を使用すべきですか？",
+          "a": "<b>A229 Duoには128GBから256GBが推奨されます。</b> 128GBカードは、ループ上書きが始まる前に約10〜12時間のデュアルチャンネル録画を提供します。より長く保存したい場合は、20〜24時間録画可能な256GBを使用してください。"
+        },
+        {
+          "q": "高耐久ではない通常のSDカードを使用できますか？",
+          "a": "<b>いいえ、絶対に使用しないでください。</b> VIOFOは、常時書き換えにより非耐久カードがすぐに故障すると明示的に警告しています。データ損失やカード障害を防ぐために、必ず高耐久カード（SanDisk MAX EnduranceやSamsung PRO Endurance）を使用してください。"
+        }
+      ],
+      "relatedDevices": [
+        "nextbase-622gw",
+        "wyze-cam-v3"
+      ],
+      "notes": "最も人気のあるデュアルチャンネルドライブレコーダーの一つです。VIOFOの公式文書ではU3/V30高耐久カードが指定されています。"
+    },
+    {
+      "id": "raspberry-pi-5",
+      "name": "Raspberry Pi 5 (ラズベリーパイ5)",
+      "category": "コンピュータ・タブレット",
+      "slug": "raspberry-pi-5",
+      "searchTerms": [
+        "ラズパイ5 sdカード",
+        "raspberry pi 5 microsd",
+        "ラズベリーパイ ストレージ"
+      ],
+      "sdCard": {
+        "type": "microSD",
+        "minSpeed": "A1 または A2 規格",
+        "minWriteSpeed": "10 MB/s (Class 10)",
+        "recommendedCapacity": [
+          "32GB",
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "公式上限なし"
+      },
+      "whySpecs": "Raspberry Pi 5は、microSDカードからOSを起動します。「A1」または理想的には「A2」定格のカードがパフォーマンスに不可欠です。これらの定格はランダム読み書き速度が速いことを意味し、OSの応答性とアプリケーションのロード時間を劇的に向上させます。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        },
+        {
+          "id": "sandisk-ultra-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Raspberry Pi 5にとって、V30とA2のどちらが重要ですか？",
+          "a": "<b>A2定格の方が重要です。</b> 「V」定格（例：V30）は持続的なビデオ録画速度用ですが、「A」定格（アプリケーションパフォーマンスクラス）はOSが行うランダム読み書き操作用です。A2カードの方が日常的な使用において、はるかに高速に感じられます。"
+        }
+      ],
+      "relatedDevices": [],
+      "notes": "巨大なDIYおよび技術者層をターゲットにしています。カードは必須コンポーネントです。"
+    },
+    {
+      "id": "insta360-x4",
+      "name": "Insta360 X4",
+      "category": "アクションカメラ",
+      "slug": "insta360-x4",
+      "searchTerms": [
+        "insta360 x4",
+        "インスタ360 x4 sdカード",
+        "x4 360度カメラ",
+        "insta360 8k"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "8K 30fpsおよび5.7K 60fpsで360度ビデオを記録します。Insta360は、コマ落ちなしで高ビットレートの360度録画を処理するために、V30以上を公式に必須としています。デュアルレンズシステムは、信頼性の高い持続書き込み速度を要求する膨大なデータストリームを生成します。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "X3と同じカードを使えますか？",
+          "a": "<b>はい、X3で使用していたV30以上のmicroSDカードはX4でも問題なく動作します。</b> X4も同じV30の最低要件を持っていますが、8Kファイルは大きくなるため、PCへのオフロード速度が速いカードの方が利便性が高くなります。"
+        },
+        {
+          "q": "256GBのカードにどれくらいの8K映像が入りますか？",
+          "a": "<b>256GBのカードで、8K 30fpsの録画を約2〜2.5時間保存できます。</b> 長時間のセッションには、512GBを検討するか、交換用のカードを複数用意してください。"
+        }
+      ],
+      "relatedDevices": [
+        "insta360-x3",
+        "gopro-hero-max",
+        "gopro-hero-13"
+      ],
+      "notes": "Insta360の2024年フラッグシップ360度カメラ。公式テスト済み最大容量：1TB。"
+    },
+    {
+      "id": "asus-rog-ally",
+      "name": "ASUS ROG Ally",
+      "category": "携帯ゲーム機",
+      "slug": "asus-rog-ally",
+      "searchTerms": [
+        "asus rog ally sdカード",
+        "rog ally microsd",
+        "rog ally メモリカード",
+        "エイリアンウェア sd"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB",
+          "1TB"
+        ],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "ROG Allyは高速なUHS-IIカードリーダーを搭載しています。ゲームのロード時間を最小限に抑え、ファイル転送を高速化するために、UHS-IIカードの使用を強く推奨します。安定したパフォーマンスにはV30スピードクラスが最低条件です。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-rog-ally-microsd"
+        },
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "ROG Allyには高速なUHS-IIカードを使うべきですか？",
+          "a": "<b>はい、最高のパフォーマンスを求めるなら絶対にお勧めします。</b> ROG AllyのUHS-IIリーダーはカードの速度を最大限に活かし、ゲームのロード時間を短縮します。低速なUHS-Iカードも動作しますが、パフォーマンスのボトルネックになります。"
+        },
+        {
+          "q": "ROG Allyに最適な容量は？",
+          "a": "<b>512GBまたは1TBが多くのユーザーにとって最適解です。</b> 最新のPCゲームは非常に容量が大きいため、これくらいの容量があればストレージ管理に悩まされることなく、多くのAAAタイトルを保存できます。"
+        }
+      ],
+      "relatedDevices": [
+        "steam-deck",
+        "nintendo-switch-oled",
+        "nintendo-switch"
+      ],
+      "notes": "一部のユニットでは排気熱がSDカードリーダーに影響を与える可能性があります。信頼性とパフォーマンスのために、高品質で評判の良いUHS-IIカードを使用することが重要です。"
+    },
+    {
+      "id": "sony-a7-iv",
+      "name": "Sony α7 IV (ILCE-7M4)",
+      "category": "カメラ",
+      "slug": "sony-a7-iv",
+      "searchTerms": [
+        "sony a7 iv sdカード",
+        "a7m4 カード",
+        "alpha 7 iv メモリカード",
+        "ソニー α7iv"
+      ],
+      "sdCard": {
+        "type": "CFexpress Type A または SD UHS-II",
+        "minSpeed": "V60 (S&QモードはV90)",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "公式制限なし",
+        "testedMaxCapacity": "1TB"
+      },
+      "whySpecs": "α7 IVは高ビットレートの4Kビデオを記録します。スロット1は超高速CFexpress Type AまたはSDカードに対応し、スロット2はSD専用です。ほとんどの4KモードにはV60 SDカードが必要ですが、最高品質のS&Q（スロー＆クイック）録画でバッファの問題を防ぐにはV90が必要です。",
+      "recommendedBrands": [
+        {
+          "id": "lexar-professional-1000x-sd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Sony α7 IVにはCFexpress Type Aカードが必要ですか？",
+          "a": "<b>いいえ、ほとんどの撮影には必須ではありません。</b> ほぼすべてのビデオモードでV60またはV90のSD UHS-IIカードで十分です。CFexpress Type Aは、激しい連写時のバッファクリアや、絶対的な最高ビットレート設定でのみ必要になります。"
+        },
+        {
+          "q": "2つのカードスロットの違いは何ですか？",
+          "a": "<b>スロット1はコンボスロット</b>で、CFexpress Type Aカード1枚またはSDカード（UHS-I/II）1枚が入ります。<b>スロット2はSDカード専用</b>（UHS-I/II）です。同時バックアップやリレー録画に両方を使用できます。"
+        }
+      ],
+      "relatedDevices": [
+        "canon-eos-r6-mark-ii",
+        "sony-a6700",
+        "nikon-z8"
+      ],
+      "notes": "非常に人気のあるカメラです。V60以上のSDカード、または予算が許せばCFexpress Type Aが推奨されます。"
+    },
+    {
+      "id": "insta360-x3",
+      "name": "Insta360 X3",
+      "category": "アクションカメラ",
+      "slug": "insta360-x3",
+      "searchTerms": [
+        "insta360 x3 sdカード",
+        "インスタ360 x3 メモリカード",
+        "x3 microsd"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "5.7Kの360度ビデオ録画は大量のデータを生成します。Insta360は、コマ落ちや破損のないスムーズで安定した録画を保証するために、V30スピードクラスのmicroSDカードを公式に推奨しています。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Insta360 X3でSanDisk Ultraカードを使えますか？",
+          "a": "<b>推奨されません。</b> 一部のUltraカードはV10定格であり、X3には最低V30が必要です。低速なカードを使用すると、特に高解像度モードでの録画失敗につながる可能性があります。SanDisk Extremeシリーズまたは同等品を使用してください。"
+        }
+      ],
+      "relatedDevices": [
+        "gopro-hero-max",
+        "gopro-hero-13"
+      ],
+      "notes": "360度カメラ市場におけるGoProの最大のライバルです。検索ボリュームが非常に多い機種です。"
+    },
+    {
+      "id": "bmpcc-4k",
+      "name": "Blackmagic Pocket Cinema Camera 4K",
+      "category": "カメラ",
+      "slug": "blackmagic-pocket-cinema-camera-4k",
+      "searchTerms": [
+        "bmpcc 4k カード",
+        "ブラックマジック 4k sdカード",
+        "ポケシネ 4k cfast"
+      ],
+      "sdCard": {
+        "type": "CFast 2.0 および SD UHS-II",
+        "minSpeed": "V90 (SDの場合)",
+        "minWriteSpeed": "90 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "公式制限なし"
+      },
+      "whySpecs": "BMPCC 4Kは、非常に高いデータレートでプロ仕様のRAWおよびProResフォーマットを記録します。多くの圧縮RAWオプションには高速なV90 SDカードが必要ですが、最高画質設定にはCFast 2.0カードが必要です。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-cfast-2.0"
+        },
+        {
+          "id": "sony-tough-g-v90"
+        },
+        {
+          "id": "kingston-canvas-react-sd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "BMPCC 4Kにはどのカードタイプを使うべきですか？",
+          "a": "<b>使用するコーデックによります。</b> 最高画質のBlackmagic RAW設定（例：3:1）には<b>CFast 2.0カード</b>が必要です。より圧縮されたRAWフォーマットやほとんどのProResオプションには、高速な<b>V90 SDカード</b>で十分であり、コスト効率が良いです。"
+        }
+      ],
+      "relatedDevices": [
+        "canon-eos-r5",
+        "sony-a7-iv"
+      ],
+      "notes": "インディーズ映画制作者の定番機種で、カード要件が非常に具体的です。柔軟性を最大化するため、CFast 2.0とV90 SDカードの両方が推奨されます。"
+    },
+    {
+      "id": "fujifilm-x100vi",
+      "name": "Fujifilm X100VI",
+      "category": "カメラ",
+      "slug": "fujifilm-x100vi",
+      "searchTerms": [
+        "富士フイルム x100vi",
+        "x100vi sdカード",
+        "x100 シックス",
+        "fujifilm x100vi メモリカード"
+      ],
+      "sdCard": {
+        "type": "SD UHS-II",
+        "minSpeed": "V60",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "公式制限なし"
+      },
+      "whySpecs": "40MPセンサーと6.2Kビデオ機能を備えたプレミアムコンパクトカメラです。6.2K 30fpsビデオ録画と高速連続RAW撮影にはV60が不可欠です。UHS-IIスロットにより、新しい20fps連写モードでのバッファクリアが高速化されます。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-sd-uhs2"
+        },
+        {
+          "id": "lexar-professional-1000x-sd"
+        },
+        {
+          "id": "kingston-canvas-go-pro-sd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "古いX100Vのカードは使えますか？",
+          "a": "<b>X100Vで使用していたV30カードも動作しますが、X100VIの6.2Kビデオや高速連写にはV60が推奨されます。</b> 特にビデオにおいて最適なパフォーマンスを得るには、V60 UHS-IIカードへのアップグレードをお勧めします。"
+        },
+        {
+          "q": "X100VIにV90は必要ですか？",
+          "a": "<b>すべての録画モードにおいてV60で十分です。</b> X100VIの最大ビットレートはV60の要件を超えないため、V90カードによる実用的なメリットはありません。V60カードのままでもカメラ内パフォーマンスを損なうことなく節約できます。"
+        }
+      ],
+      "relatedDevices": [
+        "fujifilm-x100v",
+        "fujifilm-xe5",
+        "leica-q3",
+        "sony-a6700"
+      ],
+      "notes": "2024年最も注目されたカメラです。レトロなデザインと並外れた画質で知られています。人気と品薄により、アクセサリーの検索ボリュームも非常に高いです。"
+    },
+    {
+      "id": "nikon-zf",
+      "name": "Nikon Z f",
+      "category": "カメラ",
+      "slug": "nikon-zf",
+      "searchTerms": [
+        "ニコン zf sdカード",
+        "zf メモリカード",
+        "nikon zf ストレージ"
+      ],
+      "sdCard": {
+        "type": "デュアル SD UHS-II",
+        "minSpeed": "V60 (高フレームレート動画にはV90)",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "公式制限なし"
+      },
+      "whySpecs": "24MPセンサーと高度なビデオ機能を備えたレトロスタイルのフルサイズミラーレスカメラです。標準的な4K録画と写真にはV60カードで対応できますが、4K 120fpsのスローモーションや最高ビットレートのN-RAWビデオモードにはV90が推奨されます。デュアルUHS-IIスロットにより、プロ仕様のバックアップワークフローが可能です。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-sd-uhs2"
+        },
+        {
+          "id": "lexar-professional-1000x-sd"
+        },
+        {
+          "id": "sony-tough-g-v90"
+        }
+      ],
+      "faq": [
+        {
+          "q": "なぜNikon Z fは人気があるのですか？",
+          "a": "<b>Nikon Z fは、フィルムカメラにインスパイアされたクラシックなレトロデザインと、最先端のフルサイズミラーレス性能を見事に融合させているため、絶大な人気を得ています。</b> スタイリッシュなパッケージの中に、優れた画質、高度なオートフォーカス、強力なビデオ機能を備えています。"
+        },
+        {
+          "q": "Z fにはV90カードが必要ですか？ V60で十分ですか？",
+          "a": "<b>Nikon Z fでのほとんどの写真撮影と標準的な4Kビデオ録画には、通常V60カードで十分です。</b> ただし、4K 120fpsスローモーションや最高ビットレートのN-RAWビデオを撮影する予定がある場合はV90が必要です。多くのユーザーはV60から始め、特定のビデオワークフローが必要な場合にのみV90を検討すれば良いでしょう。"
+        }
+      ],
+      "relatedDevices": [
+        "nikon-z6-iii",
+        "nikon-z5",
+        "fujifilm-xt5"
+      ],
+      "notes": "2023年後半に発売され、大人気となったレトロスタイルのフルサイズ機。Z6 IIIとコア技術を共有しています。デュアルSD UHS-IIスロットを搭載。"
+    },
+    {
+      "id": "dji-mini-2-se",
+      "name": "DJI Mini 2 SE",
+      "category": "ドローン",
+      "slug": "dji-mini-2-se",
+      "searchTerms": [
+        "dji mini 2 se sdカード",
+        "mini 2 se microsd",
+        "dji ミニ2 se 容量"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "256GB"
+      },
+      "whySpecs": "Mini 2 SEは最大2.7Kのビデオを記録します。DJIは、コマ落ちのないスムーズで安定した録画を保証するために、V30スピードクラスのカードを公式に推奨しています。ドローン操作において信頼性は極めて重要です。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Mini 2 SEでSanDisk Ultraカードは使えますか？",
+          "a": "<b>推奨されません。</b> DJIは信頼性の高いビデオ録画のためにU3/V30スピードクラスを指定しています。SanDisk Ultra（U1）のような低速カードを使用すると、飛行中に録画が失敗し、映像が失われる可能性があります。"
+        }
+      ],
+      "relatedDevices": [
+        "dji-mini-3",
+        "dji-mini-4k"
+      ],
+      "notes": "初心者をターゲットにした非常に人気のある予算重視のドローンです。公式の最大サポート容量は256GBです。"
+    },
+    {
+      "id": "garmin-dash-cam-mini-2",
+      "name": "Garmin Dash Cam Mini 2",
+      "category": "ドライブレコーダー",
+      "slug": "garmin-dash-cam-mini-2",
+      "searchTerms": [
+        "ガーミン dash cam mini 2 sdカード",
+        "garmin mini 2 microsd",
+        "ガーミン ドラレコ カード"
+      ],
+      "sdCard": {
+        "type": "高耐久 (High Endurance) microSD",
+        "minSpeed": "U3 / Class 10",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "ドライブレコーダーはデータを常に書き換えるため、非耐久カードは破損します。高耐久（High Endurance）カードが必須です。GarminはClass 10以上を要求していますが、安定した1080p録画と信頼性のためにU3が推奨されます。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-max-endurance"
+        },
+        {
+          "id": "samsung-pro-endurance"
+        }
+      ],
+      "faq": [
+        {
+          "q": "なぜガーミンには「高耐久」カードが必要なのですか？",
+          "a": "<b>非耐久カードは故障するためです。</b> ドライブレコーダーはループ録画を行い、絶えずデータの書き込みと書き換えを行います。この激しい負荷は標準的なカードをすぐに消耗させます。高耐久カードはこれ専用に設計されており、寿命が何倍も長持ちします。"
+        }
+      ],
+      "relatedDevices": [
+        "viofo-a229-duo",
+        "nextbase-622gw"
+      ],
+      "notes": "ベストセラーのコンパクトドライブレコーダー。Garminは公式に最大512GBまでサポートしています。"
+    },
+    {
+      "id": "iphone-15",
+      "name": "iPhone 15 / 15 Pro",
+      "category": "モバイルデバイス",
+      "slug": "iphone-15",
+      "searchTerms": [
+        "アイフォン 15",
+        "iphone 15 pro",
+        "iphone 15 sdカードリーダー"
+      ],
+      "sdCard": {
+        "type": "外部接続 (USB-C SDリーダー経由)",
+        "minSpeed": "公式要件なし",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "アプリまたはリーダーに依存"
+      },
+      "whySpecs": "iPhone 15にはSDカードスロットがありません。外部SDカードへのアクセスにはUSB-Cリーダーを使用します。速度はデバイスではなくリーダーの性能に依存します。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-uhs2-usbc"
+        }
+      ],
+      "relatedDevices": [
+        "iphone-14",
+        "iphone-13",
+        "ipad-pro"
+      ],
+      "notes": "USB-C搭載により、高速な外部ストレージやカードリーダーが直接利用可能になりました。"
+    },
+    {
+      "id": "macbook-air",
+      "name": "MacBook Air",
+      "category": "パソコン",
+      "slug": "macbook-air",
+      "searchTerms": [
+        "マックブック エアー",
+        "macbook air m2",
+        "macbook air m3",
+        "macbook sdカード"
+      ],
+      "sdCard": {
+        "type": "外部接続 (USB-Cハブ/リーダー経由)",
+        "minSpeed": "UHS-I 推奨",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
+      },
+      "whySpecs": "MacBook AirにはSDカードスロットがありません（Proモデルとは異なります）。USB-Cハブやリーダーを使用することで、外部SDカードにアクセスできます。最新モデルではUSB-C接続で高速転送が可能です。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-uhs2-usbc"
+        }
+      ],
+      "relatedDevices": [
+        "macbook-pro",
+        "ipad-pro"
+      ],
+      "notes": "内蔵スロットがないため、ドングルやハブが必須です。"
+    },
+    {
+      "id": "iphone-14",
+      "name": "iPhone 14 / 14 Pro",
+      "category": "モバイルデバイス",
+      "slug": "iphone-14",
+      "searchTerms": [
+        "アイフォン 14",
+        "iphone 14 sdカード",
+        "ライトニング sdカードリーダー"
+      ],
+      "sdCard": {
+        "type": "外部接続 (Lightningリーダー経由)",
+        "minSpeed": "UHS-I",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
+      },
+      "whySpecs": "iPhone 14はLightningポートを使用します。SDカードを読み込むにはLightning接続のリーダーが必要です。多くのリーダーはUSB 2.0速度に制限されることに注意してください。",
+      "recommendedBrands": [
+        {
+          "id": "lexar-lightning-microsd"
+        }
+      ],
+      "relatedDevices": [
+        "iphone-15",
+        "iphone-13"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ipad-air",
+      "name": "iPad Air",
+      "category": "タブレット",
+      "slug": "ipad-air",
+      "searchTerms": [
+        "アイパッド エアー",
+        "ipad air 5",
+        "ipad air sdカード"
+      ],
+      "sdCard": {
+        "type": "外部接続 (USB-Cリーダー経由)",
+        "minSpeed": "UHS-I",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
+      },
+      "whySpecs": "iPad Air（第4世代以降）はUSB-Cポートを使用します。USB-C SDカードリーダーを直接接続して、写真や動画の取り込みが可能です。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-uhs2-usbc"
+        }
+      ],
+      "relatedDevices": [
+        "ipad-pro",
+        "ipad-air-3"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "samsung-galaxy-s23",
+      "name": "Samsung Galaxy S23",
+      "category": "モバイルデバイス",
+      "slug": "samsung-galaxy-s23",
+      "searchTerms": [
+        "ギャラクシー s23",
+        "galaxy s23 sdカード",
+        "samsung s23 容量"
+      ],
+      "sdCard": {
+        "type": "外部接続 (USB-Cリーダー経由・スロットなし)",
+        "minSpeed": "要件なし",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
+      },
+      "whySpecs": "Galaxy S23シリーズはmicroSDカードスロットを廃止しています。外部SDカードを使用するには、USB-C接続のカードリーダーが必要です。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-uhs2-usbc"
+        }
+      ],
+      "relatedDevices": [
+        "google-pixel-8",
+        "samsung-galaxy-s24"
+      ],
+      "notes": "かつてはSDスロットがありましたが、現在は廃止されています。クラウドまたは外部ストレージが必要です。"
+    },
+    {
+      "id": "ipad-pro",
+      "name": "iPad Pro",
+      "category": "タブレット",
+      "slug": "ipad-pro",
+      "searchTerms": [
+        "アイパッド プロ",
+        "ipad pro 11",
+        "ipad pro 12.9",
+        "ipad pro sdカード"
+      ],
+      "sdCard": {
+        "type": "外部接続 (USB-C/Thunderboltリーダー経由)",
+        "minSpeed": "UHS-I から UHS-II",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
+      },
+      "whySpecs": "iPad ProはUSB-CまたはThunderboltポートを使用します。高速な外部リーダーをサポートしており、大容量の写真や動画の取り込みに最適です。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-uhs2-usbc"
+        }
+      ],
+      "relatedDevices": [
+        "ipad-air",
+        "macbook-pro"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "macbook-pro",
+      "name": "MacBook Pro",
+      "category": "パソコン",
+      "slug": "macbook-pro",
+      "searchTerms": [
+        "macbook pro",
+        "マックブックプロ",
+        "mbp sdカード",
+        "m3 pro"
+      ],
+      "sdCard": {
+        "type": "内蔵SDXCスロット (14/16インチ) または 外部接続",
+        "minSpeed": "UHS-I から UHS-II",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
+      },
+      "whySpecs": "最新の14インチおよび16インチMacBook Proは、高速なUHS-II対応SDXCカードスロットを内蔵しています。ビデオ編集ワークフローのために高速なカードが推奨されます。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-uhs2-usbc"
+        }
+      ],
+      "relatedDevices": [
+        "macbook-air",
+        "canon-eos-r5"
+      ],
+      "notes": ""
     },
     {
       "id": "fujifilm-x-s20",
       "name": "Fujifilm X-S20",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "fujifilm-x-s20",
       "searchTerms": [
         "fujifilm x-s20",
@@ -409,55 +1227,9 @@
       "notes": "Popular travel camera. Single card slot makes reliable card choice important."
     },
     {
-      "id": "steam-deck",
-      "name": "Steam Deck",
-      "category": "Gaming Handhelds",
-      "slug": "steam-deck",
-      "searchTerms": [
-        "steam deck",
-        "steam deck sd card",
-        "deck microsd"
-      ],
-      "sdCard": {
-        "type": "microSD UHS-I (not UHS-II)",
-        "minSpeed": "V30",
-        "minWriteSpeed": "30 MB/s",
-        "minAppPerformance": "A1",
-        "recommendedCapacity": [
-          "256GB",
-          "512GB"
-        ],
-        "maxCapacity": "2TB (theoretical)",
-        "testedMaxCapacity": "1TB"
-      },
-      "whySpecs": "Steam Deck uses UHS-I interface and runs SteamOS from the card, so A1 app performance is important for OS responsiveness. While V30 works for gaming, A1 random IOPS are essential. Select from reputable brands offering V30 rated and A1-classified cards. Note: While theoretically supporting up to 2TB, the largest tested and verified working capacity is 1TB.",
-      "recommendedBrands": [
-        {
-          "id": "kingston-canvas-go-plus-ultra"
-        },
-        {
-          "id": "adata-premier-pro-microsd"
-        },
-        {
-          "id": "sandisk-ultra-microsd"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Can I use fast V60 cards?",
-          "a": "<b>Yes, V60 and faster microSD cards work perfectly with Steam Deck</b>. However, <b>the device's UHS-I interface limits the speed benefit</b>, so faster cards provide no practical advantage over V30 cards for Steam Deck gaming."
-        }
-      ],
-      "relatedDevices": [
-        "nintendo-switch",
-        "asus-rog-ally"
-      ],
-      "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library."
-    },
-    {
       "id": "gopro-hero-max",
       "name": "GoPro Hero Max",
-      "category": "Action Cameras",
+      "category": "アクションカメラ",
       "slug": "gopro-hero-max",
       "searchTerms": [
         "gopro hero max",
@@ -509,7 +1281,7 @@
     {
       "id": "dji-mini-3-pro",
       "name": "DJI Mini 3 Pro",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "dji-mini-3-pro",
       "searchTerms": [
         "dji mini 3 pro",
@@ -551,7 +1323,7 @@
     {
       "id": "dji-air-3s",
       "name": "DJI Air 3S",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "dji-air-3s",
       "searchTerms": [
         "dji air 3s",
@@ -596,7 +1368,7 @@
     {
       "id": "dji-mavic-3",
       "name": "DJI Mavic 3",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "dji-mavic-3",
       "searchTerms": [
         "dji mavic 3",
@@ -638,7 +1410,7 @@
     {
       "id": "nikon-z9",
       "name": "Nikon Z9",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "nikon-z9",
       "searchTerms": [
         "nikon z9",
@@ -684,57 +1456,6 @@
       "notes": "Professional flagship. CFexpress Type B recommended for future-proofing."
     },
     {
-      "id": "asus-rog-ally",
-      "name": "ASUS ROG Ally",
-      "category": "Gaming Handhelds",
-      "slug": "asus-rog-ally",
-      "searchTerms": [
-        "asus rog ally sd card",
-        "rog ally microsd",
-        "rog ally memory card"
-      ],
-      "sdCard": {
-        "type": "microSD UHS-II",
-        "minSpeed": "V30",
-        "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": [
-          "256GB",
-          "512GB",
-          "1TB"
-        ],
-        "maxCapacity": "2TB"
-      },
-      "whySpecs": "The ROG Ally features a high-speed UHS-II card reader. Using a UHS-II card is highly recommended to minimize game loading times and accelerate file transfers. A V30 speed class is the minimum for stable performance.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-rog-ally-microsd"
-        },
-        {
-          "id": "sandisk-extreme-microsd"
-        },
-        {
-          "id": "kingston-canvas-go-plus"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Should I use a faster UHS-II card in the ROG Ally?",
-          "a": "<b>Yes, you absolutely should if you want the best performance.</b> The ROG Ally's UHS-II card reader takes full advantage of the extra speed from a UHS-II card, resulting in faster game load times. Using a slower UHS-I card will work, but will bottleneck performance."
-        },
-        {
-          "q": "What is the best capacity for the ROG Ally?",
-          "a": "<b>A 512GB or 1TB card is the sweet spot for most users.</b> Modern PC games are very large, and this capacity allows you to store a good number of AAA titles without constantly managing storage."
-        }
-      ],
-      "relatedDevices": [
-        "steam-deck",
-        "nintendo-switch-oled",
-        "nintendo-switch"
-      ],
-      "notes": "Heat from the device's exhaust can affect the SD card reader in some units. Using a high-quality, reputable UHS-II card is crucial for both reliability and optimal performance.",
-      "imageUrl": "/img/devices/gaming-consoles/asus-rog-ally.webp"
-    },
-    {
       "id": "nintendo-switch-lite",
       "name": "Nintendo Switch Lite",
       "category": "Gaming Handhelds",
@@ -775,180 +1496,6 @@
         "nintendo-switch-oled"
       ],
       "notes": "Completes the Switch family lineup. Same requirements as other models."
-    },
-    {
-      "id": "sony-a7-iv",
-      "name": "Sony A7 IV",
-      "category": "Cameras",
-      "slug": "sony-a7-iv",
-      "searchTerms": [
-        "sony a7 iv sd card",
-        "a7iv card",
-        "alpha 7 iv memory card"
-      ],
-      "sdCard": {
-        "type": "CFexpress Type A or SD UHS-II",
-        "minSpeed": "V60 (V90 for S&Q modes)",
-        "minWriteSpeed": "60 MB/s",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB"
-        ],
-        "maxCapacity": "No official limit",
-        "testedMaxCapacity": "1TB"
-      },
-      "whySpecs": "The A7 IV records high-bitrate 4K video. Slot 1 accepts ultra-fast CFexpress Type A cards or SD cards, while Slot 2 is SD-only. A V60 SD card is needed for most 4K modes, while V90 is required for the highest quality S&Q (Slow & Quick) recording to prevent buffer issues.",
-      "recommendedBrands": [
-        {
-          "id": "lexar-professional-1000x-sd"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Do I need a CFexpress Type A card for the Sony A7 IV?",
-          "a": "<b>No, it's not required for most shooting.</b> A V60 or V90 SD UHS-II card is sufficient for almost all video modes. CFexpress Type A is only necessary for clearing the buffer faster during intense burst photography or for the absolute highest video bitrates."
-        },
-        {
-          "q": "What is the difference between the two card slots?",
-          "a": "<b>Slot 1 is a combo slot</b> that fits either one CFexpress Type A card or one SD card (UHS-I/II). <b>Slot 2 only fits one SD card</b> (UHS-I/II). You can use both for simultaneous backup or relay recording."
-        }
-      ],
-      "relatedDevices": [
-        "canon-eos-r6-mark-ii",
-        "sony-a6700",
-        "nikon-z8"
-      ],
-      "notes": "Extremely popular camera. Note: Your sdcards.json has limited V60+ SD card options, so only compliant cards are recommended."
-    },
-    {
-      "id": "insta360-x3",
-      "name": "Insta360 X3",
-      "category": "Action Cameras",
-      "slug": "insta360-x3",
-      "searchTerms": [
-        "insta360 x3 sd card",
-        "insta 360 x3 memory card",
-        "x3 microsd"
-      ],
-      "sdCard": {
-        "type": "microSD UHS-I",
-        "minSpeed": "V30",
-        "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB"
-        ],
-        "maxCapacity": "1TB"
-      },
-      "whySpecs": "Recording 5.7K 360-degree video generates a large amount of data. Insta360 officially recommends a V30 speed class microSD card to ensure smooth, stable recording without dropped frames or corruption.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-microsd"
-        },
-        {
-          "id": "lexar-professional-1000x-microsd"
-        },
-        {
-          "id": "kingston-canvas-go-plus"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Can I use a SanDisk Ultra card in the Insta360 X3?",
-          "a": "<b>It is not recommended.</b> While some Ultra cards are rated V10, the X3 requires a minimum of V30. Using a slower card can lead to recording failure, especially in high-resolution modes. Stick to the SanDisk Extreme series or equivalent."
-        }
-      ],
-      "relatedDevices": [
-        "gopro-hero-max",
-        "gopro-hero-13"
-      ],
-      "notes": "GoPro's biggest competitor in the 360 space. Very high search volume."
-    },
-    {
-      "id": "dji-osmo-pocket-3",
-      "name": "DJI Osmo Pocket 3",
-      "category": "Action Cameras",
-      "slug": "dji-osmo-pocket-3",
-      "searchTerms": [
-        "dji pocket 3 sd card",
-        "osmo pocket 3 microsd"
-      ],
-      "sdCard": {
-        "type": "microSD UHS-I/UHS-II",
-        "minSpeed": "V30",
-        "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB"
-        ],
-        "maxCapacity": "512GB"
-      },
-      "whySpecs": "The Pocket 3 shoots high-quality 4K/120fps video. DJI recommends a V30 card as the minimum to reliably handle the data rate. Faster UHS-II cards can be used for quicker file transfers to a computer but offer no recording benefit in-camera.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-microsd"
-        },
-        {
-          "id": "lexar-professional-silver-microsd"
-        },
-        {
-          "id": "kingston-canvas-go-plus"
-        }
-      ],
-      "faq": [
-        {
-          "q": "How much 4K video can a 128GB card hold on the Pocket 3?",
-          "a": "A 128GB card will hold approximately 2 hours of 4K/60fps footage. If you plan on shooting for an entire day, carrying a second card or choosing a 256GB capacity is a good idea."
-        }
-      ],
-      "relatedDevices": [
-        "gopro-hero-13",
-        "gopro-hero-11-black",
-        "dji-mini-4-pro"
-      ],
-      "notes": "Extremely popular vlogging device. Clear need for reliable, fast cards."
-    },
-    {
-      "id": "raspberry-pi-5",
-      "name": "Raspberry Pi 5",
-      "category": "Computing & Tablets",
-      "slug": "raspberry-pi-5",
-      "searchTerms": [
-        "raspberry pi 5 sd card",
-        "pi 5 microsd",
-        "raspberry pi 5 storage"
-      ],
-      "sdCard": {
-        "type": "microSD",
-        "minSpeed": "A1 or A2 rated",
-        "minWriteSpeed": "10 MB/s (Class 10)",
-        "recommendedCapacity": [
-          "32GB",
-          "64GB",
-          "128GB"
-        ],
-        "maxCapacity": "No official limit"
-      },
-      "whySpecs": "The Raspberry Pi 5 boots its operating system from the microSD card. An 'A1' or, ideally, an 'A2' rated card is crucial for performance. These ratings signify faster random read/write speeds, which dramatically improves OS responsiveness and application loading times.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-microsd"
-        },
-        {
-          "id": "kingston-canvas-go-plus"
-        },
-        {
-          "id": "sandisk-ultra-microsd"
-        }
-      ],
-      "faq": [
-        {
-          "q": "What's more important for the Raspberry Pi 5, V30 or A2?",
-          "a": "<b>The A2 rating is more important.</b> The 'V' rating (e.g., V30) is for sustained video recording speed, while the 'A' rating (Application Performance Class) is for random read/write operations, which is what an operating system does. An A2 card will feel much faster in daily use."
-        }
-      ],
-      "relatedDevices": [],
-      "notes": "Targets a huge DIY and technical audience. The card is a mandatory component."
     },
     {
       "id": "samsung-galaxy-tab-s9",
@@ -995,7 +1542,7 @@
     {
       "id": "canon-eos-r6-mark-ii",
       "name": "Canon EOS R6 Mark II",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "canon-eos-r6-mark-ii",
       "searchTerms": [
         "canon r6 ii sd card",
@@ -1037,99 +1584,9 @@
       "notes": "Supports both UHS-I and UHS-II cards, but UHS-II is strongly recommended for optimal performance."
     },
     {
-      "id": "bmpcc-4k",
-      "name": "Blackmagic Pocket Cinema Camera 4K",
-      "category": "Cameras",
-      "slug": "blackmagic-pocket-cinema-camera-4k",
-      "searchTerms": [
-        "bmpcc 4k card",
-        "blackmagic pocket 4k sd card",
-        "bmpcc 4k cfast"
-      ],
-      "sdCard": {
-        "type": "CFast 2.0 and SD UHS-II",
-        "minSpeed": "V90 (for SD)",
-        "minWriteSpeed": "90 MB/s",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB"
-        ],
-        "maxCapacity": "No official limit"
-      },
-      "whySpecs": "The BMPCC 4K records professional RAW and ProRes formats at very high data rates. A fast V90 SD card is required for many compressed RAW options, while a CFast 2.0 card is needed for the highest-quality settings.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-pro-cfast-2.0"
-        },
-        {
-          "id": "sony-tough-g-v90"
-        },
-        {
-          "id": "kingston-canvas-react-sd"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Which card type should I use for the BMPCC 4K?",
-          "a": "<b>It depends on your codec.</b> For the highest quality Blackmagic RAW settings (e.g., 3:1), you will need a <b>CFast 2.0 card</b>. For more compressed RAW formats and most ProRes options, a fast <b>V90 SD card</b> will suffice and is more cost-effective."
-        }
-      ],
-      "relatedDevices": [
-        "canon-eos-r5",
-        "sony-a7-iv"
-      ],
-      "notes": "A staple for indie filmmakers with very specific card requirements. Both CFast 2.0 and V90 SD card options are now recommended for maximum flexibility."
-    },
-    {
-      "id": "viofo-a229-duo",
-      "name": "VIOFO A229 Duo",
-      "category": "Action Cameras",
-      "slug": "viofo-a229-duo",
-      "searchTerms": [
-        "viofo a229 sd card",
-        "viofo a229 duo microsd",
-        "a229 dash cam storage"
-      ],
-      "sdCard": {
-        "type": "High Endurance microSD",
-        "minSpeed": "U3 / V30",
-        "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB"
-        ],
-        "maxCapacity": "512GB"
-      },
-      "whySpecs": "The VIOFO A229 Duo records dual-channel 2K video continuously in loop mode. VIOFO officially recommends U3/V30 High Endurance cards to handle the high bitrate and constant rewriting. Non-endurance cards will fail within months; High Endurance cards are rated for years of 24/7 recording.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-max-endurance"
-        },
-        {
-          "id": "samsung-pro-endurance"
-        }
-      ],
-      "faq": [
-        {
-          "q": "What capacity should I use for the VIOFO A229?",
-          "a": "<b>128GB to 256GB is recommended for the A229 Duo.</b> A 128GB card provides approximately 10-12 hours of dual-channel recording before loop overwrite begins. For longer retention, use 256GB for 20-24 hours of footage."
-        },
-        {
-          "q": "Can I use a non-endurance SD card instead of High Endurance?",
-          "a": "<b>No, absolutely not.</b> VIOFO explicitly warns that non-endurance cards will fail quickly due to constant rewriting. Always use High Endurance cards (SanDisk MAX Endurance or Samsung PRO Endurance) to prevent data loss and card failure."
-        }
-      ],
-      "relatedDevices": [
-        "nextbase-622gw",
-        "wyze-cam-v3",
-        "eufy-solocam-s340"
-      ],
-      "notes": "One of the most popular dual-channel dash cams. VIOFO official documentation specifies U3/V30 High Endurance cards. Very high search volume for 'VIOFO A229 SD card'."
-    },
-    {
       "id": "nextbase-622gw",
       "name": "Nextbase 622GW",
-      "category": "Action Cameras",
+      "category": "アクションカメラ",
       "slug": "nextbase-622gw",
       "searchTerms": [
         "nextbase 622gw sd card",
@@ -1176,7 +1633,7 @@
     {
       "id": "dji-air-3",
       "name": "DJI Air 3",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "dji-air-3",
       "searchTerms": [
         "dji air 3 sd card",
@@ -1222,7 +1679,7 @@
     {
       "id": "bmpcc-6k-pro",
       "name": "Blackmagic Pocket Cinema Camera 6K Pro",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "blackmagic-pocket-cinema-camera-6k-pro",
       "searchTerms": [
         "bmpcc 6k pro card",
@@ -1267,7 +1724,7 @@
     {
       "id": "nikon-z8",
       "name": "Nikon Z8",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "nikon-z8",
       "searchTerms": [
         "nikon z8 sd card",
@@ -1310,7 +1767,7 @@
     {
       "id": "panasonic-lumix-s1h",
       "name": "Panasonic Lumix S1H",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "panasonic-lumix-s1h",
       "searchTerms": [
         "panasonic lumix s1h sd card",
@@ -1349,7 +1806,7 @@
     {
       "id": "gopro-hero-11-black",
       "name": "GoPro Hero 11 Black",
-      "category": "Action Cameras",
+      "category": "アクションカメラ",
       "slug": "gopro-hero-11-black",
       "searchTerms": [
         "gopro hero 11 black",
@@ -1494,7 +1951,7 @@
     {
       "id": "wyze-cam-v3",
       "name": "Wyze Cam v3",
-      "category": "Security Cameras",
+      "category": "セキュリティカメラ",
       "slug": "wyze-cam-v3",
       "searchTerms": [
         "wyze cam v3 sd card",
@@ -1541,7 +1998,7 @@
     {
       "id": "eufy-solocam-s340",
       "name": "Eufy Security SoloCam S340",
-      "category": "Security Cameras",
+      "category": "セキュリティカメラ",
       "slug": "eufy-solocam-s340",
       "searchTerms": [
         "eufy solocam s340 sd card",
@@ -1635,112 +2092,9 @@
       "notes": "HP Chromebook 14 represents a popular category of budget Chromebooks with microSD slots. HP official spec sheets confirm microSD reader on 2023+ models. High search volume from students and educators."
     },
     {
-      "id": "insta360-x4",
-      "name": "Insta360 X4",
-      "category": "Action Cameras",
-      "slug": "insta360-x4",
-      "searchTerms": [
-        "insta360 x4",
-        "insta360 x4 sd card",
-        "x4 360 camera",
-        "insta360 8k"
-      ],
-      "sdCard": {
-        "type": "microSD UHS-I",
-        "minSpeed": "V30",
-        "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB",
-          "512GB"
-        ],
-        "maxCapacity": "1TB"
-      },
-      "whySpecs": "Records 8K 360° video at 30fps and 5.7K at 60fps. Insta360 officially requires V30 minimum to handle the high bitrate 360° recording without dropped frames. The dual-lens system generates massive data streams that demand reliable sustained write speeds.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-microsd"
-        },
-        {
-          "id": "lexar-professional-1000x-microsd"
-        },
-        {
-          "id": "kingston-canvas-go-plus"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Can I use the same card from my X3?",
-          "a": "<b>Yes, any V30 or faster microSD card from your X3 will work perfectly in the X4.</b> The X4 has the same V30 minimum requirement, though faster offload speeds are beneficial with the larger 8K files."
-        },
-        {
-          "q": "How much 8K footage fits on a 256GB card?",
-          "a": "<b>A 256GB card stores approximately 2-2.5 hours of 8K 30fps recording.</b> For extended sessions, consider 512GB or carry multiple cards for quick swaps."
-        }
-      ],
-      "relatedDevices": [
-        "insta360-x3",
-        "gopro-hero-max",
-        "gopro-hero-13"
-      ],
-      "notes": "Insta360's 2024 flagship 360° camera. Official max capacity tested: 1TB.",
-      "imageUrl": "/img/devices/action-cameras/insta360-x4.webp"
-    },
-    {
-      "id": "fujifilm-x100vi",
-      "name": "Fujifilm X100VI",
-      "category": "Cameras",
-      "slug": "fujifilm-x100vi",
-      "searchTerms": [
-        "fujifilm x100vi",
-        "x100vi sd card",
-        "x100 6",
-        "fujifilm x100vi memory card"
-      ],
-      "sdCard": {
-        "type": "SD UHS-II",
-        "minSpeed": "V60",
-        "minWriteSpeed": "60 MB/s",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB"
-        ],
-        "maxCapacity": "No official limit"
-      },
-      "whySpecs": "Premium compact camera with 40MP sensor and 6.2K video capability. V60 is essential for 6.2K 30fps video recording and high-speed continuous RAW shooting. The UHS-II slot enables faster buffer clearing for the new 20fps burst mode.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-pro-sd-uhs2"
-        },
-        {
-          "id": "lexar-professional-1000x-sd"
-        },
-        {
-          "id": "kingston-canvas-go-pro-sd"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Can I use my old X100V cards?",
-          "a": "<b>V30 cards from the X100V will work, but V60 is recommended for the X100VI's 6.2K video and faster burst shooting.</b> For optimal performance, especially for video, upgrading to a V60 UHS-II card is advisable."
-        },
-        {
-          "q": "Is V90 necessary for the X100VI?",
-          "a": "<b>V60 is sufficient for all recording modes.</b> V90 cards provide no practical benefit since the X100VI's maximum bitrate does not exceed V60 requirements. You can save money by sticking with V60 cards without compromising in-camera performance."
-        }
-      ],
-      "relatedDevices": [
-        "fujifilm-x100v",
-        "fujifilm-xe5",
-        "leica-q3",
-        "sony-a6700"
-      ],
-      "notes": "The most hyped camera of 2024. Known for its retro design and exceptional image quality. Extremely high search volume for accessories due to its popularity and limited availability."
-    },
-    {
       "id": "dji-osmo-action-4",
       "name": "DJI Osmo Action 4",
-      "category": "Action Cameras",
+      "category": "アクションカメラ",
       "slug": "dji-osmo-action-4",
       "searchTerms": [
         "dji action 4",
@@ -1946,13 +2300,12 @@
         "steam-deck",
         "lenovo-legion-go"
       ],
-      "notes": "Released mid-2024 as an upgraded version of the original ROG Ally, featuring improved battery life, better cooling, and a more robust UHS-II microSD card reader. The official SanDisk ROG Ally microSD card is optimized for this device.",
-      "imageUrl": "/img/devices/gaming-consoles/asus-rog-ally.webp"
+      "notes": "Released mid-2024 as an upgraded version of the original ROG Ally, featuring improved battery life, better cooling, and a more robust UHS-II microSD card reader. The official SanDisk ROG Ally microSD card is optimized for this device."
     },
     {
       "id": "canon-eos-r50",
       "name": "Canon EOS R50",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "canon-eos-r50",
       "searchTerms": [
         "canon r50 sd card",
@@ -2003,7 +2356,7 @@
     {
       "id": "canon-eos-r7",
       "name": "Canon EOS R7",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "canon-eos-r7",
       "searchTerms": [
         "canon r7 sd card",
@@ -2050,7 +2403,7 @@
     {
       "id": "canon-eos-r10",
       "name": "Canon EOS R10",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "canon-eos-r10",
       "searchTerms": [
         "canon r10 sd card",
@@ -2100,7 +2453,7 @@
     {
       "id": "canon-eos-r8",
       "name": "Canon EOS R8",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "canon-eos-r8",
       "searchTerms": [
         "canon r8 sd card",
@@ -2146,7 +2499,7 @@
     {
       "id": "canon-rebel-t7",
       "name": "Canon EOS Rebel T7 (EOS 2000D)",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "canon-rebel-t7",
       "searchTerms": [
         "canon rebel t7 sd card",
@@ -2199,7 +2552,7 @@
     {
       "id": "canon-g7x-mark-iii",
       "name": "Canon PowerShot G7 X Mark III",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "canon-g7x-mark-iii",
       "searchTerms": [
         "canon g7x mark iii sd card",
@@ -2246,13 +2599,12 @@
         "sony-zv1",
         "dji-osmo-pocket-3"
       ],
-      "notes": "A go-to camera for vloggers and content creators. Its significant popularity, especially on social media platforms like YouTube, contributes to extremely high search volume for compatible SD cards.",
-      "imageUrl": "/img/devices/cameras/canon-g7x-mark-iii.webp"
+      "notes": "A go-to camera for vloggers and content creators. Its significant popularity, especially on social media platforms like YouTube, contributes to extremely high search volume for compatible SD cards."
     },
     {
       "id": "canon-g7x-mark-ii",
       "name": "Canon PowerShot G7 X Mark II",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "canon-g7x-mark-ii",
       "searchTerms": [
         "canon g7x mark ii sd card",
@@ -2304,7 +2656,7 @@
     {
       "id": "dji-mini-4k",
       "name": "DJI Mini 4K",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "dji-mini-4k",
       "searchTerms": [
         "dji mini 4k sd card",
@@ -2354,7 +2706,7 @@
     {
       "id": "dji-mini-3",
       "name": "DJI Mini 3 (Non-Pro)",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "dji-mini-3",
       "searchTerms": [
         "dji mini 3 sd card",
@@ -2400,7 +2752,7 @@
     {
       "id": "fujifilm-xt5",
       "name": "Fujifilm X-T5",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "fujifilm-xt5",
       "searchTerms": [
         "fujifilm xt5 sd card",
@@ -2449,7 +2801,7 @@
     {
       "id": "fujifilm-xm5",
       "name": "Fujifilm X-M5",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "fujifilm-xm5",
       "searchTerms": [
         "fujifilm xm5 sd card",
@@ -2497,7 +2849,7 @@
     {
       "id": "fujifilm-xt30-ii",
       "name": "Fujifilm X-T30 II",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "fujifilm-xt30-ii",
       "searchTerms": [
         "fujifilm xt30 ii sd card",
@@ -2546,7 +2898,7 @@
     {
       "id": "fujifilm-xt50",
       "name": "Fujifilm X-T50",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "fujifilm-xt50",
       "searchTerms": [
         "fujifilm xt50 sd card",
@@ -2591,7 +2943,7 @@
     {
       "id": "sony-fx30",
       "name": "Sony FX30",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "sony-fx30",
       "searchTerms": [
         "sony fx30 sd card",
@@ -2641,7 +2993,7 @@
     {
       "id": "sony-fx3",
       "name": "Sony FX3",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "sony-fx3",
       "searchTerms": [
         "sony fx3 sd card",
@@ -2692,7 +3044,7 @@
     {
       "id": "fujifilm-xe5",
       "name": "Fujifilm X-E5",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "fujifilm-xe5",
       "searchTerms": [
         "fujifilm xe5 sd card",
@@ -2740,7 +3092,7 @@
     {
       "id": "fujifilm-x100v",
       "name": "Fujifilm X100V",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "fujifilm-x100v",
       "searchTerms": [
         "fujifilm x100v sd card",
@@ -2793,7 +3145,7 @@
     {
       "id": "fujifilm-xt3",
       "name": "Fujifilm X-T3",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "fujifilm-xt3",
       "searchTerms": [
         "fujifilm xt3 sd card",
@@ -2843,7 +3195,7 @@
     {
       "id": "insta360-go-3",
       "name": "Insta360 GO 3",
-      "category": "Action Cameras",
+      "category": "アクションカメラ",
       "slug": "insta360-go-3",
       "searchTerms": [
         "insta360 go 3 sd card",
@@ -2886,7 +3238,7 @@
     {
       "id": "insta360-ace-pro",
       "name": "Insta360 Ace Pro",
-      "category": "Action Cameras",
+      "category": "アクションカメラ",
       "slug": "insta360-ace-pro",
       "searchTerms": [
         "insta360 ace pro sd card",
@@ -2930,7 +3282,7 @@
     {
       "id": "insta360-one-x2",
       "name": "Insta360 ONE X2",
-      "category": "Action Cameras",
+      "category": "アクションカメラ",
       "slug": "insta360-one-x2",
       "searchTerms": [
         "insta360 one x2 sd card",
@@ -3025,13 +3377,12 @@
         "asus-rog-ally-x",
         "steam-deck"
       ],
-      "notes": "Released late 2023, the Lenovo Legion Go is known for its unique detachable controllers and the largest screen among current Windows handhelds. It features a microSD UHS-I slot (unlike the newer ROG Ally X, which has UHS-II).",
-      "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go.webp"
+      "notes": "Released late 2023, the Lenovo Legion Go is known for its unique detachable controllers and the largest screen among current Windows handhelds. It features a microSD UHS-I slot (unlike the newer ROG Ally X, which has UHS-II)."
     },
     {
       "id": "leica-q3",
       "name": "Leica Q3",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "leica-q3",
       "searchTerms": [
         "leica q3 sd card",
@@ -3081,7 +3432,7 @@
     {
       "id": "leica-q3-43",
       "name": "Leica Q3 43",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "leica-q3-43",
       "searchTerms": [
         "leica q3 43 sd card",
@@ -3127,7 +3478,7 @@
     {
       "id": "leica-m11",
       "name": "Leica M11",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "leica-m11",
       "searchTerms": [
         "leica m11 sd card",
@@ -3169,7 +3520,7 @@
     {
       "id": "leica-q2",
       "name": "Leica Q2",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "leica-q2",
       "searchTerms": [
         "leica q2 sd card",
@@ -3213,7 +3564,7 @@
     {
       "id": "leica-d-lux-8",
       "name": "Leica D-Lux 8",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "leica-d-lux-8",
       "searchTerms": [
         "leica d lux 8 sd card",
@@ -3261,7 +3612,7 @@
     {
       "id": "leica-m10",
       "name": "Leica M10",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "leica-m10",
       "searchTerms": [
         "leica m10 sd card",
@@ -3310,7 +3661,7 @@
     {
       "id": "panasonic-lumix-s9",
       "name": "Panasonic Lumix S9",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "panasonic-lumix-s9",
       "searchTerms": [
         "panasonic lumix s9 sd card",
@@ -3356,7 +3707,7 @@
     {
       "id": "panasonic-lumix-s5-iix",
       "name": "Panasonic Lumix S5 IIX",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "panasonic-lumix-s5-iix",
       "searchTerms": [
         "panasonic lumix s5 iix sd card",
@@ -3404,7 +3755,7 @@
     {
       "id": "panasonic-lumix-s5-ii",
       "name": "Panasonic Lumix S5 II",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "panasonic-lumix-s5-ii",
       "searchTerms": [
         "panasonic lumix s5 ii sd card",
@@ -3502,7 +3853,7 @@
     {
       "id": "nikon-d7500",
       "name": "Nikon D7500",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "nikon-d7500",
       "searchTerms": [
         "nikon d7500 sd card",
@@ -3554,59 +3905,9 @@
       "notes": "A popular APS-C DSLR from its release in 2017. It is still widely used by enthusiasts and semi-professionals for its strong performance. It has a strong presence on the used market. Features dual SD UHS-I slots."
     },
     {
-      "id": "nikon-zf",
-      "name": "Nikon Zf",
-      "category": "Cameras",
-      "slug": "nikon-zf",
-      "searchTerms": [
-        "nikon zf sd card",
-        "zf memory card",
-        "nikon zf storage"
-      ],
-      "sdCard": {
-        "type": "Dual SD UHS-II",
-        "minSpeed": "V60 (V90 for high frame rate video)",
-        "minWriteSpeed": "60 MB/s minimum, 90 MB/s recommended",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB"
-        ],
-        "maxCapacity": "No official limit",
-        "testedMaxCapacity": "512GB"
-      },
-      "whySpecs": "A retro-styled full-frame mirrorless camera with a 24MP sensor and advanced video features. V60 cards handle standard 4K recording and photography, but V90 is recommended for 4K 120fps slow-motion and the highest bitrate N-RAW video modes. Its dual UHS-II slots enable professional backup workflows and provide robust media management.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-pro-sd-uhs2"
-        },
-        {
-          "id": "lexar-professional-1000x-sd"
-        },
-        {
-          "id": "sony-tough-g-v90"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Why is the Nikon Zf such a popular camera?",
-          "a": "<b>The Nikon Zf has gained immense popularity by successfully blending a classic, retro design inspired by Nikon's film cameras with cutting-edge modern full-frame mirrorless performance.</b> It offers excellent image quality, advanced autofocus, and strong video capabilities in a stylish package. This combination of vintage aesthetics and contemporary technology appeals to a wide range of photography enthusiasts and professionals."
-        },
-        {
-          "q": "Do I need V90 cards for the Nikon Zf, or is V60 enough?",
-          "a": "<b>V60 cards are generally sufficient for most photography and standard 4K video recording on the Nikon Zf.</b> However, V90 cards become necessary if you plan to shoot 4K 120fps slow-motion video or utilize the highest bitrate N-RAW video recording modes. Most users can start with V60 cards and only consider V90 if their specific demanding video workflows require it."
-        }
-      ],
-      "relatedDevices": [
-        "nikon-z6-iii",
-        "nikon-z5",
-        "fujifilm-xt5"
-      ],
-      "notes": "Released in late 2023, the Nikon Zf has become a highly popular retro-styled full-frame mirrorless camera. It shares core technology with the Z6 III, offering strong performance in a distinct aesthetic package. Features dual SD UHS-II slots."
-    },
-    {
       "id": "nikon-z50-ii",
       "name": "Nikon Z50 II",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "nikon-z50-ii",
       "searchTerms": [
         "nikon z50 ii sd card",
@@ -3655,7 +3956,7 @@
     {
       "id": "nikon-z6-iii",
       "name": "Nikon Z6 III",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "nikon-z6-iii",
       "searchTerms": [
         "nikon z6 iii sd card",
@@ -3704,7 +4005,7 @@
     {
       "id": "nikon-z6-ii",
       "name": "Nikon Z6 II",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "nikon-z6-ii",
       "searchTerms": [
         "nikon z6 ii sd card",
@@ -3747,7 +4048,7 @@
     {
       "id": "nikon-d850",
       "name": "Nikon D850",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "nikon-d850",
       "searchTerms": [
         "nikon d850 sd card",
@@ -3803,7 +4104,7 @@
     {
       "id": "nikon-d750",
       "name": "Nikon D750",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "nikon-d750",
       "searchTerms": [
         "nikon d750 sd card",
@@ -3855,92 +4156,9 @@
       "notes": "An extremely popular full-frame DSLR that continues to see significant activity on the used market. It is highly regarded for its excellent value proposition and performance. Features dual SD UHS-I slots."
     },
     {
-      "id": "dji-mini-2-se",
-      "name": "DJI Mini 2 SE",
-      "category": "Drones",
-      "slug": "dji-mini-2-se",
-      "searchTerms": [
-        "dji mini 2 se sd card",
-        "mini 2 se microsd",
-        "dji mini 2 se storage"
-      ],
-      "sdCard": {
-        "type": "microSD UHS-I",
-        "minSpeed": "V30",
-        "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": [
-          "64GB",
-          "128GB"
-        ],
-        "maxCapacity": "256GB"
-      },
-      "whySpecs": "The Mini 2 SE records video up to 2.7K. DJI officially recommends a V30 speed class card to ensure smooth, stable recording without dropped frames. Reliability is critical for any drone operation.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-microsd"
-        },
-        {
-          "id": "lexar-professional-1000x-microsd"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Can I use a SanDisk Ultra card in the Mini 2 SE?",
-          "a": "<b>It is not recommended.</b> DJI specifies a U3/V30 speed class for reliable video recording. Slower cards like the SanDisk Ultra (U1) may cause recording to fail mid-flight, resulting in lost footage."
-        }
-      ],
-      "relatedDevices": [
-        "dji-mini-3",
-        "dji-mini-4k"
-      ],
-      "notes": "A very popular budget drone targeting beginners. Official maximum supported capacity is 256GB."
-    },
-    {
-      "id": "garmin-dash-cam-mini-2",
-      "name": "Garmin Dash Cam Mini 2",
-      "category": "Dash Cams",
-      "slug": "garmin-dash-cam-mini-2",
-      "searchTerms": [
-        "garmin dash cam mini 2 sd card",
-        "garmin mini 2 microsd",
-        "garmin dash cam card"
-      ],
-      "sdCard": {
-        "type": "High Endurance microSD",
-        "minSpeed": "U3 / Class 10",
-        "minWriteSpeed": "10 MB/s",
-        "recommendedCapacity": [
-          "64GB",
-          "128GB",
-          "256GB"
-        ],
-        "maxCapacity": "512GB"
-      },
-      "whySpecs": "Dash cams constantly rewrite data, which destroys non-endurance cards. A High Endurance card is mandatory. Garmin requires Class 10 minimum, but U3 is recommended for stable 1080p recording and reliability.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-max-endurance"
-        },
-        {
-          "id": "samsung-pro-endurance"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Why do I need a 'High Endurance' card for my Garmin?",
-          "a": "<b>Because non-endurance cards will fail.</b> Dash cams record in a continuous loop, writing and rewriting data constantly. This intense workload wears out standard cards quickly. High Endurance cards are specifically designed for this and last many times longer."
-        }
-      ],
-      "relatedDevices": [
-        "viofo-a229-duo",
-        "nextbase-622gw"
-      ],
-      "notes": "A best-selling compact dash cam. Garmin officially supports up to 512GB."
-    },
-    {
       "id": "nikon-z5",
       "name": "Nikon Z5",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "nikon-z5",
       "searchTerms": [
         "nikon z5 sd card",
@@ -3982,7 +4200,7 @@
     {
       "id": "canon-eos-r100",
       "name": "Canon EOS R100",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "canon-eos-r100",
       "searchTerms": [
         "canon r100 sd card",
@@ -4074,7 +4292,7 @@
     {
       "id": "sony-a7r-v",
       "name": "Sony A7R V",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "sony-a7r-v",
       "searchTerms": [
         "sony a7r v sd card",
@@ -4116,7 +4334,7 @@
     {
       "id": "nikon-d3500",
       "name": "Nikon D3500",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "nikon-d3500",
       "searchTerms": [
         "nikon d3500 sd card",
@@ -4161,7 +4379,7 @@
     {
       "id": "sony-zv-e10",
       "name": "Sony ZV-E10",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "sony-zv-e10",
       "searchTerms": [
         "sony zv-e10 sd card",
@@ -4198,13 +4416,12 @@
         "canon-eos-r50",
         "fujifilm-x-s20"
       ],
-      "notes": "Extremely popular vlogging camera. Massive search volume from content creators.",
-      "imageUrl": "/img/devices/cameras/sony-zv-e10.webp"
+      "notes": "Extremely popular vlogging camera. Massive search volume from content creators."
     },
     {
       "id": "sony-a7-iii",
       "name": "Sony a7 III",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "sony-a7-iii",
       "searchTerms": [
         "sony a7 iii sd card",
@@ -4345,7 +4562,7 @@
     {
       "id": "sony-a6400",
       "name": "Sony a6400",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "sony-a6400",
       "searchTerms": [
         "sony a6400 sd card",
@@ -4388,7 +4605,7 @@
     {
       "id": "fujifilm-x-s10",
       "name": "Fujifilm X-S10",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "fujifilm-x-s10",
       "searchTerms": [
         "fujifilm x-s10 sd card",
@@ -4434,7 +4651,7 @@
     {
       "id": "canon-eos-r6",
       "name": "Canon EOS R6",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "canon-eos-r6",
       "searchTerms": [
         "canon r6 sd card",
@@ -4613,7 +4830,7 @@
     {
       "id": "reolink-e1-pro",
       "name": "Reolink E1 Pro",
-      "category": "Security Cameras",
+      "category": "セキュリティカメラ",
       "slug": "reolink-e1-pro",
       "searchTerms": [
         "reolink e1 pro sd card",
@@ -4761,13 +4978,12 @@
       "relatedDevices": [
         "steam-deck"
       ],
-      "notes": "SteamOS-based Windows handheld variant with a UHS-I microSD slot. Designed primarily for game storage expansion rather than raw benchmark speeds.",
-      "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go-s.webp"
+      "notes": "SteamOS-based Windows handheld variant with a UHS-I microSD slot. Designed primarily for game storage expansion rather than raw benchmark speeds."
     },
     {
       "id": "gopro-max-2",
       "name": "GoPro Max 2",
-      "category": "Action Cameras",
+      "category": "アクションカメラ",
       "slug": "gopro-max-2",
       "searchTerms": [
         "gopro max 2",
@@ -4822,7 +5038,7 @@
     {
       "id": "nikon-d500",
       "name": "Nikon D500",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "nikon-d500",
       "searchTerms": [
         "nikon d500 sd card",
@@ -4872,7 +5088,7 @@
     {
       "id": "sony-a7r",
       "name": "Sony A7R",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "sony-a7r",
       "searchTerms": [
         "sony a7r sd card",
@@ -4929,7 +5145,7 @@
     {
       "id": "insta360-one-x3",
       "name": "Insta360 ONE X3",
-      "category": "Action Cameras",
+      "category": "アクションカメラ",
       "slug": "insta360-one-x3",
       "searchTerms": [
         "insta360 one x3 sd card",
@@ -4981,7 +5197,7 @@
     {
       "id": "autel-evo-ii-pro-v3",
       "name": "Autel EVO II Pro V3",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "autel-evo-ii-pro-v3",
       "searchTerms": [
         "autel evo ii pro v3 sd card",
@@ -5031,7 +5247,7 @@
     {
       "id": "autel-evo-nano-plus",
       "name": "Autel EVO Nano+",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "autel-evo-nano-plus",
       "searchTerms": [
         "autel nano plus sd card",
@@ -5074,7 +5290,7 @@
     {
       "id": "autel-evo-lite-plus",
       "name": "Autel EVO Lite+",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "autel-evo-lite-plus",
       "searchTerms": [
         "autel lite plus sd card",
@@ -5115,7 +5331,7 @@
     {
       "id": "potensic-atom",
       "name": "Potensic Atom",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "potensic-atom",
       "searchTerms": [
         "potensic atom sd card",
@@ -5165,7 +5381,7 @@
     {
       "id": "potensic-atom-se",
       "name": "Potensic Atom SE",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "potensic-atom-se",
       "searchTerms": [
         "potensic atom se sd card",
@@ -5207,7 +5423,7 @@
     {
       "id": "skydio-2-plus",
       "name": "Skydio 2+",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "skydio-2-plus",
       "searchTerms": [
         "skydio 2+ sd card",
@@ -5256,7 +5472,7 @@
     {
       "id": "skydio-x10",
       "name": "Skydio X10",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "skydio-x10",
       "searchTerms": [
         "skydio x10 sd card",
@@ -5297,7 +5513,7 @@
     {
       "id": "fimi-mini-3",
       "name": "FIMI Mini 3",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "fimi-mini-3",
       "searchTerms": [
         "fimi mini 3 sd card",
@@ -5340,7 +5556,7 @@
     {
       "id": "holy-stone-hs175d",
       "name": "Holy Stone HS175D",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "holy-stone-hs175d",
       "searchTerms": [
         "holy stone hs175d sd card",
@@ -5381,7 +5597,7 @@
     {
       "id": "holy-stone-hs720",
       "name": "Holy Stone HS720 / HS720E / HS720G",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "holy-stone-hs720",
       "searchTerms": [
         "holy stone hs720 sd card",
@@ -5423,7 +5639,7 @@
     {
       "id": "holy-stone-hs360s",
       "name": "Holy Stone HS360S",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "holy-stone-hs360s",
       "searchTerms": [
         "holy stone hs360s sd card",
@@ -5464,7 +5680,7 @@
     {
       "id": "hoverair-x1-pro",
       "name": "HoverAir X1 Pro",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "hoverair-x1-pro",
       "searchTerms": [
         "hoverair x1 pro sd card",
@@ -5507,7 +5723,7 @@
     {
       "id": "hoverair-x1-pro-max",
       "name": "HoverAir X1 Pro Max",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "hoverair-x1-pro-max",
       "searchTerms": [
         "hoverair x1 pro max sd card",
@@ -5552,90 +5768,11 @@
         "autel-evo-ii-pro-v3"
       ],
       "notes": "One of the few consumer drones offering 8K. High-speed media is a necessity, not a luxury."
-      },
-      {
-      "id": "iphone-15",
-      "name": "iPhone 15",
-      "category": "Mobile Devices",
-      "slug": "iphone-15",
-      "searchTerms": [
-        "iphone 15",
-        "iphone 15 pro",
-        "iphone 15 pro max"
-      ],
-      "sdCard": {
-        "type": "External via USB-C SD Reader",
-        "minSpeed": "No official requirement",
-        "recommendedCapacity": ["64GB", "128GB"],
-        "maxCapacity": "Limited by app storage"
-      },
-      "whySpecs": "iPhone 15 does not have SD card slot. Uses USB-C readers for external SD card access. Speed depends on reader, not device.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
-        }
-      ],
-      "relatedDevices": [
-        "iphone-14",
-        "iphone-13",
-        "ipad-pro"
-      ]
-      },
-      {
-      "id": "macbook-air",
-      "name": "MacBook Air",
-      "category": "Computers",
-      "slug": "macbook-air",
-      "searchTerms": [
-        "macbook air",
-        "macbook air m2",
-        "macbook air m3"
-      ],
-      "sdCard": {
-        "type": "External via USB-C Reader",
-        "minSpeed": "UHS-I recommended",
-        "recommendedCapacity": ["128GB", "256GB"]
-      },
-      "whySpecs": "MacBook Air lacks SD card slot. USB-C readers achieve full speed potential on modern models.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
-        }
-      ],
-      "relatedDevices": [
-        "macbook-pro",
-        "ipad-pro"
-      ]
-      },
-      {
-      "id": "iphone-14",
-      "name": "iPhone 14",
-      "category": "Mobile Devices",
-      "slug": "iphone-14",
-      "searchTerms": [
-        "iphone 14",
-        "iphone 14 pro"
-      ],
-      "sdCard": {
-        "type": "External via Lightning Reader",
-        "minSpeed": "UHS-I",
-        "recommendedCapacity": ["64GB", "128GB"]
-      },
-      "whySpecs": "iPhone 14 uses Lightning port. Lightning readers limited to USB 2.0 speeds for some models.",
-      "recommendedBrands": [
-        {
-          "id": "lexar-lightning-microsd"
-        }
-      ],
-      "relatedDevices": [
-        "iphone-15",
-        "iphone-13"
-      ]
-      },
-      {
+    },
+    {
       "id": "iphone-13",
       "name": "iPhone 13",
-      "category": "Mobile Devices",
+      "category": "モバイルデバイス",
       "slug": "iphone-13",
       "searchTerms": [
         "iphone 13",
@@ -5644,7 +5781,10 @@
       "sdCard": {
         "type": "External via Lightning Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "iPhone 13 uses Lightning port with microSD readers.",
       "recommendedBrands": [
@@ -5652,41 +5792,17 @@
           "id": "lexar-lightning-microsd"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "iphone-14",
         "iphone-12"
-      ]
-      },
-      {
-      "id": "ipad-air",
-      "name": "iPad Air",
-      "category": "Tablets",
-      "slug": "ipad-air",
-      "searchTerms": [
-        "ipad air",
-        "ipad air 5",
-        "ipad air 6"
       ],
-      "sdCard": {
-        "type": "External via USB-C Reader",
-        "minSpeed": "UHS-I",
-        "recommendedCapacity": ["128GB", "256GB"]
-      },
-      "whySpecs": "iPad Air M1 and newer use USB-C. Lightning models require Lightning readers.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
-        }
-      ],
-      "relatedDevices": [
-        "ipad-pro",
-        "ipad-air-3"
-      ]
-      },
-      {
+      "notes": ""
+    },
+    {
       "id": "dji-mini-3",
       "name": "DJI Mini 3",
-      "category": "Drones",
+      "category": "ドローン",
       "slug": "dji-mini-3",
       "searchTerms": [
         "dji mini 3",
@@ -5696,7 +5812,10 @@
         "type": "microSD UHS-I",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": ["128GB", "256GB"]
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
       },
       "whySpecs": "DJI Mini 3 records 4K video. V30 ensures stable recording.",
       "recommendedBrands": [
@@ -5704,15 +5823,17 @@
           "id": "sandisk-extreme-microsd"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "dji-mini-4-pro",
         "dji-mini-2-se"
-      ]
-      },
-      {
+      ],
+      "notes": ""
+    },
+    {
       "id": "wyze-cam-v3",
       "name": "Wyze Cam v3",
-      "category": "Action Cameras",
+      "category": "アクションカメラ",
       "slug": "wyze-cam-v3",
       "searchTerms": [
         "wyze cam v3",
@@ -5721,7 +5842,10 @@
       "sdCard": {
         "type": "microSD",
         "minSpeed": "Class 10",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "Wyze Cam v3 supports microSD for local recording storage.",
       "recommendedBrands": [
@@ -5729,14 +5853,16 @@
           "id": "sandisk-ultra-microsd"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "gopro-hero-13"
-      ]
-      },
-      {
+      ],
+      "notes": ""
+    },
+    {
       "id": "iphone-14-pro-max",
       "name": "iPhone 14 Pro Max",
-      "category": "Mobile Devices",
+      "category": "モバイルデバイス",
       "slug": "iphone-14-pro-max",
       "searchTerms": [
         "iphone 14 pro max",
@@ -5745,7 +5871,10 @@
       "sdCard": {
         "type": "External via Lightning Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "iPhone 14 Pro Max uses Lightning port.",
       "recommendedBrands": [
@@ -5753,15 +5882,17 @@
           "id": "lexar-lightning-microsd"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "iphone-14",
         "iphone-15"
-      ]
-      },
-      {
+      ],
+      "notes": ""
+    },
+    {
       "id": "ipad-air-3",
       "name": "iPad Air 3rd Generation",
-      "category": "Tablets",
+      "category": "タブレット",
       "slug": "ipad-air-3",
       "searchTerms": [
         "ipad air 3",
@@ -5770,7 +5901,10 @@
       "sdCard": {
         "type": "External via Lightning Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "iPad Air 3 uses Lightning port (older model).",
       "recommendedBrands": [
@@ -5778,15 +5912,17 @@
           "id": "lexar-lightning-microsd"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "ipad-air",
         "ipad-pro"
-      ]
-      },
-      {
+      ],
+      "notes": ""
+    },
+    {
       "id": "iphone-se",
       "name": "iPhone SE",
-      "category": "Mobile Devices",
+      "category": "モバイルデバイス",
       "slug": "iphone-se",
       "searchTerms": [
         "iphone se",
@@ -5795,7 +5931,9 @@
       "sdCard": {
         "type": "External via Lightning Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["64GB"]
+        "recommendedCapacity": [
+          "64GB"
+        ]
       },
       "whySpecs": "iPhone SE uses Lightning connector.",
       "recommendedBrands": [
@@ -5803,40 +5941,17 @@
           "id": "lexar-lightning-microsd"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "iphone-13",
         "iphone-14"
-      ]
-      },
-      {
-      "id": "samsung-galaxy-s23",
-      "name": "Samsung Galaxy S23",
-      "category": "Mobile Devices",
-      "slug": "samsung-galaxy-s23",
-      "searchTerms": [
-        "samsung galaxy s23",
-        "galaxy s23"
       ],
-      "sdCard": {
-        "type": "External via USB-C Reader (no slot)",
-        "minSpeed": "No requirement",
-        "recommendedCapacity": ["64GB", "128GB"]
-      },
-      "whySpecs": "Galaxy S23 removed SD card slot. Uses USB-C readers for external access.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
-        }
-      ],
-      "relatedDevices": [
-        "google-pixel-8",
-        "samsung-galaxy-s24"
-      ]
-      },
-      {
+      "notes": ""
+    },
+    {
       "id": "google-pixel-8",
       "name": "Google Pixel 8",
-      "category": "Mobile Devices",
+      "category": "モバイルデバイス",
       "slug": "google-pixel-8",
       "searchTerms": [
         "google pixel 8",
@@ -5845,7 +5960,10 @@
       "sdCard": {
         "type": "External via USB-C Reader (no slot)",
         "minSpeed": "No requirement",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "Pixel 8 does not have SD card slot. Uses USB-C readers.",
       "recommendedBrands": [
@@ -5853,12 +5971,14 @@
           "id": "sandisk-extreme-pro-uhs2-usbc"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "samsung-galaxy-s23",
         "iphone-15"
-      ]
-      },
-      {
+      ],
+      "notes": ""
+    },
+    {
       "id": "trail-cameras",
       "name": "Trail Cameras",
       "category": "Hunting Equipment",
@@ -5871,7 +5991,10 @@
       "sdCard": {
         "type": "SD / SDHC",
         "minSpeed": "Class 10",
-        "recommendedCapacity": ["32GB", "64GB"]
+        "recommendedCapacity": [
+          "32GB",
+          "64GB"
+        ]
       },
       "whySpecs": "Trail cameras record to SD cards. Capacity dependent on resolution and frame rate.",
       "recommendedBrands": [
@@ -5879,12 +6002,14 @@
           "id": "sandisk-ultra-microsd"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "gopro-hero-13",
         "wyze-cam-v3"
-      ]
-      },
-      {
+      ],
+      "notes": ""
+    },
+    {
       "id": "hp-chromebook",
       "name": "HP Chromebook",
       "category": "Computers",
@@ -5896,7 +6021,10 @@
       "sdCard": {
         "type": "External via USB Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "Chromebooks support external SD readers via USB.",
       "recommendedBrands": [
@@ -5904,11 +6032,13 @@
           "id": "htrenc-sd-card-reader"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "dell-xps"
-      ]
-      },
-      {
+      ],
+      "notes": ""
+    },
+    {
       "id": "dell-xps",
       "name": "Dell XPS Laptop",
       "category": "Computers",
@@ -5920,7 +6050,10 @@
       "sdCard": {
         "type": "External via USB-C Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["128GB", "256GB"]
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
       },
       "whySpecs": "Dell XPS laptops typically lack SD slot. USB-C readers compatible.",
       "recommendedBrands": [
@@ -5928,15 +6061,17 @@
           "id": "sandisk-extreme-pro-uhs2-usbc"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "macbook-pro",
         "hp-chromebook"
-      ]
-      },
-      {
+      ],
+      "notes": ""
+    },
+    {
       "id": "canon-rebel-t7",
       "name": "Canon EOS Rebel T7",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "canon-rebel-t7",
       "searchTerms": [
         "canon rebel t7",
@@ -5946,7 +6081,10 @@
         "type": "SD UHS-I",
         "minSpeed": "Class 10",
         "minWriteSpeed": "10 MB/s",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "Entry-level DSLR. Class 10 sufficient for 1080p video.",
       "recommendedBrands": [
@@ -5954,66 +6092,16 @@
           "id": "sandisk-ultra-microsd"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "canon-eos-r5"
-      ]
-      },
-      {
-      "id": "macbook-pro",
-      "name": "MacBook Pro",
-      "category": "Computers",
-      "slug": "macbook-pro",
-      "searchTerms": [
-        "macbook pro",
-        "macbook pro m3",
-        "macbook pro m4"
       ],
-      "sdCard": {
-        "type": "External via USB-C/Thunderbolt Reader",
-        "minSpeed": "UHS-I to UHS-II",
-        "recommendedCapacity": ["128GB", "256GB"]
-      },
-      "whySpecs": "MacBook Pro uses Thunderbolt/USB-C. High-speed readers recommended for video workflows.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
-        }
-      ],
-      "relatedDevices": [
-        "macbook-air",
-        "canon-eos-r5"
-      ]
-      },
-      {
-      "id": "ipad-pro",
-      "name": "iPad Pro",
-      "category": "Tablets",
-      "slug": "ipad-pro",
-      "searchTerms": [
-        "ipad pro",
-        "ipad pro 11",
-        "ipad pro 12.9"
-      ],
-      "sdCard": {
-        "type": "External via USB-C Reader",
-        "minSpeed": "UHS-I to UHS-II",
-        "recommendedCapacity": ["128GB", "256GB"]
-      },
-      "whySpecs": "iPad Pro uses USB-C or Thunderbolt. Supports fast external readers.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
-        }
-      ],
-      "relatedDevices": [
-        "ipad-air",
-        "macbook-pro"
-      ]
-      },
-      {
+      "notes": ""
+    },
+    {
       "id": "ipad-9th-gen",
       "name": "iPad 9th Generation",
-      "category": "Tablets",
+      "category": "タブレット",
       "slug": "ipad-9th-gen",
       "searchTerms": [
         "ipad 9th generation",
@@ -6022,7 +6110,10 @@
       "sdCard": {
         "type": "External via Lightning Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["64GB", "128GB"]
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
       },
       "whySpecs": "iPad 9th Gen uses Lightning port.",
       "recommendedBrands": [
@@ -6030,12 +6121,14 @@
           "id": "lexar-lightning-microsd"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "ipad-air",
         "iphone-13"
-      ]
-      },
-      {
+      ],
+      "notes": ""
+    },
+    {
       "id": "windows-laptop",
       "name": "Windows Laptop",
       "category": "Computers",
@@ -6047,7 +6140,10 @@
       "sdCard": {
         "type": "External via USB Reader",
         "minSpeed": "UHS-I",
-        "recommendedCapacity": ["128GB", "256GB"]
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
       },
       "whySpecs": "Most Windows laptops lack SD slot. USB readers required.",
       "recommendedBrands": [
@@ -6055,15 +6151,17 @@
           "id": "htrenc-sd-card-reader"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "dell-xps",
         "macbook-pro"
-      ]
-      },
-      {
+      ],
+      "notes": ""
+    },
+    {
       "id": "sony-a1",
       "name": "Sony A1",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "sony-a1",
       "searchTerms": [
         "sony a1",
@@ -6073,7 +6171,10 @@
         "type": "CFexpress Type A / SD UHS-II",
         "minSpeed": "V60",
         "minWriteSpeed": "60 MB/s",
-        "recommendedCapacity": ["128GB", "256GB"]
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
       },
       "whySpecs": "Professional mirrorless camera. Dual slots for CFexpress Type A and SD UHS-II.",
       "recommendedBrands": [
@@ -6081,15 +6182,17 @@
           "id": "sony-mrw-g2"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "canon-eos-r5",
         "nikon-z9"
-      ]
-      },
-      {
+      ],
+      "notes": ""
+    },
+    {
       "id": "nikon-d850",
       "name": "Nikon D850",
-      "category": "Cameras",
+      "category": "カメラ",
       "slug": "nikon-d850",
       "searchTerms": [
         "nikon d850",
@@ -6099,7 +6202,10 @@
         "type": "SD UHS-II / XQD",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": ["128GB", "256GB"]
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ]
       },
       "whySpecs": "Professional DSLR. Dual slots support both SD UHS-II and legacy XQD cards.",
       "recommendedBrands": [
@@ -6107,12 +6213,14 @@
           "id": "sony-mrw-g1"
         }
       ],
+      "faq": [],
       "relatedDevices": [
         "nikon-z9",
         "canon-eos-r5"
-      ]
-      },
-      {
+      ],
+      "notes": ""
+    },
+    {
       "id": "anker-powerexpand-2in1",
       "name": "Anker PowerExpand+ 2-in-1 Reader",
       "category": "Accessories",
@@ -6124,10 +6232,12 @@
       "sdCard": {
         "type": "N/A - This is a reader device, not a device using SD cards"
       },
+      "faq": [],
       "relatedDevices": [
         "macbook-air",
         "ipad-air"
-      ]
-      }
-      ]
-      }
+      ],
+      "notes": ""
+    }
+  ]
+}

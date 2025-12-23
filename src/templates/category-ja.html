@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{CATEGORY_TITLE}}</title>
+  <meta name="description" content="{{CATEGORY_DESCRIPTION}}">
+  <link rel="canonical" href="{{CATEGORY_URL}}">
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{CATEGORY_TITLE}}">
+  <meta property="og:description" content="{{CATEGORY_DESCRIPTION}}">
+  <meta property="og:image" content="https://sdcardchecker.com/img/og-category.webp">
+  <meta property="og:url" content="{{CATEGORY_URL}}">
+  <meta property="og:site_name" content="SD Card Checker">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{CATEGORY_TITLE}}">
+  <meta name="twitter:description" content="{{CATEGORY_DESCRIPTION}}">
+  <meta name="twitter:image" content="https://sdcardchecker.com/img/og-category.webp">
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {{BREADCRUMB_SCHEMA}}
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="/assets/js/search.js"></script>
+  {{GROW_SCRIPT}}
+  </head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/ja/" class="text-blue-600 hover:underline">ホーム</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">{{CATEGORY_NAME}}</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="mb-12 flex items-center gap-6">
+        <div class="category-icon-hero">
+          <img 
+            src="/img/brand/icon-{{CATEGORY_ICON}}.webp" 
+            alt="{{CATEGORY_NAME}} アイコン" 
+            width="80" 
+            height="80" 
+            loading="eager"
+            decoding="async"
+          >
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900">
+          {{CATEGORY_NAME}}向けの最高のSDカード
+        </h1>
+      </div>
+
+      <!-- Category Introduction Section - More Prominent -->
+      <section class="category-intro-section bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-lg p-6 mb-12 shadow-sm">
+        <p class="text-lg text-slate-800 leading-relaxed font-medium">{{CATEGORY_INTRO}}</p>
+      </section>
+
+    <!-- Devices Grid -->
+    <section x-data="categoryDevices()" x-init="init()">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">すべての{{CATEGORY_NAME}}デバイス</h2>
+      
+      <!-- Modern Filter Buttons -->
+      <div class="mb-8 flex flex-wrap gap-3 items-center" x-cloak>
+        <!-- Clear All Button -->
+        <button 
+          @click="clearAllFilters()" 
+          :class="{
+            'bg-red-100 text-red-700 border-red-300 hover:bg-red-200': hasActiveFilters(),
+            'bg-slate-100 text-slate-400 border-slate-300 cursor-not-allowed': !hasActiveFilters()
+          }"
+          class="px-3 py-2 rounded-full border font-medium text-sm transition-all duration-200 flex items-center gap-2"
+          :disabled="!hasActiveFilters()"
+        >
+          <i class="fas fa-times text-lg leading-none"></i>
+          クリア
+        </button>
+        
+        <!-- Brand Filter Buttons -->
+        <template x-for="brand in availableBrands" :key="brand">
+          <button 
+            @click="toggleBrand(brand)" 
+            :class="{
+              'bg-blue-600 text-white border-blue-700': isSelected(brand),
+              'bg-white text-slate-700 border-slate-300 hover:border-blue-400': !isSelected(brand)
+            }"
+            class="px-4 py-2 rounded-full border font-medium text-sm transition-all duration-200 hover:shadow-md"
+            x-text="brand"
+          ></button>
+        </template>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="deviceGrid">
+        {{DEVICE_CARDS_HTML}}
+      </div>
+    </section>
+    </main>
+
+    {{SIDEBAR}}
+  </div>
+
+  {{FOOTER}}
+
+  <script>
+    // Category Devices Filter Component
+    function categoryDevices() {
+      return {
+        selectedBrands: [],
+        availableBrands: [],
+        allDevices: [],
+
+        init() {
+          this.loadDevices();
+        },
+
+        loadDevices() {
+          fetch('/data/devices-ja.json')
+            .then(res => res.json())
+            .then(data => {
+              // Filter devices to only those in this category
+              const categoryName = '{{CATEGORY_NAME}}';
+              this.allDevices = data.devices.filter(d => d.category === categoryName);
+              
+              // Extract unique device brands from device names
+              const brands = new Set();
+              this.allDevices.forEach(device => {
+                const brand = this.extractDeviceBrand(device.name);
+                if (brand) brands.add(brand);
+              });
+              this.availableBrands = Array.from(brands).sort();
+              
+              // Select all brands by default
+              this.selectedBrands = [...this.availableBrands];
+              this.filterByBrand();
+            })
+            .catch(err => console.error('Failed to load devices:', err));
+        },
+
+        extractDeviceBrand(deviceName) {
+          // Extract manufacturer from device name
+          // "Canon EOS R5" -> "Canon", "Sony A6700" -> "Sony", etc.
+          const parts = deviceName.split(' ');
+          return parts.length > 0 ? parts[0] : null;
+        },
+
+        toggleBrand(brand) {
+          const index = this.selectedBrands.indexOf(brand);
+          if (index > -1) {
+            this.selectedBrands.splice(index, 1);
+          } else {
+            this.selectedBrands.push(brand);
+          }
+          this.filterByBrand();
+        },
+
+        isSelected(brand) {
+          return this.selectedBrands.includes(brand);
+        },
+
+        hasActiveFilters() {
+          return this.selectedBrands.length < this.availableBrands.length;
+        },
+
+        clearAllFilters() {
+          this.selectedBrands = [...this.availableBrands];
+          this.filterByBrand();
+        },
+
+        filterByBrand() {
+          const deviceGrid = document.getElementById('deviceGrid');
+          if (!deviceGrid) return;
+          
+          const cards = deviceGrid.querySelectorAll('.device-card');
+          cards.forEach(card => {
+            const deviceName = card.querySelector('.device-card-name')?.textContent || '';
+            const brand = this.extractDeviceBrand(deviceName);
+            card.style.display = (this.selectedBrands.includes(brand)) ? '' : 'none';
+          });
+        }
+      };
+    }
+
+    // Add groupedDevices method to deviceSearch component
+    document.addEventListener('alpine:init', () => {
+      Alpine.data('deviceSearch', () => ({
+        query: '',
+        allDevices: [],
+        filtered: [],
+        open: false,
+
+        init() {
+          this.loadDevices();
+        },
+
+        loadDevices() {
+          fetch('/data/devices-ja.json')
+            .then(res => res.json())
+            .then(data => {
+              this.allDevices = data.devices;
+              this.filtered = this.allDevices.slice(0, 30);
+            })
+            .catch(err => console.error('Failed to load devices:', err));
+        },
+
+        filterDevices() {
+          const q = this.query.toLowerCase();
+          if (!q) {
+            this.filtered = this.allDevices.slice(0, 30);
+            return;
+          }
+
+          this.filtered = this.allDevices.filter(device =>
+            device.name.toLowerCase().includes(q) ||
+            device.category.toLowerCase().includes(q) ||
+            (device.searchTerms && device.searchTerms.some(term =>
+              term.toLowerCase().includes(q)
+            ))
+          );
+        },
+
+        groupedDevices() {
+          const grouped = {};
+          this.filtered.forEach(device => {
+            if (!grouped[device.category]) {
+              grouped[device.category] = [];
+            }
+            grouped[device.category].push(device);
+          });
+          return Object.keys(grouped).sort().reduce((acc, key) => {
+            acc[key] = grouped[key];
+            return acc;
+          }, {});
+        },
+
+        handleKeydown(e) {
+          if (e.key === 'Escape') {
+            this.open = false;
+          }
+        }
+      }));
+    });
+  </script>
+
+  <style>
+    .device-card {
+      @apply bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all text-center;
+    }
+
+    .device-card-name {
+      @apply font-bold text-slate-900 mb-2 text-lg md:text-xl lg:text-2xl;
+    }
+
+    .device-card-info {
+      @apply text-sm text-slate-600 mb-4;
+    }
+
+    .device-card-link {
+      @apply text-blue-600 hover:text-blue-700 font-semibold transition-colors;
+    }
+  </style>
+</body>
+</html>

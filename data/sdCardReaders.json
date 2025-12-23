@@ -1204,6 +1204,380 @@
         "sony-a1",
         "fujifilm-x-h2"
       ]
+    },
+    {
+     "id": "hicober-usbc-braided-reader",
+     "slug": "hicober-usbc-braided-reader",
+     "name": "Hicober USB-C to SD Card Reader",
+     "brand": "Hicober",
+     "model": "UCN3298",
+     "type": "Dongle",
+     "interface": [
+       "USB-C"
+     ],
+     "supportedSlots": [
+       "SD",
+       "microSD"
+     ],
+     "maxSpeed": "UHS-I (104 MB/s)",
+     "transferRate": "5Gbps",
+     "features": [
+       "Braided Nylon Cable",
+       "Space Grey Aluminum",
+       "Simultaneous Read/Write",
+       "Plug and Play"
+     ],
+     "compatibility": {
+       "devices": [
+         "MacBook Pro",
+         "iPad Air",
+         "iPhone 15/16",
+         "Samsung Galaxy S24"
+       ],
+       "os": [
+         "macOS",
+         "Windows",
+         "Android",
+         "iOS"
+       ]
+     },
+     "targetAudience": [
+       "MacBook Users",
+       "Mobile Photographers"
+     ],
+     "priceTier": "Budget",
+     "priceSymbol": "$",
+     "priceEstimate": "13",
+     "pros": "Durable braided cable prevents fraying. Matches Apple's Space Grey aesthetic perfectly. Works with phone cases.",
+     "cons": "Speeds limited to UHS-I (approx 90MB/s). Cable is short for desktop use.",
+     "bestFor": [
+       "macbook-pro",
+       "iphone-15",
+       "ipad-pro"
+     ],
+     "amazonSearchUrl": "https://amazon.com/s?k=Hicober+USB+C+SD+Card+Reader",
+     "relatedReaders": [
+       "anker-powerexpand-2in1",
+       "ugreen-2in1-usbc-usb3"
+     ],
+     "whyChooseThis": "The braided cable makes it significantly more durable than standard plastic dongles, and it's one of the most reliable options for iPhone 15/16 users.",
+     "metaDescription": "Review of the Hicober USB-C SD Card Reader. We test the braided cable durability and transfer speeds on iPhone 15 and MacBook Pro.",
+     "faq": [
+       {
+         "q": "Does the Hicober reader work with iPhone 15 and iPhone 16?",
+         "a": "Yes. It connects directly to the USB-C port on iPhone 15 and 16 series. It allows you to import photos directly to the Photos app or manage files via the Files app."
+       },
+       {
+         "q": "Can I use both SD and microSD slots at the same time?",
+         "a": "Yes, the Hicober UCN3298 supports dual-card reading, meaning you can transfer files between an SD card and a microSD card simultaneously."
+       },
+       {
+         "q": "Is the cable durable?",
+         "a": "Yes, the reader features a nylon braided cable which offers better strain relief and longevity compared to standard rubber cables."
+       }
+     ],
+     "relatedDevices": [
+       "iphone-15",
+       "macbook-air",
+       "dji-mini-3"
+     ]
+    },
+    {
+     "id": "kikosaka-3in1-universal",
+     "slug": "kikosaka-3in1-universal",
+     "name": "Kikosaka 3-in-1 SD Card Reader",
+     "brand": "Kikosaka",
+     "model": "Universal 3-in-1",
+     "type": "Stick / Multi-Interface",
+     "interface": [
+       "Lightning",
+       "USB-C",
+       "USB-A 3.0"
+     ],
+     "supportedSlots": [
+       "SD",
+       "microSD"
+     ],
+     "maxSpeed": "UHS-I",
+     "transferRate": "5Gbps (USB) / 480Mbps (Lightning)",
+     "features": [
+       "Three Connectors",
+       "Magnetic Caps",
+       "Compact Design",
+       "Broad Compatibility"
+     ],
+     "compatibility": {
+       "devices": [
+         "iPhone (Lightning)",
+         "iPhone 15 (USB-C)",
+         "PC",
+         "Mac",
+         "Android"
+       ],
+       "os": [
+         "iOS",
+         "Android",
+         "Windows",
+         "macOS"
+       ]
+     },
+     "targetAudience": [
+       "Families with mixed devices"
+     ],
+     "priceTier": "Budget",
+     "priceSymbol": "$",
+     "priceEstimate": "14",
+     "pros": "One reader for every device you own. Solves the problem of transferring data between an old iPhone and a new laptop.",
+     "cons": "Lightning transfer speeds are slower (USB 2.0 speeds). Caps can be easy to misplace.",
+     "bestFor": [
+       "mixed-ecosystems",
+       "travel",
+       "iphone-13"
+     ],
+     "amazonSearchUrl": "https://amazon.com/s?k=Kikosaka+3+in+1+SD+Card+Reader",
+     "relatedReaders": [
+       "ugreen-2in1-usbc-usb3"
+     ],
+     "whyChooseThis": "The ultimate 'Swiss Army Knife' of card readers. If you have an older Lightning iPhone, a USB-C iPad, and a USB-A work laptop, this single device works with all of them.",
+     "metaDescription": "Kikosaka 3-in-1 Reader review. Testing the Lightning, USB-C, and USB-A connectors for cross-platform compatibility.",
+     "faq": [
+       {
+         "q": "Do I need an app to use the Kikosaka 3-in-1 on iPhone?",
+         "a": "No. on iOS 13 and later, it is plug-and-play via the native 'Files' app. You can find the card listed under 'Locations'."
+       },
+       {
+         "q": "Why is the Lightning transfer slower than USB-C?",
+         "a": "The Lightning connector is limited to USB 2.0 speeds (approx 30-480 Mbps) by Apple's design, whereas the USB-C end supports USB 3.0 speeds (up to 5Gbps)."
+       },
+       {
+         "q": "Does it fit with thick phone cases?",
+         "a": "It depends on the case. The connectors extend out slightly, but very rugged cases (like Otterbox Defender) might block the port, requiring you to remove the case."
+       }
+     ],
+     "relatedDevices": [
+       "iphone-13",
+       "ipad-9th-gen",
+       "windows-laptop"
+     ]
+    },
+    {
+     "id": "kikosaka-lightning-charging-reader",
+     "slug": "kikosaka-lightning-charging-reader",
+     "name": "Kikosaka Lightning SD Reader with Charging",
+     "brand": "Kikosaka",
+     "model": "Lightning 4-in-1 Adapter",
+     "type": "Dongle",
+     "interface": [
+       "Lightning"
+     ],
+     "supportedSlots": [
+       "SD",
+       "microSD",
+       "USB-A Port (for peripherals)"
+     ],
+     "maxSpeed": "USB 2.0 Speed",
+     "transferRate": "480Mbps",
+     "features": [
+       "Charging Pass-through",
+       "USB Peripheral Port",
+       "Plug and Play"
+     ],
+     "compatibility": {
+       "devices": [
+         "iPhone 14 and older",
+         "iPad (Lightning models)"
+       ],
+       "os": [
+         "iOS"
+       ]
+     },
+     "targetAudience": [
+       "Gamers",
+       "Content Creators on iPhone"
+     ],
+     "priceTier": "Budget",
+     "priceSymbol": "$",
+     "priceEstimate": "12",
+     "pros": "Allows you to charge your iPhone while transferring photos or using a USB keyboard/mouse. Includes a USB-A port for flash drives.",
+     "cons": "Only for Lightning devices. Slow USB 2.0 transfer speeds.",
+     "bestFor": [
+       "iphone-14",
+       "iphone-12",
+       "ios-gaming"
+     ],
+     "amazonSearchUrl": "https://amazon.com/s?k=Kikosaka+Lightning+to+SD+Card+Reader+Charging",
+     "relatedReaders": [
+       "lexar-lightning-microsd"
+     ],
+     "whyChooseThis": "Battery drain is a major issue when transferring large video files. This reader includes a charging port so you never run out of power during an import.",
+     "metaDescription": "Review of the Kikosaka Lightning Reader with Charging Port. Does it really charge while transferring data?",
+     "faq": [
+       {
+         "q": "Can I charge my iPhone while reading an SD card?",
+         "a": "Yes. The adapter features a female Lightning port specifically for connecting your charger, powering the phone and the card reader simultaneously."
+       },
+       {
+         "q": "What is the extra USB port for?",
+         "a": "The USB-A port allows you to connect USB peripherals like a MIDI keyboard, mouse, or a USB thumb drive to your iPhone/iPad."
+       },
+       {
+         "q": "Will this work with the new iPhone 15?",
+         "a": "No. This device uses a Lightning connector. iPhone 15 and newer use USB-C. You need a USB-C reader for those devices."
+       }
+     ],
+     "relatedDevices": [
+       "iphone-14-pro-max",
+       "ipad-air-3",
+       "iphone-se"
+     ]
+    },
+    {
+     "id": "yofeepop-2in1-sd-reader",
+     "slug": "yofeepop-2in1-sd-reader",
+     "name": "Yofeepop 2-in-1 SD Card Reader",
+     "brand": "Yofeepop",
+     "model": "Dual-Slot OTG",
+     "type": "Dongle",
+     "interface": [
+       "USB-C",
+       "USB-A"
+     ],
+     "supportedSlots": [
+       "SD",
+       "microSD"
+     ],
+     "maxSpeed": "UHS-I",
+     "transferRate": "5Gbps",
+     "features": [
+       "Dual Interface (USB-A & C)",
+       "OTG Function",
+       "Portable Design"
+     ],
+     "compatibility": {
+       "devices": [
+         "Android Phones",
+         "Laptops",
+         "Desktops"
+       ],
+       "os": [
+         "Windows",
+         "Android",
+         "macOS",
+         "Linux"
+       ]
+     },
+     "targetAudience": [
+       "Budget Conscious Users",
+       "Android Users"
+     ],
+     "priceTier": "Budget",
+     "priceSymbol": "$",
+     "priceEstimate": "10",
+     "pros": "Extremely affordable. Covers both legacy computers (USB-A) and modern phones (USB-C).",
+     "cons": "Build quality is basic plastic. Caps are detachable and easily lost.",
+     "bestFor": [
+       "android",
+       "budget-setup"
+     ],
+     "amazonSearchUrl": "https://amazon.com/s?k=Yofeepop+SD+Card+Reader",
+     "relatedReaders": [
+       "ugreen-2in1-usbc-usb3",
+       "htrenc-sd-card-reader"
+     ],
+     "whyChooseThis": "One of the most affordable ways to get photos off a camera and onto an Android phone or PC. A simple, no-frills utility tool.",
+     "metaDescription": "Yofeepop 2-in-1 SD Card Reader review. A budget-friendly OTG solution for Android and PC users.",
+     "faq": [
+       {
+         "q": "Does the Yofeepop reader require drivers?",
+         "a": "No, it is a plug-and-play device for Windows, Mac, Linux, and Android. No driver installation is needed."
+       },
+       {
+         "q": "Can I use this to view trail cam photos on my phone?",
+         "a": "Yes, as long as your Android phone supports OTG (On-The-Go), which most modern phones do. Simply plug it into the USB-C charging port."
+       },
+       {
+         "q": "Does it support UHS-II speeds?",
+         "a": "No, this is a standard UHS-I reader. It will read UHS-II cards, but only at UHS-I speeds (approx 90-100 MB/s)."
+       }
+     ],
+     "relatedDevices": [
+       "samsung-galaxy-s23",
+       "google-pixel-8",
+       "trail-cameras"
+     ]
+    },
+    {
+     "id": "htrenc-sd-card-reader",
+     "slug": "htrenc-sd-card-reader",
+     "name": "Htrenc SD Card Reader",
+     "brand": "Htrenc",
+     "model": "USB 3.0 Dual Slot",
+     "type": "Stick",
+     "interface": [
+       "USB-A 3.0",
+       "USB-C"
+     ],
+     "supportedSlots": [
+       "SD",
+       "microSD"
+     ],
+     "maxSpeed": "UHS-I",
+     "transferRate": "5Gbps",
+     "features": [
+       "Protective Caps",
+       "Lanyard Hole",
+       "Compact Size"
+     ],
+     "compatibility": {
+       "devices": [
+         "PC",
+         "Mac",
+         "Tablets"
+       ],
+       "os": [
+         "Windows",
+         "macOS",
+         "ChromeOS"
+       ]
+     },
+     "targetAudience": [
+       "Students",
+       "Office Workers"
+     ],
+     "priceTier": "Budget",
+     "priceSymbol": "$",
+     "priceEstimate": "11",
+     "pros": "Reliable USB 3.0 speeds. Tightly fitting caps protect connectors from dust in bags.",
+     "cons": "Slightly wider body may block adjacent USB ports on some laptops.",
+     "bestFor": [
+       "office-use",
+       "school"
+     ],
+     "amazonSearchUrl": "https://amazon.com/s?k=Htrenc+SD+Card+Reader",
+     "relatedReaders": [
+       "yofeepop-2in1-sd-reader"
+     ],
+     "whyChooseThis": "A solid, low-cost choice for a backpack spare. The dual-cap design offers better protection than many open-port readers.",
+     "metaDescription": "Htrenc USB 3.0 SD Card Reader review. Performance testing on Windows and Mac for daily office tasks.",
+     "faq": [
+       {
+         "q": "Is the Htrenc reader compatible with Chromebooks?",
+         "a": "Yes, it works natively with ChromeOS. You can plug it in and access files immediately through the Files app."
+       },
+       {
+         "q": "What is the maximum capacity SD card it supports?",
+         "a": "It supports SDXC cards up to 2TB, including standard 64GB, 128GB, and 256GB cards used in most cameras."
+       },
+       {
+         "q": "Does it get hot during use?",
+         "a": "It may get slightly warm during large file transfers, which is normal for USB 3.0 readers, but it generally runs cooler than compact metal readers."
+       }
+     ],
+     "relatedDevices": [
+       "hp-chromebook",
+       "dell-xps",
+       "canon-rebel-t7"
+     ]
     }
-  ]
-}
+    ]
+    }

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Card Checker - あなたのデバイスに最適なSDカードを数秒で検索</title>
+    <meta name="description"
+        content="あなたのデバイスに最適なSDカードを数秒で検索できます。速度、ブランド、容量を比較して、カメラ、ドローン、ゲーム機、タブレットなど、あらゆるデバイスに対応したSDカード推奨情報を取得できます。">
+    <meta name="keywords" content="SDカード, microSD, 最高のSDカード, SDカード推奨, デバイス互換性">
+    <link rel="canonical" href="https://sdcardchecker.com/ja/">
+    <link rel="icon" type="image/x-icon" href="/img/brand/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/brand/logo.webp">
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SD Card Checker - あなたのデバイスに最適なSDカードを数秒で検索">
+    <meta property="og:description" content="あなたのデバイスに最適なSDカードを数秒で検索できます。速度、ブランド、容量を比較して、カメラ、ドローン、ゲーム機、タブレットなど、あらゆるデバイスに対応したSDカード推奨情報を取得できます。">
+    <meta property="og:image" content="https://sdcardchecker.com/img/home-hero.webp">
+    <meta property="og:url" content="https://sdcardchecker.com/ja/">
+    <meta property="og:site_name" content="SD Card Checker">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SD Card Checker - あなたのデバイスに最適なSDカードを数秒で検索">
+    <meta name="twitter:description" content="あなたのデバイスに最適なSDカードを数秒で検索できます。速度、ブランド、容量を比較して、カメラ、ドローン、ゲーム機、タブレットなど、あらゆるデバイスに対応したSDカード推奨情報を取得できます。">
+    <meta name="twitter:image" content="https://sdcardchecker.com/img/home-hero.webp">
+
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/assets/css/modern.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="/assets/js/device-search.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    {{GROW_SCRIPT}}
+</head>
+
+<body>
+    <!-- Header -->
+    {{HEADER}}
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('/img/home-hero.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="text-white hero-title" style="text-shadow: 0 0.3em 0.8em rgba(0, 0, 0, 0.5);">数秒であなたのデバイスに最適なSDカードを見つけよう</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="container" style="position: relative; z-index: 20; margin-top: 2rem;">
+            <div x-data="deviceSearch()" x-init="init()" @click.outside="open = false" class="search-section">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" x-model="query" @input="filterDevices()" @focus="open = true; filterDevices()"
+                        @keydown="handleKeydown($event)"
+                        placeholder="デバイスを検索..." class="search-input"
+                        aria-label="デバイスを検索して推奨されるSDカードを検索"
+                        data-hj-allow>
+                    <div class="search-dropdown" :class="{ hidden: !open || (filtered && filtered.length === 0) }">
+                         <template x-for="category in Object.keys(groupedDevices()).sort()" :key="category">
+                            <div>
+                                <div class="search-group-header" x-text="category"></div>
+                                <template x-for="device in (groupedDevices()[category] || [])" :key="device.id">
+                                    <a :href="`/ja/devices/${device.slug}/`" class="search-item">
+                                        <div class="search-item-name" x-text="device.name"></div>
+                                        <div class="search-item-category" x-text="device.category"></div>
+                                    </a>
+                                </template>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subtitle Section -->
+        <div class="container" style="position: relative; z-index: 10; margin-top: 2rem;">
+            <p style="margin: 0; color: rgba(255,255,255,0.9); text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); font-weight: 500; letter-spacing: 0.3px;">あらゆるデバイスの専門的なSDカード推奨情報です。速度、容量、ブランドを比較して、カメラ、ドローン、ゲーム機、タブレット向けの最高のカードを見つけましょう。</p>
+        </div>
+
+        <!-- Trust Indicators Section -->
+        <div style="padding: 3rem 0; margin-top: 2rem;">
+            <div class="container" style="position: relative; z-index: 10">
+                <div class="trust-grid">
+                    <div style="text-align: center; padding: 2rem; border-radius: 12px; background: white; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                        <div style="font-size: 2.5rem; font-weight: 900; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.5rem;">140+</div>
+                        <div style="font-size: 1rem; font-weight: 600; color: #475569; letter-spacing: 0.5px;">対応デバイス</div>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; border-radius: 12px; background: white; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                        <div style="font-size: 2.5rem; font-weight: 900; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.5rem;">50+</div>
+                        <div style="font-size: 1rem; font-weight: 600; color: #475569; letter-spacing: 0.5px;">SDカードレビュー</div>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; border-radius: 12px; background: white; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                        <div style="font-size: 2.5rem; font-weight: 900; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.5rem;">10,000+</div>
+                        <div style="font-size: 1rem; font-weight: 600; color: #475569; letter-spacing: 0.5px;">パフォーマンス仕様の比較</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Devices -->
+    <section class="popular-devices">
+        <div class="container">
+            <h2 id="devices">人気のデバイス</h2>
+            <p>人気のデバイスから始めるか、上の検索で特定のモデルを検索してください。</p>
+            <div class="devices-list">
+                <div class="device-tag">
+                    <a href="/ja/devices/gopro-hero-13/">GoPro Hero 13</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/ja/devices/dji-mini-4-pro/">DJI Mini 4 Pro</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/ja/devices/nintendo-switch/">Nintendo Switch</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/ja/devices/canon-eos-r5/">Canon EOS R5</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/ja/devices/sony-a6700/">Sony α6700</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/ja/devices/steam-deck/">Steam Deck</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/ja/devices/dji-mavic-3/">DJI Mavic 3</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/ja/devices/nikon-z9/">Nikon Z9</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section style="padding: 4rem 0; background: white;">
+        <div class="container">
+            <h2 id="categories">カテゴリ</h2>
+            <div class="features-grid" style="margin-top: 2rem;">
+                <a href="/ja/categories/cameras/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">
+                        <img 
+                            src="/img/brand/icon-camera.webp" 
+                            alt="カメラアイコン - カメラカテゴリ" 
+                            width="64" 
+                            height="64" 
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>カメラ</h3>
+                    <p>Canon、Sony、Fujifilm、Nikon。プロフェッショナルな写真・ビデオ仕様。</p>
+                </a>
+                <a href="/ja/categories/action-cameras/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">
+                        <img 
+                            src="/img/brand/icon-action-camera.webp" 
+                            alt="アクションカメラアイコン - アクションカメラカテゴリ" 
+                            width="64" 
+                            height="64" 
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>アクションカメラ</h3>
+                    <p>GoPro、DJI Osmoなど。高ビットレート動画要件。</p>
+                </a>
+                <a href="/ja/categories/drones/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">
+                        <img 
+                            src="/img/brand/icon-drone.webp" 
+                            alt="ドローンアイコン - ドローンカテゴリ" 
+                            width="64" 
+                            height="64" 
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>ドローン</h3>
+                    <p>4K ビデオ録画。信頼性が重要です。</p>
+                </a>
+                <a href="/ja/categories/gaming-handhelds/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">
+                        <img 
+                            src="/img/brand/icon-gaming.webp" 
+                            alt="ゲーム機アイコン - ゲーム機カテゴリ" 
+                            width="64" 
+                            height="64" 
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>ゲーム機</h3>
+                    <p>Nintendo Switch、Steam Deck、ROG Ally。読み込み速度が重要です。</p>
+                </a>
+                <a href="/ja/categories/computing-and-tablets/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">
+                        <img 
+                            src="/img/brand/icon-computing.webp" 
+                            alt="コンピュータ・タブレットアイコン - コンピュータ・タブレットカテゴリ" 
+                            width="64" 
+                            height="64" 
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>コンピュータ・タブレット</h3>
+                    <p>Raspberry Pi、Samsungタブレット。ストレージを即座に拡張できます。</p>
+                </a>
+                <a href="/ja/categories/security-cameras/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">
+                        <img 
+                            src="/img/brand/icon-security-camera.webp" 
+                            alt="セキュリティカメラアイコン - セキュリティカメラカテゴリ" 
+                            width="64" 
+                            height="64" 
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>セキュリティカメラ</h3>
+                    <p>ホームセキュリティシステム。高容量・連続録画仕様。</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section style="padding: 4rem 0;">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img 
+                            src="/img/brand/icon-speed.webp" 
+                            alt="速度アイコン - 速度ガイド" 
+                            width="64" 
+                            height="64" 
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>速度ガイド</h3>
+                    <p>デバイスごとの詳細な仕様。必要な速度クラスと容量が正確にわかります。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img 
+                            src="/img/brand/icon-score.webp" 
+                            alt="ブランドスコアアイコン - ブランド評価" 
+                            width="64" 
+                            height="64" 
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>ブランド評価</h3>
+                    <p>主要なSDカードブランドを比較。各推奨ティアの長所・短所と価格を確認できます。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img 
+                            src="/img/brand/icon-money.webp" 
+                            alt="マネーアイコン - 最高の価値" 
+                            width="64" 
+                            height="64" 
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>最高の価値</h3>
+                    <p>予算、推奨、プロフェッショナルティア。適正な価格で最適なカードが見つかります。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{FOOTER}}
+</body>
+
+</html>
