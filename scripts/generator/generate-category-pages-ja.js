@@ -28,13 +28,36 @@ function getDeviceImage(device) {
  * Generate device cards for Japanese category page
  */
 function generateDeviceCards(devices) {
-  // Sort devices alphabetically by name
-  const sortedDevices = [...devices].sort((a, b) => a.name.localeCompare(b.name));
-  return sortedDevices
-    .map(
-      (device) => {
-        const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
-        return `
+   // Map Japanese category names to English slugs
+   const categorySlugMap = {
+     "アクションカメラ": "action-cameras",
+     "Action Cameras": "action-cameras",
+     "カメラ": "cameras",
+     "Cameras": "cameras",
+     "ドローン": "drones",
+     "Drones": "drones",
+     "携帯ゲーム機": "gaming-handhelds",
+     "Gaming Handhelds": "gaming-handhelds",
+     "コンピュータ・タブレット": "computing-and-tablets",
+     "Computing & Tablets": "computing-and-tablets",
+     "ドライブレコーダー": "dash-cams",
+     "Dash Cams": "dash-cams",
+     "セキュリティカメラ": "security-cameras",
+     "Security Cameras": "security-cameras",
+     "トレイルカメラ": "trail-cameras",
+     "Trail Cameras": "trail-cameras",
+     "アクセサリー": "accessories",
+     "Accessories": "accessories"
+   };
+
+   // Sort devices alphabetically by name
+   const sortedDevices = [...devices].sort((a, b) => a.name.localeCompare(b.name));
+   return sortedDevices
+     .map(
+       (device) => {
+         // Use the category slug map to get the correct English slug
+         const categorySlug = categorySlugMap[device.category] || device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
+         return `
 <div class="device-card" style="background-image: url('${getDeviceImage(device)}'); background-size: cover; background-position: center; position: relative;" role="article" aria-label="SD card recommendation for ${device.name}" tabindex="0" onmouseover="this.querySelector('.device-card-overlay').style.opacity='0.95'" onmouseout="this.querySelector('.device-card-overlay').style.opacity='0.85'">
 <div class="device-card-overlay" style="position: absolute; inset: 0; background: rgba(240, 240, 240, 0.85); transition: opacity 0.3s ease;"></div>
 <a href="/ja/categories/${categorySlug}/${device.slug}/" style="position: relative; z-index: 1; text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; width: 100%; height: 100%;">
@@ -43,9 +66,9 @@ function generateDeviceCards(devices) {
 </a>
 </div>
 `;
-      }
-    )
-    .join("");
+       }
+     )
+     .join("");
 }
 
 /**
