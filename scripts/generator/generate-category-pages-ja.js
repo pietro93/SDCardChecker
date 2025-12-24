@@ -188,7 +188,6 @@ async function generateCategoryPagesJa(allDevices, distPath) {
       const categorySlug = category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
       const categoryPath = path.join(
         distPath,
-        "ja",
         "categories",
         categorySlug,
         "index.html"
