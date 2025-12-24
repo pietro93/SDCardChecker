@@ -8,6 +8,7 @@
 const path = require("path");
 const { readJSON } = require("./helpers");
 const { generateCategoryPagesJa } = require("./generate-category-pages-ja");
+const { generateDevicePagesJa } = require("./generate-device-pages-ja");
 const { generateJapaneseHomePage } = require("./generate-ja-home");
 
 // Paths
@@ -30,7 +31,12 @@ async function buildJapanese() {
     generateJapaneseHomePage(distPath);
     console.log();
 
-    // 3. Generate Japanese Category Pages (no readers)
+    // 3. Generate Japanese Device Pages
+    console.log("📄 Generating Japanese device pages...");
+    await generateDevicePagesJa(allDevices, distPath);
+    console.log();
+
+    // 4. Generate Japanese Category Pages (no readers)
     console.log("📄 Generating Japanese category pages...");
     generateCategoryPagesJa(allDevices, jaPath);
     console.log();
@@ -39,8 +45,9 @@ async function buildJapanese() {
     console.log("✅ Japanese generation complete!");
     console.log(`\n📊 Summary:`);
     const categories = [...new Set(allDevices.map((d) => d.category))].filter(c => c !== "SD Card Readers");
+    console.log(`  • Japanese device pages: ${allDevices.length}`);
     console.log(`  • Japanese category pages: ${categories.length}`);
-    console.log(`  • Japanese devices: ${allDevices.length}`);
+    console.log(`  • Japanese home page: 1`);
     console.log(`\n📁 Output directory: ${jaPath}`);
     console.log(`\n✅ Japanese site ready at /ja/`);
   } catch (error) {
