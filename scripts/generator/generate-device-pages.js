@@ -364,14 +364,19 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const alternativesHTML = generateAlternatives(device, sdcardsMap);
 
     // Generate FAQs: use custom FAQs from data, or generate programmatically
-    const generatedFAQs = generateFAQs(device, sdcardsMap);
-    const finalFAQs = device.faq ? mergeFAQs(device.faq, generatedFAQs) : generatedFAQs;
+    const generatedFAQs = generateFAQs(device, sdcardsMap, isJapanese);
+    const finalFAQs = device.faq ? mergeFAQs(device.faq, generatedFAQs, isJapanese) : generatedFAQs;
 
     // Add "What SD Card Do I Need" question as first FAQ using generated answer
     const speedRating = device.sdCard.minSpeed === 'No minimum required'
         ? device.sdCard.minSpeed.toLowerCase()
-        : device.sdCard.minSpeed;
-    const firstFAQ = {
+        : (isJapanese && device.sdCard.minSpeed === '最低要件なし' ? '最低要件なし' : device.sdCard.minSpeed);
+    
+    // Japanese version of the first FAQ
+    const firstFAQ = isJapanese ? {
+        q: `${device.name}にはどのSDカードが必要ですか？`,
+        a: `${device.name}には、信頼性の高いパフォーマンスのために<b>${device.sdCard.type}カード（${speedRating}速度評価）</b>が必要です。<b>バランスの取れた選択として${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]}容量をお勧めします</b>。デバイスは最大${device.sdCard.maxCapacity}をサポートしていますが、ほとんどのユーザーは日常使用に${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]}で十分です。<b>SanDisk、Lexar、Kingston、KIOXIA、Samsungなどの信頼できるブランドを選択してください</b>安定したパフォーマンスとデータ損失の防止を確保するために。`
+    } : {
         q: `What SD Card Do I Need for ${device.name}?`,
         a: `The ${device.name} requires a <b>${device.sdCard.type} card with ${speedRating} speed rating</b> for reliable performance. <b>We recommend ${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]} capacity as the sweet spot</b> balancing storage capacity with affordability. The device supports up to ${device.sdCard.maxCapacity}, though most users find ${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]} sufficient for daily use. <b>Always choose from trusted brands like SanDisk, Lexar, or Kingston</b> to ensure consistent performance and avoid data loss.`
     };
@@ -381,7 +386,8 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const relatedDevicesSection = generateRelatedDevices(device, allDevices);
     const faqSchema = generateFAQSchema(faqsWithFirstQuestion);
     const productSchema = generateProductSchema(device.recommendedBrands, sdcardsMap);
-    const amazonBadgesSection = generateAmazonBadgesSection();
+    // Skip Amazon badges for Japanese pages (awaiting API access)
+    const amazonBadgesSection = isJapanese ? '' : generateAmazonBadgesSection();
 
     // Get component helpers based on language
     const components = getComponentHelpers(isJapanese);

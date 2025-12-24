@@ -58,14 +58,8 @@ return `<!-- Favicon -->
       </a>
       <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
       <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-       <a href="/ja/tools/calculators/video-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">ビデオ保存と録画時間</a>
-       <a href="/ja/tools/calculators/photo-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">写真保存と容量</a>
-       <a href="/ja/tools/calculators/drone-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">ドローン録画時間と保存</a>
-       <a href="/ja/tools/calculators/security-camera-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">セキュリティカメラ録画時間</a>
-       <a href="/ja/tools/calculators/dashcam-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">ドライブレコーダー保存と周回時間</a>
-       <a href="/ja/tools/calculators/action-camera-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">アクションカメラ保存と容量</a>
-       <a href="/ja/tools/calculators/gopro-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">GoPro録画時間と保存</a>
-       <a href="/ja/tools/calculators/timelapse-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">タイムラプス保存と写真数</a>
+       <a href="/ja/tools/recording-time-calculator/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">録画時間 計算機</a>
+       <a href="/ja/tools/dashcam-storage-calculator/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">ドライブレコーダー 容量 計算機</a>
        </div>
        </div>
       </div>
@@ -79,11 +73,9 @@ return `<!-- Favicon -->
        </a>
        <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
        <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-        <a href="/ja/guides/sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SDカードガイド</a>
-        <a href="/ja/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">速度クラス</a>
-        <a href="/ja/guides/video-bitrate-comparison/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">ビデオビットレートガイド</a>
-        <a href="/ja/guides/raw-vs-jpeg/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">RAW vs JPEG</a>
-        <a href="/ja/guides/is-my-sd-card-fake/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">偽造SDカードチェッカー</a>
+        <a href="/ja/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">速度クラス</a>
+        <a href="/ja/guides/is-my-sd-card-fake/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">偽造SDカード見分け方</a>
+        <a href="/ja/guides/nintendo-switch-sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">ニンテンドースイッチガイド</a>
         </div>
         </div>
        </div>
@@ -153,32 +145,25 @@ return `<!-- Favicon -->
         <i class="fas fa-chevron-right transition-transform duration-300"></i>
       </button>
       <div class="mobile-section hidden pl-4 space-y-1" data-content="calculators">
-        <a href="/ja/tools/calculators/video-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">ビデオ保存と録画時間</a>
-        <a href="/ja/tools/calculators/photo-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">写真保存と容量</a>
-        <a href="/ja/tools/calculators/drone-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">ドローン録画時間と保存</a>
-        <a href="/ja/tools/calculators/security-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">セキュリティカメラ録画時間</a>
-        <a href="/ja/tools/calculators/dashcam-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">ドライブレコーダー保存</a>
-        <a href="/ja/tools/calculators/action-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">アクションカメラ保存</a>
-        <a href="/ja/tools/calculators/gopro-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">GoPro録画時間と保存</a>
-        <a href="/ja/tools/calculators/timelapse-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">タイムラプス保存</a>
+        <a href="/ja/tools/recording-time-calculator/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">録画時間 計算機</a>
+        <a href="/ja/tools/dashcam-storage-calculator/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">ドライブレコーダー 容量 計算機</a>
       </div>
       
 
       <!-- Resources Section -->
       <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="resources">
-        <span>リソース</span>
+        <span>ガイド</span>
         <i class="fas fa-chevron-right transition-transform duration-300"></i>
       </button>
       <div class="mobile-section hidden pl-4 space-y-1" data-content="resources">
-        <a href="/ja/guides/sd-card-guide/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">SDカードガイド</a>
         <a href="/ja/guides/sd-card-speed-classes/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">速度クラス</a>
-        <a href="/ja/guides/video-bitrate-comparison/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">ビデオビットレートガイド</a>
-        <a href="/ja/guides/raw-vs-jpeg/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">RAW vs JPEG</a>
-        <a href="/ja/guides/is-my-sd-card-fake/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">偽造SDカードチェッカー</a>
+        <a href="/ja/guides/is-my-sd-card-fake/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">偽造SDカード見分け方</a>
+        <a href="/ja/guides/nintendo-switch-sd-card-guide/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">ニンテンドースイッチガイド</a>
       </div>
       
       <!-- Direct Links -->
       <a href="/ja/about.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">について</a>
+      <a href="/ja/guides/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">ガイド</a>
     </div>
   </nav>
 </header>
@@ -230,7 +215,6 @@ function generateFooter() {
 <h4 class="font-bold text-white mb-4">会社</h4>
 <ul class="space-y-2 text-sm">
     <li><a href="/ja/about.html" class="hover:text-white transition-colors">当社について</a></li>
-    <li><a href="/ja/contact.html" class="hover:text-white transition-colors">お問い合わせ</a></li>
 </ul>
 </div>
 
@@ -327,14 +311,8 @@ function generateSidebar() {
   <div class="mb-6 border-t border-slate-200 pt-6">
     <h3 class="text-sm font-semibold text-slate-900 mb-3">計算ツール</h3>
     <ul class="space-y-2">
-      <li><a href="/ja/tools/calculators/video-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">ビデオ保存と録画時間</a></li>
-      <li><a href="/ja/tools/calculators/photo-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">写真保存と容量</a></li>
-      <li><a href="/ja/tools/calculators/drone-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">ドローン録画時間と保存</a></li>
-      <li><a href="/ja/tools/calculators/security-camera-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">セキュリティカメラ録画時間</a></li>
-      <li><a href="/ja/tools/calculators/dashcam-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">ドライブレコーダー保存</a></li>
-      <li><a href="/ja/tools/calculators/action-camera-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">アクションカメラ保存</a></li>
-      <li><a href="/ja/tools/calculators/gopro-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">GoPro録画時間と保存</a></li>
-      <li><a href="/ja/tools/calculators/timelapse-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">タイムラプス保存</a></li>
+      <li><a href="/ja/tools/recording-time-calculator/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">録画時間 計算機</a></li>
+      <li><a href="/ja/tools/dashcam-storage-calculator/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">ドライブレコーダー 容量 計算機</a></li>
     </ul>
   </div>
 
@@ -342,11 +320,9 @@ function generateSidebar() {
   <div class="mb-6 border-t border-slate-200 pt-6">
     <h3 class="text-sm font-semibold text-slate-900 mb-3">ガイド</h3>
     <ul class="space-y-2">
-      <li><a href="/ja/guides/sd-card-guide/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">SDカードガイド</a></li>
       <li><a href="/ja/guides/sd-card-speed-classes/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">速度クラス</a></li>
-      <li><a href="/ja/guides/video-bitrate-comparison/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">ビデオビットレートガイド</a></li>
-      <li><a href="/ja/guides/raw-vs-jpeg/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">RAW vs JPEG</a></li>
-      <li><a href="/ja/guides/is-my-sd-card-fake/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">偽造SDカードチェッカー</a></li>
+      <li><a href="/ja/guides/is-my-sd-card-fake/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">偽造SDカード見分け方</a></li>
+      <li><a href="/ja/guides/nintendo-switch-sd-card-guide/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">ニンテンドースイッチガイド</a></li>
     </ul>
   </div>
 

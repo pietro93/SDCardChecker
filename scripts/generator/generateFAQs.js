@@ -1,12 +1,24 @@
 /**
  * FAQ Generator - Programmatically generate device-specific FAQ answers
+ * Supports both English and Japanese versions
  */
+
+const { generateFAQsJa, mergeFAQsJa } = require("./generateFAQs-ja");
 
 /**
  * Generate FAQs programmatically based on device specs
  * Answers are specific to each device using its actual data
+ * @param {object} device - The device object
+ * @param {object} sdcardsMap - A map of all SD cards
+ * @param {boolean} isJapanese - Whether to generate Japanese FAQs
+ * @returns {Array<object>} - An array of FAQ objects {q, a}
  */
-function generateFAQs(device, sdcardsMap) {
+function generateFAQs(device, sdcardsMap, isJapanese = false) {
+  // Delegate to Japanese generator if needed
+  if (isJapanese) {
+    return generateFAQsJa(device, sdcardsMap);
+  }
+
   const faqs = [];
 
   const speedClass = device.sdCard.minSpeed;
@@ -112,8 +124,17 @@ function generateFAQs(device, sdcardsMap) {
 /**
  * Merge generated FAQs with custom FAQs from device data
  * Custom FAQs override generated ones (by matching question)
+ * @param {Array<object>} customFAQs - Custom FAQs from device data
+ * @param {Array<object>} generatedFAQs - Programmatically generated FAQs
+ * @param {boolean} isJapanese - Whether these are Japanese FAQs
+ * @returns {Array<object>} - The final merged array of FAQs
  */
-function mergeFAQs(customFAQs, generatedFAQs) {
+function mergeFAQs(customFAQs, generatedFAQs, isJapanese = false) {
+  // Delegate to Japanese merge if needed
+  if (isJapanese) {
+    return mergeFAQsJa(customFAQs, generatedFAQs);
+  }
+
   if (!customFAQs || customFAQs.length === 0) {
     return generatedFAQs;
   }

@@ -91,20 +91,22 @@ return `<!-- Favicon -->
        </div>
 
        <div class="relative group flex items-center">
-       <a href="/guides/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
-       Guides
-       <i class="fas fa-chevron-down text-xs"></i>
-       </a>
-       <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
-       <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-        <a href="/guides/sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SD Card Guide</a>
-        <a href="/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Speed Classes</a>
-        <a href="/guides/video-bitrate-comparison/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Video Bitrate Guide</a>
-        <a href="/guides/raw-vs-jpeg/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">RAW vs JPEG</a>
-        <a href="/guides/is-my-sd-card-fake/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Fake SD Card Checker</a>
+        <a href="/guides/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
+        Guides
+        <i class="fas fa-chevron-down text-xs"></i>
+        </a>
+        <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
+        <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+         <a href="/guides/sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SD Card Guide</a>
+         <a href="/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Speed Classes</a>
+         <a href="/guides/video-bitrate-comparison/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Video Bitrate Guide</a>
+         <a href="/guides/raw-vs-jpeg/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">RAW vs JPEG</a>
+         <a href="/guides/is-my-sd-card-fake/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Fake SD Card Checker</a>
+         <div class="border-t border-slate-200"></div>
+         <a href="/guides/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Check all Guides</a>
+         </div>
+         </div>
         </div>
-        </div>
-       </div>
 
        <a href="/about.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">About</a>
     </nav>
@@ -180,6 +182,8 @@ return `<!-- Favicon -->
         <a href="/guides/video-bitrate-comparison/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Video Bitrate Guide</a>
         <a href="/guides/raw-vs-jpeg/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">RAW vs JPEG</a>
         <a href="/guides/is-my-sd-card-fake/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Fake SD Card Checker</a>
+        <div class="border-t border-slate-200 my-1"></div>
+        <a href="/guides/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Check all Guides</a>
       </div>
       
       <!-- Direct Links -->
@@ -345,6 +349,7 @@ function generateSidebar() {
       <li><a href="/guides/video-bitrate-comparison/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Video Bitrate Guide</a></li>
       <li><a href="/guides/raw-vs-jpeg/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">RAW vs JPEG</a></li>
       <li><a href="/guides/is-my-sd-card-fake/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Fake SD Card Checker</a></li>
+      <li><a href="/guides/nintendo-switch-sd-card-guide/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Nintendo Switch Guide</a></li>
     </ul>
   </div>
 
