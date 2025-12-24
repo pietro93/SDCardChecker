@@ -5,11 +5,53 @@
 const path = require("path");
 const fs = require("fs");
 const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, loadSDCardData } = require("./helpers");
-const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 const { generateFAQs, mergeFAQs } = require("./generateFAQs");
 const { generateAmazonBadgesSection } = require("./amazon-badges-generator");
 
 const srcPath = path.join(__dirname, "../../src");
+
+/**
+ * Translation strings for category names
+ */
+const CATEGORY_TRANSLATIONS = {
+  "Cameras": "カメラ",
+  "Action Cameras": "アクションカメラ",
+  "Drones": "ドローン",
+  "Gaming Handhelds": "携帯ゲーム機",
+  "Computing & Tablets": "コンピュータ・タブレット",
+  "Dash Cams": "ドライブレコーダー",
+  "Security Cameras": "セキュリティカメラ",
+  "Trail Cameras": "トレイルカメラ",
+  "Accessories": "アクセサリー",
+  "SD Card Readers": "SDカードリーダー"
+};
+
+/**
+ * Get component helpers based on language
+ */
+function getComponentHelpers(isJapanese = false) {
+  if (isJapanese) {
+    return require("../../src/templates/components-ja");
+  }
+  return require("../../src/templates/components");
+}
+
+/**
+ * Get category slug for URL (always English)
+ */
+function getCategorySlug(category) {
+  return category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
+}
+
+/**
+ * Get category display name (English or Japanese)
+ */
+function getCategoryDisplayName(category, isJapanese = false) {
+  if (!isJapanese) {
+    return category;
+  }
+  return CATEGORY_TRANSLATIONS[category] || category;
+}
 
 /**
  * Get Font Awesome icon for device category
@@ -251,10 +293,11 @@ function generateAlternatives(device, sdcardsMap) {
 /**
  * Generate single device page
  */
-function generateDevicePage(device, template, allDevices, sdcardsMap, deviceIndex = 0) {
-    const baseUrl = "https://sdcardchecker.com";
-    const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
-    const deviceUrl = `${baseUrl}/categories/${categorySlug}/${device.slug}/`;
+function generateDevicePage(device, template, allDevices, sdcardsMap, deviceIndex = 0, isJapanese = false) {
+     const baseUrl = "https://sdcardchecker.com";
+     const categorySlug = getCategorySlug(device.category);
+     const deviceUrlPath = isJapanese ? `/ja/categories/${categorySlug}/${device.slug}/` : `/categories/${categorySlug}/${device.slug}/`;
+     const deviceUrl = `${baseUrl}${deviceUrlPath}`;
 
     // Get brand names from sdcards data for description
     const brandNames = device.recommendedBrands
@@ -307,11 +350,18 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const productSchema = generateProductSchema(device.recommendedBrands, sdcardsMap);
     const amazonBadgesSection = generateAmazonBadgesSection();
     
+    // Get component helpers based on language
+    const components = getComponentHelpers(isJapanese);
+    
+    // Get category display name (English or translated)
+    const categoryDisplayName = getCategoryDisplayName(device.category, isJapanese);
+    
     // Generate breadcrumb schema
+    const breadcrumbPath = isJapanese ? `/ja/categories/${categorySlug}/` : `/categories/${categorySlug}/`;
     const breadcrumbs = [
-      { name: "Home", url: "/" },
-      { name: device.category, url: `/categories/${categorySlug}/` },
-      { name: device.name, url: `/categories/${categorySlug}/${device.slug}/` }
+      { name: isJapanese ? "ホーム" : "Home", url: isJapanese ? "/ja/" : "/" },
+      { name: categoryDisplayName, url: breadcrumbPath },
+      { name: device.name, url: deviceUrlPath }
     ];
     const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 
@@ -339,7 +389,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{DEVICE_ICON}}/g, deviceIcon)
         .replace(/{{CATEGORY_ICON}}/g, categoryImageIcon)
         .replace(/{{CATEGORY_SLUG}}/g, categorySlug)
-        .replace(/{{CATEGORY_NAME}}/g, device.category)
+        .replace(/{{CATEGORY_NAME}}/g, categoryDisplayName)
         .replace(/{{DEVICE_IMAGE}}/g, deviceImage)
         .replace(/{{ANSWER_TEXT}}/g, answerText)
         .replace(/{{ANSWER_EXPLANATION}}/g, whySpecsFirstSentence)
@@ -353,11 +403,11 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{FAQ_SCHEMA}}/g, faqSchema)
         .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
         .replace(/{{PRODUCT_SCHEMA}}/g, productSchema)
-        .replace(/{{SIDEBAR}}/g, generateSidebar())
-        .replace(/{{HEADER}}/g, generateHeader())
-        .replace(/{{FOOTER}}/g, generateFooter())
-        .replace(/{{GROW_SCRIPT}}/g, generateGrowScript())
-        .replace(/{{AFFILIATE_DISCLOSURE}}/g, generateAffiliateDisclosure(true));
+        .replace(/{{SIDEBAR}}/g, components.generateSidebar())
+        .replace(/{{HEADER}}/g, components.generateHeader())
+        .replace(/{{FOOTER}}/g, components.generateFooter())
+        .replace(/{{GROW_SCRIPT}}/g, components.generateGrowScript())
+        .replace(/{{AFFILIATE_DISCLOSURE}}/g, components.generateAffiliateDisclosure(true));
 
     return html;
 }
@@ -365,37 +415,40 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
 /**
  * Generate all device pages
  */
-async function generateDevicePages(allDevices, distPath) {
-    console.log("📄 Generating device pages...");
+async function generateDevicePages(allDevices, distPath, isJapanese = false) {
+     const lang = isJapanese ? "Japanese" : "";
+     console.log(`📄 Generating ${lang} device pages...`);
 
-    let deviceTemplate = readTemplate(
-        path.join(srcPath, "templates/device.html")
-    );
-    // Process {% include %} tags
-    deviceTemplate = processIncludes(deviceTemplate, path.join(srcPath, "templates"));
-    
-    const sdcardsMap = loadSDCardData();
+     const templateFile = isJapanese ? "device-ja.html" : "device.html";
+     let deviceTemplate = readTemplate(
+         path.join(srcPath, "templates", templateFile)
+     );
+     // Process {% include %} tags
+     deviceTemplate = processIncludes(deviceTemplate, path.join(srcPath, "templates"));
+     
+     const sdcardsMap = loadSDCardData();
 
-    let successCount = 0;
-    let failedDevices = [];
+     let successCount = 0;
+     let failedDevices = [];
 
-    allDevices.forEach((device, index) => {
-        try {
-            const deviceHTML = generateDevicePage(device, deviceTemplate, allDevices, sdcardsMap, index);
-            const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
-            const devicePath = path.join(distPath, "categories", categorySlug, device.slug, "index.html");
-            writeFile(devicePath, deviceHTML);
-            successCount++;
-        } catch (error) {
-            console.warn(`  ⚠️  Failed to generate ${device.slug}: ${error.message}`);
-            failedDevices.push(device.slug);
-        }
-    });
+     allDevices.forEach((device, index) => {
+         try {
+             const deviceHTML = generateDevicePage(device, deviceTemplate, allDevices, sdcardsMap, index, isJapanese);
+             const categorySlug = getCategorySlug(device.category);
+             const baseDir = isJapanese ? "ja" : "";
+             const devicePath = path.join(distPath, baseDir, "categories", categorySlug, device.slug, "index.html");
+             writeFile(devicePath, deviceHTML);
+             successCount++;
+         } catch (error) {
+             console.warn(`  ⚠️  Failed to generate ${device.slug}: ${error.message}`);
+             failedDevices.push(device.slug);
+         }
+     });
 
-    console.log(`  ✓ Generated ${successCount}/${allDevices.length} device pages`);
-    if (failedDevices.length > 0) {
-        console.warn(`  ⚠️  ${failedDevices.length} devices failed: ${failedDevices.join(', ')}`);
-    }
+     console.log(`  ✓ Generated ${successCount}/${allDevices.length} ${lang} device pages`);
+     if (failedDevices.length > 0) {
+         console.warn(`  ⚠️  ${failedDevices.length} devices failed: ${failedDevices.join(', ')}`);
+     }
 }
 
 module.exports = { generateDevicePages };

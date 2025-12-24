@@ -8,7 +8,6 @@
 const path = require("path");
 const { readJSON } = require("./helpers");
 const { generateCategoryPagesJa } = require("./generate-category-pages-ja");
-const { generateDevicePagesJa } = require("./generate-device-pages-ja");
 const { generateJapaneseHomePage } = require("./generate-ja-home");
 
 // Paths
@@ -31,11 +30,10 @@ async function buildJapanese() {
     generateJapaneseHomePage(distPath);
     console.log();
 
-    // 3. Generate Japanese Device Pages
-    console.log("📄 Generating Japanese device pages...");
-    await generateDevicePagesJa(allDevices, distPath);
-    console.log();
-
+    // 3. Japanese Device Pages - Planned for Phase 2
+    // Currently using English pages with Japanese category structure
+    // Full Japanese device pages coming in future update
+    
     // 4. Generate Japanese Category Pages (no readers)
     console.log("📄 Generating Japanese category pages...");
     generateCategoryPagesJa(allDevices, jaPath);
