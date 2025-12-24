@@ -109,9 +109,29 @@ return `<!-- Favicon -->
         </div>
 
        <a href="/about.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">About</a>
-    </nav>
-    
-    <!-- Mobile Menu Button -->
+       </nav>
+       
+       <!-- Language Switcher (Desktop) -->
+       <div class="hidden md:flex items-center gap-2 ml-4 pl-4 border-l border-slate-200">
+       <div class="relative group">
+        <button class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm flex items-center gap-1">
+          <i class="fas fa-globe"></i>
+          <span>English</span>
+          <i class="fas fa-chevron-down text-xs"></i>
+        </button>
+        <div class="absolute right-0 top-full pt-2 w-40 hidden group-hover:block">
+          <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+            <a href="/" class="block px-4 py-3 text-blue-600 bg-blue-50 first:rounded-t-lg text-sm font-medium flex items-center justify-between">
+              English
+              <i class="fas fa-check text-blue-600"></i>
+            </a>
+            <a href="/ja/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">日本語</a>
+          </div>
+        </div>
+       </div>
+       </div>
+       
+       <!-- Mobile Menu Button -->
     <button class="md:hidden text-slate-600 hover:text-blue-600 mobile-menu-toggle flex items-center justify-center" aria-label="Toggle menu" id="mobileMenuBtn" style="width: 44px; height: 44px; padding: 0;">
       <i class="fas fa-bars text-xl" style="display: block;"></i>
     </button>
@@ -120,6 +140,16 @@ return `<!-- Favicon -->
   <!-- Mobile Navigation Menu -->
   <nav class="mobile-menu hidden md:hidden bg-slate-50 border-t border-slate-200 max-h-[calc(100vh-80px)] overflow-y-auto" id="mobileMenu">
     <div class="px-4 py-3 space-y-1">
+      <!-- Language Switcher (Mobile) -->
+      <div class="border-b border-slate-200 pb-3 mb-3">
+        <p class="px-3 py-2 text-sm font-semibold text-slate-700 text-slate-600">Select Language</p>
+        <a href="/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium flex items-center justify-between">
+          English
+          <i class="fas fa-check text-blue-600"></i>
+        </a>
+        <a href="/ja/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">日本語</a>
+      </div>
+      
       <!-- Direct Links -->
       <a href="/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Home</a>
       
