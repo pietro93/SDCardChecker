@@ -11,46 +11,79 @@ const { generateAmazonBadgesSection } = require("./amazon-badges-generator");
 const srcPath = path.join(__dirname, "../../src");
 
 /**
- * Translation strings for category names
+ * Translation strings for category names (English → Japanese)
  */
 const CATEGORY_TRANSLATIONS = {
-  "Cameras": "カメラ",
-  "Action Cameras": "アクションカメラ",
-  "Drones": "ドローン",
-  "Gaming Handhelds": "携帯ゲーム機",
-  "Computing & Tablets": "コンピュータ・タブレット",
-  "Dash Cams": "ドライブレコーダー",
-  "Security Cameras": "セキュリティカメラ",
-  "Trail Cameras": "トレイルカメラ",
-  "Accessories": "アクセサリー",
-  "SD Card Readers": "SDカードリーダー"
+    "Cameras": "カメラ",
+    "Action Cameras": "アクションカメラ",
+    "Drones": "ドローン",
+    "Gaming Handhelds": "携帯ゲーム機",
+    "Computing & Tablets": "コンピュータ・タブレット",
+    "Dash Cams": "ドライブレコーダー",
+    "Security Cameras": "セキュリティカメラ",
+    "Trail Cameras": "トレイルカメラ",
+    "Accessories": "アクセサリー",
+    "SD Card Readers": "SDカードリーダー"
+};
+
+/**
+ * Reverse mapping: Japanese → English (for devices-ja.json)
+ */
+const CATEGORY_REVERSE_TRANSLATIONS = {
+    "カメラ": "Cameras",
+    "アクションカメラ": "Action Cameras",
+    "ドローン": "Drones",
+    "携帯ゲーム機": "Gaming Handhelds",
+    "コンピュータ・タブレット": "Computing & Tablets",
+    "ドライブレコーダー": "Dash Cams",
+    "セキュリティカメラ": "Security Cameras",
+    "トレイルカメラ": "Trail Cameras",
+    "アクセサリー": "Accessories",
+    "SDカードリーダー": "SD Card Readers"
 };
 
 /**
  * Get component helpers based on language
  */
 function getComponentHelpers(isJapanese = false) {
-  if (isJapanese) {
-    return require("../../src/templates/components-ja");
-  }
-  return require("../../src/templates/components");
+    if (isJapanese) {
+        return require("../../src/templates/components-ja");
+    }
+    return require("../../src/templates/components");
+}
+
+/**
+ * Get English category name (handles both English input and Japanese input)
+ */
+function getEnglishCategoryName(category, isJapanese = false) {
+    if (!isJapanese) {
+        return category; // Already English
+    }
+    // For Japanese devices, map back to English
+    return CATEGORY_REVERSE_TRANSLATIONS[category] || category;
 }
 
 /**
  * Get category slug for URL (always English)
  */
-function getCategorySlug(category) {
-  return category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
+function getCategorySlug(category, isJapanese = false) {
+    const englishCategory = getEnglishCategoryName(category, isJapanese);
+    return englishCategory.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
 }
 
 /**
  * Get category display name (English or Japanese)
  */
 function getCategoryDisplayName(category, isJapanese = false) {
-  if (!isJapanese) {
-    return category;
-  }
-  return CATEGORY_TRANSLATIONS[category] || category;
+    if (!isJapanese) {
+        return category;
+    }
+    // If category is already in Japanese (from devices-ja.json), return as-is
+    if (CATEGORY_REVERSE_TRANSLATIONS[category]) {
+        return category;
+    }
+    // If category is in English, translate it
+    return CATEGORY_TRANSLATIONS[category] || category;
 }
 
 /**
@@ -72,15 +105,15 @@ function getCategoryIcon(category) {
  * Map category names to image icon file names
  */
 function getCategoryImageIcon(category) {
-  const iconMap = {
-    "Cameras": "camera",
-    "Action Cameras": "action-camera",
-    "Drones": "drone",
-    "Gaming Handhelds": "gaming",
-    "Computing & Tablets": "computing",
-    "Security Cameras": "security-camera"
-  };
-  return iconMap[category] || "camera"; // Default fallback
+    const iconMap = {
+        "Cameras": "camera",
+        "Action Cameras": "action-camera",
+        "Drones": "drone",
+        "Gaming Handhelds": "gaming",
+        "Computing & Tablets": "computing",
+        "Security Cameras": "security-camera"
+    };
+    return iconMap[category] || "camera"; // Default fallback
 }
 
 /**
@@ -96,7 +129,7 @@ function generateUniqueMetaDescription(device, brandNames, index) {
         `Buy the right SD card for ${device.name}. ${device.sdCard.type} ${device.sdCard.minSpeed} required. Shop now.`,
         `${device.name} SD card compatibility guide. ${brandNames} recommended. Compare prices and specs.`,
     ];
-    
+
     const template = templates[index % templates.length];
     // Ensure description is 140-160 characters
     return template.length > 160 ? template.substring(0, 157) + "..." : template;
@@ -113,26 +146,26 @@ function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug) {
                 console.warn(`Warning: SD card not found: ${ref.id}`);
                 return "";
             }
-            
+
             // Add UTM parameters to Amazon URL
             const utmParams = `utm_source=sdcardchecker&utm_medium=device-page&utm_campaign=${deviceSlug}&utm_content=${brand.tier || 'featured'}`;
-            const amazonUrlWithUTM = brand.amazonSearchUrl.includes('?') 
+            const amazonUrlWithUTM = brand.amazonSearchUrl.includes('?')
                 ? `${brand.amazonSearchUrl}&${utmParams}`
                 : `${brand.amazonSearchUrl}?${utmParams}`;
-            
+
             const cardImage = brand.imageUrl || getCardImageFallback(brand);
             const priceTierClass = brand.priceTier ? `price-${brand.priceTier.toLowerCase().replace(/\s+/g, '-')}` : 'price-mid-range';
-            const priceTierSymbol = brand.priceTier 
-            ? (brand.priceTier.toLowerCase().includes('budget') ? '$' : brand.priceTier.toLowerCase().includes('premium') ? '$$$' : '$$')
-            : '$$';
-            
+            const priceTierSymbol = brand.priceTier
+                ? (brand.priceTier.toLowerCase().includes('budget') ? '$' : brand.priceTier.toLowerCase().includes('premium') ? '$$$' : '$$')
+                : '$$';
+
             // Convert pros string to bullet list
             const prosList = brand.pros
                 .split(',')
                 .map(pro => `<li>${pro.trim()}</li>`)
                 .join('');
             const prosHtml = `<ul style="margin:0; padding-left:1.25rem; font-size:0.95rem;">${prosList}</ul>`;
-            
+
             return `
             <tr>
             <td class="table-card-cell">
@@ -167,7 +200,7 @@ function generateRequirementsBox(device, deviceNameShort) {
     // Ensure deviceNameShort is always a string
     const safeDeviceName = deviceNameShort || device.name;
     const { sdCard, whySpecs } = device;
-    
+
     const rows = [
         {
             icon: 'fas fa-microchip',
@@ -248,17 +281,17 @@ function generateAlternatives(device, sdcardsMap) {
     let html = "";
 
     const createCard = (brand, label) => {
-    // Add UTM parameters to Amazon URL
-    const utmParams = `utm_source=sdcardchecker&utm_medium=device-page&utm_campaign=${device.slug}&utm_content=${brand.tier || 'featured'}`;
-    const amazonUrlWithUTM = brand.amazonSearchUrl.includes('?') 
-        ? `${brand.amazonSearchUrl}&${utmParams}`
-        : `${brand.amazonSearchUrl}?${utmParams}`;
-    
-    const cardImage = brand.imageUrl || getCardImageFallback(brand);
-    // Use priceSymbol if available (new format), otherwise use numeric estimate
-    const priceDisplay = brand.priceSymbol ? `${brand.priceSymbol} (${brand.priceTier})` : `$${brand.priceEstimate}`;
-    
-    return `
+        // Add UTM parameters to Amazon URL
+        const utmParams = `utm_source=sdcardchecker&utm_medium=device-page&utm_campaign=${device.slug}&utm_content=${brand.tier || 'featured'}`;
+        const amazonUrlWithUTM = brand.amazonSearchUrl.includes('?')
+            ? `${brand.amazonSearchUrl}&${utmParams}`
+            : `${brand.amazonSearchUrl}?${utmParams}`;
+
+        const cardImage = brand.imageUrl || getCardImageFallback(brand);
+        // Use priceSymbol if available (new format), otherwise use numeric estimate
+        const priceDisplay = brand.priceSymbol ? `${brand.priceSymbol} (${brand.priceTier})` : `$${brand.priceEstimate}`;
+
+        return `
     <div class="alternative-card card">
     <div class="alternative-label">${label}</div>
     <div class="alternative-image">
@@ -294,10 +327,10 @@ function generateAlternatives(device, sdcardsMap) {
  * Generate single device page
  */
 function generateDevicePage(device, template, allDevices, sdcardsMap, deviceIndex = 0, isJapanese = false) {
-     const baseUrl = "https://sdcardchecker.com";
-     const categorySlug = getCategorySlug(device.category);
-     const deviceUrlPath = isJapanese ? `/ja/categories/${categorySlug}/${device.slug}/` : `/categories/${categorySlug}/${device.slug}/`;
-     const deviceUrl = `${baseUrl}${deviceUrlPath}`;
+    const baseUrl = "https://sdcardchecker.com";
+    const categorySlug = getCategorySlug(device.category, isJapanese);
+    const deviceUrlPath = isJapanese ? `/ja/categories/${categorySlug}/${device.slug}/` : `/categories/${categorySlug}/${device.slug}/`;
+    const deviceUrl = `${baseUrl}${deviceUrlPath}`;
 
     // Get brand names from sdcards data for description
     const brandNames = device.recommendedBrands
@@ -349,19 +382,19 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const faqSchema = generateFAQSchema(faqsWithFirstQuestion);
     const productSchema = generateProductSchema(device.recommendedBrands, sdcardsMap);
     const amazonBadgesSection = generateAmazonBadgesSection();
-    
+
     // Get component helpers based on language
     const components = getComponentHelpers(isJapanese);
-    
+
     // Get category display name (English or translated)
     const categoryDisplayName = getCategoryDisplayName(device.category, isJapanese);
-    
+
     // Generate breadcrumb schema
     const breadcrumbPath = isJapanese ? `/ja/categories/${categorySlug}/` : `/categories/${categorySlug}/`;
     const breadcrumbs = [
-      { name: isJapanese ? "ホーム" : "Home", url: isJapanese ? "/ja/" : "/" },
-      { name: categoryDisplayName, url: breadcrumbPath },
-      { name: device.name, url: deviceUrlPath }
+        { name: isJapanese ? "ホーム" : "Home", url: isJapanese ? "/ja/" : "/" },
+        { name: categoryDisplayName, url: breadcrumbPath },
+        { name: device.name, url: deviceUrlPath }
     ];
     const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 
@@ -372,10 +405,10 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const deviceImage = device.imageUrl || getDeviceImageFallback(device);
 
     // Extract first sentence from whySpecs for the answer explanation
-     // Properly match sentence end: period followed by space or end of string (avoids splitting on decimal points like 2.7K)
-     const sentenceMatch = device.whySpecs.match(/[^.!?]*[.!?](?:\s|$)/);
-     const whySpecsFirstSentence = sentenceMatch ? sentenceMatch[0].trim() : device.whySpecs;
-    
+    // Properly match sentence end: period followed by space or end of string (avoids splitting on decimal points like 2.7K)
+    const sentenceMatch = device.whySpecs.match(/[^.!?]*[.!?](?:\s|$)/);
+    const whySpecsFirstSentence = sentenceMatch ? sentenceMatch[0].trim() : device.whySpecs;
+
     let html = template
         .replace(/{{DEVICE_TITLE}}/g, title)
         .replace(/{{OG_TITLE}}/g, ogTitle)
@@ -416,39 +449,41 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
  * Generate all device pages
  */
 async function generateDevicePages(allDevices, distPath, isJapanese = false) {
-     const lang = isJapanese ? "Japanese" : "";
-     console.log(`📄 Generating ${lang} device pages...`);
+    const lang = isJapanese ? "Japanese" : "";
+    console.log(`📄 Generating ${lang} device pages...`);
 
-     const templateFile = isJapanese ? "device-ja.html" : "device.html";
-     let deviceTemplate = readTemplate(
-         path.join(srcPath, "templates", templateFile)
-     );
-     // Process {% include %} tags
-     deviceTemplate = processIncludes(deviceTemplate, path.join(srcPath, "templates"));
-     
-     const sdcardsMap = loadSDCardData();
+    const templateFile = isJapanese ? "device-ja.html" : "device.html";
+    let deviceTemplate = readTemplate(
+        path.join(srcPath, "templates", templateFile)
+    );
+    // Process {% include %} tags
+    deviceTemplate = processIncludes(deviceTemplate, path.join(srcPath, "templates"));
 
-     let successCount = 0;
-     let failedDevices = [];
+    const sdcardsMap = loadSDCardData();
 
-     allDevices.forEach((device, index) => {
-         try {
-             const deviceHTML = generateDevicePage(device, deviceTemplate, allDevices, sdcardsMap, index, isJapanese);
-             const categorySlug = getCategorySlug(device.category);
-             const baseDir = isJapanese ? "ja" : "";
-             const devicePath = path.join(distPath, baseDir, "categories", categorySlug, device.slug, "index.html");
-             writeFile(devicePath, deviceHTML);
-             successCount++;
-         } catch (error) {
-             console.warn(`  ⚠️  Failed to generate ${device.slug}: ${error.message}`);
-             failedDevices.push(device.slug);
-         }
-     });
+    let successCount = 0;
+    let failedDevices = [];
 
-     console.log(`  ✓ Generated ${successCount}/${allDevices.length} ${lang} device pages`);
-     if (failedDevices.length > 0) {
-         console.warn(`  ⚠️  ${failedDevices.length} devices failed: ${failedDevices.join(', ')}`);
-     }
+    allDevices.forEach((device, index) => {
+        try {
+            const deviceHTML = generateDevicePage(device, deviceTemplate, allDevices, sdcardsMap, index, isJapanese);
+            const categorySlug = getCategorySlug(device.category, isJapanese);
+            // Always use English slugs in URLs for both English and Japanese
+            // This is SEO best practice to avoid URL encoding issues
+            const baseDir = isJapanese ? "ja" : "";
+            const devicePath = path.join(distPath, baseDir, "categories", categorySlug, device.slug, "index.html");
+            writeFile(devicePath, deviceHTML);
+            successCount++;
+        } catch (error) {
+            console.warn(`  ⚠️  Failed to generate ${device.slug}: ${error.message}`);
+            failedDevices.push(device.slug);
+        }
+    });
+
+    console.log(`  ✓ Generated ${successCount}/${allDevices.length} ${lang} device pages`);
+    if (failedDevices.length > 0) {
+        console.warn(`  ⚠️  ${failedDevices.length} devices failed: ${failedDevices.join(', ')}`);
+    }
 }
 
 module.exports = { generateDevicePages };
