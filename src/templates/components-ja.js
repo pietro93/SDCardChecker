@@ -51,18 +51,7 @@ return `<!-- Favicon -->
        </div>
       </div>
 
-      <div class="relative group flex items-center">
-      <a href="#" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
-      計算ツール
-      <i class="fas fa-chevron-down text-xs"></i>
-      </a>
-      <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
-      <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-       <a href="/ja/tools/recording-time-calculator/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">録画時間 計算機</a>
-       <a href="/ja/tools/dashcam-storage-calculator/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">ドライブレコーダー 容量 計算機</a>
-       </div>
-       </div>
-      </div>
+
 
 
 
@@ -139,16 +128,7 @@ return `<!-- Favicon -->
         <a href="/ja/categories/security-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">セキュリティカメラ</a>
       </div>
       
-      <!-- Calculators Section -->
-      <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="calculators">
-        <span>計算ツール</span>
-        <i class="fas fa-chevron-right transition-transform duration-300"></i>
-      </button>
-      <div class="mobile-section hidden pl-4 space-y-1" data-content="calculators">
-        <a href="/ja/tools/recording-time-calculator/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">録画時間 計算機</a>
-        <a href="/ja/tools/dashcam-storage-calculator/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">ドライブレコーダー 容量 計算機</a>
-      </div>
-      
+
 
       <!-- Resources Section -->
       <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="resources">
@@ -163,7 +143,6 @@ return `<!-- Favicon -->
       
       <!-- Direct Links -->
       <a href="/ja/about.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">について</a>
-      <a href="/ja/guides/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">ガイド</a>
     </div>
   </nav>
 </header>
@@ -307,14 +286,7 @@ function generateSidebar() {
      </ul>
   </div>
 
-  <!-- Tools Links -->
-  <div class="mb-6 border-t border-slate-200 pt-6">
-    <h3 class="text-sm font-semibold text-slate-900 mb-3">計算ツール</h3>
-    <ul class="space-y-2">
-      <li><a href="/ja/tools/recording-time-calculator/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">録画時間 計算機</a></li>
-      <li><a href="/ja/tools/dashcam-storage-calculator/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">ドライブレコーダー 容量 計算機</a></li>
-    </ul>
-  </div>
+
 
   <!-- Guide Links -->
   <div class="mb-6 border-t border-slate-200 pt-6">
