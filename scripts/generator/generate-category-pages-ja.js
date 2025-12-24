@@ -175,6 +175,28 @@ async function generateCategoryPagesJa(allDevices, distPath) {
   // Categories to EXCLUDE for Japanese version
   const excludeCategories = ["Card Readers"];
 
+  // Map Japanese category names to English slugs
+  const categorySlugMap = {
+    "アクションカメラ": "action-cameras",
+    "Action Cameras": "action-cameras",
+    "カメラ": "cameras",
+    "Cameras": "cameras",
+    "ドローン": "drones",
+    "Drones": "drones",
+    "携帯ゲーム機": "gaming-handhelds",
+    "Gaming Handhelds": "gaming-handhelds",
+    "コンピュータ・タブレット": "computing-and-tablets",
+    "Computing & Tablets": "computing-and-tablets",
+    "ドライブレコーダー": "dash-cams",
+    "Dash Cams": "dash-cams",
+    "セキュリティカメラ": "security-cameras",
+    "Security Cameras": "security-cameras",
+    "トレイルカメラ": "trail-cameras",
+    "Trail Cameras": "trail-cameras",
+    "アクセサリー": "accessories",
+    "Accessories": "accessories"
+  };
+
   // Generate page for each category (excluding readers)
   Object.keys(grouped)
     .filter(category => !excludeCategories.includes(category))
@@ -185,7 +207,7 @@ async function generateCategoryPagesJa(allDevices, distPath) {
         grouped[category],
         categoryTemplate
       );
-      const categorySlug = category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
+      const categorySlug = categorySlugMap[category] || category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
       const categoryPath = path.join(
         distPath,
         "categories",
