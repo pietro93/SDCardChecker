@@ -6,7 +6,9 @@
 🚀 Starting SD Card Checker site generation...
 
 📊 Loading device data...
-  ✓ Loaded 117 devices
+  ✓ Loaded 139 devices
+📊 Loading SD Card Reader data...
+  ✓ Loaded 21 SD Card Readers
 
 📁 Copying assets...
 📁 Copying assets...
@@ -14,9 +16,10 @@
   ✓ Copied JS files
   ✓ data/devices.json
   ✓ data/sdcards.json
+  ✓ Copied amazon-cache
   ✓ Copied img folder
 
-📄 Generating device pages...
+📄 Generating  device pages...
   ✓ dist\categories\action-cameras\gopro-hero-13\index.html
   ✓ dist\categories\action-cameras\gopro-hero-12\index.html
   ✓ dist\categories\gaming-handhelds\nintendo-switch\index.html
@@ -134,9 +137,51 @@
   ✓ dist\categories\drones\holy-stone-hs360s\index.html
   ✓ dist\categories\drones\hoverair-x1-pro\index.html
   ✓ dist\categories\drones\hoverair-x1-pro-max\index.html
-  ✓ Generated 117/117 device pages
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\categories\computing-and-tablets\iphone-15\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\categories\computing-and-tablets\macbook-air\index.html
+Warning: SD card not found: lexar-lightning-microsd
+  ✓ dist\categories\computing-and-tablets\iphone-14\index.html
+Warning: SD card not found: lexar-lightning-microsd
+  ✓ dist\categories\computing-and-tablets\iphone-13\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\categories\computing-and-tablets\ipad-air\index.html
+  ✓ dist\categories\drones\dji-mini-3\index.html
+  ✓ dist\categories\action-cameras\wyze-cam-v3\index.html
+Warning: SD card not found: lexar-lightning-microsd
+  ✓ dist\categories\computing-and-tablets\iphone-14-pro-max\index.html
+Warning: SD card not found: lexar-lightning-microsd
+  ✓ dist\categories\computing-and-tablets\ipad-air-3\index.html
+Warning: SD card not found: lexar-lightning-microsd
+  ✓ dist\categories\computing-and-tablets\iphone-se\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\categories\computing-and-tablets\samsung-galaxy-s23\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\categories\computing-and-tablets\google-pixel-8\index.html
+Warning: SD card not found: htrenc-sd-card-reader
+  ✓ dist\categories\computing-and-tablets\hp-chromebook\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\categories\computing-and-tablets\dell-xps\index.html
+  ✓ dist\categories\cameras\canon-rebel-t7\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\categories\computing-and-tablets\macbook-pro\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\categories\computing-and-tablets\ipad-pro\index.html
+Warning: SD card not found: lexar-lightning-microsd
+  ✓ dist\categories\computing-and-tablets\ipad-9th-gen\index.html
+Warning: SD card not found: htrenc-sd-card-reader
+  ✓ dist\categories\computing-and-tablets\windows-laptop\index.html
+Warning: SD card not found: sony-mrw-g2
+  ✓ dist\categories\cameras\sony-a1\index.html
+Warning: SD card not found: sony-mrw-g1
+  ✓ dist\categories\cameras\nikon-d850\index.html
+  ⚠️  Failed to generate anker-powerexpand-2in1: Cannot read properties of undefined (reading 'slice')
+  ✓ Generated 138/139  device pages
+  ⚠️  1 devices failed: anker-powerexpand-2in1
 
 📂 Generating category pages...
+  ✓ dist\categories\accessories\index.html
   ✓ dist\categories\action-cameras\index.html
   ✓ dist\categories\cameras\index.html
   ✓ dist\categories\computing-and-tablets\index.html
@@ -144,13 +189,21 @@
   ✓ dist\categories\drones\index.html
   ✓ dist\categories\gaming-handhelds\index.html
   ✓ dist\categories\security-cameras\index.html
-  ✓ Generated 7 category pages
+  ✓ Generated 8 category pages
+
+📂 Generating categories index pages...
+  ✓ dist\categories\index.html
+  ✓ Generated /categories/index.html
+  ✓ dist\ja\categories\index.html
+  ✓ Generated /ja/categories/index.html
 
 📚 Generating resource pages...
   ✓ dist\faq.html
   ✓ Generated FAQ (faq.html)
   ✓ dist\guides\index.html
   ✓ Generated Guides Hub (guides/index.html)
+  ✓ dist\guides\readers\index.html
+  ✓ Generated Reader Buying Guides Index (guides/readers/index.html)
   ✓ dist\guides\sd-card-guide\index.html
   ✓ Generated SD Card Guide (guides/sd-card-guide/index.html)
   ✓ dist\guides\sd-card-speed-classes\index.html
@@ -161,7 +214,15 @@
   ✓ Generated RAW vs JPEG (guides/raw-vs-jpeg/index.html)
   ✓ dist\guides\is-my-sd-card-fake\index.html
   ✓ Generated Fake SD Card Checker (guides/is-my-sd-card-fake/index.html)
-  ✓ Generated 1 legacy + 6 guide pages
+  ✓ dist\guides\readers\macbook\index.html
+  ✓ Generated Best Readers for MacBook (guides/readers/macbook/index.html)
+  ✓ dist\guides\readers\photographers\index.html
+  ✓ Generated Best Readers for Photographers (guides/readers/photographers/index.html)
+  ✓ dist\guides\readers\iphone\index.html
+  ✓ Generated Best Readers for iPhone (guides/readers/iphone/index.html)
+  ✓ dist\guides\readers\android\index.html
+  ✓ Generated Best Readers for Android (guides/readers/android/index.html)
+  ✓ Generated 1 legacy + 11 guide pages
 
 🧮 Generating calculator pages...
   ✓ dist\tools\calculators\video-storage\index.html
@@ -191,7 +252,7 @@
 
 
 📖 Generating SD Card Reader Pages...
-  Found 14 readers in dataset
+  Found 21 readers in dataset
   ✓ dist\readers\ugreen-2in1-usbc-usb3\index.html
   ✓ dist\readers\muddy-crv43-viewer\index.html
   ✓ dist\readers\stealth-cam-sd-card-viewer\index.html
@@ -206,7 +267,14 @@
   ✓ dist\readers\transcend-rdf9-uhs2\index.html
   ✓ dist\readers\kingston-workflow-station\index.html
   ✓ dist\readers\sony-mrw-g2\index.html
-  ✅ Generated 14 reader pages
+  ✓ dist\readers\prograde-digital-usb4-cfexpress\index.html
+  ✓ dist\readers\sandisk-professional-pro-reader-multi\index.html
+  ✓ dist\readers\hicober-usbc-braided-reader\index.html
+  ✓ dist\readers\kikosaka-3in1-universal\index.html
+  ✓ dist\readers\kikosaka-lightning-charging-reader\index.html
+  ✓ dist\readers\yofeepop-2in1-sd-reader\index.html
+  ✓ dist\readers\htrenc-sd-card-reader\index.html
+  ✅ Generated 21 reader pages
 
 
 📖 Generating Readers Index Page...
@@ -230,12 +298,16 @@
   ✓ dist/readers/stick---box/index.html
   ✓ dist\readers\desktop-dock\index.html
   ✓ dist/readers/desktop-dock/index.html
-  ✅ Generated 7 reader type pages
+  ✓ dist\readers\stick---multi-interface\index.html
+  ✓ dist/readers/stick---multi-interface/index.html
+  ✓ dist\readers\stick\index.html
+  ✓ dist/readers/stick/index.html
+  ✅ Generated 9 reader type pages
 
 🔄 Generating URL redirects for SEO migration...
-  ✓ Generated Netlify _redirects file with 117 device redirects
-  ✓ Generated vercel.json with 234 redirect rules
-  ✓ Generated .htaccess with 117 device redirects
+  ✓ Generated Netlify _redirects file with 139 device redirects
+  ✓ Generated vercel.json with 278 redirect rules
+  ✓ Generated .htaccess with 139 device redirects
   ✓ All redirect configurations generated successfully
 
 📝 Generating core files...
@@ -256,10 +328,10 @@
 
 📊 Summary:
   • Homepage: 1
-  • Device pages: 117
-  • Category pages: 7
+  • Device pages: 139
+  • Category pages: 8
   • SD Card Reader pages: 14
-  • Resource pages: 3
+  • Reader Buying Guides: 4
   • Sitemap & robots.txt: ✓
 
 📁 Output directory: c:\Users\Pietro\Desktop\SDCardChecker\dist

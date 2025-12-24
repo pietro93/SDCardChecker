@@ -1,0 +1,221 @@
+
+> sd-card-checker@1.0.0 build:ja
+> node scripts/generator/build-ja.js
+
+
+🇯🇵 Starting Japanese site generation (/ja/)...
+
+📊 Loading Japanese device data...
+  ✓ Loaded 140 devices
+
+📄 Generating static Japanese pages...
+  ✓ dist\ja\about.html
+  ✓ Generated about.html
+  ✓ dist\ja\privacy.html
+  ✓ Generated privacy.html
+  ✓ dist\ja\terms.html
+  ✓ Generated terms.html
+
+📄 Generating Japanese home page...
+  ✓ dist\ja\index.html
+  ✓ c:\Users\Pietro\Desktop\SDCardChecker\dist\ja\index.html
+
+📄 Generating Japanese device pages...
+📄 Generating Japanese device pages...
+📄 Generating Japanese device pages...
+  ✓ dist\ja\categories\action-cameras\gopro-hero-13\index.html
+  ✓ dist\ja\categories\action-cameras\gopro-hero-12\index.html
+  ✓ dist\ja\categories\gaming-handhelds\nintendo-switch\index.html
+  ✓ dist\ja\categories\gaming-handhelds\nintendo-switch-oled\index.html
+  ✓ dist\ja\categories\drones\dji-mini-4-pro\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r5\index.html
+  ✓ dist\ja\categories\cameras\sony-a6700\index.html
+  ✓ dist\ja\categories\gaming-handhelds\steam-deck\index.html
+  ✓ dist\ja\categories\action-cameras\dji-osmo-pocket-3\index.html
+  ✓ dist\ja\categories\dash-cams\viofo-a229-duo\index.html
+  ✓ dist\ja\categories\computing-and-tablets\raspberry-pi-5\index.html
+  ✓ dist\ja\categories\action-cameras\insta360-x4\index.html
+  ✓ dist\ja\categories\gaming-handhelds\asus-rog-ally\index.html
+  ✓ dist\ja\categories\cameras\sony-a7-iv\index.html
+  ✓ dist\ja\categories\action-cameras\insta360-x3\index.html
+  ✓ dist\ja\categories\cameras\blackmagic-pocket-cinema-camera-4k\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-x100vi\index.html
+  ✓ dist\ja\categories\cameras\nikon-zf\index.html
+  ✓ dist\ja\categories\drones\dji-mini-2-se\index.html
+  ✓ dist\ja\categories\dash-cams\garmin-dash-cam-mini-2\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\ja\categories\computing-and-tablets\iphone-15\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\ja\categories\computing-and-tablets\macbook-air\index.html
+Warning: SD card not found: lexar-lightning-microsd
+  ✓ dist\ja\categories\computing-and-tablets\iphone-14\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\ja\categories\computing-and-tablets\ipad-air\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\ja\categories\computing-and-tablets\samsung-galaxy-s23\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\ja\categories\computing-and-tablets\ipad-pro\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\ja\categories\computing-and-tablets\macbook-pro\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-x-s20\index.html
+  ✓ dist\ja\categories\action-cameras\gopro-hero-max\index.html
+  ✓ dist\ja\categories\drones\dji-mini-3-pro\index.html
+  ✓ dist\ja\categories\drones\dji-air-3s\index.html
+  ✓ dist\ja\categories\drones\dji-mavic-3\index.html
+  ✓ dist\ja\categories\cameras\nikon-z9\index.html
+  ✓ dist\ja\categories\gaming-handhelds\nintendo-switch-lite\index.html
+  ✓ dist\ja\categories\computing-and-tablets\samsung-galaxy-tab-s9\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r6-mark-ii\index.html
+  ✓ dist\ja\categories\action-cameras\nextbase-622gw\index.html
+  ✓ dist\ja\categories\drones\dji-air-3\index.html
+  ✓ dist\ja\categories\cameras\blackmagic-pocket-cinema-camera-6k-pro\index.html
+  ✓ dist\ja\categories\cameras\nikon-z8\index.html
+  ✓ dist\ja\categories\cameras\panasonic-lumix-s1h\index.html
+  ✓ dist\ja\categories\action-cameras\gopro-hero-11-black\index.html
+  ✓ dist\ja\categories\computing-and-tablets\amazon-fire-hd-10\index.html
+  ✓ dist\ja\categories\computing-and-tablets\amazon-fire-max-11\index.html
+  ✓ dist\ja\categories\security-cameras\wyze-cam-v3\index.html
+  ✓ dist\ja\categories\security-cameras\eufy-solocam-s340\index.html
+  ✓ dist\ja\categories\computing-and-tablets\hp-chromebook-14\index.html
+  ✓ dist\ja\categories\action-cameras\dji-osmo-action-4\index.html
+  ✓ dist\ja\categories\gaming-handhelds\nintendo-3ds-xl\index.html
+  ✓ dist\ja\categories\gaming-handhelds\anbernic-rg353v\index.html
+  ✓ dist\ja\categories\gaming-handhelds\asus-rog-ally-x\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r50\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r7\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r10\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r8\index.html
+  ✓ dist\ja\categories\cameras\canon-rebel-t7\index.html
+  ✓ dist\ja\categories\cameras\canon-g7x-mark-iii\index.html
+  ✓ dist\ja\categories\cameras\canon-g7x-mark-ii\index.html
+  ✓ dist\ja\categories\drones\dji-mini-4k\index.html
+  ✓ dist\ja\categories\drones\dji-mini-3\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-xt5\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-xm5\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-xt30-ii\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-xt50\index.html
+  ✓ dist\ja\categories\cameras\sony-fx30\index.html
+  ✓ dist\ja\categories\cameras\sony-fx3\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-xe5\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-x100v\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-xt3\index.html
+  ✓ dist\ja\categories\action-cameras\insta360-go-3\index.html
+  ✓ dist\ja\categories\action-cameras\insta360-ace-pro\index.html
+  ✓ dist\ja\categories\action-cameras\insta360-one-x2\index.html
+  ✓ dist\ja\categories\gaming-handhelds\lenovo-legion-go\index.html
+  ✓ dist\ja\categories\cameras\leica-q3\index.html
+  ✓ dist\ja\categories\cameras\leica-q3-43\index.html
+  ✓ dist\ja\categories\cameras\leica-m11\index.html
+  ✓ dist\ja\categories\cameras\leica-q2\index.html
+  ✓ dist\ja\categories\cameras\leica-d-lux-8\index.html
+  ✓ dist\ja\categories\cameras\leica-m10\index.html
+  ✓ dist\ja\categories\cameras\panasonic-lumix-s9\index.html
+  ✓ dist\ja\categories\cameras\panasonic-lumix-s5-iix\index.html
+  ✓ dist\ja\categories\cameras\panasonic-lumix-s5-ii\index.html
+  ✓ dist\ja\categories\gaming-handhelds\miyoo-mini-plus\index.html
+  ✓ dist\ja\categories\cameras\nikon-d7500\index.html
+  ✓ dist\ja\categories\cameras\nikon-z50-ii\index.html
+  ✓ dist\ja\categories\cameras\nikon-z6-iii\index.html
+  ✓ dist\ja\categories\cameras\nikon-z6-ii\index.html
+  ✓ dist\ja\categories\cameras\nikon-d850\index.html
+  ✓ dist\ja\categories\cameras\nikon-d750\index.html
+  ✓ dist\ja\categories\cameras\nikon-z5\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r100\index.html
+  ✓ dist\ja\categories\gaming-handhelds\anbernic-rg35xx-plus-h\index.html
+  ✓ dist\ja\categories\cameras\sony-a7r-v\index.html
+  ✓ dist\ja\categories\cameras\nikon-d3500\index.html
+  ✓ dist\ja\categories\cameras\sony-zv-e10\index.html
+  ✓ dist\ja\categories\cameras\sony-a7-iii\index.html
+  ✓ dist\ja\categories\gaming-handhelds\retroid-pocket-4-pro\index.html
+  ✓ dist\ja\categories\computing-and-tablets\lenovo-tab-m10-plus\index.html
+  ✓ dist\ja\categories\cameras\sony-a6400\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-x-s10\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r6\index.html
+  ✓ dist\ja\categories\computing-and-tablets\raspberry-pi-4-model-b\index.html
+  ✓ dist\ja\categories\computing-and-tablets\raspberry-pi-3-model-b-plus\index.html
+  ✓ dist\ja\categories\computing-and-tablets\raspberry-pi-zero-2-w\index.html
+  ✓ dist\ja\categories\security-cameras\reolink-e1-pro\index.html
+  ✓ dist\ja\categories\computing-and-tablets\orange-pi-5\index.html
+  ✓ dist\ja\categories\gaming-handhelds\lenovo-legion-go-s\index.html
+  ✓ dist\ja\categories\action-cameras\gopro-max-2\index.html
+  ✓ dist\ja\categories\cameras\nikon-d500\index.html
+  ✓ dist\ja\categories\cameras\sony-a7r\index.html
+  ✓ dist\ja\categories\action-cameras\insta360-one-x3\index.html
+  ✓ dist\ja\categories\drones\autel-evo-ii-pro-v3\index.html
+  ✓ dist\ja\categories\drones\autel-evo-nano-plus\index.html
+  ✓ dist\ja\categories\drones\autel-evo-lite-plus\index.html
+  ✓ dist\ja\categories\drones\potensic-atom\index.html
+  ✓ dist\ja\categories\drones\potensic-atom-se\index.html
+  ✓ dist\ja\categories\drones\skydio-2-plus\index.html
+  ✓ dist\ja\categories\drones\skydio-x10\index.html
+  ✓ dist\ja\categories\drones\fimi-mini-3\index.html
+  ✓ dist\ja\categories\drones\holy-stone-hs175d\index.html
+  ✓ dist\ja\categories\drones\holy-stone-hs720\index.html
+  ✓ dist\ja\categories\drones\holy-stone-hs360s\index.html
+  ✓ dist\ja\categories\drones\hoverair-x1-pro\index.html
+  ✓ dist\ja\categories\drones\hoverair-x1-pro-max\index.html
+Warning: SD card not found: lexar-lightning-microsd
+  ✓ dist\ja\categories\computing-and-tablets\iphone-13\index.html
+  ✓ dist\ja\categories\drones\dji-mini-3\index.html
+  ✓ dist\ja\categories\action-cameras\wyze-cam-v3\index.html
+Warning: SD card not found: lexar-lightning-microsd
+  ✓ dist\ja\categories\computing-and-tablets\iphone-14-pro-max\index.html
+Warning: SD card not found: lexar-lightning-microsd
+  ✓ dist\ja\categories\computing-and-tablets\ipad-air-3\index.html
+Warning: SD card not found: lexar-lightning-microsd
+  ✓ dist\ja\categories\computing-and-tablets\iphone-se\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\ja\categories\computing-and-tablets\google-pixel-8\index.html
+  ✓ dist\ja\categories\trail-cameras\trail-cameras\index.html
+Warning: SD card not found: htrenc-sd-card-reader
+  ✓ dist\ja\categories\computing-and-tablets\hp-chromebook\index.html
+Warning: SD card not found: sandisk-extreme-pro-uhs2-usbc
+  ✓ dist\ja\categories\computing-and-tablets\dell-xps\index.html
+  ✓ dist\ja\categories\cameras\canon-rebel-t7\index.html
+Warning: SD card not found: lexar-lightning-microsd
+  ✓ dist\ja\categories\computing-and-tablets\ipad-9th-gen\index.html
+Warning: SD card not found: htrenc-sd-card-reader
+  ✓ dist\ja\categories\computing-and-tablets\windows-laptop\index.html
+Warning: SD card not found: sony-mrw-g2
+  ✓ dist\ja\categories\cameras\sony-a1\index.html
+Warning: SD card not found: sony-mrw-g1
+  ✓ dist\ja\categories\cameras\nikon-d850\index.html
+  ⚠️  Failed to generate anker-powerexpand-2in1: Cannot read properties of undefined (reading 'slice')
+  ✓ Generated 139/140 Japanese device pages
+  ⚠️  1 devices failed: anker-powerexpand-2in1
+  ✓ Generated 140 Japanese device pages
+
+📄 Generating Japanese category pages...
+📂 Generating Japanese category pages...
+  ✓ dist\ja\categories\action-cameras\index.html
+  ✓ dist\ja\categories\accessories\index.html
+  ✓ dist\ja\categories\cameras\index.html
+  ✓ dist\ja\categories\computing-and-tablets\index.html
+  ✓ dist\ja\categories\security-cameras\index.html
+  ✓ dist\ja\categories\trail-cameras\index.html
+  ✓ dist\ja\categories\dash-cams\index.html
+  ✓ dist\ja\categories\drones\index.html
+  ✓ dist\ja\categories\gaming-handhelds\index.html
+  ✓ Generated 9 Japanese category pages (excluding Card Readers)
+
+📄 Generating Japanese guide pages...
+📚 Generating Japanese guide pages...
+  ✓ dist\ja\guides\sd-card-speed-classes\index.html
+  ✓ Generated Speed Classes Guide (Japanese)
+  ✓ dist\ja\guides\is-my-sd-card-fake\index.html
+  ✓ Generated Fake Card Detection Guide (Japanese)
+  ✓ dist\ja\guides\nintendo-switch-sd-card-guide\index.html
+  ✓ Generated Nintendo Switch Guide (English)
+  ✓ Generated 3/3 Japanese guide pages
+
+
+✅ Japanese generation complete!
+
+📊 Summary:
+  • Japanese device pages: 140
+  • Japanese category pages: 9
+  • Japanese home page: 1
+
+📁 Output directory: c:\Users\Pietro\Desktop\SDCardChecker\dist\ja
+
+✅ Japanese site ready at /ja/

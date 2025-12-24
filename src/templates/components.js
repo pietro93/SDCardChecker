@@ -113,22 +113,22 @@ return `<!-- Favicon -->
        
        <!-- Language Switcher (Desktop) -->
        <div class="hidden md:flex items-center gap-2 ml-4 pl-4 border-l border-slate-200">
-       <div class="relative group">
-        <button class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm flex items-center gap-1">
-          <i class="fas fa-globe"></i>
-          <span>English</span>
-          <i class="fas fa-chevron-down text-xs"></i>
-        </button>
-        <div class="absolute right-0 top-full pt-2 w-40 hidden group-hover:block">
-          <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-            <a href="/" class="block px-4 py-3 text-blue-600 bg-blue-50 first:rounded-t-lg text-sm font-medium flex items-center justify-between">
-              English
-              <i class="fas fa-check text-blue-600"></i>
-            </a>
-            <a href="/ja/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">日本語</a>
-          </div>
-        </div>
-       </div>
+         <div class="relative group">
+           <button class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm flex items-center gap-1 cursor-pointer">
+             <i class="fas fa-globe"></i>
+             <span>English</span>
+             <i class="fas fa-chevron-down text-xs"></i>
+           </button>
+           <div class="absolute right-0 top-full pt-2 w-40 hidden group-hover:block z-50">
+             <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+               <a href="/" class="block px-4 py-3 text-blue-600 bg-blue-50 first:rounded-t-lg text-sm font-medium flex items-center justify-between">
+                 English
+                 <i class="fas fa-check text-blue-600"></i>
+               </a>
+               <a href="/ja/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">日本語</a>
+             </div>
+           </div>
+         </div>
        </div>
        
        <!-- Mobile Menu Button -->
