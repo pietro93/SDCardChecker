@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDカード 録画時間 計算機 — カメラ・GoPro・ドローン・ドラレコ対応</title>
+  <meta name="description" content="SDカードの録画時間を瞬時に計算。4K動画、写真枚数、タイムラプス撮影まで対応。カメラ、GoPro、ドローン、ドライブレコーダーの容量計算が簡単に。">
+  <link rel="canonical" href="https://sdcardchecker.com/ja/tools/recording-time-calculator/">
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="/assets/js/calculator.js"></script>
+  <script src="/assets/js/card-selector.js"></script>
+  <script src="/assets/js/calculator-ui.js"></script>
+  <script src="/assets/js/calculator-card-recommendations.js"></script>
+  <script src="/assets/js/card-recommendations.js"></script>
+  {{GROW_SCRIPT}}
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/ja/" class="text-blue-600 hover:underline">ホーム</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/ja/tools/" class="text-blue-600 hover:underline">ツール</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">SDカード録画時間計算機</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative">
+        <img src="/img/calculator/gopro-footage-time.webp" alt="様々なデバイスでのSDカード利用シーン" class="w-full object-cover hero-image" width="1200" height="350" loading="lazy" />
+        <div class="hero-overlay">
+          <div class="hero-title-wrapper">
+            <h1 class="hero-title" style="color: #ffffff;">
+              SDカードに何時間録画できる？
+            </h1>
+            <h2 class="hero-subtitle" style="color: #ffffff;">
+              カメラ・GoPro・ドローン・ドラレコの容量を瞬時に計算
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+        撮影中にSDカードの容量不足になるのは最悪の事態です。特にビデオ撮影や連写、タイムラプス撮影では、ファイルサイズが予想以上に大きくなることがあります。この計算機を使えば、お使いのデバイスと設定に基づき、SDカードにどれだけのビデオ映像や写真を保存できるかを正確に計画できます。
+      </p>
+      <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+        カメラ、GoPro、ドローン、ドライブレコーダーなど、あらゆるデバイスに対応しています。解像度、ビットレート、ファイル形式（RAW/JPEG）を入力するだけで、必要なカード容量と推奨されるスピードクラスを瞬時に計算します。もう憶測でカードを選ぶ必要はありません。自信を持って撮影に臨みましょう。
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+          <div>
+            <h4 class="font-bold text-slate-900 mb-1">デバイス別計算</h4>
+            <p class="text-slate-600 text-sm">カメラ、GoPro、ドローン等</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+          <div>
+            <h4 class="font-bold text-slate-900 mb-1">ビデオ録画時間</h4>
+            <p class="text-slate-600 text-sm">ビットレートから時間を算出</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+          <div>
+            <h4 class="font-bold text-slate-900 mb-1">写真撮影枚数</h4>
+            <p class="text-slate-600 text-sm">RAWとJPEGを比較</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+          <div>
+            <h4 class="font-bold text-slate-900 mb-1">最適なカードを推奨</h4>
+            <p class="text-slate-600 text-sm">容量と速度から自動選出</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calculator Widget -->
+      <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
+        <!-- Mode Tabs -->
+        <div class="mb-6 border-b border-slate-200">
+          <nav class="-mb-px flex space-x-8" role="tablist">
+            <button role="tab" aria-selected="true" aria-controls="video-panel" id="video-tab"
+                    class="tab-button active whitespace-nowrap py-4 px-1 border-b-2 border-blue-600 font-semibold text-slate-900 text-lg">
+              📹 ビデオ録画
+            </button>
+            <button role="tab" aria-selected="false" aria-controls="photo-panel" id="photo-tab"
+                    class="tab-button whitespace-nowrap py-4 px-1 border-b-2 border-transparent font-semibold text-slate-600 hover:text-slate-900 hover:border-slate-300 text-lg">
+              📷 写真撮影
+            </button>
+          </nav>
+        </div>
+
+        <!-- Video Tab Panel -->
+        <div id="video-panel" role="tabpanel" aria-labelledby="video-tab" class="tab-panel active">
+          <div class="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+            <p class="text-sm text-slate-700"><strong>ヒント：</strong>ビットレートはMbps (メガビット/秒)で測定されます。カードの書き込み速度はMB/s (メガバイト/秒)です。変換式：1 MB/s = 8 Mbps。</p>
+          </div>
+
+          <!-- Device Selector for Video -->
+          <div class="mb-6">
+            <label for="device-selector" class="block text-sm font-semibold text-slate-900 mb-2">デバイスを選択：</label>
+            <select id="device-selector" class="w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+              <option value="custom">カスタム設定</option>
+              <optgroup label="--- ビデオカメラ ---">
+                <option value="camera-4k-30">カメラ: 4K 30fps (100 Mbps)</option>
+                <option value="camera-4k-60">カメラ: 4K 60fps (200 Mbps)</option>
+              </optgroup>
+              <optgroup label="--- GoPro ---">
+                <option value="gopro-hero13-5.3k-60">GoPro Hero 13: 5.3K 60fps H.265 (120 Mbps)</option>
+                <option value="gopro-hero12-5.3k-60">GoPro Hero 12: 5.3K 60fps H.265 (100 Mbps)</option>
+                <option value="gopro-max-360">GoPro Max: 5.6K 360° (120 Mbps)</option>
+              </optgroup>
+              <optgroup label="--- ドローン ---">
+                <option value="dji-mavic3-5.1k">DJI Mavic 3: 5.1K 50fps (200 Mbps)</option>
+                <option value="dji-air3s-4k">DJI Air 3S: 4K 60fps (130 Mbps)</option>
+                <option value="dji-mini4pro-4k">DJI Mini 4 Pro: 4K 30fps (60 Mbps)</option>
+              </optgroup>
+              <optgroup label="--- ドライブレコーダー ---">
+                <option value="dashcam-1080p">ドラレコ: 1080p 30fps (10 Mbps)</option>
+                <option value="dashcam-4k">ドラレコ: 4K 30fps (30 Mbps)</option>
+              </optgroup>
+              <optgroup label="--- Insta360 ---">
+                <option value="insta360-x4-5.7k">Insta360 X4: 5.7K 30fps (100 Mbps)</option>
+                <option value="insta360-x4-360">Insta360 X4: 5.7K 360° (200 Mbps)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <!-- Video Settings Form -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label for="bitrate" class="block text-sm font-semibold text-slate-900 mb-2">ビットレート (Mbps)</label>
+              <input type="number" id="bitrate" value="100" min="1" max="1000" step="1" class="w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
+            <div>
+              <label for="card-capacity" class="block text-sm font-semibold text-slate-900 mb-2">SDカード容量 (GB)</label>
+              <select id="card-capacity" class="w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <option value="64">64GB</option>
+                <option value="128">128GB</option>
+                <option value="256" selected>256GB</option>
+                <option value="512">512GB</option>
+                <option value="1024">1TB</option>
+              </select>
+            </div>
+            <div>
+              <label for="codec" class="block text-sm font-semibold text-slate-900 mb-2">コーデック</label>
+              <select id="codec" class="w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <option value="h264">H.264</option>
+                <option value="h265" selected>H.265 (HEVC)</option>
+                <option value="prores">ProRes</option>
+              </select>
+            </div>
+            <div>
+              <label for="frame-rate" class="block text-sm font-semibold text-slate-900 mb-2">フレームレート (fps)</label>
+              <input type="number" id="frame-rate" value="30" min="1" max="240" step="1" class="w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
+          </div>
+
+          <button onclick="calculateVideo()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+            計算する
+          </button>
+
+          <!-- Video Results -->
+          <div id="video-results" class="mt-8 hidden">
+            <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+              <h3 class="text-xl font-bold text-slate-900 mb-4">計算結果</h3>
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="bg-white rounded p-4 border border-slate-200">
+                  <p class="text-sm text-slate-600 mb-1">録画時間</p>
+                  <p class="text-2xl font-bold text-blue-600" id="recording-hours">0時間</p>
+                </div>
+                <div class="bg-white rounded p-4 border border-slate-200">
+                  <p class="text-sm text-slate-600 mb-1">必要なカード容量</p>
+                  <p class="text-2xl font-bold text-blue-600" id="required-capacity">0GB</p>
+                </div>
+                <div class="bg-white rounded p-4 border border-slate-200">
+                  <p class="text-sm text-slate-600 mb-1">推奨スピードクラス</p>
+                  <p class="text-2xl font-bold text-blue-600" id="speed-class">V30</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo Tab Panel -->
+        <div id="photo-panel" role="tabpanel" aria-labelledby="photo-tab" class="tab-panel hidden">
+          <div class="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+            <p class="text-sm text-slate-700"><strong>ヒント：</strong>写真のファイルサイズはMB (メガバイト)で測定されます。RAWはJPEGよりも5～10倍大きくなることがあります。連写やタイムラプス撮影には、V30やV60などの高速カードが推奨されます。</p>
+          </div>
+
+          <!-- Photo Settings Form -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label for="file-size" class="block text-sm font-semibold text-slate-900 mb-2">ファイルサイズ (MB/枚)</label>
+              <input type="number" id="file-size" value="5" min="0.1" max="100" step="0.1" class="w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
+            <div>
+              <label for="photo-card-capacity" class="block text-sm font-semibold text-slate-900 mb-2">SDカード容量 (GB)</label>
+              <select id="photo-card-capacity" class="w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <option value="32">32GB</option>
+                <option value="64">64GB</option>
+                <option value="128" selected>128GB</option>
+                <option value="256">256GB</option>
+              </select>
+            </div>
+            <div>
+              <label for="format" class="block text-sm font-semibold text-slate-900 mb-2">ファイル形式</label>
+              <select id="format" class="w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <option value="jpeg" selected>JPEG</option>
+                <option value="raw">RAW</option>
+                <option value="both">RAW + JPEG</option>
+              </select>
+            </div>
+            <div>
+              <label for="burst-rate" class="block text-sm font-semibold text-slate-900 mb-2">連写速度 (fps)</label>
+              <input type="number" id="burst-rate" value="5" min="1" max="30" step="1" class="w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <button onclick="calculatePhotos()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+              写真枚数を計算
+            </button>
+            <button onclick="calculateTimelapse()" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+              タイムラプスを計算
+            </button>
+          </div>
+
+          <!-- Photo Results -->
+          <div id="photo-results" class="mt-8 hidden">
+            <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+              <h3 class="text-xl font-bold text-slate-900 mb-4">計算結果</h3>
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="bg-white rounded p-4 border border-slate-200">
+                  <p class="text-sm text-slate-600 mb-1">撮影枚数</p>
+                  <p class="text-2xl font-bold text-blue-600" id="photo-count">0枚</p>
+                </div>
+                <div class="bg-white rounded p-4 border border-slate-200">
+                  <p class="text-sm text-slate-600 mb-1">連写時間</p>
+                  <p class="text-2xl font-bold text-blue-600" id="burst-duration">0秒</p>
+                </div>
+                <div class="bg-white rounded p-4 border border-slate-200">
+                  <p class="text-sm text-slate-600 mb-1">推奨スピードクラス</p>
+                  <p class="text-2xl font-bold text-blue-600" id="photo-speed-class">U3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timelapse Results -->
+          <div id="timelapse-results" class="mt-8 hidden">
+            <div class="bg-purple-50 border border-purple-200 rounded-lg p-6">
+              <h3 class="text-xl font-bold text-slate-900 mb-4">タイムラプス計算</h3>
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white rounded p-4 border border-slate-200">
+                  <p class="text-sm text-slate-600 mb-1">撮影期間</p>
+                  <input type="text" id="timelapse-duration" placeholder="24 hours" class="text-lg font-bold text-blue-600 bg-transparent border-none p-0">
+                </div>
+                <div class="bg-white rounded p-4 border border-slate-200">
+                  <p class="text-sm text-slate-600 mb-1">撮影間隔</p>
+                  <input type="number" id="timelapse-interval" value="5" min="1" max="3600" step="1" placeholder="seconds" class="text-lg font-bold text-blue-600 w-full border border-slate-300 rounded px-2 py-1">
+                  <p class="text-xs text-slate-500 mt-1">秒</p>
+                </div>
+                <div class="bg-white rounded p-4 border border-slate-200">
+                  <p class="text-sm text-slate-600 mb-1">撮影枚数</p>
+                  <p class="text-2xl font-bold text-blue-600" id="timelapse-frames">0枚</p>
+                </div>
+                <div class="bg-white rounded p-4 border border-slate-200">
+                  <p class="text-sm text-slate-600 mb-1">動画時間</p>
+                  <p class="text-2xl font-bold text-blue-600" id="timelapse-video-length">0秒</p>
+                </div>
+              </div>
+              <button onclick="calculateTimelapse()" class="mt-4 w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
+                タイムラプスを計算
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why This Matters Section -->
+      <div class="mb-8 bg-amber-50 border-l-4 border-amber-500 rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">なぜ適切なカード選びが重要なのか？</h2>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          多くの人が「SDカードはどれも同じ」と考え、価格だけで選んでしまいがちです。しかし、不適切なカードは撮影を台無しにする可能性があります。容量不足で撮影が中断されたり、書き込み速度が遅いために連写が止まったり、4Kビデオでコマ落ちが発生したりします。
+        </p>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          特に、ドライブレコーダーのような常時録画デバイスでは、一般的なSDカードは数週間で故障する可能性があります。高耐久（High Endurance）仕様のカードを使用しないと、肝心な事故の瞬間が記録されていないという事態になりかねません。
+        </p>
+        <p class="text-slate-700 leading-relaxed">
+          この計算機は、あなたのニーズを事前に把握し、適切な容量とスピードクラスのカードに投資するための手助けをします。これにより、撮影現場での不安をなくし、安心して創作活動に集中できます。
+        </p>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">よくある質問</h2>
+        
+        <div class="space-y-4">
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                JPEGとRAWの違いは何ですか？
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-1" class="faq-answer">
+              <p><strong>JPEG：</strong>圧縮された画像形式です。ファイルサイズが小さく（1枚あたり2～12MB）、カメラ内で色調整やシャープネスが適用されるため、撮影後すぐに共有できます。しかし、編集の自由度は低く、白飛びや黒つぶれの復元は困難です。</p>
+              <p><strong>RAW：</strong>非圧縮の「生の」データです。ファイルサイズは大きいですが（1枚あたり20～80MB以上）、センサーが捉えた全ての情報が記録されています。Adobe Lightroomなどの現像ソフトを使えば、露出やホワイトバランスを後から自由に調整でき、JPEGでは失われてしまうディテールを復元できます。</p>
+              <p><strong>結論：</strong>手軽さを求めるならJPEG、最高の画質と編集の自由度を求めるプロや上級者ならRAWが適しています。当計算機でそれぞれのストレージ必要量を見積もることができます。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                4Kビデオを撮影するには、どのスピードクラスが必要ですか？
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-2" class="faq-answer">
+              <p>ビデオのスピードクラスは、安定した録画を保証する最低書き込み速度を示します。</p>
+              <p><strong>V30 (U3)：</strong>最低30MB/sの書き込み速度を保証します。これは、ほとんどのカメラの4K 30fps録画における最低要件です。これより遅いカードを使用すると、カメラのバッファが溢れ、録画が停止したりコマ落ちが発生したりする危険があります。</p>
+              <p><strong>V60：</strong>最低60MB/sを保証します。4K 60fpsや、より高いビットレートでの撮影、高画質なコーデック（ProResなど）を使用する場合に推奨されます。十分な余裕があるため、安定性が向上します。</p>
+              <p><strong>V90：</strong>最低90MB/sを保証します。8Kビデオやプロ向けのシネマカメラ、非圧縮RAWビデオなど、非常に高いデータレートを扱う場合に必要です。</p>
+              <p><strong>ヒント：</strong>必ずお使いのカメラの取扱説明書で、推奨されるスピードクラスを確認してください。推奨スペックを下回るカードの使用はリスクが伴います。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                ドライブレコーダーには、なぜ「高耐久（High Endurance）」カードが必要なのですか？
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-3" class="faq-answer">
+              <p><strong>通常SDカードの問題点：</strong>通常のSDカードは、写真撮影のような断続的な書き込みを想定して設計されています。ドライブレコーダーのように24時間365日データを書き込み続ける過酷な環境では、メモリセルが数週間から数ヶ月で摩耗し、故障してしまいます。</p>
+              <p><strong>高耐久カードの利点：</strong>高耐久カードは、常時録画の厳しい要求に応えるために特別に設計されています。強化されたフラッシュメモリとエラー訂正機能を備え、数千時間から数万時間の録画に耐えることができます。これにより、いざという時に映像が記録されていないという最悪の事態を防ぎます。</p>
+              <p><strong>結論：</strong>ドライブレコーダーや監視カメラには、必ず「高耐久」または「Endurance」と明記されたカードを使用してください。わずかな価格差で、信頼性が格段に向上します。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                H.264とH.265（HEVC）コーデックの違いは何ですか？
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-4" class="faq-answer">
+              <p><strong>H.264 (AVC)：</strong>長年にわたる業界標準の圧縮コーデックです。幅広いデバイスや編集ソフトとの互換性が非常に高いのが特徴です。しかし、圧縮効率は最新のコーデックに劣ります。</p>
+              <p><strong>H.265 (HEVC)：</strong>H.264の後継となる新しいコーデックです。約2倍の圧縮効率を誇り、H.264と同じ画質を約半分のファイルサイズで実現できます。つまり、同じ容量のSDカードでより長時間の録画が可能です。GoProやドローンの最新モデルで採用が進んでいます。ただし、古いデバイスやソフトでは再生・編集できない場合があります。</p>
+              <p><strong>どちらを選ぶべきか：</strong>ストレージを節約したい、かつお使いの機材が対応しているならH.265が最適です。互換性を最優先するならH.264が安心です。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                GoPro Hero 13、Hero 12、GoPro Maxの違いは何ですか？
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-5" class="faq-answer">
+              <p><strong>Hero 13 Black：</strong>最新フラッグシップモデルです。5.3K 60fpsでH.265により120 Mbpsで記録でき、最高の画質を実現します。改良されたスタビライゼーション（HyperSmooth 6.0）と長いバッテリー寿命が特徴です。最も高いビットレートを使用するため、ストレージ消費量は最も多いです。</p>
+              <p><strong>Hero 12 Black：</strong>前世代のフラッグシップです。5.3K 60fpsで記録可能ですが、ビットレートはHero 13より若干低めです。HDR動画やHyperSmooth 6.0スタビライゼーションを備え、今でも優れたパフォーマンスを提供します。ストレージ効率はHero 13より若干良好です。</p>
+              <p><strong>GoPro Max：</strong>360°カメラです。デュアルレンズで全方向を同時に記録します。5.6K 30fpsで360°映像を記録するため、ビットレートはスタンダードGoProの約2倍（120 Mbps）になります。後処理で任意の角度を選択できるユニークな特徴があります。</p>
+              <p><strong>ストレージへの影響：</strong>Hero 13が最もストレージを消費し、次にHero 12、GoPro Maxがスタンダード比で2倍のストレージを必要とします。当計算機でそれぞれの正確なストレージ必要量を計算できます。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                ドローンの360°録画はどの程度のストレージを消費しますか？
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-6" class="faq-answer">
+              <p><strong>360°録画の特徴：</strong>360°カメラはすべての方向を同時に記録するため、スタンダードな単一方向の録画と比べ、ビットレートが大幅に増加します。Insta360 X4の場合、標準5.7K 30fps (100 Mbps) が360°モードでは200 Mbpsに跳ね上がります。</p>
+              <p><strong>ストレージへの影響：</strong>つまり、同じ容量のSDカードでは、360°モードでは標準モードの半分の時間しか録画できません。128GBのカードで標準モードなら3時間以上録画できても、360°モードでは1.5時間程度に短縮されます。</p>
+              <p><strong>計画のコツ：</strong>360°の高品質映像が必要な場合は、より大容量のカード（256GB以上）を準備することをお勧めします。当計算機で正確なストレージ要件を事前に確認できます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommended Cards Section -->
+      <div class="mb-8 hidden" id="card-recommendations">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">あなたにおすすめのSDカード</h2>
+        <div id="card-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Populated by JavaScript after calculation -->
+        </div>
+      </div>
+
+      <!-- Amazon Featured Products Section (Phase 5) -->
+      {{AMAZON_FEATURED_CALCULATOR_PRICE}}
+
+      <!-- Related Guides -->
+      <div class="bg-slate-100 rounded-lg p-8 mb-8">
+        <h3 class="text-xl font-bold text-slate-900 mb-6">関連ガイド</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <a href="/ja/guides/sd-card-speed-class/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">📊 SDカードスピードクラスガイド</h4>
+            <p class="text-sm text-slate-600">V30、V60、V90の違いを完全解説</p>
+          </a>
+          <a href="/ja/guides/best-sd-cards-for-video/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">🎥 ビデオ撮影に最適なSDカード</h4>
+            <p class="text-sm text-slate-600">カメラタイプ別の推奨カード比較</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Schema Markup -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "SDカード 録画時間 計算機",
+          "description": "SDカードの録画時間を瞬時に計算。4K動画、写真枚数、タイムラプス撮影まで対応。カメラ、GoPro、ドローン、ドライブレコーダーの容量計算が簡単に。",
+          "url": "https://sdcardchecker.com/ja/tools/recording-time-calculator/",
+          "inLanguage": "ja",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://sdcardchecker.com/ja/" },
+              { "@type": "ListItem", "position": 2, "name": "ツール", "item": "https://sdcardchecker.com/ja/tools/" },
+              { "@type": "ListItem", "position": 3, "name": "SDカード録画時間計算機", "item": "https://sdcardchecker.com/ja/tools/recording-time-calculator/" }
+            ]
+          },
+          "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "JPEGとRAWの違いは何ですか？", "acceptedAnswer": { "@type": "Answer", "text": "JPEGは圧縮済みですぐに共有できる形式です。RAWは非圧縮で、最大限の編集の自由度があります。" } },
+              { "@type": "Question", "name": "4Kビデオを撮影するには、どのスピードクラスが必要ですか？", "acceptedAnswer": { "@type": "Answer", "text": "4K 30fpsには最低でもV30が必要です。4K 60fpsや高ビットレート撮影にはV60を推奨します。" } },
+              { "@type": "Question", "name": "ドライブレコーダーには、なぜ「高耐久（High Endurance）」カードが必要なのですか？", "acceptedAnswer": { "@type": "Answer", "text": "ドライブレコーダーは常時書き込みを行うため、一般的なSDカードはすぐに摩耗して故障します。高耐久カードは長期間の連続使用に耐えるよう設計されています。" } }
+            ]
+          }
+        }
+      </script>
+    </main>
+
+    {{SIDEBAR}}
+  </div>
+
+  {{FOOTER}}
+  {{GROW_SCRIPT}}
+
+  <style>
+    /* Hero Image with Overlay Title */
+    .hero-image-container {
+      position: relative;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+    }
+
+    .hero-title-wrapper {
+      text-align: center;
+    }
+
+    .hero-title {
+      @apply text-3xl md:text-4xl font-bold text-center px-4;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.5);
+      filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+      @apply text-lg md:text-xl font-semibold text-center px-4;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.5);
+      filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+    }
+
+    /* Tab styling */
+    .tab-button {
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .tab-button.active {
+      border-bottom-color: #2563eb;
+      color: #1e293b;
+    }
+
+    .tab-panel {
+      animation: fadeIn 0.3s ease-in;
+    }
+
+    .tab-panel.hidden {
+      display: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* FAQ styling */
+    .faq-item {
+      @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow;
+    }
+
+    .faq-heading {
+      @apply m-0;
+    }
+
+    .faq-question {
+      @apply w-full p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors bg-transparent border-none;
+      min-height: 48px;
+      user-select: none;
+      -webkit-user-select: none;
+      text-align: left;
+    }
+
+    .faq-question:focus {
+      @apply outline-2 outline-offset-2 outline-blue-500;
+    }
+
+    .faq-question:active {
+      background-color: rgba(59, 130, 246, 0.05);
+      transition: background-color 0.1s ease;
+    }
+
+    .faq-toggle {
+      @apply text-slate-400 transition-transform duration-300;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .faq-toggle.open {
+      @apply rotate-180;
+    }
+
+    .faq-answer {
+      @apply px-6 pb-6 text-slate-700 leading-relaxed border-t border-slate-200 hidden;
+    }
+
+    .faq-answer.open {
+      @apply block;
+    }
+
+    .faq-answer p {
+      margin-bottom: 1rem;
+    }
+
+    .faq-answer ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+
+  <script>
+    // Tab switching logic
+    const videoTab = document.getElementById('video-tab');
+    const photoTab = document.getElementById('photo-tab');
+    const videoPanel = document.getElementById('video-panel');
+    const photoPanel = document.getElementById('photo-panel');
+
+    videoTab.addEventListener('click', () => {
+      videoTab.setAttribute('aria-selected', 'true');
+      photoTab.setAttribute('aria-selected', 'false');
+      videoPanel.classList.remove('hidden');
+      photoPanel.classList.add('hidden');
+      videoTab.classList.add('active');
+      photoTab.classList.remove('active');
+    });
+
+    photoTab.addEventListener('click', () => {
+      photoTab.setAttribute('aria-selected', 'true');
+      videoTab.setAttribute('aria-selected', 'false');
+      photoPanel.classList.remove('hidden');
+      videoPanel.classList.add('hidden');
+      photoTab.classList.add('active');
+      videoTab.classList.remove('active');
+    });
+
+    // Device preset values
+    const devicePresets = {
+      'camera-4k-30': { bitrate: 100, codec: 'h264', frameRate: 30 },
+      'camera-4k-60': { bitrate: 200, codec: 'h265', frameRate: 60 },
+      'gopro-hero13-5.3k-60': { bitrate: 120, codec: 'h265', frameRate: 60 },
+      'gopro-hero12-5.3k-60': { bitrate: 100, codec: 'h265', frameRate: 60 },
+      'gopro-max-360': { bitrate: 120, codec: 'h265', frameRate: 30 },
+      'dji-mavic3-5.1k': { bitrate: 200, codec: 'h265', frameRate: 50 },
+      'dji-air3s-4k': { bitrate: 130, codec: 'h265', frameRate: 60 },
+      'dji-mini4pro-4k': { bitrate: 60, codec: 'h264', frameRate: 30 },
+      'dashcam-1080p': { bitrate: 10, codec: 'h264', frameRate: 30 },
+      'dashcam-4k': { bitrate: 30, codec: 'h264', frameRate: 30 },
+      'insta360-x4-5.7k': { bitrate: 100, codec: 'h265', frameRate: 30 },
+      'insta360-x4-360': { bitrate: 200, codec: 'h265', frameRate: 30 }
+    };
+
+    // Device selector change handler
+    document.getElementById('device-selector').addEventListener('change', (e) => {
+      const preset = devicePresets[e.target.value];
+      if (preset) {
+        document.getElementById('bitrate').value = preset.bitrate;
+        document.getElementById('codec').value = preset.codec;
+        document.getElementById('frame-rate').value = preset.frameRate;
+      }
+    });
+
+    // Calculate video recording time
+    function calculateVideo() {
+      const bitrate = parseFloat(document.getElementById('bitrate').value);
+      const capacity = parseFloat(document.getElementById('card-capacity').value);
+      
+      if (!bitrate || !capacity) {
+        alert('ビットレートとカード容量を入力してください');
+        return;
+      }
+
+      // Convert GB to Megabits
+      const totalMegabits = capacity * 1024 * 8;
+      
+      // Calculate hours
+      const totalMbps = bitrate;
+      const hours = (totalMegabits / totalMbps) / 3600;
+      const minutes = (hours % 1) * 60;
+      const seconds = (minutes % 1) * 60;
+
+      // Determine speed class
+      let speedClass = 'V30';
+      if (bitrate > 480) speedClass = 'V90';
+      else if (bitrate > 240) speedClass = 'V60';
+
+      // Display results
+      const resultsDiv = document.getElementById('video-results');
+      document.getElementById('recording-hours').textContent = 
+        `${Math.floor(hours)}時間${Math.floor(minutes)}分`;
+      document.getElementById('required-capacity').textContent = 
+        `${capacity}GB`;
+      document.getElementById('speed-class').textContent = speedClass;
+      
+      resultsDiv.classList.remove('hidden');
+    }
+
+    // Calculate photo count
+    function calculatePhotos() {
+      const fileSize = parseFloat(document.getElementById('file-size').value);
+      const capacity = parseFloat(document.getElementById('photo-card-capacity').value);
+      const format = document.getElementById('format').value;
+      
+      if (!fileSize || !capacity) {
+        alert('ファイルサイズとカード容量を入力してください');
+        return;
+      }
+
+      // Adjust for format
+      let actualFileSize = fileSize;
+      if (format === 'both') {
+        actualFileSize = fileSize * 2; // RAW + JPEG
+      }
+
+      // Convert GB to MB
+      const totalMB = capacity * 1024;
+      const photoCount = Math.floor(totalMB / actualFileSize);
+
+      // Burst calculation
+      const burstRate = parseFloat(document.getElementById('burst-rate').value);
+      const burstDuration = photoCount / burstRate;
+
+      // Speed class recommendation
+      let speedClass = 'U3';
+      if (burstRate > 6) speedClass = 'V30';
+      if (burstRate > 10) speedClass = 'V60';
+
+      // Display results
+      const resultsDiv = document.getElementById('photo-results');
+      document.getElementById('photo-count').textContent = `${photoCount.toLocaleString()}枚`;
+      document.getElementById('burst-duration').textContent = `${burstDuration.toFixed(1)}秒`;
+      document.getElementById('photo-speed-class').textContent = speedClass;
+      
+      resultsDiv.classList.remove('hidden');
+    }
+
+    // Calculate timelapse
+    function calculateTimelapse() {
+      const fileSize = parseFloat(document.getElementById('file-size').value);
+      const capacity = parseFloat(document.getElementById('photo-card-capacity').value);
+      const interval = parseFloat(document.getElementById('timelapse-interval').value);
+      
+      if (!fileSize || !capacity || !interval) {
+        alert('ファイルサイズ、カード容量、撮影間隔を入力してください');
+        return;
+      }
+
+      // Calculate total photos possible
+      const totalMB = capacity * 1024;
+      const maxPhotos = Math.floor(totalMB / fileSize);
+
+      // Calculate duration with this interval
+      const durationSeconds = maxPhotos * interval;
+      const durationHours = Math.floor(durationSeconds / 3600);
+      const durationMinutes = Math.floor((durationSeconds % 3600) / 60);
+      const durationDays = Math.floor(durationHours / 24);
+
+      // Video length at 24fps
+      const videoLengthSeconds = maxPhotos / 24;
+      const videoMinutes = Math.floor(videoLengthSeconds / 60);
+      const videoSeconds = Math.floor(videoLengthSeconds % 60);
+
+      // Display results
+      const resultsDiv = document.getElementById('timelapse-results');
+      document.getElementById('timelapse-frames').textContent = `${maxPhotos.toLocaleString()}枚`;
+      document.getElementById('timelapse-video-length').textContent = 
+        `${videoMinutes}分${videoSeconds}秒`;
+      document.getElementById('timelapse-duration').value = 
+        durationDays > 0 ? `${durationDays}日${durationHours % 24}時間` : `${durationHours}時間${durationMinutes}分`;
+      
+      resultsDiv.classList.remove('hidden');
+    }
+
+    // Initialize FAQ accordion
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.faq-question');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const answerId = button.getAttribute('aria-controls');
+          const answer = document.getElementById(answerId);
+          const toggle = button.querySelector('.faq-toggle');
+          const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+          // Close all others
+          document.querySelectorAll('.faq-question').forEach(btn => {
+            if (btn !== button) {
+              btn.setAttribute('aria-expanded', 'false');
+              const otherAnswerId = btn.getAttribute('aria-controls');
+              document.getElementById(otherAnswerId).classList.remove('open');
+              btn.querySelector('.faq-toggle').classList.remove('open');
+            }
+          });
+
+          // Toggle current
+          if (isOpen) {
+            button.setAttribute('aria-expanded', 'false');
+            answer.classList.remove('open');
+            toggle.classList.remove('open');
+          } else {
+            button.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+            toggle.classList.add('open');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

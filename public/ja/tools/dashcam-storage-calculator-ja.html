@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ドライブレコーダー 容量計算機 — ループ録画・高耐久カード対応</title>
+  <meta name="description" content="ドラレコの録画時間を瞬時に計算。1080p・4K・ループ録画対応。高耐久SDカード選びで24時間安心保護。常時録画の容量計画が簡単に。">
+  <link rel="canonical" href="https://sdcardchecker.com/ja/tools/dashcam-storage-calculator/">
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="/assets/js/calculator.js"></script>
+  <script src="/assets/js/card-selector.js"></script>
+  <script src="/assets/js/calculator-ui.js"></script>
+  <script src="/assets/js/calculator-card-recommendations.js"></script>
+  <script src="/assets/js/card-recommendations.js"></script>
+  {{GROW_SCRIPT}}
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/ja/" class="text-blue-600 hover:underline">ホーム</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/ja/tools/" class="text-blue-600 hover:underline">ツール</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">ドラレコ容量計算機</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative">
+        <img src="/img/calculator/dashcams-footage-time.webp" alt="ドライブレコーダーの録画映像" class="w-full object-cover hero-image" width="1200" height="350" loading="lazy" />
+        <div class="hero-overlay">
+          <div class="hero-title-wrapper">
+            <h1 class="hero-title" style="color: #ffffff;">
+              ドラレコは何時間録画できる？
+            </h1>
+            <h2 class="hero-subtitle" style="color: #ffffff;">
+              ループ録画と高耐久カードで24時間安心保護
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+        ドライブレコーダーは、信頼できる記録があってこそ初めて価値があります。警備カメラのように必要に応じてオン・オフができるわけではなく、ドラレコは走行中ずっと記録を続けています。この24時間365日の過酷な書き込みワークロードに耐えられるのは、高耐久（High Endurance）仕様のSDカードだけです。通常のSDカードは数週間で故障してしまいます。
+      </p>
+      <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+        あなたのドラレコが正確にどのくらいの時間録画できるのかを把握することで、最適なカードを選べます。この計算機は、あなたのSDカード容量でどのくらいの期間の映像をカバーできるかを瞬時に表示します。ループ録画を有効にすれば、カードは絶対に満杯にならず、古い映像は自動的に上書きされて、常に最新のドライビングイベントが記録されています。
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+          <div>
+            <h4 class="font-bold text-slate-900 mb-1">ループ録画計画</h4>
+            <p class="text-slate-600 text-sm">自動上書き戦略を完全サポート</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+          <div>
+            <h4 class="font-bold text-slate-900 mb-1">高耐久カード情報</h4>
+            <p class="text-slate-600 text-sm">通常カードが故障する理由を解説</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+          <div>
+            <h4 class="font-bold text-slate-900 mb-1">複数台対応</h4>
+            <p class="text-slate-600 text-sm">前後・複数台のドラレコに対応</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calculator Widget -->
+      <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
+        <div class="mb-6 p-4 bg-red-50 border-l-4 border-red-500 rounded">
+          <p class="text-sm text-slate-700"><strong>⚠️ 重要：</strong>ドラレコには必ず「高耐久（High Endurance）」カードを使用してください。通常のSDカードは常時書き込みにより数週間～数ヶ月で故障します。高耐久カードなら24/7録画に対応し、数年間信頼できます。</p>
+        </div>
+
+        <!-- Device Selector -->
+        <div class="mb-6">
+          <label for="dashcam-model" class="block text-sm font-semibold text-slate-900 mb-2">ドラレコモデルを選択：</label>
+          <select id="dashcam-model" class="w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            <option value="custom">カスタム設定</option>
+            <optgroup label="--- 一般的なドラレコ ---">
+              <option value="dashcam-1080p-30">1080p 30fps (10 Mbps)</option>
+              <option value="dashcam-2k-30" selected>2K 30fps (20 Mbps)</option>
+              <option value="dashcam-4k-30">4K 30fps (30 Mbps)</option>
+            </optgroup>
+            <optgroup label="--- 高画質モデル ---">
+              <option value="dashcam-1080p-60">1080p 60fps (18 Mbps)</option>
+              <option value="dashcam-4k-60">4K 60fps (50 Mbps)</option>
+            </optgroup>
+            <optgroup label="--- 人気メーカー ---">
+              <option value="viofo-a119-4k">VIOFO A119 Mini: 4K (50 Mbps)</option>
+              <option value="thinkware-f800pro">Thinkware F800 Pro: 4K (40 Mbps)</option>
+              <option value="nextbase-622gw">Nextbase 622GW: 4K (50 Mbps)</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- Dashcam Settings Form -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          <div>
+            <label for="dashcam-bitrate" class="block text-sm font-semibold text-slate-900 mb-2">ビットレート (Mbps)</label>
+            <input type="number" id="dashcam-bitrate" value="20" min="1" max="100" step="1" class="w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+          </div>
+          <div>
+            <label for="dashcam-capacity" class="block text-sm font-semibold text-slate-900 mb-2">SDカード容量 (GB)</label>
+            <select id="dashcam-capacity" class="w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+              <option value="32">32GB</option>
+              <option value="64">64GB</option>
+              <option value="128" selected>128GB</option>
+              <option value="256">256GB</option>
+              <option value="512">512GB</option>
+            </select>
+          </div>
+          <div>
+            <label for="daily-usage" class="block text-sm font-semibold text-slate-900 mb-2">1日あたりの走行時間</label>
+            <select id="daily-usage" class="w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+              <option value="0.5">30分</option>
+              <option value="1" selected>1時間</option>
+              <option value="2">2時間</option>
+              <option value="4">4時間</option>
+              <option value="8">8時間（タクシー）</option>
+              <option value="24">24時間（常時）</option>
+            </select>
+          </div>
+        </div>
+
+        <button onclick="calculateDashcam()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+          計算する
+        </button>
+
+        <!-- Dashcam Results -->
+        <div id="dashcam-results" class="mt-8 hidden">
+          <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-slate-900 mb-6">計算結果</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+              <div class="bg-white rounded p-4 border border-slate-200">
+                <p class="text-sm text-slate-600 mb-2">連続録画時間</p>
+                <p class="text-3xl font-bold text-blue-600" id="total-hours">0</p>
+                <p class="text-xs text-slate-500">（24時間連続の場合）</p>
+              </div>
+              <div class="bg-white rounded p-4 border border-slate-200">
+                <p class="text-sm text-slate-600 mb-2">ループ録画カバレッジ</p>
+                <p class="text-3xl font-bold text-green-600" id="coverage-days">0</p>
+                <p class="text-xs text-slate-500" id="coverage-text">日分</p>
+              </div>
+              <div class="bg-white rounded p-4 border border-slate-200">
+                <p class="text-sm text-slate-600 mb-2">推奨スピードクラス</p>
+                <p class="text-3xl font-bold text-purple-600" id="dashcam-speed-class">V30</p>
+                <p class="text-xs text-slate-500">書き込み速度</p>
+              </div>
+              <div class="bg-white rounded p-4 border border-slate-200">
+                <p class="text-sm text-slate-600 mb-2">カード耐久性</p>
+                <p class="text-lg font-bold text-red-600">必須</p>
+                <p class="text-xs text-slate-500">高耐久タイプ</p>
+              </div>
+            </div>
+
+            <div class="bg-yellow-50 border border-yellow-200 rounded p-4 mb-4">
+              <p class="text-sm text-slate-700"><strong>ループ録画について：</strong>カードが満杯になると、最も古い映像から自動的に上書きされます。保護マークを付けた重要な映像は上書きされません。</p>
+            </div>
+
+            <div id="usage-breakdown" class="bg-slate-50 rounded p-4">
+              <h4 class="font-semibold text-slate-900 mb-3">使用パターン別カバレッジ</h4>
+              <div class="space-y-2">
+                <div class="flex justify-between items-center pb-2 border-b">
+                  <span class="text-slate-700">毎日30分使用</span>
+                  <span class="font-bold text-blue-600" id="usage-30min">計算中</span>
+                </div>
+                <div class="flex justify-between items-center pb-2 border-b">
+                  <span class="text-slate-700">毎日1時間使用</span>
+                  <span class="font-bold text-blue-600" id="usage-1hour">計算中</span>
+                </div>
+                <div class="flex justify-between items-center pb-2 border-b">
+                  <span class="text-slate-700">毎日2時間使用</span>
+                  <span class="font-bold text-blue-600" id="usage-2hour">計算中</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-700">タクシー・配送用途（8時間/日）</span>
+                  <span class="font-bold text-blue-600" id="usage-8hour">計算中</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why This Matters Section -->
+      <div class="mb-8 bg-red-50 border-l-4 border-red-500 rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">なぜドラレコのカード選びが重要なのか？</h2>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          ドライブレコーダーは「保険」です。事故が発生したとき、その映像があなたの責任を証明し、法的に身を守ります。しかし、常時書き込みによってSDカードが故障してしまっては、肝心な瞬間が記録されていないという最悪の事態になります。通常のSDカードをドラレコに使用するのは、この保護を賭けることと同じです。
+        </p>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          通常のSDカードは、写真撮影のような断続的な使用を想定して設計されています。週末に何時間か撮影するなら十分ですが、ドラレコのように365日24時間データを書き込み続ける環境では、メモリセルが数週間から数ヶ月で摩耗し、故障してしまいます。
+        </p>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          高耐久カードは、このような過酷な条件のために特別に設計されています。強化されたフラッシュコントローラー、高度なエラー訂正機能、そして長寿命のメモリセルにより、数千時間から数万時間の連続書き込みに耐えることができます。通常のカード（128GB、1000～2000円）と高耐久カード（128GB、2000～3000円）の価格差はわずか1000円程度ですが、その差は信頼性と安心に大きく表れます。
+        </p>
+        <p class="text-slate-700 leading-relaxed">
+          この計算機は、あなたのドラレコとカード容量から、正確なカバレッジ期間を算出するのに役立ちます。その結果をもとに、高耐久カードを購入することで、確実で信頼できるドラレコシステムを構築できます。
+        </p>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">よくある質問</h2>
+        
+        <div class="space-y-4">
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                ループ録画とは何ですか？
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-1" class="faq-answer">
+              <p><strong>ループ録画：</strong>SDカードが満杯になると、ドラレコが自動的に最も古い、不要な映像を新しい映像で上書きしていく機能です。こうすることで、カードが絶対に満杯にならず、常に最新のドライビングイベントが記録されています。</p>
+              <p><strong>どのように機能するか：</strong>128GBの高耐久カードが1080p録画で14時間分のデータを保持できるとします。ドラレコが継続して記録を続けます。14時間分の走行記録がカードに溜まった後、最も古い1時間分が自動削除され、新しい映像が記録されます。このサイクルが延々と続き、カードがある限り常に最新の走行履歴が保存されます。</p>
+              <p><strong>重要な点：</strong>事故を検出したとき、その映像を「重要」として手動でマークすれば、ドラレコはその映像を削除しません。保護されたこの映像は、他の古い映像が上書きされても安全に保存されます。</p>
+              <p><strong>実用的なメリット：</strong>SDカードを手動で管理する必要がありません。ただ記録を続けるだけで、自動的に最新のドライビング履歴が保持されます。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                なぜドラレコに高耐久カードが必須なのですか？
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-2" class="faq-answer">
+              <p><strong>通常のSDカードの問題点：</strong>通常のSDカードは、週末の写真撮影のような断続的な使用を前提に設計されています。各メモリセルは約3,000～10,000回の書き込みサイクルに耐えるように設計されていますが、ドラレコのように24時間365日継続して書き込みを行う環境では、これらのサイクルが数週間から数ヶ月で消費され、カードが故障してしまいます。</p>
+              <p><strong>高耐久カードは異なります：</strong>高耐久カードは堅牢なフラッシュコントローラーを搭載し、ブランドやモデルによって10,000～100,000回以上の書き込みサイクルに対応するよう設計されています。SanDisk Endurance カードなら24/7での使用で最大1年間の連続録画に対応しており、Samsung PRO Endurance などのプレミアムモデルはさらに長い寿命を提供します。これらはドラレコの過酷で絶え間ない書き込み要求に耐えるために特別に設計されています。</p>
+              <p><strong>コストと保護のバランス：</strong>通常の128GB SDカード：約1,500～2,000円。高耐久128GB カード：約2,500～3,500円。わずか1,000円多く投資するだけで、数週間で故障するカードではなく、数年間信頼できるカードが手に入ります。これは購入する価値のある「保険」です。</p>
+              <p><strong>保証への影響：</strong>多くのドラレコメーカーは、非対応の（非高耐久）カードを使用した場合、保証を無効にします。カードエラーが原因でカメラが故障しても、メーカーは修理や交換に応じません。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                256GB高耐久カードでどのくらい録画できますか？
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-3" class="faq-answer">
+              <p>ドラレコのビットレートによって異なります。ほとんどのドラレコは5Mbps（1080p、標準圧縮）から40Mbps（4K、高ビットレート）で記録します。</p>
+              <p><strong>1080p 30fps ドラレコ（約10Mbps）：</strong>256GBカードは約228時間の映像を保持できます（連続24時間記録で約9.5日）。毎日1時間のドライビングなら、最古の映像が上書きされるまで約9.5ヶ月のカバレッジが得られます。</p>
+              <p><strong>4K 30fps ドラレコ（約30Mbps）：</strong>256GBカードは約76時間の映像を保持できます（連続記録で約3.2日）。毎日1時間走行なら、約3ヶ月間のカバレッジです。</p>
+              <p><strong>高ビットレート4K 60fps（約50Mbps）：</strong>256GBカードは約45時間の映像を保持できます（連続記録で2日未満）。毎日1時間走行なら、約6週間のカバレッジです。</p>
+              <p><strong>計算式：</strong>録画時間（時間）=（カード容量GB × 8）÷ ビットレート（Mbps）。例：256GB、10Mbpsなら（256 × 8）÷ 10 = 204.8時間です。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                スピードクラスと耐久性レーティングの違いは何ですか？
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-4" class="faq-answer">
+              <p><strong>スピードクラス（V30、V60）：</strong>カードが保証する最低書き込み速度を示します。V30 = 30 MB/s、V60 = 60 MB/s。これはカードがどれだけ高速にデータを連続書き込みできるかに関する指標で、高ビットレート動画の録画中にバッファオーバーフロー（カメラの記録バッファが満杯になること）を防ぐために重要です。</p>
+              <p><strong>耐久性レーティング：</strong>カードが故障する前に耐えられる総書き込みサイクル数を示します。例えば、SanDisk High Endurance カードが「24/7で1年間」と表示されている場合、このカードは1年間、24時間毎日連続書き込みに耐えることを意味します。これはストレス下での耐久性についての指標です。</p>
+              <p><strong>ドラレコには両方が必要です：</strong>ドラレコに必要なのは、高速なカード（最低V30）と耐久性の高いカード（高耐久レーティング）の両方です。V60の通常カードは滑らかに4Kを書き込みますが（スピードクラス要件は満たす）、数週間で故障します（耐久性が不足）。高耐久カードがU3/V30レーティングなら、両方の要件を満たします。</p>
+              <p><strong>推奨：</strong>ラベルに「High Endurance」または「Endurance」と明記されたカードを購入し、最低でもV30以上のスピードクラスを確認してください。SanDisk、Samsung、Kingtonはいずれも高品質な耐久性カードを提供しています。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                ドラレコのカードを監視カメラと共有できますか？
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-5" class="faq-answer">
+              <p>はい。ドラレコと監視カメラは同じ条件の常時録画デバイスなので、カード要件は同じです：高耐久 + 高速スピードクラス。</p>
+              <p><strong>相互互換性：</strong>SanDisk High Endurance または Samsung PRO Endurance カードはドラレコにも監視カメラにも使用できます。耐久性レーティングが重要であり、デバイスタイプは関係ありません。</p>
+              <p><strong>ビットレート検討事項：</strong>ドラレコは解像度によって10～50Mbpsで記録し、監視カメラは5～20Mbpsで記録するかもしれません。両方に対応するスピードクラスを選ぶだけで十分です。</p>
+              <p><strong>プロのヒント：</strong>複数台のドラレコ（前後、複数台の配送車など）または複数の監視カメラを運用する場合、耐久カードを一括購入するとコストが削減できます。1つのカードタイプ（例：Samsung PRO Endurance V30）をすべてのデバイスで使用できます。</p>
+              <p><strong>フォーマット：</strong>1台のデバイスでカードを使用した後、別のデバイスで使用する前に、必ずそのデバイスでカードをフォーマットしてください。これにより、ファイルシステムがそのデバイスの要件に合わせて最適化されます。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                ドラレコが過熱した場合どうなりますか？
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-6" class="faq-answer">
+              <p><strong>リスク：</strong>継続的な書き込みは熱を発生させます。特に暑い気候では、ドラレコとSDカードが過熱（70°C / 158°F以上）すると、カードはパフォーマンスが低下し、データが破損したり、完全に故障したりする可能性があります。</p>
+              <p><strong>過熱の原因：</strong>フロントガラスへの直射日光、夏の車内の閉まった環境での不十分な空気流通、または長時間の高ビットレート4K 60fps記録。プロフェッショナルグレードのカードはより高い温度に耐えることができますが、すべてのカードには限界があります。</p>
+              <p><strong>予防策：</strong>ドラレコを直射日光が当たらない場所に設置します。夏は車のサンシェードを使用します。車が非常に熱くなる環境では、放熱機能付きのドラレコや冷却ファン付きマウントの使用を検討します。極端な気候では、4Kではなく1080pまたは2K記録にダウングレードして、書き込み熱を減らします。</p>
+              <p><strong>カード選択の重要性：</strong>高耐久カードは通常のカードより優れた熱管理機能を備えています。これもドラレコに高耐久カードが必須である理由の1つです。</p>
+              <p><strong>トラブルの兆候：</strong>ドラレコがエラーを表示したり、映像が一時停止・フリーズしたり、ファイルが破損したりする場合は、過熱が原因の可能性が高いです。これは冷却対策をすぐに講じるべき警告信号です。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommended Cards Section -->
+      <div class="mb-8 hidden" id="card-recommendations">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">ドラレコに推奨する高耐久SDカード</h2>
+        <div id="card-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Populated by JavaScript after calculation -->
+        </div>
+      </div>
+
+      <!-- Amazon Featured Products Section -->
+      {{AMAZON_FEATURED_CALCULATOR_PRICE}}
+
+      <!-- Related Calculators -->
+      <div class="bg-slate-100 rounded-lg p-8 mb-8">
+        <h3 class="text-xl font-bold text-slate-900 mb-6">関連計算機</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <a href="/ja/tools/recording-time-calculator/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">📹 SDカード 録画時間 計算機</h4>
+            <p class="text-sm text-slate-600">カメラ・GoPro・ドローン全対応</p>
+          </a>
+          <a href="/ja/guides/sd-card-speed-class/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">📊 SDカードスピードクラスガイド</h4>
+            <p class="text-sm text-slate-600">V30、V60、V90を完全解説</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Schema Markup -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "ドライブレコーダー 容量計算機",
+          "description": "ドラレコの録画時間を瞬時に計算。1080p・4K・ループ録画対応。高耐久SDカード選びで24時間安心保護。常時録画の容量計画が簡単に。",
+          "url": "https://sdcardchecker.com/ja/tools/dashcam-storage-calculator/",
+          "inLanguage": "ja",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://sdcardchecker.com/ja/" },
+              { "@type": "ListItem", "position": 2, "name": "ツール", "item": "https://sdcardchecker.com/ja/tools/" },
+              { "@type": "ListItem", "position": 3, "name": "ドラレコ容量計算機", "item": "https://sdcardchecker.com/ja/tools/dashcam-storage-calculator/" }
+            ]
+          },
+          "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "ループ録画とは何ですか？", "acceptedAnswer": { "@type": "Answer", "text": "ループ録画はSDカードが満杯になると、最も古い映像を自動的に新しい映像で上書きする機能です。常に最新のドライビング履歴が記録されます。" } },
+              { "@type": "Question", "name": "なぜドラレコに高耐久カードが必須なのですか？", "acceptedAnswer": { "@type": "Answer", "text": "ドラレコは常時書き込みを行うため、通常のSDカードはすぐに摩耗して故障します。高耐久カードは長期間の連続使用に耐えるよう設計されています。" } },
+              { "@type": "Question", "name": "256GB高耐久カードでどのくらい録画できますか？", "acceptedAnswer": { "@type": "Answer", "text": "1080p 10Mbpsなら約228時間（9.5日分）、4K 30Mbpsなら約76時間（3.2日分）の連続録画が可能です。" } }
+            ]
+          }
+        }
+      </script>
+    </main>
+
+    {{SIDEBAR}}
+  </div>
+
+  {{FOOTER}}
+  {{GROW_SCRIPT}}
+
+  <style>
+    /* Hero Image with Overlay Title */
+    .hero-image-container {
+      position: relative;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+    }
+
+    .hero-title-wrapper {
+      text-align: center;
+    }
+
+    .hero-title {
+      @apply text-3xl md:text-4xl font-bold text-center px-4;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.5);
+      filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+      @apply text-lg md:text-xl font-semibold text-center px-4;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.5);
+      filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+    }
+
+    /* FAQ styling */
+    .faq-item {
+      @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow;
+    }
+
+    .faq-heading {
+      @apply m-0;
+    }
+
+    .faq-question {
+      @apply w-full p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors bg-transparent border-none;
+      min-height: 48px;
+      user-select: none;
+      -webkit-user-select: none;
+      text-align: left;
+    }
+
+    .faq-question:focus {
+      @apply outline-2 outline-offset-2 outline-blue-500;
+    }
+
+    .faq-question:active {
+      background-color: rgba(59, 130, 246, 0.05);
+      transition: background-color 0.1s ease;
+    }
+
+    .faq-toggle {
+      @apply text-slate-400 transition-transform duration-300;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .faq-toggle.open {
+      @apply rotate-180;
+    }
+
+    .faq-answer {
+      @apply px-6 pb-6 text-slate-700 leading-relaxed border-t border-slate-200 hidden;
+    }
+
+    .faq-answer.open {
+      @apply block;
+    }
+
+    .faq-answer p {
+      margin-bottom: 1rem;
+    }
+  </style>
+
+  <script>
+    // Device preset values
+    const dashcamPresets = {
+      'dashcam-1080p-30': { bitrate: 10 },
+      'dashcam-2k-30': { bitrate: 20 },
+      'dashcam-4k-30': { bitrate: 30 },
+      'dashcam-1080p-60': { bitrate: 18 },
+      'dashcam-4k-60': { bitrate: 50 },
+      'viofo-a119-4k': { bitrate: 50 },
+      'thinkware-f800pro': { bitrate: 40 },
+      'nextbase-622gw': { bitrate: 50 }
+    };
+
+    // Device selector change handler
+    document.getElementById('dashcam-model').addEventListener('change', (e) => {
+      const preset = dashcamPresets[e.target.value];
+      if (preset) {
+        document.getElementById('dashcam-bitrate').value = preset.bitrate;
+      }
+    });
+
+    // Calculate dashcam recording capacity
+    function calculateDashcam() {
+      const bitrate = parseFloat(document.getElementById('dashcam-bitrate').value);
+      const capacity = parseFloat(document.getElementById('dashcam-capacity').value);
+      const dailyUsage = parseFloat(document.getElementById('daily-usage').value);
+
+      if (!bitrate || !capacity || !dailyUsage) {
+        alert('すべての値を入力してください');
+        return;
+      }
+
+      // Convert GB to Megabits
+      const totalMegabits = capacity * 1024 * 8;
+      
+      // Calculate total hours of continuous recording
+      const totalHours = (totalMegabits / bitrate) / 3600;
+
+      // Calculate coverage days based on daily usage
+      const coverageDays = totalHours / dailyUsage;
+
+      // Determine speed class
+      let speedClass = 'V30';
+      if (bitrate > 240) speedClass = 'V60';
+
+      // Calculate usage breakdown
+      const coverage30min = Math.round(totalHours / 0.5);
+      const coverage1hour = Math.round(totalHours / 1);
+      const coverage2hour = Math.round(totalHours / 2);
+      const coverage8hour = Math.round(totalHours / 8);
+
+      // Display results
+      const resultsDiv = document.getElementById('dashcam-results');
+      document.getElementById('total-hours').textContent = Math.round(totalHours);
+      document.getElementById('coverage-days').textContent = Math.round(coverageDays);
+      document.getElementById('coverage-text').textContent = 
+        dailyUsage === 0.5 ? '日分（30分/日使用時）' : '日分';
+      document.getElementById('dashcam-speed-class').textContent = speedClass;
+
+      document.getElementById('usage-30min').textContent = `${Math.round(coverage30min)}日`;
+      document.getElementById('usage-1hour').textContent = `${Math.round(coverage1hour)}日`;
+      document.getElementById('usage-2hour').textContent = `${Math.round(coverage2hour)}日`;
+      document.getElementById('usage-8hour').textContent = `${Math.round(coverage8hour)}日`;
+
+      resultsDiv.classList.remove('hidden');
+    }
+
+    // Initialize FAQ accordion
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.faq-question');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const answerId = button.getAttribute('aria-controls');
+          const answer = document.getElementById(answerId);
+          const toggle = button.querySelector('.faq-toggle');
+          const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+          // Close all others
+          document.querySelectorAll('.faq-question').forEach(btn => {
+            if (btn !== button) {
+              btn.setAttribute('aria-expanded', 'false');
+              const otherAnswerId = btn.getAttribute('aria-controls');
+              document.getElementById(otherAnswerId).classList.remove('open');
+              btn.querySelector('.faq-toggle').classList.remove('open');
+            }
+          });
+
+          // Toggle current
+          if (isOpen) {
+            button.setAttribute('aria-expanded', 'false');
+            answer.classList.remove('open');
+            toggle.classList.remove('open');
+          } else {
+            button.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+            toggle.classList.add('open');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

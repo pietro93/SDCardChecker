@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDカード 録画時間 計算機 | ビデオ・ドローン・カメラ・ドラレコ | SD Card Checker</title>
+  <meta name="description" content="SDカードに何時間のビデオが録画できるかを計算。カメラ、ドローン、GoPro、ドライブレコーダーの解像度とビットレートを選択するだけで、容量と所要時間を瞬時に算出します。">
+  <link rel="canonical" href="{{BASE_URL}}/ja/tools/calculators/recording-time/">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SDカード 録画時間 計算機">
+  <meta property="og:description" content="カメラ、ドローン、GoPro、ドラレコでSDカードに何時間録画できるか計算">
+  <meta property="og:image" content="{{BASE_URL}}/img/tools/calculator.webp">
+  <meta property="og:url" content="{{BASE_URL}}/ja/tools/calculators/recording-time/">
+  <meta property="og:site_name" content="SD Card Checker">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SDカード 録画時間 計算機">
+  <meta name="twitter:description" content="お持ちのカメラやドローンで、SDカードに何時間ビデオが録画できるか計算します。">
+  <meta name="twitter:image" content="{{BASE_URL}}/img/tools/calculator.webp">
+
+  <!-- Schema.org Calculator Tool -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "SDカード 録画時間 計算機",
+    "url": "{{BASE_URL}}/ja/tools/calculators/recording-time/",
+    "description": "SDカードの容量と動画ビットレートから、録画可能時間を計算するツール",
+    "applicationCategory": "UtilityApplication",
+    "inLanguage": "ja"
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "{{BASE_URL}}/ja/"},
+      {"@type": "ListItem", "position": 2, "name": "計算ツール", "item": "{{BASE_URL}}/ja/tools/calculators/"},
+      {"@type": "ListItem", "position": 3, "name": "録画時間 計算機", "item": "{{BASE_URL}}/ja/tools/calculators/recording-time/"}
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  {{GROW_SCRIPT}}
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <nav aria-label="breadcrumb" class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/ja/" class="text-blue-600 hover:underline">ホーム</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/ja/tools/calculators/" class="text-blue-600 hover:underline">計算ツール</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900 font-medium" aria-current="page">SDカード 録画時間 計算機</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero -->
+      <section class="mb-12">
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-lg p-8">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">SDカード 録画時間 計算機</h1>
+          <p class="text-xl text-blue-100">カメラ、ドローン、GoPro、ドラレコで何時間録画できるかを瞬時に計算</p>
+        </div>
+      </section>
+
+      {{AFFILIATE_DISCLOSURE}}
+
+      <!-- Calculator -->
+      <section class="bg-white rounded-lg shadow-lg border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">計算機</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Input Section -->
+          <div class="space-y-6">
+            <h3 class="text-lg font-bold text-slate-800">ステップ1: デバイスと解像度を選択</h3>
+            
+            <!-- Device Type Dropdown -->
+            <div>
+              <label class="block text-sm font-bold text-slate-700 mb-2">デバイスタイプ</label>
+              <select id="deviceType" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <option value="">選択してください</option>
+                <option value="camera">カメラ（ミラーレス・一眼レフ）</option>
+                <option value="gopro">GoPro・アクションカメラ</option>
+                <option value="drone">ドローン（DJI等）</option>
+                <option value="dashcam">ドライブレコーダー</option>
+              </select>
+            </div>
+
+            <!-- Resolution Dropdown -->
+            <div>
+              <label class="block text-sm font-bold text-slate-700 mb-2">解像度・フレームレート</label>
+              <select id="resolution" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <option value="">まずデバイスを選択してください</option>
+              </select>
+              <p class="text-xs text-slate-500 mt-2" id="bitrateInfo"></p>
+            </div>
+
+            <!-- Bitrate Override -->
+            <div>
+              <label class="block text-sm font-bold text-slate-700 mb-2">またはビットレートを直接入力 (Mbps)</label>
+              <input type="number" id="customBitrate" placeholder="例: 100" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" min="1">
+              <p class="text-xs text-slate-500 mt-1">正確なビットレートが分かる場合はここに入力してください。</p>
+            </div>
+
+            <hr class="my-4">
+
+            <h3 class="text-lg font-bold text-slate-800">ステップ2: SDカード容量を入力</h3>
+            
+            <div>
+              <label class="block text-sm font-bold text-slate-700 mb-2">SDカード容量 (GB)</label>
+              <div class="flex gap-2 mb-3">
+                <button class="px-3 py-2 bg-slate-100 border border-slate-300 rounded hover:bg-blue-50 text-sm font-medium" onclick="setCapacity(32)">32GB</button>
+                <button class="px-3 py-2 bg-slate-100 border border-slate-300 rounded hover:bg-blue-50 text-sm font-medium" onclick="setCapacity(64)">64GB</button>
+                <button class="px-3 py-2 bg-slate-100 border border-slate-300 rounded hover:bg-blue-50 text-sm font-medium" onclick="setCapacity(128)">128GB</button>
+                <button class="px-3 py-2 bg-slate-100 border border-slate-300 rounded hover:bg-blue-50 text-sm font-medium" onclick="setCapacity(256)">256GB</button>
+              </div>
+              <input type="number" id="capacity" placeholder="カード容量を入力（GB）" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" min="1">
+            </div>
+
+            <button id="calculateBtn" class="w-full bg-blue-600 text-white px-6 py-4 rounded-lg font-bold hover:bg-blue-700 transition text-lg">計算する</button>
+          </div>
+
+          <!-- Results Section -->
+          <div>
+            <h3 class="text-lg font-bold text-slate-800 mb-4">計算結果</h3>
+            <div id="results" class="bg-slate-50 rounded-lg p-6 space-y-4 border border-slate-200" style="display: none;">
+              <div class="bg-blue-50 p-4 rounded-lg">
+                <p class="text-sm text-slate-600">可能な録画時間</p>
+                <p class="text-4xl font-bold text-blue-600" id="recordingHours">0</p>
+                <p class="text-sm text-slate-600">時間 <span id="recordingMinutes">0</span> 分</p>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white p-4 rounded-lg border border-slate-200">
+                  <p class="text-xs text-slate-500">使用可能容量</p>
+                  <p class="text-lg font-bold text-slate-800" id="usableCapacity">0 GB</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg border border-slate-200">
+                  <p class="text-xs text-slate-500">ビットレート</p>
+                  <p class="text-lg font-bold text-slate-800" id="displayBitrate">0 Mbps</p>
+                </div>
+              </div>
+              <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+                <p class="text-sm text-amber-900"><strong>※ 注意：</strong> 実際の容量は表示容量より5～10%少ないため、使用可能容量を90%として計算しています。</p>
+              </div>
+            </div>
+            <div id="noResults" class="bg-slate-50 rounded-lg p-6 text-center text-slate-500">
+              <i class="fas fa-calculator text-4xl mb-3 opacity-30"></i>
+              <p>デバイス、解像度、容量を入力して「計算する」をクリックしてください。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tips Section -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">計算機の使い方と注意点</h2>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">1</div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-1">デバイスを選択</h3>
+              <p class="text-slate-700">お使いのカメラ、ドローン、GoPro、ドラレコを選択すると、一般的な解像度とビットレートが自動表示されます。</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">2</div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-1">正確なビットレートを確認</h3>
+              <p class="text-slate-700">お使いのカメラの仕様書またはメーカーウェブサイトから、正確なビットレートを確認してください。これが計算の精度を左右します。</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">3</div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-1">容量は90%で計算</h3>
+              <p class="text-slate-700">SDカードのフォーマッティングやシステムファイルによる損失（5～10%）を考慮して、使用可能容量を90%として計算しています。</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">4</div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-1">十分なマージンを確保</h3>
+              <p class="text-slate-700">計算結果は目安です。重要な撮影では、カード容量の80～85%までの使用に留めて、マージンを確保することをお勧めします。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">よくある質問</h2>
+        <div class="space-y-4">
+          <details class="group" open>
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>ビットレートとは何ですか？</span>
+              <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm leading-relaxed">
+              <p>ビットレートは、1秒間に記録されるデータ量のことです。単位はMbps（メガビット毎秒）で表記されます。ビットレートが高いほど、より高品質な動画が記録されますが、SDカードの容量をより多く消費します。例えば、100Mbpsのビットレートで1時間撮影すると、約45GBのデータが必要です。</p>
+            </div>
+          </details>
+
+          <details class="group">
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>自分のカメラのビットレートを確認するには？</span>
+              <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm leading-relaxed">
+              <p>カメラの取扱説明書、またはメーカーの公式ウェブサイトで仕様を確認できます。多くの場合、動画設定メニューで使用しているモード（例：「4K 60fps」）に対応するビットレートが記載されています。わからない場合は、カメラ名と「ビットレート」をGoogle検索してください。</p>
+            </div>
+          </details>
+
+          <details class="group">
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>計算結果より実際に録画できた時間が短い場合がある理由は？</span>
+              <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm leading-relaxed">
+              <p>複数の理由が考えられます：①カメラ側でのオーバーヘッド（ファイルヘッダやメタデータ）により、実効ビットレートが表記値より高い場合。②容量の90%計算でも不十分な場合（特に新しいカード）。③SDカードの劣化による実効容量の低下。安全のため、計算結果の80～85%程度を目安にすることをお勧めします。</p>
+            </div>
+          </details>
+
+          <details class="group">
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>複数のSDカード挿し替えで、さらに長く録画できますか？</span>
+              <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm leading-relaxed">
+              <p>はい。複数のSDカードを用意して、満杯になったら別のカードに交換することで、容量を追加できます。ただし、交換時にカメラの電源を切る必要があり、撮影が一時中断されます。連続撮影が必要な場合は、大容量カード（128GB～256GB以上）を選ぶことをお勧めします。</p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    {{SIDEBAR}}
+  </div>
+
+  {{FOOTER}}
+
+  <script>
+    // Device presets with common resolutions and bitrates
+    const devicePresets = {
+      camera: {
+        label: "カメラ（ミラーレス・一眼レフ）",
+        resolutions: {
+          "4k24": { label: "4K DCI 24fps", bitrate: 150 },
+          "4k30": { label: "4K UHD 30fps", bitrate: 100 },
+          "4k60": { label: "4K UHD 60fps", bitrate: 150 },
+          "1080p60": { label: "Full HD 60fps", bitrate: 50 }
+        }
+      },
+      gopro: {
+        label: "GoPro・アクションカメラ",
+        resolutions: {
+          "5k60": { label: "5K 60fps", bitrate: 100 },
+          "4k60": { label: "4K 60fps", bitrate: 60 },
+          "4k30": { label: "4K 30fps", bitrate: 40 },
+          "1080p60": { label: "Full HD 60fps", bitrate: 20 }
+        }
+      },
+      drone: {
+        label: "ドローン（DJI等）",
+        resolutions: {
+          "4k60": { label: "4K 60fps", bitrate: 120 },
+          "4k30": { label: "4K 30fps", bitrate: 70 },
+          "1080p60": { label: "Full HD 60fps", bitrate: 25 }
+        }
+      },
+      dashcam: {
+        label: "ドライブレコーダー",
+        resolutions: {
+          "4k30": { label: "4K 30fps", bitrate: 80 },
+          "2k60": { label: "2K 60fps", bitrate: 40 },
+          "1080p60": { label: "Full HD 60fps", bitrate: 15 }
+        }
+      }
+    };
+
+    let currentBitrate = 0;
+
+    document.getElementById('deviceType').addEventListener('change', function() {
+      const device = this.value;
+      const resolutionSelect = document.getElementById('resolution');
+      
+      resolutionSelect.innerHTML = '<option value="">選択してください</option>';
+      
+      if (device && devicePresets[device]) {
+        const preset = devicePresets[device];
+        for (const [key, config] of Object.entries(preset.resolutions)) {
+          const option = document.createElement('option');
+          option.value = key;
+          option.textContent = config.label;
+          resolutionSelect.appendChild(option);
+        }
+      }
+    });
+
+    document.getElementById('resolution').addEventListener('change', function() {
+      const device = document.getElementById('deviceType').value;
+      const resolution = this.value;
+      
+      if (device && resolution && devicePresets[device]) {
+        const bitrate = devicePresets[device].resolutions[resolution].bitrate;
+        currentBitrate = bitrate;
+        document.getElementById('customBitrate').value = bitrate;
+        document.getElementById('bitrateInfo').textContent = `推定ビットレート: ${bitrate} Mbps`;
+      }
+    });
+
+    document.getElementById('customBitrate').addEventListener('change', function() {
+      const value = parseFloat(this.value);
+      if (value > 0) {
+        currentBitrate = value;
+      }
+    });
+
+    function setCapacity(gb) {
+      document.getElementById('capacity').value = gb;
+    }
+
+    document.getElementById('calculateBtn').addEventListener('click', function() {
+      const capacity = parseFloat(document.getElementById('capacity').value);
+      const bitrate = parseFloat(document.getElementById('customBitrate').value);
+      
+      if (!capacity || !bitrate || capacity <= 0 || bitrate <= 0) {
+        alert('カード容量とビットレートを正しく入力してください。');
+        return;
+      }
+
+      // Calculate: GB * 1024 * 1024 * 1024 * 8 bits / (bitrate * 1,000,000) seconds
+      // Simplified: (GB * 8192) / bitrate = seconds
+      const usableCapacity = capacity * 0.9; // Account for 10% overhead
+      const totalBits = usableCapacity * 8 * 1024 * 1024 * 1024;
+      const bitrateInBps = bitrate * 1000000;
+      const seconds = totalBits / bitrateInBps;
+      
+      const hours = Math.floor(seconds / 3600);
+      const minutes = Math.floor((seconds % 3600) / 60);
+
+      // Display results
+      document.getElementById('recordingHours').textContent = hours;
+      document.getElementById('recordingMinutes').textContent = minutes;
+      document.getElementById('usableCapacity').textContent = usableCapacity.toFixed(1) + ' GB';
+      document.getElementById('displayBitrate').textContent = bitrate + ' Mbps';
+      document.getElementById('results').style.display = 'block';
+      document.getElementById('noResults').style.display = 'none';
+
+      window.scrollTo({ top: document.querySelector('#results').offsetTop - 100, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

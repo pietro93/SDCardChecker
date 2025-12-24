@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>偽物SDカードの見分け方 (2025年版): 2分で偽造品をチェック | SD Card Checker</title>
+  <meta name="description" content="あなたのSDカードは偽物？この対話式チェッカーで数分でリスクを評価。偽造カードの決定的な兆候や、H2testwなどのソフトウェアを使ったテスト方法を学び、データ損失を防ぎましょう。">
+  <link rel="canonical" href="{{BASE_URL}}/ja/guides/is-my-sd-card-fake/">
+  
+  <!-- Open Graph & Twitter -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="偽物SDカードチェッカー: 偽造品を素早く見分ける">
+  <meta property="og:description" content="この対話式ツールを使って、お持ちのSDカードが偽物かどうかを確認。大切なデータを危険に晒さないでください。">
+  <meta property="og:image" content="{{BASE_URL}}/img/guides/fake-sd-card-checker.webp">
+  <meta property="og:url" content="{{BASE_URL}}/ja/guides/is-my-sd-card-fake/">
+  <meta property="og:site_name" content="SD Card Checker">
+  <meta property="og:locale" content="ja_JP">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="そのSDカード、偽物かも？2分でテストしましょう。">
+  <meta name="twitter:description" content="データを失う前に、無料の診断ツールでSDカードが偽物でないか確認しましょう。">
+  <meta name="twitter:image" content="{{BASE_URL}}/img/guides/fake-sd-card-checker.webp">
+
+  <!-- Schema.org HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "SDカードが偽物（偽造品）か確認する方法",
+    "description": "データ損失を防ぐため、外観のチェックとソフトウェアテストを使って偽造SDカードを特定するためのステップバイステップガイド。",
+    "totalTime": "PT15M",
+    "step": [
+      { "@type": "HowToStep", "name": "ステップ1: 購入元と価格を評価する", "text": "カードの購入場所と価格を分析します。非正規の販売者や不審なほど安い価格は、大きな危険信号です。", "url": "{{BASE_URL}}/ja/guides/is-my-sd-card-fake/#step-guide-1" },
+      { "@type": "HowToStep", "name": "ステップ2: パッケージを調べる", "text": "製品パッケージを調べ、印刷の不鮮明さ、スペルミス、セキュリティシールの欠如など、品質の低い兆候がないか確認します。", "url": "{{BASE_URL}}/ja/guides/is-my-sd-card-fake/#step-guide-2" },
+      { "@type": "HowToStep", "name": "ステップ3: SDカード本体を調べる", "text": "カード本体のラベルのずれ、不正なフォント、粗悪な印刷品質などを確認します。本物のカードはくっきりとしたレーザー刻印がされています。", "url": "{{BASE_URL}}/ja/guides/is-my-sd-card-fake/#step-guide-3" },
+      { "@type": "HowToStep", "name": "ステップ4: ソフトウェアテストを実行する", "text": "H2testw (Windows) や F3 (macOS) などの信頼できるソフトウェアを使い、カード全体に書き込みを行って、真の容量と速度を検証します。これが唯一の決定的なテストです。", "url": "{{BASE_URL}}/ja/guides/is-my-sd-card-fake/#software-test" }
+    ],
+    "inLanguage": "ja"
+  }
+  </script>
+
+  <!-- Schema.org FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Amazonで偽物のSDカードが売られていることはありますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい、特にAmazonマーケットプレイスの第三者販売者からは偽物が販売されることがあります。「Amazon.co.jpが発送・販売します」と表示されている商品は、ほぼ常に本物です。販売元が不明な業者の場合、リスクは著しく高まります。" }},
+      {"@type": "Question", "name": "偽物のSDカードを使うとどうなりますか？", "acceptedAnswer": { "@type": "Answer", "text": "偽物カードは容量を偽装しています。例えば、偽の512GBカードは実際には32GBの容量しかないことがあります。32GB以上のデータを保存すると、カードは警告なしに古いファイルから上書きを始め、結果として恒久的なデータ損失につながります。" }},
+      {"@type": "Question", "name": "SanDiskやSamsungの公式認証アプリはありますか？", "acceptedAnswer": { "@type": "Answer", "text": "いいえ、SanDiskやSamsungなどの大手ブランドは、SDカード用の公式な認証アプリを提供していません。そのような機能があると主張するアプリは非公式であり、信用すべきではありません。唯一信頼できる検証方法は、H2testwやF3のようなソフトウェアによる完全な容量テストです。" }},
+      {"@type": "Question", "name": "偽物のSDカードからファイルを復元できますか？", "acceptedAnswer": { "@type": "Answer", "text": "上書きされたデータの復元はほとんど不可能です。もしカード上にまだアクセスできるファイルがあるなら、直ちにコンピュータにバックアップすべきです。その後、PhotoRecなどの復元ソフトを試すことはできますが、カードの真の容量を超えて書き込まれたデータは、通常永久に失われます。" }},
+      {"@type": "Question", "name": "容量テストにはどのくらいの時間がかかりますか？", "acceptedAnswer": { "@type": "Answer", "text": "テスト時間は、カードの（表示上の）容量とカードリーダーの速度に依存します。64GBのカードで1時間以上、256GBのカードでは数時間かかることもあります。時間はかかりますが、100%確実な結果を得る唯一の方法です。" }}
+    ]
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "{{BASE_URL}}/ja/"},
+      {"@type": "ListItem", "position": 2, "name": "ガイド", "item": "{{BASE_URL}}/ja/guides/"},
+      {"@type": "ListItem", "position": 3, "name": "偽物SDカードチェッカー", "item": "{{BASE_URL}}/ja/guides/is-my-sd-card-fake/"}
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  {{GROW_SCRIPT}}
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <nav aria-label="breadcrumb" class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/ja/" class="text-blue-600 hover:underline">ホーム</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/ja/guides/" class="text-blue-600 hover:underline">ガイド</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900 font-medium" aria-current="page">偽物SDカードチェッカー</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <section class="mb-12">
+        <div class="relative rounded-xl overflow-hidden h-96 bg-gradient-to-r from-red-600 to-orange-700 flex items-center" style="background-image: url('/img/guides/fake-sd-card-checker.webp'); background-size: cover; background-position: center;">
+          <div class="absolute inset-0 bg-black opacity-40"></div>
+          <div class="relative z-10 w-full text-white px-8 py-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white drop-shadow-lg" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">偽物SDカード診断</h1>
+            <p class="text-xl text-orange-100 mb-6">偽造品を見抜いて、あなたの大切なデータを守る</p>
+            <p class="text-orange-50 max-w-2xl">お持ちのSDカードが偽物かもしれないと思ったら、2分でリスク評価を。外観チェックからソフトウェアテストまで、あなたが持っているものを正確に把握するための手順を解説します。</p>
+          </div>
+        </div>
+      </section>
+
+      {{AFFILIATE_DISCLOSURE}}
+
+      <!-- INTERACTIVE WIZARD -->
+      <section id="wizard-section" class="bg-white rounded-lg shadow-lg border border-slate-200 p-8 mb-12">
+        <div id="wizard-container">
+          
+          <!-- STEP 1 -->
+          <div id="step-1" class="wizard-step">
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">ステップ1: 購入元</h2>
+            <p class="text-slate-600 mb-6">カードの入手元は、信頼性を判断する上で最も重要な指標です。</p>
+            <div class="space-y-3 wizard-options">
+              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="source" value="official" class="mr-3"> 公式ブランドまたは大手小売店 (SanDisk.com, ヨドバシカメラ, ビックカメラ)
+              </label>
+              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="source" value="amazon-official" class="mr-3"> Amazon (Amazon.co.jpが直接発送・販売)
+              </label>
+              <label class="block border border-amber-300 bg-amber-50 p-4 rounded-lg hover:bg-amber-100 cursor-pointer transition has-[:checked]:bg-amber-100 has-[:checked]:border-amber-400">
+                <input type="radio" name="source" value="amazon-3rd" class="mr-3"> Amazonマーケットプレイス (第三者の販売者)
+              </label>
+              <label class="block border border-red-300 bg-red-50 p-4 rounded-lg hover:bg-red-100 cursor-pointer transition has-[:checked]:bg-red-100 has-[:checked]:border-red-400">
+                <input type="radio" name="source" value="ebay-wish" class="mr-3"> eBay, AliExpress, Wish, Temu, または類似のマーケットプレイス
+              </label>
+              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="source" value="other" class="mr-3"> その他 / 不明
+              </label>
+            </div>
+            <div class="flex justify-end gap-3 mt-8">
+              <button class="wizard-next-btn bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">次へ &rarr;</button>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div id="step-2" class="wizard-step" style="display: none;">
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">ステップ2: 価格</h2>
+            <p class="text-slate-600 mb-6">本物の大容量カードが50～80%も割引されることはありません。ブランド公式サイトの価格と比較しましょう。</p>
+            <div class="space-y-3 wizard-options">
+              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="price" value="normal" class="mr-3"> 定価、または小規模なセール（10～20%割引）で購入した。
+              </label>
+              <label class="block border border-red-300 bg-red-50 p-4 rounded-lg hover:bg-red-100 cursor-pointer transition has-[:checked]:bg-red-100 has-[:checked]:border-red-400">
+                <input type="radio" name="price" value="cheap" class="mr-3"> 不審なほど安かった（30%以上の割引）。
+              </label>
+              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="price" value="not-sure" class="mr-3"> 覚えていない / 不明。
+              </label>
+            </div>
+            <div class="flex justify-between gap-3 mt-8">
+              <button class="wizard-back-btn bg-slate-200 text-slate-800 px-6 py-3 rounded-lg font-medium hover:bg-slate-300 transition">&larr; 戻る</button>
+              <button class="wizard-next-btn bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">次へ &rarr;</button>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div id="step-3" class="wizard-step" style="display: none;">
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">ステップ3: パッケージ</h2>
+            <p class="text-slate-600 mb-6">正規品のブランドは、高品質で安全なパッケージに投資しています。偽造品は安っぽく、間違いだらけなことが多いです。</p>
+            <div class="space-y-3 wizard-options">
+              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="packaging" value="good" class="mr-3"> プロ並み: 鮮明な印刷、エラーなし、適切な封印。
+              </label>
+              <label class="block border border-red-300 bg-red-50 p-4 rounded-lg hover:bg-red-100 cursor-pointer transition has-[:checked]:bg-red-100 has-[:checked]:border-red-400">
+                <input type="radio" name="packaging" value="bad" class="mr-3"> 怪しい: 不鮮明な文字、スペルミス、または薄っぺらいプラスチック。
+              </label>
+               <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="packaging" value="not-sure" class="mr-3"> パッケージがない / 不明。
+              </label>
+            </div>
+            <div class="flex justify-between gap-3 mt-8">
+              <button class="wizard-back-btn bg-slate-200 text-slate-800 px-6 py-3 rounded-lg font-medium hover:bg-slate-300 transition">&larr; 戻る</button>
+              <button class="wizard-next-btn bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">次へ &rarr;</button>
+            </div>
+          </div>
+          
+          <!-- STEP 4 -->
+          <div id="step-4" class="wizard-step" style="display: none;">
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">ステップ4: カード本体</h2>
+            <p class="text-slate-600 mb-6">カード本体の印刷品質をよく調べてください。近くで見ると、違いは一目瞭然です。</p>
+            <div class="space-y-3 wizard-options">
+              <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="card" value="good" class="mr-3"> 本物に見える: ラベルが中央揃え、文字が鮮明、縁が滑らか。
+              </label>
+              <label class="block border border-red-300 bg-red-50 p-4 rounded-lg hover:bg-red-100 cursor-pointer transition has-[:checked]:bg-red-100 has-[:checked]:border-red-400">
+                <input type="radio" name="card" value="bad" class="mr-3"> 怪しい: 文字のずれ、不鮮明なフォント、または色が違う。
+              </label>
+               <label class="block border border-slate-200 p-4 rounded-lg hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                <input type="radio" name="card" value="not-sure" class="mr-3"> 違いがわからない。
+              </label>
+            </div>
+            <div class="flex justify-between gap-3 mt-8">
+              <button class="wizard-back-btn bg-slate-200 text-slate-800 px-6 py-3 rounded-lg font-medium hover:bg-slate-300 transition">&larr; 戻る</button>
+              <button id="see-results-btn" class="bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition">診断結果を見る</button>
+            </div>
+          </div>
+
+          <!-- RESULTS -->
+          <div id="results" class="wizard-step" style="display: none;">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">リスク評価:</h2>
+            <div id="result-low" class="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg" style="display: none;">
+              <h3 class="text-2xl font-bold text-green-800 mb-3 flex items-center gap-2"><i class="fas fa-check-circle"></i> 偽造のリスク: 低</h3>
+              <p class="text-green-900 leading-relaxed">あなたの回答に基づくと、このカードは<strong>本物である可能性が高い</strong>です。偽造品によく見られる危険信号は回避できています。100%確信を得るためには、ソフトウェアテストを行うことをお勧めします。</p>
+            </div>
+            <div id="result-medium" class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg" style="display: none;">
+              <h3 class="text-2xl font-bold text-amber-800 mb-3 flex items-center gap-2"><i class="fas fa-exclamation-triangle"></i> 偽造のリスク: 中</h3>
+              <p class="text-amber-900 leading-relaxed mb-4">このカードには、偽造品の可能性を示す兆候が1つ以上見られます。真の容量を確認するために<strong>完全なソフトウェアテストを実行する</strong>まで、重要なデータの保存には使用しないでください。</p>
+              <a href="#software-test" class="font-bold text-amber-800 hover:underline">今すぐカードのテスト方法を確認する &rarr;</a>
+            </div>
+            <div id="result-high" class="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg" style="display: none;">
+              <h3 class="text-2xl font-bold text-red-800 mb-3 flex items-center gap-2"><i class="fas fa-times-circle"></i> 偽造のリスク: 高</h3>
+              <p class="text-red-900 leading-relaxed mb-3">このカードには、偽造品であることを示す複数の強力な兆候があります。<strong>データ損失を防ぐため、直ちに使用を中止してください。</strong></p>
+              <p class="text-red-900 font-bold">推奨される対応:</p>
+              <ol class="list-decimal pl-5 space-y-2 text-red-800 leading-relaxed mt-2">
+                <li>アクセス可能なデータがあれば、すぐにバックアップを取ってください。</li>
+                <li>販売者に連絡し、返金を要求してください。プラットフォーム（Amazon、eBayなど）に販売者を報告してください。</li>
+                <li>返金請求の決定的な証拠を集めるために、<a href="#software-test" class="font-bold underline">ソフトウェアテストを実行</a>してください。</li>
+              </ol>
+            </div>
+            <button id="restart-btn" class="mt-8 bg-slate-200 text-slate-800 px-6 py-3 rounded-lg font-medium hover:bg-slate-300 transition"><i class="fas fa-redo mr-2"></i>最初からやり直す</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FULL TEXT GUIDE -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-2">完全ガイド: 偽物SDカードの見分け方</h2>
+        <p class="text-slate-600 mb-8">偽物のSDカードは、データの時限爆弾です。デバイスには偽の容量を報告し、実際の容量を超えると、古いファイルから静かに上書きを始めます。ここでは、偽物を見破るための決定的な4段階のプロセスを紹介します。</p>
+        
+        <div class="space-y-10 text-slate-700 leading-relaxed">
+          <div id="step-guide-1">
+            <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-3"><span class="flex items-center justify-center h-8 w-8 rounded-full bg-blue-100 text-blue-600 font-bold">1</span> 購入元と価格を評価する</h3>
+            <p class="mb-3">これが最初の防衛線です。正規のブランドは流通チャネルを厳しく管理しています。話がうますぎる取引は、大抵の場合、その通りです。新品の512GB SanDisk Extreme Proカードが、第三者のマーケットプレイスで2000円で売られることは決してありません。</p>
+            <ul class="list-disc pl-5 space-y-2 text-sm">
+                <li><strong>安全な購入元:</strong> ブランドの公式サイト（例: SanDisk.com）、大手家電量販店（ヨドバシカメラ、ビックカメラ）、または「Amazon.co.jpが発送・販売します」と表示されている商品。</li>
+                <li><strong>危険な購入元:</strong> Amazonの第三者販売者、eBay、AliExpress、Wish、Temu。一部は正規の販売者もいますが、これらのプラットフォームには偽物が溢れています。販売者の評価や履歴を確認しつつも、懐疑的な姿勢を崩さないでください。</li>
+            </ul>
+          </div>
+
+          <div id="step-guide-2">
+            <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-3"><span class="flex items-center justify-center h-8 w-8 rounded-full bg-blue-100 text-blue-600 font-bold">2</span> パッケージを精査する</h3>
+            <p class="mb-3">本物のカードのメーカーは、セキュリティ機能としてパッケージに多額の投資をしています。偽造業者はそうではありません。パッケージを手に取り、これらの一般的な欠陥を探してください:</p>
+             <ul class="list-disc pl-5 space-y-2 text-sm">
+                <li><strong>印刷品質:</strong> 本物のパッケージは、文字やグラフィックが非常に鮮明です。偽物は、安価な印刷方法のために、ぼやけていたり、ピクセルが粗かったり、色が若干「ずれて」いたりすることがよくあります。</li>
+                <li><strong>エラー:</strong> スペルミス、不自然な文法、または間違ったブランドロゴを探してください。</li>
+                <li><strong>セキュリティシール:</strong> ほとんどのブランドはホログラムのセキュリティステッカーを付けています。それが存在し、正規のものに見えるか確認してください。光の中で傾けて、正しく反射するか見てみましょう。</li>
+                <li><strong>製造品質:</strong> 段ボールは頑丈で、プラスチックのシェルは完璧に成形され、密封されているべきです。偽物はしばしば薄っぺらい素材を使用しています。</li>
+            </ul>
+            <div class="mt-4">
+              <img src="/img/guides/fake-sd-packaging-example.webp" alt="偽のSDカードパッケージの例。印刷品質が悪く、文字がぼやけている。" class="rounded-lg shadow-md border border-slate-200 max-w-md">
+            </div>
+          </div>
+
+          <div id="step-guide-3">
+            <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-3"><span class="flex items-center justify-center h-8 w-8 rounded-full bg-blue-100 text-blue-600 font-bold">3</span> SDカード本体を調べる</h3>
+            <p class="mb-3">カード自体が最後のヒントを握っています。数十億ドル規模の企業と偽造業者との製造品質の違いは、注意深く見れば明らかです。</p>
+             <ul class="list-disc pl-5 space-y-2 text-sm">
+                <li><strong>ラベルの配置:</strong> 偽物カードのラベルは、しばしばわずかに曲がっていたり、中央からずれていたりします。</li>
+                <li><strong>フォントと色:</strong> カード上のフォントを、オンラインの公式製品画像と比較してください。偽物は頻繁に間違ったフォントや、わずかに異なる色の濃淡を使用しています。</li>
+                <li><strong>印刷方法:</strong> 本物のカードは鮮明なレーザー刻印の文字です。偽物の文字は塗装されたように見え、ぼやけていたり、簡単にこすれたりすることがあります。</li>
+                <li><strong>縁の品質:</strong> 本物のSDカードは、滑らかで完璧に成形されたプラスチックの縁をしています。偽物は、安価な製造プロセスによる粗いまたは不均一な縁を持つことがあります。</li>
+                <li><strong>裏面の製造情報:</strong> 本物のカードの裏面には、製造国やシリアルナンバーがレーザーで鮮明に刻印されています。偽物ではこの印字がなかったり、印刷が粗かったりします。</li>
+             </ul>
+            <div class="mt-4">
+              <img src="/img/guides/fake-sd-card-example.webp" alt="偽のSDカードの例。本物と比較して、ラベルの配置がずれ、印刷品質が低い。" class="rounded-lg shadow-md border border-slate-200 max-w-md">
+            </div>
+          </div>
+
+          <div id="software-test">
+            <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-3"><span class="flex items-center justify-center h-8 w-8 rounded-full bg-blue-100 text-blue-600 font-bold">4</span> 決定的なテスト: ソフトウェア検証</h3>
+            <p class="mb-4">外観チェックは役立ちますが、100%確実な方法はこれしかありません。テストソフトウェアは、カードのすべてのブロックにデータを書き込み、それを読み戻します。このプロセスにより、カードの真の容量が明らかになり、偽りが暴かれます。</p>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-4">
+              <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                <h4 class="font-bold text-slate-900 mb-2">Windows用: H2testw</h4>
+                <p class="text-sm text-slate-600 mb-4">テストの業界標準です。シンプルでポータブルなユーティリティで、真の容量と書き込み/読み取りエラーを報告します。</p>
+                <a href="https://www.heise.de/download/product/h2testw-50539" target="_blank" rel="noopener noreferrer" class="font-bold text-blue-600 text-sm hover:underline">Heise.deからダウンロード &rarr;</a>
+              </div>
+              <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                <h4 class="font-bold text-slate-900 mb-2">macOS用: F3 (Fight Flash Fraud)</h4>
+                <p class="text-sm text-slate-600 mb-4">Macユーザー向けの強力なコマンドライン代替ツールです。H2testwと同じ機能を実行し、高い信頼性があります。</p>
+                <a href="https://github.com/AltraMayor/f3" target="_blank" rel="noopener noreferrer" class="font-bold text-blue-600 text-sm hover:underline">GitHubからダウンロード &rarr;</a>
+              </div>
+            </div>
+
+            <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-lg mt-6">
+              <p class="text-sm text-amber-900"><strong>⚠️ 警告:</strong> 始める前に、カード上のすべてのファイルをバックアップしてください。このテストはデータを破壊し、すべてのデータを消去します。大容量カードの完全なテストには数時間かかることがあります。気長にお待ちください。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">よくある質問</h2>
+        <div class="space-y-4">
+          <details class="group" open>
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>Amazonで偽物のSDカードが売られていることはありますか？</span>
+              <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm leading-relaxed">
+              <p>はい、特にAmazonマーケットプレイスの第三者販売者からは偽物が販売されることがあります。「Amazon.co.jpが発送・販売します」と表示されている商品は、直接調達されており、ほぼ常に本物です。販売者が「XYZ電気」のような評価の少ない業者である場合、リスクは著しく高まります。購入前に必ず販売者情報を確認してください。</p>
+            </div>
+          </details>
+
+          <details class="group" open>
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>偽物のSDカードを使うとどうなりますか？</span>
+              <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm leading-relaxed">
+              <p>偽物カードは容量を偽装しています。例えば、偽の512GBカードは実際には32GBの容量しかないことがあります。デバイスは32GBを超えるまで正常にファイルを保存しているように見えますが、その容量を超えると、カードのコントローラーが新しいファイルのためのスペースを作るために古いファイルから上書きを始め、静かで恒久的なデータ損失につながります。</p>
+            </div>
+          </details>
+
+          <details class="group" open>
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>SanDiskやSamsungの公式認証アプリはありますか？</span>
+              <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm leading-relaxed">
+              <p>いいえ。これはよくある誤解です。SanDisk、Samsung、Lexarなどの大手ブランドは、公式の「認証」アプリを提供していません。アプリストアでそのような機能があると主張するアプリは非公式であり、信用すべきではありません。唯一信頼できる検証方法は、H2testwやF3のような信頼できるオープンソースソフトウェアによる完全な容量テストです。</p>
+            </div>
+          </details>
+
+           <details class="group" open>
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>偽物のSDカードからファイルを復元できますか？</span>
+              <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm leading-relaxed">
+              <p>上書きされたデータの復元は非常に困難です。最初のステップは、直ちにカードの使用を中止し、表示されているファイルをコンピュータにコピーすることです。その後、PhotoRecのような無料の復元ソフトウェアを試すことができますが、「偽の」メモリ部分に保存されたファイルが戻ってくる保証はありません。</p>
+            </div>
+          </details>
+
+           <details class="group" open>
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>容量テストにはどのくらいの時間がかかりますか？</span>
+              <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm leading-relaxed">
+              <p>気長にお待ちください。時間は、カードの公称容量とカードリーダーの速度に完全に依存します。USB 3.0リーダーの方がはるかに高速です。大まかな目安として、64GBのカードで1時間以上、256GBのカードでは4〜5時間以上かかることがあります。時間はかかりますが、決定的な証拠を得るためには必要なプロセスです。</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Featured Authentic Cards on Amazon -->
+      {{AMAZON_FEATURED_AUTHENTIC}}
+    </main>
+
+    {{SIDEBAR}}
+  </div>
+
+  {{FOOTER}}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const wizardSteps = document.querySelectorAll('.wizard-step');
+      const nextButtons = document.querySelectorAll('.wizard-next-btn');
+      const backButtons = document.querySelectorAll('.wizard-back-btn');
+      const seeResultsBtn = document.getElementById('see-results-btn');
+      const restartBtn = document.getElementById('restart-btn');
+
+      let currentStep = 1;
+      const maxSteps = 4;
+
+      const updateButtonStates = () => {
+        wizardSteps.forEach((step, index) => {
+          const stepNumber = index + 1;
+          if (step.style.display === 'block') {
+            const nextBtn = step.querySelector('.wizard-next-btn, #see-results-btn');
+            if (nextBtn) {
+              if (isStepComplete(stepNumber)) {
+                nextBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+              } else {
+                nextBtn.classList.add('opacity-50', 'cursor-not-allowed');
+              }
+            }
+          }
+        });
+      };
+      
+      const setupStepListeners = () => {
+        wizardSteps.forEach(step => {
+            const options = step.querySelector('.wizard-options');
+            if(options) {
+                options.addEventListener('change', updateButtonStates);
+            }
+        });
+      };
+
+      const goToStep = (stepNumber) => {
+        wizardSteps.forEach(step => step.style.display = 'none');
+        const targetStep = document.getElementById(`step-${stepNumber}`);
+        if (targetStep) {
+          targetStep.style.display = 'block';
+        } else {
+          // It's a result step
+          document.getElementById('results').style.display = 'block';
+        }
+        currentStep = stepNumber;
+        updateButtonStates();
+        window.scrollTo({ top: document.getElementById('wizard-section').offsetTop, behavior: 'smooth' });
+      };
+
+      nextButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (!btn.classList.contains('cursor-not-allowed')) {
+            goToStep(currentStep + 1);
+          }
+        });
+      });
+
+      backButtons.forEach(btn => {
+        btn.addEventListener('click', () => goToStep(currentStep - 1));
+      });
+
+      seeResultsBtn.addEventListener('click', () => {
+        if (!seeResultsBtn.classList.contains('cursor-not-allowed')) {
+          showResults();
+        }
+      });
+
+      restartBtn.addEventListener('click', () => {
+        // Reset radio buttons
+        document.querySelectorAll('input[type="radio"]').forEach(radio => radio.checked = false);
+        // Hide result divs
+        document.getElementById('result-low').style.display = 'none';
+        document.getElementById('result-medium').style.display = 'none';
+        document.getElementById('result-high').style.display = 'none';
+        // Go back to start
+        goToStep(1);
+      });
+
+      const isStepComplete = (stepNumber) => {
+        const stepDiv = document.getElementById(`step-${stepNumber}`);
+        return stepDiv ? stepDiv.querySelector('input[type="radio"]:checked') !== null : false;
+      };
+
+      const showResults = () => {
+        const answers = {
+          source: document.querySelector('input[name="source"]:checked')?.value,
+          price: document.querySelector('input[name="price"]:checked')?.value,
+          packaging: document.querySelector('input[name="packaging"]:checked')?.value,
+          card: document.querySelector('input[name="card"]:checked')?.value
+        };
+
+        let riskScore = 0;
+        if (answers.source === 'ebay-wish') riskScore += 3;
+        if (answers.source === 'amazon-3rd') riskScore += 2;
+        if (answers.source === 'other') riskScore += 1;
+        
+        if (answers.price === 'cheap') riskScore += 3;
+        if (answers.price === 'not-sure') riskScore += 1;
+
+        if (answers.packaging === 'bad') riskScore += 2;
+        if (answers.packaging === 'not-sure') riskScore += 1;
+        
+        if (answers.card === 'bad') riskScore += 2;
+        if (answers.card === 'not-sure') riskScore += 1;
+
+        // Hide steps and show results container
+        wizardSteps.forEach(step => step.style.display = 'none');
+        document.getElementById('results').style.display = 'block';
+
+        // Hide all result divs first
+        document.getElementById('result-low').style.display = 'none';
+        document.getElementById('result-medium').style.display = 'none';
+        document.getElementById('result-high').style.display = 'none';
+        
+        // Show the correct result
+        if (riskScore <= 2) {
+          document.getElementById('result-low').style.display = 'block';
+        } else if (riskScore <= 5) {
+          document.getElementById('result-medium').style.display = 'block';
+        } else {
+          document.getElementById('result-high').style.display = 'block';
+        }
+        
+        window.scrollTo({ top: document.getElementById('wizard-section').offsetTop, behavior: 'smooth' });
+      };
+      
+      // Initialize
+      goToStep(1);
+      setupStepListeners();
+    });
+  </script>
+</body>
+</html>
