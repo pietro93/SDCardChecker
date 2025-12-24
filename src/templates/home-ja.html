@@ -63,7 +63,7 @@
                             <div>
                                 <div class="search-group-header" x-text="category"></div>
                                 <template x-for="device in (groupedDevices()[category] || [])" :key="device.id">
-                                    <a :href="`/ja/devices/${device.slug}/`" class="search-item">
+                                    <a :href="`/ja/categories/${getCategorySlug(device.category)}/${device.slug}/`" class="search-item">
                                         <div class="search-item-name" x-text="device.name"></div>
                                         <div class="search-item-category" x-text="device.category"></div>
                                     </a>
@@ -108,28 +108,28 @@
             <p>人気のデバイスから始めるか、上の検索で特定のモデルを検索してください。</p>
             <div class="devices-list">
                 <div class="device-tag">
-                    <a href="/ja/devices/gopro-hero-13/">GoPro Hero 13</a>
+                    <a href="/ja/categories/action-cameras/gopro-hero-13/">GoPro Hero 13</a>
                 </div>
                 <div class="device-tag">
-                    <a href="/ja/devices/dji-mini-4-pro/">DJI Mini 4 Pro</a>
+                    <a href="/ja/categories/drones/dji-mini-4-pro/">DJI Mini 4 Pro</a>
                 </div>
                 <div class="device-tag">
-                    <a href="/ja/devices/nintendo-switch/">Nintendo Switch</a>
+                    <a href="/ja/categories/gaming-handhelds/nintendo-switch/">Nintendo Switch</a>
                 </div>
                 <div class="device-tag">
-                    <a href="/ja/devices/canon-eos-r5/">Canon EOS R5</a>
+                    <a href="/ja/categories/cameras/canon-eos-r5/">Canon EOS R5</a>
                 </div>
                 <div class="device-tag">
-                    <a href="/ja/devices/sony-a6700/">Sony α6700</a>
+                    <a href="/ja/categories/cameras/sony-a6700/">Sony α6700</a>
                 </div>
                 <div class="device-tag">
-                    <a href="/ja/devices/steam-deck/">Steam Deck</a>
+                    <a href="/ja/categories/gaming-handhelds/steam-deck/">Steam Deck</a>
                 </div>
                 <div class="device-tag">
-                    <a href="/ja/devices/dji-mavic-3/">DJI Mavic 3</a>
+                    <a href="/ja/categories/drones/dji-mavic-3/">DJI Mavic 3</a>
                 </div>
                 <div class="device-tag">
-                    <a href="/ja/devices/nikon-z9/">Nikon Z9</a>
+                    <a href="/ja/categories/cameras/nikon-z9/">Nikon Z9</a>
                 </div>
             </div>
         </div>
