@@ -138,7 +138,21 @@ function generateUniqueMetaDescription(device, brandNames, index) {
 /**
 * Generate brand comparison table rows
 */
-function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug) {
+function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, isJapanese = false) {
+    const labels = isJapanese ? {
+        speedClass: "速度クラス",
+        writeSpeed: "書き込み速度",
+        pros: "長所",
+        price: "価格",
+        checkPrice: "価格確認"
+    } : {
+        speedClass: "Speed Class",
+        writeSpeed: "Write Speed",
+        pros: "Pros",
+        price: "Price",
+        checkPrice: "Check Price"
+    };
+
     return brandReferences
         .map((ref) => {
             const brand = sdcardsMap[ref.id];
@@ -176,15 +190,15 @@ function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug) {
             <div class="table-card-name">${brand.name}</div>
             </a>
             </td>
-            <td data-label="Speed Class">${brand.speed}</td>
-            <td data-label="Write Speed">${brand.writeSpeed}</td>
-            <td data-label="Pros">${prosHtml}</td>
-            <td data-label="Price" class="price-column">
+            <td data-label="${labels.speedClass}">${brand.speed}</td>
+            <td data-label="${labels.writeSpeed}">${brand.writeSpeed}</td>
+            <td data-label="${labels.pros}">${prosHtml}</td>
+            <td data-label="${labels.price}" class="price-column">
             <span class="price-badge ${priceTierClass}">
             ${priceTierSymbol}
             </span>
             <a href="${amazonUrlWithUTM}" target="_blank" class="btn-check-price">
-              <i class="fas fa-shopping-cart"></i> Check Price
+              <i class="fas fa-shopping-cart"></i> ${labels.checkPrice}
             </a>
             </td>
             </tr>
@@ -196,22 +210,47 @@ function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug) {
 /**
  * Generate requirements checklist box
  */
-function generateRequirementsBox(device, deviceNameShort) {
+function generateRequirementsBox(device, deviceNameShort, isJapanese = false) {
     // Ensure deviceNameShort is always a string
     const safeDeviceName = deviceNameShort || device.name;
     const { sdCard, whySpecs } = device;
 
+    // Japanese translations
+    const labels = isJapanese ? {
+        format: 'タイプ',
+        minSpeed: '最低速度',
+        appPerformance: 'アプリパフォーマンス',
+        maxCapacity: '最大容量',
+        write: '書き込み',
+        requiredFor: 'OS/アプリに必須',
+        upTo: 'まで',
+        official: '公式',
+        requirements: 'SD カード要件',
+        why: 'なぜこの要件?'
+    } : {
+        format: 'Format',
+        minSpeed: 'Minimum Speed',
+        appPerformance: 'App Performance',
+        maxCapacity: 'Maximum Capacity',
+        write: 'write',
+        requiredFor: 'Required for OS/Apps',
+        upTo: 'Up to',
+        official: 'Official',
+        requirements: 'SD Card Requirements',
+        why: 'Why these requirements?'
+    };
+
     const rows = [
         {
             icon: 'fas fa-microchip',
-            label: 'Format',
+            label: labels.format,
             value: sdCard.type,
             color: 'text-blue-600'
         },
         {
             icon: 'fas fa-tachometer-alt',
-            label: 'Minimum Speed',
-            value: `${sdCard.minSpeed} (${sdCard.minWriteSpeed} write)`,
+            label: labels.minSpeed,
+            value: `${sdCard.minSpeed} (${sdCard.minWriteSpeed} ${labels.write})`,
             color: 'text-emerald-600'
         }
     ];
@@ -220,16 +259,16 @@ function generateRequirementsBox(device, deviceNameShort) {
     if (sdCard.minAppPerformance) {
         rows.push({
             icon: 'fas fa-cogs',
-            label: 'App Performance',
-            value: `${sdCard.minAppPerformance} (Required for OS/Apps)`,
+            label: labels.appPerformance,
+            value: `${sdCard.minAppPerformance} (${labels.requiredFor})`,
             color: 'text-amber-600'
         });
     }
 
     rows.push({
         icon: 'fas fa-database',
-        label: 'Maximum Capacity',
-        value: `Up to ${sdCard.maxCapacity}`,
+        label: labels.maxCapacity,
+        value: `${labels.upTo} ${sdCard.maxCapacity}`,
         color: 'text-violet-600'
     });
 
@@ -247,12 +286,12 @@ function generateRequirementsBox(device, deviceNameShort) {
 
     return `
     <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 mb-8">
-        <h2 class="text-lg font-bold text-slate-900 mb-4">Official ${safeDeviceName} SD Card Requirements</h2>
+        <h2 class="text-lg font-bold text-slate-900 mb-4">${labels.official} ${safeDeviceName} ${labels.requirements}</h2>
         <ul class="space-y-0">
             ${rowsHtml}
         </ul>
         <div class="mt-4 text-sm text-slate-600 bg-white p-3 rounded border border-slate-100">
-            <strong>Why these requirements?</strong> ${whySpecs}
+            <strong>${labels.why}</strong> ${whySpecs}
         </div>
     </div>
     `;
@@ -358,9 +397,9 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         answerText += ` (${device.sdCard.minSpeed} or faster)`;
     }
 
-    const requirementsBoxHTML = generateRequirementsBox(device, deviceNameShort);
-    const specsHTML = generateSpecsHTML(device);
-    const brandsTableRows = generateBrandsTable(device.recommendedBrands, sdcardsMap, device.slug);
+    const requirementsBoxHTML = generateRequirementsBox(device, deviceNameShort, isJapanese);
+    const specsHTML = generateSpecsHTML(device, isJapanese);
+    const brandsTableRows = generateBrandsTable(device.recommendedBrands, sdcardsMap, device.slug, isJapanese);
     const alternativesHTML = generateAlternatives(device, sdcardsMap);
 
     // Generate FAQs: use custom FAQs from data, or generate programmatically
@@ -465,7 +504,7 @@ async function generateDevicePages(allDevices, distPath, isJapanese = false) {
     // Process {% include %} tags
     deviceTemplate = processIncludes(deviceTemplate, path.join(srcPath, "templates"));
 
-    const sdcardsMap = loadSDCardData();
+    const sdcardsMap = loadSDCardData(isJapanese);
 
     let successCount = 0;
     let failedDevices = [];

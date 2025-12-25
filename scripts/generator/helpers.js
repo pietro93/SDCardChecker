@@ -522,13 +522,29 @@ function generateProductSchema(brandReferences, sdcardsMap, baseUrl = "https://s
 /**
  * Generate specs HTML table
  */
-function generateSpecsHTML(device) {
+function generateSpecsHTML(device, isJapanese = false) {
+  const labels = isJapanese ? {
+    type: "タイプ",
+    minSpeed: "最低速度クラス",
+    writeSpeed: "書き込み速度",
+    recommendedSize: "推奨容量",
+    maxCapacity: "最大容量",
+    tested: "テスト済み"
+  } : {
+    type: "Type",
+    minSpeed: "Min Speed Class",
+    writeSpeed: "Write Speed",
+    recommendedSize: "Recommended Size",
+    maxCapacity: "Max Capacity",
+    tested: "tested"
+  };
+
   const specs = [
-    { label: "Type", value: device.sdCard.type },
-    { label: "Min Speed Class", value: device.sdCard.minSpeed },
-    { label: "Write Speed", value: device.sdCard.minWriteSpeed },
+    { label: labels.type, value: device.sdCard.type },
+    { label: labels.minSpeed, value: device.sdCard.minSpeed },
+    { label: labels.writeSpeed, value: device.sdCard.minWriteSpeed },
     {
-      label: "Recommended Size",
+      label: labels.recommendedSize,
       value: device.sdCard.recommendedCapacity.join(", "),
     },
   ];
@@ -539,11 +555,11 @@ function generateSpecsHTML(device) {
     
     // If testedMaxCapacity exists, show both values side by side
     if (device.sdCard.testedMaxCapacity) {
-      maxCapacityValue = `${device.sdCard.maxCapacity} (${device.sdCard.testedMaxCapacity} tested)`;
+      maxCapacityValue = `${device.sdCard.maxCapacity} (${device.sdCard.testedMaxCapacity} ${labels.tested})`;
     }
     
     specs.push({
-      label: "Max Capacity",
+      label: labels.maxCapacity,
       value: maxCapacityValue,
     });
   }
@@ -671,8 +687,9 @@ function findActualImageFile(cardId, definedPath) {
  * compatible with existing templates and devices.json references.
  * Uses Smart Image Finder to resolve image paths.
  */
-function loadSDCardData() {
-  const sdcardsPath = path.join(__dirname, "../../data/sdcards.json");
+function loadSDCardData(isJapanese = false) {
+  const filename = isJapanese ? "sdcards-ja.json" : "sdcards.json";
+  const sdcardsPath = path.join(__dirname, "../../data", filename);
   const data = JSON.parse(fs.readFileSync(sdcardsPath, "utf8"));
   const cardMap = {};
 
