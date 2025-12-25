@@ -69,9 +69,9 @@ function generateJapaneseGuides(distPath) {
             name: "Fake Card Detection Guide (Japanese)"
         },
         {
-            templatePath: path.join(srcPath, "templates/guides/nintendo-switch-sd-card-guide.html"),
+            templatePath: path.join(srcPath, "templates/guides/nintendo-switch-sd-card-guide-ja.html"),
             fileName: "nintendo-switch-sd-card-guide/index.html",
-            name: "Nintendo Switch Guide (English)"
+            name: "Nintendo Switch Guide (Japanese)"
         }
     ];
 

@@ -81,14 +81,39 @@ function generateSitemap(allDevices, allReaders, distPath) {
 `;
   });
 
-  // Add resource pages
-  const resources = [
-    { path: "/sd-card-guide.html", priority: 0.8 },
-    { path: "/speed-classes.html", priority: 0.8 },
-    { path: "/faq.html", priority: 0.8 }
-  ];
+  // Add guide pages
+   const guides = [
+     { path: "/guides/sd-card-guide/", priority: 0.8 },
+     { path: "/guides/sd-card-speed-classes/", priority: 0.8 },
+     { path: "/guides/video-bitrate-comparison/", priority: 0.8 },
+     { path: "/guides/raw-vs-jpeg/", priority: 0.8 },
+     { path: "/guides/is-my-sd-card-fake/", priority: 0.8 },
+     { path: "/guides/nintendo-switch-sd-card-guide/", priority: 0.8 },
+     { path: "/guides/", priority: 0.85 },
+     { path: "/guides/readers/", priority: 0.8 },
+     { path: "/guides/readers/macbook/", priority: 0.75 },
+     { path: "/guides/readers/photographers/", priority: 0.75 },
+     { path: "/guides/readers/iphone/", priority: 0.75 },
+     { path: "/guides/readers/android/", priority: 0.75 }
+   ];
 
-  resources.forEach((resource) => {
+   // Add guides to sitemap
+   guides.forEach((guide) => {
+     sitemapXML += `  <url>
+     <loc>https://sdcardchecker.com${guide.path}</loc>
+     <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+     <changefreq>monthly</changefreq>
+     <priority>${guide.priority}</priority>
+   </url>
+   `;
+   });
+
+   // Add resource pages
+    const resources = [
+      { path: "/faq.html", priority: 0.8 }
+     ];
+
+   resources.forEach((resource) => {
     sitemapXML += `  <url>
     <loc>https://sdcardchecker.com${resource.path}</loc>
     <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>

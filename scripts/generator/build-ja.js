@@ -12,6 +12,7 @@ const { generateCategoryPagesJa } = require("./generate-category-pages-ja");
 const { generateJapaneseHomePage } = require("./generate-ja-home");
 const { generateDevicePagesJa } = require("./generate-device-pages-ja");
 const { generateJapaneseGuides } = require("./generate-guides-ja");
+const { generateJapaneseCoreFiles } = require("./generate-core-files-ja");
 const { generateHeader, generateFooter, generateGrowScript, generateSidebar } = require("../../src/templates/components-ja");
 
 // Paths
@@ -82,6 +83,11 @@ async function buildJapanese() {
     // 6. Generate Japanese Guide Pages
     console.log("📄 Generating Japanese guide pages...");
     generateJapaneseGuides(distPath);
+    console.log();
+
+    // 7. Generate Japanese Core Files (sitemap, robots.txt)
+    console.log("📄 Generating Japanese core files...");
+    await generateJapaneseCoreFiles(allDevices, distPath);
     console.log();
 
     // Success summary

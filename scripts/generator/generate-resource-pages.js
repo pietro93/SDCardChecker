@@ -175,6 +175,11 @@ async function generateResourcePages(distPath) {
             template: path.join(srcPath, "templates/guides/readers-android.html"),
             file: "readers/android/index.html",
             name: "Best Readers for Android"
+        },
+        {
+            template: path.join(srcPath, "templates/guides/nintendo-switch-sd-card-guide.html"),
+            file: "nintendo-switch-sd-card-guide/index.html",
+            name: "Nintendo Switch SD Card Guide"
         }
     ];
 
