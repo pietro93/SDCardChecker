@@ -7,12 +7,17 @@
 class CardSelector {
   /**
    * Load all cards from sdcards.json
+   * Automatically detects page language and loads appropriate data file
    * @returns {Promise<Array>} All available SD cards
    */
   static async loadCards() {
     try {
-      console.log('[CardSelector] Fetching cards from /data/sdcards.json');
-      const response = await fetch('/data/sdcards.json');
+      // Detect page language from html lang attribute
+      const htmlLang = document.documentElement.lang || 'en';
+      const dataFile = htmlLang === 'ja' ? '/data/sdcards-ja.json' : '/data/sdcards.json';
+      
+      console.log(`[CardSelector] Fetching cards from ${dataFile}`);
+      const response = await fetch(dataFile);
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -22,7 +27,7 @@ class CardSelector {
       const cards = data.sdcards || [];
       
       if (!cards || cards.length === 0) {
-        console.warn('[CardSelector] ⚠️ No cards found in sdcards.json');
+        console.warn(`[CardSelector] ⚠️ No cards found in ${dataFile}`);
         return [];
       }
       
@@ -30,7 +35,6 @@ class CardSelector {
       return cards;
     } catch (error) {
       console.error('[CardSelector] ✗ Failed to load cards:', error);
-      console.error('[CardSelector] URL attempted:', '/data/sdcards.json');
       return [];
     }
   }

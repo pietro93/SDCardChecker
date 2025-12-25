@@ -466,7 +466,7 @@ AMAZON_TAG_US=sdcc-20
 # Japan (ADD THESE)
 AMAZON_ACCESS_KEY_JA=your_jp_key
 AMAZON_SECRET_KEY_JA=your_jp_secret
-AMAZON_TAG_JA=yourname-22
+AMAZON_TAG_JA=sd-cc-22
 ```
 
 ### Cloudflare Pages Environment Variables

@@ -47,11 +47,16 @@ class CalculatorCardRecommendations {
 
     /**
      * Load cards from JSON
+     * Automatically detects page language and loads appropriate data file
      * @returns {Promise<Array>} Cards array
      */
     static async loadCards() {
         try {
-            const response = await fetch('/data/sdcards.json');
+            // Detect page language from html lang attribute
+            const htmlLang = document.documentElement.lang || 'en';
+            const dataFile = htmlLang === 'ja' ? '/data/sdcards-ja.json' : '/data/sdcards.json';
+            
+            const response = await fetch(dataFile);
             const data = await response.json();
             return data.sdcards || [];
         } catch (error) {
