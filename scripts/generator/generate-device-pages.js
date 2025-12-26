@@ -161,11 +161,12 @@ function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, isJapanese
                 return "";
             }
 
-            // Add UTM parameters to Amazon URL
+            // Add UTM parameters to Amazon URL (prefer direct product link if available)
+            const baseUrl = brand.amazonDirectUrl || brand.amazonSearchUrl;
             const utmParams = `utm_source=sdcardchecker&utm_medium=device-page&utm_campaign=${deviceSlug}&utm_content=${brand.tier || 'featured'}`;
-            const amazonUrlWithUTM = brand.amazonSearchUrl.includes('?')
-                ? `${brand.amazonSearchUrl}&${utmParams}`
-                : `${brand.amazonSearchUrl}?${utmParams}`;
+            const amazonUrlWithUTM = baseUrl.includes('?')
+                ? `${baseUrl}&${utmParams}`
+                : `${baseUrl}?${utmParams}`;
 
             const cardImage = brand.imageUrl || getCardImageFallback(brand);
             const priceTierClass = brand.priceTier ? `price-${brand.priceTier.toLowerCase().replace(/\s+/g, '-')}` : 'price-mid-range';

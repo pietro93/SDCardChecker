@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "displayPosition": "above-faq",
+  "promotedCards": [
+    {
+      "id": "kingston-canvas-react-sd",
+      "name": "Kingston Canvas React Plus SD",
+      "enabled": true,
+      "displayOn": "all",
+      "appliesTo": [],
+      "excludeFrom": [],
+      "reason": "Higher commission rate (uproot01-20 tag)",
+      "badgeText": "Best Value V90",
+      "badgeColor": "bg-blue-600"
+    }
+  ],
+  "notes": {
+    "displayPosition": "Where to show promoted card: 'above-faq', 'below-recommendations', 'sidebar'",
+    "displayOn": "'all' = all devices, 'list' = specific device IDs in appliesTo, 'exclude' = all except those in excludeFrom",
+    "badgeText": "Optional badge to show on the promotion card",
+    "badgeColor": "Tailwind color class for badge"
+  }
+}
