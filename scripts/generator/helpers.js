@@ -796,5 +796,4 @@ module.exports = {
   generateFAQHTML,
   generateRelatedDevices,
   loadSDCardData,
-  generatePromotedCardSection,
 };

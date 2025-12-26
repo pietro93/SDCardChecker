@@ -7,6 +7,7 @@ const fs = require("fs");
 const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, loadSDCardData } = require("./helpers");
 const { generateFAQs, mergeFAQs } = require("./generateFAQs");
 const { generateAmazonBadgesSection } = require("./amazon-badges-generator");
+const { generatePromotedCardSection } = require("./promotion-generator");
 
 const srcPath = path.join(__dirname, "../../src");
 
@@ -429,6 +430,10 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     // Skip Amazon badges for Japanese pages (awaiting API access)
     const amazonBadgesSection = isJapanese ? '' : generateAmazonBadgesSection();
 
+    // Generate promoted card section - convert sdcardsMap object to array
+    const sdcardsArray = Object.values(sdcardsMap);
+    const promotedCardSection = generatePromotedCardSection(device, sdcardsArray, isJapanese, getCardImageFallback);
+
     // Get component helpers based on language
     const components = getComponentHelpers(isJapanese);
 
@@ -477,6 +482,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{BRANDS_TABLE_ROWS}}/g, brandsTableRows)
         .replace(/{{ALTERNATIVES_HTML}}/g, alternativesHTML)
         .replace(/{{AMAZON_BADGES_SECTION}}/g, amazonBadgesSection)
+        .replace(/{{PROMOTED_CARDS_SECTION}}/g, promotedCardSection)
         .replace(/{{FAQ_HTML}}/g, faqHTML)
         .replace(/{{RELATED_DEVICES_SECTION}}/g, relatedDevicesSection)
         .replace(/{{FAQ_SCHEMA}}/g, faqSchema)

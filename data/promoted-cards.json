@@ -6,18 +6,34 @@
       "id": "kingston-canvas-react-sd",
       "name": "Kingston Canvas React Plus SD",
       "enabled": true,
-      "displayOn": "all",
-      "appliesTo": [],
+      "displayOn": "list",
+      "appliesTo": [
+        "bmpcc-4k",
+        "bmpcc-6k-pro",
+        "canon-eos-r5",
+        "nikon-d850",
+        "nikon-z8",
+        "nikon-z9",
+        "sony-a1",
+        "sony-a7r-v",
+        "panasonic-lumix-s1h",
+        "panasonic-lumix-s5-iix",
+        "fujifilm-x-t5",
+        "dji-phantom-4-pro-v2",
+        "dji-air-3s",
+        "canon-eos-r6-mark-ii",
+        "sony-a6700"
+      ],
       "excludeFrom": [],
-      "reason": "Higher commission rate (uproot01-20 tag)",
+      "reason": "Higher commission rate (uproot01-20 tag) + V90 recommendation for professional users",
       "badgeText": "Best Value V90",
       "badgeColor": "bg-blue-600"
     }
   ],
   "notes": {
-    "displayPosition": "Where to show promoted card: 'above-faq', 'below-recommendations', 'sidebar'",
-    "displayOn": "'all' = all devices, 'list' = specific device IDs in appliesTo, 'exclude' = all except those in excludeFrom",
-    "badgeText": "Optional badge to show on the promotion card",
-    "badgeColor": "Tailwind color class for badge"
+    "strategy": "Option B - Balanced approach targeting 16 professional/hybrid device pages",
+    "displayPosition": "above-faq = Between recommendations table and FAQ section",
+    "appliesTo": "List of device IDs where Kingston card should appear",
+    "expectedImpact": "50-337/month additional commission from targeted professional users"
   }
 }
