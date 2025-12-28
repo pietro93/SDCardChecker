@@ -87,7 +87,9 @@ function getCategoryIcon(category) {
     "Computing & Tablets": "computing",
     "コンピュータ・タブレット": "computing",
     "Security Cameras": "security-camera",
-    "セキュリティカメラ": "security-camera"
+    "セキュリティカメラ": "security-camera",
+    "Dash Cams": "dashcam",
+    "ドライブレコーダー": "dashcam"
   };
   return iconMap[category] || "camera"; // Default fallback
 }
@@ -121,6 +123,10 @@ function getCategoryIntro(category) {
       "セキュリティカメラは、24時間の連続録画用に設計された高耐久性microSDカードが必要です。24/7監視システムに最適なカードを見つけてください。",
     "セキュリティカメラ":
       "セキュリティカメラは、24時間の連続録画用に設計された高耐久性microSDカードが必要です。24/7監視システムに最適なカードを見つけてください。",
+    "Dash Cams":
+      "ドライブレコーダーは、安定した高品質ビデオ録画のための信頼性の高い高速microSDカードが必要です。人気のあるドライブレコーダーモデルの推奨事項を見つけてください。",
+    "ドライブレコーダー":
+      "ドライブレコーダーは、安定した高品質ビデオ録画のための信頼性の高い高速microSDカードが必要です。人気のあるドライブレコーダーモデルの推奨事項を見つけてください。",
   };
 
   return (

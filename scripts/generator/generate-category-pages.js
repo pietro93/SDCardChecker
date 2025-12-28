@@ -56,7 +56,8 @@ function getCategoryIcon(category) {
     "Drones": "drone",
     "Gaming Handhelds": "gaming",
     "Computing & Tablets": "computing",
-    "Security Cameras": "security-camera"
+    "Security Cameras": "security-camera",
+    "Dash Cams": "dashcam"
   };
   return iconMap[category] || "camera"; // Default fallback
 }
@@ -72,6 +73,8 @@ Cameras:
 "Professional cameras including DSLRs, mirrorless, and cinema cameras require fast, reliable cards for RAW photo and high-bitrate video recording. Find the perfect card for your setup.",
 "Computing & Tablets":
 "Tablets and Chromebooks benefit from reliable microSD cards for expanded storage and media. Compare options for Amazon Fire, Samsung Galaxy, and more.",
+"Dash Cams":
+"Dash cameras require reliable, high-speed microSD cards for stable video recording. Find the best cards for popular dashcam models and ensure continuous, high-quality recording.",
 Drones:
 "Drones demand reliable, high-speed SD cards for smooth 4K video capture. Compare top recommendations for popular drone models.",
 "Gaming Handhelds":
