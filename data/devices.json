@@ -3938,6 +3938,336 @@
       "notes": "A best-selling compact dash cam. Garmin officially supports up to 512GB."
     },
     {
+      "id": "vantrue-n4",
+      "name": "Vantrue N4 (3-Channel)",
+      "category": "Dash Cams",
+      "slug": "vantrue-n4",
+      "searchTerms": [
+        "vantrue n4 sd card",
+        "best sd card for vantrue n4",
+        "vantrue n4 max sd card capacity",
+        "3 channel dash cam sd card"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "256GB"
+      },
+      "whySpecs": "The Vantrue N4 records three simultaneous video streams (Front, Cabin, Rear). This requires a card with a sustained write speed of U3 or V30. Slower cards will result in recording errors or 'card full' errors.",
+      "recommendedBrands": [
+        { "id": "samsung-pro-endurance" },
+        { "id": "sandisk-max-endurance" }
+      ],
+      "relatedDevices": ["viofo-a139-pro"],
+      "notes": "Format the card to FAT32 directly inside the camera before first use."
+    },
+    {
+      "id": "rexing-v1p-gen3",
+      "name": "Rexing V1P Gen 3",
+      "category": "Dash Cams",
+      "slug": "rexing-v1p-gen3",
+      "searchTerms": [
+        "rexing v1p sd card",
+        "rexing v1p gen 3 memory card",
+        "rexing dash cam card size"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "U1 / Class 10",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "256GB"
+      },
+      "whySpecs": "Rexing cameras are robust but strictly require High Endurance cards due to loop recording. While Class 10 is the minimum, U3 is recommended for reliability.",
+      "recommendedBrands": [
+        { "id": "sandisk-high-endurance" },
+        { "id": "rexing-sd-card" }
+      ],
+      "relatedDevices": ["rexing-v1-basic"]
+    },
+    {
+      "id": "rove-r2-4k",
+      "name": "Rove R2-4K",
+      "category": "Dash Cams",
+      "slug": "rove-r2-4k",
+      "searchTerms": [
+        "rove r2-4k sd card requirements",
+        "best micro sd card for rove r2-4k",
+        "rove r2-4k max sd card"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "U3 / Class 10",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "To record in 4K resolution, the Rove R2 requires a U3 speed class card. Rove specifically recommends avoiding 'Ultra' or generic Class 10 cards as they cannot sustain 4K write speeds.",
+      "recommendedBrands": [
+        { "id": "samsung-pro-endurance" },
+        { "id": "sandisk-extreme-pro" }
+      ],
+      "notes": "Rove officially recommends Samsung or Sandisk specific U3 models."
+    },
+    {
+      "id": "viofo-a229-plus",
+      "name": "Viofo A229 Plus Duo",
+      "category": "Dash Cams",
+      "slug": "viofo-a229-plus-duo",
+      "searchTerms": [
+        "viofo a229 plus sd card",
+        "viofo a229 duo memory card",
+        "best sd card for viofo 2k"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "V30 / U3",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "The A229 Plus utilizes HDR and high-bitrate 2K recording on dual channels. A V30 (Video Speed Class 30) endurance card is mandatory to prevent corrupted footage.",
+      "recommendedBrands": [
+        { "id": "sandisk-max-endurance" },
+        { "id": "viofo-industrial-card" }
+      ],
+      "relatedDevices": ["viofo-a139-pro", "viofo-a229-pro"]
+    },
+    {
+      "id": "blackvue-dr970x-2ch",
+      "name": "BlackVue DR970X-2CH",
+      "category": "Dash Cams",
+      "slug": "blackvue-dr970x-2ch",
+      "searchTerms": [
+        "blackvue dr970x sd card compatibility",
+        "blackvue 4k sd card",
+        "dr970x max capacity"
+      ],
+      "sdCard": {
+        "type": "High Endurance / Industrial",
+        "minSpeed": "U3 / Class 10",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "256GB"
+      },
+      "whySpecs": "BlackVue cameras are notoriously sensitive to SD card quality. Using non-BlackVue or non-Endurance cards often triggers 'check sd card' voice alerts. Only top-tier endurance cards work reliably.",
+      "recommendedBrands": [
+        { "id": "samsung-pro-endurance" },
+        { "id": "blackvue-oem-card" }
+      ],
+      "notes": "Officially supports up to 256GB. Some users report success with 512GB if formatted correctly, but 256GB is the safe official limit."
+    },
+    {
+      "id": "blackvue-dr900x-2ch",
+      "name": "BlackVue DR900X-2CH",
+      "category": "Dash Cams",
+      "slug": "blackvue-dr900x-2ch",
+      "searchTerms": [
+        "blackvue dr900x sd card",
+        "dr900x plus memory card",
+        "blackvue 4k dash cam card"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "U3 / Class 10",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "256GB"
+      },
+      "whySpecs": "As a 4K cloud-connected camera, the DR900X performs constant read/write operations. Standard cards usually fail within months due to heat and overwrite cycles.",
+      "recommendedBrands": [
+        { "id": "blackvue-oem-card" },
+        { "id": "samsung-pro-endurance" }
+      ]
+    },
+    {
+      "id": "nextbase-622gw",
+      "name": "Nextbase 622GW",
+      "category": "Dash Cams",
+      "slug": "nextbase-622gw",
+      "searchTerms": [
+        "nextbase 622gw sd card",
+        "nextbase 4k sd card",
+        "best sd card nextbase 622gw"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "128GB"
+      },
+      "whySpecs": "Nextbase 622GW records in 4K and requires a U3 card. Nextbase is conservative with capacity ratings; while larger cards may work, 128GB is the official guaranteed maximum.",
+      "recommendedBrands": [
+        { "id": "sandisk-max-endurance" },
+        { "id": "samsung-pro-endurance" }
+      ],
+      "notes": "Nextbase recommends formatting the card every 2-3 weeks to maintain performance."
+    },
+    {
+      "id": "garmin-dash-cam-67w",
+      "name": "Garmin Dash Cam 67W",
+      "category": "Dash Cams",
+      "slug": "garmin-dash-cam-67w",
+      "searchTerms": [
+        "garmin 67w sd card",
+        "garmin dash cam 67w memory card",
+        "garmin 1440p sd card"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "Class 10 / U3",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "The 67W records at 1440p and often connects to the Garmin Drive app, putting stress on the card. Garmin officially supports up to 512GB Class 10 or faster.",
+      "recommendedBrands": [
+        { "id": "sandisk-high-endurance" },
+        { "id": "samsung-pro-endurance" }
+      ],
+      "relatedDevices": ["garmin-dash-cam-mini-2"]
+    },
+    {
+      "id": "viofo-a119-v3",
+      "name": "Viofo A119 V3",
+      "category": "Dash Cams",
+      "slug": "viofo-a119-v3",
+      "searchTerms": [
+        "viofo a119 v3 sd card",
+        "best budget dash cam sd card",
+        "viofo a119 capacity"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "Class 10 / U1",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "256GB"
+      },
+      "whySpecs": "The A119 V3 is a workhorse. While it can run on Class 10 U1 cards, High Endurance is still required to handle the constant loop recording without card failure.",
+      "recommendedBrands": [
+        { "id": "sandisk-high-endurance" },
+        { "id": "viofo-card" }
+      ]
+    },
+    {
+      "id": "viofo-a129-pro-duo",
+      "name": "Viofo A129 Pro Duo",
+      "category": "Dash Cams",
+      "slug": "viofo-a129-pro-duo",
+      "searchTerms": [
+        "viofo a129 pro duo sd card",
+        "viofo 4k sd card requirements",
+        "best sd card for a129 pro"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "256GB"
+      },
+      "whySpecs": "The 'Pro' version records true 4K front video with high bitrates. Standard Class 10 cards perform poorly here; U3/V30 is strictly required.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-endurance" },
+        { "id": "samsung-pro-endurance" }
+      ]
+    },
+    {
+      "id": "70mai-a810",
+      "name": "70mai A810",
+      "category": "Dash Cams",
+      "slug": "70mai-a810",
+      "searchTerms": [
+        "70mai a810 sd card",
+        "70mai 4k dash cam memory card",
+        "best card for 70mai"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "256GB"
+      },
+      "whySpecs": "The A810 uses the Sony Starvis 2 sensor for 4K recording. It requires a U3/V30 card to handle the data stream. Slower cards will trigger 'speed too slow' errors immediately.",
+      "recommendedBrands": [
+        { "id": "sandisk-max-endurance" },
+        { "id": "samsung-pro-endurance" }
+      ]
+    },
+    {
+      "id": "redtiger-f7n",
+      "name": "Redtiger F7N",
+      "category": "Dash Cams",
+      "slug": "redtiger-f7n",
+      "searchTerms": [
+        "redtiger f7n sd card type",
+        "redtiger 4k dash cam sd card",
+        "f7n memory card size"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "U3 / Class 10",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "32GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "256GB"
+      },
+      "whySpecs": "A massive Amazon bestseller. It records 4K video which demands U3 speed. Users frequently experience errors with generic cards included in bundles, so upgrading to High Endurance name brands is critical.",
+      "recommendedBrands": [
+        { "id": "samsung-pro-endurance" },
+        { "id": "sandisk-max-endurance" }
+      ],
+      "notes": "Format card to FAT32 or exFAT via the camera menu immediately after insertion."
+    },
+    {
       "id": "nikon-z5",
       "name": "Nikon Z5",
       "category": "Cameras",
