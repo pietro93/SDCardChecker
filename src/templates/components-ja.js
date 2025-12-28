@@ -44,9 +44,11 @@ return `<!-- Favicon -->
        <a href="/ja/categories/action-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">アクションカメラ</a>
        <a href="/ja/categories/cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">カメラ</a>
        <a href="/ja/categories/computing-and-tablets/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">コンピュータ・タブレット</a>
+       <a href="/ja/categories/dash-cams/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">ドライブレコーダー</a>
        <a href="/ja/categories/drones/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">ドローン</a>
        <a href="/ja/categories/gaming-handhelds/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">携帯ゲーム機</a>
-       <a href="/ja/categories/security-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">セキュリティカメラ</a>
+       <a href="/ja/categories/security-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">セキュリティカメラ</a>
+       <a href="/ja/categories/trail-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">トレイルカメラ</a>
         </div>
        </div>
       </div>
@@ -123,9 +125,11 @@ return `<!-- Favicon -->
         <a href="/ja/categories/action-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">アクションカメラ</a>
         <a href="/ja/categories/cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">カメラ</a>
         <a href="/ja/categories/computing-and-tablets/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">コンピュータ・タブレット</a>
+        <a href="/ja/categories/dash-cams/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">ドライブレコーダー</a>
         <a href="/ja/categories/drones/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">ドローン</a>
         <a href="/ja/categories/gaming-handhelds/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">携帯ゲーム機</a>
         <a href="/ja/categories/security-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">セキュリティカメラ</a>
+        <a href="/ja/categories/trail-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">トレイルカメラ</a>
       </div>
       
 
