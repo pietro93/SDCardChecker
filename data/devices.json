@@ -6477,6 +6477,241 @@
         "nikon-z9",
         "canon-eos-r5"
       ]
-    },
-  ]
-}
+      },
+      {
+      "id": "analogue-pocket",
+      "name": "Analogue Pocket",
+      "category": "Retro Handhelds",
+      "slug": "analogue-pocket",
+      "searchTerms": [
+        "analogue pocket sd card",
+        "analogue pocket openfpga sd",
+        "analogue pocket memory card format",
+        "best sd card for analogue pocket"
+      ],
+      "sdCard": {
+        "type": "microSD, microSDHC, microSDXC",
+        "minSpeed": "Class 10 / U1",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "The Analogue Pocket uses the SD card primarily for 'OpenFPGA' cores and ROM storage. While high transfer speeds aren't required for gameplay (as games are loaded into RAM), a high-quality card is essential to prevent data corruption during core updates and firmware installation.",
+      "recommendedBrands": [
+        { "id": "sandisk-ultra-microsd" },
+        { "id": "samsung-evo-select" }
+      ],
+      "faq": [
+        {
+          "q": "What format should the card be?",
+          "a": "<b>The card should be formatted to exFAT (preferred) or FAT32.</b> Analogue OS officially supports exFAT, which is easier for managing large files and modern operating systems."
+        },
+        {
+          "q": "Do I need a fast SD card?",
+          "a": "<b>Not strictly for gameplay.</b> The Pocket loads the game into its internal FPGA memory before playing. Speed only matters when initially copying your library to the card."
+        }
+      ],
+      "relatedDevices": [
+        "nintendo-3ds-xl",
+        "miyoo-mini-plus"
+      ],
+      "notes": "Essential for OpenFPGA users. Official firmware updates also require an SD card."
+      },
+      {
+      "id": "msi-claw",
+      "name": "MSI Claw (A1M)",
+      "category": "Gaming Handhelds",
+      "slug": "msi-claw",
+      "searchTerms": [
+        "msi claw sd card support",
+        "msi claw memory card",
+        "expand storage msi claw",
+        "best sd card for msi claw"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "U3 / A2",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "512GB",
+          "1TB"
+        ],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "The MSI Claw runs full Windows AAA games. You need an 'A2' (Application Performance Class 2) rated card to handle the random read/write operations of Windows gaming. Slower cards will cause stuttering and extremely long load times.",
+      "recommendedBrands": [
+        { "id": "sandisk-extreme-pro-microsd" },
+        { "id": "lexar-play-microsd" }
+      ],
+      "faq": [
+        {
+          "q": "Is the MSI Claw SD reader UHS-II?",
+          "a": "<b>No, the MSI Claw A1M typically features a UHS-I slot.</b> While you can use UHS-II cards, they will be capped at UHS-I speeds. Focus on buying a high-capacity A2 UHS-I card instead."
+        }
+      ],
+      "relatedDevices": [
+        "asus-rog-ally",
+        "steam-deck",
+        "lenovo-legion-go"
+      ],
+      "notes": "Ensure you update the MSI Center M software, as early drivers had issues with SD card recognition."
+      },
+      {
+      "id": "sony-ps-vita-sd2vita",
+      "name": "Sony PS Vita (SD2Vita)",
+      "category": "Retro Handhelds",
+      "slug": "sony-ps-vita-sd2vita",
+      "searchTerms": [
+        "ps vita sd2vita card",
+        "modded ps vita sd card",
+        "best microsd for vita",
+        "sd2vita max capacity"
+      ],
+      "sdCard": {
+        "type": "microSD (requires SD2Vita Adapter)",
+        "minSpeed": "Class 10",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB",
+          "400GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "The PS Vita natively uses proprietary memory, but modded units use the 'SD2Vita' adapter to utilize standard microSD cards. 128GB or 256GB is the 'sweet spot'. Cards larger than 256GB effectively require formatting with a 64kb cluster size to prevent wastage.",
+      "recommendedBrands": [
+        { "id": "sandisk-ultra-microsd" },
+        { "id": "samsung-evo-plus" }
+      ],
+      "faq": [
+        {
+          "q": "Does this work on a normal PS Vita?",
+          "a": "<b>No.</b> You must install custom firmware (Henkaku/Enso) to use the SD2Vita adapter. A stock, unmodded Vita cannot read microSD cards."
+        },
+        {
+          "q": "What is the max size for SD2Vita?",
+          "a": "<b>512GB is widely considered the practical maximum.</b> While 1TB cards theoretically work, they often cause slowness in the Vita's UI (LiveArea) due to the sheer number of icons/bubbles to load."
+        }
+      ],
+      "relatedDevices": [
+        "nintendo-3ds-xl",
+        "anbernic-rg353v"
+      ],
+      "notes": "Requires 'SD2Vita' adapter (cheaply available online). Formatting must be done via the Vita or strict settings on PC."
+      },
+      {
+      "id": "anbernic-rg556",
+      "name": "Anbernic RG556",
+      "category": "Retro Handhelds",
+      "slug": "anbernic-rg556",
+      "searchTerms": [
+        "anbernic rg556 sd card",
+        "rg556 memory card setup",
+        "best sd card for rg556",
+        "rg cube sd card"
+      ],
+      "sdCard": {
+        "type": "microSD, microSDXC",
+        "minSpeed": "U3 / A1",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "The RG556 is an Android-based handheld capable of emulating PS2 and GameCube. Using a high-capacity card (256GB+) is recommended to store these large disc-based ROM files. A1 speed is recommended for Android app performance.",
+      "recommendedBrands": [
+        { "id": "samsung-evo-select" },
+        { "id": "sandisk-ultra-microsd" }
+      ],
+      "faq": [
+        {
+          "q": "Do I need two cards?",
+          "a": "<b>No, the RG556 has a single TF (microSD) slot.</b> Unlike older Anbernic devices with two slots, you store both your OS specific files and ROMs on this single card (or internal storage)."
+        }
+      ],
+      "relatedDevices": [
+        "retroid-pocket-4-pro",
+        "anbernic-rg35xx-plus"
+      ],
+      "notes": "Also applies to the Anbernic RG Cube."
+      },
+      {
+      "id": "gpd-win-mini",
+      "name": "GPD Win Mini",
+      "category": "Gaming Handhelds",
+      "slug": "gpd-win-mini",
+      "searchTerms": [
+        "gpd win mini sd card",
+        "gpd win 4 memory card",
+        "uhs-ii card for gpd"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-II (Supported)",
+        "minSpeed": "U3 / V60 / V90",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": [
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "GPD Win devices (Mini and Win 4) often feature high-speed UHS-II card readers. To play modern PC games directly from the SD card without stalling, investing in a V60 or V90 UHS-II card is highly beneficial.",
+      "recommendedBrands": [
+        { "id": "lexar-professional-gold-uhs-ii" },
+        { "id": "sandisk-extreme-pro-uhs-ii" }
+      ],
+      "faq": [
+        {
+          "q": "Is UHS-II worth it for GPD?",
+          "a": "<b>Yes.</b> Unlike many competitors, GPD often includes UHS-II readers. These cards offer read speeds closer to SSDs (over 250MB/s), significantly reducing load times in AAA games."
+        }
+      ],
+      "relatedDevices": [
+        "steam-deck",
+        "asus-rog-ally"
+      ],
+      "notes": "Check specific GPD model year as older units may only be UHS-I. The 2024/2025 Mini supports UHS-II."
+      },
+      {
+      "id": "egret-ii-mini",
+      "name": "Egret II Mini",
+      "category": "Retro Arcade",
+      "slug": "egret-ii-mini",
+      "searchTerms": [
+        "egret ii mini sd card",
+        "egret 2 mini expansion",
+        "taito egret sd card"
+      ],
+      "sdCard": {
+        "type": "SDHC / SDXC",
+        "minSpeed": "Class 10",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "32GB",
+          "64GB"
+        ],
+        "maxCapacity": "128GB"
+      },
+      "whySpecs": "The Taito Egret II Mini uses the SD card slot for firmware updates and loading additional games via official expansion packs or side-loading. It does not require high speeds.",
+      "recommendedBrands": [
+        { "id": "sandisk-ultra-microsd" },
+        { "id": "kioxia-exceria" }
+      ],
+      "faq": [
+        {
+          "q": "What is the slot used for?",
+          "a": "Typically used for firmware updates to fix input lag, or for loading extra games if you have the knowledge to set it up."
+        }
+      ],
+      "notes": "Uses a full-size SD slot (or microSD with adapter)."
+      }
+      ]
+      }
