@@ -434,6 +434,35 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const sdcardsArray = Object.values(sdcardsMap);
     const promotedCardSection = generatePromotedCardSection(device, sdcardsArray, isJapanese, getCardImageFallback);
 
+    // Generate Nintendo Branded Cards Grid (only for Switch models)
+    const nintendoDevicesWithGrid = ['nintendo-switch', 'nintendo-switch-oled', 'nintendo-switch-lite'];
+    let nintendoBrandedCardsGrid = '';
+    
+    if (nintendoDevicesWithGrid.includes(device.id)) {
+        const nintendoGridTemplate = readTemplate(
+            path.join(srcPath, "templates", "components", "nintendo-branded-cards-grid.html")
+        );
+        
+        // Amazon affiliate URLs for Nintendo-branded cards
+        const nintendoAffiliateUrls = {
+            'ZELDA': 'https://amazon.com/s?k=SanDisk+Nintendo+Zelda+microSD+Switch&tag=sd-cc-20',
+            'GENGAR': 'https://amazon.com/s?k=SanDisk+Nintendo+Pokemon+Gengar+microSD+Switch&tag=sd-cc-20',
+            'SNORLAX': 'https://amazon.com/s?k=SanDisk+Nintendo+Pokemon+Snorlax+microSD+Switch&tag=sd-cc-20',
+            'PIKACHU': 'https://amazon.com/s?k=SanDisk+Nintendo+Pokemon+Pikachu+microSD+Switch&tag=sd-cc-20',
+            'YOSHI': 'https://amazon.com/s?k=SanDisk+Nintendo+Yoshi+microSD+Switch&tag=sd-cc-20',
+            'ANIMAL_CROSSING': 'https://amazon.com/s?k=SanDisk+Nintendo+Animal+Crossing+Leaf+microSD+Switch&tag=sd-cc-20',
+            'MARIO_MUSHROOM': 'https://amazon.com/s?k=SanDisk+Nintendo+Super+Mario+Mushroom+microSD+Switch&tag=sd-cc-20',
+            'MARIO_STAR': 'https://amazon.com/s?k=SanDisk+Nintendo+Super+Mario+Super+Star+microSD+Switch&tag=sd-cc-20',
+            'FORTNITE_CUDDLE': 'https://amazon.com/s?k=SanDisk+Nintendo+Fortnite+Cuddle+Team+Leader+microSD+Switch&tag=sd-cc-20',
+            'FORTNITE_SKULL': 'https://amazon.com/s?k=SanDisk+Nintendo+Fortnite+Skull+Trooper+microSD+Switch&tag=sd-cc-20'
+        };
+        
+        nintendoBrandedCardsGrid = nintendoGridTemplate;
+        Object.entries(nintendoAffiliateUrls).forEach(([key, url]) => {
+            nintendoBrandedCardsGrid = nintendoBrandedCardsGrid.replace(`{{AMAZON_URL_${key}}}`, url);
+        });
+    }
+
     // Get component helpers based on language
     const components = getComponentHelpers(isJapanese);
 
@@ -483,6 +512,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{ALTERNATIVES_HTML}}/g, alternativesHTML)
         .replace(/{{AMAZON_BADGES_SECTION}}/g, amazonBadgesSection)
         .replace(/{{PROMOTED_CARDS_SECTION}}/g, promotedCardSection)
+        .replace(/{{NINTENDO_BRANDED_CARDS_GRID}}/g, nintendoBrandedCardsGrid)
         .replace(/{{FAQ_HTML}}/g, faqHTML)
         .replace(/{{RELATED_DEVICES_SECTION}}/g, relatedDevicesSection)
         .replace(/{{FAQ_SCHEMA}}/g, faqSchema)
