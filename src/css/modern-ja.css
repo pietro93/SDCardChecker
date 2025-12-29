@@ -49,7 +49,8 @@ html[lang="ja"] h6 {
 }
 
 /* Exception: Hero title on homepage should remain white */
-html[lang="ja"] h1.hero-title {
+html[lang="ja"] h1.hero-title,
+html[lang="ja"] h1.text-white {
   color: white !important;
 }
 
