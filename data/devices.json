@@ -1083,7 +1083,7 @@
     {
       "id": "viofo-a229-duo",
       "name": "VIOFO A229 Duo",
-      "category": "Action Cameras",
+      "category": "Dash Cams",
       "slug": "viofo-a229-duo",
       "searchTerms": [
         "viofo a229 sd card",
@@ -6712,6 +6712,158 @@
         }
       ],
       "notes": "Uses a full-size SD slot (or microSD with adapter)."
-      }
+      },
+    {
+      "id": "yupiteru-wdt-510c",
+      "name": "Yupiteru WDT-510C",
+      "category": "Dash Cams",
+      "slug": "yupiteru-wdt-510c",
+      "searchTerms": [
+        "yupiteru wdt-510c sd card",
+        "yupiteru dashcam memory card",
+        "japanese dash cam sd card"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "U3 / Class 10",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Japanese dash cam designed for continuous loop recording. High Endurance cards are essential for the constant data rewriting and overwrite cycles typical of dash cams.",
+      "recommendedBrands": [
+        { "id": "sandisk-max-endurance" },
+        { "id": "samsung-pro-endurance" }
+      ],
+      "faq": [
+        {
+          "q": "Why do dash cams require special SD cards?",
+          "a": "<b>Dash cams write data continuously in a loop.</b> This constant overwriting wears out standard cards rapidly. High Endurance cards are engineered to survive millions more write cycles and are mandatory for reliability."
+        }
+      ],
+      "relatedDevices": [
+        "garmin-dash-cam-mini-2",
+        "viofo-a229-duo"
+      ],
+      "notes": "Popular Japanese dash cam brand. High reliability and durability in continuous recording scenarios."
+    },
+    {
+      "id": "kenwood-drv-mr760",
+      "name": "Kenwood DRV-MR760",
+      "category": "Dash Cams",
+      "slug": "kenwood-drv-mr760",
+      "searchTerms": [
+        "kenwood drv-mr760 sd card",
+        "kenwood dashcam memory card",
+        "japanese dash cam sd card"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "U3 / Class 10",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Japanese dash cam with dual recording capabilities. Requires High Endurance cards for reliable continuous recording without data loss or corruption.",
+      "recommendedBrands": [
+        { "id": "sandisk-max-endurance" },
+        { "id": "samsung-pro-endurance" }
+      ],
+      "faq": [
+        {
+          "q": "Is this a dual-channel dash cam?",
+          "a": "<b>The Kenwood DRV-MR760 supports front and rear recording.</b> Make sure your High Endurance card has sufficient capacity for extended recording sessions, typically 128GB or higher for 24/7 operation."
+        }
+      ],
+      "relatedDevices": [
+        "garmin-dash-cam-mini-2",
+        "blackvue-dr970x"
+      ],
+      "notes": "Premium Japanese dash cam brand trusted for quality and durability in professional driving applications."
+    },
+    {
+      "id": "comtec-zdr-035",
+      "name": "COMTEC ZDR-035",
+      "category": "Dash Cams",
+      "slug": "comtec-zdr-035",
+      "searchTerms": [
+        "comtec zdr-035 sd card",
+        "comtec dashcam memory card",
+        "japanese dash cam sd card"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "U3 / Class 10",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Japanese dash cam brand known for reliability and stable recording. Requires High Endurance cards to handle the intensive continuous loop recording workload.",
+      "recommendedBrands": [
+        { "id": "sandisk-max-endurance" },
+        { "id": "samsung-pro-endurance" }
+      ],
+      "faq": [
+        {
+          "q": "What's the difference between COMTEC dash cams and other brands?",
+          "a": "<b>COMTEC specializes in Japanese dash cam technology.</b> They're known for excellent image quality, robust build, and superior reliability in continuous recording. High Endurance cards ensure stable, uninterrupted recording."
+        }
+      ],
+      "relatedDevices": [
+        "garmin-dash-cam-mini-2",
+        "viofo-a229-duo"
+      ],
+      "notes": "Japanese brand with strong reputation for quality dash cam technology and reliable recording performance."
+    },
+    {
+      "id": "cellstar-cs-91fh",
+      "name": "Cellstar CS-91FH",
+      "category": "Dash Cams",
+      "slug": "cellstar-cs-91fh",
+      "searchTerms": [
+        "cellstar cs-91fh sd card",
+        "cellstar dashcam memory card",
+        "japanese dash cam sd card"
+      ],
+      "sdCard": {
+        "type": "High Endurance microSD",
+        "minSpeed": "U3 / Class 10",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Japanese dash cam manufacturer. High Endurance cards are critical for the continuous overwrite cycles inherent to dash cam recording operations.",
+      "recommendedBrands": [
+        { "id": "sandisk-max-endurance" },
+        { "id": "samsung-pro-endurance" }
+      ],
+      "faq": [
+        {
+          "q": "Why is card reliability so important for dash cams?",
+          "a": "<b>Dash cams operate 24/7 in many cases, constantly rewriting the same areas.</b> A standard card fails within months, but a High Endurance card designed for this workload lasts for years without issues."
+        }
+      ],
+      "relatedDevices": [
+        "garmin-dash-cam-mini-2",
+        "viofo-a229-duo"
+      ],
+      "notes": "Japanese dash cam brand emphasizing durability and continuous recording reliability."
+    }
       ]
       }
