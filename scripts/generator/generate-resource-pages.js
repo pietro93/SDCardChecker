@@ -106,6 +106,36 @@ function replaceAmazonProductPlaceholders(html, productType) {
         }
     }
     
+    // Handle Nintendo Branded Cards Grid (for Nintendo Switch guides)
+    if (html.includes('{{NINTENDO_BRANDED_CARDS_GRID}}')) {
+        const nintendoGridPath = path.join(srcPath, "templates", "components", "nintendo-branded-cards-grid.html");
+        if (fs.existsSync(nintendoGridPath)) {
+            let nintendoGridTemplate = fs.readFileSync(nintendoGridPath, 'utf-8');
+            
+            // Amazon affiliate URLs for Nintendo-branded cards
+            const nintendoAffiliateUrls = {
+                'ZELDA': 'https://amazon.com/s?k=SanDisk+Nintendo+Zelda+microSD+Switch&tag=sd-cc-20',
+                'GENGAR': 'https://amazon.com/s?k=SanDisk+Nintendo+Pokemon+Gengar+microSD+Switch&tag=sd-cc-20',
+                'SNORLAX': 'https://amazon.com/s?k=SanDisk+Nintendo+Pokemon+Snorlax+microSD+Switch&tag=sd-cc-20',
+                'PIKACHU': 'https://amazon.com/s?k=SanDisk+Nintendo+Pokemon+Pikachu+microSD+Switch&tag=sd-cc-20',
+                'YOSHI': 'https://amazon.com/s?k=SanDisk+Nintendo+Yoshi+microSD+Switch&tag=sd-cc-20',
+                'ANIMAL_CROSSING': 'https://amazon.com/s?k=SanDisk+Nintendo+Animal+Crossing+Leaf+microSD+Switch&tag=sd-cc-20',
+                'MARIO_MUSHROOM': 'https://amazon.com/s?k=SanDisk+Nintendo+Super+Mario+Mushroom+microSD+Switch&tag=sd-cc-20',
+                'MARIO_STAR': 'https://amazon.com/s?k=SanDisk+Nintendo+Super+Mario+Super+Star+microSD+Switch&tag=sd-cc-20',
+                'FORTNITE_CUDDLE': 'https://amazon.com/s?k=SanDisk+Nintendo+Fortnite+Cuddle+Team+Leader+microSD+Switch&tag=sd-cc-20',
+                'FORTNITE_SKULL': 'https://amazon.com/s?k=SanDisk+Nintendo+Fortnite+Skull+Trooper+microSD+Switch&tag=sd-cc-20'
+            };
+            
+            Object.entries(nintendoAffiliateUrls).forEach(([key, url]) => {
+                nintendoGridTemplate = nintendoGridTemplate.replace(`{{AMAZON_URL_${key}}}`, url);
+            });
+            
+            html = html.replace('{{NINTENDO_BRANDED_CARDS_GRID}}', nintendoGridTemplate);
+        } else {
+            html = html.replace('{{NINTENDO_BRANDED_CARDS_GRID}}', '');
+        }
+    }
+    
     return html;
 }
 
