@@ -801,8 +801,8 @@
         "sd express switch 2"
       ],
       "sdCard": {
-        "type": "microSD, microSDHC, microSDXC, SD Express",
-        "minSpeed": "UHS-I (Backward Compatible) / SD Express (Recommended)",
+        "type": "microSD Express (Required for Games and Saves)",
+        "minSpeed": "SD Express PCIe 3.0 x1",
         "minWriteSpeed": "V30 or higher",
         "recommendedCapacity": [
           "512GB",
@@ -812,13 +812,10 @@
         "maxCapacity": "2TB+ (SDUC)",
         "testedMaxCapacity": "2TB"
       },
-      "whySpecs": "The Nintendo Switch 2 introduces support for <b>SD Express</b> cards, enabling much faster transfer speeds comparable to NVMe SSDs (up to 985 MB/s). While completely backward compatible with standard microSD cards from the original Switch family (limited to UHS-I at ~104MB/s), Switch 2-optimized titles may require SD Express for reduced load times and enhanced asset streaming. For optimal next-generation gaming performance, SD Express V60 or faster cards are recommended.",
+      "whySpecs": "<b>Nintendo Switch 2 REQUIRES microSD Express cards for all gameplay and save data.</b> Standard UHS-I microSD cards are <b>NOT compatible for gaming</b>. While you can physically insert a standard microSD card to view old screenshots and videos, <b>you cannot play any games or save game data</b>. All Nintendo-branded cards (Zelda, Pokémon, Mario, Yoshi, Animal Crossing, Fortnite) are standard UHS-I microSD and will NOT work for Switch 2 games. Only microSD Express cards with V30 or faster speeds are compatible with next-generation titles.",
       "recommendedBrands": [
         {
           "id": "lexar-professional-1000x-microsd"
-        },
-        {
-          "id": "sandisk-nintendo-pokemon-snorlax-microsd"
         },
         {
           "id": "kingston-canvas-react-plus-microsd"
@@ -826,16 +823,16 @@
       ],
       "faq": [
         {
-          "q": "Will my old Switch SD cards work in Switch 2?",
-          "a": "<b>Yes, the Nintendo Switch 2 is backward compatible with all microSD cards from original Switch models</b>. Your existing cards will work perfectly for playing legacy Switch titles. However, they will be limited to UHS-I speeds (~104MB/s) and won't access SD Express performance enhancements."
+          "q": "Can I use my old Switch SD cards in Switch 2?",
+          "a": "<b>No, old microSD cards CANNOT be used for Switch 2 games or save data.</b> While you can physically insert an old UHS-I microSD card to view screenshots and video clips, the console will reject it for all game functionality. You must use a microSD Express card to play any Switch 2 titles or save game progress."
         },
         {
-          "q": "Do Switch 2 games require SD Express?",
-          "a": "<b>Not all games require SD Express, but titles optimized for Switch 2's higher power may significantly benefit from it</b>. Games designed specifically for the new console's enhanced capabilities will have faster load times and smoother asset streaming on SD Express cards."
+          "q": "What if I insert a Nintendo-branded card (Zelda, Pokémon, Mario)?",
+          "a": "<b>The console will allow you to view old screenshots and videos, but you CANNOT play any games or save game data.</b> All official Nintendo-branded microSD cards are standard UHS-I format and completely incompatible with Switch 2 gameplay. You need a microSD Express card to play Switch 2 games."
         },
         {
-          "q": "What about official Nintendo-branded cards?",
-          "a": "<b>The SanDisk Nintendo-branded microSD cards (Zelda, Pokémon, Mario, Fortnite editions) work in Switch 2 but are UHS-I only</b>. They are fully backward compatible with the original Switch 2 legacy title library but won't access the new console's SD Express performance capabilities."
+          "q": "Do all Switch 2 games require microSD Express?",
+          "a": "<b>Yes, ALL Switch 2 games require microSD Express cards</b>. The console will not accept standard microSD cards for any game installation or save data, regardless of the title. This is a hardware requirement, not optional. Your microSD Express card should have V30 speed or faster for optimal performance."
         }
       ],
       "relatedDevices": [

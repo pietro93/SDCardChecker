@@ -434,8 +434,8 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const sdcardsArray = Object.values(sdcardsMap);
     const promotedCardSection = generatePromotedCardSection(device, sdcardsArray, isJapanese, getCardImageFallback);
 
-    // Generate Nintendo Branded Cards Grid (for Switch models and Switch 2)
-    const nintendoDevicesWithGrid = ['nintendo-switch', 'nintendo-switch-oled', 'nintendo-switch-lite', 'nintendo-switch-2'];
+    // Generate Nintendo Branded Cards Grid (for Switch models only, not Switch 2)
+    const nintendoDevicesWithGrid = ['nintendo-switch', 'nintendo-switch-oled', 'nintendo-switch-lite'];
     let nintendoBrandedCardsGrid = '';
     
     if (nintendoDevicesWithGrid.includes(device.id)) {

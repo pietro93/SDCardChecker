@@ -126,23 +126,23 @@
             ],
             "sdCard": {
                 "type": "microSD, microSDHC, microSDXC",
-                "minSpeed": "Class 10 / U1",
+                "minSpeed": "Class 10 / UHS-I (U1)",
                 "minWriteSpeed": "指定なし",
                 "recommendedCapacity": [
-                    "64GB",
                     "128GB",
-                    "256GB"
+                    "256GB",
+                    "512GB"
                 ],
                 "maxCapacity": "2TB (理論値)",
-                "testedMaxCapacity": "1TB"
+                "testedMaxCapacity": "1.5TB"
             },
-            "whySpecs": "Nintendo Switchは、ゲームの読み込みに超高速カードを必要としません。どのmicroSDカードでも動作しますが、V30カードは信頼性が高いです。安価で低速なカードでも動作しますが、ロード時間が若干長くなる可能性があります。注：任天堂は理論上2TBまでサポートしていますが、テスト済みの最大容量は1TBです。",
+            "whySpecs": "標準のNintendo SwitchはUHS-Iインターフェースを採用しており、最大速度は約104MB/sに制限されています。そのため、UHS-IIやSD Expressカードを使用しても、ゲームのロード時間は短縮されません。信頼性の高いV30（ビデオスピードクラス30）カードが、デジタルゲームの保存において最も安定したパフォーマンスを発揮します。",
             "recommendedBrands": [
                 {
-                    "id": "adata-premier-microsd"
+                    "id": "sandisk-extreme-microsd"
                 },
                 {
-                    "id": "transcend-standard-microsd"
+                    "id": "samsung-evo-select-microsd"
                 },
                 {
                     "id": "sandisk-ultra-microsd"
@@ -150,73 +150,75 @@
             ],
             "faq": [
                 {
-                    "q": "スマホのmicroSDカードは使えますか？",
-                    "a": "<b>はい、Nintendo SwitchではどのmicroSDカードでも使用できます。</b> ただし、Switch用にフォーマットするとカード上の既存データはすべて消去されるため、<b>転送前に必ずスマホのデータをバックアップしてください。</b>"
+                    "q": "1TBのカードは使えますか？",
+                    "a": "<b>はい、Nintendo Switchは最大2TBまでのmicroSDXCカードをサポートしています。</b> 現在市販されている1TBや1.5TBのカードも、大容量のゲームライブラリ用として完璧に動作します。"
                 },
                 {
-                    "q": "カードのフォーマットは必要ですか？",
-                    "a": "<b>はい、Nintendo Switchは初回使用時にmicroSDカードを自動的にフォーマットします。</b> <b>この処理により既存のデータはすべて消去されます</b>ので、既存のカードをSwitchに挿入する前にファイルのバックアップを確認してください。"
+                    "q": "UHS-IIカードを購入する価値はありますか？",
+                    "a": "<b>いいえ、UHS-IIカードによる速度の向上はありません。</b> 本体にUHS-II用の接点がないため、カードは自動的に低速なUHS-Iモードで動作します。標準的なUHS-I V30カードで十分です。"
                 },
                 {
-                    "q": "遅いカードを使うとどうなりますか？",
-                    "a": "<b>遅いカードを使用すると、ゲームのロード時間がわずかに長くなる可能性があります。</b> ゲーム自体は正常に動作し、速度の影響は最小限です。<b>速度定格の低いカードを使用しても、データ損失やゲーム破損のリスクはありません。</b>"
+                    "q": "Switch 2用に買ったカードは使えますか？",
+                    "a": "<b>いいえ、Switch 2はmicroSD Express専用であり、従来のmicroSDカードはゲームプレイに使用できません。</b> 旧型Switchとは互換性がありません。"
                 }
             ],
             "relatedDevices": [
                 "nintendo-switch-oled",
                 "nintendo-switch-lite",
-                "steam-deck"
+                "nintendo-switch-2"
             ],
-            "notes": "Switchは最も要求の低いデバイスの一つです。どのmicroSDカードでも動作します。V30は必須ではありませんが、信頼性を提供します。"
+            "notes": "Switchは最も要求の低いデバイスの一つです。V30カードが推奨されます。"
         },
         {
             "id": "nintendo-switch-oled",
-            "name": "Nintendo Switch（有機ELモデル）",
+            "name": "Nintendo Switch 有機ELモデル",
             "category": "携帯ゲーム機",
             "slug": "nintendo-switch-oled",
             "searchTerms": [
-                "ニンテンドースイッチ 有機EL",
-                "スイッチ OLED",
-                "有機EL スイッチ SDカード"
+                "スイッチ 有機EL SDカード",
+                "スイッチ 有機EL ストレージ",
+                "OLED Switch カード"
             ],
             "sdCard": {
                 "type": "microSD, microSDHC, microSDXC",
-                "minSpeed": "Class 10 / U1",
+                "minSpeed": "Class 10 / UHS-I (U1)",
                 "minWriteSpeed": "指定なし",
                 "recommendedCapacity": [
-                    "128GB",
-                    "256GB"
+                    "256GB",
+                    "512GB",
+                    "1TB"
                 ],
                 "maxCapacity": "2TB (理論値)",
-                "testedMaxCapacity": "1TB"
+                "testedMaxCapacity": "1.5TB"
             },
-            "whySpecs": "有機ELモデルのストレージ要件は、従来のSwitchと同じです。要求は高くありませんが、信頼できるブランドの高品質なmicroSDカードを選ぶことで、信頼性と寿命が確保されます。安心のためにV30定格のカードが推奨されます。",
+            "whySpecs": "有機ELモデルは内蔵ストレージが64GBに増量されていますが、多くのゲームをダウンロードするにはmicroSDカードが不可欠です。本体の仕様によりUHS-I（最大約104MB/s）までの対応となるため、SanDiskやSamsungの大容量UHS-I V30カードが最も費用対効果に優れています。",
             "recommendedBrands": [
                 {
-                    "id": "adata-premier-microsd"
+                    "id": "samsung-pro-plus-microsd"
                 },
                 {
-                    "id": "transcend-standard-microsd"
+                    "id": "kingston-canvas-go-plus"
                 },
                 {
-                    "id": "kingston-canvas-go-plus-ultra"
+                    "id": "lexar-play-microsd"
                 }
             ],
             "faq": [
                 {
-                    "q": "従来のSwitchと同じカードを使用できますか？",
-                    "a": "<b>はい、microSDカードは従来のSwitchと有機ELモデル間で完全に互換性があります。</b> 有機EL版は、従来のSwitchと同じストレージアーキテクチャとインターフェース仕様を持っています。"
+                    "q": "有機ELモデル用にUHS-IIカードを買うべきですか？",
+                    "a": "<b>いいえ、UHS-IIカードによる速度の向上はありません。</b> 本体にUHS-II用の接点がないため、カードは自動的に低速なUHS-Iモードで動作します。"
                 },
                 {
-                    "q": "モデル間で速度の違いはありますか？",
-                    "a": "<b>いいえ、有機ELモデルも従来のSwitchと同じmicroSDカードスロットと速度制限を使用しています。</b> 両モデルとも同じカード速度とタイプをサポートしており、ストレージ性能に違いはありません。"
+                    "q": "従来のSwitchと同じカードを使用できますか？",
+                    "a": "<b>はい、microSDカードは従来のSwitchと有機ELモデル間で完全に互換性があります。</b> どちらのモデルでも同じカード速度とタイプをサポートしています。"
                 }
             ],
             "relatedDevices": [
                 "nintendo-switch",
-                "nintendo-switch-lite"
+                "nintendo-switch-lite",
+                "nintendo-switch-2"
             ],
-            "notes": "有機ELモデルは、従来のSwitchと同一のストレージ要件を共有しています。"
+            "notes": "美しい画面で多くのゲームを楽しみたくなるモデルです。512GB以上のカードを強く推奨します。"
         },
         {
             "id": "nintendo-switch-lite",
@@ -224,13 +226,13 @@
             "category": "携帯ゲーム機",
             "slug": "nintendo-switch-lite",
             "searchTerms": [
-                "ニンテンドースイッチライト sdカード",
-                "スイッチライト メモリーカード",
+                "スイッチライト sdカード",
+                "switch lite ストレージ",
                 "スイッチライト 容量"
             ],
             "sdCard": {
                 "type": "microSD, microSDHC, microSDXC",
-                "minSpeed": "Class 10 / U1",
+                "minSpeed": "Class 10 / UHS-I (U1)",
                 "minWriteSpeed": "指定なし",
                 "recommendedCapacity": [
                     "128GB",
@@ -239,26 +241,89 @@
                 "maxCapacity": "2TB (理論値)",
                 "testedMaxCapacity": "1TB"
             },
-            "whySpecs": "Nintendo Switch Liteは、従来のSwitchと同一のストレージ要件を持っています。超高速カードは必須ではありませんが、信頼できるブランドのカードを選ぶことで、すべてのゲームデータの信頼性とカードの寿命が確保されます。",
+            "whySpecs": "Switch Liteは携帯専用モデルですが、ストレージ仕様は他のSwitchファミリーと共通です。UHS-Iインターフェースを通じてmicroSDXCカードをサポートしています。持ち運ぶ機会が多いため、データの破損を防ぐために信頼できるブランドのカードを選ぶことが重要です。",
             "recommendedBrands": [
                 {
                     "id": "sandisk-ultra-microsd"
                 },
                 {
-                    "id": "kingston-canvas-select"
+                    "id": "samsung-evo-select-microsd"
+                },
+                {
+                    "id": "amazon-basics-microsd"
                 }
             ],
             "faq": [
                 {
-                    "q": "Switch LiteのSDカードスロットは他と違いますか？",
-                    "a": "<b>いいえ、SDカードスロットと速度性能は、標準のNintendo Switchや有機ELモデルと完全に同じです。</b> どれか一つのモデルで動作するカードは、他のモデルでも問題なく動作します。"
+                    "q": "Switch LiteのSDスロットは性能が低いですか？",
+                    "a": "<b>いいえ、Switch Liteの読み取り・書き込み性能は、標準モデルや有機ELモデルと全く同じです。</b> すべてのSwitchファミリーは同一のmicroSDハードウェアインターフェースを共有しています。"
+                },
+                {
+                    "q": "他のSwitchモデルのカードが使えますか？",
+                    "a": "<b>はい、完全に互換性があります。</b> どのSwitchモデル用に購入したカードでも、Switch Liteで問題なく動作します。"
                 }
             ],
             "relatedDevices": [
                 "nintendo-switch",
-                "nintendo-switch-oled"
+                "nintendo-switch-oled",
+                "nintendo-switch-2"
             ],
-            "notes": "Switchファミリーの携帯専用モデルです。要件は他のモデルと同じです。"
+            "notes": "厳選したゲームを持ち運ぶユーザーに適しています。128GBから256GBが最も一般的な選択肢です。"
+        },
+        {
+            "id": "nintendo-switch-2",
+            "name": "Nintendo Switch 2（次世代機）",
+            "category": "携帯ゲーム機",
+            "slug": "nintendo-switch-2",
+            "searchTerms": [
+                "スイッチ2 sdカード",
+                "switch 2 ストレージ",
+                "sd express switch 2"
+            ],
+            "sdCard": {
+                "type": "microSD Express 専用（ゲーム/セーブデータ用）",
+                "minSpeed": "microSD Express (PCIe 3.0 x1以上)",
+                "minWriteSpeed": "V30以上を推奨",
+                "recommendedCapacity": [
+                    "512GB",
+                    "1TB",
+                    "2TB"
+                ],
+                "maxCapacity": "2TB+ (SDXC / SDUC)",
+                "testedMaxCapacity": "2TB"
+            },
+            "whySpecs": "<b>Nintendo Switch 2は、すべてのゲームプレイとセーブデータにmicroSD Expressカードを必須とします。</b> 従来のUHS-I microSDカード（ゼルダ、ポケモン、マリオ、ヨッシー、どうぶつの森、フォートナイト版を含む）は、ゲーム機能には完全に非互換です。古いmicroSDカードを挿入することはできますが、スクリーンショットと動画ファイルの表示のみに制限され、<b>ゲームのプレイやセーブデータの保存はできません</b>。すべてのSwitch 2タイトルをプレイするには、V30以上の速度定格を持つmicroSD Expressカードが必須です。",
+            "recommendedBrands": [
+                {
+                    "id": "lexar-professional-1000x-microsd"
+                },
+                {
+                    "id": "kingston-canvas-react-plus-microsd"
+                },
+                {
+                    "id": "sandisk-extreme-pro-microsd-v60"
+                }
+            ],
+            "faq": [
+                {
+                    "q": "旧型SwitchのmicroSDカードをSwitch 2で使えますか？",
+                    "a": "<b>いいえ、絶対に使用できません。</b> 古いUHS-I microSDカードを挿入することはできますが、スクリーンショットと動画の表示のみ可能です。<b>ゲームのプレイやセーブデータの保存は完全にできません。</b> すべてのSwitch 2ゲームにはmicroSD Expressカードが必須です。"
+                },
+                {
+                    "q": "公式ライセンスカード（ゼルダ、ポケモン、マリオ）はSwitch 2で使えますか？",
+                    "a": "<b>スクリーンショットと動画は見られますが、ゲームはプレイできません。</b> すべてのSanDisk公式ライセンスカードはUHS-I microSD規格であり、Switch 2のゲーム機能とは完全に互換性がありません。Switch 2でゲームをプレイするには、V30以上のmicroSD Expressカードが絶対に必要です。"
+                },
+                {
+                    "q": "なぜSwitch 2は新しいカード規格が必要ですか？",
+                    "a": "<b>次世代ゲームの超大容量データに対応するため。</b> Switch 2のタイトルは、高速なロード時間と高品質グラフィックの実現に、従来のmicroSD（最大104MB/s）をはるかに上回る帯域幅を必要とします。microSD Expressは最大900MB/s以上の速度を提供し、この要件を満たします。"
+                }
+            ],
+            "relatedDevices": [
+                "nintendo-switch",
+                "nintendo-switch-oled",
+                "nintendo-switch-lite"
+            ],
+            "notes": "Switch 2はストレージ技術における大きな転換点となります。以前の「ライセンス付き」カードは、この新しいコンソールではゲーム用として機能しません。"
         },
         {
             "id": "nintendo-3ds-xl",
