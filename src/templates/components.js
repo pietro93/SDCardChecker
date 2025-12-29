@@ -52,19 +52,20 @@ return `<!-- Favicon -->
        </div>
 
       <div class="relative group flex items-center">
-      <a href="#" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
+      <a href="/tools/calculators/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
       Calculators
       <i class="fas fa-chevron-down text-xs"></i>
       </a>
-      <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
+      <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block z-50">
       <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-       <a href="/tools/calculators/video-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">Video Storage & Recording Time</a>
-       <a href="/tools/calculators/photo-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Photo Storage & Capacity</a>
-       <a href="/tools/calculators/drone-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Drone Recording Time</a>
-       <a href="/tools/calculators/security-camera-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Security Camera Recording Time</a>
-       <a href="/tools/calculators/dashcam-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Dashcam Storage & Loop Time</a>
-       <a href="/tools/calculators/action-camera-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Action Camera Storage</a>
-       <a href="/tools/calculators/gopro-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">GoPro Recording Time</a>
+       <a href="/tools/calculators/" class="block px-4 py-3 text-blue-600 bg-blue-50 first:rounded-t-lg text-xs font-bold border-b border-blue-200 flex items-center gap-2"><i class="fas fa-calculator"></i> All Calculators</a>
+       <a href="/tools/calculators/video-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🎥 Video Storage Time</a>
+       <a href="/tools/calculators/photo-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">📸 Photo Storage & Capacity</a>
+       <a href="/tools/calculators/drone-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🚁 Drone Recording Time</a>
+       <a href="/tools/calculators/security-camera-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🔒 Security Camera Time</a>
+       <a href="/tools/calculators/dashcam-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🚗 Dashcam Storage</a>
+       <a href="/tools/calculators/action-camera-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🎬 Action Camera Storage</a>
+       <a href="/tools/calculators/gopro-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">📹 GoPro Recording Time</a>
        </div>
        </div>
       </div>
@@ -74,15 +75,15 @@ return `<!-- Favicon -->
        Readers
        <i class="fas fa-chevron-down text-xs"></i>
        </a>
-       <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
+       <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block z-50">
        <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-        <a href="/readers/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">All Readers</a>
-        <a href="/readers/dongle/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Dongles</a>
-        <a href="/readers/mobile-reader/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Mobile Adapters</a>
-        <a href="/readers/professional-hub/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Professional Hubs</a>
-        <a href="/readers/hub/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Multi-Port Hubs</a>
-        <a href="/readers/desktop-dock/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Docks & Stands</a>
-        <a href="/readers/stick/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Compact Readers</a>
+        <a href="/readers/" class="block px-4 py-3 text-blue-600 bg-blue-50 first:rounded-t-lg text-xs font-bold border-b border-blue-200 flex items-center gap-2"><i class="fas fa-layer-group"></i> All Readers</a>
+        <a href="/readers/dongle/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🔌 Dongles</a>
+        <a href="/readers/mobile-reader/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">📱 Mobile Adapters</a>
+        <a href="/readers/professional-hub/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">💼 Professional Hubs</a>
+        <a href="/readers/hub/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🔀 Multi-Port Hubs</a>
+        <a href="/readers/desktop-dock/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🖥️ Docks & Stands</a>
+        <a href="/readers/stick/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">📌 Compact Readers</a>
         </div>
         </div>
        </div>
@@ -92,15 +93,14 @@ return `<!-- Favicon -->
         Guides
         <i class="fas fa-chevron-down text-xs"></i>
         </a>
-        <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
+        <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block z-50">
         <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-         <a href="/guides/sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SD Card Guide</a>
-         <a href="/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Speed Classes</a>
-         <a href="/guides/video-bitrate-comparison/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Video Bitrate Guide</a>
-         <a href="/guides/raw-vs-jpeg/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">RAW vs JPEG</a>
-         <a href="/guides/is-my-sd-card-fake/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Fake SD Card Checker</a>
-         <div class="border-t border-slate-200"></div>
-         <a href="/guides/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Check all Guides</a>
+         <a href="/guides/" class="block px-4 py-3 text-blue-600 bg-blue-50 first:rounded-t-lg text-xs font-bold border-b border-blue-200 flex items-center gap-2"><i class="fas fa-book"></i> All Guides</a>
+         <a href="/guides/sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">📚 SD Card Guide</a>
+         <a href="/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">⚡ Speed Classes</a>
+         <a href="/guides/video-bitrate-comparison/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🎬 Video Bitrate</a>
+         <a href="/guides/raw-vs-jpeg/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">📷 RAW vs JPEG</a>
+         <a href="/guides/is-my-sd-card-fake/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">🔍 Fake SD Checker</a>
          </div>
          </div>
         </div>
@@ -151,63 +151,63 @@ return `<!-- Favicon -->
       <a href="/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Home</a>
       
       <!-- Devices Section -->
+      <a href="/categories/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium mb-3">📂 Browse All Categories</a>
       <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="devices">
         <span>Devices</span>
         <i class="fas fa-chevron-right transition-transform duration-300"></i>
       </button>
       <div class="mobile-section hidden pl-4 space-y-1" data-content="devices">
-        <a href="/categories/action-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Action Cameras</a>
-        <a href="/categories/cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Cameras</a>
-        <a href="/categories/computing-and-tablets/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Computing & Tablets</a>
-        <a href="/categories/drones/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Drones</a>
-        <a href="/categories/gaming-handhelds/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Gaming Handhelds</a>
-        <a href="/categories/dash-cams/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Dash Cams</a>
-        <a href="/categories/security-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Security Cameras</a>
+        <a href="/categories/cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">📷 Cameras</a>
+        <a href="/categories/action-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">🎬 Action Cameras</a>
+        <a href="/categories/drones/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">🚁 Drones</a>
+        <a href="/categories/gaming-handhelds/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">🎮 Gaming Handhelds</a>
+        <a href="/categories/dash-cams/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">🚗 Dash Cams</a>
+        <a href="/categories/computing-and-tablets/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">💻 Computing & Tablets</a>
       </div>
       
       <!-- Calculators Section -->
+      <a href="/tools/calculators/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium mb-3">🧮 Browse All Calculators</a>
       <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="calculators">
         <span>Calculators</span>
         <i class="fas fa-chevron-right transition-transform duration-300"></i>
       </button>
       <div class="mobile-section hidden pl-4 space-y-1" data-content="calculators">
-        <a href="/tools/calculators/video-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Video Storage & Recording Time</a>
-        <a href="/tools/calculators/photo-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Photo Storage & Capacity</a>
-        <a href="/tools/calculators/drone-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Drone Recording Time</a>
-        <a href="/tools/calculators/security-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Security Camera Recording Time</a>
-        <a href="/tools/calculators/dashcam-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Dashcam Storage & Loop Time</a>
-        <a href="/tools/calculators/action-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Action Camera Storage</a>
-        <a href="/tools/calculators/gopro-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">GoPro Recording Time</a>
+        <a href="/tools/calculators/video-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">🎥 Video Storage Time</a>
+        <a href="/tools/calculators/photo-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">📸 Photo Storage</a>
+        <a href="/tools/calculators/drone-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">🚁 Drone Recording</a>
+        <a href="/tools/calculators/security-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">🔒 Security Camera</a>
+        <a href="/tools/calculators/dashcam-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">🚗 Dashcam Storage</a>
+        <a href="/tools/calculators/action-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">🎬 Action Camera</a>
+        <a href="/tools/calculators/gopro-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">📹 GoPro Recording</a>
       </div>
       
       <!-- Readers Section -->
+      <a href="/readers/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium mb-3">📂 Browse All Readers</a>
       <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="readers">
         <span>Readers</span>
         <i class="fas fa-chevron-right transition-transform duration-300"></i>
       </button>
       <div class="mobile-section hidden pl-4 space-y-1" data-content="readers">
-        <a href="/readers/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">All Readers</a>
-        <a href="/readers/dongle/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Dongles</a>
-        <a href="/readers/mobile-reader/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Mobile Adapters</a>
-        <a href="/readers/professional-hub/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Professional Hubs</a>
-        <a href="/readers/hub/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Multi-Port Hubs</a>
-        <a href="/readers/desktop-dock/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Docks & Stands</a>
-        <a href="/readers/stick/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Compact Readers</a>
+        <a href="/readers/dongle/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">🔌 Dongles</a>
+        <a href="/readers/mobile-reader/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">📱 Mobile Adapters</a>
+        <a href="/readers/professional-hub/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">💼 Professional Hubs</a>
+        <a href="/readers/hub/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">🔀 Multi-Port Hubs</a>
+        <a href="/readers/desktop-dock/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">🖥️ Docks & Stands</a>
+        <a href="/readers/stick/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">📌 Compact Readers</a>
       </div>
       
       <!-- Resources Section -->
+      <a href="/guides/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium mb-3">📚 Browse All Guides</a>
       <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="resources">
-        <span>Resources</span>
+        <span>Guides</span>
         <i class="fas fa-chevron-right transition-transform duration-300"></i>
       </button>
       <div class="mobile-section hidden pl-4 space-y-1" data-content="resources">
-        <a href="/guides/sd-card-guide/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">SD Card Guide</a>
-        <a href="/guides/sd-card-speed-classes/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Speed Classes</a>
-        <a href="/guides/video-bitrate-comparison/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Video Bitrate Guide</a>
-        <a href="/guides/raw-vs-jpeg/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">RAW vs JPEG</a>
-        <a href="/guides/is-my-sd-card-fake/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Fake SD Card Checker</a>
-        <div class="border-t border-slate-200 my-1"></div>
-        <a href="/guides/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Check all Guides</a>
+        <a href="/guides/sd-card-guide/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">📚 SD Card Guide</a>
+        <a href="/guides/sd-card-speed-classes/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">⚡ Speed Classes</a>
+        <a href="/guides/video-bitrate-comparison/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">🎬 Video Bitrate</a>
+        <a href="/guides/raw-vs-jpeg/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">📷 RAW vs JPEG</a>
+        <a href="/guides/is-my-sd-card-fake/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">🔍 Fake SD Checker</a>
       </div>
       
       <!-- Direct Links -->
