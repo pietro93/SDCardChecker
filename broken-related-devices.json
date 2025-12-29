@@ -1,0 +1,302 @@
+{
+  "summary": {
+    "totalBroken": 33,
+    "affectedDevices": 27
+  },
+  "byDevice": [
+    {
+      "deviceId": "canon-eos-r5",
+      "deviceName": "Canon EOS R5",
+      "brokenReferences": [
+        {
+          "referenceId": "canon-eos-r3",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "samsung-galaxy-s23",
+      "deviceName": "Samsung Galaxy S23",
+      "brokenReferences": [
+        {
+          "referenceId": "samsung-galaxy-s24",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "fujifilm-x-s20",
+      "deviceName": "Fujifilm X-S20",
+      "brokenReferences": [
+        {
+          "referenceId": "fujifilm-x-t5",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "gopro-hero-11-black",
+      "deviceName": "GoPro Hero 11 Black",
+      "brokenReferences": [
+        {
+          "referenceId": "dji-pocket-3",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "eufy-solocam-s340",
+      "deviceName": "Eufy Security SoloCam S340",
+      "brokenReferences": [
+        {
+          "referenceId": "wyze-cam-v3",
+          "existsInEnglishDataset": true
+        },
+        {
+          "referenceId": "viofo-a229-duo",
+          "existsInEnglishDataset": true
+        },
+        {
+          "referenceId": "nextbase-622gw",
+          "existsInEnglishDataset": true
+        }
+      ]
+    },
+    {
+      "deviceId": "canon-eos-r50",
+      "deviceName": "Canon EOS R50",
+      "brokenReferences": [
+        {
+          "referenceId": "fujifilm-xs20",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "canon-eos-r10",
+      "deviceName": "Canon EOS R10",
+      "brokenReferences": [
+        {
+          "referenceId": "fujifilm-xs20",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "canon-g7x-mark-iii",
+      "deviceName": "Canon PowerShot G7 X Mark III",
+      "brokenReferences": [
+        {
+          "referenceId": "sony-zv1",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "canon-g7x-mark-ii",
+      "deviceName": "Canon PowerShot G7 X Mark II",
+      "brokenReferences": [
+        {
+          "referenceId": "sony-rx100-series",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "fujifilm-xt5",
+      "deviceName": "Fujifilm X-T5",
+      "brokenReferences": [
+        {
+          "referenceId": "fujifilm-xt4",
+          "existsInEnglishDataset": false
+        },
+        {
+          "referenceId": "fujifilm-xh2s",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "fujifilm-xt30-ii",
+      "deviceName": "Fujifilm X-T30 II",
+      "brokenReferences": [
+        {
+          "referenceId": "fujifilm-xs20",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "sony-fx3",
+      "deviceName": "Sony FX3",
+      "brokenReferences": [
+        {
+          "referenceId": "sony-a7s-iii",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "fujifilm-xt3",
+      "deviceName": "Fujifilm X-T3",
+      "brokenReferences": [
+        {
+          "referenceId": "fujifilm-xt4",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "panasonic-lumix-s9",
+      "deviceName": "Panasonic Lumix S9",
+      "brokenReferences": [
+        {
+          "referenceId": "sony-a7c-ii",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "nikon-d7500",
+      "deviceName": "Nikon D7500",
+      "brokenReferences": [
+        {
+          "referenceId": "canon-eos-90d",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "nikon-z50-ii",
+      "deviceName": "Nikon Z50 II",
+      "brokenReferences": [
+        {
+          "referenceId": "nikon-z50",
+          "existsInEnglishDataset": false
+        },
+        {
+          "referenceId": "nikon-zfc",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "nikon-d850",
+      "deviceName": "Nikon D850",
+      "brokenReferences": [
+        {
+          "referenceId": "nikon-d780",
+          "existsInEnglishDataset": false
+        },
+        {
+          "referenceId": "canon-eos-5d-mark-iv",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "nikon-d750",
+      "deviceName": "Nikon D750",
+      "brokenReferences": [
+        {
+          "referenceId": "canon-eos-6d-mark-ii",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "raspberry-pi-zero-2-w",
+      "deviceName": "Raspberry Pi Zero 2 W",
+      "brokenReferences": [
+        {
+          "referenceId": "raspberry-pi-pico",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "reolink-e1-pro",
+      "deviceName": "Reolink E1 Pro",
+      "brokenReferences": [
+        {
+          "referenceId": "wyze-cam-v3",
+          "existsInEnglishDataset": true
+        },
+        {
+          "referenceId": "garmin-66s-dash-cam",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "autel-evo-lite-plus",
+      "deviceName": "Autel EVO Lite+",
+      "brokenReferences": [
+        {
+          "referenceId": "dji-air-2s",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "skydio-x10",
+      "deviceName": "Skydio X10",
+      "brokenReferences": [
+        {
+          "referenceId": "dji-mavic-3-enterprise",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "iphone-13",
+      "deviceName": "iPhone 13",
+      "brokenReferences": [
+        {
+          "referenceId": "iphone-12",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "comtec-zdr035",
+      "deviceName": "Comtec ZDR035 (コムテック)",
+      "brokenReferences": [
+        {
+          "referenceId": "comtec-zdr016",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "comtec-zdr037",
+      "deviceName": "Comtec ZDR037 (コムテック 360度+リア)",
+      "brokenReferences": [
+        {
+          "referenceId": "comtec-zdr016",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "cellstar-cs-91fh",
+      "deviceName": "Cellstar CS-91FH (セルスター)",
+      "brokenReferences": [
+        {
+          "referenceId": "comtec-zdr016",
+          "existsInEnglishDataset": false
+        }
+      ]
+    },
+    {
+      "deviceId": "vantrue-n4",
+      "deviceName": "Vantrue N4 (3カメラ 4K録画)",
+      "brokenReferences": [
+        {
+          "referenceId": "viofo-a139",
+          "existsInEnglishDataset": false
+        }
+      ]
+    }
+  ]
+}

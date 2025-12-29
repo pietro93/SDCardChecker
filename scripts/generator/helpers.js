@@ -618,7 +618,7 @@ function generateFAQHTML(faqItems) {
 /**
  * Generate related devices section
  */
-function generateRelatedDevices(device, allDevices) {
+function generateRelatedDevices(device, allDevices, isJapanese = false) {
   if (!device.relatedDevices || device.relatedDevices.length === 0) {
     return "";
   }
@@ -631,6 +631,9 @@ function generateRelatedDevices(device, allDevices) {
     return "";
   }
 
+  // Determine the URL prefix based on language
+  const urlPrefix = isJapanese ? "/ja" : "";
+
   const cards = relatedDevices
   .map(
   (d) => {
@@ -638,18 +641,18 @@ function generateRelatedDevices(device, allDevices) {
         return `
   <div class="device-card" style="background-image: url('${imgUrl}'); background-size: cover; background-position: center; position: relative; background-color: #f3f4f6;" role="article" aria-label="SD card recommendation for ${d.name}" onmouseover="this.querySelector('.device-card-overlay').style.opacity='0.95'" onmouseout="this.querySelector('.device-card-overlay').style.opacity='0.85'">
   <div class="device-card-overlay" style="position: absolute; inset: 0; background: rgba(240, 240, 240, 0.85); transition: opacity 0.3s ease;"></div>
-  <a href="/devices/${d.slug}/" style="position: relative; z-index: 1; text-decoration: none; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; width: 100%; height: 100%;">
+  <a href="${urlPrefix}/devices/${d.slug}/" style="position: relative; z-index: 1; text-decoration: none; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; width: 100%; height: 100%;">
   <div class="device-card-text" style="font-weight: bold; font-size: 16px; color: #2563eb; opacity: 1; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);">Best SD Cards For ${d.name}</div>
   </a>
   </div>
   `;
        }
      )
-     .join("");
+      .join("");
 
   return `
     <section class="card">
-      <h2>Related</h2>
+      <h2>${isJapanese ? '関連機器' : 'Related'}</h2>
       <div class="related-devices">
         <div class="devices-grid">
           ${cards}

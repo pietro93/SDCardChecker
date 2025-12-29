@@ -424,7 +424,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const faqsWithFirstQuestion = [firstFAQ, ...finalFAQs];
     const faqHTML = generateFAQHTML(faqsWithFirstQuestion);
 
-    const relatedDevicesSection = generateRelatedDevices(device, allDevices);
+    const relatedDevicesSection = generateRelatedDevices(device, allDevices, isJapanese);
     const faqSchema = generateFAQSchema(faqsWithFirstQuestion);
     const productSchema = generateProductSchema(device.recommendedBrands, sdcardsMap);
     // Skip Amazon badges for Japanese pages (awaiting API access)
