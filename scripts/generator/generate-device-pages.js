@@ -461,7 +461,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         
         nintendoBrandedCardsGrid = nintendoGridTemplate;
         Object.entries(nintendoAffiliateUrls).forEach(([key, url]) => {
-            nintendoBrandedCardsGrid = nintendoBrandedCardsGrid.replace(`{{AMAZON_URL_${key}}}`, url);
+            nintendoBrandedCardsGrid = nintendoBrandedCardsGrid.replaceAll(`{{AMAZON_URL_${key}}}`, url);
         });
     }
 
