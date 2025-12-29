@@ -267,7 +267,13 @@ function getDeviceImageFallback(device) {
   if (name.includes("fujifilm")) return "/img/devices/cameras/fujifilm-placeholder.webp";
   if (name.includes("leica")) return "/img/devices/cameras/leica-q3.webp";
   if (name.includes("panasonic") || name.includes("lumix")) return "/img/devices/cameras/lumix-placeholder.webp";
-  if (name.includes("dash cam") || name.includes("dash-cam")) return "/img/devices/action-cameras/dash-cam-placeholder.webp";
+  if (name.includes("dash cam") || name.includes("dash-cam")) return "/img/devices/dashcams/dash-cam-placeholder.webp";
+  if (name.includes("viofo")) return "/img/devices/dashcams/viofo-a229-plus-duo.webp";
+  if (name.includes("blackvue")) return "/img/devices/dashcams/blackvue-dr900x-2ch.webp";
+  if (name.includes("yupiteru")) return "/img/devices/dashcams/yupiteru-wdt-510c.webp";
+  if (name.includes("comtec")) return "/img/devices/dashcams/comtec-zdr-035.webp";
+  if (name.includes("kenwood")) return "/img/devices/dashcams/kenwood-drv-mr760.webp";
+  if (name.includes("cellstar")) return "/img/devices/dashcams/cellstar-cs-91fh.webp";
   if (name.includes("reolink")) return "/img/devices/security-cameras/reolink-e1-pro.webp";
 
   // Category-based placeholders
