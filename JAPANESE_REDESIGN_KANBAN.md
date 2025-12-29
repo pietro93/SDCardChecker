@@ -84,7 +84,7 @@
 - [ ] Verify generated HTML includes all new components
 
 #### Content Updates
-- [ ] Revise every page with reference to @japanese_localization_guide for copy review
+- [ ] Revise datasets, FAQs with reference to @japanese_localization_guide for copy review
 - [ ] Update answer box copy - Add "メーカー仕様準拠" language where appropriate
 - [ ] Update specs explanations - Cite official manufacturer specs where appropriate and available
 - [ ] Update FAQ - Address compatibility concerns (V20 vs V30, etc.)
