@@ -131,7 +131,7 @@
         "maxCapacity": "2TB (theoretical)",
         "testedMaxCapacity": "1TB"
       },
-      "whySpecs": "The original Nintendo Switch uses the UHS-I interface with a maximum theoretical speed of 104MB/s. While the console is not demanding for game loading, reputable V30 cards provide the best reliability for large digital libraries. The Switch does not benefit from expensive UHS-II or SD Express cards, as it lacks the hardware interface to support them. Any UHS-I microSD card will work, but V30 rating ensures consistent performance across all games.",
+      "whySpecs": "The original Nintendo Switch is limited to the UHS-I interface with a maximum speed of 104MB/s. <b>UHS-II and SD Express cards are NOT compatible and provide no benefit</b>. The console uses standard microSD cards only. V30 rated cards from trusted brands provide the best reliability for downloading large digital libraries. All Nintendo-branded SanDisk microSD cards (Zelda, Pokémon, Mario, etc.) are standard UHS-I format and work perfectly on the original Switch.",
       "recommendedBrands": [
         {
           "id": "samsung-evo-select-microsd"
@@ -160,9 +160,9 @@
       "relatedDevices": [
         "nintendo-switch-oled",
         "nintendo-switch-lite",
-        "steam-deck"
+        "nintendo-switch-2"
       ],
-      "notes": "Limited to UHS-I speeds (~104MB/s maximum). Any microSD card works, but V30 V30 recommended for reliability. The Switch is compatible with all officially licensed Nintendo-branded SanDisk cards."
+      "notes": "Limited to UHS-I speeds (~104MB/s maximum). V30 is recommended for reliability. Compatible with all officially licensed Nintendo-branded SanDisk microSD cards (Zelda, Pokémon, Mario, Yoshi, Animal Crossing, Fortnite)."
     },
     {
       "id": "nintendo-switch-oled",
@@ -187,7 +187,7 @@
         "maxCapacity": "2TB (theoretical)",
         "testedMaxCapacity": "1TB"
       },
-      "whySpecs": "The Switch OLED model features 64GB of internal storage, making it ideal for users downloading large digital game libraries. Like all Switch models, it uses the UHS-I interface with a maximum speed of 104MB/s. High-speed UHS-II cards provide no benefit since the OLED model cannot access those speeds. V30 rated microSD cards from reputable brands are recommended for consistent performance and reliability with your entire game collection.",
+      "whySpecs": "The Switch OLED model features 64GB of internal storage, making it ideal for users downloading large digital game libraries. <b>Like all original Switch models, the OLED is limited to UHS-I speeds (~104MB/s)</b>. UHS-II and SD Express cards are NOT compatible. V30 rated microSD cards from reputable brands are recommended for consistent performance. All officially licensed Nintendo-branded SanDisk cards (Zelda, Pokémon, Mario, etc.) work perfectly on the OLED model.",
        "recommendedBrands": [
          {
            "id": "kingston-canvas-go-plus"
@@ -215,9 +215,10 @@
       ],
       "relatedDevices": [
         "nintendo-switch",
-        "nintendo-switch-lite"
+        "nintendo-switch-lite",
+        "nintendo-switch-2"
       ],
-      "notes": "OLED users typically purchase larger cards due to increased digital game library usage. UHS-I only, despite higher internal storage."
+      "notes": "OLED users typically purchase larger cards due to increased digital game library usage. UHS-I only (~104MB/s), despite higher internal storage."
     },
     {
       "id": "dji-mini-4-pro",
@@ -761,7 +762,7 @@
         "maxCapacity": "2TB (theoretical)",
         "testedMaxCapacity": "1TB"
       },
-      "whySpecs": "The Switch Lite is Nintendo's portable-only console with identical storage capabilities to the standard Switch and OLED models. It uses the UHS-I interface with a maximum speed of 104MB/s. Since the Lite is often used for travel and portable gaming, a reliable brand-name card is essential to prevent data corruption during transit. Reputable V30 cards are recommended for consistent performance.",
+      "whySpecs": "The Switch Lite is Nintendo's portable-only console with identical storage capabilities to the standard Switch and OLED models. <b>It is limited to UHS-I speeds (~104MB/s)</b>. UHS-II and SD Express cards are NOT compatible. Since the Lite is often used for travel and portable gaming, a reliable brand-name V30 card is essential to prevent data corruption during transit. All officially licensed Nintendo-branded SanDisk cards (Zelda, Pokémon, Mario, etc.) work perfectly on the Switch Lite.",
       "recommendedBrands": [
         {
           "id": "samsung-evo-select-microsd"
@@ -785,9 +786,10 @@
       ],
       "relatedDevices": [
         "nintendo-switch",
-        "nintendo-switch-oled"
+        "nintendo-switch-oled",
+        "nintendo-switch-2"
       ],
-      "notes": "Identical storage architecture to other Switch models. UHS-I only. 128GB-256GB is the sweet spot for Lite's typical usage pattern."
+      "notes": "Identical storage architecture to other Switch models. UHS-I only (~104MB/s). 128GB-256GB is the sweet spot for Lite's typical usage pattern."
     },
     {
       "id": "nintendo-switch-2",
