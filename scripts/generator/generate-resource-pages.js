@@ -54,6 +54,10 @@ function generateResourcePage(templatePath, distPath, fileName, amazonProductTyp
 function replaceAmazonProductPlaceholders(html, productType) {
     // Map of placeholder patterns to product types and configurations
     const placeholders = {
+        // Main SD Card Guide
+        '{{AMAZON_FEATURED_SD_GUIDE}}': () => 
+            generateAmazonBadgeSectionByType('featured-general', 3, 'Recommended SD Cards'),
+        
         // Speed Classes guide
         '{{AMAZON_FEATURED_SPEED_CLASSES}}': () => 
             generateAmazonBadgeSectionByType('guide-speed-classes', 3, 'Featured Products'),
@@ -73,6 +77,10 @@ function replaceAmazonProductPlaceholders(html, productType) {
         // Video Bitrate guide
         '{{AMAZON_FEATURED_VIDEO}}': () => 
             generateAmazonBadgeSectionByType('guide-video-bitrate', 3, 'High-Speed Cards for 4K/8K Video'),
+        
+        // Nintendo Switch guide
+        '{{AMAZON_FEATURED_NINTENDO_SWITCH}}': () => 
+            generateAmazonBadgeSectionByType('featured-general', 3, 'Best microSD Cards for Nintendo Switch'),
         
         // Readers: Photographers guide
         '{{AMAZON_FEATURED_READERS_PHOTOGRAPHERS}}': () => 
