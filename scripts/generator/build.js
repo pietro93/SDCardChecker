@@ -45,8 +45,12 @@ async function build() {
     await copyAssets();
     console.log();
 
-    // 3. Generate Device Pages
+    // 3. Generate Device Pages (English)
     await generateDevicePages(allDevices, distPath);
+    console.log();
+
+    // 3.5. Generate Device Pages (Japanese)
+    await generateDevicePages(allDevices, distPath, true);
     console.log();
 
     // 4. Generate Category Pages

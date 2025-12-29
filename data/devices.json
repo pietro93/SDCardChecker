@@ -134,13 +134,13 @@
       "whySpecs": "The original Nintendo Switch uses the UHS-I interface with a maximum theoretical speed of 104MB/s. While the console is not demanding for game loading, reputable V30 cards provide the best reliability for large digital libraries. The Switch does not benefit from expensive UHS-II or SD Express cards, as it lacks the hardware interface to support them. Any UHS-I microSD card will work, but V30 rating ensures consistent performance across all games.",
       "recommendedBrands": [
         {
-          "id": "sandisk-nintendo-mario-star-microsd"
-        },
-        {
           "id": "samsung-evo-select-microsd"
         },
         {
           "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
         }
       ],
       "faq": [
@@ -188,17 +188,17 @@
         "testedMaxCapacity": "1TB"
       },
       "whySpecs": "The Switch OLED model features 64GB of internal storage, making it ideal for users downloading large digital game libraries. Like all Switch models, it uses the UHS-I interface with a maximum speed of 104MB/s. High-speed UHS-II cards provide no benefit since the OLED model cannot access those speeds. V30 rated microSD cards from reputable brands are recommended for consistent performance and reliability with your entire game collection.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-nintendo-pokemon-snorlax-microsd"
-        },
-        {
-          "id": "kingston-canvas-go-plus"
-        },
-        {
-          "id": "sandisk-nintendo-zelda-microsd"
-        }
-      ],
+       "recommendedBrands": [
+         {
+           "id": "kingston-canvas-go-plus"
+         },
+         {
+           "id": "samsung-evo-select-microsd"
+         },
+         {
+           "id": "sandisk-extreme-microsd"
+         }
+       ],
       "faq": [
         {
           "q": "Should I buy UHS-II cards for the OLED?",
@@ -764,10 +764,10 @@
       "whySpecs": "The Switch Lite is Nintendo's portable-only console with identical storage capabilities to the standard Switch and OLED models. It uses the UHS-I interface with a maximum speed of 104MB/s. Since the Lite is often used for travel and portable gaming, a reliable brand-name card is essential to prevent data corruption during transit. Reputable V30 cards are recommended for consistent performance.",
       "recommendedBrands": [
         {
-          "id": "sandisk-nintendo-mario-mushroom-microsd"
+          "id": "samsung-evo-select-microsd"
         },
         {
-          "id": "sandisk-nintendo-fortnite-cuddle-microsd"
+          "id": "sandisk-extreme-microsd"
         },
         {
           "id": "lexar-play-microsd"
