@@ -3002,6 +3002,10 @@ video {
     width: 25%;
   }
 
+  .md\:w-64 {
+    width: 16rem;
+  }
+
   .md\:min-w-\[315px\] {
     min-width: 315px;
   }
