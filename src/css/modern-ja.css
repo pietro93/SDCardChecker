@@ -1,0 +1,499 @@
+/* ============================================================
+   SD CARD CHECKER - JAPANESE LOCALIZATION OVERRIDES (modern-ja.css)
+   ============================================================ */
+
+/* 1. TYPOGRAPHY FOUNDATION
+   ------------------------------------------------------------ */
+html[lang="ja"] {
+  /* Prevent mid-word breaks while allowing wrapping for long Katakana strings */
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html[lang="ja"] {
+  /* Prevent orphaned punctuation on new line */
+  text-align: justify;
+  word-spacing: 0.1em;
+}
+
+html[lang="ja"] body {
+  /* Japanese Optimized Font Stack */
+  font-family: "Helvetica Neue", Arial, 
+               "Hiragino Kaku Gothic ProN", 
+               "Hiragino Sans", 
+               Meiryo, 
+               "MS PGothic",
+               sans-serif;
+  
+  /* Increased line-height for Kanji density (Standard 1.6 -> JP 1.8) */
+  line-height: 1.8;
+  
+  /* Darkened text color for better contrast with complex characters (#555 -> #444) */
+  color: #444444;
+}
+
+/* 2. HEADINGS & EMPHASIS
+   ------------------------------------------------------------ */
+html[lang="ja"] h1,
+html[lang="ja"] h2,
+html[lang="ja"] h3,
+html[lang="ja"] h4,
+html[lang="ja"] h5,
+html[lang="ja"] h6 {
+  /* Tighter than body but looser than English (1.3 -> 1.5) */
+  line-height: 1.5;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+html[lang="ja"] p {
+  color: #444444;
+  line-height: 1.8;
+}
+
+html[lang="ja"] li {
+  color: #444444;
+  line-height: 1.8;
+}
+
+/* 3. CRITICAL: The "No Italics" Rule for Japanese
+   ------------------------------------------------------------ */
+html[lang="ja"] em,
+html[lang="ja"] i,
+html[lang="ja"] cite,
+html[lang="ja"] address,
+html[lang="ja"] var {
+  font-style: normal !important;
+  font-weight: 700;
+  color: #0066cc; /* Use brand blue for emphasis instead of slant */
+}
+
+/* Marker-style Highlight for Japanese Emphasis */
+html[lang="ja"] .emphasis-marker {
+  background: linear-gradient(transparent 60%, rgba(255, 153, 0, 0.2) 0%);
+  padding: 0 2px;
+  font-weight: 700;
+}
+
+/* 4. FAQ SPECIFIC - Japanese Punctuation Support
+   ------------------------------------------------------------ */
+html[lang="ja"] .faq-question {
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+html[lang="ja"] .faq-answer {
+  line-height: 1.9;
+  font-size: 0.95rem;
+}
+
+/* 5. JAPANESE TRUST COMPONENTS (NEW)
+   ============================================================ */
+
+/* Operation Confirmed Badge (動作確認済み) - Main Component */
+.trust-badge-ja {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0066cc;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  gap: 6px;
+}
+
+.trust-badge-ja::before {
+  content: "✓";
+  font-size: 0.95rem;
+  font-weight: 900;
+}
+
+/* Subtext for badge (e.g., "メーカー仕様準拠") */
+.trust-subtext {
+  font-size: 0.7rem;
+  color: #666666;
+  margin-left: 4px;
+  font-weight: 400;
+  display: inline;
+}
+
+/* Badge positioned on device cards */
+.device-card-trust-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 10;
+}
+
+/* 6. PR DISCLOSURE - Legal Requirement for Stealth Marketing Law (広告)
+   ============================================================ */
+.pr-disclosure-ja {
+  background: #fff5e6;
+  border-left: 4px solid #ff9900;
+  padding: 12px 16px;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.pr-disclosure-ja p {
+  margin-bottom: 0.5rem;
+  color: #333333;
+}
+
+.pr-disclosure-ja p:last-child {
+  margin-bottom: 0;
+}
+
+.pr-disclosure-ja small {
+  color: #666666;
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* PR Label Badge (広告 label) */
+.pr-label-badge {
+  display: inline-block;
+  background: #ff9900;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 0.65rem;
+  margin-right: 8px;
+  vertical-align: text-top;
+  text-transform: uppercase;
+}
+
+/* Info Icon variant */
+.pr-disclosure-ja .pr-icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+/* 7. JAPANESE "TACTILE" BUTTONS - More Clickable Feel
+   ============================================================ */
+html[lang="ja"] .btn-primary,
+html[lang="ja"] .btn-amazon {
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease;
+  transform: translateY(0);
+  position: relative;
+  top: 0;
+}
+
+html[lang="ja"] .btn-primary:active,
+html[lang="ja"] .btn-amazon:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+html[lang="ja"] .btn-primary:hover {
+  background: linear-gradient(to bottom, #0066cc, #0052a3);
+  box-shadow: 0 4px 0 rgba(0, 102, 204, 0.3);
+}
+
+html[lang="ja"] .btn-amazon {
+  background: linear-gradient(to bottom, #ff9900, #ff8800);
+  box-shadow: 0 3px 0 rgba(196, 118, 0, 0.4);
+}
+
+html[lang="ja"] .btn-amazon:hover {
+  background: linear-gradient(to bottom, #ffaa1a, #ff9900);
+  box-shadow: 0 4px 0 rgba(196, 118, 0, 0.4);
+}
+
+html[lang="ja"] .btn-amazon:active {
+  box-shadow: 0 1px 0 rgba(196, 118, 0, 0.4);
+}
+
+/* 8. ANSWER BOX ENHANCEMENTS (JP) - Recommended Card
+   ============================================================ */
+.answer-box-ja {
+  background: #e6f2ff;
+  border: 1px solid #b3d7ff;
+  border-left: 6px solid #0066cc;
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+/* Decorative "推奨" (Recommended) watermark background */
+.answer-box-ja::after {
+  content: "推奨";
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgba(0, 102, 204, 0.04);
+  transform: rotate(15deg);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.answer-box-ja > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* 9. SPECS GRID - Half-width Numerals Support
+   ============================================================ */
+html[lang="ja"] .spec-item {
+  padding: 1.25rem;
+  background: #f8f8f8;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+}
+
+html[lang="ja"] .spec-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #999999;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+html[lang="ja"] .spec-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  font-family: "Helvetica Neue", Arial, sans-serif; /* Keep numerals in Latin font */
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+/* Optional: Subtext explanation under spec value */
+html[lang="ja"] .spec-subtext {
+  font-size: 0.8rem;
+  color: #666666;
+  margin-top: 0.4rem;
+  font-weight: 400;
+}
+
+/* 10. BRANDS TABLE - Japanese Enhanced
+   ============================================================ */
+html[lang="ja"] .brands-table th {
+  background: #2d3748; /* Slightly softer than pure black for dense text */
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+html[lang="ja"] .brands-table td {
+  padding: 1rem;
+  color: #444444;
+  line-height: 1.6;
+}
+
+/* Confirmed Badge Column */
+.confirmed-badge {
+  display: inline-block;
+  color: #22c55e;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.confirmed-badge::before {
+  content: "✓ ";
+}
+
+/* 11. SEARCH UI - Katakana Support
+   ============================================================ */
+html[lang="ja"] .search-input,
+html[lang="ja"] #deviceInput {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+html[lang="ja"] .search-input::placeholder,
+html[lang="ja"] #deviceInput::placeholder {
+  color: #999999;
+  font-size: 0.95rem;
+}
+
+html[lang="ja"] .search-item-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+html[lang="ja"] .search-item-category {
+  font-size: 0.8rem;
+  color: #999999;
+  margin-top: 0.2rem;
+}
+
+/* 12. BREADCRUMBS - Japanese Formatting
+   ============================================================ */
+html[lang="ja"] .breadcrumb {
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+
+/* 13. DEVICE CARDS - Japanese Density
+   ============================================================ */
+html[lang="ja"] .device-card {
+  position: relative;
+}
+
+html[lang="ja"] .device-card-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  padding: 1rem;
+}
+
+html[lang="ja"] .device-card-info {
+  font-size: 0.8rem;
+  color: #999999;
+  line-height: 1.5;
+}
+
+/* Spec Summary on Card */
+.device-card-spec-summary {
+  font-size: 0.8rem;
+  color: #0066cc;
+  font-weight: 600;
+  padding: 0 1rem 0.5rem 1rem;
+  text-align: center;
+}
+
+/* 14. MOBILE OPTIMIZATIONS (JP)
+   ============================================================ */
+@media (max-width: 480px) {
+  html[lang="ja"] body {
+    line-height: 1.7; /* Slightly tighter on mobile to reduce scrolling */
+    font-size: 0.95rem;
+  }
+  
+  html[lang="ja"] h1 {
+    font-size: 1.5rem; /* Kanji h1s can be smaller than Latin and still look large */
+  }
+
+  html[lang="ja"] h2 {
+    font-size: 1.25rem;
+  }
+
+  html[lang="ja"] h3 {
+    font-size: 1.1rem;
+  }
+
+  html[lang="ja"] .spec-item {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+  }
+
+  html[lang="ja"] .spec-label {
+    margin-bottom: 0;
+  }
+
+  html[lang="ja"] .spec-value {
+    font-size: 1.2rem;
+  }
+
+  html[lang="ja"] .pr-disclosure-ja {
+    font-size: 0.8rem;
+    padding: 10px 12px;
+  }
+
+  html[lang="ja"] .trust-badge-ja {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  html[lang="ja"] h1 {
+    font-size: 1.3rem;
+  }
+
+  html[lang="ja"] .spec-item {
+    padding: 0.8rem;
+  }
+}
+
+/* 15. CONTAINER PADDING ADJUSTMENTS
+   ============================================================ */
+html[lang="ja"] .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 480px) {
+  html[lang="ja"] .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  html[lang="ja"] .container {
+    padding: 0 0.75rem;
+  }
+}
+
+/* 16. FOOTER ADJUSTMENTS
+   ============================================================ */
+html[lang="ja"] footer {
+  line-height: 1.7;
+}
+
+html[lang="ja"] footer a,
+html[lang="ja"] footer p {
+  color: #cccccc;
+  line-height: 1.7;
+}
+
+/* 17. ACCENT & EMPHASIS WITHOUT ITALICS
+   ============================================================ */
+html[lang="ja"] strong,
+html[lang="ja"] b {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+html[lang="ja"] .highlight-accent {
+  background: rgba(255, 153, 0, 0.15);
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-weight: 600;
+  color: #0066cc;
+}
+
+/* 18. ANSWER BOX MANUFACTURER NOTE
+   ============================================================ */
+.manufacturer-note {
+  font-size: 0.85rem;
+  color: #666666;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0, 102, 204, 0.2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* 19. NO ITALICS ENFORCED GLOBALLY (SAFETY)
+   ============================================================ */
+html[lang="ja"] * {
+  font-style: normal !important;
+}
+
+html[lang="ja"] em,
+html[lang="ja"] i,
+html[lang="ja"] .italic {
+  font-style: normal !important;
+  font-weight: 700;
+  color: #0066cc;
+}
