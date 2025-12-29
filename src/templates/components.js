@@ -34,22 +34,22 @@ return `<!-- Favicon -->
     <a href="/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">Home</a>
     
     <div class="relative group flex items-center">
-    <a href="#" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
+    <a href="/categories/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
       Devices
       <i class="fas fa-chevron-down text-xs"></i>
       </a>
-      <div class="absolute left-0 top-full pt-2 w-48 hidden group-hover:block">
+      <div class="absolute left-0 top-full pt-2 w-48 hidden group-hover:block z-50">
       <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-       <a href="/categories/action-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">Action Cameras</a>
-       <a href="/categories/cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Cameras</a>
-       <a href="/categories/computing-and-tablets/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Computing & Tablets</a>
-       <a href="/categories/drones/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Drones</a>
-       <a href="/categories/gaming-handhelds/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Gaming Handhelds</a>
-        <a href="/categories/dash-cams/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Dash Cams</a>
-        <a href="/categories/security-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">Security Cameras</a>
+       <a href="/categories/" class="block px-4 py-3 text-blue-600 bg-blue-50 first:rounded-t-lg text-xs font-bold border-b border-blue-200 flex items-center gap-2"><i class="fas fa-grid-2"></i> All Categories</a>
+       <a href="/categories/cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">📷 Cameras</a>
+       <a href="/categories/action-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🎬 Action Cameras</a>
+       <a href="/categories/drones/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🚁 Drones</a>
+       <a href="/categories/gaming-handhelds/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🎮 Gaming Handhelds</a>
+       <a href="/categories/dash-cams/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🚗 Dash Cams</a>
+       <a href="/categories/computing-and-tablets/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">💻 Computing & Tablets</a>
+       </div>
         </div>
        </div>
-      </div>
 
       <div class="relative group flex items-center">
       <a href="#" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
