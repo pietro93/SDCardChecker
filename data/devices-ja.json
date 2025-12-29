@@ -6331,37 +6331,7 @@
             ],
             "notes": ""
         },
-        {
-            "id": "trail-cameras",
-            "name": "Trail Cameras",
-            "category": "トレイルカメラ",
-            "slug": "trail-cameras",
-            "searchTerms": [
-                "trail camera",
-                "game camera",
-                "hunting camera"
-            ],
-            "sdCard": {
-                "type": "SD / SDHC",
-                "minSpeed": "Class 10",
-                "recommendedCapacity": [
-                    "32GB",
-                    "64GB"
-                ]
-            },
-            "whySpecs": "Trail cameras record to SD cards. Capacity dependent on resolution and frame rate.",
-            "recommendedBrands": [
-                {
-                    "id": "sandisk-ultra-microsd"
-                }
-            ],
-            "faq": [],
-            "relatedDevices": [
-                "gopro-hero-13",
-                "wyze-cam-v3"
-            ],
-            "notes": ""
-        },
+
         {
             "id": "hp-chromebook",
             "name": "HP Chromebook",
