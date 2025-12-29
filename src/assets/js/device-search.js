@@ -85,8 +85,6 @@ document.addEventListener('alpine:init', () => {
                 "Dash Cams": "dash-cams",
                 "セキュリティカメラ": "security-cameras",
                 "Security Cameras": "security-cameras",
-                "トレイルカメラ": "trail-cameras",
-                "Trail Cameras": "trail-cameras",
                 "アクセサリー": "accessories",
                 "Accessories": "accessories",
                 "SDカードリーダー": "sd-card-readers",
