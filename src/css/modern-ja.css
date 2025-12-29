@@ -224,6 +224,21 @@ html[lang="ja"] .btn-amazon:active {
   position: relative;
   overflow: hidden;
   padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.1);
+}
+
+/* Subtle verification circle background */
+.answer-box-ja::before {
+  content: "\f05d";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  bottom: -15px;
+  right: 10px;
+  font-size: 9rem;
+  color: rgba(0, 102, 204, 0.03);
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Decorative "推奨" (Recommended) watermark background */
