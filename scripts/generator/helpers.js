@@ -233,7 +233,17 @@ function getDeviceImageFallback(device) {
     "raspberry-pi-pico": "/img/devices/computing/raspberry-placeholder.webp",
     "amazon-fire-hd-10": "/img/devices/computing/amazon-fire-hd-10.webp",
     "amazon-fire-max-11": "/img/devices/computing/amazon-fire-max-11.webp",
-    "lenovo-tab-m10-plus": "/img/devices/computing/tablet-placeholder.webp"
+    "lenovo-tab-m10-plus": "/img/devices/computing/tablet-placeholder.webp",
+    // Audio & Hi-Fi devices
+    "fiio-snowsky-echo-mini": "/img/devices/audio-hi-fi/fiio-snowsky-echo-mini.webp",
+    "sony-nw-a306": "/img/devices/audio-hi-fi/sony-walkman-nw-a306.webp",
+    "sony-nw-zx707": "/img/devices/audio-hi-fi/sony-walkman-nw-a306.webp",
+    "hiby-r3-ii": "/img/devices/audio-hi-fi/hyby-r4.webp",
+    "hiby-r4": "/img/devices/audio-hi-fi/hyby-r4.webp",
+    "astell-kern-sr35": "/img/devices/audio-hi-fi/astell-kern-a-norma-sr35.webp",
+    "zoom-h1n-vp": "/img/devices/audio-hi-fi/Zoom-h1n-vp.webp",
+    "zoom-h6": "/img/devices/audio-hi-fi/zoom-h6.webp",
+    "tascam-dr-05x": "/img/devices/audio-hi-fi/tascam-dr-05x.webp"
   };
 
   if (deviceSpecificImages[slug] && imageExists(deviceSpecificImages[slug])) {
@@ -268,6 +278,14 @@ function getDeviceImageFallback(device) {
   if (name.includes("leica")) return "/img/devices/cameras/leica-q3.webp";
   if (name.includes("panasonic") || name.includes("lumix")) return "/img/devices/cameras/lumix-placeholder.webp";
   if (name.includes("dash cam") || name.includes("dash-cam")) return "/img/devices/dashcams/dash-cam-placeholder.webp";
+  // Audio & Hi-Fi brand detection
+  if (name.includes("sony walkman") || name.includes("sony nw")) return "/img/devices/audio-hi-fi/sony-walkman-nw-a306.webp";
+  if (name.includes("sony") && category.includes("audio")) return "/img/devices/audio-hi-fi/sony-walkman-nw-a306.webp";
+  if (name.includes("hiby") || name.includes("r3") || name.includes("r4")) return "/img/devices/audio-hi-fi/hyby-r4.webp";
+  if (name.includes("zoom h")) return "/img/devices/audio-hi-fi/Zoom-h1n-vp.webp";
+  if (name.includes("tascam")) return "/img/devices/audio-hi-fi/tascam-dr-05x.webp";
+  if (name.includes("fiio")) return "/img/devices/audio-hi-fi/fiio-snowsky-echo-mini.webp";
+  if (name.includes("astell") || name.includes("a&k") || name.includes("a&norma")) return "/img/devices/audio-hi-fi/astell-kern-a-norma-sr35.webp";
   if (name.includes("viofo")) return "/img/devices/dashcams/viofo-a229-plus-duo.webp";
   if (name.includes("blackvue")) return "/img/devices/dashcams/blackvue-dr900x-2ch.webp";
   if (name.includes("yupiteru")) return "/img/devices/dashcams/yupiteru-wdt-510c.webp";

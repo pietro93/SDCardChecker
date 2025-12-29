@@ -53,6 +53,7 @@ function getCategoryIcon(category) {
   const iconMap = {
     "Cameras": "camera",
     "Action Cameras": "action-camera",
+    "Audio & Hi-Fi": "audio-hi-fi",
     "Drones": "drone",
     "Gaming Handhelds": "gaming",
     "Computing & Tablets": "computing",
@@ -69,6 +70,8 @@ function getCategoryIntro(category) {
 const intros = {
 "Action Cameras":
 "Action cameras require fast SD cards to handle high-bitrate video recording. Find the best cards for GoPro, DJI, and other action cameras.",
+"Audio & Hi-Fi":
+"Digital Audio Players and portable recorders need reliable microSD cards for music libraries and high-quality audio recording. Find the best cards for Sony Walkman, HiBy, Zoom, and other audio devices.",
 Cameras:
 "Professional cameras including DSLRs, mirrorless, and cinema cameras require fast, reliable cards for RAW photo and high-bitrate video recording. Find the perfect card for your setup.",
 "Computing & Tablets":

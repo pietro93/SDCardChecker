@@ -102,6 +102,14 @@ img/devices/
 │   ├── insta360-x3.webp ✓
 │   ├── dji-osmo-pocket-3.webp ✓
 │   └── gopro-placeholder.webp (used for GoPro Max, Hero 11, etc.)
+├── audio-hi-fi/ (NEW - dedicated audio device folder) ✨
+│   ├── fiio-snowsky-echo-mini.webp ✓ (FiiO DAP image)
+│   ├── sony-walkman-nw-a306.webp ✓ (Sony Walkman image)
+│   ├── hyby-r4.webp ✓ (HiBy R3 II, R4 image)
+│   ├── astell-kern-a-norma-sr35.webp ✓ (Astell&Kern DAP image)
+│   ├── Zoom-h1n-vp.webp ✓ (Zoom handy recorder image)
+│   ├── zoom-h6.webp ✓ (Zoom H6 recorder image)
+│   └── tascam-dr-05x.webp ✓ (Tascam recorder image)
 ├── dashcams/ (NEW - dedicated dashcam folder)
 │   ├── dash-cam-placeholder.webp ✓ (generic dashcam fallback)
 │   ├── viofo-a229-plus-duo.webp ✓ (VIOFO brand image)
@@ -156,7 +164,7 @@ img/devices/
 
 ## Current Image Coverage
 
-### ✅ Real Images (42 files)
+### ✅ Real Images (50+ files)
 **Gaming Handhelds (8):**
 - Nintendo Switch, Switch OLED, 3DS
 - Steam Deck, ASUS ROG Ally
@@ -192,6 +200,15 @@ img/devices/
 - COMTEC ZDR-035 (Japanese dashcam)
 - Cellstar CS-91FH (Japanese dashcam)
 - Generic Dash Cam Placeholder (covers Garmin, Nextbase, Vantrue, Rexing, Rove)
+
+**Audio & Hi-Fi (7 images):** ✨ NEW CATEGORY
+- FiiO SnowSky Echo Mini (covers FiiO DAPs)
+- Sony Walkman NW-A306 (covers Sony NW-A306, NW-ZX707)
+- HiBy R4 (covers HiBy R3 II, R4)
+- Astell&Kern A&norma SR35
+- Zoom H1n-VP (covers Zoom H1n, H1n-VP)
+- Zoom H6
+- Tascam DR-05X
 
 **Computing (4):**
 - Raspberry Pi 5
@@ -248,7 +265,25 @@ These don't need individual images—they use brand/category placeholders:
 
 ## What Was Just Added ✨
 
-**Smart coverage for 30+ additional devices with 13 new images:**
+### Audio & Hi-Fi Category - Full Coverage ✨ NEW
+**New Folder:** `/img/devices/audio-hi-fi/` with 7 device images
+
+| Device | Image File | Covers |
+|--------|-----------|--------|
+| FiiO SnowSky Echo Mini | fiio-snowsky-echo-mini.webp | FiiO DAPs |
+| Sony Walkman NW-A306 | sony-walkman-nw-a306.webp | Sony NW-A306, NW-ZX707 |
+| HiBy R4 | hyby-r4.webp | HiBy R3 II, R4 |
+| Astell&Kern SR35 | astell-kern-a-norma-sr35.webp | Astell&Kern DAPs |
+| Zoom H1n-VP | Zoom-h1n-vp.webp | Zoom H1n, H1n-VP |
+| Zoom H6 | zoom-h6.webp | Zoom H6 |
+| Tascam DR-05X | tascam-dr-05x.webp | Tascam recorders |
+
+**Brand Detection:** Sony, HiBy, Zoom, Tascam, FiiO, Astell&Kern automatically route to correct images via helpers.js
+**Category Icon:** `icon-audio-hi-fi.webp` added to `/img/brand/` ✨
+
+---
+
+**Smart coverage for 30+ additional devices with 20 new images:**
 
 1. ✅ **Gaming Handhelds** (8 devices)
    - Lenovo Legion Go + X variant
@@ -371,8 +406,9 @@ These already have intelligent fallbacks that work perfectly:
 - **Location:** `/img/devices/{category}/{filename}.webp`
 - **Category Folders:**
   - `action-cameras/` - GoPro, Insta360, action cameras
+  - `audio-hi-fi/` - Digital Audio Players, portable recorders ✨ NEW
   - `cameras/` - DSLR, mirrorless, compact cameras
-  - `dashcams/` - Dash camera devices (NEW)
+  - `dashcams/` - Dash camera devices
   - `drones/` - DJI, other drones
   - `gaming-consoles/` - Nintendo, Steam Deck, handhelds
   - `computing/` - Raspberry Pi, tablets, Chromebooks
@@ -597,10 +633,15 @@ After adding new images:
 
 ## Summary
 
-✅ **Extended coverage:** 42 real device images (26%) + smart fallbacks for 121 devices (74%)
-✅ **Brand-specific detection:** 20+ brands now have dedicated images or smart brand detection
-✅ **Category-based fallbacks:** Camera → sony-placeholder, Drone → drone-placeholder, etc.
-✅ **New image mappings in helpers.js:** Lenovo, Anbernic, Retroid, Miyoo, Leica, Lumix, Reolink, DJI Air 3, Dashcams (12 devices with brand-specific + generic fallbacks)
+✅ **Extended coverage:** 50+ real device images (30%) + smart fallbacks for 120+ devices (70%)
+✅ **Brand-specific detection:** 25+ brands now have dedicated images or smart brand detection
+✅ **Category-based fallbacks:** Camera → sony-placeholder, Drone → drone-placeholder, Audio → audio-hi-fi images, etc.
+✅ **New image mappings in helpers.js:** 
+   - Gaming: Lenovo, Anbernic, Retroid, Miyoo
+   - Cameras: Leica, Lumix, Reolink
+   - Drones: DJI Air 3
+   - Dashcams: Japanese brands (Yupiteru, Kenwood, COMTEC, Cellstar)
+   - **Audio & Hi-Fi: Sony Walkman, HiBy, Zoom, Tascam, FiiO, Astell&Kern** (7 new device images)
 
 **For future additions:**
 - Follow the same pattern in helpers.js: add device slug or brand detection
