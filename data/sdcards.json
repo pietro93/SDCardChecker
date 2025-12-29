@@ -949,6 +949,255 @@
       "pros": "True UHS-II speeds. Excellent for 8K video and professional drones. Very fast writes.",
       "cons": "High cost per GB. Overkill for casual use.",
       "tier": "professional"
+    },
+    {
+      "id": "sandisk-nintendo-zelda-microsd",
+      "name": "SanDisk Nintendo Switch: Legend of Zelda Tears of the Kingdom",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/sandisk-zelda.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Zelda+microSD+Switch&tag=sd-cc-20",
+      "pros": "Official Nintendo licensed branding. V30 performance ideal for Switch. Available in multiple capacities.",
+      "cons": "Premium price for iconic branding.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Works in all Nintendo Switch models but will not utilize SD Express speeds in Nintendo Switch 2."
+    },
+    {
+      "id": "sandisk-nintendo-pokemon-gengar-microsd",
+      "name": "SanDisk Nintendo Switch: Pokémon Gengar",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        512
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/sandisk-pokemon-gengar.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Pokémon+Gengar+microSD+Switch&tag=sd-cc-20",
+      "pros": "Purple Gengar design. Reliable V30 speeds for all Switch titles.",
+      "cons": "Limited to 512GB capacity only.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Backward compatible with Switch 2 but limited by UHS-I speed ceiling."
+    },
+    {
+      "id": "sandisk-nintendo-pokemon-snorlax-microsd",
+      "name": "SanDisk Nintendo Switch: Pokémon Snorlax",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        1024
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/sandisk-pokemon-snorlax.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Pokémon+Snorlax+microSD+Switch&tag=sd-cc-20",
+      "pros": "Massive 1TB capacity. Stores entire Switch game library. Iconic Pokémon branding.",
+      "cons": "Very expensive compared to unbranded 1TB alternatives.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Perfect for digital-focused Switch owners."
+    },
+    {
+      "id": "sandisk-nintendo-pokemon-pikachu-microsd",
+      "name": "SanDisk Nintendo Switch: Pokémon Pikachu",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        256
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/sandisk-pokemon-pikachu.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Pokémon+Pikachu+microSD+Switch&tag=sd-cc-20",
+      "pros": "Classic yellow Pikachu design. 256GB ideal mid-range capacity.",
+      "cons": "Limited to 256GB only.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Great for collectors and casual gamers."
+    },
+    {
+      "id": "sandisk-nintendo-yoshi-microsd",
+      "name": "SanDisk Nintendo Switch: Yoshi Edition",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/nintendo-switch/sandisk-yoshi.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Yoshi+microSD+Switch&tag=sd-cc-20",
+      "pros": "Adorable Yoshi branding. Good entry-point for younger gamers.",
+      "cons": "64GB-128GB fills quickly with modern large games.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Best for indie game collections."
+    },
+    {
+      "id": "sandisk-nintendo-animal-crossing-microsd",
+      "name": "SanDisk Nintendo Switch: Animal Crossing Leaf",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        256,
+        512
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/sandisk-animal-crossing.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Animal+Crossing+Leaf+microSD+Switch&tag=sd-cc-20",
+      "pros": "Charming Animal Crossing aesthetics. 256GB-512GB for mid to large libraries.",
+      "cons": "Premium price for licensed branding.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Themed for relaxed players."
+    },
+    {
+      "id": "sandisk-nintendo-mario-mushroom-microsd",
+      "name": "SanDisk Nintendo Switch: Super Mario Mushroom",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/sandisk-mario-mushroom.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Super+Mario+Mushroom+microSD+Switch&tag=sd-cc-20",
+      "pros": "The most iconic Nintendo branding. Recognizable red Mushroom design.",
+      "cons": "Licensed premium pricing for mainly aesthetic appeal.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Perfect for Super Mario enthusiasts."
+    },
+    {
+      "id": "sandisk-nintendo-mario-star-microsd",
+      "name": "SanDisk Nintendo Switch: Super Mario Super Star",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        128,
+        256
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/sandisk-mario-star.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Super+Mario+Super+Star+microSD+Switch&tag=sd-cc-20",
+      "pros": "Bright yellow star design. Excellent Super Mario series branding.",
+      "cons": "Higher cost per GB than unbranded alternatives.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Great for Mario franchise fans."
+    },
+    {
+      "id": "sandisk-nintendo-fortnite-cuddle-microsd",
+      "name": "SanDisk Nintendo Switch: Fortnite Cuddle Team Leader",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        128
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/sandisk-fortnite-cuddle.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Fortnite+Cuddle+Team+Leader+microSD+Switch&tag=sd-cc-20",
+      "pros": "Licensed Fortnite character design. 128GB good for medium game libraries.",
+      "cons": "Limited to single capacity option.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Ideal for Fortnite players on Switch."
+    },
+    {
+      "id": "sandisk-nintendo-fortnite-skull-microsd",
+      "name": "SanDisk Nintendo Switch: Fortnite Skull Trooper",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        256
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/sandisk-fortnite-skull.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Fortnite+Skull+Trooper+microSD+Switch&tag=sd-cc-20",
+      "pros": "Iconic Fortnite Skull Trooper skin. 256GB for substantial game collection.",
+      "cons": "Premium pricing for cosmetic branding.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Limited to UHS-I speeds."
     }
-  ]
-}
+    ]
+    }

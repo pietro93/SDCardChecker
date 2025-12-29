@@ -42,26 +42,24 @@ function generateJapaneseSitemap(allDevices, distPath) {
   // Add device pages
   allDevices.forEach((device) => {
     // Map Japanese category names to English slugs
-    const categorySlugMap = {
-      "アクションカメラ": "action-cameras",
-      "Action Cameras": "action-cameras",
-      "カメラ": "cameras",
-      "Cameras": "cameras",
-      "ドローン": "drones",
-      "Drones": "drones",
-      "携帯ゲーム機": "gaming-handhelds",
-      "Gaming Handhelds": "gaming-handhelds",
-      "コンピュータ・タブレット": "computing-and-tablets",
-      "Computing & Tablets": "computing-and-tablets",
-      "ドライブレコーダー": "dash-cams",
-      "Dash Cams": "dash-cams",
-      "セキュリティカメラ": "security-cameras",
-      "Security Cameras": "security-cameras",
-      "トレイルカメラ": "trail-cameras",
-      "Trail Cameras": "trail-cameras",
-      "アクセサリー": "accessories",
-      "Accessories": "accessories"
-    };
+      const categorySlugMap = {
+        "アクションカメラ": "action-cameras",
+        "Action Cameras": "action-cameras",
+        "カメラ": "cameras",
+        "Cameras": "cameras",
+        "ドローン": "drones",
+        "Drones": "drones",
+        "携帯ゲーム機": "gaming-handhelds",
+        "Gaming Handhelds": "gaming-handhelds",
+        "コンピュータ・タブレット": "computing-and-tablets",
+        "Computing & Tablets": "computing-and-tablets",
+        "ドライブレコーダー": "dash-cams",
+        "Dash Cams": "dash-cams",
+        "セキュリティカメラ": "security-cameras",
+        "Security Cameras": "security-cameras",
+        "アクセサリー": "accessories",
+        "Accessories": "accessories"
+      };
 
     const categorySlug = categorySlugMap[device.category] || device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
     sitemapXML += `  <url>
@@ -90,8 +88,6 @@ function generateJapaneseSitemap(allDevices, distPath) {
     "Dash Cams": "dash-cams",
     "セキュリティカメラ": "security-cameras",
     "Security Cameras": "security-cameras",
-    "トレイルカメラ": "trail-cameras",
-    "Trail Cameras": "trail-cameras",
     "アクセサリー": "accessories",
     "Accessories": "accessories"
   };

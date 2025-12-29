@@ -121,40 +121,40 @@
       ],
       "sdCard": {
         "type": "microSD, microSDHC, microSDXC",
-        "minSpeed": "Class 10 / U1",
+        "minSpeed": "Class 10 / UHS-I",
         "minWriteSpeed": "Not specified",
         "recommendedCapacity": [
-          "64GB",
           "128GB",
-          "256GB"
+          "256GB",
+          "512GB"
         ],
         "maxCapacity": "2TB (theoretical)",
         "testedMaxCapacity": "1TB"
       },
-      "whySpecs": "Nintendo Switch doesn't require high-speed cards for game loading. Any microSD card works, but V30 cards offer best reliability. Cheaper slower cards still work but may have slightly longer load times. Note: While Nintendo theoretically supports up to 2TB, the largest tested and verified working capacity is 1TB.",
+      "whySpecs": "The original Nintendo Switch uses the UHS-I interface with a maximum theoretical speed of 104MB/s. While the console is not demanding for game loading, reputable V30 cards provide the best reliability for large digital libraries. The Switch does not benefit from expensive UHS-II or SD Express cards, as it lacks the hardware interface to support them. Any UHS-I microSD card will work, but V30 rating ensures consistent performance across all games.",
       "recommendedBrands": [
         {
-          "id": "adata-premier-microsd"
+          "id": "sandisk-nintendo-mario-star-microsd"
         },
         {
-          "id": "transcend-standard-microsd"
+          "id": "samsung-evo-select-microsd"
         },
         {
-          "id": "sandisk-ultra-microsd"
+          "id": "sandisk-extreme-microsd"
         }
       ],
       "faq": [
         {
+          "q": "Does the Switch support cards larger than 1TB?",
+          "a": "<b>Theoretically yes, but practically 1TB is the maximum tested capacity</b>. While Nintendo claims support for up to 2TB, no consumer cards larger than 1TB have been widely verified to work reliably with the Switch."
+        },
+        {
           "q": "Can I use a phone's microSD card?",
-          "a": "<b>Yes, any microSD card works with Nintendo Switch</b>. However, <b>back up all phone data first</b> before transferring, as formatting the card for Switch will erase all existing data on it."
+          "a": "<b>Yes, any microSD card works with Nintendo Switch</b>. However, <b>back up all phone data first</b> before transferring, as formatting the card for Switch will erase all existing data."
         },
         {
-          "q": "Does the card need to be formatted?",
-          "a": "<b>Yes, Nintendo Switch will format the microSD card automatically on first use</b>. <b>This process erases all existing data</b>, so ensure you've backed up any files before inserting an existing card into your Switch."
-        },
-        {
-          "q": "What happens if I use a slower card?",
-          "a": "<b>Slower cards may result in slightly longer game load times</b>. Games will still function properly with minimal speed impact. <b>There is no risk of data loss or game corruption</b> from using slower speed-rated cards."
+          "q": "Do I need V30 speed?",
+          "a": "<b>V30 is recommended but not required</b>. Cheaper U1 or Class 10 cards will work fine for gaming, though V30 cards offer better reliability and consistency across your entire game library."
         }
       ],
       "relatedDevices": [
@@ -162,7 +162,7 @@
         "nintendo-switch-lite",
         "steam-deck"
       ],
-      "notes": "Switch is least demanding of all devices. Any microSD card works. V30 not necessary but provides reliability."
+      "notes": "Limited to UHS-I speeds (~104MB/s maximum). Any microSD card works, but V30 V30 recommended for reliability. The Switch is compatible with all officially licensed Nintendo-branded SanDisk cards."
     },
     {
       "id": "nintendo-switch-oled",
@@ -172,46 +172,52 @@
       "searchTerms": [
         "nintendo switch oled",
         "switch oled",
-        "switch oled memory card"
+        "switch oled memory card",
+        "switch oled storage"
       ],
       "sdCard": {
         "type": "microSD, microSDHC, microSDXC",
-        "minSpeed": "Class 10 / U1",
+        "minSpeed": "Class 10 / UHS-I",
         "minWriteSpeed": "Not specified",
         "recommendedCapacity": [
-          "128GB",
-          "256GB"
+          "256GB",
+          "512GB",
+          "1024GB"
         ],
         "maxCapacity": "2TB (theoretical)",
         "testedMaxCapacity": "1TB"
       },
-      "whySpecs": "OLED model has identical storage requirements as original Switch. While the device is not demanding, quality microSD cards from reputable brands ensure reliability and longevity. V30 rated cards are recommended for peace of mind. Note: While Nintendo theoretically supports up to 2TB, the largest tested and verified working capacity is 1TB.",
+      "whySpecs": "The Switch OLED model features 64GB of internal storage, making it ideal for users downloading large digital game libraries. Like all Switch models, it uses the UHS-I interface with a maximum speed of 104MB/s. High-speed UHS-II cards provide no benefit since the OLED model cannot access those speeds. V30 rated microSD cards from reputable brands are recommended for consistent performance and reliability with your entire game collection.",
       "recommendedBrands": [
         {
-          "id": "adata-premier-microsd"
+          "id": "sandisk-nintendo-pokemon-snorlax-microsd"
         },
         {
-          "id": "transcend-standard-microsd"
+          "id": "kingston-canvas-go-plus"
         },
         {
-          "id": "kingston-canvas-go-plus-ultra"
+          "id": "sandisk-nintendo-zelda-microsd"
         }
       ],
       "faq": [
         {
-          "q": "Can I use the same card from my original Switch?",
-          "a": "<b>Yes, microSD cards are completely compatible between the original Switch and OLED model</b>. The OLED version has identical storage architecture and interface specifications as the original Switch."
+          "q": "Should I buy UHS-II cards for the OLED?",
+          "a": "<b>No, UHS-II cards provide no performance benefit to the Switch OLED</b>. The console only supports UHS-I speeds (~104MB/s). UHS-II cards will work but will be limited to slower UHS-I speeds, making them a waste of money."
         },
         {
-          "q": "Is there a speed difference between models?",
-          "a": "<b>No, Nintendo Switch OLED uses the same microSD card slot and speed limitations as the original Switch</b>. Both models support the same card speeds and types, with no performance difference between OLED and original Switch storage."
+          "q": "Can I use my original Switch's card?",
+          "a": "<b>Yes, any microSD card from the original Switch works perfectly in the OLED model</b>. All Switch models share identical storage architecture and card compatibility."
+        },
+        {
+          "q": "What capacity should I get?",
+          "a": "<b>The OLED's larger screen encourages downloading more games</b>. 512GB or 1TB is highly recommended, as the 64GB internal storage plus a smaller card fills up quickly with modern titles."
         }
       ],
       "relatedDevices": [
         "nintendo-switch",
         "nintendo-switch-lite"
       ],
-      "notes": "OLED model shares identical storage requirements with original Switch."
+      "notes": "OLED users typically purchase larger cards due to increased digital game library usage. UHS-I only, despite higher internal storage."
     },
     {
       "id": "dji-mini-4-pro",
@@ -746,7 +752,7 @@
       ],
       "sdCard": {
         "type": "microSD, microSDHC, microSDXC",
-        "minSpeed": "Class 10 / U1",
+        "minSpeed": "Class 10 / UHS-I",
         "minWriteSpeed": "Not specified",
         "recommendedCapacity": [
           "128GB",
@@ -755,26 +761,89 @@
         "maxCapacity": "2TB (theoretical)",
         "testedMaxCapacity": "1TB"
       },
-      "whySpecs": "The Switch Lite has identical storage requirements to the original Switch. While it doesn't need high-speed cards, choosing from trusted brands ensures reliability and longevity for all your games.",
+      "whySpecs": "The Switch Lite is Nintendo's portable-only console with identical storage capabilities to the standard Switch and OLED models. It uses the UHS-I interface with a maximum speed of 104MB/s. Since the Lite is often used for travel and portable gaming, a reliable brand-name card is essential to prevent data corruption during transit. Reputable V30 cards are recommended for consistent performance.",
       "recommendedBrands": [
         {
-          "id": "sandisk-ultra-microsd"
+          "id": "sandisk-nintendo-mario-mushroom-microsd"
         },
         {
-          "id": "kingston-canvas-select"
+          "id": "sandisk-nintendo-fortnite-cuddle-microsd"
+        },
+        {
+          "id": "lexar-play-microsd"
         }
       ],
       "faq": [
         {
-          "q": "Is the SD card slot different on the Switch Lite?",
-          "a": "<b>No, the SD card slot and its speed capabilities are identical</b> to the standard Nintendo Switch and the OLED model. Any card that works on one will work on the others."
+          "q": "Is the Switch Lite's SD slot slower than other models?",
+          "a": "<b>No, the Switch Lite has identical read/write capabilities as the standard and OLED Switch models</b>. All Switch family consoles share the same UHS-I microSD hardware interface with no speed differences."
+        },
+        {
+          "q": "What capacity should I get for Lite?",
+          "a": "<b>128GB to 256GB is ideal for most Switch Lite users</b>. The Lite's smaller library recommendations and portable nature make it suited for more curated game collections, unlike OLED users who tend to download extensively."
         }
       ],
       "relatedDevices": [
         "nintendo-switch",
         "nintendo-switch-oled"
       ],
-      "notes": "Completes the Switch family lineup. Same requirements as other models."
+      "notes": "Identical storage architecture to other Switch models. UHS-I only. 128GB-256GB is the sweet spot for Lite's typical usage pattern."
+    },
+    {
+      "id": "nintendo-switch-2",
+      "name": "Nintendo Switch 2",
+      "category": "Gaming Handhelds",
+      "slug": "nintendo-switch-2",
+      "searchTerms": [
+        "nintendo switch 2",
+        "switch 2 sd card",
+        "switch 2 storage",
+        "sd express switch 2"
+      ],
+      "sdCard": {
+        "type": "microSD, microSDHC, microSDXC, SD Express",
+        "minSpeed": "UHS-I (Backward Compatible) / SD Express (Recommended)",
+        "minWriteSpeed": "V30 or higher",
+        "recommendedCapacity": [
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "maxCapacity": "2TB+ (SDUC)",
+        "testedMaxCapacity": "2TB"
+      },
+      "whySpecs": "The Nintendo Switch 2 introduces support for <b>SD Express</b> cards, enabling much faster transfer speeds comparable to NVMe SSDs (up to 985 MB/s). While completely backward compatible with standard microSD cards from the original Switch family (limited to UHS-I at ~104MB/s), Switch 2-optimized titles may require SD Express for reduced load times and enhanced asset streaming. For optimal next-generation gaming performance, SD Express V60 or faster cards are recommended.",
+      "recommendedBrands": [
+        {
+          "id": "lexar-professional-1000x-microsd"
+        },
+        {
+          "id": "sandisk-nintendo-pokemon-snorlax-microsd"
+        },
+        {
+          "id": "kingston-canvas-react-plus-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Will my old Switch SD cards work in Switch 2?",
+          "a": "<b>Yes, the Nintendo Switch 2 is backward compatible with all microSD cards from original Switch models</b>. Your existing cards will work perfectly for playing legacy Switch titles. However, they will be limited to UHS-I speeds (~104MB/s) and won't access SD Express performance enhancements."
+        },
+        {
+          "q": "Do Switch 2 games require SD Express?",
+          "a": "<b>Not all games require SD Express, but titles optimized for Switch 2's higher power may significantly benefit from it</b>. Games designed specifically for the new console's enhanced capabilities will have faster load times and smoother asset streaming on SD Express cards."
+        },
+        {
+          "q": "What about official Nintendo-branded cards?",
+          "a": "<b>The SanDisk Nintendo-branded microSD cards (Zelda, Pokémon, Mario, Fortnite editions) work in Switch 2 but are UHS-I only</b>. They are fully backward compatible with the original Switch 2 legacy title library but won't access the new console's SD Express performance capabilities."
+        }
+      ],
+      "relatedDevices": [
+        "nintendo-switch",
+        "nintendo-switch-oled",
+        "nintendo-switch-lite"
+      ],
+      "notes": "Switch 2 marks a generational leap in storage technology. While legacy UHS-I cards work, SD Express cards are recommended for next-generation titles. Backward compatible with all original Switch games."
     },
     {
       "id": "sony-a7-iv",
