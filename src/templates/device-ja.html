@@ -56,6 +56,7 @@
 
     <link rel="stylesheet" href="/assets/css/tailwind.css">
     <link rel="stylesheet" href="/assets/css/modern.css">
+    <link rel="stylesheet" href="/assets/css/modern-ja.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     {{GROW_SCRIPT}}
@@ -91,28 +92,41 @@
     <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
         <!-- Main Content -->
         <main class="flex-1">
+            <!-- PR Disclosure (Legal Requirement for Japan) -->
+            <div class="pr-disclosure-ja">
+                <span class="pr-label-badge">広告</span>
+                <p>本ページはプロモーション（アフィリエイト）を含みます。当サイトは、Amazon.co.jpのアソシエイトとして、適格販売により収入を得ています。</p>
+            </div>
+
+            <!-- Trust Badge (Brand Authority - 動作確認済み) -->
+            <div class="trust-badge-ja mb-4">
+                動作確認済み
+                <span class="trust-subtext">（メーカー仕様準拠）</span>
+            </div>
+
             <!-- Hero Image with Overlay Title -->
              <div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative">
-                 <img src="{{DEVICE_IMAGE}}" alt="{{DEVICE_NAME}} SDカード要件" class="w-full object-cover hero-image"
-                     width="1200" height="350" loading="lazy" />
-                <div class="hero-overlay">
-                    <h1 class="hero-title" style="color: #ffffff;">
-                        {{DEVICE_NAME_SHORT}}向けの最高のSDカード
-                    </h1>
-                </div>
-            </div>
+                  <img src="{{DEVICE_IMAGE}}" alt="{{DEVICE_NAME}} SDカード要件" class="w-full object-cover hero-image"
+                      width="1200" height="350" loading="lazy" />
+                 <div class="hero-overlay">
+                     <h1 class="hero-title" style="color: #ffffff;">
+                         {{DEVICE_NAME_SHORT}}向けの最高のSDカード
+                     </h1>
+                 </div>
+             </div>
 
             <!-- Expert Recommendations Section -->
             <div class="mb-12">
                 <p class="text-xl text-slate-600">{{DEVICE_NAME}}の仕様に基づく専門家による推奨情報</p>
             </div>
 
-            <!-- Answer Box - Quick Result -->
+            <!-- Answer Box - Quick Result (Japanese Enhanced) -->
             <div id="recommendations"
-                class="bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-2xl p-8 mb-12 shadow-sm scroll-mt-20">
+                class="answer-box-ja bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-2xl p-8 mb-12 shadow-sm scroll-mt-20">
                 <p class="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">推奨SDカード</p>
                 <p class="answer-text text-4xl font-bold text-blue-600 mb-4">{{ANSWER_TEXT}}</p>
                 <p class="answer-explanation text-lg text-slate-700 leading-relaxed">{{ANSWER_EXPLANATION}}</p>
+                <p class="manufacturer-note">※ メーカー公式仕様に基づく推奨情報です。詳細は各メーカーの公式ドキュメントをご参照ください。</p>
             </div>
 
             <!-- Requirements Box -->

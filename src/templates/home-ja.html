@@ -28,6 +28,7 @@
 
     <link rel="stylesheet" href="/assets/css/tailwind.css">
     <link rel="stylesheet" href="/assets/css/modern.css">
+    <link rel="stylesheet" href="/assets/css/modern-ja.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <script src="/assets/js/device-search.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -55,7 +56,7 @@
                     <i class="fas fa-search search-icon"></i>
                     <input type="text" x-model="query" @input="filterDevices()" @focus="open = true; filterDevices()"
                         @keydown="handleKeydown($event)"
-                        placeholder="デバイスを検索..." class="search-input"
+                        placeholder="デバイス名を検索（例：GoPro、ゴープロ、Nintendo Switch）" class="search-input search-input-ja"
                         aria-label="デバイスを検索して推奨されるSDカードを検索"
                         data-hj-allow>
                     <div class="search-dropdown" :class="{ hidden: !open || (filtered && filtered.length === 0) }">
