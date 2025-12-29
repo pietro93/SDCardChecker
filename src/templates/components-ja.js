@@ -42,12 +42,12 @@ return `<!-- Favicon -->
       <div class="absolute left-0 top-full pt-2 w-48 hidden group-hover:block z-50">
       <div class="bg-white rounded-lg shadow-lg border border-slate-200">
        <a href="/ja/categories/" class="block px-4 py-3 text-blue-600 bg-blue-50 first:rounded-t-lg text-xs font-bold border-b border-blue-200 flex items-center gap-2"><i class="fas fa-grid-2"></i> すべて</a>
-       <a href="/ja/categories/cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">📷 カメラ</a>
-       <a href="/ja/categories/action-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🎬 アクションカメラ</a>
-       <a href="/ja/categories/drones/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🚁 ドローン</a>
-       <a href="/ja/categories/gaming-handhelds/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🎮 携帯ゲーム機</a>
-       <a href="/ja/categories/dash-cams/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">🚗 ドライブレコーダー</a>
-       <a href="/ja/categories/computing-and-tablets/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">💻 コンピュータ・タブレット</a>
+       <a href="/ja/categories/cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">カメラ</a>
+       <a href="/ja/categories/action-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">アクションカメラ</a>
+       <a href="/ja/categories/drones/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">ドローン</a>
+       <a href="/ja/categories/gaming-handhelds/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">携帯ゲーム機</a>
+       <a href="/ja/categories/dash-cams/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">ドライブレコーダー</a>
+       <a href="/ja/categories/computing-and-tablets/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">コンピュータ・タブレット</a>
         </div>
        </div>
       </div>
