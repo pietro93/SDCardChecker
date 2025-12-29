@@ -45,6 +45,7 @@
 
   <link rel="stylesheet" href="/assets/css/tailwind.css">
   <link rel="stylesheet" href="/assets/css/modern.css">
+  <link rel="stylesheet" href="/assets/css/modern-ja.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   {{GROW_SCRIPT}}
@@ -63,8 +64,8 @@
     </div>
   </div>
 
-  <div class="max-w-7xl mx-auto px-4 py-12">
-    <main>
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
       <!-- Hero Section -->
       <div class="mb-12">
         <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
@@ -80,6 +81,10 @@
         {{CATEGORIES_GRID}}
       </section>
     </main>
+
+    <aside class="w-full md:w-64 flex-shrink-0">
+      {{SIDEBAR}}
+    </aside>
   </div>
 
   {{FOOTER}}

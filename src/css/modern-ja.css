@@ -48,6 +48,11 @@ html[lang="ja"] h6 {
   font-weight: 700;
 }
 
+/* Exception: Hero title on homepage should remain white */
+html[lang="ja"] h1.hero-title {
+  color: white !important;
+}
+
 html[lang="ja"] p {
   color: #444444;
   line-height: 1.8;

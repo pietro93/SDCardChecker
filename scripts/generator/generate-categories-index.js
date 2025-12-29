@@ -6,8 +6,8 @@
 const path = require("path");
 const fs = require("fs");
 const { readTemplate, processIncludes, writeFile, generateBreadcrumbSchema } = require("./helpers");
-const { generateHeader, generateFooter, generateGrowScript } = require("../../src/templates/components");
-const { generateHeader: generateHeaderJa, generateFooter: generateFooterJa, generateGrowScript: generateGrowScriptJa } = require("../../src/templates/components-ja");
+const { generateHeader, generateFooter, generateGrowScript, generateSidebar } = require("../../src/templates/components");
+const { generateHeader: generateHeaderJa, generateFooter: generateFooterJa, generateGrowScript: generateGrowScriptJa, generateSidebar: generateSidebarJa } = require("../../src/templates/components-ja");
 
 const srcPath = path.join(__dirname, "../../src");
 
@@ -133,7 +133,8 @@ function generateCategoriesIndex(allDevices, template, isJapanese = false) {
     .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
     .replace(/{{HEADER}}/g, isJapanese ? generateHeaderJa() : generateHeader())
     .replace(/{{FOOTER}}/g, isJapanese ? generateFooterJa() : generateFooter())
-    .replace(/{{GROW_SCRIPT}}/g, isJapanese ? generateGrowScriptJa() : generateGrowScript());
+    .replace(/{{GROW_SCRIPT}}/g, isJapanese ? generateGrowScriptJa() : generateGrowScript())
+    .replace(/{{SIDEBAR}}/g, isJapanese ? generateSidebarJa() : generateSidebar());
 
   return html;
 }

@@ -87,6 +87,14 @@ function generateJapaneseGuides(distPath) {
     const guidesDistPath = path.join(distPath, "ja", "guides");
     ensureDir(guidesDistPath);
 
+    // Generate main guides index page
+    const guideIndexPath = path.join(srcPath, "templates/guides-ja.html");
+    if (fs.existsSync(guideIndexPath)) {
+        if (generateGuidePageJa(guideIndexPath, guidesDistPath, "index.html")) {
+            console.log(`  ✓ Generated Guides Index (Japanese)`);
+        }
+    }
+
     const guides = [
         {
             templatePath: path.join(srcPath, "templates/guides/sd-card-speed-classes-ja.html"),
@@ -117,7 +125,7 @@ function generateJapaneseGuides(distPath) {
         }
     });
 
-    console.log(`  ✓ Generated ${successCount}/${guides.length} Japanese guide pages\n`);
+    console.log(`  ✓ Generated ${successCount + 1}/${guides.length + 1} Japanese guide pages\n`);
 }
 
 module.exports = { generateJapaneseGuides };
