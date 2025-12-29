@@ -354,7 +354,16 @@ function generateSidebar() {
   <li><a href="/categories/drones/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Drones</a></li>
   <li><a href="/categories/gaming-handhelds/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Gaming Handhelds</a></li>
   <li><a href="/categories/dash-cams/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Dash Cams</a></li>
-  <li><a href="/categories/security-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Security Cameras</a></li>
+  <li x-data="{ open: false }">
+    <button @click="open = !open" class="w-full text-left text-sm text-slate-600 hover:text-blue-600 transition-colors flex items-center justify-between">
+      More Categories
+      <i :class="open ? 'fas fa-chevron-up' : 'fas fa-chevron-down'" class="text-xs"></i>
+    </button>
+    <ul x-show="open" class="mt-2 ml-3 space-y-2 border-l border-slate-200 pl-3">
+      <li><a href="/categories/audio-hi-fi/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Audio & Hi-Fi</a></li>
+      <li><a href="/categories/security-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Security Cameras</a></li>
+    </ul>
+  </li>
      </ul>
   </div>
 

@@ -284,7 +284,16 @@ function generateSidebar() {
   <li><a href="/ja/categories/computing-and-tablets/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">コンピュータ・タブレット</a></li>
   <li><a href="/ja/categories/drones/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">ドローン</a></li>
   <li><a href="/ja/categories/gaming-handhelds/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">携帯ゲーム機</a></li>
-  <li><a href="/ja/categories/security-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">セキュリティカメラ</a></li>
+  <li><a href="/ja/categories/dash-cams/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">ドライブレコーダー</a></li>
+  <li x-data="{ open: false }">
+    <button @click="open = !open" class="w-full text-left text-sm text-slate-600 hover:text-blue-600 transition-colors flex items-center justify-between">
+      もっと見る
+      <i :class="open ? 'fas fa-chevron-up' : 'fas fa-chevron-down'" class="text-xs"></i>
+    </button>
+    <ul x-show="open" class="mt-2 ml-3 space-y-2 border-l border-slate-200 pl-3">
+      <li><a href="/ja/categories/security-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">セキュリティカメラ</a></li>
+    </ul>
+  </li>
      </ul>
   </div>
 
