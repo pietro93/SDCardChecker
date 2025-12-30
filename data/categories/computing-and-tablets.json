@@ -1,0 +1,748 @@
+[
+  {
+    "id": "raspberry-pi-5",
+    "name": "Raspberry Pi 5",
+    "category": "Single Board Computers",
+    "slug": "raspberry-pi-5",
+    "searchTerms": [
+      "raspberry pi 5 sd card",
+      "pi 5 microsd",
+      "best sd card for pi 5",
+      "raspberry pi 5 max sd card size"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "A2 rated (Critical)",
+      "minWriteSpeed": "30 MB/s (U3 / V30)",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "Theoretical 2TB (Tested up to 1TB)"
+    },
+    "whySpecs": "The Raspberry Pi 5 is the first model to officially support SDR104 mode and 'Command Queueing' found in A2 cards. Unlike older Pis, the Pi 5 actually utilizes the random I/O performance of A2 cards, resulting in a significantly smoother desktop experience and faster boot times. A V30/U3 rating is recommended to prevent bottlenecks during updates.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the Raspberry Pi 5 actually benefit from A2 cards?",
+        "a": "<b>Yes.</b> Unlike the Pi 4, the Raspberry Pi 5 hardware supports Command Queueing (CQ), which allows it to utilize the random read/write speed benefits of <b>A2-rated cards</b>. This makes the OS feel much snappier."
+      },
+      {
+        "q": "What is the max SD card size for Raspberry Pi 5?",
+        "a": "There is no artificial limit. Users have successfully used <b>1TB microSD cards</b>. However, 64GB or 128GB is the sweet spot for most projects."
+      },
+      {
+        "q": "Do I need a UHS-II card for Pi 5?",
+        "a": "<b>No.</b> The Pi 5 supports UHS-I SDR104 mode (approx. 100MB/s). It does not have the extra pins for UHS-II speeds. Stick to a high-quality UHS-I card."
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-4-model-b",
+      "orange-pi-5"
+    ],
+    "notes": "The Raspberry Pi 5 requires an A2-rated microSD card to fully utilize its new command queuing capabilities, making it significantly faster than previous models for desktop use."
+  },
+  {
+    "id": "raspberry-pi-4-model-b",
+    "name": "Raspberry Pi 4 Model B",
+    "category": "Single Board Computers",
+    "slug": "raspberry-pi-4-model-b",
+    "searchTerms": [
+      "raspberry pi 4 sd card",
+      "pi 4 microsd",
+      "raspberry pi 4 storage"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "Like all Raspberry Pis, the Pi 4 runs its OS from the microSD card. An A1 or A2 rated card is crucial for good performance. The A-rating signifies faster random access speeds, which translates to a more responsive desktop experience and faster application launch times.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is a V30 card good for a Raspberry Pi 4?",
+        "a": "<b>A V30 rating is not the most important spec. Look for an A1 or A2 rating instead.</b> The V30 rating is for video and doesn't affect OS performance. The Application Performance Class (A1/A2) is what makes the Pi 4 feel fast and responsive."
+      },
+      {
+        "q": "What is the minimum recommended capacity for Raspberry Pi 4?",
+        "a": "<b>A 32GB card is a good minimum for Raspberry Pi OS with a desktop environment.</b> This leaves enough space for installing several applications and for project files. For more complex projects or storing media, 64GB or larger is recommended."
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-5",
+      "raspberry-pi-3-model-b-plus"
+    ],
+    "notes": "Still one of the most popular SBCs in the world. The distinction between video speed (V) and application speed (A) is a key point for users."
+  },
+  {
+    "id": "raspberry-pi-3-model-b-plus",
+    "name": "Raspberry Pi 3 Model B+",
+    "category": "Single Board Computers",
+    "slug": "raspberry-pi-3-model-b-plus",
+    "searchTerms": [
+      "raspberry pi 3 sd card",
+      "pi 3 microsd",
+      "raspberry pi 3 storage",
+      "pi 3 b+ sd card"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "16GB",
+        "32GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "The Raspberry Pi 3 is less powerful than newer models, but its performance still benefits from a fast card. A Class 10 card is the minimum for a usable experience. An A1-rated card is recommended as it provides a noticeable boost in OS responsiveness, especially when launching applications or booting up.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need a fast card for the Raspberry Pi 3?",
+        "a": "<b>Yes, a Class 10 card is the minimum you should use.</b> While the Pi 3 is not as fast as a Pi 4 or 5, using a slow, non-rated card will result in a very sluggish and frustrating user experience. An A1-rated card is the best value for performance."
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-4-model-b",
+      "raspberry-pi-zero-2-w"
+    ],
+    "notes": "An older but still widely used model for many DIY projects. Card requirements are less stringent than for Pi 4/5, but a quality card is still important."
+  },
+  {
+    "id": "raspberry-pi-zero-2-w",
+    "name": "Raspberry Pi Zero 2 W",
+    "category": "Single Board Computers",
+    "slug": "raspberry-pi-zero-2-w",
+    "searchTerms": [
+      "raspberry pi zero 2 sd card",
+      "pi zero 2 w microsd",
+      "pi zero storage"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "16GB",
+        "32GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "The Pi Zero 2 W is used for compact, embedded projects. A reliable Class 10 card with A1 app performance is essential for the operating system to run smoothly. Since these projects are often 'headless' (no monitor), card reliability is more important than extreme speed, but a slow card will still impact boot time and script execution.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much storage do I need for a Pi Zero 2 W project?",
+        "a": "<b>For most headless projects, a 16GB card is sufficient.</b> It provides enough space for Raspberry Pi OS Lite and project scripts. If you are running a desktop environment or a project that logs a lot of data, choose a 32GB card."
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-3-model-b-plus",
+      "raspberry-pi-4-model-b"
+    ],
+    "notes": "Extremely popular for small-form-factor projects like Pi-hole or robotics. Card reliability is key for 'set-it-and-forget-it' applications."
+  },
+  {
+    "id": "orange-pi-5",
+    "name": "Orange Pi 5 / 5B / 5 Plus",
+    "category": "Single Board Computers",
+    "slug": "orange-pi-5",
+    "searchTerms": [
+      "orange pi 5 sd card compatibility",
+      "orange pi 5 tf card",
+      "best os drive for orange pi 5"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U3 / A1",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB"
+      ],
+      "maxCapacity": "Tested up to 512GB"
+    },
+    "whySpecs": "The Orange Pi 5 is a powerhouse, but its microSD slot is limited to UHS-I speeds. While it can boot from SD, performance is significantly better if you use the SD card only for bootloader (u-boot) and run the OS from an NVMe SSD. If using SD only, an A2 card is recommended for durability.",
+    "recommendedBrands": [
+      {
+        "id": "samsung-evo-plus-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Should I run the OS from SD card or NVMe on Orange Pi 5?",
+        "a": "<b>NVMe is much faster.</b> The SD card slot is limited to ~100MB/s, while the NVMe slot reaches 2000MB/s+. Use a small SD card to boot, but install the OS on an SSD for the best experience."
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-5",
+      "raspberry-pi-4-model-b"
+    ],
+    "notes": "While the Orange Pi 5 supports booting from a microSD card, advanced users should prioritize NVMe SSDs for the OS and use the SD card primarily for backup storage or light data logging."
+  },
+  {
+    "id": "samsung-galaxy-tab-s9",
+    "name": "Samsung Galaxy Tab S9 / S9+ / Ultra",
+    "category": "Tablets",
+    "slug": "samsung-galaxy-tab-s9",
+    "searchTerms": [
+      "galaxy tab s9 sd card",
+      "samsung tab s9 expandable storage",
+      "tab s9 ultra memory card"
+    ],
+    "sdCard": {
+      "type": "microSDXC",
+      "minSpeed": "U3 / V30 / A2",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "1TB (Official)"
+    },
+    "whySpecs": "The Tab S9 series features a stunning OLED screen perfect for high-bitrate media. While it supports up to 1TB, the slot is UHS-I. Buying expensive UHS-II cards is unnecessary as they will be capped at UHS-I speeds (~100MB/s). Focus on V30/A2 ratings for 4K playback and decent app performance.",
+    "recommendedBrands": [
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I move apps to the SD card on Galaxy Tab S9?",
+        "a": "<b>Partially.</b> Samsung allows you to move some app data to the SD card via Settings > Apps, but they generally disable the 'Format as Internal' feature. High-performance games should stay on internal storage, while the SD card is best for <b>movies, photos, and documents</b>."
+      },
+      {
+        "q": "Does the Tab S9 support 1.5TB cards?",
+        "a": "Officially, Samsung states <b>1TB is the maximum</b>. While larger cards (like 1.5TB) might work, 1TB is the guaranteed limit."
+      }
+    ],
+    "relatedDevices": [
+      "amazon-fire-max-11",
+      "amazon-fire-hd-10"
+    ],
+    "notes": "As a premium Android tablet, the Galaxy Tab S9 supports up to 1TB microSD cards, but users should avoid expensive UHS-II cards since the device is limited to UHS-I speeds."
+  },
+  {
+    "id": "amazon-fire-hd-10",
+    "name": "Amazon Fire HD 10 (2023)",
+    "category": "Tablets",
+    "slug": "amazon-fire-hd-10",
+    "searchTerms": [
+      "fire hd 10 sd card max size",
+      "kindle fire hd 10 memory card",
+      "best sd card for fire tablet"
+    ],
+    "sdCard": {
+      "type": "microSDXC",
+      "minSpeed": "Class 10 (U1 minimum, V30 recommended)",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Amazon's Fire OS allows you to format cards as 'Internal Storage' to install apps. Because running apps requires high random input/output, a Class 10 card is the absolute minimum, but an <b>A1-rated card</b> is strongly recommended to prevent the tablet from becoming sluggish.",
+    "recommendedBrands": [
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Should I format my SD card as Portable or Internal storage?",
+        "a": "If you want to install apps on the card, choose <b>Internal Storage</b>. If you only want to store movies and photos to swap between devices, choose <b>Portable Storage</b>. Note that 'Internal' encrypts the card to that specific tablet."
+      },
+      {
+        "q": "Why is my Fire tablet slow after adding an SD card?",
+        "a": "This happens if you use a cheap or old SD card (Class 4 or generic) formatted as Internal Storage. Always use a <b>Class 10, A1-rated card</b> from a reputable brand like Samsung or SanDisk to maintain performance."
+      }
+    ],
+    "relatedDevices": [
+      "amazon-fire-max-11"
+    ],
+    "notes": "This budget-friendly tablet requires a Class 10 A1 microSD card to run apps smoothly, as slower cards often cause significant lag when formatted as internal storage."
+  },
+  {
+    "id": "amazon-fire-max-11",
+    "name": "Amazon Fire Max 11",
+    "category": "Tablets",
+    "slug": "amazon-fire-max-11",
+    "searchTerms": [
+      "fire max 11 expansion",
+      "amazon fire max 11 sd card limit"
+    ],
+    "sdCard": {
+      "type": "microSDXC",
+      "minSpeed": "U1 / A1",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "As a media-centric device with a higher resolution screen, the Fire Max 11 benefits from V30 rated cards for smooth 1080p offline video playback. Like other Fire tablets, it supports up to 1TB, allowing for massive offline libraries.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the max SD card size for Fire Max 11?",
+        "a": "The Fire Max 11 officially supports microSD cards up to <b>1TB</b>."
+      },
+      {
+        "q": "Does the Fire Max 11 come with an SD card?",
+        "a": "No, it is sold separately. You must purchase a <b>microSDXC card</b> to expand storage."
+      }
+    ],
+    "relatedDevices": [
+      "amazon-fire-hd-10",
+      "samsung-galaxy-tab-s9"
+    ],
+    "notes": "The Fire Max 11 supports up to 1TB storage expansion, making it ideal for users who need a V30 microSD card to store large libraries of downloaded HD movies and games."
+  },
+  {
+    "id": "ipad-pro",
+    "name": "iPad Pro",
+    "category": "Tablets",
+    "slug": "ipad-pro",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "sandisk-extreme-pro-uhs2-usbc"
+    ],
+    "searchTerms": [
+      "ipad pro",
+      "ipad pro 11",
+      "ipad pro 12.9",
+      "ipad pro sd card reader",
+      "best sd card for ipad pro"
+    ],
+    "sdCard": {
+      "type": "External via USB-C Reader",
+      "minSpeed": "UHS-II recommended",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ]
+    },
+    "whySpecs": "iPad Pro uses USB-C or Thunderbolt. Supports fast external readers.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "ipad-air"
+    ]
+  },
+  {
+    "id": "ipad-air",
+    "name": "iPad Air",
+    "category": "Tablets",
+    "slug": "ipad-air",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "sandisk-extreme-pro-uhs2-usbc"
+    ],
+    "searchTerms": [
+      "ipad air",
+      "ipad air 5",
+      "ipad air 6",
+      "ipad air sd card reader",
+      "best sd card for ipad air"
+    ],
+    "sdCard": {
+      "type": "External via USB-C Reader",
+      "minSpeed": "UHS-II recommended",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ]
+    },
+    "whySpecs": "iPad Air uses USB-C for external storage expansion.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "ipad-pro"
+    ]
+  },
+  {
+    "id": "ipad-9th-gen",
+    "name": "iPad 9th Generation",
+    "category": "Tablets",
+    "slug": "ipad-9th-gen",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "lexar-lightning-microsd"
+    ],
+    "searchTerms": [
+      "ipad 9th generation",
+      "ipad 9",
+      "ipad 9 sd card reader",
+      "ipad 9th gen external storage"
+    ],
+    "sdCard": {
+      "type": "External via Lightning Reader",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "iPad 9th Gen uses Lightning port.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-lightning-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "ipad-air",
+      "iphone-13"
+    ]
+  },
+  {
+    "id": "ipad-air-3rd-gen",
+    "name": "iPad Air (3rd Generation)",
+    "category": "Tablets",
+    "slug": "ipad-air-3rd-generation",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "lexar-lightning-microsd"
+    ],
+    "searchTerms": [
+      "ipad air 3rd generation",
+      "ipad air 3",
+      "ipad air 3 sd card reader",
+      "ipad air 3rd gen external storage"
+    ],
+    "sdCard": {
+      "type": "External via Lightning Reader",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "iPad Air 3 uses Lightning port (older model).",
+    "recommendedBrands": [
+      {
+        "id": "lexar-lightning-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "ipad-air",
+      "ipad-pro"
+    ]
+  },
+  {
+    "id": "macbook-pro-14-16-m3",
+    "name": "MacBook Pro (14/16-inch, M1/M2/M3)",
+    "category": "Laptops",
+    "slug": "macbook-pro-m3",
+    "searchTerms": [
+      "macbook pro m3 sd card slot speed",
+      "macbook pro 14 sd card support",
+      "best sd card for macbook pro"
+    ],
+    "sdCard": {
+      "type": "Full-size SDXC (UHS-II)",
+      "minSpeed": "UHS-II (V60 or V90 recommended)",
+      "minWriteSpeed": "90 MB/s+",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB+"
+    },
+    "whySpecs": "Unlike the Air or older models, the modern 14-inch and 16-inch MacBook Pros feature a dedicated high-speed SDXC slot. This slot supports <b>UHS-II</b>, allowing transfer speeds up to 312MB/s. To get the most out of this port for video editing or photography, a UHS-II card is essential.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-sd"
+      },
+      {
+        "id": "lexar-professional-2000x"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need an adapter for MacBook Pro M3?",
+        "a": "<b>No.</b> The 14-inch and 16-inch models have a built-in full-size SD card slot. You only need an adapter if you are using a <i>micro</i>SD card."
+      },
+      {
+        "q": "Is the MacBook Pro SD slot UHS-I or UHS-II?",
+        "a": "It is <b>UHS-II</b>. Using a UHS-II card will give you read speeds approx 3x faster (up to 300MB/s) than standard UHS-I cards, which is huge for transferring 4K footage."
+      }
+    ],
+    "relatedDevices": [
+      "dell-xps-15"
+    ],
+    "notes": "Modern MacBook Pro models (M1/M2/M3 Pro & Max) feature a dedicated high-speed UHS-II SD card slot, eliminating the need for dongles for professional photographers and video editors."
+  },
+  {
+    "id": "hp-chromebook-14",
+    "name": "HP Chromebook 14",
+    "category": "Laptops",
+    "slug": "hp-chromebook-14",
+    "searchTerms": [
+      "chromebook sd card slot",
+      "expand storage hp chromebook",
+      "install linux on chromebook sd card"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "Usually 512GB (Model dependent)"
+    },
+    "whySpecs": "Most HP Chromebook 14 models feature a microSD slot for easy storage expansion. Since ChromeOS treats SD cards primarily as external storage for downloads and files (not for installing Android apps directly), a standard Class 10 U1 card is sufficient and cost-effective.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I install Android apps on a Chromebook SD card?",
+        "a": "<b>Generally, no.</b> ChromeOS installs Android apps to internal storage. You can, however, use the SD card to store data for some apps (like Netflix downloads) and Linux (Beta) containers."
+      },
+      {
+        "q": "Does the card stick out of the slot?",
+        "a": "On most HP 14 models, the microSD card sits <b>flush</b> with the chassis, allowing you to leave it in permanently as a secondary drive."
+      }
+    ],
+    "relatedDevices": [],
+    "notes": "The HP Chromebook 14 offers a flush-sitting microSD slot perfect for semi-permanent storage expansion, though users should note that Android apps typically cannot be installed directly to the card."
+  },
+  {
+    "id": "iphone-15",
+    "name": "iPhone 15 / 15 Pro",
+    "category": "Phones",
+    "slug": "iphone-15",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "ugreen-2in1-usbc-usb3",
+      "sandisk-extreme-pro-uhs2-usbc"
+    ],
+    "searchTerms": [
+      "iphone 15 sd card reader",
+      "transfer photos iphone 15 to sd card",
+      "iphone 15 usb-c storage",
+      "iphone 15 sd card",
+      "best sd card for iphone 15"
+    ],
+    "sdCard": {
+      "type": "External via USB-C Reader",
+      "minSpeed": "UHS-I recommended (UHS-II for Pro models)",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "No limit (depends on reader)"
+    },
+    "whySpecs": "The iPhone 15 series switched to USB-C, allowing direct connection of standard USB-C SD card readers without proprietary Lightning adapters. The 15 Pro models support USB 3 speeds (10Gbps), so using a high-speed UHS-II reader can rapidly offload ProRes video.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I record video directly to an SD card on iPhone 15 Pro?",
+        "a": "<b>Yes.</b> The iPhone 15 Pro and Pro Max allow recording ProRes 4K/60fps directly to external storage. However, SD cards are often too slow for this; a portable <b>USB-C SSD</b> is recommended for direct recording."
+      },
+      {
+        "q": "Do I need a special Apple reader?",
+        "a": "<b>No.</b> Any standard USB-C SD card reader will work with the iPhone 15 series. You can access files via the 'Files' app."
+      }
+    ],
+    "relatedDevices": [
+      "ipad-air",
+      "ipad-pro"
+    ],
+    "notes": "The iPhone 15 series introduces USB-C connectivity, allowing photographers to connect standard USB-C SD card readers directly to the phone for high-speed transfer of ProRes video and RAW photos."
+  },
+  {
+    "id": "iphone-14",
+    "name": "iPhone 14 / 13 / SE",
+    "category": "Phones",
+    "slug": "iphone-14",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "lexar-lightning-microsd"
+    ],
+    "searchTerms": [
+      "iphone lightning sd card reader",
+      "iphone 14 external storage",
+      "iphone 14 sd card",
+      "best sd card for iphone 14"
+    ],
+    "sdCard": {
+      "type": "External via Lightning Reader",
+      "minSpeed": "Class 10 (UHS-I)",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "No limit (depends on reader)"
+    },
+    "whySpecs": "These iPhones use the Lightning connector, which is limited to USB 2.0 speeds (approx 30MB/s). Buying expensive high-speed cards is a waste for offloading photos here, as the bottleneck is the Lightning port itself.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-lightning-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I expand storage on iPhone 14?",
+        "a": "<b>Not internally.</b> You must use a 'Lightning to SD Card Camera Reader' dongle to transfer photos off the device or view files. You cannot install apps onto it."
+      }
+    ],
+    "relatedDevices": [
+      "iphone-15"
+    ],
+    "notes": "Because the iPhone 14 relies on the legacy Lightning connector, data transfer speeds are limited to USB 2.0, making standard Class 10 SD cards the most cost-effective choice for offloading photos."
+  },
+  {
+    "id": "samsung-galaxy-s23",
+    "name": "Samsung Galaxy S23",
+    "category": "Phones",
+    "slug": "samsung-galaxy-s23",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "ugreen-2in1-usbc-usb3",
+      "sandisk-extreme-pro-uhs2-usbc"
+    ],
+    "searchTerms": [
+      "samsung galaxy s23",
+      "galaxy s23",
+      "samsung s23 sd card reader",
+      "galaxy s23 sd card"
+    ],
+    "sdCard": {
+      "type": "External via USB-C Reader",
+      "minSpeed": "UHS-I recommended",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ]
+    },
+    "whySpecs": "Galaxy S23 removed SD card slot. Uses USB-C readers for external access.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "google-pixel-8"
+    ]
+  },
+  {
+    "id": "google-pixel-8",
+    "name": "Google Pixel 8",
+    "category": "Phones",
+    "slug": "google-pixel-8",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "ugreen-2in1-usbc-usb3",
+      "sandisk-extreme-pro-uhs2-usbc"
+    ],
+    "searchTerms": [
+      "google pixel 8",
+      "pixel 8",
+      "pixel 8 sd card reader",
+      "pixel 8 external storage"
+    ],
+    "sdCard": {
+      "type": "External via USB-C Reader",
+      "minSpeed": "UHS-I recommended",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ]
+    },
+    "whySpecs": "Pixel 8 does not have SD card slot. Uses USB-C readers.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-s23",
+      "iphone-15"
+    ]
+  }
+]

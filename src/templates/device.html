@@ -97,30 +97,53 @@
                      width="1200" height="350" loading="lazy" />
                 <div class="hero-overlay">
                     <h1 class="hero-title" style="color: #ffffff;">
-                        Best SD Card for {{DEVICE_NAME_SHORT}}
+                        {{PAGE_TITLE}}
                     </h1>
                 </div>
             </div>
 
             <!-- Expert Recommendations Section -->
             <div class="mb-12">
-                <p class="text-xl text-slate-600">Expert recommendations based on {{DEVICE_NAME}} specifications</p>
+                <p class="text-xl text-slate-600">{{EXPERT_SUBTITLE}}</p>
             </div>
 
-            <!-- Answer Box - Quick Result -->
+            <!-- Important Notice for Devices without Native Slot -->
+            {{NO_SLOT_NOTICE}}
+
+            <!-- Answer Box - Quick Result (Dual for readers, Single for cards) -->
+            {{#if REQUIRES_READER}}
+            <div id="recommendations" class="answer-box-container scroll-mt-20 mb-12">
+                <div class="answer-box-dual">
+                    <div class="answer-box-item answer-box-primary">
+                        <p class="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">Step 1: Get a Reader</p>
+                        <p class="answer-text text-3xl font-bold text-blue-600 mb-4">{{READER_ANSWER}}</p>
+                        <p class="text-slate-700">{{READER_EXPLANATION}}</p>
+                    </div>
+                    <div class="answer-box-item answer-box-secondary">
+                        <p class="text-sm font-semibold text-green-600 uppercase tracking-wide mb-2">Step 2: Choose an SD Card</p>
+                        <p class="answer-text text-3xl font-bold text-green-600 mb-4">{{CARD_ANSWER}}</p>
+                        <p class="text-slate-700">{{CARD_EXPLANATION}}</p>
+                    </div>
+                </div>
+            </div>
+            {{else}}
             <div id="recommendations"
                 class="bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-2xl p-8 mb-12 shadow-sm scroll-mt-20">
                 <p class="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">Recommended SD Card</p>
                 <p class="answer-text text-4xl font-bold text-blue-600 mb-4">{{ANSWER_TEXT}}</p>
                 <p class="answer-explanation text-lg text-slate-700 leading-relaxed">{{ANSWER_EXPLANATION}}</p>
             </div>
+            {{/if}}
 
             <!-- Requirements Box -->
             {{REQUIREMENTS_BOX}}
 
+            <!-- SD Card Reader Recommendations (for devices without native slot) -->
+            {{READER_RECOMMENDATIONS_SECTION}}
+
             <!-- Specs Grid -->
             <section id="specifications" class="mb-16 scroll-mt-20">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6">Detailed Specifications</h2>
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">{{SPECS_SECTION_TITLE}}</h2>
                 <div class="specs-grid grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {{SPECS_HTML}}
                 </div>
@@ -128,7 +151,10 @@
 
             <!-- Recommended Brands Section -->
             <section id="brands" class="mb-16 scroll-mt-20">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6">Top SD Card Recommendations</h2>
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">{{BRANDS_SECTION_TITLE}}</h2>
+                {{#if REQUIRES_READER}}
+                <p class="text-slate-600 mb-6">Once you have a reader, these are the best SD cards to use with your {{DEVICE_NAME}}:</p>
+                {{/if}}
                 <p class="text-xs text-slate-500 mb-4 opacity-70">This website contains affiliate links. We may earn a small commission when you purchase through our links at no extra cost to you.</p>
                 <div class="overflow-x-auto brands-table-container">
                     <table class="brands-table w-full">
