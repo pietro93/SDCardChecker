@@ -4328,61 +4328,6 @@
       ]
     },
     {
-      "id": "hp-chromebook",
-      "name": "HP Chromebook",
-      "category": "Computing & Tablets",
-      "slug": "hp-chromebook",
-      "searchTerms": [
-        "hp chromebook",
-        "chromebook"
-      ],
-      "sdCard": {
-        "type": "External via USB Reader",
-        "minSpeed": "UHS-I",
-        "recommendedCapacity": [
-          "64GB",
-          "128GB"
-        ]
-      },
-      "whySpecs": "Chromebooks support external SD readers via USB.",
-      "recommendedBrands": [
-        {
-          "id": "htrenc-sd-card-reader"
-        }
-      ],
-      "relatedDevices": [
-        "dell-xps"
-      ]
-    },
-    {
-      "id": "dell-xps",
-      "name": "Dell XPS Laptop",
-      "category": "Computing & Tablets",
-      "slug": "dell-xps",
-      "searchTerms": [
-        "dell xps",
-        "xps laptop"
-      ],
-      "sdCard": {
-        "type": "External via USB-C Reader",
-        "minSpeed": "UHS-I",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB"
-        ]
-      },
-      "whySpecs": "Dell XPS laptops typically lack SD slot. USB-C readers compatible.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
-        }
-      ],
-      "relatedDevices": [
-        "macbook-pro",
-        "hp-chromebook"
-      ]
-    },
-    {
       "id": "macbook-pro",
       "name": "MacBook Pro",
       "category": "Computing & Tablets",
@@ -4466,34 +4411,6 @@
       "relatedDevices": [
         "ipad-air",
         "iphone-13"
-      ]
-    },
-    {
-      "id": "windows-laptop",
-      "name": "Windows Laptop",
-      "category": "Computing & Tablets",
-      "slug": "windows-laptop",
-      "searchTerms": [
-        "windows laptop",
-        "pc laptop"
-      ],
-      "sdCard": {
-        "type": "External via USB Reader",
-        "minSpeed": "UHS-I",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB"
-        ]
-      },
-      "whySpecs": "Most Windows laptops lack SD slot. USB readers required.",
-      "recommendedBrands": [
-        {
-          "id": "htrenc-sd-card-reader"
-        }
-      ],
-      "relatedDevices": [
-        "dell-xps",
-        "macbook-pro"
       ]
     },
     {
@@ -7507,8 +7424,8 @@
     }
   ],
   "metadata": {
-    "generated": "2025-12-30T09:26:22.242Z",
-    "totalDevices": 170,
+    "generated": "2025-12-30T09:46:47.915Z",
+    "totalDevices": 167,
     "categories": [
       "Action Cameras",
       "Audio & Hi-Fi",
