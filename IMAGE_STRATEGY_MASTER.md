@@ -428,8 +428,8 @@ These already have intelligent fallbacks that work perfectly:
 - **File size:** <100KB
 - **Content:** Reader device photo on white/neutral background
 - **Location:** `/img/readers/{filename}.webp`
-- **Current:** Generic `sd-card-reader-placeholder.webp` for all 14 readers (phase 1)
-- **Status:** Phase 2 (post-launch) can add brand-specific reader images
+- **Current:** Brand-specific images (Kikosaka, Hicober) + generic fallback
+- **Status:** Phase 2 (post-launch) - 2 brand-specific readers implemented, more can be added
 
 ---
 
@@ -455,33 +455,48 @@ Each category page displays a dedicated icon in the hero section:
 
 ### Current Implementation
 
-All 14 SD card readers currently share a single generic placeholder:
+SD card readers use intelligent brand-based fallback system:
 
+**Brand-Specific Images (Phase 2 Complete):**
 ```
-/img/readers/sd-card-reader-placeholder.webp
+/img/readers/kikosaka-sd-card-reader.webp       (Kikosaka brand fallback)
+/img/readers/hicober-sd-card-reader.webp        (Hicober brand fallback)
+/img/readers/sd-card-reader-placeholder.webp    (Generic fallback)
 ```
 
-**Devices covered:**
-- SanDisk Extreme Pro (multi-card reader)
-- ProGrade Digital SD Reader
-- Kingston Workflow Station
-- Apple SD Card Reader
-- Sony MRW-G1 & MRW-G2
-- Generic USB-C/USB-A readers
-- And 7 others
+**Device Coverage:**
+- **Kikosaka readers** → `kikosaka-sd-card-reader.webp` (all Kikosaka models)
+- **Hicober readers** → `hicober-sd-card-reader.webp` (all Hicober models)
+- **All other readers** → Generic placeholder
+  - SanDisk Extreme Pro
+  - ProGrade Digital
+  - Kingston Workflow Station
+  - Apple SD Card Reader
+  - Sony MRW-G1 & MRW-G2
+  - Lexar Lightning adapters
+  - Muddy & Stealth Cam viewers
+  - And 6+ others
 
-### Fallback Logic
+### Brand Detection Fallback Logic
 
-The generator automatically maps all reader devices to this placeholder via `getReaderImageFallback()` in helpers.js. Works seamlessly—no broken images ever appear.
+The generator automatically maps readers based on brand name via `getReaderImageFallback()` in helpers.js:
 
-### Future Enhancement (Phase 2)
+```javascript
+// In helpers.js - Reader brand detection
+if (name.includes("kikosaka")) return "/img/readers/kikosaka-sd-card-reader.webp";
+if (name.includes("hicober")) return "/img/readers/hicober-sd-card-reader.webp";
+return "/img/readers/sd-card-reader-placeholder.webp"; // fallback
+```
 
-Post-launch, can add brand-specific reader images:
-- `sandisk-extreme-pro-reader.webp`
-- `prograde-sd-reader.webp`
-- `kingston-workflow-station.webp`
+Works seamlessly—no broken images ever appear.
 
-Simply add to `/img/readers/` and update mapping in helpers.js. Existing fallback ensures backward compatibility.
+### Adding More Brand-Specific Reader Images
+
+Simply create a new image file and add to brand detection:
+
+1. **Create image:** `img/readers/{brand-name}-sd-card-reader.webp` (300×300px)
+2. **Update helpers.js:** Add brand detection logic
+3. **Rebuild:** Images automatically apply to all readers with matching brand name
 
 ---
 
@@ -633,23 +648,22 @@ After adding new images:
 
 ## Summary
 
-✅ **Extended coverage:** 50+ real device images (30%) + smart fallbacks for 120+ devices (70%)
-✅ **Brand-specific detection:** 25+ brands now have dedicated images or smart brand detection
+✅ **Device images:** 50+ real device images (30%) + smart fallbacks for 120+ devices (70%)
+✅ **Reader images:** Brand-specific fallbacks (Kikosaka, Hicober) + generic placeholder for 14 readers
+✅ **Card images:** 15+ SD card product images with speed-class fallbacks
+✅ **Brand-specific detection:** 27+ brands now have dedicated images or smart brand detection
 ✅ **Category-based fallbacks:** Camera → sony-placeholder, Drone → drone-placeholder, Audio → audio-hi-fi images, etc.
-✅ **New image mappings in helpers.js:** 
-   - Gaming: Lenovo, Anbernic, Retroid, Miyoo
-   - Cameras: Leica, Lumix, Reolink
-   - Drones: DJI Air 3
-   - Dashcams: Japanese brands (Yupiteru, Kenwood, COMTEC, Cellstar)
-   - **Audio & Hi-Fi: Sony Walkman, HiBy, Zoom, Tascam, FiiO, Astell&Kern** (7 new device images)
+✅ **Image mappings in helpers.js:** 
+   - **Device brands:** Gaming (Lenovo, Anbernic, Retroid, Miyoo), Cameras (Leica, Lumix, Reolink), Drones (DJI Air 3), Dashcams (Yupiteru, Kenwood, COMTEC, Cellstar), Audio & Hi-Fi (Sony Walkman, HiBy, Zoom, Tascam, FiiO, Astell&Kern)
+   - **Reader brands:** Kikosaka, Hicober (with expansion potential for more brands)
 
 **For future additions:**
-- Follow the same pattern in helpers.js: add device slug or brand detection
-- Images go in appropriate category folder (gaming-consoles, cameras, drones, etc.)
-- Brand detection in helpers.js ensures all variants covered automatically
-- No changes needed to devices.json—fallback system picks up automatically
+- **Device images:** Follow same pattern in helpers.js: add device slug or brand detection → images automatically apply to all variants
+- **Reader images:** Create `img/readers/{brand-name}-sd-card-reader.webp` → update brand detection → all readers of that brand use it
+- Brand detection ensures all variants covered automatically
+- No changes needed to JSON data—fallback system picks up automatically
 
-**Key principle:** One image can serve 5-8 related devices through smart brand/category detection. Invest in images that have high ROI across multiple products.
+**Key principle:** One image can serve 5-8 related products through smart brand/category detection. Invest in images that have high ROI across multiple products.
 
 ---
 

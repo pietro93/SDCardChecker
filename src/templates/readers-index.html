@@ -66,13 +66,25 @@
   <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
     <main class="flex-1">
       <!-- Hero Section -->
-      <div class="mb-12">
-        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-          Best SD Card Readers
-        </h1>
-        <p class="text-lg text-slate-700 leading-relaxed">
-          Find the perfect SD card reader for your needs. Compare 14 top-rated models with detailed specs, pros/cons, compatibility, and Amazon pricing.
-        </p>
+      <div class="mb-12 flex items-center gap-6">
+        <div class="reader-icon-hero">
+          <img 
+            src="/img/brand/icon-card-reader.webp" 
+            alt="SD Card Reader icon" 
+            width="80" 
+            height="80" 
+            loading="eager"
+            decoding="async"
+          >
+        </div>
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+            Best SD Card Readers
+          </h1>
+          <p class="text-lg text-slate-700 leading-relaxed">
+            Find the perfect SD card reader for your needs. Compare 14 top-rated models with detailed specs, pros/cons, compatibility, and Amazon pricing.
+          </p>
+        </div>
       </div>
 
       <!-- Quick Stats -->
@@ -123,5 +135,32 @@
   </div>
 
   {{FOOTER}}
-</body>
-</html>
+
+  <style>
+   .reader-icon-hero {
+     flex-shrink: 0;
+   }
+
+   .reader-icon-hero img {
+     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+   }
+
+   @media (max-width: 768px) {
+     .mb-12.flex {
+       flex-direction: column;
+       align-items: flex-start;
+     }
+
+     .reader-icon-hero {
+       width: 64px;
+       height: 64px;
+     }
+
+     .reader-icon-hero img {
+       width: 64px;
+       height: 64px;
+     }
+   }
+  </style>
+  </body>
+  </html>
