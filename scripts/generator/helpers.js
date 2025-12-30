@@ -822,9 +822,12 @@ function getReaderImageFallback(reader, imgDirectory = './img/readers') {
     return reader.heroImage;
   }
 
-  // Try brand-level fallback
-  const brandImagePath = `/img/readers/${reader.brand.toLowerCase()}.webp`;
-  const brandImageFullPath = path.join(imgDirectory, `${reader.brand.toLowerCase()}.webp`);
+  // Try brand-level fallback with full naming convention
+  const brandLower = reader.brand.toLowerCase();
+  
+  // Check for brand-specific image (e.g., kikosaka-sd-card-reader.webp)
+  const brandImagePath = `/img/readers/${brandLower}-sd-card-reader.webp`;
+  const brandImageFullPath = path.join(imgDirectory, `${brandLower}-sd-card-reader.webp`);
   
   if (fs.existsSync(brandImageFullPath)) {
     return brandImagePath;
