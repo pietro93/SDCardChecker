@@ -458,13 +458,21 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
 
     // PAGE_TITLE (targets both searches for reader-only devices)
     const pageTitle = requiresReader
-        ? `Best SD Cards & Readers for ${device.name}`
-        : `Best SD Card for ${device.name}`;
+        ? (isJapanese 
+            ? `${device.name}向けの最高のSDカード & リーダー`
+            : `Best SD Cards & Readers for ${device.name}`)
+        : (isJapanese
+            ? `${device.name}向けの最高のSDカード`
+            : `Best SD Card for ${device.name}`);
 
     // EXPERT_SUBTITLE
     const expertSubtitle = requiresReader
-        ? `Complete guide: ${connectorType} card readers and compatible SD cards for ${device.name}`
-        : `Expert recommendations based on ${device.name} specifications`;
+        ? (isJapanese
+            ? `完全ガイド: ${device.name}向けの${connectorType}カードリーダーと互換性のあるSDカード`
+            : `Complete guide: ${connectorType} card readers and compatible SD cards for ${device.name}`)
+        : (isJapanese
+            ? `${device.name}の仕様に基づく専門家による推奨情報`
+            : `Expert recommendations based on ${device.name} specifications`);
 
     // NO_SLOT_NOTICE
     let noSlotNotice = '';
