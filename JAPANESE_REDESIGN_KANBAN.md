@@ -76,9 +76,13 @@
 - [ ] Create "manufacturer certified" icon/badge
 
 #### Data Adjustments
-- [ ] Update CATEGORIES THAT MAKE `data/devices-ja.json` - Add "動作確認済み" trust flag (if not already present) PLEAES NOTE - WE DO NOT EDIT DEVICES-JA.JSON DIRECTLY, WE CHECK THE DATASET CATEGORY SNIPPETS INSIDE DATA/CATEGORY-JA THESE ARE USED TO BUILD THE UNIFIED DATASET
-- [ ] Update CATEGORIES THAT MAKE `data/devices-ja.json` - Reorder recommendedBrands (Nextorage first)
-- [ ] Update `data/brands-ja.json` - Ensure Nextorage is included and prioritized
+
+⚠️ **IMPORTANT WORKFLOW NOTE:** 
+We work with `data/categories-ja/*.json` files (dash-cams.json, drones.json, computing-and-tablets.json, etc.), NOT `data/devices-ja.json` directly. Category files are merged to build the unified dataset.
+
+- [x] Add "動作確認済み" trust language to whySpecs (PHASE 8 EXTENDED - COMPLETE)
+- [ ] Reorder recommendedBrands in categories (Nextorage → priority position)
+- [ ] Update `data/brands-ja.json` - Ensure Nextorage included & prioritized
 - [ ] Verify all searchTerms include Katakana variants
 
 #### Build & Generation
@@ -103,7 +107,48 @@
 - [ ] Test specs cards with new styling
 - [ ] Test FAQ accordion with Japanese text
 - [ ] Verify line breaks don't occur mid-word
-- [ ] Core Web Vitals check (LCP, CLS, INP)
+## **PHASE 8 - EXTENDED COMPLETE (19 tasks - 100%)**
+
+✅ **ALL EXTENDED TASKS DONE:**
+- ✅ Dash-cams.json (8 devices) - whySpecs updated with trust language
+- ✅ Drones.json (22 devices) - whySpecs updated with manufacturer spec messaging
+- ✅ Computing-and-tablets.json (16 devices) - A1/A2 trust language + 動作確認済み
+- ✅ Security-cameras.json (2 devices) - high endurance trust language
+- ✅ Smartphones.json (1 device) - Galaxy S23 reader recommendation
+- ⏭️ Audio-and-hi-fi.json (not found - skip)
+- ⏭️ Accessories.json (reader device - skip)
+
+**Key Achievement:** 48+ devices across 5 categories now have manufacturer spec compliance language embedded in whySpecs
+
+---
+
+## **NEXT IMMEDIATE TASK: PHASE 3**
+
+### Phase 3: HTML Template Updates (8 tasks)
+
+Homepage & Category Templates - Update with Japanese trust messaging:
+
+**home-ja.html** (4 tasks):
+- [ ] Update hero section with trust language (動作確認済み)
+- [ ] Add manufacturer spec compliance note
+- [ ] Ensure all devices shown have updated copy
+- [ ] Verify search terms include Katakana variants
+
+**category-ja.html** (4 tasks):
+- [ ] Add category-level trust badges
+- [ ] Update category descriptions with 動作確認済み
+- [ ] Ensure device cards show trust indicators
+- [ ] Test category filtering with Katakana search
+
+---
+
+## **ROADMAP: Remaining 30 Tasks**
+
+1. **Phase 3** (8 tasks): HTML template updates
+2. **Phase 4** (3 tasks): about-ja.html, faq-ja.html updates
+3. **Phase 6** (4 tasks): Brand reordering, Nextorage prioritization
+4. **Phase 9** (13 tasks): QA & Testing
+5. **Phase 10** (2 tasks): Final documentation
 - [ ] WCAG AA contrast ratios (especially Kanji readability)
 - [ ] Cross-browser testing (Chrome, Safari, Firefox, Edge)
 - [ ] Mobile responsiveness (320px-768px)
