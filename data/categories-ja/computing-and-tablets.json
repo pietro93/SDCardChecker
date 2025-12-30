@@ -42,38 +42,6 @@
     "notes": "巨大なDIYおよび技術者層をターゲットにしています。カードは必須コンポーネントです。"
   },
   {
-    "id": "iphone-15",
-    "name": "iPhone 15 / 15 Pro",
-    "category": "computing-and-tablets",
-    "slug": "iphone-15",
-    "searchTerms": [
-      "アイフォン 15",
-      "iphone 15 pro",
-      "iphone 15 sdカードリーダー"
-    ],
-    "sdCard": {
-      "type": "外部接続 (USB-C SDリーダー経由)",
-      "minSpeed": "公式要件なし",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ],
-      "maxCapacity": "アプリまたはリーダーに依存"
-    },
-    "whySpecs": "iPhone 15にはSDカードスロットがありません。外部SDカードへのアクセスにはUSB-Cリーダーを使用します。速度はデバイスではなくリーダーの性能に依存します。",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-pro-uhs2-usbc"
-      }
-    ],
-    "relatedDevices": [
-      "iphone-14",
-      "iphone-13",
-      "ipad-pro"
-    ],
-    "notes": "USB-C搭載により、高速な外部ストレージやカードリーダーが直接利用可能になりました。"
-  },
-  {
     "id": "macbook-air",
     "name": "MacBook Air",
     "category": "computing-and-tablets",
@@ -105,36 +73,6 @@
     "notes": "内蔵スロットがないため、ドングルやハブが必須です。"
   },
   {
-    "id": "iphone-14",
-    "name": "iPhone 14 / 14 Pro",
-    "category": "computing-and-tablets",
-    "slug": "iphone-14",
-    "searchTerms": [
-      "アイフォン 14",
-      "iphone 14 sdカード",
-      "ライトニング sdカードリーダー"
-    ],
-    "sdCard": {
-      "type": "外部接続 (Lightningリーダー経由)",
-      "minSpeed": "UHS-I",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ]
-    },
-    "whySpecs": "iPhone 14はLightningポートを使用します。SDカードを読み込むにはLightning接続のリーダーが必要です。多くのリーダーはUSB 2.0速度に制限されることに注意してください。",
-    "recommendedBrands": [
-      {
-        "id": "lexar-lightning-microsd"
-      }
-    ],
-    "relatedDevices": [
-      "iphone-15",
-      "iphone-13"
-    ],
-    "notes": ""
-  },
-  {
     "id": "ipad-air",
     "name": "iPad Air",
     "category": "computing-and-tablets",
@@ -163,35 +101,6 @@
       "ipad-air-3"
     ],
     "notes": ""
-  },
-  {
-    "id": "samsung-galaxy-s23",
-    "name": "Samsung Galaxy S23",
-    "category": "computing-and-tablets",
-    "slug": "samsung-galaxy-s23",
-    "searchTerms": [
-      "ギャラクシー s23",
-      "galaxy s23 sdカード",
-      "samsung s23 容量"
-    ],
-    "sdCard": {
-      "type": "外部接続 (USB-Cリーダー経由・スロットなし)",
-      "minSpeed": "要件なし",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ]
-    },
-    "whySpecs": "Galaxy S23シリーズはmicroSDカードスロットを廃止しています。外部SDカードを使用するには、USB-C接続のカードリーダーが必要です。",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-pro-uhs2-usbc"
-      }
-    ],
-    "relatedDevices": [
-      "google-pixel-8"
-    ],
-    "notes": "かつてはSDスロットがありましたが、現在は廃止されています。クラウドまたは外部ストレージが必要です。"
   },
   {
     "id": "ipad-pro",
@@ -690,65 +599,6 @@
     "notes": "シングルボード computer based on Rockchip RK3588S. Uses a TF/microSD slot for boot unless SPI + NVMe are configured."
   },
   {
-    "id": "iphone-13",
-    "name": "iPhone 13",
-    "category": "computing-and-tablets",
-    "slug": "iphone-13",
-    "searchTerms": [
-      "iphone 13",
-      "iphone 13 pro"
-    ],
-    "sdCard": {
-      "type": "External via Lightning Reader",
-      "minSpeed": "UHS-I",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ]
-    },
-    "whySpecs": "iPhone 13 uses Lightning port with microSD readers.",
-    "recommendedBrands": [
-      {
-        "id": "lexar-lightning-microsd"
-      }
-    ],
-    "faq": [],
-    "relatedDevices": [
-      "iphone-14"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "iphone-14-pro-max",
-    "name": "iPhone 14 Pro Max",
-    "category": "computing-and-tablets",
-    "slug": "iphone-14-pro-max",
-    "searchTerms": [
-      "iphone 14 pro max",
-      "iphone 14 max"
-    ],
-    "sdCard": {
-      "type": "External via Lightning Reader",
-      "minSpeed": "UHS-I",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ]
-    },
-    "whySpecs": "iPhone 14 Pro Max uses Lightning port.",
-    "recommendedBrands": [
-      {
-        "id": "lexar-lightning-microsd"
-      }
-    ],
-    "faq": [],
-    "relatedDevices": [
-      "iphone-14",
-      "iphone-15"
-    ],
-    "notes": ""
-  },
-  {
     "id": "ipad-air-3",
     "name": "iPad Air 3rd Generation",
     "category": "computing-and-tablets",
@@ -779,124 +629,6 @@
     "notes": ""
   },
   {
-    "id": "iphone-se",
-    "name": "iPhone SE",
-    "category": "computing-and-tablets",
-    "slug": "iphone-se",
-    "searchTerms": [
-      "iphone se",
-      "iphone se 3"
-    ],
-    "sdCard": {
-      "type": "External via Lightning Reader",
-      "minSpeed": "UHS-I",
-      "recommendedCapacity": [
-        "64GB"
-      ]
-    },
-    "whySpecs": "iPhone SE uses Lightning connector.",
-    "recommendedBrands": [
-      {
-        "id": "lexar-lightning-microsd"
-      }
-    ],
-    "faq": [],
-    "relatedDevices": [
-      "iphone-13",
-      "iphone-14"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "google-pixel-8",
-    "name": "Google Pixel 8",
-    "category": "computing-and-tablets",
-    "slug": "google-pixel-8",
-    "searchTerms": [
-      "google pixel 8",
-      "pixel 8"
-    ],
-    "sdCard": {
-      "type": "External via USB-C Reader (no slot)",
-      "minSpeed": "No requirement",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ]
-    },
-    "whySpecs": "Pixel 8 does not have SD card slot. Uses USB-C readers.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-pro-uhs2-usbc"
-      }
-    ],
-    "faq": [],
-    "relatedDevices": [
-      "samsung-galaxy-s23",
-      "iphone-15"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "hp-chromebook",
-    "name": "HP Chromebook",
-    "category": "computing-and-tablets",
-    "slug": "hp-chromebook",
-    "searchTerms": [
-      "hp chromebook",
-      "chromebook"
-    ],
-    "sdCard": {
-      "type": "External via USB Reader",
-      "minSpeed": "UHS-I",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ]
-    },
-    "whySpecs": "Chromebooks support external SD readers via USB.",
-    "recommendedBrands": [
-      {
-        "id": "htrenc-sd-card-reader"
-      }
-    ],
-    "faq": [],
-    "relatedDevices": [
-      "dell-xps"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "dell-xps",
-    "name": "Dell XPS Laptop",
-    "category": "computing-and-tablets",
-    "slug": "dell-xps",
-    "searchTerms": [
-      "dell xps",
-      "xps laptop"
-    ],
-    "sdCard": {
-      "type": "External via USB-C Reader",
-      "minSpeed": "UHS-I",
-      "recommendedCapacity": [
-        "128GB",
-        "256GB"
-      ]
-    },
-    "whySpecs": "Dell XPS laptops typically lack SD slot. USB-C readers compatible.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-pro-uhs2-usbc"
-      }
-    ],
-    "faq": [],
-    "relatedDevices": [
-      "macbook-pro",
-      "hp-chromebook"
-    ],
-    "notes": ""
-  },
-  {
     "id": "ipad-9th-gen",
     "name": "iPad 9th Generation",
     "category": "computing-and-tablets",
@@ -923,36 +655,6 @@
     "relatedDevices": [
       "ipad-air",
       "iphone-13"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "windows-laptop",
-    "name": "Windows Laptop",
-    "category": "computing-and-tablets",
-    "slug": "windows-laptop",
-    "searchTerms": [
-      "windows laptop",
-      "pc laptop"
-    ],
-    "sdCard": {
-      "type": "External via USB Reader",
-      "minSpeed": "UHS-I",
-      "recommendedCapacity": [
-        "128GB",
-        "256GB"
-      ]
-    },
-    "whySpecs": "Most Windows laptops lack SD slot. USB readers 必要d.",
-    "recommendedBrands": [
-      {
-        "id": "htrenc-sd-card-reader"
-      }
-    ],
-    "faq": [],
-    "relatedDevices": [
-      "dell-xps",
-      "macbook-pro"
     ],
     "notes": ""
   }
