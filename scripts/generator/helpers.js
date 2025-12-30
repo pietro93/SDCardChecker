@@ -245,6 +245,8 @@ function getDeviceImageFallback(device) {
     "zoom-h6": "/img/devices/audio-hi-fi/zoom-h6.webp",
     "tascam-dr-05x": "/img/devices/audio-hi-fi/tascam-dr-05x.webp",
     // Smartphones
+    "iphone-17": "/img/devices/smartphones/iphone-17.webp",
+    "iphone-16": "/img/devices/smartphones/iphone-16.webp",
     "iphone-15": "/img/devices/smartphones/iphone-15.webp",
     "iphone-14": "/img/devices/smartphones/iphone-14.webp",
     "iphone-13": "/img/devices/smartphones/iphone-13.webp",
