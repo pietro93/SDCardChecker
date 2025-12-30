@@ -84,7 +84,7 @@
 - [ ] Verify generated HTML includes all new components
 
 #### Content Updates
-- [ ] Revise datasets, FAQs with reference to @japanese_localization_guide for copy review
+- [x] Revise datasets, FAQs with reference to @japanese_localization_guide for copy review
 - [ ] Update answer box copy - Add "メーカー仕様準拠" language where appropriate
 - [ ] Update specs explanations - Cite official manufacturer specs where appropriate and available
 - [ ] Update FAQ - Address compatibility concerns (V20 vs V30, etc.)
@@ -148,16 +148,16 @@
 | Phase | Status | Tasks | % Complete |
 |-------|--------|-------|------------|
 | **Phase 1: Typography** | ✅ Done | 5/5 | 100% |
-| **Phase 2: Device Templates** | 🔄 In Progress | 7/7 | 43% |
-| **Phase 3: Homepage & Category** | 🔄 In Progress | 5/5 | 60% |
+| **Phase 2: Device Templates** | 🔄 In Progress | 8/8 | 37% |
+| **Phase 3: Homepage & Category** | 🔄 In Progress | 8/8 | 25% |
 | **Phase 4: Other Templates** | ⏳ Todo | 3/3 | 0% |
 | **Phase 5: Components** | ✅ Done | 6/6 | 100% |
 | **Phase 6: Data** | ⏳ Todo | 4/4 | 0% |
-| **Phase 7: Build & Generation** | ⏳ Todo | 2/2 | 0% |
-| **Phase 8: Content** | ⏳ Todo | 4/4 | 0% |
-| **Phase 9: Testing & QA** | ⏳ Todo | 12/12 | 0% |
+| **Phase 7: Build & Generation** | ⏳ Todo | 3/3 | 0% |
+| **Phase 8: Content** | ⏳ Todo | 5/5 | 0% |
+| **Phase 9: Testing & QA** | ⏳ Todo | 13/13 | 0% |
 | **Phase 10: Documentation** | ⏳ Todo | 3/3 | 0% |
-| **TOTAL** | **20% Complete** | **51 Tasks** | **10/51** |
+| **TOTAL** | **22% Complete** | **58 Tasks** | **13/58** |
 
 ---
 
@@ -207,12 +207,12 @@
 ## 📁 FILES TO UPDATE
 
 ### CSS Files (Create 1)
-- [ ] `src/css/modern-ja.css` - NEW file with Japanese-specific rules
+- [x] `src/css/modern-ja.css` - Created with Japanese-specific rules
 
 ### Template Files (Update 7 existing)
-- [ ] `src/templates/device-ja.html` - MAJOR changes
-- [ ] `src/templates/home-ja.html` - MINOR changes
-- [ ] `src/templates/category-ja.html` - MINOR changes
+- [ ] `src/templates/device-ja.html` - MAJOR changes needed
+- [ ] `src/templates/home-ja.html` - MINOR changes needed
+- [ ] `src/templates/category-ja.html` - MINOR changes needed
 - [ ] `src/templates/about-ja.html` - REVIEW
 - [ ] `src/templates/faq-ja.html` - REVIEW/FIX (quotation marks)
 - [ ] `src/templates/affiliate-disclosure-ja.html` - REVIEW
@@ -223,7 +223,8 @@
 - [ ] `data/devices-ja.json` - UPDATE (brand order, trust flags)
 - [ ] `data/brands-ja.json` - UPDATE (Nextorage priority)
 
-### No build script changes needed (should work as-is)
+### Build script changes
+- [ ] Review & test as needed
 
 ---
 
@@ -310,7 +311,7 @@ Launch
 Before launching redesigned Japanese site:
 
 - [ ] All templates updated
-- [ ] CSS modern-ja.css created and linked
+- [x] CSS modern-ja.css created and linked
 - [ ] No italics rendering anywhere
 - [ ] Trust badges visible on all device pages
 - [ ] PR disclosure at top of pages
