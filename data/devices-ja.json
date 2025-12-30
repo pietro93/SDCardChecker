@@ -1,32 +1,27 @@
 {
   "_metadata": {
     "language": "Japanese (日本語)",
-    "generated": "2025-12-30T09:46:47.925Z",
+    "generated": "2025-12-30T09:47:24.157Z",
     "totalDevices": 158,
     "categories": [
-      "UMPC / 携帯ゲーム機",
-      "アクションカメラ",
-      "アクセサリー",
-      "アーケードミニ",
-      "カメラ",
-      "コンピュータ・タブレット",
-      "スマートミラー",
-      "セキュリティカメラ",
-      "ドライブレコーダー",
-      "ドローン",
-      "バイク用ドライブレコーダー",
-      "レトロゲーム機",
-      "中華ゲーム機",
-      "携帯ゲーム機",
-      "高性能ドライブレコーダー"
+      "accessories",
+      "action-cameras",
+      "cameras",
+      "computing-and-tablets",
+      "dash-cams",
+      "drones",
+      "gaming-handhelds",
+      "retro-arcade",
+      "retro-handhelds",
+      "security-cameras"
     ],
-    "categoryCount": 15
+    "categoryCount": 10
   },
   "devices": [
     {
       "id": "anker-powerexpand-2in1",
       "name": "Anker PowerExpand+ 2-in-1 Reader",
-      "category": "アクセサリー",
+      "category": "accessories",
       "slug": "anker-powerexpand-2in1",
       "searchTerms": [
         "anker powerexpand",
@@ -45,7 +40,7 @@
     {
       "id": "gopro-hero-13",
       "name": "GoPro Hero 13 Black",
-      "category": "アクションカメラ",
+      "category": "action-cameras",
       "slug": "gopro-hero-13",
       "searchTerms": [
         "ゴープロ ヒーロー 13",
@@ -104,7 +99,7 @@
     {
       "id": "gopro-hero-12",
       "name": "GoPro Hero 12 Black",
-      "category": "アクションカメラ",
+      "category": "action-cameras",
       "slug": "gopro-hero-12",
       "searchTerms": [
         "ゴープロ ヒーロー 12",
@@ -153,7 +148,7 @@
     {
       "id": "dji-osmo-pocket-3",
       "name": "DJI Osmo Pocket 3",
-      "category": "アクションカメラ",
+      "category": "action-cameras",
       "slug": "dji-osmo-pocket-3",
       "searchTerms": [
         "dji pocket 3 sdカード",
@@ -198,7 +193,7 @@
     {
       "id": "insta360-x4",
       "name": "Insta360 X4",
-      "category": "アクションカメラ",
+      "category": "action-cameras",
       "slug": "insta360-x4",
       "searchTerms": [
         "insta360 x4",
@@ -249,7 +244,7 @@
     {
       "id": "insta360-x3",
       "name": "Insta360 X3",
-      "category": "アクションカメラ",
+      "category": "action-cameras",
       "slug": "insta360-x3",
       "searchTerms": [
         "insta360 x3 sdカード",
@@ -293,7 +288,7 @@
     {
       "id": "gopro-hero-max",
       "name": "GoPro Hero Max",
-      "category": "アクションカメラ",
+      "category": "action-cameras",
       "slug": "gopro-hero-max",
       "searchTerms": [
         "gopro hero max",
@@ -345,7 +340,7 @@
     {
       "id": "gopro-hero-11-black",
       "name": "GoPro Hero 11 Black",
-      "category": "アクションカメラ",
+      "category": "action-cameras",
       "slug": "gopro-hero-11-black",
       "searchTerms": [
         "gopro hero 11 black",
@@ -390,7 +385,7 @@
     {
       "id": "dji-osmo-action-4",
       "name": "DJI Osmo Action 4",
-      "category": "アクションカメラ",
+      "category": "action-cameras",
       "slug": "dji-osmo-action-4",
       "searchTerms": [
         "dji action 4",
@@ -440,7 +435,7 @@
     {
       "id": "insta360-go-3",
       "name": "Insta360 GO 3",
-      "category": "アクションカメラ",
+      "category": "action-cameras",
       "slug": "insta360-go-3",
       "searchTerms": [
         "insta360 go 3 sd card",
@@ -487,7 +482,7 @@
     {
       "id": "insta360-ace-pro",
       "name": "Insta360 Ace Pro",
-      "category": "アクションカメラ",
+      "category": "action-cameras",
       "slug": "insta360-ace-pro",
       "searchTerms": [
         "insta360 ace pro sd card",
@@ -535,7 +530,7 @@
     {
       "id": "insta360-one-x2",
       "name": "Insta360 ONE X2",
-      "category": "アクションカメラ",
+      "category": "action-cameras",
       "slug": "insta360-one-x2",
       "searchTerms": [
         "insta360 one x2 sd card",
@@ -585,7 +580,7 @@
     {
       "id": "gopro-max-2",
       "name": "GoPro Max 2",
-      "category": "アクションカメラ",
+      "category": "action-cameras",
       "slug": "gopro-max-2",
       "searchTerms": [
         "gopro max 2",
@@ -640,7 +635,7 @@
     {
       "id": "insta360-one-x3",
       "name": "Insta360 ONE X3",
-      "category": "アクションカメラ",
+      "category": "action-cameras",
       "slug": "insta360-one-x3",
       "searchTerms": [
         "insta360 one x3 sd card",
@@ -692,7 +687,7 @@
     {
       "id": "canon-eos-r5",
       "name": "Canon EOS R5",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "canon-eos-r5",
       "searchTerms": [
         "キャノン eos r5",
@@ -741,7 +736,7 @@
     {
       "id": "sony-a6700",
       "name": "Sony α6700 (ILCE-6700)",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "sony-a6700",
       "searchTerms": [
         "ソニー a6700",
@@ -790,7 +785,7 @@
     {
       "id": "sony-a7-iv",
       "name": "Sony α7 IV (ILCE-7M4)",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "sony-a7-iv",
       "searchTerms": [
         "sony a7 iv sdカード",
@@ -835,7 +830,7 @@
     {
       "id": "bmpcc-4k",
       "name": "Blackmagic Pocket Cinema Camera 4K",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "blackmagic-pocket-cinema-camera-4k",
       "searchTerms": [
         "bmpcc 4k カード",
@@ -879,7 +874,7 @@
     {
       "id": "fujifilm-x100vi",
       "name": "Fujifilm X100VI",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "fujifilm-x100vi",
       "searchTerms": [
         "富士フイルム x100vi",
@@ -930,7 +925,7 @@
     {
       "id": "nikon-zf",
       "name": "Nikon Z f",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "nikon-zf",
       "searchTerms": [
         "ニコン zf sdカード",
@@ -979,7 +974,7 @@
     {
       "id": "fujifilm-x-s20",
       "name": "Fujifilm X-S20",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "fujifilm-x-s20",
       "searchTerms": [
         "fujifilm x-s20",
@@ -1023,7 +1018,7 @@
     {
       "id": "nikon-z9",
       "name": "Nikon Z9",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "nikon-z9",
       "searchTerms": [
         "nikon z9",
@@ -1071,7 +1066,7 @@
     {
       "id": "canon-eos-r6-mark-ii",
       "name": "Canon EOS R6 Mark II",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "canon-eos-r6-mark-ii",
       "searchTerms": [
         "canon r6 ii sd card",
@@ -1115,7 +1110,7 @@
     {
       "id": "bmpcc-6k-pro",
       "name": "Blackmagic Pocket Cinema Camera 6K Pro",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "blackmagic-pocket-cinema-camera-6k-pro",
       "searchTerms": [
         "bmpcc 6k pro card",
@@ -1160,7 +1155,7 @@
     {
       "id": "nikon-z8",
       "name": "Nikon Z8",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "nikon-z8",
       "searchTerms": [
         "nikon z8 sd card",
@@ -1203,7 +1198,7 @@
     {
       "id": "panasonic-lumix-s1h",
       "name": "Panasonic Lumix S1H",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "panasonic-lumix-s1h",
       "searchTerms": [
         "panasonic lumix s1h sd card",
@@ -1242,7 +1237,7 @@
     {
       "id": "canon-eos-r50",
       "name": "Canon EOS R50",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "canon-eos-r50",
       "searchTerms": [
         "canon r50 sd card",
@@ -1292,7 +1287,7 @@
     {
       "id": "canon-eos-r7",
       "name": "Canon EOS R7",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "canon-eos-r7",
       "searchTerms": [
         "canon r7 sd card",
@@ -1339,7 +1334,7 @@
     {
       "id": "canon-eos-r10",
       "name": "Canon EOS R10",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "canon-eos-r10",
       "searchTerms": [
         "canon r10 sd card",
@@ -1388,7 +1383,7 @@
     {
       "id": "canon-eos-r8",
       "name": "Canon EOS R8",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "canon-eos-r8",
       "searchTerms": [
         "canon r8 sd card",
@@ -1434,7 +1429,7 @@
     {
       "id": "canon-rebel-t7",
       "name": "Canon EOS Rebel T7 (EOS 2000D)",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "canon-rebel-t7",
       "searchTerms": [
         "canon rebel t7 sd card",
@@ -1487,7 +1482,7 @@
     {
       "id": "canon-g7x-mark-iii",
       "name": "Canon PowerShot G7 X Mark III",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "canon-g7x-mark-iii",
       "searchTerms": [
         "canon g7x mark iii sd card",
@@ -1538,7 +1533,7 @@
     {
       "id": "canon-g7x-mark-ii",
       "name": "Canon PowerShot G7 X Mark II",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "canon-g7x-mark-ii",
       "searchTerms": [
         "canon g7x mark ii sd card",
@@ -1589,7 +1584,7 @@
     {
       "id": "fujifilm-xt5",
       "name": "Fujifilm X-T5",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "fujifilm-xt5",
       "searchTerms": [
         "fujifilm xt5 sd card",
@@ -1636,7 +1631,7 @@
     {
       "id": "fujifilm-xm5",
       "name": "Fujifilm X-M5",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "fujifilm-xm5",
       "searchTerms": [
         "fujifilm xm5 sd card",
@@ -1688,7 +1683,7 @@
     {
       "id": "fujifilm-xt30-ii",
       "name": "Fujifilm X-T30 II",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "fujifilm-xt30-ii",
       "searchTerms": [
         "fujifilm xt30 ii sd card",
@@ -1740,7 +1735,7 @@
     {
       "id": "fujifilm-xt50",
       "name": "Fujifilm X-T50",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "fujifilm-xt50",
       "searchTerms": [
         "fujifilm xt50 sd card",
@@ -1789,7 +1784,7 @@
     {
       "id": "sony-fx30",
       "name": "Sony FX30",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "sony-fx30",
       "searchTerms": [
         "sony fx30 sd card",
@@ -1839,7 +1834,7 @@
     {
       "id": "sony-fx3",
       "name": "Sony FX3",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "sony-fx3",
       "searchTerms": [
         "sony fx3 sd card",
@@ -1889,7 +1884,7 @@
     {
       "id": "fujifilm-xe5",
       "name": "Fujifilm X-E5",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "fujifilm-xe5",
       "searchTerms": [
         "fujifilm xe5 sd card",
@@ -1941,7 +1936,7 @@
     {
       "id": "fujifilm-x100v",
       "name": "Fujifilm X100V",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "fujifilm-x100v",
       "searchTerms": [
         "fujifilm x100v sd card",
@@ -1994,7 +1989,7 @@
     {
       "id": "fujifilm-xt3",
       "name": "Fujifilm X-T3",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "fujifilm-xt3",
       "searchTerms": [
         "fujifilm xt3 sd card",
@@ -2043,7 +2038,7 @@
     {
       "id": "leica-q3",
       "name": "Leica Q3",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "leica-q3",
       "searchTerms": [
         "leica q3 sd card",
@@ -2093,7 +2088,7 @@
     {
       "id": "leica-q3-43",
       "name": "Leica Q3 43",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "leica-q3-43",
       "searchTerms": [
         "leica q3 43 sd card",
@@ -2143,7 +2138,7 @@
     {
       "id": "leica-m11",
       "name": "Leica M11",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "leica-m11",
       "searchTerms": [
         "leica m11 sd card",
@@ -2189,7 +2184,7 @@
     {
       "id": "leica-q2",
       "name": "Leica Q2",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "leica-q2",
       "searchTerms": [
         "leica q2 sd card",
@@ -2237,7 +2232,7 @@
     {
       "id": "leica-d-lux-8",
       "name": "Leica D-Lux 8",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "leica-d-lux-8",
       "searchTerms": [
         "leica d lux 8 sd card",
@@ -2289,7 +2284,7 @@
     {
       "id": "leica-m10",
       "name": "Leica M10",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "leica-m10",
       "searchTerms": [
         "leica m10 sd card",
@@ -2342,7 +2337,7 @@
     {
       "id": "panasonic-lumix-s9",
       "name": "Panasonic Lumix S9",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "panasonic-lumix-s9",
       "searchTerms": [
         "panasonic lumix s9 sd card",
@@ -2391,7 +2386,7 @@
     {
       "id": "panasonic-lumix-s5-iix",
       "name": "Panasonic Lumix S5 IIX",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "panasonic-lumix-s5-iix",
       "searchTerms": [
         "panasonic lumix s5 iix sd card",
@@ -2443,7 +2438,7 @@
     {
       "id": "panasonic-lumix-s5-ii",
       "name": "Panasonic Lumix S5 II",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "panasonic-lumix-s5-ii",
       "searchTerms": [
         "panasonic lumix s5 ii sd card",
@@ -2491,7 +2486,7 @@
     {
       "id": "nikon-d7500",
       "name": "Nikon D7500",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "nikon-d7500",
       "searchTerms": [
         "nikon d7500 sd card",
@@ -2544,7 +2539,7 @@
     {
       "id": "nikon-z50-ii",
       "name": "Nikon Z50 II",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "nikon-z50-ii",
       "searchTerms": [
         "nikon z50 ii sd card",
@@ -2595,7 +2590,7 @@
     {
       "id": "nikon-z6-iii",
       "name": "Nikon Z6 III",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "nikon-z6-iii",
       "searchTerms": [
         "nikon z6 iii sd card",
@@ -2644,7 +2639,7 @@
     {
       "id": "nikon-z6-ii",
       "name": "Nikon Z6 II",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "nikon-z6-ii",
       "searchTerms": [
         "nikon z6 ii sd card",
@@ -2691,7 +2686,7 @@
     {
       "id": "nikon-d850",
       "name": "Nikon D850",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "nikon-d850",
       "searchTerms": [
         "nikon d850 sd card",
@@ -2745,7 +2740,7 @@
     {
       "id": "nikon-d750",
       "name": "Nikon D750",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "nikon-d750",
       "searchTerms": [
         "nikon d750 sd card",
@@ -2798,7 +2793,7 @@
     {
       "id": "nikon-z5",
       "name": "Nikon Z5",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "nikon-z5",
       "searchTerms": [
         "nikon z5 sd card",
@@ -2844,7 +2839,7 @@
     {
       "id": "canon-eos-r100",
       "name": "Canon EOS R100",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "canon-eos-r100",
       "searchTerms": [
         "canon r100 sd card",
@@ -2889,7 +2884,7 @@
     {
       "id": "sony-a7r-v",
       "name": "Sony A7R V",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "sony-a7r-v",
       "searchTerms": [
         "sony a7r v sd card",
@@ -2935,7 +2930,7 @@
     {
       "id": "nikon-d3500",
       "name": "Nikon D3500",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "nikon-d3500",
       "searchTerms": [
         "nikon d3500 sd card",
@@ -2984,7 +2979,7 @@
     {
       "id": "sony-zv-e10",
       "name": "Sony ZV-E10",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "sony-zv-e10",
       "searchTerms": [
         "sony zv-e10 sd card",
@@ -3026,7 +3021,7 @@
     {
       "id": "sony-a7-iii",
       "name": "Sony a7 III",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "sony-a7-iii",
       "searchTerms": [
         "sony a7 iii sd card",
@@ -3068,7 +3063,7 @@
     {
       "id": "sony-a6400",
       "name": "Sony a6400",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "sony-a6400",
       "searchTerms": [
         "sony a6400 sd card",
@@ -3111,7 +3106,7 @@
     {
       "id": "fujifilm-x-s10",
       "name": "Fujifilm X-S10",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "fujifilm-x-s10",
       "searchTerms": [
         "fujifilm x-s10 sd card",
@@ -3157,7 +3152,7 @@
     {
       "id": "canon-eos-r6",
       "name": "Canon EOS R6",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "canon-eos-r6",
       "searchTerms": [
         "canon r6 sd card",
@@ -3199,7 +3194,7 @@
     {
       "id": "nikon-d500",
       "name": "Nikon D500",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "nikon-d500",
       "searchTerms": [
         "nikon d500 sd card",
@@ -3249,7 +3244,7 @@
     {
       "id": "sony-a7r",
       "name": "Sony A7R",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "sony-a7r",
       "searchTerms": [
         "sony a7r sd card",
@@ -3306,7 +3301,7 @@
     {
       "id": "canon-rebel-t7",
       "name": "Canon EOS Rebel T7",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "canon-rebel-t7",
       "searchTerms": [
         "canon rebel t7",
@@ -3336,7 +3331,7 @@
     {
       "id": "sony-a1",
       "name": "Sony A1",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "sony-a1",
       "searchTerms": [
         "sony a1",
@@ -3367,7 +3362,7 @@
     {
       "id": "nikon-d850",
       "name": "Nikon D850",
-      "category": "カメラ",
+      "category": "cameras",
       "slug": "nikon-d850",
       "searchTerms": [
         "nikon d850",
@@ -3398,7 +3393,7 @@
     {
       "id": "raspberry-pi-5",
       "name": "Raspberry Pi 5 (ラズベリーパイ5)",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "raspberry-pi-5",
       "searchTerms": [
         "ラズパイ5 sdカード",
@@ -3440,7 +3435,7 @@
     {
       "id": "iphone-15",
       "name": "iPhone 15 / 15 Pro",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "iphone-15",
       "searchTerms": [
         "アイフォン 15",
@@ -3472,7 +3467,7 @@
     {
       "id": "macbook-air",
       "name": "MacBook Air",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "macbook-air",
       "searchTerms": [
         "マックブック エアー",
@@ -3503,7 +3498,7 @@
     {
       "id": "iphone-14",
       "name": "iPhone 14 / 14 Pro",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "iphone-14",
       "searchTerms": [
         "アイフォン 14",
@@ -3533,7 +3528,7 @@
     {
       "id": "ipad-air",
       "name": "iPad Air",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "ipad-air",
       "searchTerms": [
         "アイパッド エアー",
@@ -3563,7 +3558,7 @@
     {
       "id": "samsung-galaxy-s23",
       "name": "Samsung Galaxy S23",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "samsung-galaxy-s23",
       "searchTerms": [
         "ギャラクシー s23",
@@ -3592,7 +3587,7 @@
     {
       "id": "ipad-pro",
       "name": "iPad Pro",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "ipad-pro",
       "searchTerms": [
         "アイパッド プロ",
@@ -3623,7 +3618,7 @@
     {
       "id": "macbook-pro",
       "name": "MacBook Pro",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "macbook-pro",
       "searchTerms": [
         "macbook pro",
@@ -3654,7 +3649,7 @@
     {
       "id": "samsung-galaxy-tab-s9",
       "name": "Samsung Galaxy Tab S9",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "samsung-galaxy-tab-s9",
       "searchTerms": [
         "galaxy tab s9 sd card",
@@ -3696,7 +3691,7 @@
     {
       "id": "amazon-fire-hd-10",
       "name": "Amazon Fire HD 10",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "amazon-fire-hd-10",
       "searchTerms": [
         "fire hd 10 sd card",
@@ -3748,7 +3743,7 @@
     {
       "id": "amazon-fire-max-11",
       "name": "Amazon Fire Max 11",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "amazon-fire-max-11",
       "searchTerms": [
         "fire max 11 sd card",
@@ -3795,7 +3790,7 @@
     {
       "id": "hp-chromebook-14",
       "name": "HP Chromebook 14",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "hp-chromebook-14",
       "searchTerms": [
         "hp chromebook 14 sd card",
@@ -3848,7 +3843,7 @@
     {
       "id": "lenovo-tab-m10-plus-gen3",
       "name": "Lenovo Tab M10 Plus (3rd Gen)",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "lenovo-tab-m10-plus",
       "searchTerms": [
         "lenovo tab m10 plus sd card",
@@ -3897,7 +3892,7 @@
     {
       "id": "raspberry-pi-4-model-b",
       "name": "Raspberry Pi 4 Model B",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "raspberry-pi-4-model-b",
       "searchTerms": [
         "raspberry pi 4 sd card",
@@ -3949,7 +3944,7 @@
     {
       "id": "raspberry-pi-3-model-b-plus",
       "name": "Raspberry Pi 3 Model B+",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "raspberry-pi-3-model-b-plus",
       "searchTerms": [
         "raspberry pi 3 sd card",
@@ -3992,7 +3987,7 @@
     {
       "id": "raspberry-pi-zero-2-w",
       "name": "Raspberry Pi Zero 2 W",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "raspberry-pi-zero-2-w",
       "searchTerms": [
         "raspberry pi zero 2 sd card",
@@ -4033,7 +4028,7 @@
     {
       "id": "orange-pi-5",
       "name": "Orange Pi 5",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "orange-pi-5",
       "searchTerms": [
         "orange pi 5",
@@ -4088,7 +4083,7 @@
     {
       "id": "iphone-13",
       "name": "iPhone 13",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "iphone-13",
       "searchTerms": [
         "iphone 13",
@@ -4117,7 +4112,7 @@
     {
       "id": "iphone-14-pro-max",
       "name": "iPhone 14 Pro Max",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "iphone-14-pro-max",
       "searchTerms": [
         "iphone 14 pro max",
@@ -4147,7 +4142,7 @@
     {
       "id": "ipad-air-3",
       "name": "iPad Air 3rd Generation",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "ipad-air-3",
       "searchTerms": [
         "ipad air 3",
@@ -4177,7 +4172,7 @@
     {
       "id": "iphone-se",
       "name": "iPhone SE",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "iphone-se",
       "searchTerms": [
         "iphone se",
@@ -4206,7 +4201,7 @@
     {
       "id": "google-pixel-8",
       "name": "Google Pixel 8",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "google-pixel-8",
       "searchTerms": [
         "google pixel 8",
@@ -4236,7 +4231,7 @@
     {
       "id": "hp-chromebook",
       "name": "HP Chromebook",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "hp-chromebook",
       "searchTerms": [
         "hp chromebook",
@@ -4265,7 +4260,7 @@
     {
       "id": "dell-xps",
       "name": "Dell XPS Laptop",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "dell-xps",
       "searchTerms": [
         "dell xps",
@@ -4295,7 +4290,7 @@
     {
       "id": "ipad-9th-gen",
       "name": "iPad 9th Generation",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "ipad-9th-gen",
       "searchTerms": [
         "ipad 9th generation",
@@ -4325,7 +4320,7 @@
     {
       "id": "windows-laptop",
       "name": "Windows Laptop",
-      "category": "コンピュータ・タブレット",
+      "category": "computing-and-tablets",
       "slug": "windows-laptop",
       "searchTerms": [
         "windows laptop",
@@ -4355,7 +4350,7 @@
     {
       "id": "comtec-zdr035",
       "name": "Comtec ZDR035 (コムテック)",
-      "category": "ドライブレコーダー",
+      "category": "dash-cams",
       "slug": "comtec-zdr035",
       "searchTerms": [
         "コムテック zdr035 sdカード",
@@ -4410,7 +4405,7 @@
     {
       "id": "yupiteru-wdt510c",
       "name": "Yupiteru WDT510c (ユピテル Web限定)",
-      "category": "ドライブレコーダー",
+      "category": "dash-cams",
       "slug": "yupiteru-wdt510c",
       "searchTerms": [
         "ユピテル wdt510c sdカード",
@@ -4462,7 +4457,7 @@
     {
       "id": "kenwood-drv-mr760",
       "name": "Kenwood DRV-MR760 (ケンウッド)",
-      "category": "ドライブレコーダー",
+      "category": "dash-cams",
       "slug": "kenwood-drv-mr760",
       "searchTerms": [
         "ケンウッド ドラレコ sdカード 推奨",
@@ -4513,7 +4508,7 @@
     {
       "id": "comtec-zdr037",
       "name": "Comtec ZDR037 (コムテック 360度+リア)",
-      "category": "ドライブレコーダー",
+      "category": "dash-cams",
       "slug": "comtec-zdr037",
       "searchTerms": [
         "zdr037 sdカード おすすめ",
@@ -4559,7 +4554,7 @@
     {
       "id": "cellstar-cs-91fh",
       "name": "Cellstar CS-91FH (セルスター)",
-      "category": "ドライブレコーダー",
+      "category": "dash-cams",
       "slug": "cellstar-cs-91fh",
       "searchTerms": [
         "セルスター cs-91fh sdカード",
@@ -4608,7 +4603,7 @@
     {
       "id": "smart-mirror-generic",
       "name": "デジタルルームミラー型ドラレコ (一般/汎用)",
-      "category": "スマートミラー",
+      "category": "dash-cams",
       "slug": "smart-mirror-dashcam",
       "searchTerms": [
         "デジタルインナーミラー sdカード",
@@ -4656,7 +4651,7 @@
     {
       "id": "vantrue-n4",
       "name": "Vantrue N4 (3カメラ 4K録画)",
-      "category": "高性能ドライブレコーダー",
+      "category": "dash-cams",
       "slug": "vantrue-n4",
       "searchTerms": [
         "vantrue n4 sdカード 推奨",
@@ -4703,7 +4698,7 @@
     {
       "id": "daytona-mivue-m760d",
       "name": "Daytona Mio MiVue M760D (デイトナ バイク用)",
-      "category": "バイク用ドライブレコーダー",
+      "category": "dash-cams",
       "slug": "daytona-mivue-m760d",
       "searchTerms": [
         "デイトナ m760d sdカード",
@@ -4751,7 +4746,7 @@
     {
       "id": "dji-mini-4-pro",
       "name": "DJI Mini 4 Pro",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "dji-mini-4-pro",
       "searchTerms": [
         "dji mini 4 pro",
@@ -4803,7 +4798,7 @@
     {
       "id": "dji-mini-2-se",
       "name": "DJI Mini 2 SE",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "dji-mini-2-se",
       "searchTerms": [
         "dji mini 2 se sdカード",
@@ -4844,7 +4839,7 @@
     {
       "id": "dji-mini-3-pro",
       "name": "DJI Mini 3 Pro",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "dji-mini-3-pro",
       "searchTerms": [
         "dji mini 3 pro",
@@ -4886,7 +4881,7 @@
     {
       "id": "dji-air-3s",
       "name": "DJI Air 3S",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "dji-air-3s",
       "searchTerms": [
         "dji air 3s",
@@ -4931,7 +4926,7 @@
     {
       "id": "dji-mavic-3",
       "name": "DJI Mavic 3",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "dji-mavic-3",
       "searchTerms": [
         "dji mavic 3",
@@ -4973,7 +4968,7 @@
     {
       "id": "dji-air-3",
       "name": "DJI Air 3",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "dji-air-3",
       "searchTerms": [
         "dji air 3 sd card",
@@ -5019,7 +5014,7 @@
     {
       "id": "dji-mini-4k",
       "name": "DJI Mini 4K",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "dji-mini-4k",
       "searchTerms": [
         "dji mini 4k sd card",
@@ -5069,7 +5064,7 @@
     {
       "id": "dji-mini-3",
       "name": "DJI Mini 3 (Non-Pro)",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "dji-mini-3",
       "searchTerms": [
         "dji mini 3 sd card",
@@ -5119,7 +5114,7 @@
     {
       "id": "autel-evo-ii-pro-v3",
       "name": "Autel EVO II Pro V3",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "autel-evo-ii-pro-v3",
       "searchTerms": [
         "autel evo ii pro v3 sd card",
@@ -5169,7 +5164,7 @@
     {
       "id": "autel-evo-nano-plus",
       "name": "Autel EVO Nano+",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "autel-evo-nano-plus",
       "searchTerms": [
         "autel nano plus sd card",
@@ -5212,7 +5207,7 @@
     {
       "id": "autel-evo-lite-plus",
       "name": "Autel EVO Lite+",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "autel-evo-lite-plus",
       "searchTerms": [
         "autel lite plus sd card",
@@ -5252,7 +5247,7 @@
     {
       "id": "potensic-atom",
       "name": "Potensic Atom",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "potensic-atom",
       "searchTerms": [
         "potensic atom sd card",
@@ -5302,7 +5297,7 @@
     {
       "id": "potensic-atom-se",
       "name": "Potensic Atom SE",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "potensic-atom-se",
       "searchTerms": [
         "potensic atom se sd card",
@@ -5344,7 +5339,7 @@
     {
       "id": "skydio-2-plus",
       "name": "Skydio 2+",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "skydio-2-plus",
       "searchTerms": [
         "skydio 2+ sd card",
@@ -5393,7 +5388,7 @@
     {
       "id": "skydio-x10",
       "name": "Skydio X10",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "skydio-x10",
       "searchTerms": [
         "skydio x10 sd card",
@@ -5433,7 +5428,7 @@
     {
       "id": "fimi-mini-3",
       "name": "FIMI Mini 3",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "fimi-mini-3",
       "searchTerms": [
         "fimi mini 3 sd card",
@@ -5476,7 +5471,7 @@
     {
       "id": "holy-stone-hs175d",
       "name": "Holy Stone HS175D",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "holy-stone-hs175d",
       "searchTerms": [
         "holy stone hs175d sd card",
@@ -5517,7 +5512,7 @@
     {
       "id": "holy-stone-hs720",
       "name": "Holy Stone HS720 / HS720E / HS720G",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "holy-stone-hs720",
       "searchTerms": [
         "holy stone hs720 sd card",
@@ -5559,7 +5554,7 @@
     {
       "id": "holy-stone-hs360s",
       "name": "Holy Stone HS360S",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "holy-stone-hs360s",
       "searchTerms": [
         "holy stone hs360s sd card",
@@ -5600,7 +5595,7 @@
     {
       "id": "hoverair-x1-pro",
       "name": "HoverAir X1 Pro",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "hoverair-x1-pro",
       "searchTerms": [
         "hoverair x1 pro sd card",
@@ -5643,7 +5638,7 @@
     {
       "id": "hoverair-x1-pro-max",
       "name": "HoverAir X1 Pro Max",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "hoverair-x1-pro-max",
       "searchTerms": [
         "hoverair x1 pro max sd card",
@@ -5692,7 +5687,7 @@
     {
       "id": "dji-mini-3",
       "name": "DJI Mini 3",
-      "category": "ドローン",
+      "category": "drones",
       "slug": "dji-mini-3",
       "searchTerms": [
         "dji mini 3",
@@ -5723,7 +5718,7 @@
     {
       "id": "nintendo-switch",
       "name": "Nintendo Switch（ニンテンドースイッチ）",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "nintendo-switch",
       "searchTerms": [
         "ニンテンドースイッチ",
@@ -5779,7 +5774,7 @@
     {
       "id": "nintendo-switch-oled",
       "name": "Nintendo Switch 有機ELモデル",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "nintendo-switch-oled",
       "searchTerms": [
         "スイッチ 有機EL SDカード",
@@ -5830,7 +5825,7 @@
     {
       "id": "nintendo-switch-lite",
       "name": "Nintendo Switch Lite（ニンテンドースイッチライト）",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "nintendo-switch-lite",
       "searchTerms": [
         "スイッチライト sdカード",
@@ -5880,7 +5875,7 @@
     {
       "id": "nintendo-switch-2",
       "name": "Nintendo Switch 2（次世代機）",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "nintendo-switch-2",
       "searchTerms": [
         "スイッチ2 sdカード",
@@ -5935,7 +5930,7 @@
     {
       "id": "nintendo-3ds-xl",
       "name": "Nintendo 3DS / New 3DS LL",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "nintendo-3ds-xl",
       "searchTerms": [
         "3ds sdカード",
@@ -5990,7 +5985,7 @@
     {
       "id": "anbernic-rg353v",
       "name": "Anbernic RG353V",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "anbernic-rg353v",
       "searchTerms": [
         "anbernic rg353v",
@@ -6045,7 +6040,7 @@
     {
       "id": "asus-rog-ally-x",
       "name": "ASUS ROG Ally X（アールオージー エイライ エックス）",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "asus-rog-ally-x",
       "searchTerms": [
         "rog ally x sdカード",
@@ -6097,7 +6092,7 @@
     {
       "id": "lenovo-legion-go",
       "name": "Lenovo Legion Go（レノボ レギオン ゴー）",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "lenovo-legion-go",
       "searchTerms": [
         "lenovo legion go sdカード",
@@ -6152,7 +6147,7 @@
     {
       "id": "miyoo-mini-plus",
       "name": "Miyoo Mini Plus（ミヨー ミニ プラス）",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "miyoo-mini-plus",
       "searchTerms": [
         "miyoo mini plus sdカード",
@@ -6206,7 +6201,7 @@
     {
       "id": "anbernic-rg35xx-plus",
       "name": "Anbernic RG35XX Plus / H",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "anbernic-rg35xx-plus-h",
       "searchTerms": [
         "rg35xx plus sdカード",
@@ -6257,7 +6252,7 @@
     {
       "id": "retroid-pocket-4-pro",
       "name": "Retroid Pocket 4 / 4 Pro",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "retroid-pocket-4-pro",
       "searchTerms": [
         "retroid pocket 4 pro sdカード",
@@ -6307,7 +6302,7 @@
     {
       "id": "lenovo-legion-go-s",
       "name": "Lenovo Legion Go S",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "lenovo-legion-go-s",
       "searchTerms": [
         "lenovo legion go s",
@@ -6364,7 +6359,7 @@
     {
       "id": "steam-deck",
       "name": "Steam Deck（スチームデック）",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "steam-deck",
       "searchTerms": [
         "スチームデック",
@@ -6411,7 +6406,7 @@
     {
       "id": "asus-rog-ally",
       "name": "ASUS ROG Ally",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "asus-rog-ally",
       "searchTerms": [
         "asus rog ally sdカード",
@@ -6462,7 +6457,7 @@
     {
       "id": "nintendo-switch-lite",
       "name": "Nintendo Switch Lite",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "nintendo-switch-lite",
       "searchTerms": [
         "nintendo switch lite sd card",
@@ -6504,7 +6499,7 @@
     {
       "id": "nintendo-3ds-xl",
       "name": "Nintendo 3DS / New 3DS XL",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "nintendo-3ds-xl",
       "searchTerms": [
         "3ds sd card",
@@ -6559,7 +6554,7 @@
     {
       "id": "anbernic-rg353v",
       "name": "Anbernic RG353V",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "anbernic-rg353v",
       "searchTerms": [
         "anbernic rg353v",
@@ -6614,7 +6609,7 @@
     {
       "id": "asus-rog-ally-x",
       "name": "ASUS ROG Ally X",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "asus-rog-ally-x",
       "searchTerms": [
         "rog ally x sd card",
@@ -6665,7 +6660,7 @@
     {
       "id": "lenovo-legion-go",
       "name": "Lenovo Legion Go",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "lenovo-legion-go",
       "searchTerms": [
         "lenovo legion go sd card",
@@ -6719,7 +6714,7 @@
     {
       "id": "miyoo-mini-plus",
       "name": "Miyoo Mini Plus",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "miyoo-mini-plus",
       "searchTerms": [
         "miyoo mini plus sd card",
@@ -6773,7 +6768,7 @@
     {
       "id": "anbernic-rg35xx-plus",
       "name": "Anbernic RG35XX Plus / H",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "anbernic-rg35xx-plus-h",
       "searchTerms": [
         "rg35xx plus sd card",
@@ -6828,7 +6823,7 @@
     {
       "id": "retroid-pocket-4-pro",
       "name": "Retroid Pocket 4 / 4 Pro",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "retroid-pocket-4-pro",
       "searchTerms": [
         "retroid pocket 4 pro sd card",
@@ -6878,7 +6873,7 @@
     {
       "id": "lenovo-legion-go-s",
       "name": "Lenovo Legion Go S",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "lenovo-legion-go-s",
       "searchTerms": [
         "lenovo legion go s",
@@ -6934,7 +6929,7 @@
     {
       "id": "msi-claw",
       "name": "MSI Claw",
-      "category": "携帯ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "msi-claw",
       "searchTerms": [
         "msi claw sdカード",
@@ -6976,7 +6971,7 @@
     {
       "id": "anbernic-rg556",
       "name": "Anbernic RG556",
-      "category": "中華ゲーム機",
+      "category": "gaming-handhelds",
       "slug": "anbernic-rg556",
       "searchTerms": [
         "anbernic rg556 sdカード",
@@ -7019,7 +7014,7 @@
     {
       "id": "gpd-win-mini",
       "name": "GPD Win Mini",
-      "category": "UMPC / 携帯ゲーム機",
+      "category": "computing-and-tablets",
       "slug": "gpd-win-mini",
       "searchTerms": [
         "gpd win mini sdカード",
@@ -7062,7 +7057,7 @@
     {
       "id": "egret-ii-mini",
       "name": "イーグレットツー ミニ",
-      "category": "アーケードミニ",
+      "category": "retro-arcade",
       "slug": "egret-ii-mini",
       "searchTerms": [
         "イーグレットツーミニ sdカード",
@@ -7099,7 +7094,7 @@
     {
       "id": "analogue-pocket",
       "name": "Analogue Pocket（アナログ・ポケット）",
-      "category": "レトロゲーム機",
+      "category": "retro-handhelds",
       "slug": "analogue-pocket",
       "searchTerms": [
         "analogue pocket sdカード",
@@ -7146,7 +7141,7 @@
     {
       "id": "sony-ps-vita-sd2vita",
       "name": "PlayStation Vita (SD2Vita)",
-      "category": "レトロゲーム機",
+      "category": "retro-handhelds",
       "slug": "sony-ps-vita-sd2vita",
       "searchTerms": [
         "ps vita sd2vita おすすめ",
@@ -7192,7 +7187,7 @@
     {
       "id": "eufy-solocam-s340",
       "name": "Eufy Security SoloCam S340",
-      "category": "セキュリティカメラ",
+      "category": "security-cameras",
       "slug": "eufy-solocam-s340",
       "searchTerms": [
         "eufy solocam s340 sd card",
@@ -7231,7 +7226,7 @@
     {
       "id": "reolink-e1-pro",
       "name": "Reolink E1 Pro",
-      "category": "セキュリティカメラ",
+      "category": "security-cameras",
       "slug": "reolink-e1-pro",
       "searchTerms": [
         "reolink e1 pro sd card",
