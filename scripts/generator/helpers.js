@@ -243,15 +243,26 @@ function getDeviceImageFallback(device) {
     "astell-kern-sr35": "/img/devices/audio-hi-fi/astell-kern-a-norma-sr35.webp",
     "zoom-h1n-vp": "/img/devices/audio-hi-fi/Zoom-h1n-vp.webp",
     "zoom-h6": "/img/devices/audio-hi-fi/zoom-h6.webp",
-    "tascam-dr-05x": "/img/devices/audio-hi-fi/tascam-dr-05x.webp"
-  };
+    "tascam-dr-05x": "/img/devices/audio-hi-fi/tascam-dr-05x.webp",
+    // Smartphones
+    "iphone-15": "/img/devices/smartphones/iphone-15.webp",
+    "iphone-14": "/img/devices/smartphones/iphone-14.webp",
+    "iphone-13": "/img/devices/smartphones/iphone-13.webp",
+    "iphone-14-pro-max": "/img/devices/smartphones/iphone-14.webp",
+    "iphone-se": "/img/devices/smartphones/iphone-15.webp",
+    "samsung-galaxy-s23": "/img/devices/smartphones/samsung-galaxy-s25.webp",
+    "google-pixel-8": "/img/devices/smartphones/google-pixel-8.webp"
+    };
 
-  if (deviceSpecificImages[slug] && imageExists(deviceSpecificImages[slug])) {
+    if (deviceSpecificImages[slug] && imageExists(deviceSpecificImages[slug])) {
     return deviceSpecificImages[slug];
-  }
+    }
 
-  // Brand-specific placeholders (using only files that actually exist)
-  if (name.includes("gopro")) return "/img/devices/action-cameras/gopro-placeholder.webp";
+    // Brand-specific placeholders (using only files that actually exist)
+    if (name.includes("iphone")) return "/img/devices/smartphones/iphone-15.webp";
+    if (name.includes("samsung galaxy")) return "/img/devices/smartphones/samsung-galaxy-s25.webp";
+    if (name.includes("google pixel")) return "/img/devices/smartphones/google-pixel-8.webp";
+    if (name.includes("gopro")) return "/img/devices/action-cameras/gopro-placeholder.webp";
   if (name.includes("insta360")) return "/img/devices/action-cameras/gopro-placeholder.webp";
   if (name.includes("osmo")) return "/img/devices/action-cameras/gopro-placeholder.webp";
   if (name.includes("dji")) return "/img/devices/drones/drone-placeholder.webp";
@@ -295,6 +306,8 @@ function getDeviceImageFallback(device) {
   if (name.includes("reolink")) return "/img/devices/security-cameras/reolink-e1-pro.webp";
 
   // Category-based placeholders
+  if (category.includes("smartphone")) 
+    return "/img/devices/smartphones/samsung-galaxy-s25.webp";
   if (category.includes("action camera")) 
     return "/img/devices/action-cameras/gopro-placeholder.webp";
   if (category.includes("security camera"))

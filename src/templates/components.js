@@ -346,6 +346,7 @@ function generateSidebar() {
   <li><a href="/categories/drones/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Drones</a></li>
   <li><a href="/categories/gaming-handhelds/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Gaming Handhelds</a></li>
   <li><a href="/categories/dash-cams/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Dash Cams</a></li>
+  <li><a href="/categories/smartphones/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Smartphones</a></li>
   <li x-data="{ open: false }">
     <button @click="open = !open" class="w-full text-left text-sm text-slate-600 hover:text-blue-600 transition-colors flex items-center justify-between">
       More Categories

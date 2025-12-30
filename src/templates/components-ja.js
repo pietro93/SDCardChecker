@@ -287,6 +287,7 @@ function generateSidebar() {
   <li><a href="/ja/categories/drones/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">ドローン</a></li>
   <li><a href="/ja/categories/gaming-handhelds/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">携帯ゲーム機</a></li>
   <li><a href="/ja/categories/dash-cams/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">ドライブレコーダー</a></li>
+  <li><a href="/ja/categories/smartphones/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">スマートフォン</a></li>
   <li x-data="{ open: false }">
     <button @click="open = !open" class="w-full text-left text-sm text-slate-600 hover:text-blue-600 transition-colors flex items-center justify-between">
       もっと見る

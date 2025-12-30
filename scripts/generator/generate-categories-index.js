@@ -22,6 +22,7 @@ function getCategoryDescriptions(lang = "en") {
       "Drones": "Compare SD cards designed for DJI, Autel, and other drone systems requiring dependable 4K video capture.",
       "Gaming Handhelds": "Explore SD card options for Nintendo Switch, Steam Deck, and other gaming handhelds that need reliable fast storage.",
       "Computing & Tablets": "Browse microSD cards perfect for iPad, Chromebook, Android tablets, and other computing devices.",
+      "Smartphones": "Explore external SD card readers and recommendations for iPhones, Samsung Galaxy, Google Pixel, and other smartphones.",
       "Dash Cams": "Find durable SD cards suited for dash cam and vehicle recorder systems.",
       "Security Cameras": "Discover 24/7 surveillance-grade microSD cards for security camera systems.",
       "Accessories": "Explore SD card readers, adapters, and other accessories for your devices."
@@ -37,6 +38,8 @@ function getCategoryDescriptions(lang = "en") {
       "携帯ゲーム機": "信頼性の高い高速ストレージが必要なNintendo Switch、Steam Deck、その他の携帯ゲーム機向けのSDカードオプションをお探しください。",
       "Computing & Tablets": "iPad、Chromebook、Androidタブレット、その他のコンピュータデバイス向けの完璧なmicroSDカードをお探しください。",
       "コンピュータ・タブレット": "iPad、Chromebook、Androidタブレット、その他のコンピュータデバイス向けの完璧なmicroSDカードをお探しください。",
+      "Smartphones": "iPhone、Samsung Galaxy、Google Pixel、その他のスマートフォン向けの外部SDカードリーダーおよび推奨事項をご確認ください。",
+      "スマートフォン": "iPhone、Samsung Galaxy、Google Pixel、その他のスマートフォン向けの外部SDカードリーダーおよび推奨事項をご確認ください。",
       "Dash Cams": "ドライブレコーダーおよび車載レコーダーシステム向けの耐久性の高いSDカードを見つけてください。",
       "Security Cameras": "セキュリティカメラシステム向けの24時間監視対応のmicroSDカードをお探しください。",
       "Accessories": "SDカードリーダー、アダプター、およびデバイス用のその他のアクセサリーをお探しください。"
@@ -60,9 +63,12 @@ function getCategoryIcon(category) {
     "携帯ゲーム機": "gaming",
     "Computing & Tablets": "computing",
     "コンピュータ・タブレット": "computing",
+    "Smartphones": "smartphone",
+    "スマートフォン": "smartphone",
     "Security Cameras": "security-camera",
     "セキュリティカメラ": "security-camera",
-    "Dash Cams": "dash-cam",
+    "Dash Cams": "dashcam",
+    "ダッシュカメラ": "dashcam",
     "Accessories": "accessory"
   };
   return iconMap[category] || "camera";
