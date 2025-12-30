@@ -1,0 +1,2649 @@
+[
+  {
+    "id": "canon-eos-r5",
+    "name": "Canon EOS R5",
+    "category": "Cameras",
+    "slug": "canon-eos-r5",
+    "searchTerms": [
+      "canon eos r5",
+      "canon r5",
+      "eos r5 sd card"
+    ],
+    "sdCard": {
+      "type": "CFexpress Type B and SD UHS-II",
+      "minSpeed": "V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "Professional 8K camera recording. Requires V60 minimum for 8K RAW video. High bitrate (1.6 Gbps) demands fast, dual card slots for safety.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-cfexpress"
+      },
+      {
+        "id": "lexar-professional-1000x-v60"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need two cards for R5?",
+        "a": "<b>Yes, the Canon EOS R5 has dual card slots and Canon recommends using two V60 cards for safety</b>. <b>When shooting 8K video, dual cards provide backup recording and increased reliability</b>, protecting against a single card failure during critical sessions."
+      },
+      {
+        "q": "Can I shoot 4K with V30 cards?",
+        "a": "<b>Yes, 4K video recording works perfectly fine with V30 speed class cards</b>. However, <b>8K recording requires V60 minimum speed class</b> due to the much higher bitrate and data throughput demands of 8K capture."
+      },
+      {
+        "q": "What's the difference between CFexpress and SD?",
+        "a": "<b>CFexpress Type B cards are significantly faster than SD UHS-II</b> and are <b>best suited for 8K RAW video recording</b>. <b>SD UHS-II V60 cards are more affordable and sufficient for 4K recording</b>, making them the preferred choice for hybrid photo/video work."
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r6-mark-ii",
+      "canon-eos-r3"
+    ],
+    "notes": "Canon EOS R5 is professional 8K camera. Dual V60 cards strongly recommended."
+  },
+  {
+    "id": "sony-a6700",
+    "name": "Sony A6700",
+    "category": "Cameras",
+    "slug": "sony-a6700",
+    "searchTerms": [
+      "sony a6700",
+      "a6700",
+      "sony a6700 sd card"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "Excellent for 4K 60fps video and high-speed photography. V30 ensures reliable performance. Professional mirrorless users benefit from dual card slots.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-silver-sd"
+      },
+      {
+        "id": "kingston-canvas-go-pro-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is V30 enough for 4K 60fps?",
+        "a": "<b>Yes, V30 speed class provides the necessary 30MB/s minimum write speed for stable 4K 60fps video</b> on the Sony A6700. <b>Professional and advanced users often prefer V60 or faster cards for additional performance headroom and insurance</b> during critical shoots."
+      },
+      {
+        "q": "Do I need two cards?",
+        "a": "<b>The Sony A6700 provides dual SD UHS-II card slots</b>. <b>Using two cards is recommended for extended shooting sessions and automatic backup</b>, allowing continuous recording when one card fills and seamless workflow for professional video production."
+      }
+    ],
+    "relatedDevices": [
+      "sony-a6400",
+      "sony-a7-iv",
+      "fujifilm-x-s20"
+    ],
+    "notes": "Popular choice for content creators. Dual SD UHS-II card slots for professional workflow."
+  },
+  {
+    "id": "fujifilm-x-s20",
+    "name": "Fujifilm X-S20",
+    "category": "Cameras",
+    "slug": "fujifilm-x-s20",
+    "searchTerms": [
+      "fujifilm x-s20",
+      "x-s20",
+      "xs20 sd card"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "Great for travel and video. V30 handles 4K recording reliably. Single card slot, so reliability is key.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-silver-sd"
+      },
+      {
+        "id": "kingston-canvas-go"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is there a backup card slot?",
+        "a": "<b>No, the Fujifilm X-S20 has only a single SD UHS-II card slot</b>. <b>Make regular backup copies of your footage</b> to prevent data loss and consider carrying a second card as a replacement if the first card fills during a shoot."
+      }
+    ],
+    "relatedDevices": [
+      "fujifilm-x-s10",
+      "fujifilm-x-t5",
+      "sony-a6700"
+    ],
+    "notes": "Popular travel camera. Single card slot makes reliable card choice important."
+  },
+  {
+    "id": "nikon-z9",
+    "name": "Nikon Z9",
+    "category": "Cameras",
+    "slug": "nikon-z9",
+    "searchTerms": [
+      "nikon z9",
+      "z9",
+      "nikon z9 sd card"
+    ],
+    "sdCard": {
+      "type": "CFexpress Type B and XQD",
+      "minSpeed": "V90",
+      "minWriteSpeed": "90 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "Professional flagship 8K camera. Requires CFexpress Type B for maximum performance or XQD as a legacy option. Dual card slots for backup and redundancy.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-cfexpress"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "nikon-xqd-memory-card"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need two cards?",
+        "a": "<b>Yes, the Nikon Z9 has dual card slots and using two cards is strongly recommended</b>. <b>Dual cards provide automatic backup recording and extended shooting capacity</b>, critical for professional workflows where card failure cannot be tolerated."
+      },
+      {
+        "q": "Are CFexpress and XQD compatible?",
+        "a": "<b>No, CFexpress Type B and XQD cards are not compatible</b>. <b>The Nikon Z9 supports both formats but uses different card slots</b> for each type, allowing you to choose either format for your specific workflow needs."
+      }
+    ],
+    "relatedDevices": [
+      "nikon-z8",
+      "canon-eos-r5"
+    ],
+    "notes": "Professional flagship. CFexpress Type B recommended for future-proofing."
+  },
+  {
+    "id": "sony-a7-iv",
+    "name": "Sony A7 IV",
+    "category": "Cameras",
+    "slug": "sony-a7-iv",
+    "searchTerms": [
+      "sony a7 iv sd card",
+      "a7iv card",
+      "alpha 7 iv memory card"
+    ],
+    "sdCard": {
+      "type": "CFexpress Type A or SD UHS-II",
+      "minSpeed": "V60 (V90 for S&Q modes)",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "1TB"
+    },
+    "whySpecs": "The A7 IV records high-bitrate 4K video. Slot 1 accepts ultra-fast CFexpress Type A cards or SD cards, while Slot 2 is SD-only. A V60 SD card is needed for most 4K modes, while V90 is required for the highest quality S&Q (Slow & Quick) recording to prevent buffer issues.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need a CFexpress Type A card for the Sony A7 IV?",
+        "a": "<b>No, it's not required for most shooting.</b> A V60 or V90 SD UHS-II card is sufficient for almost all video modes. CFexpress Type A is only necessary for clearing the buffer faster during intense burst photography or for the absolute highest video bitrates."
+      },
+      {
+        "q": "What is the difference between the two card slots?",
+        "a": "<b>Slot 1 is a combo slot</b> that fits either one CFexpress Type A card or one SD card (UHS-I/II). <b>Slot 2 only fits one SD card</b> (UHS-I/II). You can use both for simultaneous backup or relay recording."
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r6-mark-ii",
+      "sony-a6700",
+      "nikon-z8"
+    ],
+    "notes": "Extremely popular camera. Note: Your sdcards.json has limited V60+ SD card options, so only compliant cards are recommended."
+  },
+  {
+    "id": "canon-eos-r6-mark-ii",
+    "name": "Canon EOS R6 Mark II",
+    "category": "Cameras",
+    "slug": "canon-eos-r6-mark-ii",
+    "searchTerms": [
+      "canon r6 ii sd card",
+      "eos r6 mark ii memory card",
+      "r6 mk2 card"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II",
+      "minSpeed": "V60 (V90 recommended for burst)",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "The R6 Mark II features two SD UHS-II card slots. For video recording at up to 42.5 MB/s bitrate, a V60 card is sufficient. However, for high-speed burst shooting at 40fps with RAW, V90 cards are recommended to clear the buffer quickly and prevent missed shots.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need two cards for the R6 Mark II?",
+        "a": "<b>It is highly recommended for professional work.</b> Using both slots allows for instant backup, overflow (relay) recording, or separating file types (e.g., RAW to Slot 1, JPEG to Slot 2). For casual use, one card is sufficient."
+      },
+      {
+        "q": "Is V60 enough, or do I need V90?",
+        "a": "<b>For video: V60 is sufficient.</b> <b>For burst shooting: V90 is recommended.</b> If you shoot both, V90 provides the best performance across all modes. V60 cards offer better value if you primarily shoot video or landscapes."
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r5",
+      "sony-a7-iv",
+      "nikon-z8",
+      "panasonic-lumix-s1h"
+    ],
+    "notes": "Supports both UHS-I and UHS-II cards, but UHS-II is strongly recommended for optimal performance."
+  },
+  {
+    "id": "bmpcc-4k",
+    "name": "Blackmagic Pocket Cinema Camera 4K",
+    "category": "Cameras",
+    "slug": "blackmagic-pocket-cinema-camera-4k",
+    "searchTerms": [
+      "bmpcc 4k card",
+      "blackmagic pocket 4k sd card",
+      "bmpcc 4k cfast"
+    ],
+    "sdCard": {
+      "type": "CFast 2.0 and SD UHS-II",
+      "minSpeed": "V90 (for SD)",
+      "minWriteSpeed": "90 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "The BMPCC 4K records professional RAW and ProRes formats at very high data rates. A fast V90 SD card is required for many compressed RAW options, while a CFast 2.0 card is needed for the highest-quality settings.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-cfast-2.0"
+      },
+      {
+        "id": "sony-tough-g-v90"
+      },
+      {
+        "id": "kingston-canvas-react-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Which card type should I use for the BMPCC 4K?",
+        "a": "<b>It depends on your codec.</b> For the highest quality Blackmagic RAW settings (e.g., 3:1), you will need a <b>CFast 2.0 card</b>. For more compressed RAW formats and most ProRes options, a fast <b>V90 SD card</b> will suffice and is more cost-effective."
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r5",
+      "sony-a7-iv"
+    ],
+    "notes": "A staple for indie filmmakers with very specific card requirements. Both CFast 2.0 and V90 SD card options are now recommended for maximum flexibility."
+  },
+  {
+    "id": "bmpcc-6k-pro",
+    "name": "Blackmagic Pocket Cinema Camera 6K Pro",
+    "category": "Cameras",
+    "slug": "blackmagic-pocket-cinema-camera-6k-pro",
+    "searchTerms": [
+      "bmpcc 6k pro card",
+      "blackmagic 6k pro sd card",
+      "pocket 6k memory"
+    ],
+    "sdCard": {
+      "type": "CFast 2.0 and SD UHS-II",
+      "minSpeed": "V90 (for SD)",
+      "minWriteSpeed": "90 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "The BMPCC 6K Pro records professional 6K RAW and ProRes at extremely high bitrates. CFast 2.0 is required for the highest quality 6K RAW formats, while SD UHS-II V90 cards can handle high-quality ProRes and some compressed RAW codecs.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-cfast-2.0"
+      },
+      {
+        "id": "sony-tough-g-v90"
+      },
+      {
+        "id": "kingston-canvas-react-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need CFast for the BMPCC 6K Pro?",
+        "a": "<b>For full 6K RAW recording, yes.</b> CFast 2.0 is essential for the highest bitrate 6K RAW codecs. However, for recording in DCI 4K or many ProRes formats, a fast SD UHS-II V90 card will work and is more affordable."
+      }
+    ],
+    "relatedDevices": [
+      "bmpcc-4k",
+      "canon-eos-r5",
+      "nikon-z8"
+    ],
+    "notes": "Professional-grade 6K cinema camera. Both CFast 2.0 and V90 SD card options are now recommended for maximum flexibility."
+  },
+  {
+    "id": "nikon-z8",
+    "name": "Nikon Z8",
+    "category": "Cameras",
+    "slug": "nikon-z8",
+    "searchTerms": [
+      "nikon z8 sd card",
+      "z8 memory card",
+      "nikon z8 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II or CFexpress Type B",
+      "minSpeed": "V60 (V90 or CFexpress recommended)",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "The Z8 is a professional powerhouse with dual slots: one CFexpress Type B and one SD UHS-II. For 8K RAW video and the fastest burst shooting, a CFexpress card is required. For most other 4K video modes, a V60 or V90 SD card is sufficient.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-cfexpress"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Which card slot should I use on the Nikon Z8?",
+        "a": "<b>Use the CFexpress slot for maximum performance</b>, especially for 8K video or long bursts of high-resolution photos. Use the SD slot for backup, overflow, or for less demanding 4K video work."
+      }
+    ],
+    "relatedDevices": [
+      "nikon-z9",
+      "canon-eos-r5",
+      "sony-a7-iv",
+      "panasonic-lumix-s1h"
+    ],
+    "notes": "Often called the 'baby Z9', it packs flagship performance into a smaller body, with demanding media requirements to match."
+  },
+  {
+    "id": "panasonic-lumix-s1h",
+    "name": "Panasonic Lumix S1H",
+    "category": "Cameras",
+    "slug": "panasonic-lumix-s1h",
+    "searchTerms": [
+      "panasonic lumix s1h sd card",
+      "s1h memory card",
+      "lumix s1h storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II",
+      "minSpeed": "V90",
+      "minWriteSpeed": "90 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "The S1H is a Netflix-approved cinema camera that records 6K video at very high bitrates. It features dual SD UHS-II slots, and V90-rated cards are essential to reliably capture its highest quality internal recording formats without any dropped frames.",
+    "recommendedBrands": [
+      {
+        "id": "sony-tough-g-v90"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is V90 truly required for the S1H?",
+        "a": "<b>Yes, V90 is essential for 6K and other high-bitrate recording modes.</b> While V60 cards may work for lower-quality settings, they will fail in the camera's most demanding professional formats. Always use V90 cards for reliable performance."
+      }
+    ],
+    "relatedDevices": [
+      "nikon-z9",
+      "canon-eos-r5",
+      "nikon-z8"
+    ],
+    "notes": "A professional 6K hybrid camera. Now that Sony TOUGH G V90 has been added to your sdcards.json, it is the recommended card."
+  },
+  {
+    "id": "fujifilm-x100vi",
+    "name": "Fujifilm X100VI",
+    "category": "Cameras",
+    "slug": "fujifilm-x100vi",
+    "searchTerms": [
+      "fujifilm x100vi",
+      "x100vi sd card",
+      "x100 6",
+      "fujifilm x100vi memory card"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II",
+      "minSpeed": "V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "Premium compact camera with 40MP sensor and 6.2K video capability. V60 is essential for 6.2K 30fps video recording and high-speed continuous RAW shooting. The UHS-II slot enables faster buffer clearing for the new 20fps burst mode.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "kingston-canvas-go-pro-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I use my old X100V cards?",
+        "a": "<b>V30 cards from the X100V will work, but V60 is recommended for the X100VI's 6.2K video and faster burst shooting.</b> For optimal performance, especially for video, upgrading to a V60 UHS-II card is advisable."
+      },
+      {
+        "q": "Is V90 necessary for the X100VI?",
+        "a": "<b>V60 is sufficient for all recording modes.</b> V90 cards provide no practical benefit since the X100VI's maximum bitrate does not exceed V60 requirements. You can save money by sticking with V60 cards without compromising in-camera performance."
+      }
+    ],
+    "relatedDevices": [
+      "fujifilm-x100v",
+      "fujifilm-xe5",
+      "leica-q3",
+      "sony-a6700"
+    ],
+    "notes": "The most hyped camera of 2024. Known for its retro design and exceptional image quality. Extremely high search volume for accessories due to its popularity and limited availability."
+  },
+  {
+    "id": "canon-eos-r50",
+    "name": "Canon EOS R50",
+    "category": "Cameras",
+    "slug": "canon-eos-r50",
+    "searchTerms": [
+      "canon r50 sd card",
+      "eos r50 memory card",
+      "canon r50 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II (UHS-I compatible)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "Canon's entry-level APS-C mirrorless camera, featuring 4K video recording and a 24MP sensor. A V30 speed class card is sufficient for 4K 30fps recording and continuous RAW shooting. While it has a UHS-II slot, UHS-I V30 cards offer excellent value and performance for most users.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "sandisk-ultra-sd-uhs1"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is this a good first camera?",
+        "a": "<b>Yes, the EOS R50 is Canon's most beginner-friendly mirrorless camera.</b> It's affordable, lightweight, and features excellent autofocus. For SD cards, a V30 UHS-I card (more budget-friendly) is a great starting point, and you can upgrade to UHS-II later if you find transfer speeds to be a bottleneck."
+      },
+      {
+        "q": "Can I use UHS-I cards or do I need UHS-II?",
+        "a": "<b>UHS-I V30 cards work perfectly for all R50 recording modes.</b> The camera supports UHS-II for faster data transfers (e.g., to a computer) and quicker buffer clearing after rapid burst shooting, but it is not strictly required for in-camera recording performance. You can save money with UHS-I cards unless you frequently shoot thousands of photos in a session."
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r10",
+      "canon-eos-r8",
+      "sony-a6700",
+      "fujifilm-xs20"
+    ],
+    "notes": "Canon's entry-level RF mount camera. Extremely popular with beginners and vloggers due to its ease of use and good image quality. High search volume is driven by its affordability and strong brand recognition."
+  },
+  {
+    "id": "canon-eos-r7",
+    "name": "Canon EOS R7",
+    "category": "Cameras",
+    "slug": "canon-eos-r7",
+    "searchTerms": [
+      "canon r7 sd card",
+      "eos r7 memory card",
+      "canon r7 storage"
+    ],
+    "sdCard": {
+      "type": "Dual SD UHS-II",
+      "minSpeed": "V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "An advanced APS-C mirrorless camera designed for sports and wildlife photography, featuring 15fps burst shooting and 4K 60fps video. A V60 speed class card is highly recommended for reliable 4K 60fps recording and sustained high-speed burst shooting to prevent buffer overflow.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need V60 or is V30 enough for the R7?",
+        "a": "<b>V60 is strongly recommended for the EOS R7.</b> While V30 cards may work for some 4K modes, the R7's advanced capabilities, such as 4K 60fps and 15fps RAW burst shooting, generate a significant amount of data that requires the sustained write speeds of V60 cards to ensure smooth performance and prevent dropped frames."
+      },
+      {
+        "q": "Should I use both SD card slots?",
+        "a": "<b>Yes, utilizing both dual UHS-II card slots is recommended, especially for critical shoots.</b> You can configure them for backup recording (simultaneous writing to both cards), overflow (recording continues to the second card when the first fills), or to separate file types (e.g., RAW to one, JPEG to another), providing increased reliability and workflow flexibility."
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r10",
+      "canon-eos-r50",
+      "sony-a6700",
+      "fujifilm-xt5"
+    ],
+    "notes": "Canon's flagship APS-C mirrorless camera. Very popular with wildlife and sports photographers seeking high performance without the full-frame cost. Features dual SD UHS-II slots."
+  },
+  {
+    "id": "canon-eos-r10",
+    "name": "Canon EOS R10",
+    "category": "Cameras",
+    "slug": "canon-eos-r10",
+    "searchTerms": [
+      "canon r10 sd card",
+      "eos r10 memory card",
+      "r10 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II (UHS-I compatible)",
+      "minSpeed": "V30 (V60 recommended for 4K 60fps)",
+      "minWriteSpeed": "30 MB/s minimum, 60 MB/s for high frame rate",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "An entry-level APS-C mirrorless camera capable of 15fps burst shooting and 4K 60fps video. While V30 cards can handle standard recording, a V60 speed class card is recommended for consistent 4K 60fps performance and to prevent buffer issues during prolonged burst shooting.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "kingston-canvas-go-pro-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "R10 vs R50 - do I need faster cards?",
+        "a": "<b>Yes, the R10 benefits more from V60 cards than the R50 due to its higher performance capabilities.</b> The R10's 15fps burst mode and 4K 60fps video generate more data, making V60 cards crucial for preventing the buffer from filling too quickly and maintaining smooth shooting, especially for action photography."
+      },
+      {
+        "q": "Does the R10 have two SD card slots?",
+        "a": "<b>No, the Canon EOS R10 has only one SD card slot.</b> Unlike some professional cameras, there is no backup slot. Therefore, it's particularly important to use reliable, high-quality cards and regularly back up your footage to prevent potential data loss during critical shoots."
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r7",
+      "canon-eos-r50",
+      "sony-a6700",
+      "fujifilm-xs20"
+    ],
+    "notes": "Canon's APS-C mirrorless camera positioned for enthusiasts interested in sports and action photography. It offers strong performance at a competitive price point, with a single SD UHS-II card slot."
+  },
+  {
+    "id": "canon-eos-r8",
+    "name": "Canon EOS R8",
+    "category": "Cameras",
+    "slug": "canon-eos-r8",
+    "searchTerms": [
+      "canon r8 sd card",
+      "eos r8 memory card",
+      "r8 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II (UHS-I compatible)",
+      "minSpeed": "V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "Canon's budget full-frame mirrorless camera, featuring a 24MP sensor and 4K 60fps oversampled video. A V60 speed class card is essential for reliable 4K 60fps recording and continuous RAW shooting, as the full-frame sensor produces larger file sizes and higher bitrates than APS-C cameras.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the R8 Canon's cheapest full-frame camera?",
+        "a": "<b>Yes, the EOS R8 is Canon's most affordable full-frame RF mount camera.</b> It utilizes the same excellent sensor as the flagship R6 Mark II but in a lighter, more compact body. V60 cards are essential to handle the higher bitrates and file sizes associated with full-frame video and photography."
+      },
+      {
+        "q": "Can I use V30 cards in the R8 to save money?",
+        "a": "<b>While V30 cards may technically work for some 4K 30fps recording, V60 is explicitly required and recommended for consistent 4K 60fps performance.</b> Canon officially recommends V60 for reliable performance across all video modes to prevent dropped frames and ensure stable recording, especially for important footage."
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r6-mark-ii",
+      "sony-a7-iv",
+      "nikon-zf"
+    ],
+    "notes": "Canon's budget-friendly full-frame option. Popular with hybrid shooters who need both strong photo and video capabilities in a compact form factor. Features a single SD UHS-II card slot."
+  },
+  {
+    "id": "canon-rebel-t7",
+    "name": "Canon EOS Rebel T7 (EOS 2000D)",
+    "category": "Cameras",
+    "slug": "canon-rebel-t7",
+    "searchTerms": [
+      "canon rebel t7 sd card",
+      "canon t7 memory card",
+      "canon 2000d sd card",
+      "rebel t7 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "An entry-level DSLR with a 24MP sensor and 1080p video recording. Class 10 (U1) cards provide sufficient speed for all recording modes and light continuous shooting. This camera does not shoot 4K video, so V30 cards are unnecessary and would not provide any performance benefit.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is this camera still good in 2024?",
+        "a": "<b>Yes, for absolute beginners on a tight budget.</b> The Rebel T7 (known as EOS 2000D outside North America) is one of Canon's most affordable and best-selling DSLRs. While it's outdated compared to newer mirrorless cameras, it still produces great photos for learning photography. Any reliable Class 10 SD card will work perfectly."
+      },
+      {
+        "q": "Do I need expensive fast cards for the Rebel T7?",
+        "a": "<b>No, basic Class 10 SD cards are perfectly suitable for the Rebel T7.</b> The camera's 1080p video capabilities and 3fps burst rate do not require V30 or UHS-II speeds. You can save money on cards and instead invest in quality lenses."
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r50",
+      "nikon-d3500"
+    ],
+    "notes": "Canon's best-selling beginner DSLR. Extremely high search volume due to its popularity with photography students and first-time camera buyers. A very cost-effective option for learning the fundamentals of photography."
+  },
+  {
+    "id": "canon-g7x-mark-iii",
+    "name": "Canon PowerShot G7 X Mark III",
+    "category": "Cameras",
+    "slug": "canon-g7x-mark-iii",
+    "searchTerms": [
+      "canon g7x mark iii sd card",
+      "g7x iii memory card",
+      "g7x 3 sd card"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "A highly popular vlogging compact camera featuring 4K 30fps video recording and a 20MP 1-inch sensor. A V30 speed class card is required for reliable 4K recording to prevent dropped frames. Its compact design and flip screen have made it a favorite among YouTube creators, driving significant search volume for SD card recommendations.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Why is this camera so popular for YouTube?",
+        "a": "<b>The G7 X Mark III features a convenient flip screen, excellent autofocus, and a highly portable, pocketable size.</b> These attributes, combined with its 4K video capabilities, make it an ideal choice for vloggers and content creators. Its built-in live streaming functionality further enhances its appeal in the creator community."
+      },
+      {
+        "q": "Can I use the same SD card from my G7 X Mark II?",
+        "a": "<b>If your G7 X Mark II card is a V30 speed class, then yes, it will work.</b> However, the Mark III shoots 4K video (whereas the Mark II maxed out at 1080p). If your older card is a slower Class 10 (U1) card, it will not work reliably for 4K recording on the Mark III. It's best to upgrade to a V30 card for optimal 4K performance."
+      }
+    ],
+    "relatedDevices": [
+      "canon-g7x-mark-ii",
+      "sony-zv1",
+      "dji-osmo-pocket-3"
+    ],
+    "notes": "A go-to camera for vloggers and content creators. Its significant popularity, especially on social media platforms like YouTube, contributes to extremely high search volume for compatible SD cards.",
+    "imageUrl": "/img/devices/cameras/canon-g7x-mark-iii.webp"
+  },
+  {
+    "id": "canon-g7x-mark-ii",
+    "name": "Canon PowerShot G7 X Mark II",
+    "category": "Cameras",
+    "slug": "canon-g7x-mark-ii",
+    "searchTerms": [
+      "canon g7x mark ii sd card",
+      "g7x ii memory card",
+      "g7x 2 sd card"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "The previous generation of Canon's popular vlogging compact, capable of 1080p 60fps video. Class 10 (U1) cards are perfectly sufficient for all its recording modes, as it does not shoot 4K. This model remains popular on the used market as a budget-friendly option for aspiring vloggers and casual photographers.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Should I upgrade from the Mark II to the Mark III?",
+        "a": "<b>Only if you specifically need 4K video recording or live streaming capabilities.</b> The G7 X Mark II is still an excellent camera for 1080p vlogging and photography, often available at a significantly lower price on the used market. You can save money on both the camera body and SD cards, as V30 cards are not required."
+      },
+      {
+        "q": "Do I need V30 cards for the Mark II?",
+        "a": "<b>No, Class 10 (U1) cards are perfectly sufficient for the G7 X Mark II.</b> As this camera's maximum video resolution is 1080p, it does not require the higher sustained write speeds offered by V30 cards. You can save money by using standard, reliable Class 10 cards."
+      }
+    ],
+    "relatedDevices": [
+      "canon-g7x-mark-iii",
+      "sony-rx100-series"
+    ],
+    "notes": "Still very popular on the used market. High search volume from budget-conscious vloggers and photographers seeking an affordable alternative to the newer Mark III model."
+  },
+  {
+    "id": "fujifilm-xt5",
+    "name": "Fujifilm X-T5",
+    "category": "Cameras",
+    "slug": "fujifilm-xt5",
+    "searchTerms": [
+      "fujifilm xt5 sd card",
+      "x-t5 memory card",
+      "xt5 storage"
+    ],
+    "sdCard": {
+      "type": "Dual SD UHS-II",
+      "minSpeed": "V60 (V90 recommended for high bitrate video)",
+      "minWriteSpeed": "60 MB/s minimum, 90 MB/s recommended",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "Fujifilm's flagship APS-C camera, featuring a 40MP sensor and capable of 6.2K 30fps video recording. A V60 card handles most photography and 4K video shooting, but a V90 card is recommended for the highest bitrate 6.2K recording and sustained 15fps RAW bursts. Its dual SD slots enable professional workflow options like backup recording and overflow.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "sony-tough-g-v90"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need V90 cards for the X-T5, or is V60 enough?",
+        "a": "<b>V60 cards are sufficient for most users and all typical photography needs on the X-T5.</b> V90 cards only provide a tangible benefit if you are consistently shooting 6.2K video at the highest bitrate settings or require extended RAW burst shooting with minimal buffer limitations. For general photo and 4K video work, V60 cards offer excellent performance."
+      },
+      {
+        "q": "Should I use both SD card slots?",
+        "a": "<b>Yes, for professional work or any important photography/videography sessions, it is highly recommended to utilize both dual UHS-II card slots.</b> You can configure them for instant backup (simultaneous writing to both cards), overflow (recording continues to the second card when the first fills), or to separate file types (e.g., RAW files to one card, JPEGs to the other), which significantly enhances reliability and streamlines post-production workflow."
+      }
+    ],
+    "relatedDevices": [
+      "fujifilm-xt4",
+      "fujifilm-xh2s",
+      "sony-a6700"
+    ],
+    "notes": "Fujifilm's current APS-C flagship camera. Extremely popular with enthusiast photographers and professionals due to its image quality and classic controls. Features dual SD UHS-II slots for robust media management."
+  },
+  {
+    "id": "fujifilm-xm5",
+    "name": "Fujifilm X-M5",
+    "category": "Cameras",
+    "slug": "fujifilm-xm5",
+    "searchTerms": [
+      "fujifilm xm5 sd card",
+      "x-m5 memory card",
+      "xm5 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "A compact, vlogging-focused APS-C camera capable of 6.2K video recording. Despite its entry-level positioning, the high-resolution video output necessitates V30 cards for reliable recording without dropped frames. The use of a UHS-I slot helps keep the camera's size and cost down while still supporting advanced video features.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Fujifilm X-M5 Fujifilm's cheapest X-mount camera?",
+        "a": "<b>Yes, the X-M5 is positioned as Fujifilm's most affordable interchangeable lens camera.</b> It is specifically designed to appeal to vloggers and first-time mirrorless camera buyers due to its compact form factor and advanced video capabilities. Despite its lower price point, it still requires V30 cards for stable video recording performance."
+      }
+    ],
+    "relatedDevices": [
+      "fujifilm-xe5",
+      "fujifilm-xt30-ii",
+      "canon-eos-r50"
+    ],
+    "notes": "Released late 2024 as Fujifilm's entry-level vlogging and creator-focused camera. High search volume is expected as it gains popularity within the content creation community due to its feature set and affordability."
+  },
+  {
+    "id": "fujifilm-xt30-ii",
+    "name": "Fujifilm X-T30 II",
+    "category": "Cameras",
+    "slug": "fujifilm-xt30-ii",
+    "searchTerms": [
+      "fujifilm xt30 ii sd card",
+      "x-t30 ii memory card",
+      "xt30 2 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "A mid-range APS-C camera featuring a 26MP sensor and capable of 4K 30fps video recording. V30 cards handle all its recording modes comfortably, making it a reliable choice for both photography and video. It is popular as a more compact and budget-friendly alternative to the larger, flagship X-T5 models.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "X-T30 II vs X-T5 - do I need faster cards?",
+        "a": "<b>No, the X-T30 II uses a UHS-I card slot and requires V30 cards, which are sufficient for its capabilities.</b> In contrast, the X-T5 features faster UHS-II slots and can benefit from V60 or even V90 cards due to its higher resolution and more demanding video modes. If you're on a budget, the X-T30 II saves money on both the camera body and compatible SD cards."
+      }
+    ],
+    "relatedDevices": [
+      "fujifilm-xt5",
+      "fujifilm-xs20",
+      "sony-a6400"
+    ],
+    "notes": "A popular mid-range Fujifilm camera known for its compact size and strong image quality. Good availability on the used market makes it a compelling option. Features a single SD UHS-I card slot."
+  },
+  {
+    "id": "fujifilm-xt50",
+    "name": "Fujifilm X-T50",
+    "category": "Cameras",
+    "slug": "fujifilm-xt50",
+    "searchTerms": [
+      "fujifilm xt50 sd card",
+      "x-t50 memory card",
+      "xt50 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II",
+      "minSpeed": "V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "Fujifilm's latest mid-range APS-C camera, boasting a 40MP sensor and 6.2K video recording capabilities. A V60 speed class card is essential to ensure reliable performance for its high-resolution video and fast burst shooting modes. Its UHS-II slot provides faster data transfers and buffer clearing compared to models with only UHS-I slots.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "kingston-canvas-go-pro-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Fujifilm X-T50 essentially the X-T5 in a smaller body?",
+        "a": "<b>Essentially, yes.</b> The X-T50 utilizes the same 40MP sensor and image processing engine as the flagship X-T5 but integrates them into a more compact and lightweight body. Consequently, their SD card requirements are similar, with a V60 minimum recommended for reliable 6.2K video recording and high-resolution photography."
+      }
+    ],
+    "relatedDevices": [
+      "fujifilm-xt5",
+      "fujifilm-xt30-ii",
+      "fujifilm-xm5"
+    ],
+    "notes": "Released in 2024 as a compact alternative to the X-T5, appealing to enthusiasts seeking top-tier image quality in a more portable form factor. It is gaining popularity and is expected to have high search volume."
+  },
+  {
+    "id": "sony-fx30",
+    "name": "Sony FX30",
+    "category": "Cameras",
+    "slug": "sony-fx30",
+    "searchTerms": [
+      "sony fx30 sd card",
+      "fx30 memory card",
+      "fx30 cfexpress",
+      "sony fx30 media"
+    ],
+    "sdCard": {
+      "type": "Dual slots: CFexpress Type A or SD UHS-II",
+      "minSpeed": "V60 (SD), V90 recommended for high bitrates",
+      "minWriteSpeed": "60-90 MB/s (SD), 800+ MB/s (CFexpress)",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "A professional cinema camera in Super 35 (APS-C) format, capable of 6K oversampled 4K recording. Both card slots accept either CFexpress Type A or SD UHS-II cards. For the highest bitrate ALL-I codec and extended takes, V90 SD cards or CFexpress Type A cards are recommended to ensure stable recording and optimal performance.",
+    "recommendedBrands": [
+      {
+        "id": "sony-tough-g-v90"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "sandisk-extreme-pro-cfexpress-type-a"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Should I use CFexpress Type A or SD cards in the FX30?",
+        "a": "<b>For most common shooting scenarios and high-quality recording, V90 SD cards are perfectly sufficient and significantly more affordable.</b> CFexpress Type A is primarily necessary for the absolute highest bitrate ALL-I recording codecs, or when you require the fastest possible offload speeds to your computer. You can start with V90 SD and only upgrade to CFexpress if you encounter specific performance limitations."
+      },
+      {
+        "q": "Can I mix CFexpress Type A and SD cards in the FX30?",
+        "a": "<b>Yes, you can use one CFexpress Type A card and one SD UHS-II card simultaneously.</b> This offers a flexible and cost-effective approach: you can record your primary footage to the faster CFexpress card and use the SD card for overflow or backup. Both slots are identical in their physical interface and interchangeable for either card type."
+      }
+    ],
+    "relatedDevices": [
+      "sony-fx3",
+      "sony-a7-iv",
+      "panasonic-lumix-s5-iix"
+    ],
+    "notes": "A highly popular professional cinema camera among indie filmmakers and YouTube creators. Its dual CFexpress Type A / SD UHS-II slots offer versatile media options. Shares similar media requirements with its full-frame counterpart, the FX3."
+  },
+  {
+    "id": "sony-fx3",
+    "name": "Sony FX3",
+    "category": "Cameras",
+    "slug": "sony-fx3",
+    "searchTerms": [
+      "sony fx3 sd card",
+      "fx3 memory card",
+      "fx3 cfexpress",
+      "sony fx3 media"
+    ],
+    "sdCard": {
+      "type": "Dual slots: CFexpress Type A or SD UHS-II",
+      "minSpeed": "V60 (SD), V90 recommended for 4K 120fps",
+      "minWriteSpeed": "60-90 MB/s (SD), 800+ MB/s (CFexpress)",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "Sony's full-frame cinema camera, known for its outstanding 4K 120fps capability. V90 SD cards are essential for reliably recording high frame rate footage and using ALL-I codecs. While CFexpress Type A cards provide the absolute maximum performance, they come at a premium cost.",
+    "recommendedBrands": [
+      {
+        "id": "sony-tough-g-v90"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "sandisk-extreme-pro-cfexpress-type-a"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Are the SD card recommendations for the FX3 and FX30 the same?",
+        "a": "<b>Yes, both the Sony FX3 and FX30 utilize the same dual CFexpress Type A / SD UHS-II slot configuration.</b> Therefore, the card recommendations and considerations for speed (V90 for demanding codecs) and type (CFexpress for ultimate performance, SD for versatility) are identical across both camera bodies."
+      },
+      {
+        "q": "Is a V90 SD card truly required for the FX3, or can I use a V60 card?",
+        "a": "<b>V60 cards will work for standard 4K recording and many professional codecs, but a V90 speed class card is explicitly required for 4K 120fps and the highest bitrate recording modes.</b> If you've invested in an FX3 for its high frame rate capabilities, it's crucial not to compromise on card speed to ensure stable, uninterrupted recording of your most demanding footage."
+      }
+    ],
+    "relatedDevices": [
+      "sony-fx30",
+      "sony-a7s-iii",
+      "canon-eos-r5"
+    ],
+    "notes": "A professional full-frame cinema camera, often considered the video-centric version of the A7S III. It features dual CFexpress Type A / SD UHS-II slots, making it very popular with serious videographers and filmmakers for its robust video features."
+  },
+  {
+    "id": "fujifilm-xe5",
+    "name": "Fujifilm X-E5",
+    "category": "Cameras",
+    "slug": "fujifilm-xe5",
+    "searchTerms": [
+      "fujifilm xe5 sd card",
+      "x-e5 memory card",
+      "xe5 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "A compact, rangefinder-style camera featuring a 26MP sensor and capable of 6.2K video recording. V30 cards handle both 4K and 6.2K recording reliably. Its UHS-I slot contributes to the camera's compact size and affordable price point.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the key difference between the X-E5 and the X-M5?",
+        "a": "<b>The X-E5 is designed with a traditional rangefinder-style body, featuring a centered electronic viewfinder. In contrast, the X-M5 is more vlog-focused and typically features a vari-angle or flip screen.</b> Both cameras share identical SD card requirements, needing a V30 UHS-I minimum. Your choice between them should be based on your preferred shooting style and ergonomic preferences, rather than card specifications."
+      }
+    ],
+    "relatedDevices": [
+      "fujifilm-xm5",
+      "fujifilm-x100vi",
+      "fujifilm-xt30-ii"
+    ],
+    "notes": "Released in 2024 as a compact, rangefinder-style option within the Fujifilm X-series lineup. It targets street photographers and enthusiasts who prefer a lightweight camera with classic aesthetics."
+  },
+  {
+    "id": "fujifilm-x100v",
+    "name": "Fujifilm X100V",
+    "category": "Cameras",
+    "slug": "fujifilm-x100v",
+    "searchTerms": [
+      "fujifilm x100v sd card",
+      "x100v memory card",
+      "x100 5",
+      "fujifilm x100v storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "The previous-generation premium compact camera with a fixed 23mm f/2 lens and a 26MP sensor. A V30 speed class card handles 4K 30fps video recording comfortably. Despite being superseded by the X100VI, it remains extremely popular on the used market due to its iconic design and image quality.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Are the SD card requirements the same for the X100V and the X100VI?",
+        "a": "<b>No, the X100VI requires V60 UHS-II cards for its higher-resolution 6.2K video recording capabilities.</b> The X100V, in contrast, maxes out at 4K 30fps and only requires V30 UHS-I cards. This difference in card speed requirements means the older X100V can be a more budget-friendly option for both the camera and its accessories."
+      },
+      {
+        "q": "Why is the Fujifilm X100V still so expensive on the used market?",
+        "a": "<b>The X100 series experienced a viral surge in popularity on social media platforms, creating immense demand for these cameras.</b> Coupled with the X100VI being perennially sold out, used X100V prices have remained remarkably high. It's still an excellent camera that offers a premium experience with more modest card requirements than its successor."
+      }
+    ],
+    "relatedDevices": [
+      "fujifilm-x100vi",
+      "fujifilm-xe5",
+      "leica-q2"
+    ],
+    "notes": "Previous-generation X100 model. Despite its age, it is still massively popular and often sells at a high price on the used market. High ongoing search volume is driven by the scarcity of the X100VI, pushing buyers towards its still-capable predecessor."
+  },
+  {
+    "id": "fujifilm-xt3",
+    "name": "Fujifilm X-T3",
+    "category": "Cameras",
+    "slug": "fujifilm-xt3",
+    "searchTerms": [
+      "fujifilm xt3 sd card",
+      "x-t3 memory card",
+      "xt3 storage"
+    ],
+    "sdCard": {
+      "type": "Dual SD UHS-II",
+      "minSpeed": "V60 (V90 for 400Mbps video)",
+      "minWriteSpeed": "60 MB/s minimum, 90 MB/s for highest bitrate",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "Fujifilm's previous-generation flagship camera, featuring a 26MP sensor and capable of 4K 60fps video recording. V60 cards handle most shooting scenarios, but V90 is required for the highest-bitrate 400Mbps ALL-Intra video codec. It remains popular on the used market as a capable and more affordable alternative to the X-T4 and X-T5.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "sony-tough-g-v90"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Fujifilm X-T3 still worth buying used in 2024?",
+        "a": "<b>Yes, for budget-conscious enthusiasts and professionals, the X-T3 is still an excellent camera.</b> It delivers superb image quality and robust 4K 60fps video capabilities at a significantly lower price point than current models. V60 cards are sufficient for most workflows, making it a very cost-effective option overall."
+      },
+      {
+        "q": "Do I really need V90 cards for the X-T3?",
+        "a": "<b>You only need V90 cards if you specifically plan to use the 400Mbps ALL-Intra codec for maximum video quality.</b> For all other standard 4K recording modes and photography, V60 cards are perfectly adequate and provide excellent performance. Most users will find V90 cards unnecessary and can save money by opting for V60."
+      }
+    ],
+    "relatedDevices": [
+      "fujifilm-xt4",
+      "fujifilm-xt5",
+      "sony-a6400"
+    ],
+    "notes": "A very popular used camera from its release in 2018. It still boasts an active user community and offers high search volume from buyers looking for a powerful camera at a budget-friendly price. Features dual SD UHS-II slots."
+  },
+  {
+    "id": "leica-q3",
+    "name": "Leica Q3",
+    "category": "Cameras",
+    "slug": "leica-q3",
+    "searchTerms": [
+      "leica q3 sd card",
+      "q3 memory card",
+      "leica q3 storage"
+    ],
+    "sdCard": {
+      "type": "Dual SD UHS-II",
+      "minSpeed": "V60 (V90 for 8K video)",
+      "minWriteSpeed": "60 MB/s minimum, 90 MB/s for 8K",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "512GB"
+    },
+    "whySpecs": "A premium full-frame compact camera featuring a fixed 28mm f/1.7 lens and 8K video capability. While V60 cards handle photography and 4K video reliably, a V90 speed class card is explicitly required for 8K recording. Its dual UHS-II slots provide crucial backup recording capabilities for professional work and peace of mind.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "sony-tough-g-v90"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Leica Q3 worth its premium price?",
+        "a": "<b>For Leica enthusiasts and professional street photographers, the Q3 is considered a worthwhile investment.</b> It delivers exceptional build quality, the brand's renowned color science, and a superb fixed Summilux lens. The premium price reflects not just its specifications but also its craftsmanship, brand heritage, and exclusive user experience."
+      },
+      {
+        "q": "Do I really need a V90 SD card for 8K video on the Q3?",
+        "a": "<b>Yes, 8K video recording on the Leica Q3 demands a V90 minimum write speed card for stable, uninterrupted capture.</b> However, it's important to note that most Q3 users primarily shoot stills and 4K video, where V60 cards are perfectly adequate. Only invest in V90 cards if you specifically plan to utilize the 8K video feature."
+      }
+    ],
+    "relatedDevices": [
+      "leica-q3-43",
+      "leica-q2",
+      "fujifilm-x100vi"
+    ],
+    "notes": "Leica's flagship compact camera. It is extremely expensive but highly sought-after for its unique blend of traditional aesthetics and modern performance. Its 8K video capability, coupled with dual SD UHS-II slots, makes specific card recommendations crucial."
+  },
+  {
+    "id": "leica-q3-43",
+    "name": "Leica Q3 43",
+    "category": "Cameras",
+    "slug": "leica-q3-43",
+    "searchTerms": [
+      "leica q3 43 sd card",
+      "q3 43 memory card",
+      "leica q3 43 storage"
+    ],
+    "sdCard": {
+      "type": "Dual SD UHS-II",
+      "minSpeed": "V60 (V90 for 8K video)",
+      "minWriteSpeed": "60 MB/s minimum, 90 MB/s for 8K",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "512GB"
+    },
+    "whySpecs": "A variant of the Leica Q3, featuring a 43mm f/2 APO lens instead of the standard 28mm. It shares identical SD card requirements with the regular Q3: V60 cards for general photography and 4K video, and V90 cards explicitly for 8K video recording. The longer focal length makes it particularly suited for portraiture and specific reportage work.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "sony-tough-g-v90"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Are the SD card requirements for the Q3 43 and the regular Q3 the same?",
+        "a": "<b>Yes, the SD card requirements are identical for both the Leica Q3 43 and the standard Leica Q3.</b> Both cameras share the same sensor, image processor, and recording capabilities. The sole difference between the two models is their fixed lens focal length: 28mm for the standard Q3 and 43mm for the Q3 43."
+      }
+    ],
+    "relatedDevices": [
+      "leica-q3",
+      "leica-q2",
+      "leica-m11"
+    ],
+    "notes": "Released in 2024 as a 43mm variant of the Q3, offering a different perspective for photographers. It maintains the same luxurious build quality and advanced features as the original, including dual SD UHS-II slots."
+  },
+  {
+    "id": "leica-m11",
+    "name": "Leica M11",
+    "category": "Cameras",
+    "slug": "leica-m11",
+    "searchTerms": [
+      "leica m11 sd card",
+      "m11 memory card",
+      "leica m11 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II",
+      "minSpeed": "V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "512GB"
+    },
+    "whySpecs": "Leica's flagship digital rangefinder camera, featuring a high-resolution 60MP sensor. A V60 speed class card is recommended to handle the large file sizes generated by its high-resolution stills and 4K video recording. The UHS-II slot provides fast buffer clearing and efficient data transfer.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Leica M11 worth its considerable price tag?",
+        "a": "<b>For Leica purists, professional street photographers, and those who value exceptional craftsmanship and a unique shooting experience, the M11 is often considered worth the investment.</b> It represents the pinnacle of modern digital rangefinder photography, delivering outstanding image quality and a distinctive tactile feel."
+      }
+    ],
+    "relatedDevices": [
+      "leica-q3",
+      "leica-m10"
+    ],
+    "notes": "Leica's flagship digital M-series rangefinder camera. It combines classic design with modern digital capabilities. Features a single SD UHS-II slot and is renowned for its high-resolution sensor."
+  },
+  {
+    "id": "leica-q2",
+    "name": "Leica Q2",
+    "category": "Cameras",
+    "slug": "leica-q2",
+    "searchTerms": [
+      "leica q2 sd card",
+      "q2 memory card",
+      "leica q2 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II",
+      "minSpeed": "V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "512GB"
+    },
+    "whySpecs": "The previous-generation premium compact camera from Leica, featuring a 47MP sensor and 4K video recording. A V60 speed class card is essential to ensure reliable performance for its high-resolution stills and 4K video. It features a single SD UHS-II slot.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Should I buy a Leica Q2 or wait for the newer Q3?",
+        "a": "<b>The Leica Q3 is the current model, but the Q2 remains an outstanding camera and can often be found at a more accessible price on the used market.</b> The Q3 adds 8K video and a second card slot. If you don't require 8K video and are comfortable with a single card slot, the Q2 delivers the same legendary image quality and shooting experience. V60 cards work perfectly for both models for photography and 4K video."
+      }
+    ],
+    "relatedDevices": [
+      "leica-q3",
+      "leica-q3-43",
+      "fujifilm-x100v"
+    ],
+    "notes": "The previous-generation Q-series model from Leica. It is still highly sought-after on the used market for its exceptional image quality and user experience. Features a single SD UHS-II slot, unlike the Q3 which has dual slots."
+  },
+  {
+    "id": "leica-d-lux-8",
+    "name": "Leica D-Lux 8",
+    "category": "Cameras",
+    "slug": "leica-d-lux-8",
+    "searchTerms": [
+      "leica d lux 8 sd card",
+      "d-lux 8 memory card",
+      "leica d-lux 8 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "256GB"
+    },
+    "whySpecs": "Leica's latest compact camera, featuring a 4/3-inch sensor and 4K video recording. A V30 speed class card is the minimum requirement for reliable 4K recording without dropped frames. This camera aims to deliver a premium shooting experience in a highly portable package.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Leica D-Lux 8 effectively a rebadged Panasonic camera?",
+        "a": "<b>Yes, the Leica D-Lux series historically shares its platform with Panasonic's Lumix LX series.</b> The D-Lux 8 is largely based on the Panasonic Lumix LX100 III (or a similar variant) in terms of its sensor and core specifications. While it offers the same excellent image quality, the Leica model commands a higher price due to its distinct branding, design tweaks, and the included software/warranty package."
+      }
+    ],
+    "relatedDevices": [
+      "leica-q2",
+      "leica-q3"
+    ],
+    "notes": "Released in 2024, the Leica D-Lux 8 is a new compact camera that continues Leica's partnership with Panasonic. It's often considered a premium point-and-shoot option. Features a single SD UHS-I slot."
+  },
+  {
+    "id": "leica-m10",
+    "name": "Leica M10",
+    "category": "Cameras",
+    "slug": "leica-m10",
+    "searchTerms": [
+      "leica m10 sd card",
+      "m10 memory card",
+      "leica m10 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "256GB"
+    },
+    "whySpecs": "A previous-generation digital rangefinder camera from Leica, featuring a 24MP sensor. A V30 speed class card is sufficient for all its shooting modes, including high-resolution stills. It embodies the classic Leica M experience in a digital body, making it a desirable option on the used market.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Leica M10 still worth buying used in 2024?",
+        "a": "<b>For photographers seeking the classic Leica rangefinder experience at a more accessible price point than the newer M11, the M10 is an excellent used purchase.</b> It continues to deliver outstanding image quality and the unique M-series handling. With V30 UHS-I cards being perfectly adequate, it also represents a more cost-effective media solution."
+      }
+    ],
+    "relatedDevices": [
+      "leica-m11",
+      "leica-q2"
+    ],
+    "notes": "A previous-generation M-series digital rangefinder camera. Still highly regarded and popular among enthusiasts and collectors. Features a single SD UHS-I slot."
+  },
+  {
+    "id": "panasonic-lumix-s9",
+    "name": "Panasonic Lumix S9",
+    "category": "Cameras",
+    "slug": "panasonic-lumix-s9",
+    "searchTerms": [
+      "panasonic lumix s9 sd card",
+      "lumix s9 memory card",
+      "s9 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II",
+      "minSpeed": "V60 (V90 for high frame rate)",
+      "minWriteSpeed": "60 MB/s minimum, 90 MB/s recommended",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "512GB"
+    },
+    "whySpecs": "Panasonic's new compact full-frame camera, specifically aimed at content creators, featuring 6K video recording and advanced stabilization. A V60 speed class card handles standard video recording reliably, but a V90 card is recommended for the highest quality recording modes and high frame rates. Its single SD UHS-II slot contributes to its compact body design.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "sony-tough-g-v90"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Lumix S9 a good camera for vlogging and content creation?",
+        "a": "<b>Yes, the Lumix S9 is specifically designed as Panasonic's most compact full-frame camera for content creators.</b> It features excellent in-body image stabilization, direct LUT (Look Up Table) application for creative looks, and a lightweight design ideal for handheld shooting. V60 cards handle 4K recording perfectly, while V90 cards can future-proof for even higher bitrates or frame rates."
+      }
+    ],
+    "relatedDevices": [
+      "panasonic-lumix-s5-ii",
+      "sony-a7c-ii",
+      "canon-eos-r8"
+    ],
+    "notes": "Released in 2024, the Lumix S9 is a significant new entry in the full-frame mirrorless market, targeting content creators and vloggers. Its compact form factor and advanced video features are key selling points. Features a single SD UHS-II slot."
+  },
+  {
+    "id": "panasonic-lumix-s5-iix",
+    "name": "Panasonic Lumix S5 IIX",
+    "category": "Cameras",
+    "slug": "panasonic-lumix-s5-iix",
+    "searchTerms": [
+      "panasonic lumix s5 iix sd card",
+      "s5 iix memory card",
+      "s5iix storage",
+      "panasonic s5 iix"
+    ],
+    "sdCard": {
+      "type": "Dual SD UHS-II",
+      "minSpeed": "V90",
+      "minWriteSpeed": "90 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "512GB"
+    },
+    "whySpecs": "A highly video-centric full-frame camera capable of internal ProRes and external RAW recording. V90 cards are absolutely essential for reliably capturing the highest bitrate ProRes codecs and ALL-Intra formats. Its dual UHS-II slots enable critical features like simultaneous backup recording or seamless relay recording for extremely long takes.",
+    "recommendedBrands": [
+      {
+        "id": "sony-tough-g-v90"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the difference in SD card requirements between the S5 IIX and the regular S5 II?",
+        "a": "<b>The Lumix S5 IIX specifically requires V90 cards for its advanced internal ProRes and external RAW video recording capabilities, which the standard S5 II does not offer.</b> While the standard S5 II works perfectly with V60 cards for its maximum video quality, if you're purchasing the 'X' model specifically for its professional video codecs, it is critical to use V90 cards to ensure stable recording and avoid dropped frames."
+      }
+    ],
+    "relatedDevices": [
+      "panasonic-lumix-s5-ii",
+      "panasonic-lumix-s1h",
+      "sony-fx30"
+    ],
+    "notes": "The video-centric variant of the Lumix S5 II. Its internal ProRes and RAW recording capabilities make it a formidable tool for professional videographers and filmmakers. Its demanding video codecs necessitate the use of V90 cards. Features dual SD UHS-II slots."
+  },
+  {
+    "id": "panasonic-lumix-s5-ii",
+    "name": "Panasonic Lumix S5 II",
+    "category": "Cameras",
+    "slug": "panasonic-lumix-s5-ii",
+    "searchTerms": [
+      "panasonic lumix s5 ii sd card",
+      "s5 ii memory card",
+      "s5ii storage",
+      "panasonic s5 ii"
+    ],
+    "sdCard": {
+      "type": "Dual SD UHS-II",
+      "minSpeed": "V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "512GB"
+    },
+    "whySpecs": "A popular hybrid full-frame camera known for its excellent phase-detect autofocus and robust video capabilities, including 6K recording. A V60 speed class card handles 4K and 6K video recording reliably, making it a versatile choice for both photographers and videographers.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Lumix S5 II good for both photography and video?",
+        "a": "<b>Yes, the Lumix S5 II is widely considered one of the best hybrid cameras available, offering a strong balance of features for both stills and video.</b> Its advanced autofocus system and comprehensive video codecs make it a highly capable tool for diverse creative tasks. V60 cards provide all the necessary speed and reliability for demanding photo burst sequences and high-resolution video recording."
+      }
+    ],
+    "relatedDevices": [
+      "panasonic-lumix-s5-iix",
+      "sony-a7-iv",
+      "nikon-z6-ii"
+    ],
+    "notes": "A very popular hybrid full-frame mirrorless camera. It is highly regarded for its performance, features, and competitive pricing. Features dual SD UHS-II slots, offering reliability and flexibility for professional use."
+  },
+  {
+    "id": "nikon-d7500",
+    "name": "Nikon D7500",
+    "category": "Cameras",
+    "slug": "nikon-d7500",
+    "searchTerms": [
+      "nikon d7500 sd card",
+      "d7500 memory card",
+      "d7500 storage"
+    ],
+    "sdCard": {
+      "type": "Dual SD UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "256GB"
+    },
+    "whySpecs": "An enthusiast-level APS-C DSLR featuring a 20MP sensor and 4K video recording. V30 (U3) cards handle 4K recording and its 8fps burst shooting reliably. Its dual SD slots enable professional workflow options like backup recording or overflow for extended shooting sessions.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Nikon D7500 still a good camera in 2024?",
+        "a": "<b>Yes, for DSLR enthusiasts and sports shooters on a budget, the D7500 remains a very capable camera.</b> It delivers excellent autofocus performance, robust weather sealing, and impressive battery life typical of DSLRs. While mirrorless cameras now dominate new releases, DSLRs like the D7500 remain reliable workhorses. V30 cards provide all the speed you need for its capabilities."
+      },
+      {
+        "q": "Should I use both SD card slots on the D7500?",
+        "a": "<b>Yes, for important shoots or extended sessions, it is highly recommended to utilize both dual SD card slots.</b> You can configure them for either overflow (the camera continues to record to the second card when the first one fills up) or for instant backup (simultaneous recording to both cards). This dual-slot functionality is crucial for protecting against potential card failure."
+      }
+    ],
+    "relatedDevices": [
+      "nikon-d500",
+      "nikon-z50-ii",
+      "canon-eos-90d"
+    ],
+    "notes": "A popular APS-C DSLR from its release in 2017. It is still widely used by enthusiasts and semi-professionals for its strong performance. It has a strong presence on the used market. Features dual SD UHS-I slots."
+  },
+  {
+    "id": "nikon-zf",
+    "name": "Nikon Zf",
+    "category": "Cameras",
+    "slug": "nikon-zf",
+    "searchTerms": [
+      "nikon zf sd card",
+      "zf memory card",
+      "nikon zf storage"
+    ],
+    "sdCard": {
+      "type": "Dual SD UHS-II",
+      "minSpeed": "V60 (V90 for high frame rate video)",
+      "minWriteSpeed": "60 MB/s minimum, 90 MB/s recommended",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "512GB"
+    },
+    "whySpecs": "A retro-styled full-frame mirrorless camera with a 24MP sensor and advanced video features. V60 cards handle standard 4K recording and photography, but V90 is recommended for 4K 120fps slow-motion and the highest bitrate N-RAW video modes. Its dual UHS-II slots enable professional backup workflows and provide robust media management.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "sony-tough-g-v90"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Why is the Nikon Zf such a popular camera?",
+        "a": "<b>The Nikon Zf has gained immense popularity by successfully blending a classic, retro design inspired by Nikon's film cameras with cutting-edge modern full-frame mirrorless performance.</b> It offers excellent image quality, advanced autofocus, and strong video capabilities in a stylish package. This combination of vintage aesthetics and contemporary technology appeals to a wide range of photography enthusiasts and professionals."
+      },
+      {
+        "q": "Do I need V90 cards for the Nikon Zf, or is V60 enough?",
+        "a": "<b>V60 cards are generally sufficient for most photography and standard 4K video recording on the Nikon Zf.</b> However, V90 cards become necessary if you plan to shoot 4K 120fps slow-motion video or utilize the highest bitrate N-RAW video recording modes. Most users can start with V60 cards and only consider V90 if their specific demanding video workflows require it."
+      }
+    ],
+    "relatedDevices": [
+      "nikon-z6-iii",
+      "nikon-z5",
+      "fujifilm-xt5"
+    ],
+    "notes": "Released in late 2023, the Nikon Zf has become a highly popular retro-styled full-frame mirrorless camera. It shares core technology with the Z6 III, offering strong performance in a distinct aesthetic package. Features dual SD UHS-II slots."
+  },
+  {
+    "id": "nikon-z50-ii",
+    "name": "Nikon Z50 II",
+    "category": "Cameras",
+    "slug": "nikon-z50-ii",
+    "searchTerms": [
+      "nikon z50 ii sd card",
+      "z50 ii memory card",
+      "z50 2 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "256GB"
+    },
+    "whySpecs": "Nikon's entry-level APS-C mirrorless camera, featuring a 20MP sensor and 4K video recording. V30 (U3) cards ensure reliable 4K recording and continuous shooting performance. Its UHS-I slot helps to keep the camera affordable and compact for beginners and casual users.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Are the SD card requirements for the Z50 II and the original Z50 the same?",
+        "a": "<b>Yes, both the Nikon Z50 II and the original Z50 utilize SD UHS-I cards with a V30 minimum speed rating.</b> While the Z50 II features improved autofocus and processing capabilities, its media requirements are identical to its predecessor. Any V30 card that performed well in the Z50 will also work reliably in the Z50 II."
+      }
+    ],
+    "relatedDevices": [
+      "nikon-z50",
+      "nikon-zfc",
+      "canon-eos-r50"
+    ],
+    "notes": "Released in late 2024 as an updated version of the popular Z50. It targets beginners, vloggers, and photographers seeking a compact and capable mirrorless camera. Features a single SD UHS-I slot."
+  },
+  {
+    "id": "nikon-z6-iii",
+    "name": "Nikon Z6 III",
+    "category": "Cameras",
+    "slug": "nikon-z6-iii",
+    "searchTerms": [
+      "nikon z6 iii sd card",
+      "z6 iii memory card",
+      "z6 3 cfexpress",
+      "nikon z6 iii media"
+    ],
+    "sdCard": {
+      "type": "CFexpress Type B + SD UHS-II",
+      "minSpeed": "V60 (SD), V90 for high frame rate video",
+      "minWriteSpeed": "60-90 MB/s (SD), 1400+ MB/s (CFexpress)",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "512GB"
+    },
+    "whySpecs": "Nikon's latest full-frame hybrid camera, featuring a partially stacked sensor and advanced video capabilities, including 6K RAW. V90 SD cards or CFexpress Type B cards are recommended for demanding tasks like 4K 120fps and N-RAW recording. Its dual slot design provides both redundancy and versatility for professional workflows.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Should I use CFexpress Type B or SD cards in the Nikon Z6 III?",
+        "a": "<b>For most users, high-quality V90 SD cards in both slots are often sufficient for excellent performance.</b> However, CFexpress Type B cards are necessary for the absolute highest bitrate N-RAW recording and for maximizing burst depth during intense sports photography. You can start with V90 SD cards and only consider upgrading to CFexpress if your specific professional workflow demands it."
+      },
+      {
+        "q": "Can I mix CFexpress Type B and SD cards in the Z6 III?",
+        "a": "<b>Yes, the Nikon Z6 III is designed with a hybrid dual slot: Slot 1 accepts CFexpress Type B, and Slot 2 accepts SD UHS-II.</b> This configuration is highly flexible and cost-effective. You can use a faster CFexpress card in Slot 1 for primary recording (e.g., RAW video) and an SD card in Slot 2 for backup or less demanding tasks (e.g., JPEG photos or 4K video)."
+      }
+    ],
+    "relatedDevices": [
+      "nikon-z6-ii",
+      "nikon-z8",
+      "sony-a7-iv",
+      "canon-eos-r6-mark-ii"
+    ],
+    "notes": "Released mid-2024 as the flagship hybrid successor to the Z6 II. It is very popular with photo/video hybrid shooters due to its advanced sensor and robust video features. Features a CFexpress Type B slot and an SD UHS-II slot."
+  },
+  {
+    "id": "nikon-z6-ii",
+    "name": "Nikon Z6 II",
+    "category": "Cameras",
+    "slug": "nikon-z6-ii",
+    "searchTerms": [
+      "nikon z6 ii sd card",
+      "z6 ii memory card",
+      "z6 2 storage"
+    ],
+    "sdCard": {
+      "type": "Dual SD UHS-II",
+      "minSpeed": "V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "512GB"
+    },
+    "whySpecs": "A popular full-frame hybrid mirrorless camera, capable of 4K video recording and high-speed burst photography. A V60 speed class card handles 4K video and burst photography reliably. Its dual SD UHS-II slots offer redundancy and flexibility for professional and enthusiast photographers.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Nikon Z6 II still a good buy compared to the newer Z6 III?",
+        "a": "<b>Yes, if you're on a budget or don't require the absolute latest features, the Z6 II remains an excellent camera.</b> It delivers superb image quality and robust video capabilities at a potentially lower price point than the Z6 III. V60 cards provide all the necessary speed for its advanced photo and video modes, making it a cost-effective option for many users."
+      }
+    ],
+    "relatedDevices": [
+      "nikon-z6-iii",
+      "sony-a7-iv",
+      "canon-eos-r6-mark-ii"
+    ],
+    "notes": "A popular hybrid full-frame mirrorless camera from its release in 2020. It's highly regarded for its balance of image quality, video features, and ergonomics. Features dual SD UHS-II slots for reliable data management."
+  },
+  {
+    "id": "nikon-d850",
+    "name": "Nikon D850",
+    "category": "Cameras",
+    "slug": "nikon-d850",
+    "searchTerms": [
+      "nikon d850 sd card",
+      "d850 memory card",
+      "d850 xqd",
+      "nikon d850 media"
+    ],
+    "sdCard": {
+      "type": "XQD + SD UHS-II",
+      "minSpeed": "V30 (SD), V60 recommended",
+      "minWriteSpeed": "30 MB/s minimum, 60 MB/s recommended",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "512GB"
+    },
+    "whySpecs": "Nikon's professional full-frame DSLR workhorse, featuring a high-resolution 45MP sensor and 4K video recording. V30 SD cards handle standard recording, but V60 is recommended for consistent 4K video performance and sustained 9fps RAW bursts. Its primary slot supports XQD cards for maximum performance in demanding professional scenarios.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "nikon-xqd-memory-card"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Nikon D850 still relevant in 2024?",
+        "a": "<b>Absolutely, the Nikon D850 remains one of the best and most versatile all-around cameras ever made.</b> It continues to deliver exceptional image quality, impressive battery life, and excellent ergonomics. Many professionals still prefer its robust build and reliable handling over newer mirrorless cameras, making it a highly valued workhorse."
+      },
+      {
+        "q": "Do I need XQD cards, or are SD cards enough for the D850?",
+        "a": "<b>While SD cards in the second slot work perfectly fine for most users, XQD cards in the primary slot (Slot 1) provide significantly faster write speeds crucial for sports photography and extended high-speed burst shooting.</b> For general photography and casual video recording, a V60 SD card in both slots is perfectly adequate. XQD is for pushing the camera to its limits."
+      },
+      {
+        "q": "Can I use CFexpress cards in the XQD slot of the D850?",
+        "a": "<b>No, the D850's XQD slot is specifically designed for XQD cards and is not compatible with CFexpress cards.</b> Although CFexpress Type B cards share a similar physical form factor with XQD, they require specific firmware support that the D850 does not possess. Only genuine XQD cards will function in that slot."
+      }
+    ],
+    "relatedDevices": [
+      "nikon-z8",
+      "nikon-d780",
+      "canon-eos-5d-mark-iv"
+    ],
+    "notes": "A professional DSLR workhorse from its release in 2017. It is still extremely popular and widely used by professionals and advanced enthusiasts. Features a hybrid dual slot: XQD in Slot 1 and SD UHS-II in Slot 2."
+  },
+  {
+    "id": "nikon-d750",
+    "name": "Nikon D750",
+    "category": "Cameras",
+    "slug": "nikon-d750",
+    "searchTerms": [
+      "nikon d750 sd card",
+      "d750 memory card",
+      "d750 storage"
+    ],
+    "sdCard": {
+      "type": "Dual SD UHS-I",
+      "minSpeed": "U1 / Class 10 (U3 recommended for video)",
+      "minWriteSpeed": "10 MB/s minimum, 30 MB/s for video",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "No official limit",
+      "testedMaxCapacity": "256GB"
+    },
+    "whySpecs": "A popular full-frame DSLR from 2014, featuring a 24MP sensor and 1080p video recording. Class 10 (U1) cards are sufficient for photography, while U3 (V30) is recommended for 1080p 60fps video to ensure stability. Its dual SD slots enable convenient backup recording or overflow for extended shooting sessions.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Nikon D750 still worth buying used in 2024?",
+        "a": "<b>Yes, for budget-conscious photographers seeking an excellent full-frame DSLR, the D750 remains a fantastic value.</b> It delivers superb image quality, comfortable ergonomics, and the legendary battery life characteristic of Nikon DSLRs. Used prices are very affordable, and basic Class 10 or U3 SD cards work perfectly, keeping the total cost of ownership low."
+      },
+      {
+        "q": "Do I need fast SD cards for the Nikon D750?",
+        "a": "<b>No, the D750's specifications do not demand high-speed cards like V60 or V90.</b> A Class 10 (U1) card is perfectly adequate for photos and casual 1080p video. A U3 (V30) card offers improved reliability for 1080p 60fps video recording but isn't strictly necessary. You can effectively focus your budget on quality lenses rather than expensive, ultra-fast cards."
+      }
+    ],
+    "relatedDevices": [
+      "nikon-d850",
+      "nikon-z6-ii",
+      "canon-eos-6d-mark-ii"
+    ],
+    "notes": "An extremely popular full-frame DSLR that continues to see significant activity on the used market. It is highly regarded for its excellent value proposition and performance. Features dual SD UHS-I slots."
+  },
+  {
+    "id": "nikon-z5",
+    "name": "Nikon Z5",
+    "category": "Cameras",
+    "slug": "nikon-z5",
+    "searchTerms": [
+      "nikon z5 sd card",
+      "z5 memory card",
+      "nikon z5 storage"
+    ],
+    "sdCard": {
+      "type": "Dual SD UHS-II",
+      "minSpeed": "V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit (1TB+ tested)"
+    },
+    "whySpecs": "The Z5 shoots 4K video and features dual UHS-II slots. While V30 cards can work for some video modes, V60 is recommended for maximum reliability across all recording formats and for clearing the buffer faster during burst shooting.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need two cards for the Nikon Z5?",
+        "a": "<b>It's highly recommended.</b> The Z5's dual UHS-II slots allow you to run a real-time backup, prevent you from running out of space (overflow), or separate RAW and JPEG files. This professional feature provides excellent peace of mind."
+      }
+    ],
+    "relatedDevices": [
+      "nikon-z6-ii",
+      "sony-a7-iii",
+      "canon-eos-r8"
+    ],
+    "notes": "Nikon's popular entry-level full-frame camera. Its dual UHS-II slots are a major selling point in its class."
+  },
+  {
+    "id": "canon-eos-r100",
+    "name": "Canon EOS R100",
+    "category": "Cameras",
+    "slug": "canon-eos-r100",
+    "searchTerms": [
+      "canon r100 sd card",
+      "eos r100 memory card",
+      "r100 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "No official limit (512GB tested)"
+    },
+    "whySpecs": "The R100 is Canon's most budget-friendly RF camera and shoots 4K video (with a crop). A V30 card is required to ensure stable 4K video recording without errors.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "kingston-canvas-select"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Canon R100 a good first camera?",
+        "a": "<b>Yes, it is designed specifically for beginners.</b> It's very affordable and provides a simple entry into Canon's modern mirrorless system. For its 4K video mode, be sure to get a V30-rated SD card."
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r50",
+      "nikon-d3500"
+    ],
+    "notes": "Canon's cheapest RF mount camera, targeting first-time buyers."
+  },
+  {
+    "id": "sony-a7r-v",
+    "name": "Sony A7R V",
+    "category": "Cameras",
+    "slug": "sony-a7r-v",
+    "searchTerms": [
+      "sony a7r v sd card",
+      "a7rv memory card",
+      "a7rv cfexpress"
+    ],
+    "sdCard": {
+      "type": "Dual slots: CFexpress Type A or SD UHS-II",
+      "minSpeed": "V90 (for SD)",
+      "minWriteSpeed": "90 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "No official limit (2TB+ tested)"
+    },
+    "whySpecs": "The A7R V's 61MP sensor and 8K video generate massive files. To reliably record 8K video or clear the buffer quickly after high-res bursts, a V90 SD card or, ideally, a CFexpress Type A card is required for best performance.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-cfexpress-type-a"
+      },
+      {
+        "id": "sony-tough-g-v90"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need a CFexpress Type A card for the A7R V?",
+        "a": "<b>For 8K video and maximum burst shooting performance, yes.</b> For general photography and 4K video, a fast V90 SD card will work well and is more cost-effective. The dual combo slots give you the flexibility to choose."
+      }
+    ],
+    "relatedDevices": [
+      "sony-a7-iv",
+      "nikon-z8",
+      "canon-eos-r5"
+    ],
+    "notes": "Sony's high-resolution flagship camera. Its demanding file sizes make media choice critical for professional workflows."
+  },
+  {
+    "id": "nikon-d3500",
+    "name": "Nikon D3500",
+    "category": "Cameras",
+    "slug": "nikon-d3500",
+    "searchTerms": [
+      "nikon d3500 sd card",
+      "d3500 memory card",
+      "nikon d3500 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "No official limit (256GB+ tested)"
+    },
+    "whySpecs": "The D3500 is an entry-level DSLR shooting 1080p video. A reliable Class 10 (U1) card from a trusted brand is sufficient for all photo and video functions. V30 cards are not necessary and provide no performance benefit.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-sd-uhs1"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "lexar-professional-633x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need a fast SD card for the Nikon D3500?",
+        "a": "<b>No, you do not.</b> The D3500 is a beginner camera that does not require fast V30 or UHS-II cards. A reliable Class 10 (U1) card from a reputable brand is all you need for photos and 1080p video."
+      }
+    ],
+    "relatedDevices": [
+      "canon-rebel-t7",
+      "nikon-d7500"
+    ],
+    "notes": "One of the most popular beginner DSLRs ever made. High search volume from new photographers."
+  },
+  {
+    "id": "sony-zv-e10",
+    "name": "Sony ZV-E10",
+    "category": "Cameras",
+    "slug": "sony-zv-e10",
+    "searchTerms": [
+      "sony zv-e10 sd card",
+      "zve10 memory card",
+      "zv-e10 storage"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit (512GB+ tested)"
+    },
+    "whySpecs": "The ZV-E10 shoots high-bitrate 4K video. A V30 speed class card is required to reliably handle the data rate and prevent recording from stopping unexpectedly, especially when using S&Q modes.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I use a V10 or U1 card in the Sony ZV-E10?",
+        "a": "<b>It is not recommended for video.</b> While a U1 card will work for photos, it is too slow for 4K video recording on the ZV-E10 and will likely cause the camera to stop recording. <b>A V30 card is the required minimum for stable video.</b>"
+      }
+    ],
+    "relatedDevices": [
+      "sony-a6400",
+      "canon-eos-r50",
+      "fujifilm-x-s20"
+    ],
+    "notes": "Extremely popular vlogging camera. Massive search volume from content creators.",
+    "imageUrl": "/img/devices/cameras/sony-zv-e10.webp"
+  },
+  {
+    "id": "sony-a7-iii",
+    "name": "Sony a7 III",
+    "category": "Cameras",
+    "slug": "sony-a7-iii",
+    "searchTerms": [
+      "sony a7 iii sd card",
+      "a7iii memory card",
+      "alpha 7 iii card"
+    ],
+    "sdCard": {
+      "type": "Slot 1: SD UHS-II, Slot 2: SD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit (512GB+ tested)"
+    },
+    "whySpecs": "The a7 III has dual slots, but only Slot 1 is the faster UHS-II. A V30 card is needed for 4K video. For fastest burst shooting and buffer clearing, use a V60 or V90 UHS-II card in Slot 1.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between the two card slots on the Sony a7 III?",
+        "a": "<b>Slot 1 supports faster UHS-II cards, while Slot 2 is limited to slower UHS-I speeds.</b> For best performance, use your fastest (UHS-II) card in Slot 1 for primary recording or 4K video, and a reliable UHS-I card in Slot 2 for backup or JPEGs."
+      }
+    ],
+    "relatedDevices": [
+      "sony-a7-iv",
+      "nikon-z6-ii",
+      "canon-eos-r6"
+    ],
+    "notes": "A legendary camera with a massive user base. The asymmetric dual card slots are a key point of confusion and a high-volume search topic."
+  },
+  {
+    "id": "sony-a6400",
+    "name": "Sony a6400",
+    "category": "Cameras",
+    "slug": "sony-a6400",
+    "searchTerms": [
+      "sony a6400 sd card",
+      "a6400 memory card",
+      "a6400 4k card"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit (512GB+ tested)"
+    },
+    "whySpecs": "The a6400 shoots high-bitrate 4K video (XAVC S). To record at the highest quality (100Mbps), Sony requires a U3/V30 speed class card to prevent recording from stopping unexpectedly.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is a V30 card really necessary for the a6400?",
+        "a": "<b>Yes, for 4K video.</b> If you plan to shoot in the highest quality 4K XAVC S format, the camera will refuse to record unless a U3/V30 card is inserted. For photos only, a slower card will work, but a V30 card is essential for video shooters."
+      }
+    ],
+    "relatedDevices": [
+      "sony-a6700",
+      "sony-zv-e10",
+      "fujifilm-x-s10"
+    ],
+    "notes": "A landmark APS-C camera with a massive user base. The V30 card requirement for 4K video is a critical and frequently searched topic."
+  },
+  {
+    "id": "fujifilm-x-s10",
+    "name": "Fujifilm X-S10",
+    "category": "Cameras",
+    "slug": "fujifilm-x-s10",
+    "searchTerms": [
+      "fujifilm x-s10 sd card",
+      "x-s10 memory card",
+      "xs10 4k card"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit (512GB+ tested)"
+    },
+    "whySpecs": "The X-S10 records high-quality 4K/30p video and F-Log. A V30 speed class card is required to handle the data rate reliably and prevent dropped frames or recording errors.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I use the same card for the X-S10 and the X-S20?",
+        "a": "<b>Yes. Both cameras have a UHS-I slot and require a V30 card for 4K video.</b> While you can use a faster UHS-II card in the newer X-S20, it will operate at slower UHS-I speeds and provide no performance benefit over a standard V30 UHS-I card."
+      }
+    ],
+    "relatedDevices": [
+      "fujifilm-x-s20",
+      "sony-a6400",
+      "canon-eos-r100"
+    ],
+    "notes": "The highly popular predecessor to the X-S20. Shares similar card requirements but lacks the newer model's 6.2K video capability."
+  },
+  {
+    "id": "canon-eos-r6",
+    "name": "Canon EOS R6",
+    "category": "Cameras",
+    "slug": "canon-eos-r6",
+    "searchTerms": [
+      "canon r6 sd card",
+      "eos r6 memory card",
+      "r6 storage"
+    ],
+    "sdCard": {
+      "type": "Dual SD UHS-II",
+      "minSpeed": "V60 (V90 recommended for burst)",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit (1TB+ tested)"
+    },
+    "whySpecs": "The EOS R6 is a high-performance hybrid camera with 4K/60p video and a 20fps electronic shutter. V60 cards are needed for stable recording of high-bitrate video, while V90 cards are recommended to clear the buffer quickly during intense burst shooting.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Are the card requirements for the R6 and R6 Mark II the same?",
+        "a": "<b>They are very similar. Both have dual UHS-II slots and benefit from V60/V90 cards.</b> The Mark II has higher resolution and faster burst modes, making fast cards even more beneficial, but a good V60 card that works in an R6 will also work well in a Mark II for most video shooting."
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r6-mark-ii",
+      "sony-a7-iii",
+      "nikon-z6-ii"
+    ],
+    "notes": "The original, landmark R6 model with a massive user base. Its dual UHS-II slots and high-speed capabilities make card choice a critical topic."
+  },
+  {
+    "id": "nikon-d500",
+    "name": "Nikon D500",
+    "category": "Cameras",
+    "slug": "nikon-d500",
+    "searchTerms": [
+      "nikon d500 sd card",
+      "d500 xqd card",
+      "nikon d500 cfexpress",
+      "d500 memory card"
+    ],
+    "sdCard": {
+      "type": "XQD / CFexpress Type B plus SD UHS-II",
+      "minSpeed": "V30 (U3) for SD; CFexpress recommended for demanding bursts",
+      "minWriteSpeed": "30 MB/s (SD)",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "The D500 is a pro-oriented APS-C DSLR with 10fps continuous shooting and 4K/30p video. It provides two media slots: one for XQD (later enabled for CFexpress Type B via firmware) and one for SD that is compatible with UHS-II cards. Any U3 / V30 SD card meets Nikon's requirements for 4K and high-speed stills, but in practice photographers pair the camera with fast UHS-II V60/V90 SD cards or CFexpress Type B cards to keep the buffer clearing quickly during long RAW bursts and to shorten offload times.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-cfexpress"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I really need CFexpress or XQD for the Nikon D500?",
+        "a": "<b>No, but they significantly improve the shooting experience.</b> A good V30 or V60 SD card in the UHS-II slot is enough for 4K video and shorter bursts. However, if you shoot long sequences of RAW images (wildlife, sports), a fast XQD or CFexpress Type B card in the primary slot keeps the buffer from clogging and makes the camera feel much more responsive."
+      },
+      {
+        "q": "What SD card speed is safe for 4K video on the D500?",
+        "a": "<b>Use at least a U3 / V30 card.</b> That guarantees 30 MB/s sustained write performance, which comfortably covers the D500's 4K bitrate. Slower U1 cards may appear to work at first but are more likely to choke during long takes or cause dropped frames."
+      },
+      {
+        "q": "Can I mix a slow SD card with a fast XQD or CFexpress card?",
+        "a": "<b>You can, but it may create a bottleneck in certain recording modes.</b> When you configure the camera to write the same data to both slots for backup, the overall speed is limited by the slower card. For maximum performance, pair your D500 with a fast card in each slot or use the second slot for JPEGs and the primary slot for RAW."
+      }
+    ],
+    "relatedDevices": [
+      "nikon-d7500",
+      "nikon-d850"
+    ],
+    "notes": "Flagship APS-C DSLR with one XQD/CFexpress Type B slot and one SD UHS-II slot. Later firmware added CFexpress Type B support alongside XQD."
+  },
+  {
+    "id": "sony-a7r",
+    "name": "Sony A7R",
+    "category": "Cameras",
+    "slug": "sony-a7r",
+    "searchTerms": [
+      "sony a7r sd card",
+      "a7r memory card",
+      "alpha 7r card",
+      "ilce-7r sd"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit (SDXC up to 2TB standard)"
+    },
+    "whySpecs": "The original 36MP A7R records only Full HD (AVCHD/MP4) video and does not offer 4K or very high bit-rate codecs. As a result, its media demands are modest by modern standards: any reputable Class 10 / U1 SDHC or SDXC card is fast enough for both stills and movie recording. Choosing a higher-end UHS-I card with better write speeds mainly improves how quickly long RAW bursts clear from the buffer and how fast files copy to your computer, rather than unlocking new shooting modes.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can the Sony A7R use UHS-II SD cards?",
+        "a": "<b>Yes, but only at UHS-I speeds.</b> The A7R's card slot understands standard SD/SDHC/SDXC media and does not take advantage of the extra UHS-II contacts, so a UHS-II card behaves like a fast UHS-I card in this body. It will still work, but you will not see the headline UHS-II transfer rates."
+      },
+      {
+        "q": "Is a V30 card necessary for the A7R?",
+        "a": "<b>No, V30 cards are not required for this camera.</b> The A7R's 1080p recording bitrates are easily handled by basic Class 10 / U1 cards. V30 cards are still a fine choice if you want to reuse them with newer, more demanding cameras later, but they are not a technical requirement here."
+      },
+      {
+        "q": "What SD card capacity is reasonable for the A7R?",
+        "a": "<b>Because 36MP RAW files are relatively large, 64GB or 128GB cards strike a good balance.</b> A 32GB card can fill quickly during a full day of shooting, whereas 64GB+ gives more headroom while still keeping backup and offload times manageable."
+      }
+    ],
+    "relatedDevices": [
+      "sony-a7-iii",
+      "sony-a7-iv"
+    ],
+    "notes": "First-generation high-resolution full-frame Alpha body. Uses a single SD card slot and records up to 1080p, so media requirements are light compared to newer 4K/8K models."
+  },
+  {
+    "id": "canon-rebel-t7",
+    "name": "Canon EOS Rebel T7",
+    "category": "Cameras",
+    "slug": "canon-rebel-t7",
+    "searchTerms": [
+      "canon rebel t7",
+      "eos rebel t7"
+    ],
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "Class 10",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "Entry-level DSLR. Class 10 sufficient for 1080p video.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r5"
+    ]
+  },
+  {
+    "id": "sony-a1",
+    "name": "Sony A1",
+    "category": "Cameras",
+    "slug": "sony-a1",
+    "searchTerms": [
+      "sony a1",
+      "sony alpha a1"
+    ],
+    "sdCard": {
+      "type": "CFexpress Type A / SD UHS-II",
+      "minSpeed": "V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ]
+    },
+    "whySpecs": "Professional mirrorless camera. Dual slots for CFexpress Type A and SD UHS-II.",
+    "recommendedBrands": [
+      {
+        "id": "sony-mrw-g2"
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r5",
+      "nikon-z9"
+    ]
+  },
+  {
+    "id": "nikon-d850",
+    "name": "Nikon D850",
+    "category": "Cameras",
+    "slug": "nikon-d850",
+    "searchTerms": [
+      "nikon d850",
+      "d850"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II / XQD",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ]
+    },
+    "whySpecs": "Professional DSLR. Dual slots support both SD UHS-II and legacy XQD cards.",
+    "recommendedBrands": [
+      {
+        "id": "sony-mrw-g1"
+      }
+    ],
+    "relatedDevices": [
+      "nikon-z9",
+      "canon-eos-r5"
+    ]
+  }
+]

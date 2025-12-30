@@ -1,0 +1,39 @@
+[
+  {
+    "id": "egret-ii-mini",
+    "name": "Egret II Mini",
+    "category": "Retro Arcade",
+    "slug": "egret-ii-mini",
+    "searchTerms": [
+      "egret ii mini sd card",
+      "egret 2 mini expansion",
+      "taito egret sd card"
+    ],
+    "sdCard": {
+      "type": "SDHC / SDXC",
+      "minSpeed": "Class 10",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB"
+      ],
+      "maxCapacity": "128GB"
+    },
+    "whySpecs": "The Taito Egret II Mini uses the SD card slot for firmware updates and loading additional games via official expansion packs or side-loading. It does not require high speeds.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kioxia-exceria"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the slot used for?",
+        "a": "Typically used for firmware updates to fix input lag, or for loading extra games if you have the knowledge to set it up."
+      }
+    ],
+    "notes": "Uses a full-size SD slot (or microSD with adapter)."
+  }
+]

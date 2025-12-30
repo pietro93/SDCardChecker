@@ -1,0 +1,828 @@
+[
+  {
+    "id": "nintendo-switch",
+    "name": "Nintendo Switch",
+    "category": "Gaming Handhelds",
+    "slug": "nintendo-switch",
+    "searchTerms": [
+      "nintendo switch",
+      "switch sd card",
+      "switch memory card",
+      "switch storage"
+    ],
+    "sdCard": {
+      "type": "microSD, microSDHC, microSDXC",
+      "minSpeed": "Class 10 / UHS-I",
+      "minWriteSpeed": "Not specified",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "2TB (theoretical)",
+      "testedMaxCapacity": "1TB"
+    },
+    "whySpecs": "The original Nintendo Switch is limited to the UHS-I interface with a maximum speed of 104MB/s. <b>UHS-II and SD Express cards are NOT compatible and provide no benefit</b>. The console uses standard microSD cards only. V30 rated cards from trusted brands provide the best reliability for downloading large digital libraries. All Nintendo-branded SanDisk microSD cards (Zelda, Pokémon, Mario, etc.) are standard UHS-I format and work perfectly on the original Switch.",
+    "recommendedBrands": [
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the Switch support cards larger than 1TB?",
+        "a": "<b>Theoretically yes, but practically 1TB is the maximum tested capacity</b>. While Nintendo claims support for up to 2TB, no consumer cards larger than 1TB have been widely verified to work reliably with the Switch."
+      },
+      {
+        "q": "Can I use a phone's microSD card?",
+        "a": "<b>Yes, any microSD card works with Nintendo Switch</b>. However, <b>back up all phone data first</b> before transferring, as formatting the card for Switch will erase all existing data."
+      },
+      {
+        "q": "Do I need V30 speed?",
+        "a": "<b>V30 is recommended but not required</b>. Cheaper U1 or Class 10 cards will work fine for gaming, though V30 cards offer better reliability and consistency across your entire game library."
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch-oled",
+      "nintendo-switch-lite",
+      "nintendo-switch-2"
+    ],
+    "notes": "Limited to UHS-I speeds (~104MB/s maximum). V30 is recommended for reliability. Compatible with all officially licensed Nintendo-branded SanDisk microSD cards (Zelda, Pokémon, Mario, Yoshi, Animal Crossing, Fortnite)."
+  },
+  {
+    "id": "nintendo-switch-oled",
+    "name": "Nintendo Switch OLED",
+    "category": "Gaming Handhelds",
+    "slug": "nintendo-switch-oled",
+    "searchTerms": [
+      "nintendo switch oled",
+      "switch oled",
+      "switch oled memory card",
+      "switch oled storage"
+    ],
+    "sdCard": {
+      "type": "microSD, microSDHC, microSDXC",
+      "minSpeed": "Class 10 / UHS-I",
+      "minWriteSpeed": "Not specified",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1024GB"
+      ],
+      "maxCapacity": "2TB (theoretical)",
+      "testedMaxCapacity": "1TB"
+    },
+    "whySpecs": "The Switch OLED model features 64GB of internal storage, making it ideal for users downloading large digital game libraries. <b>Like all original Switch models, the OLED is limited to UHS-I speeds (~104MB/s)</b>. UHS-II and SD Express cards are NOT compatible. V30 rated microSD cards from reputable brands are recommended for consistent performance. All officially licensed Nintendo-branded SanDisk cards (Zelda, Pokémon, Mario, etc.) work perfectly on the OLED model.",
+    "recommendedBrands": [
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Should I buy UHS-II cards for the OLED?",
+        "a": "<b>No, UHS-II cards provide no performance benefit to the Switch OLED</b>. The console only supports UHS-I speeds (~104MB/s). UHS-II cards will work but will be limited to slower UHS-I speeds, making them a waste of money."
+      },
+      {
+        "q": "Can I use my original Switch's card?",
+        "a": "<b>Yes, any microSD card from the original Switch works perfectly in the OLED model</b>. All Switch models share identical storage architecture and card compatibility."
+      },
+      {
+        "q": "What capacity should I get?",
+        "a": "<b>The OLED's larger screen encourages downloading more games</b>. 512GB or 1TB is highly recommended, as the 64GB internal storage plus a smaller card fills up quickly with modern titles."
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "nintendo-switch-lite",
+      "nintendo-switch-2"
+    ],
+    "notes": "OLED users typically purchase larger cards due to increased digital game library usage. UHS-I only (~104MB/s), despite higher internal storage."
+  },
+  {
+    "id": "steam-deck",
+    "name": "Steam Deck",
+    "category": "Gaming Handhelds",
+    "slug": "steam-deck",
+    "searchTerms": [
+      "steam deck",
+      "steam deck sd card",
+      "deck microsd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (not UHS-II)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "2TB (theoretical)",
+      "testedMaxCapacity": "1TB"
+    },
+    "whySpecs": "Steam Deck uses UHS-I interface and runs SteamOS from the card, so A1 app performance is important for OS responsiveness. While V30 works for gaming, A1 random IOPS are essential. Select from reputable brands offering V30 rated and A1-classified cards. Note: While theoretically supporting up to 2TB, the largest tested and verified working capacity is 1TB.",
+    "recommendedBrands": [
+      {
+        "id": "kingston-canvas-go-plus-ultra"
+      },
+      {
+        "id": "adata-premier-pro-microsd"
+      },
+      {
+        "id": "sandisk-ultra-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I use fast V60 cards?",
+        "a": "<b>Yes, V60 and faster microSD cards work perfectly with Steam Deck</b>. However, <b>the device's UHS-I interface limits the speed benefit</b>, so faster cards provide no practical advantage over V30 cards for Steam Deck gaming."
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "asus-rog-ally"
+    ],
+    "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library."
+  },
+  {
+    "id": "asus-rog-ally",
+    "name": "ASUS ROG Ally",
+    "category": "Gaming Handhelds",
+    "slug": "asus-rog-ally",
+    "searchTerms": [
+      "asus rog ally sd card",
+      "rog ally microsd",
+      "rog ally memory card"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "The ROG Ally features a high-speed UHS-II card reader. Using a UHS-II card is highly recommended to minimize game loading times and accelerate file transfers. A V30 speed class is the minimum for stable performance.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-rog-ally-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Should I use a faster UHS-II card in the ROG Ally?",
+        "a": "<b>Yes, you absolutely should if you want the best performance.</b> The ROG Ally's UHS-II card reader takes full advantage of the extra speed from a UHS-II card, resulting in faster game load times. Using a slower UHS-I card will work, but will bottleneck performance."
+      },
+      {
+        "q": "What is the best capacity for the ROG Ally?",
+        "a": "<b>A 512GB or 1TB card is the sweet spot for most users.</b> Modern PC games are very large, and this capacity allows you to store a good number of AAA titles without constantly managing storage."
+      }
+    ],
+    "relatedDevices": [
+      "steam-deck",
+      "nintendo-switch-oled",
+      "nintendo-switch"
+    ],
+    "notes": "Heat from the device's exhaust can affect the SD card reader in some units. Using a high-quality, reputable UHS-II card is crucial for both reliability and optimal performance.",
+    "imageUrl": "/img/devices/gaming-consoles/asus-rog-ally.webp"
+  },
+  {
+    "id": "nintendo-switch-lite",
+    "name": "Nintendo Switch Lite",
+    "category": "Gaming Handhelds",
+    "slug": "nintendo-switch-lite",
+    "searchTerms": [
+      "nintendo switch lite sd card",
+      "switch lite memory card",
+      "switch lite storage"
+    ],
+    "sdCard": {
+      "type": "microSD, microSDHC, microSDXC",
+      "minSpeed": "Class 10 / UHS-I",
+      "minWriteSpeed": "Not specified",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "2TB (theoretical)",
+      "testedMaxCapacity": "1TB"
+    },
+    "whySpecs": "The Switch Lite is Nintendo's portable-only console with identical storage capabilities to the standard Switch and OLED models. <b>It is limited to UHS-I speeds (~104MB/s)</b>. UHS-II and SD Express cards are NOT compatible. Since the Lite is often used for travel and portable gaming, a reliable brand-name V30 card is essential to prevent data corruption during transit. All officially licensed Nintendo-branded SanDisk cards (Zelda, Pokémon, Mario, etc.) work perfectly on the Switch Lite.",
+    "recommendedBrands": [
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-play-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Switch Lite's SD slot slower than other models?",
+        "a": "<b>No, the Switch Lite has identical read/write capabilities as the standard and OLED Switch models</b>. All Switch family consoles share the same UHS-I microSD hardware interface with no speed differences."
+      },
+      {
+        "q": "What capacity should I get for Lite?",
+        "a": "<b>128GB to 256GB is ideal for most Switch Lite users</b>. The Lite's smaller library recommendations and portable nature make it suited for more curated game collections, unlike OLED users who tend to download extensively."
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "nintendo-switch-oled",
+      "nintendo-switch-2"
+    ],
+    "notes": "Identical storage architecture to other Switch models. UHS-I only (~104MB/s). 128GB-256GB is the sweet spot for Lite's typical usage pattern."
+  },
+  {
+    "id": "nintendo-switch-2",
+    "name": "Nintendo Switch 2",
+    "category": "Gaming Handhelds",
+    "slug": "nintendo-switch-2",
+    "searchTerms": [
+      "nintendo switch 2",
+      "switch 2 sd card",
+      "switch 2 storage",
+      "sd express switch 2"
+    ],
+    "sdCard": {
+      "type": "microSD Express (Required for Games and Saves)",
+      "minSpeed": "SD Express PCIe 3.0 x1",
+      "minWriteSpeed": "V30 or higher",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB",
+        "2TB"
+      ],
+      "maxCapacity": "2TB+ (SDUC)",
+      "testedMaxCapacity": "2TB"
+    },
+    "whySpecs": "<b>Nintendo Switch 2 REQUIRES microSD Express cards for all gameplay and save data.</b> Standard UHS-I microSD cards are <b>NOT compatible for gaming</b>. While you can physically insert a standard microSD card to view old screenshots and videos, <b>you cannot play any games or save game data</b>. All Nintendo-branded cards (Zelda, Pokémon, Mario, Yoshi, Animal Crossing, Fortnite) are standard UHS-I microSD and will NOT work for Switch 2 games. Only microSD Express cards with V30 or faster speeds are compatible with next-generation titles.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-react-plus-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I use my old Switch SD cards in Switch 2?",
+        "a": "<b>No, old microSD cards CANNOT be used for Switch 2 games or save data.</b> While you can physically insert an old UHS-I microSD card to view screenshots and video clips, the console will reject it for all game functionality. You must use a microSD Express card to play any Switch 2 titles or save game progress."
+      },
+      {
+        "q": "What if I insert a Nintendo-branded card (Zelda, Pokémon, Mario)?",
+        "a": "<b>The console will allow you to view old screenshots and videos, but you CANNOT play any games or save game data.</b> All official Nintendo-branded microSD cards are standard UHS-I format and completely incompatible with Switch 2 gameplay. You need a microSD Express card to play Switch 2 games."
+      },
+      {
+        "q": "Do all Switch 2 games require microSD Express?",
+        "a": "<b>Yes, ALL Switch 2 games require microSD Express cards</b>. The console will not accept standard microSD cards for any game installation or save data, regardless of the title. This is a hardware requirement, not optional. Your microSD Express card should have V30 speed or faster for optimal performance."
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "nintendo-switch-oled",
+      "nintendo-switch-lite"
+    ],
+    "notes": "Switch 2 marks a generational leap in storage technology. While legacy UHS-I cards work, SD Express cards are recommended for next-generation titles. Backward compatible with all original Switch games."
+  },
+  {
+    "id": "nintendo-3ds-xl",
+    "name": "Nintendo 3DS / New 3DS XL",
+    "category": "Gaming Handhelds",
+    "slug": "nintendo-3ds-xl",
+    "searchTerms": [
+      "3ds sd card",
+      "new 3ds xl sd card",
+      "3ds memory card",
+      "3ds xl storage",
+      "nintendo 3ds sd card"
+    ],
+    "sdCard": {
+      "type": "SDHC (officially up to 32GB, SDXC works unofficially)",
+      "minSpeed": "Class 10",
+      "minWriteSpeed": "Not specified",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB (unofficial, requires FAT32 formatting)"
+    },
+    "whySpecs": "Nintendo officially supports SDHC cards up to 32GB, but SDXC cards up to 128GB (or even larger, though 128GB is the practical limit) work perfectly when formatted to FAT32. Class 10 cards provide faster game loading and eShop download speeds, improving the overall user experience. Class 4 is obsolete; Class 10 is the modern minimum.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I use a 64GB or 128GB card even though Nintendo says 32GB max?",
+        "a": "<b>Yes, but you must format it to FAT32 first.</b> SDXC cards (64GB+) come formatted as exFAT, which the 3DS cannot read. Use a computer (Windows, Mac, or Linux) to reformat the card to FAT32, then it will work perfectly in your 3DS."
+      },
+      {
+        "q": "Do I need a microSD card or full-size SD?",
+        "a": "<b>Original 3DS and 3DS XL models use full-size SD cards.</b> <b>New Nintendo 3DS and New Nintendo 3DS XL models use microSD cards.</b> It's crucial to check your specific model before purchasing. The 'New' models often require a small screwdriver to access the microSD slot."
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "nintendo-switch-lite",
+      "anbernic-rg353v"
+    ],
+    "notes": "Discontinued in 2020 but boasts a massive ongoing community for retro gaming and modding. High search volume is driven by enthusiasts looking to expand their game libraries and utilize custom firmware."
+  },
+  {
+    "id": "anbernic-rg353v",
+    "name": "Anbernic RG353V",
+    "category": "Gaming Handhelds",
+    "slug": "anbernic-rg353v",
+    "searchTerms": [
+      "anbernic rg353v",
+      "rg353v sd card",
+      "anbernic sd card",
+      "anbernic rg353v memory card",
+      "rg35xx sd card"
+    ],
+    "sdCard": {
+      "type": "Dual microSD (separate slots for OS and games)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A2 (for OS card)",
+      "recommendedCapacity": [
+        "32GB-64GB for OS",
+        "256GB-512GB for games"
+      ],
+      "maxCapacity": "No official limit, 1TB+ works for games"
+    },
+    "whySpecs": "Features a unique dual microSD slot design: one dedicated for the operating system (like EmuELEC or Android) and another for game ROMs. The OS card benefits significantly from an A2 application performance rating for faster boot times, smoother menu navigation, and quicker application loading. The game card can be a standard U1/Class 10 card, as most retro games load quickly even from slightly slower media.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I really need two separate SD cards?",
+        "a": "<b>Yes, the Anbernic RG353V has two physically separate microSD slots.</b> Slot 1 (often labeled 'TF1' or 'OS') is for the operating system, and Slot 2 (often 'TF2' or 'Game') is for your game ROMs. You must use two individual cards; you cannot use just one card and partition it."
+      },
+      {
+        "q": "What's the best capacity split between the two cards?",
+        "a": "An ideal setup is a <b>32-64GB A2-rated card for the OS</b> and a <b>256GB-512GB U1-rated card for games.</b> The OS card prioritizes speed (A2 rating) over extreme capacity, while the game card prioritizes capacity for a large library, as most retro games are small in file size."
+      }
+    ],
+    "relatedDevices": [
+      "miyoo-mini-plus",
+      "nintendo-3ds-xl",
+      "steam-deck"
+    ],
+    "notes": "A popular vertical retro handheld in the emulation community, known for its portability and dual-boot capabilities. High search volume is driven by retro gaming enthusiasts and modding communities."
+  },
+  {
+    "id": "asus-rog-ally-x",
+    "name": "ASUS ROG Ally X",
+    "category": "Gaming Handhelds",
+    "slug": "asus-rog-ally-x",
+    "searchTerms": [
+      "rog ally x sd card",
+      "ally x microsd",
+      "rog ally x storage",
+      "asus rog ally x memory card"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "The ROG Ally X features a high-speed UHS-II card reader and runs Windows, so A1 app performance is important for OS responsiveness. This significantly improves game load times compared to UHS-I devices. V60 or faster cards provide the best experience for loading large, modern PC games, though V30 with A1 rating is the practical minimum.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-rog-ally-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Ally X faster than the original Ally for SD cards?",
+        "a": "<b>Yes, the Ally X has an improved and more reliable SD card reader that supports UHS-II speeds, addressing heat issues that affected some original Ally units.</b> You will experience noticeably faster game load times and file transfers with UHS-II cards on the Ally X."
+      },
+      {
+        "q": "Do I really need a UHS-II card, or is UHS-I fine?",
+        "a": "<b>UHS-II makes a significant difference on the Ally X.</b> Game load times can be 30-50% faster with UHS-II cards compared to UHS-I. If you frequently play large AAA titles directly from the SD card, the speed increase from UHS-II is well worth the extra cost."
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally",
+      "steam-deck",
+      "lenovo-legion-go"
+    ],
+    "notes": "Released mid-2024 as an upgraded version of the original ROG Ally, featuring improved battery life, better cooling, and a more robust UHS-II microSD card reader. The official SanDisk ROG Ally microSD card is optimized for this device.",
+    "imageUrl": "/img/devices/gaming-consoles/asus-rog-ally.webp"
+  },
+  {
+    "id": "lenovo-legion-go",
+    "name": "Lenovo Legion Go",
+    "category": "Gaming Handhelds",
+    "slug": "lenovo-legion-go",
+    "searchTerms": [
+      "lenovo legion go sd card",
+      "legion go microsd",
+      "legion go storage",
+      "lenovo legion go memory card"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "A Windows gaming handheld featuring a large 8.8-inch display and detachable controllers. An A2 application performance rating on the microSD card significantly improves game load times and overall system responsiveness when running games from the card. The large screen and Windows OS make it suitable for AAA gaming, which demands substantial storage capacity.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Legion Go vs ROG Ally - which has better SD card performance?",
+        "a": "<b>The ASUS ROG Ally X features a UHS-II card reader, while the Lenovo Legion Go utilizes a UHS-I slot.</b> This means the Ally X can achieve faster game load times with UHS-II cards. However, the Legion Go offers unique features like its larger screen and detachable controllers, appealing to different user preferences. Both devices benefit greatly from large-capacity (512GB+) A2-rated cards for modern games."
+      },
+      {
+        "q": "What microSD card capacity do I need for PC games on the Legion Go?",
+        "a": "<b>A 512GB card is a good minimum, but 1TB is highly recommended for an extensive library of modern PC games.</b> Many AAA titles can easily exceed 100GB each. While the Legion Go's Windows OS allows flexible storage management, microSD card space can fill up quickly with a few large titles, making higher capacity a wise investment."
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally",
+      "asus-rog-ally-x",
+      "steam-deck"
+    ],
+    "notes": "Released late 2023, the Lenovo Legion Go is known for its unique detachable controllers and the largest screen among current Windows handhelds. It features a microSD UHS-I slot (unlike the newer ROG Ally X, which has UHS-II).",
+    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go.webp"
+  },
+  {
+    "id": "miyoo-mini-plus",
+    "name": "Miyoo Mini Plus",
+    "category": "Gaming Handhelds",
+    "slug": "miyoo-mini-plus",
+    "searchTerms": [
+      "miyoo mini plus sd card",
+      "miyoo mini plus microsd",
+      "miyoo mini storage",
+      "miyoo mini plus memory card"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB+"
+    },
+    "whySpecs": "An ultra-portable retro gaming handheld. While most retro games are small and load quickly even from standard Class 10 cards, an A1 application performance rating significantly improves overall system responsiveness, including menu navigation and loading custom firmware. This enhances the user experience for this cult-favorite device.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What makes the Miyoo Mini Plus so popular?",
+        "a": "<b>The Miyoo Mini Plus is incredibly small, affordable, and excels at playing a vast library of retro games perfectly, up to and including PlayStation 1 titles.</b> Its Game Boy Pocket-sized design makes it exceptionally portable. The active custom firmware community, particularly 'OnionOS', further enhances its features and overall user experience, making it a cult favorite."
+      },
+      {
+        "q": "How much storage do I need for retro games on the Miyoo Mini Plus?",
+        "a": "<b>A 64GB card holds thousands of 8-bit and 16-bit games, while 128GB is generally considered the sweet spot for most users.</b> If you plan to curate an extensive library of PlayStation 1 games, which are larger (typically 500MB-700MB each), you might consider a 256GB card to accommodate them comfortably."
+      }
+    ],
+    "relatedDevices": [
+      "anbernic-rg353v",
+      "nintendo-3ds-xl"
+    ],
+    "notes": "A cult-favorite pocket retro handheld. It commands extremely high search volume, particularly driven by users interested in custom firmware like OnionOS and its thriving retro gaming community."
+  },
+  {
+    "id": "anbernic-rg35xx-plus",
+    "name": "Anbernic RG35XX Plus / H",
+    "category": "Gaming Handhelds",
+    "slug": "anbernic-rg35xx-plus-h",
+    "searchTerms": [
+      "rg35xx plus sd card",
+      "rg35xx h microsd",
+      "rg35xx garlicos sd card"
+    ],
+    "sdCard": {
+      "type": "Dual microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1 (for OS slot)",
+      "recommendedCapacity": [
+        "16GB-32GB for OS",
+        "128GB-256GB for Games"
+      ],
+      "maxCapacity": "512GB tested"
+    },
+    "whySpecs": "Features two microSD slots. Slot 1 is for the Operating System (OS); using an A1 application-rated card here significantly improves menu speed and system responsiveness. Slot 2 is for games, where a standard large-capacity card works well. We strongly recommend replacing the low-quality cards that come included with the device with trusted brands.",
+    "recommendedBrands": [
+      {
+        "id": "kingston-canvas-go-plus-ultra"
+      },
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "transcend-standard-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Should I replace the SD card that came with my RG35XX?",
+        "a": "<b>Yes, immediately.</b> The stock SD cards included with these devices are very low quality and prone to failure. For a reliable experience, purchase two new cards from a reputable brand like SanDisk or Samsung."
+      }
+    ],
+    "relatedDevices": [
+      "miyoo-mini-plus",
+      "anbernic-rg353v"
+    ],
+    "notes": "An ultra-popular budget retro handheld. The Plus (vertical) and H (horizontal) models share the same card requirements."
+  },
+  {
+    "id": "retroid-pocket-4-pro",
+    "name": "Retroid Pocket 4 / 4 Pro",
+    "category": "Gaming Handhelds",
+    "slug": "retroid-pocket-4-pro",
+    "searchTerms": [
+      "retroid pocket 4 pro sd card",
+      "rp4 pro microsd",
+      "retroid pocket 4 storage"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB+ tested"
+    },
+    "whySpecs": "For retro handhelds, an A1 rated card is recommended for faster OS and menu performance, especially when using custom front-ends. While a standard Class 10 card works for games, the A1 rating improves the overall user experience.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How big of a microSD card do I need for the Retroid Pocket 4 Pro?",
+        "a": "<b>A 128GB or 256GB card is the sweet spot for most users.</b> This provides enough space for thousands of 8/16-bit titles, as well as a large library of more demanding PS1, Dreamcast, and GameCube games."
+      }
+    ],
+    "relatedDevices": [
+      "anbernic-rg353v",
+      "miyoo-mini-plus",
+      "steam-deck"
+    ],
+    "notes": "A very popular retro gaming handheld. The community is large and very active in searching for performance and setup guides."
+  },
+  {
+    "id": "lenovo-legion-go-s",
+    "name": "Lenovo Legion Go S",
+    "category": "Gaming Handhelds",
+    "slug": "lenovo-legion-go-s",
+    "searchTerms": [
+      "lenovo legion go s",
+      "legion go s sd card",
+      "legion go s microsd",
+      "legion go s storage"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB (theoretical, 1TB commonly used)"
+    },
+    "whySpecs": "Legion Go S uses a UHS-I microSD reader, so peak throughput tops out around 90–100 MB/s even if you insert a UHS-II card. A U3 / V30 card with an A2 application rating gives enough sequential and random performance to run Windows or SteamOS games directly from the card without painfully long load times. Modern PC titles are very large, so 512GB to 1TB is the practical sweet spot; anything smaller fills very quickly once you start installing AAA games.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Will a UHS-II microSD card make games load faster on Legion Go S?",
+        "a": "<b>No, the reader in the Legion Go S is limited to UHS-I speeds.</b> UHS-II cards fall back to UHS-I mode in this slot, so they behave like a fast UHS-I V30 card but offer no extra in‑device bandwidth. If you already own a UHS-II card it will work, but buying UHS-II specifically for this handheld is usually not cost‑effective."
+      },
+      {
+        "q": "Can I run big open‑world games entirely from the SD card?",
+        "a": "<b>Yes, but performance depends heavily on the card you choose.</b> A good A2‑rated V30 card can handle many AAA games respectably, but open‑world titles with heavy streaming (large textures, big maps) will still load notably slower than from the internal SSD. Treat the microSD more as an overflow library than as your primary performance drive."
+      },
+      {
+        "q": "What SD card capacity makes sense for Legion Go S?",
+        "a": "<b>512GB is a good minimum, and 1TB is ideal for most players.</b> A handful of current PC games can exceed 100GB each; with patches and DLC, a 256GB card can feel cramped very quickly. If your budget allows, a 1TB card avoids constant uninstall/reinstall juggling."
+      }
+    ],
+    "relatedDevices": [
+      "steam-deck"
+    ],
+    "notes": "SteamOS-based Windows handheld variant with a UHS-I microSD slot. Designed primarily for game storage expansion rather than raw benchmark speeds.",
+    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go-s.webp"
+  },
+  {
+    "id": "msi-claw",
+    "name": "MSI Claw (A1M)",
+    "category": "Gaming Handhelds",
+    "slug": "msi-claw",
+    "searchTerms": [
+      "msi claw sd card support",
+      "msi claw memory card",
+      "expand storage msi claw",
+      "best sd card for msi claw"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "U3 / A2",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "The MSI Claw runs full Windows AAA games. You need an 'A2' (Application Performance Class 2) rated card to handle the random read/write operations of Windows gaming. Slower cards will cause stuttering and extremely long load times.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd"
+      },
+      {
+        "id": "lexar-play-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the MSI Claw SD reader UHS-II?",
+        "a": "<b>No, the MSI Claw A1M typically features a UHS-I slot.</b> While you can use UHS-II cards, they will be capped at UHS-I speeds. Focus on buying a high-capacity A2 UHS-I card instead."
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally",
+      "steam-deck",
+      "lenovo-legion-go"
+    ],
+    "notes": "Ensure you update the MSI Center M software, as early drivers had issues with SD card recognition."
+  },
+  {
+    "id": "gpd-win-mini",
+    "name": "GPD Win Mini",
+    "category": "Gaming Handhelds",
+    "slug": "gpd-win-mini",
+    "searchTerms": [
+      "gpd win mini sd card",
+      "gpd win 4 memory card",
+      "uhs-ii card for gpd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II (Supported)",
+      "minSpeed": "U3 / V60 / V90",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB",
+        "2TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "GPD Win devices (Mini and Win 4) often feature high-speed UHS-II card readers. To play modern PC games directly from the SD card without stalling, investing in a V60 or V90 UHS-II card is highly beneficial.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-gold-uhs-ii"
+      },
+      {
+        "id": "sandisk-extreme-pro-uhs-ii"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is UHS-II worth it for GPD?",
+        "a": "<b>Yes.</b> Unlike many competitors, GPD often includes UHS-II readers. These cards offer read speeds closer to SSDs (over 250MB/s), significantly reducing load times in AAA games."
+      }
+    ],
+    "relatedDevices": [
+      "steam-deck",
+      "asus-rog-ally"
+    ],
+    "notes": "Check specific GPD model year as older units may only be UHS-I. The 2024/2025 Mini supports UHS-II."
+  }
+]

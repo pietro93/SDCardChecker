@@ -15,6 +15,7 @@ yarn-error.log*
 # Build
 dist/
 build/
+data/devices.json  # Generated from category files during build
 
 # Environment
 .env
