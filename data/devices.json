@@ -6932,6 +6932,413 @@
         "viofo-a229-duo"
       ],
       "notes": "Japanese dash cam brand emphasizing durability and continuous recording reliability."
-    }
+      },
+      {
+      "id": "fiio-snowsky-echo-mini",
+      "name": "FiiO SnowSky Echo Mini",
+      "category": "Audio & Hi-Fi",
+      "slug": "fiio-snowsky-echo-mini",
+      "searchTerms": [
+       "fiio snowsky echo mini",
+       "echo mini sd card",
+       "fiio retro mp3 player",
+       "snowsky dap storage"
+      ],
+      "sdCard": {
+       "type": "microSD / microSDHC / microSDXC",
+       "minSpeed": "Class 10 / U1",
+       "minWriteSpeed": "10 MB/s",
+       "minAppPerformance": "A1 (Highly Recommended)",
+       "recommendedCapacity": [
+         "128GB",
+         "256GB"
+       ],
+       "maxCapacity": "256GB (Official), 512GB+ (Unofficial/Tested)"
+      },
+      "whySpecs": "As a dedicated Digital Audio Player (DAP), the Echo Mini relies on the microSD card for its primary library. While audio playback bitrate is low (requiring only Class 10), <b>database indexing requires fast random read speeds</b>. An A1-rated card ensures that the retro UI remains snappy and album art loads instantly when scrolling through large libraries of FLAC or DSD files.",
+      "recommendedBrands": [
+       {
+         "id": "sandisk-ultra-microsd"
+       },
+       {
+         "id": "samsung-evo-select-microsd"
+       },
+       {
+         "id": "kingston-canvas-go-plus"
+       }
+      ],
+      "faq": [
+       {
+         "q": "What is the max SD card size for the SnowSky Echo Mini?",
+         "a": "<b>Officially 256GB.</b> However, like most FiiO players, it is widely reported to support 512GB and 1TB cards if they are formatted to FAT32. Using cards larger than the official limit may result in longer boot times while the device scans for music."
+       },
+       {
+         "q": "Does the Echo Mini come with internal music storage?",
+         "a": "<b>It includes 8GB of internal memory</b>, which is sufficient for the OS and a small 'favorites' playlist. For a full high-resolution library, a microSD card is required."
+       }
+      ],
+      "relatedDevices": [
+       "sony-nw-a306",
+       "hiby-r3-ii",
+       "zoom-h1n-vp"
+      ],
+      "notes": "FiiO sub-brand focused on retro cassette aesthetics. Features dual CS43131 DACs. Supports DSD, WAV, FLAC, APE."
+      },
+      {
+      "id": "sony-nw-a306",
+      "name": "Sony Walkman NW-A306",
+      "category": "Audio & Hi-Fi",
+      "slug": "sony-nw-a306",
+      "searchTerms": [
+       "sony walkman a306 sd card",
+       "nw-a306 memory card",
+       "best sd card for sony walkman",
+       "sony dap storage"
+      ],
+      "sdCard": {
+       "type": "microSD / microSDXC",
+       "minSpeed": "Class 10 / U1",
+       "minWriteSpeed": "10 MB/s",
+       "minAppPerformance": "A2 (Critical for Android)",
+       "recommendedCapacity": [
+         "256GB",
+         "512GB",
+         "1TB"
+       ],
+       "maxCapacity": "2TB"
+      },
+      "whySpecs": "The NW-A306 runs a full Android operating system. Unlike simple MP3 players, Android constantly accesses the SD card for system processes, streaming apps (Spotify/Tidal), and database indexing. <b>An A2-rated card is essential</b> to prevent the user interface from lagging. Standard Class 10 cards will cause the device to stutter significantly.",
+      "recommendedBrands": [
+       {
+         "id": "sandisk-extreme-microsd"
+       },
+       {
+         "id": "samsung-pro-plus-microsd"
+       },
+       {
+         "id": "lexar-professional-silver-microsd"
+       }
+      ],
+      "faq": [
+       {
+         "q": "Why is my Sony Walkman NW-A306 so slow?",
+         "a": "<b>It is likely due to a slow microSD card.</b> Android DAPs rely heavily on 'Random Read' speeds (IOPS). If you use a basic card, the database indexing will bog down the processor. Switch to a SanDisk Extreme or Samsung PRO Plus (A2 rated) for a smoother experience."
+       },
+       {
+         "q": "What is the maximum capacity for the Sony A306?",
+         "a": "<b>It supports up to 2TB microSDXC cards.</b> Many users successfully use 1TB cards to store massive libraries of lossless FLAC and Hi-Res audio files."
+       }
+      ],
+      "relatedDevices": [
+       "sony-nw-zx707",
+       "hiby-r4",
+       "fiio-snowsky-echo-mini"
+      ],
+      "notes": "The current market standard for compact Android Hi-Res players. Card performance directly impacts UI fluidity."
+      },
+      {
+      "id": "sony-nw-zx707",
+      "name": "Sony Walkman NW-ZX707",
+      "category": "Audio & Hi-Fi",
+      "slug": "sony-nw-zx707",
+      "searchTerms": [
+       "sony zx707 sd card",
+       "nw-zx707 memory card",
+       "sony premium dap storage"
+      ],
+      "sdCard": {
+       "type": "microSD / microSDXC",
+       "minSpeed": "Class 10 / U1",
+       "minWriteSpeed": "10 MB/s",
+       "minAppPerformance": "A2",
+       "recommendedCapacity": [
+         "512GB",
+         "1TB"
+       ],
+       "maxCapacity": "2TB"
+      },
+      "whySpecs": "The NW-ZX707 is the high-end sibling to the A306, featuring a larger screen and better amplification. Like the A306, it runs Android and requires an A2-rated card for smooth operation. Users of this device typically have massive DSD/FLAC libraries, making 1TB cards a very common choice.",
+      "recommendedBrands": [
+       {
+         "id": "sandisk-extreme-pro-microsd"
+       },
+       {
+         "id": "samsung-pro-plus-microsd"
+       }
+      ],
+      "faq": [
+       {
+         "q": "Does the ZX707 have internal storage?",
+         "a": "<b>Yes, 64GB internal.</b> However, the Android OS takes up nearly 20GB of that, leaving very little room for music. A large microSD card is essentially mandatory for this device."
+       }
+      ],
+      "relatedDevices": [
+       "sony-nw-a306",
+       "astell-kern-sr35"
+      ],
+      "notes": "Premium Android DAP. Often purchased by users upgrading from the A306 who need more power for headphones."
+      },
+      {
+      "id": "hiby-r3-ii",
+      "name": "HiBy R3 II",
+      "category": "Audio & Hi-Fi",
+      "slug": "hiby-r3-ii",
+      "searchTerms": [
+       "hiby r3 ii sd card",
+       "hiby r3 gen 2 microsd",
+       "hiby music player storage"
+      ],
+      "sdCard": {
+       "type": "microSD / microSDXC",
+       "minSpeed": "Class 10",
+       "minWriteSpeed": "10 MB/s",
+       "recommendedCapacity": [
+         "256GB",
+         "512GB"
+       ],
+       "maxCapacity": "2TB"
+      },
+      "whySpecs": "A direct competitor to the SnowSky Echo Mini. The HiBy R3 II runs a lightweight proprietary OS (HiByOS) and has <b>no internal storage</b> for music. A reliable microSD card is mandatory. It is known for fast card scanning, so standard Class 10 / U1 cards work well, though A1 cards are still preferred for album art loading.",
+      "recommendedBrands": [
+       {
+         "id": "sandisk-ultra-microsd"
+       },
+       {
+         "id": "samsung-evo-select-microsd"
+       },
+       {
+         "id": "kingston-canvas-select"
+       }
+      ],
+      "faq": [
+       {
+         "q": "Does the HiBy R3 II function without an SD card?",
+         "a": "<b>No, not for local playback.</b> It has no internal storage for music files. Without a card, it can only act as a Bluetooth receiver or USB DAC."
+       }
+      ],
+      "relatedDevices": [
+       "fiio-snowsky-echo-mini",
+       "sony-nw-a306",
+       "hiby-r4"
+      ],
+      "notes": "Budget-friendly audiophile player. Often praised for its 'MSEB' sound tuning features."
+      },
+      {
+      "id": "hiby-r4",
+      "name": "HiBy R4",
+      "category": "Audio & Hi-Fi",
+      "slug": "hiby-r4",
+      "searchTerms": [
+       "hiby r4 sd card",
+       "hiby r4 microsd",
+       "cyberpunk dap storage"
+      ],
+      "sdCard": {
+       "type": "microSD / microSDXC",
+       "minSpeed": "Class 10 / U1",
+       "minWriteSpeed": "10 MB/s",
+       "minAppPerformance": "A2 (Recommended)",
+       "recommendedCapacity": [
+         "512GB",
+         "1TB"
+       ],
+       "maxCapacity": "2TB"
+      },
+      "whySpecs": "The HiBy R4 is a mid-range Android 12 DAP with a distinct 'Cyberpunk' industrial design. Because it runs open Android and supports streaming apps, it shares the same requirement as Sony Walkmans: an A2-rated card is highly recommended to keep the system snapping and responsive.",
+      "recommendedBrands": [
+       {
+         "id": "sandisk-extreme-microsd"
+       },
+       {
+         "id": "samsung-pro-plus-microsd"
+       }
+      ],
+      "faq": [
+       {
+         "q": "Is the HiBy R4 better than the R3 II?",
+         "a": "<b>They are different categories.</b> The R4 runs Android, allowing you to install Spotify/Apple Music, but it is larger and heavier. The R3 II is a pure music player (no apps) that is much smaller. Both need SD cards."
+       }
+      ],
+      "relatedDevices": [
+       "sony-nw-a306",
+       "hiby-r3-ii",
+       "astell-kern-sr35"
+      ],
+      "notes": "Released in 2024. Very trendy 'Cyberpunk' aesthetic. High value-for-money Android DAP."
+      },
+      {
+      "id": "astell-kern-sr35",
+      "name": "Astell&Kern A&norma SR35",
+      "category": "Audio & Hi-Fi",
+      "slug": "astell-kern-sr35",
+      "searchTerms": [
+       "astell&kern sr35 sd card",
+       "a&k sr35 microsd",
+       "norma sr35 storage"
+      ],
+      "sdCard": {
+       "type": "microSD / microSDXC",
+       "minSpeed": "Class 10",
+       "minWriteSpeed": "10 MB/s",
+       "minAppPerformance": "A1",
+       "recommendedCapacity": [
+         "256GB",
+         "512GB",
+         "1TB"
+       ],
+       "maxCapacity": "1TB (Official), 2TB (Tested)"
+      },
+      "whySpecs": "The SR35 is the entry-level premium player from Astell&Kern. It features Quad DACs and a unique tilted screen. While it has 64GB internal storage, the high-res files (DSD/MQA) it is designed to play require massive storage. A reliable name-brand card is essential for the custom UI stability.",
+      "recommendedBrands": [
+       {
+         "id": "sandisk-extreme-microsd"
+       },
+       {
+         "id": "lexar-professional-silver-microsd"
+       }
+      ],
+      "faq": [
+       {
+         "q": "Does the SR35 run Android?",
+         "a": "<b>It runs a heavily modified, closed version of Android.</b> You cannot install the Play Store, but it supports whitelisted streaming apps (Tidal, Spotify, etc.). An A1 or A2 card is recommended for best app performance."
+       }
+      ],
+      "relatedDevices": [
+       "sony-nw-zx707",
+       "sony-nw-a306",
+       "hiby-r4"
+      ],
+      "notes": "Entry-level luxury DAP. Known for the 'tilted' screen design and exceptional Quad DAC audio quality."
+      },
+      {
+      "id": "zoom-h1n-vp",
+      "name": "Zoom H1n-VP Handy Recorder",
+      "category": "Audio & Hi-Fi",
+      "slug": "zoom-h1n-vp",
+      "searchTerms": [
+       "zoom h1n sd card",
+       "zoom h1n max size",
+       "zoom recorder microsd",
+       "zoom h1n compatibility"
+      ],
+      "sdCard": {
+       "type": "microSD / microSDHC (NOT microSDXC)",
+       "minSpeed": "Class 4",
+       "minWriteSpeed": "4 MB/s",
+       "recommendedCapacity": [
+         "16GB",
+         "32GB"
+       ],
+       "maxCapacity": "32GB (Strict Limit)"
+      },
+      "whySpecs": "<b>Critical Warning:</b> The Zoom H1n (and H1n-VP) is an older hardware architecture that <b>does NOT support cards larger than 32GB</b>. Users frequently buy 64GB or 128GB cards that fail to work. You must use a microSDHC card (32GB or smaller). Speed is not critical; compatibility is.",
+      "recommendedBrands": [
+       {
+         "id": "sandisk-ultra-microsd-32gb"
+       },
+       {
+         "id": "kingston-canvas-select-32gb"
+       }
+      ],
+      "faq": [
+       {
+         "q": "Why does my Zoom H1n say 'Invalid Card' or 'No Card'?",
+         "a": "<b>You are likely using a card that is too large.</b> The Zoom H1n has a strict hardware limit of 32GB. It cannot read 64GB, 128GB, or larger cards (microSDXC). You must purchase a 32GB microSDHC card."
+       },
+       {
+         "q": "How many hours of audio fits on a 32GB card?",
+         "a": "<b>A 32GB card can hold over 15 hours of highest-quality WAV audio (24-bit/96kHz)</b> or over 500 hours of MP3 audio. For a dedicated audio recorder, 32GB is a vast amount of space."
+       }
+      ],
+      "relatedDevices": [
+       "zoom-h6",
+       "tascam-dr-05x",
+       "fiio-snowsky-echo-mini"
+      ],
+      "notes": "One of the most popular portable recorders in the world. The 32GB limit is the #1 source of user confusion and support searches."
+      },
+      {
+      "id": "zoom-h6",
+      "name": "Zoom H6 Handy Recorder",
+      "category": "Audio & Hi-Fi",
+      "slug": "zoom-h6",
+      "searchTerms": [
+       "zoom h6 sd card",
+       "zoom h6 microsd",
+       "zoom h6 memory card"
+      ],
+      "sdCard": {
+       "type": "SD / SDHC / SDXC (Full Size)",
+       "minSpeed": "Class 10",
+       "minWriteSpeed": "10 MB/s",
+       "recommendedCapacity": [
+         "32GB",
+         "64GB",
+         "128GB"
+       ],
+       "maxCapacity": "128GB (Official)"
+      },
+      "whySpecs": "The Zoom H6 uses full-size SD cards. While it is a powerful recorder, it is known to be picky with cards larger than 128GB. Zoom officially recommends formatting cards inside the device to ensure stability. Class 10 is sufficient for 6-track recording.",
+      "recommendedBrands": [
+       {
+         "id": "sandisk-extreme-sd-uhs1"
+       },
+       {
+         "id": "kingston-canvas-select"
+       }
+      ],
+      "faq": [
+       {
+         "q": "Does the Zoom H6 support 256GB cards?",
+         "a": "<b>Not officially.</b> Zoom lists 128GB as the maximum tested capacity. While some users report success with larger cards, stick to 128GB or smaller for professional reliability."
+       }
+      ],
+      "relatedDevices": [
+       "zoom-h1n-vp",
+       "tascam-dr-05x"
+      ],
+      "notes": "The industry standard for field recording and podcasting. Uses Full-Size SD cards (unlike the H1n which uses microSD)."
+      },
+      {
+      "id": "tascam-dr-05x",
+      "name": "Tascam DR-05X",
+      "category": "Audio & Hi-Fi",
+      "slug": "tascam-dr-05x",
+      "searchTerms": [
+       "tascam dr-05x sd card",
+       "tascam dr05x memory card",
+       "best card for tascam recorder"
+      ],
+      "sdCard": {
+       "type": "microSD / microSDHC / microSDXC",
+       "minSpeed": "Class 10",
+       "minWriteSpeed": "10 MB/s",
+       "recommendedCapacity": [
+         "64GB",
+         "128GB"
+       ],
+       "maxCapacity": "128GB"
+      },
+      "whySpecs": "Unlike the Zoom H1n, the Tascam DR-05X supports the newer microSDXC format, allowing for cards up to 128GB. Tascam recorders are notoriously picky about card formatting, so using a high-quality name-brand card and formatting it <i>inside the recorder</i> is essential to prevent 'Write Timeout' errors.",
+      "recommendedBrands": [
+       {
+         "id": "sandisk-ultra-microsd"
+       },
+       {
+         "id": "samsung-evo-select-microsd"
+       }
+      ],
+      "faq": [
+       {
+         "q": "Does the Tascam DR-05X support 256GB cards?",
+         "a": "<b>No, the official maximum supported capacity is 128GB.</b> While some users attempt to use larger cards, Tascam firmware is strict, and using unsupported capacities creates a high risk of file corruption during long recording sessions."
+       }
+      ],
+      "relatedDevices": [
+       "zoom-h1n-vp",
+       "zoom-h6"
+      ],
+      "notes": "Popular stereo handheld recorder. Supports larger cards than the Zoom H1n, but caps at 128GB."
+      }
       ]
       }

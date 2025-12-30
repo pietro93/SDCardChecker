@@ -14,183 +14,1703 @@
   ],
   "redirects": [
     {
+      "source": "/devices/gopro-hero-13",
+      "destination": "/categories/action-cameras/gopro-hero-13",
+      "permanent": true
+    },
+    {
+      "source": "/devices/gopro-hero-12",
+      "destination": "/categories/action-cameras/gopro-hero-12",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nintendo-switch",
+      "destination": "/categories/gaming-handhelds/nintendo-switch",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nintendo-switch-oled",
+      "destination": "/categories/gaming-handhelds/nintendo-switch-oled",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-mini-4-pro",
+      "destination": "/categories/drones/dji-mini-4-pro",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r5",
+      "destination": "/categories/cameras/canon-eos-r5",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-a6700",
+      "destination": "/categories/cameras/sony-a6700",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-x-s20",
+      "destination": "/categories/cameras/fujifilm-x-s20",
+      "permanent": true
+    },
+    {
+      "source": "/devices/steam-deck",
+      "destination": "/categories/gaming-handhelds/steam-deck",
+      "permanent": true
+    },
+    {
+      "source": "/devices/gopro-hero-max",
+      "destination": "/categories/action-cameras/gopro-hero-max",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-mini-3-pro",
+      "destination": "/categories/drones/dji-mini-3-pro",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-air-3s",
+      "destination": "/categories/drones/dji-air-3s",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-mavic-3",
+      "destination": "/categories/drones/dji-mavic-3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-z9",
+      "destination": "/categories/cameras/nikon-z9",
+      "permanent": true
+    },
+    {
+      "source": "/devices/asus-rog-ally",
+      "destination": "/categories/gaming-handhelds/asus-rog-ally",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nintendo-switch-lite",
+      "destination": "/categories/gaming-handhelds/nintendo-switch-lite",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nintendo-switch-2",
+      "destination": "/categories/gaming-handhelds/nintendo-switch-2",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-a7-iv",
+      "destination": "/categories/cameras/sony-a7-iv",
+      "permanent": true
+    },
+    {
+      "source": "/devices/insta360-x3",
+      "destination": "/categories/action-cameras/insta360-x3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-osmo-pocket-3",
+      "destination": "/categories/action-cameras/dji-osmo-pocket-3",
+      "permanent": true
+    },
+    {
       "source": "/devices/raspberry-pi-5",
-      "destination": "/categories/single-board-computers/raspberry-pi-5",
-      "permanent": true
-    },
-    {
-      "source": "/devices/raspberry-pi-4-model-b",
-      "destination": "/categories/single-board-computers/raspberry-pi-4-model-b",
-      "permanent": true
-    },
-    {
-      "source": "/devices/raspberry-pi-3-model-b-plus",
-      "destination": "/categories/single-board-computers/raspberry-pi-3-model-b-plus",
-      "permanent": true
-    },
-    {
-      "source": "/devices/raspberry-pi-zero-2-w",
-      "destination": "/categories/single-board-computers/raspberry-pi-zero-2-w",
-      "permanent": true
-    },
-    {
-      "source": "/devices/orange-pi-5",
-      "destination": "/categories/single-board-computers/orange-pi-5",
+      "destination": "/categories/computing-and-tablets/raspberry-pi-5",
       "permanent": true
     },
     {
       "source": "/devices/samsung-galaxy-tab-s9",
-      "destination": "/categories/tablets/samsung-galaxy-tab-s9",
+      "destination": "/categories/computing-and-tablets/samsung-galaxy-tab-s9",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r6-mark-ii",
+      "destination": "/categories/cameras/canon-eos-r6-mark-ii",
+      "permanent": true
+    },
+    {
+      "source": "/devices/blackmagic-pocket-cinema-camera-4k",
+      "destination": "/categories/cameras/blackmagic-pocket-cinema-camera-4k",
+      "permanent": true
+    },
+    {
+      "source": "/devices/viofo-a229-duo",
+      "destination": "/categories/dash-cams/viofo-a229-duo",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nextbase-622gw",
+      "destination": "/categories/action-cameras/nextbase-622gw",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-air-3",
+      "destination": "/categories/drones/dji-air-3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/blackmagic-pocket-cinema-camera-6k-pro",
+      "destination": "/categories/cameras/blackmagic-pocket-cinema-camera-6k-pro",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-z8",
+      "destination": "/categories/cameras/nikon-z8",
+      "permanent": true
+    },
+    {
+      "source": "/devices/panasonic-lumix-s1h",
+      "destination": "/categories/cameras/panasonic-lumix-s1h",
+      "permanent": true
+    },
+    {
+      "source": "/devices/gopro-hero-11-black",
+      "destination": "/categories/action-cameras/gopro-hero-11-black",
       "permanent": true
     },
     {
       "source": "/devices/amazon-fire-hd-10",
-      "destination": "/categories/tablets/amazon-fire-hd-10",
+      "destination": "/categories/computing-and-tablets/amazon-fire-hd-10",
       "permanent": true
     },
     {
       "source": "/devices/amazon-fire-max-11",
-      "destination": "/categories/tablets/amazon-fire-max-11",
+      "destination": "/categories/computing-and-tablets/amazon-fire-max-11",
       "permanent": true
     },
     {
-      "source": "/devices/ipad-pro",
-      "destination": "/categories/tablets/ipad-pro",
+      "source": "/devices/wyze-cam-v3",
+      "destination": "/categories/security-cameras/wyze-cam-v3",
       "permanent": true
     },
     {
-      "source": "/devices/ipad-air",
-      "destination": "/categories/tablets/ipad-air",
-      "permanent": true
-    },
-    {
-      "source": "/devices/ipad-9th-gen",
-      "destination": "/categories/tablets/ipad-9th-gen",
-      "permanent": true
-    },
-    {
-      "source": "/devices/ipad-air-3rd-generation",
-      "destination": "/categories/tablets/ipad-air-3rd-generation",
-      "permanent": true
-    },
-    {
-      "source": "/devices/macbook-pro-m3",
-      "destination": "/categories/laptops/macbook-pro-m3",
+      "source": "/devices/eufy-solocam-s340",
+      "destination": "/categories/security-cameras/eufy-solocam-s340",
       "permanent": true
     },
     {
       "source": "/devices/hp-chromebook-14",
-      "destination": "/categories/laptops/hp-chromebook-14",
+      "destination": "/categories/computing-and-tablets/hp-chromebook-14",
+      "permanent": true
+    },
+    {
+      "source": "/devices/insta360-x4",
+      "destination": "/categories/action-cameras/insta360-x4",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-x100vi",
+      "destination": "/categories/cameras/fujifilm-x100vi",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-osmo-action-4",
+      "destination": "/categories/action-cameras/dji-osmo-action-4",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nintendo-3ds-xl",
+      "destination": "/categories/gaming-handhelds/nintendo-3ds-xl",
+      "permanent": true
+    },
+    {
+      "source": "/devices/anbernic-rg353v",
+      "destination": "/categories/gaming-handhelds/anbernic-rg353v",
+      "permanent": true
+    },
+    {
+      "source": "/devices/asus-rog-ally-x",
+      "destination": "/categories/gaming-handhelds/asus-rog-ally-x",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r50",
+      "destination": "/categories/cameras/canon-eos-r50",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r7",
+      "destination": "/categories/cameras/canon-eos-r7",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r10",
+      "destination": "/categories/cameras/canon-eos-r10",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r8",
+      "destination": "/categories/cameras/canon-eos-r8",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-rebel-t7",
+      "destination": "/categories/cameras/canon-rebel-t7",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-g7x-mark-iii",
+      "destination": "/categories/cameras/canon-g7x-mark-iii",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-g7x-mark-ii",
+      "destination": "/categories/cameras/canon-g7x-mark-ii",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-mini-4k",
+      "destination": "/categories/drones/dji-mini-4k",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-mini-3",
+      "destination": "/categories/drones/dji-mini-3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-xt5",
+      "destination": "/categories/cameras/fujifilm-xt5",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-xm5",
+      "destination": "/categories/cameras/fujifilm-xm5",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-xt30-ii",
+      "destination": "/categories/cameras/fujifilm-xt30-ii",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-xt50",
+      "destination": "/categories/cameras/fujifilm-xt50",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-fx30",
+      "destination": "/categories/cameras/sony-fx30",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-fx3",
+      "destination": "/categories/cameras/sony-fx3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-xe5",
+      "destination": "/categories/cameras/fujifilm-xe5",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-x100v",
+      "destination": "/categories/cameras/fujifilm-x100v",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-xt3",
+      "destination": "/categories/cameras/fujifilm-xt3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/insta360-go-3",
+      "destination": "/categories/action-cameras/insta360-go-3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/insta360-ace-pro",
+      "destination": "/categories/action-cameras/insta360-ace-pro",
+      "permanent": true
+    },
+    {
+      "source": "/devices/insta360-one-x2",
+      "destination": "/categories/action-cameras/insta360-one-x2",
+      "permanent": true
+    },
+    {
+      "source": "/devices/lenovo-legion-go",
+      "destination": "/categories/gaming-handhelds/lenovo-legion-go",
+      "permanent": true
+    },
+    {
+      "source": "/devices/leica-q3",
+      "destination": "/categories/cameras/leica-q3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/leica-q3-43",
+      "destination": "/categories/cameras/leica-q3-43",
+      "permanent": true
+    },
+    {
+      "source": "/devices/leica-m11",
+      "destination": "/categories/cameras/leica-m11",
+      "permanent": true
+    },
+    {
+      "source": "/devices/leica-q2",
+      "destination": "/categories/cameras/leica-q2",
+      "permanent": true
+    },
+    {
+      "source": "/devices/leica-d-lux-8",
+      "destination": "/categories/cameras/leica-d-lux-8",
+      "permanent": true
+    },
+    {
+      "source": "/devices/leica-m10",
+      "destination": "/categories/cameras/leica-m10",
+      "permanent": true
+    },
+    {
+      "source": "/devices/panasonic-lumix-s9",
+      "destination": "/categories/cameras/panasonic-lumix-s9",
+      "permanent": true
+    },
+    {
+      "source": "/devices/panasonic-lumix-s5-iix",
+      "destination": "/categories/cameras/panasonic-lumix-s5-iix",
+      "permanent": true
+    },
+    {
+      "source": "/devices/panasonic-lumix-s5-ii",
+      "destination": "/categories/cameras/panasonic-lumix-s5-ii",
+      "permanent": true
+    },
+    {
+      "source": "/devices/miyoo-mini-plus",
+      "destination": "/categories/gaming-handhelds/miyoo-mini-plus",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-d7500",
+      "destination": "/categories/cameras/nikon-d7500",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-zf",
+      "destination": "/categories/cameras/nikon-zf",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-z50-ii",
+      "destination": "/categories/cameras/nikon-z50-ii",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-z6-iii",
+      "destination": "/categories/cameras/nikon-z6-iii",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-z6-ii",
+      "destination": "/categories/cameras/nikon-z6-ii",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-d850",
+      "destination": "/categories/cameras/nikon-d850",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-d750",
+      "destination": "/categories/cameras/nikon-d750",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-mini-2-se",
+      "destination": "/categories/drones/dji-mini-2-se",
+      "permanent": true
+    },
+    {
+      "source": "/devices/garmin-dash-cam-mini-2",
+      "destination": "/categories/dash-cams/garmin-dash-cam-mini-2",
+      "permanent": true
+    },
+    {
+      "source": "/devices/vantrue-n4",
+      "destination": "/categories/dash-cams/vantrue-n4",
+      "permanent": true
+    },
+    {
+      "source": "/devices/rexing-v1p-gen3",
+      "destination": "/categories/dash-cams/rexing-v1p-gen3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/rove-r2-4k",
+      "destination": "/categories/dash-cams/rove-r2-4k",
+      "permanent": true
+    },
+    {
+      "source": "/devices/viofo-a229-plus-duo",
+      "destination": "/categories/dash-cams/viofo-a229-plus-duo",
+      "permanent": true
+    },
+    {
+      "source": "/devices/blackvue-dr970x-2ch",
+      "destination": "/categories/dash-cams/blackvue-dr970x-2ch",
+      "permanent": true
+    },
+    {
+      "source": "/devices/blackvue-dr900x-2ch",
+      "destination": "/categories/dash-cams/blackvue-dr900x-2ch",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nextbase-622gw",
+      "destination": "/categories/dash-cams/nextbase-622gw",
+      "permanent": true
+    },
+    {
+      "source": "/devices/garmin-dash-cam-67w",
+      "destination": "/categories/dash-cams/garmin-dash-cam-67w",
+      "permanent": true
+    },
+    {
+      "source": "/devices/viofo-a119-v3",
+      "destination": "/categories/dash-cams/viofo-a119-v3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/viofo-a129-pro-duo",
+      "destination": "/categories/dash-cams/viofo-a129-pro-duo",
+      "permanent": true
+    },
+    {
+      "source": "/devices/70mai-a810",
+      "destination": "/categories/dash-cams/70mai-a810",
+      "permanent": true
+    },
+    {
+      "source": "/devices/redtiger-f7n",
+      "destination": "/categories/dash-cams/redtiger-f7n",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-z5",
+      "destination": "/categories/cameras/nikon-z5",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r100",
+      "destination": "/categories/cameras/canon-eos-r100",
+      "permanent": true
+    },
+    {
+      "source": "/devices/anbernic-rg35xx-plus-h",
+      "destination": "/categories/gaming-handhelds/anbernic-rg35xx-plus-h",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-a7r-v",
+      "destination": "/categories/cameras/sony-a7r-v",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-d3500",
+      "destination": "/categories/cameras/nikon-d3500",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-zv-e10",
+      "destination": "/categories/cameras/sony-zv-e10",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-a7-iii",
+      "destination": "/categories/cameras/sony-a7-iii",
+      "permanent": true
+    },
+    {
+      "source": "/devices/retroid-pocket-4-pro",
+      "destination": "/categories/gaming-handhelds/retroid-pocket-4-pro",
+      "permanent": true
+    },
+    {
+      "source": "/devices/lenovo-tab-m10-plus",
+      "destination": "/categories/computing-and-tablets/lenovo-tab-m10-plus",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-a6400",
+      "destination": "/categories/cameras/sony-a6400",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-x-s10",
+      "destination": "/categories/cameras/fujifilm-x-s10",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r6",
+      "destination": "/categories/cameras/canon-eos-r6",
+      "permanent": true
+    },
+    {
+      "source": "/devices/raspberry-pi-4-model-b",
+      "destination": "/categories/computing-and-tablets/raspberry-pi-4-model-b",
+      "permanent": true
+    },
+    {
+      "source": "/devices/raspberry-pi-3-model-b-plus",
+      "destination": "/categories/computing-and-tablets/raspberry-pi-3-model-b-plus",
+      "permanent": true
+    },
+    {
+      "source": "/devices/raspberry-pi-zero-2-w",
+      "destination": "/categories/computing-and-tablets/raspberry-pi-zero-2-w",
+      "permanent": true
+    },
+    {
+      "source": "/devices/reolink-e1-pro",
+      "destination": "/categories/security-cameras/reolink-e1-pro",
+      "permanent": true
+    },
+    {
+      "source": "/devices/orange-pi-5",
+      "destination": "/categories/computing-and-tablets/orange-pi-5",
+      "permanent": true
+    },
+    {
+      "source": "/devices/lenovo-legion-go-s",
+      "destination": "/categories/gaming-handhelds/lenovo-legion-go-s",
+      "permanent": true
+    },
+    {
+      "source": "/devices/gopro-max-2",
+      "destination": "/categories/action-cameras/gopro-max-2",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-d500",
+      "destination": "/categories/cameras/nikon-d500",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-a7r",
+      "destination": "/categories/cameras/sony-a7r",
+      "permanent": true
+    },
+    {
+      "source": "/devices/insta360-one-x3",
+      "destination": "/categories/action-cameras/insta360-one-x3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/autel-evo-ii-pro-v3",
+      "destination": "/categories/drones/autel-evo-ii-pro-v3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/autel-evo-nano-plus",
+      "destination": "/categories/drones/autel-evo-nano-plus",
+      "permanent": true
+    },
+    {
+      "source": "/devices/autel-evo-lite-plus",
+      "destination": "/categories/drones/autel-evo-lite-plus",
+      "permanent": true
+    },
+    {
+      "source": "/devices/potensic-atom",
+      "destination": "/categories/drones/potensic-atom",
+      "permanent": true
+    },
+    {
+      "source": "/devices/potensic-atom-se",
+      "destination": "/categories/drones/potensic-atom-se",
+      "permanent": true
+    },
+    {
+      "source": "/devices/skydio-2-plus",
+      "destination": "/categories/drones/skydio-2-plus",
+      "permanent": true
+    },
+    {
+      "source": "/devices/skydio-x10",
+      "destination": "/categories/drones/skydio-x10",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fimi-mini-3",
+      "destination": "/categories/drones/fimi-mini-3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/holy-stone-hs175d",
+      "destination": "/categories/drones/holy-stone-hs175d",
+      "permanent": true
+    },
+    {
+      "source": "/devices/holy-stone-hs720",
+      "destination": "/categories/drones/holy-stone-hs720",
+      "permanent": true
+    },
+    {
+      "source": "/devices/holy-stone-hs360s",
+      "destination": "/categories/drones/holy-stone-hs360s",
+      "permanent": true
+    },
+    {
+      "source": "/devices/hoverair-x1-pro",
+      "destination": "/categories/drones/hoverair-x1-pro",
+      "permanent": true
+    },
+    {
+      "source": "/devices/hoverair-x1-pro-max",
+      "destination": "/categories/drones/hoverair-x1-pro-max",
       "permanent": true
     },
     {
       "source": "/devices/iphone-15",
-      "destination": "/categories/phones/iphone-15",
+      "destination": "/categories/computing-and-tablets/iphone-15",
+      "permanent": true
+    },
+    {
+      "source": "/devices/macbook-air",
+      "destination": "/categories/computing-and-tablets/macbook-air",
       "permanent": true
     },
     {
       "source": "/devices/iphone-14",
-      "destination": "/categories/phones/iphone-14",
+      "destination": "/categories/computing-and-tablets/iphone-14",
+      "permanent": true
+    },
+    {
+      "source": "/devices/iphone-13",
+      "destination": "/categories/computing-and-tablets/iphone-13",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ipad-air",
+      "destination": "/categories/computing-and-tablets/ipad-air",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-mini-3",
+      "destination": "/categories/drones/dji-mini-3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/wyze-cam-v3",
+      "destination": "/categories/action-cameras/wyze-cam-v3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/iphone-14-pro-max",
+      "destination": "/categories/computing-and-tablets/iphone-14-pro-max",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ipad-air-3",
+      "destination": "/categories/computing-and-tablets/ipad-air-3",
+      "permanent": true
+    },
+    {
+      "source": "/devices/iphone-se",
+      "destination": "/categories/computing-and-tablets/iphone-se",
       "permanent": true
     },
     {
       "source": "/devices/samsung-galaxy-s23",
-      "destination": "/categories/phones/samsung-galaxy-s23",
+      "destination": "/categories/computing-and-tablets/samsung-galaxy-s23",
       "permanent": true
     },
     {
       "source": "/devices/google-pixel-8",
-      "destination": "/categories/phones/google-pixel-8",
+      "destination": "/categories/computing-and-tablets/google-pixel-8",
+      "permanent": true
+    },
+    {
+      "source": "/devices/hp-chromebook",
+      "destination": "/categories/computing-and-tablets/hp-chromebook",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dell-xps",
+      "destination": "/categories/computing-and-tablets/dell-xps",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-rebel-t7",
+      "destination": "/categories/cameras/canon-rebel-t7",
+      "permanent": true
+    },
+    {
+      "source": "/devices/macbook-pro",
+      "destination": "/categories/computing-and-tablets/macbook-pro",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ipad-pro",
+      "destination": "/categories/computing-and-tablets/ipad-pro",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ipad-9th-gen",
+      "destination": "/categories/computing-and-tablets/ipad-9th-gen",
+      "permanent": true
+    },
+    {
+      "source": "/devices/windows-laptop",
+      "destination": "/categories/computing-and-tablets/windows-laptop",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-a1",
+      "destination": "/categories/cameras/sony-a1",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-d850",
+      "destination": "/categories/cameras/nikon-d850",
+      "permanent": true
+    },
+    {
+      "source": "/devices/analogue-pocket",
+      "destination": "/categories/retro-handhelds/analogue-pocket",
+      "permanent": true
+    },
+    {
+      "source": "/devices/msi-claw",
+      "destination": "/categories/gaming-handhelds/msi-claw",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-ps-vita-sd2vita",
+      "destination": "/categories/retro-handhelds/sony-ps-vita-sd2vita",
+      "permanent": true
+    },
+    {
+      "source": "/devices/anbernic-rg556",
+      "destination": "/categories/retro-handhelds/anbernic-rg556",
+      "permanent": true
+    },
+    {
+      "source": "/devices/gpd-win-mini",
+      "destination": "/categories/gaming-handhelds/gpd-win-mini",
+      "permanent": true
+    },
+    {
+      "source": "/devices/egret-ii-mini",
+      "destination": "/categories/retro-arcade/egret-ii-mini",
+      "permanent": true
+    },
+    {
+      "source": "/devices/yupiteru-wdt-510c",
+      "destination": "/categories/dash-cams/yupiteru-wdt-510c",
+      "permanent": true
+    },
+    {
+      "source": "/devices/kenwood-drv-mr760",
+      "destination": "/categories/dash-cams/kenwood-drv-mr760",
+      "permanent": true
+    },
+    {
+      "source": "/devices/comtec-zdr-035",
+      "destination": "/categories/dash-cams/comtec-zdr-035",
+      "permanent": true
+    },
+    {
+      "source": "/devices/cellstar-cs-91fh",
+      "destination": "/categories/dash-cams/cellstar-cs-91fh",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fiio-snowsky-echo-mini",
+      "destination": "/categories/audio-hi-fi/fiio-snowsky-echo-mini",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-nw-a306",
+      "destination": "/categories/audio-hi-fi/sony-nw-a306",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-nw-zx707",
+      "destination": "/categories/audio-hi-fi/sony-nw-zx707",
+      "permanent": true
+    },
+    {
+      "source": "/devices/hiby-r3-ii",
+      "destination": "/categories/audio-hi-fi/hiby-r3-ii",
+      "permanent": true
+    },
+    {
+      "source": "/devices/hiby-r4",
+      "destination": "/categories/audio-hi-fi/hiby-r4",
+      "permanent": true
+    },
+    {
+      "source": "/devices/astell-kern-sr35",
+      "destination": "/categories/audio-hi-fi/astell-kern-sr35",
+      "permanent": true
+    },
+    {
+      "source": "/devices/zoom-h1n-vp",
+      "destination": "/categories/audio-hi-fi/zoom-h1n-vp",
+      "permanent": true
+    },
+    {
+      "source": "/devices/zoom-h6",
+      "destination": "/categories/audio-hi-fi/zoom-h6",
+      "permanent": true
+    },
+    {
+      "source": "/devices/tascam-dr-05x",
+      "destination": "/categories/audio-hi-fi/tascam-dr-05x",
+      "permanent": true
+    },
+    {
+      "source": "/devices/gopro-hero-13/",
+      "destination": "/categories/action-cameras/gopro-hero-13/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/gopro-hero-12/",
+      "destination": "/categories/action-cameras/gopro-hero-12/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nintendo-switch/",
+      "destination": "/categories/gaming-handhelds/nintendo-switch/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nintendo-switch-oled/",
+      "destination": "/categories/gaming-handhelds/nintendo-switch-oled/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-mini-4-pro/",
+      "destination": "/categories/drones/dji-mini-4-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r5/",
+      "destination": "/categories/cameras/canon-eos-r5/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-a6700/",
+      "destination": "/categories/cameras/sony-a6700/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-x-s20/",
+      "destination": "/categories/cameras/fujifilm-x-s20/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/steam-deck/",
+      "destination": "/categories/gaming-handhelds/steam-deck/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/gopro-hero-max/",
+      "destination": "/categories/action-cameras/gopro-hero-max/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-mini-3-pro/",
+      "destination": "/categories/drones/dji-mini-3-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-air-3s/",
+      "destination": "/categories/drones/dji-air-3s/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-mavic-3/",
+      "destination": "/categories/drones/dji-mavic-3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-z9/",
+      "destination": "/categories/cameras/nikon-z9/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/asus-rog-ally/",
+      "destination": "/categories/gaming-handhelds/asus-rog-ally/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nintendo-switch-lite/",
+      "destination": "/categories/gaming-handhelds/nintendo-switch-lite/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nintendo-switch-2/",
+      "destination": "/categories/gaming-handhelds/nintendo-switch-2/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-a7-iv/",
+      "destination": "/categories/cameras/sony-a7-iv/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/insta360-x3/",
+      "destination": "/categories/action-cameras/insta360-x3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-osmo-pocket-3/",
+      "destination": "/categories/action-cameras/dji-osmo-pocket-3/",
       "permanent": true
     },
     {
       "source": "/devices/raspberry-pi-5/",
-      "destination": "/categories/single-board-computers/raspberry-pi-5/",
-      "permanent": true
-    },
-    {
-      "source": "/devices/raspberry-pi-4-model-b/",
-      "destination": "/categories/single-board-computers/raspberry-pi-4-model-b/",
-      "permanent": true
-    },
-    {
-      "source": "/devices/raspberry-pi-3-model-b-plus/",
-      "destination": "/categories/single-board-computers/raspberry-pi-3-model-b-plus/",
-      "permanent": true
-    },
-    {
-      "source": "/devices/raspberry-pi-zero-2-w/",
-      "destination": "/categories/single-board-computers/raspberry-pi-zero-2-w/",
-      "permanent": true
-    },
-    {
-      "source": "/devices/orange-pi-5/",
-      "destination": "/categories/single-board-computers/orange-pi-5/",
+      "destination": "/categories/computing-and-tablets/raspberry-pi-5/",
       "permanent": true
     },
     {
       "source": "/devices/samsung-galaxy-tab-s9/",
-      "destination": "/categories/tablets/samsung-galaxy-tab-s9/",
+      "destination": "/categories/computing-and-tablets/samsung-galaxy-tab-s9/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r6-mark-ii/",
+      "destination": "/categories/cameras/canon-eos-r6-mark-ii/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/blackmagic-pocket-cinema-camera-4k/",
+      "destination": "/categories/cameras/blackmagic-pocket-cinema-camera-4k/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/viofo-a229-duo/",
+      "destination": "/categories/dash-cams/viofo-a229-duo/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nextbase-622gw/",
+      "destination": "/categories/action-cameras/nextbase-622gw/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-air-3/",
+      "destination": "/categories/drones/dji-air-3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/blackmagic-pocket-cinema-camera-6k-pro/",
+      "destination": "/categories/cameras/blackmagic-pocket-cinema-camera-6k-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-z8/",
+      "destination": "/categories/cameras/nikon-z8/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/panasonic-lumix-s1h/",
+      "destination": "/categories/cameras/panasonic-lumix-s1h/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/gopro-hero-11-black/",
+      "destination": "/categories/action-cameras/gopro-hero-11-black/",
       "permanent": true
     },
     {
       "source": "/devices/amazon-fire-hd-10/",
-      "destination": "/categories/tablets/amazon-fire-hd-10/",
+      "destination": "/categories/computing-and-tablets/amazon-fire-hd-10/",
       "permanent": true
     },
     {
       "source": "/devices/amazon-fire-max-11/",
-      "destination": "/categories/tablets/amazon-fire-max-11/",
+      "destination": "/categories/computing-and-tablets/amazon-fire-max-11/",
       "permanent": true
     },
     {
-      "source": "/devices/ipad-pro/",
-      "destination": "/categories/tablets/ipad-pro/",
+      "source": "/devices/wyze-cam-v3/",
+      "destination": "/categories/security-cameras/wyze-cam-v3/",
       "permanent": true
     },
     {
-      "source": "/devices/ipad-air/",
-      "destination": "/categories/tablets/ipad-air/",
-      "permanent": true
-    },
-    {
-      "source": "/devices/ipad-9th-gen/",
-      "destination": "/categories/tablets/ipad-9th-gen/",
-      "permanent": true
-    },
-    {
-      "source": "/devices/ipad-air-3rd-generation/",
-      "destination": "/categories/tablets/ipad-air-3rd-generation/",
-      "permanent": true
-    },
-    {
-      "source": "/devices/macbook-pro-m3/",
-      "destination": "/categories/laptops/macbook-pro-m3/",
+      "source": "/devices/eufy-solocam-s340/",
+      "destination": "/categories/security-cameras/eufy-solocam-s340/",
       "permanent": true
     },
     {
       "source": "/devices/hp-chromebook-14/",
-      "destination": "/categories/laptops/hp-chromebook-14/",
+      "destination": "/categories/computing-and-tablets/hp-chromebook-14/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/insta360-x4/",
+      "destination": "/categories/action-cameras/insta360-x4/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-x100vi/",
+      "destination": "/categories/cameras/fujifilm-x100vi/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-osmo-action-4/",
+      "destination": "/categories/action-cameras/dji-osmo-action-4/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nintendo-3ds-xl/",
+      "destination": "/categories/gaming-handhelds/nintendo-3ds-xl/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/anbernic-rg353v/",
+      "destination": "/categories/gaming-handhelds/anbernic-rg353v/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/asus-rog-ally-x/",
+      "destination": "/categories/gaming-handhelds/asus-rog-ally-x/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r50/",
+      "destination": "/categories/cameras/canon-eos-r50/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r7/",
+      "destination": "/categories/cameras/canon-eos-r7/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r10/",
+      "destination": "/categories/cameras/canon-eos-r10/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r8/",
+      "destination": "/categories/cameras/canon-eos-r8/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-rebel-t7/",
+      "destination": "/categories/cameras/canon-rebel-t7/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-g7x-mark-iii/",
+      "destination": "/categories/cameras/canon-g7x-mark-iii/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-g7x-mark-ii/",
+      "destination": "/categories/cameras/canon-g7x-mark-ii/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-mini-4k/",
+      "destination": "/categories/drones/dji-mini-4k/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-mini-3/",
+      "destination": "/categories/drones/dji-mini-3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-xt5/",
+      "destination": "/categories/cameras/fujifilm-xt5/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-xm5/",
+      "destination": "/categories/cameras/fujifilm-xm5/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-xt30-ii/",
+      "destination": "/categories/cameras/fujifilm-xt30-ii/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-xt50/",
+      "destination": "/categories/cameras/fujifilm-xt50/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-fx30/",
+      "destination": "/categories/cameras/sony-fx30/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-fx3/",
+      "destination": "/categories/cameras/sony-fx3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-xe5/",
+      "destination": "/categories/cameras/fujifilm-xe5/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-x100v/",
+      "destination": "/categories/cameras/fujifilm-x100v/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-xt3/",
+      "destination": "/categories/cameras/fujifilm-xt3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/insta360-go-3/",
+      "destination": "/categories/action-cameras/insta360-go-3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/insta360-ace-pro/",
+      "destination": "/categories/action-cameras/insta360-ace-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/insta360-one-x2/",
+      "destination": "/categories/action-cameras/insta360-one-x2/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/lenovo-legion-go/",
+      "destination": "/categories/gaming-handhelds/lenovo-legion-go/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/leica-q3/",
+      "destination": "/categories/cameras/leica-q3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/leica-q3-43/",
+      "destination": "/categories/cameras/leica-q3-43/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/leica-m11/",
+      "destination": "/categories/cameras/leica-m11/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/leica-q2/",
+      "destination": "/categories/cameras/leica-q2/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/leica-d-lux-8/",
+      "destination": "/categories/cameras/leica-d-lux-8/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/leica-m10/",
+      "destination": "/categories/cameras/leica-m10/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/panasonic-lumix-s9/",
+      "destination": "/categories/cameras/panasonic-lumix-s9/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/panasonic-lumix-s5-iix/",
+      "destination": "/categories/cameras/panasonic-lumix-s5-iix/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/panasonic-lumix-s5-ii/",
+      "destination": "/categories/cameras/panasonic-lumix-s5-ii/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/miyoo-mini-plus/",
+      "destination": "/categories/gaming-handhelds/miyoo-mini-plus/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-d7500/",
+      "destination": "/categories/cameras/nikon-d7500/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-zf/",
+      "destination": "/categories/cameras/nikon-zf/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-z50-ii/",
+      "destination": "/categories/cameras/nikon-z50-ii/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-z6-iii/",
+      "destination": "/categories/cameras/nikon-z6-iii/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-z6-ii/",
+      "destination": "/categories/cameras/nikon-z6-ii/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-d850/",
+      "destination": "/categories/cameras/nikon-d850/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-d750/",
+      "destination": "/categories/cameras/nikon-d750/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-mini-2-se/",
+      "destination": "/categories/drones/dji-mini-2-se/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/garmin-dash-cam-mini-2/",
+      "destination": "/categories/dash-cams/garmin-dash-cam-mini-2/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/vantrue-n4/",
+      "destination": "/categories/dash-cams/vantrue-n4/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/rexing-v1p-gen3/",
+      "destination": "/categories/dash-cams/rexing-v1p-gen3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/rove-r2-4k/",
+      "destination": "/categories/dash-cams/rove-r2-4k/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/viofo-a229-plus-duo/",
+      "destination": "/categories/dash-cams/viofo-a229-plus-duo/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/blackvue-dr970x-2ch/",
+      "destination": "/categories/dash-cams/blackvue-dr970x-2ch/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/blackvue-dr900x-2ch/",
+      "destination": "/categories/dash-cams/blackvue-dr900x-2ch/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nextbase-622gw/",
+      "destination": "/categories/dash-cams/nextbase-622gw/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/garmin-dash-cam-67w/",
+      "destination": "/categories/dash-cams/garmin-dash-cam-67w/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/viofo-a119-v3/",
+      "destination": "/categories/dash-cams/viofo-a119-v3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/viofo-a129-pro-duo/",
+      "destination": "/categories/dash-cams/viofo-a129-pro-duo/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/70mai-a810/",
+      "destination": "/categories/dash-cams/70mai-a810/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/redtiger-f7n/",
+      "destination": "/categories/dash-cams/redtiger-f7n/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-z5/",
+      "destination": "/categories/cameras/nikon-z5/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r100/",
+      "destination": "/categories/cameras/canon-eos-r100/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/anbernic-rg35xx-plus-h/",
+      "destination": "/categories/gaming-handhelds/anbernic-rg35xx-plus-h/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-a7r-v/",
+      "destination": "/categories/cameras/sony-a7r-v/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-d3500/",
+      "destination": "/categories/cameras/nikon-d3500/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-zv-e10/",
+      "destination": "/categories/cameras/sony-zv-e10/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-a7-iii/",
+      "destination": "/categories/cameras/sony-a7-iii/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/retroid-pocket-4-pro/",
+      "destination": "/categories/gaming-handhelds/retroid-pocket-4-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/lenovo-tab-m10-plus/",
+      "destination": "/categories/computing-and-tablets/lenovo-tab-m10-plus/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-a6400/",
+      "destination": "/categories/cameras/sony-a6400/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fujifilm-x-s10/",
+      "destination": "/categories/cameras/fujifilm-x-s10/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-eos-r6/",
+      "destination": "/categories/cameras/canon-eos-r6/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/raspberry-pi-4-model-b/",
+      "destination": "/categories/computing-and-tablets/raspberry-pi-4-model-b/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/raspberry-pi-3-model-b-plus/",
+      "destination": "/categories/computing-and-tablets/raspberry-pi-3-model-b-plus/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/raspberry-pi-zero-2-w/",
+      "destination": "/categories/computing-and-tablets/raspberry-pi-zero-2-w/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/reolink-e1-pro/",
+      "destination": "/categories/security-cameras/reolink-e1-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/orange-pi-5/",
+      "destination": "/categories/computing-and-tablets/orange-pi-5/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/lenovo-legion-go-s/",
+      "destination": "/categories/gaming-handhelds/lenovo-legion-go-s/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/gopro-max-2/",
+      "destination": "/categories/action-cameras/gopro-max-2/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-d500/",
+      "destination": "/categories/cameras/nikon-d500/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-a7r/",
+      "destination": "/categories/cameras/sony-a7r/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/insta360-one-x3/",
+      "destination": "/categories/action-cameras/insta360-one-x3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/autel-evo-ii-pro-v3/",
+      "destination": "/categories/drones/autel-evo-ii-pro-v3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/autel-evo-nano-plus/",
+      "destination": "/categories/drones/autel-evo-nano-plus/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/autel-evo-lite-plus/",
+      "destination": "/categories/drones/autel-evo-lite-plus/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/potensic-atom/",
+      "destination": "/categories/drones/potensic-atom/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/potensic-atom-se/",
+      "destination": "/categories/drones/potensic-atom-se/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/skydio-2-plus/",
+      "destination": "/categories/drones/skydio-2-plus/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/skydio-x10/",
+      "destination": "/categories/drones/skydio-x10/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fimi-mini-3/",
+      "destination": "/categories/drones/fimi-mini-3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/holy-stone-hs175d/",
+      "destination": "/categories/drones/holy-stone-hs175d/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/holy-stone-hs720/",
+      "destination": "/categories/drones/holy-stone-hs720/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/holy-stone-hs360s/",
+      "destination": "/categories/drones/holy-stone-hs360s/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/hoverair-x1-pro/",
+      "destination": "/categories/drones/hoverair-x1-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/hoverair-x1-pro-max/",
+      "destination": "/categories/drones/hoverair-x1-pro-max/",
       "permanent": true
     },
     {
       "source": "/devices/iphone-15/",
-      "destination": "/categories/phones/iphone-15/",
+      "destination": "/categories/computing-and-tablets/iphone-15/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/macbook-air/",
+      "destination": "/categories/computing-and-tablets/macbook-air/",
       "permanent": true
     },
     {
       "source": "/devices/iphone-14/",
-      "destination": "/categories/phones/iphone-14/",
+      "destination": "/categories/computing-and-tablets/iphone-14/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/iphone-13/",
+      "destination": "/categories/computing-and-tablets/iphone-13/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ipad-air/",
+      "destination": "/categories/computing-and-tablets/ipad-air/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dji-mini-3/",
+      "destination": "/categories/drones/dji-mini-3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/wyze-cam-v3/",
+      "destination": "/categories/action-cameras/wyze-cam-v3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/iphone-14-pro-max/",
+      "destination": "/categories/computing-and-tablets/iphone-14-pro-max/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ipad-air-3/",
+      "destination": "/categories/computing-and-tablets/ipad-air-3/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/iphone-se/",
+      "destination": "/categories/computing-and-tablets/iphone-se/",
       "permanent": true
     },
     {
       "source": "/devices/samsung-galaxy-s23/",
-      "destination": "/categories/phones/samsung-galaxy-s23/",
+      "destination": "/categories/computing-and-tablets/samsung-galaxy-s23/",
       "permanent": true
     },
     {
       "source": "/devices/google-pixel-8/",
-      "destination": "/categories/phones/google-pixel-8/",
+      "destination": "/categories/computing-and-tablets/google-pixel-8/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/hp-chromebook/",
+      "destination": "/categories/computing-and-tablets/hp-chromebook/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/dell-xps/",
+      "destination": "/categories/computing-and-tablets/dell-xps/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/canon-rebel-t7/",
+      "destination": "/categories/cameras/canon-rebel-t7/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/macbook-pro/",
+      "destination": "/categories/computing-and-tablets/macbook-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ipad-pro/",
+      "destination": "/categories/computing-and-tablets/ipad-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ipad-9th-gen/",
+      "destination": "/categories/computing-and-tablets/ipad-9th-gen/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/windows-laptop/",
+      "destination": "/categories/computing-and-tablets/windows-laptop/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-a1/",
+      "destination": "/categories/cameras/sony-a1/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/nikon-d850/",
+      "destination": "/categories/cameras/nikon-d850/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/analogue-pocket/",
+      "destination": "/categories/retro-handhelds/analogue-pocket/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/msi-claw/",
+      "destination": "/categories/gaming-handhelds/msi-claw/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-ps-vita-sd2vita/",
+      "destination": "/categories/retro-handhelds/sony-ps-vita-sd2vita/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/anbernic-rg556/",
+      "destination": "/categories/retro-handhelds/anbernic-rg556/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/gpd-win-mini/",
+      "destination": "/categories/gaming-handhelds/gpd-win-mini/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/egret-ii-mini/",
+      "destination": "/categories/retro-arcade/egret-ii-mini/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/yupiteru-wdt-510c/",
+      "destination": "/categories/dash-cams/yupiteru-wdt-510c/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/kenwood-drv-mr760/",
+      "destination": "/categories/dash-cams/kenwood-drv-mr760/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/comtec-zdr-035/",
+      "destination": "/categories/dash-cams/comtec-zdr-035/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/cellstar-cs-91fh/",
+      "destination": "/categories/dash-cams/cellstar-cs-91fh/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/fiio-snowsky-echo-mini/",
+      "destination": "/categories/audio-hi-fi/fiio-snowsky-echo-mini/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-nw-a306/",
+      "destination": "/categories/audio-hi-fi/sony-nw-a306/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-nw-zx707/",
+      "destination": "/categories/audio-hi-fi/sony-nw-zx707/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/hiby-r3-ii/",
+      "destination": "/categories/audio-hi-fi/hiby-r3-ii/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/hiby-r4/",
+      "destination": "/categories/audio-hi-fi/hiby-r4/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/astell-kern-sr35/",
+      "destination": "/categories/audio-hi-fi/astell-kern-sr35/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/zoom-h1n-vp/",
+      "destination": "/categories/audio-hi-fi/zoom-h1n-vp/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/zoom-h6/",
+      "destination": "/categories/audio-hi-fi/zoom-h6/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/tascam-dr-05x/",
+      "destination": "/categories/audio-hi-fi/tascam-dr-05x/",
       "permanent": true
     }
   ]

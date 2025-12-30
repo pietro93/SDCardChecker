@@ -110,36 +110,17 @@
                       width="1200" height="350" loading="lazy" />
                  <div class="hero-overlay">
                      <h1 class="hero-title" style="color: #ffffff;">
-                         {{PAGE_TITLE}}
+                         {{DEVICE_NAME_SHORT}}向けの最高のSDカード
                      </h1>
                  </div>
              </div>
 
             <!-- Expert Recommendations Section -->
             <div class="mb-12">
-                <p class="text-xl text-slate-600">{{EXPERT_SUBTITLE}}</p>
+                <p class="text-xl text-slate-600">{{DEVICE_NAME}}の仕様に基づく専門家による推奨情報</p>
             </div>
 
-            <!-- Important Notice for Devices without Native Slot -->
-            {{NO_SLOT_NOTICE}}
-
-            <!-- Answer Box - Quick Result (Dual for readers, Single for cards) -->
-            {{#if REQUIRES_READER}}
-            <div id="recommendations" class="answer-box-container scroll-mt-20 mb-12">
-                <div class="answer-box-dual">
-                    <div class="answer-box-item answer-box-primary">
-                        <p class="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">ステップ1: リーダーを入手</p>
-                        <p class="answer-text text-3xl font-bold text-blue-600 mb-4">{{READER_ANSWER}}</p>
-                        <p class="text-slate-700">{{READER_EXPLANATION}}</p>
-                    </div>
-                    <div class="answer-box-item answer-box-secondary">
-                        <p class="text-sm font-semibold text-green-600 uppercase tracking-wide mb-2">ステップ2: SDカードを選択</p>
-                        <p class="answer-text text-3xl font-bold text-green-600 mb-4">{{CARD_ANSWER}}</p>
-                        <p class="text-slate-700">{{CARD_EXPLANATION}}</p>
-                    </div>
-                </div>
-            </div>
-            {{else}}
+            <!-- Answer Box - Quick Result (Japanese Enhanced) -->
             <div id="recommendations"
                 class="answer-box-ja bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-2xl p-8 mb-12 shadow-sm scroll-mt-20">
                 <p class="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">推奨SDカード</p>
@@ -147,17 +128,13 @@
                 <p class="answer-explanation text-lg text-slate-700 leading-relaxed">{{ANSWER_EXPLANATION}}</p>
                 <p class="manufacturer-note">※ メーカー公式仕様に基づく推奨情報です。詳細は各メーカーの公式ドキュメントをご参照ください。</p>
             </div>
-            {{/if}}
 
             <!-- Requirements Box -->
             {{REQUIREMENTS_BOX}}
 
-            <!-- SD Card Reader Recommendations (for devices without native slot) -->
-            {{READER_RECOMMENDATIONS_SECTION}}
-
             <!-- Specs Grid -->
             <section id="specifications" class="mb-16 scroll-mt-20">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6">{{SPECS_SECTION_TITLE}}</h2>
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">詳細な仕様</h2>
                 <div class="specs-grid grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {{SPECS_HTML}}
                 </div>
@@ -165,10 +142,7 @@
 
             <!-- Recommended Brands Section -->
             <section id="brands" class="mb-16 scroll-mt-20">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6">{{BRANDS_SECTION_TITLE}}</h2>
-                {{#if REQUIRES_READER}}
-                <p class="text-slate-600 mb-6">リーダーを手に入れたら、{{DEVICE_NAME}}で使用するのに最適なSDカードは以下の通りです:</p>
-                {{/if}}
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">トップSDカード推奨情報</h2>
                 <p class="text-xs text-slate-500 mb-4 opacity-70">このウェブサイトにはアフィリエイトリンクが含まれています。当社のリンクを通じて購入された場合、追加料金なしで小額のコミッションを獲得させていただく場合があります。</p>
                 <div class="overflow-x-auto brands-table-container">
                     <table class="brands-table w-full">
@@ -394,86 +368,7 @@
             @apply mt-3 text-slate-700 leading-relaxed;
         }
 
-        /* Dual Answer Box Styling */
-        .answer-box-dual {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .answer-box-item {
-            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-            border: 2px solid #bae6fd;
-            border-radius: 1rem;
-            padding: 2rem;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        }
-
-        .answer-box-primary {
-            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-            border-color: #3b82f6;
-        }
-
-        .answer-box-secondary {
-            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
-            border-color: #10b981;
-        }
-
-        /* Notice Box Styling */
-        .notice-box {
-            @apply bg-amber-50 border-l-4 border-amber-500 rounded-lg p-6 mb-8 shadow-sm;
-        }
-
-        .notice-box-icon {
-            @apply text-amber-600 text-2xl mb-3;
-        }
-
-        .notice-box-title {
-            @apply font-bold text-amber-900 text-lg mb-2;
-        }
-
-        .notice-box-text {
-            @apply text-amber-800 leading-relaxed;
-        }
-
-        /* Reader Card Styling */
-        .reader-card {
-            @apply bg-white rounded-xl border-2 border-slate-200 p-6 hover:border-blue-400 hover:shadow-lg transition-all;
-        }
-
-        .reader-card-header {
-            @apply flex items-start gap-4 mb-4;
-        }
-
-        .reader-card-image {
-            @apply w-24 h-24 object-contain flex-shrink-0;
-        }
-
-        .reader-card-name {
-            @apply font-bold text-slate-900 text-lg mb-2;
-        }
-
-        .reader-card-features {
-            @apply flex flex-wrap gap-2 mb-4;
-        }
-
-        .reader-feature-badge {
-            @apply bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full;
-        }
-
-        .reader-card-cta {
-            @apply bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition-all text-center shadow-md hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2 w-full;
-        }
-
-        /* Mobile Responsiveness for Dual-Answer Box */
-        @media (max-width: 768px) {
-            .answer-box-dual {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        </style>
+    </style>
 </body>
 
 </html>
