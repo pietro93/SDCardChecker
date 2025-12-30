@@ -1,0 +1,80 @@
+[
+  {
+    "id": "eufy-solocam-s340",
+    "name": "Eufy Security SoloCam S340",
+    "category": "セキュリティカメラ",
+    "slug": "eufy-solocam-s340",
+    "searchTerms": [
+      "eufy solocam s340 sd card",
+      "eufy s340 microsd",
+      "solocam storage"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB"
+    },
+    "whySpecs": "SoloCam S340は、パン/チルト機能を備えたデュアルカメラを備えており、ローカルmicroSDカードに記録します。24時間の継続的な記録のため、Eufy公式はHigh 耐久性カード（高耐久性）の使用を推奨しています。これらのカードは、セキュリティカメラの大量の書き込みに耐えるように特に設計されています。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "128GBカードはどのくらいのビデオを保存できますか？",
+        "a": "<b>128GBのHigh 耐久性カードは、約2〜3週間の継続的な記録を保存します。</b> ストレージ消費は記録フレームレート（1080p vs 2K）と圧縮設定に依存します。定期的にバックアップして、古いフッテージを削除してください。"
+      }
+    ],
+    "relatedDevices": [],
+    "notes": "内蔵ソーラーパネルオプション付きの人気のあるワイヤーフリーセキュリティカメラ。Eufy公式はHigh 耐久性指定を推奨しています。"
+  },
+  {
+    "id": "reolink-e1-pro",
+    "name": "Reolink E1 Pro",
+    "category": "セキュリティカメラ",
+    "slug": "reolink-e1-pro",
+    "searchTerms": [
+      "reolink e1 pro sd card",
+      "reolink microsd",
+      "reolink e1 storage"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "The E1 Pro records 4MP/5MP video to a microSD card. Reolink recommends a Class 10 card with a minimum 書き込み速度 of 10 MB/s. Due to the high resolution and constant 記録, a High 耐久性 card is essential for long-term 信頼性.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How do I install the SD card in the Reolink E1 Pro?",
+        "a": "<b>You need to tilt the camera lens all the way up.</b> The microSD card slot is hidden just below the lens. Gently push the card in until it clicks. You will need to format the card within the Reolink app before it can be used for 記録."
+      }
+    ],
+    "relatedDevices": [],
+    "notes": "ベストセラー indoor 2K camera from a major security brand. Reolink's focus on local storage drives high 検索量 for card recommendations. 公式 max capacity is 256GB."
+  }
+]

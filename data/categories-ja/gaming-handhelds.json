@@ -1,0 +1,1341 @@
+[
+  {
+    "id": "nintendo-switch",
+    "name": "Nintendo Switch（ニンテンドースイッチ）",
+    "category": "携帯ゲーム機",
+    "slug": "nintendo-switch",
+    "searchTerms": [
+      "ニンテンドースイッチ",
+      "スイッチ sdカード",
+      "任天堂スイッチ 容量",
+      "スイッチ マイクロsd"
+    ],
+    "sdCard": {
+      "type": "microSD, microSDHC, microSDXC",
+      "minSpeed": "Class 10 / UHS-I (U1)",
+      "minWriteSpeed": "指定なし",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "2TB (理論値)",
+      "testedMaxCapacity": "1.5TB"
+    },
+    "whySpecs": "標準のNintendo SwitchはUHS-Iインターフェースを採用しており、最大速度は約104MB/sに制限されています。そのため、UHS-IIやSD Expressカードを使用しても、ゲームのロード時間は短縮されません。信頼性の高いV30（ビデオスピードクラス30）カードが、デジタルゲームの保存において最も安定したパフォーマンスを発揮します。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "sandisk-ultra-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "1TBのカードは使えますか？",
+        "a": "<b>はい、Nintendo Switchは最大2TBまでのmicroSDXCカードをサポートしています。</b> 現在市販されている1TBや1.5TBのカードも、大容量のゲームライブラリ用として完璧に動作します。"
+      },
+      {
+        "q": "UHS-IIカードを購入する価値はありますか？",
+        "a": "<b>いいえ、UHS-IIカードによる速度の向上はありません。</b> 本体にUHS-II用の接点がないため、カードは自動的に低速なUHS-Iモードで動作します。標準的なUHS-I V30カードで十分です。"
+      },
+      {
+        "q": "Switch 2用に買ったカードは使えますか？",
+        "a": "<b>いいえ、Switch 2はmicroSD Express専用であり、従来のmicroSDカードはゲームプレイに使用できません。</b> 旧型Switchとは互換性がありません。"
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch-oled",
+      "nintendo-switch-lite",
+      "nintendo-switch-2"
+    ],
+    "notes": "Switchは最も要求の低いデバイスの一つです。V30カードが推奨されます。"
+  },
+  {
+    "id": "nintendo-switch-oled",
+    "name": "Nintendo Switch 有機ELモデル",
+    "category": "携帯ゲーム機",
+    "slug": "nintendo-switch-oled",
+    "searchTerms": [
+      "スイッチ 有機EL SDカード",
+      "スイッチ 有機EL ストレージ",
+      "OLED Switch カード"
+    ],
+    "sdCard": {
+      "type": "microSD, microSDHC, microSDXC",
+      "minSpeed": "Class 10 / UHS-I (U1)",
+      "minWriteSpeed": "指定なし",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB (理論値)",
+      "testedMaxCapacity": "1.5TB"
+    },
+    "whySpecs": "有機ELモデルは内蔵ストレージが64GBに増量されていますが、多くのゲームをダウンロードするにはmicroSDカードが不可欠です。本体の仕様によりUHS-I（最大約104MB/s）までの対応となるため、SanDiskやSamsungの大容量UHS-I V30カードが最も費用対効果に優れています。",
+    "recommendedBrands": [
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "lexar-play-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "有機ELモデル用にUHS-IIカードを買うべきですか？",
+        "a": "<b>いいえ、UHS-IIカードによる速度の向上はありません。</b> 本体にUHS-II用の接点がないため、カードは自動的に低速なUHS-Iモードで動作します。"
+      },
+      {
+        "q": "従来のSwitchと同じカードを使用できますか？",
+        "a": "<b>はい、microSDカードは従来のSwitchと有機ELモデル間で完全に互換性があります。</b> どちらのモデルでも同じカード速度とタイプをサポートしています。"
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "nintendo-switch-lite",
+      "nintendo-switch-2"
+    ],
+    "notes": "美しい画面で多くのゲームを楽しみたくなるモデルです。512GB以上のカードを強く推奨します。"
+  },
+  {
+    "id": "nintendo-switch-lite",
+    "name": "Nintendo Switch Lite（ニンテンドースイッチライト）",
+    "category": "携帯ゲーム機",
+    "slug": "nintendo-switch-lite",
+    "searchTerms": [
+      "スイッチライト sdカード",
+      "switch lite ストレージ",
+      "スイッチライト 容量"
+    ],
+    "sdCard": {
+      "type": "microSD, microSDHC, microSDXC",
+      "minSpeed": "Class 10 / UHS-I (U1)",
+      "minWriteSpeed": "指定なし",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "2TB (理論値)",
+      "testedMaxCapacity": "1TB"
+    },
+    "whySpecs": "Switch Liteは携帯専用モデルですが、ストレージ仕様は他のSwitchファミリーと共通です。UHS-Iインターフェースを通じてmicroSDXCカードをサポートしています。持ち運ぶ機会が多いため、データの破損を防ぐために信頼できるブランドのカードを選ぶことが重要です。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Switch LiteのSDスロットは性能が低いですか？",
+        "a": "<b>いいえ、Switch Liteの読み取り・書き込み性能は、標準モデルや有機ELモデルと全く同じです。</b> すべてのSwitchファミリーは同一のmicroSDハードウェアインターフェースを共有しています。"
+      },
+      {
+        "q": "他のSwitchモデルのカードが使えますか？",
+        "a": "<b>はい、完全に互換性があります。</b> どのSwitchモデル用に購入したカードでも、Switch Liteで問題なく動作します。"
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "nintendo-switch-oled",
+      "nintendo-switch-2"
+    ],
+    "notes": "厳選したゲームを持ち運ぶユーザーに適しています。128GBから256GBが最も一般的な選択肢です。"
+  },
+  {
+    "id": "nintendo-switch-2",
+    "name": "Nintendo Switch 2（次世代機）",
+    "category": "携帯ゲーム機",
+    "slug": "nintendo-switch-2",
+    "searchTerms": [
+      "スイッチ2 sdカード",
+      "switch 2 ストレージ",
+      "sd express switch 2"
+    ],
+    "sdCard": {
+      "type": "microSD Express 専用（ゲーム/セーブデータ用）",
+      "minSpeed": "microSD Express (PCIe 3.0 x1以上)",
+      "minWriteSpeed": "V30以上を推奨",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB",
+        "2TB"
+      ],
+      "maxCapacity": "2TB+ (SDXC / SDUC)",
+      "testedMaxCapacity": "2TB"
+    },
+    "whySpecs": "<b>Nintendo Switch 2は、すべてのゲームプレイとセーブデータにmicroSD Expressカードを必須とします。</b> 従来のUHS-I microSDカード（ゼルダ、ポケモン、マリオ、ヨッシー、どうぶつの森、フォートナイト版を含む）は、ゲーム機能には完全に非互換です。古いmicroSDカードを挿入することはできますが、スクリーンショットと動画ファイルの表示のみに制限され、<b>ゲームのプレイやセーブデータの保存はできません</b>。すべてのSwitch 2タイトルをプレイするには、V30以上の速度定格を持つmicroSD Expressカードが必須です。",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-react-plus-microsd"
+      },
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      }
+    ],
+    "faq": [
+      {
+        "q": "旧型SwitchのmicroSDカードをSwitch 2で使えますか？",
+        "a": "<b>いいえ、絶対に使用できません。</b> 古いUHS-I microSDカードを挿入することはできますが、スクリーンショットと動画の表示のみ可能です。<b>ゲームのプレイやセーブデータの保存は完全にできません。</b> すべてのSwitch 2ゲームにはmicroSD Expressカードが必須です。"
+      },
+      {
+        "q": "公式ライセンスカード（ゼルダ、ポケモン、マリオ）はSwitch 2で使えますか？",
+        "a": "<b>スクリーンショットと動画は見られますが、ゲームはプレイできません。</b> すべてのSanDisk公式ライセンスカードはUHS-I microSD規格であり、Switch 2のゲーム機能とは完全に互換性がありません。Switch 2でゲームをプレイするには、V30以上のmicroSD Expressカードが絶対に必要です。"
+      },
+      {
+        "q": "なぜSwitch 2は新しいカード規格が必要ですか？",
+        "a": "<b>次世代ゲームの超大容量データに対応するため。</b> Switch 2のタイトルは、高速なロード時間と高品質グラフィックの実現に、従来のmicroSD（最大104MB/s）をはるかに上回る帯域幅を必要とします。microSD Expressは最大900MB/s以上の速度を提供し、この要件を満たします。"
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "nintendo-switch-oled",
+      "nintendo-switch-lite"
+    ],
+    "notes": "Switch 2はストレージ技術における大きな転換点となります。以前の「ライセンス付き」カードは、この新しいコンソールではゲーム用として機能しません。"
+  },
+  {
+    "id": "nintendo-3ds-xl",
+    "name": "Nintendo 3DS / New 3DS LL",
+    "category": "携帯ゲーム機",
+    "slug": "nintendo-3ds-xl",
+    "searchTerms": [
+      "3ds sdカード",
+      "new 3ds ll sdカード",
+      "3ds メモリーカード",
+      "3ds ll 容量",
+      "ニンテンドー3ds sdカード"
+    ],
+    "sdCard": {
+      "type": "SDHC (公式には32GBまで、SDXCは非公式で動作)",
+      "minSpeed": "Class 10",
+      "minWriteSpeed": "指定なし",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB (非公式、FAT32フォーマット必須)"
+    },
+    "whySpecs": "任天堂は公式に32GBまでのSDHCカードをサポートしていますが、FAT32形式にフォーマットすれば128GB以上（実質的な上限は128GB）のSDXCカードも問題なく動作します。Class 10のカードは、Class 4などの古い規格に比べてゲームのロードやeショップのダウンロード速度を向上させ、全体的な快適さを改善します。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "任天堂は最大32GBと言っていますが、64GBや128GBのカードを使えますか？",
+        "a": "<b>はい、使えます。ただし、まずFAT32形式にフォーマットする必要があります。</b> 64GB以上のSDXCカードは通常exFAT形式で販売されており、そのままでは3DSで読み取れません。PC（Windows、Mac、Linux）を使用してカードをFAT32に再フォーマットすれば、3DSで完璧に動作します。"
+      },
+      {
+        "q": "microSDカードとフルサイズSDカード、どちらが必要ですか？",
+        "a": "<b>初代3DSと3DS LLモデルはフルサイズのSDカードを使用します。</b> 一方、<b>Newニンテンドー3DSとNew 3DS LLモデルはmicroSDカードを使用します。</b> 購入前にお持ちのモデルを確認することが重要です。「New」モデルでは、microSDスロットにアクセスするために小さなドライバーが必要になる場合があります。"
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "nintendo-switch-lite",
+      "anbernic-rg353v"
+    ],
+    "notes": "生産終了となりましたが、レトロゲームや改造（CFW）を楽しむ巨大なコミュニティが存在します。ゲームライブラリの拡張やカスタムファームウェアの利用を目的とした検索需要が高いです。"
+  },
+  {
+    "id": "anbernic-rg353v",
+    "name": "Anbernic RG353V",
+    "category": "携帯ゲーム機",
+    "slug": "anbernic-rg353v",
+    "searchTerms": [
+      "anbernic rg353v",
+      "rg353v sdカード",
+      "anbernic sdカード",
+      "anbernic rg353v メモリーカード",
+      "rg35xx sdカード"
+    ],
+    "sdCard": {
+      "type": "デュアルmicroSD (OS用とゲーム用に分離)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A2 (OS用カード)",
+      "recommendedCapacity": [
+        "OS用に32GB-64GB",
+        "ゲーム用に256GB-512GB"
+      ],
+      "maxCapacity": "公式制限なし、ゲーム用は1TB以上も動作"
+    },
+    "whySpecs": "独自のデュアルmicroSDスロット設計を採用しており、1つはOS（EmuELECやAndroidなど）専用、もう1つはゲームROM専用です。OS用カードにはA2アプリケーションパフォーマンス定格のカードを使用すると、起動時間の短縮、メニュー操作の円滑化、読み込みの高速化に大きく貢献します。ゲーム用カードは、レトロゲームの多くが低速メディアでも問題なくロードできるため、標準的なU1/Class 10カードで十分です。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "本当に2枚のSDカードが必要ですか？",
+        "a": "<b>はい、Anbernic RG353Vには物理的に独立した2つのmicroSDスロットがあります。</b> スロット1（通常「TF1」または「OS」と表記）はOS用、スロット2（「TF2」または「Game」）はゲームROM用です。1枚のカードをパーティション分割して使うことはできず、2枚の個別のカードを使用する必要があります。"
+      },
+      {
+        "q": "2枚のカードの容量配分はどうすればいいですか？",
+        "a": "理想的なセットアップは、<b>OS用に32-64GBのA2定格カード</b>、<b>ゲーム用に256GB-512GBのU1定格カード</b>を使用することです。OS用カードは容量よりも速度（A2定格）を優先し、ゲーム用カードは（レトロゲームのファイルサイズは小さいため）大量のライブラリを保存するための容量を優先すべきです。"
+      }
+    ],
+    "relatedDevices": [
+      "miyoo-mini-plus",
+      "nintendo-3ds-xl",
+      "steam-deck"
+    ],
+    "notes": "エミュレーション界隈で人気のある縦型レトロハンドヘルド機で、携帯性とデュアルブート機能が知られています。レトロゲーム愛好家や改造コミュニティからの検索需要が高いです。"
+  },
+  {
+    "id": "asus-rog-ally-x",
+    "name": "ASUS ROG Ally X（アールオージー エイライ エックス）",
+    "category": "携帯ゲーム機",
+    "slug": "asus-rog-ally-x",
+    "searchTerms": [
+      "rog ally x sdカード",
+      "rog ally x microsd",
+      "rog ally x 容量",
+      "asus rog ally x メモリーカード"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "ROG Ally Xは高速なUHS-IIカードリーダーを搭載し、Windowsを実行するため、OSの応答性にはA1アプリパフォーマンスが重要です。これにより、UHS-Iデバイスと比較してゲームのロード時間が大幅に短縮されます。最新の大容量PCゲームを快適にプレイするにはV60以上のカードが最適ですが、A1定格のV30カードが実用的な最低ラインとなります。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-rog-ally-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ally XのSDカードは初代Allyより速いですか？",
+        "a": "<b>はい、Ally XはUHS-II速度をサポートする改良された信頼性の高いリーダーを搭載しており、初代Allyの一部で見られた熱問題に対処しています。</b> UHS-IIカードを使用することで、ゲームのロードやファイル転送が体感できるほど高速化します。"
+      },
+      {
+        "q": "本当にUHS-IIカードが必要ですか？UHS-Iでは不十分ですか？",
+        "a": "<b>Ally XにおいてUHS-IIは大きな違いを生みます。</b> UHS-Iカードと比較して、ゲームのロード時間が30〜50%短縮される場合があります。SDカードから直接大規模なAAAタイトルを頻繁にプレイする場合、UHS-IIによる速度向上は追加コストに見合う価値があります。"
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally",
+      "steam-deck",
+      "lenovo-legion-go"
+    ],
+    "notes": "2024年中頃にリリースされた初代ROG Allyのアップグレード版で、バッテリー寿命の向上、冷却の改善、そしてより堅牢なUHS-II microSDカードリーダーが特徴です。公式のSanDisk ROG Ally microSDカードはこのデバイスに最適化されています。",
+    "imageUrl": "/img/devices/gaming-consoles/asus-rog-ally.webp"
+  },
+  {
+    "id": "lenovo-legion-go",
+    "name": "Lenovo Legion Go（レノボ レギオン ゴー）",
+    "category": "携帯ゲーム機",
+    "slug": "lenovo-legion-go",
+    "searchTerms": [
+      "lenovo legion go sdカード",
+      "legion go microsd",
+      "legion go 容量",
+      "lenovo legion go メモリーカード"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "8.8インチの大型ディスプレイと着脱式コントローラーを備えたWindows携帯ゲーム機です。microSDカードのA2アプリケーションパフォーマンス定格は、カードから直接ゲームを実行する際のロード時間と全体的なシステム応答性を大幅に向上させます。大画面とWindows OSはAAAゲームのプレイに適しており、それには大容量のストレージが必要となります。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Legion GoとROG Ally、どちらのSDカード性能が優れていますか？",
+        "a": "<b>ASUS ROG Ally XはUHS-IIカードリーダーを搭載していますが、Lenovo Legion GoはUHS-Iスロットを採用しています。</b> つまり、ロード時間の速さではUHS-IIカードを使えるAlly Xに軍配が上がります。しかし、Legion Goは大画面や着脱式コントローラーといった独自の機能があり、ユーザーの好みが分かれます。どちらのデバイスも、最新ゲームのためには大容量（512GB以上）のA2定格カードが大いに役立ちます。"
+      },
+      {
+        "q": "Legion GoでPCゲームをするには、どのくらいの容量が必要ですか？",
+        "a": "<b>512GBが良い最低ラインですが、最新のPCゲームを多数保存するには1TBを強く推奨します。</b> 多くのAAAタイトルは1本で容易に100GBを超えます。Legion GoのWindows OSは柔軟なストレージ管理が可能ですが、いくつかの大作を入れるとmicroSDカードの空き容量はすぐに埋まってしまうため、大容量カードへの投資は賢明な選択です。"
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally",
+      "asus-rog-ally-x",
+      "steam-deck"
+    ],
+    "notes": "2023年後半にリリースされたLenovo Legion Goは、独自の着脱式コントローラーと現在のWindowsハンドヘルド機の中で最大の画面で知られています。microSDスロットはUHS-I規格です（UHS-IIを搭載する新しいROG Ally Xとは異なります）。",
+    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go.webp"
+  },
+  {
+    "id": "miyoo-mini-plus",
+    "name": "Miyoo Mini Plus（ミヨー ミニ プラス）",
+    "category": "携帯ゲーム機",
+    "slug": "miyoo-mini-plus",
+    "searchTerms": [
+      "miyoo mini plus sdカード",
+      "miyoo mini plus microsd",
+      "miyoo mini 容量",
+      "miyoo mini plus メモリーカード"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB+"
+    },
+    "whySpecs": "超小型のレトロゲームハンドヘルド機です。ほとんどのレトロゲームはファイルサイズが小さく、標準のClass 10カードでも素早くロードできますが、A1アプリケーション定格のカードを使用すると、メニュー操作やカスタムファームウェアの読み込みなど、システム全体の応答性が大幅に向上します。これにより、この人気デバイスのユーザー体験がさらに良くなります。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Miyoo Mini Plusはなぜそんなに人気があるのですか？",
+        "a": "<b>Miyoo Mini Plusは非常に小さく、安価で、プレイステーション1までの膨大なレトロゲームを完璧にプレイできる点で優れています。</b> ゲームボーイポケットサイズのデザインは携帯性に非常に優れています。「OnionOS」などの活発なカスタムファームウェアコミュニティが機能と使い勝手をさらに向上させており、カルト的な人気を博しています。"
+      },
+      {
+        "q": "レトロゲーム用にどれくらいの容量が必要ですか？",
+        "a": "<b>64GBのカードには数千本の8ビットおよび16ビットゲームが入りますが、多くのユーザーにとっては128GBが最適な容量（スイートスポット）とされています。</b> もしプレイステーション1のゲーム（通常1本500MB〜700MB）を大量にコレクションしたい場合は、余裕を持って収めるために256GBのカードを検討すると良いでしょう。"
+      }
+    ],
+    "relatedDevices": [
+      "anbernic-rg353v",
+      "nintendo-3ds-xl"
+    ],
+    "notes": "カルト的な人気を誇るポケットサイズのレトロハンドヘルド機です。特にOnionOSのようなカスタムファームウェアや活発なレトロゲームコミュニティに関心のあるユーザーからの検索が非常に多いデバイスです。"
+  },
+  {
+    "id": "anbernic-rg35xx-plus",
+    "name": "Anbernic RG35XX Plus / H",
+    "category": "携帯ゲーム機",
+    "slug": "anbernic-rg35xx-plus-h",
+    "searchTerms": [
+      "rg35xx plus sdカード",
+      "rg35xx h microsd",
+      "rg35xx garlicos sdカード"
+    ],
+    "sdCard": {
+      "type": "デュアルmicroSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1 (OS用スロット)",
+      "recommendedCapacity": [
+        "OS用に16GB-32GB",
+        "ゲーム用に128GB-256GB"
+      ],
+      "maxCapacity": "512GB 動作確認済み"
+    },
+    "whySpecs": "2つのmicroSDスロットを備えています。スロット1はオペレーティングシステム（OS）用で、ここにA1アプリケーション定格のカードを使用すると、メニューの速度とシステムの応答性が大幅に向上します。スロット2はゲーム用で、標準的な大容量カードが適しています。デバイスに付属している低品質なカードは、信頼できるブランドのものに交換することを強く推奨します。",
+    "recommendedBrands": [
+      {
+        "id": "kingston-canvas-go-plus-ultra"
+      },
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "transcend-standard-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "RG35XXに付属のSDカードは交換すべきですか？",
+        "a": "<b>はい、すぐに交換してください。</b> これらのデバイスに同梱されている在庫のSDカードは非常に低品質で、故障しやすい傾向があります。信頼できる体験を得るために、SanDiskやSamsungなどの有名ブランドの新しいカードを2枚購入してください。"
+      }
+    ],
+    "relatedDevices": [
+      "miyoo-mini-plus",
+      "anbernic-rg353v"
+    ],
+    "notes": "非常に人気のある低価格帯のレトロハンドヘルド機です。Plus（縦型）とH（横型）モデルは同じカード要件を共有しています。"
+  },
+  {
+    "id": "retroid-pocket-4-pro",
+    "name": "Retroid Pocket 4 / 4 Pro",
+    "category": "携帯ゲーム機",
+    "slug": "retroid-pocket-4-pro",
+    "searchTerms": [
+      "retroid pocket 4 pro sdカード",
+      "rp4 pro microsd",
+      "retroid pocket 4 容量"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB+ 動作確認済み"
+    },
+    "whySpecs": "レトロハンドヘルド機の場合、特にカスタムフロントエンドを使用する際のOSやメニューのパフォーマンスを高速化するために、A1定格のカードが推奨されます。ゲーム用には標準的なClass 10カードでも動作しますが、A1定格は全体的なユーザー体験を向上させます。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Retroid Pocket 4 Proにはどれくらいの大きさのmicroSDカードが必要ですか？",
+        "a": "<b>多くのユーザーにとって128GBまたは256GBが最適な容量です。</b> これにより、数千本の8/16ビットタイトルに加え、容量を食うPS1、ドリームキャスト、ゲームキューブなどのゲームライブラリも十分に保存できます。"
+      }
+    ],
+    "relatedDevices": [
+      "anbernic-rg353v",
+      "miyoo-mini-plus",
+      "steam-deck"
+    ],
+    "notes": "非常に人気のあるレトロゲームハンドヘルド機です。コミュニティは大規模で、パフォーマンスや設定ガイドの検索において非常に活発です。"
+  },
+  {
+    "id": "lenovo-legion-go-s",
+    "name": "Lenovo Legion Go S",
+    "category": "携帯ゲーム機",
+    "slug": "lenovo-legion-go-s",
+    "searchTerms": [
+      "lenovo legion go s",
+      "legion go s sdカード",
+      "legion go s microsd",
+      "legion go s 容量"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB (理論値、1TBが一般的)"
+    },
+    "whySpecs": "Legion Go SはUHS-I microSDリーダーを使用しているため、UHS-IIカードを挿入してもピーク転送速度は90〜100 MB/s程度で頭打ちになります。A2アプリケーション定格を持つU3 / V30カードであれば、WindowsやSteamOSのゲームをカードから直接実行するのに十分なシーケンシャルおよびランダム性能が得られ、ロード時間が苦痛になることはありません。最近のPCタイトルは非常にサイズが大きいため、512GB〜1TBが実用的なラインです。それ以下の容量だとAAAゲームをインストールし始めるとすぐに一杯になってしまいます。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "UHS-II microSDカードを使えば、Legion Go Sでのゲームロードは速くなりますか？",
+        "a": "<b>いいえ、Legion Go SのカードリーダーはUHS-I速度に制限されています。</b> UHS-IIカードはこのスロットではUHS-Iモードで動作するため、高速なUHS-I V30カードと同じ挙動になり、デバイス内での帯域幅は増えません。すでにUHS-IIカードをお持ちの場合は使用できますが、このハンドヘルド機のためにわざわざ高価なUHS-IIを購入するのは費用対効果が良くありません。"
+      },
+      {
+        "q": "大規模なオープンワールドゲームをSDカードから完全に実行できますか？",
+        "a": "<b>はい、可能ですが、パフォーマンスは選ぶカードに大きく依存します。</b> 優れたA2定格のV30カードであれば多くのAAAゲームをまともに扱えますが、ヘビーなストリーミング（巨大なテクスチャや広大なマップ）を行うオープンワールドタイトルでは、内蔵SSDに比べてロードが明らかに遅くなります。microSDはメインのパフォーマンスドライブとしてではなく、あくまで予備のライブラリ領域として扱うのが良いでしょう。"
+      },
+      {
+        "q": "Legion Go SにはどのくらいのSDカード容量が適していますか？",
+        "a": "<b>512GBが良い最低ラインで、ほとんどのプレイヤーには1TBが理想的です。</b> 最近のPCゲームには1本で100GBを超えるものも少なくありません。パッチやDLCを含めると、256GBのカードではすぐに窮屈に感じてしまいます。予算が許せば、1TBカードを選ぶことで、常にインストールとアンインストールを繰り返す手間を省けます。"
+      }
+    ],
+    "relatedDevices": [
+      "steam-deck"
+    ],
+    "notes": "UHS-I microSDスロットを搭載したSteamOSベースのWindowsハンドヘルドバリエーションです。ベンチマークの最高速度を目指すというよりは、主にゲームストレージの拡張用に設計されています。",
+    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go-s.webp"
+  },
+  {
+    "id": "steam-deck",
+    "name": "Steam Deck（スチームデック）",
+    "category": "携帯ゲーム機",
+    "slug": "steam-deck",
+    "searchTerms": [
+      "スチームデック",
+      "steam deck sdカード",
+      "スチームデックス",
+      "デック microSD"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (UHS-II 非対応)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "2TB (理論値)",
+      "testedMaxCapacity": "1TB"
+    },
+    "whySpecs": "Steam DeckはUHS-Iインターフェースを使用し、カードからSteamOSを実行するため、OSの応答性にはA1アプリケーションパフォーマンスが重要です。ゲームにはV30で十分ですが、A1のランダムIOPSは必須です。V30定格かつA1分類の信頼できるブランドを選んでください。",
+    "recommendedBrands": [
+      {
+        "id": "kingston-canvas-go-plus-ultra"
+      },
+      {
+        "id": "adata-premier-pro-microsd"
+      },
+      {
+        "id": "sandisk-ultra-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "高速なV60カードは使えますか？",
+        "a": "<b>はい、V60以上のmicroSDカードもSteam Deckで問題なく動作します。</b> しかし、<b>デバイスのUHS-Iインターフェースが速度を制限するため</b>、Steam Deckでのゲームプレイにおいて、より高速なカードによる実用的な利点はV30カードと比較してありません。"
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "asus-rog-ally"
+    ],
+    "notes": "Steam DeckはUHS-Iのみ対応です。V30カードで十分です。ゲームライブラリ用には256GB以上を推奨します。"
+  },
+  {
+    "id": "asus-rog-ally",
+    "name": "ASUS ROG Ally",
+    "category": "携帯ゲーム機",
+    "slug": "asus-rog-ally",
+    "searchTerms": [
+      "asus rog ally sdカード",
+      "rog ally microsd",
+      "rog ally メモリカード",
+      "エイリアンウェア sd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "ROG Allyは高速なUHS-IIカードリーダーを搭載しています。ゲームのロード時間を最小限に抑え、ファイル転送を高速化するために、UHS-IIカードの使用を強く推奨します。安定したパフォーマンスにはV30スピードクラスが最低条件です。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-rog-ally-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "ROG Allyには高速なUHS-IIカードを使うべきですか？",
+        "a": "<b>はい、最高のパフォーマンスを求めるなら絶対にお勧めします。</b> ROG AllyのUHS-IIリーダーはカードの速度を最大限に活かし、ゲームのロード時間を短縮します。低速なUHS-Iカードも動作しますが、パフォーマンスのボトルネックになります。"
+      },
+      {
+        "q": "ROG Allyに最適な容量は？",
+        "a": "<b>512GBまたは1TBが多くのユーザーにとって最適解です。</b> 最新のPCゲームは非常に容量が大きいため、これくらいの容量があればストレージ管理に悩まされることなく、多くのAAAタイトルを保存できます。"
+      }
+    ],
+    "relatedDevices": [
+      "steam-deck",
+      "nintendo-switch-oled",
+      "nintendo-switch"
+    ],
+    "notes": "一部のユニットでは排気熱がSDカードリーダーに影響を与える可能性があります。信頼性とパフォーマンスのために、高品質で評判の良いUHS-IIカードを使用することが重要です。"
+  },
+  {
+    "id": "nintendo-switch-lite",
+    "name": "Nintendo Switch Lite",
+    "category": "携帯ゲーム機",
+    "slug": "nintendo-switch-lite",
+    "searchTerms": [
+      "nintendo switch lite sd card",
+      "switch lite memory card",
+      "switch lite storage"
+    ],
+    "sdCard": {
+      "type": "microSD, microSDHC, microSDXC",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "Not specified",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "2TB (theoretical)",
+      "testedMaxCapacity": "1TB"
+    },
+    "whySpecs": "Switch Liteは従来のSwitchと同じストレージ要件を持っています。高速カードは必須ではありませんが、信頼できるブランドのカードを選ぶことで、すべてのゲームデータの信頼性とカードの寿命が確保されます。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Switch LiteのSDカードスロットは他と違いますか？",
+        "a": "<b>いいえ、SDカードスロットとその速度機能は、標準のNintendo Switchと有機ELモデルと同じです。</b> 一つのモデルで動作するカードは、他のモデルでも動作します。"
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "nintendo-switch-oled"
+    ],
+    "notes": "Switchファミリーのラインアップを完成させます。他のモデルと同じ要件です。"
+  },
+  {
+    "id": "nintendo-3ds-xl",
+    "name": "Nintendo 3DS / New 3DS XL",
+    "category": "携帯ゲーム機",
+    "slug": "nintendo-3ds-xl",
+    "searchTerms": [
+      "3ds sd card",
+      "new 3ds xl sd card",
+      "3ds memory card",
+      "3ds xl storage",
+      "nintendo 3ds sd card"
+    ],
+    "sdCard": {
+      "type": "SDHC (officially up to 32GB, SDXC works unofficially)",
+      "minSpeed": "Class 10",
+      "minWriteSpeed": "Not specified",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB (unofficial, requires FAT32 formatting)"
+    },
+    "whySpecs": "任天堂は公式に32GBまでのSDHCカードをサポートしていますが、SDXCカードは128GBまで（FAT32形式にフォーマット）対応しています。任天堂は技術的には2TB対応と記載していますが、実際のテスト結果は128GBまでです。Class 10カードはロード時間を大幅に改善します。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "任天堂は32GB最大と言っていますが、64GBまたは128GBのカードを使用できますか？",
+        "a": "<b>はい、ただしまずFAT32形式にフォーマットする必要があります。</b> 64GB以上のSDXCカードは通常exFAT形式で販売されており、そのままでは3DSで読み取れません。PCでFAT32に再フォーマットすれば、3DSで完璧に動作します。"
+      },
+      {
+        "q": "microSDカードとフルサイズSDカード、どちらが必要ですか？",
+        "a": "<b>初代3DSと3DS LLはフルサイズSDカードを使用します。</b> <b>Newニンテンドー3DSとNew 3DS LLはmicroSDカードを使用します。</b> 購入前にモデルを確認することが重要です。"
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "nintendo-switch-lite",
+      "anbernic-rg353v"
+    ],
+    "notes": "2020年に生産終了しましたが、レトログゲームと改造（CFW）の活発なコミュニティがあります。"
+  },
+  {
+    "id": "anbernic-rg353v",
+    "name": "Anbernic RG353V",
+    "category": "携帯ゲーム機",
+    "slug": "anbernic-rg353v",
+    "searchTerms": [
+      "anbernic rg353v",
+      "rg353v sd card",
+      "anbernic sd card",
+      "anbernic rg353v memory card",
+      "rg35xx sd card"
+    ],
+    "sdCard": {
+      "type": "Dual microSD (separate slots for OS and games)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A2 (for OS card)",
+      "recommendedCapacity": [
+        "32GB-64GB for OS",
+        "256GB-512GB for games"
+      ],
+      "maxCapacity": "No official limit, 1TB+ works for games"
+    },
+    "whySpecs": "ユニークなデュアルmicroSDスロット設計があります。1つはOS専用、もう1つはゲームROM専用です。OS用スロットにはA2アプリケーションパフォーマンス定格のカードを使用することで、スタートアップ時間、メニュー操作、ロード速度が大幅に向上します。ゲーム用スロットは標準的なU1 / Class 10カードで十分です。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "本当に2枚のカードが必要ですか？",
+        "a": "<b>はい、Anbernic RG353Vには物理的に独立した2つのmicroSDスロットがあります。</b> スロット1はOS用、スロット2はゲーム用です。1枚のカードをパーティション分割して使うことはできず、2枚の個別カードが必要です。"
+      },
+      {
+        "q": "2枚のカードの容量分配はどうすればいいですか？",
+        "a": "理想的なセットアップは、<b>OS用に32〜64GBのA2定格カード</b>、<b>ゲーム用に256〜512GBのU1定格カード</b>を使用することです。OS用は容量よりも速度を優先し、ゲーム用は大量のライブラリを保存するための容量を優先してください。"
+      }
+    ],
+    "relatedDevices": [
+      "miyoo-mini-plus",
+      "nintendo-3ds-xl",
+      "steam-deck"
+    ],
+    "notes": "エミュレーションコミュニティで人気のある縦型レトロハンドヘルド機。ポータビリティとデュアルブート機能で知られています。"
+  },
+  {
+    "id": "asus-rog-ally-x",
+    "name": "ASUS ROG Ally X",
+    "category": "携帯ゲーム機",
+    "slug": "asus-rog-ally-x",
+    "searchTerms": [
+      "rog ally x sd card",
+      "ally x microsd",
+      "rog ally x storage",
+      "asus rog ally x memory card"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "ROG Ally Xは高速UHS-IIカードリーダーを搭載し、Windowsを実行します。A1アプリケーションパフォーマンスはOS応答性に重要です。UHS-IIカードを使用することで、ゲームロード時間が大幅に短縮されます。V30 + A1定格のカードが実用的な最小要件です。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-rog-ally-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ally Xは元のAllyよりもSDカード面で高速ですか？",
+        "a": "<b>はい、Ally XはUHS-II速度をサポートする改良された信頼性の高いリーダーを搭載しており、</b>初代Allyで見られた熱問題に対処しています。UHS-IIカードはゲームのロードとファイル転送を大幅に加速します。"
+      },
+      {
+        "q": "本当にUHS-IIカードが必要ですか？UHS-Iでは不十分ですか？",
+        "a": "<b>Ally XにおいてUHS-IIは大きな違いを生みます。</b> UHS-Iと比較して、ゲームロード時間が30～50%短縮される場合があります。大規模なAAAタイトルを頻繁にプレイする場合、UHS-IIの速度向上は追加コストに見合う価値があります。"
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally",
+      "steam-deck",
+      "lenovo-legion-go"
+    ],
+    "notes": "2024年中頃にリリースされた初代ROG Allyのアップグレード版で、バッテリー寿命の向上、冷却改善、より堅牢なUHS-II microSDカードリーダーが特徴です。"
+  },
+  {
+    "id": "lenovo-legion-go",
+    "name": "Lenovo Legion Go",
+    "category": "携帯ゲーム機",
+    "slug": "lenovo-legion-go",
+    "searchTerms": [
+      "lenovo legion go sd card",
+      "legion go microsd",
+      "legion go storage",
+      "lenovo legion go memory card"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Lenovo Legion Goは、8.8インチの大型ディスプレイと着脱式コントローラーを備えたWindows携帯ゲーム機です。microSDカードのA2アプリケーションパフォーマンス定格は、カードから直接ゲームを実行する際のロード時間と全体的なシステム応答性を大幅に向上させます。大画面とWindows OSはAAAゲームのプレイに適しており、大容量のストレージが必要となります。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Legion GoとROG Ally、どちらのSDカード性能が優れていますか？",
+        "a": "<b>ASUS ROG Ally XはUHS-IIカードリーダーを搭載していますが、Lenovo Legion GoはUHS-Iスロットを採用しています。</b> ロード時間の速さではUHS-IIカードを使えるAlly Xに軍配が上がります。しかし、Legion Goは大画面や着脱式コントローラーといった独自の機能があり、ユーザーの好みが分かれます。"
+      },
+      {
+        "q": "Legion GoでPCゲームをするには、どのくらいの容量が必要ですか？",
+        "a": "<b>512GBが良い最低ラインですが、最新のPCゲームを多数保存するには1TBを強く推奨します。</b> 多くのAAAタイトルは1本で容易に100GBを超えます。Legion GoのWindows OSは柔軟なストレージ管理が可能ですが、いくつかの大作を入れるとmicroSDカードの空き容量はすぐに埋まってしまいます。"
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally",
+      "asus-rog-ally-x",
+      "steam-deck"
+    ],
+    "notes": "2023年後半にリリースされたLenovo Legion Go。独自の着脱式コントローラーと大型スクリーンで知られています。"
+  },
+  {
+    "id": "miyoo-mini-plus",
+    "name": "Miyoo Mini Plus",
+    "category": "携帯ゲーム機",
+    "slug": "miyoo-mini-plus",
+    "searchTerms": [
+      "miyoo mini plus sd card",
+      "miyoo mini plus microsd",
+      "miyoo mini storage",
+      "miyoo mini plus memory card"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB+"
+    },
+    "whySpecs": "超小型のレトロゲームハンドヘルド機です。ほとんどのレトロゲームはファイルサイズが小さく、標準的なClass 10カードでも素早くロードできますが、A1アプリケーション定格のカードを使用すると、メニュー操作やカスタムファームウェアの読み込みなど、システム全体の応答性が大幅に向上します。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Miyoo Mini Plus はなぜそんなに人気があるのですか？",
+        "a": "<b>Miyoo Mini Plusは非常に小さく、安価で、プレイステーション1までの膨大なレトログゲームを完璧にプレイできる点で優れています。</b> ゲームボーイポケットサイズのデザインは携帯性に非常に優れています。"
+      },
+      {
+        "q": "Miyoo Mini Plus に推奨される容量は何ですか？",
+        "a": "<b>64GBまたは128GBが最適です。</b> 数千のレトログゲームを保存でき、ほとんどのユーザーに十分です。512GB カードもサポートされています。"
+      }
+    ],
+    "relatedDevices": [
+      "anbernic-rg353v",
+      "nintendo-3ds-xl"
+    ],
+    "notes": "カルト的な人気を誇るポケットサイズのレトロハンドヘルド機。活発なレトロゲームコミュニティで非常に人気があります。"
+  },
+  {
+    "id": "anbernic-rg35xx-plus",
+    "name": "Anbernic RG35XX Plus / H",
+    "category": "携帯ゲーム機",
+    "slug": "anbernic-rg35xx-plus-h",
+    "searchTerms": [
+      "rg35xx plus sd card",
+      "rg35xx h microsd",
+      "rg35xx garlicos sd card"
+    ],
+    "sdCard": {
+      "type": "Dual microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1 (for OS slot)",
+      "recommendedCapacity": [
+        "16GB-32GB for OS",
+        "128GB-256GB for Games"
+      ],
+      "maxCapacity": "512GB tested"
+    },
+    "whySpecs": "2つのmicroSDスロットを備えています。スロット1はオペレーティングシステム（OS）用で、ここにA1アプリケーション定格のカードを使用すると、メニューの速度とシステムの応答性が大幅に向上します。スロット2はゲーム用で、標準的な大容量カードが適しています。",
+    "recommendedBrands": [
+      {
+        "id": "kingston-canvas-go-plus-ultra"
+      },
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "transcend-standard-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "RG35XX Plusのカードをすぐに交換すべきですか？",
+        "a": "<b>はい、すぐに交換してください。</b> これらのデバイスに同梱されている在庫のSDカードは非常に低品質で、故障しやすい傾向があります。信頼できる体験を得るために、SanDiskやSamsungなどの信頼できるブランドに交換してください。"
+      },
+      {
+        "q": "RG35XX Plus Hは同じカード要件を持っていますか？",
+        "a": "<b>はい、Plus（縦型）とH（横型）モデルは同じカード要件を共有しています。</b> どちらも2つのmicroSDスロットを持っており、同じA1とU1定格が推奨されます。"
+      }
+    ],
+    "relatedDevices": [
+      "miyoo-mini-plus",
+      "anbernic-rg353v"
+    ],
+    "notes": "極めて人気のある低価格帯のレトロハンドヘルド機。Plus（縦型）とH（横型）モデルは同じカード要件を共有しています。"
+  },
+  {
+    "id": "retroid-pocket-4-pro",
+    "name": "Retroid Pocket 4 / 4 Pro",
+    "category": "携帯ゲーム機",
+    "slug": "retroid-pocket-4-pro",
+    "searchTerms": [
+      "retroid pocket 4 pro sd card",
+      "rp4 pro microsd",
+      "retroid pocket 4 storage"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB+ tested"
+    },
+    "whySpecs": "レトロハンドヘルド向けにはA1定格カードが推奨されます。OS起動とメニュー表示が高速になり、カスタムフロントエンド使用時に特に有効です。標準的なClass 10カードでもゲームは動作しますが、A1定格はユーザーエクスペリエンス全体を大幅に向上させます。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Retroid Pocket 4 ProにはどのサイズのmicroSDカードが必要ですか？",
+        "a": "<b>128GBまたは256GBカードが、ほとんどのユーザーに最適です。</b> これにより、数千の8/16ビットゲーム、および要求の厳しいPS1、Dreamcast、GameCubeゲームの大規模ライブラリを十分に保存できます。"
+      }
+    ],
+    "relatedDevices": [
+      "anbernic-rg353v",
+      "miyoo-mini-plus",
+      "steam-deck"
+    ],
+    "notes": "非常に人気がある レトロゲーム ハンドヘルド. The community is large and very active in searching for performance and setup guides."
+  },
+  {
+    "id": "lenovo-legion-go-s",
+    "name": "Lenovo Legion Go S",
+    "category": "携帯ゲーム機",
+    "slug": "lenovo-legion-go-s",
+    "searchTerms": [
+      "lenovo legion go s",
+      "legion go s sd card",
+      "legion go s microsd",
+      "legion go s storage"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB (theoretical, 1TB commonly used)"
+    },
+    "whySpecs": "Legion Go S uses a UHS-I microSD reader, so peak throughput tops out around 90–100 MB/s even if you insert a UHS-II card. A U3 / V30 card with an A2 application rating gives enough シーケンシャル and random performance to run Windows or SteamOS games directly from the card without painfully long load times. Modern PC titles are very large, so 512GB to 1TB is the practical sweet spot; anything smaller fills very quickly once you start installing AAA games.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Will a UHS-II microSD card make games load faster on Legion Go S?",
+        "a": "<b>No, the reader in the Legion Go S is limited to UHS-I speeds.</b> UHS-II cards fall back to UHS-I mode in this slot, so they behave like a fast UHS-I V30 card but offer no extra in‑device bandwidth. If you already own a UHS-II card it will work, but buying UHS-II specifically for this ハンドヘルド is usually not cost‑effective."
+      },
+      {
+        "q": "Can I run big open‑world games entirely from the SD card?",
+        "a": "<b>Yes, but performance depends heavily on the card you choose.</b> A good A2‑rated V30 card can handle many AAA games respectably, but open‑world titles with heavy streaming (large textures, big maps) will still load notably slower than from the internal SSD. Treat the microSD more as an overflow library than as your primary performance drive."
+      },
+      {
+        "q": "What SD card capacity makes sense for Legion Go S?",
+        "a": "<b>512GB is a good minimum, and 1TB is ideal for most players.</b> A handful of current PC games can exceed 100GB each; with patches and DLC, a 256GB card can feel cramped very quickly. If your budget allows, a 1TB card avoids constant uninstall/reinstall juggling."
+      }
+    ],
+    "relatedDevices": [
+      "steam-deck"
+    ],
+    "notes": "SteamOS-based Windows ハンドヘルド variant with a UHS-I microSD slot. Designed primarily for game storage expansion rather than raw benchmark speeds."
+  },
+  {
+    "id": "msi-claw",
+    "name": "MSI Claw",
+    "category": "携帯ゲーム機",
+    "slug": "msi-claw",
+    "searchTerms": [
+      "msi claw sdカード",
+      "msi claw a1m メモリカード",
+      "msi claw 容量不足",
+      "msi claw おすすめ sd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "U3 / A2",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "MSI ClawはWindows搭載のゲーム機であり、AAAタイトルの重いデータを扱います。ゲームの快適なロードとインストールのために、「A2」規格（アプリケーションパフォーマンスクラス2）に対応したカードが推奨されます。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd"
+      },
+      {
+        "id": "lexar-play-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "MSI ClawはUHS-IIに対応していますか？",
+        "a": "<b>いいえ、基本モデル（A1M）のカードリーダーはUHS-I規格です。</b> 高価なUHS-IIカードも使用できますが、速度はUHS-Iの上限に制限されます。コストパフォーマンスの良い大容量UHS-I A2カードを選ぶのが正解です。"
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally",
+      "steam-deck"
+    ],
+    "notes": "初期のドライバではSDカードの認識に問題がある場合があるため、MSI Center Mで最新アップデートを適用してください。"
+  },
+  {
+    "id": "anbernic-rg556",
+    "name": "Anbernic RG556",
+    "category": "中華ゲーム機",
+    "slug": "anbernic-rg556",
+    "searchTerms": [
+      "anbernic rg556 sdカード",
+      "rg556 microsd おすすめ",
+      "アンバーニック sdカード フォーマット",
+      "rg cube sd"
+    ],
+    "sdCard": {
+      "type": "microSD, microSDXC",
+      "minSpeed": "U3 / A1",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "RG556はAndroidベースの高性能な中華ゲーム機で、PS2やGameCubeなどの大容量ROMを扱うことができます。多くのゲームを持ち運ぶには256GB以上の大容量カードが推奨されます。",
+    "recommendedBrands": [
+      {
+        "id": "samsung-evo-select"
+      },
+      {
+        "id": "kioxia-exceria-g2"
+      }
+    ],
+    "faq": [
+      {
+        "q": "SDカードスロットはいくつですか？",
+        "a": "<b>1つです。</b> 従来の機種とは異なり、OSとゲームデータを1枚のカード（または内部ストレージとカード）で管理します。"
+      }
+    ],
+    "relatedDevices": [
+      "retroid-pocket-4-pro",
+      "anbernic-rg35xx-plus"
+    ],
+    "notes": "RG Cube（RGキューブ）も同様の仕様です。"
+  },
+  {
+    "id": "gpd-win-mini",
+    "name": "GPD Win Mini",
+    "category": "UMPC / 携帯ゲーム機",
+    "slug": "gpd-win-mini",
+    "searchTerms": [
+      "gpd win mini sdカード",
+      "gpd win 4 sdカード 速度",
+      "umpc microsd おすすめ",
+      "gpd uhs-ii 対応"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II (対応モデル)",
+      "minSpeed": "U3 / V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB",
+        "2TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "GPD Win MiniやWin 4は、競合機とは異なり「UHS-II」規格の高速カードリーダーを搭載していることが多いです。V60やV90規格のUHS-IIカードを使用することで、SSDに近い速度でゲームをロードできます。",
+    "recommendedBrands": [
+      {
+        "id": "prograde-digital-uhs-ii"
+      },
+      {
+        "id": "sandisk-extreme-pro-uhs-ii"
+      }
+    ],
+    "faq": [
+      {
+        "q": "UHS-IIカードを買う価値はありますか？",
+        "a": "<b>はい、GPDユーザーには強く推奨します。</b> 多くのUMPCはUHS-Iまでしか対応していませんが、GPDはUHS-IIに対応しているため、その性能をフルに活かせばAAAタイトルのロード時間が大幅に短縮されます。"
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally",
+      "steam-deck"
+    ],
+    "notes": "購入したモデルの年式を確認してください（最新モデルはUHS-II対応）。日本ではHigh-Beam等の代理店経由のユーザーが多いです。"
+  }
+]

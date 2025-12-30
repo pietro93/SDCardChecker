@@ -1,0 +1,959 @@
+[
+  {
+    "id": "raspberry-pi-5",
+    "name": "Raspberry Pi 5 (ラズベリーパイ5)",
+    "category": "コンピュータ・タブレット",
+    "slug": "raspberry-pi-5",
+    "searchTerms": [
+      "ラズパイ5 sdカード",
+      "raspberry pi 5 microsd",
+      "ラズベリーパイ ストレージ"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "A1 または A2 規格",
+      "minWriteSpeed": "10 MB/s (Class 10)",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "公式上限なし"
+    },
+    "whySpecs": "Raspberry Pi 5は、microSDカードからOSを起動します。「A1」または理想的には「A2」定格のカードがパフォーマンスに不可欠です。これらの定格はランダム読み書き速度が速いことを意味し、OSの応答性とアプリケーションのロード時間を劇的に向上させます。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "sandisk-ultra-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Raspberry Pi 5にとって、V30とA2のどちらが重要ですか？",
+        "a": "<b>A2定格の方が重要です。</b> 「V」定格（例：V30）は持続的なビデオ録画速度用ですが、「A」定格（アプリケーションパフォーマンスクラス）はOSが行うランダム読み書き操作用です。A2カードの方が日常的な使用において、はるかに高速に感じられます。"
+      }
+    ],
+    "relatedDevices": [],
+    "notes": "巨大なDIYおよび技術者層をターゲットにしています。カードは必須コンポーネントです。"
+  },
+  {
+    "id": "iphone-15",
+    "name": "iPhone 15 / 15 Pro",
+    "category": "コンピュータ・タブレット",
+    "slug": "iphone-15",
+    "searchTerms": [
+      "アイフォン 15",
+      "iphone 15 pro",
+      "iphone 15 sdカードリーダー"
+    ],
+    "sdCard": {
+      "type": "外部接続 (USB-C SDリーダー経由)",
+      "minSpeed": "公式要件なし",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "アプリまたはリーダーに依存"
+    },
+    "whySpecs": "iPhone 15にはSDカードスロットがありません。外部SDカードへのアクセスにはUSB-Cリーダーを使用します。速度はデバイスではなくリーダーの性能に依存します。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "iphone-14",
+      "iphone-13",
+      "ipad-pro"
+    ],
+    "notes": "USB-C搭載により、高速な外部ストレージやカードリーダーが直接利用可能になりました。"
+  },
+  {
+    "id": "macbook-air",
+    "name": "MacBook Air",
+    "category": "コンピュータ・タブレット",
+    "slug": "macbook-air",
+    "searchTerms": [
+      "マックブック エアー",
+      "macbook air m2",
+      "macbook air m3",
+      "macbook sdカード"
+    ],
+    "sdCard": {
+      "type": "外部接続 (USB-Cハブ/リーダー経由)",
+      "minSpeed": "UHS-I 推奨",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ]
+    },
+    "whySpecs": "MacBook AirにはSDカードスロットがありません（Proモデルとは異なります）。USB-Cハブやリーダーを使用することで、外部SDカードにアクセスできます。最新モデルではUSB-C接続で高速転送が可能です。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "macbook-pro",
+      "ipad-pro"
+    ],
+    "notes": "内蔵スロットがないため、ドングルやハブが必須です。"
+  },
+  {
+    "id": "iphone-14",
+    "name": "iPhone 14 / 14 Pro",
+    "category": "コンピュータ・タブレット",
+    "slug": "iphone-14",
+    "searchTerms": [
+      "アイフォン 14",
+      "iphone 14 sdカード",
+      "ライトニング sdカードリーダー"
+    ],
+    "sdCard": {
+      "type": "外部接続 (Lightningリーダー経由)",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "iPhone 14はLightningポートを使用します。SDカードを読み込むにはLightning接続のリーダーが必要です。多くのリーダーはUSB 2.0速度に制限されることに注意してください。",
+    "recommendedBrands": [
+      {
+        "id": "lexar-lightning-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "iphone-15",
+      "iphone-13"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ipad-air",
+    "name": "iPad Air",
+    "category": "コンピュータ・タブレット",
+    "slug": "ipad-air",
+    "searchTerms": [
+      "アイパッド エアー",
+      "ipad air 5",
+      "ipad air sdカード"
+    ],
+    "sdCard": {
+      "type": "外部接続 (USB-Cリーダー経由)",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ]
+    },
+    "whySpecs": "iPad Air（第4世代以降）はUSB-Cポートを使用します。USB-C SDカードリーダーを直接接続して、写真や動画の取り込みが可能です。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "ipad-pro",
+      "ipad-air-3"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "samsung-galaxy-s23",
+    "name": "Samsung Galaxy S23",
+    "category": "コンピュータ・タブレット",
+    "slug": "samsung-galaxy-s23",
+    "searchTerms": [
+      "ギャラクシー s23",
+      "galaxy s23 sdカード",
+      "samsung s23 容量"
+    ],
+    "sdCard": {
+      "type": "外部接続 (USB-Cリーダー経由・スロットなし)",
+      "minSpeed": "要件なし",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "Galaxy S23シリーズはmicroSDカードスロットを廃止しています。外部SDカードを使用するには、USB-C接続のカードリーダーが必要です。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "google-pixel-8"
+    ],
+    "notes": "かつてはSDスロットがありましたが、現在は廃止されています。クラウドまたは外部ストレージが必要です。"
+  },
+  {
+    "id": "ipad-pro",
+    "name": "iPad Pro",
+    "category": "コンピュータ・タブレット",
+    "slug": "ipad-pro",
+    "searchTerms": [
+      "アイパッド プロ",
+      "ipad pro 11",
+      "ipad pro 12.9",
+      "ipad pro sdカード"
+    ],
+    "sdCard": {
+      "type": "外部接続 (USB-C/Thunderboltリーダー経由)",
+      "minSpeed": "UHS-I から UHS-II",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ]
+    },
+    "whySpecs": "iPad ProはUSB-CまたはThunderboltポートを使用します。高速な外部リーダーをサポートしており、大容量の写真や動画の取り込みに最適です。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "ipad-air",
+      "macbook-pro"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "macbook-pro",
+    "name": "MacBook Pro",
+    "category": "コンピュータ・タブレット",
+    "slug": "macbook-pro",
+    "searchTerms": [
+      "macbook pro",
+      "マックブックプロ",
+      "mbp sdカード",
+      "m3 pro"
+    ],
+    "sdCard": {
+      "type": "内蔵SDXCスロット (14/16インチ) または 外部接続",
+      "minSpeed": "UHS-I から UHS-II",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ]
+    },
+    "whySpecs": "最新の14インチおよび16インチMacBook Proは、高速なUHS-II対応SDXCカードスロットを内蔵しています。ビデオ編集ワークフローのために高速なカードが推奨されます。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "macbook-air",
+      "canon-eos-r5"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "samsung-galaxy-tab-s9",
+    "name": "Samsung Galaxy Tab S9",
+    "category": "コンピュータ・タブレット",
+    "slug": "samsung-galaxy-tab-s9",
+    "searchTerms": [
+      "galaxy tab s9 sd card",
+      "samsung tab s9 memory card",
+      "tab s9 storage"
+    ],
+    "sdCard": {
+      "type": "microSDXC",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Galaxy Tab S9は4K動画録画に対応し、microSDカードで1TBまでのストレージ拡張をサポートしています。スムーズな4K動画の録画と再生のためにはV30速度が必須です。A2アプリケーションパフォーマンスは、カードからアプリケーションを実行する際のOS応答性とアプリ読み込み速度を確保します。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Tab S9のSDカードにアプリをインストールできますか？",
+        "a": "<b>はい、AndroidはいくつかのアプリをSDカードに移動できます</b>。内蔵ストレージを解放するためです。ただし、タブレットの高速な内蔵メモリにインストールされたアプリのパフォーマンスが最適です。SDカードは映画、写真、音楽などのメディアに最適です。"
+      }
+    ],
+    "relatedDevices": [
+      "amazon-fire-max-11",
+      "amazon-fire-hd-10"
+    ],
+    "notes": "SD カードスロットを保持する数少ないプレミアム現代デバイスの1つです。大きなコンシューマーオーディエンスを獲得しています。"
+  },
+  {
+    "id": "amazon-fire-hd-10",
+    "name": "Amazon Fire HD 10",
+    "category": "コンピュータ・タブレット",
+    "slug": "amazon-fire-hd-10",
+    "searchTerms": [
+      "fire hd 10 sd card",
+      "amazon fire hd 10 microsd",
+      "fire tablet sd card"
+    ],
+    "sdCard": {
+      "type": "microSDXC",
+      "minSpeed": "Class 10 / U1 (V30 recommended for video)",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Fire HD 10は1TBまでのmicroSD拡張をサポートし、アプリ、動画、書籍、写真の保存に対応しています。基本的な使用にはClass 10カードで十分ですが、高品質な動画コンテンツのスムーズなダウンロードと再生のために、信頼できるブランドのV30カードが推奨されます。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Fire HD 10のSDカードにアプリをインストールできますか？",
+        "a": "<b>はい、設定>ストレージからSDカードに互換性のあるアプリを移動して内蔵ストレージを解放できます。</b> ただし、一部のAmazonアプリとシステムファイルは内蔵ストレージに残す必要があります。"
+      },
+      {
+        "q": "Fire HD 10に最適な容量は何ですか？",
+        "a": "<b>ほとんどのユーザーにとって128GBから256GBが最適です。</b> オフライン動画、音楽、書籍、写真に十分なスペースを提供しながら、費用効率的です。大量の動画コンテンツをダウンロードするヘビーユーザーは512GBを検討できます。"
+      }
+    ],
+    "relatedDevices": [
+      "amazon-fire-max-11",
+      "samsung-galaxy-tab-s9"
+    ],
+    "notes": "Amazonのベストセラータブレットの1つです。公式のAmazonの仕様で1TBまでのmicroSD拡張を確認しています。SDカード推奨のための大量の検索ボリュームを持つ予算に優しいオプション。"
+  },
+  {
+    "id": "amazon-fire-max-11",
+    "name": "Amazon Fire Max 11",
+    "category": "コンピュータ・タブレット",
+    "slug": "amazon-fire-max-11",
+    "searchTerms": [
+      "fire max 11 sd card",
+      "amazon fire max 11 microsd",
+      "fire max storage"
+    ],
+    "sdCard": {
+      "type": "microSDXC",
+      "minSpeed": "Class 10 / U1 (V30 recommended for video)",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Fire Max 11はAmazonのプレミアムタブレットで、大型11インチディスプレイを備えています。1TBまでのmicroSD拡張に対応し、大規模なメディアライブラリの保存に理想的です。V30カードは高品質な動画コンテンツのスムーズな再生を保証します。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Fire Max 11はFire HD 10よりもSDカード性能が優れていますか？",
+        "a": "<b>両方のタブレットは同一のmicroSDサポート（1TBまで）を備えています。</b> Max 11には大きなスクリーンと全体的に優れた仕様がありますが、SDカード機能は同じです。ストレージではなく、画面サイズとパフォーマンスのニーズに基づいて選択してください。"
+      }
+    ],
+    "relatedDevices": [
+      "amazon-fire-hd-10",
+      "samsung-galaxy-tab-s9"
+    ],
+    "notes": "Amazonのプレミアムタブレットモデル。Fire HD 10と同じ1TBのmicroSDサポート（公式のAmazonの製品仕様で確認）。"
+  },
+  {
+    "id": "hp-chromebook-14",
+    "name": "HP Chromebook 14",
+    "category": "コンピュータ・タブレット",
+    "slug": "hp-chromebook-14",
+    "searchTerms": [
+      "hp chromebook 14 sd card",
+      "hp chromebook microsd",
+      "chromebook sd card slot"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "Not specified",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit (512GB+ commonly works)"
+    },
+    "whySpecs": "HP Chromebook 14モデルにはmicroSDカードリーダーが含まれており、ストレージを拡張できます。ChromeOSはAPKまたは標準的なAndroidアプリをSDカードに直接インストールすることを許可していませんが、メディアファイル（写真、動画、音楽）のストレージにカードを使用できます。Class 10カードで十分です。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "ChromebookのSDカードにアプリをインストールできますか？",
+        "a": "<b>ChromeOSはAndroidアプリをSDカードに直接インストールすることを許可していません。</b> ただし、Chromebookはメディアストレージ用のカードをサポートしており、写真、動画、音楽ファイルを保存できます。アプリはChrome Web Storeからのみインストール可能です。"
+      },
+      {
+        "q": "HP Chromebook 14に最適なmicroSDカード容量は何ですか？",
+        "a": "<b>ほとんどのユーザーには64GBまたは128GBで十分です。</b> これは、メディア、ダウンロード、オフラインファイル用に十分なスペースを提供します。重いメディアストレージが必要な場合は256GBを検討してください。"
+      }
+    ],
+    "relatedDevices": [
+      "amazon-fire-hd-10",
+      "samsung-galaxy-tab-s9"
+    ],
+    "notes": "HPChromebook 14はmicroSDカードリーダー付きの人気のある予算Chromebookカテゴリを代表しています。"
+  },
+  {
+    "id": "lenovo-tab-m10-plus-gen3",
+    "name": "Lenovo Tab M10 Plus (3rd Gen)",
+    "category": "コンピュータ・タブレット",
+    "slug": "lenovo-tab-m10-plus",
+    "searchTerms": [
+      "lenovo tab m10 plus sd card",
+      "lenovo tablet microsd",
+      "lenovo m10 storage"
+    ],
+    "sdCard": {
+      "type": "microSDXC",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "手頃な価格で to expand storage for movies, music, and photos. A Class 10 / U1 card works for most uses including video playback. A1 アプリパフォーマンス ensures responsive file browsing when running apps from the card.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I set the microSD card as internal storage on the Lenovo Tab M10?",
+        "a": "<b>Yes, Android's 'Adoptable Storage' feature allows you to format the microSD card to act as an extension of the internal storage.</b> However, this will encrypt the card to the device and it may run slower than the built-in memory. For best results, use the card as ポータブル storage for media files."
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "steam-deck",
+      "anbernic-rg35xx-plus"
+    ],
+    "notes": "非常に人気がある mid-range Android tablet. 公式 support for up to 1TB microSD cards."
+  },
+  {
+    "id": "raspberry-pi-4-model-b",
+    "name": "Raspberry Pi 4 Model B",
+    "category": "コンピュータ・タブレット",
+    "slug": "raspberry-pi-4-model-b",
+    "searchTerms": [
+      "raspberry pi 4 sd card",
+      "pi 4 microsd",
+      "raspberry pi 4 storage"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "Like all Raspberry Pis, the Pi 4 runs its OS from the microSD card. An A1 or A2 rated card is crucial for good performance. The A-rating signifies faster ランダムアクセス speeds, which translates to a more responsive desktop experience and faster application launch times.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is a V30 card good for a Raspberry Pi 4?",
+        "a": "<b>A V30 rating is not the most important spec. Look for an A1 or A2 rating instead.</b> V30 rating is for video and doesn't affect OS performance. The アプリケーションパフォーマンス Class (A1/A2) is what makes the Pi 4 feel fast and responsive."
+      },
+      {
+        "q": "What is the minimum recommended capacity for Raspberry Pi 4?",
+        "a": "<b>A 32GB card is a good minimum for Raspberry Pi OS with a desktop environment.</b> This leaves enough space for installing several applications and for project files. For more complex projects or storing media, 64GB or larger is 推奨."
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-5",
+      "raspberry-pi-3-model-b-plus"
+    ],
+    "notes": "まだ最も人気があるもののひとつ SBCs in the world. の区別 video speed (V) and application speed (A) is a key point for users."
+  },
+  {
+    "id": "raspberry-pi-3-model-b-plus",
+    "name": "Raspberry Pi 3 Model B+",
+    "category": "コンピュータ・タブレット",
+    "slug": "raspberry-pi-3-model-b-plus",
+    "searchTerms": [
+      "raspberry pi 3 sd card",
+      "pi 3 microsd",
+      "raspberry pi 3 storage",
+      "pi 3 b+ sd card"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "16GB",
+        "32GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "The Raspberry Pi 3 is less powerful than newer models, but its performance still benefits from a fast card. A Class 10 card is the minimum for a usable experience. An A1-rated card is 推奨 as it provides a noticeable boost in OS responsiveness, especially when launching applications or booting up.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need a fast card for the Raspberry Pi 3?",
+        "a": "<b>Yes, a Class 10 card is the minimum you should use.</b> While the Pi 3 is not as fast as a Pi 4 or 5, using a slow, non-rated card will result in a very sluggish and frustrating user experience. An A1-rated card is the best value for performance."
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-4-model-b",
+      "raspberry-pi-zero-2-w"
+    ],
+    "notes": "古いがまだ widely used model for many DIY projects. Card 必要ments are less stringent than for Pi 4/5, but a quality card is still important."
+  },
+  {
+    "id": "raspberry-pi-zero-2-w",
+    "name": "Raspberry Pi Zero 2 W",
+    "category": "コンピュータ・タブレット",
+    "slug": "raspberry-pi-zero-2-w",
+    "searchTerms": [
+      "raspberry pi zero 2 sd card",
+      "pi zero 2 w microsd",
+      "pi zero storage"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "16GB",
+        "32GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "The Pi Zero 2 W is used for コンパクト, embedded projects. A reliable Class 10 card with A1 アプリパフォーマンス is essential for the operating system to run smoothly. Since these projects are often 'headless' (no monitor), card 信頼性 is more important than extreme speed, but a 遅いカード will still impact boot time and script execution.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much storage do I need for a Pi Zero 2 W project?",
+        "a": "<b>For most headless projects, a 16GB card is sufficient.</b> It provides enough space for Raspberry Pi OS Lite and project scripts. If you are running a desktop environment or a project that logs a lot of data, choose a 32GB card."
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-3-model-b-plus"
+    ],
+    "notes": "Extremely popular for 小型フォームファクター projects like Pi-hole or robotics. Card 信頼性 is key for 'セットして忘れるタイプ' applications."
+  },
+  {
+    "id": "orange-pi-5",
+    "name": "Orange Pi 5",
+    "category": "コンピュータ・タブレット",
+    "slug": "orange-pi-5",
+    "searchTerms": [
+      "orange pi 5",
+      "orangepi 5 sd card",
+      "orangepi 5 tf card",
+      "orange pi 5 storage"
+    ],
+    "sdCard": {
+      "type": "microSD (TF)",
+      "minSpeed": "Class 10 / U1 (A1 or A2 recommended)",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB official, 256–512GB commonly reported working"
+    },
+    "whySpecs": "Orange Pi 5 boots its operating system directly from the microSD (TF) slot if you are not using NVMe or eMMC. Class 10 / U1 cards provide enough シーケンシャル throughput for Linux distributions, while A1 or A2-rated cards dramatically improve random read/write performance for package management, logs, and desktop use. 公式 documentation for related Orange Pi 5 boards lists 128GB as the supported microSD size, but many users successfully run 256GB and even 512GB cards, making 32–128GB a safe, mainstream choice and larger cards a practical but un公式 option.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Orange Pi 5にはV30ビデオカードが必要ですか？",
+        "a": "<b>いいえ、ほとんどのOrange Pi 5用途ではV30カードは不要です。</b> ボードはビデオ書き込み速度の持続より、OS用のランダムI/Oを重視します。<b>A1またはA2定格のClass 10 / U1カード</b>が通常、価格とパフォーマンスの最良バランスです。"
+      },
+      {
+        "q": "Orange Pi 5にはどのサイズのmicroSDカードを選ぶべきですか？",
+        "a": "<b>一般的なLinuxデスクトップまたはサーバーイメージの場合、32GBまたは64GBで十分です。</b> 多くのDockerイメージ、データベース、またはメディアファイルをカード上に直接保存する場合、128GBはより余裕があります。より大きなカード（256GBまたは512GB）は動作することもありますが、多くのOrange Piハードウェアパラメータシートに記載されている容量を超えています。"
+      },
+      {
+        "q": "Orange Pi 5ではmicroSDはNVMeやeMMCより遅いですか？",
+        "a": "<b>はい、microSDはボード上で最も遅いストレージオプションです。</b> 実験、軽量サーバー、小さなデスクトップには完全に適していますが、高いI/O負荷または大規模なデータベース用途には、ルートファイルシステムをNVMe SSDまたはeMMCモジュールに移行し、microSDはブートまたは回復メディアのみとして保持する価値があります。"
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-5",
+      "raspberry-pi-4-model-b",
+      "raspberry-pi-zero-2-w"
+    ],
+    "notes": "シングルボード computer based on Rockchip RK3588S. Uses a TF/microSD slot for boot unless SPI + NVMe are configured."
+  },
+  {
+    "id": "iphone-13",
+    "name": "iPhone 13",
+    "category": "コンピュータ・タブレット",
+    "slug": "iphone-13",
+    "searchTerms": [
+      "iphone 13",
+      "iphone 13 pro"
+    ],
+    "sdCard": {
+      "type": "External via Lightning Reader",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "iPhone 13 uses Lightning port with microSD readers.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-lightning-microsd"
+      }
+    ],
+    "faq": [],
+    "relatedDevices": [
+      "iphone-14"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "iphone-14-pro-max",
+    "name": "iPhone 14 Pro Max",
+    "category": "コンピュータ・タブレット",
+    "slug": "iphone-14-pro-max",
+    "searchTerms": [
+      "iphone 14 pro max",
+      "iphone 14 max"
+    ],
+    "sdCard": {
+      "type": "External via Lightning Reader",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "iPhone 14 Pro Max uses Lightning port.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-lightning-microsd"
+      }
+    ],
+    "faq": [],
+    "relatedDevices": [
+      "iphone-14",
+      "iphone-15"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ipad-air-3",
+    "name": "iPad Air 3rd Generation",
+    "category": "コンピュータ・タブレット",
+    "slug": "ipad-air-3",
+    "searchTerms": [
+      "ipad air 3",
+      "ipad air 3rd generation"
+    ],
+    "sdCard": {
+      "type": "External via Lightning Reader",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "iPad Air 3 uses Lightning port (older model).",
+    "recommendedBrands": [
+      {
+        "id": "lexar-lightning-microsd"
+      }
+    ],
+    "faq": [],
+    "relatedDevices": [
+      "ipad-air",
+      "ipad-pro"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "iphone-se",
+    "name": "iPhone SE",
+    "category": "コンピュータ・タブレット",
+    "slug": "iphone-se",
+    "searchTerms": [
+      "iphone se",
+      "iphone se 3"
+    ],
+    "sdCard": {
+      "type": "External via Lightning Reader",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB"
+      ]
+    },
+    "whySpecs": "iPhone SE uses Lightning connector.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-lightning-microsd"
+      }
+    ],
+    "faq": [],
+    "relatedDevices": [
+      "iphone-13",
+      "iphone-14"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "google-pixel-8",
+    "name": "Google Pixel 8",
+    "category": "コンピュータ・タブレット",
+    "slug": "google-pixel-8",
+    "searchTerms": [
+      "google pixel 8",
+      "pixel 8"
+    ],
+    "sdCard": {
+      "type": "External via USB-C Reader (no slot)",
+      "minSpeed": "No requirement",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "Pixel 8 does not have SD card slot. Uses USB-C readers.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "faq": [],
+    "relatedDevices": [
+      "samsung-galaxy-s23",
+      "iphone-15"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "hp-chromebook",
+    "name": "HP Chromebook",
+    "category": "コンピュータ・タブレット",
+    "slug": "hp-chromebook",
+    "searchTerms": [
+      "hp chromebook",
+      "chromebook"
+    ],
+    "sdCard": {
+      "type": "External via USB Reader",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "Chromebooks support external SD readers via USB.",
+    "recommendedBrands": [
+      {
+        "id": "htrenc-sd-card-reader"
+      }
+    ],
+    "faq": [],
+    "relatedDevices": [
+      "dell-xps"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "dell-xps",
+    "name": "Dell XPS Laptop",
+    "category": "コンピュータ・タブレット",
+    "slug": "dell-xps",
+    "searchTerms": [
+      "dell xps",
+      "xps laptop"
+    ],
+    "sdCard": {
+      "type": "External via USB-C Reader",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ]
+    },
+    "whySpecs": "Dell XPS laptops typically lack SD slot. USB-C readers compatible.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "faq": [],
+    "relatedDevices": [
+      "macbook-pro",
+      "hp-chromebook"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ipad-9th-gen",
+    "name": "iPad 9th Generation",
+    "category": "コンピュータ・タブレット",
+    "slug": "ipad-9th-gen",
+    "searchTerms": [
+      "ipad 9th generation",
+      "ipad 9"
+    ],
+    "sdCard": {
+      "type": "External via Lightning Reader",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "iPad 9th Gen uses Lightning port.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-lightning-microsd"
+      }
+    ],
+    "faq": [],
+    "relatedDevices": [
+      "ipad-air",
+      "iphone-13"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "windows-laptop",
+    "name": "Windows Laptop",
+    "category": "コンピュータ・タブレット",
+    "slug": "windows-laptop",
+    "searchTerms": [
+      "windows laptop",
+      "pc laptop"
+    ],
+    "sdCard": {
+      "type": "External via USB Reader",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ]
+    },
+    "whySpecs": "Most Windows laptops lack SD slot. USB readers 必要d.",
+    "recommendedBrands": [
+      {
+        "id": "htrenc-sd-card-reader"
+      }
+    ],
+    "faq": [],
+    "relatedDevices": [
+      "dell-xps",
+      "macbook-pro"
+    ],
+    "notes": ""
+  }
+]
