@@ -26,6 +26,8 @@ const categorySlugMap = {
   'Gaming Handhelds': 'gaming-handhelds',
   'コンピュータ・タブレット': 'computing-and-tablets',
   'Computing & Tablets': 'computing-and-tablets',
+  'スマートフォン': 'smartphones',
+  'Smartphones': 'smartphones',
   'ドライブレコーダー': 'dash-cams',
   '高性能ドライブレコーダー': 'dash-cams',
   'バイク用ドライブレコーダー': 'dash-cams',
@@ -35,7 +37,9 @@ const categorySlugMap = {
   'トレイルカメラ': 'trail-cameras',
   'Trail Cameras': 'trail-cameras',
   'アクセサリー': 'accessories',
-  'Accessories': 'accessories'
+  'Accessories': 'accessories',
+  'オーディオ・ハイファイ': 'audio-and-hi-fi',
+  'Audio & Hi-Fi': 'audio-and-hi-fi'
 };
 
 function generateSitemap() {
