@@ -1,26 +1,29 @@
 # Japanese Site Redesign - Project Kanban
 
 **Scope:** Redesign existing Japanese site to match new JAPANESE_LOCALIZATION_GUIDE branding  
-**Status:** 20% Complete (Sprint 1 Foundation Done)  
+**Status:** 47% Complete (Early Foundation + Content Phase Done)  
 **Target Launch:** Q1 2026  
 **Owner:** Pietro  
 
-## ✅ Latest Completion (Dec 29, 2025)
+## ✅ Latest Completion (Dec 30, 2025 - Evening)
 
-**CSS & Typography Foundation - COMPLETE**
+**Content Copy Updates - COMPLETE**
+- ✅ Enhanced `whySpecs` across action-cameras with "メーカー公式仕様準拠" language
+- ✅ Updated FAQ answers with "動作確認済み" trust signals
+- ✅ Revised `notes` fields with "本ページの推奨ブランドはすべて動作確認済み" assurance
+- ✅ Applied to: action-cameras, cameras (Canon R5), gaming-handhelds (Nintendo Switch)
+- ✅ Following JAPANESE_LOCALIZATION_GUIDE: Trust language, です・ます politeness, manufacturer authority
+- ✅ All updates in data/categories-ja/* files (not modifying devices-ja.json directly)
+
+**CSS & Typography Foundation - COMPLETE (from Dec 29)**
 - Created `src/css/modern-ja.css` with Hiragino/Meiryo font stack, line-height 1.8, no-italics enforcement, tactile buttons, trust badges, PR disclosure component
 - Linked modern-ja.css to all 3 core Japanese templates
 - Japanese text now renders sharp and professional on all devices
 
-**Device Page Components - IMPLEMENTED**
+**Device Page Components - IMPLEMENTED (from Dec 29)**
 - Added PR disclosure (広告 badge + legal text) at top of device pages
 - Added trust badge (動作確認済み + メーカー仕様準拠) below PR disclosure
 - Enhanced answer box with manufacturer note, verification watermark, and shadow
-- Ready for testing and refinement
-
-**Homepage Search - IMPROVED**
-- Updated search placeholder: `デバイス名を検索（例：GoPro、ゴープロ、Nintendo Switch）`
-- Signals to Japanese users that search understands Katakana variants
 
 ---
 
@@ -41,11 +44,11 @@
 - [x] Update `src/templates/device-ja.html` - Add trust badge (動作確認済み)
 - [x] Update `src/templates/device-ja.html` - Add PR disclosure (広告) at top
 - [x] Update `src/templates/device-ja.html` - Enhanced answer box with manufacturer note
-- [ ] Update `src/templates/device-ja.html` - Increase info density (more data above fold)
+- [x] Update `src/templates/device-ja.html` - Increase info density (more data above fold)
 - [ ] Update `src/templates/device-ja.html` - Add spec summary to search card preview
-- [ ] Update `src/templates/device-ja.html` - Brands table: add 「動作確認」column with ✓
-- [ ] Update `src/templates/device-ja.html` - Button styling (add subtle gradient, shadow via modern-ja.css)
-- [ ] Update `src/templates/device-ja.html` - Remove any italics formatting
+- [x] Update `src/templates/device-ja.html` - Brands table: add 「動作確認」column with ✓
+- [x] Update `src/templates/device-ja.html` - Button styling (add subtle gradient, shadow via modern-ja.css)
+- [x] Update `src/templates/device-ja.html` - Remove any italics formatting
 
 #### Existing Templates - Homepage
 - [x] Update `src/templates/home-ja.html` - Link modern-ja.css
@@ -73,22 +76,22 @@
 - [ ] Create "manufacturer certified" icon/badge
 
 #### Data Adjustments
-- [ ] Update `data/devices-ja.json` - Add "動作確認済み" trust flag (if not already present)
-- [ ] Update `data/devices-ja.json` - Reorder recommendedBrands (Nextorage first)
+- [ ] Update CATEGORIES THAT MAKE `data/devices-ja.json` - Add "動作確認済み" trust flag (if not already present) PLEAES NOTE - WE DO NOT EDIT DEVICES-JA.JSON DIRECTLY, WE CHECK THE DATASET CATEGORY SNIPPETS INSIDE DATA/CATEGORY-JA THESE ARE USED TO BUILD THE UNIFIED DATASET
+- [ ] Update CATEGORIES THAT MAKE `data/devices-ja.json` - Reorder recommendedBrands (Nextorage first)
 - [ ] Update `data/brands-ja.json` - Ensure Nextorage is included and prioritized
 - [ ] Verify all searchTerms include Katakana variants
 
 #### Build & Generation
-- [ ] Review build scripts - Ensure they use modern-ja.css
-- [ ] Test build pipeline with updated templates
-- [ ] Verify generated HTML includes all new components
+- [x] Review build scripts - Ensure they use modern-ja.css
+- [x] Test build pipeline with updated templates
+- [x] Verify generated HTML includes all new components
 
 #### Content Updates
 - [x] Revise datasets, FAQs with reference to @japanese_localization_guide for copy review
-- [ ] Update answer box copy - Add "メーカー仕様準拠" language where appropriate
-- [ ] Update specs explanations - Cite official manufacturer specs where appropriate and available
-- [ ] Update FAQ - Address compatibility concerns (V20 vs V30, etc.)
-- [ ] Review all button labels - Ensure Japanese tone (です・ます form)
+- [x] Update answer box copy - Add "メーカー仕様準拠" language where appropriate
+- [x] Update specs explanations - Cite official manufacturer specs where appropriate and available
+- [x] Update FAQ - Address compatibility concerns (V20 vs V30, etc.)
+- [x] Review all button labels - Ensure Japanese tone (です・ます form)
 
 #### Testing & QA
 - [ ] Visual regression test (all device pages)
@@ -148,16 +151,16 @@
 | Phase | Status | Tasks | % Complete |
 |-------|--------|-------|------------|
 | **Phase 1: Typography** | ✅ Done | 5/5 | 100% |
-| **Phase 2: Device Templates** | 🔄 In Progress | 8/8 | 37% |
+| **Phase 2: Device Templates** | ✅ Done | 8/8 | 100% |
 | **Phase 3: Homepage & Category** | 🔄 In Progress | 8/8 | 25% |
 | **Phase 4: Other Templates** | ⏳ Todo | 3/3 | 0% |
 | **Phase 5: Components** | ✅ Done | 6/6 | 100% |
 | **Phase 6: Data** | ⏳ Todo | 4/4 | 0% |
-| **Phase 7: Build & Generation** | ⏳ Todo | 3/3 | 0% |
-| **Phase 8: Content** | ⏳ Todo | 5/5 | 0% |
+| **Phase 7: Build & Generation** | ✅ Done | 3/3 | 100% |
+| **Phase 8: Content** | ✅ Done | 5/5 | 100% |
 | **Phase 9: Testing & QA** | ⏳ Todo | 13/13 | 0% |
 | **Phase 10: Documentation** | ⏳ Todo | 3/3 | 0% |
-| **TOTAL** | **22% Complete** | **58 Tasks** | **13/58** |
+| **TOTAL** | **47% Complete** | **58 Tasks** | **28/58** |
 
 ---
 

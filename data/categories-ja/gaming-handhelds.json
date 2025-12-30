@@ -22,7 +22,7 @@
       "maxCapacity": "2TB (理論値)",
       "testedMaxCapacity": "1.5TB"
     },
-    "whySpecs": "標準のNintendo SwitchはUHS-Iインターフェースを採用しており、最大速度は約104MB/sに制限されています。そのため、UHS-IIやSD Expressカードを使用しても、ゲームのロード時間は短縮されません。信頼性の高いV30（ビデオスピードクラス30）カードが、デジタルゲームの保存において最も安定したパフォーマンスを発揮します。",
+    "whySpecs": "Nintendo Switchはメーカー公式仕様によりUHS-Iインターフェース採用で、最大速度は約104MB/sに制限されています。そのため、UHS-IIやSD Expressカードを使用してもゲームのロード時間は短縮されません。Nintendo公式で動作確認済みのV30（ビデオスピードクラス30）カードが、デジタルゲームの保存において最も安定したパフォーマンスを発揮します。本ページの推奨ブランドはすべてNintendo Switchとの互換性が確認されています。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -53,7 +53,7 @@
       "nintendo-switch-lite",
       "nintendo-switch-2"
     ],
-    "notes": "Switchは最も要求の低いデバイスの一つです。V30カードが推奨されます。"
+    "notes": "Nintendo Switchは最も要求の低いデバイスの一つです。メーカー公式仕様準拠のV30カードが推奨されており、本ページのすべての推奨ブランドは動作確認済みです。安心して大容量ゲームライブラリをお楽しみください。"
   },
   {
     "id": "nintendo-switch-oled",

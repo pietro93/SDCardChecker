@@ -321,11 +321,13 @@ html[lang="ja"] .brands-table td {
   display: inline-block;
   color: #22c55e;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .confirmed-badge::before {
-  content: "✓ ";
+  content: "✓";
+  margin-right: 0.3rem;
 }
 
 /* 11. SEARCH UI - Katakana Support

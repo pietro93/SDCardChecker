@@ -116,17 +116,33 @@
              </div>
 
             <!-- Expert Recommendations Section -->
-            <div class="mb-12">
+            <div class="mb-8">
                 <p class="text-xl text-slate-600">{{DEVICE_NAME}}の仕様に基づく専門家による推奨情報</p>
             </div>
 
             <!-- Answer Box - Quick Result (Japanese Enhanced) -->
             <div id="recommendations"
-                class="answer-box-ja bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-2xl p-8 mb-12 shadow-sm scroll-mt-20">
+                class="answer-box-ja bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-2xl p-8 mb-8 shadow-sm scroll-mt-20">
                 <p class="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">推奨SDカード</p>
                 <p class="answer-text text-4xl font-bold text-blue-600 mb-4">{{ANSWER_TEXT}}</p>
                 <p class="answer-explanation text-lg text-slate-700 leading-relaxed">{{ANSWER_EXPLANATION}}</p>
                 <p class="manufacturer-note">※ メーカー公式仕様に基づく推奨情報です。詳細は各メーカーの公式ドキュメントをご参照ください。</p>
+            </div>
+
+            <!-- Quick Reference Box - Info Density Above Fold -->
+            <div class="grid md:grid-cols-2 gap-6 mb-12">
+                <div class="bg-white border border-slate-200 rounded-lg p-6">
+                    <h3 class="font-semibold text-slate-900 mb-3 text-sm uppercase tracking-wide text-slate-600">推奨スペック</h3>
+                    <ul class="space-y-2 text-sm text-slate-700">
+                        {{QUICK_SPECS_LIST}}
+                    </ul>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-lg p-6">
+                    <h3 class="font-semibold text-slate-900 mb-3 text-sm uppercase tracking-wide text-slate-600">ブランド比較</h3>
+                    <ul class="space-y-2 text-sm text-slate-700">
+                        {{TOP_BRANDS_LIST}}
+                    </ul>
+                </div>
             </div>
 
             <!-- Requirements Box -->
@@ -149,6 +165,7 @@
                         <thead>
                             <tr>
                                 <th class="text-left py-4 px-4 font-semibold">SDカード</th>
+                                <th class="text-left py-4 px-4 font-semibold">動作確認</th>
                                 <th class="text-left py-4 px-4 font-semibold">速度クラス</th>
                                 <th class="text-left py-4 px-4 font-semibold">書き込み速度</th>
                                 <th class="text-left py-4 px-4 font-semibold">長所</th>

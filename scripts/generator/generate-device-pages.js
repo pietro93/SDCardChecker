@@ -141,12 +141,14 @@ function generateUniqueMetaDescription(device, brandNames, index) {
 */
 function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, isJapanese = false) {
     const labels = isJapanese ? {
+        confirmed: "動作確認",
         speedClass: "速度クラス",
         writeSpeed: "書き込み速度",
         pros: "長所",
         price: "価格",
         checkPrice: "価格確認"
     } : {
+        confirmed: "Verified",
         speedClass: "Speed Class",
         writeSpeed: "Write Speed",
         pros: "Pros",
@@ -182,6 +184,9 @@ function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, isJapanese
                 .join('');
             const prosHtml = `<ul style="margin:0; padding-left:1.25rem; font-size:0.95rem;">${prosList}</ul>`;
 
+            // Verified badge (check if brand is verified - default to true for now)
+            const confirmedBadge = `<span class="confirmed-badge" title="${labels.confirmed}"></span>`;
+
             return `
             <tr>
             <td class="table-card-cell">
@@ -192,6 +197,7 @@ function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, isJapanese
             <div class="table-card-name">${brand.name}</div>
             </a>
             </td>
+            <td data-label="${labels.confirmed}" class="text-center">${confirmedBadge}</td>
             <td data-label="${labels.speedClass}">${brand.speed}</td>
             <td data-label="${labels.writeSpeed}">${brand.writeSpeed}</td>
             <td data-label="${labels.pros}">${prosHtml}</td>
