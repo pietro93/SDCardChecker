@@ -62,8 +62,37 @@
     "notes": ""
   },
   {
+    "id": "samsung-galaxy-s23",
+    "name": "Samsung Galaxy S23",
+    "category": "smartphones",
+    "slug": "samsung-galaxy-s23",
+    "searchTerms": [
+      "ギャラクシー s23",
+      "galaxy s23 sdカード",
+      "samsung s23 容量"
+    ],
+    "sdCard": {
+      "type": "外部接続 (USB-Cリーダー経由・スロットなし)",
+      "minSpeed": "要件なし",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "Galaxy S23シリーズはmicroSDカードスロットを廃止しています。外部SDカードを使用するには、USB-C接続のカードリーダーが必要です。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "google-pixel-8"
+    ],
+    "notes": "かつてはSDスロットがありましたが、現在は廃止されています。クラウドまたは外部ストレージが必要です。"
+  },
+  {
     "id": "iphone-13",
-    "name": "iPhone 13 / 13 Pro",
+    "name": "iPhone 13",
     "category": "smartphones",
     "slug": "iphone-13",
     "searchTerms": [
@@ -122,7 +151,7 @@
   },
   {
     "id": "iphone-se",
-    "name": "iPhone SE (3rd Generation)",
+    "name": "iPhone SE",
     "category": "smartphones",
     "slug": "iphone-se",
     "searchTerms": [
@@ -150,37 +179,8 @@
     "notes": ""
   },
   {
-    "id": "samsung-galaxy-s23",
-    "name": "Samsung Galaxy S23 / S23+",
-    "category": "smartphones",
-    "slug": "samsung-galaxy-s23",
-    "searchTerms": [
-      "ギャラクシー s23",
-      "galaxy s23 sdカード",
-      "samsung s23 容量"
-    ],
-    "sdCard": {
-      "type": "外部接続 (USB-Cリーダー経由・スロットなし)",
-      "minSpeed": "要件なし",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ]
-    },
-    "whySpecs": "Galaxy S23シリーズはmicroSDカードスロットを廃止しています。外部SDカードを使用するには、USB-C接続のカードリーダーが必要です。",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-pro-uhs2-usbc"
-      }
-    ],
-    "relatedDevices": [
-      "google-pixel-8"
-    ],
-    "notes": "かつてはSDスロットがありましたが、現在は廃止されています。クラウドまたは外部ストレージが必要です。"
-  },
-  {
     "id": "google-pixel-8",
-    "name": "Google Pixel 8 / 8 Pro",
+    "name": "Google Pixel 8",
     "category": "smartphones",
     "slug": "google-pixel-8",
     "searchTerms": [

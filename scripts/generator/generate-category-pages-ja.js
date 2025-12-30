@@ -28,27 +28,29 @@ function getDeviceImage(device) {
  * Generate device cards for Japanese category page
  */
 function generateDeviceCards(devices) {
-   // Map Japanese category names to English slugs
-   const categorySlugMap = {
-     "アクションカメラ": "action-cameras",
-     "Action Cameras": "action-cameras",
-     "カメラ": "cameras",
-     "Cameras": "cameras",
-     "ドローン": "drones",
-     "Drones": "drones",
-     "携帯ゲーム機": "gaming-handhelds",
-     "Gaming Handhelds": "gaming-handhelds",
-     "コンピュータ・タブレット": "computing-and-tablets",
-     "Computing & Tablets": "computing-and-tablets",
-     "ドライブレコーダー": "dash-cams",
-     "Dash Cams": "dash-cams",
-     "セキュリティカメラ": "security-cameras",
-     "Security Cameras": "security-cameras",
-     "トレイルカメラ": "trail-cameras",
-     "Trail Cameras": "trail-cameras",
-     "アクセサリー": "accessories",
-     "Accessories": "accessories"
-   };
+    // Map Japanese category names to English slugs
+    const categorySlugMap = {
+      "アクションカメラ": "action-cameras",
+      "Action Cameras": "action-cameras",
+      "カメラ": "cameras",
+      "Cameras": "cameras",
+      "ドローン": "drones",
+      "Drones": "drones",
+      "携帯ゲーム機": "gaming-handhelds",
+      "Gaming Handhelds": "gaming-handhelds",
+      "コンピュータ・タブレット": "computing-and-tablets",
+      "Computing & Tablets": "computing-and-tablets",
+      "スマートフォン": "smartphones",
+      "Smartphones": "smartphones",
+      "ドライブレコーダー": "dash-cams",
+      "Dash Cams": "dash-cams",
+      "セキュリティカメラ": "security-cameras",
+      "Security Cameras": "security-cameras",
+      "トレイルカメラ": "trail-cameras",
+      "Trail Cameras": "trail-cameras",
+      "アクセサリー": "accessories",
+      "Accessories": "accessories"
+    };
 
    // Sort devices alphabetically by name
    const sortedDevices = [...devices].sort((a, b) => a.name.localeCompare(b.name));
@@ -86,6 +88,8 @@ function getCategoryIcon(category) {
      "携帯ゲーム機": "gaming",
      "Computing & Tablets": "computing",
      "コンピュータ・タブレット": "computing",
+     "Smartphones": "smartphone",
+     "スマートフォン": "smartphone",
      "Security Cameras": "security-camera",
      "セキュリティカメラ": "security-camera",
      "Dash Cams": "dashcam",
