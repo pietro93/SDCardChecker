@@ -6,6 +6,7 @@
  */
 
 const path = require("path");
+const fs = require("fs");
 const { readJSON } = require("./helpers");
 const { copyAssets } = require("./copy-assets");
 const { generateDevicePages } = require("./generate-device-pages");
@@ -22,13 +23,73 @@ const { generateRedirects } = require("./generate-redirects");
 
 // Paths
 const dataPath = path.join(__dirname, "../../data/devices.json");
+const categoriesPath = path.join(__dirname, "../../data/categories");
 const readersPath = path.join(__dirname, "../../data/sdCardReaders.json");
 const distPath = path.join(__dirname, "../../dist");
+
+/**
+ * Merge category files into devices.json
+ * This runs automatically before every build
+ */
+function mergeDeviceCategories() {
+  if (!fs.existsSync(categoriesPath)) {
+    return; // No categories directory, use existing devices.json
+  }
+
+  try {
+    const categoryFiles = fs.readdirSync(categoriesPath)
+      .filter(f => f.endsWith('.json') && f !== 'README.md')
+      .sort();
+
+    if (categoryFiles.length === 0) {
+      return; // No category files, use existing devices.json
+    }
+
+    console.log("🔄 Merging category files...");
+    let allDevices = [];
+
+    // Load each category file
+    for (const file of categoryFiles) {
+      const filepath = path.join(categoriesPath, file);
+      try {
+        const content = fs.readFileSync(filepath, 'utf8');
+        const data = JSON.parse(content);
+        const devices = Array.isArray(data) ? data : (data.devices || []);
+        allDevices = allDevices.concat(devices);
+        console.log(`  ✓ ${file}: ${devices.length} device(s)`);
+      } catch (err) {
+        console.warn(`  ⚠️  Error loading ${file}:`, err.message);
+      }
+    }
+
+    if (allDevices.length > 0) {
+      // Write merged devices.json
+      const output = {
+        devices: allDevices,
+        metadata: {
+          generated: new Date().toISOString(),
+          totalDevices: allDevices.length,
+          categories: [...new Set(allDevices.map(d => d.category))].sort(),
+          categoryCount: new Set(allDevices.map(d => d.category)).size
+        }
+      };
+
+      fs.writeFileSync(dataPath, JSON.stringify(output, null, 2));
+      console.log(`  ✓ Merged ${allDevices.length} device(s) → devices.json\n`);
+    }
+  } catch (err) {
+    console.warn("⚠️  Could not merge category files:", err.message);
+    console.log("   Proceeding with existing devices.json\n");
+  }
+}
 
 async function build() {
   console.log("\n🚀 Starting SD Card Checker site generation...\n");
 
   try {
+    // 0. Merge category files (if they exist)
+    mergeDeviceCategories();
+
     // 1. Load Data
     console.log("📊 Loading device data...");
     const devicesData = readJSON(dataPath);

@@ -31,7 +31,7 @@ const sortedDevices = [...devices].sort((a, b) => a.name.localeCompare(b.name));
 return sortedDevices
 .map(
 (device) => {
-   const categorySlug = device.category.toLowerCase().replace(/&/g, "").replace(/\s+/g, "-");
+   const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
   return `
 <div class="device-card" style="background-image: url('${getDeviceImage(device)}'); background-size: cover; background-position: center; position: relative;" role="article" aria-label="SD card recommendation for ${device.name}" tabindex="0" onmouseover="this.querySelector('.device-card-overlay').style.opacity='0.95'" onmouseout="this.querySelector('.device-card-overlay').style.opacity='0.85'">
 <div class="device-card-overlay" style="position: absolute; inset: 0; background: rgba(240, 240, 240, 0.85); transition: opacity 0.3s ease;"></div>
@@ -99,6 +99,7 @@ function generateCategoryPage(category, devices, template) {
 const baseUrl = "https://sdcardchecker.com";
 const categoryUrl = `${baseUrl}/categories/${category
 .toLowerCase()
+.replace(/&/g, "and")
 .replace(/\s+/g, "-")}/`;
 const categoryTitle = `Best SD Cards for ${category} | SD Card Checker`;
 const categoryIntro = getCategoryIntro(category);
@@ -109,7 +110,7 @@ const categoryIntro = getCategoryIntro(category);
     const deviceCardsHTML = generateDeviceCards(devices);
 
     // Generate breadcrumb schema for category pages
-    const categorySlug = category.toLowerCase().replace(/&/g, "").replace(/\s+/g, "-");
+    const categorySlug = category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
     const breadcrumbs = [
       { name: "Home", url: "/" },
       { name: category, url: `/categories/${categorySlug}/` }
@@ -166,7 +167,7 @@ async function generateCategoryPages(allDevices, distPath) {
                 grouped[category],
                 categoryTemplate
             );
-            const categorySlug = category.toLowerCase().replace(/&/g, "").replace(/\s+/g, "-");
+            const categorySlug = category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
             const categoryPath = path.join(
                 distPath,
                 "categories",

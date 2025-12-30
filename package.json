@@ -8,6 +8,8 @@
     "build:site": "node scripts/generator/build.js",
     "build:ja": "node scripts/generator/build-ja.js",
     "build:all": "npm run clean:dist && npm run build:css && npm run build:site && npm run build:ja",
+    "extract-category": "node scripts/extract-category.js",
+    "extract-category-ja": "node scripts/extract-category-ja.js",
     "clean:dist": "rimraf dist",
     "prebuild": "node scripts/build-amazon-data.js",
     "build": "npm run clean:dist && npm run build:css && npm run build:site && npx http-server dist",
