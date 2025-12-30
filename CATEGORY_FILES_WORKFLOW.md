@@ -1,104 +1,201 @@
-# Category Files Workflow
+# Category Files Workflow - FIXED
 
-**⚠️ IMPORTANT: Never edit `data/devices.json` directly**
+## Problem Fixed
+Previously, `data/devices.json` was being edited directly, which broke during category reorganization. Now:
 
-The new architecture uses **individual category files** as the source of truth:
-
-```
-data/categories/
-├── action-cameras.json
-├── cameras.json
-├── computing-and-tablets.json
-├── dash-cams.json
-├── drones.json
-├── gaming-handhelds.json
-├── retro-arcade.json
-├── retro-handhelds.json
-└── security-cameras.json
-```
-
-## Workflow
-
-### 1. **Edit Device Data**
-- Open the appropriate category file: e.g., `data/categories/cameras.json`
-- Make changes (add devices, update specs, add FAQs, etc.)
-- Save the file
-
-### 2. **Build Site**
-```bash
-npm run build
-```
-
-This will:
-1. Merge all category files → generates `data/devices.json`
-2. Generate all category pages from the merged data
-3. Generate all device pages
-4. Output to `dist/`
-
-### 3. **Commit Changes**
-```bash
-git add data/categories/
-git commit -m "Update camera specs and add new device"
-```
-
-**DO NOT commit `data/devices.json`** - it's in `.gitignore` and will be regenerated during build.
+✅ **Source of truth**: Individual category files in `data/categories/`  
+✅ **Generated artifact**: `data/devices.json` (never edit directly)  
+✅ **All category pages**: Working with devices displaying correctly  
 
 ---
 
 ## File Structure
 
-Each category file is a simple JSON array:
+```
+data/categories/
+├── action-cameras.json (15 devices)
+├── audio-and-hi-fi.json (9 devices)
+├── cameras.json (57 devices)
+├── computing-and-tablets.json (26 devices)
+├── dash-cams.json (18 devices)
+├── drones.json (22 devices)
+├── gaming-handhelds.json (16 devices)
+├── retro-arcade.json (1 device)
+├── retro-handhelds.json (3 devices)
+└── security-cameras.json (3 devices)
+```
+
+Each file is a JSON array of devices:
 
 ```json
 [
   {
-    "id": "camera-id",
-    "name": "Camera Name",
-    "category": "Cameras",
-    "slug": "camera-slug",
+    "id": "device-id",
+    "name": "Device Name",
+    "category": "Category Name",
+    "slug": "device-slug",
     "searchTerms": [...],
     "sdCard": {...},
     "recommendedBrands": [...],
     "faq": [...],
     "relatedDevices": [...]
-  }
+  },
+  ...
 ]
 ```
 
 ---
 
+## Workflow: How to Edit Data
+
+### 1. **Edit Device Data**
+Open the appropriate category file and make changes:
+
+```bash
+# Edit camera specs
+data/categories/cameras.json
+
+# Add new gaming device
+data/categories/gaming-handhelds.json
+
+# Update phone SD card requirements
+data/categories/computing-and-tablets.json
+```
+
+### 2. **Build Site**
+```bash
+npm run build:site
+```
+
+This will:
+- ✅ Merge all category files → `data/devices.json`
+- ✅ Generate all 10 category pages
+- ✅ Generate all 170+ device pages
+- ✅ Generate Japanese pages
+- ✅ Output everything to `dist/`
+
+### 3. **Verify Changes**
+Check the appropriate category page:
+```
+dist/categories/cameras/index.html
+dist/categories/drones/index.html
+dist/categories/gaming-handhelds/index.html
+```
+
+All devices should be displaying with working links.
+
+### 4. **Commit**
+```bash
+git add data/categories/
+git commit -m "Update camera specs and add new device"
+```
+
+**DO NOT commit `data/devices.json`** — it's in `.gitignore` and auto-generated.
+
+---
+
 ## Why This Architecture?
 
-✅ **Safety**: Never accidentally overwrite devices.json  
-✅ **Organization**: Each category is a separate, manageable file  
-✅ **Version Control**: Only category files are tracked in git  
-✅ **Clarity**: devices.json is clearly marked as generated  
+| Before | After |
+|--------|-------|
+| ❌ Direct edits to devices.json | ✅ Edit individual category files |
+| ❌ Risk of full data loss | ✅ Safe, localized changes |
+| ❌ Hard to track what changed | ✅ Git shows category file diffs |
+| ❌ Merge conflicts on large file | ✅ Smaller, focused files |
+| ❌ Manual merging after extraction | ✅ Automatic merge during build |
+
+---
+
+## Common Tasks
+
+### Add a New Device
+1. Open the category file (e.g., `data/categories/cameras.json`)
+2. Add a new object to the array:
+```json
+{
+  "id": "canon-eos-r6",
+  "name": "Canon EOS R6",
+  "category": "Cameras",
+  "slug": "canon-eos-r6",
+  "searchTerms": [...],
+  "sdCard": {...},
+  "recommendedBrands": [...],
+  "faq": [...],
+  "relatedDevices": [...]
+}
+```
+3. Run: `npm run build:site`
+4. Commit: `git add data/categories/ && git commit -m "Add Canon EOS R6"`
+
+### Move Device to Different Category
+1. Copy the device object from source category file
+2. Paste it into destination category file
+3. Delete it from source category file
+4. Run: `npm run build:site`
+5. Commit
+
+### Update Device Specs
+1. Open the category file
+2. Find the device by `id` or `name`
+3. Edit `sdCard`, `recommendedBrands`, or `faq`
+4. Run: `npm run build:site`
+5. Commit
+
+### Add FAQ to Device
+1. Open the category file
+2. Find the device
+3. Add to the `faq` array:
+```json
+{
+  "q": "Question text?",
+  "a": "Answer text with <b>bold</b> and <i>italic</i> formatting"
+}
+```
+4. Run: `npm run build:site`
+5. Commit
 
 ---
 
 ## Troubleshooting
 
-**Q: I edited devices.json but changes disappeared after build**  
-A: devices.json is regenerated from category files during build. Edit the category files instead.
+**Q: I see outdated data in the category page**  
+A: Run `npm run build:site` to rebuild from updated category files.
 
-**Q: How do I add a new device?**  
-A: Edit the appropriate category file (e.g., `data/categories/cameras.json`) and add a new object to the array.
+**Q: devices.json appeared in git diff**  
+A: It's in `.gitignore` now. Just ignore it — don't commit it.
 
-**Q: How do I change a device's category?**  
-A: Move the device object to the appropriate category file (e.g., from `cameras.json` to `drones.json`).
+**Q: Build is taking a long time**  
+A: The `npm run build` script hits Amazon APIs. Use `npm run build:site` for local changes without API calls.
 
-**Q: I see devices.json in my working directory but it's not in git**  
-A: That's correct - it's a generated file. Delete it or ignore it; it will be recreated on next build.
+**Q: I accidentally deleted a device**  
+A: Check git history: `git log -p data/categories/[category].json` and restore the file.
+
+**Q: Multiple people editing the same category file**  
+A: Same as any git workflow — pull latest, merge conflicts if needed, push. Smaller files = fewer conflicts.
+
+---
+
+## Key Rules
+
+🔴 **NEVER** directly edit `data/devices.json`  
+✅ **ALWAYS** edit category files in `data/categories/`  
+✅ **RUN** `npm run build:site` after changes  
+✅ **COMMIT** only category files  
 
 ---
 
 ## Build Script Details
 
-The build script (`scripts/generator/build.js`) automatically:
+The build process (`scripts/generator/build.js`) automatically:
 
-1. **Merges category files**: Reads all `data/categories/*.json` files
-2. **Creates devices.json**: Writes merged data with metadata
-3. **Groups by category**: For category page generation
-4. **Generates pages**: Uses merged data for all templates
+1. **Reads all category files** from `data/categories/*.json`
+2. **Merges into devices.json** with metadata (timestamp, counts)
+3. **Groups by category** for category page generation
+4. **Generates HTML**:
+   - 10 category pages (one per category)
+   - 170+ device pages
+   - 170+ Japanese device pages
+   - Related device sections
+   - All responsive layouts
 
-This happens automatically - no manual steps needed!
+No manual intervention needed — it's all automatic!
