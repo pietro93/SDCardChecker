@@ -6025,6 +6025,126 @@
       ]
     },
     {
+      "id": "walksnail-moonlight",
+      "name": "Walksnail Moonlight Kit",
+      "category": "Drones",
+      "slug": "walksnail-moonlight",
+      "imageUrl": "/img/devices/drones/walksnail-moonlight.webp",
+      "searchTerms": [
+        "walksnail moonlight sd card",
+        "walksnail avatar moonlight recording",
+        "walksnail 4k kit storage",
+        "caddx moonlight sd card"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30 / U3",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "256GB"
+      },
+      "whySpecs": "The Moonlight system records 4K/60fps footage with a bitrate of up to 150Mbps. This is significantly higher than standard drones. A V30 or U3 card is mandatory; slower cards will cause recording to freeze after a few seconds or result in corrupted files.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the maximum SD card size for Walksnail Moonlight?",
+          "a": "<b>The official maximum supported capacity is 256GB.</b> While some users report success with 512GB cards formatted to FAT32, the system is most stable with 256GB cards or smaller. Using unsupported sizes increases the risk of the 'SD Card Full' error appearing incorrectly."
+        },
+        {
+          "q": "Why does my recording stop after 5-10 seconds?",
+          "a": "<b>This indicates the SD card is too slow.</b> The Moonlight writes data at 150Mbps. If the card dips below this write speed (common with U1 or fake cards), the system terminates the recording to prevent data corruption. Ensure you are using a genuine V30/U3 card."
+        },
+        {
+          "q": "Does the Moonlight record Gyroflow data?",
+          "a": "<b>Yes, the Moonlight records gyro data required for Gyroflow stabilization.</b> This data is embedded in the video file. A fast, stable SD card is critical here; if the card stutters, the gyro data may desync, making stabilization impossible in post-production."
+        },
+        {
+          "q": "How do I format the SD card for Walksnail?",
+          "a": "<b>It is highly recommended to format the card via the VRX (Goggles) menu.</b> This ensures the correct file system (usually exFAT) and allocation unit size are applied for optimal recording performance."
+        }
+      ],
+      "relatedDevices": [
+        "dji-avata-2",
+        "hoverair-x1-pro",
+        "skydio-2-plus"
+      ],
+      "notes": "A dedicated FPV night-vision system. Unlike the standard Walksnail VTX which has onboard storage, the Moonlight requires an SD card for 4K recording."
+    },
+    {
+      "id": "dji-avata-2",
+      "name": "DJI Avata 2",
+      "category": "Drones",
+      "slug": "dji-avata-2",
+      "imageUrl": "/img/devices/drones/dji-avata-2.webp",
+      "searchTerms": [
+        "dji avata 2 sd card",
+        "avata 2 memory card",
+        "dji avata 2 max storage",
+        "best sd card for avata 2"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "The Avata 2 records 4K/60fps HDR video. While it has generous internal storage, a V30 microSD card is required for extended sessions and easier file transfer. The high data rate needed for the 10-bit D-Log M color profile demands consistent write speeds.",
+      "recommendedBrands": [
+        {
+          "id": "kingston-canvas-go-plus"
+        },
+        {
+          "id": "sandisk-extreme-pro-microsd-v60"
+        },
+        {
+          "id": "lexar-professional-1066x-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does the DJI Avata 2 need an SD card?",
+          "a": "<b>Technically no, but practically yes.</b> The Avata 2 has 46GB of internal storage, which allows for about 45 minutes of 4K recording. However, for a full day of flying or to avoid filling up the drone mid-flight, a microSD card is strongly recommended."
+        },
+        {
+          "q": "What is the max SD card size for Avata 2?",
+          "a": "<b>The DJI Avata 2 supports microSD cards up to 512GB.</b> This allows for many hours of high-bitrate 4K footage without needing to swap cards."
+        },
+        {
+          "q": "Is a V60 card required for Avata 2?",
+          "a": "<b>No, a V30 card is sufficient for the Avata 2's maximum bitrate.</b> However, using a V60 or V90 card will significantly speed up the process of transferring files from the card to your computer, which can save time given the large file sizes."
+        },
+        {
+          "q": "Where is the SD card slot on the Avata 2?",
+          "a": "<b>The SD card slot is located inside the USB-C port cover on the side of the drone.</b> Unlike the first generation Avata (where it was hard to reach inside the duct), the Avata 2 slot is much more accessible."
+        }
+      ],
+      "relatedDevices": [
+        "walksnail-moonlight",
+        "dji-mini-4-pro",
+        "dji-air-3"
+      ],
+      "notes": "Released in 2024. Features 46GB internal storage, but SD card expansion is standard practice for FPV pilots."
+    },
+    {
       "id": "nintendo-switch",
       "name": "Nintendo Switch",
       "category": "Gaming Handhelds",
@@ -6853,7 +6973,7 @@
     {
       "id": "egret-ii-mini",
       "name": "Egret II Mini",
-      "category": "Retro Arcade",
+      "category": "Gaming Handhelds",
       "slug": "egret-ii-mini",
       "searchTerms": [
         "egret ii mini sd card",
@@ -6890,7 +7010,7 @@
     {
       "id": "analogue-pocket",
       "name": "Analogue Pocket",
-      "category": "Retro Handhelds",
+      "category": "Gaming Handhelds",
       "slug": "analogue-pocket",
       "searchTerms": [
         "analogue pocket sd card",
@@ -6937,7 +7057,7 @@
     {
       "id": "sony-ps-vita-sd2vita",
       "name": "Sony PS Vita (SD2Vita)",
-      "category": "Retro Handhelds",
+      "category": "Gaming Handhelds",
       "slug": "sony-ps-vita-sd2vita",
       "searchTerms": [
         "ps vita sd2vita card",
@@ -6984,7 +7104,7 @@
     {
       "id": "anbernic-rg556",
       "name": "Anbernic RG556",
-      "category": "Retro Handhelds",
+      "category": "Gaming Handhelds",
       "slug": "anbernic-rg556",
       "searchTerms": [
         "anbernic rg556 sd card",
@@ -7424,8 +7544,8 @@
     }
   ],
   "metadata": {
-    "generated": "2025-12-30T09:47:24.147Z",
-    "totalDevices": 167,
+    "generated": "2025-12-30T10:21:02.618Z",
+    "totalDevices": 169,
     "categories": [
       "Action Cameras",
       "Audio & Hi-Fi",
@@ -7434,11 +7554,9 @@
       "Dash Cams",
       "Drones",
       "Gaming Handhelds",
-      "Retro Arcade",
-      "Retro Handhelds",
       "Security Cameras",
       "Smartphones"
     ],
-    "categoryCount": 11
+    "categoryCount": 9
   }
 }

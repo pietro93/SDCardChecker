@@ -1296,46 +1296,133 @@
     "notes": "RG Cube（RGキューブ）も同様の仕様です。"
   },
   {
-    "id": "gpd-win-mini",
-    "name": "GPD Win Mini",
-    "category": "computing-and-tablets",
-    "slug": "gpd-win-mini",
+    "id": "egret-ii-mini",
+    "name": "イーグレットツー ミニ",
+    "category": "gaming-handhelds",
+    "slug": "egret-ii-mini",
     "searchTerms": [
-      "gpd win mini sdカード",
-      "gpd win 4 sdカード 速度",
-      "umpc microsd おすすめ",
-      "gpd uhs-ii 対応"
+      "イーグレットツーミニ sdカード",
+      "egret ii mini アップデート sd",
+      "タイトー ミニ 改造"
     ],
     "sdCard": {
-      "type": "microSD UHS-II (対応モデル)",
-      "minSpeed": "U3 / V60",
-      "minWriteSpeed": "60 MB/s",
+      "type": "SDHC / SDXC",
+      "minSpeed": "Class 10",
+      "minWriteSpeed": "10 MB/s",
       "recommendedCapacity": [
-        "512GB",
-        "1TB",
-        "2TB"
+        "32GB",
+        "64GB"
       ],
-      "maxCapacity": "2TB"
+      "maxCapacity": "128GB"
     },
-    "whySpecs": "GPD Win MiniやWin 4は、競合機とは異なり「UHS-II」規格の高速カードリーダーを搭載していることが多いです。V60やV90規格のUHS-IIカードを使用することで、SSDに近い速度でゲームをロードできます。",
+    "whySpecs": "ファームウェアのアップデートや、追加ゲームの読み込みに使用します。書き込み速度は重要ではありませんが、互換性のために信頼できるブランド（SanDiskやKIOXIAなど）のClass10カードを選ぶのが無難です。",
     "recommendedBrands": [
       {
-        "id": "prograde-digital-uhs-ii"
+        "id": "kioxia-exceria"
       },
       {
-        "id": "sandisk-extreme-pro-uhs-ii"
+        "id": "sandisk-ultra-sd"
       }
     ],
     "faq": [
       {
-        "q": "UHS-IIカードを買う価値はありますか？",
-        "a": "<b>はい、GPDユーザーには強く推奨します。</b> 多くのUMPCはUHS-Iまでしか対応していませんが、GPDはUHS-IIに対応しているため、その性能をフルに活かせばAAAタイトルのロード時間が大幅に短縮されます。"
+        "q": "microSDカードは使えますか？",
+        "a": "<b>はい、変換アダプターを使えば問題なく使用できます。</b> 本体スロットはフルサイズのSDカード用です。"
+      }
+    ],
+    "notes": "日本のレトロゲーマーに人気の高い機種です。"
+  },
+  {
+    "id": "analogue-pocket",
+    "name": "Analogue Pocket（アナログ・ポケット）",
+    "category": "gaming-handhelds",
+    "slug": "analogue-pocket",
+    "searchTerms": [
+      "analogue pocket sdカード",
+      "アナログポケット microsd用",
+      "analogue pocket openfpga 用",
+      "analogue pocket 推奨sd"
+    ],
+    "sdCard": {
+      "type": "microSD, microSDHC, microSDXC",
+      "minSpeed": "Class 10",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Analogue Pocketは「OpenFPGA」と呼ばれる機能を利用して、SDカードから様々なコアやROMを読み込みます。ゲームプレイ自体は内部メモリで行われるため超高速なカードは不要ですが、信頼性の高いブランド製カードを使用することで、アップデート時のトラブルやデータ消失を防ぐことができます。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "フォーマット形式はどうすればいいですか？",
+        "a": "<b>exFAT（推奨）またはFAT32にフォーマットしてください。</b> Analogue OSはexFATを公式にサポートしており、4GB以上の大きなファイルも扱えるため管理が容易です。"
+      },
+      {
+        "q": "高速なカードは必要ですか？",
+        "a": "<b>ゲームプレイには必須ではありません。</b> ゲームは起動時に本体RAMにロードされるため、SDカードの速度はロード時間（コピー時間）にのみ影響します。"
       }
     ],
     "relatedDevices": [
-      "asus-rog-ally",
-      "steam-deck"
+      "nintendo-3ds-xl",
+      "miyoo-mini-plus"
     ],
-    "notes": "購入したモデルの年式を確認してください（最新モデルはUHS-II対応）。日本ではHigh-Beam等の代理店経由のユーザーが多いです。"
+    "notes": "OpenFPGA機能を利用するにはSDカードが必須です。"
+  },
+  {
+    "id": "sony-ps-vita-sd2vita",
+    "name": "PlayStation Vita (SD2Vita)",
+    "category": "gaming-handhelds",
+    "slug": "sony-ps-vita-sd2vita",
+    "searchTerms": [
+      "ps vita sd2vita おすすめ",
+      "ps vita 改造 sdカード",
+      "sd2vita 容量 最大",
+      "vita microsd 認識しない"
+    ],
+    "sdCard": {
+      "type": "microSD (要SD2Vitaアダプター)",
+      "minSpeed": "Class 10",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "PS Vitaは本来専用メモリーカードを使用しますが、カスタムファームウェア（Henkaku）導入済みの端末では「SD2Vita」アダプターを使って安価なmicroSDカードを利用できます。運用上、128GBまたは256GBがコストと安定性のバランスに優れています。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "普通のVitaでも使えますか？",
+        "a": "<b>いいえ、改造（CFW導入）が必要です。</b> 未改造のVitaではmicroSDカードは認識しません。"
+      },
+      {
+        "q": "最大容量は？",
+        "a": "<b>256GB〜512GBが実用的な上限です。</b> 1TBなども理論上は使えますが、LiveArea（メニュー画面）の動作が重くなったり、アイコン表示に不具合が出ることがあります。"
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-3ds-xl",
+      "anbernic-rg353v"
+    ],
+    "notes": "別途「SD2Vita」アダプターの購入が必要です。Amazon等で安価に入手可能です。"
   }
 ]

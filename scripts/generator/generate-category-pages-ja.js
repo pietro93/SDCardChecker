@@ -75,23 +75,25 @@ function generateDeviceCards(devices) {
  * Map category names to icon file names (same for Japanese)
  */
 function getCategoryIcon(category) {
-  const iconMap = {
-    "Cameras": "camera",
-    "カメラ": "camera",
-    "Action Cameras": "action-camera",
-    "アクションカメラ": "action-camera",
-    "Drones": "drone",
-    "ドローン": "drone",
-    "Gaming Handhelds": "gaming",
-    "携帯ゲーム機": "gaming",
-    "Computing & Tablets": "computing",
-    "コンピュータ・タブレット": "computing",
-    "Security Cameras": "security-camera",
-    "セキュリティカメラ": "security-camera",
-    "Dash Cams": "dashcam",
-    "ドライブレコーダー": "dashcam"
-  };
-  return iconMap[category] || "camera"; // Default fallback
+   const iconMap = {
+     "Cameras": "camera",
+     "カメラ": "camera",
+     "Action Cameras": "action-camera",
+     "アクションカメラ": "action-camera",
+     "Drones": "drone",
+     "ドローン": "drone",
+     "Gaming Handhelds": "gaming",
+     "携帯ゲーム機": "gaming",
+     "Computing & Tablets": "computing",
+     "コンピュータ・タブレット": "computing",
+     "Security Cameras": "security-camera",
+     "セキュリティカメラ": "security-camera",
+     "Dash Cams": "dashcam",
+     "ドライブレコーダー": "dashcam",
+     "Accessories": "accessory",
+     "Audio & Hi-Fi": "audio-hi-fi"
+   };
+   return iconMap[category] || "camera"; // Default fallback
 }
 
 /**

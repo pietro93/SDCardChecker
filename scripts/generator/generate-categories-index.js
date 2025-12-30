@@ -69,7 +69,8 @@ function getCategoryIcon(category) {
     "セキュリティカメラ": "security-camera",
     "Dash Cams": "dashcam",
     "ダッシュカメラ": "dashcam",
-    "Accessories": "accessory"
+    "Accessories": "accessory",
+    "Audio & Hi-Fi": "audio-hi-fi"
   };
   return iconMap[category] || "camera";
 }

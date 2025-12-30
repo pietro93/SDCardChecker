@@ -1,21 +1,20 @@
 {
   "_metadata": {
     "language": "Japanese (日本語)",
-    "generated": "2025-12-30T09:47:24.157Z",
-    "totalDevices": 158,
+    "generated": "2025-12-30T10:21:02.630Z",
+    "totalDevices": 160,
     "categories": [
       "accessories",
       "action-cameras",
+      "audio-and-hi-fi",
       "cameras",
       "computing-and-tablets",
       "dash-cams",
       "drones",
       "gaming-handhelds",
-      "retro-arcade",
-      "retro-handhelds",
       "security-cameras"
     ],
-    "categoryCount": 10
+    "categoryCount": 9
   },
   "devices": [
     {
@@ -5716,6 +5715,126 @@
       "notes": ""
     },
     {
+      "id": "walksnail-moonlight",
+      "name": "Walksnail Moonlight Kit（ウォークスネイル ムーンライト）",
+      "category": "drones",
+      "slug": "walksnail-moonlight",
+      "imageUrl": "/img/devices/drones/walksnail-moonlight.webp",
+      "searchTerms": [
+        "Walksnail Moonlight SDカード",
+        "Walksnail Avatar 録画",
+        "Caddx Moonlight 推奨SDカード",
+        "ムーンライト 4K 録画 止まる"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30 / U3",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "256GB"
+      },
+      "whySpecs": "Moonlightシステムは、最大150Mbpsという非常に高いビットレートで4K/60fps映像を記録します。これは一般的なドローンよりも高い数値です。V30またはU3規格のカードが必須であり、書き込み速度の遅いカードを使用すると、録画が数秒で停止したり、ファイルが破損したりする原因となります。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Walksnail Moonlightで使用できるSDカードの最大容量は？",
+          "a": "<b>公式にサポートされている最大容量は256GBです。</b> 512GBのカードでもFAT32形式にフォーマットすることで動作するという報告もありますが、飛行中の認識エラーのリスクが高まるため、安定性を重視する場合は256GB以下の使用を推奨します。"
+        },
+        {
+          "q": "録画が数秒で止まってしまうのはなぜですか？",
+          "a": "<b>SDカードの書き込み速度不足が主な原因です。</b> Moonlightは150Mbpsでデータを書き込むため、V30（U3）非対応のカードや、劣化して速度が低下したカードでは処理が追いつかず、データ保護のために録画が強制停止されます。"
+        },
+        {
+          "q": "Gyroflow用のデータは記録されますか？",
+          "a": "<b>はい、動画ファイル内にジャイロデータが埋め込まれて記録されます。</b> これにより、Gyroflowを使用した強力な手ブレ補正が可能になります。ただし、SDカードの速度が不安定だとジャイロデータが欠落する場合があるため、高品質なカードの使用が重要です。"
+        },
+        {
+          "q": "SDカードのフォーマット方法は？",
+          "a": "<b>ゴーグル（VRX）のメニュー画面からフォーマットすることを強く推奨します。</b> PCでフォーマットするよりも、システムに最適なアロケーションユニットサイズで初期化され、録画トラブルを防ぐことができます。"
+        }
+      ],
+      "relatedDevices": [
+        "dji-avata-2",
+        "hoverair-x1-pro",
+        "skydio-2-plus"
+      ],
+      "notes": "暗所撮影に特化したFPVシステムです。オンボードメモリを持つ通常のWalksnail VTXとは異なり、Moonlightで4K録画を行うにはSDカードが必須です。"
+    },
+    {
+      "id": "dji-avata-2",
+      "name": "DJI Avata 2",
+      "category": "drones",
+      "slug": "dji-avata-2",
+      "imageUrl": "/img/devices/drones/dji-avata-2.webp",
+      "searchTerms": [
+        "DJI Avata 2 SDカード",
+        "Avata 2 容量",
+        "DJI アバタ 2 メモリーカード",
+        "Avata 2 推奨SDカード"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "DJI Avata 2は、高画質な4K/60fps HDRビデオを記録します。46GBの大容量内部ストレージを搭載していますが、長時間のフライトやデータ転送の利便性を考慮すると、V30規格のmicroSDカードの使用が推奨されます。特に10-bit D-Log Mカラープロファイルでの撮影には、安定した書き込み速度が必要です。",
+      "recommendedBrands": [
+        {
+          "id": "kingston-canvas-go-plus"
+        },
+        {
+          "id": "sandisk-extreme-pro-microsd-v60"
+        },
+        {
+          "id": "lexar-professional-1066x-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "DJI Avata 2にSDカードは必須ですか？",
+          "a": "<b>必須ではありませんが、強く推奨されます。</b> Avata 2には46GBの内部ストレージがあり、4K/60fpsで約45分間の録画が可能です。しかし、終日撮影する場合や、万が一の容量不足を防ぐために、予備としてmicroSDカードを入れておくのが一般的です。"
+        },
+        {
+          "q": "Avata 2の最大SDカード容量は？",
+          "a": "<b>最大512GBまでのmicroSDカードに対応しています。</b> これにより、高ビットレートの4K映像でもカード交換なしで長時間記録し続けることが可能です。"
+        },
+        {
+          "q": "V60の高速カードは必要ですか？",
+          "a": "<b>録画自体にはV30カードで十分です。</b> しかし、V60やV90のカードを使用すると、撮影後にPCへデータを転送する速度が大幅に向上するため、ファイルサイズが大きいAvata 2の運用が快適になります。"
+        },
+        {
+          "q": "SDカードスロットはどこにありますか？",
+          "a": "<b>機体側面のUSB-Cポートカバーの中にあります。</b> 初代Avata（ダクトの内側にありアクセスが困難だった）とは異なり、Avata 2では非常にアクセスしやすい場所に配置されています。"
+        }
+      ],
+      "relatedDevices": [
+        "walksnail-moonlight",
+        "dji-mini-4-pro",
+        "dji-air-3"
+      ],
+      "notes": "2024年発売の人気FPVドローン。46GBの内部ストレージを搭載していますが、多くのパイロットはデータ管理のためにSDカードを使用しています。"
+    },
+    {
       "id": "nintendo-switch",
       "name": "Nintendo Switch（ニンテンドースイッチ）",
       "category": "gaming-handhelds",
@@ -7057,7 +7176,7 @@
     {
       "id": "egret-ii-mini",
       "name": "イーグレットツー ミニ",
-      "category": "retro-arcade",
+      "category": "gaming-handhelds",
       "slug": "egret-ii-mini",
       "searchTerms": [
         "イーグレットツーミニ sdカード",
@@ -7094,7 +7213,7 @@
     {
       "id": "analogue-pocket",
       "name": "Analogue Pocket（アナログ・ポケット）",
-      "category": "retro-handhelds",
+      "category": "gaming-handhelds",
       "slug": "analogue-pocket",
       "searchTerms": [
         "analogue pocket sdカード",
@@ -7141,7 +7260,7 @@
     {
       "id": "sony-ps-vita-sd2vita",
       "name": "PlayStation Vita (SD2Vita)",
-      "category": "retro-handhelds",
+      "category": "gaming-handhelds",
       "slug": "sony-ps-vita-sd2vita",
       "searchTerms": [
         "ps vita sd2vita おすすめ",
