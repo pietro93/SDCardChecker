@@ -142,16 +142,16 @@
             {{READER_RECOMMENDATIONS_SECTION}}
 
             <!-- Specs Grid -->
-            <section id="specifications" class="mb-16 scroll-mt-20">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6">{{SPECS_SECTION_TITLE}}</h2>
-                <div class="specs-grid grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    {{SPECS_HTML}}
-                </div>
-            </section>
+             <section id="specifications" class="mb-16 scroll-mt-20">
+                 <h2 class="text-2xl font-bold text-slate-900 mb-6">{{SPECS_SECTION_TITLE}}</h2>
+                 <div class="specs-grid grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                     {{SPECS_HTML}}
+                 </div>
+             </section>
 
-            <!-- Recommended Brands Section -->
-            <section id="brands" class="mb-16 scroll-mt-20">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6">{{BRANDS_SECTION_TITLE}}</h2>
+             <!-- Recommended Brands Section -->
+             <section id="brands" class="mb-16 scroll-mt-20">
+                 <h2 class="text-2xl font-bold text-slate-900 mb-6">{{BRANDS_SECTION_TITLE}}</h2>
                 {{#if REQUIRES_READER}}
                 <p class="text-slate-600 mb-6">Once you have a reader, these are the best SD cards to use with your {{DEVICE_NAME}}:</p>
                 {{/if}}
@@ -413,6 +413,85 @@
 
         .device-card:hover .device-card-text {
             opacity: 1 !important;
+        }
+
+        /* Dual Answer Box Styling */
+        .answer-box-dual {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .answer-box-item {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border: 2px solid #bae6fd;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .answer-box-primary {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-color: #3b82f6;
+        }
+
+        .answer-box-secondary {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-color: #10b981;
+        }
+
+        /* Notice Box Styling */
+        .notice-box {
+            @apply bg-amber-50 border-l-4 border-amber-500 rounded-lg p-6 mb-8 shadow-sm;
+        }
+
+        .notice-box-icon {
+            @apply text-amber-600 text-2xl mb-3;
+        }
+
+        .notice-box-title {
+            @apply font-bold text-amber-900 text-lg mb-2;
+        }
+
+        .notice-box-text {
+            @apply text-amber-800 leading-relaxed;
+        }
+
+        /* Reader Card Styling */
+        .reader-card {
+            @apply bg-white rounded-xl border-2 border-slate-200 p-6 hover:border-blue-400 hover:shadow-lg transition-all;
+        }
+
+        .reader-card-header {
+            @apply flex items-start gap-4 mb-4;
+        }
+
+        .reader-card-image {
+            @apply w-24 h-24 object-contain flex-shrink-0;
+        }
+
+        .reader-card-name {
+            @apply font-bold text-slate-900 text-lg mb-2;
+        }
+
+        .reader-card-features {
+            @apply flex flex-wrap gap-2 mb-4;
+        }
+
+        .reader-feature-badge {
+            @apply bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full;
+        }
+
+        .reader-card-cta {
+            @apply bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition-all text-center shadow-md hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2 w-full;
+        }
+
+        /* Mobile Responsiveness for Dual-Answer Box */
+        @media (max-width: 768px) {
+            .answer-box-dual {
+                grid-template-columns: 1fr;
+            }
         }
 
         /* Mobile Card Layout for Brands Table */

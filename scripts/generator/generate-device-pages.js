@@ -365,9 +365,69 @@ function generateAlternatives(device, sdcardsMap) {
 }
 
 /**
+ * Generate reader recommendations section HTML
+ */
+function generateReaderRecommendationsSection(device, readersData, isJapanese = false) {
+    if (!device.requiresReader || !device.recommendedReaders || !readersData) {
+        return '';
+    }
+
+    const compatibleReaders = device.recommendedReaders
+        .map(readerId => readersData.find(r => r.id === readerId))
+        .filter(r => r !== undefined);
+
+    if (compatibleReaders.length === 0) {
+        return '';
+    }
+
+    const sectionTitle = isJapanese ? "推奨されるSDカードリーダー" : `Recommended SD Card Readers for ${device.name}`;
+    const readerCardHtml = compatibleReaders.map(reader => {
+        // Use heroImage if available, otherwise use icon-card-reader
+        const readerImageUrl = reader.heroImage || '/img/brand/icon-card-reader.webp';
+        return `
+        <div class="reader-card">
+            <div class="reader-card-header">
+                <img src="${readerImageUrl}" 
+                     alt="${reader.name}" 
+                     class="reader-card-image"
+                     loading="lazy"
+                     width="96"
+                     height="96">
+                <div class="flex-1">
+                    <h3 class="reader-card-name">${reader.name}</h3>
+                    <div class="reader-card-features">
+                        ${reader.features.slice(0, 3).map(f => `
+                            <span class="reader-feature-badge">${f}</span>
+                        `).join('')}
+                    </div>
+                </div>
+            </div>
+            <p class="text-sm text-slate-600 mb-4">${reader.whyChooseThis}</p>
+            <a href="${reader.amazonSearchUrl}" 
+               class="reader-card-cta"
+               target="_blank"
+               rel="nofollow noopener">
+                <i class="fab fa-amazon"></i>
+                ${isJapanese ? 'Amazonで確認' : 'Check Price on Amazon'}
+            </a>
+        </div>
+    `;
+    }).join('');
+
+    return `
+        <section id="readers" class="mb-16 scroll-mt-20">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">${sectionTitle}</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                ${readerCardHtml}
+            </div>
+        </section>
+    `;
+}
+
+/**
  * Generate single device page
  */
-function generateDevicePage(device, template, allDevices, sdcardsMap, deviceIndex = 0, isJapanese = false) {
+function generateDevicePage(device, template, allDevices, sdcardsMap, deviceIndex = 0, isJapanese = false, readersData = null) {
     const baseUrl = "https://sdcardchecker.com";
     const categorySlug = getCategorySlug(device.category, isJapanese);
     const deviceUrlPath = isJapanese ? `/ja/categories/${categorySlug}/${device.slug}/` : `/categories/${categorySlug}/${device.slug}/`;
@@ -388,6 +448,83 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace("Hero 13 Black", "Hero 13")
         .replace("Hero 12 Black", "Hero 12");
 
+    // Extract connector type for reader-only devices
+    const requiresReader = device.requiresReader === true;
+    let connectorType = "USB";
+    if (requiresReader) {
+        if (device.sdCard.type.includes('USB-C')) connectorType = "USB-C";
+        else if (device.sdCard.type.includes('Lightning')) connectorType = "Lightning";
+    }
+
+    // PAGE_TITLE (targets both searches for reader-only devices)
+    const pageTitle = requiresReader
+        ? `Best SD Cards & Readers for ${device.name}`
+        : `Best SD Card for ${device.name}`;
+
+    // EXPERT_SUBTITLE
+    const expertSubtitle = requiresReader
+        ? `Complete guide: ${connectorType} card readers and compatible SD cards for ${device.name}`
+        : `Expert recommendations based on ${device.name} specifications`;
+
+    // NO_SLOT_NOTICE
+    let noSlotNotice = '';
+    if (requiresReader) {
+        const noticeText = isJapanese
+            ? `<div class="notice-box">
+                <i class="fas fa-info-circle notice-box-icon"></i>
+                <h3 class="notice-box-title">SDカードリーダーが必要です</h3>
+                <p class="notice-box-text">
+                    ${device.name}には組み込みのSDカードスロットがありません。 
+                    SDカードを使用するには、<b>${connectorType}カードリーダー</b>が必要です。 
+                    以下に、<b>互換性のあるリーダー</b>と<b>それらと一緒に使用するのに最適なSDカード</b>の両方をお勧めします。
+                </p>
+            </div>`
+            : `<div class="notice-box">
+                <i class="fas fa-info-circle notice-box-icon"></i>
+                <h3 class="notice-box-title">SD Card Reader Required</h3>
+                <p class="notice-box-text">
+                    The ${device.name} does not have a built-in SD card slot. 
+                    To use SD cards, you'll need a <b>${connectorType} card reader</b>. 
+                    Below, we recommend both <b>compatible readers</b> and the <b>best SD cards to use with them</b>.
+                </p>
+            </div>`;
+        noSlotNotice = noticeText;
+    }
+
+    // READER ANSWER BOX & CARD ANSWER BOX
+    let readerAnswer = '';
+    let readerExplanation = '';
+    let cardAnswer = '';
+    let cardExplanation = '';
+
+    if (requiresReader) {
+        readerAnswer = `${connectorType} SD Card Reader`;
+        readerExplanation = isJapanese
+            ? `USB 3.0サポート付きのリーダーをお勧めします。転送速度が大幅に向上します。`
+            : `Any ${connectorType} reader works, but we recommend ones with USB 3.0 support for faster transfers.`;
+
+        const speedDisplay = device.sdCard.minSpeed || device.sdCard.type;
+        cardAnswer = speedDisplay;
+        cardExplanation = isJapanese
+            ? `リーダーとペアにして、最適なパフォーマンスを実現するために${speedDisplay}カードを選択してください。`
+            : `Pair your reader with a ${speedDisplay} card for optimal performance on ${device.name}.`;
+    }
+
+    // READER RECOMMENDATIONS SECTION
+    let readerRecommendationsSection = '';
+    if (requiresReader && readersData) {
+        readerRecommendationsSection = generateReaderRecommendationsSection(device, readersData, isJapanese);
+    }
+
+    // SPECS SECTION TITLE & BRANDS SECTION TITLE
+    const specsSectionTitle = requiresReader
+        ? (isJapanese ? "リーダーのSDカード仕様" : "SD Card Specifications for Your Reader")
+        : (isJapanese ? "詳細な仕様" : "Detailed Specifications");
+
+    const brandsSectionTitle = requiresReader
+        ? (isJapanese ? "リーダーで使用するのに最適なSDカード" : "Best SD Cards to Use with Your Reader")
+        : (isJapanese ? "上位SDカード推奨" : "Top SD Card Recommendations");
+
     const title = `Best SD Cards for ${device.name} | ${device.sdCard.type} Requirements & Recommendations`;
     const ogTitle = `${device.name} ${device.sdCard.type} Guide | Requirements & Best Cards`;
     const twitterTitle = `${device.name} SD Card Guide | Best Recommendations`;
@@ -395,7 +532,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const description = generateUniqueMetaDescription(device, brandNames, deviceIndex);
 
     let answerText = device.sdCard.type;
-    if (device.sdCard.minSpeed !== "No minimum required") {
+    if (device.sdCard.minSpeed && device.sdCard.minSpeed !== "No minimum required") {
         answerText += ` (${device.sdCard.minSpeed} or faster)`;
     }
 
@@ -506,6 +643,17 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{CATEGORY_SLUG}}/g, categorySlug)
         .replace(/{{CATEGORY_NAME}}/g, categoryDisplayName)
         .replace(/{{DEVICE_IMAGE}}/g, deviceImage)
+        .replace(/{{PAGE_TITLE}}/g, pageTitle)
+        .replace(/{{EXPERT_SUBTITLE}}/g, expertSubtitle)
+        .replace(/{{NO_SLOT_NOTICE}}/g, noSlotNotice)
+        .replace(/{{REQUIRES_READER}}/g, requiresReader ? 'true' : 'false')
+        .replace(/{{READER_ANSWER}}/g, readerAnswer)
+        .replace(/{{READER_EXPLANATION}}/g, readerExplanation)
+        .replace(/{{CARD_ANSWER}}/g, cardAnswer)
+        .replace(/{{CARD_EXPLANATION}}/g, cardExplanation)
+        .replace(/{{READER_RECOMMENDATIONS_SECTION}}/g, readerRecommendationsSection)
+        .replace(/{{SPECS_SECTION_TITLE}}/g, specsSectionTitle)
+        .replace(/{{BRANDS_SECTION_TITLE}}/g, brandsSectionTitle)
         .replace(/{{ANSWER_TEXT}}/g, answerText)
         .replace(/{{ANSWER_EXPLANATION}}/g, whySpecsFirstSentence)
         .replace(/{{REQUIREMENTS_BOX}}/g, requirementsBoxHTML)
@@ -530,6 +678,21 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
 }
 
 /**
+ * Load readers data from JSON
+ */
+function loadReadersData() {
+    try {
+        const readersPath = path.join(__dirname, "../../data/sdCardReaders.json");
+        const readersRaw = fs.readFileSync(readersPath, "utf-8");
+        const readersData = JSON.parse(readersRaw);
+        return readersData.sdCardReaders || [];
+    } catch (error) {
+        console.warn("⚠️  Could not load readers data:", error.message);
+        return [];
+    }
+}
+
+/**
  * Generate all device pages
  */
 async function generateDevicePages(allDevices, distPath, isJapanese = false) {
@@ -544,13 +707,14 @@ async function generateDevicePages(allDevices, distPath, isJapanese = false) {
     deviceTemplate = processIncludes(deviceTemplate, path.join(srcPath, "templates"));
 
     const sdcardsMap = loadSDCardData(isJapanese);
+    const readersData = loadReadersData();
 
     let successCount = 0;
     let failedDevices = [];
 
     allDevices.forEach((device, index) => {
         try {
-            const deviceHTML = generateDevicePage(device, deviceTemplate, allDevices, sdcardsMap, index, isJapanese);
+            const deviceHTML = generateDevicePage(device, deviceTemplate, allDevices, sdcardsMap, index, isJapanese, readersData);
             const categorySlug = getCategorySlug(device.category, isJapanese);
             // Always use English slugs in URLs for both English and Japanese
             // This is SEO best practice to avoid URL encoding issues
