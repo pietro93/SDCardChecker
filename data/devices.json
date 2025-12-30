@@ -4242,37 +4242,6 @@
       "notes": "Single-board computer based on Rockchip RK3588S. Uses a TF/microSD slot for boot unless SPI + NVMe are configured."
     },
     {
-      "id": "iphone-15",
-      "name": "iPhone 15",
-      "category": "Computing & Tablets",
-      "slug": "iphone-15",
-      "searchTerms": [
-        "iphone 15",
-        "iphone 15 pro",
-        "iphone 15 pro max"
-      ],
-      "sdCard": {
-        "type": "External via USB-C SD Reader",
-        "minSpeed": "No official requirement",
-        "recommendedCapacity": [
-          "64GB",
-          "128GB"
-        ],
-        "maxCapacity": "Limited by app storage"
-      },
-      "whySpecs": "iPhone 15 does not have SD card slot. Uses USB-C readers for external SD card access. Speed depends on reader, not device.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
-        }
-      ],
-      "relatedDevices": [
-        "iphone-14",
-        "iphone-13",
-        "ipad-pro"
-      ]
-    },
-    {
       "id": "macbook-air",
       "name": "MacBook Air",
       "category": "Computing & Tablets",
@@ -4299,62 +4268,6 @@
       "relatedDevices": [
         "macbook-pro",
         "ipad-pro"
-      ]
-    },
-    {
-      "id": "iphone-14",
-      "name": "iPhone 14",
-      "category": "Computing & Tablets",
-      "slug": "iphone-14",
-      "searchTerms": [
-        "iphone 14",
-        "iphone 14 pro"
-      ],
-      "sdCard": {
-        "type": "External via Lightning Reader",
-        "minSpeed": "UHS-I",
-        "recommendedCapacity": [
-          "64GB",
-          "128GB"
-        ]
-      },
-      "whySpecs": "iPhone 14 uses Lightning port. Lightning readers limited to USB 2.0 speeds for some models.",
-      "recommendedBrands": [
-        {
-          "id": "lexar-lightning-microsd"
-        }
-      ],
-      "relatedDevices": [
-        "iphone-15",
-        "iphone-13"
-      ]
-    },
-    {
-      "id": "iphone-13",
-      "name": "iPhone 13",
-      "category": "Computing & Tablets",
-      "slug": "iphone-13",
-      "searchTerms": [
-        "iphone 13",
-        "iphone 13 pro"
-      ],
-      "sdCard": {
-        "type": "External via Lightning Reader",
-        "minSpeed": "UHS-I",
-        "recommendedCapacity": [
-          "64GB",
-          "128GB"
-        ]
-      },
-      "whySpecs": "iPhone 13 uses Lightning port with microSD readers.",
-      "recommendedBrands": [
-        {
-          "id": "lexar-lightning-microsd"
-        }
-      ],
-      "relatedDevices": [
-        "iphone-14",
-        "iphone-12"
       ]
     },
     {
@@ -4387,34 +4300,6 @@
       ]
     },
     {
-      "id": "iphone-14-pro-max",
-      "name": "iPhone 14 Pro Max",
-      "category": "Computing & Tablets",
-      "slug": "iphone-14-pro-max",
-      "searchTerms": [
-        "iphone 14 pro max",
-        "iphone 14 max"
-      ],
-      "sdCard": {
-        "type": "External via Lightning Reader",
-        "minSpeed": "UHS-I",
-        "recommendedCapacity": [
-          "64GB",
-          "128GB"
-        ]
-      },
-      "whySpecs": "iPhone 14 Pro Max uses Lightning port.",
-      "recommendedBrands": [
-        {
-          "id": "lexar-lightning-microsd"
-        }
-      ],
-      "relatedDevices": [
-        "iphone-14",
-        "iphone-15"
-      ]
-    },
-    {
       "id": "ipad-air-3",
       "name": "iPad Air 3rd Generation",
       "category": "Computing & Tablets",
@@ -4440,89 +4325,6 @@
       "relatedDevices": [
         "ipad-air",
         "ipad-pro"
-      ]
-    },
-    {
-      "id": "iphone-se",
-      "name": "iPhone SE",
-      "category": "Computing & Tablets",
-      "slug": "iphone-se",
-      "searchTerms": [
-        "iphone se",
-        "iphone se 3"
-      ],
-      "sdCard": {
-        "type": "External via Lightning Reader",
-        "minSpeed": "UHS-I",
-        "recommendedCapacity": [
-          "64GB"
-        ]
-      },
-      "whySpecs": "iPhone SE uses Lightning connector.",
-      "recommendedBrands": [
-        {
-          "id": "lexar-lightning-microsd"
-        }
-      ],
-      "relatedDevices": [
-        "iphone-13",
-        "iphone-14"
-      ]
-    },
-    {
-      "id": "samsung-galaxy-s23",
-      "name": "Samsung Galaxy S23",
-      "category": "Computing & Tablets",
-      "slug": "samsung-galaxy-s23",
-      "searchTerms": [
-        "samsung galaxy s23",
-        "galaxy s23"
-      ],
-      "sdCard": {
-        "type": "External via USB-C Reader (no slot)",
-        "minSpeed": "No requirement",
-        "recommendedCapacity": [
-          "64GB",
-          "128GB"
-        ]
-      },
-      "whySpecs": "Galaxy S23 removed SD card slot. Uses USB-C readers for external access.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
-        }
-      ],
-      "relatedDevices": [
-        "google-pixel-8",
-        "samsung-galaxy-s24"
-      ]
-    },
-    {
-      "id": "google-pixel-8",
-      "name": "Google Pixel 8",
-      "category": "Computing & Tablets",
-      "slug": "google-pixel-8",
-      "searchTerms": [
-        "google pixel 8",
-        "pixel 8"
-      ],
-      "sdCard": {
-        "type": "External via USB-C Reader (no slot)",
-        "minSpeed": "No requirement",
-        "recommendedCapacity": [
-          "64GB",
-          "128GB"
-        ]
-      },
-      "whySpecs": "Pixel 8 does not have SD card slot. Uses USB-C readers.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
-        }
-      ],
-      "relatedDevices": [
-        "samsung-galaxy-s23",
-        "iphone-15"
       ]
     },
     {
@@ -7436,10 +7238,276 @@
         "garmin-66s-dash-cam"
       ],
       "notes": "A best-selling indoor 2K camera from a major security brand. Reolink's focus on local storage drives high search volume for card recommendations. Official max capacity is 256GB."
+    },
+    {
+      "id": "iphone-15",
+      "name": "iPhone 15 / 15 Pro",
+      "category": "Smartphones",
+      "slug": "iphone-15",
+      "searchTerms": [
+        "iphone 15",
+        "iphone 15 pro",
+        "iphone 15 pro max",
+        "iphone 15 sd card",
+        "iphone 15 reader"
+      ],
+      "sdCard": {
+        "type": "External via USB-C Reader",
+        "minSpeed": "No official requirement",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "Limited by app storage"
+      },
+      "whySpecs": "iPhone 15 does not have built-in SD card slot. Requires USB-C card reader for external SD card access. Speed depends on reader, not device.",
+      "requiresReader": true,
+      "recommendedReaders": [
+        "ugreen-2in1-usbc-usb3",
+        "sandisk-extreme-pro-uhs2-usbc"
+      ],
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "relatedDevices": [
+        "iphone-14",
+        "iphone-13",
+        "ipad-pro"
+      ]
+    },
+    {
+      "id": "iphone-14",
+      "name": "iPhone 14 / 14 Pro",
+      "category": "Smartphones",
+      "slug": "iphone-14",
+      "searchTerms": [
+        "iphone 14",
+        "iphone 14 pro",
+        "iphone 14 pro max",
+        "iphone 14 sd card",
+        "iphone 14 reader"
+      ],
+      "sdCard": {
+        "type": "External via Lightning Reader",
+        "minSpeed": "UHS-I",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
+      },
+      "whySpecs": "iPhone 14 uses Lightning port for external SD card readers. Lightning readers limited to USB 2.0 speeds for some models.",
+      "requiresReader": true,
+      "recommendedReaders": [
+        "lexar-lightning-microsd"
+      ],
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "relatedDevices": [
+        "iphone-15",
+        "iphone-13"
+      ]
+    },
+    {
+      "id": "iphone-13",
+      "name": "iPhone 13 / 13 Pro",
+      "category": "Smartphones",
+      "slug": "iphone-13",
+      "searchTerms": [
+        "iphone 13",
+        "iphone 13 pro",
+        "iphone 13 pro max",
+        "iphone 13 sd card",
+        "iphone 13 reader"
+      ],
+      "sdCard": {
+        "type": "External via Lightning Reader",
+        "minSpeed": "UHS-I",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
+      },
+      "whySpecs": "iPhone 13 uses Lightning port with microSD readers.",
+      "requiresReader": true,
+      "recommendedReaders": [
+        "lexar-lightning-microsd"
+      ],
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "relatedDevices": [
+        "iphone-14",
+        "iphone-12"
+      ]
+    },
+    {
+      "id": "iphone-14-pro-max",
+      "name": "iPhone 14 Pro Max",
+      "category": "Smartphones",
+      "slug": "iphone-14-pro-max",
+      "searchTerms": [
+        "iphone 14 pro max",
+        "iphone 14 max",
+        "iphone 14 pro max sd card"
+      ],
+      "sdCard": {
+        "type": "External via Lightning Reader",
+        "minSpeed": "UHS-I",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
+      },
+      "whySpecs": "iPhone 14 Pro Max uses Lightning port for external SD card reader access.",
+      "requiresReader": true,
+      "recommendedReaders": [
+        "lexar-lightning-microsd"
+      ],
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "relatedDevices": [
+        "iphone-14",
+        "iphone-15"
+      ]
+    },
+    {
+      "id": "iphone-se",
+      "name": "iPhone SE (3rd Generation)",
+      "category": "Smartphones",
+      "slug": "iphone-se",
+      "searchTerms": [
+        "iphone se",
+        "iphone se 3",
+        "iphone se 3rd generation",
+        "iphone se sd card"
+      ],
+      "sdCard": {
+        "type": "External via Lightning Reader",
+        "minSpeed": "UHS-I",
+        "recommendedCapacity": [
+          "64GB"
+        ]
+      },
+      "whySpecs": "iPhone SE uses Lightning connector for external SD card reader.",
+      "requiresReader": true,
+      "recommendedReaders": [
+        "lexar-lightning-microsd"
+      ],
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "kingston-canvas-select"
+        }
+      ],
+      "relatedDevices": [
+        "iphone-13",
+        "iphone-14"
+      ]
+    },
+    {
+      "id": "samsung-galaxy-s23",
+      "name": "Samsung Galaxy S23 / S23+",
+      "category": "Smartphones",
+      "slug": "samsung-galaxy-s23",
+      "searchTerms": [
+        "samsung galaxy s23",
+        "galaxy s23",
+        "samsung s23 sd card",
+        "galaxy s23 reader"
+      ],
+      "sdCard": {
+        "type": "External via USB-C Reader (no slot)",
+        "minSpeed": "No requirement",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
+      },
+      "whySpecs": "Galaxy S23 removed microSD card slot. Requires USB-C card reader for external SD card access.",
+      "requiresReader": true,
+      "recommendedReaders": [
+        "ugreen-2in1-usbc-usb3",
+        "sandisk-extreme-pro-uhs2-usbc"
+      ],
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "relatedDevices": [
+        "google-pixel-8",
+        "samsung-galaxy-s24"
+      ]
+    },
+    {
+      "id": "google-pixel-8",
+      "name": "Google Pixel 8 / 8 Pro",
+      "category": "Smartphones",
+      "slug": "google-pixel-8",
+      "searchTerms": [
+        "google pixel 8",
+        "pixel 8",
+        "pixel 8 pro",
+        "pixel 8 sd card",
+        "pixel 8 reader"
+      ],
+      "sdCard": {
+        "type": "External via USB-C Reader (no slot)",
+        "minSpeed": "No requirement",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ]
+      },
+      "whySpecs": "Pixel 8 does not have built-in SD card slot. Uses USB-C external card readers.",
+      "requiresReader": true,
+      "recommendedReaders": [
+        "ugreen-2in1-usbc-usb3",
+        "sandisk-extreme-pro-uhs2-usbc"
+      ],
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "relatedDevices": [
+        "samsung-galaxy-s23",
+        "iphone-15"
+      ]
     }
   ],
   "metadata": {
-    "generated": "2025-12-30T09:23:19.946Z",
+    "generated": "2025-12-30T09:26:22.242Z",
     "totalDevices": 170,
     "categories": [
       "Action Cameras",
@@ -7451,8 +7519,9 @@
       "Gaming Handhelds",
       "Retro Arcade",
       "Retro Handhelds",
-      "Security Cameras"
+      "Security Cameras",
+      "Smartphones"
     ],
-    "categoryCount": 10
+    "categoryCount": 11
   }
 }

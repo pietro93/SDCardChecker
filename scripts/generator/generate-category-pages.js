@@ -50,18 +50,19 @@ return sortedDevices
  * Map category names to icon file names
  */
 function getCategoryIcon(category) {
-  const iconMap = {
-    "Cameras": "camera",
-    "Action Cameras": "action-camera",
-    "Audio & Hi-Fi": "audio-hi-fi",
-    "Drones": "drone",
-    "Gaming Handhelds": "gaming",
-    "Computing & Tablets": "computing",
-    "Security Cameras": "security-camera",
-    "Dash Cams": "dashcam"
-  };
-  return iconMap[category] || "camera"; // Default fallback
-}
+   const iconMap = {
+     "Cameras": "camera",
+     "Action Cameras": "action-camera",
+     "Audio & Hi-Fi": "audio-hi-fi",
+     "Drones": "drone",
+     "Gaming Handhelds": "gaming",
+     "Computing & Tablets": "computing",
+     "Smartphones": "smartphone",
+     "Security Cameras": "security-camera",
+     "Dash Cams": "dashcam"
+   };
+   return iconMap[category] || "camera"; // Default fallback
+ }
 
 /**
  * Get category introduction text
@@ -82,6 +83,8 @@ Drones:
 "Drones demand reliable, high-speed SD cards for smooth 4K video capture. Compare top recommendations for popular drone models.",
 "Gaming Handhelds":
 "Gaming handhelds need reliable cards for smooth game installation and loading. See the best options for Nintendo Switch, Steam Deck, and more.",
+Smartphones:
+"Modern smartphones require external card readers to access SD cards. Find the best readers and compatible cards for iPhone, Samsung Galaxy, Google Pixel, and other devices.",
 "Security Cameras":
 "Security cameras require High Endurance microSD cards designed for continuous recording. Find the best cards for 24/7 surveillance systems.",
 };

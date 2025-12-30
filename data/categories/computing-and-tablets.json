@@ -477,37 +477,6 @@
     "notes": "Single-board computer based on Rockchip RK3588S. Uses a TF/microSD slot for boot unless SPI + NVMe are configured."
   },
   {
-    "id": "iphone-15",
-    "name": "iPhone 15",
-    "category": "Computing & Tablets",
-    "slug": "iphone-15",
-    "searchTerms": [
-      "iphone 15",
-      "iphone 15 pro",
-      "iphone 15 pro max"
-    ],
-    "sdCard": {
-      "type": "External via USB-C SD Reader",
-      "minSpeed": "No official requirement",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ],
-      "maxCapacity": "Limited by app storage"
-    },
-    "whySpecs": "iPhone 15 does not have SD card slot. Uses USB-C readers for external SD card access. Speed depends on reader, not device.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-pro-uhs2-usbc"
-      }
-    ],
-    "relatedDevices": [
-      "iphone-14",
-      "iphone-13",
-      "ipad-pro"
-    ]
-  },
-  {
     "id": "macbook-air",
     "name": "MacBook Air",
     "category": "Computing & Tablets",
@@ -534,62 +503,6 @@
     "relatedDevices": [
       "macbook-pro",
       "ipad-pro"
-    ]
-  },
-  {
-    "id": "iphone-14",
-    "name": "iPhone 14",
-    "category": "Computing & Tablets",
-    "slug": "iphone-14",
-    "searchTerms": [
-      "iphone 14",
-      "iphone 14 pro"
-    ],
-    "sdCard": {
-      "type": "External via Lightning Reader",
-      "minSpeed": "UHS-I",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ]
-    },
-    "whySpecs": "iPhone 14 uses Lightning port. Lightning readers limited to USB 2.0 speeds for some models.",
-    "recommendedBrands": [
-      {
-        "id": "lexar-lightning-microsd"
-      }
-    ],
-    "relatedDevices": [
-      "iphone-15",
-      "iphone-13"
-    ]
-  },
-  {
-    "id": "iphone-13",
-    "name": "iPhone 13",
-    "category": "Computing & Tablets",
-    "slug": "iphone-13",
-    "searchTerms": [
-      "iphone 13",
-      "iphone 13 pro"
-    ],
-    "sdCard": {
-      "type": "External via Lightning Reader",
-      "minSpeed": "UHS-I",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ]
-    },
-    "whySpecs": "iPhone 13 uses Lightning port with microSD readers.",
-    "recommendedBrands": [
-      {
-        "id": "lexar-lightning-microsd"
-      }
-    ],
-    "relatedDevices": [
-      "iphone-14",
-      "iphone-12"
     ]
   },
   {
@@ -621,34 +534,7 @@
       "ipad-air-3"
     ]
   },
-  {
-    "id": "iphone-14-pro-max",
-    "name": "iPhone 14 Pro Max",
-    "category": "Computing & Tablets",
-    "slug": "iphone-14-pro-max",
-    "searchTerms": [
-      "iphone 14 pro max",
-      "iphone 14 max"
-    ],
-    "sdCard": {
-      "type": "External via Lightning Reader",
-      "minSpeed": "UHS-I",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ]
-    },
-    "whySpecs": "iPhone 14 Pro Max uses Lightning port.",
-    "recommendedBrands": [
-      {
-        "id": "lexar-lightning-microsd"
-      }
-    ],
-    "relatedDevices": [
-      "iphone-14",
-      "iphone-15"
-    ]
-  },
+
   {
     "id": "ipad-air-3",
     "name": "iPad Air 3rd Generation",
@@ -677,89 +563,7 @@
       "ipad-pro"
     ]
   },
-  {
-    "id": "iphone-se",
-    "name": "iPhone SE",
-    "category": "Computing & Tablets",
-    "slug": "iphone-se",
-    "searchTerms": [
-      "iphone se",
-      "iphone se 3"
-    ],
-    "sdCard": {
-      "type": "External via Lightning Reader",
-      "minSpeed": "UHS-I",
-      "recommendedCapacity": [
-        "64GB"
-      ]
-    },
-    "whySpecs": "iPhone SE uses Lightning connector.",
-    "recommendedBrands": [
-      {
-        "id": "lexar-lightning-microsd"
-      }
-    ],
-    "relatedDevices": [
-      "iphone-13",
-      "iphone-14"
-    ]
-  },
-  {
-    "id": "samsung-galaxy-s23",
-    "name": "Samsung Galaxy S23",
-    "category": "Computing & Tablets",
-    "slug": "samsung-galaxy-s23",
-    "searchTerms": [
-      "samsung galaxy s23",
-      "galaxy s23"
-    ],
-    "sdCard": {
-      "type": "External via USB-C Reader (no slot)",
-      "minSpeed": "No requirement",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ]
-    },
-    "whySpecs": "Galaxy S23 removed SD card slot. Uses USB-C readers for external access.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-pro-uhs2-usbc"
-      }
-    ],
-    "relatedDevices": [
-      "google-pixel-8",
-      "samsung-galaxy-s24"
-    ]
-  },
-  {
-    "id": "google-pixel-8",
-    "name": "Google Pixel 8",
-    "category": "Computing & Tablets",
-    "slug": "google-pixel-8",
-    "searchTerms": [
-      "google pixel 8",
-      "pixel 8"
-    ],
-    "sdCard": {
-      "type": "External via USB-C Reader (no slot)",
-      "minSpeed": "No requirement",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ]
-    },
-    "whySpecs": "Pixel 8 does not have SD card slot. Uses USB-C readers.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-pro-uhs2-usbc"
-      }
-    ],
-    "relatedDevices": [
-      "samsung-galaxy-s23",
-      "iphone-15"
-    ]
-  },
+
   {
     "id": "hp-chromebook",
     "name": "HP Chromebook",
