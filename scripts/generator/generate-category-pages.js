@@ -51,6 +51,7 @@ return sortedDevices
  */
 function getCategoryIcon(category) {
     const iconMap = {
+      // Title case (English names)
       "Cameras": "camera",
       "Action Cameras": "action-camera",
       "Audio & Hi-Fi": "audio-hi-fi",
@@ -66,7 +67,24 @@ function getCategoryIcon(category) {
       "Mirrorless Cameras": "camera",
       "Cinema Cameras": "camera",
       "Trail Cameras": "camera",
-      "Accessories": "accessory"
+      "Accessories": "accessory",
+      
+      // Kebab case (as used in category data files)
+      "cameras": "camera",
+      "action-cameras": "action-camera",
+      "audio-and-hi-fi": "audio-hi-fi",
+      "drones": "drone",
+      "gaming-handhelds": "gaming",
+      "computing-and-tablets": "computing",
+      "smartphones": "smartphone",
+      "security-cameras": "security-camera",
+      "dash-cams": "dashcam",
+      "film-cameras": "camera",
+      "dslr-cameras": "camera",
+      "mirrorless-cameras": "camera",
+      "cinema-cameras": "camera",
+      "trail-cameras": "camera",
+      "accessories": "accessory"
     };
     return iconMap[category] || "camera"; // Default fallback
   }
