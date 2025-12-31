@@ -1,0 +1,552 @@
+
+> sd-card-checker@1.0.0 build:site
+> node scripts/generator/build.js
+
+
+🚀 Starting SD Card Checker site generation...
+
+🔄 Merging category files...
+  ✓ action-cameras.json: 15 device(s)
+  ✓ audio-and-hi-fi.json: 9 device(s)
+  ✓ cameras.json: 57 device(s)
+  ✓ computing-and-tablets.json: 16 device(s)
+  ✓ dash-cams.json: 18 device(s)
+  ✓ drones.json: 24 device(s)
+  ✓ gaming-handhelds.json: 20 device(s)
+  ✓ security-cameras.json: 3 device(s)
+  ✓ smartphones.json: 7 device(s)
+  ✓ Merged 169 device(s) → devices.json
+
+📊 Loading device data...
+  ✓ Loaded 169 devices
+📊 Loading SD Card Reader data...
+  ✓ Loaded 21 SD Card Readers
+
+📁 Copying assets...
+📁 Copying assets...
+  ✓ Copied CSS files
+  ✓ Copied JS files
+  ✓ data/devices.json
+  ✓ data/sdcards.json
+  ✓ Copied amazon-cache
+  ✓ Copied img folder
+
+📄 Generating  device pages...
+  ✓ dist\categories\action-cameras\gopro-hero-13\index.html
+  ✓ dist\categories\action-cameras\gopro-hero-12\index.html
+  ✓ dist\categories\action-cameras\gopro-hero-max\index.html
+  ✓ dist\categories\action-cameras\insta360-x3\index.html
+  ✓ dist\categories\action-cameras\dji-osmo-pocket-3\index.html
+  ✓ dist\categories\action-cameras\nextbase-622gw\index.html
+  ✓ dist\categories\action-cameras\gopro-hero-11-black\index.html
+  ✓ dist\categories\action-cameras\insta360-x4\index.html
+  ✓ dist\categories\action-cameras\dji-osmo-action-4\index.html
+  ✓ dist\categories\action-cameras\insta360-go-3\index.html
+  ✓ dist\categories\action-cameras\insta360-ace-pro\index.html
+  ✓ dist\categories\action-cameras\insta360-one-x2\index.html
+  ✓ dist\categories\action-cameras\gopro-max-2\index.html
+  ✓ dist\categories\action-cameras\insta360-one-x3\index.html
+  ✓ dist\categories\action-cameras\wyze-cam-v3\index.html
+  ✓ dist\categories\audio-and-hi-fi\fiio-snowsky-echo-mini\index.html
+  ✓ dist\categories\audio-and-hi-fi\sony-nw-a306\index.html
+  ✓ dist\categories\audio-and-hi-fi\sony-nw-zx707\index.html
+  ✓ dist\categories\audio-and-hi-fi\hiby-r3-ii\index.html
+  ✓ dist\categories\audio-and-hi-fi\hiby-r4\index.html
+  ✓ dist\categories\audio-and-hi-fi\astell-kern-sr35\index.html
+  ✓ dist\categories\audio-and-hi-fi\zoom-h1n-vp\index.html
+  ✓ dist\categories\audio-and-hi-fi\zoom-h6\index.html
+  ✓ dist\categories\audio-and-hi-fi\tascam-dr-05x\index.html
+  ✓ dist\categories\cameras\canon-eos-r5\index.html
+  ✓ dist\categories\cameras\sony-a6700\index.html
+  ✓ dist\categories\cameras\fujifilm-x-s20\index.html
+  ✓ dist\categories\cameras\nikon-z9\index.html
+  ✓ dist\categories\cameras\sony-a7-iv\index.html
+  ✓ dist\categories\cameras\canon-eos-r6-mark-ii\index.html
+  ✓ dist\categories\cameras\blackmagic-pocket-cinema-camera-4k\index.html
+  ✓ dist\categories\cameras\blackmagic-pocket-cinema-camera-6k-pro\index.html
+  ✓ dist\categories\cameras\nikon-z8\index.html
+  ✓ dist\categories\cameras\panasonic-lumix-s1h\index.html
+  ✓ dist\categories\cameras\fujifilm-x100vi\index.html
+  ✓ dist\categories\cameras\canon-eos-r50\index.html
+  ✓ dist\categories\cameras\canon-eos-r7\index.html
+  ✓ dist\categories\cameras\canon-eos-r10\index.html
+  ✓ dist\categories\cameras\canon-eos-r8\index.html
+  ✓ dist\categories\cameras\canon-rebel-t7\index.html
+  ✓ dist\categories\cameras\canon-g7x-mark-iii\index.html
+  ✓ dist\categories\cameras\canon-g7x-mark-ii\index.html
+  ✓ dist\categories\cameras\fujifilm-xt5\index.html
+  ✓ dist\categories\cameras\fujifilm-xm5\index.html
+  ✓ dist\categories\cameras\fujifilm-xt30-ii\index.html
+  ✓ dist\categories\cameras\fujifilm-xt50\index.html
+  ✓ dist\categories\cameras\sony-fx30\index.html
+  ✓ dist\categories\cameras\sony-fx3\index.html
+  ✓ dist\categories\cameras\fujifilm-xe5\index.html
+  ✓ dist\categories\cameras\fujifilm-x100v\index.html
+  ✓ dist\categories\cameras\fujifilm-xt3\index.html
+  ✓ dist\categories\cameras\leica-q3\index.html
+  ✓ dist\categories\cameras\leica-q3-43\index.html
+  ✓ dist\categories\cameras\leica-m11\index.html
+  ✓ dist\categories\cameras\leica-q2\index.html
+  ✓ dist\categories\cameras\leica-d-lux-8\index.html
+  ✓ dist\categories\cameras\leica-m10\index.html
+  ✓ dist\categories\cameras\panasonic-lumix-s9\index.html
+  ✓ dist\categories\cameras\panasonic-lumix-s5-iix\index.html
+  ✓ dist\categories\cameras\panasonic-lumix-s5-ii\index.html
+  ✓ dist\categories\cameras\nikon-d7500\index.html
+  ✓ dist\categories\cameras\nikon-zf\index.html
+  ✓ dist\categories\cameras\nikon-z50-ii\index.html
+  ✓ dist\categories\cameras\nikon-z6-iii\index.html
+  ✓ dist\categories\cameras\nikon-z6-ii\index.html
+  ✓ dist\categories\cameras\nikon-d850\index.html
+  ✓ dist\categories\cameras\nikon-d750\index.html
+  ✓ dist\categories\cameras\nikon-z5\index.html
+  ✓ dist\categories\cameras\canon-eos-r100\index.html
+  ✓ dist\categories\cameras\sony-a7r-v\index.html
+  ✓ dist\categories\cameras\nikon-d3500\index.html
+  ✓ dist\categories\cameras\sony-zv-e10\index.html
+  ✓ dist\categories\cameras\sony-a7-iii\index.html
+  ✓ dist\categories\cameras\sony-a6400\index.html
+  ✓ dist\categories\cameras\fujifilm-x-s10\index.html
+  ✓ dist\categories\cameras\canon-eos-r6\index.html
+  ✓ dist\categories\cameras\nikon-d500\index.html
+  ✓ dist\categories\cameras\sony-a7r\index.html
+  ✓ dist\categories\cameras\canon-rebel-t7\index.html
+  ✓ dist\categories\cameras\sony-a1\index.html
+  ✓ dist\categories\cameras\nikon-d850\index.html
+  ✓ dist\categories\computing-and-tablets\raspberry-pi-5\index.html
+  ✓ dist\categories\computing-and-tablets\samsung-galaxy-tab-s9\index.html
+  ✓ dist\categories\computing-and-tablets\amazon-fire-hd-10\index.html
+  ✓ dist\categories\computing-and-tablets\amazon-fire-max-11\index.html
+  ✓ dist\categories\computing-and-tablets\hp-chromebook-14\index.html
+  ✓ dist\categories\computing-and-tablets\lenovo-tab-m10-plus\index.html
+  ✓ dist\categories\computing-and-tablets\raspberry-pi-4-model-b\index.html
+  ✓ dist\categories\computing-and-tablets\raspberry-pi-3-model-b-plus\index.html
+  ✓ dist\categories\computing-and-tablets\raspberry-pi-zero-2-w\index.html
+  ✓ dist\categories\computing-and-tablets\orange-pi-5\index.html
+  ✓ dist\categories\computing-and-tablets\macbook-air\index.html
+  ✓ dist\categories\computing-and-tablets\ipad-air\index.html
+  ✓ dist\categories\computing-and-tablets\ipad-air-3\index.html
+  ✓ dist\categories\computing-and-tablets\macbook-pro\index.html
+  ✓ dist\categories\computing-and-tablets\ipad-pro\index.html
+  ✓ dist\categories\computing-and-tablets\ipad-9th-gen\index.html
+  ✓ dist\categories\dash-cams\viofo-a229-duo\index.html
+  ✓ dist\categories\dash-cams\garmin-dash-cam-mini-2\index.html
+  ✓ dist\categories\dash-cams\vantrue-n4\index.html
+  ✓ dist\categories\dash-cams\rexing-v1p-gen3\index.html
+  ✓ dist\categories\dash-cams\rove-r2-4k\index.html
+  ✓ dist\categories\dash-cams\viofo-a229-plus-duo\index.html
+  ✓ dist\categories\dash-cams\blackvue-dr970x-2ch\index.html
+  ✓ dist\categories\dash-cams\blackvue-dr900x-2ch\index.html
+  ✓ dist\categories\dash-cams\nextbase-622gw\index.html
+  ✓ dist\categories\dash-cams\garmin-dash-cam-67w\index.html
+  ✓ dist\categories\dash-cams\viofo-a119-v3\index.html
+  ✓ dist\categories\dash-cams\viofo-a129-pro-duo\index.html
+  ✓ dist\categories\dash-cams\70mai-a810\index.html
+  ✓ dist\categories\dash-cams\redtiger-f7n\index.html
+  ✓ dist\categories\dash-cams\yupiteru-wdt-510c\index.html
+  ✓ dist\categories\dash-cams\kenwood-drv-mr760\index.html
+  ✓ dist\categories\dash-cams\comtec-zdr-035\index.html
+  ✓ dist\categories\dash-cams\cellstar-cs-91fh\index.html
+  ✓ dist\categories\drones\dji-mini-4-pro\index.html
+  ✓ dist\categories\drones\dji-mini-3-pro\index.html
+  ✓ dist\categories\drones\dji-air-3s\index.html
+  ✓ dist\categories\drones\dji-mavic-3\index.html
+  ✓ dist\categories\drones\dji-air-3\index.html
+  ✓ dist\categories\drones\dji-mini-4k\index.html
+  ✓ dist\categories\drones\dji-mini-3\index.html
+  ✓ dist\categories\drones\dji-mini-2-se\index.html
+  ✓ dist\categories\drones\autel-evo-ii-pro-v3\index.html
+  ✓ dist\categories\drones\autel-evo-nano-plus\index.html
+  ✓ dist\categories\drones\autel-evo-lite-plus\index.html
+  ✓ dist\categories\drones\potensic-atom\index.html
+  ✓ dist\categories\drones\potensic-atom-se\index.html
+  ✓ dist\categories\drones\skydio-2-plus\index.html
+  ✓ dist\categories\drones\skydio-x10\index.html
+  ✓ dist\categories\drones\fimi-mini-3\index.html
+  ✓ dist\categories\drones\holy-stone-hs175d\index.html
+  ✓ dist\categories\drones\holy-stone-hs720\index.html
+  ✓ dist\categories\drones\holy-stone-hs360s\index.html
+  ✓ dist\categories\drones\hoverair-x1-pro\index.html
+  ✓ dist\categories\drones\hoverair-x1-pro-max\index.html
+  ✓ dist\categories\drones\dji-mini-3\index.html
+  ✓ dist\categories\drones\walksnail-moonlight\index.html
+  ✓ dist\categories\drones\dji-avata-2\index.html
+  ✓ dist\categories\gaming-handhelds\nintendo-switch\index.html
+  ✓ dist\categories\gaming-handhelds\nintendo-switch-oled\index.html
+  ✓ dist\categories\gaming-handhelds\steam-deck\index.html
+  ✓ dist\categories\gaming-handhelds\asus-rog-ally\index.html
+  ✓ dist\categories\gaming-handhelds\nintendo-switch-lite\index.html
+  ✓ dist\categories\gaming-handhelds\nintendo-switch-2\index.html
+  ✓ dist\categories\gaming-handhelds\nintendo-3ds-xl\index.html
+  ✓ dist\categories\gaming-handhelds\anbernic-rg353v\index.html
+  ✓ dist\categories\gaming-handhelds\asus-rog-ally-x\index.html
+  ✓ dist\categories\gaming-handhelds\lenovo-legion-go\index.html
+  ✓ dist\categories\gaming-handhelds\miyoo-mini-plus\index.html
+  ✓ dist\categories\gaming-handhelds\anbernic-rg35xx-plus-h\index.html
+  ✓ dist\categories\gaming-handhelds\retroid-pocket-4-pro\index.html
+  ✓ dist\categories\gaming-handhelds\lenovo-legion-go-s\index.html
+  ✓ dist\categories\gaming-handhelds\msi-claw\index.html
+  ✓ dist\categories\gaming-handhelds\gpd-win-mini\index.html
+  ✓ dist\categories\gaming-handhelds\egret-ii-mini\index.html
+  ✓ dist\categories\gaming-handhelds\analogue-pocket\index.html
+  ✓ dist\categories\gaming-handhelds\sony-ps-vita-sd2vita\index.html
+  ✓ dist\categories\gaming-handhelds\anbernic-rg556\index.html
+  ✓ dist\categories\security-cameras\wyze-cam-v3\index.html
+  ✓ dist\categories\security-cameras\eufy-solocam-s340\index.html
+  ✓ dist\categories\security-cameras\reolink-e1-pro\index.html
+  ✓ dist\categories\smartphones\iphone-15\index.html
+  ✓ dist\categories\smartphones\iphone-14\index.html
+  ✓ dist\categories\smartphones\iphone-13\index.html
+  ✓ dist\categories\smartphones\iphone-14-pro-max\index.html
+  ✓ dist\categories\smartphones\iphone-se\index.html
+  ✓ dist\categories\smartphones\samsung-galaxy-s23\index.html
+  ✓ dist\categories\smartphones\google-pixel-8\index.html
+  ✓ Generated 169/169  device pages
+
+📄 Generating Japanese device pages...
+  ✓ dist\ja\categories\action-cameras\gopro-hero-13\index.html
+  ✓ dist\ja\categories\action-cameras\gopro-hero-12\index.html
+  ✓ dist\ja\categories\action-cameras\gopro-hero-max\index.html
+  ✓ dist\ja\categories\action-cameras\insta360-x3\index.html
+  ✓ dist\ja\categories\action-cameras\dji-osmo-pocket-3\index.html
+  ✓ dist\ja\categories\action-cameras\nextbase-622gw\index.html
+  ✓ dist\ja\categories\action-cameras\gopro-hero-11-black\index.html
+  ✓ dist\ja\categories\action-cameras\insta360-x4\index.html
+  ✓ dist\ja\categories\action-cameras\dji-osmo-action-4\index.html
+  ✓ dist\ja\categories\action-cameras\insta360-go-3\index.html
+  ✓ dist\ja\categories\action-cameras\insta360-ace-pro\index.html
+  ✓ dist\ja\categories\action-cameras\insta360-one-x2\index.html
+  ✓ dist\ja\categories\action-cameras\gopro-max-2\index.html
+  ✓ dist\ja\categories\action-cameras\insta360-one-x3\index.html
+  ✓ dist\ja\categories\action-cameras\wyze-cam-v3\index.html
+  ✓ dist\ja\categories\audio-and-hi-fi\fiio-snowsky-echo-mini\index.html
+  ✓ dist\ja\categories\audio-and-hi-fi\sony-nw-a306\index.html
+  ✓ dist\ja\categories\audio-and-hi-fi\sony-nw-zx707\index.html
+  ✓ dist\ja\categories\audio-and-hi-fi\hiby-r3-ii\index.html
+  ✓ dist\ja\categories\audio-and-hi-fi\hiby-r4\index.html
+  ✓ dist\ja\categories\audio-and-hi-fi\astell-kern-sr35\index.html
+  ✓ dist\ja\categories\audio-and-hi-fi\zoom-h1n-vp\index.html
+  ✓ dist\ja\categories\audio-and-hi-fi\zoom-h6\index.html
+  ✓ dist\ja\categories\audio-and-hi-fi\tascam-dr-05x\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r5\index.html
+  ✓ dist\ja\categories\cameras\sony-a6700\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-x-s20\index.html
+  ✓ dist\ja\categories\cameras\nikon-z9\index.html
+  ✓ dist\ja\categories\cameras\sony-a7-iv\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r6-mark-ii\index.html
+  ✓ dist\ja\categories\cameras\blackmagic-pocket-cinema-camera-4k\index.html
+  ✓ dist\ja\categories\cameras\blackmagic-pocket-cinema-camera-6k-pro\index.html
+  ✓ dist\ja\categories\cameras\nikon-z8\index.html
+  ✓ dist\ja\categories\cameras\panasonic-lumix-s1h\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-x100vi\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r50\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r7\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r10\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r8\index.html
+  ✓ dist\ja\categories\cameras\canon-rebel-t7\index.html
+  ✓ dist\ja\categories\cameras\canon-g7x-mark-iii\index.html
+  ✓ dist\ja\categories\cameras\canon-g7x-mark-ii\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-xt5\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-xm5\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-xt30-ii\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-xt50\index.html
+  ✓ dist\ja\categories\cameras\sony-fx30\index.html
+  ✓ dist\ja\categories\cameras\sony-fx3\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-xe5\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-x100v\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-xt3\index.html
+  ✓ dist\ja\categories\cameras\leica-q3\index.html
+  ✓ dist\ja\categories\cameras\leica-q3-43\index.html
+  ✓ dist\ja\categories\cameras\leica-m11\index.html
+  ✓ dist\ja\categories\cameras\leica-q2\index.html
+  ✓ dist\ja\categories\cameras\leica-d-lux-8\index.html
+  ✓ dist\ja\categories\cameras\leica-m10\index.html
+  ✓ dist\ja\categories\cameras\panasonic-lumix-s9\index.html
+  ✓ dist\ja\categories\cameras\panasonic-lumix-s5-iix\index.html
+  ✓ dist\ja\categories\cameras\panasonic-lumix-s5-ii\index.html
+  ✓ dist\ja\categories\cameras\nikon-d7500\index.html
+  ✓ dist\ja\categories\cameras\nikon-zf\index.html
+  ✓ dist\ja\categories\cameras\nikon-z50-ii\index.html
+  ✓ dist\ja\categories\cameras\nikon-z6-iii\index.html
+  ✓ dist\ja\categories\cameras\nikon-z6-ii\index.html
+  ✓ dist\ja\categories\cameras\nikon-d850\index.html
+  ✓ dist\ja\categories\cameras\nikon-d750\index.html
+  ✓ dist\ja\categories\cameras\nikon-z5\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r100\index.html
+  ✓ dist\ja\categories\cameras\sony-a7r-v\index.html
+  ✓ dist\ja\categories\cameras\nikon-d3500\index.html
+  ✓ dist\ja\categories\cameras\sony-zv-e10\index.html
+  ✓ dist\ja\categories\cameras\sony-a7-iii\index.html
+  ✓ dist\ja\categories\cameras\sony-a6400\index.html
+  ✓ dist\ja\categories\cameras\fujifilm-x-s10\index.html
+  ✓ dist\ja\categories\cameras\canon-eos-r6\index.html
+  ✓ dist\ja\categories\cameras\nikon-d500\index.html
+  ✓ dist\ja\categories\cameras\sony-a7r\index.html
+  ✓ dist\ja\categories\cameras\canon-rebel-t7\index.html
+  ✓ dist\ja\categories\cameras\sony-a1\index.html
+  ✓ dist\ja\categories\cameras\nikon-d850\index.html
+  ✓ dist\ja\categories\computing-and-tablets\raspberry-pi-5\index.html
+  ✓ dist\ja\categories\computing-and-tablets\samsung-galaxy-tab-s9\index.html
+  ✓ dist\ja\categories\computing-and-tablets\amazon-fire-hd-10\index.html
+  ✓ dist\ja\categories\computing-and-tablets\amazon-fire-max-11\index.html
+  ✓ dist\ja\categories\computing-and-tablets\hp-chromebook-14\index.html
+  ✓ dist\ja\categories\computing-and-tablets\lenovo-tab-m10-plus\index.html
+  ✓ dist\ja\categories\computing-and-tablets\raspberry-pi-4-model-b\index.html
+  ✓ dist\ja\categories\computing-and-tablets\raspberry-pi-3-model-b-plus\index.html
+  ✓ dist\ja\categories\computing-and-tablets\raspberry-pi-zero-2-w\index.html
+  ✓ dist\ja\categories\computing-and-tablets\orange-pi-5\index.html
+  ✓ dist\ja\categories\computing-and-tablets\macbook-air\index.html
+  ✓ dist\ja\categories\computing-and-tablets\ipad-air\index.html
+  ✓ dist\ja\categories\computing-and-tablets\ipad-air-3\index.html
+  ✓ dist\ja\categories\computing-and-tablets\macbook-pro\index.html
+  ✓ dist\ja\categories\computing-and-tablets\ipad-pro\index.html
+  ✓ dist\ja\categories\computing-and-tablets\ipad-9th-gen\index.html
+  ✓ dist\ja\categories\dash-cams\viofo-a229-duo\index.html
+  ✓ dist\ja\categories\dash-cams\garmin-dash-cam-mini-2\index.html
+  ✓ dist\ja\categories\dash-cams\vantrue-n4\index.html
+  ✓ dist\ja\categories\dash-cams\rexing-v1p-gen3\index.html
+  ✓ dist\ja\categories\dash-cams\rove-r2-4k\index.html
+  ✓ dist\ja\categories\dash-cams\viofo-a229-plus-duo\index.html
+  ✓ dist\ja\categories\dash-cams\blackvue-dr970x-2ch\index.html
+  ✓ dist\ja\categories\dash-cams\blackvue-dr900x-2ch\index.html
+  ✓ dist\ja\categories\dash-cams\nextbase-622gw\index.html
+  ✓ dist\ja\categories\dash-cams\garmin-dash-cam-67w\index.html
+  ✓ dist\ja\categories\dash-cams\viofo-a119-v3\index.html
+  ✓ dist\ja\categories\dash-cams\viofo-a129-pro-duo\index.html
+  ✓ dist\ja\categories\dash-cams\70mai-a810\index.html
+  ✓ dist\ja\categories\dash-cams\redtiger-f7n\index.html
+  ✓ dist\ja\categories\dash-cams\yupiteru-wdt-510c\index.html
+  ✓ dist\ja\categories\dash-cams\kenwood-drv-mr760\index.html
+  ✓ dist\ja\categories\dash-cams\comtec-zdr-035\index.html
+  ✓ dist\ja\categories\dash-cams\cellstar-cs-91fh\index.html
+  ✓ dist\ja\categories\drones\dji-mini-4-pro\index.html
+  ✓ dist\ja\categories\drones\dji-mini-3-pro\index.html
+  ✓ dist\ja\categories\drones\dji-air-3s\index.html
+  ✓ dist\ja\categories\drones\dji-mavic-3\index.html
+  ✓ dist\ja\categories\drones\dji-air-3\index.html
+  ✓ dist\ja\categories\drones\dji-mini-4k\index.html
+  ✓ dist\ja\categories\drones\dji-mini-3\index.html
+  ✓ dist\ja\categories\drones\dji-mini-2-se\index.html
+  ✓ dist\ja\categories\drones\autel-evo-ii-pro-v3\index.html
+  ✓ dist\ja\categories\drones\autel-evo-nano-plus\index.html
+  ✓ dist\ja\categories\drones\autel-evo-lite-plus\index.html
+  ✓ dist\ja\categories\drones\potensic-atom\index.html
+  ✓ dist\ja\categories\drones\potensic-atom-se\index.html
+  ✓ dist\ja\categories\drones\skydio-2-plus\index.html
+  ✓ dist\ja\categories\drones\skydio-x10\index.html
+  ✓ dist\ja\categories\drones\fimi-mini-3\index.html
+  ✓ dist\ja\categories\drones\holy-stone-hs175d\index.html
+  ✓ dist\ja\categories\drones\holy-stone-hs720\index.html
+  ✓ dist\ja\categories\drones\holy-stone-hs360s\index.html
+  ✓ dist\ja\categories\drones\hoverair-x1-pro\index.html
+  ✓ dist\ja\categories\drones\hoverair-x1-pro-max\index.html
+  ✓ dist\ja\categories\drones\dji-mini-3\index.html
+  ✓ dist\ja\categories\drones\walksnail-moonlight\index.html
+  ✓ dist\ja\categories\drones\dji-avata-2\index.html
+  ✓ dist\ja\categories\gaming-handhelds\nintendo-switch\index.html
+  ✓ dist\ja\categories\gaming-handhelds\nintendo-switch-oled\index.html
+  ✓ dist\ja\categories\gaming-handhelds\steam-deck\index.html
+  ✓ dist\ja\categories\gaming-handhelds\asus-rog-ally\index.html
+  ✓ dist\ja\categories\gaming-handhelds\nintendo-switch-lite\index.html
+  ✓ dist\ja\categories\gaming-handhelds\nintendo-switch-2\index.html
+  ✓ dist\ja\categories\gaming-handhelds\nintendo-3ds-xl\index.html
+  ✓ dist\ja\categories\gaming-handhelds\anbernic-rg353v\index.html
+  ✓ dist\ja\categories\gaming-handhelds\asus-rog-ally-x\index.html
+  ✓ dist\ja\categories\gaming-handhelds\lenovo-legion-go\index.html
+  ✓ dist\ja\categories\gaming-handhelds\miyoo-mini-plus\index.html
+  ✓ dist\ja\categories\gaming-handhelds\anbernic-rg35xx-plus-h\index.html
+  ✓ dist\ja\categories\gaming-handhelds\retroid-pocket-4-pro\index.html
+  ✓ dist\ja\categories\gaming-handhelds\lenovo-legion-go-s\index.html
+  ✓ dist\ja\categories\gaming-handhelds\msi-claw\index.html
+  ✓ dist\ja\categories\gaming-handhelds\gpd-win-mini\index.html
+  ✓ dist\ja\categories\gaming-handhelds\egret-ii-mini\index.html
+  ✓ dist\ja\categories\gaming-handhelds\analogue-pocket\index.html
+  ✓ dist\ja\categories\gaming-handhelds\sony-ps-vita-sd2vita\index.html
+  ✓ dist\ja\categories\gaming-handhelds\anbernic-rg556\index.html
+  ✓ dist\ja\categories\security-cameras\wyze-cam-v3\index.html
+  ✓ dist\ja\categories\security-cameras\eufy-solocam-s340\index.html
+  ✓ dist\ja\categories\security-cameras\reolink-e1-pro\index.html
+  ✓ dist\ja\categories\smartphones\iphone-15\index.html
+  ✓ dist\ja\categories\smartphones\iphone-14\index.html
+  ✓ dist\ja\categories\smartphones\iphone-13\index.html
+  ✓ dist\ja\categories\smartphones\iphone-14-pro-max\index.html
+  ✓ dist\ja\categories\smartphones\iphone-se\index.html
+  ✓ dist\ja\categories\smartphones\samsung-galaxy-s23\index.html
+  ✓ dist\ja\categories\smartphones\google-pixel-8\index.html
+  ✓ Generated 169/169 Japanese device pages
+
+📂 Generating category pages...
+  ✓ dist\categories\action-cameras\index.html
+  ✓ dist\categories\audio-and-hi-fi\index.html
+  ✓ dist\categories\cameras\index.html
+  ✓ dist\categories\computing-and-tablets\index.html
+  ✓ dist\categories\dash-cams\index.html
+  ✓ dist\categories\drones\index.html
+  ✓ dist\categories\gaming-handhelds\index.html
+  ✓ dist\categories\security-cameras\index.html
+  ✓ dist\categories\smartphones\index.html
+  ✓ Generated 9 category pages
+
+📂 Generating Japanese category pages...
+  ✓ dist\categories\action-cameras\index.html
+  ✓ dist\categories\audio-and-hi-fi\index.html
+  ✓ dist\categories\cameras\index.html
+  ✓ dist\categories\computing-and-tablets\index.html
+  ✓ dist\categories\dash-cams\index.html
+  ✓ dist\categories\drones\index.html
+  ✓ dist\categories\gaming-handhelds\index.html
+  ✓ dist\categories\security-cameras\index.html
+  ✓ dist\categories\smartphones\index.html
+  ✓ Generated 9 Japanese category pages (excluding Card Readers)
+
+📂 Generating categories index pages...
+  ✓ dist\categories\index.html
+  ✓ Generated /categories/index.html
+  ✓ dist\ja\categories\index.html
+  ✓ Generated /ja/categories/index.html
+
+📚 Generating resource pages...
+  ✓ dist\faq.html
+  ✓ Generated FAQ (faq.html)
+  ✓ dist\guides\index.html
+  ✓ Generated Guides Hub (guides/index.html)
+  ✓ dist\guides\readers\index.html
+  ✓ Generated Reader Buying Guides Index (guides/readers/index.html)
+  ✓ dist\guides\sd-card-guide\index.html
+  ✓ Generated SD Card Guide (guides/sd-card-guide/index.html)
+  ✓ dist\guides\sd-card-speed-classes\index.html
+  ✓ Generated Speed Classes (guides/sd-card-speed-classes/index.html)
+  ✓ dist\guides\video-bitrate-comparison\index.html
+  ✓ Generated Video Bitrate Comparison (guides/video-bitrate-comparison/index.html)
+  ✓ dist\guides\raw-vs-jpeg\index.html
+  ✓ Generated RAW vs JPEG (guides/raw-vs-jpeg/index.html)
+  ✓ dist\guides\is-my-sd-card-fake\index.html
+  ✓ Generated Fake SD Card Checker (guides/is-my-sd-card-fake/index.html)
+  ✓ dist\guides\readers\macbook\index.html
+  ✓ Generated Best Readers for MacBook (guides/readers/macbook/index.html)
+  ✓ dist\guides\readers\photographers\index.html
+  ✓ Generated Best Readers for Photographers (guides/readers/photographers/index.html)
+  ✓ dist\guides\readers\iphone\index.html
+  ✓ Generated Best Readers for iPhone (guides/readers/iphone/index.html)
+  ✓ dist\guides\readers\android\index.html
+  ✓ Generated Best Readers for Android (guides/readers/android/index.html)
+  ✓ dist\guides\nintendo-switch-sd-card-guide\index.html
+  ✓ Generated Nintendo Switch SD Card Guide (guides/nintendo-switch-sd-card-guide/index.html)
+  ✓ Generated 1 legacy + 12 guide pages
+
+🧮 Generating calculator pages...
+  ✓ dist\tools\calculators\video-storage\index.html
+  ✓ Generated Video Storage Calculator (tools/calculators/video-storage/index.html)
+  ✓ dist\tools\calculators\photo-storage\index.html
+  ✓ Generated Photo Storage Calculator (tools/calculators/photo-storage/index.html)
+  ✓ dist\tools\calculators\gopro-storage\index.html
+  ✓ Generated GoPro Storage Calculator (tools/calculators/gopro-storage/index.html)
+  ✓ dist\tools\calculators\action-camera-storage\index.html
+  ✓ Generated Action Camera Storage Calculator (tools/calculators/action-camera-storage/index.html)
+  ✓ dist\tools\calculators\drone-storage\index.html
+  ✓ Generated Drone Recording Calculator (tools/calculators/drone-storage/index.html)
+  ✓ dist\tools\calculators\dashcam-storage\index.html
+  ✓ Generated Dashcam Storage Calculator (tools/calculators/dashcam-storage/index.html)
+  ✓ dist\tools\calculators\security-camera-storage\index.html
+  ✓ Generated Security Camera Storage Calculator (tools/calculators/security-camera-storage/index.html)
+  ✓ dist\tools\calculators\timelapse-storage\index.html
+  ✓ Generated Timelapse Storage Calculator (tools/calculators/timelapse-storage/index.html)
+  ✓ Generated 8 calculator pages
+
+🛠️  Generating tools pages...
+  ✓ dist\tools\index.html
+  ✓ Generated /tools/ page
+  ✓ dist\tools\calculators\index.html
+  ✓ Generated /tools/calculators/ page
+  ✓ Generated 2 tools pages
+
+
+📖 Generating SD Card Reader Pages...
+  Found 21 readers in dataset
+  ✓ dist\readers\ugreen-2in1-usbc-usb3\index.html
+  ✓ dist\readers\muddy-crv43-viewer\index.html
+  ✓ dist\readers\stealth-cam-sd-card-viewer\index.html
+  ✓ dist\readers\lexar-lightning-microsd\index.html
+  ✓ dist\readers\prograde-digital-cfexpress-sd-workflow\index.html
+  ✓ dist\readers\sony-mrw-g1\index.html
+  ✓ dist\readers\sandisk-extreme-pro-uhs2-usbc\index.html
+  ✓ dist\readers\apple-usbc-sd-reader\index.html
+  ✓ dist\readers\satechi-aluminum-type-c-stand\index.html
+  ✓ dist\readers\anker-powerexpand-2in1\index.html
+  ✓ dist\readers\unitek-usbc-3slot-reader\index.html
+  ✓ dist\readers\transcend-rdf9-uhs2\index.html
+  ✓ dist\readers\kingston-workflow-station\index.html
+  ✓ dist\readers\sony-mrw-g2\index.html
+  ✓ dist\readers\prograde-digital-usb4-cfexpress\index.html
+  ✓ dist\readers\sandisk-professional-pro-reader-multi\index.html
+  ✓ dist\readers\hicober-usbc-braided-reader\index.html
+  ✓ dist\readers\kikosaka-3in1-universal\index.html
+  ✓ dist\readers\kikosaka-lightning-charging-reader\index.html
+  ✓ dist\readers\yofeepop-2in1-sd-reader\index.html
+  ✓ dist\readers\htrenc-sd-card-reader\index.html
+  ✅ Generated 21 reader pages
+
+
+📖 Generating Readers Index Page...
+  ✓ dist\readers\index.html
+  ✓ dist/readers/index.html
+  ✅ Readers index page generated
+
+
+📂 Generating Reader Type Index Pages...
+  ✓ dist\readers\dongle\index.html
+  ✓ dist/readers/dongle/index.html
+  ✓ dist\readers\viewer\index.html
+  ✓ dist/readers/viewer/index.html
+  ✓ dist\readers\mobile-adapter\index.html
+  ✓ dist/readers/mobile-adapter/index.html
+  ✓ dist\readers\professional-hub\index.html
+  ✓ dist/readers/professional-hub/index.html
+  ✓ dist\readers\hub\index.html
+  ✓ dist/readers/hub/index.html
+  ✓ dist\readers\stick---box\index.html
+  ✓ dist/readers/stick---box/index.html
+  ✓ dist\readers\desktop-dock\index.html
+  ✓ dist/readers/desktop-dock/index.html
+  ✓ dist\readers\stick---multi-interface\index.html
+  ✓ dist/readers/stick---multi-interface/index.html
+  ✓ dist\readers\stick\index.html
+  ✓ dist/readers/stick/index.html
+  ✅ Generated 9 reader type pages
+
+🔄 Generating URL redirects for SEO migration...
+  ✓ Generated Netlify _redirects file with 169 device redirects
+  ✓ Generated vercel.json with 338 redirect rules
+  ✓ Generated .htaccess with 169 device redirects
+  ✓ All redirect configurations generated successfully
+
+📝 Generating core files...
+📝 Generating core files...
+  ✓ dist\index.html
+  ✓ dist\404.html
+  ✓ dist\sitemap.xml
+  ✓ dist\robots.txt
+  ✓ dist\privacy.html
+  ✓ dist\terms.html
+  ✓ dist\affiliate-disclosure.html
+  ✓ dist\about.html
+  ✓ dist\contact.html
+  ✓ dist\sitemap.html
+  ✓ Core files generated (homepage, 404, sitemap, robots.txt, privacy, terms, affiliate-disclosure, about, contact, sitemap-page)
+
+✅ Generation complete!
+
+📊 Summary:
+  • Homepage: 1
+  • Device pages: 169
+  • Category pages: 9
+  • SD Card Reader pages: 14
+  • Reader Buying Guides: 4
+  • Sitemap & robots.txt: ✓
+
+📁 Output directory: c:\Users\Pietro\Desktop\SDCardChecker\dist
+
+🚀 To view locally, run: npx http-server dist
+
+💡 Don't forget to add your Mediavine code to your pages!
+

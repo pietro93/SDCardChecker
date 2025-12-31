@@ -168,11 +168,9 @@ function getCategoryIntro(category) {
 /**
  * Generate single Japanese category page
  */
-function generateCategoryPage(category, devices, template) {
+function generateCategoryPage(category, devices, template, categorySlug) {
   const baseUrl = "https://sdcardchecker.com";
-  const categoryUrl = `${baseUrl}/ja/categories/${category
-    .toLowerCase()
-    .replace(/\s+/g, "-")}/`;
+  const categoryUrl = `${baseUrl}/ja/categories/${categorySlug}/`;
   const categoryTitle = `${category}向けの最高のSDカード | SD Card Checker`;
   const categoryIntro = getCategoryIntro(category);
   
@@ -183,7 +181,7 @@ function generateCategoryPage(category, devices, template) {
   const deviceCardsHTML = generateDeviceCards(devices);
 
   // Generate breadcrumb schema for category pages
-  const categorySlug = category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
+  // (categorySlug is already provided, no need to recalculate)
   const breadcrumbs = [
     { name: "ホーム", url: "/ja/" },
     { name: category, url: `/ja/categories/${categorySlug}/` }
@@ -261,14 +259,16 @@ async function generateCategoryPagesJa(allDevices, distPath) {
     .filter(category => !excludeCategories.includes(category))
     .sort()
     .forEach((category) => {
+      const categorySlug = categorySlugMap[category] || category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
       const categoryHTML = generateCategoryPage(
         category,
         grouped[category],
-        categoryTemplate
+        categoryTemplate,
+        categorySlug  // Pass the slug to use for the URL
       );
-      const categorySlug = categorySlugMap[category] || category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
       const categoryPath = path.join(
         distPath,
+        "ja",
         "categories",
         categorySlug,
         "index.html"
