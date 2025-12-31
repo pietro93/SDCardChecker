@@ -41,13 +41,13 @@ return `<!-- Favicon -->
       </a>
       <div class="absolute left-0 top-full pt-2 w-48 hidden group-hover:block z-50">
       <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-       <a href="/ja/categories/" class="block px-4 py-3 text-blue-600 bg-blue-50 first:rounded-t-lg text-xs font-bold border-b border-blue-200 flex items-center gap-2"><i class="fas fa-grid-2"></i> すべて</a>
-       <a href="/ja/categories/cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">カメラ</a>
+       <a href="/ja/categories/cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">カメラ</a>
        <a href="/ja/categories/action-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">アクションカメラ</a>
        <a href="/ja/categories/drones/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">ドローン</a>
        <a href="/ja/categories/gaming-handhelds/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">携帯ゲーム機</a>
        <a href="/ja/categories/dash-cams/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">ドライブレコーダー</a>
-       <a href="/ja/categories/computing-and-tablets/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">コンピュータ・タブレット</a>
+       <a href="/ja/categories/computing-and-tablets/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">コンピュータ・タブレット</a>
+       <a href="/ja/categories/" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-xs font-bold border-t border-blue-200 flex items-center gap-2"><i class="fas fa-grid-2"></i> すべてのデバイス</a>
         </div>
        </div>
       </div>
@@ -63,10 +63,10 @@ return `<!-- Favicon -->
        </a>
        <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block z-50">
        <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-        <a href="/ja/guides/" class="block px-4 py-3 text-blue-600 bg-blue-50 first:rounded-t-lg text-xs font-bold border-b border-blue-200 flex items-center gap-2"><i class="fas fa-book"></i> すべてのガイド</a>
-        <a href="/ja/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">速度クラス</a>
+        <a href="/ja/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">速度クラス</a>
         <a href="/ja/guides/is-my-sd-card-fake/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">偽造SDカード見分け方</a>
-        <a href="/ja/guides/nintendo-switch-sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">ニンテンドースイッチガイド</a>
+        <a href="/ja/guides/nintendo-switch-sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">ニンテンドースイッチガイド</a>
+        <a href="/ja/guides/" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-xs font-bold border-t border-blue-200 flex items-center gap-2"><i class="fas fa-book"></i> すべてのガイド</a>
         </div>
         </div>
        </div>
@@ -117,7 +117,6 @@ return `<!-- Favicon -->
       <a href="/ja/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">ホーム</a>
       
       <!-- Devices Section -->
-      <a href="/ja/categories/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium mb-3">すべてのカテゴリ</a>
       <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="devices">
         <span>デバイス</span>
         <i class="fas fa-chevron-right transition-transform duration-300"></i>
@@ -129,12 +128,12 @@ return `<!-- Favicon -->
         <a href="/ja/categories/gaming-handhelds/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">携帯ゲーム機</a>
         <a href="/ja/categories/dash-cams/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">ドライブレコーダー</a>
         <a href="/ja/categories/computing-and-tablets/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">コンピュータ・タブレット</a>
+        <a href="/ja/categories/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium">すべてのデバイス</a>
       </div>
       
 
 
       <!-- Resources Section -->
-      <a href="/ja/guides/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium mb-3">すべてのガイド</a>
       <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="resources">
         <span>ガイド</span>
         <i class="fas fa-chevron-right transition-transform duration-300"></i>
@@ -143,6 +142,7 @@ return `<!-- Favicon -->
         <a href="/ja/guides/sd-card-speed-classes/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">速度クラス</a>
         <a href="/ja/guides/is-my-sd-card-fake/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">偽造SDカード見分け方</a>
         <a href="/ja/guides/nintendo-switch-sd-card-guide/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">ニンテンドースイッチガイド</a>
+        <a href="/ja/guides/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium">すべてのガイド</a>
       </div>
       
       <!-- Direct Links -->

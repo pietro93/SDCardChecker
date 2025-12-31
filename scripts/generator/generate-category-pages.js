@@ -50,19 +50,26 @@ return sortedDevices
  * Map category names to icon file names
  */
 function getCategoryIcon(category) {
-   const iconMap = {
-     "Cameras": "camera",
-     "Action Cameras": "action-camera",
-     "Audio & Hi-Fi": "audio-hi-fi",
-     "Drones": "drone",
-     "Gaming Handhelds": "gaming",
-     "Computing & Tablets": "computing",
-     "Smartphones": "smartphone",
-     "Security Cameras": "security-camera",
-     "Dash Cams": "dashcam"
-   };
-   return iconMap[category] || "camera"; // Default fallback
- }
+    const iconMap = {
+      "Cameras": "camera",
+      "Action Cameras": "action-camera",
+      "Audio & Hi-Fi": "audio-hi-fi",
+      "Drones": "drone",
+      "Gaming Handhelds": "gaming",
+      "Computing & Tablets": "computing",
+      "Smartphones": "smartphone",
+      "Smartphones & Tablets": "smartphone",
+      "Security Cameras": "security-camera",
+      "Dash Cams": "dashcam",
+      "Film Cameras": "camera",
+      "DSLR Cameras": "camera",
+      "Mirrorless Cameras": "camera",
+      "Cinema Cameras": "camera",
+      "Trail Cameras": "camera",
+      "Accessories": "accessory"
+    };
+    return iconMap[category] || "camera"; // Default fallback
+  }
 
 /**
  * Get category introduction text
