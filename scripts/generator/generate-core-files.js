@@ -190,12 +190,29 @@ function generateSitemap(allDevices, allReaders, distPath) {
  * Generate robots.txt
  */
 function generateRobots(distPath) {
-  const robotsTxt = `User-agent: *
+   const robotsTxt = `User-agent: *
 Allow: /
 
+# Priority access for major search engines
+User-agent: bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Block resource-heavy scraper bots
+User-agent: PetalBot
+Disallow: /
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+
+# Localization Sitemaps
 Sitemap: https://sdcardchecker.com/sitemap.xml
+Sitemap: https://sdcardchecker.com/ja/sitemap.xml
 `;
-  writeFile(path.join(distPath, "robots.txt"), robotsTxt);
+   writeFile(path.join(distPath, "robots.txt"), robotsTxt);
 }
 
 /**
