@@ -77,18 +77,21 @@
       
       <!-- Modern Filter Buttons -->
       <div class="mb-8 flex flex-wrap gap-3 items-center" x-cloak>
+        <div class="text-sm font-semibold text-slate-700 mr-2">Filter by brand:</div>
+        
         <!-- Clear All Button -->
         <button 
           @click="clearAllFilters()" 
           :class="{
-            'bg-red-100 text-red-700 border-red-300 hover:bg-red-200': hasActiveFilters(),
+            'bg-slate-200 text-slate-700 border-slate-300 hover:bg-slate-300': hasActiveFilters(),
             'bg-slate-100 text-slate-400 border-slate-300 cursor-not-allowed': !hasActiveFilters()
           }"
           class="px-3 py-2 rounded-full border font-medium text-sm transition-all duration-200 flex items-center gap-2"
           :disabled="!hasActiveFilters()"
+          title="Show all brands"
         >
-          <i class="fas fa-times text-lg leading-none"></i>
-          Clear
+          <i class="fas fa-redo text-sm leading-none"></i>
+          Reset
         </button>
         
         <!-- Brand Filter Buttons -->
@@ -96,10 +99,11 @@
           <button 
             @click="toggleBrand(brand)" 
             :class="{
-              'bg-blue-600 text-white border-blue-700': isSelected(brand),
-              'bg-white text-slate-700 border-slate-300 hover:border-blue-400': !isSelected(brand)
+              'bg-blue-600 text-white border-blue-700 shadow-md': isSelected(brand),
+              'bg-white text-slate-700 border-slate-300 hover:border-blue-500 hover:bg-blue-50': !isSelected(brand)
             }"
             class="px-4 py-2 rounded-full border font-medium text-sm transition-all duration-200 hover:shadow-md"
+            :title="isSelected(brand) ? 'Click to hide ' + brand + ' devices' : 'Click to show only ' + brand + ' devices'"
             x-text="brand"
           ></button>
         </template>
@@ -176,7 +180,7 @@
         },
 
         clearAllFilters() {
-          this.selectedBrands = [];
+          this.selectedBrands = [...this.availableBrands];
           this.filterByBrand();
         },
 
