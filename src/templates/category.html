@@ -123,7 +123,7 @@
     // Category Devices Filter Component
     function categoryDevices() {
       return {
-        selectedBrands: [],
+        filteredBrands: [],
         availableBrands: [],
         allDevices: [],
 
@@ -147,8 +147,8 @@
               });
               this.availableBrands = Array.from(brands).sort();
               
-              // Select all brands by default
-              this.selectedBrands = [...this.availableBrands];
+              // Start with NO active filters (show all brands)
+              this.filteredBrands = [];
               this.filterByBrand();
             })
             .catch(err => console.error('Failed to load devices:', err));
@@ -162,25 +162,27 @@
         },
 
         toggleBrand(brand) {
-          const index = this.selectedBrands.indexOf(brand);
+          const index = this.filteredBrands.indexOf(brand);
           if (index > -1) {
-            this.selectedBrands.splice(index, 1);
+            // Brand is already filtered, remove it (show all again)
+            this.filteredBrands.splice(index, 1);
           } else {
-            this.selectedBrands.push(brand);
+            // Brand is not filtered yet, add it (show only this brand)
+            this.filteredBrands.push(brand);
           }
           this.filterByBrand();
         },
 
         isSelected(brand) {
-          return this.selectedBrands.includes(brand);
+          return this.filteredBrands.includes(brand);
         },
 
         hasActiveFilters() {
-          return this.selectedBrands.length < this.availableBrands.length;
+          return this.filteredBrands.length > 0;
         },
 
         clearAllFilters() {
-          this.selectedBrands = [...this.availableBrands];
+          this.filteredBrands = [];
           this.filterByBrand();
         },
 
@@ -192,7 +194,9 @@
           cards.forEach(card => {
             const deviceName = card.querySelector('.device-card-name')?.textContent || '';
             const brand = this.extractDeviceBrand(deviceName);
-            card.style.display = (this.selectedBrands.includes(brand)) ? '' : 'none';
+            // If no filters active, show all. Otherwise show only filtered brands.
+            const shouldShow = (this.filteredBrands.length === 0) || (this.filteredBrands.includes(brand));
+            card.style.display = shouldShow ? '' : 'none';
           });
         }
       };
