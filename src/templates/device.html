@@ -107,12 +107,47 @@
                 <p class="text-xl text-slate-600">Expert recommendations based on {{DEVICE_NAME}} specifications</p>
             </div>
 
-            <!-- Answer Box - Quick Result -->
-            <div id="recommendations"
-                class="bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-2xl p-8 mb-12 shadow-sm scroll-mt-20">
-                <p class="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">Recommended SD Card</p>
-                <p class="answer-text text-4xl font-bold text-blue-600 mb-4">{{ANSWER_TEXT}}</p>
-                <p class="answer-explanation text-lg text-slate-700 leading-relaxed">{{ANSWER_EXPLANATION}}</p>
+            <!-- Answer Box - Quick Result & Conversion Engine -->
+            <div id="recommendations" class="relative group bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-2xl p-6 md:p-8 mb-12 shadow-sm hover:shadow-md transition-all scroll-mt-20">
+                
+                <!-- Header -->
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <div>
+                        <p class="text-xs md:text-sm font-bold text-blue-600 uppercase tracking-wide mb-1 flex items-center gap-2">
+                            <i class="fas fa-check-circle"></i> Recommended Spec
+                        </p>
+                        <h2 class="answer-text text-2xl md:text-4xl font-black text-slate-900 leading-tight">
+                            {{ANSWER_TEXT}}
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Explanation -->
+                <p class="answer-explanation text-base md:text-lg text-slate-700 leading-relaxed mb-6">
+                    {{ANSWER_EXPLANATION}}
+                </p>
+
+                <!-- NEW: Dynamic CTA Section -->
+                <!-- This empty container will be populated by the script below -->
+                <div id="hero-quick-buy" class="hidden mt-6 pt-6 border-t border-blue-200/60">
+                    <a id="hero-affiliate-link" href="#brands" target="_blank" rel="nofollow noopener" 
+                       class="flex items-center justify-between w-full bg-white border-2 border-orange-500 hover:bg-orange-50 p-4 rounded-xl group cursor-pointer transition-all shadow-sm hover:shadow-md">
+                        
+                        <div class="flex items-center gap-4">
+                            <!-- Product Image (Cloned via JS) -->
+                            <div id="hero-product-img" class="w-12 h-12 flex-shrink-0 object-contain"></div>
+                            
+                            <div class="flex flex-col">
+                                <span class="text-xs font-bold text-orange-600 uppercase tracking-wider">#1 Top Pick for {{DEVICE_NAME_SHORT}}</span>
+                                <span id="hero-product-name" class="font-bold text-slate-900 leading-tight">View Top Recommendation</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold text-sm whitespace-nowrap group-hover:bg-orange-600 transition-colors">
+                            Check Price <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                        </div>
+                    </a>
+                </div>
             </div>
 
             <!-- Requirements Box -->
@@ -491,6 +526,45 @@
     </style>
 
     <script>
+        // Populate Hero Quick Buy with #1 Product from Brands Table
+        document.addEventListener('DOMContentLoaded', function() {
+            // 1. Find the #1 Product in your existing table
+            // We target the first row's link wrapper, image, and name
+            const firstProductRow = document.querySelector('.brands-table-body tr:first-child');
+            
+            if (firstProductRow) {
+                const originalLink = firstProductRow.querySelector('a.table-card-link-wrapper');
+                const originalImg = firstProductRow.querySelector('img');
+                const originalName = firstProductRow.querySelector('.table-card-name');
+                
+                // 2. Target the new Hero CTA elements
+                const heroSection = document.getElementById('hero-quick-buy');
+                const heroLink = document.getElementById('hero-affiliate-link');
+                const heroImgContainer = document.getElementById('hero-product-img');
+                const heroName = document.getElementById('hero-product-name');
+
+                if (originalLink && heroSection) {
+                    // 3. Inject the data
+                    heroLink.href = originalLink.href; // Use the affiliate link
+                    
+                    // Clone the image so it loads instantly
+                    if (originalImg) {
+                        const imgClone = originalImg.cloneNode(true);
+                        imgClone.className = "w-full h-full object-contain"; // Reset classes for mini-view
+                        heroImgContainer.appendChild(imgClone);
+                    }
+                    
+                    // Set the text
+                    if (originalName) {
+                        heroName.textContent = originalName.textContent.trim();
+                    }
+
+                    // 4. Reveal the section
+                    heroSection.classList.remove('hidden');
+                }
+            }
+        });
+
         // Initialize FAQ accordion on load
         document.addEventListener('DOMContentLoaded', () => {
             const items = document.querySelectorAll('.faq-item');
