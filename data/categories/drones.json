@@ -1086,5 +1086,112 @@
       "dji-air-3"
     ],
     "notes": "Released in 2024. Features 46GB internal storage, but SD card expansion is standard practice for FPV pilots."
+  },
+  {
+    "id": "dji-mini-5-pro",
+    "name": "DJI Mini 5 Pro",
+    "category": "Drones",
+    "slug": "dji-mini-5-pro",
+    "searchTerms": [
+      "dji mini 5 pro",
+      "mini 5 pro",
+      "dji mini 5 pro sd card",
+      "dji mini 5 pro 4k 120fps",
+      "dji mini 5 storage"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I U3",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Records 4K/120fps HDR video with bitrates up to 150Mbps. V30 ensures sustained write speeds required for high-bitrate capture. LiDAR and omnidirectional obstacle sensing add processing demands. 42GB internal storage necessitates regular card offloading. UHS-I U3 provides the speed needed for uninterrupted recording.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "lexar-professional-1066x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is V30 enough for 4K/120fps on the Mini 5 Pro?",
+        "a": "<b>Yes, V30 is the minimum required for stable 4K/120fps recording.</b> The Mini 5 Pro's high bitrate (up to 150Mbps) demands consistent 30MB/s write speeds. Cards rated V60 or higher provide extra headroom but are not strictly necessary."
+      },
+      {
+        "q": "Do I need UHS-II cards?",
+        "a": "<b>No, the Mini 5 Pro uses UHS-I interface only.</b> UHS-II cards will work but provide no performance benefit. Invest in a reliable V30 card from a trusted brand instead."
+      },
+      {
+        "q": "What capacity should I get?",
+        "a": "<b>512GB or 1TB is highly recommended.</b> With only 42GB internal storage and high bitrate 4K recording, you'll fill cards quickly. A 512GB card provides roughly 2-3 hours of 4K/120fps footage."
+      }
+    ],
+    "relatedDevices": [
+      "dji-mini-5k",
+      "dji-mini-4-pro",
+      "dji-air-3s"
+    ],
+    "notes": "Latest flagship Mini series (late 2025 release). 1-inch sensor and LiDAR represent major upgrades. Test cards before flights. DJI officially recommends high-speed cards for 4K/120fps stability."
+  },
+  {
+    "id": "dji-mini-5k",
+    "name": "DJI Mini 5K",
+    "category": "Drones",
+    "slug": "dji-mini-5k",
+    "searchTerms": [
+      "dji mini 5k",
+      "mini 5k drone",
+      "dji mini 5k sd card",
+      "dji mini 5k storage",
+      "dji mini 5k specs"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I U3",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "Records 5K video at 30fps with sustained bitrates requiring V30 minimum. Simpler obstacle sensing than Mini 5 Pro reduces processing overhead, but high-resolution 5K output demands reliable write speeds. V30 ensures smooth recording without dropped frames.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What's the difference between Mini 5K and Mini 5 Pro?",
+        "a": "<b>The Mini 5K records 5K at 30fps with basic obstacle sensing, while the Mini 5 Pro records 4K at 120fps with LiDAR and omnidirectional detection.</b> Both require V30 cards. Choose based on whether you prioritize resolution or frame rate."
+      },
+      {
+        "q": "Can I use my old Mini 4 Pro cards?",
+        "a": "<b>Yes, cards compatible with the Mini 4 Pro work fine with the Mini 5K.</b> Both devices have identical V30 requirements. If your card performed well before, it will continue to do so."
+      }
+    ],
+    "relatedDevices": [
+      "dji-mini-5-pro",
+      "dji-mini-4-pro",
+      "dji-mini-4k"
+    ],
+    "notes": "Budget-friendly entry to the Mini 5 generation (early 2026 release). Replaces older Mini 4K and Mini 2 SE tier. Same V30 requirements as Mini 4 Pro."
   }
 ]

@@ -647,5 +647,170 @@
       "ipad-air",
       "iphone-13"
     ]
+  },
+  {
+    "id": "samsung-galaxy-tab-s10-fe",
+    "name": "Samsung Galaxy Tab S10 FE",
+    "category": "Computing & Tablets",
+    "slug": "samsung-galaxy-tab-s10-fe",
+    "searchTerms": [
+      "samsung galaxy tab s10 fe",
+      "galaxy tab s10 fe sd card",
+      "tab s10 fe microsd",
+      "galaxy tab s10 fe storage",
+      "10.9 inch tablet microsd"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2 (recommended)",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Mid-range Samsung tablet with 10.9\" IPS LCD, 90Hz display, Exynos 1580, and IP68 water resistance. Supports adoptable storage, allowing microSD cards to function as internal storage for apps and media. A2 application performance rating is crucial for smooth app responsiveness when running from expanded storage. V30 ensures stable 4K video playback.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I use adoptable storage on the Tab S10 FE?",
+        "a": "<b>Yes, Android's Adoptable Storage feature lets you format the microSD card as internal storage.</b> This merges the card's capacity with your tablet's built-in storage for seamless app installation. Go to Settings > Storage > Format as Internal to enable it."
+      },
+      {
+        "q": "What capacity should I get?",
+        "a": "<b>512GB is ideal for most users</b>, providing ample space for apps, media, and documents. If you plan to store large media libraries or install numerous large games, 1TB is recommended. The FE supports up to 2TB, though cards that large are expensive."
+      },
+      {
+        "q": "Is A2 really necessary?",
+        "a": "<b>Yes, A2 is highly recommended for the Tab S10 FE</b>, especially if using adoptable storage. The A2 rating ensures faster app launches, smoother multitasking, and better overall responsiveness when apps are installed on the microSD card."
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-tab-s10-fe-plus",
+      "samsung-galaxy-tab-s9",
+      "amazon-fire-max-11"
+    ],
+    "notes": "Released April 2025. 'Fan Edition' balances premium features (S-Pen, IP68) with affordability. High search volume for budget productivity tablet users."
+  },
+  {
+    "id": "samsung-galaxy-tab-s10-fe-plus",
+    "name": "Samsung Galaxy Tab S10 FE+",
+    "category": "Computing & Tablets",
+    "slug": "samsung-galaxy-tab-s10-fe-plus",
+    "searchTerms": [
+      "samsung galaxy tab s10 fe plus",
+      "tab s10 fe+ sd card",
+      "galaxy tab s10 fe plus microsd",
+      "13.1 inch tablet storage",
+      "tab s10 fe plus expandable storage"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2 (recommended)",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Larger variant of the S10 FE with 13.1\" IPS LCD, Exynos 1580, and 10090mAh battery. Supports adoptable storage for seamless internal storage expansion. The larger screen and battery make it ideal for media consumption and productivity. A2 application performance ensures responsive app launch and multitasking. V30 handles 4K video and streaming smoothly.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What's the difference between Tab S10 FE and FE+?",
+        "a": "<b>The FE+ features a larger 13.1\" screen, bigger 10090mAh battery, and slightly more optimized performance.</b> Both share identical microSD support (up to 2TB) and A2 compatibility. Choose based on screen size preference and portability needs."
+      },
+      {
+        "q": "Is 512GB enough?",
+        "a": "<b>512GB is a good starting point</b>, especially if using adoptable storage to merge with internal storage. For heavy media libraries or extensive app collections, 1TB is recommended."
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-tab-s10-fe",
+      "samsung-galaxy-tab-s10-ultra",
+      "amazon-fire-max-11"
+    ],
+    "notes": "Premium 'Fan Edition' variant with larger screen (13.1\"). Ideal for media consumption and productivity. Supports up to 2TB microSD expansion."
+  },
+  {
+    "id": "samsung-galaxy-tab-s10-ultra",
+    "name": "Samsung Galaxy Tab S10 Ultra",
+    "category": "Computing & Tablets",
+    "slug": "samsung-galaxy-tab-s10-ultra",
+    "searchTerms": [
+      "samsung galaxy tab s10 ultra",
+      "tab s10 ultra sd card",
+      "galaxy tab s10 ultra microsd",
+      "14.6 inch tablet storage",
+      "tab s10 ultra amoled"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2 (recommended)",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "1.5TB - 2TB"
+    },
+    "whySpecs": "Premium flagship tablet with 14.6\" AMOLED display (120Hz), Snapdragon Dimensity 9300+, and WiFi 7. The massive screen and top-tier processor demand fast, reliable storage for 4K video, gaming, and productivity. A2 application performance ensures responsive multitasking and app launches. V30 ensures smooth 4K streaming and gameplay from microSD.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What's the advantage of the Tab S10 Ultra?",
+        "a": "<b>The Ultra features a 14.6\" AMOLED display, Dimensity 9300+ processor, and WiFi 7 connectivity.</b> These premium specs justify higher-capacity microSD investments for handling demanding 4K media, gaming, and creative applications."
+      },
+      {
+        "q": "Should I use V60 cards instead of V30?",
+        "a": "<b>V30 is sufficient for most uses</b>, but V60 cards provide extra headroom for sustained 4K video streaming and gaming. If budget allows, V60 is a worthwhile upgrade for future-proofing."
+      },
+      {
+        "q": "What capacity is ideal?",
+        "a": "<b>1TB is the recommended starting point</b> for the Ultra's premium positioning. With a 14.6\" display, users typically store larger media libraries and 4K video collections."
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-tab-s10-fe",
+      "samsung-galaxy-tab-s10-fe-plus",
+      "amazon-fire-max-11"
+    ],
+    "notes": "Premium flagship (2026). 14.6\" AMOLED + Dimensity 9300+ represents the top of Samsung's tablet lineup. A2 + U3 + V30 (or V60) recommended for optimal performance with premium content."
   }
 ]

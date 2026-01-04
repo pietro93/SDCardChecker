@@ -4414,6 +4414,171 @@
       ]
     },
     {
+      "id": "samsung-galaxy-tab-s10-fe",
+      "name": "Samsung Galaxy Tab S10 FE",
+      "category": "Computing & Tablets",
+      "slug": "samsung-galaxy-tab-s10-fe",
+      "searchTerms": [
+        "samsung galaxy tab s10 fe",
+        "galaxy tab s10 fe sd card",
+        "tab s10 fe microsd",
+        "galaxy tab s10 fe storage",
+        "10.9 inch tablet microsd"
+      ],
+      "sdCard": {
+        "type": "microSDXC UHS-I",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A2 (recommended)",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB",
+          "1TB"
+        ],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "Mid-range Samsung tablet with 10.9\" IPS LCD, 90Hz display, Exynos 1580, and IP68 water resistance. Supports adoptable storage, allowing microSD cards to function as internal storage for apps and media. A2 application performance rating is crucial for smooth app responsiveness when running from expanded storage. V30 ensures stable 4K video playback.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-evo-select-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I use adoptable storage on the Tab S10 FE?",
+          "a": "<b>Yes, Android's Adoptable Storage feature lets you format the microSD card as internal storage.</b> This merges the card's capacity with your tablet's built-in storage for seamless app installation. Go to Settings > Storage > Format as Internal to enable it."
+        },
+        {
+          "q": "What capacity should I get?",
+          "a": "<b>512GB is ideal for most users</b>, providing ample space for apps, media, and documents. If you plan to store large media libraries or install numerous large games, 1TB is recommended. The FE supports up to 2TB, though cards that large are expensive."
+        },
+        {
+          "q": "Is A2 really necessary?",
+          "a": "<b>Yes, A2 is highly recommended for the Tab S10 FE</b>, especially if using adoptable storage. The A2 rating ensures faster app launches, smoother multitasking, and better overall responsiveness when apps are installed on the microSD card."
+        }
+      ],
+      "relatedDevices": [
+        "samsung-galaxy-tab-s10-fe-plus",
+        "samsung-galaxy-tab-s9",
+        "amazon-fire-max-11"
+      ],
+      "notes": "Released April 2025. 'Fan Edition' balances premium features (S-Pen, IP68) with affordability. High search volume for budget productivity tablet users."
+    },
+    {
+      "id": "samsung-galaxy-tab-s10-fe-plus",
+      "name": "Samsung Galaxy Tab S10 FE+",
+      "category": "Computing & Tablets",
+      "slug": "samsung-galaxy-tab-s10-fe-plus",
+      "searchTerms": [
+        "samsung galaxy tab s10 fe plus",
+        "tab s10 fe+ sd card",
+        "galaxy tab s10 fe plus microsd",
+        "13.1 inch tablet storage",
+        "tab s10 fe plus expandable storage"
+      ],
+      "sdCard": {
+        "type": "microSDXC UHS-I",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A2 (recommended)",
+        "recommendedCapacity": [
+          "512GB",
+          "1TB"
+        ],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "Larger variant of the S10 FE with 13.1\" IPS LCD, Exynos 1580, and 10090mAh battery. Supports adoptable storage for seamless internal storage expansion. The larger screen and battery make it ideal for media consumption and productivity. A2 application performance ensures responsive app launch and multitasking. V30 handles 4K video and streaming smoothly.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "What's the difference between Tab S10 FE and FE+?",
+          "a": "<b>The FE+ features a larger 13.1\" screen, bigger 10090mAh battery, and slightly more optimized performance.</b> Both share identical microSD support (up to 2TB) and A2 compatibility. Choose based on screen size preference and portability needs."
+        },
+        {
+          "q": "Is 512GB enough?",
+          "a": "<b>512GB is a good starting point</b>, especially if using adoptable storage to merge with internal storage. For heavy media libraries or extensive app collections, 1TB is recommended."
+        }
+      ],
+      "relatedDevices": [
+        "samsung-galaxy-tab-s10-fe",
+        "samsung-galaxy-tab-s10-ultra",
+        "amazon-fire-max-11"
+      ],
+      "notes": "Premium 'Fan Edition' variant with larger screen (13.1\"). Ideal for media consumption and productivity. Supports up to 2TB microSD expansion."
+    },
+    {
+      "id": "samsung-galaxy-tab-s10-ultra",
+      "name": "Samsung Galaxy Tab S10 Ultra",
+      "category": "Computing & Tablets",
+      "slug": "samsung-galaxy-tab-s10-ultra",
+      "searchTerms": [
+        "samsung galaxy tab s10 ultra",
+        "tab s10 ultra sd card",
+        "galaxy tab s10 ultra microsd",
+        "14.6 inch tablet storage",
+        "tab s10 ultra amoled"
+      ],
+      "sdCard": {
+        "type": "microSDXC UHS-I",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A2 (recommended)",
+        "recommendedCapacity": [
+          "512GB",
+          "1TB"
+        ],
+        "maxCapacity": "1.5TB - 2TB"
+      },
+      "whySpecs": "Premium flagship tablet with 14.6\" AMOLED display (120Hz), Snapdragon Dimensity 9300+, and WiFi 7. The massive screen and top-tier processor demand fast, reliable storage for 4K video, gaming, and productivity. A2 application performance ensures responsive multitasking and app launches. V30 ensures smooth 4K streaming and gameplay from microSD.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-microsd-v60"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "What's the advantage of the Tab S10 Ultra?",
+          "a": "<b>The Ultra features a 14.6\" AMOLED display, Dimensity 9300+ processor, and WiFi 7 connectivity.</b> These premium specs justify higher-capacity microSD investments for handling demanding 4K media, gaming, and creative applications."
+        },
+        {
+          "q": "Should I use V60 cards instead of V30?",
+          "a": "<b>V30 is sufficient for most uses</b>, but V60 cards provide extra headroom for sustained 4K video streaming and gaming. If budget allows, V60 is a worthwhile upgrade for future-proofing."
+        },
+        {
+          "q": "What capacity is ideal?",
+          "a": "<b>1TB is the recommended starting point</b> for the Ultra's premium positioning. With a 14.6\" display, users typically store larger media libraries and 4K video collections."
+        }
+      ],
+      "relatedDevices": [
+        "samsung-galaxy-tab-s10-fe",
+        "samsung-galaxy-tab-s10-fe-plus",
+        "amazon-fire-max-11"
+      ],
+      "notes": "Premium flagship (2026). 14.6\" AMOLED + Dimensity 9300+ represents the top of Samsung's tablet lineup. A2 + U3 + V30 (or V60) recommended for optimal performance with premium content."
+    },
+    {
       "id": "viofo-a229-duo",
       "name": "VIOFO A229 Duo",
       "category": "Dash Cams",
@@ -6145,6 +6310,113 @@
       "notes": "Released in 2024. Features 46GB internal storage, but SD card expansion is standard practice for FPV pilots."
     },
     {
+      "id": "dji-mini-5-pro",
+      "name": "DJI Mini 5 Pro",
+      "category": "Drones",
+      "slug": "dji-mini-5-pro",
+      "searchTerms": [
+        "dji mini 5 pro",
+        "mini 5 pro",
+        "dji mini 5 pro sd card",
+        "dji mini 5 pro 4k 120fps",
+        "dji mini 5 storage"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I U3",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB",
+          "1TB"
+        ],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "Records 4K/120fps HDR video with bitrates up to 150Mbps. V30 ensures sustained write speeds required for high-bitrate capture. LiDAR and omnidirectional obstacle sensing add processing demands. 42GB internal storage necessitates regular card offloading. UHS-I U3 provides the speed needed for uninterrupted recording.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-microsd-v60"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        },
+        {
+          "id": "lexar-professional-1066x-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is V30 enough for 4K/120fps on the Mini 5 Pro?",
+          "a": "<b>Yes, V30 is the minimum required for stable 4K/120fps recording.</b> The Mini 5 Pro's high bitrate (up to 150Mbps) demands consistent 30MB/s write speeds. Cards rated V60 or higher provide extra headroom but are not strictly necessary."
+        },
+        {
+          "q": "Do I need UHS-II cards?",
+          "a": "<b>No, the Mini 5 Pro uses UHS-I interface only.</b> UHS-II cards will work but provide no performance benefit. Invest in a reliable V30 card from a trusted brand instead."
+        },
+        {
+          "q": "What capacity should I get?",
+          "a": "<b>512GB or 1TB is highly recommended.</b> With only 42GB internal storage and high bitrate 4K recording, you'll fill cards quickly. A 512GB card provides roughly 2-3 hours of 4K/120fps footage."
+        }
+      ],
+      "relatedDevices": [
+        "dji-mini-5k",
+        "dji-mini-4-pro",
+        "dji-air-3s"
+      ],
+      "notes": "Latest flagship Mini series (late 2025 release). 1-inch sensor and LiDAR represent major upgrades. Test cards before flights. DJI officially recommends high-speed cards for 4K/120fps stability."
+    },
+    {
+      "id": "dji-mini-5k",
+      "name": "DJI Mini 5K",
+      "category": "Drones",
+      "slug": "dji-mini-5k",
+      "searchTerms": [
+        "dji mini 5k",
+        "mini 5k drone",
+        "dji mini 5k sd card",
+        "dji mini 5k storage",
+        "dji mini 5k specs"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I U3",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "Records 5K video at 30fps with sustained bitrates requiring V30 minimum. Simpler obstacle sensing than Mini 5 Pro reduces processing overhead, but high-resolution 5K output demands reliable write speeds. V30 ensures smooth recording without dropped frames.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "What's the difference between Mini 5K and Mini 5 Pro?",
+          "a": "<b>The Mini 5K records 5K at 30fps with basic obstacle sensing, while the Mini 5 Pro records 4K at 120fps with LiDAR and omnidirectional detection.</b> Both require V30 cards. Choose based on whether you prioritize resolution or frame rate."
+        },
+        {
+          "q": "Can I use my old Mini 4 Pro cards?",
+          "a": "<b>Yes, cards compatible with the Mini 4 Pro work fine with the Mini 5K.</b> Both devices have identical V30 requirements. If your card performed well before, it will continue to do so."
+        }
+      ],
+      "relatedDevices": [
+        "dji-mini-5-pro",
+        "dji-mini-4-pro",
+        "dji-mini-4k"
+      ],
+      "notes": "Budget-friendly entry to the Mini 5 generation (early 2026 release). Replaces older Mini 4K and Mini 2 SE tier. Same V30 requirements as Mini 4 Pro."
+    },
+    {
       "id": "nintendo-switch",
       "name": "Nintendo Switch",
       "category": "Gaming Handhelds",
@@ -7145,6 +7417,234 @@
       "notes": "Also applies to the Anbernic RG Cube."
     },
     {
+      "id": "r36s",
+      "name": "R36S",
+      "category": "Gaming Handhelds",
+      "slug": "r36s",
+      "searchTerms": [
+        "r36s game console",
+        "r36s handheld",
+        "r36s microsd",
+        "r36s dual slot sd card",
+        "r36s storage",
+        "rk3326 retro handheld"
+      ],
+      "sdCard": {
+        "type": "Dual microSD (TF1 for OS, TF2 for Games)",
+        "minSpeed": "Class 10 / U1",
+        "minWriteSpeed": "10 MB/s",
+        "minAppPerformance": "A1 (recommended for OS slot)",
+        "recommendedCapacity": [
+          "16GB-32GB for OS",
+          "128GB-256GB for Games"
+        ],
+        "maxCapacity": "512GB per slot"
+      },
+      "whySpecs": "Dual-slot architecture: TF1 (OS) benefits from A1-rated cards for faster boot and menu responsiveness. TF2 (Games) can use standard Class 10 cards since most retro ROMs are small. <b>Stock cards included are low-quality and prone to failure—replace immediately with trusted brands.</b>",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-ultra-microsd"
+        },
+        {
+          "id": "samsung-evo-select-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        },
+        {
+          "id": "amazon-basics-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I really need two separate microSD cards?",
+          "a": "<b>Yes, the R36S has two physically separate slots.</b> TF1 (labeled OS or TF1) is for the operating system, and TF2 (labeled GAME or TF2) is for your ROM library. You must use two individual cards."
+        },
+        {
+          "q": "What happens if I use the stock cards?",
+          "a": "<b>The stock cards that come with the R36S are notoriously unreliable and prone to early failure.</b> <b>Replace them immediately with branded cards from SanDisk or Samsung</b> to avoid data loss and system crashes mid-game."
+        },
+        {
+          "q": "What's the ideal capacity split?",
+          "a": "<b>Use a 16GB-32GB A1-rated card for the OS slot and a 128GB-256GB Class 10 card for the game slot.</b> This split provides fast system performance and thousands of retro titles."
+        },
+        {
+          "q": "Can I use 512GB cards?",
+          "a": "<b>Yes, both slots support up to 512GB cards.</b> A 512GB game card is overkill for most users but provides massive library storage if you collect extensively across multiple systems."
+        }
+      ],
+      "relatedDevices": [
+        "anbernic-rg35xx-plus",
+        "miyoo-mini-plus",
+        "retroid-pocket-4-pro"
+      ],
+      "notes": "Ultra-budget vertical handheld (RK3326). Extremely popular in retro gaming community despite modest specs. <b>Critical: Replace included SD cards immediately.</b> Supports emulation up to PS1 and light N64/Dreamcast."
+    },
+    {
+      "id": "retroid-pocket-6",
+      "name": "Retroid Pocket 6",
+      "category": "Gaming Handhelds",
+      "slug": "retroid-pocket-6",
+      "searchTerms": [
+        "retroid pocket 6",
+        "rp6 sd card",
+        "retroid pocket 6 storage",
+        "retroid pocket 6 microsd",
+        "snapdragon 8 gen 2 handheld"
+      ],
+      "sdCard": {
+        "type": "microSDXC UHS-I",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A2 (recommended)",
+        "recommendedCapacity": [
+          "512GB",
+          "1TB"
+        ],
+        "maxCapacity": "2TB (theoretical)"
+      },
+      "whySpecs": "Flagship handheld featuring Snapdragon 8 Gen 2 and 120Hz AMOLED. Capable of playing Nintendo Switch, Windows PC games, and PS2/GameCube at high resolution. A2 application performance rating significantly improves Android responsiveness and game asset loading when running directly from microSD. V30 ensures smooth streaming of large game files.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "What makes Retroid Pocket 6 special?",
+          "a": "<b>The Pocket 6 (January 2026 release) features a Snapdragon 8 Gen 2 processor with 12GB RAM and a 120Hz AMOLED screen.</b> It's the most powerful Retroid handheld to date, enabling reliable Switch and Windows game emulation at native resolution."
+        },
+        {
+          "q": "How much storage do I need for Switch/Windows games?",
+          "a": "<b>512GB is a minimum, but 1TB is highly recommended.</b> Nintendo Switch and Windows game files are significantly larger than retro ROMs. Modern titles can exceed 50GB each, so 1TB allows you to maintain a curated library of 10-20+ major titles."
+        },
+        {
+          "q": "Is A2 rating important?",
+          "a": "<b>Yes, A2 is highly recommended for this device.</b> When running Switch or Windows games directly from the microSD card, A2's random IOPS performance dramatically improves asset loading speed and reduces stuttering during gameplay."
+        },
+        {
+          "q": "Should I use Adoptable Storage?",
+          "a": "<b>Yes, Android's Adoptable Storage feature lets you treat the microSD card as internal storage</b>, allowing direct installation of large apps and games. Format the card as internal via Settings > Storage to expand usable app space."
+        }
+      ],
+      "relatedDevices": [
+        "retroid-pocket-5",
+        "retroid-pocket-mini",
+        "steam-deck"
+      ],
+      "notes": "<b>Newest Retroid release (January 2026)—the current SEO king for Android-based emulation.</b> First handheld to reliably handle Switch/Windows emulation at high settings. A2 + U3 + V30 combination strongly recommended for optimal performance."
+    },
+    {
+      "id": "retroid-pocket-5",
+      "name": "Retroid Pocket 5",
+      "category": "Gaming Handhelds",
+      "slug": "retroid-pocket-5",
+      "searchTerms": [
+        "retroid pocket 5",
+        "rp5 sd card",
+        "retroid pocket 5 storage",
+        "retroid pocket 5 microsd",
+        "snapdragon 865 handheld"
+      ],
+      "sdCard": {
+        "type": "microSDXC UHS-I",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A2 (recommended)",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "Flagship prior-generation handheld with Snapdragon 865, 8GB RAM, and 5.5\" 1080p AMOLED display. Reliable PS2 and GameCube emulation at 2x–3x resolution. A2 application performance rating ensures smooth Android responsiveness and asset streaming. V30 provides consistent write speeds for large ROM libraries.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-evo-select-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "How does Pocket 5 compare to the new Pocket 6?",
+          "a": "<b>The Pocket 5 (Snapdragon 865) handles PS2/GameCube well, while the Pocket 6 (Snapdragon 8 Gen 2) adds reliable Switch and Windows emulation.</b> Both benefit from A2-rated V30 cards, but the Pocket 6 is more demanding due to higher-resolution emulation."
+        },
+        {
+          "q": "What's the best capacity for PS2/GameCube libraries?",
+          "a": "<b>512GB is ideal for most users.</b> This provides space for a large collection of PS2 and GameCube games (which are typically 1-8GB each) plus hundreds of older retro titles."
+        }
+      ],
+      "relatedDevices": [
+        "retroid-pocket-6",
+        "retroid-pocket-mini",
+        "steam-deck"
+      ],
+      "notes": "Still popular flagship (pre-2026). Snapdragon 865 remains capable for most emulation tasks. A2 + U3 + V30 recommended for optimal performance."
+    },
+    {
+      "id": "retroid-pocket-mini",
+      "name": "Retroid Pocket Mini",
+      "category": "Gaming Handhelds",
+      "slug": "retroid-pocket-mini",
+      "searchTerms": [
+        "retroid pocket mini",
+        "rp mini sd card",
+        "retroid pocket mini storage",
+        "retroid pocket mini 3.7 amoled",
+        "compact handheld emulation"
+      ],
+      "sdCard": {
+        "type": "microSDXC UHS-I",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A2 (recommended)",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "Compact variant featuring Snapdragon 865, 6GB RAM, and 3.7\" 4:3 AMOLED display. The 4:3 aspect ratio is perfect for classic arcade and console games. A2 application performance ensures responsive menu navigation and smooth asset loading. V30 supports reliable streaming of large ROM libraries.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-ultra-microsd"
+        },
+        {
+          "id": "samsung-evo-select-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why is the 4:3 AMOLED screen special?",
+          "a": "<b>The 4:3 aspect ratio matches classic arcade and 8/16-bit console proportions perfectly, eliminating letterboxing.</b> The AMOLED display provides vibrant colors and deep blacks, making retro pixel art look stunning. This combination is highly valued by retro gaming enthusiasts."
+        },
+        {
+          "q": "What capacity should I get for Pocket Mini?",
+          "a": "<b>256GB-512GB is the sweet spot.</b> The smaller screen and 6GB RAM limit it compared to Pocket 5/6, but it's still excellent for PS1, Dreamcast, and all older systems."
+        }
+      ],
+      "relatedDevices": [
+        "retroid-pocket-5",
+        "retroid-pocket-6",
+        "miyoo-mini-plus"
+      ],
+      "notes": "Prized for its authentic 4:3 AMOLED display. High SEO value due to dedicated retro gaming community. A2 rating recommended for optimal performance."
+    },
+    {
       "id": "wyze-cam-v3",
       "name": "Wyze Cam v3",
       "category": "Security Cameras",
@@ -7544,8 +8044,8 @@
     }
   ],
   "metadata": {
-    "generated": "2025-12-31T08:18:33.877Z",
-    "totalDevices": 169,
+    "generated": "2026-01-04T13:16:23.935Z",
+    "totalDevices": 178,
     "categories": [
       "Action Cameras",
       "Audio & Hi-Fi",
