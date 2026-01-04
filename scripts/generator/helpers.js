@@ -262,7 +262,8 @@ function getDeviceImageFallback(device) {
 
     // Brand-specific placeholders (using only files that actually exist)
     if (name.includes("iphone")) return "/img/devices/smartphones/iphone-15.webp";
-    if (name.includes("samsung galaxy")) return "/img/devices/smartphones/samsung-galaxy-s25.webp";
+    if (name.includes("samsung galaxy") && !name.includes("tab")) return "/img/devices/smartphones/samsung-galaxy-s25.webp";
+    if (name.includes("samsung galaxy tab")) return "/img/devices/computing/tablet-placeholder.webp";
     if (name.includes("google pixel")) return "/img/devices/smartphones/google-pixel-8.webp";
     if (name.includes("gopro")) return "/img/devices/action-cameras/gopro-placeholder.webp";
   if (name.includes("insta360")) return "/img/devices/action-cameras/gopro-placeholder.webp";
