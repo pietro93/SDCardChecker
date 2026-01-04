@@ -657,5 +657,168 @@
       "iphone-13"
     ],
     "notes": ""
+  },
+  {
+    "id": "samsung-galaxy-tab-s10-fe",
+    "name": "Samsung Galaxy Tab S10 FE",
+    "category": "computing-and-tablets",
+    "slug": "samsung-galaxy-tab-s10-fe",
+    "searchTerms": [
+      "Samsung Galaxy Tab S10 FE",
+      "galaxy tab s10 fe sdカード",
+      "tab s10 fe microsd",
+      "ギャラクシータブ S10 FE",
+      "10.9インチ タブレット microsd"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2（推奨）",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Samsungの中価格帯タブレット、10.9インチ IPS LCD、90Hz表示、Exynos 1580、IP68防水防塵搭載。Adoptable Storage機能により、microSDカードをアプリおよびメディア用の内部ストレージとして機能させられます。A2アプリケーション定格は、拡張ストレージから実行するアプリの円滑な応答性に重要です。V30は4Kビデオ再生と安定したストリーミングを確保します。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "「Tab S10 FEでAdoptable Storage機能は使えますか？」",
+        "a": "<b>はい、AndroidのAdoptable Storage機能でmicroSDカードを内部ストレージとしてフォーマットできます。</b> これにより、内蔵ストレージとカードの容量が統合され、アプリをシームレスにインストールできます。設定 > ストレージ > 内部としてフォーマット で有効化できます。"
+      },
+      {
+        "q": "「どの容量を選べば？」",
+        "a": "<b>512GBがほとんどのユーザーに理想的です。</b> アプリ、メディア、ドキュメント保存に十分なスペースを提供します。大規模メディアライブラリまたは大量の大型ゲーム導入計画がある場合は、1TBが推奨されます。FEは最大2TBまで対応していますが、そこまでのカードは高額です。"
+      },
+      {
+        "q": "「A2定格は本当に必要ですか？」",
+        "a": "<b>はい、Tab S10 FEではA2が強く推奨されます。</b> 特にAdoptable Storage利用時。A2定格により、アプリ起動速度が向上し、マルチタスク処理がより滑らかになり、microSDカードにインストールされたアプリ全体の応答性が改善されます。"
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-tab-s10-fe-plus",
+      "samsung-galaxy-tab-s9",
+      "amazon-fire-max-11"
+    ],
+    "notes": "2025年4月リリース。「Fan Edition」はプレミアム機能（S-Pen、IP68）と手頃な価格のバランスを実現しています。予算志向の生産性タブレットユーザーの検索量が高いです。"
+  },
+  {
+    "id": "samsung-galaxy-tab-s10-fe-plus",
+    "name": "Samsung Galaxy Tab S10 FE+",
+    "category": "computing-and-tablets",
+    "slug": "samsung-galaxy-tab-s10-fe-plus",
+    "searchTerms": [
+      "Samsung Galaxy Tab S10 FE+",
+      "tab s10 fe plus sdカード",
+      "13.1インチ タブレット ストレージ",
+      "galaxy tab s10 fe plus microsd"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2（推奨）",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "S10 FEの大型派生モデル、13.1インチ IPS LCD、Exynos 1580、10090mAh大容量バッテリー搭載。Adoptable Storage機能で、内部ストレージを拡張できます。大型画面とバッテリーにより、メディア消費と生産性に特に適しています。A2アプリケーション定格はアプリ起動時間とマルチタスク処理の応答性を実現します。V30は4Kビデオおよびストリーミングを滑らかに処理します。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "「Tab S10 FEとFE+の違いは？」",
+        "a": "<b>FE+は13.1インチ大型画面、より大きな10090mAhバッテリーを搭載し、わずかに性能最適化があります。</b> microSD対応（最大2TB）とA2互換性は同一です。画面サイズ選好と携帯性の必要性で選択してください。"
+      },
+      {
+        "q": "「512GBで十分ですか？」",
+        "a": "<b>512GBは良いスタートラインです。</b> 特にAdoptable Storageで内部ストレージと統合する場合。大規模メディアライブラリまたは大量の大型アプリコレクション用途であれば1TB推奨です。"
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-tab-s10-fe",
+      "samsung-galaxy-tab-s10-ultra",
+      "amazon-fire-max-11"
+    ],
+    "notes": "プレミアム「Fan Edition」派生機、13.1インチ大型画面搭載。メディア消費と生産性に最適です。microSD最大2TB拡張対応。"
+  },
+  {
+    "id": "samsung-galaxy-tab-s10-ultra",
+    "name": "Samsung Galaxy Tab S10 Ultra",
+    "category": "computing-and-tablets",
+    "slug": "samsung-galaxy-tab-s10-ultra",
+    "searchTerms": [
+      "Samsung Galaxy Tab S10 Ultra",
+      "tab s10 ultra sdカード",
+      "14.6インチ タブレット ストレージ",
+      "galaxy tab s10 ultra amoled"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2（推奨）",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "1.5TB～2TB"
+    },
+    "whySpecs": "Samsungタブレット最高峰フラッグシップ、14.6インチ AMOLED 120Hz表示、Snapdragon Dimensity 9300+、WiFi 7搭載。巨大スクリーンとハイエンドプロセッサは、4Kビデオ、ゲーム、クリエイティブアプリケーション向けに4K動画、ゲーム、クリエイティブアプリ用の高速で信頼できるストレージを要求します。A2アプリケーション定格はマルチタスク処理とアプリ起動応答性を実現します。V30は4Kストリーミングおよびゲームプレイ中のmicroSDからのスムーズな実行を保証します。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "「Tab S10 Ultraの利点は？」",
+        "a": "<b>Ultraは14.6インチ AMOLED表示、Dimensity 9300+プロセッサ、WiFi 7接続を搭載しています。</b> これらプレミアム仕様により、4K映像、ゲーミング、クリエイティブアプリケーション用の大容量microSD投資を正当化します。"
+      },
+      {
+        "q": "「V30ではなくV60カードを選ぶべきですか？」",
+        "a": "<b>V30はほとんどの用途で十分ですが、</b>V60カードは持続的な4Kビデオストリーミングおよびゲーミングに追加のヘッドルームを提供します。予算が許容すれば、V60は今後対応のための優れたアップグレードです。"
+      },
+      {
+        "q": "「最適な容量は？」",
+        "a": "<b>1TBが推奨スターティングポイントです。</b> Ultraのプレミアム位置づけから、ユーザーは一般的に大規模メディアライブラリと4Kビデオコレクションを保存します。"
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-tab-s10-fe",
+      "samsung-galaxy-tab-s10-fe-plus",
+      "amazon-fire-max-11"
+    ],
+    "notes": "プレミアムフラッグシップ機（2026）。14.6インチ AMOLED + Dimensity 9300+はSamsungタブレットラインアップの最高峰を表しています。A2 + U3 + V30（またはV60）がプレミアムコンテンツ向けに推奨されます。"
   }
-]
+  ]

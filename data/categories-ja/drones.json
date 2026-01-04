@@ -1090,5 +1090,113 @@
       "dji-air-3"
     ],
     "notes": "2024年発売の人気FPVドローン。46GBの内部ストレージを搭載していますが、多くのパイロットはデータ管理のためにSDカードを使用しています。"
+  },
+  {
+    "id": "dji-mini-5-pro",
+    "name": "DJI Mini 5 Pro",
+    "category": "drones",
+    "slug": "dji-mini-5-pro",
+    "searchTerms": [
+      "DJI Mini 5 Pro",
+      "DJI ミニ 5 Pro",
+      "ミニ5プロ",
+      "dji mini 5 pro sdカード",
+      "DJI Mini 5 4K 120fps",
+      "ドローン microsd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I U3",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "DJI Mini 5 Proは4K/120fps HDRビデオを記録でき、ビットレートは最大150Mbpsに達します。V30は高ビットレート記録に必要な持続的な30MB/sの書き込み速度を保証します。LiDARと全方向障害物検知によるシステム負荷の増加も考慮すると、内蔵42GBのストレージでは頻繁なカードへの保存が必要になります。UHS-I U3インターフェースは中断のない録画に必要な速度を提供します。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "lexar-professional-1066x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "「Mini 5 ProのV30は4K/120fps対応で十分ですか？」",
+        "a": "<b>はい、V30は4K/120fps安定録画に必須の最低条件です。</b> Mini 5 Proの高ビットレート（最大150Mbps）には、一貫した30MB/sの書き込み速度が必須です。V60以上のカードはさらに安定性を提供しますが、V30でも完全に対応しています。"
+      },
+      {
+        "q": "「UHS-IIカードは使用できますか？」",
+        "a": "<b>いいえ、Mini 5 ProはUHS-Iインターフェースのみに対応しています。</b> UHS-IIカードは動作しますが、パフォーマンス上の利点はありません。信頼できるブランドのV30カードに投資することをお勧めします。"
+      },
+      {
+        "q": "「どの容量を選ぶべきですか？」",
+        "a": "<b>512GB以上を強く推奨します。</b> 内蔵ストレージが42GBのみで、高ビットレート4K録画では、512GBのカードでおよそ2～3時間のフッテージを記録できます。"
+      }
+    ],
+    "relatedDevices": [
+      "dji-mini-5k",
+      "dji-mini-4-pro",
+      "dji-air-3s"
+    ],
+    "notes": "最新のMiniシリーズ フラッグシップ機（2025年後期リリース）。1インチセンサーとLiDARは大きなアップグレードを表しています。フライト前に新しいカードをテストしてください。DJI公式は4K/120fps安定性のため高速カードを推奨しています。"
+  },
+  {
+    "id": "dji-mini-5k",
+    "name": "DJI Mini 5K",
+    "category": "drones",
+    "slug": "dji-mini-5k",
+    "searchTerms": [
+      "DJI Mini 5K",
+      "DJI ミニ 5K",
+      "dji mini 5k sdカード",
+      "DJI 5K ドローン",
+      "mini 5k ストレージ"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I U3",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "DJI Mini 5Kは5Kビデオを30fpsで記録し、持続的なビットレートはV30の最低基準を要求します。Mini 5 Proより単純な障害物検知はシステム処理負荷を軽減しますが、高解像度5K出力は信頼できる書き込み速度を必須とします。V30は中断のない安定した録画を保証します。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "「Mini 5KとMini 5 Proの違いは何ですか？」",
+        "a": "<b>Mini 5Kは30fpsで5K動画を記録し、基本的な障害物検知を搭載しています。一方、Mini 5 ProはLiDARと全方向検知を備えた4K/120fps対応です。</b> どちらもV30カード要件は同じです。解像度優先か、フレームレート優先かで選択します。"
+      },
+      {
+        "q": "「旧型Mini 4 Pro用のカードは使えますか？」",
+        "a": "<b>はい、Mini 4 Pro対応のカードはMini 5Kでも問題なく動作します。</b> 両機ともV30要件は同一です。以前のカードが安定していれば、今後も同様に機能します。"
+      }
+    ],
+    "relatedDevices": [
+      "dji-mini-5-pro",
+      "dji-mini-4-pro",
+      "dji-mini-4k"
+    ],
+    "notes": "Mini 5世代へのバジェット向け入門機（2026年初期リリース）。旧型Mini 4K・Mini 2 SE層に代わります。Mini 4 Proと同じV30要件です。"
   }
-]
+  ]

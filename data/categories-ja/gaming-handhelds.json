@@ -1424,5 +1424,231 @@
       "anbernic-rg353v"
     ],
     "notes": "別途「SD2Vita」アダプターの購入が必要です。Amazon等で安価に入手可能です。"
+  },
+  {
+    "id": "r36s",
+    "name": "R36S",
+    "category": "gaming-handhelds",
+    "slug": "r36s",
+    "searchTerms": [
+      "R36S",
+      "r36s ゲーム機",
+      "r36s microsd",
+      "r36s デュアルスロット",
+      "r36s ストレージ",
+      "rk3326 レトロ"
+    ],
+    "sdCard": {
+      "type": "デュアルmicroSD（TF1:OS、TF2:ゲーム用）",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1（OS用カード推奨）",
+      "recommendedCapacity": [
+        "OS用: 16GB～32GB",
+        "ゲーム用: 128GB～256GB"
+      ],
+      "maxCapacity": "スロット当たり512GB"
+    },
+    "whySpecs": "デュアルスロット構成が特徴です：TF1（OS）はA1定格カードの使用により起動速度とメニュー応答性が大幅に向上します。TF2（ゲーム）はほとんどのレトロROMがサイズ小さいため、標準的なClass 10カードで十分対応できます。<b>付属のカードは低品質で故障しやすいため、信頼できるブランドに即座に交換することを強く推奨します。</b>",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "「本当に2枚のカードが必要ですか？」",
+        "a": "<b>はい、R36Sには物理的に独立した2つのmicroSDスロットがあります。</b> TF1（通常「OS」または「TF1」と表記）はOS用、TF2（「GAME」または「TF2」）はROMライブラリ用です。1枚のカードをパーティション分割して使用することはできず、2枚の個別カードが必須です。"
+      },
+      {
+        "q": "「付属カードを使わないほうがいいですか？」",
+        "a": "<b>R36Sに付属のカードは極めて低品質で、早期の故障が多く報告されています。</b> <b>SanDiskやSamsungなどの信頼できるブランドのカードに即座に交換してください。</b> データ喪失やゲーム中のクラッシュを防ぐことができます。"
+      },
+      {
+        "q": "「2枚のカードの容量配分はどうすればいいですか？」",
+        "a": "<b>OS用スロットに16GB～32GB のA1定格カード、ゲーム用スロットに128GB～256GBのClass 10カードを使用してください。</b> OS用は容量より速度（A1定格）を優先し、ゲーム用は大量ライブラリ保存のための容量を優先します。"
+      },
+      {
+        "q": "「512GBのカードは使えますか？」",
+        "a": "<b>はい、両スロットとも512GBカードに対応しています。</b> ゲーム用に512GBは一般ユーザーには過剰ですが、複数システムにわたって大規模コレクションを保存する場合は有用です。"
+      }
+    ],
+    "relatedDevices": [
+      "anbernic-rg35xx-plus",
+      "miyoo-mini-plus",
+      "retroid-pocket-4-pro"
+    ],
+    "notes": "超低価格の縦型レトロハンドヘルド機（RK3326搭載）。スペックは控えめながら、レトロゲーミングコミュニティで極めて人気があります。<b>重要：付属カードを即座に交換してください。</b> PS1とライト版N64/Dreamcast対応のエミュレーション能力を備えています。"
+  },
+  {
+    "id": "retroid-pocket-6",
+    "name": "Retroid Pocket 6",
+    "category": "gaming-handhelds",
+    "slug": "retroid-pocket-6",
+    "searchTerms": [
+      "Retroid Pocket 6",
+      "retroid pocket 6 sdカード",
+      "rp6 microsd",
+      "retroid pocket 6 容量",
+      "snapdragon 8 gen 2 ハンドヘルド"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2（推奨）",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB（理論値）"
+    },
+    "whySpecs": "フラッグシップハンドヘルド機で、Snapdragon 8 Gen 2と120Hz AMOLED搭載。Nintendo Switch、Windowsゲーム、PS2/GameCube高解像度プレイに対応します。A2アプリケーションパフォーマンス定格により、microSDカードから直接実行時のAndroid応答性とゲームアセットロードが著しく改善されます。V30は大型ゲームファイルの安定したストリーミングを実現します。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "「Retroid Pocket 6のユニークな点は何ですか？」",
+        "a": "<b>Pocket 6（2026年1月リリース）はSnapdragon 8 Gen 2プロセッサ、12GBメモリ、120Hz AMOLEDスクリーンを搭載する、Retroidシリーズ最高峰です。</b> Nintendo SwitchとWindowsゲームのエミュレーションをネイティブ解像度で確実に実現する初のハンドヘルド機です。"
+      },
+      {
+        "q": "「Switch/Windowsゲーム用にはどれくらいの容量が必要ですか？」",
+        "a": "<b>512GBが最低ライン、1TBが強く推奨されます。</b> Nintendo SwitchとWindowsゲームファイルはレトロROMより大幅に容量が大きいです。最新タイトルは1本で50GBを超える場合があり、1TBあれば10～20タイトル以上の厳選ライブラリを維持できます。"
+      },
+      {
+        "q": "「A2定格は重要ですか？」",
+        "a": "<b>はい、A2は当機にとって強く推奨されます。</b> SwitchまたはWindowsゲームをmicroSDカードから直接実行する場合、A2のランダムIOPS性能はアセットロード速度を劇的に改善し、ゲームプレイ中のスタッターを削減します。"
+      },
+      {
+        "q": "「Adoptable Storage（採用可能ストレージ）を使用すべきですか？」",
+        "a": "<b>はい、AndroidのAdoptable Storage機能でmicroSDカードを内部ストレージとして処理できます。</b> これにより大型アプリとゲームの直接インストールが可能になります。設定 > ストレージ > 内部として フォーマットでこの機能を有効化してください。"
+      }
+    ],
+    "relatedDevices": [
+      "retroid-pocket-5",
+      "retroid-pocket-mini",
+      "steam-deck"
+    ],
+    "notes": "<b>最新Retroidリリース（2026年1月）―Android高度なエミュレーション界の「SEOキング」。</b> SwitchとWindowsエミュレーションを高設定で確実に処理する初のハンドヘルド。A2 + U3 + V30の組み合わせは最適なパフォーマンス実現に強く推奨されます。"
+  },
+  {
+    "id": "retroid-pocket-5",
+    "name": "Retroid Pocket 5",
+    "category": "gaming-handhelds",
+    "slug": "retroid-pocket-5",
+    "searchTerms": [
+      "Retroid Pocket 5",
+      "rp5 sdカード",
+      "retroid pocket 5 microsd",
+      "snapdragon 865 ハンドヘルド"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2（推奨）",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "前世代フラッグシップ、Snapdragon 865搭載、8GBメモリ、5.5インチ1080p AMOLED搭載。PS2とGameCube エミュレーションを2～3倍解像度で安定供給します。A2アプリケーションパフォーマンス定格により、滑らかなAndroid応答性とアセットストリーミングが実現されます。V30は大規模ROMライブラリの一貫した書き込み速度を提供します。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "「Pocket 5と新しいPocket 6を比較すると？」",
+        "a": "<b>Pocket 5（Snapdragon 865）はPS2/GameCubeに十分で、Pocket 6（Snapdragon 8 Gen 2）はSwitchとWindowsエミュレーション対応を追加しています。</b> 両方ともA2定格V30カード恩恵を受けますが、Pocket 6は高解像度エミュレーション要求のため負荷が高いです。"
+      },
+      {
+        "q": "「PS2/GameCubeライブラリに最適な容量は？」",
+        "a": "<b>512GBが多くのユーザーに最適です。</b> PS2およびGameCubeゲーム（一般的に1～8GB各々）の大規模コレクション、加えて数百の旧型レトロタイトルに十分なスペースを提供します。"
+      }
+    ],
+    "relatedDevices": [
+      "retroid-pocket-6",
+      "retroid-pocket-mini",
+      "steam-deck"
+    ],
+    "notes": "依然として人気のあるフラッグシップ機（2026年前）。Snapdragon 865はほとんどのエミュレーションタスク対応に十分です。A2 + U3 + V30が最適なパフォーマンスで推奨されます。"
+  },
+  {
+    "id": "retroid-pocket-mini",
+    "name": "Retroid Pocket Mini",
+    "category": "gaming-handhelds",
+    "slug": "retroid-pocket-mini",
+    "searchTerms": [
+      "Retroid Pocket Mini",
+      "rp mini sdカード",
+      "retroid pocket mini 3.7 amoled",
+      "コンパクト ハンドヘルド エミュレーション"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2（推奨）",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "コンパクト派生機、Snapdragon 865搭載、6GBメモリ、3.7インチ4:3 AMOLED搭載。4:3アスペクト比は懐かしいアーケードおよび昔のコンソールゲーム用途に完璧です。A2アプリケーション定格により、メニュー操作応答性が向上し、スムーズなアセット読み込みが実現されます。V30は大規模ROMライブラリの信頼できるストリーミングをサポートします。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "「4:3 AMOLED画面は何がすごいのですか？」",
+        "a": "<b>4:3アスペクト比は懐かしいアーケードおよび8/16ビットコンソールゲーム比率に完璧に一致し、レターボックス表示を排除します。</b> AMOLED表示は鮮やかな色合いと深い黒を提供し、懐かしいピクセルアートが最高に美しく見えます。この組み合わせはレトロゲーム愛好家に非常に高く評価されています。"
+      },
+      {
+        "q": "「Pocket Miniに最適な容量は？」",
+        "a": "<b>256GB～512GBがスイートスポットです。</b> 小型画面と6GBメモリ制限はPocket 5/6より能力が劣ります。しかしPS1、Dreamcast、旧型システム一式に依然として優れています。"
+      }
+    ],
+    "relatedDevices": [
+      "retroid-pocket-5",
+      "retroid-pocket-6",
+      "miyoo-mini-plus"
+    ],
+    "notes": "本物の4:3 AMOLED画面で高く評価されています。献身的なレトロゲーミングコミュニティ向けSEO価値が高いです。A2定格が最適なパフォーマンスに推奨されます。"
   }
-]
+  ]

@@ -1,8 +1,8 @@
 # Device Tracker
 
-Generated: 2026-01-04T13:16:34.747Z
+Generated: 2026-01-04T13:24:02.215Z
 **English Devices:** 178
-**Japanese Devices:** 156
+**Japanese Devices:** 165
 
 ---
 
@@ -297,7 +297,7 @@ Generated: 2026-01-04T13:16:34.747Z
 - Sony α6700 (ILCE-6700)
 - Sony α7 IV (ILCE-7M4)
 
-### computing-and-tablets (16 devices)
+### computing-and-tablets (19 devices)
 
 - Amazon Fire HD 10
 - Amazon Fire Max 11
@@ -310,6 +310,9 @@ Generated: 2026-01-04T13:16:34.747Z
 - Raspberry Pi 4 Model B
 - Raspberry Pi 5 (ラズベリーパイ5)
 - Raspberry Pi Zero 2 W
+- Samsung Galaxy Tab S10 FE
+- Samsung Galaxy Tab S10 FE+
+- Samsung Galaxy Tab S10 Ultra
 - Samsung Galaxy Tab S9
 - iPad 9th Generation
 - iPad Air
@@ -327,7 +330,7 @@ Generated: 2026-01-04T13:16:34.747Z
 - Yupiteru WDT510c (ユピテル Web限定)
 - デジタルルームミラー型ドラレコ (一般/汎用)
 
-### drones (24 devices)
+### drones (26 devices)
 
 - Autel EVO II Pro V3
 - Autel EVO Lite+
@@ -342,6 +345,8 @@ Generated: 2026-01-04T13:16:34.747Z
 - DJI Mini 3 Pro
 - DJI Mini 4 Pro
 - DJI Mini 4K
+- DJI Mini 5 Pro
+- DJI Mini 5K
 - FIMI Mini 3
 - Holy Stone HS175D
 - Holy Stone HS360S
@@ -354,7 +359,7 @@ Generated: 2026-01-04T13:16:34.747Z
 - Skydio X10
 - Walksnail Moonlight Kit（ウォークスネイル ムーンライト）
 
-### gaming-handhelds (28 devices)
+### gaming-handhelds (32 devices)
 
 - ASUS ROG Ally
 - ASUS ROG Ally X
@@ -380,8 +385,12 @@ Generated: 2026-01-04T13:16:34.747Z
 - Nintendo Switch 有機ELモデル
 - Nintendo Switch（ニンテンドースイッチ）
 - PlayStation Vita (SD2Vita)
+- R36S
 - Retroid Pocket 4 / 4 Pro
 - Retroid Pocket 4 / 4 Pro
+- Retroid Pocket 5
+- Retroid Pocket 6
+- Retroid Pocket Mini
 - Steam Deck（スチームデック）
 - イーグレットツー ミニ
 

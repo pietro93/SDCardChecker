@@ -87,7 +87,7 @@ function mergeDeviceCategories() {
 ## Key Points
 
 - ✅ **Edit category files** in `data/categories/`
-- ❌ **Never manually edit** `devices.json` (it will be overwritten)
+- ❌ **Never manually edit** `devices.json` or 'devices-ja.json' (it will be overwritten)
 - ✅ **Run `npm run build:site`** after changes
 - ✅ Each category file is an **array of device objects** (not wrapped)
 - ✅ The build process validates and adds metadata
