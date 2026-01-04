@@ -21,6 +21,7 @@ const { generateReadersIndex } = require("./generate-readers-index");
 const { generateReadersTypeIndexPages } = require("./generate-readers-type-index");
 const { generateCoreFiles } = require("./generate-core-files");
 const { generateRedirects } = require("./generate-redirects");
+const { generateEnglishSitemap } = require("./generate-sitemaps");
 
 // Paths
 const dataPath = path.join(__dirname, "../../data/devices.json");
@@ -155,7 +156,12 @@ async function build() {
     await generateRedirects(allDevices, distPath);
     console.log();
 
-    // 8. Generate Core Files (Sitemap, robots.txt, etc.)
+    // 8. Generate English Sitemap (to public/)
+    console.log("📡 Generating English sitemap...");
+    generateEnglishSitemap(allDevices, allReaders);
+    console.log();
+
+    // 9. Generate Core Files (robots.txt, legal pages, etc.)
     console.log("📝 Generating core files...");
     await generateCoreFiles(allDevices, allReaders, distPath);
     console.log();

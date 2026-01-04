@@ -14,6 +14,7 @@ const { generateDevicePagesJa } = require("./generate-device-pages-ja");
 const { generateJapaneseGuides } = require("./generate-guides-ja");
 const { generateJapaneseCoreFiles } = require("./generate-core-files-ja");
 const { generateHeader, generateFooter, generateGrowScript, generateSidebar } = require("../../src/templates/components-ja");
+const { generateJapaneseSitemap } = require("./generate-sitemaps");
 
 // Paths
 const devicesPath = path.join(__dirname, "../../data/devices.json"); // Uses merged devices.json
@@ -207,7 +208,12 @@ async function buildJapanese() {
     generateJapaneseGuides(distPath);
     console.log();
 
-    // 7. Generate Japanese Core Files (sitemap, robots.txt)
+    // 7. Generate Japanese Sitemap (to public/ja/)
+    console.log("📡 Generating Japanese sitemap...");
+    generateJapaneseSitemap(allDevices);
+    console.log();
+
+    // 8. Generate Japanese Core Files (robots.txt, etc.)
     console.log("📄 Generating Japanese core files...");
     await generateJapaneseCoreFiles(allDevices, distPath);
     console.log();
