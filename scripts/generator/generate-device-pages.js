@@ -8,6 +8,7 @@ const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBre
 const { generateFAQs, mergeFAQs } = require("./generateFAQs");
 const { generateAmazonBadgesSection } = require("./amazon-badges-generator");
 const { generatePromotedCardSection } = require("./promotion-generator");
+const { getExplanation } = require("../lib/enrichment-loader");
 
 const srcPath = path.join(__dirname, "../../src");
 
@@ -492,10 +493,14 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     // Featured device image
     const deviceImage = device.imageUrl || getDeviceImageFallback(device);
 
-    // Extract first sentence from whySpecs for the answer explanation
-    // Properly match sentence end: period followed by space or end of string (avoids splitting on decimal points like 2.7K)
-    const sentenceMatch = device.whySpecs.match(/[^.!?]*[.!?](?:\s|$)/);
-    const whySpecsFirstSentence = sentenceMatch ? sentenceMatch[0].trim() : device.whySpecs;
+    // Try to get enriched explanation, fall back to first sentence of whySpecs
+    let explanation = getExplanation(device.category, device.slug);
+    if (!explanation) {
+      // Fallback: Extract first sentence from whySpecs
+      // Properly match sentence end: period followed by space or end of string (avoids splitting on decimal points like 2.7K)
+      const sentenceMatch = device.whySpecs.match(/[^.!?]*[.!?](?:\s|$)/);
+      explanation = sentenceMatch ? sentenceMatch[0].trim() : device.whySpecs;
+    }
 
     let html = template
         .replace(/{{DEVICE_TITLE}}/g, title)
@@ -513,7 +518,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{CATEGORY_NAME}}/g, categoryDisplayName)
         .replace(/{{DEVICE_IMAGE}}/g, deviceImage)
         .replace(/{{ANSWER_TEXT}}/g, answerText)
-        .replace(/{{ANSWER_EXPLANATION}}/g, whySpecsFirstSentence)
+        .replace(/{{ANSWER_EXPLANATION}}/g, explanation)
         .replace(/{{REQUIREMENTS_BOX}}/g, requirementsBoxHTML)
         .replace(/{{SPECS_HTML}}/g, specsHTML)
         .replace(/{{BRANDS_TABLE_ROWS}}/g, brandsTableRows)

@@ -7418,59 +7418,58 @@
     },
     {
       "id": "r36s",
-      "name": "R36S",
+      "name": "R36S Retro Handheld",
       "category": "Gaming Handhelds",
       "slug": "r36s",
       "searchTerms": [
-        "r36s game console",
-        "r36s handheld",
-        "r36s microsd",
-        "r36s dual slot sd card",
-        "r36s storage",
-        "rk3326 retro handheld"
+        "r36s sd card setup",
+        "r36s black screen fix",
+        "r36s arkos memory card",
+        "r36s tf1 vs tf2 slot",
+        "r36s samsung evo incompatibility",
+        "best sd card for r36s"
       ],
       "sdCard": {
-        "type": "Dual microSD (TF1 for OS, TF2 for Games)",
-        "minSpeed": "Class 10 / U1",
+        "type": "Dual microSD (TF1: OS/Boot, TF2: ROMs)",
+        "minSpeed": "Class 10 / UHS-I",
         "minWriteSpeed": "10 MB/s",
-        "minAppPerformance": "A1 (recommended for OS slot)",
+        "minAppPerformance": "A1 (Critical for TF1/OS Slot)",
         "recommendedCapacity": [
-          "16GB-32GB for OS",
-          "128GB-256GB for Games"
+          "32GB (OS - TF1)",
+          "128GB (Games - TF2)"
         ],
-        "maxCapacity": "512GB per slot"
+        "maxCapacity": "512GB (Tested)"
       },
-      "whySpecs": "Dual-slot architecture: TF1 (OS) benefits from A1-rated cards for faster boot and menu responsiveness. TF2 (Games) can use standard Class 10 cards since most retro ROMs are small. <b>Stock cards included are low-quality and prone to failure—replace immediately with trusted brands.</b>",
+      "whySpecs": "The R36S is notorious for shipping with corrupt, unbranded SD cards that cause the 'Black Screen of Death.' <b>You must replace the stock cards immediately.</b> <br><br><b>TF1 (OS Slot):</b> Requires a card with high compatibility (SanDisk Ultra is safest) and A1 random-read performance to boot ArkOS quickly. Some modern Samsung EVO cards may not boot in TF1 due to voltage sensitivity.<br><b>TF2 (Game Slot):</b> Standard Class 10 cards work perfectly here for storing ROMs.",
       "recommendedBrands": [
         {
-          "id": "sandisk-ultra-microsd"
+          "id": "sandisk-ultra-microsd",
+          "note": "Most compatible for TF1 (OS) Slot"
         },
         {
-          "id": "samsung-evo-select-microsd"
+          "id": "samsung-evo-select-microsd",
+          "note": "Best for TF2 (Games) Slot"
         },
         {
           "id": "kingston-canvas-go-plus"
-        },
-        {
-          "id": "amazon-basics-microsd"
         }
       ],
       "faq": [
         {
-          "q": "Do I really need two separate microSD cards?",
-          "a": "<b>Yes, the R36S has two physically separate slots.</b> TF1 (labeled OS or TF1) is for the operating system, and TF2 (labeled GAME or TF2) is for your ROM library. You must use two individual cards."
+          "q": "Why is my R36S showing a black screen?",
+          "a": "<b>This is almost always caused by a failed stock SD card.</b> The unbranded cards included in the box are extremely low quality. Flash a fresh image of ArkOS onto a brand-name card (like SanDisk) to fix this immediately."
         },
         {
-          "q": "What happens if I use the stock cards?",
-          "a": "<b>The stock cards that come with the R36S are notoriously unreliable and prone to early failure.</b> <b>Replace them immediately with branded cards from SanDisk or Samsung</b> to avoid data loss and system crashes mid-game."
+          "q": "Can I use a Samsung EVO card in the OS slot (TF1)?",
+          "a": "<b>It depends on your device batch.</b> Some R36S units have trouble booting from newer Samsung EVO cards in the TF1 slot. <b>We recommend using a SanDisk Ultra card for the OS (TF1)</b> to guarantee a successful boot, and using Samsung cards for the Game (TF2) slot."
         },
         {
-          "q": "What's the ideal capacity split?",
-          "a": "<b>Use a 16GB-32GB A1-rated card for the OS slot and a 128GB-256GB Class 10 card for the game slot.</b> This split provides fast system performance and thousands of retro titles."
+          "q": "Should I use a Single Card or Dual Card setup?",
+          "a": "<b>A Dual Card setup is highly recommended.</b> By keeping your OS on a small card (16-32GB) and your games on a large card (128GB+), you can update or re-flash the ArkOS firmware without ever deleting your game library or save files."
         },
         {
-          "q": "Can I use 512GB cards?",
-          "a": "<b>Yes, both slots support up to 512GB cards.</b> A 512GB game card is overkill for most users but provides massive library storage if you collect extensively across multiple systems."
+          "q": "Do I need to copy files from the old card?",
+          "a": "<b>Yes, specifically the '.dtb' files.</b> Before throwing away the stock card, copy the `.dtb` files from the BOOT partition. You may need these to make your screen work correctly with new firmware versions (Panel 4/Panel 5 screens)."
         }
       ],
       "relatedDevices": [
@@ -7478,7 +7477,7 @@
         "miyoo-mini-plus",
         "retroid-pocket-4-pro"
       ],
-      "notes": "Ultra-budget vertical handheld (RK3326). Extremely popular in retro gaming community despite modest specs. <b>Critical: Replace included SD cards immediately.</b> Supports emulation up to PS1 and light N64/Dreamcast."
+      "notes": "The best value budget handheld of 2024/2025, but requires technical setup. <b>SEO Tip:</b> Users often search for 'R36S ArkOS Guide'—having the right SD card is step 1."
     },
     {
       "id": "retroid-pocket-6",
@@ -8044,7 +8043,7 @@
     }
   ],
   "metadata": {
-    "generated": "2026-01-04T14:14:33.074Z",
+    "generated": "2026-01-05T07:41:54.142Z",
     "totalDevices": 178,
     "categories": [
       "Action Cameras",
