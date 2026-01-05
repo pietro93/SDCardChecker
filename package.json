@@ -9,6 +9,7 @@
     "build:ja": "node scripts/generator/build-ja.js",
     "build:all": "npm run clean:dist && npm run build:css && npm run build:site && npm run build:ja",
     "enrich": "node scripts/enrichment-generator.js",
+    "enrich:cards": "node scripts/enrich-cards.js",
     "enrich:update": "npm run enrich && npm run build:all",
     "extract-category": "node scripts/extract-category.js",
     "extract-category-ja": "node scripts/extract-category-ja.js",

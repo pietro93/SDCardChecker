@@ -838,6 +838,45 @@ function getReaderImageFallback(reader, imgDirectory = './img/readers') {
   return '/img/readers/sd-card-reader-placeholder.webp';
 }
 
+/**
+ * Load SD card enrichment data
+ * Merges AI-generated content (richDescription, useCase, bestFor, alternatives)
+ * with base card data from sdcards.json
+ */
+function loadSDCardEnrichment() {
+  const enrichmentPath = path.join(__dirname, "../../data/sdcard-enrichment.json");
+  
+  if (!fs.existsSync(enrichmentPath)) {
+    return {}; // Return empty object if enrichment file doesn't exist yet
+  }
+
+  try {
+    const enrichmentData = JSON.parse(fs.readFileSync(enrichmentPath, "utf8"));
+    return enrichmentData;
+  } catch (error) {
+    console.warn(`Warning: Could not load enrichment data: ${error.message}`);
+    return {};
+  }
+}
+
+/**
+ * Merge enrichment data into SD card map
+ * Adds richDescription, useCase, bestFor, alternatives to each card
+ */
+function mergeSDCardEnrichment(cardMap, enrichmentData) {
+  Object.keys(cardMap).forEach((cardId) => {
+    if (enrichmentData[cardId]) {
+      const enrichment = enrichmentData[cardId];
+      cardMap[cardId].richDescription = enrichment.richDescription || '';
+      cardMap[cardId].useCase = enrichment.useCase || '';
+      cardMap[cardId].bestFor = enrichment.bestFor || [];
+      cardMap[cardId].alternatives = enrichment.alternatives || '';
+    }
+  });
+
+  return cardMap;
+}
+
 module.exports = {
   ensureDir,
   readJSON,
@@ -855,4 +894,6 @@ module.exports = {
   generateFAQHTML,
   generateRelatedDevices,
   loadSDCardData,
+  loadSDCardEnrichment,
+  mergeSDCardEnrichment,
 };

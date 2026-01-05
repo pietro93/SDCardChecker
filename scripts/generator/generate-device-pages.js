@@ -4,7 +4,7 @@
 
 const path = require("path");
 const fs = require("fs");
-const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, loadSDCardData } = require("./helpers");
+const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, loadSDCardData, loadSDCardEnrichment, mergeSDCardEnrichment } = require("./helpers");
 const { generateFAQs, mergeFAQs } = require("./generateFAQs");
 const { generateAmazonBadgesSection } = require("./amazon-badges-generator");
 const { generatePromotedCardSection } = require("./promotion-generator");
@@ -217,6 +217,74 @@ function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, isJapanese
 }
 
 /**
+ * Generate enriched card details section
+ * Shows richDescription, useCase, and bestFor for each recommended card
+ */
+function generateEnrichedCardDetails(brandReferences, sdcardsMap, isJapanese = false) {
+    const labels = isJapanese ? {
+        whyCard: 'なぜこのカード？',
+        targetUser: 'ユーザー向け',
+        bestFor: 'おすすめ用途',
+        compareWith: '比較情報'
+    } : {
+        whyCard: 'Why This Card?',
+        targetUser: 'Target User',
+        bestFor: 'Best For',
+        compareWith: 'Comparison'
+    };
+
+    return brandReferences
+        .slice(0, 3) // Show details for top 3 cards only
+        .map((ref) => {
+            const card = sdcardsMap[ref.id];
+            if (!card || !card.richDescription) {
+                return "";
+            }
+
+            const bestForList = card.bestFor && card.bestFor.length > 0
+                ? card.bestFor.join(", ")
+                : "";
+
+            return `
+            <div class="card-enrichment-detail bg-slate-50 border border-slate-200 rounded-lg p-5 mb-4">
+                <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                    <i class="fas fa-star text-amber-500"></i> ${card.name}
+                </h4>
+                
+                <div class="space-y-3 text-sm">
+                    ${card.richDescription ? `
+                    <div class="bg-white p-3 rounded border-l-4 border-blue-500">
+                        <p class="text-slate-700 leading-relaxed">${card.richDescription}</p>
+                    </div>
+                    ` : ""}
+                    
+                    ${card.useCase ? `
+                    <div class="flex gap-3">
+                        <span class="font-semibold text-slate-900 flex-shrink-0">${labels.targetUser}:</span>
+                        <span class="text-slate-700">${card.useCase}</span>
+                    </div>
+                    ` : ""}
+                    
+                    ${bestForList ? `
+                    <div class="flex gap-3">
+                        <span class="font-semibold text-slate-900 flex-shrink-0">${labels.bestFor}:</span>
+                        <span class="text-slate-700">${bestForList}</span>
+                    </div>
+                    ` : ""}
+                    
+                    ${card.alternatives ? `
+                    <div class="bg-amber-50 p-3 rounded border-l-4 border-amber-500">
+                        <p class="text-slate-700 text-xs leading-relaxed">${card.alternatives}</p>
+                    </div>
+                    ` : ""}
+                </div>
+            </div>
+            `;
+        })
+        .join("");
+}
+
+/**
  * Generate requirements checklist box
  */
 function generateRequirementsBox(device, deviceNameShort, isJapanese = false) {
@@ -409,6 +477,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const requirementsBoxHTML = generateRequirementsBox(device, deviceNameShort, isJapanese);
     const specsHTML = generateSpecsHTML(device, isJapanese);
     const brandsTableRows = generateBrandsTable(device.recommendedBrands, sdcardsMap, device.slug, isJapanese);
+    const enrichedCardDetailsHTML = generateEnrichedCardDetails(device.recommendedBrands, sdcardsMap, isJapanese);
     const alternativesHTML = generateAlternatives(device, sdcardsMap);
 
     // Generate FAQs: use custom FAQs from data, or generate programmatically
@@ -522,6 +591,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{REQUIREMENTS_BOX}}/g, requirementsBoxHTML)
         .replace(/{{SPECS_HTML}}/g, specsHTML)
         .replace(/{{BRANDS_TABLE_ROWS}}/g, brandsTableRows)
+        .replace(/{{ENRICHED_CARD_DETAILS}}/g, enrichedCardDetailsHTML)
         .replace(/{{ALTERNATIVES_HTML}}/g, alternativesHTML)
         .replace(/{{AMAZON_BADGES_SECTION}}/g, amazonBadgesSection)
         .replace(/{{PROMOTED_CARDS_SECTION}}/g, promotedCardSection)
@@ -555,6 +625,13 @@ async function generateDevicePages(allDevices, distPath, isJapanese = false) {
     deviceTemplate = processIncludes(deviceTemplate, path.join(srcPath, "templates"));
 
     const sdcardsMap = loadSDCardData(isJapanese);
+    
+    // Load and merge enrichment data (richDescription, useCase, bestFor, alternatives)
+    const enrichmentData = loadSDCardEnrichment();
+    if (Object.keys(enrichmentData).length > 0) {
+        mergeSDCardEnrichment(sdcardsMap, enrichmentData);
+        console.log(`  ✓ Loaded enrichment data for ${Object.keys(enrichmentData).length} SD cards`);
+    }
 
     let successCount = 0;
     let failedDevices = [];

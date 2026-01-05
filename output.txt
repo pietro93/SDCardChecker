@@ -1,0 +1,25 @@
+🚀 Starting SD Card Enrichment Generation...
+
+📊 Found 47 SD cards to enrich
+
+[8/47] Processing: Lexar Professional Silver (1066x)  [10/47] Processing: Kingston Canvas Select Plus        [11/47] Processing: SanDisk MAX ENDURANCE              [16/47] Processing: Transcend 300S microSD             [17/47] Processing: ADATA Premier Pro microSD          [18/47] Processing: SanDisk Extreme PRO microSD UHS-II [22/47] Processing: Lexar Professional Silver SD       [23/47] Processing: Kingston Canvas Go! Plus SD (Mapped[24/47] Processing: Nikon XQD Memory Card              [25/47] Processing: SanDisk Extreme PRO CFast 2.0      [26/47] Processing: Sony TOUGH G-Series SD             [27/47] Processing: Kingston Canvas React Plus SD      [28/47] Processing: SanDisk Extreme PRO CFexpress Type [29/47] Processing: Lexar Professional 1667x Silver SD [30/47] Processing: SanDisk Extreme SD UHS-I           [31/47] Processing: SanDisk Ultra SD UHS-I             [32/47] Processing: Lexar Professional 633x SD (Blue Se[33/47] Processing: SanDisk Extreme PRO SD UHS-I       [34/47] Processing: Kingston High Endurance microSD    [35/47] Processing: Amazon Basics Micro SDXC           [36/47] Processing: Samsung PRO Plus microSD           [37/47] Processing: Kingston Canvas React Plus microSD [38/47] Processing: SanDisk Nintendo Switch: Legend of [39/47] Processing: SanDisk Nintendo Switch: Pokémon Ge[40/47] Processing: SanDisk Nintendo Switch: Pokémon Sn[41/47] Processing: SanDisk Nintendo Switch: Pokémon Pi[42/47] Processing: SanDisk Nintendo Switch: Yoshi Edit[43/47] Processing: SanDisk Nintendo Switch: Animal Cro[44/47] Processing: SanDisk Nintendo Switch: Super Mari[45/47] Processing: SanDisk Nintendo Switch: Super Mari[46/47] Processing: SanDisk Nintendo Switch: Fortnite C[47/47] Processing: SanDisk Nintendo Switch: Fortnite S
+
+✅ SD Card Enrichment Complete!
+📝 Processed: 30 new | Cached: 15 | Failed: 2 | Total: 45
+💾 Saved to: c:\Users\Pietro\Desktop\SDCardChecker\data\sdcard-enrichment.json
+💿 Cache saved to: c:\Users\Pietro\Desktop\SDCardChecker\scripts\.sdcard-enrichment-cache.json
+
+📋 Sample output (Lexar Professional Silver (1066x)):
+{
+  "id": "lexar-professional-silver-microsd",
+  "name": "Lexar Professional Silver (1066x)",
+  "richDescription": "The Lexar Professional Silver (1066x) microSD card offers excellent read and write performance at a mid-range price point making it a great value for vloggers, photographers, and gamers.",
+  "useCase": "Content creators, photographers, and gamers",
+  "bestFor": [
+    "Action Cameras",
+    "Mirrorless Cameras",
+    "Smartphones & Tablets"
+  ],
+  "alternatives": "Consider this card over others when you need high-speed V30 performance without breaking the bank.",
+  "generatedAt": "2026-01-05T08:29:41.739Z"
+}
