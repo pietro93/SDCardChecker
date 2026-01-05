@@ -8,6 +8,8 @@
     "build:site": "node scripts/generator/build.js",
     "build:ja": "node scripts/generator/build-ja.js",
     "build:all": "npm run clean:dist && npm run build:css && npm run build:site && npm run build:ja",
+    "enrich": "node scripts/enrichment-generator.js",
+    "enrich:update": "npm run enrich && npm run build:all",
     "extract-category": "node scripts/extract-category.js",
     "extract-category-ja": "node scripts/extract-category-ja.js",
     "clean:dist": "rimraf dist",
@@ -40,6 +42,7 @@
   "dependencies": {
     "@hotjar/browser": "^1.0.9",
     "amazon-paapi": "^1.0.7",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "groq-sdk": "^0.3.0"
   }
 }

@@ -222,25 +222,24 @@ All top queries still show **0 clicks** across impressions:
   - Lenovo Legion Go, Sony FX30, GoPro Hero 13, Insta360 Ace Pro, Sony FX3, Steam Deck, Fujifilm X-S20
 - ⬜ **Educational Guides** – Not created yet (pending)
 
-### CRITICAL (This Week - Do First) - UPDATED JAN 4
-- 🔴 **FIX JAPAN LOCALIZATION:** Nintendo Switch guide showing 8 impressions, 0 clicks in Japan
-  - Update `/ja/guides/nintendo-switch-sd-card-guide/` with:
-    - Japanese device brand compatibility (local retailers like Bic Camera, Yodobashi stock)
-    - Local card recommendations in JPY pricing
-    - Regional Nintendo support links
-  - **Expected impact:** +3-5 clicks/week from Japanese Nintendo queries
+### CRITICAL (Action Items) - UPDATED JAN 4
+- ✅ **COMPLETED:** Japan localization is LIVE - `/ja/` pages are ranking in GSC (210 impr/week from Japan)
+  - Nintendo Switch guide showing 8 impr, 0 clicks (page exists but needs click optimization)
+  - Next step: Monitor Japanese CTR, may need content refinement for higher conversion
   
-- 🔴 **AUDIT Anbernic RG35XX & Steam Deck Pages:** Both gaming niches should have 1%+ CTR
-  - Compare with Miyoo Mini Plus (2.62% CTR historical)
-  - Check: Title matching, hero image quality, first answer clarity
-  - **Potential:** +1-2 clicks/week each if fixed
+- 🔴 **AUDIT Anbernic RG35XX & Steam Deck Pages:** Both gaming niches should have 1%+ CTR (currently 0%)
+  - Compare structure with Miyoo Mini Plus (2.62% CTR historical)
+  - Check: Page layout, hero image placement, first recommendation visibility on mobile
+  - **Potential:** +2-4 clicks/week if fixed
+  - **Mobile focus:** Mobile CTR is 1.41% (5.6× desktop) - ensure recommendation is visible without scrolling
   
-- ⬜ **CREATE GUIDE:** "SD Card Speed Classes Explained: V30 vs V60 vs V90" (3 impr baseline → 15-20/mo target, 1-2 clicks) – Keywords: `v30 sd card meaning`, `v60 card`, `v90 card` – Rationale: Educational, no manufacturer competition, bridges to video device pages
+- ✅ **VERIFIED:** All 7 hero images exist and are mapped:
+  - ✅ Lenovo Legion Go, Sony FX30, GoPro Hero 13, Insta360 Ace Pro, Sony FX3, Steam Deck, Fujifilm X-S20
+  - ✅ Fujifilm XT5, Lenovo Legion Go S, Fujifilm XT50 (recently mapped)
   
-- ⬜ **CREATE GUIDE:** "UHS-I vs UHS-II: Speed & Compatibility Guide" (4+3 impr baseline → 20-25/mo target, 2-3 clicks) – Keywords: `uhs-i speed grade 3`, `uhs-ii sd card` – Rationale: Cross-link to Sony FX3, Nikon Z8, Canon EOS R6 Mark II pages
-  
-- ✅ **VERIFIED:** Lenovo Legion Go – `/img/devices/gaming-consoles/lenovo-legion-go.webp` EXISTS (70 impr, 2.86% CTR, already converting)
-- ✅ **DONE:** Fujifilm XT5 hero image – `/img/devices/cameras/fujifilm-xt5.webp` CREATED + mapped in helpers.js (80+ impr, 3.75% CTR – top performer)
+- ⬜ **NOT RECOMMENDED:** "Speed Classes Guide" (3 impr baseline, uncertain demand)
+  - **Reason:** No proven demand signal; effort better spent fixing existing high-impression pages
+  - **Better priority:** Fix mobile layout on Anbernic/Steam Deck (guaranteed 200+ impr waiting for conversion)
 
 ### HIGH (This Week - Do Second) 
 - ✅ **DONE:** Lenovo Legion Go S hero image – `/img/devices/gaming-consoles/lenovo-legion-go-s.webp` CREATED + mapped in helpers.js (3 impr, 1 click = 33% CTR, proven converter)
@@ -1376,46 +1375,39 @@ Old category pages appearing in GSC:
 
 ## ⚡ EXECUTIVE SUMMARY & NEXT STEPS (Jan 4, 2026)
 
-### Status: Stable but Declining CTR Post-Holiday
-**Current 7-day CTR:** 0.30% (down from 0.41% Dec baseline)
-**Root cause:** Holiday traffic was high-volume, low-intent. Answer boxes still crushing commodity queries.
-**Opportunity:** Japan market growth (210 impr/week) is real but untapped (0 clicks).
+### Current Reality
+**7-day CTR:** 0.30% (down from 0.41% Dec baseline)
+**Root cause:** Holiday traffic collapsed (Dec 29-Jan 1 was 0.12% CTR). Post-holiday recovery showing 0.35% (week of Jan 2-4).
+**What's working:** Japan localization is LIVE (210 impr/week). Gaming niche pages (Miyoo, Anbernic, Legion Go) convert at 0.5-2.6% CTR.
+**What's not:** Mass-market device pages (DJI, Steam Deck, GoPro) are answer-box trapped at 0% CTR despite 400+ impressions.
 
-### Top 3 Quick Wins (Ranked by Effort/Impact)
-1. **FIX JAPAN NINTENDO SWITCH PAGE** (4-6 hours)
-   - Expected gain: +3-5 clicks/week
-   - Effort: Update meta, add local pricing, add retailer links
-   - Timeline: Can ship this week
+### The Real Blocker: Answer Boxes + Mobile Layout
+**Finding:** 90% of top 100 queries show 0 clicks = Google's answer boxes on SERP.
+**But:** Mobile CTR is 1.41% (5.6× desktop). This means **content structure on mobile matters more than page quality**.
+**Action:** Pages with 200+ impressions but 0% CTR (Anbernic, Steam Deck) likely have poor mobile layout—recommendation buried below hero image.
 
-2. **AUDIT Anbernic & Steam Deck Pages** (2-3 hours)
-   - Expected gain: +2-4 clicks/week if issues found
-   - Effort: Compare page structure with Miyoo Mini Plus (2.62% CTR)
-   - Timeline: Quick audit, possible quick fix
+### Top Priority (Immediate - High ROI)
+**AUDIT Anbernic RG35XX & Steam Deck Mobile Layout** (2-3 hours)
+- Both pages have 291-124 impressions, 0 clicks
+- Gaming niche should have 1%+ CTR based on Miyoo (2.62%), Legion Go (0.37%), Retroid (1.15%)
+- Check: Is the recommendation visible on mobile without scrolling? Is hero image taking up too much space?
+- **Expected gain:** +2-4 clicks/week if layout is fixed (minimal effort)
+- **Timeline:** Can test this week
 
-3. **CREATE "Speed Classes Explained" GUIDE** (2-3 hours)
-   - Expected gain: +5-10 clicks/week by month 2
-   - Effort: Educational content, SEO-friendly, no direct competition
-   - Timeline: Can ship next week
-
-### Medium-Term Strategy Shift Required
-- **Stop optimizing for:** `best sd card for [device]`, `memory card requirements`
-  - These are answer-box dominated (90% of top queries)
-  - We win on SERP position, not content quality
-  
-- **Pivot to:**
-  - Long-tail comparisons (`Anbernic RG35XX vs Miyoo Mini Plus`)
-  - Educational guides (Speed classes, UHS-I vs II, storage calculators)
-  - Regional/language-specific content (Japan expansion)
-  - Niche product categories (retro handhelds, professional cameras)
+### What NOT to Do
+- ❌ **Speed Classes Guide:** No demand signal (3 impressions). Don't create guides for zero-demand keywords.
+- ❌ **Fix DJI/Steam Deck titles:** These lose to manufacturers + answer boxes. SERP position determines visibility, not content.
+- ❌ **Create more hero images:** The 7 existing hero images are mapped. ROI on new images is lower than fixing mobile layout.
 
 ### Measurement Framework (Next 30 Days)
-Track these KPIs weekly to validate strategy:
 | Metric | Current | Target (Jan 31) |
 |--------|---------|-----------------|
-| Overall CTR | 0.30% | 0.40% |
-| Japan clicks | 0 | 5-8 |
-| Gaming category clicks | ~2 | 5-8 |
-| Total clicks | 17/week | 25-30/week |
+| Overall CTR | 0.30% | 0.40%+ |
+| Mobile CTR | 1.41% | 2.0%+ |
+| Anbernic RG35XX CTR | 0% | 1%+ |
+| Steam Deck CTR | 0% | 0.5%+ |
+| Japan clicks/week | ~0 | 2-3 |
+| Total clicks/week | 17 | 25+ |
 
 ---
 
