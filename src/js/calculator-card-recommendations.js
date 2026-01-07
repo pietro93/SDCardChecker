@@ -30,10 +30,10 @@ class CalculatorCardRecommendations {
     static getCardImageFallback(card) {
         // Check if card has a valid image URL that should exist
         if (card.imageUrl && card.imageUrl.includes('/img/cards/')) {
-            // Return the specified image (if file doesn't exist, browser's onerror will catch it)
             return card.imageUrl;
         }
         
+        const cardNameLower = (card.name || '').toLowerCase();
         const isMicroSD = card.type && card.type.toLowerCase().includes('microsd');
         const uhs = card.uhs ? card.uhs.toUpperCase() : '';
         
@@ -45,6 +45,86 @@ class CalculatorCardRecommendations {
             return '/img/cards/xqd-generic.webp';
         }
         
+        // Brand-specific fallbacks (matching helpers.js logic)
+        // SanDisk brand fallbacks
+        if (cardNameLower.includes('sandisk')) {
+            if (cardNameLower.includes('extreme') && cardNameLower.includes('pro')) {
+                return '/img/cards/sandisk-extreme-pro-sd-uhs-ii.webp';
+            }
+            if (cardNameLower.includes('extreme')) {
+                return '/img/cards/sandisk-extreme-microsd.webp';
+            }
+            if (cardNameLower.includes('max endurance')) {
+                return '/img/cards/sandisk-max-endurance-microsd.webp';
+            }
+            if (cardNameLower.includes('ultra')) {
+                return '/img/cards/sandisk-ultra-microsd.webp';
+            }
+            // Generic SanDisk fallback
+            return '/img/cards/sandisk-extreme-pro-sd-uhs-ii.webp';
+        }
+        
+        // Lexar brand fallbacks
+        if (cardNameLower.includes('lexar')) {
+            if (cardNameLower.includes('silver')) {
+                return '/img/cards/lexar-professional-silver-sd-uhs-ii.webp';
+            }
+            if (cardNameLower.includes('633x')) {
+                return '/img/cards/lexar-professional-633x.webp';
+            }
+            if (cardNameLower.includes('1000x') || cardNameLower.includes('1800x') || cardNameLower.includes('gold')) {
+                return '/img/cards/lexar-professional-1000x.webp';
+            }
+            if (cardNameLower.includes('play')) {
+                return '/img/cards/lexar-professional-1000x.webp';
+            }
+            // Generic Lexar fallback
+            return '/img/cards/lexar-professional-1000x.webp';
+        }
+        
+        // Kingston brand fallbacks
+        if (cardNameLower.includes('kingston')) {
+            if (cardNameLower.includes('canvas')) {
+                if (cardNameLower.includes('go')) {
+                    return '/img/cards/kingston-canvas-go-plus.webp';
+                }
+                if (cardNameLower.includes('select')) {
+                    return '/img/cards/kingston-canvas-select-microsd.webp';
+                }
+                if (cardNameLower.includes('react')) {
+                    return '/img/cards/kingston-canvas-react-sd.webp';
+                }
+            }
+            return '/img/cards/kingston-canvas-go-plus.webp';
+        }
+        
+        // Samsung brand fallbacks
+        if (cardNameLower.includes('samsung')) {
+            if (cardNameLower.includes('pro')) {
+                return '/img/cards/samsung-pro-endurance-microsd.webp';
+            }
+            if (cardNameLower.includes('evo')) {
+                return '/img/cards/samsung-evo-select-microsd.webp';
+            }
+            return '/img/cards/samsung-evo-select-microsd.webp';
+        }
+        
+        // Sony brand fallbacks
+        if (cardNameLower.includes('sony')) {
+            return '/img/cards/sony-tough-g-v90.webp';
+        }
+        
+        // ADATA brand fallbacks
+        if (cardNameLower.includes('adata')) {
+            return '/img/cards/adata-premier-microsd.webp';
+        }
+        
+        // Transcend brand fallbacks
+        if (cardNameLower.includes('transcend')) {
+            return '/img/cards/transcend-microsd.webp';
+        }
+        
+        // Type/UHS-based fallbacks (lowest priority)
         // UHS-II cards
         if (uhs.includes('UHS-II')) {
             return isMicroSD ? '/img/cards/micro-uhs2-generic.webp' : '/img/cards/uhs2-generic.webp';
