@@ -7,12 +7,26 @@
 
 class CalculatorCardRecommendations {
     /**
-     * Get smart fallback image for card based on type and speed class
-     * Uses UHS level and type to determine appropriate placeholder
-     * First checks if card has a specific image, then falls back to type/speed-based placeholders
-     * @param {Object} card - Card object
-     * @returns {String} Fallback image URL
-     */
+      * Load enrichment data for cards
+      * @returns {Promise<Object>} Enrichment data keyed by card ID
+      */
+    static async loadEnrichment() {
+        try {
+            const response = await fetch('/data/sdcard-enrichment.json');
+            return await response.json();
+        } catch (error) {
+            console.warn('Failed to load enrichment data:', error);
+            return {};
+        }
+    }
+
+    /**
+      * Get smart fallback image for card based on type and speed class
+      * Uses UHS level and type to determine appropriate placeholder
+      * First checks if card has a specific image, then falls back to type/speed-based placeholders
+      * @param {Object} card - Card object
+      * @returns {String} Fallback image URL
+      */
     static getCardImageFallback(card) {
         // Check if card has a valid image URL that should exist
         if (card.imageUrl && card.imageUrl.includes('/img/cards/')) {
@@ -166,9 +180,10 @@ class CalculatorCardRecommendations {
      * @param {Array} cards - Filtered cards
      * @param {String} speedClass - Speed class for reference
      * @param {String} calculatorType - Type of calculator (video-storage, photo-storage, etc.)
+     * @param {Object} enrichmentMap - Enrichment data keyed by card ID
      * @returns {String} HTML markup
      */
-    static buildRecommendationHTML(cards, speedClass, calculatorType = 'calculator') {
+    static buildRecommendationHTML(cards, speedClass, calculatorType = 'calculator', enrichmentMap = {}) {
         if (!cards || cards.length === 0) {
             return `
         <div class="p-4 bg-gray-50 rounded-lg text-gray-600 text-sm">
@@ -182,6 +197,12 @@ class CalculatorCardRecommendations {
                 const formatted = this.formatCard(card, calculatorType);
                 // Get fallback image URL for this card
                 const fallbackUrl = this.getCardImageFallback(card);
+                
+                // Get enrichment data if available
+                const enrichment = enrichmentMap[card.id] || {};
+                const useCase = enrichment.useCase || 'Professional recording';
+                const bestForList = (enrichment.bestFor || []).slice(0, 2).join(', ');
+                
                 return `
           <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
             <!-- Card Image - Clickable -->
@@ -226,6 +247,14 @@ class CalculatorCardRecommendations {
                   <div class="font-bold text-green-600">${formatted.writeSpeed}</div>
                 </div>
               </div>
+
+              <!-- Enrichment: Use Case & Best For -->
+              ${enrichment.useCase ? `
+              <div class="mb-4 p-3 bg-blue-50 rounded-lg border border-blue-100 text-xs">
+                <div class="font-semibold text-gray-900 mb-1">Best for:</div>
+                <div class="text-gray-700">${bestForList || useCase}</div>
+              </div>
+              ` : ''}
 
               <!-- Price Tier Badge -->
               <div class="text-center mb-4">
@@ -289,8 +318,11 @@ class CalculatorCardRecommendations {
         try {
             console.log(`[CalculatorCardRecommendations] Loading recommendations for ${speedClass}...`);
 
-            // Load all cards
-            const allCards = await this.loadCards();
+            // Load all cards and enrichment data in parallel
+            const [allCards, enrichmentMap] = await Promise.all([
+                this.loadCards(),
+                this.loadEnrichment()
+            ]);
 
             if (!allCards || allCards.length === 0) {
                 console.warn('[CalculatorCardRecommendations] No cards loaded');
@@ -315,8 +347,8 @@ class CalculatorCardRecommendations {
                 return;
             }
 
-            // Build and inject HTML
-            const html = this.buildRecommendationHTML(recommended, speedClass, calculatorType);
+            // Build and inject HTML with enrichment data
+            const html = this.buildRecommendationHTML(recommended, speedClass, calculatorType, enrichmentMap);
             container.innerHTML = html;
             console.log(`[CalculatorCardRecommendations] ✓ Displayed ${recommended.length} recommendations`);
 

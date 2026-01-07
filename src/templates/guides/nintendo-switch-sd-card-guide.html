@@ -351,6 +351,15 @@
       <!-- Nintendo Branded microSD Cards Grid -->
       {{NINTENDO_BRANDED_CARDS_GRID}}
 
+      <!-- Top Recommended microSD Cards -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">Other Top-Rated microSD Cards for Nintendo Switch</h2>
+        <p class="text-slate-600 mb-6">Beyond the official Nintendo-licensed cards, these proven performers offer excellent value and reliability for your Switch gaming library.</p>
+        <div id="guide-card-recommendations" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="p-4 text-center text-gray-500">Loading recommendations...</div>
+        </div>
+      </section>
+
       <!-- 6. FAQ Section -->
       <section id="faq" class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
         <h2 class="text-2xl font-bold text-slate-900 mb-6">6. Frequently Asked Questions</h2>
@@ -419,5 +428,18 @@
   </div>
 
   {{FOOTER}}
+
+  <!-- Card Recommendations Script -->
+  <script src="/src/js/calculator-card-recommendations.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Load top recommended microSD cards (A2 rated) with enrichment for this guide
+      await CalculatorCardRecommendations.displayRecommendations(
+        'V30',
+        'guide-card-recommendations',
+        'nintendo-switch-guide'
+      );
+    });
+  </script>
 </body>
 </html>

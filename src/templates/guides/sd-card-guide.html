@@ -599,6 +599,14 @@
       <!-- Featured Products on Amazon -->
       {{AMAZON_FEATURED_SD_GUIDE}}
 
+      <!-- Top Recommended SD Cards -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">Top Recommended SD Cards</h2>
+        <div id="guide-card-recommendations" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="p-4 text-center text-gray-500">Loading recommendations...</div>
+        </div>
+      </section>
+
       <!-- Related Resources -->
        <section class="bg-slate-50 rounded-lg p-8 border border-slate-200">
          <h3 class="text-xl font-bold text-slate-900 mb-4">Related Resources</h3>
@@ -634,5 +642,18 @@
       }
     }
   </style>
+
+  <!-- Card Recommendations Script -->
+  <script src="/src/js/calculator-card-recommendations.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Load top recommended cards (V30) with enrichment for this guide
+      await CalculatorCardRecommendations.displayRecommendations(
+        'V30',
+        'guide-card-recommendations',
+        'sd-card-guide'
+      );
+    });
+  </script>
 </body>
 </html>
