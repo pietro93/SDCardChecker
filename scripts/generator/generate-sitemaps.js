@@ -225,6 +225,36 @@ function generateEnglishSitemap(allDevices, allReaders) {
 `;
   });
 
+  // Add car navigation pages
+  sitemap += `
+  <!-- Car Navigation Pages -->
+  <url>
+    <loc>https://sdcardchecker.com/cars/</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <priority>0.85</priority>
+  </url>
+`;
+
+  // Load and add individual car pages
+  const carsPath = path.join(__dirname, "../../data/cars-navigation.json");
+  if (fs.existsSync(carsPath)) {
+    try {
+      const carsData = JSON.parse(fs.readFileSync(carsPath, 'utf8'));
+      if (Array.isArray(carsData)) {
+        carsData.forEach((car) => {
+          sitemap += `  <url>
+    <loc>https://sdcardchecker.com/cars/${car.slug}/</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <priority>0.8</priority>
+  </url>
+`;
+        });
+      }
+    } catch (e) {
+      console.warn("  ⚠️  Could not parse cars-navigation.json for sitemap");
+    }
+  }
+
   // Add resource and legal pages
   sitemap += `
   <!-- Resources & Legal -->

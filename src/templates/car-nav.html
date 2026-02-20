@@ -18,9 +18,16 @@
     <nav class="bg-white shadow p-4 mb-6"><a href="/" class="font-bold text-xl">SD Card Checker</a></nav>
 
     <main class="max-w-4xl mx-auto p-6">
-        <h1 class="text-4xl font-bold mb-2">{{CAR_MODEL}} Navigation Update</h1>
-        <p class="text-gray-600 mb-2">Model Years: {{YEARS}}</p>
-        <p class="text-sm text-gray-500 mb-8">{{PART_NOTE}}</p>
+         <!-- Breadcrumb Navigation -->
+         <div class="mb-4 text-sm text-gray-500">
+             <a href="/" class="text-blue-600 hover:underline">Home</a> /
+             <a href="/cars/" class="text-blue-600 hover:underline">Car Navigation</a> /
+             <span>{{CAR_MODEL}}</span>
+         </div>
+
+         <h1 class="text-4xl font-bold mb-2">{{CAR_MODEL}} Navigation Update</h1>
+         <p class="text-gray-600 mb-2">Model Years: {{YEARS}}</p>
+         <p class="text-sm text-gray-500 mb-8">{{PART_NOTE}}</p>
         
         <!-- Verification Box -->
         <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
@@ -65,32 +72,41 @@
         </div>
 
         <!-- FAQ Section -->
-        <div class="bg-white shadow rounded-lg p-6 border border-gray-100">
-            <h3 class="text-xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h3>
-            
-            <div class="space-y-4">
-                <div>
-                    <h4 class="font-bold text-gray-800 mb-2">What's the difference between navigation SD cards?</h4>
-                    <p class="text-gray-700">Navigation cards are pre-loaded with map data for specific vehicle models and years. Different manufacturers (Navtimi, ORIRI·X, etc.) may offer slightly different coverage areas or pricing. All are plug-and-play compatible with factory navigation systems.</p>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold text-gray-800 mb-2">How do I know which part number I need?</h4>
-                    <p class="text-gray-700">Check the label on your existing navigation card (usually found in your vehicle's SD card slot). You'll see a part number like "86271-0E077" or "85713512". Match that number when ordering your replacement.</p>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold text-gray-800 mb-2">Will 2025 maps work on older model years?</h4>
-                    <p class="text-gray-700">Yes! The navigation system reads the card data regardless of the map year. 2025 maps have the latest road data and improvements. However, verify your vehicle's factory navigation is compatible with the specific part number.</p>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold text-gray-800 mb-2">Can I update my vehicle's navigation system myself?</h4>
-                    <p class="text-gray-700">Yes! It's simple: turn off the engine, locate the SD card slot in your vehicle (usually in the center console or below the screen), eject the old card, insert the new one, and restart. No technical knowledge required.</p>
-                </div>
-            </div>
-        </div>
-    </main>
+         <div class="bg-white shadow rounded-lg p-6 border border-gray-100 mb-8">
+             <h3 class="text-xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h3>
+             
+             <div class="space-y-4">
+                 <div>
+                     <h4 class="font-bold text-gray-800 mb-2">What's the difference between navigation SD cards?</h4>
+                     <p class="text-gray-700">Navigation cards are pre-loaded with map data for specific vehicle models and years. Different manufacturers (Navtimi, ORIRI·X, etc.) may offer slightly different coverage areas or pricing. All are plug-and-play compatible with factory navigation systems.</p>
+                 </div>
+                 
+                 <div>
+                     <h4 class="font-bold text-gray-800 mb-2">How do I know which part number I need?</h4>
+                     <p class="text-gray-700">Check the label on your existing navigation card (usually found in your vehicle's SD card slot). You'll see a part number like "86271-0E077" or "85713512". Match that number when ordering your replacement.</p>
+                 </div>
+                 
+                 <div>
+                     <h4 class="font-bold text-gray-800 mb-2">Will 2025 maps work on older model years?</h4>
+                     <p class="text-gray-700">Yes! The navigation system reads the card data regardless of the map year. 2025 maps have the latest road data and improvements. However, verify your vehicle's factory navigation is compatible with the specific part number.</p>
+                 </div>
+                 
+                 <div>
+                     <h4 class="font-bold text-gray-800 mb-2">Can I update my vehicle's navigation system myself?</h4>
+                     <p class="text-gray-700">Yes! It's simple: turn off the engine, locate the SD card slot in your vehicle (usually in the center console or below the screen), eject the old card, insert the new one, and restart. No technical knowledge required.</p>
+                 </div>
+             </div>
+         </div>
+
+         <!-- Related {{MAKE}} Vehicles -->
+         <div class="bg-white shadow rounded-lg p-6 border border-gray-100">
+             <h3 class="text-xl font-bold mb-4 text-gray-900">Other {{MAKE}} Models</h3>
+             <p class="text-gray-600 mb-4">Navigation SD cards for other {{MAKE}} vehicles:</p>
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                 {{RELATED_LINKS}}
+             </div>
+         </div>
+        </main>
     
     <!-- Footer -->
     <footer class="mt-12 p-6 text-center text-gray-500 text-sm border-t border-gray-200">
