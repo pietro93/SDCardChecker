@@ -1212,6 +1212,204 @@
       "cons": "Premium pricing for cosmetic branding.",
       "tier": "recommended",
       "notes": "UHS-I only. Limited to UHS-I speeds."
+    },
+    {
+      "id": "topesel-high-endurance",
+      "name": "Topesel High Endurance (2-Pack)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "High Endurance"
+      },
+      "availableCapacities": [64, 128, 256],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/topesel-high-endurance.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Topesel+High+Endurance+microSD&tag=sd-cc-20",
+      "pros": "High Endurance rating. Perfect for dash cams and constant recording. 2-pack value.",
+      "cons": "Limited capacity options. Write speeds vary by capacity.",
+      "tier": "recommended",
+      "notes": "20% Commission. Specifically designed for high-write applications like dash cams."
+    },
+    {
+      "id": "speederlash-standard",
+      "name": "Speederlash Class 10 (2-Pack)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "Class 10",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 90 MB/s",
+        "writeSpeed": "Up to 60 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [32, 64, 128],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/speederlash-standard.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Speederlash+Class+10+microSD&tag=sd-cc-20",
+      "pros": "Budget-friendly. Class 10 sufficient for most dash cams. 2-pack for car and backup.",
+      "cons": "Lower endurance rating. Not ideal for sustained 24/7 recording.",
+      "tier": "budget",
+      "notes": "10% Commission. Good entry-level option for casual dash cam users."
+    },
+    {
+      "id": "navtimi-toyota-nav",
+      "name": "Navtimi 2025 Toyota Navigation SD Card",
+      "brand": "Navtimi",
+      "type": "Navigation SD",
+      "navCardProduct": true,
+      "vehicleBrand": "Toyota",
+      "partNumber": "86271-0E077 compatible",
+      "specs": {
+        "mapRegion": "USA, Canada, Mexico",
+        "mapYear": "2025",
+        "cardFormat": "microSD",
+        "plugAndPlay": true
+      },
+      "priceSymbol": "$$$",
+      "priceTier": "Specialized",
+      "affiliateUrl": "https://www.amazon.com/dp/B0FQ3LKJ1P?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.DY0W6TN0ZCSP&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.DY0W6TN0ZCSP_1771576522901",
+      "affiliateUrlAlt": null,
+      "pros": "Covers 10 Toyota models. Plug and play. 2025 maps included.",
+      "cons": "Toyota-specific only. Confirm factory nav is installed.",
+      "tier": "recommended"
+    },
+    {
+      "id": "thcbme-toyota-86271",
+      "name": "2025 Toyota Navigation SD Card (Part 86271-0E077)",
+      "brand": "Thcbme",
+      "type": "Navigation SD",
+      "navCardProduct": true,
+      "vehicleBrand": "Toyota",
+      "partNumber": "86271-0E077",
+      "specs": {
+        "mapRegion": "USA, Canada, Mexico",
+        "mapYear": "2025",
+        "cardFormat": "microSD",
+        "plugAndPlay": true
+      },
+      "priceSymbol": "$$",
+      "priceTier": "Specialized",
+      "affiliateUrl": "https://www.amazon.com/dp/B0F2J6DN2T?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.37MHQQ2MJMP63&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.37MHQQ2MJMP63_1771576541028",
+      "affiliateUrlAlt": "https://www.amazon.com/dp/B0F2J6DN2T?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.3SI2NZWLGHUP5&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.3SI2NZWLGHUP5_1771576559273",
+      "pros": "Exact OEM part number match. Budget-friendly alternative to Navtimi.",
+      "cons": "Fewer compatible models than Navtimi.",
+      "tier": "budget"
+    },
+    {
+      "id": "oririx-gm-nav-85856394",
+      "name": "ORIRI·X 2025 Navigation SD Card for GM (Part 85856394)",
+      "brand": "ORIRI·X",
+      "type": "Navigation SD",
+      "navCardProduct": true,
+      "vehicleBrand": "GM",
+      "partNumber": "85856394",
+      "specs": {
+        "mapRegion": "USA, Canada, Mexico",
+        "mapYear": "2025",
+        "cardFormat": "SD",
+        "plugAndPlay": true
+      },
+      "priceSymbol": "$$",
+      "priceTier": "Specialized",
+      "affiliateUrl": "https://www.amazon.com/dp/B0FS1RRPZN?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.8NUQLRGKQ9MK&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.8NUQLRGKQ9MK_1771576338363",
+      "affiliateUrlAlt": "https://www.amazon.com/dp/B0FS1RRPZN?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.28M9ZGYY4CAEB&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.28M9ZGYY4CAEB_1771576398695",
+      "pros": "2025 maps. Fits Chevrolet, Cadillac, Buick, GMC. Plug and play.",
+      "cons": "Verify part number 85856394 matches your existing card.",
+      "tier": "recommended"
+    },
+    {
+      "id": "gm-nav-85713512-premium",
+      "name": "Premium 2025 GM Navigation SD Card (Part 85713512, 10yr Warranty)",
+      "brand": "Premium",
+      "type": "Navigation SD",
+      "navCardProduct": true,
+      "vehicleBrand": "GM",
+      "partNumber": "85713512",
+      "specs": {
+        "mapRegion": "USA, Canada, Mexico",
+        "mapYear": "2025",
+        "cardFormat": "SD",
+        "plugAndPlay": true,
+        "warranty": "10 Year"
+      },
+      "priceSymbol": "$$$",
+      "priceTier": "Specialized",
+      "affiliateUrl": "https://www.amazon.com/dp/B0FQVCD3X1?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.2CJVFBZJTHUVJ&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.2CJVFBZJTHUVJ_1771576453765",
+      "affiliateUrlAlt": "https://www.amazon.com/dp/B0FQVCD3X1?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.2CJVFBZJTHUVJ&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.2CJVFBZJTHUVJ_1771576590091",
+      "pros": "10-year warranty. 2025 maps. Premium tier.",
+      "cons": "Higher price. Verify part 85713512 matches your card.",
+      "tier": "premium"
+    },
+    {
+      "id": "gm-nav-85713512-budget",
+      "name": "2024 GPS Navigation SD Card for GM (Part 85713512)",
+      "brand": "Generic",
+      "type": "Navigation SD",
+      "navCardProduct": true,
+      "vehicleBrand": "GM",
+      "partNumber": "85713512",
+      "specs": {
+        "mapRegion": "USA, Canada, Mexico",
+        "mapYear": "2024",
+        "cardFormat": "SD",
+        "plugAndPlay": true
+      },
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "affiliateUrl": "https://www.amazon.com/dp/B0DRCJKRN6?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.1AMIFFEH55P22&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.1AMIFFEH55P22_1771576303592",
+      "affiliateUrlAlt": null,
+      "pros": "Cheapest option for Part 85713512 vehicles.",
+      "cons": "2024 maps, not 2025.",
+      "tier": "budget"
+    },
+    {
+      "id": "digiera-64gb-ct100",
+      "name": "DIGIERA 64GB CT100 microSDXC",
+      "brand": "DIGIERA",
+      "type": "microSD",
+      "navCardProduct": false,
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V10",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s"
+      },
+      "availableCapacities": [64],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "affiliateUrl": "https://www.amazon.com/dp/B0DQL5V4HK?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.252LNLZ49DT42&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.252LNLZ49DT42_1771576369809",
+      "affiliateUrlAlt": null,
+      "pros": "100 MB/s read. A1 rated. Comes with adapter. Very affordable.",
+      "cons": "V10 speed only — not suitable for 4K video recording.",
+      "tier": "budget"
+    },
+    {
+      "id": "speederlash-64gb-2pack",
+      "name": "Speederlash 64GB 2-Pack Camera Plus",
+      "brand": "Speederlash",
+      "type": "microSD",
+      "navCardProduct": false,
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 90 MB/s"
+      },
+      "availableCapacities": [64],
+      "packSize": 2,
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "affiliateUrl": "https://www.amazon.com/dp/B0DR933ZNP?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.15SMD76WP10IS&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.15SMD76WP10IS_1771576427871",
+      "affiliateUrlAlt": null,
+      "pros": "2-pack value. V30 + A1. Includes adapter. Good for security cameras and dash cams.",
+      "cons": "64GB only. Generic brand.",
+      "tier": "budget"
     }
     ]
     }

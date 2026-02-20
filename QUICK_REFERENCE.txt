@@ -1,0 +1,214 @@
+================================================================================
+QUICK REFERENCE: Car Navigation & Dash Cams Implementation
+================================================================================
+
+IMPLEMENTATION STATUS: COMPLETE & TESTED
+
+================================================================================
+KEY METRICS
+================================================================================
+
+Car Navigation (1-to-Many):
+  - Data entries: 2 (Toyota, GM)
+  - Compatible models: 11
+  - Generated pages: 11
+  - Expansion ratio: 5.5x
+
+Dash Cams (1-to-1):
+  - Device entries: 3
+  - Generated pages: 3
+  - SD cards added: 2
+  - FAQ entries: 8
+
+Total: 14 NEW PAGES
+
+================================================================================
+CORE FILES
+================================================================================
+
+Car Navigation:
+  - data/cars-navigation.json
+  - src/templates/car-nav.html
+  - scripts/generator/generate-car-pages.js
+
+Dash Cams:
+  - data/categories/dash-cams.json
+  - data/sdcards.json (updated)
+
+Build:
+  - scripts/generator/build.js (updated)
+
+================================================================================
+QUICK COMMANDS
+================================================================================
+
+Test car page generation:
+  node -e "const {generateCarPages} = require('./scripts/generator/generate-car-pages'); generateCarPages('./dist');"
+
+Verify dash cams merged:
+  node -e "const d = require('./data/devices.json'); console.log(d.devices.filter(x => x.category === 'Dash Cams').length, 'devices')"
+
+Check new SD cards:
+  node -e "const d = require('./data/sdcards.json'); console.log(d.sdcards.filter(x => ['topesel-high-endurance', 'speederlash-standard'].includes(x.id)).length, 'cards')"
+
+Full rebuild:
+  npm run build
+
+Run locally:
+  npm start
+  Visit: http://localhost:8080/cars/toyota-prius-2016-2022/
+
+================================================================================
+EXPANSION PATTERNS
+================================================================================
+
+1-to-Many (Car Navigation):
+  - Use when: 1 product to many vehicle models
+  - Where: data/cars-navigation.json
+  - Result: dist/cars/[vehicle-slug]/index.html x N
+
+1-to-1 (Dash Cams):
+  - Use when: Device category with multiple devices
+  - Where: data/categories/[name].json
+  - Result: dist/devices/[slug]/index.html x N
+
+================================================================================
+ADDING NEW ITEMS
+================================================================================
+
+Add Car Navigation Entry:
+  1. Edit data/cars-navigation.json
+  2. Add card object with compatibleModels array
+  3. npm run build
+  4. 11+ pages auto-generated
+
+Add Dash Cam Device:
+  1. Edit data/categories/dash-cams.json
+  2. Add device object to array
+  3. npm run build
+  4. Device page auto-generated
+
+================================================================================
+GENERATED PAGE STRUCTURE
+================================================================================
+
+Car Navigation Pages:
+  dist/cars/toyota-prius-2016-2022/index.html
+  dist/cars/toyota-4runner-2014-2024/index.html
+  dist/cars/chevrolet-silverado-2019-2024/index.html
+  [+ 8 more car pages]
+
+Dash Cam Pages:
+  dist/devices/tesla-model-3-sentry/index.html
+  dist/devices/best-sd-card-4k-dash-cam/index.html
+  dist/devices/viofo-a229-pro/index.html
+
+Category Page:
+  dist/categories/dash-cams/index.html (auto-generated)
+
+================================================================================
+AFFILIATE LINKS STATUS
+================================================================================
+
+Car Navigation - UPDATE REQUIRED:
+  YOUR_NAVTIMI_LINK_HERE          - Replace with actual URL
+  YOUR_ORIRI_X_LINK_HERE          - Replace with actual URL
+
+Dash Cam Cards - READY:
+  Topesel: 20% commission
+  Speederlash: 10% commission
+  (amazonSearchUrl already set)
+
+================================================================================
+DATA STRUCTURE SUMMARY
+================================================================================
+
+Car Navigation Entry:
+  {
+    "id": "string",
+    "title": "string",
+    "affiliateLink": "url",
+    "price": "$X-$Y",
+    "features": ["...", "..."],
+    "compatibleModels": ["Device (YYYY-YYYY)", ...],
+    "installGuide": "text",
+    "warning": "text"
+  }
+
+Dash Cam Device Entry:
+  {
+    "id": "string",
+    "name": "string",
+    "category": "Dash Cams",
+    "slug": "url-slug",
+    "searchTerms": ["...", "..."],
+    "sdCard": {
+      "type": "string",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": ["64GB", ...],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "text",
+    "recommendedBrands": [{ "id": "..." }, ...],
+    "faq": [{ "q": "...", "a": "..." }, ...],
+    "relatedDevices": ["...", ...]
+  }
+
+================================================================================
+PRODUCTION CHECKLIST
+================================================================================
+
+Before deploying:
+
+Car Navigation:
+  [ ] Affiliate links replaced
+  [ ] Product images added (/img/)
+  [ ] Installation guides verified
+  [ ] Warnings reviewed
+  [ ] Pages tested locally
+
+Dash Cams:
+  [ ] Device IDs unique
+  [ ] Brand IDs exist in sdcards.json
+  [ ] Images added (/img/devices/, /img/cards/)
+  [ ] SEO terms populated
+  [ ] FAQ content reviewed
+  [ ] Pages tested locally
+
+General:
+  [ ] npm run build succeeds
+  [ ] npm start serves pages
+  [ ] Links work (internal + affiliate)
+  [ ] Images load or show fallbacks
+  [ ] Mobile responsive tested
+
+================================================================================
+DOCUMENTATION FILES
+================================================================================
+
+  IMPLEMENTATION_VERIFICATION.md  - Detailed verification report
+  EXPANSION_GUIDE.md              - How to use and expand
+  EXPANSION_SUMMARY.md            - Complete implementation summary
+  QUICK_REFERENCE.txt             - This file
+
+================================================================================
+SUPPORT INFORMATION
+================================================================================
+
+For issues:
+  1. Check JSON syntax (node -e "require('./file.json')")
+  2. Run generator independently
+  3. Verify file paths exist
+  4. Check build.js integration
+  5. Review console output for errors
+
+Key paths:
+  Data: c:\Users\Pietro\Desktop\SDCardChecker\data\
+  Templates: c:\Users\Pietro\Desktop\SDCardChecker\src\templates\
+  Generators: c:\Users\Pietro\Desktop\SDCardChecker\scripts\generator\
+  Output: c:\Users\Pietro\Desktop\SDCardChecker\dist\
+
+================================================================================
+END QUICK REFERENCE
+================================================================================

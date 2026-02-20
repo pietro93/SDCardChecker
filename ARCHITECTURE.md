@@ -1,7 +1,7 @@
 # SD Card Checker - Complete Architecture & Implementation Guide
 
-**Version:** 1.0  
-**Last Updated:** Nov 22, 2025  
+**Version:** 2.0  
+**Last Updated:** Feb 20, 2026  
 **Purpose:** Comprehensive technical documentation for developers, localization teams, and maintainers
 
 ---
@@ -11,11 +11,13 @@
 1. [Overview](#overview)
 2. [System Architecture](#system-architecture)
 3. [Data Structure](#data-structure)
-4. [Build Pipeline](#build-pipeline)
-5. [Template System](#template-system)
-6. [File Reference](#file-reference)
-7. [Adding/Modifying Content](#adding-modifying-content)
-8. [Localization Guide](#localization-guide)
+4. [Modular Dataset Architecture](#modular-dataset-architecture)
+5. [Build Pipeline](#build-pipeline)
+6. [Template System](#template-system)
+7. [File Reference](#file-reference)
+8. [Adding/Modifying Content](#adding-modifying-content)
+9. [Expanding Device Types](#expanding-device-types)
+10. [Localization Guide](#localization-guide)
 
 ---
 
@@ -60,80 +62,147 @@ Output (What Gets Deployed)
 ### High-Level Data Flow
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                  npm run build                               │
-│                 (Build Process)                              │
-└────────────────────┬────────────────────────────────────────┘
-                     │
-        ┌────────────┴────────────┐
-        │                         │
-        ▼                         ▼
-   ┌─────────────┐          ┌──────────────┐
-   │ Load Data   │          │ Load Template│
-   │             │          │              │
-   │devices.json │          │device.html   │
-   └──────┬──────┘          └────────┬─────┘
+┌──────────────────────────────────────────────────────────────┐
+│                     npm run build                             │
+│                   (Build Process)                             │
+└──────────────────────┬──────────────────────────────────────┘
+                       │
+          ┌────────────┴────────────┐
+          │                         │
+          ▼                         ▼
+   ┌─────────────────────┐  ┌──────────────┐
+   │   Merge Category    │  │Load Templates│
+   │      Datasets       │  │              │
+   │                     │  │device.html   │
+   │ data/categories/    │  │category.html │
+   │ ├─ cameras.json     │  │etc...        │
+   │ ├─ drones.json      │  └────────┬─────┘
+   │ ├─ action-cams.json │           │
+   │ └─ ...json          │           │
+   └──────┬──────────────┘           │
           │                          │
+          ▼                          │
+   ┌─────────────────────┐           │
+   │  devices.json       │           │
+   │  (merged single file)           │
+   └──────┬──────────────┘           │
           │  ┌──────────────────────┘
           │  │
           ▼  ▼
-    ┌─────────────────┐
-    │  For Each Device│
-    │                 │
-    │ 1. Read device  │
-    │ 2. Build vars   │
-    │ 3. Replace {{}} │
-    │ 4. Write HTML   │
-    └────────┬────────┘
-             │
-             ▼
-    ┌─────────────────────┐
-    │   dist/devices/     │
-    │   [slug]/index.html │
-    └─────────────────────┘
+     ┌──────────────────────┐
+     │  For Each Device     │
+     │                      │
+     │ 1. Read device       │
+     │ 2. Build vars        │
+     │ 3. Replace {{}}      │
+     │ 4. Write HTML page   │
+     └──────────┬───────────┘
+                │
+                ▼
+     ┌──────────────────────────┐
+     │   dist/devices/          │
+     │   [slug]/index.html      │
+     │                          │
+     │ + dist/categories/       │
+     │ + dist/tools/            │
+     │ + dist/readers/          │
+     └──────────────────────────┘
 ```
 
 ### Component Breakdown
 
-#### 1. **Data Layer** (Single Source of Truth)
+#### 1. **Data Layer** (Modular Category Datasets)
 
-File: `data/devices.json`
+**Source:** `data/categories/*.json` + `data/sdcards.json` + other datasets
 
-Contains all device information. Changes here automatically propagate to all generated pages.
+The site now uses a **modular, category-based approach** instead of a monolithic file:
 
+**File Structure:**
+```
+data/
+├─ categories/
+│  ├─ action-cameras.json      (GoPro, DJI Action, etc.)
+│  ├─ cameras.json              (Canon, Sony, Nikon, etc.)
+│  ├─ drones.json               (DJI, Skydio, etc.)
+│  ├─ dash-cams.json            (Viofo, Thinkware, etc.)
+│  ├─ computing-and-tablets.json (iPad, Surface, etc.)
+│  ├─ smartphones.json
+│  ├─ gaming-handhelds.json
+│  ├─ security-cameras.json
+│  └─ audio-and-hi-fi.json
+│
+├─ sdcards.json                 (All SD card products)
+├─ devices.json                 (AUTO-GENERATED on build, don't edit)
+├─ promoted-cards.json          (Marketing: featured products)
+└─ sdcard-enrichment.json       (Extra content for cards)
+```
+
+**Why this approach?**
+- ✅ **Scalability:** Each device type is a separate file → easier to manage
+- ✅ **Merge on Build:** All categories auto-merge into `devices.json` during build
+- ✅ **Team Collaboration:** Multiple people can edit different categories without conflicts
+- ✅ **Version Control:** Smaller diffs, easier to review changes
+
+**Example: action-cameras.json**
+```json
+[
+  {
+    "id": "gopro-hero-13",
+    "name": "GoPro Hero 13 Black",
+    "category": "Action Cameras",
+    "slug": "gopro-hero-13",
+    "searchTerms": [
+      "gopro hero 13",
+      "gopro 13 memory card"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (UHS-II Compatible)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": ["128GB", "256GB", "512GB"],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "Shoots 5.3K at high frame rates. V30 ensures 30MB/s sustained write speed needed to prevent dropped frames or corrupted files.",
+    "recommendedBrands": [
+      { "id": "sandisk-extreme-microsd" },
+      { "id": "lexar-professional-633x" },
+      { "id": "kingston-canvas-select" }
+    ],
+    "faq": [
+      {
+        "q": "Can I use a regular SD card with adapter?",
+        "a": "<b>No, the GoPro Hero 13 Black only accepts microSD cards</b>. Full-size SD cards will not work even with an adapter."
+      }
+    ],
+    "relatedDevices": ["gopro-hero-12"],
+    "notes": "Internal notes"
+  }
+]
+```
+
+**Example: sdcards.json (Product Database)**
 ```json
 {
-  "devices": [
+  "sdcards": [
     {
-      "id": "gopro-hero-13",                    // Unique identifier
-      "name": "GoPro Hero 13 Black",            // Display name
-      "category": "Action Cameras",             // Category (groups related devices)
-      "slug": "gopro-hero-13",                  // URL slug
-      "searchTerms": [                          // SEO keywords
-        "gopro hero 13",
-        "gopro 13 memory card"
-      ],
-      "sdCard": {                               // SD card specs
-        "type": "microSD UHS-I",
-        "minSpeed": "V30",
-        "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": ["128GB", "256GB"],
-        "maxCapacity": "512GB"
+      "id": "sandisk-extreme-microsd",
+      "name": "SanDisk Extreme microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 190 MB/s",
+        "writeSpeed": "Up to 130 MB/s"
       },
-      "whySpecs": "Explains why these specs matter for this device",
-      "recommendedBrands": [                    // Links to brands (ref by ID)
-        { "id": "sandisk-extreme-microsd" }
-      ],
-      "faq": [                                  // Device-specific FAQs
-        {
-          "q": "Can I use regular SD card?",
-          "a": "No, only microSD..."
-        }
-      ],
-      "relatedDevices": [                       // Links to similar devices
-        "gopro-hero-12"
-      ],
-      "notes": "Internal notes"
+      "availableCapacities": [32, 64, 128, 256, 512],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/sandisk-extreme-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+microSD&tag=sd-cc-20",
+      "pros": "The gold standard. Fast, reliable, A2 rated.",
+      "cons": "Write speeds are slower on 32GB/64GB capacities.",
+      "tier": "recommended"
     }
   ]
 }
@@ -225,6 +294,177 @@ async function build() {
   console.log("✅ Generation complete!");
 }
 ```
+
+---
+
+## Modular Dataset Architecture
+
+### Overview: From Monolithic to Modular
+
+**Old Approach:**
+- Single `data/devices.json` with 150+ devices
+- Hard to manage, large diffs, merge conflicts
+
+**New Approach (Current):**
+- Devices split into `data/categories/*.json` (one per category)
+- Automatically merged into `devices.json` during build
+- Products live in `data/sdcards.json`
+- Enrichment data in separate files
+
+### The Build-Time Merge Process
+
+When you run `npm run build`:
+
+**Step 1: Merge Category Files**
+```javascript
+// From scripts/generator/build.js
+
+mergeDeviceCategories() {
+  const categoryFiles = fs.readdirSync('data/categories')
+    .filter(f => f.endsWith('.json'))
+    .sort();
+  
+  let allDevices = [];
+  
+  for (const file of categoryFiles) {
+    const devices = JSON.parse(fs.readFileSync(file, 'utf8'));
+    allDevices = allDevices.concat(devices);
+  }
+  
+  // Write merged file
+  fs.writeFileSync('data/devices.json', {
+    devices: allDevices,
+    metadata: { ... }
+  });
+}
+```
+
+**Step 2: Generate Pages from Merged File**
+- All generators then read the merged `devices.json`
+- Each device gets a page, category gets aggregated pages
+- All links, search indexes, sitemaps built from merged data
+
+### Datasets at a Glance
+
+| File | Purpose | Format | Examples |
+|------|---------|--------|----------|
+| `data/categories/*.json` | Individual device categories | Array of devices | `action-cameras.json`, `drones.json` |
+| `data/sdcards.json` | All SD card products | `{ sdcards: [...] }` | SanDisk, Samsung, Kingston cards |
+| `data/devices.json` | **GENERATED** - Merged all categories | `{ devices: [...], metadata }` | (Auto-created, don't edit) |
+| `data/sdcard-enrichment.json` | Extra content for cards | Object map | richDescription, useCase, bestFor |
+| `data/promoted-cards.json` | Marketing: featured products | Array | Cards highlighted in calculators |
+| `data/calculator-content.json` | Content for calculator page | Object | Guides, tips, FAQ |
+| `data/device-enrichment.json` | Extra device content | Object map | Additional device details |
+
+### Example: Complete Category File
+
+**File: `data/categories/cameras.json`**
+```json
+[
+  {
+    "id": "canon-eos-r5",
+    "name": "Canon EOS R5",
+    "category": "Cameras",
+    "slug": "canon-eos-r5",
+    "searchTerms": [
+      "canon eos r5",
+      "canon r5 memory card",
+      "canon mirrorless sd card"
+    ],
+    "imageUrl": "/img/devices/canon-eos-r5.jpg",
+    "sdCard": {
+      "type": "SD UHS-II",
+      "minSpeed": "V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": ["128GB", "256GB"],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "8K RAW video at 120fps requires extreme sustained write speeds. V60 maintains 60MB/s minimum, necessary for RAW formats. Dual slot: one CFast card, one SD card.",
+    "recommendedBrands": [
+      { "id": "sandisk-extreme-pro-sd" },
+      { "id": "lexar-professional-1000x-sd" },
+      { "id": "prograde-digital-cobalt" }
+    ],
+    "faq": [
+      {
+        "q": "Can I use UHS-I cards in the EOS R5?",
+        "a": "<b>Yes, UHS-I cards work</b>, but you'll get slower write speeds (~104 MB/s max). For 8K RAW, V60 <b>UHS-II cards are strongly recommended</b>."
+      },
+      {
+        "q": "Is dual-slot recommended?",
+        "a": "<b>Yes. The first slot is CFast, the second is SD</b>. Professional workflows use the CFast for primary recording and SD for redundancy backup."
+      }
+    ],
+    "relatedDevices": ["canon-eos-r6", "canon-eos-r3"],
+    "notes": "Professional cinema camera. Raw specs required."
+  },
+  {
+    "id": "canon-eos-r6",
+    "name": "Canon EOS R6",
+    "category": "Cameras",
+    "slug": "canon-eos-r6",
+    // ... more fields
+  }
+]
+```
+
+**File: `data/categories/drones.json`**
+```json
+[
+  {
+    "id": "dji-air-3s",
+    "name": "DJI Air 3S",
+    "category": "Drones",
+    "slug": "dji-air-3s",
+    "searchTerms": ["dji air 3s", "dji air 3s sd card", "dji drone memory"],
+    "sdCard": {
+      "type": "microSD UHS-II",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": ["256GB", "512GB"],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "4K 60fps video bitrate ~150 Mbps. V30 ensures stable recording. Prefers fast UHS-II for best performance, but V30 UHS-I works.",
+    "recommendedBrands": [
+      { "id": "sandisk-extreme-microsd" },
+      { "id": "samsung-evo-plus-microsd" }
+    ],
+    "faq": [
+      {
+        "q": "What's the difference between V30 and V60 for DJI Air 3S?",
+        "a": "V30 (30MB/s) is the minimum requirement and works well. V60 (60MB/s) provides extra headroom for future firmware updates and multi-format recording but is not necessary for current models."
+      }
+    ],
+    "relatedDevices": ["dji-mini-4-pro", "dji-mavic-3"]
+  }
+]
+```
+
+### Key Rules for Category Files
+
+1. **File Naming:** Match device type exactly
+   - `action-cameras.json` ✅
+   - `action_cameras.json` ❌ (use hyphens)
+
+2. **Array Format:** Categories are arrays (not wrapped in `{ devices: [...] }`)
+   ```json
+   [
+     { "id": "...", "name": "...", ... },
+     { "id": "...", "name": "...", ... }
+   ]
+   ```
+
+3. **Required Fields per Device:**
+   - `id` - Unique, URL-safe identifier
+   - `name` - Display name
+   - `category` - Must match one of the defined categories
+   - `slug` - URL slug (usually matches id)
+   - `sdCard` - Object with type, minSpeed, minWriteSpeed, etc.
+   - `recommendedBrands` - Array of brand references
+
+4. **Auto-Generated Fields (Don't Manually Add):**
+   - `imageUrl` - Optional, falls back to placeholder if missing
+   - `relatedDevices` - Can be auto-generated from similar devices
 
 ---
 
@@ -836,6 +1076,237 @@ Deploy Japanese to: `ja.sdcardchecker.com/`
 ❌ Brand names (SanDisk, Kingston)   → Proper nouns
 ❌ IDs (device IDs, brand IDs)       → Internal references
 ```
+
+---
+
+## Expanding Device Types
+
+### How to Add a New Device Category
+
+The modular architecture makes it easy to add new device types without touching core code.
+
+### Step 1: Plan the New Category
+
+**Example: Adding "Instant Cameras" (Fujifilm Instax, etc.)**
+
+Decide:
+- Category name: `Instant Cameras`
+- File name: `data/categories/instant-cameras.json`
+- Which devices to include
+
+### Step 2: Create the Category File
+
+```bash
+# Create new category file
+touch data/categories/instant-cameras.json
+```
+
+**File: `data/categories/instant-cameras.json`**
+```json
+[
+  {
+    "id": "fujifilm-instax-evo",
+    "name": "Fujifilm Instax Evo",
+    "category": "Instant Cameras",
+    "slug": "fujifilm-instax-evo",
+    "searchTerms": [
+      "instax evo",
+      "fujifilm instax evo memory card",
+      "instax evo sd card",
+      "instant camera storage"
+    ],
+    "imageUrl": "/img/devices/fujifilm-instax-evo.jpg",
+    "sdCard": {
+      "type": "SD UHS-I",
+      "minSpeed": "Class 10",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": ["32GB", "64GB"],
+      "maxCapacity": "128GB"
+    },
+    "whySpecs": "The Instax Evo saves digital copies alongside instant prints. 10MB/s write speed is sufficient for the camera's 1280x960 image format. UHS-I cards are plenty fast; UHS-II is overkill.",
+    "recommendedBrands": [
+      { "id": "sandisk-ultra-sd" },
+      { "id": "kingston-canvas-select" }
+    ],
+    "faq": [
+      {
+        "q": "Do I need a fast SD card for Instax Evo?",
+        "a": "<b>No, Class 10 is more than sufficient</b>. The Instax Evo records at low bitrates (1280x960). A standard Class 10 card easily handles the ~5 MB/s write speed needed."
+      },
+      {
+        "q": "What size should I get?",
+        "a": "64GB is ideal. The Instax Evo stores approximately 2000-3000 image files per 64GB depending on quality settings. 32GB works but fills quickly."
+      }
+    ],
+    "relatedDevices": ["fujifilm-instax-wide-300"],
+    "notes": "Consumer instant camera with digital backup"
+  }
+]
+```
+
+### Step 3: Add Missing Brand Recommendations
+
+If the brand ID doesn't exist in `data/sdcards.json`, add it:
+
+**Check existing brands:**
+```bash
+grep -o '"id": "[^"]*"' data/sdcards.json | sort | uniq
+```
+
+**Add new card if needed:**
+```json
+{
+  "id": "sandisk-ultra-sd",
+  "name": "SanDisk Ultra SD",
+  "type": "SD",
+  "specs": {
+    "uhs": "UHS-I",
+    "speedClass": "U3",
+    "readSpeed": "Up to 120 MB/s",
+    "writeSpeed": "Up to 90 MB/s"
+  },
+  "availableCapacities": [32, 64, 128],
+  "priceSymbol": "$",
+  "priceTier": "Budget",
+  "imageUrl": "/img/cards/sandisk-ultra-sd.webp",
+  "tier": "budget"
+}
+```
+
+### Step 4: Build & Test
+
+```bash
+# Run build - automatically merges your new category
+npm run build
+
+# Check that devices were merged
+node -e "console.log(require('./data/devices.json').metadata)"
+
+# Output:
+# {
+#   "totalDevices": 155,
+#   "categories": [ ..., "Instant Cameras", ... ],
+#   "categoryCount": 11
+# }
+
+# Check local site
+npm start
+
+# Visit: http://localhost:8080/devices/fujifilm-instax-evo/
+```
+
+### Step 5: Add Category Template (Optional, If New Layout Needed)
+
+If the category needs special UI beyond the default device page:
+
+**File: `src/templates/category-instant-cameras.html`** (optional)
+```html
+<!-- Use default category template, or customize this -->
+<div class="category-instant-cameras">
+  <h1>Best SD Cards for {{CATEGORY_NAME}}</h1>
+  <p>Instant cameras need stable, reliable cards for both prints and digital backup...</p>
+  <!-- ... custom content ... -->
+</div>
+```
+
+Update `generate-category-pages.js` to use this template if it exists.
+
+### Step 6: Test Localization (If Adding Japanese)
+
+If the site supports Japanese, also add:
+
+**File: `data/categories-ja/instant-cameras.json`**
+```json
+[
+  {
+    "id": "fujifilm-instax-evo",
+    "name": "富士フイルム Instax Evo",
+    "category": "インスタントカメラ",
+    "slug": "fujifilm-instax-evo",
+    "searchTerms": ["instax evo", "富士フイルム instax evo"],
+    // ... rest translated ...
+  }
+]
+```
+
+### Step 7: Verify Checklist
+
+Before committing:
+
+- [ ] New category file created: `data/categories/[name].json`
+- [ ] All devices have required fields (id, name, category, slug, sdCard, recommendedBrands)
+- [ ] All recommended brand IDs exist in `data/sdcards.json`
+- [ ] Device slugs are URL-safe (lowercase, hyphens, no spaces)
+- [ ] JSON is valid (no syntax errors)
+- [ ] Build runs without errors: `npm run build`
+- [ ] New devices appear in `dist/devices/[slug]/`
+- [ ] Category page works: `/categories/[category-slug]/`
+- [ ] Search finds new devices
+
+### Complete Example: New Device Type Workflow
+
+**Scenario:** Add "Film Cameras" category with 5 devices
+
+```bash
+# 1. Create file
+cat > data/categories/film-cameras.json << 'EOF'
+[
+  {
+    "id": "leica-m-film",
+    "name": "Leica M Film Camera",
+    "category": "Film Cameras",
+    "slug": "leica-m-film",
+    "searchTerms": ["leica m film camera"],
+    "sdCard": {
+      "type": "Not Applicable",
+      "minSpeed": "N/A",
+      "minWriteSpeed": "N/A",
+      "recommendedCapacity": ["N/A"],
+      "maxCapacity": "N/A"
+    },
+    "whySpecs": "Film cameras don't use SD cards. They use film. This is informational only.",
+    "recommendedBrands": [],
+    "faq": [
+      {
+        "q": "Do film cameras use SD cards?",
+        "a": "No. Film cameras use physical 35mm or medium format film. The Leica M is a legendary rangefinder camera that uses film only."
+      }
+    ],
+    "relatedDevices": []
+  }
+]
+EOF
+
+# 2. Build
+npm run build
+
+# 3. Test
+npm start
+# Visit: http://localhost:8080/devices/leica-m-film/
+
+# 4. Commit
+git add data/categories/film-cameras.json
+git commit -m "Add: Film Cameras category"
+```
+
+### Adding Multiple Devices to an Existing Category
+
+No rebuild needed beyond the initial `npm run build`:
+
+**File: `data/categories/drones.json`** (add to existing)
+```json
+[
+  { /* existing DJI Air 3S */ },
+  {
+    "id": "dji-mini-4-pro",
+    "name": "DJI Mini 4 Pro",
+    "category": "Drones",
+    // ... rest of fields
+  }
+]
+```
+
+Run `npm run build` and both devices will be in `dist/devices/`.
 
 ---
 
