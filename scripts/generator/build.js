@@ -23,6 +23,7 @@ const { generateCoreFiles } = require("./generate-core-files");
 const { generateRedirects } = require("./generate-redirects");
 const { generateEnglishSitemap } = require("./generate-sitemaps");
 const { generateCarPages } = require("./generate-car-pages");
+const { generateCarsIndex } = require("./generate-cars-index");
 
 // Paths
 const dataPath = path.join(__dirname, "../../data/devices.json");
@@ -155,6 +156,10 @@ async function build() {
 
     // 7. Generate Car Navigation Pages (1-to-many expansion engine)
     await generateCarPages(distPath);
+    console.log();
+
+    // 7.5. Generate Car Navigation Index Page (/cars/)
+    generateCarsIndex(distPath);
     console.log();
 
     // 8. Generate URL Redirects for SEO migration

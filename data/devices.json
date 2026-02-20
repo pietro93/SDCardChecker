@@ -4600,10 +4600,10 @@
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "Sentry mode constantly overwrites old footage. Standard cards fail quickly. You need High Endurance cards rated for continuous write operations. V30 ensures minimum 30MB/s sustained writes.",
+      "whySpecs": "Sentry mode continuously overwrites old footage. Standard cards fail quickly. You need High Endurance cards rated for 10,000+ write/erase cycles.",
       "recommendedBrands": [
         {
-          "id": "topesel-high-endurance"
+          "id": "speederlash-64gb-2pack"
         },
         {
           "id": "sandisk-max-endurance"
@@ -4656,10 +4656,10 @@
       "whySpecs": "4K dash cams write at ~50-100 Mbps bitrate depending on resolution and codec. V30 ensures 30MB/s sustained write speed, preventing dropped frames. High Endurance cards extend lifespan from months to years.",
       "recommendedBrands": [
         {
-          "id": "topesel-high-endurance"
+          "id": "speederlash-64gb-2pack"
         },
         {
-          "id": "speederlash-standard"
+          "id": "digiera-64gb-ct100"
         },
         {
           "id": "sandisk-max-endurance"
@@ -4709,7 +4709,7 @@
       "whySpecs": "Viofo A229 Pro is a dual-channel 4K dash cam (front + interior). Each channel writes continuously at ~50 Mbps. You need <b>TWO cards minimum (one for each channel)</b>. High Endurance essential.",
       "recommendedBrands": [
         {
-          "id": "topesel-high-endurance"
+          "id": "speederlash-64gb-2pack"
         },
         {
           "id": "sandisk-max-endurance"
@@ -7556,7 +7556,7 @@
     }
   ],
   "metadata": {
-    "generated": "2026-02-20T06:48:21.270Z",
+    "generated": "2026-02-20T12:55:51.387Z",
     "totalDevices": 163,
     "categories": [
       "Action Cameras",

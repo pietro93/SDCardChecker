@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Navigation SD Card Updates | Vehicle-Specific Recommendations</title>
+    <meta name="description" content="Update your car's factory navigation system. Find compatible SD cards for Toyota, Chevrolet, GMC, Cadillac, and Buick vehicles.">
+    <meta name="keywords" content="car navigation SD card, vehicle navigation update, Toyota navigation, Chevrolet navigation, GMC navigation">
+    <link rel="canonical" href="https://sdcardchecker.com/cars/">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/assets/css/modern.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    {{HEADER}}
+
+    <!-- Hero Section -->
+    <section style="padding: 3rem 0; background: linear-gradient(135deg, #ecfdf5 0%, #dbeafe 100%);">
+        <div class="container">
+            <h1 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem;">Car Navigation SD Card Updates</h1>
+            <p style="font-size: 1.1rem; color: #475569; max-width: 600px;">Keep your vehicle's factory navigation system current with the latest maps. Select your car model to find compatible SD cards.</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <section style="padding: 1.5rem 0; border-bottom: 1px solid #e2e8f0;">
+        <div class="container">
+            <div style="font-size: 0.95rem; color: #64748b;">
+                <a href="/" style="color: #2563eb; text-decoration: none;">Home</a> / 
+                <span>Car Navigation</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container" style="padding: 3rem 0;">
+        <!-- Tabs by Brand -->
+        <div x-data="{ activeTab: 'toyota' }" style="margin-bottom: 3rem;">
+            <!-- Tab Buttons -->
+            <div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; border-bottom: 2px solid #e2e8f0;">
+                <button @click="activeTab = 'toyota'" :class="{ 'border-b-4 border-blue-600 font-bold': activeTab === 'toyota' }" style="padding: 0.75rem 1.5rem; background: none; border: none; cursor: pointer; font-size: 1rem; color: #64748b;">
+                    Toyota (10 Models)
+                </button>
+                <button @click="activeTab = 'chevy'" :class="{ 'border-b-4 border-blue-600 font-bold': activeTab === 'chevy' }" style="padding: 0.75rem 1.5rem; background: none; border: none; cursor: pointer; font-size: 1rem; color: #64748b;">
+                    Chevrolet
+                </button>
+                <button @click="activeTab = 'gmc'" :class="{ 'border-b-4 border-blue-600 font-bold': activeTab === 'gmc' }" style="padding: 0.75rem 1.5rem; background: none; border: none; cursor: pointer; font-size: 1rem; color: #64748b;">
+                    GMC
+                </button>
+                <button @click="activeTab = 'cadillac'" :class="{ 'border-b-4 border-blue-600 font-bold': activeTab === 'cadillac' }" style="padding: 0.75rem 1.5rem; background: none; border: none; cursor: pointer; font-size: 1rem; color: #64748b;">
+                    Cadillac
+                </button>
+                <button @click="activeTab = 'buick'" :class="{ 'border-b-4 border-blue-600 font-bold': activeTab === 'buick' }" style="padding: 0.75rem 1.5rem; background: none; border: none; cursor: pointer; font-size: 1rem; color: #64748b;">
+                    Buick
+                </button>
+            </div>
+
+            <!-- Toyota Tab -->
+            <div x-show="activeTab === 'toyota'" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+                {{TOYOTA_VEHICLES}}
+            </div>
+
+            <!-- Chevrolet Tab -->
+            <div x-show="activeTab === 'chevy'" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+                {{CHEVY_VEHICLES}}
+            </div>
+
+            <!-- GMC Tab -->
+            <div x-show="activeTab === 'gmc'" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+                {{GMC_VEHICLES}}
+            </div>
+
+            <!-- Cadillac Tab -->
+            <div x-show="activeTab === 'cadillac'" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+                {{CADILLAC_VEHICLES}}
+            </div>
+
+            <!-- Buick Tab -->
+            <div x-show="activeTab === 'buick'" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+                {{BUICK_VEHICLES}}
+            </div>
+        </div>
+
+        <!-- Information Box -->
+        <div style="background: #f0f9ff; border-left: 4px solid #0284c7; padding: 1.5rem; border-radius: 0.5rem; margin-top: 3rem;">
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: #0c4a6e; margin-bottom: 1rem;">How to Update Your Car's Navigation</h3>
+            <ol style="list-style-position: inside; color: #0c4a6e; line-height: 1.8;">
+                <li><strong>Find your part number:</strong> Check the label on your existing navigation SD card.</li>
+                <li><strong>Select your vehicle:</strong> Click on your car model above.</li>
+                <li><strong>Choose a compatible card:</strong> Review options and compare features.</li>
+                <li><strong>Install:</strong> Turn off engine, locate SD slot, swap cards, restart vehicle.</li>
+            </ol>
+        </div>
+    </main>
+
+    {{FOOTER}}
+</body>
+
+</html>

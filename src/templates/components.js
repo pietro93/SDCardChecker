@@ -77,23 +77,25 @@ return `<!-- Favicon -->
        </div>
 
        <div class="relative group flex items-center">
-        <a href="/guides/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
-        Guides
-        <i class="fas fa-chevron-down text-xs"></i>
-        </a>
-        <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block z-50">
-        <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-         <a href="/guides/sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SD Card Guide</a>
-         <a href="/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Speed Classes</a>
-         <a href="/guides/video-bitrate-comparison/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Video Bitrate Guide</a>
-         <a href="/guides/raw-vs-jpeg/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">RAW vs JPEG</a>
-         <a href="/guides/is-my-sd-card-fake/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Fake SD Card Checker</a>
-         <a href="/guides/" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-xs font-bold border-t border-blue-200 flex items-center gap-2"><i class="fas fa-book"></i> All Guides</a>
+         <a href="/guides/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
+         Guides
+         <i class="fas fa-chevron-down text-xs"></i>
+         </a>
+         <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block z-50">
+         <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+          <a href="/guides/sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SD Card Guide</a>
+          <a href="/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Speed Classes</a>
+          <a href="/guides/video-bitrate-comparison/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Video Bitrate Guide</a>
+          <a href="/guides/raw-vs-jpeg/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">RAW vs JPEG</a>
+          <a href="/guides/is-my-sd-card-fake/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Fake SD Card Checker</a>
+          <a href="/guides/" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-xs font-bold border-t border-blue-200 flex items-center gap-2"><i class="fas fa-book"></i> All Guides</a>
+          </div>
+          </div>
          </div>
-         </div>
-        </div>
 
-       <a href="/about.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">About</a>
+        <a href="/cars/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">Car Navigation</a>
+
+        <a href="/about.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">About</a>
        </nav>
        
        <!-- Language Switcher (Desktop) -->
@@ -199,10 +201,11 @@ return `<!-- Favicon -->
       </div>
       
       <!-- Direct Links -->
+      <a href="/cars/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Car Navigation</a>
       <a href="/about.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">About</a>
-    </div>
-  </nav>
-</header>
+      </div>
+      </nav>
+      </header>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
