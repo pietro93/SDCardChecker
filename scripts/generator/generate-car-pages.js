@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { generateHeader, generateFooter, generateSidebar } = require('../../src/templates/components.js');
 
 const slugify = text => text.toString().toLowerCase()
   .replace(/\s+/g, '-')
@@ -26,6 +27,11 @@ function generateCarPages(distPath) {
   const allCards = Array.isArray(sdcardsData) ? sdcardsData : sdcardsData.sdcards;
   
   const template = fs.readFileSync(templatePath, 'utf8');
+  
+  // Generate global components
+  const headerHtml = generateHeader();
+  const footerHtml = generateFooter();
+  const sidebarHtml = generateSidebar();
 
   let pageCount = 0;
 
@@ -88,7 +94,10 @@ function generateCarPages(distPath) {
        .replace(/{{PRODUCTS_TABLE}}/g,    productRows)
        .replace(/{{INSTALL_GUIDE}}/g,     vehicle.installGuide)
        .replace(/{{WARNING}}/g,           vehicle.warning)
-       .replace(/{{RELATED_LINKS}}/g,     relatedLinks);
+       .replace(/{{RELATED_LINKS}}/g,     relatedLinks)
+       .replace(/{{HEADER}}/g,            headerHtml)
+       .replace(/{{FOOTER}}/g,            footerHtml)
+       .replace(/{{SIDEBAR}}/g,           sidebarHtml);
 
     const outDir = path.join(distPath, 'cars', vehicle.slug);
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
