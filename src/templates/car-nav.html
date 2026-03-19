@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{CAR_MODEL}} Navigation SD Card Update | {{YEARS}}</title>
-    <meta name="description" content="Update your {{CAR_MODEL}} ({{YEARS}}) navigation system with 2025 maps. Multiple product options. Compatible with OEM factory navigation.">
+    <title>{{CAR_MODEL}} Navigation SD Card Update | {{YEARS}} - Latest Maps</title>
+    <meta name="description" content="Update your {{CAR_MODEL}} ({{YEARS}}) navigation system with 2025 maps. Multiple product options. Compatible with OEM factory navigation. {{SEO_DESCRIPTION}}">
     <!-- Reuse existing CSS -->
     <link rel="stylesheet" href="/assets/css/modern.css">
     <link rel="stylesheet" href="/assets/css/tailwind.css">
@@ -28,8 +28,11 @@
 
          <h1 class="text-4xl font-bold mb-2">{{CAR_MODEL}} Navigation Update</h1>
          <p class="text-gray-600 mb-2">Model Years: {{YEARS}}</p>
-         <p class="text-sm text-gray-500 mb-8">{{PART_NOTE}}</p>
+         <p class="text-sm text-gray-500 mb-4">{{PART_NOTE}}</p>
         
+        <!-- NEW: Inject the unique SEO description here to boost long-tail keyword relevance -->
+        <p class="text-md text-gray-800 leading-relaxed mb-8">{{SEO_DESCRIPTION}}</p>
+
         <!-- Verification Box -->
         <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
             <h3 class="font-bold text-blue-800 text-lg mb-2">✅ Navigation SD Cards for {{MAKE}}</h3>
@@ -61,59 +64,111 @@
 
         <!-- Installation Guide -->
         <div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100">
-            <h3 class="text-xl font-bold mb-4 text-gray-900">Installation Guide</h3>
+            <h3 class="text-xl font-bold mb-4 text-gray-900">Installation Guide for Your {{CAR_MODEL}}</h3>
             <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
                 <p class="text-gray-700">{{INSTALL_GUIDE}}</p>
             </div>
             
             <div class="bg-orange-50 border-l-4 border-orange-400 p-4">
-                <h4 class="font-bold text-orange-800 mb-2">⚠️ Important:</h4>
+                <h4 class="font-bold text-orange-800 mb-2">⚠️ Important: {{CAR_MODEL}} Compatibility</h4>
                 <p class="text-orange-700">{{WARNING}}</p>
             </div>
         </div>
 
-        <!-- FAQ Section -->
-         <div class="bg-white shadow rounded-lg p-6 border border-gray-100 mb-8">
-             <h3 class="text-xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h3>
-             
-             <div class="space-y-4">
-                 <div>
-                     <h4 class="font-bold text-gray-800 mb-2">What's the difference between navigation SD cards?</h4>
-                     <p class="text-gray-700">Navigation cards are pre-loaded with map data for specific vehicle models and years. Different manufacturers (Navtimi, ORIRI·X, etc.) may offer slightly different coverage areas or pricing. All are plug-and-play compatible with factory navigation systems.</p>
-                 </div>
-                 
-                 <div>
-                     <h4 class="font-bold text-gray-800 mb-2">How do I know which part number I need?</h4>
-                     <p class="text-gray-700">Check the label on your existing navigation card (usually found in your vehicle's SD card slot). You'll see a part number like "86271-0E077" or "85713512". Match that number when ordering your replacement.</p>
-                 </div>
-                 
-                 <div>
-                     <h4 class="font-bold text-gray-800 mb-2">Will 2025 maps work on older model years?</h4>
-                     <p class="text-gray-700">Yes! The navigation system reads the card data regardless of the map year. 2025 maps have the latest road data and improvements. However, verify your vehicle's factory navigation is compatible with the specific part number.</p>
-                 </div>
-                 
-                 <div>
-                     <h4 class="font-bold text-gray-800 mb-2">Can I update my vehicle's navigation system myself?</h4>
-                     <p class="text-gray-700">Yes! It's simple: turn off the engine, locate the SD card slot in your vehicle (usually in the center console or below the screen), eject the old card, insert the new one, and restart. No technical knowledge required.</p>
-                 </div>
-             </div>
-         </div>
+        <!-- NEW: Model-Specific Features -->
+        {{#if SPECIFIC_FEATURES}}
+        <div class="bg-white shadow rounded-lg p-6 border border-gray-100 mb-8">
+            <h3 class="text-xl font-bold mb-4 text-gray-900">{{CAR_MODEL}} Navigation Features</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                {{#each SPECIFIC_FEATURES}}
+                <div class="flex items-start">
+                    <span class="text-green-500 mr-2">✓</span>
+                    <span class="text-gray-700">{{this}}</span>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        {{/if}}
 
-         <!-- Related {{MAKE}} Vehicles -->
-          <div class="bg-white shadow rounded-lg p-6 border border-gray-100">
-              <h3 class="text-xl font-bold mb-4 text-gray-900">Other {{MAKE}} Models</h3>
-              <p class="text-gray-600 mb-4">Navigation SD cards for other {{MAKE}} vehicles:</p>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {{RELATED_LINKS}}
-              </div>
-          </div>
-         </main>
+        <!-- NEW: Common Issues -->
+        {{#if COMMON_ISSUES}}
+        <div class="bg-white shadow rounded-lg p-6 border border-gray-100 mb-8">
+            <h3 class="text-xl font-bold mb-4 text-gray-900">Common Issues & Solutions for {{CAR_MODEL}} Navigation</h3>
+            <ul class="space-y-3 list-disc list-inside text-gray-700">
+                {{#each COMMON_ISSUES}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        {{/if}}
 
-         <!-- Sidebar -->
-         {{SIDEBAR}}
-         </div>
-         
-         <!-- Global Footer -->
-         {{FOOTER}}
-         </body>
-         </html>
+        <!-- Car-Specific FAQ Section -->
+        <div class="bg-white shadow rounded-lg p-6 border border-gray-100 mb-8">
+            <h3 class="text-xl font-bold mb-4 text-gray-900">Frequently Asked Questions about {{CAR_MODEL}} Navigation</h3>
+            
+            <div class="space-y-6">
+                {{#each FAQS}}
+                <div class="border-b border-gray-200 pb-4 last:border-b-0">
+                    <h4 class="font-bold text-gray-800 mb-2">{{this.question}}</h4>
+                    <p class="text-gray-700">{{this.answer}}</p>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+        <!-- NEW: Trim Compatibility / Applicable Models -->
+        {{#if TRIM_COMPATIBILITY}}
+        <div class="bg-white shadow rounded-lg p-6 border border-gray-100 mb-8">
+            <h3 class="text-xl font-bold mb-4 text-gray-900">{{CAR_MODEL}} Trim Compatibility</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="font-semibold text-green-800 mb-2">✅ Compatible Trims:</h4>
+                    <ul class="space-y-1">
+                        {{#each TRIM_COMPATIBILITY.compatible}}
+                        <li class="text-gray-700">• {{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-red-800 mb-2">❌ Not Compatible:</h4>
+                    <ul class="space-y-1">
+                        {{#each TRIM_COMPATIBILITY.notCompatible}}
+                        <li class="text-gray-700">• {{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {{else if APPLICABLE_MODELS}}
+        <div class="bg-white shadow rounded-lg p-6 border border-gray-100 mb-8">
+            <h3 class="text-xl font-bold mb-4 text-gray-900">Applicable {{MAKE}} Models</h3>
+            <p class="text-gray-600 mb-4">This navigation card is compatible with the following {{MAKE}} models, provided they have factory-installed navigation:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {{#each APPLICABLE_MODELS}}
+                <div class="flex items-start">
+                    <span class="text-blue-500 mr-2">▪</span>
+                    <span class="text-gray-700">{{this}}</span>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        {{/if}}
+
+        <!-- Related {{MAKE}} Vehicles -->
+        <div class="bg-white shadow rounded-lg p-6 border border-gray-100">
+            <h3 class="text-xl font-bold mb-4 text-gray-900">Other {{MAKE}} Models</h3>
+            <p class="text-gray-600 mb-4">Navigation SD cards for other {{MAKE}} vehicles:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {{RELATED_LINKS}}
+            </div>
+        </div>
+    </main>
+
+    <!-- Sidebar -->
+    {{SIDEBAR}}
+    </div>
+    
+    <!-- Global Footer -->
+    {{FOOTER}}
+</body>
+</html>

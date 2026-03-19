@@ -6,137 +6,629 @@
     "years": "2016-2022",
     "partNumberNote": "Most Prius models use part 86271-0E077. Check the label on your existing card to confirm.",
     "cardIds": ["navtimi-toyota-nav", "thcbme-toyota-86271"],
-    "installGuide": "1. Turn off engine. 2. Locate SD card slot (usually below screen or in center console). 3. Eject old card. 4. Insert new card firmly. 5. Start engine — allow 2-3 minutes for maps to load.",
-    "warning": "Only works for vehicles with factory-installed navigation. Base trims without factory nav do not have a card slot."
+    "installGuide": "1. Turn off engine and engage parking brake. 2. Locate SD card slot below the 8-inch Display Audio screen (or 11.6-inch if equipped). 3. Gently press to eject the existing card. 4. Insert new navigation card with label facing up until it clicks. 5. Start engine and wait 2-3 minutes for maps to initialize.",
+    "warning": "Only compatible with Prius models equipped with factory Display Audio Plus or Premium Audio systems. Base L Eco and Two trims without factory navigation cannot use SD cards.",
+    "seoDescription": "Update your Toyota Prius navigation system with 2025 maps. Compatible with 2016-2022 Prius hybrid models with factory Display Audio Plus system. Enjoy updated routes, POIs, and Eco Route planning.",
+    "specificFeatures": [
+      "Works with Prius Prime plug-in hybrid variants and their unique routing needs",
+      "Compatible with Toyota Safety Sense 2.0 integration for relevant alerts",
+      "Supports Eco Route planning unique to hybrid vehicles, optimizing for fuel efficiency",
+      "Integration with Multi-Information Display (MID) for turn-by-turn guidance"
+    ],
+    "commonIssues": [
+      "Prius owners often mistake smartphone connectivity (Apple CarPlay/Android Auto) for built-in navigation",
+      "Some early 2016 models may require a minor infotainment software update before card installation",
+      "The hybrid system must be in 'Ready' mode during initial map loading for proper recognition"
+    ],
+    "faqs": [
+      {
+        "question": "Does this work with my Prius Prime plug-in hybrid?",
+        "answer": "Yes! Navigation SD cards are compatible with both regular Prius and Prius Prime models from 2016-2022, as long as your vehicle has the factory Display Audio Plus system with navigation."
+      },
+      {
+        "question": "Why won't my Prius navigation card work?",
+        "answer": "Most issues occur because base Prius L Eco and Two trims don't have factory navigation systems. Only Three Touring, Four Touring, and Limited trims include the compatible Display Audio Plus system and an SD card slot."
+      },
+      {
+        "question": "Can I install the navigation card while the hybrid system is on?",
+        "answer": "No, always turn off the hybrid system completely before removing or installing navigation cards. After installation, the system needs to be in 'Ready' mode when you restart for proper map initialization."
+      },
+      {
+        "question": "Will this show charging stations for my Prius Prime?",
+        "answer": "The navigation system shows general POI data including some charging stations, but it's not specifically optimized for EV charging like dedicated apps. The system works best for general navigation and Eco Route planning."
+      }
+    ],
+    "trimCompatibility": {
+      "compatible": ["Three Touring", "Four Touring", "Limited", "Prime Plus", "Prime Premium", "Prime Advanced"],
+      "notCompatible": ["L Eco", "Two", "Prime LE"]
+    }
   },
   {
     "slug": "toyota-4runner-navigation-sd-card",
     "carModel": "Toyota 4Runner",
     "make": "Toyota",
     "years": "2014-2024",
-    "partNumberNote": "Common part number: 86271-0E077. Verify on your existing card.",
+    "partNumberNote": "Common part number: 86271-0E077. Verify on your existing card label.",
     "cardIds": ["navtimi-toyota-nav", "thcbme-toyota-86271"],
-    "installGuide": "1. Turn off engine. 2. Locate SD slot below the screen. 3. Eject old card. 4. Insert new card. 5. Start engine.",
-    "warning": "Compatible with SR5 Premium, Limited, and TRD Pro trims only. Base SR5 trim does not have factory nav."
+    "installGuide": "1. Turn off engine and remove key. 2. Open the small panel below the 8-inch Entune touchscreen. 3. Press the existing SD card to eject. 4. Insert new card firmly with contacts facing down. 5. Close panel and start engine - allow 3-4 minutes for off-road map data to load.",
+    "warning": "Compatible with SR5 Premium, Limited, TRD Off-Road, TRD Pro, and Nightshade trims only. Base SR5 trim lacks factory navigation hardware.",
+    "seoDescription": "2025 navigation maps for Toyota 4Runner SUV. Compatible with 2014-2024 4Runner models with Entune Premium Audio and JBL systems. Get detailed off-road maps and trail guidance.",
+    "specificFeatures": [
+      "Includes detailed topographic data and trail information for off-road navigation",
+      "Compatible with Toyota's Multi-Terrain Select system for tailored guidance",
+      "Works with Crawl Control display features and inclinometer integration",
+      "Supports trail mapping and breadcrumb navigation features for explorers"
+    ],
+    "commonIssues": [
+      "4Runner owners often confuse Entune App Suite features (like Scout GPS Link) with true built-in navigation",
+      "Off-road mapping data requires a slightly longer initial loading time (3-4 minutes) compared to purely street-based systems",
+      "Some 2014-2015 models may need an Entune system software update for full compatibility with newer map cards"
+    ],
+    "faqs": [
+      {
+        "question": "Does this navigation card work for off-road trails?",
+        "answer": "Yes! 4Runner navigation cards include topographic data and trail information. The system integrates with Multi-Terrain Select modes to provide relevant navigation for different driving conditions."
+      },
+      {
+        "question": "My base SR5 4Runner doesn't have a card slot - can I add navigation?",
+        "answer": "Unfortunately, no. Base SR5 trims come with a basic audio system that cannot be upgraded with SD card navigation. You'd need to upgrade to SR5 Premium or higher trim levels for factory navigation."
+      },
+      {
+        "question": "Why does my 4Runner take longer to load maps than other Toyotas?",
+        "answer": "4Runner navigation systems load additional off-road and topographic data, which takes 3-4 minutes compared to 2-3 minutes for regular vehicles. This is normal and ensures you have comprehensive trail information."
+      },
+      {
+        "question": "Will this work with my TRD Pro's specialized display features?",
+        "answer": "Absolutely! The navigation integrates perfectly with TRD Pro features like the Multi-Information Display, inclinometer, and Crawl Control settings for comprehensive off-road navigation assistance."
+      }
+    ],
+    "trimCompatibility": {
+      "compatible": ["SR5 Premium", "Limited", "TRD Off-Road", "TRD Pro", "Nightshade Edition"],
+      "notCompatible": ["SR5 (base trim)"]
+    }
   },
   {
     "slug": "toyota-camry-navigation-sd-card",
     "carModel": "Toyota Camry",
     "make": "Toyota",
     "years": "2018-2022",
-    "partNumberNote": "Common part number: 86271-0E077.",
+    "partNumberNote": "Common part number: 86271-0E077 for Entune 3.0 systems.",
     "cardIds": ["navtimi-toyota-nav", "thcbme-toyota-86271"],
-    "installGuide": "1. Turn off engine. 2. Locate SD slot in center console or below screen. 3. Swap card. 4. Start engine.",
-    "warning": "Verify your Camry trim has factory navigation before purchasing."
+    "installGuide": "1. Turn off engine completely. 2. Locate SD card slot in center console storage compartment or behind a small panel below the 8-inch display. 3. Remove existing card by pressing gently. 4. Insert new card with Toyota logo facing up. 5. Start engine and wait for Entune 3.0 system to recognize new maps (2-3 minutes).",
+    "warning": "Only compatible with Camry SE, XLE, and XSE trims with Entune 3.0 Premium Audio. Base L and LE trims typically lack factory navigation hardware.",
+    "seoDescription": "2025 Toyota Camry navigation SD card update. Compatible with 2018-2022 Camry sedan models equipped with Entune 3.0 Premium Audio system. Experience improved routing and updated POIs.",
+    "specificFeatures": [
+      "Integrates with Toyota Safety Sense 2.0 alerts for safer driving",
+      "Compatible with Camry Hybrid's Eco Drive mode routing for efficiency",
+      "Works with Dynamic Navigation voice recognition for hands-free control",
+      "Supports real-time traffic integration through connected services (subscription may be required)"
+    ],
+    "commonIssues": [
+      "Many Camry buyers think smartphone integration (Apple CarPlay/Android Auto) is the same as built-in navigation",
+      "Hybrid models may show 'initializing' longer due to sophisticated system power management",
+      "Early 2018 models sometimes require an Entune system software update prior to installing a new map card"
+    ],
+    "faqs": [
+      {
+        "question": "Does the Camry Hybrid use the same navigation card?",
+        "answer": "Yes! Both gas and hybrid Camry models from 2018-2022 use the same 86271-0E077 navigation card, as long as they're equipped with the Entune 3.0 Premium Audio system and an SD card slot."
+      },
+      {
+        "question": "My Camry has a touchscreen but no card slot - why?",
+        "answer": "Base L and LE Camry trims come with Entune 3.0 Audio (without navigation). Only SE, XLE, and XSE trims include Entune 3.0 Premium Audio with navigation capability and the required SD card slot."
+      },
+      {
+        "question": "Can I use voice commands with the updated navigation?",
+        "answer": "Yes! The 2025 navigation data works seamlessly with Camry's Dynamic Navigation voice recognition. You can speak destinations, request routing, and control navigation hands-free."
+      },
+      {
+        "question": "Does this work with my Camry's smartphone apps?",
+        "answer": "The navigation SD card provides comprehensive offline mapping that works independently of your smartphone. It integrates with, but does not replace, features like Toyota Connected Services and smartphone mirroring apps."
+      }
+    ],
+    "trimCompatibility": {
+      "compatible": ["SE", "XLE", "XSE", "TRD (if equipped with Premium Audio)"],
+      "notCompatible": ["L", "LE (base audio system)"]
+    }
   },
   {
     "slug": "toyota-avalon-navigation-sd-card",
     "carModel": "Toyota Avalon",
     "make": "Toyota",
     "years": "2015-2022",
-    "partNumberNote": "Common part number: 86271-0E077.",
+    "partNumberNote": "Common part number: 86271-0E077 for Entune Premium systems.",
     "cardIds": ["navtimi-toyota-nav", "thcbme-toyota-86271"],
-    "installGuide": "1. Turn off engine. 2. Locate SD slot below screen. 3. Swap card. 4. Start engine.",
-    "warning": "Factory navigation-equipped models only."
+    "installGuide": "1. Turn off engine. 2. Locate SD slot below the 7-inch or 9-inch Entune display on the dashboard. 3. Gently press to eject the old card. 4. Insert the new card firmly with contacts facing down until it clicks. 5. Start engine and allow the system to fully initialize the new map data (approx. 2 minutes).",
+    "warning": "Factory navigation-equipped models only. Verify your Avalon has the physical SD card slot before purchasing. Not compatible with non-navigation Entune systems.",
+    "seoDescription": "Ensure your 2015-2022 Toyota Avalon always finds the best route. Our premium navigation SD card updates deliver the latest North American map data straight to your Avalon's luxury infotainment display, enhancing your driving experience.",
+    "specificFeatures": [
+      "Premium Audio system integration for a seamless user experience",
+      "Turn-by-turn guidance displayed in the Multi-Information Display (MID) on certain trims",
+      "Enhanced POI database for luxury amenities, restaurants, and hotels",
+      "Compatible with SiriusXM NavTraffic/Weather (subscription required)"
+    ],
+    "commonIssues": [
+      "Avalon owners sometimes purchase cards without confirming their vehicle has factory navigation",
+      "Confusing the built-in system with smartphone projection features like Apple CarPlay/Android Auto on newer models",
+      "Ensuring the engine is completely off during card swap to prevent system errors"
+    ],
+    "faqs": [
+      {
+        "question": "Is the 86271-0E077 SD card compatible with all Toyota Avalons?",
+        "answer": "This specific SD card is only compatible with 2015-2022 Toyota Avalon models that were originally purchased with the factory navigation package (Entune Premium Audio). Base models without the SD slot are not supported."
+      },
+      {
+        "question": "How long does it take to install new maps in my Avalon?",
+        "answer": "The physical installation takes less than a minute. Simply turn off your Avalon, locate the slot below the screen, swap the cards, and start the engine. The system will take a few moments (approx. 2 minutes) to initialize."
+      },
+      {
+        "question": "Will updating the SD card delete saved addresses in my Avalon?",
+        "answer": "No, your saved destinations, home address, and previous routes are stored on the Avalon's internal head unit memory, not on the navigation SD card itself. Your personal data remains intact."
+      },
+      {
+        "question": "Where exactly is the SD card slot in the Toyota Avalon?",
+        "answer": "In 2015-2022 Toyota Avalons, the SD card slot is typically found directly on the face of the dashboard infotainment unit, often located near the bottom edge of the screen or behind a small, discreet cover."
+      }
+    ],
+    "trimCompatibility": {
+      "compatible": ["XLE Premium", "Touring", "Limited", "TRD (if equipped with Premium Audio)"],
+      "notCompatible": ["XLE (base audio system)"]
+    }
   },
   {
     "slug": "toyota-rav4-navigation-sd-card",
     "carModel": "Toyota RAV4",
     "make": "Toyota",
     "years": "2019-2023",
-    "partNumberNote": "Navtimi confirmed compatible with RAV4 factory navigation.",
+    "partNumberNote": "Navtimi confirmed compatible with RAV4 factory navigation. Often uses part 86271-0E077 or similar.",
     "cardIds": ["navtimi-toyota-nav"],
-    "installGuide": "1. Turn off engine. 2. Locate SD slot. 3. Swap card. 4. Start engine.",
-    "warning": "Compatible with XLE Premium and above trims with factory navigation."
+    "installGuide": "1. Turn off engine and remove key. 2. Locate SD slot on the dashboard unit, often integrated near the bottom bezel of the main Entune infotainment display. 3. Press the existing card to eject. 4. Insert the new card firmly until it clicks. 5. Start engine — allow 2-3 minutes for the Entune 3.0 system to load the latest map data.",
+    "warning": "Compatible with XLE Premium, Adventure, TRD Off-Road, and Limited trims with factory navigation. Base LE and standard XLE trims typically do not have the necessary hardware.",
+    "seoDescription": "Get the most accurate driving directions for your 2019-2023 Toyota RAV4. These replacement GPS SD cards offer comprehensive map coverage, ensuring your RAV4 navigates dead zones and new highways with ease, especially for adventure-ready trims.",
+    "specificFeatures": [
+      "Entune 3.0 integration for a modern user interface and responsiveness",
+      "Dynamic routing capabilities that adapt to traffic conditions (with connected services)",
+      "Extensive POI database for outdoor activities, restaurants, and fuel stations",
+      "Traffic updates and lane guidance for smoother commutes"
+    ],
+    "commonIssues": [
+      "Many RAV4 owners mistake the base XLE's larger screen for navigation capability, unaware of the lack of an SD slot",
+      "Difficulty locating the often-discreet SD card slot near the infotainment unit's bezel",
+      "Ensuring the correct map region (e.g., North America) for the installed card"
+    ],
+    "faqs": [
+      {
+        "question": "Can I use this map update on a RAV4 LE or standard XLE?",
+        "answer": "Generally, no. This navigation update requires the factory-installed GPS system, which is typically found only on XLE Premium, Adventure, TRD Off-Road, and Limited RAV4 trims. Base models lack the SD card slot."
+      },
+      {
+        "question": "Where is the map SD card slot located on a 2019-2023 Toyota RAV4?",
+        "answer": "The SD card slot on recent RAV4 models is typically located on the dashboard unit, integrated near the bottom bezel of the main Entune infotainment display. It might be covered by a small flap."
+      },
+      {
+        "question": "Does the new SD card provide offline maps for my RAV4?",
+        "answer": "Yes. The navigation SD card provides comprehensive, hardcoded offline map data, allowing your RAV4's GPS to route you accurately even when you're in remote areas without cellular service."
+      },
+      {
+        "question": "Will this update improve my RAV4's traffic alerts?",
+        "answer": "The SD card provides the foundational road network. For real-time traffic updates, your RAV4's Entune system relies on connected services (like SiriusXM Traffic) or smartphone integration, which work in conjunction with the map data."
+      }
+    ],
+    "trimCompatibility": {
+      "compatible": ["XLE Premium", "Adventure", "TRD Off-Road", "Limited"],
+      "notCompatible": ["LE", "XLE (base trim with no factory nav)"]
+    }
   },
   {
     "slug": "toyota-highlander-navigation-sd-card",
     "carModel": "Toyota Highlander",
     "make": "Toyota",
     "years": "2020-2023",
-    "partNumberNote": "Navtimi confirmed compatible with Highlander factory navigation.",
+    "partNumberNote": "Navtimi confirmed compatible with Highlander factory navigation. Often uses part 86271-0E077 or similar.",
     "cardIds": ["navtimi-toyota-nav"],
-    "installGuide": "1. Turn off engine. 2. Locate SD slot. 3. Swap card. 4. Start engine.",
-    "warning": "Verify your Highlander trim has factory navigation."
+    "installGuide": "1. Turn off engine and remove key. 2. Locate the SD card slot, usually below the main 8-inch or 12.3-inch infotainment screen on the dashboard. 3. Press the existing card to eject. 4. Insert the new card firmly until it clicks. 5. Start engine — allow 2-3 minutes for the system to fully load and recognize the updated map data.",
+    "warning": "Verify your Highlander trim has factory navigation (typically found on XLE, Limited, and Platinum trims). Base L and LE models do not have an SD card slot.",
+    "seoDescription": "Update the dynamic navigation system in your 2020-2023 Toyota Highlander. Perfect for family road trips, this SD card provides the latest points of interest, gas stations, and newly built road networks, ensuring smooth journeys.",
+    "specificFeatures": [
+      "Dynamic Navigation system for intuitive routing and voice commands",
+      "Large infotainment screen support (8-inch or 12.3-inch) for clear map display",
+      "Family-friendly POI database for parks, attractions, and dining",
+      "Integrated traffic updates (with connected services) for efficient route planning"
+    ],
+    "commonIssues": [
+      "Highlander owners occasionally overlook the 'factory navigation' requirement, thinking any touchscreen means built-in GPS",
+      "Confusion between the SD card slot and other media ports or blank covers",
+      "Ensuring the vehicle is completely off during the card swap to avoid system errors"
+    ],
+    "faqs": [
+      {
+        "question": "How do I upgrade the GPS maps on my Toyota Highlander?",
+        "answer": "Upgrading is a simple plug-and-play process. Turn off your Highlander, remove the existing factory SD card from the dashboard slot (usually below the screen), insert the new update card, and turn the vehicle back on. The system will initialize automatically."
+      },
+      {
+        "question": "Which Highlander trims are compatible with this SD card?",
+        "answer": "This update works for 2020-2023 Toyota Highlander models equipped with the premium audio and dynamic navigation package, typically XLE, Limited, and Platinum trims. Always check if your specific trim has the physical SD slot."
+      },
+      {
+        "question": "Are points of interest (POIs) updated on the new Highlander map card?",
+        "answer": "Yes, the updated SD card includes millions of new and revised Points of Interest across North America, making it easier to find new restaurants, hotels, fuel stations, and emergency services for your family trips."
+      },
+      {
+        "question": "Will this map update work for my Highlander Hybrid?",
+        "answer": "Yes, the navigation SD card update is compatible with both gasoline and hybrid versions of the 2020-2023 Toyota Highlander, provided your specific trim comes with the factory navigation system."
+      }
+    ],
+    "trimCompatibility": {
+      "compatible": ["XLE", "Limited", "Platinum", "Hybrid XLE", "Hybrid Limited", "Hybrid Platinum"],
+      "notCompatible": ["L", "LE (base trims without factory nav)"]
+    }
   },
   {
     "slug": "toyota-tacoma-navigation-sd-card",
     "carModel": "Toyota Tacoma",
     "make": "Toyota",
     "years": "2018-2023",
-    "partNumberNote": "Navtimi confirmed compatible with Tacoma factory navigation.",
+    "partNumberNote": "Navtimi confirmed compatible with Tacoma factory navigation. Often uses part 86271-0E077 or similar.",
     "cardIds": ["navtimi-toyota-nav"],
-    "installGuide": "1. Turn off engine. 2. Locate SD slot. 3. Swap card. 4. Start engine.",
-    "warning": "Verify your Tacoma has factory navigation (TRD Sport and above)."
+    "installGuide": "1. Turn off engine and remove key. 2. Locate the SD card slot directly on the head unit fascia, typically positioned on the lower right or lower left side of the Tacoma's main display screen. 3. Press the existing card to eject. 4. Insert the new card firmly until it clicks. 5. Start engine — allow 2-3 minutes for the Entune Premium system to load the latest map data.",
+    "warning": "Verify your Tacoma has factory navigation (TRD Sport, TRD Off-Road, and TRD Pro trims typically include it). SR and SR5 base trims generally do not.",
+    "seoDescription": "Equip your 2018-2023 Toyota Tacoma with the newest GPS maps available. Whether navigating city streets or finding trailheads, these SD card updates keep your Tacoma's factory navigation accurate and reliable for all your adventures.",
+    "specificFeatures": [
+      "Enhanced off-road map support for truck adventures (on TRD trims)",
+      "Entune Premium Audio integration for a robust infotainment experience",
+      "Reliability in tough environments, ensuring navigation even in remote areas",
+      "Clear turn-by-turn guidance visible on the rugged dashboard display"
+    ],
+    "commonIssues": [
+      "Confusion between basic Entune Audio and Entune Premium Audio with factory navigation in Tacoma trims",
+      "Ensuring the specific TRD Sport, TRD Off-Road, or TRD Pro trim has the navigation option installed",
+      "Noting that inserting an SD card will not 'add' navigation to a non-navigation equipped head unit"
+    ],
+    "faqs": [
+      {
+        "question": "Does the Toyota Tacoma TRD Off-Road have factory navigation?",
+        "answer": "Yes, most 2018-2023 Tacoma TRD Sport, TRD Off-Road, and TRD Pro models come with factory navigation and an SD card slot, making them perfectly compatible with this map update."
+      },
+      {
+        "question": "Where do I insert the SD card in a Toyota Tacoma?",
+        "answer": "The navigation SD card slot is located directly on the head unit fascia, typically positioned on the lower right or lower left side of the Tacoma's main display screen. It may be behind a small cover."
+      },
+      {
+        "question": "Will this give my Tacoma navigation if it didn't come with it?",
+        "answer": "No, inserting a navigation SD card into a standard, non-navigation Tacoma radio will not magically add the GPS feature. You must already have the factory navigation hardware installed for the card to work."
+      },
+      {
+        "question": "What's the difference between Tacoma Entune Audio and Entune Premium Audio?",
+        "answer": "Entune Audio is the basic system, while Entune Premium Audio includes integrated navigation and the physical SD card slot. Only Premium Audio-equipped Tacomas can use these map updates."
+      }
+    ],
+    "trimCompatibility": {
+      "compatible": ["TRD Sport", "TRD Off-Road", "Limited", "TRD Pro"],
+      "notCompatible": ["SR", "SR5 (base trims without factory nav)"]
+    }
   },
   {
     "slug": "toyota-tundra-navigation-sd-card",
     "carModel": "Toyota Tundra",
     "make": "Toyota",
     "years": "2018-2021",
-    "partNumberNote": "Navtimi confirmed compatible with Tundra factory navigation.",
+    "partNumberNote": "Navtimi confirmed compatible with Tundra factory navigation. Often uses part 86271-0E077 or similar.",
     "cardIds": ["navtimi-toyota-nav"],
-    "installGuide": "1. Turn off engine. 2. Locate SD slot below infotainment screen. 3. Swap card. 4. Start engine.",
-    "warning": "For 2022+ Tundra, the navigation system changed. Verify compatibility before purchasing."
+    "installGuide": "1. Turn off engine and remove key. 2. Locate the SD slot below the infotainment screen, often behind a small plastic flap or door. 3. Press the existing card to eject. 4. Insert the new card firmly until it clicks. 5. Start engine — allow 2-3 minutes for the Entune Premium system to load the latest map data.",
+    "warning": "For 2022+ Tundra, the navigation system changed significantly (cloud-based). This SD card is strictly for 2018-2021 Tundra models with the older Entune Premium Audio system. Verify compatibility before purchasing.",
+    "seoDescription": "Breathe new life into your 2018-2021 Toyota Tundra's dashboard with a navigation SD card update. Eliminate outdated routes and missing highways with a simple, plug-and-play map installation, tailored for the rugged Tundra.",
+    "specificFeatures": [
+      "Entune Premium Audio Plus integration for a robust infotainment system",
+      "Large screen support for clear and visible navigation in a truck cabin",
+      "Routing optimized for truck dimensions and trailer towing (where applicable)",
+      "Detailed POI database for truck stops, rest areas, and service stations"
+    ],
+    "commonIssues": [
+      "The major 2022 Tundra redesign rendered SD cards obsolete for navigation, causing confusion for owners",
+      "Locating the often-discreet SD card slot, which can be hidden behind a small cover",
+      "The impact of using outdated map cards, leading to inefficient or incorrect routing"
+    ],
+    "faqs": [
+      {
+        "question": "Will this SD card work for a 2022 or newer Toyota Tundra?",
+        "answer": "No. The Toyota Tundra underwent a major redesign for the 2022 model year, moving to a cloud-based Audio Multimedia system that does not use SD cards. This card is strictly for 2018-2021 Tundras."
+      },
+      {
+        "question": "How do I find the SD card slot in my 2018-2021 Tundra?",
+        "answer": "In the 2018-2021 Tundra, the SD card slot is typically covered by a small plastic flap or door located directly below the main infotainment touchscreen on the dashboard."
+      },
+      {
+        "question": "What happens if I use an outdated map card in my Tundra?",
+        "answer": "Using an older card will not harm the vehicle's hardware, but you will miss out on new road layouts, updated speed limits, and new POIs, which frequently leads to inefficient or incorrect routing and missed exits."
+      },
+      {
+        "question": "Is this navigation compatible with Tundra trims like SR5, Limited, or Platinum?",
+        "answer": "Yes, this map update is compatible with 2018-2021 Tundra SR5, Limited, Platinum, and 1794 Edition trims that were originally equipped with the Entune Premium Audio system with built-in navigation."
+      }
+    ],
+    "trimCompatibility": {
+      "compatible": ["SR5 (with Premium Audio)", "Limited", "Platinum", "1794 Edition"],
+      "notCompatible": ["SR (base audio)", "All 2022+ models"]
+    }
   },
   {
     "slug": "toyota-sienna-navigation-sd-card",
     "carModel": "Toyota Sienna",
     "make": "Toyota",
     "years": "2018-2022",
-    "partNumberNote": "Navtimi confirmed compatible with Sienna factory navigation.",
+    "partNumberNote": "Navtimi confirmed compatible with Sienna factory navigation. Often uses part 86271-0E077 or similar.",
     "cardIds": ["navtimi-toyota-nav"],
-    "installGuide": "1. Turn off engine. 2. Locate SD slot. 3. Swap card. 4. Start engine.",
-    "warning": "Applies to Sienna trims with factory-installed navigation."
+    "installGuide": "1. Turn off engine and remove key. 2. Locate the SD slot on the dashboard unit, often below the main infotainment screen. 3. Gently push the existing card to eject. 4. Insert the new card firmly until it clicks. 5. Start engine — allow 2-3 minutes for the Entune system to load the latest map data, ensuring it's ready for your family's next trip.",
+    "warning": "Applies to Sienna trims with factory-installed navigation (typically SE, XLE, Limited). Base L and LE trims generally lack the SD card slot and navigation hardware.",
+    "seoDescription": "Keep your family on the right track with a map update for your 2018-2022 Toyota Sienna. These SD cards seamlessly integrate with your Sienna's factory system to provide the newest routes and POIs, making every journey smoother and more predictable.",
+    "specificFeatures": [
+      "Family-friendly POI database for parks, entertainment venues, and rest stops",
+      "Traffic updates and lane guidance for stress-free minivan travel",
+      "Integration with rearview camera and parking aids for navigation context",
+      "Clear turn-by-turn directions visible on the main infotainment display"
+    ],
+    "commonIssues": [
+      "Sienna owners sometimes mistakenly believe all trims have navigation, overlooking the 'factory-installed' requirement",
+      "Difficulty locating the SD card slot, which can be discreetly placed on the infotainment unit",
+      "Ensuring the new card is fully inserted and clicks into place for proper system recognition"
+    ],
+    "faqs": [
+      {
+        "question": "Is this map update compatible with all 2018-2022 Toyota Siennas?",
+        "answer": "It is only compatible with Sienna minivans that feature a factory-installed navigation system (Entune Premium Audio). Check your dashboard for the physical map SD card slot to confirm compatibility, usually found on SE, XLE, and Limited trims."
+      },
+      {
+        "question": "Do I need special tools to remove the old SD card from my Sienna?",
+        "answer": "No tools are required. The SD card slot in the Toyota Sienna utilizes a spring-loaded mechanism. Simply push the old card in slightly, and it will pop out for easy removal. Insert the new one until it clicks."
+      },
+      {
+        "question": "Will this update my Sienna's Entune radio software as well?",
+        "answer": "No, the SD card purely contains map data, Points of Interest (POIs), and routing algorithms for the GPS. It does not alter or update the Entune audio system's core firmware or other applications."
+      },
+      {
+        "question": "Where is the SD card slot typically found in a Sienna minivan?",
+        "answer": "In 2018-2022 Toyota Sienna models with navigation, the SD card slot is commonly located on the front panel of the infotainment system, usually below or to the side of the main touchscreen display."
+      }
+    ],
+    "trimCompatibility": {
+      "compatible": ["SE", "XLE", "Limited"],
+      "notCompatible": ["L", "LE (base trims without factory nav)"]
+    }
   },
   {
     "slug": "toyota-corolla-navigation-sd-card",
     "carModel": "Toyota Corolla",
     "make": "Toyota",
     "years": "2014-2019",
-    "partNumberNote": "Navtimi confirmed compatible with Corolla factory navigation.",
+    "partNumberNote": "Navtimi confirmed compatible with Corolla factory navigation. Often uses part 86271-0E077 or similar.",
     "cardIds": ["navtimi-toyota-nav"],
-    "installGuide": "1. Turn off engine. 2. Locate SD slot below the screen. 3. Swap card. 4. Start engine.",
-    "warning": "Only for Corolla trims with factory navigation. Most Corolla trims do not include factory nav."
+    "installGuide": "1. Turn off engine and remove key. 2. Locate the SD slot below the main Entune display screen on the dashboard. 3. Gently press the existing card to eject. 4. Insert the new card firmly until it clicks. 5. Start engine — allow 2-3 minutes for the Entune Premium system to load the latest map data for your commute.",
+    "warning": "Only for Corolla trims with factory navigation (e.g., S Plus, LE Eco Premium). Most Corolla trims (L, LE, SE, XLE, XSE without specific packages) do not include factory navigation and lack an SD card slot.",
+    "seoDescription": "Upgrade the built-in GPS in your 2014-2019 Toyota Corolla. If your Corolla is equipped with factory navigation, inserting a new SD card updates your system with the latest road changes and addresses for a smoother, more informed drive.",
+    "specificFeatures": [
+      "Entune Premium Audio system integration for reliable performance",
+      "Compact car navigation optimized for city driving and daily commutes",
+      "Basic turn-by-turn guidance visible on the center display",
+      "POI database for fuel stations, restaurants, and other essential services"
+    ],
+    "commonIssues": [
+      "The vast majority of 2014-2019 Corollas did NOT come with factory navigation, leading to frequent confusion",
+      "Base trim owners (L, LE) often try to add navigation via an SD card, which is not possible without hardware",
+      "Ensuring the SD card is fully inserted and recognized by the specific Entune Premium Audio system"
+    ],
+    "faqs": [
+      {
+        "question": "Does my 2014-2019 Toyota Corolla have a navigation SD card slot?",
+        "answer": "Only specific trims with the upgraded Entune Premium Audio system have factory navigation. If your Corolla has this feature, the slot is typically located right below the touchscreen display. Most Corollas do not."
+      },
+      {
+        "question": "Why doesn't the map update work in my standard Corolla LE?",
+        "answer": "The standard Corolla LE and similar base trims lack the required GPS antenna and the internal hardware to process navigation data, meaning an SD card alone cannot generate maps. You need the factory navigation option."
+      },
+      {
+        "question": "How do I install the new map card in my compatible Corolla?",
+        "answer": "With the engine off, locate the SD card slot (often behind a cover), push to eject the old card, insert the new card until it clicks into place, and then start the car. The maps will load automatically."
+      },
+      {
+        "question": "Can I upgrade my Corolla's touchscreen to have navigation if it doesn't already?",
+        "answer": "Unfortunately, no. The navigation function requires specific internal hardware beyond just the touchscreen and the SD card slot. Adding navigation to a non-equipped Corolla would require a complete head unit replacement."
+      }
+    ],
+    "trimCompatibility": {
+      "compatible": ["S Plus (with Premium Audio)", "LE Eco Premium"],
+      "notCompatible": ["L", "LE", "SE", "XLE", "XSE (base trims without factory nav package)"]
+    }
   },
   {
     "slug": "chevrolet-navigation-sd-card",
-    "carModel": "Chevrolet",
+    "carModel": "Chevrolet Models",
     "make": "Chevrolet",
     "years": "2014-2023",
-    "partNumberNote": "Two part numbers are used across Chevy models: 85713512 and 85856394. Check the label on your existing card to determine which one you need.",
+    "partNumberNote": "Two main part numbers: 85713512 (MyLink IO5/IO6 systems) and 85856394 (newer MyLink IO8 systems). Always verify the exact number on your existing card.",
     "cardIds": ["oririx-gm-nav-85856394", "gm-nav-85713512-premium", "gm-nav-85713512-budget"],
-    "installGuide": "1. Turn off vehicle. 2. Locate SD slot in center console or glove box. 3. Swap card. 4. Start vehicle.",
-    "warning": "Verify the part number on your existing card before purchasing. Compatible with MyLink and IO6 navigation systems."
+    "installGuide": "1. Turn off vehicle and remove key. 2. Locate SD slot (typically inside the center console storage, glove box, or occasionally behind a panel on the infotainment screen). 3. Press existing card to eject. 4. Insert new card with contacts facing down until it clicks. 5. Start vehicle - the MyLink system will auto-detect and begin loading new maps in 1-2 minutes.",
+    "warning": "Verify exact part number on your existing card is crucial for Chevrolet models. Different MyLink versions (IO5, IO6, IO8) have specific card requirements. Ensure your vehicle has the factory navigation option.",
+    "seoDescription": "Chevrolet navigation SD card updates for 2014-2023 models. Compatible with MyLink infotainment systems across Silverado, Equinox, Malibu, and more. Get the latest map data for accurate routes and points of interest.",
+    "specificFeatures": [
+      "Works across multiple Chevrolet platforms (trucks, SUVs, sedans) with MyLink navigation",
+      "Compatible with OnStar connected navigation services for enhanced features",
+      "Integrates with Apple CarPlay and Android Auto displays for unified infotainment",
+      "Supports voice-activated navigation through MyLink for hands-free control"
+    ],
+    "commonIssues": [
+      "Significant part number confusion between older MyLink IO5/IO6 (85713512) and newer IO8 systems (85856394)",
+      "Some 2014-2016 models may require a MyLink software update for full compatibility with the latest map cards",
+      "Silverado, Tahoe, and larger trucks may have slightly longer map initialization times due to extensive geographical data"
+    ],
+    "faqs": [
+      {
+        "question": "How do I know if my Chevy uses part 85713512 or 85856394?",
+        "answer": "The most accurate way to determine your required part number is to eject your current Chevrolet navigation SD card and read the label. GM used both variants interchangeably across various models and years. You can also check your RPO codes for IO5, IO6, or IO8."
+      },
+      {
+        "question": "Will this work in my Silverado work truck?",
+        "answer": "Only if your Silverado has factory MyLink infotainment with embedded navigation. Many work truck configurations come with basic radio systems that do not have navigation capability or an SD card slot."
+      },
+      {
+        "question": "Can I use the same card in different Chevrolet vehicles?",
+        "answer": "Yes, as long as both vehicles use the same part number system (e.g., both use 85713512). A card with part 85713512 works in any Chevrolet with IO5/IO6 MyLink, regardless of whether it's a Malibu, Equinox, or Silverado."
+      },
+      {
+        "question": "Does this interfere with OnStar navigation services?",
+        "answer": "No! The SD card provides offline mapping that works alongside OnStar services. You'll have robust navigation even in areas with poor cellular coverage, and OnStar can still provide real-time traffic and live turn-by-turn directions when available."
+      }
+    ],
+    "applicableModels": [
+      "Silverado (1500, 2500HD, 3500HD) with MyLink Navigation (2014-2023)",
+      "Equinox with Premium Audio/MyLink Navigation (2014-2023)",
+      "Malibu with MyLink Navigation (2014-2023)",
+      "Traverse with MyLink Navigation (2014-2023)",
+      "Tahoe/Suburban with MyLink Navigation (2015-2023)",
+      "Colorado with MyLink Navigation (2015-2023)",
+      "Camaro with MyLink Navigation (2016-2023)"
+    ]
   },
   {
     "slug": "gmc-navigation-sd-card",
-    "carModel": "GMC",
+    "carModel": "GMC Models",
     "make": "GMC",
     "years": "2014-2023",
-    "partNumberNote": "Two part numbers are used across GMC models: 85713512 and 85856394. Check the label on your existing card.",
+    "partNumberNote": "Two main part numbers are used across GMC models: 85713512 (IntelliLink IO5/IO6) and 85856394 (newer IntelliLink IO8 systems). Check the label on your existing card.",
     "cardIds": ["oririx-gm-nav-85856394", "gm-nav-85713512-premium", "gm-nav-85713512-budget"],
-    "installGuide": "1. Turn off vehicle. 2. Locate SD slot in center console. 3. Swap card. 4. Start vehicle.",
-    "warning": "Verify the part number on your existing card. Compatible with IntelliLink navigation systems."
+    "installGuide": "1. Turn off vehicle and remove key. 2. Locate SD slot, typically found inside the center console armrest storage compartment. 3. Press existing card to eject. 4. Insert new card firmly with contacts facing down until it clicks. 5. Start vehicle - the IntelliLink system will auto-detect and begin loading new maps in 1-2 minutes.",
+    "warning": "Verify the part number on your existing card is critical for GMC models. Compatible with IntelliLink navigation systems (IO5, IO6, IO8) only. Not for base radio systems.",
+    "seoDescription": "Maintain accurate routing in your 2014-2023 GMC Sierra, Yukon, or Acadia. Our GMC navigation SD card updates deliver seamless integration with your IntelliLink system, offering fresh POIs and road alignments for a confident journey.",
+    "specificFeatures": [
+      "IntelliLink system integration for a user-friendly experience across GMC trucks and SUVs",
+      "Truck and SUV optimized routing, considering vehicle size and potential towing scenarios",
+      "Comprehensive POI database tailored for travelers, including fuel, food, and lodging",
+      "Supports voice-activated navigation for safe, hands-free operation"
+    ],
+    "commonIssues": [
+      "Similar to Chevy, confusion between MyLink/IntelliLink part numbers (85713512 vs 85856394)",
+      "Owners sometimes struggle to identify the correct SD slot among other media ports in the center console",
+      "Ensuring that the vehicle actually has the factory IntelliLink navigation system, not just a touchscreen radio"
+    ],
+    "faqs": [
+      {
+        "question": "Which navigation system does this GMC SD card update?",
+        "answer": "This map update is designed specifically for 2014-2023 GMC vehicles equipped with the 8-inch IntelliLink (IO5, IO6, or IO8) factory embedded navigation system. Always verify your specific system via the part number."
+      },
+      {
+        "question": "My GMC center console has multiple slots; which one do I use?",
+        "answer": "If your GMC's center console features a media hub with various ports, insert the card strictly into the slot designated for 'SD Card' or with a small SD card icon. Be careful not to force it into USB ports located directly adjacent to it."
+      },
+      {
+        "question": "Do I need to go to a GMC dealer to activate the new map card?",
+        "answer": "No dealer visit is necessary. The navigation cards are completely plug-and-play. Just insert the card into your GMC's SD slot, and the IntelliLink system will authenticate and begin loading the new map data automatically."
+      },
+      {
+        "question": "Will this update enhance the navigation in my GMC Acadia or Terrain?",
+        "answer": "Yes, for 2014-2023 GMC Acadia and Terrain models equipped with the factory IntelliLink navigation system, this SD card will provide the latest road network and Points of Interest updates."
+      }
+    ],
+    "applicableModels": [
+      "Sierra (1500, 2500HD, 3500HD) with IntelliLink Navigation (2014-2023)",
+      "Yukon/Yukon XL with IntelliLink Navigation (2015-2023)",
+      "Acadia with IntelliLink Navigation (2014-2023)",
+      "Terrain with IntelliLink Navigation (2014-2023)",
+      "Canyon with IntelliLink Navigation (2015-2023)"
+    ]
   },
   {
     "slug": "cadillac-navigation-sd-card",
-    "carModel": "Cadillac",
+    "carModel": "Cadillac Models",
     "make": "Cadillac",
     "years": "2014-2023",
-    "partNumberNote": "Two part numbers are used across Cadillac models: 85713512 and 85856394. Check the label on your existing card.",
+    "partNumberNote": "Two main part numbers are used across Cadillac models: 85713512 (CUE IO5/IO6) and 85856394 (newer CUE IO8 systems). Check the label on your existing card.",
     "cardIds": ["oririx-gm-nav-85856394", "gm-nav-85713512-premium", "gm-nav-85713512-budget"],
-    "installGuide": "1. Turn off vehicle. 2. Locate SD slot in center console storage bin. 3. Swap card. 4. Start vehicle.",
-    "warning": "Verify the part number on your existing card. Compatible with Cadillac CUE navigation systems."
+    "installGuide": "1. Turn off vehicle and remove key. 2. Locate SD slot, typically hidden inside the center console storage bin or below the CUE system screen. 3. Press existing card to eject. 4. Insert new card firmly with contacts facing down until it clicks. 5. Start vehicle - the CUE system will auto-detect and begin loading new maps in 1-2 minutes.",
+    "warning": "Verify the part number on your existing card is crucial for Cadillac models. Compatible with Cadillac CUE navigation systems (IO5, IO6, IO8) only. Not for base radio systems.",
+    "seoDescription": "Ensure the CUE infotainment system in your 2014-2023 Cadillac operates flawlessly. Update your Escalade, XT5, or CTS navigation with an authentic SD card replacement featuring the newest maps for a luxurious and informed drive.",
+    "specificFeatures": [
+      "Seamless integration with the Cadillac CUE (Cadillac User Experience) infotainment system",
+      "Luxury vehicle POI database for high-end dining, shopping, and accommodations",
+      "Turn-by-turn directions displayed in the driver's instrument cluster on equipped models",
+      "Voice-activated navigation for intuitive, hands-free destination input"
+    ],
+    "commonIssues": [
+      "Cadillac owners often face confusion regarding the two primary GM navigation part numbers (85713512 vs 85856394)",
+      "The SD card slot in Cadillacs can be well-hidden, requiring careful searching within the center console or behind panels",
+      "Ensuring the vehicle has the factory CUE navigation system, not just a basic touchscreen display"
+    ],
+    "faqs": [
+      {
+        "question": "Does this navigation update work for the Cadillac CUE system?",
+        "answer": "Yes, this update is fully compatible with 2014-2023 Cadillac models equipped with the CUE (Cadillac User Experience) infotainment system featuring embedded factory navigation (IO5, IO6, or IO8 versions)."
+      },
+      {
+        "question": "How do I locate the SD card slot in my Cadillac?",
+        "answer": "In most modern Cadillac models, the SD card slot is hidden securely inside the center console storage bin, often situated right next to the auxiliary and USB data ports, or occasionally under a flip-up panel below the CUE screen."
+      },
+      {
+        "question": "Why are there two different part numbers (85713512 and 85856394) for Cadillacs?",
+        "answer": "General Motors utilized two different navigation hardware iterations during this period. You must verify the part number on your Cadillac's original SD card (either 85713512 for IO5/IO6 or 85856394 for IO8) to ensure you purchase the correct version."
+      },
+      {
+        "question": "Will updating the maps affect my Cadillac's other CUE features?",
+        "answer": "No, updating the navigation SD card only affects the map data and routing algorithms. It will not interfere with or change other CUE functionalities like audio, climate control, or vehicle settings."
+      }
+    ],
+    "applicableModels": [
+      "Escalade/ESV with CUE Navigation (2015-2023)",
+      "XT5 with CUE Navigation (2017-2023)",
+      "XT4 with CUE Navigation (2019-2023)",
+      "XT6 with CUE Navigation (2020-2023)",
+      "CTS with CUE Navigation (2014-2019)",
+      "ATS with CUE Navigation (2014-2019)",
+      "CT6 with CUE Navigation (2016-2023)"
+    ]
   },
   {
     "slug": "buick-navigation-sd-card",
-    "carModel": "Buick",
+    "carModel": "Buick Models",
     "make": "Buick",
     "years": "2014-2023",
-    "partNumberNote": "Buick models commonly use part 85713512 or 85856394. Check the label on your existing card.",
+    "partNumberNote": "Buick models commonly use part 85713512 (IntelliLink IO5/IO6) or 85856394 (newer IntelliLink IO8 systems). Check the label on your existing card.",
     "cardIds": ["oririx-gm-nav-85856394", "gm-nav-85713512-premium"],
-    "installGuide": "1. Turn off vehicle. 2. Locate SD slot. 3. Swap card. 4. Start vehicle.",
-    "warning": "Compatible with IntelliLink navigation systems. Verify part number before purchasing."
+    "installGuide": "1. Turn off vehicle and remove key. 2. Locate SD slot, often inside the center console storage or a hidden compartment near the infotainment screen. 3. Press existing card to eject. 4. Insert new card firmly with contacts facing down until it clicks. 5. Start vehicle - the IntelliLink system will auto-detect and begin loading new maps in 1-2 minutes.",
+    "warning": "Compatible with IntelliLink navigation systems (IO5, IO6, IO8) only. Verify part number before purchasing. Base models without factory navigation cannot use these cards.",
+    "seoDescription": "Refresh the maps in your 2014-2023 Buick Enclave, Encore, or Envision. A quick SD card swap ensures your Buick's IntelliLink system avoids closed roads and finds the newest destinations effortlessly, providing a premium driving experience.",
+    "specificFeatures": [
+      "IntelliLink system integration for seamless navigation experience",
+      "Quiet cabin routing to complement Buick's tranquil interior design",
+      "Updated POIs for shopping centers, upscale dining, and local attractions",
+      "Compatible with real-time traffic data (via subscription) for efficient travel"
+    ],
+    "commonIssues": [
+      "Buick owners need to verify which of the two main GM part numbers (85713512 or 85856394) their vehicle uses",
+      "Confusion between touchscreen-equipped radios and actual factory-installed IntelliLink navigation systems",
+      "Locating the often discreetly placed SD card slot within the center console or dashboard"
+    ],
+    "faqs": [
+      {
+        "question": "Will this update the maps in my Buick Enclave or Encore?",
+        "answer": "Yes, as long as your 2014-2023 Buick Enclave, Encore, or Envision is equipped with the factory IntelliLink navigation system (IO5, IO6, or IO8). Base models without built-in GPS capabilities are not supported and lack an SD card slot."
+      },
+      {
+        "question": "How do I check my Buick's current navigation SD card part number?",
+        "answer": "Turn off your vehicle, locate the SD card slot (usually in the center console), gently push the card to eject it, and read the part number (typically 85713512 or 85856394) printed on the sticker. This is crucial for compatibility."
+      },
+      {
+        "question": "What is included in the Buick navigation map update?",
+        "answer": "The update includes new residential subdivisions, modified highway interchanges, updated speed limits, and thousands of new points of interest (POIs) customized for your Buick's IntelliLink display across North America."
+      },
+      {
+        "question": "Can I install the new map card while my Buick is running?",
+        "answer": "No, always ensure your Buick's engine is completely off and the key removed before attempting to swap the navigation SD card. This prevents potential system errors or data corruption during installation."
+      }
+    ],
+    "applicableModels": [
+      "Enclave with IntelliLink Navigation (2014-2023)",
+      "Encore with IntelliLink Navigation (2014-2023)",
+      "Envision with IntelliLink Navigation (2016-2023)",
+      "LaCrosse with IntelliLink Navigation (2014-2019)",
+      "Regal with IntelliLink Navigation (2014-2017)"
+    ]
   }
 ]
