@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{{CAR_MODEL}} Navigation SD Card Update | {{YEARS}} - Latest Maps</title>
-    <meta name="description" content="Update your {{CAR_MODEL}} ({{YEARS}}) navigation system with 2025 maps. Multiple product options. Compatible with OEM factory navigation. {{SEO_DESCRIPTION}}">
+    <meta name="description" content="{{SEO_DESCRIPTION}}">
     <!-- Reuse existing CSS -->
     <link rel="stylesheet" href="/assets/css/modern.css">
     <link rel="stylesheet" href="/assets/css/tailwind.css">
@@ -30,7 +30,7 @@
          <p class="text-gray-600 mb-2">Model Years: {{YEARS}}</p>
          <p class="text-sm text-gray-500 mb-4">{{PART_NOTE}}</p>
         
-        <!-- NEW: Inject the unique SEO description here to boost long-tail keyword relevance -->
+        <!-- SEO Description -->
         <p class="text-md text-gray-800 leading-relaxed mb-8">{{SEO_DESCRIPTION}}</p>
 
         <!-- Verification Box -->
@@ -75,84 +75,49 @@
             </div>
         </div>
 
-        <!-- NEW: Model-Specific Features -->
-        {{#if SPECIFIC_FEATURES}}
+        <!-- Model-Specific Features -->
         <div class="bg-white shadow rounded-lg p-6 border border-gray-100 mb-8">
             <h3 class="text-xl font-bold mb-4 text-gray-900">{{CAR_MODEL}} Navigation Features</h3>
             <div class="grid md:grid-cols-2 gap-4">
-                {{#each SPECIFIC_FEATURES}}
-                <div class="flex items-start">
-                    <span class="text-green-500 mr-2">✓</span>
-                    <span class="text-gray-700">{{this}}</span>
-                </div>
-                {{/each}}
+                {{SPECIFIC_FEATURES_HTML}}
             </div>
         </div>
-        {{/if}}
 
-        <!-- NEW: Common Issues -->
-        {{#if COMMON_ISSUES}}
+        <!-- Common Issues -->
         <div class="bg-white shadow rounded-lg p-6 border border-gray-100 mb-8">
             <h3 class="text-xl font-bold mb-4 text-gray-900">Common Issues & Solutions for {{CAR_MODEL}} Navigation</h3>
             <ul class="space-y-3 list-disc list-inside text-gray-700">
-                {{#each COMMON_ISSUES}}
-                <li>{{this}}</li>
-                {{/each}}
+                {{COMMON_ISSUES_HTML}}
             </ul>
         </div>
-        {{/if}}
 
         <!-- Car-Specific FAQ Section -->
         <div class="bg-white shadow rounded-lg p-6 border border-gray-100 mb-8">
             <h3 class="text-xl font-bold mb-4 text-gray-900">Frequently Asked Questions about {{CAR_MODEL}} Navigation</h3>
             
             <div class="space-y-6">
-                {{#each FAQS}}
-                <div class="border-b border-gray-200 pb-4 last:border-b-0">
-                    <h4 class="font-bold text-gray-800 mb-2">{{this.question}}</h4>
-                    <p class="text-gray-700">{{this.answer}}</p>
-                </div>
-                {{/each}}
+                {{FAQS_HTML}}
             </div>
         </div>
 
-        <!-- NEW: Trim Compatibility / Applicable Models -->
-        {{#if TRIM_COMPATIBILITY}}
+        <!-- Trim Compatibility -->
         <div class="bg-white shadow rounded-lg p-6 border border-gray-100 mb-8">
             <h3 class="text-xl font-bold mb-4 text-gray-900">{{CAR_MODEL}} Trim Compatibility</h3>
             <div class="grid md:grid-cols-2 gap-6">
                 <div>
                     <h4 class="font-semibold text-green-800 mb-2">✅ Compatible Trims:</h4>
                     <ul class="space-y-1">
-                        {{#each TRIM_COMPATIBILITY.compatible}}
-                        <li class="text-gray-700">• {{this}}</li>
-                        {{/each}}
+                        {{COMPATIBLE_TRIMS_HTML}}
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold text-red-800 mb-2">❌ Not Compatible:</h4>
                     <ul class="space-y-1">
-                        {{#each TRIM_COMPATIBILITY.notCompatible}}
-                        <li class="text-gray-700">• {{this}}</li>
-                        {{/each}}
+                        {{NOT_COMPATIBLE_TRIMS_HTML}}
                     </ul>
                 </div>
             </div>
         </div>
-        {{else if APPLICABLE_MODELS}}
-        <div class="bg-white shadow rounded-lg p-6 border border-gray-100 mb-8">
-            <h3 class="text-xl font-bold mb-4 text-gray-900">Applicable {{MAKE}} Models</h3>
-            <p class="text-gray-600 mb-4">This navigation card is compatible with the following {{MAKE}} models, provided they have factory-installed navigation:</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {{#each APPLICABLE_MODELS}}
-                <div class="flex items-start">
-                    <span class="text-blue-500 mr-2">▪</span>
-                    <span class="text-gray-700">{{this}}</span>
-                </div>
-                {{/each}}
-            </div>
-        </div>
-        {{/if}}
 
         <!-- Related {{MAKE}} Vehicles -->
         <div class="bg-white shadow rounded-lg p-6 border border-gray-100">
