@@ -2,217 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{CAR_MODEL}} Navigation SD Card Update | {{YEARS}} - Latest Maps</title>
-    <meta name="description" content="{{SEO_DESCRIPTION}}">
+    <title>{{CAR_MODEL}} Navigation SD Card Update | {{YEARS}}</title>
     <link rel="stylesheet" href="/assets/css/modern.css">
     <link rel="stylesheet" href="/assets/css/tailwind.css">
-    <style>
-        .badge-rec { background: #dcfce7; color: #166534; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; font-weight: bold; }
-        .badge-pre { background: #fef3c7; color: #92400e; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; font-weight: bold; }
-        .badge-bud { background: #e0e7ff; color: #3730a3; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; font-weight: bold; }
-        .faq-item { border-bottom: 1px solid #e5e7eb; padding: 1rem 0; }
-        .faq-question { font-weight: 600; margin-bottom: 0.5rem; }
-        .faq-answer { color: #4b5563; }
-    </style>
+    <style>.badge-rec {color:green} .badge-bud {color:orange} .badge-pre {color:purple}</style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-    <!-- Global Header -->
+<body class="bg-gray-50 text-gray-800">
     {{HEADER}}
-
-    <div class="flex max-w-7xl mx-auto px-4">
+    <div class="flex max-w-7xl mx-auto px-4 mt-8">
         <main class="flex-1">
-            <!-- Breadcrumb Navigation -->
-            <div class="mb-4 text-sm text-gray-500">
-                <a href="/" class="text-blue-600 hover:underline">Home</a> /
-                <a href="/cars/" class="text-blue-600 hover:underline">Car Navigation</a> /
-                <span>{{CAR_MODEL}}</span>
+            <h1 class="text-4xl font-bold">{{CAR_MODEL}} Navigation Update</h1>
+            <p class="text-gray-500">{{YEARS}} | {{PART_NOTE}}</p>
+            
+            <div class="my-6 p-4 bg-white rounded border">{{SEO_DESCRIPTION}}</div>
+
+            <table class="w-full mt-8 bg-white shadow rounded overflow-hidden">
+                <thead class="bg-gray-100">
+                    <tr><th class="p-3 text-left">Product</th><th class="p-3 text-left">Year</th><th class="p-3 text-left">Region</th><th class="p-3 text-left">Price</th><th class="p-3 text-left">Action</th></tr>
+                </thead>
+                <tbody>{{PRODUCTS_TABLE}}</tbody>
+            </table>
+
+            <div class="mt-8 p-6 bg-blue-50 rounded">
+                <h3 class="font-bold">Installation Guide</h3>
+                <p>{{INSTALL_GUIDE}}</p>
+                <p class="mt-4 text-red-600"><strong>Note:</strong> {{WARNING}}</p>
             </div>
 
-            <h1 class="text-4xl font-bold mb-2">{{CAR_MODEL}} Navigation Update</h1>
-            <p class="text-gray-600 mb-2">Model Years: {{YEARS}}</p>
-            <p class="text-sm text-gray-500 mb-4">{{PART_NOTE}}</p>
+            <div class="mt-8">{{SPEC_FEATURES_HTML}}</div>
+            <div class="mt-4">{{COMMON_ISSUES_HTML}}</div>
+            <div class="mt-4">{{FAQS_HTML}}</div>
 
-            <!-- SEO Description -->
-            <div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100">
-                <p class="text-md text-gray-800 leading-relaxed">{{SEO_DESCRIPTION}}</p>
-            </div>
-
-            <!-- Verification Box -->
-            <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
-                <h3 class="font-bold text-blue-800 text-lg mb-2">✅ Navigation SD Cards for {{MAKE}}</h3>
-                <p class="text-blue-700">We've compiled the best options for your {{CAR_MODEL}}. Choose from multiple brands and price points below.</p>
-            </div>
-
-            <!-- Product Comparison Table -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-8 border border-gray-100">
-                <div class="p-6 border-b border-gray-200">
-                    <h2 class="text-2xl font-bold text-gray-900">Available Navigation Cards</h2>
-                    <p class="text-gray-600 mt-2">Compare top-rated options. The first option is our top recommendation.</p>
-                </div>
-
-                <table class="w-full border-collapse">
-                    <thead class="bg-gray-100 border-b-2 border-gray-300">
-                        <tr>
-                            <th class="p-3 text-left font-bold">Product</th>
-                            <th class="p-3 text-left font-bold">Map Year</th>
-                            <th class="p-3 text-left font-bold">Coverage</th>
-                            <th class="p-3 text-left font-bold">Price</th>
-                            <th class="p-3 text-left font-bold">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="p-3 border-b">
-                                <div class="flex items-center">
-                                    <span class="badge-rec mr-2">Recommended</span>
-                                    <span>Navtimi 2025 {{CAR_MODEL}} Navigation SD Card</span>
-                                </div>
-                            </td>
-                            <td class="p-3 border-b">2025</td>
-                            <td class="p-3 border-b">USA, Canada, Mexico</td>
-                            <td class="p-3 border-b">$$</td>
-                            <td class="p-3 border-b"><a href="#" class="text-blue-600 hover:underline">Check Price</a></td>
-                        </tr>
-                        <tr>
-                            <td class="p-3 border-b">
-                                <div class="flex items-center">
-                                    <span class="badge-bud mr-2">Budget</span>
-                                    <span>2025 {{CAR_MODEL}} Navigation SD Card (Part {{PART_NOTE | replace 'Common part number: ' '' | replace '. Verify on your existing card label.' ''}})</span>
-                                </div>
-                            </td>
-                            <td class="p-3 border-b">2025</td>
-                            <td class="p-3 border-b">USA, Canada, Mexico</td>
-                            <td class="p-3 border-b">$</td>
-                            <td class="p-3 border-b"><a href="#" class="text-blue-600 hover:underline">Check Price</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- Installation Guide -->
-            <div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100">
-                <h3 class="text-xl font-bold mb-4 text-gray-900">Installation Guide for Your {{CAR_MODEL}}</h3>
-                <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
-                    <p class="text-gray-700">{{INSTALL_GUIDE}}</p>
-                </div>
-
-                <div class="bg-orange-50 border-l-4 border-orange-400 p-4">
-                    <h4 class="font-bold text-orange-800 mb-2">⚠️ Important: {{CAR_MODEL}} Compatibility</h4>
-                    <p class="text-orange-700">{{WARNING}}</p>
-                </div>
-            </div>
-
-            <!-- Model-Specific Features -->
-            {{#if SPECIFIC_FEATURES}}
-            <div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100">
-                <h3 class="text-xl font-bold mb-4 text-gray-900">{{CAR_MODEL}} Navigation Features</h3>
-                <div class="grid md:grid-cols-2 gap-4">
-                    {{#each SPECIFIC_FEATURES}}
-                    <div class="flex items-start">
-                        <span class="text-green-500 mr-2">✓</span>
-                        <span class="text-gray-700">{{this}}</span>
-                    </div>
-                    {{/each}}
-                </div>
-            </div>
-            {{/if}}
-
-            <!-- Common Issues -->
-            {{#if COMMON_ISSUES}}
-            <div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100">
-                <h3 class="text-xl font-bold mb-4 text-gray-900">Common Issues & Solutions for {{CAR_MODEL}} Navigation</h3>
-                <ul class="space-y-3 list-disc list-inside text-gray-700 pl-6">
-                    {{#each COMMON_ISSUES}}
-                    <li>{{this}}</li>
-                    {{/each}}
-                </ul>
-            </div>
-            {{/if}}
-
-            <!-- FAQ Section -->
-            <div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100">
-                <h3 class="text-xl font-bold mb-4 text-gray-900">Frequently Asked Questions about {{CAR_MODEL}} Navigation</h3>
-
-                <div class="space-y-4">
-                    {{#each FAQS}}
-                    <div class="faq-item">
-                        <div class="faq-question">{{this.question}}</div>
-                        <div class="faq-answer">{{this.answer}}</div>
-                    </div>
-                    {{/each}}
-                </div>
-            </div>
-
-            <!-- Trim Compatibility -->
-            {{#if TRIM_COMPATIBILITY}}
-            <div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100">
-                <h3 class="text-xl font-bold mb-4 text-gray-900">{{CAR_MODEL}} Trim Compatibility</h3>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <h4 class="font-semibold text-green-800 mb-2">✅ Compatible Trims:</h4>
-                        <ul class="space-y-1">
-                            {{#each TRIM_COMPATIBILITY.compatible}}
-                            <li class="text-gray-700">• {{this}}</li>
-                            {{/each}}
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold text-red-800 mb-2">❌ Not Compatible:</h4>
-                        <ul class="space-y-1">
-                            {{#each TRIM_COMPATIBILITY.notCompatible}}
-                            <li class="text-gray-700">• {{this}}</li>
-                            {{/each}}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            {{else if APPLICABLE_MODELS}}
-            <div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100">
-                <h3 class="text-xl font-bold mb-4 text-gray-900">Applicable {{MAKE}} Models</h3>
-                <p class="text-gray-600 mb-4">This navigation card is compatible with the following {{MAKE}} models, provided they have factory-installed navigation:</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {{#each APPLICABLE_MODELS}}
-                    <div class="flex items-start">
-                        <span class="text-blue-500 mr-2">▪</span>
-                        <span class="text-gray-700">{{this}}</span>
-                    </div>
-                    {{/each}}
-                </div>
-            </div>
-            {{/if}}
-
-            <!-- Related Vehicles -->
-            <div class="bg-white shadow rounded-lg p-6 border border-gray-100">
-                <h3 class="text-xl font-bold mb-4 text-gray-900">Other {{MAKE}} Vehicles</h3>
-                <p class="text-gray-600 mb-4">Navigation SD cards for other {{MAKE}} vehicles:</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <a href="/toyota-prius-navigation-sd-card" class="flex items-center text-blue-600 hover:underline">
-                        <span class="mr-2">🚗</span> Toyota Prius
-                    </a>
-                    <a href="/toyota-camry-navigation-sd-card" class="flex items-center text-blue-600 hover:underline">
-                        <span class="mr-2">🚗</span> Toyota Camry
-                    </a>
-                    <a href="/toyota-rav4-navigation-sd-card" class="flex items-center text-blue-600 hover:underline">
-                        <span class="mr-2">🚙</span> Toyota RAV4
-                    </a>
-                    <a href="/toyota-highlander-navigation-sd-card" class="flex items-center text-blue-600 hover:underline">
-                        <span class="mr-2">🚗</span> Toyota Highlander
-                    </a>
-                    <a href="/toyota-tacoma-navigation-sd-card" class="flex items-center text-blue-600 hover:underline">
-                        <span class="mr-2">🚛</span> Toyota Tacoma
-                    </a>
-                    <a href="/toyota-tundra-navigation-sd-card" class="flex items-center text-blue-600 hover:underline">
-                        <span class="mr-2">🚛</span> Toyota Tundra
-                    </a>
-                </div>
+            <div class="mt-12">
+                <h3 class="font-bold mb-4">Other {{MAKE}} Models</h3>
+                <div class="grid grid-cols-2 gap-4">{{RELATED_LINKS}}</div>
             </div>
         </main>
-
-        <!-- Sidebar -->
         {{SIDEBAR}}
     </div>
-
-    <!-- Global Footer -->
     {{FOOTER}}
 </body>
 </html>
