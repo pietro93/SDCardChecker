@@ -14,7 +14,7 @@ function generateCarPages(distPath) {
 
   const vehiclesPath = path.join(process.cwd(), 'data/cars-navigation.json');
   const sdcardsPath  = path.join(process.cwd(), 'data/sdcards.json');
-  const templatePath = path.join(process.cwd(), 'src/templates/cars-index.html');
+  const templatePath = path.join(process.cwd(), 'src/templates/car-nav.html');
 
   if (!fs.existsSync(vehiclesPath)) return;
 
