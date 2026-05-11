@@ -14,7 +14,7 @@ function generateCarPages(distPath) {
 
   const vehiclesPath = path.join(process.cwd(), 'data/cars-navigation.json');
   const sdcardsPath  = path.join(process.cwd(), 'data/sdcards.json');
-  const templatePath = path.join(process.cwd(), 'src/templates/car-nav.html');
+  const templatePath = path.join(process.cwd(), 'src/templates/cars-index.html');
 
   if (!fs.existsSync(vehiclesPath)) return;
 
@@ -59,8 +59,18 @@ function generateCarPages(distPath) {
      const issuesHtml = (vehicle.commonIssues || []).length > 0 ? 
         `<div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100"><h3 class="text-xl font-bold mb-4 text-gray-900">Common Issues</h3><ul class="space-y-2 list-disc list-inside text-gray-700">${vehicle.commonIssues.map(i => `<li>${i}</li>`).join('')}</ul></div>` : '';
 
-     const faqsHtml = (vehicle.faqs || []).length > 0 ? 
-        `<div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100"><h3 class="text-xl font-bold mb-4 text-gray-900">FAQ</h3><div class="space-y-4">${vehicle.faqs.map(f => `<div><p class="font-bold">${f.question}</p><p class="text-gray-600">${f.answer}</p></div>`).join('')}</div></div>` : '';
+     const faqsHtml = (vehicle.faqs || []).length > 0 ?
+        `<div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100"><h3 class="text-xl font-bold mb-4 text-gray-900">FAQ</h3><div class="space-y-4">${vehicle.faqs.map(f => `<div class="faq-item"><p class="faq-question">${f.question} <span>+</span></p><p class="faq-answer">${f.answer}</p></div>`).join('')}</div></div>` : '';
+
+     const tc = vehicle.trimCompatibility;
+     const compatHtml = tc ?
+        `<div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100">
+          <h3 class="text-xl font-bold mb-4 text-gray-900">${vehicle.carModel} Trim Compatibility</h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            ${tc.compatible && tc.compatible.length ? `<div><h4 class="font-semibold text-green-700 mb-2">✅ Compatible Trims</h4><ul class="space-y-1">${tc.compatible.map(t => `<li class="text-gray-700">${t}</li>`).join('')}</ul></div>` : ''}
+            ${tc.notCompatible && tc.notCompatible.length ? `<div><h4 class="font-semibold text-red-700 mb-2">❌ Not Compatible</h4><ul class="space-y-1">${tc.notCompatible.map(t => `<li class="text-gray-700">${t}</li>`).join('')}</ul></div>` : ''}
+          </div>
+        </div>` : '';
 
      const relatedVehiclesHtml = vehicles.filter(v => v.make === vehicle.make && v.slug !== vehicle.slug).map(rel => 
        `<a href="/cars/${rel.slug}/" class="block p-3 border border-gray-200 rounded hover:bg-blue-50"><strong>${rel.carModel}</strong><p class="text-sm text-gray-500">${rel.years}</p></a>`
@@ -79,9 +89,10 @@ function generateCarPages(distPath) {
        .replace(/{{PRODUCTS_TABLE}}/g, productRows)
        .replace(/{{INSTALL_GUIDE}}/g, vehicle.installGuide)
        .replace(/{{WARNING}}/g, vehicle.warning)
-       .replace(/{{SPEC_FEATURES_HTML}}/g, featuresHtml)
+       .replace(/{{SPECIFIC_FEATURES_HTML}}/g, featuresHtml)
        .replace(/{{COMMON_ISSUES_HTML}}/g, issuesHtml)
        .replace(/{{FAQS_HTML}}/g, faqsHtml)
+       .replace(/{{COMPATIBILITY_HTML}}/g, compatHtml)
        .replace(/{{RELATED_LINKS}}/g, relatedVehiclesHtml);
 
     const outDir = path.join(distPath, 'cars', vehicle.slug);
