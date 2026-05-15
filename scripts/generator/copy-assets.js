@@ -7,6 +7,7 @@ const fs = require("fs");
 const { copyDir, ensureDir } = require("./helpers");
 
 const srcPath = path.join(__dirname, "../../src");
+const publicPath = path.join(__dirname, "../../public");
 const distPath = path.join(__dirname, "../../dist");
 
 async function copyAssets() {
@@ -65,6 +66,12 @@ async function copyAssets() {
    if (fs.existsSync(imgPath)) {
      copyDir(imgPath, path.join(distPath, "img"));
      console.log(`  ✓ Copied img folder`);
+   }
+
+   // Copy root-level public files such as ads.txt into the deploy output.
+   if (fs.existsSync(publicPath)) {
+     copyDir(publicPath, distPath);
+     console.log(`  Copied public files`);
    }
    }
 
