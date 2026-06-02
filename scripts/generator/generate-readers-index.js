@@ -79,13 +79,13 @@ function generateReaderSchemaList(readers) {
         .map((reader, index) => {
             const imageUrl = getReaderImageFallback(reader, path.join(__dirname, "../../img/readers"));
             const fullImageUrl = imageUrl.startsWith('http') ? imageUrl : `https://sdcardchecker.com${imageUrl}`;
-            return `{
-        "@type": "ListItem",
-        "position": ${index + 1},
-        "name": "${reader.name}",
-        "url": "https://sdcardchecker.com/readers/${reader.id}/",
-        "image": "${fullImageUrl}"
-    }`;
+            return JSON.stringify({
+                "@type": "ListItem",
+                position: index + 1,
+                name: reader.name,
+                url: `https://sdcardchecker.com/readers/${reader.id}/`,
+                image: fullImageUrl,
+            });
         })
         .join(",\n        ");
 }

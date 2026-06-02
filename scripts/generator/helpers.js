@@ -4,6 +4,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const { injectSchema } = require("./schema");
 
 /**
  * Ensure directory exists
@@ -62,6 +63,7 @@ function processIncludes(content, templateDir) {
  */
 function writeFile(filePath, content) {
   ensureDir(path.dirname(filePath));
+  const output = injectSchema(content, filePath);
   
   // Try to remove file first if it exists and we're having permission issues
   if (fs.existsSync(filePath)) {
@@ -76,7 +78,7 @@ function writeFile(filePath, content) {
   }
   
   try {
-    fs.writeFileSync(filePath, content, "utf8");
+    fs.writeFileSync(filePath, output, "utf8");
   } catch (err) {
     // If still failing, log but don't throw to allow build to continue
     if (err.code === 'EACCES' || err.code === 'EPERM') {

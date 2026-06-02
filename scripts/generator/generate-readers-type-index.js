@@ -206,13 +206,13 @@ function getPriceColor(priceTier) {
 function generateReaderSchemaList(readers) {
     return readers
         .map((reader, index) => {
-            return `{
-        "@type": "ListItem",
-        "position": ${index + 1},
-        "name": "${reader.name}",
-        "url": "https://sdcardchecker.com/readers/${reader.id}/",
-        "image": "https://sdcardchecker.com/img/readers/sd-card-reader-placeholder.webp"
-    }`;
+            return JSON.stringify({
+                "@type": "ListItem",
+                position: index + 1,
+                name: reader.name,
+                url: `https://sdcardchecker.com/readers/${reader.id}/`,
+                image: "https://sdcardchecker.com/img/readers/sd-card-reader-placeholder.webp",
+            });
         })
         .join(",\n        ");
 }

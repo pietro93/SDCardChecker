@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { generateHeader, generateFooter, generateSidebar } = require('../../src/templates/components.js');
+const { writeFile } = require('./helpers');
 
 const slugify = text => text.toString().toLowerCase()
   .replace(/\s+/g, '-')
@@ -96,8 +97,7 @@ function generateCarPages(distPath) {
        .replace(/{{RELATED_LINKS}}/g, relatedVehiclesHtml);
 
     const outDir = path.join(distPath, 'cars', vehicle.slug);
-    if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
-    fs.writeFileSync(path.join(outDir, 'index.html'), html);
+    writeFile(path.join(outDir, 'index.html'), html);
   });
 }
 module.exports = { generateCarPages };

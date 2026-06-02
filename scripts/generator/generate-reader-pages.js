@@ -191,6 +191,30 @@ function generateDeviceRecommendationsSection(reader) {
     `;
 }
 
+function generateReaderProductSchema(reader, baseUrl) {
+    const readerUrl = `${baseUrl}/readers/${reader.id}/`;
+
+    return JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Product",
+        name: reader.name,
+        description: generateReaderMetaDescription(reader),
+        brand: {
+            "@type": "Brand",
+            name: reader.brand,
+        },
+        image: `${baseUrl}/img/og-reader.webp`,
+        url: readerUrl,
+        offers: {
+            "@type": "AggregateOffer",
+            priceCurrency: "USD",
+            price: reader.priceEstimate ? reader.priceEstimate.toString() : undefined,
+            url: reader.amazonSearchUrl,
+            availability: "https://schema.org/InStock",
+        },
+    });
+}
+
 /**
  * Format device ID to readable name
  */
@@ -253,6 +277,7 @@ function buildReaderVariables(reader, baseUrl, allReaders) {
         // FAQ and schema
         FAQ_HTML: generateFAQHTML(reader.faq),
         FAQ_SCHEMA: generateFAQSchema(reader.faq || []),
+        READER_PRODUCT_SCHEMA: generateReaderProductSchema(reader, baseUrl),
         BREADCRUMB_SCHEMA: generateBreadcrumbSchema([
             { name: "Home", url: "/" },
             { name: "SD Card Readers", url: "/readers/" },
