@@ -214,7 +214,7 @@ function generateFooter() {
 </div>
 
 <div class="border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
-  <p>&copy; 2025 SD Card Checker. All rights reserved.</p>
+  <p>&copy; 2026 SD Card Checker. All rights reserved.</p>
 </div>
 </footer>`;
 }
