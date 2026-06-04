@@ -112,10 +112,13 @@
     "name": "DJI Osmo Pocket 3",
     "category": "action-cameras",
     "slug": "dji-osmo-pocket-3",
+    "metaDescription": "DJI公式仕様では、Osmo Pocket 3にはU3/V30規格のUHS-I microSDカード（最大512GB）が必要です。DJI公式スペックを満たす動作確認済みのおすすめカードをご紹介します。",
     "searchTerms": [
       "dji pocket 3 sdカード",
       "オズモポケット3",
-      "osmo pocket 3 microsd"
+      "osmo pocket 3 microsd",
+      "dji osmo pocket 3 推奨 microsd",
+      "osmo pocket 3 v30 u3 公式"
     ],
     "sdCard": {
       "type": "microSD UHS-I/UHS-II",
@@ -127,7 +130,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "DJI Osmo Pocket 3は高品質な4K/120fpsビデオを撮影し、メーカー仕様準拠のカード選びが重要です。DJI公式テストでは、データレートを確実に処理するための最低条件としてV30カードを推奨しています。高速なUHS-IIカードはPCへの転送には有利ですが、カメラ内での記録性能にメリットはありません。動作確認済みのV30カードで安定した記録が実現します。",
+    "whySpecs": "DJI公式仕様では、Osmo Pocket 3にはUHS-IのmicroSDカードでスピードグレード3（U3）およびビデオスピードクラス30（V30）以上、最大容量512GBが必要です。Pocket 3は4K/120fps動画を撮影しており、これらはDJIの公式発表スペックです。UHS-IIカードも使用できますが、撮影性能への恩恵はなく、PCへの転送速度にのみ効果があります。",
     "recommendedBrands": [
        {
          "id": "sandisk-extreme-microsd"
@@ -141,7 +144,11 @@
      ],
      "faq": [
        {
-         "q": "「128GBのカードでどれくらい4K撮影できますか？」",
+         "q": "DJI Osmo Pocket 3の公式microSDカード要件は何ですか？",
+         "a": "<b>DJI公式仕様では、UHS-IのmicroSDカードでスピードグレード3（U3）およびビデオスピードクラス30（V30）以上、最大容量512GBが必要です。</b>これらはDJIが公表しているPocket 3の仕様です。SanDisk Extreme、Lexar Professional Silver、Kingston Canvas Go Plusなどがこの条件を満たし、安定した4K録画に適しています。"
+       },
+       {
+         "q": "128GBのカードでどれくらい4K撮影できますか？",
          "a": "128GBのカードで、4K/60fpsの映像を約2時間保存できます。丸一日撮影する場合は、予備のカードを持参するか、256GBの容量を選択することをおすすめします。"
        }
      ],
@@ -150,7 +157,7 @@
        "gopro-hero-11-black",
        "dji-mini-4-pro"
      ],
-     "notes": "DJI Osmo Pocket 3の動作確認済みSDカード。非常に人気のあるVlog用デバイスです。信頼性の高い高速V30カードが明確に必要であり、メーカー仕様準拠の安定した記録をおすすめします。"
+     "notes": "DJI Osmo Pocket 3の動作確認済みSDカード。DJI公式最低要件：U3/V30 UHS-I、最大512GB。非常に人気のあるVlog用デバイスです。"
   },
   {
     "id": "insta360-x4",
@@ -349,11 +356,14 @@
     "name": "DJI Osmo Action 4",
     "category": "action-cameras",
     "slug": "dji-osmo-action-4",
+    "metaDescription": "DJI公式仕様では、Osmo Action 4にはU3/V30規格のUHS-I microSDカード（最大2TB）が必要です。DJI公式スペックを満たす動作確認済みのおすすめカードをご紹介します。",
     "searchTerms": [
       "dji action 4",
       "osmo action 4 sd card",
       "dji action cam",
-      "dji osmo action 4 memory card"
+      "dji osmo action 4 memory card",
+      "dji osmo action 4 推奨 sdカード",
+      "osmo action 4 sdカード 要件"
     ],
     "sdCard": {
       "type": "microSD UHS-I",
@@ -363,9 +373,9 @@
         "128GB",
         "256GB"
       ],
-      "maxCapacity": "512GB"
+      "maxCapacity": "2TB"
     },
-    "whySpecs": "DJI Osmo Action 4は4K 120fpsで優れた低照度パフォーマンスを記録し、メーカー仕様準拠のカード選びが重要です。DJI公式テストではV30 microSDカードを推奨しており、安定した高フレームレート記録を確保します。このアクションカメラは高いビットレート出力を生成し、動作確認済みの信頼性の高いカード速度が重要です。",
+    "whySpecs": "DJI公式仕様では、Osmo Action 4にはUHS-IのmicroSDカードでスピードグレード3（U3）およびビデオスピードクラス30（V30）以上、最大容量2TBが必要です。Action 4は大型の1/1.3インチセンサーにより4K 120fpsで優れた低照度性能を発揮し、一般的なアクションカメラより高いビットレートを生成するため、V30は推奨ではなく必須要件です。",
     "recommendedBrands": [
        {
          "id": "sandisk-extreme-microsd"
@@ -378,6 +388,10 @@
        }
      ],
      "faq": [
+       {
+         "q": "DJI Osmo Action 4の公式microSDカード要件は何ですか？",
+         "a": "<b>DJI公式仕様では、UHS-IのmicroSDカードでスピードグレード3（U3）およびビデオスピードクラス30（V30）以上、最大容量2TBが必要です。</b>これらはDJIが公表しているOsmo Action 4の仕様です。SanDisk Extreme、Lexar Professional 1000x、Kingston Canvas Go Plusなどがこの条件を満たし、安定した4K/120fps録画に適しています。"
+       },
        {
          "q": "「Action 4対GoPro Hero 12 - 同じカードですか？」",
          "a": "はい、DJI Osmo Action 4とGoPro Hero 12の両方がV30 microSDカードを必須としています。どちらもアクションカメラの需要が厳しく、同じV30スピードクラスの要件を共有しています。"
@@ -392,7 +406,7 @@
        "insta360-ace-pro",
        "gopro-hero-12"
      ],
-     "notes": "DJI Osmo Action 4の動作確認済みSDカード。DJIの2023年アクションカメラフラッグシップです。優れた低照度パフォーマンスで知られており、メーカー仕様準拠の信頼できるカードをおすすめします。"
+     "notes": "DJI Osmo Action 4の動作確認済みSDカード。DJI公式最低要件：U3/V30 UHS-I、最大2TB。優れた低照度パフォーマンスで知られています。"
   },
   {
     "id": "insta360-go-3",

@@ -44,8 +44,8 @@
         "a": "<b>いいえ、UHS-IIカードによる速度の向上はありません。</b> 本体にUHS-II用の接点がないため、カードは自動的に低速なUHS-Iモードで動作します。標準的なUHS-I V30カードで十分です。"
       },
       {
-        "q": "Switch 2用に買ったカードは使えますか？",
-        "a": "<b>いいえ、Switch 2はmicroSD Express専用であり、従来のmicroSDカードはゲームプレイに使用できません。</b> 旧型Switchとは互換性がありません。"
+        "q": "Switch 2用に買ったmicroSD Expressカードは旧型Switchで使えますか？",
+        "a": "<b>いいえ、microSD Expressカードは旧型Switch / Switch Lite / Switch 有機ELとは互換性がありません。</b> これらの本体はUHS-Iのみ対応です。旧型SwitchとSwitch 2の両方で使いたい場合は、標準UHS-I microSDXCカードを選んでください。"
       }
     ],
     "relatedDevices": [
@@ -158,50 +158,60 @@
   },
   {
     "id": "nintendo-switch-2",
-    "name": "Nintendo Switch 2（次世代機）",
+    "name": "Nintendo Switch 2",
     "category": "gaming-handhelds",
     "slug": "nintendo-switch-2",
     "searchTerms": [
       "スイッチ2 sdカード",
       "switch 2 ストレージ",
-      "sd express switch 2"
+      "sd express switch 2",
+      "switch 2 microsd express",
+      "スイッチ2 おすすめ sdカード",
+      "switch 2 後方互換 sdカード"
     ],
     "sdCard": {
-      "type": "microSD Express 専用（ゲーム/セーブデータ用）",
-      "minSpeed": "microSD Express (PCIe 3.0 x1以上)",
-      "minWriteSpeed": "V30以上を推奨",
+      "type": "microSDXC UHS-I（後方互換）またはmicroSD Express（推奨）",
+      "minSpeed": "UHS-I U3/A2（標準）またはPCIe対応 microSD Express",
+      "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "512GB",
         "1TB",
         "2TB"
       ],
-      "maxCapacity": "2TB+ (SDXC / SDUC)",
+      "maxCapacity": "2TB（microSDXC）/ 2TB以上（microSD Express SDUC）",
       "testedMaxCapacity": "2TB"
     },
-    "whySpecs": "<b>Nintendo Switch 2は、すべてのゲームプレイとセーブデータにmicroSD Expressカードを必須とします。</b> 従来のUHS-I microSDカード（ゼルダ、ポケモン、マリオ、ヨッシー、どうぶつの森、フォートナイト版を含む）は、ゲーム機能には完全に非互換です。古いmicroSDカードを挿入することはできますが、スクリーンショットと動画ファイルの表示のみに制限され、<b>ゲームのプレイやセーブデータの保存はできません</b>。すべてのSwitch 2タイトルをプレイするには、V30以上の速度定格を持つmicroSD Expressカードが必須です。",
+    "whySpecs": "<b>朗報：旧型SwitchのmicroSDカードはSwitch 2でもそのまま使えます。</b> 標準的なUHS-I microSDXCカードは完全に後方互換であり、旧型Switch・Switch 2のどちらのゲームも問題なくプレイできます。新しくカードを買い替える必要はありません。ただし、Switch 2は<b>microSD Expressスロット</b>を新たに搭載しており、PCIe対応のExpressカードを使うことで劇的に速いロード時間（最大800 MB/s、UHS-I比約8倍）を実現できます。microSD Expressはオプションですが、新たに購入するなら推奨です。注意点：<b>microSD ExpressカードはオリジナルのSwitch / Switch Lite / Switch 有機ELモデルには非対応です</b> — これらはUHS-Iのみ対応です。",
     "recommendedBrands": [
       {
-        "id": "lexar-professional-1000x-microsd"
+        "id": "samsung-evo-select-microsd",
+        "note": "標準microSDXC — Switch 2・旧型Switch両対応"
       },
       {
-        "id": "kingston-canvas-react-plus-microsd"
+        "id": "sandisk-extreme-microsd",
+        "note": "UHS-I U3/A2 — 高速・信頼性が高く後方互換"
       },
       {
-        "id": "sandisk-extreme-pro-microsd-v60"
+        "id": "lexar-professional-1000x-microsd",
+        "note": "microSD Express — Switch 2の最大速度を引き出す"
       }
     ],
     "faq": [
       {
         "q": "旧型SwitchのmicroSDカードをSwitch 2で使えますか？",
-        "a": "<b>いいえ、絶対に使用できません。</b> 古いUHS-I microSDカードを挿入することはできますが、スクリーンショットと動画の表示のみ可能です。<b>ゲームのプレイやセーブデータの保存は完全にできません。</b> すべてのSwitch 2ゲームにはmicroSD Expressカードが必須です。"
+        "a": "<b>はい、使えます。</b> 標準的なUHS-I microSDXCカードはSwitch 2と完全に後方互換です。新しいカードを買わなくても、今持っているカードでSwitch 2のゲームをプレイできます。Switch 2はさらに高速なmicroSD Express規格にも対応していますが、これはあくまでオプションです。"
       },
       {
-        "q": "公式ライセンスカード（ゼルダ、ポケモン、マリオ）はSwitch 2で使えますか？",
-        "a": "<b>スクリーンショットと動画は見られますが、ゲームはプレイできません。</b> すべてのSanDisk公式ライセンスカードはUHS-I microSD規格であり、Switch 2のゲーム機能とは完全に互換性がありません。Switch 2でゲームをプレイするには、V30以上のmicroSD Expressカードが絶対に必要です。"
+        "q": "microSD Expressとはなんですか？Switch 2に必要ですか？",
+        "a": "<b>microSD ExpressはPCIe技術を使い、最大800 MB/sの速度を実現します（UHS-Iの約8倍）。</b> Switch 2タイトルのロード時間を大幅に短縮できます。ただし、必須ではありません — 既存のUHS-I microSDカードは問題なく動作します。2026年時点ではmicroSD Expressカードはまだ希少で高価です。新しいカードを購入する場合に検討してください。"
       },
       {
-        "q": "なぜSwitch 2は新しいカード規格が必要ですか？",
-        "a": "<b>次世代ゲームの超大容量データに対応するため。</b> Switch 2のタイトルは、高速なロード時間と高品質グラフィックの実現に、従来のmicroSD（最大104MB/s）をはるかに上回る帯域幅を必要とします。microSD Expressは最大900MB/s以上の速度を提供し、この要件を満たします。"
+        "q": "microSD Expressカードは旧型SwitchやSwitch 有機ELで使えますか？",
+        "a": "<b>いいえ。microSD ExpressカードはオリジナルのSwitch / Switch Lite / Switch 有機ELモデルとは後方互換性がありません。</b> これらの本体はUHS-Iのみ対応です。複数のSwitchを持っている場合は、全機種で使えるUHS-I U3/A2のmicroSDXCカードを選ぶのがベストです。"
+      },
+      {
+        "q": "Switch 2に買うべきmicroSDカードのスペックは？",
+        "a": "<b>標準microSDカードなら：UHS-I U3/A2（旧型Switchと同じ推奨スペック）。microSD Expressなら：V30以上の認定SDカード。</b> 容量は512GBが良い出発点で、デジタルでほとんど購入するなら1TBが理想的です。"
       }
     ],
     "relatedDevices": [
@@ -209,7 +219,7 @@
       "nintendo-switch-oled",
       "nintendo-switch-lite"
     ],
-    "notes": "Switch 2はストレージ技術における大きな転換点となります。以前の「ライセンス付き」カードは、この新しいコンソールではゲーム用として機能しません。"
+    "notes": "Switch 2は標準的なUHS-I microSDカード（旧型Switch用）と完全に後方互換です。最大パフォーマンスを求めるならmicroSD Express（PCIe）が対応しており、最大8倍高速なロードが可能です。microSD ExpressカードはオリジナルのSwitchシリーズとは非互換です。"
   },
   {
     "id": "nintendo-3ds-xl",
@@ -326,11 +336,14 @@
     "name": "ASUS ROG Ally X（アールオージー エイライ エックス）",
     "category": "gaming-handhelds",
     "slug": "asus-rog-ally-x",
+    "metaDescription": "ASUS ROG Ally Xに最適なmicroSDカードと避けるべきブランドを解説。UHS-II速度、A1アプリ性能、信頼性でテスト済みのカードをご紹介します。",
     "searchTerms": [
       "rog ally x sdカード",
       "rog ally x microsd",
       "rog ally x 容量",
-      "asus rog ally x メモリーカード"
+      "asus rog ally x メモリーカード",
+      "rog ally x 避けるべき sdカード",
+      "rog ally x おすすめ microsd"
     ],
     "sdCard": {
       "type": "microSD UHS-II",
@@ -356,6 +369,10 @@
       }
     ],
     "faq": [
+      {
+        "q": "ROG Ally Xで避けるべきmicroSDカードのブランドや製品は？",
+        "a": "<b>ノーブランドの格安microSDカード、A2規格非対応のカード、そしてAmazonの未認証セラーからの偽造SanDiskカードは避けてください。</b>ROG Ally XはWindowsを動かしながらSDカードから直接ゲームを読み込むため、ランダム読み書き性能が低いカードはゲームのロードが遅くなります。具体的には：(1) A1またはA2のアプリパフォーマンス規格がないカードは避ける（Windows上での動作が遅くなります）；(2) 2TB以上の超大容量カードは、信頼できるブランド品以外は1TBと比べて実際の転送速度が遅い報告がある；(3) AmazonではSanDiskの偽造品が出回っているため、必ず公式ストアや信頼できる販売店で購入してください。SanDisk、Samsung、Lexar、Kingstonなど信頼できるブランドを選びましょう。"
+      },
       {
         "q": "Ally XのSDカードは初代Allyより速いですか？",
         "a": "<b>はい、Ally XはUHS-II速度をサポートする改良された信頼性の高いリーダーを搭載しており、初代Allyの一部で見られた熱問題に対処しています。</b> UHS-IIカードを使用することで、ゲームのロードやファイル転送が体感できるほど高速化します。"

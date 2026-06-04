@@ -267,41 +267,54 @@
       "nintendo switch 2",
       "switch 2 sd card",
       "switch 2 storage",
-      "sd express switch 2"
+      "sd express switch 2",
+      "switch 2 microsd express",
+      "switch 2 sd card requirements",
+      "switch 2 sd card compatibility"
     ],
     "sdCard": {
-      "type": "microSD Express (Required for Games and Saves)",
-      "minSpeed": "SD Express PCIe 3.0 x1",
-      "minWriteSpeed": "V30 or higher",
+      "type": "microSDXC UHS-I (backward compat) or microSD Express (recommended)",
+      "minSpeed": "UHS-I U3/A2 (standard) or PCIe-based microSD Express",
+      "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "512GB",
         "1TB",
         "2TB"
       ],
-      "maxCapacity": "2TB+ (SDUC)",
+      "maxCapacity": "2TB (microSDXC) / 2TB+ (microSD Express SDUC)",
       "testedMaxCapacity": "2TB"
     },
-    "whySpecs": "<b>Nintendo Switch 2 REQUIRES microSD Express cards for all gameplay and save data.</b> Standard UHS-I microSD cards are <b>NOT compatible for gaming</b>. While you can physically insert a standard microSD card to view old screenshots and videos, <b>you cannot play any games or save game data</b>. All Nintendo-branded cards (Zelda, Pokémon, Mario, Yoshi, Animal Crossing, Fortnite) are standard UHS-I microSD and will NOT work for Switch 2 games. Only microSD Express cards with V30 or faster speeds are compatible with next-generation titles.",
+    "whySpecs": "<b>Good news: your existing Switch microSD cards still work in Switch 2.</b> All standard UHS-I microSDXC cards are backward compatible — you can play every Switch game (original and Switch 2) without buying a new card. However, Switch 2 also introduces a <b>microSD Express slot</b> that supports PCIe-based Express cards for dramatically faster loading (up to 800 MB/s vs. ~100 MB/s for UHS-I). microSD Express is optional but recommended if you're buying a new card. Important: <b>microSD Express cards are NOT backward compatible with the original Switch, Switch Lite, or Switch OLED</b> — those devices only support UHS-I.",
     "recommendedBrands": [
       {
-        "id": "lexar-professional-1000x-microsd"
+        "id": "samsung-evo-select-microsd",
+        "note": "Standard microSDXC — works in Switch 2 and all original Switch models"
       },
       {
-        "id": "kingston-canvas-react-plus-microsd"
+        "id": "sandisk-extreme-microsd",
+        "note": "Standard UHS-I U3/A2 — fast, reliable, backward compatible"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd",
+        "note": "microSD Express — for maximum Switch 2 loading speeds"
       }
     ],
     "faq": [
       {
-        "q": "Can I use my old Switch SD cards in Switch 2?",
-        "a": "<b>No, old microSD cards CANNOT be used for Switch 2 games or save data.</b> While you can physically insert an old UHS-I microSD card to view screenshots and video clips, the console will reject it for all game functionality. You must use a microSD Express card to play any Switch 2 titles or save game progress."
+        "q": "Can I use my old Switch SD card in the Nintendo Switch 2?",
+        "a": "<b>Yes — your existing microSD cards work in Switch 2.</b> Standard UHS-I microSDXC cards are fully backward compatible with the Switch 2. You can play all your games without buying a new card. The Switch 2 also supports the faster microSD Express standard for improved loading speeds, but it is optional, not required."
       },
       {
-        "q": "What if I insert a Nintendo-branded card (Zelda, Pokémon, Mario)?",
-        "a": "<b>The console will allow you to view old screenshots and videos, but you CANNOT play any games or save game data.</b> All official Nintendo-branded microSD cards are standard UHS-I format and completely incompatible with Switch 2 gameplay. You need a microSD Express card to play Switch 2 games."
+        "q": "What is microSD Express and do I need it for Switch 2?",
+        "a": "<b>microSD Express uses PCIe technology for speeds up to 800 MB/s — versus ~100 MB/s for standard UHS-I.</b> It provides noticeably faster game loading in Switch 2 titles. However, you do not need it — your existing UHS-I microSD cards work perfectly. As of 2026, microSD Express cards are still rare and expensive. Consider one only if you are buying a new card and want the fastest possible performance."
       },
       {
-        "q": "Do all Switch 2 games require microSD Express?",
-        "a": "<b>Yes, ALL Switch 2 games require microSD Express cards</b>. The console will not accept standard microSD cards for any game installation or save data, regardless of the title. This is a hardware requirement, not optional. Your microSD Express card should have V30 speed or faster for optimal performance."
+        "q": "Will a microSD Express card work in my original Switch or Switch OLED?",
+        "a": "<b>No. microSD Express cards are NOT backward compatible with the original Switch, Switch Lite, or Switch OLED.</b> Those consoles only support UHS-I. If you own multiple Switch models, stick with a standard UHS-I U3/A2 microSDXC card that works across all of them."
+      },
+      {
+        "q": "What microSD specs should I buy for Switch 2?",
+        "a": "<b>For a standard microSD card: UHS-I U3/A2 (same recommendation as the original Switch). For microSD Express: any certified SD Express card with V30 or faster.</b> For capacity, 512GB is a solid starting point; 1TB is ideal if you download most of your library digitally."
       }
     ],
     "relatedDevices": [
@@ -309,7 +322,7 @@
       "nintendo-switch-oled",
       "nintendo-switch-lite"
     ],
-    "notes": "Switch 2 marks a generational leap in storage technology. While legacy UHS-I cards work, SD Express cards are recommended for next-generation titles. Backward compatible with all original Switch games."
+    "notes": "Switch 2 is backward compatible with all standard UHS-I microSD cards from the original Switch. For maximum performance, microSD Express (PCIe) is supported and provides up to 8× faster loading. microSD Express cards are NOT compatible with original Switch models — buy UHS-I if you own both."
   },
   {
     "id": "nintendo-3ds-xl",
@@ -426,11 +439,14 @@
     "name": "ASUS ROG Ally X",
     "category": "Gaming Handhelds",
     "slug": "asus-rog-ally-x",
+    "metaDescription": "Best microSD cards for ASUS ROG Ally X — and which brands to avoid. Tested for UHS-II speed, A1 app performance, and reliability in the Ally X's fast card reader.",
     "searchTerms": [
       "rog ally x sd card",
       "ally x microsd",
       "rog ally x storage",
-      "asus rog ally x memory card"
+      "asus rog ally x memory card",
+      "rog ally x sd card brands to avoid",
+      "best microsd card rog ally x"
     ],
     "sdCard": {
       "type": "microSD UHS-II",
@@ -456,6 +472,10 @@
       }
     ],
     "faq": [
+      {
+        "q": "Which microSD card brands and models should I avoid for the ROG Ally X?",
+        "a": "<b>Avoid cheap no-name microSD cards, cards without an A2 rating, and counterfeit SanDisk cards from unverified Amazon sellers.</b> The ROG Ally X runs Windows and loads games directly from the card, so poor random read/write performance causes stuttering and long load times. Specifically: (1) Avoid cards without A1 or A2 app performance rating — they will feel sluggish under Windows; (2) Avoid very high-capacity 2TB cards unless from a reputable brand, as some community reports show slower-than-expected sustained speeds compared to 1TB variants; (3) Counterfeit SanDisk cards are a known issue on Amazon — always buy from the official SanDisk store or established retailers. Stick to SanDisk, Samsung, Lexar, or Kingston from reputable sources."
+      },
       {
         "q": "Is the Ally X faster than the original Ally for SD cards?",
         "a": "<b>Yes, the Ally X has an improved and more reliable SD card reader that supports UHS-II speeds, addressing heat issues that affected some original Ally units.</b> You will experience noticeably faster game load times and file transfers with UHS-II cards on the Ally X."

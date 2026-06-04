@@ -66,23 +66,34 @@
     "name": "Samsung Galaxy S23",
     "category": "スマートフォン",
     "slug": "samsung-galaxy-s23",
+    "metaDescription": "Samsung Galaxy S23にはmicroSDカードスロットがありません。Samsung Galaxy S21以降、GalaxyシリーズからmicroSDスロットが廃止されました。SDカードへのアクセスにはUSB-Cカードリーダーが必要です。",
     "searchTerms": [
       "ギャラクシー s23",
       "galaxy s23 sdカード",
-      "samsung s23 容量"
+      "samsung s23 容量",
+      "galaxy s23 sdスロット",
+      "s23 外部ストレージ"
     ],
     "sdCard": {
       "type": "外部接続 (USB-Cリーダー経由・スロットなし)",
-      "minSpeed": "要件なし",
+      "minSpeed": "最低要件なし",
+      "minWriteSpeed": "N/A",
+      "maxCapacity": "N/A（内蔵スロットなし）",
       "recommendedCapacity": [
         "64GB",
         "128GB"
       ]
     },
-    "whySpecs": "Galaxy S23シリーズはmicroSDカードスロットを廃止しています。外部SDカードを使用するには、USB-C接続のカードリーダーが必要です。対応するリーダーの使用をおすすめします。",
+    "whySpecs": "Samsung Galaxy S23にはmicroSDカードスロットがありません。SamsungはGalaxy S21以降、Galaxy SシリーズからmicroSDスロットを廃止しました。SDカードにアクセスするには、USB-C接続のカードリーダーが必要です。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Samsung Galaxy S23にはmicroSDカードスロットがありますか？",
+        "a": "<b>いいえ、Samsung Galaxy S23にはmicroSDカードスロットがありません。</b> SamsungはGalaxy S21（2021年）以降、Galaxy SシリーズからmicroSDスロットを廃止しました。S23、S23+、S23 UltraすべてにmicroSDスロットはありません。Galaxy S23でSDカードを使用するには、外付けのUSB-Cカードリーダーが必要です。長期的なストレージ拡張には、Google PhotosやSamsungクラウドなどのクラウドサービスの利用が現実的な選択肢となります。"
       }
     ],
     "relatedDevices": [

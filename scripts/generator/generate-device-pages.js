@@ -122,6 +122,7 @@ function getCategoryImageIcon(category) {
  * Generate varied meta descriptions for better SEO
  */
 function generateUniqueMetaDescription(device, brandNames, index) {
+    if (device.metaDescription) return device.metaDescription;
     const templates = [
         `Find the perfect SD card for ${device.name}. Recommended: ${device.sdCard.type} ${device.sdCard.minSpeed} or faster. Top brands: ${brandNames}. Shop on Amazon.`,
         `${device.name} best SD card guide. Speed: ${device.sdCard.minSpeed}. Type: ${device.sdCard.type}. Expert reviewed brands.`,

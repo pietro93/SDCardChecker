@@ -193,21 +193,26 @@
     "name": "Samsung Galaxy S23 / S23+",
     "category": "Smartphones",
     "slug": "samsung-galaxy-s23",
+    "metaDescription": "The Samsung Galaxy S23 does not have a microSD card slot — Samsung removed expandable storage from the Galaxy S series starting with the S21. Use a USB-C card reader for external SD card access.",
     "searchTerms": [
       "samsung galaxy s23",
       "galaxy s23",
       "samsung s23 sd card",
-      "galaxy s23 reader"
+      "galaxy s23 reader",
+      "samsung s23 expandable storage",
+      "does s23 have sd card slot"
     ],
     "sdCard": {
       "type": "External via USB-C Reader (no slot)",
-      "minSpeed": "No requirement",
+      "minSpeed": "No minimum required",
+      "minWriteSpeed": "N/A",
+      "maxCapacity": "N/A (no built-in slot)",
       "recommendedCapacity": [
         "64GB",
         "128GB"
       ]
     },
-    "whySpecs": "Galaxy S23 removed microSD card slot. Requires USB-C card reader for external SD card access.",
+    "whySpecs": "The Samsung Galaxy S23 does not have a microSD card slot. Samsung removed expandable storage from the Galaxy S series starting with the S21. An external USB-C card reader is required for SD card access.",
     "requiresReader": true,
     "recommendedReaders": [
       "ugreen-2in1-usbc-usb3",
@@ -219,6 +224,12 @@
       },
       {
         "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the Samsung Galaxy S23 have a microSD card slot?",
+        "a": "<b>No, the Samsung Galaxy S23 does not have a microSD card slot.</b> Samsung removed expandable storage from the Galaxy S series starting with the Galaxy S21 in 2021. The S23, S23+, and S23 Ultra all lack a microSD slot. If you need to access an SD card with your Galaxy S23, you will need an external USB-C card reader. For long-term storage expansion, cloud services like Google Photos or Samsung Cloud are the practical alternative."
       }
     ],
     "relatedDevices": [
