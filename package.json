@@ -13,6 +13,7 @@
     "enrich:update": "npm run enrich && npm run build:all",
     "extract-category": "node scripts/extract-category.js",
     "extract-category-ja": "node scripts/extract-category-ja.js",
+    "stats": "node scripts/stats.js",
     "clean:dist": "rimraf dist",
     "prebuild": "node scripts/build-amazon-data.js",
     "build": "npm run clean:dist && npm run build:css && npm run build:site && npx http-server dist",

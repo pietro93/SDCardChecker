@@ -1195,6 +1195,191 @@
     "notes": "Still popular flagship (pre-2026). Snapdragon 865 remains capable for most emulation tasks. A2 + U3 + V30 recommended for optimal performance."
   },
   {
+    "id": "rog-xbox-ally-x",
+    "name": "ASUS ROG Xbox Ally X",
+    "category": "Gaming Handhelds",
+    "slug": "rog-xbox-ally-x",
+    "metaDescription": "Best microSD cards for the ASUS ROG Xbox Ally X — UHS-II picks that take advantage of the redesigned card reader, plus what to know about the original Ally's overheating fix.",
+    "searchTerms": [
+      "rog xbox ally x sd card",
+      "rog xbox ally x microsd",
+      "does the ally x still break sd cards",
+      "best reliable microsd for ally x",
+      "rog ally x uhs-ii load times",
+      "asus rog xbox ally x storage"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II (fully backward compatible with UHS-I)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB",
+        "2TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "The ROG Xbox Ally X resolves the original ROG Ally's notorious SD-card-frying overheating bug with a complete motherboard redesign — ASUS physically moved the microSD reader away from the exhaust pathway that previously cooked cards with sustained thermal stress. The reader itself is UHS-II, so a V60/V90-rated card with A2 app performance will noticeably cut load times versus a budget UHS-I card, though standard UHS-I cards remain fully supported for backward compatibility.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-1000x-microsd",
+        "note": "Top UHS-II performance tier — takes full advantage of the dual-row pin reader"
+      },
+      {
+        "id": "sandisk-extreme-microsd",
+        "note": "Massive capacity tier (up to 1.5TB) for large backlogs, A2-rated UHS-I"
+      },
+      {
+        "id": "sandisk-rog-ally-microsd",
+        "note": "Officially licensed ROG-branded card"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the ROG Xbox Ally X still break SD cards like the original Ally?",
+        "a": "<b>No — ASUS redesigned the motherboard specifically to fix this.</b> The original ROG Ally placed the microSD reader directly next to the heavy exhaust vent, and sustained thermal stress caused premature card failures in some units. The Ally X physically relocates the reader away from that exhaust pathway, resolving the issue."
+      },
+      {
+        "q": "What's the best reliable microSD card for the Ally X?",
+        "a": "<b>A UHS-II V60/V90 card with A2 app performance from a reputable brand (SanDisk, Lexar, Samsung) is the best pick.</b> The redesigned reader supports full UHS-II bandwidth, so pairing it with a UHS-II card meaningfully reduces load times compared to a standard UHS-I card."
+      },
+      {
+        "q": "Do I need UHS-II, or will a cheaper UHS-I card work fine?",
+        "a": "<b>UHS-I cards work and remain fully backward compatible</b>, but they cap out well below the reader's UHS-II ceiling. If you want the fastest load times the Ally X's reader can deliver, spend the extra on a UHS-II card; otherwise a high-capacity A2/V30 UHS-I card like SanDisk Extreme is a solid budget-friendly alternative."
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally-x",
+      "asus-rog-ally",
+      "lenovo-legion-go-gen-2"
+    ],
+    "notes": "Released 2026 as an Xbox-co-branded redesign of the ROG Ally X, addressing the original Ally's SD card reader overheating issue with a relocated reader and overhauled internal layout. Distinct from the 2024 ASUS ROG Ally X.",
+    "imageUrl": "/img/devices/gaming-consoles/asus-rog-ally.webp"
+  },
+  {
+    "id": "lenovo-legion-go-gen-2",
+    "name": "Lenovo Legion Go 2",
+    "category": "Gaming Handhelds",
+    "slug": "lenovo-legion-go-gen-2",
+    "metaDescription": "Best microSD cards for the Lenovo Legion Go 2 — high-capacity UHS-II picks for the 8.8-inch OLED handheld's AAA storage demands.",
+    "searchTerms": [
+      "lenovo legion go 2 microsd compatibility",
+      "best high capacity sd card legion go oled",
+      "legion go gen 2 load times sd card vs ssd",
+      "legion go 2 sd card",
+      "legion go 2 storage expansion"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "1TB",
+        "2TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "The Legion Go 2's 8.8-inch WUXGA OLED panel (up to 144Hz) and AMD Ryzen Z2 Extreme processor are built for AAA titles with massive texture-mapped install sizes, so internal SSD space disappears fast. Since opening the chassis to swap the M.2 2280 NVMe drive is impractical for most casual upgraders, a high-capacity UHS-II microSD is the primary expansion path. The reader supports full UHS-II bandwidth, so a V30/A2-rated card is the practical minimum and a faster V60 card meaningfully improves load times for read-bound titles.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-1000x-microsd",
+        "note": "UHS-II top performance tier"
+      },
+      {
+        "id": "samsung-pro-plus-microsd",
+        "note": "Reliable V30/A2 pick for large modern game libraries"
+      },
+      {
+        "id": "sandisk-extreme-microsd",
+        "note": "Massive capacity tier (up to 1.5TB) for sprawling AAA backlogs"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Legion Go 2's microSD slot compatible with all standard cards?",
+        "a": "<b>Yes — the slot accepts standard microSD, microSDHC, and microSDXC cards</b> and supports UHS-II for full speed, while remaining backward compatible with UHS-I cards (at UHS-I speeds)."
+      },
+      {
+        "q": "What capacity should I get for the Legion Go 2's OLED library?",
+        "a": "<b>1TB or 2TB is strongly recommended.</b> Modern AAA titles with high-resolution texture packs routinely exceed 100GB each, and the Go 2's OLED display tends to encourage installing more demanding titles. Anything below 1TB fills up fast."
+      },
+      {
+        "q": "How much faster is the internal SSD versus a microSD card?",
+        "a": "<b>The internal M.2 NVMe SSD will always outperform a microSD card</b>, even a fast UHS-II one. Treat the microSD slot as expansion storage for your broader library, and keep your most frequently played, load-time-sensitive titles on the internal drive when possible."
+      }
+    ],
+    "relatedDevices": [
+      "lenovo-legion-go",
+      "lenovo-legion-go-s",
+      "rog-xbox-ally-x"
+    ],
+    "notes": "2026 successor to the original Legion Go, with an 8.8-inch WUXGA OLED display up to 144Hz and AMD Ryzen Z2 Extreme. UHS-II microSD reader; internal NVMe SSD upgrades are impractical for most users, making microSD the primary expansion path.",
+    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go.webp"
+  },
+  {
+    "id": "msi-claw-8-ex-ai-plus",
+    "name": "MSI Claw 8 EX AI+",
+    "category": "Gaming Handhelds",
+    "slug": "msi-claw-8-ex-ai-plus",
+    "metaDescription": "Best microSD cards for the MSI Claw 8 EX AI+ — A2-rated picks that keep up with Intel Arc XeSS asset streaming and avoid stutter on this Intel-powered handheld.",
+    "searchTerms": [
+      "msi claw 8 ex ai+ storage expansion",
+      "intel arc handheld game stuttering sd card",
+      "best 2tb microsd for msi claw 8",
+      "msi claw 8 ex ai plus sd card",
+      "msi claw 8 microsd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (High-Speed reader)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "1TB",
+        "2TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "The Claw 8 EX AI+ pairs Intel's Arc G3 Extreme platform with an 80Whr battery for sustained, high-wattage portable performance, and leans on Intel XeSS AI upscaling that depends on fast, consistent asset streaming. Because Arc drivers are sensitive to delivery delays when streaming game assets from external storage, an A2-rated card with strong random read/write IOPS is essential to avoid stutter and micro-freezes — a plain V30 card without A2 will bottleneck the system under load.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd",
+        "note": "A2/V30 with high random IOPS — coordinates well with Windows 11 virtual memory without bottlenecking"
+      },
+      {
+        "id": "lexar-play-microsd",
+        "note": "Budget-friendly 1TB option for large game libraries"
+      },
+      {
+        "id": "kingston-canvas-go-plus",
+        "note": "Reliable A2 alternative"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the MSI Claw 8 EX AI+ need a special microSD card?",
+        "a": "<b>It needs an A2 application-performance-rated card, not just a fast sequential one.</b> The Intel Arc platform's XeSS AI upscaling streams game assets continuously, and A2's strong random read/write IOPS prevents the stutter and micro-freezing that a plain V30-without-A2 card can cause."
+      },
+      {
+        "q": "Why does my MSI Claw 8 stutter during intense scenes?",
+        "a": "<b>This is usually a storage I/O bottleneck, not a CPU/GPU issue.</b> Intel Arc drivers are sensitive to delays in asset delivery during background streaming. Switching to an A2-rated microSD card (or moving the game to internal storage) typically resolves the stuttering."
+      },
+      {
+        "q": "What's the best capacity for a 2TB microSD on the Claw 8?",
+        "a": "<b>A reputable-brand 2TB A2/V30 card works well, but stick to established brands like SanDisk, Samsung, or Lexar.</b> Generic 2TB cards from unverified sellers are far more likely to have inflated capacity claims or inconsistent sustained write performance."
+      }
+    ],
+    "relatedDevices": [
+      "msi-claw",
+      "rog-xbox-ally-x",
+      "lenovo-legion-go-gen-2"
+    ],
+    "notes": "Unveiled at Computex 2026 with Intel's Arc G3 Extreme platform and an 80Whr battery. High-speed microSD reader; A2 rating is critical to keep up with Intel XeSS asset streaming demands.",
+    "imageUrl": "/img/devices/gaming-consoles/gaming-handheld-console-placeholder.webp"
+  },
+  {
     "id": "retroid-pocket-mini",
     "name": "Retroid Pocket Mini",
     "category": "Gaming Handhelds",
