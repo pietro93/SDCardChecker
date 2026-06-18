@@ -2288,34 +2288,35 @@
         "xe5 storage"
       ],
       "sdCard": {
-        "type": "SD UHS-I",
+        "type": "SD UHS-II",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "64GB",
           "128GB"
         ],
-        "maxCapacity": "No official limit"
+        "maxCapacity": "2TB"
       },
-      "whySpecs": "A compact, rangefinder-style camera featuring a 26MP sensor and capable of 6.2K video recording. V30 cards handle both 4K and 6.2K recording reliably. Its UHS-I slot contributes to the camera's compact size and affordable price point.",
+      "whySpecs": "A compact, rangefinder-style camera featuring a 40.2MP X-Trans CMOS 5 HR sensor and capable of 6.2K video recording. V30 cards handle both 4K and 6.2K recording reliably. Its UHS-II slot supports faster sustained write speeds for higher bitrate footage and quicker buffer clearing during burst shooting.",
       "recommendedBrands": [
         {
+          "id": "sandisk-extreme-pro-sd-uhs2"
+        },
+        {
+          "id": "lexar-professional-1000x-sd"
+        },
+        {
           "id": "sandisk-extreme-sd-uhs1"
-        },
-        {
-          "id": "lexar-professional-633x"
-        },
-        {
-          "id": "kingston-canvas-select"
-        },
-        {
-          "id": "amazon-basics-microsd"
         }
       ],
       "faq": [
         {
           "q": "What is the key difference between the X-E5 and the X-M5?",
-          "a": "<b>The X-E5 is designed with a traditional rangefinder-style body, featuring a centered electronic viewfinder. In contrast, the X-M5 is more vlog-focused and typically features a vari-angle or flip screen.</b> Both cameras share identical SD card requirements, needing a V30 UHS-I minimum. Your choice between them should be based on your preferred shooting style and ergonomic preferences, rather than card specifications."
+          "a": "<b>The X-E5 is designed with a traditional rangefinder-style body, featuring a centered electronic viewfinder. In contrast, the X-M5 is more vlog-focused and typically features a vari-angle or flip screen.</b> Both cameras share identical SD card requirements, needing a V30 minimum. Your choice between them should be based on your preferred shooting style and ergonomic preferences, rather than card specifications."
+        },
+        {
+          "q": "Do I need a UHS-II card, or will UHS-I work?",
+          "a": "<b>UHS-I V30 cards meet the camera's minimum requirement and work for 4K/6.2K recording</b>. The X-E5's slot is UHS-II compliant, so upgrading to a UHS-II card gives faster buffer clearing after bursts and quicker file transfers, but it is not required for in-camera recording."
         }
       ],
       "relatedDevices": [
@@ -2323,7 +2324,7 @@
         "fujifilm-x100vi",
         "fujifilm-xt30-ii"
       ],
-      "notes": "Released in 2024 as a compact, rangefinder-style option within the Fujifilm X-series lineup. It targets street photographers and enthusiasts who prefer a lightweight camera with classic aesthetics."
+      "notes": "Released in 2025 as a compact, rangefinder-style option within the Fujifilm X-series lineup. It targets street photographers and enthusiasts who prefer a lightweight camera with classic aesthetics."
     },
     {
       "id": "fujifilm-x100v",
@@ -7602,7 +7603,7 @@
     }
   ],
   "metadata": {
-    "generated": "2026-06-18T14:15:29.280Z",
+    "generated": "2026-06-18T16:59:15.267Z",
     "totalDevices": 163,
     "categories": [
       "Action Cameras",
