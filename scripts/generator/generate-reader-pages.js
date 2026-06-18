@@ -107,7 +107,7 @@ function generateFAQHTML(faqItems) {
             (item) => `
             <div class="faq-item border-b border-slate-200 py-4">
                 <h3 class="font-bold text-slate-900 mb-2">${item.q}</h3>
-                <div class="faq-answer text-slate-700 prose">${item.a}</div>
+                <div class="faq-answer open text-slate-700 prose">${item.a}</div>
             </div>
         `
         )

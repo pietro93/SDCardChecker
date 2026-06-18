@@ -128,12 +128,12 @@
         <div class="space-y-4">
           <div class="faq-item">
             <h3 class="faq-heading">
-              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-1">
                 What's the difference between JPEG and RAW?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
-            <div id="faq-answer-1" class="faq-answer">
+            <div id="faq-answer-1" class="faq-answer open">
               <p><strong>JPEG:</strong> Compressed format. Smaller files (2–12MB per photo). The camera applies color grading, white balance, and sharpening in real-time, so photos are ready to share straight out of the camera. However, this also means limited post-production editing flexibility—you can't recover blown highlights or fix white balance like you can with RAW.</p>
               <p><strong>RAW:</strong> Uncompressed format. Larger files (20–80MB per photo depending on megapixels and camera brand). RAW captures all sensor data without in-camera processing, giving you maximum editing control in post-production using software like Adobe Lightroom, Capture One, or DaVinci Resolve. You can adjust exposure, white balance, shadows, and highlights non-destructively and recover details that would be lost in JPEG.</p>
               <p><strong>JPEG + RAW Mode:</strong> Many modern cameras allow you to shoot both simultaneously, capturing a processed JPEG for quick review and sharing while also archiving the RAW file for serious editing. This uses roughly double the storage but gives you the best of both worlds.</p>
@@ -143,12 +143,12 @@
 
           <div class="faq-item">
             <h3 class="faq-heading">
-              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-2">
                 How do I know my camera's file size?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
-            <div id="faq-answer-2" class="faq-answer">
+            <div id="faq-answer-2" class="faq-answer open">
               <p><strong>Method 1 (Quickest):</strong> Shoot a test photo in both JPEG and RAW formats, then check file properties (Windows: right-click → Properties; Mac: right-click → Get Info). Note the sizes in MB. This gives you exact data for your specific camera and settings.</p>
               <p><strong>Method 2 (Research):</strong> Search "[Camera Model] RAW file size" on DPReview, Fred Miranda Tools, or your camera's manual. These sources often list exact file sizes for each recording format and resolution mode. Canon 5D Mark IV RAW files, for example, are typically 30–35MB; a 45MP Sony α7R V can produce 80–100MB RAW files.</p>
               <p><strong>Method 3 (Estimate):</strong> Use our preset calculator above. Pick your megapixel range (5MP for smartphones, 20MP for entry DSLR, 45MP+ for high-end mirrorless) and format. We've calibrated these presets to common camera models, so you'll get a close estimate without manual testing.</p>
@@ -158,12 +158,12 @@
 
           <div class="faq-item">
             <h3 class="faq-heading">
-              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-3">
                 What Speed Class do I need for burst shooting?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
-            <div id="faq-answer-3" class="faq-answer">
+            <div id="faq-answer-3" class="faq-answer open">
               <p><strong>For JPEG bursts (under 6 fps):</strong> Class 10 or U3 is usually sufficient. JPEG files are small, so even modest write speeds (10 MB/s) can handle continuous shooting. Most entry-level DSLRs and mirrorless cameras shooting JPEG don't need anything faster.</p>
               <p><strong>For RAW bursts (6–10 fps):</strong> V30 is the minimum recommended. V30 guarantees 30 MB/s sustained write speed, which is essential for RAW shooting. RAW files are large, and if your card can't keep up, the camera's buffer fills, forcing you to pause between shots. This kills momentum during critical moments.</p>
               <p><strong>For high-speed burst (10+ fps) or professional work:</strong> V60 or V90. These cards guarantee 60 MB/s and 90 MB/s write speeds respectively. If you're shooting 12-14 fps RAW or using a professional cinema camera, these are necessary to prevent buffer overflow and ensure every frame is written reliably.</p>
@@ -173,12 +173,12 @@
 
           <div class="faq-item">
             <h3 class="faq-heading">
-              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-4">
                 Can I mix JPEG and RAW on the same card?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
-            <div id="faq-answer-4" class="faq-answer">
+            <div id="faq-answer-4" class="faq-answer open">
               <p>Yes. Many modern cameras—especially mirrorless and professional DSLRs—have a "JPEG + RAW" or "RAW + JPEG" mode that saves both formats simultaneously. This is an excellent workflow because you get the JPEG for quick review and sharing while also archiving the RAW for serious editing.</p>
               <p><strong>Storage calculation:</strong> Shooting both uses roughly double the space. For example, a 45MB RAW file + 4MB JPEG = 49MB per photo. In our calculator, you can either estimate this manually (RAW size + JPEG size) or simply calculate based on RAW size alone, since JPEG is negligible next to RAW in most cases.</p>
               <p><strong>Speed class note:</strong> Your card speed class must still accommodate the RAW write speed, not the combined size. If V30 is required for RAW on your camera, it's still V30 for JPEG + RAW mode—not faster.</p>
@@ -187,12 +187,12 @@
 
           <div class="faq-item">
             <h3 class="faq-heading">
-              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-5">
                 Is 256GB overkill for photos?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
-            <div id="faq-answer-5" class="faq-answer">
+            <div id="faq-answer-5" class="faq-answer open">
               <p>Not necessarily. It depends entirely on your shooting format, volume, and workflow. A RAW shooter capturing 5,000+ photos per session can fill 256GB in a single day—especially with high-megapixel cameras like the Sony α7R V. A JPEG-only wedding photographer might use only 128GB for an entire event.</p>
               <p><strong>Consider overprovision for reliability:</strong> Even if your math says you need 128GB, we recommend buying 256GB if your budget allows. Here's why: full or near-full SD cards degrade in performance, and you want a safety margin for camera firmware, extended shooting sessions, or re-shooting sequences. A full 256GB card also lasts longer before you need to format it.</p>
               <p><strong>Use our calculator:</strong> Input your format (JPEG, RAW, or both), file size, and typical shots per session. It'll tell you exactly what capacity makes sense. Most professional photographers keep multiple smaller cards (e.g., 128GB each) rather than relying on one massive card—it's safer.</p>
@@ -201,12 +201,12 @@
 
           <div class="faq-item">
             <h3 class="faq-heading">
-              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-6">
                 Should I shoot RAW or JPEG?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
-            <div id="faq-answer-6" class="faq-answer">
+            <div id="faq-answer-6" class="faq-answer open">
               <p><strong>Shoot RAW if:</strong> You are serious about post-processing or need maximum editing control. RAW files retain all sensor data—you can recover blown highlights, fix white balance mistakes, adjust exposure non-destructively, and perform advanced color grading. RAW is essential for professional work (weddings, commercial, fine art) where the final image quality is critical. You'll need photo editing software (Lightroom, Capture One, Affinity Photo) and time to process files.</p>
               <p><strong>Shoot JPEG if:</strong> You want instant, ready-to-share photos with zero editing, or you're starting out. JPEG files are small, fast to shoot, and require no post-processing. They work instantly on any device. The tradeoff: limited editing flexibility and no recovery from exposure mistakes.</p>
               <p><strong>The professional answer:</strong> Most professional and serious enthusiast photographers use JPEG + RAW mode. The JPEG is for quick review, client preview, and social media. The RAW is your master archive—you edit it, perfect it, and export JPEG versions for final delivery. This workflow gives you both convenience and control.</p>

@@ -128,12 +128,12 @@
         <div class="space-y-4">
           <div class="faq-item">
             <h3 class="faq-heading">
-              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-1">
                 How long will a 256GB High Endurance card record 24/7?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
-            <div id="faq-answer-1" class="faq-answer">
+            <div id="faq-answer-1" class="faq-answer open">
               <p>It depends on your camera's bitrate. Security cameras typically record at lower bitrates than other cameras to maximize storage efficiency.</p>
               <p><strong>1080p camera (~5Mbps):</strong> A 256GB card holds approximately 456 hours of footage (19 days of continuous 24/7 recording). At typical office hours (8 hours/day), that's ~57 days of storage.</p>
               <p><strong>2K camera (~10Mbps):</strong> A 256GB card holds approximately 228 hours of footage (9.5 days continuous). At 8 hours/day, that's ~28 days of coverage.</p>
@@ -144,12 +144,12 @@
 
           <div class="faq-item">
             <h3 class="faq-heading">
-              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-2">
                 What's the difference between an endurance card and a regular SD card?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
-            <div id="faq-answer-2" class="faq-answer">
+            <div id="faq-answer-2" class="faq-answer open">
               <p><strong>Endurance rating:</strong> Specifies how many write cycles the card can endure before failure. Regular cards: 3,000–10,000 cycles. Endurance cards: 10,000–100,000+ cycles depending on brand and model.</p>
               <p><strong>Why the difference matters:</strong> A security camera writing 5Mbps continuously will write approximately 432GB per day. In just 3 days, you'll have exhausted a regular card's write-cycle budget. An Endurance card is rated for years of this same workload.</p>
               <p><strong>Real-world consequence:</strong> A regular SD card in a surveillance camera typically lasts 2–8 weeks before showing errors, corruption, or complete failure. An Endurance card lasts 1–3+ years. The cost difference ($10–15) is negligible compared to the reliability gain.</p>
@@ -159,12 +159,12 @@
 
           <div class="faq-item">
             <h3 class="faq-heading">
-              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-3">
                 Can I use any SD card for surveillance?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
-            <div id="faq-answer-3" class="faq-answer">
+            <div id="faq-answer-3" class="faq-answer open">
               <p>Technically, yes. Most cameras will accept any microSD card. But practically, no—you should always use High Endurance cards for security cameras.</p>
               <p><strong>The problem with regular cards:</strong> Surveillance cameras are always writing, always stressing the card's flash memory. Regular cards are optimized for intermittent use (photography, occasional video). They have no built-in safeguards for continuous writing. Result: failure in weeks.</p>
               <p><strong>The Endurance advantage:</strong> Endurance cards have firmware designed to level wear evenly across the entire chip, manage heat dissipation, and handle billions of write cycles. They're built for this specific workload.</p>
@@ -175,12 +175,12 @@
 
           <div class="faq-item">
             <h3 class="faq-heading">
-              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-4">
                 How do I calculate storage for multiple cameras?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
-            <div id="faq-answer-4" class="faq-answer">
+            <div id="faq-answer-4" class="faq-answer open">
               <p><strong>Scenario 1: Each camera has its own SD card</strong> (most common for IP cameras and local surveillance): Calculate storage for each camera independently. If you have 3 cameras at 5Mbps each with 128GB cards, each gets ~76 days of recording. The system's retention window is 76 days per camera.</p>
               <p><strong>Scenario 2: Multiple cameras record to one shared NVR storage</strong> (some systems use a central NAS or NVR): Add bitrates. 3 cameras × 5Mbps = 15Mbps total. A 256GB drive (or SD card array) holds: (256 × 8) ÷ 15 = 136 hours (5.7 days of continuous recording).</p>
               <p><strong>Pro setup (redundancy):</strong> Use a 256GB endurance card per camera for local backup + a cloud service (AWS, Google Cloud, or camera-native cloud like Wyze Plus) for additional redundancy. This ensures you don't lose footage if a single card fails.</p>
@@ -190,12 +190,12 @@
 
           <div class="faq-item">
             <h3 class="faq-heading">
-              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-5">
                 What about heat and outdoor surveillance?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
-            <div id="faq-answer-5" class="faq-answer">
+            <div id="faq-answer-5" class="faq-answer open">
               <p><strong>Heat risk:</strong> Continuous writing generates heat. In hot climates or direct sun, an outdoor camera and its SD card can reach 60–70°C (140–158°F). Regular cards throttle performance or fail at these temperatures. Endurance cards are engineered with better thermal management but still have limits.</p>
               <p><strong>Mitigation:</strong> Install outdoor cameras in shaded areas if possible. Use UV-protective housings. Avoid east-facing or west-facing exposures during peak heat hours. In extreme climates (desert, tropical), monitor card temperature via the camera's app if available.</p>
               <p><strong>Reduced bitrate option:</strong> If your outdoor camera overheats, consider lowering recording resolution from 4K to 2K. This reduces bitrate and heat generation while still providing good evidence quality. The temperature savings can extend card lifespan significantly.</p>
@@ -206,12 +206,12 @@
 
           <div class="faq-item">
             <h3 class="faq-heading">
-              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-6">
                 Should I use cloud storage instead of SD cards?
                 <span class="faq-toggle">↓</span>
               </button>
             </h3>
-            <div id="faq-answer-6" class="faq-answer">
+            <div id="faq-answer-6" class="faq-answer open">
               <p><strong>Cloud vs. local storage:</strong> These are complementary, not mutually exclusive. Use both for maximum security.</p>
               <p><strong>Local SD card advantages:</strong> No monthly subscription, works without internet, instant playback (no buffering), full privacy (footage doesn't leave your property unless you upload it), cheap backup solution (a 256GB endurance card costs $30–40 vs. $10–30/month for cloud).</p>
               <p><strong>Cloud storage advantages:</strong> Redundancy (if your home is damaged or camera stolen, footage is safe), accessible from anywhere, automatic backups, no card failure risk, easier sharing (send a link to insurance company, police, etc.).</p>

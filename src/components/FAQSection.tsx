@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Device } from '../types/devices';
 import { useFAQ } from '../hooks/useFAQ';
 
@@ -8,14 +8,26 @@ interface FAQSectionProps {
 
 export const FAQSection: React.FC<FAQSectionProps> = ({ device }) => {
   const faqs = useFAQ(device);
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [expandedIndexes, setExpandedIndexes] = useState<Set<number>>(new Set());
+
+  useEffect(() => {
+    setExpandedIndexes(new Set(faqs.map((_, index) => index)));
+  }, [faqs]);
 
   if (!device || faqs.length === 0) {
     return null;
   }
 
   const toggleExpanded = (index: number) => {
-    setExpandedIndex(expandedIndex === index ? null : index);
+    setExpandedIndexes((current) => {
+      const next = new Set(current);
+      if (next.has(index)) {
+        next.delete(index);
+      } else {
+        next.add(index);
+      }
+      return next;
+    });
   };
 
   return (
@@ -34,14 +46,14 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ device }) => {
               <h3 className="font-semibold text-lg text-gray-900">{faq.q}</h3>
               <span
                 className={`ml-4 transition-transform ${
-                  expandedIndex === index ? 'rotate-180' : ''
+                  expandedIndexes.has(index) ? 'rotate-180' : ''
                 }`}
               >
                 ▼
               </span>
             </button>
 
-            {expandedIndex === index && (
+            {expandedIndexes.has(index) && (
               <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
                 <div
                   className="text-gray-700 leading-relaxed prose prose-sm max-w-none"

@@ -642,7 +642,7 @@ function generateFAQHTML(faqItems) {
       <div class="faq-question">
         <span>${item.q}</span>
       </div>
-      <div class="faq-answer">
+      <div class="faq-answer open">
         ${item.a}
       </div>
     </div>

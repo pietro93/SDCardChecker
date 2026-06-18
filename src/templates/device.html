@@ -577,18 +577,17 @@
                 const answer = item.querySelector('.faq-answer');
                 const toggle = item.querySelector('.faq-toggle');
 
-                if (question) {
+                if (answer && answer.classList.contains('open') && toggle) {
+                    toggle.classList.add('open');
+                }
+
+                if (question && answer) {
                     question.addEventListener('click', () => {
                         const isOpen = answer.classList.contains('open');
 
-                        // Close all others
-                        document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
-                        document.querySelectorAll('.faq-toggle').forEach(t => t.classList.remove('open'));
-
-                        // Toggle current
-                        if (!isOpen) {
-                            answer.classList.add('open');
-                            toggle.classList.add('open');
+                        answer.classList.toggle('open', !isOpen);
+                        if (toggle) {
+                            toggle.classList.toggle('open', !isOpen);
                         }
                     });
                 }

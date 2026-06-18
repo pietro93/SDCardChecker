@@ -61,7 +61,7 @@ function generateCarPages(distPath) {
         `<div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100"><h3 class="text-xl font-bold mb-4 text-gray-900">Common Issues</h3><ul class="space-y-2 list-disc list-inside text-gray-700">${vehicle.commonIssues.map(i => `<li>${i}</li>`).join('')}</ul></div>` : '';
 
      const faqsHtml = (vehicle.faqs || []).length > 0 ?
-        `<div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100"><h3 class="text-xl font-bold mb-4 text-gray-900">FAQ</h3><div class="space-y-4">${vehicle.faqs.map(f => `<div class="faq-item"><p class="faq-question">${f.question} <span>+</span></p><p class="faq-answer">${f.answer}</p></div>`).join('')}</div></div>` : '';
+        `<div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100"><h3 class="text-xl font-bold mb-4 text-gray-900">FAQ</h3><div class="space-y-4">${vehicle.faqs.map(f => `<div class="faq-item"><p class="faq-question">${f.question} <span>+</span></p><p class="faq-answer open">${f.answer}</p></div>`).join('')}</div></div>` : '';
 
      const tc = vehicle.trimCompatibility;
      const compatHtml = tc ?
