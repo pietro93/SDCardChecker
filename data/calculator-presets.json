@@ -1587,10 +1587,10 @@
     "brand": "Fujifilm",
     "model": "X-E5",
     "category": "camera",
-    "releaseYear": 2024,
+    "releaseYear": 2025,
     "supportedFormats": ["SD"],
     "enduranceRequired": "STANDARD",
-    "maxCapacity": "512GB",
+    "maxCapacity": "2TB",
     "recordingModes": [
       {
         "name": "6.2K 30fps (H.265)",
@@ -1614,9 +1614,9 @@
       "dualSlotRecording": false
     },
     "compatibleCards": [
-      "sandisk-extreme-sd-uhs1",
-      "lexar-professional-633x",
-      "kingston-canvas-select"
+      "sandisk-extreme-pro-sd-uhs2",
+      "lexar-professional-1000x-sd",
+      "sandisk-extreme-sd-uhs1"
     ],
     "relatedDevices": ["fujifilm-xm5", "fujifilm-x100vi", "fujifilm-xt30-ii"]
   },
