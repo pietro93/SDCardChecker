@@ -20,22 +20,75 @@ class NoSuitableCandidateError extends Error {}
 // Words too generic to discriminate one model from another.
 const GENERIC_TOKENS = new Set([
   "black", "white", "plus", "pro", "max", "mini", "se", "gen", "edition", "series",
-  "the", "and", "ii", "iii", "iv", "vi", "with", "for", "ai", "ex", "console", "handheld",
+  "the", "and", "with", "for", "ai", "ex", "console", "handheld",
 ]);
 
-function salientTokens(name) {
-  return name
-    .toLowerCase()
-    .split(/[^a-z0-9]+/)
-    .filter((t) => t && t.length >= 2 && !GENERIC_TOKENS.has(t));
+// Roman-numeral revision markers (e.g. "Mark II" vs "Mark III", "Z6 II" vs
+// "Z6 III") — these discriminate models just like a model number does, so
+// they must NOT be treated as generic filler.
+const ROMAN_TOKENS = new Set(["ii", "iii", "iv", "vi", "vii", "viii", "ix"]);
+
+function rawTokens(name) {
+  return name.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
 }
 
-/** Strict relevance: a candidate must share the device's discriminating tokens. */
+function salientTokens(name) {
+  return rawTokens(name).filter((t) => t.length >= 2 && !GENERIC_TOKENS.has(t));
+}
+
+// Accessory/part words that, if present in a candidate but absent from the
+// device name itself, mark the candidate as the wrong product (a lens/case/kit
+// instead of the device body) rather than a true match.
+const ACCESSORY_TOKENS = new Set([
+  "lens", "kit", "case", "strap", "tripod", "cap", "battery", "charger",
+  "mount", "bundle", "cable", "adapter", "grip", "filter",
+]);
+
+function isModelToken(t) {
+  return /\d/.test(t) || ROMAN_TOKENS.has(t);
+}
+
+/** Boundary-aware exact match: digits can't be glued to other digits;
+ * mixed alnum model tokens (e.g. "x100v") can't be a substring of a longer
+ * alnum run (e.g. "x100vi"); roman numerals ("ii") can't match inside a
+ * longer one ("iii"). Plain letter-only tokens still use `includes`. */
+function tokenMatches(hay, token) {
+  if (isModelToken(token)) {
+    const boundary = /^\d+$/.test(token) ? "\\d" : "a-z0-9";
+    const re = new RegExp(`(?<![${boundary}])${token}(?![${boundary}])`);
+    return re.test(hay);
+  }
+  return hay.includes(token);
+}
+
+/** Strict relevance: a candidate must share the device's discriminating tokens,
+ * and any model-number/version token (e.g. "11", "x100v", "ii") must match
+ * exactly — not as a substring of a different model ("x100vi", "hero13",
+ * "iii") — and the candidate must not carry a *different* version token the
+ * device name doesn't have (e.g. device "EOS R6" vs. candidate "EOS R6 II"). */
 function relevanceScore(deviceName, candidateText) {
   const want = salientTokens(deviceName);
   if (want.length === 0) return { score: 0, want: 0, ok: false };
   const hay = candidateText.toLowerCase();
-  const hit = want.filter((t) => hay.includes(t));
+
+  const modelTokens = want.filter(isModelToken);
+  if (modelTokens.length > 0 && !modelTokens.every((t) => tokenMatches(hay, t))) {
+    return { score: 0, want: want.length, ok: false };
+  }
+
+  const wantRoman = new Set(want.filter((t) => ROMAN_TOKENS.has(t)));
+  const hayRoman = rawTokens(candidateText).filter((t) => ROMAN_TOKENS.has(t));
+  if (hayRoman.some((t) => !wantRoman.has(t))) {
+    return { score: 0, want: want.length, ok: false };
+  }
+
+  const wantAccessory = want.some((t) => ACCESSORY_TOKENS.has(t));
+  const hayHasAccessory = [...ACCESSORY_TOKENS].some((t) => tokenMatches(hay, t));
+  if (hayHasAccessory && !wantAccessory) {
+    return { score: 0, want: want.length, ok: false };
+  }
+
+  const hit = want.filter((t) => tokenMatches(hay, t));
   return { score: hit.length, want: want.length, ok: hit.length >= Math.max(2, Math.ceil(want.length * 0.6)) };
 }
 
