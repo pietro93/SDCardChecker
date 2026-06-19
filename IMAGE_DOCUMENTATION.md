@@ -1,10 +1,20 @@
 # Image Documentation - Consolidated
 
-## ✅ All Image Guidance is Now in One Document
+## ⚠ Sourcing real device photos? Read this first
+
+[`DEVICE_IMAGE_PIPELINE.md`](DEVICE_IMAGE_PIPELINE.md) is the current,
+authoritative doc for the automated `scripts/images/` pipeline that fetches
+real manufacturer/Grover product photos and composites them as device hero
+images. It supersedes the "fallback placeholder" guidance below for any
+device the pipeline has already covered. See [INDEX.md](INDEX.md#images)
+for how all the image docs relate.
+
+## ✅ Pre-pipeline image guidance is in one document
 
 **Primary Reference:** [`IMAGE_STRATEGY_MASTER.md`](IMAGE_STRATEGY_MASTER.md)
 
-This is the single source of truth for:
+This predates the automated pipeline above and is the single source of truth
+for the manual/placeholder-era state:
 - Image specifications (dimensions, formats, file sizes)
 - Device image fallback architecture
 - Card product image handling

@@ -498,7 +498,8 @@
       "leica-q3",
       "sony-a6700"
     ],
-    "notes": "The most hyped camera of 2024. Known for its retro design and exceptional image quality. Extremely high search volume for accessories due to its popularity and limited availability."
+    "notes": "The most hyped camera of 2024. Known for its retro design and exceptional image quality. Extremely high search volume for accessories due to its popularity and limited availability.",
+    "imageUrl": "/img/devices/cameras/fujifilm-x100vi.webp"
   },
   {
     "id": "canon-eos-r50",
@@ -596,7 +597,8 @@
       "sony-a6700",
       "fujifilm-xt5"
     ],
-    "notes": "Canon's flagship APS-C mirrorless camera. Very popular with wildlife and sports photographers seeking high performance without the full-frame cost. Features dual SD UHS-II slots."
+    "notes": "Canon's flagship APS-C mirrorless camera. Very popular with wildlife and sports photographers seeking high performance without the full-frame cost. Features dual SD UHS-II slots.",
+    "imageUrl": "/img/devices/cameras/canon-eos-r7.webp"
   },
   {
     "id": "canon-eos-r10",
@@ -692,7 +694,8 @@
       "sony-a7-iv",
       "nikon-zf"
     ],
-    "notes": "Canon's budget-friendly full-frame option. Popular with hybrid shooters who need both strong photo and video capabilities in a compact form factor. Features a single SD UHS-II card slot."
+    "notes": "Canon's budget-friendly full-frame option. Popular with hybrid shooters who need both strong photo and video capabilities in a compact form factor. Features a single SD UHS-II card slot.",
+    "imageUrl": "/img/devices/cameras/canon-eos-r8.webp"
   },
   {
     "id": "canon-rebel-t7",
@@ -1191,7 +1194,8 @@
       "fujifilm-x100vi",
       "fujifilm-xt30-ii"
     ],
-    "notes": "Released in 2025 as a compact, rangefinder-style option within the Fujifilm X-series lineup. It targets street photographers and enthusiasts who prefer a lightweight camera with classic aesthetics."
+    "notes": "Released in 2025 as a compact, rangefinder-style option within the Fujifilm X-series lineup. It targets street photographers and enthusiasts who prefer a lightweight camera with classic aesthetics.",
+    "imageUrl": "/img/devices/cameras/fujifilm-xe5.webp"
   },
   {
     "id": "fujifilm-x100v",
@@ -1244,7 +1248,8 @@
       "fujifilm-xe5",
       "leica-q2"
     ],
-    "notes": "Previous-generation X100 model. Despite its age, it is still massively popular and often sells at a high price on the used market. High ongoing search volume is driven by the scarcity of the X100VI, pushing buyers towards its still-capable predecessor."
+    "notes": "Previous-generation X100 model. Despite its age, it is still massively popular and often sells at a high price on the used market. High ongoing search volume is driven by the scarcity of the X100VI, pushing buyers towards its still-capable predecessor.",
+    "imageUrl": "/img/devices/cameras/fujifilm-x100v.webp"
   },
   {
     "id": "fujifilm-xt3",
@@ -1815,7 +1820,8 @@
       "nikon-z5",
       "fujifilm-xt5"
     ],
-    "notes": "Released in late 2023, the Nikon Zf has become a highly popular retro-styled full-frame mirrorless camera. It shares core technology with the Z6 III, offering strong performance in a distinct aesthetic package. Features dual SD UHS-II slots."
+    "notes": "Released in late 2023, the Nikon Zf has become a highly popular retro-styled full-frame mirrorless camera. It shares core technology with the Z6 III, offering strong performance in a distinct aesthetic package. Features dual SD UHS-II slots.",
+    "imageUrl": "/img/devices/cameras/nikon-zf.webp"
   },
   {
     "id": "nikon-z50-ii",
@@ -1956,7 +1962,8 @@
       "sony-a7-iv",
       "canon-eos-r6-mark-ii"
     ],
-    "notes": "A popular hybrid full-frame mirrorless camera from its release in 2020. It's highly regarded for its balance of image quality, video features, and ergonomics. Features dual SD UHS-II slots for reliable data management."
+    "notes": "A popular hybrid full-frame mirrorless camera from its release in 2020. It's highly regarded for its balance of image quality, video features, and ergonomics. Features dual SD UHS-II slots for reliable data management.",
+    "imageUrl": "/img/devices/cameras/nikon-z6-ii.webp"
   },
   {
     "id": "nikon-d850",
@@ -2108,7 +2115,8 @@
       "sony-a7-iii",
       "canon-eos-r8"
     ],
-    "notes": "Nikon's popular entry-level full-frame camera. Its dual UHS-II slots are a major selling point in its class."
+    "notes": "Nikon's popular entry-level full-frame camera. Its dual UHS-II slots are a major selling point in its class.",
+    "imageUrl": "/img/devices/cameras/nikon-z5.webp"
   },
   {
     "id": "canon-eos-r100",
@@ -2646,5 +2654,111 @@
       "nikon-z9",
       "canon-eos-r5"
     ]
+  },
+  {
+    "id": "sony-a1-ii",
+    "name": "Sony a1 II",
+    "category": "Cameras",
+    "slug": "sony-a1-ii",
+    "searchTerms": [
+      "sony a1 ii sd card",
+      "sony a1 mark ii memory card",
+      "a1 ii cfexpress"
+    ],
+    "sdCard": {
+      "type": "Dual slots: CFexpress Type A or SD UHS-II",
+      "minSpeed": "V90 (SD), VPG400 (CFexpress)",
+      "minWriteSpeed": "90 MB/s (SD), 400+ MB/s sustained (CFexpress Type A)",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "Sony's flagship 50MP stacked-sensor body shoots 8K/30p and 4K/120p with very high burst rates. Both slots accept CFexpress Type A or SD UHS-II, so CFexpress Type A is recommended as primary for clearing the buffer during 30fps RAW bursts and 8K recording, while a V90 SD card is the right call for the second slot when running dual-slot backup or overflow.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-cfexpress-type-a"
+      },
+      {
+        "id": "sony-tough-g-v90"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need CFexpress Type A, or is SD enough for the a1 II?",
+        "a": "<b>For 8K video and the fastest 30fps RAW bursts, CFexpress Type A is strongly recommended</b> to clear the buffer quickly. <b>For 4K video and standard photography, a V90 SD UHS-II card is perfectly sufficient</b>, making SD a cost-effective choice if you don't shoot 8K regularly."
+      },
+      {
+        "q": "Can I mix CFexpress Type A and SD cards across the two slots?",
+        "a": "<b>Yes, both slots on the a1 II accept either card type independently.</b> <b>A common setup is CFexpress Type A in Slot 1 for primary recording and a V90 SD card in Slot 2 for backup or overflow</b>, balancing performance with cost since CFexpress media is significantly more expensive per gigabyte."
+      },
+      {
+        "q": "Is V60 enough for the a1 II?",
+        "a": "<b>No, Sony specifies V90 as the minimum SD speed class for the a1 II's high-bitrate 4K and 8K modes.</b> <b>V60 cards may cause dropped frames or recording stoppages</b> during demanding bursts or high frame-rate video, so V90 is the safe baseline for SD media in this body."
+      }
+    ],
+    "relatedDevices": [
+      "sony-a7-iv",
+      "canon-eos-r5-mark-ii",
+      "nikon-z9"
+    ],
+    "notes": "Sony's flagship mirrorless body, replacing the original a1. Dual CFexpress Type A / SD UHS-II slots give buyers flexibility between ultimate performance and cost-effective backup."
+  },
+  {
+    "id": "canon-eos-r5-mark-ii",
+    "name": "Canon EOS R5 Mark II",
+    "category": "Cameras",
+    "slug": "canon-eos-r5-mark-ii",
+    "searchTerms": [
+      "canon eos r5 mark ii sd card",
+      "canon r5 ii memory card",
+      "eos r5 mark ii cfexpress"
+    ],
+    "sdCard": {
+      "type": "CFexpress Type B (Slot 1) and SD UHS-II (Slot 2)",
+      "minSpeed": "V90 (SD), VPG400 (CFexpress Type B)",
+      "minWriteSpeed": "90 MB/s (SD), 400+ MB/s sustained (CFexpress Type B)",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "No official limit"
+    },
+    "whySpecs": "Canon's updated 45MP flagship adds a new AI-driven processor and Eye Control AF, supporting 8K RAW video and 30fps burst shooting. Slot 1 is fixed CFexpress Type B (required for 8K RAW and the fastest bursts), while Slot 2 is a separate SD UHS-II slot. When writing to both slots simultaneously, the SD card becomes the bottleneck, so a V90 card is essential to avoid throttling the faster CFexpress card during backup recording.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-cfexpress"
+      },
+      {
+        "id": "sony-tough-g-v90"
+      },
+      {
+        "id": "lexar-professional-1000x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Why does my SD card slow down 8K recording on the R5 Mark II?",
+        "a": "<b>If you're recording to both slots simultaneously, the camera's overall write performance is limited by the slower SD card.</b> <b>For 8K RAW, record to the CFexpress Type B slot only</b>, or use a V90 SD card in the second slot to minimize the gap between the two media types when backup recording is enabled."
+      },
+      {
+        "q": "Is CFexpress Type B required for the R5 Mark II?",
+        "a": "<b>Yes, for 8K RAW video and the fastest electronic shutter burst rates, CFexpress Type B is required.</b> <b>For 4K video and most photography, the SD UHS-II slot with a V60 or V90 card is sufficient</b>, so casual shooters can save money by skipping CFexpress entirely."
+      },
+      {
+        "q": "How is this different from the original EOS R5's SD card needs?",
+        "a": "<b>The Mark II carries over the same dual CFexpress Type B / SD UHS-II slot layout</b>, but its faster sensor readout and AI processing push more data per second in burst and video modes. <b>V90 SD cards are now the recommended baseline</b> rather than V60, to keep pace with the camera's higher-throughput shooting modes."
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r5",
+      "sony-a1-ii",
+      "nikon-z9"
+    ],
+    "notes": "Distinct page from the original Canon EOS R5 — the Mark II has a faster sensor, AI-driven autofocus, and higher burst/buffer demands that push SD card recommendations up to V90."
   }
 ]

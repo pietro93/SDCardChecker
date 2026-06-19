@@ -1193,5 +1193,113 @@
       "dji-mini-4k"
     ],
     "notes": "Budget-friendly entry to the Mini 5 generation (early 2026 release). Replaces older Mini 4K and Mini 2 SE tier. Same V30 requirements as Mini 4 Pro."
+  },
+  {
+    "id": "dji-avata-360",
+    "name": "DJI Avata 360",
+    "category": "Drones",
+    "slug": "dji-avata-360",
+    "searchTerms": [
+      "dji avata 360 sd card",
+      "avata 360 memory card",
+      "dji avata 360 microsd",
+      "best sd card for avata 360"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30 (V60 recommended for thermal margin)",
+      "minWriteSpeed": "30 MB/s minimum, 60 MB/s recommended",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "The Avata 360 records up to 8K (360°) at 60fps with a max video bitrate of 180Mbps, well above what the original Avata 2 demands. Because the camera module sits inside a tightly enclosed cinewhoop-style body with limited airflow, the card runs hotter than in open-frame drones — sustained write speed margin matters more here than raw capacity. A V30 card is the official floor, but V60 gives headroom against thermal throttling so a mid-flight recording doesn't drop out or corrupt.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "lexar-professional-1066x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Why does the Avata 360 need a faster card than the regular Avata 2?",
+        "a": "<b>The 360° 8K/60fps mode pushes up to 180Mbps, noticeably higher than the Avata 2's standard 4K bitrate.</b> <b>The card also sits in a more thermally constrained, enclosed body</b>, so a card that only just clears the V30 floor has less margin before heat-related throttling causes dropped frames or a stopped recording."
+      },
+      {
+        "q": "Is V30 enough, or do I really need V60?",
+        "a": "<b>V30 is DJI's official minimum and will work for most flights.</b> <b>V60 is recommended specifically as thermal insurance</b> — enclosed FPV/cinewhoop bodies run hotter than open drones, and a card running near its speed limit in a hot enclosure is the most common cause of corrupted 360° footage."
+      },
+      {
+        "q": "What capacity should I get for 8K 360° footage?",
+        "a": "<b>128GB-256GB covers most flight days comfortably.</b> 360° 8K footage at 180Mbps fills cards faster than standard 4K, but the bigger risk for this drone is heat-related corruption, not running out of space — prioritize a high-endurance V60 card over maxing out capacity."
+      }
+    ],
+    "relatedDevices": [
+      "dji-avata-2",
+      "dji-neo",
+      "walksnail-moonlight"
+    ],
+    "notes": "FPV/cinewhoop-style 360° drone. Thermal margin in the enclosed body is the primary card-selection concern, not capacity — lead with sustained write speed headroom over raw GB."
+  },
+  {
+    "id": "dji-neo",
+    "name": "DJI Neo",
+    "category": "Drones",
+    "slug": "dji-neo",
+    "searchTerms": [
+      "dji neo sd card",
+      "dji neo memory card",
+      "dji neo microsd",
+      "best sd card for dji neo"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s minimum",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "The Neo is DJI's palm-sized, ultra-light entry drone — no propeller guards to remove, no controller required to start flying, and built around exFAT with 22GB of internal storage as a buffer. It shoots up to 4K/30fps at a 75Mbps max bitrate, well inside what a basic V30 microSD handles comfortably, so the card pick here is about not overthinking it rather than chasing thermal headroom like the enclosed Avata-series bodies need. A V30, A2-rated card from a reputable brand covers continuous flight recording with room to spare.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What's the minimum SD card speed for the DJI Neo?",
+        "a": "<b>V30 is the floor and all most flyers will ever need.</b> The Neo's 75Mbps max bitrate at 4K/30fps is modest compared to the 8K/360° demands of drones like the Avata 360, so there's no need to pay up for V60 or V90-rated microSD cards here."
+      },
+      {
+        "q": "Do I need a high-endurance or thermal-rated card for the Neo?",
+        "a": "<b>No — the Neo's open, ultra-light frame doesn't trap heat the way enclosed cinewhoop bodies do.</b> A standard V30/A2 card from a mainstream brand handles sustained recording without the thermal margin concerns that drive the V60 recommendation on drones like the Avata 360."
+      },
+      {
+        "q": "What capacity should I buy for the DJI Neo?",
+        "a": "<b>64GB-128GB is the sweet spot for most flight days.</b> The Neo also has 22GB of internal storage as a fallback buffer, so there's less pressure to oversize the microSD purchase than on drones without any built-in storage."
+      }
+    ],
+    "relatedDevices": [
+      "dji-avata-360",
+      "dji-mini-5-pro",
+      "dji-avata-2"
+    ],
+    "notes": "Ultra-light/palm-sized entry drone, more casual buyer than Avata. Lead with simplicity/ease-of-use framing — V30/A2 is plenty, no thermal-margin upsell needed like the enclosed cinewhoop bodies."
   }
 ]

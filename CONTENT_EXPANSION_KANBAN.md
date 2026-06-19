@@ -12,12 +12,12 @@
 ## 🔴 Backlog (not started)
 
 ### High priority — flagship margin drivers
-- [ ] **Sony a1 II** — CFexpress Type B as primary, but page must also cover dual SD slot UHS-II V90 config since many buyers shoot dual-slot backup/overflow. High-ticket camera buyers skew toward premium card picks (no budget tier needed).
-- [ ] **Canon EOS R5 Mark II** — Same CFexpress Type B + dual-slot UHS-II V90 framing as the a1 II. Differentiate from the existing `cameras.json` "Canon EOS R5" page rather than merging — Mark II has a different sensor/buffer profile worth its own page.
+- [x] **Sony a1 II** — Shipped as `sony-a1-ii` in `cameras.json`. CFexpress Type A as primary (note: actual slot spec is Type A, not Type B as originally assumed in the backlog note), V90 SD framing for the dual-slot backup/overflow config.
+- [x] **Canon EOS R5 Mark II** — Shipped as `canon-eos-r5-mark-ii` in `cameras.json`. CFexpress Type B (Slot 1, fixed) + SD UHS-II V90 (Slot 2) framing, distinct page from the original `canon-eos-r5`.
 
 ### High priority — drones, thermal + sustained-write framing
-- [ ] **DJI Avata 360** — FPV/cinewhoop audience. Schema should foreground thermal threshold ratings (cards in tight enclosed drone bodies run hot) and guaranteed sustained write speed (V30/V60 minimum) — mid-flight corruption is the core fear to address, not capacity.
-- [ ] **DJI Neo** — Ultra-light/palm drone, more casual buyer than Avata. Still needs the V30 sustained-write framing but can lead with simplicity/ease-of-use rather than thermal stress (smaller, less power-dense than Avata).
+- [x] **DJI Avata 360** — Shipped as `dji-avata-360` in `drones.json`. V30 official floor / V60 recommended for thermal margin in the enclosed cinewhoop body, mid-flight corruption risk foregrounded over capacity.
+- [x] **DJI Neo** — Shipped as `dji-neo` in `drones.json`. V30/A2 simplicity framing (no thermal-margin upsell), 64GB-128GB capacity guidance, 22GB internal storage buffer noted.
 
 ### Medium priority — high-endurance dashcams (currently thin category — only 3 devices)
 - [ ] **Viofo T130 Pro** — Restrict affiliate output strictly to High-Endurance / MLC-pSLC cards rated for continuous overwrite loops. Explicitly warn against standard consumer cards (heat + loop-recording wear kills them early in hot windshields).
@@ -39,12 +39,17 @@
 *(none yet)*
 
 ## ✅ Done
-*(none yet)*
+- [x] **Sony a1 II** (`sony-a1-ii`)
+- [x] **Canon EOS R5 Mark II** (`canon-eos-r5-mark-ii`)
+- [x] **DJI Avata 360** (`dji-avata-360`)
+- [x] **DJI Neo** (`dji-neo`)
+
+*(4/9 shipped — verified via `npm run build:all`, all four pages generate cleanly)*
 
 ---
 
 ## Notes on sequencing
-1. Cameras and drones are the highest-margin, time-sensitive entries (fresh 2026 hardware) — sequence first while the "new hardware + SD card" search window is open.
+1. Cameras and drones are the highest-margin, time-sensitive entries (fresh 2026 hardware) — sequence first while the "new hardware + SD card" search window is open. ✅ Top 3 done (a1 II, R5 Mark II, Avata 360). Next: DJI Neo, then dashcams/audio/CM5.
 2. Dashcams and pro audio are durable, non-time-sensitive niches with low competition — no rush, but worth building out since both categories are currently thin (dashcams: 3 devices; audio: 9 devices).
 3. Compute Module 5 is a single page, can slot in wherever convenient.
 
