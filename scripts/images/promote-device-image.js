@@ -1,7 +1,10 @@
 /**
  * Promotes a staged hero image from img/devices/_review/<slug>.webp into
  * its real category folder, sets the device's imageUrl in its
- * data/categories/*.json entry, and logs attribution for the CC source.
+ * data/categories/*.json entry, and logs the image source.
+ *
+ * Sourced images are copyrighted product photography, NOT freely licensed —
+ * the source log records sourceSite/licenseNote so this stays visible.
  *
  * Usage: node scripts/images/promote-device-image.js <slug>
  */
@@ -51,10 +54,12 @@ function main() {
     : {};
   attributions[slug] = {
     imageUrl,
-    sourcePageUrl: metadata.sourcePageUrl,
-    license: metadata.license,
-    artist: metadata.artist,
-    credit: metadata.credit,
+    sourceSite: metadata.sourceSite,
+    sourceType: metadata.sourceType,
+    productTitle: metadata.productTitle,
+    productUrl: metadata.productUrl,
+    sourceImageUrl: metadata.sourceImageUrl,
+    licenseNote: metadata.licenseNote,
     promotedAt: new Date().toISOString(),
   };
   fs.writeFileSync(ATTRIBUTIONS_PATH, JSON.stringify(attributions, null, 2) + "\n");
@@ -62,7 +67,7 @@ function main() {
 
   console.log(`Promoted ${slug} -> ${imageUrl}`);
   console.log(`Updated ${path.relative(process.cwd(), file)} (imageUrl field)`);
-  console.log(`Logged attribution in img/devices/_attributions.json`);
+  console.log(`Logged source in img/devices/_attributions.json (${metadata.sourceSite}, NOT freely licensed)`);
 }
 
 main();
