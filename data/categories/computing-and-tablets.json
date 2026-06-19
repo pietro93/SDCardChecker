@@ -42,6 +42,52 @@
     "notes": "Targets a huge DIY and technical audience. The card is a mandatory component."
   },
   {
+    "id": "raspberry-pi-compute-module-5",
+    "name": "Raspberry Pi Compute Module 5 (CM5)",
+    "category": "Computing & Tablets",
+    "slug": "raspberry-pi-compute-module-5",
+    "searchTerms": [
+      "raspberry pi cm5 sd card",
+      "compute module 5 storage",
+      "cm5 microsd",
+      "raspberry pi cm5 emmc vs sd"
+    ],
+    "sdCard": {
+      "type": "microSDXC (on carrier board, when not using onboard eMMC)",
+      "minSpeed": "High Endurance rated",
+      "minWriteSpeed": "Sustained continuous-write rating, not burst speed",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "No official limit (carrier-board dependent)"
+    },
+    "whySpecs": "The CM5 is a System-on-Module sold with 0GB (Lite), 16GB, 32GB, or 64GB of <b>onboard eMMC</b> for builders who order it that way. If you're using the Lite SKU with a carrier board's microSD slot instead, this is not a desktop Pi 5 install card — CM5 boards are overwhelmingly deployed as embedded/server hardware running persistent logging, local databases, or always-on services. That workload is continuous overwrite, not occasional boot reads. <b>Ignore A1/A2 speed-class shopping advice here</b> and pick a card rated for sustained write endurance (TBW), the same logic used for dash cams and surveillance recorders, or budget for the onboard eMMC SKU if your carrier board supports it.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Should I buy the CM5 with onboard eMMC or use a microSD card?",
+        "a": "<b>Onboard eMMC is more durable and faster for continuous server workloads</b> if your carrier board and budget support it. If you go with the Lite (0GB) SKU and a microSD card instead, treat the card like dash-cam storage: prioritize write endurance (TBW) over speed class."
+      },
+      {
+        "q": "Do I need a V30 or A2 card for the Compute Module 5?",
+        "a": "<b>No — those speed classes target desktop responsiveness and video bitrate, not this device's actual use case.</b> CM5 boards are typically embedded/server builds running logging or databases 24/7. A High Endurance card (SanDisk MAX ENDURANCE, Samsung PRO Endurance) will outlast a standard A2 card by years under that write pattern."
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-5",
+      "raspberry-pi-4-model-b"
+    ],
+    "notes": "Distinct technical audience from the Pi 5/4/3/Zero pages — embedded/server builders, not desktop users. Page intentionally steers away from standard speed-class picks toward endurance-rated cards."
+  },
+  {
     "id": "samsung-galaxy-tab-s9",
     "name": "Samsung Galaxy Tab S9",
     "category": "Computing & Tablets",

@@ -1135,6 +1135,102 @@
       "notes": "Popular stereo handheld recorder. Supports larger cards than the Zoom H1n, but caps at 128GB."
     },
     {
+      "id": "zoom-h4essential",
+      "name": "Zoom H4essential",
+      "category": "Audio & Hi-Fi",
+      "slug": "zoom-h4essential",
+      "searchTerms": [
+        "zoom h4essential sd card",
+        "zoom h4essential max card size",
+        "zoom h4essential 32-bit float storage",
+        "zoom h4essential microsd"
+      ],
+      "sdCard": {
+        "type": "microSDHC / microSDXC",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "1TB (microSDXC)"
+      },
+      "whySpecs": "The H4essential records up to 6 simultaneous tracks in 32-bit float WAV (plus BWF/iXML support), and 32-bit float files are large even before you add multitrack overhead — there's no clipping to worry about, but file sizes climb fast. Zoom's manual lists microSDHC support from 4GB-32GB and <b>microSDXC support up to 1TB</b>, so the practical ceiling for long multitrack sessions is a 1TB card, not the smaller capacities most recorder pages mention. U3/V30 is enough to keep up with 6-track 32-bit float writes without dropouts.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the maximum SD card size for the Zoom H4essential?",
+          "a": "<b>1TB, using a microSDXC card.</b> The official manual specifies microSDHC support from 4GB to 32GB and microSDXC support up to 1TB — that 1TB ceiling is the number to plan around for long 32-bit float multitrack sessions."
+        },
+        {
+          "q": "Do I need a fast card for 32-bit float recording on the H4essential?",
+          "a": "<b>Yes — use a U3/V30-rated card.</b> Recording up to 6 simultaneous tracks in 32-bit float WAV produces a high sustained data rate. A V30 card keeps pace without dropped frames or write errors during long sessions."
+        }
+      ],
+      "relatedDevices": [
+        "zoom-h6",
+        "zoom-h1n-vp",
+        "tascam-portacapture-x6"
+      ],
+      "notes": "Newer flagship handheld Zoom recorder. 32-bit float multitrack recording with a stated 1TB microSDXC ceiling — the specific data point this audience searches for."
+    },
+    {
+      "id": "tascam-portacapture-x6",
+      "name": "Tascam Portacapture X6",
+      "category": "Audio & Hi-Fi",
+      "slug": "tascam-portacapture-x6",
+      "searchTerms": [
+        "tascam portacapture x6 sd card",
+        "portacapture x6 max card size",
+        "tascam x6 32-bit float storage",
+        "portacapture x6 microsd"
+      ],
+      "sdCard": {
+        "type": "microSDHC / microSDXC",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "512GB (microSDXC)"
+      },
+      "whySpecs": "The Portacapture X6 is a 6-track stereo recorder capable of up to 96kHz/32-bit floating point recording, and Tascam officially supports microSDXC cards up to <b>512GB</b>. Multitrack 32-bit float projects at high sample rates fill cards quickly, so the practical buying advice is to size up (256GB-512GB) rather than buy the smallest card that fits a single session. A V30-rated card comfortably handles the sustained 6-track write load.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "lexar-professional-silver-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the maximum SD card size for the Tascam Portacapture X6?",
+          "a": "<b>512GB, using a microSDXC card.</b> That's the official ceiling — there's no need to shop for 1TB cards for this device, but a 256GB-512GB card is worth the upgrade over a smaller one given how fast 6-track 32-bit float projects fill storage."
+        },
+        {
+          "q": "How is the Portacapture X6 different from the Tascam DR-05X?",
+          "a": "<b>The X6 is a 6-track multitrack recorder; the DR-05X is stereo-only.</b> The X6 targets musicians and field recordists building multitrack projects at up to 96kHz/32-bit float, which needs far more storage headroom than the DR-05X's simple stereo WAV files."
+        }
+      ],
+      "relatedDevices": [
+        "zoom-h4essential",
+        "tascam-dr-05x",
+        "zoom-h6"
+      ],
+      "notes": "6-track multitrack recorder, distinct from the simpler stereo-only DR-05X already on the site. 512GB official capacity ceiling is the key search data point."
+    },
+    {
       "id": "canon-eos-r5",
       "name": "Canon EOS R5",
       "category": "Cameras",
@@ -3939,6 +4035,52 @@
       "notes": "Targets a huge DIY and technical audience. The card is a mandatory component."
     },
     {
+      "id": "raspberry-pi-compute-module-5",
+      "name": "Raspberry Pi Compute Module 5 (CM5)",
+      "category": "Computing & Tablets",
+      "slug": "raspberry-pi-compute-module-5",
+      "searchTerms": [
+        "raspberry pi cm5 sd card",
+        "compute module 5 storage",
+        "cm5 microsd",
+        "raspberry pi cm5 emmc vs sd"
+      ],
+      "sdCard": {
+        "type": "microSDXC (on carrier board, when not using onboard eMMC)",
+        "minSpeed": "High Endurance rated",
+        "minWriteSpeed": "Sustained continuous-write rating, not burst speed",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "No official limit (carrier-board dependent)"
+      },
+      "whySpecs": "The CM5 is a System-on-Module sold with 0GB (Lite), 16GB, 32GB, or 64GB of <b>onboard eMMC</b> for builders who order it that way. If you're using the Lite SKU with a carrier board's microSD slot instead, this is not a desktop Pi 5 install card — CM5 boards are overwhelmingly deployed as embedded/server hardware running persistent logging, local databases, or always-on services. That workload is continuous overwrite, not occasional boot reads. <b>Ignore A1/A2 speed-class shopping advice here</b> and pick a card rated for sustained write endurance (TBW), the same logic used for dash cams and surveillance recorders, or budget for the onboard eMMC SKU if your carrier board supports it.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-max-endurance"
+        },
+        {
+          "id": "samsung-pro-endurance"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Should I buy the CM5 with onboard eMMC or use a microSD card?",
+          "a": "<b>Onboard eMMC is more durable and faster for continuous server workloads</b> if your carrier board and budget support it. If you go with the Lite (0GB) SKU and a microSD card instead, treat the card like dash-cam storage: prioritize write endurance (TBW) over speed class."
+        },
+        {
+          "q": "Do I need a V30 or A2 card for the Compute Module 5?",
+          "a": "<b>No — those speed classes target desktop responsiveness and video bitrate, not this device's actual use case.</b> CM5 boards are typically embedded/server builds running logging or databases 24/7. A High Endurance card (SanDisk MAX ENDURANCE, Samsung PRO Endurance) will outlast a standard A2 card by years under that write pattern."
+        }
+      ],
+      "relatedDevices": [
+        "raspberry-pi-5",
+        "raspberry-pi-4-model-b"
+      ],
+      "notes": "Distinct technical audience from the Pi 5/4/3/Zero pages — embedded/server builders, not desktop users. Page intentionally steers away from standard speed-class picks toward endurance-rated cards."
+    },
+    {
       "id": "samsung-galaxy-tab-s9",
       "name": "Samsung Galaxy Tab S9",
       "category": "Computing & Tablets",
@@ -4869,9 +5011,120 @@
         }
       ],
       "relatedDevices": [
-        "generic-4k-dashcam"
+        "generic-4k-dashcam",
+        "viofo-t130-pro"
       ],
       "notes": "Professional dual-channel dash cam. Requires dual High Endurance cards for reliable operation."
+    },
+    {
+      "id": "viofo-t130-pro",
+      "name": "Viofo T130 Pro",
+      "category": "Dash Cams",
+      "slug": "viofo-t130-pro",
+      "searchTerms": [
+        "viofo t130 pro sd card",
+        "viofo t130 pro memory card",
+        "viofo t130 pro microsd",
+        "best sd card for viofo t130 pro"
+      ],
+      "imageUrl": "/img/devices/dashcam-generic.jpg",
+      "sdCard": {
+        "type": "microSD UHS-I (U3)",
+        "minSpeed": "U3",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "256GB"
+      },
+      "whySpecs": "Viofo specifically restricts the T130 Pro to UHS-I U3-rated, dashcam/high-endurance microSD cards — not general-purpose consumer cards. The camera loop-records continuously, overwriting old footage in a cycle that wears out standard cards within weeks in a hot windshield environment. Viofo caps supported capacity at 256GB, with 128GB called out as the preferable, more reliable size.",
+      "recommendedBrands": [
+        {
+          "id": "samsung-pro-endurance"
+        },
+        {
+          "id": "sandisk-max-endurance"
+        },
+        {
+          "id": "topesel-high-endurance"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I use a regular fast microSD card in the T130 Pro?",
+          "a": "<b>No — Viofo's own guidance restricts the T130 Pro to U3-rated, dashcam/high-endurance cards.</b> Standard consumer cards aren't built for continuous loop-overwrite recording and tend to fail within weeks of dash cam use, especially in hot windshield-mounted conditions."
+        },
+        {
+          "q": "What's the maximum card size for the T130 Pro?",
+          "a": "<b>256GB is the maximum supported capacity</b>, with <b>128GB called out as preferable</b> for reliability. Bigger isn't automatically better here — Viofo's guidance favors a properly rated endurance card over maxing out capacity."
+        },
+        {
+          "q": "Why do dash cam cards need to be 'high-endurance'?",
+          "a": "<b>The T130 Pro continuously overwrites old footage in a loop</b>, which wears out standard consumer microSD cards far faster than normal photo/video use. High-endurance cards are built with this write/erase cycle pattern in mind and last years instead of weeks."
+        }
+      ],
+      "relatedDevices": [
+        "viofo-a229-pro",
+        "nextbase-iq-4k",
+        "generic-4k-dashcam"
+      ],
+      "notes": "Restrict affiliate output strictly to High-Endurance/U3 cards rated for continuous overwrite loops. Explicitly warn against standard consumer cards — heat + loop-recording wear kills them early in hot windshields. Per Viofo's own guidance, max 256GB, 128GB preferable."
+    },
+    {
+      "id": "nextbase-iq-4k",
+      "name": "Nextbase iQ 4K",
+      "category": "Dash Cams",
+      "slug": "nextbase-iq-4k",
+      "searchTerms": [
+        "nextbase iq 4k sd card",
+        "nextbase iq memory card",
+        "nextbase iq 4k microsd",
+        "best sd card for nextbase iq"
+      ],
+      "imageUrl": "/img/devices/dashcam-generic.jpg",
+      "sdCard": {
+        "type": "microSD UHS-I (U3)",
+        "minSpeed": "U3",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "The Nextbase iQ is built around continuous loop recording with cloud/AI features layered on top, which pushes the camera toward higher-bitrate 4K capture than a typical dash cam. Nextbase's own guidance recommends U3-rated dashcam-compatible cards, calling out Nextbase-branded or SanDisk High Endurance (U3) cards specifically — with periodic reformatting recommended to manage wear from the continuous overwrite loop.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-max-endurance"
+        },
+        {
+          "id": "samsung-pro-endurance"
+        },
+        {
+          "id": "topesel-high-endurance"
+        }
+      ],
+      "faq": [
+        {
+          "q": "What SD card does Nextbase recommend for the iQ 4K?",
+          "a": "<b>Nextbase's guidance points to U3-rated dashcam-compatible cards</b>, specifically calling out Nextbase-branded cards or SanDisk High Endurance (U3) as preferred options. General-purpose consumer cards aren't built for the iQ's continuous loop-overwrite recording."
+        },
+        {
+          "q": "What capacity should I get for the iQ 4K's cloud/AI features?",
+          "a": "<b>256GB-512GB is recommended.</b> The iQ's cloud/AI features push higher-bitrate 4K capture than a typical dash cam, so capacity guidance skews larger here than on simpler dashcam models."
+        },
+        {
+          "q": "Do I need to do anything to maintain the card over time?",
+          "a": "<b>Yes — Nextbase recommends periodically reformatting the card.</b> Continuous loop recording wears down even high-endurance cards over time, and a periodic reformat helps maintain reliable write performance."
+        }
+      ],
+      "relatedDevices": [
+        "viofo-t130-pro",
+        "viofo-a229-pro",
+        "generic-4k-dashcam"
+      ],
+      "notes": "Same High-Endurance-only framing as T130 Pro. Nextbase's cloud/AI features push higher bitrate 4K, so capacity guidance skews larger (256GB+) alongside the endurance requirement. No authoritative Nextbase source found stating a specific write-class floor (e.g. V30) for this model — copy is tied to U3 + dashcam/high-endurance rather than asserting V30."
     },
     {
       "id": "dji-mini-4-pro",
@@ -8390,8 +8643,8 @@
     }
   ],
   "metadata": {
-    "generated": "2026-06-19T09:16:41.950Z",
-    "totalDevices": 176,
+    "generated": "2026-06-19T09:19:35.796Z",
+    "totalDevices": 181,
     "categories": [
       "Action Cameras",
       "Audio & Hi-Fi",

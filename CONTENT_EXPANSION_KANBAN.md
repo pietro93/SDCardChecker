@@ -20,15 +20,15 @@
 - [x] **DJI Neo** — Shipped as `dji-neo` in `drones.json`. V30/A2 simplicity framing (no thermal-margin upsell), 64GB-128GB capacity guidance, 22GB internal storage buffer noted.
 
 ### Medium priority — high-endurance dashcams (currently thin category — only 3 devices)
-- [ ] **Viofo T130 Pro** — Restrict affiliate output strictly to High-Endurance / MLC-pSLC cards rated for continuous overwrite loops. Explicitly warn against standard consumer cards (heat + loop-recording wear kills them early in hot windshields).
-- [ ] **Nextbase iQ 4K** — Same High-Endurance-only framing as T130 Pro. Nextbase's cloud/AI features push higher bitrate 4K, so capacity guidance should skew larger (256GB+) alongside the endurance requirement.
+- [x] **Viofo T130 Pro** — Shipped as `viofo-t130-pro` in `dash-cams.json`. U3/high-endurance-only framing, max 256GB / 128GB-preferable capacity guidance per Viofo's own card guidance.
+- [x] **Nextbase iQ 4K** — Shipped as `nextbase-iq-4k` in `dash-cams.json`. Same U3/high-endurance framing, 256GB-512GB skew for cloud/AI-driven higher bitrate, periodic-reformat maintenance note.
 
 ### Medium priority — single-board home labs
-- [ ] **Raspberry Pi Compute Module 5** — Distinct technical audience from the existing Pi 5/4/3/Zero pages. Skip standard speed-class recommendations entirely; focus copy on continuous write endurance for persistent server logging / local databases (the CM5 is bought for embedded/server use, not desktop replacement).
+- [x] **Raspberry Pi Compute Module 5** — Shipped as `raspberry-pi-compute-module-5` in `computing-and-tablets.json`. Endurance-only framing (no A1/A2 speed-class advice), eMMC-vs-microSD tradeoff called out.
 
 ### Ready to build — pro audio (underserved niche, low keyword difficulty)
-- [ ] **Zoom H4essential** — Audio-and-hi-fi category already has Zoom H1n-VP/H6, so reuse that page's tone but lead with max card capacity limits for 32-bit float multitrack recording — that's the specific data point this audience searches for and currently can't find clearly stated anywhere.
-- [ ] **Tascam Portacapture X6** — Same 32-bit float capacity-ceiling framing as H4essential. Differentiate from Tascam DR-05X (budget/simple) by emphasizing multitrack project sizes (X6 is a 6-track recorder, DR-05X is stereo-only).
+- [x] **Zoom H4essential** — Shipped as `zoom-h4essential` in `audio-and-hi-fi.json`. 32-bit float multitrack framing, 1TB microSDXC ceiling per official manual.
+- [x] **Tascam Portacapture X6** — Shipped as `tascam-portacapture-x6` in `audio-and-hi-fi.json`. Same 32-bit float framing, 512GB official ceiling, differentiated from DR-05X via multitrack vs. stereo-only.
 
 ---
 
@@ -43,15 +43,22 @@
 - [x] **Canon EOS R5 Mark II** (`canon-eos-r5-mark-ii`)
 - [x] **DJI Avata 360** (`dji-avata-360`)
 - [x] **DJI Neo** (`dji-neo`)
+- [x] **Viofo T130 Pro** (`viofo-t130-pro`)
+- [x] **Nextbase iQ 4K** (`nextbase-iq-4k`)
+- [x] **Raspberry Pi Compute Module 5** (`raspberry-pi-compute-module-5`)
+- [x] **Zoom H4essential** (`zoom-h4essential`)
+- [x] **Tascam Portacapture X6** (`tascam-portacapture-x6`)
 
-*(4/9 shipped — verified via `npm run build:all`, all four pages generate cleanly)*
+*(9/9 shipped — verified via `npm run build:all`, all nine pages generate cleanly)*
 
 ---
 
 ## Notes on sequencing
-1. Cameras and drones are the highest-margin, time-sensitive entries (fresh 2026 hardware) — sequence first while the "new hardware + SD card" search window is open. ✅ Top 3 done (a1 II, R5 Mark II, Avata 360). Next: DJI Neo, then dashcams/audio/CM5.
-2. Dashcams and pro audio are durable, non-time-sensitive niches with low competition — no rush, but worth building out since both categories are currently thin (dashcams: 3 devices; audio: 9 devices).
-3. Compute Module 5 is a single page, can slot in wherever convenient.
+1. Cameras and drones are the highest-margin, time-sensitive entries (fresh 2026 hardware) — sequence first while the "new hardware + SD card" search window is open. ✅ Done (a1 II, R5 Mark II, Avata 360, DJI Neo).
+2. Dashcams and pro audio are durable, non-time-sensitive niches with low competition — no rush, but worth building out since both categories were thin (dashcams: 3→5 devices; audio: 9→11 devices). ✅ Done (Viofo T130 Pro, Nextbase iQ 4K, Zoom H4essential, Tascam Portacapture X6).
+3. Compute Module 5 is a single page, slotted in alongside the rest. ✅ Done.
+
+**Batch complete (9/9 devices, 2026-06-19).** Next: revisit GA top-pages report to see which of these new pages gain traction, and whether dashcams/audio deserve further investment.
 
 ---
 

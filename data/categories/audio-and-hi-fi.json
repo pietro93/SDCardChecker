@@ -405,5 +405,101 @@
       "zoom-h6"
     ],
     "notes": "Popular stereo handheld recorder. Supports larger cards than the Zoom H1n, but caps at 128GB."
+  },
+  {
+    "id": "zoom-h4essential",
+    "name": "Zoom H4essential",
+    "category": "Audio & Hi-Fi",
+    "slug": "zoom-h4essential",
+    "searchTerms": [
+      "zoom h4essential sd card",
+      "zoom h4essential max card size",
+      "zoom h4essential 32-bit float storage",
+      "zoom h4essential microsd"
+    ],
+    "sdCard": {
+      "type": "microSDHC / microSDXC",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB (microSDXC)"
+    },
+    "whySpecs": "The H4essential records up to 6 simultaneous tracks in 32-bit float WAV (plus BWF/iXML support), and 32-bit float files are large even before you add multitrack overhead — there's no clipping to worry about, but file sizes climb fast. Zoom's manual lists microSDHC support from 4GB-32GB and <b>microSDXC support up to 1TB</b>, so the practical ceiling for long multitrack sessions is a 1TB card, not the smaller capacities most recorder pages mention. U3/V30 is enough to keep up with 6-track 32-bit float writes without dropouts.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the maximum SD card size for the Zoom H4essential?",
+        "a": "<b>1TB, using a microSDXC card.</b> The official manual specifies microSDHC support from 4GB to 32GB and microSDXC support up to 1TB — that 1TB ceiling is the number to plan around for long 32-bit float multitrack sessions."
+      },
+      {
+        "q": "Do I need a fast card for 32-bit float recording on the H4essential?",
+        "a": "<b>Yes — use a U3/V30-rated card.</b> Recording up to 6 simultaneous tracks in 32-bit float WAV produces a high sustained data rate. A V30 card keeps pace without dropped frames or write errors during long sessions."
+      }
+    ],
+    "relatedDevices": [
+      "zoom-h6",
+      "zoom-h1n-vp",
+      "tascam-portacapture-x6"
+    ],
+    "notes": "Newer flagship handheld Zoom recorder. 32-bit float multitrack recording with a stated 1TB microSDXC ceiling — the specific data point this audience searches for."
+  },
+  {
+    "id": "tascam-portacapture-x6",
+    "name": "Tascam Portacapture X6",
+    "category": "Audio & Hi-Fi",
+    "slug": "tascam-portacapture-x6",
+    "searchTerms": [
+      "tascam portacapture x6 sd card",
+      "portacapture x6 max card size",
+      "tascam x6 32-bit float storage",
+      "portacapture x6 microsd"
+    ],
+    "sdCard": {
+      "type": "microSDHC / microSDXC",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "512GB (microSDXC)"
+    },
+    "whySpecs": "The Portacapture X6 is a 6-track stereo recorder capable of up to 96kHz/32-bit floating point recording, and Tascam officially supports microSDXC cards up to <b>512GB</b>. Multitrack 32-bit float projects at high sample rates fill cards quickly, so the practical buying advice is to size up (256GB-512GB) rather than buy the smallest card that fits a single session. A V30-rated card comfortably handles the sustained 6-track write load.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-silver-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the maximum SD card size for the Tascam Portacapture X6?",
+        "a": "<b>512GB, using a microSDXC card.</b> That's the official ceiling — there's no need to shop for 1TB cards for this device, but a 256GB-512GB card is worth the upgrade over a smaller one given how fast 6-track 32-bit float projects fill storage."
+      },
+      {
+        "q": "How is the Portacapture X6 different from the Tascam DR-05X?",
+        "a": "<b>The X6 is a 6-track multitrack recorder; the DR-05X is stereo-only.</b> The X6 targets musicians and field recordists building multitrack projects at up to 96kHz/32-bit float, which needs far more storage headroom than the DR-05X's simple stereo WAV files."
+      }
+    ],
+    "relatedDevices": [
+      "zoom-h4essential",
+      "tascam-dr-05x",
+      "zoom-h6"
+    ],
+    "notes": "6-track multitrack recorder, distinct from the simpler stereo-only DR-05X already on the site. 512GB official capacity ceiling is the key search data point."
   }
 ]
