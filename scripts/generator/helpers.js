@@ -289,7 +289,7 @@ function getDeviceImageFallback(device) {
   if (name.includes("raspberry pi")) return "/img/devices/computing/raspberry-placeholder.webp";
   if (name.includes("canon")) return "/img/devices/cameras/canon-placeholder.webp";
   if (name.includes("nikon")) return "/img/devices/cameras/nikon-placeholder.webp";
-  if (name.includes("sony")) return "/img/devices/cameras/sony-placeholder.webp";
+  if (name.includes("sony") && !category.includes("gaming")) return "/img/devices/cameras/sony-placeholder.webp";
   if (name.includes("fujifilm")) return "/img/devices/cameras/fujifilm-placeholder.webp";
   if (name.includes("leica")) return "/img/devices/cameras/leica-q3.webp";
   if (name.includes("panasonic") || name.includes("lumix")) return "/img/devices/cameras/lumix-placeholder.webp";
