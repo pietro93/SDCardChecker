@@ -47,7 +47,7 @@ function salientTokens(name) {
 // instead of the device body) rather than a true match.
 const ACCESSORY_TOKENS = new Set([
   "lens", "kit", "case", "strap", "tripod", "cap", "battery", "charger",
-  "mount", "bundle", "cable", "adapter", "grip", "filter",
+  "mount", "bundle", "cable", "adapter", "grip", "filter", "sticker",
 ]);
 
 function isModelToken(t) {
@@ -170,7 +170,26 @@ async function shopifyCatalog(domain) {
   return products;
 }
 
-async function shopifySource(device, { domain, productTypes } = {}) {
+// Some storefronts list warranty plans, bundles, year variants, and
+// accessories that share all the device's salient tokens (e.g. because the
+// vendor field alone supplies the brand token) but have shorter titles, so
+// they'd win a plain length tie-break over the real/best product photo.
+// `preferTokens` lets a brand config mark words (e.g. "drone", "camera", a
+// model year) that the preferred listing's title uses but the others don't,
+// without changing relevanceScore matching for every other brand.
+function rankCandidates(scored, titleOf, preferTokens) {
+  const matchesPreferred = (title) =>
+    preferTokens && preferTokens.length && preferTokens.some((t) => title.toLowerCase().includes(t));
+
+  return [...scored].sort((a, b) => {
+    const aPref = matchesPreferred(titleOf(a)) ? 1 : 0;
+    const bPref = matchesPreferred(titleOf(b)) ? 1 : 0;
+    if (aPref !== bPref) return bPref - aPref;
+    return b.r.score - a.r.score || titleOf(a).length - titleOf(b).length;
+  });
+}
+
+async function shopifySource(device, { domain, productTypes, preferTokens } = {}) {
   const products = await shopifyCatalog(domain);
 
   let candidates = products;
@@ -178,10 +197,13 @@ async function shopifySource(device, { domain, productTypes } = {}) {
     candidates = candidates.filter((p) => productTypes.includes(p.product_type));
   }
 
-  const scored = candidates
-    .map((p) => ({ p, r: relevanceScore(device.name, `${p.vendor || ""} ${p.title}`) }))
-    .filter((s) => s.r.ok)
-    .sort((a, b) => b.r.score - a.r.score || a.p.title.length - b.p.title.length);
+  const scored = rankCandidates(
+    candidates
+      .map((p) => ({ p, r: relevanceScore(device.name, `${p.vendor || ""} ${p.title}`) }))
+      .filter((s) => s.r.ok),
+    (s) => s.p.title,
+    preferTokens
+  );
 
   if (scored.length === 0) {
     throw new NoCandidatesError(`no matching product for "${device.name}" on ${domain}`);
@@ -201,6 +223,60 @@ async function shopifySource(device, { domain, productTypes } = {}) {
       sourceType: "manufacturer",
       productTitle: product.title,
       productUrl: `${domain}/products/${product.handle}`,
+      sourceImageUrl: picked.url,
+      whiteBorderScore: Number(picked.score.toFixed(2)),
+      licenseNote: "Copyrighted manufacturer product photography — NOT freely licensed.",
+    },
+  };
+}
+
+// ---------------------------------------------------------------------------
+// WooCommerce storefront adapter (manufacturer stores exposing the public
+// Store API at /wp-json/wc/store/v1/products — no auth needed). Distinct from
+// shopifySource() because the search is server-side (?search=) rather than a
+// full-catalog dump, and the response shape differs (name/permalink/images
+// instead of title/handle/images).
+// ---------------------------------------------------------------------------
+
+async function wooCommerceSearch(domain, query) {
+  const url = `${domain}/wp-json/wc/store/v1/products?search=${encodeURIComponent(query)}&per_page=20`;
+  const res = await fetch(url, { headers: { "User-Agent": UA } });
+  const ct = res.headers.get("content-type") || "";
+  if (!res.ok || !ct.includes("json")) {
+    throw new Error(`${domain} did not serve a WooCommerce Store API response (status ${res.status}, ${ct})`);
+  }
+  return res.json();
+}
+
+async function wooCommerceSource(device, { domain, preferTokens, query } = {}) {
+  const products = await wooCommerceSearch(domain, query || device.name);
+
+  const scored = rankCandidates(
+    products
+      .map((p) => ({ p, r: relevanceScore(device.name, p.name) }))
+      .filter((s) => s.r.ok),
+    (s) => s.p.name,
+    preferTokens
+  );
+
+  if (scored.length === 0) {
+    throw new NoCandidatesError(`no matching product for "${device.name}" on ${domain}`);
+  }
+
+  const product = scored[0].p;
+  const imageUrls = (product.images || []).map((im) => im.src).filter(Boolean);
+  if (imageUrls.length === 0) {
+    throw new NoSuitableCandidateError(`matched "${product.name}" but it has no images`);
+  }
+  const picked = await pickCleanestImage(imageUrls);
+
+  return {
+    buffer: picked.buffer,
+    meta: {
+      sourceSite: new URL(domain).hostname,
+      sourceType: "manufacturer",
+      productTitle: product.name,
+      productUrl: product.permalink,
       sourceImageUrl: picked.url,
       whiteBorderScore: Number(picked.score.toFixed(2)),
       licenseNote: "Copyrighted manufacturer product photography — NOT freely licensed.",
@@ -255,9 +331,32 @@ async function groverSource(device, { query } = {}) {
 // Brand registry: device name -> manufacturer storefront adapter
 // ---------------------------------------------------------------------------
 
+// Brands checked but deliberately NOT registered (2026-06-19):
+//   - ayn (ayntec.com): Shopify, but our only AYN device is the combo-named
+//     "AYN Odin 3 / Odin 2 Portal" — no single product can satisfy both
+//     halves under the all-salient-tokens rule, so it's a guaranteed
+//     NoCandidatesError. Add only if a single-model AYN device is added.
+//   - skydio (shop.skydio.com): Shopify, but the store sells accessories
+//     only (Beacon, Battery, Controller, microSD) — no drone body listing
+//     to source a hero photo from.
 const BRAND_REGISTRY = [
   // brand: matched case-insensitively against the start of the device name.
   { brand: "anbernic", source: shopifySource, config: { domain: "https://anbernic.com", productTypes: ["游戏机"] } },
+  { brand: "trimui", source: shopifySource, config: { domain: "https://trimui.net" } },
+  { brand: "analogue", source: shopifySource, config: { domain: "https://store.analogue.co", productTypes: ["Console"] } },
+  { brand: "autel", source: shopifySource, config: { domain: "https://shop.autelrobotics.com", productTypes: ["drone"] } },
+  { brand: "potensic", source: shopifySource, config: { domain: "https://store.potensic.com", productTypes: ["Drones"] } },
+  { brand: "holy stone", source: shopifySource, config: { domain: "https://store.holystone.com", productTypes: ["Drones"] } },
+  // HoverAir's storefront lists warranty plans ("HOVERCare"), bundles ("for
+  // Skiing"/"for Cycling"), and accessories that share the device's salient
+  // tokens but have shorter titles than the real listing — preferTokens
+  // breaks the tie toward the listing that actually reads like a product.
+  { brand: "hoverair", source: shopifySource, config: { domain: "https://us.hoverair.com", preferTokens: ["drone", "camera"] } },
+  // gpdstore.net is WooCommerce, not Shopify — uses the public Store API
+  // (wooCommerceSource) instead. The catalog lists separate "GPD WIN Mini"
+  // listings per model year; preferTokens nudges toward the newest revision
+  // instead of the shortest title (the original 2023 listing).
+  { brand: "gpd", source: wooCommerceSource, config: { domain: "https://gpdstore.net", preferTokens: ["2025"] } },
 ];
 
 function lookupBrand(device) {
@@ -300,6 +399,7 @@ async function resolveDeviceImage(device, { query } = {}) {
 module.exports = {
   resolveDeviceImage,
   shopifySource,
+  wooCommerceSource,
   groverSource,
   relevanceScore,
   salientTokens,

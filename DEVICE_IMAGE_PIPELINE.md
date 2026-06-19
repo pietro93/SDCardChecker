@@ -42,7 +42,7 @@ Earlier candidate sources were rejected:
 
 | File | Role |
 |---|---|
-| `image-sources.js` | Resolves a product photo: manufacturer Shopify storefront first (`BRAND_REGISTRY`), Grover marketplace fallback. Contains the relevance matcher (`relevanceScore`) that decides whether a candidate product is actually the right device. |
+| `image-sources.js` | Resolves a product photo: manufacturer storefront first (`BRAND_REGISTRY`, Shopify via `shopifySource` or WooCommerce via `wooCommerceSource`), Grover marketplace fallback. Contains the relevance matcher (`relevanceScore`) that decides whether a candidate product is actually the right device. |
 | `composite.js` | Chroma-keys the white studio background off the product photo (border flood-fill, so a light/silver device body survives), then layers it onto `background.webp` + `background-overlay.webp` with a soft glow. |
 | `fetch-core.js` | Glues sourcing + compositing together for one device; writes the staged `.webp` + metadata `.json` into `img/devices/_review/`. Per-category `CATEGORY_SCALE` controls how large the device renders. |
 | `fetch-device-image.js` | CLI: fetch + stage one device by slug. |
@@ -104,33 +104,44 @@ file yet (see Known gaps below).
 
 ## Adding a manufacturer storefront
 
-Manufacturer storefronts are tried before Grover and are checked via Shopify's
-public `/products.json` endpoint. To add one, append to `BRAND_REGISTRY` in
+Manufacturer storefronts are tried before Grover. Most run Shopify, checked
+via the public `/products.json` endpoint; append to `BRAND_REGISTRY` in
 `image-sources.js`:
 
 ```js
-{ brand: "gpd", source: shopifySource, config: { domain: "https://gpd.hk", productTypes: ["Handheld"] } },
+{ brand: "potensic", source: shopifySource, config: { domain: "https://store.potensic.com", productTypes: ["Drones"] } },
 ```
 
 `brand` is matched case-insensitively against the start of (or as a whole
 word within) the device name. Not every manufacturer runs Shopify — check
-`<domain>/products.json` in a browser first; if it 404s or isn't JSON, the
-manufacturer needs a bespoke adapter (or is unreachable, like OneXPlayer's
-bot-protected store, which needs a headless-browser fetch instead).
+`<domain>/products.json` in a browser first; if it 404s or isn't JSON, check
+for a WooCommerce store instead (`<domain>/wp-json/wc/store/v1/products?search=...`
+— no auth needed if it's open) and use `wooCommerceSource` (see the `gpd`
+entry in `BRAND_REGISTRY` for the pattern). If neither API is open, the
+manufacturer needs a bespoke adapter or is unreachable like OneXPlayer's
+bot-protected store, which needs a headless-browser fetch instead.
+
+Some storefronts mix the real product listing in with warranty plans,
+bundles, or year variants that share every salient token and have a shorter
+title, so they'd otherwise win the relevance tie-break. Both `shopifySource`
+and `wooCommerceSource` accept a `preferTokens: [...]` config — words (e.g.
+"drone", "camera", a model year) that the genuine listing's title contains
+but the others don't — to break the tie correctly. Always verify empirically
+against the live catalog before relying on it (see the `hoverair` and `gpd`
+entries for examples).
 
 ## Known gaps / next steps
 
 - **OneXPlayer** store is bot-protected (JS challenge) — needs a Playwright-driven
   fetch, not the plain `fetch()` adapters here.
-- Most drone brands (Autel, Skydio, Potensic, Holy Stone, HoverAir) and
-  handheld brands (GPD, Ayn, TrimUI, Analogue) have no `BRAND_REGISTRY`
-  adapter yet — worth checking each for a Shopify `/products.json` (note: DJI
-  is not Shopify).
+- Skydio's store (Shopify) sells accessories only, no drone body listing.
+- AYN's only catalog device is a combo name ("Odin 3 / Odin 2 Portal") that
+  can't satisfy the all-salient-tokens rule against a single product — add an
+  adapter only if a single-model AYN device is added.
 - High-end/older cameras (Nikon DSLRs, Sony Alpha, Panasonic Lumix), Raspberry
-  Pi boards, and most drones aren't stocked by Grover and have no
+  Pi boards, and most other drones aren't stocked by Grover and have no
   manufacturer adapter — likely to stay on placeholders without dedicated
   adapters.
 - The matcher's regression cases (covering the 5 false-positive classes
-  above) have only been run inline, never committed. Consider adding
-  `scripts/images/__tests__/relevanceScore.test.js` so a future tweak can't
-  silently reintroduce one of them.
+  above) are committed at `scripts/images/__tests__/relevanceScore.test.js`
+  (`npm run test:images`) — run before/after touching `relevanceScore()`.
