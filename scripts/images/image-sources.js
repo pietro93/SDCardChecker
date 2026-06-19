@@ -17,9 +17,13 @@ const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 class NoCandidatesError extends Error {}
 class NoSuitableCandidateError extends Error {}
 
-// Words too generic to discriminate one model from another.
+// Words too generic to discriminate one model from another. Deliberately does
+// NOT include product-line words like "mini"/"pro"/"max"/"se"/"plus" — those
+// discriminate real SKUs (DJI Mini vs Air vs Mavic; iPhone Pro vs Pro Max)
+// and dropping them caused cross-product false matches (e.g. "DJI Mini 3
+// Pro" collapsing to just brand token "dji" and matching "DJI Action 3").
 const GENERIC_TOKENS = new Set([
-  "black", "white", "plus", "pro", "max", "mini", "se", "gen", "edition", "series",
+  "black", "white", "gen", "edition", "series",
   "the", "and", "with", "for", "ai", "ex", "console", "handheld",
 ]);
 
@@ -33,7 +37,9 @@ function rawTokens(name) {
 }
 
 function salientTokens(name) {
-  return rawTokens(name).filter((t) => t.length >= 2 && !GENERIC_TOKENS.has(t));
+  // Single-character alpha tokens are usually noise, but single-digit model
+  // numbers (DJI "Mini 3", "Mini 5") are real discriminators — keep them.
+  return rawTokens(name).filter((t) => (t.length >= 2 || /\d/.test(t)) && !GENERIC_TOKENS.has(t));
 }
 
 // Accessory/part words that, if present in a candidate but absent from the
@@ -82,6 +88,16 @@ function relevanceScore(deviceName, candidateText) {
     return { score: 0, want: want.length, ok: false };
   }
 
+  // "+"/"Plus" denotes a distinct, larger SKU (e.g. "Tab S10 FE" vs "Tab S10
+  // FE+") that plain tokenization can't see (the "+" glyph splits to nothing).
+  // Both sides must agree on whether this is the "plus" variant.
+  // Only a "+" glued directly to a word (e.g. "FE+") counts — a " + " with
+  // spaces on both sides is usually a separator (e.g. "Camera + Lens kit").
+  const isPlusVariant = (text) => /[a-z0-9]\+/i.test(text) || /\bplus\b/i.test(text);
+  if (isPlusVariant(deviceName) !== isPlusVariant(candidateText)) {
+    return { score: 0, want: want.length, ok: false };
+  }
+
   const wantAccessory = want.some((t) => ACCESSORY_TOKENS.has(t));
   const hayHasAccessory = [...ACCESSORY_TOKENS].some((t) => tokenMatches(hay, t));
   if (hayHasAccessory && !wantAccessory) {
@@ -89,7 +105,11 @@ function relevanceScore(deviceName, candidateText) {
   }
 
   const hit = want.filter((t) => tokenMatches(hay, t));
-  return { score: hit.length, want: want.length, ok: hit.length >= Math.max(2, Math.ceil(want.length * 0.6)) };
+  // Every salient token (brand, product line, category word like "chromebook")
+  // must be present — a partial match risks pairing the device with a
+  // different but textually-similar product (e.g. "Chromebook 14" matching a
+  // "Pavilion Plus 14" laptop because both share brand + the number "14").
+  return { score: hit.length, want: want.length, ok: hit.length === want.length };
 }
 
 async function download(url) {

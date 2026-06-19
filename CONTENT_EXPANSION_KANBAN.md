@@ -1,4 +1,56 @@
-# Content Expansion Kanban — Gaming Handhelds
+# Content Expansion Kanban — 2026 Heavy Hitters
+
+**Created:** 2026-06-19
+**Trigger:** Gaming Handhelds batch (previous kanban, archived below) shipped 9/9 devices. Moving on to four under-covered categories flagged for 2026 hardware: flagship mirrorless cameras, next-gen drones, high-endurance dashcams, and pro audio recorders, plus one single-board-computer gap.
+
+**Pre-check against existing dataset (2026-06-19):** Verified each proposed device against `data/categories/*.json` before adding to backlog.
+- ⚠️ **Dropped from backlog:** "360 Action Cameras (Insta360 X4, GoPro Max 2)" — both devices **already exist** in `action-cameras.json`. No page gap here; not added below.
+- Confirmed genuinely missing: Sony a1 II, Canon EOS R5 Mark II (cameras.json has the originals, not these), DJI Avata 360 + DJI Neo (drones.json has Avata 2, not these), Viofo T130 Pro + Nextbase iQ 4K (dash-cams.json only has 3 devices total — A229 Pro, 622GW, Tesla/Generic), Raspberry Pi Compute Module 5 (computing-and-tablets.json has Pi 5/4/3/Zero 2W, not CM5), Zoom H4essential + Tascam Portacapture X6 (audio-and-hi-fi.json has Zoom H1n-VP/H6 and Tascam DR-05X, not these).
+
+---
+
+## 🔴 Backlog (not started)
+
+### High priority — flagship margin drivers
+- [ ] **Sony a1 II** — CFexpress Type B as primary, but page must also cover dual SD slot UHS-II V90 config since many buyers shoot dual-slot backup/overflow. High-ticket camera buyers skew toward premium card picks (no budget tier needed).
+- [ ] **Canon EOS R5 Mark II** — Same CFexpress Type B + dual-slot UHS-II V90 framing as the a1 II. Differentiate from the existing `cameras.json` "Canon EOS R5" page rather than merging — Mark II has a different sensor/buffer profile worth its own page.
+
+### High priority — drones, thermal + sustained-write framing
+- [ ] **DJI Avata 360** — FPV/cinewhoop audience. Schema should foreground thermal threshold ratings (cards in tight enclosed drone bodies run hot) and guaranteed sustained write speed (V30/V60 minimum) — mid-flight corruption is the core fear to address, not capacity.
+- [ ] **DJI Neo** — Ultra-light/palm drone, more casual buyer than Avata. Still needs the V30 sustained-write framing but can lead with simplicity/ease-of-use rather than thermal stress (smaller, less power-dense than Avata).
+
+### Medium priority — high-endurance dashcams (currently thin category — only 3 devices)
+- [ ] **Viofo T130 Pro** — Restrict affiliate output strictly to High-Endurance / MLC-pSLC cards rated for continuous overwrite loops. Explicitly warn against standard consumer cards (heat + loop-recording wear kills them early in hot windshields).
+- [ ] **Nextbase iQ 4K** — Same High-Endurance-only framing as T130 Pro. Nextbase's cloud/AI features push higher bitrate 4K, so capacity guidance should skew larger (256GB+) alongside the endurance requirement.
+
+### Medium priority — single-board home labs
+- [ ] **Raspberry Pi Compute Module 5** — Distinct technical audience from the existing Pi 5/4/3/Zero pages. Skip standard speed-class recommendations entirely; focus copy on continuous write endurance for persistent server logging / local databases (the CM5 is bought for embedded/server use, not desktop replacement).
+
+### Ready to build — pro audio (underserved niche, low keyword difficulty)
+- [ ] **Zoom H4essential** — Audio-and-hi-fi category already has Zoom H1n-VP/H6, so reuse that page's tone but lead with max card capacity limits for 32-bit float multitrack recording — that's the specific data point this audience searches for and currently can't find clearly stated anywhere.
+- [ ] **Tascam Portacapture X6** — Same 32-bit float capacity-ceiling framing as H4essential. Differentiate from Tascam DR-05X (budget/simple) by emphasizing multitrack project sizes (X6 is a 6-track recorder, DR-05X is stereo-only).
+
+---
+
+## 🟡 Ready for build (spec drafted, awaiting JSON entry)
+*(none yet — move items here once specs/FAQs are drafted)*
+
+## 🟢 In Progress
+*(none yet)*
+
+## ✅ Done
+*(none yet)*
+
+---
+
+## Notes on sequencing
+1. Cameras and drones are the highest-margin, time-sensitive entries (fresh 2026 hardware) — sequence first while the "new hardware + SD card" search window is open.
+2. Dashcams and pro audio are durable, non-time-sensitive niches with low competition — no rush, but worth building out since both categories are currently thin (dashcams: 3 devices; audio: 9 devices).
+3. Compute Module 5 is a single page, can slot in wherever convenient.
+
+---
+
+# Archive — Gaming Handhelds Kanban (completed 2026-06-18/19)
 
 **Created:** 2026-06-18
 **Trigger:** Site exited Google sandbox, first real revenue (€147.85 / 30 days). Gaming Handhelds is the 3rd largest category (24 devices) but punches above its weight in the top-50 pages report (Retroid Pocket 6 #2, Miyoo Mini Plus #6, Lenovo Legion Go S #8, Steam Deck #37, ASUS ROG Ally X #47, Analogue Pocket #35).
