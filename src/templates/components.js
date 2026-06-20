@@ -344,7 +344,7 @@ function generateSidebar() {
       <i :class="open ? 'fas fa-chevron-up' : 'fas fa-chevron-down'" class="text-xs"></i>
     </button>
     <ul x-show="open" class="mt-2 ml-3 space-y-2 border-l border-slate-200 pl-3">
-      <li><a href="/categories/audio-hi-fi/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Audio & Hi-Fi</a></li>
+      <li><a href="/categories/audio-and-hi-fi/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Audio & Hi-Fi</a></li>
       <li><a href="/categories/security-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Security Cameras</a></li>
     </ul>
   </li>
