@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { generateHeader, generateFooter, generateSidebar } = require('../../src/templates/components.js');
-const { writeFile, getCardImageFallback, generateFAQHTML, generateFAQSchema, generateBreadcrumbSchema } = require('./helpers');
+const { writeFile, getCardImageFallback, getCarImageFallback, generateFAQHTML, generateFAQSchema, generateBreadcrumbSchema } = require('./helpers');
 
 const BASE_URL = 'https://sdcardchecker.com';
 
@@ -110,6 +110,28 @@ function generateCarPages(distPath) {
         ? `${topCard.pros} ${vehicle.carModel} owners get ${topCard.specs?.mapYear || '2025'} maps covering ${topCard.specs?.mapRegion || 'North America'}.`
         : vehicle.seoDescription;
 
+     // Hero: real vehicle photo when sourced, gradient + car icon placeholder otherwise
+     const heroImage = getCarImageFallback(vehicle);
+     const heroHtml = heroImage
+        ? `<div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative">
+                <img src="${heroImage}" alt="${vehicle.carModel} navigation SD card" class="w-full object-cover hero-image" width="1200" height="350" loading="lazy" />
+                <div class="hero-overlay">
+                    <h1 class="hero-title" style="color: #ffffff;">
+                        Best Navigation SD Card for ${vehicle.carModel}
+                    </h1>
+                </div>
+            </div>`
+        : `<div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative" style="background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%); min-height: 220px;">
+                <div class="hero-overlay" style="background: linear-gradient(135deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.1) 100%);">
+                    <div class="text-center px-4">
+                        <i class="fas fa-car-side text-white text-4xl mb-3 opacity-80"></i>
+                        <h1 class="hero-title" style="color: #ffffff;">
+                            Best Navigation SD Card for ${vehicle.carModel}
+                        </h1>
+                    </div>
+                </div>
+            </div>`;
+
      const breadcrumbSchema = generateBreadcrumbSchema([
         { name: 'Home', url: '/' },
         { name: 'Car Navigation', url: '/cars/' },
@@ -138,6 +160,7 @@ function generateCarPages(distPath) {
        .replace(/{{CAR_TITLE}}/g, title)
        .replace(/{{OG_TITLE}}/g, ogTitle)
        .replace(/{{CAR_URL}}/g, carUrl)
+       .replace(/{{HERO_HTML}}/g, heroHtml)
        .replace(/{{CAR_MODEL}}/g, vehicle.carModel)
        .replace(/{{YEARS}}/g, vehicle.years)
        .replace(/{{MAKE}}/g, vehicle.make)

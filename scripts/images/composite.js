@@ -85,13 +85,13 @@ function isCutoutSane(removedFraction) {
   return removedFraction > 0.08 && removedFraction < 0.92;
 }
 
-async function compositeHero(deviceBuffer, outPath, { scale = 0.6, threshold = 236 } = {}) {
+async function compositeHero(deviceBuffer, outPath, { scale = 0.6, widthScale = 0.6, threshold = 236 } = {}) {
   const { width: BW, height: BH } = await sharp(BACKGROUND_PATH).metadata();
 
   const { buffer: cut, removedFraction } = await cutoutWhiteBackground(deviceBuffer, { threshold });
 
   const device = await sharp(cut)
-    .resize({ width: Math.round(BW * 0.6), height: Math.round(BH * scale), fit: "inside", withoutEnlargement: false })
+    .resize({ width: Math.round(BW * widthScale), height: Math.round(BH * scale), fit: "inside", withoutEnlargement: false })
     .toBuffer();
   const { width: w, height: h } = await sharp(device).metadata();
   const left = Math.round((BW - w) / 2);

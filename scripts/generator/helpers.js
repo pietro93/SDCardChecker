@@ -331,6 +331,20 @@ function getDeviceImageFallback(device) {
 }
 
 /**
+ * Resolve a hero image for a car/navigation page.
+ * Images live at /img/cars/<slug>.webp (sourced from a single parametrized
+ * source — the Wikipedia REST summary API, keyed by "Make Model").
+ * Returns the web path if the file exists, otherwise null so the template
+ * can fall back to the gradient + icon placeholder.
+ */
+function getCarImageFallback(car) {
+  if (!car || !car.slug) return null;
+  const webPath = `/img/cars/${car.slug}.webp`;
+  const fullPath = path.join(__dirname, "../../img/cars", `${car.slug}.webp`);
+  return fs.existsSync(fullPath) ? webPath : null;
+}
+
+/**
  * Get smart fallback image for SD card based on type/speed
  */
 function getCardImageFallback(card) {
@@ -903,6 +917,7 @@ module.exports = {
   generateProductSchema,
   getDeviceImageFallback,
   getCardImageFallback,
+  getCarImageFallback,
   getReaderImageFallback,
   generateSpecsHTML,
   generateFAQHTML,
