@@ -1,110 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>{{CAR_MODEL}} Navigation SD Card Update | {{YEARS}} - Latest Maps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{CAR_TITLE}}</title>
     <meta name="description" content="{{SEO_DESCRIPTION}}">
-    <link rel="stylesheet" href="/assets/css/modern.css">
+    <link rel="canonical" href="{{CAR_URL}}">
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{OG_TITLE}}">
+    <meta property="og:description" content="{{SEO_DESCRIPTION}}">
+    <meta property="og:url" content="{{CAR_URL}}">
+    <meta property="og:site_name" content="SD Card Checker">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{OG_TITLE}}">
+    <meta name="twitter:description" content="{{SEO_DESCRIPTION}}">
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {{BREADCRUMB_SCHEMA}}
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {{FAQ_SCHEMA}}
+    </script>
+
+    <!-- Product Schema -->
+    <script type="application/ld+json">
+    {{PRODUCT_SCHEMA}}
+    </script>
+
     <link rel="stylesheet" href="/assets/css/tailwind.css">
-    <style>
-        .badge-rec { background: #dcfce7; color: #166534; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; font-weight: bold; }
-        .badge-pre { background: #fef3c7; color: #92400e; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; font-weight: bold; }
-        .badge-bud { background: #e0e7ff; color: #3730a3; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; font-weight: bold; }
-        .faq-item { border-bottom: 1px solid #e5e7eb; padding: 1rem 0; }
-        .faq-question { font-weight: 600; margin-bottom: 0.5rem; cursor: pointer; display: flex; justify-content: space-between; }
-        .faq-answer { color: #4b5563; display: none; margin-top: 0.5rem; }
-        .faq-answer.open { display: block; }
-    </style>
+    <link rel="stylesheet" href="/assets/css/modern.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
     {{HEADER}}
 
-    <div class="flex max-w-7xl mx-auto px-4 mt-8">
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <nav class="text-sm text-slate-600 flex items-center gap-2">
+                <a href="/" class="text-blue-600 hover:underline">Home</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="/cars/" class="text-blue-600 hover:underline inline-flex items-center gap-1">
+                    <i class="fas fa-car"></i> Car Navigation
+                </a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-slate-900">{{CAR_MODEL}}</span>
+            </nav>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+        <!-- Main Content -->
         <main class="flex-1">
-            <!-- Breadcrumb Navigation -->
-            <div class="mb-4 text-sm text-gray-500">
-                <a href="/" class="text-blue-600 hover:underline">Home</a> /
-                <a href="/cars/" class="text-blue-600 hover:underline">Car Navigation</a> /
-                <span>{{CAR_MODEL}}</span>
-            </div>
-
-            <h1 class="text-4xl font-bold mb-2">{{CAR_MODEL}} Navigation Update</h1>
-            <p class="text-gray-600 mb-2">Model Years: {{YEARS}}</p>
-            <p class="text-sm text-gray-500 mb-4">{{PART_NOTE}}</p>
-
-            <div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100">
-                <p class="text-md text-gray-800 leading-relaxed">{{SEO_DESCRIPTION}}</p>
-            </div>
-
-            <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
-                <h3 class="font-bold text-blue-800 text-lg mb-2">✅ Navigation SD Cards for {{MAKE}}</h3>
-                <p class="text-blue-700">We've compiled the best options for your {{CAR_MODEL}}. Choose from multiple brands and price points below.</p>
-            </div>
-
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-8 border border-gray-100">
-                <div class="p-6 border-b border-gray-200">
-                    <h2 class="text-2xl font-bold text-gray-900">Available Navigation Cards</h2>
-                    <p class="text-gray-600 mt-2">Compare top-rated options. The first option is our top recommendation.</p>
-                </div>
-                <table class="w-full border-collapse">
-                    <thead class="bg-gray-100 border-b-2 border-gray-300">
-                        <tr>
-                            <th class="p-3 text-left font-bold">Product</th>
-                            <th class="p-3 text-left font-bold">Map Year</th>
-                            <th class="p-3 text-left font-bold">Coverage</th>
-                            <th class="p-3 text-left font-bold">Price</th>
-                            <th class="p-3 text-left font-bold">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {{PRODUCTS_TABLE}}
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="bg-white shadow rounded-lg p-6 mb-8 border border-gray-100">
-                <h3 class="text-xl font-bold mb-4 text-gray-900">Installation Guide for Your {{CAR_MODEL}}</h3>
-                <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
-                    <p class="text-gray-700">{{INSTALL_GUIDE}}</p>
-                </div>
-                <div class="bg-orange-50 border-l-4 border-orange-400 p-4">
-                    <h4 class="font-bold text-orange-800 mb-2">⚠️ Important: {{CAR_MODEL}} Compatibility</h4>
-                    <p class="text-orange-700">{{WARNING}}</p>
+            <!-- Hero (placeholder gradient banner until vehicle photos are sourced) -->
+            <div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative" style="background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%); min-height: 220px;">
+                <div class="hero-overlay" style="background: linear-gradient(135deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.1) 100%);">
+                    <div class="text-center px-4">
+                        <i class="fas fa-car-side text-white text-4xl mb-3 opacity-80"></i>
+                        <h1 class="hero-title" style="color: #ffffff;">
+                            Best Navigation SD Card for {{CAR_MODEL}}
+                        </h1>
+                    </div>
                 </div>
             </div>
+
+            <!-- Expert Recommendations Section -->
+            <div class="mb-12">
+                <p class="text-xl text-slate-600">Compatible navigation SD cards for {{CAR_MODEL}} ({{YEARS}})</p>
+            </div>
+
+            <!-- Answer Box - Quick Result & Conversion Engine -->
+            <div id="recommendations" class="relative group bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-2xl p-6 md:p-8 mb-12 shadow-sm hover:shadow-md transition-all scroll-mt-20">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <div>
+                        <p class="text-xs md:text-sm font-bold text-blue-600 uppercase tracking-wide mb-1 flex items-center gap-2">
+                            <i class="fas fa-check-circle"></i> Top Pick
+                        </p>
+                        <h2 class="answer-text text-2xl md:text-4xl font-black text-slate-900 leading-tight">
+                            {{ANSWER_TEXT}}
+                        </h2>
+                    </div>
+                </div>
+                <p class="answer-explanation text-base md:text-lg text-slate-700 leading-relaxed">
+                    {{ANSWER_EXPLANATION}}
+                </p>
+            </div>
+
+            <!-- Requirements Box -->
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 mb-8">
+                <h2 class="text-lg font-bold text-slate-900 mb-4">{{CAR_MODEL}} Navigation SD Card Requirements</h2>
+                <ul class="space-y-0">
+                    <li class="flex items-start gap-3 pb-3 border-b border-slate-100">
+                        <i class="fas fa-calendar text-blue-600 mt-1 flex-shrink-0"></i>
+                        <div class="flex-1"><span class="font-semibold text-slate-900">Compatible Years:</span> <span class="text-slate-700">{{YEARS}}</span></div>
+                    </li>
+                    <li class="flex items-start gap-3 pb-3 border-b border-slate-100">
+                        <i class="fas fa-microchip text-emerald-600 mt-1 flex-shrink-0"></i>
+                        <div class="flex-1"><span class="font-semibold text-slate-900">Part Number:</span> <span class="text-slate-700">{{PART_NOTE}}</span></div>
+                    </li>
+                    <li class="flex items-start gap-3 pb-3 border-b border-slate-100 last:border-b-0">
+                        <i class="fas fa-exclamation-triangle text-amber-600 mt-1 flex-shrink-0"></i>
+                        <div class="flex-1"><span class="font-semibold text-slate-900">Trim Compatibility:</span> <span class="text-slate-700">{{WARNING}}</span></div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Recommended Cards Section -->
+            <section id="brands" class="mb-16 scroll-mt-20">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">Navigation SD Cards for {{CAR_MODEL}}</h2>
+                <p class="text-xs text-slate-500 mb-4 opacity-70">This website contains affiliate links. We may earn a small commission when you purchase through our links at no extra cost to you.</p>
+                <div class="overflow-x-auto brands-table-container">
+                    <table class="brands-table w-full">
+                        <thead>
+                            <tr>
+                                <th class="text-left py-4 px-4 font-semibold">SD Card</th>
+                                <th class="text-left py-4 px-4 font-semibold">Map Year</th>
+                                <th class="text-left py-4 px-4 font-semibold">Coverage</th>
+                                <th class="text-left py-4 px-4 font-semibold">Pros</th>
+                                <th class="text-left py-4 px-4 font-semibold">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody class="brands-table-body">
+                            {{PRODUCTS_TABLE}}
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Installation Guide -->
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">Installation Guide for Your {{CAR_MODEL}}</h2>
+                <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6">
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded mb-4">
+                        <p class="text-slate-700">{{INSTALL_GUIDE}}</p>
+                    </div>
+                    <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded">
+                        <h4 class="font-bold text-amber-800 mb-2 flex items-center gap-2"><i class="fas fa-exclamation-triangle"></i> Important: {{CAR_MODEL}} Compatibility</h4>
+                        <p class="text-amber-800">{{WARNING}}</p>
+                    </div>
+                </div>
+            </section>
 
             <!-- Injected Rich SEO Content Blocks -->
             {{SPECIFIC_FEATURES_HTML}}
 
             {{COMMON_ISSUES_HTML}}
 
-            {{FAQS_HTML}}
-
             {{COMPATIBILITY_HTML}}
 
-            <div class="bg-white shadow rounded-lg p-6 border border-gray-100">
-                <h3 class="text-xl font-bold mb-4 text-gray-900">Other {{MAKE}} Vehicles</h3>
-                <p class="text-gray-600 mb-4">Navigation SD cards for other {{MAKE}} vehicles:</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {{RELATED_LINKS}}
+            <!-- FAQ Section -->
+            <section id="faq" class="mb-16 scroll-mt-20">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+                <div class="faq-section space-y-3">
+                    {{FAQS_HTML}}
                 </div>
-            </div>
+            </section>
+
+            <!-- Related Vehicles -->
+            {{RELATED_LINKS}}
         </main>
+
         {{SIDEBAR}}
     </div>
+
     {{FOOTER}}
 
-    <!-- Simple FAQ toggle script -->
+    <script src="/assets/js/search.js"></script>
+
+    <style>
+        .hero-image-container { position: relative; }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        .hero-title {
+            @apply text-3xl md:text-4xl font-bold text-center px-4;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.5);
+            filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+        }
+
+        .brands-table thead { @apply bg-slate-900; }
+        .brands-table thead tr { @apply border-b border-slate-200; }
+        .brands-table thead th { @apply text-white; }
+        .brands-table tbody tr { @apply border-b border-slate-100 bg-white; }
+        .brands-table tbody tr:hover { @apply bg-slate-50; }
+        .brands-table td { @apply py-4 px-4; vertical-align: middle; }
+
+        .table-card-cell { text-align: center; }
+        .table-card-link-wrapper { @apply block no-underline; display: flex; flex-direction: column; align-items: center; }
+        .table-card-image { @apply mb-3 mx-auto; width: 115px; height: 115px; }
+        .table-card-image img { @apply w-full h-full object-contain; }
+        .table-card-name { font-weight: bold; margin-top: 0.5rem; color: #0f172a; }
+
+        .table-cta-button {
+            @apply bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-lg transition-all text-center text-base shadow-md hover:shadow-lg hover:scale-105;
+        }
+
+        .price-badge {
+            display: inline-block; padding: 0.15rem 0.3rem; border-radius: 0.375rem;
+            font-size: 0.95rem; font-weight: 900; text-align: center;
+        }
+        .price-badge.price-budget { color: #16a34a; }
+        .price-badge.price-mid-range { color: #15803d; }
+        .price-badge.price-premium, .price-badge.price-specialized { color: #166534; }
+
+        .price-column {
+            display: flex; flex-direction: column; gap: 0.5rem;
+            align-items: center; justify-content: flex-start; height: 100%; padding-top: 0.5rem;
+        }
+
+        .btn-check-price {
+            display: inline-flex; align-items: center; justify-content: center; gap: 0.125rem;
+            background-color: #f59e0b; color: white; font-weight: 700; padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem; font-size: 0.9rem; transition: all 0.2s ease;
+            text-align: center; text-decoration: none; border: none; cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); white-space: nowrap; min-height: 44px; min-width: 44px;
+        }
+        .btn-check-price:hover { background-color: #d97706; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); }
+        .btn-check-price i { font-size: 0.75rem; margin-right: 0.1rem; }
+
+        .faq-item { @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow; }
+        .faq-question {
+            @apply p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors;
+            min-height: 48px; user-select: none; -webkit-user-select: none;
+        }
+        .faq-question:active { background-color: rgba(59, 130, 246, 0.05); transition: background-color 0.1s ease; }
+        .faq-toggle { @apply text-slate-400 transition-transform duration-300; font-size: 1.5rem; flex-shrink: 0; }
+        .faq-toggle.open { @apply rotate-180; }
+        .faq-answer { @apply px-6 pb-6 text-slate-700 leading-relaxed border-t border-slate-200 hidden; }
+        .faq-answer.open { @apply block; }
+
+        .device-card { @apply bg-white rounded-lg p-4 border border-slate-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all text-center; }
+        .device-card-name { @apply font-black text-slate-900 text-lg; }
+        .device-card-info { @apply text-xs text-slate-500 mt-1; }
+
+        /* Mobile Card Layout for Brands Table */
+        @media (max-width: 768px) {
+            .brands-table thead { display: none; }
+            .brands-table-body { display: flex; flex-direction: column; gap: 1.25rem; }
+            .brands-table tbody tr {
+                @apply border border-slate-300 rounded-lg bg-white flex flex-col mb-0;
+                display: flex; flex-direction: column; border: 1px solid #cbd5e1;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); padding: 0; overflow: hidden;
+            }
+            .brands-table tbody tr:hover { @apply bg-blue-50; border-color: #3b82f6; box-shadow: 0 4px 8px rgba(59, 130, 246, 0.1); }
+            .brands-table td {
+                display: flex; justify-content: space-between; align-items: center;
+                padding: 0.85rem 0.75rem; border-bottom: 1px solid #e2e8f0; gap: 1rem; min-height: 44px;
+            }
+            .brands-table td:last-child { border-bottom: none; }
+            .brands-table td:before {
+                content: attr(data-label); font-weight: 700; color: #475569; font-size: 0.75rem;
+                text-transform: uppercase; letter-spacing: 0.5px; flex-shrink: 0;
+            }
+            .table-card-cell {
+                display: flex; flex-direction: column; align-items: center; justify-content: center;
+                grid-column: 1 / -1 !important; width: 100%; border-bottom: 1px solid #e2e8f0 !important;
+                padding: 1.25rem 0.75rem; gap: 0.75rem;
+            }
+            .table-card-image { width: 120px; height: 120px; }
+            .price-column {
+                display: flex; flex-direction: column; align-items: center; justify-content: center;
+                gap: 0.75rem; border-bottom: none !important; width: 100%; padding: 1.25rem 0.75rem 0.75rem;
+                border-top: 1px solid #e2e8f0;
+            }
+            .price-badge { text-align: center; display: block; width: 100%; }
+            .btn-check-price { width: 100%; }
+        }
+    </style>
+
+    <!-- FAQ accordion script -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const faqQuestions = document.querySelectorAll('.faq-question');
-            faqQuestions.forEach(q => {
-                q.addEventListener('click', () => {
-                    const answer = q.nextElementSibling;
-                    answer.classList.toggle('open');
-                });
+            const items = document.querySelectorAll('.faq-item');
+            items.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const toggle = item.querySelector('.faq-toggle');
+
+                if (answer && answer.classList.contains('open') && toggle) {
+                    toggle.classList.add('open');
+                }
+
+                if (question && answer) {
+                    question.addEventListener('click', () => {
+                        const isOpen = answer.classList.contains('open');
+                        answer.classList.toggle('open', !isOpen);
+                        if (toggle) {
+                            toggle.classList.toggle('open', !isOpen);
+                        }
+                    });
+                }
             });
         });
     </script>
 </body>
+
 </html>

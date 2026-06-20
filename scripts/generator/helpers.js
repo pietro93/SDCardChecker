@@ -489,10 +489,22 @@ function getCardImageFallback(card) {
     }
   }
   
+  // Navigation SD cards (car infotainment) have no brand-matched product shots;
+  // fall back to a generic card photo matching their physical format.
+  if (card.type === "Navigation SD") {
+    const cardFormat = card.specs?.cardFormat;
+    if (cardFormat === "microSD" && imageExists("/img/cards/micro-uhs1-generic.webp")) {
+      return "/img/cards/micro-uhs1-generic.webp";
+    }
+    if (imageExists("/img/cards/uhs1-generic.webp")) {
+      return "/img/cards/uhs1-generic.webp";
+    }
+  }
+
   // Use type and uhs fields from sdcards.json for smart fallback selection
   const isMicroSD = card.type === "microSD";
   const uhs = card.uhs ? card.uhs.toUpperCase() : "";
-  
+
   // Type-specific placeholders for specialty formats
   if (card.type === "CFast") {
     return "/img/cards/cfast-generic.webp";
