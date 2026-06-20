@@ -1,102 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Navigation SD Card Updates | Vehicle-Specific Recommendations</title>
-    <meta name="description" content="Update your car's factory navigation system. Find compatible SD cards for Toyota, Chevrolet, GMC, Cadillac, and Buick vehicles.">
-    <meta name="keywords" content="car navigation SD card, vehicle navigation update, Toyota navigation, Chevrolet navigation, GMC navigation">
-    <link rel="canonical" href="https://sdcardchecker.com/cars/">
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/tailwind.css">
-    <link rel="stylesheet" href="/assets/css/modern.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Navigation SD Card Updates | Vehicle-Specific Recommendations</title>
+  <meta name="description" content="Update your car's factory navigation system. Find compatible SD cards for Toyota, Chevrolet, GMC, Cadillac, and Buick vehicles.">
+  <meta name="keywords" content="car navigation SD card, vehicle navigation update, Toyota navigation, Chevrolet navigation, GMC navigation">
+  <link rel="canonical" href="https://sdcardchecker.com/cars/">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Car Navigation SD Card Updates | Vehicle-Specific Recommendations">
+  <meta property="og:description" content="Update your car's factory navigation system. Find compatible SD cards for Toyota, Chevrolet, GMC, Cadillac, and Buick vehicles.">
+  <meta property="og:image" content="https://sdcardchecker.com/img/og-category.webp">
+  <meta property="og:url" content="https://sdcardchecker.com/cars/">
+  <meta property="og:site_name" content="SD Card Checker">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Car Navigation SD Card Updates | Vehicle-Specific Recommendations">
+  <meta name="twitter:description" content="Update your car's factory navigation system. Find compatible SD cards for Toyota, Chevrolet, GMC, Cadillac, and Buick vehicles.">
+  <meta name="twitter:image" content="https://sdcardchecker.com/img/og-category.webp">
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {{BREADCRUMB_SCHEMA}}
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
 
-<body>
-    {{HEADER}}
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">Car Navigation</span>
+      </nav>
+    </div>
+  </div>
 
-    <!-- Hero Section -->
-    <section style="padding: 3rem 0; background: linear-gradient(135deg, #ecfdf5 0%, #dbeafe 100%);">
-        <div class="container">
-            <h1 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem;">Car Navigation SD Card Updates</h1>
-            <p style="font-size: 1.1rem; color: #475569; max-width: 600px;">Keep your vehicle's factory navigation system current with the latest maps. Select your car model to find compatible SD cards.</p>
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="mb-12 flex items-center gap-6">
+        <div class="category-icon-hero" style="width:80px; height:80px; display:flex; align-items:center; justify-content:center; background:#eff6ff; border-radius:1rem;">
+          <i class="fas fa-car-side text-blue-600" style="font-size:2.5rem;"></i>
         </div>
-    </section>
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900">
+          Best Navigation SD Cards for Your Car
+        </h1>
+      </div>
 
-    <!-- Breadcrumb -->
-    <section style="padding: 1.5rem 0; border-bottom: 1px solid #e2e8f0;">
-        <div class="container">
-            <div style="font-size: 0.95rem; color: #64748b;">
-                <a href="/" style="color: #2563eb; text-decoration: none;">Home</a> /
-                <span>Car Navigation</span>
-            </div>
-        </div>
-    </section>
+      <!-- Intro Section -->
+      <section class="category-intro-section bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-lg p-6 mb-12 shadow-sm">
+        <p class="text-lg text-slate-800 leading-relaxed font-medium">Keep your vehicle's factory navigation system current with the latest maps. Select your car model below to find compatible SD cards, install guides, and trim compatibility.</p>
+      </section>
 
-    <!-- Main Content -->
-    <main class="container" style="padding: 3rem 0;">
-        <!-- Tabs by Brand -->
-        <div x-data="{ activeTab: 'toyota' }" style="margin-bottom: 3rem;">
-            <!-- Tab Buttons -->
-            <div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; border-bottom: 2px solid #e2e8f0;">
-                <button @click="activeTab = 'toyota'" :class="{ 'border-b-4 border-blue-600 font-bold': activeTab === 'toyota' }" style="padding: 0.75rem 1.5rem; background: none; border: none; cursor: pointer; font-size: 1rem; color: #64748b;">
-                    Toyota (10 Models)
-                </button>
-                <button @click="activeTab = 'chevy'" :class="{ 'border-b-4 border-blue-600 font-bold': activeTab === 'chevy' }" style="padding: 0.75rem 1.5rem; background: none; border: none; cursor: pointer; font-size: 1rem; color: #64748b;">
-                    Chevrolet
-                </button>
-                <button @click="activeTab = 'gmc'" :class="{ 'border-b-4 border-blue-600 font-bold': activeTab === 'gmc' }" style="padding: 0.75rem 1.5rem; background: none; border: none; cursor: pointer; font-size: 1rem; color: #64748b;">
-                    GMC
-                </button>
-                <button @click="activeTab = 'cadillac'" :class="{ 'border-b-4 border-blue-600 font-bold': activeTab === 'cadillac' }" style="padding: 0.75rem 1.5rem; background: none; border: none; cursor: pointer; font-size: 1rem; color: #64748b;">
-                    Cadillac
-                </button>
-                <button @click="activeTab = 'buick'" :class="{ 'border-b-4 border-blue-600 font-bold': activeTab === 'buick' }" style="padding: 0.75rem 1.5rem; background: none; border: none; cursor: pointer; font-size: 1rem; color: #64748b;">
-                    Buick
-                </button>
-            </div>
+      <!-- Vehicle Grid -->
+      <section x-data="carIndex()" x-init="init()">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">All Supported Vehicles</h2>
 
-            <!-- Toyota Tab -->
-            <div x-show="activeTab === 'toyota'" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
-                {{TOYOTA_VEHICLES}}
-            </div>
+        <!-- Filter Buttons -->
+        <div class="mb-8 flex flex-wrap gap-3 items-center" x-cloak>
+          <div class="text-sm font-semibold text-slate-700 mr-2">Filter by make:</div>
 
-            <!-- Chevrolet Tab -->
-            <div x-show="activeTab === 'chevy'" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
-                {{CHEVY_VEHICLES}}
-            </div>
+          <button
+            @click="clearAllFilters()"
+            :class="{
+              'bg-slate-200 text-slate-700 border-slate-300 hover:bg-slate-300': hasActiveFilters(),
+              'bg-slate-100 text-slate-400 border-slate-300 cursor-not-allowed': !hasActiveFilters()
+            }"
+            class="px-3 py-2 rounded-full border font-medium text-sm transition-all duration-200 flex items-center gap-2"
+            :disabled="!hasActiveFilters()"
+            title="Show all makes"
+          >
+            <i class="fas fa-redo text-sm leading-none"></i>
+            Reset
+          </button>
 
-            <!-- GMC Tab -->
-            <div x-show="activeTab === 'gmc'" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
-                {{GMC_VEHICLES}}
-            </div>
-
-            <!-- Cadillac Tab -->
-            <div x-show="activeTab === 'cadillac'" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
-                {{CADILLAC_VEHICLES}}
-            </div>
-
-            <!-- Buick Tab -->
-            <div x-show="activeTab === 'buick'" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
-                {{BUICK_VEHICLES}}
-            </div>
+          <template x-for="make in availableMakes" :key="make">
+            <button
+              @click="toggleMake(make)"
+              :class="{
+                'bg-blue-600 text-white border-blue-700 shadow-md': isSelected(make),
+                'bg-white text-slate-700 border-slate-300 hover:border-blue-500 hover:bg-blue-50': !isSelected(make)
+              }"
+              class="px-4 py-2 rounded-full border font-medium text-sm transition-all duration-200 hover:shadow-md"
+              :title="isSelected(make) ? 'Click to hide ' + make + ' vehicles' : 'Click to show only ' + make + ' vehicles'"
+              x-text="make"
+            ></button>
+          </template>
         </div>
 
-        <!-- Information Box -->
-        <div style="background: #f0f9ff; border-left: 4px solid #0284c7; padding: 1.5rem; border-radius: 0.5rem; margin-top: 3rem;">
-            <h3 style="font-size: 1.1rem; font-weight: 700; color: #0c4a6e; margin-bottom: 1rem;">How to Update Your Car's Navigation</h3>
-            <ol style="list-style-position: inside; color: #0c4a6e; line-height: 1.8;">
-                <li><strong>Find your part number:</strong> Check the label on your existing navigation SD card.</li>
-                <li><strong>Select your vehicle:</strong> Click on your car model above.</li>
-                <li><strong>Choose a compatible card:</strong> Review options and compare features.</li>
-                <li><strong>Install:</strong> Turn off engine, locate SD slot, swap cards, restart vehicle.</li>
-            </ol>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="carGrid">
+          {{CAR_CARDS_HTML}}
         </div>
+      </section>
+
+      <!-- Information Box -->
+      <div style="background: #f0f9ff; border-left: 4px solid #0284c7; padding: 1.5rem; border-radius: 0.5rem; margin-top: 3rem;">
+        <h3 style="font-size: 1.1rem; font-weight: 700; color: #0c4a6e; margin-bottom: 1rem;">How to Update Your Car's Navigation</h3>
+        <ol style="list-style-position: inside; color: #0c4a6e; line-height: 1.8;">
+          <li><strong>Find your part number:</strong> Check the label on your existing navigation SD card.</li>
+          <li><strong>Select your vehicle:</strong> Click on your car model above.</li>
+          <li><strong>Choose a compatible card:</strong> Review options and compare features.</li>
+          <li><strong>Install:</strong> Turn off engine, locate SD slot, swap cards, restart vehicle.</li>
+        </ol>
+      </div>
     </main>
 
-    {{FOOTER}}
-</body>
+    {{SIDEBAR}}
+  </div>
 
+  {{FOOTER}}
+
+  <script>
+    function carIndex() {
+      return {
+        filteredMakes: [],
+        availableMakes: [],
+
+        init() {
+          const grid = document.getElementById('carGrid');
+          const makes = new Set();
+          grid.querySelectorAll('.device-card').forEach(card => {
+            const make = card.getAttribute('data-make');
+            if (make) makes.add(make);
+          });
+          this.availableMakes = Array.from(makes).sort();
+        },
+
+        toggleMake(make) {
+          const index = this.filteredMakes.indexOf(make);
+          if (index > -1) {
+            this.filteredMakes.splice(index, 1);
+          } else {
+            this.filteredMakes.push(make);
+          }
+          this.filterByMake();
+        },
+
+        isSelected(make) {
+          return this.filteredMakes.includes(make);
+        },
+
+        hasActiveFilters() {
+          return this.filteredMakes.length > 0;
+        },
+
+        clearAllFilters() {
+          this.filteredMakes = [];
+          this.filterByMake();
+        },
+
+        filterByMake() {
+          const grid = document.getElementById('carGrid');
+          if (!grid) return;
+
+          grid.querySelectorAll('.device-card').forEach(card => {
+            const make = card.getAttribute('data-make');
+            const shouldShow = (this.filteredMakes.length === 0) || (this.filteredMakes.includes(make));
+            card.style.display = shouldShow ? '' : 'none';
+          });
+        }
+      };
+    }
+  </script>
+
+  <style>
+    .device-card {
+      @apply bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all text-center overflow-hidden;
+    }
+
+    .device-card-name {
+      @apply font-bold text-slate-900 mb-1 text-lg;
+    }
+
+    .device-card-info {
+      @apply text-sm text-slate-600 mb-3;
+    }
+
+    .device-card-link {
+      @apply text-blue-600 hover:text-blue-700 font-semibold transition-colors;
+    }
+  </style>
+</body>
 </html>

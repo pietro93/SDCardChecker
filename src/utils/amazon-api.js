@@ -107,7 +107,57 @@ async function searchSDCards(keywords) {
   }
 }
 
+/**
+ * Look up product images/titles for specific ASINs (e.g. the exact listing
+ * linked from an affiliate URL), rather than a fuzzy keyword search.
+ * @param {string[]} asins - Up to 10 ASINs
+ * @returns {Promise<Object>} Map of ASIN -> { title, image, url }
+ */
+async function getItemsByAsin(asins) {
+  if (!commonParameters.AccessKey || !commonParameters.SecretKey || !commonParameters.PartnerTag) {
+    console.warn('⚠️  Amazon API credentials missing (check .env or Cloudflare env vars)');
+    return {};
+  }
+  if (!asins || asins.length === 0) return {};
+
+  try {
+    await delayIfNeeded();
+
+    console.log(`  Looking up Amazon ASINs: ${asins.join(', ')}`);
+
+    const response = await common.GetItems(commonParameters, {
+      ItemIds: asins,
+      ItemIdType: 'ASIN',
+      Condition: 'New',
+      Resources: [
+        'Images.Primary.Large',
+        'ItemInfo.Title'
+      ]
+    });
+
+    const result = {};
+    (response?.ItemsResult?.Items || []).forEach(item => {
+      result[item.ASIN] = {
+        title: item.ItemInfo?.Title?.DisplayValue,
+        image: item.Images?.Primary?.Large?.URL,
+        url: item.DetailPageURL
+      };
+    });
+    return result;
+  } catch (error) {
+    if (error.code === 'TooManyRequests' || error.statusCode === 429) {
+      console.warn(`  ⚠️  Rate limited (429). Increase REQUEST_DELAY_MS to 3500+`);
+    } else if (error.statusCode === 401 || error.statusCode === 403) {
+      console.warn(`  ⚠️  Auth failed (401/403). Check AWS credentials in env vars.`);
+    } else {
+      console.warn(`  ⚠️  API Error: ${error.message}`);
+    }
+    return {};
+  }
+}
+
 module.exports = {
   searchSDCards,
+  getItemsByAsin,
   delayIfNeeded
 };

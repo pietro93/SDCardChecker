@@ -46,12 +46,14 @@ function generateCarPages(distPath) {
        const amazonUrlWithUTM = card.affiliateUrl.includes('?') ? `${card.affiliateUrl}&${utmParams}` : `${card.affiliateUrl}?${utmParams}`;
        const altLink = card.affiliateUrlAlt ? `<br><a href="${card.affiliateUrlAlt}" target="_blank" rel="nofollow sponsored" class="text-xs text-blue-500">Alt Listing</a>` : '';
 
+       const cardAlt = `${card.name} - ${vehicle.carModel} navigation SD card, part ${card.partNumber}`;
+
        return `
        <tr${i === 0 ? ' class="bg-blue-50"' : ''}>
        <td class="table-card-cell">
-       <a href="${amazonUrlWithUTM}" target="_blank" rel="nofollow sponsored" class="table-card-link-wrapper">
+       <a href="${amazonUrlWithUTM}" target="_blank" rel="nofollow sponsored" class="table-card-link-wrapper" title="${card.name} on Amazon">
        <div class="table-card-image">
-       <img src="${cardImage}" alt="${card.name} navigation SD card" width="115" height="115" loading="lazy" />
+       <img src="${cardImage}" alt="${cardAlt}" title="${card.name}" width="115" height="115" loading="lazy" />
        </div>
        <div class="table-card-name">${card.name}</div>
        </a>
@@ -112,9 +114,11 @@ function generateCarPages(distPath) {
 
      // Hero: real vehicle photo when sourced, gradient + car icon placeholder otherwise
      const heroImage = getCarImageFallback(vehicle);
+     const heroAlt = `${vehicle.carModel} (${vehicle.years}) navigation SD card upgrade`;
+     const heroTitle = `Best navigation SD card for ${vehicle.carModel}`;
      const heroHtml = heroImage
         ? `<div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative">
-                <img src="${heroImage}" alt="${vehicle.carModel} navigation SD card" class="w-full object-cover hero-image" width="1200" height="350" loading="lazy" />
+                <img src="${heroImage}" alt="${heroAlt}" title="${heroTitle}" class="w-full object-cover hero-image" width="1200" height="350" loading="lazy" />
                 <div class="hero-overlay">
                     <h1 class="hero-title" style="color: #ffffff;">
                         Best Navigation SD Card for ${vehicle.carModel}
