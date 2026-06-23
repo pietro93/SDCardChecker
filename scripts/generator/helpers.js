@@ -704,7 +704,7 @@ function generateRelatedDevices(device, allDevices, isJapanese = false) {
   const cards = relatedDevices
   .map(
   (d) => {
-        const imgUrl = getDeviceImageFallback(d);
+        const imgUrl = d.imageUrl || getDeviceImageFallback(d);
         return `
   <div class="device-card" style="background-image: url('${imgUrl}'); background-size: cover; background-position: center; position: relative; background-color: #f3f4f6;" role="article" aria-label="SD card recommendation for ${d.name}" onmouseover="this.querySelector('.device-card-overlay').style.opacity='0.95'" onmouseout="this.querySelector('.device-card-overlay').style.opacity='0.85'">
   <div class="device-card-overlay" style="position: absolute; inset: 0; background: rgba(240, 240, 240, 0.85); transition: opacity 0.3s ease;"></div>
