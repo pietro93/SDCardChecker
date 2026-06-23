@@ -309,8 +309,13 @@ function getDeviceImageFallback(device) {
   if (name.includes("kenwood")) return "/img/devices/dashcams/kenwood-drv-mr760.webp";
   if (name.includes("cellstar")) return "/img/devices/dashcams/cellstar-cs-91fh.webp";
   if (name.includes("reolink")) return "/img/devices/security-cameras/reolink-e1-pro.webp";
+  // Music Production brand detection
+  if (name.includes("mpc") || name.includes("akai")) return "/img/devices/music-production/akai-mpc-placeholder.webp";
+  if (name.includes("sp-404") || name.includes("sp404") || name.includes("roland")) return "/img/devices/music-production/roland-sp-404mkii-placeholder.webp";
 
   // Category-based placeholders
+  if (category.includes("music production"))
+    return "/img/devices/music-production/placeholder.webp";
   if (category.includes("smartphone")) 
     return "/img/devices/smartphones/samsung-galaxy-s25.webp";
   if (category.includes("action camera")) 

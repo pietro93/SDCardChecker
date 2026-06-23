@@ -67,8 +67,9 @@ function getCategoryIcon(category) {
       "Mirrorless Cameras": "camera",
       "Cinema Cameras": "camera",
       "Trail Cameras": "camera",
+      "Music Production": "music-production",
       "Accessories": "accessory",
-      
+
       // Kebab case (as used in category data files)
       "cameras": "camera",
       "action-cameras": "action-camera",
@@ -84,6 +85,7 @@ function getCategoryIcon(category) {
       "mirrorless-cameras": "camera",
       "cinema-cameras": "camera",
       "trail-cameras": "camera",
+      "music-production": "music-production",
       "accessories": "accessory"
     };
     return iconMap[category] || "camera"; // Default fallback
@@ -112,6 +114,8 @@ Smartphones:
 "Modern smartphones require external card readers to access SD cards. Find the best readers and compatible cards for iPhone, Samsung Galaxy, Google Pixel, and other devices.",
 "Security Cameras":
 "Security cameras require High Endurance microSD cards designed for continuous recording. Find the best cards for 24/7 surveillance systems.",
+"Music Production":
+"Standalone samplers and drum machines stream samples in real time during performance. Find reliable full-size SD cards for the Akai MPC Live II, MPC One+, and Roland SP-404MKII that keep sets dropout-free.",
 };
 
 return (

@@ -25,6 +25,8 @@ function getCategoryDescriptions(lang = "en") {
       "Smartphones": "Explore external SD card readers and recommendations for iPhones, Samsung Galaxy, Google Pixel, and other smartphones.",
       "Dash Cams": "Find durable SD cards suited for dash cam and vehicle recorder systems.",
       "Security Cameras": "Discover 24/7 surveillance-grade microSD cards for security camera systems.",
+      "3D Printers & Fabrication": "Find reliable microSD cards for Bambu Lab, Creality, and other 3D printers — where a single corrupt read can ruin a multi-hour, real-material print.",
+      "Music Production": "Find the best SD cards for standalone samplers and drum machines like the Akai MPC and Roland SP-404MKII — reliable cards that keep sample streaming dropout-free on stage.",
       "Accessories": "Explore SD card readers, adapters, and other accessories for your devices."
     },
     ja: {
@@ -42,6 +44,7 @@ function getCategoryDescriptions(lang = "en") {
       "スマートフォン": "iPhone、Samsung Galaxy、Google Pixel、その他のスマートフォン向けの外部SDカードリーダーおよび推奨事項をご確認ください。",
       "Dash Cams": "ドライブレコーダーおよび車載レコーダーシステム向けの耐久性の高いSDカードを見つけてください。",
       "Security Cameras": "セキュリティカメラシステム向けの24時間監視対応のmicroSDカードをお探しください。",
+      "Music Production": "Akai MPCやRoland SP-404MKIIなどのスタンドアロンサンプラー・ドラムマシン向けの最高のSDカードを見つけてください。ライブ中のサンプルストリーミングをドロップアウトさせない信頼性の高いカードをお探しください。",
       "Accessories": "SDカードリーダー、アダプター、およびデバイス用のその他のアクセサリーをお探しください。"
     }
   };
@@ -69,6 +72,8 @@ function getCategoryIcon(category) {
     "セキュリティカメラ": "security-camera",
     "Dash Cams": "dashcam",
     "ダッシュカメラ": "dashcam",
+    "3D Printers & Fabrication": "3d-printer",
+    "Music Production": "music-production",
     "Accessories": "accessory",
     "Audio & Hi-Fi": "audio-hi-fi"
   };

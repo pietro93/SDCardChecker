@@ -3,6 +3,7 @@
  * physical folder under img/devices/ where hero images live.
  */
 const CATEGORY_FOLDERS = {
+  "3D Printers & Fabrication": "3d-printers",
   "Action Cameras": "action-cameras",
   "Audio & Hi-Fi": "audio-hi-fi",
   "Cameras": "cameras",
@@ -10,6 +11,7 @@ const CATEGORY_FOLDERS = {
   "Dash Cams": "dashcams",
   "Drones": "drones",
   "Gaming Handhelds": "gaming-consoles",
+  "Music Production": "music-production",
   "Security Cameras": "security-cameras",
   "Smartphones": "smartphones",
 };

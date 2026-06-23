@@ -98,6 +98,7 @@ function getCategoryIcon(category) {
       "ドライブレコーダー": "dashcam",
       "Accessories": "accessory",
       "Audio & Hi-Fi": "audio-hi-fi",
+      "Music Production": "music-production",
       "Film Cameras": "camera",
       "DSLR Cameras": "camera",
       "Mirrorless Cameras": "camera",
@@ -115,6 +116,7 @@ function getCategoryIcon(category) {
       "dash-cams": "dashcam",
       "accessories": "accessory",
       "audio-and-hi-fi": "audio-hi-fi",
+      "music-production": "music-production",
       "film-cameras": "camera",
       "dslr-cameras": "camera",
       "mirrorless-cameras": "camera",
@@ -157,6 +159,8 @@ function getCategoryIntro(category) {
       "ドライブレコーダーは、安定した高品質ビデオ録画のための信頼性の高い高速microSDカードが必要です。人気のあるドライブレコーダーモデルの推奨事項を見つけてください。",
     "ドライブレコーダー":
       "ドライブレコーダーは、安定した高品質ビデオ録画のための信頼性の高い高速microSDカードが必要です。人気のあるドライブレコーダーモデルの推奨事項を見つけてください。",
+    "Music Production":
+      "スタンドアロンのサンプラーやドラムマシンは、パフォーマンス中にリアルタイムでサンプルをストリーミングします。Akai MPC Live II、MPC One+、Roland SP-404MKII向けの、ライブをドロップアウトさせない信頼性の高いフルサイズSDカードを見つけてください。",
   };
 
   return (

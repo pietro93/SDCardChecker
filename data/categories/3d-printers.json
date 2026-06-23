@@ -1,0 +1,394 @@
+[
+  {
+    "id": "bambu-lab-x1-carbon",
+    "name": "Bambu Lab X1-Carbon",
+    "category": "3D Printers & Fabrication",
+    "slug": "bambu-lab-x1-carbon",
+    "searchTerms": [
+      "bambu lab x1 carbon sd card",
+      "bambu x1c microsd card",
+      "best sd card for bambu lab x1 carbon",
+      "x1c memory card",
+      "bambu lab x1 carbon failed print sd card"
+    ],
+    "imageUrl": "/img/devices/3d-printers/bambu-lab-x1-carbon.webp",
+    "sdCard": {
+      "type": "microSD (UHS-I)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB"
+      ],
+      "maxCapacity": "1TB (FAT32)"
+    },
+    "whySpecs": "The X1-Carbon reads your sliced 3MF/G-code from the microSD card and writes timelapse frames and logs back to it during the print. The bottleneck here is <b>not raw speed — it's reliability and data integrity</b>. A single corrupt block on a cheap or worn card can stall or abort a multi-hour, multi-color AMS print that has already burned through real filament. Bambu ships the printer with a card and recommends formatting as <b>FAT32</b>; a name-brand A1/A2 card from SanDisk or Samsung in the 32-64GB range is the reliable sweet spot. Capacity is almost irrelevant (print files are only a few MB to tens of MB) — pay for a trustworthy card, not a huge one.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "sandisk-ultra-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Why did my Bambu X1-Carbon fail mid-print or say it can't read the file?",
+        "a": "The most common culprit is a <b>cheap, counterfeit, or worn-out microSD card</b>. The X1C reads the print file and writes timelapse/log data to the card, so a flaky card causes 'failed to load file' errors and mid-print stalls. <b>Reformat as FAT32</b> and switch to a genuine SanDisk or Samsung card before blaming the printer."
+      },
+      {
+        "q": "What size microSD card does the X1-Carbon need?",
+        "a": "<b>32GB is plenty</b> — sliced print files are only a few megabytes to tens of megabytes each. A 64GB card gives headroom for timelapses. Bambu recommends <b>FAT32 formatting</b>, which is simplest on cards up to 32GB; larger cards work but should be reformatted to FAT32 rather than the default exFAT."
+      },
+      {
+        "q": "Do I need a fast U3/V30 card for the X1-Carbon?",
+        "a": "No. The X1C doesn't stream video to the card, so a <b>standard Class 10 / U1 card is sufficient</b>. Prioritize a reputable brand and the A1/A2 app-performance rating for reliability over a high V-class number. Speed ratings matter for cameras; <b>integrity matters for 3D printers</b>."
+      }
+    ],
+    "relatedDevices": [
+      "bambu-lab-p1s",
+      "bambu-lab-a1",
+      "creality-ender-3-v3"
+    ],
+    "notes": "microSD (FAT32). Frame around reliability/integrity, not speed — failure mode is a corrupt read aborting a long AMS print. Recommend genuine name-brand A1/A2 cards, 32-64GB. Warn explicitly against counterfeit/cheap cards as the #1 cause of failed prints."
+  },
+  {
+    "id": "bambu-lab-p1s",
+    "name": "Bambu Lab P1S",
+    "category": "3D Printers & Fabrication",
+    "slug": "bambu-lab-p1s",
+    "searchTerms": [
+      "bambu lab p1s sd card",
+      "bambu p1s microsd card",
+      "best sd card for bambu lab p1s",
+      "p1s memory card",
+      "bambu p1s sd card not reading"
+    ],
+    "imageUrl": "/img/devices/placeholder.webp",
+    "sdCard": {
+      "type": "microSD (UHS-I)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB"
+      ],
+      "maxCapacity": "1TB (FAT32)"
+    },
+    "whySpecs": "The P1S uses the same microSD-based workflow as the rest of the Bambu ecosystem: the sliced file is read from the card and logs/timelapses are written back during the print. As the budget-flagship tier, it pairs naturally with a sensible mid-priced card rather than a premium one — there is <b>no print-quality benefit</b> to an expensive high-speed card here. A genuine SanDisk Ultra or Samsung EVO Select (Class 10 / U1, 32-64GB, FAT32) gives you the reliability that prevents failed prints without overpaying for V30/V60 speed you'll never use.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the P1S microSD card different from the X1-Carbon's?",
+        "a": "No — both use the same <b>microSD, FAT32</b> workflow. Any genuine Class 10 / U1 card that works in the X1-Carbon works identically in the P1S. The P1S simply lacks the X1C's lidar and some sensors; <b>storage requirements are the same</b>."
+      },
+      {
+        "q": "What's the best value microSD card for the P1S?",
+        "a": "A <b>genuine SanDisk Ultra or Samsung EVO Select in 32-64GB</b>. The P1S is a value-tier printer, so there's no reason to buy an Extreme Pro or V60 card — the card never bottlenecks the print. Spend on a <b>trustworthy brand</b>, not raw speed."
+      },
+      {
+        "q": "My P1S won't read the SD card — what now?",
+        "a": "Reseat the card, then <b>reformat it as FAT32</b> (not exFAT) from a computer. If it still fails, the card is likely <b>counterfeit or worn</b> — replace it with a name-brand card. Fake high-capacity cards bought cheaply online are the most common cause."
+      }
+    ],
+    "relatedDevices": [
+      "bambu-lab-x1-carbon",
+      "bambu-lab-a1",
+      "creality-ender-3-v3"
+    ],
+    "notes": "microSD (FAT32), same as X1C. Budget-flagship tier — steer to value cards (SanDisk Ultra / EVO Select), not premium. Differentiate from X1C by price-tier, not by spec."
+  },
+  {
+    "id": "bambu-lab-a1",
+    "name": "Bambu Lab A1",
+    "category": "3D Printers & Fabrication",
+    "slug": "bambu-lab-a1",
+    "searchTerms": [
+      "bambu lab a1 sd card",
+      "bambu a1 microsd card",
+      "best sd card for bambu lab a1",
+      "bambu a1 memory card",
+      "bambu lab a1 sd card recommendation"
+    ],
+    "imageUrl": "/img/devices/placeholder.webp",
+    "sdCard": {
+      "type": "microSD (UHS-I)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB"
+      ],
+      "maxCapacity": "1TB (FAT32)"
+    },
+    "whySpecs": "The A1 is Bambu's open-frame, value-tier bed-slinger, and it reads print files from a microSD card just like its enclosed siblings. This is the most price-sensitive audience in the lineup, so the guidance is simple: buy a <b>genuine, reasonably priced Class 10 / U1 card</b> (SanDisk Ultra tier) and skip the Extreme Pro upsell entirely. The card does not affect print speed or quality — it only needs to read your files reliably and survive being inserted and removed. A 32GB card formatted FAT32 is all the A1 ever needs.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What microSD card should I buy for the Bambu Lab A1?",
+        "a": "A <b>genuine SanDisk Ultra or Samsung EVO Select, 32GB, formatted FAT32</b>. The A1 is a value printer and the card has no effect on print quality — it just needs to read files reliably. There's <b>no reason to buy a premium high-speed card</b>."
+      },
+      {
+        "q": "Does the A1 use the same card as the A1 mini?",
+        "a": "Yes. Both the A1 and A1 mini use a <b>microSD card (FAT32)</b> with identical, modest requirements. Any genuine Class 10 card in the 32-64GB range works in either."
+      },
+      {
+        "q": "Can I use a big 256GB or 512GB card in the A1?",
+        "a": "You can, but it's wasted money — print files are tiny. Larger cards also <b>default to exFAT and must be reformatted to FAT32</b> to be reliable. A small <b>32GB FAT32 card</b> is the safer, cheaper choice."
+      }
+    ],
+    "relatedDevices": [
+      "bambu-lab-p1s",
+      "bambu-lab-x1-carbon",
+      "creality-ender-3-v3"
+    ],
+    "notes": "microSD (FAT32). Most price-sensitive Bambu tier — steer firmly to value cards (SanDisk Ultra / EVO Select / Amazon Basics), 32GB. Explicitly discourage premium-card and large-capacity upsells."
+  },
+  {
+    "id": "creality-ender-3-v3",
+    "name": "Creality Ender 3 V3",
+    "category": "3D Printers & Fabrication",
+    "slug": "creality-ender-3-v3",
+    "searchTerms": [
+      "creality ender 3 v3 sd card",
+      "ender 3 v3 microsd card",
+      "best sd card for ender 3 v3",
+      "ender 3 v3 memory card",
+      "ender 3 v3 sd card not detected"
+    ],
+    "imageUrl": "/img/devices/placeholder.webp",
+    "sdCard": {
+      "type": "microSD (UHS-I)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "16GB",
+        "32GB"
+      ],
+      "maxCapacity": "128GB (FAT32)"
+    },
+    "whySpecs": "The Ender 3 V3 prints offline from a microSD card, and like most FDM printers its card requirements are very modest — a basic <b>Class 10 / U1</b> card reads G-code with room to spare. The thing that actually trips up Ender owners is <b>formatting and reliability</b>, not speed: the printer is happiest with a <b>FAT32-formatted card of 32GB or less</b>, and many 'SD card not detected' complaints trace back to a card formatted as exFAT, a worn bundled card, or a counterfeit. Buy a genuine name-brand card, keep it small, and format FAT32. There is no benefit to a fast or high-capacity card here — this is a volume-friendly, budget recommendation.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Why is my Ender 3 V3 not detecting the SD card?",
+        "a": "Almost always a <b>formatting issue</b>. The Ender 3 V3 wants a card formatted as <b>FAT32</b> — cards 64GB and larger ship as exFAT and won't be read until reformatted. Use a <b>32GB-or-smaller card formatted FAT32</b>, and replace the worn bundled card if problems persist."
+      },
+      {
+        "q": "What size and speed microSD does the Ender 3 V3 need?",
+        "a": "<b>16-32GB, Class 10 / U1</b> is ideal. G-code files are small and the printer reads them slowly, so <b>fast U3/V30 cards provide no benefit</b>. Keeping the card at 32GB or under also avoids FAT32 formatting headaches."
+      },
+      {
+        "q": "Can I reuse the microSD card that came with the printer?",
+        "a": "You can, but the bundled cards are often <b>low quality and wear out</b>, which leads to read errors and failed prints over time. A cheap <b>genuine SanDisk Ultra or Samsung card</b> is a worthwhile, inexpensive upgrade for reliability."
+      }
+    ],
+    "relatedDevices": [
+      "creality-ender-3-v3-se",
+      "creality-ender-3-v3-ke",
+      "bambu-lab-a1"
+    ],
+    "notes": "microSD (FAT32). Best-selling budget FDM — high search volume, low spec ceiling (Class 10/U1, 32GB FAT32). Lead with the real-world 'SD card not detected' = exFAT/formatting issue. Volume play, value cards only."
+  },
+  {
+    "id": "bambu-lab-a1-mini",
+    "name": "Bambu Lab A1 mini",
+    "category": "3D Printers & Fabrication",
+    "slug": "bambu-lab-a1-mini",
+    "searchTerms": [
+      "bambu lab a1 mini sd card",
+      "bambu a1 mini microsd card",
+      "best sd card for bambu lab a1 mini",
+      "a1 mini memory card",
+      "bambu a1 mini sd card format"
+    ],
+    "imageUrl": "/img/devices/placeholder.webp",
+    "sdCard": {
+      "type": "microSD (UHS-I)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB"
+      ],
+      "maxCapacity": "2TB (FAT32)"
+    },
+    "whySpecs": "The A1 mini prints from a microSD card and shares the whole Bambu storage workflow: Bambu's own wiki calls for a card <b>formatted FAT32</b> and rated at least <b>Class 10 / U1 (10 MB/s)</b>, and officially supports up to 2TB if you format it on the printer. The card never bottlenecks print quality — what matters is integrity. The A1 mini's one quirk worth knowing: the slot is <b>not hot-swappable</b>, so you should always <b>safely eject the card from the menu</b> before pulling it, or you risk corrupting files and failing the next print. A genuine 32-64GB SanDisk or Samsung card is the right call.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What microSD card format does the Bambu A1 mini need?",
+        "a": "<b>FAT32.</b> Windows formats cards over 32GB as exFAT by default, which the A1 mini won't read reliably — so either use a 32GB card, or <b>format a larger card to FAT32 directly on the printer</b> (Bambu supports up to 2TB this way). At least <b>Class 10 / U1</b> is recommended."
+      },
+      {
+        "q": "Why does my A1 mini SD card get corrupted?",
+        "a": "The A1 series slot is <b>not hot-swappable</b>. If you yank the card without ejecting it, files can corrupt and the next print can fail. <b>Always use the 'safely eject' option in the menu</b> before removing the card — this is the single most common cause of A1 mini card problems."
+      },
+      {
+        "q": "Does the A1 mini need a fast or large card?",
+        "a": "No. Print files are tiny and the card isn't a speed bottleneck, so a <b>standard Class 10 / U1 card</b> is plenty and a huge capacity is wasted money. A genuine <b>32-64GB SanDisk or Samsung</b> card is the sweet spot."
+      }
+    ],
+    "relatedDevices": [
+      "bambu-lab-a1",
+      "bambu-lab-p1s",
+      "bambu-lab-x1-carbon"
+    ],
+    "notes": "microSD (FAT32), up to 2TB if formatted on-printer; Class 10/U1 per Bambu wiki. Value tier. Two distinctive angles vs the other Bambu pages: on-printer FAT32 formatting for >32GB cards, and the non-hot-swappable slot (safe-eject to avoid corruption)."
+  },
+  {
+    "id": "creality-ender-3-v3-se",
+    "name": "Creality Ender 3 V3 SE",
+    "category": "3D Printers & Fabrication",
+    "slug": "creality-ender-3-v3-se",
+    "searchTerms": [
+      "creality ender 3 v3 se sd card",
+      "ender 3 v3 se sd card",
+      "best sd card for ender 3 v3 se",
+      "ender 3 v3 se memory card",
+      "ender 3 v3 se sd card not reading"
+    ],
+    "imageUrl": "/img/devices/placeholder.webp",
+    "sdCard": {
+      "type": "Full-size SD (UHS-I)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "16GB",
+        "32GB"
+      ],
+      "maxCapacity": "128GB (FAT32)"
+    },
+    "whySpecs": "Unlike most modern printers, the budget-favorite Ender 3 V3 SE takes a <b>full-size SD card</b> (it also has a USB-C port) — easier to handle than a fiddly microSD and what the bundled card uses. Requirements are minimal: a basic <b>Class 10 / U1</b> card reads G-code with room to spare, and there's no benefit to a fast or high-capacity card. As with the rest of the Ender line, the real-world gotcha is <b>formatting</b>: 'SD card not reading' almost always means the card is exFAT or NTFS instead of <b>FAT32</b>, or the cheap bundled card has worn out. Keep it at 32GB or under, format FAT32, and use a genuine name-brand card.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-sd-uhs1"
+      },
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the Ender 3 V3 SE use a microSD or full-size SD card?",
+        "a": "A <b>full-size SD card</b> — not microSD. This is a deliberate choice by Creality (full-size cards are easier to handle and harder to lose). It also has a <b>USB-C port</b> as an alternative way to load files."
+      },
+      {
+        "q": "Why won't my Ender 3 V3 SE read the SD card?",
+        "a": "Nearly always a <b>format problem</b>. The V3 SE needs the card formatted as <b>FAT32</b>; cards formatted exFAT/NTFS, or larger than 32GB (which default to exFAT), won't be read. Reformat to FAT32 at 32GB or under, and replace the worn bundled card if it persists."
+      },
+      {
+        "q": "What size and speed SD card is best for the V3 SE?",
+        "a": "<b>16-32GB, Class 10 / U1</b>. Print files are small and the printer reads them slowly, so a <b>fast U3/V30 card buys you nothing</b>. Staying at 32GB or under also sidesteps FAT32 formatting hassle."
+      }
+    ],
+    "relatedDevices": [
+      "creality-ender-3-v3",
+      "creality-ender-3-v3-ke",
+      "bambu-lab-a1-mini"
+    ],
+    "notes": "FULL-SIZE SD (not microSD) + USB-C. Budget best-seller, massive search volume. Lead with the full-size-vs-micro distinction (common point of confusion) and the FAT32 'not reading' fix. Full-size SD card recommendations only. 32GB FAT32, value cards."
+  },
+  {
+    "id": "creality-ender-3-v3-ke",
+    "name": "Creality Ender 3 V3 KE",
+    "category": "3D Printers & Fabrication",
+    "slug": "creality-ender-3-v3-ke",
+    "searchTerms": [
+      "creality ender 3 v3 ke sd card",
+      "ender 3 v3 ke microsd card",
+      "best sd card for ender 3 v3 ke",
+      "ender 3 v3 ke memory card",
+      "ender 3 v3 ke sd card"
+    ],
+    "imageUrl": "/img/devices/placeholder.webp",
+    "sdCard": {
+      "type": "microSD (UHS-I)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB"
+      ],
+      "maxCapacity": "128GB (FAT32)"
+    },
+    "whySpecs": "The Ender 3 V3 KE is the Klipper-powered, high-speed (200mm/s+) variant, and it accepts a <b>microSD card</b> alongside WiFi/LAN and USB transfer. Even though the KE prints faster than a stock Ender, that speed comes from the motion system and firmware — it does <b>not</b> demand a faster SD card. The card only needs to hand over the file reliably, so a <b>Class 10 / U1</b> microSD is still all that's required. Because the KE leans on network printing, many owners use the card mainly as an offline backup; keep it genuine, format it <b>FAT32</b>, and it will stay out of your way.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does a faster Ender 3 V3 KE need a faster SD card?",
+        "a": "No. The KE's high speed comes from its <b>Klipper firmware and motion system</b>, not the card. G-code is small and read slowly, so a standard <b>Class 10 / U1 microSD</b> is all you need — a U3/V30 card adds cost with no benefit."
+      },
+      {
+        "q": "Can I print over WiFi instead of using the SD card on the KE?",
+        "a": "Yes — the V3 KE supports <b>WiFi/LAN and USB</b> in addition to microSD. Many owners send jobs over the network and keep a microSD purely as an <b>offline backup</b>. Either way, a reliable FAT32-formatted card is worth having."
+      },
+      {
+        "q": "What microSD card should I use for the Ender 3 V3 KE?",
+        "a": "A <b>genuine 32-64GB SanDisk or Samsung, Class 10 / U1, formatted FAT32</b>. Avoid cheap no-name cards — counterfeit and worn cards are the usual cause of read errors and failed prints on any Ender."
+      }
+    ],
+    "relatedDevices": [
+      "creality-ender-3-v3",
+      "creality-ender-3-v3-se",
+      "bambu-lab-a1-mini"
+    ],
+    "notes": "microSD (FAT32) + WiFi/LAN/USB. High-speed Klipper variant — explicitly debunk the 'faster printer needs faster card' assumption (speed is firmware/motion, not card). Value microSD cards. 32-64GB FAT32."
+  }
+]

@@ -19,6 +19,7 @@ const REVIEW_DIR = path.join(__dirname, "../../img/devices/_review");
 
 // Per-category scale tuning for how large the device sits on the background.
 const CATEGORY_SCALE = {
+  "3D Printers & Fabrication": 0.62,
   "Gaming Handhelds": 0.6,
   "Action Cameras": 0.5,
   "Cameras": 0.62,
@@ -26,6 +27,7 @@ const CATEGORY_SCALE = {
   "Dash Cams": 0.5,
   "Computing & Tablets": 0.62,
   "Audio & Hi-Fi": 0.5,
+  "Music Production": 0.55,
   "Smartphones": 0.66,
   "Security Cameras": 0.5,
 };

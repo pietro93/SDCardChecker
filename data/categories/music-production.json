@@ -1,0 +1,394 @@
+[
+  {
+    "id": "akai-mpc-live-ii",
+    "name": "Akai MPC Live II",
+    "category": "Music Production",
+    "slug": "akai-mpc-live-ii",
+    "searchTerms": [
+      "akai mpc live ii sd card",
+      "mpc live 2 sd card",
+      "best sd card for mpc live ii",
+      "mpc live ii max sd card size",
+      "mpc live sample streaming card"
+    ],
+    "sdCard": {
+      "type": "SD / SDHC / SDXC (Full Size)",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2 (Recommended)",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "The MPC Live II is a <b>battery-powered standalone</b> that streams audio directly from disk during playback — long samples, audio tracks, and large drum kits are read off the card in real time as a project plays. Because it is built to be gigged with, a slow or flaky card is the difference between a clean set and an <b>audible dropout in front of an audience</b>. Use a full-size UHS-I U3/V30 card so sustained read speed comfortably keeps pace with multitrack sample streaming, and format it as exFAT (or in-device) for stability. Akai supports cards up to 2TB, so size the card to your whole library rather than a single project.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs1"
+      },
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the maximum SD card size for the Akai MPC Live II?",
+        "a": "<b>Up to 2TB.</b> Akai states the MPC Live II's full-size SD slot supports virtually all drive sizes (SD/SDHC/SDXC). Format the card to exFAT for cards over 32GB, or format it inside the MPC, for the most reliable results."
+      },
+      {
+        "q": "Why does my MPC Live II glitch or drop out when playing samples?",
+        "a": "<b>It is usually a card that can't keep up with sample streaming.</b> The MPC streams audio off the card in real time, so a slow or worn card causes stutters and dropouts — especially mid-performance. Switch to a name-brand U3/V30 (ideally A2) card to maintain a steady sustained read speed."
+      },
+      {
+        "q": "Should I use the internal drive bay or an SD card?",
+        "a": "<b>Both work — the SD card is the simplest expansion.</b> The Live II has an internal 2.5\" SATA bay for an SSD, but a fast full-size SD card is the easiest way to carry a large sample library and move it between machines. Many users keep their library on SD and reserve the SSD for recording."
+      }
+    ],
+    "relatedDevices": [
+      "akai-mpc-x",
+      "akai-mpc-one-plus",
+      "roland-sp-404mkii"
+    ],
+    "notes": "Battery-powered standalone MPC, used in actual live sets. Streams audio from the card in real time, so card speed directly affects dropout risk during performance — the anchor device for this category's framing."
+  },
+  {
+    "id": "akai-mpc-one-plus",
+    "name": "Akai MPC One+",
+    "category": "Music Production",
+    "slug": "akai-mpc-one-plus",
+    "searchTerms": [
+      "akai mpc one plus sd card",
+      "mpc one+ sd card",
+      "best sd card for mpc one",
+      "mpc one max sd card size",
+      "mpc one+ storage expansion"
+    ],
+    "sdCard": {
+      "type": "SD / SDHC / SDXC (Full Size)",
+      "minSpeed": "U1 / Class 10 (U3 Recommended)",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A1 (A2 Recommended)",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "The MPC One+ has a <b>full-size SD card slot</b> that adds storage for samples, kits, and projects, and the MPC streams audio from disk while a project plays. With only minimal internal user storage, the card quickly becomes your main library, so capacity and a steady read speed matter more than peak burst numbers. A UHS-I U3 card keeps sample streaming smooth, and formatting to exFAT (for cards over 32GB) or formatting in the MPC avoids the recognition issues users hit with stock-formatted cards.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "sandisk-extreme-pro-sd-uhs1"
+      },
+      {
+        "id": "kingston-canvas-go-pro-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the maximum SD card size for the Akai MPC One+?",
+        "a": "<b>Up to 2TB.</b> The MPC One+ takes standard full-size SD/SDHC/SDXC cards and Akai supports virtually all drive sizes. For cards larger than 32GB, format to exFAT — or format the card inside the MPC — so it is recognized reliably."
+      },
+      {
+        "q": "Do I need a fast SD card for the MPC One+?",
+        "a": "<b>A UHS-I U3 card is the safe choice.</b> The MPC streams audio off the card during playback, so a quality U3 (ideally A2) card prevents stutters when a project loads large samples or audio tracks. Cheap, unbranded cards are the most common cause of glitches and corrupted projects."
+      }
+    ],
+    "relatedDevices": [
+      "akai-mpc-x",
+      "akai-mpc-live-ii",
+      "roland-sp-404mkii"
+    ],
+    "notes": "Entry/mid standalone MPC workstation with a full-size SD slot. Same sample-streaming framing as the Live II but a tier down in price; steer to U3 full-size SD rather than premium UHS-II."
+  },
+  {
+    "id": "roland-sp-404mkii",
+    "name": "Roland SP-404MKII",
+    "category": "Music Production",
+    "slug": "roland-sp-404mkii",
+    "searchTerms": [
+      "roland sp-404mkii sd card",
+      "sp 404 mk2 sd card",
+      "best sd card for sp-404mkii",
+      "sp-404mkii sd card format",
+      "sp404 mk2 max sd card size"
+    ],
+    "sdCard": {
+      "type": "SD / SDHC / SDXC (Full Size)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB (Reliable), 1TB (Reported)"
+    },
+    "whySpecs": "Unlike the standalone MPCs, the SP-404MKII does <b>not stream samples off the card during a set</b> — samples are imported into the unit's internal storage, and the SD card is used for <b>importing/exporting samples, saving projects, and backups</b>. That means raw speed is far less important than reliability: a Class 10 / U1 card is plenty. The two things that actually cause problems are unsupported capacities and bad formatting, so use a name-brand card and <b>format it inside the SP-404MKII</b> before transferring files.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-sd-uhs1"
+      },
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-silver-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What kind of SD card does the Roland SP-404MKII use?",
+        "a": "<b>A standard full-size SD/SDHC/SDXC card.</b> Speed class is not critical because the card is used for importing/exporting samples and saving projects rather than live streaming — a reliable Class 10 / U1 card is sufficient."
+      },
+      {
+        "q": "What is the maximum SD card size for the SP-404MKII?",
+        "a": "<b>256GB–512GB is the reliable range.</b> Some users report 1TB cards working after formatting them in the unit, but results vary — if you want guaranteed compatibility, stay at 512GB or below. Always format the card in the SP-404MKII before use."
+      },
+      {
+        "q": "Does the SP-404MKII play samples directly from the SD card?",
+        "a": "<b>No — samples are imported to the unit's internal storage.</b> The SD card moves samples and projects in and out and acts as a backup, so you don't need a high-speed streaming card; you need a dependable one that the unit formats and reads without errors."
+      }
+    ],
+    "relatedDevices": [
+      "roland-mc-707",
+      "polyend-tracker-plus",
+      "akai-mpc-live-ii"
+    ],
+    "notes": "Extremely popular lo-fi/beat-making sampler. Distinct from the MPCs: the card is for import/export/backup, NOT live streaming, so the framing is reliability + correct formatting over speed. Roland publishes no hard capacity cap; 256-512GB is the community-confirmed safe range."
+  },
+  {
+    "id": "akai-mpc-x",
+    "name": "Akai MPC X",
+    "category": "Music Production",
+    "slug": "akai-mpc-x",
+    "searchTerms": [
+      "akai mpc x sd card",
+      "best sd card for mpc x",
+      "mpc x max sd card size",
+      "mpc x storage expansion",
+      "akai mpc x sample streaming card"
+    ],
+    "sdCard": {
+      "type": "SD / SDHC / SDXC (Full Size)",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2 (Recommended)",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "The MPC X is the <b>flagship standalone MPC</b>, and like the rest of the line it streams audio directly from disk — large kits, audio tracks, and long samples are read off the card in real time as a project plays. Its big-screen, studio-centric users tend to keep enormous libraries, so capacity headroom and a steady sustained read speed matter most. A fast full-size UHS-I U3/V30 card (ideally A2) keeps sample streaming glitch-free; if you want maximum headroom for big multitrack sessions, the MPC X's full-size slot also accepts <b>UHS-II</b> cards (they run at UHS-I speeds but are still excellent). Format to exFAT (cards over 32GB) or format in the MPC, and Akai supports drives up to 2TB.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "sandisk-extreme-pro-sd-uhs1"
+      },
+      {
+        "id": "sony-tough-g-v90"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the maximum SD card size for the Akai MPC X?",
+        "a": "<b>Up to 2TB.</b> The MPC X has a full-size SD/SDHC/SDXC slot and Akai supports virtually all drive sizes. Format cards larger than 32GB to exFAT — or format inside the MPC — for reliable recognition."
+      },
+      {
+        "q": "Does the MPC X benefit from a UHS-II card?",
+        "a": "<b>It accepts UHS-II cards, but the slot runs at UHS-I speeds.</b> A quality UHS-I U3/V30 (A2) card is all the MPC X needs for smooth sample streaming. A UHS-II card will work and is a fine choice if you also use it in a faster reader, but you don't need to pay the UHS-II premium purely for the MPC X."
+      },
+      {
+        "q": "Why does my MPC X stutter when loading big programs?",
+        "a": "<b>Usually a slow or worn card.</b> Because the MPC streams audio from the card during playback, large programs with many long samples expose a weak card as stutters or load errors. Move to a name-brand U3/V30 (A2) card and keep the library on a card sized for your whole collection."
+      }
+    ],
+    "relatedDevices": [
+      "akai-mpc-live-ii",
+      "akai-mpc-one-plus",
+      "roland-sp-404mkii"
+    ],
+    "notes": "Flagship standalone MPC. Completes the MPC trio (One+ / Live II / X) for a tight internal-linking cluster. Higher-margin, library-heavy audience; same live-streaming framing, with a UHS-II note since the full-size slot physically accepts UHS-II (at UHS-I speeds)."
+  },
+  {
+    "id": "polyend-tracker-plus",
+    "name": "Polyend Tracker+",
+    "category": "Music Production",
+    "slug": "polyend-tracker-plus",
+    "searchTerms": [
+      "polyend tracker+ sd card",
+      "polyend tracker plus microsd",
+      "best sd card for polyend tracker",
+      "polyend tracker sd card format fat32",
+      "polyend tracker max sd card size"
+    ],
+    "sdCard": {
+      "type": "microSD / microSDHC / microSDXC (FAT32 only)",
+      "minSpeed": "UHS-I U1 (U3 Recommended)",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A1 (A2 Recommended)",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB (Officially Tested), 512GB (Reported)"
+    },
+    "whySpecs": "The Tracker+ is built around its microSD card — samples, instruments, and projects all live on it, and the device <b>streams samples directly from the card</b> during playback. Two things matter: the card <b>must be formatted FAT32</b> (Polyend specifies a primary FAT32 MBR partition; exFAT is not supported on the original/Mini line), and it should be a quality UHS-I card rated <b>A1/A2</b> so random reads keep up while a pattern streams multiple sample tracks. Polyend officially tested up to 128GB; larger cards (up to 512GB) are reported to work once formatted FAT32, but 64–128GB is the comfortable, fully-supported range.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "sandisk-ultra-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What format does the Polyend Tracker+ SD card need to be?",
+        "a": "<b>FAT32, on a primary MBR partition.</b> Polyend specifies FAT32 — exFAT-formatted cards are not reliably supported. If a card isn't recognized, reformatting it to FAT32 is almost always the fix. Cards larger than 32GB usually need a dedicated FAT32 tool (Windows won't format big cards to FAT32 by default)."
+      },
+      {
+        "q": "What is the maximum SD card size for the Polyend Tracker?",
+        "a": "<b>128GB is the officially tested maximum; some users report up to 512GB.</b> The Tracker+ ships with a 16GB card. For guaranteed compatibility stay at 64–128GB; larger cards can work but must be FAT32-formatted and aren't officially validated."
+      },
+      {
+        "q": "Do I need a fast card for the Polyend Tracker+?",
+        "a": "<b>Yes — a UHS-I card rated A1 or A2.</b> The Tracker streams samples off the card during playback, so good random-read performance prevents glitches when several sample tracks play at once. A name-brand U3/A2 microSD is the safe pick; cheap unbranded cards are the usual cause of dropouts and load errors."
+      }
+    ],
+    "relatedDevices": [
+      "1010music-blackbox",
+      "roland-mc-707",
+      "roland-sp-404mkii"
+    ],
+    "notes": "Cult standalone tracker/sampler with a large, online community. Workflow is entirely microSD-based and streams from the card, so A1/A2 + FAT32 are the key angles. FAT32-only is a strong, distinct search-intent hook (the #1 'card not recognized' fix)."
+  },
+  {
+    "id": "roland-mc-707",
+    "name": "Roland MC-707 Groovebox",
+    "category": "Music Production",
+    "slug": "roland-mc-707",
+    "searchTerms": [
+      "roland mc-707 sd card",
+      "mc707 sd card max size",
+      "best sd card for mc-707",
+      "roland mc-707 sd card 32gb limit",
+      "mc-707 sdhc card"
+    ],
+    "sdCard": {
+      "type": "SD / SDHC (NOT SDXC, Full Size)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "16GB",
+        "32GB"
+      ],
+      "maxCapacity": "32GB (Strict Limit)"
+    },
+    "whySpecs": "<b>Critical compatibility note:</b> the MC-707 supports <b>SD and SDHC cards only — up to 32GB</b>. It does <b>not</b> reliably read SDXC cards (64GB and larger), so the most common mistake is buying a big 128GB card that the unit won't recognize. The card stores projects, audio data, and imported samples (samples are loaded into the unit, not streamed live during a set), so raw speed is not critical — a dependable Class 10 / U1 SDHC card is all you need. Format the card in the MC-707 before use for the most reliable results.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-sd-uhs1"
+      },
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-silver-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the maximum SD card size for the Roland MC-707?",
+        "a": "<b>32GB.</b> The MC-707 supports SD/SDHC cards up to 32GB and does not reliably work with 64GB+ SDXC cards. If your card isn't recognized, it is almost certainly too large — use a 32GB SDHC card."
+      },
+      {
+        "q": "Why won't my MC-707 read my SD card?",
+        "a": "<b>The card is most likely larger than 32GB (an SDXC card).</b> The MC-707's slot is SD/SDHC only. Switch to a 32GB SDHC card and format it inside the unit. This single limit is the most common source of 'card not recognized' problems on the MC-707."
+      },
+      {
+        "q": "Does the MC-707 need a fast SD card?",
+        "a": "<b>No — a standard Class 10 / U1 card is fine.</b> The card holds projects, audio, and imported samples that load into the unit rather than streaming live, so capacity compatibility (≤32GB SDHC) matters far more than speed."
+      }
+    ],
+    "relatedDevices": [
+      "polyend-tracker-plus",
+      "roland-sp-404mkii",
+      "akai-mpc-live-ii"
+    ],
+    "notes": "Popular Roland groovebox. The headline angle is the strict 32GB SDHC limit — the same high-traffic 'why won't my big card work?' template that makes the Zoom H1n-VP page strong. Card stores/imports rather than streams live, so framing is capacity-compatibility over speed."
+  },
+  {
+    "id": "1010music-blackbox",
+    "name": "1010music Blackbox",
+    "category": "Music Production",
+    "slug": "1010music-blackbox",
+    "searchTerms": [
+      "1010music blackbox sd card",
+      "blackbox microsd card recommended",
+      "best sd card for 1010music blackbox",
+      "blackbox sd card a2 v30",
+      "1010 blackbox max sd card size"
+    ],
+    "sdCard": {
+      "type": "microSD / microSDHC / microSDXC",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2 (Critical)",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB (Tested)"
+    },
+    "whySpecs": "The Blackbox is a compact sampler that <b>streams every voice directly from the microSD card</b> — up to 32 simultaneous voices — which is one of the most demanding real-time card workloads of any device in this category. That is why 1010music specifically recommends <b>A2-rated, V30 cards</b> (their go-to is the SanDisk Extreme series): the card's random-read/IOPS performance directly determines how many samples can play at once without dropping out. A slow or cheap card is the single most common cause of Blackbox playback glitches. Large cards work well (users run 512GB–1TB), so size to your library; just keep it a name-brand A2/V30 card.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What SD card does 1010music recommend for the Blackbox?",
+        "a": "<b>An A2-rated, V30 microSD card.</b> 1010music's recommended pick is the SanDisk Extreme series (A2 / V30). Because the Blackbox streams all voices from the card in real time, the A2 random-read rating matters more than peak sequential speed."
+      },
+      {
+        "q": "What is the maximum SD card size for the Blackbox?",
+        "a": "<b>Very large cards are supported — users run 512GB and even 1TB successfully.</b> Size the card to your sample library; the more important factor is that it's a quality A2/V30 card, not its raw capacity."
+      },
+      {
+        "q": "Why does my Blackbox glitch or cut off samples?",
+        "a": "<b>Almost always a card that can't keep up.</b> The Blackbox streams up to 32 voices from the card simultaneously, so a slow or worn card causes dropouts and cut-off notes. Switching to a SanDisk Extreme (A2/V30) or similar fixes the vast majority of these issues."
+      }
+    ],
+    "relatedDevices": [
+      "polyend-tracker-plus",
+      "roland-sp-404mkii",
+      "akai-mpc-live-ii"
+    ],
+    "notes": "Compact cult sampler with a dedicated community. Strongest 'card quality directly limits performance' narrative in the batch: streams up to 32 voices from the card, and 1010music itself publishes A2/V30 recommendations — ideal for a why-specs section that genuinely justifies a premium card."
+  }
+]
