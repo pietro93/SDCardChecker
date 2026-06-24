@@ -60,9 +60,9 @@ function mergeDeviceCategories() {
         const data = JSON.parse(content);
         const devices = Array.isArray(data) ? data : (data.devices || []);
         allDevices = allDevices.concat(devices);
-        console.log(`✓ ${file}: ${devices.length} device(s)`);
+        console.log(`  ✓ ${file}: ${devices.length} device(s)`);
       } catch (err) {
-        console.warn(`Error loading ${file}:`, err.message);
+        console.warn(`  Error loading ${file}:`, err.message);
       }
     }
 
@@ -79,11 +79,11 @@ function mergeDeviceCategories() {
       };
 
       fs.writeFileSync(dataPath, JSON.stringify(output, null, 2));
-      console.log(`✓ Merged ${allDevices.length} device(s) → devices.json\n`);
+      console.log(`  ✓ Merged ${allDevices.length} device(s) → devices.json\n`);
     }
   } catch (err) {
     console.warn("Could not merge category files:", err.message);
-    console.log("Proceeding with existing devices.json\n");
+    console.log("   Proceeding with existing devices.json\n");
   }
 }
 
@@ -98,12 +98,12 @@ async function build() {
     console.log("Loading device data...");
     const devicesData = readJSON(dataPath);
     const allDevices = devicesData.devices;
-    console.log(`✓ Loaded ${allDevices.length} devices`);
+    console.log(`  ✓ Loaded ${allDevices.length} devices`);
 
     console.log("Loading SD Card Reader data...");
     const readersData = readJSON(readersPath);
     const allReaders = readersData.sdCardReaders || [];
-    console.log(`✓ Loaded ${allReaders.length} SD Card Readers\n`);
+    console.log(`  ✓ Loaded ${allReaders.length} SD Card Readers\n`);
 
     // 2. Copy Assets
     console.log("Copying assets...");
@@ -179,13 +179,13 @@ async function build() {
     // Success summary
     console.log("Generation complete!");
     console.log(`\nSummary:`);
-    console.log(`• Homepage: 1`);
-    console.log(`• Device pages: ${allDevices.length}`);
+    console.log(`  • Homepage: 1`);
+    console.log(`  • Device pages: ${allDevices.length}`);
     const categories = [...new Set(allDevices.map((d) => d.category))];
-    console.log(`• Category pages: ${categories.length}`);
-    console.log(`• SD Card Reader pages: 14`);
-    console.log(`• Reader Buying Guides: 4`);
-    console.log(`• Sitemap & robots.txt: ✓`);
+    console.log(`  • Category pages: ${categories.length}`);
+    console.log(`  • SD Card Reader pages: 14`);
+    console.log(`  • Reader Buying Guides: 4`);
+    console.log(`  • Sitemap & robots.txt: ✓`);
     console.log(`\nOutput directory: ${distPath}`);
     console.log(`\nTo view locally, run: npx http-server dist`);
     console.log(

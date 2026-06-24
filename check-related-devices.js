@@ -69,7 +69,7 @@ if (brokenRelatedCount > 0) {
     console.log(`\n   ${device.name} (${devId}):`);
     items.forEach(item => {
       const status = item.existsInEn ? '(exists in EN)' : '(missing everywhere)';
-      console.log(`→ "${item.brokenRef}" ${status}`);
+      console.log(`      → "${item.brokenRef}" ${status}`);
     });
   });
 

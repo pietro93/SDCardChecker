@@ -25,7 +25,7 @@ function generateJapaneseHomePage(distPath) {
   const homePath = path.join(distPath, "ja", "index.html");
   writeFile(homePath, html);
   
-  console.log(`✓ ${homePath}`);
+  console.log(`  ✓ ${homePath}`);
 }
 
 module.exports = { generateJapaneseHomePage };

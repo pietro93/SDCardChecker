@@ -27,7 +27,7 @@ class CardSelector {
       const cards = data.sdcards || [];
       
       if (!cards || cards.length === 0) {
-        console.warn(`[CardSelector] ⚠️ No cards found in ${dataFile}`);
+        console.warn(`[CardSelector] No cards found in ${dataFile}`);
         return [];
       }
       

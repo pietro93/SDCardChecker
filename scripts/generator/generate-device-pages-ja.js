@@ -18,9 +18,9 @@ async function generateDevicePagesJa(allDevices, distPath) {
         const { generateDevicePages } = require("./generate-device-pages");
         await generateDevicePages(allDevices, distPath, true);
         
-        console.log(`✓ Generated ${allDevices.length} Japanese device pages`);
+        console.log(`  ✓ Generated ${allDevices.length} Japanese device pages`);
     } catch (error) {
-        console.error(`Error generating Japanese device pages: ${error.message}`);
+        console.error(`  Error generating Japanese device pages: ${error.message}`);
         throw error;
     }
 }

@@ -251,7 +251,7 @@ function generateEnglishSitemap(allDevices, allReaders) {
         });
       }
     } catch (e) {
-      console.warn("Could not parse cars-navigation.json for sitemap");
+      console.warn("  Could not parse cars-navigation.json for sitemap");
     }
   }
 
@@ -276,7 +276,7 @@ function generateEnglishSitemap(allDevices, allReaders) {
 </urlset>`;
 
   writeFile(path.join(publicPath, "sitemap.xml"), sitemap);
-  console.log(`✓ English sitemap: ${allDevices.length} devices, ${categories.length} categories`);
+  console.log(`  ✓ English sitemap: ${allDevices.length} devices, ${categories.length} categories`);
 }
 
 /**
@@ -416,7 +416,7 @@ function generateJapaneseSitemap(allDevices) {
   }
   
   writeFile(path.join(jaPath, "sitemap.xml"), sitemap);
-  console.log(`✓ Japanese sitemap: ${allDevices.length} devices, ${categories.length} categories`);
+  console.log(`  ✓ Japanese sitemap: ${allDevices.length} devices, ${categories.length} categories`);
 }
 
 async function generateSitemaps() {

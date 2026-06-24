@@ -80,7 +80,7 @@ Output ONLY the JSON object, no markdown, no code blocks.`;
     const text = response.choices[0].message.content.trim();
     return JSON.parse(text);
   } catch (error) {
-    console.error(`Error generating enrichment for ${card.name}:`, error.message);
+    console.error(`  Error generating enrichment for ${card.name}:`, error.message);
     return null;
   }
 }

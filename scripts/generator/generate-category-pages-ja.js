@@ -281,7 +281,7 @@ async function generateCategoryPagesJa(allDevices, distPath) {
     });
 
   const generatedCount = Object.keys(grouped).filter(c => !excludeCategories.includes(c)).length;
-  console.log(`✓ Generated ${generatedCount} Japanese category pages (excluding Card Readers)`);
+  console.log(`  ✓ Generated ${generatedCount} Japanese category pages (excluding Card Readers)`);
 }
 
 module.exports = { generateCategoryPagesJa };

@@ -82,8 +82,8 @@ async function main() {
   fs.writeFileSync(path.join(REVIEW_DIR, `${slug}.json`), JSON.stringify(metadata, null, 2));
 
   console.log(`Staged: img/devices/_review/${slug}.webp`);
-  console.log(`removedFraction=${metadata.cutoutRemovedFraction} cutoutSane=${composed.cutoutSane}`);
-  if (!composed.cutoutSane) console.log("cutout sanity check FAILED — inspect carefully (source may not be a clean studio shot).");
+  console.log(`  removedFraction=${metadata.cutoutRemovedFraction} cutoutSane=${composed.cutoutSane}`);
+  if (!composed.cutoutSane) console.log("  cutout sanity check FAILED — inspect carefully (source may not be a clean studio shot).");
   console.log(`\nReview img/devices/_review/${slug}.webp, then:\n  node scripts/images/promote-device-image.js ${slug}`);
 }
 

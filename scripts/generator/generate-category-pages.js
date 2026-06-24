@@ -209,7 +209,7 @@ async function generateCategoryPages(allDevices, distPath) {
             writeFile(categoryPath, categoryHTML);
         });
 
-    console.log(`✓ Generated ${Object.keys(grouped).length} category pages`);
+    console.log(`  ✓ Generated ${Object.keys(grouped).length} category pages`);
 }
 
 module.exports = { generateCategoryPages };

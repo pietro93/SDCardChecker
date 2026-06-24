@@ -19,21 +19,21 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <button @click="selectUseCase('video')"
                 class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-600 hover:bg-blue-50 transition text-center">
-                <div class="text-4xl mb-2">🎥</div>
+                <div class="text-4xl mb-2"></div>
                 <h4 class="font-bold text-lg">Video Recording</h4>
                 <p class="text-sm text-gray-600">4K, 1080p, any bitrate</p>
             </button>
 
             <button @click="selectUseCase('photo')"
                 class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-600 hover:bg-blue-50 transition text-center">
-                <div class="text-4xl mb-2">📸</div>
+                <div class="text-4xl mb-2"></div>
                 <h4 class="font-bold text-lg">Photo Burst</h4>
                 <p class="text-sm text-gray-600">JPEG, RAW, timelapse</p>
             </button>
 
             <button @click="selectUseCase('continuous')"
                 class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-600 hover:bg-blue-50 transition text-center">
-                <div class="text-4xl mb-2">🔴</div>
+                <div class="text-4xl mb-2"></div>
                 <h4 class="font-bold text-lg">Continuous</h4>
                 <p class="text-sm text-gray-600">24/7, dashcam, surveillance</p>
             </button>
@@ -48,7 +48,7 @@
             </h3>
             <button @click="toggleMode()" class="text-sm px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 transition"
                 title="Switch to: I have a card, how long can I record?">
-                ↔️ Reverse
+                Reverse
             </button>
         </div>
 
@@ -97,7 +97,7 @@
                         <button type="button"
                             class="inline-block ml-1 text-blue-600 hover:text-blue-800 cursor-help font-normal"
                             aria-label="Bitrate help" title="Higher bitrate = better quality but larger files. Lower bitrate = smaller files but lower quality.">
-                            ℹ️
+                            
                         </button>
                     </label>
                     <input x-model.number="forward.video.bitrateMbps" type="number" placeholder="150" min="1" step="1"
@@ -154,7 +154,7 @@
                         <button type="button"
                             class="inline-block ml-1 text-blue-600 hover:text-blue-800 cursor-help font-normal"
                             aria-label="Burst rate help" title="How fast you're shooting affects the card speed you'll need">
-                            ℹ️
+                            
                         </button>
                     </label>
                     <select x-model="forward.photo.shootingStyle"
@@ -226,7 +226,7 @@
             </div>
 
             <div class="p-3 bg-amber-50 border border-amber-200 rounded text-amber-900 text-xs">
-                <strong>⚠️ Important:</strong> For continuous recording, use <strong>HIGH_ENDURANCE</strong> cards (designed for 24/7 use). Regular V30/V60 cards will fail quickly.
+                <strong>Important:</strong> For continuous recording, use <strong>HIGH_ENDURANCE</strong> cards (designed for 24/7 use). Regular V30/V60 cards will fail quickly.
             </div>
         </div>
 
@@ -235,7 +235,7 @@
             <button type="button" @click="advancedExpanded = !advancedExpanded" :aria-expanded="advancedExpanded"
                 aria-controls="advanced-content"
                 class="w-full cursor-pointer font-bold text-sm py-2 px-4 hover:bg-gray-100 text-left flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition">
-                <span>⚙️ Advanced Options</span>
+                <span>Advanced Options</span>
                 <span :class="advancedExpanded ? 'rotate-180' : ''" class="transition-transform">▼</span>
             </button>
 
@@ -276,7 +276,7 @@
             </h3>
             <button @click="toggleMode()" class="text-sm px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 transition"
                 title="Switch to: How much storage do I need?">
-                ↔️ Forward
+                Forward
             </button>
         </div>
 
@@ -349,7 +349,7 @@
 
                     <div x-show="activeScenario === 'continuous' && forward.continuous.hoursPerDay >= 12"
                          class="p-4 bg-amber-50 border border-amber-200 rounded text-amber-900 text-sm">
-                        <strong>⚠️ Important:</strong> For extended continuous recording, use <strong>HIGH_ENDURANCE</strong> cards (not speed cards). These are designed for 24/7 use and will last much longer.
+                        <strong>Important:</strong> For extended continuous recording, use <strong>HIGH_ENDURANCE</strong> cards (not speed cards). These are designed for 24/7 use and will last much longer.
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -410,7 +410,7 @@
 
                 <!-- Card Validator (Verify your card meets calculated speed requirements) -->
                 <div class="mt-8 p-4 bg-indigo-50 border border-indigo-200 rounded-lg" @click.away="cardSelectorOpen = false">
-                    <label class="block text-sm font-bold mb-3">🔍 Verify Your Card</label>
+                    <label class="block text-sm font-bold mb-3">Verify Your Card</label>
                     <p class="text-xs text-gray-700 mb-3">Select a card from our database to check if it meets your speed class requirements</p>
                     
                     <div class="relative mb-3">
@@ -478,7 +478,7 @@
                     <button type="button" @click="formatComparisonExpanded = !formatComparisonExpanded" :aria-expanded="formatComparisonExpanded"
                         aria-controls="format-comparison-content"
                         class="w-full cursor-pointer font-bold text-sm py-2 px-4 hover:bg-gray-100 text-left flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition">
-                        <span>🎬 Codec Comparison (H.264 vs H.265 vs ProRes)</span>
+                        <span>Codec Comparison (H.264 vs H.265 vs ProRes)</span>
                         <span :class="formatComparisonExpanded ? 'rotate-180' : ''" class="transition-transform">▼</span>
                     </button>
 
@@ -513,7 +513,7 @@
                     <button type="button" @click="speedClassExpanded = !speedClassExpanded" :aria-expanded="speedClassExpanded"
                         aria-controls="speed-class-content"
                         class="w-full cursor-pointer font-bold text-sm py-2 px-4 hover:bg-gray-100 text-left flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition">
-                        <span>📊 Speed Class Reference</span>
+                        <span>Speed Class Reference</span>
                         <span :class="speedClassExpanded ? 'rotate-180' : ''" class="transition-transform">▼</span>
                     </button>
 

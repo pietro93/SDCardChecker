@@ -37,7 +37,7 @@ try {
     console.log(`No devices found for category: "${categoryName}"`);
     console.log('\nAvailable categories:');
     const categories = [...new Set(devices.map(d => d.category))].sort();
-    categories.forEach(cat => console.log(`- ${cat}`));
+    categories.forEach(cat => console.log(`  - ${cat}`));
     process.exit(1);
   }
   
@@ -54,9 +54,9 @@ try {
   fs.writeFileSync(outputPath, JSON.stringify(categoryDevices, null, 2));
   
   console.log(`Extracted ${categoryDevices.length} device(s) from "${categoryName}"`);
-  console.log(`Saved to: ${outputPath}`);
+  console.log(`   Saved to: ${outputPath}`);
   console.log('\nDevices:');
-  categoryDevices.forEach(d => console.log(`- ${d.name}`));
+  categoryDevices.forEach(d => console.log(`  - ${d.name}`));
   
 } catch (err) {
   console.error('Error:', err.message);

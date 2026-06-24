@@ -53,7 +53,7 @@ async function main() {
     const isWhite = avgRgb > 245 && p.a > 245;
     if (!isTransparent) allTransparent = false;
     if (!isWhite) allWhite = false;
-    console.log(`${label.padEnd(12)} (${x},${y}): rgba(${p.r},${p.g},${p.b},${p.a}) avgRGB=${avgRgb.toFixed(1)} transparent=${isTransparent} white=${isWhite}`);
+    console.log(`  ${label.padEnd(12)} (${x},${y}): rgba(${p.r},${p.g},${p.b},${p.a}) avgRGB=${avgRgb.toFixed(1)} transparent=${isTransparent} white=${isWhite}`);
   }
 
   console.log("");

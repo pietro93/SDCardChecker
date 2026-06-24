@@ -397,7 +397,7 @@ generate404Page(distPath);
 generateSitemap(allDevices, allReaders, distPath);
 generateRobots(distPath);
 generateLegalPages(distPath);
-console.log(`✓ Core files generated (homepage, 404, sitemap, robots.txt, privacy, terms, affiliate-disclosure, about, contact, sitemap-page)`);
+console.log(`  ✓ Core files generated (homepage, 404, sitemap, robots.txt, privacy, terms, affiliate-disclosure, about, contact, sitemap-page)`);
 }
 
 module.exports = { generateCoreFiles };

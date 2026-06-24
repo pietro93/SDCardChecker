@@ -28,7 +28,7 @@ try {
     cwd: path.join(__dirname, "..")
   });
 
-  console.log(`✓ Compiled to ${distCssPath}`);
+  console.log(`  ✓ Compiled to ${distCssPath}`);
 } catch (error) {
   console.error("CSS compilation failed:", error.message);
   process.exit(1);

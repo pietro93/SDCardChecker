@@ -13,7 +13,7 @@ function generateCarsIndex(distPath) {
   const { generateHeader, generateFooter, generateSidebar } = require("../../src/templates/components");
 
   if (!fs.existsSync(carsPath)) {
-    console.warn("data/cars-navigation.json not found. Skipping.");
+    console.warn("  data/cars-navigation.json not found. Skipping.");
     return;
   }
 
@@ -59,7 +59,7 @@ function generateCarsIndex(distPath) {
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
   writeFile(path.join(outDir, 'index.html'), html);
 
-  console.log(`✓ Generated /cars/index.html (${vehicles.length} vehicles)`);
+  console.log(`  ✓ Generated /cars/index.html (${vehicles.length} vehicles)`);
 }
 
 module.exports = { generateCarsIndex };

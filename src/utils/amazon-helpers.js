@@ -31,7 +31,7 @@ function generateProductBadge(product) {
     url = `https://amazon.com/s?k=${encodeURIComponent(title)}`
   } = product;
 
-  const stars = rating ? `⭐ ${rating}` : '(No ratings)';
+  const stars = rating ? `<i class="fas fa-star text-amber-400"></i> ${rating}` : '(No ratings)';
   const reviews = reviewCount ? ` (${reviewCount.toLocaleString()} reviews)` : '';
   const priceText = formatPrice(price);
   const inStock = Math.random() > 0.1 ? 'In Stock' : 'Check Availability';

@@ -111,7 +111,7 @@ function generateCSV() {
   fs.writeFileSync(outputPath, csv, 'utf8');
   
   console.log(`Generated CSV: ${outputPath}`);
-  console.log(`Contains ${lines.length - 1} FAQ items for translation`);
+  console.log(`   Contains ${lines.length - 1} FAQ items for translation`);
   return lines.length - 1;
 }
 
@@ -189,7 +189,7 @@ function showTopDevices() {
     .sort((a, b) => b[1] - a[1])
     .slice(0, 10)
     .forEach(([name, count]) => {
-      console.log(`• ${name}: ${count} FAQ items`);
+      console.log(`  • ${name}: ${count} FAQ items`);
     });
   console.log('');
 }

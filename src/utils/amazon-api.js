@@ -41,12 +41,12 @@ async function delayIfNeeded() {
 async function searchSDCards(keywords) {
   // Validate credentials exist
   if (!commonParameters.AccessKey || !commonParameters.SecretKey || !commonParameters.PartnerTag) {
-    console.warn('⚠️  Amazon API credentials missing (check .env or Cloudflare env vars)');
+    console.warn('Amazon API credentials missing (check .env or Cloudflare env vars)');
     return [];
   }
 
   if (!keywords) {
-    console.error('❌ Keywords required for search');
+    console.error('Keywords required for search');
     return [];
   }
 
@@ -93,13 +93,13 @@ async function searchSDCards(keywords) {
   } catch (error) {
     // Handle errors gracefully (don't break build)
     if (error.code === 'TooManyRequests' || error.statusCode === 429) {
-      console.warn(`  ⚠️  Rate limited (429). Increase REQUEST_DELAY_MS to 3500+`);
+      console.warn(`  Rate limited (429). Increase REQUEST_DELAY_MS to 3500+`);
     } else if (error.statusCode === 400) {
-      console.warn(`  ⚠️  Bad Request (400). Check keywords and SearchIndex.`);
+      console.warn(`  Bad Request (400). Check keywords and SearchIndex.`);
     } else if (error.statusCode === 401 || error.statusCode === 403) {
-      console.warn(`  ⚠️  Auth failed (401/403). Check AWS credentials in env vars.`);
+      console.warn(`  Auth failed (401/403). Check AWS credentials in env vars.`);
     } else {
-      console.warn(`  ⚠️  API Error: ${error.message}`);
+      console.warn(`  API Error: ${error.message}`);
     }
     
     // Return empty array so build doesn't fail
@@ -115,7 +115,7 @@ async function searchSDCards(keywords) {
  */
 async function getItemsByAsin(asins) {
   if (!commonParameters.AccessKey || !commonParameters.SecretKey || !commonParameters.PartnerTag) {
-    console.warn('⚠️  Amazon API credentials missing (check .env or Cloudflare env vars)');
+    console.warn('Amazon API credentials missing (check .env or Cloudflare env vars)');
     return {};
   }
   if (!asins || asins.length === 0) return {};
@@ -146,11 +146,11 @@ async function getItemsByAsin(asins) {
     return result;
   } catch (error) {
     if (error.code === 'TooManyRequests' || error.statusCode === 429) {
-      console.warn(`  ⚠️  Rate limited (429). Increase REQUEST_DELAY_MS to 3500+`);
+      console.warn(`  Rate limited (429). Increase REQUEST_DELAY_MS to 3500+`);
     } else if (error.statusCode === 401 || error.statusCode === 403) {
-      console.warn(`  ⚠️  Auth failed (401/403). Check AWS credentials in env vars.`);
+      console.warn(`  Auth failed (401/403). Check AWS credentials in env vars.`);
     } else {
-      console.warn(`  ⚠️  API Error: ${error.message}`);
+      console.warn(`  API Error: ${error.message}`);
     }
     return {};
   }

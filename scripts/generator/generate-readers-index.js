@@ -157,11 +157,11 @@ async function generateReadersIndex() {
         const outputPath = path.join(readersDir, "index.html");
         writeFile(outputPath, html);
 
-        console.log(`✓ dist/readers/index.html`);
-        console.log(`Readers index page generated`);
+        console.log(`  ✓ dist/readers/index.html`);
+        console.log(`  Readers index page generated`);
         return true;
     } catch (err) {
-        console.error("Error generating readers index:", err.message);
+        console.error("  Error generating readers index:", err.message);
         throw err;
     }
 }

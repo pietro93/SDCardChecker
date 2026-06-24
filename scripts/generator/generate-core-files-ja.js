@@ -143,7 +143,7 @@ async function generateJapaneseCoreFiles(allDevices, distPath) {
   console.log("Generating Japanese core files...");
   generateJapaneseSitemap(allDevices, distPath);
   generateJapaneseRobots(distPath);
-  console.log(`✓ Japanese sitemap & robots.txt generated`);
+  console.log(`  ✓ Japanese sitemap & robots.txt generated`);
 }
 
 module.exports = { generateJapaneseCoreFiles };

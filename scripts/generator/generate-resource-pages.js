@@ -225,9 +225,9 @@ async function generateResourcePages(distPath) {
     legacyResources.forEach(resource => {
         try {
             generateResourcePage(resource.template, distPath, resource.file);
-            console.log(`✓ Generated ${resource.name} (${resource.file})`);
+            console.log(`  ✓ Generated ${resource.name} (${resource.file})`);
         } catch (error) {
-            console.error(`✗ Failed to generate ${resource.name}: ${error.message}`);
+            console.error(`  ✗ Failed to generate ${resource.name}: ${error.message}`);
         }
     });
 
@@ -240,13 +240,13 @@ async function generateResourcePages(distPath) {
             
             // Process Amazon products (all guides support it)
             generateResourcePage(guide.template, guideFileDir, "index.html", true);
-            console.log(`✓ Generated ${guide.name} (guides/${guide.file})`);
+            console.log(`  ✓ Generated ${guide.name} (guides/${guide.file})`);
         } catch (error) {
-            console.error(`✗ Failed to generate ${guide.name}: ${error.message}`);
+            console.error(`  ✗ Failed to generate ${guide.name}: ${error.message}`);
         }
     });
 
-    console.log(`✓ Generated ${legacyResources.length} legacy + ${guidePages.length} guide pages`);
+    console.log(`  ✓ Generated ${legacyResources.length} legacy + ${guidePages.length} guide pages`);
 }
 
 module.exports = { generateResourcePages };

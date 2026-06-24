@@ -50,7 +50,7 @@ function processIncludes(content, templateDir) {
       const processedInclude = processIncludes(includeContent, path.dirname(fullPath));
       result = result.replace(match[0], processedInclude);
     } catch (err) {
-      console.warn(`Include file not found: ${includePath} (${fullPath})`);
+      console.warn(`  Include file not found: ${includePath} (${fullPath})`);
       result = result.replace(match[0], `<!-- Include not found: ${includePath} -->`);
     }
   }
@@ -82,12 +82,12 @@ function writeFile(filePath, content) {
   } catch (err) {
     // If still failing, log but don't throw to allow build to continue
     if (err.code === 'EACCES' || err.code === 'EPERM') {
-      console.error(`File locked: ${path.relative(process.cwd(), filePath)}`);
+      console.error(`  File locked: ${path.relative(process.cwd(), filePath)}`);
       return;
     }
     throw err;
   }
-  console.log(`✓ ${path.relative(process.cwd(), filePath)}`);
+  console.log(`  ✓ ${path.relative(process.cwd(), filePath)}`);
 }
 
 /**
@@ -764,7 +764,7 @@ function findActualImageFile(cardId, definedPath) {
       return `/img/cards/${partialMatch}`;
     }
   } catch (e) {
-    console.warn(`Could not scan image directory for ${cardId}`);
+    console.warn(`  Could not scan image directory for ${cardId}`);
   }
 
   return null;

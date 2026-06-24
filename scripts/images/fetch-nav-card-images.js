@@ -63,7 +63,7 @@ async function main() {
   navCards.forEach(card => {
     const asin = extractAsin(card.affiliateUrl);
     if (asin) asinToCard[asin] = card;
-    else console.warn(`Could not extract ASIN for ${card.id}`);
+    else console.warn(`  Could not extract ASIN for ${card.id}`);
   });
 
   const asins = Object.keys(asinToCard);
@@ -83,7 +83,7 @@ async function main() {
     const card = asinToCard[asin];
     const item = items[asin];
     if (!item || !item.image) {
-      console.warn(`No image returned for ${card.id} (ASIN ${asin}) — leaving existing fallback in place`);
+      console.warn(`  No image returned for ${card.id} (ASIN ${asin}) — leaving existing fallback in place`);
       continue;
     }
 
@@ -97,10 +97,10 @@ async function main() {
 
       const imageUrl = `/img/cards/${card.id}.webp`;
       updatedText = setImageFields(updatedText, card.id, imageUrl, item.image);
-      console.log(`✓ ${card.id} -> img/cards/${card.id}.webp`);
+      console.log(`  ✓ ${card.id} -> img/cards/${card.id}.webp`);
       updated++;
     } catch (e) {
-      console.warn(`Failed to fetch/convert image for ${card.id}: ${e.message}`);
+      console.warn(`  Failed to fetch/convert image for ${card.id}: ${e.message}`);
     }
   }
 

@@ -166,7 +166,7 @@ async function generateCategoriesIndexPages(allDevices, distPath) {
   const englishIndexHTML = generateCategoriesIndex(allDevices, englishTemplate, false);
   const englishPath = path.join(distPath, "categories", "index.html");
   writeFile(englishPath, englishIndexHTML);
-  console.log("✓ Generated /categories/index.html");
+  console.log("  ✓ Generated /categories/index.html");
 
   // Japanese categories index
   let japaneseTemplate = readTemplate(
@@ -177,7 +177,7 @@ async function generateCategoriesIndexPages(allDevices, distPath) {
   const japaneseIndexHTML = generateCategoriesIndex(allDevices, japaneseTemplate, true);
   const japanesePath = path.join(distPath, "ja", "categories", "index.html");
   writeFile(japanesePath, japaneseIndexHTML);
-  console.log("✓ Generated /ja/categories/index.html");
+  console.log("  ✓ Generated /ja/categories/index.html");
 }
 
 module.exports = { generateCategoriesIndexPages };

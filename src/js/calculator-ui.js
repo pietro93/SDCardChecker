@@ -19,9 +19,9 @@ class CalculatorUI {
 
             // Use Case Presets
             scenarios: {
-                video: { name: 'Video Recording', icon: '🎥' },
-                photo: { name: 'Photo Burst/Timelapse', icon: '📸' },
-                continuous: { name: 'Continuous Recording', icon: '🔴' }
+                video: { name: 'Video Recording', icon: '' },
+                photo: { name: 'Photo Burst/Timelapse', icon: '' },
+                continuous: { name: 'Continuous Recording', icon: '' }
             },
 
             // Forward Calculation Form
@@ -548,7 +548,7 @@ class CalculatorUI {
                     const cards = await CardSelector.loadCards();
 
                     if (!cards || cards.length === 0) {
-                        console.warn('[CalculatorUI] ⚠️ No cards returned from CardSelector.loadCards()');
+                        console.warn('[CalculatorUI] No cards returned from CardSelector.loadCards()');
                         this.allCards = [];
                         this.filteredCards = [];
                         return;
@@ -639,7 +639,7 @@ class CalculatorUI {
                 if (!this.result || !this.result.speedClass) {
                     this.cardValidation = {
                         isValid: null,
-                        message: '⚠️ Please calculate your storage needs first to validate card compatibility',
+                        message: 'Please calculate your storage needs first to validate card compatibility',
                         requiredSpeedClass: null,
                         cardSpeedClass: this.selectedCard.speedClass
                     };
@@ -659,8 +659,8 @@ class CalculatorUI {
                 this.cardValidation = {
                     isValid: isCompatible,
                     message: isCompatible
-                        ? `✅ Your ${this.selectedCard.name} (${selectedClass}) meets the recommended speed for ${requiredClass}`
-                        : `⚠️ Your ${this.selectedCard.name} (${selectedClass}) may not meet the recommended speed (${requiredClass}) for this bitrate. You may experience dropped frames.`,
+                        ? `Your ${this.selectedCard.name} (${selectedClass}) meets the recommended speed for ${requiredClass}`
+                        : `Your ${this.selectedCard.name} (${selectedClass}) may not meet the recommended speed (${requiredClass}) for this bitrate. You may experience dropped frames.`,
                     requiredSpeedClass: requiredClass,
                     cardSpeedClass: selectedClass
                 };

@@ -84,7 +84,7 @@ Output ONLY the explanation text, no quotes, no bullet points. Just 2-3 sentence
 
     return response.choices[0].message.content.trim();
   } catch (error) {
-    console.error(`Error generating for ${device.name}:`, error.message);
+    console.error(`  Error generating for ${device.name}:`, error.message);
     return null;
   }
 }
