@@ -43,16 +43,16 @@ fs.writeFileSync(
   JSON.stringify(devicesJa, null, 2)
 );
 
-console.log(`\n✅ FIXED BROKEN RELATED DEVICE REFERENCES\n`);
-console.log(`   Removed: ${result.fixedCount} broken references`);
-console.log(`   From: ${result.deviceCount} devices`);
+console.log(`\nFIXED BROKEN RELATED DEVICE REFERENCES\n`);
+console.log(`Removed: ${result.fixedCount} broken references`);
+console.log(`From: ${result.deviceCount} devices`);
 console.log(`\n   ✓ Updated file: data/devices-ja.json`);
 
 // Generate suggestions report
-console.log(`\n📋 NEXT STEPS:`);
-console.log(`   1. Review the Japanese dataset to find appropriate related devices`);
-console.log(`   2. Many devices now have fewer (or no) related devices`);
-console.log(`   3. Consider adding relationships between similar devices that exist in JA`);
+console.log(`\nNEXT STEPS:`);
+console.log(`1. Review the Japanese dataset to find appropriate related devices`);
+console.log(`2. Many devices now have fewer (or no) related devices`);
+console.log(`3. Consider adding relationships between similar devices that exist in JA`);
 console.log(`\n   Example categories in JA dataset:`);
 
 const categories = {};
@@ -64,7 +64,7 @@ devicesJa.devices.forEach(d => {
 });
 
 Object.entries(categories).forEach(([cat, ids]) => {
-  console.log(`      • ${cat}: ${ids.length} devices`);
+  console.log(`• ${cat}: ${ids.length} devices`);
 });
 
 console.log(`\n`);

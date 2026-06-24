@@ -74,8 +74,8 @@ async function main() {
   fs.writeFileSync(ATTRIBUTIONS_PATH, JSON.stringify(attributions, null, 2));
 
   console.log(`Wrote: img/cars/${slug}.webp`);
-  console.log(`  removedFraction=${attributions[slug].cutoutRemovedFraction} cutoutSane=${composed.cutoutSane}`);
-  if (!composed.cutoutSane) console.log("  ⚠ cutout sanity check FAILED — inspect carefully (source may not be a clean studio shot).");
+  console.log(`removedFraction=${attributions[slug].cutoutRemovedFraction} cutoutSane=${composed.cutoutSane}`);
+  if (!composed.cutoutSane) console.log("cutout sanity check FAILED — inspect carefully (source may not be a clean studio shot).");
 }
 
 main().catch((e) => { console.error(e.message || e); process.exit(1); });

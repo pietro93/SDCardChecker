@@ -50,8 +50,8 @@ function generatePromotedCardSection(deviceData, sdcards, isJapanese = false, ge
     
     // Add section title
     html += isJapanese 
-      ? '  <h3 class="text-lg font-semibold text-slate-900 mb-4">💡 特別推奨</h3>\n'
-      : '  <h3 class="text-lg font-semibold text-slate-900 mb-4">💡 Special Recommendation</h3>\n';
+      ? '  <h3 class="text-lg font-semibold text-slate-900 mb-4">特別推奨</h3>\n'
+      : '  <h3 class="text-lg font-semibold text-slate-900 mb-4">Special Recommendation</h3>\n';
 
     applicableCards.forEach(promo => {
       // Find the actual card data

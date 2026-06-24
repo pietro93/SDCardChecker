@@ -31,7 +31,7 @@ devices.forEach(device => {
 });
 
 // Create category files
-console.log('📝 Creating Japanese category files...\n');
+console.log('Creating Japanese category files...\n');
 
 // Mapping of Japanese categories to English slugs
 const categoryMapping = {
@@ -81,5 +81,5 @@ Object.keys(slugGroups).sort().forEach(slug => {
   console.log(`✓ ${filename}: ${devices.length} device(s)`);
 });
 
-console.log(`\n✅ Created ${Object.keys(groups).length} category files`);
-console.log(`📂 Location: ${categoriesJaPath}\n`);
+console.log(`\nCreated ${Object.keys(groups).length} category files`);
+console.log(`Location: ${categoriesJaPath}\n`);

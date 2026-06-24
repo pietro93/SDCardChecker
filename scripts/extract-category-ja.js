@@ -25,13 +25,13 @@ if (!categoryName) {
   console.log('Usage: node scripts/extract-category-ja.js "Japanese Category Name"');
   console.log('\nExample: node scripts/extract-category-ja.js "アクションカメラ"');
   console.log('\nJapanese Categories:');
-  console.log('  - アクションカメラ (Action Cameras)');
-  console.log('  - カメラ (Cameras)');
-  console.log('  - ドローン (Drones)');
-  console.log('  - 携帯ゲーム機 (Gaming Handhelds)');
-  console.log('  - ドライブレコーダー (Dash Cams)');
-  console.log('  - コンピュータ・タブレット (Computing & Tablets)');
-  console.log('  - セキュリティカメラ (Security Cameras)');
+  console.log('- アクションカメラ (Action Cameras)');
+  console.log('- カメラ (Cameras)');
+  console.log('- ドローン (Drones)');
+  console.log('- 携帯ゲーム機 (Gaming Handhelds)');
+  console.log('- ドライブレコーダー (Dash Cams)');
+  console.log('- コンピュータ・タブレット (Computing & Tablets)');
+  console.log('- セキュリティカメラ (Security Cameras)');
   process.exit(1);
 }
 
@@ -42,10 +42,10 @@ try {
   const categoryDevices = devices.filter(d => d.category === categoryName);
   
   if (categoryDevices.length === 0) {
-    console.log(`❌ No devices found for category: "${categoryName}"`);
+    console.log(`No devices found for category: "${categoryName}"`);
     console.log('\nAvailable categories:');
     const categories = [...new Set(devices.map(d => d.category))].sort();
-    categories.forEach(cat => console.log(`  - ${cat}`));
+    categories.forEach(cat => console.log(`- ${cat}`));
     process.exit(1);
   }
   
@@ -56,12 +56,12 @@ try {
   // Write category file
   fs.writeFileSync(outputPath, JSON.stringify(categoryDevices, null, 2));
   
-  console.log(`✅ Extracted ${categoryDevices.length} device(s) from "${categoryName}"`);
-  console.log(`   Saved to: ${outputPath}`);
+  console.log(`Extracted ${categoryDevices.length} device(s) from "${categoryName}"`);
+  console.log(`Saved to: ${outputPath}`);
   console.log('\nDevices:');
-  categoryDevices.forEach(d => console.log(`  - ${d.name}`));
+  categoryDevices.forEach(d => console.log(`- ${d.name}`));
   
 } catch (err) {
-  console.error('❌ Error:', err.message);
+  console.error('Error:', err.message);
   process.exit(1);
 }

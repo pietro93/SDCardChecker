@@ -37,7 +37,7 @@ async function main() {
 
   console.log(`${targets.length} device(s) currently using a placeholder image.`);
   if (dryRun) {
-    targets.forEach((d) => console.log(`  - ${d.slug} (${d.category})`));
+    targets.forEach((d) => console.log(`- ${d.slug} (${d.category})`));
     return;
   }
 
@@ -47,7 +47,7 @@ async function main() {
     process.stdout.write(`Fetching "${device.slug}"... `);
     try {
       const { metadata } = await fetchDeviceImage(device.slug);
-      const flag = metadata.cutoutSane ? "OK" : "OK (⚠ check cutout)";
+      const flag = metadata.cutoutSane ? "OK" : "OK (check cutout)";
       console.log(`${flag} -> ${metadata.productTitle} [${metadata.sourceSite}]`);
       results.staged.push(device.slug);
       if (!metadata.cutoutSane) results.review.push(device.slug);
@@ -66,16 +66,16 @@ async function main() {
   console.log("\n--- Summary ---");
   console.log(`Staged for review (${results.staged.length}): ${results.staged.join(", ") || "none"}`);
   if (results.review.length) {
-    console.log(`  ⚠ cutout sanity check failed (review extra carefully): ${results.review.join(", ")}`);
+    console.log(`cutout sanity check failed (review extra carefully): ${results.review.join(", ")}`);
   }
   console.log(`No photo found (${results.noCandidates.length}): ${results.noCandidates.join(", ") || "none"}`);
   if (results.failed.length) {
     console.log(`Errored (${results.failed.length}):`);
-    results.failed.forEach((f) => console.log(`  - ${f.slug}: ${f.error}`));
+    results.failed.forEach((f) => console.log(`- ${f.slug}: ${f.error}`));
   }
   if (results.staged.length) {
     console.log(`\nReview staged images in img/devices/_review/, then promote each with:`);
-    console.log(`  node scripts/images/promote-device-image.js <slug>`);
+    console.log(`node scripts/images/promote-device-image.js <slug>`);
   }
 }
 

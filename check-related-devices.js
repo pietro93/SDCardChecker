@@ -11,26 +11,26 @@ const devicesJa = JSON.parse(fs.readFileSync('./data/devices-ja.json', 'utf-8'))
 const enIds = new Set(devicesEn.devices.map(d => d.id));
 const jaIds = new Set(devicesJa.devices.map(d => d.id));
 
-console.log(`\n📊 DATASET COMPARISON:`);
+console.log(`\nDATASET COMPARISON:`);
 console.log(`English devices.json: ${enIds.size} devices`);
 console.log(`Japanese devices-ja.json: ${jaIds.size} devices`);
 
 // Find devices in EN but not in JA
 const missingInJa = Array.from(enIds).filter(id => !jaIds.has(id));
-console.log(`\n⚠️  Devices in EN but NOT in JA: ${missingInJa.length}`);
+console.log(`\nDevices in EN but NOT in JA: ${missingInJa.length}`);
 if (missingInJa.length > 0 && missingInJa.length <= 20) {
   missingInJa.forEach(id => console.log(`   - ${id}`));
 }
 
 // Find devices in JA but not in EN
 const missingInEn = Array.from(jaIds).filter(id => !enIds.has(id));
-console.log(`\n⚠️  Devices in JA but NOT in EN: ${missingInEn.length}`);
+console.log(`\nDevices in JA but NOT in EN: ${missingInEn.length}`);
 if (missingInEn.length > 0 && missingInEn.length <= 20) {
   missingInEn.forEach(id => console.log(`   - ${id}`));
 }
 
 // Check relatedDevices in JA file
-console.log(`\n🔍 ANALYZING RELATED DEVICES IN JAPANESE FILE:\n`);
+console.log(`\nANALYZING RELATED DEVICES IN JAPANESE FILE:\n`);
 
 let brokenRelatedCount = 0;
 const brokenDevices = [];
@@ -51,7 +51,7 @@ devicesJa.devices.forEach(device => {
   }
 });
 
-console.log(`❌ BROKEN RELATED DEVICE REFERENCES: ${brokenRelatedCount}`);
+console.log(`BROKEN RELATED DEVICE REFERENCES: ${brokenRelatedCount}`);
 
 if (brokenRelatedCount > 0) {
   // Group by device
@@ -66,14 +66,14 @@ if (brokenRelatedCount > 0) {
   console.log(`\n   Devices with broken references:`);
   Object.entries(groupedByDevice).forEach(([devId, items]) => {
     const device = devicesJa.devices.find(d => d.id === devId);
-    console.log(`\n   📱 ${device.name} (${devId}):`);
+    console.log(`\n   ${device.name} (${devId}):`);
     items.forEach(item => {
-      const status = item.existsInEn ? '⚠️ (exists in EN)' : '❌ (missing everywhere)';
-      console.log(`      → "${item.brokenRef}" ${status}`);
+      const status = item.existsInEn ? '(exists in EN)' : '(missing everywhere)';
+      console.log(`→ "${item.brokenRef}" ${status}`);
     });
   });
 
-  console.log(`\n\n💾 Writing detailed report to "broken-related-devices.json"...`);
+  console.log(`\n\nWriting detailed report to "broken-related-devices.json"...`);
   fs.writeFileSync(
     './broken-related-devices.json',
     JSON.stringify({
@@ -93,4 +93,4 @@ if (brokenRelatedCount > 0) {
   );
 }
 
-console.log(`\n\n✅ Analysis complete!`);
+console.log(`\n\nAnalysis complete!`);

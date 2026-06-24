@@ -84,7 +84,7 @@ Output ONLY the explanation text, no quotes, no bullet points. Just 2-3 sentence
 
     return response.choices[0].message.content.trim();
   } catch (error) {
-    console.error(`  ❌ Error generating for ${device.name}:`, error.message);
+    console.error(`Error generating for ${device.name}:`, error.message);
     return null;
   }
 }
@@ -93,10 +93,10 @@ Output ONLY the explanation text, no quotes, no bullet points. Just 2-3 sentence
  * Main enrichment pipeline
  */
 async function enrichDevices() {
-  console.log('🚀 Starting Device Enrichment Generation...\n');
+  console.log('Starting Device Enrichment Generation...\n');
 
   if (!process.env.GROQ_API_KEY) {
-    console.error('❌ GROQ_API_KEY not found in .env file');
+    console.error('GROQ_API_KEY not found in .env file');
     process.exit(1);
   }
 
@@ -111,7 +111,7 @@ async function enrichDevices() {
   let processed = 0;
   let cached = 0;
 
-  console.log(`📊 Found ${devices.length} devices to enrich\n`);
+  console.log(`Found ${devices.length} devices to enrich\n`);
 
   // Process each device
   for (let i = 0; i < devices.length; i++) {
@@ -157,10 +157,10 @@ async function enrichDevices() {
   fs.writeFileSync(ENRICHMENT_OUTPUT, JSON.stringify(enrichmentData, null, 2));
   saveCache(cache);
 
-  console.log(`\n✅ Enrichment Complete!`);
-  console.log(`📝 Processed: ${processed} new | Cached: ${cached} | Total: ${processed + cached}`);
-  console.log(`💾 Saved to: ${ENRICHMENT_OUTPUT}`);
-  console.log(`💿 Cache saved to: ${CACHE_FILE}`);
+  console.log(`\nEnrichment Complete!`);
+  console.log(`Processed: ${processed} new | Cached: ${cached} | Total: ${processed + cached}`);
+  console.log(`Saved to: ${ENRICHMENT_OUTPUT}`);
+  console.log(`Cache saved to: ${CACHE_FILE}`);
 }
 
 // Error handling

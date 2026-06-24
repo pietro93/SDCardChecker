@@ -36,6 +36,7 @@ summary doc. The sections below flag which docs are still current.
 - [DEVICES_JSON_EXECUTION_PLAN.md](DEVICES_JSON_EXECUTION_PLAN.md), [DEVICES_JSON_REFACTOR_MAPPING.md](DEVICES_JSON_REFACTOR_MAPPING.md) — historical `devices.json` → per-category refactor.
 - [ADAPTER_PATTERN_IMPLEMENTATION.md](ADAPTER_PATTERN_IMPLEMENTATION.md) — adapter pattern used in data/generator scripts.
 - [CARD_DATABASE_STATS.md](CARD_DATABASE_STATS.md), [NEW_CARDS_TRACKING.md](NEW_CARDS_TRACKING.md) — SD card catalogue tracking.
+- [SD_CARD_IMAGE_SCRAPER_HANDOFF.md](SD_CARD_IMAGE_SCRAPER_HANDOFF.md) — ⭐ not yet built: plan to generalize `scripts/images/fetch-nav-card-images.js` into a square-thumbnail scraper for any SD card, plus a data-validation script and the "add a card" workflow.
 - [CARD_PROMOTION_SYSTEM.md](CARD_PROMOTION_SYSTEM.md), [PROMOTION_DEPLOYMENT.md](PROMOTION_DEPLOYMENT.md), [PROMOTION_QUICK_REFERENCE.md](PROMOTION_QUICK_REFERENCE.md), [KINGSTON_PROMOTION_STRATEGY.md](KINGSTON_PROMOTION_STRATEGY.md) — promoted/sponsored card placement.
 - [SD_CARD_COMPARISON_SPEC.md](SD_CARD_COMPARISON_SPEC.md) — comparison tool spec.
 - [SD_CARD_READERS_DATASET_DESIGN.md](SD_CARD_READERS_DATASET_DESIGN.md), [SDCARD_READERS_KANBAN.md](SDCARD_READERS_KANBAN.md), [READER_DEVICE_IMPLEMENTATION.md](READER_DEVICE_IMPLEMENTATION.md) — SD card reader feature.

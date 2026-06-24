@@ -10,14 +10,14 @@ if (schemaMatches) {
     try {
       const parsed = JSON.parse(json);
       if (parsed['@type'] === 'FAQPage') {
-        console.log('✅ FAQ Schema: Valid JSON (' + parsed.mainEntity.length + ' questions)');
+        console.log('FAQ Schema: Valid JSON (' + parsed.mainEntity.length + ' questions)');
       } else if (parsed['@type'] === 'ItemList') {
-        console.log('✅ Product Schema: Valid JSON (' + parsed.itemListElement.length + ' products)');
+        console.log('Product Schema: Valid JSON (' + parsed.itemListElement.length + ' products)');
       } else if (parsed['@type'] === 'Article') {
-        console.log('✅ Article Schema: Valid JSON');
+        console.log('Article Schema: Valid JSON');
       }
     } catch(e) {
-      console.log('❌ Schema ' + (idx+1) + ': Invalid - ' + e.message);
+      console.log('Schema ' + (idx+1) + ': Invalid - ' + e.message);
     }
   });
 } else {

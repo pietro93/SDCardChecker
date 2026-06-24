@@ -14,7 +14,7 @@ function loadEnrichment() {
   if (enrichmentCache) return enrichmentCache;
 
   if (!fs.existsSync(ENRICHMENT_FILE)) {
-    console.warn('⚠️  device-enrichment.json not found. Run: npm run enrich');
+    console.warn(' device-enrichment.json not found. Run: npm run enrich');
     return {};
   }
 

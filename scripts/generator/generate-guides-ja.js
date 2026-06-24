@@ -73,7 +73,7 @@ function generateGuidePageJa(templatePath, distPath, fileName) {
         
         return true;
     } catch (error) {
-        console.error(`  ❌ Error generating ${fileName}:`, error.message);
+        console.error(`Error generating ${fileName}:`, error.message);
         return false;
     }
 }
@@ -82,7 +82,7 @@ function generateGuidePageJa(templatePath, distPath, fileName) {
  * Generate all Japanese guide pages
  */
 function generateJapaneseGuides(distPath) {
-    console.log("📚 Generating Japanese guide pages...");
+    console.log("Generating Japanese guide pages...");
 
     const guidesDistPath = path.join(distPath, "ja", "guides");
     ensureDir(guidesDistPath);
@@ -91,7 +91,7 @@ function generateJapaneseGuides(distPath) {
     const guideIndexPath = path.join(srcPath, "templates/guides-ja.html");
     if (fs.existsSync(guideIndexPath)) {
         if (generateGuidePageJa(guideIndexPath, guidesDistPath, "index.html")) {
-            console.log(`  ✓ Generated Guides Index (Japanese)`);
+            console.log(`✓ Generated Guides Index (Japanese)`);
         }
     }
 
@@ -117,15 +117,15 @@ function generateJapaneseGuides(distPath) {
     guides.forEach(guide => {
         if (fs.existsSync(guide.templatePath)) {
             if (generateGuidePageJa(guide.templatePath, guidesDistPath, guide.fileName)) {
-                console.log(`  ✓ Generated ${guide.name}`);
+                console.log(`✓ Generated ${guide.name}`);
                 successCount++;
             }
         } else {
-            console.log(`  ⚠️  Template not found: ${guide.templatePath}`);
+            console.log(`Template not found: ${guide.templatePath}`);
         }
     });
 
-    console.log(`  ✓ Generated ${successCount + 1}/${guides.length + 1} Japanese guide pages\n`);
+    console.log(`✓ Generated ${successCount + 1}/${guides.length + 1} Japanese guide pages\n`);
 }
 
 module.exports = { generateJapaneseGuides };

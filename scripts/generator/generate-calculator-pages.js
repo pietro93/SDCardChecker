@@ -41,7 +41,7 @@ function generateCalculatorPage(templatePath, distPath, outputPath) {
  * Generate all calculator pages
  */
 async function generateCalculatorPages(distPath) {
-    console.log("🧮 Generating calculator pages...");
+    console.log("Generating calculator pages...");
 
     const calculators = [
         {
@@ -89,13 +89,13 @@ async function generateCalculatorPages(distPath) {
     calculators.forEach(calc => {
         try {
             generateCalculatorPage(calc.template, distPath, calc.file);
-            console.log(`  ✓ Generated ${calc.name} (${calc.file})`);
+            console.log(`✓ Generated ${calc.name} (${calc.file})`);
         } catch (error) {
-            console.error(`  ✗ Failed to generate ${calc.name}: ${error.message}`);
+            console.error(`✗ Failed to generate ${calc.name}: ${error.message}`);
         }
     });
 
-    console.log(`  ✓ Generated ${calculators.length} calculator pages`);
+    console.log(`✓ Generated ${calculators.length} calculator pages`);
 }
 
 module.exports = { generateCalculatorPages };

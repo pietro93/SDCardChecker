@@ -13,7 +13,7 @@ const distDir = path.join(__dirname, "../dist/assets/css");
 const distCssPath = path.join(distDir, "tailwind.css");
 
 try {
-  console.log("🎨 Compiling Tailwind CSS...");
+  console.log("Compiling Tailwind CSS...");
 
   // Ensure output directory exists
   if (!fs.existsSync(distDir)) {
@@ -28,8 +28,8 @@ try {
     cwd: path.join(__dirname, "..")
   });
 
-  console.log(`  ✓ Compiled to ${distCssPath}`);
+  console.log(`✓ Compiled to ${distCssPath}`);
 } catch (error) {
-  console.error("❌ CSS compilation failed:", error.message);
+  console.error("CSS compilation failed:", error.message);
   process.exit(1);
 }

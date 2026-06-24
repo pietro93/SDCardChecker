@@ -21,7 +21,7 @@ function getCategoryFiles() {
       .sort();
     return files;
   } catch (err) {
-    console.error('❌ Error reading categories directory:', err.message);
+    console.error('Error reading categories directory:', err.message);
     process.exit(1);
   }
 }
@@ -35,10 +35,10 @@ function loadCategoryFile(filename) {
     // Handle both array format and wrapped format
     const devices = Array.isArray(data) ? data : (data.devices || []);
     
-    console.log(`  ✓ ${filename}: ${devices.length} device(s)`);
+    console.log(`✓ ${filename}: ${devices.length} device(s)`);
     return devices;
   } catch (err) {
-    console.error(`  ❌ Error loading ${filename}:`, err.message);
+    console.error(`Error loading ${filename}:`, err.message);
     return [];
   }
 }
@@ -48,18 +48,18 @@ function validateDevice(device) {
   const missing = required.filter(field => !device[field]);
   
   if (missing.length > 0) {
-    console.warn(`    ⚠️  Device "${device.name || 'UNNAMED'}" missing: ${missing.join(', ')}`);
+    console.warn(`Device "${device.name || 'UNNAMED'}" missing: ${missing.join(', ')}`);
   }
   
   return device;
 }
 
 async function mergeDevices() {
-  console.log('🔄 Merging category files...\n');
+  console.log('Merging category files...\n');
   
   const categoryFiles = getCategoryFiles();
   if (categoryFiles.length === 0) {
-    console.error('❌ No category files found in', CATEGORIES_DIR);
+    console.error('No category files found in', CATEGORIES_DIR);
     process.exit(1);
   }
   
@@ -89,7 +89,7 @@ async function mergeDevices() {
   });
   
   if (duplicates.length > 0) {
-    console.warn(`\n⚠️  Found ${duplicates.length} duplicate ID(s):`, duplicates);
+    console.warn(`\nFound ${duplicates.length} duplicate ID(s):`, duplicates);
   }
   
   // Write merged file
@@ -105,17 +105,17 @@ async function mergeDevices() {
   
   try {
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(output, null, 2));
-    console.log(`\n✅ Merged to ${OUTPUT_FILE}`);
-    console.log(`   Total devices: ${output.metadata.totalDevices}`);
-    console.log(`   Categories: ${output.metadata.categoryCount}`);
-    console.log(`   Last updated: ${output.metadata.generated}`);
+    console.log(`\nMerged to ${OUTPUT_FILE}`);
+    console.log(`Total devices: ${output.metadata.totalDevices}`);
+    console.log(`Categories: ${output.metadata.categoryCount}`);
+    console.log(`Last updated: ${output.metadata.generated}`);
   } catch (err) {
-    console.error('❌ Error writing output file:', err.message);
+    console.error('Error writing output file:', err.message);
     process.exit(1);
   }
 }
 
 mergeDevices().catch(err => {
-  console.error('❌ Fatal error:', err);
+  console.error('Fatal error:', err);
   process.exit(1);
 });

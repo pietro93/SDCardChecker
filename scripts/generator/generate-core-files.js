@@ -391,13 +391,13 @@ writeFile(path.join(distPath, "404.html"), page404Html
 * Generate all core files
 */
 async function generateCoreFiles(allDevices, allReaders, distPath) {
-console.log("📝 Generating core files...");
+console.log("Generating core files...");
 generateHomepage(distPath);
 generate404Page(distPath);
 generateSitemap(allDevices, allReaders, distPath);
 generateRobots(distPath);
 generateLegalPages(distPath);
-console.log(`  ✓ Core files generated (homepage, 404, sitemap, robots.txt, privacy, terms, affiliate-disclosure, about, contact, sitemap-page)`);
+console.log(`✓ Core files generated (homepage, 404, sitemap, robots.txt, privacy, terms, affiliate-disclosure, about, contact, sitemap-page)`);
 }
 
 module.exports = { generateCoreFiles };

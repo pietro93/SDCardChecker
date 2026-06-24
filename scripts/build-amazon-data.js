@@ -33,7 +33,7 @@ function ensureCacheDir() {
 function saveToCache(filename, products) {
   const filepath = path.join(CACHE_DIR, filename);
   fs.writeFileSync(filepath, JSON.stringify(products, null, 2));
-  console.log(`  ✓ Cached to: ${filename}`);
+  console.log(`✓ Cached to: ${filename}`);
 }
 
 /**
@@ -64,7 +64,7 @@ function sleep(ms) {
  * Main build function
  */
 async function buildAmazonData() {
-  console.log('\n📦 Building Amazon product data...\n');
+  console.log('\nBuilding Amazon product data...\n');
   
   ensureCacheDir();
 
@@ -203,7 +203,7 @@ async function buildAmazonData() {
 
   // Process each search group
   for (const { filename, keywords } of searchGroups) {
-    console.log(`🔍 ${filename}:`);
+    console.log(`${filename}:`);
     let allResults = [];
     
     // Search for each keyword in the group
@@ -224,10 +224,10 @@ async function buildAmazonData() {
           allResults = allResults.concat(products);
           process.stdout.write(`   ✓ Found ${products.length} products for "${keyword}"\n`);
         } else {
-          process.stdout.write(`   ⚠️  No results for "${keyword}"\n`);
+          process.stdout.write(`    No results for "${keyword}"\n`);
         }
       } catch (error) {
-        process.stdout.write(`   ❌ Error searching "${keyword}": ${error.message}\n`);
+        process.stdout.write(`   Error searching "${keyword}": ${error.message}\n`);
       }
     }
     
@@ -245,20 +245,20 @@ async function buildAmazonData() {
     
     if (uniqueProducts.length > 0) {
       saveToCache(filename, uniqueProducts);
-      console.log(`  ✅ Saved ${uniqueProducts.length} unique products\n`);
+      console.log(`Saved ${uniqueProducts.length} unique products\n`);
     } else {
       // Keep existing cache if API returns nothing
       const existingCache = loadCache(filename);
       if (existingCache.length > 0) {
-        console.log(`  ⚠️  No API results, keeping existing cache: ${filename}\n`);
+        console.log(`No API results, keeping existing cache: ${filename}\n`);
       } else {
-        console.log(`  ❌ No results found, no existing cache for: ${filename}\n`);
+        console.log(`No results found, no existing cache for: ${filename}\n`);
         saveToCache(filename, []);
       }
     }
   }
 
-  console.log('✅ Amazon data build complete!\n');
+  console.log('Amazon data build complete!\n');
 }
 
 // Run if executed directly

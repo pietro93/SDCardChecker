@@ -51,7 +51,7 @@ data.devices.forEach((device, idx) => {
   if (issues.length > 0) {
     untranslatedCount++;
     if (untranslatedCount <= 20) { // Show first 20
-      console.log(`[${String(idx + 1).padStart(3)}] ${device.id.padEnd(30)} ⚠️ ${issues.join(' | ')}`);
+      console.log(`[${String(idx + 1).padStart(3)}] ${device.id.padEnd(30)} ${issues.join(' | ')}`);
     }
   } else {
     translatedCount++;
@@ -59,6 +59,6 @@ data.devices.forEach((device, idx) => {
 });
 
 console.log('\n' + '='.repeat(80));
-console.log(`\n✅ LOCALIZED: ${translatedCount} devices`);
-console.log(`⚠️  UNTRANSLATED: ${untranslatedCount} devices`);
+console.log(`\nLOCALIZED: ${translatedCount} devices`);
+console.log(`UNTRANSLATED: ${untranslatedCount} devices`);
 console.log(`\nLocalization rate: ${Math.round((translatedCount / data.devices.length) * 100)}%`);

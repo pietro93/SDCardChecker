@@ -11,16 +11,16 @@ const { readJSON } = require("./helpers");
  * Reuses English generator with isJapanese flag
  */
 async function generateDevicePagesJa(allDevices, distPath) {
-    console.log("📄 Generating Japanese device pages...");
+    console.log("Generating Japanese device pages...");
     
     try {
         // Call shared generator with Japanese flag
         const { generateDevicePages } = require("./generate-device-pages");
         await generateDevicePages(allDevices, distPath, true);
         
-        console.log(`  ✓ Generated ${allDevices.length} Japanese device pages`);
+        console.log(`✓ Generated ${allDevices.length} Japanese device pages`);
     } catch (error) {
-        console.error(`  ❌ Error generating Japanese device pages: ${error.message}`);
+        console.error(`Error generating Japanese device pages: ${error.message}`);
         throw error;
     }
 }

@@ -19,7 +19,7 @@ function loadCachedProducts(filename) {
       return JSON.parse(content);
     }
   } catch (error) {
-    console.warn(`  ⚠️  Failed to load cache ${filename}:`, error.message);
+    console.warn(`Failed to load cache ${filename}:`, error.message);
   }
   return [];
 }
@@ -43,7 +43,7 @@ function generateProductBadgeHTML(product, index) {
   
   // Only show rating if it exists
   const ratingHtml = rating > 0 
-    ? `<div class="badge-rating">⭐ ${rating.toFixed(1)}${reviewCount > 0 ? ` (${reviewCount.toLocaleString()})` : ''}</div>`
+    ? `<div class="badge-rating">${rating.toFixed(1)}${reviewCount > 0 ? ` (${reviewCount.toLocaleString()})` : ''}</div>`
     : '';
 
   return `
@@ -118,7 +118,7 @@ function generateAmazonBadgeSectionByType(type = 'featured-general', count = 3, 
     
     // Fallback to reader recommendations if cache is missing or empty and type is reader-related
     if ((products === null || products === undefined || products.length === 0) && type.includes('readers')) {
-      console.log(`  ℹ️  Using fallback recommendations for ${type}`);
+      console.log(`Using fallback recommendations for ${type}`);
       products = getFallbackReaderRecommendations();
     }
     
@@ -145,7 +145,7 @@ function generateAmazonBadgeSectionByType(type = 'featured-general', count = 3, 
       </section>
     `;
   } catch (error) {
-    console.warn(`  ⚠️  Error generating Amazon badges section (${type}):`, error.message);
+    console.warn(`Error generating Amazon badges section (${type}):`, error.message);
     
     // For reader pages, return fallback even on error
     if (type.includes('readers')) {
@@ -165,7 +165,7 @@ function generateAmazonBadgeSectionByType(type = 'featured-general', count = 3, 
           </section>
         `;
       } catch (fallbackError) {
-        console.warn(`  ⚠️  Fallback also failed:`, fallbackError.message);
+        console.warn(`Fallback also failed:`, fallbackError.message);
       }
     }
     

@@ -110,8 +110,8 @@ function generateCSV() {
   const outputPath = path.join(__dirname, '../faq-to-translate.csv');
   fs.writeFileSync(outputPath, csv, 'utf8');
   
-  console.log(`✅ Generated CSV: ${outputPath}`);
-  console.log(`   Contains ${lines.length - 1} FAQ items for translation`);
+  console.log(`Generated CSV: ${outputPath}`);
+  console.log(`Contains ${lines.length - 1} FAQ items for translation`);
   return lines.length - 1;
 }
 
@@ -157,11 +157,11 @@ function showStatus() {
     });
   });
   
-  console.log('\n📊 FAQ Translation Status');
+  console.log('\nFAQ Translation Status');
   console.log('════════════════════════════════');
   console.log(`Total FAQs: ${total}`);
-  console.log(`✅ Translated to Japanese: ${japanese} (${Math.round(japanese/total*100)}%)`);
-  console.log(`❌ Still in English: ${english} (${Math.round(english/total*100)}%)`);
+  console.log(`Translated to Japanese: ${japanese} (${Math.round(japanese/total*100)}%)`);
+  console.log(`Still in English: ${english} (${Math.round(english/total*100)}%)`);
   console.log('');
 }
 
@@ -183,13 +183,13 @@ function showTopDevices() {
     }
   });
   
-  console.log('📋 Top 10 Devices Needing Translation:');
+  console.log('Top 10 Devices Needing Translation:');
   console.log('════════════════════════════════');
   Object.entries(deviceCounts)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 10)
     .forEach(([name, count]) => {
-      console.log(`  • ${name}: ${count} FAQ items`);
+      console.log(`• ${name}: ${count} FAQ items`);
     });
   console.log('');
 }

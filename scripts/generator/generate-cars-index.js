@@ -5,7 +5,7 @@ const { readJSON, writeFile, readTemplate, getCarImageFallback, generateBreadcru
 const BASE_URL = 'https://sdcardchecker.com';
 
 function generateCarsIndex(distPath) {
-  console.log('🚗 Generating Car Navigation Index Page...');
+  console.log('Generating Car Navigation Index Page...');
 
   const carsPath = path.join(process.cwd(), 'data/cars-navigation.json');
   const templatePath = path.join(process.cwd(), 'src/templates/cars-index.html');
@@ -13,7 +13,7 @@ function generateCarsIndex(distPath) {
   const { generateHeader, generateFooter, generateSidebar } = require("../../src/templates/components");
 
   if (!fs.existsSync(carsPath)) {
-    console.warn("  ⚠️  data/cars-navigation.json not found. Skipping.");
+    console.warn("data/cars-navigation.json not found. Skipping.");
     return;
   }
 
@@ -59,7 +59,7 @@ function generateCarsIndex(distPath) {
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
   writeFile(path.join(outDir, 'index.html'), html);
 
-  console.log(`  ✓ Generated /cars/index.html (${vehicles.length} vehicles)`);
+  console.log(`✓ Generated /cars/index.html (${vehicles.length} vehicles)`);
 }
 
 module.exports = { generateCarsIndex };

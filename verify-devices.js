@@ -21,12 +21,12 @@ devices.forEach(device => {
 });
 
 if (orphaned.length === 0) {
-  console.log('✅ SUCCESS: No orphaned references found!');
+  console.log('SUCCESS: No orphaned references found!');
   console.log('\nAll relatedDevices references are valid.\n');
 } else {
-  console.log(`❌ FOUND ${orphaned.length} orphaned references:\n`);
+  console.log(`FOUND ${orphaned.length} orphaned references:\n`);
   orphaned.forEach(o => {
-    console.log(`  "${o.device}" -> "${o.ref}" (NOT FOUND)`);
+    console.log(`"${o.device}" -> "${o.ref}" (NOT FOUND)`);
   });
 }
 
@@ -39,7 +39,7 @@ devices.forEach(d => {
 });
 
 Object.entries(categories).sort().forEach(([cat, ids]) => {
-  console.log(`  ${cat}: ${ids.length}`);
+  console.log(`${cat}: ${ids.length}`);
 });
 
 console.log(`\nTotal devices: ${devices.length}`);

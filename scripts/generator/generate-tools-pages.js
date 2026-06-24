@@ -80,7 +80,7 @@ function generateCalculatorsPage(distPath, calculators) {
  * Generate all tools pages
  */
 async function generateToolsPages(distPath) {
-  console.log("🛠️  Generating tools pages...");
+  console.log("Generating tools pages...");
 
   try {
     // Load calculator metadata
@@ -89,15 +89,15 @@ async function generateToolsPages(distPath) {
 
     // Generate tools index page
     generateToolsPage(distPath, calculators);
-    console.log(`  ✓ Generated /tools/ page`);
+    console.log(`✓ Generated /tools/ page`);
 
     // Generate calculators listing page
     generateCalculatorsPage(distPath, calculators);
-    console.log(`  ✓ Generated /tools/calculators/ page`);
+    console.log(`✓ Generated /tools/calculators/ page`);
 
-    console.log(`  ✓ Generated 2 tools pages`);
+    console.log(`✓ Generated 2 tools pages`);
   } catch (error) {
-    console.error(`  ✗ Failed to generate tools pages: ${error.message}`);
+    console.error(`✗ Failed to generate tools pages: ${error.message}`);
     throw error;
   }
 }

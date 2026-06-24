@@ -6,7 +6,7 @@ const { writeFile, getCardImageFallback, getCarImageFallback, generateFAQHTML, g
 const BASE_URL = 'https://sdcardchecker.com';
 
 function generateCarPages(distPath) {
-  console.log('🚗 Generating Car Navigation Pages...');
+  console.log('Generating Car Navigation Pages...');
 
   const vehiclesPath = path.join(process.cwd(), 'data/cars-navigation.json');
   const sdcardsPath  = path.join(process.cwd(), 'data/sdcards.json');

@@ -49,7 +49,7 @@ function mergeDeviceCategories() {
       return; // No category files, use existing devices.json
     }
 
-    console.log("🔄 Merging category files...");
+    console.log("Merging category files...");
     let allDevices = [];
 
     // Load each category file
@@ -60,9 +60,9 @@ function mergeDeviceCategories() {
         const data = JSON.parse(content);
         const devices = Array.isArray(data) ? data : (data.devices || []);
         allDevices = allDevices.concat(devices);
-        console.log(`  ✓ ${file}: ${devices.length} device(s)`);
+        console.log(`✓ ${file}: ${devices.length} device(s)`);
       } catch (err) {
-        console.warn(`  ⚠️  Error loading ${file}:`, err.message);
+        console.warn(`Error loading ${file}:`, err.message);
       }
     }
 
@@ -79,34 +79,34 @@ function mergeDeviceCategories() {
       };
 
       fs.writeFileSync(dataPath, JSON.stringify(output, null, 2));
-      console.log(`  ✓ Merged ${allDevices.length} device(s) → devices.json\n`);
+      console.log(`✓ Merged ${allDevices.length} device(s) → devices.json\n`);
     }
   } catch (err) {
-    console.warn("⚠️  Could not merge category files:", err.message);
-    console.log("   Proceeding with existing devices.json\n");
+    console.warn("Could not merge category files:", err.message);
+    console.log("Proceeding with existing devices.json\n");
   }
 }
 
 async function build() {
-  console.log("\n🚀 Starting SD Card Checker site generation...\n");
+  console.log("\nStarting SD Card Checker site generation...\n");
 
   try {
     // 0. Merge category files (if they exist)
     mergeDeviceCategories();
 
     // 1. Load Data
-    console.log("📊 Loading device data...");
+    console.log("Loading device data...");
     const devicesData = readJSON(dataPath);
     const allDevices = devicesData.devices;
-    console.log(`  ✓ Loaded ${allDevices.length} devices`);
+    console.log(`✓ Loaded ${allDevices.length} devices`);
 
-    console.log("📊 Loading SD Card Reader data...");
+    console.log("Loading SD Card Reader data...");
     const readersData = readJSON(readersPath);
     const allReaders = readersData.sdCardReaders || [];
-    console.log(`  ✓ Loaded ${allReaders.length} SD Card Readers\n`);
+    console.log(`✓ Loaded ${allReaders.length} SD Card Readers\n`);
 
     // 2. Copy Assets
-    console.log("📁 Copying assets...");
+    console.log("Copying assets...");
     await copyAssets();
     console.log();
 
@@ -167,33 +167,33 @@ async function build() {
     console.log();
 
     // 9. Generate English Sitemap (to public/)
-    console.log("📡 Generating English sitemap...");
+    console.log("Generating English sitemap...");
     generateEnglishSitemap(allDevices, allReaders);
     console.log();
 
     // 10. Generate Core Files (robots.txt, legal pages, etc.)
-    console.log("📝 Generating core files...");
+    console.log("Generating core files...");
     await generateCoreFiles(allDevices, allReaders, distPath);
     console.log();
 
     // Success summary
-    console.log("✅ Generation complete!");
-    console.log(`\n📊 Summary:`);
-    console.log(`  • Homepage: 1`);
-    console.log(`  • Device pages: ${allDevices.length}`);
+    console.log("Generation complete!");
+    console.log(`\nSummary:`);
+    console.log(`• Homepage: 1`);
+    console.log(`• Device pages: ${allDevices.length}`);
     const categories = [...new Set(allDevices.map((d) => d.category))];
-    console.log(`  • Category pages: ${categories.length}`);
-    console.log(`  • SD Card Reader pages: 14`);
-    console.log(`  • Reader Buying Guides: 4`);
-    console.log(`  • Sitemap & robots.txt: ✓`);
-    console.log(`\n📁 Output directory: ${distPath}`);
-    console.log(`\n🚀 To view locally, run: npx http-server dist`);
+    console.log(`• Category pages: ${categories.length}`);
+    console.log(`• SD Card Reader pages: 14`);
+    console.log(`• Reader Buying Guides: 4`);
+    console.log(`• Sitemap & robots.txt: ✓`);
+    console.log(`\nOutput directory: ${distPath}`);
+    console.log(`\nTo view locally, run: npx http-server dist`);
     console.log(
-      `\n💡 Don't forget to add your Mediavine code to your pages!\n`
+      `\nDon't forget to add your Mediavine code to your pages!\n`
     );
   } catch (error) {
     console.error(
-      "❌ Error during generation:",
+      "Error during generation:",
       error.message
     );
     process.exit(1);

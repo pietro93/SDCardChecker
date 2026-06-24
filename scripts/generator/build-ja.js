@@ -43,7 +43,7 @@ function mergeDeviceCategories() {
       return; // No category files, use existing devices.json
     }
 
-    console.log("🔄 Merging English category files...");
+    console.log("Merging English category files...");
     let allDevices = [];
 
     // Load each category file
@@ -54,9 +54,9 @@ function mergeDeviceCategories() {
         const data = JSON.parse(content);
         const devices = Array.isArray(data) ? data : (data.devices || []);
         allDevices = allDevices.concat(devices);
-        console.log(`  ✓ ${file}: ${devices.length} device(s)`);
+        console.log(`✓ ${file}: ${devices.length} device(s)`);
       } catch (err) {
-        console.warn(`  ⚠️  Error loading ${file}:`, err.message);
+        console.warn(`Error loading ${file}:`, err.message);
       }
     }
 
@@ -73,11 +73,11 @@ function mergeDeviceCategories() {
       };
 
       fs.writeFileSync(devicesPath, JSON.stringify(output, null, 2));
-      console.log(`  ✓ Merged ${allDevices.length} device(s) → devices.json\n`);
+      console.log(`✓ Merged ${allDevices.length} device(s) → devices.json\n`);
     }
   } catch (err) {
-    console.warn("⚠️  Could not merge English category files:", err.message);
-    console.log("   Proceeding with existing devices.json\n");
+    console.warn("Could not merge English category files:", err.message);
+    console.log("Proceeding with existing devices.json\n");
   }
 }
 
@@ -99,7 +99,7 @@ function mergeJapaneseCategoryFiles() {
       return; // No category files, use existing devices-ja.json
     }
 
-    console.log("🔄 Merging Japanese category files...");
+    console.log("Merging Japanese category files...");
     let allDevices = [];
 
     // Load each category file
@@ -110,9 +110,9 @@ function mergeJapaneseCategoryFiles() {
         const data = JSON.parse(content);
         const devices = Array.isArray(data) ? data : (data.devices || []);
         allDevices = allDevices.concat(devices);
-        console.log(`  ✓ ${file}: ${devices.length} device(s)`);
+        console.log(`✓ ${file}: ${devices.length} device(s)`);
       } catch (err) {
-        console.warn(`  ⚠️  Error loading ${file}:`, err.message);
+        console.warn(`Error loading ${file}:`, err.message);
       }
     }
 
@@ -130,11 +130,11 @@ function mergeJapaneseCategoryFiles() {
       };
 
       fs.writeFileSync(devicesJaPath, JSON.stringify(output, null, 2));
-      console.log(`  ✓ Merged ${allDevices.length} device(s) → devices-ja.json\n`);
+      console.log(`✓ Merged ${allDevices.length} device(s) → devices-ja.json\n`);
     }
   } catch (err) {
-    console.warn("⚠️  Could not merge Japanese category files:", err.message);
-    console.log("   Proceeding with existing devices-ja.json\n");
+    console.warn("Could not merge Japanese category files:", err.message);
+    console.log("Proceeding with existing devices-ja.json\n");
   }
 }
 
@@ -142,7 +142,7 @@ function mergeJapaneseCategoryFiles() {
  * Generate static Japanese pages (about, privacy, terms)
  */
 function generateStaticJapanesePages() {
-  console.log("📄 Generating static Japanese pages...");
+  console.log("Generating static Japanese pages...");
   
   const pages = [
     { template: "about-ja.html", output: "about.html" },
@@ -163,7 +163,7 @@ function generateStaticJapanesePages() {
       
       const outputPath = path.join(jaPath, output);
       writeFile(outputPath, html);
-      console.log(`  ✓ Generated ${output}`);
+      console.log(`✓ Generated ${output}`);
     }
   });
 }
@@ -179,56 +179,56 @@ async function buildJapanese() {
     mergeJapaneseCategoryFiles();
 
     // 1. Load Japanese Device Data
-    console.log("📊 Loading Japanese device data...");
+    console.log("Loading Japanese device data...");
     const devicesData = readJSON(devicesJaPath);
     const allDevices = devicesData.devices;
-    console.log(`  ✓ Loaded ${allDevices.length} devices\n`);
+    console.log(`✓ Loaded ${allDevices.length} devices\n`);
 
     // 2. Generate Static Pages (about, privacy, terms)
     generateStaticJapanesePages();
     console.log();
 
     // 3. Generate Japanese Home Page
-    console.log("📄 Generating Japanese home page...");
+    console.log("Generating Japanese home page...");
     generateJapaneseHomePage(distPath);
     console.log();
 
     // 4. Generate Japanese Device Pages
-    console.log("📄 Generating Japanese device pages...");
+    console.log("Generating Japanese device pages...");
     await generateDevicePagesJa(allDevices, distPath);
     console.log();
     
     // 5. Generate Japanese Category Pages (no readers)
-    console.log("📄 Generating Japanese category pages...");
+    console.log("Generating Japanese category pages...");
     generateCategoryPagesJa(allDevices, jaPath);
     console.log();
 
     // 6. Generate Japanese Guide Pages
-    console.log("📄 Generating Japanese guide pages...");
+    console.log("Generating Japanese guide pages...");
     generateJapaneseGuides(distPath);
     console.log();
 
     // 7. Generate Japanese Sitemap (to public/ja/)
-    console.log("📡 Generating Japanese sitemap...");
+    console.log("Generating Japanese sitemap...");
     generateJapaneseSitemap(allDevices);
     console.log();
 
     // 8. Generate Japanese Core Files (robots.txt, etc.)
-    console.log("📄 Generating Japanese core files...");
+    console.log("Generating Japanese core files...");
     await generateJapaneseCoreFiles(allDevices, distPath);
     console.log();
 
     // Success summary
-    console.log("✅ Japanese generation complete!");
-    console.log(`\n📊 Summary:`);
+    console.log("Japanese generation complete!");
+    console.log(`\nSummary:`);
     const categories = [...new Set(allDevices.map((d) => d.category))].filter(c => c !== "SD Card Readers");
-    console.log(`  • Japanese device pages: ${allDevices.length}`);
-    console.log(`  • Japanese category pages: ${categories.length}`);
-    console.log(`  • Japanese home page: 1`);
-    console.log(`\n📁 Output directory: ${jaPath}`);
-    console.log(`\n✅ Japanese site ready at /ja/`);
+    console.log(`• Japanese device pages: ${allDevices.length}`);
+    console.log(`• Japanese category pages: ${categories.length}`);
+    console.log(`• Japanese home page: 1`);
+    console.log(`\nOutput directory: ${jaPath}`);
+    console.log(`\nJapanese site ready at /ja/`);
   } catch (error) {
-    console.error("❌ Error during Japanese generation:", error);
+    console.error("Error during Japanese generation:", error);
     process.exit(1);
   }
 }

@@ -140,10 +140,10 @@ Sitemap: https://sdcardchecker.com/ja/sitemap.xml
  * Generate all Japanese core files
  */
 async function generateJapaneseCoreFiles(allDevices, distPath) {
-  console.log("📝 Generating Japanese core files...");
+  console.log("Generating Japanese core files...");
   generateJapaneseSitemap(allDevices, distPath);
   generateJapaneseRobots(distPath);
-  console.log(`  ✓ Japanese sitemap & robots.txt generated`);
+  console.log(`✓ Japanese sitemap & robots.txt generated`);
 }
 
 module.exports = { generateJapaneseCoreFiles };

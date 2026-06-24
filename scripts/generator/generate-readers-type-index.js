@@ -269,7 +269,7 @@ function generateReaderTypeIndexPage(type, readers) {
  * Generate all reader type index pages
  */
 async function generateReadersTypeIndexPages() {
-    console.log("\n📂 Generating Reader Type Index Pages...");
+    console.log("\nGenerating Reader Type Index Pages...");
 
     try {
         // Read readers data
@@ -291,13 +291,13 @@ async function generateReadersTypeIndexPages() {
         for (const [type, readers] of Object.entries(typeMap)) {
             const slug = generateReaderTypeIndexPage(type, readers);
             generatedTypes.push(slug);
-            console.log(`  ✓ dist/readers/${slug}/index.html`);
+            console.log(`✓ dist/readers/${slug}/index.html`);
         }
 
-        console.log(`  ✅ Generated ${generatedTypes.length} reader type pages`);
+        console.log(`Generated ${generatedTypes.length} reader type pages`);
         return generatedTypes;
     } catch (err) {
-        console.error("  ❌ Error generating reader type pages:", err.message);
+        console.error("Error generating reader type pages:", err.message);
         throw err;
     }
 }

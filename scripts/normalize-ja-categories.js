@@ -28,7 +28,7 @@ const categoryMapping = {
   '高性能ドライブレコーダー': 'dash-cams'
 };
 
-console.log('🔄 Normalizing Japanese category fields...\n');
+console.log('Normalizing Japanese category fields...\n');
 
 const files = fs.readdirSync(categoriesJaPath)
   .filter(f => f.endsWith('.json'))
@@ -54,4 +54,4 @@ files.forEach(file => {
   console.log(`✓ ${file}: ${updated} device(s) updated`);
 });
 
-console.log(`\n✅ Normalized all category fields\n`);
+console.log(`\nNormalized all category fields\n`);

@@ -322,7 +322,7 @@ function generateReaderPage(reader, template, baseUrl, allReaders) {
  * Main: Generate all reader pages
  */
 async function generateReaderPages() {
-    console.log("\n📖 Generating SD Card Reader Pages...");
+    console.log("\nGenerating SD Card Reader Pages...");
 
     const baseUrl = "https://sdcardchecker.com";
     
@@ -341,21 +341,21 @@ async function generateReaderPages() {
         const readersData = readJSON(readersPath);
         const readers = readersData.sdCardReaders || [];
 
-        console.log(`  Found ${readers.length} readers in dataset`);
+        console.log(`Found ${readers.length} readers in dataset`);
 
         // Generate pages
         readers.forEach((reader) => {
             try {
                 generateReaderPage(reader, template, baseUrl, readers);
             } catch (err) {
-                console.error(`  ❌ Error generating reader page for ${reader.id}:`, err.message);
+                console.error(`Error generating reader page for ${reader.id}:`, err.message);
             }
         });
 
-        console.log(`  ✅ Generated ${readers.length} reader pages`);
+        console.log(`Generated ${readers.length} reader pages`);
         return readers.length;
     } catch (err) {
-        console.error("  ❌ Error generating reader pages:", err.message);
+        console.error("Error generating reader pages:", err.message);
         throw err;
     }
 }

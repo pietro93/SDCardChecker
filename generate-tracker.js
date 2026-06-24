@@ -44,5 +44,5 @@ Object.keys(jaGrouped).sort().forEach(cat => {
 
 fs.writeFileSync('./DEVICE_TRACKER.md', output);
 console.log('✓ Created DEVICE_TRACKER.md');
-console.log(`  English: ${devicesEn.devices.length} devices`);
-console.log(`  Japanese: ${devicesJa.devices.length} devices`);
+console.log(`English: ${devicesEn.devices.length} devices`);
+console.log(`Japanese: ${devicesJa.devices.length} devices`);

@@ -31,10 +31,10 @@ async function main() {
   console.log(`Matched: ${metadata.productTitle}`);
   console.log(`\nStaged: img/devices/_review/${slug}.webp`);
   if (!metadata.cutoutSane) {
-    console.log(`\n⚠ Cutout sanity check failed (removed ${(metadata.cutoutRemovedFraction * 100).toFixed(0)}% of the image).`);
-    console.log(`  The source may not be a clean studio shot — review carefully before promoting.`);
+    console.log(`\nCutout sanity check failed (removed ${(metadata.cutoutRemovedFraction * 100).toFixed(0)}% of the image).`);
+    console.log(`The source may not be a clean studio shot — review carefully before promoting.`);
   }
-  console.log(`\n⚠ ${metadata.licenseNote}`);
+  console.log(`\n${metadata.licenseNote}`);
   console.log(`\nReview the image, then run:\n  node scripts/images/promote-device-image.js ${slug}`);
 }
 

@@ -28,7 +28,7 @@ const sandiskImages = [
 console.log('Checking SanDisk fallback images:');
 sandiskImages.forEach(img => {
   const exists = imageExists(img);
-  console.log(`  ${img}: ${exists ? '✅' : '❌'}`);
+  console.log(`${img}: ${exists ? '' : ''}`);
 });
 
 console.log('');
@@ -41,5 +41,5 @@ const genericImages = [
 
 genericImages.forEach(img => {
   const exists = imageExists(img);
-  console.log(`  ${img}: ${exists ? '✅' : '❌'}`);
+  console.log(`${img}: ${exists ? '' : ''}`);
 });

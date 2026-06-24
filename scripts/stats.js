@@ -25,6 +25,6 @@ console.log("By category:");
 Object.entries(counts)
   .sort((a, b) => b[1] - a[1])
   .forEach(([category, count]) => {
-    console.log(`  ${String(count).padStart(3)}  ${category}`);
+    console.log(`${String(count).padStart(3)}  ${category}`);
   });
 console.log("");

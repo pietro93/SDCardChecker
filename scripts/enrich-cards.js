@@ -80,7 +80,7 @@ Output ONLY the JSON object, no markdown, no code blocks.`;
     const text = response.choices[0].message.content.trim();
     return JSON.parse(text);
   } catch (error) {
-    console.error(`  ❌ Error generating enrichment for ${card.name}:`, error.message);
+    console.error(`Error generating enrichment for ${card.name}:`, error.message);
     return null;
   }
 }
@@ -89,10 +89,10 @@ Output ONLY the JSON object, no markdown, no code blocks.`;
  * Main enrichment pipeline
  */
 async function enrichCards() {
-  console.log('🚀 Starting SD Card Enrichment Generation...\n');
+  console.log('Starting SD Card Enrichment Generation...\n');
 
   if (!process.env.GROQ_API_KEY) {
-    console.error('❌ GROQ_API_KEY not found in .env file');
+    console.error('GROQ_API_KEY not found in .env file');
     process.exit(1);
   }
 
@@ -107,7 +107,7 @@ async function enrichCards() {
   let cached = 0;
   let failed = 0;
 
-  console.log(`📊 Found ${cards.length} SD cards to enrich\n`);
+  console.log(`Found ${cards.length} SD cards to enrich\n`);
 
   // Process each card
   for (let i = 0; i < cards.length; i++) {
@@ -157,16 +157,16 @@ async function enrichCards() {
   fs.writeFileSync(ENRICHMENT_OUTPUT, JSON.stringify(enrichmentData, null, 2));
   saveCache(cache);
 
-  console.log(`\n✅ SD Card Enrichment Complete!`);
-  console.log(`📝 Processed: ${processed} new | Cached: ${cached} | Failed: ${failed} | Total: ${processed + cached}`);
-  console.log(`💾 Saved to: ${ENRICHMENT_OUTPUT}`);
-  console.log(`💿 Cache saved to: ${CACHE_FILE}`);
+  console.log(`\nSD Card Enrichment Complete!`);
+  console.log(`Processed: ${processed} new | Cached: ${cached} | Failed: ${failed} | Total: ${processed + cached}`);
+  console.log(`Saved to: ${ENRICHMENT_OUTPUT}`);
+  console.log(`Cache saved to: ${CACHE_FILE}`);
 
   // Print sample output
   if (processed > 0) {
     const firstNewCard = Object.values(enrichmentData)[0];
     if (firstNewCard) {
-      console.log(`\n📋 Sample output (${firstNewCard.name}):`);
+      console.log(`\nSample output (${firstNewCard.name}):`);
       console.log(JSON.stringify(firstNewCard, null, 2));
     }
   }

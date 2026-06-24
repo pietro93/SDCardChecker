@@ -56,13 +56,13 @@ Object.keys(byCategory).sort().forEach(category => {
   console.log(`✓ ${fileName}: ${categoryData.length} device(s)`);
 });
 
-console.log(`\n✅ Extraction complete! Created ${createdFiles.length} category files:\n`);
+console.log(`\nExtraction complete! Created ${createdFiles.length} category files:\n`);
 createdFiles.forEach(f => {
-  console.log(`  • ${f.file} (${f.count} devices) - ${f.category}`);
+  console.log(`• ${f.file} (${f.count} devices) - ${f.category}`);
 });
 
-console.log(`\n📝 NEXT STEPS:`);
-console.log(`  1. Commit the new category files: git add data/categories/*.json && git commit`);
-console.log(`  2. Add devices.json to .gitignore (it will be generated during build)`);
-console.log(`  3. Edit device data ONLY in the individual category files`);
-console.log(`  4. Run 'npm run build' to regenerate devices.json from categories\n`);
+console.log(`\nNEXT STEPS:`);
+console.log(`1. Commit the new category files: git add data/categories/*.json && git commit`);
+console.log(`2. Add devices.json to .gitignore (it will be generated during build)`);
+console.log(`3. Edit device data ONLY in the individual category files`);
+console.log(`4. Run 'npm run build' to regenerate devices.json from categories\n`);

@@ -216,7 +216,7 @@ function generateCategoryPage(category, devices, template, categorySlug) {
  * Generate all Japanese category pages (excluding Card Readers)
  */
 async function generateCategoryPagesJa(allDevices, distPath) {
-  console.log("📂 Generating Japanese category pages...");
+  console.log("Generating Japanese category pages...");
 
   let categoryTemplate = readTemplate(
     path.join(srcPath, "templates/category-ja.html")
@@ -281,7 +281,7 @@ async function generateCategoryPagesJa(allDevices, distPath) {
     });
 
   const generatedCount = Object.keys(grouped).filter(c => !excludeCategories.includes(c)).length;
-  console.log(`  ✓ Generated ${generatedCount} Japanese category pages (excluding Card Readers)`);
+  console.log(`✓ Generated ${generatedCount} Japanese category pages (excluding Card Readers)`);
 }
 
 module.exports = { generateCategoryPagesJa };

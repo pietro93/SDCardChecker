@@ -19,7 +19,7 @@ const publicPath = path.join(__dirname, "../../public");
  * Generate English sitemap
  */
 function generateEnglishSitemap(allDevices, allReaders) {
-  console.log("📝 Generating English sitemap...");
+  console.log("Generating English sitemap...");
   
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -251,7 +251,7 @@ function generateEnglishSitemap(allDevices, allReaders) {
         });
       }
     } catch (e) {
-      console.warn("  ⚠️  Could not parse cars-navigation.json for sitemap");
+      console.warn("Could not parse cars-navigation.json for sitemap");
     }
   }
 
@@ -276,14 +276,14 @@ function generateEnglishSitemap(allDevices, allReaders) {
 </urlset>`;
 
   writeFile(path.join(publicPath, "sitemap.xml"), sitemap);
-  console.log(`  ✓ English sitemap: ${allDevices.length} devices, ${categories.length} categories`);
+  console.log(`✓ English sitemap: ${allDevices.length} devices, ${categories.length} categories`);
 }
 
 /**
  * Generate Japanese sitemap
  */
 function generateJapaneseSitemap(allDevices) {
-  console.log("📝 Generating Japanese sitemap...");
+  console.log("Generating Japanese sitemap...");
 
   const categorySlugMap = {
     'アクションカメラ': 'action-cameras',
@@ -416,11 +416,11 @@ function generateJapaneseSitemap(allDevices) {
   }
   
   writeFile(path.join(jaPath, "sitemap.xml"), sitemap);
-  console.log(`  ✓ Japanese sitemap: ${allDevices.length} devices, ${categories.length} categories`);
+  console.log(`✓ Japanese sitemap: ${allDevices.length} devices, ${categories.length} categories`);
 }
 
 async function generateSitemaps() {
-  console.log("\n📡 Generating sitemaps...\n");
+  console.log("\nGenerating sitemaps...\n");
 
   try {
     // Load device data
@@ -437,9 +437,9 @@ async function generateSitemaps() {
     generateEnglishSitemap(allDevices, allReaders);
     generateJapaneseSitemap(allDevicesJa);
 
-    console.log("\n✅ Sitemaps generated successfully!\n");
+    console.log("\nSitemaps generated successfully!\n");
   } catch (error) {
-    console.error("❌ Error generating sitemaps:", error.message);
+    console.error("Error generating sitemaps:", error.message);
     process.exit(1);
   }
 }

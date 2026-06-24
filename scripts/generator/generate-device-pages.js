@@ -431,10 +431,10 @@ function generateAlternatives(device, sdcardsMap) {
         html += createCard(recommended, "✓ Best Choice");
     }
     if (budget) {
-        html += createCard(budget, "💰 Budget Option");
+        html += createCard(budget, "Budget Option");
     }
     if (professional) {
-        html += createCard(professional, "⚡ Professional Option");
+        html += createCard(professional, "Professional Option");
     }
 
     return html;
@@ -616,7 +616,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
  */
 async function generateDevicePages(allDevices, distPath, isJapanese = false) {
     const lang = isJapanese ? "Japanese" : "";
-    console.log(`📄 Generating ${lang} device pages...`);
+    console.log(`Generating ${lang} device pages...`);
 
     const templateFile = isJapanese ? "device-ja.html" : "device.html";
     let deviceTemplate = readTemplate(
@@ -631,7 +631,7 @@ async function generateDevicePages(allDevices, distPath, isJapanese = false) {
     const enrichmentData = loadSDCardEnrichment();
     if (Object.keys(enrichmentData).length > 0) {
         mergeSDCardEnrichment(sdcardsMap, enrichmentData);
-        console.log(`  ✓ Loaded enrichment data for ${Object.keys(enrichmentData).length} SD cards`);
+        console.log(`✓ Loaded enrichment data for ${Object.keys(enrichmentData).length} SD cards`);
     }
 
     let successCount = 0;
@@ -648,14 +648,14 @@ async function generateDevicePages(allDevices, distPath, isJapanese = false) {
             writeFile(devicePath, deviceHTML);
             successCount++;
         } catch (error) {
-            console.warn(`  ⚠️  Failed to generate ${device.slug}: ${error.message}`);
+            console.warn(`Failed to generate ${device.slug}: ${error.message}`);
             failedDevices.push(device.slug);
         }
     });
 
-    console.log(`  ✓ Generated ${successCount}/${allDevices.length} ${lang} device pages`);
+    console.log(`✓ Generated ${successCount}/${allDevices.length} ${lang} device pages`);
     if (failedDevices.length > 0) {
-        console.warn(`  ⚠️  ${failedDevices.length} devices failed: ${failedDevices.join(', ')}`);
+        console.warn(`${failedDevices.length} devices failed: ${failedDevices.join(', ')}`);
     }
 }
 

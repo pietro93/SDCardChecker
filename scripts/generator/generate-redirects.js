@@ -26,7 +26,7 @@ function generateNetlifyRedirects(allDevices, distPath) {
     redirectsContent += `\n# Fallback for any remaining /devices/ URLs\n/devices/*    /404.html    404\n`;
 
     fs.writeFileSync(path.join(distPath, "_redirects"), redirectsContent);
-    console.log(`  ✓ Generated Netlify _redirects file with ${allDevices.length} device redirects`);
+    console.log(`✓ Generated Netlify _redirects file with ${allDevices.length} device redirects`);
 }
 
 /**
@@ -71,7 +71,7 @@ function generateVercelConfig(allDevices, distPath) {
     };
 
     fs.writeFileSync(path.join(distPath, "..", "vercel.json"), JSON.stringify(vercelConfig, null, 2));
-    console.log(`  ✓ Generated vercel.json with ${redirects.length} redirect rules`);
+    console.log(`✓ Generated vercel.json with ${redirects.length} redirect rules`);
 }
 
 /**
@@ -109,18 +109,18 @@ function generateHtaccess(allDevices, distPath) {
 `;
 
     fs.writeFileSync(path.join(distPath, ".htaccess"), htaccessContent);
-    console.log(`  ✓ Generated .htaccess with ${allDevices.length} device redirects`);
+    console.log(`✓ Generated .htaccess with ${allDevices.length} device redirects`);
 }
 
 /**
  * Generate all redirect configurations
  */
 function generateRedirects(allDevices, distPath) {
-    console.log("🔄 Generating URL redirects for SEO migration...");
+    console.log("Generating URL redirects for SEO migration...");
     generateNetlifyRedirects(allDevices, distPath);
     generateVercelConfig(allDevices, distPath);
     generateHtaccess(allDevices, distPath);
-    console.log(`  ✓ All redirect configurations generated successfully`);
+    console.log(`✓ All redirect configurations generated successfully`);
 }
 
 module.exports = { generateRedirects };
