@@ -346,6 +346,8 @@ function generateSidebar() {
     <ul x-show="open" class="mt-2 ml-3 space-y-2 border-l border-slate-200 pl-3">
       <li><a href="/categories/audio-and-hi-fi/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Audio & Hi-Fi</a></li>
       <li><a href="/categories/security-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Security Cameras</a></li>
+      <li><a href="/categories/3d-printers-and-fabrication/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">3D Printers & Fabrication</a></li>
+      <li><a href="/categories/music-production/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Music Production</a></li>
     </ul>
   </li>
      </ul>
