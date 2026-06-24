@@ -1,6 +1,8 @@
 # SD Card Image Scraper + Fast-Add Workflow — Handoff
 
-Status: not built yet. This is the implementation plan for two things the user asked for:
+Status: **built**. Scripts below exist and are exercised; this doc now also serves as the how-to reference (see "How to use" sections). The plan below is left intact as implementation context.
+
+Original ask — two things the user wanted:
 1. An automated scraper that fetches a small square product photo for an SD card (for `img/cards/`), distinct from the device hero-image pipeline.
 2. A "just tell Claude Code to add a card" workflow that writes the data entry, scrapes the image, and validates everything in one go.
 
