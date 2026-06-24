@@ -1096,33 +1096,6 @@
       "imageUrl": "/img/devices/action-cameras/insta360-one-x3.webp"
     },
     {
-      "id": "wyze-cam-v3",
-      "name": "Wyze Cam v3",
-      "category": "Action Cameras",
-      "slug": "wyze-cam-v3",
-      "searchTerms": [
-        "wyze cam v3",
-        "wyze camera"
-      ],
-      "sdCard": {
-        "type": "microSD",
-        "minSpeed": "Class 10",
-        "recommendedCapacity": [
-          "64GB",
-          "128GB"
-        ]
-      },
-      "whySpecs": "Wyze Cam v3 supports microSD for local recording storage.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-ultra-microsd"
-        }
-      ],
-      "relatedDevices": [
-        "gopro-hero-13"
-      ]
-    },
-    {
       "id": "fiio-snowsky-echo-mini",
       "name": "FiiO SnowSky Echo Mini",
       "category": "Audio & Hi-Fi",
@@ -1249,7 +1222,7 @@
       "whySpecs": "The NW-ZX707 is the high-end sibling to the A306, featuring a larger screen and better amplification. Like the A306, it runs Android and requires an A2-rated card for smooth operation. Users of this device typically have massive DSD/FLAC libraries, making 1TB cards a very common choice.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-pro-microsd"
+          "id": "sandisk-extreme-pro-microsd-v60"
         },
         {
           "id": "samsung-pro-plus-microsd"
@@ -1423,10 +1396,10 @@
       "whySpecs": "<b>Critical Warning:</b> The Zoom H1n (and H1n-VP) is an older hardware architecture that <b>does NOT support cards larger than 32GB</b>. Users frequently buy 64GB or 128GB cards that fail to work. You must use a microSDHC card (32GB or smaller). Speed is not critical; compatibility is.",
       "recommendedBrands": [
         {
-          "id": "sandisk-ultra-microsd-32gb"
+          "id": "sandisk-ultra-microsd"
         },
         {
-          "id": "kingston-canvas-select-32gb"
+          "id": "kingston-canvas-select"
         }
       ],
       "faq": [
@@ -1652,6 +1625,12 @@
         },
         {
           "id": "lexar-professional-1000x-v60"
+        },
+        {
+          "id": "prograde-digital-cfexpress-type-b-gold"
+        },
+        {
+          "id": "angelbird-av-pro-cfexpress-type-b-mk2"
         }
       ],
       "faq": [
@@ -1798,6 +1777,12 @@
         },
         {
           "id": "nikon-xqd-memory-card"
+        },
+        {
+          "id": "prograde-digital-cfexpress-type-b-gold"
+        },
+        {
+          "id": "angelbird-av-pro-cfexpress-type-b-mk2"
         }
       ],
       "faq": [
@@ -1842,6 +1827,9 @@
       "recommendedBrands": [
         {
           "id": "lexar-professional-1000x-sd"
+        },
+        {
+          "id": "prograde-digital-sdxc-v90-cobalt"
         }
       ],
       "faq": [
@@ -1886,6 +1874,9 @@
       "recommendedBrands": [
         {
           "id": "lexar-professional-1000x-sd"
+        },
+        {
+          "id": "prograde-digital-sdxc-v90-cobalt"
         }
       ],
       "faq": [
@@ -2023,6 +2014,12 @@
         },
         {
           "id": "lexar-professional-1000x-sd"
+        },
+        {
+          "id": "prograde-digital-cfexpress-type-b-gold"
+        },
+        {
+          "id": "angelbird-av-pro-cfexpress-type-b-mk2"
         }
       ],
       "faq": [
@@ -2063,6 +2060,12 @@
       "recommendedBrands": [
         {
           "id": "sony-tough-g-v90"
+        },
+        {
+          "id": "prograde-digital-cfexpress-type-b-gold"
+        },
+        {
+          "id": "angelbird-av-pro-cfexpress-type-b-mk2"
         }
       ],
       "faq": [
@@ -2519,6 +2522,9 @@
         },
         {
           "id": "sony-tough-g-v90"
+        },
+        {
+          "id": "prograde-digital-sdxc-v90-cobalt"
         }
       ],
       "faq": [
@@ -2713,6 +2719,12 @@
         },
         {
           "id": "sandisk-extreme-pro-cfexpress-type-a"
+        },
+        {
+          "id": "sony-tough-cfexpress-type-a"
+        },
+        {
+          "id": "lexar-professional-cfexpress-type-a-gold"
         }
       ],
       "faq": [
@@ -2764,6 +2776,12 @@
         },
         {
           "id": "sandisk-extreme-pro-cfexpress-type-a"
+        },
+        {
+          "id": "sony-tough-cfexpress-type-a"
+        },
+        {
+          "id": "lexar-professional-cfexpress-type-a-gold"
         }
       ],
       "faq": [
@@ -2969,6 +2987,9 @@
         },
         {
           "id": "sony-tough-g-v90"
+        },
+        {
+          "id": "prograde-digital-sdxc-v90-cobalt"
         }
       ],
       "faq": [
@@ -3297,6 +3318,9 @@
         },
         {
           "id": "sandisk-extreme-pro-sd-uhs2"
+        },
+        {
+          "id": "prograde-digital-sdxc-v90-cobalt"
         }
       ],
       "faq": [
@@ -3543,6 +3567,12 @@
         },
         {
           "id": "lexar-professional-1000x-sd"
+        },
+        {
+          "id": "prograde-digital-cfexpress-type-b-gold"
+        },
+        {
+          "id": "angelbird-av-pro-cfexpress-type-b-mk2"
         }
       ],
       "faq": [
@@ -3832,6 +3862,12 @@
         },
         {
           "id": "sony-tough-g-v90"
+        },
+        {
+          "id": "sony-tough-cfexpress-type-a"
+        },
+        {
+          "id": "lexar-professional-cfexpress-type-a-gold"
         }
       ],
       "faq": [
@@ -4224,35 +4260,6 @@
       "imageUrl": "/img/devices/cameras/sony-a7r.webp"
     },
     {
-      "id": "canon-rebel-t7",
-      "name": "Canon EOS Rebel T7",
-      "category": "Cameras",
-      "slug": "canon-rebel-t7",
-      "searchTerms": [
-        "canon rebel t7",
-        "eos rebel t7"
-      ],
-      "sdCard": {
-        "type": "SD UHS-I",
-        "minSpeed": "Class 10",
-        "minWriteSpeed": "10 MB/s",
-        "recommendedCapacity": [
-          "64GB",
-          "128GB"
-        ]
-      },
-      "whySpecs": "Entry-level DSLR. Class 10 sufficient for 1080p video.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-ultra-microsd"
-        }
-      ],
-      "relatedDevices": [
-        "canon-eos-r5"
-      ],
-      "imageUrl": "/img/devices/cameras/canon-rebel-t7.webp"
-    },
-    {
       "id": "sony-a1",
       "name": "Sony A1",
       "category": "Cameras",
@@ -4273,7 +4280,16 @@
       "whySpecs": "Professional mirrorless camera. Dual slots for CFexpress Type A and SD UHS-II.",
       "recommendedBrands": [
         {
-          "id": "sony-mrw-g2"
+          "id": "sandisk-extreme-pro-cfexpress-type-a"
+        },
+        {
+          "id": "sandisk-extreme-pro-sd-uhs2"
+        },
+        {
+          "id": "sony-tough-cfexpress-type-a"
+        },
+        {
+          "id": "lexar-professional-cfexpress-type-a-gold"
         }
       ],
       "relatedDevices": [
@@ -4281,36 +4297,6 @@
         "nikon-z9"
       ],
       "imageUrl": "/img/devices/cameras/sony-a1.webp"
-    },
-    {
-      "id": "nikon-d850",
-      "name": "Nikon D850",
-      "category": "Cameras",
-      "slug": "nikon-d850",
-      "searchTerms": [
-        "nikon d850",
-        "d850"
-      ],
-      "sdCard": {
-        "type": "SD UHS-II / XQD",
-        "minSpeed": "V30",
-        "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB"
-        ]
-      },
-      "whySpecs": "Professional DSLR. Dual slots support both SD UHS-II and legacy XQD cards.",
-      "recommendedBrands": [
-        {
-          "id": "sony-mrw-g1"
-        }
-      ],
-      "relatedDevices": [
-        "nikon-z9",
-        "canon-eos-r5"
-      ],
-      "imageUrl": "/img/devices/cameras/nikon-d850.webp"
     },
     {
       "id": "sony-a1-ii",
@@ -4342,6 +4328,12 @@
         },
         {
           "id": "lexar-professional-1000x-sd"
+        },
+        {
+          "id": "sony-tough-cfexpress-type-a"
+        },
+        {
+          "id": "lexar-professional-cfexpress-type-a-gold"
         }
       ],
       "faq": [
@@ -4396,6 +4388,12 @@
         },
         {
           "id": "lexar-professional-1000x-sd"
+        },
+        {
+          "id": "prograde-digital-cfexpress-type-b-gold"
+        },
+        {
+          "id": "angelbird-av-pro-cfexpress-type-b-mk2"
         }
       ],
       "faq": [
@@ -4972,7 +4970,7 @@
       "whySpecs": "MacBook Air lacks SD card slot. USB-C readers achieve full speed potential on modern models.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
+          "id": "sandisk-extreme-pro-sd-uhs2"
         }
       ],
       "relatedDevices": [
@@ -5002,7 +5000,7 @@
       "whySpecs": "iPad Air M1 and newer use USB-C. Lightning models require Lightning readers.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
+          "id": "sandisk-extreme-pro-sd-uhs2"
         }
       ],
       "relatedDevices": [
@@ -5031,7 +5029,7 @@
       "whySpecs": "iPad Air 3 uses Lightning port (older model).",
       "recommendedBrands": [
         {
-          "id": "lexar-lightning-microsd"
+          "id": "sandisk-ultra-microsd"
         }
       ],
       "relatedDevices": [
@@ -5061,7 +5059,7 @@
       "whySpecs": "MacBook Pro uses Thunderbolt/USB-C. High-speed readers recommended for video workflows.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
+          "id": "sandisk-extreme-pro-sd-uhs2"
         }
       ],
       "relatedDevices": [
@@ -5091,7 +5089,7 @@
       "whySpecs": "iPad Pro uses USB-C or Thunderbolt. Supports fast external readers.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
+          "id": "sandisk-extreme-pro-sd-uhs2"
         }
       ],
       "relatedDevices": [
@@ -5120,7 +5118,7 @@
       "whySpecs": "iPad 9th Gen uses Lightning port.",
       "recommendedBrands": [
         {
-          "id": "lexar-lightning-microsd"
+          "id": "sandisk-ultra-microsd"
         }
       ],
       "relatedDevices": [
@@ -6521,36 +6519,6 @@
       "imageUrl": "/img/devices/drones/hoverair-x1-pro-max.webp"
     },
     {
-      "id": "dji-mini-3",
-      "name": "DJI Mini 3",
-      "category": "Drones",
-      "slug": "dji-mini-3",
-      "searchTerms": [
-        "dji mini 3",
-        "dji mini 3 pro"
-      ],
-      "sdCard": {
-        "type": "microSD UHS-I",
-        "minSpeed": "V30",
-        "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB"
-        ]
-      },
-      "whySpecs": "DJI Mini 3 records 4K video. V30 ensures stable recording.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-microsd"
-        }
-      ],
-      "relatedDevices": [
-        "dji-mini-4-pro",
-        "dji-mini-2-se"
-      ],
-      "imageUrl": "/img/devices/drones/dji-mini-3.webp"
-    },
-    {
       "id": "walksnail-moonlight",
       "name": "Walksnail Moonlight Kit",
       "category": "Drones",
@@ -6642,7 +6610,7 @@
           "id": "sandisk-extreme-pro-microsd-v60"
         },
         {
-          "id": "lexar-professional-1066x-microsd"
+          "id": "lexar-professional-silver-microsd"
         }
       ],
       "faq": [
@@ -6702,7 +6670,7 @@
           "id": "samsung-pro-plus-microsd"
         },
         {
-          "id": "lexar-professional-1066x-microsd"
+          "id": "lexar-professional-silver-microsd"
         }
       ],
       "faq": [
@@ -6756,7 +6724,7 @@
           "id": "samsung-pro-plus-microsd"
         },
         {
-          "id": "lexar-professional-1066x-microsd"
+          "id": "lexar-professional-silver-microsd"
         }
       ],
       "faq": [
@@ -6980,6 +6948,9 @@
         },
         {
           "id": "sandisk-ultra-microsd"
+        },
+        {
+          "id": "silicon-power-superior-a2-microsd"
         }
       ],
       "faq": [
@@ -7135,6 +7106,9 @@
         {
           "id": "lexar-professional-1000x-microsd",
           "note": "microSD Express — for maximum Switch 2 loading speeds"
+        },
+        {
+          "id": "silicon-power-superior-a2-microsd"
         }
       ],
       "faq": [
@@ -7308,6 +7282,9 @@
         },
         {
           "id": "kingston-canvas-go-plus"
+        },
+        {
+          "id": "silicon-power-superior-a2-microsd"
         }
       ],
       "faq": [
@@ -7367,6 +7344,9 @@
         },
         {
           "id": "amazon-basics-microsd"
+        },
+        {
+          "id": "silicon-power-superior-a2-microsd"
         }
       ],
       "faq": [
@@ -7625,7 +7605,7 @@
       "whySpecs": "The MSI Claw runs full Windows AAA games. You need an 'A2' (Application Performance Class 2) rated card to handle the random read/write operations of Windows gaming. Slower cards will cause stuttering and extremely long load times.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-pro-microsd"
+          "id": "sandisk-extreme-pro-microsd-v60"
         },
         {
           "id": "lexar-play-microsd"
@@ -7669,10 +7649,10 @@
       "whySpecs": "GPD Win devices (Mini and Win 4) often feature high-speed UHS-II card readers. To play modern PC games directly from the SD card without stalling, investing in a V60 or V90 UHS-II card is highly beneficial.",
       "recommendedBrands": [
         {
-          "id": "lexar-professional-gold-uhs-ii"
+          "id": "lexar-professional-1000x-microsd"
         },
         {
-          "id": "sandisk-extreme-pro-uhs-ii"
+          "id": "sandisk-extreme-pro-microsd-v60"
         }
       ],
       "faq": [
@@ -7754,7 +7734,7 @@
           "id": "sandisk-ultra-microsd"
         },
         {
-          "id": "samsung-evo-select"
+          "id": "samsung-evo-select-microsd"
         }
       ],
       "faq": [
@@ -7847,7 +7827,7 @@
       "whySpecs": "The RG556 is an Android-based handheld capable of emulating PS2 and GameCube. Using a high-capacity card (256GB+) is recommended to store these large disc-based ROM files. A1 speed is recommended for Android app performance.",
       "recommendedBrands": [
         {
-          "id": "samsung-evo-select"
+          "id": "samsung-evo-select-microsd"
         },
         {
           "id": "sandisk-ultra-microsd"

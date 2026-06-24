@@ -25,26 +25,36 @@ So this isn't a from-scratch build: it's generalizing one script from "nav cards
 - White-background 600×600 webp, matching the existing nav-card convention, so new cards look consistent with the ones already scraped.
 - Output path convention stays `img/cards/<id>.webp` (already used everywhere).
 
-## Plan
+## What was built
 
-### 1. `scripts/images/fetch-card-image.js` — single-card fetch (new, generalized)
+### 1. `scripts/images/card-image-lib.js` — shared helpers
+
+Factored out of `fetch-nav-card-images.js` so the new scripts don't duplicate logic: `loadCards()`, `extractAsin()`, `downloadImage()`, `saveThumbnail()` (the 600×600 white-background webp resize), `setImageFields()` (in-place text edit, works for any card — insertion happens right after the `"tier"` line regardless of what other fields follow it, so it's not actually nav-card-specific), and `isRelevantMatch(title, cardName)` — a lightweight brand+model-number token check used to filter keyword-search results.
+
+### 2. `scripts/images/fetch-card-image.js` — single-card fetch
+
+**How to use:** `node scripts/images/fetch-card-image.js <card-id>` (or `npm run fetch:card-image -- <card-id>`).
 
 Given a card `id`:
-1. Look up the card in `data/sdcards.json`.
-2. Resolve a source image, in order:
-   - If `affiliateUrl` exists → extract ASIN → `getItemsByAsin([asin])` (exact match, no ambiguity).
-   - Else → `searchSDCards(card.name)` → take the top result **only if** its title contains the card's brand/model tokens (port a lightweight version of the salient-token check from the device pipeline's `relevanceScore()` — SD card listings are far less ambiguous than device listings, so this can be a simple "does the title contain the brand and the key model number" check, not the full matcher).
-   - Else → skip and report "needs a manual image" rather than guessing.
-3. Download → `sharp().resize(600, 600, { fit: "contain", background: white })` → `img/cards/<id>.webp`.
-4. Update `imageUrl` + `imageSourceUrl` on the card using the same in-place text-edit approach as `setImageFields()` (generalize it to work for any card, not just ones ending in `"tier"` — nav cards happen to always end in `tier`, but double-check that's true for every schema variant before reusing the regex as-is).
+1. Looks up the card in `data/sdcards.json`.
+2. Resolves a source image, in order:
+   - If `affiliateUrl` exists → extract ASIN → `getItemsByAsin([asin])` (exact match).
+   - Else → `searchSDCards(card.name)` → take the first result whose title passes `isRelevantMatch()`.
+   - Else → skip and print "needs a manual image" rather than guessing — the JSON is left untouched in this case.
+3. Downloads → resizes to 600×600 on white → `img/cards/<id>.webp`.
+4. Updates `imageUrl` + `imageSourceUrl` on the card via `setImageFields()`.
 
-### 2. `scripts/images/fetch-missing-card-images.js` — batch runner (new)
+### 3. `scripts/images/fetch-missing-card-images.js` — batch runner
 
-Mirrors `fetch-missing-images.js` from the device pipeline: loop over every card in `data/sdcards.json` whose `imageUrl` is missing, or — for the backfill pass below — whose `imageUrl` points at a shared/fallback image, and call the single-card fetcher for each with a delay between calls (PAAPI rate limit is already enforced inside `amazon-api.js` via `delayIfNeeded()`, so this mainly needs to not run requests in parallel).
+**How to use:**
+- `node scripts/images/fetch-missing-card-images.js` — fetches every card with no `imageUrl`.
+- `node scripts/images/fetch-missing-card-images.js --backfill` — also re-fetches every card whose `imageUrl` is shared by more than one card (the placeholder-sharing problem described below).
 
-### 3. `scripts/validate-sdcards.js` — data validation (new, do this first — cheap, catches real bugs)
+Calls are sequential (PAAPI rate limiting already enforced by `delayIfNeeded()` inside `amazon-api.js`).
 
-Run as `npm run validate:cards`. Checks against `data/sdcards.json`:
+### 4. `scripts/validate-sdcards.js` — data validation
+
+**How to use:** `npm run validate:cards`. Checks against `data/sdcards.json`:
 - No duplicate `id`.
 - `tier` ∈ `{budget, recommended, professional, specialty}`.
 - `priceTier` ∈ `{Budget, Mid-Range, Premium, Specialty}`.
@@ -52,16 +62,16 @@ Run as `npm run validate:cards`. Checks against `data/sdcards.json`:
 - At least one of `amazonSearchUrl` / `affiliateUrl` is present.
 - Required fields present per card shape (`navCardProduct: true` cards need `vehicleBrand`/`partNumber`/the nav `specs` shape; regular cards need `type`/`specs.speedClass`/`availableCapacities`).
 
-This is what would have caught the `Specialized` vs `Specialty` and `tier: "premium"` typos fixed in this session, and the broken `sandisk-ultra-microsd.webp` reference, before they shipped.
+First real run caught 12 issues: 10 were `nintendo-switch/sandisk-*.webp` paths that didn't match the actual filenames on disk (fixed — see git history on `data/sdcards.json`), and 2 (`topesel-high-endurance`, `speederlash-standard`) have no image file and no resolvable Amazon listing (PAAPI search returned 0 results for both) — these need a manually supplied image.
 
-### 4. "Add SD card to dataset" workflow (the part Claude Code runs, not a script)
+### 5. "Add SD card to dataset" workflow (the part Claude Code runs, not a script)
 
 When the user says "add `<card>` to the dataset," do this:
 1. Generate a kebab-case `id` from brand + model; check it doesn't already exist in `data/sdcards.json` or `data/sdcards-ja.json`.
 2. Fill in the schema fields. If the user only gave a name, look up specs (speed class, UHS, A-rating, read/write speed, available capacities, typical price tier) via WebSearch/WebFetch on the manufacturer spec page before guessing — don't fabricate numbers.
 3. Append the entry with `Edit` (not a script rewrite) so JSON formatting stays consistent with the rest of the file.
 4. Run `node scripts/images/fetch-card-image.js <id>` to scrape the photo.
-5. Run `node scripts/validate-sdcards.js` to confirm the new entry is clean and the image landed.
+5. Run `npm run validate:cards` to confirm the new entry is clean and the image landed.
 6. Report back what was added and flag anything the scraper couldn't resolve (e.g. no Amazon listing found) so a manual image can be supplied.
 
 ## Known follow-up once the scraper exists

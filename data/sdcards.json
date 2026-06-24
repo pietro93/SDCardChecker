@@ -928,7 +928,8 @@
         64,
         128,
         256,
-        512
+        512,
+        1024
       ],
       "priceSymbol": "$$",
       "priceTier": "Mid-Range",
@@ -1417,6 +1418,208 @@
       "affiliateUrlAlt": null,
       "pros": "2-pack value. V30 + A1. Includes adapter. Good for security cameras and dash cams.",
       "cons": "64GB only. Generic brand.",
+      "tier": "budget"
+    },
+    {
+      "id": "prograde-digital-cfexpress-type-b-gold",
+      "name": "ProGrade Digital CFexpress Type B Gold",
+      "type": "CFexpress Type B",
+      "specs": {
+        "uhs": "None",
+        "speedClass": "VPG-400",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 3400 MB/s",
+        "writeSpeed": "Up to 3000 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        240,
+        512,
+        1024,
+        2048
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "amazonSearchUrl": "https://amazon.com/s?k=ProGrade+Digital+CFexpress+Type+B+Gold&tag=sd-cc-20",
+      "pros": "Industry-standard choice for Nikon Z8/Z9 and Canon R5 8K workflows. High sustained writes prevent buffer lockup.",
+      "cons": "Premium price; overkill for casual 4K shooters.",
+      "tier": "professional"
+    },
+    {
+      "id": "angelbird-av-pro-cfexpress-type-b-mk2",
+      "name": "Angelbird AV PRO CFexpress Type B MK2",
+      "type": "CFexpress Type B",
+      "specs": {
+        "uhs": "None",
+        "speedClass": "VPG-400",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 1785 MB/s",
+        "writeSpeed": "Up to 1550 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        1024,
+        2048,
+        4096
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "amazonSearchUrl": "https://amazon.com/s?k=Angelbird+AV+PRO+CFexpress+Type+B+MK2&tag=sd-cc-20",
+      "pros": "Best-in-class thermal management and sustained write consistency for long cinema takes (Z8/Z9, Lumix S1H).",
+      "cons": "No capacities under 1TB; less brand recognition outside cinema circles.",
+      "tier": "professional"
+    },
+    {
+      "id": "sony-tough-cfexpress-type-a",
+      "name": "Sony TOUGH CFexpress Type A (CEA-G Series)",
+      "type": "CFexpress Type A",
+      "specs": {
+        "uhs": "None",
+        "speedClass": "VPG-400",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 1800 MB/s",
+        "writeSpeed": "Up to 1700 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        80,
+        160,
+        240,
+        480,
+        960,
+        1920
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "amazonSearchUrl": "https://amazon.com/s?k=Sony+TOUGH+CFexpress+Type+A+CEA-G&tag=sd-cc-20",
+      "pros": "Native, IP57-rated choice for Sony FX3/FX30/A1/A7R V; handles internal 4K120 recording heat.",
+      "cons": "Expensive per gigabyte for the Type A form factor.",
+      "tier": "professional"
+    },
+    {
+      "id": "lexar-professional-cfexpress-type-a-gold",
+      "name": "Lexar Professional CFexpress Type A Gold Series",
+      "type": "CFexpress Type A",
+      "specs": {
+        "uhs": "None",
+        "speedClass": "VPG-400",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 1800 MB/s",
+        "writeSpeed": "Up to 1650 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        80,
+        160,
+        320,
+        2048
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+CFexpress+Type+A+Gold&tag=sd-cc-20",
+      "pros": "High-capacity Type A alternative for Sony FX3/A1 shooters who find 160GB cards limiting.",
+      "cons": "Earlier Gold-series batches ran hotter than Sony's native cards under sustained 4K120.",
+      "tier": "professional"
+    },
+    {
+      "id": "prograde-digital-sdxc-v90-cobalt",
+      "name": "ProGrade Digital SDXC UHS-II V90 Cobalt",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V90",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 300 MB/s",
+        "writeSpeed": "Up to 250 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "amazonSearchUrl": "https://amazon.com/s?k=ProGrade+Digital+SDXC+UHS-II+V90+Cobalt&tag=sd-cc-20",
+      "pros": "Trusted V90 alternative to Sony TOUGH G-Series for multi-slot bodies like the Canon R6 II and Fuji X-T5.",
+      "cons": "Premium pricing similar to Sony TOUGH G-Series.",
+      "tier": "professional"
+    },
+    {
+      "id": "silicon-power-superior-a2-microsd",
+      "name": "Silicon Power Superior A2 microSDXC",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 80 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512,
+        1024,
+        1500
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "amazonSearchUrl": "https://amazon.com/s?k=Silicon+Power+Superior+A2+microSDXC&tag=sd-cc-20",
+      "pros": "Budget king for Steam Deck and retro handhelds; A2 rating keeps game load times reasonable at a low price.",
+      "cons": "Lower sequential speeds than SanDisk/Samsung A2 cards at this price point.",
+      "tier": "budget"
+    },
+    {
+      "id": "kioxia-exceria",
+      "name": "Kioxia Exceria microSDHC",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "C10",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 10 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "amazonSearchUrl": "https://amazon.com/s?k=Kioxia+Exceria+microSDHC&tag=sd-cc-20",
+      "pros": "Cheap, reliable Class 10 card; plenty fast for low-bitrate use like firmware updates and game loading.",
+      "cons": "Capped at 64GB; no speed headroom for video.",
+      "tier": "budget"
+    },
+    {
+      "id": "samsung-evo-plus",
+      "name": "Samsung EVO Plus microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 160 MB/s",
+        "writeSpeed": "Up to 60 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "amazonSearchUrl": "https://amazon.com/s?k=Samsung+EVO+Plus+microSD&tag=sd-cc-20",
+      "pros": "Community-favorite for SD2Vita modding; reliable up to 512GB+ with FAT32/exFAT formatting.",
+      "cons": "Slower write speeds than Samsung PRO Plus.",
       "tier": "budget"
     }
     ]
