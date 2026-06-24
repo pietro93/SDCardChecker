@@ -8698,7 +8698,8 @@
         "akai-mpc-one-plus",
         "roland-sp-404mkii"
       ],
-      "notes": "Battery-powered standalone MPC, used in actual live sets. Streams audio from the card in real time, so card speed directly affects dropout risk during performance — the anchor device for this category's framing."
+      "notes": "Battery-powered standalone MPC, used in actual live sets. Streams audio from the card in real time, so card speed directly affects dropout risk during performance — the anchor device for this category's framing.",
+      "imageUrl": "/img/devices/music-production/akai-mpc-live-ii.webp"
     },
     {
       "id": "akai-mpc-one-plus",
@@ -8751,7 +8752,8 @@
         "akai-mpc-live-ii",
         "roland-sp-404mkii"
       ],
-      "notes": "Entry/mid standalone MPC workstation with a full-size SD slot. Same sample-streaming framing as the Live II but a tier down in price; steer to U3 full-size SD rather than premium UHS-II."
+      "notes": "Entry/mid standalone MPC workstation with a full-size SD slot. Same sample-streaming framing as the Live II but a tier down in price; steer to U3 full-size SD rather than premium UHS-II.",
+      "imageUrl": "/img/devices/music-production/akai-mpc-one-plus.webp"
     },
     {
       "id": "roland-sp-404mkii",
@@ -8807,7 +8809,8 @@
         "polyend-tracker-plus",
         "akai-mpc-live-ii"
       ],
-      "notes": "Extremely popular lo-fi/beat-making sampler. Distinct from the MPCs: the card is for import/export/backup, NOT live streaming, so the framing is reliability + correct formatting over speed. Roland publishes no hard capacity cap; 256-512GB is the community-confirmed safe range."
+      "notes": "Extremely popular lo-fi/beat-making sampler. Distinct from the MPCs: the card is for import/export/backup, NOT live streaming, so the framing is reliability + correct formatting over speed. Roland publishes no hard capacity cap; 256-512GB is the community-confirmed safe range.",
+      "imageUrl": "/img/devices/music-production/roland-sp-404mkii.webp"
     },
     {
       "id": "akai-mpc-x",
@@ -8864,7 +8867,8 @@
         "akai-mpc-one-plus",
         "roland-sp-404mkii"
       ],
-      "notes": "Flagship standalone MPC. Completes the MPC trio (One+ / Live II / X) for a tight internal-linking cluster. Higher-margin, library-heavy audience; same live-streaming framing, with a UHS-II note since the full-size slot physically accepts UHS-II (at UHS-I speeds)."
+      "notes": "Flagship standalone MPC. Completes the MPC trio (One+ / Live II / X) for a tight internal-linking cluster. Higher-margin, library-heavy audience; same live-streaming framing, with a UHS-II note since the full-size slot physically accepts UHS-II (at UHS-I speeds).",
+      "imageUrl": "/img/devices/music-production/akai-mpc-x.webp"
     },
     {
       "id": "polyend-tracker-plus",
@@ -8921,7 +8925,8 @@
         "roland-mc-707",
         "roland-sp-404mkii"
       ],
-      "notes": "Cult standalone tracker/sampler with a large, online community. Workflow is entirely microSD-based and streams from the card, so A1/A2 + FAT32 are the key angles. FAT32-only is a strong, distinct search-intent hook (the #1 'card not recognized' fix)."
+      "notes": "Cult standalone tracker/sampler with a large, online community. Workflow is entirely microSD-based and streams from the card, so A1/A2 + FAT32 are the key angles. FAT32-only is a strong, distinct search-intent hook (the #1 'card not recognized' fix).",
+      "imageUrl": "/img/devices/music-production/polyend-tracker-plus.webp"
     },
     {
       "id": "roland-mc-707",
@@ -8976,7 +8981,8 @@
         "roland-sp-404mkii",
         "akai-mpc-live-ii"
       ],
-      "notes": "Popular Roland groovebox. The headline angle is the strict 32GB SDHC limit — the same high-traffic 'why won't my big card work?' template that makes the Zoom H1n-VP page strong. Card stores/imports rather than streams live, so framing is capacity-compatibility over speed."
+      "notes": "Popular Roland groovebox. The headline angle is the strict 32GB SDHC limit — the same high-traffic 'why won't my big card work?' template that makes the Zoom H1n-VP page strong. Card stores/imports rather than streams live, so framing is capacity-compatibility over speed.",
+      "imageUrl": "/img/devices/music-production/roland-mc-707.webp"
     },
     {
       "id": "1010music-blackbox",
@@ -9033,7 +9039,8 @@
         "roland-sp-404mkii",
         "akai-mpc-live-ii"
       ],
-      "notes": "Compact cult sampler with a dedicated community. Strongest 'card quality directly limits performance' narrative in the batch: streams up to 32 voices from the card, and 1010music itself publishes A2/V30 recommendations — ideal for a why-specs section that genuinely justifies a premium card."
+      "notes": "Compact cult sampler with a dedicated community. Strongest 'card quality directly limits performance' narrative in the batch: streams up to 32 voices from the card, and 1010music itself publishes A2/V30 recommendations — ideal for a why-specs section that genuinely justifies a premium card.",
+      "imageUrl": "/img/devices/music-production/1010music-blackbox.webp"
     },
     {
       "id": "wyze-cam-v3",
@@ -9446,7 +9453,7 @@
     }
   ],
   "metadata": {
-    "generated": "2026-06-23T16:46:47.688Z",
+    "generated": "2026-06-24T08:32:42.342Z",
     "totalDevices": 194,
     "categories": [
       "3D Printers & Fabrication",

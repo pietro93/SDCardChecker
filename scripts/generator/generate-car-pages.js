@@ -128,7 +128,7 @@ function generateCarPages(distPath) {
         : `<div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative" style="background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%); min-height: 220px;">
                 <div class="hero-overlay" style="background: linear-gradient(135deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.1) 100%);">
                     <div class="text-center px-4">
-                        <i class="fas fa-car-side text-white text-4xl mb-3 opacity-80"></i>
+                        <img src="/img/brand/icon-car.webp" alt="" width="64" height="64" style="margin:0 auto 0.75rem; opacity:0.9;" loading="lazy">
                         <h1 class="hero-title" style="color: #ffffff;">
                             Best Navigation SD Card for ${vehicle.carModel}
                         </h1>
