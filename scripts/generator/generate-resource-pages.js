@@ -31,6 +31,7 @@ function generateResourcePage(templatePath, distPath, fileName, amazonProductTyp
 
     // Replace placeholders
     let html = template
+        .replace(/{{BASE_URL}}/g, "https://sdcardchecker.com")
         .replace(/{{SIDEBAR}}/g, generateSidebar())
         .replace(/{{HEADER}}/g, generateHeader())
         .replace(/{{FOOTER}}/g, generateFooter())
