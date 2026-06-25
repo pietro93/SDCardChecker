@@ -9,6 +9,7 @@ const { generateFAQs, mergeFAQs } = require("./generateFAQs");
 const { generateAmazonBadgesSection } = require("./amazon-badges-generator");
 const { generatePromotedCardSection } = require("./promotion-generator");
 const { getExplanation } = require("../lib/enrichment-loader");
+const { extractBrand, getQualifyingBrands, slugify } = require("./generate-category-pages");
 
 const srcPath = path.join(__dirname, "../../src");
 
@@ -189,6 +190,10 @@ function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, isJapanese
             // Verified badge (check if brand is verified - default to true for now)
             const confirmedBadge = `<span class="confirmed-badge" title="${labels.confirmed}"></span>`;
 
+            const reviewLinkHtml = (!isJapanese && brand.richDescription)
+                ? `<a href="/cards/${brand.id}/" class="table-card-review-link" style="font-size:0.8rem; color:#2563eb; text-decoration:underline;">Full Review</a>`
+                : "";
+
             return `
             <tr>
             <td class="table-card-cell">
@@ -198,6 +203,7 @@ function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, isJapanese
             </div>
             <div class="table-card-name">${brand.name}</div>
             </a>
+            ${reviewLinkHtml}
             </td>
             <td data-label="${labels.confirmed}" class="text-center">${confirmedBadge}</td>
             <td data-label="${labels.speedClass}">${brand.speed}</td>
@@ -246,12 +252,16 @@ function generateEnrichedCardDetails(brandReferences, sdcardsMap, isJapanese = f
                 ? card.bestFor.join(", ")
                 : "";
 
+            const cardNameHtml = !isJapanese
+                ? `<a href="/cards/${card.id}/" class="text-slate-900 hover:text-blue-600 hover:underline">${card.name}</a>`
+                : card.name;
+
             return `
             <div class="card-enrichment-detail bg-slate-50 border border-slate-200 rounded-lg p-5 mb-4">
                 <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
-                    <i class="fas fa-star text-amber-500"></i> ${card.name}
+                    <i class="fas fa-star text-amber-500"></i> ${cardNameHtml}
                 </h4>
-                
+
                 <div class="space-y-3 text-sm">
                     ${card.richDescription ? `
                     <div class="bg-white p-3 rounded border-l-4 border-blue-500">
@@ -548,14 +558,32 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     // Get category display name (English or translated)
     const categoryDisplayName = getCategoryDisplayName(device.category, isJapanese);
 
+    // Subcategory pages (e.g. /categories/drones/dji/) only exist for English brands
+    // with at least 3 devices in their category - link up to them when applicable
+    let brandCrumb = null;
+    if (!isJapanese) {
+        const brand = extractBrand(device.name);
+        const categoryDevices = allDevices.filter((d) => d.category === device.category);
+        const qualifies = getQualifyingBrands(categoryDevices).some((b) => b.brand === brand);
+        if (qualifies) {
+            brandCrumb = { name: brand, url: `/categories/${categorySlug}/${slugify(brand)}/` };
+        }
+    }
+
     // Generate breadcrumb schema
     const breadcrumbPath = isJapanese ? `/ja/categories/${categorySlug}/` : `/categories/${categorySlug}/`;
     const breadcrumbs = [
         { name: isJapanese ? "ホーム" : "Home", url: isJapanese ? "/ja/" : "/" },
         { name: categoryDisplayName, url: breadcrumbPath },
+        ...(brandCrumb ? [brandCrumb] : []),
         { name: device.name, url: deviceUrlPath }
     ];
     const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
+
+    const brandBreadcrumbHTML = brandCrumb
+        ? `<a href="${brandCrumb.url}" class="text-blue-600 hover:underline">${brandCrumb.name}</a>
+                <i class="fas fa-chevron-right text-xs"></i>`
+        : "";
 
     const deviceIcon = getCategoryIcon(device.category);
     const categoryImageIcon = getCategoryImageIcon(device.category);
@@ -601,6 +629,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{RELATED_DEVICES_SECTION}}/g, relatedDevicesSection)
         .replace(/{{FAQ_SCHEMA}}/g, faqSchema)
         .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
+        .replace(/{{BRAND_BREADCRUMB_HTML}}/g, brandBreadcrumbHTML)
         .replace(/{{PRODUCT_SCHEMA}}/g, productSchema)
         .replace(/{{SIDEBAR}}/g, components.generateSidebar())
         .replace(/{{HEADER}}/g, components.generateHeader())

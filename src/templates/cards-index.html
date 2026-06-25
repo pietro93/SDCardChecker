@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SD Card Reviews | Specs, Speed Ratings & Best Uses</title>
+  <meta name="description" content="In-depth reviews of the SD and microSD cards we recommend most — speed class, UHS rating, capacity options, and which devices each card suits best.">
+  <link rel="canonical" href="https://sdcardchecker.com/cards/">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SD Card Reviews | Specs, Speed Ratings & Best Uses">
+  <meta property="og:description" content="In-depth reviews of the SD and microSD cards we recommend most — speed class, UHS rating, capacity options, and which devices each card suits best.">
+  <meta property="og:image" content="https://sdcardchecker.com/img/og-category.webp">
+  <meta property="og:url" content="https://sdcardchecker.com/cards/">
+  <meta property="og:site_name" content="SD Card Checker">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SD Card Reviews | Specs, Speed Ratings & Best Uses">
+  <meta name="twitter:description" content="In-depth reviews of the SD and microSD cards we recommend most — speed class, UHS rating, capacity options, and which devices each card suits best.">
+  <meta name="twitter:image" content="https://sdcardchecker.com/img/og-category.webp">
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {{BREADCRUMB_SCHEMA}}
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  {{HEADER}}
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">SD Cards</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="mb-12 flex items-center gap-6">
+        <div class="category-icon-hero" style="width:80px; height:80px; display:flex; align-items:center; justify-content:center; background:#eff6ff; border-radius:1rem;">
+          <i class="fas fa-sd-card" style="font-size: 2rem; color: #2563eb;"></i>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900">
+          SD Card Reviews
+        </h1>
+      </div>
+
+      <!-- Intro Section -->
+      <section class="category-intro-section bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-lg p-6 mb-12 shadow-sm">
+        <p class="text-lg text-slate-800 leading-relaxed font-medium">Full specs, speed ratings, and buying guidance for the SD and microSD cards we recommend across our device guides. Pick a card below for read/write speeds, capacity options, and which devices it's best suited for.</p>
+      </section>
+
+      <!-- Card Grid -->
+      <section>
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">All Reviewed Cards</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {{CARD_TILES_HTML}}
+        </div>
+      </section>
+    </main>
+
+    {{SIDEBAR}}
+  </div>
+
+  {{FOOTER}}
+
+  <style>
+    .card-tile {
+      @apply bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all text-center overflow-hidden p-5 flex flex-col items-center;
+    }
+    .card-tile-image { width: 110px; height: 110px; margin: 0 auto 0.75rem; }
+    .card-tile-image img { width: 100%; height: 100%; object-fit: contain; }
+    .card-tile-name { @apply font-bold text-slate-900 mb-1 text-base; }
+    .card-tile-meta { @apply text-sm text-slate-600 mb-3; }
+    .card-tile-link { @apply text-blue-600 hover:text-blue-700 font-semibold transition-colors text-sm; }
+  </style>
+</body>
+</html>

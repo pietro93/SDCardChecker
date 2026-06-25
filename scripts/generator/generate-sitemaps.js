@@ -285,6 +285,11 @@ function generateEnglishSitemap(allDevices, allReaders) {
   if (enrichedCardIds.length > 0) {
     sitemap += `
   <!-- SD Card Pages -->
+  <url>
+    <loc>https://sdcardchecker.com/cards/</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <priority>0.85</priority>
+  </url>
 `;
     enrichedCardIds.forEach((id) => {
       sitemap += `  <url>

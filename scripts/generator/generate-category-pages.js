@@ -356,4 +356,4 @@ async function generateSubcategoryPages(allDevices, distPath) {
   console.log(`  ✓ Generated ${count} subcategory pages`);
 }
 
-module.exports = { generateCategoryPages, generateSubcategoryPages, getQualifyingBrands };
+module.exports = { generateCategoryPages, generateSubcategoryPages, getQualifyingBrands, extractBrand, slugify };
