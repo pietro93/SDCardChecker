@@ -1,4 +1,43 @@
 {
+  "sandisk-extreme-microsd": {
+    "id": "sandisk-extreme-microsd",
+    "name": "SanDisk Extreme microSD",
+    "richDescription": "The SanDisk Extreme microSD is the best-selling microSD card on Amazon, pairing V30 video speed with A2 app performance and read speeds up to 190 MB/s. It's a dependable all-rounder for 4K recording, app storage, and everyday file transfers, with capacities ranging from 32GB up to 1TB.",
+    "useCase": "Smartphone, drone, and action camera users who want one reliable card for both 4K video and app storage",
+    "bestFor": [
+      "Action Cameras",
+      "Drones",
+      "Smartphones & Tablets",
+      "Mirrorless Cameras"
+    ],
+    "alternatives": "Step up to the SanDisk Extreme PRO for higher sustained write speeds, or down to the Samsung EVO Select if 4K recording isn't a priority and price matters more.",
+    "generatedAt": "2026-06-25T00:00:00.000Z"
+  },
+  "sandisk-extreme-microsd-action-cam": {
+    "id": "sandisk-extreme-microsd-action-cam",
+    "name": "SanDisk Extreme microSD (Action Cam Edition)",
+    "richDescription": "This higher-speed SanDisk Extreme microSD variant trades the A2 app performance rating for faster sequential speeds — up to 245 MB/s read and 170 MB/s write — making it the better pick for sustained 4K/5.3K action cam footage where buffer clearing matters more than app load times.",
+    "useCase": "Action camera and drone shooters who need fast sustained write speeds for high-bitrate 4K/5.3K footage",
+    "bestFor": [
+      "Action Cameras",
+      "Drones"
+    ],
+    "alternatives": "Choose the standard SanDisk Extreme microSD instead if you also use the card for app storage on a phone or Switch, since it carries the A2 rating this edition lacks.",
+    "generatedAt": "2026-06-25T00:00:00.000Z"
+  },
+  "sandisk-ultra-microsd": {
+    "id": "sandisk-ultra-microsd",
+    "name": "SanDisk Ultra microSD",
+    "richDescription": "The SanDisk Ultra microSD is a high-volume budget pick offering read speeds up to 195 MB/s for quick transfers and app loading. Its lighter write performance and V10 rating make it better suited to photos and everyday storage than sustained 4K video.",
+    "useCase": "Budget-conscious smartphone and tablet users who want fast file transfers without 4K video demands",
+    "bestFor": [
+      "Smartphones & Tablets",
+      "Dash Cams",
+      "Drones"
+    ],
+    "alternatives": "Upgrade to the SanDisk Extreme microSD if you need V30-rated write speeds for 4K video; stick with the Ultra for photos and casual use where price is the priority.",
+    "generatedAt": "2026-06-25T00:00:00.000Z"
+  },
   "lexar-professional-silver-microsd": {
     "id": "lexar-professional-silver-microsd",
     "name": "Lexar Professional Silver (1066x)",

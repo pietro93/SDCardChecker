@@ -39,7 +39,9 @@ summary doc. The sections below flag which docs are still current.
 - [DEVICE_AND_CARD_NAME_LIST.md](DEVICE_AND_CARD_NAME_LIST.md) — generated side-by-side name list of every device and SD card in the dataset; regenerate when the datasets change.
 - [SD_CARD_IMAGE_SCRAPER_HANDOFF.md](SD_CARD_IMAGE_SCRAPER_HANDOFF.md) — ⭐ built and current: `npm run validate:cards`, `scripts/images/fetch-card-image.js <id>`, `scripts/images/fetch-missing-card-images.js [--backfill]`, and the "add a card to the dataset" workflow Claude Code follows.
 - [CARD_PROMOTION_SYSTEM.md](CARD_PROMOTION_SYSTEM.md), [PROMOTION_DEPLOYMENT.md](PROMOTION_DEPLOYMENT.md), [PROMOTION_QUICK_REFERENCE.md](PROMOTION_QUICK_REFERENCE.md), [KINGSTON_PROMOTION_STRATEGY.md](KINGSTON_PROMOTION_STRATEGY.md) — promoted/sponsored card placement.
-- [SD_CARD_COMPARISON_SPEC.md](SD_CARD_COMPARISON_SPEC.md) — comparison tool spec.
+- [SD_CARD_COMPARISON_SERVICE_DESIGN.md](SD_CARD_COMPARISON_SERVICE_DESIGN.md) — ⭐ current, approved comparison tool design (decision log, scope, UX/SEO notes).
+- [SD_CARD_COMPARISON_KANBAN.md](SD_CARD_COMPARISON_KANBAN.md) — implementation/SEO/UX checklist for the comparison tool.
+- [SD_CARD_COMPARISON_SPEC.md](SD_CARD_COMPARISON_SPEC.md) — superseded original draft, kept for history.
 - [SD_CARD_READERS_DATASET_DESIGN.md](SD_CARD_READERS_DATASET_DESIGN.md), [SDCARD_READERS_KANBAN.md](SDCARD_READERS_KANBAN.md), [READER_DEVICE_IMPLEMENTATION.md](READER_DEVICE_IMPLEMENTATION.md) — SD card reader feature.
 - [NINTENDO_BRANDED_CARDS_IMPLEMENTATION.md](NINTENDO_BRANDED_CARDS_IMPLEMENTATION.md), [NINTENDO_BRANDED_CARDS_GRID_COMPONENT.md](NINTENDO_BRANDED_CARDS_GRID_COMPONENT.md), [NINTENDO_BRANDED_CARDS_GRID_INTEGRATION.md](NINTENDO_BRANDED_CARDS_GRID_INTEGRATION.md), [NINTENDO_BRANDED_CARDS_BUILD_INTEGRATION_COMPLETE.md](NINTENDO_BRANDED_CARDS_BUILD_INTEGRATION_COMPLETE.md) — Nintendo Switch card line feature.
 - [VIOFO_A229_CATEGORY_FIX.md](VIOFO_A229_CATEGORY_FIX.md), [DASHCAM_EXAMPLES_FROM_DEVICES.JSON.md](DASHCAM_EXAMPLES_FROM_DEVICES.JSON.md), [list-removed-dashcams.md](list-removed-dashcams.md) — dashcam category fixes/examples.

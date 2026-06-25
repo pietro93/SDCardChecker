@@ -1,5 +1,7 @@
 # SD Card Comparison Tool - Specifications & Recommendations
 
+> **⚠️ SUPERSEDED — kept for historical reference only.** See [SD_CARD_COMPARISON_SERVICE_DESIGN.md](SD_CARD_COMPARISON_SERVICE_DESIGN.md) and [SD_CARD_COMPARISON_KANBAN.md](SD_CARD_COMPARISON_KANBAN.md) for the current, approved design. In particular, this doc's "pre-generate static vs-pages for SEO" strategy was reconsidered and rejected — see the Decision Log in the new doc.
+
 **Status:** Design Phase (Pre-Implementation)  
 **Created:** November 13, 2025  
 **Owner:** TBD

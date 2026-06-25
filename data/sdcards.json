@@ -30,6 +30,33 @@
       "tier": "recommended"
     },
     {
+      "id": "sandisk-extreme-microsd-action-cam",
+      "name": "SanDisk Extreme microSD (Action Cam Edition)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 245 MB/s",
+        "writeSpeed": "Up to 170 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/sandisk-extreme-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+microSD+245MB+Action+Cam&tag=sd-cc-20",
+      "pros": "Highest sustained read/write speeds in the Extreme microSD line. Built for 4K/5.3K action cam footage.",
+      "cons": "No A2 app performance rating — tuned for sustained video, not app storage.",
+      "tier": "recommended",
+      "notes": "Distinct higher-speed SKU from the standard SanDisk Extreme microSD (this one foregoes A2 rating for faster sequential speeds); sold separately and marketed specifically for action cameras."
+    },
+    {
       "id": "samsung-evo-select-microsd",
       "name": "Samsung EVO Select (Blue)",
       "type": "microSD",
@@ -217,9 +244,9 @@
       "type": "microSD",
       "specs": {
         "uhs": "UHS-I",
-        "speedClass": "C10",
+        "speedClass": "V10",
         "appPerformance": "A1",
-        "readSpeed": "Up to 120 MB/s",
+        "readSpeed": "Up to 195 MB/s",
         "writeSpeed": "Up to 20 MB/s",
         "endurance": "Standard"
       },
@@ -841,8 +868,8 @@
         "uhs": "UHS-I",
         "speedClass": "V30",
         "appPerformance": "N/A",
-        "readSpeed": "Up to 200 MB/s",
-        "writeSpeed": "Up to 140 MB/s",
+        "readSpeed": "Up to 250 MB/s",
+        "writeSpeed": "Up to 120 MB/s",
         "endurance": "Standard"
       },
       "availableCapacities": [
@@ -858,7 +885,8 @@
       "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+SD+UHS-I&tag=sd-cc-20",
       "pros": "Fastest UHS-I card available.",
       "cons": "Premium pricing.",
-      "tier": "recommended"
+      "tier": "recommended",
+      "notes": "Specs reflect the current-generation SDSDXXJ SKU (250 MB/s read / 120 MB/s write). An earlier SDSDXXD revision trades a slightly lower read speed for a higher 140 MB/s write — check the exact SKU if write speed matters more than read speed for your use case."
     },
     {
       "id": "kingston-high-endurance",
