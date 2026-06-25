@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{CARD_TITLE}}</title>
+    <meta name="description" content="{{SEO_DESCRIPTION}}">
+    <link rel="canonical" href="{{CARD_URL}}">
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{OG_TITLE}}">
+    <meta property="og:description" content="{{SEO_DESCRIPTION}}">
+    <meta property="og:url" content="{{CARD_URL}}">
+    <meta property="og:image" content="{{HERO_IMAGE_ABS}}">
+    <meta property="og:site_name" content="SD Card Checker">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{OG_TITLE}}">
+    <meta name="twitter:description" content="{{SEO_DESCRIPTION}}">
+    <meta name="twitter:image" content="{{HERO_IMAGE_ABS}}">
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {{BREADCRUMB_SCHEMA}}
+    </script>
+
+    <!-- Product Schema -->
+    <script type="application/ld+json">
+    {{PRODUCT_SCHEMA}}
+    </script>
+
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/assets/css/modern.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+    {{HEADER}}
+
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <nav class="text-sm text-slate-600 flex items-center gap-2">
+                <a href="/" class="text-blue-600 hover:underline">Home</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="/cards/" class="text-blue-600 hover:underline">SD Cards</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-slate-900">{{CARD_NAME}}</span>
+            </nav>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+        <!-- Main Content -->
+        <main class="flex-1">
+            <!-- Hero -->
+            <div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative">
+                <img src="{{HERO_IMAGE}}" alt="{{CARD_NAME}} SD card" title="{{CARD_NAME}}" class="w-full object-cover hero-image" width="1200" height="350" loading="lazy" />
+                <div class="hero-overlay">
+                    <h1 class="hero-title" style="color: #ffffff;">{{CARD_NAME}} Review &amp; Specs</h1>
+                </div>
+            </div>
+
+            <!-- Rich Description -->
+            <div class="mb-12">
+                <p class="text-lg text-slate-700 leading-relaxed">{{RICH_DESCRIPTION}}</p>
+            </div>
+
+            <!-- Spec Sheet -->
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 mb-8">
+                <h2 class="text-lg font-bold text-slate-900 mb-4">{{CARD_NAME}} Specifications</h2>
+                <ul class="space-y-0">
+                    {{SPEC_ROWS}}
+                </ul>
+            </div>
+
+            <!-- Use Case / Best For -->
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">Who Is This Card For?</h2>
+                <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6">
+                    <div class="flex gap-3 mb-4">
+                        <span class="font-semibold text-slate-900 flex-shrink-0">Target User:</span>
+                        <span class="text-slate-700">{{USE_CASE}}</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        {{BEST_FOR_BADGES}}
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pros & Cons -->
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">Pros &amp; Cons</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6">
+                        <h4 class="font-semibold text-emerald-700 mb-2 flex items-center gap-2"><i class="fas fa-check-circle"></i> Pros</h4>
+                        <p class="text-slate-700">{{PROS}}</p>
+                    </div>
+                    {{CONS_BLOCK}}
+                </div>
+            </section>
+
+            <!-- Alternatives -->
+            {{ALTERNATIVES_BLOCK}}
+
+            <!-- Where to Buy -->
+            <section id="buy" class="mb-16 scroll-mt-20">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">Where to Buy</h2>
+                <p class="text-xs text-slate-500 mb-4 opacity-70">This website contains affiliate links. We may earn a small commission when you purchase through our links at no extra cost to you.</p>
+                <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6 flex flex-col sm:flex-row items-center gap-6">
+                    <img src="{{HERO_IMAGE}}" alt="{{CARD_NAME}}" width="120" height="120" loading="lazy" style="object-fit: contain;" />
+                    <div class="flex-1">
+                        <div class="font-bold text-lg text-slate-900">{{CARD_NAME}}</div>
+                        <div class="text-slate-600 mb-3">{{PRICE_DISPLAY}}</div>
+                        <a href="{{AMAZON_URL}}" target="_blank" rel="nofollow sponsored" class="btn-check-price inline-flex">
+                            <i class="fas fa-shopping-cart"></i> Check Price on Amazon
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recommended For Devices -->
+            {{RECOMMENDED_DEVICES_BLOCK}}
+        </main>
+
+        {{SIDEBAR}}
+    </div>
+
+    {{FOOTER}}
+
+    <script src="/assets/js/search.js"></script>
+
+    <style>
+        .hero-image-container { position: relative; }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        .hero-title {
+            @apply text-3xl md:text-4xl font-bold text-center px-4;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.5);
+            filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+        }
+
+        .best-for-badge {
+            @apply inline-block bg-blue-50 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full border border-blue-200;
+        }
+
+        .price-badge {
+            display: inline-block; padding: 0.15rem 0.3rem; border-radius: 0.375rem;
+            font-size: 0.95rem; font-weight: 900; text-align: center;
+        }
+
+        .btn-check-price {
+            display: inline-flex; align-items: center; justify-content: center; gap: 0.125rem;
+            background-color: #f59e0b; color: white; font-weight: 700; padding: 0.65rem 1rem;
+            border-radius: 0.375rem; font-size: 0.95rem; transition: all 0.2s ease;
+            text-align: center; text-decoration: none; border: none; cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); white-space: nowrap; min-height: 44px;
+        }
+        .btn-check-price:hover { background-color: #d97706; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); }
+        .btn-check-price i { font-size: 0.85rem; margin-right: 0.15rem; }
+
+        .device-card { @apply bg-white rounded-lg p-4 border border-slate-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all text-center; }
+        .device-card-name { @apply font-black text-slate-900 text-lg; }
+    </style>
+</body>
+
+</html>

@@ -7,7 +7,7 @@
 
 const path = require("path");
 const fs = require("fs");
-const { readJSON, writeFile } = require("./helpers");
+const { readJSON, writeFile, loadSDCardEnrichment } = require("./helpers");
 
 // Paths
 const devicesPath = path.join(__dirname, "../../data/devices.json");
@@ -211,6 +211,29 @@ function generateEnglishSitemap(allDevices, allReaders) {
 `;
   });
 
+  // Add subcategory pages (e.g. /categories/drones/dji/)
+  const { getQualifyingBrands } = require("./generate-category-pages");
+  const byCategory = {};
+  allDevices.forEach((device) => {
+    if (!byCategory[device.category]) byCategory[device.category] = [];
+    byCategory[device.category].push(device);
+  });
+  sitemap += `
+  <!-- Subcategories -->
+`;
+  Object.keys(byCategory).sort().forEach((category) => {
+    const categorySlug = category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
+    getQualifyingBrands(byCategory[category]).forEach(({ brand }) => {
+      const brandSlug = brand.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
+      sitemap += `  <url>
+    <loc>https://sdcardchecker.com/categories/${categorySlug}/${brandSlug}/</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <priority>0.85</priority>
+  </url>
+`;
+    });
+  });
+
   // Add device pages
   sitemap += `
   <!-- Device Pages -->
@@ -253,6 +276,24 @@ function generateEnglishSitemap(allDevices, allReaders) {
     } catch (e) {
       console.warn("  Could not parse cars-navigation.json for sitemap");
     }
+  }
+
+  // Add SD card spec/review pages — gated to cards with real enrichment content
+  // (same gate generate-card-pages.js uses), so the sitemap never references a
+  // /cards/<id>/ page that wasn't actually built.
+  const enrichedCardIds = Object.keys(loadSDCardEnrichment());
+  if (enrichedCardIds.length > 0) {
+    sitemap += `
+  <!-- SD Card Pages -->
+`;
+    enrichedCardIds.forEach((id) => {
+      sitemap += `  <url>
+    <loc>https://sdcardchecker.com/cards/${id}/</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <priority>0.75</priority>
+  </url>
+`;
+    });
   }
 
   // Add resource and legal pages

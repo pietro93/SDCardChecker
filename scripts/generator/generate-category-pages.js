@@ -9,6 +9,36 @@ const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSid
 
 const srcPath = path.join(__dirname, "../../src");
 
+const MIN_SUBCATEGORY_DEVICES = 3;
+// Manufacturer names that span two words; checked before falling back to the first word of the device name
+const TWO_WORD_BRANDS = ["Bambu Lab", "Holy Stone", "Raspberry Pi"];
+
+function slugify(str) {
+  return str.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
+}
+
+function extractBrand(deviceName) {
+  for (const brand of TWO_WORD_BRANDS) {
+    if (deviceName.startsWith(brand + " ")) return brand;
+  }
+  return deviceName.split(" ")[0];
+}
+
+/**
+ * Group devices by brand and keep only brands with enough devices to justify a subcategory page
+ */
+function getQualifyingBrands(devices) {
+  const byBrand = {};
+  devices.forEach((device) => {
+    const brand = extractBrand(device.name);
+    if (!byBrand[brand]) byBrand[brand] = [];
+    byBrand[brand].push(device);
+  });
+  return Object.entries(byBrand)
+    .filter(([, brandDevices]) => brandDevices.length >= MIN_SUBCATEGORY_DEVICES)
+    .map(([brand, brandDevices]) => ({ brand, devices: brandDevices }));
+}
+
 /**
 * Get device image URL with fallback for missing files
 */
@@ -125,6 +155,28 @@ return (
  }
 
 /**
+ * Generate "Browse by brand" links to qualifying subcategory pages
+ */
+function generateSubcategoryLinksHTML(category, devices) {
+  const qualifyingBrands = getQualifyingBrands(devices);
+  if (qualifyingBrands.length === 0) return "";
+
+  const categorySlug = slugify(category);
+  const links = qualifyingBrands
+    .map(({ brand }) => {
+      const brandSlug = slugify(brand);
+      return `<a href="/categories/${categorySlug}/${brandSlug}/" class="px-4 py-2 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-blue-500 hover:bg-blue-50 font-medium text-sm transition-all duration-200">${brand}</a>`;
+    })
+    .join("");
+
+  return `
+      <div class="mb-8 flex flex-wrap gap-3 items-center">
+        <div class="text-sm font-semibold text-slate-700 mr-2">Browse by brand:</div>
+        ${links}
+      </div>`;
+}
+
+/**
  * Generate single category page
  */
 function generateCategoryPage(category, devices, template) {
@@ -158,6 +210,7 @@ const categoryIntro = getCategoryIntro(category);
         .replace(/{{CATEGORY_NAME}}/g, category)
         .replace(/{{CATEGORY_ICON}}/g, categoryIcon)
         .replace(/{{CATEGORY_INTRO}}/g, categoryIntro)
+        .replace(/{{SUBCATEGORY_LINKS}}/g, generateSubcategoryLinksHTML(category, devices))
         .replace(/{{DEVICE_CARDS_HTML}}/g, deviceCardsHTML)
         .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
         .replace(/{{SIDEBAR}}/g, generateSidebar())
@@ -212,4 +265,95 @@ async function generateCategoryPages(allDevices, distPath) {
     console.log(`  ✓ Generated ${Object.keys(grouped).length} category pages`);
 }
 
-module.exports = { generateCategoryPages };
+/**
+ * Get subcategory introduction text
+ */
+function getSubcategoryIntro(brand, category) {
+  return `Browse our SD card recommendations for ${brand} ${category} devices — compare speeds, capacities, and prices to find the right card for your ${brand} gear.`;
+}
+
+/**
+ * Generate single subcategory (category + brand) page
+ */
+function generateSubcategoryPage(category, brand, devices, template) {
+  const baseUrl = "https://sdcardchecker.com";
+  const categorySlug = slugify(category);
+  const brandSlug = slugify(brand);
+  const subcategoryUrl = `${baseUrl}/categories/${categorySlug}/${brandSlug}/`;
+  const subcategoryTitle = `Best SD Cards for ${brand} ${category} | SD Card Checker`;
+  const subcategoryIntro = getSubcategoryIntro(brand, category);
+  const subcategoryDescription = subcategoryIntro.length > 155
+    ? subcategoryIntro.substring(0, 155) + "..."
+    : subcategoryIntro;
+  const deviceCardsHTML = generateDeviceCards(devices);
+
+  const breadcrumbs = [
+    { name: "Home", url: "/" },
+    { name: category, url: `/categories/${categorySlug}/` },
+    { name: brand, url: `/categories/${categorySlug}/${brandSlug}/` },
+  ];
+  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
+  const categoryIcon = getCategoryIcon(category);
+
+  return template
+    .replace(/{{SUBCATEGORY_TITLE}}/g, subcategoryTitle)
+    .replace(/{{SUBCATEGORY_DESCRIPTION}}/g, subcategoryDescription)
+    .replace(/{{SUBCATEGORY_URL}}/g, subcategoryUrl)
+    .replace(/{{CATEGORY_NAME}}/g, category)
+    .replace(/{{CATEGORY_SLUG}}/g, categorySlug)
+    .replace(/{{BRAND_NAME}}/g, brand)
+    .replace(/{{CATEGORY_ICON}}/g, categoryIcon)
+    .replace(/{{SUBCATEGORY_INTRO}}/g, subcategoryIntro)
+    .replace(/{{DEVICE_CARDS_HTML}}/g, deviceCardsHTML)
+    .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
+    .replace(/{{SIDEBAR}}/g, generateSidebar())
+    .replace(/{{HEADER}}/g, generateHeader())
+    .replace(/{{FOOTER}}/g, generateFooter())
+    .replace(/{{GROW_SCRIPT}}/g, generateGrowScript())
+    .replace(/{{AFFILIATE_DISCLOSURE}}/g, "");
+}
+
+/**
+ * Generate subcategory pages for brands with at least MIN_SUBCATEGORY_DEVICES
+ * devices within a category, e.g. /categories/drones/dji/
+ */
+async function generateSubcategoryPages(allDevices, distPath) {
+  console.log("Generating subcategory pages...");
+
+  let subcategoryTemplate = readTemplate(
+    path.join(srcPath, "templates/subcategory.html")
+  );
+  subcategoryTemplate = processIncludes(subcategoryTemplate, path.join(srcPath, "templates"));
+
+  const grouped = {};
+  allDevices.forEach((device) => {
+    if (!grouped[device.category]) {
+      grouped[device.category] = [];
+    }
+    grouped[device.category].push(device);
+  });
+
+  let count = 0;
+  Object.keys(grouped)
+    .sort()
+    .forEach((category) => {
+      getQualifyingBrands(grouped[category]).forEach(({ brand, devices }) => {
+        const subcategoryHTML = generateSubcategoryPage(category, brand, devices, subcategoryTemplate);
+        const categorySlug = slugify(category);
+        const brandSlug = slugify(brand);
+        const subcategoryPath = path.join(
+          distPath,
+          "categories",
+          categorySlug,
+          brandSlug,
+          "index.html"
+        );
+        writeFile(subcategoryPath, subcategoryHTML);
+        count++;
+      });
+    });
+
+  console.log(`  ✓ Generated ${count} subcategory pages`);
+}
+
+module.exports = { generateCategoryPages, generateSubcategoryPages, getQualifyingBrands };

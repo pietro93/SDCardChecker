@@ -10,7 +10,7 @@ const fs = require("fs");
 const { readJSON } = require("./helpers");
 const { copyAssets } = require("./copy-assets");
 const { generateDevicePages } = require("./generate-device-pages");
-const { generateCategoryPages } = require("./generate-category-pages");
+const { generateCategoryPages, generateSubcategoryPages } = require("./generate-category-pages");
 const { generateCategoryPagesJa } = require("./generate-category-pages-ja");
 const { generateCategoriesIndexPages } = require("./generate-categories-index");
 const { generateResourcePages } = require("./generate-resource-pages");
@@ -24,6 +24,7 @@ const { generateRedirects } = require("./generate-redirects");
 const { generateEnglishSitemap } = require("./generate-sitemaps");
 const { generateCarPages } = require("./generate-car-pages");
 const { generateCarsIndex } = require("./generate-cars-index");
+const { generateCardPages } = require("./generate-card-pages");
 
 // Paths
 const dataPath = path.join(__dirname, "../../data/devices.json");
@@ -122,6 +123,10 @@ async function build() {
     await generateCategoryPages(allDevices, distPath);
     console.log();
 
+    // 4.1. Generate Subcategory Pages (e.g. /categories/drones/dji/)
+    await generateSubcategoryPages(allDevices, distPath);
+    console.log();
+
     // 4.2. Generate Japanese Category Pages
     await generateCategoryPagesJa(allDevices, distPath);
     console.log();
@@ -160,6 +165,10 @@ async function build() {
 
     // 7.5. Generate Car Navigation Index Page (/cars/)
     generateCarsIndex(distPath);
+    console.log();
+
+    // 7.6. Generate SD Card spec/review pages (/cards/<id>/), gated to enriched cards only
+    await generateCardPages(allDevices, distPath);
     console.log();
 
     // 8. Generate URL Redirects for SEO migration
