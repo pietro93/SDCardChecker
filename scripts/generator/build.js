@@ -26,6 +26,7 @@ const { generateCarPages } = require("./generate-car-pages");
 const { generateCarsIndex } = require("./generate-cars-index");
 const { generateCardPages } = require("./generate-card-pages");
 const { generateCardsIndex } = require("./generate-cards-index");
+const { generateComparePage } = require("./generate-compare");
 
 // Paths
 const dataPath = path.join(__dirname, "../../data/devices.json");
@@ -174,6 +175,10 @@ async function build() {
 
     // 7.7. Generate SD Cards Index Page (/cards/)
     generateCardsIndex(distPath);
+    console.log();
+
+    // 7.8. Generate standalone Compare page (/compare/)
+    generateComparePage(distPath);
     console.log();
 
     // 8. Generate URL Redirects for SEO migration

@@ -99,6 +99,7 @@ function getCategoryIcon(category) {
       "Trail Cameras": "camera",
       "Music Production": "music-production",
       "Accessories": "accessory",
+      "3D Printers & Fabrication": "3d-printer",
 
       // Kebab case (as used in category data files)
       "cameras": "camera",
@@ -116,7 +117,8 @@ function getCategoryIcon(category) {
       "cinema-cameras": "camera",
       "trail-cameras": "camera",
       "music-production": "music-production",
-      "accessories": "accessory"
+      "accessories": "accessory",
+      "3d-printers-and-fabrication": "3d-printer"
     };
     return iconMap[category] || "camera"; // Default fallback
   }

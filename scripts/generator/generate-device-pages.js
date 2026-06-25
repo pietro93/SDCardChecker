@@ -8,6 +8,7 @@ const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBre
 const { generateFAQs, mergeFAQs } = require("./generateFAQs");
 const { generateAmazonBadgesSection } = require("./amazon-badges-generator");
 const { generatePromotedCardSection } = require("./promotion-generator");
+const { loadAllCards, generateDeviceCompareWidgetHTML } = require("./generate-compare");
 const { getExplanation } = require("../lib/enrichment-loader");
 const { extractBrand, getQualifyingBrands, slugify } = require("./generate-category-pages");
 
@@ -453,7 +454,7 @@ function generateAlternatives(device, sdcardsMap) {
 /**
  * Generate single device page
  */
-function generateDevicePage(device, template, allDevices, sdcardsMap, deviceIndex = 0, isJapanese = false) {
+function generateDevicePage(device, template, allDevices, sdcardsMap, deviceIndex = 0, isJapanese = false, allCards = []) {
     const baseUrl = "https://sdcardchecker.com";
     const categorySlug = getCategorySlug(device.category, isJapanese);
     const deviceUrlPath = isJapanese ? `/ja/categories/${categorySlug}/${device.slug}/` : `/categories/${categorySlug}/${device.slug}/`;
@@ -490,6 +491,8 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const brandsTableRows = generateBrandsTable(device.recommendedBrands, sdcardsMap, device.slug, isJapanese);
     const enrichedCardDetailsHTML = generateEnrichedCardDetails(device.recommendedBrands, sdcardsMap, isJapanese);
     const alternativesHTML = generateAlternatives(device, sdcardsMap);
+    // Compare widget is English-only for v1 (compare.js fetches the English sdcards.json)
+    const compareWidgetHTML = isJapanese ? "" : generateDeviceCompareWidgetHTML(device, allCards);
 
     // Generate FAQs: use custom FAQs from data, or generate programmatically
     const generatedFAQs = generateFAQs(device, sdcardsMap, isJapanese);
@@ -621,6 +624,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{SPECS_HTML}}/g, specsHTML)
         .replace(/{{BRANDS_TABLE_ROWS}}/g, brandsTableRows)
         .replace(/{{ENRICHED_CARD_DETAILS}}/g, enrichedCardDetailsHTML)
+        .replace(/{{COMPARE_WIDGET}}/g, compareWidgetHTML)
         .replace(/{{ALTERNATIVES_HTML}}/g, alternativesHTML)
         .replace(/{{AMAZON_BADGES_SECTION}}/g, amazonBadgesSection)
         .replace(/{{PROMOTED_CARDS_SECTION}}/g, promotedCardSection)
@@ -655,7 +659,8 @@ async function generateDevicePages(allDevices, distPath, isJapanese = false) {
     deviceTemplate = processIncludes(deviceTemplate, path.join(srcPath, "templates"));
 
     const sdcardsMap = loadSDCardData(isJapanese);
-    
+    const allCards = isJapanese ? [] : loadAllCards();
+
     // Load and merge enrichment data (richDescription, useCase, bestFor, alternatives)
     const enrichmentData = loadSDCardEnrichment();
     if (Object.keys(enrichmentData).length > 0) {
@@ -668,7 +673,7 @@ async function generateDevicePages(allDevices, distPath, isJapanese = false) {
 
     allDevices.forEach((device, index) => {
         try {
-            const deviceHTML = generateDevicePage(device, deviceTemplate, allDevices, sdcardsMap, index, isJapanese);
+            const deviceHTML = generateDevicePage(device, deviceTemplate, allDevices, sdcardsMap, index, isJapanese, allCards);
             const categorySlug = getCategorySlug(device.category, isJapanese);
             // Always use English slugs in URLs for both English and Japanese
             // This is SEO best practice to avoid URL encoding issues
