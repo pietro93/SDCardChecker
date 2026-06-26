@@ -1773,9 +1773,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.compare-grid-1 { grid-template-columns: 1fr; max-width: 360px; }
-.compare-grid-2 { grid-template-columns: repeat(2, 1fr); }
-
 .compare-slot {
   display: flex;
   flex-direction: column;
@@ -1817,6 +1814,53 @@ body {
   align-items: center;
   text-align: center;
   flex: 1;
+}
+
+.compare-remove-btn {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #555555;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.compare-remove-btn:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.compare-card-panel-empty {
+  justify-content: center;
+  min-height: 200px;
+  background: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  box-shadow: none;
+}
+
+.compare-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #94a3b8;
+}
+
+.compare-empty-state i {
+  font-size: 2rem;
+}
+
+.compare-empty-state p {
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .compare-tier-badge {
@@ -1944,9 +1988,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .compare-grid,
-  .compare-grid-2,
-  .compare-grid-3 {
+  .compare-grid {
     grid-template-columns: 1fr;
   }
 

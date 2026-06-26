@@ -1,0 +1,82 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "SD Card Checker Logo SD Card Checker" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "SD Card Checker Logo" [ref=e5]
+        - generic [ref=e6]: SD Card Checker
+      - navigation [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Categories " [ref=e10] [cursor=pointer]:
+          - /url: /categories/
+          - text: Categories
+          - generic [ref=e11]: 
+        - generic [ref=e12]:
+          - link "Calculators " [ref=e13] [cursor=pointer]:
+            - /url: /tools/calculators/
+            - text: Calculators
+            - generic [ref=e14]: 
+          - text: 
+        - generic [ref=e15]:
+          - link "Guides " [ref=e16] [cursor=pointer]:
+            - /url: /guides/
+            - text: Guides
+            - generic [ref=e17]: 
+          - text: 
+        - link "Compare SD Cards" [ref=e18] [cursor=pointer]:
+          - /url: /compare/
+      - generic [ref=e20]:
+        - button " English " [ref=e21] [cursor=pointer]:
+          - generic [ref=e22]: 
+          - generic [ref=e23]: English
+          - generic [ref=e24]: 
+        - text: 
+      - button "Toggle menu" [ref=e25] [cursor=pointer]:
+        - generic [ref=e26]: 
+    - text:    
+  - generic [ref=e29]:
+    - generic [ref=e30]: "404"
+    - heading "Page Not Found" [level=1] [ref=e31]
+    - paragraph [ref=e32]: We couldn't find that page, but we can help you find the perfect SD card for your device.
+    - generic [ref=e34]:
+      - generic: 
+      - textbox "Search for devices and recommended SD cards" [ref=e35]:
+        - /placeholder: Search devices or categories...
+    - generic [ref=e36]:
+      - link " Back to Home" [ref=e37] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e38]: 
+        - text: Back to Home
+      - link " Browse Categories" [ref=e39] [cursor=pointer]:
+        - /url: /#categories
+        - generic [ref=e40]: 
+        - text: Browse Categories
+  - contentinfo [ref=e41]:
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - heading "Company" [level=4] [ref=e45]
+          - list [ref=e46]:
+            - listitem [ref=e47]:
+              - link "About Us" [ref=e48] [cursor=pointer]:
+                - /url: /about.html
+            - listitem [ref=e49]:
+              - link "Contact" [ref=e50] [cursor=pointer]:
+                - /url: /contact.html
+        - generic [ref=e51]:
+          - heading "Legal" [level=4] [ref=e52]
+          - list [ref=e53]:
+            - listitem [ref=e54]:
+              - link "Privacy Policy" [ref=e55] [cursor=pointer]:
+                - /url: /privacy.html
+            - listitem [ref=e56]:
+              - link "Terms of Use" [ref=e57] [cursor=pointer]:
+                - /url: /terms.html
+        - generic [ref=e58]:
+          - heading "Site" [level=4] [ref=e59]
+          - list [ref=e60]:
+            - listitem [ref=e61]:
+              - link "Sitemap" [ref=e62] [cursor=pointer]:
+                - /url: /sitemap.xml
+      - paragraph [ref=e64]: © 2026 SD Card Checker. All rights reserved.

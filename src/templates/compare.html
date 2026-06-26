@@ -3,29 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compare SD Cards Side-by-Side | SD Card Checker</title>
-  <meta name="description" content="Compare up to 3 SD or microSD cards side-by-side: speed class, UHS rating, capacity, pros/cons, and price. Swap any card in or out.">
+  <title>SD Card Comparison Tool: Compare Specs &amp; Prices | SD Card Checker</title>
+  <meta name="description" content="Compare SD and microSD cards side-by-side: UHS rating, speed class, capacity, pros/cons, and price. Pick 2 or 3 cards to compare &mdash; no sign-up required.">
   <link rel="canonical" href="https://sdcardchecker.com/compare/">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
   <!-- Open Graph for Social Sharing -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Compare SD Cards Side-by-Side">
-  <meta property="og:description" content="Compare up to 3 SD or microSD cards side-by-side: speed, capacity, pros/cons, and price.">
+  <meta property="og:title" content="SD Card Comparison Tool: Compare Specs &amp; Prices">
+  <meta property="og:description" content="Compare SD and microSD cards side-by-side: speed, capacity, pros/cons, and price. Pick 2 or 3 cards to compare.">
   <meta property="og:image" content="https://sdcardchecker.com/img/brand/logo.webp">
   <meta property="og:url" content="https://sdcardchecker.com/compare/">
   <meta property="og:site_name" content="SD Card Checker">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Compare SD Cards Side-by-Side">
-  <meta name="twitter:description" content="Compare up to 3 SD or microSD cards side-by-side: speed, capacity, pros/cons, and price.">
+  <meta name="twitter:title" content="SD Card Comparison Tool: Compare Specs &amp; Prices">
+  <meta name="twitter:description" content="Compare SD and microSD cards side-by-side: speed, capacity, pros/cons, and price. Pick 2 or 3 cards to compare.">
   <meta name="twitter:image" content="https://sdcardchecker.com/img/brand/logo.webp">
 
-  <!-- Breadcrumb Schema only - no Product/ComparisonChart markup for v1, -->
+  <!-- Breadcrumb + FAQ Schema - no Product/ComparisonChart markup for v1, -->
   <!-- see Decision Log in SD_CARD_COMPARISON_SERVICE_DESIGN.md -->
   <script type="application/ld+json">
   {{BREADCRUMB_SCHEMA}}
+  </script>
+  <script type="application/ld+json">
+  {{FAQ_SCHEMA}}
   </script>
 
   <link rel="stylesheet" href="/assets/css/tailwind.css">
@@ -61,11 +64,18 @@
       </div>
 
       <section class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-lg p-6 mb-10 shadow-sm">
-        <p class="text-lg text-slate-800 leading-relaxed font-medium">Pick up to 3 cards below to compare specs, price, and pros/cons side-by-side. Swap any card using the dropdown above each column &mdash; your selection updates the link in your address bar so you can share or bookmark this exact comparison.</p>
+        <p class="text-lg text-slate-800 leading-relaxed font-medium">UHS rating, speed class, capacity &mdash; every SD card lists these specs, but it's hard to tell what actually matters until you see two cards next to each other. Add up to three cards below to compare them side-by-side, swap any one out with the dropdown, or remove it with the &times; if you only need two. Your picks are saved to the URL, so you can bookmark or share the exact comparison.</p>
       </section>
 
       <section>
         {{COMPARE_GRID_HTML}}
+      </section>
+
+      <section id="faq" class="mt-16 scroll-mt-20">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+        <div class="faq-section space-y-3">
+          {{FAQ_HTML}}
+        </div>
       </section>
 
       <p class="text-xs text-slate-500 mt-8 opacity-70">This website contains affiliate links. We may earn a small commission when you purchase through our links at no extra cost to you.</p>
@@ -77,5 +87,22 @@
   {{FOOTER}}
 
   <script src="/assets/js/compare.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('#faq .faq-item').forEach((item) => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        const toggle = item.querySelector('.faq-toggle');
+
+        if (question && answer) {
+          question.addEventListener('click', () => {
+            const isOpen = answer.classList.contains('open');
+            answer.classList.toggle('open', !isOpen);
+            if (toggle) toggle.classList.toggle('open', !isOpen);
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>

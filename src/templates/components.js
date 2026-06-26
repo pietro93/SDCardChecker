@@ -23,7 +23,7 @@ return `<!-- Favicon -->
     
     <div class="relative group flex items-center">
     <a href="/categories/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
-      Devices
+      Categories
       <i class="fas fa-chevron-down text-xs"></i>
       </a>
       <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block z-50">
@@ -34,7 +34,9 @@ return `<!-- Favicon -->
        <a href="/categories/gaming-handhelds/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Gaming Handhelds</a>
        <a href="/categories/dash-cams/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Dash Cams</a>
        <a href="/categories/computing-and-tablets/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Computing & Tablets</a>
-       <a href="/categories/" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-xs font-bold border-t border-blue-200 flex items-center gap-2"><i class="fas fa-grid-2"></i> All Devices</a>
+       <a href="/readers/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Card Readers</a>
+       <a href="/cars/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Car Navigation</a>
+       <a href="/categories/" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-xs font-bold border-t border-blue-200 flex items-center gap-2"><i class="fas fa-grid-2"></i> All Categories</a>
        </div>
         </div>
        </div>
@@ -58,24 +60,6 @@ return `<!-- Favicon -->
        </div>
       </div>
 
-      <div class="relative group flex items-center">
-       <a href="/readers/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
-       Readers
-       <i class="fas fa-chevron-down text-xs"></i>
-       </a>
-       <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block z-50">
-       <div class="bg-white rounded-lg shadow-lg border border-slate-200">
-        <a href="/readers/dongle/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">Dongles</a>
-        <a href="/readers/mobile-reader/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Mobile Adapters</a>
-        <a href="/readers/professional-hub/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Professional Hubs</a>
-        <a href="/readers/hub/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Multi-Port Hubs</a>
-        <a href="/readers/desktop-dock/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Docks & Stands</a>
-        <a href="/readers/stick/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Compact Readers</a>
-        <a href="/readers/" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-xs font-bold border-t border-blue-200 flex items-center gap-2"><i class="fas fa-layer-group"></i> All Readers</a>
-        </div>
-        </div>
-       </div>
-
        <div class="relative group flex items-center">
          <a href="/guides/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
          Guides
@@ -93,9 +77,7 @@ return `<!-- Favicon -->
           </div>
          </div>
 
-        <a href="/cars/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">Car Navigation</a>
-
-        <a href="/about.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">About</a>
+        <a href="/compare/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">Compare SD Cards</a>
        </nav>
        
        <!-- Language Switcher (Desktop) -->
@@ -140,9 +122,9 @@ return `<!-- Favicon -->
       <!-- Direct Links -->
       <a href="/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Home</a>
       
-      <!-- Devices Section -->
+      <!-- Categories Section -->
       <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="devices">
-        <span>Devices</span>
+        <span>Categories</span>
         <i class="fas fa-chevron-right transition-transform duration-300"></i>
       </button>
       <div class="mobile-section hidden pl-4 space-y-1" data-content="devices">
@@ -152,9 +134,11 @@ return `<!-- Favicon -->
         <a href="/categories/gaming-handhelds/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Gaming Handhelds</a>
         <a href="/categories/dash-cams/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Dash Cams</a>
         <a href="/categories/computing-and-tablets/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Computing & Tablets</a>
-        <a href="/categories/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium">Browse All Devices</a>
+        <a href="/readers/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Card Readers</a>
+        <a href="/cars/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Car Navigation</a>
+        <a href="/categories/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium">Browse All Categories</a>
       </div>
-      
+
       <!-- Calculators Section -->
       <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="calculators">
         <span>Calculators</span>
@@ -169,21 +153,6 @@ return `<!-- Favicon -->
         <a href="/tools/calculators/action-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Action Camera</a>
         <a href="/tools/calculators/gopro-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">GoPro Recording</a>
         <a href="/tools/calculators/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium">Browse All Calculators</a>
-      </div>
-      
-      <!-- Readers Section -->
-      <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="readers">
-        <span>Readers</span>
-        <i class="fas fa-chevron-right transition-transform duration-300"></i>
-      </button>
-      <div class="mobile-section hidden pl-4 space-y-1" data-content="readers">
-        <a href="/readers/dongle/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Dongles</a>
-        <a href="/readers/mobile-reader/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Mobile Adapters</a>
-        <a href="/readers/professional-hub/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Professional Hubs</a>
-        <a href="/readers/hub/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Multi-Port Hubs</a>
-        <a href="/readers/desktop-dock/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Docks & Stands</a>
-        <a href="/readers/stick/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Compact Readers</a>
-        <a href="/readers/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium">Browse All Readers</a>
       </div>
       
       <!-- Resources Section -->
@@ -201,8 +170,7 @@ return `<!-- Favicon -->
       </div>
       
       <!-- Direct Links -->
-      <a href="/cars/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Car Navigation</a>
-      <a href="/about.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">About</a>
+      <a href="/compare/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Compare SD Cards</a>
       </div>
       </nav>
       </header>

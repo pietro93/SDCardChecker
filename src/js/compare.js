@@ -15,7 +15,7 @@
       cardMapPromise = fetch("/data/sdcards.json")
         .then((res) => res.json())
         .then((data) => {
-          const allCards = data.sdcards || [];
+          const allCards = (data.sdcards || []).filter((c) => !c.navCardProduct);
           return Object.fromEntries(allCards.map((c) => [c.id, c]));
         })
         .catch((err) => {
@@ -67,7 +67,8 @@
   }
 
   function amazonButtonHTML(card, utmCampaign) {
-    const baseUrl = card.amazonSearchUrl;
+    const baseUrl = card.amazonSearchUrl || card.affiliateUrl;
+    if (!baseUrl) return "";
     const utmParams = `utm_source=sdcardchecker&utm_medium=compare&utm_campaign=${utmCampaign}`;
     const url = baseUrl.includes("?") ? `${baseUrl}&${utmParams}` : `${baseUrl}?${utmParams}`;
     return `<a href="${url}" target="_blank" rel="nofollow noopener" class="compare-amazon-btn"><i class="fas fa-shopping-cart"></i> View on Amazon</a>`;
@@ -80,6 +81,7 @@
       : "";
 
     return `
+      <button type="button" class="compare-remove-btn" aria-label="Remove ${card.name} from comparison" title="Remove"><i class="fas fa-xmark"></i></button>
       ${tierBadge}
       <div class="compare-card-image"><img src="${image}" alt="${card.name}" width="120" height="120" loading="lazy" onerror="this.src='/img/cards/placeholder.webp'"></div>
       <h3 class="compare-card-name">${card.name}</h3>
@@ -91,11 +93,48 @@
     `;
   }
 
+  function renderEmptyPanelHTML() {
+    return `
+      <div class="compare-empty-state">
+        <i class="fas fa-circle-plus"></i>
+        <p>Add a card to compare</p>
+      </div>
+    `;
+  }
+
+  function setSlotEmpty(slot) {
+    const select = slot.querySelector(".compare-select");
+    const panel = slot.querySelector(".compare-card-panel");
+    if (select) select.value = "";
+    if (panel) {
+      panel.dataset.cardId = "";
+      panel.classList.add("compare-card-panel-empty");
+      panel.innerHTML = renderEmptyPanelHTML();
+    }
+  }
+
+  function setSlotCard(slot, card, utmCampaign) {
+    const select = slot.querySelector(".compare-select");
+    const panel = slot.querySelector(".compare-card-panel");
+    if (select) select.value = card.id;
+    if (panel) {
+      panel.dataset.cardId = card.id;
+      panel.classList.remove("compare-card-panel-empty");
+      panel.innerHTML = renderCardPanel(card, utmCampaign);
+    }
+  }
+
   function updateUrlParam(grid) {
     if (grid.dataset.mode !== "standalone") return;
-    const ids = Array.from(grid.querySelectorAll(".compare-select")).map((sel) => sel.value);
+    const ids = Array.from(grid.querySelectorAll(".compare-select"))
+      .map((sel) => sel.value)
+      .filter(Boolean);
     const url = new URL(window.location.href);
-    url.searchParams.set("cards", ids.join(","));
+    if (ids.length) {
+      url.searchParams.set("cards", ids.join(","));
+    } else {
+      url.searchParams.delete("cards");
+    }
     history.replaceState(null, "", url);
   }
 
@@ -110,20 +149,35 @@
   }
 
   function wireGrid(grid) {
+    const utmCampaign = grid.dataset.utmCampaign || "compare";
+
     grid.querySelectorAll(".compare-select").forEach((select) => {
       select.addEventListener("change", async () => {
+        const slot = select.closest(".compare-slot");
+
+        if (!select.value) {
+          setSlotEmpty(slot);
+          updateUrlParam(grid);
+          return;
+        }
+
         const cardMap = await loadCards();
         const card = cardMap[select.value];
         if (!card) return;
 
-        const slot = select.closest(".compare-slot");
-        const panel = slot.querySelector(".compare-card-panel");
-        panel.dataset.cardId = card.id;
-        panel.innerHTML = renderCardPanel(card, grid.dataset.utmCampaign || "compare");
-
+        setSlotCard(slot, card, utmCampaign);
         updateUrlParam(grid);
         trackSwap(card, select.dataset.slot);
       });
+    });
+
+    grid.addEventListener("click", (e) => {
+      const removeBtn = e.target.closest(".compare-remove-btn");
+      if (!removeBtn) return;
+      const slot = removeBtn.closest(".compare-slot");
+      if (!slot) return;
+      setSlotEmpty(slot);
+      updateUrlParam(grid);
     });
   }
 
@@ -138,16 +192,11 @@
 
     loadCards().then((cardMap) => {
       const slots = grid.querySelectorAll(".compare-slot");
+      const utmCampaign = grid.dataset.utmCampaign || "compare";
       ids.slice(0, slots.length).forEach((id, i) => {
         const card = cardMap[id];
         if (!card) return;
-        const select = slots[i].querySelector(".compare-select");
-        const panel = slots[i].querySelector(".compare-card-panel");
-        if (select) select.value = id;
-        if (panel) {
-          panel.dataset.cardId = card.id;
-          panel.innerHTML = renderCardPanel(card, grid.dataset.utmCampaign || "compare");
-        }
+        setSlotCard(slots[i], card, utmCampaign);
       });
     });
   }
