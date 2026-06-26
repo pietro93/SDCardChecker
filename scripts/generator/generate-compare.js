@@ -161,22 +161,27 @@ function renderCompareGrid(cardIds, cardMap, allCards, { mode, utmCampaign }) {
 
 const COMPARE_FAQS = [
   {
-    q: "Do I have to pick 3 cards to use this tool?",
-    a: "No. Every slot is optional &mdash; compare just one card, two, or all three. Use the dropdown to add a card to any empty slot, and the &times; button on a filled slot to remove it.",
+    q: "What's the difference between UHS-I and UHS-II cards?",
+    a: "UHS-I cards have one row of pins and max out around 104 MB/s. UHS-II cards add a second row of pins that roughly doubles the speed. The catch: your device needs to support UHS-II to use the faster speeds. If you plug a UHS-II card into a UHS-I device, it'll just run at UHS-I speeds."
   },
   {
-    q: "What's the difference between UHS rating and Speed Class?",
-    a: "UHS (Ultra High Speed) describes the bus interface generation (UHS-I vs UHS-II), which caps the theoretical maximum transfer speed. Speed Class (like V30, V60, V90) is a guaranteed <b>minimum sustained write speed</b>, which is what actually matters for recording video without dropped frames.",
+    q: "What do Speed Class ratings like C10, U3, and V30 actually do?",
+    a: "Speed Class ratings guarantee minimum write speeds so your video doesn't stutter or drop frames. C10 means at least 10 MB/s write speed (good for HD video). U3 guarantees 30 MB/s (better for 4K). V30 and higher are what you need for serious video work, professional cameras, or high bitrate footage. V60 and V90 are overkill for most people but necessary for cinema cameras."
   },
   {
-    q: "Does a higher price always mean a better card?",
-    a: "Not necessarily. Price often reflects brand, capacity, and endurance rating (for cards that survive 24/7 dashcam or security camera recording) as much as raw speed. Check the specs side-by-side above rather than assuming price tier alone tells the full story.",
+    q: "Should I care about the A2 rating?",
+    a: "The A2 rating (App Performance Class) tells you how fast a card handles the quick random read/write tasks that apps and games need. A2 cards are noticeably snappier on phones, tablets, and gaming devices like the Steam Deck. If you're using your card mainly for photos or video, A2 doesn't matter much."
   },
   {
-    q: "Why don't I see car navigation SD cards in this tool?",
-    a: "Navigation cards (the ones that update your car's built-in GPS maps) have a completely different spec sheet &mdash; map region and map year instead of speed class or UHS rating &mdash; so they aren't a fair side-by-side comparison against camera or device storage cards. Visit our <a href=\"/cars/\">Car Navigation</a> section to compare those instead.",
+    q: "Why do cards have different read and write speeds?",
+    a: "Read speed is how fast files come off the card. Write speed is how fast data goes onto the card. For video recording, write speed is what matters because if your camera's bitrate exceeds the card's write speed, your recording will glitch or stop. For photo work, read speed matters more because you're usually just offloading files."
   },
+  {
+    q: "What's the endurance rating for?",
+    a: "Endurance tells you how much writing a card can handle before it wears out. Standard endurance cards are fine for normal photography and occasional video. High or Max Endurance cards are built to survive constant writing, which is why they're essential for dashcams and security cameras that record 24/7. Using a standard card in those situations will kill it fast."
+  }
 ];
+
 
 function generateComparePage(distPath) {
   console.log("Generating Compare page...");
