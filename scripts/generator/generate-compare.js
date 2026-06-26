@@ -78,11 +78,16 @@ function capacitiesHTML(card) {
     .join(", ")}</span></div>`;
 }
 
-function amazonButtonHTML(card, utmCampaign) {
+function affiliateUrl(card, utmCampaign) {
   const baseUrl = card.amazonSearchUrl || card.affiliateUrl;
-  if (!baseUrl) return "";
+  if (!baseUrl) return null;
   const utmParams = `utm_source=sdcardchecker&utm_medium=compare&utm_campaign=${utmCampaign}`;
-  const url = baseUrl.includes("?") ? `${baseUrl}&${utmParams}` : `${baseUrl}?${utmParams}`;
+  return baseUrl.includes("?") ? `${baseUrl}&${utmParams}` : `${baseUrl}?${utmParams}`;
+}
+
+function amazonButtonHTML(card, utmCampaign) {
+  const url = affiliateUrl(card, utmCampaign);
+  if (!url) return "";
   return `<a href="${url}" target="_blank" rel="nofollow noopener" class="compare-amazon-btn"><i class="fas fa-shopping-cart"></i> View on Amazon</a>`;
 }
 
@@ -96,12 +101,17 @@ function renderCardPanel(card, utmCampaign) {
   const tierBadge = card.tier
     ? `<span class="compare-tier-badge compare-tier-${card.tier}">${card.tier}</span>`
     : "";
+  const url = affiliateUrl(card, utmCampaign);
+  const imageTag = `<img src="${image}" alt="${card.name}" width="120" height="120" loading="lazy" onerror="this.src='/img/cards/placeholder.webp'">`;
+  const nameTag = card.name;
 
   return `
     <button type="button" class="compare-remove-btn" aria-label="Remove ${card.name} from comparison" title="Remove"><i class="fas fa-xmark"></i></button>
     ${tierBadge}
-    <div class="compare-card-image"><img src="${image}" alt="${card.name}" width="120" height="120" loading="lazy" onerror="this.src='/img/cards/placeholder.webp'"></div>
-    <h3 class="compare-card-name">${card.name}</h3>
+    ${url ? `<a href="${url}" target="_blank" rel="nofollow noopener">` : ""}
+    <div class="compare-card-image">${imageTag}</div>
+    <h3 class="compare-card-name">${nameTag}</h3>
+    ${url ? "</a>" : ""}
     ${priceBadgeHTML(card)}
     ${specsListHTML(card)}
     ${capacitiesHTML(card)}
