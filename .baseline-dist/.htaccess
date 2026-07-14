@@ -1,0 +1,407 @@
+# .htaccess - Apache Redirect Rules
+# Redirects old /devices/ URLs to new /categories/ URLs
+# This preserves SEO rankings during URL restructuring
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Redirect Bambu Lab X1-Carbon
+  RewriteRule ^devices/bambu-lab-x1-carbon/?$ /categories/3d-printers-and-fabrication/bambu-lab-x1-carbon/ [R=301,L]
+  # Redirect Bambu Lab P1S
+  RewriteRule ^devices/bambu-lab-p1s/?$ /categories/3d-printers-and-fabrication/bambu-lab-p1s/ [R=301,L]
+  # Redirect Bambu Lab A1
+  RewriteRule ^devices/bambu-lab-a1/?$ /categories/3d-printers-and-fabrication/bambu-lab-a1/ [R=301,L]
+  # Redirect Creality Ender 3 V3
+  RewriteRule ^devices/creality-ender-3-v3/?$ /categories/3d-printers-and-fabrication/creality-ender-3-v3/ [R=301,L]
+  # Redirect Bambu Lab A1 mini
+  RewriteRule ^devices/bambu-lab-a1-mini/?$ /categories/3d-printers-and-fabrication/bambu-lab-a1-mini/ [R=301,L]
+  # Redirect Creality Ender 3 V3 SE
+  RewriteRule ^devices/creality-ender-3-v3-se/?$ /categories/3d-printers-and-fabrication/creality-ender-3-v3-se/ [R=301,L]
+  # Redirect Creality Ender 3 V3 KE
+  RewriteRule ^devices/creality-ender-3-v3-ke/?$ /categories/3d-printers-and-fabrication/creality-ender-3-v3-ke/ [R=301,L]
+  # Redirect GoPro Hero 13 Black
+  RewriteRule ^devices/gopro-hero-13/?$ /categories/action-cameras/gopro-hero-13/ [R=301,L]
+  # Redirect GoPro Hero 12 Black
+  RewriteRule ^devices/gopro-hero-12/?$ /categories/action-cameras/gopro-hero-12/ [R=301,L]
+  # Redirect GoPro Hero Max
+  RewriteRule ^devices/gopro-hero-max/?$ /categories/action-cameras/gopro-hero-max/ [R=301,L]
+  # Redirect Insta360 X3
+  RewriteRule ^devices/insta360-x3/?$ /categories/action-cameras/insta360-x3/ [R=301,L]
+  # Redirect DJI Osmo Pocket 3
+  RewriteRule ^devices/dji-osmo-pocket-3/?$ /categories/action-cameras/dji-osmo-pocket-3/ [R=301,L]
+  # Redirect Nextbase 622GW
+  RewriteRule ^devices/nextbase-622gw/?$ /categories/action-cameras/nextbase-622gw/ [R=301,L]
+  # Redirect GoPro Hero 11 Black
+  RewriteRule ^devices/gopro-hero-11-black/?$ /categories/action-cameras/gopro-hero-11-black/ [R=301,L]
+  # Redirect Insta360 X4
+  RewriteRule ^devices/insta360-x4/?$ /categories/action-cameras/insta360-x4/ [R=301,L]
+  # Redirect DJI Osmo Action 4
+  RewriteRule ^devices/dji-osmo-action-4/?$ /categories/action-cameras/dji-osmo-action-4/ [R=301,L]
+  # Redirect Insta360 GO 3
+  RewriteRule ^devices/insta360-go-3/?$ /categories/action-cameras/insta360-go-3/ [R=301,L]
+  # Redirect Insta360 Ace Pro
+  RewriteRule ^devices/insta360-ace-pro/?$ /categories/action-cameras/insta360-ace-pro/ [R=301,L]
+  # Redirect Insta360 ONE X2
+  RewriteRule ^devices/insta360-one-x2/?$ /categories/action-cameras/insta360-one-x2/ [R=301,L]
+  # Redirect GoPro Max 2
+  RewriteRule ^devices/gopro-max-2/?$ /categories/action-cameras/gopro-max-2/ [R=301,L]
+  # Redirect Insta360 ONE X3
+  RewriteRule ^devices/insta360-one-x3/?$ /categories/action-cameras/insta360-one-x3/ [R=301,L]
+  # Redirect Wyze Cam v3
+  RewriteRule ^devices/wyze-cam-v3/?$ /categories/action-cameras/wyze-cam-v3/ [R=301,L]
+  # Redirect FiiO SnowSky Echo Mini
+  RewriteRule ^devices/fiio-snowsky-echo-mini/?$ /categories/audio-and-hi-fi/fiio-snowsky-echo-mini/ [R=301,L]
+  # Redirect Sony Walkman NW-A306
+  RewriteRule ^devices/sony-nw-a306/?$ /categories/audio-and-hi-fi/sony-nw-a306/ [R=301,L]
+  # Redirect Sony Walkman NW-ZX707
+  RewriteRule ^devices/sony-nw-zx707/?$ /categories/audio-and-hi-fi/sony-nw-zx707/ [R=301,L]
+  # Redirect HiBy R3 II
+  RewriteRule ^devices/hiby-r3-ii/?$ /categories/audio-and-hi-fi/hiby-r3-ii/ [R=301,L]
+  # Redirect HiBy R4
+  RewriteRule ^devices/hiby-r4/?$ /categories/audio-and-hi-fi/hiby-r4/ [R=301,L]
+  # Redirect Astell&Kern A&norma SR35
+  RewriteRule ^devices/astell-kern-sr35/?$ /categories/audio-and-hi-fi/astell-kern-sr35/ [R=301,L]
+  # Redirect Zoom H1n-VP Handy Recorder
+  RewriteRule ^devices/zoom-h1n-vp/?$ /categories/audio-and-hi-fi/zoom-h1n-vp/ [R=301,L]
+  # Redirect Zoom H6 Handy Recorder
+  RewriteRule ^devices/zoom-h6/?$ /categories/audio-and-hi-fi/zoom-h6/ [R=301,L]
+  # Redirect Tascam DR-05X
+  RewriteRule ^devices/tascam-dr-05x/?$ /categories/audio-and-hi-fi/tascam-dr-05x/ [R=301,L]
+  # Redirect Zoom H4essential
+  RewriteRule ^devices/zoom-h4essential/?$ /categories/audio-and-hi-fi/zoom-h4essential/ [R=301,L]
+  # Redirect Tascam Portacapture X6
+  RewriteRule ^devices/tascam-portacapture-x6/?$ /categories/audio-and-hi-fi/tascam-portacapture-x6/ [R=301,L]
+  # Redirect Canon EOS R5
+  RewriteRule ^devices/canon-eos-r5/?$ /categories/cameras/canon-eos-r5/ [R=301,L]
+  # Redirect Sony A6700
+  RewriteRule ^devices/sony-a6700/?$ /categories/cameras/sony-a6700/ [R=301,L]
+  # Redirect Fujifilm X-S20
+  RewriteRule ^devices/fujifilm-x-s20/?$ /categories/cameras/fujifilm-x-s20/ [R=301,L]
+  # Redirect Nikon Z9
+  RewriteRule ^devices/nikon-z9/?$ /categories/cameras/nikon-z9/ [R=301,L]
+  # Redirect Sony A7 IV
+  RewriteRule ^devices/sony-a7-iv/?$ /categories/cameras/sony-a7-iv/ [R=301,L]
+  # Redirect Canon EOS R6 Mark II
+  RewriteRule ^devices/canon-eos-r6-mark-ii/?$ /categories/cameras/canon-eos-r6-mark-ii/ [R=301,L]
+  # Redirect Blackmagic Pocket Cinema Camera 4K
+  RewriteRule ^devices/blackmagic-pocket-cinema-camera-4k/?$ /categories/cameras/blackmagic-pocket-cinema-camera-4k/ [R=301,L]
+  # Redirect Blackmagic Pocket Cinema Camera 6K Pro
+  RewriteRule ^devices/blackmagic-pocket-cinema-camera-6k-pro/?$ /categories/cameras/blackmagic-pocket-cinema-camera-6k-pro/ [R=301,L]
+  # Redirect Nikon Z8
+  RewriteRule ^devices/nikon-z8/?$ /categories/cameras/nikon-z8/ [R=301,L]
+  # Redirect Panasonic Lumix S1H
+  RewriteRule ^devices/panasonic-lumix-s1h/?$ /categories/cameras/panasonic-lumix-s1h/ [R=301,L]
+  # Redirect Fujifilm X100VI
+  RewriteRule ^devices/fujifilm-x100vi/?$ /categories/cameras/fujifilm-x100vi/ [R=301,L]
+  # Redirect Canon EOS R50
+  RewriteRule ^devices/canon-eos-r50/?$ /categories/cameras/canon-eos-r50/ [R=301,L]
+  # Redirect Canon EOS R7
+  RewriteRule ^devices/canon-eos-r7/?$ /categories/cameras/canon-eos-r7/ [R=301,L]
+  # Redirect Canon EOS R10
+  RewriteRule ^devices/canon-eos-r10/?$ /categories/cameras/canon-eos-r10/ [R=301,L]
+  # Redirect Canon EOS R8
+  RewriteRule ^devices/canon-eos-r8/?$ /categories/cameras/canon-eos-r8/ [R=301,L]
+  # Redirect Canon EOS Rebel T7 (EOS 2000D)
+  RewriteRule ^devices/canon-rebel-t7/?$ /categories/cameras/canon-rebel-t7/ [R=301,L]
+  # Redirect Canon PowerShot G7 X Mark III
+  RewriteRule ^devices/canon-g7x-mark-iii/?$ /categories/cameras/canon-g7x-mark-iii/ [R=301,L]
+  # Redirect Canon PowerShot G7 X Mark II
+  RewriteRule ^devices/canon-g7x-mark-ii/?$ /categories/cameras/canon-g7x-mark-ii/ [R=301,L]
+  # Redirect Fujifilm X-T5
+  RewriteRule ^devices/fujifilm-xt5/?$ /categories/cameras/fujifilm-xt5/ [R=301,L]
+  # Redirect Fujifilm X-M5
+  RewriteRule ^devices/fujifilm-xm5/?$ /categories/cameras/fujifilm-xm5/ [R=301,L]
+  # Redirect Fujifilm X-T30 II
+  RewriteRule ^devices/fujifilm-xt30-ii/?$ /categories/cameras/fujifilm-xt30-ii/ [R=301,L]
+  # Redirect Fujifilm X-T50
+  RewriteRule ^devices/fujifilm-xt50/?$ /categories/cameras/fujifilm-xt50/ [R=301,L]
+  # Redirect Sony FX30
+  RewriteRule ^devices/sony-fx30/?$ /categories/cameras/sony-fx30/ [R=301,L]
+  # Redirect Sony FX3
+  RewriteRule ^devices/sony-fx3/?$ /categories/cameras/sony-fx3/ [R=301,L]
+  # Redirect Fujifilm X-E5
+  RewriteRule ^devices/fujifilm-xe5/?$ /categories/cameras/fujifilm-xe5/ [R=301,L]
+  # Redirect Fujifilm X100V
+  RewriteRule ^devices/fujifilm-x100v/?$ /categories/cameras/fujifilm-x100v/ [R=301,L]
+  # Redirect Fujifilm X-T3
+  RewriteRule ^devices/fujifilm-xt3/?$ /categories/cameras/fujifilm-xt3/ [R=301,L]
+  # Redirect Leica Q3
+  RewriteRule ^devices/leica-q3/?$ /categories/cameras/leica-q3/ [R=301,L]
+  # Redirect Leica Q3 43
+  RewriteRule ^devices/leica-q3-43/?$ /categories/cameras/leica-q3-43/ [R=301,L]
+  # Redirect Leica M11
+  RewriteRule ^devices/leica-m11/?$ /categories/cameras/leica-m11/ [R=301,L]
+  # Redirect Leica Q2
+  RewriteRule ^devices/leica-q2/?$ /categories/cameras/leica-q2/ [R=301,L]
+  # Redirect Leica D-Lux 8
+  RewriteRule ^devices/leica-d-lux-8/?$ /categories/cameras/leica-d-lux-8/ [R=301,L]
+  # Redirect Leica M10
+  RewriteRule ^devices/leica-m10/?$ /categories/cameras/leica-m10/ [R=301,L]
+  # Redirect Panasonic Lumix S9
+  RewriteRule ^devices/panasonic-lumix-s9/?$ /categories/cameras/panasonic-lumix-s9/ [R=301,L]
+  # Redirect Panasonic Lumix S5 IIX
+  RewriteRule ^devices/panasonic-lumix-s5-iix/?$ /categories/cameras/panasonic-lumix-s5-iix/ [R=301,L]
+  # Redirect Panasonic Lumix S5 II
+  RewriteRule ^devices/panasonic-lumix-s5-ii/?$ /categories/cameras/panasonic-lumix-s5-ii/ [R=301,L]
+  # Redirect Nikon D7500
+  RewriteRule ^devices/nikon-d7500/?$ /categories/cameras/nikon-d7500/ [R=301,L]
+  # Redirect Nikon Zf
+  RewriteRule ^devices/nikon-zf/?$ /categories/cameras/nikon-zf/ [R=301,L]
+  # Redirect Nikon Z50 II
+  RewriteRule ^devices/nikon-z50-ii/?$ /categories/cameras/nikon-z50-ii/ [R=301,L]
+  # Redirect Nikon Z6 III
+  RewriteRule ^devices/nikon-z6-iii/?$ /categories/cameras/nikon-z6-iii/ [R=301,L]
+  # Redirect Nikon Z6 II
+  RewriteRule ^devices/nikon-z6-ii/?$ /categories/cameras/nikon-z6-ii/ [R=301,L]
+  # Redirect Nikon D850
+  RewriteRule ^devices/nikon-d850/?$ /categories/cameras/nikon-d850/ [R=301,L]
+  # Redirect Nikon D750
+  RewriteRule ^devices/nikon-d750/?$ /categories/cameras/nikon-d750/ [R=301,L]
+  # Redirect Nikon Z5
+  RewriteRule ^devices/nikon-z5/?$ /categories/cameras/nikon-z5/ [R=301,L]
+  # Redirect Canon EOS R100
+  RewriteRule ^devices/canon-eos-r100/?$ /categories/cameras/canon-eos-r100/ [R=301,L]
+  # Redirect Sony A7R V
+  RewriteRule ^devices/sony-a7r-v/?$ /categories/cameras/sony-a7r-v/ [R=301,L]
+  # Redirect Nikon D3500
+  RewriteRule ^devices/nikon-d3500/?$ /categories/cameras/nikon-d3500/ [R=301,L]
+  # Redirect Sony ZV-E10
+  RewriteRule ^devices/sony-zv-e10/?$ /categories/cameras/sony-zv-e10/ [R=301,L]
+  # Redirect Sony a7 III
+  RewriteRule ^devices/sony-a7-iii/?$ /categories/cameras/sony-a7-iii/ [R=301,L]
+  # Redirect Sony a6400
+  RewriteRule ^devices/sony-a6400/?$ /categories/cameras/sony-a6400/ [R=301,L]
+  # Redirect Fujifilm X-S10
+  RewriteRule ^devices/fujifilm-x-s10/?$ /categories/cameras/fujifilm-x-s10/ [R=301,L]
+  # Redirect Canon EOS R6
+  RewriteRule ^devices/canon-eos-r6/?$ /categories/cameras/canon-eos-r6/ [R=301,L]
+  # Redirect Nikon D500
+  RewriteRule ^devices/nikon-d500/?$ /categories/cameras/nikon-d500/ [R=301,L]
+  # Redirect Sony A7R
+  RewriteRule ^devices/sony-a7r/?$ /categories/cameras/sony-a7r/ [R=301,L]
+  # Redirect Canon EOS Rebel T7
+  RewriteRule ^devices/canon-rebel-t7/?$ /categories/cameras/canon-rebel-t7/ [R=301,L]
+  # Redirect Sony A1
+  RewriteRule ^devices/sony-a1/?$ /categories/cameras/sony-a1/ [R=301,L]
+  # Redirect Nikon D850
+  RewriteRule ^devices/nikon-d850/?$ /categories/cameras/nikon-d850/ [R=301,L]
+  # Redirect Sony a1 II
+  RewriteRule ^devices/sony-a1-ii/?$ /categories/cameras/sony-a1-ii/ [R=301,L]
+  # Redirect Canon EOS R5 Mark II
+  RewriteRule ^devices/canon-eos-r5-mark-ii/?$ /categories/cameras/canon-eos-r5-mark-ii/ [R=301,L]
+  # Redirect Raspberry Pi 5
+  RewriteRule ^devices/raspberry-pi-5/?$ /categories/computing-and-tablets/raspberry-pi-5/ [R=301,L]
+  # Redirect Raspberry Pi Compute Module 5 (CM5)
+  RewriteRule ^devices/raspberry-pi-compute-module-5/?$ /categories/computing-and-tablets/raspberry-pi-compute-module-5/ [R=301,L]
+  # Redirect Samsung Galaxy Tab S9
+  RewriteRule ^devices/samsung-galaxy-tab-s9/?$ /categories/computing-and-tablets/samsung-galaxy-tab-s9/ [R=301,L]
+  # Redirect Amazon Fire HD 10
+  RewriteRule ^devices/amazon-fire-hd-10/?$ /categories/computing-and-tablets/amazon-fire-hd-10/ [R=301,L]
+  # Redirect Amazon Fire Max 11
+  RewriteRule ^devices/amazon-fire-max-11/?$ /categories/computing-and-tablets/amazon-fire-max-11/ [R=301,L]
+  # Redirect HP Chromebook 14
+  RewriteRule ^devices/hp-chromebook-14/?$ /categories/computing-and-tablets/hp-chromebook-14/ [R=301,L]
+  # Redirect Lenovo Tab M10 Plus (3rd Gen)
+  RewriteRule ^devices/lenovo-tab-m10-plus/?$ /categories/computing-and-tablets/lenovo-tab-m10-plus/ [R=301,L]
+  # Redirect Raspberry Pi 4 Model B
+  RewriteRule ^devices/raspberry-pi-4-model-b/?$ /categories/computing-and-tablets/raspberry-pi-4-model-b/ [R=301,L]
+  # Redirect Raspberry Pi 3 Model B+
+  RewriteRule ^devices/raspberry-pi-3-model-b-plus/?$ /categories/computing-and-tablets/raspberry-pi-3-model-b-plus/ [R=301,L]
+  # Redirect Raspberry Pi Zero 2 W
+  RewriteRule ^devices/raspberry-pi-zero-2-w/?$ /categories/computing-and-tablets/raspberry-pi-zero-2-w/ [R=301,L]
+  # Redirect Orange Pi 5
+  RewriteRule ^devices/orange-pi-5/?$ /categories/computing-and-tablets/orange-pi-5/ [R=301,L]
+  # Redirect MacBook Air
+  RewriteRule ^devices/macbook-air/?$ /categories/computing-and-tablets/macbook-air/ [R=301,L]
+  # Redirect iPad Air
+  RewriteRule ^devices/ipad-air/?$ /categories/computing-and-tablets/ipad-air/ [R=301,L]
+  # Redirect iPad Air 3rd Generation
+  RewriteRule ^devices/ipad-air-3/?$ /categories/computing-and-tablets/ipad-air-3/ [R=301,L]
+  # Redirect MacBook Pro
+  RewriteRule ^devices/macbook-pro/?$ /categories/computing-and-tablets/macbook-pro/ [R=301,L]
+  # Redirect iPad Pro
+  RewriteRule ^devices/ipad-pro/?$ /categories/computing-and-tablets/ipad-pro/ [R=301,L]
+  # Redirect iPad 9th Generation
+  RewriteRule ^devices/ipad-9th-gen/?$ /categories/computing-and-tablets/ipad-9th-gen/ [R=301,L]
+  # Redirect Samsung Galaxy Tab S10 FE
+  RewriteRule ^devices/samsung-galaxy-tab-s10-fe/?$ /categories/computing-and-tablets/samsung-galaxy-tab-s10-fe/ [R=301,L]
+  # Redirect Samsung Galaxy Tab S10 FE+
+  RewriteRule ^devices/samsung-galaxy-tab-s10-fe-plus/?$ /categories/computing-and-tablets/samsung-galaxy-tab-s10-fe-plus/ [R=301,L]
+  # Redirect Samsung Galaxy Tab S10 Ultra
+  RewriteRule ^devices/samsung-galaxy-tab-s10-ultra/?$ /categories/computing-and-tablets/samsung-galaxy-tab-s10-ultra/ [R=301,L]
+  # Redirect Tesla Model 3 (Sentry Mode)
+  RewriteRule ^devices/tesla-model-3-sentry/?$ /categories/dash-cams/tesla-model-3-sentry/ [R=301,L]
+  # Redirect Generic 4K Dash Cam
+  RewriteRule ^devices/best-sd-card-4k-dash-cam/?$ /categories/dash-cams/best-sd-card-4k-dash-cam/ [R=301,L]
+  # Redirect Viofo A229 Pro Dual Dash Cam
+  RewriteRule ^devices/viofo-a229-pro/?$ /categories/dash-cams/viofo-a229-pro/ [R=301,L]
+  # Redirect Viofo T130 Pro
+  RewriteRule ^devices/viofo-t130-pro/?$ /categories/dash-cams/viofo-t130-pro/ [R=301,L]
+  # Redirect Nextbase iQ 4K
+  RewriteRule ^devices/nextbase-iq-4k/?$ /categories/dash-cams/nextbase-iq-4k/ [R=301,L]
+  # Redirect DJI Mini 4 Pro
+  RewriteRule ^devices/dji-mini-4-pro/?$ /categories/drones/dji-mini-4-pro/ [R=301,L]
+  # Redirect DJI Mini 3 Pro
+  RewriteRule ^devices/dji-mini-3-pro/?$ /categories/drones/dji-mini-3-pro/ [R=301,L]
+  # Redirect DJI Air 3S
+  RewriteRule ^devices/dji-air-3s/?$ /categories/drones/dji-air-3s/ [R=301,L]
+  # Redirect DJI Mavic 3
+  RewriteRule ^devices/dji-mavic-3/?$ /categories/drones/dji-mavic-3/ [R=301,L]
+  # Redirect DJI Air 3
+  RewriteRule ^devices/dji-air-3/?$ /categories/drones/dji-air-3/ [R=301,L]
+  # Redirect DJI Mini 4K
+  RewriteRule ^devices/dji-mini-4k/?$ /categories/drones/dji-mini-4k/ [R=301,L]
+  # Redirect DJI Mini 3 (Non-Pro)
+  RewriteRule ^devices/dji-mini-3/?$ /categories/drones/dji-mini-3/ [R=301,L]
+  # Redirect DJI Mini 2 SE
+  RewriteRule ^devices/dji-mini-2-se/?$ /categories/drones/dji-mini-2-se/ [R=301,L]
+  # Redirect Autel EVO II Pro V3
+  RewriteRule ^devices/autel-evo-ii-pro-v3/?$ /categories/drones/autel-evo-ii-pro-v3/ [R=301,L]
+  # Redirect Autel EVO Nano+
+  RewriteRule ^devices/autel-evo-nano-plus/?$ /categories/drones/autel-evo-nano-plus/ [R=301,L]
+  # Redirect Autel EVO Lite+
+  RewriteRule ^devices/autel-evo-lite-plus/?$ /categories/drones/autel-evo-lite-plus/ [R=301,L]
+  # Redirect Potensic Atom
+  RewriteRule ^devices/potensic-atom/?$ /categories/drones/potensic-atom/ [R=301,L]
+  # Redirect Potensic Atom SE
+  RewriteRule ^devices/potensic-atom-se/?$ /categories/drones/potensic-atom-se/ [R=301,L]
+  # Redirect Skydio 2+
+  RewriteRule ^devices/skydio-2-plus/?$ /categories/drones/skydio-2-plus/ [R=301,L]
+  # Redirect Skydio X10
+  RewriteRule ^devices/skydio-x10/?$ /categories/drones/skydio-x10/ [R=301,L]
+  # Redirect FIMI Mini 3
+  RewriteRule ^devices/fimi-mini-3/?$ /categories/drones/fimi-mini-3/ [R=301,L]
+  # Redirect Holy Stone HS175D
+  RewriteRule ^devices/holy-stone-hs175d/?$ /categories/drones/holy-stone-hs175d/ [R=301,L]
+  # Redirect Holy Stone HS720 / HS720E / HS720G
+  RewriteRule ^devices/holy-stone-hs720/?$ /categories/drones/holy-stone-hs720/ [R=301,L]
+  # Redirect Holy Stone HS360S
+  RewriteRule ^devices/holy-stone-hs360s/?$ /categories/drones/holy-stone-hs360s/ [R=301,L]
+  # Redirect HoverAir X1 Pro
+  RewriteRule ^devices/hoverair-x1-pro/?$ /categories/drones/hoverair-x1-pro/ [R=301,L]
+  # Redirect HoverAir X1 Pro Max
+  RewriteRule ^devices/hoverair-x1-pro-max/?$ /categories/drones/hoverair-x1-pro-max/ [R=301,L]
+  # Redirect DJI Mini 3
+  RewriteRule ^devices/dji-mini-3/?$ /categories/drones/dji-mini-3/ [R=301,L]
+  # Redirect Walksnail Moonlight Kit
+  RewriteRule ^devices/walksnail-moonlight/?$ /categories/drones/walksnail-moonlight/ [R=301,L]
+  # Redirect DJI Avata 2
+  RewriteRule ^devices/dji-avata-2/?$ /categories/drones/dji-avata-2/ [R=301,L]
+  # Redirect DJI Mini 5 Pro
+  RewriteRule ^devices/dji-mini-5-pro/?$ /categories/drones/dji-mini-5-pro/ [R=301,L]
+  # Redirect DJI Avata 360
+  RewriteRule ^devices/dji-avata-360/?$ /categories/drones/dji-avata-360/ [R=301,L]
+  # Redirect DJI Neo
+  RewriteRule ^devices/dji-neo/?$ /categories/drones/dji-neo/ [R=301,L]
+  # Redirect Nintendo Switch
+  RewriteRule ^devices/nintendo-switch/?$ /categories/gaming-handhelds/nintendo-switch/ [R=301,L]
+  # Redirect Nintendo Switch OLED
+  RewriteRule ^devices/nintendo-switch-oled/?$ /categories/gaming-handhelds/nintendo-switch-oled/ [R=301,L]
+  # Redirect Steam Deck
+  RewriteRule ^devices/steam-deck/?$ /categories/gaming-handhelds/steam-deck/ [R=301,L]
+  # Redirect ASUS ROG Ally
+  RewriteRule ^devices/asus-rog-ally/?$ /categories/gaming-handhelds/asus-rog-ally/ [R=301,L]
+  # Redirect Nintendo Switch Lite
+  RewriteRule ^devices/nintendo-switch-lite/?$ /categories/gaming-handhelds/nintendo-switch-lite/ [R=301,L]
+  # Redirect Nintendo Switch 2
+  RewriteRule ^devices/nintendo-switch-2/?$ /categories/gaming-handhelds/nintendo-switch-2/ [R=301,L]
+  # Redirect Nintendo 3DS / New 3DS XL
+  RewriteRule ^devices/nintendo-3ds-xl/?$ /categories/gaming-handhelds/nintendo-3ds-xl/ [R=301,L]
+  # Redirect Anbernic RG353V
+  RewriteRule ^devices/anbernic-rg353v/?$ /categories/gaming-handhelds/anbernic-rg353v/ [R=301,L]
+  # Redirect ASUS ROG Ally X
+  RewriteRule ^devices/asus-rog-ally-x/?$ /categories/gaming-handhelds/asus-rog-ally-x/ [R=301,L]
+  # Redirect Lenovo Legion Go
+  RewriteRule ^devices/lenovo-legion-go/?$ /categories/gaming-handhelds/lenovo-legion-go/ [R=301,L]
+  # Redirect Miyoo Mini Plus
+  RewriteRule ^devices/miyoo-mini-plus/?$ /categories/gaming-handhelds/miyoo-mini-plus/ [R=301,L]
+  # Redirect Anbernic RG35XX Plus / H
+  RewriteRule ^devices/anbernic-rg35xx-plus-h/?$ /categories/gaming-handhelds/anbernic-rg35xx-plus-h/ [R=301,L]
+  # Redirect Retroid Pocket 4 / 4 Pro
+  RewriteRule ^devices/retroid-pocket-4-pro/?$ /categories/gaming-handhelds/retroid-pocket-4-pro/ [R=301,L]
+  # Redirect Lenovo Legion Go S
+  RewriteRule ^devices/lenovo-legion-go-s/?$ /categories/gaming-handhelds/lenovo-legion-go-s/ [R=301,L]
+  # Redirect MSI Claw (A1M)
+  RewriteRule ^devices/msi-claw/?$ /categories/gaming-handhelds/msi-claw/ [R=301,L]
+  # Redirect GPD Win Mini
+  RewriteRule ^devices/gpd-win-mini/?$ /categories/gaming-handhelds/gpd-win-mini/ [R=301,L]
+  # Redirect Egret II Mini
+  RewriteRule ^devices/egret-ii-mini/?$ /categories/gaming-handhelds/egret-ii-mini/ [R=301,L]
+  # Redirect Analogue Pocket
+  RewriteRule ^devices/analogue-pocket/?$ /categories/gaming-handhelds/analogue-pocket/ [R=301,L]
+  # Redirect Sony PS Vita (SD2Vita)
+  RewriteRule ^devices/sony-ps-vita-sd2vita/?$ /categories/gaming-handhelds/sony-ps-vita-sd2vita/ [R=301,L]
+  # Redirect Anbernic RG556
+  RewriteRule ^devices/anbernic-rg556/?$ /categories/gaming-handhelds/anbernic-rg556/ [R=301,L]
+  # Redirect R36S Retro Handheld
+  RewriteRule ^devices/r36s/?$ /categories/gaming-handhelds/r36s/ [R=301,L]
+  # Redirect Retroid Pocket 6
+  RewriteRule ^devices/retroid-pocket-6/?$ /categories/gaming-handhelds/retroid-pocket-6/ [R=301,L]
+  # Redirect Retroid Pocket 5
+  RewriteRule ^devices/retroid-pocket-5/?$ /categories/gaming-handhelds/retroid-pocket-5/ [R=301,L]
+  # Redirect ASUS ROG Xbox Ally X
+  RewriteRule ^devices/rog-xbox-ally-x/?$ /categories/gaming-handhelds/rog-xbox-ally-x/ [R=301,L]
+  # Redirect Lenovo Legion Go 2
+  RewriteRule ^devices/lenovo-legion-go-gen-2/?$ /categories/gaming-handhelds/lenovo-legion-go-gen-2/ [R=301,L]
+  # Redirect MSI Claw 8 EX AI+
+  RewriteRule ^devices/msi-claw-8-ex-ai-plus/?$ /categories/gaming-handhelds/msi-claw-8-ex-ai-plus/ [R=301,L]
+  # Redirect Retroid Pocket Mini
+  RewriteRule ^devices/retroid-pocket-mini/?$ /categories/gaming-handhelds/retroid-pocket-mini/ [R=301,L]
+  # Redirect OneXPlayer 3
+  RewriteRule ^devices/onexplayer-3/?$ /categories/gaming-handhelds/onexplayer-3/ [R=301,L]
+  # Redirect Anbernic RG35XX SP
+  RewriteRule ^devices/anbernic-rg35xx-sp/?$ /categories/gaming-handhelds/anbernic-rg35xx-sp/ [R=301,L]
+  # Redirect Anbernic RG406H / RG406V
+  RewriteRule ^devices/anbernic-rg406v-rg406h/?$ /categories/gaming-handhelds/anbernic-rg406v-rg406h/ [R=301,L]
+  # Redirect TrimUI Brick
+  RewriteRule ^devices/trimui-brick/?$ /categories/gaming-handhelds/trimui-brick/ [R=301,L]
+  # Redirect AYN Odin 3 / Odin 2 Portal
+  RewriteRule ^devices/ayn-odin-3-odin-2-portal/?$ /categories/gaming-handhelds/ayn-odin-3-odin-2-portal/ [R=301,L]
+  # Redirect Anbernic RG Cube
+  RewriteRule ^devices/anbernic-rg-cube/?$ /categories/gaming-handhelds/anbernic-rg-cube/ [R=301,L]
+  # Redirect Akai MPC Live II
+  RewriteRule ^devices/akai-mpc-live-ii/?$ /categories/music-production/akai-mpc-live-ii/ [R=301,L]
+  # Redirect Akai MPC One+
+  RewriteRule ^devices/akai-mpc-one-plus/?$ /categories/music-production/akai-mpc-one-plus/ [R=301,L]
+  # Redirect Roland SP-404MKII
+  RewriteRule ^devices/roland-sp-404mkii/?$ /categories/music-production/roland-sp-404mkii/ [R=301,L]
+  # Redirect Akai MPC X
+  RewriteRule ^devices/akai-mpc-x/?$ /categories/music-production/akai-mpc-x/ [R=301,L]
+  # Redirect Polyend Tracker+
+  RewriteRule ^devices/polyend-tracker-plus/?$ /categories/music-production/polyend-tracker-plus/ [R=301,L]
+  # Redirect Roland MC-707 Groovebox
+  RewriteRule ^devices/roland-mc-707/?$ /categories/music-production/roland-mc-707/ [R=301,L]
+  # Redirect 1010music Blackbox
+  RewriteRule ^devices/1010music-blackbox/?$ /categories/music-production/1010music-blackbox/ [R=301,L]
+  # Redirect Wyze Cam v3
+  RewriteRule ^devices/wyze-cam-v3/?$ /categories/security-cameras/wyze-cam-v3/ [R=301,L]
+  # Redirect Eufy Security SoloCam S340
+  RewriteRule ^devices/eufy-solocam-s340/?$ /categories/security-cameras/eufy-solocam-s340/ [R=301,L]
+  # Redirect Reolink E1 Pro
+  RewriteRule ^devices/reolink-e1-pro/?$ /categories/security-cameras/reolink-e1-pro/ [R=301,L]
+  # Redirect iPhone 15 / 15 Pro
+  RewriteRule ^devices/iphone-15/?$ /categories/smartphones/iphone-15/ [R=301,L]
+  # Redirect iPhone 14 / 14 Pro
+  RewriteRule ^devices/iphone-14/?$ /categories/smartphones/iphone-14/ [R=301,L]
+  # Redirect iPhone 13 / 13 Pro
+  RewriteRule ^devices/iphone-13/?$ /categories/smartphones/iphone-13/ [R=301,L]
+  # Redirect iPhone 14 Pro Max
+  RewriteRule ^devices/iphone-14-pro-max/?$ /categories/smartphones/iphone-14-pro-max/ [R=301,L]
+  # Redirect iPhone SE (3rd Generation)
+  RewriteRule ^devices/iphone-se/?$ /categories/smartphones/iphone-se/ [R=301,L]
+  # Redirect Samsung Galaxy S23 / S23+
+  RewriteRule ^devices/samsung-galaxy-s23/?$ /categories/smartphones/samsung-galaxy-s23/ [R=301,L]
+  # Redirect Google Pixel 8 / 8 Pro
+  RewriteRule ^devices/google-pixel-8/?$ /categories/smartphones/google-pixel-8/ [R=301,L]
+
+  # Catch any remaining /devices/ URLs
+  RewriteRule ^devices/(.*)$ /categories/$1 [R=301,L]
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options nosniff
+  Header set X-Frame-Options SAMEORIGIN
+  Header set X-XSS-Protection "1; mode=block"
+</IfModule>

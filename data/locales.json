@@ -1,0 +1,33 @@
+{
+  "_comment": "Locale registry. `dir` is the URL path segment (empty for English at the root). `enabled` gates whether build.js builds this locale at all. `navSections` controls which nav/sidebar sections render for the locale via components.js - keep this in sync with what content actually exists for that locale (e.g. don't add 'calculators' until translated calculator pages exist).",
+  "en": {
+    "name": "English",
+    "dir": "",
+    "enabled": true,
+    "navSections": ["categories", "calculators", "guides", "compare", "readers", "cars", "legal"]
+  },
+  "ja": {
+    "name": "Japanese (日本語)",
+    "dir": "ja",
+    "enabled": true,
+    "navSections": ["categories", "guides", "legal"]
+  },
+  "de": {
+    "name": "Deutsch",
+    "dir": "de",
+    "enabled": true,
+    "navSections": ["categories"]
+  },
+  "fr": {
+    "name": "Français",
+    "dir": "fr",
+    "enabled": false,
+    "navSections": ["categories", "guides", "legal"]
+  },
+  "it": {
+    "name": "Italiano",
+    "dir": "it",
+    "enabled": false,
+    "navSections": ["categories", "guides", "legal"]
+  }
+}

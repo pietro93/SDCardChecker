@@ -1,0 +1,75 @@
+{
+  "_comment": "Canonical category registry. Every generator resolves a raw device.category value to a slug via matchValues, and looks up a display label per locale here — instead of each file keeping its own copy of this table. Add new matchValues (Title Case EN, kebab-case EN, or a translated form) here when a new representation appears in data files; do not re-add per-file category maps.",
+  "action-cameras": {
+    "slug": "action-cameras",
+    "icon": "action-camera",
+    "label": { "en": "Action Cameras", "ja": "アクションカメラ", "de": "Actionkameras", "fr": "", "it": "" },
+    "matchValues": ["Action Cameras", "action-cameras", "アクションカメラ"]
+  },
+  "cameras": {
+    "slug": "cameras",
+    "icon": "camera",
+    "label": { "en": "Cameras", "ja": "カメラ", "de": "Kameras", "fr": "", "it": "" },
+    "matchValues": ["Cameras", "cameras", "カメラ", "Film Cameras", "film-cameras", "DSLR Cameras", "dslr-cameras", "Mirrorless Cameras", "mirrorless-cameras", "Cinema Cameras", "cinema-cameras", "Trail Cameras", "trail-cameras"]
+  },
+  "audio-and-hi-fi": {
+    "slug": "audio-and-hi-fi",
+    "icon": "audio-hi-fi",
+    "label": { "en": "Audio & Hi-Fi", "ja": "オーディオ・ハイファイ", "de": "Audio & Hi-Fi", "fr": "", "it": "" },
+    "matchValues": ["Audio & Hi-Fi", "audio-and-hi-fi"]
+  },
+  "computing-and-tablets": {
+    "slug": "computing-and-tablets",
+    "icon": "computing",
+    "label": { "en": "Computing & Tablets", "ja": "コンピュータ・タブレット", "de": "Computer & Tablets", "fr": "", "it": "" },
+    "matchValues": ["Computing & Tablets", "computing-and-tablets", "コンピュータ・タブレット"]
+  },
+  "dash-cams": {
+    "slug": "dash-cams",
+    "icon": "dashcam",
+    "label": { "en": "Dash Cams", "ja": "ドライブレコーダー", "de": "Dashcams", "fr": "", "it": "" },
+    "matchValues": ["Dash Cams", "dash-cams", "ドライブレコーダー"]
+  },
+  "drones": {
+    "slug": "drones",
+    "icon": "drone",
+    "label": { "en": "Drones", "ja": "ドローン", "de": "Drohnen", "fr": "", "it": "" },
+    "matchValues": ["Drones", "drones", "ドローン"]
+  },
+  "gaming-handhelds": {
+    "slug": "gaming-handhelds",
+    "icon": "gaming",
+    "label": { "en": "Gaming Handhelds", "ja": "携帯ゲーム機", "de": "Handheld-Konsolen", "fr": "", "it": "" },
+    "matchValues": ["Gaming Handhelds", "gaming-handhelds", "携帯ゲーム機"]
+  },
+  "music-production": {
+    "slug": "music-production",
+    "icon": "music-production",
+    "label": { "en": "Music Production", "ja": "音楽制作", "de": "Musikproduktion", "fr": "", "it": "" },
+    "matchValues": ["Music Production", "music-production"]
+  },
+  "security-cameras": {
+    "slug": "security-cameras",
+    "icon": "security-camera",
+    "label": { "en": "Security Cameras", "ja": "セキュリティカメラ", "de": "Überwachungskameras", "fr": "", "it": "" },
+    "matchValues": ["Security Cameras", "security-cameras", "セキュリティカメラ"]
+  },
+  "smartphones": {
+    "slug": "smartphones",
+    "icon": "smartphone",
+    "label": { "en": "Smartphones", "ja": "スマートフォン", "de": "Smartphones", "fr": "", "it": "" },
+    "matchValues": ["Smartphones", "smartphones", "スマートフォン", "Smartphones & Tablets"]
+  },
+  "accessories": {
+    "slug": "accessories",
+    "icon": "accessory",
+    "label": { "en": "Accessories", "ja": "アクセサリー", "de": "Zubehör", "fr": "", "it": "" },
+    "matchValues": ["Accessories", "accessories", "アクセサリー"]
+  },
+  "3d-printers-and-fabrication": {
+    "slug": "3d-printers-and-fabrication",
+    "icon": "3d-printer",
+    "label": { "en": "3D Printers & Fabrication", "ja": "3Dプリンター", "de": "3D-Drucker", "fr": "", "it": "" },
+    "matchValues": ["3D Printers & Fabrication", "3d-printers-and-fabrication"]
+  }
+}

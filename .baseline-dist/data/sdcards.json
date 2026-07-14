@@ -1,0 +1,1656 @@
+{
+  "sdcards": [
+    {
+      "id": "sandisk-extreme-microsd",
+      "name": "SanDisk Extreme microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 190 MB/s",
+        "writeSpeed": "Up to 130 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        1500
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/sandisk-extreme-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+microSD+V30&tag=sd-cc-20",
+      "pros": "The gold standard. Fast, reliable, A2 rated, and widely available.",
+      "cons": "Write speeds are slower on 32GB/64GB capacities.",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-extreme-microsd-action-cam",
+      "name": "SanDisk Extreme microSD (Action Cam Edition)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 245 MB/s",
+        "writeSpeed": "Up to 170 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/sandisk-extreme-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+microSD+245MB+Action+Cam&tag=sd-cc-20",
+      "pros": "Highest sustained read/write speeds in the Extreme microSD line. Built for 4K/5.3K action cam footage.",
+      "cons": "No A2 app performance rating — tuned for sustained video, not app storage.",
+      "tier": "recommended",
+      "notes": "Distinct higher-speed SKU from the standard SanDisk Extreme microSD (this one foregoes A2 rating for faster sequential speeds); sold separately and marketed specifically for action cameras."
+    },
+    {
+      "id": "samsung-evo-select-microsd",
+      "name": "Samsung EVO Select (Blue)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 130 MB/s",
+        "writeSpeed": "Up to 60 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/samsung-evo-select-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Samsung+EVO+Select+microSD&tag=sd-cc-20",
+      "pros": "Best value for money. Excellent 10-year warranty.",
+      "cons": "Slower write speeds than SanDisk Extreme.",
+      "tier": "budget"
+    },
+    {
+      "id": "lexar-professional-633x",
+      "name": "Lexar Professional 633x (Blue Series)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 45 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/lexar-professional-633x.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Blue+Series+microSD&tag=sd-cc-20",
+      "pros": "Reliable budget option for 1080p and basic 4K.",
+      "cons": "Significantly slower than Silver/Gold lines.",
+      "tier": "budget"
+    },
+    {
+      "id": "kingston-canvas-go-plus",
+      "name": "Kingston Canvas Go! Plus",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 170 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/kingston-canvas-go-plus.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+Go+Plus+microSD&tag=sd-cc-20",
+      "pros": "Fantastic performance. Often includes a fast reader.",
+      "cons": "Harder to find in retail stores than SanDisk.",
+      "tier": "recommended"
+    },
+    {
+      "id": "kingston-canvas-go-plus-ultra",
+      "name": "Kingston Canvas Go! Plus (Mapped)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 170 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/kingston-canvas-go-plus.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+Go+Plus+microSD&tag=sd-cc-20",
+      "pros": "Fantastic performance. Often includes a fast reader.",
+      "cons": "Harder to find in retail stores than SanDisk.",
+      "tier": "recommended"
+    },
+    {
+      "id": "kingston-canvas-go",
+      "name": "Kingston Canvas Go! (Legacy)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 90 MB/s",
+        "writeSpeed": "Up to 45 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/kingston-canvas-go.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+Go+microSD&tag=sd-cc-20",
+      "pros": "Good older card if found cheap.",
+      "cons": "Superseded by the much faster 'Plus' model.",
+      "tier": "budget"
+    },
+    {
+      "id": "lexar-professional-1000x-microsd",
+      "name": "Lexar Professional Gold (1800x)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V60",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 280 MB/s",
+        "writeSpeed": "Up to 180 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/lexar-professional-1000x.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+Gold+microSD&tag=sd-cc-20",
+      "pros": "True UHS-II speeds. Excellent for drones.",
+      "cons": "Expensive per GB.",
+      "tier": "professional"
+    },
+    {
+      "id": "lexar-professional-silver-microsd",
+      "name": "Lexar Professional Silver (1066x)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 160 MB/s",
+        "writeSpeed": "Up to 120 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/lexar-professional-silver-sd-uhs-ii.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+Silver+microSD&tag=sd-cc-20",
+      "pros": "Great value V30 card. High write speeds.",
+      "cons": "Requires Lexar reader for full read speed.",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-ultra-microsd",
+      "name": "SanDisk Ultra microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V10",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 195 MB/s",
+        "writeSpeed": "Up to 20 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        1500
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/sandisk-extreme-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Ultra+microSD&tag=sd-cc-20",
+      "pros": "Cheap, reliable, huge capacities available.",
+      "cons": "Too slow for 4K video.",
+      "tier": "budget"
+    },
+    {
+      "id": "kingston-canvas-select",
+      "name": "Kingston Canvas Select Plus",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V10",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 85 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/kingston-canvas-select-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+Select+Plus+microSD&tag=sd-cc-20",
+      "pros": "Ultra-affordable lifetime warranty.",
+      "cons": "Not V30 rated. Avoid for 4K.",
+      "tier": "budget"
+    },
+    {
+      "id": "sandisk-max-endurance",
+      "name": "SanDisk MAX ENDURANCE",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "U3",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 40 MB/s",
+        "endurance": "Up to 120,000 Hours"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Specialty",
+      "imageUrl": "/img/cards/sandisk-max-endurance-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+MAX+ENDURANCE+microSD&tag=sd-cc-20",
+      "pros": "Extreme durability for 24/7 recording.",
+      "cons": "Slower write speeds.",
+      "tier": "specialty"
+    },
+    {
+      "id": "samsung-pro-endurance",
+      "name": "Samsung PRO Endurance",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "U3",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 40 MB/s",
+        "endurance": "Up to 140,000 Hours"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Specialty",
+      "imageUrl": "/img/cards/samsung-pro-endurance-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Samsung+PRO+Endurance+microSD&tag=sd-cc-20",
+      "pros": "Market leader for dash cams. Very reliable.",
+      "cons": "Optimize for longevity, not speed.",
+      "tier": "specialty"
+    },
+    {
+      "id": "lexar-play-microsd",
+      "name": "Lexar Play microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 150 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        128,
+        256,
+        512,
+        1024
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/lexar-professional-1000x.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Play+microSD&tag=sd-cc-20",
+      "pros": "Huge 1TB capacity for cheap. Great for Switch.",
+      "cons": "Not reliable for 4K video.",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-rog-ally-microsd",
+      "name": "SanDisk microSD for ROG Ally",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 190 MB/s",
+        "writeSpeed": "Up to 130 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        512,
+        1024
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/sandisk-extreme-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+ROG+Xbox+Ally+microSD&tag=sd-cc-20",
+      "pros": "Officially licensed. Cool branding.",
+      "cons": "More expensive than standard Extreme.",
+      "tier": "recommended"
+    },
+    {
+      "id": "adata-premier-microsd",
+      "name": "ADATA Premier microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V10",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 25 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/adata-premier-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=ADATA+Premier+microSD&tag=sd-cc-20",
+      "pros": "Extremely cheap.",
+      "cons": "Very slow writes.",
+      "tier": "budget"
+    },
+    {
+      "id": "transcend-standard-microsd",
+      "name": "Transcend 300S microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 40 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/transcend-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Transcend+300S+microSD&tag=sd-cc-20",
+      "pros": "Solid budget choice.",
+      "cons": "Slower random performance.",
+      "tier": "budget"
+    },
+    {
+      "id": "adata-premier-pro-microsd",
+      "name": "ADATA Premier Pro microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 80 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/adata-premier-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=ADATA+Premier+Pro+microSD&tag=sd-cc-20",
+      "pros": "Good specs for the price.",
+      "cons": "Brand less popular than SanDisk.",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-extreme-pro-microsd-v60",
+      "name": "SanDisk Extreme PRO microSD UHS-II",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V60",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 280 MB/s",
+        "writeSpeed": "Up to 100 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/sandisk-extreme-pro-sd-uhs-ii.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+microSD+UHS-II&tag=sd-cc-20",
+      "pros": "True UHS-II speeds for drones.",
+      "cons": "Very expensive.",
+      "tier": "professional"
+    },
+    {
+      "id": "sandisk-extreme-pro-cfexpress",
+      "name": "SanDisk Extreme PRO CFexpress Type B",
+      "type": "CFexpress Type B",
+      "specs": {
+        "uhs": "None",
+        "speedClass": "VPG-400",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 1700 MB/s",
+        "writeSpeed": "Up to 1400 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/sandisk-extreme-pro-cfast-2.0.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+CFexpress&tag=sd-cc-20",
+      "pros": "The standard for Canon R5 and Nikon Z8.",
+      "cons": "Runs hot.",
+      "tier": "professional"
+    },
+    {
+      "id": "lexar-professional-1000x-v60",
+      "name": "Lexar Professional Gold (1800x) V60",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V60",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 280 MB/s",
+        "writeSpeed": "Up to 205 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/lexar-professional-1000x.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+Gold+UHS-II+SD&tag=sd-cc-20",
+      "pros": "Near V90 speeds for V60 price.",
+      "cons": "Durability is average.",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-extreme-pro-sd-uhs2",
+      "name": "SanDisk Extreme PRO SD UHS-II",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V90",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 300 MB/s",
+        "writeSpeed": "Up to 260 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/sandisk-extreme-pro-sd-uhs-ii.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+SD+UHS-II&tag=sd-cc-20",
+      "pros": "Professional standard for weddings and cinema.",
+      "cons": "High cost per GB.",
+      "tier": "professional"
+    },
+    {
+      "id": "lexar-professional-silver-sd",
+      "name": "Lexar Professional Silver SD",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 160 MB/s",
+        "writeSpeed": "Up to 120 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/lexar-professional-silver-sd-uhs-ii.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+Silver+SD&tag=sd-cc-20",
+      "pros": "Great value V30 card.",
+      "cons": "Speeds dip when buffer fills.",
+      "tier": "recommended"
+    },
+    {
+      "id": "kingston-canvas-go-pro-sd",
+      "name": "Kingston Canvas Go! Plus SD (Mapped)",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 170 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/kingston-canvas-go-pro-sd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+Go+Plus+SD&tag=sd-cc-20",
+      "pros": "Excellent UHS-I speeds.",
+      "cons": "Confusing naming vs React series.",
+      "tier": "recommended"
+    },
+    {
+      "id": "nikon-xqd-memory-card",
+      "name": "Nikon XQD Memory Card",
+      "type": "XQD",
+      "specs": {
+        "uhs": "None",
+        "speedClass": "EB-Stream",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 440 MB/s",
+        "writeSpeed": "Up to 400 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        120
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nikon-xqd-memory-card.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Nikon+XQD+Memory+Card&tag=sd-cc-20",
+      "pros": "Official Nikon solution for D850/Z7.",
+      "cons": "Legacy format.",
+      "tier": "professional"
+    },
+    {
+      "id": "sandisk-extreme-pro-cfast-2.0",
+      "name": "SanDisk Extreme PRO CFast 2.0",
+      "type": "CFast",
+      "specs": {
+        "uhs": "None",
+        "speedClass": "VPG-130",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 525 MB/s",
+        "writeSpeed": "Up to 450 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/sandisk-extreme-pro-cfast-2.0.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+CFast+2.0&tag=sd-cc-20",
+      "pros": "Cinema grade reliability.",
+      "cons": "Price per GB is high.",
+      "tier": "professional"
+    },
+    {
+      "id": "sony-tough-g-v90",
+      "name": "Sony TOUGH G-Series SD",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V90",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 300 MB/s",
+        "writeSpeed": "Up to 299 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/sony-tough-g-v90.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Sony+TOUGH+G+V90+SD+Card&tag=sd-cc-20",
+      "pros": "Indestructible one-piece mold. Fastest write speeds.",
+      "cons": "Extremely expensive.",
+      "tier": "professional"
+    },
+    {
+      "id": "kingston-canvas-react-sd",
+      "name": "Kingston Canvas React Plus SD",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V90",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 300 MB/s",
+        "writeSpeed": "Up to 260 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/kingston-canvas-react-sd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+React+Plus+SD&tag=sd-cc-20",
+      "amazonDirectUrl": "https://www.amazon.com/dp/B09XC5FX1Z?tag=uproot01-20",
+      "pros": "Best value V90 card.",
+      "cons": "Harder to find in stores.",
+      "tier": "professional"
+    },
+    {
+      "id": "sandisk-extreme-pro-cfexpress-type-a",
+      "name": "SanDisk Extreme PRO CFexpress Type A",
+      "type": "CFexpress Type A",
+      "specs": {
+        "uhs": "None",
+        "speedClass": "VPG-400",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 800 MB/s",
+        "writeSpeed": "Up to 700 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        80,
+        160,
+        320
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/sandisk-extreme-pro-cfast-2.0.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+CFexpress+Type+A&tag=sd-cc-20",
+      "pros": "Required for Sony S&Q modes.",
+      "cons": "Extremely expensive.",
+      "tier": "professional"
+      },
+      {
+      "id": "lexar-professional-1000x-sd",
+      "name": "Lexar Professional 1667x Silver SD (Legacy ID)",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V60",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 250 MB/s",
+        "writeSpeed": "Up to 120 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/lexar-professional-silver-sd-uhs-ii.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+1667x+SD&tag=sd-cc-20",
+      "pros": "Cheapest entry into UHS-II.",
+      "cons": "Slower than V90.",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-extreme-sd-uhs1",
+      "name": "SanDisk Extreme SD UHS-I",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 180 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/sandisk-extreme-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+SD+UHS-I+V30&tag=sd-cc-20",
+      "pros": "Gold standard for 4K video.",
+      "cons": "Slower buffer clearing.",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-ultra-sd-uhs1",
+      "name": "SanDisk Ultra SD UHS-I",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "C10",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 120 MB/s",
+        "writeSpeed": "Up to 40 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/sandisk-extreme-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Ultra+SD+UHS-I&tag=sd-cc-20",
+      "pros": "Cheap, reliable for photos.",
+      "cons": "Not for 4K video.",
+      "tier": "budget"
+    },
+    {
+      "id": "lexar-professional-633x-sd",
+      "name": "Lexar Professional 633x SD (Blue Series)",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 95 MB/s",
+        "writeSpeed": "Up to 45 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/lexar-professional-633x.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+633x+SD&tag=sd-cc-20",
+      "pros": "Good budget option.",
+      "cons": "Slower than Silver/Gold.",
+      "tier": "budget"
+    },
+    {
+      "id": "sandisk-extreme-pro-sd-uhs1",
+      "name": "SanDisk Extreme PRO SD UHS-I",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 250 MB/s",
+        "writeSpeed": "Up to 120 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/sandisk-extreme-pro-sd-uhs-ii.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+SD+UHS-I&tag=sd-cc-20",
+      "pros": "Fastest UHS-I card available.",
+      "cons": "Premium pricing.",
+      "tier": "recommended",
+      "notes": "Specs reflect the current-generation SDSDXXJ SKU (250 MB/s read / 120 MB/s write). An earlier SDSDXXD revision trades a slightly lower read speed for a higher 140 MB/s write — check the exact SKU if write speed matters more than read speed for your use case."
+    },
+    {
+      "id": "kingston-high-endurance",
+      "name": "Kingston High Endurance microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V10",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 95 MB/s",
+        "writeSpeed": "Up to 45 MB/s",
+        "endurance": "20,000 Hours"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/kingston-high-endurance-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Kingston+High+Endurance+microSD&tag=sd-cc-20",
+      "pros": "Good budget option for light security.",
+      "cons": "Lower endurance rating than Samsung/SanDisk.",
+      "tier": "specialty"
+    },
+    {
+      "id": "amazon-basics-microsd",
+      "name": "Amazon Basics Micro SDXC",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "U3",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/micro-uhs1-generic.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Amazon+Basics+Micro+SDXC+Memory+Card&tag=sd-cc-20",
+      "pros": "Great value for budget buyers. Reliable performance for everyday use and basic 4K. A2 rated for app performance.",
+      "cons": "Limited to U3 (no V30 rating), slower sustained write speeds than premium cards.",
+      "tier": "budget"
+    },
+    {
+      "id": "samsung-pro-plus-microsd",
+      "name": "Samsung PRO Plus microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 160 MB/s",
+        "writeSpeed": "Up to 120 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/samsung-pro-endurance-microsd.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Samsung+PRO+Plus+microSD&tag=sd-cc-20",
+      "pros": "Excellent performance for 4K video. Great thermal management. Durable design.",
+      "cons": "More expensive than Samsung EVO Select.",
+      "tier": "recommended"
+    },
+    {
+      "id": "kingston-canvas-react-plus-microsd",
+      "name": "Kingston Canvas React Plus microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V90",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 320 MB/s",
+        "writeSpeed": "Up to 260 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/kingston-canvas-go-plus.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Kingston+Canvas+React+Plus+microSD&tag=sd-cc-20",
+      "pros": "True UHS-II speeds. Excellent for 8K video and professional drones. Very fast writes.",
+      "cons": "High cost per GB. Overkill for casual use.",
+      "tier": "professional"
+    },
+    {
+      "id": "sandisk-nintendo-zelda-microsd",
+      "name": "SanDisk Nintendo Switch: Legend of Zelda Tears of the Kingdom",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/legend-of-zelda.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Zelda+microSD+Switch&tag=sd-cc-20",
+      "pros": "Official Nintendo licensed branding. V30 performance ideal for Switch. Available in multiple capacities.",
+      "cons": "Premium price for iconic branding.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Works in all Nintendo Switch models but will not utilize SD Express speeds in Nintendo Switch 2."
+    },
+    {
+      "id": "sandisk-nintendo-pokemon-gengar-microsd",
+      "name": "SanDisk Nintendo Switch: Pokémon Gengar",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        512
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/pokemon-gengar.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Pokémon+Gengar+microSD+Switch&tag=sd-cc-20",
+      "pros": "Purple Gengar design. Reliable V30 speeds for all Switch titles.",
+      "cons": "Limited to 512GB capacity only.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Backward compatible with Switch 2 but limited by UHS-I speed ceiling."
+    },
+    {
+      "id": "sandisk-nintendo-pokemon-snorlax-microsd",
+      "name": "SanDisk Nintendo Switch: Pokémon Snorlax",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        1024
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/pokemon-snorlax.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Pokémon+Snorlax+microSD+Switch&tag=sd-cc-20",
+      "pros": "Massive 1TB capacity. Stores entire Switch game library. Iconic Pokémon branding.",
+      "cons": "Very expensive compared to unbranded 1TB alternatives.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Perfect for digital-focused Switch owners."
+    },
+    {
+      "id": "sandisk-nintendo-pokemon-pikachu-microsd",
+      "name": "SanDisk Nintendo Switch: Pokémon Pikachu",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        256
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/pokemon-pikachu.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Pokémon+Pikachu+microSD+Switch&tag=sd-cc-20",
+      "pros": "Classic yellow Pikachu design. 256GB ideal mid-range capacity.",
+      "cons": "Limited to 256GB only.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Great for collectors and casual gamers."
+    },
+    {
+      "id": "sandisk-nintendo-yoshi-microsd",
+      "name": "SanDisk Nintendo Switch: Yoshi Edition",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/nintendo-switch/yoshi.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Yoshi+microSD+Switch&tag=sd-cc-20",
+      "pros": "Adorable Yoshi branding. Good entry-point for younger gamers.",
+      "cons": "64GB-128GB fills quickly with modern large games.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Best for indie game collections."
+    },
+    {
+      "id": "sandisk-nintendo-animal-crossing-microsd",
+      "name": "SanDisk Nintendo Switch: Animal Crossing Leaf",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        256,
+        512
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/animal-crossing-leaf.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Animal+Crossing+Leaf+microSD+Switch&tag=sd-cc-20",
+      "pros": "Charming Animal Crossing aesthetics. 256GB-512GB for mid to large libraries.",
+      "cons": "Premium price for licensed branding.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Themed for relaxed players."
+    },
+    {
+      "id": "sandisk-nintendo-mario-mushroom-microsd",
+      "name": "SanDisk Nintendo Switch: Super Mario Mushroom",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/super-mario-super-mushroom.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Super+Mario+Mushroom+microSD+Switch&tag=sd-cc-20",
+      "pros": "The most iconic Nintendo branding. Recognizable red Mushroom design.",
+      "cons": "Licensed premium pricing for mainly aesthetic appeal.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Perfect for Super Mario enthusiasts."
+    },
+    {
+      "id": "sandisk-nintendo-mario-star-microsd",
+      "name": "SanDisk Nintendo Switch: Super Mario Super Star",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        128,
+        256
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/super-mario-star.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Super+Mario+Super+Star+microSD+Switch&tag=sd-cc-20",
+      "pros": "Bright yellow star design. Excellent Super Mario series branding.",
+      "cons": "Higher cost per GB than unbranded alternatives.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Great for Mario franchise fans."
+    },
+    {
+      "id": "sandisk-nintendo-fortnite-cuddle-microsd",
+      "name": "SanDisk Nintendo Switch: Fortnite Cuddle Team Leader",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        128
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/fortnite-cuddle-team-leader.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Fortnite+Cuddle+Team+Leader+microSD+Switch&tag=sd-cc-20",
+      "pros": "Licensed Fortnite character design. 128GB good for medium game libraries.",
+      "cons": "Limited to single capacity option.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Ideal for Fortnite players on Switch."
+    },
+    {
+      "id": "sandisk-nintendo-fortnite-skull-microsd",
+      "name": "SanDisk Nintendo Switch: Fortnite Skull Trooper",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        256
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/nintendo-switch/fortnite-skull-trooper.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Nintendo+Fortnite+Skull+Trooper+microSD+Switch&tag=sd-cc-20",
+      "pros": "Iconic Fortnite Skull Trooper skin. 256GB for substantial game collection.",
+      "cons": "Premium pricing for cosmetic branding.",
+      "tier": "recommended",
+      "notes": "UHS-I only. Limited to UHS-I speeds."
+    },
+    {
+      "id": "topesel-high-endurance",
+      "name": "Topesel High Endurance (2-Pack)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 90 MB/s",
+        "endurance": "High Endurance"
+      },
+      "availableCapacities": [64, 128, 256],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/topesel-high-endurance.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Topesel+High+Endurance+microSD&tag=sd-cc-20",
+      "pros": "High Endurance rating. Perfect for dash cams and constant recording. 2-pack value.",
+      "cons": "Limited capacity options. Write speeds vary by capacity.",
+      "tier": "recommended",
+      "notes": "20% Commission. Specifically designed for high-write applications like dash cams."
+    },
+    {
+      "id": "speederlash-standard",
+      "name": "Speederlash Class 10 (2-Pack)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "Class 10",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 90 MB/s",
+        "writeSpeed": "Up to 60 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [32, 64, 128],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "imageUrl": "/img/cards/speederlash-standard.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Speederlash+Class+10+microSD&tag=sd-cc-20",
+      "pros": "Budget-friendly. Class 10 sufficient for most dash cams. 2-pack for car and backup.",
+      "cons": "Lower endurance rating. Not ideal for sustained 24/7 recording.",
+      "tier": "budget",
+      "notes": "10% Commission. Good entry-level option for casual dash cam users."
+    },
+    {
+      "id": "navtimi-toyota-nav",
+      "name": "Navtimi 2025 Toyota Navigation SD Card",
+      "brand": "Navtimi",
+      "type": "Navigation SD",
+      "navCardProduct": true,
+      "vehicleBrand": "Toyota",
+      "partNumber": "86271-0E077 compatible",
+      "specs": {
+        "mapRegion": "USA, Canada, Mexico",
+        "mapYear": "2025",
+        "cardFormat": "microSD",
+        "plugAndPlay": true
+      },
+      "priceSymbol": "$$$",
+      "priceTier": "Specialty",
+      "affiliateUrl": "https://www.amazon.com/dp/B0FQ3LKJ1P?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.DY0W6TN0ZCSP&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.DY0W6TN0ZCSP_1771576522901",
+      "affiliateUrlAlt": null,
+      "pros": "Covers 10 Toyota models. Plug and play. 2025 maps included.",
+      "cons": "Toyota-specific only. Confirm factory nav is installed.",
+      "tier": "recommended",
+      "imageUrl": "/img/cards/navtimi-toyota-nav.webp",
+      "imageSourceUrl": "https://m.media-amazon.com/images/I/41KzLypBRjL._SL500_.jpg"
+    },
+    {
+      "id": "thcbme-toyota-86271",
+      "name": "2025 Toyota Navigation SD Card (Part 86271-0E077)",
+      "brand": "Thcbme",
+      "type": "Navigation SD",
+      "navCardProduct": true,
+      "vehicleBrand": "Toyota",
+      "partNumber": "86271-0E077",
+      "specs": {
+        "mapRegion": "USA, Canada, Mexico",
+        "mapYear": "2025",
+        "cardFormat": "microSD",
+        "plugAndPlay": true
+      },
+      "priceSymbol": "$$",
+      "priceTier": "Specialty",
+      "affiliateUrl": "https://www.amazon.com/dp/B0F2J6DN2T?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.37MHQQ2MJMP63&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.37MHQQ2MJMP63_1771576541028",
+      "affiliateUrlAlt": "https://www.amazon.com/dp/B0F2J6DN2T?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.3SI2NZWLGHUP5&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.3SI2NZWLGHUP5_1771576559273",
+      "pros": "Exact OEM part number match. Budget-friendly alternative to Navtimi.",
+      "cons": "Fewer compatible models than Navtimi.",
+      "tier": "budget",
+      "imageUrl": "/img/cards/thcbme-toyota-86271.webp",
+      "imageSourceUrl": "https://m.media-amazon.com/images/I/41CJTAdy0LL._SL500_.jpg"
+    },
+    {
+      "id": "oririx-gm-nav-85856394",
+      "name": "ORIRI·X 2025 Navigation SD Card for GM (Part 85856394)",
+      "brand": "ORIRI·X",
+      "type": "Navigation SD",
+      "navCardProduct": true,
+      "vehicleBrand": "GM",
+      "partNumber": "85856394",
+      "specs": {
+        "mapRegion": "USA, Canada, Mexico",
+        "mapYear": "2025",
+        "cardFormat": "SD",
+        "plugAndPlay": true
+      },
+      "priceSymbol": "$$",
+      "priceTier": "Specialty",
+      "affiliateUrl": "https://www.amazon.com/dp/B0FS1RRPZN?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.8NUQLRGKQ9MK&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.8NUQLRGKQ9MK_1771576338363",
+      "affiliateUrlAlt": "https://www.amazon.com/dp/B0FS1RRPZN?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.28M9ZGYY4CAEB&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.28M9ZGYY4CAEB_1771576398695",
+      "pros": "2025 maps. Fits Chevrolet, Cadillac, Buick, GMC. Plug and play.",
+      "cons": "Verify part number 85856394 matches your existing card.",
+      "tier": "recommended",
+      "imageUrl": "/img/cards/oririx-gm-nav-85856394.webp",
+      "imageSourceUrl": "https://m.media-amazon.com/images/I/41NK1lriL1L._SL500_.jpg"
+    },
+    {
+      "id": "gm-nav-85713512-premium",
+      "name": "Premium 2025 GM Navigation SD Card (Part 85713512, 10yr Warranty)",
+      "brand": "Premium",
+      "type": "Navigation SD",
+      "navCardProduct": true,
+      "vehicleBrand": "GM",
+      "partNumber": "85713512",
+      "specs": {
+        "mapRegion": "USA, Canada, Mexico",
+        "mapYear": "2025",
+        "cardFormat": "SD",
+        "plugAndPlay": true,
+        "warranty": "10 Year"
+      },
+      "priceSymbol": "$$$",
+      "priceTier": "Specialty",
+      "affiliateUrl": "https://www.amazon.com/dp/B0FQVCD3X1?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.2CJVFBZJTHUVJ&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.2CJVFBZJTHUVJ_1771576453765",
+      "affiliateUrlAlt": "https://www.amazon.com/dp/B0FQVCD3X1?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.2CJVFBZJTHUVJ&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.2CJVFBZJTHUVJ_1771576590091",
+      "pros": "10-year warranty. 2025 maps. Premium tier.",
+      "cons": "Higher price. Verify part 85713512 matches your card.",
+      "tier": "recommended"
+    },
+    {
+      "id": "gm-nav-85713512-budget",
+      "name": "2024 GPS Navigation SD Card for GM (Part 85713512)",
+      "brand": "Generic",
+      "type": "Navigation SD",
+      "navCardProduct": true,
+      "vehicleBrand": "GM",
+      "partNumber": "85713512",
+      "specs": {
+        "mapRegion": "USA, Canada, Mexico",
+        "mapYear": "2024",
+        "cardFormat": "SD",
+        "plugAndPlay": true
+      },
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "affiliateUrl": "https://www.amazon.com/dp/B0DRCJKRN6?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.1AMIFFEH55P22&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.1AMIFFEH55P22_1771576303592",
+      "affiliateUrlAlt": null,
+      "pros": "Cheapest option for Part 85713512 vehicles.",
+      "cons": "2024 maps, not 2025.",
+      "tier": "budget",
+      "imageUrl": "/img/cards/gm-nav-85713512-budget.webp",
+      "imageSourceUrl": "https://m.media-amazon.com/images/I/41g+aI-WRKL._SL500_.jpg"
+    },
+    {
+      "id": "digiera-64gb-ct100",
+      "name": "DIGIERA 64GB CT100 microSDXC",
+      "brand": "DIGIERA",
+      "type": "microSD",
+      "navCardProduct": false,
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V10",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s"
+      },
+      "availableCapacities": [64],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "affiliateUrl": "https://www.amazon.com/dp/B0DQL5V4HK?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.252LNLZ49DT42&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.252LNLZ49DT42_1771576369809",
+      "affiliateUrlAlt": null,
+      "pros": "100 MB/s read. A1 rated. Comes with adapter. Very affordable.",
+      "cons": "V10 speed only — not suitable for 4K video recording.",
+      "tier": "budget"
+    },
+    {
+      "id": "speederlash-64gb-2pack",
+      "name": "Speederlash 64GB 2-Pack Camera Plus",
+      "brand": "Speederlash",
+      "type": "microSD",
+      "navCardProduct": false,
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 90 MB/s"
+      },
+      "availableCapacities": [64],
+      "packSize": 2,
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "affiliateUrl": "https://www.amazon.com/dp/B0DR933ZNP?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.15SMD76WP10IS&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.15SMD76WP10IS_1771576427871",
+      "affiliateUrlAlt": null,
+      "pros": "2-pack value. V30 + A1. Includes adapter. Good for security cameras and dash cams.",
+      "cons": "64GB only. Generic brand.",
+      "tier": "budget"
+    },
+    {
+      "id": "prograde-digital-cfexpress-type-b-gold",
+      "name": "ProGrade Digital CFexpress Type B Gold",
+      "type": "CFexpress Type B",
+      "specs": {
+        "uhs": "None",
+        "speedClass": "VPG-400",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 3400 MB/s",
+        "writeSpeed": "Up to 3000 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        240,
+        512,
+        1024,
+        2048
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "amazonSearchUrl": "https://amazon.com/s?k=ProGrade+Digital+CFexpress+Type+B+Gold&tag=sd-cc-20",
+      "pros": "Industry-standard choice for Nikon Z8/Z9 and Canon R5 8K workflows. High sustained writes prevent buffer lockup.",
+      "cons": "Premium price; overkill for casual 4K shooters.",
+      "tier": "professional",
+      "imageUrl": "/img/cards/prograde-digital-cfexpress-type-b-gold.webp"
+    },
+    {
+      "id": "angelbird-av-pro-cfexpress-type-b-mk2",
+      "name": "Angelbird AV PRO CFexpress Type B MK2",
+      "type": "CFexpress Type B",
+      "specs": {
+        "uhs": "None",
+        "speedClass": "VPG-400",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 1785 MB/s",
+        "writeSpeed": "Up to 1550 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        1024,
+        2048,
+        4096
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "amazonSearchUrl": "https://amazon.com/s?k=Angelbird+AV+PRO+CFexpress+Type+B+MK2&tag=sd-cc-20",
+      "pros": "Best-in-class thermal management and sustained write consistency for long cinema takes (Z8/Z9, Lumix S1H).",
+      "cons": "No capacities under 1TB; less brand recognition outside cinema circles.",
+      "tier": "professional"
+    },
+    {
+      "id": "sony-tough-cfexpress-type-a",
+      "name": "Sony TOUGH CFexpress Type A (CEA-G Series)",
+      "type": "CFexpress Type A",
+      "specs": {
+        "uhs": "None",
+        "speedClass": "VPG-400",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 1800 MB/s",
+        "writeSpeed": "Up to 1700 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        80,
+        160,
+        240,
+        480,
+        960,
+        1920
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "amazonSearchUrl": "https://amazon.com/s?k=Sony+TOUGH+CFexpress+Type+A+CEA-G&tag=sd-cc-20",
+      "pros": "Native, IP57-rated choice for Sony FX3/FX30/A1/A7R V; handles internal 4K120 recording heat.",
+      "cons": "Expensive per gigabyte for the Type A form factor.",
+      "tier": "professional"
+    },
+    {
+      "id": "lexar-professional-cfexpress-type-a-gold",
+      "name": "Lexar Professional CFexpress Type A Gold Series",
+      "type": "CFexpress Type A",
+      "specs": {
+        "uhs": "None",
+        "speedClass": "VPG-400",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 1800 MB/s",
+        "writeSpeed": "Up to 1650 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        80,
+        160,
+        320,
+        2048
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "amazonSearchUrl": "https://amazon.com/s?k=Lexar+Professional+CFexpress+Type+A+Gold&tag=sd-cc-20",
+      "pros": "High-capacity Type A alternative for Sony FX3/A1 shooters who find 160GB cards limiting.",
+      "cons": "Earlier Gold-series batches ran hotter than Sony's native cards under sustained 4K120.",
+      "tier": "professional"
+    },
+    {
+      "id": "prograde-digital-sdxc-v90-cobalt",
+      "name": "ProGrade Digital SDXC UHS-II V90 Cobalt",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-II",
+        "speedClass": "V90",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 300 MB/s",
+        "writeSpeed": "Up to 250 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "amazonSearchUrl": "https://amazon.com/s?k=ProGrade+Digital+SDXC+UHS-II+V90+Cobalt&tag=sd-cc-20",
+      "pros": "Trusted V90 alternative to Sony TOUGH G-Series for multi-slot bodies like the Canon R6 II and Fuji X-T5.",
+      "cons": "Premium pricing similar to Sony TOUGH G-Series.",
+      "tier": "professional"
+    },
+    {
+      "id": "silicon-power-superior-a2-microsd",
+      "name": "Silicon Power Superior A2 microSDXC",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 80 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512,
+        1024,
+        1500
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "amazonSearchUrl": "https://amazon.com/s?k=Silicon+Power+Superior+A2+microSDXC&tag=sd-cc-20",
+      "pros": "Budget king for Steam Deck and retro handhelds; A2 rating keeps game load times reasonable at a low price.",
+      "cons": "Lower sequential speeds than SanDisk/Samsung A2 cards at this price point.",
+      "tier": "budget",
+      "imageUrl": "/img/cards/silicon-power-superior-a2-microsd.webp"
+    },
+    {
+      "id": "kioxia-exceria",
+      "name": "Kioxia Exceria microSDHC",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "C10",
+        "appPerformance": "N/A",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 10 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "amazonSearchUrl": "https://amazon.com/s?k=Kioxia+Exceria+microSDHC&tag=sd-cc-20",
+      "pros": "Cheap, reliable Class 10 card; plenty fast for low-bitrate use like firmware updates and game loading.",
+      "cons": "Capped at 64GB; no speed headroom for video.",
+      "tier": "budget"
+    },
+    {
+      "id": "samsung-evo-plus",
+      "name": "Samsung EVO Plus microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 160 MB/s",
+        "writeSpeed": "Up to 60 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "priceSymbol": "$",
+      "priceTier": "Budget",
+      "amazonSearchUrl": "https://amazon.com/s?k=Samsung+EVO+Plus+microSD&tag=sd-cc-20",
+      "pros": "Community-favorite for SD2Vita modding; reliable up to 512GB+ with FAT32/exFAT formatting.",
+      "cons": "Slower write speeds than Samsung PRO Plus.",
+      "tier": "budget"
+    }
+    ]
+    }

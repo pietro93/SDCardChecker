@@ -6,6 +6,86 @@ const fs = require("fs");
 const path = require("path");
 const { injectSchema } = require("./schema");
 
+const dataDir = path.join(__dirname, "../../data");
+const locales = JSON.parse(fs.readFileSync(path.join(dataDir, "locales.json"), "utf8"));
+const categorySlugs = JSON.parse(fs.readFileSync(path.join(dataDir, "category-slugs.json"), "utf8"));
+
+const stringsCache = {};
+function loadStrings(locale) {
+  if (stringsCache[locale]) return stringsCache[locale];
+  const filePath = path.join(dataDir, "strings", `${locale}.json`);
+  const strings = fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, "utf8")) : {};
+  stringsCache[locale] = strings;
+  return strings;
+}
+
+/**
+ * Look up a dot-path string key (e.g. "nav.home") for a locale, falling back to English
+ * when the locale is missing the key entirely (lets fr/it stay stub files).
+ */
+function t(key, locale = "en") {
+  const lookup = (strings) => key.split(".").reduce((obj, part) => (obj && obj[part] !== undefined ? obj[part] : undefined), strings);
+  const value = lookup(loadStrings(locale));
+  if (value !== undefined) return value;
+  return lookup(loadStrings("en")) ?? key;
+}
+
+/**
+ * Resolve a raw device.category value (Title Case EN, kebab-case EN, or a translated
+ * form) to its canonical registry entry via data/category-slugs.json. This replaces the
+ * per-file categorySlugMap copies that used to drift out of sync (e.g. the Japanese
+ * "スマートフォン" category resolving to a mangled URL instead of "smartphones").
+ */
+function resolveCategory(categoryValue) {
+  for (const entry of Object.values(categorySlugs)) {
+    if (Array.isArray(entry.matchValues) && entry.matchValues.includes(categoryValue)) {
+      return entry;
+    }
+  }
+  return null;
+}
+
+function getCategorySlug(categoryValue) {
+  const entry = resolveCategory(categoryValue);
+  return entry ? entry.slug : categoryValue.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
+}
+
+function getCategoryLabel(categoryValue, locale = "en") {
+  const entry = resolveCategory(categoryValue);
+  if (!entry) return categoryValue;
+  return entry.label[locale] || entry.label.en;
+}
+
+function getCategoryIconName(categoryValue) {
+  const entry = resolveCategory(categoryValue);
+  return entry ? entry.icon : "camera";
+}
+
+/**
+ * Generate <link rel="alternate" hreflang="..."> tags for a page that exists in multiple
+ * locales. `pathSuffix` is the locale-agnostic path (e.g. "/", "/categories/smartphones/")
+ * appended after each locale's dir segment. `availableLocales` should be restricted to
+ * locales that actually have this exact page (e.g. a category only some locales carry) -
+ * emitting a tag for a locale that 404s on that URL is worse than omitting it.
+ */
+function generateHreflangTags(pathSuffix, availableLocales = []) {
+  const baseUrl = "https://sdcardchecker.com";
+  const present = availableLocales.filter((locale) => locales[locale]);
+  if (present.length < 2) return "";
+
+  const hrefFor = (locale) => {
+    const dir = locales[locale].dir;
+    return `${baseUrl}${dir ? "/" + dir : ""}${pathSuffix}`;
+  };
+
+  const tags = present
+    .map((locale) => `  <link rel="alternate" hreflang="${locale}" href="${hrefFor(locale)}">`)
+    .join("\n");
+  const defaultLocale = present.includes("en") ? "en" : present[0];
+  const xDefault = `  <link rel="alternate" hreflang="x-default" href="${hrefFor(defaultLocale)}">`;
+  return `${tags}\n${xDefault}`;
+}
+
 /**
  * Ensure directory exists
  */
@@ -776,8 +856,15 @@ function findActualImageFile(cardId, definedPath) {
  * compatible with existing templates and devices.json references.
  * Uses Smart Image Finder to resolve image paths.
  */
-function loadSDCardData(isJapanese = false) {
-  const filename = isJapanese ? "sdcards-ja.json" : "sdcards.json";
+function loadSDCardData(locale = "en") {
+  // Back-compat: some callers still pass the old isJapanese boolean.
+  if (locale === true) locale = "ja";
+  if (locale === false) locale = "en";
+  const localizedFilename = `sdcards-${locale}.json`;
+  const localizedPath = path.join(__dirname, "../../data", localizedFilename);
+  // Locales without their own translated SD card catalog (e.g. a new locale before its
+  // content is ready) fall back to the English data rather than failing the build.
+  const filename = locale !== "en" && fs.existsSync(localizedPath) ? localizedFilename : "sdcards.json";
   const sdcardsPath = path.join(__dirname, "../../data", filename);
   const data = JSON.parse(fs.readFileSync(sdcardsPath, "utf8"));
   const cardMap = {};
@@ -911,6 +998,14 @@ function mergeSDCardEnrichment(cardMap, enrichmentData) {
 }
 
 module.exports = {
+  locales,
+  t,
+  loadStrings,
+  resolveCategory,
+  getCategorySlug,
+  getCategoryLabel,
+  getCategoryIconName,
+  generateHreflangTags,
   ensureDir,
   readJSON,
   readTemplate,

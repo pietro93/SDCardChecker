@@ -1,93 +1,48 @@
 /**
  * SD Card Checker - Device Pages Generator
+ * Locale-parameterized: pass a locale code ("en", "ja", "de", ...) instead of forking this file per language.
+ * See data/locales.json for the locale registry and data/category-slugs.json for category slug/label resolution.
  */
 
 const path = require("path");
 const fs = require("fs");
-const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, loadSDCardData, loadSDCardEnrichment, mergeSDCardEnrichment } = require("./helpers");
+const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, loadSDCardData, loadSDCardEnrichment, mergeSDCardEnrichment, getCategorySlug, getCategoryLabel, getCategoryIconName, t } = require("./helpers");
 const { generateFAQs, mergeFAQs } = require("./generateFAQs");
 const { generateAmazonBadgesSection } = require("./amazon-badges-generator");
 const { generatePromotedCardSection } = require("./promotion-generator");
 const { loadAllCards, generateDeviceCompareWidgetHTML } = require("./generate-compare");
 const { getExplanation } = require("../lib/enrichment-loader");
 const { extractBrand, getQualifyingBrands, slugify } = require("./generate-category-pages");
+const components = require("../../src/templates/components");
+const locales = require("../../data/locales.json");
 
 const srcPath = path.join(__dirname, "../../src");
 
 /**
- * Translation strings for category names (English → Japanese)
+ * Locale-keyed label dictionaries for the small UI strings baked into device-page sections.
+ * Locales without an entry fall back to "en". Add a locale key here once its device-page
+ * strings are translated - no other code changes needed.
  */
-const CATEGORY_TRANSLATIONS = {
-    "Cameras": "カメラ",
-    "Action Cameras": "アクションカメラ",
-    "Drones": "ドローン",
-    "Gaming Handhelds": "携帯ゲーム機",
-    "Computing & Tablets": "コンピュータ・タブレット",
-    "Dash Cams": "ドライブレコーダー",
-    "Security Cameras": "セキュリティカメラ",
-    "Trail Cameras": "トレイルカメラ",
-    "Accessories": "アクセサリー",
-    "SD Card Readers": "SDカードリーダー"
+const BRANDS_TABLE_LABELS = {
+    en: { confirmed: "Verified", speedClass: "Speed Class", writeSpeed: "Write Speed", pros: "Pros", price: "Price", checkPrice: "Check Price" },
+    ja: { confirmed: "動作確認", speedClass: "速度クラス", writeSpeed: "書き込み速度", pros: "長所", price: "価格", checkPrice: "価格確認" },
+    de: { confirmed: "Bestätigt", speedClass: "Geschwindigkeitsklasse", writeSpeed: "Schreibgeschwindigkeit", pros: "Vorteile", price: "Preis", checkPrice: "Preis prüfen" },
 };
 
-/**
- * Reverse mapping: Japanese → English (for devices-ja.json)
- */
-const CATEGORY_REVERSE_TRANSLATIONS = {
-    "カメラ": "Cameras",
-    "アクションカメラ": "Action Cameras",
-    "ドローン": "Drones",
-    "携帯ゲーム機": "Gaming Handhelds",
-    "コンピュータ・タブレット": "Computing & Tablets",
-    "ドライブレコーダー": "Dash Cams",
-    "セキュリティカメラ": "Security Cameras",
-    "トレイルカメラ": "Trail Cameras",
-    "アクセサリー": "Accessories",
-    "SDカードリーダー": "SD Card Readers"
+const ENRICHED_CARD_LABELS = {
+    en: { whyCard: "Why This Card?", targetUser: "Target User", bestFor: "Best For", compareWith: "Comparison" },
+    ja: { whyCard: "なぜこのカード？", targetUser: "ユーザー向け", bestFor: "おすすめ用途", compareWith: "比較情報" },
+    de: { whyCard: "Warum diese Karte?", targetUser: "Zielgruppe", bestFor: "Am besten für", compareWith: "Vergleich" },
 };
 
-/**
- * Get component helpers based on language
- */
-function getComponentHelpers(isJapanese = false) {
-    if (isJapanese) {
-        return require("../../src/templates/components-ja");
-    }
-    return require("../../src/templates/components");
-}
+const REQUIREMENTS_BOX_LABELS = {
+    en: { format: "Format", minSpeed: "Minimum Speed", appPerformance: "App Performance", maxCapacity: "Maximum Capacity", write: "write", requiredFor: "Required for OS/Apps", upTo: "Up to", official: "Official", requirements: "SD Card Requirements", why: "Why these requirements?" },
+    ja: { format: "タイプ", minSpeed: "最低速度", appPerformance: "アプリパフォーマンス", maxCapacity: "最大容量", write: "書き込み", requiredFor: "OS/アプリに必須", upTo: "まで", official: "公式", requirements: "SD カード要件", why: "なぜこの要件?" },
+    de: { format: "Format", minSpeed: "Mindestgeschwindigkeit", appPerformance: "App-Leistung", maxCapacity: "Maximale Kapazität", write: "Schreiben", requiredFor: "Erforderlich für OS/Apps", upTo: "Bis zu", official: "Offizielle", requirements: "SD-Karten-Anforderungen", why: "Warum diese Anforderungen?" },
+};
 
-/**
- * Get English category name (handles both English input and Japanese input)
- */
-function getEnglishCategoryName(category, isJapanese = false) {
-    if (!isJapanese) {
-        return category; // Already English
-    }
-    // For Japanese devices, map back to English
-    return CATEGORY_REVERSE_TRANSLATIONS[category] || category;
-}
-
-/**
- * Get category slug for URL (always English)
- */
-function getCategorySlug(category, isJapanese = false) {
-    const englishCategory = getEnglishCategoryName(category, isJapanese);
-    return englishCategory.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
-}
-
-/**
- * Get category display name (English or Japanese)
- */
-function getCategoryDisplayName(category, isJapanese = false) {
-    if (!isJapanese) {
-        return category;
-    }
-    // If category is already in Japanese (from devices-ja.json), return as-is
-    if (CATEGORY_REVERSE_TRANSLATIONS[category]) {
-        return category;
-    }
-    // If category is in English, translate it
-    return CATEGORY_TRANSLATIONS[category] || category;
+function labelsFor(dictionary, locale) {
+    return dictionary[locale] || dictionary.en;
 }
 
 /**
@@ -106,18 +61,10 @@ function getCategoryIcon(category) {
 }
 
 /**
- * Map category names to image icon file names
+ * Map category names to image icon file names (matches data/category-slugs.json's `icon` field)
  */
 function getCategoryImageIcon(category) {
-    const iconMap = {
-        "Cameras": "camera",
-        "Action Cameras": "action-camera",
-        "Drones": "drone",
-        "Gaming Handhelds": "gaming",
-        "Computing & Tablets": "computing",
-        "Security Cameras": "security-camera"
-    };
-    return iconMap[category] || "camera"; // Default fallback
+    return getCategoryIconName(category);
 }
 
 /**
@@ -143,22 +90,9 @@ function generateUniqueMetaDescription(device, brandNames, index) {
 /**
 * Generate brand comparison table rows
 */
-function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, isJapanese = false) {
-    const labels = isJapanese ? {
-        confirmed: "動作確認",
-        speedClass: "速度クラス",
-        writeSpeed: "書き込み速度",
-        pros: "長所",
-        price: "価格",
-        checkPrice: "価格確認"
-    } : {
-        confirmed: "Verified",
-        speedClass: "Speed Class",
-        writeSpeed: "Write Speed",
-        pros: "Pros",
-        price: "Price",
-        checkPrice: "Check Price"
-    };
+function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, locale = "en") {
+    const labels = labelsFor(BRANDS_TABLE_LABELS, locale);
+    const isEnglish = locale === "en";
 
     return brandReferences
         .map((ref) => {
@@ -191,7 +125,7 @@ function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, isJapanese
             // Verified badge (check if brand is verified - default to true for now)
             const confirmedBadge = `<span class="confirmed-badge" title="${labels.confirmed}"></span>`;
 
-            const reviewLinkHtml = (!isJapanese && brand.richDescription)
+            const reviewLinkHtml = (isEnglish && brand.richDescription)
                 ? `<a href="/cards/${brand.id}/" class="table-card-review-link" style="font-size:0.8rem; color:#2563eb; text-decoration:underline;">Full Review</a>`
                 : "";
 
@@ -228,18 +162,9 @@ function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, isJapanese
  * Generate enriched card details section
  * Shows richDescription, useCase, and bestFor for each recommended card
  */
-function generateEnrichedCardDetails(brandReferences, sdcardsMap, isJapanese = false) {
-    const labels = isJapanese ? {
-        whyCard: 'なぜこのカード？',
-        targetUser: 'ユーザー向け',
-        bestFor: 'おすすめ用途',
-        compareWith: '比較情報'
-    } : {
-        whyCard: 'Why This Card?',
-        targetUser: 'Target User',
-        bestFor: 'Best For',
-        compareWith: 'Comparison'
-    };
+function generateEnrichedCardDetails(brandReferences, sdcardsMap, locale = "en") {
+    const labels = labelsFor(ENRICHED_CARD_LABELS, locale);
+    const isEnglish = locale === "en";
 
     return brandReferences
         .slice(0, 3) // Show details for top 3 cards only
@@ -253,7 +178,7 @@ function generateEnrichedCardDetails(brandReferences, sdcardsMap, isJapanese = f
                 ? card.bestFor.join(", ")
                 : "";
 
-            const cardNameHtml = !isJapanese
+            const cardNameHtml = isEnglish
                 ? `<a href="/cards/${card.id}/" class="text-slate-900 hover:text-blue-600 hover:underline">${card.name}</a>`
                 : card.name;
 
@@ -269,21 +194,21 @@ function generateEnrichedCardDetails(brandReferences, sdcardsMap, isJapanese = f
                         <p class="text-slate-700 leading-relaxed">${card.richDescription}</p>
                     </div>
                     ` : ""}
-                    
+
                     ${card.useCase ? `
                     <div class="flex gap-3">
                         <span class="font-semibold text-slate-900 flex-shrink-0">${labels.targetUser}:</span>
                         <span class="text-slate-700">${card.useCase}</span>
                     </div>
                     ` : ""}
-                    
+
                     ${bestForList ? `
                     <div class="flex gap-3">
                         <span class="font-semibold text-slate-900 flex-shrink-0">${labels.bestFor}:</span>
                         <span class="text-slate-700">${bestForList}</span>
                     </div>
                     ` : ""}
-                    
+
                     ${card.alternatives ? `
                     <div class="bg-amber-50 p-3 rounded border-l-4 border-amber-500">
                         <p class="text-slate-700 text-xs leading-relaxed">${card.alternatives}</p>
@@ -299,35 +224,11 @@ function generateEnrichedCardDetails(brandReferences, sdcardsMap, isJapanese = f
 /**
  * Generate requirements checklist box
  */
-function generateRequirementsBox(device, deviceNameShort, isJapanese = false) {
+function generateRequirementsBox(device, deviceNameShort, locale = "en") {
     // Ensure deviceNameShort is always a string
     const safeDeviceName = deviceNameShort || device.name;
     const { sdCard, whySpecs } = device;
-
-    // Japanese translations
-    const labels = isJapanese ? {
-        format: 'タイプ',
-        minSpeed: '最低速度',
-        appPerformance: 'アプリパフォーマンス',
-        maxCapacity: '最大容量',
-        write: '書き込み',
-        requiredFor: 'OS/アプリに必須',
-        upTo: 'まで',
-        official: '公式',
-        requirements: 'SD カード要件',
-        why: 'なぜこの要件?'
-    } : {
-        format: 'Format',
-        minSpeed: 'Minimum Speed',
-        appPerformance: 'App Performance',
-        maxCapacity: 'Maximum Capacity',
-        write: 'write',
-        requiredFor: 'Required for OS/Apps',
-        upTo: 'Up to',
-        official: 'Official',
-        requirements: 'SD Card Requirements',
-        why: 'Why these requirements?'
-    };
+    const labels = labelsFor(REQUIREMENTS_BOX_LABELS, locale);
 
     const rows = [
         {
@@ -452,12 +353,37 @@ function generateAlternatives(device, sdcardsMap) {
 }
 
 /**
+ * Locale-specific "What SD Card Do I Need" first FAQ. English generator text is used as the
+ * fallback for locales without a translated entry here.
+ */
+function generateFirstFAQ(device, locale) {
+    const speedRating = device.sdCard.minSpeed;
+    if (locale === "ja") {
+        return {
+            q: `${device.name}にはどのSDカードが必要ですか？`,
+            a: `${device.name}には、信頼性の高いパフォーマンスのために<b>${device.sdCard.type}カード（${speedRating}速度評価）</b>が必要です。<b>バランスの取れた選択として${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]}容量をお勧めします</b>。デバイスは最大${device.sdCard.maxCapacity}をサポートしていますが、ほとんどのユーザーは日常使用に${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]}で十分です。<b>SanDisk、Lexar、Kingston、KIOXIA、Samsungなどの信頼できるブランドを選択してください</b>安定したパフォーマンスとデータ損失の防止を確保するために。`
+        };
+    }
+    if (locale === "de") {
+        return {
+            q: `Welche SD-Karte brauche ich für ${device.name}?`,
+            a: `Das ${device.name} benötigt eine <b>${device.sdCard.type}-Karte mit Geschwindigkeitsklasse ${speedRating}</b> für zuverlässige Leistung. <b>Wir empfehlen ${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]} als optimale Kapazität</b>, die Speicherplatz und Preis ausgewogen kombiniert. Das Gerät unterstützt bis zu ${device.sdCard.maxCapacity}, aber für die meisten Nutzer reichen ${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]} im Alltag aus. <b>Wählen Sie immer vertrauenswürdige Marken wie SanDisk, Lexar oder Kingston</b>, um eine gleichbleibende Leistung sicherzustellen und Datenverlust zu vermeiden.`
+        };
+    }
+    return {
+        q: `What SD Card Do I Need for ${device.name}?`,
+        a: `The ${device.name} requires a <b>${device.sdCard.type} card with ${speedRating} speed rating</b> for reliable performance. <b>We recommend ${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]} capacity as the sweet spot</b> balancing storage capacity with affordability. The device supports up to ${device.sdCard.maxCapacity}, though most users find ${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]} sufficient for daily use. <b>Always choose from trusted brands like SanDisk, Lexar, or Kingston</b> to ensure consistent performance and avoid data loss.`
+    };
+}
+
+/**
  * Generate single device page
  */
-function generateDevicePage(device, template, allDevices, sdcardsMap, deviceIndex = 0, isJapanese = false, allCards = []) {
+function generateDevicePage(device, template, allDevices, sdcardsMap, deviceIndex = 0, locale = "en", allCards = []) {
     const baseUrl = "https://sdcardchecker.com";
-    const categorySlug = getCategorySlug(device.category, isJapanese);
-    const deviceUrlPath = isJapanese ? `/ja/categories/${categorySlug}/${device.slug}/` : `/categories/${categorySlug}/${device.slug}/`;
+    const dirPrefix = locales[locale] && locales[locale].dir ? `/${locales[locale].dir}` : "";
+    const categorySlug = getCategorySlug(device.category);
+    const deviceUrlPath = `${dirPrefix}/categories/${categorySlug}/${device.slug}/`;
     const deviceUrl = `${baseUrl}${deviceUrlPath}`;
 
     // Get brand names from sdcards data for description
@@ -486,55 +412,49 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         answerText += ` (${device.sdCard.minSpeed} or faster)`;
     }
 
-    const requirementsBoxHTML = generateRequirementsBox(device, deviceNameShort, isJapanese);
-    const specsHTML = generateSpecsHTML(device, isJapanese);
-    const brandsTableRows = generateBrandsTable(device.recommendedBrands, sdcardsMap, device.slug, isJapanese);
-    const enrichedCardDetailsHTML = generateEnrichedCardDetails(device.recommendedBrands, sdcardsMap, isJapanese);
+    const requirementsBoxHTML = generateRequirementsBox(device, deviceNameShort, locale);
+    const specsHTML = generateSpecsHTML(device, locale === "ja");
+    const brandsTableRows = generateBrandsTable(device.recommendedBrands, sdcardsMap, device.slug, locale);
+    const enrichedCardDetailsHTML = generateEnrichedCardDetails(device.recommendedBrands, sdcardsMap, locale);
     const alternativesHTML = generateAlternatives(device, sdcardsMap);
     // Compare widget is English-only for v1 (compare.js fetches the English sdcards.json)
-    const compareWidgetHTML = isJapanese ? "" : generateDeviceCompareWidgetHTML(device, allCards);
+    const compareWidgetHTML = locale === "en" ? generateDeviceCompareWidgetHTML(device, allCards) : "";
 
-    // Generate FAQs: use custom FAQs from data, or generate programmatically
-    const generatedFAQs = generateFAQs(device, sdcardsMap, isJapanese);
-    const finalFAQs = device.faq ? mergeFAQs(device.faq, generatedFAQs, isJapanese) : generatedFAQs;
+    // Generate FAQs. English/Japanese have a programmatic generator (generateFAQs.js); other
+    // locales are content-driven only - they must supply device.faq explicitly (see
+    // data/devices-de.json) rather than risk leaking English/Japanese generated text.
+    let finalFAQs;
+    if (locale === "en" || locale === "ja") {
+        const generatedFAQs = generateFAQs(device, sdcardsMap, locale === "ja");
+        finalFAQs = device.faq ? mergeFAQs(device.faq, generatedFAQs, locale === "ja") : generatedFAQs;
+    } else {
+        finalFAQs = device.faq || [];
+    }
 
-    // Add "What SD Card Do I Need" question as first FAQ using generated answer
-    const speedRating = device.sdCard.minSpeed === 'No minimum required'
-        ? device.sdCard.minSpeed.toLowerCase()
-        : (isJapanese && device.sdCard.minSpeed === '最低要件なし' ? '最低要件なし' : device.sdCard.minSpeed);
-    
-    // Japanese version of the first FAQ
-    const firstFAQ = isJapanese ? {
-        q: `${device.name}にはどのSDカードが必要ですか？`,
-        a: `${device.name}には、信頼性の高いパフォーマンスのために<b>${device.sdCard.type}カード（${speedRating}速度評価）</b>が必要です。<b>バランスの取れた選択として${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]}容量をお勧めします</b>。デバイスは最大${device.sdCard.maxCapacity}をサポートしていますが、ほとんどのユーザーは日常使用に${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]}で十分です。<b>SanDisk、Lexar、Kingston、KIOXIA、Samsungなどの信頼できるブランドを選択してください</b>安定したパフォーマンスとデータ損失の防止を確保するために。`
-    } : {
-        q: `What SD Card Do I Need for ${device.name}?`,
-        a: `The ${device.name} requires a <b>${device.sdCard.type} card with ${speedRating} speed rating</b> for reliable performance. <b>We recommend ${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]} capacity as the sweet spot</b> balancing storage capacity with affordability. The device supports up to ${device.sdCard.maxCapacity}, though most users find ${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]} sufficient for daily use. <b>Always choose from trusted brands like SanDisk, Lexar, or Kingston</b> to ensure consistent performance and avoid data loss.`
-    };
+    const firstFAQ = generateFirstFAQ(device, locale);
     const faqsWithFirstQuestion = [firstFAQ, ...finalFAQs];
     const faqHTML = generateFAQHTML(faqsWithFirstQuestion);
 
-    const relatedDevicesSection = generateRelatedDevices(device, allDevices, isJapanese);
+    const relatedDevicesSection = generateRelatedDevices(device, allDevices, locale === "ja");
     const faqSchema = generateFAQSchema(faqsWithFirstQuestion);
     const productSchema = generateProductSchema(device.recommendedBrands, sdcardsMap);
-    // Skip Amazon badges for Japanese pages (awaiting API access)
-    const amazonBadgesSection = isJapanese ? '' : generateAmazonBadgesSection();
+    // Amazon PA-API badges are English/US-marketplace only for now (see JAPANESE_LOCALIZATION_MASTER.md)
+    const amazonBadgesSection = locale === "en" ? generateAmazonBadgesSection() : "";
 
     // Generate promoted card section - convert sdcardsMap object to array
     const sdcardsArray = Object.values(sdcardsMap);
-    const promotedCardSection = generatePromotedCardSection(device, sdcardsArray, isJapanese, getCardImageFallback);
+    const promotedCardSection = generatePromotedCardSection(device, sdcardsArray, locale === "ja", getCardImageFallback);
 
     // Generate Nintendo Branded Cards Grid (for Switch models only, not Switch 2)
     const nintendoDevicesWithGrid = ['nintendo-switch', 'nintendo-switch-oled', 'nintendo-switch-lite'];
     let nintendoBrandedCardsGrid = '';
-    
+
     if (nintendoDevicesWithGrid.includes(device.id)) {
-        const gridTemplatePath = isJapanese 
-            ? path.join(srcPath, "templates", "components", "nintendo-branded-cards-grid-ja.html")
-            : path.join(srcPath, "templates", "components", "nintendo-branded-cards-grid.html");
-        
+        const nintendoTemplateFile = locale === "ja" ? "nintendo-branded-cards-grid-ja.html" : "nintendo-branded-cards-grid.html";
+        const gridTemplatePath = path.join(srcPath, "templates", "components", nintendoTemplateFile);
+
         const nintendoGridTemplate = readTemplate(gridTemplatePath);
-        
+
         // Amazon affiliate URLs for Nintendo-branded cards
         const nintendoAffiliateUrls = {
             'ZELDA': 'https://amazon.com/s?k=SanDisk+Nintendo+Zelda+microSD+Switch&tag=sd-cc-20',
@@ -548,23 +468,20 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
             'FORTNITE_CUDDLE': 'https://amazon.com/s?k=SanDisk+Nintendo+Fortnite+Cuddle+Team+Leader+microSD+Switch&tag=sd-cc-20',
             'FORTNITE_SKULL': 'https://amazon.com/s?k=SanDisk+Nintendo+Fortnite+Skull+Trooper+microSD+Switch&tag=sd-cc-20'
         };
-        
+
         nintendoBrandedCardsGrid = nintendoGridTemplate;
         Object.entries(nintendoAffiliateUrls).forEach(([key, url]) => {
             nintendoBrandedCardsGrid = nintendoBrandedCardsGrid.replaceAll(`{{AMAZON_URL_${key}}}`, url);
         });
     }
 
-    // Get component helpers based on language
-    const components = getComponentHelpers(isJapanese);
-
-    // Get category display name (English or translated)
-    const categoryDisplayName = getCategoryDisplayName(device.category, isJapanese);
+    // Get category display name (localized label from the category registry)
+    const categoryDisplayName = getCategoryLabel(device.category, locale);
 
     // Subcategory pages (e.g. /categories/drones/dji/) only exist for English brands
     // with at least 3 devices in their category - link up to them when applicable
     let brandCrumb = null;
-    if (!isJapanese) {
+    if (locale === "en") {
         const brand = extractBrand(device.name);
         const categoryDevices = allDevices.filter((d) => d.category === device.category);
         const qualifies = getQualifyingBrands(categoryDevices).some((b) => b.brand === brand);
@@ -574,9 +491,9 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     }
 
     // Generate breadcrumb schema
-    const breadcrumbPath = isJapanese ? `/ja/categories/${categorySlug}/` : `/categories/${categorySlug}/`;
+    const breadcrumbPath = `${dirPrefix}/categories/${categorySlug}/`;
     const breadcrumbs = [
-        { name: isJapanese ? "ホーム" : "Home", url: isJapanese ? "/ja/" : "/" },
+        { name: t("breadcrumbHome", locale), url: dirPrefix ? `${dirPrefix}/` : "/" },
         { name: categoryDisplayName, url: breadcrumbPath },
         ...(brandCrumb ? [brandCrumb] : []),
         { name: device.name, url: deviceUrlPath }
@@ -595,7 +512,8 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const deviceImage = device.imageUrl || getDeviceImageFallback(device);
 
     // Try to get enriched explanation, fall back to first sentence of whySpecs
-    let explanation = getExplanation(device.category, device.slug);
+    // (only available in English today - non-English pages fall back to the device's own whySpecs)
+    let explanation = locale === "en" ? getExplanation(device.category, device.slug) : null;
     if (!explanation) {
       // Fallback: Extract first sentence from whySpecs
       // Properly match sentence end: period followed by space or end of string (avoids splitting on decimal points like 2.7K)
@@ -635,37 +553,41 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
         .replace(/{{BRAND_BREADCRUMB_HTML}}/g, brandBreadcrumbHTML)
         .replace(/{{PRODUCT_SCHEMA}}/g, productSchema)
-        .replace(/{{SIDEBAR}}/g, components.generateSidebar())
-        .replace(/{{HEADER}}/g, components.generateHeader())
-        .replace(/{{FOOTER}}/g, components.generateFooter())
+        .replace(/{{SIDEBAR}}/g, components.generateSidebar(locale))
+        .replace(/{{HEADER}}/g, components.generateHeader(locale))
+        .replace(/{{FOOTER}}/g, components.generateFooter(locale))
         .replace(/{{GROW_SCRIPT}}/g, components.generateGrowScript())
-        .replace(/{{AFFILIATE_DISCLOSURE}}/g, components.generateAffiliateDisclosure(true));
+        .replace(/{{AFFILIATE_DISCLOSURE}}/g, components.generateAffiliateDisclosure(locale, true));
 
     return html;
 }
 
 /**
- * Generate all device pages
+ * Generate all device pages for a locale
  */
-async function generateDevicePages(allDevices, distPath, isJapanese = false) {
-    const lang = isJapanese ? "Japanese" : "";
-    console.log(`Generating ${lang} device pages...`);
+async function generateDevicePages(allDevices, distPath, locale = "en") {
+    console.log(`Generating ${locale} device pages...`);
 
-    const templateFile = isJapanese ? "device-ja.html" : "device.html";
+    // Only "ja" has a fully translated static template today; other non-English locales
+    // reuse device.html (English page chrome) while injecting translated labels/data via
+    // the {{PLACEHOLDER}} slots above - full template translation is separate content work.
+    const templateFile = locale === "ja" ? "device-ja.html" : "device.html";
     let deviceTemplate = readTemplate(
         path.join(srcPath, "templates", templateFile)
     );
     // Process {% include %} tags
     deviceTemplate = processIncludes(deviceTemplate, path.join(srcPath, "templates"));
 
-    const sdcardsMap = loadSDCardData(isJapanese);
-    const allCards = isJapanese ? [] : loadAllCards();
+    const sdcardsMap = loadSDCardData(locale);
+    const allCards = locale === "en" ? loadAllCards() : [];
 
-    // Load and merge enrichment data (richDescription, useCase, bestFor, alternatives)
-    const enrichmentData = loadSDCardEnrichment();
-    if (Object.keys(enrichmentData).length > 0) {
-        mergeSDCardEnrichment(sdcardsMap, enrichmentData);
-        console.log(`  ✓ Loaded enrichment data for ${Object.keys(enrichmentData).length} SD cards`);
+    // Load and merge enrichment data (richDescription, useCase, bestFor, alternatives) - English only
+    if (locale === "en") {
+        const enrichmentData = loadSDCardEnrichment();
+        if (Object.keys(enrichmentData).length > 0) {
+            mergeSDCardEnrichment(sdcardsMap, enrichmentData);
+            console.log(`  ✓ Loaded enrichment data for ${Object.keys(enrichmentData).length} SD cards`);
+        }
     }
 
     let successCount = 0;
@@ -673,12 +595,10 @@ async function generateDevicePages(allDevices, distPath, isJapanese = false) {
 
     allDevices.forEach((device, index) => {
         try {
-            const deviceHTML = generateDevicePage(device, deviceTemplate, allDevices, sdcardsMap, index, isJapanese, allCards);
-            const categorySlug = getCategorySlug(device.category, isJapanese);
-            // Always use English slugs in URLs for both English and Japanese
-            // This is SEO best practice to avoid URL encoding issues
-            const baseDir = isJapanese ? "ja" : "";
-            const devicePath = path.join(distPath, baseDir, "categories", categorySlug, device.slug, "index.html");
+            const deviceHTML = generateDevicePage(device, deviceTemplate, allDevices, sdcardsMap, index, locale, allCards);
+            const categorySlug = getCategorySlug(device.category);
+            const dirPrefix = locales[locale] && locales[locale].dir ? locales[locale].dir : "";
+            const devicePath = path.join(distPath, dirPrefix, "categories", categorySlug, device.slug, "index.html");
             writeFile(devicePath, deviceHTML);
             successCount++;
         } catch (error) {
@@ -687,7 +607,7 @@ async function generateDevicePages(allDevices, distPath, isJapanese = false) {
         }
     });
 
-    console.log(`  ✓ Generated ${successCount}/${allDevices.length} ${lang} device pages`);
+    console.log(`  ✓ Generated ${successCount}/${allDevices.length} ${locale} device pages`);
     if (failedDevices.length > 0) {
         console.warn(`  ${failedDevices.length} devices failed: ${failedDevices.join(', ')}`);
     }

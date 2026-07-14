@@ -19,10 +19,10 @@
         "256GB",
         "512GB"
       ],
-      "maxCapacity": "2TB (theoretical)",
-      "testedMaxCapacity": "1TB"
+      "maxCapacity": "2TB",
+      "testedMaxCapacity": "2TB"
     },
-    "whySpecs": "The original Nintendo Switch is limited to the UHS-I interface with a maximum speed of 104MB/s. <b>UHS-II and SD Express cards are NOT compatible and provide no benefit</b>. The console uses standard microSD cards only. V30 rated cards from trusted brands provide the best reliability for downloading large digital libraries. All Nintendo-branded SanDisk microSD cards (Zelda, Pokémon, Mario, etc.) are standard UHS-I format and work perfectly on the original Switch.",
+    "whySpecs": "The original Nintendo Switch is limited to the UHS-I interface with a maximum speed of 104MB/s. <b>UHS-II and SD Express cards are backward compatible and will work</b>, but they downclock to the console's UHS-I speed, so their extra performance is wasted money. The console uses standard microSD/microSDHC/microSDXC cards. V30 rated cards from trusted brands provide the best reliability for downloading large digital libraries. All Nintendo-branded SanDisk microSD cards (Zelda, Pokémon, Mario, etc.) are standard UHS-I format and work perfectly on the original Switch. 2TB microSDXC cards from brands like SanDisk and Silicon Power are commercially available and have been verified to work.",
     "recommendedBrands": [
       {
         "id": "samsung-evo-select-microsd"
@@ -37,7 +37,7 @@
     "faq": [
       {
         "q": "Does the Switch support cards larger than 1TB?",
-        "a": "<b>Theoretically yes, but practically 1TB is the maximum tested capacity</b>. While Nintendo claims support for up to 2TB, no consumer cards larger than 1TB have been widely verified to work reliably with the Switch."
+        "a": "<b>Yes, 2TB microSDXC cards are verified to work</b>. Commercially available 2TB cards from brands like SanDisk and Silicon Power have been tested and confirmed to work perfectly on the Switch."
       },
       {
         "q": "Can I use a phone's microSD card?",
@@ -75,10 +75,10 @@
         "512GB",
         "1024GB"
       ],
-      "maxCapacity": "2TB (theoretical)",
-      "testedMaxCapacity": "1TB"
+      "maxCapacity": "2TB",
+      "testedMaxCapacity": "2TB"
     },
-    "whySpecs": "The Switch OLED model features 64GB of internal storage, making it ideal for users downloading large digital game libraries. <b>Like all original Switch models, the OLED is limited to UHS-I speeds (~104MB/s)</b>. UHS-II and SD Express cards are NOT compatible. V30 rated microSD cards from reputable brands are recommended for consistent performance. All officially licensed Nintendo-branded SanDisk cards (Zelda, Pokémon, Mario, etc.) work perfectly on the OLED model.",
+    "whySpecs": "The Switch OLED model features 64GB of internal storage, making it ideal for users downloading large digital game libraries. <b>Like all original Switch models, the OLED is limited to UHS-I speeds (~104MB/s)</b>. UHS-II and SD Express cards are backward compatible and will work, but downclock to UHS-I speed, so they offer no benefit on this device. V30 rated microSD cards from reputable brands are recommended for consistent performance. All officially licensed Nintendo-branded SanDisk cards (Zelda, Pokémon, Mario, etc.) work perfectly on the OLED model. 2TB microSDXC cards are commercially available and verified to work.",
     "recommendedBrands": [
       {
         "id": "kingston-canvas-go-plus"
@@ -93,7 +93,7 @@
     "faq": [
       {
         "q": "Should I buy UHS-II cards for the OLED?",
-        "a": "<b>No, UHS-II cards provide no performance benefit to the Switch OLED</b>. The console only supports UHS-I speeds (~104MB/s). UHS-II cards will work but will be limited to slower UHS-I speeds, making them a waste of money."
+        "a": "<b>No, UHS-II cards provide no performance benefit to the Switch OLED</b>. They are backward compatible and will work, but the console only supports UHS-I speeds (~104MB/s), so UHS-II cards downclock to UHS-I speed, making the extra cost a waste of money."
       },
       {
         "q": "Can I use my original Switch's card?",
@@ -227,10 +227,10 @@
         "128GB",
         "256GB"
       ],
-      "maxCapacity": "2TB (theoretical)",
-      "testedMaxCapacity": "1TB"
+      "maxCapacity": "2TB",
+      "testedMaxCapacity": "2TB"
     },
-    "whySpecs": "The Switch Lite is Nintendo's portable-only console with identical storage capabilities to the standard Switch and OLED models. <b>It is limited to UHS-I speeds (~104MB/s)</b>. UHS-II and SD Express cards are NOT compatible. Since the Lite is often used for travel and portable gaming, a reliable brand-name V30 card is essential to prevent data corruption during transit. All officially licensed Nintendo-branded SanDisk cards (Zelda, Pokémon, Mario, etc.) work perfectly on the Switch Lite.",
+    "whySpecs": "The Switch Lite is Nintendo's portable-only console with identical storage capabilities to the standard Switch and OLED models. <b>It is limited to UHS-I speeds (~104MB/s)</b>. UHS-II and SD Express cards are backward compatible and will work, but downclock to UHS-I speed, so they provide no benefit here. Since the Lite is often used for travel and portable gaming, a reliable brand-name V30 card is essential to prevent data corruption during transit. All officially licensed Nintendo-branded SanDisk cards (Zelda, Pokémon, Mario, etc.) work perfectly on the Switch Lite. 2TB microSDXC cards are commercially available and verified to work.",
     "recommendedBrands": [
       {
         "id": "samsung-evo-select-microsd"

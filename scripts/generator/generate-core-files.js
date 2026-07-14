@@ -1,196 +1,121 @@
 /**
  * SD Card Checker - Core Files Generator
- * Generates: sitemap.xml, robots.txt, privacy policy, home page
+ * Generates per locale: sitemap.xml, homepage, legal pages (where the locale has them).
+ * robots.txt and 404.html are global/English-only (see generateRobots, generate404Page).
+ * Locale-parameterized: replaces the old generate-core-files.js + generate-core-files-ja.js +
+ * generate-ja-home.js split, and folds in generate-sitemaps.js's sitemap logic (which used to
+ * write a second, unused copy to public/ - see JAPANESE_LOCALIZATION_MASTER.md history).
  */
 
 const path = require("path");
-const { readTemplate, processIncludes, writeFile } = require("./helpers");
-const { generateHeader, generateFooter, generateSidebar, generateGrowScript } = require("../../src/templates/components");
+const fs = require("fs");
+const { readTemplate, processIncludes, writeFile, getCategorySlug, generateHreflangTags, t } = require("./helpers");
+const { generateHeader, generateFooter, generateSidebar, generateGrowScript, generateAffiliateDisclosure } = require("../../src/templates/components");
 
 const srcPath = path.join(__dirname, "../../src");
+const locales = JSON.parse(fs.readFileSync(path.join(__dirname, "../../data/locales.json"), "utf8"));
 
-/**
- * Generate sitemap.xml
- */
-function generateSitemap(allDevices, allReaders, distPath) {
-  let sitemapXML = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://sdcardchecker.com/</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-`;
+function hasSection(locale, section) {
+  return !!(locales[locale] && locales[locale].navSections.includes(section));
+}
 
-  // Add readers hub pages
-  sitemapXML += `  <url>
-    <loc>https://sdcardchecker.com/readers/</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-`;
-
-  // Add reader type index pages
-  const readerTypes = ["dongle", "viewer", "mobile-adapter", "professional-hub", "hub", "stick", "desktop-dock"];
-  readerTypes.forEach((type) => {
-    sitemapXML += `  <url>
-    <loc>https://sdcardchecker.com/readers/${type}/</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-`;
-  });
-
-  // Add tools pages
-  sitemapXML += `  <url>
-    <loc>https://sdcardchecker.com/tools/</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://sdcardchecker.com/tools/calculators/</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-`;
-
-  // Add calculator pages
-  const calculators = [
-    { path: "/tools/calculators/video-storage/", priority: 0.9 },
-    { path: "/tools/calculators/photo-storage/", priority: 0.9 },
-    { path: "/tools/calculators/drone-storage/", priority: 0.9 },
-    { path: "/tools/calculators/security-camera-storage/", priority: 0.9 },
-    { path: "/tools/calculators/dashcam-storage/", priority: 0.9 },
-    { path: "/tools/calculators/action-camera-storage/", priority: 0.9 },
-    { path: "/tools/calculators/gopro-storage/", priority: 0.9 },
-    { path: "/tools/calculators/timelapse-storage/", priority: 0.9 }
-  ];
-
-  calculators.forEach((calc) => {
-    sitemapXML += `  <url>
-    <loc>https://sdcardchecker.com${calc.path}</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>${calc.priority}</priority>
-  </url>
-`;
-  });
-
-  // Add guide pages
-   const guides = [
-     { path: "/guides/sd-card-guide/", priority: 0.8 },
-     { path: "/guides/sd-card-speed-classes/", priority: 0.8 },
-     { path: "/guides/video-bitrate-comparison/", priority: 0.8 },
-     { path: "/guides/raw-vs-jpeg/", priority: 0.8 },
-     { path: "/guides/is-my-sd-card-fake/", priority: 0.8 },
-     { path: "/guides/nintendo-switch-sd-card-guide/", priority: 0.8 },
-     { path: "/guides/", priority: 0.85 },
-     { path: "/guides/readers/", priority: 0.8 },
-     { path: "/guides/readers/macbook/", priority: 0.75 },
-     { path: "/guides/readers/photographers/", priority: 0.75 },
-     { path: "/guides/readers/iphone/", priority: 0.75 },
-     { path: "/guides/readers/android/", priority: 0.75 }
-   ];
-
-   // Add guides to sitemap
-   guides.forEach((guide) => {
-     sitemapXML += `  <url>
-     <loc>https://sdcardchecker.com${guide.path}</loc>
-     <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-     <changefreq>monthly</changefreq>
-     <priority>${guide.priority}</priority>
-   </url>
-   `;
-   });
-
-   // Add resource pages
-    const resources = [
-      { path: "/faq.html", priority: 0.8 }
-     ];
-
-   resources.forEach((resource) => {
-    sitemapXML += `  <url>
-    <loc>https://sdcardchecker.com${resource.path}</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>${resource.priority}</priority>
-  </url>
-`;
-  });
-
-  // Add legal and info pages
-  const infoPages = [
-    { path: "/about.html", priority: 0.7 },
-    { path: "/contact.html", priority: 0.7 },
-    { path: "/privacy.html", priority: 0.5 },
-    { path: "/terms.html", priority: 0.5 },
-    { path: "/affiliate-disclosure.html", priority: 0.5 },
-    { path: "/sitemap.html", priority: 0.6 }
-  ];
-
-  infoPages.forEach((page) => {
-    sitemapXML += `  <url>
-    <loc>https://sdcardchecker.com${page.path}</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>${page.priority}</priority>
-  </url>
-`;
-  });
-
-  // Add reader product pages
-  if (allReaders && allReaders.length > 0) {
-    allReaders.forEach((reader) => {
-      const readerSlug = reader.slug || reader.id;
-      sitemapXML += `  <url>
-    <loc>https://sdcardchecker.com/readers/${readerSlug}/</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-`;
-    });
-  }
-
-  // Add device pages
-  allDevices.forEach((device) => {
-    const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
-    sitemapXML += `  <url>
-    <loc>https://sdcardchecker.com/categories/${categorySlug}/${device.slug}/</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-`;
-  });
-
-  // Add category pages
-  const categories = [...new Set(allDevices.map((d) => d.category))];
-  categories.forEach((category) => {
-    const slug = category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
-    sitemapXML += `  <url>
-    <loc>https://sdcardchecker.com/categories/${slug}/</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-`;
-  });
-
-  sitemapXML += `</urlset>`;
-  writeFile(path.join(distPath, "sitemap.xml"), sitemapXML);
+function dirSegment(locale) {
+  return locales[locale] && locales[locale].dir ? locales[locale].dir : "";
 }
 
 /**
- * Generate robots.txt
+ * Guides available per locale, kept in sync with src/templates/components.js's
+ * GUIDES_BY_LOCALE (duplicated here rather than imported to avoid a require cycle -
+ * components.js doesn't depend on this file).
+ */
+const GUIDES_BY_LOCALE = {
+  en: [
+    "/guides/sd-card-guide/", "/guides/sd-card-speed-classes/", "/guides/video-bitrate-comparison/",
+    "/guides/raw-vs-jpeg/", "/guides/is-my-sd-card-fake/", "/guides/nintendo-switch-sd-card-guide/",
+    "/guides/readers/", "/guides/readers/macbook/", "/guides/readers/photographers/",
+    "/guides/readers/iphone/", "/guides/readers/android/",
+  ],
+  ja: [
+    "/ja/guides/sd-card-speed-classes/", "/ja/guides/is-my-sd-card-fake/", "/ja/guides/nintendo-switch-sd-card-guide/",
+  ],
+};
+
+/**
+ * Generate sitemap.xml for a locale
+ */
+function generateSitemap(allDevices, allReaders, distPath, locale = "en") {
+  const baseUrl = "https://sdcardchecker.com";
+  const dir = dirSegment(locale);
+  const prefix = dir ? `/${dir}` : "";
+  const today = new Date().toISOString().split("T")[0];
+
+  const urls = [];
+  const add = (loc, changefreq = "monthly", priority = 0.7) => urls.push({ loc, changefreq, priority });
+
+  add(`${baseUrl}${prefix}/`, "weekly", 1.0);
+
+  // English-only sections: readers, calculators/tools, misc resource pages
+  if (locale === "en") {
+    add(`${baseUrl}/readers/`, "monthly", 0.95);
+    ["dongle", "viewer", "mobile-adapter", "professional-hub", "hub", "stick", "desktop-dock"].forEach((type) => {
+      add(`${baseUrl}/readers/${type}/`, "monthly", 0.9);
+    });
+    add(`${baseUrl}/tools/`, "monthly", 0.95);
+    add(`${baseUrl}/tools/calculators/`, "monthly", 0.95);
+    ["video-storage", "photo-storage", "drone-storage", "security-camera-storage", "dashcam-storage", "action-camera-storage", "gopro-storage", "timelapse-storage"].forEach((calc) => {
+      add(`${baseUrl}/tools/calculators/${calc}/`, "monthly", 0.9);
+    });
+    add(`${baseUrl}/faq.html`, "monthly", 0.8);
+    if (allReaders && allReaders.length > 0) {
+      allReaders.forEach((reader) => add(`${baseUrl}/readers/${reader.slug || reader.id}/`, "monthly", 0.85));
+    }
+  }
+
+  if (hasSection(locale, "guides")) {
+    (GUIDES_BY_LOCALE[locale] || []).forEach((p) => add(`${baseUrl}${p}`, "monthly", 0.8));
+    add(`${baseUrl}${prefix}/guides/`, "monthly", 0.85);
+  }
+
+  if (hasSection(locale, "legal")) {
+    add(`${baseUrl}${prefix}/about.html`, "yearly", 0.7);
+    add(`${baseUrl}${prefix}/privacy.html`, "yearly", 0.5);
+    add(`${baseUrl}${prefix}/terms.html`, "yearly", 0.5);
+    if (locale === "en") {
+      add(`${baseUrl}/contact.html`, "yearly", 0.7);
+      add(`${baseUrl}/affiliate-disclosure.html`, "yearly", 0.5);
+      add(`${baseUrl}/sitemap.html`, "yearly", 0.6);
+    }
+  }
+
+  // Device + category pages
+  allDevices.forEach((device) => {
+    const slug = getCategorySlug(device.category);
+    add(`${baseUrl}${prefix}/categories/${slug}/${device.slug}/`, "monthly", 0.8);
+  });
+  [...new Set(allDevices.map((d) => d.category))].forEach((category) => {
+    add(`${baseUrl}${prefix}/categories/${getCategorySlug(category)}/`, "monthly", 0.9);
+  });
+
+  const body = urls
+    .map((u) => `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`)
+    .join("\n");
+  const sitemapXML = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>`;
+
+  writeFile(path.join(distPath, dir, "sitemap.xml"), sitemapXML);
+  console.log(`  ✓ ${locale} sitemap: ${allDevices.length} devices, ${new Set(allDevices.map((d) => d.category)).size} categories`);
+}
+
+/**
+ * Generate robots.txt (single file at the site root - crawlers only ever fetch /robots.txt,
+ * so a per-locale copy under /ja/robots.txt etc. is never actually requested)
  */
 function generateRobots(distPath) {
-   const robotsTxt = `User-agent: *
+  const sitemapLines = Object.entries(locales)
+    .filter(([, cfg]) => cfg.enabled)
+    .map(([, cfg]) => `Sitemap: https://sdcardchecker.com${cfg.dir ? "/" + cfg.dir : ""}/sitemap.xml`)
+    .join("\n");
+
+  const robotsTxt = `User-agent: *
 Allow: /
 
 # Priority access for major search engines
@@ -209,104 +134,85 @@ User-agent: SemrushBot
 Disallow: /
 
 # Localization Sitemaps
-Sitemap: https://sdcardchecker.com/sitemap.xml
-Sitemap: https://sdcardchecker.com/ja/sitemap.xml
+${sitemapLines}
 `;
-   writeFile(path.join(distPath, "robots.txt"), robotsTxt);
+  writeFile(path.join(distPath, "robots.txt"), robotsTxt);
 }
 
 /**
-* Generate legal pages from templates
-*/
-function generateLegalPages(distPath) {
-const header = generateHeader();
-const footer = generateFooter();
-const sidebar = generateSidebar();
-const growScript = generateGrowScript();
+ * Generate legal/static pages (about, privacy, terms - plus English-only contact,
+ * affiliate-disclosure, sitemap.html) for locales that have navSections include "legal".
+ */
+function generateLegalPages(distPath, locale = "en") {
+  if (!hasSection(locale, "legal")) return;
 
-// Generate Privacy Policy
-let privacyTemplate = readTemplate(path.join(srcPath, "templates/privacy.html"));
-privacyTemplate = processIncludes(privacyTemplate, path.join(srcPath, "templates"));
-const privacyHtml = privacyTemplate
-.replace("{{HEADER}}", header)
-.replace("{{FOOTER}}", footer)
-.replace("{{SIDEBAR}}", sidebar)
-.replace("{{GROW_SCRIPT}}", growScript);
-writeFile(path.join(distPath, "privacy.html"), privacyHtml);
+  const dir = dirSegment(locale);
+  const header = generateHeader(locale);
+  const footer = generateFooter(locale);
+  const sidebar = generateSidebar(locale);
+  const growScript = generateGrowScript();
 
-// Generate Terms of Use
-let termsTemplate = readTemplate(path.join(srcPath, "templates/terms.html"));
-termsTemplate = processIncludes(termsTemplate, path.join(srcPath, "templates"));
-const termsHtml = termsTemplate
-.replace("{{HEADER}}", header)
-.replace("{{FOOTER}}", footer)
-.replace("{{SIDEBAR}}", sidebar)
-.replace("{{GROW_SCRIPT}}", growScript);
-writeFile(path.join(distPath, "terms.html"), termsHtml);
+  const renderPage = (templateName, outputName) => {
+    const suffix = locale === "en" ? "" : `-${locale}`;
+    const templatePath = path.join(srcPath, "templates", `${templateName}${suffix}.html`);
+    if (!fs.existsSync(templatePath)) return;
+    let template = readTemplate(templatePath);
+    template = processIncludes(template, path.join(srcPath, "templates"));
+    const html = template
+      .replace("{{HEADER}}", header)
+      .replace("{{FOOTER}}", footer)
+      .replace("{{SIDEBAR}}", sidebar)
+      .replace("{{GROW_SCRIPT}}", growScript);
+    writeFile(path.join(distPath, dir, outputName), html);
+  };
 
-// Generate Affiliate Disclosure
-let affiliateTemplate = readTemplate(path.join(srcPath, "templates/affiliate-disclosure.html"));
-affiliateTemplate = processIncludes(affiliateTemplate, path.join(srcPath, "templates"));
-const affiliateHtml = affiliateTemplate
-.replace("{{HEADER}}", header)
-.replace("{{FOOTER}}", footer)
-.replace("{{SIDEBAR}}", sidebar)
-.replace("{{GROW_SCRIPT}}", growScript);
-writeFile(path.join(distPath, "affiliate-disclosure.html"), affiliateHtml);
+  renderPage("privacy", "privacy.html");
+  renderPage("terms", "terms.html");
+  renderPage("about", "about.html");
 
-// Generate About Page
-let aboutTemplate = readTemplate(path.join(srcPath, "templates/about.html"));
-aboutTemplate = processIncludes(aboutTemplate, path.join(srcPath, "templates"));
-const aboutHtml = aboutTemplate
-  .replace("{{HEADER}}", header)
-  .replace("{{FOOTER}}", footer)
-  .replace("{{SIDEBAR}}", sidebar)
-  .replace("{{GROW_SCRIPT}}", growScript);
-writeFile(path.join(distPath, "about.html"), aboutHtml);
-
-// Generate Contact Page
-let contactTemplate = readTemplate(path.join(srcPath, "templates/contact.html"));
-contactTemplate = processIncludes(contactTemplate, path.join(srcPath, "templates"));
-const contactHtml = contactTemplate
-  .replace("{{HEADER}}", header)
-  .replace("{{FOOTER}}", footer)
-  .replace("{{SIDEBAR}}", sidebar)
-  .replace("{{GROW_SCRIPT}}", growScript);
-writeFile(path.join(distPath, "contact.html"), contactHtml);
-
-// Generate Sitemap Page
-let sitemapTemplate = readTemplate(path.join(srcPath, "templates/sitemap.html"));
-sitemapTemplate = processIncludes(sitemapTemplate, path.join(srcPath, "templates"));
-const sitemapHtml = sitemapTemplate
-  .replace("{{HEADER}}", header)
-  .replace("{{FOOTER}}", footer)
-  .replace("{{SIDEBAR}}", sidebar)
-  .replace("{{GROW_SCRIPT}}", growScript);
-writeFile(path.join(distPath, "sitemap.html"), sitemapHtml);
+  if (locale === "en") {
+    renderPage("affiliate-disclosure", "affiliate-disclosure.html");
+    renderPage("contact", "contact.html");
+    renderPage("sitemap", "sitemap.html");
+  }
 }
 
 /**
-* Generate home page
-*/
-function generateHomepage(distPath) {
-const header = generateHeader();
-const footer = generateFooter();
-const growScript = generateGrowScript();
-   let homeTemplate = readTemplate(path.join(srcPath, "templates/home.html"));
-   homeTemplate = processIncludes(homeTemplate, path.join(srcPath, "templates"));
-   const homeHtml = homeTemplate
-     .replace("{{HEADER}}", header)
-     .replace("{{FOOTER}}", footer)
-     .replace("{{GROW_SCRIPT}}", growScript);
-   writeFile(path.join(distPath, "index.html"), homeHtml);
+ * Generate the homepage for a locale
+ */
+function generateHomepage(distPath, locale = "en", availableLocales = [locale]) {
+  const dir = dirSegment(locale);
+  const header = generateHeader(locale);
+  const footer = generateFooter(locale);
+  const growScript = generateGrowScript();
+
+  const templateFile = locale === "en" ? "home.html" : `home-${locale}.html`;
+  const templatePath = path.join(srcPath, "templates", templateFile);
+  if (!fs.existsSync(templatePath)) {
+    console.warn(`  Skipping ${locale} homepage: ${templateFile} not found`);
+    return;
+  }
+  let homeTemplate = readTemplate(templatePath);
+  homeTemplate = processIncludes(homeTemplate, path.join(srcPath, "templates"));
+  // Only hreflang to locales that actually have a homepage template of their own
+  const localesWithPage = availableLocales.filter((l) => {
+    const f = l === "en" ? "home.html" : `home-${l}.html`;
+    return fs.existsSync(path.join(srcPath, "templates", f));
+  });
+  const homeHtml = homeTemplate
+    .replace("{{HREFLANG_TAGS}}", generateHreflangTags("/", localesWithPage))
+    .replace("{{HEADER}}", header)
+    .replace("{{FOOTER}}", footer)
+    .replace("{{GROW_SCRIPT}}", growScript);
+  writeFile(path.join(distPath, dir, "index.html"), homeHtml);
 }
 
 /**
-* Generate 404 page
+* Generate 404 page (English only - no other locale has had one)
 */
 function generate404Page(distPath) {
-const header = generateHeader();
-const footer = generateFooter();
+const header = generateHeader("en");
+const footer = generateFooter("en");
 const growScript = generateGrowScript();
 const page404Html = `<!DOCTYPE html>
 <html lang="en">
@@ -338,7 +244,7 @@ const page404Html = `<!DOCTYPE html>
                 <div style="font-size: 6rem; font-weight: 900; color: #3b82f6; margin-bottom: 1rem;">404</div>
                 <h1 style="font-size: 2.5rem; font-weight: 700; color: #1f2937; margin-bottom: 1rem;">Page Not Found</h1>
                 <p style="font-size: 1.1rem; color: #6b7280; margin-bottom: 3rem;">We couldn't find that page, but we can help you find the perfect SD card for your device.</p>
-                
+
                 <!-- Device Search -->
                 <div x-data="deviceSearch()" x-init="init()" @click.outside="open = false" style="margin-bottom: 3rem;">
                     <div class="search-container" style="max-width: 500px; margin: 0 auto;">
@@ -388,16 +294,15 @@ writeFile(path.join(distPath, "404.html"), page404Html
 }
 
 /**
-* Generate all core files
+* Generate all core files for a locale (homepage, sitemap, legal pages). robots.txt and
+* 404.html are global/English-only and generated once by the caller, not per locale.
 */
-async function generateCoreFiles(allDevices, allReaders, distPath) {
-console.log("Generating core files...");
-generateHomepage(distPath);
-generate404Page(distPath);
-generateSitemap(allDevices, allReaders, distPath);
-generateRobots(distPath);
-generateLegalPages(distPath);
-console.log(`  ✓ Core files generated (homepage, 404, sitemap, robots.txt, privacy, terms, affiliate-disclosure, about, contact, sitemap-page)`);
+async function generateCoreFiles(allDevices, allReaders, distPath, locale = "en", availableLocales = [locale]) {
+  console.log(`Generating ${locale} core files...`);
+  generateHomepage(distPath, locale, availableLocales);
+  generateSitemap(allDevices, allReaders, distPath, locale);
+  generateLegalPages(distPath, locale);
+  console.log(`  ✓ ${locale} core files generated`);
 }
 
-module.exports = { generateCoreFiles };
+module.exports = { generateCoreFiles, generateHomepage, generateSitemap, generateRobots, generateLegalPages, generate404Page };

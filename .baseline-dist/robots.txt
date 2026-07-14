@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Priority access for major search engines
+User-agent: bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Block resource-heavy scraper bots
+User-agent: PetalBot
+Disallow: /
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+
+# Localization Sitemaps
+Sitemap: https://sdcardchecker.com/sitemap.xml
+Sitemap: https://sdcardchecker.com/ja/sitemap.xml

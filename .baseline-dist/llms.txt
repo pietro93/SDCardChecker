@@ -1,0 +1,39 @@
+# SD Card Checker
+
+> SD Card Checker (sdcardchecker.com) is a static website that helps users find
+> the correct SD card (and microSD card) for any device — cameras, drones,
+> dash cams, gaming handhelds, smartphones, tablets, and more. Each device
+> page gives instant recommendations (capacity, speed class, card type) with
+> affiliate links to Amazon. A free storage calculator estimates how much
+> footage/photos fit on a given card size.
+
+## Device categories
+
+- [Cameras](/devices/) — point-and-shoot, mirrorless, DSLR
+- [Action cameras](/devices/) — GoPro and similar
+- [Drones](/devices/) — consumer and prosumer drones
+- [Dash cams](/devices/) — front/rear dash cameras
+- [Security cameras](/devices/) — home/outdoor security cams
+- [Gaming handhelds](/devices/) — Nintendo Switch and other handhelds
+- [Smartphones](/devices/) — phones with expandable storage
+- [Computing & tablets](/devices/) — laptops, tablets, single-board computers
+- [Audio & Hi-Fi](/devices/) — digital audio players and Hi-Fi gear
+
+## Tools
+
+- [Storage Calculator](/calculator/) — estimate recording time/photo count for a given card size and bitrate/resolution
+- [SD Card Readers](/sd-card-readers/) — reader/adapter recommendations by card type
+
+## Localization
+
+- [日本語版 (Japanese)](/ja/) — Japanese-localized version of the site
+
+## Notes for LLMs
+
+- Device recommendation pages follow the pattern `/devices/<device-slug>/` and
+  list the minimum, recommended, and best SD card for that specific device.
+- Recommendations are sourced from a curated device database, not live
+  retailer stock — always treat current pricing/availability on the linked
+  Amazon page as authoritative.
+- This site uses Amazon affiliate links; purchases through them may earn the
+  site a commission at no extra cost to the buyer.

@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Storage Calculator — How Much Can You Record? | SD Card Checker</title>
+  <meta name="description" content="Calculate how much 4K video fits on your SD card. Instant bitrate-to-storage conversion. Compare speeds, codecs, and get card recommendations.">
+  <link rel="canonical" href="https://sdcardchecker.com/tools/calculators/video-storage/">
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Video Storage Calculator — How Much Can You Record?">
+  <meta property="og:description" content="Calculate how much 4K video fits on your SD card. Instant bitrate-to-storage conversion. Compare speeds, codecs, and get card recommendations.">
+  <meta property="og:image" content="https://sdcardchecker.com/img/calculator/video-storage.webp">
+  <meta property="og:url" content="https://sdcardchecker.com/tools/calculators/video-storage/">
+  <meta property="og:site_name" content="SD Card Checker">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Video Storage Calculator — How Much Can You Record?">
+  <meta name="twitter:description" content="Calculate how much 4K video fits on your SD card. Instant bitrate-to-storage conversion. Compare speeds, codecs, and get card recommendations.">
+  <meta name="twitter:image" content="https://sdcardchecker.com/img/calculator/video-storage.webp">
+
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="/assets/js/calculator.js"></script>
+  <script src="/assets/js/card-selector.js"></script>
+  <script src="/assets/js/calculator-ui.js"></script>
+  <script src="/assets/js/calculator-card-recommendations.js"></script>
+  <script src="/assets/js/card-recommendations.js"></script>
+  <!-- Grow Script -->
+<script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo3YzE2YTcwYi1mNzdjLTQ0MWQtYjJmNi05MmEzZTMzNDc2Yjk=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://sdcardchecker.com/#organization","name":"SD Card Checker","url":"https://sdcardchecker.com","logo":{"@type":"ImageObject","@id":"https://sdcardchecker.com/#logo","url":"https://sdcardchecker.com/img/brand/logo.webp"},"foundingDate":"2025-12-31","vatID":"IT03173170808","taxID":"IT03173170808","contactPoint":{"@type":"ContactPoint","email":"contact@sdcardchecker.com","contactType":"customer support"},"founder":{"@id":"https://sdcardchecker.com/#founder"},"sameAs":["https://github.com/pietro93/SDCardChecker"]},{"@type":"Person","@id":"https://sdcardchecker.com/#founder","name":"Pietro Romeo","url":"https://sdcardchecker.com","sameAs":["https://pietroromeo.medium.com/","https://scholar.google.com/citations?user=16VCt3EAAAAJ","https://www.semanticscholar.org/author/Pietro-Romeo/2062621259","https://dl.acm.org/profile/99659019466"]},{"@type":"WebSite","@id":"https://sdcardchecker.com/#website","name":"SD Card Checker","url":"https://sdcardchecker.com","publisher":{"@id":"https://sdcardchecker.com/#organization"}}]}</script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  <!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white shadow-sm header-nav-container">
+<div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+<a href="/" class="flex items-center gap-3 group flex-shrink-0">
+<img src="/img/brand/logo.webp" alt="SD Card Checker Logo" class="w-10 h-10 rounded-lg shadow-md group-hover:shadow-lg transition-shadow" width="40" height="40">
+<span class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">SD Card Checker</span>
+</a>
+    <nav class="header-nav hidden md:flex gap-8 items-center">
+    <a href="/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">Home</a>
+    
+    <div class="relative group flex items-center">
+    <a href="/categories/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
+      Categories
+      <i class="fas fa-chevron-down text-xs"></i>
+      </a>
+      <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block z-50">
+      <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+       <a href="/categories/cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">Cameras</a>
+       <a href="/categories/action-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Action Cameras</a>
+       <a href="/categories/drones/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Drones</a>
+       <a href="/categories/gaming-handhelds/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Gaming Handhelds</a>
+       <a href="/categories/dash-cams/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Dash Cams</a>
+       <a href="/categories/computing-and-tablets/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Computing & Tablets</a>
+       <a href="/readers/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Card Readers</a>
+       <a href="/cars/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Car Navigation</a>
+       <a href="/categories/" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-xs font-bold border-t border-blue-200 flex items-center gap-2"><i class="fas fa-grid-2"></i> All Categories</a>
+       </div>
+        </div>
+       </div>
+
+      <div class="relative group flex items-center">
+      <a href="/tools/calculators/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
+      Calculators
+      <i class="fas fa-chevron-down text-xs"></i>
+      </a>
+      <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block z-50">
+      <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+       <a href="/tools/calculators/video-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">Video Storage Time</a>
+       <a href="/tools/calculators/photo-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Photo Storage & Capacity</a>
+       <a href="/tools/calculators/drone-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Drone Recording Time</a>
+       <a href="/tools/calculators/security-camera-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Security Camera Time</a>
+       <a href="/tools/calculators/dashcam-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Dashcam Storage</a>
+       <a href="/tools/calculators/action-camera-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Action Camera Storage</a>
+       <a href="/tools/calculators/gopro-storage/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">GoPro Recording Time</a>
+       <a href="/tools/calculators/" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-xs font-bold border-t border-blue-200 flex items-center gap-2"><i class="fas fa-calculator"></i> All Calculators</a>
+       </div>
+       </div>
+      </div>
+
+       <div class="relative group flex items-center">
+         <a href="/guides/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
+         Guides
+         <i class="fas fa-chevron-down text-xs"></i>
+         </a>
+         <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block z-50">
+         <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+          <a href="/guides/sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">SD Card Guide</a>
+          <a href="/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Speed Classes</a>
+          <a href="/guides/video-bitrate-comparison/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Video Bitrate Guide</a>
+          <a href="/guides/raw-vs-jpeg/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">RAW vs JPEG</a>
+          <a href="/guides/is-my-sd-card-fake/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">Fake SD Card Checker</a>
+          <a href="/guides/" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-xs font-bold border-t border-blue-200 flex items-center gap-2"><i class="fas fa-book"></i> All Guides</a>
+          </div>
+          </div>
+         </div>
+
+        <a href="/compare/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">Compare SD Cards</a>
+       </nav>
+       
+       <!-- Language Switcher (Desktop) -->
+       <div class="hidden md:flex items-center gap-2 ml-4 pl-4 border-l border-slate-200">
+         <div class="relative group">
+           <button class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm flex items-center gap-1 cursor-pointer">
+             <i class="fas fa-globe"></i>
+             <span>English</span>
+             <i class="fas fa-chevron-down text-xs"></i>
+           </button>
+           <div class="absolute right-0 top-full pt-2 w-40 hidden group-hover:block z-50">
+             <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+               <a href="/" class="block px-4 py-3 text-blue-600 bg-blue-50 first:rounded-t-lg text-sm font-medium flex items-center justify-between">
+                 English
+                 <i class="fas fa-check text-blue-600"></i>
+               </a>
+               <a href="/ja/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 last:rounded-b-lg text-sm font-medium">日本語</a>
+             </div>
+           </div>
+         </div>
+       </div>
+       
+       <!-- Mobile Menu Button -->
+    <button class="md:hidden text-slate-600 hover:text-blue-600 mobile-menu-toggle flex items-center justify-center" aria-label="Toggle menu" id="mobileMenuBtn" style="width: 44px; height: 44px; padding: 0;">
+      <i class="fas fa-bars text-xl" style="display: block;"></i>
+    </button>
+  </div>
+  
+  <!-- Mobile Navigation Menu -->
+  <nav class="mobile-menu hidden md:hidden bg-slate-50 border-t border-slate-200 max-h-[calc(100vh-80px)] overflow-y-auto" id="mobileMenu">
+    <div class="px-4 py-3 space-y-1">
+      <!-- Language Switcher (Mobile) -->
+      <div class="border-b border-slate-200 pb-3 mb-3">
+        <p class="px-3 py-2 text-sm font-semibold text-slate-700 text-slate-600">Select Language</p>
+        <a href="/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium flex items-center justify-between">
+          English
+          <i class="fas fa-check text-blue-600"></i>
+        </a>
+        <a href="/ja/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">日本語</a>
+      </div>
+      
+      <!-- Direct Links -->
+      <a href="/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Home</a>
+      
+      <!-- Categories Section -->
+      <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="devices">
+        <span>Categories</span>
+        <i class="fas fa-chevron-right transition-transform duration-300"></i>
+      </button>
+      <div class="mobile-section hidden pl-4 space-y-1" data-content="devices">
+        <a href="/categories/cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Cameras</a>
+        <a href="/categories/action-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Action Cameras</a>
+        <a href="/categories/drones/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Drones</a>
+        <a href="/categories/gaming-handhelds/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Gaming Handhelds</a>
+        <a href="/categories/dash-cams/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Dash Cams</a>
+        <a href="/categories/computing-and-tablets/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Computing & Tablets</a>
+        <a href="/readers/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Card Readers</a>
+        <a href="/cars/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Car Navigation</a>
+        <a href="/categories/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium">Browse All Categories</a>
+      </div>
+
+      <!-- Calculators Section -->
+      <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="calculators">
+        <span>Calculators</span>
+        <i class="fas fa-chevron-right transition-transform duration-300"></i>
+      </button>
+      <div class="mobile-section hidden pl-4 space-y-1" data-content="calculators">
+        <a href="/tools/calculators/video-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Video Storage Time</a>
+        <a href="/tools/calculators/photo-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Photo Storage</a>
+        <a href="/tools/calculators/drone-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Drone Recording</a>
+        <a href="/tools/calculators/security-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Security Camera</a>
+        <a href="/tools/calculators/dashcam-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Dashcam Storage</a>
+        <a href="/tools/calculators/action-camera-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Action Camera</a>
+        <a href="/tools/calculators/gopro-storage/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">GoPro Recording</a>
+        <a href="/tools/calculators/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium">Browse All Calculators</a>
+      </div>
+      
+      <!-- Resources Section -->
+      <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="resources">
+        <span>Guides</span>
+        <i class="fas fa-chevron-right transition-transform duration-300"></i>
+      </button>
+      <div class="mobile-section hidden pl-4 space-y-1" data-content="resources">
+        <a href="/guides/sd-card-guide/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">SD Card Guide</a>
+        <a href="/guides/sd-card-speed-classes/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Speed Classes</a>
+        <a href="/guides/video-bitrate-comparison/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Video Bitrate Guide</a>
+        <a href="/guides/raw-vs-jpeg/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">RAW vs JPEG</a>
+        <a href="/guides/is-my-sd-card-fake/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">Fake SD Card Checker</a>
+        <a href="/guides/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium">Browse All Guides</a>
+      </div>
+      
+      <!-- Direct Links -->
+      <a href="/compare/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">Compare SD Cards</a>
+      </div>
+      </nav>
+      </header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Handle section toggles
+    const sectionToggles = mobileMenu.querySelectorAll('.mobile-section-toggle');
+    sectionToggles.forEach(toggle => {
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        const section = this.getAttribute('data-section');
+        const content = mobileMenu.querySelector('[data-content="' + section + '"]');
+        const icon = this.querySelector('i');
+        
+        if (content) {
+          content.classList.toggle('hidden');
+          icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(90deg)';
+        }
+      });
+    });
+    
+    // Close menu when a link is clicked
+    const menuLinks = mobileMenu.querySelectorAll('a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+});
+</script>
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <nav class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/tools/" class="text-blue-600 hover:underline">Tools</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/tools/calculators/" class="text-blue-600 hover:underline">Calculators</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900">Video Storage</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="hero-image-container mb-12 rounded-2xl overflow-hidden shadow-lg relative" style="max-height:350px">
+        <img src="/img/calculator/video-storage.webp" alt="Video recording footage quality comparison" class="w-full object-cover hero-image" width="1200" height="350" loading="lazy" />
+        <div class="hero-overlay">
+          <div class="hero-title-wrapper">
+            <h1 class="hero-title" style="color: #ffffff;">
+              How Much 4K Video Fits On Your SD Card?
+            </h1>
+            <h2 class="hero-subtitle" style="color: #ffffff;">
+              Calculate Recording Time, Compare Codecs & Get Speed Recommendations
+            </h2>
+          </div>
+        </div>
+      </div>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          Dropped frames, corrupted footage, and failed recordings are photographer and videographer nightmares—and they often happen because of the wrong card. This calculator helps you plan every shoot with confidence by showing exactly how long you can record on your SD card based on resolution, bitrate, and codec.
+        </p>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          Whether you're shooting 1080p or 8K, using H.264 or ProRes, this tool instantly calculates recording time, recommends the minimum speed class (V30, V60, V90), and suggests the ideal card capacity. No more guessing what bitrate your camera uses, no more surprises when your card fills mid-take—just the assurance that your card can handle your workflow.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">4K to 1080p Support</h4>
+              <p class="text-slate-600 text-sm">Any resolution, any bitrate</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">Codec Comparisons</h4>
+              <p class="text-slate-600 text-sm">H.264, H.265, ProRes</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl text-blue-600 flex-shrink-0">✓</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">Speed Class Match</h4>
+              <p class="text-slate-600 text-sm">Automatic recommendations</p>
+            </div>
+          </div>
+        </div>
+
+      <!-- Calculator Widget -->
+      <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-8">
+        <div class="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+          <p class="text-sm text-slate-700"><strong>Quick note:</strong> Bitrate is measured in Mbps (megabits per second). Write speed is measured in MB/s (megabytes per second). To convert: 1 MB/s = 8 Mbps.</p>
+        </div>
+        <script>
+          document.addEventListener('alpine:init', () => {
+            Alpine.data('calculatorState', () => {
+              const state = CalculatorUI.init({
+                defaultScenario: 'video',
+                deviceSelectorEnabled: false
+              });
+              
+              // Initialize card selector when component is ready
+              Alpine.nextTick(() => {
+                state.initCardSelector();
+              });
+              
+              return state;
+            });
+          });
+        </script>
+        <!-- 
+  Storage Calculator Widget - Reusable Component
+  Alpine.js driven, calls StorageCalculator.js for math
+  Supports: Video, Photo, Continuous, Reverse modes
+-->
+
+<div x-data="calculatorState" class="calculator-widget py-8">
+    <!-- Layer 1: Use Case Selection -->
+    <div x-show="currentLayer === 'usecase'" class="animate-fade">
+        <div class="mb-6">
+            <button @click="reset()" x-show="hasCalculated"
+                class="text-sm px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 transition">
+                ← Change Scenario
+            </button>
+        </div>
+
+        <h3 class="text-xl font-bold mb-6">What are you recording?</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <button @click="selectUseCase('video')"
+                class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-600 hover:bg-blue-50 transition text-center">
+                <div class="text-4xl mb-2"></div>
+                <h4 class="font-bold text-lg">Video Recording</h4>
+                <p class="text-sm text-gray-600">4K, 1080p, any bitrate</p>
+            </button>
+
+            <button @click="selectUseCase('photo')"
+                class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-600 hover:bg-blue-50 transition text-center">
+                <div class="text-4xl mb-2"></div>
+                <h4 class="font-bold text-lg">Photo Burst</h4>
+                <p class="text-sm text-gray-600">JPEG, RAW, timelapse</p>
+            </button>
+
+            <button @click="selectUseCase('continuous')"
+                class="p-6 border-2 border-gray-300 rounded-lg hover:border-blue-600 hover:bg-blue-50 transition text-center">
+                <div class="text-4xl mb-2"></div>
+                <h4 class="font-bold text-lg">Continuous</h4>
+                <p class="text-sm text-gray-600">24/7, dashcam, surveillance</p>
+            </button>
+        </div>
+    </div>
+
+    <!-- Layer 2: Scenario Details (Forward) -->
+    <div x-show="currentLayer === 'details' && mode === 'forward'" class="animate-fade">
+        <div class="flex items-center justify-between mb-6">
+            <h3 class="text-xl font-bold">
+                <span x-text="scenarios[activeScenario].name"></span>
+            </h3>
+            <button @click="toggleMode()" class="text-sm px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 transition"
+                title="Switch to: I have a card, how long can I record?">
+                Reverse
+            </button>
+        </div>
+
+        <div class="mb-6">
+            <button @click="reset()"
+                class="text-sm px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 transition">
+                ← Change Scenario
+            </button>
+        </div>
+
+        <!-- Video Mode -->
+        <div x-show="activeScenario === 'video'" class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-bold mb-2">Resolution</label>
+                    <select x-model="forward.video.resolution"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <template x-for="res in readonly.resolutions" :key="res">
+                            <option :value="res" x-text="res"></option>
+                        </template>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2">Frame Rate</label>
+                    <select x-model.number="forward.video.fps"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <template x-for="fps in readonly.fpsOptions" :key="fps">
+                            <option :value="fps" x-text="`${fps}fps`"></option>
+                        </template>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2">Codec</label>
+                    <select x-model="forward.video.codec" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <template x-for="codec in readonly.codecOptions" :key="codec">
+                            <option :value="codec" x-text="codec"></option>
+                        </template>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2">
+                        Bitrate (Mbps)
+                        <button type="button"
+                            class="inline-block ml-1 text-blue-600 hover:text-blue-800 cursor-help font-normal"
+                            aria-label="Bitrate help" title="Higher bitrate = better quality but larger files. Lower bitrate = smaller files but lower quality.">
+                            
+                        </button>
+                    </label>
+                    <input x-model.number="forward.video.bitrateMbps" type="number" placeholder="150" min="1" step="1"
+                        @input="validateNumericInput($event, 1)"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                        aria-label="Video bitrate in Mbps" aria-describedby="bitrate-help" />
+                    <p id="bitrate-help" class="text-xs text-gray-600 mt-1">Standard: 50 Mbps for 1080p, 100-150 Mbps for 4K. Not sure? Start with 150 Mbps for good quality.</p>
+                </div>
+            </div>
+
+            <div class="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                <label class="block text-sm font-bold mb-2">Recording Duration</label>
+                <div class="grid grid-cols-2 gap-2">
+                    <div>
+                        <label class="text-xs text-gray-600">Hours</label>
+                        <input x-model.number="forward.video.durationHours" type="number" placeholder="2" min="0"
+                            step="1" @input="validateNumericInput($event, 0, 999)"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                            aria-label="Recording duration in hours" />
+                    </div>
+                    <div>
+                        <label class="text-xs text-gray-600">Minutes</label>
+                        <input x-model.number="forward.video.durationMinutes" type="number" placeholder="0" min="0"
+                            max="59" step="1" @input="validateNumericInput($event, 0, 59)"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                            aria-label="Recording duration in minutes" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photo Mode -->
+        <div x-show="activeScenario === 'photo'" class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-bold mb-2">Total Photos</label>
+                    <input x-model.number="forward.photo.photoCount" type="number" placeholder="1000" min="1" step="1"
+                        @input="validateNumericInput($event, 1)"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                        aria-label="Total number of photos to store" />
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2">File Size per Photo (MB)</label>
+                    <input x-model.number="forward.photo.fileSizeMB" type="number" step="0.1" placeholder="2.5"
+                        min="0.1" @input="validateNumericInput($event, 0.1)"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                        aria-label="File size per photo in megabytes" />
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2">
+                        Burst Rate
+                        <button type="button"
+                            class="inline-block ml-1 text-blue-600 hover:text-blue-800 cursor-help font-normal"
+                            aria-label="Burst rate help" title="How fast you're shooting affects the card speed you'll need">
+                            
+                        </button>
+                    </label>
+                    <select x-model="forward.photo.shootingStyle"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                        aria-label="Photo burst rate in frames per second">
+                        <option value="casual">Casual - 2-5 fps (slow shooting)</option>
+                        <option value="normal">Normal - 10 fps (typical burst)</option>
+                        <option value="highspeed">High-Speed - 20+ fps (rapid fire)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                <label class="flex items-center">
+                    <input type="checkbox" @change="toggleRaw()" :checked="forward.photo.isRaw" class="mr-2" />
+                    <span class="text-sm font-bold">RAW Format</span>
+                </label>
+                <p class="text-xs text-gray-600 mt-2">
+                    <span x-text="forward.photo.isRaw ? 'RAW (uncompressed)' : 'JPEG (compressed)'"></span>
+                    - File size updated
+                </p>
+            </div>
+
+            <div class="text-xs text-gray-600 p-3 bg-gray-100 rounded">
+                <strong>Quick presets:</strong>
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                    <button @click="updatePhotoFileSize('jpeg5mp')" class="text-left hover:text-blue-600">
+                        → 5MP JPEG (2.5MB)
+                    </button>
+                    <button @click="updatePhotoFileSize('jpeg20mp')" class="text-left hover:text-blue-600">
+                        → 20MP JPEG (8MB)
+                    </button>
+                    <button @click="updatePhotoFileSize('raw20mp')" class="text-left hover:text-blue-600">
+                        → 20MP RAW (30MB)
+                    </button>
+                    <button @click="updatePhotoFileSize('raw45mp')" class="text-left hover:text-blue-600">
+                        → 45MP RAW (65MB)
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Continuous Mode -->
+        <div x-show="activeScenario === 'continuous'" class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <label class="block text-sm font-bold mb-2">Bitrate (Mbps)</label>
+                    <input x-model.number="forward.continuous.bitrateMbps" type="number" placeholder="5" min="1"
+                        step="0.1" @input="validateNumericInput($event, 1)"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                        aria-label="Continuous recording bitrate in Mbps" />
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2">Hours per Day</label>
+                    <input x-model.number="forward.continuous.hoursPerDay" type="number" placeholder="24" min="0"
+                        max="24" step="1" @input="validateNumericInput($event, 0, 24)"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                        aria-label="Hours of recording per day" />
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2">Days Needed</label>
+                    <input x-model.number="forward.continuous.daysNeeded" type="number" placeholder="7" min="1" step="1"
+                        @input="validateNumericInput($event, 1)"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                        aria-label="Number of days continuous recording is needed" />
+                </div>
+            </div>
+
+            <div class="p-3 bg-amber-50 border border-amber-200 rounded text-amber-900 text-xs">
+                <strong>Important:</strong> For continuous recording, use <strong>HIGH_ENDURANCE</strong> cards (designed for 24/7 use). Regular V30/V60 cards will fail quickly.
+            </div>
+        </div>
+
+        <!-- Advanced Options (All Modes) -->
+        <div class="mt-6 border border-gray-300 rounded-lg overflow-hidden">
+            <button type="button" @click="advancedExpanded = !advancedExpanded" :aria-expanded="advancedExpanded"
+                aria-controls="advanced-content"
+                class="w-full cursor-pointer font-bold text-sm py-2 px-4 hover:bg-gray-100 text-left flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition">
+                <span>Advanced Options</span>
+                <span :class="advancedExpanded ? 'rotate-180' : ''" class="transition-transform">▼</span>
+            </button>
+
+            <div id="advanced-content" class="p-4 space-y-4" x-show="advancedExpanded" @click.outside="advancedExpanded = false">
+                <div>
+                    <label class="block text-sm font-bold mb-2">
+                        Overhead Buffer: <span x-text="`${forward.overheadPercent}%`"></span>
+                    </label>
+                    <input type="range" x-model.number="forward.overheadPercent" :min="forward.overheadMin"
+                        :max="forward.overheadMax" step="1" class="w-full" aria-label="Overhead buffer percentage"
+                        aria-valuemin="5" aria-valuemax="25" />
+                    <p class="text-xs text-gray-600 mt-2">
+                        Add buffer for metadata, camera system files, and write inefficiency
+                    </p>
+                </div>
+
+                <label class="flex items-center">
+                    <input type="checkbox" x-model="forward.compareFormats" class="mr-2"
+                        aria-label="Compare H.264, H.265, and ProRes file sizes" />
+                    <span class="text-sm font-bold">Compare H.264 vs H.265 vs ProRes</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Calculate Button -->
+        <button @click="calculate()" :disabled="!isInputValid()"
+            class="mt-6 w-full px-4 py-3 h-12 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 disabled:opacity-50 disabled:cursor-not-allowed transition">
+            Calculate Storage Needed
+        </button>
+    </div>
+
+    <!-- Layer 2: Scenario Details (Reverse) -->
+    <div x-show="currentLayer === 'details' && mode === 'reverse'" class="animate-fade" 
+         x-effect="if (currentLayer === 'details' && mode === 'reverse') { initCardSelector(); }">
+        <div class="flex items-center justify-between mb-6">
+            <h3 class="text-xl font-bold">
+                I have a card — how long can I record?
+            </h3>
+            <button @click="toggleMode()" class="text-sm px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 transition"
+                title="Switch to: How much storage do I need?">
+                Forward
+            </button>
+        </div>
+
+        <div class="mb-6">
+            <button @click="reset()"
+                class="text-sm px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 transition">
+                ← Change Scenario
+            </button>
+        </div>
+
+        <!-- Manual Input Fields -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div>
+                <label class="block text-sm font-bold mb-2">Card Capacity (GB)</label>
+                <select x-model.number="reverse.cardCapacityGB"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg" aria-label="Select SD card capacity">
+                    <template x-for="cap in reverse.cardCapacityOptions" :key="cap">
+                        <option :value="cap" x-text="`${cap}GB`"></option>
+                    </template>
+                </select>
+            </div>
+
+            <div x-show="activeScenario === 'photo'">
+                <label class="block text-sm font-bold mb-2">File Size per Photo (MB)</label>
+                <input x-model.number="reverse.photo.fileSizeMB" type="number" step="0.1" placeholder="2.5" min="0.1"
+                    @input="validateNumericInput($event, 0.1)"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                    aria-label="File size per photo in megabytes" />
+            </div>
+
+            <div x-show="activeScenario !== 'photo'">
+                <label class="block text-sm font-bold mb-2">Bitrate (Mbps)</label>
+                <input x-model.number="reverse.video.bitrateMbps" type="number" placeholder="150" min="1" step="1"
+                    @input="validateNumericInput($event, 1)" class="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                    aria-label="Video bitrate in Mbps" />
+            </div>
+        </div>
+
+        <button @click="calculateReverse()" :disabled="!isReverseInputValid()"
+            class="w-full px-4 py-3 h-12 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 disabled:opacity-50 disabled:cursor-not-allowed transition">
+            Calculate Duration
+        </button>
+    </div>
+
+    <!-- Layer 3: Results -->
+    <div x-show="currentLayer === 'results'" class="animate-fade">
+        <div class="mb-6">
+            <button @click="currentLayer = 'details'"
+                class="text-sm px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 transition">
+                ← Back to Inputs
+            </button>
+        </div>
+
+        <template x-if="result">
+            <div>
+                <!-- Forward Result Card -->
+                <div x-show="mode === 'forward'" class="space-y-6">
+                    <div class="p-6 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-2">You Need:</h3>
+                        <div class="text-4xl font-bold mb-3">
+                            <span x-text="`${result.recommendedCapacity}GB`"></span>
+                            <span class="text-lg ml-2">Minimum</span>
+                        </div>
+                        <p class="text-blue-50">
+                            <span x-text="`${result.totalGB}GB total storage`"></span><br>
+                            <span class="text-sm text-blue-100"
+                                x-text="`(${result.rawGB}GB footage + ${result.overheadGB}GB overhead)`"></span>
+                        </p>
+                    </div>
+
+                    <div x-show="activeScenario === 'continuous' && forward.continuous.hoursPerDay >= 12"
+                         class="p-4 bg-amber-50 border border-amber-200 rounded text-amber-900 text-sm">
+                        <strong>Important:</strong> For extended continuous recording, use <strong>HIGH_ENDURANCE</strong> cards (not speed cards). These are designed for 24/7 use and will last much longer.
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 border border-gray-300 rounded-lg">
+                            <h4 class="font-bold text-sm text-gray-600 mb-2">Speed Class</h4>
+                            <p class="text-2xl font-bold" x-text="`${result.speedClass}`"></p>
+                            <p class="text-xs text-gray-600">Minimum for this bitrate</p>
+                        </div>
+
+                        <div class="p-4 border border-gray-300 rounded-lg">
+                            <h4 class="font-bold text-sm text-gray-600 mb-2">Min Write Speed</h4>
+                            <p class="text-2xl font-bold" x-text="`${result.minWriteSpeed} MB/s`"></p>
+                            <p class="text-xs text-gray-600">Required write performance</p>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    <!-- Reverse Result Card -->
+                    <div x-show="mode === 'reverse'" class="space-y-6">
+                        <div class="p-6 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold mb-2 text-white">Your Card Duration:</h3>
+
+                            <!-- Photo Result -->
+                             <div x-show="activeScenario === 'photo'">
+                                  <div class="text-4xl font-bold mb-3">
+                                      <span x-text="`${(result.photoCount || 0).toLocaleString()}`"></span>
+                                      <span class="text-lg ml-2">Photos</span>
+                                  </div>
+                                  <p class="text-emerald-50">
+                                      On your <span x-text="`${reverse.cardCapacityGB}GB`"></span> card
+                                  </p>
+                              </div>
+
+                            <!-- Video/Continuous Result -->
+                             <div x-show="activeScenario !== 'photo'">
+                                 <div class="text-4xl font-bold mb-3" x-text="`${result.recordingTimeString}`"></div>
+                                 <p class="text-emerald-50">
+                                     <span x-text="`${result.recordingHours} hours total`"></span><br>
+                                     <span class="text-sm text-emerald-100">For 24/7 continuous: <span
+                                             x-text="`~${result.daysFor24h} days`"></span></span>
+                                 </p>
+                             </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 border border-gray-300 rounded-lg">
+                                <h4 class="font-bold text-sm text-gray-600 mb-2">Speed Class</h4>
+                                <p class="text-2xl font-bold" x-text="`${result.speedClass}`"></p>
+                            </div>
+
+                            <div class="p-4 border border-gray-300 rounded-lg">
+                                <h4 class="font-bold text-sm text-gray-600 mb-2">Min Write Speed</h4>
+                                <p class="text-2xl font-bold" x-text="`${result.minWriteSpeed} MB/s`"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Card Validator (Verify your card meets calculated speed requirements) -->
+                <div class="mt-8 p-4 bg-indigo-50 border border-indigo-200 rounded-lg" @click.away="cardSelectorOpen = false">
+                    <label class="block text-sm font-bold mb-3">Verify Your Card</label>
+                    <p class="text-xs text-gray-700 mb-3">Select a card from our database to check if it meets your speed class requirements</p>
+                    
+                    <div class="relative mb-3">
+                        <input type="text" x-model="cardSelectorSearch" @input="filterCardsList()" @click="cardSelectorOpen = true" @focus="cardSelectorOpen = true"
+                            placeholder="Search by card name, speed class, type..."
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-600"
+                            aria-label="Search cards database" aria-autocomplete="list" :aria-expanded="cardSelectorOpen"
+                            data-hj-allow />
+                        
+                        <!-- Dropdown Menu -->
+                        <div x-show="cardSelectorOpen && allCards.length > 0" class="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-300 rounded-lg shadow-lg z-50 max-h-64 overflow-y-auto">
+                            <!-- Cards List -->
+                            <ul x-show="filteredCards.length > 0" role="listbox">
+                                <template x-for="card in filteredCards.slice(0, 10)" :key="card.id">
+                                    <li>
+                                        <button type="button" @click="selectCard(card)"
+                                            class="w-full text-left px-4 py-2 hover:bg-indigo-50 border-b border-gray-100 focus:outline-none focus:bg-indigo-100"
+                                            role="option">
+                                            <div class="font-bold text-sm" x-text="card.name"></div>
+                                            <div class="text-xs text-gray-600">
+                                                <span x-text="`${card.speed} • ${card.writeSpeed}`"></span>
+                                                <span x-show="card.type" x-text="`• ${card.type}`"></span>
+                                            </div>
+                                        </button>
+                                    </li>
+                                </template>
+                            </ul>
+                            
+                            <!-- No Results Message -->
+                            <div x-show="filteredCards.length === 0 && cardSelectorSearch" class="px-4 py-3 text-sm text-gray-500">No cards found</div>
+                            
+                            <!-- Loading Message -->
+                            <div x-show="allCards.length === 0 && !cardSelectorSearch" class="px-4 py-3 text-sm text-gray-600">
+                              <span class="animate-spin inline-block mr-2">⟳</span> Loading cards...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Validation Result -->
+                    <div x-show="cardValidation.message" 
+                        :class="cardValidation.isValid === true ? 'bg-green-50 border border-green-200' : cardValidation.isValid === false ? 'bg-red-50 border border-red-200' : 'bg-gray-50 border border-gray-200'"
+                        class="p-3 rounded-lg text-sm">
+                        <p x-text="cardValidation.message" :class="cardValidation.isValid === true ? 'text-green-800' : cardValidation.isValid === false ? 'text-red-800' : 'text-gray-700'"></p>
+                        <div x-show="cardValidation.requiredSpeedClass && cardValidation.cardSpeedClass" class="mt-2 pt-2 border-t text-xs" :class="cardValidation.isValid === true ? 'border-green-200 text-green-700' : cardValidation.isValid === false ? 'border-red-200 text-red-700' : 'border-gray-200 text-gray-600'">
+                            <span>Required: <strong x-text="cardValidation.requiredSpeedClass"></strong> | Your card: <strong x-text="cardValidation.cardSpeedClass"></strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Recommendations Section -->
+                <div id="calculator-recommendations" class="mt-8 p-6 bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg border border-orange-200">
+                    <div class="text-center text-gray-600">
+                        <span class="inline-block animate-spin mr-2">⟳</span>
+                        Loading recommendations...
+                    </div>
+                </div>
+
+                <!-- Amazon Featured Pricing Section (Phase 5) -->
+                <div id="amazon-calculator-pricing" class="mt-8">
+                    <!-- Placeholder will be replaced during build with actual Amazon products -->
+                </div>
+
+                <!-- Format Comparison Table (if compareFormats was checked) -->
+                <div x-show="result.formatComparison && result.formatComparison.length > 0" class="mt-6 border border-gray-300 rounded-lg overflow-hidden">
+                    <button type="button" @click="formatComparisonExpanded = !formatComparisonExpanded" :aria-expanded="formatComparisonExpanded"
+                        aria-controls="format-comparison-content"
+                        class="w-full cursor-pointer font-bold text-sm py-2 px-4 hover:bg-gray-100 text-left flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition">
+                        <span>Codec Comparison (H.264 vs H.265 vs ProRes)</span>
+                        <span :class="formatComparisonExpanded ? 'rotate-180' : ''" class="transition-transform">▼</span>
+                    </button>
+
+                    <div id="format-comparison-content" class="p-4 overflow-x-auto" x-show="formatComparisonExpanded">
+                        <table class="w-full text-sm" role="table">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="px-4 py-2 text-left">Codec</th>
+                                    <th class="px-4 py-2 text-left">Bitrate</th>
+                                    <th class="px-4 py-2 text-left">Storage Needed</th>
+                                    <th class="px-4 py-2 text-left">Speed Class</th>
+                                    <th class="px-4 py-2 text-left">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template x-for="row in result.formatComparison" :key="row.codec">
+                                    <tr class="border-t" :class="row.notes.includes('current') ? 'bg-blue-50' : ''">
+                                        <td class="px-4 py-2 font-bold" x-text="row.codec"></td>
+                                        <td class="px-4 py-2" x-text="`${row.bitrateMbps} Mbps`"></td>
+                                        <td class="px-4 py-2" x-text="`${row.totalGB}GB`"></td>
+                                        <td class="px-4 py-2 font-bold" x-text="row.speedClass"></td>
+                                        <td class="px-4 py-2 text-gray-600 text-xs" x-text="row.notes"></td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Speed Class Reference Table -->
+                <div class="mt-6 border border-gray-300 rounded-lg overflow-hidden">
+                    <button type="button" @click="speedClassExpanded = !speedClassExpanded" :aria-expanded="speedClassExpanded"
+                        aria-controls="speed-class-content"
+                        class="w-full cursor-pointer font-bold text-sm py-2 px-4 hover:bg-gray-100 text-left flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition">
+                        <span>Speed Class Reference</span>
+                        <span :class="speedClassExpanded ? 'rotate-180' : ''" class="transition-transform">▼</span>
+                    </button>
+
+                    <div id="speed-class-content" class="p-4 overflow-x-auto" x-show="speedClassExpanded">
+                        <table class="w-full text-sm" role="table">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="px-4 py-2 text-left">Bitrate Range</th>
+                                    <th class="px-4 py-2 text-left">Speed Class</th>
+                                    <th class="px-4 py-2 text-left">Write Speed</th>
+                                    <th class="px-4 py-2 text-left">Use Case</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template x-for="row in result.speedClassTable" :key="row.speedClass">
+                                    <tr class="border-t">
+                                        <td class="px-4 py-2" x-text="row.bitrateMbps"></td>
+                                        <td class="px-4 py-2 font-bold" x-text="row.speedClass"></td>
+                                        <td class="px-4 py-2" x-text="row.writeSpeed"></td>
+                                        <td class="px-4 py-2 text-gray-600" x-text="row.useCase"></td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Calculate Another Button -->
+                <button @click="reset()"
+                    :class="mode === 'forward' ? 'border border-blue-600 text-blue-600 hover:bg-blue-50' : 'border border-emerald-600 text-emerald-600 hover:bg-emerald-50'"
+                    class="mt-6 w-full px-4 py-2 font-bold rounded-lg transition h-10">
+                    ← Calculate Another
+                </button>
+            </div>
+        </template>
+    </div>
+</div>
+
+<style>
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fade {
+        animation: fadeIn 0.3s ease-in-out;
+    }
+</style>
+
+      </div>
+
+      <!-- Why This Matters Section -->
+      <div class="mb-8 bg-blue-50 border-l-4 border-blue-500 rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Why This Matters: The High Cost of Video Recording Failures</h2>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          For videographers, the consequences of an undersized or slow SD card are severe. Unlike photography, where you can shoot another frame, video failure is catastrophic: dropped frames create stuttering and sync issues that ruin the entire take. A card that's too slow causes buffer overflow, forcing the camera to stop recording mid-scene. Footage corrupted by a full card isn't recoverable.
+        </p>
+        <p class="text-slate-700 mb-4 leading-relaxed">
+          Bitrate compounds the problem. A 4K 60fps H.265 stream uses vastly more data than 1080p 30fps H.264. Many videographers guess at bitrates, leading to miscalculations—you think your card has 30 minutes of recording time but run out in 15. With expensive camera rigs, talent, and location fees, that's not just an inconvenience; it's a financial loss.
+        </p>
+        <p class="text-slate-700 leading-relaxed">
+          This calculator removes guesswork. Enter your camera's actual bitrate, desired duration, and resolution—we'll tell you exactly what card capacity and speed class you need. Film with confidence, knowing your card won't let you down.
+        </p>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+        
+        <div class="space-y-4">
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-1">
+                What's the difference between H.264, H.265, and ProRes?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-1" class="faq-answer open">
+              <p><strong>H.264 (AVC):</strong> The industry-standard compression codec for decades. It balances quality and file size effectively—which is why it's in virtually every camera, smartphone, and editing software. Compatible with almost all playback devices and editing platforms. Bitrates typically range from 25 Mbps (1080p) to 150 Mbps (4K). The downside: less efficient compression means larger files than newer codecs.</p>
+              <p><strong>H.265 (HEVC):</strong> The modern successor to H.264. It's roughly 40-50% more efficient, meaning you get the same visual quality at half the file size—or higher quality at the same bitrate. A 4K 60fps H.265 stream at 100 Mbps looks better than H.264 at the same bitrate. Catch: support is still rolling out on older devices and editing software, and patents make licensing complex.</p>
+              <p><strong>ProRes (Apple):</strong> Professional mezzanine codec designed for high-end post-production. Files are 2-3x larger than H.264 at the same bitrate, but the quality is lossless-like and ideal for color grading, effects work, and final mastering. ProRes is standard in Hollywood workflows but only on professional cameras and editing suites (Final Cut Pro, DaVinci Resolve).</p>
+              <p><strong>Which to choose?</strong> H.264 for maximum compatibility and smaller files. H.265 if your camera and software support it (saves 40-50% storage). ProRes only if you're doing professional color work or mastering.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-2">
+                What Speed Class do I need for 4K video?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-2" class="faq-answer open">
+              <p><strong>4K 30fps H.264:</strong> V30 is the absolute minimum. V30 guarantees 30 MB/s sustained write speed. Most professional 4K cameras specify V30 or better for this mode. Anything slower risks buffer overflow and dropped frames.</p>
+              <p><strong>4K 60fps or high-bitrate 4K:</strong> V60 is strongly recommended. 60fps doubles the data rate, and faster bitrate modes (like ProRes or H.265 high bitrate) require sustained writes above 40 MB/s. V60's 60 MB/s headroom prevents stalls.</p>
+              <p><strong>8K, professional cinema, or RAW video:</strong> V90 required. 8K and cinema workflows (DCI 4K, RAW codecs like Blackmagic) can exceed 100 MB/s write requirements. V90 guarantees 90 MB/s minimum, essential for reliability.</p>
+              <p><strong>Rule of thumb:</strong> Always check your camera's manual for the minimum recommended speed class for each recording mode. Using a slower card than recommended causes buffer overflow, dropped frames, and corrupted footage—not worth the risk on a professional shoot.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-3">
+                How do I calculate bitrate for my camera?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-3" class="faq-answer open">
+              <p><strong>Method 1 (Most Reliable):</strong> Check your camera's manual or settings menu. Most modern cameras display bitrate in the video recording mode settings or in the manual's technical specifications. Search "[Camera Model] bitrate" on DPReview or the manufacturer's site. For example: Sony A6700 lists 100 Mbps for 4K 30fps, 200 Mbps for 4K 60fps.</p>
+              <p><strong>Method 2 (Empirical Test):</strong> Record a known duration (e.g., exactly 1 minute), check the resulting file size in MB. Then: File Size (MB) × 8 ÷ Duration (minutes) = Bitrate in Mbps. Example: 1-minute recording = 750 MB file → 750 × 8 ÷ 1 = 6000 Mbps. Repeat at different recording modes (1080p vs 4K, 30fps vs 60fps) to map your camera's bitrates.</p>
+              <p><strong>Method 3 (Estimation):</strong> Use our preset values as a starting point: ~50 Mbps for 1080p 30fps, ~100 Mbps for 4K 30fps, ~200 Mbps for 4K 60fps, ~400+ Mbps for ProRes. These are ballpark figures; always confirm with your camera's actual specs to avoid surprises.</p>
+              <p><strong>Pro tip:</strong> Different cameras vary wildly. A GoPro records 4K at 100 Mbps; a cinema camera might exceed 1000 Mbps. Always verify your specific model.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-4">
+                Can I use microSD cards for video recording?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-4" class="faq-answer open">
+              <p>Yes, if your device supports microSD. Action cameras (GoPro, DJI), drones, and many smartphones use microSD cards. Performance is identical to full-size SD cards—a V30 microSD is just as fast as a V30 full-size SD. The only difference is physical size.</p>
+              <p><strong>Key consideration:</strong> Use a microSD-to-SD adapter only if necessary. Adapters add a point of failure and can slightly reduce performance. If your camera supports microSD natively, just use the microSD directly. Always confirm your camera's microSD support in the manual—not all cameras accept microSD, and some require a specific type (UHS-I vs UHS-II).</p>
+              <p><strong>Storage calculation:</strong> Use this calculator the same way—bitrate, duration, resolution. MicroSD cards come in smaller capacities (256GB max, typically), so plan accordingly if you're shooting high-bitrate 4K for extended periods.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-5">
+                What's the difference between UHS-II and UHS-III?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-5" class="faq-answer open">
+              <p><strong>UHS-II:</strong> The current standard bus interface for most SD cards. Theoretical max speed of 312 MB/s. In practice, write speeds max around 200-260 MB/s. This is more than enough for 4K 60fps, ProRes, and most professional workflows.</p>
+              <p><strong>UHS-III:</strong> Newest standard with theoretical speeds up to 624 MB/s (actual: 400+ MB/s write). Only found on premium cards and required for extreme workflows: 8K recording, DCI cinema capture, high-bitrate RAW video (like Blackmagic or RED).</p>
+              <p><strong>Backward compatibility:</strong> UHS-III cards work in UHS-II slots, but at UHS-II speeds. Your camera's slot determines which you can use—check your manual. Most cameras released before 2020 are UHS-II only.</p>
+              <p><strong>For most users:</strong> UHS-II is sufficient and more affordable. Only upgrade to UHS-III if you're shooting 8K, RAW video, or professional cinema work.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-heading">
+              <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-6">
+                How much should I overprovision my card?
+                <span class="faq-toggle">↓</span>
+              </button>
+            </h3>
+            <div id="faq-answer-6" class="faq-answer open">
+              <p>We recommend buying cards 25-50% larger than your calculated needs. Here's why:</p>
+              <ul class="list-disc list-inside space-y-2 ml-2">
+                <li><strong>Camera firmware & metadata:</strong> Your camera reserves 0.5-2% of card capacity for its own files. A "256GB" card is really ~240GB usable.</li>
+                <li><strong>Performance degradation:</strong> As cards approach full capacity, write speed drops significantly. A V60 card at 95% full might perform like V30. Keeping 25-50% free ensures sustained speed throughout the session.</li>
+                <li><strong>Calculation margin:</strong> Bitrate estimates vary. A 100 Mbps camera might actually use 105 Mbps under certain conditions. Overprovision protects against real-world variations.</li>
+                <li><strong>Recording safety:</strong> If your card hits absolute maximum capacity mid-take, the camera stops recording and may corrupt the footage. The safety margin prevents this disaster.</li>
+              </ul>
+              <p><strong>Professional practice:</strong> Many videographers buy cards with 2x the calculated capacity. This ensures peak performance, eliminates margin-of-error risk, and maximizes card lifespan. It costs more upfront but prevents expensive reshoot situations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommended Cards Section -->
+      <div class="mb-8 hidden" id="card-recommendations">
+       <h2 class="text-2xl font-bold text-slate-900 mb-6">Recommended SD Cards for Your Needs</h2>
+       <div id="card-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+         <!-- Populated by JavaScript after calculation -->
+       </div>
+      </div>
+
+      <!-- Amazon Featured Products Section (Phase 5) -->
+      
+      <section id="amazon-products-calculator-recommended" class="mb-16 scroll-mt-20">
+        <h3 class="text-2xl font-bold text-slate-900 mb-6">Featured Products</h3>
+        <p class="text-xs text-slate-500 mb-6">This website contains affiliate links. We may earn a small commission when you purchase through our links at no extra cost to you.</p>
+        <div class="amazon-badges-grid">
+          
+    <div class="amazon-product-badge">
+      <div class="badge-image">
+        <img src="https://m.media-amazon.com/images/I/31aAqoN0xLL._SL160_.jpg" alt="Kingston Canvas Go Plus 512GB microSD Card | Up to 200MB/s | Class 10, UHS-I, U3, V30, A2 | SDCG4/512GB" loading="lazy" width="120" height="120" />
+      </div>
+      <div class="badge-content">
+        <h4 class="badge-title">Kingston Canvas Go Plus 512GB microSD Card | Up to 200MB/s | Class 10, UHS-I, U3, V30, A2 | SDCG4/512GB</h4>
+        
+        <div class="badge-price">$Check Price</div>
+        <a href="https://www.amazon.com/dp/B0F2B1LT72?tag=sd-cc-20&linkCode=osi&th=1&psc=1" target="_blank" rel="nofollow noopener" class="badge-link">
+          <i class="fas fa-shopping-cart"></i>
+          View on Amazon
+        </a>
+      </div>
+    </div>
+  
+        </div>
+      </section>
+    
+
+      <!-- Related Calculators -->
+      <div class="bg-slate-100 rounded-lg p-8 mb-8">
+        <h3 class="text-xl font-bold text-slate-900 mb-6">Related Calculators</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <a href="/tools/calculators/photo-storage/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">Photo Storage Calculator</h4>
+            <p class="text-sm text-slate-600">Compare JPEG vs RAW burst capacity</p>
+          </a>
+          <a href="/tools/calculators/timelapse-storage/" class="block p-6 bg-white rounded-lg shadow-sm border border-slate-200 hover:border-blue-600 transition-colors">
+            <h4 class="font-bold text-slate-900 mb-2">Timelapse Storage Calculator</h4>
+            <p class="text-sm text-slate-600">Plan long-duration timelapse projects</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Schema Markup -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Video Storage Calculator — How Much Can You Record?",
+          "description": "Calculate how much 4K video fits on your SD card. Instant bitrate-to-storage conversion. Compare speeds, codecs, and get card recommendations.",
+          "url": "https://sdcardchecker.com/tools/calculators/video-storage/",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sdcardchecker.com" },
+              { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://sdcardchecker.com/tools/" },
+              { "@type": "ListItem", "position": 3, "name": "Video Storage Calculator", "item": "https://sdcardchecker.com/tools/calculators/video-storage/" }
+            ]
+          },
+          "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "What's the difference between H.264, H.265, and ProRes?", "acceptedAnswer": { "@type": "Answer", "text": "H.264 is standard, H.265 is more efficient, ProRes is professional." } },
+              { "@type": "Question", "name": "What Speed Class do I need for 4K video?", "acceptedAnswer": { "@type": "Answer", "text": "V30 minimum for 4K 30fps, V60 recommended for 4K 60fps." } }
+            ]
+          }
+        }
+      </script>
+    </main>
+
+    <!-- Right Sidebar Navigation -->
+<aside style="width: 100%; max-width: 380px; flex-shrink: 0; margin-top: 3rem; position: sticky; top: 80px; background: white; border-radius: 6px; border: 1px solid #e5e5e5; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+   <!-- Search Bar at Top -->
+   <div x-data="deviceSearch()" x-init="init()" @click.outside="open = false" class="relative mb-6">
+    <div class="relative">
+      <i class="fas fa-search absolute left-3 top-3 text-slate-400"></i>
+      <input
+         type="text"
+         x-model="query"
+         @input="filterDevices()"
+         @focus="open = true; filterDevices()"
+         @keydown="handleKeydown($event)"
+         placeholder="Search devices..."
+         class="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+         data-hj-allow
+       >
+    </div>
+    <div class="absolute top-full left-0 right-0 mt-1 bg-white border border-slate-300 rounded-lg shadow-lg z-50" :class="{ hidden: !open || filtered.length === 0 }">
+      <template x-for="(group, category) in groupedDevices()" :key="category">
+        <div>
+          <div class="px-4 py-2 text-xs font-bold text-slate-500 uppercase bg-slate-50" x-text="category"></div>
+          <template x-for="device in groupedDevices()[category]" :key="device.id">
+            <a :href="`/devices/${device.slug}/`" class="block px-4 py-2 text-slate-700 hover:bg-blue-50 hover:text-blue-600" x-text="device.name"></a>
+          </template>
+        </div>
+      </template>
+    </div>
+  </div>
+
+  <!-- Category Links -->
+  <div class="mb-6 border-t border-slate-200 pt-6">
+  <h3 class="text-sm font-semibold text-slate-900 mb-3">Categories</h3>
+  <ul class="space-y-2">
+  <li><a href="/categories/action-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Action Cameras</a></li>
+  <li><a href="/categories/cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Cameras</a></li>
+  <li><a href="/categories/computing-and-tablets/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Computing & Tablets</a></li>
+  <li><a href="/categories/drones/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Drones</a></li>
+  <li><a href="/categories/gaming-handhelds/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Gaming Handhelds</a></li>
+  <li><a href="/categories/dash-cams/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Dash Cams</a></li>
+  <li><a href="/categories/smartphones/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Smartphones</a></li>
+  <li x-data="{ open: false }">
+    <button @click="open = !open" class="w-full text-left text-sm text-slate-600 hover:text-blue-600 transition-colors flex items-center justify-between">
+      More Categories
+      <i :class="open ? 'fas fa-chevron-up' : 'fas fa-chevron-down'" class="text-xs"></i>
+    </button>
+    <ul x-show="open" class="mt-2 ml-3 space-y-2 border-l border-slate-200 pl-3">
+      <li><a href="/categories/audio-and-hi-fi/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Audio & Hi-Fi</a></li>
+      <li><a href="/categories/security-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Security Cameras</a></li>
+      <li><a href="/categories/3d-printers-and-fabrication/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">3D Printers & Fabrication</a></li>
+      <li><a href="/categories/music-production/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Music Production</a></li>
+    </ul>
+  </li>
+     </ul>
+  </div>
+
+  <!-- Tools Links -->
+  <div class="mb-6 border-t border-slate-200 pt-6">
+    <h3 class="text-sm font-semibold text-slate-900 mb-3">Calculators</h3>
+    <ul class="space-y-2">
+      <li><a href="/tools/calculators/video-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Video Storage & Recording Time</a></li>
+      <li><a href="/tools/calculators/photo-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Photo Storage & Capacity</a></li>
+      <li><a href="/tools/calculators/drone-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Drone Recording Time & Storage</a></li>
+      <li><a href="/tools/calculators/security-camera-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Security Camera Recording Time</a></li>
+      <li><a href="/tools/calculators/dashcam-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Dashcam Storage & Loop Time</a></li>
+      <li><a href="/tools/calculators/action-camera-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Action Camera Storage & Capacity</a></li>
+      <li><a href="/tools/calculators/gopro-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">GoPro Recording Time & Storage</a></li>
+      <li><a href="/tools/calculators/timelapse-storage/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Timelapse Storage & Photo Count</a></li>
+    </ul>
+  </div>
+
+  <!-- Guide Links -->
+  <div class="mb-6 border-t border-slate-200 pt-6">
+    <h3 class="text-sm font-semibold text-slate-900 mb-3">Guides</h3>
+    <ul class="space-y-2">
+      <li><a href="/guides/sd-card-guide/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">SD Card Guide</a></li>
+      <li><a href="/guides/sd-card-speed-classes/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Speed Classes</a></li>
+      <li><a href="/guides/video-bitrate-comparison/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Video Bitrate Guide</a></li>
+      <li><a href="/guides/raw-vs-jpeg/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">RAW vs JPEG</a></li>
+      <li><a href="/guides/is-my-sd-card-fake/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Fake SD Card Checker</a></li>
+      <li><a href="/guides/nintendo-switch-sd-card-guide/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">Nintendo Switch Guide</a></li>
+    </ul>
+  </div>
+
+  <!-- About Section -->
+  <div class="mb-6 border-t border-slate-200 pt-6">
+    <h3 class="text-sm font-semibold text-slate-900 mb-3">About</h3>
+    <p class="text-sm italic text-slate-600 opacity-80">SD Card Checker helps you find the perfect SD card for any device with expert recommendations and detailed specs.</p>
+  </div>
+
+  <!-- Disclaimer Section -->
+   <div class="border-t border-slate-200 pt-6">
+     <h3 class="text-sm font-semibold text-slate-900 mb-3">Disclaimer</h3>
+     <p class="text-sm italic text-slate-600 opacity-80">The content on this site is presented for informational purposes only. SD Card Checker makes no guarantees regarding the completeness or accuracy of the data and provides it on an "as-is" basis.</p>
+     <p class="text-sm italic text-slate-600 opacity-80 mt-3">This website contains affiliate links. We may earn a small commission when you purchase through our links at no extra cost to you.</p>
+   </div>
+</aside>
+  </div>
+
+  <!-- Footer -->
+<footer class="bg-slate-900 text-slate-200 py-12 mt-20">
+<div class="max-w-7xl mx-auto px-4">
+<div class="grid md:grid-cols-5 gap-8 mb-8">
+<div>
+<h4 class="font-bold text-white mb-4">Company</h4>
+<ul class="space-y-2 text-sm">
+    <li><a href="/about.html" class="hover:text-white transition-colors">About Us</a></li>
+    <li><a href="/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+
+<div>
+<h4 class="font-bold text-white mb-4">Legal</h4>
+<ul class="space-y-2 text-sm">
+<li><a href="/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+<li><a href="/terms.html" class="hover:text-white transition-colors">Terms of Use</a></li>
+</ul>
+</div>
+
+<div>
+<h4 class="font-bold text-white mb-4">Site</h4>
+<ul class="space-y-2 text-sm">
+<li><a href="/sitemap.xml" class="hover:text-white transition-colors">Sitemap</a></li>
+</ul>
+</div>
+</div>
+
+<div class="border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
+  <p>&copy; 2026 SD Card Checker. All rights reserved.</p>
+</div>
+</div>
+</footer>
+  <!-- Grow Script -->
+<script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo3YzE2YTcwYi1mNzdjLTQ0MWQtYjJmNi05MmEzZTMzNDc2Yjk=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+
+  <style>
+    /* Hero Image with Overlay Title */
+    .hero-image-container {
+      position: relative;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+    }
+
+    .hero-title-wrapper {
+      text-align: center;
+    }
+
+    .hero-title {
+      @apply text-3xl md:text-4xl font-bold text-center px-4;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.5);
+      filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+      @apply text-lg md:text-xl font-semibold text-center px-4;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.5);
+      filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+    }
+
+    .faq-item {
+      @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow;
+    }
+
+    .faq-heading {
+      @apply m-0;
+    }
+
+    .faq-question {
+      @apply w-full p-6 cursor-pointer flex justify-between items-center font-semibold text-slate-900 hover:text-blue-600 transition-colors bg-transparent border-none;
+      min-height: 48px;
+      user-select: none;
+      -webkit-user-select: none;
+      text-align: left;
+    }
+
+    .faq-question:focus {
+      @apply outline-2 outline-offset-2 outline-blue-500;
+    }
+
+    .faq-question:active {
+      background-color: rgba(59, 130, 246, 0.05);
+      transition: background-color 0.1s ease;
+    }
+
+    .faq-toggle {
+      @apply text-slate-400 transition-transform duration-300;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .faq-toggle.open {
+      @apply rotate-180;
+    }
+
+    .faq-answer {
+      @apply px-6 pb-6 text-slate-700 leading-relaxed border-t border-slate-200 hidden;
+    }
+
+    .faq-answer.open {
+      @apply block;
+    }
+  </style>
+
+  <script>
+    // Initialize FAQ accordion on load
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.faq-question');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const answerId = button.getAttribute('aria-controls');
+          const answer = document.getElementById(answerId);
+          const toggle = button.querySelector('.faq-toggle');
+          const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+          // Close all others
+          document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.setAttribute('aria-expanded', 'false');
+          });
+          document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+          document.querySelectorAll('.faq-toggle').forEach(t => t.classList.remove('open'));
+
+          // Toggle current
+          if (!isOpen) {
+            button.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+            toggle.classList.add('open');
+          }
+        });
+      });
+    });
+  </script>
+
+  <script>
+    // Initialize FAQ accordion on load
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.faq-question');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const answerId = button.getAttribute('aria-controls');
+          const answer = document.getElementById(answerId);
+          const toggle = button.querySelector('.faq-toggle');
+          const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+          // Close all others
+          document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.setAttribute('aria-expanded', 'false');
+          });
+          document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+          document.querySelectorAll('.faq-toggle').forEach(t => t.classList.remove('open'));
+
+          // Toggle current
+          if (!isOpen) {
+            button.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+            toggle.classList.add('open');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDカードのスピードクラス解説 (2026年版): U3、V30、V60等の意味とは | SD Card Checker</title>
+  <meta name="description" content="U3 = 最低30MB/s書き込み。V30 = 動画向け同等規格。V60 = 4K+向け60MB/s。UHS-II = 最大312MB/s。全スピードクラスの完全解説と、あなたのデバイスに本当に必要な規格をズバリ解説。">
+  <link rel="canonical" href="https://sdcardchecker.com/ja/guides/sd-card-speed-classes/">
+  
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="SDカードのスピードクラス解説 (2026年版): U3, V30, V60等の意味とは">
+  <meta property="og:description" content="間違ったSDカードにお金を使いすぎていませんか？このガイドを読めば、速度規格が簡単に理解でき、カメラやドローン、ゲーム機にぴったりの一枚を選べます。">
+  <meta property="og:image" content="https://sdcardchecker.com/img/guides/sd-card-speed-classes.webp">
+  <meta property="og:url" content="https://sdcardchecker.com/ja/guides/sd-card-speed-classes/">
+  <meta property="og:site_name" content="SD Card Checker">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SDカードのU3、V30、A2とは？分かりやすいスピードクラス解説">
+  <meta name="twitter:description" content="SDカードのU3、V30、V60は何を意味する？4K動画、RAW連写、ゲーム（Switchなど）に本当に必要な速度を学びましょう。">
+  <meta name="twitter:image" content="https://sdcardchecker.com/img/guides/sd-card-speed-classes.webp">
+
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "SDカードのスピードクラス完全ガイド：U1, U3, V30, V60, V90, A1, A2の違いを解説",
+    "description": "SDカードのスピードクラス、バスインターフェース（UHS-I, UHS-II）、アプリケーションパフォーマンスクラス（A1, A2）を包括的に解説し、4K動画撮影、RAW連写、ゲームなどの特定の用途に最適なカードを選択する方法を説明します。",
+    "image": "https://sdcardchecker.com/img/guides/sd-card-speed-classes.webp",
+    "url": "https://sdcardchecker.com/ja/guides/sd-card-speed-classes/",
+    "author": { "@id": "https://sdcardchecker.com/#organization" },
+    "publisher": { "@id": "https://sdcardchecker.com/#organization" },
+    "inLanguage": "ja"
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "ホーム",
+        "item": "https://sdcardchecker.com/ja/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "ガイド",
+        "item": "https://sdcardchecker.com/ja/guides/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "SDカードのスピードクラス解説",
+        "item": "https://sdcardchecker.com/ja/guides/sd-card-speed-classes/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "U3とV30の違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "実用上、U3とV30は同等です。どちらも最低保証書き込み速度30MB/sを保証します。V30はビデオ向けに策定された新しい規格ですが、U3カードも4K動画撮影で同等の性能を発揮します。最近のカードの多くは両方の規格に対応しています。"
+      }
+    }, {
+      "@type": "Question",
+      "name": "4K動画撮影にはどのスピードクラスのSDカードが必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "標準的な4K動画（24/30fps）には、最低でもV30またはU3規格（30MB/s）のカードが必要です。高ビットレートの4Kやハイフレームレート（60/120fps）での撮影では、コマ落ちを防ぐためにV60規格（60MB/s）のカードが推奨されます。"
+      }
+    }, {
+      "@type": "Question",
+      "name": "高速なUHS-IIカードを、古いUHS-I対応機器で使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、使えます。SDカードには下位互換性があります。UHS-IIカードはUHS-Iスロットでも動作しますが、その際は低速なUHS-Iの速度（最大104MB/s）に制限されます。UHS-IIカードが持つ追加のピンによる高速性能は発揮されません。"
+      }
+    }]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Grow Script -->
+<script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo3YzE2YTcwYi1mNzdjLTQ0MWQtYjJmNi05MmEzZTMzNDc2Yjk=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://sdcardchecker.com/#organization","name":"SD Card Checker","url":"https://sdcardchecker.com","logo":{"@type":"ImageObject","@id":"https://sdcardchecker.com/#logo","url":"https://sdcardchecker.com/img/brand/logo.webp"},"foundingDate":"2025-12-31","vatID":"IT03173170808","taxID":"IT03173170808","contactPoint":{"@type":"ContactPoint","email":"contact@sdcardchecker.com","contactType":"customer support"},"founder":{"@id":"https://sdcardchecker.com/#founder"},"sameAs":["https://github.com/pietro93/SDCardChecker"]},{"@type":"Person","@id":"https://sdcardchecker.com/#founder","name":"Pietro Romeo","url":"https://sdcardchecker.com","sameAs":["https://pietroromeo.medium.com/","https://scholar.google.com/citations?user=16VCt3EAAAAJ","https://www.semanticscholar.org/author/Pietro-Romeo/2062621259","https://dl.acm.org/profile/99659019466"]},{"@type":"WebSite","@id":"https://sdcardchecker.com/#website","name":"SD Card Checker","url":"https://sdcardchecker.com","publisher":{"@id":"https://sdcardchecker.com/#organization"}}]}</script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  <!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white shadow-sm header-nav-container">
+<div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+<a href="/ja/" class="flex items-center gap-3 group flex-shrink-0">
+<img src="/img/brand/logo.webp" alt="SD Card Checker Logo" class="w-10 h-10 rounded-lg shadow-md group-hover:shadow-lg transition-shadow" width="40" height="40">
+<span class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">SD Card Checker</span>
+</a>
+    <nav class="header-nav hidden md:flex gap-8 items-center">
+    <a href="/ja/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">ホーム</a>
+    
+    <div class="relative group flex items-center">
+    <a href="/ja/categories/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
+      デバイス
+      <i class="fas fa-chevron-down text-xs"></i>
+      </a>
+      <div class="absolute left-0 top-full pt-2 w-48 hidden group-hover:block z-50">
+      <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+       <a href="/ja/categories/cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">カメラ</a>
+       <a href="/ja/categories/action-cameras/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">アクションカメラ</a>
+       <a href="/ja/categories/drones/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">ドローン</a>
+       <a href="/ja/categories/gaming-handhelds/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">携帯ゲーム機</a>
+       <a href="/ja/categories/dash-cams/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">ドライブレコーダー</a>
+       <a href="/ja/categories/computing-and-tablets/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">コンピュータ・タブレット</a>
+       <a href="/ja/categories/" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-xs font-bold border-t border-blue-200 flex items-center gap-2"><i class="fas fa-grid-2"></i> すべてのデバイス</a>
+        </div>
+       </div>
+      </div>
+
+
+
+
+
+       <div class="relative group flex items-center">
+       <a href="/ja/guides/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
+       ガイド
+       <i class="fas fa-chevron-down text-xs"></i>
+       </a>
+       <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block z-50">
+       <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+        <a href="/ja/guides/sd-card-speed-classes/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">速度クラス</a>
+        <a href="/ja/guides/is-my-sd-card-fake/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">偽造SDカード見分け方</a>
+        <a href="/ja/guides/nintendo-switch-sd-card-guide/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 text-sm font-medium">ニンテンドースイッチガイド</a>
+        <a href="/ja/guides/" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-xs font-bold border-t border-blue-200 flex items-center gap-2"><i class="fas fa-book"></i> すべてのガイド</a>
+        </div>
+        </div>
+       </div>
+
+       <a href="/ja/about.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">について</a>
+    </nav>
+    
+    <!-- Language Switcher (Desktop) -->
+    <div class="hidden md:flex items-center gap-2 ml-4 pl-4 border-l border-slate-200">
+      <div class="relative group">
+        <button class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm flex items-center gap-1">
+          <i class="fas fa-globe"></i>
+          <span>日本語</span>
+          <i class="fas fa-chevron-down text-xs"></i>
+        </button>
+        <div class="absolute right-0 top-full pt-2 w-40 hidden group-hover:block">
+          <div class="bg-white rounded-lg shadow-lg border border-slate-200">
+            <a href="/" class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium">English</a>
+            <a href="/ja/" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-sm font-medium flex items-center justify-between">
+              日本語
+              <i class="fas fa-check text-blue-600"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden text-slate-600 hover:text-blue-600 mobile-menu-toggle flex items-center justify-center" aria-label="Toggle menu" id="mobileMenuBtn" style="width: 44px; height: 44px; padding: 0;">
+      <i class="fas fa-bars text-xl" style="display: block;"></i>
+    </button>
+  </div>
+  
+  <!-- Mobile Navigation Menu -->
+  <nav class="mobile-menu hidden md:hidden bg-slate-50 border-t border-slate-200 max-h-[calc(100vh-80px)] overflow-y-auto" id="mobileMenu">
+    <div class="px-4 py-3 space-y-1">
+      <!-- Language Switcher (Mobile) -->
+      <div class="border-b border-slate-200 pb-3 mb-3">
+        <p class="px-3 py-2 text-sm font-semibold text-slate-700 text-slate-600">言語を選択</p>
+        <a href="/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">English</a>
+        <a href="/ja/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium flex items-center justify-between">
+          日本語
+          <i class="fas fa-check text-blue-600"></i>
+        </a>
+      </div>
+      
+      <!-- Direct Links -->
+      <a href="/ja/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">ホーム</a>
+      
+      <!-- Devices Section -->
+      <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="devices">
+        <span>デバイス</span>
+        <i class="fas fa-chevron-right transition-transform duration-300"></i>
+      </button>
+      <div class="mobile-section hidden pl-4 space-y-1" data-content="devices">
+        <a href="/ja/categories/cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">カメラ</a>
+        <a href="/ja/categories/action-cameras/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">アクションカメラ</a>
+        <a href="/ja/categories/drones/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">ドローン</a>
+        <a href="/ja/categories/gaming-handhelds/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">携帯ゲーム機</a>
+        <a href="/ja/categories/dash-cams/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">ドライブレコーダー</a>
+        <a href="/ja/categories/computing-and-tablets/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">コンピュータ・タブレット</a>
+        <a href="/ja/categories/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium">すべてのデバイス</a>
+      </div>
+      
+
+
+      <!-- Resources Section -->
+      <button class="mobile-section-toggle w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium" data-section="resources">
+        <span>ガイド</span>
+        <i class="fas fa-chevron-right transition-transform duration-300"></i>
+      </button>
+      <div class="mobile-section hidden pl-4 space-y-1" data-content="resources">
+        <a href="/ja/guides/sd-card-speed-classes/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">速度クラス</a>
+        <a href="/ja/guides/is-my-sd-card-fake/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">偽造SDカード見分け方</a>
+        <a href="/ja/guides/nintendo-switch-sd-card-guide/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm">ニンテンドースイッチガイド</a>
+        <a href="/ja/guides/" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium">すべてのガイド</a>
+      </div>
+      
+      <!-- Direct Links -->
+      <a href="/ja/about.html" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">について</a>
+    </div>
+  </nav>
+</header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Handle section toggles
+    const sectionToggles = mobileMenu.querySelectorAll('.mobile-section-toggle');
+    sectionToggles.forEach(toggle => {
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        const section = this.getAttribute('data-section');
+        const content = mobileMenu.querySelector('[data-content="' + section + '"]');
+        const icon = this.querySelector('i');
+        
+        if (content) {
+          content.classList.toggle('hidden');
+          icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(90deg)';
+        }
+      });
+    });
+    
+    // Close menu when a link is clicked
+    const menuLinks = mobileMenu.querySelectorAll('a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+});
+</script>
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <nav aria-label="breadcrumb" class="text-sm text-slate-600 flex items-center gap-2">
+        <a href="/ja/" class="text-blue-600 hover:underline">ホーム</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="/ja/guides/" class="text-blue-600 hover:underline">ガイド</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-slate-900 font-medium" aria-current="page">SDカードのスピードクラス解説</span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <section class="mb-12">
+        <div class="relative rounded-xl overflow-hidden h-96 bg-gradient-to-r from-purple-600 to-pink-700 flex items-center" style="background-image: url('/img/guides/sd-card-speed-classes.webp'); background-size: cover; background-position: center;">
+          <div class="absolute inset-0 bg-black opacity-40"></div>
+          <div class="relative z-10 w-full text-white px-8 py-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white drop-shadow-lg" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">SDカードのスピードクラス解説</h1>
+            <p class="text-xl text-purple-100 mb-6">U1、U3、V30、V60の謎を解明し、あなたに本当に必要な規格を解説</p>
+            <p class="text-purple-50 max-w-2xl">コマ落ちやパフォーマンス低下のリスクを避けましょう。このガイドはSDカードの速度規格をシンプルに解説し、4K動画、RAW連写、ゲームに最適なカードを、無駄な出費なく自信を持って選べるようサポートします。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Affiliate Disclosure -->
+<section class="border-l-4 border-amber-400 rounded-r-lg p-4 mb-8 mx-4  ">
+   <center><p class="text-sm text-grey-900">
+     <i class="fas fa-circle-info mr-2"></i>
+     <strong>開示:</strong> SD Card Checkerはアフィリエイトリンクを含んでいます。当サイトのリンクから購入した場合、追加費用なしで少額の手数料を獲得します。
+   </p></center>
+ </section>
+      
+      <!-- Quick Answer Section -->
+      <section class="bg-purple-50 border-l-4 border-purple-500 rounded-b-lg p-8 mb-12 shadow-sm">
+        <h2 class="text-2xl font-bold text-purple-900 mb-4">早見表：あなたに必要なスピードクラスは？</h2>
+        <p class="text-slate-700 leading-relaxed mb-6">時間がない方は、以下の用途別の推奨スペックをご確認ください。</p>
+        <div class="grid md:grid-cols-3 gap-6 text-sm">
+          <div class="bg-white p-4 rounded-lg border border-purple-200">
+            <h3 class="font-bold text-purple-800 mb-2 flex items-center gap-2"><i class="fas fa-video"></i>4K動画撮影向け</h3>
+            <p class="text-slate-700"><strong>V30またはU3が必須です。</strong>これにより最低30MB/sの書き込み速度が保証され、コマ落ちを防ぎます。高ビットレートの4K（120fps以上）には<strong>V60</strong>カードを選びましょう。</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border border-purple-200">
+            <h3 class="font-bold text-purple-800 mb-2 flex items-center gap-2"><i class="fas fa-camera"></i>写真撮影向け</h3>
+            <p class="text-slate-700"><strong>RAWでの高速連写にはU3が最適です。</strong>単発撮影ならU1でも十分。高速なカードはカメラのバッファを素早く解放し、連続撮影枚数を増やせます。</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border border-purple-200">
+            <h3 class="font-bold text-purple-800 mb-2 flex items-center gap-2"><i class="fas fa-gamepad"></i>ゲーム・アプリ向け</h3>
+            <p class="text-slate-700"><strong>A2規格を探しましょう。</strong>アプリケーションパフォーマンスクラス（A1/A2）は、Nintendo SwitchやSteam Deckなどでアプリを高速に読み込むために重要です。V30も良い指標になります。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Introduction -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">SDカードのスピードクラス表記の意味とは？</h2>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          SDカードのスピードクラスは一種の約束事です。それは<strong>「最低保証書き込み速度」</strong>を保証するものです。これは動画撮影において極めて重要で、速度が低下するとカメラが録画を停止したり、コマ落ちが発生して撮影を台無しにしたりする原因となります。
+        </p>
+        <p class="text-slate-700 leading-relaxed">
+          高速道路の最低速度のようなものだと考えてください。「V30」のカードは、速度が30MB/sを下回らないことを約束します。これはカード表面に印刷されている「最大速度」（例：「最大170MB/s」）とは異なります。最大速度は理想的な条件下での短時間のバースト速度に過ぎません。動画撮影で重要なのは、この「最低保証速度」です。このガイドでは、異なる規格（Vクラス、Uクラス、Aクラス）を分かりやすく解説します。
+        </p>
+      </section>
+
+      <!-- Visual Guide -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">SDカードの記号（シンボル）の読み方</h2>
+        <p class="text-slate-600 mb-6">SDカードの表面には多くの記号が印刷されています。ここでは最も重要なものの意味を解説します。</p>
+        <ol class="list-decimal list-inside space-y-2 text-slate-700">
+            <li><strong>カードの種類：</strong>SDHC（最大32GB）またはSDXC（32GB以上）。</li>
+            <li><strong>ストレージ容量：</strong>カードの総容量。ギガバイト（GB）またはテラバイト（TB）で表記。</li>
+            <li><strong>最大読み取り速度：</strong>理論上のピーク速度で、主にデータの読み取り時。保証された速度ではありません。</li>
+            <li><strong>ビデオスピードクラス（Vクラス）：</strong>動画撮影で最も重要な規格。V30は最低30MB/sを意味します。</li>
+            <li><strong>UHSスピードクラス（Uクラス）：</strong>古いですが今も一般的な動画向け速度規格。U3は最低30MB/sを意味します。</li>
+            <li><strong>バスインターフェース：</strong>UHS-IまたはUHS-II。UHS-IIカードは2列目のピンを持ち、より高速な転送が可能です。</li>
+            <li><strong>アプリケーションパフォーマンスクラス（Aクラス）：</strong>スマホやゲーム機で重要。A2はA1より高速です。</li>
+        </ol>
+      </section>
+
+      <!-- Detailed Speed Class Breakdown -->
+      <section class="space-y-8 mb-12">
+        <!-- V-Class -->
+        <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8">
+          <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-purple-100 text-purple-600 font-bold">1</span>
+            ビデオスピードクラス（Vクラス）：現代の動画撮影標準規格
+          </h3>
+          <p class="text-slate-700 leading-relaxed mb-6">
+            Vクラスは、カードの動画撮影能力を最も明確に示す指標です。4K、8K、ハイフレームレート録画のために設計された最新の規格です。
+          </p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+                  <p class="font-bold text-lg text-purple-700">V30</p>
+                  <p class="text-sm font-semibold">30 MB/s</p>
+                  <p class="text-xs text-slate-600 mt-2"><strong>最適な選択肢：</strong>ほとんどのミラーレスカメラ、ドローン、アクションカムでの標準的な4K動画（24/30fps）撮影に必須です。</p>
+              </div>
+              <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+                  <p class="font-bold text-lg text-purple-700">V60</p>
+                  <p class="text-sm font-semibold">60 MB/s</p>
+                  <p class="text-xs text-slate-600 mt-2"><strong>プロ・高画質向け：</strong>高ビットレート4K（60/120fps）や、エントリーレベルの8K録画に必要。RAW連写にも最適です。</p>
+              </div>
+              <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+                  <p class="font-bold text-lg text-purple-700">V90</p>
+                  <p class="text-sm font-semibold">90 MB/s</p>
+                  <p class="text-xs text-slate-600 mt-2"><strong>シネマ・8K向け：</strong>非圧縮8K RAW動画などを撮影するプロ用シネマカメラで要求されます。ほとんどのユーザーには過剰スペックです。</p>
+              </div>
+              <div class="bg-slate-100 p-4 rounded-lg border border-slate-200">
+                  <p class="font-bold text-lg text-slate-600">V10 / V6</p>
+                  <p class="text-sm font-semibold">10 / 6 MB/s</p>
+                  <p class="text-xs text-slate-500 mt-2"><strong>旧規格：</strong>1080p HD動画には十分ですが、4K対応機器には推奨されません。</p>
+              </div>
+          </div>
+          <div class="bg-purple-100 border-l-4 border-purple-500 p-4 mt-6 rounded text-sm">
+            <p><strong>重要なポイント：</strong>4K撮影が可能な現代のカメラには、<strong>最低でもV30規格のカードを検討すべきです。</strong></p>
+          </div>
+        </div>
+
+        <!-- U-Class -->
+        <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8">
+          <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 font-bold">2</span>
+            UHSスピードクラス（Uクラス）：一般的な万能規格
+          </h3>
+          <p class="text-slate-700 leading-relaxed mb-6">
+            Vクラスが登場する前は、Uクラスが4K動画撮影の主要な指標でした。現在でも広く使われており、重要な規格です。
+          </p>
+          <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                  <p class="font-bold text-lg text-blue-700">U1</p>
+                  <p class="text-sm font-semibold mb-2">10 MB/s</p>
+                  <p class="text-sm text-slate-600">1080p動画、単発の写真撮影、一般的な用途には十分です。<strong>4K動画には推奨されません。</strong></p>
+              </div>
+              <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                  <p class="font-bold text-lg text-blue-700">U3</p>
+                  <p class="text-sm font-semibold mb-2">30 MB/s</p>
+                  <p class="text-sm text-slate-600">機能的にはV30と同じです。ほとんどの4K録画で要求される最低速度30MB/sを保証します。</p>
+              </div>
+          </div>
+           <div class="bg-blue-100 border-l-4 border-blue-500 p-4 mt-6 rounded text-sm">
+            <p><strong>U3とV30に違いはある？</strong> 実用上、違いはありません。どちらも最低保証書き込み速度30MB/sを意味します。最近のU3カードのほとんどはV30としても認定されています。</p>
+          </div>
+        </div>
+
+        <!-- A-Class -->
+        <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-8">
+            <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-green-100 text-green-600 font-bold">3</span>
+              アプリケーションパフォーマンスクラス（Aクラス）：アプリとゲーム向け
+            </h3>
+            <p class="text-slate-700 leading-relaxed mb-6">
+              この規格は他とは異なり、持続的な書き込み速度ではなく、<strong>ランダム読み書き性能（IOPS）</strong>を測定します。これはカードから直接アプリケーションやゲームを実行する際に非常に重要です。
+            </p>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-green-50 p-6 rounded-lg border border-green-200">
+                    <p class="font-bold text-lg text-green-700">A1</p>
+                    <p class="text-sm text-slate-600">初期の規格。Androidスマートフォンでアプリを保存するのに適しています。</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg border border-green-200">
+                    <p class="font-bold text-lg text-green-700">A2</p>
+                    <p class="text-sm text-slate-600">ランダム性能が大幅に向上。<strong>Nintendo SwitchやSteam Deckなどの携帯ゲーム機に強く推奨</strong>され、ゲームのロード時間を短縮します。</p>
+                </div>
+            </div>
+             <div class="bg-green-100 border-l-4 border-green-500 p-4 mt-6 rounded text-sm">
+              <p><strong>誰に必要なの？</strong> スマートフォン、タブレット、携帯ゲーム機でアプリやゲーム用のストレージとしてmicroSDカードを使用するすべての人に重要です。</p>
+            </div>
+          </div>
+      </section>
+
+      <!-- Bus Speed Explained -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">バスインターフェース：UHS-IとUHS-IIの違い</h2>
+        <p class="text-slate-600 mb-6">バスインターフェースとは、データを転送するカード上の物理的なピンの配列のことです。これにより、カードの最大理論速度が決まります。</p>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="font-bold text-slate-800 mb-2">UHS-I (最大 約104 MB/s)</h3>
+                <p class="text-slate-700 text-sm mb-4">1列のピンを持ちます。これは最も一般的なインターフェースで、大多数のSDカードと機器で採用されています。V30カードであっても、ほとんどのユーザーには十分な速度です。</p>
+                <img src="/img/guides/uhs-1-card.webp" alt="1列の接点ピンを持つUHS-I SDカード" class="rounded-md shadow-sm border">
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-800 mb-2">UHS-II (最大 約312 MB/s)</h3>
+                <p class="text-slate-700 text-sm mb-4">2列目のピンを追加することで、読み書き速度を劇的に向上させます。V60やV90のカードには必須で、プロがカードからPCへ大容量の映像を遥かに速く転送することを可能にします。</p>
+                <img src="/img/guides/uhs-2-card.webp" alt="高速化のための2列目の接点ピンを持つUHS-II SDカード" class="rounded-md shadow-sm border">
+            </div>
+        </div>
+        <div class="bg-slate-100 border-t-4 border-slate-300 p-6 mt-8 rounded-b-lg text-sm">
+            <h4 class="font-bold text-slate-900 mb-2">UHS-IIは必要ですか？</h4>
+            <p class="text-slate-700">UHS-IIカードが必要になるのは、<strong>カードと使用機器（カメラやカードリーダー）の両方がUHS-IIに対応している場合のみ</strong>です。カメラがUHS-Iスロットしか持たない場合、UHS-IIカードは動作しますが、UHS-Iの低速な速度に制限されます。お使いのカメラの仕様を確認してください。V60/V90規格の性能を発揮するにはUHS-II対応が必須です。</p>
+        </div>
+      </section>
+
+      <!-- Recommendation Guide by Use Case -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">機器別・用途別のおすすめカード</h2>
+        <div class="space-y-6">
+            <!-- Mirrorless/DSLR -->
+            <div class="flex flex-col md:flex-row gap-4 p-4 bg-slate-50 rounded-lg">
+                <div class="w-16 h-16 flex-shrink-0 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-2xl"><i class="fas fa-camera-retro"></i></div>
+                <div>
+                    <h4 class="font-bold text-lg text-slate-900">ミラーレスカメラ・一眼レフ</h4>
+                    <ul class="list-disc pl-5 mt-2 text-sm text-slate-700 space-y-1">
+                        <li><strong>標準的な4K動画：</strong> V30 / U3, UHS-I</li>
+                        <li><strong>RAW高速連写：</strong> V60, UHS-II（バッファを素早く解放するため）</li>
+                        <li><strong>高ビットレート動画 (10-bit, All-I)：</strong> V60 / V90, UHS-II</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Drones & Action Cams -->
+            <div class="flex flex-col md:flex-row gap-4 p-4 bg-slate-50 rounded-lg">
+                <div class="w-16 h-16 flex-shrink-0 bg-green-100 text-green-600 rounded-lg flex items-center justify-center text-2xl"><i class="fas fa-drone"></i></div>
+                <div>
+                    <h4 class="font-bold text-lg text-slate-900">ドローン・アクションカメラ (GoPro, DJI)</h4>
+                    <ul class="list-disc pl-5 mt-2 text-sm text-slate-700 space-y-1">
+                        <li><strong>microSDカードタイプ：</strong> V30 / U3 が基本。A2規格もあれば尚良し。</li>
+                        <li>メーカーの推奨リストを確認するのが確実ですが、V30であれば全ての4Kモードで安全です。</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Gaming -->
+            <div class="flex flex-col md:flex-row gap-4 p-4 bg-slate-50 rounded-lg">
+                <div class="w-16 h-16 flex-shrink-0 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-2xl"><i class="fas fa-gamepad"></i></div>
+                <div>
+                    <h4 class="font-bold text-lg text-slate-900">携帯ゲーム機 (Switch, Steam Deck)</h4>
+                    <ul class="list-disc pl-5 mt-2 text-sm text-slate-700 space-y-1">
+                        <li><strong>microSDカードタイプ：</strong> ゲームのロード時間を短縮するために<strong>A2規格</strong>が最優先です。</li>
+                        <li>V30 / U3も推奨されます。「ゲーム向け」と記載のあるカードを探しましょう。</li>
+                    </ul>
+                </div>
+            </div>
+             <!-- Phones & Tablets -->
+            <div class="flex flex-col md:flex-row gap-4 p-4 bg-slate-50 rounded-lg">
+                <div class="w-16 h-16 flex-shrink-0 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center text-2xl"><i class="fas fa-mobile-alt"></i></div>
+                <div>
+                    <h4 class="font-bold text-lg text-slate-900">スマートフォン・タブレット</h4>
+                    <ul class="list-disc pl-5 mt-2 text-sm text-slate-700 space-y-1">
+                        <li><strong>microSDカードタイプ：</strong> アプリ用ならA1またはA2。</li>
+                        <li>一般的なデータ保存ならU1で十分。カードに直接4K動画を多く録画するならU3 / V30が推奨されます。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">よくある質問</h2>
+        <div class="space-y-4">
+          <details class="group" open>
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>動画撮影中にカードの速度が遅すぎるとどうなりますか？</span>
+              <span class="transition group-open:rotate-180">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm">
+              <p>数秒後にカメラが自動的に録画を停止する可能性が高いです。カードがデータを十分に速く書き込めないため、カメラの内部バッファが溢れてしまうのです。「録画が停止しました」というエラーメッセージが表示されたり、「コマ落ち」が発生して、カクカクした使えない映像になったりします。</p>
+            </div>
+          </details>
+
+          <details class="group" open>
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>V30はU3と同じですか？</span>
+              <span class="transition group-open:rotate-180">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm">
+              <p>はい、実用上は同じです。どちらも最低保証書き込み速度<strong>30 MB/s</strong>を保証します。V30はSDアソシエーションによる新しいビデオ向けの認証規格というだけです。U3規格のカードはV30の要件を満たしており、最近のU3カードの多くはV30のロゴも併記されています。</p>
+            </div>
+          </details>
+
+          <details class="group" open>
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>なぜ「最大170 MB/s」と書かれたカードが遅いのですか？</span>
+              <span class="transition group-open:rotate-180">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm">
+              <p>カード表面に印刷された大きな数字は<strong>最大読み取り速度</strong>であり、持続的な書き込み速度ではありません。この速度は、PCにファイルを転送する際など、データを読み取る時に短時間だけ達成されるものです。動画撮影で本当に重要なのは、保証された最低速度であるVクラスやUクラスの規格（例：V30）です。</p>
+            </div>
+          </details>
+          
+          <details class="group" open>
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-800 hover:text-slate-900 p-4 bg-slate-50 rounded-lg">
+              <span>4K動画にUHS-IIカードは必要ですか？</span>
+              <span class="transition group-open:rotate-180">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </summary>
+            <div class="px-4 pt-3 pb-4 text-slate-700 text-sm">
+              <p>通常は必要ありません。ほとんどの標準的な4K動画は、V30規格のUHS-Iカードで問題なく録画できます。UHS-IIカードが必要になるのは、非常に高ビットレートの動画（V60やV90規格が必要）を撮影する場合や、大容量ファイルをカードからPCへ転送する時間を大幅に短縮したいプロフェッショナルな方だけです。</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Featured Speed Class Cards on Amazon -->
+      {{AMAZON_FEATURED_SPEED_CLASSES}}
+
+      <!-- Related Resources -->
+      <section class="bg-slate-50 rounded-lg p-8 border border-slate-200">
+        <h3 class="text-xl font-bold text-slate-900 mb-4">最適なカードを見つける</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <a href="/ja/tools/camera-finder/" class="block bg-white p-4 rounded-lg border border-slate-200 hover:border-purple-400 hover:shadow-md transition">
+            <p class="font-bold text-slate-900 mb-1">お使いのカメラに対応するSDカードを探す</p>
+            <p class="text-sm text-slate-600">お使いのカメラのモデル名を入力すると、互換性が保証されたカードのリストが表示されます。</p>
+          </a>
+          <a href="/ja/guides/best-sd-cards-for-4k-video/" class="block bg-white p-4 rounded-lg border border-slate-200 hover:border-purple-400 hover:shadow-md transition">
+            <p class="font-bold text-slate-900 mb-1">4K動画撮影に最適なSDカード</p>
+            <p class="text-sm text-slate-600">性能テスト済みのV30、V60、V90規格トップ評価カードをご紹介。</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Right Sidebar Navigation -->
+<aside style="width: 100%; max-width: 380px; flex-shrink: 0; margin-top: 3rem; position: sticky; top: 80px; background: white; border-radius: 6px; border: 1px solid #e5e5e5; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+   <!-- Search Bar at Top -->
+   <div x-data="deviceSearch()" x-init="init()" @click.outside="open = false" class="relative mb-6">
+    <div class="relative">
+      <i class="fas fa-search absolute left-3 top-3 text-slate-400"></i>
+      <input
+         type="text"
+         x-model="query"
+         @input="filterDevices()"
+         @focus="open = true; filterDevices()"
+         @keydown="handleKeydown($event)"
+         placeholder="デバイスを検索..."
+         class="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+         data-hj-allow
+       >
+    </div>
+    <div class="absolute top-full left-0 right-0 mt-1 bg-white border border-slate-300 rounded-lg shadow-lg z-50" :class="{ hidden: !open || filtered.length === 0 }">
+      <template x-for="(group, category) in groupedDevices()" :key="category">
+        <div>
+          <div class="px-4 py-2 text-xs font-bold text-slate-500 uppercase bg-slate-50" x-text="category"></div>
+          <template x-for="device in groupedDevices()[category]" :key="device.id">
+            <a :href="`/ja/devices/${device.slug}/`" class="block px-4 py-2 text-slate-700 hover:bg-blue-50 hover:text-blue-600" x-text="device.name"></a>
+          </template>
+        </div>
+      </template>
+    </div>
+  </div>
+
+  <!-- Category Links -->
+  <div class="mb-6 border-t border-slate-200 pt-6">
+  <h3 class="text-sm font-semibold text-slate-900 mb-3">カテゴリ</h3>
+  <ul class="space-y-2">
+  <li><a href="/ja/categories/action-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">アクションカメラ</a></li>
+  <li><a href="/ja/categories/cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">カメラ</a></li>
+  <li><a href="/ja/categories/computing-and-tablets/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">コンピュータ・タブレット</a></li>
+  <li><a href="/ja/categories/drones/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">ドローン</a></li>
+  <li><a href="/ja/categories/gaming-handhelds/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">携帯ゲーム機</a></li>
+  <li><a href="/ja/categories/dash-cams/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">ドライブレコーダー</a></li>
+  <li><a href="/ja/categories/smartphones/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">スマートフォン</a></li>
+  <li x-data="{ open: false }">
+    <button @click="open = !open" class="w-full text-left text-sm text-slate-600 hover:text-blue-600 transition-colors flex items-center justify-between">
+      もっと見る
+      <i :class="open ? 'fas fa-chevron-up' : 'fas fa-chevron-down'" class="text-xs"></i>
+    </button>
+    <ul x-show="open" class="mt-2 ml-3 space-y-2 border-l border-slate-200 pl-3">
+      <li><a href="/ja/categories/audio-and-hi-fi/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">オーディオ&ハイファイ</a></li>
+      <li><a href="/ja/categories/security-cameras/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">セキュリティカメラ</a></li>
+    </ul>
+  </li>
+     </ul>
+  </div>
+
+
+
+  <!-- Guide Links -->
+  <div class="mb-6 border-t border-slate-200 pt-6">
+    <h3 class="text-sm font-semibold text-slate-900 mb-3">ガイド</h3>
+    <ul class="space-y-2">
+      <li><a href="/ja/guides/sd-card-speed-classes/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">速度クラス</a></li>
+      <li><a href="/ja/guides/is-my-sd-card-fake/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">偽造SDカード見分け方</a></li>
+      <li><a href="/ja/guides/nintendo-switch-sd-card-guide/" class="text-sm text-slate-600 hover:text-blue-600 transition-colors">ニンテンドースイッチガイド</a></li>
+    </ul>
+  </div>
+
+  <!-- About Section -->
+  <div class="mb-6 border-t border-slate-200 pt-6">
+    <h3 class="text-sm font-semibold text-slate-900 mb-3">について</h3>
+    <p class="text-sm italic text-slate-600 opacity-80">SD Card Checkerは、あらゆるデバイスに最適なSDカードを見つけるのに役立ちます。専門家による推奨事項と詳細な仕様があります。</p>
+  </div>
+
+  <!-- Disclaimer Section -->
+   <div class="border-t border-slate-200 pt-6">
+     <h3 class="text-sm font-semibold text-slate-900 mb-3">免責事項</h3>
+     <p class="text-sm italic text-slate-600 opacity-80">本サイトのコンテンツは情報提供のみを目的としています。SD Card Checkerは、データの完全性または正確性について保証せず、「現状のまま」提供します。</p>
+     <p class="text-sm italic text-slate-600 opacity-80 mt-3">このウェブサイトはアフィリエイトリンクを含んでいます。当社のリンクから購入した場合、追加費用なしで少額の手数料を獲得する場合があります。</p>
+   </div>
+</aside>
+  </div>
+
+  <!-- Footer -->
+<footer class="bg-slate-900 text-slate-200 py-12 mt-20">
+<div class="max-w-7xl mx-auto px-4">
+<div class="grid md:grid-cols-5 gap-8 mb-8">
+<div>
+<h4 class="font-bold text-white mb-4">会社</h4>
+<ul class="space-y-2 text-sm">
+    <li><a href="/ja/about.html" class="hover:text-white transition-colors">当社について</a></li>
+</ul>
+</div>
+
+<div>
+<h4 class="font-bold text-white mb-4">法律</h4>
+<ul class="space-y-2 text-sm">
+<li><a href="/ja/privacy.html" class="hover:text-white transition-colors">プライバシーポリシー</a></li>
+<li><a href="/ja/terms.html" class="hover:text-white transition-colors">利用規約</a></li>
+</ul>
+</div>
+
+<div>
+<h4 class="font-bold text-white mb-4">サイト</h4>
+<ul class="space-y-2 text-sm">
+<li><a href="/ja/sitemap.xml" class="hover:text-white transition-colors">サイトマップ</a></li>
+</ul>
+</div>
+
+<div>
+<h4 class="font-bold text-white mb-4">その他</h4>
+<ul class="space-y-2 text-sm">
+<li><a href="/" class="hover:text-white transition-colors">English Version</a></li>
+<li><span class="text-slate-400 text-xs">リーダー未提供</span></li>
+</ul>
+</div>
+</div>
+
+<div class="border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
+  <p>&copy; 2026 SD Card Checker. All rights reserved.</p>
+</div>
+</footer>
+
+  <style>
+    .bg-gradient-to-r {
+      background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    }
+     @media (prefers-reduced-motion: no-preference) {
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .group-open\:animate-fadeIn[open] {
+        animation: fadeIn 0.3s ease-in-out;
+      }
+    }
+  </style>
+</body>
+</html>
