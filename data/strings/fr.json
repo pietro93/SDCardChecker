@@ -1,3 +1,46 @@
 {
-  "_comment": "Not enabled yet (see data/locales.json). Empty on purpose - the t() helper falls back to en.json for any missing key, so this locale can be filled in incrementally without breaking anything."
+  "nav": {
+    "home": "Accueil",
+    "categories": "Appareils",
+    "calculators": "Calculateurs",
+    "guides": "Guides",
+    "compare": "Comparer les cartes SD",
+    "cardReaders": "Lecteurs de cartes",
+    "carNavigation": "Navigation automobile",
+    "allCategories": "Tous les appareils",
+    "allCalculators": "Tous les calculateurs",
+    "allGuides": "Tous les guides",
+    "browseAllCategories": "Voir tous les appareils",
+    "browseAllCalculators": "Voir tous les calculateurs",
+    "browseAllGuides": "Voir tous les guides",
+    "selectLanguage": "Choisir la langue",
+    "about": "À propos"
+  },
+  "footer": {
+    "company": "Entreprise",
+    "aboutUs": "À propos de nous",
+    "contact": "Contact",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "site": "Site",
+    "sitemap": "Plan du site",
+    "copyright": "© 2026 SD Card Checker. Tous droits réservés.",
+    "otherVersions": "Autres langues",
+    "readersNotOffered": "Lecteurs de cartes non disponibles dans cette langue"
+  },
+  "disclosure": "SD Card Checker contient des liens d'affiliation. Lorsque vous effectuez un achat via nos liens, nous percevons une petite commission sans frais supplémentaires pour vous.",
+  "sidebar": {
+    "searchPlaceholder": "Rechercher un appareil...",
+    "categoriesHeading": "Catégories",
+    "moreCategories": "Plus de catégories",
+    "calculatorsHeading": "Calculateurs",
+    "guidesHeading": "Guides",
+    "aboutHeading": "À propos",
+    "aboutText": "SD Card Checker vous aide à trouver la carte SD parfaite pour n'importe quel appareil grâce à des recommandations d'experts et des spécifications détaillées.",
+    "disclaimerHeading": "Avertissement",
+    "disclaimerText1": "Le contenu de ce site est fourni à titre informatif uniquement. SD Card Checker ne garantit ni l'exhaustivité ni l'exactitude des données et les fournit \"en l'état\".",
+    "disclaimerText2": "Ce site contient des liens d'affiliation. Nous pouvons percevoir une petite commission lorsque vous effectuez un achat via nos liens, sans frais supplémentaires pour vous."
+  },
+  "breadcrumbHome": "Accueil"
 }

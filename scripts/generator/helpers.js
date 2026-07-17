@@ -883,6 +883,8 @@ function loadSDCardData(locale = "en") {
       type: series.type,
       imageUrl: resolvedImageUrl || series.imageUrl, // Use resolved path if found, else original
       amazonSearchUrl: series.amazonSearchUrl,
+      amazonDirectUrl: series.amazonDirectUrl,
+      affiliateUrl: series.affiliateUrl,
       priceTier: series.priceTier,
       priceSymbol: series.priceSymbol,
       pros: series.pros,

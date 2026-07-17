@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Card Checker - Trouvez la carte SD parfaite pour n'importe quel appareil</title>
+    <meta name="description"
+        content="Trouvez instantanément la carte SD parfaite pour votre appareil. Comparez les vitesses et les marques et obtenez des recommandations personnalisées pour appareils photo, drones, consoles portables et plus encore.">
+    <meta name="keywords" content="carte SD, microSD, meilleure carte SD, recommandations carte SD, compatibilité des appareils">
+    <link rel="canonical" href="https://sdcardchecker.com/fr/">
+{{HREFLANG_TAGS}}
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/brand/logo.webp">
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SD Card Checker - Trouvez la carte SD parfaite pour n'importe quel appareil">
+    <meta property="og:description" content="Trouvez instantanément la carte SD parfaite pour votre appareil. Comparez les vitesses et les marques et obtenez des recommandations personnalisées pour appareils photo, drones, consoles portables et plus encore.">
+    <meta property="og:image" content="https://sdcardchecker.com/img/home-hero.webp">
+    <meta property="og:url" content="https://sdcardchecker.com/fr/">
+    <meta property="og:site_name" content="SD Card Checker">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SD Card Checker - Trouvez la carte SD parfaite pour n'importe quel appareil">
+    <meta name="twitter:description" content="Trouvez instantanément la carte SD parfaite pour votre appareil. Comparez les vitesses et les marques et obtenez des recommandations personnalisées pour appareils photo, drones, consoles portables et plus encore.">
+    <meta name="twitter:image" content="https://sdcardchecker.com/img/home-hero.webp">
+
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/assets/css/modern.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="/assets/js/device-search.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    {{GROW_SCRIPT}}
+</head>
+
+<body>
+    <!-- Header -->
+    {{HEADER}}
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('/img/home-hero.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="text-white hero-title" style="text-shadow: 0 0.3em 0.8em rgba(0, 0, 0, 0.5);">Trouvez en quelques secondes la carte SD parfaite pour votre appareil</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="container" style="position: relative; z-index: 20; margin-top: 2rem;">
+            <div x-data="deviceSearch()" x-init="init()" @click.outside="open = false" class="search-section">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" x-model="query" @input="filterDevices()" @focus="open = true; filterDevices()"
+                        @keydown="handleKeydown($event)"
+                        placeholder="Rechercher un appareil..." class="search-input"
+                        aria-label="Rechercher un appareil et des cartes SD recommandées"
+                        data-hj-allow>
+                    <div class="search-dropdown" :class="{ hidden: !open || (filtered && filtered.length === 0) }">
+                         <template x-for="category in Object.keys(groupedDevices()).sort()" :key="category">
+                            <div>
+                                <div class="search-group-header" x-text="category"></div>
+                                <template x-for="device in (groupedDevices()[category] || [])" :key="device.id">
+                                    <a :href="`/fr/categories/${getCategorySlug(device.category)}/${device.slug}/`" class="search-item">
+                                        <div class="search-item-name" x-text="device.name"></div>
+                                        <div class="search-item-category" x-text="device.category"></div>
+                                    </a>
+                                </template>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subtitle Section -->
+        <div class="container" style="position: relative; z-index: 10; margin-top: 2rem;">
+            <p style="margin: 0; color: rgba(255,255,255,0.9); text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); font-weight: 500; letter-spacing: 0.3px;">Des recommandations d'experts pour chaque appareil. Comparez les vitesses, capacités et marques. Trouvez la meilleure carte pour votre appareil photo, drone, console portable ou tablette.</p>
+        </div>
+
+        <!-- Trust Indicators Section -->
+        <div style="padding: 3rem 0; margin-top: 2rem;">
+            <div class="container" style="position: relative; z-index: 10">
+                <div class="trust-grid">
+                    <div style="text-align: center; padding: 2rem; border-radius: 12px; background: white; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                        <div style="font-size: 2.5rem; font-weight: 900; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.5rem;">150+</div>
+                        <div style="font-size: 1rem; font-weight: 600; color: #475569; letter-spacing: 0.5px;">Appareils couverts</div>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; border-radius: 12px; background: white; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                        <div style="font-size: 2.5rem; font-weight: 900; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.5rem;">50+</div>
+                        <div style="font-size: 1rem; font-weight: 600; color: #475569; letter-spacing: 0.5px;">Cartes SD testées</div>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; border-radius: 12px; background: white; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                        <div style="font-size: 2.5rem; font-weight: 900; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.5rem;">10 000+</div>
+                        <div style="font-size: 1rem; font-weight: 600; color: #475569; letter-spacing: 0.5px;">Spécifications de performance comparées</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Devices -->
+    <section class="popular-devices">
+        <div class="container">
+            <h2 id="devices">Appareils populaires</h2>
+            <p>Commencez avec l'un de ces appareils populaires, ou utilisez la recherche ci-dessus pour votre modèle spécifique.</p>
+            <div class="devices-list">
+                <div class="device-tag">
+                    <a href="/fr/categories/action-cameras/gopro-hero-13/">GoPro Hero 13</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/fr/categories/drones/dji-mini-4-pro/">DJI Mini 4 Pro</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/fr/categories/gaming-handhelds/nintendo-switch/">Nintendo Switch</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/fr/categories/gaming-handhelds/nintendo-switch-2/" style="font-size: 0.9em;">Nintendo Switch 2</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/fr/categories/cameras/canon-eos-r5/">Canon EOS R5</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/fr/categories/cameras/sony-a6700/">Sony A6700</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/fr/categories/gaming-handhelds/steam-deck/">Steam Deck</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/fr/categories/drones/dji-mavic-3/">DJI Mavic 3</a>
+                </div>
+                <div class="device-tag">
+                    <a href="/fr/categories/cameras/nikon-z9/">Nikon Z9</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section style="padding: 4rem 0; background: white;">
+        <div class="container">
+            <h2 id="categories">Catégories</h2>
+            <div class="features-grid" style="margin-top: 2rem;">
+                <a href="/fr/categories/cameras/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">
+                        <img
+                            src="/img/brand/icon-camera.webp"
+                            alt="Icône appareil photo - Catégorie Appareils photo"
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>Appareils photo</h3>
+                    <p>Canon, Sony, Fujifilm, Nikon. Spécifications photo et vidéo professionnelles.</p>
+                </a>
+                <a href="/fr/categories/action-cameras/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">
+                        <img
+                            src="/img/brand/icon-action-camera.webp"
+                            alt="Icône caméra d'action - Catégorie Caméras d'action"
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>Caméras d'action</h3>
+                    <p>GoPro, DJI Osmo, et plus. Exigences vidéo à haut débit.</p>
+                </a>
+                <a href="/fr/categories/drones/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">
+                        <img
+                            src="/img/brand/icon-drone.webp"
+                            alt="Icône drone - Catégorie Drones"
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>Drones</h3>
+                    <p>Enregistrement vidéo 4K. La fiabilité est essentielle.</p>
+                </a>
+                <a href="/fr/categories/gaming-handhelds/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">
+                        <img
+                            src="/img/brand/icon-gaming.webp"
+                            alt="Icône console portable - Catégorie Consoles portables"
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>Consoles portables</h3>
+                    <p>Nintendo Switch, Steam Deck, ROG Ally. Les temps de chargement rapides comptent.</p>
+                </a>
+                <a href="/fr/categories/computing-and-tablets/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">
+                        <img
+                            src="/img/brand/icon-computing.webp"
+                            alt="Icône informatique et tablettes - Catégorie Informatique et tablettes"
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>Informatique et tablettes</h3>
+                    <p>Raspberry Pi, tablettes Samsung. Étendez votre stockage instantanément.</p>
+                </a>
+                <a href="/fr/categories/dash-cams/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">
+                        <img
+                            src="/img/brand/icon-dashcam.webp"
+                            alt="Icône caméra embarquée - Catégorie Caméras embarquées"
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>Caméras embarquées</h3>
+                    <p>Systèmes d'enregistrement pour véhicules. Enregistrement en boucle et spécifications haute endurance.</p>
+                </a>
+                <a href="/fr/categories/security-cameras/" class="feature-card" style="text-decoration: none;">
+                    <div class="feature-icon">
+                        <img
+                            src="/img/brand/icon-security-camera.webp"
+                            alt="Icône caméra de sécurité - Catégorie Caméras de sécurité"
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>Caméras de sécurité</h3>
+                    <p>Systèmes de sécurité domestique. Spécifications haute capacité et enregistrement continu.</p>
+                </a>
+                <a href="/fr/categories/" class="feature-card" style="text-decoration: none; background: #eff6ff; border: 1px solid #bfdbfe;">
+                    <div class="feature-icon">
+                        <i class="fas fa-grid-2" style="color: #2563eb;"></i>
+                    </div>
+                    <h3>Voir toutes les catégories</h3>
+                    <p>Smartphones et d'autres types d'appareils.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section style="padding: 4rem 0;">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img
+                            src="/img/brand/icon-speed.webp"
+                            alt="Icône vitesse - Guides de vitesse"
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>Guides de vitesse</h3>
+                    <p>Spécifications détaillées pour chaque type d'appareil. Sachez exactement quelle classe de vitesse et quelle capacité vous avez besoin.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img
+                            src="/img/brand/icon-score.webp"
+                            alt="Icône notation des marques - Évaluations des marques"
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>Évaluations des marques</h3>
+                    <p>Comparez les meilleures marques de cartes SD. Découvrez les avantages, inconvénients et prix pour chaque niveau de recommandation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img
+                            src="/img/brand/icon-money.webp"
+                            alt="Icône argent - Meilleur rapport qualité-prix"
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                    <h3>Meilleur rapport qualité-prix</h3>
+                    <p>Niveaux économique, recommandé et professionnel. Trouvez la carte idéale au bon prix.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{FOOTER}}
+</body>
+
+</html>

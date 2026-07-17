@@ -1,0 +1,279 @@
+[
+  {
+    "id": "iphone-15",
+    "name": "iPhone 15 / 15 Pro",
+    "category": "smartphones",
+    "slug": "iphone-15",
+    "searchTerms": [
+      "iphone 15 carte sd",
+      "iphone 15 pro carte sd",
+      "iphone 15 pro max carte sd",
+      "lecteur de carte iphone 15",
+      "iphone 15 carte mémoire"
+    ],
+    "sdCard": {
+      "type": "Externe via lecteur USB-C",
+      "minSpeed": "Aucune exigence officielle",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "Limité par le stockage de l'application"
+    },
+    "whySpecs": "L'iPhone 15 n'a pas de lecteur de carte SD intégré. Un lecteur de carte USB-C est nécessaire pour accéder à une carte SD externe. La vitesse dépend du lecteur, pas de l'appareil.",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "ugreen-2in1-usbc-usb3",
+      "sandisk-extreme-pro-uhs2-usbc"
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "relatedDevices": [
+      "iphone-14",
+      "iphone-13",
+      "ipad-pro"
+    ]
+  },
+  {
+    "id": "iphone-14",
+    "name": "iPhone 14 / 14 Pro",
+    "category": "smartphones",
+    "slug": "iphone-14",
+    "searchTerms": [
+      "iphone 14 carte sd",
+      "iphone 14 pro carte sd",
+      "iphone 14 pro max carte sd",
+      "lecteur de carte iphone 14",
+      "iphone 14 carte mémoire"
+    ],
+    "sdCard": {
+      "type": "Externe via lecteur Lightning",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "L'iPhone 14 utilise le port Lightning pour les lecteurs de carte SD externes. Sur certains modèles, les lecteurs Lightning sont limités aux vitesses USB 2.0.",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "lexar-lightning-microsd"
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "relatedDevices": [
+      "iphone-15",
+      "iphone-13"
+    ]
+  },
+  {
+    "id": "iphone-13",
+    "name": "iPhone 13 / 13 Pro",
+    "category": "smartphones",
+    "slug": "iphone-13",
+    "searchTerms": [
+      "iphone 13 carte sd",
+      "iphone 13 pro carte sd",
+      "iphone 13 pro max carte sd",
+      "lecteur de carte iphone 13",
+      "iphone 13 carte mémoire"
+    ],
+    "sdCard": {
+      "type": "Externe via lecteur Lightning",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "L'iPhone 13 utilise le port Lightning avec des lecteurs microSD.",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "lexar-lightning-microsd"
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "relatedDevices": [
+      "iphone-14",
+      "iphone-12"
+    ]
+  },
+  {
+    "id": "iphone-14-pro-max",
+    "name": "iPhone 14 Pro Max",
+    "category": "smartphones",
+    "slug": "iphone-14-pro-max",
+    "searchTerms": [
+      "iphone 14 pro max carte sd",
+      "iphone 14 max carte sd",
+      "iphone 14 pro max carte mémoire"
+    ],
+    "sdCard": {
+      "type": "Externe via lecteur Lightning",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "L'iPhone 14 Pro Max utilise le port Lightning pour l'accès à un lecteur de carte SD externe.",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "lexar-lightning-microsd"
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "relatedDevices": [
+      "iphone-14",
+      "iphone-15"
+    ]
+  },
+  {
+    "id": "iphone-se",
+    "name": "iPhone SE (3e génération)",
+    "category": "smartphones",
+    "slug": "iphone-se",
+    "searchTerms": [
+      "iphone se carte sd",
+      "iphone se 3 carte sd",
+      "iphone se 3e génération",
+      "iphone se carte mémoire"
+    ],
+    "sdCard": {
+      "type": "Externe via lecteur Lightning",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB"
+      ]
+    },
+    "whySpecs": "L'iPhone SE utilise le connecteur Lightning pour un lecteur de carte SD externe.",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "lexar-lightning-microsd"
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      }
+    ],
+    "relatedDevices": [
+      "iphone-13",
+      "iphone-14"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s23",
+    "name": "Samsung Galaxy S23 / S23+",
+    "category": "smartphones",
+    "slug": "samsung-galaxy-s23",
+    "metaDescription": "Le Samsung Galaxy S23 n'a pas de lecteur de carte microSD — Samsung a supprimé le stockage extensible sur la série Galaxy S à partir du S21. Utilisez un lecteur de carte USB-C pour accéder à une carte SD externe.",
+    "searchTerms": [
+      "samsung galaxy s23 carte sd",
+      "galaxy s23 carte sd",
+      "samsung s23 carte mémoire",
+      "lecteur de carte galaxy s23",
+      "samsung s23 stockage extensible",
+      "le s23 a-t-il un lecteur de carte sd"
+    ],
+    "sdCard": {
+      "type": "Externe via lecteur USB-C (pas de slot)",
+      "minSpeed": "Aucune exigence minimale",
+      "minWriteSpeed": "N/A",
+      "maxCapacity": "N/A (pas de slot intégré)",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "Le Samsung Galaxy S23 n'a pas de lecteur de carte microSD. Samsung a supprimé le stockage extensible sur la série Galaxy S à partir du Galaxy S21. Un lecteur de carte USB-C externe est nécessaire pour accéder à une carte SD.",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "ugreen-2in1-usbc-usb3",
+      "sandisk-extreme-pro-uhs2-usbc"
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le Samsung Galaxy S23 a-t-il un lecteur de carte microSD ?",
+        "a": "<b>Non, le Samsung Galaxy S23 n'a pas de lecteur de carte microSD.</b> Samsung a supprimé le stockage extensible sur la série Galaxy S à partir du Galaxy S21 en 2021. Le S23, le S23+ et le S23 Ultra n'ont tous aucun lecteur microSD. Pour accéder à une carte SD avec votre Galaxy S23, vous aurez besoin d'un lecteur de carte USB-C externe. Pour une extension de stockage à long terme, les services cloud comme Google Photos ou Samsung Cloud sont l'alternative pratique."
+      }
+    ],
+    "relatedDevices": [
+      "google-pixel-8",
+      "samsung-galaxy-s24"
+    ]
+  },
+  {
+    "id": "google-pixel-8",
+    "name": "Google Pixel 8 / 8 Pro",
+    "category": "smartphones",
+    "slug": "google-pixel-8",
+    "searchTerms": [
+      "google pixel 8 carte sd",
+      "pixel 8 carte sd",
+      "pixel 8 pro carte sd",
+      "pixel 8 carte mémoire",
+      "lecteur de carte pixel 8"
+    ],
+    "sdCard": {
+      "type": "Externe via lecteur USB-C (pas de slot)",
+      "minSpeed": "Aucune exigence",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "Le Pixel 8 n'a pas de lecteur de carte SD intégré. Il utilise des lecteurs de carte USB-C externes.",
+    "requiresReader": true,
+    "recommendedReaders": [
+      "ugreen-2in1-usbc-usb3",
+      "sandisk-extreme-pro-uhs2-usbc"
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-s23",
+      "iphone-15"
+    ]
+  }
+]

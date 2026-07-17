@@ -1,0 +1,135 @@
+[
+  {
+    "id": "wyze-cam-v3",
+    "name": "Wyze Cam v3",
+    "category": "security-cameras",
+    "slug": "wyze-cam-v3",
+    "searchTerms": [
+      "wyze cam v3 sd karte",
+      "wyze v3 micro sd",
+      "wyze cam speicherkarte",
+      "beste sd karte für wyze cam v3"
+    ],
+    "sdCard": {
+      "type": "microSD (FAT32 oder exFAT)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "Die Wyze Cam v3 zeichnet Dauervideo lokal auf einer microSD-Karte auf. Wyze unterstützt und testet offiziell Karten bis 256GB. Eine Class-10-Karte ist das Minimum für zuverlässige Aufnahmen; für den 24/7-Betrieb werden High-Endurance-Karten dringend empfohlen, um vorzeitigen Ausfall zu vermeiden.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Brauche ich eine spezielle SD-Karte für Überwachungskameras?",
+        "a": "<b>Ja, verwenden Sie für Überwachungskameras immer eine High-Endurance-microSD-Karte.</b> Normale Karten sind nicht für das ständige Überschreiben ausgelegt und fallen bei 24/7-Aufnahmen schnell aus. High-Endurance-Karten sind speziell für diese Belastung konzipiert und halten deutlich länger."
+      },
+      {
+        "q": "Welche Kapazität sollte ich für Dauerüberwachung wählen?",
+        "a": "<b>64GB bis 128GB sind für die meisten Nutzer ideal.</b> Eine 64GB-Karte speichert bei Standardeinstellungen etwa 1-2 Wochen Dauervideo. Vielnutzer oder alle, die eine längere Aufbewahrung wünschen, sollten zu 128GB oder 256GB greifen."
+      }
+    ],
+    "relatedDevices": [
+      "viofo-a229-duo",
+      "nextbase-622gw",
+      "eufy-solocam-s340"
+    ],
+    "notes": "Extremely popular budget security camera with massive search volume. Wyze official documentation confirms microSD support up to 256GB (tested). Requires FAT32 for 32GB or smaller, exFAT for 64GB+."
+  },
+  {
+    "id": "eufy-solocam-s340",
+    "name": "Eufy Security SoloCam S340",
+    "category": "security-cameras",
+    "slug": "eufy-solocam-s340",
+    "searchTerms": [
+      "eufy solocam s340 sd karte",
+      "eufy s340 micro sd",
+      "solocam speicherkarte"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB"
+    },
+    "whySpecs": "Die SoloCam S340 verfügt über zwei Kameras mit Schwenk-/Neigefunktion und zeichnet lokal auf einer microSD-Karte auf (bis 128GB). Eufy empfiehlt mindestens Class-10-Karten; für die Dauerüberwachung sind High-Endurance-Karten unerlässlich, um langfristige Zuverlässigkeit zu gewährleisten.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Wie viel Video passt auf eine 128GB-Karte?",
+        "a": "<b>Eine 128GB High-Endurance-Karte speichert bei Standard-Bildqualität etwa 2-3 Wochen Dauervideo.</b> Die genaue Dauer hängt von Ihren Bewegungserkennungs-Einstellungen und der gewählten Videoqualität ab."
+      }
+    ],
+    "relatedDevices": [
+      "wyze-cam-v3",
+      "viofo-a229-duo",
+      "nextbase-622gw"
+    ],
+    "notes": "Popular wire-free security camera with built-in solar panel option. Eufy official specs confirm microSD support up to 128GB. Growing search volume as Eufy gains market share."
+  },
+  {
+    "id": "reolink-e1-pro",
+    "name": "Reolink E1 Pro",
+    "category": "security-cameras",
+    "slug": "reolink-e1-pro",
+    "searchTerms": [
+      "reolink e1 pro sd karte",
+      "reolink micro sd",
+      "reolink e1 speicherkarte"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "Der E1 Pro zeichnet 4MP/5MP-Video auf einer microSD-Karte auf. Reolink empfiehlt eine Class-10-Karte mit einer Mindestschreibgeschwindigkeit von 10 MB/s. Aufgrund der hohen Auflösung und der Dauerüberwachung ist eine High-Endurance-Karte für langfristige Zuverlässigkeit unerlässlich.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Wie installiere ich die SD-Karte in der Reolink E1 Pro?",
+        "a": "<b>Kippen Sie das Kameraobjektiv ganz nach oben.</b> Der microSD-Kartenslot befindet sich direkt unterhalb des Objektivs. Schieben Sie die Karte vorsichtig hinein, bis sie einrastet. Die Karte muss vor der Nutzung in der Reolink-App formatiert werden."
+      }
+    ],
+    "relatedDevices": [
+      "wyze-cam-v3",
+      "garmin-66s-dash-cam"
+    ],
+    "notes": "A best-selling indoor 2K camera from a major security brand. Reolink's focus on local storage drives high search volume for card recommendations. Official max capacity is 256GB."
+  }
+]

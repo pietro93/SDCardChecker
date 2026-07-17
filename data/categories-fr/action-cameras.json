@@ -1,0 +1,732 @@
+[
+  {
+    "id": "gopro-hero-13",
+    "name": "GoPro Hero 13 Black",
+    "category": "action-cameras",
+    "slug": "gopro-hero-13",
+    "searchTerms": [
+      "gopro hero 13 carte sd",
+      "gopro 13 carte mémoire",
+      "hero 13 carte sd",
+      "gopro black carte"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (compatible UHS-II)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "Filme en 5.3K à des cadences élevées. La classe V30 garantit les 30 MB/s d'écriture soutenue nécessaires pour éviter les images perdues ou les fichiers corrompus. Le débit 5.3K de GoPro (environ 60-80 Mbps) exige des cartes rapides et fiables pour un enregistrement stable.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je utiliser une carte SD classique avec un adaptateur ?",
+        "a": "<b>Non, la GoPro Hero 13 Black n'accepte que des cartes microSD</b>. Les cartes SD pleine taille ne fonctionneront pas, même avec un adaptateur. L'appareil requiert spécifiquement des <b>cartes au format microSD</b> pour être compatible."
+      },
+      {
+        "q": "Quelle est la carte la plus rapide à acheter ?",
+        "a": "<b>La classe de vitesse V30 suffit pour l'enregistrement standard sur la GoPro Hero 13</b>. Les cartes V60 ou plus rapides ne sont utiles que pour les flux de travail professionnels multi-caméras, l'enregistrement de sauvegarde simultané ou pour anticiper de futures caméras plus exigeantes."
+      },
+      {
+        "q": "À quelle fréquence dois-je remplacer ma carte SD ?",
+        "a": "<b>Les cartes microSD V30 de qualité durent généralement 3 à 5 ans</b> en usage régulier. <b>Remplacez immédiatement votre carte en cas de messages d'erreur, de corruption de fichiers ou d'écritures refusées</b> pour éviter de perdre des images importantes."
+      }
+    ],
+    "relatedDevices": [
+      "gopro-hero-12",
+      "gopro-hero-max",
+      "gopro-hero-11-black",
+      "dji-mini-4-pro"
+    ],
+    "notes": "Same specs as Hero 12. Official GoPro tests show V30 cards optimal for 5.3K 60fps stability."
+  },
+  {
+    "id": "gopro-hero-12",
+    "name": "GoPro Hero 12 Black",
+    "category": "action-cameras",
+    "slug": "gopro-hero-12",
+    "searchTerms": [
+      "gopro hero 12 carte sd",
+      "gopro 12 carte mémoire",
+      "hero 12 carte sd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (compatible UHS-II)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "Filme en 5.3K à différentes cadences. Les cartes V30 garantissent une vitesse d'écriture soutenue de 30 MB/s. Essentiel pour éviter les images perdues lors d'enregistrements à haut débit.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-go"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je enregistrer en 5K avec des cartes V20 ?",
+        "a": "<b>L'enregistrement vidéo en 5.3K avec des cartes V20 n'est pas recommandé</b>. Bien que les cartes V20 puissent techniquement enregistrer, elles ne garantissent qu'une vitesse d'écriture de 20 MB/s, insuffisante pour un enregistrement 5.3K stable. <b>V30 est la classe de vitesse minimale sûre</b> pour cet appareil."
+      },
+      {
+        "q": "Puis-je utiliser d'anciennes cartes microSD ?",
+        "a": "<b>Les anciennes cartes microSD inférieures à V30 ne sont pas fiables pour l'enregistrement 5.3K</b> et risquent la corruption des fichiers. <b>Il est préférable de passer à une carte microSD V30 ou plus rapide</b> pour garantir la compatibilité et une performance stable avec votre Hero 12."
+      }
+    ],
+    "relatedDevices": [
+      "gopro-hero-13",
+      "gopro-hero-max",
+      "gopro-hero-11-black"
+    ],
+    "notes": "Official GoPro recommendation: V30 cards. Compatible with all GoPro Hero series."
+  },
+  {
+    "id": "gopro-hero-max",
+    "name": "GoPro Hero Max",
+    "category": "action-cameras",
+    "slug": "gopro-hero-max",
+    "searchTerms": [
+      "gopro hero max carte sd",
+      "gopro max carte mémoire",
+      "hero max carte sd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (compatible UHS-II)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "Filme en vidéo 360 degrés et en 4K standard. V30 garantit un enregistrement stable dans les deux modes.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "V30 est-il nécessaire pour la vidéo 360 ?",
+        "a": "<b>Oui, la classe de vitesse V30 est requise pour l'enregistrement vidéo à 360 degrés</b>. <b>Le mode vidéo 360 a un débit nettement plus élevé que l'enregistrement GoPro standard</b> en raison de la résolution et du champ de vision accrus, exigeant des performances V30 fiables."
+      },
+      {
+        "q": "Quelle capacité de stockage pour le contenu 360 ?",
+        "a": "<b>En mode 360, une carte microSD de 128GB offre environ 1,5 heure d'enregistrement</b>. La consommation de stockage est plus élevée en mode 360 par rapport à la vidéo standard, prévoyez donc en conséquence pour les longues sessions 360."
+      }
+    ],
+    "relatedDevices": [
+      "gopro-hero-13",
+      "gopro-hero-12",
+      "gopro-hero-11-black"
+    ],
+    "notes": "360-degree camera. V30 important for both 360 and standard recording modes.",
+    "imageUrl": "/img/devices/action-cameras/gopro-hero-max.webp"
+  },
+  {
+    "id": "nextbase-622gw",
+    "name": "Nextbase 622GW",
+    "category": "action-cameras",
+    "slug": "nextbase-622gw",
+    "searchTerms": [
+      "nextbase 622gw carte sd",
+      "nextbase 622 microsd",
+      "622gw stockage dashcam"
+    ],
+    "sdCard": {
+      "type": "microSD High Endurance",
+      "minSpeed": "U3 / Classe 10",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "La Nextbase 622GW enregistre en 4K à 30fps avec stabilisation d'image. Nextbase recommande officiellement des cartes U3 High Endurance (spécifiquement SanDisk MAX Endurance ou Samsung PRO Endurance) pour un enregistrement continu fiable. Le débit 4K exige des vitesses d'écriture rapides et des certifications d'endurance.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "La Nextbase 622GW est-elle livrée avec une carte SD ?",
+        "a": "<b>Non, les cartes SD sont vendues séparément.</b> Nextbase recommande fortement l'achat d'une carte High Endurance (certifiée U3) de leur liste approuvée. L'utilisation de cartes non approuvées peut annuler la garantie si une panne de carte cause des problèmes."
+      },
+      {
+        "q": "Quelle est la meilleure capacité pour l'enregistrement 4K ?",
+        "a": "<b>128GB est le choix idéal pour la plupart des utilisateurs.</b> Une carte High Endurance de 128GB stocke environ 6 à 8 heures de séquences 4K avant le début de l'enregistrement en boucle. Pour une rétention maximale, utilisez 256GB pour 12 à 16 heures d'enregistrement."
+      }
+    ],
+    "relatedDevices": [
+      "viofo-a229-duo",
+      "wyze-cam-v3",
+      "eufy-solocam-s340"
+    ],
+    "notes": "Premium UK dash cam brand with strong search volume. Nextbase official support specifically lists approved High Endurance cards and warns against using non-endurance cards. 256GB is official maximum tested capacity.",
+    "imageUrl": "/img/devices/action-cameras/nextbase-622gw.webp"
+  },
+  {
+    "id": "gopro-hero-11-black",
+    "name": "GoPro Hero 11 Black",
+    "category": "action-cameras",
+    "slug": "gopro-hero-11-black",
+    "searchTerms": [
+      "gopro hero 11 black carte sd",
+      "hero 11 carte sd",
+      "gopro 11 carte mémoire"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (compatible UHS-II)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "La Hero 11 Black filme en vidéo 5.3K de haute qualité. GoPro recommande officiellement une carte de classe V30 pour garantir la vitesse d'écriture minimale de 30 MB/s requise pour un enregistrement stable et fiable, sans images perdues ni corruption de fichiers.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Les exigences de carte de la Hero 11 et de la Hero 12 sont-elles identiques ?",
+        "a": "<b>Oui, les deux nécessitent des cartes microSD V30.</b> La Hero 11 Black a des spécifications vidéo très similaires à celles de la Hero 12, les mêmes recommandations de carte s'appliquent donc pour une performance garantie."
+      }
+    ],
+    "relatedDevices": [
+      "gopro-hero-13",
+      "gopro-hero-12",
+      "gopro-hero-max",
+      "dji-pocket-3"
+    ],
+    "notes": "The predecessor to the Hero 12, this model introduced the 8:7 sensor and maintains the same V30 card requirements.",
+    "imageUrl": "/img/devices/action-cameras/gopro-hero-11-black.webp"
+  },
+  {
+    "id": "gopro-max-2",
+    "name": "GoPro Max 2",
+    "category": "action-cameras",
+    "slug": "gopro-max-2",
+    "searchTerms": [
+      "gopro max 2 carte sd",
+      "gopro max2 carte mémoire",
+      "gopro max 2 microsd",
+      "carte gopro 8k 360"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (compatible UHS-II)",
+      "minSpeed": "A2 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "La dernière caméra 360 de GoPro enregistre en véritable 8K 30fps et en modes 5.6K à haute cadence, produisant de gros fichiers 10 bits et une charge d'écriture soutenue. Les directives de compatibilité mises à jour de GoPro classent la Max 2 avec les modèles HERO récents comme nécessitant des cartes microSD A2/V30 et prenant en charge jusqu'à 1TB. Cette combinaison V30 et A2 garantit au moins 30 MB/s d'écriture soutenue plus de solides I/O aléatoires, importants tant pour l'enregistrement 360 continu que pour une lecture et une gestion des fichiers réactives dans la caméra.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je réutiliser mes cartes GoPro Hero 11/12/13 dans la Max 2 ?",
+        "a": "<b>Oui, tant qu'elles sont A2/V30.</b> GoPro applique désormais essentiellement la même spécification microSD sur sa gamme HERO récente et la Max 2, donc toute carte fonctionnant fiablement dans une HERO 11/12/13 devrait aussi convenir à la Max 2."
+      },
+      {
+        "q": "Y a-t-il un intérêt à acheter une carte V60 ou V90 pour la Max 2 ?",
+        "a": "<b>Pas pour l'enregistrement dans la caméra.</b> La Max 2 est conçue autour de vitesses d'écriture soutenues de classe V30. Les cartes V60/V90 plus rapides peuvent raccourcir les temps de transfert de fichiers avec un lecteur haute vitesse sur ordinateur, mais elles ne débloquent pas de modes d'enregistrement supérieurs ni une meilleure qualité dans la caméra elle-même."
+      },
+      {
+        "q": "Combien de séquences 8K 360 tiennent sur une carte de 256GB ?",
+        "a": "Les durées exactes varient selon la complexité de la scène et les réglages, mais en règle générale vous pouvez compter sur environ une heure d'enregistrement continu 8K 30fps 360 sur une carte V30 de 256GB. Pour les sessions longues régulières, passer à 512GB ou 1TB évite les changements fréquents de carte."
+      }
+    ],
+    "relatedDevices": [
+      "gopro-hero-max",
+      "gopro-hero-13"
+    ],
+    "notes": "Second-generation GoPro 360 camera with 8K capture. GoPro's own guidance groups Max 2 with HERO13 and other current models for A2/V30 and 1TB support.",
+    "imageUrl": "/img/devices/action-cameras/gopro-max-2.webp"
+  },
+  {
+    "id": "wyze-cam-v3",
+    "name": "Wyze Cam v3",
+    "category": "action-cameras",
+    "slug": "wyze-cam-v3",
+    "searchTerms": [
+      "wyze cam v3 carte sd",
+      "carte mémoire caméra wyze"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Classe 10",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "La Wyze Cam v3 prend en charge microSD pour le stockage local des enregistrements.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "gopro-hero-13"
+    ]
+  },
+  {
+    "id": "insta360-x3",
+    "name": "Insta360 X3",
+    "category": "action-cameras",
+    "slug": "insta360-x3",
+    "searchTerms": [
+      "insta360 x3 carte sd",
+      "insta 360 x3 carte mémoire",
+      "x3 microsd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "L'enregistrement vidéo 360 degrés en 5.7K génère une grande quantité de données. Insta360 recommande officiellement une carte microSD de classe V30 pour garantir un enregistrement fluide et stable, sans images perdues ni fichiers corrompus.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je utiliser une carte SanDisk Ultra dans l'Insta360 X3 ?",
+        "a": "<b>Ce n'est pas recommandé.</b> Bien que certaines cartes Ultra soient classées V10, la X3 nécessite un minimum de V30. Utiliser une carte plus lente peut entraîner un échec d'enregistrement, en particulier dans les modes haute résolution. Restez sur la gamme SanDisk Extreme ou équivalent."
+      }
+    ],
+    "relatedDevices": [
+      "gopro-hero-max",
+      "gopro-hero-13"
+    ],
+    "notes": "GoPro's biggest competitor in the 360 space. Very high search volume."
+  },
+  {
+    "id": "insta360-x4",
+    "name": "Insta360 X4",
+    "category": "action-cameras",
+    "slug": "insta360-x4",
+    "searchTerms": [
+      "insta360 x4",
+      "insta360 x4 carte sd",
+      "x4 caméra 360",
+      "insta360 8k"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Enregistre en 8K 360° à 30fps et en 5.7K à 60fps. Insta360 exige officiellement un minimum V30 pour gérer le débit élevé de l'enregistrement 360° sans images perdues. Le système à double objectif génère des flux de données massifs qui nécessitent des vitesses d'écriture soutenues et fiables.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je utiliser la même carte que ma X3 ?",
+        "a": "<b>Oui, toute carte microSD V30 ou plus rapide de votre X3 fonctionnera parfaitement dans la X4.</b> La X4 a la même exigence minimale V30, bien que des vitesses de transfert plus rapides soient bénéfiques avec les fichiers 8K plus volumineux."
+      },
+      {
+        "q": "Combien de séquences 8K tiennent sur une carte de 256GB ?",
+        "a": "<b>Une carte de 256GB stocke environ 2 à 2,5 heures d'enregistrement 8K à 30fps.</b> Pour des sessions prolongées, envisagez 512GB ou plusieurs cartes pour des changements rapides."
+      }
+    ],
+    "relatedDevices": [
+      "insta360-x3",
+      "gopro-hero-max",
+      "gopro-hero-13"
+    ],
+    "notes": "Insta360's 2024 flagship 360° camera. Official max capacity tested: 1TB.",
+    "imageUrl": "/img/devices/action-cameras/insta360-x4.webp"
+  },
+  {
+    "id": "insta360-go-3",
+    "name": "Insta360 GO 3",
+    "category": "action-cameras",
+    "slug": "insta360-go-3",
+    "searchTerms": [
+      "insta360 go 3 carte sd",
+      "go 3 microsd",
+      "insta360 go3 stockage"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "Une caméra d'action ultra-compacte et portable capable d'enregistrer en 2.7K. Une carte de classe V30 est nécessaire pour un enregistrement fiable sans images perdues, garantissant des séquences stables malgré le format minuscule et la facilité d'utilisation pour le contenu POV.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "À quel point l'Insta360 GO 3 est-elle petite ?",
+        "a": "<b>L'Insta360 GO 3 est incroyablement petite et légère, pesant seulement 35 grammes et de la taille d'un pouce.</b> Malgré sa taille miniature, elle nécessite tout de même des cartes microSD V30 pour gérer de façon fiable ses capacités d'enregistrement 2.7K, en particulier lorsqu'elle est montée dans des situations dynamiques."
+      }
+    ],
+    "relatedDevices": [
+      "insta360-x4",
+      "gopro-hero-13",
+      "dji-osmo-pocket-3"
+    ],
+    "notes": "An ultra-compact wearable action camera. Extremely popular for POV (point-of-view) content creation and for mounting in creative, discrete locations. Its unique form factor drives specific search queries regarding its accessories and capabilities."
+  },
+  {
+    "id": "insta360-ace-pro",
+    "name": "Insta360 Ace Pro",
+    "category": "action-cameras",
+    "slug": "insta360-ace-pro",
+    "searchTerms": [
+      "insta360 ace pro carte sd",
+      "ace pro microsd",
+      "insta360 ace pro carte mémoire"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "Une caméra d'action phare dotée d'un écran pivotant, d'un enregistrement 4K 120fps et d'un grand capteur. Une carte de classe V30 garantit un enregistrement stable et fiable dans tous ses modes vidéo avancés, y compris les fréquences d'images élevées et les séquences d'action détaillées.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Insta360 Ace Pro vs GoPro - qu'en est-il des cartes SD ?",
+        "a": "<b>L'Insta360 Ace Pro et les modèles GoPro Hero actuels nécessitent généralement des cartes microSD V30 pour une performance optimale.</b> Leurs exigences en matière de cartes sont généralement interchangeables. L'écran pivotant unique de l'Ace Pro est souvent cité comme un avantage clé pour le vlogging, offrant une flexibilité que les modèles GoPro n'offrent peut-être pas."
+      }
+    ],
+    "relatedDevices": [
+      "gopro-hero-13",
+      "dji-osmo-action-4"
+    ],
+    "notes": "Insta360's current flagship action camera. Its competitive feature set, especially the flip screen, makes it a strong competitor to the GoPro Hero series. High search volume for card compatibility and performance."
+  },
+  {
+    "id": "insta360-one-x2",
+    "name": "Insta360 ONE X2",
+    "category": "action-cameras",
+    "slug": "insta360-one-x2",
+    "searchTerms": [
+      "insta360 one x2 carte sd",
+      "one x2 microsd",
+      "insta360 one x2 carte mémoire"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Une caméra 360° de génération précédente, capable d'enregistrer en 5.7K. Une carte de classe V30 est requise pour une capture 360° stable, qui génère des volumes de données élevés en raison de sa nature immersive. Bien que des modèles plus récents existent, la ONE X2 reste populaire sur le marché de l'occasion.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Insta360 ONE X2 vs X3/X4 - les exigences de carte sont-elles différentes ?",
+        "a": "<b>Toutes les caméras 360 d'Insta360, y compris la ONE X2, la X3 et la X4, nécessitent des cartes microSD V30 pour une performance optimale.</b> Bien que les modèles plus récents offrent des résolutions supérieures et des fonctionnalités améliorées, l'exigence fondamentale de vitesse V30 pour un enregistrement vidéo 360° stable est restée constante. La ONE X2 est un modèle plus ancien mais fonctionne toujours bien."
+      }
+    ],
+    "relatedDevices": [
+      "insta360-x3",
+      "insta360-x4",
+      "gopro-hero-max"
+    ],
+    "notes": "A previous-generation 360° camera that remains popular on the used market. It continues to see search volume from users seeking a more affordable entry into 360° content creation. Official max capacity tested: 1TB."
+  },
+  {
+    "id": "insta360-one-x3",
+    "name": "Insta360 ONE X3",
+    "category": "action-cameras",
+    "slug": "insta360-one-x3",
+    "searchTerms": [
+      "insta360 one x3 carte sd",
+      "one x3 microsd",
+      "insta360 x3 carte mémoire"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Insta360 spécifie des cartes microSD UHS-I avec une classe de vitesse V30 ou supérieure et un formatage exFAT pour les caméras 360 de la série X, y compris la X3. La caméra enregistre en 5.7K 360°, ce qui crée un flux de données continu à haut débit provenant des deux objectifs. Les cartes de classe V30 garantissent des vitesses d'écriture soutenues de 30 MB/s, empêchant l'enregistrement de s'arrêter ou les clips de se corrompre. Les recommandations officielles plafonnent également les capacités prises en charge à 1TB, ce qui est largement suffisant pour de longues journées de tournage, même dans les modes de qualité les plus élevés.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "L'Insta360 ONE X3 prend-elle en charge les cartes microSD de 1TB ?",
+        "a": "<b>Oui.</b> Insta360 indique 1TB comme capacité maximale prise en charge pour les caméras de la série X, et ses propres cartes A2/V30 de marque sont vendues en tailles allant jusqu'à 1TB spécifiquement pour des modèles comme la ONE X3."
+      },
+      {
+        "q": "Puis-je utiliser des cartes microSD UHS-II dans la ONE X3 ?",
+        "a": "<b>Ce n'est pas recommandé.</b> La caméra est conçue pour des cartes UHS-I V30, et Insta360 avertit explicitement que les cartes microSD UHS-II et UHS-III peuvent être incompatibles ou provoquer des échecs d'enregistrement. Même lorsqu'elles fonctionnent, elles retombent aux vitesses UHS-I, il n'y a donc aucun gain de performance."
+      },
+      {
+        "q": "Une carte V10 ou U1 générique fonctionnera-t-elle dans la ONE X3 ?",
+        "a": "<b>Elle peut fonctionner pour les modes basse résolution, mais elle n'est pas sûre pour l'enregistrement 360° en 5.7K.</b> Les cartes V10/U1 ne garantissent pas les vitesses d'écriture requises pour la capture 360 haute résolution et peuvent provoquer des images perdues ou des enregistrements interrompus. Pour une utilisation fiable, choisissez toujours une carte V30 de marque reconnue."
+      }
+    ],
+    "relatedDevices": [
+      "gopro-hero-max"
+    ],
+    "notes": "360° action camera commonly branded simply as 'Insta360 X3' in marketing material. Official Insta360 documentation specifies UHS-I V30 microSD cards up to 1TB for this model.",
+    "imageUrl": "/img/devices/action-cameras/insta360-one-x3.webp"
+  },
+  {
+    "id": "dji-osmo-pocket-3",
+    "name": "DJI Osmo Pocket 3",
+    "category": "action-cameras",
+    "slug": "dji-osmo-pocket-3",
+    "metaDescription": "DJI exige officiellement une carte microSD UHS-I classée U3/V30 pour l'Osmo Pocket 3 (max 512GB). Voici les meilleures cartes testées qui répondent aux spécifications publiées par DJI.",
+    "searchTerms": [
+      "dji pocket 3 carte sd",
+      "osmo pocket 3 microsd",
+      "dji osmo pocket 3 carte microsd recommandée",
+      "dji osmo pocket 3 spécifications carte sd",
+      "osmo pocket 3 v30 u3"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I/UHS-II",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "DJI exige officiellement une carte microSD UHS-I avec Speed Grade 3 (U3) et Video Speed Class 30 (V30) minimum pour l'Osmo Pocket 3, avec une capacité maximale de 512GB. La Pocket 3 filme en 4K/120fps et ce sont les spécifications publiées par DJI. Les cartes UHS-II plus rapides fonctionnent dans la Pocket 3 mais n'offrent aucun avantage d'enregistrement par rapport à une bonne carte UHS-I - l'avantage se situe uniquement dans des transferts de fichiers plus rapides vers un ordinateur.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-silver-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quelles sont les exigences officielles de DJI en matière de carte microSD pour l'Osmo Pocket 3 ?",
+        "a": "<b>DJI exige officiellement une carte microSD UHS-I avec Speed Grade 3 (U3) et Video Speed Class 30 (V30) minimum, avec une capacité maximale prise en charge de 512GB.</b> Ce sont les spécifications publiées par DJI pour la Pocket 3. Les cartes répondant à ces spécifications - telles que la SanDisk Extreme, la Lexar Professional Silver et la Kingston Canvas Go Plus - sont les choix sûrs pour un enregistrement 4K fiable."
+      },
+      {
+        "q": "Combien de vidéo 4K tient sur une carte de 128GB sur la Pocket 3 ?",
+        "a": "Une carte de 128GB contiendra environ 2 heures de séquences 4K/60fps. Si vous prévoyez de filmer toute une journée, il est judicieux d'emporter une seconde carte ou de choisir une capacité de 256GB."
+      }
+    ],
+    "relatedDevices": [
+      "gopro-hero-13",
+      "gopro-hero-11-black",
+      "dji-mini-4-pro"
+    ],
+    "notes": "Extremely popular vlogging device. DJI official minimum: U3/V30 UHS-I, max 512GB."
+  },
+  {
+    "id": "dji-osmo-action-4",
+    "name": "DJI Osmo Action 4",
+    "category": "action-cameras",
+    "slug": "dji-osmo-action-4",
+    "metaDescription": "DJI exige officiellement une carte microSD UHS-I classée U3/V30 pour l'Osmo Action 4 (max 2TB). Voici les meilleures cartes testées qui répondent aux spécifications publiées par DJI.",
+    "searchTerms": [
+      "dji action 4",
+      "osmo action 4 carte sd",
+      "dji caméra d'action",
+      "dji osmo action 4 carte mémoire",
+      "dji osmo action 4 carte sd recommandée",
+      "dji osmo action 4 exigences carte sd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "DJI exige officiellement une carte microSD UHS-I avec Speed Grade 3 (U3) et Video Speed Class 30 (V30) minimum pour l'Osmo Action 4, avec une capacité maximale prise en charge de 2TB. L'Action 4 enregistre en 4K à 120fps avec des performances exceptionnelles en basse lumière grâce à son grand capteur 1/1.3 pouces, ce qui produit des débits plus élevés que les caméras d'action typiques - faisant du minimum V30 une exigence ferme, et non une suggestion.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quelles sont les exigences officielles de DJI en matière de carte microSD pour l'Osmo Action 4 ?",
+        "a": "<b>DJI exige officiellement une carte microSD UHS-I avec Speed Grade 3 (U3) et Video Speed Class 30 (V30) minimum, avec une capacité maximale prise en charge de 2TB.</b> Ce sont les spécifications publiées par DJI pour l'Osmo Action 4. Les cartes répondant à ces spécifications - telles que la SanDisk Extreme, la Lexar Professional 1000x et la Kingston Canvas Go Plus - sont les choix sûrs pour un enregistrement 4K/120fps fiable."
+      },
+      {
+        "q": "Action 4 vs GoPro Hero 12 - mêmes cartes ?",
+        "a": "<b>Oui, la DJI Osmo Action 4 et la GoPro Hero 12 nécessitent toutes deux des cartes microSD V30.</b> Les exigences en matière de carte sont identiques, vous pouvez donc choisir entre elles en fonction des fonctionnalités, des performances en basse lumière et de vos préférences d'écosystème, et non de la compatibilité des cartes."
+      },
+      {
+        "q": "Le support magnétique affecte-t-il la carte SD ?",
+        "a": "<b>Non, le support magnétique à dégagement rapide n'affecte ni les données ni les performances de la carte microSD.</b> La carte est logée en toute sécurité à l'intérieur du corps de la caméra, et les aimants ne sont pas assez puissants pour provoquer une corruption ou une perte de données."
+      }
+    ],
+    "relatedDevices": [
+      "gopro-hero-13",
+      "insta360-ace-pro",
+      "gopro-hero-12"
+    ],
+    "notes": "DJI's 2023 action camera flagship. DJI official minimum: U3/V30 UHS-I, max 2TB. Known for superior low-light performance and color science."
+  }
+]

@@ -23,7 +23,7 @@ const { generateToolsPages } = require("./generate-tools-pages");
 const { generateReaderPages } = require("./generate-reader-pages");
 const { generateReadersIndex } = require("./generate-readers-index");
 const { generateReadersTypeIndexPages } = require("./generate-readers-type-index");
-const { generateCoreFiles, generateRobots, generate404Page } = require("./generate-core-files");
+const { generateCoreFiles, generateSitemapIndex, generateRobots, generate404Page } = require("./generate-core-files");
 const { getCategorySlug } = require("./helpers");
 const { generateLocalizedGuides } = require("./generate-guides");
 const { generateRedirects } = require("./generate-redirects");
@@ -214,8 +214,9 @@ async function build() {
     await generateRedirects(allDevices, distPath);
     console.log();
 
-    // 5. Global files (English-only 404, robots.txt listing every enabled locale's sitemap)
+    // 5. Global files (English-only 404, sitemap index, robots.txt listing every enabled locale's sitemap)
     generate404Page(distPath);
+    generateSitemapIndex(distPath);
     generateRobots(distPath);
 
     // Success summary

@@ -15,19 +15,19 @@
   "de": {
     "name": "Deutsch",
     "dir": "de",
-    "enabled": false,
+    "enabled": true,
     "navSections": ["categories"]
   },
   "fr": {
     "name": "Français",
     "dir": "fr",
-    "enabled": false,
+    "enabled": true,
     "navSections": ["categories", "guides", "legal"]
   },
   "it": {
     "name": "Italiano",
     "dir": "it",
-    "enabled": false,
+    "enabled": true,
     "navSections": ["categories", "guides", "legal"]
   }
 }

@@ -1,3 +1,46 @@
 {
-  "_comment": "Not enabled yet (see data/locales.json). Empty on purpose - the t() helper falls back to en.json for any missing key, so this locale can be filled in incrementally without breaking anything."
+  "nav": {
+    "home": "Home",
+    "categories": "Dispositivi",
+    "calculators": "Calcolatori",
+    "guides": "Guide",
+    "compare": "Confronta schede SD",
+    "cardReaders": "Lettori di schede",
+    "carNavigation": "Navigazione auto",
+    "allCategories": "Tutti i dispositivi",
+    "allCalculators": "Tutti i calcolatori",
+    "allGuides": "Tutte le guide",
+    "browseAllCategories": "Vedi tutti i dispositivi",
+    "browseAllCalculators": "Vedi tutti i calcolatori",
+    "browseAllGuides": "Vedi tutte le guide",
+    "selectLanguage": "Seleziona lingua",
+    "about": "Chi siamo"
+  },
+  "footer": {
+    "company": "Azienda",
+    "aboutUs": "Chi siamo",
+    "contact": "Contatti",
+    "legal": "Legale",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini di utilizzo",
+    "site": "Sito",
+    "sitemap": "Mappa del sito",
+    "copyright": "© 2026 SD Card Checker. Tutti i diritti riservati.",
+    "otherVersions": "Altre lingue",
+    "readersNotOffered": "Lettori di schede non disponibili in questa lingua"
+  },
+  "disclosure": "SD Card Checker contiene link di affiliazione. Quando effettui un acquisto tramite i nostri link, guadagniamo una piccola commissione senza costi aggiuntivi per te.",
+  "sidebar": {
+    "searchPlaceholder": "Cerca dispositivi...",
+    "categoriesHeading": "Categorie",
+    "moreCategories": "Altre categorie",
+    "calculatorsHeading": "Calcolatori",
+    "guidesHeading": "Guide",
+    "aboutHeading": "Chi siamo",
+    "aboutText": "SD Card Checker ti aiuta a trovare la scheda SD perfetta per qualsiasi dispositivo, con consigli di esperti e specifiche dettagliate.",
+    "disclaimerHeading": "Avvertenza",
+    "disclaimerText1": "I contenuti di questo sito sono forniti solo a scopo informativo. SD Card Checker non garantisce la completezza o l'accuratezza dei dati e li fornisce \"così come sono\".",
+    "disclaimerText2": "Questo sito contiene link di affiliazione. Potremmo guadagnare una piccola commissione quando effettui un acquisto tramite i nostri link, senza costi aggiuntivi per te."
+  },
+  "breadcrumbHome": "Home"
 }

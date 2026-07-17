@@ -4,19 +4,36 @@
  */
 
 const { generateFAQsJa, mergeFAQsJa } = require("./generateFAQs-ja");
+const { generateFAQsDe, mergeFAQsDe } = require("./generateFAQs-de");
+const { generateFAQsFr, mergeFAQsFr } = require("./generateFAQs-fr");
+const { generateFAQsIt, mergeFAQsIt } = require("./generateFAQs-it");
+
+const LOCALE_GENERATORS = {
+  ja: generateFAQsJa,
+  de: generateFAQsDe,
+  fr: generateFAQsFr,
+  it: generateFAQsIt,
+};
+
+const LOCALE_MERGERS = {
+  ja: mergeFAQsJa,
+  de: mergeFAQsDe,
+  fr: mergeFAQsFr,
+  it: mergeFAQsIt,
+};
 
 /**
  * Generate FAQs programmatically based on device specs
  * Answers are specific to each device using its actual data
  * @param {object} device - The device object
  * @param {object} sdcardsMap - A map of all SD cards
- * @param {boolean} isJapanese - Whether to generate Japanese FAQs
+ * @param {string} locale - Locale to generate FAQs for (defaults to English)
  * @returns {Array<object>} - An array of FAQ objects {q, a}
  */
-function generateFAQs(device, sdcardsMap, isJapanese = false) {
-  // Delegate to Japanese generator if needed
-  if (isJapanese) {
-    return generateFAQsJa(device, sdcardsMap);
+function generateFAQs(device, sdcardsMap, locale = "en") {
+  const localeGenerator = LOCALE_GENERATORS[locale];
+  if (localeGenerator) {
+    return localeGenerator(device, sdcardsMap);
   }
 
   const faqs = [];
@@ -126,13 +143,13 @@ function generateFAQs(device, sdcardsMap, isJapanese = false) {
  * Custom FAQs override generated ones (by matching question)
  * @param {Array<object>} customFAQs - Custom FAQs from device data
  * @param {Array<object>} generatedFAQs - Programmatically generated FAQs
- * @param {boolean} isJapanese - Whether these are Japanese FAQs
+ * @param {string} locale - Locale the FAQs are in (defaults to English)
  * @returns {Array<object>} - The final merged array of FAQs
  */
-function mergeFAQs(customFAQs, generatedFAQs, isJapanese = false) {
-  // Delegate to Japanese merge if needed
-  if (isJapanese) {
-    return mergeFAQsJa(customFAQs, generatedFAQs);
+function mergeFAQs(customFAQs, generatedFAQs, locale = "en") {
+  const localeMerger = LOCALE_MERGERS[locale];
+  if (localeMerger) {
+    return localeMerger(customFAQs, generatedFAQs);
   }
 
   if (!customFAQs || customFAQs.length === 0) {

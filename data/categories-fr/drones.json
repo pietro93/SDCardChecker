@@ -1,0 +1,1244 @@
+[
+  {
+    "id": "dji-mini-4-pro",
+    "name": "DJI Mini 4 Pro",
+    "category": "drones",
+    "slug": "dji-mini-4-pro",
+    "searchTerms": [
+      "dji mini 4 pro carte sd",
+      "mini 4 pro carte mémoire",
+      "dji mini 4 carte sd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (compatible UHS-II)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "Filme en 4K jusqu'à 60fps. La classe V30 garantit un enregistrement fluide sans perte d'images. Le débit 4K exige une vitesse d'écriture soutenue d'au moins 30 MB/s.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-go"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je utiliser des cartes V20 avec le DJI Mini 4 Pro ?",
+        "a": "<b>L'utilisation de cartes V20 n'est pas recommandée pour le DJI Mini 4 Pro</b>. <b>La classe de vitesse V30 est le minimum requis pour un enregistrement 4K stable</b>, en particulier à des cadences plus élevées, afin d'éviter les images perdues et la corruption de fichiers en vol."
+      },
+      {
+        "q": "La marque a-t-elle de l'importance pour les drones ?",
+        "a": "<b>Oui, la fiabilité de la marque est essentielle pour les opérations en drone</b>. <b>Utilisez des marques de confiance comme SanDisk, Lexar ou Kingston</b> pour éviter les pannes de carte en plein vol qui pourraient entraîner la perte d'images, voire pire."
+      },
+      {
+        "q": "Qu'en est-il des cartes anciennes ou déjà utilisées ?",
+        "a": "<b>Évitez les cartes microSD usagées ou dégradées pour les opérations en drone</b>. La fiabilité est primordiale car <b>une panne de carte en vol est coûteuse et dangereuse</b>. Utilisez toujours des cartes neuves ou testées professionnellement, à la fiabilité reconnue."
+      }
+    ],
+    "relatedDevices": [
+      "dji-mini-3-pro",
+      "dji-air-3s"
+    ],
+    "notes": "DJI officially recommends V30 cards for safe recording. Test new cards before flights."
+  },
+  {
+    "id": "dji-mini-3-pro",
+    "name": "DJI Mini 3 Pro",
+    "category": "drones",
+    "slug": "dji-mini-3-pro",
+    "searchTerms": [
+      "dji mini 3 pro carte sd",
+      "mini 3 pro carte mémoire",
+      "dji mini 3 carte sd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (UHS-II Compatible)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "L'enregistrement vidéo 4K nécessite au minimum la classe V30. DJI recommande officiellement des cartes haute vitesse.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Les cartes V20 fonctionnent-elles ?",
+        "a": "<b>Les cartes V20 ne sont pas sûres pour l'enregistrement 4K du DJI Mini 3 Pro</b>. <b>La classe de vitesse minimale V30 est requise</b> pour garantir une capture vidéo stable, sans images perdues ni corruption pendant le vol."
+      }
+    ],
+    "relatedDevices": [
+      "dji-mini-4-pro",
+      "dji-air-3s",
+      "dji-air-3"
+    ],
+    "notes": "Previous generation Mini series. Same V30 requirements as Mini 4 Pro.",
+    "imageUrl": "/img/devices/drones/dji-mini-3-pro.webp"
+  },
+  {
+    "id": "dji-air-3s",
+    "name": "DJI Air 3S",
+    "category": "drones",
+    "slug": "dji-air-3s",
+    "searchTerms": [
+      "dji air 3s carte sd",
+      "air 3s carte mémoire",
+      "dji air 3 carte sd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (UHS-II Compatible)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Drone professionnel 4K 60fps. Débit plus élevé que la série Mini. V30 minimum, V60 recommandé pour un usage professionnel.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "lexar-professional-silver-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le V60 est-il requis pour l'Air 3S ?",
+        "a": "<b>Les cartes de classe V30 fonctionnent pour l'enregistrement 4K de base sur le DJI Air 3S</b>. Cependant, <b>le V60 est fortement recommandé pour un travail professionnel en 4K 60fps</b> afin d'assurer des performances d'écriture optimales et une fiabilité lors d'opérations vidéo exigeantes."
+      }
+    ],
+    "relatedDevices": [
+      "dji-mini-4-pro",
+      "dji-mavic-3",
+      "dji-air-3"
+    ],
+    "notes": "Professional prosumer drone. V60 preferred for stable 4K 60fps recording."
+  },
+  {
+    "id": "dji-air-3",
+    "name": "DJI Air 3",
+    "category": "drones",
+    "slug": "dji-air-3",
+    "searchTerms": [
+      "dji air 3 carte sd",
+      "air 3 microsd",
+      "dji air 3 carte mémoire"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "L'Air 3 filme en 4K jusqu'à 100fps. DJI recommande officiellement des cartes de classe V30 pour garantir un enregistrement fluide et stable sans perte d'images. Une performance fiable est essentielle pour les opérations en drone, où une panne de carte peut être coûteuse et dangereuse.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le V30 est-il vraiment le minimum pour le DJI Air 3 ?",
+        "a": "<b>Oui, V30 est la recommandation minimale officielle.</b> Utiliser des cartes plus lentes expose à des pertes d'images et à la corruption de fichiers en vol. Utilisez toujours des cartes V30 ou plus rapides, testées et de marque reconnue, pour les opérations en drone."
+      }
+    ],
+    "relatedDevices": [
+      "dji-mini-4-pro",
+      "dji-air-3s",
+      "dji-mavic-3",
+      "dji-air-3"
+    ],
+    "notes": "A popular prosumer drone with dual cameras, requiring reliable V30 cards for its high-quality video modes."
+  },
+  {
+    "id": "dji-mini-4k",
+    "name": "DJI Mini 4K",
+    "category": "drones",
+    "slug": "dji-mini-4k",
+    "searchTerms": [
+      "dji mini 4k carte sd",
+      "mini 4k microsd",
+      "dji mini 4k carte mémoire"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "Un drone économique pesant moins de 250g, capable d'enregistrer en 4K à 30fps. DJI recommande officiellement au minimum des cartes V30 pour un enregistrement 4K stable. Bien qu'il s'agisse d'un modèle d'entrée de gamme, il partage les mêmes exigences essentielles en matière de carte que les autres drones haut de gamme de la série Mini, soulignant l'importance de la fiabilité pour l'enregistrement en vol.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-go"
+      }
+    ],
+    "faq": [
+      {
+        "q": "En quoi le DJI Mini 4K diffère-t-il du Mini 4 Pro ?",
+        "a": "<b>Le Mini 4K est une version plus orientée budget, avec moins de modes de vol intelligents et sans capteurs d'évitement d'obstacles.</b> Il enregistre toutefois la même vidéo 4K à 30fps et nécessite les mêmes cartes microSD V30 pour des performances stables. C'est un excellent choix pour les débutants qui privilégient la qualité de l'image sans avoir besoin de fonctionnalités avancées."
+      },
+      {
+        "q": "Puis-je utiliser des cartes microSD de plus de 256GB avec le Mini 4K ?",
+        "a": "<b>DJI prend officiellement en charge et recommande des cartes allant jusqu'à 256GB pour le Mini 4K.</b> Bien que certaines cartes plus grandes puissent techniquement fonctionner, elles ne sont pas officiellement testées ni garanties pour une compatibilité totale. S'en tenir à 256GB ou moins garantit fiabilité et performances stables pendant les opérations de vol."
+      }
+    ],
+    "relatedDevices": [
+      "dji-mini-4-pro",
+      "dji-mini-3",
+      "dji-air-3"
+    ],
+    "notes": "Released in 2024 as a budget alternative to the Mini 4 Pro. Its sub-250g weight allows for less restrictive regulations in many countries. High search volume is expected from beginner drone pilots and those seeking an affordable 4K drone.",
+    "imageUrl": "/img/devices/drones/dji-mini-4k.webp"
+  },
+  {
+    "id": "dji-mini-3",
+    "name": "DJI Mini 3 (Non-Pro)",
+    "category": "drones",
+    "slug": "dji-mini-3",
+    "searchTerms": [
+      "dji mini 3 carte sd",
+      "mini 3 microsd",
+      "dji mini 3 carte mémoire"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "Un drone milieu de gamme pesant moins de 250g, doté de l'enregistrement vidéo 4K HDR. Une carte de classe V30 est essentielle pour garantir un enregistrement fluide sans perte d'images, en particulier pour les séquences HDR. Ce modèle se positionne entre le Mini 4K, plus économique, et le Mini 4 Pro, plus avancé.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Les exigences en matière de carte SD sont-elles les mêmes pour le Mini 3 et le Mini 3 Pro ?",
+        "a": "<b>Oui, le DJI Mini 3 comme le DJI Mini 3 Pro nécessitent des cartes microSD V30.</b> Bien que la version Pro propose des fonctionnalités supplémentaires comme l'évitement d'obstacles et des options de cadence plus élevées, les exigences fondamentales en matière de carte pour un enregistrement 4K stable sont identiques sur toute la gamme Mini 3."
+      }
+    ],
+    "relatedDevices": [
+      "dji-mini-3-pro",
+      "dji-mini-4-pro",
+      "dji-mini-4k"
+    ],
+    "notes": "Released in 2023, the DJI Mini 3 sits as a strong contender in the sub-250g drone category. It provides an excellent balance of features and affordability for enthusiasts. Its consistent V30 card requirement aligns with other DJI drones for reliable performance.",
+    "imageUrl": "/img/devices/drones/dji-mini-3.webp"
+  },
+  {
+    "id": "dji-mavic-3",
+    "name": "DJI Mavic 3",
+    "category": "drones",
+    "slug": "dji-mavic-3",
+    "searchTerms": [
+      "dji mavic 3 carte sd",
+      "mavic 3 carte mémoire",
+      "dji mavic carte sd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (UHS-II Compatible)",
+      "minSpeed": "V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Drone premium 4K et 8K. Le modèle standard prend en charge la 4K ; le modèle Cine prend en charge l'enregistrement 8K Cine à haut débit. V60 minimum requis. V90 recommandé pour les travaux 8K Cine.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-1000x-v60"
+      },
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je utiliser des cartes V30 ?",
+        "a": "<b>Les cartes V30 suffisent pour l'enregistrement 4K sur le DJI Mavic 3</b>. Cependant, <b>pour l'enregistrement 8K Cine (modèle Cine uniquement), un minimum V60 est requis, avec V90 fortement recommandé</b> pour une capture haut débit ininterrompue et des performances optimales."
+      }
+    ],
+    "relatedDevices": [
+      "dji-air-3s",
+      "dji-mini-4-pro",
+      "dji-air-3"
+    ],
+    "notes": "Premium DJI flagship with dual cameras. Standard model supports 4K; Cine model adds 8K capability. V60+ cards essential for 8K Cine recording."
+  },
+  {
+    "id": "dji-mini-2-se",
+    "name": "DJI Mini 2 SE",
+    "category": "drones",
+    "slug": "dji-mini-2-se",
+    "searchTerms": [
+      "dji mini 2 se carte sd",
+      "mini 2 se microsd",
+      "dji mini 2 se carte mémoire"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "La Mini 2 SE enregistre en vidéo jusqu'à 2,7K. DJI recommande officiellement une carte de classe V30 pour garantir un enregistrement fluide et stable sans perte d'images. La fiabilité est essentielle pour toute opération en drone.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je utiliser une carte SanDisk Ultra dans la Mini 2 SE ?",
+        "a": "<b>Ce n'est pas recommandé.</b> DJI spécifie une classe de vitesse U3/V30 pour un enregistrement vidéo fiable. Des cartes plus lentes comme la SanDisk Ultra (U1) peuvent provoquer l'échec de l'enregistrement en plein vol, entraînant la perte des images."
+      }
+    ],
+    "relatedDevices": [
+      "dji-mini-3",
+      "dji-mini-4k"
+    ],
+    "notes": "A very popular budget drone targeting beginners. Official maximum supported capacity is 256GB.",
+    "imageUrl": "/img/devices/drones/dji-mini-2-se.webp"
+  },
+  {
+    "id": "dji-avata-2",
+    "name": "DJI Avata 2",
+    "category": "drones",
+    "slug": "dji-avata-2",
+    "imageUrl": "/img/devices/drones/dji-avata-2.webp",
+    "searchTerms": [
+      "dji avata 2 carte sd",
+      "avata 2 carte mémoire",
+      "dji avata 2 max stockage",
+      "meilleure carte sd pour avata 2"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "L'Avata 2 enregistre en vidéo HDR 4K/60fps. Bien qu'elle dispose d'un généreux stockage interne, une carte microSD V30 est nécessaire pour les sessions prolongées et un transfert de fichiers plus facile. Le débit de données élevé requis par le profil colorimétrique D-Log M 10 bits exige des vitesses d'écriture constantes.",
+    "recommendedBrands": [
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "lexar-professional-1066x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le DJI Avata 2 a-t-il besoin d'une carte SD ?",
+        "a": "<b>Techniquement non, mais en pratique oui.</b> L'Avata 2 dispose de 46GB de stockage interne, ce qui permet environ 45 minutes d'enregistrement 4K. Cependant, pour une journée complète de vol ou pour éviter de remplir le drone en plein vol, une carte microSD est fortement recommandée."
+      },
+      {
+        "q": "Quelle est la taille maximale de carte SD pour l'Avata 2 ?",
+        "a": "<b>Le DJI Avata 2 prend en charge les cartes microSD jusqu'à 512GB.</b> Cela permet de nombreuses heures de séquences 4K à haut débit sans avoir à changer de carte."
+      },
+      {
+        "q": "Une carte V60 est-elle requise pour l'Avata 2 ?",
+        "a": "<b>Non, une carte V30 suffit pour le débit maximal de l'Avata 2.</b> Cependant, l'utilisation d'une carte V60 ou V90 accélérera considérablement le transfert des fichiers de la carte vers votre ordinateur, ce qui peut faire gagner du temps compte tenu de la taille importante des fichiers."
+      },
+      {
+        "q": "Où se trouve l'emplacement de la carte SD sur l'Avata 2 ?",
+        "a": "<b>L'emplacement de la carte SD se trouve à l'intérieur du cache du port USB-C, sur le côté du drone.</b> Contrairement à la première génération d'Avata (où il était difficile d'accès à l'intérieur du carénage), l'emplacement de l'Avata 2 est beaucoup plus accessible."
+      }
+    ],
+    "relatedDevices": [
+      "walksnail-moonlight",
+      "dji-mini-4-pro",
+      "dji-air-3"
+    ],
+    "notes": "Released in 2024. Features 46GB internal storage, but SD card expansion is standard practice for FPV pilots."
+  },
+  {
+    "id": "dji-mini-5-pro",
+    "name": "DJI Mini 5 Pro",
+    "category": "drones",
+    "slug": "dji-mini-5-pro",
+    "searchTerms": [
+      "dji mini 5 pro",
+      "mini 5 pro",
+      "dji mini 5 pro carte sd",
+      "dji mini 5 pro 4k 120fps",
+      "dji mini 5 stockage"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I U3",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Enregistre en vidéo HDR 4K/120fps avec des débits allant jusqu'à 150 Mbit/s. Le V30 garantit les vitesses d'écriture soutenues nécessaires à une capture à haut débit. Le LiDAR et la détection d'obstacles omnidirectionnelle ajoutent des exigences de traitement. Les 42GB de stockage interne nécessitent un déchargement régulier vers la carte. L'interface UHS-I U3 offre la vitesse nécessaire pour un enregistrement ininterrompu.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "lexar-professional-1066x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le V30 suffit-il pour le 4K/120fps sur le Mini 5 Pro ?",
+        "a": "<b>Oui, V30 est le minimum requis pour un enregistrement 4K/120fps stable.</b> Le débit élevé du Mini 5 Pro (jusqu'à 150 Mbit/s) exige des vitesses d'écriture constantes de 30 MB/s. Les cartes classées V60 ou supérieures offrent une marge supplémentaire mais ne sont pas strictement nécessaires."
+      },
+      {
+        "q": "Ai-je besoin de cartes UHS-II ?",
+        "a": "<b>Non, le Mini 5 Pro utilise uniquement l'interface UHS-I.</b> Les cartes UHS-II fonctionneront mais n'apporteront aucun gain de performance. Investissez plutôt dans une carte V30 fiable d'une marque de confiance."
+      },
+      {
+        "q": "Quelle capacité choisir ?",
+        "a": "<b>512GB ou 1TB sont fortement recommandés.</b> Avec seulement 42GB de stockage interne et un enregistrement 4K à haut débit, les cartes se remplissent rapidement. Une carte de 512GB offre environ 2 à 3 heures de séquences 4K/120fps."
+      }
+    ],
+    "relatedDevices": [
+      "dji-mini-4-pro",
+      "dji-air-3s"
+    ],
+    "notes": "Latest flagship Mini series (late 2025 release). 1-inch sensor and LiDAR represent major upgrades. Test cards before flights. DJI officially recommends high-speed cards for 4K/120fps stability.",
+    "imageUrl": "/img/devices/drones/dji-mini-5-pro.webp"
+  },
+  {
+    "id": "dji-avata-360",
+    "name": "DJI Avata 360",
+    "category": "drones",
+    "slug": "dji-avata-360",
+    "searchTerms": [
+      "dji avata 360 carte sd",
+      "avata 360 carte mémoire",
+      "dji avata 360 microsd",
+      "meilleure carte sd pour avata 360"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30 (V60 recommended for thermal margin)",
+      "minWriteSpeed": "30 MB/s minimum, 60 MB/s recommended",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "L'Avata 360 enregistre jusqu'en 8K (360°) à 60fps avec un débit vidéo maximal de 180 Mbit/s, bien au-delà de ce qu'exigeait l'Avata 2 d'origine. Comme le module caméra est logé dans une carrosserie cinewhoop étroitement close avec une circulation d'air limitée, la carte chauffe davantage que dans les drones à structure ouverte — ici, la marge de vitesse d'écriture soutenue compte plus que la capacité brute. Une carte V30 est le plancher officiel, mais la V60 offre une marge contre la limitation thermique afin qu'un enregistrement en plein vol ne s'interrompe ni ne se corrompe.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "lexar-professional-1066x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Pourquoi l'Avata 360 a-t-elle besoin d'une carte plus rapide que l'Avata 2 classique ?",
+        "a": "<b>Le mode 360° 8K/60fps atteint jusqu'à 180 Mbit/s, nettement plus que le débit 4K standard de l'Avata 2.</b> <b>La carte se trouve également dans une carrosserie fermée et plus contrainte thermiquement</b>, donc une carte qui atteint tout juste le plancher V30 dispose de moins de marge avant qu'une limitation liée à la chaleur ne provoque des pertes d'images ou un arrêt de l'enregistrement."
+      },
+      {
+        "q": "Le V30 suffit-il, ou faut-il vraiment un V60 ?",
+        "a": "<b>Le V30 est le minimum officiel de DJI et conviendra à la plupart des vols.</b> <b>Le V60 est recommandé spécifiquement comme garantie thermique</b> — les carrosseries FPV/cinewhoop fermées chauffent davantage que les drones ouverts, et une carte fonctionnant près de sa limite de vitesse dans une enceinte chaude est la cause la plus fréquente de séquences 360° corrompues."
+      },
+      {
+        "q": "Quelle capacité choisir pour des séquences 8K 360° ?",
+        "a": "<b>128GB-256GB couvrent confortablement la plupart des journées de vol.</b> Les séquences 8K 360° à 180 Mbit/s remplissent les cartes plus vite que la 4K standard, mais le risque principal pour ce drone est la corruption liée à la chaleur, pas le manque d'espace — privilégiez une carte V60 à haute endurance plutôt que de maximiser la capacité."
+      }
+    ],
+    "relatedDevices": [
+      "dji-avata-2",
+      "dji-neo",
+      "walksnail-moonlight"
+    ],
+    "notes": "FPV/cinewhoop-style 360° drone. Thermal margin in the enclosed body is the primary card-selection concern, not capacity — lead with sustained write speed headroom over raw GB.",
+    "imageUrl": "/img/devices/drones/dji-avata-360.webp"
+  },
+  {
+    "id": "dji-neo",
+    "name": "DJI Neo",
+    "category": "drones",
+    "slug": "dji-neo",
+    "searchTerms": [
+      "dji neo carte sd",
+      "dji neo carte mémoire",
+      "dji neo microsd",
+      "meilleure carte sd pour dji neo"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s minimum",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "La Neo est le drone d'entrée de gamme ultra-léger de DJI, de la taille d'une paume — pas de protections d'hélices à retirer, pas de télécommande nécessaire pour décoller, et conçue autour d'exFAT avec 22GB de stockage interne en tampon. Elle filme jusqu'en 4K/30fps avec un débit maximal de 75 Mbit/s, largement dans les capacités d'une simple carte microSD V30, donc le choix de la carte ici consiste surtout à ne pas se compliquer la vie plutôt qu'à rechercher une marge thermique comme pour les carrosseries fermées de la série Avata. Une carte V30, certifiée A2, d'une marque reconnue couvre l'enregistrement continu en vol avec de la marge.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quelle est la vitesse minimale de carte SD pour le DJI Neo ?",
+        "a": "<b>V30 est le plancher et tout ce dont la plupart des pilotes auront jamais besoin.</b> Le débit maximal de 75 Mbit/s de la Neo en 4K/30fps est modeste comparé aux exigences 8K/360° de drones comme l'Avata 360, donc inutile de payer plus cher pour des cartes microSD V60 ou V90 ici."
+      },
+      {
+        "q": "Ai-je besoin d'une carte haute endurance ou certifiée thermiquement pour la Neo ?",
+        "a": "<b>Non — la structure ouverte et ultra-légère de la Neo ne retient pas la chaleur comme le font les carrosseries cinewhoop fermées.</b> Une carte V30/A2 standard d'une marque grand public gère l'enregistrement soutenu sans les préoccupations de marge thermique qui motivent la recommandation V60 sur des drones comme l'Avata 360."
+      },
+      {
+        "q": "Quelle capacité acheter pour le DJI Neo ?",
+        "a": "<b>64GB-128GB est le point idéal pour la plupart des journées de vol.</b> La Neo dispose également de 22GB de stockage interne en tampon de secours, donc moins de pression pour surdimensionner l'achat de la carte microSD que sur des drones sans aucun stockage intégré."
+      }
+    ],
+    "relatedDevices": [
+      "dji-avata-360",
+      "dji-mini-5-pro",
+      "dji-avata-2"
+    ],
+    "notes": "Ultra-light/palm-sized entry drone, more casual buyer than Avata. Lead with simplicity/ease-of-use framing — V30/A2 is plenty, no thermal-margin upsell needed like the enclosed cinewhoop bodies.",
+    "imageUrl": "/img/devices/drones/dji-neo.webp"
+  },
+  {
+    "id": "autel-evo-ii-pro-v3",
+    "name": "Autel EVO II Pro V3",
+    "category": "drones",
+    "slug": "autel-evo-ii-pro-v3",
+    "searchTerms": [
+      "autel evo ii pro v3 carte sd",
+      "evo 2 pro carte sd",
+      "autel robotics carte mémoire"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (UHS-II Compatible)",
+      "minSpeed": "V30 / U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "L'EVO II Pro V3 enregistre d'énormes fichiers vidéo 6K à haut débit. Une classe V30 est le minimum absolu pour éviter les échecs d'enregistrement, mais des cartes U3 rapides sont préférables pour une gestion plus fluide des fichiers. Autel recommande officiellement des cartes allant jusqu'à 256GB.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "L'EVO II Pro V3 prend-elle en charge les cartes de 512GB ?",
+        "a": "<b>Autel indique officiellement 256GB comme capacité maximale prise en charge.</b> Bien que certains utilisateurs rapportent des succès avec des cartes de 512GB de haute qualité formatées en exFAT, leur utilisation comporte un risque de corruption des données ou d'erreurs de reconnaissance en vol. Restez sur 256GB pour une fiabilité professionnelle."
+      },
+      {
+        "q": "Pourquoi ma vidéo 6K saccade-t-elle ?",
+        "a": "<b>C'est presque toujours dû à une carte SD trop lente.</b> L'enregistrement en 6K exige une vitesse d'écriture soutenue que les cartes bon marché ou anciennes ne peuvent pas maintenir. Assurez-vous que votre carte porte le symbole 'V30' ou 'U3'."
+      }
+    ],
+    "relatedDevices": [
+      "autel-evo-lite-plus",
+      "dji-mavic-3",
+      "dji-air-3"
+    ],
+    "notes": "A professional 6K drone. High-quality media is essential to match the camera's capabilities.",
+    "imageUrl": "/img/devices/drones/autel-evo-ii-pro-v3.webp"
+  },
+  {
+    "id": "autel-evo-nano-plus",
+    "name": "Autel EVO Nano+",
+    "category": "drones",
+    "slug": "autel-evo-nano-plus",
+    "searchTerms": [
+      "autel nano plus carte sd",
+      "evo nano+ microsd",
+      "autel nano stockage"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30 / U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "Bien qu'il s'agisse d'un drone de moins de 250g, le Nano+ dispose d'un grand capteur et filme en 4K HDR. Cela nécessite des cartes de classe V30. Les cartes plus lentes provoquent souvent l'avertissement 'Vitesse de carte SD faible' qui empêche l'enregistrement.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quelle est la taille de carte SD maximale pour l'Autel Nano+ ?",
+        "a": "<b>L'Autel EVO Nano+ prend en charge les cartes microSD jusqu'à 256GB.</b> Nous recommandons des cartes UHS-I U3/V30 pour gérer le débit vidéo 4K."
+      }
+    ],
+    "relatedDevices": [
+      "dji-mini-3-pro",
+      "dji-mini-4-pro",
+      "potensic-atom"
+    ],
+    "notes": "Direct competitor to the DJI Mini Pro series. Requires V30 cards for 4K HDR.",
+    "imageUrl": "/img/devices/drones/autel-evo-nano-plus.webp"
+  },
+  {
+    "id": "autel-evo-lite-plus",
+    "name": "Autel EVO Lite+",
+    "category": "drones",
+    "slug": "autel-evo-lite-plus",
+    "searchTerms": [
+      "autel lite plus carte sd",
+      "evo lite+ carte mémoire",
+      "autel lite stockage"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "La Lite+ dispose d'un capteur 1 pouce capable de filmer en 6K/30fps et 4K/60fps. Ces modes haute résolution exigent une carte V30 ou plus rapide. Autel recommande de formater la carte dans l'application du drone avant la première utilisation.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je utiliser une carte de 1TB dans l'EVO Lite+ ?",
+        "a": "<b>Non, la capacité maximale prise en charge est de 256GB.</b> Les cartes plus grandes peuvent ne pas être reconnues par le firmware ou provoquer une instabilité du système."
+      }
+    ],
+    "relatedDevices": [
+      "dji-air-2s",
+      "autel-evo-ii-pro-v3"
+    ],
+    "notes": "The 'Lite' name is misleading; this is a powerful 6K camera drone requiring professional-grade storage.",
+    "imageUrl": "/img/devices/drones/autel-evo-lite-plus.webp"
+  },
+  {
+    "id": "holy-stone-hs175d",
+    "name": "Holy Stone HS175D",
+    "category": "drones",
+    "slug": "holy-stone-hs175d",
+    "searchTerms": [
+      "holy stone hs175d carte sd",
+      "hs175d carte mémoire",
+      "holy stone drone stockage"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB"
+      ],
+      "maxCapacity": "64GB"
+    },
+    "whySpecs": "La HS175D enregistre en 2,7K (upscalé en 4K dans certains modes). Elle a une limite de capacité stricte de 64GB. Les cartes de plus de 64GB échouent souvent à se formater ou ne sont pas reconnues. Le format doit être FAT32.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Pourquoi ma carte de 128GB ne fonctionne-t-elle pas dans la HS175D ?",
+        "a": "<b>La HS175D ne prend en charge que les cartes jusqu'à 64GB.</b> Les cartes plus grandes utilisent par défaut le système de fichiers exFAT, que ce drone ne peut souvent pas lire. Vous devez utiliser une carte de 64GB ou 32GB formatée en FAT32."
+      }
+    ],
+    "relatedDevices": [
+      "holy-stone-hs720",
+      "holy-stone-hs360s"
+    ],
+    "notes": "Budget drone with strict capacity limits. Using cards >64GB is the #1 user issue.",
+    "imageUrl": "/img/devices/drones/holy-stone-hs175d.webp"
+  },
+  {
+    "id": "holy-stone-hs720",
+    "name": "Holy Stone HS720 / HS720E / HS720G",
+    "category": "drones",
+    "slug": "holy-stone-hs720",
+    "searchTerms": [
+      "holy stone hs720 carte sd",
+      "hs720e carte mémoire",
+      "hs720g microsd"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1 (V30 recommended for HS720G)",
+      "minWriteSpeed": "10-30 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB"
+    },
+    "whySpecs": "La série HS720 prend généralement en charge jusqu'à 128GB (modèles HS720E/G). L'ancien modèle HS720 original peut ne prendre en charge que 32GB. Le modèle 'G' est doté d'un gimbal et de l'EIS 4K, bénéficiant d'une carte U3/V30 plus rapide, tandis que le modèle 'E' fonctionne bien avec de la Classe 10.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Mon HS720 n'enregistre pas les photos sur la carte ?",
+        "a": "<b>Vérifiez la capacité et le format de la carte.</b> Assurez-vous que la carte ne dépasse pas 128GB et qu'elle est formatée en FAT32 (ou exFAT pour les modèles G plus récents). Si vous utilisez un ancien HS720, essayez une carte de 32GB."
+      }
+    ],
+    "relatedDevices": [
+      "holy-stone-hs175d",
+      "potensic-atom-se"
+    ],
+    "notes": "A best-selling Amazon drone series. Capacity limits vary by specific sub-model (E/G), but 128GB is the safe maximum for modern versions.",
+    "imageUrl": "/img/devices/drones/holy-stone-hs720.webp"
+  },
+  {
+    "id": "holy-stone-hs360s",
+    "name": "Holy Stone HS360S",
+    "category": "drones",
+    "slug": "holy-stone-hs360s",
+    "searchTerms": [
+      "holy stone hs360s carte sd",
+      "hs360s carte mémoire",
+      "hs360s stockage"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "V30 / U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB"
+    },
+    "whySpecs": "La HS360S est un drone 4K plus récent et plus performant de Holy Stone. Comme elle enregistre en véritable 4K, elle nécessite une carte U3 ou V30 pour éviter les saccades. Le fabricant indique 128GB comme capacité maximale prise en charge.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "La HS360S nécessite-t-elle une carte rapide ?",
+        "a": "<b>Oui, utilisez une carte V30.</b> Contrairement aux anciens modèles Holy Stone, la HS360S enregistre en 4K à débit plus élevé. Les cartes Classe 10 lentes peuvent entraîner des fichiers corrompus."
+      }
+    ],
+    "relatedDevices": [
+      "holy-stone-hs720",
+      "potensic-atom"
+    ],
+    "notes": "Newer GPS drone. Supports up to 128GB FAT32/exFAT.",
+    "imageUrl": "/img/devices/drones/holy-stone-hs360s.webp"
+  },
+  {
+    "id": "potensic-atom",
+    "name": "Potensic Atom",
+    "category": "drones",
+    "slug": "potensic-atom",
+    "searchTerms": [
+      "potensic atom carte sd",
+      "atom drone carte mémoire",
+      "potensic 4k drone stockage"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30 / U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "Le Potensic Atom enregistre en 4K à haut débit. Le fabricant exige explicitement des cartes U3/V30. Les utilisateurs signalent fréquemment que des cartes U1 plus lentes (comme les SanDisk Ultra standard) provoquent l'arrêt de l'enregistrement après quelques secondes ou empêchent totalement la sauvegarde des séquences.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Pourquoi mon Potensic Atom affiche-t-il 'Erreur carte SD' ?",
+        "a": "<b>Cela se produit généralement si la carte n'est pas certifiée V30 ou est mal formatée.</b> Assurez-vous d'utiliser une carte V30 et formatez-la directement dans les paramètres de l'application Potensic Pro pour garantir la compatibilité."
+      },
+      {
+        "q": "Quelle est la différence entre les exigences de carte de l'Atom et de l'Atom SE ?",
+        "a": "<b>Les deux drones nécessitent les mêmes cartes de classe V30.</b> Bien que l'Atom dispose d'un gimbal 3 axes et que la SE n'en ait pas, ils partagent le même moteur d'enregistrement 4K et les mêmes exigences d'écriture de données."
+      }
+    ],
+    "relatedDevices": [
+      "potensic-atom-se",
+      "dji-mini-4k",
+      "dji-mini-2-se"
+    ],
+    "notes": "The #1 competitor to the DJI Mini 2 SE / 4K. Very popular on Amazon. Strict V30 requirement.",
+    "imageUrl": "/img/devices/drones/potensic-atom.webp"
+  },
+  {
+    "id": "potensic-atom-se",
+    "name": "Potensic Atom SE",
+    "category": "drones",
+    "slug": "potensic-atom-se",
+    "searchTerms": [
+      "potensic atom se carte sd",
+      "atom se microsd",
+      "potensic se stockage"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30 / U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "Comme l'Atom standard, la version SE enregistre en 4K, ce qui dépasse les capacités des cartes plus lentes. Une carte V30 est obligatoire pour éviter les erreurs de 'vitesse d'écriture lente' et les fichiers vidéo corrompus.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je utiliser une carte de 64GB ?",
+        "a": "<b>Oui, 64GB est une excellente taille pour l'Atom SE.</b> Elle contiendra plusieurs vols de séquences 4K. Assurez-vous simplement qu'il s'agit d'une carte certifiée U3 ou V30."
+      }
+    ],
+    "relatedDevices": [
+      "potensic-atom",
+      "holy-stone-hs720",
+      "dji-mini-2-se"
+    ],
+    "notes": "A budget-friendly 4K drone. Users often buy cheap, incompatible cards; emphasize the need for V30.",
+    "imageUrl": "/img/devices/drones/potensic-atom-se.webp"
+  },
+  {
+    "id": "skydio-2-plus",
+    "name": "Skydio 2+",
+    "category": "drones",
+    "slug": "skydio-2-plus",
+    "searchTerms": [
+      "skydio 2+ carte sd",
+      "skydio 2 plus carte mémoire",
+      "skydio microsd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I / UHS-II",
+      "minSpeed": "V30 / U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB (Official), some 400GB+ supported on newer firmware"
+    },
+    "whySpecs": "Le Skydio 2+ dépend fortement de la carte SD, non seulement pour la vidéo 4K/60fps, mais aussi pour l'enregistrement des données de son trajet de vol autonome complexe. Skydio est réputé pour rejeter les cartes qui ne réussissent pas ses tests de vitesse stricts U3/V30. Le système de fichiers doit être exFAT.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Mon Skydio ne décolle pas et signale un problème avec la carte SD ?",
+        "a": "<b>Les drones Skydio effectuent un test de vitesse sur la carte avant le vol.</b> Si la carte est trop lente (Classe 10 ou U1) ou fragmentée, le drone empêchera le décollage pour protéger vos données. Vous devez utiliser une carte V30/U3 de haute qualité."
+      },
+      {
+        "q": "Skydio prend-il en charge l'UHS-II ?",
+        "a": "<b>Oui, le Skydio 2+ prend en charge les cartes UHS-II.</b> Bien que non strictement nécessaires pour l'enregistrement, les cartes UHS-II peuvent offrir des vitesses de transfert plus rapides vers votre ordinateur."
+      }
+    ],
+    "relatedDevices": [
+      "skydio-x10",
+      "dji-mavic-3",
+      "autel-evo-ii-pro-v3"
+    ],
+    "notes": "The best autonomous tracking drone. Very strict card requirements; low-quality cards will ground the drone.",
+    "imageUrl": "/img/devices/drones/skydio-2-plus.webp"
+  },
+  {
+    "id": "skydio-x10",
+    "name": "Skydio X10",
+    "category": "drones",
+    "slug": "skydio-x10",
+    "searchTerms": [
+      "skydio x10 carte sd",
+      "skydio x10 stockage",
+      "skydio enterprise mémoire"
+    ],
+    "sdCard": {
+      "type": "Dual microSD UHS-II",
+      "minSpeed": "V60 / V90",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Le X10 est un drone industriel d'entreprise doté de capteurs avancés. Il génère d'énormes quantités de données thermiques et visuelles. Il prend en charge deux cartes microSD pour la redondance. Utilisez des cartes de qualité industrielle ou haute performance V60/V90 pour garantir l'intégrité des données lors de missions critiques.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le Skydio X10 dispose-t-il d'un stockage interne ?",
+        "a": "<b>Oui, il dispose généralement d'un stockage interne chiffré, mais les cartes microSD sont utilisées pour le déchargement des données et une capacité étendue.</b> Compte tenu de la nature professionnelle du drone, vérifiez auprès de votre gestionnaire de flotte les exigences de chiffrement pour les cartes SD."
+      }
+    ],
+    "relatedDevices": [
+      "skydio-2-plus",
+      "dji-mavic-3-enterprise"
+    ],
+    "notes": "Enterprise-grade drone. Reliability is paramount.",
+    "imageUrl": "/img/devices/drones/skydio-x10.webp"
+  },
+  {
+    "id": "hoverair-x1-pro",
+    "name": "HoverAir X1 Pro",
+    "category": "drones",
+    "slug": "hoverair-x1-pro",
+    "searchTerms": [
+      "hoverair x1 pro carte sd",
+      "hover x1 pro carte mémoire",
+      "zero zero robotics stockage"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "Contrairement à la X1 originale dotée d'un stockage interne, la X1 Pro enregistre en 4K/60fps sur une carte microSD. Une carte V30 est requise pour un enregistrement fluide. Le drone est conçu pour le suivi automatique en sports d'action, donc des vitesses d'écriture fiables sont essentielles pour ne pas perdre les images d'une figure.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le HoverAir X1 Pro dispose-t-il d'un stockage interne ?",
+        "a": "<b>Non, les modèles Pro (Pro et Pro Max) utilisent des cartes microSD.</b> Seul le HoverAir X1 standard original utilisait un stockage interne."
+      }
+    ],
+    "relatedDevices": [
+      "hoverair-x1-pro-max",
+      "dji-mini-4k",
+      "skydio-2-plus"
+    ],
+    "notes": "Released in 2024. Focused on cycling/skiing follow-me modes.",
+    "imageUrl": "/img/devices/drones/hoverair-x1-pro.webp"
+  },
+  {
+    "id": "hoverair-x1-pro-max",
+    "name": "HoverAir X1 Pro Max",
+    "category": "drones",
+    "slug": "hoverair-x1-pro-max",
+    "searchTerms": [
+      "hoverair x1 pro max carte sd",
+      "hover x1 carte 8k",
+      "hoverair 8k stockage"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I / UHS-II",
+      "minSpeed": "V60",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Le X1 Pro Max est le modèle phare capable d'enregistrer en vidéo 8K. Alors que les cartes V30 pourraient gérer les modes 4K, les cartes V60 sont fortement recommandées pour gérer l'énorme débit de données de l'enregistrement 8K sans mise en mémoire tampon ni perte d'images.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "kingston-canvas-react-plus-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ai-je strictement besoin d'une carte V60 pour le X1 Pro Max ?",
+        "a": "<b>Si vous prévoyez de filmer en 8K, oui.</b> Pour l'enregistrement 4K, une carte V30 de haute qualité suffira, mais pour exploiter tout le potentiel du capteur 8K du drone, investissez dans une carte microSD V60."
+      },
+      {
+        "q": "Que se passe-t-il si j'utilise une carte lente dans le X1 Pro Max ?",
+        "a": "Le drone peut refuser d'enregistrer en 8K, ou réduire automatiquement la résolution à 4K pour éviter la corruption des données."
+      }
+    ],
+    "relatedDevices": [
+      "hoverair-x1-pro",
+      "autel-evo-ii-pro-v3"
+    ],
+    "notes": "One of the few consumer drones offering 8K. High-speed media is a necessity, not a luxury.",
+    "imageUrl": "/img/devices/drones/hoverair-x1-pro-max.webp"
+  },
+  {
+    "id": "fimi-mini-3",
+    "name": "FIMI Mini 3",
+    "category": "drones",
+    "slug": "fimi-mini-3",
+    "searchTerms": [
+      "fimi mini 3 carte sd",
+      "xiaomi fimi carte sd",
+      "fimi mini 3 stockage"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30 / U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "Le FIMI Mini 3 enregistre en 4K à 60fps avec un débit allant jusqu'à 100 Mbit/s. Cela nécessite une carte V30. Les cartes plus lentes entraîneront des pertes d'images ou un découpage de la vidéo en minuscules fragments inutilisables.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quel système de fichiers utiliser pour le FIMI Mini 3 ?",
+        "a": "<b>FAT32 est recommandé pour les cartes de 32GB, et exFAT pour 64GB et plus.</b> Il est préférable de formater la carte directement dans l'application FIMI Navi pour garantir une structure de système de fichiers correcte."
+      }
+    ],
+    "relatedDevices": [
+      "dji-mini-4-pro",
+      "dji-mini-3",
+      "potensic-atom"
+    ],
+    "notes": "Part of the Xiaomi ecosystem. Competes with DJI Mini 3.",
+    "imageUrl": "/img/devices/drones/fimi-mini-3.webp"
+  },
+  {
+    "id": "walksnail-moonlight",
+    "name": "Walksnail Moonlight Kit",
+    "category": "drones",
+    "slug": "walksnail-moonlight",
+    "imageUrl": "/img/devices/drones/walksnail-moonlight.webp",
+    "searchTerms": [
+      "walksnail moonlight carte sd",
+      "walksnail avatar enregistrement moonlight",
+      "walksnail 4k kit stockage",
+      "caddx moonlight carte sd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30 / U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "Le système Moonlight enregistre des séquences 4K/60fps avec un débit allant jusqu'à 150 Mbit/s. C'est nettement plus élevé que les drones standard. Une carte V30 ou U3 est obligatoire ; les cartes plus lentes provoqueront un gel de l'enregistrement après quelques secondes ou des fichiers corrompus.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quelle est la taille maximale de carte SD pour le Walksnail Moonlight ?",
+        "a": "<b>La capacité maximale officiellement prise en charge est de 256GB.</b> Bien que certains utilisateurs rapportent des succès avec des cartes de 512GB formatées en FAT32, le système est le plus stable avec des cartes de 256GB ou moins. L'utilisation de tailles non prises en charge augmente le risque que l'erreur 'Carte SD pleine' apparaisse à tort."
+      },
+      {
+        "q": "Pourquoi mon enregistrement s'arrête-t-il après 5 à 10 secondes ?",
+        "a": "<b>Cela indique que la carte SD est trop lente.</b> Le Moonlight écrit des données à 150 Mbit/s. Si la carte descend en dessous de cette vitesse d'écriture (fréquent avec les cartes U1 ou contrefaites), le système arrête l'enregistrement pour éviter la corruption des données. Assurez-vous d'utiliser une carte V30/U3 authentique."
+      },
+      {
+        "q": "Le Moonlight enregistre-t-il les données Gyroflow ?",
+        "a": "<b>Oui, le Moonlight enregistre les données gyroscopiques nécessaires à la stabilisation Gyroflow.</b> Ces données sont intégrées dans le fichier vidéo. Une carte SD rapide et stable est essentielle ici ; si la carte bégaie, les données gyroscopiques peuvent se désynchroniser, rendant la stabilisation impossible en post-production."
+      },
+      {
+        "q": "Comment formater la carte SD pour Walksnail ?",
+        "a": "<b>Il est fortement recommandé de formater la carte via le menu VRX (lunettes).</b> Cela garantit que le système de fichiers correct (généralement exFAT) et la taille d'unité d'allocation appropriée sont appliqués pour des performances d'enregistrement optimales."
+      }
+    ],
+    "relatedDevices": [
+      "dji-avata-2",
+      "hoverair-x1-pro",
+      "skydio-2-plus"
+    ],
+    "notes": "A dedicated FPV night-vision system. Unlike the standard Walksnail VTX which has onboard storage, the Moonlight requires an SD card for 4K recording."
+  }
+]

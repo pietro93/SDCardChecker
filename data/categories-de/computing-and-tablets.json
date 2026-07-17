@@ -1,0 +1,879 @@
+[
+  {
+    "id": "raspberry-pi-5",
+    "name": "Raspberry Pi 5",
+    "category": "computing-and-tablets",
+    "slug": "raspberry-pi-5",
+    "searchTerms": [
+      "raspberry pi 5 sd karte",
+      "pi 5 microsd",
+      "raspberry pi 5 speicher"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "A1 oder A2 zertifiziert",
+      "minWriteSpeed": "10 MB/s (Class 10)",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "Kein offizielles Limit"
+    },
+    "whySpecs": "Der Raspberry Pi 5 startet sein Betriebssystem von der microSD-Karte. Eine 'A1'- oder idealerweise 'A2'-zertifizierte Karte ist entscheidend für die Leistung. Diese Klassifizierungen kennzeichnen schnellere zufällige Lese-/Schreibgeschwindigkeiten, was die Reaktionsfähigkeit des Betriebssystems und die Ladezeiten von Anwendungen deutlich verbessert.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "sandisk-ultra-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Was ist wichtiger für den Raspberry Pi 5, V30 oder A2?",
+        "a": "<b>Die A2-Klassifizierung ist wichtiger.</b> Die 'V'-Klassifizierung (z. B. V30) betrifft die Geschwindigkeit für kontinuierliche Videoaufnahmen, während die 'A'-Klassifizierung (Application Performance Class) für wahlfreie Lese-/Schreibvorgänge steht, wie sie ein Betriebssystem benötigt. Eine A2-Karte fühlt sich im Alltag deutlich schneller an."
+      }
+    ],
+    "relatedDevices": [],
+    "notes": "Targets a huge DIY and technical audience. The card is a mandatory component."
+  },
+  {
+    "id": "raspberry-pi-compute-module-5",
+    "name": "Raspberry Pi Compute Module 5 (CM5)",
+    "category": "computing-and-tablets",
+    "slug": "raspberry-pi-compute-module-5",
+    "searchTerms": [
+      "raspberry pi cm5 sd karte",
+      "compute module 5 speicher",
+      "cm5 microsd",
+      "raspberry pi cm5 emmc vs sd"
+    ],
+    "sdCard": {
+      "type": "microSDXC (auf Trägerboard, wenn nicht das integrierte eMMC verwendet wird)",
+      "minSpeed": "High-Endurance-zertifiziert",
+      "minWriteSpeed": "Bewertung für dauerhaftes Schreiben, nicht Burst-Geschwindigkeit",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "Kein offizielles Limit (abhängig vom Trägerboard)"
+    },
+    "whySpecs": "Das CM5 ist ein System-on-Module, das mit 0GB (Lite), 16GB, 32GB oder 64GB <b>integriertem eMMC</b> verkauft wird, für Entwickler, die es so bestellen. Wenn du stattdessen das Lite-SKU mit dem microSD-Steckplatz eines Trägerboards verwendest, ist dies keine Desktop-Pi-5-Installationskarte – CM5-Boards werden überwiegend als eingebettete Hardware oder Serverhardware eingesetzt, die dauerhaftes Logging, lokale Datenbanken oder Always-on-Dienste ausführt. Diese Arbeitslast bedeutet kontinuierliches Überschreiben, nicht gelegentliche Boot-Lesevorgänge. <b>Ignoriere hier die A1/A2-Geschwindigkeitsklassen-Kaufempfehlungen</b> und wähle eine Karte, die für dauerhafte Schreibausdauer (TBW) zertifiziert ist – dieselbe Logik wie bei Dashcams und Überwachungsrekordern – oder plane das integrierte eMMC-SKU ein, falls dein Trägerboard das unterstützt.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Sollte ich das CM5 mit integriertem eMMC kaufen oder eine microSD-Karte verwenden?",
+        "a": "<b>Integriertes eMMC ist langlebiger und schneller für kontinuierliche Server-Workloads</b>, wenn dein Trägerboard und Budget das unterstützen. Wenn du dich stattdessen für das Lite-SKU (0GB) und eine microSD-Karte entscheidest, behandle die Karte wie einen Dashcam-Speicher: Priorisiere Schreibausdauer (TBW) vor Geschwindigkeitsklasse."
+      },
+      {
+        "q": "Brauche ich eine V30- oder A2-Karte für das Compute Module 5?",
+        "a": "<b>Nein – diese Geschwindigkeitsklassen zielen auf Desktop-Reaktionsfähigkeit und Video-Bitrate ab, nicht auf den tatsächlichen Einsatzzweck dieses Geräts.</b> CM5-Boards sind typischerweise eingebettete Server-Builds, die rund um die Uhr Logging oder Datenbanken ausführen. Eine High-Endurance-Karte (SanDisk MAX ENDURANCE, Samsung PRO Endurance) übersteht eine Standard-A2-Karte bei diesem Schreibmuster um Jahre."
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-5",
+      "raspberry-pi-4-model-b"
+    ],
+    "notes": "Distinct technical audience from the Pi 5/4/3/Zero pages — embedded/server builders, not desktop users. Page intentionally steers away from standard speed-class picks toward endurance-rated cards.",
+    "imageUrl": "/img/devices/computing/raspberry-pi-compute-module-5.webp"
+  },
+  {
+    "id": "raspberry-pi-4-model-b",
+    "name": "Raspberry Pi 4 Model B",
+    "category": "computing-and-tablets",
+    "slug": "raspberry-pi-4-model-b",
+    "searchTerms": [
+      "raspberry pi 4 sd karte",
+      "pi 4 microsd",
+      "raspberry pi 4 speicher"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB"
+      ],
+      "maxCapacity": "Kein offizielles Limit"
+    },
+    "whySpecs": "Wie alle Raspberry Pis startet der Pi 4 sein Betriebssystem von der microSD-Karte. Eine A1- oder A2-zertifizierte Karte ist entscheidend für eine gute Leistung. Die A-Klassifizierung kennzeichnet schnellere zufällige Zugriffsgeschwindigkeiten, was zu einem reaktionsschnelleren Desktop-Erlebnis und schnelleren Anwendungsstartzeiten führt.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ist eine V30-Karte gut für einen Raspberry Pi 4?",
+        "a": "<b>Eine V30-Klassifizierung ist nicht die wichtigste Spezifikation. Achte stattdessen auf eine A1- oder A2-Klassifizierung.</b> Die V30-Klassifizierung betrifft Video und beeinflusst nicht die Betriebssystemleistung. Die Application Performance Class (A1/A2) ist das, was den Pi 4 schnell und reaktionsschnell wirken lässt."
+      },
+      {
+        "q": "Was ist die empfohlene Mindestkapazität für den Raspberry Pi 4?",
+        "a": "<b>Eine 32GB-Karte ist ein guter Mindestwert für Raspberry Pi OS mit Desktop-Umgebung.</b> Das lässt genug Platz für die Installation mehrerer Anwendungen und für Projektdateien. Für komplexere Projekte oder zur Speicherung von Medien wird 64GB oder mehr empfohlen."
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-5",
+      "raspberry-pi-3-model-b-plus"
+    ],
+    "notes": "Still one of the most popular SBCs in the world. The distinction between video speed (V) and application speed (A) is a key point for users.",
+    "imageUrl": "/img/devices/computing/raspberry-pi-4-model-b.webp"
+  },
+  {
+    "id": "raspberry-pi-3-model-b-plus",
+    "name": "Raspberry Pi 3 Model B+",
+    "category": "computing-and-tablets",
+    "slug": "raspberry-pi-3-model-b-plus",
+    "searchTerms": [
+      "raspberry pi 3 sd karte",
+      "pi 3 microsd",
+      "raspberry pi 3 speicher",
+      "pi 3 b+ sd karte"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "16GB",
+        "32GB"
+      ],
+      "maxCapacity": "Kein offizielles Limit"
+    },
+    "whySpecs": "Der Raspberry Pi 3 ist weniger leistungsstark als neuere Modelle, profitiert aber dennoch von einer schnellen Karte. Eine Class-10-Karte ist das Minimum für ein nutzbares Erlebnis. Eine A1-zertifizierte Karte wird empfohlen, da sie eine spürbare Verbesserung der Betriebssystem-Reaktionsfähigkeit bietet, besonders beim Starten von Anwendungen oder beim Booten.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Brauche ich eine schnelle Karte für den Raspberry Pi 3?",
+        "a": "<b>Ja, eine Class-10-Karte ist das Minimum, das du verwenden solltest.</b> Auch wenn der Pi 3 nicht so schnell ist wie ein Pi 4 oder 5, führt die Verwendung einer langsamen, nicht klassifizierten Karte zu einem sehr trägen und frustrierenden Nutzererlebnis. Eine A1-zertifizierte Karte bietet das beste Preis-Leistungs-Verhältnis."
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-4-model-b",
+      "raspberry-pi-zero-2-w"
+    ],
+    "notes": "An older but still widely used model for many DIY projects. Card requirements are less stringent than for Pi 4/5, but a quality card is still important.",
+    "imageUrl": "/img/devices/computing/raspberry-pi-3-model-b-plus.webp"
+  },
+  {
+    "id": "raspberry-pi-zero-2-w",
+    "name": "Raspberry Pi Zero 2 W",
+    "category": "computing-and-tablets",
+    "slug": "raspberry-pi-zero-2-w",
+    "searchTerms": [
+      "raspberry pi zero 2 sd karte",
+      "pi zero 2 w microsd",
+      "pi zero speicher"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "16GB",
+        "32GB"
+      ],
+      "maxCapacity": "Kein offizielles Limit"
+    },
+    "whySpecs": "Der Pi Zero 2 W wird für kompakte, eingebettete Projekte verwendet. Eine zuverlässige Class-10-Karte mit A1-App-Performance ist essenziell, damit das Betriebssystem reibungslos läuft. Da diese Projekte oft 'headless' (ohne Monitor) betrieben werden, ist die Zuverlässigkeit der Karte wichtiger als extreme Geschwindigkeit, aber eine langsame Karte wirkt sich dennoch auf die Boot-Zeit und die Skriptausführung aus.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Wie viel Speicher benötige ich für ein Pi-Zero-2-W-Projekt?",
+        "a": "<b>Für die meisten Headless-Projekte reicht eine 16GB-Karte aus.</b> Sie bietet genug Platz für Raspberry Pi OS Lite und Projektskripte. Wenn du eine Desktop-Umgebung ausführst oder ein Projekt, das viele Daten protokolliert, wähle eine 32GB-Karte."
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-3-model-b-plus",
+      "raspberry-pi-pico"
+    ],
+    "notes": "Extremely popular for small-form-factor projects like Pi-hole or robotics. Card reliability is key for 'set-it-and-forget-it' applications.",
+    "imageUrl": "/img/devices/computing/raspberry-pi-zero-2-w.webp"
+  },
+  {
+    "id": "orange-pi-5",
+    "name": "Orange Pi 5",
+    "category": "computing-and-tablets",
+    "slug": "orange-pi-5",
+    "searchTerms": [
+      "orange pi 5",
+      "orangepi 5 sd karte",
+      "orangepi 5 tf karte",
+      "orange pi 5 speicher"
+    ],
+    "sdCard": {
+      "type": "microSD (TF)",
+      "minSpeed": "Class 10 / U1 (A1 oder A2 empfohlen)",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB offiziell, 256–512GB laut Nutzerberichten häufig funktionierend"
+    },
+    "whySpecs": "Der Orange Pi 5 startet sein Betriebssystem direkt vom microSD(TF)-Steckplatz, sofern kein NVMe oder eMMC verwendet wird. Class-10/U1-Karten bieten genügend sequenziellen Durchsatz für Linux-Distributionen, während A1- oder A2-zertifizierte Karten die zufällige Lese-/Schreibleistung für Paketverwaltung, Logs und Desktop-Nutzung deutlich verbessern. Die offizielle Dokumentation verwandter Orange-Pi-5-Boards listet 128GB als unterstützte microSD-Größe, aber viele Nutzer betreiben erfolgreich 256GB- und sogar 512GB-Karten, wodurch 32–128GB eine sichere, gängige Wahl ist und größere Karten eine praktische, aber inoffizielle Option darstellen.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Brauche ich eine V30-Videokarte für den Orange Pi 5?",
+        "a": "<b>Nein, eine V30-Karte ist für die meisten Orange-Pi-5-Anwendungsfälle nicht erforderlich.</b> Das Board legt weit mehr Wert auf zufällige I/O für das Betriebssystem als auf kontinuierliche Video-Schreibgeschwindigkeit. Eine <b>Class-10/U1-Karte mit A1- oder A2-Zertifizierung</b> bietet meist das beste Verhältnis aus Preis und Leistung."
+      },
+      {
+        "q": "Welche microSD-Kapazität sollte ich für den Orange Pi 5 wählen?",
+        "a": "<b>Für ein typisches Linux-Desktop- oder Server-Image reichen 32GB oder 64GB völlig aus.</b> Wenn du viele Docker-Images, Datenbanken oder Mediendateien direkt auf der Karte speichern möchtest, bietet 128GB mehr Spielraum. Größere Karten (256GB oder 512GB) funktionieren oft, aber gehen über die in vielen Orange-Pi-Hardware-Datenblättern genannten Kapazitäten hinaus."
+      },
+      {
+        "q": "Ist microSD langsamer als NVMe oder eMMC beim Orange Pi 5?",
+        "a": "<b>Ja, microSD ist die langsamste Speicheroption auf dem Board.</b> Das ist völlig ausreichend zum Experimentieren, für leichte Server und kleine Desktops, aber bei intensiven I/O-Workloads oder großen Datenbanken lohnt es sich, das Root-Dateisystem auf eine NVMe-SSD oder ein eMMC-Modul zu verlagern und die microSD nur als Boot- oder Wiederherstellungsmedium zu verwenden."
+      }
+    ],
+    "relatedDevices": [
+      "raspberry-pi-5",
+      "raspberry-pi-4-model-b",
+      "raspberry-pi-zero-2-w"
+    ],
+    "notes": "Single-board computer based on Rockchip RK3588S. Uses a TF/microSD slot for boot unless SPI + NVMe are configured.",
+    "imageUrl": "/img/devices/computing/orange-pi-5.webp"
+  },
+  {
+    "id": "samsung-galaxy-tab-s9",
+    "name": "Samsung Galaxy Tab S9",
+    "category": "computing-and-tablets",
+    "slug": "samsung-galaxy-tab-s9",
+    "searchTerms": [
+      "galaxy tab s9 sd karte",
+      "samsung tab s9 speicherkarte",
+      "tab s9 speicher"
+    ],
+    "sdCard": {
+      "type": "microSDXC",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Das Galaxy Tab S9 nimmt 4K-Videos auf und unterstützt microSD-Karten bis zu 1TB zur Speichererweiterung. V30-Geschwindigkeit ist für die reibungslose 4K-Videoaufnahme und -wiedergabe erforderlich. Die A2-App-Performance sorgt für schnelle Betriebssystem- und App-Reaktionsfähigkeit beim Ausführen von Anwendungen von der Karte.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kann ich Apps auf der SD-Karte des Tab S9 installieren?",
+        "a": "<b>Ja, Android erlaubt es, einige Apps auf die SD-Karte zu verschieben</b>, um internen Speicher freizugeben. Die beste Leistung erzielen Apps jedoch, wenn sie auf dem schnelleren internen Speicher des Tablets installiert sind. Die SD-Karte eignet sich ideal für Medien wie Filme, Fotos und Musik."
+      }
+    ],
+    "relatedDevices": [
+      "amazon-fire-max-11",
+      "amazon-fire-hd-10"
+    ],
+    "notes": "One of the few premium modern devices to retain the SD card slot. Catches a large consumer audience.",
+    "imageUrl": "/img/devices/computing/samsung-galaxy-tab-s9.webp"
+  },
+  {
+    "id": "amazon-fire-hd-10",
+    "name": "Amazon Fire HD 10",
+    "category": "computing-and-tablets",
+    "slug": "amazon-fire-hd-10",
+    "searchTerms": [
+      "fire hd 10 sd karte",
+      "amazon fire hd 10 microsd",
+      "fire tablet sd karte"
+    ],
+    "sdCard": {
+      "type": "microSDXC",
+      "minSpeed": "Class 10 / U1 (V30 für Video empfohlen)",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Das Fire HD 10 unterstützt eine microSD-Erweiterung bis zu 1TB zur Speicherung von Apps, Videos, Büchern und Fotos. Für die grundlegende Nutzung reichen Class-10-Karten aus; für ein reibungsloses Herunterladen und Abspielen von HD-Videoinhalten wird jedoch eine V30-Karte einer renommierten Marke empfohlen.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kann ich Apps auf die SD-Karte des Fire HD 10 verschieben?",
+        "a": "<b>Ja, du kannst kompatible Apps über Einstellungen > Speicher auf die microSD-Karte verschieben</b>, um internen Speicherplatz freizugeben. Einige Amazon-Apps und Systemdateien müssen jedoch auf dem internen Speicher verbleiben."
+      },
+      {
+        "q": "Was ist die beste Kapazität für ein Fire HD 10?",
+        "a": "<b>128GB bis 256GB sind für die meisten Nutzer der Sweet Spot.</b> Das bietet reichlich Platz für Offline-Videos, Musik, Bücher und Fotos, ohne die Bank zu sprengen. Vielnutzer, die viele Videoinhalte herunterladen, sollten sich für 512GB entscheiden."
+      }
+    ],
+    "relatedDevices": [
+      "amazon-fire-max-11",
+      "samsung-galaxy-tab-s9"
+    ],
+    "notes": "One of Amazon's best-selling tablets. Official Amazon specs confirm microSD expansion up to 1TB. Budget-friendly option with huge search volume for SD card recommendations."
+  },
+  {
+    "id": "amazon-fire-max-11",
+    "name": "Amazon Fire Max 11",
+    "category": "computing-and-tablets",
+    "slug": "amazon-fire-max-11",
+    "searchTerms": [
+      "fire max 11 sd karte",
+      "amazon fire max 11 microsd",
+      "fire max speicher"
+    ],
+    "sdCard": {
+      "type": "microSDXC",
+      "minSpeed": "Class 10 / U1 (V30 für Video empfohlen)",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Das Fire Max 11 ist Amazons Premium-Tablet mit einem großen 11-Zoll-Display. Es unterstützt eine microSD-Erweiterung bis zu 1TB, was es ideal für die Speicherung großer Medienbibliotheken macht. Eine V30-Karte sorgt für eine reibungslose Wiedergabe hochwertiger Videoinhalte.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ist das Fire Max 11 besser für SD-Karten als das Fire HD 10?",
+        "a": "<b>Beide Tablets bieten identische microSD-Unterstützung (bis zu 1TB)</b>. Das Max 11 hat einen größeren Bildschirm und insgesamt bessere Spezifikationen, aber die SD-Karten-Funktionalität ist dieselbe. Entscheide dich basierend auf Bildschirmgröße und Leistungsanforderungen, nicht auf Speicher."
+      }
+    ],
+    "relatedDevices": [
+      "amazon-fire-hd-10",
+      "samsung-galaxy-tab-s9"
+    ],
+    "notes": "Amazon's premium tablet model. Same 1TB microSD support as Fire HD 10, confirmed by official Amazon product specifications."
+  },
+  {
+    "id": "lenovo-tab-m10-plus-gen3",
+    "name": "Lenovo Tab M10 Plus (3rd Gen)",
+    "category": "computing-and-tablets",
+    "slug": "lenovo-tab-m10-plus",
+    "searchTerms": [
+      "lenovo tab m10 plus sd karte",
+      "lenovo tablet microsd",
+      "lenovo m10 speicher"
+    ],
+    "sdCard": {
+      "type": "microSDXC",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Eine erschwingliche Möglichkeit, den Speicher für Filme, Musik und Fotos zu erweitern. Eine Class-10/U1-Karte eignet sich für die meisten Anwendungen einschließlich Videowiedergabe. Die A1-App-Performance sorgt für ein reaktionsschnelles Durchsuchen von Dateien beim Ausführen von Apps von der Karte.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kann ich die microSD-Karte am Lenovo Tab M10 als internen Speicher einrichten?",
+        "a": "<b>Ja, Androids 'Adoptable Storage'-Funktion ermöglicht es, die microSD-Karte so zu formatieren, dass sie als Erweiterung des internen Speichers fungiert.</b> Dies verschlüsselt die Karte jedoch mit dem Gerät, und sie kann langsamer laufen als der integrierte Speicher. Für beste Ergebnisse solltest du die Karte als portablen Speicher für Mediendateien verwenden."
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "steam-deck",
+      "anbernic-rg35xx-plus"
+    ],
+    "notes": "A very popular mid-range Android tablet. Official support for up to 1TB microSD cards.",
+    "imageUrl": "/img/devices/computing/lenovo-tab-m10-plus.webp"
+  },
+  {
+    "id": "samsung-galaxy-tab-s10-fe",
+    "name": "Samsung Galaxy Tab S10 FE",
+    "category": "computing-and-tablets",
+    "slug": "samsung-galaxy-tab-s10-fe",
+    "searchTerms": [
+      "samsung galaxy tab s10 fe",
+      "galaxy tab s10 fe sd karte",
+      "tab s10 fe microsd",
+      "galaxy tab s10 fe speicher",
+      "10,9 zoll tablet microsd"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2 (empfohlen)",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Samsungs Mittelklasse-Tablet mit 10,9-Zoll-IPS-LCD, 90-Hz-Display, Exynos 1580 und IP68-Wasserschutz. Unterstützt Adoptable Storage, wodurch microSD-Karten als interner Speicher für Apps und Medien fungieren können. Die A2-App-Performance-Klassifizierung ist entscheidend für eine reibungslose App-Reaktionsfähigkeit beim Betrieb vom erweiterten Speicher. V30 sorgt für eine stabile 4K-Videowiedergabe.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kann ich Adoptable Storage auf dem Tab S10 FE verwenden?",
+        "a": "<b>Ja, Androids Adoptable-Storage-Funktion erlaubt es, die microSD-Karte als internen Speicher zu formatieren.</b> Dadurch wird die Kapazität der Karte nahtlos mit dem integrierten Speicher deines Tablets zusammengeführt, um die App-Installation zu vereinfachen. Gehe zu Einstellungen > Speicher > Als internen Speicher formatieren, um dies zu aktivieren."
+      },
+      {
+        "q": "Welche Kapazität sollte ich wählen?",
+        "a": "<b>512GB ist ideal für die meisten Nutzer</b> und bietet reichlich Platz für Apps, Medien und Dokumente. Wenn du große Medienbibliotheken speichern oder zahlreiche große Spiele installieren möchtest, wird 1TB empfohlen. Das FE unterstützt bis zu 2TB, allerdings sind so große Karten teuer."
+      },
+      {
+        "q": "Ist A2 wirklich notwendig?",
+        "a": "<b>Ja, A2 wird für das Tab S10 FE dringend empfohlen</b>, besonders bei Verwendung von Adoptable Storage. Die A2-Klassifizierung sorgt für schnellere App-Starts, flüssigeres Multitasking und eine insgesamt bessere Reaktionsfähigkeit, wenn Apps auf der microSD-Karte installiert sind."
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-tab-s10-fe-plus",
+      "samsung-galaxy-tab-s9",
+      "amazon-fire-max-11"
+    ],
+    "notes": "Released April 2025. 'Fan Edition' balances premium features (S-Pen, IP68) with affordability. High search volume for budget productivity tablet users.",
+    "imageUrl": "/img/devices/computing/samsung-galaxy-tab-s10-fe.webp"
+  },
+  {
+    "id": "samsung-galaxy-tab-s10-fe-plus",
+    "name": "Samsung Galaxy Tab S10 FE+",
+    "category": "computing-and-tablets",
+    "slug": "samsung-galaxy-tab-s10-fe-plus",
+    "searchTerms": [
+      "samsung galaxy tab s10 fe plus",
+      "tab s10 fe+ sd karte",
+      "galaxy tab s10 fe plus microsd",
+      "13,1 zoll tablet speicher",
+      "tab s10 fe plus erweiterbarer speicher"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2 (empfohlen)",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Größere Variante des S10 FE mit 13,1-Zoll-IPS-LCD, Exynos 1580 und 10090-mAh-Akku. Unterstützt Adoptable Storage für nahtlose Erweiterung des internen Speichers. Der größere Bildschirm und Akku machen es ideal für Medienkonsum und Produktivität. Die A2-App-Performance sorgt für reaktionsschnelle App-Starts und Multitasking. V30 verarbeitet 4K-Video und Streaming reibungslos.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Was ist der Unterschied zwischen Tab S10 FE und FE+?",
+        "a": "<b>Das FE+ verfügt über einen größeren 13,1-Zoll-Bildschirm, einen größeren 10090-mAh-Akku und eine etwas optimierte Leistung.</b> Beide teilen die gleiche microSD-Unterstützung (bis zu 2TB) und A2-Kompatibilität. Wähle basierend auf Bildschirmgrößen-Präferenz und Portabilitätsbedürfnissen."
+      },
+      {
+        "q": "Sind 512GB genug?",
+        "a": "<b>512GB ist ein guter Ausgangspunkt</b>, besonders bei Verwendung von Adoptable Storage zur Zusammenführung mit dem internen Speicher. Für umfangreiche Medienbibliotheken oder große App-Sammlungen wird 1TB empfohlen."
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-tab-s10-fe",
+      "samsung-galaxy-tab-s10-ultra",
+      "amazon-fire-max-11"
+    ],
+    "notes": "Premium 'Fan Edition' variant with larger screen (13.1\"). Ideal for media consumption and productivity. Supports up to 2TB microSD expansion.",
+    "imageUrl": "/img/devices/computing/samsung-galaxy-tab-s10-fe-plus.webp"
+  },
+  {
+    "id": "samsung-galaxy-tab-s10-ultra",
+    "name": "Samsung Galaxy Tab S10 Ultra",
+    "category": "computing-and-tablets",
+    "slug": "samsung-galaxy-tab-s10-ultra",
+    "searchTerms": [
+      "samsung galaxy tab s10 ultra",
+      "tab s10 ultra sd karte",
+      "galaxy tab s10 ultra microsd",
+      "14,6 zoll tablet speicher",
+      "tab s10 ultra amoled"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2 (empfohlen)",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "1,5TB - 2TB"
+    },
+    "whySpecs": "Premium-Flaggschiff-Tablet mit 14,6-Zoll-AMOLED-Display (120Hz), Snapdragon Dimensity 9300+ und WiFi 7. Der riesige Bildschirm und der Spitzenprozessor erfordern schnellen, zuverlässigen Speicher für 4K-Video, Gaming und Produktivität. Die A2-App-Performance sorgt für reaktionsschnelles Multitasking und App-Starts. V30 sorgt für flüssiges 4K-Streaming und Gameplay von der microSD.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Was ist der Vorteil des Tab S10 Ultra?",
+        "a": "<b>Das Ultra verfügt über ein 14,6-Zoll-AMOLED-Display, einen Dimensity-9300+-Prozessor und WiFi-7-Konnektivität.</b> Diese Premium-Spezifikationen rechtfertigen höhere microSD-Investitionen für anspruchsvolle 4K-Medien, Gaming und kreative Anwendungen."
+      },
+      {
+        "q": "Sollte ich V60- statt V30-Karten verwenden?",
+        "a": "<b>V30 ist für die meisten Anwendungen ausreichend</b>, aber V60-Karten bieten zusätzlichen Spielraum für kontinuierliches 4K-Video-Streaming und Gaming. Falls das Budget es zulässt, ist V60 ein lohnendes Upgrade für die Zukunftssicherheit."
+      },
+      {
+        "q": "Welche Kapazität ist ideal?",
+        "a": "<b>1TB ist der empfohlene Ausgangspunkt</b> für die Premium-Positionierung des Ultra. Mit einem 14,6-Zoll-Display speichern Nutzer typischerweise größere Medienbibliotheken und 4K-Videosammlungen."
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-tab-s10-fe",
+      "samsung-galaxy-tab-s10-fe-plus",
+      "amazon-fire-max-11"
+    ],
+    "notes": "Premium flagship (2026). 14.6\" AMOLED + Dimensity 9300+ represents the top of Samsung's tablet lineup. A2 + U3 + V30 (or V60) recommended for optimal performance with premium content.",
+    "imageUrl": "/img/devices/computing/samsung-galaxy-tab-s10-ultra.webp"
+  },
+  {
+    "id": "macbook-air",
+    "name": "MacBook Air",
+    "category": "computing-and-tablets",
+    "slug": "macbook-air",
+    "searchTerms": [
+      "macbook air",
+      "macbook air m2",
+      "macbook air m3"
+    ],
+    "sdCard": {
+      "type": "External via USB-C Reader",
+      "minSpeed": "UHS-I empfohlen",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ]
+    },
+    "whySpecs": "Das MacBook Air verfügt über keinen SD-Kartensteckplatz. USB-C-Lesegeräte erreichen bei aktuellen Modellen das volle Geschwindigkeitspotenzial.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "macbook-pro",
+      "ipad-pro"
+    ],
+    "imageUrl": "/img/devices/computing/macbook-air.webp"
+  },
+  {
+    "id": "macbook-pro",
+    "name": "MacBook Pro",
+    "category": "computing-and-tablets",
+    "slug": "macbook-pro",
+    "searchTerms": [
+      "macbook pro",
+      "macbook pro m3",
+      "macbook pro m4"
+    ],
+    "sdCard": {
+      "type": "External via USB-C/Thunderbolt Reader",
+      "minSpeed": "UHS-I bis UHS-II",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ]
+    },
+    "whySpecs": "Das MacBook Pro nutzt Thunderbolt/USB-C. Für Video-Workflows werden Hochgeschwindigkeits-Lesegeräte empfohlen.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "macbook-air",
+      "canon-eos-r5"
+    ],
+    "imageUrl": "/img/devices/computing/macbook-pro.webp"
+  },
+  {
+    "id": "ipad-air",
+    "name": "iPad Air",
+    "category": "computing-and-tablets",
+    "slug": "ipad-air",
+    "searchTerms": [
+      "ipad air",
+      "ipad air 5",
+      "ipad air 6"
+    ],
+    "sdCard": {
+      "type": "External via USB-C Reader",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ]
+    },
+    "whySpecs": "iPad Air M1 und neuer verwenden USB-C. Lightning-Modelle benötigen Lightning-Lesegeräte.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "ipad-pro",
+      "ipad-air-3"
+    ],
+    "imageUrl": "/img/devices/computing/ipad-air.webp"
+  },
+  {
+    "id": "ipad-air-3",
+    "name": "iPad Air 3rd Generation",
+    "category": "computing-and-tablets",
+    "slug": "ipad-air-3",
+    "searchTerms": [
+      "ipad air 3",
+      "ipad air 3. generation"
+    ],
+    "sdCard": {
+      "type": "External via Lightning Reader",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "Das iPad Air 3 verwendet einen Lightning-Anschluss (älteres Modell).",
+    "recommendedBrands": [
+      {
+        "id": "lexar-lightning-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "ipad-air",
+      "ipad-pro"
+    ],
+    "imageUrl": "/img/devices/computing/ipad-air-3.webp"
+  },
+  {
+    "id": "ipad-pro",
+    "name": "iPad Pro",
+    "category": "computing-and-tablets",
+    "slug": "ipad-pro",
+    "searchTerms": [
+      "ipad pro",
+      "ipad pro 11",
+      "ipad pro 12.9"
+    ],
+    "sdCard": {
+      "type": "External via USB-C Reader",
+      "minSpeed": "UHS-I bis UHS-II",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ]
+    },
+    "whySpecs": "iPad Pro verwendet USB-C oder Thunderbolt. Unterstützt schnelle externe Lesegeräte.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-uhs2-usbc"
+      }
+    ],
+    "relatedDevices": [
+      "ipad-air",
+      "macbook-pro"
+    ],
+    "imageUrl": "/img/devices/computing/ipad-pro.webp"
+  },
+  {
+    "id": "ipad-9th-gen",
+    "name": "iPad 9th Generation",
+    "category": "computing-and-tablets",
+    "slug": "ipad-9th-gen",
+    "searchTerms": [
+      "ipad 9. generation",
+      "ipad 9"
+    ],
+    "sdCard": {
+      "type": "External via Lightning Reader",
+      "minSpeed": "UHS-I",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ]
+    },
+    "whySpecs": "Das iPad der 9. Generation verwendet einen Lightning-Anschluss.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-lightning-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "ipad-air",
+      "iphone-13"
+    ],
+    "imageUrl": "/img/devices/computing/ipad-9th-gen.webp"
+  },
+  {
+    "id": "hp-chromebook-14",
+    "name": "HP Chromebook 14",
+    "category": "computing-and-tablets",
+    "slug": "hp-chromebook-14",
+    "searchTerms": [
+      "hp chromebook 14 sd karte",
+      "hp chromebook microsd",
+      "chromebook sd kartensteckplatz"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "Nicht angegeben",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "Kein offizielles Limit (512GB+ funktioniert häufig)"
+    },
+    "whySpecs": "HP-Chromebook-14-Modelle verfügen über einen microSD-Kartenleser zur Speichererweiterung. Während Chromebooks in erster Linie Cloud-Speicher nutzen, ist eine microSD-Karte nützlich für Offline-Dateien, Medienbibliotheken und Linux-Apps. Class-10/U1-Karten bieten reibungslosen Dateizugriff und App-Performance.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kann ich Apps auf der SD-Karte eines Chromebooks installieren?",
+        "a": "<b>ChromeOS erlaubt es nicht, Android-Apps direkt auf SD-Karten zu installieren.</b> Du kannst die SD-Karte jedoch zum Speichern von Dateien, Medien und als Speicher für Linux-Anwendungen verwenden, wenn du Linux (Beta) aktiviert hast."
+      },
+      {
+        "q": "Was ist die beste SD-Kartenkapazität für Studierende?",
+        "a": "<b>64GB bis 128GB sind ideal für die meisten Studierenden.</b> Das bietet reichlich Platz für offline verfügbare Google-Drive-Dateien, heruntergeladene Videos zur Offline-Ansicht und Dokumentenspeicherung, ohne übermäßige Kosten."
+      }
+    ],
+    "relatedDevices": [
+      "amazon-fire-hd-10",
+      "samsung-galaxy-tab-s9"
+    ],
+    "notes": "HP Chromebook 14 represents a popular category of budget Chromebooks with microSD slots. HP official spec sheets confirm microSD reader on 2023+ models. High search volume from students and educators.",
+    "imageUrl": "/img/devices/computing/hp-chromebook-14.webp"
+  }
+]

@@ -1,0 +1,269 @@
+[
+  {
+    "id": "tesla-model-3-sentry",
+    "name": "Tesla Model 3 (Mode Sentinelle)",
+    "category": "dash-cams",
+    "slug": "tesla-model-3-sentry",
+    "searchTerms": [
+      "tesla mode sentinelle usb",
+      "tesla dashcam carte mémoire",
+      "tesla model 3 carte mémoire",
+      "tesla model 3 carte sd"
+    ],
+    "imageUrl": "/img/devices/tesla-model-3.jpg",
+    "sdCard": {
+      "type": "microSD (nécessite un lecteur USB)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "40 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Le mode Sentinelle écrase en continu les anciennes images. Les cartes standard tombent en panne rapidement. Vous avez besoin de cartes haute endurance certifiées pour 10 000+ cycles d'écriture/effacement.",
+    "recommendedBrands": [
+      {
+        "id": "speederlash-64gb-2pack"
+      },
+      {
+        "id": "sandisk-max-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Pourquoi les cartes de dashcam tombent-elles en panne si vite ?",
+        "a": "<b>Les dashcams écrasent continuellement les données</b>. Les cartes standard sont optimisées pour des écritures intermittentes. <b>Les cartes haute endurance sont certifiées pour 10 000+ cycles d'écriture/effacement</b>, les rendant 10 à 20 fois plus durables pour cet usage."
+      },
+      {
+        "q": "Ai-je besoin d'une carte spéciale pour le mode Sentinelle de Tesla ?",
+        "a": "Oui. Le mode Sentinelle enregistre 24h/24 lorsque le véhicule est garé. <b>Les cartes standard tombent généralement en panne en quelques semaines</b>. Utilisez uniquement des <b>cartes haute endurance (TBW 10 000+) ou de type surveillance</b>."
+      },
+      {
+        "q": "Quelle est la meilleure capacité pour le mode Sentinelle ?",
+        "a": "<b>256GB est idéal</b>. Le mode Sentinelle de Tesla enregistre par clips. 256GB permet d'stocker environ 5 à 7 jours d'enregistrement continu selon la qualité. Des capacités plus grandes réduisent la fréquence de gestion de la carte."
+      }
+    ],
+    "relatedDevices": [
+      "tesla-model-y",
+      "tesla-model-s"
+    ],
+    "notes": "Premium EV. Requires High Endurance cards for reliable dash cam operation."
+  },
+  {
+    "id": "generic-4k-dashcam",
+    "name": "Dashcam 4K générique",
+    "category": "dash-cams",
+    "slug": "best-sd-card-4k-dash-cam",
+    "searchTerms": [
+      "carte sd dashcam 4k",
+      "carte mémoire rexing dashcam",
+      "carte sd viofo",
+      "carte garmin dashcam",
+      "carte mémoire dashcam",
+      "stockage caméra dashcam"
+    ],
+    "imageUrl": "/img/devices/dashcam-generic.jpg",
+    "sdCard": {
+      "type": "microSD (parfois SD complète)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "Les dashcams 4K écrivent à un débit d'environ 50-100 Mbps selon la résolution et le codec. V30 garantit une vitesse d'écriture soutenue de 30MB/s, évitant les images perdues. Les cartes haute endurance prolongent la durée de vie de quelques mois à plusieurs années.",
+    "recommendedBrands": [
+      {
+        "id": "speederlash-64gb-2pack"
+      },
+      {
+        "id": "digiera-64gb-ct100"
+      },
+      {
+        "id": "sandisk-max-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quelle est la différence entre les cartes microSD pour dashcam et les cartes classiques ?",
+        "a": "<b>Les cartes pour dashcam sont certifiées haute endurance (10 000-40 000 TBW)</b>. Les cartes classiques sont certifiées pour 500-1 000 TBW. Les dashcams enregistrent en boucle continue, provoquant une usure 10 à 20 fois plus importante par an."
+      },
+      {
+        "q": "Puis-je utiliser une carte rapide classique ?",
+        "a": "Non recommandé sur le long terme. Les cartes UHS-II rapides (comme l'Extreme Pro) fonctionneront au départ mais <b>tomberont en panne en 2 à 4 mois d'enregistrement continu</b>. Les cartes haute endurance durent 1 à 2+ ans."
+      },
+      {
+        "q": "64GB ou 128GB pour la dashcam ?",
+        "a": "<b>64GB stocke 2 à 4 heures</b> (adapté au trajet quotidien). <b>128GB stocke 4 à 8 heures</b> (couvre le stationnement de nuit + le trajet). Pour le mode Sentinelle ou l'enregistrement 24h/24, utilisez 256GB+."
+      }
+    ],
+    "relatedDevices": [
+      "tesla-model-3-sentry"
+    ],
+    "notes": "Universal dash cam recommendation. Works with Rexing, Viofo, Garmin, VANTRUE, and most aftermarket 4K cameras."
+  },
+  {
+    "id": "viofo-a229-pro",
+    "name": "Viofo A229 Pro Dual Dashcam",
+    "category": "dash-cams",
+    "slug": "viofo-a229-pro",
+    "searchTerms": [
+      "viofo a229 pro carte mémoire",
+      "viofo a229 carte sd",
+      "carte sd dashcam double",
+      "viofo dashcam"
+    ],
+    "imageUrl": "/img/devices/viofo-a229-pro.jpg",
+    "sdCard": {
+      "type": "microSD (Dual Dash = deux cartes)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "La Viofo A229 Pro est une dashcam 4K à double canal (avant + habitacle). Chaque canal écrit en continu à environ 50 Mbps. Vous avez besoin d'<b>au moins DEUX cartes (une par canal)</b>. La haute endurance est essentielle.",
+    "recommendedBrands": [
+      {
+        "id": "speederlash-64gb-2pack"
+      },
+      {
+        "id": "sandisk-max-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ai-je besoin de deux cartes pour l'A229 Pro ?",
+        "a": "<b>Oui, absolument</b>. L'A229 Pro a deux emplacements de carte SD (un pour l'avant, un pour l'habitacle). Vous avez besoin de <b>deux cartes haute endurance distinctes</b>."
+      },
+      {
+        "q": "Quelle capacité choisir ?",
+        "a": "<b>128GB minimum par carte</b> pour un stockage équilibré. 256GB offre 6 à 8 heures par carte (avant = 6-8 heures, habitacle = 6-8 heures, décalées). Deux cartes de 256GB = couverture complète."
+      },
+      {
+        "q": "Puis-je utiliser des cartes classiques ?",
+        "a": "Non. L'A229 Pro écrit simultanément sur les deux cartes à un débit élevé. Les cartes classiques tombent en panne en quelques semaines. <b>Utilisez uniquement des cartes V30 haute endurance</b>."
+      }
+    ],
+    "relatedDevices": [
+      "generic-4k-dashcam",
+      "viofo-t130-pro"
+    ],
+    "notes": "Professional dual-channel dash cam. Requires dual High Endurance cards for reliable operation."
+  },
+  {
+    "id": "viofo-t130-pro",
+    "name": "Viofo T130 Pro",
+    "category": "dash-cams",
+    "slug": "viofo-t130-pro",
+    "searchTerms": [
+      "viofo t130 pro carte sd",
+      "viofo t130 pro carte mémoire",
+      "viofo t130 pro microsd",
+      "meilleure carte sd pour viofo t130 pro"
+    ],
+    "imageUrl": "/img/devices/dashcam-generic.jpg",
+    "sdCard": {
+      "type": "microSD UHS-I (U3)",
+      "minSpeed": "U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "Viofo limite spécifiquement la T130 Pro aux cartes microSD certifiées UHS-I U3, dédiées dashcam/haute endurance, et non aux cartes grand public classiques. La caméra enregistre en boucle continue, écrasant les anciennes images selon un cycle qui use les cartes standard en quelques semaines dans un environnement de pare-brise chaud. Viofo limite la capacité prise en charge à 256GB, 128GB étant présentée comme la taille préférable et plus fiable.",
+    "recommendedBrands": [
+      {
+        "id": "samsung-pro-endurance"
+      },
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "topesel-high-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je utiliser une carte microSD rapide classique dans la T130 Pro ?",
+        "a": "<b>Non — les recommandations de Viofo limitent la T130 Pro aux cartes certifiées U3, dédiées dashcam/haute endurance.</b> Les cartes grand public standard ne sont pas conçues pour l'enregistrement en boucle continue et tendent à tomber en panne en quelques semaines d'utilisation en dashcam, surtout dans des conditions chaudes sur le pare-brise."
+      },
+      {
+        "q": "Quelle est la taille maximale de carte pour la T130 Pro ?",
+        "a": "<b>256GB est la capacité maximale prise en charge</b>, <b>128GB étant présentée comme préférable</b> pour la fiabilité. Plus grand n'est pas automatiquement mieux ici — les recommandations de Viofo privilégient une carte d'endurance correctement certifiée plutôt qu'une capacité maximale."
+      },
+      {
+        "q": "Pourquoi les cartes de dashcam doivent-elles être 'haute endurance' ?",
+        "a": "<b>La T130 Pro écrase en continu les anciennes images en boucle</b>, ce qui use les cartes microSD grand public standard bien plus vite qu'un usage photo/vidéo normal. Les cartes haute endurance sont conçues pour ce cycle d'écriture/effacement et durent des années au lieu de semaines."
+      }
+    ],
+    "relatedDevices": [
+      "viofo-a229-pro",
+      "nextbase-iq-4k",
+      "generic-4k-dashcam"
+    ],
+    "notes": "Restrict affiliate output strictly to High-Endurance/U3 cards rated for continuous overwrite loops. Explicitly warn against standard consumer cards — heat + loop-recording wear kills them early in hot windshields. Per Viofo's own guidance, max 256GB, 128GB preferable."
+  },
+  {
+    "id": "nextbase-iq-4k",
+    "name": "Nextbase iQ 4K",
+    "category": "dash-cams",
+    "slug": "nextbase-iq-4k",
+    "searchTerms": [
+      "nextbase iq 4k carte sd",
+      "nextbase iq carte mémoire",
+      "nextbase iq 4k microsd",
+      "meilleure carte sd pour nextbase iq"
+    ],
+    "imageUrl": "/img/devices/dashcam-generic.jpg",
+    "sdCard": {
+      "type": "microSD UHS-I (U3)",
+      "minSpeed": "U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "La Nextbase iQ repose sur un enregistrement en boucle continue avec des fonctionnalités cloud/IA supplémentaires, ce qui pousse la caméra vers un débit 4K plus élevé qu'une dashcam classique. Les recommandations de Nextbase préconisent des cartes certifiées U3 compatibles dashcam, citant spécifiquement les cartes de marque Nextbase ou SanDisk High Endurance (U3) — un reformatage périodique est recommandé pour gérer l'usure due à la boucle d'écrasement continue.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      },
+      {
+        "id": "topesel-high-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quelle carte SD Nextbase recommande-t-elle pour la iQ 4K ?",
+        "a": "<b>Les recommandations de Nextbase pointent vers des cartes certifiées U3 compatibles dashcam</b>, citant spécifiquement les cartes de marque Nextbase ou SanDisk High Endurance (U3) comme options privilégiées. Les cartes grand public classiques ne sont pas conçues pour l'enregistrement en boucle continue de la iQ."
+      },
+      {
+        "q": "Quelle capacité choisir pour les fonctionnalités cloud/IA de la iQ 4K ?",
+        "a": "<b>256GB à 512GB sont recommandés.</b> Les fonctionnalités cloud/IA de la iQ nécessitent une capture 4K à débit plus élevé qu'une dashcam classique, d'où une recommandation de capacité plus importante ici."
+      },
+      {
+        "q": "Faut-il entretenir la carte au fil du temps ?",
+        "a": "<b>Oui — Nextbase recommande de reformater périodiquement la carte.</b> L'enregistrement en boucle continue use même les cartes haute endurance avec le temps, et un reformatage périodique aide à maintenir des performances d'écriture fiables."
+      }
+    ],
+    "relatedDevices": [
+      "viofo-t130-pro",
+      "viofo-a229-pro",
+      "generic-4k-dashcam"
+    ],
+    "notes": "Same High-Endurance-only framing as T130 Pro. Nextbase's cloud/AI features push higher bitrate 4K, so capacity guidance skews larger (256GB+) alongside the endurance requirement. No authoritative Nextbase source found stating a specific write-class floor (e.g. V30) for this model — copy is tied to U3 + dashcam/high-endurance rather than asserting V30."
+  }
+]

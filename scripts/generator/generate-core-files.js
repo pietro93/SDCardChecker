@@ -106,6 +106,26 @@ function generateSitemap(allDevices, allReaders, distPath, locale = "en") {
 }
 
 /**
+ * Generate a sitemapindex at the site root listing every enabled locale's sitemap.xml.
+ * A single index is what Google Search Console / Bing Webmaster Tools expect you to submit
+ * (one URL instead of one per locale), while robots.txt keeps listing the individual
+ * sitemaps too since some crawlers only read robots.txt and never fetch the index itself.
+ */
+function generateSitemapIndex(distPath) {
+  const baseUrl = "https://sdcardchecker.com";
+  const today = new Date().toISOString().split("T")[0];
+
+  const entries = Object.entries(locales)
+    .filter(([, cfg]) => cfg.enabled)
+    .map(([, cfg]) => `  <sitemap>\n    <loc>${baseUrl}${cfg.dir ? "/" + cfg.dir : ""}/sitemap.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>`)
+    .join("\n");
+
+  const sitemapIndexXML = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries}\n</sitemapindex>`;
+  writeFile(path.join(distPath, "sitemap-index.xml"), sitemapIndexXML);
+  console.log(`  ✓ sitemap index: ${Object.values(locales).filter((cfg) => cfg.enabled).length} locale sitemaps`);
+}
+
+/**
  * Generate robots.txt (single file at the site root - crawlers only ever fetch /robots.txt,
  * so a per-locale copy under /ja/robots.txt etc. is never actually requested)
  */
@@ -132,6 +152,9 @@ User-agent: AhrefsBot
 Disallow: /
 User-agent: SemrushBot
 Disallow: /
+
+# Sitemap index (submit this one URL to Search Console / Webmaster Tools)
+Sitemap: https://sdcardchecker.com/sitemap-index.xml
 
 # Localization Sitemaps
 ${sitemapLines}
@@ -305,4 +328,4 @@ async function generateCoreFiles(allDevices, allReaders, distPath, locale = "en"
   console.log(`  ✓ ${locale} core files generated`);
 }
 
-module.exports = { generateCoreFiles, generateHomepage, generateSitemap, generateRobots, generateLegalPages, generate404Page };
+module.exports = { generateCoreFiles, generateHomepage, generateSitemap, generateSitemapIndex, generateRobots, generateLegalPages, generate404Page };

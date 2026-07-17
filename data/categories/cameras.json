@@ -2598,35 +2598,6 @@
     "imageUrl": "/img/devices/cameras/sony-a7r.webp"
   },
   {
-    "id": "canon-rebel-t7",
-    "name": "Canon EOS Rebel T7",
-    "category": "Cameras",
-    "slug": "canon-rebel-t7",
-    "searchTerms": [
-      "canon rebel t7",
-      "eos rebel t7"
-    ],
-    "sdCard": {
-      "type": "SD UHS-I",
-      "minSpeed": "Class 10",
-      "minWriteSpeed": "10 MB/s",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ]
-    },
-    "whySpecs": "Entry-level DSLR. Class 10 sufficient for 1080p video.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-ultra-microsd"
-      }
-    ],
-    "relatedDevices": [
-      "canon-eos-r5"
-    ],
-    "imageUrl": "/img/devices/cameras/canon-rebel-t7.webp"
-  },
-  {
     "id": "sony-a1",
     "name": "Sony A1",
     "category": "Cameras",
@@ -2655,36 +2626,6 @@
       "nikon-z9"
     ],
     "imageUrl": "/img/devices/cameras/sony-a1.webp"
-  },
-  {
-    "id": "nikon-d850",
-    "name": "Nikon D850",
-    "category": "Cameras",
-    "slug": "nikon-d850",
-    "searchTerms": [
-      "nikon d850",
-      "d850"
-    ],
-    "sdCard": {
-      "type": "SD UHS-II / XQD",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "recommendedCapacity": [
-        "128GB",
-        "256GB"
-      ]
-    },
-    "whySpecs": "Professional DSLR. Dual slots support both SD UHS-II and legacy XQD cards.",
-    "recommendedBrands": [
-      {
-        "id": "sony-mrw-g1"
-      }
-    ],
-    "relatedDevices": [
-      "nikon-z9",
-      "canon-eos-r5"
-    ],
-    "imageUrl": "/img/devices/cameras/nikon-d850.webp"
   },
   {
     "id": "sony-a1-ii",

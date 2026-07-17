@@ -1,0 +1,269 @@
+[
+  {
+    "id": "tesla-model-3-sentry",
+    "name": "Tesla Model 3 (Modalità Sentinella)",
+    "category": "dash-cams",
+    "slug": "tesla-model-3-sentry",
+    "searchTerms": [
+      "tesla modalità sentinella usb",
+      "tesla dashcam scheda di memoria",
+      "tesla model 3 scheda di memoria",
+      "tesla model 3 scheda sd"
+    ],
+    "imageUrl": "/img/devices/tesla-model-3.jpg",
+    "sdCard": {
+      "type": "microSD (richiede lettore USB)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "40 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "La modalità Sentinella sovrascrive continuamente i filmati precedenti. Le schede standard si guastano rapidamente. Sono necessarie schede ad alta resistenza con almeno 10.000 cicli di scrittura/cancellazione.",
+    "recommendedBrands": [
+      {
+        "id": "speederlash-64gb-2pack"
+      },
+      {
+        "id": "sandisk-max-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Perché le schede per dashcam si guastano così velocemente?",
+        "a": "<b>Le dashcam sovrascrivono continuamente i dati</b>. Le schede standard sono ottimizzate per scritture intermittenti. <b>Le schede ad alta resistenza sono certificate per almeno 10.000 cicli di scrittura/cancellazione</b>, risultando 10-20 volte più durevoli per questo utilizzo."
+      },
+      {
+        "q": "Serve una scheda speciale per la Modalità Sentinella di Tesla?",
+        "a": "Sì. La Modalità Sentinella registra 24 ore su 24 quando l'auto è parcheggiata. <b>Le schede standard si guastano tipicamente entro poche settimane</b>. Usa solo <b>schede ad alta resistenza (TBW 10.000+) o di classe sorveglianza</b>."
+      },
+      {
+        "q": "Qual è la capacità migliore per la Modalità Sentinella?",
+        "a": "<b>256GB è l'ideale</b>. La Modalità Sentinella di Tesla registra a clip. 256GB contengono circa 5-7 giorni di registrazione continua a seconda della qualità. Capacità maggiori riducono la frequenza di gestione della scheda."
+      }
+    ],
+    "relatedDevices": [
+      "tesla-model-y",
+      "tesla-model-s"
+    ],
+    "notes": "Premium EV. Requires High Endurance cards for reliable dash cam operation."
+  },
+  {
+    "id": "generic-4k-dashcam",
+    "name": "Dashcam 4K generica",
+    "category": "dash-cams",
+    "slug": "best-sd-card-4k-dash-cam",
+    "searchTerms": [
+      "scheda sd dashcam 4k",
+      "scheda di memoria rexing dashcam",
+      "scheda sd viofo",
+      "scheda garmin dashcam",
+      "scheda di memoria dashcam",
+      "memoria dashcam"
+    ],
+    "imageUrl": "/img/devices/dashcam-generic.jpg",
+    "sdCard": {
+      "type": "microSD (a volte SD completa)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "Le dashcam 4K scrivono a un bitrate di circa 50-100 Mbps a seconda di risoluzione e codec. V30 garantisce una velocità di scrittura sostenuta di 30MB/s, evitando frame persi. Le schede ad alta resistenza estendono la durata da mesi ad anni.",
+    "recommendedBrands": [
+      {
+        "id": "speederlash-64gb-2pack"
+      },
+      {
+        "id": "digiera-64gb-ct100"
+      },
+      {
+        "id": "sandisk-max-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Qual è la differenza tra schede microSD per dashcam e schede normali?",
+        "a": "<b>Le schede per dashcam sono certificate ad alta resistenza (10.000-40.000 TBW)</b>. Le schede normali sono certificate per 500-1.000 TBW. Le dashcam registrano in loop continuo, causando un'usura 10-20 volte maggiore all'anno."
+      },
+      {
+        "q": "Posso usare una scheda veloce normale?",
+        "a": "Non raccomandato a lungo termine. Le schede UHS-II veloci (come Extreme Pro) funzioneranno inizialmente ma <b>si guasteranno entro 2-4 mesi di registrazione continua</b>. Le schede ad alta resistenza durano 1-2+ anni."
+      },
+      {
+        "q": "64GB o 128GB per la dashcam?",
+        "a": "<b>64GB memorizzano 2-4 ore</b> (adatto per il tragitto quotidiano). <b>128GB memorizzano 4-8 ore</b> (copre parcheggio notturno + tragitto). Per la Modalità Sentinella o la registrazione 24/7, usa 256GB+."
+      }
+    ],
+    "relatedDevices": [
+      "tesla-model-3-sentry"
+    ],
+    "notes": "Universal dash cam recommendation. Works with Rexing, Viofo, Garmin, VANTRUE, and most aftermarket 4K cameras."
+  },
+  {
+    "id": "viofo-a229-pro",
+    "name": "Viofo A229 Pro Dual Dashcam",
+    "category": "dash-cams",
+    "slug": "viofo-a229-pro",
+    "searchTerms": [
+      "viofo a229 pro scheda di memoria",
+      "viofo a229 scheda sd",
+      "scheda sd dashcam doppia",
+      "viofo dashcam"
+    ],
+    "imageUrl": "/img/devices/viofo-a229-pro.jpg",
+    "sdCard": {
+      "type": "microSD (Dual Dash = due schede)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "La Viofo A229 Pro è una dashcam 4K a doppio canale (anteriore + abitacolo). Ogni canale scrive continuamente a circa 50 Mbps. Sono necessarie <b>almeno DUE schede (una per canale)</b>. L'alta resistenza è essenziale.",
+    "recommendedBrands": [
+      {
+        "id": "speederlash-64gb-2pack"
+      },
+      {
+        "id": "sandisk-max-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Servono due schede per la A229 Pro?",
+        "a": "<b>Sì, assolutamente</b>. La A229 Pro ha due slot per schede SD (uno per l'anteriore, uno per l'abitacolo). Servono <b>due schede ad alta resistenza separate</b>."
+      },
+      {
+        "q": "Quale capacità scegliere?",
+        "a": "<b>Almeno 128GB per scheda</b> per uno storage bilanciato. 256GB offrono 6-8 ore per scheda (anteriore = 6-8 ore, abitacolo = 6-8 ore, sfalsate). Doppia 256GB = copertura completa."
+      },
+      {
+        "q": "Posso usare schede normali?",
+        "a": "No. La A229 Pro scrive contemporaneamente su entrambe le schede a bitrate elevato. Le schede normali si guastano entro poche settimane. <b>Usa solo schede V30 ad alta resistenza</b>."
+      }
+    ],
+    "relatedDevices": [
+      "generic-4k-dashcam",
+      "viofo-t130-pro"
+    ],
+    "notes": "Professional dual-channel dash cam. Requires dual High Endurance cards for reliable operation."
+  },
+  {
+    "id": "viofo-t130-pro",
+    "name": "Viofo T130 Pro",
+    "category": "dash-cams",
+    "slug": "viofo-t130-pro",
+    "searchTerms": [
+      "viofo t130 pro scheda sd",
+      "viofo t130 pro scheda di memoria",
+      "viofo t130 pro microsd",
+      "migliore scheda sd per viofo t130 pro"
+    ],
+    "imageUrl": "/img/devices/dashcam-generic.jpg",
+    "sdCard": {
+      "type": "microSD UHS-I (U3)",
+      "minSpeed": "U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "Viofo limita specificamente la T130 Pro a schede microSD certificate UHS-I U3, dedicate a dashcam/alta resistenza, e non a schede consumer generiche. La videocamera registra in loop continuo, sovrascrivendo i filmati precedenti in un ciclo che usura le schede standard in poche settimane in un ambiente caldo come il parabrezza. Viofo limita la capacità supportata a 256GB, indicando 128GB come la dimensione preferibile e più affidabile.",
+    "recommendedBrands": [
+      {
+        "id": "samsung-pro-endurance"
+      },
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "topesel-high-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Posso usare una normale scheda microSD veloce nella T130 Pro?",
+        "a": "<b>No — le indicazioni ufficiali di Viofo limitano la T130 Pro a schede certificate U3, dedicate a dashcam/alta resistenza.</b> Le schede consumer standard non sono progettate per la registrazione in loop continuo e tendono a guastarsi entro poche settimane di utilizzo come dashcam, soprattutto in condizioni di calore sul parabrezza."
+      },
+      {
+        "q": "Qual è la dimensione massima della scheda per la T130 Pro?",
+        "a": "<b>256GB è la capacità massima supportata</b>, con <b>128GB indicata come preferibile</b> per l'affidabilità. Più grande non è automaticamente meglio in questo caso — le indicazioni di Viofo privilegiano una scheda ad alta resistenza correttamente certificata piuttosto che la massima capacità."
+      },
+      {
+        "q": "Perché le schede per dashcam devono essere 'ad alta resistenza'?",
+        "a": "<b>La T130 Pro sovrascrive continuamente i filmati precedenti in un loop</b>, il che usura le schede microSD consumer standard molto più velocemente di un normale utilizzo foto/video. Le schede ad alta resistenza sono progettate per questo ciclo di scrittura/cancellazione e durano anni invece di settimane."
+      }
+    ],
+    "relatedDevices": [
+      "viofo-a229-pro",
+      "nextbase-iq-4k",
+      "generic-4k-dashcam"
+    ],
+    "notes": "Restrict affiliate output strictly to High-Endurance/U3 cards rated for continuous overwrite loops. Explicitly warn against standard consumer cards — heat + loop-recording wear kills them early in hot windshields. Per Viofo's own guidance, max 256GB, 128GB preferable."
+  },
+  {
+    "id": "nextbase-iq-4k",
+    "name": "Nextbase iQ 4K",
+    "category": "dash-cams",
+    "slug": "nextbase-iq-4k",
+    "searchTerms": [
+      "nextbase iq 4k scheda sd",
+      "nextbase iq scheda di memoria",
+      "nextbase iq 4k microsd",
+      "migliore scheda sd per nextbase iq"
+    ],
+    "imageUrl": "/img/devices/dashcam-generic.jpg",
+    "sdCard": {
+      "type": "microSD UHS-I (U3)",
+      "minSpeed": "U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "La Nextbase iQ si basa sulla registrazione in loop continuo con funzionalità cloud/IA aggiuntive, il che spinge la videocamera verso un bitrate 4K più alto rispetto a una dashcam tipica. Le indicazioni di Nextbase raccomandano schede certificate U3 compatibili con dashcam, citando specificamente le schede a marchio Nextbase o SanDisk High Endurance (U3) — è consigliata una riformattazione periodica per gestire l'usura dovuta al loop di sovrascrittura continua.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      },
+      {
+        "id": "topesel-high-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quale scheda SD consiglia Nextbase per la iQ 4K?",
+        "a": "<b>Le indicazioni di Nextbase puntano verso schede certificate U3 compatibili con dashcam</b>, citando specificamente le schede a marchio Nextbase o SanDisk High Endurance (U3) come opzioni preferite. Le schede consumer generiche non sono progettate per la registrazione in loop continuo della iQ."
+      },
+      {
+        "q": "Quale capacità scegliere per le funzionalità cloud/IA della iQ 4K?",
+        "a": "<b>Si consigliano 256GB-512GB.</b> Le funzionalità cloud/IA della iQ richiedono una cattura 4K a bitrate più elevato rispetto a una dashcam tipica, quindi qui l'indicazione sulla capacità è più alta."
+      },
+      {
+        "q": "Bisogna fare manutenzione alla scheda nel tempo?",
+        "a": "<b>Sì — Nextbase consiglia di riformattare periodicamente la scheda.</b> La registrazione in loop continuo usura anche le schede ad alta resistenza nel tempo, e una riformattazione periodica aiuta a mantenere prestazioni di scrittura affidabili."
+      }
+    ],
+    "relatedDevices": [
+      "viofo-t130-pro",
+      "viofo-a229-pro",
+      "generic-4k-dashcam"
+    ],
+    "notes": "Same High-Endurance-only framing as T130 Pro. Nextbase's cloud/AI features push higher bitrate 4K, so capacity guidance skews larger (256GB+) alongside the endurance requirement. No authoritative Nextbase source found stating a specific write-class floor (e.g. V30) for this model — copy is tied to U3 + dashcam/high-endurance rather than asserting V30."
+  }
+]

@@ -27,18 +27,62 @@ const BRANDS_TABLE_LABELS = {
     en: { confirmed: "Verified", speedClass: "Speed Class", writeSpeed: "Write Speed", pros: "Pros", price: "Price", checkPrice: "Check Price" },
     ja: { confirmed: "動作確認", speedClass: "速度クラス", writeSpeed: "書き込み速度", pros: "長所", price: "価格", checkPrice: "価格確認" },
     de: { confirmed: "Bestätigt", speedClass: "Geschwindigkeitsklasse", writeSpeed: "Schreibgeschwindigkeit", pros: "Vorteile", price: "Preis", checkPrice: "Preis prüfen" },
+    fr: { confirmed: "Vérifié", speedClass: "Classe de vitesse", writeSpeed: "Vitesse d'écriture", pros: "Avantages", price: "Prix", checkPrice: "Voir le prix" },
+    it: { confirmed: "Verificato", speedClass: "Classe di velocità", writeSpeed: "Velocità di scrittura", pros: "Pro", price: "Prezzo", checkPrice: "Verifica prezzo" },
 };
 
 const ENRICHED_CARD_LABELS = {
     en: { whyCard: "Why This Card?", targetUser: "Target User", bestFor: "Best For", compareWith: "Comparison" },
     ja: { whyCard: "なぜこのカード？", targetUser: "ユーザー向け", bestFor: "おすすめ用途", compareWith: "比較情報" },
     de: { whyCard: "Warum diese Karte?", targetUser: "Zielgruppe", bestFor: "Am besten für", compareWith: "Vergleich" },
+    fr: { whyCard: "Pourquoi cette carte ?", targetUser: "Public cible", bestFor: "Idéal pour", compareWith: "Comparaison" },
+    it: { whyCard: "Perché questa scheda?", targetUser: "Utente target", bestFor: "Ideale per", compareWith: "Confronto" },
 };
 
 const REQUIREMENTS_BOX_LABELS = {
     en: { format: "Format", minSpeed: "Minimum Speed", appPerformance: "App Performance", maxCapacity: "Maximum Capacity", write: "write", requiredFor: "Required for OS/Apps", upTo: "Up to", official: "Official", requirements: "SD Card Requirements", why: "Why these requirements?" },
     ja: { format: "タイプ", minSpeed: "最低速度", appPerformance: "アプリパフォーマンス", maxCapacity: "最大容量", write: "書き込み", requiredFor: "OS/アプリに必須", upTo: "まで", official: "公式", requirements: "SD カード要件", why: "なぜこの要件?" },
     de: { format: "Format", minSpeed: "Mindestgeschwindigkeit", appPerformance: "App-Leistung", maxCapacity: "Maximale Kapazität", write: "Schreiben", requiredFor: "Erforderlich für OS/Apps", upTo: "Bis zu", official: "Offizielle", requirements: "SD-Karten-Anforderungen", why: "Warum diese Anforderungen?" },
+    fr: { format: "Format", minSpeed: "Vitesse minimale", appPerformance: "Performance des applications", maxCapacity: "Capacité maximale", write: "écriture", requiredFor: "Requis pour OS/Applications", upTo: "Jusqu'à", official: "Officielles", requirements: "Exigences de carte SD", why: "Pourquoi ces exigences ?" },
+    it: { format: "Formato", minSpeed: "Velocità minima", appPerformance: "Prestazioni app", maxCapacity: "Capacità massima", write: "scrittura", requiredFor: "Richiesto per OS/App", upTo: "Fino a", official: "Ufficiali", requirements: "Requisiti scheda SD", why: "Perché questi requisiti?" },
+};
+
+/**
+ * Locale-aware device-page title/meta strings. Locales without an entry fall back to "en".
+ * Add a locale key here once its title strings are translated - see Tier 1A finding in
+ * LOCALIZATION_TODO.md (hardcoded English titles broke SEO for non-EN locales, including ja).
+ */
+const DEVICE_TITLE_STRINGS = {
+    en: {
+        title: (name, sdType) => `Best SD Cards for ${name} | ${sdType} Requirements & Recommendations`,
+        ogTitle: (name, sdType) => `${name} ${sdType} Guide | Requirements & Best Cards`,
+        twitterTitle: (name) => `${name} SD Card Guide | Best Recommendations`,
+        schemaHeadline: (name, sdType) => `${name} ${sdType} Compatibility & Recommendations`,
+    },
+    ja: {
+        title: (name, sdType) => `${name}に最適なSDカード | ${sdType}の要件とおすすめカード`,
+        ogTitle: (name, sdType) => `${name} ${sdType}ガイド | 要件とおすすめカード`,
+        twitterTitle: (name) => `${name} SDカードガイド | おすすめカード`,
+        schemaHeadline: (name, sdType) => `${name} ${sdType}互換性とおすすめカード`,
+    },
+    de: {
+        title: (name, sdType) => `Beste SD-Karten für ${name} | ${sdType}-Anforderungen & Empfehlungen`,
+        ogTitle: (name, sdType) => `${name} ${sdType}-Leitfaden | Anforderungen & beste Karten`,
+        twitterTitle: (name) => `${name} SD-Karten-Leitfaden | Beste Empfehlungen`,
+        schemaHeadline: (name, sdType) => `${name} ${sdType}-Kompatibilität & Empfehlungen`,
+    },
+    fr: {
+        title: (name, sdType) => `Meilleures cartes SD pour ${name} | Exigences ${sdType} & recommandations`,
+        ogTitle: (name, sdType) => `Guide ${sdType} pour ${name} | Exigences & meilleures cartes`,
+        twitterTitle: (name) => `Guide carte SD pour ${name} | Meilleures recommandations`,
+        schemaHeadline: (name, sdType) => `Compatibilité ${sdType} et recommandations pour ${name}`,
+    },
+    it: {
+        title: (name, sdType) => `Migliori schede SD per ${name} | Requisiti ${sdType} e consigli`,
+        ogTitle: (name, sdType) => `Guida ${sdType} per ${name} | Requisiti e migliori schede`,
+        twitterTitle: (name) => `Guida scheda SD per ${name} | Migliori consigli`,
+        schemaHeadline: (name, sdType) => `Compatibilità ${sdType} e consigli per ${name}`,
+    },
 };
 
 function labelsFor(dictionary, locale) {
@@ -103,7 +147,7 @@ function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, locale = "
             }
 
             // Add UTM parameters to Amazon URL (prefer direct product link if available)
-            const baseUrl = brand.amazonDirectUrl || brand.amazonSearchUrl;
+            const baseUrl = brand.amazonDirectUrl || brand.amazonSearchUrl || brand.affiliateUrl;
             const utmParams = `utm_source=sdcardchecker&utm_medium=device-page&utm_campaign=${deviceSlug}&utm_content=${brand.tier || 'featured'}`;
             const amazonUrlWithUTM = baseUrl.includes('?')
                 ? `${baseUrl}&${utmParams}`
@@ -312,9 +356,10 @@ function generateAlternatives(device, sdcardsMap) {
     const createCard = (brand, label) => {
         // Add UTM parameters to Amazon URL
         const utmParams = `utm_source=sdcardchecker&utm_medium=device-page&utm_campaign=${device.slug}&utm_content=${brand.tier || 'featured'}`;
-        const amazonUrlWithUTM = brand.amazonSearchUrl.includes('?')
-            ? `${brand.amazonSearchUrl}&${utmParams}`
-            : `${brand.amazonSearchUrl}?${utmParams}`;
+        const baseUrl = brand.amazonDirectUrl || brand.amazonSearchUrl || brand.affiliateUrl;
+        const amazonUrlWithUTM = baseUrl.includes('?')
+            ? `${baseUrl}&${utmParams}`
+            : `${baseUrl}?${utmParams}`;
 
         const cardImage = brand.imageUrl || getCardImageFallback(brand);
         // Use priceSymbol if available (new format), otherwise use numeric estimate
@@ -401,10 +446,11 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace("Hero 13 Black", "Hero 13")
         .replace("Hero 12 Black", "Hero 12");
 
-    const title = `Best SD Cards for ${device.name} | ${device.sdCard.type} Requirements & Recommendations`;
-    const ogTitle = `${device.name} ${device.sdCard.type} Guide | Requirements & Best Cards`;
-    const twitterTitle = `${device.name} SD Card Guide | Best Recommendations`;
-    const schemaHeadline = `${device.name} ${device.sdCard.type} Compatibility & Recommendations`;
+    const titleStrings = labelsFor(DEVICE_TITLE_STRINGS, locale);
+    const title = titleStrings.title(device.name, device.sdCard.type);
+    const ogTitle = titleStrings.ogTitle(device.name, device.sdCard.type);
+    const twitterTitle = titleStrings.twitterTitle(device.name);
+    const schemaHeadline = titleStrings.schemaHeadline(device.name, device.sdCard.type);
     const description = generateUniqueMetaDescription(device, brandNames, deviceIndex);
 
     let answerText = device.sdCard.type;
@@ -420,16 +466,12 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     // Compare widget is English-only for v1 (compare.js fetches the English sdcards.json)
     const compareWidgetHTML = locale === "en" ? generateDeviceCompareWidgetHTML(device, allCards) : "";
 
-    // Generate FAQs. English/Japanese have a programmatic generator (generateFAQs.js); other
-    // locales are content-driven only - they must supply device.faq explicitly (see
-    // data/devices-de.json) rather than risk leaking English/Japanese generated text.
-    let finalFAQs;
-    if (locale === "en" || locale === "ja") {
-        const generatedFAQs = generateFAQs(device, sdcardsMap, locale === "ja");
-        finalFAQs = device.faq ? mergeFAQs(device.faq, generatedFAQs, locale === "ja") : generatedFAQs;
-    } else {
-        finalFAQs = device.faq || [];
-    }
+    // Generate FAQs. Every locale (en/ja/de/fr/it) has a programmatic generator
+    // (generateFAQs.js delegates to generateFAQs-{locale}.js) producing the generic
+    // 8-question block in that language; per-device custom FAQs from device.faq are
+    // merged on top and take priority by matching question text.
+    const generatedFAQs = generateFAQs(device, sdcardsMap, locale);
+    const finalFAQs = device.faq ? mergeFAQs(device.faq, generatedFAQs, locale) : generatedFAQs;
 
     const firstFAQ = generateFirstFAQ(device, locale);
     const faqsWithFirstQuestion = [firstFAQ, ...finalFAQs];
@@ -568,10 +610,8 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
 async function generateDevicePages(allDevices, distPath, locale = "en") {
     console.log(`Generating ${locale} device pages...`);
 
-    // Only "ja" has a fully translated static template today; other non-English locales
-    // reuse device.html (English page chrome) while injecting translated labels/data via
-    // the {{PLACEHOLDER}} slots above - full template translation is separate content work.
-    const templateFile = locale === "ja" ? "device-ja.html" : "device.html";
+    const localizedTemplates = new Set(["ja", "de", "fr", "it"]);
+    const templateFile = localizedTemplates.has(locale) ? `device-${locale}.html` : "device.html";
     let deviceTemplate = readTemplate(
         path.join(srcPath, "templates", templateFile)
     );
