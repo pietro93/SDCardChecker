@@ -468,8 +468,7 @@
       }
     ],
     "relatedDevices": [
-      "raspberry-pi-3-model-b-plus",
-      "raspberry-pi-pico"
+      "raspberry-pi-3-model-b-plus"
     ],
     "notes": "Extremely popular for small-form-factor projects like Pi-hole or robotics. Card reliability is key for 'set-it-and-forget-it' applications.",
     "imageUrl": "/img/devices/computing/raspberry-pi-zero-2-w.webp"
@@ -551,7 +550,7 @@
     "whySpecs": "MacBook Air lacks SD card slot. USB-C readers achieve full speed potential on modern models.",
     "recommendedBrands": [
       {
-        "id": "sandisk-extreme-pro-uhs2-usbc"
+        "id": "sandisk-extreme-pro-sd-uhs2"
       }
     ],
     "relatedDevices": [
@@ -581,7 +580,7 @@
     "whySpecs": "iPad Air M1 and newer use USB-C. Lightning models require Lightning readers.",
     "recommendedBrands": [
       {
-        "id": "sandisk-extreme-pro-uhs2-usbc"
+        "id": "sandisk-extreme-pro-sd-uhs2"
       }
     ],
     "relatedDevices": [
@@ -608,11 +607,7 @@
       ]
     },
     "whySpecs": "iPad Air 3 uses Lightning port (older model).",
-    "recommendedBrands": [
-      {
-        "id": "lexar-lightning-microsd"
-      }
-    ],
+    "recommendedBrands": [],
     "relatedDevices": [
       "ipad-air",
       "ipad-pro"
@@ -640,7 +635,7 @@
     "whySpecs": "MacBook Pro uses Thunderbolt/USB-C. High-speed readers recommended for video workflows.",
     "recommendedBrands": [
       {
-        "id": "sandisk-extreme-pro-uhs2-usbc"
+        "id": "sandisk-extreme-pro-sd-uhs2"
       }
     ],
     "relatedDevices": [
@@ -670,7 +665,7 @@
     "whySpecs": "iPad Pro uses USB-C or Thunderbolt. Supports fast external readers.",
     "recommendedBrands": [
       {
-        "id": "sandisk-extreme-pro-uhs2-usbc"
+        "id": "sandisk-extreme-pro-sd-uhs2"
       }
     ],
     "relatedDevices": [
@@ -697,11 +692,7 @@
       ]
     },
     "whySpecs": "iPad 9th Gen uses Lightning port.",
-    "recommendedBrands": [
-      {
-        "id": "lexar-lightning-microsd"
-      }
-    ],
+    "recommendedBrands": [],
     "relatedDevices": [
       "ipad-air",
       "iphone-13"

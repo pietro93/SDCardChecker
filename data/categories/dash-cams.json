@@ -15,13 +15,20 @@
       "type": "microSD (requires USB reader)",
       "minSpeed": "V30",
       "minWriteSpeed": "40 MB/s",
-      "recommendedCapacity": ["128GB", "256GB"],
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
       "maxCapacity": "2TB"
     },
     "whySpecs": "Sentry mode continuously overwrites old footage. Standard cards fail quickly. You need High Endurance cards rated for 10,000+ write/erase cycles.",
     "recommendedBrands": [
-      { "id": "speederlash-64gb-2pack" },
-      { "id": "sandisk-max-endurance" }
+      {
+        "id": "speederlash-64gb-2pack"
+      },
+      {
+        "id": "sandisk-max-endurance"
+      }
     ],
     "faq": [
       {
@@ -37,7 +44,7 @@
         "a": "<b>256GB is ideal</b>. Tesla Sentry records in clips. 256GB holds approximately 5-7 days of continuous footage depending on quality. Larger capacities reduce how often you need to manage the card."
       }
     ],
-    "relatedDevices": ["tesla-model-y", "tesla-model-s"],
+    "relatedDevices": [],
     "notes": "Premium EV. Requires High Endurance cards for reliable dash cam operation."
   },
   {
@@ -58,14 +65,23 @@
       "type": "microSD (sometimes full SD)",
       "minSpeed": "V30",
       "minWriteSpeed": "30 MB/s",
-      "recommendedCapacity": ["64GB", "128GB"],
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
       "maxCapacity": "256GB"
     },
     "whySpecs": "4K dash cams write at ~50-100 Mbps bitrate depending on resolution and codec. V30 ensures 30MB/s sustained write speed, preventing dropped frames. High Endurance cards extend lifespan from months to years.",
     "recommendedBrands": [
-      { "id": "speederlash-64gb-2pack" },
-      { "id": "digiera-64gb-ct100" },
-      { "id": "sandisk-max-endurance" }
+      {
+        "id": "speederlash-64gb-2pack"
+      },
+      {
+        "id": "digiera-64gb-ct100"
+      },
+      {
+        "id": "sandisk-max-endurance"
+      }
     ],
     "faq": [
       {
@@ -81,7 +97,9 @@
         "a": "<b>64GB stores 2-4 hours</b> (good for daily commute). <b>128GB stores 4-8 hours</b> (covers overnight parking + commute). For Sentry Mode or 24/7 recording, use 256GB+."
       }
     ],
-    "relatedDevices": ["tesla-model-3-sentry"],
+    "relatedDevices": [
+      "tesla-model-3-sentry"
+    ],
     "notes": "Universal dash cam recommendation. Works with Rexing, Viofo, Garmin, VANTRUE, and most aftermarket 4K cameras."
   },
   {
@@ -100,13 +118,20 @@
       "type": "microSD (Dual Dash = Dual Cards)",
       "minSpeed": "V30",
       "minWriteSpeed": "30 MB/s",
-      "recommendedCapacity": ["128GB", "256GB"],
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
       "maxCapacity": "512GB"
     },
     "whySpecs": "Viofo A229 Pro is a dual-channel 4K dash cam (front + interior). Each channel writes continuously at ~50 Mbps. You need <b>TWO cards minimum (one for each channel)</b>. High Endurance essential.",
     "recommendedBrands": [
-      { "id": "speederlash-64gb-2pack" },
-      { "id": "sandisk-max-endurance" }
+      {
+        "id": "speederlash-64gb-2pack"
+      },
+      {
+        "id": "sandisk-max-endurance"
+      }
     ],
     "faq": [
       {
@@ -122,7 +147,10 @@
         "a": "No. The A229 Pro writes to both cards simultaneously at high bitrate. Regular cards fail within weeks. <b>Use V30 High Endurance only</b>."
       }
     ],
-    "relatedDevices": ["generic-4k-dashcam", "viofo-t130-pro"],
+    "relatedDevices": [
+      "generic-4k-dashcam",
+      "viofo-t130-pro"
+    ],
     "notes": "Professional dual-channel dash cam. Requires dual High Endurance cards for reliable operation."
   },
   {
@@ -141,14 +169,23 @@
       "type": "microSD UHS-I (U3)",
       "minSpeed": "U3",
       "minWriteSpeed": "30 MB/s",
-      "recommendedCapacity": ["128GB", "256GB"],
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
       "maxCapacity": "256GB"
     },
     "whySpecs": "Viofo specifically restricts the T130 Pro to UHS-I U3-rated, dashcam/high-endurance microSD cards — not general-purpose consumer cards. The camera loop-records continuously, overwriting old footage in a cycle that wears out standard cards within weeks in a hot windshield environment. Viofo caps supported capacity at 256GB, with 128GB called out as the preferable, more reliable size.",
     "recommendedBrands": [
-      { "id": "samsung-pro-endurance" },
-      { "id": "sandisk-max-endurance" },
-      { "id": "topesel-high-endurance" }
+      {
+        "id": "samsung-pro-endurance"
+      },
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "topesel-high-endurance"
+      }
     ],
     "faq": [
       {
@@ -164,7 +201,11 @@
         "a": "<b>The T130 Pro continuously overwrites old footage in a loop</b>, which wears out standard consumer microSD cards far faster than normal photo/video use. High-endurance cards are built with this write/erase cycle pattern in mind and last years instead of weeks."
       }
     ],
-    "relatedDevices": ["viofo-a229-pro", "nextbase-iq-4k", "generic-4k-dashcam"],
+    "relatedDevices": [
+      "viofo-a229-pro",
+      "nextbase-iq-4k",
+      "generic-4k-dashcam"
+    ],
     "notes": "Restrict affiliate output strictly to High-Endurance/U3 cards rated for continuous overwrite loops. Explicitly warn against standard consumer cards — heat + loop-recording wear kills them early in hot windshields. Per Viofo's own guidance, max 256GB, 128GB preferable."
   },
   {
@@ -183,14 +224,23 @@
       "type": "microSD UHS-I (U3)",
       "minSpeed": "U3",
       "minWriteSpeed": "30 MB/s",
-      "recommendedCapacity": ["256GB", "512GB"],
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
       "maxCapacity": "512GB"
     },
     "whySpecs": "The Nextbase iQ is built around continuous loop recording with cloud/AI features layered on top, which pushes the camera toward higher-bitrate 4K capture than a typical dash cam. Nextbase's own guidance recommends U3-rated dashcam-compatible cards, calling out Nextbase-branded or SanDisk High Endurance (U3) cards specifically — with periodic reformatting recommended to manage wear from the continuous overwrite loop.",
     "recommendedBrands": [
-      { "id": "sandisk-max-endurance" },
-      { "id": "samsung-pro-endurance" },
-      { "id": "topesel-high-endurance" }
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      },
+      {
+        "id": "topesel-high-endurance"
+      }
     ],
     "faq": [
       {
@@ -206,7 +256,11 @@
         "a": "<b>Yes — Nextbase recommends periodically reformatting the card.</b> Continuous loop recording wears down even high-endurance cards over time, and a periodic reformat helps maintain reliable write performance."
       }
     ],
-    "relatedDevices": ["viofo-t130-pro", "viofo-a229-pro", "generic-4k-dashcam"],
+    "relatedDevices": [
+      "viofo-t130-pro",
+      "viofo-a229-pro",
+      "generic-4k-dashcam"
+    ],
     "notes": "Same High-Endurance-only framing as T130 Pro. Nextbase's cloud/AI features push higher bitrate 4K, so capacity guidance skews larger (256GB+) alongside the endurance requirement. No authoritative Nextbase source found stating a specific write-class floor (e.g. V30) for this model — copy is tied to U3 + dashcam/high-endurance rather than asserting V30."
   }
 ]

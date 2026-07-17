@@ -130,10 +130,10 @@
         "256GB",
         "512GB"
       ],
-      "maxCapacity": "2TB (theoretical)",
-      "testedMaxCapacity": "1TB"
+      "maxCapacity": "2TB",
+      "testedMaxCapacity": "2TB"
     },
-    "whySpecs": "Steam Deck uses UHS-I interface and runs SteamOS from the card, so A1 app performance is important for OS responsiveness. While V30 works for gaming, A1 random IOPS are essential. Select from reputable brands offering V30 rated and A1-classified cards. Note: While theoretically supporting up to 2TB, the largest tested and verified working capacity is 1TB.",
+    "whySpecs": "Steam Deck uses UHS-I interface and runs SteamOS from the card, so A1 app performance is important for OS responsiveness. While V30 works for gaming, A1 random IOPS are essential. Select from reputable brands offering V30 rated and A1-classified cards. 2TB cards (e.g. SanDisk Extreme, Lexar Play) are confirmed working with full compatibility, though note that microSD prices across all capacities rose sharply in 2026 due to a global NAND flash shortage.",
     "recommendedBrands": [
       {
         "id": "kingston-canvas-go-plus-ultra"
@@ -307,7 +307,7 @@
       },
       {
         "q": "What is microSD Express and do I need it for Switch 2?",
-        "a": "<b>microSD Express uses PCIe technology for speeds up to 800 MB/s — versus ~100 MB/s for standard UHS-I.</b> It provides noticeably faster game loading in Switch 2 titles. However, you do not need it — your existing UHS-I microSD cards work perfectly. As of 2026, microSD Express cards are still rare and expensive. Consider one only if you are buying a new card and want the fastest possible performance."
+        "a": "<b>microSD Express uses PCIe technology for speeds up to 800 MB/s — versus ~100 MB/s for standard UHS-I.</b> It provides noticeably faster game loading in Switch 2 titles. However, you do not need it — your existing UHS-I microSD cards work perfectly. Officially licensed Express cards from Samsung, SanDisk, and PNY are now widely available at retailers like Target, Walmart, and Best Buy, though prices across all microSD cards (Express included) rose sharply in 2026 due to a global NAND flash shortage."
       },
       {
         "q": "Will a microSD Express card work in my original Switch or Switch OLED?",
@@ -788,7 +788,7 @@
     "whySpecs": "The MSI Claw runs full Windows AAA games. You need an 'A2' (Application Performance Class 2) rated card to handle the random read/write operations of Windows gaming. Slower cards will cause stuttering and extremely long load times.",
     "recommendedBrands": [
       {
-        "id": "sandisk-extreme-pro-microsd"
+        "id": "sandisk-extreme-pro-microsd-v60"
       },
       {
         "id": "lexar-play-microsd"
@@ -832,10 +832,7 @@
     "whySpecs": "GPD Win devices (Mini and Win 4) often feature high-speed UHS-II card readers. To play modern PC games directly from the SD card without stalling, investing in a V60 or V90 UHS-II card is highly beneficial.",
     "recommendedBrands": [
       {
-        "id": "lexar-professional-gold-uhs-ii"
-      },
-      {
-        "id": "sandisk-extreme-pro-uhs-ii"
+        "id": "sandisk-extreme-pro-sd-uhs2"
       }
     ],
     "faq": [
@@ -917,7 +914,7 @@
         "id": "sandisk-ultra-microsd"
       },
       {
-        "id": "samsung-evo-select"
+        "id": "samsung-evo-select-microsd"
       }
     ],
     "faq": [
@@ -1010,7 +1007,7 @@
     "whySpecs": "The RG556 is an Android-based handheld capable of emulating PS2 and GameCube. Using a high-capacity card (256GB+) is recommended to store these large disc-based ROM files. A1 speed is recommended for Android app performance.",
     "recommendedBrands": [
       {
-        "id": "samsung-evo-select"
+        "id": "samsung-evo-select-microsd"
       },
       {
         "id": "sandisk-ultra-microsd"

@@ -690,7 +690,6 @@
         }
       ],
       "relatedDevices": [
-        "viofo-a229-duo",
         "wyze-cam-v3",
         "eufy-solocam-s340"
       ],
@@ -739,7 +738,7 @@
         "gopro-hero-13",
         "gopro-hero-12",
         "gopro-hero-max",
-        "dji-pocket-3"
+        "dji-osmo-pocket-3"
       ],
       "notes": "The predecessor to the Hero 12, this model introduced the 8:7 sensor and maintains the same V30 card requirements.",
       "imageUrl": "/img/devices/action-cameras/gopro-hero-11-black.webp"
@@ -1096,33 +1095,6 @@
       "imageUrl": "/img/devices/action-cameras/insta360-one-x3.webp"
     },
     {
-      "id": "wyze-cam-v3",
-      "name": "Wyze Cam v3",
-      "category": "Action Cameras",
-      "slug": "wyze-cam-v3",
-      "searchTerms": [
-        "wyze cam v3",
-        "wyze camera"
-      ],
-      "sdCard": {
-        "type": "microSD",
-        "minSpeed": "Class 10",
-        "recommendedCapacity": [
-          "64GB",
-          "128GB"
-        ]
-      },
-      "whySpecs": "Wyze Cam v3 supports microSD for local recording storage.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-ultra-microsd"
-        }
-      ],
-      "relatedDevices": [
-        "gopro-hero-13"
-      ]
-    },
-    {
       "id": "fiio-snowsky-echo-mini",
       "name": "FiiO SnowSky Echo Mini",
       "category": "Audio & Hi-Fi",
@@ -1249,7 +1221,7 @@
       "whySpecs": "The NW-ZX707 is the high-end sibling to the A306, featuring a larger screen and better amplification. Like the A306, it runs Android and requires an A2-rated card for smooth operation. Users of this device typically have massive DSD/FLAC libraries, making 1TB cards a very common choice.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-pro-microsd"
+          "id": "sandisk-extreme-pro-microsd-v60"
         },
         {
           "id": "samsung-pro-plus-microsd"
@@ -1423,10 +1395,10 @@
       "whySpecs": "<b>Critical Warning:</b> The Zoom H1n (and H1n-VP) is an older hardware architecture that <b>does NOT support cards larger than 32GB</b>. Users frequently buy 64GB or 128GB cards that fail to work. You must use a microSDHC card (32GB or smaller). Speed is not critical; compatibility is.",
       "recommendedBrands": [
         {
-          "id": "sandisk-ultra-microsd-32gb"
+          "id": "sandisk-ultra-microsd"
         },
         {
-          "id": "kingston-canvas-select-32gb"
+          "id": "kingston-canvas-select"
         }
       ],
       "faq": [
@@ -1637,15 +1609,15 @@
       ],
       "sdCard": {
         "type": "CFexpress Type B and SD UHS-II",
-        "minSpeed": "V60",
-        "minWriteSpeed": "60 MB/s",
+        "minSpeed": "V90 (CFexpress required for 8K RAW)",
+        "minWriteSpeed": "90 MB/s",
         "recommendedCapacity": [
           "128GB",
           "256GB"
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Professional 8K camera recording. Requires V60 minimum for 8K RAW video. High bitrate (1.6 Gbps) demands fast, dual card slots for safety.",
+      "whySpecs": "Professional 8K camera recording. 8K RAW (Cinema RAW Light) can only be recorded to a CFexpress Type B card — the SD slot can't handle it at all. The SD UHS-II slot needs a V90 card for standard 8K, while V60 is enough for 4K. High bitrate video demands fast, dual card slots for safety.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-cfexpress"
@@ -1657,11 +1629,11 @@
       "faq": [
         {
           "q": "Do I need two cards for R5?",
-          "a": "<b>Yes, the Canon EOS R5 has dual card slots and Canon recommends using two V60 cards for safety</b>. <b>When shooting 8K video, dual cards provide backup recording and increased reliability</b>, protecting against a single card failure during critical sessions."
+          "a": "<b>Yes, the Canon EOS R5 has one CFexpress Type B slot and one SD UHS-II slot, and Canon recommends using both for safety</b>. <b>Dual-slot recording provides a backup during critical sessions</b>, though only the CFexpress card can capture 8K RAW — the SD card is a backup for lower-bitrate formats."
         },
         {
           "q": "Can I shoot 4K with V30 cards?",
-          "a": "<b>Yes, 4K video recording works perfectly fine with V30 speed class cards</b>. However, <b>8K recording requires V60 minimum speed class</b> due to the much higher bitrate and data throughput demands of 8K capture."
+          "a": "<b>Yes, 4K video recording works perfectly fine with V30 speed class cards</b>. However, <b>standard 8K recording requires a V90 SD card, and 8K RAW requires a CFexpress Type B card</b> due to the much higher bitrate and data throughput demands of 8K capture."
         },
         {
           "q": "What's the difference between CFexpress and SD?",
@@ -1669,8 +1641,7 @@
         }
       ],
       "relatedDevices": [
-        "canon-eos-r6-mark-ii",
-        "canon-eos-r3"
+        "canon-eos-r6-mark-ii"
       ],
       "notes": "Canon EOS R5 is professional 8K camera. Dual V60 cards strongly recommended."
     },
@@ -1694,7 +1665,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Excellent for 4K 60fps video and high-speed photography. V30 ensures reliable performance. Professional mirrorless users benefit from dual card slots.",
+      "whySpecs": "Excellent for 4K 60fps video and high-speed photography. V30 ensures reliable performance. The A6700 has a single SD UHS-II card slot, so a reliable card matters since there's no in-camera backup.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs2"
@@ -1712,8 +1683,8 @@
           "a": "<b>Yes, V30 speed class provides the necessary 30MB/s minimum write speed for stable 4K 60fps video</b> on the Sony A6700. <b>Professional and advanced users often prefer V60 or faster cards for additional performance headroom and insurance</b> during critical shoots."
         },
         {
-          "q": "Do I need two cards?",
-          "a": "<b>The Sony A6700 provides dual SD UHS-II card slots</b>. <b>Using two cards is recommended for extended shooting sessions and automatic backup</b>, allowing continuous recording when one card fills and seamless workflow for professional video production."
+          "q": "Does the Sony A6700 have two card slots?",
+          "a": "<b>No, the Sony A6700 has a single SD UHS-II card slot.</b> Dual slots are reserved for Sony's higher-end full-frame bodies like the A7 IV. Since there's no in-camera backup, using a reliable, well-reviewed card is especially important."
         }
       ],
       "relatedDevices": [
@@ -1721,7 +1692,7 @@
         "sony-a7-iv",
         "fujifilm-x-s20"
       ],
-      "notes": "Popular choice for content creators. Dual SD UHS-II card slots for professional workflow."
+      "notes": "Popular choice for content creators. Single SD UHS-II card slot (unlike Sony's dual-slot full-frame bodies)."
     },
     {
       "id": "fujifilm-x-s20",
@@ -1763,7 +1734,7 @@
       ],
       "relatedDevices": [
         "fujifilm-x-s10",
-        "fujifilm-x-t5",
+        "fujifilm-xt5",
         "sony-a6700"
       ],
       "notes": "Popular travel camera. Single card slot makes reliable card choice important."
@@ -2178,7 +2149,7 @@
         "canon-eos-r10",
         "canon-eos-r8",
         "sony-a6700",
-        "fujifilm-xs20"
+        "fujifilm-x-s20"
       ],
       "notes": "Canon's entry-level RF mount camera. Extremely popular with beginners and vloggers due to its ease of use and good image quality. High search volume is driven by its affordability and strong brand recognition.",
       "imageUrl": "/img/devices/cameras/canon-eos-r50.webp"
@@ -2277,7 +2248,7 @@
         "canon-eos-r7",
         "canon-eos-r50",
         "sony-a6700",
-        "fujifilm-xs20"
+        "fujifilm-x-s20"
       ],
       "notes": "Canon's APS-C mirrorless camera positioned for enthusiasts interested in sports and action photography. It offers strong performance at a competitive price point, with a single SD UHS-II card slot.",
       "imageUrl": "/img/devices/cameras/canon-eos-r10.webp"
@@ -2430,7 +2401,6 @@
       ],
       "relatedDevices": [
         "canon-g7x-mark-ii",
-        "sony-zv1",
         "dji-osmo-pocket-3"
       ],
       "notes": "A go-to camera for vloggers and content creators. Its significant popularity, especially on social media platforms like YouTube, contributes to extremely high search volume for compatible SD cards.",
@@ -2483,8 +2453,7 @@
         }
       ],
       "relatedDevices": [
-        "canon-g7x-mark-iii",
-        "sony-rx100-series"
+        "canon-g7x-mark-iii"
       ],
       "notes": "Still very popular on the used market. High search volume from budget-conscious vloggers and photographers seeking an affordable alternative to the newer Mark III model.",
       "imageUrl": "/img/devices/cameras/canon-g7x-mark-ii.webp"
@@ -2532,8 +2501,6 @@
         }
       ],
       "relatedDevices": [
-        "fujifilm-xt4",
-        "fujifilm-xh2s",
         "sony-a6700"
       ],
       "notes": "Fujifilm's current APS-C flagship camera. Extremely popular with enthusiast photographers and professionals due to its image quality and classic controls. Features dual SD UHS-II slots for robust media management."
@@ -2631,7 +2598,7 @@
       ],
       "relatedDevices": [
         "fujifilm-xt5",
-        "fujifilm-xs20",
+        "fujifilm-x-s20",
         "sony-a6400"
       ],
       "notes": "A popular mid-range Fujifilm camera known for its compact size and strong image quality. Good availability on the used market makes it a compelling option. Features a single SD UHS-I card slot.",
@@ -2778,7 +2745,6 @@
       ],
       "relatedDevices": [
         "sony-fx30",
-        "sony-a7s-iii",
         "canon-eos-r5"
       ],
       "notes": "A professional full-frame cinema camera, often considered the video-centric version of the A7S III. It features dual CFexpress Type A / SD UHS-II slots, making it very popular with serious videographers and filmmakers for its robust video features."
@@ -2931,7 +2897,6 @@
         }
       ],
       "relatedDevices": [
-        "fujifilm-xt4",
         "fujifilm-xt5",
         "sony-a6400"
       ],
@@ -2949,9 +2914,9 @@
         "leica q3 storage"
       ],
       "sdCard": {
-        "type": "Dual SD UHS-II",
-        "minSpeed": "V60 (V90 for 8K video)",
-        "minWriteSpeed": "60 MB/s minimum, 90 MB/s for 8K",
+        "type": "SD UHS-II",
+        "minSpeed": "V60",
+        "minWriteSpeed": "60 MB/s",
         "recommendedCapacity": [
           "128GB",
           "256GB"
@@ -2959,7 +2924,7 @@
         "maxCapacity": "No official limit",
         "testedMaxCapacity": "512GB"
       },
-      "whySpecs": "A premium full-frame compact camera featuring a fixed 28mm f/1.7 lens and 8K video capability. While V60 cards handle photography and 4K video reliably, a V90 speed class card is explicitly required for 8K recording. Its dual UHS-II slots provide crucial backup recording capabilities for professional work and peace of mind.",
+      "whySpecs": "A premium full-frame compact camera featuring a fixed 28mm f/1.7 lens and a 60MP sensor, with video maxing out at 4K/30p. A V60 speed class card handles both high-resolution stills and 4K video reliably. The Q3 has a single SD UHS-II card slot, so a dependable card matters since there's no in-camera backup.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs2"
@@ -2977,8 +2942,8 @@
           "a": "<b>For Leica enthusiasts and professional street photographers, the Q3 is considered a worthwhile investment.</b> It delivers exceptional build quality, the brand's renowned color science, and a superb fixed Summilux lens. The premium price reflects not just its specifications but also its craftsmanship, brand heritage, and exclusive user experience."
         },
         {
-          "q": "Do I really need a V90 SD card for 8K video on the Q3?",
-          "a": "<b>Yes, 8K video recording on the Leica Q3 demands a V90 minimum write speed card for stable, uninterrupted capture.</b> However, it's important to note that most Q3 users primarily shoot stills and 4K video, where V60 cards are perfectly adequate. Only invest in V90 cards if you specifically plan to utilize the 8K video feature."
+          "q": "Does the Leica Q3 shoot 8K video?",
+          "a": "<b>No, the Leica Q3 tops out at 4K/30p video.</b> Its 60MP sensor is aimed primarily at stills; a V60 SD UHS-II card is sufficient for both stills and video, so there's no need to chase a V90 card for this camera."
         }
       ],
       "relatedDevices": [
@@ -2986,7 +2951,7 @@
         "leica-q2",
         "fujifilm-x100vi"
       ],
-      "notes": "Leica's flagship compact camera. It is extremely expensive but highly sought-after for its unique blend of traditional aesthetics and modern performance. Its 8K video capability, coupled with dual SD UHS-II slots, makes specific card recommendations crucial."
+      "notes": "Leica's flagship compact camera. Extremely expensive but highly sought-after for its unique blend of traditional aesthetics and modern performance. Single SD UHS-II card slot; no 8K video mode."
     },
     {
       "id": "leica-q3-43",
@@ -2999,9 +2964,9 @@
         "leica q3 43 storage"
       ],
       "sdCard": {
-        "type": "Dual SD UHS-II",
-        "minSpeed": "V60 (V90 for 8K video)",
-        "minWriteSpeed": "60 MB/s minimum, 90 MB/s for 8K",
+        "type": "SD UHS-II",
+        "minSpeed": "V60",
+        "minWriteSpeed": "60 MB/s",
         "recommendedCapacity": [
           "128GB",
           "256GB"
@@ -3009,7 +2974,7 @@
         "maxCapacity": "No official limit",
         "testedMaxCapacity": "512GB"
       },
-      "whySpecs": "A variant of the Leica Q3, featuring a 43mm f/2 APO lens instead of the standard 28mm. It shares identical SD card requirements with the regular Q3: V60 cards for general photography and 4K video, and V90 cards explicitly for 8K video recording. The longer focal length makes it particularly suited for portraiture and specific reportage work.",
+      "whySpecs": "A variant of the Leica Q3, featuring a 43mm f/2 APO lens instead of the standard 28mm. It shares identical SD card requirements with the regular Q3: a single SD UHS-II slot, V60 cards for stills and 4K/30p video (no 8K mode). The longer focal length makes it particularly suited for portraiture and specific reportage work.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs2"
@@ -3024,7 +2989,7 @@
       "faq": [
         {
           "q": "Are the SD card requirements for the Q3 43 and the regular Q3 the same?",
-          "a": "<b>Yes, the SD card requirements are identical for both the Leica Q3 43 and the standard Leica Q3.</b> Both cameras share the same sensor, image processor, and recording capabilities. The sole difference between the two models is their fixed lens focal length: 28mm for the standard Q3 and 43mm for the Q3 43."
+          "a": "<b>Yes, the SD card requirements are identical for both the Leica Q3 43 and the standard Leica Q3.</b> Both cameras share the same sensor, image processor, single SD UHS-II slot, and recording capabilities. The sole difference between the two models is their fixed lens focal length: 28mm for the standard Q3 and 43mm for the Q3 43."
         }
       ],
       "relatedDevices": [
@@ -3032,7 +2997,7 @@
         "leica-q2",
         "leica-m11"
       ],
-      "notes": "Released in 2024 as a 43mm variant of the Q3, offering a different perspective for photographers. It maintains the same luxurious build quality and advanced features as the original, including dual SD UHS-II slots."
+      "notes": "Released in 2024 as a 43mm variant of the Q3, offering a different perspective for photographers. Same single SD UHS-II slot and 4K/30p video ceiling as the standard Q3."
     },
     {
       "id": "leica-m11",
@@ -3258,7 +3223,6 @@
       ],
       "relatedDevices": [
         "panasonic-lumix-s5-ii",
-        "sony-a7c-ii",
         "canon-eos-r8"
       ],
       "notes": "Released in 2024, the Lumix S9 is a significant new entry in the full-frame mirrorless market, targeting content creators and vloggers. Its compact form factor and advanced video features are key selling points. Features a single SD UHS-II slot.",
@@ -3407,8 +3371,7 @@
       ],
       "relatedDevices": [
         "nikon-d500",
-        "nikon-z50-ii",
-        "canon-eos-90d"
+        "nikon-z50-ii"
       ],
       "notes": "A popular APS-C DSLR from its release in 2017. It is still widely used by enthusiasts and semi-professionals for its strong performance. It has a strong presence on the used market. Features dual SD UHS-I slots.",
       "imageUrl": "/img/devices/cameras/nikon-d7500.webp"
@@ -3507,8 +3470,6 @@
         }
       ],
       "relatedDevices": [
-        "nikon-z50",
-        "nikon-zfc",
         "canon-eos-r50"
       ],
       "notes": "Released in late 2024 as an updated version of the popular Z50. It targets beginners, vloggers, and photographers seeking a compact and capable mirrorless camera. Features a single SD UHS-I slot.",
@@ -3658,9 +3619,7 @@
         }
       ],
       "relatedDevices": [
-        "nikon-z8",
-        "nikon-d780",
-        "canon-eos-5d-mark-iv"
+        "nikon-z8"
       ],
       "notes": "A professional DSLR workhorse from its release in 2017. It is still extremely popular and widely used by professionals and advanced enthusiasts. Features a hybrid dual slot: XQD in Slot 1 and SD UHS-II in Slot 2.",
       "imageUrl": "/img/devices/cameras/nikon-d850.webp"
@@ -3714,8 +3673,7 @@
       ],
       "relatedDevices": [
         "nikon-d850",
-        "nikon-z6-ii",
-        "canon-eos-6d-mark-ii"
+        "nikon-z6-ii"
       ],
       "notes": "An extremely popular full-frame DSLR that continues to see significant activity on the used market. It is highly regarded for its excellent value proposition and performance. Features dual SD UHS-I slots.",
       "imageUrl": "/img/devices/cameras/nikon-d750.webp"
@@ -4242,11 +4200,7 @@
         ]
       },
       "whySpecs": "Professional mirrorless camera. Dual slots for CFexpress Type A and SD UHS-II.",
-      "recommendedBrands": [
-        {
-          "id": "sony-mrw-g2"
-        }
-      ],
+      "recommendedBrands": [],
       "relatedDevices": [
         "canon-eos-r5",
         "nikon-z9"
@@ -4830,8 +4784,7 @@
         }
       ],
       "relatedDevices": [
-        "raspberry-pi-3-model-b-plus",
-        "raspberry-pi-pico"
+        "raspberry-pi-3-model-b-plus"
       ],
       "notes": "Extremely popular for small-form-factor projects like Pi-hole or robotics. Card reliability is key for 'set-it-and-forget-it' applications.",
       "imageUrl": "/img/devices/computing/raspberry-pi-zero-2-w.webp"
@@ -4913,7 +4866,7 @@
       "whySpecs": "MacBook Air lacks SD card slot. USB-C readers achieve full speed potential on modern models.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
+          "id": "sandisk-extreme-pro-sd-uhs2"
         }
       ],
       "relatedDevices": [
@@ -4943,7 +4896,7 @@
       "whySpecs": "iPad Air M1 and newer use USB-C. Lightning models require Lightning readers.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
+          "id": "sandisk-extreme-pro-sd-uhs2"
         }
       ],
       "relatedDevices": [
@@ -4970,11 +4923,7 @@
         ]
       },
       "whySpecs": "iPad Air 3 uses Lightning port (older model).",
-      "recommendedBrands": [
-        {
-          "id": "lexar-lightning-microsd"
-        }
-      ],
+      "recommendedBrands": [],
       "relatedDevices": [
         "ipad-air",
         "ipad-pro"
@@ -5002,7 +4951,7 @@
       "whySpecs": "MacBook Pro uses Thunderbolt/USB-C. High-speed readers recommended for video workflows.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
+          "id": "sandisk-extreme-pro-sd-uhs2"
         }
       ],
       "relatedDevices": [
@@ -5032,7 +4981,7 @@
       "whySpecs": "iPad Pro uses USB-C or Thunderbolt. Supports fast external readers.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-pro-uhs2-usbc"
+          "id": "sandisk-extreme-pro-sd-uhs2"
         }
       ],
       "relatedDevices": [
@@ -5059,11 +5008,7 @@
         ]
       },
       "whySpecs": "iPad 9th Gen uses Lightning port.",
-      "recommendedBrands": [
-        {
-          "id": "lexar-lightning-microsd"
-        }
-      ],
+      "recommendedBrands": [],
       "relatedDevices": [
         "ipad-air",
         "iphone-13"
@@ -5283,10 +5228,7 @@
           "a": "<b>256GB is ideal</b>. Tesla Sentry records in clips. 256GB holds approximately 5-7 days of continuous footage depending on quality. Larger capacities reduce how often you need to manage the card."
         }
       ],
-      "relatedDevices": [
-        "tesla-model-y",
-        "tesla-model-s"
-      ],
+      "relatedDevices": [],
       "notes": "Premium EV. Requires High Endurance cards for reliable dash cam operation."
     },
     {
@@ -6004,7 +5946,6 @@
         }
       ],
       "relatedDevices": [
-        "dji-air-2s",
         "autel-evo-ii-pro-v3"
       ],
       "notes": "The 'Lite' name is misleading; this is a powerful 6K camera drone requiring professional-grade storage.",
@@ -6191,7 +6132,7 @@
       ],
       "relatedDevices": [
         "skydio-2-plus",
-        "dji-mavic-3-enterprise"
+        "dji-mavic-3"
       ],
       "notes": "Enterprise-grade drone. Reliability is paramount.",
       "imageUrl": "/img/devices/drones/skydio-x10.webp"
@@ -6553,7 +6494,7 @@
           "id": "sandisk-extreme-pro-microsd-v60"
         },
         {
-          "id": "lexar-professional-1066x-microsd"
+          "id": "lexar-professional-1000x-microsd"
         }
       ],
       "faq": [
@@ -6613,7 +6554,7 @@
           "id": "samsung-pro-plus-microsd"
         },
         {
-          "id": "lexar-professional-1066x-microsd"
+          "id": "lexar-professional-1000x-microsd"
         }
       ],
       "faq": [
@@ -6667,7 +6608,7 @@
           "id": "samsung-pro-plus-microsd"
         },
         {
-          "id": "lexar-professional-1066x-microsd"
+          "id": "lexar-professional-1000x-microsd"
         }
       ],
       "faq": [
@@ -6878,10 +6819,10 @@
           "256GB",
           "512GB"
         ],
-        "maxCapacity": "2TB (theoretical)",
-        "testedMaxCapacity": "1TB"
+        "maxCapacity": "2TB",
+        "testedMaxCapacity": "2TB"
       },
-      "whySpecs": "Steam Deck uses UHS-I interface and runs SteamOS from the card, so A1 app performance is important for OS responsiveness. While V30 works for gaming, A1 random IOPS are essential. Select from reputable brands offering V30 rated and A1-classified cards. Note: While theoretically supporting up to 2TB, the largest tested and verified working capacity is 1TB.",
+      "whySpecs": "Steam Deck uses UHS-I interface and runs SteamOS from the card, so A1 app performance is important for OS responsiveness. While V30 works for gaming, A1 random IOPS are essential. Select from reputable brands offering V30 rated and A1-classified cards. 2TB cards (e.g. SanDisk Extreme, Lexar Play) are confirmed working with full compatibility, though note that microSD prices across all capacities rose sharply in 2026 due to a global NAND flash shortage.",
       "recommendedBrands": [
         {
           "id": "kingston-canvas-go-plus-ultra"
@@ -7055,7 +6996,7 @@
         },
         {
           "q": "What is microSD Express and do I need it for Switch 2?",
-          "a": "<b>microSD Express uses PCIe technology for speeds up to 800 MB/s — versus ~100 MB/s for standard UHS-I.</b> It provides noticeably faster game loading in Switch 2 titles. However, you do not need it — your existing UHS-I microSD cards work perfectly. As of 2026, microSD Express cards are still rare and expensive. Consider one only if you are buying a new card and want the fastest possible performance."
+          "a": "<b>microSD Express uses PCIe technology for speeds up to 800 MB/s — versus ~100 MB/s for standard UHS-I.</b> It provides noticeably faster game loading in Switch 2 titles. However, you do not need it — your existing UHS-I microSD cards work perfectly. Officially licensed Express cards from Samsung, SanDisk, and PNY are now widely available at retailers like Target, Walmart, and Best Buy, though prices across all microSD cards (Express included) rose sharply in 2026 due to a global NAND flash shortage."
         },
         {
           "q": "Will a microSD Express card work in my original Switch or Switch OLED?",
@@ -7536,7 +7477,7 @@
       "whySpecs": "The MSI Claw runs full Windows AAA games. You need an 'A2' (Application Performance Class 2) rated card to handle the random read/write operations of Windows gaming. Slower cards will cause stuttering and extremely long load times.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-pro-microsd"
+          "id": "sandisk-extreme-pro-microsd-v60"
         },
         {
           "id": "lexar-play-microsd"
@@ -7580,10 +7521,7 @@
       "whySpecs": "GPD Win devices (Mini and Win 4) often feature high-speed UHS-II card readers. To play modern PC games directly from the SD card without stalling, investing in a V60 or V90 UHS-II card is highly beneficial.",
       "recommendedBrands": [
         {
-          "id": "lexar-professional-gold-uhs-ii"
-        },
-        {
-          "id": "sandisk-extreme-pro-uhs-ii"
+          "id": "sandisk-extreme-pro-sd-uhs2"
         }
       ],
       "faq": [
@@ -7665,7 +7603,7 @@
           "id": "sandisk-ultra-microsd"
         },
         {
-          "id": "samsung-evo-select"
+          "id": "samsung-evo-select-microsd"
         }
       ],
       "faq": [
@@ -7758,7 +7696,7 @@
       "whySpecs": "The RG556 is an Android-based handheld capable of emulating PS2 and GameCube. Using a high-capacity card (256GB+) is recommended to store these large disc-based ROM files. A1 speed is recommended for Android app performance.",
       "recommendedBrands": [
         {
-          "id": "samsung-evo-select"
+          "id": "samsung-evo-select-microsd"
         },
         {
           "id": "sandisk-ultra-microsd"
@@ -8994,7 +8932,6 @@
         }
       ],
       "relatedDevices": [
-        "viofo-a229-duo",
         "nextbase-622gw",
         "eufy-solocam-s340"
       ],
@@ -9038,7 +8975,6 @@
       ],
       "relatedDevices": [
         "wyze-cam-v3",
-        "viofo-a229-duo",
         "nextbase-622gw"
       ],
       "notes": "Popular wire-free security camera with built-in solar panel option. Eufy official specs confirm microSD support up to 128GB. Growing search volume as Eufy gains market share."
@@ -9080,8 +9016,7 @@
         }
       ],
       "relatedDevices": [
-        "wyze-cam-v3",
-        "garmin-66s-dash-cam"
+        "wyze-cam-v3"
       ],
       "notes": "A best-selling indoor 2K camera from a major security brand. Reolink's focus on local storage drives high search volume for card recommendations. Official max capacity is 256GB."
     },
@@ -9198,8 +9133,7 @@
         }
       ],
       "relatedDevices": [
-        "iphone-14",
-        "iphone-12"
+        "iphone-14"
       ]
     },
     {
@@ -9319,8 +9253,7 @@
         }
       ],
       "relatedDevices": [
-        "google-pixel-8",
-        "samsung-galaxy-s24"
+        "google-pixel-8"
       ]
     },
     {
@@ -9364,8 +9297,8 @@
     }
   ],
   "metadata": {
-    "generated": "2026-07-17T09:52:37.432Z",
-    "totalDevices": 191,
+    "generated": "2026-07-17T17:27:10.739Z",
+    "totalDevices": 190,
     "categories": [
       "3D Printers & Fabrication",
       "Action Cameras",
