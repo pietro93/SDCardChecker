@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{LANG}}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,7 +41,7 @@
   <div class="bg-white border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 py-3">
       <nav class="text-sm text-slate-600 flex items-center gap-2">
-        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <a href="{{HOME_URL}}" class="text-blue-600 hover:underline">{{HOME_LABEL}}</a>
         <i class="fas fa-chevron-right text-xs"></i>
         <span class="text-slate-900">{{CATEGORY_NAME}}</span>
       </nav>
@@ -53,17 +53,17 @@
       <!-- Hero Section -->
       <div class="mb-12 flex items-center gap-6">
         <div class="category-icon-hero">
-          <img 
-            src="/img/brand/icon-{{CATEGORY_ICON}}.webp" 
-            alt="{{CATEGORY_NAME}} icon" 
-            width="80" 
-            height="80" 
+          <img
+            src="/img/brand/icon-{{CATEGORY_ICON}}.webp"
+            alt="{{CATEGORY_ICON_ALT}}"
+            width="80"
+            height="80"
             loading="eager"
             decoding="async"
           >
         </div>
         <h1 class="text-4xl md:text-5xl font-bold text-slate-900">
-          Best SD Cards for {{CATEGORY_NAME}}
+          {{HERO_TITLE}}
         </h1>
       </div>
 
@@ -76,37 +76,37 @@
 
     <!-- Devices Grid -->
     <section x-data="categoryDevices()" x-init="init()">
-      <h2 class="text-2xl font-bold text-slate-900 mb-6">All {{CATEGORY_NAME}} Devices</h2>
-      
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">{{ALL_DEVICES_HEADING}}</h2>
+
       <!-- Modern Filter Buttons -->
       <div class="mb-8 flex flex-wrap gap-3 items-center" x-cloak>
-        <div class="text-sm font-semibold text-slate-700 mr-2">Filter by brand:</div>
-        
+        <div class="text-sm font-semibold text-slate-700 mr-2">{{FILTER_BY_BRAND_LABEL}}</div>
+
         <!-- Clear All Button -->
-        <button 
-          @click="clearAllFilters()" 
+        <button
+          @click="clearAllFilters()"
           :class="{
             'bg-slate-200 text-slate-700 border-slate-300 hover:bg-slate-300': hasActiveFilters(),
             'bg-slate-100 text-slate-400 border-slate-300 cursor-not-allowed': !hasActiveFilters()
           }"
           class="px-3 py-2 rounded-full border font-medium text-sm transition-all duration-200 flex items-center gap-2"
           :disabled="!hasActiveFilters()"
-          title="Show all brands"
+          title="{{RESET_TITLE}}"
         >
           <i class="fas fa-redo text-sm leading-none"></i>
-          Reset
+          {{RESET_LABEL}}
         </button>
-        
+
         <!-- Brand Filter Buttons -->
         <template x-for="brand in availableBrands" :key="brand">
-          <button 
-            @click="toggleBrand(brand)" 
+          <button
+            @click="toggleBrand(brand)"
             :class="{
               'bg-blue-600 text-white border-blue-700 shadow-md': isSelected(brand),
               'bg-white text-slate-700 border-slate-300 hover:border-blue-500 hover:bg-blue-50': !isSelected(brand)
             }"
             class="px-4 py-2 rounded-full border font-medium text-sm transition-all duration-200 hover:shadow-md"
-            :title="isSelected(brand) ? 'Click to hide ' + brand + ' devices' : 'Click to show only ' + brand + ' devices'"
+            :title="isSelected(brand) ? categoryPageStrings.hideBrandTemplate.replace('{brand}', brand) : categoryPageStrings.showOnlyBrandTemplate.replace('{brand}', brand)"
             x-text="brand"
           ></button>
         </template>
@@ -123,6 +123,8 @@
   {{FOOTER}}
 
   <script>
+    const categoryPageStrings = {{CATEGORY_PAGE_STRINGS_JSON}};
+
     // Category Devices Filter Component
     function categoryDevices() {
       return {
@@ -135,12 +137,14 @@
         },
 
         loadDevices() {
-          fetch('/data/devices.json')
+          fetch('{{DEVICES_DATA_URL}}')
             .then(res => res.json())
             .then(data => {
-              // Filter devices to only those in this category
+              // Filter devices to only those in this category (locale data may store the
+              // category as its display label or its canonical slug depending on locale)
               const categoryName = '{{CATEGORY_NAME}}';
-              this.allDevices = data.devices.filter(d => d.category === categoryName);
+              const categorySlug = '{{CATEGORY_SLUG}}';
+              this.allDevices = data.devices.filter(d => d.category === categoryName || d.category === categorySlug);
               
               // Extract unique device brands from device names
               const brands = new Set();
@@ -218,7 +222,7 @@
         },
 
         loadDevices() {
-          fetch('/data/devices.json')
+          fetch('{{DEVICES_DATA_URL}}')
             .then(res => res.json())
             .then(data => {
               this.allDevices = data.devices;

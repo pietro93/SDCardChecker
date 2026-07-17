@@ -44,8 +44,14 @@ const CATEGORY_DESCRIPTIONS = {
   },
 };
 
-const VIEW_CATEGORY_LABEL = { en: "View Category", ja: "詳細を見る", de: "Kategorie ansehen" };
-const DEVICE_COUNT_LABEL = { en: (n) => `${n} devices`, ja: (n) => `${n}個のデバイス`, de: (n) => `${n} Geräte` };
+const VIEW_CATEGORY_LABEL = { en: "View Category", ja: "詳細を見る", de: "Kategorie ansehen", fr: "Voir la catégorie", it: "Vedi categoria" };
+const DEVICE_COUNT_LABEL = {
+  en: (n) => `${n} devices`,
+  ja: (n) => `${n}個のデバイス`,
+  de: (n) => `${n} Geräte`,
+  fr: (n) => `${n} appareils`,
+  it: (n) => `${n} dispositivi`,
+};
 
 /**
  * Categories hidden from a locale's index entirely
@@ -98,9 +104,10 @@ function generateCategoriesIndex(allDevices, template, locale, availableLocales 
     .map((category) => generateCategoryCard(category, grouped[category].length, locale))
     .join("\n");
 
+  const categoriesUrl = `https://sdcardchecker.com${dirPrefix}/categories/`;
   const breadcrumbs = [
     { name: t("breadcrumbHome", locale), url: dirPrefix ? `${dirPrefix}/` : "/" },
-    { name: t("nav.categories", locale), url: `https://sdcardchecker.com${dirPrefix}/categories/` }
+    { name: t("categoriesIndex.breadcrumbLabel", locale), url: `${dirPrefix}/categories/` }
   ];
   const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
 
@@ -108,6 +115,15 @@ function generateCategoriesIndex(allDevices, template, locale, availableLocales 
     .replace(/{{CATEGORIES_GRID}}/g, categoryCards)
     .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
     .replace(/{{HREFLANG_TAGS}}/g, generateHreflangTags("/categories/", availableLocales))
+    .replace(/{{LANG}}/g, locale)
+    .replace(/{{PAGE_TITLE}}/g, t("categoriesIndex.pageTitle", locale))
+    .replace(/{{PAGE_DESCRIPTION}}/g, t("categoriesIndex.pageDescription", locale))
+    .replace(/{{CATEGORIES_URL}}/g, categoriesUrl)
+    .replace(/{{HERO_TITLE}}/g, t("categoriesIndex.heroTitle", locale))
+    .replace(/{{HERO_SUBTITLE}}/g, t("categoriesIndex.heroSubtitle", locale))
+    .replace(/{{BREADCRUMB_LABEL}}/g, t("categoriesIndex.breadcrumbLabel", locale))
+    .replace(/{{HOME_URL}}/g, dirPrefix ? `${dirPrefix}/` : "/")
+    .replace(/{{HOME_LABEL}}/g, t("breadcrumbHome", locale))
     .replace(/{{HEADER}}/g, components.generateHeader(locale))
     .replace(/{{FOOTER}}/g, components.generateFooter(locale))
     .replace(/{{GROW_SCRIPT}}/g, components.generateGrowScript())
@@ -115,24 +131,19 @@ function generateCategoriesIndex(allDevices, template, locale, availableLocales 
 }
 
 /**
- * Generate the categories index page for a single locale (no-op if that locale has no
- * categories-index template yet)
+ * Generate the categories index page for a single locale. Every enabled locale renders
+ * from the shared categories-index.html template (locale-parameterized via t()); Japanese
+ * keeps its own template file for CJK-specific styling/copy.
  */
 function generateCategoriesIndexPage(allDevices, distPath, locale = "en", availableLocales = [locale]) {
-  const templateFile = locale === "en" ? "categories-index.html" : `categories-index-${locale}.html`;
+  const templateFile = locale === "ja" ? "categories-index-ja.html" : "categories-index.html";
   const templatePath = path.join(srcPath, "templates", templateFile);
   if (!fs.existsSync(templatePath)) return;
 
   let template = readTemplate(templatePath);
   template = processIncludes(template, path.join(srcPath, "templates"));
 
-  // Only hreflang to locales that actually have a categories-index template of their own
-  const localesWithPage = availableLocales.filter((l) => {
-    const f = l === "en" ? "categories-index.html" : `categories-index-${l}.html`;
-    return fs.existsSync(path.join(srcPath, "templates", f));
-  });
-
-  const html = generateCategoriesIndex(allDevices, template, locale, localesWithPage);
+  const html = generateCategoriesIndex(allDevices, template, locale, availableLocales);
   const dir = locales[locale] && locales[locale].dir ? locales[locale].dir : "";
   const outPath = path.join(distPath, dir, "categories", "index.html");
   writeFile(outPath, html);

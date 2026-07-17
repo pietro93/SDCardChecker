@@ -3,73 +3,73 @@
   "action-cameras": {
     "slug": "action-cameras",
     "icon": "action-camera",
-    "label": { "en": "Action Cameras", "ja": "アクションカメラ", "de": "Actionkameras", "fr": "", "it": "" },
+    "label": { "en": "Action Cameras", "ja": "アクションカメラ", "de": "Actionkameras", "fr": "Caméras d'action", "it": "Action cam" },
     "matchValues": ["Action Cameras", "action-cameras", "アクションカメラ"]
   },
   "cameras": {
     "slug": "cameras",
     "icon": "camera",
-    "label": { "en": "Cameras", "ja": "カメラ", "de": "Kameras", "fr": "", "it": "" },
+    "label": { "en": "Cameras", "ja": "カメラ", "de": "Kameras", "fr": "Appareils photo", "it": "Fotocamere" },
     "matchValues": ["Cameras", "cameras", "カメラ", "Film Cameras", "film-cameras", "DSLR Cameras", "dslr-cameras", "Mirrorless Cameras", "mirrorless-cameras", "Cinema Cameras", "cinema-cameras", "Trail Cameras", "trail-cameras"]
   },
   "audio-and-hi-fi": {
     "slug": "audio-and-hi-fi",
     "icon": "audio-hi-fi",
-    "label": { "en": "Audio & Hi-Fi", "ja": "オーディオ・ハイファイ", "de": "Audio & Hi-Fi", "fr": "", "it": "" },
+    "label": { "en": "Audio & Hi-Fi", "ja": "オーディオ・ハイファイ", "de": "Audio & Hi-Fi", "fr": "Audio et Hi-Fi", "it": "Audio e Hi-Fi" },
     "matchValues": ["Audio & Hi-Fi", "audio-and-hi-fi"]
   },
   "computing-and-tablets": {
     "slug": "computing-and-tablets",
     "icon": "computing",
-    "label": { "en": "Computing & Tablets", "ja": "コンピュータ・タブレット", "de": "Computer & Tablets", "fr": "", "it": "" },
+    "label": { "en": "Computing & Tablets", "ja": "コンピュータ・タブレット", "de": "Computer & Tablets", "fr": "Informatique et tablettes", "it": "Computer e tablet" },
     "matchValues": ["Computing & Tablets", "computing-and-tablets", "コンピュータ・タブレット"]
   },
   "dash-cams": {
     "slug": "dash-cams",
     "icon": "dashcam",
-    "label": { "en": "Dash Cams", "ja": "ドライブレコーダー", "de": "Dashcams", "fr": "", "it": "" },
+    "label": { "en": "Dash Cams", "ja": "ドライブレコーダー", "de": "Dashcams", "fr": "Caméras embarquées", "it": "Dash cam" },
     "matchValues": ["Dash Cams", "dash-cams", "ドライブレコーダー"]
   },
   "drones": {
     "slug": "drones",
     "icon": "drone",
-    "label": { "en": "Drones", "ja": "ドローン", "de": "Drohnen", "fr": "", "it": "" },
+    "label": { "en": "Drones", "ja": "ドローン", "de": "Drohnen", "fr": "Drones", "it": "Droni" },
     "matchValues": ["Drones", "drones", "ドローン"]
   },
   "gaming-handhelds": {
     "slug": "gaming-handhelds",
     "icon": "gaming",
-    "label": { "en": "Gaming Handhelds", "ja": "携帯ゲーム機", "de": "Handheld-Konsolen", "fr": "", "it": "" },
+    "label": { "en": "Gaming Handhelds", "ja": "携帯ゲーム機", "de": "Handheld-Konsolen", "fr": "Consoles portables", "it": "Console portatili" },
     "matchValues": ["Gaming Handhelds", "gaming-handhelds", "携帯ゲーム機"]
   },
   "music-production": {
     "slug": "music-production",
     "icon": "music-production",
-    "label": { "en": "Music Production", "ja": "音楽制作", "de": "Musikproduktion", "fr": "", "it": "" },
+    "label": { "en": "Music Production", "ja": "音楽制作", "de": "Musikproduktion", "fr": "Production musicale", "it": "Produzione musicale" },
     "matchValues": ["Music Production", "music-production"]
   },
   "security-cameras": {
     "slug": "security-cameras",
     "icon": "security-camera",
-    "label": { "en": "Security Cameras", "ja": "セキュリティカメラ", "de": "Überwachungskameras", "fr": "", "it": "" },
+    "label": { "en": "Security Cameras", "ja": "セキュリティカメラ", "de": "Überwachungskameras", "fr": "Caméras de sécurité", "it": "Telecamere di sicurezza" },
     "matchValues": ["Security Cameras", "security-cameras", "セキュリティカメラ"]
   },
   "smartphones": {
     "slug": "smartphones",
     "icon": "smartphone",
-    "label": { "en": "Smartphones", "ja": "スマートフォン", "de": "Smartphones", "fr": "", "it": "" },
+    "label": { "en": "Smartphones", "ja": "スマートフォン", "de": "Smartphones", "fr": "Smartphones", "it": "Smartphone" },
     "matchValues": ["Smartphones", "smartphones", "スマートフォン", "Smartphones & Tablets"]
   },
   "accessories": {
     "slug": "accessories",
     "icon": "accessory",
-    "label": { "en": "Accessories", "ja": "アクセサリー", "de": "Zubehör", "fr": "", "it": "" },
+    "label": { "en": "Accessories", "ja": "アクセサリー", "de": "Zubehör", "fr": "Accessoires", "it": "Accessori" },
     "matchValues": ["Accessories", "accessories", "アクセサリー"]
   },
   "3d-printers-and-fabrication": {
     "slug": "3d-printers-and-fabrication",
     "icon": "3d-printer",
-    "label": { "en": "3D Printers & Fabrication", "ja": "3Dプリンター", "de": "3D-Drucker", "fr": "", "it": "" },
+    "label": { "en": "3D Printers & Fabrication", "ja": "3Dプリンター", "de": "3D-Drucker", "fr": "Imprimantes 3D et fabrication", "it": "Stampanti 3D e fabbricazione" },
     "matchValues": ["3D Printers & Fabrication", "3d-printers-and-fabrication"]
   }
 }

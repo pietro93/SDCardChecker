@@ -1,47 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{LANG}}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SD Card Categories - Find the Best Card for Your Device | SD Card Checker</title>
-  <meta name="description" content="Browse SD card recommendations by device category. Find the best SD cards for cameras, drones, gaming handhelds, action cameras, computing devices, and more.">
-  <link rel="canonical" href="https://sdcardchecker.com/categories/">
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{PAGE_DESCRIPTION}}">
+  <link rel="canonical" href="{{CATEGORIES_URL}}">
 {{HREFLANG_TAGS}}
 
   <!-- Open Graph for Social Sharing -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="SD Card Categories - Find the Best Card for Your Device">
-  <meta property="og:description" content="Browse SD card recommendations by device category. Find the best SD cards for cameras, drones, gaming handhelds, action cameras, computing devices, and more.">
+  <meta property="og:title" content="{{PAGE_TITLE}}">
+  <meta property="og:description" content="{{PAGE_DESCRIPTION}}">
   <meta property="og:image" content="https://sdcardchecker.com/img/og-category.webp">
-  <meta property="og:url" content="https://sdcardchecker.com/categories/">
+  <meta property="og:url" content="{{CATEGORIES_URL}}">
   <meta property="og:site_name" content="SD Card Checker">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SD Card Categories - Find the Best Card for Your Device">
-  <meta name="twitter:description" content="Browse SD card recommendations by device category. Find the best SD cards for cameras, drones, gaming handhelds, action cameras, computing devices, and more.">
+  <meta name="twitter:title" content="{{PAGE_TITLE}}">
+  <meta name="twitter:description" content="{{PAGE_DESCRIPTION}}">
   <meta name="twitter:image" content="https://sdcardchecker.com/img/og-category.webp">
 
   <!-- Breadcrumb Schema -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://sdcardchecker.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Categories",
-        "item": "https://sdcardchecker.com/categories/"
-      }
-    ]
-  }
+  {{BREADCRUMB_SCHEMA}}
   </script>
 
   <link rel="stylesheet" href="/assets/css/tailwind.css">
@@ -57,9 +40,9 @@
   <div class="bg-white border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 py-3">
       <nav class="text-sm text-slate-600 flex items-center gap-2">
-        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <a href="{{HOME_URL}}" class="text-blue-600 hover:underline">{{HOME_LABEL}}</a>
         <i class="fas fa-chevron-right text-xs"></i>
-        <span class="text-slate-900">Categories</span>
+        <span class="text-slate-900">{{BREADCRUMB_LABEL}}</span>
       </nav>
     </div>
   </div>
@@ -69,10 +52,10 @@
       <!-- Hero Section -->
       <div class="mb-12">
         <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-          SD Card Categories
+          {{HERO_TITLE}}
         </h1>
         <p class="text-lg text-slate-600 leading-relaxed max-w-2xl">
-          Browse our comprehensive collection of SD card recommendations organized by device type. Whether you're looking for the best card for your camera, drone, gaming handheld, or any other device, we've got you covered.
+          {{HERO_SUBTITLE}}
         </p>
       </div>
 

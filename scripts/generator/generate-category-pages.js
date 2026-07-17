@@ -65,7 +65,7 @@ function getDeviceImage(device) {
 */
 function generateDeviceCards(devices, locale) {
   const dirPrefix = locales[locale] && locales[locale].dir ? `/${locales[locale].dir}` : "";
-  const viewLabel = locale === "ja" ? "詳細 →" : "View →";
+  const viewLabel = t("categoryPage.viewDevice", locale);
   // Sort devices alphabetically by name
   const sortedDevices = [...devices].sort((a, b) => a.name.localeCompare(b.name));
   return sortedDevices
@@ -117,6 +117,8 @@ const GENERIC_INTRO_TEMPLATES = {
   en: (label) => `Find the best SD cards for your ${label} devices. Compare speeds, prices, and features.`,
   ja: (label) => `${label}デバイス用の最適なSDカードを見つけてください。速度、価格、機能を比較してください。`,
   de: (label) => `Finden Sie die besten SD-Karten für Ihre ${label}-Geräte. Vergleichen Sie Geschwindigkeiten, Preise und Funktionen.`,
+  fr: (label) => `Trouvez les meilleures cartes SD pour vos appareils ${label}. Comparez vitesses, prix et fonctionnalités.`,
+  it: (label) => `Trova le migliori schede SD per i tuoi dispositivi ${label}. Confronta velocità, prezzi e funzionalità.`,
 };
 
 function getCategoryIntro(categorySlug, category, locale) {
@@ -159,9 +161,8 @@ function generateCategoryPage(category, devices, template, locale = "en", catego
   const categorySlug = getCategorySlug(category);
   const categoryUrl = `${baseUrl}${dirPrefix}/categories/${categorySlug}/`;
   const categoryLabel = getCategoryLabel(category, locale);
-  const categoryTitle = locale === "ja"
-    ? `${categoryLabel}向けの最高のSDカード | SD Card Checker`
-    : `Best SD Cards for ${categoryLabel} | SD Card Checker`;
+  const heroTitle = t("categoryPage.heroTitleTemplate", locale).replace("{category}", categoryLabel);
+  const categoryTitle = `${heroTitle} | SD Card Checker`;
   const categoryIntro = getCategoryIntro(categorySlug, category, locale);
   // Build description from intro text, truncating to ~140-150 chars for SEO
   const categoryDescription = categoryIntro.length > 155
@@ -180,14 +181,38 @@ function generateCategoryPage(category, devices, template, locale = "en", catego
   const localesWithCategory = [...(categoryLocalesMap[categorySlug] || [locale])];
   const hreflangTags = generateHreflangTags(`/categories/${categorySlug}/`, localesWithCategory);
 
+  const homeUrl = dirPrefix ? `${dirPrefix}/` : "/";
+  const allDevicesHeading = t("categoryPage.allDevicesHeadingTemplate", locale).replace("{category}", categoryLabel);
+  const categoryIconAlt = t("categoryPage.iconAltTemplate", locale).replace("{category}", categoryLabel);
+  const categoryPageStrings = {
+    hideBrandTemplate: t("categoryPage.hideBrandTemplate", locale),
+    showOnlyBrandTemplate: t("categoryPage.showOnlyBrandTemplate", locale),
+  };
+  const localizedDevicesPath = path.join(__dirname, "../../data", `devices-${locale}.json`);
+  const devicesDataUrl = locale !== "en" && fs.existsSync(localizedDevicesPath)
+    ? `/data/devices-${locale}.json`
+    : "/data/devices.json";
+
   let html = template
     .replace(/{{CATEGORY_TITLE}}/g, categoryTitle)
     .replace(/{{CATEGORY_DESCRIPTION}}/g, categoryDescription)
     .replace(/{{CATEGORY_URL}}/g, categoryUrl)
     .replace(/{{HREFLANG_TAGS}}/g, hreflangTags)
     .replace(/{{CATEGORY_NAME}}/g, categoryLabel)
+    .replace(/{{CATEGORY_SLUG}}/g, categorySlug)
     .replace(/{{CATEGORY_ICON}}/g, categoryIcon)
+    .replace(/{{CATEGORY_ICON_ALT}}/g, categoryIconAlt)
     .replace(/{{CATEGORY_INTRO}}/g, categoryIntro)
+    .replace(/{{HERO_TITLE}}/g, heroTitle)
+    .replace(/{{ALL_DEVICES_HEADING}}/g, allDevicesHeading)
+    .replace(/{{FILTER_BY_BRAND_LABEL}}/g, t("categoryPage.filterByBrand", locale))
+    .replace(/{{RESET_LABEL}}/g, t("categoryPage.reset", locale))
+    .replace(/{{RESET_TITLE}}/g, t("categoryPage.resetTitle", locale))
+    .replace(/{{CATEGORY_PAGE_STRINGS_JSON}}/g, JSON.stringify(categoryPageStrings))
+    .replace(/{{DEVICES_DATA_URL}}/g, devicesDataUrl)
+    .replace(/{{LANG}}/g, locale)
+    .replace(/{{HOME_URL}}/g, homeUrl)
+    .replace(/{{HOME_LABEL}}/g, t("breadcrumbHome", locale))
     .replace(/{{SUBCATEGORY_LINKS}}/g, locale === "en" ? generateSubcategoryLinksHTML(category, devices) : "")
     .replace(/{{DEVICE_CARDS_HTML}}/g, deviceCardsHTML)
     .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
