@@ -275,5 +275,262 @@
       "samsung-galaxy-s23",
       "iphone-15"
     ]
+  },
+  {
+    "id": "sony-xperia-1-vi",
+    "name": "Sony Xperia 1 VI",
+    "category": "smartphones",
+    "slug": "sony-xperia-1-vi",
+    "searchTerms": [
+      "Sony Xperia 1 VI maximale SD-Kartengröße",
+      "beste microSD für Xperia 1 VI 4K-Video",
+      "Xperia 1 VI Speicherkartenslot Spezifikationen",
+      "Speicher erweitern Sony Xperia 1 VI"
+    ],
+    "sdCard": {
+      "type": "microSDXC (UHS-I)",
+      "minSpeed": "V30 / U3 / A2",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "1,5TB (exFAT)"
+    },
+    "whySpecs": "Das Xperia 1 VI richtet sich stark an professionelle Content-Creator und bietet eine leistungsstarke 4K-HDR-Videopipeline. Die Aufnahme von Video mit hoher Bitrate direkt auf die microSD-Karte erfordert eine anhaltende Schreibgeschwindigkeit von mindestens 30 MB/s, um Bildausfälle oder Dateikorruption zu vermeiden. Obwohl das Gerät gewaltige 1,5TB-Kapazitäten unterstützt, ist eine V30-zertifizierte Karte einer günstigeren, generischen Karte mit hoher Kapazität vorzuziehen – das ist entscheidend für zuverlässige Medienaufnahmen. Eine langsamere Karte bremst die Kamera-App bei Serienaufnahmen und hochauflösenden Videoaufnahmen aus.",
+    "faq": [
+      {
+        "q": "Kann ich beim Xperia 1 VI 4K-Video direkt auf die SD-Karte aufnehmen?",
+        "a": "Ja, Sie können die Kamera-App so einstellen, dass Medien auf der microSD-Karte gespeichert werden, sofern die Karte mindestens mit <b>V30 / U3</b> bewertet ist, um die hohen Datenraten zu bewältigen."
+      }
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-a55-5g",
+      "moto-g-stylus-5g-2025"
+    ],
+    "imageUrl": "/img/devices/smartphones/sony-xperia-1-vi.webp"
+  },
+  {
+    "id": "samsung-galaxy-a55-5g",
+    "name": "Samsung Galaxy A55 5G",
+    "category": "smartphones",
+    "slug": "samsung-galaxy-a55-5g",
+    "searchTerms": [
+      "Samsung A55 5G SD-Karten Unterstützung",
+      "beste micro SD-Karte für Galaxy A55",
+      "Samsung A55 externer Speicher maximal",
+      "SD-Karte formatieren A55 5G"
+    ],
+    "sdCard": {
+      "type": "microSDXC (UHS-I)",
+      "minSpeed": "V30 / U3 / A2",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB (exFAT)"
+    },
+    "whySpecs": "Als Mittelklasse-Smartphone mit leistungsfähigem 4K-Video und Gaming-Funktionen ist das A55 5G auf seinen Hybrid-SIM/microSD-Steckplatz angewiesen, um den begrenzten internen Speicher auszugleichen. Da Android-Nutzer häufig Apps und Medien auf externen Speicher verschieben, ist eine A2-zertifizierte Karte unerlässlich. Die A2-Spezifikation gewährleistet hohe zufällige Lese-/Schreib-IOPS, sodass auf der Karte gespeicherte Apps bei Hintergrund-Updates nicht ruckeln oder abstürzen. Eine Standard-V30-Bewertung garantiert, dass 4K-Videoaufnahmen reibungslos gespeichert werden, ohne die Kamera-Oberfläche zu verlangsamen.",
+    "faq": [
+      {
+        "q": "Hat das Galaxy A55 einen eigenen SD-Kartenslot?",
+        "a": "Nein, es verwendet einen Hybrid-Steckplatz. Sie können entweder zwei SIM-Karten <b>ODER</b> eine SIM-Karte und eine microSD-Karte verwenden, aber nicht alle drei gleichzeitig."
+      }
+    ],
+    "recommendedBrands": [
+      {
+        "id": "samsung-evo-plus"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "sony-xperia-1-vi",
+      "moto-g-stylus-5g-2025",
+      "samsung-galaxy-s23"
+    ],
+    "imageUrl": "/img/devices/smartphones/samsung-galaxy-a55-5g.webp"
+  },
+  {
+    "id": "moto-g-stylus-5g-2025",
+    "name": "Motorola Moto G Stylus 5G (2025)",
+    "category": "smartphones",
+    "slug": "moto-g-stylus-5g-2025",
+    "searchTerms": [
+      "Moto G Stylus 5G 2025 SD-Karte formatieren",
+      "beste microSD für Moto G Stylus 2025",
+      "Speicher erweitern Moto G Stylus 5G maximale Größe",
+      "Moto G Stylus 2025 1TB SD-Karte"
+    ],
+    "sdCard": {
+      "type": "microSDXC (UHS-I)",
+      "minSpeed": "Class 10 / U3 / A1",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB (exFAT)"
+    },
+    "whySpecs": "Dieses preisgünstige Creator-Smartphone ermöglicht es Künstlern und Notizenschreibern, riesige Mengen digitaler Kunstwerke, Fotos und Medien zu speichern. Während bei Moto-G-Nutzern oft die reine Kapazität im Vordergrund steht, verhindert eine U3/V30-Karte Systemverlangsamungen beim Durchsuchen großer Galerien mit hochauflösenden Stylus-Skizzen oder aufgenommenen Videos. Angesichts der Hardware werden UHS-I-Geschwindigkeiten den Speicherbus des Telefons ohnehin ausreizen, sodass es sich nicht lohnt, für UHS-II-Karten mehr auszugeben.",
+    "faq": [
+      {
+        "q": "Kann ich meine Apps beim Moto G Stylus auf die SD-Karte verschieben?",
+        "a": "Ja, Motorola erlaubt es, die microSD-Karte als <b>„Adoptierbaren Speicher“</b> zu formatieren, um Apps zu installieren. Wir empfehlen jedoch dringend eine A1- oder A2-zertifizierte Karte, um eine Verlangsamung des Telefons zu vermeiden."
+      }
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-plus"
+      }
+    ],
+    "relatedDevices": [
+      "sony-xperia-1-vi",
+      "samsung-galaxy-a55-5g",
+      "samsung-galaxy-xcover-7"
+    ],
+    "imageUrl": "/img/devices/smartphones/moto-g-stylus-5g-2025.webp"
+  },
+  {
+    "id": "samsung-galaxy-xcover-7",
+    "name": "Samsung Galaxy XCover 7",
+    "category": "smartphones",
+    "slug": "samsung-galaxy-xcover-7",
+    "searchTerms": [
+      "Samsung Galaxy XCover 7 maximale SD-Kartengröße",
+      "beste microSD für Galaxy XCover 7",
+      "XCover 7 robustes Telefon Speicherkartenslot",
+      "Speicher erweitern Samsung XCover 7"
+    ],
+    "sdCard": {
+      "type": "microSDXC (UHS-I)",
+      "minSpeed": "Class 10 / U1 / A1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB (exFAT)"
+    },
+    "whySpecs": "Das XCover 7 ist für Außendienstmitarbeiter, Lagerpersonal und Unternehmenseinsätze konzipiert, bei denen das Telefon ganze Schichten lang Barcode-Scanning- und Datenerfassungs-Apps ausführt. Diese Arbeitslast bedeutet ständige kleine Schreibvorgänge auf dem Speicher statt gelegentlicher großer Dateien, weshalb die Kartenausdauer wichtiger ist als die maximale sequentielle Geschwindigkeit. Eine microSD-Karte mit hoher Ausdauer vermeidet die vorzeitigen Schreibverschleiß-Ausfälle, die generische Verbraucherkarten bei dieser Art von anhaltender, sich wiederholender Nutzung erleiden, und eine A1-Bewertung sorgt für gleichbleibende App-Leistung, wenn Geschäftssoftware auf der Karte installiert wird.",
+    "faq": [
+      {
+        "q": "Welche microSD-Karte eignet sich am besten für das robuste Galaxy XCover 7?",
+        "a": "Priorisieren Sie <b>ausdauer-zertifizierte</b> Karten gegenüber reiner Geschwindigkeit. Das XCover 7 wird typischerweise für ständige App-Schreibvorgänge (Scannen, Protokollierung) statt für große Mediendateien verwendet, sodass eine Karte mit hoher Ausdauer eine Standard-Verbraucherkarte bei täglicher Unternehmensnutzung übertrifft."
+      }
+    ],
+    "recommendedBrands": [
+      {
+        "id": "samsung-pro-endurance"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "moto-g-stylus-5g-2025",
+      "ulefone-armor-33"
+    ],
+    "imageUrl": "/img/devices/smartphones/samsung-galaxy-xcover-7.webp"
+  },
+  {
+    "id": "xiaomi-redmi-note-15",
+    "name": "Xiaomi Redmi Note 15",
+    "category": "smartphones",
+    "slug": "xiaomi-redmi-note-15",
+    "searchTerms": [
+      "Xiaomi Redmi Note 15 maximale SD-Kartengröße",
+      "beste microSD für Redmi Note 15",
+      "Redmi Note 15 Speicherkartenslot Spezifikationen",
+      "Speicher erweitern Redmi Note 15"
+    ],
+    "sdCard": {
+      "type": "microSDXC (UHS-I)",
+      "minSpeed": "Class 10 / U1 / A1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB (exFAT)"
+    },
+    "whySpecs": "Die Redmi-Note-Serie ist gerade deshalb beliebt, weil sie Flaggschiffe preislich unterbietet und trotzdem einen dedizierten microSD-Slot bietet, sodass die meisten Käufer eher die Kapazität im Rahmen ihres Budgets maximieren möchten, als auf Spitzengeschwindigkeit zu setzen. Eine einfache U1/A1-Karte reicht aus, um die Standard-Kamera-App und das App-Wechseln reaktionsschnell zu halten; zusätzliches Geld für eine V30/A2-Karte bringt kaum realen Nutzen, es sei denn, Sie filmen gezielt in 4K und möchten das Material auf der Karte speichern. Kapazität, nicht Geschwindigkeitsklasse, ist hier die Spezifikation, auf die es ankommt.",
+    "faq": [
+      {
+        "q": "Lohnt sich eine schnelle V30-microSD-Karte für das Redmi Note 15?",
+        "a": "Nicht unbedingt. Sofern Sie nicht direkt 4K-Video auf der Karte aufnehmen, reicht eine Standard-<b>U1/A1</b>-Karte für alltägliche Fotos, Musik und App-Speicherung völlig aus, und Sie sparen Geld, wenn Sie die Kapazität statt der Geschwindigkeitsklasse priorisieren."
+      }
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "moto-g-stylus-5g-2025",
+      "samsung-galaxy-a55-5g"
+    ],
+    "imageUrl": "/img/devices/smartphones/xiaomi-redmi-note-15.webp"
+  },
+  {
+    "id": "ulefone-armor-33",
+    "name": "Ulefone Armor 33",
+    "category": "smartphones",
+    "slug": "ulefone-armor-33",
+    "searchTerms": [
+      "Ulefone Armor 33 maximale SD-Kartengröße",
+      "beste microSD für Ulefone Armor 33",
+      "Armor 33 robustes Telefon Speicherkartenslot",
+      "Speicher erweitern Ulefone Armor 33 2TB"
+    ],
+    "sdCard": {
+      "type": "microSDXC (UHS-I)",
+      "minSpeed": "V30 / U3 / A2",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB (exFAT)"
+    },
+    "whySpecs": "Robuste Outdoor-Telefone wie das Armor 33 werben mit gewaltiger Spitzenkapazität (bis zu 2TB) für Nutzer, die lange Touren abseits der Zivilisation, Wärmebildaufnahmen oder langwierige Videos ohne Cloud-Zugang aufzeichnen. Diese Arbeitslast profitiert von einer wirklich schnellen, zuverlässigen V30/A2-Karte statt einer billigen Karte mit hoher Kapazität, da verlorene Bilder bei einer einmaligen Aufnahme (eine Wanderung, eine Baustellenbegehung) nicht wiederholt werden können. Da das robuste, staub- und wasserdichte Design des Telefons auch auf raue Umgebungen ausgelegt ist, lohnt es sich zudem, eine Karte zu wählen, die für Temperatur- und Stoßbeständigkeit ausgelegt ist.",
+    "faq": [
+      {
+        "q": "Kann das Ulefone Armor 33 wirklich eine 2TB-microSD-Karte verwenden?",
+        "a": "Ja, das Armor 33 unterstützt microSDXC-Karten mit bis zu <b>2TB</b>, formatiert als exFAT – nützlich für lange Videoaufnahmen abseits der Zivilisation, wenn Sie das Filmmaterial nicht in die Cloud hochladen können."
+      }
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-xcover-7",
+      "sony-xperia-1-vi"
+    ],
+    "imageUrl": "/img/devices/smartphones/ulefone-armor-33.webp"
   }
 ]

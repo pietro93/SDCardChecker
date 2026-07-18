@@ -1095,6 +1095,291 @@
       "imageUrl": "/img/devices/action-cameras/insta360-one-x3.webp"
     },
     {
+      "id": "insta360-x5",
+      "name": "Insta360 X5",
+      "category": "Action Cameras",
+      "slug": "insta360-x5",
+      "searchTerms": [
+        "insta360 x5 sd card requirements",
+        "best microsd for insta360 x5 8k video",
+        "insta360 x5 max memory card size",
+        "insta360 x5 card error fix"
+      ],
+      "sdCard": {
+        "type": "microSDXC (UHS-I)",
+        "minSpeed": "V30 / U3",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "512GB",
+          "1TB"
+        ],
+        "maxCapacity": "1TB (exFAT)"
+      },
+      "whySpecs": "Recording high-bitrate 8K 360-degree video pushes microSD write speeds to their absolute limits. The Insta360 X5 requires a continuous, unbroken data stream to stitch its dual lenses together seamlessly. If a card drops below a 30 MB/s write speed for even a second, the camera will stop recording entirely and throw a <b>\"Card Too Slow\"</b> error. A verified V30 card from a reputable brand is non-negotiable; generic cards claiming high speeds will fail under the sustained thermal load of the camera.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd-action-cam",
+          "note": "High sustained read/write speeds built specifically for action cam footage"
+        },
+        {
+          "id": "lexar-professional-silver-microsd",
+          "note": "Reliable V30 UHS-I option with strong sustained write speeds"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why does my Insta360 X5 stop recording and say \"SD Card Error\"?",
+          "a": "This happens when your card's write speed drops below the camera's required bitrate. Ensure you are using a verified V30 card and format it directly inside the camera to clear fragmented sectors."
+        }
+      ],
+      "relatedDevices": [
+        "insta360-ace-pro-2",
+        "gopro-hero-14-black"
+      ],
+      "notes": "Latest flagship Insta360 360-degree camera. 8K dual-lens recording pushes sustained write speeds to the limit — 'Card Too Slow' errors are the #1 support issue, always trace back to a card that only claims V30 speeds without actually sustaining them.",
+      "imageUrl": "/img/devices/action-cameras/insta360-x5.webp"
+    },
+    {
+      "id": "dji-osmo-action-6",
+      "name": "DJI Osmo Action 6",
+      "category": "Action Cameras",
+      "slug": "dji-osmo-action-6",
+      "metaDescription": "DJI officially requires a UHS-I microSD card rated U3/V30 for the Osmo Action 6 (max 2TB). Here are the best-tested cards that meet DJI's published specifications.",
+      "searchTerms": [
+        "dji osmo action 6 sd card",
+        "osmo action 6 microsd",
+        "dji osmo action 6 memory card requirements",
+        "best sd card for osmo action 6",
+        "osmo action 6 card too slow error"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "The Osmo Action 6 continues DJI's large 1/1.3-inch sensor lineage, recording 4K at high frame rates with excellent low-light performance that comes with a correspondingly high bitrate. DJI's firmware runs an active speed check on insertion, and a card that can't sustain the required 30 MB/s write speed will trigger a <b>\"Card Too Slow\"</b> warning and refuse to record rather than risk a corrupted file. A verified V30 card is the firm minimum, not a suggestion.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why does my Osmo Action 6 say \"Card Too Slow\" and refuse to record?",
+          "a": "<b>DJI's firmware actively benchmarks your card on insertion.</b> If it can't sustain the 30 MB/s write speed the camera's bitrate requires, the camera blocks recording rather than risk a corrupted file. Use a verified V30 card from a reputable brand and reformat it in-camera if the error persists."
+        }
+      ],
+      "relatedDevices": [
+        "gopro-hero-14-black",
+        "insta360-ace-pro-2",
+        "dji-osmo-pocket-4"
+      ],
+      "notes": "DJI's current action camera flagship. DJI official minimum: U3/V30 UHS-I, max 2TB. 'Card Too Slow' is the most common support issue and always traces back to an underrated or counterfeit card.",
+      "imageUrl": "/img/devices/action-cameras/dji-osmo-action-6.webp"
+    },
+    {
+      "id": "dji-osmo-pocket-4",
+      "name": "DJI Osmo Pocket 4",
+      "category": "Action Cameras",
+      "slug": "dji-osmo-pocket-4",
+      "metaDescription": "DJI officially requires a UHS-I microSD card rated U3/V30 for the Osmo Pocket 4. Here are the best-tested cards that meet DJI's published specifications.",
+      "searchTerms": [
+        "dji osmo pocket 4 sd card",
+        "osmo pocket 4 microsd",
+        "dji osmo pocket 4 recommended memory card",
+        "osmo pocket 4 card too slow",
+        "best sd card for osmo pocket 4"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I/UHS-II",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "The Osmo Pocket 4 continues DJI's gimbal-stabilized pocket camera line with higher-resolution 4K recording than the Pocket 3. DJI officially requires a UHS-I microSD card with U3/V30 minimum, and the camera runs the same on-insertion speed check as the rest of the Osmo lineup — an underrated card triggers a <b>\"Card Too Slow\"</b> error and blocks recording outright. UHS-II cards work but only speed up file transfers to a computer, not in-camera recording.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "lexar-professional-silver-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need a UHS-II card for the Osmo Pocket 4?",
+          "a": "<b>No.</b> DJI's official minimum is U3/V30 UHS-I. A UHS-II card will work but only provides faster file transfers to a computer — it does not unlock higher recording quality or prevent the 'Card Too Slow' error any better than a good UHS-I V30 card."
+        }
+      ],
+      "relatedDevices": [
+        "dji-osmo-pocket-3",
+        "dji-osmo-action-6",
+        "insta360-ace-pro-2"
+      ],
+      "notes": "Successor to the Osmo Pocket 3 with higher-resolution 4K recording. DJI official minimum: U3/V30 UHS-I, max 1TB. 'Card Too Slow' is the primary bottleneck to flag for undersped cards."
+    },
+    {
+      "id": "dji-lito-x1",
+      "name": "DJI Lito X1",
+      "category": "Action Cameras",
+      "slug": "dji-lito-x1",
+      "metaDescription": "Best microSD cards for the DJI Lito X1 — V30-rated picks for DJI's compact wearable action camera.",
+      "searchTerms": [
+        "dji lito x1 sd card",
+        "dji lito x1 microsd",
+        "dji lito x1 memory card requirements",
+        "best sd card for dji lito x1",
+        "dji lito x1 card too slow"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "The Lito X1 is DJI's compact, ultra-wearable entry in the action camera lineup, aimed at continuous POV capture rather than mounted setups. Despite its small form factor, it records at a high enough bitrate that a card without a verified V30 sustained write speed will trigger DJI's familiar <b>\"Card Too Slow\"</b> error and halt recording. Because the camera is designed for grab-and-go use, a reliable name-brand card matters just as much as raw capacity — a dropped recording mid-clip is the most common complaint with underrated cards.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why does my DJI Lito X1 stop recording partway through a clip?",
+          "a": "<b>This is almost always caused by a card that can't sustain 30 MB/s writes.</b> The Lito X1 runs the same 'Card Too Slow' protection as other DJI action cameras — use a verified V30 microSD card from a reputable brand to avoid interrupted recordings."
+        }
+      ],
+      "relatedDevices": [
+        "dji-osmo-action-6",
+        "insta360-go-3",
+        "gopro-hero-14-black"
+      ],
+      "notes": "Compact wearable action camera in DJI's lineup, positioned against the Insta360 GO series. V30 minimum firmly enforced via on-insertion speed check; 'Card Too Slow' is the primary bottleneck to address."
+    },
+    {
+      "id": "insta360-ace-pro-2",
+      "name": "Insta360 Ace Pro 2",
+      "category": "Action Cameras",
+      "slug": "insta360-ace-pro-2",
+      "metaDescription": "Best microSD cards for the Insta360 Ace Pro 2 — V30-rated picks for this flagship flip-screen action camera.",
+      "searchTerms": [
+        "insta360 ace pro 2 sd card",
+        "ace pro 2 microsd",
+        "insta360 ace pro 2 memory card",
+        "best sd card for insta360 ace pro 2",
+        "insta360 ace pro 2 card too slow"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "The Ace Pro 2 builds on the original Ace Pro's flip-screen design with an even larger sensor and higher-bitrate 4K recording. A V30 speed class card ensures stable, reliable capture across its advanced video modes, including high frame rates and detailed action sequences. As with other flagship action cameras, an underrated or counterfeit card is the most common cause of a <b>\"Card Too Slow\"</b> error interrupting a recording mid-session.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is the Ace Pro 2's card requirement different from the original Ace Pro?",
+          "a": "<b>No, both require a minimum V30 speed class microSD card.</b> The Ace Pro 2's larger sensor and higher bitrate make card quality even more important, but the speed class requirement itself hasn't changed."
+        }
+      ],
+      "relatedDevices": [
+        "insta360-x5",
+        "gopro-hero-14-black",
+        "dji-osmo-action-6"
+      ],
+      "notes": "Successor to the Insta360 Ace Pro with a larger sensor and higher-bitrate 4K. Competes directly with GoPro Hero 14 Black and DJI Osmo Action 6.",
+      "imageUrl": "/img/devices/action-cameras/insta360-ace-pro-2.webp"
+    },
+    {
+      "id": "gopro-hero-14-black",
+      "name": "GoPro Hero 14 Black",
+      "category": "Action Cameras",
+      "slug": "gopro-hero-14-black",
+      "metaDescription": "Best microSD cards for the GoPro Hero 14 Black — V30-rated picks for stable 5.3K+ recording.",
+      "searchTerms": [
+        "gopro hero 14 black sd card",
+        "hero 14 microsd",
+        "gopro hero 14 memory card requirements",
+        "best sd card for gopro hero 14",
+        "gopro hero 14 card too slow error"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I (UHS-II Compatible)",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "The Hero 14 Black continues GoPro's high-frame-rate 5.3K+ recording lineage with refined low-light performance and a correspondingly demanding bitrate. GoPro's firmware performs an in-camera speed check on card insertion, and a card that can't sustain the required 30 MB/s write speed will trigger a <b>\"Card Too Slow\"</b> error and block recording. V30 speed class is the safe minimum; V60+ cards offer no in-camera benefit but do speed up file transfers for multi-camera workflows.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why does my GoPro Hero 14 Black say \"Card Too Slow\"?",
+          "a": "<b>GoPro's firmware benchmarks your card on insertion.</b> If it can't sustain the 30 MB/s write speed that 5.3K+ recording requires, the camera blocks recording rather than risk corrupted footage. Use a verified V30 card and reformat it in-camera if the error persists."
+        }
+      ],
+      "relatedDevices": [
+        "gopro-hero-13",
+        "insta360-ace-pro-2",
+        "dji-osmo-action-6"
+      ],
+      "notes": "Latest flagship GoPro Hero model. Official GoPro tests continue to specify V30 as the required minimum; 'Card Too Slow' remains the #1 support issue traced to underrated or counterfeit cards."
+    },
+    {
       "id": "fiio-snowsky-echo-mini",
       "name": "FiiO SnowSky Echo Mini",
       "category": "Audio & Hi-Fi",
@@ -2339,7 +2624,7 @@
       ],
       "faq": [
         {
-          "q": "Is this camera still good in 2024?",
+          "q": "Is this camera still worth buying?",
           "a": "<b>Yes, for absolute beginners on a tight budget.</b> The Rebel T7 (known as EOS 2000D outside North America) is one of Canon's most affordable and best-selling DSLRs. While it's outdated compared to newer mirrorless cameras, it still produces great photos for learning photography. Any reliable Class 10 SD card will work perfectly."
         },
         {
@@ -5671,7 +5956,7 @@
         "dji-mini-4-pro",
         "dji-air-3s",
         "dji-mavic-3",
-        "dji-air-3"
+        "dji-mini-4k"
       ],
       "notes": "A popular prosumer drone with dual cameras, requiring reliable V30 cards for its high-quality video modes."
     },
@@ -6689,6 +6974,50 @@
       "imageUrl": "/img/devices/drones/dji-neo.webp"
     },
     {
+      "id": "dji-mavic-4-pro",
+      "name": "DJI Mavic 4 Pro",
+      "category": "Drones",
+      "slug": "dji-mavic-4-pro",
+      "searchTerms": [
+        "dji mavic 4 pro recommended microsd cards official",
+        "best sd card for mavic 4 pro 4k recording",
+        "mavic 4 pro max storage capacity"
+      ],
+      "sdCard": {
+        "type": "microSDXC (UHS-I / UHS-II)",
+        "minSpeed": "V30 (V60 recommended for ProRes)",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "1TB (exFAT)"
+      },
+      "whySpecs": "Professional drone videography with the Mavic 4 Pro involves capturing massive D-Log M or ProRes files. While standard H.265 recording requires a minimum V30 card, professional codecs demand significantly higher sustained write speeds to avoid corrupted aerial footage. Because you cannot swap a card mid-flight, reliability and speed outrank sheer capacity. Using a V60 card guarantees that the drone's buffer clears instantly, preventing missed shots during fast-paced commercial flights.",
+      "recommendedBrands": [
+        {
+          "id": "lexar-professional-silver-microsd",
+          "note": "Reliable V30 UHS-I option with strong sustained write speeds"
+        },
+        {
+          "id": "sandisk-extreme-pro-microsd-v60",
+          "note": "UHS-II V60 speeds needed for ProRes and D-Log M footage"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need a V60 card for the DJI Mavic 4 Pro?",
+          "a": "<b>If you are shooting standard 4K/60fps, a V30 card is sufficient.</b> However, if you utilize advanced codecs like Apple ProRes, a V60 card is required to handle the massive data throughput."
+        }
+      ],
+      "relatedDevices": [
+        "dji-air-3s",
+        "dji-avata-360"
+      ],
+      "notes": "DJI's flagship professional drone. ProRes/D-Log M recording demands V60 headroom over the standard H.265 V30 minimum. Mid-flight card swaps aren't possible, so reliability outranks raw capacity for this device.",
+      "imageUrl": "/img/devices/drones/dji-mavic-4-pro.webp"
+    },
+    {
       "id": "nintendo-switch",
       "name": "Nintendo Switch",
       "category": "Gaming Handhelds",
@@ -7521,7 +7850,10 @@
       "whySpecs": "GPD Win devices (Mini and Win 4) often feature high-speed UHS-II card readers. To play modern PC games directly from the SD card without stalling, investing in a V60 or V90 UHS-II card is highly beneficial.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-pro-sd-uhs2"
+          "id": "sandisk-extreme-pro-microsd-v60"
+        },
+        {
+          "id": "kingston-canvas-react-plus-microsd"
         }
       ],
       "faq": [
@@ -8184,7 +8516,7 @@
         "lenovo-legion-go-gen-2",
         "msi-claw-8-ex-ai-plus"
       ],
-      "notes": "Launching globally June 2026 with Intel's Arc G3 Extreme chipset and an 8.8-inch 144Hz AMOLED display. First OneXPlayer entry in this dataset. No dedicated product photo yet — uses the generic gaming-handheld placeholder image.",
+      "notes": "Launching globally June 2026 with Intel's Arc G3 Extreme chipset and an 8.8-inch 144Hz AMOLED display. First OneXPlayer entry in this dataset.",
       "imageUrl": "/img/devices/gaming-consoles/onexplayer-3.webp"
     },
     {
@@ -8491,6 +8823,229 @@
       ],
       "notes": "Niche but distinctive 1:1 aspect ratio square-screen handheld. Lower search volume than mainstream Anbernic devices, but fills a content gap for the DS/3DS dual-screen emulation community.",
       "imageUrl": "/img/devices/gaming-consoles/anbernic-rg-cube.webp"
+    },
+    {
+      "id": "acer-predator-atlas-8",
+      "name": "Acer Predator Atlas 8",
+      "category": "Gaming Handhelds",
+      "slug": "acer-predator-atlas-8",
+      "metaDescription": "Best microSD cards for the Acer Predator Atlas 8 — UHS-II V60/V90 picks for Acer's flagship Windows gaming handheld.",
+      "searchTerms": [
+        "acer predator atlas 8 sd card",
+        "predator atlas 8 microsd",
+        "acer predator atlas 8 storage expansion",
+        "best sd card for predator atlas 8",
+        "predator atlas 8 max capacity"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-II",
+        "minSpeed": "V60 / V90",
+        "minWriteSpeed": "60 MB/s",
+        "minAppPerformance": "A2",
+        "recommendedCapacity": [
+          "512GB",
+          "1TB"
+        ],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "Acer's flagship Predator-branded handheld pairs a high-refresh display with a UHS-II card reader built to keep pace with a full Windows PC gaming library. Because AAA titles installed straight to the microSD card can easily exceed 100GB each, the combination of A2 random-read performance and V60/V90 sequential throughput is what actually determines whether textures pop in cleanly or games stutter during fast scene loads. A budget UHS-I card will run, but it becomes the clear bottleneck the moment you're streaming assets from the card instead of the internal SSD.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-microsd-v60",
+          "note": "True UHS-II V60 performance for AAA asset streaming"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd",
+          "note": "UHS-II Gold tier, strong sustained write speeds"
+        },
+        {
+          "id": "kingston-canvas-react-plus-microsd",
+          "note": "Premium UHS-II V90 option for maximum headroom"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need a UHS-II card for the Predator Atlas 8?",
+          "a": "<b>No, the slot is backwards compatible with UHS-I cards</b>, but you'll leave real performance on the table. Since the Atlas 8's reader can drive full UHS-II bandwidth, a V60 or V90 card noticeably reduces load times when playing AAA titles directly off the microSD card instead of the internal SSD."
+        },
+        {
+          "q": "What capacity should I buy for the Predator Atlas 8?",
+          "a": "<b>512GB is the practical minimum, and 1TB is a better fit for a real PC game library.</b> Modern AAA installs routinely exceed 100GB, so anything smaller fills up after just a handful of titles."
+        }
+      ],
+      "relatedDevices": [
+        "asus-rog-ally-x",
+        "rog-xbox-ally-x",
+        "lenovo-legion-go-gen-2"
+      ],
+      "notes": "Acer's entry into the premium Windows handheld space, competing directly with the ROG Ally X and Legion Go series. UHS-II microSD reader is the primary expansion path since internal storage upgrades require opening the chassis.",
+      "imageUrl": "/img/devices/gaming-consoles/acer-predator-atlas-8.webp"
+    },
+    {
+      "id": "retroid-pocket-g2",
+      "name": "Retroid Pocket G2",
+      "category": "Gaming Handhelds",
+      "slug": "retroid-pocket-g2",
+      "metaDescription": "Best microSD cards for the Retroid Pocket G2 — A2-rated UHS-I picks for smooth Android emulation and asset streaming.",
+      "searchTerms": [
+        "retroid pocket g2 sd card",
+        "rp g2 microsd",
+        "retroid pocket g2 storage",
+        "retroid pocket g2 best microsd card",
+        "retroid g2 max capacity"
+      ],
+      "sdCard": {
+        "type": "microSDXC UHS-I",
+        "minSpeed": "U3 / V30",
+        "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A2 (recommended)",
+        "recommendedCapacity": [
+          "512GB",
+          "1TB"
+        ],
+        "maxCapacity": "2TB (theoretical)"
+      },
+      "whySpecs": "The Pocket G2 slots into Retroid's Android lineup alongside the Pocket 6, aimed at PS2, GameCube, and Switch emulation. Those ROM/ISO libraries are far larger than 8/16-bit retro sets, so a card that's only rated for sequential speed isn't enough — A2's random read/write performance is what keeps menu navigation and asset loading smooth when the OS and games both live on the microSD card. V30 covers the sustained write side for downloading and copying large files onto the card.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is A2 rating important for the Retroid Pocket G2?",
+          "a": "<b>Yes.</b> When Android apps, custom launchers, and game files all run off the microSD card, A2's random IOPS performance is what keeps menus and emulator loading responsive — a card without it will feel noticeably sluggish even if its sequential speeds look fine on paper."
+        },
+        {
+          "q": "How much storage do I need on the Pocket G2?",
+          "a": "<b>512GB is a solid starting point, but 1TB is recommended if you're emulating PS2, GameCube, or Switch titles.</b> Those systems' game files are dramatically larger than classic retro ROMs and will fill a smaller card quickly."
+        }
+      ],
+      "relatedDevices": [
+        "retroid-pocket-6",
+        "retroid-pocket-5",
+        "ayn-odin-3-odin-2-portal"
+      ],
+      "notes": "Part of Retroid's current Android handheld lineup alongside the Pocket 6 and Pocket Mini. A2 + U3 + V30 combination recommended for optimal performance."
+    },
+    {
+      "id": "ayaneo-pocket-ds",
+      "name": "AYANEO Pocket DS",
+      "category": "Gaming Handhelds",
+      "slug": "ayaneo-pocket-ds",
+      "metaDescription": "Best microSD cards for the AYANEO Pocket DS — reliable picks for this dual-screen Android handheld built for DS and 3DS emulation.",
+      "searchTerms": [
+        "ayaneo pocket ds sd card",
+        "ayaneo pocket ds microsd",
+        "ayaneo dual screen handheld storage",
+        "best sd card for ayaneo pocket ds",
+        "ayaneo pocket ds max capacity"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "Class 10 / U1",
+        "minWriteSpeed": "10 MB/s",
+        "minAppPerformance": "A1",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "The Pocket DS is AYANEO's take on a dual-screen clamshell built specifically for Nintendo DS and 3DS emulation, running Android across a single microSD slot. Because DS and 3DS ROMs are small compared to PS2 or Switch libraries, raw capacity isn't the priority here — a 128-256GB card comfortably covers a full curated library. What matters more is a reliable, name-brand card with a solid A1 rating, since dual-screen emulators write frequent save states and a flaky card is the fastest way to lose progress.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-ultra-microsd",
+          "note": "Reliable pick for save-state integrity"
+        },
+        {
+          "id": "samsung-evo-select-microsd",
+          "note": "Trusted alternative, widely available at 128GB/256GB"
+        },
+        {
+          "id": "kingston-canvas-go-plus",
+          "note": "A2-rated option for smoother Android menu navigation"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need a 1TB card for the AYANEO Pocket DS?",
+          "a": "<b>No, most users won't.</b> DS and 3DS ROMs are small compared to PS2 or Switch game files, so 128GB-256GB is the practical sweet spot. Prioritize a reliable, name-brand card over raw capacity."
+        },
+        {
+          "q": "Why does card reliability matter more than speed here?",
+          "a": "<b>Dual-screen emulators write save states constantly</b>, and a low-quality or counterfeit card is the most common cause of corrupted saves on handhelds like this. Stick to established brands even though the speed requirements themselves are modest."
+        }
+      ],
+      "relatedDevices": [
+        "anbernic-rg-cube",
+        "nintendo-3ds-xl",
+        "retroid-pocket-g2"
+      ],
+      "notes": "Niche dual-screen clamshell aimed squarely at the DS/3DS emulation community. Speed requirements are modest; reliability and save-state integrity are the real selling points to emphasize.",
+      "imageUrl": "/img/devices/gaming-consoles/ayaneo-pocket-ds.webp"
+    },
+    {
+      "id": "ayn-thor",
+      "name": "AYN Thor",
+      "category": "Gaming Handhelds",
+      "slug": "ayn-thor",
+      "metaDescription": "Best microSD cards for the AYN Thor — high-capacity A2-rated picks for this premium Android handheld built for PS2, GameCube, and Switch emulation.",
+      "searchTerms": [
+        "ayn thor sd card",
+        "ayn thor microsd",
+        "ayn thor storage",
+        "best microsd for ayn thor",
+        "ayn thor 1tb sd card"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A2",
+        "recommendedCapacity": [
+          "512GB",
+          "1TB"
+        ],
+        "maxCapacity": "1TB+ (theoretical 2TB)"
+      },
+      "whySpecs": "AYN's Thor sits alongside the Odin 3 and Odin 2 Portal as a premium, high-powered Android handheld built for demanding emulation, including PS2, GameCube, and Switch titles. Those systems' game files dwarf classic 8/16-bit ROMs, so high-capacity, A2-rated storage matters from day one — a 128GB card fills up almost immediately, and a card without strong random read/write performance will stutter in higher-end emulators regardless of how fast its sequential speeds look.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd",
+          "note": "High-capacity A2/V30 pick for large emulation libraries"
+        },
+        {
+          "id": "samsung-pro-plus-microsd",
+          "note": "Premium A2 alternative for sustained emulator performance"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd",
+          "note": "Top-tier UHS-II option for users who want maximum headroom"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is 128GB enough storage for the AYN Thor?",
+          "a": "<b>No, not for long.</b> Switch and PS2 ROMs consume gigabytes per title, so a 128GB card becomes a bottleneck quickly. 512GB is the practical minimum and 1TB is recommended for a real library."
+        },
+        {
+          "q": "Will a budget microSD card work for emulation on the Thor?",
+          "a": "<b>It will run, but expect stuttering.</b> The Thor's powerful chipset is capable of demanding emulation, but a card without A2 application performance will bottleneck random read/write operations, causing hitching during gameplay. Stick to A2-rated cards from reputable brands."
+        }
+      ],
+      "relatedDevices": [
+        "ayn-odin-3-odin-2-portal",
+        "retroid-pocket-6",
+        "retroid-pocket-g2"
+      ],
+      "notes": "Premium Android emulation tier alongside the Odin 3/Odin 2 Portal — users skew toward higher-margin 512GB-1TB A2 cards rather than budget picks given the file sizes involved in Switch/PS2/GameCube emulation."
     },
     {
       "id": "akai-mpc-live-ii",
@@ -9025,12 +9580,15 @@
       "name": "iPhone 15 / 15 Pro",
       "category": "Smartphones",
       "slug": "iphone-15",
+      "metaDescription": "The iPhone 15 has no microSD card slot, even with its new USB-C port. Here's why transfer speed depends on which iPhone 15 model you own, and which USB-C readers actually work.",
       "searchTerms": [
         "iphone 15",
         "iphone 15 pro",
         "iphone 15 pro max",
         "iphone 15 sd card",
-        "iphone 15 reader"
+        "iphone 15 reader",
+        "does iphone 15 have sd card slot",
+        "iphone 15 usb-c sd card"
       ],
       "sdCard": {
         "type": "External via USB-C Reader",
@@ -9041,7 +9599,7 @@
         ],
         "maxCapacity": "Limited by app storage"
       },
-      "whySpecs": "iPhone 15 does not have built-in SD card slot. Requires USB-C card reader for external SD card access. Speed depends on reader, not device.",
+      "whySpecs": "The iPhone 15 lineup switched from Lightning to USB-C in 2023, but that doesn't add SD card support — you still need an external card reader through the Files app. The catch is that the port's actual speed depends on which iPhone 15 you have: the base iPhone 15 and 15 Plus keep their USB-C port capped at USB 2.0 (480 Mbps), the same ceiling Lightning had, while the iPhone 15 Pro and Pro Max support USB 3 (up to 10 Gbps). That means a fast UHS-II card reader is wasted on a base iPhone 15 but genuinely useful on a Pro model for offloading large photo/video libraries quickly.",
       "requiresReader": true,
       "recommendedReaders": [
         "ugreen-2in1-usbc-usb3",
@@ -9055,6 +9613,16 @@
           "id": "kingston-canvas-go-plus"
         }
       ],
+      "faq": [
+        {
+          "q": "Does the iPhone 15's USB-C port support SD cards directly?",
+          "a": "<b>No.</b> USB-C on the iPhone 15 replaced the Lightning connector but the phone still has no built-in card slot. You need a USB-C card reader (or hub with a card slot) and the Files app to browse an SD or microSD card."
+        },
+        {
+          "q": "Is the iPhone 15 Pro faster than the base iPhone 15 for reading SD cards?",
+          "a": "Yes, significantly. The base iPhone 15/15 Plus USB-C port is limited to USB 2.0 speeds (~480 Mbps), while the iPhone 15 Pro/Pro Max support USB 3 (up to 10 Gbps). A UHS-II reader will actually reach its rated speed on a Pro model, but gets bottlenecked to USB 2.0 speeds on the base model."
+        }
+      ],
       "relatedDevices": [
         "iphone-14",
         "iphone-13",
@@ -9066,12 +9634,14 @@
       "name": "iPhone 14 / 14 Pro",
       "category": "Smartphones",
       "slug": "iphone-14",
+      "metaDescription": "The iPhone 14 has no microSD card slot. It uses the Lightning port for external card readers, which caps transfer speed at USB 2.0 regardless of the card you buy.",
       "searchTerms": [
         "iphone 14",
         "iphone 14 pro",
         "iphone 14 pro max",
         "iphone 14 sd card",
-        "iphone 14 reader"
+        "iphone 14 reader",
+        "does iphone 14 have sd card slot"
       ],
       "sdCard": {
         "type": "External via Lightning Reader",
@@ -9081,7 +9651,7 @@
           "128GB"
         ]
       },
-      "whySpecs": "iPhone 14 uses Lightning port for external SD card readers. Lightning readers limited to USB 2.0 speeds for some models.",
+      "whySpecs": "The iPhone 14 (and 14 Pro) never adopted USB-C — that switch came a generation later with the iPhone 15. Every Lightning-to-SD reader on this phone is bottlenecked to USB 2.0 speeds (~480 Mbps), no matter how fast the reader or card claims to be, because Lightning itself is the ceiling. In practice that means a basic UHS-I microSD card performs identically to a pricier UHS-II card here — there's no point paying for speed the port can't deliver.",
       "requiresReader": true,
       "recommendedReaders": [
         "lexar-lightning-microsd"
@@ -9092,6 +9662,12 @@
         },
         {
           "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Will a faster microSD card speed up file transfers on iPhone 14?",
+          "a": "No. The Lightning port caps transfer speed at roughly USB 2.0 (~480 Mbps) regardless of card class. A UHS-I card is enough — a UHS-II card won't transfer any faster on this device."
         }
       ],
       "relatedDevices": [
@@ -9104,12 +9680,14 @@
       "name": "iPhone 13 / 13 Pro",
       "category": "Smartphones",
       "slug": "iphone-13",
+      "metaDescription": "The iPhone 13 has no microSD card slot. Like every Lightning-era iPhone, it needs an external Lightning card reader, and the port itself limits transfer speed to USB 2.0.",
       "searchTerms": [
         "iphone 13",
         "iphone 13 pro",
         "iphone 13 pro max",
         "iphone 13 sd card",
-        "iphone 13 reader"
+        "iphone 13 reader",
+        "does iphone 13 have sd card slot"
       ],
       "sdCard": {
         "type": "External via Lightning Reader",
@@ -9119,7 +9697,7 @@
           "128GB"
         ]
       },
-      "whySpecs": "iPhone 13 uses Lightning port with microSD readers.",
+      "whySpecs": "The iPhone 13 has no card slot and, like the 14, is stuck on Lightning rather than USB-C — so any Lightning-to-microSD reader tops out at USB 2.0 speeds (~480 Mbps) regardless of the card's rated speed class. The 13 originally shipped with 128GB, 256GB, or 512GB internal storage tiers, so most people buying an external reader are doing it to import photos from a camera's SD card or offload old footage, not because 128GB fills up quickly on its own.",
       "requiresReader": true,
       "recommendedReaders": [
         "lexar-lightning-microsd"
@@ -9132,6 +9710,12 @@
           "id": "kingston-canvas-go-plus"
         }
       ],
+      "faq": [
+        {
+          "q": "What's the fastest microSD card worth buying for an iPhone 13 with a Lightning reader?",
+          "a": "A standard UHS-I card (V30 or higher) is the practical ceiling — the Lightning port itself limits transfers to roughly USB 2.0 speeds, so a more expensive UHS-II card won't perform any faster on this device."
+        }
+      ],
       "relatedDevices": [
         "iphone-14"
       ]
@@ -9141,10 +9725,12 @@
       "name": "iPhone 14 Pro Max",
       "category": "Smartphones",
       "slug": "iphone-14-pro-max",
+      "metaDescription": "The iPhone 14 Pro Max has no microSD slot, and its ProRes 4K video eats storage fast. Here's why external SD readers are for importing/offloading, not recording, and how to plan storage instead.",
       "searchTerms": [
         "iphone 14 pro max",
         "iphone 14 max",
-        "iphone 14 pro max sd card"
+        "iphone 14 pro max sd card",
+        "iphone 14 pro max storage full"
       ],
       "sdCard": {
         "type": "External via Lightning Reader",
@@ -9154,7 +9740,7 @@
           "128GB"
         ]
       },
-      "whySpecs": "iPhone 14 Pro Max uses Lightning port for external SD card reader access.",
+      "whySpecs": "The iPhone 14 Pro Max shoots ProRes video at up to 4K/30fps, which can eat over 6GB per minute at the highest quality — but there's no way to record directly to an external SD card via a Lightning reader; ProRes at that bitrate needs an external SSD connected through a USB 3 adapter, not a microSD card. A Lightning microSD reader is still useful for the ordinary case of importing photos or footage from a camera's SD card into the Photos app, but treat it as an import/offload tool, not a recording destination, and prioritize buying enough internal storage (256GB+) if you shoot ProRes regularly.",
       "requiresReader": true,
       "recommendedReaders": [
         "lexar-lightning-microsd"
@@ -9165,6 +9751,12 @@
         },
         {
           "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I record ProRes video directly to an SD card on the iPhone 14 Pro Max?",
+          "a": "No. A Lightning-to-microSD reader can only be used to import or transfer files through the Files/Photos app — ProRes recording to external storage requires an external SSD connected via a USB 3 Lightning adapter, not an SD card reader."
         }
       ],
       "relatedDevices": [
@@ -9177,11 +9769,13 @@
       "name": "iPhone SE (3rd Generation)",
       "category": "Smartphones",
       "slug": "iphone-se",
+      "metaDescription": "The iPhone SE (3rd gen) has no microSD slot and its lowest storage tier is just 64GB. Here's why a Lightning card reader is worth owning on this budget model specifically.",
       "searchTerms": [
         "iphone se",
         "iphone se 3",
         "iphone se 3rd generation",
-        "iphone se sd card"
+        "iphone se sd card",
+        "does iphone se have sd card slot"
       ],
       "sdCard": {
         "type": "External via Lightning Reader",
@@ -9190,7 +9784,7 @@
           "64GB"
         ]
       },
-      "whySpecs": "iPhone SE uses Lightning connector for external SD card reader.",
+      "whySpecs": "The 3rd-gen iPhone SE is Apple's budget model, and its base configuration starts at just 64GB of internal storage — the smallest of any current iPhone — with no expansion path. That makes an external Lightning microSD reader more of a practical necessity here than on a Pro-tier iPhone with 256GB+: photo libraries and app data fill a 64GB phone noticeably faster, so regularly offloading photos/videos to a card via the Files app is a realistic way to stretch the entry-level storage tier. As with other Lightning-era iPhones, the port caps transfers at USB 2.0 speeds, so a basic UHS-I card is all you need.",
       "requiresReader": true,
       "recommendedReaders": [
         "lexar-lightning-microsd"
@@ -9201,6 +9795,12 @@
         },
         {
           "id": "kingston-canvas-select"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is an external card reader worth buying for the base 64GB iPhone SE?",
+          "a": "More so than on other iPhones. The 64GB base storage tier fills up quickly with photos and apps, and since the SE has no card slot, a Lightning microSD reader plus the Files app is the easiest way to regularly offload media without paying for iCloud storage."
         }
       ],
       "relatedDevices": [
@@ -9220,7 +9820,8 @@
         "samsung s23 sd card",
         "galaxy s23 reader",
         "samsung s23 expandable storage",
-        "does s23 have sd card slot"
+        "does s23 have sd card slot",
+        "galaxy s23 ultra sd card slot"
       ],
       "sdCard": {
         "type": "External via USB-C Reader (no slot)",
@@ -9250,6 +9851,10 @@
         {
           "q": "Does the Samsung Galaxy S23 have a microSD card slot?",
           "a": "<b>No, the Samsung Galaxy S23 does not have a microSD card slot.</b> Samsung removed expandable storage from the Galaxy S series starting with the Galaxy S21 in 2021. The S23, S23+, and S23 Ultra all lack a microSD slot. If you need to access an SD card with your Galaxy S23, you will need an external USB-C card reader. For long-term storage expansion, cloud services like Google Photos or Samsung Cloud are the practical alternative."
+        },
+        {
+          "q": "Should I buy a higher storage tier since the S23 can't be expanded later?",
+          "a": "Yes — this matters more on the S23 than on Samsung's older expandable-storage phones. Since there's no microSD slot to add capacity after purchase, choosing 256GB over the base 128GB up front is worth the extra cost if you shoot a lot of photos or 4K video, rather than relying on a USB-C reader for everyday storage."
         }
       ],
       "relatedDevices": [
@@ -9261,12 +9866,15 @@
       "name": "Google Pixel 8 / 8 Pro",
       "category": "Smartphones",
       "slug": "google-pixel-8",
+      "metaDescription": "No Pixel phone has ever had a microSD slot, including the Pixel 8 and 8 Pro. Here's why Google leans on cloud backup instead, and how the 8 vs 8 Pro storage tiers change what you actually need.",
       "searchTerms": [
         "google pixel 8",
         "pixel 8",
         "pixel 8 pro",
         "pixel 8 sd card",
-        "pixel 8 reader"
+        "pixel 8 reader",
+        "does pixel 8 have sd card slot",
+        "why doesn't pixel have microsd"
       ],
       "sdCard": {
         "type": "External via USB-C Reader (no slot)",
@@ -9276,7 +9884,7 @@
           "128GB"
         ]
       },
-      "whySpecs": "Pixel 8 does not have built-in SD card slot. Uses USB-C external card readers.",
+      "whySpecs": "Unlike Samsung, Google's Pixel line has never included a microSD slot on any model — this isn't a recent removal, it's a design choice Google has kept since the very first Pixel in 2016, in favor of pushing users toward Google Photos/Google One cloud backup instead of physical expansion. That makes the storage tier you buy at checkout more permanent than on phones with a reader workaround: the base Pixel 8 tops out at 256GB, while the Pixel 8 Pro goes up to 1TB, so heavy photo/video shooters are better served by paying for the Pro's larger tier than relying on a USB-C reader for daily use. A USB-C reader is still useful for one-off imports from a camera's SD card, just not as a long-term storage strategy.",
       "requiresReader": true,
       "recommendedReaders": [
         "ugreen-2in1-usbc-usb3",
@@ -9290,15 +9898,282 @@
           "id": "kingston-canvas-go-plus"
         }
       ],
+      "faq": [
+        {
+          "q": "Why doesn't the Google Pixel 8 have a microSD card slot?",
+          "a": "No Pixel phone ever has — Google has favored cloud storage (Google Photos, Google One) over expandable storage since the original Pixel launched in 2016. This is a long-standing design choice, not something removed from a more recent model."
+        },
+        {
+          "q": "Is the Pixel 8 Pro's 1TB storage option a substitute for not having a microSD slot?",
+          "a": "For most users, yes. Since there's no way to add storage later, choosing the Pixel 8 Pro's higher 512GB or 1TB tier up front is a more reliable long-term solution than relying on a USB-C card reader for everyday storage."
+        }
+      ],
       "relatedDevices": [
         "samsung-galaxy-s23",
         "iphone-15"
       ]
+    },
+    {
+      "id": "sony-xperia-1-vi",
+      "name": "Sony Xperia 1 VI",
+      "category": "Smartphones",
+      "slug": "sony-xperia-1-vi",
+      "searchTerms": [
+        "Sony Xperia 1 VI max sd card size",
+        "best microsd for Xperia 1 VI 4k video",
+        "Xperia 1 VI memory card slot specs",
+        "expand storage Sony Xperia 1 VI"
+      ],
+      "sdCard": {
+        "type": "microSDXC (UHS-I)",
+        "minSpeed": "V30 / U3 / A2",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "512GB",
+          "1TB"
+        ],
+        "maxCapacity": "1.5TB (exFAT)"
+      },
+      "whySpecs": "The Xperia 1 VI is heavily targeted at professional creators, featuring a highly capable 4K HDR video pipeline. Recording high-bitrate video directly to the microSD card requires a sustained write speed of at least 30 MB/s to prevent frame drops or file corruption. While the device supports massive 1.5TB capacities, prioritizing a V30-rated card over a cheaper, generic high-capacity card is critical for reliable media capture. Using a slower card will bottleneck the camera app during burst photography and high-resolution video recording.",
+      "faq": [
+        {
+          "q": "Can I record 4K video directly to the SD card on the Xperia 1 VI?",
+          "a": "Yes, you can set the camera app to save media directly to the microSD card, provided the card is rated at least <b>V30 / U3</b> to handle the high data bitrates."
+        }
+      ],
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        }
+      ],
+      "relatedDevices": [
+        "samsung-galaxy-a55-5g",
+        "moto-g-stylus-5g-2025"
+      ],
+      "imageUrl": "/img/devices/smartphones/sony-xperia-1-vi.webp"
+    },
+    {
+      "id": "samsung-galaxy-a55-5g",
+      "name": "Samsung Galaxy A55 5G",
+      "category": "Smartphones",
+      "slug": "samsung-galaxy-a55-5g",
+      "searchTerms": [
+        "Samsung A55 5G sd card support",
+        "best micro sd card for Galaxy A55",
+        "Samsung A55 external storage max",
+        "format sd card A55 5G"
+      ],
+      "sdCard": {
+        "type": "microSDXC (UHS-I)",
+        "minSpeed": "V30 / U3 / A2",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "1TB (exFAT)"
+      },
+      "whySpecs": "As a mid-range phone with capable 4K video and gaming features, the A55 5G relies on its hybrid SIM/microSD tray to offset its base internal storage. Because Android users frequently move apps and media to external storage, an A2-rated card is essential. The A2 specification ensures high Random Read/Write IOPS, meaning apps stored on the card won't stutter or crash during background updates. A standard V30 rating guarantees that 4K video recordings save smoothly without lagging the camera interface.",
+      "faq": [
+        {
+          "q": "Does the Galaxy A55 have a dedicated SD card slot?",
+          "a": "No, it uses a hybrid slot. You can use either two SIM cards <b>OR</b> one SIM card and one microSD card, but not all three simultaneously."
+        }
+      ],
+      "recommendedBrands": [
+        {
+          "id": "samsung-evo-plus"
+        },
+        {
+          "id": "sandisk-extreme-microsd"
+        }
+      ],
+      "relatedDevices": [
+        "sony-xperia-1-vi",
+        "moto-g-stylus-5g-2025",
+        "samsung-galaxy-s23"
+      ],
+      "imageUrl": "/img/devices/smartphones/samsung-galaxy-a55-5g.webp"
+    },
+    {
+      "id": "moto-g-stylus-5g-2025",
+      "name": "Motorola Moto G Stylus 5G (2025)",
+      "category": "Smartphones",
+      "slug": "moto-g-stylus-5g-2025",
+      "searchTerms": [
+        "Moto G Stylus 5G 2025 sd card format",
+        "best microsd for Moto G Stylus 2025",
+        "expand memory Moto G Stylus 5G max size",
+        "Moto G Stylus 2025 1TB sd card"
+      ],
+      "sdCard": {
+        "type": "microSDXC (UHS-I)",
+        "minSpeed": "Class 10 / U3 / A1",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "1TB (exFAT)"
+      },
+      "whySpecs": "This budget-friendly creator phone allows artists and note-takers to store massive amounts of digital artwork, photos, and media. While sheer capacity is often the priority for Moto G users, opting for a U3/V30 card prevents system slowdowns when browsing large galleries of high-resolution stylus sketches or recorded video. Given the hardware, UHS-I speeds will max out the phone's storage bus, so there is no need to overspend on UHS-II cards.",
+      "faq": [
+        {
+          "q": "Can I move my apps to the SD card on the Moto G Stylus?",
+          "a": "Yes, Motorola allows formatting the microSD card as <b>\"Adoptable Storage\"</b> to install apps, but we strongly recommend an A1 or A2 rated card to prevent the phone from slowing down."
+        }
+      ],
+      "recommendedBrands": [
+        {
+          "id": "sandisk-ultra-microsd"
+        },
+        {
+          "id": "samsung-evo-plus"
+        }
+      ],
+      "relatedDevices": [
+        "sony-xperia-1-vi",
+        "samsung-galaxy-a55-5g",
+        "samsung-galaxy-xcover-7"
+      ],
+      "imageUrl": "/img/devices/smartphones/moto-g-stylus-5g-2025.webp"
+    },
+    {
+      "id": "samsung-galaxy-xcover-7",
+      "name": "Samsung Galaxy XCover 7",
+      "category": "Smartphones",
+      "slug": "samsung-galaxy-xcover-7",
+      "searchTerms": [
+        "Samsung Galaxy XCover 7 sd card max size",
+        "best microsd for Galaxy XCover 7",
+        "XCover 7 rugged phone memory card slot",
+        "expand storage Samsung XCover 7"
+      ],
+      "sdCard": {
+        "type": "microSDXC (UHS-I)",
+        "minSpeed": "Class 10 / U1 / A1",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "1TB (exFAT)"
+      },
+      "whySpecs": "The XCover 7 is built for field workers, warehouse staff, and enterprise deployments where the phone runs barcode scanning and data-logging apps for entire shifts. That workload means constant small writes to storage rather than occasional large files, so card endurance matters more than peak sequential speed. A high-endurance microSD card avoids the premature write-wear failures that generic consumer cards suffer under this kind of sustained, repetitive use, and an A1 rating keeps app performance consistent when line-of-business software is installed to the card.",
+      "faq": [
+        {
+          "q": "What kind of microSD card is best for the rugged Galaxy XCover 7?",
+          "a": "Prioritize <b>endurance-rated</b> cards over raw speed. The XCover 7 is typically used for constant app writes (scanning, logging) rather than large media files, so a high-endurance card will outlast a standard consumer card under daily enterprise use."
+        }
+      ],
+      "recommendedBrands": [
+        {
+          "id": "samsung-pro-endurance"
+        },
+        {
+          "id": "sandisk-extreme-microsd"
+        }
+      ],
+      "relatedDevices": [
+        "moto-g-stylus-5g-2025",
+        "ulefone-armor-33"
+      ],
+      "imageUrl": "/img/devices/smartphones/samsung-galaxy-xcover-7.webp"
+    },
+    {
+      "id": "xiaomi-redmi-note-15",
+      "name": "Xiaomi Redmi Note 15",
+      "category": "Smartphones",
+      "slug": "xiaomi-redmi-note-15",
+      "searchTerms": [
+        "Xiaomi Redmi Note 15 sd card max size",
+        "best microsd for Redmi Note 15",
+        "Redmi Note 15 memory card slot specs",
+        "expand storage Redmi Note 15"
+      ],
+      "sdCard": {
+        "type": "microSDXC (UHS-I)",
+        "minSpeed": "Class 10 / U1 / A1",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "1TB (exFAT)"
+      },
+      "whySpecs": "The Redmi Note series is popular precisely because it undercuts flagships on price while still shipping a dedicated microSD slot, so most buyers are looking to maximize capacity on a budget rather than chase top-tier speed. A basic U1/A1 card is enough to keep the stock camera app and app-switching responsive; spending extra on a V30/A2 card brings little real-world benefit unless you specifically shoot 4K video and want to save it to the card. Capacity, not speed class, is the spec worth prioritizing here.",
+      "faq": [
+        {
+          "q": "Is it worth buying a fast V30 microSD card for the Redmi Note 15?",
+          "a": "Not necessarily. Unless you record 4K video directly to the card, a standard <b>U1/A1</b> card is enough for everyday photos, music, and app storage, and you'll save money by prioritizing capacity over speed class."
+        }
+      ],
+      "recommendedBrands": [
+        {
+          "id": "sandisk-ultra-microsd"
+        },
+        {
+          "id": "samsung-evo-select-microsd"
+        }
+      ],
+      "relatedDevices": [
+        "moto-g-stylus-5g-2025",
+        "samsung-galaxy-a55-5g"
+      ],
+      "imageUrl": "/img/devices/smartphones/xiaomi-redmi-note-15.webp"
+    },
+    {
+      "id": "ulefone-armor-33",
+      "name": "Ulefone Armor 33",
+      "category": "Smartphones",
+      "slug": "ulefone-armor-33",
+      "searchTerms": [
+        "Ulefone Armor 33 sd card max size",
+        "best microsd for Ulefone Armor 33",
+        "Armor 33 rugged phone memory card slot",
+        "expand storage Ulefone Armor 33 2TB"
+      ],
+      "sdCard": {
+        "type": "microSDXC (UHS-I)",
+        "minSpeed": "V30 / U3 / A2",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "512GB",
+          "1TB"
+        ],
+        "maxCapacity": "2TB (exFAT)"
+      },
+      "whySpecs": "Rugged outdoor phones like the Armor 33 are marketed on huge headline capacity (up to 2TB) for users who record long off-grid excursions, thermal-camera footage, or long-duration video without cloud access. That workload benefits from a genuinely fast, reliable V30/A2 card rather than a cheap high-capacity card, since dropped frames during a once-only recording (a hike, a job-site inspection) can't be redone. Given the phone's rugged, dust/water-resistant design is also aimed at harsh environments, pairing it with a card rated for temperature and shock resistance is worth the extra cost.",
+      "faq": [
+        {
+          "q": "Can the Ulefone Armor 33 really use a 2TB microSD card?",
+          "a": "Yes, the Armor 33 supports up to <b>2TB</b> microSDXC cards formatted as exFAT, useful for long off-grid video recording sessions where you can't offload footage to the cloud."
+        }
+      ],
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        }
+      ],
+      "relatedDevices": [
+        "samsung-galaxy-xcover-7",
+        "sony-xperia-1-vi"
+      ],
+      "imageUrl": "/img/devices/smartphones/ulefone-armor-33.webp"
     }
   ],
   "metadata": {
-    "generated": "2026-07-17T17:27:10.739Z",
-    "totalDevices": 190,
+    "generated": "2026-07-18T10:15:24.142Z",
+    "totalDevices": 207,
     "categories": [
       "3D Printers & Fabrication",
       "Action Cameras",

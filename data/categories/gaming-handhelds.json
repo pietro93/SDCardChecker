@@ -832,7 +832,10 @@
     "whySpecs": "GPD Win devices (Mini and Win 4) often feature high-speed UHS-II card readers. To play modern PC games directly from the SD card without stalling, investing in a V60 or V90 UHS-II card is highly beneficial.",
     "recommendedBrands": [
       {
-        "id": "sandisk-extreme-pro-sd-uhs2"
+        "id": "sandisk-extreme-pro-microsd-v60"
+      },
+      {
+        "id": "kingston-canvas-react-plus-microsd"
       }
     ],
     "faq": [
@@ -1495,7 +1498,7 @@
       "lenovo-legion-go-gen-2",
       "msi-claw-8-ex-ai-plus"
     ],
-    "notes": "Launching globally June 2026 with Intel's Arc G3 Extreme chipset and an 8.8-inch 144Hz AMOLED display. First OneXPlayer entry in this dataset. No dedicated product photo yet — uses the generic gaming-handheld placeholder image.",
+    "notes": "Launching globally June 2026 with Intel's Arc G3 Extreme chipset and an 8.8-inch 144Hz AMOLED display. First OneXPlayer entry in this dataset.",
     "imageUrl": "/img/devices/gaming-consoles/onexplayer-3.webp"
   },
   {
@@ -1802,5 +1805,228 @@
     ],
     "notes": "Niche but distinctive 1:1 aspect ratio square-screen handheld. Lower search volume than mainstream Anbernic devices, but fills a content gap for the DS/3DS dual-screen emulation community.",
     "imageUrl": "/img/devices/gaming-consoles/anbernic-rg-cube.webp"
+  },
+  {
+    "id": "acer-predator-atlas-8",
+    "name": "Acer Predator Atlas 8",
+    "category": "Gaming Handhelds",
+    "slug": "acer-predator-atlas-8",
+    "metaDescription": "Best microSD cards for the Acer Predator Atlas 8 — UHS-II V60/V90 picks for Acer's flagship Windows gaming handheld.",
+    "searchTerms": [
+      "acer predator atlas 8 sd card",
+      "predator atlas 8 microsd",
+      "acer predator atlas 8 storage expansion",
+      "best sd card for predator atlas 8",
+      "predator atlas 8 max capacity"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II",
+      "minSpeed": "V60 / V90",
+      "minWriteSpeed": "60 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Acer's flagship Predator-branded handheld pairs a high-refresh display with a UHS-II card reader built to keep pace with a full Windows PC gaming library. Because AAA titles installed straight to the microSD card can easily exceed 100GB each, the combination of A2 random-read performance and V60/V90 sequential throughput is what actually determines whether textures pop in cleanly or games stutter during fast scene loads. A budget UHS-I card will run, but it becomes the clear bottleneck the moment you're streaming assets from the card instead of the internal SSD.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-v60",
+        "note": "True UHS-II V60 performance for AAA asset streaming"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd",
+        "note": "UHS-II Gold tier, strong sustained write speeds"
+      },
+      {
+        "id": "kingston-canvas-react-plus-microsd",
+        "note": "Premium UHS-II V90 option for maximum headroom"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need a UHS-II card for the Predator Atlas 8?",
+        "a": "<b>No, the slot is backwards compatible with UHS-I cards</b>, but you'll leave real performance on the table. Since the Atlas 8's reader can drive full UHS-II bandwidth, a V60 or V90 card noticeably reduces load times when playing AAA titles directly off the microSD card instead of the internal SSD."
+      },
+      {
+        "q": "What capacity should I buy for the Predator Atlas 8?",
+        "a": "<b>512GB is the practical minimum, and 1TB is a better fit for a real PC game library.</b> Modern AAA installs routinely exceed 100GB, so anything smaller fills up after just a handful of titles."
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally-x",
+      "rog-xbox-ally-x",
+      "lenovo-legion-go-gen-2"
+    ],
+    "notes": "Acer's entry into the premium Windows handheld space, competing directly with the ROG Ally X and Legion Go series. UHS-II microSD reader is the primary expansion path since internal storage upgrades require opening the chassis.",
+    "imageUrl": "/img/devices/gaming-consoles/acer-predator-atlas-8.webp"
+  },
+  {
+    "id": "retroid-pocket-g2",
+    "name": "Retroid Pocket G2",
+    "category": "Gaming Handhelds",
+    "slug": "retroid-pocket-g2",
+    "metaDescription": "Best microSD cards for the Retroid Pocket G2 — A2-rated UHS-I picks for smooth Android emulation and asset streaming.",
+    "searchTerms": [
+      "retroid pocket g2 sd card",
+      "rp g2 microsd",
+      "retroid pocket g2 storage",
+      "retroid pocket g2 best microsd card",
+      "retroid g2 max capacity"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2 (recommended)",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB (theoretical)"
+    },
+    "whySpecs": "The Pocket G2 slots into Retroid's Android lineup alongside the Pocket 6, aimed at PS2, GameCube, and Switch emulation. Those ROM/ISO libraries are far larger than 8/16-bit retro sets, so a card that's only rated for sequential speed isn't enough — A2's random read/write performance is what keeps menu navigation and asset loading smooth when the OS and games both live on the microSD card. V30 covers the sustained write side for downloading and copying large files onto the card.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is A2 rating important for the Retroid Pocket G2?",
+        "a": "<b>Yes.</b> When Android apps, custom launchers, and game files all run off the microSD card, A2's random IOPS performance is what keeps menus and emulator loading responsive — a card without it will feel noticeably sluggish even if its sequential speeds look fine on paper."
+      },
+      {
+        "q": "How much storage do I need on the Pocket G2?",
+        "a": "<b>512GB is a solid starting point, but 1TB is recommended if you're emulating PS2, GameCube, or Switch titles.</b> Those systems' game files are dramatically larger than classic retro ROMs and will fill a smaller card quickly."
+      }
+    ],
+    "relatedDevices": [
+      "retroid-pocket-6",
+      "retroid-pocket-5",
+      "ayn-odin-3-odin-2-portal"
+    ],
+    "notes": "Part of Retroid's current Android handheld lineup alongside the Pocket 6 and Pocket Mini. A2 + U3 + V30 combination recommended for optimal performance."
+  },
+  {
+    "id": "ayaneo-pocket-ds",
+    "name": "AYANEO Pocket DS",
+    "category": "Gaming Handhelds",
+    "slug": "ayaneo-pocket-ds",
+    "metaDescription": "Best microSD cards for the AYANEO Pocket DS — reliable picks for this dual-screen Android handheld built for DS and 3DS emulation.",
+    "searchTerms": [
+      "ayaneo pocket ds sd card",
+      "ayaneo pocket ds microsd",
+      "ayaneo dual screen handheld storage",
+      "best sd card for ayaneo pocket ds",
+      "ayaneo pocket ds max capacity"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "The Pocket DS is AYANEO's take on a dual-screen clamshell built specifically for Nintendo DS and 3DS emulation, running Android across a single microSD slot. Because DS and 3DS ROMs are small compared to PS2 or Switch libraries, raw capacity isn't the priority here — a 128-256GB card comfortably covers a full curated library. What matters more is a reliable, name-brand card with a solid A1 rating, since dual-screen emulators write frequent save states and a flaky card is the fastest way to lose progress.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd",
+        "note": "Reliable pick for save-state integrity"
+      },
+      {
+        "id": "samsung-evo-select-microsd",
+        "note": "Trusted alternative, widely available at 128GB/256GB"
+      },
+      {
+        "id": "kingston-canvas-go-plus",
+        "note": "A2-rated option for smoother Android menu navigation"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need a 1TB card for the AYANEO Pocket DS?",
+        "a": "<b>No, most users won't.</b> DS and 3DS ROMs are small compared to PS2 or Switch game files, so 128GB-256GB is the practical sweet spot. Prioritize a reliable, name-brand card over raw capacity."
+      },
+      {
+        "q": "Why does card reliability matter more than speed here?",
+        "a": "<b>Dual-screen emulators write save states constantly</b>, and a low-quality or counterfeit card is the most common cause of corrupted saves on handhelds like this. Stick to established brands even though the speed requirements themselves are modest."
+      }
+    ],
+    "relatedDevices": [
+      "anbernic-rg-cube",
+      "nintendo-3ds-xl",
+      "retroid-pocket-g2"
+    ],
+    "notes": "Niche dual-screen clamshell aimed squarely at the DS/3DS emulation community. Speed requirements are modest; reliability and save-state integrity are the real selling points to emphasize.",
+    "imageUrl": "/img/devices/gaming-consoles/ayaneo-pocket-ds.webp"
+  },
+  {
+    "id": "ayn-thor",
+    "name": "AYN Thor",
+    "category": "Gaming Handhelds",
+    "slug": "ayn-thor",
+    "metaDescription": "Best microSD cards for the AYN Thor — high-capacity A2-rated picks for this premium Android handheld built for PS2, GameCube, and Switch emulation.",
+    "searchTerms": [
+      "ayn thor sd card",
+      "ayn thor microsd",
+      "ayn thor storage",
+      "best microsd for ayn thor",
+      "ayn thor 1tb sd card"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "1TB+ (theoretical 2TB)"
+    },
+    "whySpecs": "AYN's Thor sits alongside the Odin 3 and Odin 2 Portal as a premium, high-powered Android handheld built for demanding emulation, including PS2, GameCube, and Switch titles. Those systems' game files dwarf classic 8/16-bit ROMs, so high-capacity, A2-rated storage matters from day one — a 128GB card fills up almost immediately, and a card without strong random read/write performance will stutter in higher-end emulators regardless of how fast its sequential speeds look.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd",
+        "note": "High-capacity A2/V30 pick for large emulation libraries"
+      },
+      {
+        "id": "samsung-pro-plus-microsd",
+        "note": "Premium A2 alternative for sustained emulator performance"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd",
+        "note": "Top-tier UHS-II option for users who want maximum headroom"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is 128GB enough storage for the AYN Thor?",
+        "a": "<b>No, not for long.</b> Switch and PS2 ROMs consume gigabytes per title, so a 128GB card becomes a bottleneck quickly. 512GB is the practical minimum and 1TB is recommended for a real library."
+      },
+      {
+        "q": "Will a budget microSD card work for emulation on the Thor?",
+        "a": "<b>It will run, but expect stuttering.</b> The Thor's powerful chipset is capable of demanding emulation, but a card without A2 application performance will bottleneck random read/write operations, causing hitching during gameplay. Stick to A2-rated cards from reputable brands."
+      }
+    ],
+    "relatedDevices": [
+      "ayn-odin-3-odin-2-portal",
+      "retroid-pocket-6",
+      "retroid-pocket-g2"
+    ],
+    "notes": "Premium Android emulation tier alongside the Odin 3/Odin 2 Portal — users skew toward higher-margin 512GB-1TB A2 cards rather than budget picks given the file sizes involved in Switch/PS2/GameCube emulation."
   }
 ]

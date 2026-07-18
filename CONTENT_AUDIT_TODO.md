@@ -78,13 +78,68 @@ copy-pasted spec block): **leica-q3-43** — same dual-slot/8K errors as leica-q
 Work through remaining devices category by category once Tiers 1–2 are done.
 Sub-batch each file (e.g. by brand) rather than trying a whole file in one session.
 
-- [ ] cameras.json — remaining ~50 devices (not already covered above)
-- [ ] gaming-handhelds.json — remaining ~28 devices
-- [ ] drones.json — remaining ~20 devices
+- [ ] cameras.json — remaining ~40 devices (Canon sub-batch done, see below)
+  - [x] canon-eos-r6-mark-ii — audited 2026-07-17, no changes needed
+  - [x] canon-eos-r50 — audited 2026-07-17, no changes needed
+  - [x] canon-eos-r7 — audited 2026-07-17, no changes needed
+  - [x] canon-eos-r10 — audited 2026-07-17, no changes needed
+  - [x] canon-eos-r8 — audited 2026-07-17, no changes needed
+  - [x] canon-rebel-t7 — audited 2026-07-17, fixed stale "still good in 2024?" FAQ question
+  - [x] canon-g7x-mark-ii — audited 2026-07-17, no changes needed
+  - [x] canon-eos-r100 — audited 2026-07-17, no changes needed
+  - [x] canon-eos-r6 — audited 2026-07-17, no changes needed
+  - [x] canon-eos-r5-mark-ii — audited 2026-07-17, no changes needed (already detailed/accurate)
+- [x] gaming-handhelds.json — 33/33 done. PC-handheld sub-batch 2026-07-17 (9 devices) +
+      retro/emulation sub-batch 2026-07-18 (19 devices: anbernic-rg353v, -rg35xx-plus,
+      -rg556, -rg35xx-sp, -rg406v-rg406h, -rg-cube, miyoo-mini-plus, retroid-pocket-4-pro,
+      -5, -6, -mini, egret-ii-mini, analogue-pocket, sony-ps-vita-sd2vita, r36s,
+      trimui-brick, ayn-odin-3-odin-2-portal, lenovo-legion-go, lenovo-legion-go-s — the
+      latter two already covered in Tier 2). Only bugs found were in the PC-handheld batch
+      (see findings log); the retro/emulation batch was already accurate.
+  - [x] asus-rog-ally — audited 2026-07-17, no changes needed
+  - [x] asus-rog-ally-x — audited 2026-07-17, no changes needed
+  - [x] rog-xbox-ally-x — audited 2026-07-17, no changes needed
+  - [x] lenovo-legion-go-gen-2 — audited 2026-07-17, no changes needed
+  - [x] msi-claw — audited 2026-07-17, no changes needed
+  - [x] msi-claw-8-ex-ai-plus — audited 2026-07-17, no changes needed
+  - [x] gpd-win-mini — audited 2026-07-17, fixed recommendedBrands bug (full-size SD card id recommended for a microSD-only device)
+  - [x] onexplayer-3 — audited 2026-07-17, fixed stale note claiming no product photo exists (one does)
+  - [x] nintendo-3ds-xl — audited 2026-07-17, no changes needed
+  - [x] anbernic-rg353v, anbernic-rg35xx-plus, anbernic-rg556, anbernic-rg35xx-sp,
+        anbernic-rg406v-rg406h, anbernic-rg-cube, miyoo-mini-plus, retroid-pocket-4-pro,
+        retroid-pocket-5, retroid-pocket-6, retroid-pocket-mini, egret-ii-mini,
+        analogue-pocket, sony-ps-vita-sd2vita, r36s, trimui-brick,
+        ayn-odin-3-odin-2-portal — audited 2026-07-18, no changes needed
+- [x] drones.json — 26/26 done. DJI sub-batch 2026-07-17 (11 devices) + non-DJI sub-batch
+      2026-07-18 (11 devices: autel-evo-ii-pro-v3, autel-evo-nano-plus,
+      autel-evo-lite-plus, skydio-2-plus, skydio-x10, fimi-mini-3, holy-stone-hs175d,
+      holy-stone-hs720, holy-stone-hs360s, hoverair-x1-pro, hoverair-x1-pro-max,
+      walksnail-moonlight — plus potensic-atom/-se and dji-mavic-3 already covered in
+      Tier 2). Only bug found was in the DJI batch (see findings log); non-DJI batch was
+      already accurate.
+  - [x] dji-mini-4-pro — audited 2026-07-17, no changes needed
+  - [x] dji-mini-3-pro — audited 2026-07-17, no changes needed
+  - [x] dji-air-3s — audited 2026-07-17, no changes needed
+  - [x] dji-air-3 — audited 2026-07-17, fixed relatedDevices bug (self-referenced itself)
+  - [x] dji-mini-4k — audited 2026-07-17, no changes needed
+  - [x] dji-mini-3 — audited 2026-07-17, no changes needed
+  - [x] dji-mini-2-se — audited 2026-07-17, no changes needed
+  - [x] dji-avata-2 — audited 2026-07-17, no changes needed
+  - [x] dji-mini-5-pro — audited 2026-07-17, no changes needed
+  - [x] autel-evo-ii-pro-v3, autel-evo-nano-plus, autel-evo-lite-plus, skydio-2-plus,
+        skydio-x10, fimi-mini-3, holy-stone-hs175d, holy-stone-hs720, holy-stone-hs360s,
+        hoverair-x1-pro, hoverair-x1-pro-max, walksnail-moonlight — audited 2026-07-18, no
+        changes needed
+  - [x] dji-avata-360 — audited 2026-07-17, no changes needed
+  - [x] dji-neo — audited 2026-07-17, no changes needed
 - [ ] computing-and-tablets.json — remaining ~18 devices
 - [ ] action-cameras.json — remaining ~9 devices
 - [ ] audio-and-hi-fi.json — all 11 devices
-- [ ] smartphones.json — all 7 devices
+- [x] smartphones.json — all 7 original no-slot devices audited/enriched 2026-07-18 (see
+      findings log). Note: file now has 13 devices total; the other 6
+      (sony-xperia-1-vi, samsung-galaxy-a55-5g, moto-g-stylus-5g-2025,
+      samsung-galaxy-xcover-7, xiaomi-redmi-note-15, ulefone-armor-33) were added since
+      this TODO was written and were already well-detailed — no changes needed.
 - [ ] 3d-printers.json — all 7 devices
 - [ ] music-production.json — all 7 devices
 - [ ] dash-cams.json — all 5 devices
@@ -93,6 +148,106 @@ Sub-batch each file (e.g. by brand) rather than trying a whole file in one sessi
 ---
 
 ## Findings log
+
+### 2026-07-18 — Tier 3: smartphones.json, the 7 no-built-in-slot devices (iphone-15,
+iphone-14, iphone-13, iphone-14-pro-max, iphone-se, samsung-galaxy-s23, google-pixel-8)
+These were the thinnest entries in the dataset — most `whySpecs` were 1-2 generic
+sentences, and only samsung-galaxy-s23 had an `faq`/`metaDescription`. Considered removing
+them outright (they lack a hardware SD slot) but decided against it: the site already
+models "no slot, external reader required" as a first-class case (`requiresReader`,
+`recommendedReaders`), and these pages target real high-intent queries ("does iphone 15
+have sd card slot"). Removing them would have thrown away legitimate search-matching
+content to fix a thin-content problem that enrichment already solves. Rewrote each with
+genuine device-specific reasoning instead of boilerplate:
+- **iphone-15**: added the base-vs-Pro USB 2.0/USB 3 speed split (only the 15 Pro/Pro Max
+  actually benefit from a fast UHS-II reader).
+- **iphone-14 / iphone-13**: explained the Lightning-port USB 2.0 ceiling that makes a
+  UHS-II card pointless on these Lightning-only models.
+- **iphone-14-pro-max**: clarified ProRes video can't record to an SD card via a Lightning
+  reader at all (needs an external SSD over USB 3) — a reader is import/offload only.
+- **iphone-se**: reframed around the 64GB base tier making a reader more of a practical
+  necessity than on higher-storage iPhones.
+- **samsung-galaxy-s23**: kept the existing accurate content, added a second FAQ on buying
+  a higher storage tier up front since there's no expansion path.
+- **google-pixel-8**: added the fact that no Pixel has ever had a microSD slot (not a
+  recent removal like Samsung) plus 8-vs-8-Pro storage-tier reasoning.
+- Added `metaDescription` to the 5 entries missing it, added 1-2 device-specific `faq`
+  entries to the 6 that had none, and diversified `searchTerms` (added direct-question
+  variants like "does pixel 8 have sd card slot").
+- Discovered mid-audit that `smartphones.json` now has **13 devices**, not the 7 this
+  TODO was scoped for — 6 more (sony-xperia-1-vi, samsung-galaxy-a55-5g,
+  moto-g-stylus-5g-2025, samsung-galaxy-xcover-7, xiaomi-redmi-note-15, ulefone-armor-33)
+  were added in a separate session and were already well-detailed (rich whySpecs, FAQ) —
+  left untouched.
+- Rebuilt (`npm run build:site`) — 196 English device pages, unchanged count. Confirmed
+  clean with `scripts/audit-card-coverage.js` and `verify-devices.js` (no broken card
+  refs, no orphaned relatedDevices).
+
+### 2026-07-18 — Tier 3 batch 4: gaming-handhelds.json retro/emulation family (19 devices) + drones.json non-DJI brands (11 devices)
+Completed both files. Audited the retro/emulation handheld family (anbernic-rg353v,
+-rg35xx-plus, -rg556, -rg35xx-sp, -rg406v-rg406h, -rg-cube, miyoo-mini-plus,
+retroid-pocket-4-pro/-5/-6/-mini, egret-ii-mini, analogue-pocket, sony-ps-vita-sd2vita,
+r36s, trimui-brick, ayn-odin-3-odin-2-portal, plus re-confirming lenovo-legion-go/-go-s
+which were already Tier 2 done) and the non-DJI drone brands (autel-evo-ii-pro-v3,
+autel-evo-nano-plus, autel-evo-lite-plus, skydio-2-plus, skydio-x10, fimi-mini-3,
+holy-stone-hs175d/-hs720/-hs360s, hoverair-x1-pro/-pro-max, walksnail-moonlight).
+No factual errors, broken references, or self-references found in either sub-batch — all
+30 devices were already accurate and well-detailed (dual-slot OS/game-card handhelds,
+capacity ceilings, speed-class guidance, and drone SD-card-error FAQs all checked out).
+**gaming-handhelds.json and drones.json are now fully audited (33/33 and 26/26).**
+- Rebuilt (`npm run build:site`) — 190 English device pages, unchanged. Confirmed clean
+  with `scripts/audit-card-coverage.js` (no broken card references) and
+  `verify-devices.js` (no orphaned relatedDevices).
+- Next up for future sessions: cameras.json remaining ~40 devices (Fujifilm/Leica/
+  Panasonic/Nikon/Sony brand blocks — see Tier 3 batch 1 note above), then
+  computing-and-tablets.json (~18), action-cameras.json (~9), and the five untouched
+  files (audio-and-hi-fi, smartphones, 3d-printers, music-production, dash-cams,
+  security-cameras).
+
+### 2026-07-17 — Tier 3 batch 2: gaming-handhelds.json (PC-handheld family, 9 devices)
+### 2026-07-17 — Tier 3 batch 3: drones.json (DJI family, 11 devices)
+Audited the PC/Windows handheld sub-batch (asus-rog-ally, asus-rog-ally-x, rog-xbox-ally-x,
+lenovo-legion-go-gen-2, msi-claw, msi-claw-8-ex-ai-plus, gpd-win-mini, onexplayer-3,
+nintendo-3ds-xl) and the DJI sub-batch of drones.json (dji-mini-4-pro, -mini-3-pro, -air-3s,
+-air-3, -mini-4k, -mini-3, -mini-2-se, -avata-2, -mini-5-pro, -avata-360, -neo). Most were
+already accurate and well-detailed; found two real data bugs (not content-accuracy issues):
+- **gpd-win-mini**: `recommendedBrands` pointed at `sandisk-extreme-pro-sd-uhs2`, which is a
+  **full-size SD card** (`type: "SD"` in `sdcards.json`) — but the GPD Win Mini only has a
+  microSD slot. Replaced with `sandisk-extreme-pro-microsd-v60` and added
+  `kingston-canvas-react-plus-microsd` (both actual UHS-II microSD cards) to match the
+  device's V60/V90 recommendation.
+- **dji-air-3**: `relatedDevices` included `"dji-air-3"` — the device referencing itself.
+  Replaced the self-reference with `dji-mini-4k`, a device it doesn't already link to.
+- **onexplayer-3**: `notes` field claimed "No dedicated product photo yet — uses the generic
+  gaming-handheld placeholder image," but `img/devices/gaming-consoles/onexplayer-3.webp`
+  now exists (a real image was added since the note was written). Removed the stale claim.
+  `notes` isn't rendered on the site, so this was a documentation-accuracy fix only.
+- Neither `audit-card-coverage.js` nor `verify-devices.js` had flagged the gpd-win-mini
+  full-size-vs-microSD mismatch, since both cards exist in `sdcards.json` (it's a semantic
+  bug, not a missing-reference bug) — worth keeping an eye out for this pattern (wrong card
+  *type* recommended, not just a broken *id* reference) in future sweeps.
+- Rebuilt (`npm run build:site`) — 190 English device pages, unchanged. Confirmed clean with
+  `scripts/audit-card-coverage.js` (no broken card references) and `verify-devices.js` (no
+  orphaned relatedDevices).
+- Remaining for future sessions: gaming-handhelds.json retro/emulation family (~19 devices:
+  anbernic-*, retroid-*, miyoo-mini-plus, r36s, trimui-brick, ayn-odin-3-odin-2-portal,
+  egret-ii-mini, analogue-pocket, sony-ps-vita-sd2vita); drones.json non-DJI brands (~15
+  devices: autel-*, skydio-*, fimi-mini-3, holy-stone-*, hoverair-*, walksnail-moonlight).
+
+### 2026-07-17 — Tier 3 batch 1: cameras.json, Canon sub-batch (10 devices)
+Audited the 10 remaining Canon entries in `cameras.json` (canon-eos-r6-mark-ii, -r50,
+-r7, -r10, -r8, -rebel-t7, -g7x-mark-ii, -r100, -r6, -r5-mark-ii). Specs, slot counts,
+and speed-class guidance all checked out against known hardware — only one issue found:
+- **canon-rebel-t7**: FAQ question "Is this camera still good in 2024?" was a
+  hardcoded-year phrasing that had gone stale (now 2026). Reworded to the evergreen
+  "Is this camera still worth buying?" — answer content was still accurate, only the
+  question needed fixing. Worth scanning other files for similar hardcoded-year FAQ
+  questions in a future sweep.
+- Rebuilt (`npm run build:site`) — 190 English device pages, unchanged. Confirmed clean
+  with `scripts/audit-card-coverage.js` and `verify-devices.js`.
+- Remaining cameras.json devices for a future session: fujifilm-x-s20, sony-a7-iv,
+  bmpcc-4k, bmpcc-6k-pro, nikon-z8, panasonic-lumix-s1h, fujifilm-x100vi, and everything
+  from fujifilm-xt5 onward (Fujifilm/Leica/Panasonic/Nikon/Sony brand blocks untouched).
 
 ### 2026-07-17 — Tier 2 batch: cameras, drones, gaming handhelds, action cams
 Audited all 14 Tier 2 devices. Found and fixed three real factual errors, rest were

@@ -223,7 +223,7 @@
       "dji-mini-4-pro",
       "dji-air-3s",
       "dji-mavic-3",
-      "dji-air-3"
+      "dji-mini-4k"
     ],
     "notes": "A popular prosumer drone with dual cameras, requiring reliable V30 cards for its high-quality video modes."
   },
@@ -1239,5 +1239,49 @@
     ],
     "notes": "Ultra-light/palm-sized entry drone, more casual buyer than Avata. Lead with simplicity/ease-of-use framing — V30/A2 is plenty, no thermal-margin upsell needed like the enclosed cinewhoop bodies.",
     "imageUrl": "/img/devices/drones/dji-neo.webp"
+  },
+  {
+    "id": "dji-mavic-4-pro",
+    "name": "DJI Mavic 4 Pro",
+    "category": "Drones",
+    "slug": "dji-mavic-4-pro",
+    "searchTerms": [
+      "dji mavic 4 pro recommended microsd cards official",
+      "best sd card for mavic 4 pro 4k recording",
+      "mavic 4 pro max storage capacity"
+    ],
+    "sdCard": {
+      "type": "microSDXC (UHS-I / UHS-II)",
+      "minSpeed": "V30 (V60 recommended for ProRes)",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB (exFAT)"
+    },
+    "whySpecs": "Professional drone videography with the Mavic 4 Pro involves capturing massive D-Log M or ProRes files. While standard H.265 recording requires a minimum V30 card, professional codecs demand significantly higher sustained write speeds to avoid corrupted aerial footage. Because you cannot swap a card mid-flight, reliability and speed outrank sheer capacity. Using a V60 card guarantees that the drone's buffer clears instantly, preventing missed shots during fast-paced commercial flights.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-silver-microsd",
+        "note": "Reliable V30 UHS-I option with strong sustained write speeds"
+      },
+      {
+        "id": "sandisk-extreme-pro-microsd-v60",
+        "note": "UHS-II V60 speeds needed for ProRes and D-Log M footage"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need a V60 card for the DJI Mavic 4 Pro?",
+        "a": "<b>If you are shooting standard 4K/60fps, a V30 card is sufficient.</b> However, if you utilize advanced codecs like Apple ProRes, a V60 card is required to handle the massive data throughput."
+      }
+    ],
+    "relatedDevices": [
+      "dji-air-3s",
+      "dji-avata-360"
+    ],
+    "notes": "DJI's flagship professional drone. ProRes/D-Log M recording demands V60 headroom over the standard H.265 V30 minimum. Mid-flight card swaps aren't possible, so reliability outranks raw capacity for this device.",
+    "imageUrl": "/img/devices/drones/dji-mavic-4-pro.webp"
   }
 ]

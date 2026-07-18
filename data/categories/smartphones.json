@@ -4,12 +4,15 @@
     "name": "iPhone 15 / 15 Pro",
     "category": "Smartphones",
     "slug": "iphone-15",
+    "metaDescription": "The iPhone 15 has no microSD card slot, even with its new USB-C port. Here's why transfer speed depends on which iPhone 15 model you own, and which USB-C readers actually work.",
     "searchTerms": [
       "iphone 15",
       "iphone 15 pro",
       "iphone 15 pro max",
       "iphone 15 sd card",
-      "iphone 15 reader"
+      "iphone 15 reader",
+      "does iphone 15 have sd card slot",
+      "iphone 15 usb-c sd card"
     ],
     "sdCard": {
       "type": "External via USB-C Reader",
@@ -20,7 +23,7 @@
       ],
       "maxCapacity": "Limited by app storage"
     },
-    "whySpecs": "iPhone 15 does not have built-in SD card slot. Requires USB-C card reader for external SD card access. Speed depends on reader, not device.",
+    "whySpecs": "The iPhone 15 lineup switched from Lightning to USB-C in 2023, but that doesn't add SD card support — you still need an external card reader through the Files app. The catch is that the port's actual speed depends on which iPhone 15 you have: the base iPhone 15 and 15 Plus keep their USB-C port capped at USB 2.0 (480 Mbps), the same ceiling Lightning had, while the iPhone 15 Pro and Pro Max support USB 3 (up to 10 Gbps). That means a fast UHS-II card reader is wasted on a base iPhone 15 but genuinely useful on a Pro model for offloading large photo/video libraries quickly.",
     "requiresReader": true,
     "recommendedReaders": [
       "ugreen-2in1-usbc-usb3",
@@ -34,6 +37,16 @@
         "id": "kingston-canvas-go-plus"
       }
     ],
+    "faq": [
+      {
+        "q": "Does the iPhone 15's USB-C port support SD cards directly?",
+        "a": "<b>No.</b> USB-C on the iPhone 15 replaced the Lightning connector but the phone still has no built-in card slot. You need a USB-C card reader (or hub with a card slot) and the Files app to browse an SD or microSD card."
+      },
+      {
+        "q": "Is the iPhone 15 Pro faster than the base iPhone 15 for reading SD cards?",
+        "a": "Yes, significantly. The base iPhone 15/15 Plus USB-C port is limited to USB 2.0 speeds (~480 Mbps), while the iPhone 15 Pro/Pro Max support USB 3 (up to 10 Gbps). A UHS-II reader will actually reach its rated speed on a Pro model, but gets bottlenecked to USB 2.0 speeds on the base model."
+      }
+    ],
     "relatedDevices": [
       "iphone-14",
       "iphone-13",
@@ -45,12 +58,14 @@
     "name": "iPhone 14 / 14 Pro",
     "category": "Smartphones",
     "slug": "iphone-14",
+    "metaDescription": "The iPhone 14 has no microSD card slot. It uses the Lightning port for external card readers, which caps transfer speed at USB 2.0 regardless of the card you buy.",
     "searchTerms": [
       "iphone 14",
       "iphone 14 pro",
       "iphone 14 pro max",
       "iphone 14 sd card",
-      "iphone 14 reader"
+      "iphone 14 reader",
+      "does iphone 14 have sd card slot"
     ],
     "sdCard": {
       "type": "External via Lightning Reader",
@@ -60,7 +75,7 @@
         "128GB"
       ]
     },
-    "whySpecs": "iPhone 14 uses Lightning port for external SD card readers. Lightning readers limited to USB 2.0 speeds for some models.",
+    "whySpecs": "The iPhone 14 (and 14 Pro) never adopted USB-C — that switch came a generation later with the iPhone 15. Every Lightning-to-SD reader on this phone is bottlenecked to USB 2.0 speeds (~480 Mbps), no matter how fast the reader or card claims to be, because Lightning itself is the ceiling. In practice that means a basic UHS-I microSD card performs identically to a pricier UHS-II card here — there's no point paying for speed the port can't deliver.",
     "requiresReader": true,
     "recommendedReaders": [
       "lexar-lightning-microsd"
@@ -71,6 +86,12 @@
       },
       {
         "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Will a faster microSD card speed up file transfers on iPhone 14?",
+        "a": "No. The Lightning port caps transfer speed at roughly USB 2.0 (~480 Mbps) regardless of card class. A UHS-I card is enough — a UHS-II card won't transfer any faster on this device."
       }
     ],
     "relatedDevices": [
@@ -83,12 +104,14 @@
     "name": "iPhone 13 / 13 Pro",
     "category": "Smartphones",
     "slug": "iphone-13",
+    "metaDescription": "The iPhone 13 has no microSD card slot. Like every Lightning-era iPhone, it needs an external Lightning card reader, and the port itself limits transfer speed to USB 2.0.",
     "searchTerms": [
       "iphone 13",
       "iphone 13 pro",
       "iphone 13 pro max",
       "iphone 13 sd card",
-      "iphone 13 reader"
+      "iphone 13 reader",
+      "does iphone 13 have sd card slot"
     ],
     "sdCard": {
       "type": "External via Lightning Reader",
@@ -98,7 +121,7 @@
         "128GB"
       ]
     },
-    "whySpecs": "iPhone 13 uses Lightning port with microSD readers.",
+    "whySpecs": "The iPhone 13 has no card slot and, like the 14, is stuck on Lightning rather than USB-C — so any Lightning-to-microSD reader tops out at USB 2.0 speeds (~480 Mbps) regardless of the card's rated speed class. The 13 originally shipped with 128GB, 256GB, or 512GB internal storage tiers, so most people buying an external reader are doing it to import photos from a camera's SD card or offload old footage, not because 128GB fills up quickly on its own.",
     "requiresReader": true,
     "recommendedReaders": [
       "lexar-lightning-microsd"
@@ -111,6 +134,12 @@
         "id": "kingston-canvas-go-plus"
       }
     ],
+    "faq": [
+      {
+        "q": "What's the fastest microSD card worth buying for an iPhone 13 with a Lightning reader?",
+        "a": "A standard UHS-I card (V30 or higher) is the practical ceiling — the Lightning port itself limits transfers to roughly USB 2.0 speeds, so a more expensive UHS-II card won't perform any faster on this device."
+      }
+    ],
     "relatedDevices": [
       "iphone-14"
     ]
@@ -120,10 +149,12 @@
     "name": "iPhone 14 Pro Max",
     "category": "Smartphones",
     "slug": "iphone-14-pro-max",
+    "metaDescription": "The iPhone 14 Pro Max has no microSD slot, and its ProRes 4K video eats storage fast. Here's why external SD readers are for importing/offloading, not recording, and how to plan storage instead.",
     "searchTerms": [
       "iphone 14 pro max",
       "iphone 14 max",
-      "iphone 14 pro max sd card"
+      "iphone 14 pro max sd card",
+      "iphone 14 pro max storage full"
     ],
     "sdCard": {
       "type": "External via Lightning Reader",
@@ -133,7 +164,7 @@
         "128GB"
       ]
     },
-    "whySpecs": "iPhone 14 Pro Max uses Lightning port for external SD card reader access.",
+    "whySpecs": "The iPhone 14 Pro Max shoots ProRes video at up to 4K/30fps, which can eat over 6GB per minute at the highest quality — but there's no way to record directly to an external SD card via a Lightning reader; ProRes at that bitrate needs an external SSD connected through a USB 3 adapter, not a microSD card. A Lightning microSD reader is still useful for the ordinary case of importing photos or footage from a camera's SD card into the Photos app, but treat it as an import/offload tool, not a recording destination, and prioritize buying enough internal storage (256GB+) if you shoot ProRes regularly.",
     "requiresReader": true,
     "recommendedReaders": [
       "lexar-lightning-microsd"
@@ -144,6 +175,12 @@
       },
       {
         "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I record ProRes video directly to an SD card on the iPhone 14 Pro Max?",
+        "a": "No. A Lightning-to-microSD reader can only be used to import or transfer files through the Files/Photos app — ProRes recording to external storage requires an external SSD connected via a USB 3 Lightning adapter, not an SD card reader."
       }
     ],
     "relatedDevices": [
@@ -156,11 +193,13 @@
     "name": "iPhone SE (3rd Generation)",
     "category": "Smartphones",
     "slug": "iphone-se",
+    "metaDescription": "The iPhone SE (3rd gen) has no microSD slot and its lowest storage tier is just 64GB. Here's why a Lightning card reader is worth owning on this budget model specifically.",
     "searchTerms": [
       "iphone se",
       "iphone se 3",
       "iphone se 3rd generation",
-      "iphone se sd card"
+      "iphone se sd card",
+      "does iphone se have sd card slot"
     ],
     "sdCard": {
       "type": "External via Lightning Reader",
@@ -169,7 +208,7 @@
         "64GB"
       ]
     },
-    "whySpecs": "iPhone SE uses Lightning connector for external SD card reader.",
+    "whySpecs": "The 3rd-gen iPhone SE is Apple's budget model, and its base configuration starts at just 64GB of internal storage — the smallest of any current iPhone — with no expansion path. That makes an external Lightning microSD reader more of a practical necessity here than on a Pro-tier iPhone with 256GB+: photo libraries and app data fill a 64GB phone noticeably faster, so regularly offloading photos/videos to a card via the Files app is a realistic way to stretch the entry-level storage tier. As with other Lightning-era iPhones, the port caps transfers at USB 2.0 speeds, so a basic UHS-I card is all you need.",
     "requiresReader": true,
     "recommendedReaders": [
       "lexar-lightning-microsd"
@@ -180,6 +219,12 @@
       },
       {
         "id": "kingston-canvas-select"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is an external card reader worth buying for the base 64GB iPhone SE?",
+        "a": "More so than on other iPhones. The 64GB base storage tier fills up quickly with photos and apps, and since the SE has no card slot, a Lightning microSD reader plus the Files app is the easiest way to regularly offload media without paying for iCloud storage."
       }
     ],
     "relatedDevices": [
@@ -199,7 +244,8 @@
       "samsung s23 sd card",
       "galaxy s23 reader",
       "samsung s23 expandable storage",
-      "does s23 have sd card slot"
+      "does s23 have sd card slot",
+      "galaxy s23 ultra sd card slot"
     ],
     "sdCard": {
       "type": "External via USB-C Reader (no slot)",
@@ -229,6 +275,10 @@
       {
         "q": "Does the Samsung Galaxy S23 have a microSD card slot?",
         "a": "<b>No, the Samsung Galaxy S23 does not have a microSD card slot.</b> Samsung removed expandable storage from the Galaxy S series starting with the Galaxy S21 in 2021. The S23, S23+, and S23 Ultra all lack a microSD slot. If you need to access an SD card with your Galaxy S23, you will need an external USB-C card reader. For long-term storage expansion, cloud services like Google Photos or Samsung Cloud are the practical alternative."
+      },
+      {
+        "q": "Should I buy a higher storage tier since the S23 can't be expanded later?",
+        "a": "Yes — this matters more on the S23 than on Samsung's older expandable-storage phones. Since there's no microSD slot to add capacity after purchase, choosing 256GB over the base 128GB up front is worth the extra cost if you shoot a lot of photos or 4K video, rather than relying on a USB-C reader for everyday storage."
       }
     ],
     "relatedDevices": [
@@ -240,12 +290,15 @@
     "name": "Google Pixel 8 / 8 Pro",
     "category": "Smartphones",
     "slug": "google-pixel-8",
+    "metaDescription": "No Pixel phone has ever had a microSD slot, including the Pixel 8 and 8 Pro. Here's why Google leans on cloud backup instead, and how the 8 vs 8 Pro storage tiers change what you actually need.",
     "searchTerms": [
       "google pixel 8",
       "pixel 8",
       "pixel 8 pro",
       "pixel 8 sd card",
-      "pixel 8 reader"
+      "pixel 8 reader",
+      "does pixel 8 have sd card slot",
+      "why doesn't pixel have microsd"
     ],
     "sdCard": {
       "type": "External via USB-C Reader (no slot)",
@@ -255,7 +308,7 @@
         "128GB"
       ]
     },
-    "whySpecs": "Pixel 8 does not have built-in SD card slot. Uses USB-C external card readers.",
+    "whySpecs": "Unlike Samsung, Google's Pixel line has never included a microSD slot on any model — this isn't a recent removal, it's a design choice Google has kept since the very first Pixel in 2016, in favor of pushing users toward Google Photos/Google One cloud backup instead of physical expansion. That makes the storage tier you buy at checkout more permanent than on phones with a reader workaround: the base Pixel 8 tops out at 256GB, while the Pixel 8 Pro goes up to 1TB, so heavy photo/video shooters are better served by paying for the Pro's larger tier than relying on a USB-C reader for daily use. A USB-C reader is still useful for one-off imports from a camera's SD card, just not as a long-term storage strategy.",
     "requiresReader": true,
     "recommendedReaders": [
       "ugreen-2in1-usbc-usb3",
@@ -269,9 +322,276 @@
         "id": "kingston-canvas-go-plus"
       }
     ],
+    "faq": [
+      {
+        "q": "Why doesn't the Google Pixel 8 have a microSD card slot?",
+        "a": "No Pixel phone ever has — Google has favored cloud storage (Google Photos, Google One) over expandable storage since the original Pixel launched in 2016. This is a long-standing design choice, not something removed from a more recent model."
+      },
+      {
+        "q": "Is the Pixel 8 Pro's 1TB storage option a substitute for not having a microSD slot?",
+        "a": "For most users, yes. Since there's no way to add storage later, choosing the Pixel 8 Pro's higher 512GB or 1TB tier up front is a more reliable long-term solution than relying on a USB-C card reader for everyday storage."
+      }
+    ],
     "relatedDevices": [
       "samsung-galaxy-s23",
       "iphone-15"
     ]
+  },
+  {
+    "id": "sony-xperia-1-vi",
+    "name": "Sony Xperia 1 VI",
+    "category": "Smartphones",
+    "slug": "sony-xperia-1-vi",
+    "searchTerms": [
+      "Sony Xperia 1 VI max sd card size",
+      "best microsd for Xperia 1 VI 4k video",
+      "Xperia 1 VI memory card slot specs",
+      "expand storage Sony Xperia 1 VI"
+    ],
+    "sdCard": {
+      "type": "microSDXC (UHS-I)",
+      "minSpeed": "V30 / U3 / A2",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "1.5TB (exFAT)"
+    },
+    "whySpecs": "The Xperia 1 VI is heavily targeted at professional creators, featuring a highly capable 4K HDR video pipeline. Recording high-bitrate video directly to the microSD card requires a sustained write speed of at least 30 MB/s to prevent frame drops or file corruption. While the device supports massive 1.5TB capacities, prioritizing a V30-rated card over a cheaper, generic high-capacity card is critical for reliable media capture. Using a slower card will bottleneck the camera app during burst photography and high-resolution video recording.",
+    "faq": [
+      {
+        "q": "Can I record 4K video directly to the SD card on the Xperia 1 VI?",
+        "a": "Yes, you can set the camera app to save media directly to the microSD card, provided the card is rated at least <b>V30 / U3</b> to handle the high data bitrates."
+      }
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-a55-5g",
+      "moto-g-stylus-5g-2025"
+    ],
+    "imageUrl": "/img/devices/smartphones/sony-xperia-1-vi.webp"
+  },
+  {
+    "id": "samsung-galaxy-a55-5g",
+    "name": "Samsung Galaxy A55 5G",
+    "category": "Smartphones",
+    "slug": "samsung-galaxy-a55-5g",
+    "searchTerms": [
+      "Samsung A55 5G sd card support",
+      "best micro sd card for Galaxy A55",
+      "Samsung A55 external storage max",
+      "format sd card A55 5G"
+    ],
+    "sdCard": {
+      "type": "microSDXC (UHS-I)",
+      "minSpeed": "V30 / U3 / A2",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB (exFAT)"
+    },
+    "whySpecs": "As a mid-range phone with capable 4K video and gaming features, the A55 5G relies on its hybrid SIM/microSD tray to offset its base internal storage. Because Android users frequently move apps and media to external storage, an A2-rated card is essential. The A2 specification ensures high Random Read/Write IOPS, meaning apps stored on the card won't stutter or crash during background updates. A standard V30 rating guarantees that 4K video recordings save smoothly without lagging the camera interface.",
+    "faq": [
+      {
+        "q": "Does the Galaxy A55 have a dedicated SD card slot?",
+        "a": "No, it uses a hybrid slot. You can use either two SIM cards <b>OR</b> one SIM card and one microSD card, but not all three simultaneously."
+      }
+    ],
+    "recommendedBrands": [
+      {
+        "id": "samsung-evo-plus"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "sony-xperia-1-vi",
+      "moto-g-stylus-5g-2025",
+      "samsung-galaxy-s23"
+    ],
+    "imageUrl": "/img/devices/smartphones/samsung-galaxy-a55-5g.webp"
+  },
+  {
+    "id": "moto-g-stylus-5g-2025",
+    "name": "Motorola Moto G Stylus 5G (2025)",
+    "category": "Smartphones",
+    "slug": "moto-g-stylus-5g-2025",
+    "searchTerms": [
+      "Moto G Stylus 5G 2025 sd card format",
+      "best microsd for Moto G Stylus 2025",
+      "expand memory Moto G Stylus 5G max size",
+      "Moto G Stylus 2025 1TB sd card"
+    ],
+    "sdCard": {
+      "type": "microSDXC (UHS-I)",
+      "minSpeed": "Class 10 / U3 / A1",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB (exFAT)"
+    },
+    "whySpecs": "This budget-friendly creator phone allows artists and note-takers to store massive amounts of digital artwork, photos, and media. While sheer capacity is often the priority for Moto G users, opting for a U3/V30 card prevents system slowdowns when browsing large galleries of high-resolution stylus sketches or recorded video. Given the hardware, UHS-I speeds will max out the phone's storage bus, so there is no need to overspend on UHS-II cards.",
+    "faq": [
+      {
+        "q": "Can I move my apps to the SD card on the Moto G Stylus?",
+        "a": "Yes, Motorola allows formatting the microSD card as <b>\"Adoptable Storage\"</b> to install apps, but we strongly recommend an A1 or A2 rated card to prevent the phone from slowing down."
+      }
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-plus"
+      }
+    ],
+    "relatedDevices": [
+      "sony-xperia-1-vi",
+      "samsung-galaxy-a55-5g",
+      "samsung-galaxy-xcover-7"
+    ],
+    "imageUrl": "/img/devices/smartphones/moto-g-stylus-5g-2025.webp"
+  },
+  {
+    "id": "samsung-galaxy-xcover-7",
+    "name": "Samsung Galaxy XCover 7",
+    "category": "Smartphones",
+    "slug": "samsung-galaxy-xcover-7",
+    "searchTerms": [
+      "Samsung Galaxy XCover 7 sd card max size",
+      "best microsd for Galaxy XCover 7",
+      "XCover 7 rugged phone memory card slot",
+      "expand storage Samsung XCover 7"
+    ],
+    "sdCard": {
+      "type": "microSDXC (UHS-I)",
+      "minSpeed": "Class 10 / U1 / A1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB (exFAT)"
+    },
+    "whySpecs": "The XCover 7 is built for field workers, warehouse staff, and enterprise deployments where the phone runs barcode scanning and data-logging apps for entire shifts. That workload means constant small writes to storage rather than occasional large files, so card endurance matters more than peak sequential speed. A high-endurance microSD card avoids the premature write-wear failures that generic consumer cards suffer under this kind of sustained, repetitive use, and an A1 rating keeps app performance consistent when line-of-business software is installed to the card.",
+    "faq": [
+      {
+        "q": "What kind of microSD card is best for the rugged Galaxy XCover 7?",
+        "a": "Prioritize <b>endurance-rated</b> cards over raw speed. The XCover 7 is typically used for constant app writes (scanning, logging) rather than large media files, so a high-endurance card will outlast a standard consumer card under daily enterprise use."
+      }
+    ],
+    "recommendedBrands": [
+      {
+        "id": "samsung-pro-endurance"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "moto-g-stylus-5g-2025",
+      "ulefone-armor-33"
+    ],
+    "imageUrl": "/img/devices/smartphones/samsung-galaxy-xcover-7.webp"
+  },
+  {
+    "id": "xiaomi-redmi-note-15",
+    "name": "Xiaomi Redmi Note 15",
+    "category": "Smartphones",
+    "slug": "xiaomi-redmi-note-15",
+    "searchTerms": [
+      "Xiaomi Redmi Note 15 sd card max size",
+      "best microsd for Redmi Note 15",
+      "Redmi Note 15 memory card slot specs",
+      "expand storage Redmi Note 15"
+    ],
+    "sdCard": {
+      "type": "microSDXC (UHS-I)",
+      "minSpeed": "Class 10 / U1 / A1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB (exFAT)"
+    },
+    "whySpecs": "The Redmi Note series is popular precisely because it undercuts flagships on price while still shipping a dedicated microSD slot, so most buyers are looking to maximize capacity on a budget rather than chase top-tier speed. A basic U1/A1 card is enough to keep the stock camera app and app-switching responsive; spending extra on a V30/A2 card brings little real-world benefit unless you specifically shoot 4K video and want to save it to the card. Capacity, not speed class, is the spec worth prioritizing here.",
+    "faq": [
+      {
+        "q": "Is it worth buying a fast V30 microSD card for the Redmi Note 15?",
+        "a": "Not necessarily. Unless you record 4K video directly to the card, a standard <b>U1/A1</b> card is enough for everyday photos, music, and app storage, and you'll save money by prioritizing capacity over speed class."
+      }
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "moto-g-stylus-5g-2025",
+      "samsung-galaxy-a55-5g"
+    ],
+    "imageUrl": "/img/devices/smartphones/xiaomi-redmi-note-15.webp"
+  },
+  {
+    "id": "ulefone-armor-33",
+    "name": "Ulefone Armor 33",
+    "category": "Smartphones",
+    "slug": "ulefone-armor-33",
+    "searchTerms": [
+      "Ulefone Armor 33 sd card max size",
+      "best microsd for Ulefone Armor 33",
+      "Armor 33 rugged phone memory card slot",
+      "expand storage Ulefone Armor 33 2TB"
+    ],
+    "sdCard": {
+      "type": "microSDXC (UHS-I)",
+      "minSpeed": "V30 / U3 / A2",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB (exFAT)"
+    },
+    "whySpecs": "Rugged outdoor phones like the Armor 33 are marketed on huge headline capacity (up to 2TB) for users who record long off-grid excursions, thermal-camera footage, or long-duration video without cloud access. That workload benefits from a genuinely fast, reliable V30/A2 card rather than a cheap high-capacity card, since dropped frames during a once-only recording (a hike, a job-site inspection) can't be redone. Given the phone's rugged, dust/water-resistant design is also aimed at harsh environments, pairing it with a card rated for temperature and shock resistance is worth the extra cost.",
+    "faq": [
+      {
+        "q": "Can the Ulefone Armor 33 really use a 2TB microSD card?",
+        "a": "Yes, the Armor 33 supports up to <b>2TB</b> microSDXC cards formatted as exFAT, useful for long off-grid video recording sessions where you can't offload footage to the cloud."
+      }
+    ],
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      }
+    ],
+    "relatedDevices": [
+      "samsung-galaxy-xcover-7",
+      "sony-xperia-1-vi"
+    ],
+    "imageUrl": "/img/devices/smartphones/ulefone-armor-33.webp"
   }
 ]

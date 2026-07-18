@@ -17,6 +17,9 @@ dist/
 build/
 data/devices.json  # Generated from category files during build
 
+# Playwright MCP debug artifacts (can capture tokens/secrets from console logs)
+.playwright-mcp/
+
 # Environment
 .env
 .env.local
