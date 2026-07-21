@@ -14,6 +14,7 @@ const CATEGORY_FOLDERS = {
   "Music Production": "music-production",
   "Security Cameras": "security-cameras",
   "Smartphones": "smartphones",
+  "Misc": "misc",
 };
 
 function getCategoryFolder(category) {

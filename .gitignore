@@ -28,3 +28,6 @@ data/devices.json  # Generated from category files during build
 # OS
 Thumbs.db
 .DS_Store
+
+# Internal scratch/reference files (not part of the site)
+internal/

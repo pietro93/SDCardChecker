@@ -1,0 +1,125 @@
+[
+  {
+    "id": "lowrance-hds-live",
+    "name": "Lowrance HDS LIVE",
+    "category": "Misc",
+    "slug": "lowrance-hds-live",
+    "searchTerms": [
+      "lowrance hds live sd card",
+      "lowrance hds live memory card size",
+      "lowrance hds live 32gb card",
+      "lowrance hds live sd card not reading"
+    ],
+    "sdCard": {
+      "type": "microSD (FAT32/SDHC only)",
+      "minSpeed": "Class 10",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "16GB",
+        "32GB"
+      ],
+      "maxCapacity": "32GB"
+    },
+    "whySpecs": "The HDS LIVE only supports FAT32-formatted SDHC cards, which top out at 32GB by spec. Cards larger than that ship as exFAT/SDXC and the unit won't read them — this is a hardware/firmware limitation of the SD controller, not a defect.",
+    "recommendedBrands": [
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What happens if I use a card bigger than 32GB in a Lowrance HDS LIVE?",
+        "a": "It won't be recognized, or a software update may fail to read it. This isn't damage to the unit or the card — swap in a <b>32GB or smaller card formatted as FAT32</b> and it will work normally."
+      }
+    ],
+    "relatedDevices": [
+      "garmin-echomap-uhd",
+      "humminbird-helix-7"
+    ],
+    "notes": "Original brief claimed oversized cards cause 'fatal update loops' — no credible source supports that. Verified failure mode is simple non-recognition/failed reads, fully recoverable by using a compliant card. Toned down accordingly."
+  },
+  {
+    "id": "garmin-echomap-uhd",
+    "name": "Garmin ECHOMAP UHD",
+    "category": "Misc",
+    "slug": "garmin-echomap-uhd",
+    "searchTerms": [
+      "garmin echomap uhd sd card",
+      "garmin echomap uhd memory card size",
+      "garmin echomap uhd max sd card"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 4 (Class 10 recommended for 8GB+)",
+      "minWriteSpeed": "N/A",
+      "recommendedCapacity": [
+        "16GB",
+        "32GB"
+      ],
+      "maxCapacity": "32GB"
+    },
+    "whySpecs": "Garmin's owner's manual caps supported cards at 32GB, formatted FAT32. The card stores map data plus sonar logs, waypoints, routes, and screenshots — not maps exclusively.",
+    "recommendedBrands": [
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the SD card in the ECHOMAP UHD only used for maps?",
+        "a": "No — <b>the card also stores sonar logs, waypoints, routes, and screenshots</b>, not just map data. Keep that in mind when deciding how much free space to leave available beyond whatever charts you load."
+      }
+    ],
+    "relatedDevices": [
+      "lowrance-hds-live",
+      "humminbird-helix-7"
+    ]
+  },
+  {
+    "id": "humminbird-helix-7",
+    "name": "Humminbird Helix 7",
+    "category": "Misc",
+    "slug": "humminbird-helix-7",
+    "searchTerms": [
+      "humminbird helix 7 sd card",
+      "humminbird helix 7 memory card size",
+      "humminbird helix 7 microsd slot"
+    ],
+    "sdCard": {
+      "type": "microSD (single slot)",
+      "minSpeed": "Class 10",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "16GB",
+        "32GB"
+      ],
+      "maxCapacity": "32GB"
+    },
+    "whySpecs": "The Helix 7 has a single microSD slot capped at 32GB for chart and sonar-log storage.",
+    "recommendedBrands": [
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the Helix 7 have two SD card slots?",
+        "a": "No — <b>the Helix 7 has a single microSD slot</b>, unlike some other Helix models that do have two. Don't assume dual-slot behavior (like simultaneous chart + backup cards) on this model."
+      }
+    ],
+    "relatedDevices": [
+      "lowrance-hds-live",
+      "garmin-echomap-uhd"
+    ],
+    "notes": "Original brief claimed dual card slots on the Helix 7 — corrected to single slot per Humminbird documentation. Some other Helix models do have two slots; the 7 does not."
+  }
+]

@@ -71,5 +71,11 @@
     "icon": "3d-printer",
     "label": { "en": "3D Printers & Fabrication", "ja": "3Dプリンター", "de": "3D-Drucker", "fr": "Imprimantes 3D et fabrication", "it": "Stampanti 3D e fabbricazione" },
     "matchValues": ["3D Printers & Fabrication", "3d-printers-and-fabrication"]
+  },
+  "misc": {
+    "slug": "misc",
+    "icon": "misc",
+    "label": { "en": "Misc", "ja": "Misc", "de": "Misc", "fr": "Misc", "it": "Misc" },
+    "matchValues": ["Misc", "misc", "Marine Electronics", "Marine GPS", "Fish Finders"]
   }
 }
