@@ -6100,6 +6100,10 @@
         },
         {
           "id": "topesel-high-endurance"
+        },
+        {
+          "id": "sandisk-high-endurance-512",
+          "note": "Only endurance pick here that reaches the full 512GB max capacity for 3-channel recording"
         }
       ],
       "faq": [
@@ -7691,8 +7695,8 @@
           "note": "Standard microSDXC — works in Switch 2 and all original Switch models"
         },
         {
-          "id": "sandisk-extreme-microsd",
-          "note": "Standard UHS-I U3/A2 — fast, reliable, backward compatible"
+          "id": "sandisk-extreme-pro-microsd-2tb",
+          "note": "Standard UHS-I U3/A2 — fast, reliable, backward compatible, available up to the full 2TB max capacity"
         },
         {
           "id": "lexar-professional-1000x-microsd",
@@ -8235,6 +8239,10 @@
         },
         {
           "id": "kingston-canvas-react-plus-microsd"
+        },
+        {
+          "id": "sandisk-extreme-pro-microsd-2tb",
+          "note": "UHS-I, not UHS-II — but the only pick here that reaches the full 2TB max capacity"
         }
       ],
       "faq": [
@@ -8639,8 +8647,8 @@
           "note": "Top UHS-II performance tier — takes full advantage of the dual-row pin reader"
         },
         {
-          "id": "sandisk-extreme-microsd",
-          "note": "Massive capacity tier (up to 1.5TB) for large backlogs, A2-rated UHS-I"
+          "id": "sandisk-extreme-pro-microsd-2tb",
+          "note": "Massive capacity tier, up to the full 2TB max, A2-rated UHS-I"
         },
         {
           "id": "sandisk-rog-ally-microsd",
@@ -8704,8 +8712,8 @@
           "note": "Reliable V30/A2 pick for large modern game libraries"
         },
         {
-          "id": "sandisk-extreme-microsd",
-          "note": "Massive capacity tier (up to 1.5TB) for sprawling AAA backlogs"
+          "id": "sandisk-extreme-pro-microsd-2tb",
+          "note": "Massive capacity tier, up to the full 2TB max, for sprawling AAA backlogs"
         }
       ],
       "faq": [
@@ -8757,8 +8765,8 @@
       "whySpecs": "The Claw 8 EX AI+ pairs Intel's Arc G3 Extreme platform with an 80Whr battery for sustained, high-wattage portable performance, and leans on Intel XeSS AI upscaling that depends on fast, consistent asset streaming. Because Arc drivers are sensitive to delivery delays when streaming game assets from external storage, an A2-rated card with strong random read/write IOPS is essential to avoid stutter and micro-freezes — a plain V30 card without A2 will bottleneck the system under load.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-microsd",
-          "note": "A2/V30 with high random IOPS — coordinates well with Windows 11 virtual memory without bottlenecking"
+          "id": "sandisk-extreme-pro-microsd-2tb",
+          "note": "A2/V30 with high random IOPS, available up to the full 2TB max — coordinates well with Windows 11 virtual memory without bottlenecking"
         },
         {
           "id": "lexar-play-microsd",
@@ -8876,6 +8884,10 @@
         {
           "id": "samsung-pro-plus-microsd",
           "note": "Reliable A2/V30 alternative for large AAA libraries"
+        },
+        {
+          "id": "sandisk-extreme-pro-microsd-2tb",
+          "note": "UHS-I, not UHS-II — but reaches the full 2TB max capacity for the biggest libraries"
         }
       ],
       "faq": [
@@ -9242,6 +9254,10 @@
         {
           "id": "kingston-canvas-react-plus-microsd",
           "note": "Premium UHS-II V90 option for maximum headroom"
+        },
+        {
+          "id": "sandisk-extreme-pro-microsd-2tb",
+          "note": "UHS-I, not UHS-II — but the only pick here that reaches the full 2TB max capacity"
         }
       ],
       "faq": [
@@ -9399,8 +9415,8 @@
       "whySpecs": "AYN's Thor sits alongside the Odin 3 and Odin 2 Portal as a premium, high-powered Android handheld built for demanding emulation, including PS2, GameCube, and Switch titles. Those systems' game files dwarf classic 8/16-bit ROMs, so high-capacity, A2-rated storage matters from day one — a 128GB card fills up almost immediately, and a card without strong random read/write performance will stutter in higher-end emulators regardless of how fast its sequential speeds look.",
       "recommendedBrands": [
         {
-          "id": "sandisk-extreme-microsd",
-          "note": "High-capacity A2/V30 pick for large emulation libraries"
+          "id": "sandisk-extreme-pro-microsd-2tb",
+          "note": "High-capacity A2/V30 pick for large emulation libraries, available up to the theoretical 2TB max"
         },
         {
           "id": "samsung-pro-plus-microsd",
@@ -10676,7 +10692,7 @@
     }
   ],
   "metadata": {
-    "generated": "2026-07-21T05:58:15.644Z",
+    "generated": "2026-07-21T13:19:51.556Z",
     "totalDevices": 219,
     "categories": [
       "3D Printers & Fabrication",

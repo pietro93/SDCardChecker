@@ -321,6 +321,33 @@
       "tier": "specialty"
     },
     {
+      "id": "sandisk-high-endurance-512",
+      "name": "SanDisk High Endurance microSD",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "U3",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 40 MB/s",
+        "endurance": "Up to 40,000 Hours"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Specialty",
+      "imageUrl": "/img/cards/sandisk-high-endurance-512.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+High+Endurance+512GB+microSD&tag=sd-cc-20",
+      "pros": "Rated for continuous dash cam and security camera recording up to 512GB.",
+      "cons": "Slower write speeds than standard cards.",
+      "tier": "specialty"
+    },
+    {
       "id": "samsung-pro-endurance",
       "name": "Samsung PRO Endurance",
       "type": "microSD",
@@ -496,6 +523,35 @@
       "pros": "True UHS-II speeds for drones.",
       "cons": "Very expensive.",
       "tier": "professional"
+    },
+    {
+      "id": "sandisk-extreme-pro-microsd-2tb",
+      "name": "SanDisk Extreme PRO microSD UHS-I (2TB)",
+      "type": "microSD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 250 MB/s",
+        "writeSpeed": "Up to 150 MB/s",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048
+      ],
+      "priceSymbol": "$$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/sandisk-extreme-pro-microsd-2tb.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+Extreme+PRO+microSD+2TB&tag=sd-cc-20",
+      "pros": "Highest-capacity microSD available, up to 2TB for gaming handhelds.",
+      "cons": "Expensive at the top capacities.",
+      "tier": "recommended"
     },
     {
       "id": "sandisk-extreme-pro-cfexpress",
