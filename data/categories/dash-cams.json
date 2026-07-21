@@ -149,7 +149,9 @@
     ],
     "relatedDevices": [
       "generic-4k-dashcam",
-      "viofo-t130-pro"
+      "viofo-t130-pro",
+      "vantrue-n4-pro",
+      "blackvue-dr970x"
     ],
     "notes": "Professional dual-channel dash cam. Requires dual High Endurance cards for reliable operation."
   },
@@ -204,7 +206,8 @@
     "relatedDevices": [
       "viofo-a229-pro",
       "nextbase-iq-4k",
-      "generic-4k-dashcam"
+      "generic-4k-dashcam",
+      "thinkware-u3000"
     ],
     "notes": "Restrict affiliate output strictly to High-Endurance/U3 cards rated for continuous overwrite loops. Explicitly warn against standard consumer cards — heat + loop-recording wear kills them early in hot windshields. Per Viofo's own guidance, max 256GB, 128GB preferable."
   },
@@ -259,7 +262,8 @@
     "relatedDevices": [
       "viofo-t130-pro",
       "viofo-a229-pro",
-      "generic-4k-dashcam"
+      "generic-4k-dashcam",
+      "blackvue-dr970x"
     ],
     "notes": "Same High-Endurance-only framing as T130 Pro. Nextbase's cloud/AI features push higher bitrate 4K, so capacity guidance skews larger (256GB+) alongside the endurance requirement. No authoritative Nextbase source found stating a specific write-class floor (e.g. V30) for this model — copy is tied to U3 + dashcam/high-endurance rather than asserting V30."
   },
@@ -300,7 +304,9 @@
       }
     ],
     "relatedDevices": [
-      "generic-4k-dashcam"
+      "generic-4k-dashcam",
+      "viofo-a229-pro",
+      "nextbase-iq-4k"
     ],
     "notes": "Base DR970X caps at 256GB; only the DR970X Plus / DR970X Plus LTE Series II support up to 1TB. Official spec only requires Class 10/U1 — U3 is BlackVue's recommendation, not a hard requirement.",
     "imageUrl": "/img/devices/dashcams/blackvue-dr970x.webp"
@@ -341,7 +347,8 @@
       }
     ],
     "relatedDevices": [
-      "generic-4k-dashcam"
+      "generic-4k-dashcam",
+      "viofo-t130-pro"
     ],
     "notes": "Dropped the 'rejects cards without continuous write stability' claim from the original brief — no official Thinkware source backs it; this looks like SEO embellishment of a generic 'use quality cards' recommendation."
   },
