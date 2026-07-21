@@ -197,9 +197,13 @@ async function shopifySource(device, { domain, productTypes, preferTokens } = {}
     candidates = candidates.filter((p) => productTypes.includes(p.product_type));
   }
 
+  // Some storefronts rebrand a device's retail title away from its model
+  // number (e.g. Vantrue's "N4 Pro" listed as "Nexus 4 Pro") but keep the
+  // model code in the product's URL handle — include it in the matched text
+  // so relevanceScore can still find the model token.
   const scored = rankCandidates(
     candidates
-      .map((p) => ({ p, r: relevanceScore(device.name, `${p.vendor || ""} ${p.title}`) }))
+      .map((p) => ({ p, r: relevanceScore(device.name, `${p.vendor || ""} ${p.title} ${p.handle || ""}`) }))
       .filter((s) => s.r.ok),
     (s) => s.p.title,
     preferTokens
@@ -357,6 +361,12 @@ const BRAND_REGISTRY = [
   // listings per model year; preferTokens nudges toward the newest revision
   // instead of the shortest title (the original 2023 listing).
   { brand: "gpd", source: wooCommerceSource, config: { domain: "https://gpdstore.net", preferTokens: ["2025"] } },
+  { brand: "bushnell", source: shopifySource, config: { domain: "https://www.bushnell.com", productTypes: ["Non-Cellular Trail Camera", "Cellular Trail Camera"] } },
+  { brand: "blackvue", source: shopifySource, config: { domain: "https://blackvue.com", productTypes: ["Dash cam"] } },
+  // Vantrue's storefront rebrands the "N4 Pro" dashcam as "Nexus 4 Pro" in the
+  // title, but the product's URL handle is "n4-pro" — shopifySource matches
+  // against vendor+title+handle, so the model token still resolves.
+  { brand: "vantrue", source: shopifySource, config: { domain: "https://vantrue.com", productTypes: ["dash cam"] } },
 ];
 
 function lookupBrand(device) {

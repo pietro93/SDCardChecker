@@ -4639,7 +4639,8 @@
         "spypoint-flex",
         "bushnell-core-ds-4k"
       ],
-      "notes": "Full-size SD only; no microSD slot on this model. Discourage adapters explicitly in copy."
+      "notes": "Full-size SD only; no microSD slot on this model. Discourage adapters explicitly in copy.",
+      "imageUrl": "/img/devices/cameras/tactacam-reveal-x-pro.webp"
     },
     {
       "id": "spypoint-flex",
@@ -4680,7 +4681,8 @@
         "tactacam-reveal-x-pro",
         "bushnell-core-ds-4k"
       ],
-      "notes": "Source claimed in-app formatting was required — corrected; the app handles photo delivery/firmware, not formatting. Formatting is via the camera's FORMAT button or a computer (FAT32)."
+      "notes": "Source claimed in-app formatting was required — corrected; the app handles photo delivery/firmware, not formatting. Formatting is via the camera's FORMAT button or a computer (FAT32).",
+      "imageUrl": "/img/devices/cameras/spypoint-flex.webp"
     },
     {
       "id": "bushnell-core-ds-4k",
@@ -4721,7 +4723,8 @@
         "tactacam-reveal-x-pro",
         "spypoint-flex"
       ],
-      "notes": "One of Bushnell's first trail cams past the old 32GB ceiling; emphasize U3/V30 for 4K trigger video."
+      "notes": "One of Bushnell's first trail cams past the old 32GB ceiling; emphasize U3/V30 for 4K trigger video.",
+      "imageUrl": "/img/devices/cameras/bushnell-core-ds-4k.webp"
     },
     {
       "id": "canon-powershot-elph-100-hs",
@@ -4762,7 +4765,8 @@
         "sony-cybershot-dsc-w800",
         "nikon-coolpix-s3100"
       ],
-      "notes": "Source's \"2TB\" figure isn't backed by any Canon document for this model — softened."
+      "notes": "Source's \"2TB\" figure isn't backed by any Canon document for this model — softened.",
+      "imageUrl": "/img/devices/cameras/canon-powershot-elph-100-hs.webp"
     },
     {
       "id": "sony-cybershot-dsc-w800",
@@ -4803,7 +4807,8 @@
         "canon-powershot-elph-100-hs",
         "nikon-coolpix-s3100"
       ],
-      "notes": "Sony help guide is the source for the 64GB tested ceiling and Memory Stick PRO Duo requirement."
+      "notes": "Sony help guide is the source for the 64GB tested ceiling and Memory Stick PRO Duo requirement.",
+      "imageUrl": "/img/devices/cameras/sony-cybershot-dsc-w800.webp"
     },
     {
       "id": "nikon-coolpix-s3100",
@@ -4844,7 +4849,8 @@
         "canon-powershot-elph-100-hs",
         "sony-cybershot-dsc-w800"
       ],
-      "notes": "Source framed UHS-II as merely \"a waste of money\" — corrected: the camera's interface can't use UHS bus speeds at all, so it's functionally inert, not just poor value."
+      "notes": "Source framed UHS-II as merely \"a waste of money\" — corrected: the camera's interface can't use UHS bus speeds at all, so it's functionally inert, not just poor value.",
+      "imageUrl": "/img/devices/cameras/nikon-coolpix-s3100.webp"
     },
     {
       "id": "raspberry-pi-5",
@@ -6017,7 +6023,8 @@
       "relatedDevices": [
         "generic-4k-dashcam"
       ],
-      "notes": "Base DR970X caps at 256GB; only the DR970X Plus / DR970X Plus LTE Series II support up to 1TB. Official spec only requires Class 10/U1 — U3 is BlackVue's recommendation, not a hard requirement."
+      "notes": "Base DR970X caps at 256GB; only the DR970X Plus / DR970X Plus LTE Series II support up to 1TB. Official spec only requires Class 10/U1 — U3 is BlackVue's recommendation, not a hard requirement.",
+      "imageUrl": "/img/devices/dashcams/blackvue-dr970x.webp"
     },
     {
       "id": "thinkware-u3000",
@@ -10662,7 +10669,7 @@
     }
   ],
   "metadata": {
-    "generated": "2026-07-21T04:59:36.449Z",
+    "generated": "2026-07-21T05:19:10.912Z",
     "totalDevices": 219,
     "categories": [
       "3D Printers & Fabrication",

@@ -145,3 +145,20 @@ entries for examples).
 - The matcher's regression cases (covering the 5 false-positive classes
   above) are committed at `scripts/images/__tests__/relevanceScore.test.js`
   (`npm run test:images`) — run before/after touching `relevanceScore()`.
+- **Vantrue** (vantrue.com, Shopify, registered 2026-07) correctly matches
+  the "N4 Pro" device to its "Nexus 4 Pro" listing (handle `n4-pro` — see
+  the `shopifySource` note about matching against vendor+title+handle), but
+  every image in that product's catalog entry is a lifestyle/marketing
+  collage (in-car shots, phone-app screenshots, feature callouts) — none are
+  a clean studio cutout the compositor can chroma-key. Left on placeholder;
+  re-check if Vantrue ever adds a plain product shot.
+- **Thinkware** has no reachable open storefront: `thinkware.com` redirects
+  geographically to country marketing sites (e.g. `thinkwaredashcam.it`)
+  that are WordPress + Jetpack, not WooCommerce (no `wc/store` REST
+  namespace) — no products.json, no open commerce API found.
+- Marine electronics (**Lowrance**, **Garmin**, **Humminbird**) and legacy
+  point-and-shoot cameras (**Canon**, **Sony**, **Nikon**) are large/enterprise
+  storefronts with no public Shopify/WooCommerce API (`/products.json` and
+  `/wp-json/wc/store/v1/products` both blocked or absent) — same class of gap
+  as the big-brand sites already noted above; would need a bespoke/headless
+  adapter to source, out of scope here.
