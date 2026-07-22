@@ -12,6 +12,13 @@ const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSid
 
 const srcPath = path.join(__dirname, "../../src");
 const locales = JSON.parse(fs.readFileSync(path.join(__dirname, "../../data/locales.json"), "utf8"));
+const categorySlugsRegistry = JSON.parse(fs.readFileSync(path.join(__dirname, "../../data/category-slugs.json"), "utf8"));
+
+// Curated groups of sibling categories that should cross-link to each other via a
+// "Related categories" row. A category slug not listed in any group gets no cross-links.
+const RELATED_CATEGORY_GROUPS = [
+  ["cameras", "action-cameras", "trail-cameras", "dash-cams", "security-cameras"],
+];
 
 const MIN_SUBCATEGORY_DEVICES = 3;
 // Manufacturer names that span two words; checked before falling back to the first word of the device name
@@ -153,6 +160,36 @@ function generateSubcategoryLinksHTML(category, devices) {
 }
 
 /**
+ * Generate a "Related categories:" link row for sibling categories in the same curated
+ * group (see RELATED_CATEGORY_GROUPS), restricted to categories that actually have a
+ * generated page in this locale (categoryLocalesMap) and excluding the current category.
+ */
+function generateRelatedCategoriesHTML(categorySlug, locale, categoryLocalesMap, dirPrefix) {
+  const group = RELATED_CATEGORY_GROUPS.find((g) => g.includes(categorySlug));
+  if (!group) return "";
+
+  const siblings = group
+    .filter((slug) => slug !== categorySlug)
+    .filter((slug) => (categoryLocalesMap[slug] || new Set()).has(locale))
+    .map((slug) => {
+      const entry = categorySlugsRegistry[slug];
+      if (!entry) return null;
+      const label = entry.label[locale] || entry.label.en;
+      const href = `${dirPrefix}/categories/${slug}/`;
+      return `<a href="${href}" class="px-4 py-2 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-blue-500 hover:bg-blue-50 font-medium text-sm transition-all duration-200">${label}</a>`;
+    })
+    .filter(Boolean);
+
+  if (siblings.length === 0) return "";
+
+  return `
+      <div class="mb-8 flex flex-wrap gap-3 items-center">
+        <div class="text-sm font-semibold text-slate-700 mr-2">${t("categoryPage.relatedCategories", locale)}</div>
+        ${siblings.join("")}
+      </div>`;
+}
+
+/**
  * Generate single category page
  */
 function generateCategoryPage(category, devices, template, locale = "en", categoryLocalesMap = {}) {
@@ -214,6 +251,7 @@ function generateCategoryPage(category, devices, template, locale = "en", catego
     .replace(/{{HOME_URL}}/g, homeUrl)
     .replace(/{{HOME_LABEL}}/g, t("breadcrumbHome", locale))
     .replace(/{{SUBCATEGORY_LINKS}}/g, locale === "en" ? generateSubcategoryLinksHTML(category, devices) : "")
+    .replace(/{{RELATED_CATEGORIES}}/g, generateRelatedCategoriesHTML(categorySlug, locale, categoryLocalesMap, dirPrefix))
     .replace(/{{DEVICE_CARDS_HTML}}/g, deviceCardsHTML)
     .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
     .replace(/{{SIDEBAR}}/g, generateSidebar(locale))
