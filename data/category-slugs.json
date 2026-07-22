@@ -10,7 +10,13 @@
     "slug": "cameras",
     "icon": "camera",
     "label": { "en": "Cameras", "ja": "カメラ", "de": "Kameras", "fr": "Appareils photo", "it": "Fotocamere" },
-    "matchValues": ["Cameras", "cameras", "カメラ", "Film Cameras", "film-cameras", "DSLR Cameras", "dslr-cameras", "Mirrorless Cameras", "mirrorless-cameras", "Cinema Cameras", "cinema-cameras", "Trail Cameras", "trail-cameras"]
+    "matchValues": ["Cameras", "cameras", "カメラ", "Film Cameras", "film-cameras", "DSLR Cameras", "dslr-cameras", "Mirrorless Cameras", "mirrorless-cameras", "Cinema Cameras", "cinema-cameras"]
+  },
+  "trail-cameras": {
+    "slug": "trail-cameras",
+    "icon": "camera",
+    "label": { "en": "Trail Cameras", "ja": "トレイルカメラ", "de": "Wildkameras", "fr": "Caméras de chasse", "it": "Fototrappole" },
+    "matchValues": ["Trail Cameras", "trail-cameras", "トレイルカメラ"]
   },
   "audio-and-hi-fi": {
     "slug": "audio-and-hi-fi",
