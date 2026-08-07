@@ -231,9 +231,6 @@ async function build() {
     console.log(`  • Sitemap & robots.txt: ✓`);
     console.log(`\nOutput directory: ${distPath}`);
     console.log(`\nTo view locally, run: npx http-server dist`);
-    console.log(
-      `\nDon't forget to add your Mediavine code to your pages!\n`
-    );
   } catch (error) {
     console.error(
       "Error during generation:",
