@@ -19,7 +19,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "Records 4K video at up to 60fps. V30 ensures smooth recording without dropped frames. 4K bitrate requires sustained 30MB/s write speed minimum.",
+    "whySpecs": "Records 4K/60 HDR and 4K/100 slow motion, plus 10-bit D-Log M for grading — the high-frame-rate and 10-bit modes are the demanding ones, not ordinary 4K/30. V30's guaranteed 30 MB/s of sustained write is what keeps those modes stable; a card that merely peaks fast but sags under sustained load is how you end up with a dropped clip you can't reshoot. The Mini 4 Pro also has about 2GB of internal storage, which is an emergency buffer for a forgotten card, not a substitute for one — it's roughly a minute of 4K.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -37,6 +37,10 @@
         "a": "<b>Using V20 cards is not recommended for DJI Mini 4 Pro</b>. <b>V30 speed class is the minimum required for stable 4K video recording</b>, especially at higher frame rates, to prevent dropped frames and file corruption during flight."
       },
       {
+        "q": "Do I need a faster card for 4K/100 slow motion or D-Log M?",
+        "a": "<b>A good V30 card still covers both</b> — V30 guarantees 30 MB/s sustained, which sits above what the Mini 4 Pro's highest-bitrate modes actually demand. What matters more than the speed grade is that the card holds that speed consistently: cheap or counterfeit cards often hit their rated number in a quick benchmark and then sag partway through a long clip. Buy from a reputable seller and format the card in the drone before an important flight."
+      },
+      {
         "q": "Does the brand matter for drones?",
         "a": "<b>Yes, brand reliability is critical for drone operations</b>. <b>Use trusted brands like SanDisk, Lexar, or Kingston</b> to avoid mid-flight card failures that could result in lost footage or worse, emergency landings."
       },
@@ -47,6 +51,8 @@
     ],
     "relatedDevices": [
       "dji-mini-3-pro",
+      "dji-mini-5-pro",
+      "dji-mini-4k",
       "dji-air-3s"
     ],
     "notes": "DJI officially recommends V30 cards for safe recording. Test new cards before flights."
@@ -246,9 +252,9 @@
         "128GB",
         "256GB"
       ],
-      "maxCapacity": "256GB"
+      "maxCapacity": "512GB"
     },
-    "whySpecs": "A budget-friendly drone weighing under 250g, capable of recording 4K 30fps video. DJI officially recommends V30 cards minimum for stable 4K recording. Despite being an entry-level model, it shares the same essential card requirements as other higher-end drones in the Mini series, emphasizing reliability for in-flight recording.",
+    "whySpecs": "A budget-friendly drone weighing under 250g, capable of recording 4K 30fps video. DJI officially recommends V30 cards minimum for stable 4K recording. Despite being an entry-level model, it shares the same essential card requirements as other higher-end drones in the Mini series, emphasizing reliability for in-flight recording. Because it tops out at 4K/30 rather than the Mini 4 Pro's 4K/100, its bitrate demands are at the gentler end of that shared V30 requirement — a mid-range V30 card is genuinely enough here.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -266,8 +272,8 @@
         "a": "<b>The Mini 4K is a more budget-oriented version with fewer intelligent flight modes and no obstacle avoidance sensors.</b> However, it records the same 4K 30fps video and requires the same V30 microSD cards for stable performance. It's an excellent choice for beginners who prioritize camera quality but don't need advanced features."
       },
       {
-        "q": "Can I use microSD cards larger than 256GB with the Mini 4K?",
-        "a": "<b>DJI officially supports and recommends cards up to 256GB for the Mini 4K.</b> While some larger cards might technically function, they are not officially tested or guaranteed for full compatibility. Sticking to 256GB or smaller ensures guaranteed reliability and stable performance during flight operations."
+        "q": "What's the largest microSD card the Mini 4K supports?",
+        "a": "<b>DJI supports cards up to 512GB on the Mini 4K</b>, the same ceiling as the Mini 3 and Mini 3 Pro. That said, 512GB is more than this drone realistically needs: at 4K/30 you'd have to fly for many battery packs to fill even a 128GB card, and battery life is the real limit on a shoot. <b>128GB or 256GB is the sweet spot</b> — and two smaller cards beat one large one, since a single card failure then costs you half your footage instead of all of it."
       }
     ],
     "relatedDevices": [

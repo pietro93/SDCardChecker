@@ -405,16 +405,17 @@
       ],
       "sdCard": {
         "type": "microSD UHS-I (UHS-II Compatible)",
-        "minSpeed": "V30",
+        "minSpeed": "A2 / V30",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "128GB",
           "256GB",
-          "512GB"
+          "512GB",
+          "1TB"
         ],
-        "maxCapacity": "512GB"
+        "maxCapacity": "1TB"
       },
-      "whySpecs": "Shoots 5.3K at high frame rates. V30 ensures 30MB/s sustained write speed needed to prevent dropped frames or corrupted files. GoPro's 5.3K bitrate (~60-80 Mbps) requires reliable, fast cards for stable recording.",
+      "whySpecs": "Shoots 5.3K60, 4K120 and 2.7K240. <b>V30 is the floor, not a nice-to-have</b> — it guarantees 30 MB/s of sustained write, which comfortably covers the Hero 13's High bitrate setting of roughly 120 Mbps (about 15 MB/s) with enough headroom that a card slowing down mid-clip won't drop frames or corrupt the file. GoPro's current guidance also asks for an <b>A2</b> rating on top of V30, and the Hero 13 supports cards up to <b>1TB</b>, so there's no reason to cap yourself at 512GB if you shoot long days.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -436,7 +437,11 @@
         },
         {
           "q": "What's the fastest card I should get?",
-          "a": "<b>V30 speed class is sufficient for standard GoPro Hero 13 recording</b>. V60 or faster cards are useful only for professional multi-camera workflows, simultaneous backup recording, or future-proofing for newer, more demanding cameras."
+          "a": "<b>V30 speed class is sufficient for standard GoPro Hero 13 recording</b>. V60 or faster cards are useful only for professional multi-camera workflows, simultaneous backup recording, or future-proofing for newer, more demanding cameras. The Hero 13 has a UHS-I slot, so a UHS-II card will work but will simply run at UHS-I speeds in the camera — you'd only see the extra speed when offloading footage in a UHS-II reader."
+        },
+        {
+          "q": "Does the GoPro Hero 13 support a 1TB microSD card?",
+          "a": "<b>Yes — GoPro supports cards up to 1TB on the Hero 13.</b> Older guidance capping GoPro at 512GB is out of date. A 1TB card is worth it if you shoot all-day sessions and don't want to swap cards in the field; otherwise two 256GB or 512GB cards are the safer buy, because a single failed card takes down everything you shot rather than half of it."
         },
         {
           "q": "How often should I replace my SD card?",
@@ -447,9 +452,10 @@
         "gopro-hero-12",
         "gopro-hero-max",
         "gopro-hero-11-black",
+        "gopro-hero-14-black",
         "dji-mini-4-pro"
       ],
-      "notes": "Same specs as Hero 12. Official GoPro tests show V30 cards optimal for 5.3K 60fps stability."
+      "notes": "Card requirements match Hero 12. Official GoPro guidance: A2/V30, up to 1TB."
     },
     {
       "id": "gopro-hero-12",
@@ -463,15 +469,17 @@
       ],
       "sdCard": {
         "type": "microSD UHS-I (UHS-II Compatible)",
-        "minSpeed": "V30",
+        "minSpeed": "A2 / V30",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "128GB",
-          "256GB"
+          "256GB",
+          "512GB",
+          "1TB"
         ],
-        "maxCapacity": "512GB"
+        "maxCapacity": "1TB"
       },
-      "whySpecs": "Shoots 5.3K video at various frame rates. V30 cards ensure 30MB/s sustained write speed. Critical for preventing dropped frames during high bitrate recording.",
+      "whySpecs": "Shoots 5.3K video at various frame rates, with a High bitrate setting of roughly 120 Mbps. V30 cards guarantee 30 MB/s of sustained write, which leaves comfortable headroom over that — the point isn't peak speed but that the card never dips below the camera's demand mid-clip, which is what causes dropped frames and corrupted files. GoPro's current guidance pairs V30 with an <b>A2</b> rating, and the Hero 12 handles cards up to <b>1TB</b>.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -498,11 +506,11 @@
         "gopro-hero-max",
         "gopro-hero-11-black"
       ],
-      "notes": "Official GoPro recommendation: V30 cards. Compatible with all GoPro Hero series."
+      "notes": "Official GoPro recommendation: A2/V30 cards, up to 1TB."
     },
     {
       "id": "gopro-hero-max",
-      "name": "GoPro Hero Max",
+      "name": "GoPro MAX",
       "category": "Action Cameras",
       "slug": "gopro-hero-max",
       "searchTerms": [
@@ -520,7 +528,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Shoots 360-degree video and standard 4K. V30 ensures stable recording for both modes.",
+      "whySpecs": "Shoots 5.6K30 spherical video in 360 mode, and up to 1440p60 as a single-lens camera in HERO mode — note the MAX is <b>not</b> a 4K camera in HERO mode, which surprises people cross-shopping it against a Hero Black. 360 capture is the demanding mode: it's stitching two sensors into one high-bitrate stream, so V30's guaranteed 30 MB/s sustained write is what keeps long spherical clips from dropping frames. The MAX has a UHS-I slot and GoPro's approved-card list for it is more conservative than for current models, so stick to a well-known V30 card rather than the largest one you can find.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -542,15 +550,16 @@
         },
         {
           "q": "How much storage for 360 content?",
-          "a": "<b>In 360 mode, a 128GB microSD card provides approximately 1.5 hours of recording time</b>. Storage consumption is higher in 360 mode compared to standard video, so plan accordingly for extended 360 capture sessions."
+          "a": "<b>In 360 mode, a 128GB microSD card holds roughly 2.5 hours of footage.</b> Spherical capture combines two sensors into one stream, so it eats storage noticeably faster than HERO mode does — but on a long shoot the limit you hit first is usually battery life, not card space. A 256GB card comfortably covers a full day of intermittent 360 capture."
         }
       ],
       "relatedDevices": [
+        "gopro-max-2",
         "gopro-hero-13",
         "gopro-hero-12",
         "gopro-hero-11-black"
       ],
-      "notes": "360-degree camera. V30 important for both 360 and standard recording modes.",
+      "notes": "Original 2019 360 camera (correct product name is 'GoPro MAX', not 'Hero Max'). 5.6K30 in 360 mode, 1440p60 max in HERO mode. Kept at 512GB — GoPro's approved-card list for MAX is more conservative than for HERO12/13/Max 2, which go to 1TB.",
       "imageUrl": "/img/devices/action-cameras/gopro-hero-max.webp"
     },
     {
@@ -846,6 +855,7 @@
         }
       ],
       "relatedDevices": [
+        "dji-osmo-action-6",
         "gopro-hero-13",
         "insta360-ace-pro",
         "gopro-hero-12"
@@ -1183,7 +1193,8 @@
       "relatedDevices": [
         "gopro-hero-14-black",
         "insta360-ace-pro-2",
-        "dji-osmo-pocket-4"
+        "dji-osmo-pocket-4",
+        "dji-osmo-action-4"
       ],
       "notes": "DJI's current action camera flagship. DJI official minimum: U3/V30 UHS-I, max 2TB. 'Card Too Slow' is the most common support issue and always traces back to an underrated or counterfeit card.",
       "imageUrl": "/img/devices/action-cameras/dji-osmo-action-6.webp"
@@ -4745,9 +4756,9 @@
           "64GB",
           "128GB"
         ],
-        "maxCapacity": "No official limit"
+        "maxCapacity": "2TB (SDXC spec limit)"
       },
-      "whySpecs": "The Raspberry Pi 5 boots its operating system from the microSD card. An 'A1' or, ideally, an 'A2' rated card is crucial for performance. These ratings signify faster random read/write speeds, which dramatically improves OS responsiveness and application loading times.",
+      "whySpecs": "The Raspberry Pi 5 boots its operating system from the microSD card, and it's the first Pi that can actually read one quickly: the Pi 5's SD interface supports <b>SDR104</b>, roughly doubling the bus speed to about 100 MB/s versus the ~50 MB/s ceiling on the Pi 4. To see that, you need a UHS-I card that's genuinely rated for it — a slow card is the single most common cause of a Pi 5 that feels sluggish. Beyond raw throughput, look for an <b>A2</b> rating: the 'A' (Application Performance Class) ratings describe random read/write speed, which is what an operating system actually does all day, and unlike the Pi 4 the Pi 5 supports the command queuing that lets A2 cards deliver on it. If you need more speed than any microSD can give, the Pi 5's PCIe connector accepts an M.2 HAT and NVMe SSD.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -4763,9 +4774,21 @@
         {
           "q": "What's more important for the Raspberry Pi 5, V30 or A2?",
           "a": "<b>The A2 rating is more important.</b> The 'V' rating (e.g., V30) is for sustained video recording speed, while the 'A' rating (Application Performance Class) is for random read/write operations, which is what an operating system does. An A2 card will feel much faster in daily use."
+        },
+        {
+          "q": "Is an A2 card actually worth it on the Pi 5, or is A1 fine?",
+          "a": "<b>On the Pi 5, A2 is worth paying for — which was not true on the Pi 4.</b> A2 cards get their speed advantage from command queuing, and the Pi 4's SD host support never took advantage of it, so A2 cards there performed much like A1. The Pi 5 changed that, and it also raised the bus speed to SDR104 (~100 MB/s vs ~50 MB/s). If you're reusing a card from an older Pi, that's the upgrade you'd feel."
+        },
+        {
+          "q": "Should I use an NVMe SSD instead of a microSD card on the Pi 5?",
+          "a": "<b>If your project is disk-heavy, yes.</b> The Pi 5 added a PCIe connector, so with an M.2 HAT you can boot from an NVMe SSD several times faster than any microSD card, with far better write endurance. A good microSD card is still the simpler and cheaper choice for general desktop use, learning projects, and anything you'll reimage often."
         }
       ],
-      "relatedDevices": [],
+      "relatedDevices": [
+        "raspberry-pi-4-model-b",
+        "raspberry-pi-3-model-b-plus",
+        "raspberry-pi-compute-module-5"
+      ],
       "notes": "Targets a huge DIY and technical audience. The card is a mandatory component."
     },
     {
@@ -5080,9 +5103,9 @@
           "32GB",
           "64GB"
         ],
-        "maxCapacity": "No official limit"
+        "maxCapacity": "2TB (SDXC spec limit)"
       },
-      "whySpecs": "Like all Raspberry Pis, the Pi 4 runs its OS from the microSD card. An A1 or A2 rated card is crucial for good performance. The A-rating signifies faster random access speeds, which translates to a more responsive desktop experience and faster application launch times.",
+      "whySpecs": "Like all Raspberry Pis, the Pi 4 runs its OS from the microSD card, so random access speed — not video throughput — is what makes it feel fast. That's the <b>A</b> (Application Performance Class) rating, and an A1 card is the spec that matters here. <b>Paying extra for A2 on a Pi 4 is usually wasted money:</b> A2's advantage comes from command queuing, which the Pi 4's SD host support doesn't take advantage of, so A2 cards generally perform about the same as A1 on this board. The Pi 4's card interface also tops out around 50 MB/s regardless of how fast the card is rated, so a premium high-speed card won't stretch its legs — save the A2 and SDR104 spending for a Pi 5.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -5105,6 +5128,10 @@
         {
           "q": "What is the minimum recommended capacity for Raspberry Pi 4?",
           "a": "<b>A 32GB card is a good minimum for Raspberry Pi OS with a desktop environment.</b> This leaves enough space for installing several applications and for project files. For more complex projects or storing media, 64GB or larger is recommended."
+        },
+        {
+          "q": "Will a faster card make my Raspberry Pi 4 faster?",
+          "a": "<b>Only up to a point.</b> The Pi 4's SD card interface runs at roughly 50 MB/s, so once your card comfortably clears that, a faster rating on the label buys you nothing on this board. Moving from a cheap no-name card to a decent A1 card is a real, noticeable upgrade; moving from a good A1 card to a premium A2 one generally isn't. The Pi 5 raised that ceiling to about 100 MB/s and added the A2 support the Pi 4 lacks."
         }
       ],
       "relatedDevices": [
@@ -6011,7 +6038,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Records 4K video at up to 60fps. V30 ensures smooth recording without dropped frames. 4K bitrate requires sustained 30MB/s write speed minimum.",
+      "whySpecs": "Records 4K/60 HDR and 4K/100 slow motion, plus 10-bit D-Log M for grading — the high-frame-rate and 10-bit modes are the demanding ones, not ordinary 4K/30. V30's guaranteed 30 MB/s of sustained write is what keeps those modes stable; a card that merely peaks fast but sags under sustained load is how you end up with a dropped clip you can't reshoot. The Mini 4 Pro also has about 2GB of internal storage, which is an emergency buffer for a forgotten card, not a substitute for one — it's roughly a minute of 4K.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6029,6 +6056,10 @@
           "a": "<b>Using V20 cards is not recommended for DJI Mini 4 Pro</b>. <b>V30 speed class is the minimum required for stable 4K video recording</b>, especially at higher frame rates, to prevent dropped frames and file corruption during flight."
         },
         {
+          "q": "Do I need a faster card for 4K/100 slow motion or D-Log M?",
+          "a": "<b>A good V30 card still covers both</b> — V30 guarantees 30 MB/s sustained, which sits above what the Mini 4 Pro's highest-bitrate modes actually demand. What matters more than the speed grade is that the card holds that speed consistently: cheap or counterfeit cards often hit their rated number in a quick benchmark and then sag partway through a long clip. Buy from a reputable seller and format the card in the drone before an important flight."
+        },
+        {
           "q": "Does the brand matter for drones?",
           "a": "<b>Yes, brand reliability is critical for drone operations</b>. <b>Use trusted brands like SanDisk, Lexar, or Kingston</b> to avoid mid-flight card failures that could result in lost footage or worse, emergency landings."
         },
@@ -6039,6 +6070,8 @@
       ],
       "relatedDevices": [
         "dji-mini-3-pro",
+        "dji-mini-5-pro",
+        "dji-mini-4k",
         "dji-air-3s"
       ],
       "notes": "DJI officially recommends V30 cards for safe recording. Test new cards before flights."
@@ -6238,9 +6271,9 @@
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "256GB"
+        "maxCapacity": "512GB"
       },
-      "whySpecs": "A budget-friendly drone weighing under 250g, capable of recording 4K 30fps video. DJI officially recommends V30 cards minimum for stable 4K recording. Despite being an entry-level model, it shares the same essential card requirements as other higher-end drones in the Mini series, emphasizing reliability for in-flight recording.",
+      "whySpecs": "A budget-friendly drone weighing under 250g, capable of recording 4K 30fps video. DJI officially recommends V30 cards minimum for stable 4K recording. Despite being an entry-level model, it shares the same essential card requirements as other higher-end drones in the Mini series, emphasizing reliability for in-flight recording. Because it tops out at 4K/30 rather than the Mini 4 Pro's 4K/100, its bitrate demands are at the gentler end of that shared V30 requirement — a mid-range V30 card is genuinely enough here.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6258,8 +6291,8 @@
           "a": "<b>The Mini 4K is a more budget-oriented version with fewer intelligent flight modes and no obstacle avoidance sensors.</b> However, it records the same 4K 30fps video and requires the same V30 microSD cards for stable performance. It's an excellent choice for beginners who prioritize camera quality but don't need advanced features."
         },
         {
-          "q": "Can I use microSD cards larger than 256GB with the Mini 4K?",
-          "a": "<b>DJI officially supports and recommends cards up to 256GB for the Mini 4K.</b> While some larger cards might technically function, they are not officially tested or guaranteed for full compatibility. Sticking to 256GB or smaller ensures guaranteed reliability and stable performance during flight operations."
+          "q": "What's the largest microSD card the Mini 4K supports?",
+          "a": "<b>DJI supports cards up to 512GB on the Mini 4K</b>, the same ceiling as the Mini 3 and Mini 3 Pro. That said, 512GB is more than this drone realistically needs: at 4K/30 you'd have to fly for many battery packs to fill even a 128GB card, and battery life is the real limit on a shoot. <b>128GB or 256GB is the sweet spot</b> — and two smaller cards beat one large one, since a single card failure then costs you half your footage instead of all of it."
         }
       ],
       "relatedDevices": [
@@ -10692,7 +10725,7 @@
     }
   ],
   "metadata": {
-    "generated": "2026-07-22T08:13:33.046Z",
+    "generated": "2026-08-07T05:19:33.251Z",
     "totalDevices": 219,
     "categories": [
       "3D Printers & Fabrication",

@@ -265,5 +265,133 @@
       "generic-4k-dashcam"
     ],
     "notes": "Same High-Endurance-only framing as T130 Pro. Nextbase's cloud/AI features push higher bitrate 4K, so capacity guidance skews larger (256GB+) alongside the endurance requirement. No authoritative Nextbase source found stating a specific write-class floor (e.g. V30) for this model — copy is tied to U3 + dashcam/high-endurance rather than asserting V30."
+  },
+  {
+    "id": "blackvue-dr970x",
+    "name": "BlackVue DR970X",
+    "category": "dash-cams",
+    "slug": "blackvue-dr970x",
+    "searchTerms": [
+      "scheda sd blackvue dr970x",
+      "scheda di memoria blackvue dr970x",
+      "microsd blackvue dr970x"
+    ],
+    "sdCard": {
+      "type": "microSD (High Endurance consigliata)",
+      "minSpeed": "U1 (U3 consigliata)",
+      "minWriteSpeed": "10 MB/s (30 MB/s con U3)",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB (DR970X) / 1TB (DR970X Plus Series II)"
+    },
+    "whySpecs": "La registrazione continua in marcia e in sosta richiede una scheda in grado di reggere cicli di sovrascrittura costanti. Le schede oltre i 64GB arrivano formattate in exFAT, che BlackVue non supporta: vanno riformattate in FAT32 dall'app BlackVue prima dell'uso.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Perché devo riformattare la scheda per il BlackVue DR970X?",
+        "a": "<b>Le schede superiori a 64GB sono preformattate in exFAT, un formato che il firmware BlackVue non supporta.</b> Riformatta la scheda in FAT32 tramite l'app BlackVue prima di installarla, altrimenti la telecamera non registrerà correttamente."
+      }
+    ],
+    "relatedDevices": [
+      "generic-4k-dashcam",
+      "viofo-a229-pro",
+      "nextbase-iq-4k"
+    ],
+    "notes": "Base DR970X caps at 256GB; only the DR970X Plus / DR970X Plus LTE Series II support up to 1TB. Official spec only requires Class 10/U1 — U3 is BlackVue's recommendation, not a hard requirement.",
+    "imageUrl": "/img/devices/dashcams/blackvue-dr970x.webp"
+  },
+  {
+    "id": "thinkware-u3000",
+    "name": "Thinkware U3000",
+    "category": "dash-cams",
+    "slug": "thinkware-u3000",
+    "searchTerms": [
+      "scheda sd thinkware u3000",
+      "scheda di memoria thinkware u3000",
+      "dimensione microsd thinkware u3000"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 (U3 consigliata)",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "La registrazione continua anteriore e posteriore richiede una scheda progettata per la scrittura sostenuta. La documentazione di compatibilità di Thinkware limita il U3000 standard a 256GB: la variante U3000 Pro, venduta separatamente, ne supporta di più, quindi non confondere i due modelli al momento dell'acquisto.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "topesel-high-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Qual è la scheda SD massima supportata dal Thinkware U3000?",
+        "a": "<b>256GB è il massimo per il U3000 standard</b>, secondo la documentazione di compatibilità di Thinkware. La variante U3000 Pro supporta schede più capienti: non dare per scontato che i due modelli condividano lo stesso limite."
+      }
+    ],
+    "relatedDevices": [
+      "generic-4k-dashcam",
+      "viofo-t130-pro"
+    ],
+    "notes": "Dropped the 'rejects cards without continuous write stability' claim from the original brief — no official Thinkware source backs it; this looks like SEO embellishment of a generic 'use quality cards' recommendation."
+  },
+  {
+    "id": "vantrue-n4-pro",
+    "name": "Vantrue N4 Pro",
+    "category": "dash-cams",
+    "slug": "vantrue-n4-pro",
+    "searchTerms": [
+      "scheda sd vantrue n4 pro",
+      "scheda di memoria vantrue n4 pro",
+      "dimensione microsd vantrue n4 pro"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "U3/V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "La registrazione simultanea su tre canali in 4K + 1080p + 1080p genera un carico di scrittura sostenuta elevato. Vantrue indica U3/V30 come minimo per evitare fotogrammi persi o interruzioni nella registrazione.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "topesel-high-endurance"
+      },
+      {
+        "id": "sandisk-high-endurance-512",
+        "note": "Unica opzione endurance in elenco che raggiunge i 512GB massimi per la registrazione a tre canali"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Perché il N4 Pro richiede proprio schede U3/V30?",
+        "a": "<b>Il N4 Pro registra tre canali contemporaneamente (4K anteriore + 1080p abitacolo + 1080p posteriore)</b>, il che comporta complessivamente un carico di scrittura sostenuta elevato. Vantrue indica la classe U3/V30 come minimo per evitare fotogrammi persi o interruzioni su tutti e tre i flussi."
+      }
+    ],
+    "relatedDevices": [
+      "viofo-a229-pro",
+      "generic-4k-dashcam"
+    ]
   }
 ]

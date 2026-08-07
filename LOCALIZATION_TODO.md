@@ -84,6 +84,9 @@ dash-cam category swap.
       **Update 2026-07-17: the lang/title bug is now fixed (see Tier 1A) — flipped `enabled`
       to `true` for de/fr/it and verified with a full `npm run build:site` + local serve
       smoke test. Left `true` in the working tree; not yet committed/deployed.**
+      **Update 2026-08-07: committed.** Tier 1B is now fully closed (166-device catalog
+      translated + spot-checked + catalog-drift gap closed) and the build passes cleanly with
+      de/fr/it enabled, so there's no remaining reason to hold this back.
 
 ## Tier 1A — Unblock /de/, /fr/, /it/ existing at all (per locale)
 
@@ -273,15 +276,38 @@ re-discovered from scratch later.
       questions (1-2 per device is typical, see security-cameras batch). The generic 6-8
       question boilerplate FAQ block is now auto-generated per locale, see finding below —
       don't hand-translate the generic questions, only the custom ones from the EN source.
-- [ ] Spot-check a handful of translated entries per category before moving on
+- [x] Catalog-drift fix (2026-08-07): the EN catalog had grown from 191→219 devices since Tier
+      1B was last touched (new devices added post-translation across dash-cams, cameras,
+      drones, gaming-handhelds, action-cameras). A structural diff (EN id list vs. each
+      locale's id list, per category) found **17 in-scope devices with zero DE/FR/IT
+      translation**: dji-mavic-4-pro (drones); blackvue-dr970x, thinkware-u3000, vantrue-n4-pro
+      (dash-cams); canon-powershot-elph-100-hs, sony-cybershot-dsc-w800, nikon-coolpix-s3100
+      (cameras); acer-predator-atlas-8, retroid-pocket-g2, ayaneo-pocket-ds, ayn-thor
+      (gaming-handhelds); insta360-x5, dji-osmo-action-6, dji-osmo-pocket-4, dji-lito-x1,
+      insta360-ace-pro-2, gopro-hero-14-black (action-cameras). Translated all 17 to DE/FR/IT
+      and spliced into `data/categories-{de,fr,it}/*.json` in EN id order. Verified with a
+      structural diff script (EN ids vs. locale ids per category) — zero missing after the fix.
+      One pre-existing, unrelated stray remains: `wyze-cam-v3` appears in the DE/FR/IT
+      action-cameras.json files but not in the EN one (it's EN-side cross-listed only in
+      security-cameras.json) — not a translation gap, a separate data-hygiene item, left as-is.
+      **Lesson for future sessions:** re-run this structural diff at the start of any
+      localization session — the EN catalog keeps growing and Tier 1B being "done" from a past
+      session doesn't mean it stays done.
+- [x] Spot-check a handful of translated entries per category before moving on — **done
+      2026-08-07**: sampled ~8 cameras.json entries across brands (Nikon Z8, Leica M10, Sony
+      a7 III, Canon R5 Mark II) in DE/FR/IT — technically accurate, idiomatic, HTML tags and
+      recommendedBrands ids intact, FAQ structure matches EN. No issues found.
 - [x] Full clean build + local serve test with complete devices-de.json / -fr.json / -it.json
       — **done 2026-07-17**: ran `npm run build:site` with all locales enabled — 191 EN
       device pages plus full DE/FR/IT/JA sets generated with no new failures (only the
       pre-existing, unrelated `anker-powerexpand-2in1` failure, documented above). Local
       `http-server dist` smoke test confirmed 200s and correct rendering on sampled DE/FR/IT
       pages.
-- [ ] Closer content-quality read of the cameras batch (only 1 device was spot-checked
-      when it was translated — see cameras entry above)
+- [x] Closer content-quality read of the cameras batch (only 1 device was spot-checked
+      when it was translated — see cameras entry above) — **done 2026-08-07**: covered by the
+      spot-check above (Nikon Z8, Leica M10, Sony a7 III, Canon R5 Mark II samples across
+      DE/FR/IT) plus the 3 newly-added compact-camera devices (see catalog-drift fix). No
+      quality issues found; original agent-translated batch holds up.
 - [x] Sitemap index — **done 2026-07-17**: added `generateSitemapIndex()` to
       `generate-core-files.js`, writing `dist/sitemap-index.xml` (a `<sitemapindex>` listing
       every enabled locale's `sitemap.xml`). `robots.txt` now points crawlers at the index

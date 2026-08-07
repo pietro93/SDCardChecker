@@ -56,6 +56,332 @@
     "notes": "Limited to UHS-I speeds (~104MB/s maximum). V30 is recommended for reliability. Compatible with all officially licensed Nintendo-branded SanDisk microSD cards (Zelda, Pokémon, Mario, Yoshi, Animal Crossing, Fortnite)."
   },
   {
+    "id": "nintendo-switch-oled",
+    "name": "Nintendo Switch OLED",
+    "category": "gaming-handhelds",
+    "slug": "nintendo-switch-oled",
+    "searchTerms": [
+      "nintendo switch oled carte sd",
+      "switch oled carte sd",
+      "switch oled carte mémoire",
+      "switch oled stockage"
+    ],
+    "sdCard": {
+      "type": "microSD, microSDHC, microSDXC",
+      "minSpeed": "Class 10 / UHS-I",
+      "minWriteSpeed": "Non spécifié",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1024GB"
+      ],
+      "maxCapacity": "2TB",
+      "testedMaxCapacity": "2TB"
+    },
+    "whySpecs": "Le modèle Switch OLED dispose de 64GB de stockage interne, ce qui le rend idéal pour les utilisateurs téléchargeant de grandes bibliothèques de jeux numériques. <b>Comme tous les modèles Switch originaux, l'OLED est limitée aux vitesses UHS-I (~104MB/s)</b>. Les cartes UHS-II et SD Express sont rétrocompatibles et fonctionneront, mais seront bridées à la vitesse UHS-I, donc elles n'offrent aucun avantage sur cet appareil. Des cartes microSD classées V30 de marques reconnues sont recommandées pour des performances constantes. Toutes les cartes microSD SanDisk de marque Nintendo (Zelda, Pokémon, Mario, etc.) fonctionnent parfaitement sur le modèle OLED. Des cartes microSDXC de 2TB sont disponibles dans le commerce et vérifiées comme fonctionnelles.",
+    "recommendedBrands": [
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Dois-je acheter des cartes UHS-II pour l'OLED ?",
+        "a": "<b>Non, les cartes UHS-II n'offrent aucun avantage de performance à la Switch OLED</b>. Elles sont rétrocompatibles et fonctionneront, mais la console ne prend en charge que les vitesses UHS-I (~104MB/s), donc les cartes UHS-II seront bridées à la vitesse UHS-I, rendant le surcoût inutile."
+      },
+      {
+        "q": "Puis-je utiliser la carte de ma Switch originale ?",
+        "a": "<b>Oui, n'importe quelle carte microSD de la Switch originale fonctionne parfaitement sur le modèle OLED</b>. Tous les modèles Switch partagent la même architecture de stockage et compatibilité de carte."
+      },
+      {
+        "q": "Quelle capacité devrais-je choisir ?",
+        "a": "<b>L'écran plus grand de l'OLED encourage à télécharger davantage de jeux</b>. 512GB ou 1TB est fortement recommandé, car les 64GB de stockage interne plus une petite carte se remplissent rapidement avec les titres modernes."
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "nintendo-switch-lite",
+      "nintendo-switch-2"
+    ],
+    "notes": "OLED users typically purchase larger cards due to increased digital game library usage. UHS-I only (~104MB/s), despite higher internal storage."
+  },
+  {
+    "id": "steam-deck",
+    "name": "Steam Deck",
+    "category": "gaming-handhelds",
+    "slug": "steam-deck",
+    "searchTerms": [
+      "carte sd steam deck",
+      "carte mémoire steam deck",
+      "deck microsd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (pas UHS-II)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "2TB (théorique)",
+      "testedMaxCapacity": "1TB"
+    },
+    "whySpecs": "Le Steam Deck utilise l'interface UHS-I et exécute SteamOS directement depuis la carte, donc la performance applicative A1 est importante pour la réactivité du système. Si V30 suffit pour jouer, les IOPS aléatoires A1 sont essentielles. Choisissez des cartes de marques réputées classées V30 et certifiées A1. Remarque : bien que 2TB soit théoriquement pris en charge, la plus grande capacité testée et confirmée fonctionnelle est 1TB.",
+    "recommendedBrands": [
+      {
+        "id": "kingston-canvas-go-plus-ultra"
+      },
+      {
+        "id": "adata-premier-pro-microsd"
+      },
+      {
+        "id": "sandisk-ultra-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je utiliser des cartes V60 rapides ?",
+        "a": "<b>Oui, les cartes microSD V60 et plus rapides fonctionnent parfaitement avec le Steam Deck</b>. Cependant, <b>l'interface UHS-I de l'appareil limite l'avantage de vitesse</b>, donc les cartes plus rapides n'offrent aucun avantage pratique par rapport aux cartes V30 pour jouer sur Steam Deck."
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "asus-rog-ally",
+      "ayn-odin-3-odin-2-portal"
+    ],
+    "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library."
+  },
+  {
+    "id": "asus-rog-ally",
+    "name": "ASUS ROG Ally",
+    "category": "gaming-handhelds",
+    "slug": "asus-rog-ally",
+    "searchTerms": [
+      "carte sd asus rog ally",
+      "rog ally microsd",
+      "carte mémoire rog ally"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Le ROG Ally dispose d'un lecteur de carte UHS-II haute vitesse. L'utilisation d'une carte UHS-II est fortement recommandée pour minimiser les temps de chargement des jeux et accélérer les transferts de fichiers. Une classe de vitesse V30 est le minimum pour une performance stable.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-rog-ally-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Dois-je utiliser une carte UHS-II plus rapide dans le ROG Ally ?",
+        "a": "<b>Oui, absolument, si vous voulez les meilleures performances.</b> Le lecteur de carte UHS-II du ROG Ally exploite pleinement la vitesse supplémentaire d'une carte UHS-II, ce qui accélère les temps de chargement des jeux. Une carte UHS-I plus lente fonctionnera, mais bridera les performances."
+      },
+      {
+        "q": "Quelle est la meilleure capacité pour le ROG Ally ?",
+        "a": "<b>Une carte de 512GB ou 1TB est idéale pour la plupart des utilisateurs.</b> Les jeux PC modernes sont très volumineux, et cette capacité permet de stocker un bon nombre de titres AAA sans avoir à gérer constamment l'espace de stockage."
+      }
+    ],
+    "relatedDevices": [
+      "steam-deck",
+      "nintendo-switch-oled",
+      "nintendo-switch"
+    ],
+    "notes": "Heat from the device's exhaust can affect the SD card reader in some units. Using a high-quality, reputable UHS-II card is crucial for both reliability and optimal performance.",
+    "imageUrl": "/img/devices/gaming-consoles/asus-rog-ally.webp"
+  },
+  {
+    "id": "nintendo-switch-lite",
+    "name": "Nintendo Switch Lite",
+    "category": "gaming-handhelds",
+    "slug": "nintendo-switch-lite",
+    "searchTerms": [
+      "nintendo switch lite carte sd",
+      "switch lite carte mémoire",
+      "switch lite stockage"
+    ],
+    "sdCard": {
+      "type": "microSD, microSDHC, microSDXC",
+      "minSpeed": "Class 10 / UHS-I",
+      "minWriteSpeed": "Non spécifié",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "2TB",
+      "testedMaxCapacity": "2TB"
+    },
+    "whySpecs": "La Switch Lite est la console portable exclusive de Nintendo, avec des capacités de stockage identiques aux modèles standard et OLED. <b>Elle est limitée aux vitesses UHS-I (~104MB/s)</b>. Les cartes UHS-II et SD Express sont rétrocompatibles et fonctionneront, mais seront bridées à la vitesse UHS-I, donc elles n'offrent aucun avantage ici. Comme la Lite est souvent utilisée en voyage et en jeu portable, une carte de marque fiable V30 est essentielle pour éviter la corruption des données pendant le transport. Toutes les cartes microSD SanDisk de marque Nintendo (Zelda, Pokémon, Mario, etc.) fonctionnent parfaitement sur la Switch Lite. Des cartes microSDXC de 2TB sont disponibles dans le commerce et vérifiées comme fonctionnelles.",
+    "recommendedBrands": [
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-play-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le slot SD de la Switch Lite est-il plus lent que sur les autres modèles ?",
+        "a": "<b>Non, la Switch Lite a des capacités de lecture/écriture identiques aux modèles Switch standard et OLED</b>. Toutes les consoles de la famille Switch partagent la même interface matérielle microSD UHS-I, sans différence de vitesse."
+      },
+      {
+        "q": "Quelle capacité devrais-je choisir pour la Lite ?",
+        "a": "<b>128GB à 256GB est idéal pour la plupart des utilisateurs de Switch Lite</b>. La bibliothèque plus réduite et la nature portable de la Lite conviennent à des collections de jeux plus ciblées, contrairement aux utilisateurs OLED qui ont tendance à beaucoup télécharger."
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "nintendo-switch-oled",
+      "nintendo-switch-2"
+    ],
+    "notes": "Identical storage architecture to other Switch models. UHS-I only (~104MB/s). 128GB-256GB is the sweet spot for Lite's typical usage pattern."
+  },
+  {
+    "id": "nintendo-switch-2",
+    "name": "Nintendo Switch 2",
+    "category": "gaming-handhelds",
+    "slug": "nintendo-switch-2",
+    "searchTerms": [
+      "nintendo switch 2 carte sd",
+      "switch 2 carte sd",
+      "switch 2 stockage",
+      "sd express switch 2",
+      "switch 2 microsd express",
+      "switch 2 exigences carte sd",
+      "switch 2 compatibilité carte sd"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I (rétrocompatible) ou microSD Express (recommandé)",
+      "minSpeed": "UHS-I U3/A2 (standard) ou microSD Express basé sur PCIe",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB",
+        "2TB"
+      ],
+      "maxCapacity": "2TB (microSDXC) / 2TB+ (microSD Express SDUC)",
+      "testedMaxCapacity": "2TB"
+    },
+    "whySpecs": "<b>Bonne nouvelle : vos cartes microSD Switch existantes fonctionnent toujours sur Switch 2.</b> Toutes les cartes microSDXC standard UHS-I sont rétrocompatibles — vous pouvez jouer à tous les jeux (originaux et Switch 2) sans acheter de nouvelle carte. Cependant, la Switch 2 introduit également un <b>slot microSD Express</b> qui prend en charge les cartes Express basées sur PCIe pour un chargement nettement plus rapide (jusqu'à 800 MB/s contre ~100 MB/s pour l'UHS-I). Le microSD Express est optionnel mais recommandé si vous achetez une nouvelle carte. Important : <b>les cartes microSD Express ne sont PAS rétrocompatibles avec la Switch originale, la Switch Lite ou la Switch OLED</b> — ces appareils ne prennent en charge que l'UHS-I.",
+    "recommendedBrands": [
+      {
+        "id": "samsung-evo-select-microsd",
+        "note": "microSDXC standard — fonctionne sur Switch 2 et tous les modèles Switch originaux"
+      },
+      {
+        "id": "sandisk-extreme-microsd",
+        "note": "UHS-I U3/A2 standard — rapide, fiable, rétrocompatible"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd",
+        "note": "microSD Express — pour des vitesses de chargement maximales sur Switch 2"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je utiliser ma vieille carte SD de Switch dans la Nintendo Switch 2 ?",
+        "a": "<b>Oui — vos cartes microSD existantes fonctionnent sur Switch 2.</b> Les cartes microSDXC standard UHS-I sont entièrement rétrocompatibles avec la Switch 2. Vous pouvez jouer à tous vos jeux sans acheter de nouvelle carte. La Switch 2 prend également en charge le standard microSD Express plus rapide pour des temps de chargement améliorés, mais c'est optionnel, pas obligatoire."
+      },
+      {
+        "q": "Qu'est-ce que le microSD Express et en ai-je besoin pour la Switch 2 ?",
+        "a": "<b>Le microSD Express utilise la technologie PCIe pour des vitesses allant jusqu'à 800 MB/s — contre ~100 MB/s pour l'UHS-I standard.</b> Il offre un chargement nettement plus rapide dans les jeux Switch 2. Cependant, vous n'en avez pas besoin — vos cartes microSD UHS-I existantes fonctionnent parfaitement. En 2026, les cartes microSD Express restent rares et coûteuses. N'en envisagez une que si vous achetez une nouvelle carte et souhaitez la meilleure performance possible."
+      },
+      {
+        "q": "Une carte microSD Express fonctionnera-t-elle sur ma Switch originale ou Switch OLED ?",
+        "a": "<b>Non. Les cartes microSD Express ne sont PAS rétrocompatibles avec la Switch originale, la Switch Lite ou la Switch OLED.</b> Ces consoles ne prennent en charge que l'UHS-I. Si vous possédez plusieurs modèles Switch, optez pour une carte microSDXC UHS-I U3/A2 standard compatible avec tous."
+      },
+      {
+        "q": "Quelles spécifications microSD dois-je acheter pour la Switch 2 ?",
+        "a": "<b>Pour une carte microSD standard : UHS-I U3/A2 (même recommandation que pour la Switch originale). Pour le microSD Express : toute carte SD Express certifiée avec V30 ou plus rapide.</b> Pour la capacité, 512GB est un bon point de départ ; 1TB est idéal si vous téléchargez la majorité de votre bibliothèque numériquement."
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "nintendo-switch-oled",
+      "nintendo-switch-lite"
+    ],
+    "notes": "Switch 2 is backward compatible with all standard UHS-I microSD cards from the original Switch. For maximum performance, microSD Express (PCIe) is supported and provides up to 8× faster loading. microSD Express cards are NOT compatible with original Switch models — buy UHS-I if you own both."
+  },
+  {
+    "id": "nintendo-3ds-xl",
+    "name": "Nintendo 3DS / New 3DS XL",
+    "category": "gaming-handhelds",
+    "slug": "nintendo-3ds-xl",
+    "searchTerms": [
+      "3ds carte sd",
+      "new 3ds xl carte sd",
+      "3ds carte mémoire",
+      "3ds xl stockage",
+      "nintendo 3ds carte sd"
+    ],
+    "sdCard": {
+      "type": "SDHC (officiellement jusqu'à 32GB, SDXC fonctionne officieusement)",
+      "minSpeed": "Class 10",
+      "minWriteSpeed": "Non spécifié",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB (officieux, nécessite un formatage FAT32)"
+    },
+    "whySpecs": "Nintendo prend officiellement en charge les cartes SDHC jusqu'à 32GB, mais les cartes SDXC jusqu'à 128GB (voire plus, bien que 128GB soit la limite pratique) fonctionnent parfaitement une fois formatées en FAT32. Les cartes Class 10 offrent un chargement de jeu et des téléchargements eShop plus rapides, améliorant l'expérience utilisateur globale. La Class 4 est obsolète ; la Class 10 est le minimum moderne.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je utiliser une carte de 64GB ou 128GB même si Nintendo annonce un maximum de 32GB ?",
+        "a": "<b>Oui, mais vous devez d'abord la formater en FAT32.</b> Les cartes SDXC (64GB+) sont formatées en exFAT à l'origine, que la 3DS ne peut pas lire. Utilisez un ordinateur (Windows, Mac ou Linux) pour reformater la carte en FAT32, elle fonctionnera alors parfaitement sur votre 3DS."
+      },
+      {
+        "q": "Ai-je besoin d'une carte microSD ou d'une carte SD standard ?",
+        "a": "<b>Les modèles 3DS et 3DS XL originaux utilisent des cartes SD au format standard.</b> <b>Les modèles New Nintendo 3DS et New Nintendo 3DS XL utilisent des cartes microSD.</b> Il est crucial de vérifier votre modèle spécifique avant l'achat. Les modèles 'New' nécessitent souvent un petit tournevis pour accéder au slot microSD."
+      }
+    ],
+    "relatedDevices": [
+      "nintendo-switch",
+      "nintendo-switch-lite",
+      "anbernic-rg353v",
+      "anbernic-rg-cube"
+    ],
+    "notes": "Discontinued in 2020 but boasts a massive ongoing community for retro gaming and modding. High search volume is driven by enthusiasts looking to expand their game libraries and utilize custom firmware."
+  },
+  {
     "id": "anbernic-rg353v",
     "name": "Anbernic RG353V",
     "category": "gaming-handhelds",
@@ -109,6 +435,120 @@
       "steam-deck"
     ],
     "notes": "A popular vertical retro handheld in the emulation community, known for its portability and dual-boot capabilities. High search volume is driven by retro gaming enthusiasts and modding communities."
+  },
+  {
+    "id": "asus-rog-ally-x",
+    "name": "ASUS ROG Ally X",
+    "category": "gaming-handhelds",
+    "slug": "asus-rog-ally-x",
+    "metaDescription": "Meilleures cartes microSD pour l'ASUS ROG Ally X — et les marques à éviter. Testées pour la vitesse UHS-II, la performance applicative A1 et la fiabilité dans le lecteur de carte rapide de l'Ally X.",
+    "searchTerms": [
+      "carte sd rog ally x",
+      "ally x microsd",
+      "stockage rog ally x",
+      "carte mémoire asus rog ally x",
+      "marques de carte sd à éviter rog ally x",
+      "meilleure carte microsd rog ally x"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Le ROG Ally X dispose d'un lecteur de carte UHS-II haute vitesse et fonctionne sous Windows, donc la performance applicative A1 est importante pour la réactivité du système. Cela améliore considérablement les temps de chargement des jeux par rapport aux appareils UHS-I. Les cartes V60 ou plus rapides offrent la meilleure expérience pour charger de gros jeux PC modernes, bien que V30 avec classification A1 soit le minimum pratique.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-rog-ally-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quelles marques et modèles de cartes microSD dois-je éviter pour le ROG Ally X ?",
+        "a": "<b>Évitez les cartes microSD bon marché sans marque, les cartes sans classification A2, et les fausses cartes SanDisk provenant de vendeurs Amazon non vérifiés.</b> Le ROG Ally X fonctionne sous Windows et charge les jeux directement depuis la carte, donc de mauvaises performances de lecture/écriture aléatoires causent des saccades et de longs temps de chargement. Plus précisément : (1) Évitez les cartes sans classification de performance applicative A1 ou A2 — elles seront lentes sous Windows ; (2) Évitez les cartes 2TB très haute capacité sauf si elles proviennent d'une marque réputée, car certains retours communautaires indiquent des vitesses soutenues plus lentes que prévu par rapport aux variantes 1TB ; (3) Les fausses cartes SanDisk sont un problème connu sur Amazon — achetez toujours dans la boutique officielle SanDisk ou chez des détaillants établis. Restez fidèle à SanDisk, Samsung, Lexar ou Kingston auprès de sources fiables."
+      },
+      {
+        "q": "L'Ally X est-il plus rapide que l'Ally original pour les cartes SD ?",
+        "a": "<b>Oui, l'Ally X dispose d'un lecteur de carte SD amélioré et plus fiable prenant en charge les vitesses UHS-II, résolvant les problèmes de surchauffe qui affectaient certaines unités Ally originales.</b> Vous constaterez des temps de chargement et des transferts de fichiers nettement plus rapides avec des cartes UHS-II sur l'Ally X."
+      },
+      {
+        "q": "Ai-je vraiment besoin d'une carte UHS-II, ou l'UHS-I suffit-il ?",
+        "a": "<b>L'UHS-II fait une différence significative sur l'Ally X.</b> Les temps de chargement des jeux peuvent être 30 à 50 % plus rapides avec des cartes UHS-II qu'avec des cartes UHS-I. Si vous jouez fréquemment à de gros titres AAA directement depuis la carte SD, le gain de vitesse de l'UHS-II vaut largement le coût supplémentaire."
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally",
+      "steam-deck",
+      "lenovo-legion-go"
+    ],
+    "notes": "Released mid-2024 as an upgraded version of the original ROG Ally, featuring improved battery life, better cooling, and a more robust UHS-II microSD card reader. The official SanDisk ROG Ally microSD card is optimized for this device.",
+    "imageUrl": "/img/devices/gaming-consoles/asus-rog-ally.webp"
+  },
+  {
+    "id": "lenovo-legion-go",
+    "name": "Lenovo Legion Go",
+    "category": "gaming-handhelds",
+    "slug": "lenovo-legion-go",
+    "searchTerms": [
+      "carte sd lenovo legion go",
+      "legion go microsd",
+      "stockage legion go",
+      "carte mémoire lenovo legion go"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Un ordinateur portable de jeu Windows doté d'un grand écran de 8,8 pouces et de contrôleurs détachables. Une classification de performance applicative A2 sur la carte microSD améliore considérablement les temps de chargement des jeux et la réactivité globale du système lors de l'exécution de jeux depuis la carte. Le grand écran et le système d'exploitation Windows le rendent adapté au jeu AAA, qui exige une capacité de stockage substantielle.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Legion Go contre ROG Ally - lequel a la meilleure performance de carte SD ?",
+        "a": "<b>L'ASUS ROG Ally X dispose d'un lecteur de carte UHS-II, tandis que le Lenovo Legion Go utilise un emplacement UHS-I.</b> Cela signifie que l'Ally X peut atteindre des temps de chargement de jeux plus rapides avec des cartes UHS-II. Cependant, le Legion Go offre des caractéristiques uniques comme son écran plus grand et ses contrôleurs détachables, séduisant différentes préférences d'utilisateurs. Les deux appareils bénéficient grandement de cartes haute capacité (512GB+) classées A2 pour les jeux modernes."
+      },
+      {
+        "q": "Quelle capacité de carte microSD me faut-il pour les jeux PC sur le Legion Go ?",
+        "a": "<b>Une carte de 512GB est un bon minimum, mais 1TB est fortement recommandé pour une vaste bibliothèque de jeux PC modernes.</b> De nombreux titres AAA peuvent facilement dépasser 100GB chacun. Bien que le système Windows du Legion Go permette une gestion flexible du stockage, l'espace de la carte microSD peut se remplir rapidement avec quelques gros titres, faisant d'une capacité plus élevée un investissement judicieux."
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally",
+      "asus-rog-ally-x",
+      "steam-deck"
+    ],
+    "notes": "Released late 2023, the Lenovo Legion Go is known for its unique detachable controllers and the largest screen among current Windows handhelds. It features a microSD UHS-I slot (unlike the newer ROG Ally X, which has UHS-II).",
+    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go.webp"
   },
   {
     "id": "miyoo-mini-plus",
@@ -266,6 +706,150 @@
       "steam-deck"
     ],
     "notes": "A very popular retro gaming handheld. The community is large and very active in searching for performance and setup guides."
+  },
+  {
+    "id": "lenovo-legion-go-s",
+    "name": "Lenovo Legion Go S",
+    "category": "gaming-handhelds",
+    "slug": "lenovo-legion-go-s",
+    "searchTerms": [
+      "lenovo legion go s",
+      "carte sd legion go s",
+      "legion go s microsd",
+      "stockage legion go s"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB (théorique, 1TB couramment utilisé)"
+    },
+    "whySpecs": "Le Legion Go S utilise un lecteur microSD UHS-I, donc le débit maximal plafonne autour de 90-100 MB/s même en insérant une carte UHS-II. Une carte U3/V30 avec classification applicative A2 offre des performances séquentielles et aléatoires suffisantes pour exécuter des jeux Windows ou SteamOS directement depuis la carte sans temps de chargement pénibles. Les titres PC modernes sont très volumineux, donc 512GB à 1TB est le point idéal pratique ; tout ce qui est plus petit se remplit très vite dès que vous installez des jeux AAA.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Une carte microSD UHS-II accélérera-t-elle le chargement des jeux sur le Legion Go S ?",
+        "a": "<b>Non, le lecteur du Legion Go S est limité aux vitesses UHS-I.</b> Les cartes UHS-II reviennent au mode UHS-I dans cet emplacement, se comportant donc comme une carte UHS-I V30 rapide, sans bande passante supplémentaire dans l'appareil. Si vous possédez déjà une carte UHS-II, elle fonctionnera, mais acheter spécifiquement de l'UHS-II pour cette console n'est généralement pas rentable."
+      },
+      {
+        "q": "Puis-je faire tourner de gros jeux en monde ouvert entièrement depuis la carte SD ?",
+        "a": "<b>Oui, mais la performance dépend fortement de la carte choisie.</b> Une bonne carte V30 classée A2 peut gérer honorablement de nombreux jeux AAA, mais les titres en monde ouvert à fort streaming (grandes textures, grandes cartes) se chargeront quand même nettement plus lentement que depuis le SSD interne. Considérez la microSD davantage comme une bibliothèque d'appoint que comme votre disque de performance principal."
+      },
+      {
+        "q": "Quelle capacité de carte SD a du sens pour le Legion Go S ?",
+        "a": "<b>512GB est un bon minimum, et 1TB est idéal pour la plupart des joueurs.</b> Une poignée de jeux PC actuels peuvent dépasser 100GB chacun ; avec les patchs et le DLC, une carte de 256GB peut vite sembler à l'étroit. Si votre budget le permet, une carte de 1TB évite les allers-retours constants de désinstallation/réinstallation."
+      }
+    ],
+    "relatedDevices": [
+      "steam-deck"
+    ],
+    "notes": "SteamOS-based Windows handheld variant with a UHS-I microSD slot. Designed primarily for game storage expansion rather than raw benchmark speeds.",
+    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go-s.webp"
+  },
+  {
+    "id": "msi-claw",
+    "name": "MSI Claw (A1M)",
+    "category": "gaming-handhelds",
+    "slug": "msi-claw",
+    "searchTerms": [
+      "prise en charge carte sd msi claw",
+      "carte mémoire msi claw",
+      "étendre le stockage msi claw",
+      "meilleure carte sd pour msi claw"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "U3 / A2",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Le MSI Claw exécute des jeux AAA Windows complets. Vous avez besoin d'une carte classée 'A2' (Application Performance Class 2) pour gérer les opérations de lecture/écriture aléatoires du jeu sous Windows. Des cartes plus lentes causeront des saccades et des temps de chargement extrêmement longs.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd"
+      },
+      {
+        "id": "lexar-play-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le lecteur SD du MSI Claw est-il UHS-II ?",
+        "a": "<b>Non, le MSI Claw A1M dispose généralement d'un emplacement UHS-I.</b> Vous pouvez utiliser des cartes UHS-II, mais elles seront plafonnées aux vitesses UHS-I. Concentrez-vous plutôt sur l'achat d'une carte UHS-I A2 haute capacité."
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally",
+      "steam-deck",
+      "lenovo-legion-go"
+    ],
+    "notes": "Ensure you update the MSI Center M software, as early drivers had issues with SD card recognition.",
+    "imageUrl": "/img/devices/gaming-consoles/msi-claw.webp"
+  },
+  {
+    "id": "gpd-win-mini",
+    "name": "GPD Win Mini",
+    "category": "gaming-handhelds",
+    "slug": "gpd-win-mini",
+    "searchTerms": [
+      "carte sd gpd win mini",
+      "carte mémoire gpd win 4",
+      "carte uhs-ii pour gpd"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II (pris en charge)",
+      "minSpeed": "U3 / V60 / V90",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB",
+        "2TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Les appareils GPD Win (Mini et Win 4) disposent souvent de lecteurs de carte UHS-II haute vitesse. Pour jouer à des jeux PC modernes directement depuis la carte SD sans blocage, investir dans une carte UHS-II V60 ou V90 est très bénéfique.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-gold-uhs-ii"
+      },
+      {
+        "id": "sandisk-extreme-pro-uhs-ii"
+      }
+    ],
+    "faq": [
+      {
+        "q": "L'UHS-II en vaut-il la peine pour le GPD ?",
+        "a": "<b>Oui.</b> Contrairement à de nombreux concurrents, GPD inclut souvent des lecteurs UHS-II. Ces cartes offrent des vitesses de lecture proches de celles des SSD (plus de 250MB/s), réduisant considérablement les temps de chargement des jeux AAA."
+      }
+    ],
+    "relatedDevices": [
+      "steam-deck",
+      "asus-rog-ally"
+    ],
+    "notes": "Check specific GPD model year as older units may only be UHS-I. The 2024/2025 Mini supports UHS-II.",
+    "imageUrl": "/img/devices/gaming-consoles/gpd-win-mini.webp"
   },
   {
     "id": "egret-ii-mini",
@@ -624,6 +1208,191 @@
     "notes": "Still popular flagship (pre-2026). Snapdragon 865 remains capable for most emulation tasks. A2 + U3 + V30 recommended for optimal performance."
   },
   {
+    "id": "rog-xbox-ally-x",
+    "name": "ASUS ROG Xbox Ally X",
+    "category": "gaming-handhelds",
+    "slug": "rog-xbox-ally-x",
+    "metaDescription": "Meilleures cartes microSD pour l'ASUS ROG Xbox Ally X — sélections UHS-II tirant parti du lecteur de carte repensé, et ce qu'il faut savoir sur la correction du problème de surchauffe de l'Ally original.",
+    "searchTerms": [
+      "carte sd rog xbox ally x",
+      "rog xbox ally x microsd",
+      "l'ally x abîme-t-il encore les cartes sd",
+      "meilleure microsd fiable pour ally x",
+      "temps de chargement uhs-ii rog ally x",
+      "stockage asus rog xbox ally x"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II (entièrement rétrocompatible avec UHS-I)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB",
+        "2TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Le ROG Xbox Ally X résout le célèbre bug de surchauffe qui grillait les cartes SD sur l'Ally original, grâce à une refonte complète de la carte mère — ASUS a physiquement déplacé le lecteur microSD loin du flux d'échappement qui cuisait auparavant les cartes sous contrainte thermique soutenue. Le lecteur lui-même est en UHS-II, donc une carte classée V60/V90 avec performance applicative A2 réduira nettement les temps de chargement par rapport à une carte UHS-I d'entrée de gamme, bien que les cartes UHS-I standard restent totalement prises en charge pour la rétrocompatibilité.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-1000x-microsd",
+        "note": "Meilleur niveau de performance UHS-II — exploite pleinement le lecteur à broches double rangée"
+      },
+      {
+        "id": "sandisk-extreme-microsd",
+        "note": "Niveau de capacité massive (jusqu'à 1,5TB) pour un vaste catalogue, UHS-I classé A2"
+      },
+      {
+        "id": "sandisk-rog-ally-microsd",
+        "note": "Carte officiellement homologuée ROG"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le ROG Xbox Ally X abîme-t-il encore les cartes SD comme l'Ally original ?",
+        "a": "<b>Non — ASUS a spécifiquement repensé la carte mère pour corriger ce problème.</b> L'Ally original plaçait le lecteur microSD juste à côté de la grille d'échappement principale, et la contrainte thermique soutenue provoquait des défaillances prématurées de carte sur certaines unités. L'Ally X déplace physiquement le lecteur loin de ce flux d'échappement, résolvant le problème."
+      },
+      {
+        "q": "Quelle est la meilleure carte microSD fiable pour l'Ally X ?",
+        "a": "<b>Une carte UHS-II V60/V90 avec performance applicative A2 d'une marque réputée (SanDisk, Lexar, Samsung) est le meilleur choix.</b> Le lecteur repensé prend en charge toute la bande passante UHS-II, donc l'associer à une carte UHS-II réduit sensiblement les temps de chargement par rapport à une carte UHS-I standard."
+      },
+      {
+        "q": "Ai-je besoin d'UHS-II, ou une carte UHS-I moins chère suffit-elle ?",
+        "a": "<b>Les cartes UHS-I fonctionnent et restent totalement rétrocompatibles</b>, mais elles plafonnent bien en dessous du plafond UHS-II du lecteur. Si vous voulez les temps de chargement les plus rapides que le lecteur de l'Ally X puisse offrir, investissez dans une carte UHS-II ; sinon, une carte UHS-I A2/V30 haute capacité comme la SanDisk Extreme est une bonne alternative économique."
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally-x",
+      "asus-rog-ally",
+      "lenovo-legion-go-gen-2"
+    ],
+    "notes": "Released 2026 as an Xbox-co-branded redesign of the ROG Ally X, addressing the original Ally's SD card reader overheating issue with a relocated reader and overhauled internal layout. Distinct from the 2024 ASUS ROG Ally X.",
+    "imageUrl": "/img/devices/gaming-consoles/asus-rog-ally.webp"
+  },
+  {
+    "id": "lenovo-legion-go-gen-2",
+    "name": "Lenovo Legion Go 2",
+    "category": "gaming-handhelds",
+    "slug": "lenovo-legion-go-gen-2",
+    "metaDescription": "Meilleures cartes microSD pour le Lenovo Legion Go 2 — sélections UHS-II haute capacité pour les besoins de stockage AAA de cet ordinateur portable OLED de 8,8 pouces.",
+    "searchTerms": [
+      "compatibilité microsd lenovo legion go 2",
+      "meilleure carte sd haute capacité legion go oled",
+      "legion go gen 2 temps de chargement carte sd vs ssd",
+      "carte sd legion go 2",
+      "extension de stockage legion go 2"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "1TB",
+        "2TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "L'écran OLED WUXGA de 8,8 pouces du Legion Go 2 (jusqu'à 144Hz) et le processeur AMD Ryzen Z2 Extreme sont conçus pour des titres AAA aux tailles d'installation massives et riches en textures, ce qui vide rapidement l'espace du SSD interne. Comme ouvrir le châssis pour changer le disque NVMe M.2 2280 est impraticable pour la plupart des utilisateurs occasionnels, une carte microSD haute capacité UHS-II est la principale voie d'extension. Le lecteur prend en charge toute la bande passante UHS-II, donc une carte classée V30/A2 est le minimum pratique, et une carte V60 plus rapide améliore sensiblement les temps de chargement des titres à forte lecture.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-1000x-microsd",
+        "note": "Meilleur niveau de performance UHS-II"
+      },
+      {
+        "id": "samsung-pro-plus-microsd",
+        "note": "Choix V30/A2 fiable pour de grandes bibliothèques de jeux modernes"
+      },
+      {
+        "id": "sandisk-extreme-microsd",
+        "note": "Niveau de capacité massive (jusqu'à 1,5TB) pour un vaste catalogue AAA"
+      }
+    ],
+    "faq": [
+      {
+        "q": "L'emplacement microSD du Legion Go 2 est-il compatible avec toutes les cartes standard ?",
+        "a": "<b>Oui — l'emplacement accepte les cartes microSD, microSDHC et microSDXC standard</b> et prend en charge l'UHS-II pour la pleine vitesse, tout en restant rétrocompatible avec les cartes UHS-I (à vitesse UHS-I)."
+      },
+      {
+        "q": "Quelle capacité choisir pour la bibliothèque OLED du Legion Go 2 ?",
+        "a": "<b>1TB ou 2TB est fortement recommandé.</b> Les titres AAA modernes avec des packs de textures haute résolution dépassent régulièrement 100GB chacun, et l'écran OLED du Go 2 encourage l'installation de titres plus exigeants. En dessous de 1TB, l'espace se remplit vite."
+      },
+      {
+        "q": "De combien le SSD interne est-il plus rapide qu'une carte microSD ?",
+        "a": "<b>Le SSD NVMe M.2 interne surpassera toujours une carte microSD</b>, même une carte UHS-II rapide. Considérez l'emplacement microSD comme du stockage d'extension pour votre bibliothèque plus large, et gardez vos titres les plus joués et sensibles aux temps de chargement sur le disque interne dans la mesure du possible."
+      }
+    ],
+    "relatedDevices": [
+      "lenovo-legion-go",
+      "lenovo-legion-go-s",
+      "rog-xbox-ally-x"
+    ],
+    "notes": "2026 successor to the original Legion Go, with an 8.8-inch WUXGA OLED display up to 144Hz and AMD Ryzen Z2 Extreme. UHS-II microSD reader; internal NVMe SSD upgrades are impractical for most users, making microSD the primary expansion path.",
+    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go.webp"
+  },
+  {
+    "id": "msi-claw-8-ex-ai-plus",
+    "name": "MSI Claw 8 EX AI+",
+    "category": "gaming-handhelds",
+    "slug": "msi-claw-8-ex-ai-plus",
+    "metaDescription": "Meilleures cartes microSD pour le MSI Claw 8 EX AI+ — sélections classées A2 qui suivent le streaming d'assets Intel Arc XeSS et évitent les saccades sur cet ordinateur portable propulsé par Intel.",
+    "searchTerms": [
+      "extension de stockage msi claw 8 ex ai+",
+      "saccades jeu handheld intel arc carte sd",
+      "meilleure microsd 2tb pour msi claw 8",
+      "carte sd msi claw 8 ex ai plus",
+      "microsd msi claw 8"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I (lecteur haute vitesse)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "1TB",
+        "2TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Le Claw 8 EX AI+ associe la plateforme Intel Arc G3 Extreme à une batterie de 80Whr pour des performances portables soutenues et de haute puissance, et s'appuie sur l'upscaling IA XeSS d'Intel, qui dépend d'un streaming d'assets rapide et constant. Comme les pilotes Arc sont sensibles aux délais de livraison lors du streaming d'assets de jeu depuis un stockage externe, une carte classée A2 avec de solides IOPS de lecture/écriture aléatoires est essentielle pour éviter les saccades et micro-gels — une simple carte V30 sans A2 bridera le système sous charge.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd",
+        "note": "A2/V30 avec IOPS aléatoires élevés — s'accorde bien avec la mémoire virtuelle de Windows 11 sans brider le système"
+      },
+      {
+        "id": "lexar-play-microsd",
+        "note": "Option 1TB économique pour de grandes bibliothèques de jeux"
+      },
+      {
+        "id": "kingston-canvas-go-plus",
+        "note": "Alternative A2 fiable"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le MSI Claw 8 EX AI+ a-t-il besoin d'une carte microSD spéciale ?",
+        "a": "<b>Il a besoin d'une carte classée en performance applicative A2, pas seulement rapide en séquentiel.</b> L'upscaling IA XeSS de la plateforme Intel Arc diffuse en continu des assets de jeu, et les solides IOPS de lecture/écriture aléatoires d'A2 évitent les saccades et micro-gels qu'une simple carte V30 sans A2 peut provoquer."
+      },
+      {
+        "q": "Pourquoi mon MSI Claw 8 saccade-t-il pendant les scènes intenses ?",
+        "a": "<b>C'est généralement un goulot d'étranglement d'E/S de stockage, pas un problème CPU/GPU.</b> Les pilotes Intel Arc sont sensibles aux délais de livraison d'assets lors du streaming en arrière-plan. Passer à une carte microSD classée A2 (ou déplacer le jeu vers le stockage interne) résout généralement les saccades."
+      },
+      {
+        "q": "Quelle est la meilleure capacité pour une microSD de 2TB sur le Claw 8 ?",
+        "a": "<b>Une carte 2TB A2/V30 d'une marque réputée fonctionne bien, mais restez fidèle à des marques établies comme SanDisk, Samsung ou Lexar.</b> Les cartes 2TB génériques de vendeurs non vérifiés ont beaucoup plus de risques d'avoir des capacités gonflées ou des performances d'écriture soutenue incohérentes."
+      }
+    ],
+    "relatedDevices": [
+      "msi-claw",
+      "rog-xbox-ally-x",
+      "lenovo-legion-go-gen-2"
+    ],
+    "notes": "Unveiled at Computex 2026 with Intel's Arc G3 Extreme platform and an 80Whr battery. High-speed microSD reader; A2 rating is critical to keep up with Intel XeSS asset streaming demands.",
+    "imageUrl": "/img/devices/gaming-consoles/msi-claw-8-ex-ai-plus.webp"
+  },
+  {
     "id": "retroid-pocket-mini",
     "name": "Retroid Pocket Mini",
     "category": "gaming-handhelds",
@@ -674,6 +1443,63 @@
       "miyoo-mini-plus"
     ],
     "notes": "Prized for its authentic 4:3 AMOLED display. High SEO value due to dedicated retro gaming community. A2 rating recommended for optimal performance."
+  },
+  {
+    "id": "onexplayer-3",
+    "name": "OneXPlayer 3",
+    "category": "gaming-handhelds",
+    "slug": "onexplayer-3",
+    "metaDescription": "Meilleures cartes microSD pour l'OneXPlayer 3 — sélections A2/V30 haute capacité pour l'écran AMOLED 144Hz de 8,8 pouces de cet ordinateur portable Intel Arc G3 Extreme.",
+    "searchTerms": [
+      "taille de carte microsd onexplayer 3",
+      "meilleure carte sd pour handheld intel arc g3 extreme",
+      "mise à niveau du stockage onexplayer 3",
+      "carte sd onexplayer 3",
+      "capacité microsd maximale onexplayer 3"
+    ],
+    "sdCard": {
+      "type": "Lecteur de carte microSD haute vitesse",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "1TB",
+        "2TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "L'OneXPlayer 3 est parmi les premiers ordinateurs portables commercialisés mondialement avec le chipset Arc G3 Extreme d'Intel, associé à un écran AMOLED de 8,8 pouces fonctionnant jusqu'à 144Hz. Générer des fréquences d'images élevées sur un panneau aussi grand signifie que le système diffuse constamment des textures haute résolution, donc une carte lente cause des saccades visibles. Une carte classée A2/V30 avec de solides performances de lecture/écriture aléatoires suit le rythme de l'écran et du chipset ; les cartes bon marché bien en dessous de cette spécification ne sont pas recommandées pour cet appareil.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-v60",
+        "note": "Meilleur niveau de performance — A2/V30 UHS-II, suit le rythme du streaming d'assets de l'écran AMOLED 144Hz"
+      },
+      {
+        "id": "samsung-pro-plus-microsd",
+        "note": "Alternative A2/V30 fiable pour de grandes bibliothèques AAA"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quelle taille de carte microSD nécessite l'OneXPlayer 3 ?",
+        "a": "<b>1TB ou 2TB est recommandé.</b> Le chipset Intel Arc G3 Extreme cible des titres AAA exigeants avec de grandes installations riches en textures, donc tout ce qui est plus petit se remplit rapidement."
+      },
+      {
+        "q": "L'OneXPlayer 3 a-t-il besoin d'une carte rapide classée A2 ?",
+        "a": "<b>Oui.</b> L'écran AMOLED 144Hz de 8,8 pouces nécessite un streaming de textures rapide et soutenu. Une carte bon marché sans performance applicative A2 causera des micro-saccades pendant le jeu."
+      },
+      {
+        "q": "Quelle est la capacité microSD maximale prise en charge ?",
+        "a": "<b>Jusqu'à 2TB.</b> Le lecteur de carte prend en charge les capacités microSDXC standard, donc toute carte 2TB A2/V30 d'une marque réputée est entièrement compatible."
+      }
+    ],
+    "relatedDevices": [
+      "rog-xbox-ally-x",
+      "lenovo-legion-go-gen-2",
+      "msi-claw-8-ex-ai-plus"
+    ],
+    "notes": "Launching globally June 2026 with Intel's Arc G3 Extreme chipset and an 8.8-inch 144Hz AMOLED display. First OneXPlayer entry in this dataset. No dedicated product photo yet — uses the generic gaming-handheld placeholder image.",
+    "imageUrl": "/img/devices/gaming-consoles/onexplayer-3.webp"
   },
   {
     "id": "anbernic-rg35xx-sp",
@@ -798,67 +1624,6 @@
     "imageUrl": "/img/devices/gaming-consoles/anbernic-rg406v-rg406h.webp"
   },
   {
-    "id": "anbernic-rg-cube",
-    "name": "Anbernic RG Cube",
-    "category": "gaming-handhelds",
-    "slug": "anbernic-rg-cube",
-    "metaDescription": "Meilleures cartes microSD pour l'Anbernic RG Cube — recommandations fiables pour cette console Android 13 à écran carré 1:1 conçue pour l'émulation DS/3DS et rétro classique.",
-    "searchTerms": [
-      "anbernic rg cube carte sd",
-      "rg cube microsd",
-      "anbernic rg cube stockage",
-      "meilleure carte sd pour rg cube",
-      "console à écran carré rg cube"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-I",
-      "minSpeed": "Class 10 / U1",
-      "minWriteSpeed": "10 MB/s",
-      "minAppPerformance": "A1",
-      "recommendedCapacity": [
-        "128GB",
-        "256GB"
-      ],
-      "maxCapacity": "2TB"
-    },
-    "whySpecs": "La caractéristique déterminante du RG Cube est son écran de 3,95 pouces au format 1:1, tournant sous Android 13 sur un processeur Unisoc T820. L'écran carré en fait la machine de référence pour les systèmes à double écran comme la DS et la 3DS, ainsi que les titres rétro classiques 8 et 16 bits. Les anciennes ROMs ayant des tailles de fichier minuscules, une carte de 128GB est l'idéal pour cette communauté — les puristes du rétro n'ont généralement pas besoin de la capacité 1TB+ que demandent les appareils orientés PS2/Switch, mais ils ont besoin d'une fiabilité de marque premium pour éviter de corrompre des centaines de sauvegardes dans une grande bibliothèque organisée.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-ultra-microsd",
-        "note": "Choix fiable pour les bibliothèques rétro et l'intégrité des sauvegardes"
-      },
-      {
-        "id": "samsung-evo-select-microsd",
-        "note": "Alternative de confiance, largement disponible en 128GB/256GB"
-      },
-      {
-        "id": "kingston-canvas-go-plus",
-        "note": "Option notée A1 pour une navigation fluide des menus Android"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Pourquoi le RG Cube a-t-il un écran carré ?",
-        "a": "<b>L'écran de 3,95 pouces au format 1:1 est conçu spécifiquement pour les systèmes à double écran comme la Nintendo DS et la 3DS</b>, qui affichent les deux écrans empilés verticalement sans letterboxing ni déformation. Il convient également bien aux jeux classiques 8 et 16 bits avec une résolution native carrée ou quasi carrée."
-      },
-      {
-        "q": "Ai-je besoin d'une carte microSD de 1TB pour le RG Cube ?",
-        "a": "<b>Non, la plupart des utilisateurs n'en ont pas besoin.</b> Contrairement aux consoles Android orientées PS2/Switch, le public principal du RG Cube joue à des titres DS, 3DS et rétro classiques de petite taille. Une carte de 128GB est l'idéal pratique — privilégiez une marque premium fiable plutôt qu'une capacité brute pour protéger les sauvegardes."
-      },
-      {
-        "q": "Quelle marque de carte microSD est la meilleure pour la fiabilité des sauvegardes sur le RG Cube ?",
-        "a": "<b>Restez fidèle à des marques établies comme SanDisk, Samsung ou Kingston.</b> Les frontends d'émulation rétro stockent des centaines de sauvegardes, et une carte corrompue peut effacer la progression de toute une bibliothèque. Évitez les cartes sans marque même si elles annoncent une grande capacité."
-      }
-    ],
-    "relatedDevices": [
-      "anbernic-rg556",
-      "nintendo-3ds-xl",
-      "miyoo-mini-plus"
-    ],
-    "notes": "Niche but distinctive 1:1 aspect ratio square-screen handheld. Lower search volume than mainstream Anbernic devices, but fills a content gap for the DS/3DS dual-screen emulation community.",
-    "imageUrl": "/img/devices/gaming-consoles/anbernic-rg-cube.webp"
-  },
-  {
     "id": "trimui-brick",
     "name": "TrimUI Brick",
     "category": "gaming-handhelds",
@@ -981,829 +1746,287 @@
     "imageUrl": "/img/devices/gaming-consoles/ayn-odin-3-odin-2-portal.webp"
   },
   {
-    "id": "steam-deck",
-    "name": "Steam Deck",
+    "id": "anbernic-rg-cube",
+    "name": "Anbernic RG Cube",
     "category": "gaming-handhelds",
-    "slug": "steam-deck",
+    "slug": "anbernic-rg-cube",
+    "metaDescription": "Meilleures cartes microSD pour l'Anbernic RG Cube — recommandations fiables pour cette console Android 13 à écran carré 1:1 conçue pour l'émulation DS/3DS et rétro classique.",
     "searchTerms": [
-      "carte sd steam deck",
-      "carte mémoire steam deck",
-      "deck microsd"
+      "anbernic rg cube carte sd",
+      "rg cube microsd",
+      "anbernic rg cube stockage",
+      "meilleure carte sd pour rg cube",
+      "console à écran carré rg cube"
     ],
     "sdCard": {
-      "type": "microSD UHS-I (pas UHS-II)",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
+      "type": "microSD UHS-I",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
       "minAppPerformance": "A1",
-      "recommendedCapacity": [
-        "256GB",
-        "512GB"
-      ],
-      "maxCapacity": "2TB (théorique)",
-      "testedMaxCapacity": "1TB"
-    },
-    "whySpecs": "Le Steam Deck utilise l'interface UHS-I et exécute SteamOS directement depuis la carte, donc la performance applicative A1 est importante pour la réactivité du système. Si V30 suffit pour jouer, les IOPS aléatoires A1 sont essentielles. Choisissez des cartes de marques réputées classées V30 et certifiées A1. Remarque : bien que 2TB soit théoriquement pris en charge, la plus grande capacité testée et confirmée fonctionnelle est 1TB.",
-    "recommendedBrands": [
-      {
-        "id": "kingston-canvas-go-plus-ultra"
-      },
-      {
-        "id": "adata-premier-pro-microsd"
-      },
-      {
-        "id": "sandisk-ultra-microsd"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Puis-je utiliser des cartes V60 rapides ?",
-        "a": "<b>Oui, les cartes microSD V60 et plus rapides fonctionnent parfaitement avec le Steam Deck</b>. Cependant, <b>l'interface UHS-I de l'appareil limite l'avantage de vitesse</b>, donc les cartes plus rapides n'offrent aucun avantage pratique par rapport aux cartes V30 pour jouer sur Steam Deck."
-      }
-    ],
-    "relatedDevices": [
-      "nintendo-switch",
-      "asus-rog-ally",
-      "ayn-odin-3-odin-2-portal"
-    ],
-    "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library."
-  },
-  {
-    "id": "asus-rog-ally",
-    "name": "ASUS ROG Ally",
-    "category": "gaming-handhelds",
-    "slug": "asus-rog-ally",
-    "searchTerms": [
-      "carte sd asus rog ally",
-      "rog ally microsd",
-      "carte mémoire rog ally"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-II",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "recommendedCapacity": [
-        "256GB",
-        "512GB",
-        "1TB"
-      ],
-      "maxCapacity": "2TB"
-    },
-    "whySpecs": "Le ROG Ally dispose d'un lecteur de carte UHS-II haute vitesse. L'utilisation d'une carte UHS-II est fortement recommandée pour minimiser les temps de chargement des jeux et accélérer les transferts de fichiers. Une classe de vitesse V30 est le minimum pour une performance stable.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-rog-ally-microsd"
-      },
-      {
-        "id": "sandisk-extreme-microsd"
-      },
-      {
-        "id": "kingston-canvas-go-plus"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Dois-je utiliser une carte UHS-II plus rapide dans le ROG Ally ?",
-        "a": "<b>Oui, absolument, si vous voulez les meilleures performances.</b> Le lecteur de carte UHS-II du ROG Ally exploite pleinement la vitesse supplémentaire d'une carte UHS-II, ce qui accélère les temps de chargement des jeux. Une carte UHS-I plus lente fonctionnera, mais bridera les performances."
-      },
-      {
-        "q": "Quelle est la meilleure capacité pour le ROG Ally ?",
-        "a": "<b>Une carte de 512GB ou 1TB est idéale pour la plupart des utilisateurs.</b> Les jeux PC modernes sont très volumineux, et cette capacité permet de stocker un bon nombre de titres AAA sans avoir à gérer constamment l'espace de stockage."
-      }
-    ],
-    "relatedDevices": [
-      "steam-deck",
-      "nintendo-switch-oled",
-      "nintendo-switch"
-    ],
-    "notes": "Heat from the device's exhaust can affect the SD card reader in some units. Using a high-quality, reputable UHS-II card is crucial for both reliability and optimal performance.",
-    "imageUrl": "/img/devices/gaming-consoles/asus-rog-ally.webp"
-  },
-  {
-    "id": "asus-rog-ally-x",
-    "name": "ASUS ROG Ally X",
-    "category": "gaming-handhelds",
-    "slug": "asus-rog-ally-x",
-    "metaDescription": "Meilleures cartes microSD pour l'ASUS ROG Ally X — et les marques à éviter. Testées pour la vitesse UHS-II, la performance applicative A1 et la fiabilité dans le lecteur de carte rapide de l'Ally X.",
-    "searchTerms": [
-      "carte sd rog ally x",
-      "ally x microsd",
-      "stockage rog ally x",
-      "carte mémoire asus rog ally x",
-      "marques de carte sd à éviter rog ally x",
-      "meilleure carte microsd rog ally x"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-II",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "minAppPerformance": "A1",
-      "recommendedCapacity": [
-        "512GB",
-        "1TB"
-      ],
-      "maxCapacity": "2TB"
-    },
-    "whySpecs": "Le ROG Ally X dispose d'un lecteur de carte UHS-II haute vitesse et fonctionne sous Windows, donc la performance applicative A1 est importante pour la réactivité du système. Cela améliore considérablement les temps de chargement des jeux par rapport aux appareils UHS-I. Les cartes V60 ou plus rapides offrent la meilleure expérience pour charger de gros jeux PC modernes, bien que V30 avec classification A1 soit le minimum pratique.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-rog-ally-microsd"
-      },
-      {
-        "id": "sandisk-extreme-microsd"
-      },
-      {
-        "id": "kingston-canvas-go-plus"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Quelles marques et modèles de cartes microSD dois-je éviter pour le ROG Ally X ?",
-        "a": "<b>Évitez les cartes microSD bon marché sans marque, les cartes sans classification A2, et les fausses cartes SanDisk provenant de vendeurs Amazon non vérifiés.</b> Le ROG Ally X fonctionne sous Windows et charge les jeux directement depuis la carte, donc de mauvaises performances de lecture/écriture aléatoires causent des saccades et de longs temps de chargement. Plus précisément : (1) Évitez les cartes sans classification de performance applicative A1 ou A2 — elles seront lentes sous Windows ; (2) Évitez les cartes 2TB très haute capacité sauf si elles proviennent d'une marque réputée, car certains retours communautaires indiquent des vitesses soutenues plus lentes que prévu par rapport aux variantes 1TB ; (3) Les fausses cartes SanDisk sont un problème connu sur Amazon — achetez toujours dans la boutique officielle SanDisk ou chez des détaillants établis. Restez fidèle à SanDisk, Samsung, Lexar ou Kingston auprès de sources fiables."
-      },
-      {
-        "q": "L'Ally X est-il plus rapide que l'Ally original pour les cartes SD ?",
-        "a": "<b>Oui, l'Ally X dispose d'un lecteur de carte SD amélioré et plus fiable prenant en charge les vitesses UHS-II, résolvant les problèmes de surchauffe qui affectaient certaines unités Ally originales.</b> Vous constaterez des temps de chargement et des transferts de fichiers nettement plus rapides avec des cartes UHS-II sur l'Ally X."
-      },
-      {
-        "q": "Ai-je vraiment besoin d'une carte UHS-II, ou l'UHS-I suffit-il ?",
-        "a": "<b>L'UHS-II fait une différence significative sur l'Ally X.</b> Les temps de chargement des jeux peuvent être 30 à 50 % plus rapides avec des cartes UHS-II qu'avec des cartes UHS-I. Si vous jouez fréquemment à de gros titres AAA directement depuis la carte SD, le gain de vitesse de l'UHS-II vaut largement le coût supplémentaire."
-      }
-    ],
-    "relatedDevices": [
-      "asus-rog-ally",
-      "steam-deck",
-      "lenovo-legion-go"
-    ],
-    "notes": "Released mid-2024 as an upgraded version of the original ROG Ally, featuring improved battery life, better cooling, and a more robust UHS-II microSD card reader. The official SanDisk ROG Ally microSD card is optimized for this device.",
-    "imageUrl": "/img/devices/gaming-consoles/asus-rog-ally.webp"
-  },
-  {
-    "id": "rog-xbox-ally-x",
-    "name": "ASUS ROG Xbox Ally X",
-    "category": "gaming-handhelds",
-    "slug": "rog-xbox-ally-x",
-    "metaDescription": "Meilleures cartes microSD pour l'ASUS ROG Xbox Ally X — sélections UHS-II tirant parti du lecteur de carte repensé, et ce qu'il faut savoir sur la correction du problème de surchauffe de l'Ally original.",
-    "searchTerms": [
-      "carte sd rog xbox ally x",
-      "rog xbox ally x microsd",
-      "l'ally x abîme-t-il encore les cartes sd",
-      "meilleure microsd fiable pour ally x",
-      "temps de chargement uhs-ii rog ally x",
-      "stockage asus rog xbox ally x"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-II (entièrement rétrocompatible avec UHS-I)",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "minAppPerformance": "A2",
-      "recommendedCapacity": [
-        "512GB",
-        "1TB",
-        "2TB"
-      ],
-      "maxCapacity": "2TB"
-    },
-    "whySpecs": "Le ROG Xbox Ally X résout le célèbre bug de surchauffe qui grillait les cartes SD sur l'Ally original, grâce à une refonte complète de la carte mère — ASUS a physiquement déplacé le lecteur microSD loin du flux d'échappement qui cuisait auparavant les cartes sous contrainte thermique soutenue. Le lecteur lui-même est en UHS-II, donc une carte classée V60/V90 avec performance applicative A2 réduira nettement les temps de chargement par rapport à une carte UHS-I d'entrée de gamme, bien que les cartes UHS-I standard restent totalement prises en charge pour la rétrocompatibilité.",
-    "recommendedBrands": [
-      {
-        "id": "lexar-professional-1000x-microsd",
-        "note": "Meilleur niveau de performance UHS-II — exploite pleinement le lecteur à broches double rangée"
-      },
-      {
-        "id": "sandisk-extreme-microsd",
-        "note": "Niveau de capacité massive (jusqu'à 1,5TB) pour un vaste catalogue, UHS-I classé A2"
-      },
-      {
-        "id": "sandisk-rog-ally-microsd",
-        "note": "Carte officiellement homologuée ROG"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Le ROG Xbox Ally X abîme-t-il encore les cartes SD comme l'Ally original ?",
-        "a": "<b>Non — ASUS a spécifiquement repensé la carte mère pour corriger ce problème.</b> L'Ally original plaçait le lecteur microSD juste à côté de la grille d'échappement principale, et la contrainte thermique soutenue provoquait des défaillances prématurées de carte sur certaines unités. L'Ally X déplace physiquement le lecteur loin de ce flux d'échappement, résolvant le problème."
-      },
-      {
-        "q": "Quelle est la meilleure carte microSD fiable pour l'Ally X ?",
-        "a": "<b>Une carte UHS-II V60/V90 avec performance applicative A2 d'une marque réputée (SanDisk, Lexar, Samsung) est le meilleur choix.</b> Le lecteur repensé prend en charge toute la bande passante UHS-II, donc l'associer à une carte UHS-II réduit sensiblement les temps de chargement par rapport à une carte UHS-I standard."
-      },
-      {
-        "q": "Ai-je besoin d'UHS-II, ou une carte UHS-I moins chère suffit-elle ?",
-        "a": "<b>Les cartes UHS-I fonctionnent et restent totalement rétrocompatibles</b>, mais elles plafonnent bien en dessous du plafond UHS-II du lecteur. Si vous voulez les temps de chargement les plus rapides que le lecteur de l'Ally X puisse offrir, investissez dans une carte UHS-II ; sinon, une carte UHS-I A2/V30 haute capacité comme la SanDisk Extreme est une bonne alternative économique."
-      }
-    ],
-    "relatedDevices": [
-      "asus-rog-ally-x",
-      "asus-rog-ally",
-      "lenovo-legion-go-gen-2"
-    ],
-    "notes": "Released 2026 as an Xbox-co-branded redesign of the ROG Ally X, addressing the original Ally's SD card reader overheating issue with a relocated reader and overhauled internal layout. Distinct from the 2024 ASUS ROG Ally X.",
-    "imageUrl": "/img/devices/gaming-consoles/asus-rog-ally.webp"
-  },
-  {
-    "id": "lenovo-legion-go",
-    "name": "Lenovo Legion Go",
-    "category": "gaming-handhelds",
-    "slug": "lenovo-legion-go",
-    "searchTerms": [
-      "carte sd lenovo legion go",
-      "legion go microsd",
-      "stockage legion go",
-      "carte mémoire lenovo legion go"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-I",
-      "minSpeed": "U3 / V30",
-      "minWriteSpeed": "30 MB/s",
-      "minAppPerformance": "A2",
-      "recommendedCapacity": [
-        "512GB",
-        "1TB"
-      ],
-      "maxCapacity": "2TB"
-    },
-    "whySpecs": "Un ordinateur portable de jeu Windows doté d'un grand écran de 8,8 pouces et de contrôleurs détachables. Une classification de performance applicative A2 sur la carte microSD améliore considérablement les temps de chargement des jeux et la réactivité globale du système lors de l'exécution de jeux depuis la carte. Le grand écran et le système d'exploitation Windows le rendent adapté au jeu AAA, qui exige une capacité de stockage substantielle.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-microsd"
-      },
-      {
-        "id": "kingston-canvas-go-plus"
-      },
-      {
-        "id": "samsung-evo-select-microsd"
-      },
-      {
-        "id": "amazon-basics-microsd"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Legion Go contre ROG Ally - lequel a la meilleure performance de carte SD ?",
-        "a": "<b>L'ASUS ROG Ally X dispose d'un lecteur de carte UHS-II, tandis que le Lenovo Legion Go utilise un emplacement UHS-I.</b> Cela signifie que l'Ally X peut atteindre des temps de chargement de jeux plus rapides avec des cartes UHS-II. Cependant, le Legion Go offre des caractéristiques uniques comme son écran plus grand et ses contrôleurs détachables, séduisant différentes préférences d'utilisateurs. Les deux appareils bénéficient grandement de cartes haute capacité (512GB+) classées A2 pour les jeux modernes."
-      },
-      {
-        "q": "Quelle capacité de carte microSD me faut-il pour les jeux PC sur le Legion Go ?",
-        "a": "<b>Une carte de 512GB est un bon minimum, mais 1TB est fortement recommandé pour une vaste bibliothèque de jeux PC modernes.</b> De nombreux titres AAA peuvent facilement dépasser 100GB chacun. Bien que le système Windows du Legion Go permette une gestion flexible du stockage, l'espace de la carte microSD peut se remplir rapidement avec quelques gros titres, faisant d'une capacité plus élevée un investissement judicieux."
-      }
-    ],
-    "relatedDevices": [
-      "asus-rog-ally",
-      "asus-rog-ally-x",
-      "steam-deck"
-    ],
-    "notes": "Released late 2023, the Lenovo Legion Go is known for its unique detachable controllers and the largest screen among current Windows handhelds. It features a microSD UHS-I slot (unlike the newer ROG Ally X, which has UHS-II).",
-    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go.webp"
-  },
-  {
-    "id": "lenovo-legion-go-s",
-    "name": "Lenovo Legion Go S",
-    "category": "gaming-handhelds",
-    "slug": "lenovo-legion-go-s",
-    "searchTerms": [
-      "lenovo legion go s",
-      "carte sd legion go s",
-      "legion go s microsd",
-      "stockage legion go s"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-I",
-      "minSpeed": "U3 / V30",
-      "minWriteSpeed": "30 MB/s",
-      "minAppPerformance": "A2",
-      "recommendedCapacity": [
-        "512GB",
-        "1TB"
-      ],
-      "maxCapacity": "2TB (théorique, 1TB couramment utilisé)"
-    },
-    "whySpecs": "Le Legion Go S utilise un lecteur microSD UHS-I, donc le débit maximal plafonne autour de 90-100 MB/s même en insérant une carte UHS-II. Une carte U3/V30 avec classification applicative A2 offre des performances séquentielles et aléatoires suffisantes pour exécuter des jeux Windows ou SteamOS directement depuis la carte sans temps de chargement pénibles. Les titres PC modernes sont très volumineux, donc 512GB à 1TB est le point idéal pratique ; tout ce qui est plus petit se remplit très vite dès que vous installez des jeux AAA.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-microsd"
-      },
-      {
-        "id": "kingston-canvas-go-plus"
-      },
-      {
-        "id": "samsung-evo-select-microsd"
-      },
-      {
-        "id": "amazon-basics-microsd"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Une carte microSD UHS-II accélérera-t-elle le chargement des jeux sur le Legion Go S ?",
-        "a": "<b>Non, le lecteur du Legion Go S est limité aux vitesses UHS-I.</b> Les cartes UHS-II reviennent au mode UHS-I dans cet emplacement, se comportant donc comme une carte UHS-I V30 rapide, sans bande passante supplémentaire dans l'appareil. Si vous possédez déjà une carte UHS-II, elle fonctionnera, mais acheter spécifiquement de l'UHS-II pour cette console n'est généralement pas rentable."
-      },
-      {
-        "q": "Puis-je faire tourner de gros jeux en monde ouvert entièrement depuis la carte SD ?",
-        "a": "<b>Oui, mais la performance dépend fortement de la carte choisie.</b> Une bonne carte V30 classée A2 peut gérer honorablement de nombreux jeux AAA, mais les titres en monde ouvert à fort streaming (grandes textures, grandes cartes) se chargeront quand même nettement plus lentement que depuis le SSD interne. Considérez la microSD davantage comme une bibliothèque d'appoint que comme votre disque de performance principal."
-      },
-      {
-        "q": "Quelle capacité de carte SD a du sens pour le Legion Go S ?",
-        "a": "<b>512GB est un bon minimum, et 1TB est idéal pour la plupart des joueurs.</b> Une poignée de jeux PC actuels peuvent dépasser 100GB chacun ; avec les patchs et le DLC, une carte de 256GB peut vite sembler à l'étroit. Si votre budget le permet, une carte de 1TB évite les allers-retours constants de désinstallation/réinstallation."
-      }
-    ],
-    "relatedDevices": [
-      "steam-deck"
-    ],
-    "notes": "SteamOS-based Windows handheld variant with a UHS-I microSD slot. Designed primarily for game storage expansion rather than raw benchmark speeds.",
-    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go-s.webp"
-  },
-  {
-    "id": "lenovo-legion-go-gen-2",
-    "name": "Lenovo Legion Go 2",
-    "category": "gaming-handhelds",
-    "slug": "lenovo-legion-go-gen-2",
-    "metaDescription": "Meilleures cartes microSD pour le Lenovo Legion Go 2 — sélections UHS-II haute capacité pour les besoins de stockage AAA de cet ordinateur portable OLED de 8,8 pouces.",
-    "searchTerms": [
-      "compatibilité microsd lenovo legion go 2",
-      "meilleure carte sd haute capacité legion go oled",
-      "legion go gen 2 temps de chargement carte sd vs ssd",
-      "carte sd legion go 2",
-      "extension de stockage legion go 2"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-II",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "minAppPerformance": "A2",
-      "recommendedCapacity": [
-        "1TB",
-        "2TB"
-      ],
-      "maxCapacity": "2TB"
-    },
-    "whySpecs": "L'écran OLED WUXGA de 8,8 pouces du Legion Go 2 (jusqu'à 144Hz) et le processeur AMD Ryzen Z2 Extreme sont conçus pour des titres AAA aux tailles d'installation massives et riches en textures, ce qui vide rapidement l'espace du SSD interne. Comme ouvrir le châssis pour changer le disque NVMe M.2 2280 est impraticable pour la plupart des utilisateurs occasionnels, une carte microSD haute capacité UHS-II est la principale voie d'extension. Le lecteur prend en charge toute la bande passante UHS-II, donc une carte classée V30/A2 est le minimum pratique, et une carte V60 plus rapide améliore sensiblement les temps de chargement des titres à forte lecture.",
-    "recommendedBrands": [
-      {
-        "id": "lexar-professional-1000x-microsd",
-        "note": "Meilleur niveau de performance UHS-II"
-      },
-      {
-        "id": "samsung-pro-plus-microsd",
-        "note": "Choix V30/A2 fiable pour de grandes bibliothèques de jeux modernes"
-      },
-      {
-        "id": "sandisk-extreme-microsd",
-        "note": "Niveau de capacité massive (jusqu'à 1,5TB) pour un vaste catalogue AAA"
-      }
-    ],
-    "faq": [
-      {
-        "q": "L'emplacement microSD du Legion Go 2 est-il compatible avec toutes les cartes standard ?",
-        "a": "<b>Oui — l'emplacement accepte les cartes microSD, microSDHC et microSDXC standard</b> et prend en charge l'UHS-II pour la pleine vitesse, tout en restant rétrocompatible avec les cartes UHS-I (à vitesse UHS-I)."
-      },
-      {
-        "q": "Quelle capacité choisir pour la bibliothèque OLED du Legion Go 2 ?",
-        "a": "<b>1TB ou 2TB est fortement recommandé.</b> Les titres AAA modernes avec des packs de textures haute résolution dépassent régulièrement 100GB chacun, et l'écran OLED du Go 2 encourage l'installation de titres plus exigeants. En dessous de 1TB, l'espace se remplit vite."
-      },
-      {
-        "q": "De combien le SSD interne est-il plus rapide qu'une carte microSD ?",
-        "a": "<b>Le SSD NVMe M.2 interne surpassera toujours une carte microSD</b>, même une carte UHS-II rapide. Considérez l'emplacement microSD comme du stockage d'extension pour votre bibliothèque plus large, et gardez vos titres les plus joués et sensibles aux temps de chargement sur le disque interne dans la mesure du possible."
-      }
-    ],
-    "relatedDevices": [
-      "lenovo-legion-go",
-      "lenovo-legion-go-s",
-      "rog-xbox-ally-x"
-    ],
-    "notes": "2026 successor to the original Legion Go, with an 8.8-inch WUXGA OLED display up to 144Hz and AMD Ryzen Z2 Extreme. UHS-II microSD reader; internal NVMe SSD upgrades are impractical for most users, making microSD the primary expansion path.",
-    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go.webp"
-  },
-  {
-    "id": "msi-claw",
-    "name": "MSI Claw (A1M)",
-    "category": "gaming-handhelds",
-    "slug": "msi-claw",
-    "searchTerms": [
-      "prise en charge carte sd msi claw",
-      "carte mémoire msi claw",
-      "étendre le stockage msi claw",
-      "meilleure carte sd pour msi claw"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-I",
-      "minSpeed": "U3 / A2",
-      "minWriteSpeed": "30 MB/s",
-      "recommendedCapacity": [
-        "512GB",
-        "1TB"
-      ],
-      "maxCapacity": "2TB"
-    },
-    "whySpecs": "Le MSI Claw exécute des jeux AAA Windows complets. Vous avez besoin d'une carte classée 'A2' (Application Performance Class 2) pour gérer les opérations de lecture/écriture aléatoires du jeu sous Windows. Des cartes plus lentes causeront des saccades et des temps de chargement extrêmement longs.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-pro-microsd"
-      },
-      {
-        "id": "lexar-play-microsd"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Le lecteur SD du MSI Claw est-il UHS-II ?",
-        "a": "<b>Non, le MSI Claw A1M dispose généralement d'un emplacement UHS-I.</b> Vous pouvez utiliser des cartes UHS-II, mais elles seront plafonnées aux vitesses UHS-I. Concentrez-vous plutôt sur l'achat d'une carte UHS-I A2 haute capacité."
-      }
-    ],
-    "relatedDevices": [
-      "asus-rog-ally",
-      "steam-deck",
-      "lenovo-legion-go"
-    ],
-    "notes": "Ensure you update the MSI Center M software, as early drivers had issues with SD card recognition.",
-    "imageUrl": "/img/devices/gaming-consoles/msi-claw.webp"
-  },
-  {
-    "id": "msi-claw-8-ex-ai-plus",
-    "name": "MSI Claw 8 EX AI+",
-    "category": "gaming-handhelds",
-    "slug": "msi-claw-8-ex-ai-plus",
-    "metaDescription": "Meilleures cartes microSD pour le MSI Claw 8 EX AI+ — sélections classées A2 qui suivent le streaming d'assets Intel Arc XeSS et évitent les saccades sur cet ordinateur portable propulsé par Intel.",
-    "searchTerms": [
-      "extension de stockage msi claw 8 ex ai+",
-      "saccades jeu handheld intel arc carte sd",
-      "meilleure microsd 2tb pour msi claw 8",
-      "carte sd msi claw 8 ex ai plus",
-      "microsd msi claw 8"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-I (lecteur haute vitesse)",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "minAppPerformance": "A2",
-      "recommendedCapacity": [
-        "1TB",
-        "2TB"
-      ],
-      "maxCapacity": "2TB"
-    },
-    "whySpecs": "Le Claw 8 EX AI+ associe la plateforme Intel Arc G3 Extreme à une batterie de 80Whr pour des performances portables soutenues et de haute puissance, et s'appuie sur l'upscaling IA XeSS d'Intel, qui dépend d'un streaming d'assets rapide et constant. Comme les pilotes Arc sont sensibles aux délais de livraison lors du streaming d'assets de jeu depuis un stockage externe, une carte classée A2 avec de solides IOPS de lecture/écriture aléatoires est essentielle pour éviter les saccades et micro-gels — une simple carte V30 sans A2 bridera le système sous charge.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-microsd",
-        "note": "A2/V30 avec IOPS aléatoires élevés — s'accorde bien avec la mémoire virtuelle de Windows 11 sans brider le système"
-      },
-      {
-        "id": "lexar-play-microsd",
-        "note": "Option 1TB économique pour de grandes bibliothèques de jeux"
-      },
-      {
-        "id": "kingston-canvas-go-plus",
-        "note": "Alternative A2 fiable"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Le MSI Claw 8 EX AI+ a-t-il besoin d'une carte microSD spéciale ?",
-        "a": "<b>Il a besoin d'une carte classée en performance applicative A2, pas seulement rapide en séquentiel.</b> L'upscaling IA XeSS de la plateforme Intel Arc diffuse en continu des assets de jeu, et les solides IOPS de lecture/écriture aléatoires d'A2 évitent les saccades et micro-gels qu'une simple carte V30 sans A2 peut provoquer."
-      },
-      {
-        "q": "Pourquoi mon MSI Claw 8 saccade-t-il pendant les scènes intenses ?",
-        "a": "<b>C'est généralement un goulot d'étranglement d'E/S de stockage, pas un problème CPU/GPU.</b> Les pilotes Intel Arc sont sensibles aux délais de livraison d'assets lors du streaming en arrière-plan. Passer à une carte microSD classée A2 (ou déplacer le jeu vers le stockage interne) résout généralement les saccades."
-      },
-      {
-        "q": "Quelle est la meilleure capacité pour une microSD de 2TB sur le Claw 8 ?",
-        "a": "<b>Une carte 2TB A2/V30 d'une marque réputée fonctionne bien, mais restez fidèle à des marques établies comme SanDisk, Samsung ou Lexar.</b> Les cartes 2TB génériques de vendeurs non vérifiés ont beaucoup plus de risques d'avoir des capacités gonflées ou des performances d'écriture soutenue incohérentes."
-      }
-    ],
-    "relatedDevices": [
-      "msi-claw",
-      "rog-xbox-ally-x",
-      "lenovo-legion-go-gen-2"
-    ],
-    "notes": "Unveiled at Computex 2026 with Intel's Arc G3 Extreme platform and an 80Whr battery. High-speed microSD reader; A2 rating is critical to keep up with Intel XeSS asset streaming demands.",
-    "imageUrl": "/img/devices/gaming-consoles/msi-claw-8-ex-ai-plus.webp"
-  },
-  {
-    "id": "gpd-win-mini",
-    "name": "GPD Win Mini",
-    "category": "gaming-handhelds",
-    "slug": "gpd-win-mini",
-    "searchTerms": [
-      "carte sd gpd win mini",
-      "carte mémoire gpd win 4",
-      "carte uhs-ii pour gpd"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-II (pris en charge)",
-      "minSpeed": "U3 / V60 / V90",
-      "minWriteSpeed": "60 MB/s",
-      "recommendedCapacity": [
-        "512GB",
-        "1TB",
-        "2TB"
-      ],
-      "maxCapacity": "2TB"
-    },
-    "whySpecs": "Les appareils GPD Win (Mini et Win 4) disposent souvent de lecteurs de carte UHS-II haute vitesse. Pour jouer à des jeux PC modernes directement depuis la carte SD sans blocage, investir dans une carte UHS-II V60 ou V90 est très bénéfique.",
-    "recommendedBrands": [
-      {
-        "id": "lexar-professional-gold-uhs-ii"
-      },
-      {
-        "id": "sandisk-extreme-pro-uhs-ii"
-      }
-    ],
-    "faq": [
-      {
-        "q": "L'UHS-II en vaut-il la peine pour le GPD ?",
-        "a": "<b>Oui.</b> Contrairement à de nombreux concurrents, GPD inclut souvent des lecteurs UHS-II. Ces cartes offrent des vitesses de lecture proches de celles des SSD (plus de 250MB/s), réduisant considérablement les temps de chargement des jeux AAA."
-      }
-    ],
-    "relatedDevices": [
-      "steam-deck",
-      "asus-rog-ally"
-    ],
-    "notes": "Check specific GPD model year as older units may only be UHS-I. The 2024/2025 Mini supports UHS-II.",
-    "imageUrl": "/img/devices/gaming-consoles/gpd-win-mini.webp"
-  },
-  {
-    "id": "onexplayer-3",
-    "name": "OneXPlayer 3",
-    "category": "gaming-handhelds",
-    "slug": "onexplayer-3",
-    "metaDescription": "Meilleures cartes microSD pour l'OneXPlayer 3 — sélections A2/V30 haute capacité pour l'écran AMOLED 144Hz de 8,8 pouces de cet ordinateur portable Intel Arc G3 Extreme.",
-    "searchTerms": [
-      "taille de carte microsd onexplayer 3",
-      "meilleure carte sd pour handheld intel arc g3 extreme",
-      "mise à niveau du stockage onexplayer 3",
-      "carte sd onexplayer 3",
-      "capacité microsd maximale onexplayer 3"
-    ],
-    "sdCard": {
-      "type": "Lecteur de carte microSD haute vitesse",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "minAppPerformance": "A2",
-      "recommendedCapacity": [
-        "1TB",
-        "2TB"
-      ],
-      "maxCapacity": "2TB"
-    },
-    "whySpecs": "L'OneXPlayer 3 est parmi les premiers ordinateurs portables commercialisés mondialement avec le chipset Arc G3 Extreme d'Intel, associé à un écran AMOLED de 8,8 pouces fonctionnant jusqu'à 144Hz. Générer des fréquences d'images élevées sur un panneau aussi grand signifie que le système diffuse constamment des textures haute résolution, donc une carte lente cause des saccades visibles. Une carte classée A2/V30 avec de solides performances de lecture/écriture aléatoires suit le rythme de l'écran et du chipset ; les cartes bon marché bien en dessous de cette spécification ne sont pas recommandées pour cet appareil.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-pro-microsd-v60",
-        "note": "Meilleur niveau de performance — A2/V30 UHS-II, suit le rythme du streaming d'assets de l'écran AMOLED 144Hz"
-      },
-      {
-        "id": "samsung-pro-plus-microsd",
-        "note": "Alternative A2/V30 fiable pour de grandes bibliothèques AAA"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Quelle taille de carte microSD nécessite l'OneXPlayer 3 ?",
-        "a": "<b>1TB ou 2TB est recommandé.</b> Le chipset Intel Arc G3 Extreme cible des titres AAA exigeants avec de grandes installations riches en textures, donc tout ce qui est plus petit se remplit rapidement."
-      },
-      {
-        "q": "L'OneXPlayer 3 a-t-il besoin d'une carte rapide classée A2 ?",
-        "a": "<b>Oui.</b> L'écran AMOLED 144Hz de 8,8 pouces nécessite un streaming de textures rapide et soutenu. Une carte bon marché sans performance applicative A2 causera des micro-saccades pendant le jeu."
-      },
-      {
-        "q": "Quelle est la capacité microSD maximale prise en charge ?",
-        "a": "<b>Jusqu'à 2TB.</b> Le lecteur de carte prend en charge les capacités microSDXC standard, donc toute carte 2TB A2/V30 d'une marque réputée est entièrement compatible."
-      }
-    ],
-    "relatedDevices": [
-      "rog-xbox-ally-x",
-      "lenovo-legion-go-gen-2",
-      "msi-claw-8-ex-ai-plus"
-    ],
-    "notes": "Launching globally June 2026 with Intel's Arc G3 Extreme chipset and an 8.8-inch 144Hz AMOLED display. First OneXPlayer entry in this dataset. No dedicated product photo yet — uses the generic gaming-handheld placeholder image.",
-    "imageUrl": "/img/devices/gaming-consoles/onexplayer-3.webp"
-  },
-  {
-    "id": "nintendo-switch-oled",
-    "name": "Nintendo Switch OLED",
-    "category": "gaming-handhelds",
-    "slug": "nintendo-switch-oled",
-    "searchTerms": [
-      "nintendo switch oled carte sd",
-      "switch oled carte sd",
-      "switch oled carte mémoire",
-      "switch oled stockage"
-    ],
-    "sdCard": {
-      "type": "microSD, microSDHC, microSDXC",
-      "minSpeed": "Class 10 / UHS-I",
-      "minWriteSpeed": "Non spécifié",
-      "recommendedCapacity": [
-        "256GB",
-        "512GB",
-        "1024GB"
-      ],
-      "maxCapacity": "2TB",
-      "testedMaxCapacity": "2TB"
-    },
-    "whySpecs": "Le modèle Switch OLED dispose de 64GB de stockage interne, ce qui le rend idéal pour les utilisateurs téléchargeant de grandes bibliothèques de jeux numériques. <b>Comme tous les modèles Switch originaux, l'OLED est limitée aux vitesses UHS-I (~104MB/s)</b>. Les cartes UHS-II et SD Express sont rétrocompatibles et fonctionneront, mais seront bridées à la vitesse UHS-I, donc elles n'offrent aucun avantage sur cet appareil. Des cartes microSD classées V30 de marques reconnues sont recommandées pour des performances constantes. Toutes les cartes microSD SanDisk de marque Nintendo (Zelda, Pokémon, Mario, etc.) fonctionnent parfaitement sur le modèle OLED. Des cartes microSDXC de 2TB sont disponibles dans le commerce et vérifiées comme fonctionnelles.",
-    "recommendedBrands": [
-      {
-        "id": "kingston-canvas-go-plus"
-      },
-      {
-        "id": "samsung-evo-select-microsd"
-      },
-      {
-        "id": "sandisk-extreme-microsd"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Dois-je acheter des cartes UHS-II pour l'OLED ?",
-        "a": "<b>Non, les cartes UHS-II n'offrent aucun avantage de performance à la Switch OLED</b>. Elles sont rétrocompatibles et fonctionneront, mais la console ne prend en charge que les vitesses UHS-I (~104MB/s), donc les cartes UHS-II seront bridées à la vitesse UHS-I, rendant le surcoût inutile."
-      },
-      {
-        "q": "Puis-je utiliser la carte de ma Switch originale ?",
-        "a": "<b>Oui, n'importe quelle carte microSD de la Switch originale fonctionne parfaitement sur le modèle OLED</b>. Tous les modèles Switch partagent la même architecture de stockage et compatibilité de carte."
-      },
-      {
-        "q": "Quelle capacité devrais-je choisir ?",
-        "a": "<b>L'écran plus grand de l'OLED encourage à télécharger davantage de jeux</b>. 512GB ou 1TB est fortement recommandé, car les 64GB de stockage interne plus une petite carte se remplissent rapidement avec les titres modernes."
-      }
-    ],
-    "relatedDevices": [
-      "nintendo-switch",
-      "nintendo-switch-lite",
-      "nintendo-switch-2"
-    ],
-    "notes": "OLED users typically purchase larger cards due to increased digital game library usage. UHS-I only (~104MB/s), despite higher internal storage."
-  },
-  {
-    "id": "nintendo-switch-lite",
-    "name": "Nintendo Switch Lite",
-    "category": "gaming-handhelds",
-    "slug": "nintendo-switch-lite",
-    "searchTerms": [
-      "nintendo switch lite carte sd",
-      "switch lite carte mémoire",
-      "switch lite stockage"
-    ],
-    "sdCard": {
-      "type": "microSD, microSDHC, microSDXC",
-      "minSpeed": "Class 10 / UHS-I",
-      "minWriteSpeed": "Non spécifié",
       "recommendedCapacity": [
         "128GB",
         "256GB"
       ],
-      "maxCapacity": "2TB",
-      "testedMaxCapacity": "2TB"
+      "maxCapacity": "2TB"
     },
-    "whySpecs": "La Switch Lite est la console portable exclusive de Nintendo, avec des capacités de stockage identiques aux modèles standard et OLED. <b>Elle est limitée aux vitesses UHS-I (~104MB/s)</b>. Les cartes UHS-II et SD Express sont rétrocompatibles et fonctionneront, mais seront bridées à la vitesse UHS-I, donc elles n'offrent aucun avantage ici. Comme la Lite est souvent utilisée en voyage et en jeu portable, une carte de marque fiable V30 est essentielle pour éviter la corruption des données pendant le transport. Toutes les cartes microSD SanDisk de marque Nintendo (Zelda, Pokémon, Mario, etc.) fonctionnent parfaitement sur la Switch Lite. Des cartes microSDXC de 2TB sont disponibles dans le commerce et vérifiées comme fonctionnelles.",
+    "whySpecs": "La caractéristique déterminante du RG Cube est son écran de 3,95 pouces au format 1:1, tournant sous Android 13 sur un processeur Unisoc T820. L'écran carré en fait la machine de référence pour les systèmes à double écran comme la DS et la 3DS, ainsi que les titres rétro classiques 8 et 16 bits. Les anciennes ROMs ayant des tailles de fichier minuscules, une carte de 128GB est l'idéal pour cette communauté — les puristes du rétro n'ont généralement pas besoin de la capacité 1TB+ que demandent les appareils orientés PS2/Switch, mais ils ont besoin d'une fiabilité de marque premium pour éviter de corrompre des centaines de sauvegardes dans une grande bibliothèque organisée.",
     "recommendedBrands": [
       {
-        "id": "samsung-evo-select-microsd"
+        "id": "sandisk-ultra-microsd",
+        "note": "Choix fiable pour les bibliothèques rétro et l'intégrité des sauvegardes"
       },
+      {
+        "id": "samsung-evo-select-microsd",
+        "note": "Alternative de confiance, largement disponible en 128GB/256GB"
+      },
+      {
+        "id": "kingston-canvas-go-plus",
+        "note": "Option notée A1 pour une navigation fluide des menus Android"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Pourquoi le RG Cube a-t-il un écran carré ?",
+        "a": "<b>L'écran de 3,95 pouces au format 1:1 est conçu spécifiquement pour les systèmes à double écran comme la Nintendo DS et la 3DS</b>, qui affichent les deux écrans empilés verticalement sans letterboxing ni déformation. Il convient également bien aux jeux classiques 8 et 16 bits avec une résolution native carrée ou quasi carrée."
+      },
+      {
+        "q": "Ai-je besoin d'une carte microSD de 1TB pour le RG Cube ?",
+        "a": "<b>Non, la plupart des utilisateurs n'en ont pas besoin.</b> Contrairement aux consoles Android orientées PS2/Switch, le public principal du RG Cube joue à des titres DS, 3DS et rétro classiques de petite taille. Une carte de 128GB est l'idéal pratique — privilégiez une marque premium fiable plutôt qu'une capacité brute pour protéger les sauvegardes."
+      },
+      {
+        "q": "Quelle marque de carte microSD est la meilleure pour la fiabilité des sauvegardes sur le RG Cube ?",
+        "a": "<b>Restez fidèle à des marques établies comme SanDisk, Samsung ou Kingston.</b> Les frontends d'émulation rétro stockent des centaines de sauvegardes, et une carte corrompue peut effacer la progression de toute une bibliothèque. Évitez les cartes sans marque même si elles annoncent une grande capacité."
+      }
+    ],
+    "relatedDevices": [
+      "anbernic-rg556",
+      "nintendo-3ds-xl",
+      "miyoo-mini-plus"
+    ],
+    "notes": "Niche but distinctive 1:1 aspect ratio square-screen handheld. Lower search volume than mainstream Anbernic devices, but fills a content gap for the DS/3DS dual-screen emulation community.",
+    "imageUrl": "/img/devices/gaming-consoles/anbernic-rg-cube.webp"
+  },
+  {
+    "id": "acer-predator-atlas-8",
+    "name": "Acer Predator Atlas 8",
+    "category": "gaming-handhelds",
+    "slug": "acer-predator-atlas-8",
+    "metaDescription": "Les meilleures cartes microSD pour l'Acer Predator Atlas 8 — sélection UHS-II V60/V90 pour la console portable Windows haut de gamme d'Acer.",
+    "searchTerms": [
+      "carte sd acer predator atlas 8",
+      "microsd predator atlas 8",
+      "extension stockage acer predator atlas 8",
+      "meilleure carte sd predator atlas 8"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II",
+      "minSpeed": "V60 / V90",
+      "minWriteSpeed": "60 Mo/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "Le porte-étendard Predator d'Acer associe un écran à haute fréquence de rafraîchissement à un lecteur de cartes UHS-II capable de suivre une véritable ludothèque PC sous Windows. Comme les jeux AAA installés directement sur la carte microSD dépassent facilement 100 Go chacun, c'est la combinaison des accès aléatoires A2 et du débit séquentiel V60/V90 qui détermine si les textures se chargent proprement ou si le jeu saccade lors des changements de scène rapides. Une carte UHS-I d'entrée de gamme fonctionne, mais devient le goulot d'étranglement dès que les données proviennent de la carte plutôt que du SSD interne.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-v60",
+        "note": "Véritables performances UHS-II V60 pour le streaming d'assets AAA"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd",
+        "note": "Gamme UHS-II Gold, très bonnes vitesses d'écriture soutenues"
+      },
+      {
+        "id": "kingston-canvas-react-plus-microsd",
+        "note": "Option UHS-II V90 haut de gamme pour un maximum de marge"
+      },
+      {
+        "id": "sandisk-extreme-pro-microsd-2tb",
+        "note": "UHS-I et non UHS-II, mais seule option de cette liste à atteindre les 2 To maximum"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Faut-il une carte UHS-II pour le Predator Atlas 8 ?",
+        "a": "<b>Non, le port est rétrocompatible avec les cartes UHS-I</b>, mais vous laisserez de vraies performances de côté. Le lecteur de l'Atlas 8 exploitant toute la bande passante UHS-II, une carte V60 ou V90 réduit nettement les temps de chargement quand vous jouez à des titres AAA directement depuis la carte microSD plutôt que depuis le SSD interne."
+      },
+      {
+        "q": "Quelle capacité choisir pour le Predator Atlas 8 ?",
+        "a": "<b>512 Go est le minimum pratique, et 1 To convient mieux à une véritable ludothèque PC.</b> Les installations AAA modernes dépassent régulièrement 100 Go : en dessous, la carte est pleine après une poignée de jeux."
+      }
+    ],
+    "relatedDevices": [
+      "asus-rog-ally-x",
+      "rog-xbox-ally-x",
+      "lenovo-legion-go-gen-2"
+    ],
+    "notes": "Acer's entry into the premium Windows handheld space, competing directly with the ROG Ally X and Legion Go series. UHS-II microSD reader is the primary expansion path since internal storage upgrades require opening the chassis.",
+    "imageUrl": "/img/devices/gaming-consoles/acer-predator-atlas-8.webp"
+  },
+  {
+    "id": "retroid-pocket-g2",
+    "name": "Retroid Pocket G2",
+    "category": "gaming-handhelds",
+    "slug": "retroid-pocket-g2",
+    "metaDescription": "Les meilleures cartes microSD pour la Retroid Pocket G2 — sélection UHS-I certifiée A2 pour une émulation Android fluide.",
+    "searchTerms": [
+      "carte sd retroid pocket g2",
+      "microsd rp g2",
+      "stockage retroid pocket g2",
+      "meilleure carte microsd retroid pocket g2"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 Mo/s",
+      "minAppPerformance": "A2 (recommandé)",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB (théorique)"
+    },
+    "whySpecs": "La Pocket G2 rejoint la Pocket 6 dans la gamme Android de Retroid, orientée vers l'émulation PS2, GameCube et Switch. Ces bibliothèques de ROM et d'ISO sont bien plus volumineuses que les collections 8/16 bits : une carte évaluée uniquement sur ses débits séquentiels ne suffit donc pas. Ce sont les accès aléatoires certifiés A2 qui gardent la navigation dans les menus et le chargement des jeux fluides lorsque le système et les jeux résident tous deux sur la carte microSD. Le V30 couvre quant à lui l'écriture soutenue lors du téléchargement et de la copie de gros fichiers.",
+    "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
       },
       {
-        "id": "lexar-play-microsd"
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
       }
     ],
     "faq": [
       {
-        "q": "Le slot SD de la Switch Lite est-il plus lent que sur les autres modèles ?",
-        "a": "<b>Non, la Switch Lite a des capacités de lecture/écriture identiques aux modèles Switch standard et OLED</b>. Toutes les consoles de la famille Switch partagent la même interface matérielle microSD UHS-I, sans différence de vitesse."
+        "q": "La certification A2 est-elle importante pour la Retroid Pocket G2 ?",
+        "a": "<b>Oui.</b> Quand les applications Android, les lanceurs personnalisés et les fichiers de jeu tournent tous depuis la carte microSD, ce sont les IOPS aléatoires de la norme A2 qui gardent les menus et les émulateurs réactifs. Une carte sans A2 paraîtra nettement molle, même si ses débits séquentiels semblent corrects sur le papier."
       },
       {
-        "q": "Quelle capacité devrais-je choisir pour la Lite ?",
-        "a": "<b>128GB à 256GB est idéal pour la plupart des utilisateurs de Switch Lite</b>. La bibliothèque plus réduite et la nature portable de la Lite conviennent à des collections de jeux plus ciblées, contrairement aux utilisateurs OLED qui ont tendance à beaucoup télécharger."
+        "q": "Quelle capacité de stockage faut-il sur la Pocket G2 ?",
+        "a": "<b>512 Go constitue une base solide, mais 1 To est recommandé si vous émulez des titres PS2, GameCube ou Switch.</b> Les fichiers de ces systèmes sont bien plus lourds que les ROM rétro classiques et rempliront vite une carte plus petite."
       }
     ],
     "relatedDevices": [
-      "nintendo-switch",
-      "nintendo-switch-oled",
-      "nintendo-switch-2"
+      "retroid-pocket-6",
+      "retroid-pocket-5",
+      "ayn-odin-3-odin-2-portal"
     ],
-    "notes": "Identical storage architecture to other Switch models. UHS-I only (~104MB/s). 128GB-256GB is the sweet spot for Lite's typical usage pattern."
+    "notes": "Part of Retroid's current Android handheld lineup alongside the Pocket 6 and Pocket Mini. A2 + U3 + V30 combination recommended for optimal performance."
   },
   {
-    "id": "nintendo-switch-2",
-    "name": "Nintendo Switch 2",
+    "id": "ayaneo-pocket-ds",
+    "name": "AYANEO Pocket DS",
     "category": "gaming-handhelds",
-    "slug": "nintendo-switch-2",
+    "slug": "ayaneo-pocket-ds",
+    "metaDescription": "Les meilleures cartes microSD pour l'AYANEO Pocket DS — sélection fiable pour cette console Android à double écran dédiée à l'émulation DS et 3DS.",
     "searchTerms": [
-      "nintendo switch 2 carte sd",
-      "switch 2 carte sd",
-      "switch 2 stockage",
-      "sd express switch 2",
-      "switch 2 microsd express",
-      "switch 2 exigences carte sd",
-      "switch 2 compatibilité carte sd"
+      "carte sd ayaneo pocket ds",
+      "microsd ayaneo pocket ds",
+      "stockage console double écran ayaneo",
+      "meilleure carte sd ayaneo pocket ds"
     ],
     "sdCard": {
-      "type": "microSDXC UHS-I (rétrocompatible) ou microSD Express (recommandé)",
-      "minSpeed": "UHS-I U3/A2 (standard) ou microSD Express basé sur PCIe",
-      "minWriteSpeed": "30 MB/s",
+      "type": "microSD UHS-I",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 Mo/s",
+      "minAppPerformance": "A1",
       "recommendedCapacity": [
-        "512GB",
-        "1TB",
-        "2TB"
+        "128GB",
+        "256GB"
       ],
-      "maxCapacity": "2TB (microSDXC) / 2TB+ (microSD Express SDUC)",
-      "testedMaxCapacity": "2TB"
+      "maxCapacity": "2TB"
     },
-    "whySpecs": "<b>Bonne nouvelle : vos cartes microSD Switch existantes fonctionnent toujours sur Switch 2.</b> Toutes les cartes microSDXC standard UHS-I sont rétrocompatibles — vous pouvez jouer à tous les jeux (originaux et Switch 2) sans acheter de nouvelle carte. Cependant, la Switch 2 introduit également un <b>slot microSD Express</b> qui prend en charge les cartes Express basées sur PCIe pour un chargement nettement plus rapide (jusqu'à 800 MB/s contre ~100 MB/s pour l'UHS-I). Le microSD Express est optionnel mais recommandé si vous achetez une nouvelle carte. Important : <b>les cartes microSD Express ne sont PAS rétrocompatibles avec la Switch originale, la Switch Lite ou la Switch OLED</b> — ces appareils ne prennent en charge que l'UHS-I.",
+    "whySpecs": "La Pocket DS est la vision d'AYANEO d'une console à clapet et double écran, conçue spécifiquement pour l'émulation Nintendo DS et 3DS, sous Android et avec un unique port microSD. Comme les ROM DS et 3DS sont légères comparées aux bibliothèques PS2 ou Switch, la capacité brute n'est pas la priorité ici : 128 à 256 Go couvrent confortablement une collection complète et soignée. Ce qui compte davantage, c'est une carte de marque fiable et correctement classée A1, car les émulateurs à double écran écrivent des sauvegardes d'état en permanence et une carte capricieuse est le moyen le plus rapide de perdre sa progression.",
     "recommendedBrands": [
       {
-        "id": "samsung-evo-select-microsd",
-        "note": "microSDXC standard — fonctionne sur Switch 2 et tous les modèles Switch originaux"
+        "id": "sandisk-ultra-microsd",
+        "note": "Choix fiable pour l'intégrité des sauvegardes d'état"
       },
       {
-        "id": "sandisk-extreme-microsd",
-        "note": "UHS-I U3/A2 standard — rapide, fiable, rétrocompatible"
+        "id": "samsung-evo-select-microsd",
+        "note": "Alternative éprouvée, largement disponible en 128 et 256 Go"
+      },
+      {
+        "id": "kingston-canvas-go-plus",
+        "note": "Option certifiée A2 pour une navigation Android plus fluide"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Faut-il une carte de 1 To pour l'AYANEO Pocket DS ?",
+        "a": "<b>Non, ce ne sera pas nécessaire pour la plupart des utilisateurs.</b> Les ROM DS et 3DS sont légères face aux fichiers PS2 ou Switch : 128 à 256 Go constituent donc le point idéal en pratique. Privilégiez une carte de marque fiable plutôt que la capacité brute."
+      },
+      {
+        "q": "Pourquoi la fiabilité prime-t-elle ici sur la vitesse ?",
+        "a": "<b>Les émulateurs à double écran écrivent des sauvegardes d'état en continu</b>, et une carte de mauvaise qualité ou contrefaite est la cause la plus fréquente de sauvegardes corrompues sur ce type de console. Restez sur des marques établies, même si les exigences de vitesse sont modestes."
+      }
+    ],
+    "relatedDevices": [
+      "anbernic-rg-cube",
+      "nintendo-3ds-xl",
+      "retroid-pocket-g2"
+    ],
+    "notes": "Niche dual-screen clamshell aimed squarely at the DS/3DS emulation community. Speed requirements are modest; reliability and save-state integrity are the real selling points to emphasize.",
+    "imageUrl": "/img/devices/gaming-consoles/ayaneo-pocket-ds.webp"
+  },
+  {
+    "id": "ayn-thor",
+    "name": "AYN Thor",
+    "category": "gaming-handhelds",
+    "slug": "ayn-thor",
+    "metaDescription": "Les meilleures cartes microSD pour l'AYN Thor — sélection A2 haute capacité pour l'émulation PS2, GameCube et Switch.",
+    "searchTerms": [
+      "carte sd ayn thor",
+      "microsd ayn thor",
+      "stockage ayn thor",
+      "meilleure microsd pour ayn thor"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 Mo/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "1TB+ (2TB théorique)"
+    },
+    "whySpecs": "La Thor d'AYN se place aux côtés de l'Odin 3 et de l'Odin 2 Portal comme console Android haut de gamme et puissante, conçue pour l'émulation exigeante, y compris les titres PS2, GameCube et Switch. Les fichiers de ces systèmes écrasent les ROM 8/16 bits classiques : un stockage certifié A2 et de grande capacité compte donc dès le premier jour. Une carte de 128 Go se remplit presque immédiatement, et une carte sans bonnes performances en accès aléatoire saccadera dans les émulateurs les plus lourds, quels que soient ses débits séquentiels affichés.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-microsd-2tb",
+        "note": "Carte A2/V30 de grande capacité pour vastes ludothèques d'émulation, disponible jusqu'au maximum théorique de 2 To"
+      },
+      {
+        "id": "samsung-pro-plus-microsd",
+        "note": "Alternative A2 haut de gamme pour des performances d'émulation constantes"
       },
       {
         "id": "lexar-professional-1000x-microsd",
-        "note": "microSD Express — pour des vitesses de chargement maximales sur Switch 2"
+        "note": "Option UHS-II de premier plan pour un maximum de marge"
       }
     ],
     "faq": [
       {
-        "q": "Puis-je utiliser ma vieille carte SD de Switch dans la Nintendo Switch 2 ?",
-        "a": "<b>Oui — vos cartes microSD existantes fonctionnent sur Switch 2.</b> Les cartes microSDXC standard UHS-I sont entièrement rétrocompatibles avec la Switch 2. Vous pouvez jouer à tous vos jeux sans acheter de nouvelle carte. La Switch 2 prend également en charge le standard microSD Express plus rapide pour des temps de chargement améliorés, mais c'est optionnel, pas obligatoire."
+        "q": "128 Go suffisent-ils pour l'AYN Thor ?",
+        "a": "<b>Non, pas très longtemps.</b> Les ROM Switch et PS2 pèsent plusieurs gigaoctets par titre : une carte de 128 Go devient vite un goulot d'étranglement. 512 Go est le minimum pratique et 1 To est recommandé pour une véritable collection."
       },
       {
-        "q": "Qu'est-ce que le microSD Express et en ai-je besoin pour la Switch 2 ?",
-        "a": "<b>Le microSD Express utilise la technologie PCIe pour des vitesses allant jusqu'à 800 MB/s — contre ~100 MB/s pour l'UHS-I standard.</b> Il offre un chargement nettement plus rapide dans les jeux Switch 2. Cependant, vous n'en avez pas besoin — vos cartes microSD UHS-I existantes fonctionnent parfaitement. En 2026, les cartes microSD Express restent rares et coûteuses. N'en envisagez une que si vous achetez une nouvelle carte et souhaitez la meilleure performance possible."
-      },
-      {
-        "q": "Une carte microSD Express fonctionnera-t-elle sur ma Switch originale ou Switch OLED ?",
-        "a": "<b>Non. Les cartes microSD Express ne sont PAS rétrocompatibles avec la Switch originale, la Switch Lite ou la Switch OLED.</b> Ces consoles ne prennent en charge que l'UHS-I. Si vous possédez plusieurs modèles Switch, optez pour une carte microSDXC UHS-I U3/A2 standard compatible avec tous."
-      },
-      {
-        "q": "Quelles spécifications microSD dois-je acheter pour la Switch 2 ?",
-        "a": "<b>Pour une carte microSD standard : UHS-I U3/A2 (même recommandation que pour la Switch originale). Pour le microSD Express : toute carte SD Express certifiée avec V30 ou plus rapide.</b> Pour la capacité, 512GB est un bon point de départ ; 1TB est idéal si vous téléchargez la majorité de votre bibliothèque numériquement."
+        "q": "Une carte microSD bon marché fonctionnera-t-elle pour l'émulation sur la Thor ?",
+        "a": "<b>Elle fonctionnera, mais attendez-vous à des saccades.</b> Le processeur puissant de la Thor encaisse l'émulation exigeante, mais une carte sans performances applicatives A2 bride les accès aléatoires et provoque des à-coups en jeu. Restez sur des cartes certifiées A2 de marques reconnues."
       }
     ],
     "relatedDevices": [
-      "nintendo-switch",
-      "nintendo-switch-oled",
-      "nintendo-switch-lite"
+      "ayn-odin-3-odin-2-portal",
+      "retroid-pocket-6",
+      "retroid-pocket-g2"
     ],
-    "notes": "Switch 2 is backward compatible with all standard UHS-I microSD cards from the original Switch. For maximum performance, microSD Express (PCIe) is supported and provides up to 8× faster loading. microSD Express cards are NOT compatible with original Switch models — buy UHS-I if you own both."
-  },
-  {
-    "id": "nintendo-3ds-xl",
-    "name": "Nintendo 3DS / New 3DS XL",
-    "category": "gaming-handhelds",
-    "slug": "nintendo-3ds-xl",
-    "searchTerms": [
-      "3ds carte sd",
-      "new 3ds xl carte sd",
-      "3ds carte mémoire",
-      "3ds xl stockage",
-      "nintendo 3ds carte sd"
-    ],
-    "sdCard": {
-      "type": "SDHC (officiellement jusqu'à 32GB, SDXC fonctionne officieusement)",
-      "minSpeed": "Class 10",
-      "minWriteSpeed": "Non spécifié",
-      "recommendedCapacity": [
-        "32GB",
-        "64GB",
-        "128GB"
-      ],
-      "maxCapacity": "128GB (officieux, nécessite un formatage FAT32)"
-    },
-    "whySpecs": "Nintendo prend officiellement en charge les cartes SDHC jusqu'à 32GB, mais les cartes SDXC jusqu'à 128GB (voire plus, bien que 128GB soit la limite pratique) fonctionnent parfaitement une fois formatées en FAT32. Les cartes Class 10 offrent un chargement de jeu et des téléchargements eShop plus rapides, améliorant l'expérience utilisateur globale. La Class 4 est obsolète ; la Class 10 est le minimum moderne.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-ultra-microsd"
-      },
-      {
-        "id": "kingston-canvas-select"
-      },
-      {
-        "id": "samsung-evo-select-microsd"
-      },
-      {
-        "id": "amazon-basics-microsd"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Puis-je utiliser une carte de 64GB ou 128GB même si Nintendo annonce un maximum de 32GB ?",
-        "a": "<b>Oui, mais vous devez d'abord la formater en FAT32.</b> Les cartes SDXC (64GB+) sont formatées en exFAT à l'origine, que la 3DS ne peut pas lire. Utilisez un ordinateur (Windows, Mac ou Linux) pour reformater la carte en FAT32, elle fonctionnera alors parfaitement sur votre 3DS."
-      },
-      {
-        "q": "Ai-je besoin d'une carte microSD ou d'une carte SD standard ?",
-        "a": "<b>Les modèles 3DS et 3DS XL originaux utilisent des cartes SD au format standard.</b> <b>Les modèles New Nintendo 3DS et New Nintendo 3DS XL utilisent des cartes microSD.</b> Il est crucial de vérifier votre modèle spécifique avant l'achat. Les modèles 'New' nécessitent souvent un petit tournevis pour accéder au slot microSD."
-      }
-    ],
-    "relatedDevices": [
-      "nintendo-switch",
-      "nintendo-switch-lite",
-      "anbernic-rg353v",
-      "anbernic-rg-cube"
-    ],
-    "notes": "Discontinued in 2020 but boasts a massive ongoing community for retro gaming and modding. High search volume is driven by enthusiasts looking to expand their game libraries and utilize custom firmware."
+    "notes": "Premium Android emulation tier alongside the Odin 3/Odin 2 Portal — users skew toward higher-margin 512GB-1TB A2 cards rather than budget picks given the file sizes involved in Switch/PS2/GameCube emulation."
   }
 ]

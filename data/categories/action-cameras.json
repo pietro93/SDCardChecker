@@ -12,16 +12,17 @@
     ],
     "sdCard": {
       "type": "microSD UHS-I (UHS-II Compatible)",
-      "minSpeed": "V30",
+      "minSpeed": "A2 / V30",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "128GB",
         "256GB",
-        "512GB"
+        "512GB",
+        "1TB"
       ],
-      "maxCapacity": "512GB"
+      "maxCapacity": "1TB"
     },
-    "whySpecs": "Shoots 5.3K at high frame rates. V30 ensures 30MB/s sustained write speed needed to prevent dropped frames or corrupted files. GoPro's 5.3K bitrate (~60-80 Mbps) requires reliable, fast cards for stable recording.",
+    "whySpecs": "Shoots 5.3K60, 4K120 and 2.7K240. <b>V30 is the floor, not a nice-to-have</b> — it guarantees 30 MB/s of sustained write, which comfortably covers the Hero 13's High bitrate setting of roughly 120 Mbps (about 15 MB/s) with enough headroom that a card slowing down mid-clip won't drop frames or corrupt the file. GoPro's current guidance also asks for an <b>A2</b> rating on top of V30, and the Hero 13 supports cards up to <b>1TB</b>, so there's no reason to cap yourself at 512GB if you shoot long days.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -43,7 +44,11 @@
       },
       {
         "q": "What's the fastest card I should get?",
-        "a": "<b>V30 speed class is sufficient for standard GoPro Hero 13 recording</b>. V60 or faster cards are useful only for professional multi-camera workflows, simultaneous backup recording, or future-proofing for newer, more demanding cameras."
+        "a": "<b>V30 speed class is sufficient for standard GoPro Hero 13 recording</b>. V60 or faster cards are useful only for professional multi-camera workflows, simultaneous backup recording, or future-proofing for newer, more demanding cameras. The Hero 13 has a UHS-I slot, so a UHS-II card will work but will simply run at UHS-I speeds in the camera — you'd only see the extra speed when offloading footage in a UHS-II reader."
+      },
+      {
+        "q": "Does the GoPro Hero 13 support a 1TB microSD card?",
+        "a": "<b>Yes — GoPro supports cards up to 1TB on the Hero 13.</b> Older guidance capping GoPro at 512GB is out of date. A 1TB card is worth it if you shoot all-day sessions and don't want to swap cards in the field; otherwise two 256GB or 512GB cards are the safer buy, because a single failed card takes down everything you shot rather than half of it."
       },
       {
         "q": "How often should I replace my SD card?",
@@ -54,9 +59,10 @@
       "gopro-hero-12",
       "gopro-hero-max",
       "gopro-hero-11-black",
+      "gopro-hero-14-black",
       "dji-mini-4-pro"
     ],
-    "notes": "Same specs as Hero 12. Official GoPro tests show V30 cards optimal for 5.3K 60fps stability."
+    "notes": "Card requirements match Hero 12. Official GoPro guidance: A2/V30, up to 1TB."
   },
   {
     "id": "gopro-hero-12",
@@ -70,15 +76,17 @@
     ],
     "sdCard": {
       "type": "microSD UHS-I (UHS-II Compatible)",
-      "minSpeed": "V30",
+      "minSpeed": "A2 / V30",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "128GB",
-        "256GB"
+        "256GB",
+        "512GB",
+        "1TB"
       ],
-      "maxCapacity": "512GB"
+      "maxCapacity": "1TB"
     },
-    "whySpecs": "Shoots 5.3K video at various frame rates. V30 cards ensure 30MB/s sustained write speed. Critical for preventing dropped frames during high bitrate recording.",
+    "whySpecs": "Shoots 5.3K video at various frame rates, with a High bitrate setting of roughly 120 Mbps. V30 cards guarantee 30 MB/s of sustained write, which leaves comfortable headroom over that — the point isn't peak speed but that the card never dips below the camera's demand mid-clip, which is what causes dropped frames and corrupted files. GoPro's current guidance pairs V30 with an <b>A2</b> rating, and the Hero 12 handles cards up to <b>1TB</b>.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -105,11 +113,11 @@
       "gopro-hero-max",
       "gopro-hero-11-black"
     ],
-    "notes": "Official GoPro recommendation: V30 cards. Compatible with all GoPro Hero series."
+    "notes": "Official GoPro recommendation: A2/V30 cards, up to 1TB."
   },
   {
     "id": "gopro-hero-max",
-    "name": "GoPro Hero Max",
+    "name": "GoPro MAX",
     "category": "Action Cameras",
     "slug": "gopro-hero-max",
     "searchTerms": [
@@ -127,7 +135,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "Shoots 360-degree video and standard 4K. V30 ensures stable recording for both modes.",
+    "whySpecs": "Shoots 5.6K30 spherical video in 360 mode, and up to 1440p60 as a single-lens camera in HERO mode — note the MAX is <b>not</b> a 4K camera in HERO mode, which surprises people cross-shopping it against a Hero Black. 360 capture is the demanding mode: it's stitching two sensors into one high-bitrate stream, so V30's guaranteed 30 MB/s sustained write is what keeps long spherical clips from dropping frames. The MAX has a UHS-I slot and GoPro's approved-card list for it is more conservative than for current models, so stick to a well-known V30 card rather than the largest one you can find.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -149,15 +157,16 @@
       },
       {
         "q": "How much storage for 360 content?",
-        "a": "<b>In 360 mode, a 128GB microSD card provides approximately 1.5 hours of recording time</b>. Storage consumption is higher in 360 mode compared to standard video, so plan accordingly for extended 360 capture sessions."
+        "a": "<b>In 360 mode, a 128GB microSD card holds roughly 2.5 hours of footage.</b> Spherical capture combines two sensors into one stream, so it eats storage noticeably faster than HERO mode does — but on a long shoot the limit you hit first is usually battery life, not card space. A 256GB card comfortably covers a full day of intermittent 360 capture."
       }
     ],
     "relatedDevices": [
+      "gopro-max-2",
       "gopro-hero-13",
       "gopro-hero-12",
       "gopro-hero-11-black"
     ],
-    "notes": "360-degree camera. V30 important for both 360 and standard recording modes.",
+    "notes": "Original 2019 360 camera (correct product name is 'GoPro MAX', not 'Hero Max'). 5.6K30 in 360 mode, 1440p60 max in HERO mode. Kept at 512GB — GoPro's approved-card list for MAX is more conservative than for HERO12/13/Max 2, which go to 1TB.",
     "imageUrl": "/img/devices/action-cameras/gopro-hero-max.webp"
   },
   {
@@ -453,6 +462,7 @@
       }
     ],
     "relatedDevices": [
+      "dji-osmo-action-6",
       "gopro-hero-13",
       "insta360-ace-pro",
       "gopro-hero-12"
@@ -790,7 +800,8 @@
     "relatedDevices": [
       "gopro-hero-14-black",
       "insta360-ace-pro-2",
-      "dji-osmo-pocket-4"
+      "dji-osmo-pocket-4",
+      "dji-osmo-action-4"
     ],
     "notes": "DJI's current action camera flagship. DJI official minimum: U3/V30 UHS-I, max 2TB. 'Card Too Slow' is the most common support issue and always traces back to an underrated or counterfeit card.",
     "imageUrl": "/img/devices/action-cameras/dji-osmo-action-6.webp"

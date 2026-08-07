@@ -43,15 +43,44 @@ For each device, check:
 - [x] nintendo-switch-lite (gaming-handhelds.json) — audited 2026-07-17, no changes needed.
 - [x] nintendo-switch-oled (gaming-handhelds.json) — audited 2026-07-17, no changes needed.
 - [x] nintendo-switch-2 (gaming-handhelds.json) — audited 2026-07-17. FAQ claim "microSD Express cards are still rare and expensive" was stale (was accurate near launch, not by mid-2026) — updated to reflect wide retail availability (Samsung/SanDisk/PNY licensed cards at Target/Walmart/Best Buy) while still flagging the 2026 NAND shortage price increases. Backward-compatibility and speed claims (800MB/s Express vs ~100MB/s UHS-I) confirmed still accurate.
-- [ ] raspberry-pi-4-model-b (computing-and-tablets.json)
-- [ ] raspberry-pi-5 (computing-and-tablets.json)
-- [ ] gopro-hero-12 (action-cameras.json)
-- [ ] gopro-hero-13 (action-cameras.json)
-- [ ] gopro-hero-max (action-cameras.json)
-- [ ] dji-mini-4-pro (drones.json)
-- [ ] dji-mini-4k (drones.json)
-- [ ] dji-osmo-action-4 (action-cameras.json)
-- [ ] dji-mini-3 (drones.json)
+- [x] raspberry-pi-5 (computing-and-tablets.json) — audited 2026-08-07. Added SDR104/A2 command-queuing
+      details (Pi 5 is the first Pi where A2 actually matters — Pi 4's SD host never used command
+      queuing); bumped maxCapacity from "No official limit" to the real 2TB SDXC ceiling; added 2 FAQs;
+      fixed relatedDevices (was empty). Fixed a separate image-routing bug found while auditing: the
+      `getDeviceImageFallback()` map in `scripts/generator/helpers.js` pointed real product photos
+      (raspberry-pi-4-model-b.webp, -pi-3-model-b-plus.webp, -pi-zero-2-w.webp) at the generic
+      raspberry-placeholder.webp instead — fixed the map, unrelated to any specific device audit.
+- [x] raspberry-pi-4-model-b (computing-and-tablets.json) — audited 2026-08-07. whySpecs corrected: A2 is
+      not worth the premium on the Pi 4 specifically (the SD host doesn't support command queuing, so A2
+      performs like A1 here) — that nuance was missing and readers could easily overspend. Added FAQ on
+      why a faster card doesn't help past ~50MB/s on this board. maxCapacity bumped to 2TB SDXC ceiling.
+- [x] gopro-hero-12 (action-cameras.json) — audited 2026-08-07. maxCapacity was stale at 512GB; GoPro's
+      current guidance (already documented on the newer gopro-max-2 entry in this same file) is A2/V30
+      up to 1TB — updated sdCard, whySpecs, notes to match.
+- [x] gopro-hero-13 (action-cameras.json) — audited 2026-08-07. Same 512GB→1TB / A2 fix as Hero 12, plus
+      added a FAQ on UHS-I vs UHS-II slot behavior and a FAQ on the 1TB capacity change. Cross-linked
+      gopro-hero-14-black into relatedDevices (didn't exist when this device was last touched).
+- [x] gopro-hero-max (action-cameras.json) — audited 2026-08-07, found two factual errors: (1) whySpecs
+      claimed "standard 4K" but the original GoPro MAX tops out at 1440p60 in HERO mode (5.6K30 is
+      360-mode only) — corrected. (2) 360-mode recording-time FAQ understated capacity by more than half
+      (claimed 1.5hrs/128GB; actual bitrate math is ~2.5hrs). Also fixed the product name throughout the
+      site — it's "GoPro MAX", not "GoPro Hero Max" (the "Hero" prefix only applies to the mainline
+      cameras) — updated data/categories*, calculator-content.json, calculator-presets.json,
+      device-enrichment.json, and templates across all 5 locales.
+- [x] dji-mini-4-pro (drones.json) — audited 2026-08-07. whySpecs previously described only generic
+      "4K/60fps" but this drone's actual demanding modes are 4K/100 slow-mo and 10-bit D-Log M — rewrote
+      to name them and explain why V30 still covers them (headroom, not peak-vs-sustained confusion).
+      Added FAQ on high-frame-rate/D-Log M card needs. Fixed relatedDevices — was missing dji-mini-5-pro
+      and dji-mini-4k entirely.
+- [x] dji-mini-4k (drones.json) — audited 2026-08-07. maxCapacity was an outlier at 256GB vs 512GB on
+      every sibling Mini in the dataset (Mini 3, Mini 3 Pro) with no source cited for the lower number —
+      corrected to 512GB (DJI's actual published max) and reframed the FAQ around "you don't need that
+      much, not because you can't have it."
+- [x] dji-mini-3 (drones.json) — audited 2026-08-07, no changes needed (sdCard/whySpecs/FAQ already
+      accurate).
+- [x] dji-osmo-action-4 (action-cameras.json) — audited 2026-08-07, no content changes needed (already
+      detailed and accurate — U3/V30/2TB is correctly sourced to DJI's own spec). Only fix: cross-linked
+      the newer dji-osmo-action-6 into relatedDevices (didn't exist when this device was last touched).
 
 ## Tier 2 — Popular / homepage-featured + secondary GSC signal
 
