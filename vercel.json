@@ -12,6 +12,12 @@
       ]
     }
   ],
+  "rewrites": [
+    {
+      "source": "/ads.txt",
+      "destination": "https://adstxt.journeymv.com/sites/64f14515-ba63-41f9-be04-b71420407486/ads.txt"
+    }
+  ],
   "redirects": [
     {
       "source": "/devices/bambu-lab-x1-carbon",
