@@ -48,7 +48,7 @@ function generateGrowScript() {
     return `<!-- Grow Script -->
 <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo3YzE2YTcwYi1mNzdjLTQ0MWQtYjJmNi05MmEzZTMzNDc2Yjk=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
 <!-- Mediavine Script -->
-<script type="text/javascript" async="async" data-noptimize="1" data-cfasync="false" src="//scripts.scriptwrapper.com/tags/64f14515-ba63-41f9-be04-b71420407486.js"></script>`;
+<script type="text/javascript" async="async" data-noptimize="1" data-cfasync="false" src="//scripts.scriptwrapper.com/tags/7c16a70b-f77c-441d-b2f6-92a3e33476b9.js"></script>`;
 }
 
 function categoryLinks(locale, slugs, linkClass) {
