@@ -447,8 +447,12 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace("Hero 12 Black", "Hero 12");
 
     const titleStrings = labelsFor(DEVICE_TITLE_STRINGS, locale);
-    const title = titleStrings.title(device.name, device.sdCard.type);
-    const ogTitle = titleStrings.ogTitle(device.name, device.sdCard.type);
+    // customTitle is an English-only override for pages where the generic
+    // "{name} | {sdCard.type} Requirements" template buries the spec that
+    // actually drives CTR (e.g. a specific speed class or max capacity).
+    // Locales without a customTitle always fall back to the template.
+    const title = (locale === "en" && device.customTitle) || titleStrings.title(device.name, device.sdCard.type);
+    const ogTitle = (locale === "en" && device.customTitle) || titleStrings.ogTitle(device.name, device.sdCard.type);
     const twitterTitle = titleStrings.twitterTitle(device.name);
     const schemaHeadline = titleStrings.schemaHeadline(device.name, device.sdCard.type);
     const description = generateUniqueMetaDescription(device, brandNames, deviceIndex);

@@ -238,6 +238,7 @@
     "name": "DJI Mini 4K",
     "category": "Drones",
     "slug": "dji-mini-4k",
+    "customTitle": "Best SD Card for DJI Mini 4K (Max Size & V30 Speed Requirements)",
     "searchTerms": [
       "dji mini 4k sd card",
       "mini 4k microsd",
@@ -554,6 +555,7 @@
     ],
     "relatedDevices": [
       "potensic-atom-se",
+      "potensic-atom-2",
       "dji-mini-4k",
       "dji-mini-2-se"
     ],
@@ -597,11 +599,64 @@
     ],
     "relatedDevices": [
       "potensic-atom",
+      "potensic-atom-2",
       "holy-stone-hs720",
       "dji-mini-2-se"
     ],
     "notes": "A budget-friendly 4K drone. Users often buy cheap, incompatible cards; emphasize the need for V30.",
     "imageUrl": "/img/devices/drones/potensic-atom-se.webp"
+  },
+  {
+    "id": "potensic-atom-2",
+    "name": "Potensic Atom 2",
+    "category": "Drones",
+    "slug": "potensic-atom-2",
+    "searchTerms": [
+      "potensic atom 2 sd card",
+      "potensic atom 2 sd card size",
+      "potensic atom 2 microsd",
+      "atom 2 drone memory card"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30 / U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "The Atom 2 steps up to a 1/2\" Sony CMOS sensor shooting 48MP photos and 4K/30fps HDR video, a heavier data load than the original Atom's sensor. Potensic explicitly recommends U3/V30 or higher — a slower card causes the same dropped-frame and failed-save errors seen on the first-gen Atom, since HDR processing pushes sustained bitrate higher than standard 4K.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What size SD card does the Potensic Atom 2 need?",
+        "a": "<b>128GB is the sweet spot, and 256GB is the practical maximum.</b> The Atom 2's 48MP photos and 4K HDR video fill a card faster than the original Atom, but the drone's firmware tops out at 256GB — larger cards aren't recognized."
+      },
+      {
+        "q": "Does the Potensic Atom 2 require a V30 card?",
+        "a": "<b>Yes.</b> Potensic specifies U3/V30 or faster for the 4K HDR mode. Cards below that rating are the most common cause of recordings that stop mid-flight or fail to save."
+      }
+    ],
+    "relatedDevices": [
+      "potensic-atom",
+      "potensic-atom-se",
+      "dji-mini-4k"
+    ],
+    "notes": "Second-gen Atom with a bigger 1/2\" sensor and HDR mode; launched 2025/2026. Search volume for 'potensic atom 2 sd card' and 'potensic atom 2 sd card size' is surging — high-priority gap fill.",
+    "imageUrl": "/img/devices/drones/potensic-atom-2.webp"
   },
   {
     "id": "skydio-2-plus",

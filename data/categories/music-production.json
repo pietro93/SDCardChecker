@@ -50,12 +50,66 @@
       }
     ],
     "relatedDevices": [
+      "akai-mpc-live-iii",
       "akai-mpc-x",
       "akai-mpc-one-plus",
       "roland-sp-404mkii"
     ],
     "notes": "Battery-powered standalone MPC, used in actual live sets. Streams audio from the card in real time, so card speed directly affects dropout risk during performance — the anchor device for this category's framing.",
     "imageUrl": "/img/devices/music-production/akai-mpc-live-ii.webp"
+  },
+  {
+    "id": "akai-mpc-live-iii",
+    "name": "Akai MPC Live III",
+    "category": "Music Production",
+    "slug": "akai-mpc-live-iii",
+    "searchTerms": [
+      "akai mpc live 3 sd card",
+      "mpc live iii sd card",
+      "best sd card for mpc live 3",
+      "mpc live 3 max sd card size"
+    ],
+    "sdCard": {
+      "type": "SD / SDHC / SDXC (Full Size)",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2 (Recommended)",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "The Live III keeps the Live II's real-time disk-streaming architecture but ships with 128GB of built-in storage and an 8-core processor, so it's built to run larger sample libraries and heavier projects than its predecessor. The SD slot is still the simplest way to expand beyond the internal drive or carry a library between machines, and because samples stream off the card live during a set, the same U3/V30 sustained-speed floor applies — a card that can't keep up causes audible dropouts, not just a slow load screen.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs1"
+      },
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the maximum SD card size for the Akai MPC Live III?",
+        "a": "<b>Up to 2TB,</b> the same ceiling as the Live II. Format the card to exFAT for cards over 32GB, or format it inside the MPC, for the most reliable results."
+      },
+      {
+        "q": "Do I still need an SD card if the Live III has 128GB built in?",
+        "a": "<b>Only if your sample library or project set exceeds 128GB.</b> The internal drive covers most solo setups, but an SD card (or the SATA bay) is the easiest way to add capacity or move a library between machines without wiping the internal storage."
+      }
+    ],
+    "relatedDevices": [
+      "akai-mpc-live-ii",
+      "akai-mpc-x",
+      "akai-mpc-one-plus"
+    ],
+    "notes": "Released 2026, successor to the Live II with 128GB internal storage and an 8-core processor. Keep the sample-streaming framing from Live II — the SD slot's role hasn't changed, just the internal storage baseline.",
+    "imageUrl": "/img/devices/music-production/akai-mpc-live-iii.webp"
   },
   {
     "id": "akai-mpc-one-plus",

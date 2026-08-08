@@ -12,12 +12,6 @@
       ]
     }
   ],
-  "rewrites": [
-    {
-      "source": "/ads.txt",
-      "destination": "https://adstxt.journeymv.com/sites/64f14515-ba63-41f9-be04-b71420407486/ads.txt"
-    }
-  ],
   "redirects": [
     {
       "source": "/devices/bambu-lab-x1-carbon",
@@ -715,6 +709,11 @@
       "permanent": true
     },
     {
+      "source": "/devices/potensic-atom-2",
+      "destination": "/categories/drones/potensic-atom-2",
+      "permanent": true
+    },
+    {
       "source": "/devices/skydio-2-plus",
       "destination": "/categories/drones/skydio-2-plus",
       "permanent": true
@@ -987,6 +986,11 @@
     {
       "source": "/devices/akai-mpc-live-ii",
       "destination": "/categories/music-production/akai-mpc-live-ii",
+      "permanent": true
+    },
+    {
+      "source": "/devices/akai-mpc-live-iii",
+      "destination": "/categories/music-production/akai-mpc-live-iii",
       "permanent": true
     },
     {
@@ -1810,6 +1814,11 @@
       "permanent": true
     },
     {
+      "source": "/devices/potensic-atom-2/",
+      "destination": "/categories/drones/potensic-atom-2/",
+      "permanent": true
+    },
+    {
       "source": "/devices/skydio-2-plus/",
       "destination": "/categories/drones/skydio-2-plus/",
       "permanent": true
@@ -2082,6 +2091,11 @@
     {
       "source": "/devices/akai-mpc-live-ii/",
       "destination": "/categories/music-production/akai-mpc-live-ii/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/akai-mpc-live-iii/",
+      "destination": "/categories/music-production/akai-mpc-live-iii/",
       "permanent": true
     },
     {
