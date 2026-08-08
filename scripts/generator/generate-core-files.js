@@ -317,6 +317,37 @@ writeFile(path.join(distPath, "404.html"), page404Html
 }
 
 /**
+ * Generate a plain-text list of every English device page at /devices-list.txt, sorted by
+ * category then name, for quick copy/paste reference (a text list of covered devices was
+ * previously only produced ad hoc via a one-off script).
+ */
+function generateDevicesListTxt(allDevices, distPath) {
+  const today = new Date().toISOString().split("T")[0];
+  const byCategory = new Map();
+  allDevices.forEach((d) => {
+    if (!byCategory.has(d.category)) byCategory.set(d.category, []);
+    byCategory.get(d.category).push(d.name);
+  });
+
+  const lines = [
+    `# SD Card Checker — Devices Covered (English)`,
+    `# Generated: ${today}`,
+    `# Total: ${allDevices.length} devices across ${byCategory.size} categories`,
+    ``,
+  ];
+  [...byCategory.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .forEach(([category, names]) => {
+      lines.push(`## ${category} (${names.length})`);
+      names.sort((a, b) => a.localeCompare(b)).forEach((name) => lines.push(name));
+      lines.push(``);
+    });
+
+  writeFile(path.join(distPath, "devices-list.txt"), lines.join("\n"));
+  console.log(`  ✓ devices-list.txt: ${allDevices.length} devices`);
+}
+
+/**
 * Generate all core files for a locale (homepage, sitemap, legal pages). robots.txt and
 * 404.html are global/English-only and generated once by the caller, not per locale.
 */
@@ -325,7 +356,8 @@ async function generateCoreFiles(allDevices, allReaders, distPath, locale = "en"
   generateHomepage(distPath, locale, availableLocales);
   generateSitemap(allDevices, allReaders, distPath, locale);
   generateLegalPages(distPath, locale);
+  if (locale === "en") generateDevicesListTxt(allDevices, distPath);
   console.log(`  ✓ ${locale} core files generated`);
 }
 
-module.exports = { generateCoreFiles, generateHomepage, generateSitemap, generateSitemapIndex, generateRobots, generateLegalPages, generate404Page };
+module.exports = { generateCoreFiles, generateHomepage, generateSitemap, generateSitemapIndex, generateRobots, generateLegalPages, generate404Page, generateDevicesListTxt };
