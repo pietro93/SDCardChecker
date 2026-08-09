@@ -39,7 +39,7 @@ function generateProductBadgeHTML(product, index) {
     image = '/img/fallback-product.jpg'
   } = product;
 
-  const priceDisplay = price.startsWith('$') ? price : `$${price}`;
+  const priceDisplay = price.startsWith('$') || !/^\d/.test(price) ? price : `$${price}`;
   
   // Only show rating if it exists
   const ratingHtml = rating > 0 
