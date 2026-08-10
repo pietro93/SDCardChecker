@@ -273,16 +273,77 @@
           "breadcrumb": {
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sdcardchecker.com" },
-              { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://sdcardchecker.com/tools/" },
-              { "@type": "ListItem", "position": 3, "name": "Action Camera Storage Calculator", "item": "https://sdcardchecker.com/tools/calculators/action-camera-storage/" }
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://sdcardchecker.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Tools",
+                "item": "https://sdcardchecker.com/tools/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Action Camera Storage Calculator",
+                "item": "https://sdcardchecker.com/tools/calculators/action-camera-storage/"
+              }
             ]
           },
           "mainEntity": {
             "@type": "FAQPage",
             "mainEntity": [
-              { "@type": "Question", "name": "What is 360° recording and how much extra storage does it use?", "acceptedAnswer": { "@type": "Answer", "text": "360° recording captures video in all directions simultaneously. It roughly doubles bitrate and storage compared to standard video." } },
-              { "@type": "Question", "name": "How much does 4K 120fps cost in storage on action cameras?", "acceptedAnswer": { "@type": "Answer", "text": "4K 120fps uses roughly double the bitrate of 4K 60fps. A 256GB card holding 6 hours of 4K 60fps holds only 3 hours of 4K 120fps." } }
+              {
+                "@type": "Question",
+                "name": "What is 360° recording and how much extra storage does it use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "360° recording: The camera captures video in all directions simultaneously using multiple lenses or a specialized sensor. This creates an immersive spherical video that viewers can explore by moving their screen or using VR headsets. Storage impact: Because the camera is capturing from all angles at once, the bitrate roughly doubles compared to standard single-lens recording. For example, an Insta360 X4 shooting 5.7K 30fps in standard mode uses ~100Mbps. In 360° mode, this jumps to ~200Mbps. Practical implication: A 128GB card holding 3.2 hours of standard 5.7K video will hold only 1.6 hours in 360° mode. This is crucial to know before you start shooting. Editing note: 360° footage requires special editing software (Adobe Premiere Pro with plugins, DaVinci Resolve with 360° tools, or dedicated software like Insta360 Studio). It's not as straightforward as standard video editing."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does 4K 120fps cost in storage on action cameras?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "High frame rates = high bitrate. Doubling framerate (60fps → 120fps) roughly doubles bitrate and storage consumption. A GoPro Hero 13 shooting 4K 60fps uses about 90Mbps. The same camera in 4K 120fps mode uses about 180Mbps—double the storage per hour. Real-world example: A 256GB card holds approximately 6 hours of 4K 60fps GoPro video. The same card holds only 3 hours of 4K 120fps. And that's before slow-motion playback—120fps footage, when played at normal speed, appears 5x slower, creating stunning slow-motion effects. Bitrate comparison: DJI Osmo Action 4 in 4K 120fps D-Log M (10-bit color): ~230Mbps. This is even more demanding than standard 4K 120fps, requiring fast V60 or V90 SD cards. Use case: 4K 120fps is perfect for action sports with fast motion (ski runs, skateboarding, mountain biking) where slow-motion replay is essential. Plan accordingly with larger cards."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use the same SD card in different action cameras?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, most action cameras (GoPro, Insta360, DJI Osmo) use standard microSD cards. A V30 microSD card will work in any of them. However, different cameras have different bitrate requirements. Example: A GoPro Hero 13 requires V30 for all modes. A DJI Osmo Action 4 requires V30 for 4K 120fps D-Log M. An Insta360 X4 requires V30 for 5.7K 360°. You can use the same V30 card in all three. The catch: If you use a card in a mode faster than you expect, you may experience dropped frames or file corruption. Always check your camera's manual for the specific speed class requirement per recording mode. When in doubt, use a V60 card for the highest compatibility across all action camera modes. Formatting: After using an SD card in one camera, format it in the new camera before first use. This ensures the file system is optimized for that camera's specific requirements."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between GoPro Hero 12 and Hero 13?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Storage & bitrate: The Hero 12 and Hero 13 have very similar bitrate requirements. Both shoot 5.3K 60fps at approximately the same ~75Mbps bitrate. The Hero 13 does not require faster SD cards than the Hero 12. Improvements on Hero 13: Better low-light performance, improved HyperSmooth 6.0 stabilization, and extended battery life (~1.5x longer than Hero 12). These don't affect storage calculations. Storage calculations are identical: A 256GB card holds the same ~6 hours of 5.3K 60fps footage on both Hero 12 and Hero 13. If you already own Hero 12 SD cards, they work perfectly on the Hero 13. Upgrade recommendation: The Hero 13 is worth upgrading to for its better performance in low light and stabilization. Not necessary for storage reasons—both cameras use the same V30 SD cards efficiently."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What speed class do I need for 360° video?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "360° video recording is more demanding than standard video, so you need faster SD cards to prevent buffer overflow and dropped frames. Insta360 X4: V30 minimum for 5.7K 30fps 360°. V60 recommended for 360° 60fps or if shooting in full resolution. GoPro MAX (360°): V30 sufficient for 5.6K 360° at standard frame rates. DJI Osmo Action 4 (standard camera, not 360°): V30 for all modes, including 4K 120fps and D-Log. Rule of thumb: If the manufacturer recommends V30 for 4K 120fps standard video, use at least V60 for 360° at high frame rates. The doubled bitrate leaves little margin for error with V30 cards. Better to overprovision speed than risk dropped frames on an important adventure."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I compare bitrates between GoPro, Insta360, and DJI Osmo?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Different manufacturers compress video differently, so bitrates vary even for similar resolutions and frame rates. GoPro Hero 13: 5.3K 60fps ≈ 75Mbps. Excellent compression. Storage-efficient. DJI Osmo Action 4: 4K 120fps ≈ 130Mbps. Higher bitrate due to 10-bit color (D-Log M). Produces higher-quality, more grading-friendly footage at the cost of storage. Insta360 X4: 5.7K 30fps ≈ 100Mbps (standard), ~200Mbps (360°). 360° bitrate is roughly double standard mode. Comparison: For 1 hour of 4K 60fps, GoPro uses ~27GB, DJI Osmo uses ~47GB (due to higher bitrate), and Insta360 varies based on 360° mode. Use this calculator to input your specific bitrate and camera for exact numbers. Quality vs storage trade-off: Higher bitrate (like DJI Osmo's 10-bit D-Log) produces more grading-friendly footage but uses more storage. Choose based on your post-production needs."
+                }
+              }
             ]
           }
         }

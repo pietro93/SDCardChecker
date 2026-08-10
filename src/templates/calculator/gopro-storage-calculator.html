@@ -284,16 +284,77 @@
           "breadcrumb": {
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sdcardchecker.com" },
-              { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://sdcardchecker.com/tools/" },
-              { "@type": "ListItem", "position": 3, "name": "GoPro Storage Calculator", "item": "https://sdcardchecker.com/tools/calculators/gopro-storage/" }
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://sdcardchecker.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Tools",
+                "item": "https://sdcardchecker.com/tools/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "GoPro Storage Calculator",
+                "item": "https://sdcardchecker.com/tools/calculators/gopro-storage/"
+              }
             ]
           },
           "mainEntity": {
             "@type": "FAQPage",
             "mainEntity": [
-              { "@type": "Question", "name": "What's the difference between GoPro Hero 13, Hero 12, and Hero Max?", "acceptedAnswer": { "@type": "Answer", "text": "Hero 13 is latest flagship with highest bitrates. Hero 12 is previous gen. Hero Max is 360° camera with doubled bitrates." } },
-              { "@type": "Question", "name": "Do I need V60 for GoPro 4K 120fps?", "acceptedAnswer": { "@type": "Answer", "text": "V30 works but V60 is recommended for margin of safety and reliability." } }
+              {
+                "@type": "Question",
+                "name": "What's the difference between Hero 13, Hero 12, and GoPro Max?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hero 13 Black: The latest flagship with 5.3K 60fps recording at 120 Mbps (H.265), plus 4K 120fps slow-motion. It has the highest bitrates in the GoPro lineup, meaning it uses the most storage but delivers the best image quality. The Hero 13 also features improved stabilization and longer battery life compared to previous models. Hero 12 Black: The previous generation flagship that still shoots 5.3K 60fps but at slightly lower bitrates than the Hero 13. It remains an excellent camera for most users, with HDR video, HyperSmooth 6.0 stabilization, and all the core features that made GoPro famous. Files are slightly smaller than Hero 13, giving you more recording time per card. GoPro Max: The 360° camera that captures everything around you using dual lenses. It records 5.6K 30fps spherical video at 120 Mbps—essentially recording two video streams simultaneously. This doubles the storage requirements of standard GoPro footage. The Max lets you reframe shots in post-production, choosing any angle after filming. Storage implications: Hero 13 uses the most storage per minute, Hero 12 uses slightly less, and Max uses roughly double a standard GoPro because it's recording 360° footage. Plan your card capacity accordingly."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much video fits on 128GB, 256GB, and 512GB cards?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hero 13 at 5.3K 60fps (H.265): A 128GB card holds approximately 2 hours 50 minutes. A 256GB card holds 5 hours 40 minutes. A 512GB card holds 11 hours 20 minutes. These are real-world estimates including GoPro's file overhead. Hero 12 at 4K 60fps (H.264): A 128GB card holds approximately 3 hours 45 minutes. A 256GB card holds 7 hours 30 minutes. A 512GB card holds 15 hours. The Hero 12's slightly lower bitrate gives you more recording time than the Hero 13. GoPro Max at 5.6K 30fps (360°): A 128GB card holds approximately 2 hours 50 minutes. A 256GB card holds 5 hours 40 minutes. A 512GB card holds 11 hours 20 minutes. Despite being 360°, the Max's bitrate is similar to Hero 13's 5.3K mode. Pro tip: For weekend trips, 256GB gives you a full day of intermittent recording. For week-long adventures, bring multiple 256GB cards rather than one massive 512GB—it's safer and often cheaper."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much 5.3K video fits on 128GB, 256GB, or 512GB?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hero 13 5.3K 60fps H.265 (120 Mbps): 128GB: ~2.8 hours (182 minutes). 256GB: ~5.7 hours (342 minutes). 512GB: ~11.4 hours (684 minutes). Hero 12 5.3K 60fps H.265 (100 Mbps): 128GB: ~3.4 hours (204 minutes). 256GB: ~6.8 hours (408 minutes). 512GB: ~13.6 hours (816 minutes). GoPro Max 5.6K 30fps 360° (120 Mbps): 128GB: ~2.8 hours. 256GB: ~5.7 hours. 512GB: ~11.4 hours. For adventure vloggers: A 128GB card is fine for weekend trips (batches of 2-3 hour sessions). For full-day expeditions or multi-day travel, 256GB+ is recommended. These calculations include a 10% overhead buffer; actual usable space is slightly less."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What's the best GoPro card for extreme sports and rough conditions?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Card recommendations for GoPro: Look for U3 or V30 microSD cards with H.265 support and reliable read/write performance. Brands: SanDisk Extreme, Samsung Pro, Lexar Professional. For extreme/rugged conditions: Consider cards with enhanced durability ratings. Some microSD cards are rated temperature-resistant (-25°C to 85°C), shock-resistant, and waterproof. Examples: SanDisk Extreme (rated for harsh environments), Samsung PRO Plus (durable design). Why durability matters: GoPro footage is often captured in extreme conditions—water, sand, cold, heat. A standard microSD works fine, but cards with shock/vibration resistance and temperature tolerance reduce risk of failure mid-adventure. You don't want card corruption while on a backcountry expedition with no backup. Backup strategy: Use our calculator to estimate storage per trip. Bring 2-3 cards instead of one massive card. If one card fails, you've still got footage. This is safer and faster (you can swap instead of waiting to transfer)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I format my microSD card for GoPro?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Best practice: Always format your microSD card in the GoPro camera, not on a computer. GoPro formats to the exact filesystem and structure it expects, ensuring compatibility and performance. Steps: (1) Insert new microSD card into GoPro. (2) Go to Settings > Formatting. (3) Select \"Format Card\" or similar (wording varies by model). (4) Confirm (this erases all data on the card). (5) Wait for completion (usually 30 seconds to 2 minutes depending on capacity). When to reformat: Before first use on a new camera. Periodically during intensive shooting (weekly if recording 8+ hours per day) to prevent filesystem fragmentation. Never during active recording or low battery—always charge first. Windows/Mac formatting: Avoid formatting in your computer. If you must (e.g., on a replacement/backup card), use exFAT format on Windows or Mac, then reformat in the GoPro. Computer-formatted cards sometimes cause compatibility quirks."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use the same card in GoPro and other devices?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, microSD cards are universal. You can use the same card in GoPro, drone, smartphone, or tablet. MicroSD is a standard. Just swap physically and it works. Caveat: Always reformat in GoPro after using the card in another device. Different devices expect different filesystems (exFAT, FAT32, etc.). Reformatting ensures GoPro optimization. Takes 30 seconds and prevents potential compatibility issues. Speed class compatibility: A V30 card works in any device that accepts microSD, even if that device only needs U3. Backward compatibility means faster cards work fine in slower devices—you just don't get the speed benefit. Using a V30 in a V30-rated device? Perfect match. Practical tip for multi-device users: Dedicate cards by device (one set for GoPro, one for phone) to avoid reformatting overhead. Or buy 3-4 high-capacity V30 cards and rotate through devices as needed. Cheaper than replacing failed cards from constant reformatting."
+                }
+              }
             ]
           }
         }

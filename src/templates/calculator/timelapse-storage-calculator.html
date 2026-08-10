@@ -280,9 +280,77 @@
           "breadcrumb": {
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sdcardchecker.com" },
-              { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://sdcardchecker.com/tools/" },
-              { "@type": "ListItem", "position": 3, "name": "Timelapse Storage", "item": "https://sdcardchecker.com/tools/calculators/timelapse-storage/" }
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://sdcardchecker.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Tools",
+                "item": "https://sdcardchecker.com/tools/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Timelapse Storage",
+                "item": "https://sdcardchecker.com/tools/calculators/timelapse-storage/"
+              }
+            ]
+          },
+          "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How do I calculate the right shooting interval?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Basic formula: Shooting Interval (seconds) = (Project Duration in hours × 3600) ÷ Desired Video Length in seconds ÷ Playback FPS Example: 24-hour project, 30-second final video, 24fps playback = (24 × 3600) ÷ 30 ÷ 24 = 120-second interval (2 minutes between photos). Common intervals: 2 seconds: Fast motion (clouds, sun movement, traffic). Dense photo count for smooth playback. 5-10 seconds: Moderate motion (construction, weather changes). Balanced file size and smooth video. 30 seconds: Slow motion (plant growth, sunrise/sunset). Very manageable file sizes for long projects. 60+ seconds: Ultra-long projects (architectural time-lapses). Minimal storage, sparse but effective. Speed rule of thumb: Slower interval = more photos = smoother video = larger files. Faster interval = fewer photos = choppier video = smaller files. Find your sweet spot."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much storage does a 24-hour timelapse need?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "At 2-second intervals (dense, smooth video): JPEG (8MB avg): ~345GB. RAW (30MB avg): ~1.3TB. At 5-second intervals (moderate): JPEG: ~138GB. RAW: ~518GB. At 10-second intervals: JPEG: ~69GB. RAW: ~259GB. Practical takeaway: A 256GB card handles 24-hour timelapse at 5+ second intervals in JPEG, or 10+ second intervals in RAW. Larger intervals or multi-card systems needed for dense (2-second) RAW shooting."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Should I shoot JPEG or RAW for timelapse?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "JPEG (smaller files, faster workflow): Better for long-duration timelapses where storage is tight. Smaller file sizes fit more photos on cards. Acceptable for most timelapse content—the final video is compressed anyway. In-camera color grading already applied. RAW (maximum editing control, large files): Ideal for high-value projects where final quality is critical. Allows post-processing color correction, exposure compensation across the sequence. Worth the extra storage if you're doing professional work. Hybrid approach: Some cameras allow JPEG+RAW mode. Capture JPEG for quick editing reference, RAW for final quality. Uses roughly 2x storage but gives maximum flexibility. Recommendation: For casual/documentary timelapse, JPEG is fine. For professional or creative work, RAW. Use our calculator to estimate file sizes and decide based on your project budget and storage availability."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I set up interval shooting on my camera?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Canon (DSLRs/Mirrorless): Menu → Interval Shooting (or similar). Set interval (in seconds) and number of shots. Camera handles the rest automatically. Nikon: Menu → Interval Timer Shooting → Set interval and repetitions. Sony: Menu → Interval Shooting → Set interval length and shot count. Fujifilm: Menu → Interval Shooting → Configure interval and repeats. General tips: (1) Use fully charged battery (extended interval shooting draws significant power). (2) Format card in camera before starting. (3) Set focus to manual and lock focus distance (autofocus uses more power). (4) Use manual exposure (M-mode) so lighting doesn't change between shots. (5) Disable image stabilization (unnecessary for stationary tripod). (6) Monitor first 10-20 shots to confirm focus and exposure are consistent."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is playback frame rate and how does it affect my video?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Playback FPS: Frames per second at which your photos are played back as video. 24fps is cinema standard. 30fps is TV standard. How it affects duration: Same photo count at different fps creates different video lengths. 1000 photos at 24fps = 41.7 seconds. At 30fps = 33.3 seconds. How it affects motion smoothness: Higher fps (30, 60) = smoother motion. Lower fps (24, 12) = more jerky motion. Most timelapse uses 24fps as standard. Some creators intentionally use 12fps for artistic choppiness. For editing: Export your sequence as 24fps video unless your project requires otherwise. Most online platforms and delivery specs assume 24fps."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I compile my photos into a video?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Adobe Lightroom (easiest): Import all photos. Select entire sequence. File → Create Slideshow Video. Choose fps, resolution, export format. Lightroom handles sorting and sequencing automatically. Adobe Premiere Pro (professional): Import sequence of images as continuous footage. Premiere auto-sequences based on filename numbering. Adjust fps in timeline settings. Export to desired format/codec. DaVinci Resolve (powerful, free): Import image sequence. Create new timeline with desired fps. Drag images to timeline. Resolve auto-sequences. Color grade if needed. Export video. FFmpeg (command-line, fast): For advanced users. Can batch-process large sequences quickly without GUI overhead. General workflow: (1) Import photos in sequence order (ensure filenames are numbered consistently). (2) Set playback fps (24 is standard). (3) Color grade/correct if needed. (4) Export to H.264 or H.265 codec for compatibility. (5) Add music/sound in final step."
+                }
+              }
             ]
           }
         }
