@@ -354,6 +354,7 @@
       "gopro-hero-13",
       "gopro-hero-12",
       "gopro-hero-max",
+      "gopro-hero-9-black",
       "dji-osmo-pocket-3"
     ],
     "notes": "The predecessor to the Hero 12, this model introduced the 8:7 sensor and maintains the same V30 card requirements.",
@@ -996,5 +997,55 @@
       "dji-osmo-action-6"
     ],
     "notes": "Latest flagship GoPro Hero model. Official GoPro tests continue to specify V30 as the required minimum; 'Card Too Slow' remains the #1 support issue traced to underrated or counterfeit cards."
+  },
+  {
+    "id": "gopro-hero-9-black",
+    "name": "GoPro Hero 9 Black",
+    "category": "Action Cameras",
+    "slug": "gopro-hero-9-black",
+    "metaDescription": "Best microSD cards for the GoPro Hero 9 Black — V30-rated picks for stable 5K recording.",
+    "searchTerms": [
+      "gopro hero 9 black sd card",
+      "hero 9 microsd",
+      "gopro hero 9 memory card",
+      "best sd card for gopro hero 9 black",
+      "how much recording on 256gb gopro hero 9"
+    ],
+    "sdCard": {
+      "type": "microSD (UHS-I)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "256GB"
+    },
+    "whySpecs": "The Hero 9 Black shoots 5K30 and 4K60 video, both demanding enough that GoPro officially requires a <b>V30-rated</b> microSD card to guarantee the sustained 30 MB/s write speed needed to avoid dropped frames or corrupted clips. GoPro tested and officially supports capacities up to <b>256GB</b> on this model — cards larger than that may work with modern firmware but aren't officially validated, so 256GB is the safe ceiling if you want guaranteed compatibility.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-633x"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much 5K footage can a 256GB card hold on the Hero 9 Black?",
+        "a": "<b>Roughly 5-6 hours of 5K30 footage</b> at GoPro's standard bitrate settings, though actual time varies with bitrate mode (Standard vs. High) and scene complexity. For all-day shoots, carry a second card or a portable backup drive rather than relying on a single 256GB card."
+      }
+    ],
+    "relatedDevices": [
+      "gopro-hero-11-black",
+      "gopro-hero-13",
+      "gopro-hero-max"
+    ],
+    "notes": "Older flagship (2020) but still widely owned and searched for card compatibility. Officially capped at 256GB by GoPro at launch; V30 minimum applies same as newer Hero models.",
+    "imageUrl": "/img/devices/action-cameras/gopro-hero-9-black.webp"
   }
 ]
