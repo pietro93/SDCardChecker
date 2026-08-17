@@ -332,6 +332,43 @@ function generateRequirementsBox(device, deviceNameShort, locale = "en") {
 }
 
 /**
+ * Generate the real-world evidence block: cited third-party benchmark/field data,
+ * distinct from whySpecs (which is our own spec-based reasoning). English-only -
+ * every entry is sourced from an English-language outlet, and the citation reads
+ * wrong translated. Renders nothing if the device has no realWorldEvidence entries.
+ */
+function generateRealWorldEvidence(device, locale = "en") {
+    if (locale !== "en" || !device.realWorldEvidence || device.realWorldEvidence.length === 0) {
+        return "";
+    }
+
+    const itemsHtml = device.realWorldEvidence
+        .map(
+            (item) => `
+        <li class="flex items-start gap-3 pb-3 border-b border-slate-100 last:border-b-0 last:pb-0">
+            <i class="fas fa-flask text-blue-600 mt-1 flex-shrink-0"></i>
+            <div class="flex-1">
+                <span class="text-slate-700">${item.claim}</span>
+                <a href="${item.url}" target="_blank" rel="noopener noreferrer nofollow" class="block text-sm text-blue-600 hover:underline mt-1">Source: ${item.sourceName}</a>
+            </div>
+        </li>
+        `
+        )
+        .join("");
+
+    return `
+    <section id="real-world-evidence" class="mb-16 scroll-mt-20">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Real-World Evidence</h2>
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-6">
+            <ul class="space-y-0">
+                ${itemsHtml}
+            </ul>
+        </div>
+    </section>
+    `;
+}
+
+/**
  * Generate alternatives cards
  */
 function generateAlternatives(device, sdcardsMap) {
@@ -463,6 +500,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     }
 
     const requirementsBoxHTML = generateRequirementsBox(device, deviceNameShort, locale);
+    const realWorldEvidenceHTML = generateRealWorldEvidence(device, locale);
     const specsHTML = generateSpecsHTML(device, locale === "ja");
     const brandsTableRows = generateBrandsTable(device.recommendedBrands, sdcardsMap, device.slug, locale);
     const enrichedCardDetailsHTML = generateEnrichedCardDetails(device.recommendedBrands, sdcardsMap, locale);
@@ -585,6 +623,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{ANSWER_TEXT}}/g, answerText)
         .replace(/{{ANSWER_EXPLANATION}}/g, explanation)
         .replace(/{{REQUIREMENTS_BOX}}/g, requirementsBoxHTML)
+        .replace(/{{REAL_WORLD_EVIDENCE}}/g, realWorldEvidenceHTML)
         .replace(/{{SPECS_HTML}}/g, specsHTML)
         .replace(/{{BRANDS_TABLE_ROWS}}/g, brandsTableRows)
         .replace(/{{ENRICHED_CARD_DETAILS}}/g, enrichedCardDetailsHTML)
