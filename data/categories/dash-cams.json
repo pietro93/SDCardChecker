@@ -177,7 +177,7 @@
       ],
       "maxCapacity": "256GB"
     },
-    "whySpecs": "Viofo specifically restricts the T130 Pro to UHS-I U3-rated, dashcam/high-endurance microSD cards — not general-purpose consumer cards. The camera loop-records continuously, overwriting old footage in a cycle that wears out standard cards within weeks in a hot windshield environment. Viofo caps supported capacity at 256GB, with 128GB called out as the preferable, more reliable size.",
+    "whySpecs": "Viofo specifically restricts the T130 Pro to UHS-I U3-rated, dashcam/high-endurance microSD cards, not general-purpose consumer cards. The camera loop-records continuously, overwriting old footage in a cycle that wears out standard cards within weeks in a hot windshield environment. Viofo caps supported capacity at 256GB, with 128GB called out as the preferable, more reliable size.",
     "recommendedBrands": [
       {
         "id": "samsung-pro-endurance"
@@ -192,11 +192,11 @@
     "faq": [
       {
         "q": "Can I use a regular fast microSD card in the T130 Pro?",
-        "a": "<b>No — Viofo's own guidance restricts the T130 Pro to U3-rated, dashcam/high-endurance cards.</b> Standard consumer cards aren't built for continuous loop-overwrite recording and tend to fail within weeks of dash cam use, especially in hot windshield-mounted conditions."
+        "a": "<b>No. Viofo's own guidance restricts the T130 Pro to U3-rated, dashcam/high-endurance cards.</b> Standard consumer cards aren't built for continuous loop-overwrite recording and tend to fail within weeks of dash cam use, especially in hot windshield-mounted conditions."
       },
       {
         "q": "What's the maximum card size for the T130 Pro?",
-        "a": "<b>256GB is the maximum supported capacity</b>, with <b>128GB called out as preferable</b> for reliability. Bigger isn't automatically better here — Viofo's guidance favors a properly rated endurance card over maxing out capacity."
+        "a": "<b>256GB is the maximum supported capacity</b>, with <b>128GB called out as preferable</b> for reliability. Bigger isn't automatically better here. Viofo's guidance favors a properly rated endurance card over maxing out capacity."
       },
       {
         "q": "Why do dash cam cards need to be 'high-endurance'?",
@@ -233,7 +233,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "The Nextbase iQ is built around continuous loop recording with cloud/AI features layered on top, which pushes the camera toward higher-bitrate 4K capture than a typical dash cam. Nextbase's own guidance recommends U3-rated dashcam-compatible cards, calling out Nextbase-branded or SanDisk High Endurance (U3) cards specifically — with periodic reformatting recommended to manage wear from the continuous overwrite loop.",
+    "whySpecs": "The Nextbase iQ is built around continuous loop recording with cloud/AI features layered on top, which pushes the camera toward higher-bitrate 4K capture than a typical dash cam. Nextbase's own guidance recommends U3-rated dashcam-compatible cards, calling out Nextbase-branded or SanDisk High Endurance (U3) cards specifically, with periodic reformatting recommended to manage wear from the continuous overwrite loop.",
     "recommendedBrands": [
       {
         "id": "sandisk-max-endurance"
@@ -256,7 +256,7 @@
       },
       {
         "q": "Do I need to do anything to maintain the card over time?",
-        "a": "<b>Yes — Nextbase recommends periodically reformatting the card.</b> Continuous loop recording wears down even high-endurance cards over time, and a periodic reformat helps maintain reliable write performance."
+        "a": "<b>Yes, Nextbase recommends periodically reformatting the card.</b> Continuous loop recording wears down even high-endurance cards over time, and a periodic reformat helps maintain reliable write performance."
       }
     ],
     "relatedDevices": [
@@ -288,7 +288,7 @@
       ],
       "maxCapacity": "256GB (DR970X) / 1TB (DR970X Plus Series II)"
     },
-    "whySpecs": "Continuous parking and driving recording needs a card that can handle sustained overwrite cycles. Cards over 64GB ship formatted as exFAT, which BlackVue doesn't support — they must be reformatted to FAT32 in the BlackVue app before use.",
+    "whySpecs": "Continuous parking and driving recording needs a card that can handle sustained overwrite cycles. Cards over 64GB ship formatted as exFAT, which BlackVue doesn't support, so they must be reformatted to FAT32 in the BlackVue app before use.",
     "recommendedBrands": [
       {
         "id": "sandisk-max-endurance"
@@ -300,7 +300,7 @@
     "faq": [
       {
         "q": "Why do I need to reformat my card for the BlackVue DR970X?",
-        "a": "<b>Cards larger than 64GB ship pre-formatted as exFAT, which BlackVue's firmware doesn't support.</b> Use the BlackVue app to reformat the card to FAT32 before installing it — otherwise the camera won't record properly."
+        "a": "<b>Cards larger than 64GB ship pre-formatted as exFAT, which BlackVue's firmware doesn't support.</b> Use the BlackVue app to reformat the card to FAT32 before installing it, or the camera won't record properly."
       }
     ],
     "relatedDevices": [
@@ -331,7 +331,7 @@
       ],
       "maxCapacity": "256GB"
     },
-    "whySpecs": "Continuous front/rear recording needs a card rated for sustained writes. Thinkware's own compatibility documentation caps the standard U3000 at 256GB — a separate U3000 Pro variant supports more, so don't confuse the two when shopping.",
+    "whySpecs": "Continuous front/rear recording needs a card rated for sustained writes. Thinkware's own compatibility documentation caps the standard U3000 at 256GB. A separate U3000 Pro variant supports more, so don't confuse the two when shopping.",
     "recommendedBrands": [
       {
         "id": "sandisk-max-endurance"
@@ -343,7 +343,7 @@
     "faq": [
       {
         "q": "What's the maximum SD card size for the Thinkware U3000?",
-        "a": "<b>256GB is the max for the standard U3000</b>, per Thinkware's own compatibility documentation. The separate U3000 Pro variant supports larger cards — don't assume the two share the same ceiling when shopping."
+        "a": "<b>256GB is the max for the standard U3000</b>, per Thinkware's own compatibility documentation. The separate U3000 Pro variant supports larger cards, so don't assume the two share the same ceiling when shopping."
       }
     ],
     "relatedDevices": [

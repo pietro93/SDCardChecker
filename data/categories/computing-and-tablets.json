@@ -20,7 +20,7 @@
       ],
       "maxCapacity": "2TB (SDXC spec limit)"
     },
-    "whySpecs": "The Raspberry Pi 5 boots its operating system from the microSD card, and it's the first Pi that can actually read one quickly: the Pi 5's SD interface supports <b>SDR104</b>, roughly doubling the bus speed to about 100 MB/s versus the ~50 MB/s ceiling on the Pi 4. To see that, you need a UHS-I card that's genuinely rated for it — a slow card is the single most common cause of a Pi 5 that feels sluggish. Beyond raw throughput, look for an <b>A2</b> rating: the 'A' (Application Performance Class) ratings describe random read/write speed, which is what an operating system actually does all day, and unlike the Pi 4 the Pi 5 supports the command queuing that lets A2 cards deliver on it. If you need more speed than any microSD can give, the Pi 5's PCIe connector accepts an M.2 HAT and NVMe SSD.",
+    "whySpecs": "The Raspberry Pi 5 boots its operating system from the microSD card, and it's the first Pi that can actually read one quickly: the Pi 5's SD interface supports <b>SDR104</b>, roughly doubling the bus speed to about 100 MB/s versus the ~50 MB/s ceiling on the Pi 4. To see that, you need a UHS-I card that's genuinely rated for it. A slow card is the single most common cause of a Pi 5 that feels sluggish. Beyond raw throughput, look for an <b>A2</b> rating: the 'A' (Application Performance Class) ratings describe random read/write speed, which is what an operating system actually does all day, and unlike the Pi 4 the Pi 5 supports the command queuing that lets A2 cards deliver on it. If you need more speed than any microSD can give, the Pi 5's PCIe connector accepts an M.2 HAT and NVMe SSD.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -39,7 +39,7 @@
       },
       {
         "q": "Is an A2 card actually worth it on the Pi 5, or is A1 fine?",
-        "a": "<b>On the Pi 5, A2 is worth paying for — which was not true on the Pi 4.</b> A2 cards get their speed advantage from command queuing, and the Pi 4's SD host support never took advantage of it, so A2 cards there performed much like A1. The Pi 5 changed that, and it also raised the bus speed to SDR104 (~100 MB/s vs ~50 MB/s). If you're reusing a card from an older Pi, that's the upgrade you'd feel."
+        "a": "<b>On the Pi 5, A2 is worth paying for, which was not true on the Pi 4.</b> A2 cards get their speed advantage from command queuing, and the Pi 4's SD host support never took advantage of it, so A2 cards there performed much like A1. The Pi 5 changed that, and it also raised the bus speed to SDR104 (~100 MB/s vs ~50 MB/s). If you're reusing a card from an older Pi, that's the upgrade you'd feel."
       },
       {
         "q": "Should I use an NVMe SSD instead of a microSD card on the Pi 5?",
@@ -74,7 +74,7 @@
       ],
       "maxCapacity": "No official limit (carrier-board dependent)"
     },
-    "whySpecs": "The CM5 is a System-on-Module sold with 0GB (Lite), 16GB, 32GB, or 64GB of <b>onboard eMMC</b> for builders who order it that way. If you're using the Lite SKU with a carrier board's microSD slot instead, this is not a desktop Pi 5 install card — CM5 boards are overwhelmingly deployed as embedded/server hardware running persistent logging, local databases, or always-on services. That workload is continuous overwrite, not occasional boot reads. <b>Ignore A1/A2 speed-class shopping advice here</b> and pick a card rated for sustained write endurance (TBW), the same logic used for dash cams and surveillance recorders, or budget for the onboard eMMC SKU if your carrier board supports it.",
+    "whySpecs": "The CM5 is a System-on-Module sold with 0GB (Lite), 16GB, 32GB, or 64GB of <b>onboard eMMC</b> for builders who order it that way. If you're using the Lite SKU with a carrier board's microSD slot instead, this is not a desktop Pi 5 install card. CM5 boards are overwhelmingly deployed as embedded/server hardware running persistent logging, local databases, or always-on services. That workload is continuous overwrite, not occasional boot reads. <b>Ignore A1/A2 speed-class shopping advice here</b> and pick a card rated for sustained write endurance (TBW), the same logic used for dash cams and surveillance recorders, or budget for the onboard eMMC SKU if your carrier board supports it.",
     "recommendedBrands": [
       {
         "id": "sandisk-max-endurance"
@@ -90,7 +90,7 @@
       },
       {
         "q": "Do I need a V30 or A2 card for the Compute Module 5?",
-        "a": "<b>No — those speed classes target desktop responsiveness and video bitrate, not this device's actual use case.</b> CM5 boards are typically embedded/server builds running logging or databases 24/7. A High Endurance card (SanDisk MAX ENDURANCE, Samsung PRO Endurance) will outlast a standard A2 card by years under that write pattern."
+        "a": "<b>No. Those speed classes target desktop responsiveness and video bitrate, not this device's actual use case.</b> CM5 boards are typically embedded/server builds running logging or databases 24/7. A High Endurance card (SanDisk MAX ENDURANCE, Samsung PRO Endurance) will outlast a standard A2 card by years under that write pattern."
       }
     ],
     "relatedDevices": [
@@ -367,7 +367,7 @@
       ],
       "maxCapacity": "2TB (SDXC spec limit)"
     },
-    "whySpecs": "Like all Raspberry Pis, the Pi 4 runs its OS from the microSD card, so random access speed — not video throughput — is what makes it feel fast. That's the <b>A</b> (Application Performance Class) rating, and an A1 card is the spec that matters here. <b>Paying extra for A2 on a Pi 4 is usually wasted money:</b> A2's advantage comes from command queuing, which the Pi 4's SD host support doesn't take advantage of, so A2 cards generally perform about the same as A1 on this board. The Pi 4's card interface also tops out around 50 MB/s regardless of how fast the card is rated, so a premium high-speed card won't stretch its legs — save the A2 and SDR104 spending for a Pi 5.",
+    "whySpecs": "Like all Raspberry Pis, the Pi 4 runs its OS from the microSD card, so random access speed, not video throughput, is what makes it feel fast. That's the <b>A</b> (Application Performance Class) rating, and an A1 card is the spec that matters here. <b>Paying extra for A2 on a Pi 4 is usually wasted money:</b> A2's advantage comes from command queuing, which the Pi 4's SD host support doesn't take advantage of, so A2 cards generally perform about the same as A1 on this board. The Pi 4's card interface also tops out around 50 MB/s regardless of how fast the card is rated, so a premium high-speed card won't stretch its legs. Save the A2 and SDR104 spending for a Pi 5.",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-microsd"

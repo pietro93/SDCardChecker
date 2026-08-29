@@ -23,7 +23,7 @@
       ],
       "maxCapacity": "Limited by app storage"
     },
-    "whySpecs": "The iPhone 15 lineup switched from Lightning to USB-C in 2023, but that doesn't add SD card support — you still need an external card reader through the Files app. The catch is that the port's actual speed depends on which iPhone 15 you have: the base iPhone 15 and 15 Plus keep their USB-C port capped at USB 2.0 (480 Mbps), the same ceiling Lightning had, while the iPhone 15 Pro and Pro Max support USB 3 (up to 10 Gbps). That means a fast UHS-II card reader is wasted on a base iPhone 15 but genuinely useful on a Pro model for offloading large photo/video libraries quickly.",
+    "whySpecs": "The iPhone 15 lineup switched from Lightning to USB-C in 2023, but that doesn't add SD card support. You still need an external card reader through the Files app. The catch is that the port's actual speed depends on which iPhone 15 you have: the base iPhone 15 and 15 Plus keep their USB-C port capped at USB 2.0 (480 Mbps), the same ceiling Lightning had, while the iPhone 15 Pro and Pro Max support USB 3 (up to 10 Gbps). That means a fast UHS-II card reader is wasted on a base iPhone 15 but genuinely useful on a Pro model for offloading large photo/video libraries quickly.",
     "requiresReader": true,
     "recommendedReaders": [
       "ugreen-2in1-usbc-usb3",
@@ -75,7 +75,7 @@
         "128GB"
       ]
     },
-    "whySpecs": "The iPhone 14 (and 14 Pro) never adopted USB-C — that switch came a generation later with the iPhone 15. Every Lightning-to-SD reader on this phone is bottlenecked to USB 2.0 speeds (~480 Mbps), no matter how fast the reader or card claims to be, because Lightning itself is the ceiling. In practice that means a basic UHS-I microSD card performs identically to a pricier UHS-II card here — there's no point paying for speed the port can't deliver.",
+    "whySpecs": "The iPhone 14 (and 14 Pro) never adopted USB-C. That switch came a generation later with the iPhone 15. Every Lightning-to-SD reader on this phone is bottlenecked to USB 2.0 speeds (~480 Mbps), no matter how fast the reader or card claims to be, because Lightning itself is the ceiling. In practice that means a basic UHS-I microSD card performs identically to a pricier UHS-II card here, and there's no point paying for speed the port can't deliver.",
     "requiresReader": true,
     "recommendedReaders": [
       "lexar-lightning-microsd"
@@ -91,7 +91,7 @@
     "faq": [
       {
         "q": "Will a faster microSD card speed up file transfers on iPhone 14?",
-        "a": "No. The Lightning port caps transfer speed at roughly USB 2.0 (~480 Mbps) regardless of card class. A UHS-I card is enough — a UHS-II card won't transfer any faster on this device."
+        "a": "No. The Lightning port caps transfer speed at roughly USB 2.0 (~480 Mbps) regardless of card class. A UHS-I card is enough, and a UHS-II card won't transfer any faster on this device."
       }
     ],
     "relatedDevices": [
@@ -121,7 +121,7 @@
         "128GB"
       ]
     },
-    "whySpecs": "The iPhone 13 has no card slot and, like the 14, is stuck on Lightning rather than USB-C — so any Lightning-to-microSD reader tops out at USB 2.0 speeds (~480 Mbps) regardless of the card's rated speed class. The 13 originally shipped with 128GB, 256GB, or 512GB internal storage tiers, so most people buying an external reader are doing it to import photos from a camera's SD card or offload old footage, not because 128GB fills up quickly on its own.",
+    "whySpecs": "The iPhone 13 has no card slot and, like the 14, is stuck on Lightning rather than USB-C, so any Lightning-to-microSD reader tops out at USB 2.0 speeds (~480 Mbps) regardless of the card's rated speed class. The 13 originally shipped with 128GB, 256GB, or 512GB internal storage tiers, so most people buying an external reader are doing it to import photos from a camera's SD card or offload old footage, not because 128GB fills up quickly on its own.",
     "requiresReader": true,
     "recommendedReaders": [
       "lexar-lightning-microsd"
@@ -137,7 +137,7 @@
     "faq": [
       {
         "q": "What's the fastest microSD card worth buying for an iPhone 13 with a Lightning reader?",
-        "a": "A standard UHS-I card (V30 or higher) is the practical ceiling — the Lightning port itself limits transfers to roughly USB 2.0 speeds, so a more expensive UHS-II card won't perform any faster on this device."
+        "a": "A standard UHS-I card (V30 or higher) is the practical ceiling. The Lightning port itself limits transfers to roughly USB 2.0 speeds, so a more expensive UHS-II card won't perform any faster on this device."
       }
     ],
     "relatedDevices": [
@@ -164,7 +164,7 @@
         "128GB"
       ]
     },
-    "whySpecs": "The iPhone 14 Pro Max shoots ProRes video at up to 4K/30fps, which can eat over 6GB per minute at the highest quality — but there's no way to record directly to an external SD card via a Lightning reader; ProRes at that bitrate needs an external SSD connected through a USB 3 adapter, not a microSD card. A Lightning microSD reader is still useful for the ordinary case of importing photos or footage from a camera's SD card into the Photos app, but treat it as an import/offload tool, not a recording destination, and prioritize buying enough internal storage (256GB+) if you shoot ProRes regularly.",
+    "whySpecs": "The iPhone 14 Pro Max shoots ProRes video at up to 4K/30fps, which can eat over 6GB per minute at the highest quality, but there's no way to record directly to an external SD card via a Lightning reader; ProRes at that bitrate needs an external SSD connected through a USB 3 adapter, not a microSD card. A Lightning microSD reader is still useful for the ordinary case of importing photos or footage from a camera's SD card into the Photos app, but treat it as an import/offload tool, not a recording destination, and prioritize buying enough internal storage (256GB+) if you shoot ProRes regularly.",
     "requiresReader": true,
     "recommendedReaders": [
       "lexar-lightning-microsd"
@@ -180,7 +180,7 @@
     "faq": [
       {
         "q": "Can I record ProRes video directly to an SD card on the iPhone 14 Pro Max?",
-        "a": "No. A Lightning-to-microSD reader can only be used to import or transfer files through the Files/Photos app — ProRes recording to external storage requires an external SSD connected via a USB 3 Lightning adapter, not an SD card reader."
+        "a": "No. A Lightning-to-microSD reader can only be used to import or transfer files through the Files/Photos app. ProRes recording to external storage requires an external SSD connected via a USB 3 Lightning adapter, not an SD card reader."
       }
     ],
     "relatedDevices": [
@@ -208,7 +208,7 @@
         "64GB"
       ]
     },
-    "whySpecs": "The 3rd-gen iPhone SE is Apple's budget model, and its base configuration starts at just 64GB of internal storage — the smallest of any current iPhone — with no expansion path. That makes an external Lightning microSD reader more of a practical necessity here than on a Pro-tier iPhone with 256GB+: photo libraries and app data fill a 64GB phone noticeably faster, so regularly offloading photos/videos to a card via the Files app is a realistic way to stretch the entry-level storage tier. As with other Lightning-era iPhones, the port caps transfers at USB 2.0 speeds, so a basic UHS-I card is all you need.",
+    "whySpecs": "The 3rd-gen iPhone SE is Apple's budget model, and its base configuration starts at just 64GB of internal storage, the smallest of any current iPhone, with no expansion path. That makes an external Lightning microSD reader more of a practical necessity here than on a Pro-tier iPhone with 256GB+: photo libraries and app data fill a 64GB phone noticeably faster, so regularly offloading photos/videos to a card via the Files app is a realistic way to stretch the entry-level storage tier. As with other Lightning-era iPhones, the port caps transfers at USB 2.0 speeds, so a basic UHS-I card is all you need.",
     "requiresReader": true,
     "recommendedReaders": [
       "lexar-lightning-microsd"
@@ -237,7 +237,7 @@
     "name": "Samsung Galaxy S23 / S23+",
     "category": "Smartphones",
     "slug": "samsung-galaxy-s23",
-    "metaDescription": "The Samsung Galaxy S23 does not have a microSD card slot — Samsung removed expandable storage from the Galaxy S series starting with the S21. Use a USB-C card reader for external SD card access.",
+    "metaDescription": "The Samsung Galaxy S23 does not have a microSD card slot. Samsung removed expandable storage from the Galaxy S series starting with the S21. Use a USB-C card reader for external SD card access.",
     "searchTerms": [
       "samsung galaxy s23",
       "galaxy s23",
@@ -278,7 +278,7 @@
       },
       {
         "q": "Should I buy a higher storage tier since the S23 can't be expanded later?",
-        "a": "Yes — this matters more on the S23 than on Samsung's older expandable-storage phones. Since there's no microSD slot to add capacity after purchase, choosing 256GB over the base 128GB up front is worth the extra cost if you shoot a lot of photos or 4K video, rather than relying on a USB-C reader for everyday storage."
+        "a": "Yes, this matters more on the S23 than on Samsung's older expandable-storage phones. Since there's no microSD slot to add capacity after purchase, choosing 256GB over the base 128GB up front is worth the extra cost if you shoot a lot of photos or 4K video, rather than relying on a USB-C reader for everyday storage."
       }
     ],
     "relatedDevices": [
@@ -308,7 +308,7 @@
         "128GB"
       ]
     },
-    "whySpecs": "Unlike Samsung, Google's Pixel line has never included a microSD slot on any model — this isn't a recent removal, it's a design choice Google has kept since the very first Pixel in 2016, in favor of pushing users toward Google Photos/Google One cloud backup instead of physical expansion. That makes the storage tier you buy at checkout more permanent than on phones with a reader workaround: the base Pixel 8 tops out at 256GB, while the Pixel 8 Pro goes up to 1TB, so heavy photo/video shooters are better served by paying for the Pro's larger tier than relying on a USB-C reader for daily use. A USB-C reader is still useful for one-off imports from a camera's SD card, just not as a long-term storage strategy.",
+    "whySpecs": "Unlike Samsung, Google's Pixel line has never included a microSD slot on any model. This isn't a recent removal, it's a design choice Google has kept since the very first Pixel in 2016, in favor of pushing users toward Google Photos/Google One cloud backup instead of physical expansion. That makes the storage tier you buy at checkout more permanent than on phones with a reader workaround: the base Pixel 8 tops out at 256GB, while the Pixel 8 Pro goes up to 1TB, so heavy photo/video shooters are better served by paying for the Pro's larger tier than relying on a USB-C reader for daily use. A USB-C reader is still useful for one-off imports from a camera's SD card, just not as a long-term storage strategy.",
     "requiresReader": true,
     "recommendedReaders": [
       "ugreen-2in1-usbc-usb3",
@@ -325,7 +325,7 @@
     "faq": [
       {
         "q": "Why doesn't the Google Pixel 8 have a microSD card slot?",
-        "a": "No Pixel phone ever has — Google has favored cloud storage (Google Photos, Google One) over expandable storage since the original Pixel launched in 2016. This is a long-standing design choice, not something removed from a more recent model."
+        "a": "No Pixel phone ever has. Google has favored cloud storage (Google Photos, Google One) over expandable storage since the original Pixel launched in 2016. This is a long-standing design choice, not something removed from a more recent model."
       },
       {
         "q": "Is the Pixel 8 Pro's 1TB storage option a substitute for not having a microSD slot?",

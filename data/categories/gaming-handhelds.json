@@ -285,7 +285,7 @@
       "maxCapacity": "2TB (microSDXC) / 2TB+ (microSD Express SDUC)",
       "testedMaxCapacity": "2TB"
     },
-    "whySpecs": "<b>Good news: your existing Switch microSD cards still work in Switch 2.</b> All standard UHS-I microSDXC cards are backward compatible — you can play every Switch game (original and Switch 2) without buying a new card. However, Switch 2 also introduces a <b>microSD Express slot</b> that supports PCIe-based Express cards for dramatically faster loading (up to 800 MB/s vs. ~100 MB/s for UHS-I). microSD Express is optional but recommended if you're buying a new card. Important: <b>microSD Express cards are NOT backward compatible with the original Switch, Switch Lite, or Switch OLED</b> — those devices only support UHS-I.",
+    "whySpecs": "<b>Good news: your existing Switch microSD cards still work in Switch 2.</b> All standard UHS-I microSDXC cards are backward compatible, so you can play every Switch game (original and Switch 2) without buying a new card. However, Switch 2 also introduces a <b>microSD Express slot</b> that supports PCIe-based Express cards for dramatically faster loading (up to 800 MB/s vs. ~100 MB/s for UHS-I). microSD Express is optional but recommended if you're buying a new card. Important: <b>microSD Express cards are NOT backward compatible with the original Switch, Switch Lite, or Switch OLED</b>. Those devices only support UHS-I.",
     "recommendedBrands": [
       {
         "id": "samsung-evo-select-microsd",
@@ -303,11 +303,11 @@
     "faq": [
       {
         "q": "Can I use my old Switch SD card in the Nintendo Switch 2?",
-        "a": "<b>Yes — your existing microSD cards work in Switch 2.</b> Standard UHS-I microSDXC cards are fully backward compatible with the Switch 2. You can play all your games without buying a new card. The Switch 2 also supports the faster microSD Express standard for improved loading speeds, but it is optional, not required."
+        "a": "<b>Yes, your existing microSD cards work in Switch 2.</b> Standard UHS-I microSDXC cards are fully backward compatible with the Switch 2. You can play all your games without buying a new card. The Switch 2 also supports the faster microSD Express standard for improved loading speeds, but it is optional, not required."
       },
       {
         "q": "What is microSD Express and do I need it for Switch 2?",
-        "a": "<b>microSD Express uses PCIe technology for speeds up to 800 MB/s — versus ~100 MB/s for standard UHS-I.</b> It provides noticeably faster game loading in Switch 2 titles. However, you do not need it — your existing UHS-I microSD cards work perfectly. Officially licensed Express cards from Samsung, SanDisk, and PNY are now widely available at retailers like Target, Walmart, and Best Buy, though prices across all microSD cards (Express included) rose sharply in 2026 due to a global NAND flash shortage."
+        "a": "<b>microSD Express uses PCIe technology for speeds up to 800 MB/s, versus ~100 MB/s for standard UHS-I.</b> It provides noticeably faster game loading in Switch 2 titles. However, you do not need it. Your existing UHS-I microSD cards work perfectly. Officially licensed Express cards from Samsung, SanDisk, and PNY are now widely available at retailers like Target, Walmart, and Best Buy, though prices across all microSD cards (Express included) rose sharply in 2026 due to a global NAND flash shortage."
       },
       {
         "q": "Will a microSD Express card work in my original Switch or Switch OLED?",
@@ -441,7 +441,7 @@
     "name": "ASUS ROG Ally X",
     "category": "Gaming Handhelds",
     "slug": "asus-rog-ally-x",
-    "metaDescription": "Best microSD cards for ASUS ROG Ally X — and which brands to avoid. Tested for UHS-II speed, A1 app performance, and reliability in the Ally X's fast card reader.",
+    "metaDescription": "Best microSD cards for ASUS ROG Ally X, and which brands to avoid. Tested for UHS-II speed, A1 app performance, and reliability in the Ally X's fast card reader.",
     "searchTerms": [
       "rog ally x sd card",
       "ally x microsd",
@@ -476,7 +476,7 @@
     "faq": [
       {
         "q": "Which microSD card brands and models should I avoid for the ROG Ally X?",
-        "a": "<b>Avoid cheap no-name microSD cards, cards without an A2 rating, and counterfeit SanDisk cards from unverified Amazon sellers.</b> The ROG Ally X runs Windows and loads games directly from the card, so poor random read/write performance causes stuttering and long load times. Specifically: (1) Avoid cards without A1 or A2 app performance rating — they will feel sluggish under Windows; (2) Avoid very high-capacity 2TB cards unless from a reputable brand, as some community reports show slower-than-expected sustained speeds compared to 1TB variants; (3) Counterfeit SanDisk cards are a known issue on Amazon — always buy from the official SanDisk store or established retailers. Stick to SanDisk, Samsung, Lexar, or Kingston from reputable sources."
+        "a": "<b>Avoid cheap no-name microSD cards, cards without an A2 rating, and counterfeit SanDisk cards from unverified Amazon sellers.</b> The ROG Ally X runs Windows and loads games directly from the card, so poor random read/write performance causes stuttering and long load times. Specifically: (1) Avoid cards without A1 or A2 app performance rating, as they feel sluggish under Windows; (2) Avoid very high-capacity 2TB cards unless from a reputable brand, as some community reports show slower-than-expected sustained speeds compared to 1TB variants; (3) Counterfeit SanDisk cards are a known issue on Amazon, so always buy from the official SanDisk store or established retailers. Stick to SanDisk, Samsung, Lexar, or Kingston from reputable sources."
       },
       {
         "q": "Is the Ally X faster than the original Ally for SD cards?",
@@ -1217,7 +1217,7 @@
     "name": "ASUS ROG Xbox Ally X",
     "category": "Gaming Handhelds",
     "slug": "rog-xbox-ally-x",
-    "metaDescription": "Best microSD cards for the ASUS ROG Xbox Ally X — UHS-II picks that take advantage of the redesigned card reader, plus what to know about the original Ally's overheating fix.",
+    "metaDescription": "Best microSD cards for the ASUS ROG Xbox Ally X: UHS-II picks that take advantage of the redesigned card reader, plus what to know about the original Ally's overheating fix.",
     "searchTerms": [
       "rog xbox ally x sd card",
       "rog xbox ally x microsd",
@@ -1238,7 +1238,7 @@
       ],
       "maxCapacity": "2TB"
     },
-    "whySpecs": "The ROG Xbox Ally X resolves the original ROG Ally's notorious SD-card-frying overheating bug with a complete motherboard redesign — ASUS physically moved the microSD reader away from the exhaust pathway that previously cooked cards with sustained thermal stress. The reader itself is UHS-II, so a V60/V90-rated card with A2 app performance will noticeably cut load times versus a budget UHS-I card, though standard UHS-I cards remain fully supported for backward compatibility.",
+    "whySpecs": "The ROG Xbox Ally X resolves the original ROG Ally's notorious SD-card-frying overheating bug with a complete motherboard redesign. ASUS physically moved the microSD reader away from the exhaust pathway that previously cooked cards with sustained thermal stress. The reader itself is UHS-II, so a V60/V90-rated card with A2 app performance will noticeably cut load times versus a budget UHS-I card, though standard UHS-I cards remain fully supported for backward compatibility.",
     "recommendedBrands": [
       {
         "id": "lexar-professional-1000x-microsd",
@@ -1256,7 +1256,7 @@
     "faq": [
       {
         "q": "Does the ROG Xbox Ally X still break SD cards like the original Ally?",
-        "a": "<b>No — ASUS redesigned the motherboard specifically to fix this.</b> The original ROG Ally placed the microSD reader directly next to the heavy exhaust vent, and sustained thermal stress caused premature card failures in some units. The Ally X physically relocates the reader away from that exhaust pathway, resolving the issue."
+        "a": "<b>No. ASUS redesigned the motherboard specifically to fix this.</b> The original ROG Ally placed the microSD reader directly next to the heavy exhaust vent, and sustained thermal stress caused premature card failures in some units. The Ally X physically relocates the reader away from that exhaust pathway, resolving the issue."
       },
       {
         "q": "What's the best reliable microSD card for the Ally X?",
@@ -1280,7 +1280,7 @@
     "name": "Lenovo Legion Go 2",
     "category": "Gaming Handhelds",
     "slug": "lenovo-legion-go-gen-2",
-    "metaDescription": "Best microSD cards for the Lenovo Legion Go 2 — high-capacity UHS-II picks for the 8.8-inch OLED handheld's AAA storage demands.",
+    "metaDescription": "Best microSD cards for the Lenovo Legion Go 2: high-capacity UHS-II picks for the 8.8-inch OLED handheld's AAA storage demands.",
     "searchTerms": [
       "lenovo legion go 2 microsd compatibility",
       "best high capacity sd card legion go oled",
@@ -1317,7 +1317,7 @@
     "faq": [
       {
         "q": "Is the Legion Go 2's microSD slot compatible with all standard cards?",
-        "a": "<b>Yes — the slot accepts standard microSD, microSDHC, and microSDXC cards</b> and supports UHS-II for full speed, while remaining backward compatible with UHS-I cards (at UHS-I speeds)."
+        "a": "<b>Yes, the slot accepts standard microSD, microSDHC, and microSDXC cards</b> and supports UHS-II for full speed, while remaining backward compatible with UHS-I cards (at UHS-I speeds)."
       },
       {
         "q": "What capacity should I get for the Legion Go 2's OLED library?",
@@ -1341,7 +1341,7 @@
     "name": "MSI Claw 8 EX AI+",
     "category": "Gaming Handhelds",
     "slug": "msi-claw-8-ex-ai-plus",
-    "metaDescription": "Best microSD cards for the MSI Claw 8 EX AI+ — A2-rated picks that keep up with Intel Arc XeSS asset streaming and avoid stutter on this Intel-powered handheld.",
+    "metaDescription": "Best microSD cards for the MSI Claw 8 EX AI+: A2-rated picks that keep up with Intel Arc XeSS asset streaming and avoid stutter on this Intel-powered handheld.",
     "searchTerms": [
       "msi claw 8 ex ai+ storage expansion",
       "intel arc handheld game stuttering sd card",
@@ -1360,7 +1360,7 @@
       ],
       "maxCapacity": "2TB"
     },
-    "whySpecs": "The Claw 8 EX AI+ pairs Intel's Arc G3 Extreme platform with an 80Whr battery for sustained, high-wattage portable performance, and leans on Intel XeSS AI upscaling that depends on fast, consistent asset streaming. Because Arc drivers are sensitive to delivery delays when streaming game assets from external storage, an A2-rated card with strong random read/write IOPS is essential to avoid stutter and micro-freezes — a plain V30 card without A2 will bottleneck the system under load.",
+    "whySpecs": "The Claw 8 EX AI+ pairs Intel's Arc G3 Extreme platform with an 80Whr battery for sustained, high-wattage portable performance, and leans on Intel XeSS AI upscaling that depends on fast, consistent asset streaming. Because Arc drivers are sensitive to delivery delays when streaming game assets from external storage, an A2-rated card with strong random read/write IOPS is essential to avoid stutter and micro-freezes. A plain V30 card without A2 will bottleneck the system under load.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-microsd-2tb",
@@ -1454,7 +1454,7 @@
     "name": "OneXPlayer 3",
     "category": "Gaming Handhelds",
     "slug": "onexplayer-3",
-    "metaDescription": "Best microSD cards for the OneXPlayer 3 — high-capacity A2/V30 picks for the Intel Arc G3 Extreme handheld's 8.8-inch 144Hz AMOLED display.",
+    "metaDescription": "Best microSD cards for the OneXPlayer 3: high-capacity A2/V30 picks for the Intel Arc G3 Extreme handheld's 8.8-inch 144Hz AMOLED display.",
     "searchTerms": [
       "onexplayer 3 microsd card size",
       "best sd card for intel arc g3 extreme handheld",
@@ -1515,7 +1515,7 @@
     "name": "Anbernic RG35XX SP",
     "category": "Gaming Handhelds",
     "slug": "anbernic-rg35xx-sp",
-    "metaDescription": "Best SD card setup for the Anbernic RG35XX SP — dual microSD guide with separate OS and ROM library card recommendations for this GBA SP-style clamshell.",
+    "metaDescription": "Best SD card setup for the Anbernic RG35XX SP: dual microSD guide with separate OS and ROM library card recommendations for this GBA SP-style clamshell.",
     "searchTerms": [
       "anbernic rg35xx sp best sd card setup",
       "rg35xx sp dual sd card guide",
@@ -1580,7 +1580,7 @@
     "name": "Anbernic RG406H / RG406V",
     "category": "Gaming Handhelds",
     "slug": "anbernic-rg406v-rg406h",
-    "metaDescription": "Best microSD cards for the Anbernic RG406H / RG406V — A2-rated, high-capacity picks for PS2 and GameCube emulation on this Android 13 handheld.",
+    "metaDescription": "Best microSD cards for the Anbernic RG406H / RG406V: A2-rated, high-capacity picks for PS2 and GameCube emulation on this Android 13 handheld.",
     "searchTerms": [
       "anbernic rg406v sd card compatibility",
       "best sd card for rg406h ps2 emulation",
@@ -1599,7 +1599,7 @@
       ],
       "maxCapacity": "2TB"
     },
-    "whySpecs": "Both the RG406H and RG406V run Android 13 with 8GB of RAM and a Unisoc T820 processor, capable of emulating heavier systems like PS2 and GameCube. The 128GB of internal UFS 2.2 storage fills up fast once large PS2/GameCube ISOs enter the picture, so most users rely heavily on the microSD expansion slot. Because Android actively caches emulator data and shader compilation onto external storage, an A2 application-performance rating is essential — it's what enables the fast random read/write operations Android depends on for smooth emulator front-end navigation.",
+    "whySpecs": "Both the RG406H and RG406V run Android 13 with 8GB of RAM and a Unisoc T820 processor, capable of emulating heavier systems like PS2 and GameCube. The 128GB of internal UFS 2.2 storage fills up fast once large PS2/GameCube ISOs enter the picture, so most users rely heavily on the microSD expansion slot. Because Android actively caches emulator data and shader compilation onto external storage, an A2 application-performance rating is essential. It's what enables the fast random read/write operations Android depends on for smooth emulator front-end navigation.",
     "recommendedBrands": [
       {
         "id": "samsung-pro-plus-microsd",
@@ -1613,11 +1613,11 @@
     "faq": [
       {
         "q": "Is 128GB of internal storage enough for PS2/GameCube emulation on the RG406V?",
-        "a": "<b>No — a microSD card is essential.</b> PS2 and GameCube ISOs are large, and 128GB of internal storage fills up quickly once you build out a real library. Plan to rely on the microSD slot for the bulk of your collection."
+        "a": "<b>No, a microSD card is essential.</b> PS2 and GameCube ISOs are large, and 128GB of internal storage fills up quickly once you build out a real library. Plan to rely on the microSD slot for the bulk of your collection."
       },
       {
         "q": "Why does the RG406H need an A2-rated card specifically?",
-        "a": "<b>Android 13 actively caches emulator data and shader compilation to external storage.</b> A2's random read/write performance is what keeps the emulator front-end and shader loading smooth — a card without A2 will feel sluggish even if its sequential speed looks fine on paper."
+        "a": "<b>Android 13 actively caches emulator data and shader compilation to external storage.</b> A2's random read/write performance is what keeps the emulator front-end and shader loading smooth. A card without A2 will feel sluggish even if its sequential speed looks fine on paper."
       },
       {
         "q": "What capacity should I get for the RG406V?",
@@ -1637,7 +1637,7 @@
     "name": "TrimUI Brick",
     "category": "Gaming Handhelds",
     "slug": "trimui-brick",
-    "metaDescription": "Best microSD cards for the TrimUI Brick (Brick Hammer) — A1/A2-rated picks that won't crash CrossMix-OS or other custom firmware flashes.",
+    "metaDescription": "Best microSD cards for the TrimUI Brick (Brick Hammer): A1/A2-rated picks that won't crash CrossMix-OS or other custom firmware flashes.",
     "searchTerms": [
       "trimui brick sd card",
       "trimui brick hammer microsd",
@@ -1698,7 +1698,7 @@
     "name": "AYN Odin 3 / Odin 2 Portal",
     "category": "Gaming Handhelds",
     "slug": "ayn-odin-3-odin-2-portal",
-    "metaDescription": "Best microSD cards for the AYN Odin 3 and Odin 2 Portal — high-capacity A2-rated picks for Snapdragon 8 Elite/8 Gen 2 PS2, GameCube, and Switch emulation.",
+    "metaDescription": "Best microSD cards for the AYN Odin 3 and Odin 2 Portal: high-capacity A2-rated picks for Snapdragon 8 Elite/8 Gen 2 PS2, GameCube, and Switch emulation.",
     "searchTerms": [
       "ayn odin 3 sd card",
       "odin 2 portal microsd",
@@ -1717,7 +1717,7 @@
       ],
       "maxCapacity": "1TB+ (theoretical 2TB)"
     },
-    "whySpecs": "These are premium, high-powered Android handhelds — the Odin 2 Portal packs a Snapdragon 8 Gen 2, and the Odin 3 steps up to a Snapdragon 8 Elite — built to handle PS2, GameCube, and Nintendo Switch emulation. Those systems' ROMs and ISOs are massive compared to retro 8/16-bit titles, so high-capacity, A2-rated storage isn't optional: a 128GB card fills up almost immediately, and budget cards without strong random read/write performance cause stuttering in higher-end emulators.",
+    "whySpecs": "These are premium, high-powered Android handhelds built to handle PS2, GameCube, and Nintendo Switch emulation. The Odin 2 Portal packs a Snapdragon 8 Gen 2, and the Odin 3 steps up to a Snapdragon 8 Elite. Those systems' ROMs and ISOs are massive compared to retro 8/16-bit titles, so high-capacity, A2-rated storage isn't optional: a 128GB card fills up almost immediately, and budget cards without strong random read/write performance cause stuttering in higher-end emulators.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd",
@@ -1759,7 +1759,7 @@
     "name": "Anbernic RG Cube",
     "category": "Gaming Handhelds",
     "slug": "anbernic-rg-cube",
-    "metaDescription": "Best microSD cards for the Anbernic RG Cube — reliable picks for this 1:1 square-screen Android 13 handheld built for DS/3DS and classic retro emulation.",
+    "metaDescription": "Best microSD cards for the Anbernic RG Cube: reliable picks for this 1:1 square-screen Android 13 handheld built for DS/3DS and classic retro emulation.",
     "searchTerms": [
       "anbernic rg cube sd card",
       "rg cube microsd",
@@ -1778,7 +1778,7 @@
       ],
       "maxCapacity": "2TB"
     },
-    "whySpecs": "The RG Cube's defining feature is its 3.95-inch, 1:1 aspect ratio display, running Android 13 on a Unisoc T820 processor. The square screen makes it the go-to machine for dual-screen systems like DS and 3DS, plus classic 8-bit and 16-bit retro titles. Because older ROMs have tiny file sizes, a 128GB card is the sweet spot for this community — retro purists generally don't need the 1TB+ capacity that PS2/Switch-focused devices demand, but they do need premium brand reliability to avoid corrupting hundreds of save states across a large curated library.",
+    "whySpecs": "The RG Cube's defining feature is its 3.95-inch, 1:1 aspect ratio display, running Android 13 on a Unisoc T820 processor. The square screen makes it the go-to machine for dual-screen systems like DS and 3DS, plus classic 8-bit and 16-bit retro titles. Because older ROMs have tiny file sizes, a 128GB card is the sweet spot for this community. Retro purists generally don't need the 1TB+ capacity that PS2/Switch-focused devices demand, but they do need premium brand reliability to avoid corrupting hundreds of save states across a large curated library.",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-microsd",
@@ -1800,7 +1800,7 @@
       },
       {
         "q": "Do I need a 1TB microSD card for the RG Cube?",
-        "a": "<b>No, most users don't.</b> Unlike PS2/Switch-focused Android handhelds, the RG Cube's core audience plays DS, 3DS, and classic retro titles with small file sizes. A 128GB card is the practical sweet spot — prioritize a premium, reliable brand over raw capacity to protect save states."
+        "a": "<b>No, most users don't.</b> Unlike PS2/Switch-focused Android handhelds, the RG Cube's core audience plays DS, 3DS, and classic retro titles with small file sizes. A 128GB card is the practical sweet spot. Prioritize a premium, reliable brand over raw capacity to protect save states."
       },
       {
         "q": "What microSD card brand is best for save-state reliability on the RG Cube?",
@@ -1820,7 +1820,7 @@
     "name": "Acer Predator Atlas 8",
     "category": "Gaming Handhelds",
     "slug": "acer-predator-atlas-8",
-    "metaDescription": "Best microSD cards for the Acer Predator Atlas 8 — UHS-II V60/V90 picks for Acer's flagship Windows gaming handheld.",
+    "metaDescription": "Best microSD cards for the Acer Predator Atlas 8: UHS-II V60/V90 picks for Acer's flagship Windows gaming handheld.",
     "searchTerms": [
       "acer predator atlas 8 sd card",
       "predator atlas 8 microsd",
@@ -1881,7 +1881,7 @@
     "name": "Retroid Pocket G2",
     "category": "Gaming Handhelds",
     "slug": "retroid-pocket-g2",
-    "metaDescription": "Best microSD cards for the Retroid Pocket G2 — A2-rated UHS-I picks for smooth Android emulation and asset streaming.",
+    "metaDescription": "Best microSD cards for the Retroid Pocket G2: A2-rated UHS-I picks for smooth Android emulation and asset streaming.",
     "searchTerms": [
       "retroid pocket g2 sd card",
       "rp g2 microsd",
@@ -1900,7 +1900,7 @@
       ],
       "maxCapacity": "2TB (theoretical)"
     },
-    "whySpecs": "The Pocket G2 slots into Retroid's Android lineup alongside the Pocket 6, aimed at PS2, GameCube, and Switch emulation. Those ROM/ISO libraries are far larger than 8/16-bit retro sets, so a card that's only rated for sequential speed isn't enough — A2's random read/write performance is what keeps menu navigation and asset loading smooth when the OS and games both live on the microSD card. V30 covers the sustained write side for downloading and copying large files onto the card.",
+    "whySpecs": "The Pocket G2 slots into Retroid's Android lineup alongside the Pocket 6, aimed at PS2, GameCube, and Switch emulation. Those ROM/ISO libraries are far larger than 8/16-bit retro sets, so a card that's only rated for sequential speed isn't enough. A2's random read/write performance is what keeps menu navigation and asset loading smooth when the OS and games both live on the microSD card. V30 covers the sustained write side for downloading and copying large files onto the card.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -1915,7 +1915,7 @@
     "faq": [
       {
         "q": "Is A2 rating important for the Retroid Pocket G2?",
-        "a": "<b>Yes.</b> When Android apps, custom launchers, and game files all run off the microSD card, A2's random IOPS performance is what keeps menus and emulator loading responsive — a card without it will feel noticeably sluggish even if its sequential speeds look fine on paper."
+        "a": "<b>Yes.</b> When Android apps, custom launchers, and game files all run off the microSD card, A2's random IOPS performance is what keeps menus and emulator loading responsive. A card without it will feel noticeably sluggish even if its sequential speeds look fine on paper."
       },
       {
         "q": "How much storage do I need on the Pocket G2?",
@@ -1934,7 +1934,7 @@
     "name": "AYANEO Pocket DS",
     "category": "Gaming Handhelds",
     "slug": "ayaneo-pocket-ds",
-    "metaDescription": "Best microSD cards for the AYANEO Pocket DS — reliable picks for this dual-screen Android handheld built for DS and 3DS emulation.",
+    "metaDescription": "Best microSD cards for the AYANEO Pocket DS: reliable picks for this dual-screen Android handheld built for DS and 3DS emulation.",
     "searchTerms": [
       "ayaneo pocket ds sd card",
       "ayaneo pocket ds microsd",
@@ -1953,7 +1953,7 @@
       ],
       "maxCapacity": "2TB"
     },
-    "whySpecs": "The Pocket DS is AYANEO's take on a dual-screen clamshell built specifically for Nintendo DS and 3DS emulation, running Android across a single microSD slot. Because DS and 3DS ROMs are small compared to PS2 or Switch libraries, raw capacity isn't the priority here — a 128-256GB card comfortably covers a full curated library. What matters more is a reliable, name-brand card with a solid A1 rating, since dual-screen emulators write frequent save states and a flaky card is the fastest way to lose progress.",
+    "whySpecs": "The Pocket DS is AYANEO's take on a dual-screen clamshell built specifically for Nintendo DS and 3DS emulation, running Android across a single microSD slot. Because DS and 3DS ROMs are small compared to PS2 or Switch libraries, raw capacity isn't the priority here. A 128-256GB card comfortably covers a full curated library. What matters more is a reliable, name-brand card with a solid A1 rating, since dual-screen emulators write frequent save states and a flaky card is the fastest way to lose progress.",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-microsd",
@@ -1992,7 +1992,7 @@
     "category": "Gaming Handhelds",
     "slug": "ayn-thor",
     "customTitle": "Best SD Card for AYN Thor: Up to 1TB, A2/V30 Speed",
-    "metaDescription": "Best microSD cards for the AYN Thor — high-capacity A2-rated picks for this premium Android handheld built for PS2, GameCube, and Switch emulation.",
+    "metaDescription": "Best microSD cards for the AYN Thor: high-capacity A2-rated picks for this premium Android handheld built for PS2, GameCube, and Switch emulation.",
     "searchTerms": [
       "ayn thor sd card",
       "ayn thor microsd",
@@ -2011,7 +2011,7 @@
       ],
       "maxCapacity": "1TB+ (theoretical 2TB)"
     },
-    "whySpecs": "AYN's Thor sits alongside the Odin 3 and Odin 2 Portal as a premium, high-powered Android handheld built for demanding emulation, including PS2, GameCube, and Switch titles. Those systems' game files dwarf classic 8/16-bit ROMs, so high-capacity, A2-rated storage matters from day one — a 128GB card fills up almost immediately, and a card without strong random read/write performance will stutter in higher-end emulators regardless of how fast its sequential speeds look.",
+    "whySpecs": "AYN's Thor sits alongside the Odin 3 and Odin 2 Portal as a premium, high-powered Android handheld built for demanding emulation, including PS2, GameCube, and Switch titles. Those systems' game files dwarf classic 8/16-bit ROMs, so high-capacity, A2-rated storage matters from day one. A 128GB card fills up almost immediately, and a card without strong random read/write performance will stutter in higher-end emulators regardless of how fast its sequential speeds look.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-microsd-2tb",

@@ -23,7 +23,7 @@
         ],
         "maxCapacity": "1TB (FAT32)"
       },
-      "whySpecs": "The X1-Carbon reads your sliced 3MF/G-code from the microSD card and writes timelapse frames and logs back to it during the print. The bottleneck here is <b>not raw speed — it's reliability and data integrity</b>. A single corrupt block on a cheap or worn card can stall or abort a multi-hour, multi-color AMS print that has already burned through real filament. Bambu ships the printer with a card and recommends formatting as <b>FAT32</b>; a name-brand A1/A2 card from SanDisk or Samsung in the 32-64GB range is the reliable sweet spot. Capacity is almost irrelevant (print files are only a few MB to tens of MB) — pay for a trustworthy card, not a huge one.",
+      "whySpecs": "The X1-Carbon reads your sliced 3MF/G-code from the microSD card and writes timelapse frames and logs back to it during the print. The bottleneck here is <b>not raw speed, but reliability and data integrity</b>. A single corrupt block on a cheap or worn card can stall or abort a multi-hour, multi-color AMS print that has already burned through real filament. Bambu ships the printer with a card and recommends formatting as <b>FAT32</b>; a name-brand A1/A2 card from SanDisk or Samsung in the 32-64GB range is the reliable sweet spot. Capacity is almost irrelevant (print files are only a few MB to tens of MB), so pay for a trustworthy card, not a huge one.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -42,7 +42,7 @@
         },
         {
           "q": "What size microSD card does the X1-Carbon need?",
-          "a": "<b>32GB is plenty</b> — sliced print files are only a few megabytes to tens of megabytes each. A 64GB card gives headroom for timelapses. Bambu recommends <b>FAT32 formatting</b>, which is simplest on cards up to 32GB; larger cards work but should be reformatted to FAT32 rather than the default exFAT."
+          "a": "<b>32GB is plenty</b>. Sliced print files are only a few megabytes to tens of megabytes each. A 64GB card gives headroom for timelapses. Bambu recommends <b>FAT32 formatting</b>, which is simplest on cards up to 32GB; larger cards work but should be reformatted to FAT32 rather than the default exFAT."
         },
         {
           "q": "Do I need a fast U3/V30 card for the X1-Carbon?",
@@ -79,7 +79,7 @@
         ],
         "maxCapacity": "1TB (FAT32)"
       },
-      "whySpecs": "The P1S uses the same microSD-based workflow as the rest of the Bambu ecosystem: the sliced file is read from the card and logs/timelapses are written back during the print. As the budget-flagship tier, it pairs naturally with a sensible mid-priced card rather than a premium one — there is <b>no print-quality benefit</b> to an expensive high-speed card here. A genuine SanDisk Ultra or Samsung EVO Select (Class 10 / U1, 32-64GB, FAT32) gives you the reliability that prevents failed prints without overpaying for V30/V60 speed you'll never use.",
+      "whySpecs": "The P1S uses the same microSD-based workflow as the rest of the Bambu ecosystem: the sliced file is read from the card and logs/timelapses are written back during the print. As the budget-flagship tier, it pairs naturally with a sensible mid-priced card rather than a premium one. There is <b>no print-quality benefit</b> to an expensive high-speed card here. A genuine SanDisk Ultra or Samsung EVO Select (Class 10 / U1, 32-64GB, FAT32) gives you the reliability that prevents failed prints without overpaying for V30/V60 speed you'll never use.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -94,15 +94,15 @@
       "faq": [
         {
           "q": "Is the P1S microSD card different from the X1-Carbon's?",
-          "a": "No — both use the same <b>microSD, FAT32</b> workflow. Any genuine Class 10 / U1 card that works in the X1-Carbon works identically in the P1S. The P1S simply lacks the X1C's lidar and some sensors; <b>storage requirements are the same</b>."
+          "a": "No, both use the same <b>microSD, FAT32</b> workflow. Any genuine Class 10 / U1 card that works in the X1-Carbon works identically in the P1S. The P1S simply lacks the X1C's lidar and some sensors; <b>storage requirements are the same</b>."
         },
         {
           "q": "What's the best value microSD card for the P1S?",
-          "a": "A <b>genuine SanDisk Ultra or Samsung EVO Select in 32-64GB</b>. The P1S is a value-tier printer, so there's no reason to buy an Extreme Pro or V60 card — the card never bottlenecks the print. Spend on a <b>trustworthy brand</b>, not raw speed."
+          "a": "A <b>genuine SanDisk Ultra or Samsung EVO Select in 32-64GB</b>. The P1S is a value-tier printer, so there's no reason to buy an Extreme Pro or V60 card. The card never bottlenecks the print. Spend on a <b>trustworthy brand</b>, not raw speed."
         },
         {
-          "q": "My P1S won't read the SD card — what now?",
-          "a": "Reseat the card, then <b>reformat it as FAT32</b> (not exFAT) from a computer. If it still fails, the card is likely <b>counterfeit or worn</b> — replace it with a name-brand card. Fake high-capacity cards bought cheaply online are the most common cause."
+          "q": "My P1S won't read the SD card. What now?",
+          "a": "Reseat the card, then <b>reformat it as FAT32</b> (not exFAT) from a computer. If it still fails, the card is likely <b>counterfeit or worn</b>, so replace it with a name-brand card. Fake high-capacity cards bought cheaply online are the most common cause."
         }
       ],
       "relatedDevices": [
@@ -135,7 +135,7 @@
         ],
         "maxCapacity": "1TB (FAT32)"
       },
-      "whySpecs": "The A1 is Bambu's open-frame, value-tier bed-slinger, and it reads print files from a microSD card just like its enclosed siblings. This is the most price-sensitive audience in the lineup, so the guidance is simple: buy a <b>genuine, reasonably priced Class 10 / U1 card</b> (SanDisk Ultra tier) and skip the Extreme Pro upsell entirely. The card does not affect print speed or quality — it only needs to read your files reliably and survive being inserted and removed. A 32GB card formatted FAT32 is all the A1 ever needs.",
+      "whySpecs": "The A1 is Bambu's open-frame, value-tier bed-slinger, and it reads print files from a microSD card just like its enclosed siblings. This is the most price-sensitive audience in the lineup, so the guidance is simple: buy a <b>genuine, reasonably priced Class 10 / U1 card</b> (SanDisk Ultra tier) and skip the Extreme Pro upsell entirely. The card does not affect print speed or quality. It only needs to read your files reliably and survive being inserted and removed. A 32GB card formatted FAT32 is all the A1 ever needs.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -150,7 +150,7 @@
       "faq": [
         {
           "q": "What microSD card should I buy for the Bambu Lab A1?",
-          "a": "A <b>genuine SanDisk Ultra or Samsung EVO Select, 32GB, formatted FAT32</b>. The A1 is a value printer and the card has no effect on print quality — it just needs to read files reliably. There's <b>no reason to buy a premium high-speed card</b>."
+          "a": "A <b>genuine SanDisk Ultra or Samsung EVO Select, 32GB, formatted FAT32</b>. The A1 is a value printer and the card has no effect on print quality. It just needs to read files reliably. There's <b>no reason to buy a premium high-speed card</b>."
         },
         {
           "q": "Does the A1 use the same card as the A1 mini?",
@@ -158,7 +158,7 @@
         },
         {
           "q": "Can I use a big 256GB or 512GB card in the A1?",
-          "a": "You can, but it's wasted money — print files are tiny. Larger cards also <b>default to exFAT and must be reformatted to FAT32</b> to be reliable. A small <b>32GB FAT32 card</b> is the safer, cheaper choice."
+          "a": "You can, but it's wasted money, because print files are tiny. Larger cards also <b>default to exFAT and must be reformatted to FAT32</b> to be reliable. A small <b>32GB FAT32 card</b> is the safer, cheaper choice."
         }
       ],
       "relatedDevices": [
@@ -191,7 +191,7 @@
         ],
         "maxCapacity": "128GB (FAT32)"
       },
-      "whySpecs": "The Ender 3 V3 prints offline from a microSD card, and like most FDM printers its card requirements are very modest — a basic <b>Class 10 / U1</b> card reads G-code with room to spare. The thing that actually trips up Ender owners is <b>formatting and reliability</b>, not speed: the printer is happiest with a <b>FAT32-formatted card of 32GB or less</b>, and many 'SD card not detected' complaints trace back to a card formatted as exFAT, a worn bundled card, or a counterfeit. Buy a genuine name-brand card, keep it small, and format FAT32. There is no benefit to a fast or high-capacity card here — this is a volume-friendly, budget recommendation.",
+      "whySpecs": "The Ender 3 V3 prints offline from a microSD card, and like most FDM printers its card requirements are very modest. A basic <b>Class 10 / U1</b> card reads G-code with room to spare. The thing that actually trips up Ender owners is <b>formatting and reliability</b>, not speed: the printer is happiest with a <b>FAT32-formatted card of 32GB or less</b>, and many 'SD card not detected' complaints trace back to a card formatted as exFAT, a worn bundled card, or a counterfeit. Buy a genuine name-brand card, keep it small, and format FAT32. There is no benefit to a fast or high-capacity card here. This is a volume-friendly, budget recommendation.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -206,7 +206,7 @@
       "faq": [
         {
           "q": "Why is my Ender 3 V3 not detecting the SD card?",
-          "a": "Almost always a <b>formatting issue</b>. The Ender 3 V3 wants a card formatted as <b>FAT32</b> — cards 64GB and larger ship as exFAT and won't be read until reformatted. Use a <b>32GB-or-smaller card formatted FAT32</b>, and replace the worn bundled card if problems persist."
+          "a": "Almost always a <b>formatting issue</b>. The Ender 3 V3 wants a card formatted as <b>FAT32</b>, and cards 64GB and larger ship as exFAT and won't be read until reformatted. Use a <b>32GB-or-smaller card formatted FAT32</b>, and replace the worn bundled card if problems persist."
         },
         {
           "q": "What size and speed microSD does the Ender 3 V3 need?",
@@ -247,7 +247,7 @@
         ],
         "maxCapacity": "2TB (FAT32)"
       },
-      "whySpecs": "The A1 mini prints from a microSD card and shares the whole Bambu storage workflow: Bambu's own wiki calls for a card <b>formatted FAT32</b> and rated at least <b>Class 10 / U1 (10 MB/s)</b>, and officially supports up to 2TB if you format it on the printer. The card never bottlenecks print quality — what matters is integrity. The A1 mini's one quirk worth knowing: the slot is <b>not hot-swappable</b>, so you should always <b>safely eject the card from the menu</b> before pulling it, or you risk corrupting files and failing the next print. A genuine 32-64GB SanDisk or Samsung card is the right call.",
+      "whySpecs": "The A1 mini prints from a microSD card and shares the whole Bambu storage workflow: Bambu's own wiki calls for a card <b>formatted FAT32</b> and rated at least <b>Class 10 / U1 (10 MB/s)</b>, and officially supports up to 2TB if you format it on the printer. The card never bottlenecks print quality. What matters is integrity. The A1 mini's one quirk worth knowing: the slot is <b>not hot-swappable</b>, so you should always <b>safely eject the card from the menu</b> before pulling it, or you risk corrupting files and failing the next print. A genuine 32-64GB SanDisk or Samsung card is the right call.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -262,11 +262,11 @@
       "faq": [
         {
           "q": "What microSD card format does the Bambu A1 mini need?",
-          "a": "<b>FAT32.</b> Windows formats cards over 32GB as exFAT by default, which the A1 mini won't read reliably — so either use a 32GB card, or <b>format a larger card to FAT32 directly on the printer</b> (Bambu supports up to 2TB this way). At least <b>Class 10 / U1</b> is recommended."
+          "a": "<b>FAT32.</b> Windows formats cards over 32GB as exFAT by default, which the A1 mini won't read reliably, so either use a 32GB card, or <b>format a larger card to FAT32 directly on the printer</b> (Bambu supports up to 2TB this way). At least <b>Class 10 / U1</b> is recommended."
         },
         {
           "q": "Why does my A1 mini SD card get corrupted?",
-          "a": "The A1 series slot is <b>not hot-swappable</b>. If you yank the card without ejecting it, files can corrupt and the next print can fail. <b>Always use the 'safely eject' option in the menu</b> before removing the card — this is the single most common cause of A1 mini card problems."
+          "a": "The A1 series slot is <b>not hot-swappable</b>. If you yank the card without ejecting it, files can corrupt and the next print can fail. <b>Always use the 'safely eject' option in the menu</b> before removing the card. This is the single most common cause of A1 mini card problems."
         },
         {
           "q": "Does the A1 mini need a fast or large card?",
@@ -303,7 +303,7 @@
         ],
         "maxCapacity": "128GB (FAT32)"
       },
-      "whySpecs": "Unlike most modern printers, the budget-favorite Ender 3 V3 SE takes a <b>full-size SD card</b> (it also has a USB-C port) — easier to handle than a fiddly microSD and what the bundled card uses. Requirements are minimal: a basic <b>Class 10 / U1</b> card reads G-code with room to spare, and there's no benefit to a fast or high-capacity card. As with the rest of the Ender line, the real-world gotcha is <b>formatting</b>: 'SD card not reading' almost always means the card is exFAT or NTFS instead of <b>FAT32</b>, or the cheap bundled card has worn out. Keep it at 32GB or under, format FAT32, and use a genuine name-brand card.",
+      "whySpecs": "Unlike most modern printers, the budget-favorite Ender 3 V3 SE takes a <b>full-size SD card</b> (it also has a USB-C port), which is easier to handle than a fiddly microSD and what the bundled card uses. Requirements are minimal: a basic <b>Class 10 / U1</b> card reads G-code with room to spare, and there's no benefit to a fast or high-capacity card. As with the rest of the Ender line, the real-world gotcha is <b>formatting</b>: 'SD card not reading' almost always means the card is exFAT or NTFS instead of <b>FAT32</b>, or the cheap bundled card has worn out. Keep it at 32GB or under, format FAT32, and use a genuine name-brand card.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-sd-uhs1"
@@ -318,7 +318,7 @@
       "faq": [
         {
           "q": "Does the Ender 3 V3 SE use a microSD or full-size SD card?",
-          "a": "A <b>full-size SD card</b> — not microSD. This is a deliberate choice by Creality (full-size cards are easier to handle and harder to lose). It also has a <b>USB-C port</b> as an alternative way to load files."
+          "a": "A <b>full-size SD card</b>, not microSD. This is a deliberate choice by Creality (full-size cards are easier to handle and harder to lose). It also has a <b>USB-C port</b> as an alternative way to load files."
         },
         {
           "q": "Why won't my Ender 3 V3 SE read the SD card?",
@@ -359,7 +359,7 @@
         ],
         "maxCapacity": "128GB (FAT32)"
       },
-      "whySpecs": "The Ender 3 V3 KE is the Klipper-powered, high-speed (200mm/s+) variant, and it accepts a <b>microSD card</b> alongside WiFi/LAN and USB transfer. Even though the KE prints faster than a stock Ender, that speed comes from the motion system and firmware — it does <b>not</b> demand a faster SD card. The card only needs to hand over the file reliably, so a <b>Class 10 / U1</b> microSD is still all that's required. Because the KE leans on network printing, many owners use the card mainly as an offline backup; keep it genuine, format it <b>FAT32</b>, and it will stay out of your way.",
+      "whySpecs": "The Ender 3 V3 KE is the Klipper-powered, high-speed (200mm/s+) variant, and it accepts a <b>microSD card</b> alongside WiFi/LAN and USB transfer. Even though the KE prints faster than a stock Ender, that speed comes from the motion system and firmware. It does <b>not</b> demand a faster SD card. The card only needs to hand over the file reliably, so a <b>Class 10 / U1</b> microSD is still all that's required. Because the KE leans on network printing, many owners use the card mainly as an offline backup; keep it genuine, format it <b>FAT32</b>, and it will stay out of your way.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -374,15 +374,15 @@
       "faq": [
         {
           "q": "Does a faster Ender 3 V3 KE need a faster SD card?",
-          "a": "No. The KE's high speed comes from its <b>Klipper firmware and motion system</b>, not the card. G-code is small and read slowly, so a standard <b>Class 10 / U1 microSD</b> is all you need — a U3/V30 card adds cost with no benefit."
+          "a": "No. The KE's high speed comes from its <b>Klipper firmware and motion system</b>, not the card. G-code is small and read slowly, so a standard <b>Class 10 / U1 microSD</b> is all you need. A U3/V30 card adds cost with no benefit."
         },
         {
           "q": "Can I print over WiFi instead of using the SD card on the KE?",
-          "a": "Yes — the V3 KE supports <b>WiFi/LAN and USB</b> in addition to microSD. Many owners send jobs over the network and keep a microSD purely as an <b>offline backup</b>. Either way, a reliable FAT32-formatted card is worth having."
+          "a": "Yes, the V3 KE supports <b>WiFi/LAN and USB</b> in addition to microSD. Many owners send jobs over the network and keep a microSD purely as an <b>offline backup</b>. Either way, a reliable FAT32-formatted card is worth having."
         },
         {
           "q": "What microSD card should I use for the Ender 3 V3 KE?",
-          "a": "A <b>genuine 32-64GB SanDisk or Samsung, Class 10 / U1, formatted FAT32</b>. Avoid cheap no-name cards — counterfeit and worn cards are the usual cause of read errors and failed prints on any Ender."
+          "a": "A <b>genuine 32-64GB SanDisk or Samsung, Class 10 / U1, formatted FAT32</b>. Avoid cheap no-name cards. Counterfeit and worn cards are the usual cause of read errors and failed prints on any Ender."
         }
       ],
       "relatedDevices": [
@@ -415,7 +415,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "Shoots 5.3K60, 4K120 and 2.7K240. <b>V30 is the floor, not a nice-to-have</b> — it guarantees 30 MB/s of sustained write, which comfortably covers the Hero 13's High bitrate setting of roughly 120 Mbps (about 15 MB/s) with enough headroom that a card slowing down mid-clip won't drop frames or corrupt the file. GoPro's current guidance also asks for an <b>A2</b> rating on top of V30, and the Hero 13 supports cards up to <b>1TB</b>, so there's no reason to cap yourself at 512GB if you shoot long days.",
+      "whySpecs": "Shoots 5.3K60, 4K120 and 2.7K240. <b>V30 is the floor, not a nice-to-have</b>. It guarantees 30 MB/s of sustained write, which comfortably covers the Hero 13's High bitrate setting of roughly 120 Mbps (about 15 MB/s) with enough headroom that a card slowing down mid-clip won't drop frames or corrupt the file. GoPro's current guidance also asks for an <b>A2</b> rating on top of V30, and the Hero 13 supports cards up to <b>1TB</b>, so there's no reason to cap yourself at 512GB if you shoot long days.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -437,11 +437,11 @@
         },
         {
           "q": "What's the fastest card I should get?",
-          "a": "<b>V30 speed class is sufficient for standard GoPro Hero 13 recording</b>. V60 or faster cards are useful only for professional multi-camera workflows, simultaneous backup recording, or future-proofing for newer, more demanding cameras. The Hero 13 has a UHS-I slot, so a UHS-II card will work but will simply run at UHS-I speeds in the camera — you'd only see the extra speed when offloading footage in a UHS-II reader."
+          "a": "<b>V30 speed class is sufficient for standard GoPro Hero 13 recording</b>. V60 or faster cards are useful only for professional multi-camera workflows, simultaneous backup recording, or future-proofing for newer, more demanding cameras. The Hero 13 has a UHS-I slot, so a UHS-II card will work but will simply run at UHS-I speeds in the camera. You'd only see the extra speed when offloading footage in a UHS-II reader."
         },
         {
           "q": "Does the GoPro Hero 13 support a 1TB microSD card?",
-          "a": "<b>Yes — GoPro supports cards up to 1TB on the Hero 13.</b> Older guidance capping GoPro at 512GB is out of date. A 1TB card is worth it if you shoot all-day sessions and don't want to swap cards in the field; otherwise two 256GB or 512GB cards are the safer buy, because a single failed card takes down everything you shot rather than half of it."
+          "a": "<b>Yes, GoPro supports cards up to 1TB on the Hero 13.</b> Older guidance capping GoPro at 512GB is out of date. A 1TB card is worth it if you shoot all-day sessions and don't want to swap cards in the field; otherwise two 256GB or 512GB cards are the safer buy, because a single failed card takes down everything you shot rather than half of it."
         },
         {
           "q": "How often should I replace my SD card?",
@@ -479,7 +479,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "Shoots 5.3K video at various frame rates, with a High bitrate setting of roughly 120 Mbps. V30 cards guarantee 30 MB/s of sustained write, which leaves comfortable headroom over that — the point isn't peak speed but that the card never dips below the camera's demand mid-clip, which is what causes dropped frames and corrupted files. GoPro's current guidance pairs V30 with an <b>A2</b> rating, and the Hero 12 handles cards up to <b>1TB</b>.",
+      "whySpecs": "Shoots 5.3K video at various frame rates, with a High bitrate setting of roughly 120 Mbps. V30 cards guarantee 30 MB/s of sustained write, which leaves comfortable headroom over that. The point isn't peak speed but that the card never dips below the camera's demand mid-clip, which is what causes dropped frames and corrupted files. GoPro's current guidance pairs V30 with an <b>A2</b> rating, and the Hero 12 handles cards up to <b>1TB</b>.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -528,7 +528,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Shoots 5.6K30 spherical video in 360 mode, and up to 1440p60 as a single-lens camera in HERO mode — note the MAX is <b>not</b> a 4K camera in HERO mode, which surprises people cross-shopping it against a Hero Black. 360 capture is the demanding mode: it's stitching two sensors into one high-bitrate stream, so V30's guaranteed 30 MB/s sustained write is what keeps long spherical clips from dropping frames. The MAX has a UHS-I slot and GoPro's approved-card list for it is more conservative than for current models, so stick to a well-known V30 card rather than the largest one you can find.",
+      "whySpecs": "Shoots 5.6K30 spherical video in 360 mode, and up to 1440p60 as a single-lens camera in HERO mode. Note the MAX is <b>not</b> a 4K camera in HERO mode, which surprises people cross-shopping it against a Hero Black. 360 capture is the demanding mode: it's stitching two sensors into one high-bitrate stream, so V30's guaranteed 30 MB/s sustained write is what keeps long spherical clips from dropping frames. The MAX has a UHS-I slot and GoPro's approved-card list for it is more conservative than for current models, so stick to a well-known V30 card rather than the largest one you can find.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -550,7 +550,7 @@
         },
         {
           "q": "How much storage for 360 content?",
-          "a": "<b>In 360 mode, a 128GB microSD card holds roughly 2.5 hours of footage.</b> Spherical capture combines two sensors into one stream, so it eats storage noticeably faster than HERO mode does — but on a long shoot the limit you hit first is usually battery life, not card space. A 256GB card comfortably covers a full day of intermittent 360 capture."
+          "a": "<b>In 360 mode, a 128GB microSD card holds roughly 2.5 hours of footage.</b> Spherical capture combines two sensors into one stream, so it eats storage noticeably faster than HERO mode does, but on a long shoot the limit you hit first is usually battery life, not card space. A 256GB card comfortably covers a full day of intermittent 360 capture."
         }
       ],
       "relatedDevices": [
@@ -629,7 +629,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum for the Osmo Pocket 3, with a maximum capacity of 512GB. The Pocket 3 shoots 4K/120fps video and these are DJI's published specifications. Faster UHS-II cards work in the Pocket 3 but offer no recording advantage over a good UHS-I card — the benefit is only in faster file transfers to a computer.",
+      "whySpecs": "DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum for the Osmo Pocket 3, with a maximum capacity of 512GB. The Pocket 3 shoots 4K/120fps video and these are DJI's published specifications. Faster UHS-II cards work in the Pocket 3 but offer no recording advantage over a good UHS-I card. The benefit is only in faster file transfers to a computer.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -644,7 +644,7 @@
       "faq": [
         {
           "q": "What are DJI's official microSD card requirements for the Osmo Pocket 3?",
-          "a": "<b>DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum, with a maximum supported capacity of 512GB.</b> These are DJI's published specifications for the Pocket 3. Cards meeting these specs — such as the SanDisk Extreme, Lexar Professional Silver, and Kingston Canvas Go Plus — are the safe choices for reliable 4K recording."
+          "a": "<b>DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum, with a maximum supported capacity of 512GB.</b> These are DJI's published specifications for the Pocket 3. Cards meeting these specs, such as the SanDisk Extreme, Lexar Professional Silver, and Kingston Canvas Go Plus, are the safe choices for reliable 4K recording."
         },
         {
           "q": "How much 4K video can a 128GB card hold on the Pocket 3?",
@@ -829,7 +829,7 @@
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum for the Osmo Action 4, with a maximum supported capacity of 2TB. The Action 4 records 4K at 120fps with exceptional low-light performance from its large 1/1.3-inch sensor, which produces higher bitrates than typical action cameras — making the V30 minimum a firm requirement, not a suggestion.",
+      "whySpecs": "DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum for the Osmo Action 4, with a maximum supported capacity of 2TB. The Action 4 records 4K at 120fps with exceptional low-light performance from its large 1/1.3-inch sensor, which produces higher bitrates than typical action cameras, making the V30 minimum a firm requirement, not a suggestion.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -844,7 +844,7 @@
       "faq": [
         {
           "q": "What are DJI's official microSD card requirements for the Osmo Action 4?",
-          "a": "<b>DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum, with a maximum supported capacity of 2TB.</b> These are DJI's published specifications for the Osmo Action 4. Cards meeting these specs — such as the SanDisk Extreme, Lexar Professional 1000x, and Kingston Canvas Go Plus — are the safe choices for reliable 4K/120fps recording."
+          "a": "<b>DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum, with a maximum supported capacity of 2TB.</b> These are DJI's published specifications for the Osmo Action 4. Cards meeting these specs, such as the SanDisk Extreme, Lexar Professional 1000x, and Kingston Canvas Go Plus, are the safe choices for reliable 4K/120fps recording."
         },
         {
           "q": "Action 4 vs GoPro Hero 12 - same cards?",
@@ -1223,7 +1223,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "The Osmo Pocket 4 continues DJI's gimbal-stabilized pocket camera line with higher-resolution 4K recording than the Pocket 3. DJI officially requires a UHS-I microSD card with U3/V30 minimum, and the camera runs the same on-insertion speed check as the rest of the Osmo lineup — an underrated card triggers a <b>\"Card Too Slow\"</b> error and blocks recording outright. UHS-II cards work but only speed up file transfers to a computer, not in-camera recording.",
+      "whySpecs": "The Osmo Pocket 4 continues DJI's gimbal-stabilized pocket camera line with higher-resolution 4K recording than the Pocket 3. DJI officially requires a UHS-I microSD card with U3/V30 minimum, and the camera runs the same on-insertion speed check as the rest of the Osmo lineup. An underrated card triggers a <b>\"Card Too Slow\"</b> error and blocks recording outright. UHS-II cards work but only speed up file transfers to a computer, not in-camera recording.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -1238,7 +1238,7 @@
       "faq": [
         {
           "q": "Do I need a UHS-II card for the Osmo Pocket 4?",
-          "a": "<b>No.</b> DJI's official minimum is U3/V30 UHS-I. A UHS-II card will work but only provides faster file transfers to a computer — it does not unlock higher recording quality or prevent the 'Card Too Slow' error any better than a good UHS-I V30 card."
+          "a": "<b>No.</b> DJI's official minimum is U3/V30 UHS-I. A UHS-II card will work but only provides faster file transfers to a computer. It does not unlock higher recording quality or prevent the 'Card Too Slow' error any better than a good UHS-I V30 card."
         }
       ],
       "relatedDevices": [
@@ -1253,7 +1253,7 @@
       "name": "DJI Lito X1",
       "category": "Action Cameras",
       "slug": "dji-lito-x1",
-      "metaDescription": "Best microSD cards for the DJI Lito X1 — V30-rated picks for DJI's compact wearable action camera.",
+      "metaDescription": "Best microSD cards for the DJI Lito X1: V30-rated picks for DJI's compact wearable action camera.",
       "searchTerms": [
         "dji lito x1 sd card",
         "dji lito x1 microsd",
@@ -1271,7 +1271,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "The Lito X1 is DJI's compact, ultra-wearable entry in the action camera lineup, aimed at continuous POV capture rather than mounted setups. Despite its small form factor, it records at a high enough bitrate that a card without a verified V30 sustained write speed will trigger DJI's familiar <b>\"Card Too Slow\"</b> error and halt recording. Because the camera is designed for grab-and-go use, a reliable name-brand card matters just as much as raw capacity — a dropped recording mid-clip is the most common complaint with underrated cards.",
+      "whySpecs": "The Lito X1 is DJI's compact, ultra-wearable entry in the action camera lineup, aimed at continuous POV capture rather than mounted setups. Despite its small form factor, it records at a high enough bitrate that a card without a verified V30 sustained write speed will trigger DJI's familiar <b>\"Card Too Slow\"</b> error and halt recording. Because the camera is designed for grab-and-go use, a reliable name-brand card matters just as much as raw capacity. A dropped recording mid-clip is the most common complaint with underrated cards.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -1283,7 +1283,7 @@
       "faq": [
         {
           "q": "Why does my DJI Lito X1 stop recording partway through a clip?",
-          "a": "<b>This is almost always caused by a card that can't sustain 30 MB/s writes.</b> The Lito X1 runs the same 'Card Too Slow' protection as other DJI action cameras — use a verified V30 microSD card from a reputable brand to avoid interrupted recordings."
+          "a": "<b>This is almost always caused by a card that can't sustain 30 MB/s writes.</b> The Lito X1 runs the same 'Card Too Slow' protection as other DJI action cameras, so use a verified V30 microSD card from a reputable brand to avoid interrupted recordings."
         }
       ],
       "relatedDevices": [
@@ -1298,7 +1298,7 @@
       "name": "Insta360 Ace Pro 2",
       "category": "Action Cameras",
       "slug": "insta360-ace-pro-2",
-      "metaDescription": "Best microSD cards for the Insta360 Ace Pro 2 — V30-rated picks for this flagship flip-screen action camera.",
+      "metaDescription": "Best microSD cards for the Insta360 Ace Pro 2: V30-rated picks for this flagship flip-screen action camera.",
       "searchTerms": [
         "insta360 ace pro 2 sd card",
         "ace pro 2 microsd",
@@ -1347,7 +1347,7 @@
       "name": "GoPro Hero 14 Black",
       "category": "Action Cameras",
       "slug": "gopro-hero-14-black",
-      "metaDescription": "Best microSD cards for the GoPro Hero 14 Black — V30-rated picks for stable 5.3K+ recording.",
+      "metaDescription": "Best microSD cards for the GoPro Hero 14 Black: V30-rated picks for stable 5.3K+ recording.",
       "searchTerms": [
         "gopro hero 14 black sd card",
         "hero 14 microsd",
@@ -1396,7 +1396,7 @@
       "name": "GoPro Hero 9 Black",
       "category": "Action Cameras",
       "slug": "gopro-hero-9-black",
-      "metaDescription": "Best microSD cards for the GoPro Hero 9 Black — V30-rated picks for stable 5K recording.",
+      "metaDescription": "Best microSD cards for the GoPro Hero 9 Black: V30-rated picks for stable 5K recording.",
       "searchTerms": [
         "gopro hero 9 black sd card",
         "hero 9 microsd",
@@ -1415,7 +1415,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "The Hero 9 Black shoots 5K30 and 4K60 video, both demanding enough that GoPro officially requires a <b>V30-rated</b> microSD card to guarantee the sustained 30 MB/s write speed needed to avoid dropped frames or corrupted clips. GoPro tested and officially supports capacities up to <b>256GB</b> on this model — cards larger than that may work with modern firmware but aren't officially validated, so 256GB is the safe ceiling if you want guaranteed compatibility.",
+      "whySpecs": "The Hero 9 Black shoots 5K30 and 4K60 video, both demanding enough that GoPro officially requires a <b>V30-rated</b> microSD card to guarantee the sustained 30 MB/s write speed needed to avoid dropped frames or corrupted clips. GoPro tested and officially supports capacities up to <b>256GB</b> on this model. Cards larger than that may work with modern firmware but aren't officially validated, so 256GB is the safe ceiling if you want guaranteed compatibility.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -1870,7 +1870,7 @@
         ],
         "maxCapacity": "1TB (microSDXC)"
       },
-      "whySpecs": "The H4essential records up to 6 simultaneous tracks in 32-bit float WAV (plus BWF/iXML support), and 32-bit float files are large even before you add multitrack overhead — there's no clipping to worry about, but file sizes climb fast. Zoom's manual lists microSDHC support from 4GB-32GB and <b>microSDXC support up to 1TB</b>, so the practical ceiling for long multitrack sessions is a 1TB card, not the smaller capacities most recorder pages mention. U3/V30 is enough to keep up with 6-track 32-bit float writes without dropouts.",
+      "whySpecs": "The H4essential records up to 6 simultaneous tracks in 32-bit float WAV (plus BWF/iXML support), and 32-bit float files are large even before you add multitrack overhead. There's no clipping to worry about, but file sizes climb fast. Zoom's manual lists microSDHC support from 4GB-32GB and <b>microSDXC support up to 1TB</b>, so the practical ceiling for long multitrack sessions is a 1TB card, not the smaller capacities most recorder pages mention. U3/V30 is enough to keep up with 6-track 32-bit float writes without dropouts.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -1882,11 +1882,11 @@
       "faq": [
         {
           "q": "What is the maximum SD card size for the Zoom H4essential?",
-          "a": "<b>1TB, using a microSDXC card.</b> The official manual specifies microSDHC support from 4GB to 32GB and microSDXC support up to 1TB — that 1TB ceiling is the number to plan around for long 32-bit float multitrack sessions."
+          "a": "<b>1TB, using a microSDXC card.</b> The official manual specifies microSDHC support from 4GB to 32GB and microSDXC support up to 1TB, and that 1TB ceiling is the number to plan around for long 32-bit float multitrack sessions."
         },
         {
           "q": "Do I need a fast card for 32-bit float recording on the H4essential?",
-          "a": "<b>Yes — use a U3/V30-rated card.</b> Recording up to 6 simultaneous tracks in 32-bit float WAV produces a high sustained data rate. A V30 card keeps pace without dropped frames or write errors during long sessions."
+          "a": "<b>Yes, use a U3/V30-rated card.</b> Recording up to 6 simultaneous tracks in 32-bit float WAV produces a high sustained data rate. A V30 card keeps pace without dropped frames or write errors during long sessions."
         }
       ],
       "relatedDevices": [
@@ -1930,7 +1930,7 @@
       "faq": [
         {
           "q": "What is the maximum SD card size for the Tascam Portacapture X6?",
-          "a": "<b>512GB, using a microSDXC card.</b> That's the official ceiling — there's no need to shop for 1TB cards for this device, but a 256GB-512GB card is worth the upgrade over a smaller one given how fast 6-track 32-bit float projects fill storage."
+          "a": "<b>512GB, using a microSDXC card.</b> That's the official ceiling, so there's no need to shop for 1TB cards for this device, but a 256GB-512GB card is worth the upgrade over a smaller one given how fast 6-track 32-bit float projects fill storage."
         },
         {
           "q": "How is the Portacapture X6 different from the Tascam DR-05X?",
@@ -1964,7 +1964,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Professional 8K camera recording. 8K RAW (Cinema RAW Light) can only be recorded to a CFexpress Type B card — the SD slot can't handle it at all. The SD UHS-II slot needs a V90 card for standard 8K, while V60 is enough for 4K. High bitrate video demands fast, dual card slots for safety.",
+      "whySpecs": "Professional 8K camera recording. 8K RAW (Cinema RAW Light) can only be recorded to a CFexpress Type B card, and the SD slot can't handle it at all. The SD UHS-II slot needs a V90 card for standard 8K, while V60 is enough for 4K. High bitrate video demands fast, dual card slots for safety.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-cfexpress"
@@ -1976,7 +1976,7 @@
       "faq": [
         {
           "q": "Do I need two cards for R5?",
-          "a": "<b>Yes, the Canon EOS R5 has one CFexpress Type B slot and one SD UHS-II slot, and Canon recommends using both for safety</b>. <b>Dual-slot recording provides a backup during critical sessions</b>, though only the CFexpress card can capture 8K RAW — the SD card is a backup for lower-bitrate formats."
+          "a": "<b>Yes, the Canon EOS R5 has one CFexpress Type B slot and one SD UHS-II slot, and Canon recommends using both for safety</b>. <b>Dual-slot recording provides a backup during critical sessions</b>, though only the CFexpress card can capture 8K RAW. The SD card is a backup for lower-bitrate formats."
         },
         {
           "q": "Can I shoot 4K with V30 cards?",
@@ -4696,7 +4696,7 @@
         ],
         "maxCapacity": "SDXC-compatible (no official max published by Canon; 128–256GB SDXC cards work in practice)"
       },
-      "whySpecs": "Canon's own compatibility docs confirm SDHC/SDXC support for this 2011 compact, but Canon never published a specific max card size — treat very-high-capacity claims (e.g. 2TB) as theoretical SDXC-spec ceilings, not tested numbers.",
+      "whySpecs": "Canon's own compatibility docs confirm SDHC/SDXC support for this 2011 compact, but Canon never published a specific max card size, so treat very-high-capacity claims (e.g. 2TB) as theoretical SDXC-spec ceilings, not tested numbers.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-sd-uhs1"
@@ -4708,7 +4708,7 @@
       "faq": [
         {
           "q": "What's the largest SD card the ELPH 100 HS can use?",
-          "a": "<b>Canon never published an official maximum for this 2011 compact</b> — it's SDXC-compatible and 128–256GB cards work in practice, but treat any larger claim as a theoretical spec ceiling rather than a Canon-tested figure."
+          "a": "<b>Canon never published an official maximum for this 2011 compact</b>. It's SDXC-compatible and 128–256GB cards work in practice, but treat any larger claim as a theoretical spec ceiling rather than a Canon-tested figure."
         }
       ],
       "relatedDevices": [
@@ -4750,7 +4750,7 @@
       "faq": [
         {
           "q": "Can the DSC-W800 use Memory Stick cards instead of SD?",
-          "a": "<b>Yes, but only Memory Stick PRO Duo</b> — Sony's help guide confirms PRO Duo is tested up to 64GB alongside SD/SDHC/SDXC. Plain (non-PRO) Memory Stick Duo isn't supported for full functionality."
+          "a": "<b>Yes, but only Memory Stick PRO Duo</b>. Sony's help guide confirms PRO Duo is tested up to 64GB alongside SD/SDHC/SDXC. Plain (non-PRO) Memory Stick Duo isn't supported for full functionality."
         }
       ],
       "relatedDevices": [
@@ -4780,7 +4780,7 @@
         ],
         "maxCapacity": "64GB (SDXC)"
       },
-      "whySpecs": "This camera predates UHS-I/UHS-II bus-speed standards entirely — manual only references standard SD Speed Class, not UHS; a UHS card works but simply falls back to non-UHS speeds.",
+      "whySpecs": "This camera predates UHS-I/UHS-II bus-speed standards entirely. The manual only references standard SD Speed Class, not UHS; a UHS card works but simply falls back to non-UHS speeds.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-sd-uhs1"
@@ -4792,7 +4792,7 @@
       "faq": [
         {
           "q": "Is it worth buying a UHS-II card for the Coolpix S3100?",
-          "a": "<b>No — this camera predates the UHS-I/UHS-II bus-speed standards entirely.</b> Its interface can't use UHS bus speeds at all, so a UHS card simply falls back to non-UHS speeds; it's not just poor value, it's functionally inert here."
+          "a": "<b>No. This camera predates the UHS-I/UHS-II bus-speed standards entirely.</b> Its interface can't use UHS bus speeds at all, so a UHS card simply falls back to non-UHS speeds; it's not just poor value, it's functionally inert here."
         }
       ],
       "relatedDevices": [
@@ -4823,7 +4823,7 @@
         ],
         "maxCapacity": "2TB (SDXC spec limit)"
       },
-      "whySpecs": "The Raspberry Pi 5 boots its operating system from the microSD card, and it's the first Pi that can actually read one quickly: the Pi 5's SD interface supports <b>SDR104</b>, roughly doubling the bus speed to about 100 MB/s versus the ~50 MB/s ceiling on the Pi 4. To see that, you need a UHS-I card that's genuinely rated for it — a slow card is the single most common cause of a Pi 5 that feels sluggish. Beyond raw throughput, look for an <b>A2</b> rating: the 'A' (Application Performance Class) ratings describe random read/write speed, which is what an operating system actually does all day, and unlike the Pi 4 the Pi 5 supports the command queuing that lets A2 cards deliver on it. If you need more speed than any microSD can give, the Pi 5's PCIe connector accepts an M.2 HAT and NVMe SSD.",
+      "whySpecs": "The Raspberry Pi 5 boots its operating system from the microSD card, and it's the first Pi that can actually read one quickly: the Pi 5's SD interface supports <b>SDR104</b>, roughly doubling the bus speed to about 100 MB/s versus the ~50 MB/s ceiling on the Pi 4. To see that, you need a UHS-I card that's genuinely rated for it. A slow card is the single most common cause of a Pi 5 that feels sluggish. Beyond raw throughput, look for an <b>A2</b> rating: the 'A' (Application Performance Class) ratings describe random read/write speed, which is what an operating system actually does all day, and unlike the Pi 4 the Pi 5 supports the command queuing that lets A2 cards deliver on it. If you need more speed than any microSD can give, the Pi 5's PCIe connector accepts an M.2 HAT and NVMe SSD.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -4842,7 +4842,7 @@
         },
         {
           "q": "Is an A2 card actually worth it on the Pi 5, or is A1 fine?",
-          "a": "<b>On the Pi 5, A2 is worth paying for — which was not true on the Pi 4.</b> A2 cards get their speed advantage from command queuing, and the Pi 4's SD host support never took advantage of it, so A2 cards there performed much like A1. The Pi 5 changed that, and it also raised the bus speed to SDR104 (~100 MB/s vs ~50 MB/s). If you're reusing a card from an older Pi, that's the upgrade you'd feel."
+          "a": "<b>On the Pi 5, A2 is worth paying for, which was not true on the Pi 4.</b> A2 cards get their speed advantage from command queuing, and the Pi 4's SD host support never took advantage of it, so A2 cards there performed much like A1. The Pi 5 changed that, and it also raised the bus speed to SDR104 (~100 MB/s vs ~50 MB/s). If you're reusing a card from an older Pi, that's the upgrade you'd feel."
         },
         {
           "q": "Should I use an NVMe SSD instead of a microSD card on the Pi 5?",
@@ -4877,7 +4877,7 @@
         ],
         "maxCapacity": "No official limit (carrier-board dependent)"
       },
-      "whySpecs": "The CM5 is a System-on-Module sold with 0GB (Lite), 16GB, 32GB, or 64GB of <b>onboard eMMC</b> for builders who order it that way. If you're using the Lite SKU with a carrier board's microSD slot instead, this is not a desktop Pi 5 install card — CM5 boards are overwhelmingly deployed as embedded/server hardware running persistent logging, local databases, or always-on services. That workload is continuous overwrite, not occasional boot reads. <b>Ignore A1/A2 speed-class shopping advice here</b> and pick a card rated for sustained write endurance (TBW), the same logic used for dash cams and surveillance recorders, or budget for the onboard eMMC SKU if your carrier board supports it.",
+      "whySpecs": "The CM5 is a System-on-Module sold with 0GB (Lite), 16GB, 32GB, or 64GB of <b>onboard eMMC</b> for builders who order it that way. If you're using the Lite SKU with a carrier board's microSD slot instead, this is not a desktop Pi 5 install card. CM5 boards are overwhelmingly deployed as embedded/server hardware running persistent logging, local databases, or always-on services. That workload is continuous overwrite, not occasional boot reads. <b>Ignore A1/A2 speed-class shopping advice here</b> and pick a card rated for sustained write endurance (TBW), the same logic used for dash cams and surveillance recorders, or budget for the onboard eMMC SKU if your carrier board supports it.",
       "recommendedBrands": [
         {
           "id": "sandisk-max-endurance"
@@ -4893,7 +4893,7 @@
         },
         {
           "q": "Do I need a V30 or A2 card for the Compute Module 5?",
-          "a": "<b>No — those speed classes target desktop responsiveness and video bitrate, not this device's actual use case.</b> CM5 boards are typically embedded/server builds running logging or databases 24/7. A High Endurance card (SanDisk MAX ENDURANCE, Samsung PRO Endurance) will outlast a standard A2 card by years under that write pattern."
+          "a": "<b>No. Those speed classes target desktop responsiveness and video bitrate, not this device's actual use case.</b> CM5 boards are typically embedded/server builds running logging or databases 24/7. A High Endurance card (SanDisk MAX ENDURANCE, Samsung PRO Endurance) will outlast a standard A2 card by years under that write pattern."
         }
       ],
       "relatedDevices": [
@@ -5170,7 +5170,7 @@
         ],
         "maxCapacity": "2TB (SDXC spec limit)"
       },
-      "whySpecs": "Like all Raspberry Pis, the Pi 4 runs its OS from the microSD card, so random access speed — not video throughput — is what makes it feel fast. That's the <b>A</b> (Application Performance Class) rating, and an A1 card is the spec that matters here. <b>Paying extra for A2 on a Pi 4 is usually wasted money:</b> A2's advantage comes from command queuing, which the Pi 4's SD host support doesn't take advantage of, so A2 cards generally perform about the same as A1 on this board. The Pi 4's card interface also tops out around 50 MB/s regardless of how fast the card is rated, so a premium high-speed card won't stretch its legs — save the A2 and SDR104 spending for a Pi 5.",
+      "whySpecs": "Like all Raspberry Pis, the Pi 4 runs its OS from the microSD card, so random access speed, not video throughput, is what makes it feel fast. That's the <b>A</b> (Application Performance Class) rating, and an A1 card is the spec that matters here. <b>Paying extra for A2 on a Pi 4 is usually wasted money:</b> A2's advantage comes from command queuing, which the Pi 4's SD host support doesn't take advantage of, so A2 cards generally perform about the same as A1 on this board. The Pi 4's card interface also tops out around 50 MB/s regardless of how fast the card is rated, so a premium high-speed card won't stretch its legs. Save the A2 and SDR104 spending for a Pi 5.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -5864,7 +5864,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "Viofo specifically restricts the T130 Pro to UHS-I U3-rated, dashcam/high-endurance microSD cards — not general-purpose consumer cards. The camera loop-records continuously, overwriting old footage in a cycle that wears out standard cards within weeks in a hot windshield environment. Viofo caps supported capacity at 256GB, with 128GB called out as the preferable, more reliable size.",
+      "whySpecs": "Viofo specifically restricts the T130 Pro to UHS-I U3-rated, dashcam/high-endurance microSD cards, not general-purpose consumer cards. The camera loop-records continuously, overwriting old footage in a cycle that wears out standard cards within weeks in a hot windshield environment. Viofo caps supported capacity at 256GB, with 128GB called out as the preferable, more reliable size.",
       "recommendedBrands": [
         {
           "id": "samsung-pro-endurance"
@@ -5879,11 +5879,11 @@
       "faq": [
         {
           "q": "Can I use a regular fast microSD card in the T130 Pro?",
-          "a": "<b>No — Viofo's own guidance restricts the T130 Pro to U3-rated, dashcam/high-endurance cards.</b> Standard consumer cards aren't built for continuous loop-overwrite recording and tend to fail within weeks of dash cam use, especially in hot windshield-mounted conditions."
+          "a": "<b>No. Viofo's own guidance restricts the T130 Pro to U3-rated, dashcam/high-endurance cards.</b> Standard consumer cards aren't built for continuous loop-overwrite recording and tend to fail within weeks of dash cam use, especially in hot windshield-mounted conditions."
         },
         {
           "q": "What's the maximum card size for the T130 Pro?",
-          "a": "<b>256GB is the maximum supported capacity</b>, with <b>128GB called out as preferable</b> for reliability. Bigger isn't automatically better here — Viofo's guidance favors a properly rated endurance card over maxing out capacity."
+          "a": "<b>256GB is the maximum supported capacity</b>, with <b>128GB called out as preferable</b> for reliability. Bigger isn't automatically better here. Viofo's guidance favors a properly rated endurance card over maxing out capacity."
         },
         {
           "q": "Why do dash cam cards need to be 'high-endurance'?",
@@ -5920,7 +5920,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "The Nextbase iQ is built around continuous loop recording with cloud/AI features layered on top, which pushes the camera toward higher-bitrate 4K capture than a typical dash cam. Nextbase's own guidance recommends U3-rated dashcam-compatible cards, calling out Nextbase-branded or SanDisk High Endurance (U3) cards specifically — with periodic reformatting recommended to manage wear from the continuous overwrite loop.",
+      "whySpecs": "The Nextbase iQ is built around continuous loop recording with cloud/AI features layered on top, which pushes the camera toward higher-bitrate 4K capture than a typical dash cam. Nextbase's own guidance recommends U3-rated dashcam-compatible cards, calling out Nextbase-branded or SanDisk High Endurance (U3) cards specifically, with periodic reformatting recommended to manage wear from the continuous overwrite loop.",
       "recommendedBrands": [
         {
           "id": "sandisk-max-endurance"
@@ -5943,7 +5943,7 @@
         },
         {
           "q": "Do I need to do anything to maintain the card over time?",
-          "a": "<b>Yes — Nextbase recommends periodically reformatting the card.</b> Continuous loop recording wears down even high-endurance cards over time, and a periodic reformat helps maintain reliable write performance."
+          "a": "<b>Yes, Nextbase recommends periodically reformatting the card.</b> Continuous loop recording wears down even high-endurance cards over time, and a periodic reformat helps maintain reliable write performance."
         }
       ],
       "relatedDevices": [
@@ -5975,7 +5975,7 @@
         ],
         "maxCapacity": "256GB (DR970X) / 1TB (DR970X Plus Series II)"
       },
-      "whySpecs": "Continuous parking and driving recording needs a card that can handle sustained overwrite cycles. Cards over 64GB ship formatted as exFAT, which BlackVue doesn't support — they must be reformatted to FAT32 in the BlackVue app before use.",
+      "whySpecs": "Continuous parking and driving recording needs a card that can handle sustained overwrite cycles. Cards over 64GB ship formatted as exFAT, which BlackVue doesn't support, so they must be reformatted to FAT32 in the BlackVue app before use.",
       "recommendedBrands": [
         {
           "id": "sandisk-max-endurance"
@@ -5987,7 +5987,7 @@
       "faq": [
         {
           "q": "Why do I need to reformat my card for the BlackVue DR970X?",
-          "a": "<b>Cards larger than 64GB ship pre-formatted as exFAT, which BlackVue's firmware doesn't support.</b> Use the BlackVue app to reformat the card to FAT32 before installing it — otherwise the camera won't record properly."
+          "a": "<b>Cards larger than 64GB ship pre-formatted as exFAT, which BlackVue's firmware doesn't support.</b> Use the BlackVue app to reformat the card to FAT32 before installing it, or the camera won't record properly."
         }
       ],
       "relatedDevices": [
@@ -6018,7 +6018,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "Continuous front/rear recording needs a card rated for sustained writes. Thinkware's own compatibility documentation caps the standard U3000 at 256GB — a separate U3000 Pro variant supports more, so don't confuse the two when shopping.",
+      "whySpecs": "Continuous front/rear recording needs a card rated for sustained writes. Thinkware's own compatibility documentation caps the standard U3000 at 256GB. A separate U3000 Pro variant supports more, so don't confuse the two when shopping.",
       "recommendedBrands": [
         {
           "id": "sandisk-max-endurance"
@@ -6030,7 +6030,7 @@
       "faq": [
         {
           "q": "What's the maximum SD card size for the Thinkware U3000?",
-          "a": "<b>256GB is the max for the standard U3000</b>, per Thinkware's own compatibility documentation. The separate U3000 Pro variant supports larger cards — don't assume the two share the same ceiling when shopping."
+          "a": "<b>256GB is the max for the standard U3000</b>, per Thinkware's own compatibility documentation. The separate U3000 Pro variant supports larger cards, so don't assume the two share the same ceiling when shopping."
         }
       ],
       "relatedDevices": [
@@ -6103,7 +6103,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Records 4K/60 HDR and 4K/100 slow motion, plus 10-bit D-Log M for grading — the high-frame-rate and 10-bit modes are the demanding ones, not ordinary 4K/30. V30's guaranteed 30 MB/s of sustained write is what keeps those modes stable; a card that merely peaks fast but sags under sustained load is how you end up with a dropped clip you can't reshoot. The Mini 4 Pro also has about 2GB of internal storage, which is an emergency buffer for a forgotten card, not a substitute for one — it's roughly a minute of 4K.",
+      "whySpecs": "Records 4K/60 HDR and 4K/100 slow motion, plus 10-bit D-Log M for grading. The high-frame-rate and 10-bit modes are the demanding ones, not ordinary 4K/30. V30's guaranteed 30 MB/s of sustained write is what keeps those modes stable; a card that merely peaks fast but sags under sustained load is how you end up with a dropped clip you can't reshoot. The Mini 4 Pro also has about 2GB of internal storage, which is an emergency buffer for a forgotten card, not a substitute for one, at roughly a minute of 4K.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6122,7 +6122,7 @@
         },
         {
           "q": "Do I need a faster card for 4K/100 slow motion or D-Log M?",
-          "a": "<b>A good V30 card still covers both</b> — V30 guarantees 30 MB/s sustained, which sits above what the Mini 4 Pro's highest-bitrate modes actually demand. What matters more than the speed grade is that the card holds that speed consistently: cheap or counterfeit cards often hit their rated number in a quick benchmark and then sag partway through a long clip. Buy from a reputable seller and format the card in the drone before an important flight."
+          "a": "<b>A good V30 card still covers both</b>. V30 guarantees 30 MB/s sustained, which sits above what the Mini 4 Pro's highest-bitrate modes actually demand. What matters more than the speed grade is that the card holds that speed consistently: cheap or counterfeit cards often hit their rated number in a quick benchmark and then sag partway through a long clip. Buy from a reputable seller and format the card in the drone before an important flight."
         },
         {
           "q": "Does the brand matter for drones?",
@@ -6339,7 +6339,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "A budget-friendly drone weighing under 250g, capable of recording 4K 30fps video. DJI officially recommends V30 cards minimum for stable 4K recording. Despite being an entry-level model, it shares the same essential card requirements as other higher-end drones in the Mini series, emphasizing reliability for in-flight recording. Because it tops out at 4K/30 rather than the Mini 4 Pro's 4K/100, its bitrate demands are at the gentler end of that shared V30 requirement — a mid-range V30 card is genuinely enough here.",
+      "whySpecs": "A budget-friendly drone weighing under 250g, capable of recording 4K 30fps video. DJI officially recommends V30 cards minimum for stable 4K recording. Despite being an entry-level model, it shares the same essential card requirements as other higher-end drones in the Mini series, emphasizing reliability for in-flight recording. Because it tops out at 4K/30 rather than the Mini 4 Pro's 4K/100, its bitrate demands are at the gentler end of that shared V30 requirement, so a mid-range V30 card is genuinely enough here.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6358,7 +6358,7 @@
         },
         {
           "q": "What's the largest microSD card the Mini 4K supports?",
-          "a": "<b>DJI supports cards up to 512GB on the Mini 4K</b>, the same ceiling as the Mini 3 and Mini 3 Pro. That said, 512GB is more than this drone realistically needs: at 4K/30 you'd have to fly for many battery packs to fill even a 128GB card, and battery life is the real limit on a shoot. <b>128GB or 256GB is the sweet spot</b> — and two smaller cards beat one large one, since a single card failure then costs you half your footage instead of all of it."
+          "a": "<b>DJI supports cards up to 512GB on the Mini 4K</b>, the same ceiling as the Mini 3 and Mini 3 Pro. That said, 512GB is more than this drone realistically needs: at 4K/30 you'd have to fly for many battery packs to fill even a 128GB card, and battery life is the real limit on a shoot. <b>128GB or 256GB is the sweet spot</b>, and two smaller cards beat one large one, since a single card failure then costs you half your footage instead of all of it."
         }
       ],
       "relatedDevices": [
@@ -6712,7 +6712,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "The Atom 2 steps up to a 1/2\" Sony CMOS sensor shooting 48MP photos and 4K/30fps HDR video, a heavier data load than the original Atom's sensor. Potensic explicitly recommends U3/V30 or higher — a slower card causes the same dropped-frame and failed-save errors seen on the first-gen Atom, since HDR processing pushes sustained bitrate higher than standard 4K.",
+      "whySpecs": "The Atom 2 steps up to a 1/2\" Sony CMOS sensor shooting 48MP photos and 4K/30fps HDR video, a heavier data load than the original Atom's sensor. Potensic explicitly recommends U3/V30 or higher. A slower card causes the same dropped-frame and failed-save errors seen on the first-gen Atom, since HDR processing pushes sustained bitrate higher than standard 4K.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6727,7 +6727,7 @@
       "faq": [
         {
           "q": "What size SD card does the Potensic Atom 2 need?",
-          "a": "<b>128GB is the sweet spot, and 256GB is the practical maximum.</b> The Atom 2's 48MP photos and 4K HDR video fill a card faster than the original Atom, but the drone's firmware tops out at 256GB — larger cards aren't recognized."
+          "a": "<b>128GB is the sweet spot, and 256GB is the practical maximum.</b> The Atom 2's 48MP photos and 4K HDR video fill a card faster than the original Atom, but the drone's firmware tops out at 256GB, and larger cards aren't recognized."
         },
         {
           "q": "Does the Potensic Atom 2 require a V30 card?",
@@ -7296,7 +7296,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "The Avata 360 records up to 8K (360°) at 60fps with a max video bitrate of 180Mbps, well above what the original Avata 2 demands. Because the camera module sits inside a tightly enclosed cinewhoop-style body with limited airflow, the card runs hotter than in open-frame drones — sustained write speed margin matters more here than raw capacity. A V30 card is the official floor, but V60 gives headroom against thermal throttling so a mid-flight recording doesn't drop out or corrupt.",
+      "whySpecs": "The Avata 360 records up to 8K (360°) at 60fps with a max video bitrate of 180Mbps, well above what the original Avata 2 demands. Because the camera module sits inside a tightly enclosed cinewhoop-style body with limited airflow, the card runs hotter than in open-frame drones, so sustained write speed margin matters more here than raw capacity. A V30 card is the official floor, but V60 gives headroom against thermal throttling so a mid-flight recording doesn't drop out or corrupt.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-microsd-v60"
@@ -7315,11 +7315,11 @@
         },
         {
           "q": "Is V30 enough, or do I really need V60?",
-          "a": "<b>V30 is DJI's official minimum and will work for most flights.</b> <b>V60 is recommended specifically as thermal insurance</b> — enclosed FPV/cinewhoop bodies run hotter than open drones, and a card running near its speed limit in a hot enclosure is the most common cause of corrupted 360° footage."
+          "a": "<b>V30 is DJI's official minimum and will work for most flights.</b> <b>V60 is recommended specifically as thermal insurance</b>. Enclosed FPV/cinewhoop bodies run hotter than open drones, and a card running near its speed limit in a hot enclosure is the most common cause of corrupted 360° footage."
         },
         {
           "q": "What capacity should I get for 8K 360° footage?",
-          "a": "<b>128GB-256GB covers most flight days comfortably.</b> 360° 8K footage at 180Mbps fills cards faster than standard 4K, but the bigger risk for this drone is heat-related corruption, not running out of space — prioritize a high-endurance V60 card over maxing out capacity."
+          "a": "<b>128GB-256GB covers most flight days comfortably.</b> 360° 8K footage at 180Mbps fills cards faster than standard 4K, but the bigger risk for this drone is heat-related corruption, not running out of space, so prioritize a high-endurance V60 card over maxing out capacity."
         }
       ],
       "relatedDevices": [
@@ -7351,7 +7351,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "The Neo is DJI's palm-sized, ultra-light entry drone — no propeller guards to remove, no controller required to start flying, and built around exFAT with 22GB of internal storage as a buffer. It shoots up to 4K/30fps at a 75Mbps max bitrate, well inside what a basic V30 microSD handles comfortably, so the card pick here is about not overthinking it rather than chasing thermal headroom like the enclosed Avata-series bodies need. A V30, A2-rated card from a reputable brand covers continuous flight recording with room to spare.",
+      "whySpecs": "The Neo is DJI's palm-sized, ultra-light entry drone, with no propeller guards to remove, no controller required to start flying, and built around exFAT with 22GB of internal storage as a buffer. It shoots up to 4K/30fps at a 75Mbps max bitrate, well inside what a basic V30 microSD handles comfortably, so the card pick here is about not overthinking it rather than chasing thermal headroom like the enclosed Avata-series bodies need. A V30, A2-rated card from a reputable brand covers continuous flight recording with room to spare.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -7370,7 +7370,7 @@
         },
         {
           "q": "Do I need a high-endurance or thermal-rated card for the Neo?",
-          "a": "<b>No — the Neo's open, ultra-light frame doesn't trap heat the way enclosed cinewhoop bodies do.</b> A standard V30/A2 card from a mainstream brand handles sustained recording without the thermal margin concerns that drive the V60 recommendation on drones like the Avata 360."
+          "a": "<b>No, the Neo's open, ultra-light frame doesn't trap heat the way enclosed cinewhoop bodies do.</b> A standard V30/A2 card from a mainstream brand handles sustained recording without the thermal margin concerns that drive the V60 recommendation on drones like the Avata 360."
         },
         {
           "q": "What capacity should I buy for the DJI Neo?",
@@ -7715,7 +7715,7 @@
         "maxCapacity": "2TB (microSDXC) / 2TB+ (microSD Express SDUC)",
         "testedMaxCapacity": "2TB"
       },
-      "whySpecs": "<b>Good news: your existing Switch microSD cards still work in Switch 2.</b> All standard UHS-I microSDXC cards are backward compatible — you can play every Switch game (original and Switch 2) without buying a new card. However, Switch 2 also introduces a <b>microSD Express slot</b> that supports PCIe-based Express cards for dramatically faster loading (up to 800 MB/s vs. ~100 MB/s for UHS-I). microSD Express is optional but recommended if you're buying a new card. Important: <b>microSD Express cards are NOT backward compatible with the original Switch, Switch Lite, or Switch OLED</b> — those devices only support UHS-I.",
+      "whySpecs": "<b>Good news: your existing Switch microSD cards still work in Switch 2.</b> All standard UHS-I microSDXC cards are backward compatible, so you can play every Switch game (original and Switch 2) without buying a new card. However, Switch 2 also introduces a <b>microSD Express slot</b> that supports PCIe-based Express cards for dramatically faster loading (up to 800 MB/s vs. ~100 MB/s for UHS-I). microSD Express is optional but recommended if you're buying a new card. Important: <b>microSD Express cards are NOT backward compatible with the original Switch, Switch Lite, or Switch OLED</b>. Those devices only support UHS-I.",
       "recommendedBrands": [
         {
           "id": "samsung-evo-select-microsd",
@@ -7733,11 +7733,11 @@
       "faq": [
         {
           "q": "Can I use my old Switch SD card in the Nintendo Switch 2?",
-          "a": "<b>Yes — your existing microSD cards work in Switch 2.</b> Standard UHS-I microSDXC cards are fully backward compatible with the Switch 2. You can play all your games without buying a new card. The Switch 2 also supports the faster microSD Express standard for improved loading speeds, but it is optional, not required."
+          "a": "<b>Yes, your existing microSD cards work in Switch 2.</b> Standard UHS-I microSDXC cards are fully backward compatible with the Switch 2. You can play all your games without buying a new card. The Switch 2 also supports the faster microSD Express standard for improved loading speeds, but it is optional, not required."
         },
         {
           "q": "What is microSD Express and do I need it for Switch 2?",
-          "a": "<b>microSD Express uses PCIe technology for speeds up to 800 MB/s — versus ~100 MB/s for standard UHS-I.</b> It provides noticeably faster game loading in Switch 2 titles. However, you do not need it — your existing UHS-I microSD cards work perfectly. Officially licensed Express cards from Samsung, SanDisk, and PNY are now widely available at retailers like Target, Walmart, and Best Buy, though prices across all microSD cards (Express included) rose sharply in 2026 due to a global NAND flash shortage."
+          "a": "<b>microSD Express uses PCIe technology for speeds up to 800 MB/s, versus ~100 MB/s for standard UHS-I.</b> It provides noticeably faster game loading in Switch 2 titles. However, you do not need it. Your existing UHS-I microSD cards work perfectly. Officially licensed Express cards from Samsung, SanDisk, and PNY are now widely available at retailers like Target, Walmart, and Best Buy, though prices across all microSD cards (Express included) rose sharply in 2026 due to a global NAND flash shortage."
         },
         {
           "q": "Will a microSD Express card work in my original Switch or Switch OLED?",
@@ -7871,7 +7871,7 @@
       "name": "ASUS ROG Ally X",
       "category": "Gaming Handhelds",
       "slug": "asus-rog-ally-x",
-      "metaDescription": "Best microSD cards for ASUS ROG Ally X — and which brands to avoid. Tested for UHS-II speed, A1 app performance, and reliability in the Ally X's fast card reader.",
+      "metaDescription": "Best microSD cards for ASUS ROG Ally X, and which brands to avoid. Tested for UHS-II speed, A1 app performance, and reliability in the Ally X's fast card reader.",
       "searchTerms": [
         "rog ally x sd card",
         "ally x microsd",
@@ -7906,7 +7906,7 @@
       "faq": [
         {
           "q": "Which microSD card brands and models should I avoid for the ROG Ally X?",
-          "a": "<b>Avoid cheap no-name microSD cards, cards without an A2 rating, and counterfeit SanDisk cards from unverified Amazon sellers.</b> The ROG Ally X runs Windows and loads games directly from the card, so poor random read/write performance causes stuttering and long load times. Specifically: (1) Avoid cards without A1 or A2 app performance rating — they will feel sluggish under Windows; (2) Avoid very high-capacity 2TB cards unless from a reputable brand, as some community reports show slower-than-expected sustained speeds compared to 1TB variants; (3) Counterfeit SanDisk cards are a known issue on Amazon — always buy from the official SanDisk store or established retailers. Stick to SanDisk, Samsung, Lexar, or Kingston from reputable sources."
+          "a": "<b>Avoid cheap no-name microSD cards, cards without an A2 rating, and counterfeit SanDisk cards from unverified Amazon sellers.</b> The ROG Ally X runs Windows and loads games directly from the card, so poor random read/write performance causes stuttering and long load times. Specifically: (1) Avoid cards without A1 or A2 app performance rating, as they feel sluggish under Windows; (2) Avoid very high-capacity 2TB cards unless from a reputable brand, as some community reports show slower-than-expected sustained speeds compared to 1TB variants; (3) Counterfeit SanDisk cards are a known issue on Amazon, so always buy from the official SanDisk store or established retailers. Stick to SanDisk, Samsung, Lexar, or Kingston from reputable sources."
         },
         {
           "q": "Is the Ally X faster than the original Ally for SD cards?",
@@ -8647,7 +8647,7 @@
       "name": "ASUS ROG Xbox Ally X",
       "category": "Gaming Handhelds",
       "slug": "rog-xbox-ally-x",
-      "metaDescription": "Best microSD cards for the ASUS ROG Xbox Ally X — UHS-II picks that take advantage of the redesigned card reader, plus what to know about the original Ally's overheating fix.",
+      "metaDescription": "Best microSD cards for the ASUS ROG Xbox Ally X: UHS-II picks that take advantage of the redesigned card reader, plus what to know about the original Ally's overheating fix.",
       "searchTerms": [
         "rog xbox ally x sd card",
         "rog xbox ally x microsd",
@@ -8668,7 +8668,7 @@
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "The ROG Xbox Ally X resolves the original ROG Ally's notorious SD-card-frying overheating bug with a complete motherboard redesign — ASUS physically moved the microSD reader away from the exhaust pathway that previously cooked cards with sustained thermal stress. The reader itself is UHS-II, so a V60/V90-rated card with A2 app performance will noticeably cut load times versus a budget UHS-I card, though standard UHS-I cards remain fully supported for backward compatibility.",
+      "whySpecs": "The ROG Xbox Ally X resolves the original ROG Ally's notorious SD-card-frying overheating bug with a complete motherboard redesign. ASUS physically moved the microSD reader away from the exhaust pathway that previously cooked cards with sustained thermal stress. The reader itself is UHS-II, so a V60/V90-rated card with A2 app performance will noticeably cut load times versus a budget UHS-I card, though standard UHS-I cards remain fully supported for backward compatibility.",
       "recommendedBrands": [
         {
           "id": "lexar-professional-1000x-microsd",
@@ -8686,7 +8686,7 @@
       "faq": [
         {
           "q": "Does the ROG Xbox Ally X still break SD cards like the original Ally?",
-          "a": "<b>No — ASUS redesigned the motherboard specifically to fix this.</b> The original ROG Ally placed the microSD reader directly next to the heavy exhaust vent, and sustained thermal stress caused premature card failures in some units. The Ally X physically relocates the reader away from that exhaust pathway, resolving the issue."
+          "a": "<b>No. ASUS redesigned the motherboard specifically to fix this.</b> The original ROG Ally placed the microSD reader directly next to the heavy exhaust vent, and sustained thermal stress caused premature card failures in some units. The Ally X physically relocates the reader away from that exhaust pathway, resolving the issue."
         },
         {
           "q": "What's the best reliable microSD card for the Ally X?",
@@ -8710,7 +8710,7 @@
       "name": "Lenovo Legion Go 2",
       "category": "Gaming Handhelds",
       "slug": "lenovo-legion-go-gen-2",
-      "metaDescription": "Best microSD cards for the Lenovo Legion Go 2 — high-capacity UHS-II picks for the 8.8-inch OLED handheld's AAA storage demands.",
+      "metaDescription": "Best microSD cards for the Lenovo Legion Go 2: high-capacity UHS-II picks for the 8.8-inch OLED handheld's AAA storage demands.",
       "searchTerms": [
         "lenovo legion go 2 microsd compatibility",
         "best high capacity sd card legion go oled",
@@ -8747,7 +8747,7 @@
       "faq": [
         {
           "q": "Is the Legion Go 2's microSD slot compatible with all standard cards?",
-          "a": "<b>Yes — the slot accepts standard microSD, microSDHC, and microSDXC cards</b> and supports UHS-II for full speed, while remaining backward compatible with UHS-I cards (at UHS-I speeds)."
+          "a": "<b>Yes, the slot accepts standard microSD, microSDHC, and microSDXC cards</b> and supports UHS-II for full speed, while remaining backward compatible with UHS-I cards (at UHS-I speeds)."
         },
         {
           "q": "What capacity should I get for the Legion Go 2's OLED library?",
@@ -8771,7 +8771,7 @@
       "name": "MSI Claw 8 EX AI+",
       "category": "Gaming Handhelds",
       "slug": "msi-claw-8-ex-ai-plus",
-      "metaDescription": "Best microSD cards for the MSI Claw 8 EX AI+ — A2-rated picks that keep up with Intel Arc XeSS asset streaming and avoid stutter on this Intel-powered handheld.",
+      "metaDescription": "Best microSD cards for the MSI Claw 8 EX AI+: A2-rated picks that keep up with Intel Arc XeSS asset streaming and avoid stutter on this Intel-powered handheld.",
       "searchTerms": [
         "msi claw 8 ex ai+ storage expansion",
         "intel arc handheld game stuttering sd card",
@@ -8790,7 +8790,7 @@
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "The Claw 8 EX AI+ pairs Intel's Arc G3 Extreme platform with an 80Whr battery for sustained, high-wattage portable performance, and leans on Intel XeSS AI upscaling that depends on fast, consistent asset streaming. Because Arc drivers are sensitive to delivery delays when streaming game assets from external storage, an A2-rated card with strong random read/write IOPS is essential to avoid stutter and micro-freezes — a plain V30 card without A2 will bottleneck the system under load.",
+      "whySpecs": "The Claw 8 EX AI+ pairs Intel's Arc G3 Extreme platform with an 80Whr battery for sustained, high-wattage portable performance, and leans on Intel XeSS AI upscaling that depends on fast, consistent asset streaming. Because Arc drivers are sensitive to delivery delays when streaming game assets from external storage, an A2-rated card with strong random read/write IOPS is essential to avoid stutter and micro-freezes. A plain V30 card without A2 will bottleneck the system under load.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-microsd-2tb",
@@ -8884,7 +8884,7 @@
       "name": "OneXPlayer 3",
       "category": "Gaming Handhelds",
       "slug": "onexplayer-3",
-      "metaDescription": "Best microSD cards for the OneXPlayer 3 — high-capacity A2/V30 picks for the Intel Arc G3 Extreme handheld's 8.8-inch 144Hz AMOLED display.",
+      "metaDescription": "Best microSD cards for the OneXPlayer 3: high-capacity A2/V30 picks for the Intel Arc G3 Extreme handheld's 8.8-inch 144Hz AMOLED display.",
       "searchTerms": [
         "onexplayer 3 microsd card size",
         "best sd card for intel arc g3 extreme handheld",
@@ -8945,7 +8945,7 @@
       "name": "Anbernic RG35XX SP",
       "category": "Gaming Handhelds",
       "slug": "anbernic-rg35xx-sp",
-      "metaDescription": "Best SD card setup for the Anbernic RG35XX SP — dual microSD guide with separate OS and ROM library card recommendations for this GBA SP-style clamshell.",
+      "metaDescription": "Best SD card setup for the Anbernic RG35XX SP: dual microSD guide with separate OS and ROM library card recommendations for this GBA SP-style clamshell.",
       "searchTerms": [
         "anbernic rg35xx sp best sd card setup",
         "rg35xx sp dual sd card guide",
@@ -9010,7 +9010,7 @@
       "name": "Anbernic RG406H / RG406V",
       "category": "Gaming Handhelds",
       "slug": "anbernic-rg406v-rg406h",
-      "metaDescription": "Best microSD cards for the Anbernic RG406H / RG406V — A2-rated, high-capacity picks for PS2 and GameCube emulation on this Android 13 handheld.",
+      "metaDescription": "Best microSD cards for the Anbernic RG406H / RG406V: A2-rated, high-capacity picks for PS2 and GameCube emulation on this Android 13 handheld.",
       "searchTerms": [
         "anbernic rg406v sd card compatibility",
         "best sd card for rg406h ps2 emulation",
@@ -9029,7 +9029,7 @@
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "Both the RG406H and RG406V run Android 13 with 8GB of RAM and a Unisoc T820 processor, capable of emulating heavier systems like PS2 and GameCube. The 128GB of internal UFS 2.2 storage fills up fast once large PS2/GameCube ISOs enter the picture, so most users rely heavily on the microSD expansion slot. Because Android actively caches emulator data and shader compilation onto external storage, an A2 application-performance rating is essential — it's what enables the fast random read/write operations Android depends on for smooth emulator front-end navigation.",
+      "whySpecs": "Both the RG406H and RG406V run Android 13 with 8GB of RAM and a Unisoc T820 processor, capable of emulating heavier systems like PS2 and GameCube. The 128GB of internal UFS 2.2 storage fills up fast once large PS2/GameCube ISOs enter the picture, so most users rely heavily on the microSD expansion slot. Because Android actively caches emulator data and shader compilation onto external storage, an A2 application-performance rating is essential. It's what enables the fast random read/write operations Android depends on for smooth emulator front-end navigation.",
       "recommendedBrands": [
         {
           "id": "samsung-pro-plus-microsd",
@@ -9043,11 +9043,11 @@
       "faq": [
         {
           "q": "Is 128GB of internal storage enough for PS2/GameCube emulation on the RG406V?",
-          "a": "<b>No — a microSD card is essential.</b> PS2 and GameCube ISOs are large, and 128GB of internal storage fills up quickly once you build out a real library. Plan to rely on the microSD slot for the bulk of your collection."
+          "a": "<b>No, a microSD card is essential.</b> PS2 and GameCube ISOs are large, and 128GB of internal storage fills up quickly once you build out a real library. Plan to rely on the microSD slot for the bulk of your collection."
         },
         {
           "q": "Why does the RG406H need an A2-rated card specifically?",
-          "a": "<b>Android 13 actively caches emulator data and shader compilation to external storage.</b> A2's random read/write performance is what keeps the emulator front-end and shader loading smooth — a card without A2 will feel sluggish even if its sequential speed looks fine on paper."
+          "a": "<b>Android 13 actively caches emulator data and shader compilation to external storage.</b> A2's random read/write performance is what keeps the emulator front-end and shader loading smooth. A card without A2 will feel sluggish even if its sequential speed looks fine on paper."
         },
         {
           "q": "What capacity should I get for the RG406V?",
@@ -9067,7 +9067,7 @@
       "name": "TrimUI Brick",
       "category": "Gaming Handhelds",
       "slug": "trimui-brick",
-      "metaDescription": "Best microSD cards for the TrimUI Brick (Brick Hammer) — A1/A2-rated picks that won't crash CrossMix-OS or other custom firmware flashes.",
+      "metaDescription": "Best microSD cards for the TrimUI Brick (Brick Hammer): A1/A2-rated picks that won't crash CrossMix-OS or other custom firmware flashes.",
       "searchTerms": [
         "trimui brick sd card",
         "trimui brick hammer microsd",
@@ -9128,7 +9128,7 @@
       "name": "AYN Odin 3 / Odin 2 Portal",
       "category": "Gaming Handhelds",
       "slug": "ayn-odin-3-odin-2-portal",
-      "metaDescription": "Best microSD cards for the AYN Odin 3 and Odin 2 Portal — high-capacity A2-rated picks for Snapdragon 8 Elite/8 Gen 2 PS2, GameCube, and Switch emulation.",
+      "metaDescription": "Best microSD cards for the AYN Odin 3 and Odin 2 Portal: high-capacity A2-rated picks for Snapdragon 8 Elite/8 Gen 2 PS2, GameCube, and Switch emulation.",
       "searchTerms": [
         "ayn odin 3 sd card",
         "odin 2 portal microsd",
@@ -9147,7 +9147,7 @@
         ],
         "maxCapacity": "1TB+ (theoretical 2TB)"
       },
-      "whySpecs": "These are premium, high-powered Android handhelds — the Odin 2 Portal packs a Snapdragon 8 Gen 2, and the Odin 3 steps up to a Snapdragon 8 Elite — built to handle PS2, GameCube, and Nintendo Switch emulation. Those systems' ROMs and ISOs are massive compared to retro 8/16-bit titles, so high-capacity, A2-rated storage isn't optional: a 128GB card fills up almost immediately, and budget cards without strong random read/write performance cause stuttering in higher-end emulators.",
+      "whySpecs": "These are premium, high-powered Android handhelds built to handle PS2, GameCube, and Nintendo Switch emulation. The Odin 2 Portal packs a Snapdragon 8 Gen 2, and the Odin 3 steps up to a Snapdragon 8 Elite. Those systems' ROMs and ISOs are massive compared to retro 8/16-bit titles, so high-capacity, A2-rated storage isn't optional: a 128GB card fills up almost immediately, and budget cards without strong random read/write performance cause stuttering in higher-end emulators.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd",
@@ -9189,7 +9189,7 @@
       "name": "Anbernic RG Cube",
       "category": "Gaming Handhelds",
       "slug": "anbernic-rg-cube",
-      "metaDescription": "Best microSD cards for the Anbernic RG Cube — reliable picks for this 1:1 square-screen Android 13 handheld built for DS/3DS and classic retro emulation.",
+      "metaDescription": "Best microSD cards for the Anbernic RG Cube: reliable picks for this 1:1 square-screen Android 13 handheld built for DS/3DS and classic retro emulation.",
       "searchTerms": [
         "anbernic rg cube sd card",
         "rg cube microsd",
@@ -9208,7 +9208,7 @@
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "The RG Cube's defining feature is its 3.95-inch, 1:1 aspect ratio display, running Android 13 on a Unisoc T820 processor. The square screen makes it the go-to machine for dual-screen systems like DS and 3DS, plus classic 8-bit and 16-bit retro titles. Because older ROMs have tiny file sizes, a 128GB card is the sweet spot for this community — retro purists generally don't need the 1TB+ capacity that PS2/Switch-focused devices demand, but they do need premium brand reliability to avoid corrupting hundreds of save states across a large curated library.",
+      "whySpecs": "The RG Cube's defining feature is its 3.95-inch, 1:1 aspect ratio display, running Android 13 on a Unisoc T820 processor. The square screen makes it the go-to machine for dual-screen systems like DS and 3DS, plus classic 8-bit and 16-bit retro titles. Because older ROMs have tiny file sizes, a 128GB card is the sweet spot for this community. Retro purists generally don't need the 1TB+ capacity that PS2/Switch-focused devices demand, but they do need premium brand reliability to avoid corrupting hundreds of save states across a large curated library.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd",
@@ -9230,7 +9230,7 @@
         },
         {
           "q": "Do I need a 1TB microSD card for the RG Cube?",
-          "a": "<b>No, most users don't.</b> Unlike PS2/Switch-focused Android handhelds, the RG Cube's core audience plays DS, 3DS, and classic retro titles with small file sizes. A 128GB card is the practical sweet spot — prioritize a premium, reliable brand over raw capacity to protect save states."
+          "a": "<b>No, most users don't.</b> Unlike PS2/Switch-focused Android handhelds, the RG Cube's core audience plays DS, 3DS, and classic retro titles with small file sizes. A 128GB card is the practical sweet spot. Prioritize a premium, reliable brand over raw capacity to protect save states."
         },
         {
           "q": "What microSD card brand is best for save-state reliability on the RG Cube?",
@@ -9250,7 +9250,7 @@
       "name": "Acer Predator Atlas 8",
       "category": "Gaming Handhelds",
       "slug": "acer-predator-atlas-8",
-      "metaDescription": "Best microSD cards for the Acer Predator Atlas 8 — UHS-II V60/V90 picks for Acer's flagship Windows gaming handheld.",
+      "metaDescription": "Best microSD cards for the Acer Predator Atlas 8: UHS-II V60/V90 picks for Acer's flagship Windows gaming handheld.",
       "searchTerms": [
         "acer predator atlas 8 sd card",
         "predator atlas 8 microsd",
@@ -9311,7 +9311,7 @@
       "name": "Retroid Pocket G2",
       "category": "Gaming Handhelds",
       "slug": "retroid-pocket-g2",
-      "metaDescription": "Best microSD cards for the Retroid Pocket G2 — A2-rated UHS-I picks for smooth Android emulation and asset streaming.",
+      "metaDescription": "Best microSD cards for the Retroid Pocket G2: A2-rated UHS-I picks for smooth Android emulation and asset streaming.",
       "searchTerms": [
         "retroid pocket g2 sd card",
         "rp g2 microsd",
@@ -9330,7 +9330,7 @@
         ],
         "maxCapacity": "2TB (theoretical)"
       },
-      "whySpecs": "The Pocket G2 slots into Retroid's Android lineup alongside the Pocket 6, aimed at PS2, GameCube, and Switch emulation. Those ROM/ISO libraries are far larger than 8/16-bit retro sets, so a card that's only rated for sequential speed isn't enough — A2's random read/write performance is what keeps menu navigation and asset loading smooth when the OS and games both live on the microSD card. V30 covers the sustained write side for downloading and copying large files onto the card.",
+      "whySpecs": "The Pocket G2 slots into Retroid's Android lineup alongside the Pocket 6, aimed at PS2, GameCube, and Switch emulation. Those ROM/ISO libraries are far larger than 8/16-bit retro sets, so a card that's only rated for sequential speed isn't enough. A2's random read/write performance is what keeps menu navigation and asset loading smooth when the OS and games both live on the microSD card. V30 covers the sustained write side for downloading and copying large files onto the card.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -9345,7 +9345,7 @@
       "faq": [
         {
           "q": "Is A2 rating important for the Retroid Pocket G2?",
-          "a": "<b>Yes.</b> When Android apps, custom launchers, and game files all run off the microSD card, A2's random IOPS performance is what keeps menus and emulator loading responsive — a card without it will feel noticeably sluggish even if its sequential speeds look fine on paper."
+          "a": "<b>Yes.</b> When Android apps, custom launchers, and game files all run off the microSD card, A2's random IOPS performance is what keeps menus and emulator loading responsive. A card without it will feel noticeably sluggish even if its sequential speeds look fine on paper."
         },
         {
           "q": "How much storage do I need on the Pocket G2?",
@@ -9364,7 +9364,7 @@
       "name": "AYANEO Pocket DS",
       "category": "Gaming Handhelds",
       "slug": "ayaneo-pocket-ds",
-      "metaDescription": "Best microSD cards for the AYANEO Pocket DS — reliable picks for this dual-screen Android handheld built for DS and 3DS emulation.",
+      "metaDescription": "Best microSD cards for the AYANEO Pocket DS: reliable picks for this dual-screen Android handheld built for DS and 3DS emulation.",
       "searchTerms": [
         "ayaneo pocket ds sd card",
         "ayaneo pocket ds microsd",
@@ -9383,7 +9383,7 @@
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "The Pocket DS is AYANEO's take on a dual-screen clamshell built specifically for Nintendo DS and 3DS emulation, running Android across a single microSD slot. Because DS and 3DS ROMs are small compared to PS2 or Switch libraries, raw capacity isn't the priority here — a 128-256GB card comfortably covers a full curated library. What matters more is a reliable, name-brand card with a solid A1 rating, since dual-screen emulators write frequent save states and a flaky card is the fastest way to lose progress.",
+      "whySpecs": "The Pocket DS is AYANEO's take on a dual-screen clamshell built specifically for Nintendo DS and 3DS emulation, running Android across a single microSD slot. Because DS and 3DS ROMs are small compared to PS2 or Switch libraries, raw capacity isn't the priority here. A 128-256GB card comfortably covers a full curated library. What matters more is a reliable, name-brand card with a solid A1 rating, since dual-screen emulators write frequent save states and a flaky card is the fastest way to lose progress.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd",
@@ -9422,7 +9422,7 @@
       "category": "Gaming Handhelds",
       "slug": "ayn-thor",
       "customTitle": "Best SD Card for AYN Thor: Up to 1TB, A2/V30 Speed",
-      "metaDescription": "Best microSD cards for the AYN Thor — high-capacity A2-rated picks for this premium Android handheld built for PS2, GameCube, and Switch emulation.",
+      "metaDescription": "Best microSD cards for the AYN Thor: high-capacity A2-rated picks for this premium Android handheld built for PS2, GameCube, and Switch emulation.",
       "searchTerms": [
         "ayn thor sd card",
         "ayn thor microsd",
@@ -9441,7 +9441,7 @@
         ],
         "maxCapacity": "1TB+ (theoretical 2TB)"
       },
-      "whySpecs": "AYN's Thor sits alongside the Odin 3 and Odin 2 Portal as a premium, high-powered Android handheld built for demanding emulation, including PS2, GameCube, and Switch titles. Those systems' game files dwarf classic 8/16-bit ROMs, so high-capacity, A2-rated storage matters from day one — a 128GB card fills up almost immediately, and a card without strong random read/write performance will stutter in higher-end emulators regardless of how fast its sequential speeds look.",
+      "whySpecs": "AYN's Thor sits alongside the Odin 3 and Odin 2 Portal as a premium, high-powered Android handheld built for demanding emulation, including PS2, GameCube, and Switch titles. Those systems' game files dwarf classic 8/16-bit ROMs, so high-capacity, A2-rated storage matters from day one. A 128GB card fills up almost immediately, and a card without strong random read/write performance will stutter in higher-end emulators regardless of how fast its sequential speeds look.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-microsd-2tb",
@@ -9494,7 +9494,7 @@
         ],
         "maxCapacity": "32GB"
       },
-      "whySpecs": "The HDS LIVE only supports FAT32-formatted SDHC cards, which top out at 32GB by spec. Cards larger than that ship as exFAT/SDXC and the unit won't read them — this is a hardware/firmware limitation of the SD controller, not a defect.",
+      "whySpecs": "The HDS LIVE only supports FAT32-formatted SDHC cards, which top out at 32GB by spec. Cards larger than that ship as exFAT/SDXC and the unit won't read them. This is a hardware/firmware limitation of the SD controller, not a defect.",
       "recommendedBrands": [
         {
           "id": "kingston-canvas-select"
@@ -9506,7 +9506,7 @@
       "faq": [
         {
           "q": "What happens if I use a card bigger than 32GB in a Lowrance HDS LIVE?",
-          "a": "It won't be recognized, or a software update may fail to read it. This isn't damage to the unit or the card — swap in a <b>32GB or smaller card formatted as FAT32</b> and it will work normally."
+          "a": "It won't be recognized, or a software update may fail to read it. This isn't damage to the unit or the card. Swap in a <b>32GB or smaller card formatted as FAT32</b> and it will work normally."
         }
       ],
       "relatedDevices": [
@@ -9535,7 +9535,7 @@
         ],
         "maxCapacity": "32GB"
       },
-      "whySpecs": "Garmin's owner's manual caps supported cards at 32GB, formatted FAT32. The card stores map data plus sonar logs, waypoints, routes, and screenshots — not maps exclusively.",
+      "whySpecs": "Garmin's owner's manual caps supported cards at 32GB, formatted FAT32. The card stores map data plus sonar logs, waypoints, routes, and screenshots, not maps exclusively.",
       "recommendedBrands": [
         {
           "id": "kingston-canvas-select"
@@ -9547,7 +9547,7 @@
       "faq": [
         {
           "q": "Is the SD card in the ECHOMAP UHD only used for maps?",
-          "a": "No — <b>the card also stores sonar logs, waypoints, routes, and screenshots</b>, not just map data. Keep that in mind when deciding how much free space to leave available beyond whatever charts you load."
+          "a": "No. <b>The card also stores sonar logs, waypoints, routes, and screenshots</b>, not just map data. Keep that in mind when deciding how much free space to leave available beyond whatever charts you load."
         }
       ],
       "relatedDevices": [
@@ -9587,7 +9587,7 @@
       "faq": [
         {
           "q": "Does the Helix 7 have two SD card slots?",
-          "a": "No — <b>the Helix 7 has a single microSD slot</b>, unlike some other Helix models that do have two. Don't assume dual-slot behavior (like simultaneous chart + backup cards) on this model."
+          "a": "No. <b>The Helix 7 has a single microSD slot</b>, unlike some other Helix models that do have two. Don't assume dual-slot behavior (like simultaneous chart + backup cards) on this model."
         }
       ],
       "relatedDevices": [
@@ -9620,7 +9620,7 @@
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "The MPC Live II is a <b>battery-powered standalone</b> that streams audio directly from disk during playback — long samples, audio tracks, and large drum kits are read off the card in real time as a project plays. Because it is built to be gigged with, a slow or flaky card is the difference between a clean set and an <b>audible dropout in front of an audience</b>. Use a full-size UHS-I U3/V30 card so sustained read speed comfortably keeps pace with multitrack sample streaming, and format it as exFAT (or in-device) for stability. Akai supports cards up to 2TB, so size the card to your whole library rather than a single project.",
+      "whySpecs": "The MPC Live II is a <b>battery-powered standalone</b> that streams audio directly from disk during playback. Long samples, audio tracks, and large drum kits are read off the card in real time as a project plays. Because it is built to be gigged with, a slow or flaky card is the difference between a clean set and an <b>audible dropout in front of an audience</b>. Use a full-size UHS-I U3/V30 card so sustained read speed comfortably keeps pace with multitrack sample streaming, and format it as exFAT (or in-device) for stability. Akai supports cards up to 2TB, so size the card to your whole library rather than a single project.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs1"
@@ -9639,11 +9639,11 @@
         },
         {
           "q": "Why does my MPC Live II glitch or drop out when playing samples?",
-          "a": "<b>It is usually a card that can't keep up with sample streaming.</b> The MPC streams audio off the card in real time, so a slow or worn card causes stutters and dropouts — especially mid-performance. Switch to a name-brand U3/V30 (ideally A2) card to maintain a steady sustained read speed."
+          "a": "<b>It is usually a card that can't keep up with sample streaming.</b> The MPC streams audio off the card in real time, so a slow or worn card causes stutters and dropouts, especially mid-performance. Switch to a name-brand U3/V30 (ideally A2) card to maintain a steady sustained read speed."
         },
         {
           "q": "Should I use the internal drive bay or an SD card?",
-          "a": "<b>Both work — the SD card is the simplest expansion.</b> The Live II has an internal 2.5\" SATA bay for an SSD, but a fast full-size SD card is the easiest way to carry a large sample library and move it between machines. Many users keep their library on SD and reserve the SSD for recording."
+          "a": "<b>Both work, and the SD card is the simplest expansion.</b> The Live II has an internal 2.5\" SATA bay for an SSD, but a fast full-size SD card is the easiest way to carry a large sample library and move it between machines. Many users keep their library on SD and reserve the SSD for recording."
         }
       ],
       "relatedDevices": [
@@ -9678,7 +9678,7 @@
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "The Live III keeps the Live II's real-time disk-streaming architecture but ships with 128GB of built-in storage and an 8-core processor, so it's built to run larger sample libraries and heavier projects than its predecessor. The SD slot is still the simplest way to expand beyond the internal drive or carry a library between machines, and because samples stream off the card live during a set, the same U3/V30 sustained-speed floor applies — a card that can't keep up causes audible dropouts, not just a slow load screen.",
+      "whySpecs": "The Live III keeps the Live II's real-time disk-streaming architecture but ships with 128GB of built-in storage and an 8-core processor, so it's built to run larger sample libraries and heavier projects than its predecessor. The SD slot is still the simplest way to expand beyond the internal drive or carry a library between machines, and because samples stream off the card live during a set, the same U3/V30 sustained-speed floor applies. A card that can't keep up causes audible dropouts, not just a slow load screen.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs1"
@@ -9747,7 +9747,7 @@
       "faq": [
         {
           "q": "What is the maximum SD card size for the Akai MPC One+?",
-          "a": "<b>Up to 2TB.</b> The MPC One+ takes standard full-size SD/SDHC/SDXC cards and Akai supports virtually all drive sizes. For cards larger than 32GB, format to exFAT — or format the card inside the MPC — so it is recognized reliably."
+          "a": "<b>Up to 2TB.</b> The MPC One+ takes standard full-size SD/SDHC/SDXC cards and Akai supports virtually all drive sizes. For cards larger than 32GB, format to exFAT, or format the card inside the MPC, so it is recognized reliably."
         },
         {
           "q": "Do I need a fast SD card for the MPC One+?",
@@ -9785,7 +9785,7 @@
         ],
         "maxCapacity": "512GB (Reliable), 1TB (Reported)"
       },
-      "whySpecs": "Unlike the standalone MPCs, the SP-404MKII does <b>not stream samples off the card during a set</b> — samples are imported into the unit's internal storage, and the SD card is used for <b>importing/exporting samples, saving projects, and backups</b>. That means raw speed is far less important than reliability: a Class 10 / U1 card is plenty. The two things that actually cause problems are unsupported capacities and bad formatting, so use a name-brand card and <b>format it inside the SP-404MKII</b> before transferring files.",
+      "whySpecs": "Unlike the standalone MPCs, the SP-404MKII does <b>not stream samples off the card during a set</b>. Samples are imported into the unit's internal storage, and the SD card is used for <b>importing/exporting samples, saving projects, and backups</b>. That means raw speed is far less important than reliability: a Class 10 / U1 card is plenty. The two things that actually cause problems are unsupported capacities and bad formatting, so use a name-brand card and <b>format it inside the SP-404MKII</b> before transferring files.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-sd-uhs1"
@@ -9800,15 +9800,15 @@
       "faq": [
         {
           "q": "What kind of SD card does the Roland SP-404MKII use?",
-          "a": "<b>A standard full-size SD/SDHC/SDXC card.</b> Speed class is not critical because the card is used for importing/exporting samples and saving projects rather than live streaming — a reliable Class 10 / U1 card is sufficient."
+          "a": "<b>A standard full-size SD/SDHC/SDXC card.</b> Speed class is not critical because the card is used for importing/exporting samples and saving projects rather than live streaming, so a reliable Class 10 / U1 card is sufficient."
         },
         {
           "q": "What is the maximum SD card size for the SP-404MKII?",
-          "a": "<b>256GB–512GB is the reliable range.</b> Some users report 1TB cards working after formatting them in the unit, but results vary — if you want guaranteed compatibility, stay at 512GB or below. Always format the card in the SP-404MKII before use."
+          "a": "<b>256GB–512GB is the reliable range.</b> Some users report 1TB cards working after formatting them in the unit, but results vary. If you want guaranteed compatibility, stay at 512GB or below. Always format the card in the SP-404MKII before use."
         },
         {
           "q": "Does the SP-404MKII play samples directly from the SD card?",
-          "a": "<b>No — samples are imported to the unit's internal storage.</b> The SD card moves samples and projects in and out and acts as a backup, so you don't need a high-speed streaming card; you need a dependable one that the unit formats and reads without errors."
+          "a": "<b>No, samples are imported to the unit's internal storage.</b> The SD card moves samples and projects in and out and acts as a backup, so you don't need a high-speed streaming card; you need a dependable one that the unit formats and reads without errors."
         }
       ],
       "relatedDevices": [
@@ -9843,7 +9843,7 @@
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "The MPC X is the <b>flagship standalone MPC</b>, and like the rest of the line it streams audio directly from disk — large kits, audio tracks, and long samples are read off the card in real time as a project plays. Its big-screen, studio-centric users tend to keep enormous libraries, so capacity headroom and a steady sustained read speed matter most. A fast full-size UHS-I U3/V30 card (ideally A2) keeps sample streaming glitch-free; if you want maximum headroom for big multitrack sessions, the MPC X's full-size slot also accepts <b>UHS-II</b> cards (they run at UHS-I speeds but are still excellent). Format to exFAT (cards over 32GB) or format in the MPC, and Akai supports drives up to 2TB.",
+      "whySpecs": "The MPC X is the <b>flagship standalone MPC</b>, and like the rest of the line it streams audio directly from disk. Large kits, audio tracks, and long samples are read off the card in real time as a project plays. Its big-screen, studio-centric users tend to keep enormous libraries, so capacity headroom and a steady sustained read speed matter most. A fast full-size UHS-I U3/V30 card (ideally A2) keeps sample streaming glitch-free; if you want maximum headroom for big multitrack sessions, the MPC X's full-size slot also accepts <b>UHS-II</b> cards (they run at UHS-I speeds but are still excellent). Format to exFAT (cards over 32GB) or format in the MPC, and Akai supports drives up to 2TB.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs2"
@@ -9858,7 +9858,7 @@
       "faq": [
         {
           "q": "What is the maximum SD card size for the Akai MPC X?",
-          "a": "<b>Up to 2TB.</b> The MPC X has a full-size SD/SDHC/SDXC slot and Akai supports virtually all drive sizes. Format cards larger than 32GB to exFAT — or format inside the MPC — for reliable recognition."
+          "a": "<b>Up to 2TB.</b> The MPC X has a full-size SD/SDHC/SDXC slot and Akai supports virtually all drive sizes. Format cards larger than 32GB to exFAT, or format inside the MPC, for reliable recognition."
         },
         {
           "q": "Does the MPC X benefit from a UHS-II card?",
@@ -9901,7 +9901,7 @@
         ],
         "maxCapacity": "128GB (Officially Tested), 512GB (Reported)"
       },
-      "whySpecs": "The Tracker+ is built around its microSD card — samples, instruments, and projects all live on it, and the device <b>streams samples directly from the card</b> during playback. Two things matter: the card <b>must be formatted FAT32</b> (Polyend specifies a primary FAT32 MBR partition; exFAT is not supported on the original/Mini line), and it should be a quality UHS-I card rated <b>A1/A2</b> so random reads keep up while a pattern streams multiple sample tracks. Polyend officially tested up to 128GB; larger cards (up to 512GB) are reported to work once formatted FAT32, but 64–128GB is the comfortable, fully-supported range.",
+      "whySpecs": "The Tracker+ is built around its microSD card. Samples, instruments, and projects all live on it, and the device <b>streams samples directly from the card</b> during playback. Two things matter: the card <b>must be formatted FAT32</b> (Polyend specifies a primary FAT32 MBR partition; exFAT is not supported on the original/Mini line), and it should be a quality UHS-I card rated <b>A1/A2</b> so random reads keep up while a pattern streams multiple sample tracks. Polyend officially tested up to 128GB; larger cards (up to 512GB) are reported to work once formatted FAT32, but 64–128GB is the comfortable, fully-supported range.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -9916,7 +9916,7 @@
       "faq": [
         {
           "q": "What format does the Polyend Tracker+ SD card need to be?",
-          "a": "<b>FAT32, on a primary MBR partition.</b> Polyend specifies FAT32 — exFAT-formatted cards are not reliably supported. If a card isn't recognized, reformatting it to FAT32 is almost always the fix. Cards larger than 32GB usually need a dedicated FAT32 tool (Windows won't format big cards to FAT32 by default)."
+          "a": "<b>FAT32, on a primary MBR partition.</b> Polyend specifies FAT32, and exFAT-formatted cards are not reliably supported. If a card isn't recognized, reformatting it to FAT32 is almost always the fix. Cards larger than 32GB usually need a dedicated FAT32 tool (Windows won't format big cards to FAT32 by default)."
         },
         {
           "q": "What is the maximum SD card size for the Polyend Tracker?",
@@ -9924,7 +9924,7 @@
         },
         {
           "q": "Do I need a fast card for the Polyend Tracker+?",
-          "a": "<b>Yes — a UHS-I card rated A1 or A2.</b> The Tracker streams samples off the card during playback, so good random-read performance prevents glitches when several sample tracks play at once. A name-brand U3/A2 microSD is the safe pick; cheap unbranded cards are the usual cause of dropouts and load errors."
+          "a": "<b>Yes, a UHS-I card rated A1 or A2.</b> The Tracker streams samples off the card during playback, so good random-read performance prevents glitches when several sample tracks play at once. A name-brand U3/A2 microSD is the safe pick; cheap unbranded cards are the usual cause of dropouts and load errors."
         }
       ],
       "relatedDevices": [
@@ -9957,7 +9957,7 @@
         ],
         "maxCapacity": "32GB (Strict Limit)"
       },
-      "whySpecs": "<b>Critical compatibility note:</b> the MC-707 supports <b>SD and SDHC cards only — up to 32GB</b>. It does <b>not</b> reliably read SDXC cards (64GB and larger), so the most common mistake is buying a big 128GB card that the unit won't recognize. The card stores projects, audio data, and imported samples (samples are loaded into the unit, not streamed live during a set), so raw speed is not critical — a dependable Class 10 / U1 SDHC card is all you need. Format the card in the MC-707 before use for the most reliable results.",
+      "whySpecs": "<b>Critical compatibility note:</b> the MC-707 supports <b>SD and SDHC cards only, up to 32GB</b>. It does <b>not</b> reliably read SDXC cards (64GB and larger), so the most common mistake is buying a big 128GB card that the unit won't recognize. The card stores projects, audio data, and imported samples (samples are loaded into the unit, not streamed live during a set), so raw speed is not critical. A dependable Class 10 / U1 SDHC card is all you need. Format the card in the MC-707 before use for the most reliable results.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-sd-uhs1"
@@ -9972,7 +9972,7 @@
       "faq": [
         {
           "q": "What is the maximum SD card size for the Roland MC-707?",
-          "a": "<b>32GB.</b> The MC-707 supports SD/SDHC cards up to 32GB and does not reliably work with 64GB+ SDXC cards. If your card isn't recognized, it is almost certainly too large — use a 32GB SDHC card."
+          "a": "<b>32GB.</b> The MC-707 supports SD/SDHC cards up to 32GB and does not reliably work with 64GB+ SDXC cards. If your card isn't recognized, it is almost certainly too large, so use a 32GB SDHC card."
         },
         {
           "q": "Why won't my MC-707 read my SD card?",
@@ -9980,7 +9980,7 @@
         },
         {
           "q": "Does the MC-707 need a fast SD card?",
-          "a": "<b>No — a standard Class 10 / U1 card is fine.</b> The card holds projects, audio, and imported samples that load into the unit rather than streaming live, so capacity compatibility (≤32GB SDHC) matters far more than speed."
+          "a": "<b>No, a standard Class 10 / U1 card is fine.</b> The card holds projects, audio, and imported samples that load into the unit rather than streaming live, so capacity compatibility (≤32GB SDHC) matters far more than speed."
         }
       ],
       "relatedDevices": [
@@ -10015,7 +10015,7 @@
         ],
         "maxCapacity": "1TB (Tested)"
       },
-      "whySpecs": "The Blackbox is a compact sampler that <b>streams every voice directly from the microSD card</b> — up to 32 simultaneous voices — which is one of the most demanding real-time card workloads of any device in this category. That is why 1010music specifically recommends <b>A2-rated, V30 cards</b> (their go-to is the SanDisk Extreme series): the card's random-read/IOPS performance directly determines how many samples can play at once without dropping out. A slow or cheap card is the single most common cause of Blackbox playback glitches. Large cards work well (users run 512GB–1TB), so size to your library; just keep it a name-brand A2/V30 card.",
+      "whySpecs": "The Blackbox is a compact sampler that <b>streams every voice directly from the microSD card</b>, up to 32 simultaneous voices, which is one of the most demanding real-time card workloads of any device in this category. That is why 1010music specifically recommends <b>A2-rated, V30 cards</b> (their go-to is the SanDisk Extreme series): the card's random-read/IOPS performance directly determines how many samples can play at once without dropping out. A slow or cheap card is the single most common cause of Blackbox playback glitches. Large cards work well (users run 512GB–1TB), so size to your library; just keep it a name-brand A2/V30 card.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -10034,7 +10034,7 @@
         },
         {
           "q": "What is the maximum SD card size for the Blackbox?",
-          "a": "<b>Very large cards are supported — users run 512GB and even 1TB successfully.</b> Size the card to your sample library; the more important factor is that it's a quality A2/V30 card, not its raw capacity."
+          "a": "<b>Very large cards are supported, and users run 512GB and even 1TB successfully.</b> Size the card to your sample library; the more important factor is that it's a quality A2/V30 card, not its raw capacity."
         },
         {
           "q": "Why does my Blackbox glitch or cut off samples?",
@@ -10202,7 +10202,7 @@
         ],
         "maxCapacity": "Limited by app storage"
       },
-      "whySpecs": "The iPhone 15 lineup switched from Lightning to USB-C in 2023, but that doesn't add SD card support — you still need an external card reader through the Files app. The catch is that the port's actual speed depends on which iPhone 15 you have: the base iPhone 15 and 15 Plus keep their USB-C port capped at USB 2.0 (480 Mbps), the same ceiling Lightning had, while the iPhone 15 Pro and Pro Max support USB 3 (up to 10 Gbps). That means a fast UHS-II card reader is wasted on a base iPhone 15 but genuinely useful on a Pro model for offloading large photo/video libraries quickly.",
+      "whySpecs": "The iPhone 15 lineup switched from Lightning to USB-C in 2023, but that doesn't add SD card support. You still need an external card reader through the Files app. The catch is that the port's actual speed depends on which iPhone 15 you have: the base iPhone 15 and 15 Plus keep their USB-C port capped at USB 2.0 (480 Mbps), the same ceiling Lightning had, while the iPhone 15 Pro and Pro Max support USB 3 (up to 10 Gbps). That means a fast UHS-II card reader is wasted on a base iPhone 15 but genuinely useful on a Pro model for offloading large photo/video libraries quickly.",
       "requiresReader": true,
       "recommendedReaders": [
         "ugreen-2in1-usbc-usb3",
@@ -10254,7 +10254,7 @@
           "128GB"
         ]
       },
-      "whySpecs": "The iPhone 14 (and 14 Pro) never adopted USB-C — that switch came a generation later with the iPhone 15. Every Lightning-to-SD reader on this phone is bottlenecked to USB 2.0 speeds (~480 Mbps), no matter how fast the reader or card claims to be, because Lightning itself is the ceiling. In practice that means a basic UHS-I microSD card performs identically to a pricier UHS-II card here — there's no point paying for speed the port can't deliver.",
+      "whySpecs": "The iPhone 14 (and 14 Pro) never adopted USB-C. That switch came a generation later with the iPhone 15. Every Lightning-to-SD reader on this phone is bottlenecked to USB 2.0 speeds (~480 Mbps), no matter how fast the reader or card claims to be, because Lightning itself is the ceiling. In practice that means a basic UHS-I microSD card performs identically to a pricier UHS-II card here, and there's no point paying for speed the port can't deliver.",
       "requiresReader": true,
       "recommendedReaders": [
         "lexar-lightning-microsd"
@@ -10270,7 +10270,7 @@
       "faq": [
         {
           "q": "Will a faster microSD card speed up file transfers on iPhone 14?",
-          "a": "No. The Lightning port caps transfer speed at roughly USB 2.0 (~480 Mbps) regardless of card class. A UHS-I card is enough — a UHS-II card won't transfer any faster on this device."
+          "a": "No. The Lightning port caps transfer speed at roughly USB 2.0 (~480 Mbps) regardless of card class. A UHS-I card is enough, and a UHS-II card won't transfer any faster on this device."
         }
       ],
       "relatedDevices": [
@@ -10300,7 +10300,7 @@
           "128GB"
         ]
       },
-      "whySpecs": "The iPhone 13 has no card slot and, like the 14, is stuck on Lightning rather than USB-C — so any Lightning-to-microSD reader tops out at USB 2.0 speeds (~480 Mbps) regardless of the card's rated speed class. The 13 originally shipped with 128GB, 256GB, or 512GB internal storage tiers, so most people buying an external reader are doing it to import photos from a camera's SD card or offload old footage, not because 128GB fills up quickly on its own.",
+      "whySpecs": "The iPhone 13 has no card slot and, like the 14, is stuck on Lightning rather than USB-C, so any Lightning-to-microSD reader tops out at USB 2.0 speeds (~480 Mbps) regardless of the card's rated speed class. The 13 originally shipped with 128GB, 256GB, or 512GB internal storage tiers, so most people buying an external reader are doing it to import photos from a camera's SD card or offload old footage, not because 128GB fills up quickly on its own.",
       "requiresReader": true,
       "recommendedReaders": [
         "lexar-lightning-microsd"
@@ -10316,7 +10316,7 @@
       "faq": [
         {
           "q": "What's the fastest microSD card worth buying for an iPhone 13 with a Lightning reader?",
-          "a": "A standard UHS-I card (V30 or higher) is the practical ceiling — the Lightning port itself limits transfers to roughly USB 2.0 speeds, so a more expensive UHS-II card won't perform any faster on this device."
+          "a": "A standard UHS-I card (V30 or higher) is the practical ceiling. The Lightning port itself limits transfers to roughly USB 2.0 speeds, so a more expensive UHS-II card won't perform any faster on this device."
         }
       ],
       "relatedDevices": [
@@ -10343,7 +10343,7 @@
           "128GB"
         ]
       },
-      "whySpecs": "The iPhone 14 Pro Max shoots ProRes video at up to 4K/30fps, which can eat over 6GB per minute at the highest quality — but there's no way to record directly to an external SD card via a Lightning reader; ProRes at that bitrate needs an external SSD connected through a USB 3 adapter, not a microSD card. A Lightning microSD reader is still useful for the ordinary case of importing photos or footage from a camera's SD card into the Photos app, but treat it as an import/offload tool, not a recording destination, and prioritize buying enough internal storage (256GB+) if you shoot ProRes regularly.",
+      "whySpecs": "The iPhone 14 Pro Max shoots ProRes video at up to 4K/30fps, which can eat over 6GB per minute at the highest quality, but there's no way to record directly to an external SD card via a Lightning reader; ProRes at that bitrate needs an external SSD connected through a USB 3 adapter, not a microSD card. A Lightning microSD reader is still useful for the ordinary case of importing photos or footage from a camera's SD card into the Photos app, but treat it as an import/offload tool, not a recording destination, and prioritize buying enough internal storage (256GB+) if you shoot ProRes regularly.",
       "requiresReader": true,
       "recommendedReaders": [
         "lexar-lightning-microsd"
@@ -10359,7 +10359,7 @@
       "faq": [
         {
           "q": "Can I record ProRes video directly to an SD card on the iPhone 14 Pro Max?",
-          "a": "No. A Lightning-to-microSD reader can only be used to import or transfer files through the Files/Photos app — ProRes recording to external storage requires an external SSD connected via a USB 3 Lightning adapter, not an SD card reader."
+          "a": "No. A Lightning-to-microSD reader can only be used to import or transfer files through the Files/Photos app. ProRes recording to external storage requires an external SSD connected via a USB 3 Lightning adapter, not an SD card reader."
         }
       ],
       "relatedDevices": [
@@ -10387,7 +10387,7 @@
           "64GB"
         ]
       },
-      "whySpecs": "The 3rd-gen iPhone SE is Apple's budget model, and its base configuration starts at just 64GB of internal storage — the smallest of any current iPhone — with no expansion path. That makes an external Lightning microSD reader more of a practical necessity here than on a Pro-tier iPhone with 256GB+: photo libraries and app data fill a 64GB phone noticeably faster, so regularly offloading photos/videos to a card via the Files app is a realistic way to stretch the entry-level storage tier. As with other Lightning-era iPhones, the port caps transfers at USB 2.0 speeds, so a basic UHS-I card is all you need.",
+      "whySpecs": "The 3rd-gen iPhone SE is Apple's budget model, and its base configuration starts at just 64GB of internal storage, the smallest of any current iPhone, with no expansion path. That makes an external Lightning microSD reader more of a practical necessity here than on a Pro-tier iPhone with 256GB+: photo libraries and app data fill a 64GB phone noticeably faster, so regularly offloading photos/videos to a card via the Files app is a realistic way to stretch the entry-level storage tier. As with other Lightning-era iPhones, the port caps transfers at USB 2.0 speeds, so a basic UHS-I card is all you need.",
       "requiresReader": true,
       "recommendedReaders": [
         "lexar-lightning-microsd"
@@ -10416,7 +10416,7 @@
       "name": "Samsung Galaxy S23 / S23+",
       "category": "Smartphones",
       "slug": "samsung-galaxy-s23",
-      "metaDescription": "The Samsung Galaxy S23 does not have a microSD card slot — Samsung removed expandable storage from the Galaxy S series starting with the S21. Use a USB-C card reader for external SD card access.",
+      "metaDescription": "The Samsung Galaxy S23 does not have a microSD card slot. Samsung removed expandable storage from the Galaxy S series starting with the S21. Use a USB-C card reader for external SD card access.",
       "searchTerms": [
         "samsung galaxy s23",
         "galaxy s23",
@@ -10457,7 +10457,7 @@
         },
         {
           "q": "Should I buy a higher storage tier since the S23 can't be expanded later?",
-          "a": "Yes — this matters more on the S23 than on Samsung's older expandable-storage phones. Since there's no microSD slot to add capacity after purchase, choosing 256GB over the base 128GB up front is worth the extra cost if you shoot a lot of photos or 4K video, rather than relying on a USB-C reader for everyday storage."
+          "a": "Yes, this matters more on the S23 than on Samsung's older expandable-storage phones. Since there's no microSD slot to add capacity after purchase, choosing 256GB over the base 128GB up front is worth the extra cost if you shoot a lot of photos or 4K video, rather than relying on a USB-C reader for everyday storage."
         }
       ],
       "relatedDevices": [
@@ -10487,7 +10487,7 @@
           "128GB"
         ]
       },
-      "whySpecs": "Unlike Samsung, Google's Pixel line has never included a microSD slot on any model — this isn't a recent removal, it's a design choice Google has kept since the very first Pixel in 2016, in favor of pushing users toward Google Photos/Google One cloud backup instead of physical expansion. That makes the storage tier you buy at checkout more permanent than on phones with a reader workaround: the base Pixel 8 tops out at 256GB, while the Pixel 8 Pro goes up to 1TB, so heavy photo/video shooters are better served by paying for the Pro's larger tier than relying on a USB-C reader for daily use. A USB-C reader is still useful for one-off imports from a camera's SD card, just not as a long-term storage strategy.",
+      "whySpecs": "Unlike Samsung, Google's Pixel line has never included a microSD slot on any model. This isn't a recent removal, it's a design choice Google has kept since the very first Pixel in 2016, in favor of pushing users toward Google Photos/Google One cloud backup instead of physical expansion. That makes the storage tier you buy at checkout more permanent than on phones with a reader workaround: the base Pixel 8 tops out at 256GB, while the Pixel 8 Pro goes up to 1TB, so heavy photo/video shooters are better served by paying for the Pro's larger tier than relying on a USB-C reader for daily use. A USB-C reader is still useful for one-off imports from a camera's SD card, just not as a long-term storage strategy.",
       "requiresReader": true,
       "recommendedReaders": [
         "ugreen-2in1-usbc-usb3",
@@ -10504,7 +10504,7 @@
       "faq": [
         {
           "q": "Why doesn't the Google Pixel 8 have a microSD card slot?",
-          "a": "No Pixel phone ever has — Google has favored cloud storage (Google Photos, Google One) over expandable storage since the original Pixel launched in 2016. This is a long-standing design choice, not something removed from a more recent model."
+          "a": "No Pixel phone ever has. Google has favored cloud storage (Google Photos, Google One) over expandable storage since the original Pixel launched in 2016. This is a long-standing design choice, not something removed from a more recent model."
         },
         {
           "q": "Is the Pixel 8 Pro's 1TB storage option a substitute for not having a microSD slot?",
@@ -10793,7 +10793,7 @@
         ],
         "maxCapacity": "32GB"
       },
-      "whySpecs": "Tactacam specifies full-size SD only — microSD-to-SD adapters are explicitly discouraged and can cause read errors/ejection failures in the field.",
+      "whySpecs": "Tactacam specifies full-size SD only, and microSD-to-SD adapters are explicitly discouraged and can cause read errors/ejection failures in the field.",
       "recommendedBrands": [
         {
           "id": "lexar-professional-silver-sd"
@@ -10889,7 +10889,7 @@
       "faq": [
         {
           "q": "Can the Core DS-4K use cards larger than 32GB?",
-          "a": "<b>Yes, unlike many older Bushnell trail cameras, the Core DS-4K supports up to 512GB</b>, and its 4K trigger video benefits from the extra capacity — just make sure the card is rated U3/V30 or faster for sustained write speed."
+          "a": "<b>Yes, unlike many older Bushnell trail cameras, the Core DS-4K supports up to 512GB</b>, and its 4K trigger video benefits from the extra capacity, so just make sure the card is rated U3/V30 or faster for sustained write speed."
         }
       ],
       "relatedDevices": [
@@ -10901,7 +10901,7 @@
     }
   ],
   "metadata": {
-    "generated": "2026-08-29T07:49:31.406Z",
+    "generated": "2026-08-29T08:27:46.555Z",
     "totalDevices": 222,
     "categories": [
       "3D Printers & Fabrication",

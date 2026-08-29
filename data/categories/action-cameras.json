@@ -22,7 +22,7 @@
       ],
       "maxCapacity": "1TB"
     },
-    "whySpecs": "Shoots 5.3K60, 4K120 and 2.7K240. <b>V30 is the floor, not a nice-to-have</b> — it guarantees 30 MB/s of sustained write, which comfortably covers the Hero 13's High bitrate setting of roughly 120 Mbps (about 15 MB/s) with enough headroom that a card slowing down mid-clip won't drop frames or corrupt the file. GoPro's current guidance also asks for an <b>A2</b> rating on top of V30, and the Hero 13 supports cards up to <b>1TB</b>, so there's no reason to cap yourself at 512GB if you shoot long days.",
+    "whySpecs": "Shoots 5.3K60, 4K120 and 2.7K240. <b>V30 is the floor, not a nice-to-have</b>. It guarantees 30 MB/s of sustained write, which comfortably covers the Hero 13's High bitrate setting of roughly 120 Mbps (about 15 MB/s) with enough headroom that a card slowing down mid-clip won't drop frames or corrupt the file. GoPro's current guidance also asks for an <b>A2</b> rating on top of V30, and the Hero 13 supports cards up to <b>1TB</b>, so there's no reason to cap yourself at 512GB if you shoot long days.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -44,11 +44,11 @@
       },
       {
         "q": "What's the fastest card I should get?",
-        "a": "<b>V30 speed class is sufficient for standard GoPro Hero 13 recording</b>. V60 or faster cards are useful only for professional multi-camera workflows, simultaneous backup recording, or future-proofing for newer, more demanding cameras. The Hero 13 has a UHS-I slot, so a UHS-II card will work but will simply run at UHS-I speeds in the camera — you'd only see the extra speed when offloading footage in a UHS-II reader."
+        "a": "<b>V30 speed class is sufficient for standard GoPro Hero 13 recording</b>. V60 or faster cards are useful only for professional multi-camera workflows, simultaneous backup recording, or future-proofing for newer, more demanding cameras. The Hero 13 has a UHS-I slot, so a UHS-II card will work but will simply run at UHS-I speeds in the camera. You'd only see the extra speed when offloading footage in a UHS-II reader."
       },
       {
         "q": "Does the GoPro Hero 13 support a 1TB microSD card?",
-        "a": "<b>Yes — GoPro supports cards up to 1TB on the Hero 13.</b> Older guidance capping GoPro at 512GB is out of date. A 1TB card is worth it if you shoot all-day sessions and don't want to swap cards in the field; otherwise two 256GB or 512GB cards are the safer buy, because a single failed card takes down everything you shot rather than half of it."
+        "a": "<b>Yes, GoPro supports cards up to 1TB on the Hero 13.</b> Older guidance capping GoPro at 512GB is out of date. A 1TB card is worth it if you shoot all-day sessions and don't want to swap cards in the field; otherwise two 256GB or 512GB cards are the safer buy, because a single failed card takes down everything you shot rather than half of it."
       },
       {
         "q": "How often should I replace my SD card?",
@@ -86,7 +86,7 @@
       ],
       "maxCapacity": "1TB"
     },
-    "whySpecs": "Shoots 5.3K video at various frame rates, with a High bitrate setting of roughly 120 Mbps. V30 cards guarantee 30 MB/s of sustained write, which leaves comfortable headroom over that — the point isn't peak speed but that the card never dips below the camera's demand mid-clip, which is what causes dropped frames and corrupted files. GoPro's current guidance pairs V30 with an <b>A2</b> rating, and the Hero 12 handles cards up to <b>1TB</b>.",
+    "whySpecs": "Shoots 5.3K video at various frame rates, with a High bitrate setting of roughly 120 Mbps. V30 cards guarantee 30 MB/s of sustained write, which leaves comfortable headroom over that. The point isn't peak speed but that the card never dips below the camera's demand mid-clip, which is what causes dropped frames and corrupted files. GoPro's current guidance pairs V30 with an <b>A2</b> rating, and the Hero 12 handles cards up to <b>1TB</b>.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -135,7 +135,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "Shoots 5.6K30 spherical video in 360 mode, and up to 1440p60 as a single-lens camera in HERO mode — note the MAX is <b>not</b> a 4K camera in HERO mode, which surprises people cross-shopping it against a Hero Black. 360 capture is the demanding mode: it's stitching two sensors into one high-bitrate stream, so V30's guaranteed 30 MB/s sustained write is what keeps long spherical clips from dropping frames. The MAX has a UHS-I slot and GoPro's approved-card list for it is more conservative than for current models, so stick to a well-known V30 card rather than the largest one you can find.",
+    "whySpecs": "Shoots 5.6K30 spherical video in 360 mode, and up to 1440p60 as a single-lens camera in HERO mode. Note the MAX is <b>not</b> a 4K camera in HERO mode, which surprises people cross-shopping it against a Hero Black. 360 capture is the demanding mode: it's stitching two sensors into one high-bitrate stream, so V30's guaranteed 30 MB/s sustained write is what keeps long spherical clips from dropping frames. The MAX has a UHS-I slot and GoPro's approved-card list for it is more conservative than for current models, so stick to a well-known V30 card rather than the largest one you can find.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -157,7 +157,7 @@
       },
       {
         "q": "How much storage for 360 content?",
-        "a": "<b>In 360 mode, a 128GB microSD card holds roughly 2.5 hours of footage.</b> Spherical capture combines two sensors into one stream, so it eats storage noticeably faster than HERO mode does — but on a long shoot the limit you hit first is usually battery life, not card space. A 256GB card comfortably covers a full day of intermittent 360 capture."
+        "a": "<b>In 360 mode, a 128GB microSD card holds roughly 2.5 hours of footage.</b> Spherical capture combines two sensors into one stream, so it eats storage noticeably faster than HERO mode does, but on a long shoot the limit you hit first is usually battery life, not card space. A 256GB card comfortably covers a full day of intermittent 360 capture."
       }
     ],
     "relatedDevices": [
@@ -236,7 +236,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum for the Osmo Pocket 3, with a maximum capacity of 512GB. The Pocket 3 shoots 4K/120fps video and these are DJI's published specifications. Faster UHS-II cards work in the Pocket 3 but offer no recording advantage over a good UHS-I card — the benefit is only in faster file transfers to a computer.",
+    "whySpecs": "DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum for the Osmo Pocket 3, with a maximum capacity of 512GB. The Pocket 3 shoots 4K/120fps video and these are DJI's published specifications. Faster UHS-II cards work in the Pocket 3 but offer no recording advantage over a good UHS-I card. The benefit is only in faster file transfers to a computer.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -251,7 +251,7 @@
     "faq": [
       {
         "q": "What are DJI's official microSD card requirements for the Osmo Pocket 3?",
-        "a": "<b>DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum, with a maximum supported capacity of 512GB.</b> These are DJI's published specifications for the Pocket 3. Cards meeting these specs — such as the SanDisk Extreme, Lexar Professional Silver, and Kingston Canvas Go Plus — are the safe choices for reliable 4K recording."
+        "a": "<b>DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum, with a maximum supported capacity of 512GB.</b> These are DJI's published specifications for the Pocket 3. Cards meeting these specs, such as the SanDisk Extreme, Lexar Professional Silver, and Kingston Canvas Go Plus, are the safe choices for reliable 4K recording."
       },
       {
         "q": "How much 4K video can a 128GB card hold on the Pocket 3?",
@@ -436,7 +436,7 @@
       ],
       "maxCapacity": "2TB"
     },
-    "whySpecs": "DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum for the Osmo Action 4, with a maximum supported capacity of 2TB. The Action 4 records 4K at 120fps with exceptional low-light performance from its large 1/1.3-inch sensor, which produces higher bitrates than typical action cameras — making the V30 minimum a firm requirement, not a suggestion.",
+    "whySpecs": "DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum for the Osmo Action 4, with a maximum supported capacity of 2TB. The Action 4 records 4K at 120fps with exceptional low-light performance from its large 1/1.3-inch sensor, which produces higher bitrates than typical action cameras, making the V30 minimum a firm requirement, not a suggestion.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -451,7 +451,7 @@
     "faq": [
       {
         "q": "What are DJI's official microSD card requirements for the Osmo Action 4?",
-        "a": "<b>DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum, with a maximum supported capacity of 2TB.</b> These are DJI's published specifications for the Osmo Action 4. Cards meeting these specs — such as the SanDisk Extreme, Lexar Professional 1000x, and Kingston Canvas Go Plus — are the safe choices for reliable 4K/120fps recording."
+        "a": "<b>DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum, with a maximum supported capacity of 2TB.</b> These are DJI's published specifications for the Osmo Action 4. Cards meeting these specs, such as the SanDisk Extreme, Lexar Professional 1000x, and Kingston Canvas Go Plus, are the safe choices for reliable 4K/120fps recording."
       },
       {
         "q": "Action 4 vs GoPro Hero 12 - same cards?",
@@ -830,7 +830,7 @@
       ],
       "maxCapacity": "1TB"
     },
-    "whySpecs": "The Osmo Pocket 4 continues DJI's gimbal-stabilized pocket camera line with higher-resolution 4K recording than the Pocket 3. DJI officially requires a UHS-I microSD card with U3/V30 minimum, and the camera runs the same on-insertion speed check as the rest of the Osmo lineup — an underrated card triggers a <b>\"Card Too Slow\"</b> error and blocks recording outright. UHS-II cards work but only speed up file transfers to a computer, not in-camera recording.",
+    "whySpecs": "The Osmo Pocket 4 continues DJI's gimbal-stabilized pocket camera line with higher-resolution 4K recording than the Pocket 3. DJI officially requires a UHS-I microSD card with U3/V30 minimum, and the camera runs the same on-insertion speed check as the rest of the Osmo lineup. An underrated card triggers a <b>\"Card Too Slow\"</b> error and blocks recording outright. UHS-II cards work but only speed up file transfers to a computer, not in-camera recording.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -845,7 +845,7 @@
     "faq": [
       {
         "q": "Do I need a UHS-II card for the Osmo Pocket 4?",
-        "a": "<b>No.</b> DJI's official minimum is U3/V30 UHS-I. A UHS-II card will work but only provides faster file transfers to a computer — it does not unlock higher recording quality or prevent the 'Card Too Slow' error any better than a good UHS-I V30 card."
+        "a": "<b>No.</b> DJI's official minimum is U3/V30 UHS-I. A UHS-II card will work but only provides faster file transfers to a computer. It does not unlock higher recording quality or prevent the 'Card Too Slow' error any better than a good UHS-I V30 card."
       }
     ],
     "relatedDevices": [
@@ -860,7 +860,7 @@
     "name": "DJI Lito X1",
     "category": "Action Cameras",
     "slug": "dji-lito-x1",
-    "metaDescription": "Best microSD cards for the DJI Lito X1 — V30-rated picks for DJI's compact wearable action camera.",
+    "metaDescription": "Best microSD cards for the DJI Lito X1: V30-rated picks for DJI's compact wearable action camera.",
     "searchTerms": [
       "dji lito x1 sd card",
       "dji lito x1 microsd",
@@ -878,7 +878,7 @@
       ],
       "maxCapacity": "1TB"
     },
-    "whySpecs": "The Lito X1 is DJI's compact, ultra-wearable entry in the action camera lineup, aimed at continuous POV capture rather than mounted setups. Despite its small form factor, it records at a high enough bitrate that a card without a verified V30 sustained write speed will trigger DJI's familiar <b>\"Card Too Slow\"</b> error and halt recording. Because the camera is designed for grab-and-go use, a reliable name-brand card matters just as much as raw capacity — a dropped recording mid-clip is the most common complaint with underrated cards.",
+    "whySpecs": "The Lito X1 is DJI's compact, ultra-wearable entry in the action camera lineup, aimed at continuous POV capture rather than mounted setups. Despite its small form factor, it records at a high enough bitrate that a card without a verified V30 sustained write speed will trigger DJI's familiar <b>\"Card Too Slow\"</b> error and halt recording. Because the camera is designed for grab-and-go use, a reliable name-brand card matters just as much as raw capacity. A dropped recording mid-clip is the most common complaint with underrated cards.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -890,7 +890,7 @@
     "faq": [
       {
         "q": "Why does my DJI Lito X1 stop recording partway through a clip?",
-        "a": "<b>This is almost always caused by a card that can't sustain 30 MB/s writes.</b> The Lito X1 runs the same 'Card Too Slow' protection as other DJI action cameras — use a verified V30 microSD card from a reputable brand to avoid interrupted recordings."
+        "a": "<b>This is almost always caused by a card that can't sustain 30 MB/s writes.</b> The Lito X1 runs the same 'Card Too Slow' protection as other DJI action cameras, so use a verified V30 microSD card from a reputable brand to avoid interrupted recordings."
       }
     ],
     "relatedDevices": [
@@ -905,7 +905,7 @@
     "name": "Insta360 Ace Pro 2",
     "category": "Action Cameras",
     "slug": "insta360-ace-pro-2",
-    "metaDescription": "Best microSD cards for the Insta360 Ace Pro 2 — V30-rated picks for this flagship flip-screen action camera.",
+    "metaDescription": "Best microSD cards for the Insta360 Ace Pro 2: V30-rated picks for this flagship flip-screen action camera.",
     "searchTerms": [
       "insta360 ace pro 2 sd card",
       "ace pro 2 microsd",
@@ -954,7 +954,7 @@
     "name": "GoPro Hero 14 Black",
     "category": "Action Cameras",
     "slug": "gopro-hero-14-black",
-    "metaDescription": "Best microSD cards for the GoPro Hero 14 Black — V30-rated picks for stable 5.3K+ recording.",
+    "metaDescription": "Best microSD cards for the GoPro Hero 14 Black: V30-rated picks for stable 5.3K+ recording.",
     "searchTerms": [
       "gopro hero 14 black sd card",
       "hero 14 microsd",
@@ -1003,7 +1003,7 @@
     "name": "GoPro Hero 9 Black",
     "category": "Action Cameras",
     "slug": "gopro-hero-9-black",
-    "metaDescription": "Best microSD cards for the GoPro Hero 9 Black — V30-rated picks for stable 5K recording.",
+    "metaDescription": "Best microSD cards for the GoPro Hero 9 Black: V30-rated picks for stable 5K recording.",
     "searchTerms": [
       "gopro hero 9 black sd card",
       "hero 9 microsd",
@@ -1022,7 +1022,7 @@
       ],
       "maxCapacity": "256GB"
     },
-    "whySpecs": "The Hero 9 Black shoots 5K30 and 4K60 video, both demanding enough that GoPro officially requires a <b>V30-rated</b> microSD card to guarantee the sustained 30 MB/s write speed needed to avoid dropped frames or corrupted clips. GoPro tested and officially supports capacities up to <b>256GB</b> on this model — cards larger than that may work with modern firmware but aren't officially validated, so 256GB is the safe ceiling if you want guaranteed compatibility.",
+    "whySpecs": "The Hero 9 Black shoots 5K30 and 4K60 video, both demanding enough that GoPro officially requires a <b>V30-rated</b> microSD card to guarantee the sustained 30 MB/s write speed needed to avoid dropped frames or corrupted clips. GoPro tested and officially supports capacities up to <b>256GB</b> on this model. Cards larger than that may work with modern firmware but aren't officially validated, so 256GB is the safe ceiling if you want guaranteed compatibility.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"

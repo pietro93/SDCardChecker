@@ -26,8 +26,8 @@ const CATEGORY_DESCRIPTIONS = {
     "smartphones": "Explore external SD card readers and recommendations for iPhones, Samsung Galaxy, Google Pixel, and other smartphones.",
     "dash-cams": "Find durable SD cards suited for dash cam and vehicle recorder systems.",
     "security-cameras": "Discover 24/7 surveillance-grade microSD cards for security camera systems.",
-    "3d-printers-and-fabrication": "Find reliable microSD cards for Bambu Lab, Creality, and other 3D printers — where a single corrupt read can ruin a multi-hour, real-material print.",
-    "music-production": "Find the best SD cards for standalone samplers and drum machines like the Akai MPC and Roland SP-404MKII — reliable cards that keep sample streaming dropout-free on stage.",
+    "3d-printers-and-fabrication": "Find reliable microSD cards for Bambu Lab, Creality, and other 3D printers, where a single corrupt read can ruin a multi-hour, real-material print.",
+    "music-production": "Find the best SD cards for standalone samplers and drum machines like the Akai MPC and Roland SP-404MKII, with reliable cards that keep sample streaming dropout-free on stage.",
     "accessories": "Explore SD card readers, adapters, and other accessories for your devices.",
   },
   ja: {

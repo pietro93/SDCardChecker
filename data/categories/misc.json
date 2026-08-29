@@ -20,7 +20,7 @@
       ],
       "maxCapacity": "32GB"
     },
-    "whySpecs": "The HDS LIVE only supports FAT32-formatted SDHC cards, which top out at 32GB by spec. Cards larger than that ship as exFAT/SDXC and the unit won't read them — this is a hardware/firmware limitation of the SD controller, not a defect.",
+    "whySpecs": "The HDS LIVE only supports FAT32-formatted SDHC cards, which top out at 32GB by spec. Cards larger than that ship as exFAT/SDXC and the unit won't read them. This is a hardware/firmware limitation of the SD controller, not a defect.",
     "recommendedBrands": [
       {
         "id": "kingston-canvas-select"
@@ -32,7 +32,7 @@
     "faq": [
       {
         "q": "What happens if I use a card bigger than 32GB in a Lowrance HDS LIVE?",
-        "a": "It won't be recognized, or a software update may fail to read it. This isn't damage to the unit or the card — swap in a <b>32GB or smaller card formatted as FAT32</b> and it will work normally."
+        "a": "It won't be recognized, or a software update may fail to read it. This isn't damage to the unit or the card. Swap in a <b>32GB or smaller card formatted as FAT32</b> and it will work normally."
       }
     ],
     "relatedDevices": [
@@ -61,7 +61,7 @@
       ],
       "maxCapacity": "32GB"
     },
-    "whySpecs": "Garmin's owner's manual caps supported cards at 32GB, formatted FAT32. The card stores map data plus sonar logs, waypoints, routes, and screenshots — not maps exclusively.",
+    "whySpecs": "Garmin's owner's manual caps supported cards at 32GB, formatted FAT32. The card stores map data plus sonar logs, waypoints, routes, and screenshots, not maps exclusively.",
     "recommendedBrands": [
       {
         "id": "kingston-canvas-select"
@@ -73,7 +73,7 @@
     "faq": [
       {
         "q": "Is the SD card in the ECHOMAP UHD only used for maps?",
-        "a": "No — <b>the card also stores sonar logs, waypoints, routes, and screenshots</b>, not just map data. Keep that in mind when deciding how much free space to leave available beyond whatever charts you load."
+        "a": "No. <b>The card also stores sonar logs, waypoints, routes, and screenshots</b>, not just map data. Keep that in mind when deciding how much free space to leave available beyond whatever charts you load."
       }
     ],
     "relatedDevices": [
@@ -113,7 +113,7 @@
     "faq": [
       {
         "q": "Does the Helix 7 have two SD card slots?",
-        "a": "No — <b>the Helix 7 has a single microSD slot</b>, unlike some other Helix models that do have two. Don't assume dual-slot behavior (like simultaneous chart + backup cards) on this model."
+        "a": "No. <b>The Helix 7 has a single microSD slot</b>, unlike some other Helix models that do have two. Don't assume dual-slot behavior (like simultaneous chart + backup cards) on this model."
       }
     ],
     "relatedDevices": [

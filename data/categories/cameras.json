@@ -19,7 +19,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "Professional 8K camera recording. 8K RAW (Cinema RAW Light) can only be recorded to a CFexpress Type B card — the SD slot can't handle it at all. The SD UHS-II slot needs a V90 card for standard 8K, while V60 is enough for 4K. High bitrate video demands fast, dual card slots for safety.",
+    "whySpecs": "Professional 8K camera recording. 8K RAW (Cinema RAW Light) can only be recorded to a CFexpress Type B card, and the SD slot can't handle it at all. The SD UHS-II slot needs a V90 card for standard 8K, while V60 is enough for 4K. High bitrate video demands fast, dual card slots for safety.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-cfexpress"
@@ -31,7 +31,7 @@
     "faq": [
       {
         "q": "Do I need two cards for R5?",
-        "a": "<b>Yes, the Canon EOS R5 has one CFexpress Type B slot and one SD UHS-II slot, and Canon recommends using both for safety</b>. <b>Dual-slot recording provides a backup during critical sessions</b>, though only the CFexpress card can capture 8K RAW — the SD card is a backup for lower-bitrate formats."
+        "a": "<b>Yes, the Canon EOS R5 has one CFexpress Type B slot and one SD UHS-II slot, and Canon recommends using both for safety</b>. <b>Dual-slot recording provides a backup during critical sessions</b>, though only the CFexpress card can capture 8K RAW. The SD card is a backup for lower-bitrate formats."
       },
       {
         "q": "Can I shoot 4K with V30 cards?",
@@ -2751,7 +2751,7 @@
       ],
       "maxCapacity": "SDXC-compatible (no official max published by Canon; 128–256GB SDXC cards work in practice)"
     },
-    "whySpecs": "Canon's own compatibility docs confirm SDHC/SDXC support for this 2011 compact, but Canon never published a specific max card size — treat very-high-capacity claims (e.g. 2TB) as theoretical SDXC-spec ceilings, not tested numbers.",
+    "whySpecs": "Canon's own compatibility docs confirm SDHC/SDXC support for this 2011 compact, but Canon never published a specific max card size, so treat very-high-capacity claims (e.g. 2TB) as theoretical SDXC-spec ceilings, not tested numbers.",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-sd-uhs1"
@@ -2763,7 +2763,7 @@
     "faq": [
       {
         "q": "What's the largest SD card the ELPH 100 HS can use?",
-        "a": "<b>Canon never published an official maximum for this 2011 compact</b> — it's SDXC-compatible and 128–256GB cards work in practice, but treat any larger claim as a theoretical spec ceiling rather than a Canon-tested figure."
+        "a": "<b>Canon never published an official maximum for this 2011 compact</b>. It's SDXC-compatible and 128–256GB cards work in practice, but treat any larger claim as a theoretical spec ceiling rather than a Canon-tested figure."
       }
     ],
     "relatedDevices": [
@@ -2805,7 +2805,7 @@
     "faq": [
       {
         "q": "Can the DSC-W800 use Memory Stick cards instead of SD?",
-        "a": "<b>Yes, but only Memory Stick PRO Duo</b> — Sony's help guide confirms PRO Duo is tested up to 64GB alongside SD/SDHC/SDXC. Plain (non-PRO) Memory Stick Duo isn't supported for full functionality."
+        "a": "<b>Yes, but only Memory Stick PRO Duo</b>. Sony's help guide confirms PRO Duo is tested up to 64GB alongside SD/SDHC/SDXC. Plain (non-PRO) Memory Stick Duo isn't supported for full functionality."
       }
     ],
     "relatedDevices": [
@@ -2835,7 +2835,7 @@
       ],
       "maxCapacity": "64GB (SDXC)"
     },
-    "whySpecs": "This camera predates UHS-I/UHS-II bus-speed standards entirely — manual only references standard SD Speed Class, not UHS; a UHS card works but simply falls back to non-UHS speeds.",
+    "whySpecs": "This camera predates UHS-I/UHS-II bus-speed standards entirely. The manual only references standard SD Speed Class, not UHS; a UHS card works but simply falls back to non-UHS speeds.",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-sd-uhs1"
@@ -2847,7 +2847,7 @@
     "faq": [
       {
         "q": "Is it worth buying a UHS-II card for the Coolpix S3100?",
-        "a": "<b>No — this camera predates the UHS-I/UHS-II bus-speed standards entirely.</b> Its interface can't use UHS bus speeds at all, so a UHS card simply falls back to non-UHS speeds; it's not just poor value, it's functionally inert here."
+        "a": "<b>No. This camera predates the UHS-I/UHS-II bus-speed standards entirely.</b> Its interface can't use UHS bus speeds at all, so a UHS card simply falls back to non-UHS speeds; it's not just poor value, it's functionally inert here."
       }
     ],
     "relatedDevices": [
