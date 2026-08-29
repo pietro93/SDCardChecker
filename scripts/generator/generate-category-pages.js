@@ -7,7 +7,7 @@
 
 const path = require("path");
 const fs = require("fs");
-const { readTemplate, processIncludes, writeFile, generateBreadcrumbSchema, getDeviceImageFallback, getCategorySlug, getCategoryLabel, getCategoryIconName, generateHreflangTags, t } = require("./helpers");
+const { readTemplate, processIncludes, writeFile, generateBreadcrumbSchema, truncateAtWord, getDeviceImageFallback, getCategorySlug, getCategoryLabel, getCategoryIconName, generateHreflangTags, t } = require("./helpers");
 const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 
 const srcPath = path.join(__dirname, "../../src");
@@ -201,10 +201,9 @@ function generateCategoryPage(category, devices, template, locale = "en", catego
   const heroTitle = t("categoryPage.heroTitleTemplate", locale).replace("{category}", categoryLabel);
   const categoryTitle = `${heroTitle} | SD Card Checker`;
   const categoryIntro = getCategoryIntro(categorySlug, category, locale);
-  // Build description from intro text, truncating to ~140-150 chars for SEO
-  const categoryDescription = categoryIntro.length > 155
-    ? categoryIntro.substring(0, 155) + "..."
-    : categoryIntro;
+  // Build description from intro text, truncating to ~140-150 chars for SEO.
+  // Cut at a word boundary so the snippet doesn't end in a severed word.
+  const categoryDescription = truncateAtWord(categoryIntro, 158);
   const deviceCardsHTML = generateDeviceCards(devices, locale);
 
   // Generate breadcrumb schema for category pages
@@ -318,7 +317,7 @@ async function generateCategoryPages(allDevices, distPath, locale = "en", catego
  * Get subcategory introduction text
  */
 function getSubcategoryIntro(brand, category) {
-  return `Browse our SD card recommendations for ${brand} ${category} devices — compare speeds, capacities, and prices to find the right card for your ${brand} gear.`;
+  return `Browse our SD card recommendations for ${brand} ${category} devices. Compare speeds, capacities, and prices to find the right card for your ${brand} gear.`;
 }
 
 /**

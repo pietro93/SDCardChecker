@@ -6,7 +6,7 @@
 
 const path = require("path");
 const fs = require("fs");
-const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, loadSDCardData, loadSDCardEnrichment, mergeSDCardEnrichment, getCategorySlug, getCategoryLabel, getCategoryIconName, t } = require("./helpers");
+const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, generateHreflangTags, truncateAtWord, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, loadSDCardData, loadSDCardEnrichment, mergeSDCardEnrichment, getCategorySlug, getCategoryLabel, getCategoryIconName, t } = require("./helpers");
 const { generateFAQs, mergeFAQs } = require("./generateFAQs");
 const { generateAmazonBadgesSection } = require("./amazon-badges-generator");
 const { generatePromotedCardSection } = require("./promotion-generator");
@@ -47,6 +47,20 @@ const REQUIREMENTS_BOX_LABELS = {
     it: { format: "Formato", minSpeed: "Velocità minima", appPerformance: "Prestazioni app", maxCapacity: "Capacità massima", write: "scrittura", requiredFor: "Richiesto per OS/App", upTo: "Fino a", official: "Ufficiali", requirements: "Requisiti scheda SD", why: "Perché questi requisiti?" },
 };
 
+// Google truncates title tags around 60 characters. Anything past that is dropped
+// from the SERP, which for the old single template meant the spec that actually
+// differentiates the page got cut off.
+const TITLE_MAX_LENGTH = 60;
+
+/**
+ * Pick the most descriptive title variant that still fits the SERP display limit.
+ * Variants must be ordered most-detailed first; the last one is the fallback used
+ * when even the shortest form is over budget (very long device names).
+ */
+function fitTitle(variants, maxLength = TITLE_MAX_LENGTH) {
+    return variants.find((variant) => variant.length <= maxLength) || variants[variants.length - 1];
+}
+
 /**
  * Locale-aware device-page title/meta strings. Locales without an entry fall back to "en".
  * Add a locale key here once its title strings are translated - see Tier 1A finding in
@@ -54,7 +68,11 @@ const REQUIREMENTS_BOX_LABELS = {
  */
 const DEVICE_TITLE_STRINGS = {
     en: {
-        title: (name, sdType) => `Best SD Cards for ${name} | ${sdType} Requirements & Recommendations`,
+        title: (name, sdType) => fitTitle([
+            `Best SD Card for ${name} | ${sdType} Requirements`,
+            `Best SD Card for ${name} | ${sdType}`,
+            `Best SD Card for ${name}`,
+        ]),
         ogTitle: (name, sdType) => `${name} ${sdType} Guide | Requirements & Best Cards`,
         twitterTitle: (name) => `${name} SD Card Guide | Best Recommendations`,
         schemaHeadline: (name, sdType) => `${name} ${sdType} Compatibility & Recommendations`,
@@ -116,19 +134,24 @@ function getCategoryImageIcon(category) {
  */
 function generateUniqueMetaDescription(device, brandNames, index) {
     if (device.metaDescription) return device.metaDescription;
+    const bestCapacity = device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1];
+    // maxCapacity is free text and is sometimes prose ("No official limit") rather than
+    // a figure, which reads badly after "up to". Only use it when it starts with a number.
+    const maxCapacity = device.sdCard.maxCapacity || "";
+    const capacityClause = /^\d/.test(maxCapacity.trim())
+        ? `, up to ${maxCapacity}`
+        : "";
     const templates = [
         `Find the perfect SD card for ${device.name}. Recommended: ${device.sdCard.type} ${device.sdCard.minSpeed} or faster. Top brands: ${brandNames}. Shop on Amazon.`,
         `${device.name} best SD card guide. Speed: ${device.sdCard.minSpeed}. Type: ${device.sdCard.type}. Expert reviewed brands.`,
         `${device.category} SD card recommendations. ${device.name} compatible. ${brandNames} or higher. Compare now.`,
-        `Best SD card for ${device.name}. Video recording: ${device.whySpecs.substring(0, 30)}... Check Amazon prices.`,
+        `Best SD card for ${device.name}: ${device.sdCard.type} rated ${device.sdCard.minSpeed} or faster${capacityClause}. Compare picks and prices.`,
         `${device.name} microSD vs SD card guide. ${device.sdCard.minSpeed} recommended. See top brands.`,
         `Buy the right SD card for ${device.name}. ${device.sdCard.type} ${device.sdCard.minSpeed} required. Shop now.`,
-        `${device.name} SD card compatibility guide. ${brandNames} recommended. Compare prices and specs.`,
+        `${device.name} SD card compatibility guide. ${bestCapacity} is the sweet spot. ${brandNames} recommended.`,
     ];
 
-    const template = templates[index % templates.length];
-    // Ensure description is 140-160 characters
-    return template.length > 160 ? template.substring(0, 157) + "..." : template;
+    return truncateAtWord(templates[index % templates.length], 160);
 }
 
 /**
@@ -461,20 +484,31 @@ function generateFirstFAQ(device, locale) {
 /**
  * Generate single device page
  */
-function generateDevicePage(device, template, allDevices, sdcardsMap, deviceIndex = 0, locale = "en", allCards = []) {
+function generateDevicePage(device, template, allDevices, sdcardsMap, deviceIndex = 0, locale = "en", allCards = [], deviceLocales = []) {
     const baseUrl = "https://sdcardchecker.com";
     const dirPrefix = locales[locale] && locales[locale].dir ? `/${locales[locale].dir}` : "";
     const categorySlug = getCategorySlug(device.category);
     const deviceUrlPath = `${dirPrefix}/categories/${categorySlug}/${device.slug}/`;
     const deviceUrl = `${baseUrl}${deviceUrlPath}`;
+    // Only the locales that actually publish this exact device slug, so hreflang never
+    // points at a URL that 404s.
+    const hreflangTags = generateHreflangTags(
+        `/categories/${categorySlug}/${device.slug}/`,
+        deviceLocales.length ? deviceLocales : [locale]
+    );
 
-    // Get brand names from sdcards data for description
-    const brandNames = device.recommendedBrands
+    // Get brand names from sdcards data for description. Two recommended cards
+    // often share a manufacturer (e.g. two SanDisk tiers), so de-duplicate before
+    // listing them or the description reads "SanDisk, Samsung, SanDisk".
+    const brandNames = [...new Set(
+        device.recommendedBrands
+            .map((ref) => {
+                const card = sdcardsMap[ref.id];
+                return card ? card.name.split(" ")[0] : null;
+            })
+            .filter(Boolean)
+    )]
         .slice(0, 3)
-        .map((ref) => {
-            const card = sdcardsMap[ref.id];
-            return card ? card.name.split(" ")[0] : "Brand";
-        })
         .join(", ");
 
     // Create short device name (remove "Black", "OLED", etc. for cleaner title)
@@ -612,6 +646,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{SCHEMA_HEADLINE}}/g, schemaHeadline)
         .replace(/{{DEVICE_DESCRIPTION}}/g, description)
         .replace(/{{DEVICE_URL}}/g, deviceUrl)
+        .replace(/{{HREFLANG_TAGS}}\n?/g, hreflangTags ? hreflangTags + "\n" : "")
         .replace(/{{BASE_URL}}/g, baseUrl)
         .replace(/{{DEVICE_NAME}}/g, device.name)
         .replace(/{{DEVICE_NAME_SHORT}}/g, deviceNameShort)
@@ -650,7 +685,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
 /**
  * Generate all device pages for a locale
  */
-async function generateDevicePages(allDevices, distPath, locale = "en") {
+async function generateDevicePages(allDevices, distPath, locale = "en", deviceLocalesMap = {}) {
     console.log(`Generating ${locale} device pages...`);
 
     const localizedTemplates = new Set(["ja", "de", "fr", "it"]);
@@ -678,8 +713,10 @@ async function generateDevicePages(allDevices, distPath, locale = "en") {
 
     allDevices.forEach((device, index) => {
         try {
-            const deviceHTML = generateDevicePage(device, deviceTemplate, allDevices, sdcardsMap, index, locale, allCards);
             const categorySlug = getCategorySlug(device.category);
+            const deviceKey = `${categorySlug}/${device.slug}`;
+            const deviceLocales = [...(deviceLocalesMap[deviceKey] || [locale])];
+            const deviceHTML = generateDevicePage(device, deviceTemplate, allDevices, sdcardsMap, index, locale, allCards, deviceLocales);
             const dirPrefix = locales[locale] && locales[locale].dir ? locales[locale].dir : "";
             const devicePath = path.join(distPath, dirPrefix, "categories", categorySlug, device.slug, "index.html");
             writeFile(devicePath, deviceHTML);

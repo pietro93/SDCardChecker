@@ -128,11 +128,19 @@ async function build() {
 
     // Category slug -> locales that carry that category, for per-category-page hreflang
     const categoryLocalesMap = {};
+    // "{categorySlug}/{deviceSlug}" -> locales that publish that exact device page.
+    // Locales don't carry identical device sets, so this is keyed per device rather
+    // than reusing the category map.
+    const deviceLocalesMap = {};
     buildableLocales.forEach((locale) => {
       devicesByLocale[locale].forEach((device) => {
         const slug = getCategorySlug(device.category);
         if (!categoryLocalesMap[slug]) categoryLocalesMap[slug] = new Set();
         categoryLocalesMap[slug].add(locale);
+
+        const deviceKey = `${slug}/${device.slug}`;
+        if (!deviceLocalesMap[deviceKey]) deviceLocalesMap[deviceKey] = new Set();
+        deviceLocalesMap[deviceKey].add(locale);
       });
     });
 
@@ -155,7 +163,7 @@ async function build() {
         continue;
       }
 
-      await generateDevicePages(localeDevices, distPath, locale);
+      await generateDevicePages(localeDevices, distPath, locale, deviceLocalesMap);
       console.log();
 
       await generateCategoryPages(localeDevices, distPath, locale, categoryLocalesMap);

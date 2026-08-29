@@ -47,7 +47,7 @@
                 <span x-text="scenarios[activeScenario].name"></span>
             </h3>
             <button @click="toggleMode()" class="text-sm px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 transition"
-                title="Switch to: I have a card, how long can I record?">
+                title="Switch to: I have a card. How long can I record?">
                 Reverse
             </button>
         </div>
@@ -272,7 +272,7 @@
          x-effect="if (currentLayer === 'details' && mode === 'reverse') { initCardSelector(); }">
         <div class="flex items-center justify-between mb-6">
             <h3 class="text-xl font-bold">
-                I have a card — how long can I record?
+                I have a card. How long can I record?
             </h3>
             <button @click="toggleMode()" class="text-sm px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 transition"
                 title="Switch to: How much storage do I need?">

@@ -627,6 +627,18 @@ function getCardImageFallback(card) {
 }
 
 /**
+ * Trim a string to a maximum length without breaking mid-word. Meta descriptions get
+ * cut off by search engines anyway; cutting at a word boundary keeps the visible
+ * snippet readable instead of ending in a severed word.
+ */
+function truncateAtWord(text, maxLength) {
+  if (!text || text.length <= maxLength) return text;
+  const clipped = text.substring(0, maxLength - 3);
+  const lastSpace = clipped.lastIndexOf(" ");
+  return (lastSpace > 0 ? clipped.substring(0, lastSpace) : clipped).replace(/[,.;:]$/, "") + "...";
+}
+
+/**
  * Generate BreadcrumbList schema for breadcrumb navigation
  */
 function generateBreadcrumbSchema(breadcrumbs, baseUrl = "https://sdcardchecker.com") {
@@ -665,11 +677,6 @@ function generateProductSchema(brandReferences, sdcardsMap, baseUrl = "https://s
           "priceCurrency": "USD",
           "price": card.priceEstimate.toString(),
           "availability": "https://schema.org/InStock"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.5",
-          "reviewCount": "100"
         }
       };
     })
@@ -1018,6 +1025,7 @@ module.exports = {
   generateFAQSchema,
   generateBreadcrumbSchema,
   generateProductSchema,
+  truncateAtWord,
   getDeviceImageFallback,
   getCardImageFallback,
   getCarImageFallback,
