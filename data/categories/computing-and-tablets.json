@@ -51,7 +51,8 @@
       "raspberry-pi-3-model-b-plus",
       "raspberry-pi-compute-module-5"
     ],
-    "notes": "Targets a huge DIY and technical audience. The card is a mandatory component."
+    "notes": "Targets a huge DIY and technical audience. The card is a mandatory component.",
+    "metaDescription": "The Pi 5 is the first Raspberry Pi with an SDR104 SD interface, roughly double the Pi 4's speed. A UHS-I A2 card is what actually uses it."
   },
   {
     "id": "raspberry-pi-compute-module-5",
@@ -401,7 +402,8 @@
       "raspberry-pi-3-model-b-plus"
     ],
     "notes": "Still one of the most popular SBCs in the world. The distinction between video speed (V) and application speed (A) is a key point for users.",
-    "imageUrl": "/img/devices/computing/raspberry-pi-4-model-b.webp"
+    "imageUrl": "/img/devices/computing/raspberry-pi-4-model-b.webp",
+    "metaDescription": "The Pi 4 boots from microSD, so random access speed matters more than throughput. A1 is the rating that counts; A2 is wasted money here."
   },
   {
     "id": "raspberry-pi-3-model-b-plus",

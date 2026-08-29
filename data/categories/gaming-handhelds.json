@@ -53,7 +53,8 @@
       "nintendo-switch-lite",
       "nintendo-switch-2"
     ],
-    "notes": "Limited to UHS-I speeds (~104MB/s maximum). V30 is recommended for reliability. Compatible with all officially licensed Nintendo-branded SanDisk microSD cards (Zelda, Pokémon, Mario, Yoshi, Animal Crossing, Fortnite)."
+    "notes": "Limited to UHS-I speeds (~104MB/s maximum). V30 is recommended for reliability. Compatible with all officially licensed Nintendo-branded SanDisk microSD cards (Zelda, Pokémon, Mario, Yoshi, Animal Crossing, Fortnite).",
+    "metaDescription": "The Nintendo Switch tops out at UHS-I speed (104MB/s). UHS-II and SD Express cards work but downclock to UHS-I, so their extra speed is wasted money."
   },
   {
     "id": "nintendo-switch-oled",
@@ -109,7 +110,8 @@
       "nintendo-switch-lite",
       "nintendo-switch-2"
     ],
-    "notes": "OLED users typically purchase larger cards due to increased digital game library usage. UHS-I only (~104MB/s), despite higher internal storage."
+    "notes": "OLED users typically purchase larger cards due to increased digital game library usage. UHS-I only (~104MB/s), despite higher internal storage.",
+    "metaDescription": "Like every original Switch model, the OLED is capped at UHS-I speed (~104MB/s). Faster UHS-II/SD Express cards work but gain nothing here."
   },
   {
     "id": "steam-deck",
@@ -156,7 +158,8 @@
       "asus-rog-ally",
       "ayn-odin-3-odin-2-portal"
     ],
-    "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library."
+    "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library.",
+    "metaDescription": "Steam Deck runs SteamOS from its microSD card, so A1 random-access performance matters as much as V30 sequential speed. Here's what to buy."
   },
   {
     "id": "asus-rog-ally",
@@ -257,7 +260,8 @@
       "nintendo-switch-oled",
       "nintendo-switch-2"
     ],
-    "notes": "Identical storage architecture to other Switch models. UHS-I only (~104MB/s). 128GB-256GB is the sweet spot for Lite's typical usage pattern."
+    "notes": "Identical storage architecture to other Switch models. UHS-I only (~104MB/s). 128GB-256GB is the sweet spot for Lite's typical usage pattern.",
+    "metaDescription": "The Switch Lite shares the standard Switch's UHS-I ceiling (~104MB/s). A faster UHS-II or SD Express card works but provides no real benefit."
   },
   {
     "id": "nintendo-switch-2",
@@ -323,7 +327,8 @@
       "nintendo-switch-oled",
       "nintendo-switch-lite"
     ],
-    "notes": "Switch 2 is backward compatible with all standard UHS-I microSD cards from the original Switch. For maximum performance, microSD Express (PCIe) is supported and provides up to 8× faster loading. microSD Express cards are NOT compatible with original Switch models — buy UHS-I if you own both."
+    "notes": "Switch 2 is backward compatible with all standard UHS-I microSD cards from the original Switch. For maximum performance, microSD Express (PCIe) is supported and provides up to 8× faster loading. microSD Express cards are NOT compatible with original Switch models — buy UHS-I if you own both.",
+    "metaDescription": "Your existing Switch microSD cards still work in Switch 2. It also adds a microSD Express slot for real speed gains - here's when that matters."
   },
   {
     "id": "nintendo-3ds-xl",
@@ -441,7 +446,7 @@
     "name": "ASUS ROG Ally X",
     "category": "Gaming Handhelds",
     "slug": "asus-rog-ally-x",
-    "metaDescription": "Best microSD cards for ASUS ROG Ally X, and which brands to avoid. Tested for UHS-II speed, A1 app performance, and reliability in the Ally X's fast card reader.",
+    "metaDescription": "Best microSD cards for the ASUS ROG Ally X, and which brands to avoid. Tested for UHS-II speed, A1 performance, and reliable card-reader fit.",
     "searchTerms": [
       "rog ally x sd card",
       "ally x microsd",
@@ -548,7 +553,8 @@
       "steam-deck"
     ],
     "notes": "Released late 2023, the Lenovo Legion Go is known for its unique detachable controllers and the largest screen among current Windows handhelds. It features a microSD UHS-I slot (unlike the newer ROG Ally X, which has UHS-II).",
-    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go.webp"
+    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go.webp",
+    "metaDescription": "The Lenovo Legion Go's large 8.8-inch display and Windows OS make an A2-rated microSD card worth it for faster game load times."
   },
   {
     "id": "miyoo-mini-plus",
@@ -763,7 +769,8 @@
       "steam-deck"
     ],
     "notes": "SteamOS-based Windows handheld variant with a UHS-I microSD slot. Designed primarily for game storage expansion rather than raw benchmark speeds.",
-    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go-s.webp"
+    "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go-s.webp",
+    "metaDescription": "The Legion Go S reads microSD at UHS-I speed even with a UHS-II card inserted. A U3/V30, A2-rated card runs games well without long load times."
   },
   {
     "id": "msi-claw",
@@ -1217,7 +1224,7 @@
     "name": "ASUS ROG Xbox Ally X",
     "category": "Gaming Handhelds",
     "slug": "rog-xbox-ally-x",
-    "metaDescription": "Best microSD cards for the ASUS ROG Xbox Ally X: UHS-II picks that take advantage of the redesigned card reader, plus what to know about the original Ally's overheating fix.",
+    "metaDescription": "Best microSD cards for the ASUS ROG Xbox Ally X: UHS-II picks for its redesigned reader, plus what changed since the original Ally's overheating fix.",
     "searchTerms": [
       "rog xbox ally x sd card",
       "rog xbox ally x microsd",

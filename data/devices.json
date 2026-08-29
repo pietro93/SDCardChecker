@@ -455,7 +455,8 @@
         "gopro-hero-14-black",
         "dji-mini-4-pro"
       ],
-      "notes": "Card requirements match Hero 12. Official GoPro guidance: A2/V30, up to 1TB."
+      "notes": "Card requirements match Hero 12. Official GoPro guidance: A2/V30, up to 1TB.",
+      "metaDescription": "The GoPro Hero 13 Black needs a V30 microSD card, minimum, for 5.3K60 and 4K120 video. V30 is the floor here, not a nice-to-have - here's why."
     },
     {
       "id": "gopro-hero-12",
@@ -506,7 +507,8 @@
         "gopro-hero-max",
         "gopro-hero-11-black"
       ],
-      "notes": "Official GoPro recommendation: A2/V30 cards, up to 1TB."
+      "notes": "Official GoPro recommendation: A2/V30 cards, up to 1TB.",
+      "metaDescription": "The GoPro Hero 12 Black shoots 5.3K at up to ~120 Mbps. A V30 microSD card gives it the sustained write headroom to never drop a frame."
     },
     {
       "id": "gopro-hero-max",
@@ -560,7 +562,8 @@
         "gopro-hero-11-black"
       ],
       "notes": "Original 2019 360 camera (correct product name is 'GoPro MAX', not 'Hero Max'). 5.6K30 in 360 mode, 1440p60 max in HERO mode. Kept at 512GB — GoPro's approved-card list for MAX is more conservative than for HERO12/13/Max 2, which go to 1TB.",
-      "imageUrl": "/img/devices/action-cameras/gopro-hero-max.webp"
+      "imageUrl": "/img/devices/action-cameras/gopro-hero-max.webp",
+      "metaDescription": "The GoPro MAX isn't a 4K camera in HERO mode - it tops out at 1440p60. Its demanding mode is 5.6K30 spherical, which needs a V30 microSD card."
     },
     {
       "id": "insta360-x3",
@@ -604,14 +607,15 @@
         "gopro-hero-max",
         "gopro-hero-13"
       ],
-      "notes": "GoPro's biggest competitor in the 360 space. Very high search volume."
+      "notes": "GoPro's biggest competitor in the 360 space. Very high search volume.",
+      "metaDescription": "The Insta360 X3 shoots 5.7K 360-degree video, which needs Insta360's official V30 minimum microSD card to avoid dropped frames and corruption."
     },
     {
       "id": "dji-osmo-pocket-3",
       "name": "DJI Osmo Pocket 3",
       "category": "Action Cameras",
       "slug": "dji-osmo-pocket-3",
-      "metaDescription": "DJI officially requires a UHS-I microSD card rated U3/V30 for the Osmo Pocket 3 (max 512GB). Here are the best-tested cards that meet DJI's published specifications.",
+      "metaDescription": "DJI requires a UHS-I microSD card rated U3/V30 for the Osmo Pocket 3 (max 512GB). Here are the best-tested cards that meet spec.",
       "searchTerms": [
         "dji pocket 3 sd card",
         "osmo pocket 3 microsd",
@@ -803,14 +807,15 @@
         "gopro-hero-13"
       ],
       "notes": "Insta360's 2024 flagship 360° camera. Official max capacity tested: 1TB.",
-      "imageUrl": "/img/devices/action-cameras/insta360-x4.webp"
+      "imageUrl": "/img/devices/action-cameras/insta360-x4.webp",
+      "metaDescription": "The Insta360 X4 records 8K 360-degree video at 30fps. Its dual-lens system demands a V30 microSD card, minimum, for reliable sustained write."
     },
     {
       "id": "dji-osmo-action-4",
       "name": "DJI Osmo Action 4",
       "category": "Action Cameras",
       "slug": "dji-osmo-action-4",
-      "metaDescription": "DJI officially requires a UHS-I microSD card rated U3/V30 for the Osmo Action 4 (max 2TB). Here are the best-tested cards that meet DJI's published specifications.",
+      "metaDescription": "DJI requires a UHS-I microSD card rated U3/V30 for the Osmo Action 4 (max 2TB). Here are the best-tested cards that meet spec.",
       "searchTerms": [
         "dji action 4",
         "osmo action 4 sd card",
@@ -1155,7 +1160,7 @@
       "name": "DJI Osmo Action 6",
       "category": "Action Cameras",
       "slug": "dji-osmo-action-6",
-      "metaDescription": "DJI officially requires a UHS-I microSD card rated U3/V30 for the Osmo Action 6 (max 2TB). Here are the best-tested cards that meet DJI's published specifications.",
+      "metaDescription": "DJI requires a UHS-I microSD card rated U3/V30 for the Osmo Action 6 (max 2TB). Here are the best-tested cards that meet spec.",
       "searchTerms": [
         "dji osmo action 6 sd card",
         "osmo action 6 microsd",
@@ -1990,7 +1995,8 @@
       "relatedDevices": [
         "canon-eos-r6-mark-ii"
       ],
-      "notes": "Canon EOS R5 is professional 8K camera. Dual V60 cards strongly recommended."
+      "notes": "Canon EOS R5 is professional 8K camera. Dual V60 cards strongly recommended.",
+      "metaDescription": "The Canon EOS R5's SD slot can't record 8K RAW at all - that needs CFexpress Type B. For SD, V90 covers standard 8K and V60 covers 4K."
     },
     {
       "id": "sony-a6700",
@@ -2046,7 +2052,8 @@
         "sony-a7-iv",
         "fujifilm-x-s20"
       ],
-      "notes": "Popular choice for content creators. Single SD UHS-II card slot (unlike Sony's dual-slot full-frame bodies)."
+      "notes": "Popular choice for content creators. Single SD UHS-II card slot (unlike Sony's dual-slot full-frame bodies).",
+      "metaDescription": "The Sony A6700 is a single-slot camera, so its SD UHS-II card matters more than on a dual-slot body. V30 covers 4K60 with no backup slot."
     },
     {
       "id": "fujifilm-x-s20",
@@ -2140,7 +2147,8 @@
         "canon-eos-r5"
       ],
       "notes": "Professional flagship. CFexpress Type B recommended for future-proofing.",
-      "imageUrl": "/img/devices/cameras/nikon-z9.webp"
+      "imageUrl": "/img/devices/cameras/nikon-z9.webp",
+      "metaDescription": "The Nikon Z9 is a professional 8K flagship with dual CFexpress Type B/XQD slots for redundancy. V90-equivalent CFexpress is required, not SD."
     },
     {
       "id": "sony-a7-iv",
@@ -2758,7 +2766,8 @@
         "dji-osmo-pocket-3"
       ],
       "notes": "A go-to camera for vloggers and content creators. Its significant popularity, especially on social media platforms like YouTube, contributes to extremely high search volume for compatible SD cards.",
-      "imageUrl": "/img/devices/cameras/canon-g7x-mark-iii.webp"
+      "imageUrl": "/img/devices/cameras/canon-g7x-mark-iii.webp",
+      "metaDescription": "The Canon PowerShot G7 X Mark III is a favorite among YouTube vloggers. Its 4K/30 video needs a V30 SD card, minimum, to avoid dropped frames."
     },
     {
       "id": "canon-g7x-mark-ii",
@@ -3151,7 +3160,8 @@
         "fujifilm-xt30-ii"
       ],
       "notes": "Released in 2025 as a compact, rangefinder-style option within the Fujifilm X-series lineup. It targets street photographers and enthusiasts who prefer a lightweight camera with classic aesthetics.",
-      "imageUrl": "/img/devices/cameras/fujifilm-xe5.webp"
+      "imageUrl": "/img/devices/cameras/fujifilm-xe5.webp",
+      "metaDescription": "The Fujifilm X-E5 shoots up to 6.2K video from a 40.2MP sensor. Its UHS-II slot and V30 card handle both high-res stills and 6.2K reliably."
     },
     {
       "id": "fujifilm-x100v",
@@ -3305,7 +3315,8 @@
         "leica-q2",
         "fujifilm-x100vi"
       ],
-      "notes": "Leica's flagship compact camera. Extremely expensive but highly sought-after for its unique blend of traditional aesthetics and modern performance. Single SD UHS-II card slot; no 8K video mode."
+      "notes": "Leica's flagship compact camera. Extremely expensive but highly sought-after for its unique blend of traditional aesthetics and modern performance. Single SD UHS-II card slot; no 8K video mode.",
+      "metaDescription": "The Leica Q3 has a single SD UHS-II slot and no in-camera backup, so card reliability matters. V60 covers its 60MP stills and 4K/30 video."
     },
     {
       "id": "leica-q3-43",
@@ -3351,7 +3362,8 @@
         "leica-q2",
         "leica-m11"
       ],
-      "notes": "Released in 2024 as a 43mm variant of the Q3, offering a different perspective for photographers. Same single SD UHS-II slot and 4K/30p video ceiling as the standard Q3."
+      "notes": "Released in 2024 as a 43mm variant of the Q3, offering a different perspective for photographers. Same single SD UHS-II slot and 4K/30p video ceiling as the standard Q3.",
+      "metaDescription": "The Leica Q3 43 shares the Q3's card requirements exactly: a single SD UHS-II slot, V60 minimum, for 60MP stills and 4K/30 video (no 8K)."
     },
     {
       "id": "leica-m11",
@@ -4854,7 +4866,8 @@
         "raspberry-pi-3-model-b-plus",
         "raspberry-pi-compute-module-5"
       ],
-      "notes": "Targets a huge DIY and technical audience. The card is a mandatory component."
+      "notes": "Targets a huge DIY and technical audience. The card is a mandatory component.",
+      "metaDescription": "The Pi 5 is the first Raspberry Pi with an SDR104 SD interface, roughly double the Pi 4's speed. A UHS-I A2 card is what actually uses it."
     },
     {
       "id": "raspberry-pi-compute-module-5",
@@ -5204,7 +5217,8 @@
         "raspberry-pi-3-model-b-plus"
       ],
       "notes": "Still one of the most popular SBCs in the world. The distinction between video speed (V) and application speed (A) is a key point for users.",
-      "imageUrl": "/img/devices/computing/raspberry-pi-4-model-b.webp"
+      "imageUrl": "/img/devices/computing/raspberry-pi-4-model-b.webp",
+      "metaDescription": "The Pi 4 boots from microSD, so random access speed matters more than throughput. A1 is the rating that counts; A2 is wasted money here."
     },
     {
       "id": "raspberry-pi-3-model-b-plus",
@@ -6139,7 +6153,8 @@
         "dji-mini-4k",
         "dji-air-3s"
       ],
-      "notes": "DJI officially recommends V30 cards for safe recording. Test new cards before flights."
+      "notes": "DJI officially recommends V30 cards for safe recording. Test new cards before flights.",
+      "metaDescription": "The DJI Mini 4 Pro's demanding modes are 4K/100 slow motion and 10-bit D-Log M, not plain 4K/30. V30's sustained write keeps them stable."
     },
     {
       "id": "dji-mini-3-pro",
@@ -6269,7 +6284,8 @@
         "dji-mini-4-pro",
         "dji-air-3"
       ],
-      "notes": "Premium DJI flagship with dual cameras. Standard model supports 4K; Cine model adds 8K capability. V60+ cards essential for 8K Cine recording."
+      "notes": "Premium DJI flagship with dual cameras. Standard model supports 4K; Cine model adds 8K capability. V60+ cards essential for 8K Cine recording.",
+      "metaDescription": "The DJI Mavic 3 needs V60 minimum for its 4K modes; the Cine model's 8K Cine recording calls for V90. Here's what actually holds up."
     },
     {
       "id": "dji-air-3",
@@ -6367,7 +6383,8 @@
         "dji-air-3"
       ],
       "notes": "Released in 2024 as a budget alternative to the Mini 4 Pro. Its sub-250g weight allows for less restrictive regulations in many countries. High search volume is expected from beginner drone pilots and those seeking an affordable 4K drone.",
-      "imageUrl": "/img/devices/drones/dji-mini-4k.webp"
+      "imageUrl": "/img/devices/drones/dji-mini-4k.webp",
+      "metaDescription": "DJI's budget sub-250g drone still needs a real V30 microSD card for stable 4K/30 recording - the same baseline as its pricier Mini siblings."
     },
     {
       "id": "dji-mini-3",
@@ -6414,7 +6431,8 @@
         "dji-mini-4k"
       ],
       "notes": "Released in 2023, the DJI Mini 3 sits as a strong contender in the sub-250g drone category. It provides an excellent balance of features and affordability for enthusiasts. Its consistent V30 card requirement aligns with other DJI drones for reliable performance.",
-      "imageUrl": "/img/devices/drones/dji-mini-3.webp"
+      "imageUrl": "/img/devices/drones/dji-mini-3.webp",
+      "metaDescription": "The DJI Mini 3 records 4K HDR video, which needs a V30 microSD card, minimum, to avoid dropped frames during high-bitrate HDR footage."
     },
     {
       "id": "dji-mini-2-se",
@@ -6644,7 +6662,8 @@
         "dji-mini-2-se"
       ],
       "notes": "The #1 competitor to the DJI Mini 2 SE / 4K. Very popular on Amazon. Strict V30 requirement.",
-      "imageUrl": "/img/devices/drones/potensic-atom.webp"
+      "imageUrl": "/img/devices/drones/potensic-atom.webp",
+      "metaDescription": "The Potensic Atom requires U3/V30 microSD cards for its 4K video - slower U1 cards are known to stop recording mid-flight or fail to save."
     },
     {
       "id": "potensic-atom-se",
@@ -6688,7 +6707,8 @@
         "dji-mini-2-se"
       ],
       "notes": "A budget-friendly 4K drone. Users often buy cheap, incompatible cards; emphasize the need for V30.",
-      "imageUrl": "/img/devices/drones/potensic-atom-se.webp"
+      "imageUrl": "/img/devices/drones/potensic-atom-se.webp",
+      "metaDescription": "Like the standard Atom, the Potensic Atom SE's 4K video overwhelms slower cards. V30 is mandatory to avoid write-speed errors and corrupted files."
     },
     {
       "id": "potensic-atom-2",
@@ -7483,7 +7503,8 @@
         "nintendo-switch-lite",
         "nintendo-switch-2"
       ],
-      "notes": "Limited to UHS-I speeds (~104MB/s maximum). V30 is recommended for reliability. Compatible with all officially licensed Nintendo-branded SanDisk microSD cards (Zelda, Pokémon, Mario, Yoshi, Animal Crossing, Fortnite)."
+      "notes": "Limited to UHS-I speeds (~104MB/s maximum). V30 is recommended for reliability. Compatible with all officially licensed Nintendo-branded SanDisk microSD cards (Zelda, Pokémon, Mario, Yoshi, Animal Crossing, Fortnite).",
+      "metaDescription": "The Nintendo Switch tops out at UHS-I speed (104MB/s). UHS-II and SD Express cards work but downclock to UHS-I, so their extra speed is wasted money."
     },
     {
       "id": "nintendo-switch-oled",
@@ -7539,7 +7560,8 @@
         "nintendo-switch-lite",
         "nintendo-switch-2"
       ],
-      "notes": "OLED users typically purchase larger cards due to increased digital game library usage. UHS-I only (~104MB/s), despite higher internal storage."
+      "notes": "OLED users typically purchase larger cards due to increased digital game library usage. UHS-I only (~104MB/s), despite higher internal storage.",
+      "metaDescription": "Like every original Switch model, the OLED is capped at UHS-I speed (~104MB/s). Faster UHS-II/SD Express cards work but gain nothing here."
     },
     {
       "id": "steam-deck",
@@ -7586,7 +7608,8 @@
         "asus-rog-ally",
         "ayn-odin-3-odin-2-portal"
       ],
-      "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library."
+      "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library.",
+      "metaDescription": "Steam Deck runs SteamOS from its microSD card, so A1 random-access performance matters as much as V30 sequential speed. Here's what to buy."
     },
     {
       "id": "asus-rog-ally",
@@ -7687,7 +7710,8 @@
         "nintendo-switch-oled",
         "nintendo-switch-2"
       ],
-      "notes": "Identical storage architecture to other Switch models. UHS-I only (~104MB/s). 128GB-256GB is the sweet spot for Lite's typical usage pattern."
+      "notes": "Identical storage architecture to other Switch models. UHS-I only (~104MB/s). 128GB-256GB is the sweet spot for Lite's typical usage pattern.",
+      "metaDescription": "The Switch Lite shares the standard Switch's UHS-I ceiling (~104MB/s). A faster UHS-II or SD Express card works but provides no real benefit."
     },
     {
       "id": "nintendo-switch-2",
@@ -7753,7 +7777,8 @@
         "nintendo-switch-oled",
         "nintendo-switch-lite"
       ],
-      "notes": "Switch 2 is backward compatible with all standard UHS-I microSD cards from the original Switch. For maximum performance, microSD Express (PCIe) is supported and provides up to 8× faster loading. microSD Express cards are NOT compatible with original Switch models — buy UHS-I if you own both."
+      "notes": "Switch 2 is backward compatible with all standard UHS-I microSD cards from the original Switch. For maximum performance, microSD Express (PCIe) is supported and provides up to 8× faster loading. microSD Express cards are NOT compatible with original Switch models — buy UHS-I if you own both.",
+      "metaDescription": "Your existing Switch microSD cards still work in Switch 2. It also adds a microSD Express slot for real speed gains - here's when that matters."
     },
     {
       "id": "nintendo-3ds-xl",
@@ -7871,7 +7896,7 @@
       "name": "ASUS ROG Ally X",
       "category": "Gaming Handhelds",
       "slug": "asus-rog-ally-x",
-      "metaDescription": "Best microSD cards for ASUS ROG Ally X, and which brands to avoid. Tested for UHS-II speed, A1 app performance, and reliability in the Ally X's fast card reader.",
+      "metaDescription": "Best microSD cards for the ASUS ROG Ally X, and which brands to avoid. Tested for UHS-II speed, A1 performance, and reliable card-reader fit.",
       "searchTerms": [
         "rog ally x sd card",
         "ally x microsd",
@@ -7978,7 +8003,8 @@
         "steam-deck"
       ],
       "notes": "Released late 2023, the Lenovo Legion Go is known for its unique detachable controllers and the largest screen among current Windows handhelds. It features a microSD UHS-I slot (unlike the newer ROG Ally X, which has UHS-II).",
-      "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go.webp"
+      "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go.webp",
+      "metaDescription": "The Lenovo Legion Go's large 8.8-inch display and Windows OS make an A2-rated microSD card worth it for faster game load times."
     },
     {
       "id": "miyoo-mini-plus",
@@ -8193,7 +8219,8 @@
         "steam-deck"
       ],
       "notes": "SteamOS-based Windows handheld variant with a UHS-I microSD slot. Designed primarily for game storage expansion rather than raw benchmark speeds.",
-      "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go-s.webp"
+      "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go-s.webp",
+      "metaDescription": "The Legion Go S reads microSD at UHS-I speed even with a UHS-II card inserted. A U3/V30, A2-rated card runs games well without long load times."
     },
     {
       "id": "msi-claw",
@@ -8647,7 +8674,7 @@
       "name": "ASUS ROG Xbox Ally X",
       "category": "Gaming Handhelds",
       "slug": "rog-xbox-ally-x",
-      "metaDescription": "Best microSD cards for the ASUS ROG Xbox Ally X: UHS-II picks that take advantage of the redesigned card reader, plus what to know about the original Ally's overheating fix.",
+      "metaDescription": "Best microSD cards for the ASUS ROG Xbox Ally X: UHS-II picks for its redesigned reader, plus what changed since the original Ally's overheating fix.",
       "searchTerms": [
         "rog xbox ally x sd card",
         "rog xbox ally x microsd",
@@ -10183,7 +10210,7 @@
       "name": "iPhone 15 / 15 Pro",
       "category": "Smartphones",
       "slug": "iphone-15",
-      "metaDescription": "The iPhone 15 has no microSD card slot, even with its new USB-C port. Here's why transfer speed depends on which iPhone 15 model you own, and which USB-C readers actually work.",
+      "metaDescription": "The iPhone 15 has no microSD slot, even with USB-C. Transfer speed depends on which model you own, and which USB-C readers actually work.",
       "searchTerms": [
         "iphone 15",
         "iphone 15 pro",
@@ -10237,7 +10264,7 @@
       "name": "iPhone 14 / 14 Pro",
       "category": "Smartphones",
       "slug": "iphone-14",
-      "metaDescription": "The iPhone 14 has no microSD card slot. It uses the Lightning port for external card readers, which caps transfer speed at USB 2.0 regardless of the card you buy.",
+      "metaDescription": "The iPhone 14 has no microSD card slot. It uses Lightning for external card readers, which caps transfer speed at USB 2.0 regardless of card.",
       "searchTerms": [
         "iphone 14",
         "iphone 14 pro",
@@ -10283,7 +10310,7 @@
       "name": "iPhone 13 / 13 Pro",
       "category": "Smartphones",
       "slug": "iphone-13",
-      "metaDescription": "The iPhone 13 has no microSD card slot. Like every Lightning-era iPhone, it needs an external Lightning card reader, and the port itself limits transfer speed to USB 2.0.",
+      "metaDescription": "The iPhone 13 has no microSD slot. Like every Lightning-era iPhone, it needs an external Lightning reader, capped at USB 2.0 speed.",
       "searchTerms": [
         "iphone 13",
         "iphone 13 pro",
@@ -10328,7 +10355,7 @@
       "name": "iPhone 14 Pro Max",
       "category": "Smartphones",
       "slug": "iphone-14-pro-max",
-      "metaDescription": "The iPhone 14 Pro Max has no microSD slot, and its ProRes 4K video eats storage fast. Here's why external SD readers are for importing/offloading, not recording, and how to plan storage instead.",
+      "metaDescription": "The iPhone 14 Pro Max has no microSD slot, and ProRes 4K eats storage fast. External SD readers are for offloading, not recording.",
       "searchTerms": [
         "iphone 14 pro max",
         "iphone 14 max",
@@ -10372,7 +10399,7 @@
       "name": "iPhone SE (3rd Generation)",
       "category": "Smartphones",
       "slug": "iphone-se",
-      "metaDescription": "The iPhone SE (3rd gen) has no microSD slot and its lowest storage tier is just 64GB. Here's why a Lightning card reader is worth owning on this budget model specifically.",
+      "metaDescription": "The iPhone SE (3rd gen) has no microSD slot and its lowest tier is just 64GB. Here's why a Lightning card reader is worth owning here.",
       "searchTerms": [
         "iphone se",
         "iphone se 3",
@@ -10416,7 +10443,7 @@
       "name": "Samsung Galaxy S23 / S23+",
       "category": "Smartphones",
       "slug": "samsung-galaxy-s23",
-      "metaDescription": "The Samsung Galaxy S23 does not have a microSD card slot. Samsung removed expandable storage from the Galaxy S series starting with the S21. Use a USB-C card reader for external SD card access.",
+      "metaDescription": "The Samsung Galaxy S23 has no microSD slot. Samsung dropped expandable storage from the Galaxy S series starting with the S21.",
       "searchTerms": [
         "samsung galaxy s23",
         "galaxy s23",
@@ -10469,7 +10496,7 @@
       "name": "Google Pixel 8 / 8 Pro",
       "category": "Smartphones",
       "slug": "google-pixel-8",
-      "metaDescription": "No Pixel phone has ever had a microSD slot, including the Pixel 8 and 8 Pro. Here's why Google leans on cloud backup instead, and how the 8 vs 8 Pro storage tiers change what you actually need.",
+      "metaDescription": "No Pixel phone has ever had a microSD slot, including the 8 and 8 Pro. Here's why Google leans on cloud backup, and how storage tiers differ.",
       "searchTerms": [
         "google pixel 8",
         "pixel 8",
@@ -10901,7 +10928,7 @@
     }
   ],
   "metadata": {
-    "generated": "2026-08-29T08:27:46.555Z",
+    "generated": "2026-08-29T08:46:35.108Z",
     "totalDevices": 222,
     "categories": [
       "3D Printers & Fabrication",

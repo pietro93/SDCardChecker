@@ -45,7 +45,8 @@
     "relatedDevices": [
       "canon-eos-r6-mark-ii"
     ],
-    "notes": "Canon EOS R5 is professional 8K camera. Dual V60 cards strongly recommended."
+    "notes": "Canon EOS R5 is professional 8K camera. Dual V60 cards strongly recommended.",
+    "metaDescription": "The Canon EOS R5's SD slot can't record 8K RAW at all - that needs CFexpress Type B. For SD, V90 covers standard 8K and V60 covers 4K."
   },
   {
     "id": "sony-a6700",
@@ -101,7 +102,8 @@
       "sony-a7-iv",
       "fujifilm-x-s20"
     ],
-    "notes": "Popular choice for content creators. Single SD UHS-II card slot (unlike Sony's dual-slot full-frame bodies)."
+    "notes": "Popular choice for content creators. Single SD UHS-II card slot (unlike Sony's dual-slot full-frame bodies).",
+    "metaDescription": "The Sony A6700 is a single-slot camera, so its SD UHS-II card matters more than on a dual-slot body. V30 covers 4K60 with no backup slot."
   },
   {
     "id": "fujifilm-x-s20",
@@ -195,7 +197,8 @@
       "canon-eos-r5"
     ],
     "notes": "Professional flagship. CFexpress Type B recommended for future-proofing.",
-    "imageUrl": "/img/devices/cameras/nikon-z9.webp"
+    "imageUrl": "/img/devices/cameras/nikon-z9.webp",
+    "metaDescription": "The Nikon Z9 is a professional 8K flagship with dual CFexpress Type B/XQD slots for redundancy. V90-equivalent CFexpress is required, not SD."
   },
   {
     "id": "sony-a7-iv",
@@ -813,7 +816,8 @@
       "dji-osmo-pocket-3"
     ],
     "notes": "A go-to camera for vloggers and content creators. Its significant popularity, especially on social media platforms like YouTube, contributes to extremely high search volume for compatible SD cards.",
-    "imageUrl": "/img/devices/cameras/canon-g7x-mark-iii.webp"
+    "imageUrl": "/img/devices/cameras/canon-g7x-mark-iii.webp",
+    "metaDescription": "The Canon PowerShot G7 X Mark III is a favorite among YouTube vloggers. Its 4K/30 video needs a V30 SD card, minimum, to avoid dropped frames."
   },
   {
     "id": "canon-g7x-mark-ii",
@@ -1206,7 +1210,8 @@
       "fujifilm-xt30-ii"
     ],
     "notes": "Released in 2025 as a compact, rangefinder-style option within the Fujifilm X-series lineup. It targets street photographers and enthusiasts who prefer a lightweight camera with classic aesthetics.",
-    "imageUrl": "/img/devices/cameras/fujifilm-xe5.webp"
+    "imageUrl": "/img/devices/cameras/fujifilm-xe5.webp",
+    "metaDescription": "The Fujifilm X-E5 shoots up to 6.2K video from a 40.2MP sensor. Its UHS-II slot and V30 card handle both high-res stills and 6.2K reliably."
   },
   {
     "id": "fujifilm-x100v",
@@ -1360,7 +1365,8 @@
       "leica-q2",
       "fujifilm-x100vi"
     ],
-    "notes": "Leica's flagship compact camera. Extremely expensive but highly sought-after for its unique blend of traditional aesthetics and modern performance. Single SD UHS-II card slot; no 8K video mode."
+    "notes": "Leica's flagship compact camera. Extremely expensive but highly sought-after for its unique blend of traditional aesthetics and modern performance. Single SD UHS-II card slot; no 8K video mode.",
+    "metaDescription": "The Leica Q3 has a single SD UHS-II slot and no in-camera backup, so card reliability matters. V60 covers its 60MP stills and 4K/30 video."
   },
   {
     "id": "leica-q3-43",
@@ -1406,7 +1412,8 @@
       "leica-q2",
       "leica-m11"
     ],
-    "notes": "Released in 2024 as a 43mm variant of the Q3, offering a different perspective for photographers. Same single SD UHS-II slot and 4K/30p video ceiling as the standard Q3."
+    "notes": "Released in 2024 as a 43mm variant of the Q3, offering a different perspective for photographers. Same single SD UHS-II slot and 4K/30p video ceiling as the standard Q3.",
+    "metaDescription": "The Leica Q3 43 shares the Q3's card requirements exactly: a single SD UHS-II slot, V60 minimum, for 60MP stills and 4K/30 video (no 8K)."
   },
   {
     "id": "leica-m11",

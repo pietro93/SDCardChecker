@@ -178,6 +178,46 @@ Sub-batch each file (e.g. by brand) rather than trying a whole file in one sessi
 
 ## Findings log
 
+### 2026-08-29 — Meta description pass (English only)
+193 of 222 English devices had no curated `metaDescription` (falling back to a
+7-template rotation in `generateUniqueMetaDescription()` in
+`scripts/generator/generate-device-pages.js`). Confirmed the rotation wasn't producing
+literal duplicates across the built site, but the templates leaned on repetitive,
+low-value CTA filler ("Shop now.", "Compare now.", "See top brands.") across ~150+
+pages — thin/formulaic against the BRANDING_UX_UI_GUIDE voice rules. Rewrote all 7
+fallback templates to be more specific and direct (still auto-generated, still varied
+by device index, no template changes needed elsewhere).
+
+Also found 12 *already-curated* metaDescriptions (dji-osmo-pocket-3, dji-osmo-action-4,
+dji-osmo-action-6, asus-rog-ally-x, rog-xbox-ally-x, and the 7 smartphones.json
+no-slot devices from the 2026-07-18 batch) running past Google's ~160-char SERP
+truncation limit — the generator only truncates the template fallback, not curated
+text. Trimmed all 12 to fit under 160 chars while keeping the factual claims intact.
+
+Hand-wrote curated `metaDescription` entries for a first high-traffic batch of 27
+devices previously missing one — the Tier 1/Tier 2 devices from this file's audit
+list: gopro-hero-12/-13/-max, insta360-x3/-x4, canon-eos-r5, sony-a6700, nikon-z9,
+canon-g7x-mark-iii, fujifilm-xe5, leica-q3/-q3-43, raspberry-pi-5/-4-model-b,
+dji-mini-4-pro/-mavic-3/-mini-4k/-mini-3, potensic-atom/-se, nintendo-switch/-oled/
+-lite/-2, steam-deck, lenovo-legion-go/-go-s. Each description was written from that
+device's actual `sdCard`/`whySpecs` fields, not templated.
+
+Separately fixed `validate-schemas.js` (was hardcoded to a single stale
+`dist/devices/gopro-hero-max/index.html` path that no longer exists post-migration —
+current English pages live at `dist/categories/{category}/{slug}/index.html`).
+Rewrote it to scan every English device page and check FAQPage/ItemList/
+AggregateRating structure, not just JSON parseability.
+
+Rebuilt (`npm run build:site`) — 222 English device pages, unchanged count. Confirmed
+0 pages over the 160-char meta description limit (was 12), 0 pages missing a meta
+description, all 249 English pages pass `validate-schemas.js`, and
+`audit-card-coverage.js`/`verify-devices.js` are still clean.
+
+**Remaining**: 166 devices still lack a curated `metaDescription` (down from 193) and
+use the improved template fallback. Next high-value batch: the rest of Tier 3
+(computing-and-tablets.json, action-cameras.json, audio-and-hi-fi.json,
+3d-printers.json, music-production.json, dash-cams.json, security-cameras.json).
+
 ### 2026-07-18 — Tier 3: smartphones.json, the 7 no-built-in-slot devices (iphone-15,
 iphone-14, iphone-13, iphone-14-pro-max, iphone-se, samsung-galaxy-s23, google-pixel-8)
 These were the thinnest entries in the dataset — most `whySpecs` were 1-2 generic

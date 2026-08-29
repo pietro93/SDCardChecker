@@ -142,13 +142,13 @@ function generateUniqueMetaDescription(device, brandNames, index) {
         ? `, up to ${maxCapacity}`
         : "";
     const templates = [
-        `Find the perfect SD card for ${device.name}. Recommended: ${device.sdCard.type} ${device.sdCard.minSpeed} or faster. Top brands: ${brandNames}. Shop on Amazon.`,
-        `${device.name} best SD card guide. Speed: ${device.sdCard.minSpeed}. Type: ${device.sdCard.type}. Expert reviewed brands.`,
-        `${device.category} SD card recommendations. ${device.name} compatible. ${brandNames} or higher. Compare now.`,
-        `Best SD card for ${device.name}: ${device.sdCard.type} rated ${device.sdCard.minSpeed} or faster${capacityClause}. Compare picks and prices.`,
-        `${device.name} microSD vs SD card guide. ${device.sdCard.minSpeed} recommended. See top brands.`,
-        `Buy the right SD card for ${device.name}. ${device.sdCard.type} ${device.sdCard.minSpeed} required. Shop now.`,
-        `${device.name} SD card compatibility guide. ${bestCapacity} is the sweet spot. ${brandNames} recommended.`,
+        `The right SD card for ${device.name} needs ${device.sdCard.type} rated ${device.sdCard.minSpeed} or faster${capacityClause}. See tested picks from ${brandNames}.`,
+        `${device.name} needs a ${device.sdCard.type} card rated at least ${device.sdCard.minSpeed}. Here's what actually works, including ${brandNames}.`,
+        `Not every ${device.sdCard.type} card works with the ${device.name}. Minimum ${device.sdCard.minSpeed}${capacityClause} - see which cards meet spec.`,
+        `${device.name} SD card requirements: ${device.sdCard.type}, ${device.sdCard.minSpeed} minimum${capacityClause}. Recommended picks from ${brandNames}.`,
+        `Skip the guesswork on ${device.name} storage. ${device.sdCard.type} at ${device.sdCard.minSpeed} or better is the baseline; ${bestCapacity} covers most users.`,
+        `${device.category} cards aren't all compatible with the ${device.name}. It needs ${device.sdCard.type} rated ${device.sdCard.minSpeed}+ - here's what qualifies.`,
+        `${device.name}: use a ${device.sdCard.type} card rated ${device.sdCard.minSpeed} or higher${capacityClause}. Verified picks from ${brandNames} inside.`,
     ];
 
     return truncateAtWord(templates[index % templates.length], 160);

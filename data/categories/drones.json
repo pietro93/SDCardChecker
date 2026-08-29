@@ -55,7 +55,8 @@
       "dji-mini-4k",
       "dji-air-3s"
     ],
-    "notes": "DJI officially recommends V30 cards for safe recording. Test new cards before flights."
+    "notes": "DJI officially recommends V30 cards for safe recording. Test new cards before flights.",
+    "metaDescription": "The DJI Mini 4 Pro's demanding modes are 4K/100 slow motion and 10-bit D-Log M, not plain 4K/30. V30's sustained write keeps them stable."
   },
   {
     "id": "dji-mini-3-pro",
@@ -185,7 +186,8 @@
       "dji-mini-4-pro",
       "dji-air-3"
     ],
-    "notes": "Premium DJI flagship with dual cameras. Standard model supports 4K; Cine model adds 8K capability. V60+ cards essential for 8K Cine recording."
+    "notes": "Premium DJI flagship with dual cameras. Standard model supports 4K; Cine model adds 8K capability. V60+ cards essential for 8K Cine recording.",
+    "metaDescription": "The DJI Mavic 3 needs V60 minimum for its 4K modes; the Cine model's 8K Cine recording calls for V90. Here's what actually holds up."
   },
   {
     "id": "dji-air-3",
@@ -283,7 +285,8 @@
       "dji-air-3"
     ],
     "notes": "Released in 2024 as a budget alternative to the Mini 4 Pro. Its sub-250g weight allows for less restrictive regulations in many countries. High search volume is expected from beginner drone pilots and those seeking an affordable 4K drone.",
-    "imageUrl": "/img/devices/drones/dji-mini-4k.webp"
+    "imageUrl": "/img/devices/drones/dji-mini-4k.webp",
+    "metaDescription": "DJI's budget sub-250g drone still needs a real V30 microSD card for stable 4K/30 recording - the same baseline as its pricier Mini siblings."
   },
   {
     "id": "dji-mini-3",
@@ -330,7 +333,8 @@
       "dji-mini-4k"
     ],
     "notes": "Released in 2023, the DJI Mini 3 sits as a strong contender in the sub-250g drone category. It provides an excellent balance of features and affordability for enthusiasts. Its consistent V30 card requirement aligns with other DJI drones for reliable performance.",
-    "imageUrl": "/img/devices/drones/dji-mini-3.webp"
+    "imageUrl": "/img/devices/drones/dji-mini-3.webp",
+    "metaDescription": "The DJI Mini 3 records 4K HDR video, which needs a V30 microSD card, minimum, to avoid dropped frames during high-bitrate HDR footage."
   },
   {
     "id": "dji-mini-2-se",
@@ -560,7 +564,8 @@
       "dji-mini-2-se"
     ],
     "notes": "The #1 competitor to the DJI Mini 2 SE / 4K. Very popular on Amazon. Strict V30 requirement.",
-    "imageUrl": "/img/devices/drones/potensic-atom.webp"
+    "imageUrl": "/img/devices/drones/potensic-atom.webp",
+    "metaDescription": "The Potensic Atom requires U3/V30 microSD cards for its 4K video - slower U1 cards are known to stop recording mid-flight or fail to save."
   },
   {
     "id": "potensic-atom-se",
@@ -604,7 +609,8 @@
       "dji-mini-2-se"
     ],
     "notes": "A budget-friendly 4K drone. Users often buy cheap, incompatible cards; emphasize the need for V30.",
-    "imageUrl": "/img/devices/drones/potensic-atom-se.webp"
+    "imageUrl": "/img/devices/drones/potensic-atom-se.webp",
+    "metaDescription": "Like the standard Atom, the Potensic Atom SE's 4K video overwhelms slower cards. V30 is mandatory to avoid write-speed errors and corrupted files."
   },
   {
     "id": "potensic-atom-2",
