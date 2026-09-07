@@ -126,7 +126,7 @@ function generateCardPage(card, template, devicesForCard) {
     : `${card.name} specs, speed class, and best use cases.`;
 
   const utmParams = `utm_source=sdcardchecker&utm_medium=card-page&utm_campaign=${card.id}`;
-  const baseAmazonUrl = card.affiliateUrl || card.amazonSearchUrl;
+  const baseAmazonUrl = card.affiliateUrl || card.amazonDirectUrl || card.amazonSearchUrl;
   const amazonUrl = baseAmazonUrl.includes("?") ? `${baseAmazonUrl}&${utmParams}` : `${baseAmazonUrl}?${utmParams}`;
 
   const priceDisplay = card.priceSymbol ? `${card.priceSymbol} (${card.priceTier})` : card.priceTier || "";

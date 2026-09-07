@@ -457,25 +457,25 @@
     ],
     "commonIssues": [
       "Significant part number confusion between older MyLink IO5/IO6 (85713512) and newer IO8 systems (85856394)",
-      "Some 2014-2016 models may require a MyLink software update for full compatibility with the latest map cards",
-      "Silverado, Tahoe, and larger trucks may have slightly longer map initialization times due to extensive geographical data"
+      "Work-truck trims of the Silverado and Colorado are frequently ordered with a base radio that has no SD slot at all, which buyers discover only after the card arrives",
+      "Fleet and rental-return Chevrolets sometimes have the navigation feature disabled in software even though the hardware slot is present"
     ],
     "faqs": [
       {
         "question": "How do I know if my Chevy uses part 85713512 or 85856394?",
-        "answer": "The most accurate way to determine your required part number is to eject your current Chevrolet navigation SD card and read the label. GM used both variants interchangeably across various models and years. You can also check your RPO codes for IO5, IO6, or IO8."
+        "answer": "Eject your current Chevrolet navigation SD card and read the label. GM used both variants interchangeably across various models and years. You can also check the RPO code sticker on the driver's door jamb for IO5, IO6, or IO8."
       },
       {
         "question": "Will this work in my Silverado work truck?",
-        "answer": "Only if your Silverado has factory MyLink infotainment with embedded navigation. Many work truck configurations come with basic radio systems that do not have navigation capability or an SD card slot."
+        "answer": "Only if that specific Silverado was ordered with factory MyLink infotainment and embedded navigation. Base and work-truck trims commonly ship with a radio-only head unit that has no navigation capability or SD card slot, regardless of screen size."
       },
       {
-        "question": "Can I use the same card in different Chevrolet vehicles?",
-        "answer": "Yes, as long as both vehicles use the same part number system (e.g., both use 85713512). A card with part 85713512 works in any Chevrolet with IO5/IO6 MyLink, regardless of whether it's a Malibu, Equinox, or Silverado."
+        "question": "Can I use the same card across my Malibu, Equinox, and Silverado?",
+        "answer": "Yes, as long as all three use the same part number system. A card with part 85713512 works in any Chevrolet running IO5/IO6 MyLink, whatever the body style, since the map data itself isn't model-specific."
       },
       {
         "question": "Does this interfere with OnStar navigation services?",
-        "answer": "No! The SD card provides offline mapping that works alongside OnStar services. You'll have robust navigation even in areas with poor cellular coverage, and OnStar can still provide real-time traffic and live turn-by-turn directions when available."
+        "answer": "No. The SD card provides offline mapping that works alongside OnStar. You keep full routing in areas with poor cellular coverage, and OnStar can still layer in real-time traffic and live turn-by-turn guidance where it's available."
       }
     ],
     "applicableModels": [
@@ -505,26 +505,26 @@
       "Supports voice-activated navigation for safe, hands-free operation"
     ],
     "commonIssues": [
-      "Similar to Chevy, confusion between MyLink/IntelliLink part numbers (85713512 vs 85856394)",
-      "Owners sometimes struggle to identify the correct SD slot among other media ports in the center console",
-      "Ensuring that the vehicle actually has the factory IntelliLink navigation system, not just a touchscreen radio"
+      "Denali trims are assumed to always include navigation, but some early Denali packages bundled the premium stereo without the embedded IntelliLink navigation option",
+      "Owners sometimes struggle to identify the correct SD slot among the other media ports (USB, aux) crowded into the same center console bay",
+      "Trailering and towing packages on Sierra and Canyon can reposition the SD slot behind a different trim panel than on the equivalent non-towing configuration"
     ],
     "faqs": [
       {
         "question": "Which navigation system does this GMC SD card update?",
-        "answer": "This map update is designed specifically for 2014-2023 GMC vehicles equipped with the 8-inch IntelliLink (IO5, IO6, or IO8) factory embedded navigation system. Always verify your specific system via the part number."
+        "answer": "This map update is designed for 2014-2023 GMC vehicles equipped with the 8-inch IntelliLink (IO5, IO6, or IO8) factory embedded navigation system. Confirm your specific system via the part number before ordering."
       },
       {
         "question": "My GMC center console has multiple slots; which one do I use?",
-        "answer": "If your GMC's center console features a media hub with various ports, insert the card strictly into the slot designated for 'SD Card' or with a small SD card icon. Be careful not to force it into USB ports located directly adjacent to it."
+        "answer": "Insert the card strictly into the slot marked with an SD card icon or labeled 'SD Card.' Sierra and Yukon media hubs place USB-A and USB-C ports directly beside it, and forcing a card into the wrong slot can damage the connector."
       },
       {
         "question": "Do I need to go to a GMC dealer to activate the new map card?",
-        "answer": "No dealer visit is necessary. The navigation cards are completely plug-and-play. Just insert the card into your GMC's SD slot, and the IntelliLink system will authenticate and begin loading the new map data automatically."
+        "answer": "No. The cards are plug-and-play. Insert the card into the SD slot and IntelliLink authenticates and loads the new map data automatically, no dealer visit or subscription step required."
       },
       {
-        "question": "Will this update enhance the navigation in my GMC Acadia or Terrain?",
-        "answer": "Yes, for 2014-2023 GMC Acadia and Terrain models equipped with the factory IntelliLink navigation system, this SD card will provide the latest road network and Points of Interest updates."
+        "question": "Does a towing package change how navigation works on my Sierra?",
+        "answer": "No, map data and routing are identical regardless of towing package. What can differ is the physical location of the SD slot on some trailering-equipped trims, so check behind the correct panel if you don't see it where expected."
       }
     ],
     "applicableModels": [
@@ -552,26 +552,26 @@
       "Voice-activated navigation for intuitive, hands-free destination input"
     ],
     "commonIssues": [
-      "Cadillac owners often face confusion regarding the two primary GM navigation part numbers (85713512 vs 85856394)",
-      "The SD card slot in Cadillacs can be well-hidden, requiring careful searching within the center console or behind panels",
-      "Ensuring the vehicle has the factory CUE navigation system, not just a basic touchscreen display"
+      "CUE's capacitive touch-sensitive buttons (rather than physical buttons) mean the SD slot cover itself is sometimes mistaken for a touch control and pressed instead of opened",
+      "The SD card slot in Cadillacs can be well-hidden inside the center console storage bin, requiring careful searching behind panels",
+      "CTS and ATS sedans from the earlier CUE generation (pre-2017) can be slower to re-index the map database after a card swap than the newer CUE found in XT5/XT6"
     ],
     "faqs": [
       {
         "question": "Does this navigation update work for the Cadillac CUE system?",
-        "answer": "Yes, this update is fully compatible with 2014-2023 Cadillac models equipped with the CUE (Cadillac User Experience) infotainment system featuring embedded factory navigation (IO5, IO6, or IO8 versions)."
+        "answer": "Yes, it's compatible with 2014-2023 Cadillac models equipped with the CUE (Cadillac User Experience) infotainment system and embedded factory navigation (IO5, IO6, or IO8 versions)."
       },
       {
         "question": "How do I locate the SD card slot in my Cadillac?",
-        "answer": "In most modern Cadillac models, the SD card slot is hidden securely inside the center console storage bin, often situated right next to the auxiliary and USB data ports, or occasionally under a flip-up panel below the CUE screen."
+        "answer": "In most Cadillac models it's inside the center console storage bin, next to the auxiliary and USB data ports, or under a flip-up panel below the CUE screen. It's rarely visible without opening a compartment."
       },
       {
         "question": "Why are there two different part numbers (85713512 and 85856394) for Cadillacs?",
-        "answer": "General Motors utilized two different navigation hardware iterations during this period. You must verify the part number on your Cadillac's original SD card (either 85713512 for IO5/IO6 or 85856394 for IO8) to ensure you purchase the correct version."
+        "answer": "General Motors used two navigation hardware generations during this period. Check the part number on your Cadillac's original card (85713512 for IO5/IO6, 85856394 for IO8) before ordering a replacement."
       },
       {
-        "question": "Will updating the maps affect my Cadillac's other CUE features?",
-        "answer": "No, updating the navigation SD card only affects the map data and routing algorithms. It will not interfere with or change other CUE functionalities like audio, climate control, or vehicle settings."
+        "question": "Will updating the maps affect my Cadillac's other CUE features, like the haptic touch panel?",
+        "answer": "No. Updating the navigation SD card only touches map data and routing algorithms. CUE's haptic feedback controls, audio, and climate settings are stored separately and aren't affected."
       }
     ],
     "applicableModels": [
@@ -601,26 +601,26 @@
       "Compatible with real-time traffic data (via subscription) for efficient travel"
     ],
     "commonIssues": [
-      "Buick owners need to verify which of the two main GM part numbers (85713512 or 85856394) their vehicle uses",
-      "Confusion between touchscreen-equipped radios and actual factory-installed IntelliLink navigation systems",
-      "Locating the often discreetly placed SD card slot within the center console or dashboard"
+      "Encore and Encore GX are easy to mix up when ordering a card: they're different platforms and the GX's newer infotainment generation can use a different part number than the original Encore",
+      "Buick's QuietTuning noise-insulation package has no bearing on navigation hardware, but some owners assume higher trims automatically include factory GPS when they don't",
+      "Locating the often discreetly placed SD card slot within the center console or dashboard, especially on Regal and LaCrosse sedans where it sits lower than on the SUVs"
     ],
     "faqs": [
       {
         "question": "Will this update the maps in my Buick Enclave or Encore?",
-        "answer": "Yes, as long as your 2014-2023 Buick Enclave, Encore, or Envision is equipped with the factory IntelliLink navigation system (IO5, IO6, or IO8). Base models without built-in GPS capabilities are not supported and lack an SD card slot."
+        "answer": "Yes, as long as that specific Enclave, Encore, or Envision is equipped with the factory IntelliLink navigation system (IO5, IO6, or IO8). Base models without built-in GPS lack the SD card slot entirely."
       },
       {
-        "question": "How do I check my Buick's current navigation SD card part number?",
-        "answer": "Turn off your vehicle, locate the SD card slot (usually in the center console), gently push the card to eject it, and read the part number (typically 85713512 or 85856394) printed on the sticker. This is crucial for compatibility."
+        "question": "Is the Encore GX's navigation card the same as the original Encore's?",
+        "answer": "Not always. The Encore GX arrived later with a newer infotainment generation, so check the part number printed on your existing card rather than assuming it matches the standard Encore."
       },
       {
         "question": "What is included in the Buick navigation map update?",
-        "answer": "The update includes new residential subdivisions, modified highway interchanges, updated speed limits, and thousands of new points of interest (POIs) customized for your Buick's IntelliLink display across North America."
+        "answer": "New residential subdivisions, modified highway interchanges, updated speed limits, and thousands of new points of interest across North America, all shown on your IntelliLink display."
       },
       {
         "question": "Can I install the new map card while my Buick is running?",
-        "answer": "No, always ensure your Buick's engine is completely off and the key removed before attempting to swap the navigation SD card. This prevents potential system errors or data corruption during installation."
+        "answer": "No. Turn the engine off and remove the key before swapping the navigation SD card. Doing it while running risks a system error or corrupting the card's data mid-write."
       }
     ],
     "applicableModels": [

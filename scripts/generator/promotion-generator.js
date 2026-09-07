@@ -58,7 +58,7 @@ function generatePromotedCardSection(deviceData, sdcards, isJapanese = false, ge
       const card = sdcards.find(c => c.id === promo.id);
       if (!card) return;
 
-      const baseUrl = card.amazonDirectUrl || card.amazonSearchUrl;
+      const baseUrl = card.amazonDirectUrl || card.affiliateUrl || card.amazonSearchUrl;
       const amazonUrl = baseUrl.includes('?')
         ? `${baseUrl}&utm_source=sdcardchecker&utm_medium=promotion&utm_campaign=featured`
         : `${baseUrl}?utm_source=sdcardchecker&utm_medium=promotion&utm_campaign=featured`;
@@ -68,7 +68,7 @@ function generatePromotedCardSection(deviceData, sdcards, isJapanese = false, ge
       html += `
   <div class="promoted-card-item flex gap-6 items-center">
     <div class="promoted-card-image flex-shrink-0">
-      <a href="${amazonUrl}" target="_blank" rel="noopener noreferrer">
+      <a href="${amazonUrl}" target="_blank" rel="nofollow sponsored">
         <img src="${cardImage}" alt="${card.name}" class="w-32 h-32 object-cover rounded" loading="lazy" />
       </a>
     </div>
@@ -83,7 +83,7 @@ function generatePromotedCardSection(deviceData, sdcards, isJapanese = false, ge
         <span>${card.specs.writeSpeed}</span> write
       </div>
       <p class="text-sm text-slate-700 mb-3">${card.pros}</p>
-      <a href="${amazonUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 btn btn-primary text-sm">
+      <a href="${amazonUrl}" target="_blank" rel="nofollow sponsored" class="inline-flex items-center gap-2 btn btn-primary text-sm">
         <i class="fas fa-shopping-cart"></i>
         ${isJapanese ? '価格を確認する' : 'Check Price on Amazon'}
       </a>

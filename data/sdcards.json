@@ -684,6 +684,31 @@
       "tier": "recommended"
     },
     {
+      "id": "gigastone-128gb-4k-camera-pro-sd",
+      "name": "Gigastone 128GB SD Card 4K Camera Pro",
+      "brand": "Gigastone",
+      "type": "SD",
+      "specs": {
+        "uhs": "UHS-I",
+        "speedClass": "V30",
+        "appPerformance": "A1",
+        "readSpeed": "Up to 100 MB/s",
+        "writeSpeed": "Up to 30 MB/s (V30 minimum sustained)",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [128],
+      "priceSymbol": "$$",
+      "priceTier": "Mid-Range",
+      "imageUrl": "/img/cards/gigastone-128gb-4k-camera-pro-sd.webp",
+      "imageSourceUrl": "https://m.media-amazon.com/images/I/413OY92i4rL._SS500_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B093BTSZ55?tag=uproot01-20",
+      "affiliateUrlAlt": null,
+      "pros": "100MB/s read speed. A1 app performance for shooting RAW+JPEG. Includes mini case. 5-year data recovery service.",
+      "cons": "UHS-I only, not suited to high-bitrate 4K/6K cinema cameras needing V60/V90. Only sold in 128GB. Amazon's listing title advertises 150MB/s but the card packaging itself is printed 100MB/s - we use the packaging figure.",
+      "tier": "recommended",
+      "notes": "Sponsored - Creator Connections product (tag=uproot01-20). Speed listed as printed on packaging (100MB/s), not the 150MB/s figure in Amazon's listing title - verify against current listing before reusing this claim elsewhere."
+    },
+    {
       "id": "nikon-xqd-memory-card",
       "name": "Nikon XQD Memory Card",
       "type": "XQD",

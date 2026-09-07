@@ -114,6 +114,7 @@ function generateCarPages(distPath) {
 
      // Hero: real vehicle photo when sourced, gradient + car icon placeholder otherwise
      const heroImage = getCarImageFallback(vehicle);
+     const ogImage = BASE_URL + (heroImage || '/img/og-category.webp');
      const heroAlt = `${vehicle.carModel} (${vehicle.years}) navigation SD card upgrade`;
      const heroTitle = `Best navigation SD card for ${vehicle.carModel}`;
      const heroHtml = heroImage
@@ -165,6 +166,7 @@ function generateCarPages(distPath) {
        .replace(/{{OG_TITLE}}/g, ogTitle)
        .replace(/{{CAR_URL}}/g, carUrl)
        .replace(/{{HERO_HTML}}/g, heroHtml)
+       .replace(/{{OG_IMAGE}}/g, ogImage)
        .replace(/{{CAR_MODEL}}/g, vehicle.carModel)
        .replace(/{{YEARS}}/g, vehicle.years)
        .replace(/{{MAKE}}/g, vehicle.make)

@@ -28,6 +28,34 @@
       "reason": "Higher commission rate (uproot01-20 tag) + V90 recommendation for professional users",
       "badgeText": "Best Value V90",
       "badgeColor": "bg-blue-600"
+    },
+    {
+      "id": "gigastone-128gb-4k-camera-pro-sd",
+      "name": "Gigastone 128GB SD Card 4K Camera Pro",
+      "enabled": true,
+      "displayOn": "list",
+      "appliesTo": [
+        "sony-a6700",
+        "fujifilm-x-s20",
+        "canon-eos-r50",
+        "canon-eos-r10",
+        "canon-g7x-mark-iii",
+        "fujifilm-xm5",
+        "fujifilm-xt30-ii",
+        "fujifilm-xe5",
+        "fujifilm-x100v",
+        "nikon-z50-ii",
+        "canon-eos-r100",
+        "sony-zv-e10",
+        "sony-a7-iii",
+        "sony-a6400",
+        "fujifilm-x-s10",
+        "nikon-d7500"
+      ],
+      "excludeFrom": [],
+      "reason": "Creator Connections sponsored product, higher commission (uproot01-20 tag, ~$1.43 EPC) + matches V30/A1 requirement for entry/mid-level cameras",
+      "badgeText": "Great Value 4K",
+      "badgeColor": "bg-green-600"
     }
   ],
   "notes": {
