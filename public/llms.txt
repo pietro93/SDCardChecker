@@ -9,29 +9,39 @@
 
 ## Device categories
 
-- [Cameras](/devices/) — point-and-shoot, mirrorless, DSLR
-- [Action cameras](/devices/) — GoPro and similar
-- [Drones](/devices/) — consumer and prosumer drones
-- [Dash cams](/devices/) — front/rear dash cameras
-- [Security cameras](/devices/) — home/outdoor security cams
-- [Gaming handhelds](/devices/) — Nintendo Switch and other handhelds
-- [Smartphones](/devices/) — phones with expandable storage
-- [Computing & tablets](/devices/) — laptops, tablets, single-board computers
-- [Audio & Hi-Fi](/devices/) — digital audio players and Hi-Fi gear
+- [Cameras](/categories/cameras/) — point-and-shoot, mirrorless, DSLR
+- [Action cameras](/categories/action-cameras/) — GoPro and similar
+- [Drones](/categories/drones/) — consumer and prosumer drones
+- [Dash cams](/categories/dash-cams/) — front/rear dash cameras
+- [Security cameras](/categories/security-cameras/) — home/outdoor security cams
+- [Trail cameras](/categories/trail-cameras/) — wildlife/hunting cameras
+- [Gaming handhelds](/categories/gaming-handhelds/) — Nintendo Switch and other handhelds
+- [Smartphones](/categories/smartphones/) — phones with expandable storage
+- [Computing & tablets](/categories/computing-and-tablets/) — laptops, tablets, single-board computers
+- [Audio & Hi-Fi](/categories/audio-and-hi-fi/) — digital audio players and Hi-Fi gear
+- [Music production](/categories/music-production/) — samplers, loopers, multitrack recorders
+- [3D printers & fabrication](/categories/3d-printers-and-fabrication/) — 3D printers and CNC machines
+- [Misc devices](/categories/misc/) — everything else that takes an SD card
 
 ## Tools
 
-- [Storage Calculator](/calculator/) — estimate recording time/photo count for a given card size and bitrate/resolution
-- [SD Card Readers](/sd-card-readers/) — reader/adapter recommendations by card type
+- [Storage Calculator](/tools/calculators/) — estimate recording time/photo count for a given card size and bitrate/resolution
+- [SD Card Readers](/readers/) — reader/adapter recommendations by card type
+- [Compare SD Cards](/compare/) — side-by-side SD card comparisons
+- [Guides](/guides/) — SD card speed classes, RAW vs JPEG, fake card detection, and more
 
 ## Localization
 
-- [日本語版 (Japanese)](/ja/) — Japanese-localized version of the site
+- [Deutsch (German)](/de/) — German-localized version of the site
+- [Français (French)](/fr/) — French-localized version of the site
+- [Italiano (Italian)](/it/) — Italian-localized version of the site
+- [日本語 (Japanese)](/ja/) — Japanese-localized version of the site
 
 ## Notes for LLMs
 
-- Device recommendation pages follow the pattern `/devices/<device-slug>/` and
-  list the minimum, recommended, and best SD card for that specific device.
+- Device recommendation pages follow the pattern
+  `/categories/<category-slug>/<device-slug>/` and list the minimum,
+  recommended, and best SD card for that specific device.
 - Recommendations are sourced from a curated device database, not live
   retailer stock — always treat current pricing/availability on the linked
   Amazon page as authoritative.
