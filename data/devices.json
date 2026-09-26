@@ -452,7 +452,6 @@
         "gopro-hero-12",
         "gopro-hero-max",
         "gopro-hero-11-black",
-        "gopro-hero-14-black",
         "dji-mini-4-pro"
       ],
       "notes": "Card requirements match Hero 12. Official GoPro guidance: A2/V30, up to 1TB.",
@@ -470,7 +469,7 @@
       ],
       "sdCard": {
         "type": "microSD UHS-I (UHS-II Compatible)",
-        "minSpeed": "A2 / V30",
+        "minSpeed": "V30 / U3",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -480,7 +479,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "Shoots 5.3K video at various frame rates, with a High bitrate setting of roughly 120 Mbps. V30 cards guarantee 30 MB/s of sustained write, which leaves comfortable headroom over that. The point isn't peak speed but that the card never dips below the camera's demand mid-clip, which is what causes dropped frames and corrupted files. GoPro's current guidance pairs V30 with an <b>A2</b> rating, and the Hero 12 handles cards up to <b>1TB</b>.",
+      "whySpecs": "Shoots 5.3K60 and 4K120 at up to about 120 Mbps (15 MB/s) on the High bitrate setting. GoPro requires V30 or UHS-3 cards. V30 guarantees 30 MB/s sustained, double what the camera writes, so a good card never falls behind mid-clip.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -494,12 +493,12 @@
       ],
       "faq": [
         {
-          "q": "Can I record 5K with V20 cards?",
-          "a": "<b>Recording 5.3K video with V20 cards is not recommended</b>. While V20 cards may technically record, they only guarantee 20MB/s write speed, which is insufficient for stable 5.3K recording. <b>V30 is the safe minimum speed class</b> for this device."
+          "q": "Can I record 5.3K with a V20 card on the Hero 12?",
+          "a": "<b>No, use V30.</b> GoPro requires V30 or UHS-3. A V20 card may record for a while, then stop or corrupt the clip."
         },
         {
-          "q": "Can I use older microSD cards?",
-          "a": "<b>Older microSD cards below V30 rating are not reliable for 5.3K recording</b> and risk file corruption. <b>Best to upgrade to a modern V30 or faster microSD card</b> for guaranteed compatibility and stable performance with your Hero 12."
+          "q": "Can I use older microSD cards in the Hero 12?",
+          "a": "<b>Only if they carry the V30 or U3 mark.</b> Older Class 10 and U1 cards can't sustain 5.3K."
         }
       ],
       "relatedDevices": [
@@ -508,7 +507,7 @@
         "gopro-hero-11-black"
       ],
       "notes": "Official GoPro recommendation: A2/V30 cards, up to 1TB.",
-      "metaDescription": "The GoPro Hero 12 Black shoots 5.3K at up to ~120 Mbps. A V30 microSD card gives it the sustained write headroom to never drop a frame."
+      "metaDescription": "The GoPro Hero 12 Black needs a V30 or UHS-3 microSD card. It writes about 120 Mbps at 5.3K60, so V30 gives double the headroom. Best cards."
     },
     {
       "id": "gopro-hero-max",
@@ -530,7 +529,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Shoots 5.6K30 spherical video in 360 mode, and up to 1440p60 as a single-lens camera in HERO mode. Note the MAX is <b>not</b> a 4K camera in HERO mode, which surprises people cross-shopping it against a Hero Black. 360 capture is the demanding mode: it's stitching two sensors into one high-bitrate stream, so V30's guaranteed 30 MB/s sustained write is what keeps long spherical clips from dropping frames. The MAX has a UHS-I slot and GoPro's approved-card list for it is more conservative than for current models, so stick to a well-known V30 card rather than the largest one you can find.",
+      "whySpecs": "The MAX records 5.6K30 spherical video in 360 mode and up to 1440p60 as a single-lens camera in HERO mode. It is not a 4K camera in HERO mode. GoPro requires V30 or UHS-3 cards. The slot is UHS-I, so faster cards record the same.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -547,12 +546,12 @@
       ],
       "faq": [
         {
-          "q": "Is V30 needed for 360 video?",
-          "a": "<b>Yes, V30 speed class is required for 360-degree video recording</b>. <b>360 video mode has significantly higher bitrate than standard GoPro recording</b> due to the increased resolution and field of view, demanding reliable V30 performance."
+          "q": "Does the GoPro MAX need a V30 card for 360 video?",
+          "a": "<b>Yes.</b> GoPro requires V30 or UHS-3 for the MAX. 360 mode records at the camera's highest bitrate."
         },
         {
-          "q": "How much storage for 360 content?",
-          "a": "<b>In 360 mode, a 128GB microSD card holds roughly 2.5 hours of footage.</b> Spherical capture combines two sensors into one stream, so it eats storage noticeably faster than HERO mode does, but on a long shoot the limit you hit first is usually battery life, not card space. A 256GB card comfortably covers a full day of intermittent 360 capture."
+          "q": "How much 360 video fits on a 128GB card in the GoPro MAX?",
+          "a": "<b>About 2.5 hours of 5.6K30 360 video.</b> Battery life runs out first on most shoots, so a 128GB card covers a day."
         }
       ],
       "relatedDevices": [
@@ -563,7 +562,7 @@
       ],
       "notes": "Original 2019 360 camera (correct product name is 'GoPro MAX', not 'Hero Max'). 5.6K30 in 360 mode, 1440p60 max in HERO mode. Kept at 512GB — GoPro's approved-card list for MAX is more conservative than for HERO12/13/Max 2, which go to 1TB.",
       "imageUrl": "/img/devices/action-cameras/gopro-hero-max.webp",
-      "metaDescription": "The GoPro MAX isn't a 4K camera in HERO mode - it tops out at 1440p60. Its demanding mode is 5.6K30 spherical, which needs a V30 microSD card."
+      "metaDescription": "The GoPro MAX needs a V30 microSD card for 5.6K30 360 video. In HERO mode it tops out at 1440p60, not 4K. Best cards and how much 128GB holds."
     },
     {
       "id": "insta360-x3",
@@ -585,7 +584,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "Recording 5.7K 360-degree video generates a large amount of data. Insta360 officially recommends a V30 speed class microSD card to ensure smooth, stable recording without dropped frames or corruption.",
+      "whySpecs": "The X3 records 5.7K 360 video from two lenses in one continuous stream. Insta360 requires UHS-I microSD cards rated V30 or faster, formatted exFAT, up to 1TB. Insta360 recommends against UHS-II cards in the X3.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -600,7 +599,19 @@
       "faq": [
         {
           "q": "Can I use a SanDisk Ultra card in the Insta360 X3?",
-          "a": "<b>It is not recommended.</b> While some Ultra cards are rated V10, the X3 requires a minimum of V30. Using a slower card can lead to recording failure, especially in high-resolution modes. Stick to the SanDisk Extreme series or equivalent."
+          "a": "<b>No.</b> The SanDisk Ultra is rated U1, and the X3 requires V30. Use the SanDisk Extreme or an equivalent V30 card."
+        },
+        {
+          "q": "Does the Insta360 X3 support 1TB microSD cards?",
+          "a": "<b>Yes, 1TB is the maximum.</b> Format the card exFAT in the camera."
+        },
+        {
+          "q": "Can I use UHS-II microSD cards in the Insta360 X3?",
+          "a": "<b>Insta360 recommends against it.</b> UHS-II cards can cause recording failures in the X3, and when they work they run at UHS-I speed."
+        },
+        {
+          "q": "Is it called the Insta360 ONE X3?",
+          "a": "<b>No, the model is the Insta360 X3.</b> The ONE X2 was the previous generation. The X3 dropped the ONE name."
         }
       ],
       "relatedDevices": [
@@ -608,7 +619,7 @@
         "gopro-hero-13"
       ],
       "notes": "GoPro's biggest competitor in the 360 space. Very high search volume.",
-      "metaDescription": "The Insta360 X3 shoots 5.7K 360-degree video, which needs Insta360's official V30 minimum microSD card to avoid dropped frames and corruption."
+      "metaDescription": "The Insta360 X3 needs a V30 UHS-I microSD card, up to 1TB, formatted exFAT. Insta360 warns UHS-II cards can fail. Best cards for 5.7K 360 video."
     },
     {
       "id": "dji-osmo-pocket-3",
@@ -687,7 +698,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "The Nextbase 622GW records 4K video at 30fps with image stabilization. Nextbase officially recommends U3 High Endurance cards (specifically SanDisk MAX Endurance or Samsung PRO Endurance) for reliable continuous recording. The 4K bitrate demands fast write speeds and endurance ratings.",
+      "whySpecs": "The 622GW records 4K/30 with image stabilization. Nextbase specifies U3 cards and sells its own U3 cards for it. Dash cams overwrite the card around the clock, so a high-endurance card such as the SanDisk MAX Endurance or Samsung PRO Endurance outlasts a standard card.",
       "recommendedBrands": [
         {
           "id": "sandisk-max-endurance"
@@ -699,11 +710,11 @@
       "faq": [
         {
           "q": "Does the Nextbase 622GW come with an SD card?",
-          "a": "<b>No, SD cards are sold separately.</b> Nextbase strongly recommends purchasing a High Endurance card (U3 rated) from their approved list. Using non-approved cards can void your warranty if card failure causes issues."
+          "a": "<b>No, the card is sold separately.</b> Use a U3 high-endurance card."
         },
         {
-          "q": "What's the best capacity for 4K recording?",
-          "a": "<b>128GB is the sweet spot for most users.</b> A 128GB High Endurance card stores approximately 6-8 hours of 4K footage before loop recording begins. For maximum retention, use 256GB for 12-16 hours of recording."
+          "q": "What size SD card is best for the Nextbase 622GW?",
+          "a": "<b>128GB for most drivers.</b> It holds several hours of 4K before loop recording overwrites the oldest clips. Protected incident files are kept."
         }
       ],
       "relatedDevices": [
@@ -733,7 +744,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "The Hero 11 Black shoots high-quality 5.3K video. GoPro officially endorses using a V30 speed class card to guarantee the 30MB/s minimum write speed required for stable, reliable recording without dropped frames or file corruption.",
+      "whySpecs": "The Hero 11 Black records 5.3K60 and 4K120 at up to about 120 Mbps (15 MB/s). GoPro requires V30 or UHS-3 cards, which guarantee 30 MB/s sustained.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -747,8 +758,8 @@
       ],
       "faq": [
         {
-          "q": "Are Hero 11 and Hero 12 card requirements the same?",
-          "a": "<b>Yes, both require V30 microSD cards.</b> The Hero 11 Black has very similar video specifications to the Hero 12, so the same card recommendations apply for guaranteed performance."
+          "q": "Do the Hero 11 and Hero 12 use the same microSD card?",
+          "a": "<b>Yes.</b> Both require V30 or UHS-3 cards, and a card that works in one works in the other."
         }
       ],
       "relatedDevices": [
@@ -783,7 +794,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "Records 8K 360° video at 30fps and 5.7K at 60fps. Insta360 officially requires V30 minimum to handle the high bitrate 360° recording without dropped frames. The dual-lens system generates massive data streams that demand reliable sustained write speeds.",
+      "whySpecs": "The X4 records 8K/30 and 5.7K/60 360 video. Insta360 requires UHS-I microSD cards rated V30 or faster, formatted exFAT, up to 1TB.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -797,12 +808,12 @@
       ],
       "faq": [
         {
-          "q": "Can I use the same card from my X3?",
-          "a": "<b>Yes, any V30 or faster microSD card from your X3 will work perfectly in the X4.</b> The X4 has the same V30 minimum requirement, though faster offload speeds are beneficial with the larger 8K files."
+          "q": "Can I use my Insta360 X3 card in the X4?",
+          "a": "<b>Yes.</b> Both require V30 UHS-I cards. The X4's 8K files are larger, so you may want a bigger card."
         },
         {
-          "q": "How much 8K footage fits on a 256GB card?",
-          "a": "<b>A 256GB card stores approximately 2-2.5 hours of 8K 30fps recording.</b> For extended sessions, consider 512GB or carry multiple cards for quick swaps."
+          "q": "How much 8K footage fits on a 256GB card in the X4?",
+          "a": "<b>About 2.5 hours of 8K/30.</b> Carry a second card or a 512GB card for long days."
         }
       ],
       "relatedDevices": [
@@ -812,14 +823,14 @@
       ],
       "notes": "Insta360's 2024 flagship 360° camera. Official max capacity tested: 1TB.",
       "imageUrl": "/img/devices/action-cameras/insta360-x4.webp",
-      "metaDescription": "The Insta360 X4 records 8K 360-degree video at 30fps. Its dual-lens system demands a V30 microSD card, minimum, for reliable sustained write."
+      "metaDescription": "The Insta360 X4 needs a V30 UHS-I microSD card, up to 1TB. A 256GB card holds about 2.5 hours of 8K/30 360 video. Best cards and sizes."
     },
     {
       "id": "dji-osmo-action-4",
       "name": "DJI Osmo Action 4",
       "category": "Action Cameras",
       "slug": "dji-osmo-action-4",
-      "metaDescription": "DJI requires a UHS-I microSD card rated U3/V30 for the Osmo Action 4 (max 2TB). Here are the best-tested cards that meet spec.",
+      "metaDescription": "DJI requires a U3/V30 UHS-I microSD card for the Osmo Action 4, up to 512GB. It has no internal storage. Best cards that meet DJI's spec.",
       "searchTerms": [
         "dji action 4",
         "osmo action 4 sd card",
@@ -836,9 +847,9 @@
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "2TB"
+        "maxCapacity": "512GB"
       },
-      "whySpecs": "DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum for the Osmo Action 4, with a maximum supported capacity of 2TB. The Action 4 records 4K at 120fps with exceptional low-light performance from its large 1/1.3-inch sensor, which produces higher bitrates than typical action cameras, making the V30 minimum a firm requirement, not a suggestion.",
+      "whySpecs": "DJI requires a UHS-I microSD card rated U3 and V30 for the Osmo Action 4, up to 512GB. It records 4K/120 from a 1/1.3-inch sensor and has no built-in storage.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -853,15 +864,15 @@
       "faq": [
         {
           "q": "What are DJI's official microSD card requirements for the Osmo Action 4?",
-          "a": "<b>DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum, with a maximum supported capacity of 2TB.</b> These are DJI's published specifications for the Osmo Action 4. Cards meeting these specs, such as the SanDisk Extreme, Lexar Professional 1000x, and Kingston Canvas Go Plus, are the safe choices for reliable 4K/120fps recording."
+          "a": "<b>UHS-I, U3 and V30, up to 512GB.</b> The SanDisk Extreme, Lexar Professional Silver and Kingston Canvas Go! Plus all meet it."
         },
         {
-          "q": "Action 4 vs GoPro Hero 12 - same cards?",
-          "a": "<b>Yes, both the DJI Osmo Action 4 and GoPro Hero 12 require V30 microSD cards.</b> Card requirements are identical, so you can choose between them based on features, low-light performance, and ecosystem preference, not card compatibility."
+          "q": "Do the Osmo Action 4 and GoPro Hero 12 use the same cards?",
+          "a": "<b>Yes.</b> Both need V30 microSD cards, so one card works in either."
         },
         {
-          "q": "Does the magnetic mount affect the SD card?",
-          "a": "<b>No, the magnetic quick-release mount does not affect microSD card data or performance.</b> The card is safely housed inside the camera body, and the magnets are not strong enough to cause corruption or data loss."
+          "q": "Does the Osmo Action 4 have internal storage?",
+          "a": "<b>No.</b> Without a microSD card it can't record. The Action 6 added 64GB of built-in storage."
         }
       ],
       "relatedDevices": [
@@ -883,17 +894,15 @@
         "insta360 go3 storage"
       ],
       "sdCard": {
-        "type": "microSD UHS-I",
-        "minSpeed": "V30",
-        "minWriteSpeed": "30 MB/s",
+        "type": "No card slot (32GB, 64GB or 128GB internal)",
+        "minSpeed": "N/A",
+        "minWriteSpeed": "N/A",
         "recommendedCapacity": [
-          "64GB",
-          "128GB",
-          "256GB"
+          "64GB or 128GB model"
         ],
-        "maxCapacity": "256GB"
+        "maxCapacity": "128GB internal"
       },
-      "whySpecs": "An ultra-compact and wearable action camera capable of 2.7K video recording. A V30 speed class card is required for reliable recording without dropped frames, ensuring stable footage despite the camera's tiny form factor and ease of use for POV content.",
+      "whySpecs": "The GO 3 stores footage on built-in memory and has no card slot. Choose the storage when you buy: 32GB, 64GB or 128GB. Offload through the Action Pod's USB-C port or the Insta360 app.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -904,8 +913,12 @@
       ],
       "faq": [
         {
-          "q": "How small is the Insta360 GO 3?",
-          "a": "<b>The Insta360 GO 3 is incredibly small and lightweight, weighing only 35 grams and roughly the size of your thumb.</b> Despite its miniature stature, it still requires V30 microSD cards to handle its 2.7K video recording capabilities reliably, especially when mounted in dynamic situations."
+          "q": "Does the Insta360 GO 3 take a microSD card?",
+          "a": "<b>No.</b> The GO 3 has built-in storage only. The GO 3S also has no slot and comes in 64GB, 128GB and 256GB."
+        },
+        {
+          "q": "Which GO 3 storage size should I buy?",
+          "a": "<b>64GB or 128GB.</b> The 2.7K files fill 32GB quickly, and you can't add storage later."
         }
       ],
       "relatedDevices": [
@@ -913,7 +926,9 @@
         "gopro-hero-13",
         "dji-osmo-pocket-3"
       ],
-      "notes": "An ultra-compact wearable action camera. Extremely popular for POV (point-of-view) content creation and for mounting in creative, discrete locations. Its unique form factor drives specific search queries regarding its accessories and capabilities."
+      "notes": "An ultra-compact wearable action camera. Extremely popular for POV (point-of-view) content creation and for mounting in creative, discrete locations. Its unique form factor drives specific search queries regarding its accessories and capabilities.",
+      "customTitle": "Does the Insta360 GO 3 Take an SD Card? No, Built-In Only",
+      "metaDescription": "The Insta360 GO 3 has no microSD slot. It records to 32GB, 64GB or 128GB of built-in storage. Which size to buy and how to offload footage."
     },
     {
       "id": "insta360-ace-pro",
@@ -935,7 +950,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "A flagship action camera featuring a flip screen, 4K 120fps recording, and a large sensor. A V30 speed class card ensures stable and reliable recording across all its advanced video modes, including high frame rates and detailed action sequences.",
+      "whySpecs": "The Ace Pro has a 1/1.3-inch sensor and records up to 8K/24 and 4K/120. Insta360 requires V30 UHS-I microSD cards formatted exFAT.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -949,8 +964,8 @@
       ],
       "faq": [
         {
-          "q": "Insta360 Ace Pro vs GoPro - what about SD cards?",
-          "a": "<b>Both the Insta360 Ace Pro and current GoPro Hero models typically require V30 microSD cards for optimal performance.</b> Their card requirements are generally interchangeable. The Ace Pro's unique flip screen is often cited as a key advantage for vlogging, providing flexibility that GoPro models may not offer."
+          "q": "Do the Insta360 Ace Pro and GoPro use the same SD cards?",
+          "a": "<b>Yes, both take V30 microSD cards.</b> A card that works in a Hero 11, 12 or 13 works in the Ace Pro."
         }
       ],
       "relatedDevices": [
@@ -980,7 +995,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "A previous-generation 360° camera, capable of 5.7K recording. A V30 speed class card is required for stable 360° capture, which generates high data volumes due to its immersive nature. While newer models exist, the ONE X2 remains popular on the used market.",
+      "whySpecs": "The ONE X2 records 5.7K/30 360 video from two lenses. Insta360 requires V30 UHS-I microSD cards formatted exFAT.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -994,8 +1009,8 @@
       ],
       "faq": [
         {
-          "q": "Insta360 ONE X2 vs X3/X4 - are the card requirements different?",
-          "a": "<b>All of Insta360's 360 cameras, including the ONE X2, X3, and X4, require V30 microSD cards for optimal performance.</b> While newer models offer higher resolutions and improved features, the fundamental V30 speed requirement for stable 360° video recording has remained consistent. The ONE X2 is an older model but still performs well."
+          "q": "Do the Insta360 ONE X2, X3 and X4 use the same cards?",
+          "a": "<b>Yes, all three need V30 UHS-I microSD cards.</b> A card from one works in the others."
         }
       ],
       "relatedDevices": [
@@ -1018,7 +1033,7 @@
       ],
       "sdCard": {
         "type": "microSD UHS-I (UHS-II Compatible)",
-        "minSpeed": "A2 / V30",
+        "minSpeed": "V30 / U3",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -1028,7 +1043,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "GoPro's latest 360 camera records true 8K 30fps and high-frame-rate 5.6K modes, which produce large 10-bit files and sustained write loads. GoPro's updated compatibility guidance lists the Max 2 alongside recent HERO models as requiring A2 / V30 microSD cards and supporting up to 1TB capacities. That combination of V30 and A2 guarantees at least 30 MB/s sustained writes plus strong random I/O, which is important both for continuous 360 recording and for responsive playback and file management in-camera.",
+      "whySpecs": "GoPro's second-generation 360 camera records 8K/30 and 5.6K high-frame-rate 360 video in 10-bit. GoPro requires V30 or UHS-3 microSD cards, up to 1TB.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -1042,16 +1057,16 @@
       ],
       "faq": [
         {
-          "q": "Can I reuse my GoPro Hero 11/12/13 cards in the Max 2?",
-          "a": "<b>Yes, as long as they are A2 / V30 microSD cards.</b> GoPro now applies essentially the same microSD specification across its recent HERO line and the Max 2, so any card that works reliably in a HERO 11/12/13 should also be suitable for the Max 2."
+          "q": "Can I reuse my GoPro Hero 11, 12 or 13 cards in the Max 2?",
+          "a": "<b>Yes.</b> GoPro uses the same V30 or UHS-3 requirement across the Hero line and the Max 2."
         },
         {
-          "q": "Is there any benefit to buying a V60 or V90 card for the Max 2?",
-          "a": "<b>Not for in-camera recording.</b> The Max 2 is designed around V30-class sustained write speeds. Faster V60/V90 cards may shorten file transfer times when you use a high-speed reader on a computer, but they won't unlock higher recording modes or better quality in the camera itself."
+          "q": "Is a V60 or V90 card better for the Max 2?",
+          "a": "<b>Not for recording.</b> V30 covers every mode. A faster card only helps when you offload in a UHS-II reader."
         },
         {
-          "q": "How much 8K 360 footage fits on a 256GB card?",
-          "a": "Exact runtimes vary with scene complexity and settings, but as a rule of thumb you can expect roughly about an hour of continuous 8K 30fps 360 recording on a 256GB V30 card. If you regularly shoot long sessions, stepping up to 512GB or 1TB avoids frequent card swaps."
+          "q": "How much 8K 360 video fits on a 256GB card?",
+          "a": "<b>Roughly an hour of 8K/30.</b> Buy 512GB or 1TB for long sessions."
         }
       ],
       "relatedDevices": [
@@ -1060,59 +1075,6 @@
       ],
       "notes": "Second-generation GoPro 360 camera with 8K capture. GoPro's own guidance groups Max 2 with HERO13 and other current models for A2/V30 and 1TB support.",
       "imageUrl": "/img/devices/action-cameras/gopro-max-2.webp"
-    },
-    {
-      "id": "insta360-one-x3",
-      "name": "Insta360 ONE X3",
-      "category": "Action Cameras",
-      "slug": "insta360-one-x3",
-      "searchTerms": [
-        "insta360 one x3 sd card",
-        "one x3 microsd",
-        "insta360 x3 memory card"
-      ],
-      "sdCard": {
-        "type": "microSD UHS-I",
-        "minSpeed": "V30",
-        "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB",
-          "512GB"
-        ],
-        "maxCapacity": "1TB"
-      },
-      "whySpecs": "Insta360 specifies UHS-I microSD cards with a V30 or higher speed class and exFAT formatting for the X-series 360 cameras, including the X3. The camera records 5.7K 360° video, which creates a continuous high-bitrate data stream from both lenses. V30-class cards guarantee sustained 30 MB/s writes, preventing recording from stopping or corrupting clips. Official guidance also caps supported capacities at 1TB, which is ample for long shooting days, even in the highest quality modes.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-microsd"
-        },
-        {
-          "id": "lexar-professional-1000x-microsd"
-        },
-        {
-          "id": "kingston-canvas-go-plus"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Does the Insta360 ONE X3 support 1TB microSD cards?",
-          "a": "<b>Yes.</b> Insta360 lists 1TB as the maximum supported capacity for the X-series cameras, and their own branded A2/V30 cards are sold in sizes up to 1TB specifically for use in models like the ONE X3."
-        },
-        {
-          "q": "Can I use UHS-II microSD cards in the ONE X3?",
-          "a": "<b>They are not recommended.</b> The camera is designed for UHS-I V30 cards, and Insta360 explicitly warns that UHS-II and UHS-III microSD cards may be incompatible or cause recording failures. Even when they do work, they will fall back to UHS-I speeds, so there is no performance gain."
-        },
-        {
-          "q": "Will a generic V10 or U1 card work in the ONE X3?",
-          "a": "<b>It may work for low-resolution modes, but it is unsafe for 5.7K 360° recording.</b> V10/U1 cards are not guaranteed to sustain the write speeds required for high-resolution 360 capture and can cause dropped frames or aborted recordings. For reliable use, always choose a name-brand V30 card."
-        }
-      ],
-      "relatedDevices": [
-        "gopro-hero-max"
-      ],
-      "notes": "360° action camera commonly branded simply as 'Insta360 X3' in marketing material. Official Insta360 documentation specifies UHS-I V30 microSD cards up to 1TB for this model.",
-      "imageUrl": "/img/devices/action-cameras/insta360-one-x3.webp"
     },
     {
       "id": "insta360-x5",
@@ -1135,7 +1097,7 @@
         ],
         "maxCapacity": "1TB (exFAT)"
       },
-      "whySpecs": "Recording high-bitrate 8K 360-degree video pushes microSD write speeds to their absolute limits. The Insta360 X5 requires a continuous, unbroken data stream to stitch its dual lenses together seamlessly. If a card drops below a 30 MB/s write speed for even a second, the camera will stop recording entirely and throw a <b>\"Card Too Slow\"</b> error. A verified V30 card from a reputable brand is non-negotiable; generic cards claiming high speeds will fail under the sustained thermal load of the camera.",
+      "whySpecs": "The X5 records 8K/30 360 video from two 1/1.28-inch sensors. Insta360 requires V30 UHS-I microSD cards formatted exFAT, up to 1TB. Counterfeit cards that claim V30 but can't sustain it are the usual cause of stopped recordings.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd-action-cam",
@@ -1148,23 +1110,23 @@
       ],
       "faq": [
         {
-          "q": "Why does my Insta360 X5 stop recording and say \"SD Card Error\"?",
-          "a": "This happens when your card's write speed drops below the camera's required bitrate. Ensure you are using a verified V30 card and format it directly inside the camera to clear fragmented sectors."
+          "q": "Why does my Insta360 X5 stop recording and show an SD card error?",
+          "a": "<b>The card can't sustain the write speed.</b> Use a V30 card from a reputable seller and format it in the camera."
         }
       ],
       "relatedDevices": [
-        "insta360-ace-pro-2",
-        "gopro-hero-14-black"
+        "insta360-ace-pro-2"
       ],
       "notes": "Latest flagship Insta360 360-degree camera. 8K dual-lens recording pushes sustained write speeds to the limit — 'Card Too Slow' errors are the #1 support issue, always trace back to a card that only claims V30 speeds without actually sustaining them.",
-      "imageUrl": "/img/devices/action-cameras/insta360-x5.webp"
+      "imageUrl": "/img/devices/action-cameras/insta360-x5.webp",
+      "metaDescription": "The Insta360 X5 needs a V30 UHS-I microSD card, formatted exFAT, up to 1TB, for 8K/30 360 video. Best cards and what to do about SD card errors."
     },
     {
       "id": "dji-osmo-action-6",
       "name": "DJI Osmo Action 6",
       "category": "Action Cameras",
       "slug": "dji-osmo-action-6",
-      "metaDescription": "DJI requires a UHS-I microSD card rated U3/V30 for the Osmo Action 6 (max 2TB). Here are the best-tested cards that meet spec.",
+      "metaDescription": "DJI requires a U3/V30 UHS-I microSD card for the Osmo Action 6, up to 1TB. It also has 64GB of built-in storage. Best cards that meet spec.",
       "searchTerms": [
         "dji osmo action 6 sd card",
         "osmo action 6 microsd",
@@ -1180,9 +1142,9 @@
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "2TB"
+        "maxCapacity": "1TB"
       },
-      "whySpecs": "The Osmo Action 6 continues DJI's large 1/1.3-inch sensor lineage, recording 4K at high frame rates with excellent low-light performance that comes with a correspondingly high bitrate. DJI's firmware runs an active speed check on insertion, and a card that can't sustain the required 30 MB/s write speed will trigger a <b>\"Card Too Slow\"</b> warning and refuse to record rather than risk a corrupted file. A verified V30 card is the firm minimum, not a suggestion.",
+      "whySpecs": "DJI requires UHS-I microSD cards rated U3 and V30 for the Action 6, up to 1TB. The camera also has 64GB of built-in storage, about 50GB usable, which covers a short session without a card.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -1196,12 +1158,15 @@
       ],
       "faq": [
         {
-          "q": "Why does my Osmo Action 6 say \"Card Too Slow\" and refuse to record?",
-          "a": "<b>DJI's firmware actively benchmarks your card on insertion.</b> If it can't sustain the 30 MB/s write speed the camera's bitrate requires, the camera blocks recording rather than risk a corrupted file. Use a verified V30 card from a reputable brand and reformat it in-camera if the error persists."
+          "q": "Why does my Osmo Action 6 warn that the card is too slow?",
+          "a": "<b>The card is below U3/V30 or is counterfeit.</b> Replace it with a V30 card from a reputable seller and format it in the camera."
+        },
+        {
+          "q": "Does the Osmo Action 6 need a microSD card?",
+          "a": "<b>Not to start.</b> It has 64GB built in, about 50GB usable. Add a card for full days of shooting."
         }
       ],
       "relatedDevices": [
-        "gopro-hero-14-black",
         "insta360-ace-pro-2",
         "dji-osmo-pocket-4",
         "dji-osmo-action-4"
@@ -1214,7 +1179,7 @@
       "name": "DJI Osmo Pocket 4",
       "category": "Action Cameras",
       "slug": "dji-osmo-pocket-4",
-      "metaDescription": "DJI officially requires a UHS-I microSD card rated U3/V30 for the Osmo Pocket 4. Here are the best-tested cards that meet DJI's published specifications.",
+      "metaDescription": "DJI requires a U3/V30 UHS-I microSD card for the Osmo Pocket 4, up to 1TB, on top of 107GB built in. Best cards that meet DJI's spec.",
       "searchTerms": [
         "dji osmo pocket 4 sd card",
         "osmo pocket 4 microsd",
@@ -1223,7 +1188,7 @@
         "best sd card for osmo pocket 4"
       ],
       "sdCard": {
-        "type": "microSD UHS-I/UHS-II",
+        "type": "microSD UHS-I",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
@@ -1232,7 +1197,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "The Osmo Pocket 4 continues DJI's gimbal-stabilized pocket camera line with higher-resolution 4K recording than the Pocket 3. DJI officially requires a UHS-I microSD card with U3/V30 minimum, and the camera runs the same on-insertion speed check as the rest of the Osmo lineup. An underrated card triggers a <b>\"Card Too Slow\"</b> error and blocks recording outright. UHS-II cards work but only speed up file transfers to a computer, not in-camera recording.",
+      "whySpecs": "The Pocket 4 records up to 4K/240 and has 107GB of built-in storage. DJI requires UHS-I microSD cards rated U3 and V30 for the card slot, up to 1TB. UHS-II cards work but only transfer faster in a UHS-II reader.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -1247,7 +1212,11 @@
       "faq": [
         {
           "q": "Do I need a UHS-II card for the Osmo Pocket 4?",
-          "a": "<b>No.</b> DJI's official minimum is U3/V30 UHS-I. A UHS-II card will work but only provides faster file transfers to a computer. It does not unlock higher recording quality or prevent the 'Card Too Slow' error any better than a good UHS-I V30 card."
+          "a": "<b>No.</b> DJI's requirement is U3/V30 UHS-I. A UHS-II card records the same and only offloads faster in a UHS-II reader."
+        },
+        {
+          "q": "Does the Osmo Pocket 4 have internal storage?",
+          "a": "<b>Yes, 107GB.</b> A microSD card adds up to 1TB more."
         }
       ],
       "relatedDevices": [
@@ -1258,56 +1227,11 @@
       "notes": "Successor to the Osmo Pocket 3 with higher-resolution 4K recording. DJI official minimum: U3/V30 UHS-I, max 1TB. 'Card Too Slow' is the primary bottleneck to flag for undersped cards."
     },
     {
-      "id": "dji-lito-x1",
-      "name": "DJI Lito X1",
-      "category": "Action Cameras",
-      "slug": "dji-lito-x1",
-      "metaDescription": "Best microSD cards for the DJI Lito X1: V30-rated picks for DJI's compact wearable action camera.",
-      "searchTerms": [
-        "dji lito x1 sd card",
-        "dji lito x1 microsd",
-        "dji lito x1 memory card requirements",
-        "best sd card for dji lito x1",
-        "dji lito x1 card too slow"
-      ],
-      "sdCard": {
-        "type": "microSD UHS-I",
-        "minSpeed": "V30",
-        "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB"
-        ],
-        "maxCapacity": "1TB"
-      },
-      "whySpecs": "The Lito X1 is DJI's compact, ultra-wearable entry in the action camera lineup, aimed at continuous POV capture rather than mounted setups. Despite its small form factor, it records at a high enough bitrate that a card without a verified V30 sustained write speed will trigger DJI's familiar <b>\"Card Too Slow\"</b> error and halt recording. Because the camera is designed for grab-and-go use, a reliable name-brand card matters just as much as raw capacity. A dropped recording mid-clip is the most common complaint with underrated cards.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-microsd"
-        },
-        {
-          "id": "lexar-professional-1000x-microsd"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Why does my DJI Lito X1 stop recording partway through a clip?",
-          "a": "<b>This is almost always caused by a card that can't sustain 30 MB/s writes.</b> The Lito X1 runs the same 'Card Too Slow' protection as other DJI action cameras, so use a verified V30 microSD card from a reputable brand to avoid interrupted recordings."
-        }
-      ],
-      "relatedDevices": [
-        "dji-osmo-action-6",
-        "insta360-go-3",
-        "gopro-hero-14-black"
-      ],
-      "notes": "Compact wearable action camera in DJI's lineup, positioned against the Insta360 GO series. V30 minimum firmly enforced via on-insertion speed check; 'Card Too Slow' is the primary bottleneck to address."
-    },
-    {
       "id": "insta360-ace-pro-2",
       "name": "Insta360 Ace Pro 2",
       "category": "Action Cameras",
       "slug": "insta360-ace-pro-2",
-      "metaDescription": "Best microSD cards for the Insta360 Ace Pro 2: V30-rated picks for this flagship flip-screen action camera.",
+      "metaDescription": "The Insta360 Ace Pro 2 needs a V30 UHS-I microSD card for 8K/30 and 4K/120 recording. Best cards and capacities for the flip-screen action cam.",
       "searchTerms": [
         "insta360 ace pro 2 sd card",
         "ace pro 2 microsd",
@@ -1325,7 +1249,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "The Ace Pro 2 builds on the original Ace Pro's flip-screen design with an even larger sensor and higher-bitrate 4K recording. A V30 speed class card ensures stable, reliable capture across its advanced video modes, including high frame rates and detailed action sequences. As with other flagship action cameras, an underrated or counterfeit card is the most common cause of a <b>\"Card Too Slow\"</b> error interrupting a recording mid-session.",
+      "whySpecs": "The Ace Pro 2 has a 1/1.3-inch sensor and records 8K/30 and 4K/120. Insta360 requires V30 UHS-I microSD cards. Counterfeit cards are the most common cause of recordings that stop mid-session.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -1339,73 +1263,23 @@
       ],
       "faq": [
         {
-          "q": "Is the Ace Pro 2's card requirement different from the original Ace Pro?",
-          "a": "<b>No, both require a minimum V30 speed class microSD card.</b> The Ace Pro 2's larger sensor and higher bitrate make card quality even more important, but the speed class requirement itself hasn't changed."
+          "q": "Do the Ace Pro 2 and the original Ace Pro need different cards?",
+          "a": "<b>No, both take V30 UHS-I microSD cards.</b>"
         }
       ],
       "relatedDevices": [
         "insta360-x5",
-        "gopro-hero-14-black",
         "dji-osmo-action-6"
       ],
       "notes": "Successor to the Insta360 Ace Pro with a larger sensor and higher-bitrate 4K. Competes directly with GoPro Hero 14 Black and DJI Osmo Action 6.",
       "imageUrl": "/img/devices/action-cameras/insta360-ace-pro-2.webp"
     },
     {
-      "id": "gopro-hero-14-black",
-      "name": "GoPro Hero 14 Black",
-      "category": "Action Cameras",
-      "slug": "gopro-hero-14-black",
-      "metaDescription": "Best microSD cards for the GoPro Hero 14 Black: V30-rated picks for stable 5.3K+ recording.",
-      "searchTerms": [
-        "gopro hero 14 black sd card",
-        "hero 14 microsd",
-        "gopro hero 14 memory card requirements",
-        "best sd card for gopro hero 14",
-        "gopro hero 14 card too slow error"
-      ],
-      "sdCard": {
-        "type": "microSD UHS-I (UHS-II Compatible)",
-        "minSpeed": "V30",
-        "minWriteSpeed": "30 MB/s",
-        "recommendedCapacity": [
-          "128GB",
-          "256GB",
-          "512GB"
-        ],
-        "maxCapacity": "512GB"
-      },
-      "whySpecs": "The Hero 14 Black continues GoPro's high-frame-rate 5.3K+ recording lineage with refined low-light performance and a correspondingly demanding bitrate. GoPro's firmware performs an in-camera speed check on card insertion, and a card that can't sustain the required 30 MB/s write speed will trigger a <b>\"Card Too Slow\"</b> error and block recording. V30 speed class is the safe minimum; V60+ cards offer no in-camera benefit but do speed up file transfers for multi-camera workflows.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-extreme-microsd"
-        },
-        {
-          "id": "lexar-professional-1000x-microsd"
-        },
-        {
-          "id": "kingston-canvas-go-plus"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Why does my GoPro Hero 14 Black say \"Card Too Slow\"?",
-          "a": "<b>GoPro's firmware benchmarks your card on insertion.</b> If it can't sustain the 30 MB/s write speed that 5.3K+ recording requires, the camera blocks recording rather than risk corrupted footage. Use a verified V30 card and reformat it in-camera if the error persists."
-        }
-      ],
-      "relatedDevices": [
-        "gopro-hero-13",
-        "insta360-ace-pro-2",
-        "dji-osmo-action-6"
-      ],
-      "notes": "Latest flagship GoPro Hero model. Official GoPro tests continue to specify V30 as the required minimum; 'Card Too Slow' remains the #1 support issue traced to underrated or counterfeit cards."
-    },
-    {
       "id": "gopro-hero-9-black",
       "name": "GoPro Hero 9 Black",
       "category": "Action Cameras",
       "slug": "gopro-hero-9-black",
-      "metaDescription": "Best microSD cards for the GoPro Hero 9 Black: V30-rated picks for stable 5K recording.",
+      "metaDescription": "The GoPro Hero 9 Black needs a V30 microSD card, up to 256GB, for 5K/30 and 4K/60 recording. Best cards and how much footage each size holds.",
       "searchTerms": [
         "gopro hero 9 black sd card",
         "hero 9 microsd",
@@ -1424,7 +1298,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "The Hero 9 Black shoots 5K30 and 4K60 video, both demanding enough that GoPro officially requires a <b>V30-rated</b> microSD card to guarantee the sustained 30 MB/s write speed needed to avoid dropped frames or corrupted clips. GoPro tested and officially supports capacities up to <b>256GB</b> on this model. Cards larger than that may work with modern firmware but aren't officially validated, so 256GB is the safe ceiling if you want guaranteed compatibility.",
+      "whySpecs": "The Hero 9 Black records 5K/30 and 4K/60 at up to 100 Mbps, about 12.5 MB/s. GoPro requires V30 or UHS-3 microSD cards and lists 256GB as the largest supported size.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -1439,7 +1313,7 @@
       "faq": [
         {
           "q": "How much 5K footage can a 256GB card hold on the Hero 9 Black?",
-          "a": "<b>Roughly 5-6 hours of 5K30 footage</b> at GoPro's standard bitrate settings, though actual time varies with bitrate mode (Standard vs. High) and scene complexity. For all-day shoots, carry a second card or a portable backup drive rather than relying on a single 256GB card."
+          "a": "<b>About 5.5 hours at 100 Mbps.</b> Battery runs out long before that, so 128GB covers most days."
         }
       ],
       "relatedDevices": [
@@ -6172,7 +6046,7 @@
         "dji mini 3"
       ],
       "sdCard": {
-        "type": "microSD UHS-I (UHS-II Compatible)",
+        "type": "microSD UHS-I",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
@@ -6181,7 +6055,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "4K video recording requires V30 minimum. DJI officially recommends high-speed cards.",
+      "whySpecs": "The Mini 3 Pro records 4K/60 and 4K HDR at up to 150 Mbps. DJI requires UHS-I Speed Grade 3 (U3) cards, and V30 matches that. The slot is UHS-I, so UHS-II and V60 cards record no better.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6192,8 +6066,8 @@
       ],
       "faq": [
         {
-          "q": "Can V20 cards work?",
-          "a": "<b>V20 cards are not safe for DJI Mini 3 Pro's 4K recording</b>. <b>V30 minimum speed class is required</b> to guarantee stable video capture without dropped frames or corruption during flight operations."
+          "q": "Can V20 cards work in the DJI Mini 3 Pro?",
+          "a": "<b>No, use V30.</b> DJI requires U3, which guarantees 30 MB/s. A V20 card can drop frames at 4K/60."
         }
       ],
       "relatedDevices": [
@@ -6224,7 +6098,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "Professional 4K 60fps drone. Higher bitrate than Mini series. V30 minimum, V60 recommended for professional use.",
+      "whySpecs": "The Air 3S records 4K/60 HDR and 4K/120 slow motion from its 1-inch main camera. DJI requires UHS-I Speed Grade 3 (U3) cards, which V30 cards meet. The slot is UHS-I, so a V60 or UHS-II card records the same footage and only offloads faster in a UHS-II reader.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-microsd-v60"
@@ -6238,8 +6112,8 @@
       ],
       "faq": [
         {
-          "q": "Is V60 required for Air 3S?",
-          "a": "<b>V30 speed class cards will function for basic 4K recording on the DJI Air 3S</b>. However, <b>V60 is strongly recommended for professional 4K 60fps work</b> to ensure optimal write performance and reliability during demanding video operations."
+          "q": "Is V60 required for the DJI Air 3S?",
+          "a": "<b>No.</b> DJI's requirement is U3/V30, and that covers every mode including 4K/120. A V60 card only helps when you offload in a UHS-II reader."
         }
       ],
       "relatedDevices": [
@@ -6322,7 +6196,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "The Air 3 shoots 4K video at up to 100fps. DJI officially recommends V30 speed class cards to ensure smooth, stable recording without dropped frames. Reliable performance is critical for drone operations where card failure can be expensive and dangerous.",
+      "whySpecs": "The Air 3 shoots 4K at up to 100 fps and 150 Mbps, about 19 MB/s. DJI requires UHS-I Speed Grade 3 (U3) cards, and V30 cards meet that with margin. The drone has 8GB of internal storage, a few minutes of 4K if you forget the card.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6336,8 +6210,8 @@
       ],
       "faq": [
         {
-          "q": "Is V30 truly the minimum for DJI Air 3?",
-          "a": "<b>Yes, V30 is the official minimum recommendation.</b> Using slower cards risks dropped frames and file corruption during flight. Always use tested, reputable V30 or faster cards for drone operations."
+          "q": "Is V30 the minimum for the DJI Air 3?",
+          "a": "<b>Yes.</b> DJI requires U3, which is the same 30 MB/s floor as V30. Slower cards drop frames or stop recording."
         }
       ],
       "relatedDevices": [
@@ -6422,7 +6296,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "A mid-range drone weighing under 250g, featuring 4K HDR video recording. A V30 speed class card is essential to ensure smooth recording without dropped frames, particularly for HDR footage. This model is positioned between the more budget-friendly Mini 4K and the advanced Mini 4 Pro.",
+      "whySpecs": "The DJI Mini 3 is a sub-250g drone that records 4K/30 HDR at up to 100 Mbps. DJI requires UHS-I Speed Grade 3 (U3), and a V30 card meets it. A mid-range V30 card is enough; V60 and UHS-II add nothing here.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6436,8 +6310,8 @@
       ],
       "faq": [
         {
-          "q": "Are the SD card requirements for the Mini 3 and Mini 3 Pro the same?",
-          "a": "<b>Yes, both the DJI Mini 3 and the DJI Mini 3 Pro require V30 microSD cards.</b> While the Pro version offers additional features like obstacle avoidance and higher frame rate options, the fundamental card requirements for stable 4K video recording are identical across the entire Mini 3 lineup."
+          "q": "Do the Mini 3 and Mini 3 Pro use the same microSD card?",
+          "a": "<b>Yes, both take U3/V30 microSD cards.</b> The Pro adds 4K/60 and obstacle sensing, but its card requirement is the same."
         }
       ],
       "relatedDevices": [
@@ -6447,7 +6321,7 @@
       ],
       "notes": "Released in 2023, the DJI Mini 3 sits as a strong contender in the sub-250g drone category. It provides an excellent balance of features and affordability for enthusiasts. Its consistent V30 card requirement aligns with other DJI drones for reliable performance.",
       "imageUrl": "/img/devices/drones/dji-mini-3.webp",
-      "metaDescription": "The DJI Mini 3 records 4K HDR video, which needs a V30 microSD card, minimum, to avoid dropped frames during high-bitrate HDR footage."
+      "metaDescription": "The DJI Mini 3 records 4K/30 HDR at up to 100 Mbps and needs a U3/V30 microSD card. A 128GB card holds about 2.8 hours of 4K. Best cards to buy."
     },
     {
       "id": "dji-mini-2-se",
@@ -6469,7 +6343,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "The Mini 2 SE records video up to 2.7K. DJI officially recommends a V30 speed class card to ensure smooth, stable recording without dropped frames. Reliability is critical for any drone operation.",
+      "whySpecs": "The Mini 2 SE records video up to 2.7K/30 at 40 Mbps. DJI requires a UHS-I Speed Grade 3 (U3) card, which V30 cards meet. The bitrate is low, so a 64GB or 128GB card lasts many flights.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6481,7 +6355,7 @@
       "faq": [
         {
           "q": "Can I use a SanDisk Ultra card in the Mini 2 SE?",
-          "a": "<b>It is not recommended.</b> DJI specifies a U3/V30 speed class for reliable video recording. Slower cards like the SanDisk Ultra (U1) may cause recording to fail mid-flight, resulting in lost footage."
+          "a": "<b>Not recommended.</b> DJI requires U3/V30, and the SanDisk Ultra is U1. It may work at 2.7K, but DJI's firmware can warn about slow cards and stop recording."
         }
       ],
       "relatedDevices": [
@@ -6512,7 +6386,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "The EVO II Pro V3 records massive 6K video files with high bitrates. A V30 rating is the absolute minimum to prevent recording failures, but fast U3 cards are preferred for smoother file management. Autel officially recommends cards up to 256GB.",
+      "whySpecs": "The EVO II Pro V3 records 6K/30 and 4K/60 at up to 120 Mbps, about 15 MB/s. A U3/V30 card has the sustained write to keep up. Autel lists 256GB as the maximum capacity.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6527,11 +6401,11 @@
       "faq": [
         {
           "q": "Does the EVO II Pro V3 support 512GB cards?",
-          "a": "<b>Autel officially lists 256GB as the maximum supported capacity.</b> While some users report success with high-quality 512GB cards formatted to exFAT, using them runs the risk of data corruption or recognition errors in the air. Stick to 256GB for professional reliability."
+          "a": "<b>Autel lists 256GB as the maximum.</b> Some owners report 512GB cards working after formatting, but a card the firmware doesn't support can fail mid-flight. Use 256GB or less."
         },
         {
-          "q": "Why is my 6K video chopping?",
-          "a": "<b>This is almost always due to a slow SD card.</b> Recording 6K requires a sustained write speed that cheap or old cards cannot maintain. Ensure your card has the 'V30' or 'U3' symbol on it."
+          "q": "Why is my EVO II Pro V3 6K video choppy?",
+          "a": "<b>Usually a slow or counterfeit card.</b> Check for the V30 or U3 mark and buy from a reputable seller. If the card is genuine, format it in the drone and test again."
         }
       ],
       "relatedDevices": [
@@ -6563,7 +6437,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "Despite being a sub-250g drone, the Nano+ features a large sensor and shoots 4K HDR video. This requires V30 speed class cards. Slower cards often result in the 'Low SD card speed' warning preventing recording.",
+      "whySpecs": "The Nano+ is a sub-250g drone with a 1/1.28-inch sensor that records 4K/30 HDR. It needs U3/V30 cards. Slower cards trigger a 'Low SD card speed' warning and block recording.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6606,7 +6480,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "The Lite+ features a 1-inch sensor capable of 6K/30fps and 4K/60fps. These high-resolution modes demand a V30 or faster card. Autel recommends formatting the card inside the drone app before first use.",
+      "whySpecs": "The Lite+ has a 1-inch sensor that records 6K/30 and 4K/60. A U3/V30 card handles both. Format the card in the Autel Sky app before first use.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6618,7 +6492,7 @@
       "faq": [
         {
           "q": "Can I use a 1TB card in the EVO Lite+?",
-          "a": "<b>No, the maximum supported capacity is 256GB.</b> Larger cards may not be recognized by the firmware or may cause system instability."
+          "a": "<b>No, the maximum is 256GB.</b> Larger cards may not be recognized by the firmware."
         }
       ],
       "relatedDevices": [
@@ -6704,7 +6578,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "Like the standard Atom, the SE version records 4K video that overwhelms slower cards. A V30 card is mandatory to prevent 'write speed slow' errors and corrupted video files.",
+      "whySpecs": "Potensic specifies U3/V30 cards for the Atom SE, the same as the standard Atom. Slower cards cause 'write speed slow' errors and corrupted video files.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6715,8 +6589,8 @@
       ],
       "faq": [
         {
-          "q": "Can I use a 64GB card?",
-          "a": "<b>Yes, 64GB is a great size for the Atom SE.</b> It will hold several flights worth of 4K footage. Just make sure it is a U3 or V30 rated card."
+          "q": "Is a 64GB card enough for the Atom SE?",
+          "a": "<b>Yes.</b> 64GB holds several flights of 4K footage. Make sure it is rated U3 or V30."
         }
       ],
       "relatedDevices": [
@@ -6727,7 +6601,7 @@
       ],
       "notes": "A budget-friendly 4K drone. Users often buy cheap, incompatible cards; emphasize the need for V30.",
       "imageUrl": "/img/devices/drones/potensic-atom-se.webp",
-      "metaDescription": "Like the standard Atom, the Potensic Atom SE's 4K video overwhelms slower cards. V30 is mandatory to avoid write-speed errors and corrupted files."
+      "metaDescription": "The Potensic Atom SE needs a U3/V30 microSD card, up to 256GB, the same as the standard Atom. Slower cards cause write errors and corrupted clips."
     },
     {
       "id": "potensic-atom-2",
@@ -6751,7 +6625,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "The Atom 2 steps up to a 1/2\" Sony CMOS sensor shooting 48MP photos and 4K/30fps HDR video, a heavier data load than the original Atom's sensor. Potensic explicitly recommends U3/V30 or higher. A slower card causes the same dropped-frame and failed-save errors seen on the first-gen Atom, since HDR processing pushes sustained bitrate higher than standard 4K.",
+      "whySpecs": "The Atom 2 has a 1/2-inch Sony sensor that shoots 48MP photos and 4K/30 HDR video. Potensic specifies U3/V30 or faster. Slower cards cause the same dropped-frame and failed-save errors owners report on the first Atom.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6766,11 +6640,11 @@
       "faq": [
         {
           "q": "What size SD card does the Potensic Atom 2 need?",
-          "a": "<b>128GB is the sweet spot, and 256GB is the practical maximum.</b> The Atom 2's 48MP photos and 4K HDR video fill a card faster than the original Atom, but the drone's firmware tops out at 256GB, and larger cards aren't recognized."
+          "a": "<b>128GB for most pilots, 256GB maximum.</b> The firmware does not recognize cards larger than 256GB."
         },
         {
           "q": "Does the Potensic Atom 2 require a V30 card?",
-          "a": "<b>Yes.</b> Potensic specifies U3/V30 or faster for the 4K HDR mode. Cards below that rating are the most common cause of recordings that stop mid-flight or fail to save."
+          "a": "<b>Yes.</b> Potensic specifies U3/V30 or faster. Cards below that are the most common cause of recordings that stop mid-flight or fail to save."
         }
       ],
       "relatedDevices": [
@@ -6799,9 +6673,9 @@
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "256GB (Official), some 400GB+ supported on newer firmware"
+        "maxCapacity": "256GB (official)"
       },
-      "whySpecs": "The Skydio 2+ relies heavily on the SD card not just for 4K/60fps video, but for data logging its complex autonomous flight pathing. Skydio is notorious for rejecting cards that do not meet strict U3/V30 speed tests. The file system must be exFAT.",
+      "whySpecs": "The Skydio 2+ records 4K/60 video and flight logs to its microSD card. It checks the card before flight and warns about cards that are too slow. Use a U3/V30 card formatted exFAT.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6815,12 +6689,12 @@
       ],
       "faq": [
         {
-          "q": "My Skydio won't take off and complains about the SD card?",
-          "a": "<b>Skydio drones perform a speed test on the card before flight.</b> If the card is too slow (Class 10 or U1) or fragmented, the drone will prevent takeoff to save your data. You must use a high-quality V30/U3 card."
+          "q": "Why won't my Skydio 2+ take off with the SD card inserted?",
+          "a": "<b>The drone checks the card before flight and flags slow or damaged cards.</b> Replace Class 10 or U1 cards with a U3/V30 card and format it in the drone."
         },
         {
-          "q": "Does Skydio support UHS-II?",
-          "a": "<b>Yes, Skydio 2+ supports UHS-II cards.</b> While not strictly required for recording, UHS-II cards can offer faster offload speeds to your computer."
+          "q": "Does the Skydio 2+ support UHS-II cards?",
+          "a": "<b>They work, at UHS-I speed.</b> A UHS-II card only offloads faster when you use a UHS-II reader."
         }
       ],
       "relatedDevices": [
@@ -6851,7 +6725,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "The X10 is an industrial enterprise drone with advanced sensors. It generates massive amounts of thermal and visual data. It supports two microSD cards for redundancy. Use industrial-grade or high-performance V60/V90 cards to ensure data integrity during critical missions.",
+      "whySpecs": "The X10 records visual and thermal imagery for inspection and public-safety work. Use V60 or faster cards from a known brand. Lost data on an inspection flight means another flight.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-microsd-v60"
@@ -6862,8 +6736,8 @@
       ],
       "faq": [
         {
-          "q": "Does the Skydio X10 have internal storage?",
-          "a": "<b>Yes, typically it has encrypted internal storage, but microSD cards are used for data offload and expanded capacity.</b> Given the enterprise nature of the drone, check with your fleet manager regarding encryption requirements for SD cards."
+          "q": "Does the Skydio X10 need special SD cards?",
+          "a": "<b>Any V60 microSD card from a known brand meets the spec.</b> Check with your fleet manager before using cards, since many agencies require encryption or specific handling for mission data."
         }
       ],
       "relatedDevices": [
@@ -6905,8 +6779,8 @@
       ],
       "faq": [
         {
-          "q": "What file system should I use for FIMI Mini 3?",
-          "a": "<b>FAT32 is recommended for 32GB cards, and exFAT for 64GB and larger.</b> It is best to format the card directly inside the FIMI Navi app to ensure the file system structure is correct."
+          "q": "What file system should I use for the FIMI Mini 3?",
+          "a": "<b>exFAT for 64GB and larger, FAT32 for 32GB.</b> Format the card in the FIMI Navi app so the folder structure is correct."
         }
       ],
       "relatedDevices": [
@@ -6937,7 +6811,7 @@
         ],
         "maxCapacity": "64GB"
       },
-      "whySpecs": "The HS175D records 2.7K video (upscaled to 4K in some modes). It has a strict capacity limit of 64GB. Cards larger than 64GB often fail to format or are not recognized. Format must be FAT32.",
+      "whySpecs": "The HS175D records 2.7K video and only reads cards up to 64GB. Larger cards ship formatted exFAT, which the drone can't read. Use a 32GB or 64GB Class 10 card formatted FAT32.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -6949,7 +6823,7 @@
       "faq": [
         {
           "q": "Why won't my 128GB card work in the HS175D?",
-          "a": "<b>The HS175D only supports cards up to 64GB.</b> Larger cards use the exFAT file system by default, which this drone often cannot read. You must use a 64GB or 32GB card formatted to FAT32."
+          "a": "<b>The HS175D only supports cards up to 64GB.</b> Cards above 32GB ship formatted exFAT, and 128GB cards exceed the drone's limit. Use a 32GB or 64GB card formatted FAT32."
         }
       ],
       "relatedDevices": [
@@ -6980,7 +6854,7 @@
         ],
         "maxCapacity": "128GB"
       },
-      "whySpecs": "The HS720 series generally supports up to 128GB (HS720E/G models). The older original HS720 may only support 32GB. The 'G' model features a gimbal and 4K EIS, benefiting from a faster U3/V30 card, while the 'E' model works fine with Class 10.",
+      "whySpecs": "The HS720E and HS720G support cards up to 128GB. The original HS720 may only support 32GB. The HS720G has a gimbal and 4K EIS and records more reliably on a U3/V30 card. The HS720E works with Class 10.",
       "recommendedBrands": [
         {
           "id": "sandisk-ultra-microsd"
@@ -6991,8 +6865,8 @@
       ],
       "faq": [
         {
-          "q": "My HS720 isn't saving photos to the card?",
-          "a": "<b>Check the card capacity and format.</b> Ensure the card is no larger than 128GB and is formatted to FAT32 (or exFAT for newer G models). If using an older HS720, try a 32GB card."
+          "q": "Why isn't my HS720 saving photos to the card?",
+          "a": "<b>Check capacity and format.</b> Use a card no larger than 128GB, formatted FAT32 (or exFAT on the HS720G). On the original HS720, try a 32GB card."
         }
       ],
       "relatedDevices": [
@@ -7022,7 +6896,7 @@
         ],
         "maxCapacity": "128GB"
       },
-      "whySpecs": "The HS360S is a newer, more capable 4K drone from Holy Stone. Because it records true 4K, it requires a U3 or V30 card to prevent stuttering. The manufacturer lists 128GB as the maximum supported capacity.",
+      "whySpecs": "The HS360S records 4K at a higher bitrate than older Holy Stone models, so it needs a U3/V30 card to avoid stutter. Holy Stone lists 128GB as the maximum capacity.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -7033,8 +6907,8 @@
       ],
       "faq": [
         {
-          "q": "Does the HS360S require a fast card?",
-          "a": "<b>Yes, use a V30 card.</b> Unlike older Holy Stone models, the HS360S records higher bitrate 4K video. Slow Class 10 cards may result in corrupted files."
+          "q": "Does the HS360S need a fast card?",
+          "a": "<b>Yes, use V30.</b> Class 10 cards that work in older Holy Stone drones can corrupt HS360S files."
         }
       ],
       "relatedDevices": [
@@ -7059,13 +6933,12 @@
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
-          "64GB",
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "512GB"
+        "maxCapacity": "1TB"
       },
-      "whySpecs": "Unlike the original X1 which had internal storage, the X1 Pro records 4K/60fps to a microSD card. A V30 card is required for smooth recording. The drone is designed for follow-me action sports, so reliable write speeds are crucial to avoid losing footage of a stunt.",
+      "whySpecs": "HoverAir requires V30 or faster microSD cards between 64GB and 1TB, formatted exFAT. Cards below V30 trigger a low-speed warning and restricted recording. The top bitrate is 160 Mbps, about 20 MB/s.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -7077,7 +6950,11 @@
       "faq": [
         {
           "q": "Does the HoverAir X1 Pro have internal storage?",
-          "a": "<b>No, the Pro models (Pro and Pro Max) use microSD cards.</b> Only the original standard HoverAir X1 used internal storage."
+          "a": "<b>Yes, 64GB, plus a microSD slot.</b> The card adds capacity for longer sessions."
+        },
+        {
+          "q": "What SD card sizes does the HoverAir X1 Pro accept?",
+          "a": "<b>64GB to 1TB.</b> HoverAir says the drone reports the wrong capacity on cards outside that range. Format exFAT."
         }
       ],
       "relatedDevices": [
@@ -7086,7 +6963,8 @@
         "skydio-2-plus"
       ],
       "notes": "Released in 2024. Focused on cycling/skiing follow-me modes.",
-      "imageUrl": "/img/devices/drones/hoverair-x1-pro.webp"
+      "imageUrl": "/img/devices/drones/hoverair-x1-pro.webp",
+      "metaDescription": "The HoverAir X1 Pro needs a V30 microSD card between 64GB and 1TB, formatted exFAT. It also has 64GB of internal storage. Best cards and sizes."
     },
     {
       "id": "hoverair-x1-pro-max",
@@ -7099,8 +6977,8 @@
         "hoverair 8k storage"
       ],
       "sdCard": {
-        "type": "microSD UHS-I / UHS-II",
-        "minSpeed": "V60",
+        "type": "microSD UHS-I",
+        "minSpeed": "V30 (V60 for 8K and 4K/120)",
         "minWriteSpeed": "60 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -7109,7 +6987,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "The X1 Pro Max is the flagship model capable of recording 8K video. While V30 cards might handle 4K modes, V60 cards are strongly recommended to handle the massive data throughput of 8K recording without buffering or dropped frames.",
+      "whySpecs": "The X1 ProMax records 8K/30 and 4K/120 at up to 160 Mbps. HoverAir's own guide recommends V60 for those modes: V30 meets the bitrate on paper, but many V30 cards fall short under sustained load. Cards must be 64GB to 1TB and formatted exFAT.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-microsd-v60"
@@ -7123,12 +7001,16 @@
       ],
       "faq": [
         {
-          "q": "Do I strictly need a V60 card for the X1 Pro Max?",
-          "a": "<b>If you plan to shoot in 8K, yes.</b> For 4K recording, a high-quality V30 card will suffice, but to unlock the full potential of the drone's 8K sensor, invest in a V60 microSD card."
+          "q": "Do I need a V60 card for the X1 ProMax?",
+          "a": "<b>For 8K/30 or 4K/120, yes.</b> HoverAir recommends V60 for those modes. For 4K/60 and below, V30 is enough."
         },
         {
-          "q": "What happens if I use a slow card in the X1 Pro Max?",
-          "a": "The drone may refuse to record in 8K, or automatically downgrade the resolution to 4K to prevent data corruption."
+          "q": "What happens if I use a slow card in the X1 ProMax?",
+          "a": "<b>The drone reports a low card speed and restricts recording.</b> Cards below V30 are blocked."
+        },
+        {
+          "q": "Does the X1 ProMax have internal storage?",
+          "a": "<b>Yes, 64GB.</b> HoverAir rates that at about 150 minutes of 4K/30."
         }
       ],
       "relatedDevices": [
@@ -7136,7 +7018,8 @@
         "autel-evo-ii-pro-v3"
       ],
       "notes": "One of the few consumer drones offering 8K. High-speed media is a necessity, not a luxury.",
-      "imageUrl": "/img/devices/drones/hoverair-x1-pro-max.webp"
+      "imageUrl": "/img/devices/drones/hoverair-x1-pro-max.webp",
+      "metaDescription": "HoverAir recommends a V60 microSD card for the X1 ProMax's 8K/30 and 4K/120 modes (V30 minimum). Cards must be 64GB to 1TB, exFAT. Best picks."
     },
     {
       "id": "walksnail-moonlight",
@@ -7176,19 +7059,19 @@
       "faq": [
         {
           "q": "What is the maximum SD card size for Walksnail Moonlight?",
-          "a": "<b>The official maximum supported capacity is 256GB.</b> While some users report success with 512GB cards formatted to FAT32, the system is most stable with 256GB cards or smaller. Using unsupported sizes increases the risk of the 'SD Card Full' error appearing incorrectly."
+          "a": "<b>256GB is the official maximum.</b> Some pilots run 512GB cards, but larger cards increase the risk of false 'SD Card Full' errors."
         },
         {
-          "q": "Why does my recording stop after 5-10 seconds?",
-          "a": "<b>This indicates the SD card is too slow.</b> The Moonlight writes data at 150Mbps. If the card dips below this write speed (common with U1 or fake cards), the system terminates the recording to prevent data corruption. Ensure you are using a genuine V30/U3 card."
+          "q": "Why does my Moonlight recording stop after 5 to 10 seconds?",
+          "a": "<b>The card is too slow.</b> When write speed drops below the recording bitrate, the Moonlight ends the clip. U1 and counterfeit cards are the usual cause. Use a V30/U3 card from a reputable seller."
         },
         {
           "q": "Does the Moonlight record Gyroflow data?",
-          "a": "<b>Yes, the Moonlight records gyro data required for Gyroflow stabilization.</b> This data is embedded in the video file. A fast, stable SD card is critical here; if the card stutters, the gyro data may desync, making stabilization impossible in post-production."
+          "a": "<b>Yes.</b> Gyro data is embedded in the video file, so Gyroflow can stabilize the footage in post."
         },
         {
           "q": "How do I format the SD card for Walksnail?",
-          "a": "<b>It is highly recommended to format the card via the VRX (Goggles) menu.</b> This ensures the correct file system (usually exFAT) and allocation unit size are applied for optimal recording performance."
+          "a": "<b>Format it from the goggles (VRX) menu.</b> That applies the file system and allocation size the Moonlight expects."
         }
       ],
       "relatedDevices": [
@@ -7221,7 +7104,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "The Avata 2 records 4K/60fps HDR video. While it has generous internal storage, a V30 microSD card is required for extended sessions and easier file transfer. The high data rate needed for the 10-bit D-Log M color profile demands consistent write speeds.",
+      "whySpecs": "The Avata 2 records 4K/60 HDR and 10-bit D-Log M. DJI requires U3/V30 microSD cards up to 512GB. Its 46GB of internal storage fills in under an hour of 4K, so most pilots fly with a card.",
       "recommendedBrands": [
         {
           "id": "kingston-canvas-go-plus"
@@ -7236,19 +7119,19 @@
       "faq": [
         {
           "q": "Does the DJI Avata 2 need an SD card?",
-          "a": "<b>Technically no, but practically yes.</b> The Avata 2 has 46GB of internal storage, which allows for about 45 minutes of 4K recording. However, for a full day of flying or to avoid filling up the drone mid-flight, a microSD card is strongly recommended."
+          "a": "<b>Not to fly, but you'll want one.</b> The 46GB of internal storage holds under an hour of 4K. A card covers a full day."
         },
         {
           "q": "What is the max SD card size for Avata 2?",
-          "a": "<b>The DJI Avata 2 supports microSD cards up to 512GB.</b> This allows for many hours of high-bitrate 4K footage without needing to swap cards."
+          "a": "<b>512GB.</b>"
         },
         {
           "q": "Is a V60 card required for Avata 2?",
-          "a": "<b>No, a V30 card is sufficient for the Avata 2's maximum bitrate.</b> However, using a V60 or V90 card will significantly speed up the process of transferring files from the card to your computer, which can save time given the large file sizes."
+          "a": "<b>No, V30 covers the Avata 2's top bitrate.</b> The slot is UHS-I, so faster cards record the same."
         },
         {
           "q": "Where is the SD card slot on the Avata 2?",
-          "a": "<b>The SD card slot is located inside the USB-C port cover on the side of the drone.</b> Unlike the first generation Avata (where it was hard to reach inside the duct), the Avata 2 slot is much more accessible."
+          "a": "<b>Under the USB-C port cover on the side of the drone.</b> It is easier to reach than on the first Avata, where the slot sat inside the duct."
         }
       ],
       "relatedDevices": [
@@ -7281,7 +7164,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "Records 4K/120fps HDR video with bitrates up to 150Mbps. V30 ensures sustained write speeds required for high-bitrate capture. LiDAR and omnidirectional obstacle sensing add processing demands. 42GB internal storage necessitates regular card offloading. UHS-I U3 provides the speed needed for uninterrupted recording.",
+      "whySpecs": "Records 4K/120 HDR at up to 150 Mbps, about 19 MB/s. V30 guarantees 30 MB/s sustained, which covers it. The slot is UHS-I, so UHS-II and V60 cards record no better. 42GB of internal storage is a backup, not a replacement for a card.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-microsd-v60"
@@ -7296,15 +7179,15 @@
       "faq": [
         {
           "q": "Is V30 enough for 4K/120fps on the Mini 5 Pro?",
-          "a": "<b>Yes, V30 is the minimum required for stable 4K/120fps recording.</b> The Mini 5 Pro's high bitrate (up to 150Mbps) demands consistent 30MB/s write speeds. Cards rated V60 or higher provide extra headroom but are not strictly necessary."
+          "a": "<b>Yes.</b> The top bitrate is 150 Mbps, about 19 MB/s, and V30 guarantees 30 MB/s. V60 adds headroom but no quality."
         },
         {
-          "q": "Do I need UHS-II cards?",
-          "a": "<b>No, the Mini 5 Pro uses UHS-I interface only.</b> UHS-II cards will work but provide no performance benefit. Invest in a reliable V30 card from a trusted brand instead."
+          "q": "Do I need UHS-II cards for the Mini 5 Pro?",
+          "a": "<b>No.</b> The slot is UHS-I. A UHS-II card works but runs at UHS-I speed."
         },
         {
-          "q": "What capacity should I get?",
-          "a": "<b>512GB or 1TB is highly recommended.</b> With only 42GB internal storage and high bitrate 4K recording, you'll fill cards quickly. A 512GB card provides roughly 2-3 hours of 4K/120fps footage."
+          "q": "What capacity should I get for the Mini 5 Pro?",
+          "a": "<b>256GB or 512GB.</b> A 256GB card holds almost 4 hours at 150 Mbps; 512GB holds about 7.5."
         }
       ],
       "relatedDevices": [
@@ -7327,7 +7210,7 @@
       ],
       "sdCard": {
         "type": "microSD UHS-I",
-        "minSpeed": "V30 (V60 recommended for thermal margin)",
+        "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s minimum, 60 MB/s recommended",
         "recommendedCapacity": [
           "128GB",
@@ -7335,7 +7218,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "The Avata 360 records up to 8K (360°) at 60fps with a max video bitrate of 180Mbps, well above what the original Avata 2 demands. Because the camera module sits inside a tightly enclosed cinewhoop-style body with limited airflow, the card runs hotter than in open-frame drones, so sustained write speed margin matters more here than raw capacity. A V30 card is the official floor, but V60 gives headroom against thermal throttling so a mid-flight recording doesn't drop out or corrupt.",
+      "whySpecs": "The Avata 360 records 8K/60 360° video at up to 180 Mbps, the highest bitrate in DJI's FPV range. A V30 card guarantees 30 MB/s, above the 22.5 MB/s the drone writes. Buy from a reputable seller: counterfeit cards are the most common cause of cut-off clips.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-microsd-v60"
@@ -7349,16 +7232,16 @@
       ],
       "faq": [
         {
-          "q": "Why does the Avata 360 need a faster card than the regular Avata 2?",
-          "a": "<b>The 360° 8K/60fps mode pushes up to 180Mbps, noticeably higher than the Avata 2's standard 4K bitrate.</b> <b>The card also sits in a more thermally constrained, enclosed body</b>, so a card that only just clears the V30 floor has less margin before heat-related throttling causes dropped frames or a stopped recording."
+          "q": "Does the Avata 360 need a faster card than the Avata 2?",
+          "a": "<b>No, V30 covers both.</b> The Avata 360 writes 180 Mbps (22.5 MB/s), more than the Avata 2 but under V30's 30 MB/s floor."
         },
         {
-          "q": "Is V30 enough, or do I really need V60?",
-          "a": "<b>V30 is DJI's official minimum and will work for most flights.</b> <b>V60 is recommended specifically as thermal insurance</b>. Enclosed FPV/cinewhoop bodies run hotter than open drones, and a card running near its speed limit in a hot enclosure is the most common cause of corrupted 360° footage."
+          "q": "Is V30 enough for the Avata 360, or do I need V60?",
+          "a": "<b>V30 is enough.</b> A V60 card records the same footage. Its only benefit is faster offloading in a UHS-II reader."
         },
         {
           "q": "What capacity should I get for 8K 360° footage?",
-          "a": "<b>128GB-256GB covers most flight days comfortably.</b> 360° 8K footage at 180Mbps fills cards faster than standard 4K, but the bigger risk for this drone is heat-related corruption, not running out of space, so prioritize a high-endurance V60 card over maxing out capacity."
+          "a": "<b>256GB for most flight days.</b> At 180 Mbps, 256GB holds about 3 hours."
         }
       ],
       "relatedDevices": [
@@ -7367,7 +7250,8 @@
         "walksnail-moonlight"
       ],
       "notes": "FPV/cinewhoop-style 360° drone. Thermal margin in the enclosed body is the primary card-selection concern, not capacity — lead with sustained write speed headroom over raw GB.",
-      "imageUrl": "/img/devices/drones/dji-avata-360.webp"
+      "imageUrl": "/img/devices/drones/dji-avata-360.webp",
+      "metaDescription": "The DJI Avata 360 records 8K/60 360° video at up to 180 Mbps, so a U3/V30 microSD card is enough. Plus 42GB internal. Best cards and capacities."
     },
     {
       "id": "dji-neo",
@@ -7381,16 +7265,15 @@
         "best sd card for dji neo"
       ],
       "sdCard": {
-        "type": "microSD UHS-I",
-        "minSpeed": "V30",
-        "minWriteSpeed": "30 MB/s minimum",
+        "type": "No card slot (22GB internal storage)",
+        "minSpeed": "N/A",
+        "minWriteSpeed": "N/A",
         "recommendedCapacity": [
-          "64GB",
-          "128GB"
+          "22GB internal"
         ],
-        "maxCapacity": "256GB"
+        "maxCapacity": "22GB internal"
       },
-      "whySpecs": "The Neo is DJI's palm-sized, ultra-light entry drone, with no propeller guards to remove, no controller required to start flying, and built around exFAT with 22GB of internal storage as a buffer. It shoots up to 4K/30fps at a 75Mbps max bitrate, well inside what a basic V30 microSD handles comfortably, so the card pick here is about not overthinking it rather than chasing thermal headroom like the enclosed Avata-series bodies need. A V30, A2-rated card from a reputable brand covers continuous flight recording with room to spare.",
+      "whySpecs": "The Neo stores everything on 22GB of internal storage and has no card slot. At its 75 Mbps top bitrate, that is roughly 40 minutes of 4K/30. Offload after each session. To keep footage off your phone, copy it to a microSD card in a USB-C reader.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -7404,16 +7287,16 @@
       ],
       "faq": [
         {
-          "q": "What's the minimum SD card speed for the DJI Neo?",
-          "a": "<b>V30 is the floor and all most flyers will ever need.</b> The Neo's 75Mbps max bitrate at 4K/30fps is modest compared to the 8K/360° demands of drones like the Avata 360, so there's no need to pay up for V60 or V90-rated microSD cards here."
+          "q": "Does the DJI Neo take an SD card?",
+          "a": "<b>No.</b> The Neo has 22GB of internal storage and no microSD slot. The Neo 2 is the same, with 49GB internal."
         },
         {
-          "q": "Do I need a high-endurance or thermal-rated card for the Neo?",
-          "a": "<b>No, the Neo's open, ultra-light frame doesn't trap heat the way enclosed cinewhoop bodies do.</b> A standard V30/A2 card from a mainstream brand handles sustained recording without the thermal margin concerns that drive the V60 recommendation on drones like the Avata 360."
+          "q": "How much video does the DJI Neo's 22GB hold?",
+          "a": "<b>About 40 minutes of 4K/30</b> at the 75 Mbps top bitrate, and more at 1080p."
         },
         {
-          "q": "What capacity should I buy for the DJI Neo?",
-          "a": "<b>64GB-128GB is the sweet spot for most flight days.</b> The Neo also has 22GB of internal storage as a fallback buffer, so there's less pressure to oversize the microSD purchase than on drones without any built-in storage."
+          "q": "How do I get footage off the DJI Neo?",
+          "a": "<b>Use QuickTransfer in the DJI Fly app, or connect the Neo to a computer with USB-C.</b> Then delete clips in the app to free space."
         }
       ],
       "relatedDevices": [
@@ -7422,7 +7305,9 @@
         "dji-avata-2"
       ],
       "notes": "Ultra-light/palm-sized entry drone, more casual buyer than Avata. Lead with simplicity/ease-of-use framing — V30/A2 is plenty, no thermal-margin upsell needed like the enclosed cinewhoop bodies.",
-      "imageUrl": "/img/devices/drones/dji-neo.webp"
+      "imageUrl": "/img/devices/drones/dji-neo.webp",
+      "customTitle": "Does the DJI Neo Take an SD Card? No, 22GB Internal",
+      "metaDescription": "The DJI Neo has no microSD slot. It records to 22GB of internal storage, about 40 minutes of 4K/30. How to offload footage and free up space."
     },
     {
       "id": "dji-mavic-4-pro",
@@ -7435,16 +7320,16 @@
         "mavic 4 pro max storage capacity"
       ],
       "sdCard": {
-        "type": "microSDXC (UHS-I / UHS-II)",
-        "minSpeed": "V30 (V60 recommended for ProRes)",
+        "type": "microSDXC UHS-I",
+        "minSpeed": "V30 / U3",
         "minWriteSpeed": "60 MB/s",
         "recommendedCapacity": [
           "256GB",
           "512GB"
         ],
-        "maxCapacity": "1TB (exFAT)"
+        "maxCapacity": "1TB"
       },
-      "whySpecs": "Professional drone videography with the Mavic 4 Pro involves capturing massive D-Log M or ProRes files. While standard H.265 recording requires a minimum V30 card, professional codecs demand significantly higher sustained write speeds to avoid corrupted aerial footage. Because you cannot swap a card mid-flight, reliability and speed outrank sheer capacity. Using a V60 card guarantees that the drone's buffer clears instantly, preventing missed shots during fast-paced commercial flights.",
+      "whySpecs": "DJI requires a U3 (V30) microSD card for the Mavic 4 Pro, up to 1TB. The slot is UHS-I, which is too slow for ProRes, so the 512GB Creator Combo records ProRes to its internal SSD. On the card, you record H.264 and H.265, including 10-bit D-Log M, and V30 covers all of it.",
       "recommendedBrands": [
         {
           "id": "lexar-professional-silver-microsd",
@@ -7458,7 +7343,11 @@
       "faq": [
         {
           "q": "Do I need a V60 card for the DJI Mavic 4 Pro?",
-          "a": "<b>If you are shooting standard 4K/60fps, a V30 card is sufficient.</b> However, if you utilize advanced codecs like Apple ProRes, a V60 card is required to handle the massive data throughput."
+          "a": "<b>No.</b> The card only records H.264 and H.265, which V30 covers. ProRes goes to the internal SSD of the 512GB Creator Combo."
+        },
+        {
+          "q": "Can the Mavic 4 Pro record ProRes to a microSD card?",
+          "a": "<b>No.</b> The UHS-I slot is too slow for ProRes. Only the 512GB Creator Combo records ProRes, to its internal SSD."
         }
       ],
       "relatedDevices": [
@@ -7466,7 +7355,56 @@
         "dji-avata-360"
       ],
       "notes": "DJI's flagship professional drone. ProRes/D-Log M recording demands V60 headroom over the standard H.265 V30 minimum. Mid-flight card swaps aren't possible, so reliability outranks raw capacity for this device.",
-      "imageUrl": "/img/devices/drones/dji-mavic-4-pro.webp"
+      "imageUrl": "/img/devices/drones/dji-mavic-4-pro.webp",
+      "metaDescription": "The DJI Mavic 4 Pro takes U3/V30 microSD cards up to 1TB. ProRes records only to the Creator Combo's internal SSD, so V60 isn't needed. Best cards."
+    },
+    {
+      "id": "dji-lito-x1",
+      "name": "DJI Lito X1",
+      "category": "Drones",
+      "slug": "dji-lito-x1",
+      "metaDescription": "The DJI Lito X1 drone takes U3/V30 microSD cards up to 2TB, plus 42GB built in. It records 4K/60 HDR at up to 150 Mbps. Best cards and sizes.",
+      "searchTerms": [
+        "dji lito x1 sd card",
+        "dji lito x1 microsd",
+        "dji lito x1 memory card requirements",
+        "best sd card for dji lito x1",
+        "dji lito x1 card too slow"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "The Lito X1 has a 1/1.3-inch sensor and records 4K/60 HDR, 4K/100 slow motion and 10-bit D-Log M at up to 150 Mbps, about 19 MB/s. A U3/V30 card covers that. Its 42GB of built-in storage holds about 37 minutes at the top bitrate.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "lexar-professional-1000x-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why does my DJI Lito X1 stop recording partway through a clip?",
+          "a": "<b>Usually a slow or counterfeit card.</b> Use a U3/V30 card from a reputable seller and format it in the drone."
+        },
+        {
+          "q": "What is the max SD card size for the DJI Lito X1?",
+          "a": "<b>2TB, formatted exFAT.</b> 256GB holds almost 4 hours at 150 Mbps, which is more than a day of batteries."
+        }
+      ],
+      "relatedDevices": [
+        "dji-osmo-action-6",
+        "insta360-go-3"
+      ],
+      "notes": "Compact wearable action camera in DJI's lineup, positioned against the Insta360 GO series. V30 minimum firmly enforced via on-insertion speed check; 'Card Too Slow' is the primary bottleneck to address."
     },
     {
       "id": "nintendo-switch",
@@ -10959,8 +10897,8 @@
     }
   ],
   "metadata": {
-    "generated": "2026-09-26T07:56:25.541Z",
-    "totalDevices": 222,
+    "generated": "2026-09-26T09:24:12.207Z",
+    "totalDevices": 220,
     "categories": [
       "3D Printers & Fabrication",
       "Action Cameras",

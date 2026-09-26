@@ -130,6 +130,14 @@ function getCategoryImageIcon(category) {
 }
 
 /**
+ * False for devices with no card slot or no speed requirement (minSpeed "N/A" or
+ * "No minimum required"), so templates don't print "(N/A or faster)".
+ */
+function hasSpeedRequirement(sdCard) {
+    return !!sdCard.minSpeed && !["N/A", "No minimum required"].includes(sdCard.minSpeed);
+}
+
+/**
  * Generate varied meta descriptions for better SEO
  */
 function generateUniqueMetaDescription(device, brandNames, index) {
@@ -143,12 +151,12 @@ function generateUniqueMetaDescription(device, brandNames, index) {
         : "";
     const templates = [
         `The right SD card for ${device.name} needs ${device.sdCard.type} rated ${device.sdCard.minSpeed} or faster${capacityClause}. See tested picks from ${brandNames}.`,
-        `${device.name} needs a ${device.sdCard.type} card rated at least ${device.sdCard.minSpeed}. Here's what actually works, including ${brandNames}.`,
-        `Not every ${device.sdCard.type} card works with the ${device.name}. Minimum ${device.sdCard.minSpeed}${capacityClause} - see which cards meet spec.`,
+        `${device.name} needs a ${device.sdCard.type} card rated at least ${device.sdCard.minSpeed}. Cards that meet spec from ${brandNames}.`,
+        `Not every ${device.sdCard.type} card works with the ${device.name}. Minimum ${device.sdCard.minSpeed}${capacityClause}. See which cards meet spec.`,
         `${device.name} SD card requirements: ${device.sdCard.type}, ${device.sdCard.minSpeed} minimum${capacityClause}. Recommended picks from ${brandNames}.`,
-        `Skip the guesswork on ${device.name} storage. ${device.sdCard.type} at ${device.sdCard.minSpeed} or better is the baseline; ${bestCapacity} covers most users.`,
-        `${device.category} cards aren't all compatible with the ${device.name}. It needs ${device.sdCard.type} rated ${device.sdCard.minSpeed}+ - here's what qualifies.`,
-        `${device.name}: use a ${device.sdCard.type} card rated ${device.sdCard.minSpeed} or higher${capacityClause}. Verified picks from ${brandNames} inside.`,
+        `${device.name} storage: ${device.sdCard.type} at ${device.sdCard.minSpeed} or better. ${bestCapacity} covers most users.`,
+        `${device.category} cards aren't all compatible with the ${device.name}. It needs ${device.sdCard.type} rated ${device.sdCard.minSpeed} or faster. These cards qualify.`,
+        `${device.name}: use a ${device.sdCard.type} card rated ${device.sdCard.minSpeed} or higher${capacityClause}. Picks from ${brandNames}.`,
     ];
 
     return truncateAtWord(templates[index % templates.length], 160);
@@ -307,7 +315,7 @@ function generateRequirementsBox(device, deviceNameShort, locale = "en") {
         {
             icon: 'fas fa-tachometer-alt',
             label: labels.minSpeed,
-            value: `${sdCard.minSpeed} (${sdCard.minWriteSpeed} ${labels.write})`,
+            value: hasSpeedRequirement(sdCard) && sdCard.minWriteSpeed && sdCard.minWriteSpeed !== "N/A" ? `${sdCard.minSpeed} (${sdCard.minWriteSpeed} ${labels.write})` : sdCard.minSpeed,
             color: 'text-emerald-600'
         }
     ];
@@ -477,7 +485,7 @@ function generateFirstFAQ(device, locale) {
     }
     return {
         q: `What SD Card Do I Need for ${device.name}?`,
-        a: `The ${device.name} requires a <b>${device.sdCard.type} card with ${speedRating} speed rating</b> for reliable performance. <b>We recommend ${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]} capacity as the sweet spot</b> balancing storage capacity with affordability. The device supports up to ${device.sdCard.maxCapacity}, though most users find ${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]} sufficient for daily use. <b>Always choose from trusted brands like SanDisk, Lexar, or Kingston</b> to ensure consistent performance and avoid data loss.`
+        a: `The ${device.name} takes a <b>${device.sdCard.type} card rated ${speedRating} or faster</b>. <b>${device.sdCard.recommendedCapacity.join(" or ")} covers most owners</b>, and the maximum is ${device.sdCard.maxCapacity}. Buy SanDisk, Lexar, Samsung or Kingston from a reputable seller: counterfeit cards are the most common cause of lost files.`
     };
 }
 
@@ -529,7 +537,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const description = generateUniqueMetaDescription(device, brandNames, deviceIndex);
 
     let answerText = device.sdCard.type;
-    if (device.sdCard.minSpeed !== "No minimum required") {
+    if (hasSpeedRequirement(device.sdCard)) {
         answerText += ` (${device.sdCard.minSpeed} or faster)`;
     }
 
@@ -550,7 +558,8 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const finalFAQs = device.faq ? mergeFAQs(device.faq, generatedFAQs, locale) : generatedFAQs;
 
     const firstFAQ = generateFirstFAQ(device, locale);
-    const faqsWithFirstQuestion = [firstFAQ, ...finalFAQs];
+    // No-slot devices (minSpeed "N/A") answer the storage question in their own FAQ.
+    const faqsWithFirstQuestion = device.sdCard.minSpeed === "N/A" ? finalFAQs : [firstFAQ, ...finalFAQs];
     const faqHTML = generateFAQHTML(faqsWithFirstQuestion);
 
     const relatedDevicesSection = generateRelatedDevices(device, allDevices, locale === "ja");

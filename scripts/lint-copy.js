@@ -32,6 +32,9 @@ const JSON_SOURCES = [
 
 const HTML_SOURCES = ['src/templates'];
 
+// JS files whose template strings are English page copy.
+const TEXT_SOURCES = ['scripts/generator/generateFAQs.js'];
+
 const LOCALE_RE = /-(ja|de|fr|it)\.(html|json)$/;
 
 // Keys that hold machine values, not copy.
@@ -57,7 +60,8 @@ const RULES = [
   { id: 'fake-range', re: /\bfrom (beginners|casual \w+|hobbyists|amateurs) to (pros|professionals|experts)\b/i },
   { id: 'reassurance', re: /\b(don't worry|no worries|rest assured|worry-free|no pressure)\b/i },
   { id: 'hype', re: w(['perfect', 'ideal', 'ultimate', 'must-have', 'amazing', 'incredible', 'stunning', 'blazing', 'lightning-fast', 'best-in-class', 'unparalleled', 'unmatched']) },
-  { id: 'exclamation', re: /[a-z]!(\s|$|<)/i },
+  // "Canvas Go! Plus" is a product name.
+  { id: 'exclamation', re: /(?<!\bGo)(?<=[a-z])!(\s|$|<)/i },
   { id: 'uk-spelling', re: /\b(\w+(ise|ised|ising|isation)|colour\w*|favour\w*|behaviour\w*|flavour\w*|honour\w*|centre|metre|litre|grey|licence|catalogue)\b/i,
     // exceptions ending in -ise that are US-correct
     allow: /\b(\w*(noise|rise|wise|promise|premise|expertise|exercise|advise|advised|advising|revise|revised|devise|surprise|surprised|comprise|compromise|enterprise|franchise|supervise|televise|improvise|disguise|merchandise|precise|concise|raise|raised|raising|praise|cruise|poise|bruise|chaise|otherwise|likewise|clockwise|paradise|arise|arising|arised|demise|incise|excise|despise|anise|mise|Denise|Louise|Eloise|Aise)\b)/i },
@@ -118,6 +122,7 @@ const onlyRule = args.includes('--rule') ? args[args.indexOf('--rule') + 1] : nu
 const files = [
   ...JSON_SOURCES.flatMap((p) => listFiles(p, ['.json'])),
   ...HTML_SOURCES.flatMap((p) => listFiles(p, ['.html'])),
+  ...TEXT_SOURCES,
 ].filter((f) => !onlyFile || f === onlyFile.replace(/\\/g, '/'));
 
 const totals = {};

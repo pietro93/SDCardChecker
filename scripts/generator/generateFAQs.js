@@ -30,6 +30,8 @@ const LOCALE_MERGERS = {
  * @param {string} locale - Locale to generate FAQs for (defaults to English)
  * @returns {Array<object>} - An array of FAQ objects {q, a}
  */
+const VIDEO_CATEGORIES = ["Cameras", "Action Cameras", "Drones", "Dash Cams", "Security Cameras", "Trail Cameras"];
+
 function generateFAQs(device, sdcardsMap, locale = "en") {
   const localeGenerator = LOCALE_GENERATORS[locale];
   if (localeGenerator) {
@@ -38,71 +40,84 @@ function generateFAQs(device, sdcardsMap, locale = "en") {
 
   const faqs = [];
 
-  const speedClass = device.sdCard.minSpeed;
+  const speedClass = device.sdCard.minSpeed || "";
   const writeSpeed = device.sdCard.minWriteSpeed;
   const cardType = device.sdCard.type;
   const capacity = device.sdCard.recommendedCapacity;
   const maxCapacity = device.sdCard.maxCapacity;
   const testedMaxCapacity = device.sdCard.testedMaxCapacity;
 
-  // Determine if this device has demanding speed requirements
-  const isDemandingDevice = ["V60", "V90", "U3"].some((v) =>
-    speedClass.includes(v)
-  );
-  const isNoSpeedRequired = speedClass === "No minimum required";
+  // Devices with no card slot (internal storage only) get no card-spec questions.
+  const hasNoSlot = speedClass === "N/A";
+  const isNoSpeedRequired = hasNoSlot || speedClass === "No minimum required";
+  const isDemandingDevice = ["V60", "V90"].some((v) => speedClass.includes(v));
+  const isVideoDevice = VIDEO_CATEGORIES.includes(device.category);
+  const failureMode = isVideoDevice
+    ? "dropped frames, clips that stop early, or corrupted files"
+    : "slow loads, stutter, or write errors";
 
-  // 1. Speed Class Question
+  if (hasNoSlot) return faqs;
+
+  // 1. Speed class
   if (!isNoSpeedRequired) {
     const speedClassName = speedClass.match(/V\d+/)?.[0] || speedClass;
+    const writeClause = writeSpeed && writeSpeed !== "N/A" ? ` guarantees ${writeSpeed} of sustained write, which` : "";
     faqs.push({
       q: `Is ${speedClassName} required for ${device.name}?`,
-      a: `Yes, ${speedClassName} is recommended for ${device.name}. It guarantees a minimum sustained write speed of ${writeSpeed}, which is necessary for stable ${isDemandingDevice ? "professional" : ""} recording without dropped frames or errors.`,
+      a: `Yes. ${speedClassName}${writeClause || " is the minimum that"} keeps the ${device.name} free of ${failureMode}.${!isVideoDevice && device.sdCard.minAppPerformance ? ` For load times, the ${device.sdCard.minAppPerformance} app rating matters more.` : " Faster cards work too."}`,
     });
   }
 
-  // 2. Storage Capacity Question
-  let capacityAnswer = `We recommend ${capacity.join(" or ")} cards. A ${capacity[0]} card is good for typical use, with ${maxCapacity} as the maximum supported capacity`;
-  if (testedMaxCapacity) {
-    capacityAnswer += ` (${testedMaxCapacity} tested and verified working)`;
-  }
-  capacityAnswer += `. Larger sizes are useful if you shoot frequently and want to minimize card swaps.`;
-  
+  // 2. Capacity
+  const maxIsFigure = /^\d/.test(String(maxCapacity || "").trim());
+  let capacityAnswer = capacity.length > 1
+    ? `${capacity[0]} covers light use; ${capacity[capacity.length - 1]} suits heavy use.`
+    : `${capacity[0]} suits most owners.`;
+  if (maxIsFigure) capacityAnswer += ` The maximum is ${maxCapacity}`;
+  else if (maxCapacity) capacityAnswer += ` Maximum capacity: ${maxCapacity}`;
+  if (testedMaxCapacity) capacityAnswer += ` (${testedMaxCapacity} confirmed working)`;
+  if (maxCapacity) capacityAnswer += ".";
   faqs.push({
-    q: `What storage capacity should I get for ${device.name}?`,
+    q: `What size SD card should I get for ${device.name}?`,
     a: capacityAnswer,
   });
 
-  // 3. Older/Budget Card Compatibility
+  // 3. Older or budget cards
   if (!isNoSpeedRequired) {
     faqs.push({
       q: `Can I use older or slower cards with ${device.name}?`,
-      a: `Not recommended. Cards slower than ${speedClass} may cause dropped frames, corrupted files, or recording failures. Always use ${speedClass} minimum for reliability.`,
+      a: `Not below ${speedClass}. Slower cards cause ${failureMode}. Check the card label for the ${speedClass} mark.`,
     });
   } else {
     faqs.push({
-      q: `Can I use slower budget cards with ${device.name}?`,
-      a: `Yes, any microSD card works with ${device.name}. It doesn't require high-speed cards. Cheaper, slower cards will work fine, though ${device.sdCard.minSpeed || "standard speed"} cards offer better reliability.`,
+      q: `Can I use a cheap card with ${device.name}?`,
+      a: `Yes. The ${device.name} has no speed requirement, so any name-brand card of the right format works. Avoid unbranded cards, which are often counterfeit.`,
     });
   }
 
-  // 4. Card Type Compatibility
+  // 4. Card type / bus
   const hasMultipleTypes = cardType.includes(",");
+  const hasUhs2Slot = /UHS-II/.test(cardType) && !/(not UHS-II|UHS-II Compatible)/i.test(cardType);
   if (hasMultipleTypes) {
     const types = cardType.split(",").map((t) => t.trim());
     faqs.push({
       q: `Does the card type matter for ${device.name}?`,
-      a: `${device.name} accepts ${types.join(", ")}. All types work the same, so choose based on price and availability. They have the same speed and capacity limits.`,
+      a: `The ${device.name} accepts ${types.join(", ")}. Choose by speed class and capacity; the device's limits are the same for each.`,
+    });
+  } else if (hasUhs2Slot) {
+    faqs.push({
+      q: `Do I need a UHS-II card for ${device.name}?`,
+      a: `No, but it helps. The ${device.name} has a UHS-II slot, so UHS-II cards write and offload faster. UHS-I cards work at UHS-I speed.`,
     });
   } else if (cardType.includes("UHS")) {
     faqs.push({
-      q: `Do I need a UHS card for ${device.name}?`,
-      a: `UHS cards are recommended for best performance with ${device.name}. Non-UHS cards will work but may have slower transfer speeds. For this device, UHS-${cardType.match(/UHS-\d/)?.[0] || "II"} is optimal.`,
+      q: `Is a UHS-II card faster in ${device.name}?`,
+      a: `No. The ${device.name} has a UHS-I slot, so a UHS-II card runs at UHS-I speed. It only offloads faster in a UHS-II card reader.`,
     });
   }
 
-  // 5. Professional/Dual Cards Question
+  // 5. Multiple cards
   if (device.recommendedBrands && device.recommendedBrands.length > 0) {
-    const hasMultipleBrands = device.recommendedBrands.length > 1;
     const highEndCards = device.recommendedBrands
       .map((ref) => sdcardsMap[ref.id])
       .filter((card) => card && card.tier === "professional");
@@ -110,29 +125,31 @@ function generateFAQs(device, sdcardsMap, locale = "en") {
     if (highEndCards.length > 0 || isDemandingDevice) {
       faqs.push({
         q: `Should I use more than one card with ${device.name}?`,
-        a: `For professional use or extended shooting sessions, dual cards provide redundancy and backup. Using multiple cards ensures you won't lose footage if one card fails. This is especially important for valuable recordings.`,
+        a: `For long shoots, yes. Two mid-size cards cost about the same as one large card, and a failure then loses half your files instead of all of them.`,
       });
     }
   }
 
-  // 6. Brand Reliability Question
+  // 6. Brand
   faqs.push({
     q: `Does the brand matter for ${device.name}?`,
-    a: `Yes, trusted brands like SanDisk, Lexar, and Kingston are recommended. Quality brands have better reliability and warranty support. Avoid unknown brands, especially for demanding devices.`,
+    a: `Yes. SanDisk, Lexar, Samsung and Kingston cards meet their rated speeds. Buy from the brand's store or a major retailer: counterfeit cards sold under those names are common on marketplaces.`,
   });
 
-  // 7. Data Loss/Corruption Risk
+  // 7. Wrong card
   if (!isNoSpeedRequired) {
     faqs.push({
       q: `What happens if I use the wrong card with ${device.name}?`,
-      a: `Using cards slower than ${speedClass} can cause: dropped frames during recording, corrupted files, or complete recording failure. Stick to ${speedClass} minimum to avoid data loss.`,
+      a: `A card slower than ${speedClass} causes ${failureMode}. A card over the maximum capacity or in the wrong format may not be recognized.`,
     });
   }
 
-  // 8. Card Lifespan Question
+  // 8. Lifespan
   faqs.push({
-    q: `How long will an SD card last with ${device.name}?`,
-    a: `Quality SD cards typically last 3-5 years with normal use. Replace your card if you experience read/write errors, corrupted files, or if it's been dropped or exposed to extreme conditions.`,
+    q: `How long will an SD card last in ${device.name}?`,
+    a: isVideoDevice && device.category === "Dash Cams"
+      ? `It depends on write volume. Constant loop recording wears cards out, which is why high-endurance cards are rated in recording hours. Replace the card at the first error message.`
+      : `Several years in normal use. Cards usually fail from wear or counterfeit flash, not age. Replace yours at the first write error, corrupted file or "card not recognized" message.`,
   });
 
   return faqs;
