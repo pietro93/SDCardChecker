@@ -64,7 +64,7 @@ const RULES = [
   { id: 'exclamation', re: /(?<!\bGo)(?<=[a-z])!(\s|$|<)/i },
   { id: 'uk-spelling', re: /\b(\w+(ise|ised|ising|isation)|colour\w*|favour\w*|behaviour\w*|flavour\w*|honour\w*|centre|metre|litre|grey|licence|catalogue)\b/i,
     // exceptions ending in -ise that are US-correct
-    allow: /\b(\w*(noise|rise|wise|promise|premise|expertise|exercise|advise|advised|advising|revise|revised|devise|surprise|surprised|comprise|compromise|enterprise|franchise|supervise|televise|improvise|disguise|merchandise|precise|concise|raise|raised|raising|praise|cruise|poise|bruise|chaise|otherwise|likewise|clockwise|paradise|arise|arising|arised|demise|incise|excise|despise|anise|mise|Denise|Louise|Eloise|Aise)\b)/i },
+    allow: /\b(\w*(advertis\w*|exercis\w*|Heise|surpris\w*|compris\w*|supervis\w*|improvis\w*|noise|rise|wise|promise|premise|expertise|exercise|advise|advised|advising|revise|revised|devise|surprise|surprised|comprise|compromise|enterprise|franchise|supervise|televise|improvise|disguise|merchandise|precise|concise|raise|raised|raising|praise|cruise|poise|bruise|chaise|otherwise|likewise|clockwise|paradise|arise|arising|arised|demise|incise|excise|despise|anise|mise|Denise|Louise|Eloise|Aise)\b)/i },
 ];
 
 function listFiles(p, exts) {
@@ -96,8 +96,9 @@ function walk(node, trail, out) {
 
 function htmlStrings(file) {
   const src = fs.readFileSync(path.join(ROOT, file), 'utf8')
-    .replace(/<script[\s\S]*?<\/script>/gi, (m) => (/application\/ld\+json/.test(m) ? m : ''))
-    .replace(/<style[\s\S]*?<\/style>/gi, '');
+    // Blank out non-copy blocks but keep their newlines so reported line numbers stay right.
+    .replace(/<script[\s\S]*?<\/script>/gi, (m) => (/application\/ld\+json/.test(m) ? m : m.replace(/[^\n]/g, '')))
+    .replace(/<style[\s\S]*?<\/style>/gi, (m) => m.replace(/[^\n]/g, ''));
   return src.split(/\r?\n/).map((line, i) => ({ where: `L${i + 1}`, text: line.replace(/<[^>]+>/g, ' ') }));
 }
 

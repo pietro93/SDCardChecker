@@ -69,7 +69,7 @@
           Running out of storage mid-flight wastes flight time and ruins footage. This calculator helps drone pilots plan flights with confidence by showing exactly how much video fits on your microSD card based on your drone model, resolution, and frame rate.
         </p>
         <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-          Whether you're flying a DJI Mavic 3 in 5.1K, an Air 3S in 4K, or a Mini 4 Pro for casual recording, this tool instantly calculates recording duration, recommends the ideal card capacity, and ensures your speed class matches your drone's requirements. No more guessing, just flight time you can rely on.
+          Pick your drone and recording mode to see how many hours of video fit on each card size, and which speed class the drone needs.
         </p>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
@@ -131,7 +131,7 @@
           DJI drones record at varying bitrates depending on resolution and codec. A Mavic 3 shooting 5.1K at 50fps in H.265 uses 200 Mbps, far more data than a Mini 4 Pro's casual 4K 30fps at 60 Mbps. Miscalculating storage means you'll either buy unnecessarily large cards (wasting money) or run out mid-flight (wasting time and footage).
         </p>
         <p class="text-slate-700 leading-relaxed">
-          This calculator removes the guesswork. Select your drone model, choose your recording mode, and instantly see how many flights you can capture on your card. Whether you're flying for aerial photography, real estate, inspections, or content creation, you'll know exactly what capacity and speed class you need.
+          Select your drone and recording mode to see how many flights fit on your card and which speed class you need.
         </p>
       </div>
 
@@ -194,7 +194,7 @@
             </h3>
             <div id="faq-answer-4" class="faq-answer open">
               <p><strong>For casual pilots (1-2 flights per session):</strong> A 128GB microSD card provides 2-4 hours of recording at typical 4K bitrates (100-150 Mbps). This covers most casual flights with room for multiple takes.</p>
-              <p><strong>For commercial/intensive use (all-day shoots):</strong> A 256GB or 512GB card ensures you won't run out mid-project. At 200 Mbps (Mavic 3 5.1K), a 256GB card gives ~3.4 hours of continuous recording, enough for a full day of flights with multiple batteries.</p>
+              <p><strong>For commercial/intensive use (all-day shoots):</strong> A 256GB or 512GB card ensures you won't run out mid-project. At 200 Mbps (Mavic 3 5.1K), a 256GB card gives about 2.8 hours of continuous recording, enough for a full day of flights with multiple batteries.</p>
               <p><strong>Consider overprovision:</strong> Even if your math says 128GB is enough, buying 256GB gives you: (1) safety margin for multiple takes, (2) headroom to avoid performance degradation when nearly full, (3) space for camera firmware/metadata. Many professionals buy 2x their calculated need.</p>
               <p><strong>Pro tip:</strong> DJI drones max out around 512GB on most models. Check your specific drone's maximum supported capacity. Some older models cap at 256GB. Our calculator will show you exactly what duration you get on any capacity you're considering.</p>
             </div>
@@ -209,7 +209,7 @@
             </h3>
             <div id="faq-answer-5" class="faq-answer open">
               <p>Yes, all DJI drones use standard microSD cards, so you can swap cards between your Mavic 3, Air 3S, Mini 4 Pro, Avata, or any other DJI model. A V60 card works in every DJI drone (backward compatible with drones that only require V30).</p>
-              <p><strong>Best practice for professionals:</strong> Use cards rated for your highest-bitrate drone. If you fly both a Mavic 3 (V60 recommended) and Mini 4 Pro (V30 sufficient), equip all cards with V60 or higher. This eliminates card-swapping logistics and ensures every card handles every drone.</p>
+              <p><strong>Best practice for professionals:</strong> Use cards rated for your highest-bitrate drone. The Mavic 3, Air 3S and Mini 4 Pro all need U3/V30 cards, so one set of V30 cards covers all three.</p>
               <p><strong>Formatting:</strong> Always format cards in the drone itself before first use and periodically during intensive shooting. This ensures optimal filesystem compatibility. DJI drones format to exFAT, which is standard across devices.</p>
               <p><strong>Wear consideration:</strong> MicroSD cards designed for continuous recording (endurance cards) degrade faster with heavy use. If you fly daily or shoot 8+ hours per session, high-endurance microSD cards extend lifespan. Otherwise, standard V60 cards work fine for typical drone use.</p>
             </div>
@@ -224,8 +224,8 @@
             </h3>
             <div id="faq-answer-6" class="faq-answer open">
               <p><strong>High-Endurance cards:</strong> Specialized for continuous 24/7 writing (dashcams, surveillance). They have optimized controllers and firmware to handle constant write cycles without degradation. Examples: SanDisk Max Endurance, Samsung Pro Endurance.</p>
-              <p><strong>For typical drone use:</strong> NOT necessary. Drones record in bursts (flight sessions), not continuous 24/7. A standard V60 microSD card (like SanDisk Extreme, Lexar Professional) will outlast most drone use patterns.</p>
-              <p><strong>When endurance cards make sense for drones:</strong> If you're flying continuous footage for cinema/documentary work (8-12 hours per day, multiple days) or running an autonomous aerial monitoring system that records constantly, endurance cards offer extra reliability. For recreational and commercial photography/cinematography, standard high-speed cards are ideal.</p>
+              <p><strong>For typical drone use:</strong> NOT necessary. Drones record in bursts (flight sessions), not continuous 24/7. A standard V30 microSD card (like SanDisk Extreme, Lexar Professional) will outlast most drone use patterns.</p>
+              <p><strong>When endurance cards make sense for drones:</strong> If you're flying continuous footage for cinema/documentary work (8-12 hours per day, multiple days) or running an autonomous aerial monitoring system that records constantly, endurance cards offer extra reliability. For photography and video flights, standard V30 cards are the better buy.</p>
               <p><strong>Cost-benefit:</strong> Endurance cards cost 20-30% more than equivalent standard V60 cards. For typical drone use, invest that money in backup cards instead. Three standard 256GB V60 cards cost less than two endurance cards and provide better redundancy.</p>
             </div>
           </div>
@@ -321,7 +321,7 @@
                 "name": "What capacity microSD should I buy for my DJI drone?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "For casual pilots (1-2 flights per session): A 128GB microSD card provides 2-4 hours of recording at typical 4K bitrates (100-150 Mbps). This covers most casual flights with room for multiple takes. For commercial/intensive use (all-day shoots): A 256GB or 512GB card ensures you won't run out mid-project. At 200 Mbps (Mavic 3 5.1K), a 256GB card gives ~3.4 hours of continuous recording, enough for a full day of flights with multiple batteries. Consider overprovision: Even if your math says 128GB is enough, buying 256GB gives you: (1) safety margin for multiple takes, (2) headroom to avoid performance degradation when nearly full, (3) space for camera firmware/metadata. Many professionals buy 2x their calculated need. Pro tip: DJI drones max out around 512GB on most models. Check your specific drone's maximum supported capacity. Some older models cap at 256GB. Our calculator will show you exactly what duration you get on any capacity you're considering."
+                  "text": "For casual pilots (1-2 flights per session): A 128GB microSD card provides 2-4 hours of recording at typical 4K bitrates (100-150 Mbps). This covers most casual flights with room for multiple takes. For commercial/intensive use (all-day shoots): A 256GB or 512GB card ensures you won't run out mid-project. At 200 Mbps (Mavic 3 5.1K), a 256GB card gives about 2.8 hours of continuous recording, enough for a full day of flights with multiple batteries. Consider overprovision: Even if your math says 128GB is enough, buying 256GB gives you: (1) safety margin for multiple takes, (2) headroom to avoid performance degradation when nearly full, (3) space for camera firmware/metadata. Many professionals buy 2x their calculated need. Pro tip: DJI drones max out around 512GB on most models. Check your specific drone's maximum supported capacity. Some older models cap at 256GB. Our calculator will show you exactly what duration you get on any capacity you're considering."
                 }
               },
               {
@@ -329,7 +329,7 @@
                 "name": "Can I use the same microSD card in multiple DJI drones?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, all DJI drones use standard microSD cards, so you can swap cards between your Mavic 3, Air 3S, Mini 4 Pro, Avata, or any other DJI model. A V60 card works in every DJI drone (backward compatible with drones that only require V30). Best practice for professionals: Use cards rated for your highest-bitrate drone. If you fly both a Mavic 3 (V60 recommended) and Mini 4 Pro (V30 sufficient), equip all cards with V60 or higher. This eliminates card-swapping logistics and ensures every card handles every drone. Formatting: Always format cards in the drone itself before first use and periodically during intensive shooting. This ensures optimal filesystem compatibility. DJI drones format to exFAT, which is standard across devices. Wear consideration: MicroSD cards designed for continuous recording (endurance cards) degrade faster with heavy use. If you fly daily or shoot 8+ hours per session, high-endurance microSD cards extend lifespan. Otherwise, standard V60 cards work fine for typical drone use."
+                  "text": "Yes, all DJI drones use standard microSD cards, so you can swap cards between your Mavic 3, Air 3S, Mini 4 Pro, Avata, or any other DJI model. A V60 card works in every DJI drone (backward compatible with drones that only require V30). Best practice for professionals: Use cards rated for your highest-bitrate drone. The Mavic 3, Air 3S and Mini 4 Pro all need U3/V30 cards, so one set of V30 cards covers all three. Formatting: Always format cards in the drone itself before first use and periodically during intensive shooting. This ensures optimal filesystem compatibility. DJI drones format to exFAT, which is standard across devices. Wear consideration: MicroSD cards designed for continuous recording (endurance cards) degrade faster with heavy use. If you fly daily or shoot 8+ hours per session, high-endurance microSD cards extend lifespan. Otherwise, standard V60 cards work fine for typical drone use."
                 }
               },
               {
@@ -337,7 +337,7 @@
                 "name": "Do I need high-endurance cards for my drone?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "High-Endurance cards: Specialized for continuous 24/7 writing (dashcams, surveillance). They have optimized controllers and firmware to handle constant write cycles without degradation. Examples: SanDisk Max Endurance, Samsung Pro Endurance. For typical drone use: NOT necessary. Drones record in bursts (flight sessions), not continuous 24/7. A standard V60 microSD card (like SanDisk Extreme, Lexar Professional) will outlast most drone use patterns. When endurance cards make sense for drones: If you're flying continuous footage for cinema/documentary work (8-12 hours per day, multiple days) or running an autonomous aerial monitoring system that records constantly, endurance cards offer extra reliability. For recreational and commercial photography/cinematography, standard high-speed cards are ideal. Cost-benefit: Endurance cards cost 20-30% more than equivalent standard V60 cards. For typical drone use, invest that money in backup cards instead. Three standard 256GB V60 cards cost less than two endurance cards and provide better redundancy."
+                  "text": "High-Endurance cards: Specialized for continuous 24/7 writing (dashcams, surveillance). They have optimized controllers and firmware to handle constant write cycles without degradation. Examples: SanDisk Max Endurance, Samsung Pro Endurance. For typical drone use: NOT necessary. Drones record in bursts (flight sessions), not continuous 24/7. A standard V30 microSD card (like SanDisk Extreme, Lexar Professional) will outlast most drone use patterns. When endurance cards make sense for drones: If you're flying continuous footage for cinema/documentary work (8-12 hours per day, multiple days) or running an autonomous aerial monitoring system that records constantly, endurance cards offer extra reliability. For photography and video flights, standard V30 cards are the better buy. Cost-benefit: Endurance cards cost 20-30% more than equivalent standard V60 cards. For typical drone use, invest that money in backup cards instead. Three standard 256GB V60 cards cost less than two endurance cards and provide better redundancy."
                 }
               }
             ]
