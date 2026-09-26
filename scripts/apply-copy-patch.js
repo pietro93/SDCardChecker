@@ -45,6 +45,9 @@ for (const file of fs.readdirSync(CAT_DIR).filter((f) => f.endsWith('.json'))) {
         enrichment[key] = { ...(enrichment[key] || { deviceName: d.name, slug: d.slug, category: d.category }), explanation: v, reviewedAt: today };
         continue;
       }
+      if (k === 'faq' && Array.isArray(v) && (d.faq || []).length > v.length) {
+        console.warn(`${d.slug}: faq patch drops ${d.faq.length - v.length} existing question(s)`);
+      }
       if (v === null) delete d[k];
       else if (k === 'sdCard') d.sdCard = { ...d.sdCard, ...v };
       else d[k] = v;

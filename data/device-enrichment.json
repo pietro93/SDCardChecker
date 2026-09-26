@@ -177,267 +177,305 @@
     "deviceName": "Canon EOS R5",
     "slug": "canon-eos-r5",
     "category": "Cameras",
-    "explanation": "Using CFexpress Type B and SD UHS-II cards, you'll capture uninterrupted 8K RAW videos, even in the most immersive projects. This means you can focus on your creative vision, confident that your footage will be safely recorded every time. With reliable storage, you'll never have to worry about dropped frames in high-bitrate projects.",
-    "generatedAt": "2026-01-05T07:24:25.220Z"
+    "explanation": "The R5 has one CFexpress Type B slot and one SD UHS-II slot. 8K RAW needs CFexpress; for SD, a V90 card covers 8K IPB and V60 covers most 4K.",
+    "generatedAt": "2026-01-05T07:24:25.220Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:sony-a6700": {
     "deviceName": "Sony A6700",
     "slug": "sony-a6700",
     "category": "Cameras",
-    "explanation": "Using an SD UHS-II ensures seamless 4K video and high-speed photo capture every time. You'll be able to shoot continuously and confidently, without worrying about card limitations holding you back. This means you can focus on taking great shots, without interruptions or missed moments.",
-    "generatedAt": "2026-01-05T07:24:28.078Z"
+    "explanation": "The A6700 has one SD UHS-II slot. V30 covers XAVC S up to 140 Mbps, V60 covers XAVC HS at 200 Mbps, and XAVC S-I at up to 600 Mbps needs V90.",
+    "generatedAt": "2026-01-05T07:24:28.078Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:fujifilm-x-s20": {
     "deviceName": "Fujifilm X-S20",
     "slug": "fujifilm-x-s20",
     "category": "Cameras",
-    "explanation": "With a V30 rated SD UHS-II card, you'll enjoy uninterrupted 4K video capture and faster image transfer. This means you can focus on the shot and trust that your files will be saved securely without delay. Reliable performance like this opens up more creative possibilities for you and your Fujifilm X-S20.",
-    "generatedAt": "2026-01-05T07:24:30.933Z"
+    "explanation": "The X-S20 has one SD UHS-II slot and records up to 360 Mbps. A V30 card covers 200 Mbps and below; Fujifilm calls for V90 at 360 Mbps.",
+    "generatedAt": "2026-01-05T07:24:30.933Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:nikon-z9": {
     "deviceName": "Nikon Z9",
     "slug": "nikon-z9",
     "category": "Cameras",
-    "explanation": "With a CFexpress Type B card, you can shoot uninterrupted 8K footage, guaranteed to capture life's pivotal moments without a single drop in performance. Every frame is secure and saved in real-time, so you can focus on the shot, not the tech. This means you can trust your footage, from the first frame to the last.",
-    "generatedAt": "2026-01-05T07:24:34.788Z"
+    "explanation": "The Z9 has two CFexpress Type B slots that also accept XQD. It has no SD slot. Use CFexpress cards rated VPG 400 for 8K N-RAW and ProRes RAW.",
+    "generatedAt": "2026-01-05T07:24:34.788Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:sony-a7-iv": {
     "deviceName": "Sony A7 IV",
     "slug": "sony-a7-iv",
     "category": "Cameras",
-    "explanation": "Using a CFexpress Type A or top-tier SD UHS-II card like the XQD card, you'll be able to record high-quality videos without worrying about lag, letting you stay focused on capturing the perfect shot. With this fast storage, you'll be able to seamlessly transition between scenes and shoot without interruptions. This freedom to create will take your photography to new heights with the Sony A7 IV.",
-    "generatedAt": "2026-01-05T07:24:37.778Z"
+    "explanation": "The A7 IV's slot 1 takes CFexpress Type A or SD UHS-II; slot 2 takes SD only. V60 SD cards cover most 4K; XAVC S-I and some S&Q modes need V90 or CFexpress.",
+    "generatedAt": "2026-01-05T07:24:37.778Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:canon-eos-r6-mark-ii": {
     "deviceName": "Canon EOS R6 Mark II",
     "slug": "canon-eos-r6-mark-ii",
     "category": "Cameras",
-    "explanation": "With V90 SD UHS-II cards, you'll be able to capture seamless and uninterrupted bursts of high-speed action, even in RAW format, making it perfect for fast-paced sports and wildlife photography and videography. This means you'll get the shots you want without any dropped frames or lost moments.",
-    "generatedAt": "2026-01-05T07:24:41.637Z"
+    "explanation": "The R6 Mark II has two SD UHS-II slots. A V60 card covers its 4K/60 video; a V90 card clears 40 fps electronic-shutter bursts faster.",
+    "generatedAt": "2026-01-05T07:24:41.637Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:blackmagic-pocket-cinema-camera-4k": {
     "deviceName": "Blackmagic Pocket Cinema Camera 4K",
     "slug": "blackmagic-pocket-cinema-camera-4k",
     "category": "Cameras",
-    "explanation": "Using a CFast 2.0 card and SD UHS-II card allows for seamless and uninterrupted recording of professional RAW and ProRes formats, so you can focus on capturing your best shots. This gives you confidence in your creative vision and peace of mind knowing your footage will be secure. With these high-speed cards, you'll be able to record continuously without interruptions.",
-    "generatedAt": "2026-01-05T07:24:44.509Z"
+    "explanation": "The BMPCC 4K records to CFast 2.0, SD UHS-II or a USB-C SSD. Use a V90 SD card for ProRes and compressed Blackmagic RAW; the lowest-compression RAW settings need CFast or an SSD.",
+    "generatedAt": "2026-01-05T07:24:44.509Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:blackmagic-pocket-cinema-camera-6k-pro": {
     "deviceName": "Blackmagic Pocket Cinema Camera 6K Pro",
     "slug": "blackmagic-pocket-cinema-camera-6k-pro",
     "category": "Cameras",
-    "explanation": "Capture every detail with complete confidence using high-performance CFast 2.0 cards and SD UHS-II V90 cards. These cards enable you to record uninterrupted for longer periods, allowing for a more fluid filmmaking experience. With reliable performance, you can stay focused on your creative vision.",
-    "generatedAt": "2026-01-05T07:24:48.352Z"
+    "explanation": "The BMPCC 6K Pro records to CFast 2.0, SD UHS-II or a USB-C SSD. Full 6K at the lowest RAW compression needs CFast or an SSD; a V90 SD card covers ProRes and compressed RAW.",
+    "generatedAt": "2026-01-05T07:24:48.352Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:nikon-z8": {
     "deviceName": "Nikon Z8",
     "slug": "nikon-z8",
     "category": "Cameras",
-    "explanation": "Recording with a CFexpress card allows you to shoot continuous 8K RAW video without interruptions, letting you focus on the moment. Using an SD UHS-II card in the Z8's secondary slot supports a wide range of 4K video modes, freeing you up to stay creative. This flexible setup gives you the confidence to take on any shoot.",
-    "generatedAt": "2026-01-05T07:24:52.253Z"
+    "explanation": "The Z8 has one CFexpress Type B slot and one SD UHS-II slot. 8K and N-RAW video need CFexpress; a V60 or V90 SD card covers most 4K and works as a backup slot.",
+    "generatedAt": "2026-01-05T07:24:52.253Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:panasonic-lumix-s1h": {
     "deviceName": "Panasonic Lumix S1H",
     "slug": "panasonic-lumix-s1h",
     "category": "Cameras",
-    "explanation": "Capture life's precious moments with complete confidence. Using SD UHS-II ensures that your Panasonic Lumix S1H can keep up with 6K video footage, so you don't miss a split-second of action. With V90-rated cards, you'll focus on the shot, not technical hiccups.",
-    "generatedAt": "2026-01-05T07:24:55.123Z"
+    "explanation": "The S1H has two SD UHS-II slots and records 6K and 4K All-Intra at up to 400 Mbps. Panasonic requires V90 cards for those modes.",
+    "generatedAt": "2026-01-05T07:24:55.123Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:fujifilm-x100vi": {
     "deviceName": "Fujifilm X100VI",
     "slug": "fujifilm-x100vi",
     "category": "Cameras",
-    "explanation": "With an SD UHS-II card, you can reliably capture stunning 6.2K footage in 30fps, and instantly review high-speed bursts without interruptions. This seamless performance lets you stay in the moment, creating more unforgettable experiences. Fast buffer clearing also means you can shoot worry-free, always capturing the perfect shot.",
-    "generatedAt": "2026-01-05T07:24:59.013Z"
+    "explanation": "The X100VI has one SD UHS-I slot and records 6.2K/30 at up to 200 Mbps. A V30 UHS-I card covers every mode.",
+    "generatedAt": "2026-01-05T07:24:59.013Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:canon-eos-r50": {
     "deviceName": "Canon EOS R50",
     "slug": "canon-eos-r50",
     "category": "Cameras",
-    "explanation": "Using a V30 UHS-II SD card with your Canon EOS R50 lets you shoot 4K video and high-speed bursts in RAW with complete confidence, without worrying about dropped frames. This freedom to create allows you to focus solely on capturing your vision. With seamless performance, you can rely on getting the shots you need.",
-    "generatedAt": "2026-01-05T07:25:02.918Z"
+    "explanation": "The R50 has one SD UHS-I slot. A V30 card covers its 4K/30 video and bursts.",
+    "generatedAt": "2026-01-05T07:25:02.918Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:canon-eos-r7": {
     "deviceName": "Canon EOS R7",
     "slug": "canon-eos-r7",
     "category": "Cameras",
-    "explanation": "Capture every thrilling moment in 4K 60fps with seamless recording and uninterrupted burst shooting thanks to this V60 speed class card. This means you'll have the freedom to focus on your subject, not worrying about dropped frames or running out of buffer space. With this card, your vision stays intact.",
-    "generatedAt": "2026-01-05T07:25:05.761Z"
+    "explanation": "The R7 has two SD UHS-II slots, 4K/60 video and 15 fps mechanical bursts. A V60 UHS-II card covers video and clears the buffer quickly.",
+    "generatedAt": "2026-01-05T07:25:05.761Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:canon-eos-r10": {
     "deviceName": "Canon EOS R10",
     "slug": "canon-eos-r10",
     "category": "Cameras",
-    "explanation": "With a fast V90 SD card, you'll get uninterrupted 4K 60fps video, allowing you to keep rolling through even the most dynamic scenes. This means you can focus on framing the shot, not worrying about dropped frames. A V90 card ensures seamless recording performance, giving you more creative freedom.",
-    "generatedAt": "2026-01-05T07:25:09.625Z"
+    "explanation": "The R10 has one SD UHS-II slot. V30 covers 4K/30; a V60 UHS-II card suits 4K/60 and clears 15 fps bursts faster.",
+    "generatedAt": "2026-01-05T07:25:09.625Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:canon-eos-r8": {
     "deviceName": "Canon EOS R8",
     "slug": "canon-eos-r8",
     "category": "Cameras",
-    "explanation": "With a V60 speed class SD card, you can confidently shoot 4K 60fps video and capture RAW photos in burst mode without fear of lag or file drops. This unlocks your full creative potential and helps you stay in the moment, even during the most critical shots. You'll never miss a split second of action thanks to the reliable performance of this high-speed card.",
-    "generatedAt": "2026-01-05T07:25:13.531Z"
+    "explanation": "The R8 has one SD UHS-II slot and records 4K/60 from the same 24MP sensor as the R6 Mark II. A V60 card covers it with margin.",
+    "generatedAt": "2026-01-05T07:25:13.531Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:canon-rebel-t7": {
     "deviceName": "Canon EOS Rebel T7 (EOS 2000D)",
     "slug": "canon-rebel-t7",
     "category": "Cameras",
-    "explanation": "Using a Class 10 (U1) SD card with your Canon EOS Rebel T7 ensures lag-free photo review and continuous shooting. This allows you to capture and review your shots quickly, streamlining your creative process. With a reliable card, you'll stay focused on the moment, not on buffering.",
-    "generatedAt": "2026-01-05T07:25:16.396Z"
+    "explanation": "The Rebel T7 records 1080p/30 and shoots 3 fps, so any Class 10 or U1 SD card is fast enough. A 64GB card holds thousands of RAW files.",
+    "generatedAt": "2026-01-05T07:25:16.396Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:canon-g7x-mark-iii": {
     "deviceName": "Canon PowerShot G7 X Mark III",
     "slug": "canon-g7x-mark-iii",
     "category": "Cameras",
-    "explanation": "Using a UHS-I SD card ensures uninterrupted 4K video recording. This means you can capture sharp, detailed footage without dropped frames or lagging playback. Your vlogs will look professional and polished, with a seamless viewing experience.",
-    "generatedAt": "2026-01-05T07:25:20.308Z"
+    "explanation": "The G7 X Mark III records 4K/30 to one SD UHS-I slot. A V30 card covers it; a 128GB card holds several hours of 4K.",
+    "generatedAt": "2026-01-05T07:25:20.308Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:canon-g7x-mark-ii": {
     "deviceName": "Canon PowerShot G7 X Mark II",
     "slug": "canon-g7x-mark-ii",
     "category": "Cameras",
-    "explanation": "With a UHS-I SD card, you'll experience seamless video recording and fast data transfer. This lets you focus on your shot, without worrying about buffering or lag. Your Canon PowerShot G7 X Mark II can take full advantage of the card's capabilities, capturing your best moments in stunning quality.",
-    "generatedAt": "2026-01-05T07:25:23.155Z"
+    "explanation": "The G7 X Mark II records 1080p/60 and no 4K, so a Class 10 or U1 SD card is enough.",
+    "generatedAt": "2026-01-05T07:25:23.155Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:fujifilm-xt5": {
     "deviceName": "Fujifilm X-T5",
     "slug": "fujifilm-xt5",
     "category": "Cameras",
-    "explanation": "Shooting 6.2K footage at 15fps RAW bursts has never been easier thanks to the dual SD UHS-II slots in your Fujifilm X-T5. This setup allows you to shoot non-stop, worry-free, and focus on capturing incredible moments. With two fast storage cards, you can even enable backup recording for added peace of mind.",
-    "generatedAt": "2026-01-05T07:25:27.073Z"
+    "explanation": "The X-T5 has two SD UHS-II slots and records up to 360 Mbps. A V60 card covers most modes; Fujifilm calls for V90 at 360 Mbps.",
+    "generatedAt": "2026-01-05T07:25:27.073Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:fujifilm-xm5": {
     "deviceName": "Fujifilm X-M5",
     "slug": "fujifilm-xm5",
     "category": "Cameras",
-    "explanation": "Using this UHS-I SD card ensures your high-quality video stays uninterrupted and looking its best. This means you'll be able to capture stunning 6.2K footage without worrying about dropped frames or corrupted files.",
-    "generatedAt": "2026-01-05T07:25:30.903Z"
+    "explanation": "The X-M5 has one SD UHS-I slot and records 6.2K/30. A V30 UHS-I card covers every mode.",
+    "generatedAt": "2026-01-05T07:25:30.903Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:fujifilm-xt30-ii": {
     "deviceName": "Fujifilm X-T30 II",
     "slug": "fujifilm-xt30-ii",
     "category": "Cameras",
-    "explanation": "\"With a UHS-I SD card, you'll achieve reliable and uninterrupted shooting, perfect for capturing life's precious moments, whether it's a family vacation or a special event. You can focus on the moment, not the card's performance. This means more frames to work with, and a more enjoyable overall experience.\"",
-    "generatedAt": "2026-01-05T07:25:33.762Z"
+    "explanation": "The X-T30 II has one SD UHS-I slot and records 4K/30 at up to 200 Mbps. A V30 card covers it.",
+    "generatedAt": "2026-01-05T07:25:33.762Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:fujifilm-xt50": {
     "deviceName": "Fujifilm X-T50",
     "slug": "fujifilm-xt50",
     "category": "Cameras",
-    "explanation": "Using an SD UHS-II card with your Fujifilm X-T50 lets you take longer bursts and shoot 6.2K video without lag, so you can stay focused on the action. This means you'll capture more in one session, saving you time and effort in the long run.",
-    "generatedAt": "2026-01-05T07:25:37.661Z"
+    "explanation": "The X-T50 has one SD UHS-II slot and records 6.2K from the same 40MP sensor as the X-T5. A V60 UHS-II card covers video and clears bursts quickly.",
+    "generatedAt": "2026-01-05T07:25:37.661Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:sony-fx30": {
     "deviceName": "Sony FX30",
     "slug": "sony-fx30",
     "category": "Cameras",
-    "explanation": "With the Sony FX30's CFexpress Type A and V90 SD card slots, you can confidently take on long film shoots, knowing your device will handle high-burst recording and large files without skipping a beat. This means you'll capture every take without running out of space or losing footage. By investing in V90 SD cards, you're free to focus on creativity, not technical hiccups.",
-    "generatedAt": "2026-01-05T07:25:41.573Z"
+    "explanation": "Both FX30 slots take CFexpress Type A or SD UHS-II. V60 SD cards cover XAVC HS; XAVC S-I All-Intra needs V90 or CFexpress Type A.",
+    "generatedAt": "2026-01-05T07:25:41.573Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:sony-fx3": {
     "deviceName": "Sony FX3",
     "slug": "sony-fx3",
     "category": "Cameras",
-    "explanation": "With a CFexpress Type A card, you can transfer footage to your computer up to 5x faster than with an SD card, saving you valuable editing time. This accelerated workflow lets you stay focused on crafting your vision, rather than waiting on file transfers.",
-    "generatedAt": "2026-01-05T07:25:44.426Z"
+    "explanation": "Both FX3 slots take CFexpress Type A or SD UHS-II. V60 SD cards cover standard 4K; 4K/120 in XAVC S-I needs V90 or CFexpress Type A.",
+    "generatedAt": "2026-01-05T07:25:44.426Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:fujifilm-xe5": {
     "deviceName": "Fujifilm X-E5",
     "slug": "fujifilm-xe5",
     "category": "Cameras",
-    "explanation": "Using an SD UHS-II card with the Fujifilm X-E5 lets you record up to 90 minutes of 4K or 6.2K footage without interruptions. This ensures you don't miss any precious moments, allowing you to capture smooth, uninterrupted storytelling. With a UHS-II card, you can rely on stable performance for any creative project.",
-    "generatedAt": "2026-06-18T00:00:00.000Z"
+    "explanation": "The X-E5 has one SD UHS-II slot and records 6.2K from a 40MP sensor. A V30 card covers standard modes; a UHS-II card clears bursts faster.",
+    "generatedAt": "2026-06-18T00:00:00.000Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:fujifilm-x100v": {
     "deviceName": "Fujifilm X100V",
     "slug": "fujifilm-x100v",
     "category": "Cameras",
-    "explanation": "Capture sharp, distraction-free photos and cinematic videos with confidence using an SD UHS-I card, capable of handling burst shots and 4K 30fps video recording with seamless transitions. With faster write speeds, you'll focus on the shot, not waiting for your card to catch up. This means more of the action, and less downtime.",
-    "generatedAt": "2026-01-05T07:25:52.250Z"
+    "explanation": "The X100V has one SD UHS-I slot and records 4K/30. A V30 UHS-I card covers every mode.",
+    "generatedAt": "2026-01-05T07:25:52.250Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:fujifilm-xt3": {
     "deviceName": "Fujifilm X-T3",
     "slug": "fujifilm-xt3",
     "category": "Cameras",
-    "explanation": "With a Dual SD UHS-II setup, you'll capture 4K 60fps video smoothly without interruptions, perfect for preserving those high-stakes moments. This setup also gives you the flexibility to record at the highest bitrate, ensuring professional-quality footage every time.",
-    "generatedAt": "2026-01-05T07:25:55.112Z"
+    "explanation": "The X-T3 has two SD UHS-II slots and records 4K/60. V60 covers most modes; 400 Mbps All-Intra needs V90.",
+    "generatedAt": "2026-01-05T07:25:55.112Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:leica-q3": {
     "deviceName": "Leica Q3",
     "slug": "leica-q3",
     "category": "Cameras",
-    "explanation": "Capture high-quality 8K video with a V90 speed class SD card in your Leica Q3, minimizing the risk of video corruption and ensuring seamless footage. With a V90 card, you get uninterrupted and high-fidelity recording for your most critical projects. This means you can focus on your art, not worrying about technical interruptions.",
-    "generatedAt": "2026-01-05T07:25:58.992Z"
+    "explanation": "The Leica Q3 records 8K/30 and 4K/60, including ProRes 422 HQ, to a single SD UHS-II slot. Use a V60 card, or V90 for ProRes and 8K.",
+    "generatedAt": "2026-01-05T07:25:58.992Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:leica-q3-43": {
     "deviceName": "Leica Q3 43",
     "slug": "leica-q3-43",
     "category": "Cameras",
-    "explanation": "With a V90-rated dual SD UHS-II setup, you'll capture 8K video recordings with reduced compression, yielding more detailed and vibrant footage that truly reflects your artistic vision. This helps you deliver polished and professional results to clients with minimal post-processing.",
-    "generatedAt": "2026-01-05T07:26:02.853Z"
+    "explanation": "The Leica Q3 43 has the same single SD UHS-II slot and 8K/30 video as the Q3. Use a V60 card, or V90 for ProRes.",
+    "generatedAt": "2026-01-05T07:26:02.853Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:leica-m11": {
     "deviceName": "Leica M11",
     "slug": "leica-m11",
     "category": "Cameras",
-    "explanation": "Get instant buffer clearing and seamless data transfer with this UHS-II SD card. Capture high-res photos and 4K videos with confidence, knowing your data is transferred quickly and efficiently.",
-    "generatedAt": "2026-01-05T07:26:05.661Z"
+    "explanation": "The Leica M11 shoots stills only, with no video mode. It has 64GB of internal memory and one SD UHS-II slot; a fast UHS-II card writes 60MP DNG files quickest.",
+    "generatedAt": "2026-01-05T07:26:05.661Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:leica-q2": {
     "deviceName": "Leica Q2",
     "slug": "leica-q2",
     "category": "Cameras",
-    "explanation": "Capturing 47MP photos and 4K video on your Leica Q2 just got hassle-free. With a high-speed SD UHS-II card, you'll enjoy seamless transfers and loading times, readying you for the next shot in no time. Say goodbye to lag and get back to what matters - creating incredible content.",
-    "generatedAt": "2026-01-05T07:26:09.535Z"
+    "explanation": "The Leica Q2 has one SD UHS-II slot and records 4K video. A V60 UHS-II card handles its 47MP stills and video.",
+    "generatedAt": "2026-01-05T07:26:09.535Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:leica-d-lux-8": {
     "deviceName": "Leica D-Lux 8",
     "slug": "leica-d-lux-8",
     "category": "Cameras",
-    "explanation": "With a V30 speed class SD card, you can trust that your footage will be captured seamlessly, without any interruptions, so you can focus on framing the perfect shot with your Leica D-Lux 8. This means you'll be able to keep recording 4K video without worrying about a frozen frame. Your memories are preserved, and your creativity can shine through.",
-    "generatedAt": "2026-01-05T07:26:12.410Z"
+    "explanation": "The Leica D-Lux 8 has one SD UHS-I slot and records 4K/30. A V30 card is enough.",
+    "generatedAt": "2026-01-05T07:26:12.410Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:leica-m10": {
     "deviceName": "Leica M10",
     "slug": "leica-m10",
     "category": "Cameras",
-    "explanation": "With a UHS-I SD card, you'll never miss a shot thanks to faster loading times and seamless burst mode shooting. This is perfect for photographers who capture high-res stills in various lighting conditions. By upgrading to a UHS-I SD card, you'll experience uninterrupted photography sessions.",
-    "generatedAt": "2026-01-05T07:26:16.299Z"
+    "explanation": "The Leica M10 shoots stills only and has one SD UHS-I slot. Any V30 or U3 card from a known brand keeps up with its 24MP DNG files.",
+    "generatedAt": "2026-01-05T07:26:16.299Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:panasonic-lumix-s9": {
     "deviceName": "Panasonic Lumix S9",
     "slug": "panasonic-lumix-s9",
     "category": "Cameras",
-    "explanation": "Capture life's precious moments with crystal clarity, thanks to ultra-fast SD UHS-II cards that keep up with your Panasonic Lumix S9's advanced features. By choosing a high-quality UHS-II card, you can trust that every shot, including 6K videos, is recorded flawlessly. Smooth, uninterrupted recording means less stress and more creativity in your content creation.",
-    "generatedAt": "2026-01-05T07:26:19.246Z"
+    "explanation": "The Lumix S9 has one SD UHS-II slot and records 6K. V60 covers standard modes; high-bitrate and high-frame-rate modes need V90.",
+    "generatedAt": "2026-01-05T07:26:19.246Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:panasonic-lumix-s5-iix": {
     "deviceName": "Panasonic Lumix S5 IIX",
     "slug": "panasonic-lumix-s5-iix",
     "category": "Cameras",
-    "explanation": "Using a dual UHS-II SD card allows for seamless recording and simultaneous backup, giving you peace of mind that your shots are safe and can be easily transferred. This means you can focus on capturing, not worrying about storage. With V90-capable cards, you can push your creative boundaries with confidence.",
-    "generatedAt": "2026-01-05T07:26:23.075Z"
+    "explanation": "The S5 IIX has two SD UHS-II slots and records All-Intra and ProRes. Panasonic requires V90 cards for those modes; ProRes RAW goes to an external recorder.",
+    "generatedAt": "2026-01-05T07:26:23.075Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:panasonic-lumix-s5-ii": {
     "deviceName": "Panasonic Lumix S5 II",
     "slug": "panasonic-lumix-s5-ii",
     "category": "Cameras",
-    "explanation": "Using a Dual SD UHS-II card ensures ultra-fast data transfer, so you can quickly switch between modes and capture decisive moments. With a reliable write speed, you'll never miss a shot. This boosts your overall productivity and makes you more confident in your creative process.",
-    "generatedAt": "2026-01-05T07:26:25.943Z"
+    "explanation": "The S5 II has two SD UHS-II slots and records 6K. A V60 card covers standard modes; All-Intra needs V90.",
+    "generatedAt": "2026-01-05T07:26:25.943Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:nikon-d7500": {
     "deviceName": "Nikon D7500",
     "slug": "nikon-d7500",
     "category": "Cameras",
-    "explanation": "With a dual SD UHS-I setup in your Nikon D7500, you can shoot continuously without interruptions, knowing your shots are safely recorded and ready for editing. This setup also gives you the flexibility to shoot more and worry less, allowing you to capture every moment with confidence. It's like having a buffer of extra storage to fall back on, so your creative vision stays intact.",
-    "generatedAt": "2026-01-05T07:26:29.837Z"
+    "explanation": "The D7500 has a single SD UHS-I slot and records 4K/30. A U3/V30 card covers it.",
+    "generatedAt": "2026-01-05T07:26:29.837Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:nikon-zf": {
     "deviceName": "Nikon Zf",
     "slug": "nikon-zf",
     "category": "Cameras",
-    "explanation": "With dual UHS-II cards, you can reliably record professional-grade content, like 4K 120fps slow-motion, without worrying about buffer overflow or lost shots. This means you can stay in the moment and keep creating, knowing your important files are safely stored.",
-    "generatedAt": "2026-01-05T07:26:33.757Z"
+    "explanation": "The Nikon Zf has one SD UHS-II slot and one microSD UHS-I slot. A V30 or V60 SD card covers its 4K/30 full-frame and 4K/60 DX-crop video.",
+    "generatedAt": "2026-01-05T07:26:33.757Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:nikon-z50-ii": {
     "deviceName": "Nikon Z50 II",
@@ -451,113 +489,129 @@
     "deviceName": "Nikon Z6 III",
     "slug": "nikon-z6-iii",
     "category": "Cameras",
-    "explanation": "With CFexpress Type B + SD UHS-II in your Nikon Z6 III, you can enjoy uninterrupted video recording sessions, capturing smooth 6K RAW footage and 4K 120fps shots with ease. This combo prevents dropped frames and corrupted files, letting you focus on your creative vision.",
-    "generatedAt": "2026-01-05T07:26:40.485Z"
+    "explanation": "The Z6 III has one CFexpress Type B slot and one SD UHS-II slot. 6K N-RAW needs CFexpress; a V90 SD card covers 4K/120 in H.265.",
+    "generatedAt": "2026-01-05T07:26:40.485Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:nikon-z6-ii": {
     "deviceName": "Nikon Z6 II",
     "slug": "nikon-z6-ii",
     "category": "Cameras",
-    "explanation": "With dual SD UHS-II cards, you're always ready to shoot, capturing every high-speed burst and 4K video smoothly without interruptions. This reliability frees you to focus on your art, knowing you've got a seamless workflow. Now, you can create with confidence and precision.",
-    "generatedAt": "2026-01-05T07:26:43.327Z"
+    "explanation": "The Z6 II has one CFexpress Type B/XQD slot and one SD UHS-II slot. A V60 SD card covers 4K/60; CFexpress clears long bursts faster.",
+    "generatedAt": "2026-01-05T07:26:43.327Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:nikon-d850": {
     "deviceName": "Nikon D850",
     "slug": "nikon-d850",
     "category": "Cameras",
-    "explanation": "Unlock full 4K video potential with XQD and SD UHS-II. This combo delivers seamless recording and sustained burst modes, so you can capture every precious moment without interruptions. With fast data transfer and reliable performance, you're free to focus on your art.",
-    "generatedAt": "2026-01-05T07:26:47.173Z"
+    "explanation": "The D850 has one XQD slot, which takes CFexpress Type B with firmware 1.20 or later, and one SD UHS-II slot. Use the XQD or CFexpress slot for long RAW bursts.",
+    "generatedAt": "2026-01-05T07:26:47.173Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:nikon-d750": {
     "deviceName": "Nikon D750",
     "slug": "nikon-d750",
     "category": "Cameras",
-    "explanation": "Recording with dual UHS-I SD cards guarantees seamless switching between shots and stable performance even during prolonged photo shoots or 60fps video recording, giving you peace of mind and more capturing opportunities. With this setup, you'll enjoy uninterrupted shooting sessions and reduced downtime between takes. This ensures you stay focused on what matters – capturing life's most precious moments.",
-    "generatedAt": "2026-01-05T07:26:51.057Z"
+    "explanation": "The D750 has two SD UHS-I slots and records 1080p/60. A Class 10 card covers photos; a U3 card is safer for video.",
+    "generatedAt": "2026-01-05T07:26:51.057Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:nikon-z5": {
     "deviceName": "Nikon Z5",
     "slug": "nikon-z5",
     "category": "Cameras",
-    "explanation": "Recording 4K video and taking advantage of the Nikon Z5's burst shooting is seamless with our recommended SD card. You'll stay in the moment, capturing life's precious memories without interruption or lag. Our high-quality SD card gets your photos and videos to you faster.",
-    "generatedAt": "2026-01-05T07:26:53.939Z"
+    "explanation": "The Z5 has two SD UHS-II slots and records 4K/30 with a 1.7x crop. A V30 card covers video; V60 clears bursts faster.",
+    "generatedAt": "2026-01-05T07:26:53.939Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:canon-eos-r100": {
     "deviceName": "Canon EOS R100",
     "slug": "canon-eos-r100",
     "category": "Cameras",
-    "explanation": "With this V30 SD card, you can record smooth and uninterrupted 4K video on your Canon EOS R100, even in fast-paced or dynamic scenarios, giving you the freedom to capture life's precious moments without a hitch.",
-    "generatedAt": "2026-01-05T07:26:56.763Z"
+    "explanation": "The R100 has one SD UHS-I slot and records cropped 4K/24. A V30 card covers it.",
+    "generatedAt": "2026-01-05T07:26:56.763Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:sony-a7r-v": {
     "deviceName": "Sony A7R V",
     "slug": "sony-a7r-v",
     "category": "Cameras",
-    "explanation": "With a CFexpress Type A card, you can shoot 8K video and high-resolution bursts all day, worry-free. This means you'll always be ready to capture stunning moments without slowing down. Plus, you'll have peace of mind knowing your footage is reliably stored.",
-    "generatedAt": "2026-01-05T07:27:00.621Z"
+    "explanation": "Both A7R V slots take CFexpress Type A or SD UHS-II. V60 covers 4K; 8K and XAVC S-I need V90 SD or CFexpress Type A, which also clears 61MP bursts fastest.",
+    "generatedAt": "2026-01-05T07:27:00.621Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:nikon-d3500": {
     "deviceName": "Nikon D3500",
     "slug": "nikon-d3500",
     "category": "Cameras",
-    "explanation": "With a UHS-I SD card, you'll be able to snap continuous shots and record long 1080p videos without interruptions, giving you the freedom to capture life's most precious moments. This reliable performance enables you to focus on framing the perfect shot, rather than dealing with frustrating technical issues. Whether you're shooting a wedding or a family vacation, a UHS-I card gives you the confidence to take on any photo opportunity.",
-    "generatedAt": "2026-01-05T07:27:03.536Z"
+    "explanation": "The D3500 records 1080p/60 and shoots 5 fps, so any Class 10 or U1 SD card from a known brand is enough.",
+    "generatedAt": "2026-01-05T07:27:03.536Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:sony-zv-e10": {
     "deviceName": "Sony ZV-E10",
     "slug": "sony-zv-e10",
     "category": "Cameras",
-    "explanation": "With an SD UHS-I card, you'll enjoy uninterrupted video recording, capturing every second of your footage. This results in polished, professionally-looking content that requires minimal editing. Capture life in stunning detail, without the worry of technical glitches.",
-    "generatedAt": "2026-01-05T07:27:07.435Z"
+    "explanation": "The ZV-E10 has one SD UHS-I slot and records 4K/30 XAVC S at 100 Mbps. Sony requires a U3/V30 card for that mode.",
+    "generatedAt": "2026-01-05T07:27:07.435Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:sony-a7-iii": {
     "deviceName": "Sony a7 III",
     "slug": "sony-a7-iii",
     "category": "Cameras",
-    "explanation": "With a UHS-II card in Slot 1, you'll experience seamless 4K video recording and uninterrupted burst shooting, saving you from missing critical shots. This means you can focus on capturing the best moments without worrying about technical interruptions. Using a UHS-II card in the primary slot also helps in speeding up post-recording workflow.",
-    "generatedAt": "2026-01-05T07:27:10.314Z"
+    "explanation": "The a7 III's slot 1 is UHS-II and slot 2 is UHS-I. A U3/V30 card covers 4K at 100 Mbps; put a UHS-II card in slot 1 to clear bursts faster.",
+    "generatedAt": "2026-01-05T07:27:10.314Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:sony-a6400": {
     "deviceName": "Sony a6400",
     "slug": "sony-a6400",
     "category": "Cameras",
-    "explanation": "Using a U3/V30 SD card ensures uninterrupted 4K video capture, letting you focus on the moment. This allows you to record every detail and action without worrying about technical issues. With a high-quality card, you'll have confidence in your footage every time.",
-    "generatedAt": "2026-01-05T07:27:14.155Z"
+    "explanation": "The a6400 has one SD UHS-I slot. Sony requires a U3/V30 card for 4K XAVC S at 100 Mbps.",
+    "generatedAt": "2026-01-05T07:27:14.155Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:fujifilm-x-s10": {
     "deviceName": "Fujifilm X-S10",
     "slug": "fujifilm-x-s10",
     "category": "Cameras",
-    "explanation": "With a V30 speed class card, you can expect seamless video playback and editing without any frustrating pauses or dropped frames, so you can enjoy your 4K footage exactly as you captured it.",
-    "generatedAt": "2026-01-05T07:27:16.974Z"
+    "explanation": "The X-S10 has one SD UHS-I slot and records 4K/30 at up to 200 Mbps. A V30 card covers every mode.",
+    "generatedAt": "2026-01-05T07:27:16.974Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:canon-eos-r6": {
     "deviceName": "Canon EOS R6",
     "slug": "canon-eos-r6",
     "category": "Cameras",
-    "explanation": "With dual SD UHS-II cards, you can keep recording without drops or lag, capturing every shot and every moment with your Canon EOS R6. This lets you stay in the zone, focusing on your creativity without technology holding you back.",
-    "generatedAt": "2026-01-05T07:27:19.795Z"
+    "explanation": "The R6 has two SD UHS-II slots and records 4K/60. A V60 card covers video; V90 clears 20 fps electronic-shutter bursts faster.",
+    "generatedAt": "2026-01-05T07:27:19.795Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:nikon-d500": {
     "deviceName": "Nikon D500",
     "slug": "nikon-d500",
     "category": "Cameras",
-    "explanation": "With a fast UHS-II V60/V90 SD card, you'll stay in the action, shooting 10 frames per second without waiting for the camera to catch up. This helps you react faster, and get more shots in critical moments. Your workflow also gets a boost, as you can offload your photos and videos quickly.",
-    "generatedAt": "2026-01-05T07:27:24.779Z"
+    "explanation": "The D500 has one XQD slot, which takes CFexpress Type B with firmware 1.30 or later, and one SD UHS-II slot. A V30 SD card covers 4K video.",
+    "generatedAt": "2026-01-05T07:27:24.779Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:sony-a7r": {
     "deviceName": "Sony A7R",
     "slug": "sony-a7r",
     "category": "Cameras",
-    "explanation": "When using a fast UHS-I SD card, you can rely on seamless file transfer from your Sony A7R, saving you time and hassle when you need to offload your photos and videos. This convenience means you can focus on what matters - capturing the perfect shot - without getting held back by slow transfer speeds. With a UHS-I SD card, your workflow becomes more efficient and stress-free.",
-    "generatedAt": "2026-01-05T07:27:28.703Z"
+    "explanation": "The original A7R records 1080p only and has one SD slot. Any Class 10 or U1 card from a known brand is enough.",
+    "generatedAt": "2026-01-05T07:27:28.703Z",
+    "reviewedAt": "2026-09-26"
   },
   "Cameras:sony-a1": {
     "deviceName": "Sony A1",
     "slug": "sony-a1",
     "category": "Cameras",
-    "explanation": "With a CFexpress Type A and SD UHS-II setup, you'll be able to capture rapid sequences of images in continuous AF, effortlessly saving every shot without interruptions. This gives you the confidence to focus on your subject and capture the decisive moment. Whether you're working in burst mode or shooting 8K video.",
-    "generatedAt": "2026-01-05T07:27:31.606Z"
+    "explanation": "The Sony A1 has two slots that each take CFexpress Type A or SD UHS-II. Use V90 SD cards for XAVC S-I 4K, and CFexpress Type A for 8K and 30 fps bursts.",
+    "generatedAt": "2026-01-05T07:27:31.606Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:raspberry-pi-5": {
     "deviceName": "Raspberry Pi 5",
@@ -1431,6 +1485,41 @@
     "slug": "ayn-thor",
     "category": "Gaming Handhelds",
     "explanation": "The AYN Thor is a dual-screen Android handheld with a Snapdragon 865 or 8 Gen 2 and a microSD slot. For PS2, GameCube and Switch emulation, buy a 512GB or 1TB A2 card.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Cameras:sony-a1-ii": {
+    "deviceName": "Sony a1 II",
+    "slug": "sony-a1-ii",
+    "category": "Cameras",
+    "explanation": "Both a1 II slots take CFexpress Type A or SD UHS-II. Use CFexpress Type A for 8K and 30 fps RAW bursts, and V90 SD cards for 4K.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Cameras:canon-eos-r5-mark-ii": {
+    "deviceName": "Canon EOS R5 Mark II",
+    "slug": "canon-eos-r5-mark-ii",
+    "category": "Cameras",
+    "explanation": "The R5 Mark II has one CFexpress Type B slot and one SD UHS-II slot. 8K RAW and 4K/120 need CFexpress; a V90 SD card works for lower-bitrate modes and backup.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Cameras:canon-powershot-elph-100-hs": {
+    "deviceName": "Canon PowerShot ELPH 100 HS",
+    "slug": "canon-powershot-elph-100-hs",
+    "category": "Cameras",
+    "explanation": "The ELPH 100 HS records 1080p/24 and takes SD, SDHC and SDXC cards. Any Class 4 or faster card works.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Cameras:sony-cybershot-dsc-w800": {
+    "deviceName": "Sony Cyber-shot DSC-W800",
+    "slug": "sony-cybershot-dsc-w800",
+    "category": "Cameras",
+    "explanation": "The W800 records 720p video and takes SD cards or Memory Stick PRO Duo. Any Class 4 or faster SD card works.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Cameras:nikon-coolpix-s3100": {
+    "deviceName": "Nikon Coolpix S3100",
+    "slug": "nikon-coolpix-s3100",
+    "category": "Cameras",
+    "explanation": "The Coolpix S3100 records 720p video. Nikon recommends Class 6 or faster SD cards for movies.",
     "reviewedAt": "2026-09-26"
   }
 }
