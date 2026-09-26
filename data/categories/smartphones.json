@@ -4,7 +4,7 @@
     "name": "iPhone 15 / 15 Pro",
     "category": "Smartphones",
     "slug": "iphone-15",
-    "metaDescription": "The iPhone 15 has no microSD slot, even with USB-C. Transfer speed depends on which model you own, and which USB-C readers actually work.",
+    "metaDescription": "The iPhone 15 has no microSD slot, even with USB-C. Transfer speed depends on which model you own, and which USB-C readers work.",
     "searchTerms": [
       "iphone 15",
       "iphone 15 pro",
@@ -44,7 +44,7 @@
       },
       {
         "q": "Is the iPhone 15 Pro faster than the base iPhone 15 for reading SD cards?",
-        "a": "Yes, significantly. The base iPhone 15/15 Plus USB-C port is limited to USB 2.0 speeds (~480 Mbps), while the iPhone 15 Pro/Pro Max support USB 3 (up to 10 Gbps). A UHS-II reader will actually reach its rated speed on a Pro model, but gets bottlenecked to USB 2.0 speeds on the base model."
+        "a": "Yes, significantly. The base iPhone 15/15 Plus USB-C port is limited to USB 2.0 speeds (~480 Mbps), while the iPhone 15 Pro/Pro Max support USB 3 (up to 10 Gbps). A UHS-II reader will reach its rated speed on a Pro model, but gets bottlenecked to USB 2.0 speeds on the base model."
       }
     ],
     "relatedDevices": [
@@ -208,7 +208,7 @@
         "64GB"
       ]
     },
-    "whySpecs": "The 3rd-gen iPhone SE is Apple's budget model, and its base configuration starts at just 64GB of internal storage, the smallest of any current iPhone, with no expansion path. That makes an external Lightning microSD reader more of a practical necessity here than on a Pro-tier iPhone with 256GB+: photo libraries and app data fill a 64GB phone noticeably faster, so regularly offloading photos/videos to a card via the Files app is a realistic way to stretch the entry-level storage tier. As with other Lightning-era iPhones, the port caps transfers at USB 2.0 speeds, so a basic UHS-I card is all you need.",
+    "whySpecs": "The 3rd-generation iPhone SE started at 64GB, the smallest storage Apple sold on a recent iPhone, with no way to expand it. A Lightning SD or microSD reader lets you move photos and videos off the phone through the Files app. Apple discontinued the SE in 2025.",
     "requiresReader": true,
     "recommendedReaders": [
       "lexar-lightning-microsd"
@@ -573,10 +573,10 @@
       ],
       "maxCapacity": "2TB (exFAT)"
     },
-    "whySpecs": "Rugged outdoor phones like the Armor 33 are marketed on huge headline capacity (up to 2TB) for users who record long off-grid excursions, thermal-camera footage, or long-duration video without cloud access. That workload benefits from a genuinely fast, reliable V30/A2 card rather than a cheap high-capacity card, since dropped frames during a once-only recording (a hike, a job-site inspection) can't be redone. Given the phone's rugged, dust/water-resistant design is also aimed at harsh environments, pairing it with a card rated for temperature and shock resistance is worth the extra cost.",
+    "whySpecs": "Rugged phones like the Armor 33 are bought for long trips without cloud access, and it takes cards up to 2TB. If you save video to the card, a U3/V30 card keeps up; an A2 rating helps apps stored on it.",
     "faq": [
       {
-        "q": "Can the Ulefone Armor 33 really use a 2TB microSD card?",
+        "q": "Can the Ulefone Armor 33 use a 2TB microSD card?",
         "a": "Yes, the Armor 33 supports up to <b>2TB</b> microSDXC cards formatted as exFAT, useful for long off-grid video recording sessions where you can't offload footage to the cloud."
       }
     ],

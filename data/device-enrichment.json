@@ -617,134 +617,153 @@
     "deviceName": "Raspberry Pi 5",
     "slug": "raspberry-pi-5",
     "category": "Computing & Tablets",
-    "explanation": "With a high-quality microSD A1 or A2 card, you can experience seamless app launches and buttery-smooth navigation on your Raspberry Pi 5, turning your projects into reality faster. It's ideal for developers, artists, and makers who require lightning-fast performance to bring their ideas to life.",
-    "generatedAt": "2026-01-05T07:27:34.483Z"
+    "explanation": "The Pi 5 boots from microSD over an SDR104 interface, about 100 MB/s, double the Pi 4. It supports the command queuing that A2 cards use, so an A2 card makes the OS feel faster here.",
+    "generatedAt": "2026-01-05T07:27:34.483Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:samsung-galaxy-tab-s9": {
     "deviceName": "Samsung Galaxy Tab S9",
     "slug": "samsung-galaxy-tab-s9",
     "category": "Computing & Tablets",
-    "explanation": "Capture life's big moments with confidence. With V30 speed microSD cards, your Galaxy Tab S9 can store and play 4K videos without delays or drops, letting you cherish every second. This way, your memories won't be limited by technical issues.",
-    "generatedAt": "2026-01-05T07:27:38.341Z"
+    "explanation": "The Galaxy Tab S9 takes microSDXC cards up to 1TB for media and files. Samsung doesn't allow apps to run from the card, so an A2 rating matters less than capacity.",
+    "generatedAt": "2026-01-05T07:27:38.341Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:amazon-fire-hd-10": {
     "deviceName": "Amazon Fire HD 10",
     "slug": "amazon-fire-hd-10",
     "category": "Computing & Tablets",
-    "explanation": "Store more of your favorite shows, movies, and music on the Fire HD 10 with a seamless user experience. Upgrade to a V30 microSDXC card for effortless video playback and streaming. Now you can enjoy uninterrupted entertainment on the go.",
-    "generatedAt": "2026-01-05T07:27:41.183Z"
+    "explanation": "The Fire HD 10 takes microSD cards up to 1TB. You can move many apps and downloaded Prime Video titles to the card; a Class 10 card is enough.",
+    "generatedAt": "2026-01-05T07:27:41.183Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:amazon-fire-max-11": {
     "deviceName": "Amazon Fire Max 11",
     "slug": "amazon-fire-max-11",
     "category": "Computing & Tablets",
-    "explanation": "Enjoy seamless access to your favorite movies, TV shows, and games. Upgrade to a V30 microSDXC card for uninterrupted entertainment on-the-go. With more storage, you can say goodbye to storage limitations and hello to endless fun on your Amazon Fire Max 11.",
-    "generatedAt": "2026-01-05T07:27:45.031Z"
+    "explanation": "The Fire Max 11 takes microSD cards up to 1TB, the same as the Fire HD 10. A U1 or U3 card from a known brand is enough for apps, books and downloaded video.",
+    "generatedAt": "2026-01-05T07:27:45.031Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:hp-chromebook-14": {
     "deviceName": "HP Chromebook 14",
     "slug": "hp-chromebook-14",
     "category": "Computing & Tablets",
-    "explanation": "With a microSD card, you can download a movie on a flight and watch it offline, or keep large files synced across apps without internet connection. This makes the HP Chromebook 14 a more portable entertainment and productivity partner. By adding extra storage, you can enjoy more apps and content on demand.",
-    "generatedAt": "2026-01-05T07:27:47.907Z"
+    "explanation": "HP Chromebook 14 models have a microSD reader for extra file storage. ChromeOS won't install Android apps to the card, but it works for files, media and Linux storage.",
+    "generatedAt": "2026-01-05T07:27:47.907Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:lenovo-tab-m10-plus": {
     "deviceName": "Lenovo Tab M10 Plus (3rd Gen)",
     "slug": "lenovo-tab-m10-plus",
     "category": "Computing & Tablets",
-    "explanation": "With a microSDXC card, you can keep all your favorite movies, music, and photos stored directly on your tablet, freeing up space for new downloads and keeping your content organized. This lets you enjoy seamless access to your media on the go, without the hassle of constant cloud syncs or deleted files.",
-    "generatedAt": "2026-01-05T07:27:51.760Z"
+    "explanation": "The Lenovo Tab M10 Plus (3rd Gen) takes microSD cards up to 1TB. A U1 card with an A1 rating works for movies, music and apps moved to the card.",
+    "generatedAt": "2026-01-05T07:27:51.760Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:raspberry-pi-4-model-b": {
     "deviceName": "Raspberry Pi 4 Model B",
     "slug": "raspberry-pi-4-model-b",
     "category": "Computing & Tablets",
-    "explanation": "With a high-performance microSD card like this one, you can enjoy seamless multitasking on your Raspberry Pi 4, whether you're coding, streaming, or running resource-intensive applications. This means you can get more done in less time without worrying about slowdowns or freezes. Your device stays responsive and efficient, so you can focus on what matters.",
-    "generatedAt": "2026-01-05T07:27:54.622Z"
+    "explanation": "The Pi 4 boots from microSD over an interface that tops out near 50 MB/s. An A1 card gives the best random-read speed it can use; A2 adds nothing on this board.",
+    "generatedAt": "2026-01-05T07:27:54.622Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:raspberry-pi-3-model-b-plus": {
     "deviceName": "Raspberry Pi 3 Model B+",
     "slug": "raspberry-pi-3-model-b-plus",
     "category": "Computing & Tablets",
-    "explanation": "Opt for an A1-rated microSD for seamless Raspberry Pi performance, which translates to quicker boot times and snappier app launches. This results in an overall more enjoyable and responsive computing experience.",
-    "generatedAt": "2026-01-05T07:27:58.505Z"
+    "explanation": "The Pi 3 B+ boots from microSD at about 25 MB/s. A Class 10 A1 card from a known brand keeps it responsive; 16GB or 32GB is enough.",
+    "generatedAt": "2026-01-05T07:27:58.505Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:raspberry-pi-zero-2-w": {
     "deviceName": "Raspberry Pi Zero 2 W",
     "slug": "raspberry-pi-zero-2-w",
     "category": "Computing & Tablets",
-    "explanation": "Boost your Raspberry Pi Zero 2 W projects with seamless performance, thanks to speedy storage from a reliable Class 10 microSD card. Enjoy uninterrupted execution of scripts and applications, ensuring your tiny but mighty projects stay online and on track. With this fast and secure storage, your tiny tech dreams become a huge reality.",
-    "generatedAt": "2026-01-05T07:28:01.405Z"
+    "explanation": "The Pi Zero 2 W runs headless projects from a microSD card. A 16GB or 32GB A1 card from a known brand is enough, and reliability matters more than speed.",
+    "generatedAt": "2026-01-05T07:28:01.405Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:orange-pi-5": {
     "deviceName": "Orange Pi 5",
     "slug": "orange-pi-5",
     "category": "Computing & Tablets",
-    "explanation": "Using a Class 10 microSD card in your Orange Pi 5 provides lightning-fast app loading, letting you stay focused on your projects without annoying delays. With seamless access to files and programs, you can work more efficiently and tackle complex tasks with ease. Upgrade your Orange Pi 5 today with a reliable microSD card, and unlock a more productive computing experience.",
-    "generatedAt": "2026-01-05T07:28:05.313Z"
+    "explanation": "The Orange Pi 5 boots from microSD if you aren't using NVMe or eMMC. An A1 or A2 card speeds up random I/O; for heavy workloads, NVMe is much faster.",
+    "generatedAt": "2026-01-05T07:28:05.313Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:macbook-air": {
     "deviceName": "MacBook Air",
     "slug": "macbook-air",
     "category": "Computing & Tablets",
-    "explanation": "With a USB-C reader, you can easily transfer photos and files to your MacBook Air, so you can quickly free up space and get back to work or play. This means you'll have more time for the things you love, without being slowed down by cluttered storage.",
-    "generatedAt": "2026-01-05T07:28:08.135Z"
+    "explanation": "The MacBook Air has no SD card slot. Use a USB-C SD reader; a UHS-II reader copies UHS-II cards two to three times faster than UHS-I.",
+    "generatedAt": "2026-01-05T07:28:08.135Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:ipad-air": {
     "deviceName": "iPad Air",
     "slug": "ipad-air",
     "category": "Computing & Tablets",
-    "explanation": "Using an external USB-C reader enables seamless file transfer between your iPad Air and external devices, streamlining your workflow and freeing up space for more creative pursuits.",
-    "generatedAt": "2026-01-05T07:28:10.914Z"
+    "explanation": "USB-C iPad Air models (4th generation and later) read SD cards through a USB-C reader in the Files and Photos apps. Older Lightning models need Apple's Lightning to SD Card Camera Reader.",
+    "generatedAt": "2026-01-05T07:28:10.914Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:ipad-air-3": {
     "deviceName": "iPad Air 3rd Generation",
     "slug": "ipad-air-3",
     "category": "Computing & Tablets",
-    "explanation": "With an external Lightning reader, you can instantly expand your iPad Air 3's storage without stopping what matters - now you can download files, store more photos, and play your favorite games uninterrupted. This gives you the freedom to stay focused on what you're doing without worrying about running out of space.",
-    "generatedAt": "2026-01-05T07:28:13.811Z"
+    "explanation": "The iPad Air 3 has a Lightning port, so it needs a Lightning SD card reader. Transfers run at USB 2.0 speed, so a UHS-I card is enough.",
+    "generatedAt": "2026-01-05T07:28:13.811Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:macbook-pro": {
     "deviceName": "MacBook Pro",
     "slug": "macbook-pro",
     "category": "Computing & Tablets",
-    "explanation": "With a high-speed external USB-C/Thunderbolt reader, you can transfer large files in seconds, freeing up time for your creative workflow. This means you can review and edit your projects faster, stay focused, and deliver high-quality results.",
-    "generatedAt": "2026-01-05T07:28:16.637Z"
+    "explanation": "The 14-inch and 16-inch MacBook Pro (2021 and later) have a built-in SDXC slot that supports UHS-II. The 13-inch models have no slot and need a USB-C reader.",
+    "generatedAt": "2026-01-05T07:28:16.637Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:ipad-pro": {
     "deviceName": "iPad Pro",
     "slug": "ipad-pro",
     "category": "Computing & Tablets",
-    "explanation": "With a fast external USB-C reader, you can transfer files to your iPad Pro instantly, making it easy to free up storage and keep your device running smoothly. This means you can keep creating and stay productive without interruptions. Whether you're editing videos or working on a project, a quick data transfer keeps you in the zone.",
-    "generatedAt": "2026-01-05T07:28:19.547Z"
+    "explanation": "The iPad Pro reads SD cards through a USB-C or Thunderbolt reader in the Files and Photos apps. M-series models transfer fast enough to benefit from a UHS-II reader and card.",
+    "generatedAt": "2026-01-05T07:28:19.547Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:ipad-9th-gen": {
     "deviceName": "iPad 9th Generation",
     "slug": "ipad-9th-gen",
     "category": "Computing & Tablets",
-    "explanation": "Easily transfer files from your iPad 9th Gen with an external storage solution. Upgrade storage without slowing down your device. With a Lightning-enabled SD card, expand your storage capacity on-the-go.",
-    "generatedAt": "2026-01-05T07:28:22.415Z"
+    "explanation": "The iPad 9th generation has a Lightning port and reads SD cards through a Lightning reader at USB 2.0 speed. A UHS-I card is enough.",
+    "generatedAt": "2026-01-05T07:28:22.415Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:samsung-galaxy-tab-s10-fe": {
     "deviceName": "Samsung Galaxy Tab S10 FE",
     "slug": "samsung-galaxy-tab-s10-fe",
     "category": "Computing & Tablets",
-    "explanation": "With the support of an A2 certified microSD card, your Samsung Galaxy Tab S10 FE adapts to the demands of your mobile gaming sessions, keeping the action uninterrupted and your experience fluid. Expand your storage seamlessly, enjoying effortless app installs, music streaming, and media downloads. This convenience boosts your productivity and lets you focus on what matters.",
-    "generatedAt": "2026-01-05T07:28:26.327Z"
+    "explanation": "The Galaxy Tab S10 FE takes microSD cards up to 2TB for media and files. Samsung doesn't support Adoptable Storage, so apps stay on internal storage.",
+    "generatedAt": "2026-01-05T07:28:26.327Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:samsung-galaxy-tab-s10-fe-plus": {
     "deviceName": "Samsung Galaxy Tab S10 FE+",
     "slug": "samsung-galaxy-tab-s10-fe-plus",
     "category": "Computing & Tablets",
-    "explanation": "With a microSDXC UHS-I, you can upgrade your storage and keep your Tab S10 FE+ running smoothly, making it perfect for binge-watching your favorite shows or working on multimedia projects. This means you can store more files, apps, and content without any lag or storage limitations. Your device stays fast and responsive, helping you stay productive and entertained.",
-    "generatedAt": "2026-01-05T07:28:30.204Z"
+    "explanation": "The Galaxy Tab S10 FE+ takes microSD cards up to 2TB for media and files. Like other Samsung tablets, it doesn't support Adoptable Storage.",
+    "generatedAt": "2026-01-05T07:28:30.204Z",
+    "reviewedAt": "2026-09-26"
   },
   "Computing & Tablets:samsung-galaxy-tab-s10-ultra": {
     "deviceName": "Samsung Galaxy Tab S10 Ultra",
     "slug": "samsung-galaxy-tab-s10-ultra",
     "category": "Computing & Tablets",
-    "explanation": "With microSDXC UHS-I storage, you can store more high-quality content, like 4K movies and games, on your Samsung Galaxy Tab S10 Ultra, and enjoy seamless access to everything you need. This lets you dive deeper into your projects and hobbies without worrying about storage space holding you back.",
-    "generatedAt": "2026-01-05T07:28:34.075Z"
+    "explanation": "The Galaxy Tab S10 Ultra takes microSD cards for media and files. It runs a MediaTek Dimensity 9300+, and a U3/V30 card handles saving 4K video to the card.",
+    "generatedAt": "2026-01-05T07:28:34.075Z",
+    "reviewedAt": "2026-09-26"
   },
   "Dash Cams:viofo-a229-duo": {
     "deviceName": "VIOFO A229 Duo",
@@ -1284,50 +1303,57 @@
     "deviceName": "iPhone 15 / 15 Pro",
     "slug": "iphone-15",
     "category": "Smartphones",
-    "explanation": "Enjoy seamless photo and video transfer with your iPhone 15. This means no lengthy waits or frustrating drops in your creative workflow. With external SD card access via USB-C reader, your content is always at your fingertips.",
-    "generatedAt": "2026-01-05T07:32:35.327Z"
+    "explanation": "The iPhone 15 has no SD card slot. Its USB-C port reads SD cards through a reader in the Files app, at USB 2.0 speed on the 15 and 15 Plus and up to 10 Gbps on the 15 Pro.",
+    "generatedAt": "2026-01-05T07:32:35.327Z",
+    "reviewedAt": "2026-09-26"
   },
   "Smartphones:iphone-14": {
     "deviceName": "iPhone 14 / 14 Pro",
     "slug": "iphone-14",
     "category": "Smartphones",
-    "explanation": "With a Lightning reader, you can instantly access and transfer your photos and videos without needing to physically plug in your iPhone. This makes sharing and editing your content on the go so much easier. By upgrading to a Lightning reader, you'll have more freedom to capture and share life's moments without interruptions.",
-    "generatedAt": "2026-01-05T07:32:38.181Z"
+    "explanation": "The iPhone 14 has no SD card slot and uses Lightning, so any SD reader runs at USB 2.0 speed. A UHS-I card is as fast as it can use.",
+    "generatedAt": "2026-01-05T07:32:38.181Z",
+    "reviewedAt": "2026-09-26"
   },
   "Smartphones:iphone-13": {
     "deviceName": "iPhone 13 / 13 Pro",
     "slug": "iphone-13",
     "category": "Smartphones",
-    "explanation": "Upgrade to the latest microSD reader and enjoy seamless content transfer between your iPhone 13 and compatible external storage. This keeps your phone clutter-free, letting you focus on capturing more moments, not deleting memories. By expanding your storage, you can keep creating and sharing without interruptions.",
-    "generatedAt": "2026-01-05T07:32:41.039Z"
+    "explanation": "The iPhone 13 has no SD card slot and uses Lightning, so SD readers run at USB 2.0 speed. A UHS-I card is enough.",
+    "generatedAt": "2026-01-05T07:32:41.039Z",
+    "reviewedAt": "2026-09-26"
   },
   "Smartphones:iphone-14-pro-max": {
     "deviceName": "iPhone 14 Pro Max",
     "slug": "iphone-14-pro-max",
     "category": "Smartphones",
-    "explanation": "With external SD card access via Lightning reader, you can expand your iPhone 14 Pro Max storage seamlessly. This means you'll never have to worry about running out of space for your photos, videos, or files, giving you peace of mind to capture life's moments. Now you'll be able to store, transfer, and manage your media on the go.",
-    "generatedAt": "2026-01-05T07:32:43.923Z"
+    "explanation": "The iPhone 14 Pro Max has no SD slot and can't record to an external card. Use a Lightning reader to offload photos and ProRes video after you shoot.",
+    "generatedAt": "2026-01-05T07:32:43.923Z",
+    "reviewedAt": "2026-09-26"
   },
   "Smartphones:iphone-se": {
     "deviceName": "iPhone SE (3rd Generation)",
     "slug": "iphone-se",
     "category": "Smartphones",
-    "explanation": "With an external SD card via Lightning reader, you can expand your iPhone SE's storage on the go, freeing up space for more photos, videos, or music without sacrificing performance. This means you can keep taking and playing your favorite content without worrying about running out of room. Enjoy a seamless experience, always.",
-    "generatedAt": "2026-01-05T07:32:46.772Z"
+    "explanation": "The iPhone SE (3rd generation) has no SD slot and started at 64GB. A Lightning SD reader lets you move photos and video off the phone to free space.",
+    "generatedAt": "2026-01-05T07:32:46.772Z",
+    "reviewedAt": "2026-09-26"
   },
   "Smartphones:samsung-galaxy-s23": {
     "deviceName": "Samsung Galaxy S23 / S23+",
     "slug": "samsung-galaxy-s23",
     "category": "Smartphones",
-    "explanation": "With a USB-C reader, you can store and transfer more photos and videos on your Galaxy S23, keeping them organized and easily accessible on the go. This means you can keep your favorite memories and moments just a tap away.",
-    "generatedAt": "2026-01-05T07:32:49.617Z"
+    "explanation": "The Galaxy S23 has no microSD slot; Samsung dropped it from the Galaxy S line with the S21. Use a USB-C card reader to move files.",
+    "generatedAt": "2026-01-05T07:32:49.617Z",
+    "reviewedAt": "2026-09-26"
   },
   "Smartphones:google-pixel-8": {
     "deviceName": "Google Pixel 8 / 8 Pro",
     "slug": "google-pixel-8",
     "category": "Smartphones",
-    "explanation": "Enabling expanded storage on your Google Pixel 8 or 8 Pro with a USB-C external card reader lets you store more photos, videos, and apps without running out of space. This means you can capture more memories, download more games, and save more files without worrying about running low. With more storage at your fingertips, you can do more on the go.",
-    "generatedAt": "2026-01-05T07:32:52.504Z"
+    "explanation": "No Pixel phone has a microSD slot, including the Pixel 8 and 8 Pro. Use a USB-C card reader to copy files to or from an SD card.",
+    "generatedAt": "2026-01-05T07:32:52.504Z",
+    "reviewedAt": "2026-09-26"
   },
   "Drones:potensic-atom-2": {
     "deviceName": "Potensic Atom 2",
@@ -1621,6 +1647,55 @@
     "slug": "bushnell-core-ds-4k",
     "category": "Trail Cameras",
     "explanation": "The Bushnell Core DS-4K takes full-size SD cards up to 512GB. Bushnell recommends U3/V30 for its 4K trigger video.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Computing & Tablets:raspberry-pi-compute-module-5": {
+    "deviceName": "Raspberry Pi Compute Module 5 (CM5)",
+    "slug": "raspberry-pi-compute-module-5",
+    "category": "Computing & Tablets",
+    "explanation": "The CM5 comes with 16GB to 64GB of onboard eMMC, or as a Lite version that boots from a microSD slot on the carrier board. For a Lite build running around the clock, use a high-endurance card.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Smartphones:sony-xperia-1-vi": {
+    "deviceName": "Sony Xperia 1 VI",
+    "slug": "sony-xperia-1-vi",
+    "category": "Smartphones",
+    "explanation": "The Xperia 1 VI takes microSDXC cards up to 1.5TB and can save photos and 4K video straight to the card. Use a U3/V30 card for video.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Smartphones:samsung-galaxy-a55-5g": {
+    "deviceName": "Samsung Galaxy A55 5G",
+    "slug": "samsung-galaxy-a55-5g",
+    "category": "Smartphones",
+    "explanation": "The Galaxy A55 5G has a hybrid tray: one SIM plus a microSD card up to 1TB, or two SIMs. Samsung doesn't allow apps on the card, so buy for capacity.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Smartphones:moto-g-stylus-5g-2025": {
+    "deviceName": "Motorola Moto G Stylus 5G (2025)",
+    "slug": "moto-g-stylus-5g-2025",
+    "category": "Smartphones",
+    "explanation": "The Moto G Stylus 5G (2025) takes microSD cards up to 1TB. Motorola supports Adoptable Storage, so an A1 or A2 card keeps apps on the card responsive.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Smartphones:samsung-galaxy-xcover-7": {
+    "deviceName": "Samsung Galaxy XCover 7",
+    "slug": "samsung-galaxy-xcover-7",
+    "category": "Smartphones",
+    "explanation": "The Galaxy XCover 7 takes microSD cards up to 1TB. For shift-long scanning and logging apps, an endurance-rated card lasts longer than a standard one.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Smartphones:xiaomi-redmi-note-15": {
+    "deviceName": "Xiaomi Redmi Note 15",
+    "slug": "xiaomi-redmi-note-15",
+    "category": "Smartphones",
+    "explanation": "The Redmi Note 15 takes microSD cards for photos, music and files. A U1 A1 card is enough unless you save 4K video to the card.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Smartphones:ulefone-armor-33": {
+    "deviceName": "Ulefone Armor 33",
+    "slug": "ulefone-armor-33",
+    "category": "Smartphones",
+    "explanation": "The Ulefone Armor 33 takes microSDXC cards up to 2TB, formatted exFAT. A U3/V30 card handles long video recordings saved straight to the card.",
     "reviewedAt": "2026-09-26"
   }
 }

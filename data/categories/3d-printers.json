@@ -93,7 +93,7 @@
     "faq": [
       {
         "q": "Is the P1S microSD card different from the X1-Carbon's?",
-        "a": "No, both use the same <b>microSD, FAT32</b> workflow. Any genuine Class 10 / U1 card that works in the X1-Carbon works identically in the P1S. The P1S simply lacks the X1C's lidar and some sensors; <b>storage requirements are the same</b>."
+        "a": "No, both use the same <b>microSD, FAT32</b> workflow. Any genuine Class 10 / U1 card that works in the X1-Carbon works identically in the P1S. The P1S lacks the X1C's lidar and some sensors; <b>storage requirements are the same</b>."
       },
       {
         "q": "What's the best value microSD card for the P1S?",
@@ -190,7 +190,7 @@
       ],
       "maxCapacity": "128GB (FAT32)"
     },
-    "whySpecs": "The Ender 3 V3 prints offline from a microSD card, and like most FDM printers its card requirements are very modest. A basic <b>Class 10 / U1</b> card reads G-code with room to spare. The thing that actually trips up Ender owners is <b>formatting and reliability</b>, not speed: the printer is happiest with a <b>FAT32-formatted card of 32GB or less</b>, and many 'SD card not detected' complaints trace back to a card formatted as exFAT, a worn bundled card, or a counterfeit. Buy a genuine name-brand card, keep it small, and format FAT32. There is no benefit to a fast or high-capacity card here. This is a volume-friendly, budget recommendation.",
+    "whySpecs": "The Ender 3 V3 prints offline from a microSD card, and like most FDM printers its card requirements are very modest. A basic <b>Class 10 / U1</b> card reads G-code with room to spare. The thing that trips up Ender owners is <b>formatting and reliability</b>, not speed: the printer is happiest with a <b>FAT32-formatted card of 32GB or less</b>, and many 'SD card not detected' complaints trace back to a card formatted as exFAT, a worn bundled card, or a counterfeit. Buy a genuine name-brand card, keep it small, and format FAT32. There is no benefit to a fast or high-capacity card here. This is a volume-friendly, budget recommendation.",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-microsd"

@@ -188,7 +188,7 @@
       ],
       "maxCapacity": "512GB (Reliable), 1TB (Reported)"
     },
-    "whySpecs": "Unlike the standalone MPCs, the SP-404MKII does <b>not stream samples off the card during a set</b>. Samples are imported into the unit's internal storage, and the SD card is used for <b>importing/exporting samples, saving projects, and backups</b>. That means raw speed is far less important than reliability: a Class 10 / U1 card is plenty. The two things that actually cause problems are unsupported capacities and bad formatting, so use a name-brand card and <b>format it inside the SP-404MKII</b> before transferring files.",
+    "whySpecs": "Unlike the standalone MPCs, the SP-404MKII does <b>not stream samples off the card during a set</b>. Samples are imported into the unit's internal storage, and the SD card is used for <b>importing/exporting samples, saving projects, and backups</b>. That means raw speed is far less important than reliability: a Class 10 / U1 card is plenty. The two things that cause problems are unsupported capacities and bad formatting, so use a name-brand card and <b>format it inside the SP-404MKII</b> before transferring files.",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-sd-uhs1"

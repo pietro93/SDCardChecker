@@ -20,7 +20,7 @@
       ],
       "maxCapacity": "2TB (SDXC spec limit)"
     },
-    "whySpecs": "The Raspberry Pi 5 boots its operating system from the microSD card, and it's the first Pi that can actually read one quickly: the Pi 5's SD interface supports <b>SDR104</b>, roughly doubling the bus speed to about 100 MB/s versus the ~50 MB/s ceiling on the Pi 4. To see that, you need a UHS-I card that's genuinely rated for it. A slow card is the single most common cause of a Pi 5 that feels sluggish. Beyond raw throughput, look for an <b>A2</b> rating: the 'A' (Application Performance Class) ratings describe random read/write speed, which is what an operating system actually does all day, and unlike the Pi 4 the Pi 5 supports the command queuing that lets A2 cards deliver on it. If you need more speed than any microSD can give, the Pi 5's PCIe connector accepts an M.2 HAT and NVMe SSD.",
+    "whySpecs": "The Raspberry Pi 5 boots its operating system from the microSD card, and it's the first Pi that can read one quickly: the Pi 5's SD interface supports <b>SDR104</b>, roughly doubling the bus speed to about 100 MB/s versus the ~50 MB/s ceiling on the Pi 4. To see that, you need a UHS-I card that's genuinely rated for it. A slow card is the single most common cause of a Pi 5 that feels sluggish. Beyond raw throughput, look for an <b>A2</b> rating: the 'A' (Application Performance Class) ratings describe random read/write speed, which is what an operating system does all day, and unlike the Pi 4 the Pi 5 supports the command queuing that lets A2 cards deliver on it. If you need more speed than any microSD can give, the Pi 5's PCIe connector accepts an M.2 HAT and NVMe SSD.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -38,7 +38,7 @@
         "a": "<b>The A2 rating is more important.</b> The 'V' rating (e.g., V30) is for sustained video recording speed, while the 'A' rating (Application Performance Class) is for random read/write operations, which is what an operating system does. An A2 card will feel much faster in daily use."
       },
       {
-        "q": "Is an A2 card actually worth it on the Pi 5, or is A1 fine?",
+        "q": "Is an A2 card worth it on the Pi 5, or is A1 fine?",
         "a": "<b>On the Pi 5, A2 is worth paying for, which was not true on the Pi 4.</b> A2 cards get their speed advantage from command queuing, and the Pi 4's SD host support never took advantage of it, so A2 cards there performed much like A1. The Pi 5 changed that, and it also raised the bus speed to SDR104 (~100 MB/s vs ~50 MB/s). If you're reusing a card from an older Pi, that's the upgrade you'd feel."
       },
       {
@@ -52,7 +52,7 @@
       "raspberry-pi-compute-module-5"
     ],
     "notes": "Targets a huge DIY and technical audience. The card is a mandatory component.",
-    "metaDescription": "The Pi 5 is the first Raspberry Pi with an SDR104 SD interface, roughly double the Pi 4's speed. A UHS-I A2 card is what actually uses it."
+    "metaDescription": "The Pi 5 is the first Raspberry Pi with an SDR104 SD interface, roughly double the Pi 4's speed. A UHS-I A2 card is what uses it."
   },
   {
     "id": "raspberry-pi-compute-module-5",
@@ -122,7 +122,7 @@
       ],
       "maxCapacity": "1TB"
     },
-    "whySpecs": "The Galaxy Tab S9 records 4K video and supports microSD cards up to 1TB for expanding storage. V30 speed is required for smooth 4K video recording and playback. A2 app performance ensures fast OS and app responsiveness when running applications from the card.",
+    "whySpecs": "The Tab S9 supports microSD cards up to 1TB. Samsung's One UI stores photos, video and files on the card but doesn't support Adoptable Storage. A U3/V30 card handles saving 4K video to the card.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -133,8 +133,8 @@
     ],
     "faq": [
       {
-        "q": "Can I install apps on the SD card on the Tab S9?",
-        "a": "<b>Yes, Android allows some apps to be moved to the SD card</b> to free up internal storage. However, performance will be best for apps installed on the tablet's faster internal memory. The SD card is ideal for media like movies, photos, and music."
+        "q": "Can I install apps on the SD card on the Galaxy Tab S9?",
+        "a": "<b>No.</b> Samsung doesn't support Adoptable Storage, so apps stay on internal storage. Use the card for media, downloads and documents."
       }
     ],
     "relatedDevices": [
@@ -216,7 +216,7 @@
       ],
       "maxCapacity": "1TB"
     },
-    "whySpecs": "The Fire Max 11 is Amazon's premium tablet with a large 11-inch display. It supports microSD expansion up to 1TB, making it ideal for storing large media libraries. A V30 card ensures smooth playback of high-quality video content.",
+    "whySpecs": "The Fire Max 11 is Amazon's 11-inch tablet. It takes microSD cards up to 1TB for media libraries, and a V30 card from a known brand keeps up with downloaded HD video.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -287,7 +287,7 @@
       },
       {
         "q": "What's the best SD card capacity for students?",
-        "a": "<b>64GB to 128GB is ideal for most students.</b> This provides ample space for offline Google Drive files, downloaded videos for offline viewing, and document storage without excessive cost."
+        "a": "<b>64GB to 128GB for most students.</b> That covers offline Google Drive files, downloaded videos and documents."
       }
     ],
     "relatedDevices": [
@@ -565,7 +565,7 @@
         "256GB"
       ]
     },
-    "whySpecs": "MacBook Air lacks SD card slot. USB-C readers achieve full speed potential on modern models.",
+    "whySpecs": "No MacBook Air model has an SD card slot. A USB-C reader handles SD and microSD. Match the reader to your cards: a UHS-II reader only helps with UHS-II cards.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -643,14 +643,14 @@
       "macbook pro m4"
     ],
     "sdCard": {
-      "type": "External via USB-C/Thunderbolt Reader",
+      "type": "Built-in SDXC UHS-II slot (14/16-inch, 2021+); USB-C reader on 13-inch",
       "minSpeed": "UHS-I to UHS-II",
       "recommendedCapacity": [
         "128GB",
         "256GB"
       ]
     },
-    "whySpecs": "MacBook Pro uses Thunderbolt/USB-C. High-speed readers recommended for video workflows.",
+    "whySpecs": "Apple brought the SDXC slot back on the 14-inch and 16-inch MacBook Pro in 2021, and it supports UHS-II at up to about 250 to 300 MB/s. The 13-inch MacBook Pro has no slot. For CFexpress or faster offloads, use a Thunderbolt reader.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -660,7 +660,19 @@
       "macbook-air",
       "canon-eos-r5"
     ],
-    "imageUrl": "/img/devices/computing/macbook-pro.webp"
+    "imageUrl": "/img/devices/computing/macbook-pro.webp",
+    "faq": [
+      {
+        "q": "Does the MacBook Pro have an SD card slot?",
+        "a": "<b>The 14-inch and 16-inch models from 2021 onward do.</b> The slot supports UHS-II. The 13-inch MacBook Pro has no slot."
+      },
+      {
+        "q": "Is the MacBook Pro SD slot UHS-II?",
+        "a": "<b>Yes.</b> It reads UHS-II cards at up to about 250 to 300 MB/s."
+      }
+    ],
+    "customTitle": "MacBook Pro SD Card Slot: Which Models Have It (UHS-II)",
+    "metaDescription": "The 14-inch and 16-inch MacBook Pro (2021 and later) have a built-in SDXC UHS-II slot. 13-inch models need a USB-C reader. Best cards and readers."
   },
   {
     "id": "ipad-pro",
@@ -741,7 +753,7 @@
       ],
       "maxCapacity": "2TB"
     },
-    "whySpecs": "Mid-range Samsung tablet with 10.9\" IPS LCD, 90Hz display, Exynos 1580, and IP68 water resistance. Supports adoptable storage, allowing microSD cards to function as internal storage for apps and media. A2 application performance rating is crucial for smooth app responsiveness when running from expanded storage. V30 ensures stable 4K video playback.",
+    "whySpecs": "Mid-range Samsung tablet with a 10.9-inch 90Hz LCD, Exynos 1580 and IP68 rating. It reads microSD cards up to 2TB for photos, video and documents. Samsung's One UI doesn't support Adoptable Storage, so the card can't hold apps.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -755,16 +767,16 @@
     ],
     "faq": [
       {
-        "q": "Can I use adoptable storage on the Tab S10 FE?",
-        "a": "<b>Yes, Android's Adoptable Storage feature lets you format the microSD card as internal storage.</b> This merges the card's capacity with your tablet's built-in storage for seamless app installation. Go to Settings > Storage > Format as Internal to enable it."
+        "q": "Can I use Adoptable Storage on the Galaxy Tab S10 FE?",
+        "a": "<b>No.</b> Samsung disables Adoptable Storage in One UI. The card stores media and files, not apps."
       },
       {
-        "q": "What capacity should I get?",
-        "a": "<b>512GB is ideal for most users</b>, providing ample space for apps, media, and documents. If you plan to store large media libraries or install numerous large games, 1TB is recommended. The FE supports up to 2TB, though cards that large are expensive."
+        "q": "What capacity should I get for the Tab S10 FE?",
+        "a": "<b>256GB or 512GB</b> for most owners. The tablet supports up to 2TB."
       },
       {
-        "q": "Is A2 really necessary?",
-        "a": "<b>Yes, A2 is highly recommended for the Tab S10 FE</b>, especially if using adoptable storage. The A2 rating ensures faster app launches, smoother multitasking, and better overall responsiveness when apps are installed on the microSD card."
+        "q": "Is an A2 card necessary for the Tab S10 FE?",
+        "a": "<b>No.</b> Apps can't run from the card, so the A rating matters little. Buy for capacity and a U3 rating."
       }
     ],
     "relatedDevices": [
@@ -798,7 +810,7 @@
       ],
       "maxCapacity": "2TB"
     },
-    "whySpecs": "Larger variant of the S10 FE with 13.1\" IPS LCD, Exynos 1580, and 10090mAh battery. Supports adoptable storage for seamless internal storage expansion. The larger screen and battery make it ideal for media consumption and productivity. A2 application performance ensures responsive app launch and multitasking. V30 handles 4K video and streaming smoothly.",
+    "whySpecs": "The FE+ is the 13.1-inch version of the S10 FE with an Exynos 1580 and a 10,090mAh battery. It reads microSD cards up to 2TB for media and documents. Samsung's One UI doesn't support Adoptable Storage.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -812,12 +824,12 @@
     ],
     "faq": [
       {
-        "q": "What's the difference between Tab S10 FE and FE+?",
-        "a": "<b>The FE+ features a larger 13.1\" screen, bigger 10090mAh battery, and slightly more optimized performance.</b> Both share identical microSD support (up to 2TB) and A2 compatibility. Choose based on screen size preference and portability needs."
+        "q": "What's the difference between the Tab S10 FE and FE+?",
+        "a": "<b>Screen and battery size.</b> The FE+ has a 13.1-inch screen and a bigger battery. Both take microSD cards up to 2TB."
       },
       {
-        "q": "Is 512GB enough?",
-        "a": "<b>512GB is a good starting point</b>, especially if using adoptable storage to merge with internal storage. For heavy media libraries or extensive app collections, 1TB is recommended."
+        "q": "Is 512GB enough for the Tab S10 FE+?",
+        "a": "<b>For most media libraries, yes.</b> Go to 1TB if you store a lot of downloaded video."
       }
     ],
     "relatedDevices": [
@@ -851,7 +863,7 @@
       ],
       "maxCapacity": "1.5TB - 2TB"
     },
-    "whySpecs": "Premium flagship tablet with 14.6\" AMOLED display (120Hz), Snapdragon Dimensity 9300+, and WiFi 7. The massive screen and top-tier processor demand fast, reliable storage for 4K video, gaming, and productivity. A2 application performance ensures responsive multitasking and app launches. V30 ensures smooth 4K streaming and gameplay from microSD.",
+    "whySpecs": "Samsung's 14.6-inch flagship tablet has a 120Hz AMOLED and a MediaTek Dimensity 9300+. The microSD slot holds photos, video and documents. Samsung doesn't support Adoptable Storage, so apps stay on internal storage.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-microsd-v60"
@@ -865,16 +877,16 @@
     ],
     "faq": [
       {
-        "q": "What's the advantage of the Tab S10 Ultra?",
-        "a": "<b>The Ultra features a 14.6\" AMOLED display, Dimensity 9300+ processor, and WiFi 7 connectivity.</b> These premium specs justify higher-capacity microSD investments for handling demanding 4K media, gaming, and creative applications."
+        "q": "What processor does the Galaxy Tab S10 Ultra use?",
+        "a": "<b>MediaTek's Dimensity 9300+.</b> It has a 14.6-inch 120Hz AMOLED and Wi-Fi 7."
       },
       {
-        "q": "Should I use V60 cards instead of V30?",
-        "a": "<b>V30 is sufficient for most uses</b>, but V60 cards provide extra headroom for sustained 4K video streaming and gaming. If budget allows, V60 is a worthwhile upgrade for future-proofing."
+        "q": "Should I use V60 cards instead of V30 in the Tab S10 Ultra?",
+        "a": "<b>No.</b> The slot is UHS-I, so a V30 card is as fast as the tablet can use."
       },
       {
-        "q": "What capacity is ideal?",
-        "a": "<b>1TB is the recommended starting point</b> for the Ultra's premium positioning. With a 14.6\" display, users typically store larger media libraries and 4K video collections."
+        "q": "What microSD capacity is best for the Tab S10 Ultra?",
+        "a": "<b>512GB or 1TB</b> for large video libraries."
       }
     ],
     "relatedDevices": [
