@@ -405,7 +405,7 @@
       ],
       "sdCard": {
         "type": "microSD UHS-I (UHS-II Compatible)",
-        "minSpeed": "A2 / V30",
+        "minSpeed": "V30 / U3",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -415,7 +415,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "Shoots 5.3K60, 4K120 and 2.7K240. <b>V30 is the floor, not a nice-to-have</b>. It guarantees 30 MB/s of sustained write, which comfortably covers the Hero 13's High bitrate setting of roughly 120 Mbps (about 15 MB/s) with enough headroom that a card slowing down mid-clip won't drop frames or corrupt the file. GoPro's current guidance also asks for an <b>A2</b> rating on top of V30, and the Hero 13 supports cards up to <b>1TB</b>, so there's no reason to cap yourself at 512GB if you shoot long days.",
+      "whySpecs": "Shoots 5.3K60, 4K120 and 2.7K240. GoPro requires V30 or UHS-3 cards. V30 guarantees 30 MB/s of sustained write, about double the Hero 13's 120 Mbps High bitrate, so the card does not fall behind mid-clip. GoPro supports cards up to <b>1TB</b>.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -432,20 +432,20 @@
       ],
       "faq": [
         {
-          "q": "Can I use a regular SD card with adapter?",
-          "a": "<b>No, the GoPro Hero 13 Black only accepts microSD cards</b>. Full-size SD cards will not work even with an adapter. The device specifically requires <b>microSD format cards</b> for compatibility."
+          "q": "Can I use a full-size SD card in the GoPro Hero 13?",
+          "a": "<b>No, the Hero 13 only takes microSD cards.</b>"
         },
         {
-          "q": "What's the fastest card I should get?",
-          "a": "<b>V30 speed class is sufficient for standard GoPro Hero 13 recording</b>. V60 or faster cards are useful only for professional multi-camera workflows, simultaneous backup recording, or future-proofing for newer, more demanding cameras. The Hero 13 has a UHS-I slot, so a UHS-II card will work but will simply run at UHS-I speeds in the camera. You'd only see the extra speed when offloading footage in a UHS-II reader."
+          "q": "Do I need a V60 or UHS-II card for the Hero 13?",
+          "a": "<b>No.</b> V30 covers every recording mode. The slot is UHS-I, so a UHS-II card records at UHS-I speed and only offloads faster in a UHS-II reader."
         },
         {
           "q": "Does the GoPro Hero 13 support a 1TB microSD card?",
-          "a": "<b>Yes, GoPro supports cards up to 1TB on the Hero 13.</b> Older guidance capping GoPro at 512GB is out of date. A 1TB card is worth it if you shoot all-day sessions and don't want to swap cards in the field; otherwise two 256GB or 512GB cards are the safer buy, because a single failed card takes down everything you shot rather than half of it."
+          "a": "<b>Yes, GoPro supports cards up to 1TB on the Hero 13.</b> A 1TB card saves swaps on all-day shoots. Two 512GB cards are safer, because one failed card then loses half your footage instead of all of it."
         },
         {
-          "q": "How often should I replace my SD card?",
-          "a": "<b>Quality V30 microSD cards typically last 3-5 years</b> with regular use. <b>Replace your card immediately if you experience error messages, file corruption, or refused write operations</b> to prevent loss of critical footage."
+          "q": "How often should I replace my GoPro SD card?",
+          "a": "<b>Replace it at the first error message, corrupted file or failed write.</b> Format it in the camera, not on a computer, each time you offload."
         }
       ],
       "relatedDevices": [
@@ -456,7 +456,7 @@
         "dji-mini-4-pro"
       ],
       "notes": "Card requirements match Hero 12. Official GoPro guidance: A2/V30, up to 1TB.",
-      "metaDescription": "The GoPro Hero 13 Black needs a V30 microSD card, minimum, for 5.3K60 and 4K120 video. V30 is the floor here, not a nice-to-have - here's why."
+      "metaDescription": "The GoPro Hero 13 Black needs a V30 or UHS-3 microSD card, up to 1TB. V30 doubles the 120 Mbps High bitrate for 5.3K60 and 4K120. Best cards."
     },
     {
       "id": "gopro-hero-12",
@@ -615,7 +615,7 @@
       "name": "DJI Osmo Pocket 3",
       "category": "Action Cameras",
       "slug": "dji-osmo-pocket-3",
-      "metaDescription": "DJI requires a UHS-I microSD card rated U3/V30 for the Osmo Pocket 3 (max 512GB). Here are the best-tested cards that meet spec.",
+      "metaDescription": "DJI requires a U3/V30 UHS-I microSD card for the Osmo Pocket 3, up to 512GB. A 128GB card holds about 2 hours of 4K/60. Best cards that meet spec.",
       "searchTerms": [
         "dji pocket 3 sd card",
         "osmo pocket 3 microsd",
@@ -624,7 +624,7 @@
         "osmo pocket 3 v30 u3"
       ],
       "sdCard": {
-        "type": "microSD UHS-I/UHS-II",
+        "type": "microSD UHS-I",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
@@ -648,11 +648,15 @@
       "faq": [
         {
           "q": "What are DJI's official microSD card requirements for the Osmo Pocket 3?",
-          "a": "<b>DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum, with a maximum supported capacity of 512GB.</b> These are DJI's published specifications for the Pocket 3. Cards meeting these specs, such as the SanDisk Extreme, Lexar Professional Silver, and Kingston Canvas Go Plus, are the safe choices for reliable 4K recording."
+          "a": "<b>DJI requires a UHS-I microSD card rated U3 (Speed Grade 3) and V30, up to 512GB.</b> The SanDisk Extreme, Lexar Professional Silver and Kingston Canvas Go! Plus all meet that spec."
         },
         {
           "q": "How much 4K video can a 128GB card hold on the Pocket 3?",
-          "a": "A 128GB card will hold approximately 2 hours of 4K/60fps footage. If you plan on shooting for an entire day, carrying a second card or choosing a 256GB capacity is a good idea."
+          "a": "<b>About 2 hours at 4K/60.</b> For a full day of vlogging, carry a second card or buy 256GB."
+        },
+        {
+          "q": "Is a UHS-II card faster in the Osmo Pocket 3?",
+          "a": "<b>No.</b> The Pocket 3 has a UHS-I slot, so a UHS-II card records at UHS-I speed. The extra speed only shows when you offload footage through a UHS-II reader."
         }
       ],
       "relatedDevices": [
@@ -3814,7 +3818,7 @@
         "maxCapacity": "No official limit",
         "testedMaxCapacity": "256GB"
       },
-      "whySpecs": "Nikon's entry-level APS-C mirrorless camera, featuring a 20MP sensor and 4K video recording. V30 (U3) cards ensure reliable 4K recording and continuous shooting performance. Its UHS-I slot helps to keep the camera affordable and compact for beginners and casual users.",
+      "whySpecs": "Nikon's APS-C mirrorless camera has a 20.9MP sensor and a single SD UHS-I slot. U3/V30 cards cover 4K video. For bursts at 11 fps, the card's write speed decides how fast the buffer clears, so a faster UHS-I card helps photographers more than videographers.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-sd-uhs1"
@@ -3831,15 +3835,16 @@
       ],
       "faq": [
         {
-          "q": "Are the SD card requirements for the Z50 II and the original Z50 the same?",
-          "a": "<b>Yes, both the Nikon Z50 II and the original Z50 utilize SD UHS-I cards with a V30 minimum speed rating.</b> While the Z50 II features improved autofocus and processing capabilities, its media requirements are identical to its predecessor. Any V30 card that performed well in the Z50 will also work reliably in the Z50 II."
+          "q": "Do the Nikon Z50 II and the original Z50 use the same SD card?",
+          "a": "<b>Yes, both take SD UHS-I cards, and V30 covers both.</b> The Z50 II adds 4K/60 and 10-bit N-Log, which a V30 card still handles."
         }
       ],
       "relatedDevices": [
         "canon-eos-r50"
       ],
       "notes": "Released in late 2024 as an updated version of the popular Z50. It targets beginners, vloggers, and photographers seeking a compact and capable mirrorless camera. Features a single SD UHS-I slot.",
-      "imageUrl": "/img/devices/cameras/nikon-z50-ii.webp"
+      "imageUrl": "/img/devices/cameras/nikon-z50-ii.webp",
+      "metaDescription": "The Nikon Z50 II takes SD UHS-I cards. A U3/V30 card covers 4K/60 video; a faster UHS-I card clears the buffer quicker after bursts. Best cards."
     },
     {
       "id": "nikon-z6-iii",
@@ -6117,7 +6122,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Records 4K/60 HDR and 4K/100 slow motion, plus 10-bit D-Log M for grading. The high-frame-rate and 10-bit modes are the demanding ones, not ordinary 4K/30. V30's guaranteed 30 MB/s of sustained write is what keeps those modes stable; a card that merely peaks fast but sags under sustained load is how you end up with a dropped clip you can't reshoot. The Mini 4 Pro also has about 2GB of internal storage, which is an emergency buffer for a forgotten card, not a substitute for one, at roughly a minute of 4K.",
+      "whySpecs": "Records 4K/60 HDR, 4K/100 slow motion and 10-bit D-Log M at up to 150 Mbps. V30 guarantees 30 MB/s of sustained write, above what those modes need. Cards that only hit their rated speed in short bursts are what drop clips. The drone also has 2GB of internal storage, enough for about a minute of 4K if you forget the card.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6132,19 +6137,19 @@
       "faq": [
         {
           "q": "Can I use V20 cards with DJI Mini 4 Pro?",
-          "a": "<b>Using V20 cards is not recommended for DJI Mini 4 Pro</b>. <b>V30 speed class is the minimum required for stable 4K video recording</b>, especially at higher frame rates, to prevent dropped frames and file corruption during flight."
+          "a": "<b>No, use V30.</b> DJI requires U3 (Speed Grade 3), which matches V30. A V20 card can drop frames at 4K/60 and 4K/100."
         },
         {
           "q": "Do I need a faster card for 4K/100 slow motion or D-Log M?",
-          "a": "<b>A good V30 card still covers both</b>. V30 guarantees 30 MB/s sustained, which sits above what the Mini 4 Pro's highest-bitrate modes actually demand. What matters more than the speed grade is that the card holds that speed consistently: cheap or counterfeit cards often hit their rated number in a quick benchmark and then sag partway through a long clip. Buy from a reputable seller and format the card in the drone before an important flight."
+          "a": "<b>No, a V30 card covers both.</b> The top bitrate is 150 Mbps, about 19 MB/s. Sustained speed matters more than the label: counterfeit cards often pass a quick benchmark and then slow down during a long clip. Buy from a reputable seller and format the card in the drone."
         },
         {
-          "q": "Does the brand matter for drones?",
-          "a": "<b>Yes, brand reliability is critical for drone operations</b>. <b>Use trusted brands like SanDisk, Lexar, or Kingston</b> to avoid mid-flight card failures that could result in lost footage or worse, emergency landings."
+          "q": "Which microSD brands are safest for a drone?",
+          "a": "<b>SanDisk, Lexar, Samsung and Kingston</b> all appear on DJI's recommended card lists. A card failure mid-flight loses footage you cannot reshoot."
         },
         {
-          "q": "What about older used cards?",
-          "a": "<b>Avoid used or degraded microSD cards for drone operations</b>. Reliability is paramount because <b>a card failure during flight is expensive and dangerous</b>. Always use new or professionally tested cards of known reliability."
+          "q": "Can I reuse an old microSD card in my drone?",
+          "a": "<b>Only if it is V30 and has never thrown an error.</b> Worn cards fail without warning, and a failure mid-flight means lost footage."
         }
       ],
       "relatedDevices": [
@@ -6154,7 +6159,7 @@
         "dji-air-3s"
       ],
       "notes": "DJI officially recommends V30 cards for safe recording. Test new cards before flights.",
-      "metaDescription": "The DJI Mini 4 Pro's demanding modes are 4K/100 slow motion and 10-bit D-Log M, not plain 4K/30. V30's sustained write keeps them stable."
+      "metaDescription": "The DJI Mini 4 Pro needs a V30 microSD card. Its top bitrate is 150 Mbps in 4K/60 HDR and D-Log M, which V30 covers. Best cards and capacities."
     },
     {
       "id": "dji-mini-3-pro",
@@ -6256,15 +6261,16 @@
       ],
       "sdCard": {
         "type": "microSD UHS-I (UHS-II Compatible)",
-        "minSpeed": "V60",
-        "minWriteSpeed": "60 MB/s",
+        "minSpeed": "V30 / U3",
+        "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
+          "128GB",
           "256GB",
           "512GB"
         ],
-        "maxCapacity": "1TB"
+        "maxCapacity": "512GB"
       },
-      "whySpecs": "Premium 4K and 8K drone. Standard model supports 4K; Cine model supports 8K Cine recording at high bitrate. V60 minimum required. V90 recommended for 8K Cine work.",
+      "whySpecs": "The Mavic 3 records 5.1K/50 and 4K/120 in H.264 and H.265 at up to 200 Mbps, which is 25 MB/s. DJI requires U3 (Speed Grade 3), and a V30 card clears that. The standard model has 8GB of internal storage. The Mavic 3 Cine records ProRes 422 HQ to a built-in 1TB SSD, so its microSD card handles the same H.264/H.265 footage as the standard model.",
       "recommendedBrands": [
         {
           "id": "lexar-professional-1000x-v60"
@@ -6275,8 +6281,16 @@
       ],
       "faq": [
         {
-          "q": "Can I use V30 cards?",
-          "a": "<b>V30 cards are sufficient for 4K recording on the DJI Mavic 3</b>. However, <b>for 8K Cine recording (Cine model only), V60 minimum is required, with V90 strongly recommended</b> for uninterrupted high-bitrate capture and optimal performance."
+          "q": "Can I use V30 cards in the DJI Mavic 3?",
+          "a": "<b>Yes. V30 is the right spec.</b> The highest bitrate is 200 Mbps (25 MB/s), under V30's 30 MB/s floor. V60 and V90 cards work but record no better."
+        },
+        {
+          "q": "Does the Mavic 3 Cine record ProRes to the microSD card?",
+          "a": "<b>No.</b> ProRes goes to the Cine's internal 1TB SSD. The microSD slot records H.264 and H.265, the same as the standard Mavic 3."
+        },
+        {
+          "q": "Does the DJI Mavic 3 record 8K?",
+          "a": "<b>No.</b> The top resolution is 5.1K at up to 50 fps."
         }
       ],
       "relatedDevices": [
@@ -6285,7 +6299,8 @@
         "dji-air-3"
       ],
       "notes": "Premium DJI flagship with dual cameras. Standard model supports 4K; Cine model adds 8K capability. V60+ cards essential for 8K Cine recording.",
-      "metaDescription": "The DJI Mavic 3 needs V60 minimum for its 4K modes; the Cine model's 8K Cine recording calls for V90. Here's what actually holds up."
+      "metaDescription": "The DJI Mavic 3 records 5.1K at up to 200 Mbps (25 MB/s), so a U3/V30 microSD card is enough. The Cine records ProRes to its internal SSD, not the card.",
+      "customTitle": "Best SD Card for DJI Mavic 3: V30 for 5.1K Video"
     },
     {
       "id": "dji-air-3",
@@ -6338,7 +6353,7 @@
       "name": "DJI Mini 4K",
       "category": "Drones",
       "slug": "dji-mini-4k",
-      "customTitle": "Best SD Card for DJI Mini 4K: Max Size & V30 Speed",
+      "customTitle": "Best SD Card for DJI Mini 4K: 256GB Max, V30 Speed",
       "searchTerms": [
         "dji mini 4k sd card",
         "mini 4k microsd",
@@ -6353,9 +6368,9 @@
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "512GB"
+        "maxCapacity": "256GB"
       },
-      "whySpecs": "A budget-friendly drone weighing under 250g, capable of recording 4K 30fps video. DJI officially recommends V30 cards minimum for stable 4K recording. Despite being an entry-level model, it shares the same essential card requirements as other higher-end drones in the Mini series, emphasizing reliability for in-flight recording. Because it tops out at 4K/30 rather than the Mini 4 Pro's 4K/100, its bitrate demands are at the gentler end of that shared V30 requirement, so a mid-range V30 card is genuinely enough here.",
+      "whySpecs": "DJI requires a UHS-I Speed Grade 3 (U3) microSD card for the Mini 4K, and V30 cards meet that with margin. The drone tops out at 4K/30 and 100 Mbps, so a mid-range V30 card is enough. Paying extra for V60 or UHS-II buys nothing in the air.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6370,11 +6385,11 @@
       "faq": [
         {
           "q": "How is the DJI Mini 4K different from the Mini 4 Pro?",
-          "a": "<b>The Mini 4K is a more budget-oriented version with fewer intelligent flight modes and no obstacle avoidance sensors.</b> However, it records the same 4K 30fps video and requires the same V30 microSD cards for stable performance. It's an excellent choice for beginners who prioritize camera quality but don't need advanced features."
+          "a": "<b>The Mini 4K is the budget model: 4K/30 at 100 Mbps, no obstacle sensing, no 10-bit color.</b> The Mini 4 Pro records up to 4K/100 in 10-bit D-Log M. Both take the same U3/V30 microSD cards."
         },
         {
           "q": "What's the largest microSD card the Mini 4K supports?",
-          "a": "<b>DJI supports cards up to 512GB on the Mini 4K</b>, the same ceiling as the Mini 3 and Mini 3 Pro. That said, 512GB is more than this drone realistically needs: at 4K/30 you'd have to fly for many battery packs to fill even a 128GB card, and battery life is the real limit on a shoot. <b>128GB or 256GB is the sweet spot</b>, and two smaller cards beat one large one, since a single card failure then costs you half your footage instead of all of it."
+          "a": "<b>DJI lists 256GB as the maximum for the Mini 4K.</b> A 256GB card holds over 5 hours of 4K, far more than your batteries will fly. Two 128GB cards are a safer buy than one 256GB: a failed card then costs half your footage."
         }
       ],
       "relatedDevices": [
@@ -6384,7 +6399,7 @@
       ],
       "notes": "Released in 2024 as a budget alternative to the Mini 4 Pro. Its sub-250g weight allows for less restrictive regulations in many countries. High search volume is expected from beginner drone pilots and those seeking an affordable 4K drone.",
       "imageUrl": "/img/devices/drones/dji-mini-4k.webp",
-      "metaDescription": "DJI's budget sub-250g drone still needs a real V30 microSD card for stable 4K/30 recording - the same baseline as its pricier Mini siblings."
+      "metaDescription": "The DJI Mini 4K takes U3/V30 microSD cards up to 256GB. It records 4K/30 at 100 Mbps, so a mid-range V30 card is enough. Best cards and capacity."
     },
     {
       "id": "dji-mini-3",
@@ -6633,7 +6648,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "The Potensic Atom records 4K video at high bitrates. The manufacturer explicitly requires U3/V30 cards. Users frequently report that slower U1 cards (like standard SanDisk Ultras) cause recording to stop after a few seconds or fail to save footage entirely.",
+      "whySpecs": "The Potensic Atom records 4K/30 to microSD, and Potensic specifies U3/V30 cards up to 256GB. Owners regularly report that U1 cards, including the standard SanDisk Ultra, stop recording after a few seconds or fail to save the clip.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6648,11 +6663,15 @@
       "faq": [
         {
           "q": "Why does my Potensic Atom say 'SD Card Error'?",
-          "a": "<b>This usually happens if the card is not V30 rated or is formatted incorrectly.</b> Ensure you are using a V30 card and format it directly within the Potensic Pro app settings to ensure compatibility."
+          "a": "<b>Usually the card is below V30 or was formatted on a computer.</b> Use a V30 card and format it in the Potensic Pro app before you fly."
         },
         {
-          "q": "What is the difference between Atom and Atom SE card requirements?",
-          "a": "<b>Both drones require the same V30 speed class cards.</b> While the Atom has a 3-axis gimbal and the SE does not, they both share the same 4K recording engine and data writing requirements."
+          "q": "Do the Atom and Atom SE use the same microSD card?",
+          "a": "<b>Yes, both take U3/V30 microSD cards up to 256GB.</b> The Atom adds a 3-axis gimbal, which changes stabilization but not the card spec."
+        },
+        {
+          "q": "What is the max SD card size for the Potensic Atom?",
+          "a": "<b>256GB.</b> A 128GB card is enough for a full day of flying on three batteries."
         }
       ],
       "relatedDevices": [
@@ -6663,7 +6682,7 @@
       ],
       "notes": "The #1 competitor to the DJI Mini 2 SE / 4K. Very popular on Amazon. Strict V30 requirement.",
       "imageUrl": "/img/devices/drones/potensic-atom.webp",
-      "metaDescription": "The Potensic Atom requires U3/V30 microSD cards for its 4K video - slower U1 cards are known to stop recording mid-flight or fail to save."
+      "metaDescription": "The Potensic Atom needs a U3/V30 microSD card, up to 256GB. U1 cards like the SanDisk Ultra are known to stop recording mid-flight. Best cards to buy."
     },
     {
       "id": "potensic-atom-se",
@@ -7585,7 +7604,7 @@
         "maxCapacity": "2TB",
         "testedMaxCapacity": "2TB"
       },
-      "whySpecs": "Steam Deck uses UHS-I interface and runs SteamOS from the card, so A1 app performance is important for OS responsiveness. While V30 works for gaming, A1 random IOPS are essential. Select from reputable brands offering V30 rated and A1-classified cards. 2TB cards (e.g. SanDisk Extreme, Lexar Play) are confirmed working with full compatibility, though note that microSD prices across all capacities rose sharply in 2026 due to a global NAND flash shortage.",
+      "whySpecs": "The Steam Deck's microSD slot is UHS-I, so cards top out around 100 MB/s no matter what the label says. Games load from the card in small random reads, which is what the A1 and A2 app ratings measure. 2TB cards such as the SanDisk Extreme and Lexar Play work. microSD prices rose across all capacities in 2026 because of a NAND flash shortage.",
       "recommendedBrands": [
         {
           "id": "kingston-canvas-go-plus-ultra"
@@ -7600,7 +7619,15 @@
       "faq": [
         {
           "q": "Can I use fast V60 cards?",
-          "a": "<b>Yes, V60 and faster microSD cards work perfectly with Steam Deck</b>. However, <b>the device's UHS-I interface limits the speed benefit</b>, so faster cards provide no practical advantage over V30 cards for Steam Deck gaming."
+          "a": "<b>Yes, but they won't load games any faster.</b> The Steam Deck's UHS-I slot caps reads near 100 MB/s, so a V60 or UHS-II card performs like a good V30 A2 card."
+        },
+        {
+          "q": "What is the max SD card size for Steam Deck?",
+          "a": "<b>2TB, the microSDXC limit.</b> 2TB cards from SanDisk and Lexar work in both the LCD and OLED models."
+        },
+        {
+          "q": "Does the Steam Deck OLED use a different microSD card?",
+          "a": "<b>No.</b> The OLED model has the same UHS-I microSD slot as the LCD model, so the same cards work in both."
         }
       ],
       "relatedDevices": [
@@ -7609,7 +7636,7 @@
         "ayn-odin-3-odin-2-portal"
       ],
       "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library.",
-      "metaDescription": "Steam Deck runs SteamOS from its microSD card, so A1 random-access performance matters as much as V30 sequential speed. Here's what to buy."
+      "metaDescription": "Steam Deck takes UHS-I microSD cards up to 2TB. Buy an A2 card in 512GB or 1TB for your game library; V60 and UHS-II cards load no faster."
     },
     {
       "id": "asus-rog-ally",
@@ -7972,7 +7999,7 @@
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "A Windows gaming handheld featuring a large 8.8-inch display and detachable controllers. An A2 application performance rating on the microSD card significantly improves game load times and overall system responsiveness when running games from the card. The large screen and Windows OS make it suitable for AAA gaming, which demands substantial storage capacity.",
+      "whySpecs": "The Legion Go has a UHS-I microSD slot that supports cards up to 2TB. UHS-I tops out near 100 MB/s, so buying for speed past a good A2 card gains nothing. Buy for capacity: a 512GB card fits four or five modern AAA installs.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -7989,12 +8016,12 @@
       ],
       "faq": [
         {
-          "q": "Legion Go vs ROG Ally - which has better SD card performance?",
-          "a": "<b>The ASUS ROG Ally X features a UHS-II card reader, while the Lenovo Legion Go utilizes a UHS-I slot.</b> This means the Ally X can achieve faster game load times with UHS-II cards. However, the Legion Go offers unique features like its larger screen and detachable controllers, appealing to different user preferences. Both devices benefit greatly from large-capacity (512GB+) A2-rated cards for modern games."
+          "q": "Legion Go vs ROG Ally: which has faster SD card performance?",
+          "a": "<b>The ROG Ally X has a UHS-II reader; the original Legion Go has UHS-I.</b> With a UHS-II card, the Ally X loads games faster. On the Legion Go, a UHS-II card runs at UHS-I speed."
         },
         {
           "q": "What microSD card capacity do I need for PC games on the Legion Go?",
-          "a": "<b>A 512GB card is a good minimum, but 1TB is highly recommended for an extensive library of modern PC games.</b> Many AAA titles can easily exceed 100GB each. While the Legion Go's Windows OS allows flexible storage management, microSD card space can fill up quickly with a few large titles, making higher capacity a wise investment."
+          "a": "<b>512GB minimum, 1TB if you keep several AAA games installed.</b> Titles like Call of Duty and Baldur's Gate 3 each take over 100GB."
         }
       ],
       "relatedDevices": [
@@ -8004,7 +8031,7 @@
       ],
       "notes": "Released late 2023, the Lenovo Legion Go is known for its unique detachable controllers and the largest screen among current Windows handhelds. It features a microSD UHS-I slot (unlike the newer ROG Ally X, which has UHS-II).",
       "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go.webp",
-      "metaDescription": "The Lenovo Legion Go's large 8.8-inch display and Windows OS make an A2-rated microSD card worth it for faster game load times."
+      "metaDescription": "The Lenovo Legion Go takes UHS-I microSD cards up to 2TB. Buy an A2 card in 512GB or 1TB: AAA games need 100GB+ each and UHS-II adds no speed."
     },
     {
       "id": "miyoo-mini-plus",
@@ -8083,7 +8110,7 @@
         ],
         "maxCapacity": "512GB tested"
       },
-      "whySpecs": "Features two microSD slots. Slot 1 is for the Operating System (OS); using an A1 application-rated card here significantly improves menu speed and system responsiveness. Slot 2 is for games, where a standard large-capacity card works well. We strongly recommend replacing the low-quality cards that come included with the device with trusted brands.",
+      "whySpecs": "Slot 1 (TF1) holds the operating system, and an A1 card speeds up menus and boot. Slot 2 (TF2) holds games, where any U1 card from a known brand works. The cards bundled with Anbernic devices have a high failure rate, so copy your files off and replace them.",
       "recommendedBrands": [
         {
           "id": "kingston-canvas-go-plus-ultra"
@@ -8104,7 +8131,11 @@
       "faq": [
         {
           "q": "Should I replace the SD card that came with my RG35XX?",
-          "a": "<b>Yes, immediately.</b> The stock SD cards included with these devices are very low quality and prone to failure. For a reliable experience, purchase two new cards from a reputable brand like SanDisk or Samsung."
+          "a": "<b>Yes, before you add games.</b> The bundled cards fail often and corrupt saves. Buy two name-brand cards, such as the SanDisk Ultra or Samsung EVO Select."
+        },
+        {
+          "q": "Which slot is for games on the RG35XX Plus?",
+          "a": "<b>Slot 2 (TF2).</b> Slot 1 (TF1) boots the system. Keep the OS card small and put your ROM library on a 128GB or 256GB card in TF2."
         }
       ],
       "relatedDevices": [
@@ -10928,7 +10959,7 @@
     }
   ],
   "metadata": {
-    "generated": "2026-09-21T01:48:54.522Z",
+    "generated": "2026-09-26T07:56:25.541Z",
     "totalDevices": 222,
     "categories": [
       "3D Printers & Fabrication",

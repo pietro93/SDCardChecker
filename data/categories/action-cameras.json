@@ -12,7 +12,7 @@
     ],
     "sdCard": {
       "type": "microSD UHS-I (UHS-II Compatible)",
-      "minSpeed": "A2 / V30",
+      "minSpeed": "V30 / U3",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -22,7 +22,7 @@
       ],
       "maxCapacity": "1TB"
     },
-    "whySpecs": "Shoots 5.3K60, 4K120 and 2.7K240. <b>V30 is the floor, not a nice-to-have</b>. It guarantees 30 MB/s of sustained write, which comfortably covers the Hero 13's High bitrate setting of roughly 120 Mbps (about 15 MB/s) with enough headroom that a card slowing down mid-clip won't drop frames or corrupt the file. GoPro's current guidance also asks for an <b>A2</b> rating on top of V30, and the Hero 13 supports cards up to <b>1TB</b>, so there's no reason to cap yourself at 512GB if you shoot long days.",
+    "whySpecs": "Shoots 5.3K60, 4K120 and 2.7K240. GoPro requires V30 or UHS-3 cards. V30 guarantees 30 MB/s of sustained write, about double the Hero 13's 120 Mbps High bitrate, so the card does not fall behind mid-clip. GoPro supports cards up to <b>1TB</b>.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -39,20 +39,20 @@
     ],
     "faq": [
       {
-        "q": "Can I use a regular SD card with adapter?",
-        "a": "<b>No, the GoPro Hero 13 Black only accepts microSD cards</b>. Full-size SD cards will not work even with an adapter. The device specifically requires <b>microSD format cards</b> for compatibility."
+        "q": "Can I use a full-size SD card in the GoPro Hero 13?",
+        "a": "<b>No, the Hero 13 only takes microSD cards.</b>"
       },
       {
-        "q": "What's the fastest card I should get?",
-        "a": "<b>V30 speed class is sufficient for standard GoPro Hero 13 recording</b>. V60 or faster cards are useful only for professional multi-camera workflows, simultaneous backup recording, or future-proofing for newer, more demanding cameras. The Hero 13 has a UHS-I slot, so a UHS-II card will work but will simply run at UHS-I speeds in the camera. You'd only see the extra speed when offloading footage in a UHS-II reader."
+        "q": "Do I need a V60 or UHS-II card for the Hero 13?",
+        "a": "<b>No.</b> V30 covers every recording mode. The slot is UHS-I, so a UHS-II card records at UHS-I speed and only offloads faster in a UHS-II reader."
       },
       {
         "q": "Does the GoPro Hero 13 support a 1TB microSD card?",
-        "a": "<b>Yes, GoPro supports cards up to 1TB on the Hero 13.</b> Older guidance capping GoPro at 512GB is out of date. A 1TB card is worth it if you shoot all-day sessions and don't want to swap cards in the field; otherwise two 256GB or 512GB cards are the safer buy, because a single failed card takes down everything you shot rather than half of it."
+        "a": "<b>Yes, GoPro supports cards up to 1TB on the Hero 13.</b> A 1TB card saves swaps on all-day shoots. Two 512GB cards are safer, because one failed card then loses half your footage instead of all of it."
       },
       {
-        "q": "How often should I replace my SD card?",
-        "a": "<b>Quality V30 microSD cards typically last 3-5 years</b> with regular use. <b>Replace your card immediately if you experience error messages, file corruption, or refused write operations</b> to prevent loss of critical footage."
+        "q": "How often should I replace my GoPro SD card?",
+        "a": "<b>Replace it at the first error message, corrupted file or failed write.</b> Format it in the camera, not on a computer, each time you offload."
       }
     ],
     "relatedDevices": [
@@ -63,7 +63,7 @@
       "dji-mini-4-pro"
     ],
     "notes": "Card requirements match Hero 12. Official GoPro guidance: A2/V30, up to 1TB.",
-    "metaDescription": "The GoPro Hero 13 Black needs a V30 microSD card, minimum, for 5.3K60 and 4K120 video. V30 is the floor here, not a nice-to-have - here's why."
+    "metaDescription": "The GoPro Hero 13 Black needs a V30 or UHS-3 microSD card, up to 1TB. V30 doubles the 120 Mbps High bitrate for 5.3K60 and 4K120. Best cards."
   },
   {
     "id": "gopro-hero-12",
@@ -222,7 +222,7 @@
     "name": "DJI Osmo Pocket 3",
     "category": "Action Cameras",
     "slug": "dji-osmo-pocket-3",
-    "metaDescription": "DJI requires a UHS-I microSD card rated U3/V30 for the Osmo Pocket 3 (max 512GB). Here are the best-tested cards that meet spec.",
+    "metaDescription": "DJI requires a U3/V30 UHS-I microSD card for the Osmo Pocket 3, up to 512GB. A 128GB card holds about 2 hours of 4K/60. Best cards that meet spec.",
     "searchTerms": [
       "dji pocket 3 sd card",
       "osmo pocket 3 microsd",
@@ -231,7 +231,7 @@
       "osmo pocket 3 v30 u3"
     ],
     "sdCard": {
-      "type": "microSD UHS-I/UHS-II",
+      "type": "microSD UHS-I",
       "minSpeed": "V30",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
@@ -255,11 +255,15 @@
     "faq": [
       {
         "q": "What are DJI's official microSD card requirements for the Osmo Pocket 3?",
-        "a": "<b>DJI officially requires a UHS-I microSD card with Speed Grade 3 (U3) and Video Speed Class 30 (V30) minimum, with a maximum supported capacity of 512GB.</b> These are DJI's published specifications for the Pocket 3. Cards meeting these specs, such as the SanDisk Extreme, Lexar Professional Silver, and Kingston Canvas Go Plus, are the safe choices for reliable 4K recording."
+        "a": "<b>DJI requires a UHS-I microSD card rated U3 (Speed Grade 3) and V30, up to 512GB.</b> The SanDisk Extreme, Lexar Professional Silver and Kingston Canvas Go! Plus all meet that spec."
       },
       {
         "q": "How much 4K video can a 128GB card hold on the Pocket 3?",
-        "a": "A 128GB card will hold approximately 2 hours of 4K/60fps footage. If you plan on shooting for an entire day, carrying a second card or choosing a 256GB capacity is a good idea."
+        "a": "<b>About 2 hours at 4K/60.</b> For a full day of vlogging, carry a second card or buy 256GB."
+      },
+      {
+        "q": "Is a UHS-II card faster in the Osmo Pocket 3?",
+        "a": "<b>No.</b> The Pocket 3 has a UHS-I slot, so a UHS-II card records at UHS-I speed. The extra speed only shows when you offload footage through a UHS-II reader."
       }
     ],
     "relatedDevices": [

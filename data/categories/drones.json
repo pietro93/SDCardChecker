@@ -19,7 +19,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "Records 4K/60 HDR and 4K/100 slow motion, plus 10-bit D-Log M for grading. The high-frame-rate and 10-bit modes are the demanding ones, not ordinary 4K/30. V30's guaranteed 30 MB/s of sustained write is what keeps those modes stable; a card that merely peaks fast but sags under sustained load is how you end up with a dropped clip you can't reshoot. The Mini 4 Pro also has about 2GB of internal storage, which is an emergency buffer for a forgotten card, not a substitute for one, at roughly a minute of 4K.",
+    "whySpecs": "Records 4K/60 HDR, 4K/100 slow motion and 10-bit D-Log M at up to 150 Mbps. V30 guarantees 30 MB/s of sustained write, above what those modes need. Cards that only hit their rated speed in short bursts are what drop clips. The drone also has 2GB of internal storage, enough for about a minute of 4K if you forget the card.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -34,19 +34,19 @@
     "faq": [
       {
         "q": "Can I use V20 cards with DJI Mini 4 Pro?",
-        "a": "<b>Using V20 cards is not recommended for DJI Mini 4 Pro</b>. <b>V30 speed class is the minimum required for stable 4K video recording</b>, especially at higher frame rates, to prevent dropped frames and file corruption during flight."
+        "a": "<b>No, use V30.</b> DJI requires U3 (Speed Grade 3), which matches V30. A V20 card can drop frames at 4K/60 and 4K/100."
       },
       {
         "q": "Do I need a faster card for 4K/100 slow motion or D-Log M?",
-        "a": "<b>A good V30 card still covers both</b>. V30 guarantees 30 MB/s sustained, which sits above what the Mini 4 Pro's highest-bitrate modes actually demand. What matters more than the speed grade is that the card holds that speed consistently: cheap or counterfeit cards often hit their rated number in a quick benchmark and then sag partway through a long clip. Buy from a reputable seller and format the card in the drone before an important flight."
+        "a": "<b>No, a V30 card covers both.</b> The top bitrate is 150 Mbps, about 19 MB/s. Sustained speed matters more than the label: counterfeit cards often pass a quick benchmark and then slow down during a long clip. Buy from a reputable seller and format the card in the drone."
       },
       {
-        "q": "Does the brand matter for drones?",
-        "a": "<b>Yes, brand reliability is critical for drone operations</b>. <b>Use trusted brands like SanDisk, Lexar, or Kingston</b> to avoid mid-flight card failures that could result in lost footage or worse, emergency landings."
+        "q": "Which microSD brands are safest for a drone?",
+        "a": "<b>SanDisk, Lexar, Samsung and Kingston</b> all appear on DJI's recommended card lists. A card failure mid-flight loses footage you cannot reshoot."
       },
       {
-        "q": "What about older used cards?",
-        "a": "<b>Avoid used or degraded microSD cards for drone operations</b>. Reliability is paramount because <b>a card failure during flight is expensive and dangerous</b>. Always use new or professionally tested cards of known reliability."
+        "q": "Can I reuse an old microSD card in my drone?",
+        "a": "<b>Only if it is V30 and has never thrown an error.</b> Worn cards fail without warning, and a failure mid-flight means lost footage."
       }
     ],
     "relatedDevices": [
@@ -56,7 +56,7 @@
       "dji-air-3s"
     ],
     "notes": "DJI officially recommends V30 cards for safe recording. Test new cards before flights.",
-    "metaDescription": "The DJI Mini 4 Pro's demanding modes are 4K/100 slow motion and 10-bit D-Log M, not plain 4K/30. V30's sustained write keeps them stable."
+    "metaDescription": "The DJI Mini 4 Pro needs a V30 microSD card. Its top bitrate is 150 Mbps in 4K/60 HDR and D-Log M, which V30 covers. Best cards and capacities."
   },
   {
     "id": "dji-mini-3-pro",
@@ -158,15 +158,16 @@
     ],
     "sdCard": {
       "type": "microSD UHS-I (UHS-II Compatible)",
-      "minSpeed": "V60",
-      "minWriteSpeed": "60 MB/s",
+      "minSpeed": "V30 / U3",
+      "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
+        "128GB",
         "256GB",
         "512GB"
       ],
-      "maxCapacity": "1TB"
+      "maxCapacity": "512GB"
     },
-    "whySpecs": "Premium 4K and 8K drone. Standard model supports 4K; Cine model supports 8K Cine recording at high bitrate. V60 minimum required. V90 recommended for 8K Cine work.",
+    "whySpecs": "The Mavic 3 records 5.1K/50 and 4K/120 in H.264 and H.265 at up to 200 Mbps, which is 25 MB/s. DJI requires U3 (Speed Grade 3), and a V30 card clears that. The standard model has 8GB of internal storage. The Mavic 3 Cine records ProRes 422 HQ to a built-in 1TB SSD, so its microSD card handles the same H.264/H.265 footage as the standard model.",
     "recommendedBrands": [
       {
         "id": "lexar-professional-1000x-v60"
@@ -177,8 +178,16 @@
     ],
     "faq": [
       {
-        "q": "Can I use V30 cards?",
-        "a": "<b>V30 cards are sufficient for 4K recording on the DJI Mavic 3</b>. However, <b>for 8K Cine recording (Cine model only), V60 minimum is required, with V90 strongly recommended</b> for uninterrupted high-bitrate capture and optimal performance."
+        "q": "Can I use V30 cards in the DJI Mavic 3?",
+        "a": "<b>Yes. V30 is the right spec.</b> The highest bitrate is 200 Mbps (25 MB/s), under V30's 30 MB/s floor. V60 and V90 cards work but record no better."
+      },
+      {
+        "q": "Does the Mavic 3 Cine record ProRes to the microSD card?",
+        "a": "<b>No.</b> ProRes goes to the Cine's internal 1TB SSD. The microSD slot records H.264 and H.265, the same as the standard Mavic 3."
+      },
+      {
+        "q": "Does the DJI Mavic 3 record 8K?",
+        "a": "<b>No.</b> The top resolution is 5.1K at up to 50 fps."
       }
     ],
     "relatedDevices": [
@@ -187,7 +196,8 @@
       "dji-air-3"
     ],
     "notes": "Premium DJI flagship with dual cameras. Standard model supports 4K; Cine model adds 8K capability. V60+ cards essential for 8K Cine recording.",
-    "metaDescription": "The DJI Mavic 3 needs V60 minimum for its 4K modes; the Cine model's 8K Cine recording calls for V90. Here's what actually holds up."
+    "metaDescription": "The DJI Mavic 3 records 5.1K at up to 200 Mbps (25 MB/s), so a U3/V30 microSD card is enough. The Cine records ProRes to its internal SSD, not the card.",
+    "customTitle": "Best SD Card for DJI Mavic 3: V30 for 5.1K Video"
   },
   {
     "id": "dji-air-3",
@@ -240,7 +250,7 @@
     "name": "DJI Mini 4K",
     "category": "Drones",
     "slug": "dji-mini-4k",
-    "customTitle": "Best SD Card for DJI Mini 4K: Max Size & V30 Speed",
+    "customTitle": "Best SD Card for DJI Mini 4K: 256GB Max, V30 Speed",
     "searchTerms": [
       "dji mini 4k sd card",
       "mini 4k microsd",
@@ -255,9 +265,9 @@
         "128GB",
         "256GB"
       ],
-      "maxCapacity": "512GB"
+      "maxCapacity": "256GB"
     },
-    "whySpecs": "A budget-friendly drone weighing under 250g, capable of recording 4K 30fps video. DJI officially recommends V30 cards minimum for stable 4K recording. Despite being an entry-level model, it shares the same essential card requirements as other higher-end drones in the Mini series, emphasizing reliability for in-flight recording. Because it tops out at 4K/30 rather than the Mini 4 Pro's 4K/100, its bitrate demands are at the gentler end of that shared V30 requirement, so a mid-range V30 card is genuinely enough here.",
+    "whySpecs": "DJI requires a UHS-I Speed Grade 3 (U3) microSD card for the Mini 4K, and V30 cards meet that with margin. The drone tops out at 4K/30 and 100 Mbps, so a mid-range V30 card is enough. Paying extra for V60 or UHS-II buys nothing in the air.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -272,11 +282,11 @@
     "faq": [
       {
         "q": "How is the DJI Mini 4K different from the Mini 4 Pro?",
-        "a": "<b>The Mini 4K is a more budget-oriented version with fewer intelligent flight modes and no obstacle avoidance sensors.</b> However, it records the same 4K 30fps video and requires the same V30 microSD cards for stable performance. It's an excellent choice for beginners who prioritize camera quality but don't need advanced features."
+        "a": "<b>The Mini 4K is the budget model: 4K/30 at 100 Mbps, no obstacle sensing, no 10-bit color.</b> The Mini 4 Pro records up to 4K/100 in 10-bit D-Log M. Both take the same U3/V30 microSD cards."
       },
       {
         "q": "What's the largest microSD card the Mini 4K supports?",
-        "a": "<b>DJI supports cards up to 512GB on the Mini 4K</b>, the same ceiling as the Mini 3 and Mini 3 Pro. That said, 512GB is more than this drone realistically needs: at 4K/30 you'd have to fly for many battery packs to fill even a 128GB card, and battery life is the real limit on a shoot. <b>128GB or 256GB is the sweet spot</b>, and two smaller cards beat one large one, since a single card failure then costs you half your footage instead of all of it."
+        "a": "<b>DJI lists 256GB as the maximum for the Mini 4K.</b> A 256GB card holds over 5 hours of 4K, far more than your batteries will fly. Two 128GB cards are a safer buy than one 256GB: a failed card then costs half your footage."
       }
     ],
     "relatedDevices": [
@@ -286,7 +296,7 @@
     ],
     "notes": "Released in 2024 as a budget alternative to the Mini 4 Pro. Its sub-250g weight allows for less restrictive regulations in many countries. High search volume is expected from beginner drone pilots and those seeking an affordable 4K drone.",
     "imageUrl": "/img/devices/drones/dji-mini-4k.webp",
-    "metaDescription": "DJI's budget sub-250g drone still needs a real V30 microSD card for stable 4K/30 recording - the same baseline as its pricier Mini siblings."
+    "metaDescription": "The DJI Mini 4K takes U3/V30 microSD cards up to 256GB. It records 4K/30 at 100 Mbps, so a mid-range V30 card is enough. Best cards and capacity."
   },
   {
     "id": "dji-mini-3",
@@ -535,7 +545,7 @@
       ],
       "maxCapacity": "256GB"
     },
-    "whySpecs": "The Potensic Atom records 4K video at high bitrates. The manufacturer explicitly requires U3/V30 cards. Users frequently report that slower U1 cards (like standard SanDisk Ultras) cause recording to stop after a few seconds or fail to save footage entirely.",
+    "whySpecs": "The Potensic Atom records 4K/30 to microSD, and Potensic specifies U3/V30 cards up to 256GB. Owners regularly report that U1 cards, including the standard SanDisk Ultra, stop recording after a few seconds or fail to save the clip.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -550,11 +560,15 @@
     "faq": [
       {
         "q": "Why does my Potensic Atom say 'SD Card Error'?",
-        "a": "<b>This usually happens if the card is not V30 rated or is formatted incorrectly.</b> Ensure you are using a V30 card and format it directly within the Potensic Pro app settings to ensure compatibility."
+        "a": "<b>Usually the card is below V30 or was formatted on a computer.</b> Use a V30 card and format it in the Potensic Pro app before you fly."
       },
       {
-        "q": "What is the difference between Atom and Atom SE card requirements?",
-        "a": "<b>Both drones require the same V30 speed class cards.</b> While the Atom has a 3-axis gimbal and the SE does not, they both share the same 4K recording engine and data writing requirements."
+        "q": "Do the Atom and Atom SE use the same microSD card?",
+        "a": "<b>Yes, both take U3/V30 microSD cards up to 256GB.</b> The Atom adds a 3-axis gimbal, which changes stabilization but not the card spec."
+      },
+      {
+        "q": "What is the max SD card size for the Potensic Atom?",
+        "a": "<b>256GB.</b> A 128GB card is enough for a full day of flying on three batteries."
       }
     ],
     "relatedDevices": [
@@ -565,7 +579,7 @@
     ],
     "notes": "The #1 competitor to the DJI Mini 2 SE / 4K. Very popular on Amazon. Strict V30 requirement.",
     "imageUrl": "/img/devices/drones/potensic-atom.webp",
-    "metaDescription": "The Potensic Atom requires U3/V30 microSD cards for its 4K video - slower U1 cards are known to stop recording mid-flight or fail to save."
+    "metaDescription": "The Potensic Atom needs a U3/V30 microSD card, up to 256GB. U1 cards like the SanDisk Ultra are known to stop recording mid-flight. Best cards to buy."
   },
   {
     "id": "potensic-atom-se",

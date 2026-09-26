@@ -37,7 +37,7 @@ const LOCALE_RE = /-(ja|de|fr|it)\.(html|json)$/;
 // Keys that hold machine values, not copy.
 const SKIP_KEYS = new Set([
   'id', 'slug', 'imageUrl', 'image', 'url', 'amazonUrl', 'asin', 'searchTerms',
-  'category', 'type', 'minSpeed', 'minWriteSpeed', 'maxCapacity', 'href', 'icon',
+  'category', 'type', 'notes', 'minSpeed', 'minWriteSpeed', 'maxCapacity', 'href', 'icon',
 ]);
 
 const w = (words) => new RegExp(`\\b(${words.join('|')})\\b`, 'i');

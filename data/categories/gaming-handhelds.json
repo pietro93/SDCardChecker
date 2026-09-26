@@ -135,7 +135,7 @@
       "maxCapacity": "2TB",
       "testedMaxCapacity": "2TB"
     },
-    "whySpecs": "Steam Deck uses UHS-I interface and runs SteamOS from the card, so A1 app performance is important for OS responsiveness. While V30 works for gaming, A1 random IOPS are essential. Select from reputable brands offering V30 rated and A1-classified cards. 2TB cards (e.g. SanDisk Extreme, Lexar Play) are confirmed working with full compatibility, though note that microSD prices across all capacities rose sharply in 2026 due to a global NAND flash shortage.",
+    "whySpecs": "The Steam Deck's microSD slot is UHS-I, so cards top out around 100 MB/s no matter what the label says. Games load from the card in small random reads, which is what the A1 and A2 app ratings measure. 2TB cards such as the SanDisk Extreme and Lexar Play work. microSD prices rose across all capacities in 2026 because of a NAND flash shortage.",
     "recommendedBrands": [
       {
         "id": "kingston-canvas-go-plus-ultra"
@@ -150,7 +150,15 @@
     "faq": [
       {
         "q": "Can I use fast V60 cards?",
-        "a": "<b>Yes, V60 and faster microSD cards work perfectly with Steam Deck</b>. However, <b>the device's UHS-I interface limits the speed benefit</b>, so faster cards provide no practical advantage over V30 cards for Steam Deck gaming."
+        "a": "<b>Yes, but they won't load games any faster.</b> The Steam Deck's UHS-I slot caps reads near 100 MB/s, so a V60 or UHS-II card performs like a good V30 A2 card."
+      },
+      {
+        "q": "What is the max SD card size for Steam Deck?",
+        "a": "<b>2TB, the microSDXC limit.</b> 2TB cards from SanDisk and Lexar work in both the LCD and OLED models."
+      },
+      {
+        "q": "Does the Steam Deck OLED use a different microSD card?",
+        "a": "<b>No.</b> The OLED model has the same UHS-I microSD slot as the LCD model, so the same cards work in both."
       }
     ],
     "relatedDevices": [
@@ -159,7 +167,7 @@
       "ayn-odin-3-odin-2-portal"
     ],
     "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library.",
-    "metaDescription": "Steam Deck runs SteamOS from its microSD card, so A1 random-access performance matters as much as V30 sequential speed. Here's what to buy."
+    "metaDescription": "Steam Deck takes UHS-I microSD cards up to 2TB. Buy an A2 card in 512GB or 1TB for your game library; V60 and UHS-II cards load no faster."
   },
   {
     "id": "asus-rog-ally",
@@ -522,7 +530,7 @@
       ],
       "maxCapacity": "2TB"
     },
-    "whySpecs": "A Windows gaming handheld featuring a large 8.8-inch display and detachable controllers. An A2 application performance rating on the microSD card significantly improves game load times and overall system responsiveness when running games from the card. The large screen and Windows OS make it suitable for AAA gaming, which demands substantial storage capacity.",
+    "whySpecs": "The Legion Go has a UHS-I microSD slot that supports cards up to 2TB. UHS-I tops out near 100 MB/s, so buying for speed past a good A2 card gains nothing. Buy for capacity: a 512GB card fits four or five modern AAA installs.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -539,12 +547,12 @@
     ],
     "faq": [
       {
-        "q": "Legion Go vs ROG Ally - which has better SD card performance?",
-        "a": "<b>The ASUS ROG Ally X features a UHS-II card reader, while the Lenovo Legion Go utilizes a UHS-I slot.</b> This means the Ally X can achieve faster game load times with UHS-II cards. However, the Legion Go offers unique features like its larger screen and detachable controllers, appealing to different user preferences. Both devices benefit greatly from large-capacity (512GB+) A2-rated cards for modern games."
+        "q": "Legion Go vs ROG Ally: which has faster SD card performance?",
+        "a": "<b>The ROG Ally X has a UHS-II reader; the original Legion Go has UHS-I.</b> With a UHS-II card, the Ally X loads games faster. On the Legion Go, a UHS-II card runs at UHS-I speed."
       },
       {
         "q": "What microSD card capacity do I need for PC games on the Legion Go?",
-        "a": "<b>A 512GB card is a good minimum, but 1TB is highly recommended for an extensive library of modern PC games.</b> Many AAA titles can easily exceed 100GB each. While the Legion Go's Windows OS allows flexible storage management, microSD card space can fill up quickly with a few large titles, making higher capacity a wise investment."
+        "a": "<b>512GB minimum, 1TB if you keep several AAA games installed.</b> Titles like Call of Duty and Baldur's Gate 3 each take over 100GB."
       }
     ],
     "relatedDevices": [
@@ -554,7 +562,7 @@
     ],
     "notes": "Released late 2023, the Lenovo Legion Go is known for its unique detachable controllers and the largest screen among current Windows handhelds. It features a microSD UHS-I slot (unlike the newer ROG Ally X, which has UHS-II).",
     "imageUrl": "/img/devices/gaming-consoles/lenovo-legion-go.webp",
-    "metaDescription": "The Lenovo Legion Go's large 8.8-inch display and Windows OS make an A2-rated microSD card worth it for faster game load times."
+    "metaDescription": "The Lenovo Legion Go takes UHS-I microSD cards up to 2TB. Buy an A2 card in 512GB or 1TB: AAA games need 100GB+ each and UHS-II adds no speed."
   },
   {
     "id": "miyoo-mini-plus",
@@ -633,7 +641,7 @@
       ],
       "maxCapacity": "512GB tested"
     },
-    "whySpecs": "Features two microSD slots. Slot 1 is for the Operating System (OS); using an A1 application-rated card here significantly improves menu speed and system responsiveness. Slot 2 is for games, where a standard large-capacity card works well. We strongly recommend replacing the low-quality cards that come included with the device with trusted brands.",
+    "whySpecs": "Slot 1 (TF1) holds the operating system, and an A1 card speeds up menus and boot. Slot 2 (TF2) holds games, where any U1 card from a known brand works. The cards bundled with Anbernic devices have a high failure rate, so copy your files off and replace them.",
     "recommendedBrands": [
       {
         "id": "kingston-canvas-go-plus-ultra"
@@ -654,7 +662,11 @@
     "faq": [
       {
         "q": "Should I replace the SD card that came with my RG35XX?",
-        "a": "<b>Yes, immediately.</b> The stock SD cards included with these devices are very low quality and prone to failure. For a reliable experience, purchase two new cards from a reputable brand like SanDisk or Samsung."
+        "a": "<b>Yes, before you add games.</b> The bundled cards fail often and corrupt saves. Buy two name-brand cards, such as the SanDisk Ultra or Samsung EVO Select."
+      },
+      {
+        "q": "Which slot is for games on the RG35XX Plus?",
+        "a": "<b>Slot 2 (TF2).</b> Slot 1 (TF1) boots the system. Keep the OS card small and put your ROM library on a 128GB or 256GB card in TF2."
       }
     ],
     "relatedDevices": [

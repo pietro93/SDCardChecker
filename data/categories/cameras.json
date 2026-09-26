@@ -1864,7 +1864,7 @@
       "maxCapacity": "No official limit",
       "testedMaxCapacity": "256GB"
     },
-    "whySpecs": "Nikon's entry-level APS-C mirrorless camera, featuring a 20MP sensor and 4K video recording. V30 (U3) cards ensure reliable 4K recording and continuous shooting performance. Its UHS-I slot helps to keep the camera affordable and compact for beginners and casual users.",
+    "whySpecs": "Nikon's APS-C mirrorless camera has a 20.9MP sensor and a single SD UHS-I slot. U3/V30 cards cover 4K video. For bursts at 11 fps, the card's write speed decides how fast the buffer clears, so a faster UHS-I card helps photographers more than videographers.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-sd-uhs1"
@@ -1881,15 +1881,16 @@
     ],
     "faq": [
       {
-        "q": "Are the SD card requirements for the Z50 II and the original Z50 the same?",
-        "a": "<b>Yes, both the Nikon Z50 II and the original Z50 utilize SD UHS-I cards with a V30 minimum speed rating.</b> While the Z50 II features improved autofocus and processing capabilities, its media requirements are identical to its predecessor. Any V30 card that performed well in the Z50 will also work reliably in the Z50 II."
+        "q": "Do the Nikon Z50 II and the original Z50 use the same SD card?",
+        "a": "<b>Yes, both take SD UHS-I cards, and V30 covers both.</b> The Z50 II adds 4K/60 and 10-bit N-Log, which a V30 card still handles."
       }
     ],
     "relatedDevices": [
       "canon-eos-r50"
     ],
     "notes": "Released in late 2024 as an updated version of the popular Z50. It targets beginners, vloggers, and photographers seeking a compact and capable mirrorless camera. Features a single SD UHS-I slot.",
-    "imageUrl": "/img/devices/cameras/nikon-z50-ii.webp"
+    "imageUrl": "/img/devices/cameras/nikon-z50-ii.webp",
+    "metaDescription": "The Nikon Z50 II takes SD UHS-I cards. A U3/V30 card covers 4K/60 video; a faster UHS-I card clears the buffer quicker after bursts. Best cards."
   },
   {
     "id": "nikon-z6-iii",
