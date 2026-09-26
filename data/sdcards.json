@@ -696,7 +696,9 @@
         "writeSpeed": "Up to 30 MB/s (V30 minimum sustained)",
         "endurance": "Standard"
       },
-      "availableCapacities": [128],
+      "availableCapacities": [
+        128
+      ],
       "priceSymbol": "$$",
       "priceTier": "Mid-Range",
       "imageUrl": "/img/cards/gigastone-128gb-4k-camera-pro-sd.webp",
@@ -834,8 +836,8 @@
       "pros": "Required for Sony S&Q modes.",
       "cons": "Extremely expensive.",
       "tier": "professional"
-      },
-      {
+    },
+    {
       "id": "lexar-professional-1000x-sd",
       "name": "Lexar Professional 1667x Silver SD (Legacy ID)",
       "type": "SD",
@@ -1335,7 +1337,11 @@
         "writeSpeed": "Up to 90 MB/s",
         "endurance": "High Endurance"
       },
-      "availableCapacities": [64, 128, 256],
+      "availableCapacities": [
+        64,
+        128,
+        256
+      ],
       "priceSymbol": "$",
       "priceTier": "Budget",
       "imageUrl": "/img/cards/topesel-high-endurance.webp",
@@ -1357,7 +1363,11 @@
         "writeSpeed": "Up to 60 MB/s",
         "endurance": "Standard"
       },
-      "availableCapacities": [32, 64, 128],
+      "availableCapacities": [
+        32,
+        64,
+        128
+      ],
       "priceSymbol": "$",
       "priceTier": "Budget",
       "imageUrl": "/img/cards/speederlash-standard.webp",
@@ -1498,7 +1508,9 @@
         "appPerformance": "A1",
         "readSpeed": "Up to 100 MB/s"
       },
-      "availableCapacities": [64],
+      "availableCapacities": [
+        64
+      ],
       "priceSymbol": "$",
       "priceTier": "Budget",
       "affiliateUrl": "https://www.amazon.com/dp/B0DQL5V4HK?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.252LNLZ49DT42&linkCode=tr1&tag=uproot01-20&linkId=amzn1.campaign.252LNLZ49DT42_1771576369809",
@@ -1519,7 +1531,9 @@
         "appPerformance": "A1",
         "readSpeed": "Up to 90 MB/s"
       },
-      "availableCapacities": [64],
+      "availableCapacities": [
+        64
+      ],
       "packSize": 2,
       "priceSymbol": "$",
       "priceTier": "Budget",
@@ -1732,6 +1746,53 @@
       "pros": "Community-favorite for SD2Vita modding; reliable up to 512GB+ with FAT32/exFAT formatting.",
       "cons": "Slower write speeds than Samsung PRO Plus.",
       "tier": "budget"
+    },
+    {
+      "id": "samsung-p9-express-microsd",
+      "name": "Samsung P9 microSD Express",
+      "type": "microSD Express",
+      "specs": {
+        "uhs": "microSD Express (PCIe)",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "Up to 800 MB/s",
+        "writeSpeed": "Not published",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        256,
+        512
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/micro-uhs2-generic.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=Samsung+P9+microSD+Express&tag=sd-cc-20",
+      "pros": "Works in Switch 2 for games. Reads up to 800 MB/s.",
+      "cons": "Needs a microSD Express slot for full speed. Costs more per GB than UHS-I.",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-microsd-express-switch-2",
+      "name": "SanDisk microSD Express for Nintendo Switch 2",
+      "type": "microSD Express",
+      "specs": {
+        "uhs": "microSD Express (PCIe)",
+        "speedClass": "Not listed",
+        "appPerformance": "Not listed",
+        "readSpeed": "Up to 880 MB/s",
+        "writeSpeed": "Not published",
+        "endurance": "Standard"
+      },
+      "availableCapacities": [
+        256
+      ],
+      "priceSymbol": "$$",
+      "priceTier": "Premium",
+      "imageUrl": "/img/cards/micro-uhs2-generic.webp",
+      "amazonSearchUrl": "https://amazon.com/s?k=SanDisk+microSD+Express+Nintendo+Switch+2&tag=sd-cc-20",
+      "pros": "Nintendo-licensed card for Switch 2 game storage.",
+      "cons": "Only 256GB. Runs at UHS-I speed in devices without an Express slot.",
+      "tier": "recommended"
     }
-    ]
-    }
+  ]
+}

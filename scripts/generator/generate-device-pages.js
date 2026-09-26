@@ -537,7 +537,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const description = generateUniqueMetaDescription(device, brandNames, deviceIndex);
 
     let answerText = device.sdCard.type;
-    if (hasSpeedRequirement(device.sdCard)) {
+    if (hasSpeedRequirement(device.sdCard) && !device.sdCard.type.includes(device.sdCard.minSpeed)) {
         answerText += ` (${device.sdCard.minSpeed} or faster)`;
     }
 
