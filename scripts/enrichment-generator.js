@@ -56,16 +56,18 @@ Category: ${category}
 Recommended Spec: ${device.sdCard?.type || 'microSD'}
 Current explanation (whySpecs): "${device.whySpecs}"
 
-Generate a CONCISE, PRACTICAL explanation (2-3 sentences max) for an affiliate card that:
-1. Focuses on the USER BENEFIT or REAL-WORLD IMPACT of using the recommended spec
-2. Uses completely different angle/wording than the whySpecs provided
-3. Is direct, actionable, and fits in a small card (no jargon)
-4. Does NOT contradict or repeat the whySpecs
-5. Is written in present tense, conversational tone
+Write 1-2 sentences that answer "what card does this device need?" with a fact the whySpecs doesn't state: the device's top bitrate converted to MB/s, how many hours a common capacity holds, the slot's bus (UHS-I/UHS-II/Express), internal storage, or a known quirk.
 
-Example format: "Using [spec] ensures smooth recording without drops. This means you'll capture every moment without technical hiccups."
+Rules (BRANDING_UX_UI_GUIDE.md, Writing Rules):
+- Lead with the answer. Numbers over adjectives.
+- No em dashes, no exclamation marks, no questions.
+- Banned words: ensure, seamless, stunning, perfect, ideal, hassle-free, peace of mind, effortless, unlock, elevate, journey, capture every moment, whether you're, actually, really, truly.
+- No closing clause that restates the benefit ("..., so you never miss a moment").
+- Only state specs you are certain of. If unsure, restate the card format and speed class plainly.
 
-Output ONLY the explanation text, no quotes, no bullet points. Just 2-3 sentences.`;
+Example: "The Mini 4K records 4K/30 at up to 100 Mbps, about 12.5 MB/s, well inside a V30 card's 30 MB/s floor. DJI caps the slot at 256GB."
+
+Output only the sentences, no quotes. Run scripts/lint-copy.js on the result and review it by hand before publishing.`;
 
   try {
     if (!groq) {
@@ -107,7 +109,12 @@ async function enrichDevices() {
 
   const devices = loadDevices();
   let cache = loadOrCreateCache();
-  let enrichmentData = {};
+  // Start from the existing file so a run only adds missing devices. Entries with
+  // reviewedAt were rewritten by hand to BRANDING_UX_UI_GUIDE.md § Writing Rules
+  // and must never be regenerated.
+  let enrichmentData = fs.existsSync(ENRICHMENT_OUTPUT)
+    ? JSON.parse(fs.readFileSync(ENRICHMENT_OUTPUT, 'utf8'))
+    : {};
   let processed = 0;
   let cached = 0;
 
@@ -119,8 +126,8 @@ async function enrichDevices() {
     const deviceKey = `${device.category}:${device.slug}`;
     const progress = `[${i + 1}/${devices.length}]`;
 
-    // Check cache first
-    if (cache[deviceKey]) {
+    // Keep existing and hand-reviewed entries; check cache next
+    if (enrichmentData[deviceKey] || cache[deviceKey]) {
       cached++;
       continue;
     }
