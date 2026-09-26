@@ -31,8 +31,10 @@ Common search intent: "GoPro Hero 13 SD card" or "Nintendo Switch microSD" or "D
 
 **Tone:** Confident, clear, direct. Like a technician who's solved this 1,000 times.
 
-**Headlines:** Energetic, benefit-focused
-- ✓ "Find the Perfect SD Card for Your Device in Seconds"
+> **Sentence-level writing rules live in [BRANDING_UX_UI_GUIDE.md § Writing Rules](./BRANDING_UX_UI_GUIDE.md#writing-rules).** They override anything below. Check copy with `node scripts/lint-copy.js`.
+
+**Headlines:** Benefit-focused, keyword first
+- ✓ "Find the Right SD Card for Your Device in Seconds"
 - ✗ "Learn About SD Card Options"
 
 **Body Copy:** Brief, factual, no filler

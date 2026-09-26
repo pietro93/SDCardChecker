@@ -22,7 +22,8 @@
     "build": "npm run clean:dist && npm run build:css && npm run build:site && npx http-server dist",
     "build:prod": "npm run build:all",
     "dev": "npm run build:site && concurrently \"tailwindcss -i ./src/css/input.css -o ./src/css/tailwind.css --watch\" \"npm run build:site\" \"http-server dist\"",
-    "start": "http-server dist"
+    "start": "http-server dist",
+    "lint:copy": "node scripts/lint-copy.js"
   },
   "keywords": [
     "sd-card",

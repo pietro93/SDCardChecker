@@ -1,7 +1,7 @@
 # SD Card Checker - Branding, UX/UI & Look & Feel Guide
 
 **Version:** 1.0  
-**Last Updated:** Dec 2025  
+**Last Updated:** September 26, 2026 (added Writing Rules section and `scripts/lint-copy.js`)  
 **Purpose:** Design system, visual identity, and user experience guidelines for all interfaces
 
 ---
@@ -65,6 +65,109 @@
 **"Get the right SD card in seconds. No guessing."**
 
 Every page, interaction, and feature should reinforce this promise.
+
+---
+
+## Writing Rules
+
+**Added:** September 26, 2026. This section is the single source for how every English sentence on the site is written: device data (`data/categories/*.json`), card and reader data, enrichment files, calculator content, guides, templates, meta descriptions and schema text. Localized copy is out of scope for now.
+
+**Enforced by:** `node scripts/lint-copy.js` (add `--verbose` for every hit, `--file <path>` for one file, `--rule <id>` for one rule). Run it before committing copy changes. Some hits are legitimate (see "Allowed uses" below); the linter flags, a person decides.
+
+Two tests sit under every rule:
+
+- **The paste test.** If a sentence could paste unchanged onto another device's page, it says nothing about this one. Rewrite it with a fact only this device has: its max bitrate, its card slot type, its capacity limit, its file system, its known quirk.
+- **The deletion test.** Delete the sentence. If the reader loses no fact and no decision, leave it deleted.
+
+### Voice
+
+- Direct, plain, declarative sentences. A technician who has answered this question a thousand times.
+- US spelling and US dates: "optimize," "color," "gray," "September 26, 2026."
+- Lead with the answer, then the reason. "Use a V30 microSDXC card. The camera writes up to 120 Mbps in 4K."
+- Numbers beat adjectives. "Writes 170 Mbps" beats "demanding." "Fills 128GB in about 90 minutes" beats "huge files."
+
+### Sentence-level bans
+
+| Pattern | Example to cut | Do instead |
+|---|---|---|
+| Em dashes | "The card is fast — about 90 MB/s" | Comma, period, or colon |
+| "Not X, Y" contrast | "It's not just about speed, it's about reliability" | Say what it is |
+| Sincerity flags | actually, honestly, genuinely, truly, "real" or "actual" as emphasis | State the fact |
+| Hedges as emphasis | really, in fact, notably, simply, essentially, basically | Cut |
+| Chopped fragment lists | "Fast. Reliable. Affordable." | One connected sentence |
+| AI vocabulary | seamless, stunning, effortless, hassle-free, peace of mind, robust, unlock, elevate, leverage, navigate, journey, boasts, cutting-edge, "whether you're…", "in today's…" | The plain word, or a number |
+| Hype adjectives | perfect, ideal, ultimate, must-have, amazing, blazing | Say who it fits and why: "fits 4K60 recording because…" |
+| Copula dodges | "serves as," "stands as," "acts as" | "is" |
+| Fake ranges | "from beginners to pros" | Name who it is for |
+| Reflexive triples | "fast, reliable, and affordable" | Keep the one item that matters |
+| Colon reveals and bold fragment labels | "The result:", "Here's the kicker:" | A full sentence |
+| Rhetorical question leads | "Tired of corrupted footage?" | Open on the fact |
+| Closing "-ing" morals | "…, ensuring you never miss a moment" | Stop at the fact |
+| Exclamation marks | "Great choice!" | None |
+
+FAQ questions are the exception to the question rule. They are search queries and should read like one.
+
+### Allowed uses (linter false positives)
+
+- "genuine" in the counterfeit sense: "a genuine SanDisk card" versus a fake.
+- "landscape" as photography: "landscape photographers."
+- "ideal" and "perfect" inside a quoted product name or a spec sheet quote.
+- "real-world speed" as a technical term (sustained versus peak).
+
+### Overexplaining
+
+- **Say it once.** `whySpecs`, the hero explanation and the FAQ answers each carry a different fact. The explanation does not restate the spec box; the FAQ does not restate `whySpecs`.
+- **No signposting.** Cut "This guide covers…", "Below you'll find…", "It's worth noting that", "Here's how it works."
+- **No stalling openers.** Cut "The short version," "That said," "Simply put," "At the end of the day."
+- **No closing morals.** Stop when the fact is delivered.
+- **Don't define what the reader knows.** Someone searching "Steam Deck SD card" knows what a Steam Deck is.
+- **One caveat, one place.**
+
+### Oversharing
+
+- Tell the reader what they need to buy the right card, not how the site works inside. No pipeline talk, no "AI-generated," no enrichment or scoring mechanics in public copy.
+- Internal notes (for example `notes` fields that are editor instructions) never render on a page. If a field renders, write it for the reader.
+
+### Accuracy rules
+
+Every spec claim must be checkable against the manufacturer's spec sheet or manual.
+
+- **Card format:** say exactly what the slot takes (SD, microSD, CFexpress Type A/B, internal only, USB drive). Do not recommend SD cards for a device that records to a USB drive or internal storage without saying so plainly.
+- **Max capacity:** use the manufacturer's stated maximum. If they state none, say "tested up to" with a source, or omit it. microSDXC tops out at 2TB by spec; SDUC goes higher.
+- **Speed classes:** V30 = 30 MB/s minimum sustained write, U3 = 30 MB/s, U1 = 10 MB/s, V60 = 60 MB/s, V90 = 90 MB/s. A1/A2 are app (random IOPS) ratings, not video ratings. UHS-II only helps in a UHS-II slot.
+- **Endurance:** manufacturers rate high-endurance cards in hours of recording (for example "up to 120,000 hours"), not in write cycles. Do not invent cycle counts or TBW figures.
+- **Bitrates:** quote the device's top bitrate in Mbps and convert correctly (8 Mbps = 1 MB/s).
+- **Recording time estimates:** show the math or round conservatively. "About 2.5 hours of 4K at 100 Mbps on 128GB."
+
+### SEO copy
+
+- The page `<title>`, meta description and H1 keep the search phrase ("[Device] SD card", "best SD card for [Device]"). Brand voice goes around the keyword, never in place of it.
+- Meta descriptions: 140 to 160 characters, lead with the answer (format + speed class + capacity), end with a concrete reason.
+- FAQ questions match how people search: "What SD card does the DJI Mini 4 Pro use?", "What is the max SD card size for Steam Deck?"
+- The first sentence on the page answers the query in full.
+
+### Headers
+
+- Guide H2s state the finding: "V30 is enough for 4K at 100 Mbps" over "Speed Requirements."
+- No placeholder section titles: "The Bottom Line," "Key Takeaways," "Final Thoughts," "Conclusion," "Summary."
+- Allowed: short UI headings, numbered steps followed by a sentence, card and device names as labels in comparison tables.
+
+### UI copy budgets
+
+| Element | Budget |
+|---|---|
+| Heading | 8 words or fewer, sentence case |
+| Helper text | One sentence, or none if the label says it |
+| Button | Verb + object ("Check price on Amazon"), never "Click here" |
+| Error | What happened, then what to do |
+| Exclamation marks | None |
+
+### Before publishing
+
+1. Run `node scripts/lint-copy.js --file <changed file> --verbose` and clear or justify every hit.
+2. Read every heading and bold label against the header rules. The linter does not catch these.
+3. Apply the deletion test to the first and last sentence of each section.
+4. Check every number against a source.
 
 ---
 
