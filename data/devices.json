@@ -210,7 +210,7 @@
         },
         {
           "q": "What size and speed microSD does the Ender 3 V3 need?",
-          "a": "<b>16-32GB, Class 10 / U1</b> is ideal. G-code files are small and the printer reads them slowly, so <b>fast U3/V30 cards provide no benefit</b>. Keeping the card at 32GB or under also avoids FAT32 formatting headaches."
+          "a": "<b>16-32GB, Class 10 / U1</b> is enough. G-code files are small and the printer reads them slowly, so <b>fast U3/V30 cards provide no benefit</b>. Keeping the card at 32GB or under also avoids FAT32 formatting headaches."
         },
         {
           "q": "Can I reuse the microSD card that came with the printer?",
@@ -1398,7 +1398,7 @@
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "The NW-A306 runs a full Android operating system. Unlike simple MP3 players, Android constantly accesses the SD card for system processes, streaming apps (Spotify/Tidal), and database indexing. <b>An A2-rated card is essential</b> to prevent the user interface from lagging. Standard Class 10 cards will cause the device to stutter significantly.",
+      "whySpecs": "The NW-A306 runs Android with 32GB of internal storage. Music libraries go on the card, and Android scans it to build your library. An A1 or A2 card speeds up those scans and any streaming app that caches to the card.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -1412,12 +1412,12 @@
       ],
       "faq": [
         {
-          "q": "Why is my Sony Walkman NW-A306 so slow?",
-          "a": "<b>It is likely due to a slow microSD card.</b> Android DAPs rely heavily on 'Random Read' speeds (IOPS). If you use a basic card, the database indexing will bog down the processor. Switch to a SanDisk Extreme or Samsung PRO Plus (A2 rated) for a smoother experience."
+          "q": "Why is my Sony Walkman NW-A306 slow?",
+          "a": "<b>Often the card.</b> Android's media scan and app caches do many small random reads. A card with an A1 or A2 rating, such as the SanDisk Extreme, speeds that up."
         },
         {
-          "q": "What is the maximum capacity for the Sony A306?",
-          "a": "<b>It supports up to 2TB microSDXC cards.</b> Many users successfully use 1TB cards to store massive libraries of lossless FLAC and Hi-Res audio files."
+          "q": "What is the maximum microSD capacity for the Sony NW-A306?",
+          "a": "<b>2TB.</b> Many owners use 1TB cards for large FLAC and hi-res libraries."
         }
       ],
       "relatedDevices": [
@@ -1753,7 +1753,7 @@
         ],
         "maxCapacity": "1TB (microSDXC)"
       },
-      "whySpecs": "The H4essential records up to 6 simultaneous tracks in 32-bit float WAV (plus BWF/iXML support), and 32-bit float files are large even before you add multitrack overhead. There's no clipping to worry about, but file sizes climb fast. Zoom's manual lists microSDHC support from 4GB-32GB and <b>microSDXC support up to 1TB</b>, so the practical ceiling for long multitrack sessions is a 1TB card, not the smaller capacities most recorder pages mention. U3/V30 is enough to keep up with 6-track 32-bit float writes without dropouts.",
+      "whySpecs": "The H4essential records multitrack 32-bit float WAV, which produces large files. Zoom supports microSDHC from 4GB to 32GB and microSDXC up to 1TB. A U3/V30 card handles the sustained write.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -4723,7 +4723,7 @@
         ],
         "maxCapacity": "2TB (SDXC spec limit)"
       },
-      "whySpecs": "The Raspberry Pi 5 boots its operating system from the microSD card, and it's the first Pi that can read one quickly: the Pi 5's SD interface supports <b>SDR104</b>, roughly doubling the bus speed to about 100 MB/s versus the ~50 MB/s ceiling on the Pi 4. To see that, you need a UHS-I card that's genuinely rated for it. A slow card is the single most common cause of a Pi 5 that feels sluggish. Beyond raw throughput, look for an <b>A2</b> rating: the 'A' (Application Performance Class) ratings describe random read/write speed, which is what an operating system does all day, and unlike the Pi 4 the Pi 5 supports the command queuing that lets A2 cards deliver on it. If you need more speed than any microSD can give, the Pi 5's PCIe connector accepts an M.2 HAT and NVMe SSD.",
+      "whySpecs": "The Raspberry Pi 5 boots its operating system from the microSD card, and it's the first Pi that can read one quickly: the Pi 5's SD interface supports <b>SDR104</b>, roughly doubling the bus speed to about 100 MB/s versus the ~50 MB/s ceiling on the Pi 4. To see that, you need a UHS-I card that's rated for it. A slow card is the single most common cause of a Pi 5 that feels sluggish. Beyond raw throughput, look for an <b>A2</b> rating: the 'A' (Application Performance Class) ratings describe random read/write speed, which is what an operating system does all day, and unlike the Pi 4 the Pi 5 supports the command queuing that lets A2 cards deliver on it. If you need more speed than any microSD can give, the Pi 5's PCIe connector accepts an M.2 HAT and NVMe SSD.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -9683,7 +9683,7 @@
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "The Live III keeps the Live II's real-time disk-streaming architecture but ships with 128GB of built-in storage and an 8-core processor, so it's built to run larger sample libraries and heavier projects than its predecessor. The SD slot is still the simplest way to expand beyond the internal drive or carry a library between machines, and because samples stream off the card live during a set, the same U3/V30 sustained-speed floor applies. A card that can't keep up causes audible dropouts, not just a slow load screen.",
+      "whySpecs": "The Live III keeps the Live II's real-time disk-streaming architecture but ships with 128GB of built-in storage and an 8-core processor, so it's built to run larger sample libraries and heavier projects than its predecessor. The SD slot is still the simplest way to expand beyond the internal drive or carry a library between machines, and because samples stream off the card live during a set, the same U3/V30 sustained-speed floor applies. A card that can't keep up causes audible dropouts during playback.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs1"
@@ -9813,7 +9813,7 @@
         },
         {
           "q": "Does the SP-404MKII play samples directly from the SD card?",
-          "a": "<b>No, samples are imported to the unit's internal storage.</b> The SD card moves samples and projects in and out and acts as a backup, so you don't need a high-speed streaming card; you need a dependable one that the unit formats and reads without errors."
+          "a": "<b>No, samples are imported to the unit's internal storage.</b> The SD card moves samples and projects in and out and is a backup, so you don't need a high-speed streaming card; you need a dependable one that the unit formats and reads without errors."
         }
       ],
       "relatedDevices": [
@@ -10211,7 +10211,7 @@
         ],
         "maxCapacity": "Limited by app storage"
       },
-      "whySpecs": "The iPhone 15 lineup switched from Lightning to USB-C in 2023, but that doesn't add SD card support. You still need an external card reader through the Files app. The catch is that the port's actual speed depends on which iPhone 15 you have: the base iPhone 15 and 15 Plus keep their USB-C port capped at USB 2.0 (480 Mbps), the same ceiling Lightning had, while the iPhone 15 Pro and Pro Max support USB 3 (up to 10 Gbps). That means a fast UHS-II card reader is wasted on a base iPhone 15 but genuinely useful on a Pro model for offloading large photo/video libraries quickly.",
+      "whySpecs": "The iPhone 15 lineup switched from Lightning to USB-C in 2023, but that doesn't add SD card support. You still need an external card reader through the Files app. Transfer speed depends on which iPhone 15 you have: the base iPhone 15 and 15 Plus keep their USB-C port capped at USB 2.0 (480 Mbps), the same ceiling Lightning had, while the iPhone 15 Pro and Pro Max support USB 3 (up to 10 Gbps). That means a fast UHS-II card reader is wasted on a base iPhone 15 but useful on a Pro model for offloading large photo/video libraries quickly.",
       "requiresReader": true,
       "recommendedReaders": [
         "ugreen-2in1-usbc-usb3",
@@ -10910,7 +10910,7 @@
     }
   ],
   "metadata": {
-    "generated": "2026-09-26T10:33:40.102Z",
+    "generated": "2026-09-26T10:35:06.567Z",
     "totalDevices": 220,
     "categories": [
       "3D Printers & Fabrication",

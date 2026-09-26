@@ -23,7 +23,7 @@
       ],
       "maxCapacity": "Limited by app storage"
     },
-    "whySpecs": "The iPhone 15 lineup switched from Lightning to USB-C in 2023, but that doesn't add SD card support. You still need an external card reader through the Files app. The catch is that the port's actual speed depends on which iPhone 15 you have: the base iPhone 15 and 15 Plus keep their USB-C port capped at USB 2.0 (480 Mbps), the same ceiling Lightning had, while the iPhone 15 Pro and Pro Max support USB 3 (up to 10 Gbps). That means a fast UHS-II card reader is wasted on a base iPhone 15 but genuinely useful on a Pro model for offloading large photo/video libraries quickly.",
+    "whySpecs": "The iPhone 15 lineup switched from Lightning to USB-C in 2023, but that doesn't add SD card support. You still need an external card reader through the Files app. Transfer speed depends on which iPhone 15 you have: the base iPhone 15 and 15 Plus keep their USB-C port capped at USB 2.0 (480 Mbps), the same ceiling Lightning had, while the iPhone 15 Pro and Pro Max support USB 3 (up to 10 Gbps). That means a fast UHS-II card reader is wasted on a base iPhone 15 but useful on a Pro model for offloading large photo/video libraries quickly.",
     "requiresReader": true,
     "recommendedReaders": [
       "ugreen-2in1-usbc-usb3",

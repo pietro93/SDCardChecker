@@ -81,7 +81,7 @@
       ],
       "maxCapacity": "2TB"
     },
-    "whySpecs": "The Live III keeps the Live II's real-time disk-streaming architecture but ships with 128GB of built-in storage and an 8-core processor, so it's built to run larger sample libraries and heavier projects than its predecessor. The SD slot is still the simplest way to expand beyond the internal drive or carry a library between machines, and because samples stream off the card live during a set, the same U3/V30 sustained-speed floor applies. A card that can't keep up causes audible dropouts, not just a slow load screen.",
+    "whySpecs": "The Live III keeps the Live II's real-time disk-streaming architecture but ships with 128GB of built-in storage and an 8-core processor, so it's built to run larger sample libraries and heavier projects than its predecessor. The SD slot is still the simplest way to expand beyond the internal drive or carry a library between machines, and because samples stream off the card live during a set, the same U3/V30 sustained-speed floor applies. A card that can't keep up causes audible dropouts during playback.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs1"
@@ -211,7 +211,7 @@
       },
       {
         "q": "Does the SP-404MKII play samples directly from the SD card?",
-        "a": "<b>No, samples are imported to the unit's internal storage.</b> The SD card moves samples and projects in and out and acts as a backup, so you don't need a high-speed streaming card; you need a dependable one that the unit formats and reads without errors."
+        "a": "<b>No, samples are imported to the unit's internal storage.</b> The SD card moves samples and projects in and out and is a backup, so you don't need a high-speed streaming card; you need a dependable one that the unit formats and reads without errors."
       }
     ],
     "relatedDevices": [

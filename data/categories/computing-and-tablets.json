@@ -20,7 +20,7 @@
       ],
       "maxCapacity": "2TB (SDXC spec limit)"
     },
-    "whySpecs": "The Raspberry Pi 5 boots its operating system from the microSD card, and it's the first Pi that can read one quickly: the Pi 5's SD interface supports <b>SDR104</b>, roughly doubling the bus speed to about 100 MB/s versus the ~50 MB/s ceiling on the Pi 4. To see that, you need a UHS-I card that's genuinely rated for it. A slow card is the single most common cause of a Pi 5 that feels sluggish. Beyond raw throughput, look for an <b>A2</b> rating: the 'A' (Application Performance Class) ratings describe random read/write speed, which is what an operating system does all day, and unlike the Pi 4 the Pi 5 supports the command queuing that lets A2 cards deliver on it. If you need more speed than any microSD can give, the Pi 5's PCIe connector accepts an M.2 HAT and NVMe SSD.",
+    "whySpecs": "The Raspberry Pi 5 boots its operating system from the microSD card, and it's the first Pi that can read one quickly: the Pi 5's SD interface supports <b>SDR104</b>, roughly doubling the bus speed to about 100 MB/s versus the ~50 MB/s ceiling on the Pi 4. To see that, you need a UHS-I card that's rated for it. A slow card is the single most common cause of a Pi 5 that feels sluggish. Beyond raw throughput, look for an <b>A2</b> rating: the 'A' (Application Performance Class) ratings describe random read/write speed, which is what an operating system does all day, and unlike the Pi 4 the Pi 5 supports the command queuing that lets A2 cards deliver on it. If you need more speed than any microSD can give, the Pi 5's PCIe connector accepts an M.2 HAT and NVMe SSD.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"

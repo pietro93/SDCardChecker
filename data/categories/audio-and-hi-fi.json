@@ -73,7 +73,7 @@
       ],
       "maxCapacity": "2TB"
     },
-    "whySpecs": "The NW-A306 runs a full Android operating system. Unlike simple MP3 players, Android constantly accesses the SD card for system processes, streaming apps (Spotify/Tidal), and database indexing. <b>An A2-rated card is essential</b> to prevent the user interface from lagging. Standard Class 10 cards will cause the device to stutter significantly.",
+    "whySpecs": "The NW-A306 runs Android with 32GB of internal storage. Music libraries go on the card, and Android scans it to build your library. An A1 or A2 card speeds up those scans and any streaming app that caches to the card.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -87,12 +87,12 @@
     ],
     "faq": [
       {
-        "q": "Why is my Sony Walkman NW-A306 so slow?",
-        "a": "<b>It is likely due to a slow microSD card.</b> Android DAPs rely heavily on 'Random Read' speeds (IOPS). If you use a basic card, the database indexing will bog down the processor. Switch to a SanDisk Extreme or Samsung PRO Plus (A2 rated) for a smoother experience."
+        "q": "Why is my Sony Walkman NW-A306 slow?",
+        "a": "<b>Often the card.</b> Android's media scan and app caches do many small random reads. A card with an A1 or A2 rating, such as the SanDisk Extreme, speeds that up."
       },
       {
-        "q": "What is the maximum capacity for the Sony A306?",
-        "a": "<b>It supports up to 2TB microSDXC cards.</b> Many users successfully use 1TB cards to store massive libraries of lossless FLAC and Hi-Res audio files."
+        "q": "What is the maximum microSD capacity for the Sony NW-A306?",
+        "a": "<b>2TB.</b> Many owners use 1TB cards for large FLAC and hi-res libraries."
       }
     ],
     "relatedDevices": [
@@ -428,7 +428,7 @@
       ],
       "maxCapacity": "1TB (microSDXC)"
     },
-    "whySpecs": "The H4essential records up to 6 simultaneous tracks in 32-bit float WAV (plus BWF/iXML support), and 32-bit float files are large even before you add multitrack overhead. There's no clipping to worry about, but file sizes climb fast. Zoom's manual lists microSDHC support from 4GB-32GB and <b>microSDXC support up to 1TB</b>, so the practical ceiling for long multitrack sessions is a 1TB card, not the smaller capacities most recorder pages mention. U3/V30 is enough to keep up with 6-track 32-bit float writes without dropouts.",
+    "whySpecs": "The H4essential records multitrack 32-bit float WAV, which produces large files. Zoom supports microSDHC from 4GB to 32GB and microSDXC up to 1TB. A U3/V30 card handles the sustained write.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"

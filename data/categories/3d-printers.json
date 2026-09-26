@@ -209,7 +209,7 @@
       },
       {
         "q": "What size and speed microSD does the Ender 3 V3 need?",
-        "a": "<b>16-32GB, Class 10 / U1</b> is ideal. G-code files are small and the printer reads them slowly, so <b>fast U3/V30 cards provide no benefit</b>. Keeping the card at 32GB or under also avoids FAT32 formatting headaches."
+        "a": "<b>16-32GB, Class 10 / U1</b> is enough. G-code files are small and the printer reads them slowly, so <b>fast U3/V30 cards provide no benefit</b>. Keeping the card at 32GB or under also avoids FAT32 formatting headaches."
       },
       {
         "q": "Can I reuse the microSD card that came with the printer?",
