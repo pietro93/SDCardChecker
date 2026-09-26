@@ -19,7 +19,7 @@
       ],
       "maxCapacity": "32GB"
     },
-    "whySpecs": "Tactacam specifies full-size SD only, and microSD-to-SD adapters are explicitly discouraged and can cause read errors/ejection failures in the field.",
+    "whySpecs": "Tactacam specifies full-size SD cards up to 32GB for the Reveal X Pro. It advises against microSD-to-SD adapters, which can cause read errors and cards that won't eject in the field.",
     "recommendedBrands": [
       {
         "id": "lexar-professional-silver-sd"
@@ -61,7 +61,7 @@
       ],
       "maxCapacity": "32GB (larger cards are auto-reformatted down to 32GB by current firmware)"
     },
-    "whySpecs": "Officially supports up to 512GB, but current firmware caps/reformats any card over 32GB down to 32GB, so there's no benefit buying larger; formatting is via the camera's FORMAT button or a computer (FAT32), not mandatory through the app.",
+    "whySpecs": "Spypoint lists support up to 512GB, but current firmware formats any card over 32GB down to 32GB. Format with the camera's FORMAT button or as FAT32 on a computer.",
     "recommendedBrands": [
       {
         "id": "kingston-canvas-select"
@@ -103,7 +103,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "4K trigger video needs sustained write speed, Bushnell recommends U3/V30; one of Bushnell's first trail cams to break past the old 32GB ceiling.",
+    "whySpecs": "The Core DS-4K records 4K video on trigger, and Bushnell recommends U3/V30 cards to keep up. It supports cards up to 512GB, well past the 32GB limit on older Bushnell cameras.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs1"

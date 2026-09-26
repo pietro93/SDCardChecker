@@ -5601,16 +5601,16 @@
       ],
       "imageUrl": "/img/devices/tesla-model-3.jpg",
       "sdCard": {
-        "type": "microSD (requires USB reader)",
-        "minSpeed": "V30",
-        "minWriteSpeed": "40 MB/s",
+        "type": "USB drive (microSD in a USB reader also works)",
+        "minSpeed": "4 MB/s sustained write (Tesla minimum)",
+        "minWriteSpeed": "4 MB/s",
         "recommendedCapacity": [
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "2TB"
+        "maxCapacity": "No stated limit (64GB minimum)"
       },
-      "whySpecs": "Sentry mode continuously overwrites old footage. Standard cards fail quickly. You need High Endurance cards rated for 10,000+ write/erase cycles.",
+      "whySpecs": "Tesla's owner's manual asks for a USB drive of at least 64GB with 4 MB/s sustained write that works over USB 2.0. Dashcam and Sentry Mode overwrite old clips, so the drive sees constant writes. A high-endurance microSD card in a USB reader lasts longer than a cheap flash drive.",
       "recommendedBrands": [
         {
           "id": "speederlash-64gb-2pack"
@@ -5621,20 +5621,22 @@
       ],
       "faq": [
         {
-          "q": "Why do dash cam cards fail so fast?",
-          "a": "<b>Dash cams continuously overwrite data</b>. Standard cards are optimized for intermittent writes. <b>High Endurance cards are rated for 10,000+ write/erase cycles</b>, making them 10-20x more durable for this use case."
+          "q": "Can I use a microSD card for Tesla Sentry Mode?",
+          "a": "<b>Yes, in a USB card reader.</b> The car sees it as a USB drive. Use a high-endurance card of 64GB or more, formatted from the car or as exFAT."
         },
         {
-          "q": "Do I need a special card for Tesla Sentry Mode?",
-          "a": "Yes. Sentry Mode records 24/7 when parked. <b>Standard cards typically fail within weeks</b>. Use <b>High Endurance (TBW 10,000+) or Surveillance-class cards</b> only."
+          "q": "Does Tesla Sentry Mode record 24/7?",
+          "a": "<b>No.</b> Sentry Mode saves clips when it detects an event near the parked car. Dashcam records while driving and keeps recent footage on a loop."
         },
         {
-          "q": "What's the best capacity for Sentry Mode?",
-          "a": "<b>256GB is ideal</b>. Tesla Sentry records in clips. 256GB holds approximately 5-7 days of continuous footage depending on quality. Larger capacities reduce how often you need to manage the card."
+          "q": "What size drive is best for Tesla Sentry Mode?",
+          "a": "<b>128GB or 256GB.</b> Tesla's minimum is 64GB. Larger drives keep more saved events before the car deletes the oldest."
         }
       ],
       "relatedDevices": [],
-      "notes": "Premium EV. Requires High Endurance cards for reliable dash cam operation."
+      "notes": "Premium EV. Requires High Endurance cards for reliable dash cam operation.",
+      "customTitle": "Tesla Model 3 Sentry Mode USB Drive & SD Card Requirements",
+      "metaDescription": "Tesla Sentry Mode records to a USB drive: 64GB minimum, 4 MB/s sustained write. A high-endurance microSD card in a USB reader also works. Best picks."
     },
     {
       "id": "generic-4k-dashcam",
@@ -5660,7 +5662,7 @@
         ],
         "maxCapacity": "256GB"
       },
-      "whySpecs": "4K dash cams write at ~50-100 Mbps bitrate depending on resolution and codec. V30 ensures 30MB/s sustained write speed, preventing dropped frames. High Endurance cards extend lifespan from months to years.",
+      "whySpecs": "4K dash cams write about 50 to 100 Mbps depending on the model and codec. V30 guarantees 30 MB/s sustained, above that rate. Loop recording rewrites the whole card over and over, so high-endurance cards, which manufacturers rate in recording hours, outlast standard cards.",
       "recommendedBrands": [
         {
           "id": "speederlash-64gb-2pack"
@@ -5675,15 +5677,15 @@
       "faq": [
         {
           "q": "What's the difference between dash cam and regular microSD cards?",
-          "a": "<b>Dash cam cards are High Endurance rated (10,000-40,000 TBW)</b>. Regular cards are rated for 500-1,000 TBW. Dash cams loop-record continuously, causing 10-20x more wear per year."
+          "a": "<b>Endurance.</b> High-endurance cards are rated for tens of thousands of hours of continuous recording; SanDisk rates its MAX Endurance line at up to 120,000 hours. Standard cards carry no such rating."
         },
         {
-          "q": "Can I use a regular fast card?",
-          "a": "Not recommended long-term. High-speed UHS-II cards (like Extreme Pro) will work initially but <b>fail within 2-4 months of continuous recording</b>. High Endurance cards last 1-2+ years."
+          "q": "Can I use a regular fast microSD card in a dash cam?",
+          "a": "<b>It works, but wears out sooner.</b> Speed doesn't help with constant rewrites. A high-endurance card is the better buy."
         },
         {
-          "q": "64GB vs 128GB for dash cam?",
-          "a": "<b>64GB stores 2-4 hours</b> (good for daily commute). <b>128GB stores 4-8 hours</b> (covers overnight parking + commute). For Sentry Mode or 24/7 recording, use 256GB+."
+          "q": "Is 64GB or 128GB better for a dash cam?",
+          "a": "<b>128GB for most drivers.</b> At 4K, 64GB holds roughly 1.5 to 3 hours and 128GB about double. For parking mode, buy 256GB."
         }
       ],
       "relatedDevices": [
@@ -5704,8 +5706,8 @@
       ],
       "imageUrl": "/img/devices/viofo-a229-pro.jpg",
       "sdCard": {
-        "type": "microSD (Dual Dash = Dual Cards)",
-        "minSpeed": "V30",
+        "type": "microSD (one card for all channels)",
+        "minSpeed": "U3",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -5713,7 +5715,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Viofo A229 Pro is a dual-channel 4K dash cam (front + interior). Each channel writes continuously at ~50 Mbps. You need <b>TWO cards minimum (one for each channel)</b>. High Endurance essential.",
+      "whySpecs": "The A229 Pro is a 4K front plus 2K rear (or interior) dash cam that saves each channel's files to separate folders on a single microSD card. Viofo supports cards up to 512GB and recommends high-endurance U3 cards.",
       "recommendedBrands": [
         {
           "id": "speederlash-64gb-2pack"
@@ -5724,16 +5726,16 @@
       ],
       "faq": [
         {
-          "q": "Do I need two cards for the A229 Pro?",
-          "a": "<b>Yes, absolutely</b>. The A229 Pro has two SD card slots (one for front, one for interior). You need <b>two separate High Endurance cards</b>."
+          "q": "Do I need two cards for the Viofo A229 Pro?",
+          "a": "<b>No.</b> The A229 Pro has one microSD slot and records front, rear and interior footage to the same card."
         },
         {
-          "q": "What capacity should I get?",
-          "a": "<b>128GB per card minimum</b> for balanced storage. 256GB gives you 6-8 hours per card (front = 6-8 hours, interior = 6-8 hours, staggered). Dual 256GB = comprehensive coverage."
+          "q": "What size card should I get for the A229 Pro?",
+          "a": "<b>256GB for most drivers, 512GB for long parking-mode sessions.</b> Two or three channels share one card, so it fills faster than a single-channel camera."
         },
         {
-          "q": "Can I use regular cards?",
-          "a": "No. The A229 Pro writes to both cards simultaneously at high bitrate. Regular cards fail within weeks. <b>Use V30 High Endurance only</b>."
+          "q": "Can I use a regular microSD card in the A229 Pro?",
+          "a": "<b>It will record, but loop recording wears it out.</b> Use a high-endurance U3 card."
         }
       ],
       "relatedDevices": [
@@ -5742,7 +5744,8 @@
         "vantrue-n4-pro",
         "blackvue-dr970x"
       ],
-      "notes": "Professional dual-channel dash cam. Requires dual High Endurance cards for reliable operation."
+      "notes": "Professional dual-channel dash cam. Requires dual High Endurance cards for reliable operation.",
+      "metaDescription": "The Viofo A229 Pro records all channels to one microSD card, up to 512GB. Use a U3 high-endurance card; 256GB suits most drivers. Best picks."
     },
     {
       "id": "viofo-t130-pro",
@@ -5822,7 +5825,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "The Nextbase iQ is built around continuous loop recording with cloud/AI features layered on top, which pushes the camera toward higher-bitrate 4K capture than a typical dash cam. Nextbase's own guidance recommends U3-rated dashcam-compatible cards, calling out Nextbase-branded or SanDisk High Endurance (U3) cards specifically, with periodic reformatting recommended to manage wear from the continuous overwrite loop.",
+      "whySpecs": "The iQ 4K loop-records in 4K and saves incident clips for its app and cloud features. Nextbase recommends U3 dash cam cards, naming its own cards and the SanDisk High Endurance.",
       "recommendedBrands": [
         {
           "id": "sandisk-max-endurance"
@@ -5837,15 +5840,15 @@
       "faq": [
         {
           "q": "What SD card does Nextbase recommend for the iQ 4K?",
-          "a": "<b>Nextbase's guidance points to U3-rated dashcam-compatible cards</b>, specifically calling out Nextbase-branded cards or SanDisk High Endurance (U3) as preferred options. General-purpose consumer cards aren't built for the iQ's continuous loop-overwrite recording."
+          "a": "<b>A U3 dash cam card:</b> Nextbase's own cards or the SanDisk High Endurance."
         },
         {
-          "q": "What capacity should I get for the iQ 4K's cloud/AI features?",
-          "a": "<b>256GB-512GB is recommended.</b> The iQ's cloud/AI features push higher-bitrate 4K capture than a typical dash cam, so capacity guidance skews larger here than on simpler dashcam models."
+          "q": "What capacity should I get for the Nextbase iQ 4K?",
+          "a": "<b>256GB for most drivers, 512GB for long parking recordings.</b>"
         },
         {
-          "q": "Do I need to do anything to maintain the card over time?",
-          "a": "<b>Yes, Nextbase recommends periodically reformatting the card.</b> Continuous loop recording wears down even high-endurance cards over time, and a periodic reformat helps maintain reliable write performance."
+          "q": "Do I need to maintain the card in the Nextbase iQ?",
+          "a": "<b>Yes, reformat it every few weeks in the camera.</b> Nextbase recommends it to keep write performance steady."
         }
       ],
       "relatedDevices": [
@@ -9484,7 +9487,7 @@
         ],
         "maxCapacity": "32GB"
       },
-      "whySpecs": "The HDS LIVE only supports FAT32-formatted SDHC cards, which top out at 32GB by spec. Cards larger than that ship as exFAT/SDXC and the unit won't read them. This is a hardware/firmware limitation of the SD controller, not a defect.",
+      "whySpecs": "The HDS LIVE reads FAT32-formatted SDHC cards only, and SDHC stops at 32GB. Cards over 32GB are SDXC and ship as exFAT, which the unit can't read.",
       "recommendedBrands": [
         {
           "id": "kingston-canvas-select"
@@ -9537,7 +9540,7 @@
       "faq": [
         {
           "q": "Is the SD card in the ECHOMAP UHD only used for maps?",
-          "a": "No. <b>The card also stores sonar logs, waypoints, routes, and screenshots</b>, not just map data. Keep that in mind when deciding how much free space to leave available beyond whatever charts you load."
+          "a": "No. <b>The card also stores sonar logs, waypoints, routes and screenshots.</b> Leave free space beyond your charts for those."
         }
       ],
       "relatedDevices": [
@@ -10071,12 +10074,12 @@
       ],
       "faq": [
         {
-          "q": "Do I need a special SD card for security cameras?",
-          "a": "<b>Yes, always use a High Endurance microSD card for security cameras.</b> Non-endurance cards are not built for constant rewriting and will fail quickly with 24/7 recording. High Endurance cards are specifically designed for this workload and last much longer."
+          "q": "Do I need a special SD card for the Wyze Cam v3?",
+          "a": "<b>For continuous recording, use a high-endurance card.</b> Standard cards wear out under constant rewriting. For event-only recording, any Class 10 card works."
         },
         {
-          "q": "What capacity should I get for continuous recording?",
-          "a": "<b>64GB to 128GB is ideal for most users.</b> A 64GB card stores approximately 1-2 weeks of continuous video on standard settings. Heavy users or those wanting longer retention should opt for 128GB or 256GB."
+          "q": "What capacity should I get for continuous recording on the Wyze Cam v3?",
+          "a": "<b>64GB to 128GB.</b> Retention depends on resolution and scene activity; the camera overwrites the oldest footage when the card fills."
         }
       ],
       "relatedDevices": [
@@ -10096,17 +10099,15 @@
         "solocam storage"
       ],
       "sdCard": {
-        "type": "microSD",
-        "minSpeed": "Class 10 / U1",
-        "minWriteSpeed": "10 MB/s",
+        "type": "No card slot (8GB internal storage)",
+        "minSpeed": "N/A",
+        "minWriteSpeed": "N/A",
         "recommendedCapacity": [
-          "32GB",
-          "64GB",
-          "128GB"
+          "8GB internal"
         ],
-        "maxCapacity": "128GB"
+        "maxCapacity": "8GB internal (more via HomeBase)"
       },
-      "whySpecs": "The SoloCam S340 features dual cameras with pan/tilt and records locally to microSD (up to 128GB). Eufy recommends Class 10 cards minimum; High Endurance cards are essential for continuous recording to ensure long-term reliability.",
+      "whySpecs": "The S340 records motion-triggered clips to 8GB of built-in eMMC storage and has no card slot. Reviewers report 8GB holds about 10 to 14 days of clips at 50 to 80 events a day. For more, pair it with a eufy HomeBase 3 and a 2.5-inch drive.",
       "recommendedBrands": [
         {
           "id": "sandisk-max-endurance"
@@ -10117,15 +10118,21 @@
       ],
       "faq": [
         {
-          "q": "How much video can a 128GB card hold?",
-          "a": "<b>A 128GB High Endurance card stores approximately 2-3 weeks of continuous recording</b> on standard quality settings. The exact duration varies based on your motion detection settings and video quality preferences."
+          "q": "Does the eufy SoloCam S340 take a microSD card?",
+          "a": "<b>No.</b> It has 8GB of built-in storage and no card slot."
+        },
+        {
+          "q": "How do I add storage to the eufy S340?",
+          "a": "<b>Pair it with a eufy HomeBase 3</b> and install a 2.5-inch hard drive or SSD, up to 16TB."
         }
       ],
       "relatedDevices": [
         "wyze-cam-v3",
         "nextbase-622gw"
       ],
-      "notes": "Popular wire-free security camera with built-in solar panel option. Eufy official specs confirm microSD support up to 128GB. Growing search volume as Eufy gains market share."
+      "notes": "Popular wire-free security camera with built-in solar panel option. Eufy official specs confirm microSD support up to 128GB. Growing search volume as Eufy gains market share.",
+      "customTitle": "Does the eufy SoloCam S340 Take an SD Card? No, 8GB Built In",
+      "metaDescription": "The eufy SoloCam S340 has no microSD slot. It stores clips on 8GB of built-in memory; add more with a HomeBase 3 and a hard drive."
     },
     {
       "id": "reolink-e1-pro",
@@ -10783,7 +10790,7 @@
         ],
         "maxCapacity": "32GB"
       },
-      "whySpecs": "Tactacam specifies full-size SD only, and microSD-to-SD adapters are explicitly discouraged and can cause read errors/ejection failures in the field.",
+      "whySpecs": "Tactacam specifies full-size SD cards up to 32GB for the Reveal X Pro. It advises against microSD-to-SD adapters, which can cause read errors and cards that won't eject in the field.",
       "recommendedBrands": [
         {
           "id": "lexar-professional-silver-sd"
@@ -10825,7 +10832,7 @@
         ],
         "maxCapacity": "32GB (larger cards are auto-reformatted down to 32GB by current firmware)"
       },
-      "whySpecs": "Officially supports up to 512GB, but current firmware caps/reformats any card over 32GB down to 32GB, so there's no benefit buying larger; formatting is via the camera's FORMAT button or a computer (FAT32), not mandatory through the app.",
+      "whySpecs": "Spypoint lists support up to 512GB, but current firmware formats any card over 32GB down to 32GB. Format with the camera's FORMAT button or as FAT32 on a computer.",
       "recommendedBrands": [
         {
           "id": "kingston-canvas-select"
@@ -10867,7 +10874,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "4K trigger video needs sustained write speed, Bushnell recommends U3/V30; one of Bushnell's first trail cams to break past the old 32GB ceiling.",
+      "whySpecs": "The Core DS-4K records 4K video on trigger, and Bushnell recommends U3/V30 cards to keep up. It supports cards up to 512GB, well past the 32GB limit on older Bushnell cameras.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs1"
@@ -10891,7 +10898,7 @@
     }
   ],
   "metadata": {
-    "generated": "2026-09-26T10:29:41.226Z",
+    "generated": "2026-09-26T10:31:32.222Z",
     "totalDevices": 220,
     "categories": [
       "3D Printers & Fabrication",

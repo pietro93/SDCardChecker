@@ -20,7 +20,7 @@
       ],
       "maxCapacity": "32GB"
     },
-    "whySpecs": "The HDS LIVE only supports FAT32-formatted SDHC cards, which top out at 32GB by spec. Cards larger than that ship as exFAT/SDXC and the unit won't read them. This is a hardware/firmware limitation of the SD controller, not a defect.",
+    "whySpecs": "The HDS LIVE reads FAT32-formatted SDHC cards only, and SDHC stops at 32GB. Cards over 32GB are SDXC and ship as exFAT, which the unit can't read.",
     "recommendedBrands": [
       {
         "id": "kingston-canvas-select"
@@ -73,7 +73,7 @@
     "faq": [
       {
         "q": "Is the SD card in the ECHOMAP UHD only used for maps?",
-        "a": "No. <b>The card also stores sonar logs, waypoints, routes, and screenshots</b>, not just map data. Keep that in mind when deciding how much free space to leave available beyond whatever charts you load."
+        "a": "No. <b>The card also stores sonar logs, waypoints, routes and screenshots.</b> Leave free space beyond your charts for those."
       }
     ],
     "relatedDevices": [

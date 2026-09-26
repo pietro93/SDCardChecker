@@ -31,12 +31,12 @@
     ],
     "faq": [
       {
-        "q": "Do I need a special SD card for security cameras?",
-        "a": "<b>Yes, always use a High Endurance microSD card for security cameras.</b> Non-endurance cards are not built for constant rewriting and will fail quickly with 24/7 recording. High Endurance cards are specifically designed for this workload and last much longer."
+        "q": "Do I need a special SD card for the Wyze Cam v3?",
+        "a": "<b>For continuous recording, use a high-endurance card.</b> Standard cards wear out under constant rewriting. For event-only recording, any Class 10 card works."
       },
       {
-        "q": "What capacity should I get for continuous recording?",
-        "a": "<b>64GB to 128GB is ideal for most users.</b> A 64GB card stores approximately 1-2 weeks of continuous video on standard settings. Heavy users or those wanting longer retention should opt for 128GB or 256GB."
+        "q": "What capacity should I get for continuous recording on the Wyze Cam v3?",
+        "a": "<b>64GB to 128GB.</b> Retention depends on resolution and scene activity; the camera overwrites the oldest footage when the card fills."
       }
     ],
     "relatedDevices": [
@@ -56,17 +56,15 @@
       "solocam storage"
     ],
     "sdCard": {
-      "type": "microSD",
-      "minSpeed": "Class 10 / U1",
-      "minWriteSpeed": "10 MB/s",
+      "type": "No card slot (8GB internal storage)",
+      "minSpeed": "N/A",
+      "minWriteSpeed": "N/A",
       "recommendedCapacity": [
-        "32GB",
-        "64GB",
-        "128GB"
+        "8GB internal"
       ],
-      "maxCapacity": "128GB"
+      "maxCapacity": "8GB internal (more via HomeBase)"
     },
-    "whySpecs": "The SoloCam S340 features dual cameras with pan/tilt and records locally to microSD (up to 128GB). Eufy recommends Class 10 cards minimum; High Endurance cards are essential for continuous recording to ensure long-term reliability.",
+    "whySpecs": "The S340 records motion-triggered clips to 8GB of built-in eMMC storage and has no card slot. Reviewers report 8GB holds about 10 to 14 days of clips at 50 to 80 events a day. For more, pair it with a eufy HomeBase 3 and a 2.5-inch drive.",
     "recommendedBrands": [
       {
         "id": "sandisk-max-endurance"
@@ -77,15 +75,21 @@
     ],
     "faq": [
       {
-        "q": "How much video can a 128GB card hold?",
-        "a": "<b>A 128GB High Endurance card stores approximately 2-3 weeks of continuous recording</b> on standard quality settings. The exact duration varies based on your motion detection settings and video quality preferences."
+        "q": "Does the eufy SoloCam S340 take a microSD card?",
+        "a": "<b>No.</b> It has 8GB of built-in storage and no card slot."
+      },
+      {
+        "q": "How do I add storage to the eufy S340?",
+        "a": "<b>Pair it with a eufy HomeBase 3</b> and install a 2.5-inch hard drive or SSD, up to 16TB."
       }
     ],
     "relatedDevices": [
       "wyze-cam-v3",
       "nextbase-622gw"
     ],
-    "notes": "Popular wire-free security camera with built-in solar panel option. Eufy official specs confirm microSD support up to 128GB. Growing search volume as Eufy gains market share."
+    "notes": "Popular wire-free security camera with built-in solar panel option. Eufy official specs confirm microSD support up to 128GB. Growing search volume as Eufy gains market share.",
+    "customTitle": "Does the eufy SoloCam S340 Take an SD Card? No, 8GB Built In",
+    "metaDescription": "The eufy SoloCam S340 has no microSD slot. It stores clips on 8GB of built-in memory; add more with a HomeBase 3 and a hard drive."
   },
   {
     "id": "reolink-e1-pro",

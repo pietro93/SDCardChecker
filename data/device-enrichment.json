@@ -1260,22 +1260,25 @@
     "deviceName": "Wyze Cam v3",
     "slug": "wyze-cam-v3",
     "category": "Security Cameras",
-    "explanation": "Using a High Endurance microSD card like the SanDisk Extreme PRO 256GB, you can record non-stop videos all day long without worrying about card errors or corrupted footage. This means you'll capture every moment, every movement, and every detail without interruptions. With reliable recording, you can focus on what really matters - keeping your home and loved ones safe and secure.",
-    "generatedAt": "2026-01-05T07:32:24.761Z"
+    "explanation": "The Wyze Cam v3 records to microSD cards up to 256GB. Use a high-endurance card if you record continuously; event-only recording is gentler on standard cards.",
+    "generatedAt": "2026-01-05T07:32:24.761Z",
+    "reviewedAt": "2026-09-26"
   },
   "Security Cameras:eufy-solocam-s340": {
     "deviceName": "Eufy Security SoloCam S340",
     "slug": "eufy-solocam-s340",
     "category": "Security Cameras",
-    "explanation": "Using a Class 10 microSD card with the SoloCam S340 guarantees uninterrupted monitoring, so you can rest assured your footage is consistently recorded and available for review. This ensures you never miss a thing, whether it's an incident or a moment you'll cherish forever. With a reliable microSD card, you can trust that your security footage is safely stored.",
-    "generatedAt": "2026-01-05T07:32:28.642Z"
+    "explanation": "The eufy SoloCam S340 has no microSD slot. It stores clips on 8GB of built-in memory, and you can add more storage with a eufy HomeBase and a hard drive.",
+    "generatedAt": "2026-01-05T07:32:28.642Z",
+    "reviewedAt": "2026-09-26"
   },
   "Security Cameras:reolink-e1-pro": {
     "deviceName": "Reolink E1 Pro",
     "slug": "reolink-e1-pro",
     "category": "Security Cameras",
-    "explanation": "With our recommended microSD card, you get crystal-clear video recording without interruptions, allowing you to trust that every crucial moment is captured. Smooth performance means fewer worries about storage errors or footage loss. This setup keeps your security camera system up and running, giving you peace of mind 24/7.",
-    "generatedAt": "2026-01-05T07:32:31.518Z"
+    "explanation": "The Reolink E1 Pro takes microSD cards up to 256GB. The slot is under the lens: tilt the lens up to reach it, then format the card in the Reolink app.",
+    "generatedAt": "2026-01-05T07:32:31.518Z",
+    "reviewedAt": "2026-09-26"
   },
   "Smartphones:iphone-15": {
     "deviceName": "iPhone 15 / 15 Pro",
@@ -1520,6 +1523,104 @@
     "slug": "nikon-coolpix-s3100",
     "category": "Cameras",
     "explanation": "The Coolpix S3100 records 720p video. Nikon recommends Class 6 or faster SD cards for movies.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Dash Cams:tesla-model-3-sentry": {
+    "deviceName": "Tesla Model 3 (Sentry Mode)",
+    "slug": "tesla-model-3-sentry",
+    "category": "Dash Cams",
+    "explanation": "Tesla records Dashcam and Sentry Mode clips to a USB drive in the glovebox port, not an SD slot. Tesla requires at least 64GB and 4 MB/s sustained write. A microSD card in a USB reader works if it meets that spec.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Dash Cams:best-sd-card-4k-dash-cam": {
+    "deviceName": "Generic 4K Dash Cam",
+    "slug": "best-sd-card-4k-dash-cam",
+    "category": "Dash Cams",
+    "explanation": "4K dash cams record 50 to 100 Mbps and overwrite the card constantly. Buy a V30 high-endurance microSD card; endurance cards are rated in recording hours, standard cards are not.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Dash Cams:viofo-a229-pro": {
+    "deviceName": "Viofo A229 Pro Dual Dash Cam",
+    "slug": "viofo-a229-pro",
+    "category": "Dash Cams",
+    "explanation": "The Viofo A229 Pro records every channel to one microSD card, up to 512GB. Viofo recommends U3 high-endurance cards such as its own industrial-grade line.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Dash Cams:viofo-t130-pro": {
+    "deviceName": "Viofo T130 Pro",
+    "slug": "viofo-t130-pro",
+    "category": "Dash Cams",
+    "explanation": "The Viofo T130 Pro takes U3 high-endurance microSD cards up to 256GB. Viofo prefers 128GB for reliability.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Dash Cams:nextbase-iq-4k": {
+    "deviceName": "Nextbase iQ 4K",
+    "slug": "nextbase-iq-4k",
+    "category": "Dash Cams",
+    "explanation": "The Nextbase iQ 4K records to a U3 microSD card up to 512GB. Nextbase recommends its own cards or the SanDisk High Endurance.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Dash Cams:blackvue-dr970x": {
+    "deviceName": "BlackVue DR970X",
+    "slug": "blackvue-dr970x",
+    "category": "Dash Cams",
+    "explanation": "The BlackVue DR970X needs a microSD card formatted FAT32 with BlackVue's formatter. Cards over 64GB ship as exFAT and must be reformatted before use.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Dash Cams:thinkware-u3000": {
+    "deviceName": "Thinkware U3000",
+    "slug": "thinkware-u3000",
+    "category": "Dash Cams",
+    "explanation": "The Thinkware U3000 takes microSD cards up to 256GB. A U3 high-endurance card handles its continuous front and rear recording.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Dash Cams:vantrue-n4-pro": {
+    "deviceName": "Vantrue N4 Pro",
+    "slug": "vantrue-n4-pro",
+    "category": "Dash Cams",
+    "explanation": "The Vantrue N4 Pro records three channels at once, 4K front plus two 1080p, to one card. Vantrue requires U3/V30 cards up to 512GB.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Misc:lowrance-hds-live": {
+    "deviceName": "Lowrance HDS LIVE",
+    "slug": "lowrance-hds-live",
+    "category": "Misc",
+    "explanation": "The Lowrance HDS LIVE only reads FAT32 SDHC microSD cards, which top out at 32GB. Larger SDXC cards won't be recognized.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Misc:garmin-echomap-uhd": {
+    "deviceName": "Garmin ECHOMAP UHD",
+    "slug": "garmin-echomap-uhd",
+    "category": "Misc",
+    "explanation": "Garmin's manual caps the ECHOMAP UHD at 32GB microSD cards formatted FAT32. The card holds charts, sonar logs, waypoints, routes and screenshots.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Misc:humminbird-helix-7": {
+    "deviceName": "Humminbird Helix 7",
+    "slug": "humminbird-helix-7",
+    "category": "Misc",
+    "explanation": "The Humminbird Helix 7 has one microSD slot for charts and sonar logs, capped at 32GB.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Trail Cameras:tactacam-reveal-x-pro": {
+    "deviceName": "Tactacam Reveal X Pro",
+    "slug": "tactacam-reveal-x-pro",
+    "category": "Trail Cameras",
+    "explanation": "The Tactacam Reveal X Pro takes full-size SD cards up to 32GB. Tactacam advises against microSD-to-SD adapters.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Trail Cameras:spypoint-flex": {
+    "deviceName": "Spypoint Flex",
+    "slug": "spypoint-flex",
+    "category": "Trail Cameras",
+    "explanation": "Buy a 16GB or 32GB Class 10 microSD card for the Spypoint Flex. Current firmware formats larger cards down to 32GB, so extra capacity goes unused.",
+    "reviewedAt": "2026-09-26"
+  },
+  "Trail Cameras:bushnell-core-ds-4k": {
+    "deviceName": "Bushnell Core DS-4K",
+    "slug": "bushnell-core-ds-4k",
+    "category": "Trail Cameras",
+    "explanation": "The Bushnell Core DS-4K takes full-size SD cards up to 512GB. Bushnell recommends U3/V30 for its 4K trigger video.",
     "reviewedAt": "2026-09-26"
   }
 }
