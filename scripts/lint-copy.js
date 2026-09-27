@@ -99,7 +99,12 @@ function htmlStrings(file) {
     // Blank out non-copy blocks but keep their newlines so reported line numbers stay right.
     .replace(/<script[\s\S]*?<\/script>/gi, (m) => (/application\/ld\+json/.test(m) ? m : m.replace(/[^\n]/g, '')))
     .replace(/<style[\s\S]*?<\/style>/gi, (m) => m.replace(/[^\n]/g, ''));
-  return src.split(/\r?\n/).map((line, i) => ({ where: `L${i + 1}`, text: line.replace(/<[^>]+>/g, ' ') }));
+  // Keep copy that lives in attributes (meta description, og:*, alt, title) before stripping tags.
+  const ATTR = /\b(?:content|alt|title|aria-label|placeholder)="([^"]*)"/g;
+  return src.split(/\r?\n/).map((line, i) => ({
+    where: `L${i + 1}`,
+    text: [...line.matchAll(ATTR)].map((m) => m[1]).join(' ') + ' ' + line.replace(/<[^>]+>/g, ' '),
+  }));
 }
 
 function check(text) {

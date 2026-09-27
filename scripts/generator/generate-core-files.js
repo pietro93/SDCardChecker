@@ -244,7 +244,7 @@ const page404Html = `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found - SD Card Checker</title>
-    <meta name="description" content="We couldn't find that page. Use our search to find the perfect SD card for your device.">
+    <meta name="description" content="We couldn't find that page. Search for your device to see which SD card it needs.">
     <link rel="canonical" href="https://sdcardchecker.com/404.html">
     <link rel="icon" type="image/x-icon" href="/img/brand/favicon.ico">
     <link rel="apple-touch-icon" href="/img/brand/logo.webp">
@@ -266,7 +266,7 @@ const page404Html = `<!DOCTYPE html>
             <div style="text-align: center; max-width: 600px; margin: 0 auto;">
                 <div style="font-size: 6rem; font-weight: 900; color: #3b82f6; margin-bottom: 1rem;">404</div>
                 <h1 style="font-size: 2.5rem; font-weight: 700; color: #1f2937; margin-bottom: 1rem;">Page Not Found</h1>
-                <p style="font-size: 1.1rem; color: #6b7280; margin-bottom: 3rem;">We couldn't find that page, but we can help you find the perfect SD card for your device.</p>
+                <p style="font-size: 1.1rem; color: #6b7280; margin-bottom: 3rem;">We couldn't find that page, Search for your device to see which SD card it needs.</p>
 
                 <!-- Device Search -->
                 <div x-data="deviceSearch()" x-init="init()" @click.outside="open = false" style="margin-bottom: 3rem;">

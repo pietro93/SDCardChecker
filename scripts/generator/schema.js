@@ -62,7 +62,7 @@ function buildAboutPageSchema(pathname = "/about.html") {
     name: isJapanese ? `${SITE_NAME}について` : `About ${SITE_NAME}`,
     description: isJapanese
       ? "SD Card Checkerについて学びましょう。あらゆるデバイスに最適なSDカードを見つけるための信頼できるリソースです。"
-      : "Learn about SD Card Checker, your trusted resource for finding the perfect SD card for any device.",
+      : "SD Card Checker lists the SD card type, speed class and capacity limit for 220+ devices, with cards that meet each spec.",
     isPartOf: { "@id": `${SITE_URL}/#website` },
     publisher: { "@id": `${SITE_URL}/#organization` },
     about: { "@id": `${SITE_URL}/#organization` },
