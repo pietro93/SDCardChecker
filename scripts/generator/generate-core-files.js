@@ -201,9 +201,23 @@ function generateLegalPages(distPath, locale = "en") {
 }
 
 /**
+ * Homepage stat counts, computed from the data so they can't drift from the site.
+ * Cards exclude navigation map cards, which aren't recommended for any device.
+ */
+function homepageStats(devices) {
+  const sdcardsPath = path.join(__dirname, "../../data/sdcards.json");
+  const cards = JSON.parse(fs.readFileSync(sdcardsPath, "utf8")).sdcards.filter((c) => c.type !== "Navigation SD");
+  return {
+    devices: devices.length,
+    cards: cards.length,
+    categories: new Set(devices.map((d) => d.category)).size,
+  };
+}
+
+/**
  * Generate the homepage for a locale
  */
-function generateHomepage(distPath, locale = "en", availableLocales = [locale]) {
+function generateHomepage(distPath, locale = "en", availableLocales = [locale], devices = []) {
   const dir = dirSegment(locale);
   const header = generateHeader(locale);
   const footer = generateFooter(locale);
@@ -222,11 +236,15 @@ function generateHomepage(distPath, locale = "en", availableLocales = [locale]) 
     const f = l === "en" ? "home.html" : `home-${l}.html`;
     return fs.existsSync(path.join(srcPath, "templates", f));
   });
+  const stats = homepageStats(devices);
   const homeHtml = homeTemplate
     .replace("{{HREFLANG_TAGS}}", generateHreflangTags("/", localesWithPage))
     .replace("{{HEADER}}", header)
     .replace("{{FOOTER}}", footer)
-    .replace("{{GROW_SCRIPT}}", growScript);
+    .replace("{{GROW_SCRIPT}}", growScript)
+    .replace("{{STAT_DEVICES}}", stats.devices)
+    .replace("{{STAT_CARDS}}", stats.cards)
+    .replace("{{STAT_CATEGORIES}}", stats.categories);
   writeFile(path.join(distPath, dir, "index.html"), homeHtml);
 }
 
@@ -353,7 +371,7 @@ function generateDevicesListTxt(allDevices, distPath) {
 */
 async function generateCoreFiles(allDevices, allReaders, distPath, locale = "en", availableLocales = [locale]) {
   console.log(`Generating ${locale} core files...`);
-  generateHomepage(distPath, locale, availableLocales);
+  generateHomepage(distPath, locale, availableLocales, allDevices);
   generateSitemap(allDevices, allReaders, distPath, locale);
   generateLegalPages(distPath, locale);
   if (locale === "en") generateDevicesListTxt(allDevices, distPath);
