@@ -23,7 +23,8 @@
     "build:prod": "npm run build:all",
     "dev": "npm run build:site && concurrently \"tailwindcss -i ./src/css/input.css -o ./src/css/tailwind.css --watch\" \"npm run build:site\" \"http-server dist\"",
     "start": "http-server dist",
-    "lint:copy": "node scripts/lint-copy.js"
+    "lint:copy": "node scripts/lint-copy.js",
+    "check:recs": "node scripts/check-recommendations.js"
   },
   "keywords": [
     "sd-card",
