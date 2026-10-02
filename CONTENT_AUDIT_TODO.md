@@ -178,6 +178,36 @@ Sub-batch each file (e.g. by brand) rather than trying a whole file in one sessi
 
 ## Findings log
 
+### 2026-10-02 — Locale spec drift and duplicates (DE, FR, IT, JA)
+
+`scripts/check-locale-drift.js` (npm run check:locale-drift) compares spec tokens in each
+locale's `sdCard` against English. Baseline: DE 50, FR 58, IT 48, JA 58 drifted fields (FR
+included 12 false positives from "To"/"Go" units). Now 0 in every locale; 9 JA-only devices
+allowlisted.
+
+- Set every drifted `type`, `minSpeed` and `maxCapacity` from English (translated where the
+  value has words). Examples: dji-neo, insta360-go-3, eufy-solocam-s340 had no-slot devices
+  described as microSD cameras; nintendo-switch-2 said UHS-I cards work for games; nikon-zf
+  and nikon-z6-ii said "Dual SD UHS-II"; dji-osmo-action-4 said 2TB (512GB).
+- Retranslated `whySpecs` and `faq` from current English for the devices whose old prose
+  repeated the wrong spec: the three no-slot devices, gopro-hero-12/-13, gopro-max-2,
+  dji-osmo-action-4, canon-eos-r5, fujifilm-x100vi, canon-eos-r50 (Canon manual confirms a
+  UHS-I slot), nikon-zf, nikon-z6-ii, viofo-a229-pro, dji-mavic-3, dji-mini-4k, dji-avata-360,
+  dji-mavic-4-pro, nintendo-switch-2, macbook-pro, msi-claw-8-ex-ai-plus, and in JA
+  nikon-d850 ("APS-C") and hoverair-x1-pro/-pro-max (garbled half-English).
+- Removed duplicate ids that built over each other: wyze-cam-v3 stub under action-cameras
+  in DE/FR/IT (redirected to security-cameras); in JA, second copies of canon-rebel-t7,
+  nikon-d850 (half-English, recommended a nonexistent card), dji-mini-3 and 9 gaming
+  handhelds. The later copy was the live one, so those JA pages now show the fuller entry.
+- **Open:** about 28 JA device pages are still mostly English (sony-a6400, fujifilm-x-s10,
+  canon-eos-r6, nikon-d500, sony-a7r, sony-a1, autel-*, holy-stone-*, skydio-x10, fimi-mini-3,
+  potensic-atom, raspberry-pi-*, ipad-air-3, ipad-9th-gen, iphone-13/-14-pro-max/-se,
+  google-pixel-8, lenovo-tab-m10-plus-gen3, orange-pi-5, reolink-e1-pro). Needs a translator.
+- **Open:** locale page titles and fallback meta descriptions are built from `sdCard.type`
+  with English template text (generate-device-pages.js). No-slot devices now have localized
+  `metaDescription` and `customTitle` in their data; `customTitle` is ignored outside English
+  until line ~533 reads it for locales.
+
 ### 2026-08-29 — Meta description pass (English only)
 193 of 222 English devices had no curated `metaDescription` (falling back to a
 7-template rotation in `generateUniqueMetaDescription()` in
