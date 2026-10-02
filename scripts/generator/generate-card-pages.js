@@ -117,8 +117,11 @@ function generateCardPage(card, template, devicesForCard) {
   const heroImage = heroImagePath(card.id) || card.imageUrl || getCardImageFallback(card);
   const heroImageAbs = `${BASE_URL}${heroImage}`;
 
-  const title = `${card.name} Review: Specs, Speed & Best Uses (2026)`;
-  const ogTitle = `${card.name} Review & Specs`;
+  // Longest title format that fits in 65 characters; shortName covers names too long for any.
+  const titleName = card.shortName || card.name;
+  const title = [`${titleName}: Specs, Speed & Best Uses`, `${titleName}: Specs and Speeds`]
+    .find((t) => t.length <= 65) || `${titleName} Specs`;
+  const ogTitle = `${titleName} Specs`;
   const description = card.richDescription
     ? card.richDescription.length > 160
       ? `${card.richDescription.substring(0, 157)}...`

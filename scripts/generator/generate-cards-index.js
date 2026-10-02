@@ -45,7 +45,7 @@ function generateCardsIndex(distPath) {
   <div class="card-tile-image"><img src="${image}" alt="${card.name}" width="110" height="110" loading="lazy" /></div>
   <div class="card-tile-name">${card.name}</div>
   <div class="card-tile-meta">${card.specs?.speedClass || ""} ${priceLabel}</div>
-  <a href="/cards/${card.id}/" class="card-tile-link">Read Full Review &rarr;</a>
+  <a href="/cards/${card.id}/" class="card-tile-link">See Specs &rarr;</a>
 </div>`;
     })
     .join("");
