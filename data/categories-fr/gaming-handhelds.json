@@ -274,8 +274,8 @@
       "switch 2 compatibilité carte sd"
     ],
     "sdCard": {
-      "type": "microSDXC UHS-I (rétrocompatible) ou microSD Express (recommandé)",
-      "minSpeed": "UHS-I U3/A2 (standard) ou microSD Express basé sur PCIe",
+      "type": "microSD Express uniquement",
+      "minSpeed": "microSD Express",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "512GB",
@@ -285,7 +285,7 @@
       "maxCapacity": "2TB (microSDXC) / 2TB+ (microSD Express SDUC)",
       "testedMaxCapacity": "2TB"
     },
-    "whySpecs": "<b>Bonne nouvelle : vos cartes microSD Switch existantes fonctionnent toujours sur Switch 2.</b> Toutes les cartes microSDXC standard UHS-I sont rétrocompatibles — vous pouvez jouer à tous les jeux (originaux et Switch 2) sans acheter de nouvelle carte. Cependant, la Switch 2 introduit également un <b>slot microSD Express</b> qui prend en charge les cartes Express basées sur PCIe pour un chargement nettement plus rapide (jusqu'à 800 MB/s contre ~100 MB/s pour l'UHS-I). Le microSD Express est optionnel mais recommandé si vous achetez une nouvelle carte. Important : <b>les cartes microSD Express ne sont PAS rétrocompatibles avec la Switch originale, la Switch Lite ou la Switch OLED</b> — ces appareils ne prennent en charge que l'UHS-I.",
+    "whySpecs": "Nintendo a rendu la microSD Express obligatoire pour le stockage des jeux de la Switch 2. Les cartes Express passent par une liaison PCIe et lisent jusqu'à environ 800 à 900 Mo/s, contre environ 100 Mo/s en UHS-I. Les cartes microSD, microSDHC et microSDXC classiques ne sont pas prises en charge pour les données de jeu, les téléchargements, les captures d'écran ou les vidéos. Cherchez le logo microSD Express sur la carte.",
     "recommendedBrands": [
       {
         "id": "samsung-evo-select-microsd",
@@ -302,20 +302,20 @@
     ],
     "faq": [
       {
-        "q": "Puis-je utiliser ma vieille carte SD de Switch dans la Nintendo Switch 2 ?",
-        "a": "<b>Oui — vos cartes microSD existantes fonctionnent sur Switch 2.</b> Les cartes microSDXC standard UHS-I sont entièrement rétrocompatibles avec la Switch 2. Vous pouvez jouer à tous vos jeux sans acheter de nouvelle carte. La Switch 2 prend également en charge le standard microSD Express plus rapide pour des temps de chargement améliorés, mais c'est optionnel, pas obligatoire."
+        "q": "Puis-je utiliser la carte SD de mon ancienne Switch dans la Nintendo Switch 2 ?",
+        "a": "<b>Pas pour les jeux.</b> La Switch 2 ne stocke des données que sur des cartes microSD Express. Vous pouvez insérer une ancienne carte une fois pour importer vos captures et vidéos Switch dans la mémoire de la console."
       },
       {
-        "q": "Qu'est-ce que le microSD Express et en ai-je besoin pour la Switch 2 ?",
-        "a": "<b>Le microSD Express utilise la technologie PCIe pour des vitesses allant jusqu'à 800 MB/s — contre ~100 MB/s pour l'UHS-I standard.</b> Il offre un chargement nettement plus rapide dans les jeux Switch 2. Cependant, vous n'en avez pas besoin — vos cartes microSD UHS-I existantes fonctionnent parfaitement. En 2026, les cartes microSD Express restent rares et coûteuses. N'en envisagez une que si vous achetez une nouvelle carte et souhaitez la meilleure performance possible."
+        "q": "Qu'est-ce que la microSD Express, et en ai-je besoin pour la Switch 2 ?",
+        "a": "<b>Oui, pour ajouter du stockage.</b> La microSD Express passe par le PCIe et lit jusqu'à environ 800 à 900 Mo/s. La Switch 2 a 256 Go intégrés ; tout stockage supplémentaire doit être une carte Express."
       },
       {
-        "q": "Une carte microSD Express fonctionnera-t-elle sur ma Switch originale ou Switch OLED ?",
-        "a": "<b>Non. Les cartes microSD Express ne sont PAS rétrocompatibles avec la Switch originale, la Switch Lite ou la Switch OLED.</b> Ces consoles ne prennent en charge que l'UHS-I. Si vous possédez plusieurs modèles Switch, optez pour une carte microSDXC UHS-I U3/A2 standard compatible avec tous."
+        "q": "Une carte microSD Express fonctionne-t-elle dans ma Switch d'origine ou ma Switch OLED ?",
+        "a": "<b>Oui, à la vitesse UHS-I.</b> Les cartes Express sont rétrocompatibles avec les emplacements UHS-I, une même carte peut donc passer d'une console à l'autre. Les jeux Switch 2 restent réservés à la Switch 2."
       },
       {
-        "q": "Quelles spécifications microSD dois-je acheter pour la Switch 2 ?",
-        "a": "<b>Pour une carte microSD standard : UHS-I U3/A2 (même recommandation que pour la Switch originale). Pour le microSD Express : toute carte SD Express certifiée avec V30 ou plus rapide.</b> Pour la capacité, 512GB est un bon point de départ ; 1TB est idéal si vous téléchargez la majorité de votre bibliothèque numériquement."
+        "q": "Quelle carte microSD acheter pour la Switch 2 ?",
+        "a": "<b>N'importe quelle carte portant le logo microSD Express</b>, comme la Samsung P9 Express ou la carte SanDisk sous licence Nintendo. 256 Go doublent le stockage intégré ; 512 Go conviennent aux grandes ludothèques numériques."
       }
     ],
     "relatedDevices": [
@@ -1345,7 +1345,7 @@
       "microsd msi claw 8"
     ],
     "sdCard": {
-      "type": "microSD UHS-I (lecteur haute vitesse)",
+      "type": "microSD Express (lit aussi les cartes UHS-I)",
       "minSpeed": "V30",
       "minWriteSpeed": "30 MB/s",
       "minAppPerformance": "A2",
@@ -1355,7 +1355,7 @@
       ],
       "maxCapacity": "2TB"
     },
-    "whySpecs": "Le Claw 8 EX AI+ associe la plateforme Intel Arc G3 Extreme à une batterie de 80Whr pour des performances portables soutenues et de haute puissance, et s'appuie sur l'upscaling IA XeSS d'Intel, qui dépend d'un streaming d'assets rapide et constant. Comme les pilotes Arc sont sensibles aux délais de livraison lors du streaming d'assets de jeu depuis un stockage externe, une carte classée A2 avec de solides IOPS de lecture/écriture aléatoires est essentielle pour éviter les saccades et micro-gels — une simple carte V30 sans A2 bridera le système sous charge.",
+    "whySpecs": "La Claw 8 EX AI+ tourne sous Windows sur la plateforme Intel Arc G3 Extreme et dispose d'un lecteur microSD Express. Les cartes Express passent par le PCIe et lisent à 800 Mo/s ou plus, plusieurs fois plus vite que l'UHS-I. Les cartes UHS-I classiques fonctionnent aussi ; prenez de l'A2 pour charger les jeux plus vite et 1 To ou plus pour une ludothèque PC.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd",
@@ -1372,16 +1372,16 @@
     ],
     "faq": [
       {
-        "q": "Le MSI Claw 8 EX AI+ a-t-il besoin d'une carte microSD spéciale ?",
-        "a": "<b>Il a besoin d'une carte classée en performance applicative A2, pas seulement rapide en séquentiel.</b> L'upscaling IA XeSS de la plateforme Intel Arc diffuse en continu des assets de jeu, et les solides IOPS de lecture/écriture aléatoires d'A2 évitent les saccades et micro-gels qu'une simple carte V30 sans A2 peut provoquer."
+        "q": "La MSI Claw 8 EX AI+ a-t-elle besoin d'une carte microSD spéciale ?",
+        "a": "<b>Non, mais elle en profite.</b> Le lecteur prend en charge la microSD Express, qui charge les jeux plusieurs fois plus vite que l'UHS-I. Les cartes A2 classiques fonctionnent à la vitesse UHS-I."
       },
       {
-        "q": "Pourquoi mon MSI Claw 8 saccade-t-il pendant les scènes intenses ?",
-        "a": "<b>C'est généralement un goulot d'étranglement d'E/S de stockage, pas un problème CPU/GPU.</b> Les pilotes Intel Arc sont sensibles aux délais de livraison d'assets lors du streaming en arrière-plan. Passer à une carte microSD classée A2 (ou déplacer le jeu vers le stockage interne) résout généralement les saccades."
+        "q": "Pourquoi ma MSI Claw 8 saccade-t-elle dans les jeux en monde ouvert ?",
+        "a": "<b>Les jeux qui chargent leurs textures depuis la carte peuvent accrocher sur une carte lente.</b> Déplacez le jeu sur le SSD interne, ou utilisez une carte microSD Express ou A2."
       },
       {
-        "q": "Quelle est la meilleure capacité pour une microSD de 2TB sur le Claw 8 ?",
-        "a": "<b>Une carte 2TB A2/V30 d'une marque réputée fonctionne bien, mais restez fidèle à des marques établies comme SanDisk, Samsung ou Lexar.</b> Les cartes 2TB génériques de vendeurs non vérifiés ont beaucoup plus de risques d'avoir des capacités gonflées ou des performances d'écriture soutenue incohérentes."
+        "q": "Une carte microSD de 2 To est-elle une bonne idée pour la Claw 8 ?",
+        "a": "<b>Oui, chez SanDisk, Samsung ou Lexar.</b> Les cartes de 2 To sans marque sont souvent des contrefaçons à capacité truquée."
       }
     ],
     "relatedDevices": [

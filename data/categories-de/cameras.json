@@ -11,7 +11,7 @@
     ],
     "sdCard": {
       "type": "CFexpress Type B and SD UHS-II",
-      "minSpeed": "V60",
+      "minSpeed": "V90 (CFexpress für 8K RAW erforderlich)",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -19,7 +19,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "Professionelle 8K-Kameraaufnahme. Erfordert mindestens V60 für 8K-RAW-Video. Die hohe Bitrate (1,6 Gbit/s) erfordert schnelle Dual-Kartensteckplätze für zusätzliche Sicherheit.",
+    "whySpecs": "Professionelle 8K-Kamera. 8K RAW (Cinema RAW Light) lässt sich nur auf eine CFexpress-Type-B-Karte aufnehmen, der SD-Steckplatz kann es gar nicht. Der SD-UHS-II-Steckplatz braucht für normales 8K eine V90-Karte, für 4K genügt V60. Video mit hoher Bitrate verlangt schnelle Karten und zwei Steckplätze für die Sicherheit.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-cfexpress"
@@ -30,16 +30,16 @@
     ],
     "faq": [
       {
-        "q": "Brauche ich zwei Karten für die R5?",
-        "a": "<b>Ja, die Canon EOS R5 verfügt über zwei Kartensteckplätze, und Canon empfiehlt die Verwendung von zwei V60-Karten für zusätzliche Sicherheit</b>. <b>Beim Filmen von 8K-Video bieten zwei Karten eine Backup-Aufnahme und höhere Zuverlässigkeit</b>, was vor dem Ausfall einer einzelnen Karte während wichtiger Aufnahmen schützt."
+        "q": "Brauche ich zwei Karten für die Canon R5?",
+        "a": "<b>Nein, aber es ist sicherer.</b> Die R5 hat einen CFexpress-Type-B- und einen SD-UHS-II-Steckplatz. Die Aufnahme auf beide gibt dir ein Backup, aber nur die CFexpress-Karte schafft 8K RAW."
       },
       {
-        "q": "Kann ich mit V30-Karten 4K filmen?",
-        "a": "<b>Ja, 4K-Videoaufnahmen funktionieren einwandfrei mit Speicherkarten der Geschwindigkeitsklasse V30</b>. Für <b>8K-Aufnahmen ist jedoch mindestens die Geschwindigkeitsklasse V60</b> erforderlich, aufgrund der wesentlich höheren Bitrate und Datendurchsatzanforderungen der 8K-Aufnahme."
+        "q": "Kann ich mit der R5 auf V30-Karten in 4K filmen?",
+        "a": "<b>Für normales 4K IPB ja.</b> 8K auf SD braucht V90, und 8K RAW braucht CFexpress Type B."
       },
       {
-        "q": "Was ist der Unterschied zwischen CFexpress und SD?",
-        "a": "<b>CFexpress-Type-B-Karten sind deutlich schneller als SD UHS-II</b> und <b>eignen sich am besten für 8K-RAW-Videoaufnahmen</b>. <b>SD-UHS-II-V60-Karten sind günstiger und für 4K-Aufnahmen ausreichend</b>, was sie zur bevorzugten Wahl für hybride Foto-/Videoarbeit macht."
+        "q": "Was ist der Unterschied zwischen CFexpress und SD in der R5?",
+        "a": "<b>Die Geschwindigkeit.</b> CFexpress Type B schreibt über 1.000 MB/s und schafft 8K RAW. Eine SD-UHS-II-Karte mit V60 oder V90 kostet weniger und reicht für 4K."
       }
     ],
     "relatedDevices": [
@@ -60,7 +60,7 @@
     ],
     "sdCard": {
       "type": "SD UHS-II",
-      "minSpeed": "V30",
+      "minSpeed": "V30 (V90 für XAVC S-I)",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -109,7 +109,7 @@
     ],
     "sdCard": {
       "type": "SD UHS-II",
-      "minSpeed": "V30",
+      "minSpeed": "V30 (V90 für 360 Mbit/s)",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -154,7 +154,7 @@
     ],
     "sdCard": {
       "type": "CFexpress Type B and XQD",
-      "minSpeed": "V90",
+      "minSpeed": "VPG 400 (CFexpress)",
       "minWriteSpeed": "90 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -465,8 +465,8 @@
       "fujifilm x100vi speicherkarte"
     ],
     "sdCard": {
-      "type": "SD UHS-II",
-      "minSpeed": "V60",
+      "type": "SD UHS-I",
+      "minSpeed": "V30",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -474,7 +474,7 @@
       ],
       "maxCapacity": "No official limit"
     },
-    "whySpecs": "Premium-Kompaktkamera mit 40MP-Sensor und 6,2K-Videofunktion. V60 ist unerlässlich für 6,2K-30fps-Videoaufnahmen und schnelle kontinuierliche RAW-Aufnahmen. Der UHS-II-Steckplatz ermöglicht schnelleres Leeren des Puffers für den neuen 20fps-Serienbildmodus.",
+    "whySpecs": "Die X100VI hat einen 40MP-Sensor und nimmt 6.2K/30 mit bis zu 200 Mbit/s auf, etwa 25 MB/s. Ihr einziger Steckplatz ist UHS-I, eine V30-Karte reicht also für Video, und UHS-II-Karten bringen in der Kamera nichts. Eine Karte, die nahe 90 MB/s schreibt, leert den Puffer nach Serien mit 20 B/s am schnellsten.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -488,12 +488,12 @@
     ],
     "faq": [
       {
-        "q": "Kann ich meine alten X100V-Karten verwenden?",
-        "a": "<b>V30-Karten von der X100V funktionieren, aber V60 wird für das 6,2K-Video und die schnelleren Serienaufnahmen der X100VI empfohlen.</b> Für optimale Leistung, besonders bei Video, ist ein Upgrade auf eine V60-UHS-II-Karte ratsam."
+        "q": "Kann ich meine alten X100V-Karten in der X100VI verwenden?",
+        "a": "<b>Ja, wenn sie V30 sind.</b> Beide Kameras haben UHS-I-Steckplätze, und V30 deckt die maximale Bitrate der X100VI von 200 Mbit/s ab."
       },
       {
-        "q": "Ist V90 für die X100VI notwendig?",
-        "a": "<b>V60 reicht für alle Aufnahmemodi aus.</b> V90-Karten bieten keinen praktischen Vorteil, da die maximale Bitrate der X100VI die V60-Anforderungen nicht überschreitet. Sie können Geld sparen, indem Sie bei V60-Karten bleiben, ohne die Leistung in der Kamera zu beeinträchtigen."
+        "q": "Brauche ich für die X100VI eine V60- oder V90-Karte?",
+        "a": "<b>Nein.</b> Die maximale Bitrate liegt bei 200 Mbit/s (25 MB/s), das deckt V30 ab, und der UHS-I-Steckplatz kann UHS-II-Geschwindigkeit nicht nutzen."
       }
     ],
     "relatedDevices": [
@@ -516,7 +516,7 @@
       "canon r50 speicher"
     ],
     "sdCard": {
-      "type": "SD UHS-II (UHS-I compatible)",
+      "type": "SD UHS-I",
       "minSpeed": "V30",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
@@ -526,7 +526,7 @@
       ],
       "maxCapacity": "No official limit"
     },
-    "whySpecs": "Canons spiegellose APS-C-Einstiegskamera mit 4K-Videoaufnahme und 24MP-Sensor. Eine Karte der Geschwindigkeitsklasse V30 reicht für 4K-30fps-Aufnahmen und kontinuierliches RAW-Fotografieren aus. Obwohl sie über einen UHS-II-Steckplatz verfügt, bieten UHS-I-V30-Karten für die meisten Nutzer ein hervorragendes Preis-Leistungs-Verhältnis.",
+    "whySpecs": "Canons spiegellose APS-C-Einsteigerkamera hat einen 24MP-Sensor, 4K/30-Video und einen einzelnen SD-UHS-I-Steckplatz. Eine V30-UHS-I-Karte deckt jeden Modus ab. UHS-II-Karten funktionieren, laufen aber mit UHS-I-Geschwindigkeit.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -540,12 +540,12 @@
     ],
     "faq": [
       {
-        "q": "Ist dies eine gute erste Kamera?",
-        "a": "<b>Ja, die EOS R50 ist Canons einsteigerfreundlichste spiegellose Kamera.</b> Sie ist erschwinglich, leicht und verfügt über einen exzellenten Autofokus. Bei SD-Karten ist eine V30-UHS-I-Karte (günstiger) ein guter Einstieg, und Sie können später auf UHS-II umsteigen, falls die Übertragungsgeschwindigkeit zum Engpass wird."
+        "q": "Ist die Canon R50 eine gute erste Kamera?",
+        "a": "<b>Ja.</b> Sie ist klein, leicht und hat einen zuverlässigen Autofokus. Eine V30-UHS-I-Karte ist alles, was sie braucht."
       },
       {
-        "q": "Kann ich UHS-I-Karten verwenden, oder brauche ich UHS-II?",
-        "a": "<b>UHS-I-V30-Karten funktionieren einwandfrei für alle Aufnahmemodi der R50.</b> Die Kamera unterstützt UHS-II für schnellere Datenübertragungen (z. B. auf einen Computer) und schnelleres Leeren des Puffers nach schnellen Serienaufnahmen, ist aber für die Aufnahmeleistung in der Kamera nicht zwingend erforderlich. Sie können mit UHS-I-Karten Geld sparen, sofern Sie nicht regelmäßig Tausende Fotos pro Session aufnehmen."
+        "q": "Brauche ich für die Canon R50 eine UHS-II-Karte?",
+        "a": "<b>Nein.</b> Der Steckplatz ist UHS-I, UHS-II-Karten laufen darin mit UHS-I-Geschwindigkeit."
       }
     ],
     "relatedDevices": [
@@ -1798,8 +1798,8 @@
       "nikon zf speicher"
     ],
     "sdCard": {
-      "type": "Dual SD UHS-II",
-      "minSpeed": "V60 (V90 for high frame rate video)",
+      "type": "SD UHS-II + microSD UHS-I",
+      "minSpeed": "V30",
       "minWriteSpeed": "60 MB/s minimum, 90 MB/s recommended",
       "recommendedCapacity": [
         "128GB",
@@ -1808,7 +1808,7 @@
       "maxCapacity": "No official limit",
       "testedMaxCapacity": "512GB"
     },
-    "whySpecs": "Eine im Retro-Stil gehaltene spiegellose Vollformatkamera mit 24MP-Sensor und fortschrittlichen Videofunktionen. V60-Karten bewältigen Standard-4K-Aufnahmen und Fotografie, V90 wird jedoch für 4K-120fps-Zeitlupe und die N-RAW-Videomodi mit der höchsten Bitrate empfohlen. Ihre zwei UHS-II-Steckplätze ermöglichen professionelle Backup-Workflows und robustes Medienmanagement.",
+    "whySpecs": "Die Zf nimmt 4K/30 aus 6K überabgetastet auf, 4K/60 im DX-Ausschnitt und 1080p/120. Steckplatz 1 nimmt SD UHS-II, Steckplatz 2 microSD UHS-I. Eine V30-Karte reicht für Video, eine schnelle UHS-II-Karte in Steckplatz 1 leert den Puffer am schnellsten. Bei Aufnahme auf beide Steckplätze bestimmt die langsamere microSD-Karte das Tempo.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -1822,12 +1822,12 @@
     ],
     "faq": [
       {
-        "q": "Warum ist die Nikon Zf eine so beliebte Kamera?",
-        "a": "<b>Die Nikon Zf hat immense Beliebtheit erlangt, indem sie ein klassisches, an Nikons Filmkameras angelehntes Retro-Design erfolgreich mit modernster spiegelloser Vollformatleistung kombiniert.</b> Sie bietet exzellente Bildqualität, fortschrittlichen Autofokus und starke Videofunktionen in einem stilvollen Gehäuse. Diese Kombination aus Vintage-Ästhetik und zeitgemäßer Technologie spricht eine breite Palette von Fotografie-Enthusiasten und Profis an."
+        "q": "Welche Kartensteckplätze hat die Nikon Zf?",
+        "a": "<b>Einen SD-UHS-II- und einen microSD-UHS-I-Steckplatz.</b> Nutze den SD-Steckplatz für die Hauptaufnahme und die microSD als Backup."
       },
       {
-        "q": "Brauche ich V90-Karten für die Nikon Zf, oder reicht V60?",
-        "a": "<b>V60-Karten reichen im Allgemeinen für die meiste Fotografie und Standard-4K-Videoaufnahmen auf der Nikon Zf aus.</b> V90-Karten werden jedoch notwendig, wenn Sie 4K-120fps-Zeitlupenvideo filmen oder die N-RAW-Videomodi mit der höchsten Bitrate nutzen möchten. Die meisten Nutzer können mit V60-Karten beginnen und V90 nur in Betracht ziehen, wenn ihre spezifischen anspruchsvollen Video-Workflows dies erfordern."
+        "q": "Brauche ich V90-Karten für die Nikon Zf?",
+        "a": "<b>Nein.</b> Die Zf kommt höchstens auf 4K/60 im DX-Ausschnitt und nimmt intern kein RAW-Video auf. V30 reicht, V60 gibt Reserve."
       }
     ],
     "relatedDevices": [
@@ -1949,7 +1949,7 @@
       "z6 2 speicher"
     ],
     "sdCard": {
-      "type": "Dual SD UHS-II",
+      "type": "CFexpress Type B / XQD + SD UHS-II",
       "minSpeed": "V60",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
@@ -1959,7 +1959,7 @@
       "maxCapacity": "No official limit",
       "testedMaxCapacity": "512GB"
     },
-    "whySpecs": "Eine beliebte hybride spiegellose Vollformatkamera, die 4K-Videoaufnahmen und schnelle Serienbildfotografie ermöglicht. Eine Karte der Geschwindigkeitsklasse V60 bewältigt 4K-Video und Serienbildfotografie zuverlässig. Ihre zwei SD-UHS-II-Steckplätze bieten Redundanz und Flexibilität für professionelle und ambitionierte Fotografen.",
+    "whySpecs": "Die Z6 II hat zwei unterschiedliche Steckplätze: Steckplatz 1 nimmt CFexpress Type B oder XQD, Steckplatz 2 SD UHS-II. Sie nimmt 4K/60 mit bis zu 144 Mbit/s auf, das deckt eine V30-SD-Karte ab. CFexpress in Steckplatz 1 leert den Puffer nach RAW-Serien mit 14 B/s am schnellsten.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -1970,8 +1970,8 @@
     ],
     "faq": [
       {
-        "q": "Ist die Nikon Z6 II im Vergleich zur neueren Z6 III noch ein guter Kauf?",
-        "a": "<b>Ja, wenn Sie ein begrenztes Budget haben oder nicht die absolut neuesten Funktionen benötigen, bleibt die Z6 II eine hervorragende Kamera.</b> Sie bietet hervorragende Bildqualität und robuste Videofunktionen zu einem potenziell niedrigeren Preis als die Z6 III. V60-Karten bieten die gesamte notwendige Geschwindigkeit für ihre fortschrittlichen Foto- und Videomodi und machen sie zu einer kostengünstigen Option für viele Nutzer."
+        "q": "Lohnt sich die Nikon Z6 II noch im Vergleich zur Z6 III?",
+        "a": "<b>Ja, wenn das Budget zählt.</b> Die Z6 III bringt 6K N-RAW und einen schnelleren Sensor; die Z6 II hat dieselbe Steckplatz-Aufteilung: CFexpress Type B plus SD UHS-II."
       }
     ],
     "relatedDevices": [
@@ -1994,7 +1994,7 @@
       "nikon d850 speicher"
     ],
     "sdCard": {
-      "type": "XQD + SD UHS-II",
+      "type": "XQD / CFexpress Type B + SD UHS-II",
       "minSpeed": "V30 (SD), V60 recommended",
       "minWriteSpeed": "30 MB/s minimum, 60 MB/s recommended",
       "recommendedCapacity": [
@@ -2608,7 +2608,7 @@
     ],
     "sdCard": {
       "type": "CFexpress Type A / SD UHS-II",
-      "minSpeed": "V60",
+      "minSpeed": "V60 (V90 für XAVC S-I)",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "128GB",

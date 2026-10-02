@@ -274,8 +274,8 @@
       "switch 2 compatibilità scheda sd"
     ],
     "sdCard": {
-      "type": "microSDXC UHS-I (retrocompatibile) o microSD Express (consigliata)",
-      "minSpeed": "UHS-I U3/A2 (standard) o microSD Express basata su PCIe",
+      "type": "Solo microSD Express",
+      "minSpeed": "microSD Express",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "512GB",
@@ -285,7 +285,7 @@
       "maxCapacity": "2TB (microSDXC) / 2TB+ (microSD Express SDUC)",
       "testedMaxCapacity": "2TB"
     },
-    "whySpecs": "<b>Buone notizie: le vostre schede microSD Switch esistenti funzionano ancora su Switch 2.</b> Tutte le schede microSDXC standard UHS-I sono retrocompatibili — potete giocare a tutti i giochi (originali e Switch 2) senza acquistare una nuova scheda. Tuttavia, Switch 2 introduce anche uno <b>slot microSD Express</b> che supporta schede Express basate su PCIe per un caricamento drasticamente più veloce (fino a 800 MB/s contro ~100 MB/s per UHS-I). La microSD Express è opzionale ma consigliata se state acquistando una nuova scheda. Importante: <b>le schede microSD Express NON sono retrocompatibili con la Switch originale, Switch Lite o Switch OLED</b> — questi dispositivi supportano solo UHS-I.",
+    "whySpecs": "Nintendo ha reso obbligatoria la microSD Express per l'archiviazione dei giochi su Switch 2. Le schede Express usano un collegamento PCIe e leggono fino a circa 800-900 MB/s, contro circa 100 MB/s delle UHS-I. Le normali microSD, microSDHC e microSDXC non sono supportate per dati di gioco, download, screenshot o video. Cerca il logo microSD Express sulla scheda.",
     "recommendedBrands": [
       {
         "id": "samsung-evo-select-microsd",
@@ -302,20 +302,20 @@
     ],
     "faq": [
       {
-        "q": "Posso usare la vecchia scheda SD della mia Switch nella Nintendo Switch 2?",
-        "a": "<b>Sì — le vostre schede microSD esistenti funzionano su Switch 2.</b> Le schede microSDXC standard UHS-I sono completamente retrocompatibili con la Switch 2. Potete giocare a tutti i vostri giochi senza acquistare una nuova scheda. Switch 2 supporta anche il più veloce standard microSD Express per tempi di caricamento migliorati, ma è opzionale, non obbligatorio."
+        "q": "Posso usare la scheda SD della mia vecchia Switch nella Nintendo Switch 2?",
+        "a": "<b>Non per i giochi.</b> Switch 2 salva i dati solo su schede microSD Express. Puoi inserire una vecchia scheda una volta per importare screenshot e video della Switch nella memoria della console."
       },
       {
         "q": "Cos'è la microSD Express e mi serve per Switch 2?",
-        "a": "<b>La microSD Express utilizza la tecnologia PCIe per velocità fino a 800 MB/s — contro ~100 MB/s dell'UHS-I standard.</b> Offre un caricamento notevolmente più veloce nei titoli Switch 2. Tuttavia, non ne avete bisogno — le vostre schede microSD UHS-I esistenti funzionano perfettamente. Nel 2026, le schede microSD Express sono ancora rare e costose. Consideratene una solo se state acquistando una nuova scheda e desiderate la massima prestazione possibile."
+        "a": "<b>Sì, per aggiungere memoria.</b> La microSD Express usa il PCIe e legge fino a circa 800-900 MB/s. Switch 2 ha 256GB integrati; qualsiasi memoria aggiuntiva deve essere una scheda Express."
       },
       {
-        "q": "Una scheda microSD Express funzionerà nella mia Switch originale o Switch OLED?",
-        "a": "<b>No. Le schede microSD Express NON sono retrocompatibili con la Switch originale, Switch Lite o Switch OLED.</b> Queste console supportano solo UHS-I. Se possedete più modelli Switch, restate su una scheda microSDXC UHS-I U3/A2 standard compatibile con tutti."
+        "q": "Una microSD Express funziona nella mia Switch originale o Switch OLED?",
+        "a": "<b>Sì, a velocità UHS-I.</b> Le schede Express sono retrocompatibili con gli slot UHS-I, quindi una scheda può passare da una console all'altra. I giochi Switch 2 richiedono comunque Switch 2."
       },
       {
-        "q": "Quali specifiche microSD dovrei acquistare per Switch 2?",
-        "a": "<b>Per una scheda microSD standard: UHS-I U3/A2 (stessa raccomandazione della Switch originale). Per la microSD Express: qualsiasi scheda SD Express certificata con V30 o più veloce.</b> Per la capacità, 512GB è un buon punto di partenza; 1TB è ideale se scaricate la maggior parte della vostra libreria digitalmente."
+        "q": "Quale microSD comprare per Switch 2?",
+        "a": "<b>Qualsiasi scheda con il logo microSD Express</b>, come la Samsung P9 Express o la scheda SanDisk su licenza Nintendo. 256GB raddoppiano la memoria integrata; 512GB sono adatti a grandi librerie digitali."
       }
     ],
     "relatedDevices": [
@@ -1345,7 +1345,7 @@
       "microsd msi claw 8"
     ],
     "sdCard": {
-      "type": "microSD UHS-I (lettore ad alta velocità)",
+      "type": "microSD Express (legge anche schede UHS-I)",
       "minSpeed": "V30",
       "minWriteSpeed": "30 MB/s",
       "minAppPerformance": "A2",
@@ -1355,7 +1355,7 @@
       ],
       "maxCapacity": "2TB"
     },
-    "whySpecs": "Il Claw 8 EX AI+ abbina la piattaforma Intel Arc G3 Extreme a una batteria da 80Whr per prestazioni portatili sostenute e ad alta potenza, e si affida all'upscaling AI XeSS di Intel, che dipende da uno streaming di asset veloce e costante. Poiché i driver Arc sono sensibili ai ritardi di consegna durante lo streaming di asset di gioco da archiviazione esterna, una scheda classificata A2 con forti IOPS di lettura/scrittura casuale è essenziale per evitare scatti e micro-blocchi — una semplice scheda V30 senza A2 limiterà il sistema sotto carico.",
+    "whySpecs": "La Claw 8 EX AI+ usa Windows sulla piattaforma Intel Arc G3 Extreme e ha un lettore microSD Express. Le schede Express sono collegate via PCIe e leggono a 800 MB/s o più, diverse volte più veloci delle UHS-I. Funzionano anche le normali UHS-I; scegli A2 per caricamenti più rapidi e 1TB o più per una libreria PC.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd",
@@ -1372,16 +1372,16 @@
     ],
     "faq": [
       {
-        "q": "Il MSI Claw 8 EX AI+ ha bisogno di una scheda microSD speciale?",
-        "a": "<b>Ha bisogno di una scheda con classificazione delle prestazioni applicative A2, non solo veloce in sequenziale.</b> L'upscaling AI XeSS della piattaforma Intel Arc trasmette continuamente asset di gioco, e i forti IOPS di lettura/scrittura casuale di A2 prevengono gli scatti e i micro-blocchi che una semplice scheda V30 senza A2 può causare."
+        "q": "La MSI Claw 8 EX AI+ richiede una microSD speciale?",
+        "a": "<b>No, ma ne trae vantaggio.</b> Il lettore supporta la microSD Express, che carica i giochi diverse volte più in fretta dell'UHS-I. Le normali schede A2 funzionano a velocità UHS-I."
       },
       {
-        "q": "Perché il mio MSI Claw 8 scatta durante le scene intense?",
-        "a": "<b>Di solito è un collo di bottiglia I/O di archiviazione, non un problema CPU/GPU.</b> I driver Intel Arc sono sensibili ai ritardi nella consegna degli asset durante lo streaming in background. Passare a una scheda microSD classificata A2 (o spostare il gioco sull'archiviazione interna) di solito risolve gli scatti."
+        "q": "Perché la mia MSI Claw 8 scatta nei giochi open world?",
+        "a": "<b>I giochi che caricano le texture dalla scheda possono incepparsi con schede lente.</b> Sposta il gioco sull'SSD interno, oppure usa una scheda microSD Express o A2."
       },
       {
-        "q": "Qual è la capacità migliore per una microSD da 2TB sul Claw 8?",
-        "a": "<b>Una scheda 2TB A2/V30 di un marchio affidabile funziona bene, ma affidati a marchi affermati come SanDisk, Samsung o Lexar.</b> Le schede 2TB generiche di venditori non verificati hanno molte più probabilità di avere capacità dichiarate gonfiate o prestazioni di scrittura sostenuta incoerenti."
+        "q": "Una microSD da 2TB è una buona idea per la Claw 8?",
+        "a": "<b>Sì, se di SanDisk, Samsung o Lexar.</b> Le schede da 2TB senza marca sono spesso contraffatte con capacità falsa."
       }
     ],
     "relatedDevices": [

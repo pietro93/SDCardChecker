@@ -13,13 +13,13 @@
     "imageUrl": "/img/devices/tesla-model-3.jpg",
     "sdCard": {
       "type": "microSD (nécessite un lecteur USB)",
-      "minSpeed": "V30",
+      "minSpeed": "4 Mo/s en écriture continue (minimum Tesla)",
       "minWriteSpeed": "40 MB/s",
       "recommendedCapacity": [
         "128GB",
         "256GB"
       ],
-      "maxCapacity": "2TB"
+      "maxCapacity": "Aucune limite indiquée (64 Go minimum)"
     },
     "whySpecs": "Le mode Sentinelle écrase en continu les anciennes images. Les cartes standard tombent en panne rapidement. Vous avez besoin de cartes haute endurance certifiées pour 10 000+ cycles d'écriture/effacement.",
     "recommendedBrands": [
@@ -119,7 +119,7 @@
     "imageUrl": "/img/devices/viofo-a229-pro.jpg",
     "sdCard": {
       "type": "microSD (Dual Dash = deux cartes)",
-      "minSpeed": "V30",
+      "minSpeed": "U3",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -127,7 +127,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "La Viofo A229 Pro est une dashcam 4K à double canal (avant + habitacle). Chaque canal écrit en continu à environ 50 Mbps. Vous avez besoin d'<b>au moins DEUX cartes (une par canal)</b>. La haute endurance est essentielle.",
+    "whySpecs": "L'A229 Pro est une dashcam 4K avant et 2K arrière (ou habitacle) qui range les fichiers de chaque canal dans des dossiers séparés sur une seule carte microSD. Viofo prend en charge les cartes jusqu'à 512 Go et recommande des cartes haute endurance U3.",
     "recommendedBrands": [
       {
         "id": "speederlash-64gb-2pack"
@@ -138,16 +138,16 @@
     ],
     "faq": [
       {
-        "q": "Ai-je besoin de deux cartes pour l'A229 Pro ?",
-        "a": "<b>Oui, absolument</b>. L'A229 Pro a deux emplacements de carte SD (un pour l'avant, un pour l'habitacle). Vous avez besoin de <b>deux cartes haute endurance distinctes</b>."
+        "q": "Faut-il deux cartes pour la Viofo A229 Pro ?",
+        "a": "<b>Non.</b> L'A229 Pro a un seul emplacement microSD et enregistre l'avant, l'arrière et l'habitacle sur la même carte."
       },
       {
-        "q": "Quelle capacité choisir ?",
-        "a": "<b>128GB minimum par carte</b> pour un stockage équilibré. 256GB offre 6 à 8 heures par carte (avant = 6-8 heures, habitacle = 6-8 heures, décalées). Deux cartes de 256GB = couverture complète."
+        "q": "Quelle capacité choisir pour l'A229 Pro ?",
+        "a": "<b>256 Go pour la plupart des conducteurs, 512 Go pour de longues surveillances en stationnement.</b> Deux ou trois canaux partagent une carte, qui se remplit donc plus vite qu'avec une caméra à un canal."
       },
       {
-        "q": "Puis-je utiliser des cartes classiques ?",
-        "a": "Non. L'A229 Pro écrit simultanément sur les deux cartes à un débit élevé. Les cartes classiques tombent en panne en quelques semaines. <b>Utilisez uniquement des cartes V30 haute endurance</b>."
+        "q": "Peut-on utiliser une carte microSD ordinaire dans l'A229 Pro ?",
+        "a": "<b>Elle enregistrera, mais l'enregistrement en boucle l'use.</b> Prenez une carte haute endurance U3."
       }
     ],
     "relatedDevices": [

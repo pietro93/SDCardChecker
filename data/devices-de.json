@@ -1,8 +1,8 @@
 {
   "_metadata": {
     "language": "Deutsch",
-    "generated": "2026-10-02T09:41:02.897Z",
-    "totalDevices": 188,
+    "generated": "2026-10-02T09:56:24.772Z",
+    "totalDevices": 187,
     "categories": [
       "action-cameras",
       "cameras",
@@ -29,7 +29,7 @@
       ],
       "sdCard": {
         "type": "microSD UHS-I (UHS-II kompatibel)",
-        "minSpeed": "A2 / V30",
+        "minSpeed": "V30 / U3",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -39,7 +39,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "Filmt 5.3K60, 4K120 und 2.7K240. <b>V30 ist die Untergrenze, nicht nur eine nette Zugabe</b> — sie garantiert 30 MB/s Dauerschreibrate, was die High-Bitrate-Einstellung der Hero 13 von rund 120 Mbit/s (etwa 15 MB/s) komfortabel abdeckt und genug Reserve lässt, damit eine mitten in der Aufnahme einbrechende Karte keine Bildausfälle oder Dateibeschädigungen verursacht. GoPros aktuelle Empfehlung verlangt zusätzlich zu V30 eine <b>A2</b>-Zertifizierung, und die Hero 13 unterstützt Karten bis <b>1TB</b> — bei langen Drehtagen gibt es also keinen Grund, sich auf 512GB zu beschränken.",
+      "whySpecs": "Filmt 5.3K60, 4K120 und 2.7K240. GoPro verlangt Karten mit V30 oder UHS-3. V30 garantiert 30 MB/s Dauerschreibrate, etwa das Doppelte der 120 Mbit/s der Hero 13 bei hoher Bitrate, damit die Karte mitten im Clip nicht zurückfällt. GoPro unterstützt Karten bis <b>1TB</b>.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -56,20 +56,20 @@
       ],
       "faq": [
         {
-          "q": "Kann ich eine normale SD-Karte mit Adapter verwenden?",
-          "a": "<b>Nein, die GoPro Hero 13 Black akzeptiert nur microSD-Karten</b>. Karten in voller Größe funktionieren auch mit Adapter nicht. Das Gerät benötigt ausdrücklich <b>microSD-Format-Karten</b> für die Kompatibilität."
+          "q": "Kann ich eine normale SD-Karte in der GoPro Hero 13 verwenden?",
+          "a": "<b>Nein, die Hero 13 nimmt nur microSD-Karten.</b>"
         },
         {
-          "q": "Welche ist die schnellste Karte, die ich kaufen sollte?",
-          "a": "<b>V30-Geschwindigkeitsklasse reicht für die Standardaufnahme mit der GoPro Hero 13 aus</b>. V60 oder schnellere Karten sind nur für professionelle Multi-Kamera-Workflows, gleichzeitige Backup-Aufnahmen oder Zukunftssicherheit für neuere, anspruchsvollere Kameras sinnvoll. Die Hero 13 hat einen UHS-I-Steckplatz, eine UHS-II-Karte funktioniert also, läuft in der Kamera aber nur mit UHS-I-Tempo — den Geschwindigkeitsvorteil sehen Sie erst beim Auslesen mit einem UHS-II-Kartenleser."
+          "q": "Brauche ich für die Hero 13 eine V60- oder UHS-II-Karte?",
+          "a": "<b>Nein.</b> V30 deckt jeden Aufnahmemodus ab. Der Steckplatz ist UHS-I, eine UHS-II-Karte nimmt also mit UHS-I-Geschwindigkeit auf und überträgt nur in einem UHS-II-Lesegerät schneller."
         },
         {
           "q": "Unterstützt die GoPro Hero 13 eine 1TB-microSD-Karte?",
-          "a": "<b>Ja — GoPro unterstützt bei der Hero 13 Karten bis 1TB.</b> Ältere Hinweise, die GoPro auf 512GB begrenzen, sind veraltet. Eine 1TB-Karte lohnt sich, wenn Sie ganztägige Sessions filmen und die Karte unterwegs nicht wechseln möchten; ansonsten sind zwei Karten mit 256GB oder 512GB die sicherere Wahl, denn eine defekte Karte kostet Sie dann nur die Hälfte statt des gesamten Materials."
+          "a": "<b>Ja, GoPro unterstützt bei der Hero 13 Karten bis 1TB.</b> Eine 1TB-Karte erspart Kartenwechsel bei ganztägigen Drehs. Zwei 512GB-Karten sind sicherer, denn eine defekte Karte kostet dann nur die Hälfte der Aufnahmen."
         },
         {
-          "q": "Wie oft sollte ich meine SD-Karte ersetzen?",
-          "a": "<b>Hochwertige V30-microSD-Karten halten bei regelmäßiger Nutzung typischerweise 3-5 Jahre</b>. <b>Ersetzen Sie Ihre Karte sofort, wenn Fehlermeldungen, Dateibeschädigungen oder verweigerte Schreibvorgänge auftreten</b>, um den Verlust wichtiger Aufnahmen zu vermeiden."
+          "q": "Wie oft sollte ich die SD-Karte meiner GoPro ersetzen?",
+          "a": "<b>Beim ersten Fehlerhinweis, bei einer beschädigten Datei oder einem fehlgeschlagenen Schreibvorgang.</b> Formatiere sie nach jedem Übertragen in der Kamera, nicht am Computer."
         }
       ],
       "relatedDevices": [
@@ -92,7 +92,7 @@
       ],
       "sdCard": {
         "type": "microSD UHS-I (UHS-II kompatibel)",
-        "minSpeed": "A2 / V30",
+        "minSpeed": "V30 / U3",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -102,7 +102,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "Filmt 5.3K-Video mit verschiedenen Bildraten und einer High-Bitrate-Einstellung von rund 120 Mbit/s. V30-Karten garantieren 30 MB/s Dauerschreibrate, was komfortabel darüber liegt — entscheidend ist dabei nicht die Spitzengeschwindigkeit, sondern dass die Karte diese Rate nie mitten im Clip unterschreitet, denn genau das verursacht Bildausfälle und beschädigte Dateien. GoPros aktuelle Empfehlung kombiniert V30 mit einer <b>A2</b>-Zertifizierung, und die Hero 12 unterstützt Karten bis <b>1TB</b>.",
+      "whySpecs": "Filmt 5.3K60 und 4K120 mit bis zu etwa 120 Mbit/s (15 MB/s) bei hoher Bitrate. GoPro verlangt Karten mit V30 oder UHS-3. V30 garantiert 30 MB/s Dauerschreibrate, doppelt so viel, wie die Kamera schreibt, damit eine gute Karte mitten im Clip nie zurückfällt.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -116,12 +116,12 @@
       ],
       "faq": [
         {
-          "q": "Kann ich mit V20-Karten in 5K filmen?",
-          "a": "<b>Die Aufnahme von 5.3K-Video mit V20-Karten wird nicht empfohlen</b>. V20-Karten funktionieren zwar technisch, garantieren aber nur 20 MB/s Schreibgeschwindigkeit, was für stabile 5.3K-Aufnahmen nicht ausreicht. <b>V30 ist das sichere Minimum</b> für dieses Gerät."
+          "q": "Kann ich mit einer V20-Karte in der Hero 12 in 5.3K filmen?",
+          "a": "<b>Nein, nimm V30.</b> GoPro verlangt V30 oder UHS-3. Eine V20-Karte nimmt vielleicht eine Weile auf und bricht dann ab oder beschädigt den Clip."
         },
         {
-          "q": "Kann ich ältere microSD-Karten verwenden?",
-          "a": "<b>Ältere microSD-Karten unterhalb der V30-Klasse sind für 5.3K-Aufnahmen nicht zuverlässig</b> und riskieren Dateibeschädigungen. <b>Ein Upgrade auf eine moderne V30- oder schnellere microSD-Karte</b> ist die bessere Wahl für garantierte Kompatibilität und stabile Leistung mit der Hero 12."
+          "q": "Kann ich ältere microSD-Karten in der Hero 12 verwenden?",
+          "a": "<b>Nur mit V30- oder U3-Kennzeichnung.</b> Ältere Class-10- und U1-Karten schaffen 5.3K nicht dauerhaft."
         }
       ],
       "relatedDevices": [
@@ -242,7 +242,7 @@
         "osmo pocket 3 v30 u3"
       ],
       "sdCard": {
-        "type": "microSD UHS-I/UHS-II",
+        "type": "microSD UHS-I",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
@@ -449,9 +449,9 @@
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "2TB"
+        "maxCapacity": "512GB"
       },
-      "whySpecs": "DJI verlangt offiziell eine UHS-I-microSD-Karte mit Speed Grade 3 (U3) und Video Speed Class 30 (V30) mindestens für die Osmo Action 4, mit einer maximal unterstützten Kapazität von 2TB. Die Action 4 zeichnet 4K mit 120fps mit außergewöhnlicher Low-Light-Leistung dank ihres großen 1/1.3-Zoll-Sensors auf, was höhere Bitraten als bei typischen Action-Kameras erzeugt – wodurch die V30-Mindestanforderung eine feste Vorgabe und keine Empfehlung ist.",
+      "whySpecs": "DJI verlangt für die Osmo Action 4 eine UHS-I-microSD-Karte mit U3 und V30, bis 512GB. Sie nimmt 4K/120 mit einem 1/1,3-Zoll-Sensor auf und hat keinen internen Speicher.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -465,16 +465,16 @@
       ],
       "faq": [
         {
-          "q": "Welche offiziellen microSD-Kartenanforderungen hat DJI für die Osmo Action 4?",
-          "a": "<b>DJI verlangt offiziell eine UHS-I-microSD-Karte mit Speed Grade 3 (U3) und Video Speed Class 30 (V30) mindestens, mit einer maximal unterstützten Kapazität von 2TB.</b> Dies sind DJIs veröffentlichte Spezifikationen für die Osmo Action 4. Karten, die diese Spezifikationen erfüllen – wie die SanDisk Extreme, Lexar Professional 1000x und Kingston Canvas Go Plus – sind die sichere Wahl für zuverlässige 4K/120fps-Aufnahmen."
+          "q": "Was sind DJIs offizielle microSD-Anforderungen für die Osmo Action 4?",
+          "a": "<b>UHS-I, U3 und V30, bis 512GB.</b> SanDisk Extreme, Lexar Professional Silver und Kingston Canvas Go! Plus erfüllen sie alle."
         },
         {
-          "q": "Action 4 vs. GoPro Hero 12 - gleiche Karten?",
-          "a": "<b>Ja, sowohl die DJI Osmo Action 4 als auch die GoPro Hero 12 benötigen V30-microSD-Karten.</b> Die Kartenanforderungen sind identisch, sodass Sie zwischen ihnen basierend auf Funktionen, Low-Light-Leistung und Ökosystem-Präferenz wählen können, nicht auf Kartenkompatibilität."
+          "q": "Nutzen die Osmo Action 4 und die GoPro Hero 12 dieselben Karten?",
+          "a": "<b>Ja.</b> Beide brauchen V30-microSD-Karten, eine Karte funktioniert also in beiden."
         },
         {
-          "q": "Beeinflusst die Magnethalterung die SD-Karte?",
-          "a": "<b>Nein, die magnetische Schnellwechselhalterung beeinflusst weder Daten noch Leistung der microSD-Karte.</b> Die Karte ist sicher im Kameragehäuse untergebracht, und die Magnete sind nicht stark genug, um Beschädigungen oder Datenverlust zu verursachen."
+          "q": "Hat die Osmo Action 4 internen Speicher?",
+          "a": "<b>Nein.</b> Ohne microSD-Karte kann sie nicht aufnehmen. Erst die Action 6 hat 64GB internen Speicher."
         }
       ],
       "relatedDevices": [
@@ -496,17 +496,17 @@
         "insta360 go3 speicher"
       ],
       "sdCard": {
-        "type": "microSD UHS-I",
-        "minSpeed": "V30",
+        "type": "Kein Kartensteckplatz (32GB, 64GB oder 128GB intern)",
+        "minSpeed": "N/A",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "64GB",
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "256GB"
+        "maxCapacity": "128GB intern"
       },
-      "whySpecs": "Eine ultrakompakte, tragbare Action-Kamera mit 2.7K-Videoaufnahme. Eine V30-Geschwindigkeitsklasse ist für zuverlässige Aufnahmen ohne Bildausfälle erforderlich und sorgt trotz des winzigen Formfaktors für stabiles Material bei POV-Inhalten.",
+      "whySpecs": "Die GO 3 speichert Aufnahmen im internen Speicher und hat keinen Kartensteckplatz. Die Speichergröße wählst du beim Kauf: 32GB, 64GB oder 128GB. Übertragen wird über den USB-C-Anschluss des Action Pod oder die Insta360 App.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -517,8 +517,12 @@
       ],
       "faq": [
         {
-          "q": "Wie klein ist die Insta360 GO 3?",
-          "a": "<b>Die Insta360 GO 3 ist unglaublich klein und leicht, wiegt nur 35 Gramm und ist etwa daumengroß.</b> Trotz ihrer Miniaturgröße benötigt sie dennoch V30-microSD-Karten, um ihre 2.7K-Videoaufnahme zuverlässig zu bewältigen, besonders bei dynamischer Montage."
+          "q": "Nimmt die Insta360 GO 3 eine microSD-Karte?",
+          "a": "<b>Nein.</b> Die GO 3 hat nur internen Speicher. Auch die GO 3S hat keinen Steckplatz und kommt mit 64GB, 128GB oder 256GB."
+        },
+        {
+          "q": "Welche Speichergröße der GO 3 sollte ich kaufen?",
+          "a": "<b>64GB oder 128GB.</b> Die 2.7K-Dateien füllen 32GB schnell, und Speicher lässt sich später nicht erweitern."
         }
       ],
       "relatedDevices": [
@@ -526,7 +530,9 @@
         "gopro-hero-13",
         "dji-osmo-pocket-3"
       ],
-      "notes": "An ultra-compact wearable action camera. Extremely popular for POV (point-of-view) content creation and for mounting in creative, discrete locations. Its unique form factor drives specific search queries regarding its accessories and capabilities."
+      "notes": "An ultra-compact wearable action camera. Extremely popular for POV (point-of-view) content creation and for mounting in creative, discrete locations. Its unique form factor drives specific search queries regarding its accessories and capabilities.",
+      "customTitle": "Nimmt die Insta360 GO 3 eine SD-Karte? Nein, nur interner Speicher",
+      "metaDescription": "Die Insta360 GO 3 hat keinen microSD-Steckplatz. Sie speichert auf 32GB, 64GB oder 128GB internen Speicher. Welche Größe sich lohnt und wie du überträgst."
     },
     {
       "id": "insta360-ace-pro",
@@ -631,7 +637,7 @@
       ],
       "sdCard": {
         "type": "microSD UHS-I (UHS-II kompatibel)",
-        "minSpeed": "A2 / V30",
+        "minSpeed": "V30 / U3",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -641,7 +647,7 @@
         ],
         "maxCapacity": "1TB"
       },
-      "whySpecs": "GoPros neueste 360-Kamera zeichnet echtes 8K mit 30fps sowie hochfrequente 5.6K-Modi auf, die große 10-Bit-Dateien und anhaltende Schreiblasten erzeugen. GoPros aktualisierte Kompatibilitätsrichtlinie listet die Max 2 zusammen mit den aktuellen HERO-Modellen als Karten mit A2/V30 erfordernd und unterstützt Kapazitäten bis 1TB. Diese Kombination aus V30 und A2 garantiert mindestens 30 MB/s anhaltende Schreibgeschwindigkeit plus starke Random-I/O, was sowohl für kontinuierliche 360-Aufnahmen als auch für reaktionsschnelle Wiedergabe und Dateiverwaltung in der Kamera wichtig ist.",
+      "whySpecs": "GoPros 360-Grad-Kamera der zweiten Generation nimmt 8K/30 und 5.6K-360-Grad-Video mit hoher Bildrate in 10 Bit auf. GoPro verlangt microSD-Karten mit V30 oder UHS-3, bis 1TB.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -655,16 +661,16 @@
       ],
       "faq": [
         {
-          "q": "Kann ich meine GoPro Hero 11/12/13-Karten in der Max 2 wiederverwenden?",
-          "a": "<b>Ja, solange es sich um A2/V30-microSD-Karten handelt.</b> GoPro wendet inzwischen im Wesentlichen die gleiche microSD-Spezifikation für die aktuelle HERO-Reihe und die Max 2 an, sodass jede Karte, die zuverlässig in einer HERO 11/12/13 funktioniert, auch für die Max 2 geeignet sein sollte."
+          "q": "Kann ich die Karten meiner GoPro Hero 11, 12 oder 13 in der Max 2 weiterverwenden?",
+          "a": "<b>Ja.</b> GoPro verlangt für die Hero-Reihe und die Max 2 dasselbe: V30 oder UHS-3."
         },
         {
-          "q": "Bringt eine V60- oder V90-Karte Vorteile für die Max 2?",
-          "a": "<b>Nicht für die Aufnahme in der Kamera.</b> Die Max 2 ist auf anhaltende V30-Schreibgeschwindigkeiten ausgelegt. Schnellere V60/V90-Karten können die Dateiübertragungszeit verkürzen, wenn Sie einen Highspeed-Kartenleser am Computer verwenden, schalten aber keine höheren Aufnahmemodi oder bessere Qualität in der Kamera selbst frei."
+          "q": "Ist eine V60- oder V90-Karte für die Max 2 besser?",
+          "a": "<b>Nicht für die Aufnahme.</b> V30 deckt jeden Modus ab. Eine schnellere Karte hilft nur beim Übertragen in einem UHS-II-Lesegerät."
         },
         {
-          "q": "Wie viel 8K-360-Material passt auf eine 256GB-Karte?",
-          "a": "Die genaue Laufzeit variiert je nach Szenenkomplexität und Einstellungen, aber als Faustregel können Sie mit etwa einer Stunde durchgehender 8K-30fps-360-Aufnahme auf einer 256GB-V30-Karte rechnen. Wer regelmäßig lange Sessions filmt, vermeidet mit 512GB oder 1TB häufigen Kartenwechsel."
+          "q": "Wie viel 8K-360-Grad-Video passt auf eine 256GB-Karte?",
+          "a": "<b>Ungefähr eine Stunde 8K/30.</b> Für lange Drehs 512GB oder 1TB kaufen."
         }
       ],
       "relatedDevices": [
@@ -739,7 +745,7 @@
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "2TB"
+        "maxCapacity": "1TB"
       },
       "whySpecs": "Die Osmo Action 6 setzt DJIs Linie mit großem 1/1,3-Zoll-Sensor fort und filmt 4K mit hohen Bildraten und sehr guter Schwachlichtleistung — entsprechend hoch fällt die Bitrate aus. DJIs Firmware prüft die Karte beim Einlegen aktiv auf Geschwindigkeit: Schafft sie die geforderten 30 MB/s Dauerschreibrate nicht, erscheint die Warnung <b>„Karte zu langsam“</b> und die Kamera verweigert die Aufnahme, statt eine beschädigte Datei zu riskieren. Eine geprüfte V30-Karte ist damit ein hartes Minimum, keine Empfehlung.",
       "recommendedBrands": [
@@ -781,7 +787,7 @@
         "osmo pocket 4 karte zu langsam"
       ],
       "sdCard": {
-        "type": "microSD UHS-I/UHS-II",
+        "type": "microSD UHS-I",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
@@ -864,33 +870,6 @@
       "imageUrl": "/img/devices/action-cameras/insta360-ace-pro-2.webp"
     },
     {
-      "id": "wyze-cam-v3",
-      "name": "Wyze Cam v3",
-      "category": "action-cameras",
-      "slug": "wyze-cam-v3",
-      "searchTerms": [
-        "wyze cam v3 sd karte",
-        "wyze kamera speicherkarte"
-      ],
-      "sdCard": {
-        "type": "microSD",
-        "minSpeed": "Class 10",
-        "recommendedCapacity": [
-          "64GB",
-          "128GB"
-        ]
-      },
-      "whySpecs": "Die Wyze Cam v3 unterstützt microSD für lokale Aufnahmespeicherung.",
-      "recommendedBrands": [
-        {
-          "id": "sandisk-ultra-microsd"
-        }
-      ],
-      "relatedDevices": [
-        "gopro-hero-13"
-      ]
-    },
-    {
       "id": "canon-eos-r5",
       "name": "Canon EOS R5",
       "category": "cameras",
@@ -902,7 +881,7 @@
       ],
       "sdCard": {
         "type": "CFexpress Type B and SD UHS-II",
-        "minSpeed": "V60",
+        "minSpeed": "V90 (CFexpress für 8K RAW erforderlich)",
         "minWriteSpeed": "60 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -910,7 +889,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Professionelle 8K-Kameraaufnahme. Erfordert mindestens V60 für 8K-RAW-Video. Die hohe Bitrate (1,6 Gbit/s) erfordert schnelle Dual-Kartensteckplätze für zusätzliche Sicherheit.",
+      "whySpecs": "Professionelle 8K-Kamera. 8K RAW (Cinema RAW Light) lässt sich nur auf eine CFexpress-Type-B-Karte aufnehmen, der SD-Steckplatz kann es gar nicht. Der SD-UHS-II-Steckplatz braucht für normales 8K eine V90-Karte, für 4K genügt V60. Video mit hoher Bitrate verlangt schnelle Karten und zwei Steckplätze für die Sicherheit.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-cfexpress"
@@ -921,16 +900,16 @@
       ],
       "faq": [
         {
-          "q": "Brauche ich zwei Karten für die R5?",
-          "a": "<b>Ja, die Canon EOS R5 verfügt über zwei Kartensteckplätze, und Canon empfiehlt die Verwendung von zwei V60-Karten für zusätzliche Sicherheit</b>. <b>Beim Filmen von 8K-Video bieten zwei Karten eine Backup-Aufnahme und höhere Zuverlässigkeit</b>, was vor dem Ausfall einer einzelnen Karte während wichtiger Aufnahmen schützt."
+          "q": "Brauche ich zwei Karten für die Canon R5?",
+          "a": "<b>Nein, aber es ist sicherer.</b> Die R5 hat einen CFexpress-Type-B- und einen SD-UHS-II-Steckplatz. Die Aufnahme auf beide gibt dir ein Backup, aber nur die CFexpress-Karte schafft 8K RAW."
         },
         {
-          "q": "Kann ich mit V30-Karten 4K filmen?",
-          "a": "<b>Ja, 4K-Videoaufnahmen funktionieren einwandfrei mit Speicherkarten der Geschwindigkeitsklasse V30</b>. Für <b>8K-Aufnahmen ist jedoch mindestens die Geschwindigkeitsklasse V60</b> erforderlich, aufgrund der wesentlich höheren Bitrate und Datendurchsatzanforderungen der 8K-Aufnahme."
+          "q": "Kann ich mit der R5 auf V30-Karten in 4K filmen?",
+          "a": "<b>Für normales 4K IPB ja.</b> 8K auf SD braucht V90, und 8K RAW braucht CFexpress Type B."
         },
         {
-          "q": "Was ist der Unterschied zwischen CFexpress und SD?",
-          "a": "<b>CFexpress-Type-B-Karten sind deutlich schneller als SD UHS-II</b> und <b>eignen sich am besten für 8K-RAW-Videoaufnahmen</b>. <b>SD-UHS-II-V60-Karten sind günstiger und für 4K-Aufnahmen ausreichend</b>, was sie zur bevorzugten Wahl für hybride Foto-/Videoarbeit macht."
+          "q": "Was ist der Unterschied zwischen CFexpress und SD in der R5?",
+          "a": "<b>Die Geschwindigkeit.</b> CFexpress Type B schreibt über 1.000 MB/s und schafft 8K RAW. Eine SD-UHS-II-Karte mit V60 oder V90 kostet weniger und reicht für 4K."
         }
       ],
       "relatedDevices": [
@@ -951,7 +930,7 @@
       ],
       "sdCard": {
         "type": "SD UHS-II",
-        "minSpeed": "V30",
+        "minSpeed": "V30 (V90 für XAVC S-I)",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -1000,7 +979,7 @@
       ],
       "sdCard": {
         "type": "SD UHS-II",
-        "minSpeed": "V30",
+        "minSpeed": "V30 (V90 für 360 Mbit/s)",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -1045,7 +1024,7 @@
       ],
       "sdCard": {
         "type": "CFexpress Type B and XQD",
-        "minSpeed": "V90",
+        "minSpeed": "VPG 400 (CFexpress)",
         "minWriteSpeed": "90 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -1356,8 +1335,8 @@
         "fujifilm x100vi speicherkarte"
       ],
       "sdCard": {
-        "type": "SD UHS-II",
-        "minSpeed": "V60",
+        "type": "SD UHS-I",
+        "minSpeed": "V30",
         "minWriteSpeed": "60 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -1365,7 +1344,7 @@
         ],
         "maxCapacity": "No official limit"
       },
-      "whySpecs": "Premium-Kompaktkamera mit 40MP-Sensor und 6,2K-Videofunktion. V60 ist unerlässlich für 6,2K-30fps-Videoaufnahmen und schnelle kontinuierliche RAW-Aufnahmen. Der UHS-II-Steckplatz ermöglicht schnelleres Leeren des Puffers für den neuen 20fps-Serienbildmodus.",
+      "whySpecs": "Die X100VI hat einen 40MP-Sensor und nimmt 6.2K/30 mit bis zu 200 Mbit/s auf, etwa 25 MB/s. Ihr einziger Steckplatz ist UHS-I, eine V30-Karte reicht also für Video, und UHS-II-Karten bringen in der Kamera nichts. Eine Karte, die nahe 90 MB/s schreibt, leert den Puffer nach Serien mit 20 B/s am schnellsten.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs2"
@@ -1379,12 +1358,12 @@
       ],
       "faq": [
         {
-          "q": "Kann ich meine alten X100V-Karten verwenden?",
-          "a": "<b>V30-Karten von der X100V funktionieren, aber V60 wird für das 6,2K-Video und die schnelleren Serienaufnahmen der X100VI empfohlen.</b> Für optimale Leistung, besonders bei Video, ist ein Upgrade auf eine V60-UHS-II-Karte ratsam."
+          "q": "Kann ich meine alten X100V-Karten in der X100VI verwenden?",
+          "a": "<b>Ja, wenn sie V30 sind.</b> Beide Kameras haben UHS-I-Steckplätze, und V30 deckt die maximale Bitrate der X100VI von 200 Mbit/s ab."
         },
         {
-          "q": "Ist V90 für die X100VI notwendig?",
-          "a": "<b>V60 reicht für alle Aufnahmemodi aus.</b> V90-Karten bieten keinen praktischen Vorteil, da die maximale Bitrate der X100VI die V60-Anforderungen nicht überschreitet. Sie können Geld sparen, indem Sie bei V60-Karten bleiben, ohne die Leistung in der Kamera zu beeinträchtigen."
+          "q": "Brauche ich für die X100VI eine V60- oder V90-Karte?",
+          "a": "<b>Nein.</b> Die maximale Bitrate liegt bei 200 Mbit/s (25 MB/s), das deckt V30 ab, und der UHS-I-Steckplatz kann UHS-II-Geschwindigkeit nicht nutzen."
         }
       ],
       "relatedDevices": [
@@ -1407,7 +1386,7 @@
         "canon r50 speicher"
       ],
       "sdCard": {
-        "type": "SD UHS-II (UHS-I compatible)",
+        "type": "SD UHS-I",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
@@ -1417,7 +1396,7 @@
         ],
         "maxCapacity": "No official limit"
       },
-      "whySpecs": "Canons spiegellose APS-C-Einstiegskamera mit 4K-Videoaufnahme und 24MP-Sensor. Eine Karte der Geschwindigkeitsklasse V30 reicht für 4K-30fps-Aufnahmen und kontinuierliches RAW-Fotografieren aus. Obwohl sie über einen UHS-II-Steckplatz verfügt, bieten UHS-I-V30-Karten für die meisten Nutzer ein hervorragendes Preis-Leistungs-Verhältnis.",
+      "whySpecs": "Canons spiegellose APS-C-Einsteigerkamera hat einen 24MP-Sensor, 4K/30-Video und einen einzelnen SD-UHS-I-Steckplatz. Eine V30-UHS-I-Karte deckt jeden Modus ab. UHS-II-Karten funktionieren, laufen aber mit UHS-I-Geschwindigkeit.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs2"
@@ -1431,12 +1410,12 @@
       ],
       "faq": [
         {
-          "q": "Ist dies eine gute erste Kamera?",
-          "a": "<b>Ja, die EOS R50 ist Canons einsteigerfreundlichste spiegellose Kamera.</b> Sie ist erschwinglich, leicht und verfügt über einen exzellenten Autofokus. Bei SD-Karten ist eine V30-UHS-I-Karte (günstiger) ein guter Einstieg, und Sie können später auf UHS-II umsteigen, falls die Übertragungsgeschwindigkeit zum Engpass wird."
+          "q": "Ist die Canon R50 eine gute erste Kamera?",
+          "a": "<b>Ja.</b> Sie ist klein, leicht und hat einen zuverlässigen Autofokus. Eine V30-UHS-I-Karte ist alles, was sie braucht."
         },
         {
-          "q": "Kann ich UHS-I-Karten verwenden, oder brauche ich UHS-II?",
-          "a": "<b>UHS-I-V30-Karten funktionieren einwandfrei für alle Aufnahmemodi der R50.</b> Die Kamera unterstützt UHS-II für schnellere Datenübertragungen (z. B. auf einen Computer) und schnelleres Leeren des Puffers nach schnellen Serienaufnahmen, ist aber für die Aufnahmeleistung in der Kamera nicht zwingend erforderlich. Sie können mit UHS-I-Karten Geld sparen, sofern Sie nicht regelmäßig Tausende Fotos pro Session aufnehmen."
+          "q": "Brauche ich für die Canon R50 eine UHS-II-Karte?",
+          "a": "<b>Nein.</b> Der Steckplatz ist UHS-I, UHS-II-Karten laufen darin mit UHS-I-Geschwindigkeit."
         }
       ],
       "relatedDevices": [
@@ -2689,8 +2668,8 @@
         "nikon zf speicher"
       ],
       "sdCard": {
-        "type": "Dual SD UHS-II",
-        "minSpeed": "V60 (V90 for high frame rate video)",
+        "type": "SD UHS-II + microSD UHS-I",
+        "minSpeed": "V30",
         "minWriteSpeed": "60 MB/s minimum, 90 MB/s recommended",
         "recommendedCapacity": [
           "128GB",
@@ -2699,7 +2678,7 @@
         "maxCapacity": "No official limit",
         "testedMaxCapacity": "512GB"
       },
-      "whySpecs": "Eine im Retro-Stil gehaltene spiegellose Vollformatkamera mit 24MP-Sensor und fortschrittlichen Videofunktionen. V60-Karten bewältigen Standard-4K-Aufnahmen und Fotografie, V90 wird jedoch für 4K-120fps-Zeitlupe und die N-RAW-Videomodi mit der höchsten Bitrate empfohlen. Ihre zwei UHS-II-Steckplätze ermöglichen professionelle Backup-Workflows und robustes Medienmanagement.",
+      "whySpecs": "Die Zf nimmt 4K/30 aus 6K überabgetastet auf, 4K/60 im DX-Ausschnitt und 1080p/120. Steckplatz 1 nimmt SD UHS-II, Steckplatz 2 microSD UHS-I. Eine V30-Karte reicht für Video, eine schnelle UHS-II-Karte in Steckplatz 1 leert den Puffer am schnellsten. Bei Aufnahme auf beide Steckplätze bestimmt die langsamere microSD-Karte das Tempo.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs2"
@@ -2713,12 +2692,12 @@
       ],
       "faq": [
         {
-          "q": "Warum ist die Nikon Zf eine so beliebte Kamera?",
-          "a": "<b>Die Nikon Zf hat immense Beliebtheit erlangt, indem sie ein klassisches, an Nikons Filmkameras angelehntes Retro-Design erfolgreich mit modernster spiegelloser Vollformatleistung kombiniert.</b> Sie bietet exzellente Bildqualität, fortschrittlichen Autofokus und starke Videofunktionen in einem stilvollen Gehäuse. Diese Kombination aus Vintage-Ästhetik und zeitgemäßer Technologie spricht eine breite Palette von Fotografie-Enthusiasten und Profis an."
+          "q": "Welche Kartensteckplätze hat die Nikon Zf?",
+          "a": "<b>Einen SD-UHS-II- und einen microSD-UHS-I-Steckplatz.</b> Nutze den SD-Steckplatz für die Hauptaufnahme und die microSD als Backup."
         },
         {
-          "q": "Brauche ich V90-Karten für die Nikon Zf, oder reicht V60?",
-          "a": "<b>V60-Karten reichen im Allgemeinen für die meiste Fotografie und Standard-4K-Videoaufnahmen auf der Nikon Zf aus.</b> V90-Karten werden jedoch notwendig, wenn Sie 4K-120fps-Zeitlupenvideo filmen oder die N-RAW-Videomodi mit der höchsten Bitrate nutzen möchten. Die meisten Nutzer können mit V60-Karten beginnen und V90 nur in Betracht ziehen, wenn ihre spezifischen anspruchsvollen Video-Workflows dies erfordern."
+          "q": "Brauche ich V90-Karten für die Nikon Zf?",
+          "a": "<b>Nein.</b> Die Zf kommt höchstens auf 4K/60 im DX-Ausschnitt und nimmt intern kein RAW-Video auf. V30 reicht, V60 gibt Reserve."
         }
       ],
       "relatedDevices": [
@@ -2840,7 +2819,7 @@
         "z6 2 speicher"
       ],
       "sdCard": {
-        "type": "Dual SD UHS-II",
+        "type": "CFexpress Type B / XQD + SD UHS-II",
         "minSpeed": "V60",
         "minWriteSpeed": "60 MB/s",
         "recommendedCapacity": [
@@ -2850,7 +2829,7 @@
         "maxCapacity": "No official limit",
         "testedMaxCapacity": "512GB"
       },
-      "whySpecs": "Eine beliebte hybride spiegellose Vollformatkamera, die 4K-Videoaufnahmen und schnelle Serienbildfotografie ermöglicht. Eine Karte der Geschwindigkeitsklasse V60 bewältigt 4K-Video und Serienbildfotografie zuverlässig. Ihre zwei SD-UHS-II-Steckplätze bieten Redundanz und Flexibilität für professionelle und ambitionierte Fotografen.",
+      "whySpecs": "Die Z6 II hat zwei unterschiedliche Steckplätze: Steckplatz 1 nimmt CFexpress Type B oder XQD, Steckplatz 2 SD UHS-II. Sie nimmt 4K/60 mit bis zu 144 Mbit/s auf, das deckt eine V30-SD-Karte ab. CFexpress in Steckplatz 1 leert den Puffer nach RAW-Serien mit 14 B/s am schnellsten.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs2"
@@ -2861,8 +2840,8 @@
       ],
       "faq": [
         {
-          "q": "Ist die Nikon Z6 II im Vergleich zur neueren Z6 III noch ein guter Kauf?",
-          "a": "<b>Ja, wenn Sie ein begrenztes Budget haben oder nicht die absolut neuesten Funktionen benötigen, bleibt die Z6 II eine hervorragende Kamera.</b> Sie bietet hervorragende Bildqualität und robuste Videofunktionen zu einem potenziell niedrigeren Preis als die Z6 III. V60-Karten bieten die gesamte notwendige Geschwindigkeit für ihre fortschrittlichen Foto- und Videomodi und machen sie zu einer kostengünstigen Option für viele Nutzer."
+          "q": "Lohnt sich die Nikon Z6 II noch im Vergleich zur Z6 III?",
+          "a": "<b>Ja, wenn das Budget zählt.</b> Die Z6 III bringt 6K N-RAW und einen schnelleren Sensor; die Z6 II hat dieselbe Steckplatz-Aufteilung: CFexpress Type B plus SD UHS-II."
         }
       ],
       "relatedDevices": [
@@ -2885,7 +2864,7 @@
         "nikon d850 speicher"
       ],
       "sdCard": {
-        "type": "XQD + SD UHS-II",
+        "type": "XQD / CFexpress Type B + SD UHS-II",
         "minSpeed": "V30 (SD), V60 recommended",
         "minWriteSpeed": "30 MB/s minimum, 60 MB/s recommended",
         "recommendedCapacity": [
@@ -3499,7 +3478,7 @@
       ],
       "sdCard": {
         "type": "CFexpress Type A / SD UHS-II",
-        "minSpeed": "V60",
+        "minSpeed": "V60 (V90 für XAVC S-I)",
         "minWriteSpeed": "60 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -4399,14 +4378,14 @@
         "macbook pro m4"
       ],
       "sdCard": {
-        "type": "External via USB-C/Thunderbolt Reader",
+        "type": "Integrierter SDXC UHS-II Steckplatz (14/16 Zoll, ab 2021); USB-C-Lesegerät beim 13-Zoll-Modell",
         "minSpeed": "UHS-I bis UHS-II",
         "recommendedCapacity": [
           "128GB",
           "256GB"
         ]
       },
-      "whySpecs": "Das MacBook Pro nutzt Thunderbolt/USB-C. Für Video-Workflows werden Hochgeschwindigkeits-Lesegeräte empfohlen.",
+      "whySpecs": "Apple hat den SDXC-Steckplatz 2021 beim 14- und 16-Zoll-MacBook Pro zurückgebracht. Er unterstützt UHS-II mit bis zu etwa 250 bis 300 MB/s. Das 13-Zoll-MacBook Pro hat keinen Steckplatz. Für CFexpress oder schnellere Übertragungen ein Thunderbolt-Lesegerät verwenden.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-uhs2-usbc"
@@ -4416,7 +4395,17 @@
         "macbook-air",
         "canon-eos-r5"
       ],
-      "imageUrl": "/img/devices/computing/macbook-pro.webp"
+      "imageUrl": "/img/devices/computing/macbook-pro.webp",
+      "faq": [
+        {
+          "q": "Hat das MacBook Pro einen SD-Kartensteckplatz?",
+          "a": "<b>Die 14- und 16-Zoll-Modelle ab 2021 ja.</b> Der Steckplatz unterstützt UHS-II. Das 13-Zoll-MacBook Pro hat keinen Steckplatz."
+        },
+        {
+          "q": "Ist der SD-Steckplatz des MacBook Pro UHS-II?",
+          "a": "<b>Ja.</b> Er liest UHS-II-Karten mit bis zu etwa 250 bis 300 MB/s."
+        }
+      ]
     },
     {
       "id": "ipad-pro",
@@ -4659,13 +4648,13 @@
       "imageUrl": "/img/devices/tesla-model-3.jpg",
       "sdCard": {
         "type": "microSD (benötigt USB-Adapter)",
-        "minSpeed": "V30",
+        "minSpeed": "4 MB/s Dauerschreibrate (Tesla-Minimum)",
         "minWriteSpeed": "40 MB/s",
         "recommendedCapacity": [
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "2TB"
+        "maxCapacity": "Kein angegebenes Limit (mindestens 64GB)"
       },
       "whySpecs": "Der Sentry-Modus überschreibt altes Material kontinuierlich. Standardkarten fallen schnell aus. Sie benötigen High-Endurance-Karten mit mindestens 10.000 Schreib-/Löschzyklen.",
       "recommendedBrands": [
@@ -4765,7 +4754,7 @@
       "imageUrl": "/img/devices/viofo-a229-pro.jpg",
       "sdCard": {
         "type": "microSD (Dual Dash = zwei Karten)",
-        "minSpeed": "V30",
+        "minSpeed": "U3",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -4773,7 +4762,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Die Viofo A229 Pro ist eine 4K-Dashcam mit zwei Kanälen (Front + Innenraum). Jeder Kanal schreibt kontinuierlich mit ca. 50 Mbps. Sie benötigen <b>mindestens ZWEI Karten (eine pro Kanal)</b>. High-Endurance ist unerlässlich.",
+      "whySpecs": "Die A229 Pro ist eine Dashcam mit 4K vorne und 2K hinten (oder innen), die die Dateien jedes Kanals in getrennten Ordnern auf einer einzigen microSD-Karte speichert. Viofo unterstützt Karten bis 512GB und empfiehlt High-Endurance-Karten mit U3.",
       "recommendedBrands": [
         {
           "id": "speederlash-64gb-2pack"
@@ -4784,16 +4773,16 @@
       ],
       "faq": [
         {
-          "q": "Brauche ich zwei Karten für die A229 Pro?",
-          "a": "<b>Ja, unbedingt</b>. Die A229 Pro hat zwei SD-Kartenslots (einen für die Front, einen für den Innenraum). Sie benötigen <b>zwei separate High-Endurance-Karten</b>."
+          "q": "Brauche ich zwei Karten für die Viofo A229 Pro?",
+          "a": "<b>Nein.</b> Die A229 Pro hat einen microSD-Steckplatz und speichert vorne, hinten und innen auf dieselbe Karte."
         },
         {
-          "q": "Welche Kapazität sollte ich wählen?",
-          "a": "<b>Mindestens 128GB pro Karte</b> für ausgewogenen Speicher. 256GB bieten 6-8 Stunden pro Karte (Front = 6-8 Stunden, Innenraum = 6-8 Stunden, versetzt). Doppelt 256GB = umfassende Abdeckung."
+          "q": "Welche Kartengröße sollte ich für die A229 Pro kaufen?",
+          "a": "<b>256GB für die meisten Fahrer, 512GB für lange Parküberwachung.</b> Zwei oder drei Kanäle teilen sich eine Karte, sie füllt sich also schneller als bei einer Einkanal-Kamera."
         },
         {
-          "q": "Kann ich normale Karten verwenden?",
-          "a": "Nein. Die A229 Pro schreibt gleichzeitig mit hoher Bitrate auf beide Karten. Normale Karten fallen innerhalb weniger Wochen aus. <b>Verwenden Sie nur V30 High-Endurance-Karten</b>."
+          "q": "Kann ich eine normale microSD-Karte in der A229 Pro verwenden?",
+          "a": "<b>Sie nimmt auf, aber die Schleifenaufnahme nutzt sie ab.</b> Verwende eine High-Endurance-Karte mit U3."
         }
       ],
       "relatedDevices": [
@@ -5109,7 +5098,7 @@
         "dji mini 3 sd karte"
       ],
       "sdCard": {
-        "type": "microSD UHS-I (UHS-II Compatible)",
+        "type": "microSD UHS-I",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
@@ -5198,15 +5187,15 @@
       ],
       "sdCard": {
         "type": "microSD UHS-I (UHS-II Compatible)",
-        "minSpeed": "V60",
+        "minSpeed": "V30 / U3",
         "minWriteSpeed": "60 MB/s",
         "recommendedCapacity": [
           "256GB",
           "512GB"
         ],
-        "maxCapacity": "1TB"
+        "maxCapacity": "512GB"
       },
-      "whySpecs": "Premium-Drohne für 4K und 8K. Das Standardmodell unterstützt 4K; das Cine-Modell unterstützt 8K-Cine-Aufnahmen mit hoher Bitrate. V60 ist mindestens erforderlich. Für 8K-Cine-Arbeiten wird V90 empfohlen.",
+      "whySpecs": "Die Mavic 3 nimmt 5.1K/50 und 4K/120 in H.264 und H.265 mit bis zu 200 Mbit/s auf, das sind 25 MB/s. DJI verlangt U3 (Speed Grade 3), und eine V30-Karte erfüllt das. Das Standardmodell hat 8GB internen Speicher. Die Mavic 3 Cine nimmt ProRes 422 HQ auf eine eingebaute 1TB-SSD auf, ihre microSD-Karte bekommt also dasselbe H.264/H.265-Material wie beim Standardmodell.",
       "recommendedBrands": [
         {
           "id": "lexar-professional-1000x-v60"
@@ -5217,8 +5206,16 @@
       ],
       "faq": [
         {
-          "q": "Kann ich V30-Karten verwenden?",
-          "a": "<b>V30-Karten reichen für 4K-Aufnahmen mit der DJI Mavic 3 aus</b>. Für <b>8K-Cine-Aufnahmen (nur Cine-Modell) ist jedoch mindestens V60 erforderlich, wobei V90 dringend empfohlen wird</b>, um eine unterbrechungsfreie Aufnahme mit hoher Bitrate und optimale Leistung zu gewährleisten."
+          "q": "Kann ich V30-Karten in der DJI Mavic 3 verwenden?",
+          "a": "<b>Ja. V30 ist die richtige Spezifikation.</b> Die höchste Bitrate liegt bei 200 Mbit/s (25 MB/s), unter der V30-Untergrenze von 30 MB/s. V60- und V90-Karten funktionieren, nehmen aber nicht besser auf."
+        },
+        {
+          "q": "Nimmt die Mavic 3 Cine ProRes auf die microSD-Karte auf?",
+          "a": "<b>Nein.</b> ProRes geht auf die interne 1TB-SSD der Cine. Der microSD-Steckplatz nimmt H.264 und H.265 auf, wie bei der normalen Mavic 3."
+        },
+        {
+          "q": "Nimmt die DJI Mavic 3 in 8K auf?",
+          "a": "<b>Nein.</b> Die höchste Auflösung ist 5.1K mit bis zu 50 B/s."
         }
       ],
       "relatedDevices": [
@@ -5292,9 +5289,9 @@
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "512GB"
+        "maxCapacity": "256GB"
       },
-      "whySpecs": "Eine preisgünstige Drohne mit einem Gewicht unter 250g, die 4K-Video mit 30fps aufnehmen kann. DJI empfiehlt offiziell mindestens V30-Karten für stabile 4K-Aufnahmen. Trotz des Einsteigermodells gelten dieselben grundlegenden Kartenanforderungen wie bei anderen höherwertigen Drohnen der Mini-Serie, was die Zuverlässigkeit bei Aufnahmen während des Flugs unterstreicht. Da sie bei 4K/30 endet statt bei den 4K/100 der Mini 4 Pro, liegen ihre Bitrate-Anforderungen am unteren Ende dieser gemeinsamen V30-Vorgabe — eine solide Mittelklasse-V30-Karte reicht hier wirklich aus.",
+      "whySpecs": "DJI verlangt für die Mini 4K eine UHS-I-microSD-Karte mit Speed Grade 3 (U3), und V30-Karten erfüllen das mit Reserve. Die Drohne kommt höchstens auf 4K/30 und 100 Mbit/s, eine V30-Karte der Mittelklasse genügt also. Aufpreis für V60 oder UHS-II bringt in der Luft nichts.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -5308,12 +5305,12 @@
       ],
       "faq": [
         {
-          "q": "Wie unterscheidet sich die DJI Mini 4K von der Mini 4 Pro?",
-          "a": "<b>Die Mini 4K ist eine preisgünstigere Version mit weniger intelligenten Flugmodi und ohne Hinderniserkennungssensoren.</b> Sie zeichnet jedoch dasselbe 4K-Video mit 30fps auf und benötigt für eine stabile Leistung dieselben V30-microSD-Karten. Sie ist eine ausgezeichnete Wahl für Einsteiger, denen Kameraqualität wichtig ist, die aber keine erweiterten Funktionen benötigen."
+          "q": "Was unterscheidet die DJI Mini 4K von der Mini 4 Pro?",
+          "a": "<b>Die Mini 4K ist das Einstiegsmodell: 4K/30 mit 100 Mbit/s, keine Hinderniserkennung, keine 10-Bit-Farbe.</b> Die Mini 4 Pro nimmt bis 4K/100 in 10-Bit D-Log M auf. Beide nehmen dieselben U3/V30-microSD-Karten."
         },
         {
-          "q": "Was ist die größte microSD-Karte, die die Mini 4K unterstützt?",
-          "a": "<b>DJI unterstützt bei der Mini 4K Karten bis 512GB</b>, dieselbe Obergrenze wie bei der Mini 3 und Mini 3 Pro. 512GB sind für diese Drohne allerdings mehr, als realistisch nötig ist: Bei 4K/30 bräuchten Sie viele Akkuladungen, um selbst eine 128GB-Karte zu füllen, und die Akkulaufzeit ist ohnehin die eigentliche Grenze bei einem Dreh. <b>128GB oder 256GB sind der Sweet Spot</b> — und zwei kleinere Karten sind besser als eine große, denn ein einzelner Kartenausfall kostet Sie dann nur die Hälfte Ihres Materials statt alles."
+          "q": "Welche microSD-Karte ist die größte, die die Mini 4K unterstützt?",
+          "a": "<b>DJI nennt 256GB als Maximum für die Mini 4K.</b> Eine 256GB-Karte fasst über 5 Stunden 4K, weit mehr, als deine Akkus fliegen. Zwei 128GB-Karten sind sicherer als eine mit 256GB: Eine defekte Karte kostet dann nur die Hälfte der Aufnahmen."
         }
       ],
       "relatedDevices": [
@@ -5715,7 +5712,7 @@
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "256GB (Official), some 400GB+ supported on newer firmware"
+        "maxCapacity": "256GB (offiziell)"
       },
       "whySpecs": "Die Skydio 2+ ist stark auf die SD-Karte angewiesen — nicht nur für 4K/60fps-Video, sondern auch zur Datenprotokollierung ihrer komplexen autonomen Flugbahnplanung. Skydio ist dafür bekannt, Karten abzulehnen, die den strengen U3/V30-Geschwindigkeitstest nicht bestehen. Das Dateisystem muss exFAT sein.",
       "recommendedBrands": [
@@ -5979,7 +5976,7 @@
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "512GB"
+        "maxCapacity": "1TB"
       },
       "whySpecs": "Anders als die ursprüngliche X1 mit internem Speicher zeichnet die X1 Pro 4K/60fps auf eine microSD-Karte auf. Eine V30-Karte ist für flüssige Aufnahmen erforderlich. Die Drohne ist für Follow-Me-Actionsport konzipiert, weshalb zuverlässige Schreibgeschwindigkeiten entscheidend sind, um keine Aufnahmen eines Stunts zu verlieren.",
       "recommendedBrands": [
@@ -6015,8 +6012,8 @@
         "hoverair 8k speicher"
       ],
       "sdCard": {
-        "type": "microSD UHS-I / UHS-II",
-        "minSpeed": "V60",
+        "type": "microSD UHS-I",
+        "minSpeed": "V30 (V60 für 8K und 4K/120)",
         "minWriteSpeed": "60 MB/s",
         "recommendedCapacity": [
           "128GB",
@@ -6243,7 +6240,7 @@
       ],
       "sdCard": {
         "type": "microSD UHS-I",
-        "minSpeed": "V30 (V60 recommended for thermal margin)",
+        "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s minimum, 60 MB/s recommended",
         "recommendedCapacity": [
           "128GB",
@@ -6251,7 +6248,7 @@
         ],
         "maxCapacity": "512GB"
       },
-      "whySpecs": "Die Avata 360 zeichnet bis zu 8K (360°) mit 60fps und einer maximalen Video-Bitrate von 180 Mbit/s auf — deutlich mehr, als die ursprüngliche Avata 2 verlangt. Da das Kameramodul in einem eng umschlossenen Cinewhoop-Gehäuse mit begrenzter Luftzirkulation sitzt, läuft die Karte heißer als bei offenen Drohnen — hier zählt Spielraum bei der dauerhaften Schreibgeschwindigkeit mehr als reine Kapazität. Eine V30-Karte ist die offizielle Untergrenze, aber V60 bietet Reserven gegen thermisches Throttling, damit eine Aufnahme mitten im Flug nicht abbricht oder beschädigt wird.",
+      "whySpecs": "Die Avata 360 nimmt 8K/60-360-Grad-Video mit bis zu 180 Mbit/s auf, der höchsten Bitrate in DJIs FPV-Reihe. Eine V30-Karte garantiert 30 MB/s, mehr als die 22,5 MB/s, die die Drohne schreibt. Kauf bei einem seriösen Händler: Gefälschte Karten sind die häufigste Ursache für abgebrochene Clips.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-microsd-v60"
@@ -6265,16 +6262,16 @@
       ],
       "faq": [
         {
-          "q": "Warum benötigt die Avata 360 eine schnellere Karte als die reguläre Avata 2?",
-          "a": "<b>Der 360°-8K/60fps-Modus erreicht bis zu 180 Mbit/s, deutlich mehr als die Standard-4K-Bitrate der Avata 2.</b> <b>Zudem sitzt die Karte in einem thermisch stärker eingeschränkten, geschlossenen Gehäuse</b>, sodass eine Karte, die die V30-Untergrenze nur knapp erreicht, weniger Spielraum hat, bevor hitzebedingtes Throttling zu Bildausfällen oder einem Aufnahmeabbruch führt."
+          "q": "Braucht die Avata 360 eine schnellere Karte als die Avata 2?",
+          "a": "<b>Nein, V30 reicht für beide.</b> Die Avata 360 schreibt 180 Mbit/s (22,5 MB/s), mehr als die Avata 2, aber unter der V30-Untergrenze von 30 MB/s."
         },
         {
-          "q": "Reicht V30, oder brauche ich wirklich V60?",
-          "a": "<b>V30 ist DJIs offizielles Minimum und funktioniert für die meisten Flüge.</b> <b>V60 wird speziell als thermische Absicherung empfohlen</b> — geschlossene FPV-/Cinewhoop-Gehäuse werden heißer als offene Drohnen, und eine Karte, die nahe ihrer Geschwindigkeitsgrenze in einem heißen Gehäuse arbeitet, ist die häufigste Ursache für beschädigtes 360°-Filmmaterial."
+          "q": "Reicht V30 für die Avata 360, oder brauche ich V60?",
+          "a": "<b>V30 reicht.</b> Eine V60-Karte nimmt dasselbe Material auf. Ihr einziger Vorteil ist schnelleres Übertragen in einem UHS-II-Lesegerät."
         },
         {
-          "q": "Welche Kapazität sollte ich für 8K-360°-Aufnahmen wählen?",
-          "a": "<b>128GB-256GB decken die meisten Flugtage komfortabel ab.</b> 360°-8K-Aufnahmen mit 180 Mbit/s füllen Karten schneller als Standard-4K, aber das größere Risiko bei dieser Drohne ist hitzebedingte Beschädigung, nicht Speicherplatzmangel — priorisieren Sie eine hoch belastbare V60-Karte gegenüber maximaler Kapazität."
+          "q": "Welche Kapazität brauche ich für 8K-360-Grad-Material?",
+          "a": "<b>256GB für die meisten Flugtage.</b> Bei 180 Mbit/s fassen 256GB etwa 3 Stunden."
         }
       ],
       "relatedDevices": [
@@ -6297,16 +6294,16 @@
         "beste sd karte für dji neo"
       ],
       "sdCard": {
-        "type": "microSD UHS-I",
-        "minSpeed": "V30",
+        "type": "Kein Kartensteckplatz (22GB interner Speicher)",
+        "minSpeed": "N/A",
         "minWriteSpeed": "30 MB/s minimum",
         "recommendedCapacity": [
           "64GB",
           "128GB"
         ],
-        "maxCapacity": "256GB"
+        "maxCapacity": "22GB intern"
       },
-      "whySpecs": "Die Neo ist DJIs handflächengroße, ultraleichte Einstiegsdrohne — keine Propellerschutzbügel zum Abnehmen, kein Controller nötig, um loszufliegen, und um exFAT herum mit 22GB internem Speicher als Puffer aufgebaut. Sie filmt bis zu 4K/30fps mit maximal 75 Mbit/s Bitrate — deutlich innerhalb dessen, was eine einfache V30-microSD-Karte problemlos bewältigt. Die Kartenwahl geht hier also nicht um thermischen Spielraum wie bei den geschlossenen Avata-Gehäusen, sondern darum, es nicht zu überdenken. Eine V30-, A2-zertifizierte Karte einer renommierten Marke deckt durchgehende Flugaufnahmen mit Reserve ab.",
+      "whySpecs": "Die Neo speichert alles auf 22GB internem Speicher und hat keinen Kartensteckplatz. Bei der maximalen Bitrate von 75 Mbit/s reicht das für etwa 40 Minuten 4K/30. Übertrage die Aufnahmen nach jedem Flug. Wenn sie nicht auf dem Smartphone bleiben sollen, kopiere sie über ein USB-C-Lesegerät auf eine microSD-Karte.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd"
@@ -6320,16 +6317,16 @@
       ],
       "faq": [
         {
-          "q": "Was ist die Mindestgeschwindigkeit der SD-Karte für die DJI Neo?",
-          "a": "<b>V30 ist die Untergrenze und alles, was die meisten Piloten je brauchen werden.</b> Die maximale Bitrate der Neo von 75 Mbit/s bei 4K/30fps ist bescheiden im Vergleich zu den 8K/360°-Anforderungen von Drohnen wie der Avata 360, sodass es keinen Grund gibt, hier für V60- oder V90-microSD-Karten mehr zu bezahlen."
+          "q": "Hat die DJI Neo einen SD-Kartensteckplatz?",
+          "a": "<b>Nein.</b> Die Neo hat 22GB internen Speicher und keinen microSD-Steckplatz. Bei der Neo 2 ist es genauso, mit 49GB internem Speicher."
         },
         {
-          "q": "Brauche ich für die Neo eine hoch belastbare oder thermisch zertifizierte Karte?",
-          "a": "<b>Nein — das offene, ultraleichte Gehäuse der Neo staut Hitze nicht wie geschlossene Cinewhoop-Gehäuse.</b> Eine Standard-V30/A2-Karte einer bekannten Marke bewältigt dauerhafte Aufnahmen ohne die thermischen Bedenken, die bei Drohnen wie der Avata 360 die V60-Empfehlung begründen."
+          "q": "Wie viel Video passt auf die 22GB der DJI Neo?",
+          "a": "<b>Etwa 40 Minuten 4K/30</b> bei der maximalen Bitrate von 75 Mbit/s, in 1080p mehr."
         },
         {
-          "q": "Welche Kapazität sollte ich für die DJI Neo kaufen?",
-          "a": "<b>64GB-128GB sind der Sweet Spot für die meisten Flugtage.</b> Die Neo verfügt zudem über 22GB internen Speicher als Rückfallpuffer, sodass weniger Druck besteht, beim microSD-Kauf zu übertreiben, als bei Drohnen ohne integrierten Speicher."
+          "q": "Wie bekomme ich die Aufnahmen von der DJI Neo?",
+          "a": "<b>Mit QuickTransfer in der DJI Fly App oder per USB-C am Computer.</b> Danach die Clips in der App löschen, um Platz zu schaffen."
         }
       ],
       "relatedDevices": [
@@ -6338,7 +6335,9 @@
         "dji-avata-2"
       ],
       "notes": "Ultra-light/palm-sized entry drone, more casual buyer than Avata. Lead with simplicity/ease-of-use framing — V30/A2 is plenty, no thermal-margin upsell needed like the enclosed cinewhoop bodies.",
-      "imageUrl": "/img/devices/drones/dji-neo.webp"
+      "imageUrl": "/img/devices/drones/dji-neo.webp",
+      "customTitle": "Hat die DJI Neo einen SD-Kartensteckplatz? Nein, 22GB intern",
+      "metaDescription": "Die DJI Neo hat keinen microSD-Steckplatz. Sie speichert auf 22GB internen Speicher, etwa 40 Minuten 4K/30. So überträgst du Aufnahmen und schaffst Platz."
     },
     {
       "id": "dji-mavic-4-pro",
@@ -6351,8 +6350,8 @@
         "beste sd karte mavic 4 pro"
       ],
       "sdCard": {
-        "type": "microSDXC (UHS-I / UHS-II)",
-        "minSpeed": "V30 (V60 empfohlen für ProRes)",
+        "type": "microSDXC UHS-I",
+        "minSpeed": "V30 / U3",
         "minWriteSpeed": "60 MB/s",
         "recommendedCapacity": [
           "256GB",
@@ -6360,7 +6359,7 @@
         ],
         "maxCapacity": "1TB (exFAT)"
       },
-      "whySpecs": "Professionelle Luftaufnahmen mit der Mavic 4 Pro erzeugen sehr große D-Log-M- oder ProRes-Dateien. Für die normale H.265-Aufnahme genügt eine V30-Karte, professionelle Codecs verlangen jedoch deutlich höhere Dauerschreibraten, damit die Aufnahmen nicht beschädigt werden. Da Sie die Karte im Flug nicht wechseln können, zählen Zuverlässigkeit und Geschwindigkeit mehr als reine Kapazität. Eine V60-Karte sorgt dafür, dass der Puffer der Drohne sofort geleert wird, sodass Ihnen bei anspruchsvollen Aufträgen keine Aufnahme entgeht.",
+      "whySpecs": "DJI verlangt für die Mavic 4 Pro eine microSD-Karte mit U3 (V30), bis 1TB. Der Steckplatz ist UHS-I und damit zu langsam für ProRes, deshalb nimmt die Creator Combo mit 512GB ProRes auf ihre interne SSD auf. Auf die Karte nimmst du H.264 und H.265 auf, auch 10-Bit D-Log M, und V30 deckt all das ab.",
       "recommendedBrands": [
         {
           "id": "lexar-professional-silver-microsd",
@@ -6374,7 +6373,11 @@
       "faq": [
         {
           "q": "Brauche ich für die DJI Mavic 4 Pro eine V60-Karte?",
-          "a": "<b>Für normale Aufnahmen in 4K/60fps reicht eine V30-Karte aus.</b> Wenn Sie jedoch fortgeschrittene Codecs wie Apple ProRes nutzen, ist eine V60-Karte erforderlich, um den enormen Datendurchsatz zu bewältigen."
+          "a": "<b>Nein.</b> Die Karte nimmt nur H.264 und H.265 auf, das deckt V30 ab. ProRes geht auf die interne SSD der Creator Combo mit 512GB."
+        },
+        {
+          "q": "Kann die Mavic 4 Pro ProRes auf eine microSD-Karte aufnehmen?",
+          "a": "<b>Nein.</b> Der UHS-I-Steckplatz ist zu langsam für ProRes. Nur die Creator Combo mit 512GB nimmt ProRes auf, und zwar auf ihre interne SSD."
         }
       ],
       "relatedDevices": [
@@ -6703,8 +6706,8 @@
         "switch 2 sd karten kompatibilität"
       ],
       "sdCard": {
-        "type": "microSDXC UHS-I (abwärtskompatibel) oder microSD Express (empfohlen)",
-        "minSpeed": "UHS-I U3/A2 (Standard) oder PCIe-basiertes microSD Express",
+        "type": "Nur microSD Express",
+        "minSpeed": "microSD Express",
         "minWriteSpeed": "30 MB/s",
         "recommendedCapacity": [
           "512GB",
@@ -6714,7 +6717,7 @@
         "maxCapacity": "2TB (microSDXC) / 2TB+ (microSD Express SDUC)",
         "testedMaxCapacity": "2TB"
       },
-      "whySpecs": "<b>Gute Nachricht: Ihre vorhandenen Switch-microSD-Karten funktionieren weiterhin in der Switch 2.</b> Alle Standard-UHS-I-microSDXC-Karten sind abwärtskompatibel — Sie können jedes Spiel (Original und Switch 2) ohne neue Karte spielen. Die Switch 2 führt jedoch auch einen <b>microSD-Express-Slot</b> ein, der PCIe-basierte Express-Karten für deutlich schnelleres Laden unterstützt (bis zu 800 MB/s statt ~100 MB/s bei UHS-I). microSD Express ist optional, aber empfehlenswert, wenn Sie eine neue Karte kaufen. Wichtig: <b>microSD-Express-Karten sind NICHT abwärtskompatibel mit der originalen Switch, Switch Lite oder Switch OLED</b> — diese Geräte unterstützen nur UHS-I.",
+      "whySpecs": "Nintendo hat microSD Express für den Spielespeicher der Switch 2 zur Pflicht gemacht. Express-Karten nutzen eine PCIe-Verbindung und lesen mit bis zu etwa 800 bis 900 MB/s, gegenüber etwa 100 MB/s bei UHS-I. Normale microSD-, microSDHC- und microSDXC-Karten werden für Spieldaten, Downloads, Screenshots und Videos nicht unterstützt. Achte auf das microSD-Express-Logo auf der Karte.",
       "recommendedBrands": [
         {
           "id": "samsung-evo-select-microsd",
@@ -6731,20 +6734,20 @@
       ],
       "faq": [
         {
-          "q": "Kann ich meine alte Switch-SD-Karte in der Nintendo Switch 2 verwenden?",
-          "a": "<b>Ja — Ihre vorhandenen microSD-Karten funktionieren in der Switch 2.</b> Standard-UHS-I-microSDXC-Karten sind vollständig abwärtskompatibel mit der Switch 2. Sie können alle Ihre Spiele ohne neue Karte spielen. Die Switch 2 unterstützt zudem den schnelleren microSD-Express-Standard für verbesserte Ladezeiten, dies ist jedoch optional, nicht erforderlich."
+          "q": "Kann ich die SD-Karte meiner alten Switch in der Nintendo Switch 2 verwenden?",
+          "a": "<b>Nicht für Spiele.</b> Die Switch 2 speichert Daten nur auf microSD-Express-Karten. Du kannst eine alte Karte einmal einstecken, um Switch-Screenshots und -Videos in den Systemspeicher der Konsole zu übernehmen."
         },
         {
-          "q": "Was ist microSD Express und brauche ich es für die Switch 2?",
-          "a": "<b>microSD Express nutzt PCIe-Technologie für Geschwindigkeiten bis zu 800 MB/s — gegenüber ~100 MB/s bei Standard-UHS-I.</b> Es bietet spürbar schnelleres Laden in Switch-2-Titeln. Sie benötigen es jedoch nicht — Ihre vorhandenen UHS-I-microSD-Karten funktionieren einwandfrei. Stand 2026 sind microSD-Express-Karten noch selten und teuer. Erwägen Sie eine nur, wenn Sie eine neue Karte kaufen und die höchstmögliche Leistung wünschen."
+          "q": "Was ist microSD Express, und brauche ich es für die Switch 2?",
+          "a": "<b>Ja, wenn du Speicher hinzufügen willst.</b> microSD Express nutzt PCIe und liest mit bis zu etwa 800 bis 900 MB/s. Die Switch 2 hat 256GB eingebaut, jeder zusätzliche Speicher muss eine Express-Karte sein."
         },
         {
-          "q": "Funktioniert eine microSD-Express-Karte in meiner originalen Switch oder Switch OLED?",
-          "a": "<b>Nein. microSD-Express-Karten sind NICHT abwärtskompatibel mit der originalen Switch, Switch Lite oder Switch OLED.</b> Diese Konsolen unterstützen nur UHS-I. Wenn Sie mehrere Switch-Modelle besitzen, bleiben Sie bei einer Standard-UHS-I-U3/A2-microSDXC-Karte, die mit allen kompatibel ist."
+          "q": "Funktioniert eine microSD-Express-Karte in meiner ursprünglichen Switch oder Switch OLED?",
+          "a": "<b>Ja, mit UHS-I-Geschwindigkeit.</b> Express-Karten sind mit UHS-I-Steckplätzen abwärtskompatibel, eine Karte kann also zwischen den Konsolen wechseln. Switch-2-Spiele brauchen weiterhin die Switch 2."
         },
         {
-          "q": "Welche microSD-Spezifikationen sollte ich für die Switch 2 kaufen?",
-          "a": "<b>Für eine Standard-microSD-Karte: UHS-I U3/A2 (gleiche Empfehlung wie bei der originalen Switch). Für microSD Express: jede zertifizierte SD-Express-Karte mit V30 oder schneller.</b> Bei der Kapazität ist 512GB ein solider Einstieg; 1TB ist ideal, wenn Sie den Großteil Ihrer Bibliothek digital herunterladen."
+          "q": "Welche microSD-Karte sollte ich für die Switch 2 kaufen?",
+          "a": "<b>Jede Karte mit dem microSD-Express-Logo</b>, etwa die Samsung P9 Express oder die von Nintendo lizenzierte Karte von SanDisk. 256GB verdoppeln den eingebauten Speicher, 512GB passen zu großen digitalen Bibliotheken."
         }
       ],
       "relatedDevices": [
@@ -7774,7 +7777,7 @@
         "msi claw 8 microsd"
       ],
       "sdCard": {
-        "type": "microSD UHS-I (High-Speed-Leser)",
+        "type": "microSD Express (liest auch UHS-I Karten)",
         "minSpeed": "V30",
         "minWriteSpeed": "30 MB/s",
         "minAppPerformance": "A2",
@@ -7784,7 +7787,7 @@
         ],
         "maxCapacity": "2TB"
       },
-      "whySpecs": "Das Claw 8 EX AI+ kombiniert Intels Arc-G3-Extreme-Plattform mit einem 80-Whr-Akku für anhaltende Hochleistungs-Performance unterwegs und setzt auf Intel-XeSS-KI-Upscaling, das auf schnelles, gleichmäßiges Asset-Streaming angewiesen ist. Da Arc-Treiber empfindlich auf Verzögerungen beim Streaming von Spiel-Assets von externem Speicher reagieren, ist eine A2-eingestufte Karte mit starken Random-Lese-/Schreib-IOPS entscheidend, um Ruckler und Mikro-Freezes zu vermeiden — eine reine V30-Karte ohne A2 bremst das System unter Last.",
+      "whySpecs": "Das Claw 8 EX AI+ läuft mit Windows auf Intels Arc G3 Extreme und hat ein microSD-Express-Lesegerät. Express-Karten sind über PCIe angebunden und lesen mit 800 MB/s oder mehr, ein Vielfaches von UHS-I. Normale UHS-I-Karten funktionieren auch; für schnellere Ladezeiten A2 kaufen und für eine PC-Bibliothek 1TB oder mehr.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-microsd",
@@ -7802,15 +7805,15 @@
       "faq": [
         {
           "q": "Braucht das MSI Claw 8 EX AI+ eine spezielle microSD-Karte?",
-          "a": "<b>Es braucht eine Karte mit A2-App-Performance-Einstufung, nicht nur eine schnelle sequenzielle Karte.</b> Das Intel-Arc-Plattform-XeSS-KI-Upscaling streamt kontinuierlich Spiel-Assets, und die starken Random-Lese-/Schreib-IOPS von A2 verhindern die Ruckler und Mikro-Freezes, die eine reine V30-Karte ohne A2 verursachen kann."
+          "a": "<b>Nein, aber es profitiert davon.</b> Das Lesegerät unterstützt microSD Express, das Spiele um ein Vielfaches schneller lädt als UHS-I. Normale A2-Karten laufen mit UHS-I-Geschwindigkeit."
         },
         {
-          "q": "Warum ruckelt mein MSI Claw 8 bei intensiven Szenen?",
-          "a": "<b>Dies liegt meist an einem Speicher-I/O-Engpass, nicht an CPU/GPU.</b> Intel-Arc-Treiber reagieren empfindlich auf Verzögerungen bei der Asset-Zustellung während des Hintergrund-Streamings. Der Wechsel zu einer A2-eingestuften microSD-Karte (oder das Verschieben des Spiels auf internen Speicher) behebt das Ruckeln in der Regel."
+          "q": "Warum ruckelt mein MSI Claw 8 in Open-World-Spielen?",
+          "a": "<b>Spiele, die Texturen von der Karte nachladen, können auf langsamen Karten haken.</b> Verschiebe das Spiel auf die interne SSD oder nutze eine microSD-Express- oder A2-Karte."
         },
         {
-          "q": "Welche Kapazität eignet sich am besten für eine 2TB-microSD im Claw 8?",
-          "a": "<b>Eine 2TB-A2/V30-Karte einer renommierten Marke funktioniert gut, bleiben Sie aber bei etablierten Marken wie SanDisk, Samsung oder Lexar.</b> Generische 2TB-Karten von nicht verifizierten Verkäufern weisen viel häufiger überhöhte Kapazitätsangaben oder inkonsistente anhaltende Schreibleistung auf."
+          "q": "Ist eine 2TB-microSD-Karte für das Claw 8 sinnvoll?",
+          "a": "<b>Ja, von SanDisk, Samsung oder Lexar.</b> No-Name-Karten mit 2TB sind oft Fälschungen mit falscher Kapazität."
         }
       ],
       "relatedDevices": [
@@ -8517,17 +8520,17 @@
         "solocam speicherkarte"
       ],
       "sdCard": {
-        "type": "microSD",
-        "minSpeed": "Class 10 / U1",
+        "type": "Kein Kartensteckplatz (8GB interner Speicher)",
+        "minSpeed": "N/A",
         "minWriteSpeed": "10 MB/s",
         "recommendedCapacity": [
           "32GB",
           "64GB",
           "128GB"
         ],
-        "maxCapacity": "128GB"
+        "maxCapacity": "8GB intern (mehr über HomeBase)"
       },
-      "whySpecs": "Die SoloCam S340 verfügt über zwei Kameras mit Schwenk-/Neigefunktion und zeichnet lokal auf einer microSD-Karte auf (bis 128GB). Eufy empfiehlt mindestens Class-10-Karten; für die Dauerüberwachung sind High-Endurance-Karten unerlässlich, um langfristige Zuverlässigkeit zu gewährleisten.",
+      "whySpecs": "Die S340 speichert bewegungsausgelöste Clips auf 8GB internem eMMC-Speicher und hat keinen Kartensteckplatz. Laut Testberichten reichen 8GB bei 50 bis 80 Ereignissen pro Tag für etwa 10 bis 14 Tage. Für mehr Speicher kombinierst du sie mit einer eufy HomeBase 3 und einer 2,5-Zoll-Festplatte.",
       "recommendedBrands": [
         {
           "id": "sandisk-max-endurance"
@@ -8538,8 +8541,12 @@
       ],
       "faq": [
         {
-          "q": "Wie viel Video passt auf eine 128GB-Karte?",
-          "a": "<b>Eine 128GB High-Endurance-Karte speichert bei Standard-Bildqualität etwa 2-3 Wochen Dauervideo.</b> Die genaue Dauer hängt von Ihren Bewegungserkennungs-Einstellungen und der gewählten Videoqualität ab."
+          "q": "Nimmt die eufy SoloCam S340 eine microSD-Karte?",
+          "a": "<b>Nein.</b> Sie hat 8GB internen Speicher und keinen Kartensteckplatz."
+        },
+        {
+          "q": "Wie erweitere ich den Speicher der eufy S340?",
+          "a": "<b>Mit einer eufy HomeBase 3</b> und einer eingebauten 2,5-Zoll-Festplatte oder SSD mit bis zu 16TB."
         }
       ],
       "relatedDevices": [
@@ -8547,7 +8554,9 @@
         "viofo-a229-duo",
         "nextbase-622gw"
       ],
-      "notes": "Popular wire-free security camera with built-in solar panel option. Eufy official specs confirm microSD support up to 128GB. Growing search volume as Eufy gains market share."
+      "notes": "Popular wire-free security camera with built-in solar panel option. Eufy official specs confirm microSD support up to 128GB. Growing search volume as Eufy gains market share.",
+      "customTitle": "Nimmt die eufy SoloCam S340 eine SD-Karte? Nein, 8GB intern",
+      "metaDescription": "Die eufy SoloCam S340 hat keinen microSD-Steckplatz. Sie speichert Clips auf 8GB internen Speicher; mehr Platz gibt es mit HomeBase 3 und Festplatte."
     },
     {
       "id": "reolink-e1-pro",

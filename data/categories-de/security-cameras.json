@@ -58,17 +58,17 @@
       "solocam speicherkarte"
     ],
     "sdCard": {
-      "type": "microSD",
-      "minSpeed": "Class 10 / U1",
+      "type": "Kein Kartensteckplatz (8GB interner Speicher)",
+      "minSpeed": "N/A",
       "minWriteSpeed": "10 MB/s",
       "recommendedCapacity": [
         "32GB",
         "64GB",
         "128GB"
       ],
-      "maxCapacity": "128GB"
+      "maxCapacity": "8GB intern (mehr über HomeBase)"
     },
-    "whySpecs": "Die SoloCam S340 verfügt über zwei Kameras mit Schwenk-/Neigefunktion und zeichnet lokal auf einer microSD-Karte auf (bis 128GB). Eufy empfiehlt mindestens Class-10-Karten; für die Dauerüberwachung sind High-Endurance-Karten unerlässlich, um langfristige Zuverlässigkeit zu gewährleisten.",
+    "whySpecs": "Die S340 speichert bewegungsausgelöste Clips auf 8GB internem eMMC-Speicher und hat keinen Kartensteckplatz. Laut Testberichten reichen 8GB bei 50 bis 80 Ereignissen pro Tag für etwa 10 bis 14 Tage. Für mehr Speicher kombinierst du sie mit einer eufy HomeBase 3 und einer 2,5-Zoll-Festplatte.",
     "recommendedBrands": [
       {
         "id": "sandisk-max-endurance"
@@ -79,8 +79,12 @@
     ],
     "faq": [
       {
-        "q": "Wie viel Video passt auf eine 128GB-Karte?",
-        "a": "<b>Eine 128GB High-Endurance-Karte speichert bei Standard-Bildqualität etwa 2-3 Wochen Dauervideo.</b> Die genaue Dauer hängt von Ihren Bewegungserkennungs-Einstellungen und der gewählten Videoqualität ab."
+        "q": "Nimmt die eufy SoloCam S340 eine microSD-Karte?",
+        "a": "<b>Nein.</b> Sie hat 8GB internen Speicher und keinen Kartensteckplatz."
+      },
+      {
+        "q": "Wie erweitere ich den Speicher der eufy S340?",
+        "a": "<b>Mit einer eufy HomeBase 3</b> und einer eingebauten 2,5-Zoll-Festplatte oder SSD mit bis zu 16TB."
       }
     ],
     "relatedDevices": [
@@ -88,7 +92,9 @@
       "viofo-a229-duo",
       "nextbase-622gw"
     ],
-    "notes": "Popular wire-free security camera with built-in solar panel option. Eufy official specs confirm microSD support up to 128GB. Growing search volume as Eufy gains market share."
+    "notes": "Popular wire-free security camera with built-in solar panel option. Eufy official specs confirm microSD support up to 128GB. Growing search volume as Eufy gains market share.",
+    "customTitle": "Nimmt die eufy SoloCam S340 eine SD-Karte? Nein, 8GB intern",
+    "metaDescription": "Die eufy SoloCam S340 hat keinen microSD-Steckplatz. Sie speichert Clips auf 8GB internen Speicher; mehr Platz gibt es mit HomeBase 3 und Festplatte."
   },
   {
     "id": "reolink-e1-pro",

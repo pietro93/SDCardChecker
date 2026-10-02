@@ -646,14 +646,14 @@
       "macbook pro m4"
     ],
     "sdCard": {
-      "type": "External via USB-C/Thunderbolt Reader",
+      "type": "Integrierter SDXC UHS-II Steckplatz (14/16 Zoll, ab 2021); USB-C-Lesegerät beim 13-Zoll-Modell",
       "minSpeed": "UHS-I bis UHS-II",
       "recommendedCapacity": [
         "128GB",
         "256GB"
       ]
     },
-    "whySpecs": "Das MacBook Pro nutzt Thunderbolt/USB-C. Für Video-Workflows werden Hochgeschwindigkeits-Lesegeräte empfohlen.",
+    "whySpecs": "Apple hat den SDXC-Steckplatz 2021 beim 14- und 16-Zoll-MacBook Pro zurückgebracht. Er unterstützt UHS-II mit bis zu etwa 250 bis 300 MB/s. Das 13-Zoll-MacBook Pro hat keinen Steckplatz. Für CFexpress oder schnellere Übertragungen ein Thunderbolt-Lesegerät verwenden.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-uhs2-usbc"
@@ -663,7 +663,17 @@
       "macbook-air",
       "canon-eos-r5"
     ],
-    "imageUrl": "/img/devices/computing/macbook-pro.webp"
+    "imageUrl": "/img/devices/computing/macbook-pro.webp",
+    "faq": [
+      {
+        "q": "Hat das MacBook Pro einen SD-Kartensteckplatz?",
+        "a": "<b>Die 14- und 16-Zoll-Modelle ab 2021 ja.</b> Der Steckplatz unterstützt UHS-II. Das 13-Zoll-MacBook Pro hat keinen Steckplatz."
+      },
+      {
+        "q": "Ist der SD-Steckplatz des MacBook Pro UHS-II?",
+        "a": "<b>Ja.</b> Er liest UHS-II-Karten mit bis zu etwa 250 bis 300 MB/s."
+      }
+    ]
   },
   {
     "id": "ipad-pro",

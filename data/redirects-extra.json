@@ -73,5 +73,20 @@
     "from": "/ja/categories/action-cameras/insta360-one-x3/",
     "to": "/ja/categories/action-cameras/insta360-x3/",
     "reason": "Duplicate of insta360-x3, removed from JA data (EN removed in commit 1193275)"
+  },
+  {
+    "from": "/de/categories/action-cameras/wyze-cam-v3/",
+    "to": "/de/categories/security-cameras/wyze-cam-v3/",
+    "reason": "Duplicate entry under action cameras removed; security cameras copy kept, matching English"
+  },
+  {
+    "from": "/fr/categories/action-cameras/wyze-cam-v3/",
+    "to": "/fr/categories/security-cameras/wyze-cam-v3/",
+    "reason": "Duplicate entry under action cameras removed; security cameras copy kept, matching English"
+  },
+  {
+    "from": "/it/categories/action-cameras/wyze-cam-v3/",
+    "to": "/it/categories/security-cameras/wyze-cam-v3/",
+    "reason": "Duplicate entry under action cameras removed; security cameras copy kept, matching English"
   }
 ]

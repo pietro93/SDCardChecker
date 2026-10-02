@@ -11,7 +11,7 @@
     ],
     "sdCard": {
       "type": "CFexpress Type B and SD UHS-II",
-      "minSpeed": "V60",
+      "minSpeed": "V90 (CFexpress necessaria per 8K RAW)",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -19,7 +19,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "Registrazione professionale in 8K. Richiede almeno V60 per video RAW 8K. L'elevato bitrate (1,6 Gbps) richiede slot per doppia scheda veloci per maggiore sicurezza.",
+    "whySpecs": "Fotocamera professionale 8K. L'8K RAW (Cinema RAW Light) si registra solo su una scheda CFexpress Type B, lo slot SD non lo supporta affatto. Lo slot SD UHS-II richiede una scheda V90 per l'8K standard, mentre per il 4K basta una V60. Il video ad alto bitrate richiede schede veloci e due slot per sicurezza.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-cfexpress"
@@ -30,16 +30,16 @@
     ],
     "faq": [
       {
-        "q": "Serve una doppia scheda per la R5?",
-        "a": "<b>Sì, la Canon EOS R5 ha due slot per schede e Canon consiglia di usare due schede V60 per sicurezza</b>. <b>Quando si registra video 8K, la doppia scheda offre una registrazione di backup e maggiore affidabilità</b>, proteggendo da un guasto a una singola scheda durante sessioni critiche."
+        "q": "Servono due schede per la Canon R5?",
+        "a": "<b>No, ma è più sicuro.</b> La R5 ha uno slot CFexpress Type B e uno slot SD UHS-II. Registrare su entrambi ti dà un backup, ma solo la CFexpress gestisce l'8K RAW."
       },
       {
-        "q": "Posso girare in 4K con schede V30?",
-        "a": "<b>Sì, la registrazione video 4K funziona perfettamente con schede di classe di velocità V30</b>. Tuttavia, <b>la registrazione in 8K richiede almeno la classe di velocità V60</b> a causa del bitrate molto più elevato e delle maggiori esigenze di throughput dei dati della cattura 8K."
+        "q": "Posso girare in 4K sulla R5 con schede V30?",
+        "a": "<b>Per il 4K IPB standard, sì.</b> L'8K su SD richiede V90, e l'8K RAW richiede CFexpress Type B."
       },
       {
-        "q": "Qual è la differenza tra CFexpress e SD?",
-        "a": "<b>Le schede CFexpress Type B sono significativamente più veloci delle SD UHS-II</b> e sono <b>più adatte alla registrazione video RAW 8K</b>. <b>Le schede SD UHS-II V60 sono più economiche e sufficienti per la registrazione in 4K</b>, rendendole la scelta preferita per il lavoro ibrido foto/video."
+        "q": "Che differenza c'è tra CFexpress e SD nella R5?",
+        "a": "<b>La velocità.</b> La CFexpress Type B scrive oltre 1.000 MB/s e gestisce l'8K RAW. Una SD UHS-II V60 o V90 costa meno e copre il 4K."
       }
     ],
     "relatedDevices": [
@@ -60,7 +60,7 @@
     ],
     "sdCard": {
       "type": "SD UHS-II",
-      "minSpeed": "V30",
+      "minSpeed": "V30 (V90 per XAVC S-I)",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -109,7 +109,7 @@
     ],
     "sdCard": {
       "type": "SD UHS-II",
-      "minSpeed": "V30",
+      "minSpeed": "V30 (V90 per 360 Mbps)",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -154,7 +154,7 @@
     ],
     "sdCard": {
       "type": "CFexpress Type B and XQD",
-      "minSpeed": "V90",
+      "minSpeed": "VPG 400 (CFexpress)",
       "minWriteSpeed": "90 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -465,8 +465,8 @@
       "scheda di memoria fujifilm x100vi"
     ],
     "sdCard": {
-      "type": "SD UHS-II",
-      "minSpeed": "V60",
+      "type": "SD UHS-I",
+      "minSpeed": "V30",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -474,7 +474,7 @@
       ],
       "maxCapacity": "No official limit"
     },
-    "whySpecs": "Compatta premium con sensore da 40MP e capacità video 6,2K. V60 è essenziale per la registrazione video 6,2K a 30fps e lo scatto continuo in RAW ad alta velocità. Lo slot UHS-II consente uno svuotamento più rapido del buffer per la nuova modalità raffica a 20fps.",
+    "whySpecs": "La X100VI ha un sensore da 40MP e registra in 6.2K/30 fino a 200 Mbps, circa 25 MB/s. Il suo unico slot è UHS-I, quindi una scheda V30 copre il video e le schede UHS-II non portano vantaggi nella fotocamera. Una scheda che scrive vicino ai 90 MB/s svuota più in fretta il buffer dopo le raffiche a 20 fps.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -488,12 +488,12 @@
     ],
     "faq": [
       {
-        "q": "Posso usare le mie vecchie schede della X100V?",
-        "a": "<b>Le schede V30 della X100V funzioneranno, ma si consiglia V60 per il video 6,2K e gli scatti in raffica più veloci della X100VI.</b> Per prestazioni ottimali, specialmente per il video, è consigliabile passare a una scheda UHS-II V60."
+        "q": "Posso usare le vecchie schede della X100V nella X100VI?",
+        "a": "<b>Sì, se sono V30.</b> Entrambe le fotocamere hanno slot UHS-I, e la V30 copre il bitrate massimo di 200 Mbps della X100VI."
       },
       {
-        "q": "V90 è necessaria per la X100VI?",
-        "a": "<b>V60 è sufficiente per tutte le modalità di registrazione.</b> Le schede V90 non offrono alcun vantaggio pratico poiché il bitrate massimo della X100VI non supera i requisiti V60. Puoi risparmiare rimanendo su schede V60 senza compromettere le prestazioni in fotocamera."
+        "q": "Serve una scheda V60 o V90 per la X100VI?",
+        "a": "<b>No.</b> Il bitrate massimo è 200 Mbps (25 MB/s), coperto dalla V30, e lo slot UHS-I non può sfruttare la velocità UHS-II."
       }
     ],
     "relatedDevices": [
@@ -516,7 +516,7 @@
       "archiviazione canon r50"
     ],
     "sdCard": {
-      "type": "SD UHS-II (UHS-I compatible)",
+      "type": "SD UHS-I",
       "minSpeed": "V30",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
@@ -526,7 +526,7 @@
       ],
       "maxCapacity": "No official limit"
     },
-    "whySpecs": "La mirrorless APS-C entry-level di Canon, con registrazione video 4K e sensore da 24MP. Una scheda di classe di velocità V30 è sufficiente per la registrazione 4K a 30fps e lo scatto continuo in RAW. Sebbene disponga di uno slot UHS-II, le schede UHS-I V30 offrono un ottimo rapporto qualità-prezzo per la maggior parte degli utenti.",
+    "whySpecs": "La mirrorless APS-C entry level di Canon ha un sensore da 24MP, video 4K/30 e un solo slot SD UHS-I. Una scheda V30 UHS-I copre ogni modalità. Le schede UHS-II funzionano, ma alla velocità UHS-I.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -540,12 +540,12 @@
     ],
     "faq": [
       {
-        "q": "È una buona prima fotocamera?",
-        "a": "<b>Sì, la EOS R50 è la mirrorless più adatta ai principianti di Canon.</b> È economica, leggera e dotata di un ottimo autofocus. Per le schede SD, una scheda UHS-I V30 (più economica) è un ottimo punto di partenza, e in seguito è possibile passare a UHS-II se la velocità di trasferimento diventa un collo di bottiglia."
+        "q": "La Canon R50 è una buona prima fotocamera?",
+        "a": "<b>Sì.</b> È piccola, leggera e ha un autofocus affidabile. Le basta una scheda V30 UHS-I."
       },
       {
-        "q": "Posso usare schede UHS-I o mi serve UHS-II?",
-        "a": "<b>Le schede UHS-I V30 funzionano perfettamente per tutte le modalità di registrazione della R50.</b> La fotocamera supporta UHS-II per trasferimenti dati più veloci (ad esempio verso un computer) e uno svuotamento più rapido del buffer dopo scatti in raffica veloci, ma non è strettamente necessario per le prestazioni di registrazione in fotocamera. Puoi risparmiare con le schede UHS-I a meno che tu non scatti frequentemente migliaia di foto in una sessione."
+        "q": "Serve una scheda UHS-II per la Canon R50?",
+        "a": "<b>No.</b> Lo slot è UHS-I, quindi le schede UHS-II funzionano a velocità UHS-I."
       }
     ],
     "relatedDevices": [
@@ -1798,8 +1798,8 @@
       "archiviazione nikon zf"
     ],
     "sdCard": {
-      "type": "Dual SD UHS-II",
-      "minSpeed": "V60 (V90 for high frame rate video)",
+      "type": "SD UHS-II + microSD UHS-I",
+      "minSpeed": "V30",
       "minWriteSpeed": "60 MB/s minimum, 90 MB/s recommended",
       "recommendedCapacity": [
         "128GB",
@@ -1808,7 +1808,7 @@
       "maxCapacity": "No official limit",
       "testedMaxCapacity": "512GB"
     },
-    "whySpecs": "Una mirrorless full-frame dallo stile retrò con sensore da 24MP e funzionalità video avanzate. Le schede V60 gestiscono la registrazione 4K standard e la fotografia, ma si consiglia V90 per lo slow motion 4K a 120fps e le modalità video N-RAW a bitrate più elevato. I suoi due slot UHS-II abilitano flussi di lavoro di backup professionali e una gestione robusta dei supporti.",
+    "whySpecs": "La Zf registra in 4K/30 sovracampionato dal 6K, in 4K/60 con ritaglio DX e in 1080p/120. Lo slot 1 accetta SD UHS-II, lo slot 2 microSD UHS-I. Una scheda V30 copre il video; una UHS-II veloce nello slot 1 svuota il buffer più in fretta. Se registri su entrambi gli slot, è la microSD, più lenta, a dettare il ritmo.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -1822,12 +1822,12 @@
     ],
     "faq": [
       {
-        "q": "Perché la Nikon Zf è una fotocamera così popolare?",
-        "a": "<b>La Nikon Zf ha guadagnato immensa popolarità combinando con successo un design retrò classico ispirato alle fotocamere a pellicola di Nikon con prestazioni mirrorless full-frame moderne all'avanguardia.</b> Offre un'eccellente qualità d'immagine, autofocus avanzato e solide capacità video in un design elegante. Questa combinazione di estetica vintage e tecnologia contemporanea attrae una vasta gamma di appassionati di fotografia e professionisti."
+        "q": "Quali slot per schede ha la Nikon Zf?",
+        "a": "<b>Uno slot SD UHS-II e uno slot microSD UHS-I.</b> Usa lo slot SD per la registrazione principale e la microSD per il backup."
       },
       {
-        "q": "Servono schede V90 per la Nikon Zf, o basta V60?",
-        "a": "<b>Le schede V60 sono generalmente sufficienti per la maggior parte della fotografia e della registrazione video 4K standard sulla Nikon Zf.</b> Tuttavia, le schede V90 diventano necessarie se si intende girare video slow motion 4K a 120fps o utilizzare le modalità di registrazione video N-RAW a bitrate più elevato. La maggior parte degli utenti può iniziare con schede V60 e considerare V90 solo se i propri flussi di lavoro video specifici e impegnativi lo richiedono."
+        "q": "Servono schede V90 per la Nikon Zf?",
+        "a": "<b>No.</b> La Zf arriva al massimo al 4K/60 con ritaglio DX e non registra video RAW internamente. Basta la V30; la V60 dà margine."
       }
     ],
     "relatedDevices": [
@@ -1949,7 +1949,7 @@
       "archiviazione z6 2"
     ],
     "sdCard": {
-      "type": "Dual SD UHS-II",
+      "type": "CFexpress Type B / XQD + SD UHS-II",
       "minSpeed": "V60",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
@@ -1959,7 +1959,7 @@
       "maxCapacity": "No official limit",
       "testedMaxCapacity": "512GB"
     },
-    "whySpecs": "Una popolare fotocamera ibrida mirrorless full-frame, capace di registrazione video 4K e fotografia in raffica ad alta velocità. Una scheda di classe di velocità V60 gestisce in modo affidabile video 4K e fotografia in raffica. I suoi due slot SD UHS-II offrono ridondanza e flessibilità per fotografi professionisti e appassionati.",
+    "whySpecs": "La Z6 II ha due slot diversi: lo slot 1 accetta CFexpress Type B o XQD, lo slot 2 SD UHS-II. Registra in 4K/60 fino a 144 Mbps, coperti da una SD V30. Una CFexpress nello slot 1 svuota più in fretta il buffer dopo le raffiche RAW a 14 fps.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -1970,8 +1970,8 @@
     ],
     "faq": [
       {
-        "q": "La Nikon Z6 II è ancora un buon acquisto rispetto alla nuova Z6 III?",
-        "a": "<b>Sì, se hai un budget limitato o non necessiti delle funzionalità più recenti in assoluto, la Z6 II resta un'ottima fotocamera.</b> Offre una qualità d'immagine eccellente e solide capacità video a un prezzo potenzialmente inferiore rispetto alla Z6 III. Le schede V60 offrono tutta la velocità necessaria per le sue modalità foto e video avanzate, rendendola un'opzione economica per molti utenti."
+        "q": "La Nikon Z6 II è ancora un buon acquisto rispetto alla Z6 III?",
+        "a": "<b>Sì, se conta il budget.</b> La Z6 III aggiunge il 6K N-RAW e un sensore più veloce; la Z6 II ha la stessa disposizione degli slot: CFexpress Type B più SD UHS-II."
       }
     ],
     "relatedDevices": [
@@ -1994,7 +1994,7 @@
       "archiviazione nikon d850"
     ],
     "sdCard": {
-      "type": "XQD + SD UHS-II",
+      "type": "XQD / CFexpress Type B + SD UHS-II",
       "minSpeed": "V30 (SD), V60 recommended",
       "minWriteSpeed": "30 MB/s minimum, 60 MB/s recommended",
       "recommendedCapacity": [
@@ -2608,7 +2608,7 @@
     ],
     "sdCard": {
       "type": "CFexpress Type A / SD UHS-II",
-      "minSpeed": "V60",
+      "minSpeed": "V60 (V90 per XAVC S-I)",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "128GB",

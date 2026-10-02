@@ -68,7 +68,7 @@
       "dji mini 3 sd karte"
     ],
     "sdCard": {
-      "type": "microSD UHS-I (UHS-II Compatible)",
+      "type": "microSD UHS-I",
       "minSpeed": "V30",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
@@ -157,15 +157,15 @@
     ],
     "sdCard": {
       "type": "microSD UHS-I (UHS-II Compatible)",
-      "minSpeed": "V60",
+      "minSpeed": "V30 / U3",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "256GB",
         "512GB"
       ],
-      "maxCapacity": "1TB"
+      "maxCapacity": "512GB"
     },
-    "whySpecs": "Premium-Drohne für 4K und 8K. Das Standardmodell unterstützt 4K; das Cine-Modell unterstützt 8K-Cine-Aufnahmen mit hoher Bitrate. V60 ist mindestens erforderlich. Für 8K-Cine-Arbeiten wird V90 empfohlen.",
+    "whySpecs": "Die Mavic 3 nimmt 5.1K/50 und 4K/120 in H.264 und H.265 mit bis zu 200 Mbit/s auf, das sind 25 MB/s. DJI verlangt U3 (Speed Grade 3), und eine V30-Karte erfüllt das. Das Standardmodell hat 8GB internen Speicher. Die Mavic 3 Cine nimmt ProRes 422 HQ auf eine eingebaute 1TB-SSD auf, ihre microSD-Karte bekommt also dasselbe H.264/H.265-Material wie beim Standardmodell.",
     "recommendedBrands": [
       {
         "id": "lexar-professional-1000x-v60"
@@ -176,8 +176,16 @@
     ],
     "faq": [
       {
-        "q": "Kann ich V30-Karten verwenden?",
-        "a": "<b>V30-Karten reichen für 4K-Aufnahmen mit der DJI Mavic 3 aus</b>. Für <b>8K-Cine-Aufnahmen (nur Cine-Modell) ist jedoch mindestens V60 erforderlich, wobei V90 dringend empfohlen wird</b>, um eine unterbrechungsfreie Aufnahme mit hoher Bitrate und optimale Leistung zu gewährleisten."
+        "q": "Kann ich V30-Karten in der DJI Mavic 3 verwenden?",
+        "a": "<b>Ja. V30 ist die richtige Spezifikation.</b> Die höchste Bitrate liegt bei 200 Mbit/s (25 MB/s), unter der V30-Untergrenze von 30 MB/s. V60- und V90-Karten funktionieren, nehmen aber nicht besser auf."
+      },
+      {
+        "q": "Nimmt die Mavic 3 Cine ProRes auf die microSD-Karte auf?",
+        "a": "<b>Nein.</b> ProRes geht auf die interne 1TB-SSD der Cine. Der microSD-Steckplatz nimmt H.264 und H.265 auf, wie bei der normalen Mavic 3."
+      },
+      {
+        "q": "Nimmt die DJI Mavic 3 in 8K auf?",
+        "a": "<b>Nein.</b> Die höchste Auflösung ist 5.1K mit bis zu 50 B/s."
       }
     ],
     "relatedDevices": [
@@ -251,9 +259,9 @@
         "128GB",
         "256GB"
       ],
-      "maxCapacity": "512GB"
+      "maxCapacity": "256GB"
     },
-    "whySpecs": "Eine preisgünstige Drohne mit einem Gewicht unter 250g, die 4K-Video mit 30fps aufnehmen kann. DJI empfiehlt offiziell mindestens V30-Karten für stabile 4K-Aufnahmen. Trotz des Einsteigermodells gelten dieselben grundlegenden Kartenanforderungen wie bei anderen höherwertigen Drohnen der Mini-Serie, was die Zuverlässigkeit bei Aufnahmen während des Flugs unterstreicht. Da sie bei 4K/30 endet statt bei den 4K/100 der Mini 4 Pro, liegen ihre Bitrate-Anforderungen am unteren Ende dieser gemeinsamen V30-Vorgabe — eine solide Mittelklasse-V30-Karte reicht hier wirklich aus.",
+    "whySpecs": "DJI verlangt für die Mini 4K eine UHS-I-microSD-Karte mit Speed Grade 3 (U3), und V30-Karten erfüllen das mit Reserve. Die Drohne kommt höchstens auf 4K/30 und 100 Mbit/s, eine V30-Karte der Mittelklasse genügt also. Aufpreis für V60 oder UHS-II bringt in der Luft nichts.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -267,12 +275,12 @@
     ],
     "faq": [
       {
-        "q": "Wie unterscheidet sich die DJI Mini 4K von der Mini 4 Pro?",
-        "a": "<b>Die Mini 4K ist eine preisgünstigere Version mit weniger intelligenten Flugmodi und ohne Hinderniserkennungssensoren.</b> Sie zeichnet jedoch dasselbe 4K-Video mit 30fps auf und benötigt für eine stabile Leistung dieselben V30-microSD-Karten. Sie ist eine ausgezeichnete Wahl für Einsteiger, denen Kameraqualität wichtig ist, die aber keine erweiterten Funktionen benötigen."
+        "q": "Was unterscheidet die DJI Mini 4K von der Mini 4 Pro?",
+        "a": "<b>Die Mini 4K ist das Einstiegsmodell: 4K/30 mit 100 Mbit/s, keine Hinderniserkennung, keine 10-Bit-Farbe.</b> Die Mini 4 Pro nimmt bis 4K/100 in 10-Bit D-Log M auf. Beide nehmen dieselben U3/V30-microSD-Karten."
       },
       {
-        "q": "Was ist die größte microSD-Karte, die die Mini 4K unterstützt?",
-        "a": "<b>DJI unterstützt bei der Mini 4K Karten bis 512GB</b>, dieselbe Obergrenze wie bei der Mini 3 und Mini 3 Pro. 512GB sind für diese Drohne allerdings mehr, als realistisch nötig ist: Bei 4K/30 bräuchten Sie viele Akkuladungen, um selbst eine 128GB-Karte zu füllen, und die Akkulaufzeit ist ohnehin die eigentliche Grenze bei einem Dreh. <b>128GB oder 256GB sind der Sweet Spot</b> — und zwei kleinere Karten sind besser als eine große, denn ein einzelner Kartenausfall kostet Sie dann nur die Hälfte Ihres Materials statt alles."
+        "q": "Welche microSD-Karte ist die größte, die die Mini 4K unterstützt?",
+        "a": "<b>DJI nennt 256GB als Maximum für die Mini 4K.</b> Eine 256GB-Karte fasst über 5 Stunden 4K, weit mehr, als deine Akkus fliegen. Zwei 128GB-Karten sind sicherer als eine mit 256GB: Eine defekte Karte kostet dann nur die Hälfte der Aufnahmen."
       }
     ],
     "relatedDevices": [
@@ -674,7 +682,7 @@
         "128GB",
         "256GB"
       ],
-      "maxCapacity": "256GB (Official), some 400GB+ supported on newer firmware"
+      "maxCapacity": "256GB (offiziell)"
     },
     "whySpecs": "Die Skydio 2+ ist stark auf die SD-Karte angewiesen — nicht nur für 4K/60fps-Video, sondern auch zur Datenprotokollierung ihrer komplexen autonomen Flugbahnplanung. Skydio ist dafür bekannt, Karten abzulehnen, die den strengen U3/V30-Geschwindigkeitstest nicht bestehen. Das Dateisystem muss exFAT sein.",
     "recommendedBrands": [
@@ -938,7 +946,7 @@
         "128GB",
         "256GB"
       ],
-      "maxCapacity": "512GB"
+      "maxCapacity": "1TB"
     },
     "whySpecs": "Anders als die ursprüngliche X1 mit internem Speicher zeichnet die X1 Pro 4K/60fps auf eine microSD-Karte auf. Eine V30-Karte ist für flüssige Aufnahmen erforderlich. Die Drohne ist für Follow-Me-Actionsport konzipiert, weshalb zuverlässige Schreibgeschwindigkeiten entscheidend sind, um keine Aufnahmen eines Stunts zu verlieren.",
     "recommendedBrands": [
@@ -974,8 +982,8 @@
       "hoverair 8k speicher"
     ],
     "sdCard": {
-      "type": "microSD UHS-I / UHS-II",
-      "minSpeed": "V60",
+      "type": "microSD UHS-I",
+      "minSpeed": "V30 (V60 für 8K und 4K/120)",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -1202,7 +1210,7 @@
     ],
     "sdCard": {
       "type": "microSD UHS-I",
-      "minSpeed": "V30 (V60 recommended for thermal margin)",
+      "minSpeed": "V30",
       "minWriteSpeed": "30 MB/s minimum, 60 MB/s recommended",
       "recommendedCapacity": [
         "128GB",
@@ -1210,7 +1218,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "Die Avata 360 zeichnet bis zu 8K (360°) mit 60fps und einer maximalen Video-Bitrate von 180 Mbit/s auf — deutlich mehr, als die ursprüngliche Avata 2 verlangt. Da das Kameramodul in einem eng umschlossenen Cinewhoop-Gehäuse mit begrenzter Luftzirkulation sitzt, läuft die Karte heißer als bei offenen Drohnen — hier zählt Spielraum bei der dauerhaften Schreibgeschwindigkeit mehr als reine Kapazität. Eine V30-Karte ist die offizielle Untergrenze, aber V60 bietet Reserven gegen thermisches Throttling, damit eine Aufnahme mitten im Flug nicht abbricht oder beschädigt wird.",
+    "whySpecs": "Die Avata 360 nimmt 8K/60-360-Grad-Video mit bis zu 180 Mbit/s auf, der höchsten Bitrate in DJIs FPV-Reihe. Eine V30-Karte garantiert 30 MB/s, mehr als die 22,5 MB/s, die die Drohne schreibt. Kauf bei einem seriösen Händler: Gefälschte Karten sind die häufigste Ursache für abgebrochene Clips.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-microsd-v60"
@@ -1224,16 +1232,16 @@
     ],
     "faq": [
       {
-        "q": "Warum benötigt die Avata 360 eine schnellere Karte als die reguläre Avata 2?",
-        "a": "<b>Der 360°-8K/60fps-Modus erreicht bis zu 180 Mbit/s, deutlich mehr als die Standard-4K-Bitrate der Avata 2.</b> <b>Zudem sitzt die Karte in einem thermisch stärker eingeschränkten, geschlossenen Gehäuse</b>, sodass eine Karte, die die V30-Untergrenze nur knapp erreicht, weniger Spielraum hat, bevor hitzebedingtes Throttling zu Bildausfällen oder einem Aufnahmeabbruch führt."
+        "q": "Braucht die Avata 360 eine schnellere Karte als die Avata 2?",
+        "a": "<b>Nein, V30 reicht für beide.</b> Die Avata 360 schreibt 180 Mbit/s (22,5 MB/s), mehr als die Avata 2, aber unter der V30-Untergrenze von 30 MB/s."
       },
       {
-        "q": "Reicht V30, oder brauche ich wirklich V60?",
-        "a": "<b>V30 ist DJIs offizielles Minimum und funktioniert für die meisten Flüge.</b> <b>V60 wird speziell als thermische Absicherung empfohlen</b> — geschlossene FPV-/Cinewhoop-Gehäuse werden heißer als offene Drohnen, und eine Karte, die nahe ihrer Geschwindigkeitsgrenze in einem heißen Gehäuse arbeitet, ist die häufigste Ursache für beschädigtes 360°-Filmmaterial."
+        "q": "Reicht V30 für die Avata 360, oder brauche ich V60?",
+        "a": "<b>V30 reicht.</b> Eine V60-Karte nimmt dasselbe Material auf. Ihr einziger Vorteil ist schnelleres Übertragen in einem UHS-II-Lesegerät."
       },
       {
-        "q": "Welche Kapazität sollte ich für 8K-360°-Aufnahmen wählen?",
-        "a": "<b>128GB-256GB decken die meisten Flugtage komfortabel ab.</b> 360°-8K-Aufnahmen mit 180 Mbit/s füllen Karten schneller als Standard-4K, aber das größere Risiko bei dieser Drohne ist hitzebedingte Beschädigung, nicht Speicherplatzmangel — priorisieren Sie eine hoch belastbare V60-Karte gegenüber maximaler Kapazität."
+        "q": "Welche Kapazität brauche ich für 8K-360-Grad-Material?",
+        "a": "<b>256GB für die meisten Flugtage.</b> Bei 180 Mbit/s fassen 256GB etwa 3 Stunden."
       }
     ],
     "relatedDevices": [
@@ -1256,16 +1264,16 @@
       "beste sd karte für dji neo"
     ],
     "sdCard": {
-      "type": "microSD UHS-I",
-      "minSpeed": "V30",
+      "type": "Kein Kartensteckplatz (22GB interner Speicher)",
+      "minSpeed": "N/A",
       "minWriteSpeed": "30 MB/s minimum",
       "recommendedCapacity": [
         "64GB",
         "128GB"
       ],
-      "maxCapacity": "256GB"
+      "maxCapacity": "22GB intern"
     },
-    "whySpecs": "Die Neo ist DJIs handflächengroße, ultraleichte Einstiegsdrohne — keine Propellerschutzbügel zum Abnehmen, kein Controller nötig, um loszufliegen, und um exFAT herum mit 22GB internem Speicher als Puffer aufgebaut. Sie filmt bis zu 4K/30fps mit maximal 75 Mbit/s Bitrate — deutlich innerhalb dessen, was eine einfache V30-microSD-Karte problemlos bewältigt. Die Kartenwahl geht hier also nicht um thermischen Spielraum wie bei den geschlossenen Avata-Gehäusen, sondern darum, es nicht zu überdenken. Eine V30-, A2-zertifizierte Karte einer renommierten Marke deckt durchgehende Flugaufnahmen mit Reserve ab.",
+    "whySpecs": "Die Neo speichert alles auf 22GB internem Speicher und hat keinen Kartensteckplatz. Bei der maximalen Bitrate von 75 Mbit/s reicht das für etwa 40 Minuten 4K/30. Übertrage die Aufnahmen nach jedem Flug. Wenn sie nicht auf dem Smartphone bleiben sollen, kopiere sie über ein USB-C-Lesegerät auf eine microSD-Karte.",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -1279,16 +1287,16 @@
     ],
     "faq": [
       {
-        "q": "Was ist die Mindestgeschwindigkeit der SD-Karte für die DJI Neo?",
-        "a": "<b>V30 ist die Untergrenze und alles, was die meisten Piloten je brauchen werden.</b> Die maximale Bitrate der Neo von 75 Mbit/s bei 4K/30fps ist bescheiden im Vergleich zu den 8K/360°-Anforderungen von Drohnen wie der Avata 360, sodass es keinen Grund gibt, hier für V60- oder V90-microSD-Karten mehr zu bezahlen."
+        "q": "Hat die DJI Neo einen SD-Kartensteckplatz?",
+        "a": "<b>Nein.</b> Die Neo hat 22GB internen Speicher und keinen microSD-Steckplatz. Bei der Neo 2 ist es genauso, mit 49GB internem Speicher."
       },
       {
-        "q": "Brauche ich für die Neo eine hoch belastbare oder thermisch zertifizierte Karte?",
-        "a": "<b>Nein — das offene, ultraleichte Gehäuse der Neo staut Hitze nicht wie geschlossene Cinewhoop-Gehäuse.</b> Eine Standard-V30/A2-Karte einer bekannten Marke bewältigt dauerhafte Aufnahmen ohne die thermischen Bedenken, die bei Drohnen wie der Avata 360 die V60-Empfehlung begründen."
+        "q": "Wie viel Video passt auf die 22GB der DJI Neo?",
+        "a": "<b>Etwa 40 Minuten 4K/30</b> bei der maximalen Bitrate von 75 Mbit/s, in 1080p mehr."
       },
       {
-        "q": "Welche Kapazität sollte ich für die DJI Neo kaufen?",
-        "a": "<b>64GB-128GB sind der Sweet Spot für die meisten Flugtage.</b> Die Neo verfügt zudem über 22GB internen Speicher als Rückfallpuffer, sodass weniger Druck besteht, beim microSD-Kauf zu übertreiben, als bei Drohnen ohne integrierten Speicher."
+        "q": "Wie bekomme ich die Aufnahmen von der DJI Neo?",
+        "a": "<b>Mit QuickTransfer in der DJI Fly App oder per USB-C am Computer.</b> Danach die Clips in der App löschen, um Platz zu schaffen."
       }
     ],
     "relatedDevices": [
@@ -1297,7 +1305,9 @@
       "dji-avata-2"
     ],
     "notes": "Ultra-light/palm-sized entry drone, more casual buyer than Avata. Lead with simplicity/ease-of-use framing — V30/A2 is plenty, no thermal-margin upsell needed like the enclosed cinewhoop bodies.",
-    "imageUrl": "/img/devices/drones/dji-neo.webp"
+    "imageUrl": "/img/devices/drones/dji-neo.webp",
+    "customTitle": "Hat die DJI Neo einen SD-Kartensteckplatz? Nein, 22GB intern",
+    "metaDescription": "Die DJI Neo hat keinen microSD-Steckplatz. Sie speichert auf 22GB internen Speicher, etwa 40 Minuten 4K/30. So überträgst du Aufnahmen und schaffst Platz."
   },
   {
     "id": "dji-mavic-4-pro",
@@ -1310,8 +1320,8 @@
       "beste sd karte mavic 4 pro"
     ],
     "sdCard": {
-      "type": "microSDXC (UHS-I / UHS-II)",
-      "minSpeed": "V30 (V60 empfohlen für ProRes)",
+      "type": "microSDXC UHS-I",
+      "minSpeed": "V30 / U3",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "256GB",
@@ -1319,7 +1329,7 @@
       ],
       "maxCapacity": "1TB (exFAT)"
     },
-    "whySpecs": "Professionelle Luftaufnahmen mit der Mavic 4 Pro erzeugen sehr große D-Log-M- oder ProRes-Dateien. Für die normale H.265-Aufnahme genügt eine V30-Karte, professionelle Codecs verlangen jedoch deutlich höhere Dauerschreibraten, damit die Aufnahmen nicht beschädigt werden. Da Sie die Karte im Flug nicht wechseln können, zählen Zuverlässigkeit und Geschwindigkeit mehr als reine Kapazität. Eine V60-Karte sorgt dafür, dass der Puffer der Drohne sofort geleert wird, sodass Ihnen bei anspruchsvollen Aufträgen keine Aufnahme entgeht.",
+    "whySpecs": "DJI verlangt für die Mavic 4 Pro eine microSD-Karte mit U3 (V30), bis 1TB. Der Steckplatz ist UHS-I und damit zu langsam für ProRes, deshalb nimmt die Creator Combo mit 512GB ProRes auf ihre interne SSD auf. Auf die Karte nimmst du H.264 und H.265 auf, auch 10-Bit D-Log M, und V30 deckt all das ab.",
     "recommendedBrands": [
       {
         "id": "lexar-professional-silver-microsd",
@@ -1333,7 +1343,11 @@
     "faq": [
       {
         "q": "Brauche ich für die DJI Mavic 4 Pro eine V60-Karte?",
-        "a": "<b>Für normale Aufnahmen in 4K/60fps reicht eine V30-Karte aus.</b> Wenn Sie jedoch fortgeschrittene Codecs wie Apple ProRes nutzen, ist eine V60-Karte erforderlich, um den enormen Datendurchsatz zu bewältigen."
+        "a": "<b>Nein.</b> Die Karte nimmt nur H.264 und H.265 auf, das deckt V30 ab. ProRes geht auf die interne SSD der Creator Combo mit 512GB."
+      },
+      {
+        "q": "Kann die Mavic 4 Pro ProRes auf eine microSD-Karte aufnehmen?",
+        "a": "<b>Nein.</b> Der UHS-I-Steckplatz ist zu langsam für ProRes. Nur die Creator Combo mit 512GB nimmt ProRes auf, und zwar auf ihre interne SSD."
       }
     ],
     "relatedDevices": [
