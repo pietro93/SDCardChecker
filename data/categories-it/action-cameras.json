@@ -59,7 +59,6 @@
       "gopro-hero-12",
       "gopro-hero-max",
       "gopro-hero-11-black",
-      "gopro-hero-14-black",
       "dji-mini-4-pro"
     ],
     "notes": "Card requirements match Hero 12. Official GoPro guidance: A2/V30, up to 1TB."
@@ -659,59 +658,6 @@
     "imageUrl": "/img/devices/action-cameras/gopro-max-2.webp"
   },
   {
-    "id": "insta360-one-x3",
-    "name": "Insta360 ONE X3",
-    "category": "action-cameras",
-    "slug": "insta360-one-x3",
-    "searchTerms": [
-      "insta360 one x3 scheda sd",
-      "one x3 microsd",
-      "insta360 x3 scheda di memoria"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-I",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "recommendedCapacity": [
-        "128GB",
-        "256GB",
-        "512GB"
-      ],
-      "maxCapacity": "1TB"
-    },
-    "whySpecs": "Insta360 specifica schede microSD UHS-I con classe di velocità V30 o superiore e formattazione exFAT per le fotocamere 360 della serie X, inclusa la X3. La fotocamera registra video 5.7K 360°, creando un flusso continuo di dati ad alto bitrate da entrambi gli obiettivi. Le schede di classe V30 garantiscono velocità di scrittura sostenute di 30 MB/s, impedendo che la registrazione si fermi o che i clip si corrompano. Le linee guida ufficiali limitano anche le capacità supportate a 1TB, ampiamente sufficiente per lunghe giornate di ripresa, anche nelle modalità di qualità più elevata.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-microsd"
-      },
-      {
-        "id": "lexar-professional-1000x-microsd"
-      },
-      {
-        "id": "kingston-canvas-go-plus"
-      }
-    ],
-    "faq": [
-      {
-        "q": "L'Insta360 ONE X3 supporta schede microSD da 1TB?",
-        "a": "<b>Sì.</b> Insta360 indica 1TB come capacità massima supportata per le fotocamere della serie X, e le sue schede A2/V30 a marchio proprio sono vendute in formati fino a 1TB specificamente per modelli come la ONE X3."
-      },
-      {
-        "q": "Posso usare schede microSD UHS-II nella ONE X3?",
-        "a": "<b>Non sono consigliate.</b> La fotocamera è progettata per schede UHS-I V30, e Insta360 avverte esplicitamente che le schede microSD UHS-II e UHS-III potrebbero essere incompatibili o causare errori di registrazione. Anche quando funzionano, torneranno alle velocità UHS-I, quindi non c'è alcun guadagno di prestazioni."
-      },
-      {
-        "q": "Una scheda generica V10 o U1 funzionerà nella ONE X3?",
-        "a": "<b>Potrebbe funzionare per le modalità a bassa risoluzione, ma non è sicura per la registrazione 360° in 5.7K.</b> Le schede V10/U1 non garantiscono le velocità di scrittura richieste per la cattura 360 ad alta risoluzione e possono causare fotogrammi persi o registrazioni interrotte. Per un uso affidabile, scegli sempre una scheda V30 di marca."
-      }
-    ],
-    "relatedDevices": [
-      "gopro-hero-max"
-    ],
-    "notes": "360° action camera commonly branded simply as 'Insta360 X3' in marketing material. Official Insta360 documentation specifies UHS-I V30 microSD cards up to 1TB for this model.",
-    "imageUrl": "/img/devices/action-cameras/insta360-one-x3.webp"
-  },
-  {
     "id": "insta360-x5",
     "name": "Insta360 X5",
     "category": "action-cameras",
@@ -751,7 +697,7 @@
     ],
     "relatedDevices": [
       "insta360-ace-pro-2",
-      "gopro-hero-14-black"
+      "gopro-hero-13"
     ],
     "notes": "Latest flagship Insta360 360-degree camera. 8K dual-lens recording pushes sustained write speeds to the limit — 'Card Too Slow' errors are the #1 support issue, always trace back to a card that only claims V30 speeds without actually sustaining them.",
     "imageUrl": "/img/devices/action-cameras/insta360-x5.webp"
@@ -797,7 +743,7 @@
       }
     ],
     "relatedDevices": [
-      "gopro-hero-14-black",
+      "gopro-hero-13",
       "insta360-ace-pro-2",
       "dji-osmo-pocket-4",
       "dji-osmo-action-4"
@@ -853,50 +799,6 @@
     "notes": "Successor to the Osmo Pocket 3 with higher-resolution 4K recording. DJI official minimum: U3/V30 UHS-I, max 1TB. 'Card Too Slow' is the primary bottleneck to flag for undersped cards."
   },
   {
-    "id": "dji-lito-x1",
-    "name": "DJI Lito X1",
-    "category": "action-cameras",
-    "slug": "dji-lito-x1",
-    "metaDescription": "Le migliori schede microSD per DJI Lito X1 — proposte V30 per la action camera compatta e indossabile di DJI.",
-    "searchTerms": [
-      "scheda sd dji lito x1",
-      "microsd dji lito x1",
-      "requisiti scheda di memoria dji lito x1",
-      "dji lito x1 scheda troppo lenta"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-I",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "recommendedCapacity": [
-        "128GB",
-        "256GB"
-      ],
-      "maxCapacity": "1TB"
-    },
-    "whySpecs": "Il Lito X1 è la proposta compatta e particolarmente indossabile di DJI nella gamma action camera, pensata per la ripresa POV continua più che per configurazioni fisse. Nonostante le dimensioni ridotte registra con un bitrate abbastanza alto da far scattare il classico errore DJI <b>«Scheda troppo lenta»</b> con qualsiasi scheda priva di velocità di scrittura sostenuta V30 verificata, interrompendo la registrazione. Poiché la fotocamera è pensata per l'uso immediato, una scheda di marca affidabile conta quanto la capacità pura: la registrazione interrotta a metà clip è il problema più segnalato con schede troppo lente.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-microsd"
-      },
-      {
-        "id": "lexar-professional-1000x-microsd"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Perché il mio DJI Lito X1 smette di registrare a metà clip?",
-        "a": "<b>Quasi sempre la causa è una scheda che non regge i 30 MB/s in scrittura.</b> Il Lito X1 applica la stessa protezione «Scheda troppo lenta» delle altre action camera DJI: usa una scheda microSD V30 verificata di marca affidabile per evitare registrazioni interrotte."
-      }
-    ],
-    "relatedDevices": [
-      "dji-osmo-action-6",
-      "insta360-go-3",
-      "gopro-hero-14-black"
-    ],
-    "notes": "Compact wearable action camera in DJI's lineup, positioned against the Insta360 GO series. V30 minimum firmly enforced via on-insertion speed check; 'Card Too Slow' is the primary bottleneck to address."
-  },
-  {
     "id": "insta360-ace-pro-2",
     "name": "Insta360 Ace Pro 2",
     "category": "action-cameras",
@@ -938,59 +840,11 @@
     ],
     "relatedDevices": [
       "insta360-x5",
-      "gopro-hero-14-black",
+      "gopro-hero-13",
       "dji-osmo-action-6"
     ],
     "notes": "Successor to the Insta360 Ace Pro with a larger sensor and higher-bitrate 4K. Competes directly with GoPro Hero 14 Black and DJI Osmo Action 6.",
     "imageUrl": "/img/devices/action-cameras/insta360-ace-pro-2.webp"
-  },
-  {
-    "id": "gopro-hero-14-black",
-    "name": "GoPro Hero 14 Black",
-    "category": "action-cameras",
-    "slug": "gopro-hero-14-black",
-    "metaDescription": "Le migliori schede microSD per GoPro Hero 14 Black — proposte V30 per registrazioni stabili in 5,3K e oltre.",
-    "searchTerms": [
-      "scheda sd gopro hero 14 black",
-      "microsd hero 14",
-      "requisiti scheda di memoria gopro hero 14",
-      "gopro hero 14 scheda troppo lenta"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-I (compatibile UHS-II)",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "recommendedCapacity": [
-        "128GB",
-        "256GB",
-        "512GB"
-      ],
-      "maxCapacity": "512GB"
-    },
-    "whySpecs": "La Hero 14 Black prosegue la linea GoPro di registrazione in 5,3K ad alto frame rate, con prestazioni affinate in scarsa luce e un bitrate altrettanto impegnativo. Il firmware GoPro esegue un test di velocità all'inserimento della scheda: se non regge i 30 MB/s richiesti in scrittura, compare l'errore <b>«Scheda troppo lenta»</b> e la registrazione viene bloccata. La classe V30 è il minimo sicuro; le schede V60 e superiori non offrono alcun vantaggio nella fotocamera, ma velocizzano il trasferimento dei file nei flussi di lavoro multi-camera.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-microsd"
-      },
-      {
-        "id": "lexar-professional-1000x-microsd"
-      },
-      {
-        "id": "kingston-canvas-go-plus"
-      }
-    ],
-    "faq": [
-      {
-        "q": "Perché la mia GoPro Hero 14 Black mostra «Scheda troppo lenta»?",
-        "a": "<b>Il firmware GoPro misura la velocità della scheda all'inserimento.</b> Se non regge i 30 MB/s in scrittura richiesti dalla registrazione in 5,3K e oltre, la fotocamera blocca la registrazione anziché rischiare riprese corrotte. Usa una scheda V30 verificata e riformattala nella fotocamera se l'errore persiste."
-      }
-    ],
-    "relatedDevices": [
-      "gopro-hero-13",
-      "insta360-ace-pro-2",
-      "dji-osmo-action-6"
-    ],
-    "notes": "Latest flagship GoPro Hero model. Official GoPro tests continue to specify V30 as the required minimum; 'Card Too Slow' remains the #1 support issue traced to underrated or counterfeit cards."
   },
   {
     "id": "wyze-cam-v3",

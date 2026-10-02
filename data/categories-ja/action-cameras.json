@@ -607,57 +607,5 @@
       "gopro-hero-13"
     ],
     "notes": "GoPro Max 2の動作確認済みSDカード。次世代GoPro 360度カメラで8K撮影に対応しています。GoPro公式ガイダンスではMax 2をHero 13および他の最新モデルとA2/V30および1TBサポートにグループ化しており、メーカー仕様準拠の信頼できるカードをおすすめします。"
-  },
-  {
-    "id": "insta360-one-x3",
-    "name": "Insta360 ONE X3",
-    "category": "action-cameras",
-    "slug": "insta360-one-x3",
-    "searchTerms": [
-      "insta360 one x3 sd card",
-      "one x3 microsd",
-      "insta360 x3 memory card"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-I",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "recommendedCapacity": [
-        "128GB",
-        "256GB",
-        "512GB"
-      ],
-      "maxCapacity": "1TB"
-    },
-    "whySpecs": "Insta360 ONE X3はUHS-I microSDカードV30以上のスピードクラスとexFAT形式をX-series 360度カメラに指定しており、メーカー仕様準拠のカード選びが必須です。カメラは5.7K 360度ビデオを記録し、両方のレンズから高ビットレートのデータストリームを生成します。V30クラスカードは30 MB/sの持続書き込み速度を保証し、動作確認済みの記録の停止やクリップの破損を防ぎます。公式ガイダンスでもサポート容量を1TBにキャップしており、最高品質モードでもかなりの撮影日数に対応します。",
-    "recommendedBrands": [
-       {
-         "id": "sandisk-extreme-microsd"
-       },
-       {
-         "id": "lexar-professional-1000x-microsd"
-       },
-       {
-         "id": "kingston-canvas-go-plus"
-       }
-     ],
-     "faq": [
-       {
-         "q": "「Insta360 ONE X3は1TB microSDカードに対応していますか？」",
-         "a": "はい対応しています。Insta360ではX-seriesカメラの最大サポート容量として1TBをリストしており、独自ブランドのA2/V30カードは特にONE X3などのモデル用に1TB容量で販売されています。"
-       },
-       {
-         "q": "「ONE X3でUHS-II microSDカードを使用できますか？」",
-         "a": "推奨されません。カメラはUHS-I V30カード向けに設計されており、Insta360はUHS-IIおよびUHS-III microSDカードが非互換性になる、または記録失敗を引き起こす可能性があることを明確に警告しています。動作する場合でもUHS-I速度にフォールバックするため、パフォーマンス向上はありません。"
-       },
-       {
-         "q": "「汎用V10またはU1カードはONE X3で動作しますか？」",
-         "a": "低解像度モードでは動作する可能性がありますが、5.7K 360度記録には安全ではありません。V10/U1カードは高解像度360度撮影に必要な書き込み速度を保証できず、フレームドロップや記録中止につながる可能性があります。信頼できる使用のため、常に信頼できるV30ブランドカードを選択することをおすすめします。"
-       }
-     ],
-     "relatedDevices": [
-       "gopro-hero-max"
-     ],
-     "notes": "Insta360 ONE X3の動作確認済みSDカード。マーケティング素材では単に『Insta360 X3』と表記されることもある360度アクションカメラです。公式Insta360ドキュメントではこのモデル用にUHS-I V30 microSDカード最大1TBを指定しており、メーカー仕様準拠の信頼できるカードをおすすめします。"
   }
 ]

@@ -1,0 +1,77 @@
+[
+  {
+    "from": "/categories/action-cameras/gopro-hero-14-black/",
+    "to": "/categories/action-cameras/gopro-hero-13/",
+    "reason": "Removed as fabricated, commit 1193275"
+  },
+  {
+    "from": "/categories/action-cameras/insta360-one-x3/",
+    "to": "/categories/action-cameras/insta360-x3/",
+    "reason": "Duplicate merged, commit 1193275"
+  },
+  {
+    "from": "/categories/action-cameras/dji-lito-x1/",
+    "to": "/categories/drones/dji-lito-x1/",
+    "reason": "Recategorized, commit 1193275"
+  },
+  {
+    "from": "/devices/gopro-hero-14-black/",
+    "to": "/categories/action-cameras/gopro-hero-13/",
+    "reason": "Legacy URL of removed page"
+  },
+  {
+    "from": "/devices/insta360-one-x3/",
+    "to": "/categories/action-cameras/insta360-x3/",
+    "reason": "Legacy URL of removed page"
+  },
+  {
+    "from": "/de/categories/action-cameras/gopro-hero-14-black/",
+    "to": "/de/categories/action-cameras/gopro-hero-13/",
+    "reason": "Removed as fabricated, commit 1193275 (DE locale)"
+  },
+  {
+    "from": "/de/categories/action-cameras/insta360-one-x3/",
+    "to": "/de/categories/action-cameras/insta360-x3/",
+    "reason": "Duplicate merged, commit 1193275 (DE locale)"
+  },
+  {
+    "from": "/de/categories/action-cameras/dji-lito-x1/",
+    "to": "/de/categories/drones/dji-lito-x1/",
+    "reason": "Recategorized, commit 1193275 (DE locale)"
+  },
+  {
+    "from": "/fr/categories/action-cameras/gopro-hero-14-black/",
+    "to": "/fr/categories/action-cameras/gopro-hero-13/",
+    "reason": "Removed as fabricated, commit 1193275 (FR locale)"
+  },
+  {
+    "from": "/fr/categories/action-cameras/insta360-one-x3/",
+    "to": "/fr/categories/action-cameras/insta360-x3/",
+    "reason": "Duplicate merged, commit 1193275 (FR locale)"
+  },
+  {
+    "from": "/fr/categories/action-cameras/dji-lito-x1/",
+    "to": "/fr/categories/drones/dji-lito-x1/",
+    "reason": "Recategorized, commit 1193275 (FR locale)"
+  },
+  {
+    "from": "/it/categories/action-cameras/gopro-hero-14-black/",
+    "to": "/it/categories/action-cameras/gopro-hero-13/",
+    "reason": "Removed as fabricated, commit 1193275 (IT locale)"
+  },
+  {
+    "from": "/it/categories/action-cameras/insta360-one-x3/",
+    "to": "/it/categories/action-cameras/insta360-x3/",
+    "reason": "Duplicate merged, commit 1193275 (IT locale)"
+  },
+  {
+    "from": "/it/categories/action-cameras/dji-lito-x1/",
+    "to": "/it/categories/drones/dji-lito-x1/",
+    "reason": "Recategorized, commit 1193275 (IT locale)"
+  },
+  {
+    "from": "/ja/categories/action-cameras/insta360-one-x3/",
+    "to": "/ja/categories/action-cameras/insta360-x3/",
+    "reason": "Duplicate of insta360-x3, removed from JA data (EN removed in commit 1193275)"
+  }
+]

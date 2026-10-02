@@ -7,9 +7,29 @@ const path = require("path");
 const fs = require("fs");
 
 /**
+ * Hand-maintained redirects for removed, merged or recategorized pages.
+ * Each row: { from, to, reason }. Paths use trailing slashes.
+ */
+function loadExtraRedirects() {
+    const file = path.join(__dirname, "..", "..", "data", "redirects-extra.json");
+    if (!fs.existsSync(file)) return [];
+    return JSON.parse(fs.readFileSync(file, "utf8"));
+}
+
+/**
+ * A redirect to a 404 is worse than none: fail the build if a target page is missing.
+ */
+function assertExtraTargetsExist(extraRedirects, distPath) {
+    const missing = extraRedirects.filter((r) => !fs.existsSync(path.join(distPath, r.to, "index.html")));
+    if (missing.length > 0) {
+        throw new Error(`Redirect targets missing from dist/: ${missing.map((r) => r.to).join(", ")}`);
+    }
+}
+
+/**
  * Generate _redirects file (for Netlify)
  */
-function generateNetlifyRedirects(allDevices, distPath) {
+function generateNetlifyRedirects(allDevices, extraRedirects, distPath) {
     let redirectsContent = `# Netlify Redirects - Generated for URL migration
 # Redirects old /devices/ URLs to new /categories/ URLs (301 permanent)
 # This preserves SEO rankings during URL restructuring
@@ -20,6 +40,11 @@ function generateNetlifyRedirects(allDevices, distPath) {
     allDevices.forEach((device) => {
         const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
         redirectsContent += `/devices/${device.slug}/    /categories/${categorySlug}/${device.slug}/    301\n`;
+    });
+
+    redirectsContent += `\n# Removed, merged or recategorized pages (data/redirects-extra.json)\n`;
+    extraRedirects.forEach((r) => {
+        redirectsContent += `${r.from}    ${r.to}    301\n`;
     });
 
     // Generic fallback (this won't work for all cases, but helps catch any missed ones)
@@ -33,7 +58,7 @@ function generateNetlifyRedirects(allDevices, distPath) {
  * Generate vercel.json redirect rules (for Vercel)
  * Note: Vercel doesn't support dynamic path params in redirects, so we generate a rules file
  */
-function generateVercelConfig(allDevices, distPath) {
+function generateVercelConfig(allDevices, extraRedirects, distPath) {
     const redirects = allDevices.map((device) => {
         const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
         return {
@@ -51,6 +76,11 @@ function generateVercelConfig(allDevices, distPath) {
             destination: `/categories/${categorySlug}/${device.slug}/`,
             permanent: true
         });
+    });
+
+    extraRedirects.forEach((r) => {
+        redirects.push({ source: r.from.replace(/\/$/, ""), destination: r.to, permanent: true });
+        redirects.push({ source: r.from, destination: r.to, permanent: true });
     });
 
     const vercelConfig = {
@@ -77,7 +107,7 @@ function generateVercelConfig(allDevices, distPath) {
 /**
  * Generate .htaccess file (for Apache servers)
  */
-function generateHtaccess(allDevices, distPath) {
+function generateHtaccess(allDevices, extraRedirects, distPath) {
     let htaccessContent = `# .htaccess - Apache Redirect Rules
 # Redirects old /devices/ URLs to new /categories/ URLs
 # This preserves SEO rankings during URL restructuring
@@ -93,6 +123,11 @@ function generateHtaccess(allDevices, distPath) {
         const categorySlug = device.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
         htaccessContent += `  # Redirect ${device.name}\n`;
         htaccessContent += `  RewriteRule ^devices/${device.slug}/?$ /categories/${categorySlug}/${device.slug}/ [R=301,L]\n`;
+    });
+
+    htaccessContent += `\n  # Removed, merged or recategorized pages (data/redirects-extra.json)\n`;
+    extraRedirects.forEach((r) => {
+        htaccessContent += `  RewriteRule ^${r.from.replace(/^\//, "").replace(/\/$/, "")}/?$ ${r.to} [R=301,L]\n`;
     });
 
     htaccessContent += `
@@ -117,9 +152,12 @@ function generateHtaccess(allDevices, distPath) {
  */
 function generateRedirects(allDevices, distPath) {
     console.log("Generating URL redirects for SEO migration...");
-    generateNetlifyRedirects(allDevices, distPath);
-    generateVercelConfig(allDevices, distPath);
-    generateHtaccess(allDevices, distPath);
+    const extraRedirects = loadExtraRedirects();
+    assertExtraTargetsExist(extraRedirects, distPath);
+    generateNetlifyRedirects(allDevices, extraRedirects, distPath);
+    generateVercelConfig(allDevices, extraRedirects, distPath);
+    generateHtaccess(allDevices, extraRedirects, distPath);
+    console.log(`  ✓ Added ${extraRedirects.length} redirects from data/redirects-extra.json`);
     console.log(`  ✓ All redirect configurations generated successfully`);
 }
 

@@ -228,8 +228,7 @@
     "relatedDevices": [
       "dji-mini-4-pro",
       "dji-air-3s",
-      "dji-mavic-3",
-      "dji-air-3"
+      "dji-mavic-3"
     ],
     "notes": "A popular prosumer drone with dual cameras, requiring reliable V30 cards for its high-quality video modes."
   },
@@ -1343,5 +1342,49 @@
     ],
     "notes": "DJI's flagship professional drone. ProRes/D-Log M recording demands V60 headroom over the standard H.265 V30 minimum. Mid-flight card swaps aren't possible, so reliability outranks raw capacity for this device.",
     "imageUrl": "/img/devices/drones/dji-mavic-4-pro.webp"
+  },
+  {
+    "id": "dji-lito-x1",
+    "name": "DJI Lito X1",
+    "category": "drones",
+    "slug": "dji-lito-x1",
+    "metaDescription": "Die besten microSD-Karten für die DJI Lito X1 — V30-Empfehlungen für DJIs kompakte, tragbare Action-Kamera.",
+    "searchTerms": [
+      "dji lito x1 sd karte",
+      "dji lito x1 microsd",
+      "dji lito x1 speicherkarte anforderungen",
+      "dji lito x1 karte zu langsam"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Die Lito X1 ist DJIs kompakter, besonders körpernah tragbarer Beitrag zur Action-Kamera-Reihe, ausgelegt auf durchgehende POV-Aufnahmen statt auf montierte Setups. Trotz der kleinen Bauform filmt sie mit einer so hohen Bitrate, dass eine Karte ohne geprüfte V30-Dauerschreibrate DJIs bekannten Fehler <b>„Karte zu langsam“</b> auslöst und die Aufnahme stoppt. Da die Kamera für spontanen Einsatz gedacht ist, zählt eine zuverlässige Markenkarte ebenso viel wie reine Kapazität — abgebrochene Aufnahmen mitten im Clip sind die häufigste Beschwerde bei zu langsamen Karten.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-1000x-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Warum stoppt meine DJI Lito X1 die Aufnahme mitten im Clip?",
+        "a": "<b>Fast immer liegt es an einer Karte, die 30 MB/s Schreibrate nicht dauerhaft hält.</b> Die Lito X1 nutzt denselben Schutzmechanismus „Karte zu langsam“ wie andere DJI-Action-Kameras — verwenden Sie eine geprüfte V30-microSD-Karte einer renommierten Marke, um Aufnahmeabbrüche zu vermeiden."
+      }
+    ],
+    "relatedDevices": [
+      "dji-osmo-action-6",
+      "insta360-go-3",
+      "gopro-hero-13"
+    ],
+    "notes": "Compact wearable action camera in DJI's lineup, positioned against the Insta360 GO series. V30 minimum firmly enforced via on-insertion speed check; 'Card Too Slow' is the primary bottleneck to address."
   }
 ]
