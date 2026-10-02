@@ -60,6 +60,14 @@ const RULES = [
   { id: 'fake-range', re: /\bfrom (beginners|casual \w+|hobbyists|amateurs) to (pros|professionals|experts)\b/i },
   { id: 'reassurance', re: /\b(don't worry|no worries|rest assured|worry-free|no pressure)\b/i },
   { id: 'hype', re: w(['perfect', 'ideal', 'ultimate', 'must-have', 'amazing', 'incredible', 'stunning', 'blazing', 'lightning-fast', 'best-in-class', 'unparalleled', 'unmatched']) },
+  // First-party testing claims: the site compiles specs, it doesn't run tests. Catches the
+  // shapes those claims take ("tested with", "cards tested", "(tested)", "we review", "our
+  // testing", "reviewed", "Review" as a title word) but not manufacturer statements such as
+  // "Polyend tested cards up to 128GB". strip removes third-party uses: Reviewed.com,
+  // "Sony-tested", "has not reviewed" (legal pages) and "the cards tested" in a cited benchmark.
+  { id: 'testing-claim',
+    re: /\bwe(?:'ve)? (?:test|tested|review|reviewed)\b|\b(?:our|in-depth|full|hands-on|product|research and) (?:review|reviews|testing|tests)\b|\breviewed\b|\bReview\s*(?:&|\||:|-|$)|\btested (?:for|with|on)\b|\b(?:readers|cards|options|picks|speeds) tested\b|\(tested\)/i,
+    strip: /Reviewed\.com|\b\w+-tested\b|\bnot reviewed\b|\bthe (?:cards|readers) tested\b/g },
   // "Canvas Go! Plus" is a product name.
   { id: 'exclamation', re: /(?<!\bGo)(?<=[a-z])!(\s|$|<)/i },
   { id: 'uk-spelling', re: /\b(\w+(ise|ised|ising|isation)|colour\w*|favour\w*|behaviour\w*|flavour\w*|honour\w*|centre|metre|litre|grey|licence|catalogue)\b/i,
@@ -110,7 +118,7 @@ function htmlStrings(file) {
 function check(text) {
   const hits = [];
   for (const r of RULES) {
-    if (!r.re.test(text)) continue;
+    if (!r.re.test(r.strip ? text.replace(r.strip, '') : text)) continue;
     if (r.allow) {
       const m = text.match(new RegExp(r.re.source, 'gi')) || [];
       if (m.every((x) => r.allow.test(x))) continue;
