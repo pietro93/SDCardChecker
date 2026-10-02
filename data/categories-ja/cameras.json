@@ -12,7 +12,7 @@
     ],
     "sdCard": {
       "type": "CFexpress Type B および SD UHS-II",
-      "minSpeed": "V60",
+      "minSpeed": "V90（8K RAWにはCFexpressが必要）",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -20,7 +20,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "Canon EOS R5はプロ仕様の8Kカメラであり、メーカー公式仕様に準拠したSDカード選びが必須です。8K RAWビデオにはメーカー仕様準拠の最低V60が必要であり、高ビットレート（1.6 Gbps）のため、安全性とデータ保護のために高速なデュアルカードスロットが推奨されています。本ページの推奨ブランドはすべてCanon EOS R5との動作確認済みです。",
+    "whySpecs": "プロ向けの8Kカメラです。8K RAW（Cinema RAW Light）はCFexpress Type Bカードにしか記録できず、SDスロットでは扱えません。SD UHS-IIスロットで通常の8Kを撮るにはV90カードが必要で、4KならV60で足ります。高ビットレートの動画には、速いカードと安全のためのデュアルスロットが欠かせません。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-cfexpress"
@@ -31,16 +31,16 @@
     ],
     "faq": [
       {
-        "q": "R5には2枚のカードが必要ですか？",
-        "a": "<b>はい、Canon EOS R5はデュアルカードスロットを備えており、キヤノンは安全のために2枚のV60カードの使用を推奨しています。</b> <b>8Kビデオ撮影時、デュアルカードはバックアップ記録と信頼性の向上を提供し</b>、重要なセッション中の単一カード障害から保護します。"
+        "q": "Canon R5にカードは2枚必要ですか？",
+        "a": "<b>必須ではありませんが、2枚のほうが安全です。</b>R5にはCFexpress Type BスロットとSD UHS-IIスロットがあります。両方に記録すればバックアップになりますが、8K RAWを扱えるのはCFexpressカードだけです。"
       },
       {
-        "q": "V30カードで4K撮影はできますか？",
-        "a": "<b>はい、4Kビデオ録画はV30スピードクラスのカードで問題なく動作します。</b> しかし、<b>8K録画には、はるかに高いビットレートとデータスループットの要求のため、最低でもV60スピードクラスが必要です。</b>"
+        "q": "R5でV30カードを使って4K撮影はできますか？",
+        "a": "<b>標準の4K IPBならできます。</b>SDでの8KにはV90、8K RAWにはCFexpress Type Bが必要です。"
       },
       {
-        "q": "CFexpressとSDの違いは何ですか？",
-        "a": "<b>CFexpress Type BカードはSD UHS-IIよりも大幅に高速で</b>、<b>8K RAWビデオ録画に最適です。</b> <b>SD UHS-II V60カードはより手頃で4K録画には十分なため、</b>写真とビデオのハイブリッドワークには適した選択肢です。"
+        "q": "R5でのCFexpressとSDの違いは？",
+        "a": "<b>速度です。</b>CFexpress Type Bは1,000MB/s以上で書き込み、8K RAWに対応します。V60やV90のSD UHS-IIカードは安価で、4Kには十分です。"
       }
     ],
     "relatedDevices": [
@@ -60,7 +60,7 @@
     ],
     "sdCard": {
       "type": "SD UHS-II",
-      "minSpeed": "V30",
+      "minSpeed": "V30（XAVC S-IにはV90）",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -198,8 +198,8 @@
       "fujifilm x100vi メモリカード"
     ],
     "sdCard": {
-      "type": "SD UHS-II",
-      "minSpeed": "V60",
+      "type": "SD UHS-I",
+      "minSpeed": "V30",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -207,7 +207,7 @@
       ],
       "maxCapacity": "公式制限なし"
     },
-    "whySpecs": "40MPセンサーと6.2Kビデオ機能を備えたプレミアムコンパクトカメラです。6.2K 30fpsビデオ録画と高速連続RAW撮影にはV60が不可欠です。UHS-IIスロットにより、新しい20fps連写モードでのバッファクリアが高速化されます。",
+    "whySpecs": "X100VIは40MPセンサーを搭載し、6.2K/30を最大200Mbps（約25MB/s）で記録します。スロットは1つでUHS-Iなので、動画にはV30カードで足り、UHS-IIカードを使ってもカメラ内では速くなりません。書き込みが90MB/s近いカードなら、20コマ/秒の連写後のバッファ解放が最も速くなります。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -221,12 +221,12 @@
     ],
     "faq": [
       {
-        "q": "古いX100Vのカードは使えますか？",
-        "a": "<b>X100Vで使用していたV30カードも動作しますが、X100VIの6.2Kビデオや高速連写にはV60が推奨されます。</b> 特にビデオにおいて最適なパフォーマンスを得るには、V60 UHS-IIカードへのアップグレードをお勧めします。"
+        "q": "X100Vで使っていたカードをX100VIでも使えますか？",
+        "a": "<b>V30なら使えます。</b>どちらもUHS-Iスロットで、V30はX100VIの最大ビットレート200Mbpsに対応しています。"
       },
       {
-        "q": "X100VIにV90は必要ですか？",
-        "a": "<b>すべての録画モードにおいてV60で十分です。</b> X100VIの最大ビットレートはV60の要件を超えないため、V90カードによる実用的なメリットはありません。V60カードのままでもカメラ内パフォーマンスを損なうことなく節約できます。"
+        "q": "X100VIにV60やV90のカードは必要ですか？",
+        "a": "<b>必要ありません。</b>最大ビットレートは200Mbps（25MB/s）でV30の範囲内です。UHS-IスロットではUHS-IIの速度も活かせません。"
       }
     ],
     "relatedDevices": [
@@ -248,8 +248,8 @@
       "nikon zf ストレージ"
     ],
     "sdCard": {
-      "type": "デュアル SD UHS-II",
-      "minSpeed": "V60 (高フレームレート動画にはV90)",
+      "type": "SD UHS-II + microSD UHS-I",
+      "minSpeed": "V30",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -257,7 +257,7 @@
       ],
       "maxCapacity": "公式制限なし"
     },
-    "whySpecs": "24MPセンサーと高度なビデオ機能を備えたレトロスタイルのフルサイズミラーレスカメラです。標準的な4K録画と写真にはV60カードで対応できますが、4K 120fpsのスローモーションや最高ビットレートのN-RAWビデオモードにはV90が推奨されます。デュアルUHS-IIスロットにより、プロ仕様のバックアップワークフローが可能です。",
+    "whySpecs": "Zfは6Kからオーバーサンプリングした4K/30、DXクロップでの4K/60、1080p/120を記録します。スロット1はSD UHS-II、スロット2はmicroSD UHS-Iです。動画にはV30カードで足り、スロット1に速いUHS-IIカードを入れるとバッファ解放が最も速くなります。両方のスロットに同時記録する場合は、遅いmicroSDカードの速度に合わせて動作します。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -271,12 +271,12 @@
     ],
     "faq": [
       {
-        "q": "なぜNikon Z fは人気があるのですか？",
-        "a": "<b>Nikon Z fは、フィルムカメラにインスパイアされたクラシックなレトロデザインと、最先端のフルサイズミラーレス性能を見事に融合させているため、絶大な人気を得ています。</b> スタイリッシュなパッケージの中に、優れた画質、高度なオートフォーカス、強力なビデオ機能を備えています。"
+        "q": "Nikon Zfのカードスロットは？",
+        "a": "<b>SD UHS-IIスロットとmicroSD UHS-Iスロットが1つずつです。</b>メインの記録にはSDスロット、バックアップにはmicroSDを使いましょう。"
       },
       {
-        "q": "Z fにはV90カードが必要ですか？ V60で十分ですか？",
-        "a": "<b>Nikon Z fでのほとんどの写真撮影と標準的な4Kビデオ録画には、通常V60カードで十分です。</b> ただし、4K 120fpsスローモーションや最高ビットレートのN-RAWビデオを撮影する予定がある場合はV90が必要です。多くのユーザーはV60から始め、特定のビデオワークフローが必要な場合にのみV90を検討すれば良いでしょう。"
+        "q": "Nikon ZfにV90カードは必要ですか？",
+        "a": "<b>必要ありません。</b>ZfはDXクロップの4K/60が上限で、RAW動画の内部記録もありません。V30で十分で、V60なら余裕が生まれます。"
       }
     ],
     "relatedDevices": [
@@ -298,7 +298,7 @@
     ],
     "sdCard": {
       "type": "SD UHS-II",
-      "minSpeed": "V30",
+      "minSpeed": "V30（360MbpsにはV90）",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -342,7 +342,7 @@
     ],
     "sdCard": {
       "type": "CFexpress Type B and XQD",
-      "minSpeed": "V90",
+      "minSpeed": "VPG 400 (CFexpress)",
       "minWriteSpeed": "90 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -560,7 +560,7 @@
       "canon r50 storage"
     ],
     "sdCard": {
-      "type": "SD UHS-II (UHS-I compatible)",
+      "type": "SD UHS-I",
       "minSpeed": "V30",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
@@ -570,7 +570,7 @@
       ],
       "maxCapacity": "No official limit"
     },
-    "whySpecs": "Canonのエントリーレベルフルフレームミラーレスカメラで、4Kビデオ記録とA1 + V30対応のデュアルSD UHS-IIスロットを備えています。初心者でも扱いやすく、信頼性の高いカード選びが重要です。V30カードで初心者のニーズには十分です。",
+    "whySpecs": "キヤノンのエントリー向けAPS-Cミラーレスで、24MPセンサー、4K/30動画、SD UHS-Iスロット1基を備えています。V30のUHS-Iカードですべてのモードに対応できます。UHS-IIカードも使えますが、UHS-Iの速度で動作します。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -584,12 +584,12 @@
     ],
     "faq": [
       {
-        "q": "これは良い最初のカメラですか？",
-        "a": "<b>はい、EOS R50は初心者向けに特別に設計されています。</b> 非常に手頃で、Canonの現代的なミラーレスシステムへの簡単な入口を提供します。4Kビデオモードのため、V30定格SDカードを取得してください。"
+        "q": "Canon R50は初めてのカメラに向いていますか？",
+        "a": "<b>向いています。</b>小さく軽く、オートフォーカスも信頼できます。カードはV30のUHS-Iで十分です。"
       },
       {
-        "q": "R50で4K動画にはV30で十分ですか？",
-        "a": "<b>はい、EOS R50の4K動画記録にはV30が十分です。</b> プロフェッショナルな高フレームレート作業を計画していない限り、V30カードはすべての初心者のニーズに対応します。"
+        "q": "Canon R50にUHS-IIカードは必要ですか？",
+        "a": "<b>必要ありません。</b>スロットはUHS-Iなので、UHS-IIカードもUHS-Iの速度で動作します。"
       }
     ],
     "relatedDevices": [
@@ -1207,14 +1207,14 @@
       "xe5 storage"
     ],
     "sdCard": {
-      "type": "SD UHS-I",
+      "type": "SD UHS-II",
       "minSpeed": "V30",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
         "64GB",
         "128GB"
       ],
-      "maxCapacity": "No official limit"
+      "maxCapacity": "2TB"
     },
     "whySpecs": "26MPセンサーと6.2K動画対応のコンパクトで レンジファインダースタイルのカメラです。V30スピードクラスで十分ですが、V60カードはより高いフレームレート記録に安定性を提供します。コンパクトな形のファクタが特徴です。",
     "recommendedBrands": [
@@ -1962,7 +1962,7 @@
       "z6 2 storage"
     ],
     "sdCard": {
-      "type": "Dual SD UHS-II",
+      "type": "CFexpress Type B / XQD + SD UHS-II",
       "minSpeed": "V60",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
@@ -1972,7 +1972,7 @@
       "maxCapacity": "No official limit",
       "testedMaxCapacity": "512GB"
     },
-    "whySpecs": "Nikon Z6 IIはフルフレーム24.2MPミラーレスカメラで、デュアルSD UHS-IIスロットを搭載しています。4K 60fps動画対応で、V60スピードクラスカードが推奨されます。",
+    "whySpecs": "Z6 IIには種類の異なる2つのスロットがあります。スロット1はCFexpress Type BまたはXQD、スロット2はSD UHS-IIです。4K/60を最大144Mbpsで記録し、これはV30のSDカードでまかなえます。スロット1にCFexpressを入れると、14コマ/秒のRAW連写後のバッファ解放が最も速くなります。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -1983,12 +1983,8 @@
     ],
     "faq": [
       {
-        "q": "Z6 IIでの4K 60fps動画記録にはV60が必須ですか？",
-        "a": "<b>はい、安定した4K 60fps記録にはV60スピードクラスが推奨されます。</b> V30では不安定な可能性があります。"
-      },
-      {
-        "q": "Z6 IIの推奨カード容量は何ですか？",
-        "a": "<b>256GBが推奨です。</b> 4K 60fps動画は容量が大きく、256GBで十分です。"
+        "q": "Nikon Z6 IIはZ6 IIIと比べてもまだ買いですか？",
+        "a": "<b>予算重視なら買いです。</b>Z6 IIIは6K N-RAWと高速センサーを備えますが、Z6 IIもCFexpress Type BとSD UHS-IIという同じスロット構成です。"
       }
     ],
     "relatedDevices": [
@@ -2010,7 +2006,7 @@
       "nikon d850 media"
     ],
     "sdCard": {
-      "type": "XQD + SD UHS-II",
+      "type": "XQD / CFexpress Type B + SD UHS-II",
       "minSpeed": "V30 (SD), V60 recommended",
       "minWriteSpeed": "30 MB/s minimum, 60 MB/s recommended",
       "recommendedCapacity": [
@@ -2021,7 +2017,7 @@
       "maxCapacity": "No official limit",
       "testedMaxCapacity": "512GB"
     },
-    "whySpecs": "Nikon D850はプロ向けAPS-C DSLRカメラで、45.7MPセンサーと高速バースト撮影、デュアルSD UHS-IIスロットを搭載しています。4K動画にもV60スピードクラスカードが推奨されます。",
+    "whySpecs": "ニコンのプロ向けフルサイズ一眼レフの定番機で、45MPの高画素センサーと4K動画記録を備えています。通常の記録にはV30のSDカードで足りますが、安定した4K動画と9コマ/秒のRAW連写を続けるにはV60がおすすめです。メインのスロット1はXQDカードに対応し、要求の厳しいプロの現場で最高の性能を発揮します。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-sd-uhs2"
@@ -2035,16 +2031,16 @@
     ],
     "faq": [
       {
-        "q": "D850での高速バースト撮影にはV60が必須ですか？",
-        "a": "<b>はい、最高速8fps バースト撮影にはV60スピードクラスが推奨されます。</b> V30では十分なバッファクリア速度が得られない場合があります。"
+        "q": "Nikon D850は今でも使う価値がありますか？",
+        "a": "<b>あります。</b>45MPセンサーとバッテリー持ちは今も通用します。スポーツや野生動物の撮影には、速いXQDかCFexpressカードを組み合わせましょう。"
       },
       {
-        "q": "D850でのデュアルカード戦略が推奨されていますか？",
-        "a": "<b>プロフェッショナル撮影ではデュアルカードが強く推奨されます。</b> バックアップと冗長性により、重要な撮影を保護します。"
+        "q": "D850にXQDカードは必要ですか？SDカードで足りますか？",
+        "a": "<b>SDでも使えますが、XQDやCFexpressのほうがバッファ解放が速くなります。</b>7〜9コマ/秒の長いRAW連写にはスロット1を使いましょう。"
       },
       {
-        "q": "D850での4K動画記録にはV60が必須ですか？",
-        "a": "<b>はい、4K動画記録にはV60スピードクラスが推奨されます。</b>"
+        "q": "D850のXQDスロットでCFexpressカードは使えますか？",
+        "a": "<b>ファームウェア1.20以降なら使えます。</b>ニコンは2020年12月のアップデートでCFexpress Type Bに対応しました。"
       }
     ],
     "relatedDevices": [
@@ -2614,36 +2610,6 @@
     "notes": "First-generation 高解像度 full-frame Alpha body. Uses a single SD card slot and records up to 1080p, so media 必要ments are light compared to newer 4K/8K models."
   },
   {
-    "id": "canon-rebel-t7",
-    "name": "Canon EOS Rebel T7",
-    "category": "cameras",
-    "slug": "canon-rebel-t7",
-    "searchTerms": [
-      "canon rebel t7",
-      "eos rebel t7"
-    ],
-    "sdCard": {
-      "type": "SD UHS-I",
-      "minSpeed": "Class 10",
-      "minWriteSpeed": "10 MB/s",
-      "recommendedCapacity": [
-        "64GB",
-        "128GB"
-      ]
-    },
-    "whySpecs": "Entry-level DSLR. Class 10 sufficient for 1080p video.",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-ultra-microsd"
-      }
-    ],
-    "faq": [],
-    "relatedDevices": [
-      "canon-eos-r5"
-    ],
-    "notes": ""
-  },
-  {
     "id": "sony-a1",
     "name": "Sony A1",
     "category": "cameras",
@@ -2654,7 +2620,7 @@
     ],
     "sdCard": {
       "type": "CFexpress Type A / SD UHS-II",
-      "minSpeed": "V60",
+      "minSpeed": "V60（XAVC S-IにはV90）",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -2671,37 +2637,6 @@
     "relatedDevices": [
       "canon-eos-r5",
       "nikon-z9"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "nikon-d850",
-    "name": "Nikon D850",
-    "category": "cameras",
-    "slug": "nikon-d850",
-    "searchTerms": [
-      "nikon d850",
-      "d850"
-    ],
-    "sdCard": {
-      "type": "SD UHS-II / XQD",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "recommendedCapacity": [
-        "128GB",
-        "256GB"
-      ]
-    },
-    "whySpecs": "Professional DSLR. デュアルスロットs support both SD UHS-II and legacy XQD cards.",
-    "recommendedBrands": [
-      {
-        "id": "sony-mrw-g1"
-      }
-    ],
-    "faq": [],
-    "relatedDevices": [
-      "nikon-z9",
-      "canon-eos-r5"
     ],
     "notes": ""
   }

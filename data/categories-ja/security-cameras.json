@@ -10,17 +10,17 @@
       "solocam storage"
     ],
     "sdCard": {
-      "type": "microSD",
-      "minSpeed": "Class 10 / U1",
+      "type": "カードスロットなし（内蔵ストレージ8GB）",
+      "minSpeed": "N/A",
       "minWriteSpeed": "10 MB/s",
       "recommendedCapacity": [
         "32GB",
         "64GB",
         "128GB"
       ],
-      "maxCapacity": "128GB"
+      "maxCapacity": "内蔵8GB（HomeBase経由で拡張可）"
     },
-    "whySpecs": "SoloCam S340は、パン/チルト機能を備えたデュアルカメラを備えており、ローカルmicroSDカードに記録します。24時間の継続的な記録のため、Eufy公式はHigh 耐久性カード（高耐久性）の使用を推奨しています。これらのカードは、セキュリティカメラの大量の書き込みに耐えるように特に設計されています。メーカー仕様に準拠した高耐久カード推奨。",
+    "whySpecs": "S340は動体検知で録画したクリップを8GBの内蔵eMMCストレージに保存し、カードスロットはありません。レビューによると、1日50〜80件のイベントで8GBは約10〜14日分です。容量を増やすには、eufy HomeBase 3と2.5インチのドライブを組み合わせます。",
     "recommendedBrands": [
       {
         "id": "sandisk-max-endurance"
@@ -31,12 +31,18 @@
     ],
     "faq": [
       {
-        "q": "128GBカードはどのくらいのビデオを保存できますか？",
-        "a": "<b>128GBのHigh 耐久性カードは、約2〜3週間の継続的な記録を保存します。</b> ストレージ消費は記録フレームレート（1080p vs 2K）と圧縮設定に依存します。定期的にバックアップして、古いフッテージを削除してください。"
+        "q": "eufy SoloCam S340はmicroSDカードを使えますか？",
+        "a": "<b>使えません。</b>8GBの内蔵ストレージのみで、カードスロットはありません。"
+      },
+      {
+        "q": "eufy S340の保存容量を増やすには？",
+        "a": "<b>eufy HomeBase 3と組み合わせ</b>、最大16TBの2.5インチHDDまたはSSDを取り付けます。"
       }
     ],
     "relatedDevices": [],
-    "notes": "内蔵ソーラーパネルオプション付きの人気のあるワイヤーフリーセキュリティカメラ。Eufy公式はHigh 耐久性指定を推奨しています。"
+    "notes": "内蔵ソーラーパネルオプション付きの人気のあるワイヤーフリーセキュリティカメラ。Eufy公式はHigh 耐久性指定を推奨しています。",
+    "customTitle": "eufy SoloCam S340はSDカードを使える？内蔵8GBのみ",
+    "metaDescription": "eufy SoloCam S340にはmicroSDスロットがありません。クリップは8GBの内蔵メモリーに保存されます。容量を増やすにはHomeBase 3とHDDを使います。"
   },
   {
     "id": "reolink-e1-pro",

@@ -103,7 +103,7 @@
       "dji mini 3"
     ],
     "sdCard": {
-      "type": "microSD UHS-I (UHS-II Compatible)",
+      "type": "microSD UHS-I",
       "minSpeed": "V30",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
@@ -191,15 +191,15 @@
     ],
     "sdCard": {
       "type": "microSD UHS-I (UHS-II Compatible)",
-      "minSpeed": "V60",
+      "minSpeed": "V30 / U3",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "256GB",
         "512GB"
       ],
-      "maxCapacity": "1TB"
+      "maxCapacity": "512GB"
     },
-    "whySpecs": "プレミアム4Kおよび8Kドローン。標準モデルは4Kに対応し、Cineモデルは高ビットレートでの8K Cine録画に対応しています。V60以上が必須です。8K Cine作業にはV90以上を推奨します。メーカー公式仕様に準拠したカード推奨。",
+    "whySpecs": "Mavic 3は5.1K/50と4K/120をH.264とH.265で最大200Mbps（25MB/s）で記録します。DJIの指定はU3（スピードグレード3）で、V30カードはこれを上回ります。標準モデルには8GBの内蔵ストレージがあります。Mavic 3 CineはProRes 422 HQを内蔵1TB SSDに記録するため、microSDカードに記録するのは標準モデルと同じH.264/H.265の映像です。",
     "recommendedBrands": [
       {
         "id": "lexar-professional-1000x-v60"
@@ -210,8 +210,16 @@
     ],
     "faq": [
       {
-        "q": "V30カードは使用できますか？",
-        "a": "<b>V30カードはDJI Mavic 3での4K記録に十分です。</b> しかし、<b>8K Cine記録（Cineモデルのみ）にはV60最小が必須であり、V90が中断のない高ビットレート撮影と最適なパフォーマンスに強く推奨されます。</b>"
+        "q": "DJI Mavic 3でV30カードは使えますか？",
+        "a": "<b>使えます。V30が適切な規格です。</b>最大ビットレートは200Mbps（25MB/s）で、V30の最低30MB/sを下回ります。V60やV90のカードも使えますが、記録内容は変わりません。"
+      },
+      {
+        "q": "Mavic 3 CineはProResをmicroSDカードに記録しますか？",
+        "a": "<b>しません。</b>ProResはCineの内蔵1TB SSDに記録されます。microSDスロットに記録されるのは、標準のMavic 3と同じH.264とH.265です。"
+      },
+      {
+        "q": "DJI Mavic 3は8Kで撮影できますか？",
+        "a": "<b>できません。</b>最高解像度は5.1K（最大50fps）です。"
       }
     ],
     "relatedDevices": [
@@ -288,7 +296,7 @@
       ],
       "maxCapacity": "256GB"
     },
-    "whySpecs": "250g未満の重量で、4K 30fpsビデオ録画が可能なバジェットフレンドリードローンです。DJI公式はV30スピードクラスカードを推奨しており、安定した動画を確保します。コンパクトサイズでDJIの基本的なドローン機能を提供します。メーカー公式仕様に準拠したカード推奨。",
+    "whySpecs": "DJIはMini 4KにUHS-Iスピードグレード3（U3）のmicroSDカードを指定しており、V30カードなら余裕をもって満たせます。最高でも4K/30・100Mbpsなので、中価格帯のV30カードで十分です。V60やUHS-IIに追加費用を払っても、飛行中の記録には何も変わりません。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -302,12 +310,12 @@
     ],
     "faq": [
       {
-        "q": "DJI Mini 4KはMini 4 Proとどう違いますか？",
-        "a": "<b>Mini 4Kはより予算志向版で、インテリジェント飛行モードが少なくなります。</b> しかし、両方が4K動画をサポートし、V30カード要件を共有しています。基本的なドローン経験向けに設計されています。"
+        "q": "DJI Mini 4KとMini 4 Proの違いは？",
+        "a": "<b>Mini 4Kは低価格モデルで、4K/30・100Mbps、障害物検知なし、10bitカラーなしです。</b>Mini 4 Proは10bit D-Log Mで最大4K/100を記録します。どちらも同じU3/V30のmicroSDカードを使えます。"
       },
       {
-        "q": "Mini 4KでV30が本当に必須ですか？",
-        "a": "<b>はい、DJI公式はドローン操作の信頼性とフレームドロップを防ぐためにV30を推奨しています。</b> より低速なカードはフレームドロップやファイル破損のリスクを提示します。"
+        "q": "Mini 4Kが対応する最大のmicroSDカードは？",
+        "a": "<b>DJIはMini 4Kの最大容量を256GBとしています。</b>256GBあれば4Kで5時間以上記録でき、バッテリーの飛行時間を大きく上回ります。256GBを1枚より128GBを2枚にするほうが安全で、1枚が故障しても失う映像は半分で済みます。"
       }
     ],
     "relatedDevices": [
@@ -610,7 +618,7 @@
         "128GB",
         "256GB"
       ],
-      "maxCapacity": "256GB (Official), some 400GB+ supported on newer firmware"
+      "maxCapacity": "256GB（公式）"
     },
     "whySpecs": "Skydio 2+は4K/60fps動画記録だけでなく、複雑な自律飛行パス情報のデータロギングにもSDカードに依存しています。Skydioは厳格なU3/V30速度テストに合格しないカードを採用しません。ファイルシステムはexFAT必須です。",
     "recommendedBrands": [
@@ -867,9 +875,9 @@
         "128GB",
         "256GB"
       ],
-      "maxCapacity": "512GB"
+      "maxCapacity": "1TB"
     },
-    "whySpecs": "Unlike the original X1 which had internal storage, the X1 Pro records 4K/60fps to a microSD card. A V30 card is 必要d for smooth 記録. The drone is designed for follow-me action sports, so reliable 書き込み速度s are crucial to avoid losing footage of a stunt.",
+    "whySpecs": "HoverAirは64GB〜1TBのV30以上のmicroSDカードを、exFATでフォーマットして使うよう指定しています。V30未満のカードでは低速警告が出て、記録が制限されます。最大ビットレートは160Mbps（約20MB/s）です。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -880,8 +888,12 @@
     ],
     "faq": [
       {
-        "q": "Does the HoverAir X1 Pro have internal storage?",
-        "a": "<b>No, the Pro models (Pro and Pro Max) use microSD cards.</b> Only the original standard HoverAir X1 used internal storage."
+        "q": "HoverAir X1 Proに内蔵ストレージはありますか？",
+        "a": "<b>64GBの内蔵ストレージに加えて、microSDスロットがあります。</b>カードを入れると長時間の撮影に対応できます。"
+      },
+      {
+        "q": "HoverAir X1 Proで使えるSDカードの容量は？",
+        "a": "<b>64GB〜1TBです。</b>HoverAirによると、この範囲外のカードでは容量が正しく表示されません。exFATでフォーマットしてください。"
       }
     ],
     "relatedDevices": [
@@ -902,8 +914,8 @@
       "hoverair 8k storage"
     ],
     "sdCard": {
-      "type": "microSD UHS-I / UHS-II",
-      "minSpeed": "V60",
+      "type": "microSD UHS-I",
+      "minSpeed": "V30（8Kと4K/120にはV60）",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -912,7 +924,7 @@
       ],
       "maxCapacity": "1TB"
     },
-    "whySpecs": "The X1 Pro Max is the flagship model capable of 記録 8K映像. While V30 cards might handle 4K modes, V60 cards are strongly 推奨 to handle the massive data throughput of 8K 記録 without バッファing or フレームドロップ.",
+    "whySpecs": "X1 ProMaxは8K/30と4K/120を最大160Mbpsで記録します。HoverAirの公式ガイドはこれらのモードにV60を推奨しています。数値上はV30でもビットレートを満たしますが、連続した書き込みでは速度が足りなくなるV30カードが多いためです。カードは64GB〜1TBで、exFATでフォーマットする必要があります。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-microsd-v60"
@@ -926,12 +938,16 @@
     ],
     "faq": [
       {
-        "q": "Do I strictly need a V60 card for the X1 Pro Max?",
-        "a": "<b>If you plan to shoot in 8K, yes.</b> For 4K 記録, a high-quality V30 card will suffice, but to unlock the full potential of the drone's 8K sensor, invest in a V60 microSD card."
+        "q": "X1 ProMaxにV60カードは必要ですか？",
+        "a": "<b>8K/30や4K/120で撮るなら必要です。</b>HoverAirはこれらのモードにV60を推奨しています。4K/60以下ならV30で足ります。"
       },
       {
-        "q": "What happens if I use a slow card in the X1 Pro Max?",
-        "a": "The drone may refuse to record in 8K, or automatically downgrade the resolution to 4K to prevent data corruption."
+        "q": "X1 ProMaxで遅いカードを使うとどうなりますか？",
+        "a": "<b>カード速度が低いと表示され、記録が制限されます。</b>V30未満のカードは使えません。"
+      },
+      {
+        "q": "X1 ProMaxに内蔵ストレージはありますか？",
+        "a": "<b>64GBあります。</b>HoverAirによると、4K/30で約150分ぶんです。"
       }
     ],
     "relatedDevices": [
@@ -939,37 +955,6 @@
       "autel-evo-ii-pro-v3"
     ],
     "notes": "One of the few consumer drones offering 8K. 高速 media is a necessity, not a luxury."
-  },
-  {
-    "id": "dji-mini-3",
-    "name": "DJI Mini 3",
-    "category": "drones",
-    "slug": "dji-mini-3",
-    "searchTerms": [
-      "dji mini 3",
-      "dji mini 3 pro"
-    ],
-    "sdCard": {
-      "type": "microSD UHS-I",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "recommendedCapacity": [
-        "128GB",
-        "256GB"
-      ]
-    },
-    "whySpecs": "DJI Mini 3は4K映像を記録します。V30は安定した記録を確保します。メーカー仕様準拠カード推奨。",
-    "recommendedBrands": [
-      {
-        "id": "sandisk-extreme-microsd"
-      }
-    ],
-    "faq": [],
-    "relatedDevices": [
-      "dji-mini-4-pro",
-      "dji-mini-2-se"
-    ],
-    "notes": ""
   },
   {
     "id": "walksnail-moonlight",
@@ -1147,4 +1132,4 @@
     ],
     "notes": "最新のMiniシリーズ フラッグシップ機（2025年後期リリース）。1インチセンサーとLiDARは大きなアップグレードを表しています。フライト前に新しいカードをテストしてください。DJI公式は4K/120fps安定性のため高速カードを推奨しています。"
   }
-  ]
+]

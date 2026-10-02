@@ -18,7 +18,7 @@
         "64GB",
         "128GB"
       ],
-      "maxCapacity": "公式上限なし"
+      "maxCapacity": "2TB（SDXC規格の上限）"
     },
     "whySpecs": "Raspberry Pi 5は、microSDカードからOSを起動します。「A1」または理想的には「A2」定格のカードがパフォーマンスに不可欠です。これらの定格はランダム読み書き速度が速いことを意味し、OSの応答性とアプリケーションのロード時間を劇的に向上させます。動作確認済みで、メーカー推奨のA2定格カードの使用をおすすめします。",
     "recommendedBrands": [
@@ -145,14 +145,14 @@
       "m3 pro"
     ],
     "sdCard": {
-      "type": "内蔵SDXCスロット (14/16インチ) または 外部接続",
+      "type": "SDXC UHS-IIスロット内蔵（14/16インチ、2021年以降）、13インチはUSB-Cリーダー",
       "minSpeed": "UHS-I から UHS-II",
       "recommendedCapacity": [
         "128GB",
         "256GB"
       ]
     },
-    "whySpecs": "最新の14インチおよび16インチMacBook Proは、高速なUHS-II対応SDXCカードスロットを内蔵しています。ビデオ編集ワークフローのために高速なカードが推奨されます。",
+    "whySpecs": "Appleは2021年に14インチと16インチのMacBook ProでSDXCスロットを復活させました。UHS-IIに対応し、最大約250〜300MB/sで読み込めます。13インチのMacBook Proにはスロットがありません。CFexpressの読み込みやより速い転送にはThunderboltリーダーを使いましょう。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-uhs2-usbc"
@@ -162,7 +162,17 @@
       "macbook-air",
       "canon-eos-r5"
     ],
-    "notes": ""
+    "notes": "",
+    "faq": [
+      {
+        "q": "MacBook ProにSDカードスロットはありますか？",
+        "a": "<b>2021年以降の14インチと16インチモデルにはあります。</b>スロットはUHS-II対応です。13インチのMacBook Proにはスロットがありません。"
+      },
+      {
+        "q": "MacBook ProのSDスロットはUHS-II対応ですか？",
+        "a": "<b>対応しています。</b>UHS-IIカードを最大約250〜300MB/sで読み込めます。"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-tab-s9",
@@ -426,7 +436,7 @@
         "32GB",
         "64GB"
       ],
-      "maxCapacity": "No official limit"
+      "maxCapacity": "2TB（SDXC規格の上限）"
     },
     "whySpecs": "Like all Raspberry Pis, the Pi 4 runs its OS from the microSD card. An A1 or A2 rated card is crucial for good performance. The A-rating signifies faster ランダムアクセス speeds, which translates to a more responsive desktop experience and faster application launch times.",
     "recommendedBrands": [
@@ -821,4 +831,4 @@
     ],
     "notes": "プレミアムフラッグシップ機（2026）。14.6インチ AMOLED + Dimensity 9300+はSamsungタブレットラインアップの最高峰を表しています。A2 + U3 + V30（またはV60）がプレミアムコンテンツ向けに推奨されます。"
   }
-  ]
+]
