@@ -30,7 +30,7 @@ function generateReaderMetaDescription(reader) {
     // Fallback construction if manual description is missing
     const speed = reader.maxSpeed || "standard speed";
     const type = reader.type || "adapter";
-    return `${reader.name} review and specs. A ${type} from ${reader.brand} supporting ${reader.supportedSlots.join(", ")}. Max speed: ${speed}. See compatibility and pricing.`;
+    return `${reader.name} specs. A ${type} from ${reader.brand} supporting ${reader.supportedSlots.join(", ")}. Max speed: ${speed}. See compatibility and pricing.`;
 }
 
 /**
@@ -241,11 +241,13 @@ function buildReaderVariables(reader, baseUrl, allReaders) {
 
     return {
         // Meta
-        READER_TITLE: `${reader.name} Review | Specs, Speed & Price`,
+        // Longest title format that fits in 65 characters.
+        READER_TITLE: [`${reader.name}: Specs, Speed & Price`, `${reader.name}: Specs and Speeds`]
+            .find((t) => t.length <= 65) || `${reader.name} Specs`,
         READER_DESCRIPTION: generateReaderMetaDescription(reader),
         READER_URL: readerUrl,
-        OG_TITLE: `${reader.name} Review - ${reader.brand}`,
-        TWITTER_TITLE: `${reader.name} Review - ${reader.brand}`,
+        OG_TITLE: `${reader.name}: Specs and Speeds`,
+        TWITTER_TITLE: `${reader.name}: Specs and Speeds`,
         BASE_URL: baseUrl,
 
         // Content
