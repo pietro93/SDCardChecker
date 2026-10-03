@@ -178,6 +178,15 @@ Sub-batch each file (e.g. by brand) rather than trying a whole file in one sessi
 
 ## Findings log
 
+### 2026-10-03 — C0-2 recommendation swaps and spec changes
+
+Applied the approved swap list in `HANDOFF_CONTENT_C0.md` to English and all four locales; `npm run check:recs` is 0.
+Spec changes (all locales): `egret-ii-mini` type "SDHC", maxCapacity "32GB (SDHC)", recommendedCapacity 32GB
+(Taito support page: SDHC only, FAT32). `steam-deck`, `anbernic-rg556`, `retroid-pocket-mini`, `moto-g-stylus-5g-2025`:
+minSpeed "A1", A2 recommended, minWriteSpeed removed (Pietro's call: app rating, not video class, matters for game
+and app loads). `acer-predator-atlas-8`: minSpeed "A2". Steam Deck whySpecs in DE/FR/IT/JA retranslated from current
+English (dropped the stale "1TB largest tested" claim). Removed dead card id `sandisk-ultra-sd` from JA Egret.
+
 ### 2026-10-02 — Locale spec drift and duplicates (DE, FR, IT, JA)
 
 `scripts/check-locale-drift.js` (npm run check:locale-drift) compares spec tokens in each

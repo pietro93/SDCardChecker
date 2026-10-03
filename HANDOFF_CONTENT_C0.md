@@ -185,7 +185,9 @@ Promotions (`data/promoted-cards.json`):
 
 ---
 
-## Swap list, pending approval
+## Swap list (applied October 3, 2026)
+
+**Status:** Pietro approved A, B, C, E, (P)-A, (P)-B as proposed, and B4. F1 was not approved, so `kingston-canvas-go-plus-ultra` stays. D1 to D4 use `minSpeed` "A1" with `minAppPerformance` "A2 (recommended)" and no `minWriteSpeed`, because the generated FAQ renders "Is {minSpeed} required" and "{minWriteSpeed} of sustained write". D5 (Atlas 8) uses "A2". Egret II Mini also got `type` "SDHC" and `recommendedCapacity` ["32GB"], since 64GB is SDXC.
 
 Drafted October 2, 2026 from `npm run check:recs` (53 format, 15 speed, 2 dead ids). Rows that share a change are grouped; every device is named. All source files are in `data/categories/`. Nothing below is applied yet.
 

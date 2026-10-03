@@ -82,7 +82,7 @@ Baseline numbers from the October 2 crawl. "Inbound" means links from inside `<m
 Detailed engineering steps: `HANDOFF_CONTENT_C0.md`.
 
 - [x] **(D) C0-1 Redirects and removed-page cleanup** (C4, C5). Add an extra-redirects data file merged by `generate-redirects.js`. Remove the three stale entries from DE/FR/IT and redirect their locale URLs. About 1 to 2 hours. *Done Oct 2: 18 redirect rows (also the DE/FR/IT Wyze Cam v3 duplicate and the JA ONE X3); live 301s still to confirm after deploy.*
-- [ ] **(P+D) C0-2 Wrong-format and below-spec recommendations** (C1, C1b, C2, C3). Dev builds `scripts/check-recommendations.js` first (format + speed), drafts a swap list and the device-spec corrections from its output, and Pietro approves (recommendations are a business decision per `HANDOFF_SPRINT_1.md`). Then apply, and wire the check into the build so it can't regress. About a day plus review. *Oct 2: check built (`npm run check:recs`), swap list drafted in `HANDOFF_CONTENT_C0.md`, waiting on Pietro.*
+- [x] **(P+D) C0-2 Wrong-format and below-spec recommendations** (C1, C1b, C2, C3). Dev builds `scripts/check-recommendations.js` first (format + speed), drafts a swap list and the device-spec corrections from its output, and Pietro approves (recommendations are a business decision per `HANDOFF_SPRINT_1.md`). Then apply, and wire the check into the build so it can't regress. About a day plus review. *Done Oct 3: Pietro approved A, B, C, E and (P)-A; F1 (duplicate Kingston card merge) declined. Swaps applied in English and mirrored to DE/FR/IT/JA; `check:recs` exits 0 with an empty allowlist. Steam Deck, RG556, Retroid Pocket Mini and Moto G Stylus now list A1 (A2 recommended), Atlas 8 lists A2. CI wiring waits on Sprint 1 Task 5.*
 - [x] **(D) C0-3 Locale spec drift** (C6). Build `scripts/check-locale-drift.js`, then fix the flagged devices locale by locale, worst first (no-slot devices, then capacities, then speed classes). About 1 to 2 days across four locales. Prose that cites the old spec gets retranslated from current English. *Done Oct 2: 0 drift in all locales, 12 JA and 3 DE/FR/IT duplicate entries removed. About 28 JA pages are still mostly English (listed in `CONTENT_AUDIT_TODO.md`).*
 - [x] **(D) C0-4 Remove testing claims** (C7, C8, C9). Reader templates and `data/sdCardReaders.json`, homepage stat block, card page title pattern. Extend `scripts/lint-copy.js` to flag "tested", "reviewed" and "review" in titles. About 2 hours. *Done Oct 2. `lint:copy` still fails on 38 older hits in `calculator-content.json` and the Switch guide, none of them testing claims.*
 
@@ -172,8 +172,8 @@ Ranked by value for the effort. Action plan items 5a and 5b are part of this pha
 
 | Metric | Source | Baseline (Oct 2, 2026) | After C0 work (Oct 2) | Target |
 |---|---|---|---|---|
-| Wrong-format recommendations | `check-recommendations.js` | 51 | 51 + 2 promotions (swaps pending approval) | 0 |
-| Below-spec recommendations | `check-recommendations.js` | 25 (24 counted by the script, which reports wrong-format pairs once) | 15 (swaps pending approval) | 0 |
+| Wrong-format recommendations | `check-recommendations.js` | 51 | 0 (Oct 3, swaps applied) | 0 |
+| Below-spec recommendations | `check-recommendations.js` | 25 (24 counted by the script, which reports wrong-format pairs once) | 0 (Oct 3) | 0 |
 | Locale devices with spec drift | `check-locale-drift.js` | DE 50, FR 58, IT 50, JA 53 | 0 in every locale (9 JA-only devices allowlisted) | 0 (or allowlisted) |
 | Pages with 0 contextual inbound links | `seo-crawl.js` | 13 | 13 | 0 |
 | Device/hub pages with ≤1 inbound | `seo-crawl.js` | 65 of 247 | not rerun | < 10 |
@@ -188,9 +188,9 @@ Ranked by value for the effort. Action plan items 5a and 5b are part of this pha
 
 ## 10. Decisions needed from Pietro
 
-1. **Swap list for C0-2.** The handoff drafts it. Each swap replaces a wrong-format or below-spec card with a same-format card from the catalog that meets the device's minimum, staying in the same price tier where possible. Approve, or say which affiliate relationships (Kingston, Gigastone) need special handling. Note that `kingston-canvas-select` is a microSD card recommended on 15+ full-size SD cameras, so most of its placements go regardless of the speed question.
-2. **Gaming handheld minimum spec.** Proposed: handhelds list A1/A2 (and UHS bus) as the requirement, not V-class, unless the manufacturer specifies one. Affects Steam Deck, GPD Win Mini, Acer Predator Atlas 8, and the generated FAQ for the whole category.
-3. **Nikon Z9 promotion.** Remove `kingston-canvas-react-sd` from `nikon-z9` in `data/promoted-cards.json` (wrong format), fix `fujifilm-x-t5` → `fujifilm-xt5`, and drop `dji-phantom-4-pro-v2` or add that device.
+1. ~~**Swap list for C0-2.**~~ *Approved and applied Oct 3.* The handoff drafts it. Each swap replaces a wrong-format or below-spec card with a same-format card from the catalog that meets the device's minimum, staying in the same price tier where possible. Approve, or say which affiliate relationships (Kingston, Gigastone) need special handling. Note that `kingston-canvas-select` is a microSD card recommended on 15+ full-size SD cameras, so most of its placements go regardless of the speed question.
+2. **Gaming handheld minimum spec.** *Oct 3: approved for the C0-2 devices (Steam Deck, RG556, Retroid Pocket Mini, Moto G Stylus, Atlas 8). About 17 other handhelds (ROG Ally, Legion Go, Retroid Pocket 5/6, GPD Win Mini, etc.) still list V30/U3/V60; converting them is open.* Proposed: handhelds list A1/A2 (and UHS bus) as the requirement, not V-class, unless the manufacturer specifies one. Affects Steam Deck, GPD Win Mini, Acer Predator Atlas 8, and the generated FAQ for the whole category.
+3. ~~**Nikon Z9 promotion.**~~ *Done Oct 3 (also removed `dji-air-3s`). The fixed `fujifilm-xt5` id means the promo now shows there for the first time.* Remove `kingston-canvas-react-sd` from `nikon-z9` in `data/promoted-cards.json` (wrong format), fix `fujifilm-x-t5` → `fujifilm-xt5`, and drop `dji-phantom-4-pro-v2` or add that device.
 4. **Thin hubs:** add content or `noindex` hubs with 1 to 2 devices (C2-3).
 5. **Card page coverage:** which of the 37 cards without a page get one (C2-1).
 
