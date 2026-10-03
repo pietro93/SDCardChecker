@@ -125,9 +125,8 @@
     ],
     "sdCard": {
       "type": "microSD UHS-I (not UHS-II)",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "minAppPerformance": "A1",
+      "minSpeed": "A1",
+      "minAppPerformance": "A2 (recommended)",
       "recommendedCapacity": [
         "256GB",
         "512GB"
@@ -150,7 +149,7 @@
     "faq": [
       {
         "q": "Can I use fast V60 cards?",
-        "a": "<b>Yes, but they won't load games any faster.</b> The Steam Deck's UHS-I slot caps reads near 100 MB/s, so a V60 or UHS-II card performs like a good V30 A2 card."
+        "a": "<b>Yes, but they won't load games any faster.</b> The Steam Deck's UHS-I slot caps reads near 100 MB/s, so a V60 or UHS-II card performs like a good A2 UHS-I card."
       },
       {
         "q": "What is the max SD card size for Steam Deck?",
@@ -166,7 +165,7 @@
       "asus-rog-ally",
       "ayn-odin-3-odin-2-portal"
     ],
-    "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library.",
+    "notes": "Steam Deck uses UHS-I only. Any A1 or A2 card is enough, because game loads depend on random reads, not the video speed class. Recommend 256GB+ for game library.",
     "metaDescription": "Steam Deck takes UHS-I microSD cards up to 2TB. Buy an A2 card in 512GB or 1TB for your game library; V60 and UHS-II cards load no faster."
   },
   {
@@ -360,16 +359,10 @@
     "whySpecs": "Nintendo officially supports SDHC cards up to 32GB. SDXC cards up to 128GB work when formatted FAT32 on a computer. Class 10 cards speed up eShop downloads and data transfers.",
     "recommendedBrands": [
       {
-        "id": "sandisk-ultra-microsd"
+        "id": "sandisk-ultra-sd-uhs1"
       },
       {
-        "id": "kingston-canvas-select"
-      },
-      {
-        "id": "samsung-evo-select-microsd"
-      },
-      {
-        "id": "amazon-basics-microsd"
+        "id": "lexar-professional-633x-sd"
       }
     ],
     "faq": [
@@ -878,22 +871,21 @@
       "taito egret sd card"
     ],
     "sdCard": {
-      "type": "SDHC / SDXC",
+      "type": "SDHC",
       "minSpeed": "Class 10",
       "minWriteSpeed": "10 MB/s",
       "recommendedCapacity": [
-        "32GB",
-        "64GB"
+        "32GB"
       ],
-      "maxCapacity": "128GB"
+      "maxCapacity": "32GB (SDHC)"
     },
     "whySpecs": "The Taito Egret II Mini uses the SD card slot for firmware updates and loading additional games via official expansion packs or side-loading. It does not require high speeds.",
     "recommendedBrands": [
       {
-        "id": "sandisk-ultra-microsd"
+        "id": "sandisk-ultra-sd-uhs1"
       },
       {
-        "id": "kioxia-exceria"
+        "id": "lexar-professional-633x-sd"
       }
     ],
     "faq": [
@@ -1014,14 +1006,14 @@
     ],
     "sdCard": {
       "type": "microSD, microSDXC",
-      "minSpeed": "U3 / A1",
-      "minWriteSpeed": "30 MB/s",
+      "minSpeed": "A1",
       "recommendedCapacity": [
         "128GB",
         "256GB",
         "512GB"
       ],
-      "maxCapacity": "2TB"
+      "maxCapacity": "2TB",
+      "minAppPerformance": "A2 (recommended)"
     },
     "whySpecs": "The RG556 is an Android handheld with a Unisoc T820 that emulates PS2 and GameCube. Those disc images take 1GB to 8GB each, so buy 256GB or more. An A1 card keeps Android apps responsive when installed to the card.",
     "recommendedBrands": [
@@ -1415,8 +1407,7 @@
     ],
     "sdCard": {
       "type": "microSDXC UHS-I",
-      "minSpeed": "U3 / V30",
-      "minWriteSpeed": "30 MB/s",
+      "minSpeed": "A1",
       "minAppPerformance": "A2 (recommended)",
       "recommendedCapacity": [
         "256GB",
@@ -1834,9 +1825,7 @@
     ],
     "sdCard": {
       "type": "microSD UHS-II",
-      "minSpeed": "V60 / V90",
-      "minWriteSpeed": "60 MB/s",
-      "minAppPerformance": "A2",
+      "minSpeed": "A2",
       "recommendedCapacity": [
         "512GB",
         "1TB"

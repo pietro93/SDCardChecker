@@ -438,15 +438,15 @@
     ],
     "sdCard": {
       "type": "microSDXC (UHS-I)",
-      "minSpeed": "Class 10 / U3 / A1",
-      "minWriteSpeed": "30 MB/s",
+      "minSpeed": "A1",
       "recommendedCapacity": [
         "256GB",
         "512GB"
       ],
-      "maxCapacity": "1TB (exFAT)"
+      "maxCapacity": "1TB (exFAT)",
+      "minAppPerformance": "A2 (recommended)"
     },
-    "whySpecs": "This budget-friendly creator phone allows artists and note-takers to store massive amounts of digital artwork, photos, and media. While sheer capacity is often the priority for Moto G users, opting for a U3/V30 card prevents system slowdowns when browsing large galleries of high-resolution stylus sketches or recorded video. Given the hardware, UHS-I speeds will max out the phone's storage bus, so there is no need to overspend on UHS-II cards.",
+    "whySpecs": "This budget-friendly creator phone allows artists and note-takers to store massive amounts of digital artwork, photos, and media. While sheer capacity is often the priority for Moto G users, opting for an A1/A2 card prevents system slowdowns when browsing large galleries of high-resolution stylus sketches or recorded video. Given the hardware, UHS-I speeds will max out the phone's storage bus, so there is no need to overspend on UHS-II cards.",
     "faq": [
       {
         "q": "Can I move my apps to the SD card on the Moto G Stylus?",
