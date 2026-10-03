@@ -247,16 +247,10 @@
     "whySpecs": "任天堂は公式に32GBまでのSDHCカードをサポートしていますが、FAT32形式にフォーマットすれば128GB以上（実質的な上限は128GB）のSDXCカードも問題なく動作します。Class 10のカードは、Class 4などの古い規格に比べてゲームのロードやeショップのダウンロード速度を向上させ、全体的な快適さを改善します。",
     "recommendedBrands": [
       {
-        "id": "sandisk-ultra-microsd"
+        "id": "sandisk-ultra-sd-uhs1"
       },
       {
-        "id": "kingston-canvas-select"
-      },
-      {
-        "id": "samsung-evo-select-microsd"
-      },
-      {
-        "id": "amazon-basics-microsd"
+        "id": "lexar-professional-633x-sd"
       }
     ],
     "faq": [
@@ -670,9 +664,8 @@
     ],
     "sdCard": {
       "type": "microSD UHS-I (UHS-II 非対応)",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "minAppPerformance": "A1",
+      "minSpeed": "A1",
+      "minAppPerformance": "A2（推奨）",
       "recommendedCapacity": [
         "256GB",
         "512GB"
@@ -680,7 +673,7 @@
       "maxCapacity": "2TB (理論値)",
       "testedMaxCapacity": "1TB"
     },
-    "whySpecs": "Steam DeckはUHS-Iインターフェースを使用し、カードからSteamOSを実行するため、OSの応答性にはA1アプリケーションパフォーマンスが重要です。ゲームにはV30で十分ですが、A1のランダムIOPSは必須です。V30定格かつA1分類の信頼できるブランドを選んでください。",
+    "whySpecs": "Steam DeckのmicroSDスロットはUHS-Iのため、カードの表記に関係なく速度は約100 MB/sが上限です。ゲームはカードから小さなランダム読み込みでロードされ、これはA1・A2のアプリ性能クラスが示す性能です。SanDisk ExtremeやLexar Playなど2TBのカードも動作します。2026年はNANDフラッシュ不足により、全容量でmicroSDの価格が上がっています。",
     "recommendedBrands": [
       {
         "id": "kingston-canvas-go-plus-ultra"
@@ -695,14 +688,14 @@
     "faq": [
       {
         "q": "高速なV60カードは使えますか？",
-        "a": "<b>はい、V60以上のmicroSDカードもSteam Deckで問題なく動作します。</b> しかし、<b>デバイスのUHS-Iインターフェースが速度を制限するため</b>、Steam Deckでのゲームプレイにおいて、より高速なカードによる実用的な利点はV30カードと比較してありません。"
+        "a": "<b>はい、V60以上のmicroSDカードもSteam Deckで問題なく動作します。</b> しかし、<b>デバイスのUHS-Iインターフェースが速度を制限するため</b>、Steam Deckでのゲームプレイでは、より高速なカードでも良質なA2対応UHS-Iカードと比べて実用的な利点はありません。"
       }
     ],
     "relatedDevices": [
       "nintendo-switch",
       "asus-rog-ally"
     ],
-    "notes": "Steam DeckはUHS-Iのみ対応です。V30カードで十分です。ゲームライブラリ用には256GB以上を推奨します。"
+    "notes": "Steam DeckはUHS-Iのみ対応です。A1またはA2のカードで十分です。ゲームライブラリ用には256GB以上を推奨します。"
   },
   {
     "id": "asus-rog-ally",
@@ -810,14 +803,14 @@
     ],
     "sdCard": {
       "type": "microSD, microSDXC",
-      "minSpeed": "U3 / A1",
-      "minWriteSpeed": "30 MB/s",
+      "minSpeed": "A1",
       "recommendedCapacity": [
         "128GB",
         "256GB",
         "512GB"
       ],
-      "maxCapacity": "2TB"
+      "maxCapacity": "2TB",
+      "minAppPerformance": "A2（推奨）"
     },
     "whySpecs": "RG556はAndroidベースの高性能な中華ゲーム機で、PS2やGameCubeなどの大容量ROMを扱うことができます。多くのゲームを持ち運ぶには256GB以上の大容量カードが推奨されます。",
     "recommendedBrands": [
@@ -851,22 +844,21 @@
       "タイトー ミニ 改造"
     ],
     "sdCard": {
-      "type": "SDHC / SDXC",
+      "type": "SDHC",
       "minSpeed": "Class 10",
       "minWriteSpeed": "10 MB/s",
       "recommendedCapacity": [
-        "32GB",
-        "64GB"
+        "32GB"
       ],
-      "maxCapacity": "128GB"
+      "maxCapacity": "32GB (SDHC)"
     },
-    "whySpecs": "ファームウェアのアップデートや、追加ゲームの読み込みに使用します。書き込み速度は重要ではありませんが、互換性のために信頼できるブランド（SanDiskやKIOXIAなど）のClass10カードを選ぶのが無難です。",
+    "whySpecs": "ファームウェアのアップデートや、追加ゲームの読み込みに使用します。タイトーのサポートページによると対応するのはSDHC（32GBまで、FAT32）のみで、microSDHCも変換アダプター経由で使えます。書き込み速度は重要ではないため、SanDiskやLexarなど信頼できるブランドのClass10カードで十分です。",
     "recommendedBrands": [
       {
-        "id": "kioxia-exceria"
+        "id": "sandisk-ultra-sd-uhs1"
       },
       {
-        "id": "sandisk-ultra-sd"
+        "id": "lexar-professional-633x-sd"
       }
     ],
     "faq": [
@@ -1158,8 +1150,7 @@
     ],
     "sdCard": {
       "type": "microSDXC UHS-I",
-      "minSpeed": "U3 / V30",
-      "minWriteSpeed": "30 MB/s",
+      "minSpeed": "A1",
       "minAppPerformance": "A2（推奨）",
       "recommendedCapacity": [
         "256GB",
@@ -1167,7 +1158,7 @@
       ],
       "maxCapacity": "1TB"
     },
-    "whySpecs": "コンパクト派生機、Snapdragon 865搭載、6GBメモリ、3.7インチ4:3 AMOLED搭載。4:3アスペクト比は懐かしいアーケードおよび昔のコンソールゲーム用途に完璧です。A2アプリケーション定格により、メニュー操作応答性が向上し、スムーズなアセット読み込みが実現されます。V30は大規模ROMライブラリの信頼できるストリーミングをサポートします。",
+    "whySpecs": "コンパクト派生機、Snapdragon 865搭載、6GBメモリ、3.7インチ4:3 AMOLED搭載。4:3アスペクト比は懐かしいアーケードおよび昔のコンソールゲーム用途に完璧です。A2アプリケーション定格により、メニュー操作応答性が向上し、スムーズなアセット読み込みが実現されます。",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-microsd"

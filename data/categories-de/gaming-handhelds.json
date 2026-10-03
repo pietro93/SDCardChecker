@@ -123,9 +123,8 @@
     ],
     "sdCard": {
       "type": "microSD UHS-I (nicht UHS-II)",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "minAppPerformance": "A1",
+      "minSpeed": "A1",
+      "minAppPerformance": "A2 (empfohlen)",
       "recommendedCapacity": [
         "256GB",
         "512GB"
@@ -133,7 +132,7 @@
       "maxCapacity": "2TB (theoretisch)",
       "testedMaxCapacity": "1TB"
     },
-    "whySpecs": "Das Steam Deck nutzt die UHS-I-Schnittstelle und führt SteamOS direkt von der Karte aus, daher ist die A1-App-Performance für die Reaktionsfähigkeit des Betriebssystems wichtig. V30 reicht zwar zum Spielen aus, aber A1-Random-IOPS sind essenziell. Wählen Sie Karten renommierter Marken mit V30-Einstufung und A1-Klassifizierung. Hinweis: Obwohl theoretisch bis zu 2TB unterstützt werden, ist 1TB die größte getestete und bestätigt funktionierende Kapazität.",
+    "whySpecs": "Der microSD-Slot des Steam Deck ist UHS-I, daher sind Karten unabhängig vom Etikett bei etwa 100 MB/s begrenzt. Spiele laden in kleinen zufälligen Lesezugriffen von der Karte, und genau das messen die App-Klassen A1 und A2. 2TB-Karten wie die SanDisk Extreme und die Lexar Play funktionieren. Die microSD-Preise sind 2026 wegen einer NAND-Flash-Knappheit in allen Kapazitäten gestiegen.",
     "recommendedBrands": [
       {
         "id": "kingston-canvas-go-plus-ultra"
@@ -148,7 +147,7 @@
     "faq": [
       {
         "q": "Kann ich schnelle V60-Karten verwenden?",
-        "a": "<b>Ja, V60- und schnellere microSD-Karten funktionieren einwandfrei mit dem Steam Deck</b>. Allerdings <b>begrenzt die UHS-I-Schnittstelle des Geräts den Geschwindigkeitsvorteil</b>, sodass schnellere Karten beim Steam-Deck-Gaming keinen praktischen Vorteil gegenüber V30-Karten bieten."
+        "a": "<b>Ja, V60- und schnellere microSD-Karten funktionieren einwandfrei mit dem Steam Deck</b>. Allerdings <b>begrenzt die UHS-I-Schnittstelle des Geräts den Geschwindigkeitsvorteil</b>, sodass schnellere Karten beim Steam-Deck-Gaming keinen praktischen Vorteil gegenüber guten A2-Karten mit UHS-I bieten."
       }
     ],
     "relatedDevices": [
@@ -156,7 +155,7 @@
       "asus-rog-ally",
       "ayn-odin-3-odin-2-portal"
     ],
-    "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library."
+    "notes": "Steam Deck uses UHS-I only. Any A1 or A2 card is enough, because game loads depend on random reads, not the video speed class. Recommend 256GB+ for game library."
   },
   {
     "id": "asus-rog-ally",
@@ -351,16 +350,10 @@
     "whySpecs": "Nintendo unterstützt offiziell SDHC-Karten bis 32GB, aber SDXC-Karten bis 128GB (oder sogar größer, wobei 128GB das praktische Limit ist) funktionieren einwandfrei, wenn sie auf FAT32 formatiert werden. Class-10-Karten bieten schnelleres Laden von Spielen und eShop-Downloads und verbessern so das Nutzererlebnis insgesamt. Class 4 ist veraltet; Class 10 ist das moderne Minimum.",
     "recommendedBrands": [
       {
-        "id": "sandisk-ultra-microsd"
+        "id": "sandisk-ultra-sd-uhs1"
       },
       {
-        "id": "kingston-canvas-select"
-      },
-      {
-        "id": "samsung-evo-select-microsd"
-      },
-      {
-        "id": "amazon-basics-microsd"
+        "id": "lexar-professional-633x-sd"
       }
     ],
     "faq": [
@@ -862,22 +855,21 @@
       "taito egret sd karte"
     ],
     "sdCard": {
-      "type": "SDHC / SDXC",
+      "type": "SDHC",
       "minSpeed": "Class 10",
       "minWriteSpeed": "10 MB/s",
       "recommendedCapacity": [
-        "32GB",
-        "64GB"
+        "32GB"
       ],
-      "maxCapacity": "128GB"
+      "maxCapacity": "32GB (SDHC)"
     },
     "whySpecs": "Der Taito Egret II Mini verwendet den SD-Kartenslot für Firmware-Updates und zum Laden zusätzlicher Spiele über offizielle Erweiterungspakete oder Sideloading. Hohe Geschwindigkeiten sind nicht erforderlich.",
     "recommendedBrands": [
       {
-        "id": "sandisk-ultra-microsd"
+        "id": "sandisk-ultra-sd-uhs1"
       },
       {
-        "id": "kioxia-exceria"
+        "id": "lexar-professional-633x-sd"
       }
     ],
     "faq": [
@@ -998,14 +990,14 @@
     ],
     "sdCard": {
       "type": "microSD, microSDXC",
-      "minSpeed": "U3 / A1",
-      "minWriteSpeed": "30 MB/s",
+      "minSpeed": "A1",
       "recommendedCapacity": [
         "128GB",
         "256GB",
         "512GB"
       ],
-      "maxCapacity": "2TB"
+      "maxCapacity": "2TB",
+      "minAppPerformance": "A2 (empfohlen)"
     },
     "whySpecs": "Das RG556 ist ein Android-basiertes Handheld, das PS2- und GameCube-Emulation beherrscht. Die Verwendung einer Karte mit hoher Kapazität (256GB+) wird empfohlen, um diese großen, diskbasierten ROM-Dateien zu speichern. A1-Geschwindigkeit wird für Android-App-Leistung empfohlen.",
     "recommendedBrands": [
@@ -1406,8 +1398,7 @@
     ],
     "sdCard": {
       "type": "microSDXC UHS-I",
-      "minSpeed": "U3 / V30",
-      "minWriteSpeed": "30 MB/s",
+      "minSpeed": "A1",
       "minAppPerformance": "A2 (empfohlen)",
       "recommendedCapacity": [
         "256GB",
@@ -1415,7 +1406,7 @@
       ],
       "maxCapacity": "1TB"
     },
-    "whySpecs": "Kompakte Variante mit Snapdragon 865, 6GB RAM und 3,7\" 4:3-AMOLED-Display. Das 4:3-Seitenverhältnis ist perfekt für klassische Arcade- und Konsolenspiele. Die A2-Anwendungsleistung sorgt für reaktionsschnelle Menünavigation und flüssiges Asset-Laden. V30 unterstützt zuverlässiges Streaming großer ROM-Bibliotheken.",
+    "whySpecs": "Kompakte Variante mit Snapdragon 865, 6GB RAM und 3,7\" 4:3-AMOLED-Display. Das 4:3-Seitenverhältnis ist perfekt für klassische Arcade- und Konsolenspiele. Die A2-Anwendungsleistung sorgt für reaktionsschnelle Menünavigation und flüssiges Asset-Laden.",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-microsd"
@@ -1820,9 +1811,7 @@
     ],
     "sdCard": {
       "type": "microSD UHS-II",
-      "minSpeed": "V60 / V90",
-      "minWriteSpeed": "60 MB/s",
-      "minAppPerformance": "A2",
+      "minSpeed": "A2",
       "recommendedCapacity": [
         "512GB",
         "1TB"

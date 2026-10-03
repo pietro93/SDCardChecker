@@ -123,9 +123,8 @@
     ],
     "sdCard": {
       "type": "microSD UHS-I (non UHS-II)",
-      "minSpeed": "V30",
-      "minWriteSpeed": "30 MB/s",
-      "minAppPerformance": "A1",
+      "minSpeed": "A1",
+      "minAppPerformance": "A2 (consigliata)",
       "recommendedCapacity": [
         "256GB",
         "512GB"
@@ -133,7 +132,7 @@
       "maxCapacity": "2TB (teorico)",
       "testedMaxCapacity": "1TB"
     },
-    "whySpecs": "Steam Deck utilizza l'interfaccia UHS-I ed esegue SteamOS direttamente dalla scheda, quindi le prestazioni applicative A1 sono importanti per la reattività del sistema operativo. Sebbene V30 sia sufficiente per giocare, gli IOPS casuali A1 sono essenziali. Scegli schede di marchi affidabili classificate V30 e certificate A1. Nota: sebbene supporti teoricamente fino a 2TB, la capacità massima testata e verificata funzionante è 1TB.",
+    "whySpecs": "Lo slot microSD di Steam Deck è UHS-I, quindi le schede si fermano intorno a 100 MB/s, qualunque cosa dica l'etichetta. I giochi si caricano dalla scheda con piccole letture casuali, cioè proprio ciò che misurano le classi applicative A1 e A2. Le schede da 2TB come SanDisk Extreme e Lexar Play funzionano. Nel 2026 i prezzi delle microSD sono saliti su tutti i tagli a causa di una carenza di memoria flash NAND.",
     "recommendedBrands": [
       {
         "id": "kingston-canvas-go-plus-ultra"
@@ -148,7 +147,7 @@
     "faq": [
       {
         "q": "Posso usare schede veloci V60?",
-        "a": "<b>Sì, le schede microSD V60 e più veloci funzionano perfettamente con Steam Deck</b>. Tuttavia, <b>l'interfaccia UHS-I del dispositivo limita il vantaggio di velocità</b>, quindi le schede più veloci non offrono alcun vantaggio pratico rispetto alle schede V30 per il gaming su Steam Deck."
+        "a": "<b>Sì, le schede microSD V60 e più veloci funzionano perfettamente con Steam Deck</b>. Tuttavia, <b>l'interfaccia UHS-I del dispositivo limita il vantaggio di velocità</b>, quindi le schede più veloci non offrono alcun vantaggio pratico rispetto a una buona scheda A2 UHS-I per il gaming su Steam Deck."
       }
     ],
     "relatedDevices": [
@@ -156,7 +155,7 @@
       "asus-rog-ally",
       "ayn-odin-3-odin-2-portal"
     ],
-    "notes": "Steam Deck uses UHS-I only. V30 cards sufficient. Recommend 256GB+ for game library."
+    "notes": "Steam Deck uses UHS-I only. Any A1 or A2 card is enough, because game loads depend on random reads, not the video speed class. Recommend 256GB+ for game library."
   },
   {
     "id": "asus-rog-ally",
@@ -351,16 +350,10 @@
     "whySpecs": "Nintendo supporta ufficialmente le schede SDHC fino a 32GB, ma le schede SDXC fino a 128GB (o anche più grandi, sebbene 128GB sia il limite pratico) funzionano perfettamente se formattate in FAT32. Le schede Class 10 offrono un caricamento dei giochi e download dall'eShop più rapidi, migliorando l'esperienza utente complessiva. La Class 4 è obsoleta; la Class 10 è il minimo moderno.",
     "recommendedBrands": [
       {
-        "id": "sandisk-ultra-microsd"
+        "id": "sandisk-ultra-sd-uhs1"
       },
       {
-        "id": "kingston-canvas-select"
-      },
-      {
-        "id": "samsung-evo-select-microsd"
-      },
-      {
-        "id": "amazon-basics-microsd"
+        "id": "lexar-professional-633x-sd"
       }
     ],
     "faq": [
@@ -862,22 +855,21 @@
       "taito egret scheda sd"
     ],
     "sdCard": {
-      "type": "SDHC / SDXC",
+      "type": "SDHC",
       "minSpeed": "Class 10",
       "minWriteSpeed": "10 MB/s",
       "recommendedCapacity": [
-        "32GB",
-        "64GB"
+        "32GB"
       ],
-      "maxCapacity": "128GB"
+      "maxCapacity": "32GB (SDHC)"
     },
     "whySpecs": "Il Taito Egret II Mini utilizza lo slot per schede SD per gli aggiornamenti del firmware e per caricare giochi aggiuntivi tramite pacchetti di espansione ufficiali o sideloading. Non richiede velocità elevate.",
     "recommendedBrands": [
       {
-        "id": "sandisk-ultra-microsd"
+        "id": "sandisk-ultra-sd-uhs1"
       },
       {
-        "id": "kioxia-exceria"
+        "id": "lexar-professional-633x-sd"
       }
     ],
     "faq": [
@@ -998,14 +990,14 @@
     ],
     "sdCard": {
       "type": "microSD, microSDXC",
-      "minSpeed": "U3 / A1",
-      "minWriteSpeed": "30 MB/s",
+      "minSpeed": "A1",
       "recommendedCapacity": [
         "128GB",
         "256GB",
         "512GB"
       ],
-      "maxCapacity": "2TB"
+      "maxCapacity": "2TB",
+      "minAppPerformance": "A2 (consigliata)"
     },
     "whySpecs": "L'RG556 è una console basata su Android capace di emulare PS2 e GameCube. Si consiglia l'uso di una scheda ad alta capacità (256GB+) per archiviare questi grandi file ROM su disco. La velocità A1 è consigliata per le prestazioni delle app Android.",
     "recommendedBrands": [
@@ -1406,8 +1398,7 @@
     ],
     "sdCard": {
       "type": "microSDXC UHS-I",
-      "minSpeed": "U3 / V30",
-      "minWriteSpeed": "30 MB/s",
+      "minSpeed": "A1",
       "minAppPerformance": "A2 (consigliata)",
       "recommendedCapacity": [
         "256GB",
@@ -1415,7 +1406,7 @@
       ],
       "maxCapacity": "1TB"
     },
-    "whySpecs": "Variante compatta con Snapdragon 865, 6GB di RAM e display AMOLED 4:3 da 3,7\". Il rapporto d'aspetto 4:3 è perfetto per i classici giochi arcade e da console. Le prestazioni applicative A2 garantiscono una navigazione dei menu reattiva e un caricamento fluido delle risorse. V30 supporta uno streaming affidabile di grandi librerie di ROM.",
+    "whySpecs": "Variante compatta con Snapdragon 865, 6GB di RAM e display AMOLED 4:3 da 3,7\". Il rapporto d'aspetto 4:3 è perfetto per i classici giochi arcade e da console. Le prestazioni applicative A2 garantiscono una navigazione dei menu reattiva e un caricamento fluido delle risorse.",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-microsd"
@@ -1820,9 +1811,7 @@
     ],
     "sdCard": {
       "type": "microSD UHS-II",
-      "minSpeed": "V60 / V90",
-      "minWriteSpeed": "60 MB/s",
-      "minAppPerformance": "A2",
+      "minSpeed": "A2",
       "recommendedCapacity": [
         "512GB",
         "1TB"
