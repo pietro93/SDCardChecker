@@ -10,7 +10,7 @@
 ## The problem in five lines
 
 1. The site earns from Mediavine ads and Amazon affiliate links.
-2. Only US visitors can earn affiliate money. DE/FR/IT pages send everyone to amazon.com with the US tag, and the Japanese tag `sd-cc-22` is **not live**, so the 1,088 amazon.co.jp links on `/ja/` pay nothing.
+2. Only US and Japanese visitors can earn affiliate money. DE/FR/IT pages send everyone to amazon.com with the US tag. Japan uses the new tag `sdcc-22` (live since 2026-10-05; the old `sd-cc-22` was dead).
 3. About 54 pages (cards, cars, compare) don't load the Mediavine script at all. There is no analytics. The code calls `gtag()` in two places but GA is never loaded, so nobody knows which pages or slots get clicks.
 4. Affiliate tags are hardcoded in about 150 places, so fixing (2) means touching all of them unless we centralize first.
 5. Two smaller but visible problems: "(Mapped)" in product names on 246 pages, and Product schema with invented prices.
@@ -51,7 +51,6 @@ grep -rl "googletagmanager.com/gtag" dist | wc -l      # should become ~all page
 
 | Item | What you get | Until then |
 |---|---|---|
-| Why `sd-cc-22` is dead, and a working JP tag | JP tag | Keep JA links to amazon.co.jp as they are. Mark the tag `"live": false` in config |
 | Amazon UK/CA/DE/FR/IT tags | One tag per marketplace | DE/FR/IT keep amazon.com + US tag (same as today, nothing gets worse) |
 | US per-section tracking IDs | e.g. `sdcc-device-20`, `sdcc-calc-20` | Every section falls back to `sd-cc-20` |
 | GA4 measurement ID | `G-XXXXXXX` | Use a placeholder in config. The analytics snippet must not render if the ID is empty |
@@ -92,7 +91,7 @@ grep -rl "googletagmanager.com/gtag" dist | wc -l      # should become ~all page
      "ga4MeasurementId": "",
      "marketplaces": {
        "us": { "host": "www.amazon.com",   "tag": "sd-cc-20", "live": true },
-       "jp": { "host": "www.amazon.co.jp", "tag": "sd-cc-22", "live": false },
+       "jp": { "host": "www.amazon.co.jp", "tag": "sdcc-22",  "live": true },
        "de": { "host": "www.amazon.de",    "tag": "", "live": false },
        "fr": { "host": "www.amazon.fr",    "tag": "", "live": false },
        "it": { "host": "www.amazon.it",    "tag": "", "live": false }

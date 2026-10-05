@@ -25,7 +25,7 @@ Owner tags: **(P)** Pietro, needs account access or a business decision. **(D)**
 |---|---|
 | Mediavine Journey display ads + Grow.me | Live on about 1,095 pages via `generateGrowScript()` in `src/templates/components.js` |
 | Amazon US Associates `sd-cc-20` | Live, used on EN **and** DE/FR/IT pages |
-| Amazon JP Associates `sd-cc-22` | **Not live. Japan earns nothing.** 1,088 amazon.co.jp links currently pay zero |
+| Amazon JP Associates `sdcc-22` | Live since 2026-10-05 (replaced the dead `sd-cc-22`). All amazon.co.jp links on `/ja/` now carry it |
 | Amazon Creator Connections `uproot01-20` | Live on promoted cards (`data/promoted-cards.json`) |
 
 ### Traffic (stale: last GSC pull in repo is January 4, 2026)
@@ -69,7 +69,7 @@ Owner tags: **(P)** Pietro, needs account access or a business decision. **(D)**
 
 ### Account actions (P)
 
-- [ ] **(P)** Find out why `sd-cc-22` (Amazon JP) isn't live: never approved, rejected, or closed? Amazon closes accounts with no qualifying sales in the first 180 days, and that may be what happened here. Reapply or appeal. Record the outcome in this file.
+- [x] **(P)** Get a working Amazon JP tag. Done 2026-10-05: new tag `sdcc-22` replaces the dead `sd-cc-22` in `data/sdcards-ja.json`. Amazon closes accounts with no qualifying sales in the first 180 days, so watch for a first JP sale.
 - [ ] **(P)** Apply to Amazon Associates for UK, CA, DE, FR, IT (and ES if a Spanish locale is ever planned). Each marketplace issues its own tag. Record tags in the table in section 9.
 - [ ] **(P)** Once approved, link the accounts to the US account and turn on Amazon OneLink. Check which marketplaces OneLink currently supports. Fallback if coverage is poor: Geniuslink (paid, covers all stores).
 - [ ] **(P)** In the US Associates dashboard, create per-section tracking IDs (Amazon allows up to 100): `sdcc-device-20`, `sdcc-card-20`, `sdcc-calc-20`, `sdcc-guide-20`, `sdcc-compare-20`, `sdcc-reader-20`, `sdcc-car-20`. Exact names are up to you; put the final list in section 9.
@@ -206,7 +206,7 @@ Fill in as accounts are approved. This table is the human record; `data/affiliat
 |---|---|---|---|
 | US | amazon.com | `sd-cc-20` | Live |
 | US (Creator Connections) | amazon.com | `uproot01-20` | Live |
-| Japan | amazon.co.jp | `sd-cc-22` | **Not live** |
+| Japan | amazon.co.jp | `sdcc-22` | Live (2026-10-05) |
 | UK | amazon.co.uk | | Not applied |
 | Canada | amazon.ca | | Not applied |
 | Germany | amazon.de | | Not applied |
@@ -219,7 +219,6 @@ US section tracking IDs: _to be created (see Sprint 1)_.
 
 ## 10. Open questions and decisions
 
-- **Why is `sd-cc-22` not live?** The answer decides whether JA stays an affiliate locale or becomes ads-only. (P)
 - **GA4 vs a cookie-free tool (Plausible, Cloudflare Web Analytics)?** Recommendation: GA4, because the code already calls `gtag()`, it's free, and the privacy policy already names it. Revisit if consent handling becomes a problem.
 - **Keep Product schema at all?** Google needs a real offer, review or rating for Product markup. We have no real price or reviews yet, so the safe default is to drop the `ItemList` of Products and keep FAQ, Article and Breadcrumb schema. Re-add when real prices come from Amazon's product API.
 - **Hosting:** both `vercel.json` and a Cloudflare Pages `functions/` folder exist. Confirm which one serves production and remove the other's config.

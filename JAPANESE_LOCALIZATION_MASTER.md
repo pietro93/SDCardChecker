@@ -297,7 +297,7 @@ npm run build:ja    → amazon.co.jp API → cache-ja/ → /dist/ja/
 ```bash
 AMAZON_ACCESS_KEY_JA=your_jp_key
 AMAZON_SECRET_KEY_JA=your_jp_secret
-AMAZON_TAG_JA=sd-cc-22
+AMAZON_TAG_JA=sdcc-22
 ```
 
 **Files Involved:**
