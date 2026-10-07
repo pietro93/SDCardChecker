@@ -4,6 +4,7 @@
  */
 
 const path = require("path");
+const fs = require("fs");
 const { readTemplate, processIncludes, writeFile, readJSON } = require("./helpers");
 const { generateHeader, generateFooter, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 
@@ -102,4 +103,27 @@ async function generateToolsPages(distPath) {
   }
 }
 
-module.exports = { generateToolsPages };
+/**
+ * The two Japanese calculators are static pages in public/ja/tools/ that carry shell
+ * placeholders. Without this pass they ship with literal {{HEADER}} / {{FOOTER}} text.
+ * The Amazon badge block is a US-marketplace English feature, so it renders empty.
+ */
+function renderJapaneseToolPages(distPath) {
+  const dir = path.join(distPath, "ja", "tools");
+  let count = 0;
+  for (const slug of ["recording-time-calculator", "dashcam-storage-calculator"]) {
+    const file = path.join(dir, slug, "index.html");
+    if (!fs.existsSync(file)) continue;
+    const html = fs.readFileSync(file, "utf8")
+      .replace(/{{HEADER}}/g, generateHeader("ja"))
+      .replace(/{{FOOTER}}/g, generateFooter("ja"))
+      .replace(/{{SIDEBAR}}/g, generateSidebar("ja"))
+      .replace(/{{GROW_SCRIPT}}/g, generateGrowScript())
+      .replace(/{{AMAZON_FEATURED_CALCULATOR_PRICE}}/g, "");
+    fs.writeFileSync(file, html);
+    count++;
+  }
+  console.log(`  ✓ Rendered ${count} ja calculator pages`);
+}
+
+module.exports = { generateToolsPages, renderJapaneseToolPages };

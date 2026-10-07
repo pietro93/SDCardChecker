@@ -199,7 +199,7 @@ function generateCategoryPage(category, devices, template, locale = "en", catego
   const categoryUrl = `${baseUrl}${dirPrefix}/categories/${categorySlug}/`;
   const categoryLabel = getCategoryLabel(category, locale);
   const heroTitle = t("categoryPage.heroTitleTemplate", locale).replace("{category}", categoryLabel);
-  const categoryTitle = `${heroTitle} | SD Card Checker`;
+  const categoryTitle = locale === "ja" ? heroTitle : `${heroTitle} | SD Card Checker`;
   const categoryIntro = getCategoryIntro(categorySlug, category, locale);
   // Build description from intro text, truncating to ~140-150 chars for SEO.
   // Cut at a word boundary so the snippet doesn't end in a severed word.

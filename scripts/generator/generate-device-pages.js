@@ -100,6 +100,8 @@ const DEVICE_TITLE_STRINGS = {
             `${name}のSDカードおすすめ｜${sdType}の必要スペック`,
             `${name}のSDカードおすすめ｜必要スペック`,
             `${name}のSDカードおすすめ`,
+            // Long katakana readings in the name: keep the latin name, drop the reading
+            `${name.replace(/s*[（(][^）)]*[）)]/g, "")}のSDカードおすすめ`,
         ], TITLE_MAX_LENGTH, displayWidth),
         ogTitle: (name) => `${name}のSDカードおすすめと必要スペック`,
         twitterTitle: (name) => `${name}のSDカードおすすめ`,

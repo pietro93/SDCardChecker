@@ -37,6 +37,7 @@ const GUIDES_BY_LOCALE = {
   ],
   ja: [
     "/ja/guides/sd-card-speed-classes/", "/ja/guides/is-my-sd-card-fake/", "/ja/guides/nintendo-switch-sd-card-guide/",
+    "/ja/tools/recording-time-calculator/", "/ja/tools/dashcam-storage-calculator/",
   ],
 };
 

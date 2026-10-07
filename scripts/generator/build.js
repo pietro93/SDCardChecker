@@ -19,7 +19,7 @@ const { generateCategoryPages, generateSubcategoryPages } = require("./generate-
 const { generateCategoriesIndexPage } = require("./generate-categories-index");
 const { generateResourcePages } = require("./generate-resource-pages");
 const { generateCalculatorPages } = require("./generate-calculator-pages");
-const { generateToolsPages } = require("./generate-tools-pages");
+const { generateToolsPages, renderJapaneseToolPages } = require("./generate-tools-pages");
 const { generateReaderPages } = require("./generate-reader-pages");
 const { generateReadersIndex } = require("./generate-readers-index");
 const { generateReadersTypeIndexPages } = require("./generate-readers-type-index");
@@ -27,6 +27,7 @@ const { generateCoreFiles, generateSitemapIndex, generateRobots, generate404Page
 const { getCategorySlug } = require("./helpers");
 const { generateLocalizedGuides } = require("./generate-guides");
 const { generateRedirects } = require("./generate-redirects");
+const { addHreflangToTranslatedPages } = require("./add-hreflang");
 const { generateCarPages } = require("./generate-car-pages");
 const { generateCarsIndex } = require("./generate-cars-index");
 const { generateCardPages } = require("./generate-card-pages");
@@ -193,6 +194,7 @@ async function build() {
     console.log();
 
     await generateToolsPages(distPath);
+    renderJapaneseToolPages(distPath);
     console.log();
 
     await generateReaderPages();
@@ -220,6 +222,10 @@ async function build() {
     console.log();
 
     await generateRedirects(allDevices, distPath);
+    console.log();
+
+    // Static/guide pages are rendered outside the device generators, so tag them after the fact
+    addHreflangToTranslatedPages(distPath, locales);
     console.log();
 
     // 5. Global files (English-only 404, sitemap index, robots.txt listing every enabled locale's sitemap)

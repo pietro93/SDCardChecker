@@ -31,7 +31,7 @@ const CATEGORY_DESCRIPTIONS = {
     "accessories": "Explore SD card readers, adapters, and other accessories for your devices.",
   },
   ja: {
-    "cameras": "RAW写真撮影と高ビットレート動画に対応したDSLRおよびミラーレスカメラ向けの最高のSDカードを見つけてください。",
+    "cameras": "RAW写真撮影と高ビットレート動画に対応したDSLRおよびミラーレスカメラにおすすめのSDカードを探せます。",
     "action-cameras": "4K以上の動画撮影のための高速で信頼性の高いストレージが必要なGoPro、DJI、その他のアクションカメラ向けのSDカードをお探しください。",
     "drones": "DJI、Autel、その他のドローンシステム向けの4K動画キャプチャに対応したSDカードを比較してください。",
     "gaming-handhelds": "信頼性の高い高速ストレージが必要なNintendo Switch、Steam Deck、その他の携帯ゲーム機向けのSDカードオプションをお探しください。",
@@ -39,7 +39,7 @@ const CATEGORY_DESCRIPTIONS = {
     "smartphones": "iPhone、Samsung Galaxy、Google Pixel、その他のスマートフォン向けの外部SDカードリーダーおよび推奨事項をご確認ください。",
     "dash-cams": "ドライブレコーダーおよび車載レコーダーシステム向けの耐久性の高いSDカードを見つけてください。",
     "security-cameras": "セキュリティカメラシステム向けの24時間監視対応のmicroSDカードをお探しください。",
-    "music-production": "Akai MPCやRoland SP-404MKIIなどのスタンドアロンサンプラー・ドラムマシン向けの最高のSDカードを見つけてください。ライブ中のサンプルストリーミングをドロップアウトさせない信頼性の高いカードをお探しください。",
+    "music-production": "Akai MPCやRoland SP-404MKIIなどのスタンドアロンサンプラー・ドラムマシンにおすすめのSDカードを探せます。ライブ中のサンプルストリーミングをドロップアウトさせない信頼性の高いカードをお探しください。",
     "accessories": "SDカードリーダー、アダプター、およびデバイス用のその他のアクセサリーをお探しください。",
   },
 };

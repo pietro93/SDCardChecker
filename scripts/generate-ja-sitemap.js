@@ -59,12 +59,12 @@ function generateSitemap() {
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sdcardchecker.com/ja/tools/dashcam-storage-calculator-ja/</loc>
+    <loc>https://sdcardchecker.com/ja/tools/dashcam-storage-calculator/</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sdcardchecker.com/ja/tools/recording-time-calculator-ja/</loc>
+    <loc>https://sdcardchecker.com/ja/tools/recording-time-calculator/</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
     <priority>0.8</priority>
   </url>

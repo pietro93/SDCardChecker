@@ -48,11 +48,13 @@ function generateGuidePage(templatePath, distPath, fileName, locale) {
             .replace(/{{FOOTER}}/g, components.generateFooter(locale))
             .replace(/{{GROW_SCRIPT}}/g, components.generateGrowScript())
             .replace(/{{AFFILIATE_DISCLOSURE}}/g, components.generateAffiliateDisclosure(locale))
-            .replace(/{{BASE_URL}}/g, "https://sdcardchecker.com");
+            .replace(/{{BASE_URL}}/g, "https://sdcardchecker.com")
+            // Amazon badge blocks are English/US-marketplace only
+            .replace(/{{AMAZON_FEATURED_[A-Z_]+}}/g, "");
 
         // Handle Nintendo Branded Cards Grid (for Nintendo Switch guides)
         if (html.includes('{{NINTENDO_BRANDED_CARDS_GRID}}')) {
-            const nintendoGridPath = path.join(srcPath, "templates", "components", "nintendo-branded-cards-grid.html");
+            const nintendoGridPath = path.join(srcPath, "templates", "components", locale === "ja" ? "nintendo-branded-cards-grid-ja.html" : "nintendo-branded-cards-grid.html");
             if (fs.existsSync(nintendoGridPath)) {
                 let nintendoGridTemplate = fs.readFileSync(nintendoGridPath, 'utf-8');
 
