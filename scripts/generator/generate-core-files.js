@@ -10,7 +10,7 @@
 const path = require("path");
 const fs = require("fs");
 const { readTemplate, processIncludes, writeFile, getCategorySlug, generateHreflangTags, t } = require("./helpers");
-const { generateHeader, generateFooter, generateSidebar, generateGrowScript, generateAffiliateDisclosure } = require("../../src/templates/components");
+const { generateHeader, generateFooter, generateSidebar, generateBoardPromo, generateGrowScript, generateAffiliateDisclosure } = require("../../src/templates/components");
 
 const srcPath = path.join(__dirname, "../../src");
 const locales = JSON.parse(fs.readFileSync(path.join(__dirname, "../../data/locales.json"), "utf8"));
@@ -242,6 +242,7 @@ function generateHomepage(distPath, locale = "en", availableLocales = [locale], 
     .replace("{{HEADER}}", header)
     .replace("{{FOOTER}}", footer)
     .replace("{{GROW_SCRIPT}}", growScript)
+    .replace("{{BOARD_PROMO}}", generateBoardPromo(locale, { follow: true }))
     .replace("{{STAT_DEVICES}}", stats.devices)
     .replace("{{STAT_CARDS}}", stats.cards)
     .replace("{{STAT_CATEGORIES}}", stats.categories);
