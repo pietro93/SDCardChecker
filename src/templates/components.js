@@ -413,6 +413,25 @@ ${moreCategoryItems}
     </ul>
   </div>` : "";
 
+    const boardPromoBlock = locale === "en" ? `
+  <!-- AI Training Board self-promo -->
+  <div class="mb-6 border-t border-slate-200 pt-6">
+    <p class="atb-adlabel">Ad</p>
+    <a class="atb-card" href="https://aitrainingboard.com/?utm_source=sdcardchecker.com&utm_medium=sidebar&utm_campaign=board" target="_blank" rel="noopener" onclick="if(typeof gtag!=='undefined')gtag('event','ad_click',{ad_name:'ai-training-board',ad_placement:'sidebar'})">
+      <div class="atb-left">
+        <span class="atb-kicker">AI Training Board</span>
+        <span class="atb-title">Find your next AI training gig</span>
+        <span class="atb-body">3,000+ work from home data annotation jobs from 15+ platforms. Updated daily.</span>
+        <span class="atb-cta">Check it out</span>
+      </div>
+      <div class="atb-right">
+        <div class="atb-tape"><span>Hourly rate on every row</span></div>
+        <i class="atb-spark atb-s1"></i><i class="atb-spark atb-s2"></i><i class="atb-spark atb-s3"></i><i class="atb-spark atb-s4"></i>
+        <div class="atb-loop"><img src="/img/loopy-eureka-720.webp" alt="" width="720" height="720" loading="lazy"></div>
+      </div>
+    </a>
+  </div>` : "";
+
      return `<!-- Right Sidebar Navigation -->
 <aside style="width: 100%; max-width: 380px; flex-shrink: 0; margin-top: 3rem; position: sticky; top: 80px; background: white; border-radius: 6px; border: 1px solid #e5e5e5; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
    <!-- Search Bar at Top -->
@@ -451,6 +470,7 @@ ${primaryCategoryItems}${moreCategoriesBlock}
   </div>
 ${calculatorsBlock}
 ${guidesBlock}
+${boardPromoBlock}
   <!-- About Section -->
   <div class="mb-6 border-t border-slate-200 pt-6">
     <h3 class="text-sm font-semibold text-slate-900 mb-3">${t("sidebar.aboutHeading", locale)}</h3>
