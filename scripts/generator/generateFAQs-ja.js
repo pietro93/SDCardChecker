@@ -3,6 +3,8 @@
  * Programmatically generate device-specific FAQ answers in Japanese
  */
 
+const { jaMaxCapacityPhrase } = require("./helpers");
+
 /**
  * Generate FAQs programmatically based on device specs (Japanese version)
  * Answers are specific to each device using its actual data
@@ -27,23 +29,24 @@ function generateFAQsJa(device, sdcardsMap) {
   const isDemandingDevice = ["V60", "V90", "U3"].some((v) =>
     speedClass.includes(v)
   );
-  const isNoSpeedRequired = speedClass === "最低要件なし" || speedClass === "No minimum required";
+  const isNoSpeedRequired = ["最低要件なし", "指定なし", "No minimum required"].includes(speedClass) || speedClass.startsWith("N/A");
+  const maxCapacityText = jaMaxCapacityPhrase(maxCapacity);
 
   // 1. スピードクラスに関する質問 (Speed Class Question)
   if (!isNoSpeedRequired) {
     const speedClassName = speedClass.match(/V\d+/)?.[0] || speedClass;
     faqs.push({
       q: `${speedClassName}は${device.name}に必要ですか？`,
-      a: `はい、${speedClassName}は${device.name}に推奨されます。${writeSpeed}の最小持続書き込み速度を保証し、${isDemandingDevice ? "プロフェッショナルな" : ""}安定した${isDemandingDevice ? "録画" : "記録"}中にフレーム落ちやエラーなく${isDemandingDevice ? "プロフェッショナルな記録" : "安定した動作"}が可能になります。`,
+      a: `はい、${device.name}には${speedClassName}以上のカードをおすすめします。${speedClassName}は書き込み速度${writeSpeed}以上を保証する規格で、${isDemandingDevice ? "高画質の録画でもコマ落ちや録画の停止を防げます" : "記録中のエラーを防げます"}。`,
     });
   }
 
   // 2. ストレージ容量に関する質問 (Storage Capacity Question)
-  let capacityAnswer = `${capacity.join("または")}のカードをお勧めします。通常の使用には${capacity[0]}で十分ですが、最大${maxCapacity}まで対応しています`;
+  let capacityAnswer = `${capacity.join("または")}のカードがおすすめです。普段使いなら${capacity[0]}で十分で、${maxCapacityText}`;
   if (testedMaxCapacity) {
-    capacityAnswer += `（${testedMaxCapacity}の動作を検証済み）`;
+    capacityAnswer += `（${testedMaxCapacity}で動作報告あり）`;
   }
-  capacityAnswer += `。頻繁に撮影し、カード交換を最小限に抑えたい場合は、より大きな容量が便利です。`;
+  capacityAnswer += `。撮影量が多く、カードの交換を減らしたい場合は大きめの容量が便利です。`;
   
   faqs.push({
     q: `${device.name}にはどのくらいのストレージ容量が必要ですか？`,
@@ -54,7 +57,7 @@ function generateFAQsJa(device, sdcardsMap) {
   if (!isNoSpeedRequired) {
     faqs.push({
       q: `${device.name}で古いまたは低速のカードを使用できますか？`,
-      a: `推奨されません。${speedClass}より遅いカードを使用すると、フレーム落ち、ファイル破損、録画失敗の原因となります。信頼性を確保するため、常に${speedClass}以上のカードを使用してください。`,
+      a: `おすすめしません。${speedClass}より遅いカードでは、コマ落ちやファイルの破損、録画の停止が起きることがあります。${speedClass}以上のカードを使ってください。`,
     });
   } else {
     faqs.push({
@@ -74,7 +77,7 @@ function generateFAQsJa(device, sdcardsMap) {
   } else if (cardType.includes("UHS")) {
     faqs.push({
       q: `${device.name}にはUHSカードが必要ですか？`,
-      a: `${device.name}で最高のパフォーマンスを得るためにはUHSカードが推奨されます。非UHSカードも動作しますが、転送速度が遅くなる可能性があります。このデバイスにはUHS-${cardType.match(/UHS-\d/)?.[0] || "II"}が最適です。`,
+      a: `${device.name}の性能を引き出すにはUHSカードがおすすめです。UHS非対応のカードも使えますが、転送速度が遅くなることがあります。この機種には${cardType.match(/UHS-I+/)?.[0] || "UHS-I"}のカードが適しています。`,
     });
   }
 
@@ -87,7 +90,7 @@ function generateFAQsJa(device, sdcardsMap) {
     if (highEndCards.length > 0 || isDemandingDevice) {
       faqs.push({
         q: `${device.name}で複数のカードを使用すべきですか？`,
-        a: `プロフェッショナルな用途や長時間の撮影セッションでは、デュアルカード（2枚のカード）を使用することで冗長性が確保され、バックアップの役割も果たします。複数のカードを使用することで、万が一1枚のカードが故障しても映像を失うリスクを減らせます。これは特に貴重な記録を行う際に重要です。`,
+        a: `仕事の撮影や長時間の撮影では、カードを複数枚に分けると、1枚が故障したときに失うデータを減らせます。デュアルスロットの機種なら、2枚に同時記録してバックアップにする設定もあります。撮り直しのきかない撮影では特に有効です。`,
       });
     }
   }
@@ -95,21 +98,21 @@ function generateFAQsJa(device, sdcardsMap) {
   // 6. ブランドの信頼性に関する質問 (Brand Reliability Question)
   faqs.push({
     q: `${device.name}で使用するカードのブランドは重要ですか？`,
-    a: `はい。SanDisk、Lexar、Kingston、またはKIOXIA（旧東芝メモリ）やSamsungなどの信頼できるブランドが推奨されます。高品質なブランドは信頼性が高く、保証サポートも充実しています。特に要求の厳しいデバイスでは、無名ブランドは避けるべきです。`,
+    a: `はい。SanDisk、Lexar、Kingston、KIOXIA（旧東芝メモリ）、Samsungなど信頼できるメーカーを選んでください。保証がしっかりしており、表示どおりの速度が出ます。無名ブランドや極端に安いカードは、容量や速度を偽った偽造品のことがあります。`,
   });
 
   // 7. 間違ったカードを使用した際のリスク (Data Loss/Corruption Risk)
   if (!isNoSpeedRequired) {
     faqs.push({
       q: `${device.name}で間違ったカードを使用するとどうなりますか？`,
-      a: `${speedClass}より遅いカードを使用すると、録画中のフレーム落ち、ファイルの破損、または録画の完全な失敗を引き起こす可能性があります。データ損失を避けるため、${speedClass}以上のカードを必ず使用してください。`,
+      a: `${speedClass}より遅いカードでは、録画中のコマ落ちやファイルの破損が起きたり、録画が途中で止まったりすることがあります。データを失わないよう、${speedClass}以上のカードを使ってください。`,
     });
   }
 
   // 8. カードの寿命に関する質問 (Card Lifespan Question)
   faqs.push({
     q: `SDカードは${device.name}でどのくらい持ちますか？`,
-    a: `高品質なSDカードは、通常の使用で3～5年程度持ちます。読み書きエラーやファイルの破損が頻繁に発生する場合、またはカードを落としたり極端な環境にさらしたりした場合は、交換することをお勧めします。`,
+    a: `品質の良いSDカードなら、通常の使い方で3〜5年ほど使えます。読み書きのエラーやファイルの破損が増えてきたら交換してください。`,
   });
 
   return faqs;

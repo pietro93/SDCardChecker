@@ -111,14 +111,14 @@
       "iphone 13 pro"
     ],
     "sdCard": {
-      "type": "External via Lightning Reader",
+      "type": "Lightningリーダー経由（スロットなし）",
       "minSpeed": "UHS-I",
       "recommendedCapacity": [
         "64GB",
         "128GB"
       ]
     },
-    "whySpecs": "iPhone 13 uses Lightning port with microSD readers.",
+    "whySpecs": "iPhone 13にSDカードスロットはありません。Lightning接続のmicroSDカードリーダーを使ってデータをやり取りします。",
     "recommendedBrands": [
       {
         "id": "lexar-lightning-microsd"
@@ -140,7 +140,7 @@
       "iphone 14 max"
     ],
     "sdCard": {
-      "type": "External via Lightning Reader",
+      "type": "Lightningリーダー経由（スロットなし）",
       "minSpeed": "UHS-I",
       "recommendedCapacity": [
         "64GB",
@@ -170,7 +170,7 @@
       "iphone se 3"
     ],
     "sdCard": {
-      "type": "External via Lightning Reader",
+      "type": "Lightningリーダー経由（スロットなし）",
       "minSpeed": "UHS-I",
       "recommendedCapacity": [
         "64GB"
@@ -199,14 +199,14 @@
       "pixel 8"
     ],
     "sdCard": {
-      "type": "External via USB-C Reader (no slot)",
-      "minSpeed": "No requirement",
+      "type": "USB-Cリーダー経由（スロットなし）",
+      "minSpeed": "指定なし",
       "recommendedCapacity": [
         "64GB",
         "128GB"
       ]
     },
-    "whySpecs": "Pixel 8 does not have SD card slot. Uses USB-C readers.",
+    "whySpecs": "Pixel 8にSDカードスロットはありません。USB-C接続のカードリーダーを使います。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-uhs2-usbc"

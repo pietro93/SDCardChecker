@@ -228,7 +228,7 @@
     ],
     "sdCard": {
       "type": "microSDXC",
-      "minSpeed": "Class 10 / U1 (V30 recommended for video)",
+      "minSpeed": "Class 10 / U1（動画にはV30推奨）",
       "minWriteSpeed": "10 MB/s",
       "recommendedCapacity": [
         "128GB",
@@ -280,7 +280,7 @@
     ],
     "sdCard": {
       "type": "microSDXC",
-      "minSpeed": "Class 10 / U1 (V30 recommended for video)",
+      "minSpeed": "Class 10 / U1（動画にはV30推奨）",
       "minWriteSpeed": "10 MB/s",
       "recommendedCapacity": [
         "256GB",
@@ -328,14 +328,14 @@
     "sdCard": {
       "type": "microSD",
       "minSpeed": "Class 10 / U1",
-      "minWriteSpeed": "Not specified",
+      "minWriteSpeed": "指定なし",
       "minAppPerformance": "A1",
       "recommendedCapacity": [
         "64GB",
         "128GB",
         "256GB"
       ],
-      "maxCapacity": "No official limit (512GB+ commonly works)"
+      "maxCapacity": "公式な上限なし（512GB以上でも多くの動作報告あり）"
     },
     "whySpecs": "HP Chromebook 14モデルにはmicroSDカードリーダーが含まれており、ストレージを拡張できます。ChromeOSはAPKまたは標準的なAndroidアプリをSDカードに直接インストールすることを許可していませんが、メディアファイル（写真、動画、音楽）のストレージにカードを使用できます。Class 10カードで十分です。",
     "recommendedBrands": [
@@ -389,7 +389,7 @@
       ],
       "maxCapacity": "1TB"
     },
-    "whySpecs": "手頃な価格で to expand storage for movies, music, and photos. A Class 10 / U1 card works for most uses including video playback. A1 アプリパフォーマンス ensures responsive file browsing when running apps from the card.",
+    "whySpecs": "手頃な価格で映画や音楽、写真の保存容量を増やせます。動画再生を含むほとんどの用途はClass 10 / U1カードで十分です。カードからアプリを動かす場合は、A1規格のカードならファイルの読み込みが速くなります。",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-microsd"
@@ -406,8 +406,8 @@
     ],
     "faq": [
       {
-        "q": "Can I set the microSD card as internal storage on the Lenovo Tab M10?",
-        "a": "<b>Yes, Android's 'Adoptable Storage' feature allows you to format the microSD card to act as an extension of the internal storage.</b> However, this will encrypt the card to the device and it may run slower than the built-in memory. For best results, use the card as ポータブル storage for media files."
+        "q": "Lenovo Tab M10でmicroSDカードを内部ストレージとして使えますか？",
+        "a": "<b>使えます。Androidの「内部ストレージとしてフォーマット」機能で、microSDカードを内部ストレージの拡張として使えます。</b>ただしカードはその端末専用に暗号化され、内蔵メモリより動作が遅くなることがあります。写真や動画を保存する「外部ストレージ」として使うのがおすすめです。"
       }
     ],
     "relatedDevices": [
@@ -438,7 +438,7 @@
       ],
       "maxCapacity": "2TB（SDXC規格の上限）"
     },
-    "whySpecs": "Like all Raspberry Pis, the Pi 4 runs its OS from the microSD card. An A1 or A2 rated card is crucial for good performance. The A-rating signifies faster ランダムアクセス speeds, which translates to a more responsive desktop experience and faster application launch times.",
+    "whySpecs": "Raspberry PiはどのモデルもOSをmicroSDカードから起動します。Pi 4の性能を引き出すにはA1またはA2規格のカードが重要です。A規格はランダムアクセス速度の指標で、デスクトップの反応やアプリの起動速度に直結します。",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-microsd"
@@ -455,12 +455,12 @@
     ],
     "faq": [
       {
-        "q": "Is a V30 card good for a Raspberry Pi 4?",
-        "a": "<b>A V30 rating is not the most important spec. Look for an A1 or A2 rating instead.</b> V30 rating is for video and doesn't affect OS performance. The アプリケーションパフォーマンス Class (A1/A2) is what makes the Pi 4 feel fast and responsive."
+        "q": "Raspberry Pi 4にV30カードは適していますか？",
+        "a": "<b>V30は重要な指標ではありません。A1またはA2規格を確認してください。</b>V30は動画撮影用の規格で、OSの動作速度には影響しません。Pi 4の操作を軽快にするのは、アプリケーションパフォーマンスクラス（A1/A2）です。"
       },
       {
-        "q": "What is the minimum recommended capacity for Raspberry Pi 4?",
-        "a": "<b>A 32GB card is a good minimum for Raspberry Pi OS with a desktop environment.</b> This leaves enough space for installing several applications and for project files. For more complex projects or storing media, 64GB or larger is 推奨."
+        "q": "Raspberry Pi 4に推奨される最低容量はどれくらいですか？",
+        "a": "<b>デスクトップ環境付きのRaspberry Pi OSなら、32GBが最低ラインの目安です。</b>複数のアプリやプロジェクトのファイルを入れる余裕があります。複雑なプロジェクトやメディアの保存には64GB以上がおすすめです。"
       }
     ],
     "relatedDevices": [
@@ -489,9 +489,9 @@
         "16GB",
         "32GB"
       ],
-      "maxCapacity": "No official limit"
+      "maxCapacity": "公式な上限なし"
     },
-    "whySpecs": "The Raspberry Pi 3 is less powerful than newer models, but its performance still benefits from a fast card. A Class 10 card is the minimum for a usable experience. An A1-rated card is 推奨 as it provides a noticeable boost in OS responsiveness, especially when launching applications or booting up.",
+    "whySpecs": "Raspberry Pi 3は新しいモデルほど高性能ではありませんが、高速なカードを使うと動作が軽くなります。快適に使うにはClass 10が最低条件です。A1規格のカードなら、アプリの起動やOSのブートで反応の速さがはっきり変わります。",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-microsd"
@@ -502,8 +502,8 @@
     ],
     "faq": [
       {
-        "q": "Do I need a fast card for the Raspberry Pi 3?",
-        "a": "<b>Yes, a Class 10 card is the minimum you should use.</b> While the Pi 3 is not as fast as a Pi 4 or 5, using a slow, non-rated card will result in a very sluggish and frustrating user experience. An A1-rated card is the best value for performance."
+        "q": "Raspberry Pi 3に高速なカードは必要ですか？",
+        "a": "<b>はい、最低でもClass 10のカードを使ってください。</b>Pi 3はPi 4や5ほど速くありませんが、規格表示のない遅いカードでは動作が非常に重くなります。価格と性能のバランスが最も良いのはA1規格のカードです。"
       }
     ],
     "relatedDevices": [
@@ -531,9 +531,9 @@
         "16GB",
         "32GB"
       ],
-      "maxCapacity": "No official limit"
+      "maxCapacity": "公式な上限なし"
     },
-    "whySpecs": "The Pi Zero 2 W is used for コンパクト, embedded projects. A reliable Class 10 card with A1 アプリパフォーマンス is essential for the operating system to run smoothly. Since these projects are often 'headless' (no monitor), card 信頼性 is more important than extreme speed, but a 遅いカード will still impact boot time and script execution.",
+    "whySpecs": "Pi Zero 2 Wは小型の組み込みプロジェクトによく使われます。OSを安定して動かすには、A1規格で信頼性の高いClass 10カードが欠かせません。モニターなしで動かすことが多いため速度より信頼性が重要ですが、遅いカードでは起動やスクリプトの実行に時間がかかります。",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-microsd"
@@ -544,8 +544,8 @@
     ],
     "faq": [
       {
-        "q": "How much storage do I need for a Pi Zero 2 W project?",
-        "a": "<b>For most headless projects, a 16GB card is sufficient.</b> It provides enough space for Raspberry Pi OS Lite and project scripts. If you are running a desktop environment or a project that logs a lot of data, choose a 32GB card."
+        "q": "Pi Zero 2 Wのプロジェクトにはどれくらいの容量が必要ですか？",
+        "a": "<b>モニターを使わない多くのプロジェクトなら16GBで足ります。</b>Raspberry Pi OS Liteとプロジェクトのスクリプトを入れるには十分な容量です。デスクトップ環境を使う場合や、大量のログを記録するプロジェクトなら32GBを選んでください。"
       }
     ],
     "relatedDevices": [
@@ -566,16 +566,16 @@
     ],
     "sdCard": {
       "type": "microSD (TF)",
-      "minSpeed": "Class 10 / U1 (A1 or A2 recommended)",
+      "minSpeed": "Class 10 / U1（A1またはA2推奨）",
       "minWriteSpeed": "10 MB/s",
       "recommendedCapacity": [
         "32GB",
         "64GB",
         "128GB"
       ],
-      "maxCapacity": "128GB official, 256–512GB commonly reported working"
+      "maxCapacity": "128GB（公式。256〜512GBでも多くの動作報告あり）"
     },
-    "whySpecs": "Orange Pi 5 boots its operating system directly from the microSD (TF) slot if you are not using NVMe or eMMC. Class 10 / U1 cards provide enough シーケンシャル throughput for Linux distributions, while A1 or A2-rated cards dramatically improve random read/write performance for package management, logs, and desktop use. 公式 documentation for related Orange Pi 5 boards lists 128GB as the supported microSD size, but many users successfully run 256GB and even 512GB cards, making 32–128GB a safe, mainstream choice and larger cards a practical but un公式 option.",
+    "whySpecs": "Orange Pi 5は、NVMeやeMMCを使わない場合、microSD（TF）スロットからOSを起動します。Linuxの動作にはClass 10 / U1のシーケンシャル速度で足りますが、A1またはA2規格のカードならパッケージ管理やログの書き込み、デスクトップ操作でのランダム読み書きが大きく改善します。関連するOrange Pi 5ボードの公式資料ではmicroSDの対応容量は128GBですが、256GBや512GBで問題なく使っているユーザーも多くいます。32〜128GBが無難な選択で、それより大きいカードは公式サポート外ながら実用上は使える選択肢です。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -618,7 +618,7 @@
       "ipad air 3rd generation"
     ],
     "sdCard": {
-      "type": "External via Lightning Reader",
+      "type": "Lightningリーダー経由（スロットなし）",
       "minSpeed": "UHS-I",
       "recommendedCapacity": [
         "64GB",
@@ -648,7 +648,7 @@
       "ipad 9"
     ],
     "sdCard": {
-      "type": "External via Lightning Reader",
+      "type": "Lightningリーダー経由（スロットなし）",
       "minSpeed": "UHS-I",
       "recommendedCapacity": [
         "64GB",

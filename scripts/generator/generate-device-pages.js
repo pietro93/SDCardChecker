@@ -6,7 +6,7 @@
 
 const path = require("path");
 const fs = require("fs");
-const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, generateHreflangTags, truncateAtWord, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, loadSDCardData, loadSDCardEnrichment, mergeSDCardEnrichment, getCategorySlug, getCategoryLabel, getCategoryIconName, t } = require("./helpers");
+const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, generateHreflangTags, truncateAtWord, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, jaMaxCapacityPhrase, loadSDCardData, loadSDCardEnrichment, mergeSDCardEnrichment, getCategorySlug, getCategoryLabel, getCategoryIconName, t } = require("./helpers");
 const { generateFAQs, mergeFAQs } = require("./generateFAQs");
 const { generateAmazonBadgesSection } = require("./amazon-badges-generator");
 const { generatePromotedCardSection } = require("./promotion-generator");
@@ -25,7 +25,7 @@ const srcPath = path.join(__dirname, "../../src");
  */
 const BRANDS_TABLE_LABELS = {
     en: { confirmed: "Verified", speedClass: "Speed Class", writeSpeed: "Write Speed", pros: "Pros", price: "Price", checkPrice: "Check Price" },
-    ja: { confirmed: "動作確認", speedClass: "速度クラス", writeSpeed: "書き込み速度", pros: "長所", price: "価格", checkPrice: "価格確認" },
+    ja: { confirmed: "仕様適合", speedClass: "速度クラス", writeSpeed: "書き込み速度", pros: "長所", price: "価格", checkPrice: "価格を確認" },
     de: { confirmed: "Bestätigt", speedClass: "Geschwindigkeitsklasse", writeSpeed: "Schreibgeschwindigkeit", pros: "Vorteile", price: "Preis", checkPrice: "Preis prüfen" },
     fr: { confirmed: "Vérifié", speedClass: "Classe de vitesse", writeSpeed: "Vitesse d'écriture", pros: "Avantages", price: "Prix", checkPrice: "Voir le prix" },
     it: { confirmed: "Verificato", speedClass: "Classe di velocità", writeSpeed: "Velocità di scrittura", pros: "Pro", price: "Prezzo", checkPrice: "Verifica prezzo" },
@@ -41,7 +41,7 @@ const ENRICHED_CARD_LABELS = {
 
 const REQUIREMENTS_BOX_LABELS = {
     en: { format: "Format", minSpeed: "Minimum Speed", appPerformance: "App Performance", maxCapacity: "Maximum Capacity", write: "write", requiredFor: "Required for OS/Apps", upTo: "Up to", official: "Official", requirements: "SD Card Requirements", why: "Why these requirements?" },
-    ja: { format: "タイプ", minSpeed: "最低速度", appPerformance: "アプリパフォーマンス", maxCapacity: "最大容量", write: "書き込み", requiredFor: "OS/アプリに必須", upTo: "まで", official: "公式", requirements: "SD カード要件", why: "なぜこの要件?" },
+    ja: { format: "タイプ", minSpeed: "最低速度", appPerformance: "アプリパフォーマンス", maxCapacity: "最大容量", write: "書き込み", requiredFor: "OS/アプリに必須", upTo: "最大", official: "公式", requirements: "SDカード要件", why: "この要件の理由：", heading: (name) => `${name}の公式SDカード要件`, speedWithWrite: (speed, write) => `${speed}（書き込み ${write}）` },
     de: { format: "Format", minSpeed: "Mindestgeschwindigkeit", appPerformance: "App-Leistung", maxCapacity: "Maximale Kapazität", write: "Schreiben", requiredFor: "Erforderlich für OS/Apps", upTo: "Bis zu", official: "Offizielle", requirements: "SD-Karten-Anforderungen", why: "Warum diese Anforderungen?" },
     fr: { format: "Format", minSpeed: "Vitesse minimale", appPerformance: "Performance des applications", maxCapacity: "Capacité maximale", write: "écriture", requiredFor: "Requis pour OS/Applications", upTo: "Jusqu'à", official: "Officielles", requirements: "Exigences de carte SD", why: "Pourquoi ces exigences ?" },
     it: { format: "Formato", minSpeed: "Velocità minima", appPerformance: "Prestazioni app", maxCapacity: "Capacità massima", write: "scrittura", requiredFor: "Richiesto per OS/App", upTo: "Fino a", official: "Ufficiali", requirements: "Requisiti scheda SD", why: "Perché questi requisiti?" },
@@ -57,8 +57,25 @@ const TITLE_MAX_LENGTH = 60;
  * Variants must be ordered most-detailed first; the last one is the fallback used
  * when even the shortest form is over budget (very long device names).
  */
-function fitTitle(variants, maxLength = TITLE_MAX_LENGTH) {
-    return variants.find((variant) => variant.length <= maxLength) || variants[variants.length - 1];
+function fitTitle(variants, maxLength = TITLE_MAX_LENGTH, measure = (s) => s.length) {
+    return variants.find((variant) => measure(variant) <= maxLength) || variants[variants.length - 1];
+}
+
+/**
+ * SERP truncation is by pixel width, and a full-width (CJK) character is roughly twice
+ * as wide as a Latin one. Counting CJK as 2 keeps Japanese titles inside the same
+ * ~60-unit budget as English ones (about 30 full-width characters).
+ */
+function displayWidth(text) {
+    return [...text].reduce((w, ch) => w + (/[　-鿿＀-￯]/.test(ch) ? 2 : 1), 0);
+}
+
+/**
+ * True when maxCapacity is a figure ("512GB") rather than prose ("公式な上限なし"),
+ * so it can follow "up to" / "最大".
+ */
+function isCapacityFigure(maxCapacity) {
+    return /^\d/.test(String(maxCapacity || "").trim());
 }
 
 /**
@@ -78,9 +95,14 @@ const DEVICE_TITLE_STRINGS = {
         schemaHeadline: (name, sdType) => `${name} ${sdType} Compatibility & Recommendations`,
     },
     ja: {
-        title: (name, sdType) => `${name}に最適なSDカード | ${sdType}の要件とおすすめカード`,
-        ogTitle: (name, sdType) => `${name} ${sdType}ガイド | 要件とおすすめカード`,
-        twitterTitle: (name) => `${name} SDカードガイド | おすすめカード`,
+        // Japanese searches are "{device} SDカード おすすめ", so that phrase leads.
+        title: (name, sdType) => fitTitle([
+            `${name}のSDカードおすすめ｜${sdType}の必要スペック`,
+            `${name}のSDカードおすすめ｜必要スペック`,
+            `${name}のSDカードおすすめ`,
+        ], TITLE_MAX_LENGTH, displayWidth),
+        ogTitle: (name) => `${name}のSDカードおすすめと必要スペック`,
+        twitterTitle: (name) => `${name}のSDカードおすすめ`,
         schemaHeadline: (name, sdType) => `${name} ${sdType}互換性とおすすめカード`,
     },
     de: {
@@ -140,8 +162,9 @@ function hasSpeedRequirement(sdCard) {
 /**
  * Generate varied meta descriptions for better SEO
  */
-function generateUniqueMetaDescription(device, brandNames, index) {
+function generateUniqueMetaDescription(device, brandNames, index, locale = "en") {
     if (device.metaDescription) return device.metaDescription;
+    if (locale === "ja") return generateJapaneseMetaDescription(device, brandNames, index);
     const bestCapacity = device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1];
     // maxCapacity is free text and is sometimes prose ("No official limit") rather than
     // a figure, which reads badly after "up to". Only use it when it starts with a number.
@@ -160,6 +183,35 @@ function generateUniqueMetaDescription(device, brandNames, index) {
     ];
 
     return truncateAtWord(templates[index % templates.length], 160);
+}
+
+// Japanese snippets show roughly 120 characters on desktop.
+const JA_DESCRIPTION_MAX = 120;
+
+/**
+ * Japanese meta descriptions written natively rather than run through the English
+ * templates, which left English sentences on most JA pages. Each template is two
+ * sentences; if it runs long, the second sentence is dropped instead of cutting mid-word.
+ */
+function generateJapaneseMetaDescription(device, brandNames, index) {
+    const { sdCard } = device;
+    const bestCapacity = sdCard.recommendedCapacity[sdCard.recommendedCapacity.length - 1];
+    const speed = hasSpeedRequirement(sdCard) ? `${sdCard.minSpeed}以上の` : "";
+    const capacity = isCapacityFigure(sdCard.maxCapacity) ? `（最大${sdCard.maxCapacity}）` : "";
+    const brands = brandNames ? brandNames.replace(/, /g, "・") : "";
+    const picks = brands ? `${brands}から、条件を満たすカードを紹介します。` : "条件を満たすカードを紹介します。";
+
+    const templates = [
+        `${device.name}には${speed}${sdCard.type}カードが必要です${capacity}。${picks}`,
+        `${device.name}で使うSDカードは${speed}${sdCard.type}を選びましょう${capacity}。容量は${bestCapacity}がおすすめです。`,
+        `${device.name}のSDカード選びを解説。必要なのは${speed}${sdCard.type}カードです${capacity}。${picks}`,
+        `${device.name}対応のSDカードは${speed}${sdCard.type}${capacity}。メーカー仕様をもとに、おすすめのカードと容量の目安をまとめました。`,
+    ];
+
+    const text = templates[index % templates.length];
+    if ([...text].length <= JA_DESCRIPTION_MAX) return text;
+    const firstSentence = text.slice(0, text.indexOf("。") + 1);
+    return [...firstSentence].length <= JA_DESCRIPTION_MAX ? firstSentence : [...firstSentence].slice(0, JA_DESCRIPTION_MAX - 1).join("") + "…";
 }
 
 /**
@@ -186,9 +238,16 @@ function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, locale = "
 
             const cardImage = brand.imageUrl || getCardImageFallback(brand);
             const priceTierClass = brand.priceTier ? `price-${brand.priceTier.toLowerCase().replace(/\s+/g, '-')}` : 'price-mid-range';
-            const priceTierSymbol = brand.priceTier
-                ? (brand.priceTier.toLowerCase().includes('budget') ? '$' : brand.priceTier.toLowerCase().includes('premium') ? '$$$' : '$$')
-                : '$$';
+            // Relative price tier, shown in the reader's currency symbol (JA links go to amazon.co.jp)
+            const currency = locale === "ja" ? "¥" : "$";
+            const tierLevel = brand.priceTier
+                ? (brand.priceTier.toLowerCase().includes('budget') ? 1 : brand.priceTier.toLowerCase().includes('premium') ? 3 : 2)
+                : 2;
+            const priceTierSymbol = currency.repeat(tierLevel);
+            // USD estimates mean nothing to a JA reader, so the JA alt text leaves the price out
+            const cardAlt = locale === "ja"
+                ? `${brand.name}（${brand.speed}）SDカード`
+                : `${brand.name} ${brand.speed} SD card - ${brand.priceEstimate}USD`;
 
             // Convert pros string to bullet list
             const prosList = brand.pros
@@ -209,7 +268,7 @@ function generateBrandsTable(brandReferences, sdcardsMap, deviceSlug, locale = "
             <td class="table-card-cell">
             <a href="${amazonUrlWithUTM}" target="_blank" class="table-card-link-wrapper">
             <div class="table-card-image">
-            <img src="${cardImage}" alt="${brand.name} ${brand.speed} SD card - ${brand.priceEstimate}USD" width="115" height="115" loading="lazy" />
+            <img src="${cardImage}" alt="${cardAlt}" width="115" height="115" loading="lazy" />
             </div>
             <div class="table-card-name">${brand.name}</div>
             </a>
@@ -315,7 +374,9 @@ function generateRequirementsBox(device, deviceNameShort, locale = "en") {
         {
             icon: 'fas fa-tachometer-alt',
             label: labels.minSpeed,
-            value: hasSpeedRequirement(sdCard) && sdCard.minWriteSpeed && sdCard.minWriteSpeed !== "N/A" ? `${sdCard.minSpeed} (${sdCard.minWriteSpeed} ${labels.write})` : sdCard.minSpeed,
+            value: hasSpeedRequirement(sdCard) && sdCard.minWriteSpeed && sdCard.minWriteSpeed !== "N/A"
+                ? (labels.speedWithWrite ? labels.speedWithWrite(sdCard.minSpeed, sdCard.minWriteSpeed) : `${sdCard.minSpeed} (${sdCard.minWriteSpeed} ${labels.write})`)
+                : sdCard.minSpeed,
             color: 'text-emerald-600'
         }
     ];
@@ -333,7 +394,8 @@ function generateRequirementsBox(device, deviceNameShort, locale = "en") {
     rows.push({
         icon: 'fas fa-database',
         label: labels.maxCapacity,
-        value: `${labels.upTo} ${sdCard.maxCapacity}`,
+        // maxCapacity is sometimes prose ("No official limit"), which reads wrong after "Up to"
+        value: isCapacityFigure(sdCard.maxCapacity) ? `${labels.upTo} ${sdCard.maxCapacity}` : sdCard.maxCapacity,
         color: 'text-violet-600'
     });
 
@@ -351,7 +413,7 @@ function generateRequirementsBox(device, deviceNameShort, locale = "en") {
 
     return `
     <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 mb-8">
-        <h2 class="text-lg font-bold text-slate-900 mb-4">${labels.official} ${safeDeviceName} ${labels.requirements}</h2>
+        <h2 class="text-lg font-bold text-slate-900 mb-4">${labels.heading ? labels.heading(safeDeviceName) : `${labels.official} ${safeDeviceName} ${labels.requirements}`}</h2>
         <ul class="space-y-0">
             ${rowsHtml}
         </ul>
@@ -472,9 +534,11 @@ function generateAlternatives(device, sdcardsMap) {
 function generateFirstFAQ(device, locale) {
     const speedRating = device.sdCard.minSpeed;
     if (locale === "ja") {
+        const best = device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1];
+        const speed = hasSpeedRequirement(device.sdCard) ? `${speedRating}以上の` : "";
         return {
             q: `${device.name}にはどのSDカードが必要ですか？`,
-            a: `${device.name}には、信頼性の高いパフォーマンスのために<b>${device.sdCard.type}カード（${speedRating}速度評価）</b>が必要です。<b>バランスの取れた選択として${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]}容量をお勧めします</b>。デバイスは最大${device.sdCard.maxCapacity}をサポートしていますが、ほとんどのユーザーは日常使用に${device.sdCard.recommendedCapacity[device.sdCard.recommendedCapacity.length - 1]}で十分です。<b>SanDisk、Lexar、Kingston、KIOXIA、Samsungなどの信頼できるブランドを選択してください</b>安定したパフォーマンスとデータ損失の防止を確保するために。`
+            a: `${device.name}には<b>${speed}${device.sdCard.type}カード</b>が必要です。${jaMaxCapacityPhrase(device.sdCard.maxCapacity)}が、<b>ほとんどの人は${best}で足ります</b>。偽造品によるデータ消失を避けるため、SanDisk、Lexar、Kingston、KIOXIA、Samsungなどの信頼できるメーカーの製品を、正規の販売店で購入してください。`
         };
     }
     if (locale === "de") {
@@ -534,11 +598,11 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const ogTitle = (locale === "en" && device.customTitle) || titleStrings.ogTitle(device.name, device.sdCard.type);
     const twitterTitle = titleStrings.twitterTitle(device.name);
     const schemaHeadline = titleStrings.schemaHeadline(device.name, device.sdCard.type);
-    const description = generateUniqueMetaDescription(device, brandNames, deviceIndex);
+    const description = generateUniqueMetaDescription(device, brandNames, deviceIndex, locale);
 
     let answerText = device.sdCard.type;
     if (hasSpeedRequirement(device.sdCard) && !device.sdCard.type.includes(device.sdCard.minSpeed)) {
-        answerText += ` (${device.sdCard.minSpeed} or faster)`;
+        answerText += locale === "ja" ? `（${device.sdCard.minSpeed}以上）` : ` (${device.sdCard.minSpeed} or faster)`;
     }
 
     const requirementsBoxHTML = generateRequirementsBox(device, deviceNameShort, locale);
@@ -562,7 +626,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
     const faqsWithFirstQuestion = device.sdCard.minSpeed === "N/A" ? finalFAQs : [firstFAQ, ...finalFAQs];
     const faqHTML = generateFAQHTML(faqsWithFirstQuestion);
 
-    const relatedDevicesSection = generateRelatedDevices(device, allDevices, locale === "ja");
+    const relatedDevicesSection = generateRelatedDevices(device, allDevices, locale);
     const faqSchema = generateFAQSchema(faqsWithFirstQuestion);
     const productSchema = generateProductSchema(device.recommendedBrands, sdcardsMap);
     // Amazon PA-API badges are English/US-marketplace only for now (see JAPANESE_LOCALIZATION_MASTER.md)

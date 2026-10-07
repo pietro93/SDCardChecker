@@ -773,7 +773,32 @@ function generateFAQHTML(faqItems) {
 /**
  * Generate related devices section
  */
-function generateRelatedDevices(device, allDevices, isJapanese = false) {
+/**
+ * Japanese clause for a device's max capacity, without the closing 。.
+ * maxCapacity is either a figure ("512GB") or prose ("公式な上限なし（1TB以上で動作報告あり）"),
+ * and prose cannot follow 最大.
+ */
+function jaMaxCapacityPhrase(maxCapacity) {
+  const value = String(maxCapacity || "").trim();
+  if (/^\d/.test(value)) return `最大${value}まで対応しています`;
+  if (value.startsWith("公式な上限なし")) return `容量の上限は公式には決められていません${value.slice("公式な上限なし".length)}`;
+  return `対応容量は${value}です`;
+}
+
+const RELATED_DEVICES_LABELS = {
+  en: { heading: "Related", card: (name) => `Best SD Cards For ${name}` },
+  ja: { heading: "関連機器", card: (name) => `${name}のSDカードおすすめ` },
+  de: { heading: "Ähnliche Geräte", card: (name) => `Beste SD-Karten für ${name}` },
+  fr: { heading: "Appareils similaires", card: (name) => `Meilleures cartes SD pour ${name}` },
+  it: { heading: "Dispositivi correlati", card: (name) => `Migliori schede SD per ${name}` },
+};
+
+/**
+ * `allDevices` must be the same locale's device list, so every link target is a page
+ * that locale actually publishes. Links go straight to /{dir}/categories/{cat}/{slug}/:
+ * the old /devices/{slug}/ form only redirects in English and 404s under /ja/.
+ */
+function generateRelatedDevices(device, allDevices, locale = "en") {
   if (!device.relatedDevices || device.relatedDevices.length === 0) {
     return "";
   }
@@ -786,18 +811,20 @@ function generateRelatedDevices(device, allDevices, isJapanese = false) {
     return "";
   }
 
-  // Determine the URL prefix based on language
-  const urlPrefix = isJapanese ? "/ja" : "";
+  const dir = locales[locale] && locales[locale].dir;
+  const urlPrefix = dir ? `/${dir}` : "";
+  const labels = RELATED_DEVICES_LABELS[locale] || RELATED_DEVICES_LABELS.en;
 
   const cards = relatedDevices
   .map(
   (d) => {
         const imgUrl = d.imageUrl || getDeviceImageFallback(d);
+        const label = labels.card(d.name);
         return `
-  <div class="device-card" style="background-image: url('${imgUrl}'); background-size: cover; background-position: center; position: relative; background-color: #f3f4f6;" role="article" aria-label="SD card recommendation for ${d.name}" onmouseover="this.querySelector('.device-card-overlay').style.opacity='0.95'" onmouseout="this.querySelector('.device-card-overlay').style.opacity='0.85'">
+  <div class="device-card" style="background-image: url('${imgUrl}'); background-size: cover; background-position: center; position: relative; background-color: #f3f4f6;" role="article" aria-label="${label}" onmouseover="this.querySelector('.device-card-overlay').style.opacity='0.95'" onmouseout="this.querySelector('.device-card-overlay').style.opacity='0.85'">
   <div class="device-card-overlay" style="position: absolute; inset: 0; background: rgba(240, 240, 240, 0.85); transition: opacity 0.3s ease;"></div>
-  <a href="${urlPrefix}/devices/${d.slug}/" style="position: relative; z-index: 1; text-decoration: none; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; width: 100%; height: 100%;">
-  <div class="device-card-text" style="font-weight: bold; font-size: 16px; color: #2563eb; opacity: 1; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);">Best SD Cards For ${d.name}</div>
+  <a href="${urlPrefix}/categories/${getCategorySlug(d.category)}/${d.slug}/" style="position: relative; z-index: 1; text-decoration: none; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; width: 100%; height: 100%;">
+  <div class="device-card-text" style="font-weight: bold; font-size: 16px; color: #2563eb; opacity: 1; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);">${label}</div>
   </a>
   </div>
   `;
@@ -807,7 +834,7 @@ function generateRelatedDevices(device, allDevices, isJapanese = false) {
 
   return `
     <section class="card">
-      <h2>${isJapanese ? '関連機器' : 'Related'}</h2>
+      <h2>${labels.heading}</h2>
       <div class="related-devices">
         <div class="devices-grid">
           ${cards}
@@ -1033,6 +1060,7 @@ module.exports = {
   generateSpecsHTML,
   generateFAQHTML,
   generateRelatedDevices,
+  jaMaxCapacityPhrase,
   loadSDCardData,
   loadSDCardEnrichment,
   mergeSDCardEnrichment,

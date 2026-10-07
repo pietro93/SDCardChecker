@@ -145,7 +145,7 @@
       "dji air 3"
     ],
     "sdCard": {
-      "type": "microSD UHS-I (UHS-II Compatible)",
+      "type": "microSD UHS-I（UHS-IIカードも使用可）",
       "minSpeed": "V30",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
@@ -190,7 +190,7 @@
       "dji mavic"
     ],
     "sdCard": {
-      "type": "microSD UHS-I (UHS-II Compatible)",
+      "type": "microSD UHS-I（UHS-IIカードも使用可）",
       "minSpeed": "V30 / U3",
       "minWriteSpeed": "60 MB/s",
       "recommendedCapacity": [
@@ -386,7 +386,7 @@
       "autel robotics memory card"
     ],
     "sdCard": {
-      "type": "microSD UHS-I (UHS-II Compatible)",
+      "type": "microSD UHS-I（UHS-IIカードも使用可）",
       "minSpeed": "V30 / U3",
       "minWriteSpeed": "30 MB/s",
       "recommendedCapacity": [
@@ -396,7 +396,7 @@
       ],
       "maxCapacity": "256GB"
     },
-    "whySpecs": "The EVO II Pro V3 records massive 6K video files with high bitrates. A V30 rating is the absolute minimum to prevent 記録 failures, but fast U3 cards are preferred for smoother file management. Autel 公式ly recommends cards up to 256GB.",
+    "whySpecs": "EVO II Pro V3は高ビットレートの6K動画を記録するため、ファイルサイズが非常に大きくなります。記録エラーを防ぐにはV30が最低条件で、ファイルの扱いをスムーズにするには高速なU3カードが適しています。Autelの公式推奨は256GBまでです。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -410,12 +410,12 @@
     ],
     "faq": [
       {
-        "q": "Does the EVO II Pro V3 support 512GB cards?",
-        "a": "<b>Autel 公式ly lists 256GB as the maximum supported capacity.</b> While some users report success with high-quality 512GB cards formatted to exFAT, using them runs the risk of data corruption or recognition errors in the air. Stick to 256GB for professional 信頼性."
+        "q": "EVO II Pro V3は512GBのカードに対応していますか？",
+        "a": "<b>Autelが公式に記載している最大容量は256GBです。</b>exFATでフォーマットした高品質な512GBカードで使えたという報告もありますが、飛行中にデータ破損や認識エラーが起きるリスクがあります。業務で使うなら256GBまでにしておくのが安全です。"
       },
       {
-        "q": "Why is my 6K video chopping?",
-        "a": "<b>This is almost always due to a slow SD card.</b> Recording 6K 必要s a sustained 書き込み速度 that cheap or old cards cannot maintain. Ensure your card has the 'V30' or 'U3' symbol on it."
+        "q": "6K動画がカクつくのはなぜですか？",
+        "a": "<b>原因はほとんどの場合、SDカードの速度不足です。</b>6K記録には安定した書き込み速度が必要で、安価なカードや古いカードでは追いつきません。カードに「V30」または「U3」の表示があるか確認してください。"
       }
     ],
     "relatedDevices": [
@@ -446,7 +446,7 @@
       ],
       "maxCapacity": "256GB"
     },
-    "whySpecs": "Despite being a sub-250g drone, the Nano+ features a large sensor and shoots 4K HDR video. This 必要s V30 speed class cards. Slower cards often result in the 'Low SD card speed' warning preventing 記録.",
+    "whySpecs": "Nano+は250g未満の機体ながら大型センサーを搭載し、4K HDR動画を撮影できます。そのためV30のカードが必要です。遅いカードでは「SDカードの速度が遅い」という警告が出て、録画できないことがよくあります。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -457,8 +457,8 @@
     ],
     "faq": [
       {
-        "q": "What is the max SD card size for Autel Nano+?",
-        "a": "<b>The Autel EVO Nano+ supports microSD cards up to 256GB.</b> We recommend UHS-I U3/V30 cards to handle the 4K映像 bitrate."
+        "q": "Autel Nano+で使えるSDカードの最大容量は？",
+        "a": "<b>Autel EVO Nano+は最大256GBのmicroSDカードに対応しています。</b>4K動画のビットレートに対応するため、UHS-I U3/V30のカードをおすすめします。"
       }
     ],
     "relatedDevices": [
@@ -488,7 +488,7 @@
       ],
       "maxCapacity": "256GB"
     },
-    "whySpecs": "The Lite+ features a 1-inch sensor capable of 6K/30fps and 4K/60fps. These 高解像度 modes demand a V30 or faster card. Autel recommends formatting the card inside the drone app before first use.",
+    "whySpecs": "Lite+は1インチセンサーを搭載し、6K/30fpsと4K/60fpsで撮影できます。こうした高解像度モードにはV30以上のカードが必要です。Autelは初めて使う前にドローンのアプリ内でカードをフォーマットするよう推奨しています。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -499,8 +499,8 @@
     ],
     "faq": [
       {
-        "q": "Can I use a 1TB card in the EVO Lite+?",
-        "a": "<b>No, the maximum supported capacity is 256GB.</b> Larger cards may not be recognized by the firmware or may cause system instability."
+        "q": "EVO Lite+で1TBのカードは使えますか？",
+        "a": "<b>使えません。対応する最大容量は256GBです。</b>それより大きいカードはファームウェアが認識しないか、動作が不安定になる原因になります。"
       }
     ],
     "relatedDevices": [
@@ -529,7 +529,7 @@
       ],
       "maxCapacity": "256GB"
     },
-    "whySpecs": "The Potensic Atom records 4K映像 at high bitrates. The manufacturer explicitly 必要s U3/V30 cards. Users frequently report that slower U1 cards (like standard SanDisk Ultras) cause 記録 to stop after a few seconds or fail to save footage entirely.",
+    "whySpecs": "Potensic Atomは4K動画を高ビットレートで記録します。メーカーはU3/V30のカードを明確に指定しています。標準的なSanDisk UltraのようなU1カードでは、数秒で録画が止まったり映像が保存されなかったりするという報告が多くあります。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -543,12 +543,12 @@
     ],
     "faq": [
       {
-        "q": "Why does my Potensic Atom say 'SD Card Error'?",
-        "a": "<b>This usually happens if the card is not V30 rated or is formatted incorrectly.</b> Ensure you are using a V30 card and format it directly within the Potensic Pro app settings to ensure compatibility."
+        "q": "Potensic Atomで「SD Card Error」と表示されるのはなぜですか？",
+        "a": "<b>多くの場合、カードがV30規格でないか、フォーマットが正しくないことが原因です。</b>V30のカードを使い、Potensic Proアプリの設定から直接フォーマットしてください。"
       },
       {
-        "q": "What is the difference between Atom and Atom SE card requirements?",
-        "a": "<b>Both drones 必要 the same V30 speed class cards.</b> While the Atom has a 3-axis gimbal and the SE does not, they both share the same 4K 記録 engine and data writing 必要ments."
+        "q": "AtomとAtom SEでカードの要件は違いますか？",
+        "a": "<b>どちらも同じV30のカードが必要です。</b>Atomには3軸ジンバルがあり、SEにはないという違いはありますが、4Kの記録方式とデータの書き込み要件は共通です。"
       }
     ],
     "relatedDevices": [
@@ -669,7 +669,7 @@
       ],
       "maxCapacity": "1TB"
     },
-    "whySpecs": "The X10 is an industrial enterprise drone with advanced sensors. It generates massive amounts of 熱 and visual data. It supports two microSD cards for redundancy. Use industrial-grade or 高性能 V60/V90 cards to ensure data integrity during critical missions.",
+    "whySpecs": "X10は高度なセンサーを搭載した産業用ドローンで、熱画像と可視画像の大量のデータを生成します。冗長性のためにmicroSDカードを2枚使用できます。重要なミッションでデータを確実に守るため、産業用グレードまたは高性能なV60/V90のカードを使ってください。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-pro-microsd-v60"
@@ -680,8 +680,8 @@
     ],
     "faq": [
       {
-        "q": "Does the Skydio X10 have internal storage?",
-        "a": "<b>Yes, typically it has encrypted internal storage, but microSD cards are used for data offload and expanded capacity.</b> Given the enterprise nature of the drone, check with your fleet manager regarding encryption 必要ments for SD cards."
+        "q": "Skydio X10に内蔵ストレージはありますか？",
+        "a": "<b>通常は暗号化された内蔵ストレージがあり、microSDカードはデータの取り出しと容量の拡張に使います。</b>業務用のドローンのため、SDカードの暗号化要件については機体の管理担当者に確認してください。"
       }
     ],
     "relatedDevices": [
@@ -710,7 +710,7 @@
       ],
       "maxCapacity": "512GB"
     },
-    "whySpecs": "The FIMI Mini 3 records 4K映像 at 60fps with a bitrate of up to 100Mbps. This 必要s a V30 card. Slower cards will result in フレームドロップ or the video splitting into tiny, unusable chunks.",
+    "whySpecs": "FIMI Mini 3は4K/60fpsの動画を最大100Mbpsのビットレートで記録します。そのためV30のカードが必要です。遅いカードではコマ落ちが起きたり、動画が細かく分割されて使えなくなったりします。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -721,8 +721,8 @@
     ],
     "faq": [
       {
-        "q": "What file system should I use for FIMI Mini 3?",
-        "a": "<b>FAT32 is 推奨 for 32GB cards, and exFAT for 64GB and larger.</b> It is best to format the card directly inside the FIMI Navi app to ensure the file system structure is correct."
+        "q": "FIMI Mini 3ではどのファイルシステムを使えばいいですか？",
+        "a": "<b>32GBのカードはFAT32、64GB以上はexFATをおすすめします。</b>ファイルシステムを正しく構成するため、FIMI Naviアプリ内で直接フォーマットするのが確実です。"
       }
     ],
     "relatedDevices": [
@@ -752,7 +752,7 @@
       ],
       "maxCapacity": "64GB"
     },
-    "whySpecs": "The HS175D records 2.7K video (upscaled to 4K in some modes). It has a strict capacity limit of 64GB. Cards larger than 64GB often fail to format or are not recognized. Format must be FAT32.",
+    "whySpecs": "HS175Dは2.7K動画を記録します（一部のモードでは4Kにアップスケール）。対応容量は64GBまでと厳密で、64GBを超えるカードはフォーマットできないか、認識されないことがよくあります。フォーマットはFAT32にしてください。",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-microsd"
@@ -763,8 +763,8 @@
     ],
     "faq": [
       {
-        "q": "Why won't my 128GB card work in the HS175D?",
-        "a": "<b>The HS175D only supports cards up to 64GB.</b> Larger cards use the exFAT file system by default, which this drone often cannot read. You must use a 64GB or 32GB card formatted to FAT32."
+        "q": "HS175Dで128GBのカードが使えないのはなぜですか？",
+        "a": "<b>HS175Dが対応しているのは64GBまでのカードです。</b>それより大きいカードは標準でexFATでフォーマットされており、このドローンでは読み込めないことが多くあります。FAT32でフォーマットした64GBか32GBのカードを使ってください。"
       }
     ],
     "relatedDevices": [
@@ -785,7 +785,7 @@
     ],
     "sdCard": {
       "type": "microSD",
-      "minSpeed": "Class 10 / U1 (V30 recommended for HS720G)",
+      "minSpeed": "Class 10 / U1（HS720GはV30推奨）",
       "minWriteSpeed": "10-30 MB/s",
       "recommendedCapacity": [
         "32GB",
@@ -794,7 +794,7 @@
       ],
       "maxCapacity": "128GB"
     },
-    "whySpecs": "The HS720 series generally supports up to 128GB (HS720E/G models). The older original HS720 may only support 32GB. The 'G' model features a gimbal and 4K EIS, benefiting from a faster U3/V30 card, while the 'E' model works fine with Class 10.",
+    "whySpecs": "HS720シリーズは基本的に128GBまで対応しています（HS720E/G）。初代HS720は32GBまでしか対応しない場合があります。ジンバルと4K EISを搭載したGモデルには高速なU3/V30カードが適しており、EモデルはClass 10で問題なく動作します。",
     "recommendedBrands": [
       {
         "id": "sandisk-ultra-microsd"
@@ -805,8 +805,8 @@
     ],
     "faq": [
       {
-        "q": "My HS720 isn't saving photos to the card?",
-        "a": "<b>Check the card capacity and format.</b> Ensure the card is no larger than 128GB and is formatted to FAT32 (or exFAT for newer G models). If using an older HS720, try a 32GB card."
+        "q": "HS720で写真がカードに保存されないのはなぜですか？",
+        "a": "<b>カードの容量とフォーマットを確認してください。</b>カードが128GB以下で、FAT32（新しいGモデルはexFATも可）でフォーマットされているか確認します。初代HS720の場合は32GBのカードを試してください。"
       }
     ],
     "relatedDevices": [
@@ -835,7 +835,7 @@
       ],
       "maxCapacity": "128GB"
     },
-    "whySpecs": "The HS360S is a newer, more capable 4K drone from Holy Stone. Because it records true 4K, it 必要s a U3 or V30 card to prevent stuttering. The manufacturer lists 128GB as the maximum supported capacity.",
+    "whySpecs": "HS360SはHoly Stoneの新しい4Kドローンで、従来機より性能が上がっています。ネイティブの4Kで記録するため、カクつきを防ぐにはU3またはV30のカードが必要です。メーカーが公表している最大対応容量は128GBです。",
     "recommendedBrands": [
       {
         "id": "sandisk-extreme-microsd"
@@ -846,8 +846,8 @@
     ],
     "faq": [
       {
-        "q": "Does the HS360S require a fast card?",
-        "a": "<b>Yes, use a V30 card.</b> Unlike older Holy Stone models, the HS360S records higher bitrate 4K映像. Slow Class 10 cards may result in corrupted files."
+        "q": "HS360Sには高速なカードが必要ですか？",
+        "a": "<b>はい、V30のカードを使ってください。</b>Holy Stoneの旧モデルと違い、HS360Sは高ビットレートの4K動画を記録します。遅いClass 10カードではファイルが破損することがあります。"
       }
     ],
     "relatedDevices": [
