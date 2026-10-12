@@ -40,14 +40,16 @@ function setImageFields(fileText, cardId, imageUrl, imageSourceUrl) {
 
   // Strip any previously-set fields for this card before re-inserting.
   cardText = cardText
-    .replace(/\n\s*"imageUrl":\s*"[^"]*",?/, "")
-    .replace(/\n\s*"imageSourceUrl":\s*"[^"]*",?/, "");
+    .replace(/\r?\n\s*"imageUrl":\s*"[^"]*",?/, "")
+    .replace(/\r?\n\s*"imageSourceUrl":\s*"[^"]*",?/, "");
 
-  const tierLineRe = /(\n(\s*)"tier":\s*"[^"]*")(,?)(\n)/;
+  // \r?\n: sdcards.json is checked out with CRLF on Windows
+  const tierLineRe = /(\n(\s*)"tier":\s*"[^"]*")(,?)(\r?\n)/;
   const m = cardText.match(tierLineRe);
   if (!m) return fileText;
   const indent = m[2];
-  const replacement = `${m[1]},\n${indent}"imageUrl": "${imageUrl}",\n${indent}"imageSourceUrl": "${imageSourceUrl}"${m[4]}`;
+  const eol = m[4];
+  const replacement = `${m[1]},${eol}${indent}"imageUrl": "${imageUrl}",${eol}${indent}"imageSourceUrl": "${imageSourceUrl}"${eol}`;
   cardText = cardText.replace(tierLineRe, replacement);
 
   return fileText.slice(0, idIndex) + cardText + fileText.slice(cardEnd);
