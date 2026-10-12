@@ -1,0 +1,45 @@
+{
+  "_comment": "Related guide links on English device pages (scripts/generator/generate-device-pages.js). A device gets byDevice[id] if present, else byCategory[category], else default. Keep each list to 1 or 2 guides. The anchor describes the target page; the note is one plain sentence (BRANDING_UX_UI_GUIDE.md Writing Rules).",
+  "guides": {
+    "nintendo-switch-sd-card-guide": {
+      "url": "/guides/nintendo-switch-sd-card-guide/",
+      "anchor": "Nintendo Switch and Switch 2 microSD card guide",
+      "note": "Which cards each Switch model takes, including the microSD Express requirement on Switch 2."
+    },
+    "raw-vs-jpeg": {
+      "url": "/guides/raw-vs-jpeg/",
+      "anchor": "RAW vs JPEG: file sizes and card space",
+      "note": "How much more space RAW files take than JPEG, and when shooting RAW pays off."
+    },
+    "video-bitrate-comparison": {
+      "url": "/guides/video-bitrate-comparison/",
+      "anchor": "Video bitrate guide: H.264, H.265 and ProRes",
+      "note": "How bitrate and codec set the file size of every minute you record."
+    },
+    "sd-card-speed-classes": {
+      "url": "/guides/sd-card-speed-classes/",
+      "anchor": "SD card speed classes explained: U3, V30, V60 and V90",
+      "note": "The minimum sustained write speed each class guarantees, and which one a device needs."
+    },
+    "is-my-sd-card-fake": {
+      "url": "/guides/is-my-sd-card-fake/",
+      "anchor": "How to check if an SD card is fake",
+      "note": "Signs of a counterfeit card and how to test whether its capacity is genuine."
+    }
+  },
+  "byDevice": {
+    "nintendo-switch": ["nintendo-switch-sd-card-guide", "is-my-sd-card-fake"],
+    "nintendo-switch-oled": ["nintendo-switch-sd-card-guide", "is-my-sd-card-fake"],
+    "nintendo-switch-lite": ["nintendo-switch-sd-card-guide", "is-my-sd-card-fake"],
+    "nintendo-switch-2": ["nintendo-switch-sd-card-guide", "is-my-sd-card-fake"]
+  },
+  "byCategory": {
+    "Cameras": ["raw-vs-jpeg", "video-bitrate-comparison"],
+    "Action Cameras": ["video-bitrate-comparison", "sd-card-speed-classes"],
+    "Drones": ["video-bitrate-comparison", "sd-card-speed-classes"],
+    "Dash Cams": ["sd-card-speed-classes", "is-my-sd-card-fake"],
+    "Security Cameras": ["sd-card-speed-classes", "is-my-sd-card-fake"],
+    "Trail Cameras": ["sd-card-speed-classes", "is-my-sd-card-fake"]
+  },
+  "default": ["sd-card-speed-classes", "is-my-sd-card-fake"]
+}

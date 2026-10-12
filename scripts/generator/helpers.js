@@ -657,7 +657,20 @@ function generateBreadcrumbSchema(breadcrumbs, baseUrl = "https://sdcardchecker.
 }
 
 /**
- * Generate Product schema for SD card recommendations
+ * Brand name for a card's Product schema: the explicit `brand` field when the card has one,
+ * else the first word of its name (expanded for two-word brands).
+ */
+const TWO_WORD_BRANDS = { Silicon: "Silicon Power", Amazon: "Amazon Basics" };
+function cardBrand(card) {
+  if (card.brand) return card.brand;
+  const first = card.name.split(" ")[0];
+  return TWO_WORD_BRANDS[first] || first;
+}
+
+/**
+ * Generate Product schema for SD card recommendations.
+ * No `offers`: the site sells nothing and has no live prices, so an Offer would invent a
+ * price and stock status (against Google's structured data policies).
  */
 function generateProductSchema(brandReferences, sdcardsMap, baseUrl = "https://sdcardchecker.com") {
   const products = brandReferences
@@ -665,18 +678,15 @@ function generateProductSchema(brandReferences, sdcardsMap, baseUrl = "https://s
     .map((ref) => {
       const card = sdcardsMap[ref.id];
       if (!card) return null;
-      
+
       return {
         "@type": "Product",
         "name": card.name,
         "image": baseUrl + (card.imageUrl || getCardImageFallback(card)),
         "description": card.pros,
-        "offers": {
-          "@type": "Offer",
-          "url": card.amazonSearchUrl,
-          "priceCurrency": "USD",
-          "price": card.priceEstimate.toString(),
-          "availability": "https://schema.org/InStock"
+        "brand": {
+          "@type": "Brand",
+          "name": cardBrand(card)
         }
       };
     })
@@ -863,8 +873,10 @@ function findActualImageFile(cardId, definedPath) {
   // 2. Fuzzy Search: Look for any file starting with the card ID
   // This fixes the issue where you have "card-128gb.webp" but the ID is just "card"
   try {
-    const files = fs.readdirSync(imgDir);
-    
+    // Sorted: readdir order differs between Windows and Linux (Vercel), and the partial
+    // match below takes the first hit
+    const files = fs.readdirSync(imgDir).sort();
+
     // Look for ID match at the start of filename (exact match first)
     const exactMatch = files.find(file => file === `${cardId}.webp`);
     if (exactMatch) return `/img/cards/${exactMatch}`;
@@ -1035,6 +1047,7 @@ function mergeSDCardEnrichment(cardMap, enrichmentData) {
 }
 
 module.exports = {
+  cardBrand,
   locales,
   t,
   loadStrings,

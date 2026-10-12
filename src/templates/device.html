@@ -32,6 +32,8 @@
   "description": "{{DEVICE_DESCRIPTION}}",
   "image": "{{BASE_URL}}{{DEVICE_IMAGE}}",
   "url": "{{DEVICE_URL}}",
+  "datePublished": "@@DATE_PUBLISHED@@",
+  "dateModified": "@@DATE_MODIFIED@@",
   "author": {
   "@type": "Organization",
   "name": "SD Card Checker"
@@ -106,6 +108,7 @@
             <!-- Expert Recommendations Section -->
             <div class="mb-12">
                 <p class="text-xl text-slate-600">Expert recommendations based on {{DEVICE_NAME}} specifications</p>
+                {{LAST_UPDATED}}
             </div>
 
             <!-- Answer Box - Quick Result & Conversion Engine -->
@@ -210,6 +213,9 @@
                     {{FAQ_HTML}}
                 </div>
             </section>
+
+            <!-- Related Guides -->
+            {{RELATED_GUIDES_SECTION}}
 
             <!-- Related Devices -->
             {{RELATED_DEVICES_SECTION}}

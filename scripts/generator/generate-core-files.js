@@ -42,68 +42,81 @@ const GUIDES_BY_LOCALE = {
 };
 
 /**
- * Generate sitemap.xml for a locale
+ * Generate sitemap.xml for a locale. Must run after applyFreshness(): each URL's <lastmod>
+ * is the date its content last changed (data/page-freshness.json), not the build date.
+ * changefreq and priority are left out because Google ignores both.
+ * Returns the newest lastmod in the file, for the sitemap index.
  */
-function generateSitemap(allDevices, allReaders, distPath, locale = "en") {
+function generateSitemap(allDevices, allReaders, distPath, locale = "en", freshness = {}) {
   const baseUrl = "https://sdcardchecker.com";
   const dir = dirSegment(locale);
   const prefix = dir ? `/${dir}` : "";
-  const today = new Date().toISOString().split("T")[0];
 
-  const urls = [];
-  const add = (loc, changefreq = "monthly", priority = 0.7) => urls.push({ loc, changefreq, priority });
+  const paths = [];
+  const add = (p) => paths.push(p);
 
-  add(`${baseUrl}${prefix}/`, "weekly", 1.0);
+  add(`${prefix}/`);
 
-  // English-only sections: readers, calculators/tools, misc resource pages
+  // English-only sections: readers, calculators/tools, cards, cars, compare, misc resource pages
   if (locale === "en") {
-    add(`${baseUrl}/readers/`, "monthly", 0.95);
-    ["dongle", "viewer", "mobile-adapter", "professional-hub", "hub", "stick", "desktop-dock"].forEach((type) => {
-      add(`${baseUrl}/readers/${type}/`, "monthly", 0.9);
-    });
-    add(`${baseUrl}/tools/`, "monthly", 0.95);
-    add(`${baseUrl}/tools/calculators/`, "monthly", 0.95);
+    add(`/readers/`);
+    ["dongle", "viewer", "mobile-adapter", "professional-hub", "hub", "stick", "desktop-dock"].forEach((type) => add(`/readers/${type}/`));
+    add(`/tools/`);
+    add(`/tools/calculators/`);
     ["video-storage", "photo-storage", "drone-storage", "security-camera-storage", "dashcam-storage", "action-camera-storage", "gopro-storage", "timelapse-storage"].forEach((calc) => {
-      add(`${baseUrl}/tools/calculators/${calc}/`, "monthly", 0.9);
+      add(`/tools/calculators/${calc}/`);
     });
-    add(`${baseUrl}/faq.html`, "monthly", 0.8);
+    add(`/faq.html`);
     if (allReaders && allReaders.length > 0) {
-      allReaders.forEach((reader) => add(`${baseUrl}/readers/${reader.slug || reader.id}/`, "monthly", 0.85));
+      allReaders.forEach((reader) => add(`/readers/${reader.slug || reader.id}/`));
     }
+    // Card, car and compare pages are built from their own data files; list whatever was built
+    Object.keys(freshness)
+      .filter((u) => /^\/(cards|cars)\/([^/]+\/)?$/.test(u) || u === "/compare/")
+      .forEach(add);
   }
 
   if (hasSection(locale, "guides")) {
-    (GUIDES_BY_LOCALE[locale] || []).forEach((p) => add(`${baseUrl}${p}`, "monthly", 0.8));
-    add(`${baseUrl}${prefix}/guides/`, "monthly", 0.85);
+    (GUIDES_BY_LOCALE[locale] || []).forEach(add);
+    add(`${prefix}/guides/`);
   }
 
   if (hasSection(locale, "legal")) {
-    add(`${baseUrl}${prefix}/about.html`, "yearly", 0.7);
-    add(`${baseUrl}${prefix}/privacy.html`, "yearly", 0.5);
-    add(`${baseUrl}${prefix}/terms.html`, "yearly", 0.5);
+    add(`${prefix}/about.html`);
+    add(`${prefix}/privacy.html`);
+    add(`${prefix}/terms.html`);
     if (locale === "en") {
-      add(`${baseUrl}/contact.html`, "yearly", 0.7);
-      add(`${baseUrl}/affiliate-disclosure.html`, "yearly", 0.5);
-      add(`${baseUrl}/sitemap.html`, "yearly", 0.6);
+      add(`/contact.html`);
+      add(`/affiliate-disclosure.html`);
+      add(`/sitemap.html`);
     }
   }
 
   // Device + category pages
-  allDevices.forEach((device) => {
-    const slug = getCategorySlug(device.category);
-    add(`${baseUrl}${prefix}/categories/${slug}/${device.slug}/`, "monthly", 0.8);
-  });
-  [...new Set(allDevices.map((d) => d.category))].forEach((category) => {
-    add(`${baseUrl}${prefix}/categories/${getCategorySlug(category)}/`, "monthly", 0.9);
-  });
+  const devicePaths = new Set(allDevices.map((device) => `${prefix}/categories/${getCategorySlug(device.category)}/${device.slug}/`));
+  devicePaths.forEach(add);
+  [...new Set(allDevices.map((d) => d.category))].forEach((category) => add(`${prefix}/categories/${getCategorySlug(category)}/`));
+  // Brand hubs (/categories/drones/dji/): same URL shape as a device page, but not a device
+  const hubRe = new RegExp(`^${prefix}/categories/[^/]+/[^/]+/$`);
+  Object.keys(freshness).filter((u) => hubRe.test(u) && !devicePaths.has(u)).forEach(add);
 
-  const body = urls
-    .map((u) => `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`)
-    .join("\n");
-  const sitemapXML = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>`;
+  let newest = "";
+  const body = [...new Set(paths)]
+    .map((p) => {
+      const page = freshness[p];
+      if (!page) {
+        console.warn(`  ! ${locale} sitemap: ${p} was not built, leaving it out`);
+        return null;
+      }
+      if (page.lastChanged > newest) newest = page.lastChanged;
+      return `  <url>\n    <loc>${baseUrl}${p}</loc>\n    <lastmod>${page.lastChanged}</lastmod>\n  </url>`;
+    })
+    .filter(Boolean);
+  const sitemapXML = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body.join("\n")}\n</urlset>\n`;
 
   writeFile(path.join(distPath, dir, "sitemap.xml"), sitemapXML);
-  console.log(`  ✓ ${locale} sitemap: ${allDevices.length} devices, ${new Set(allDevices.map((d) => d.category)).size} categories`);
+  console.log(`  ✓ ${locale} sitemap: ${body.length} URLs, newest lastmod ${newest}`);
+  return newest;
 }
 
 /**
@@ -111,19 +124,19 @@ function generateSitemap(allDevices, allReaders, distPath, locale = "en") {
  * A single index is what Google Search Console / Bing Webmaster Tools expect you to submit
  * (one URL instead of one per locale), while robots.txt keeps listing the individual
  * sitemaps too since some crawlers only read robots.txt and never fetch the index itself.
+ * Each entry's lastmod is the newest lastmod inside that child sitemap.
  */
-function generateSitemapIndex(distPath) {
+function generateSitemapIndex(distPath, newestByLocale = {}) {
   const baseUrl = "https://sdcardchecker.com";
-  const today = new Date().toISOString().split("T")[0];
 
   const entries = Object.entries(locales)
-    .filter(([, cfg]) => cfg.enabled)
-    .map(([, cfg]) => `  <sitemap>\n    <loc>${baseUrl}${cfg.dir ? "/" + cfg.dir : ""}/sitemap.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>`)
+    .filter(([code, cfg]) => cfg.enabled && newestByLocale[code])
+    .map(([code, cfg]) => `  <sitemap>\n    <loc>${baseUrl}${cfg.dir ? "/" + cfg.dir : ""}/sitemap.xml</loc>\n    <lastmod>${newestByLocale[code]}</lastmod>\n  </sitemap>`)
     .join("\n");
 
   const sitemapIndexXML = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries}\n</sitemapindex>`;
   writeFile(path.join(distPath, "sitemap-index.xml"), sitemapIndexXML);
-  console.log(`  ✓ sitemap index: ${Object.values(locales).filter((cfg) => cfg.enabled).length} locale sitemaps`);
+  console.log(`  ✓ sitemap index: ${Object.keys(newestByLocale).length} locale sitemaps`);
 }
 
 /**
@@ -368,13 +381,13 @@ function generateDevicesListTxt(allDevices, distPath) {
 }
 
 /**
-* Generate all core files for a locale (homepage, sitemap, legal pages). robots.txt and
-* 404.html are global/English-only and generated once by the caller, not per locale.
+* Generate core files for a locale (homepage, legal pages). robots.txt and 404.html are
+* global/English-only, and sitemaps need every page's freshness date, so the caller
+* generates those once all pages are built.
 */
 async function generateCoreFiles(allDevices, allReaders, distPath, locale = "en", availableLocales = [locale]) {
   console.log(`Generating ${locale} core files...`);
   generateHomepage(distPath, locale, availableLocales, allDevices);
-  generateSitemap(allDevices, allReaders, distPath, locale);
   generateLegalPages(distPath, locale);
   if (locale === "en") generateDevicesListTxt(allDevices, distPath);
   console.log(`  ✓ ${locale} core files generated`);

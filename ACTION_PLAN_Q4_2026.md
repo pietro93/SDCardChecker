@@ -85,7 +85,7 @@ Owner tags: **(P)** Pietro, needs account access or a business decision. **(D)**
 - [ ] **(D)** Build a central link builder `scripts/lib/affiliate.js`, config in `data/affiliate-config.json`. Route all generators and data URLs through it. Strip UTMs from Amazon links (F3, F7).
 - [ ] **(D)** Per-locale store + tag from config. DE/FR/IT go to amazon.de/.fr/.it once tags exist. Until then they keep amazon.com (no worse than today) (F1).
 - [ ] **(D)** Per-section tracking IDs from config (F1, F2).
-- [ ] **(D)** Remove or fix the fake `offers` in Product schema (F5).
+- [x] **(D)** Remove or fix the fake `offers` in Product schema (F5). *Done Oct 12: `offers` removed from all three generators (device, car, reader pages); Product keeps name, image, description and brand. 924 pages → 0. See `HANDOFF_SEO_Q4_REFRESH.md`.*
 - [ ] **(D)** Add a build check that fails if any Amazon link in `dist/` lacks a tag or uses a store that doesn't match its locale.
 
 **Done when:** GA4 shows `affiliate_click` events by page type. Zero "(Mapped)" strings in `dist/`. No Product schema with invented prices. Changing a tag means editing one config file.

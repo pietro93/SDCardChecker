@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { generateHeader, generateFooter, generateSidebar } = require('../../src/templates/components.js');
-const { writeFile, getCardImageFallback, getCarImageFallback, generateFAQHTML, generateFAQSchema, generateBreadcrumbSchema } = require('./helpers');
+const { writeFile, getCardImageFallback, getCarImageFallback, generateFAQHTML, generateFAQSchema, generateBreadcrumbSchema, cardBrand } = require('./helpers');
 
 const BASE_URL = 'https://sdcardchecker.com';
 
@@ -149,11 +149,9 @@ function generateCarPages(distPath) {
         "name": topCard.name,
         "image": BASE_URL + (topCard.imageUrl || getCardImageFallback(topCard)),
         "description": topCard.pros,
-        "offers": {
-          "@type": "Offer",
-          "url": topCard.affiliateUrl,
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
+        "brand": {
+          "@type": "Brand",
+          "name": cardBrand(topCard)
         }
      }) : '{}';
 

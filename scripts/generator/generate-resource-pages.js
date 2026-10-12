@@ -8,6 +8,7 @@ const fs = require("fs");
 const { readTemplate, processIncludes, writeFile } = require("./helpers");
 const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
 const { generateAmazonBadgeSectionByType } = require("./amazon-badges-generator");
+const { lastUpdatedHTML } = require("./freshness");
 
 const srcPath = path.join(__dirname, "../../src");
 
@@ -36,7 +37,8 @@ function generateResourcePage(templatePath, distPath, fileName, amazonProductTyp
         .replace(/{{HEADER}}/g, generateHeader())
         .replace(/{{FOOTER}}/g, generateFooter())
         .replace(/{{GROW_SCRIPT}}/g, generateGrowScript())
-        .replace(/{{AFFILIATE_DISCLOSURE}}/g, generateAffiliateDisclosure());
+        .replace(/{{AFFILIATE_DISCLOSURE}}/g, generateAffiliateDisclosure())
+        .replace(/{{LAST_UPDATED}}/g, lastUpdatedHTML("en", "text-sm text-slate-500 mb-8"));
     
     // Replace Amazon product placeholders if a product type is specified
     if (amazonProductType) {

@@ -84,11 +84,20 @@ function mergeDeviceCategories() {
 }
 ```
 
+### 4. Commit page freshness dates
+The last build step (`scripts/generator/freshness.js`) hashes the `<main>` content of every built page and records in `data/page-freshness.json` the date each page's content last changed. That one date feeds the sitemap `<lastmod>`, the Article schema `dateModified` and the visible "Updated" line, so they always match.
+
+- A page's date only moves when its content changes. Rebuilding without edits changes nothing.
+- **Commit `data/page-freshness.json` with your content changes.** Cloudflare Pages rebuilds the site on every push and does not write the file back. A page that changed without a committed freshness entry gets the deploy day's date on every deploy, and the Cloudflare build log warns about it.
+- Don't edit the file by hand to bump dates. If it's ever deleted, the next local build re-seeds it from git history.
+- Templates mark date slots with `@@DATE_MODIFIED@@`, `@@DATE_PUBLISHED@@`, `@@DATE_MODIFIED_TEXT@@` and `@@DATE_MODIFIED_YEAR@@`; `lastUpdatedHTML()` renders the visible line.
+
 ## Key Points
 
 - ✅ **Edit category files** in `data/categories/`
 - ❌ **Never manually edit** `devices.json` or 'devices-ja.json' (it will be overwritten)
 - ✅ **Run `npm run build:site`** after changes
+- ✅ **Commit `data/page-freshness.json`** whenever the build changes it
 - ✅ Each category file is an **array of device objects** (not wrapped)
 - ✅ The build process validates and adds metadata
 

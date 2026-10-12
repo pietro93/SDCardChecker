@@ -23,7 +23,8 @@ const { generateToolsPages, renderJapaneseToolPages } = require("./generate-tool
 const { generateReaderPages } = require("./generate-reader-pages");
 const { generateReadersIndex } = require("./generate-readers-index");
 const { generateReadersTypeIndexPages } = require("./generate-readers-type-index");
-const { generateCoreFiles, generateSitemapIndex, generateRobots, generate404Page } = require("./generate-core-files");
+const { generateCoreFiles, generateSitemap, generateSitemapIndex, generateRobots, generate404Page } = require("./generate-core-files");
+const { applyFreshness } = require("./freshness");
 const { getCategorySlug } = require("./helpers");
 const { generateLocalizedGuides } = require("./generate-guides");
 const { generateRedirects } = require("./generate-redirects");
@@ -228,10 +229,18 @@ async function build() {
     addHreflangToTranslatedPages(distPath, locales);
     console.log();
 
-    // 5. Global files (English-only 404, sitemap index, robots.txt listing every enabled locale's sitemap)
+    // 5. Global files (English-only 404, robots.txt listing every enabled locale's sitemap)
     generate404Page(distPath);
-    generateSitemapIndex(distPath);
     generateRobots(distPath);
+
+    // 6. Freshness dates, then sitemaps. Runs last: it hashes every built page, records
+    // real content-change dates in data/page-freshness.json and fills in the date tokens.
+    const freshness = applyFreshness(distPath);
+    const newestByLocale = {};
+    buildableLocales.forEach((locale) => {
+      newestByLocale[locale] = generateSitemap(devicesByLocale[locale], allReaders, distPath, locale, freshness);
+    });
+    generateSitemapIndex(distPath, newestByLocale);
 
     // Success summary
     console.log("Generation complete!");

@@ -205,13 +205,6 @@ function generateReaderProductSchema(reader, baseUrl) {
         },
         image: `${baseUrl}/img/og-reader.webp`,
         url: readerUrl,
-        offers: {
-            "@type": "AggregateOffer",
-            priceCurrency: "USD",
-            price: reader.priceEstimate ? reader.priceEstimate.toString() : undefined,
-            url: reader.amazonSearchUrl,
-            availability: "https://schema.org/InStock",
-        },
     });
 }
 

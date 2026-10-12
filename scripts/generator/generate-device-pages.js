@@ -13,8 +13,10 @@ const { generatePromotedCardSection } = require("./promotion-generator");
 const { loadAllCards, generateDeviceCompareWidgetHTML } = require("./generate-compare");
 const { getExplanation } = require("../lib/enrichment-loader");
 const { extractBrand, getQualifyingBrands, slugify } = require("./generate-category-pages");
+const { DATE_TOKENS, lastUpdatedHTML } = require("./freshness");
 const components = require("../../src/templates/components");
 const locales = require("../../data/locales.json");
+const guideLinks = require("../../data/guide-links.json");
 
 const srcPath = path.join(__dirname, "../../src");
 
@@ -83,13 +85,20 @@ function isCapacityFigure(maxCapacity) {
  * Add a locale key here once its title strings are translated - see Tier 1A finding in
  * LOCALIZATION_TODO.md (hardcoded English titles broke SEO for non-EN locales, including ja).
  */
+// The year is the year the page content last changed (filled in by freshness.js), so a
+// title only says "(2026)" when the page was updated in 2026. Measured as 4 characters.
+const YEAR = DATE_TOKENS.modifiedYear;
+const measureWithYear = (s) => s.replace(YEAR, "0000").length;
+
 const DEVICE_TITLE_STRINGS = {
     en: {
         title: (name, sdType) => fitTitle([
-            `Best SD Card for ${name} | ${sdType} Requirements`,
+            `Best SD Card for ${name} (${YEAR}) | ${sdType} Requirements`,
+            `Best SD Card for ${name} (${YEAR}) | ${sdType}`,
+            `Best SD Card for ${name} (${YEAR})`,
             `Best SD Card for ${name} | ${sdType}`,
             `Best SD Card for ${name}`,
-        ]),
+        ], TITLE_MAX_LENGTH, measureWithYear),
         ogTitle: (name, sdType) => `${name} ${sdType} Guide | Requirements & Best Cards`,
         twitterTitle: (name) => `${name} SD Card Guide | Best Recommendations`,
         schemaHeadline: (name, sdType) => `${name} ${sdType} Compatibility & Recommendations`,
@@ -551,8 +560,34 @@ function generateFirstFAQ(device, locale) {
     }
     return {
         q: `What SD Card Do I Need for ${device.name}?`,
-        a: `The ${device.name} takes a <b>${device.sdCard.type} card rated ${speedRating} or faster</b>. <b>${device.sdCard.recommendedCapacity.join(" or ")} covers most owners</b>, and the maximum is ${device.sdCard.maxCapacity}. Buy SanDisk, Lexar, Samsung or Kingston from a reputable seller: counterfeit cards are the most common cause of lost files.`
+        a: `The ${device.name} takes a <b>${device.sdCard.type} card rated ${speedRating} or faster</b>. <b>${device.sdCard.recommendedCapacity.join(" or ")} covers most owners</b>, and the maximum is ${device.sdCard.maxCapacity}. Buy SanDisk, Lexar, Samsung or Kingston from a reputable seller: <a href="/guides/is-my-sd-card-fake/">counterfeit cards</a> are the most common cause of lost files.`
     };
+}
+
+/**
+ * "Related guides" block on English device pages: 1-2 guides picked by device id, then
+ * category, then the default list in data/guide-links.json.
+ */
+function generateRelatedGuides(device, locale = "en") {
+    if (locale !== "en") return "";
+    const slugs = guideLinks.byDevice[device.id] || guideLinks.byCategory[device.category] || guideLinks.default;
+    const items = slugs
+        .map((slug) => guideLinks.guides[slug])
+        .filter(Boolean)
+        .slice(0, 2)
+        .map((g) => `
+            <li>
+                <a href="${g.url}" class="font-semibold text-blue-600 underline">${g.anchor}</a>
+                <p class="text-sm text-slate-600 mt-1">${g.note}</p>
+            </li>`)
+        .join("");
+    if (!items) return "";
+    return `
+    <section id="related-guides" class="mb-16 scroll-mt-20">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Related guides</h2>
+        <ul class="bg-slate-50 border border-slate-200 rounded-lg p-6 space-y-4">${items}
+        </ul>
+    </section>`;
 }
 
 /**
@@ -743,6 +778,8 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{PROMOTED_CARDS_SECTION}}/g, promotedCardSection)
         .replace(/{{NINTENDO_BRANDED_CARDS_GRID}}/g, nintendoBrandedCardsGrid)
         .replace(/{{FAQ_HTML}}/g, faqHTML)
+        .replace(/{{RELATED_GUIDES_SECTION}}/g, generateRelatedGuides(device, locale))
+        .replace(/{{LAST_UPDATED}}/g, locale === "en" ? lastUpdatedHTML("en", "text-sm text-slate-500 mt-2") : "")
         .replace(/{{RELATED_DEVICES_SECTION}}/g, relatedDevicesSection)
         .replace(/{{FAQ_SCHEMA}}/g, faqSchema)
         .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)

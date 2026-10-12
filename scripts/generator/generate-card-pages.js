@@ -13,12 +13,20 @@ const {
   getCardImageFallback,
   generateBreadcrumbSchema,
   loadSDCardEnrichment,
+  getCategorySlug,
+  cardBrand,
 } = require("./helpers");
+const { lastUpdatedHTML } = require("./freshness");
 
 const { generateHeader, generateFooter, generateSidebar } = require("../../src/templates/components.js");
 
 const BASE_URL = "https://sdcardchecker.com";
 const srcPath = path.join(__dirname, "../../src");
+const MAX_RECOMMENDED_DEVICES = 12;
+
+// Device pages that show the Nintendo-branded card grid (generate-device-pages.js), so the
+// Nintendo-edition card pages can link back to them.
+const NINTENDO_GRID_DEVICES = ["nintendo-switch", "nintendo-switch-oled", "nintendo-switch-lite"];
 
 /**
  * Reverse index: card id -> list of devices that recommend it.
@@ -26,7 +34,7 @@ const srcPath = path.join(__dirname, "../../src");
  * link back to the device pages that drove the recommendation (unique
  * per-card content, also useful internal linking).
  */
-function buildDeviceIndexForCards(allDevices) {
+function buildDeviceIndexForCards(allDevices, cardIds = []) {
   const index = {};
   allDevices.forEach((device) => {
     (device.recommendedBrands || []).forEach((ref) => {
@@ -34,7 +42,36 @@ function buildDeviceIndexForCards(allDevices) {
       index[ref.id].push(device);
     });
   });
+  const gridDevices = allDevices.filter((d) => NINTENDO_GRID_DEVICES.includes(d.id));
+  cardIds
+    .filter((id) => id.startsWith("sandisk-nintendo-"))
+    .forEach((id) => {
+      index[id] = [...new Set([...(index[id] || []), ...gridDevices])];
+    });
   return index;
+}
+
+/**
+ * Pick up to `max` devices, one per category in turn so a card recommended on 78 pages
+ * doesn't list only the alphabetically first category, then sort by category and name.
+ */
+function pickRecommendedDevices(devices, max = MAX_RECOMMENDED_DEVICES) {
+  const byName = (a, b) => a.name.localeCompare(b.name);
+  const groups = new Map();
+  [...devices]
+    .sort((a, b) => a.category.localeCompare(b.category) || byName(a, b))
+    .forEach((d) => {
+      if (!groups.has(d.category)) groups.set(d.category, []);
+      groups.get(d.category).push(d);
+    });
+  const picked = [];
+  const queues = [...groups.values()];
+  while (picked.length < max && queues.some((q) => q.length)) {
+    for (const q of queues) {
+      if (q.length && picked.length < max) picked.push(q.shift());
+    }
+  }
+  return picked.sort((a, b) => a.category.localeCompare(b.category) || byName(a, b));
 }
 
 function heroImagePath(cardId) {
@@ -78,19 +115,21 @@ function generateBestForBadges(bestFor) {
 
 function generateRecommendedDevicesBlock(devices) {
   if (!devices || devices.length === 0) return "";
-  const cards = devices
-    .slice(0, 9)
+  devices = [...new Set(devices)];
+  const picked = pickRecommendedDevices(devices);
+  const cards = picked
     .map(
-      (d) => {
-        const categorySlug = d.category.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
-        return `<a href="/categories/${categorySlug}/${d.slug}/" class="device-card"><div class="device-card-name">${d.name}</div></a>`;
-      }
+      (d) =>
+        `<a href="/categories/${getCategorySlug(d.category)}/${d.slug}/" class="device-card"><div class="device-card-name">${d.name}</div><div class="text-xs text-slate-500 mt-1">${d.category}</div></a>`
     )
     .join("\n");
+  const countLine = devices.length > picked.length
+    ? `\n      <p class="text-slate-600 mb-4">Recommended on ${devices.length} device pages, including these ${picked.length}.</p>`
+    : "";
 
   return `
     <section class="mb-16">
-      <h2 class="text-2xl font-bold text-slate-900 mb-6">Recommended For</h2>
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">Recommended For</h2>${countLine}
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         ${cards}
       </div>
@@ -107,7 +146,7 @@ function generateProductSchema(card, cardUrl, heroImageAbs) {
     url: cardUrl,
     brand: {
       "@type": "Brand",
-      name: card.name.split(" ")[0],
+      name: cardBrand(card),
     },
   });
 }
@@ -177,6 +216,7 @@ function generateCardPage(card, template, devicesForCard) {
     .replace(/{{PRICE_DISPLAY}}/g, priceDisplay)
     .replace(/{{AMAZON_URL}}/g, amazonUrl)
     .replace(/{{RECOMMENDED_DEVICES_BLOCK}}/g, generateRecommendedDevicesBlock(devicesForCard))
+    .replace(/{{LAST_UPDATED}}/g, lastUpdatedHTML("en", "text-sm text-slate-500 mb-3"))
     .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
     .replace(/{{PRODUCT_SCHEMA}}/g, productSchema)
     .replace(/{{SIDEBAR}}/g, generateSidebar())
@@ -195,7 +235,7 @@ async function generateCardPages(allDevices, distPath) {
   const gatedIds = Object.keys(enrichmentData);
 
   const template = readTemplate(path.join(srcPath, "templates", "card-page.html"));
-  const deviceIndex = buildDeviceIndexForCards(allDevices);
+  const deviceIndex = buildDeviceIndexForCards(allDevices, gatedIds);
 
   let successCount = 0;
   const generatedIds = [];
