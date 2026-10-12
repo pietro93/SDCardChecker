@@ -78,7 +78,8 @@ function generateSitemap(allDevices, allReaders, distPath, locale = "en", freshn
 
   if (hasSection(locale, "guides")) {
     (GUIDES_BY_LOCALE[locale] || []).forEach(add);
-    add(`${prefix}/guides/`);
+    // Locales without their own guides hub link to the English one, so only list a hub that was built
+    if (freshness[`${prefix}/guides/`]) add(`${prefix}/guides/`);
   }
 
   if (hasSection(locale, "legal")) {

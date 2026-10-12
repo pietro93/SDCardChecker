@@ -40,6 +40,13 @@ function localeHref(locale, urlPath) {
   return dir ? `/${dir}${urlPath}` : urlPath;
 }
 
+// Locales that publish their own /<dir>/guides/ hub. The rest link to the English hub until
+// their guides are translated, so the nav never points at a page that doesn't exist.
+const LOCALES_WITH_GUIDES_HUB = new Set(["ja"]);
+function guidesHubHref(locale) {
+  return LOCALES_WITH_GUIDES_HUB.has(locale) ? localeHref(locale, "/guides/") : "/guides/";
+}
+
 function hasSection(locale, section) {
   return !!(locales[locale] && locales[locale].navSections.includes(section));
 }
@@ -106,14 +113,14 @@ function generateHeader(locale = "en") {
 
     const guidesNav = hasSection(locale, "guides") ? `
        <div class="relative group flex items-center">
-         <a href="${localeHref(locale, "/guides/")}" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
+         <a href="${guidesHubHref(locale)}" class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm">
          ${t("nav.guides", locale)}
          <i class="fas fa-chevron-down text-xs"></i>
          </a>
          <div class="absolute left-0 top-full pt-2 w-56 hidden group-hover:block z-50">
          <div class="bg-white rounded-lg shadow-lg border border-slate-200">
           ${guideLinks(locale, "block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 first:rounded-t-lg text-sm font-medium")}
-          <a href="${localeHref(locale, "/guides/")}" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-xs font-bold border-t border-blue-200 flex items-center gap-2"><i class="fas fa-book"></i> ${t("nav.allGuides", locale)}</a>
+          <a href="${guidesHubHref(locale)}" class="block px-4 py-3 text-blue-600 bg-blue-50 last:rounded-b-lg text-xs font-bold border-t border-blue-200 flex items-center gap-2"><i class="fas fa-book"></i> ${t("nav.allGuides", locale)}</a>
           </div>
           </div>
          </div>` : "";
@@ -147,7 +154,7 @@ function generateHeader(locale = "en") {
       </button>
       <div class="mobile-section hidden pl-4 space-y-1" data-content="resources">
         ${guideLinks(locale, "block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm")}
-        <a href="${localeHref(locale, "/guides/")}" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium">${t("nav.browseAllGuides", locale)}</a>
+        <a href="${guidesHubHref(locale)}" class="block px-3 py-2 text-blue-600 bg-blue-50 rounded-lg transition-colors text-sm font-medium">${t("nav.browseAllGuides", locale)}</a>
       </div>` : "";
 
     const compareMobile = hasSection(locale, "compare") ? `<a href="/compare/" class="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm font-medium">${t("nav.compare", locale)}</a>` : "";
@@ -284,6 +291,25 @@ const GUIDES_BY_LOCALE = {
     { href: "/guides/video-bitrate-comparison/", label: "Video Bitrate Guide" },
     { href: "/guides/raw-vs-jpeg/", label: "RAW vs JPEG" },
     { href: "/guides/is-my-sd-card-fake/", label: "Fake SD Card Checker" },
+  ],
+  // English guides, labeled in the reader's language, until translated guides exist
+  fr: [
+    { href: "/guides/sd-card-speed-classes/", label: "Classes de vitesse (EN)" },
+    { href: "/guides/is-my-sd-card-fake/", label: "Détecter une fausse carte SD (EN)" },
+    { href: "/guides/nintendo-switch-sd-card-guide/", label: "Guide Nintendo Switch (EN)" },
+    { href: "/guides/video-bitrate-comparison/", label: "Débit vidéo et codecs (EN)" },
+  ],
+  it: [
+    { href: "/guides/sd-card-speed-classes/", label: "Classi di velocità (EN)" },
+    { href: "/guides/is-my-sd-card-fake/", label: "Riconoscere una scheda SD falsa (EN)" },
+    { href: "/guides/nintendo-switch-sd-card-guide/", label: "Guida Nintendo Switch (EN)" },
+    { href: "/guides/video-bitrate-comparison/", label: "Bitrate video e codec (EN)" },
+  ],
+  de: [
+    { href: "/guides/sd-card-speed-classes/", label: "Geschwindigkeitsklassen (EN)" },
+    { href: "/guides/is-my-sd-card-fake/", label: "Gefälschte SD-Karten erkennen (EN)" },
+    { href: "/guides/nintendo-switch-sd-card-guide/", label: "Nintendo-Switch-Ratgeber (EN)" },
+    { href: "/guides/video-bitrate-comparison/", label: "Video-Bitrate und Codecs (EN)" },
   ],
   ja: [
     { href: "/ja/guides/sd-card-speed-classes/", label: "速度クラス" },

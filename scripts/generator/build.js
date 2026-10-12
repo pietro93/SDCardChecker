@@ -226,7 +226,7 @@ async function build() {
     console.log();
 
     // Static/guide pages are rendered outside the device generators, so tag them after the fact
-    addHreflangToTranslatedPages(distPath, locales);
+    enabledLocales.filter((l) => l !== "en").forEach((l) => addHreflangToTranslatedPages(distPath, locales, l));
     console.log();
 
     // 5. Global files (English-only 404, robots.txt listing every enabled locale's sitemap)
