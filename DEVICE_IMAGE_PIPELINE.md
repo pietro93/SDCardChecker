@@ -162,3 +162,30 @@ entries for examples).
   `/wp-json/wc/store/v1/products` both blocked or absent) — same class of gap
   as the big-brand sites already noted above; would need a bespoke/headless
   adapter to source, out of scope here.
+- **Retailer Shopify catalogs that fill the big-brand gap (found 2026-10-13):**
+  when Grover has no listing and the manufacturer site is a JS app or 403s,
+  these dealers expose open `/products/<handle>.json` (paginate
+  `/products.json?limit=250&page=N` to find the handle) with clean white
+  studio shots:
+  - **DJI** (Action 5 Pro, Osmo 360 II, Pocket 4P): `drdrone.ca`. The Osmo 360
+    II gallery is transparent PNG, so flatten onto white with sharp before
+    `stage-local-image.js`. `dji.com` product pages only expose 374px
+    `og:image` thumbs on grey; `store.dji.com` and `djistore-us.com` return
+    nothing / 401 to curl.
+  - **Nikon** (Z5 II): `procam.com` (open-box listings are real photos on a
+    near-white backdrop; whiten neutral pixels above ~190 before staging so
+    the flood-fill cutout works). **Sony** (ZV-E10 II): `pictureline.com`.
+    `thomann.de` does not stock these bodies; `sony.co.uk` and Scene7 403.
+  - **Miyoo** (Flip, Mini Flip): `keepretro.com` (Shopify). The first five
+    gallery images are marketing graphics with text; the clean colour-variant
+    shots are at the end of the array.
+  - **ASUS ROG** (Xbox Ally X20): no storefront API, but the product page on
+    `rog.asus.com` links full-size transparent PNG renders on
+    `dlcdnwebimgs.asus.com` (`control_ally_front.png` etc.). Flatten onto
+    white, then stage locally.
+  - **GoPro** MISSION 1 Pro and **Canon** R6 Mark III were on Grover and went
+    through the normal `fetch-device-image.js` path.
+- `compositeHero()` throws "Image to composite must have same dimensions or
+  smaller" when `scale` is high enough that the glow (1.6x device height)
+  exceeds the 800px canvas; for a tall device like the Pocket 4P, 0.62 is the
+  practical ceiling with the stock background.
