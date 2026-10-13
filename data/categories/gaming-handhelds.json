@@ -599,6 +599,7 @@
       }
     ],
     "relatedDevices": [
+      "miyoo-flip",
       "anbernic-rg353v",
       "nintendo-3ds-xl",
       "trimui-brick"
@@ -1263,6 +1264,7 @@
       }
     ],
     "relatedDevices": [
+      "rog-xbox-ally-x20",
       "asus-rog-ally-x",
       "asus-rog-ally",
       "lenovo-legion-go-gen-2"
@@ -2035,5 +2037,180 @@
       "retroid-pocket-g2"
     ],
     "notes": "Premium Android emulation tier alongside the Odin 3/Odin 2 Portal — users skew toward higher-margin 512GB-1TB A2 cards rather than budget picks given the file sizes involved in Switch/PS2/GameCube emulation."
+  },
+  {
+    "id": "miyoo-flip",
+    "name": "Miyoo Flip",
+    "category": "Gaming Handhelds",
+    "slug": "miyoo-flip",
+    "customTitle": "Best SD Card for Miyoo Flip: Dual Slots, A1 Speed, Up to 512GB",
+    "metaDescription": "The Miyoo Flip has two microSD slots: one for the OS, one for games. An A1 card speeds up menus. 128GB covers most libraries. Best cards and why.",
+    "searchTerms": [
+      "miyoo flip sd card",
+      "miyoo flip microsd",
+      "miyoo flip v2 sd card",
+      "miyoo flip second sd slot",
+      "miyoo flip sd card not reading"
+    ],
+    "sdCard": {
+      "type": "microSD (two slots)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB+"
+    },
+    "whySpecs": "The Miyoo Flip is the 3.5-inch clamshell with a Rockchip RK3566, the same chip as the Anbernic RG35XX SP, and it boots its Linux OS from microSD. It has two slots: TF1 holds the OS and TF2 is for games, so you can swap or rebuild the game library without touching the system card. Games up to PS1 and some N64 and Dreamcast are small, so an A1-rated card matters more than raw write speed because the OS reads thousands of small files. The included 64GB card is a no-name one that owners often replace, and the Flip has a record of SD reader complaints, which makes a reputable card the single best reliability upgrade.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How do the two SD slots on the Miyoo Flip work?",
+        "a": "<b>TF1 is the OS card, TF2 is for games.</b> Keep a small card in TF1 for the system and custom firmware, and put your library on a 128GB or 256GB card in TF2. The Flip reads games from either."
+      },
+      {
+        "q": "My Miyoo Flip stopped reading its SD card. Is the card the problem?",
+        "a": "<b>Often, yes.</b> The bundled card is the usual failure point; replace it with a brand-name A1 card and reformat to FAT32 or exFAT. If a new card is also not recognised, the reader itself may be faulty, which some early units suffered."
+      }
+    ],
+    "relatedDevices": [
+      "miyoo-mini-plus",
+      "miyoo-mini-flip",
+      "anbernic-rg35xx-sp",
+      "trimui-brick"
+    ],
+    "notes": "Released December 2024 (V2 with metal hinge in 2025). Not to be confused with the Miyoo Mini Flip, a smaller 2.8-inch device with Mini Plus internals, which has its own page. RK3566, 1GB RAM, 640x480 3.5-inch IPS, 3000mAh. Two microSD slots (TF1 OS, TF2 games), 64GB card included. Known issues: hinge (fixed in V2) and SD reader reports, grey model most reported."
+  },
+  {
+    "id": "miyoo-mini-flip",
+    "name": "Miyoo Mini Flip",
+    "category": "Gaming Handhelds",
+    "slug": "miyoo-mini-flip",
+    "customTitle": "Best SD Card for Miyoo Mini Flip: A1 Speed, Up to 512GB",
+    "metaDescription": "The Miyoo Mini Flip boots from one microSD slot, same as the Mini Plus. An A1 card speeds up OnionOS menus; 128GB fits most libraries. Best cards.",
+    "searchTerms": [
+      "miyoo mini flip sd card",
+      "miyoo mini flip microsd",
+      "miyoo mini flip onion os sd card",
+      "miyoo mini flip storage",
+      "miyoo mini flip vs miyoo flip"
+    ],
+    "sdCard": {
+      "type": "microSD",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB+"
+    },
+    "whySpecs": "The Mini Flip is the Miyoo Mini Plus folded into a 2.8-inch clamshell: same SigmaStar SSD202D chip, 128MB of RAM and a single microSD slot that holds the OS and every game. Because the whole system runs from the card, an A1 rating shortens boot times and menu lag more than any speed class does, and custom firmware such as OnionOS and Surwish both recommend it. The library tops out at PS1, so 64GB covers 8-bit and 16-bit catalogues and 128GB adds a full PS1 set. Reliability beats capacity here: the bundled 64GB card is the first thing to replace.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "amazon-basics-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the Miyoo Mini Flip use the same SD card setup as the Mini Plus?",
+        "a": "<b>Yes.</b> Same chip, one microSD slot, OS on the card. An OnionOS card built for the Mini Plus boots on the Mini Flip once you install the Mini Flip build."
+      },
+      {
+        "q": "Miyoo Flip or Miyoo Mini Flip, which one has two SD slots?",
+        "a": "<b>The Miyoo Flip.</b> It is the larger 3.5-inch RK3566 model with separate OS and game slots. The Mini Flip has one slot that does both."
+      }
+    ],
+    "relatedDevices": [
+      "miyoo-mini-plus",
+      "miyoo-flip",
+      "anbernic-rg35xx-sp",
+      "trimui-brick"
+    ],
+    "notes": "Released late 2025, around USD 53. GBA SP-style clamshell, 2.8-inch 750x560 IPS, Cortex-A7 1.2GHz (SSD202D), 128MB RAM, 2500mAh, 2.4GHz Wi-Fi, single microSD, 64GB card included. Supported CFW: Onion, sprigUI, Surwish OS, Allium. The user asked for 'Miyoo Flip / Mini Flip'; they are two different devices so both got pages, cross-linked."
+  },
+  {
+    "id": "rog-xbox-ally-x20",
+    "name": "ASUS ROG Xbox Ally X20",
+    "category": "Gaming Handhelds",
+    "slug": "rog-xbox-ally-x20",
+    "metaDescription": "The ROG Xbox Ally X20 keeps the Ally X's UHS-II microSD reader, up to 2TB. UHS-II cards load fastest; A2 UHS-I cards give more space per dollar. Best picks.",
+    "searchTerms": [
+      "rog xbox ally x20 sd card",
+      "rog xbox ally x20 microsd",
+      "ally x20 uhs-ii card",
+      "best microsd for rog xbox ally x20",
+      "rog xbox ally x20 storage 1tb"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-II (fully backward compatible with UHS-I)",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB",
+        "2TB"
+      ],
+      "maxCapacity": "2TB"
+    },
+    "whySpecs": "The X20 is the 20th-anniversary edition of the ROG Xbox Ally X: a 7.4-inch 1080p 120Hz OLED, TMR sticks and a translucent shell on top of the same Ryzen AI Z2 Extreme, 24GB of RAM and 1TB SSD. ASUS says the internals are identical, and that includes the UHS-II microSD reader that supports cards up to 2TB. With a 1TB SSD the card is overflow storage for the games you rotate, so an A2 UHS-I card at 1TB or 2TB is the value pick. A UHS-II card reads games from the card noticeably faster but costs far more per gigabyte.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-1000x-microsd",
+        "note": "UHS-II card that uses the reader's full speed"
+      },
+      {
+        "id": "sandisk-extreme-pro-microsd-2tb",
+        "note": "Full 2TB capacity, A2-rated UHS-I"
+      },
+      {
+        "id": "sandisk-rog-ally-microsd",
+        "note": "Officially licensed ROG card"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the Ally X20's SD slot any different from the ROG Xbox Ally X?",
+        "a": "<b>No.</b> ASUS kept the internals identical, so it is the same UHS-II microSD reader with the same 2TB ceiling. Any card you bought for the Ally X carries over."
+      },
+      {
+        "q": "Is the X20 worth it over the Ally X?",
+        "a": "<b>The money buys the OLED screen and TMR sticks, not storage or speed.</b> Both have a 1TB SSD and the same card reader. If the extra 300 dollars is for storage, put it into a 2TB card instead."
+      }
+    ],
+    "relatedDevices": [
+      "rog-xbox-ally-x",
+      "asus-rog-ally-x",
+      "lenovo-legion-go-gen-2",
+      "steam-deck"
+    ],
+    "notes": "Ships October 15, 2026 at USD 1,299.99 (USD 2,499.99 anniversary bundle). Same Z2 Extreme, 24GB LPDDR5X, 1TB PCIe 4.0 SSD, 80Wh battery as the Ally X. No source explicitly lists the X20's card reader; the UHS-II/2TB claim rests on ASUS's 'internal hardware identical' statement (HotHardware, Tom's Guide). Re-verify when ASUS posts the full spec sheet."
   }
 ]

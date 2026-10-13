@@ -282,6 +282,7 @@
       }
     ],
     "relatedDevices": [
+      "canon-eos-r6-mark-iii",
       "canon-eos-r5",
       "sony-a7-iv",
       "nikon-z8",
@@ -2113,6 +2114,7 @@
       }
     ],
     "relatedDevices": [
+      "nikon-z5-ii",
       "nikon-z6-ii",
       "sony-a7-iii",
       "canon-eos-r8"
@@ -2287,6 +2289,7 @@
       }
     ],
     "relatedDevices": [
+      "sony-zv-e10-ii",
       "sony-a6400",
       "canon-eos-r50",
       "fujifilm-x-s20"
@@ -2461,6 +2464,7 @@
       }
     ],
     "relatedDevices": [
+      "canon-eos-r6-mark-iii",
       "canon-eos-r6-mark-ii",
       "sony-a7-iii",
       "nikon-z6-ii"
@@ -2834,5 +2838,170 @@
     ],
     "notes": "Source framed UHS-II as merely \"a waste of money\" — corrected: the camera's interface can't use UHS bus speeds at all, so it's functionally inert, not just poor value.",
     "imageUrl": "/img/devices/cameras/nikon-coolpix-s3100.webp"
+  },
+  {
+    "id": "sony-zv-e10-ii",
+    "name": "Sony ZV-E10 II",
+    "category": "Cameras",
+    "slug": "sony-zv-e10-ii",
+    "metaDescription": "The Sony ZV-E10 II has a UHS-II slot. V30 covers 4K/60 XAVC S; Sony requires V90 for 600 Mbps XAVC S-I. Which card you need and the best picks.",
+    "searchTerms": [
+      "sony zv-e10 ii sd card",
+      "zv-e10 ii memory card",
+      "zv-e10 mark ii uhs-ii",
+      "zv-e10 ii v90 or v60",
+      "best sd card for sony zv-e10 ii 4k 60"
+    ],
+    "sdCard": {
+      "type": "SD UHS-II (single slot)",
+      "minSpeed": "V30 (V90 for XAVC S-I 4K)",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit (512GB+ tested)"
+    },
+    "whySpecs": "The big change from the original ZV-E10 is the slot: it is now UHS-II, and the camera gains 4K/60 in 10-bit 4:2:2. Which card you need depends on the codec. XAVC S and XAVC HS 4K/60 top out around 200 Mbps, so a V30 UHS-I card is enough and is what most vloggers should buy. XAVC S-I 4K is All-Intra at 600 Mbps, and Sony's help guide lists only V90 cards for it. A UHS-I card in that mode will stop recording. If you never touch All-Intra, save the money and put it into capacity.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-pro-sd-uhs1"
+      },
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "sony-tough-g-v90"
+      },
+      {
+        "id": "prograde-digital-sdxc-v90-cobalt"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need a V90 card for the ZV-E10 II?",
+        "a": "<b>Only for XAVC S-I at 600 Mbps.</b> For regular 4K/60 in XAVC S or XAVC HS, a V30 card handles the roughly 200 Mbps bitrate. Sony's own guide lists V90 only for the All-Intra formats."
+      },
+      {
+        "q": "Can I keep using my ZV-E10 card in the ZV-E10 II?",
+        "a": "<b>Yes, for the same modes.</b> A V30 UHS-I card from the original records 4K/60 in XAVC S. It will not record XAVC S-I 4K, which needs a V90 UHS-II card."
+      }
+    ],
+    "relatedDevices": [
+      "sony-zv-e10",
+      "sony-a6700",
+      "sony-a6400",
+      "canon-eos-r50"
+    ],
+    "notes": "Released July 2024. Successor to the ZV-E10, the top-searched vlogging camera on the site. Sony help guide (XAVC S-I 4K 600 Mbps: SDXC V90 or higher). 4K/120 is a paid add-on licence, not a stock mode. Single slot, UHS-II. Framing: most buyers should not overpay for V90; make the codec split clear."
+  },
+  {
+    "id": "nikon-z5-ii",
+    "name": "Nikon Z5 II",
+    "category": "Cameras",
+    "slug": "nikon-z5-ii",
+    "metaDescription": "The Nikon Z5 II has dual SD UHS-II slots. V60 covers 4K/60 and 30 fps bursts; V90 is recommended for internal N-RAW to SD. Best cards and why.",
+    "searchTerms": [
+      "nikon z5 ii sd card",
+      "z5ii memory card",
+      "nikon z5 ii uhs-ii v60 v90",
+      "best sd card for nikon z5ii n-raw",
+      "z5 ii dual card slots"
+    ],
+    "sdCard": {
+      "type": "Dual SD UHS-II",
+      "minSpeed": "V60 (V90 recommended for N-RAW)",
+      "minWriteSpeed": "60 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "No official limit (512GB tested)"
+    },
+    "whySpecs": "The Z5 II keeps the original Z5's dual UHS-II SD slots but adds the Expeed 7 processor, 30 fps bursts and 4K/60. It is also the first Nikon Z that records 12-bit N-RAW internally to an SD card rather than needing CFexpress. N-RAW is the mode that decides your card: it writes several times the data of H.265, so Nikon points to V90 UHS-II cards for it. For H.265 4K/60, N-Log and stills, a V60 card clears the buffer fast enough and costs much less. Buy V60 unless you plan to shoot N-RAW.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-1000x-sd"
+      },
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      },
+      {
+        "id": "sony-tough-g-v90"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need a V90 card for the Nikon Z5 II?",
+        "a": "<b>Only for N-RAW.</b> Internal 12-bit N-RAW is the one mode that pushes past V60. For 4K/60 H.265, N-Log and 30 fps bursts, a V60 UHS-II card is enough."
+      },
+      {
+        "q": "Will my cards from the original Z5 work in the Z5 II?",
+        "a": "<b>Yes.</b> Both have dual UHS-II SD slots. The Z5 II's faster bursts and 4K/60 benefit from V60 or better, but any card that worked in the Z5 still works here."
+      }
+    ],
+    "relatedDevices": [
+      "nikon-z5",
+      "nikon-z6-iii",
+      "nikon-zf",
+      "canon-eos-r8"
+    ],
+    "notes": "Released April 2025, USD 1,696.95 body. 24.5MP BSI full frame, Expeed 7, up to 30 fps (C30 JPEG), 4K/60 with crop, 4K/30 full width, internal N-RAW 12-bit to SD (first Nikon Z to do that). No Nikon page in search results gave an explicit N-RAW speed class; retailers cite Nikon recommending V90 for N-RAW. Kept the claim soft ('points to V90') on purpose."
+  },
+  {
+    "id": "canon-eos-r6-mark-iii",
+    "name": "Canon EOS R6 Mark III",
+    "category": "Cameras",
+    "slug": "canon-eos-r6-mark-iii",
+    "metaDescription": "The Canon EOS R6 Mark III moved to one CFexpress Type B slot plus one SD UHS-II slot. 7K RAW needs CFexpress; V90 SD covers the rest. Best cards.",
+    "searchTerms": [
+      "canon r6 mark iii memory card",
+      "eos r6 mark iii cfexpress or sd",
+      "r6 iii card slots",
+      "canon r6 mark 3 sd card",
+      "best cfexpress card for r6 mark iii 7k raw"
+    ],
+    "sdCard": {
+      "type": "CFexpress Type B + SD UHS-II (one of each)",
+      "minSpeed": "V90 (SD) / VPG 400 (CFexpress) for RAW video",
+      "minWriteSpeed": "90 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "CFexpress 8TB, SD no official limit"
+    },
+    "whySpecs": "This is the format change people search for. The R6 and R6 Mark II had two SD UHS-II slots; the R6 Mark III swaps one of them for CFexpress Type B. The reason is the new 32.5MP sensor and internal 7K/60 12-bit Canon RAW Light, which only records to the CFexpress slot. Everything else, 4K/120, Open Gate 7K/30 in 10-bit MP4 and 40 fps RAW bursts, works on the SD slot, where Canon specifies UHS-II V90. In practice most owners run a CFexpress card for RAW video and relay or backup, and a V90 SD card for stills and compressed video.",
+    "recommendedBrands": [
+      {
+        "id": "prograde-digital-cfexpress-type-b-gold"
+      },
+      {
+        "id": "sandisk-extreme-pro-cfexpress"
+      },
+      {
+        "id": "angelbird-av-pro-cfexpress-type-b-mk2"
+      },
+      {
+        "id": "sandisk-extreme-pro-sd-uhs2"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the R6 Mark III still take SD cards?",
+        "a": "<b>Yes, in one slot.</b> Slot 1 is CFexpress Type B and slot 2 is SD UHS-II. Your R6 Mark II cards work in slot 2 for stills and compressed video. Only 7K RAW Light requires the CFexpress slot."
+      },
+      {
+        "q": "Do I have to buy a CFexpress card?",
+        "a": "<b>Only for internal RAW video.</b> Stills, 4K/120 and Open Gate MP4 all record to a V90 SD card. If you never shoot Canon RAW Light, a single V90 SD card is enough."
+      }
+    ],
+    "relatedDevices": [
+      "canon-eos-r6-mark-ii",
+      "canon-eos-r6",
+      "canon-eos-r5-mark-ii",
+      "canon-eos-r8"
+    ],
+    "notes": "Announced November 2025. 32.5MP, 40 fps electronic, 12 fps mechanical, 7K/60 RAW Light internal, Open Gate 7K/30. Canon Europe: one CFexpress Type B slot, one SD UHS-II slot. OWC blog: SD slot supports UHS-II V90; CFexpress up to 8TB. VPG 400 is third-party advice for 7K RAW, not a Canon spec line. The format question (CFexpress vs SD) is the search angle."
   }
 ]

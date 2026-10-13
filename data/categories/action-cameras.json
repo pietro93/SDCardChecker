@@ -56,6 +56,7 @@
       }
     ],
     "relatedDevices": [
+      "gopro-mission-1-pro",
       "gopro-hero-12",
       "gopro-hero-max",
       "gopro-hero-11-black",
@@ -483,6 +484,7 @@
       }
     ],
     "relatedDevices": [
+      "dji-osmo-action-5-pro",
       "dji-osmo-action-6",
       "gopro-hero-13",
       "insta360-ace-pro",
@@ -677,6 +679,7 @@
       }
     ],
     "relatedDevices": [
+      "dji-osmo-360-ii",
       "gopro-hero-max",
       "gopro-hero-13"
     ],
@@ -774,6 +777,7 @@
       }
     ],
     "relatedDevices": [
+      "dji-osmo-action-5-pro",
       "insta360-ace-pro-2",
       "dji-osmo-pocket-4",
       "dji-osmo-action-4"
@@ -827,6 +831,7 @@
       }
     ],
     "relatedDevices": [
+      "dji-osmo-pocket-4p",
       "dji-osmo-pocket-3",
       "dji-osmo-action-6",
       "insta360-ace-pro-2"
@@ -930,5 +935,222 @@
     ],
     "notes": "Older flagship (2020) but still widely owned and searched for card compatibility. Officially capped at 256GB by GoPro at launch; V30 minimum applies same as newer Hero models.",
     "imageUrl": "/img/devices/action-cameras/gopro-hero-9-black.webp"
+  },
+  {
+    "id": "dji-osmo-action-5-pro",
+    "name": "DJI Osmo Action 5 Pro",
+    "category": "Action Cameras",
+    "slug": "dji-osmo-action-5-pro",
+    "metaDescription": "DJI requires a U3/V30 UHS-I microSD card for the Osmo Action 5 Pro, up to 1TB. It also has 47GB of usable built-in storage. Best cards that meet spec.",
+    "searchTerms": [
+      "dji osmo action 5 pro sd card",
+      "osmo action 5 pro microsd",
+      "dji action 5 pro memory card requirements",
+      "best sd card for osmo action 5 pro",
+      "osmo action 5 pro internal storage vs sd card"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "The Osmo Action 5 Pro was the first Osmo Action with built-in storage: 64GB fitted, about 47GB usable. That covers a short session, but 4K/120 fills it in well under an hour, so a card is still the main recording medium. DJI requires a UHS-I microSD card rated U3 and V30, up to 1TB, and its own recommended list is all V30 cards from SanDisk, Kingston and Lexar. UHS-II cards work but record no faster, because the slot is UHS-I.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "lexar-professional-silver-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the Osmo Action 5 Pro need a microSD card?",
+        "a": "<b>Not to start recording.</b> It has 64GB built in, about 47GB usable, which holds roughly 40 minutes of 4K/60. For a full day you still need a card, up to 1TB."
+      },
+      {
+        "q": "Do the Osmo Action 4 and Action 5 Pro use the same card?",
+        "a": "<b>Yes.</b> Both take UHS-I microSD cards rated U3/V30. The Action 5 Pro raises the maximum from 512GB to 1TB and adds internal storage, but a V30 card from an Action 4 works as is."
+      }
+    ],
+    "relatedDevices": [
+      "dji-osmo-action-4",
+      "dji-osmo-action-6",
+      "gopro-hero-13",
+      "insta360-ace-pro-2"
+    ],
+    "notes": "Released September 2024, sits between Action 4 and Action 6 in the lineup. DJI official: U3/V30 UHS-I, max 1TB, 64GB built in with 47GB available (DJI spec page). 1/1.3-inch sensor, 4K/120. Emphasise the internal storage question since it is the first Action with built-in memory."
+  },
+  {
+    "id": "dji-osmo-360-ii",
+    "name": "DJI Osmo 360 II",
+    "category": "Action Cameras",
+    "slug": "dji-osmo-360-ii",
+    "metaDescription": "The DJI Osmo 360 II has 128GB built in (105GB usable) and takes a U3/V30 microSD up to 1TB. 8K/60 at 220 Mbps. Do you need a card? Best picks.",
+    "searchTerms": [
+      "dji osmo 360 ii sd card",
+      "osmo 360 2 microsd",
+      "does osmo 360 ii need a memory card",
+      "dji osmo 360 ii internal storage",
+      "best microsd for osmo 360 ii 8k"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "The Osmo 360 II records 8K/60 360-degree video at up to 220 Mbps, about 27 MB/s, so a V30 card's 30 MB/s guaranteed write is the floor, not a comfortable margin. Buy a card from DJI's recommended list rather than any card with a V30 logo. The camera has 128GB built in, 105GB usable, which is about an hour of 8K. Built-in storage and the card are separate locations, not one pool, so a card is for longer trips rather than a requirement on day one.",
+    "recommendedBrands": [
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "lexar-professional-silver-microsd"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need a microSD card for the Osmo 360 II?",
+        "a": "<b>Not for short shoots.</b> The 105GB of usable built-in storage holds about an hour of 8K/60 at 220 Mbps. Add a 256GB or 512GB card if you shoot a full day away from a laptop."
+      },
+      {
+        "q": "Do the card and built-in storage work as one big space?",
+        "a": "<b>No.</b> You pick one recording location at a time. When the built-in storage fills, switch to the card, or set the card as the default from the start."
+      }
+    ],
+    "relatedDevices": [
+      "gopro-max-2",
+      "insta360-x5",
+      "dji-osmo-action-6",
+      "dji-osmo-pocket-4"
+    ],
+    "notes": "Announced September 2026 at IFA. On sale in Europe (GBP 509 / EUR 589) and Asia; no US launch as of October 2026, so US search traffic is mostly curiosity. DJI official: microSD up to 1TB, exFAT; recommended list is Kingston Canvas Go! Plus (U3 A2 V30) and Lexar Silver Plus. 220 Mbps max regular bitrate, 600 Mbps only for 16K timelapse. Two 1/1.1-inch sensors. Original Osmo 360 is not in the dataset either."
+  },
+  {
+    "id": "gopro-mission-1-pro",
+    "name": "GoPro MISSION 1 Pro",
+    "category": "Action Cameras",
+    "slug": "gopro-mission-1-pro",
+    "metaDescription": "GoPro requires an A2 V30 microSD card for the MISSION 1, MISSION 1 Pro and Pro ILS, up to 1TB. 8K/60 at 240 Mbps makes the card choice matter. Best cards.",
+    "searchTerms": [
+      "gopro mission 1 pro sd card",
+      "gopro mission 1 microsd",
+      "mission 1 pro ils memory card",
+      "best sd card for gopro 8k",
+      "gopro mission 1 card too slow v30"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30 / U3",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "The MISSION 1 series is GoPro's 1-inch sensor flagship. The MISSION 1 shoots 8K/30, and the MISSION 1 Pro and Pro ILS shoot 8K/60, all at up to 240 Mbps, about 30 MB/s. That is right at a V30 card's guaranteed write speed, which is why GoPro's field guide stresses a brand-name A2 V30 card from its tested list. The slot is UHS-I, so a V60 or V90 card records no faster, and owners have reported the camera rejecting a V60 card and asking for an A2 V30 one. 8K files are large: 256GB is the sensible minimum for a day of shooting.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "lexar-professional-silver-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do the MISSION 1, MISSION 1 Pro and Pro ILS all use the same card?",
+        "a": "<b>Yes.</b> All three need a brand-name A2 V30 microSD card, up to 1TB. The Pro and Pro ILS add 8K/60 but stay within the same 240 Mbps ceiling."
+      },
+      {
+        "q": "Do I need a V60 or V90 card for 8K on the MISSION 1 Pro?",
+        "a": "<b>No, and it can backfire.</b> The slot is UHS-I, so faster classes bring nothing, and some V60 cards are not on GoPro's list and trigger a card warning. Stick to an A2 V30 card GoPro has tested."
+      }
+    ],
+    "relatedDevices": [
+      "gopro-hero-13",
+      "gopro-max-2",
+      "dji-osmo-action-6",
+      "insta360-ace-pro-2"
+    ],
+    "notes": "On sale since May 2026 at USD 599.99 (MISSION 1) and 699.99 (MISSION 1 Pro); the Pro ILS (interchangeable MFT lens version) was due Q3 2026. There was no Hero 14. One page covers all three variants since the card spec is identical; the slug uses the Pro because it carries most of the search intent. GoPro official: V30 or UHS-3 minimum, A2 recommended, up to 1TB (gopro.com/microsdcards)."
+  },
+  {
+    "id": "dji-osmo-pocket-4p",
+    "name": "DJI Osmo Pocket 4P",
+    "category": "Action Cameras",
+    "slug": "dji-osmo-pocket-4p",
+    "metaDescription": "The DJI Osmo Pocket 4P has 103GB built in and takes a U3/V30 microSD up to 1TB. 4K/240 slow motion fills storage fast. Best cards that meet DJI's spec.",
+    "searchTerms": [
+      "dji osmo pocket 4p sd card",
+      "osmo pocket 4p microsd",
+      "pocket 4p memory card 4k 240fps",
+      "does osmo pocket 4p need sd card",
+      "best sd card for osmo pocket 4p"
+    ],
+    "sdCard": {
+      "type": "microSD UHS-I",
+      "minSpeed": "V30",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "The Pocket 4P is the dual-lens Pocket, a 1-inch wide lens plus a 1/1.28-inch 60mm lens, and it shoots 4K/240 slow motion at up to 180 Mbps. That bitrate is within what a V30 card sustains, and DJI's recommended list is all U3 A2 V30 cards from Lexar and Kingston. The 103GB of built-in storage covers a typical vlogging day, but 4K/240 and dual-lens recording eat it several times faster than standard 4K/30, which is when the card matters. The slot is UHS-I, so a UHS-II card only helps when offloading through a UHS-II reader.",
+    "recommendedBrands": [
+      {
+        "id": "lexar-professional-silver-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      },
+      {
+        "id": "sandisk-extreme-microsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the Osmo Pocket 4P need a microSD card?",
+        "a": "<b>Not on day one.</b> It has 103GB built in, about 3.5 hours of 4K/60 at standard bitrate. Add a card for 4K/240 slow motion or multi-day trips."
+      },
+      {
+        "q": "Is the Pocket 4P card spec different from the Pocket 4?",
+        "a": "<b>No.</b> Both take U3/V30 UHS-I microSD cards up to 1TB. The 4P's second lens and 4K/240 mode fill the card faster, so go one size up."
+      }
+    ],
+    "relatedDevices": [
+      "dji-osmo-pocket-4",
+      "dji-osmo-pocket-3",
+      "dji-osmo-action-6",
+      "dji-osmo-360-ii"
+    ],
+    "notes": "Released 2026 as the dual-lens, higher-end sibling of the Pocket 4. DJI official: 103GB built in, microSD up to 1TB, recommended list Lexar Silver Plus and Kingston Canvas Go! Plus (U3 A2 V30). Max video bitrate 180 Mbps. Lexar's blog suggests V60 for 4K/240 but that is a vendor suggestion, not DJI's requirement."
   }
 ]
