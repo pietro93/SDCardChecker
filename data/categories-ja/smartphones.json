@@ -218,5 +218,113 @@
       "iphone-15"
     ],
     "notes": ""
+  },
+  {
+    "id": "sony-xperia-10-viii",
+    "name": "Sony Xperia 10 VIII",
+    "category": "スマートフォン",
+    "slug": "sony-xperia-10-viii",
+    "searchTerms": [
+      "xperia 10 viii microsd おすすめ",
+      "エクスペリア 10 viii sdカード 何gb",
+      "xperia 10 mark 8 microsd 2tb",
+      "xperia 10 viii sdカード 入れ方",
+      "so-52g microsd"
+    ],
+    "sdCard": {
+      "type": "microSDXC（UHS-I）",
+      "minSpeed": "V30 / U3 / A2",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "2TB（公式）",
+      "minAppPerformance": "A2（推奨）"
+    },
+    "whySpecs": "Xperia 10 VIIIの内蔵ストレージは128GBの1種類だけで、256GBや512GBモデルは選べません。その代わりmicroSDXCは最大2TBまで公式対応しています。4K動画やRAW写真を内蔵ストレージに溜めると128GBはすぐ埋まるので、写真と動画の保存先をカードに変えるのが基本です。4K撮影をカードに直接書き込むならV30、ゲームやアプリのデータを置くなら細かい読み書きが速いA2対応が効きます。SIMトレイは1枚で、nanoSIM 1枚とmicroSD 1枚を同時に入れられます。eSIMと併用すればデュアルSIMのままカードも使えます。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "microSDを入れるとSIMが2枚使えなくなりますか？",
+        "a": "<b>物理SIMは1枚だけですが、eSIMと併用できます。</b> トレイにはnanoSIM 1枚とmicroSD 1枚が入ります。2回線使いたい場合は1回線をeSIMにすれば、カードを入れたままデュアルSIMで使えます。"
+      },
+      {
+        "q": "Xperia 10 VIIIに1TBや2TBのカードは本当に使えますか？",
+        "a": "<b>ソニー公式が2TBまでのmicroSDXCに対応と明記しています。</b> ただし大容量カードは偽物も多いので、Amazonの正規販売元から購入し、挿入後に本体でフォーマットしてから使ってください。"
+      }
+    ],
+    "relatedDevices": [
+      "sharp-aquos-sense10",
+      "google-pixel-8",
+      "iphone-15"
+    ],
+    "notes": "2026年10月8日発売、SIMフリー99,000円。docomo SO-52G / au SOG18 / SoftBank A602SO。8GB/128GBのみ。ソニー公式: microSDXC 2TBまで（2026年9月時点）。Xperia 1 VII/VIII、10 VIIも2TB対応。4Kのフレームレート上限（30か60か）は公式未確認なので書かない。",
+    "metaDescription": "Xperia 10 VIIIは内蔵128GBのみでmicroSDXC最大2TB対応（ソニー公式）。4K動画用のV30、アプリ用のA2など、おすすめカードと容量の選び方を解説します。",
+    "imageUrl": "/img/devices/smartphones/sony-xperia-10-viii.webp"
+  },
+  {
+    "id": "sharp-aquos-sense10",
+    "name": "AQUOS sense10 (シャープ)",
+    "category": "スマートフォン",
+    "slug": "sharp-aquos-sense10",
+    "searchTerms": [
+      "aquos sense10 microsd おすすめ",
+      "アクオス センス10 sdカード 何gb",
+      "aquos sense10 sdカード 対応",
+      "sh-m33 microsd",
+      "aquos sense10 sdカード 入れ方"
+    ],
+    "sdCard": {
+      "type": "microSDXC（UHS-I）",
+      "minSpeed": "V30 / U3 / A2",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "2TB（公式）",
+      "minAppPerformance": "A2（推奨）"
+    },
+    "whySpecs": "AQUOS sense10にはmicroSDスロットがあり、シャープ公式でmicroSDXC 2TBまでの対応が明記されています。前モデルのsense9は1TBまでだったので上限が倍になりました。キャリア版は6GB/128GBだけの場合が多く、写真や動画を本体に溜めるとすぐ足りなくなります。sense10は長く使う前提で買われることが多い機種なので、カードも書き換えに強いものを選ぶと安心です。4K動画をカードに保存するならV30、アプリを移すならA2対応を目安にしてください。コスパ重視の機種なので、128GBや256GBの定番カードで十分です。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "AQUOS sense10にmicroSDスロットはありますか？",
+        "a": "<b>あります。</b> シャープ公式仕様で外部メモリはmicroSDXC（最大2TB）と記載されています。sense9は1TBまでだったので、2TBまで使えるのはsense10からです。"
+      },
+      {
+        "q": "sense9で使っていたmicroSDをsense10に移せますか？",
+        "a": "<b>移せます。</b> 両機種ともmicroSDXC対応です。ただし移行前に写真をバックアップし、sense10に入れたあとは「内部ストレージ化」せず外部ストレージとして使うほうが、機種変更時にトラブルが起きません。"
+      }
+    ],
+    "relatedDevices": [
+      "sony-xperia-10-viii",
+      "google-pixel-8",
+      "iphone-15"
+    ],
+    "notes": "2025年11月13日発売、シャープ直販62,700円（6/128）・69,300円（8/256）。SIMフリーSH-M33、docomo/au/SoftBank/楽天/J:COM。シャープ公式: microSDXC 最大2TB（sense9は1TB、wish5/R10は2TB）。SIMトレイ共用かどうかは未確認。",
+    "metaDescription": "AQUOS sense10はmicroSDXC最大2TB対応（シャープ公式）。sense9の1TBから倍増。4K動画やアプリ用に向くV30・A2カードと容量の目安を解説します。",
+    "imageUrl": "/img/devices/smartphones/sharp-aquos-sense10.webp"
   }
 ]

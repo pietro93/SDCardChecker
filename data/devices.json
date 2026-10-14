@@ -449,6 +449,7 @@
         }
       ],
       "relatedDevices": [
+        "gopro-mission-1-pro",
         "gopro-hero-12",
         "gopro-hero-max",
         "gopro-hero-11-black",
@@ -876,6 +877,7 @@
         }
       ],
       "relatedDevices": [
+        "dji-osmo-action-5-pro",
         "dji-osmo-action-6",
         "gopro-hero-13",
         "insta360-ace-pro",
@@ -1070,6 +1072,7 @@
         }
       ],
       "relatedDevices": [
+        "dji-osmo-360-ii",
         "gopro-hero-max",
         "gopro-hero-13"
       ],
@@ -1167,6 +1170,7 @@
         }
       ],
       "relatedDevices": [
+        "dji-osmo-action-5-pro",
         "insta360-ace-pro-2",
         "dji-osmo-pocket-4",
         "dji-osmo-action-4"
@@ -1220,6 +1224,7 @@
         }
       ],
       "relatedDevices": [
+        "dji-osmo-pocket-4p",
         "dji-osmo-pocket-3",
         "dji-osmo-action-6",
         "insta360-ace-pro-2"
@@ -1323,6 +1328,227 @@
       ],
       "notes": "Older flagship (2020) but still widely owned and searched for card compatibility. Officially capped at 256GB by GoPro at launch; V30 minimum applies same as newer Hero models.",
       "imageUrl": "/img/devices/action-cameras/gopro-hero-9-black.webp"
+    },
+    {
+      "id": "dji-osmo-action-5-pro",
+      "name": "DJI Osmo Action 5 Pro",
+      "category": "Action Cameras",
+      "slug": "dji-osmo-action-5-pro",
+      "metaDescription": "DJI requires a U3/V30 UHS-I microSD card for the Osmo Action 5 Pro, up to 1TB. It also has 47GB of usable built-in storage. Best cards that meet spec.",
+      "searchTerms": [
+        "dji osmo action 5 pro sd card",
+        "osmo action 5 pro microsd",
+        "dji action 5 pro memory card requirements",
+        "best sd card for osmo action 5 pro",
+        "osmo action 5 pro internal storage vs sd card"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "The Osmo Action 5 Pro was the first Osmo Action with built-in storage: 64GB fitted, about 47GB usable. That covers a short session, but 4K/120 fills it in well under an hour, so a card is still the main recording medium. DJI requires a UHS-I microSD card rated U3 and V30, up to 1TB, and its own recommended list is all V30 cards from SanDisk, Kingston and Lexar. UHS-II cards work but record no faster, because the slot is UHS-I.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        },
+        {
+          "id": "lexar-professional-silver-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does the Osmo Action 5 Pro need a microSD card?",
+          "a": "<b>Not to start recording.</b> It has 64GB built in, about 47GB usable, which holds roughly 40 minutes of 4K/60. For a full day you still need a card, up to 1TB."
+        },
+        {
+          "q": "Do the Osmo Action 4 and Action 5 Pro use the same card?",
+          "a": "<b>Yes.</b> Both take UHS-I microSD cards rated U3/V30. The Action 5 Pro raises the maximum from 512GB to 1TB and adds internal storage, but a V30 card from an Action 4 works as is."
+        }
+      ],
+      "relatedDevices": [
+        "dji-osmo-action-4",
+        "dji-osmo-action-6",
+        "gopro-hero-13",
+        "insta360-ace-pro-2"
+      ],
+      "notes": "Released September 2024, sits between Action 4 and Action 6 in the lineup. DJI official: U3/V30 UHS-I, max 1TB, 64GB built in with 47GB available (DJI spec page). 1/1.3-inch sensor, 4K/120. Emphasise the internal storage question since it is the first Action with built-in memory.",
+      "imageUrl": "/img/devices/action-cameras/dji-osmo-action-5-pro.webp"
+    },
+    {
+      "id": "dji-osmo-360-ii",
+      "name": "DJI Osmo 360 II",
+      "category": "Action Cameras",
+      "slug": "dji-osmo-360-ii",
+      "metaDescription": "The DJI Osmo 360 II has 128GB built in (105GB usable) and takes a U3/V30 microSD up to 1TB. 8K/60 at 220 Mbps. Do you need a card? Best picks.",
+      "searchTerms": [
+        "dji osmo 360 ii sd card",
+        "osmo 360 2 microsd",
+        "does osmo 360 ii need a memory card",
+        "dji osmo 360 ii internal storage",
+        "best microsd for osmo 360 ii 8k"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "The Osmo 360 II records 8K/60 360-degree video at up to 220 Mbps, about 27 MB/s, so a V30 card's 30 MB/s guaranteed write is the floor, not a comfortable margin. Buy a card from DJI's recommended list rather than any card with a V30 logo. The camera has 128GB built in, 105GB usable, which is about an hour of 8K. Built-in storage and the card are separate locations, not one pool, so a card is for longer trips rather than a requirement on day one.",
+      "recommendedBrands": [
+        {
+          "id": "kingston-canvas-go-plus"
+        },
+        {
+          "id": "lexar-professional-silver-microsd"
+        },
+        {
+          "id": "sandisk-extreme-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need a microSD card for the Osmo 360 II?",
+          "a": "<b>Not for short shoots.</b> The 105GB of usable built-in storage holds about an hour of 8K/60 at 220 Mbps. Add a 256GB or 512GB card if you shoot a full day away from a laptop."
+        },
+        {
+          "q": "Do the card and built-in storage work as one big space?",
+          "a": "<b>No.</b> You pick one recording location at a time. When the built-in storage fills, switch to the card, or set the card as the default from the start."
+        }
+      ],
+      "relatedDevices": [
+        "gopro-max-2",
+        "insta360-x5",
+        "dji-osmo-action-6",
+        "dji-osmo-pocket-4"
+      ],
+      "notes": "Announced September 2026 at IFA. On sale in Europe (GBP 509 / EUR 589) and Asia; no US launch as of October 2026, so US search traffic is mostly curiosity. DJI official: microSD up to 1TB, exFAT; recommended list is Kingston Canvas Go! Plus (U3 A2 V30) and Lexar Silver Plus. 220 Mbps max regular bitrate, 600 Mbps only for 16K timelapse. Two 1/1.1-inch sensors. Original Osmo 360 is not in the dataset either.",
+      "imageUrl": "/img/devices/action-cameras/dji-osmo-360-ii.webp"
+    },
+    {
+      "id": "gopro-mission-1-pro",
+      "name": "GoPro MISSION 1 Pro",
+      "category": "Action Cameras",
+      "slug": "gopro-mission-1-pro",
+      "metaDescription": "GoPro requires an A2 V30 microSD card for the MISSION 1, MISSION 1 Pro and Pro ILS, up to 1TB. 8K/60 at 240 Mbps makes the card choice matter. Best cards.",
+      "searchTerms": [
+        "gopro mission 1 pro sd card",
+        "gopro mission 1 microsd",
+        "mission 1 pro ils memory card",
+        "best sd card for gopro 8k",
+        "gopro mission 1 card too slow v30"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30 / U3",
+        "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A2",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB",
+          "1TB"
+        ],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "The MISSION 1 series is GoPro's 1-inch sensor flagship. The MISSION 1 shoots 8K/30, and the MISSION 1 Pro and Pro ILS shoot 8K/60, all at up to 240 Mbps, about 30 MB/s. That is right at a V30 card's guaranteed write speed, which is why GoPro's field guide stresses a brand-name A2 V30 card from its tested list. The slot is UHS-I, so a V60 or V90 card records no faster, and owners have reported the camera rejecting a V60 card and asking for an A2 V30 one. 8K files are large: 256GB is the sensible minimum for a day of shooting.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "lexar-professional-silver-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        },
+        {
+          "id": "samsung-evo-select-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do the MISSION 1, MISSION 1 Pro and Pro ILS all use the same card?",
+          "a": "<b>Yes.</b> All three need a brand-name A2 V30 microSD card, up to 1TB. The Pro and Pro ILS add 8K/60 but stay within the same 240 Mbps ceiling."
+        },
+        {
+          "q": "Do I need a V60 or V90 card for 8K on the MISSION 1 Pro?",
+          "a": "<b>No, and it can backfire.</b> The slot is UHS-I, so faster classes bring nothing, and some V60 cards are not on GoPro's list and trigger a card warning. Stick to an A2 V30 card GoPro has tested."
+        }
+      ],
+      "relatedDevices": [
+        "gopro-hero-13",
+        "gopro-max-2",
+        "dji-osmo-action-6",
+        "insta360-ace-pro-2"
+      ],
+      "notes": "On sale since May 2026 at USD 599.99 (MISSION 1) and 699.99 (MISSION 1 Pro); the Pro ILS (interchangeable MFT lens version) was due Q3 2026. There was no Hero 14. One page covers all three variants since the card spec is identical; the slug uses the Pro because it carries most of the search intent. GoPro official: V30 or UHS-3 minimum, A2 recommended, up to 1TB (gopro.com/microsdcards).",
+      "imageUrl": "/img/devices/action-cameras/gopro-mission-1-pro.webp"
+    },
+    {
+      "id": "dji-osmo-pocket-4p",
+      "name": "DJI Osmo Pocket 4P",
+      "category": "Action Cameras",
+      "slug": "dji-osmo-pocket-4p",
+      "metaDescription": "The DJI Osmo Pocket 4P has 103GB built in and takes a U3/V30 microSD up to 1TB. 4K/240 slow motion fills storage fast. Best cards that meet DJI's spec.",
+      "searchTerms": [
+        "dji osmo pocket 4p sd card",
+        "osmo pocket 4p microsd",
+        "pocket 4p memory card 4k 240fps",
+        "does osmo pocket 4p need sd card",
+        "best sd card for osmo pocket 4p"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-I",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "1TB"
+      },
+      "whySpecs": "The Pocket 4P is the dual-lens Pocket, a 1-inch wide lens plus a 1/1.28-inch 60mm lens, and it shoots 4K/240 slow motion at up to 180 Mbps. That bitrate is within what a V30 card sustains, and DJI's recommended list is all U3 A2 V30 cards from Lexar and Kingston. The 103GB of built-in storage covers a typical vlogging day, but 4K/240 and dual-lens recording eat it several times faster than standard 4K/30, which is when the card matters. The slot is UHS-I, so a UHS-II card only helps when offloading through a UHS-II reader.",
+      "recommendedBrands": [
+        {
+          "id": "lexar-professional-silver-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        },
+        {
+          "id": "sandisk-extreme-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does the Osmo Pocket 4P need a microSD card?",
+          "a": "<b>Not on day one.</b> It has 103GB built in, about 3.5 hours of 4K/60 at standard bitrate. Add a card for 4K/240 slow motion or multi-day trips."
+        },
+        {
+          "q": "Is the Pocket 4P card spec different from the Pocket 4?",
+          "a": "<b>No.</b> Both take U3/V30 UHS-I microSD cards up to 1TB. The 4P's second lens and 4K/240 mode fill the card faster, so go one size up."
+        }
+      ],
+      "relatedDevices": [
+        "dji-osmo-pocket-4",
+        "dji-osmo-pocket-3",
+        "dji-osmo-action-6",
+        "dji-osmo-360-ii"
+      ],
+      "notes": "Released 2026 as the dual-lens, higher-end sibling of the Pocket 4. DJI official: 103GB built in, microSD up to 1TB, recommended list Lexar Silver Plus and Kingston Canvas Go! Plus (U3 A2 V30). Max video bitrate 180 Mbps. Lexar's blog suggests V60 for 4K/240 but that is a vendor suggestion, not DJI's requirement.",
+      "imageUrl": "/img/devices/action-cameras/dji-osmo-pocket-4p.webp"
     },
     {
       "id": "fiio-snowsky-echo-mini",
@@ -2110,6 +2336,7 @@
         }
       ],
       "relatedDevices": [
+        "canon-eos-r6-mark-iii",
         "canon-eos-r5",
         "sony-a7-iv",
         "nikon-z8",
@@ -3941,6 +4168,7 @@
         }
       ],
       "relatedDevices": [
+        "nikon-z5-ii",
         "nikon-z6-ii",
         "sony-a7-iii",
         "canon-eos-r8"
@@ -4115,6 +4343,7 @@
         }
       ],
       "relatedDevices": [
+        "sony-zv-e10-ii",
         "sony-a6400",
         "canon-eos-r50",
         "fujifilm-x-s20"
@@ -4289,6 +4518,7 @@
         }
       ],
       "relatedDevices": [
+        "canon-eos-r6-mark-iii",
         "canon-eos-r6-mark-ii",
         "sony-a7-iii",
         "nikon-z6-ii"
@@ -4662,6 +4892,174 @@
       ],
       "notes": "Source framed UHS-II as merely \"a waste of money\" — corrected: the camera's interface can't use UHS bus speeds at all, so it's functionally inert, not just poor value.",
       "imageUrl": "/img/devices/cameras/nikon-coolpix-s3100.webp"
+    },
+    {
+      "id": "sony-zv-e10-ii",
+      "name": "Sony ZV-E10 II",
+      "category": "Cameras",
+      "slug": "sony-zv-e10-ii",
+      "metaDescription": "The Sony ZV-E10 II has a UHS-II slot. V30 covers 4K/60 XAVC S; Sony requires V90 for 600 Mbps XAVC S-I. Which card you need and the best picks.",
+      "searchTerms": [
+        "sony zv-e10 ii sd card",
+        "zv-e10 ii memory card",
+        "zv-e10 mark ii uhs-ii",
+        "zv-e10 ii v90 or v60",
+        "best sd card for sony zv-e10 ii 4k 60"
+      ],
+      "sdCard": {
+        "type": "SD UHS-II (single slot)",
+        "minSpeed": "V30 (V90 for XAVC S-I 4K)",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "No official limit (512GB+ tested)"
+      },
+      "whySpecs": "The big change from the original ZV-E10 is the slot: it is now UHS-II, and the camera gains 4K/60 in 10-bit 4:2:2. Which card you need depends on the codec. XAVC S and XAVC HS 4K/60 top out around 200 Mbps, so a V30 UHS-I card is enough and is what most vloggers should buy. XAVC S-I 4K is All-Intra at 600 Mbps, and Sony's help guide lists only V90 cards for it. A UHS-I card in that mode will stop recording. If you never touch All-Intra, save the money and put it into capacity.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-pro-sd-uhs1"
+        },
+        {
+          "id": "sandisk-extreme-pro-sd-uhs2"
+        },
+        {
+          "id": "sony-tough-g-v90"
+        },
+        {
+          "id": "prograde-digital-sdxc-v90-cobalt"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need a V90 card for the ZV-E10 II?",
+          "a": "<b>Only for XAVC S-I at 600 Mbps.</b> For regular 4K/60 in XAVC S or XAVC HS, a V30 card handles the roughly 200 Mbps bitrate. Sony's own guide lists V90 only for the All-Intra formats."
+        },
+        {
+          "q": "Can I keep using my ZV-E10 card in the ZV-E10 II?",
+          "a": "<b>Yes, for the same modes.</b> A V30 UHS-I card from the original records 4K/60 in XAVC S. It will not record XAVC S-I 4K, which needs a V90 UHS-II card."
+        }
+      ],
+      "relatedDevices": [
+        "sony-zv-e10",
+        "sony-a6700",
+        "sony-a6400",
+        "canon-eos-r50"
+      ],
+      "notes": "Released July 2024. Successor to the ZV-E10, the top-searched vlogging camera on the site. Sony help guide (XAVC S-I 4K 600 Mbps: SDXC V90 or higher). 4K/120 is a paid add-on licence, not a stock mode. Single slot, UHS-II. Framing: most buyers should not overpay for V90; make the codec split clear.",
+      "imageUrl": "/img/devices/cameras/sony-zv-e10-ii.webp"
+    },
+    {
+      "id": "nikon-z5-ii",
+      "name": "Nikon Z5 II",
+      "category": "Cameras",
+      "slug": "nikon-z5-ii",
+      "metaDescription": "The Nikon Z5 II has dual SD UHS-II slots. V60 covers 4K/60 and 30 fps bursts; V90 is recommended for internal N-RAW to SD. Best cards and why.",
+      "searchTerms": [
+        "nikon z5 ii sd card",
+        "z5ii memory card",
+        "nikon z5 ii uhs-ii v60 v90",
+        "best sd card for nikon z5ii n-raw",
+        "z5 ii dual card slots"
+      ],
+      "sdCard": {
+        "type": "Dual SD UHS-II",
+        "minSpeed": "V60 (V90 recommended for N-RAW)",
+        "minWriteSpeed": "60 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "No official limit (512GB tested)"
+      },
+      "whySpecs": "The Z5 II keeps the original Z5's dual UHS-II SD slots but adds the Expeed 7 processor, 30 fps bursts and 4K/60. It is also the first Nikon Z that records 12-bit N-RAW internally to an SD card rather than needing CFexpress. N-RAW is the mode that decides your card: it writes several times the data of H.265, so Nikon points to V90 UHS-II cards for it. For H.265 4K/60, N-Log and stills, a V60 card clears the buffer fast enough and costs much less. Buy V60 unless you plan to shoot N-RAW.",
+      "recommendedBrands": [
+        {
+          "id": "lexar-professional-1000x-sd"
+        },
+        {
+          "id": "sandisk-extreme-pro-sd-uhs2"
+        },
+        {
+          "id": "sony-tough-g-v90"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need a V90 card for the Nikon Z5 II?",
+          "a": "<b>Only for N-RAW.</b> Internal 12-bit N-RAW is the one mode that pushes past V60. For 4K/60 H.265, N-Log and 30 fps bursts, a V60 UHS-II card is enough."
+        },
+        {
+          "q": "Will my cards from the original Z5 work in the Z5 II?",
+          "a": "<b>Yes.</b> Both have dual UHS-II SD slots. The Z5 II's faster bursts and 4K/60 benefit from V60 or better, but any card that worked in the Z5 still works here."
+        }
+      ],
+      "relatedDevices": [
+        "nikon-z5",
+        "nikon-z6-iii",
+        "nikon-zf",
+        "canon-eos-r8"
+      ],
+      "notes": "Released April 2025, USD 1,696.95 body. 24.5MP BSI full frame, Expeed 7, up to 30 fps (C30 JPEG), 4K/60 with crop, 4K/30 full width, internal N-RAW 12-bit to SD (first Nikon Z to do that). No Nikon page in search results gave an explicit N-RAW speed class; retailers cite Nikon recommending V90 for N-RAW. Kept the claim soft ('points to V90') on purpose.",
+      "imageUrl": "/img/devices/cameras/nikon-z5-ii.webp"
+    },
+    {
+      "id": "canon-eos-r6-mark-iii",
+      "name": "Canon EOS R6 Mark III",
+      "category": "Cameras",
+      "slug": "canon-eos-r6-mark-iii",
+      "metaDescription": "The Canon EOS R6 Mark III moved to one CFexpress Type B slot plus one SD UHS-II slot. 7K RAW needs CFexpress; V90 SD covers the rest. Best cards.",
+      "searchTerms": [
+        "canon r6 mark iii memory card",
+        "eos r6 mark iii cfexpress or sd",
+        "r6 iii card slots",
+        "canon r6 mark 3 sd card",
+        "best cfexpress card for r6 mark iii 7k raw"
+      ],
+      "sdCard": {
+        "type": "CFexpress Type B + SD UHS-II",
+        "minSpeed": "V90",
+        "minWriteSpeed": "90 MB/s",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "CFexpress 8TB, SD no official limit"
+      },
+      "whySpecs": "This is the format change people search for. The R6 and R6 Mark II had two SD UHS-II slots; the R6 Mark III swaps one of them for CFexpress Type B. The reason is the new 32.5MP sensor and internal 7K/60 12-bit Canon RAW Light, which only records to the CFexpress slot. Everything else, 4K/120, Open Gate 7K/30 in 10-bit MP4 and 40 fps RAW bursts, works on the SD slot, where Canon specifies UHS-II V90. In practice most owners run a CFexpress card for RAW video and relay or backup, and a V90 SD card for stills and compressed video.",
+      "recommendedBrands": [
+        {
+          "id": "prograde-digital-cfexpress-type-b-gold"
+        },
+        {
+          "id": "sandisk-extreme-pro-cfexpress"
+        },
+        {
+          "id": "angelbird-av-pro-cfexpress-type-b-mk2"
+        },
+        {
+          "id": "sandisk-extreme-pro-sd-uhs2"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does the R6 Mark III still take SD cards?",
+          "a": "<b>Yes, in one slot.</b> Slot 1 is CFexpress Type B and slot 2 is SD UHS-II. Your R6 Mark II cards work in slot 2 for stills and compressed video. Only 7K RAW Light requires the CFexpress slot."
+        },
+        {
+          "q": "Do I have to buy a CFexpress card?",
+          "a": "<b>Only for internal RAW video.</b> Stills, 4K/120 and Open Gate MP4 all record to a V90 SD card. If you never shoot Canon RAW Light, a single V90 SD card is enough."
+        }
+      ],
+      "relatedDevices": [
+        "canon-eos-r6-mark-ii",
+        "canon-eos-r6",
+        "canon-eos-r5-mark-ii",
+        "canon-eos-r8"
+      ],
+      "notes": "Announced November 2025. 32.5MP, 40 fps electronic, 12 fps mechanical, 7K/60 RAW Light internal, Open Gate 7K/30. Canon Europe: one CFexpress Type B slot, one SD UHS-II slot. OWC blog: SD slot supports UHS-II V90; CFexpress up to 8TB. VPG 400 is third-party advice for 7K RAW, not a Canon spec line. The format question (CFexpress vs SD) is the search angle.",
+      "imageUrl": "/img/devices/cameras/canon-eos-r6-mark-iii.webp"
     },
     {
       "id": "raspberry-pi-5",
@@ -7991,6 +8389,7 @@
         }
       ],
       "relatedDevices": [
+        "miyoo-flip",
         "anbernic-rg353v",
         "nintendo-3ds-xl",
         "trimui-brick"
@@ -8655,6 +9054,7 @@
         }
       ],
       "relatedDevices": [
+        "rog-xbox-ally-x20",
         "asus-rog-ally-x",
         "asus-rog-ally",
         "lenovo-legion-go-gen-2"
@@ -9427,6 +9827,184 @@
         "retroid-pocket-g2"
       ],
       "notes": "Premium Android emulation tier alongside the Odin 3/Odin 2 Portal — users skew toward higher-margin 512GB-1TB A2 cards rather than budget picks given the file sizes involved in Switch/PS2/GameCube emulation."
+    },
+    {
+      "id": "miyoo-flip",
+      "name": "Miyoo Flip",
+      "category": "Gaming Handhelds",
+      "slug": "miyoo-flip",
+      "customTitle": "Best SD Card for Miyoo Flip: Dual Slots, A1 Speed, Up to 512GB",
+      "metaDescription": "The Miyoo Flip has two microSD slots: one for the OS, one for games. An A1 card speeds up menus. 128GB covers most libraries. Best cards and why.",
+      "searchTerms": [
+        "miyoo flip sd card",
+        "miyoo flip microsd",
+        "miyoo flip v2 sd card",
+        "miyoo flip second sd slot",
+        "miyoo flip sd card not reading"
+      ],
+      "sdCard": {
+        "type": "microSD (two slots)",
+        "minSpeed": "Class 10 / U1",
+        "minWriteSpeed": "10 MB/s",
+        "minAppPerformance": "A1",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "512GB+"
+      },
+      "whySpecs": "The Miyoo Flip is the 3.5-inch clamshell with a Rockchip RK3566, the same chip as the Anbernic RG35XX SP, and it boots its Linux OS from microSD. It has two slots: TF1 holds the OS and TF2 is for games, so you can swap or rebuild the game library without touching the system card. Games up to PS1 and some N64 and Dreamcast are small, so an A1-rated card matters more than raw write speed because the OS reads thousands of small files. The included 64GB card is a no-name one that owners often replace, and the Flip has a record of SD reader complaints, which makes a reputable card the single best reliability upgrade.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-ultra-microsd"
+        },
+        {
+          "id": "samsung-evo-select-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        },
+        {
+          "id": "sandisk-extreme-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do the two SD slots on the Miyoo Flip work?",
+          "a": "<b>TF1 is the OS card, TF2 is for games.</b> Keep a small card in TF1 for the system and custom firmware, and put your library on a 128GB or 256GB card in TF2. The Flip reads games from either."
+        },
+        {
+          "q": "My Miyoo Flip stopped reading its SD card. Is the card the problem?",
+          "a": "<b>Often, yes.</b> The bundled card is the usual failure point; replace it with a brand-name A1 card and reformat to FAT32 or exFAT. If a new card is also not recognised, the reader itself may be faulty, which some early units suffered."
+        }
+      ],
+      "relatedDevices": [
+        "miyoo-mini-plus",
+        "miyoo-mini-flip",
+        "anbernic-rg35xx-sp",
+        "trimui-brick"
+      ],
+      "notes": "Released December 2024 (V2 with metal hinge in 2025). Not to be confused with the Miyoo Mini Flip, a smaller 2.8-inch device with Mini Plus internals, which has its own page. RK3566, 1GB RAM, 640x480 3.5-inch IPS, 3000mAh. Two microSD slots (TF1 OS, TF2 games), 64GB card included. Known issues: hinge (fixed in V2) and SD reader reports, grey model most reported.",
+      "imageUrl": "/img/devices/gaming-consoles/miyoo-flip.webp"
+    },
+    {
+      "id": "miyoo-mini-flip",
+      "name": "Miyoo Mini Flip",
+      "category": "Gaming Handhelds",
+      "slug": "miyoo-mini-flip",
+      "customTitle": "Best SD Card for Miyoo Mini Flip: A1 Speed, Up to 512GB",
+      "metaDescription": "The Miyoo Mini Flip boots from one microSD slot, same as the Mini Plus. An A1 card speeds up OnionOS menus; 128GB fits most libraries. Best cards.",
+      "searchTerms": [
+        "miyoo mini flip sd card",
+        "miyoo mini flip microsd",
+        "miyoo mini flip onion os sd card",
+        "miyoo mini flip storage",
+        "miyoo mini flip vs miyoo flip"
+      ],
+      "sdCard": {
+        "type": "microSD",
+        "minSpeed": "Class 10 / U1",
+        "minWriteSpeed": "10 MB/s",
+        "minAppPerformance": "A1",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "512GB+"
+      },
+      "whySpecs": "The Mini Flip is the Miyoo Mini Plus folded into a 2.8-inch clamshell: same SigmaStar SSD202D chip, 128MB of RAM and a single microSD slot that holds the OS and every game. Because the whole system runs from the card, an A1 rating shortens boot times and menu lag more than any speed class does, and custom firmware such as OnionOS and Surwish both recommend it. The library tops out at PS1, so 64GB covers 8-bit and 16-bit catalogues and 128GB adds a full PS1 set. Reliability beats capacity here: the bundled 64GB card is the first thing to replace.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-ultra-microsd"
+        },
+        {
+          "id": "samsung-evo-select-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        },
+        {
+          "id": "amazon-basics-microsd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does the Miyoo Mini Flip use the same SD card setup as the Mini Plus?",
+          "a": "<b>Yes.</b> Same chip, one microSD slot, OS on the card. An OnionOS card built for the Mini Plus boots on the Mini Flip once you install the Mini Flip build."
+        },
+        {
+          "q": "Miyoo Flip or Miyoo Mini Flip, which one has two SD slots?",
+          "a": "<b>The Miyoo Flip.</b> It is the larger 3.5-inch RK3566 model with separate OS and game slots. The Mini Flip has one slot that does both."
+        }
+      ],
+      "relatedDevices": [
+        "miyoo-mini-plus",
+        "miyoo-flip",
+        "anbernic-rg35xx-sp",
+        "trimui-brick"
+      ],
+      "notes": "Released late 2025, around USD 53. GBA SP-style clamshell, 2.8-inch 750x560 IPS, Cortex-A7 1.2GHz (SSD202D), 128MB RAM, 2500mAh, 2.4GHz Wi-Fi, single microSD, 64GB card included. Supported CFW: Onion, sprigUI, Surwish OS, Allium. The user asked for 'Miyoo Flip / Mini Flip'; they are two different devices so both got pages, cross-linked.",
+      "imageUrl": "/img/devices/gaming-consoles/miyoo-mini-flip.webp"
+    },
+    {
+      "id": "rog-xbox-ally-x20",
+      "name": "ASUS ROG Xbox Ally X20",
+      "category": "Gaming Handhelds",
+      "slug": "rog-xbox-ally-x20",
+      "metaDescription": "The ROG Xbox Ally X20 keeps the Ally X's UHS-II microSD reader, up to 2TB. UHS-II cards load fastest; A2 UHS-I cards give more space per dollar. Best picks.",
+      "searchTerms": [
+        "rog xbox ally x20 sd card",
+        "rog xbox ally x20 microsd",
+        "ally x20 uhs-ii card",
+        "best microsd for rog xbox ally x20",
+        "rog xbox ally x20 storage 1tb"
+      ],
+      "sdCard": {
+        "type": "microSD UHS-II (fully backward compatible with UHS-I)",
+        "minSpeed": "V30",
+        "minWriteSpeed": "30 MB/s",
+        "minAppPerformance": "A2",
+        "recommendedCapacity": [
+          "512GB",
+          "1TB",
+          "2TB"
+        ],
+        "maxCapacity": "2TB"
+      },
+      "whySpecs": "The X20 is the 20th-anniversary edition of the ROG Xbox Ally X: a 7.4-inch 1080p 120Hz OLED, TMR sticks and a translucent shell on top of the same Ryzen AI Z2 Extreme, 24GB of RAM and 1TB SSD. ASUS says the internals are identical, and that includes the UHS-II microSD reader that supports cards up to 2TB. With a 1TB SSD the card is overflow storage for the games you rotate, so an A2 UHS-I card at 1TB or 2TB is the value pick. A UHS-II card reads games from the card noticeably faster but costs far more per gigabyte.",
+      "recommendedBrands": [
+        {
+          "id": "lexar-professional-1000x-microsd",
+          "note": "UHS-II card that uses the reader's full speed"
+        },
+        {
+          "id": "sandisk-extreme-pro-microsd-2tb",
+          "note": "Full 2TB capacity, A2-rated UHS-I"
+        },
+        {
+          "id": "sandisk-rog-ally-microsd",
+          "note": "Officially licensed ROG card"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is the Ally X20's SD slot any different from the ROG Xbox Ally X?",
+          "a": "<b>No.</b> ASUS kept the internals identical, so it is the same UHS-II microSD reader with the same 2TB ceiling. Any card you bought for the Ally X carries over."
+        },
+        {
+          "q": "Is the X20 worth it over the Ally X?",
+          "a": "<b>The money buys the OLED screen and TMR sticks, not storage or speed.</b> Both have a 1TB SSD and the same card reader. If the extra 300 dollars is for storage, put it into a 2TB card instead."
+        }
+      ],
+      "relatedDevices": [
+        "rog-xbox-ally-x",
+        "asus-rog-ally-x",
+        "lenovo-legion-go-gen-2",
+        "steam-deck"
+      ],
+      "notes": "Ships October 15, 2026 at USD 1,299.99 (USD 2,499.99 anniversary bundle). Same Z2 Extreme, 24GB LPDDR5X, 1TB PCIe 4.0 SSD, 80Wh battery as the Ally X. No source explicitly lists the X20's card reader; the UHS-II/2TB claim rests on ASUS's 'internal hardware identical' statement (HotHardware, Tom's Guide). Re-verify when ASUS posts the full spec sheet.",
+      "imageUrl": "/img/devices/gaming-consoles/rog-xbox-ally-x20.webp"
     },
     {
       "id": "lowrance-hds-live",
@@ -10860,8 +11438,8 @@
     }
   ],
   "metadata": {
-    "generated": "2026-10-12T13:24:21.291Z",
-    "totalDevices": 220,
+    "generated": "2026-10-13T14:40:07.388Z",
+    "totalDevices": 230,
     "categories": [
       "3D Printers & Fabrication",
       "Action Cameras",

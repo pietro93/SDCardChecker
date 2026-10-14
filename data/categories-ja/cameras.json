@@ -233,7 +233,8 @@
       "fujifilm-x100v",
       "fujifilm-xe5",
       "leica-q3",
-      "sony-a6700"
+      "sony-a6700",
+      "ricoh-gr-iv"
     ],
     "notes": "2024年最も注目されたカメラです。レトロなデザインと並外れた画質で知られています。人気と品薄により、アクセサリーの検索ボリュームも非常に高いです。"
   },
@@ -2600,5 +2601,219 @@
       "nikon-z9"
     ],
     "notes": ""
+  },
+  {
+    "id": "ricoh-gr-iv",
+    "name": "Ricoh GR IV (リコー)",
+    "category": "cameras",
+    "slug": "ricoh-gr-iv",
+    "searchTerms": [
+      "リコー gr iv sdカード",
+      "gr4 microsd おすすめ",
+      "gr iv メモリーカード 何を買う",
+      "gr iii から gr iv sdカード 使える",
+      "ricoh gr iv microsd uhs-i"
+    ],
+    "sdCard": {
+      "type": "microSD（UHS-I）",
+      "minSpeed": "Class 10 / U1（公式はClass 6以上）",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "公式な上限なし（1TBまで動作確認済み）"
+    },
+    "whySpecs": "GR IVはGR IIIのフルサイズSDからmicroSDに変わりました。GR IIIで使っていたSDカードはそのままでは入りません。スロットはUHS-Iなので、UHS-IIのmicroSDを買っても速度は上がらず、リコー公式もUHS-IIは使えないと案内しています。動画はフルHD 60pまでで4Kはなく、公式の推奨はClass 6以上です。つまり速度で悩む必要はほとんどなく、約53GBの内蔵メモリーと合わせてどれだけ容量を持ち歩くかが選択の中心になります。RAW+JPEGで撮り続けるなら128GB以上が安心です。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "GR IIIのSDカードはGR IVで使えますか？",
+        "a": "<b>そのままでは使えません。</b> GR IVはmicroSDスロットに変わったため、GR IIIのフルサイズSDカードは物理的に入りません。逆にGR IV用のmicroSDをSDアダプターに入れればGR IIIで使えます。買い替え時はmicroSDを新しく用意してください。"
+      },
+      {
+        "q": "内蔵メモリーが約53GBあるならカードは不要ですか？",
+        "a": "<b>日常使いなら内蔵メモリーだけでも撮影できますが、カードは入れておくことをおすすめします。</b> 内蔵メモリーが満杯になると撮影が止まり、PCへの取り込みも本体をつなぐ必要があります。カードがあれば旅行先でも入れ替えるだけで容量を確保でき、万一の本体トラブル時にもデータを取り出せます。"
+      }
+    ],
+    "relatedDevices": [
+      "fujifilm-x100vi",
+      "fujifilm-x-half",
+      "leica-q3",
+      "fujifilm-xe5"
+    ],
+    "notes": "2025年9月発売、市場想定価格19.5万円前後。GR III→GR IVでSD→microSDに変更された点が最大の検索動機。公式FAQ: UHS-II不可、動画はClass 6以上推奨、動作確認はSDHC 32GB/SDXC 1TBまで（KIOXIA・SanDisk、2025年9月時点）。連写fpsと動画ビットレートは公式未公表なので書かない。HDF版（2026年1月）とMonochrome版（2026年2月）も同じmicroSD仕様。",
+    "metaDescription": "GR IVはGR IIIと違いmicroSD（UHS-I）仕様。内蔵約53GBとの使い分け、UHS-IIが使えない理由、公式推奨のClass 6と動作確認済み容量をもとにおすすめカードを紹介します。",
+    "imageUrl": "/img/devices/cameras/ricoh-gr-iv.webp"
+  },
+  {
+    "id": "fujifilm-instax-mini-evo",
+    "name": "Fujifilm instax mini Evo (チェキ)",
+    "category": "cameras",
+    "slug": "fujifilm-instax-mini-evo",
+    "searchTerms": [
+      "instax mini evo microsd",
+      "チェキ evo sdカード 何gb",
+      "instax mini evo sdカード 使えない",
+      "インスタックス ミニ エボ メモリーカード",
+      "チェキ evo microsd おすすめ"
+    ],
+    "sdCard": {
+      "type": "microSD / microSDHC",
+      "minSpeed": "Class 10（公式要件なし）",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "16GB",
+        "32GB"
+      ],
+      "maxCapacity": "32GB（公式対応はmicroSDHCまで）"
+    },
+    "whySpecs": "instax mini Evoの内蔵メモリーは約45枚分しかありません。カードなしでも撮ってプリントできますが、1日お出かけすれば簡単に埋まります。富士フイルムの公式仕様はmicroSDとmicroSDHCのみで、microSDXC（64GB以上）は対応に含まれていません。64GBや128GBのカードを買っても認識されない可能性があるため、32GBまでを選ぶのが安全です。1GBあたり約850枚保存できるので32GBで数万枚分、速度はどのClass 10カードでも十分です。大容量より、確実に認識される容量を優先してください。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd"
+      },
+      {
+        "id": "samsung-evo-select-microsd"
+      },
+      {
+        "id": "kingston-canvas-select"
+      }
+    ],
+    "faq": [
+      {
+        "q": "64GBのmicroSDカードを入れたら認識しません。",
+        "a": "<b>公式対応はmicroSDHC（32GBまで）です。</b> 64GB以上はmicroSDXC規格で、mini Evoの対応リストに含まれていません。32GB以下のmicroSDHCカードに替え、本体メニューでフォーマットしてから使ってください。"
+      },
+      {
+        "q": "プリントするのにmicroSDカードは必要ですか？",
+        "a": "<b>必要ありません。</b> 内蔵メモリーの画像もカードの画像もそのままプリントできます。カードは保存枚数を増やし、PCやスマホに画像を移すためのものです。"
+      }
+    ],
+    "relatedDevices": [
+      "fujifilm-x-half",
+      "ricoh-gr-iv",
+      "canon-g7x-mark-iii"
+    ],
+    "notes": "2021年12月発売、現在も販売中（2025年11月にGENTLE ROSE色追加）。公式仕様は「microSD／microSDHC」のみ、容量上限・速度クラスは未公表。2026年1月発売の「instax mini Evo Cinema」は別製品でmicroSDXC 256GBまで対応（未掲載）。",
+    "metaDescription": "instax mini Evoの公式対応はmicroSD／microSDHC（32GBまで）。64GB以上が認識されない理由と、内蔵約45枚から増やすためのおすすめカードを解説します。",
+    "imageUrl": "/img/devices/cameras/fujifilm-instax-mini-evo.webp"
+  },
+  {
+    "id": "fujifilm-x-half",
+    "name": "Fujifilm X half",
+    "category": "cameras",
+    "slug": "fujifilm-x-half",
+    "searchTerms": [
+      "x half sdカード",
+      "富士フイルム x half メモリーカード おすすめ",
+      "x-hf1 sdカード 容量",
+      "エックスハーフ sdカード 何gb",
+      "x half microsd"
+    ],
+    "sdCard": {
+      "type": "SD（UHS-I）",
+      "minSpeed": "V10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "2TB（SDXC）"
+    },
+    "whySpecs": "X halfはコンパクトな見た目からmicroSDと思われがちですが、公式仕様はフルサイズのSDカード（UHS-I対応、SDXCは2TBまで）です。microSDを買う場合はアダプターが必要になります。センサーは1インチ、動画は縦型のフルHD相当で最大50Mbpsなので、V10クラスで足ります。UHS-IIカードを使っても速度は上がりません。フィルムシミュレーションや2in1合成、縦動画をたくさん撮るなら、速度より容量を優先して64GB以上を選んでください。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "lexar-professional-633x-sd"
+      },
+      {
+        "id": "sandisk-ultra-sd-uhs1"
+      }
+    ],
+    "faq": [
+      {
+        "q": "X halfはmicroSDカードですか、SDカードですか？",
+        "a": "<b>フルサイズのSDカードです。</b> 公式仕様はSD／SDHC／SDXC（UHS-I対応）で、microSDスロットはありません。手持ちのmicroSDを使うならSDアダプターを使ってください。"
+      },
+      {
+        "q": "X halfの動画にV30カードは必要ですか？",
+        "a": "<b>必須ではありません。</b> X halfの動画は最大50Mbps（約6MB/s）で、V10クラスで余裕があります。V30カードは静止画の書き込みが少し速くなる程度の差です。"
+      }
+    ],
+    "relatedDevices": [
+      "fujifilm-instax-mini-evo",
+      "fujifilm-x100vi",
+      "fujifilm-xm5",
+      "ricoh-gr-iv"
+    ],
+    "notes": "2025年6月発売、店頭予想価格11万円前後。ブリーフでは「microSD」とされていたが公式仕様（fujifilm-x.com X-HF1）はSD UHS-I、SDXC 2TBまで。動画は1080x1440/2160x1440などの縦・正方形フォーマット、ビットレート10/20/50Mbps。",
+    "metaDescription": "X halfはmicroSDではなくフルサイズSD（UHS-I、SDXC 2TBまで）。動画は最大50MbpsなのでV10で十分。必要スペックとおすすめカードを解説します。",
+    "imageUrl": "/img/devices/cameras/fujifilm-x-half.webp"
+  },
+  {
+    "id": "om-system-tg-7",
+    "name": "OM SYSTEM Tough TG-7",
+    "category": "cameras",
+    "slug": "om-system-tg-7",
+    "searchTerms": [
+      "tg-7 sdカード おすすめ",
+      "om system tg-7 sdカード 4k",
+      "tg7 メモリーカード 何gb",
+      "tough tg-7 sdカード 付属",
+      "オリンパス tg-7 sdカード"
+    ],
+    "sdCard": {
+      "type": "SD（UHS-I）",
+      "minSpeed": "V30 / U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "公式な上限なし（SDXC対応）"
+    },
+    "whySpecs": "TG-7にはSDカードが付属せず、内蔵メモリーもありません。カードを入れないと1枚も撮れないので、本体と同時に用意する必要があります。4K 30pは約102Mbps（約13MB/s）で記録するため、OM SYSTEMの取扱説明書はUHS-I U3以上を指定しています。フルHD 120fpsなどのハイスピード動画も同じくU3指定です。連写Hは電子シャッターで最大20コマ/秒、RAWで約46枚続くので、書き込みが速いカードほど次の連写までの待ち時間が短くなります。水中や雪山で使うカメラなので、温度や防水をうたうカードを選ぶと安心です。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-sd-uhs1"
+      },
+      {
+        "id": "kingston-canvas-go-pro-sd"
+      },
+      {
+        "id": "lexar-professional-633x-sd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "TG-7にSDカードは付属していますか？",
+        "a": "<b>付属していません。</b> 内蔵メモリーもないので、カードがないと撮影できません。4K動画を撮るならU3（V30）のUHS-I SDカードを本体と一緒に購入してください。"
+      },
+      {
+        "q": "TG-6のSDカードはTG-7でそのまま使えますか？",
+        "a": "<b>使えます。</b> TG-6もTG-7もSD UHS-Iスロットで、4Kの仕様も同じです。U3以上のカードなら買い替え不要です。"
+      }
+    ],
+    "relatedDevices": [
+      "gopro-hero-13",
+      "canon-g7x-mark-iii",
+      "fujifilm-x-half"
+    ],
+    "notes": "2023年10月発売、店頭予想価格7万円前後。公式マニュアル: 4K・ハイスピード動画はUHS-I U3、FHD/HDはClass 10以上。4K 30p約102Mbps、FHD 60p約52Mbps。カード・内蔵メモリーなし。容量上限は公式未公表。",
+    "metaDescription": "TG-7はSDカード別売りで内蔵メモリーなし。4K 30p（約102Mbps）には公式指定のUHS-I U3（V30）が必要。おすすめのSDカードと容量の目安を解説します。",
+    "imageUrl": "/img/devices/cameras/om-system-tg-7.webp"
   }
 ]

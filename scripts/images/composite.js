@@ -98,8 +98,10 @@ async function compositeHero(deviceBuffer, outPath, { scale = 0.6, widthScale = 
   const top = Math.round((BH - h) / 2);
 
   // Soft white glow, larger than the device, behind it.
-  const gw = Math.round(w * 1.5);
-  const gh = Math.round(h * 1.6);
+  // Clamp to the canvas: a tall portrait device (phones) would otherwise push the
+  // glow past the background bounds and sharp refuses to composite it.
+  const gw = Math.min(BW, Math.round(w * 1.5));
+  const gh = Math.min(BH, Math.round(h * 1.6));
   const glow = await sharp(
     Buffer.from(
       `<svg width="${gw}" height="${gh}"><ellipse cx="${gw / 2}" cy="${gh / 2}" rx="${gw * 0.4}" ry="${gh * 0.4}" fill="#ffffff"/></svg>`

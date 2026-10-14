@@ -52,7 +52,8 @@ async function main() {
   const found = findDeviceBySlug(slug);
   if (!found) throw new Error(`No device with slug "${slug}" found in data/categories/*.json`);
   const { device } = found;
-  getCategoryFolder(device.category);
+  const imageCategory = found.imageCategory || device.category;
+  getCategoryFolder(imageCategory);
 
   const sourceUrl = getFlag("--source-url", "");
   const sourceSite = getFlag("--source-site", "manual");
@@ -60,7 +61,7 @@ async function main() {
 
   fs.mkdirSync(REVIEW_DIR, { recursive: true });
   const outImagePath = path.join(REVIEW_DIR, `${slug}.webp`);
-  const scale = CATEGORY_SCALE[device.category] || 0.6;
+  const scale = CATEGORY_SCALE[imageCategory] || 0.6;
 
   const buffer = fs.readFileSync(localPath);
   const composed = await compositeHero(buffer, outImagePath, { scale });

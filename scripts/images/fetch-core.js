@@ -42,13 +42,14 @@ async function fetchDeviceImage(slug, { query: customQuery } = {}) {
   const found = findDeviceBySlug(slug);
   if (!found) throw new Error(`No device with slug "${slug}" found in data/categories/*.json`);
   const { device } = found;
-  getCategoryFolder(device.category); // throws early if category isn't mapped yet
+  const imageCategory = found.imageCategory || device.category;
+  getCategoryFolder(imageCategory); // throws early if category isn't mapped yet
 
   const resolved = await resolveDeviceImage(device, { query: customQuery });
 
   fs.mkdirSync(REVIEW_DIR, { recursive: true });
   const outImagePath = path.join(REVIEW_DIR, `${slug}.webp`);
-  const scale = CATEGORY_SCALE[device.category] || 0.6;
+  const scale = CATEGORY_SCALE[imageCategory] || 0.6;
   const composed = await compositeHero(resolved.buffer, outImagePath, { scale });
 
   const metadata = {

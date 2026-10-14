@@ -33,11 +33,11 @@ function main() {
 
   const found = findDeviceBySlug(slug);
   if (!found) {
-    console.error(`No device with slug "${slug}" found in data/categories/*.json`);
+    console.error(`No device with slug "${slug}" found in data/categories*/*.json`);
     process.exit(1);
   }
   const { device, file, index, allDevices } = found;
-  const folder = getCategoryFolder(device.category);
+  const folder = getCategoryFolder(found.imageCategory || device.category);
 
   const destDir = path.join(DEVICES_IMG_DIR, folder);
   fs.mkdirSync(destDir, { recursive: true });

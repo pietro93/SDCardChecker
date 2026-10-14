@@ -378,7 +378,7 @@ function getDeviceImageFallback(device) {
   // Audio & Hi-Fi brand detection
   if (name.includes("sony walkman") || name.includes("sony nw")) return "/img/devices/audio-hi-fi/sony-walkman-nw-a306.webp";
   if (name.includes("sony") && category.includes("audio")) return "/img/devices/audio-hi-fi/sony-walkman-nw-a306.webp";
-  if (name.includes("hiby") || name.includes("r3") || name.includes("r4")) return "/img/devices/audio-hi-fi/hyby-r4.webp";
+  if (name.includes("hiby") || /\br[34]\b/.test(name)) return "/img/devices/audio-hi-fi/hyby-r4.webp";
   if (name.includes("zoom h")) return "/img/devices/audio-hi-fi/Zoom-h1n-vp.webp";
   if (name.includes("tascam")) return "/img/devices/audio-hi-fi/tascam-dr-05x.webp";
   if (name.includes("fiio")) return "/img/devices/audio-hi-fi/fiio-snowsky-echo-mini.webp";

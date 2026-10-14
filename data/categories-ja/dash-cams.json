@@ -50,7 +50,10 @@
     ],
     "relatedDevices": [
       "yupiteru-wdt510c",
-      "kenwood-drv-mr760"
+      "kenwood-drv-mr760",
+      "comtec-zdr-251d",
+      "comtec-zdr-550d",
+      "comtec-zdr-101s"
     ],
     "notes": "日本市場シェアNo.1モデル。安価なカードを使用すると頻繁に再起動するトラブルが多いため、高耐久カードのクロスセル率が非常に高いです。"
   },
@@ -199,7 +202,9 @@
       }
     ],
     "relatedDevices": [
-      "comtec-zdr035"
+      "comtec-zdr035",
+      "comtec-zdr-750d",
+      "comtec-zdr-880m"
     ],
     "notes": "360度モデルはファイルサイズに対するユーザーの不満（記録時間が短い）が最も多いカテゴリです。「大容量カード」への提案が最も効果的なSEO対策となります。"
   },
@@ -394,5 +399,330 @@
       "insta360-x3"
     ],
     "notes": "日本のバイク通勤・ツーリング人口に向けた重要なニッチです。デイトナはバイク用品メーカーの代表格で、信頼度が高いです。"
+  },
+  {
+    "id": "comtec-zdr-251d",
+    "name": "Comtec ZDR-251D (コムテック)",
+    "category": "dash-cams",
+    "slug": "comtec-zdr-251d",
+    "searchTerms": [
+      "zdr-251d sdカード",
+      "コムテック zdr-251d microsd おすすめ",
+      "zdr-251d sdカード 別売り 何gb",
+      "zdr251d 128gb 録画時間",
+      "コムテック 新型 ドラレコ sdカード"
+    ],
+    "sdCard": {
+      "type": "高耐久 microSD（32GB〜128GB）",
+      "minSpeed": "Class 10（公式推奨）",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB (公式)",
+      "testedMaxCapacity": "128GB"
+    },
+    "whySpecs": "ZDR-251Dは2026年10月16日発売の前後2カメラモデルで、<b>microSDカードが付属しません</b>。箱を開けてすぐ録画するには、本体と一緒にカードを用意する必要があります。対応容量は32GB〜128GB、公式推奨はClass 10です。速度要件は低いので、選ぶ基準は速度ではなく耐久性と容量です。前後同時のフルHD録画は常に書き込みが続き、別売りコード（HDROP-14）で駐車監視を使うと車内が高温になる夏場も書き込み続けます。通常のカードは数か月で寿命が来ることがあるため、高耐久仕様のカードを選んでください。録画時間は32GBで約135〜210分、128GBなら約540〜850分です。駐車監視を使うなら128GBをおすすめします。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      },
+      {
+        "id": "kingston-high-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "ZDR-251Dにはどの容量のカードを買えばいいですか？",
+        "a": "<b>駐車監視を使うなら128GB、走行中の録画だけなら64GBで十分です。</b> 公式の対応は32GB〜128GBで、128GBなら約540〜850分の録画を残せます。256GBは公式対応外なので避けてください。"
+      },
+      {
+        "q": "コムテック純正以外のmicroSDカードを使っても大丈夫ですか？",
+        "a": "<b>使えますが、コムテックは純正指定カード（CDSシリーズ）以外での不具合は保証対象外としています。</b> また「SDカード寿命告知機能」は指定カードでしか動きません。市販品を使う場合は高耐久仕様を選び、1〜2年を目安に交換してください。"
+      }
+    ],
+    "relatedDevices": [
+      "comtec-zdr-101s",
+      "comtec-zdr-250d",
+      "comtec-zdr035",
+      "comtec-zdr037"
+    ],
+    "notes": "2026年10月16日発売、オープン価格（事前情報 約29,800円）。カード別売りが最大の検索動機。公式: 32GB〜128GB対応 Class 10推奨、SDHC/SDXC・V30等の区別やFAT/exFATは未公表。ビットレート未公表。ハード仕様はZDR-250Dと同一（カード無し版と推定、公式の後継表記はなし）。対応表PDFではCDS-xxGD（発売予定）のみに紐付け。",
+    "metaDescription": "ZDR-251DはmicroSDカード別売り。対応は32GB〜128GB、Class 10推奨。前後2カメラと駐車監視に耐える高耐久カードと、容量ごとの録画時間を解説します。",
+    "imageUrl": "/img/devices/dashcams/comtec-zdr-251d.webp"
+  },
+  {
+    "id": "comtec-zdr-101s",
+    "name": "Comtec ZDR-101S (コムテック)",
+    "category": "dash-cams",
+    "slug": "comtec-zdr-101s",
+    "searchTerms": [
+      "zdr-101s sdカード",
+      "コムテック zdr-101s microsd おすすめ",
+      "zdr-101s sdカード 付属 なし",
+      "zdr101s 64gb 録画時間",
+      "コムテック 1カメラ ドラレコ sdカード"
+    ],
+    "sdCard": {
+      "type": "高耐久 microSD（32GB〜128GB）",
+      "minSpeed": "Class 10（公式推奨）",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "32GB",
+        "64GB"
+      ],
+      "maxCapacity": "128GB (公式)",
+      "testedMaxCapacity": "128GB"
+    },
+    "whySpecs": "ZDR-101Sは2026年10月16日発売の前方1カメラモデルで、<b>microSDカードは別売り</b>です。1カメラなので書き込み量は2カメラ機の半分ほどで、32GBでも約316〜496分、64GBなら約620〜975分録画できます。公式の対応は32GB〜128GB、Class 10推奨です。速度はどのカードでも足りますが、ドライブレコーダーは毎日何時間も上書きを繰り返すため、通常のカードでは寿命が先に来ます。高耐久仕様のカードを選べば、数年単位で交換の手間を減らせます。なおこのモデルには「SDカード寿命告知機能」がないので、起動時のSDカードチェックでエラーが出たら交換の合図と考えてください。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      },
+      {
+        "id": "kingston-high-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "ZDR-101Sは32GBで足りますか？",
+        "a": "<b>通勤や買い物程度なら32GBで足ります。</b> 1カメラなので32GBでも約5〜8時間分残せます。別売りコードで駐車監視を使う場合や、長距離ドライブの記録を残したい場合は64GB以上を選んでください。"
+      },
+      {
+        "q": "カードの寿命はどうやって分かりますか？",
+        "a": "<b>ZDR-101SにはSDカード寿命告知機能がありません。</b> 起動時のSDカードチェックでエラーが出る、または録画が途切れるようになったら交換時期です。本体でのフォーマットで直らなければ新しい高耐久カードに替えてください。"
+      }
+    ],
+    "relatedDevices": [
+      "comtec-zdr-251d",
+      "comtec-zdr-550d",
+      "comtec-zdr035"
+    ],
+    "notes": "2026年10月16日発売、オープン価格（事前情報 約19,800円）。カード別売り。公式: 32GB〜128GB Class 10推奨、SD寿命告知機能なし、SDカードチェックあり。MOV 1分ファイル（128GB時は3分）。対応表PDFではCDS-xxGB系に紐付け。後継関係は公式未表記。",
+    "metaDescription": "ZDR-101SはmicroSDカードが付属しません。対応は32GB〜128GB、Class 10推奨。1カメラの録画時間と、長持ちする高耐久カードの選び方を解説します。",
+    "imageUrl": "/img/devices/dashcams/comtec-zdr-101s.webp"
+  },
+  {
+    "id": "comtec-zdr-550d",
+    "name": "Comtec ZDR-550D (コムテック)",
+    "category": "dash-cams",
+    "slug": "comtec-zdr-550d",
+    "searchTerms": [
+      "zdr-550d sdカード 交換",
+      "コムテック zdr-550d microsd 128gb",
+      "zdr-550d 付属 sdカード 64gb 足りない",
+      "zdr550d 駐車監視 sdカード",
+      "zdr-550d sdカード おすすめ"
+    ],
+    "sdCard": {
+      "type": "高耐久 microSD（32GB〜128GB）",
+      "minSpeed": "Class 10（公式推奨）",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB (公式)",
+      "testedMaxCapacity": "128GB"
+    },
+    "whySpecs": "ZDR-550Dは前後ともSTARVISセンサーを搭載した2026年4月発売モデルで、64GBのmicroSDカードが付属します。付属カードで約270〜425分録画できるので、まずはそのまま使えます。カードを買い足すのは、容量を128GBに増やして駐車監視の記録を長く残したいときと、付属カードが寿命を迎えたときです。公式対応は32GB〜128GB、Class 10推奨なので、256GBは使えません。前後フルHDの常時録画に加えて駐車監視（別売りHDROP-14）を使うと、夏の車内で一日中書き込み続けます。交換するときは、付属品と同じ64GBの汎用品ではなく、高耐久仕様の128GBにするのが一番無駄がありません。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      },
+      {
+        "id": "kingston-high-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "付属の64GBカードから128GBに替える意味はありますか？",
+        "a": "<b>駐車監視を使うならあります。</b> 128GBにすると録画時間が約540〜850分に倍増し、駐車中の映像が走行映像で上書きされる前に確認できる余裕が生まれます。走行中の記録だけなら付属の64GBで困りません。"
+      },
+      {
+        "q": "付属カードはいつ交換すべきですか？",
+        "a": "<b>コムテックは1〜2年を目安に交換をすすめています。</b> ZDR-550Dには純正指定カード向けの「SDカード寿命告知機能」があり、表示が出たら交換時期です。市販の高耐久カードに替える場合はこの機能は働かないので、録画エラーが出始めたら交換してください。"
+      }
+    ],
+    "relatedDevices": [
+      "comtec-zdr-750d",
+      "comtec-zdr-250d",
+      "comtec-zdr-251d",
+      "comtec-zdr035"
+    ],
+    "notes": "2026年4月10日発売、64GB Class 10付属。公式: 32GB〜128GB対応。前後1/2.8型STARVIS 200万画素F1.8、HDR固定、ナイトビジョン固定。「交換」「容量アップ」検索を狙うページ。対応表PDFには未掲載（指定CDSカード不明）。",
+    "metaDescription": "ZDR-550Dの付属64GBカードの交換と128GBへの容量アップを解説。公式対応は32GB〜128GB。駐車監視に耐える高耐久microSDと録画時間の目安を紹介します。",
+    "imageUrl": "/img/devices/dashcams/comtec-zdr-550d.webp"
+  },
+  {
+    "id": "comtec-zdr-750d",
+    "name": "Comtec ZDR-750D (コムテック 4K)",
+    "category": "dash-cams",
+    "slug": "comtec-zdr-750d",
+    "searchTerms": [
+      "zdr-750d sdカード 128gb",
+      "コムテック zdr-750d 4k sdカード おすすめ",
+      "zdr-750d 録画時間 64gb 短い",
+      "zdr750d microsd 交換",
+      "コムテック 4k ドラレコ sdカード 容量"
+    ],
+    "sdCard": {
+      "type": "高耐久 microSD（32GB〜128GB）",
+      "minSpeed": "Class 10（公式推奨）",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "128GB"
+      ],
+      "maxCapacity": "128GB (公式)",
+      "testedMaxCapacity": "128GB"
+    },
+    "whySpecs": "ZDR-750Dはコムテックの4Kフラッグシップで、64GBのmicroSDカードが付属します。ただし4K最高画質で録ると付属の64GBは<b>約160分</b>で一周します。前後フルHD機の半分ほどしか残らないので、2026年4月のラインナップで一番カードの増量が効くモデルです。公式対応は32GB〜128GBなので、選択肢は実質128GB一択です。128GBにしても4K最高画質で約320分、初期設定のWQHDなら約460分です。4Kの高ビットレートを一日中書き込み続けるため、普通のカードでは寿命がすぐ来ます。高耐久仕様の128GBを選び、1〜2年ごとに交換するつもりでいてください。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      },
+      {
+        "id": "kingston-high-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "ZDR-750Dで4K録画すると付属の64GBでは何分録れますか？",
+        "a": "<b>最高画質で約160分です。</b> 初期設定（前WQHD・後フルHD）なら約230分です。駐車監視まで使うなら128GBに替えるか、画質設定をWQHDに落として録画時間を稼いでください。"
+      },
+      {
+        "q": "256GBのカードは使えますか？",
+        "a": "<b>公式対応は128GBまでです。</b> 動作したという報告があっても保証外で、事故の瞬間に録れていないリスクがあります。128GBの高耐久カードにしてください。"
+      }
+    ],
+    "relatedDevices": [
+      "comtec-zdr-550d",
+      "comtec-zdr-880m",
+      "comtec-zdr037"
+    ],
+    "notes": "2026年4月10日発売、64GB Class 10付属。公式: 32GB〜128GB対応。前4K（1/2.8型STARVIS 830万画素）後フルHD。公式録画時間: 64GB最高画質約160分、初期設定約230分、128GB約320〜865分。ビットレート未公表。",
+    "metaDescription": "4KのZDR-750Dは付属64GBで約160分。公式上限128GBへの交換で録画時間を倍にする方法と、4K常時録画に耐える高耐久microSDを解説します。",
+    "imageUrl": "/img/devices/dashcams/comtec-zdr-750d.webp"
+  },
+  {
+    "id": "comtec-zdr-250d",
+    "name": "Comtec ZDR-250D (コムテック)",
+    "category": "dash-cams",
+    "slug": "comtec-zdr-250d",
+    "searchTerms": [
+      "zdr-250d sdカード 交換",
+      "コムテック zdr-250d microsd おすすめ",
+      "zdr-250d 128gb 使える",
+      "zdr250d 付属 sdカード 寿命",
+      "zdr-250d zdr-251d 違い"
+    ],
+    "sdCard": {
+      "type": "高耐久 microSD（32GB〜128GB）",
+      "minSpeed": "Class 10（公式推奨）",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB (公式)",
+      "testedMaxCapacity": "128GB"
+    },
+    "whySpecs": "ZDR-250Dは2026年4月発売のコンパクトな前後2カメラモデルで、64GBのmicroSDカードが付属します。付属カードで約270〜425分録画でき、走行中の記録だけなら買い足しは不要です。カード選びが必要になるのは、駐車監視（別売りHDROP-14）のために128GBへ増やすときと、付属カードが寿命を迎えたときです。公式対応は32GB〜128GB、Class 10推奨で、速度より耐久性で選びます。本体は小型ですが前後フルHDを常時書き込むので、カードへの負荷は上位機種と変わりません。交換時は高耐久仕様の128GBにすれば、録画時間と寿命を同時に伸ばせます。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      },
+      {
+        "id": "kingston-high-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "ZDR-250DとZDR-251Dの違いは何ですか？",
+        "a": "<b>カメラ仕様と録画時間は同じで、ZDR-251DはmicroSDカードが付属しません。</b> 手持ちの高耐久カードがあるならZDR-251D、手ぶらで始めたいならカード付きのZDR-250Dが手間なしです。公式に後継と明記されてはいません。"
+      },
+      {
+        "q": "付属の64GBカードは他のドラレコでも使えますか？",
+        "a": "<b>コムテック独自のファイルシステムでフォーマットされています。</b> 他機種で使うには、その機種でフォーマットし直してください。ZDR-250Dに戻すときも本体で再フォーマットが必要です。"
+      }
+    ],
+    "relatedDevices": [
+      "comtec-zdr-251d",
+      "comtec-zdr-550d",
+      "comtec-zdr035"
+    ],
+    "notes": "2026年4月10日発売、64GB Class 10付属。公式: 32GB〜128GB対応。ZDR-550DからSTARVISとナイトビジョンを省いた仕様。ZDR-251Dとハード仕様が同一（カード有無の差）。",
+    "metaDescription": "ZDR-250Dの付属64GB microSDの交換時期と128GBへの増量を解説。公式対応は32GB〜128GB、Class 10推奨。ZDR-251Dとの違いも説明します。",
+    "imageUrl": "/img/devices/dashcams/comtec-zdr-250d.webp"
+  },
+  {
+    "id": "comtec-zdr-880m",
+    "name": "Comtec ZDR-880M (コムテック ミラー型)",
+    "category": "dash-cams",
+    "slug": "comtec-zdr-880m",
+    "searchTerms": [
+      "zdr-880m sdカード 交換",
+      "コムテック zdr-880m microsd 128gb",
+      "zdr-880m ミラー型 sdカード おすすめ",
+      "zdr880m 付属 sdカード 容量",
+      "コムテック ミラー型 ドラレコ sdカード"
+    ],
+    "sdCard": {
+      "type": "高耐久 microSD（32GB〜128GB）",
+      "minSpeed": "Class 10（公式推奨）",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "64GB",
+        "128GB"
+      ],
+      "maxCapacity": "128GB (公式)",
+      "testedMaxCapacity": "128GB"
+    },
+    "whySpecs": "ZDR-880Mは10.66インチのミラー型で、前方は別体カメラ、後方はミラーに映す前後2カメラ構成です。2026年4月発売で64GBのmicroSDカードが付属し、約270〜425分録画できます。公式対応は32GB〜128GB、Class 10推奨です。ミラー型は本体がフロントガラス上部に密着するため、夏場はダッシュボード付近より高温になりやすく、カードの熱劣化が進みます。駐車監視は専用の別売りコード（CDOP-01P）で最長24時間まで設定でき、使うなら128GBが安心です。交換するときは高耐久仕様を選び、本体でフォーマットしてから使ってください。",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      },
+      {
+        "id": "kingston-high-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "ZDR-880Mのカードはどこに入れますか？",
+        "a": "<b>カードスロットはミラー本体側にあります。</b> 前方の別体カメラにはスロットがありません。取り出すときは電源を切ってから抜いてください。駐車監視中は通電しているので、駐車中に抜く前に録画停止を確認します。"
+      },
+      {
+        "q": "付属の64GBから128GBに替えると録画時間はどれくらいになりますか？",
+        "a": "<b>約540〜850分で、ちょうど2倍です。</b> 画質設定で幅があり、初期設定なら約540分前後です。駐車監視を長時間使う場合は128GBをおすすめします。"
+      }
+    ],
+    "relatedDevices": [
+      "comtec-zdr-750d",
+      "comtec-zdr-550d",
+      "smart-mirror-generic"
+    ],
+    "notes": "2026年4月10日発売、64GB Class 10付属。公式: 32GB〜128GB対応。前後1/2.8型200万画素F1.8（PureCel Plus、STARVISではない）、2カメラ構成（kakakuの「3カメラ」表記は誤り）。駐車監視はCDOP-01P。",
+    "metaDescription": "ミラー型ZDR-880Mの付属64GBカードの交換と128GBへの増量を解説。公式対応は32GB〜128GB。高温になるミラー型に向く高耐久microSDを紹介します。",
+    "imageUrl": "/img/devices/dashcams/comtec-zdr-880m.webp"
   }
 ]

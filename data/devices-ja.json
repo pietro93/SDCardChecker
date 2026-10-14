@@ -1,8 +1,8 @@
 {
   "_metadata": {
     "language": "Japanese (日本語)",
-    "generated": "2026-10-12T13:24:21.310Z",
-    "totalDevices": 150,
+    "generated": "2026-10-13T14:40:07.401Z",
+    "totalDevices": 162,
     "categories": [
       "action-cameras",
       "cameras",
@@ -865,7 +865,8 @@
         "fujifilm-x100v",
         "fujifilm-xe5",
         "leica-q3",
-        "sony-a6700"
+        "sony-a6700",
+        "ricoh-gr-iv"
       ],
       "notes": "2024年最も注目されたカメラです。レトロなデザインと並外れた画質で知られています。人気と品薄により、アクセサリーの検索ボリュームも非常に高いです。"
     },
@@ -3234,6 +3235,220 @@
       "notes": ""
     },
     {
+      "id": "ricoh-gr-iv",
+      "name": "Ricoh GR IV (リコー)",
+      "category": "cameras",
+      "slug": "ricoh-gr-iv",
+      "searchTerms": [
+        "リコー gr iv sdカード",
+        "gr4 microsd おすすめ",
+        "gr iv メモリーカード 何を買う",
+        "gr iii から gr iv sdカード 使える",
+        "ricoh gr iv microsd uhs-i"
+      ],
+      "sdCard": {
+        "type": "microSD（UHS-I）",
+        "minSpeed": "Class 10 / U1（公式はClass 6以上）",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "公式な上限なし（1TBまで動作確認済み）"
+      },
+      "whySpecs": "GR IVはGR IIIのフルサイズSDからmicroSDに変わりました。GR IIIで使っていたSDカードはそのままでは入りません。スロットはUHS-Iなので、UHS-IIのmicroSDを買っても速度は上がらず、リコー公式もUHS-IIは使えないと案内しています。動画はフルHD 60pまでで4Kはなく、公式の推奨はClass 6以上です。つまり速度で悩む必要はほとんどなく、約53GBの内蔵メモリーと合わせてどれだけ容量を持ち歩くかが選択の中心になります。RAW+JPEGで撮り続けるなら128GB以上が安心です。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "GR IIIのSDカードはGR IVで使えますか？",
+          "a": "<b>そのままでは使えません。</b> GR IVはmicroSDスロットに変わったため、GR IIIのフルサイズSDカードは物理的に入りません。逆にGR IV用のmicroSDをSDアダプターに入れればGR IIIで使えます。買い替え時はmicroSDを新しく用意してください。"
+        },
+        {
+          "q": "内蔵メモリーが約53GBあるならカードは不要ですか？",
+          "a": "<b>日常使いなら内蔵メモリーだけでも撮影できますが、カードは入れておくことをおすすめします。</b> 内蔵メモリーが満杯になると撮影が止まり、PCへの取り込みも本体をつなぐ必要があります。カードがあれば旅行先でも入れ替えるだけで容量を確保でき、万一の本体トラブル時にもデータを取り出せます。"
+        }
+      ],
+      "relatedDevices": [
+        "fujifilm-x100vi",
+        "fujifilm-x-half",
+        "leica-q3",
+        "fujifilm-xe5"
+      ],
+      "notes": "2025年9月発売、市場想定価格19.5万円前後。GR III→GR IVでSD→microSDに変更された点が最大の検索動機。公式FAQ: UHS-II不可、動画はClass 6以上推奨、動作確認はSDHC 32GB/SDXC 1TBまで（KIOXIA・SanDisk、2025年9月時点）。連写fpsと動画ビットレートは公式未公表なので書かない。HDF版（2026年1月）とMonochrome版（2026年2月）も同じmicroSD仕様。",
+      "metaDescription": "GR IVはGR IIIと違いmicroSD（UHS-I）仕様。内蔵約53GBとの使い分け、UHS-IIが使えない理由、公式推奨のClass 6と動作確認済み容量をもとにおすすめカードを紹介します。",
+      "imageUrl": "/img/devices/cameras/ricoh-gr-iv.webp"
+    },
+    {
+      "id": "fujifilm-instax-mini-evo",
+      "name": "Fujifilm instax mini Evo (チェキ)",
+      "category": "cameras",
+      "slug": "fujifilm-instax-mini-evo",
+      "searchTerms": [
+        "instax mini evo microsd",
+        "チェキ evo sdカード 何gb",
+        "instax mini evo sdカード 使えない",
+        "インスタックス ミニ エボ メモリーカード",
+        "チェキ evo microsd おすすめ"
+      ],
+      "sdCard": {
+        "type": "microSD / microSDHC",
+        "minSpeed": "Class 10（公式要件なし）",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "16GB",
+          "32GB"
+        ],
+        "maxCapacity": "32GB（公式対応はmicroSDHCまで）"
+      },
+      "whySpecs": "instax mini Evoの内蔵メモリーは約45枚分しかありません。カードなしでも撮ってプリントできますが、1日お出かけすれば簡単に埋まります。富士フイルムの公式仕様はmicroSDとmicroSDHCのみで、microSDXC（64GB以上）は対応に含まれていません。64GBや128GBのカードを買っても認識されない可能性があるため、32GBまでを選ぶのが安全です。1GBあたり約850枚保存できるので32GBで数万枚分、速度はどのClass 10カードでも十分です。大容量より、確実に認識される容量を優先してください。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-ultra-microsd"
+        },
+        {
+          "id": "samsung-evo-select-microsd"
+        },
+        {
+          "id": "kingston-canvas-select"
+        }
+      ],
+      "faq": [
+        {
+          "q": "64GBのmicroSDカードを入れたら認識しません。",
+          "a": "<b>公式対応はmicroSDHC（32GBまで）です。</b> 64GB以上はmicroSDXC規格で、mini Evoの対応リストに含まれていません。32GB以下のmicroSDHCカードに替え、本体メニューでフォーマットしてから使ってください。"
+        },
+        {
+          "q": "プリントするのにmicroSDカードは必要ですか？",
+          "a": "<b>必要ありません。</b> 内蔵メモリーの画像もカードの画像もそのままプリントできます。カードは保存枚数を増やし、PCやスマホに画像を移すためのものです。"
+        }
+      ],
+      "relatedDevices": [
+        "fujifilm-x-half",
+        "ricoh-gr-iv",
+        "canon-g7x-mark-iii"
+      ],
+      "notes": "2021年12月発売、現在も販売中（2025年11月にGENTLE ROSE色追加）。公式仕様は「microSD／microSDHC」のみ、容量上限・速度クラスは未公表。2026年1月発売の「instax mini Evo Cinema」は別製品でmicroSDXC 256GBまで対応（未掲載）。",
+      "metaDescription": "instax mini Evoの公式対応はmicroSD／microSDHC（32GBまで）。64GB以上が認識されない理由と、内蔵約45枚から増やすためのおすすめカードを解説します。",
+      "imageUrl": "/img/devices/cameras/fujifilm-instax-mini-evo.webp"
+    },
+    {
+      "id": "fujifilm-x-half",
+      "name": "Fujifilm X half",
+      "category": "cameras",
+      "slug": "fujifilm-x-half",
+      "searchTerms": [
+        "x half sdカード",
+        "富士フイルム x half メモリーカード おすすめ",
+        "x-hf1 sdカード 容量",
+        "エックスハーフ sdカード 何gb",
+        "x half microsd"
+      ],
+      "sdCard": {
+        "type": "SD（UHS-I）",
+        "minSpeed": "V10 / U1",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "2TB（SDXC）"
+      },
+      "whySpecs": "X halfはコンパクトな見た目からmicroSDと思われがちですが、公式仕様はフルサイズのSDカード（UHS-I対応、SDXCは2TBまで）です。microSDを買う場合はアダプターが必要になります。センサーは1インチ、動画は縦型のフルHD相当で最大50Mbpsなので、V10クラスで足ります。UHS-IIカードを使っても速度は上がりません。フィルムシミュレーションや2in1合成、縦動画をたくさん撮るなら、速度より容量を優先して64GB以上を選んでください。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-sd-uhs1"
+        },
+        {
+          "id": "lexar-professional-633x-sd"
+        },
+        {
+          "id": "sandisk-ultra-sd-uhs1"
+        }
+      ],
+      "faq": [
+        {
+          "q": "X halfはmicroSDカードですか、SDカードですか？",
+          "a": "<b>フルサイズのSDカードです。</b> 公式仕様はSD／SDHC／SDXC（UHS-I対応）で、microSDスロットはありません。手持ちのmicroSDを使うならSDアダプターを使ってください。"
+        },
+        {
+          "q": "X halfの動画にV30カードは必要ですか？",
+          "a": "<b>必須ではありません。</b> X halfの動画は最大50Mbps（約6MB/s）で、V10クラスで余裕があります。V30カードは静止画の書き込みが少し速くなる程度の差です。"
+        }
+      ],
+      "relatedDevices": [
+        "fujifilm-instax-mini-evo",
+        "fujifilm-x100vi",
+        "fujifilm-xm5",
+        "ricoh-gr-iv"
+      ],
+      "notes": "2025年6月発売、店頭予想価格11万円前後。ブリーフでは「microSD」とされていたが公式仕様（fujifilm-x.com X-HF1）はSD UHS-I、SDXC 2TBまで。動画は1080x1440/2160x1440などの縦・正方形フォーマット、ビットレート10/20/50Mbps。",
+      "metaDescription": "X halfはmicroSDではなくフルサイズSD（UHS-I、SDXC 2TBまで）。動画は最大50MbpsなのでV10で十分。必要スペックとおすすめカードを解説します。",
+      "imageUrl": "/img/devices/cameras/fujifilm-x-half.webp"
+    },
+    {
+      "id": "om-system-tg-7",
+      "name": "OM SYSTEM Tough TG-7",
+      "category": "cameras",
+      "slug": "om-system-tg-7",
+      "searchTerms": [
+        "tg-7 sdカード おすすめ",
+        "om system tg-7 sdカード 4k",
+        "tg7 メモリーカード 何gb",
+        "tough tg-7 sdカード 付属",
+        "オリンパス tg-7 sdカード"
+      ],
+      "sdCard": {
+        "type": "SD（UHS-I）",
+        "minSpeed": "V30 / U3",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "公式な上限なし（SDXC対応）"
+      },
+      "whySpecs": "TG-7にはSDカードが付属せず、内蔵メモリーもありません。カードを入れないと1枚も撮れないので、本体と同時に用意する必要があります。4K 30pは約102Mbps（約13MB/s）で記録するため、OM SYSTEMの取扱説明書はUHS-I U3以上を指定しています。フルHD 120fpsなどのハイスピード動画も同じくU3指定です。連写Hは電子シャッターで最大20コマ/秒、RAWで約46枚続くので、書き込みが速いカードほど次の連写までの待ち時間が短くなります。水中や雪山で使うカメラなので、温度や防水をうたうカードを選ぶと安心です。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-sd-uhs1"
+        },
+        {
+          "id": "kingston-canvas-go-pro-sd"
+        },
+        {
+          "id": "lexar-professional-633x-sd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "TG-7にSDカードは付属していますか？",
+          "a": "<b>付属していません。</b> 内蔵メモリーもないので、カードがないと撮影できません。4K動画を撮るならU3（V30）のUHS-I SDカードを本体と一緒に購入してください。"
+        },
+        {
+          "q": "TG-6のSDカードはTG-7でそのまま使えますか？",
+          "a": "<b>使えます。</b> TG-6もTG-7もSD UHS-Iスロットで、4Kの仕様も同じです。U3以上のカードなら買い替え不要です。"
+        }
+      ],
+      "relatedDevices": [
+        "gopro-hero-13",
+        "canon-g7x-mark-iii",
+        "fujifilm-x-half"
+      ],
+      "notes": "2023年10月発売、店頭予想価格7万円前後。公式マニュアル: 4K・ハイスピード動画はUHS-I U3、FHD/HDはClass 10以上。4K 30p約102Mbps、FHD 60p約52Mbps。カード・内蔵メモリーなし。容量上限は公式未公表。",
+      "metaDescription": "TG-7はSDカード別売りで内蔵メモリーなし。4K 30p（約102Mbps）には公式指定のUHS-I U3（V30）が必要。おすすめのSDカードと容量の目安を解説します。",
+      "imageUrl": "/img/devices/cameras/om-system-tg-7.webp"
+    },
+    {
       "id": "raspberry-pi-5",
       "name": "Raspberry Pi 5 (ラズベリーパイ5)",
       "category": "computing-and-tablets",
@@ -4116,7 +4331,10 @@
       ],
       "relatedDevices": [
         "yupiteru-wdt510c",
-        "kenwood-drv-mr760"
+        "kenwood-drv-mr760",
+        "comtec-zdr-251d",
+        "comtec-zdr-550d",
+        "comtec-zdr-101s"
       ],
       "notes": "日本市場シェアNo.1モデル。安価なカードを使用すると頻繁に再起動するトラブルが多いため、高耐久カードのクロスセル率が非常に高いです。"
     },
@@ -4265,7 +4483,9 @@
         }
       ],
       "relatedDevices": [
-        "comtec-zdr035"
+        "comtec-zdr035",
+        "comtec-zdr-750d",
+        "comtec-zdr-880m"
       ],
       "notes": "360度モデルはファイルサイズに対するユーザーの不満（記録時間が短い）が最も多いカテゴリです。「大容量カード」への提案が最も効果的なSEO対策となります。"
     },
@@ -4460,6 +4680,331 @@
         "insta360-x3"
       ],
       "notes": "日本のバイク通勤・ツーリング人口に向けた重要なニッチです。デイトナはバイク用品メーカーの代表格で、信頼度が高いです。"
+    },
+    {
+      "id": "comtec-zdr-251d",
+      "name": "Comtec ZDR-251D (コムテック)",
+      "category": "dash-cams",
+      "slug": "comtec-zdr-251d",
+      "searchTerms": [
+        "zdr-251d sdカード",
+        "コムテック zdr-251d microsd おすすめ",
+        "zdr-251d sdカード 別売り 何gb",
+        "zdr251d 128gb 録画時間",
+        "コムテック 新型 ドラレコ sdカード"
+      ],
+      "sdCard": {
+        "type": "高耐久 microSD（32GB〜128GB）",
+        "minSpeed": "Class 10（公式推奨）",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "128GB (公式)",
+        "testedMaxCapacity": "128GB"
+      },
+      "whySpecs": "ZDR-251Dは2026年10月16日発売の前後2カメラモデルで、<b>microSDカードが付属しません</b>。箱を開けてすぐ録画するには、本体と一緒にカードを用意する必要があります。対応容量は32GB〜128GB、公式推奨はClass 10です。速度要件は低いので、選ぶ基準は速度ではなく耐久性と容量です。前後同時のフルHD録画は常に書き込みが続き、別売りコード（HDROP-14）で駐車監視を使うと車内が高温になる夏場も書き込み続けます。通常のカードは数か月で寿命が来ることがあるため、高耐久仕様のカードを選んでください。録画時間は32GBで約135〜210分、128GBなら約540〜850分です。駐車監視を使うなら128GBをおすすめします。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-max-endurance"
+        },
+        {
+          "id": "samsung-pro-endurance"
+        },
+        {
+          "id": "kingston-high-endurance"
+        }
+      ],
+      "faq": [
+        {
+          "q": "ZDR-251Dにはどの容量のカードを買えばいいですか？",
+          "a": "<b>駐車監視を使うなら128GB、走行中の録画だけなら64GBで十分です。</b> 公式の対応は32GB〜128GBで、128GBなら約540〜850分の録画を残せます。256GBは公式対応外なので避けてください。"
+        },
+        {
+          "q": "コムテック純正以外のmicroSDカードを使っても大丈夫ですか？",
+          "a": "<b>使えますが、コムテックは純正指定カード（CDSシリーズ）以外での不具合は保証対象外としています。</b> また「SDカード寿命告知機能」は指定カードでしか動きません。市販品を使う場合は高耐久仕様を選び、1〜2年を目安に交換してください。"
+        }
+      ],
+      "relatedDevices": [
+        "comtec-zdr-101s",
+        "comtec-zdr-250d",
+        "comtec-zdr035",
+        "comtec-zdr037"
+      ],
+      "notes": "2026年10月16日発売、オープン価格（事前情報 約29,800円）。カード別売りが最大の検索動機。公式: 32GB〜128GB対応 Class 10推奨、SDHC/SDXC・V30等の区別やFAT/exFATは未公表。ビットレート未公表。ハード仕様はZDR-250Dと同一（カード無し版と推定、公式の後継表記はなし）。対応表PDFではCDS-xxGD（発売予定）のみに紐付け。",
+      "metaDescription": "ZDR-251DはmicroSDカード別売り。対応は32GB〜128GB、Class 10推奨。前後2カメラと駐車監視に耐える高耐久カードと、容量ごとの録画時間を解説します。",
+      "imageUrl": "/img/devices/dashcams/comtec-zdr-251d.webp"
+    },
+    {
+      "id": "comtec-zdr-101s",
+      "name": "Comtec ZDR-101S (コムテック)",
+      "category": "dash-cams",
+      "slug": "comtec-zdr-101s",
+      "searchTerms": [
+        "zdr-101s sdカード",
+        "コムテック zdr-101s microsd おすすめ",
+        "zdr-101s sdカード 付属 なし",
+        "zdr101s 64gb 録画時間",
+        "コムテック 1カメラ ドラレコ sdカード"
+      ],
+      "sdCard": {
+        "type": "高耐久 microSD（32GB〜128GB）",
+        "minSpeed": "Class 10（公式推奨）",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "32GB",
+          "64GB"
+        ],
+        "maxCapacity": "128GB (公式)",
+        "testedMaxCapacity": "128GB"
+      },
+      "whySpecs": "ZDR-101Sは2026年10月16日発売の前方1カメラモデルで、<b>microSDカードは別売り</b>です。1カメラなので書き込み量は2カメラ機の半分ほどで、32GBでも約316〜496分、64GBなら約620〜975分録画できます。公式の対応は32GB〜128GB、Class 10推奨です。速度はどのカードでも足りますが、ドライブレコーダーは毎日何時間も上書きを繰り返すため、通常のカードでは寿命が先に来ます。高耐久仕様のカードを選べば、数年単位で交換の手間を減らせます。なおこのモデルには「SDカード寿命告知機能」がないので、起動時のSDカードチェックでエラーが出たら交換の合図と考えてください。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-max-endurance"
+        },
+        {
+          "id": "samsung-pro-endurance"
+        },
+        {
+          "id": "kingston-high-endurance"
+        }
+      ],
+      "faq": [
+        {
+          "q": "ZDR-101Sは32GBで足りますか？",
+          "a": "<b>通勤や買い物程度なら32GBで足ります。</b> 1カメラなので32GBでも約5〜8時間分残せます。別売りコードで駐車監視を使う場合や、長距離ドライブの記録を残したい場合は64GB以上を選んでください。"
+        },
+        {
+          "q": "カードの寿命はどうやって分かりますか？",
+          "a": "<b>ZDR-101SにはSDカード寿命告知機能がありません。</b> 起動時のSDカードチェックでエラーが出る、または録画が途切れるようになったら交換時期です。本体でのフォーマットで直らなければ新しい高耐久カードに替えてください。"
+        }
+      ],
+      "relatedDevices": [
+        "comtec-zdr-251d",
+        "comtec-zdr-550d",
+        "comtec-zdr035"
+      ],
+      "notes": "2026年10月16日発売、オープン価格（事前情報 約19,800円）。カード別売り。公式: 32GB〜128GB Class 10推奨、SD寿命告知機能なし、SDカードチェックあり。MOV 1分ファイル（128GB時は3分）。対応表PDFではCDS-xxGB系に紐付け。後継関係は公式未表記。",
+      "metaDescription": "ZDR-101SはmicroSDカードが付属しません。対応は32GB〜128GB、Class 10推奨。1カメラの録画時間と、長持ちする高耐久カードの選び方を解説します。",
+      "imageUrl": "/img/devices/dashcams/comtec-zdr-101s.webp"
+    },
+    {
+      "id": "comtec-zdr-550d",
+      "name": "Comtec ZDR-550D (コムテック)",
+      "category": "dash-cams",
+      "slug": "comtec-zdr-550d",
+      "searchTerms": [
+        "zdr-550d sdカード 交換",
+        "コムテック zdr-550d microsd 128gb",
+        "zdr-550d 付属 sdカード 64gb 足りない",
+        "zdr550d 駐車監視 sdカード",
+        "zdr-550d sdカード おすすめ"
+      ],
+      "sdCard": {
+        "type": "高耐久 microSD（32GB〜128GB）",
+        "minSpeed": "Class 10（公式推奨）",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "128GB (公式)",
+        "testedMaxCapacity": "128GB"
+      },
+      "whySpecs": "ZDR-550Dは前後ともSTARVISセンサーを搭載した2026年4月発売モデルで、64GBのmicroSDカードが付属します。付属カードで約270〜425分録画できるので、まずはそのまま使えます。カードを買い足すのは、容量を128GBに増やして駐車監視の記録を長く残したいときと、付属カードが寿命を迎えたときです。公式対応は32GB〜128GB、Class 10推奨なので、256GBは使えません。前後フルHDの常時録画に加えて駐車監視（別売りHDROP-14）を使うと、夏の車内で一日中書き込み続けます。交換するときは、付属品と同じ64GBの汎用品ではなく、高耐久仕様の128GBにするのが一番無駄がありません。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-max-endurance"
+        },
+        {
+          "id": "samsung-pro-endurance"
+        },
+        {
+          "id": "kingston-high-endurance"
+        }
+      ],
+      "faq": [
+        {
+          "q": "付属の64GBカードから128GBに替える意味はありますか？",
+          "a": "<b>駐車監視を使うならあります。</b> 128GBにすると録画時間が約540〜850分に倍増し、駐車中の映像が走行映像で上書きされる前に確認できる余裕が生まれます。走行中の記録だけなら付属の64GBで困りません。"
+        },
+        {
+          "q": "付属カードはいつ交換すべきですか？",
+          "a": "<b>コムテックは1〜2年を目安に交換をすすめています。</b> ZDR-550Dには純正指定カード向けの「SDカード寿命告知機能」があり、表示が出たら交換時期です。市販の高耐久カードに替える場合はこの機能は働かないので、録画エラーが出始めたら交換してください。"
+        }
+      ],
+      "relatedDevices": [
+        "comtec-zdr-750d",
+        "comtec-zdr-250d",
+        "comtec-zdr-251d",
+        "comtec-zdr035"
+      ],
+      "notes": "2026年4月10日発売、64GB Class 10付属。公式: 32GB〜128GB対応。前後1/2.8型STARVIS 200万画素F1.8、HDR固定、ナイトビジョン固定。「交換」「容量アップ」検索を狙うページ。対応表PDFには未掲載（指定CDSカード不明）。",
+      "metaDescription": "ZDR-550Dの付属64GBカードの交換と128GBへの容量アップを解説。公式対応は32GB〜128GB。駐車監視に耐える高耐久microSDと録画時間の目安を紹介します。",
+      "imageUrl": "/img/devices/dashcams/comtec-zdr-550d.webp"
+    },
+    {
+      "id": "comtec-zdr-750d",
+      "name": "Comtec ZDR-750D (コムテック 4K)",
+      "category": "dash-cams",
+      "slug": "comtec-zdr-750d",
+      "searchTerms": [
+        "zdr-750d sdカード 128gb",
+        "コムテック zdr-750d 4k sdカード おすすめ",
+        "zdr-750d 録画時間 64gb 短い",
+        "zdr750d microsd 交換",
+        "コムテック 4k ドラレコ sdカード 容量"
+      ],
+      "sdCard": {
+        "type": "高耐久 microSD（32GB〜128GB）",
+        "minSpeed": "Class 10（公式推奨）",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "128GB"
+        ],
+        "maxCapacity": "128GB (公式)",
+        "testedMaxCapacity": "128GB"
+      },
+      "whySpecs": "ZDR-750Dはコムテックの4Kフラッグシップで、64GBのmicroSDカードが付属します。ただし4K最高画質で録ると付属の64GBは<b>約160分</b>で一周します。前後フルHD機の半分ほどしか残らないので、2026年4月のラインナップで一番カードの増量が効くモデルです。公式対応は32GB〜128GBなので、選択肢は実質128GB一択です。128GBにしても4K最高画質で約320分、初期設定のWQHDなら約460分です。4Kの高ビットレートを一日中書き込み続けるため、普通のカードでは寿命がすぐ来ます。高耐久仕様の128GBを選び、1〜2年ごとに交換するつもりでいてください。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-max-endurance"
+        },
+        {
+          "id": "samsung-pro-endurance"
+        },
+        {
+          "id": "kingston-high-endurance"
+        }
+      ],
+      "faq": [
+        {
+          "q": "ZDR-750Dで4K録画すると付属の64GBでは何分録れますか？",
+          "a": "<b>最高画質で約160分です。</b> 初期設定（前WQHD・後フルHD）なら約230分です。駐車監視まで使うなら128GBに替えるか、画質設定をWQHDに落として録画時間を稼いでください。"
+        },
+        {
+          "q": "256GBのカードは使えますか？",
+          "a": "<b>公式対応は128GBまでです。</b> 動作したという報告があっても保証外で、事故の瞬間に録れていないリスクがあります。128GBの高耐久カードにしてください。"
+        }
+      ],
+      "relatedDevices": [
+        "comtec-zdr-550d",
+        "comtec-zdr-880m",
+        "comtec-zdr037"
+      ],
+      "notes": "2026年4月10日発売、64GB Class 10付属。公式: 32GB〜128GB対応。前4K（1/2.8型STARVIS 830万画素）後フルHD。公式録画時間: 64GB最高画質約160分、初期設定約230分、128GB約320〜865分。ビットレート未公表。",
+      "metaDescription": "4KのZDR-750Dは付属64GBで約160分。公式上限128GBへの交換で録画時間を倍にする方法と、4K常時録画に耐える高耐久microSDを解説します。",
+      "imageUrl": "/img/devices/dashcams/comtec-zdr-750d.webp"
+    },
+    {
+      "id": "comtec-zdr-250d",
+      "name": "Comtec ZDR-250D (コムテック)",
+      "category": "dash-cams",
+      "slug": "comtec-zdr-250d",
+      "searchTerms": [
+        "zdr-250d sdカード 交換",
+        "コムテック zdr-250d microsd おすすめ",
+        "zdr-250d 128gb 使える",
+        "zdr250d 付属 sdカード 寿命",
+        "zdr-250d zdr-251d 違い"
+      ],
+      "sdCard": {
+        "type": "高耐久 microSD（32GB〜128GB）",
+        "minSpeed": "Class 10（公式推奨）",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "128GB (公式)",
+        "testedMaxCapacity": "128GB"
+      },
+      "whySpecs": "ZDR-250Dは2026年4月発売のコンパクトな前後2カメラモデルで、64GBのmicroSDカードが付属します。付属カードで約270〜425分録画でき、走行中の記録だけなら買い足しは不要です。カード選びが必要になるのは、駐車監視（別売りHDROP-14）のために128GBへ増やすときと、付属カードが寿命を迎えたときです。公式対応は32GB〜128GB、Class 10推奨で、速度より耐久性で選びます。本体は小型ですが前後フルHDを常時書き込むので、カードへの負荷は上位機種と変わりません。交換時は高耐久仕様の128GBにすれば、録画時間と寿命を同時に伸ばせます。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-max-endurance"
+        },
+        {
+          "id": "samsung-pro-endurance"
+        },
+        {
+          "id": "kingston-high-endurance"
+        }
+      ],
+      "faq": [
+        {
+          "q": "ZDR-250DとZDR-251Dの違いは何ですか？",
+          "a": "<b>カメラ仕様と録画時間は同じで、ZDR-251DはmicroSDカードが付属しません。</b> 手持ちの高耐久カードがあるならZDR-251D、手ぶらで始めたいならカード付きのZDR-250Dが手間なしです。公式に後継と明記されてはいません。"
+        },
+        {
+          "q": "付属の64GBカードは他のドラレコでも使えますか？",
+          "a": "<b>コムテック独自のファイルシステムでフォーマットされています。</b> 他機種で使うには、その機種でフォーマットし直してください。ZDR-250Dに戻すときも本体で再フォーマットが必要です。"
+        }
+      ],
+      "relatedDevices": [
+        "comtec-zdr-251d",
+        "comtec-zdr-550d",
+        "comtec-zdr035"
+      ],
+      "notes": "2026年4月10日発売、64GB Class 10付属。公式: 32GB〜128GB対応。ZDR-550DからSTARVISとナイトビジョンを省いた仕様。ZDR-251Dとハード仕様が同一（カード有無の差）。",
+      "metaDescription": "ZDR-250Dの付属64GB microSDの交換時期と128GBへの増量を解説。公式対応は32GB〜128GB、Class 10推奨。ZDR-251Dとの違いも説明します。",
+      "imageUrl": "/img/devices/dashcams/comtec-zdr-250d.webp"
+    },
+    {
+      "id": "comtec-zdr-880m",
+      "name": "Comtec ZDR-880M (コムテック ミラー型)",
+      "category": "dash-cams",
+      "slug": "comtec-zdr-880m",
+      "searchTerms": [
+        "zdr-880m sdカード 交換",
+        "コムテック zdr-880m microsd 128gb",
+        "zdr-880m ミラー型 sdカード おすすめ",
+        "zdr880m 付属 sdカード 容量",
+        "コムテック ミラー型 ドラレコ sdカード"
+      ],
+      "sdCard": {
+        "type": "高耐久 microSD（32GB〜128GB）",
+        "minSpeed": "Class 10（公式推奨）",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "128GB (公式)",
+        "testedMaxCapacity": "128GB"
+      },
+      "whySpecs": "ZDR-880Mは10.66インチのミラー型で、前方は別体カメラ、後方はミラーに映す前後2カメラ構成です。2026年4月発売で64GBのmicroSDカードが付属し、約270〜425分録画できます。公式対応は32GB〜128GB、Class 10推奨です。ミラー型は本体がフロントガラス上部に密着するため、夏場はダッシュボード付近より高温になりやすく、カードの熱劣化が進みます。駐車監視は専用の別売りコード（CDOP-01P）で最長24時間まで設定でき、使うなら128GBが安心です。交換するときは高耐久仕様を選び、本体でフォーマットしてから使ってください。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-max-endurance"
+        },
+        {
+          "id": "samsung-pro-endurance"
+        },
+        {
+          "id": "kingston-high-endurance"
+        }
+      ],
+      "faq": [
+        {
+          "q": "ZDR-880Mのカードはどこに入れますか？",
+          "a": "<b>カードスロットはミラー本体側にあります。</b> 前方の別体カメラにはスロットがありません。取り出すときは電源を切ってから抜いてください。駐車監視中は通電しているので、駐車中に抜く前に録画停止を確認します。"
+        },
+        {
+          "q": "付属の64GBから128GBに替えると録画時間はどれくらいになりますか？",
+          "a": "<b>約540〜850分で、ちょうど2倍です。</b> 画質設定で幅があり、初期設定なら約540分前後です。駐車監視を長時間使う場合は128GBをおすすめします。"
+        }
+      ],
+      "relatedDevices": [
+        "comtec-zdr-750d",
+        "comtec-zdr-550d",
+        "smart-mirror-generic"
+      ],
+      "notes": "2026年4月10日発売、64GB Class 10付属。公式: 32GB〜128GB対応。前後1/2.8型200万画素F1.8（PureCel Plus、STARVISではない）、2カメラ構成（kakakuの「3カメラ」表記は誤り）。駐車監視はCDOP-01P。",
+      "metaDescription": "ミラー型ZDR-880Mの付属64GBカードの交換と128GBへの増量を解説。公式対応は32GB〜128GB。高温になるミラー型に向く高耐久microSDを紹介します。",
+      "imageUrl": "/img/devices/dashcams/comtec-zdr-880m.webp"
     },
     {
       "id": "dji-mini-4-pro",
@@ -7085,6 +7630,114 @@
         "iphone-15"
       ],
       "notes": ""
+    },
+    {
+      "id": "sony-xperia-10-viii",
+      "name": "Sony Xperia 10 VIII",
+      "category": "スマートフォン",
+      "slug": "sony-xperia-10-viii",
+      "searchTerms": [
+        "xperia 10 viii microsd おすすめ",
+        "エクスペリア 10 viii sdカード 何gb",
+        "xperia 10 mark 8 microsd 2tb",
+        "xperia 10 viii sdカード 入れ方",
+        "so-52g microsd"
+      ],
+      "sdCard": {
+        "type": "microSDXC（UHS-I）",
+        "minSpeed": "V30 / U3 / A2",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "2TB（公式）",
+        "minAppPerformance": "A2（推奨）"
+      },
+      "whySpecs": "Xperia 10 VIIIの内蔵ストレージは128GBの1種類だけで、256GBや512GBモデルは選べません。その代わりmicroSDXCは最大2TBまで公式対応しています。4K動画やRAW写真を内蔵ストレージに溜めると128GBはすぐ埋まるので、写真と動画の保存先をカードに変えるのが基本です。4K撮影をカードに直接書き込むならV30、ゲームやアプリのデータを置くなら細かい読み書きが速いA2対応が効きます。SIMトレイは1枚で、nanoSIM 1枚とmicroSD 1枚を同時に入れられます。eSIMと併用すればデュアルSIMのままカードも使えます。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "microSDを入れるとSIMが2枚使えなくなりますか？",
+          "a": "<b>物理SIMは1枚だけですが、eSIMと併用できます。</b> トレイにはnanoSIM 1枚とmicroSD 1枚が入ります。2回線使いたい場合は1回線をeSIMにすれば、カードを入れたままデュアルSIMで使えます。"
+        },
+        {
+          "q": "Xperia 10 VIIIに1TBや2TBのカードは本当に使えますか？",
+          "a": "<b>ソニー公式が2TBまでのmicroSDXCに対応と明記しています。</b> ただし大容量カードは偽物も多いので、Amazonの正規販売元から購入し、挿入後に本体でフォーマットしてから使ってください。"
+        }
+      ],
+      "relatedDevices": [
+        "sharp-aquos-sense10",
+        "google-pixel-8",
+        "iphone-15"
+      ],
+      "notes": "2026年10月8日発売、SIMフリー99,000円。docomo SO-52G / au SOG18 / SoftBank A602SO。8GB/128GBのみ。ソニー公式: microSDXC 2TBまで（2026年9月時点）。Xperia 1 VII/VIII、10 VIIも2TB対応。4Kのフレームレート上限（30か60か）は公式未確認なので書かない。",
+      "metaDescription": "Xperia 10 VIIIは内蔵128GBのみでmicroSDXC最大2TB対応（ソニー公式）。4K動画用のV30、アプリ用のA2など、おすすめカードと容量の選び方を解説します。",
+      "imageUrl": "/img/devices/smartphones/sony-xperia-10-viii.webp"
+    },
+    {
+      "id": "sharp-aquos-sense10",
+      "name": "AQUOS sense10 (シャープ)",
+      "category": "スマートフォン",
+      "slug": "sharp-aquos-sense10",
+      "searchTerms": [
+        "aquos sense10 microsd おすすめ",
+        "アクオス センス10 sdカード 何gb",
+        "aquos sense10 sdカード 対応",
+        "sh-m33 microsd",
+        "aquos sense10 sdカード 入れ方"
+      ],
+      "sdCard": {
+        "type": "microSDXC（UHS-I）",
+        "minSpeed": "V30 / U3 / A2",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "2TB（公式）",
+        "minAppPerformance": "A2（推奨）"
+      },
+      "whySpecs": "AQUOS sense10にはmicroSDスロットがあり、シャープ公式でmicroSDXC 2TBまでの対応が明記されています。前モデルのsense9は1TBまでだったので上限が倍になりました。キャリア版は6GB/128GBだけの場合が多く、写真や動画を本体に溜めるとすぐ足りなくなります。sense10は長く使う前提で買われることが多い機種なので、カードも書き換えに強いものを選ぶと安心です。4K動画をカードに保存するならV30、アプリを移すならA2対応を目安にしてください。コスパ重視の機種なので、128GBや256GBの定番カードで十分です。",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-evo-select-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "AQUOS sense10にmicroSDスロットはありますか？",
+          "a": "<b>あります。</b> シャープ公式仕様で外部メモリはmicroSDXC（最大2TB）と記載されています。sense9は1TBまでだったので、2TBまで使えるのはsense10からです。"
+        },
+        {
+          "q": "sense9で使っていたmicroSDをsense10に移せますか？",
+          "a": "<b>移せます。</b> 両機種ともmicroSDXC対応です。ただし移行前に写真をバックアップし、sense10に入れたあとは「内部ストレージ化」せず外部ストレージとして使うほうが、機種変更時にトラブルが起きません。"
+        }
+      ],
+      "relatedDevices": [
+        "sony-xperia-10-viii",
+        "google-pixel-8",
+        "iphone-15"
+      ],
+      "notes": "2025年11月13日発売、シャープ直販62,700円（6/128）・69,300円（8/256）。SIMフリーSH-M33、docomo/au/SoftBank/楽天/J:COM。シャープ公式: microSDXC 最大2TB（sense9は1TB、wish5/R10は2TB）。SIMトレイ共用かどうかは未確認。",
+      "metaDescription": "AQUOS sense10はmicroSDXC最大2TB対応（シャープ公式）。sense9の1TBから倍増。4K動画やアプリ用に向くV30・A2カードと容量の目安を解説します。",
+      "imageUrl": "/img/devices/smartphones/sharp-aquos-sense10.webp"
     }
   ]
 }
