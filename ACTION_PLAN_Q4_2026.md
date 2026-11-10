@@ -46,7 +46,7 @@ Owner tags: **(P)** Pietro, needs account access or a business decision. **(D)**
 | F5 | Product schema claims fixed price + InStock on Amazon *search* URLs | `generateProductSchema()` in `scripts/generator/helpers.js:661`, plus `generate-reader-pages.js:210` and `generate-car-pages.js:155`. 564 offers site-wide | Risk under Google's structured data policies, and prices are stale |
 | F6 | Search URLs instead of product URLs | 62 of 70 cards use `amazonSearchUrl`. Only 1 has `amazonDirectUrl` | Extra step before purchase, lower conversion |
 | F7 | Affiliate tags hardcoded in about 150 places | `data/sdcards.json` (75), `data/sdcards-ja.json` (37), 10 each in `generate-device-pages.js`, `generate-guides.js`, `generate-resource-pages.js`, 3 in `amazon-badges-generator.js` | Can't switch store or tag per locale or section without a central link builder |
-| F8 | About 760 translated templated pages of unproven value | JA had 210 impressions/week, 0 clicks. DE/FR/IT have no data yet | "Scaled content" risk and maintenance cost |
+| F8 | About 760 translated templated pages of unproven value | JA had 210 impressions/week, 0 clicks at audit time. Since the `sdcc-22` fix, JA earns: 138 Amazon clicks, 17 shipped items, ¥4,553 from Oct 11 to Nov 9. DE/FR/IT have no data yet | "Scaled content" risk and maintenance cost |
 | F9 | Templated FAQ rules produce shaky claims | e.g. Steam Deck "Is V30 required? Yes" and "Not below V30" | Trust and accuracy |
 | F11 | About 54 pages run no ads | `card-page.html`, `cards-index.html`, `car-nav.html`, `cars-index.html`, `compare.html` in `src/templates/` lack `{{GROW_SCRIPT}}`: 34 card pages, 15 car pages, compare, 2 indexes | Lost Mediavine revenue on high-intent pages |
 | F10 | Repo clutter | About 190 status `.md` files in root, junk files from shell accidents (`console.log(r.name`, `!jaIds.includes(id))`, `$null`, `0])`), `devices.json.bak`, `tmp_onex_home.html` | Slows every maintainer and agent |
@@ -69,7 +69,7 @@ Owner tags: **(P)** Pietro, needs account access or a business decision. **(D)**
 
 ### Account actions (P)
 
-- [x] **(P)** Get a working Amazon JP tag. Done 2026-10-05: new tag `sdcc-22` replaces the dead `sd-cc-22` in `data/sdcards-ja.json`. Amazon closes accounts with no qualifying sales in the first 180 days, so watch for a first JP sale.
+- [x] **(P)** Get a working Amazon JP tag. Done 2026-10-05: new tag `sdcc-22` replaces the dead `sd-cc-22` in `data/sdcards-ja.json`. Amazon closes accounts with no qualifying sales in the first 180 days, so watch for a first JP sale. First sales confirmed: 17 items shipped Oct 11 to Nov 9, 0 returns, so the 180-day risk is cleared.
 - [ ] **(P)** Apply to Amazon Associates for UK, CA, DE, FR, IT (and ES if a Spanish locale is ever planned). Each marketplace issues its own tag. Record tags in the table in section 9.
 - [ ] **(P)** Once approved, link the accounts to the US account and turn on Amazon OneLink. Check which marketplaces OneLink currently supports. Fallback if coverage is poor: Geniuslink (paid, covers all stores).
 - [ ] **(P)** In the US Associates dashboard, create per-section tracking IDs (Amazon allows up to 100): `sdcc-device-20`, `sdcc-card-20`, `sdcc-calc-20`, `sdcc-guide-20`, `sdcc-compare-20`, `sdcc-reader-20`, `sdcc-car-20`. Exact names are up to you; put the final list in section 9.
@@ -189,7 +189,8 @@ Baseline gets filled in at the end of Sprint 1, once analytics exists.
 | Organic clicks / week | GSC | TBD | 2x baseline |
 | Site CTR | GSC | 0.30% (Jan 2026) | 0.6% |
 | Affiliate clicks / 1,000 sessions | GA4 `affiliate_click` | TBD | +50% |
-| Affiliate revenue / month, by marketplace | Associates dashboards | US only | 4+ marketplaces earning |
+| Affiliate revenue / month, by marketplace | Associates dashboards | US, plus JP ¥4,553 (Oct 11 to Nov 9) | 4+ marketplaces earning |
+| JP Amazon clicks / conversion / earnings per click | Associates JP (`sdcc-22`) | 138 / 12% / ¥33 (Oct 11 to Nov 9) | Clicks 2x at 10%+ conversion |
 | Ad RPM, pages per session | Mediavine | TBD | Pages per session +20% |
 | Email subscribers | Grow.me | 0 | 1,000 |
 | Referring domains | GSC Links / Ahrefs free | TBD | +30 |
