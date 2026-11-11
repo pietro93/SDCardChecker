@@ -2564,7 +2564,8 @@
         "fujifilm-x100v",
         "fujifilm-xe5",
         "leica-q3",
-        "sony-a6700"
+        "sony-a6700",
+        "ricoh-gr-iv"
       ],
       "notes": "The most hyped camera of 2024. Known for its retro design and exceptional image quality. Extremely high search volume for accessories due to its popularity and limited availability.",
       "imageUrl": "/img/devices/cameras/fujifilm-x100vi.webp",
@@ -5060,6 +5061,61 @@
       ],
       "notes": "Announced November 2025. 32.5MP, 40 fps electronic, 12 fps mechanical, 7K/60 RAW Light internal, Open Gate 7K/30. Canon Europe: one CFexpress Type B slot, one SD UHS-II slot. OWC blog: SD slot supports UHS-II V90; CFexpress up to 8TB. VPG 400 is third-party advice for 7K RAW, not a Canon spec line. The format question (CFexpress vs SD) is the search angle.",
       "imageUrl": "/img/devices/cameras/canon-eos-r6-mark-iii.webp"
+    },
+    {
+      "id": "ricoh-gr-iv",
+      "name": "Ricoh GR IV",
+      "category": "Cameras",
+      "slug": "ricoh-gr-iv",
+      "searchTerms": [
+        "ricoh gr iv sd card",
+        "gr iv microsd card",
+        "best microsd for ricoh gr iv",
+        "gr iii sd card in gr iv",
+        "ricoh gr iv memory card",
+        "ricoh gr iv hdf sd card"
+      ],
+      "sdCard": {
+        "type": "microSD (UHS-I)",
+        "minSpeed": "Class 10 / U1 (Ricoh says Class 6 or faster)",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "No official limit (Ricoh has tested up to 1TB)"
+      },
+      "whySpecs": "The GR IV moved from the full-size SD slot of the GR III to <b>microSD</b>, so your GR III cards won't fit. The slot is UHS-I, which tops out at 104 MB/s. A UHS-II microSD still works but runs at UHS-I speed, so the extra cost buys nothing in this camera. Video stops at Full HD and Ricoh asks for Class 6 or faster, so speed is rarely the problem. The real choice is capacity: the camera has about 53GB built in, and a 128GB or larger card gives you room for a trip of RAW+JPEG shooting without offloading.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I use my GR III SD card in the GR IV?",
+          "a": "<b>No.</b> The GR IV takes microSD, so a full-size SD card won't fit. It works the other way round: a GR IV microSD in an SD adapter works in a GR III."
+        },
+        {
+          "q": "Do I need a card if the GR IV has about 53GB built in?",
+          "a": "<b>You can shoot without one, but a card is worth having.</b> When internal memory fills up the camera stops shooting, and getting files off means connecting the camera itself. A card lets you swap storage in seconds and pull files straight into a reader."
+        }
+      ],
+      "relatedDevices": [
+        "fujifilm-x100vi",
+        "fujifilm-xe5",
+        "leica-q3",
+        "canon-g7x-mark-iii"
+      ],
+      "notes": "Launched September 2025. Main search angle: SD to microSD change from GR III. Ricoh spec sheet: microSD/SDHC/SDXC UHS-I, approx. 53GB internal. Ricoh FAQ: Class 6+ for video; tested SDHC 32GB to SDXC 1TB (KIOXIA, SanDisk, Sept 2025). Ricoh does not explicitly ban UHS-II; it runs at UHS-I speed. Burst fps and video bitrate not published, so don't state them. HDF and Monochrome editions share the same card spec (covered via searchTerms).",
+      "metaDescription": "The Ricoh GR IV uses microSD (UHS-I), not the full-size SD of the GR III. About 53GB built in, Class 6+ for video, tested to 1TB. Best cards and capacity.",
+      "imageUrl": "/img/devices/cameras/ricoh-gr-iv.webp"
     },
     {
       "id": "raspberry-pi-5",
@@ -11438,8 +11494,8 @@
     }
   ],
   "metadata": {
-    "generated": "2026-10-13T14:40:07.388Z",
-    "totalDevices": 230,
+    "generated": "2026-11-11T01:31:10.621Z",
+    "totalDevices": 231,
     "categories": [
       "3D Printers & Fabrication",
       "Action Cameras",

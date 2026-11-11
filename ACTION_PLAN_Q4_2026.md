@@ -104,6 +104,33 @@ Owner tags: **(P)** Pietro, needs account access or a business decision. **(D)**
 
 **Done when:** Deal pages are indexed (check GSC URL inspection) by November 10 and the email list is collecting sign-ups.
 
+**Status 2026-11-10:** Not started. No `/deals/` pages exist in any locale, and the November 10 indexing target has passed. Ship a smaller version now: the hub plus 2 or 3 category pages (gaming handhelds, Switch 2 / microSD Express, action cams), so Google can still crawl them before November 27.
+
+### JP growth (added 2026-11-10, from first Amazon JP results)
+
+JP converts at 12% (17 items from 138 clicks, Oct 11 to Nov 9), but that's only about 4.6 clicks a day. The problem is traffic and click-through, not conversion, so more JP clicks should earn at about the same rate.
+
+- [ ] **(D)** Switch the JA top cards from `amazonSearchUrl` to direct amazon.co.jp product links (F6, JA first). Today all 37 cards in `data/sdcards-ja.json` use search URLs and none has an ASIN or `amazonDirectUrl`. Start with the cards that appear most on top JA device pages. Check each ASIN on amazon.co.jp: JP listings often differ from US ones. Keep `sdcc-22` on every link.
+- [ ] **(D)** Make JA versions of the deals pages (`/ja/deals/` plus the same category pages), linking to amazon.co.jp with `sdcc-22`. Amazon JP's Black Friday usually runs in late November, so JA ships alongside EN, not after. Copy covers price per GB for each tier on amazon.co.jp and how to spot fakes. No sale prices we can't check live.
+- [ ] **(D)** Link `/ja/deals/` from the JA home page and the top JA device pages during the sale.
+
+**Done when:** The top JA cards link straight to product pages, and `/ja/deals/` is live and submitted in GSC before Amazon JP's Black Friday starts.
+
+### Device gaps (checked 2026-11-10)
+
+Already live in JA (commit `e53a64f`): Comtec ZDR-251D, ZDR-101S (sold without a card since Oct 16), ZDR-250D, ZDR-550D, ZDR-750D, ZDR-880M, Ricoh GR IV, Fujifilm instax mini Evo, Fujifilm X half, OM SYSTEM TG-7, Sony Xperia 10 VIII, AQUOS sense10 (slot confirmed: microSDXC up to 2TB per Sharp).
+
+Still open, in this order:
+
+- [ ] **(D)** Link the new Comtec pages to and from the older ZDR035 / ZDR037 pages in `related devices`. Make sure the ZDR-251D and ZDR-101S copy says the box has no card.
+- [ ] **(D)** EN: Ricoh GR IV (moved from full-size SD to microSD UHS-I, about 53GB built-in storage; GR III owners need a new card). There's no GR page in EN at all.
+- [ ] **(D)** EN: Sony Xperia 10 VIII (microSD up to 2TB, sold in the UK and parts of Europe). EN only has Xperia 1 VI.
+- [ ] **(D)** EN: Fujifilm instax mini Evo, Fujifilm X half, OM SYSTEM TG-7. Reuse the JA spec research, but check specs against the manufacturers' pages first.
+- [ ] **(D)** TP-Link Tapo cameras, EN and JA. EN has only 3 security cameras (Wyze Cam v3, Eufy SoloCam S340, Reolink E1 Pro), and Tapo sells well in Japan.
+- [ ] **(P)** Decide on car navigation (Carrozzeria, Panasonic Strada, Kenwood 彩速ナビ). "ナビ SDカード" gets a lot of searches, but much of it is about the maker's own map-update cards, which doesn't fit the format. Look at the GSC/keyword split before building anything.
+
+Walkman NW-A306 and NW-ZX707 are already in EN. Check whether newer models have replaced them before adding JA versions.
+
 ---
 
 ## 5. Phase 3: User value and new search demand (Nov to Dec 2026)
