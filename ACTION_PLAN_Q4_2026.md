@@ -123,7 +123,7 @@ Already live in JA (commit `e53a64f`): Comtec ZDR-251D, ZDR-101S (sold without a
 Still open, in this order:
 
 - [ ] **(D)** Link the new Comtec pages to and from the older ZDR035 / ZDR037 pages in `related devices`. Make sure the ZDR-251D and ZDR-101S copy says the box has no card.
-- [ ] **(D)** EN: Ricoh GR IV (moved from full-size SD to microSD UHS-I, about 53GB built-in storage; GR III owners need a new card). There's no GR page in EN at all.
+- [x] **(D)** EN: Ricoh GR IV. Done 2026-11-11: `/categories/cameras/ricoh-gr-iv/`, linked from the X100VI page. Reuses the existing hero image. Ricoh doesn't say UHS-II cards fail, only that the slot is UHS-I, so the copy says UHS-II runs at UHS-I speed. (The JA page says UHS-II is unusable; worth correcting.)
 - [ ] **(D)** EN: Sony Xperia 10 VIII (microSD up to 2TB, sold in the UK and parts of Europe). EN only has Xperia 1 VI.
 - [ ] **(D)** EN: Fujifilm instax mini Evo, Fujifilm X half, OM SYSTEM TG-7. Reuse the JA spec research, but check specs against the manufacturers' pages first.
 - [ ] **(D)** TP-Link Tapo cameras, EN and JA. EN has only 3 security cameras (Wyze Cam v3, Eufy SoloCam S340, Reolink E1 Pro), and Tapo sells well in Japan.
