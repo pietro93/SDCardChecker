@@ -237,6 +237,7 @@
     "name": "Samsung Galaxy S23 / S23+",
     "category": "Smartphones",
     "slug": "samsung-galaxy-s23",
+    "customTitle": "Does the Galaxy S23 Have an SD Card Slot? No, Use a USB-C Reader",
     "metaDescription": "The Samsung Galaxy S23 has no microSD slot. Samsung dropped expandable storage from the Galaxy S series starting with the S21.",
     "searchTerms": [
       "samsung galaxy s23",
@@ -290,6 +291,7 @@
     "name": "Google Pixel 8 / 8 Pro",
     "category": "Smartphones",
     "slug": "google-pixel-8",
+    "customTitle": "Does the Pixel 8 Have an SD Card Slot? No, Use a USB-C Reader",
     "metaDescription": "No Pixel phone has ever had a microSD slot, including the 8 and 8 Pro. Here's why Google leans on cloud backup, and how storage tiers differ.",
     "searchTerms": [
       "google pixel 8",
@@ -377,10 +379,65 @@
       }
     ],
     "relatedDevices": [
+      "sony-xperia-10-viii",
       "samsung-galaxy-a55-5g",
       "moto-g-stylus-5g-2025"
     ],
     "imageUrl": "/img/devices/smartphones/sony-xperia-1-vi.webp"
+  },
+  {
+    "id": "sony-xperia-10-viii",
+    "name": "Sony Xperia 10 VIII",
+    "category": "Smartphones",
+    "slug": "sony-xperia-10-viii",
+    "searchTerms": [
+      "xperia 10 viii sd card",
+      "xperia 10 viii microsd max size",
+      "xperia 10 viii 2tb microsd",
+      "best microsd for xperia 10 viii",
+      "xperia 10 viii expandable storage"
+    ],
+    "sdCard": {
+      "type": "microSDXC",
+      "minSpeed": "V30 / A2 (our pick; Sony sets no minimum)",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "2TB (microSDXC)",
+      "minAppPerformance": "A2 (recommended)"
+    },
+    "whySpecs": "The Xperia 10 VIII comes in one storage size, 128GB, and Sony supports microSDXC cards up to 2TB to make up for it. Sony publishes no speed requirement. A V30 card keeps up when the camera saves video straight to the card, and an A2 rating keeps apps and games moved to the card responsive. Set the camera to save to the card, and a 256GB or 512GB card gives you three to five times the built-in space.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd"
+      },
+      {
+        "id": "samsung-pro-plus-microsd"
+      },
+      {
+        "id": "kingston-canvas-go-plus"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the largest microSD card the Xperia 10 VIII supports?",
+        "a": "<b>2TB.</b> Sony's product page states support for microSDXC cards up to 2TB. Format a new card in the phone before saving photos to it."
+      },
+      {
+        "q": "Can I use a microSD card and two SIMs in the Xperia 10 VIII?",
+        "a": "<b>Yes, if one line is an eSIM.</b> The tray takes one nano SIM and one microSD card. Set up the second line as an eSIM to keep dual SIM and the card."
+      }
+    ],
+    "relatedDevices": [
+      "sony-xperia-1-vi",
+      "samsung-galaxy-a55-5g",
+      "google-pixel-8"
+    ],
+    "notes": "EN page added 2026-11-14. Sources: sony.jp/xperia/products/xperia10m8/ ('Xperia 10 VIIIは最大2TBのmicroSDXCカードに対応'; nano SIM + eSIM dual SIM) and Sony help guide helpguide.sony.net/mobile/xperia-10m8/ (XQ-GH54/XQ-GH74: one nano SIM, one microSD, eSIM). 128GB internal only. Sony publishes no card speed class; V30/A2 is our recommendation. 4K frame rates not verified, so not stated. Sony Asia lists some Dual SIM variants with a hybrid tray; FAQ follows the global help guide.",
+    "metaDescription": "The Xperia 10 VIII ships with 128GB only and takes microSDXC cards up to 2TB, per Sony. V30 for video, A2 for apps. Best cards and sizes.",
+    "imageUrl": "/img/devices/smartphones/sony-xperia-10-viii.webp"
   },
   {
     "id": "samsung-galaxy-a55-5g",

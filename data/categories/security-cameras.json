@@ -41,7 +41,8 @@
     ],
     "relatedDevices": [
       "nextbase-622gw",
-      "eufy-solocam-s340"
+      "eufy-solocam-s340",
+      "tp-link-tapo-c200"
     ],
     "notes": "Extremely popular budget security camera with massive search volume. Wyze official documentation confirms microSD support up to 256GB (tested). Requires FAT32 for 32GB or smaller, exFAT for 64GB+."
   },
@@ -128,8 +129,63 @@
       }
     ],
     "relatedDevices": [
-      "wyze-cam-v3"
+      "wyze-cam-v3",
+      "tp-link-tapo-c200"
     ],
     "notes": "A best-selling indoor 2K camera from a major security brand. Reolink's focus on local storage drives high search volume for card recommendations. Official max capacity is 256GB."
+  },
+  {
+    "id": "tp-link-tapo-c200",
+    "name": "TP-Link Tapo C200 / C210",
+    "category": "Security Cameras",
+    "slug": "tp-link-tapo-c200",
+    "searchTerms": [
+      "tapo c200 sd card",
+      "tapo c210 sd card",
+      "tapo camera microsd max size",
+      "best sd card for tapo c200",
+      "tapo c210 512gb sd card",
+      "tapo sd card not recognized"
+    ],
+    "sdCard": {
+      "type": "microSD (microSDHC / microSDXC)",
+      "minSpeed": "Class 10 / U1 / V10",
+      "minWriteSpeed": "10 MB/s",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "512GB"
+    },
+    "whySpecs": "The C200 and C210 can record around the clock to the card and overwrite the oldest footage once it fills. That constant rewriting wears out ordinary cards, and TP-Link recommends <b>High Endurance, Max Endurance or Pro Endurance</b> cards over regular camera cards. Speed is not the bottleneck: TP-Link's minimum is Class 10 / U1 / V10. TP-Link estimates 128GB holds about 384 hours of continuous 1080p recording at 15 fps from the C200, or about 256 hours at the C210's 2K (2304 x 1296) resolution. Both cameras accept cards up to 512GB.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-high-endurance-512"
+      },
+      {
+        "id": "sandisk-max-endurance"
+      },
+      {
+        "id": "samsung-pro-endurance"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Which SD cards don't work in Tapo cameras?",
+        "a": "<b>TP-Link names two.</b> ADATA cards rated A1/V10 and the Samsung EVO Plus 256GB are confirmed incompatible with all Tapo and Kasa cameras in TP-Link's lab testing. Fake-capacity cards also fail to format, so buy from an authorized seller."
+      },
+      {
+        "q": "Do the Tapo C200 and C210 take the same SD card?",
+        "a": "<b>Yes.</b> Both take microSD cards up to 512GB with the same Class 10 / U1 minimum. The C210 records at 2K, so the same card holds about a third less footage than in the 1080p C200."
+      }
+    ],
+    "relatedDevices": [
+      "wyze-cam-v3",
+      "reolink-e1-pro",
+      "eufy-solocam-s340"
+    ],
+    "notes": "EN page added 2026-11-14. One page for C200 + C210 per ADD_A_DEVICE 3b: identical card spec, only resolution differs. Sources: tp-link.com/us/home-networking/cloud-camera/tapo-c200/ (microSD up to 512GB, 1080p, 15 fps) and /tapo-c210/ (microSD up to 512GB, 2304x1296); TP-Link FAQ 3048 tp-link.com/us/support/faq/3048/ (min Class 10/U1/V10, endurance cards recommended, Tapo 8GB to 512GB, ADATA A1/V10 and Samsung EVO Plus 256GB incompatible, recording-hours table: 2MP@15fps 128GB = 384h, 3MP@15fps 128GB = 256h). Do not recommend samsung-evo-plus here.",
+    "metaDescription": "The Tapo C200 and C210 take microSD cards up to 512GB. TP-Link asks for Class 10 / U1 and an endurance card for 24/7 recording. Cards that work and fail.",
+    "imageUrl": "/img/devices/security-cameras/tp-link-tapo-c200.webp"
   }
 ]

@@ -397,6 +397,7 @@
       "name": "GoPro Hero 13 Black",
       "category": "Action Cameras",
       "slug": "gopro-hero-13",
+      "customTitle": "Best SD Card for GoPro Hero 13 Black: V30 microSD, Up to 1TB",
       "searchTerms": [
         "gopro hero 13",
         "gopro 13",
@@ -456,7 +457,7 @@
         "dji-mini-4-pro"
       ],
       "notes": "Card requirements match Hero 12. Official GoPro guidance: A2/V30, up to 1TB.",
-      "metaDescription": "The GoPro Hero 13 Black needs a V30 or UHS-3 microSD card, up to 1TB. V30 doubles the 120 Mbps High bitrate for 5.3K60 and 4K120. Best cards."
+      "metaDescription": "GoPro Hero 13 Black SD card: microSD rated V30 or U3, up to 1TB. V30 sustains 30 MB/s, double the 120 Mbps top bitrate. Which cards pass GoPro's spec."
     },
     {
       "id": "gopro-hero-12",
@@ -627,7 +628,8 @@
       "name": "DJI Osmo Pocket 3",
       "category": "Action Cameras",
       "slug": "dji-osmo-pocket-3",
-      "metaDescription": "DJI requires a U3/V30 UHS-I microSD card for the Osmo Pocket 3, up to 512GB. A 128GB card holds about 2 hours of 4K/60. Best cards that meet spec.",
+      "customTitle": "Best SD Card for DJI Osmo Pocket 3: V30 microSD, Up to 512GB",
+      "metaDescription": "DJI Osmo Pocket 3 SD card: UHS-I microSD rated U3/V30, up to 512GB. The three cards that meet DJI's spec, and why a UHS-II card records no faster.",
       "searchTerms": [
         "dji pocket 3 sd card",
         "osmo pocket 3 microsd",
@@ -831,7 +833,8 @@
       "name": "DJI Osmo Action 4",
       "category": "Action Cameras",
       "slug": "dji-osmo-action-4",
-      "metaDescription": "DJI requires a U3/V30 UHS-I microSD card for the Osmo Action 4, up to 512GB. It has no internal storage. Best cards that meet DJI's spec.",
+      "customTitle": "Best SD Card for DJI Osmo Action 4: V30 microSD, Up to 512GB",
+      "metaDescription": "DJI Osmo Action 4 SD card: UHS-I microSD rated U3/V30, up to 512GB. It can't record without one. Cards that meet DJI's spec, and if your GoPro card works.",
       "searchTerms": [
         "dji action 4",
         "osmo action 4 sd card",
@@ -1129,7 +1132,8 @@
       "name": "DJI Osmo Action 6",
       "category": "Action Cameras",
       "slug": "dji-osmo-action-6",
-      "metaDescription": "DJI requires a U3/V30 UHS-I microSD card for the Osmo Action 6, up to 1TB. It also has 64GB of built-in storage. Best cards that meet spec.",
+      "customTitle": "Best SD Card for DJI Osmo Action 6: V30 microSD, Up to 1TB",
+      "metaDescription": "DJI Osmo Action 6 SD card: UHS-I microSD rated U3/V30, up to 1TB. Which cards meet DJI's spec, and how to fix the \"card too slow\" warning.",
       "searchTerms": [
         "dji osmo action 6 sd card",
         "osmo action 6 microsd",
@@ -1183,7 +1187,8 @@
       "name": "DJI Osmo Pocket 4",
       "category": "Action Cameras",
       "slug": "dji-osmo-pocket-4",
-      "metaDescription": "DJI requires a U3/V30 UHS-I microSD card for the Osmo Pocket 4, up to 1TB, on top of 107GB built in. Best cards that meet DJI's spec.",
+      "customTitle": "Best SD Card for DJI Osmo Pocket 4: V30 microSD, Up to 1TB",
+      "metaDescription": "DJI Osmo Pocket 4 SD card: UHS-I microSD rated U3/V30, up to 1TB, on top of 107GB built in. Cards that meet DJI's spec, and when you need one at all.",
       "searchTerms": [
         "dji osmo pocket 4 sd card",
         "osmo pocket 4 microsd",
@@ -1501,6 +1506,7 @@
       "name": "DJI Osmo Pocket 4P",
       "category": "Action Cameras",
       "slug": "dji-osmo-pocket-4p",
+      "customTitle": "Best SD Card for DJI Osmo Pocket 4P: V30 microSD, Up to 1TB",
       "metaDescription": "The DJI Osmo Pocket 4P has 103GB built in and takes a U3/V30 microSD up to 1TB. 4K/240 slow motion fills storage fast. Best cards that meet DJI's spec.",
       "searchTerms": [
         "dji osmo pocket 4p sd card",
@@ -2397,7 +2403,9 @@
       "searchTerms": [
         "bmpcc 6k pro card",
         "blackmagic 6k pro sd card",
-        "pocket 6k memory"
+        "pocket 6k memory",
+        "bmpcc 6k g2 card",
+        "blackmagic pocket 6k g2 sd card"
       ],
       "sdCard": {
         "type": "CFast 2.0 and SD UHS-II",
@@ -2425,6 +2433,10 @@
         {
           "q": "Do I need CFast for the BMPCC 6K Pro?",
           "a": "<b>For full 6K RAW recording, yes.</b> CFast 2.0 is essential for the highest bitrate 6K RAW codecs. However, for recording in DCI 4K or many ProRes formats, a fast SD UHS-II V90 card will work and is more affordable."
+        },
+        {
+          "q": "Does the Pocket 6K G2 use the same cards as the 6K Pro?",
+          "a": "<b>Yes.</b> Blackmagic lists the same media for both: one CFast 2.0 slot, one SD UHS-II slot and a USB-C port for external drives. Both record the same 6K Blackmagic RAW data rates, so every card on this page works in either camera."
         }
       ],
       "relatedDevices": [
@@ -2432,7 +2444,7 @@
         "canon-eos-r5",
         "nikon-z8"
       ],
-      "notes": "Professional-grade 6K cinema camera. Both CFast 2.0 and V90 SD card options are now recommended for maximum flexibility."
+      "notes": "Professional-grade 6K cinema camera. Both CFast 2.0 and V90 SD card options are now recommended for maximum flexibility. 6K G2 covered here (2026-11-14) per ADD_A_DEVICE 3b: blackmagicdesign.com Pocket tech specs list identical media for 4K, 6K G2 and 6K Pro (1x CFast 2.0, 1x SD UHS-II, USB-C 3.1 Gen 1 expansion) and identical 6K storage rates (BRAW 3:1 at 323 MB/s for 6K)."
     },
     {
       "id": "nikon-z8",
@@ -2489,24 +2501,42 @@
       ],
       "sdCard": {
         "type": "SD UHS-II",
-        "minSpeed": "V90",
-        "minWriteSpeed": "90 MB/s",
+        "minSpeed": "V30 (V60 for 400 Mbps)",
+        "minWriteSpeed": "30 MB/s, 60 MB/s for 400 Mbps",
         "recommendedCapacity": [
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "No official limit"
+        "maxCapacity": "No official limit (Panasonic tested 256GB)"
       },
-      "whySpecs": "The S1H is a Netflix-approved cinema camera that records 6K video at very high bitrates. It features dual SD UHS-II slots, and V90-rated cards are essential to reliably capture its highest quality internal recording formats without any dropped frames.",
+      "whySpecs": "The S1H records up to 400 Mbps internally, or 50 MB/s (400 ÷ 8), in 4K and C4K 4:2:2 10-bit ALL-Intra, and Panasonic requires a V60 card for 400 Mbps. The 6K and 5.9K modes are 200 Mbps H.265 (25 MB/s), which falls in Panasonic's 100 to 200 Mbps tier: UHS Speed Class 3 or V30. Both slots are SD UHS-II.",
       "recommendedBrands": [
         {
           "id": "sony-tough-g-v90"
+        },
+        {
+          "id": "sandisk-extreme-pro-sd-uhs2"
+        },
+        {
+          "id": "lexar-professional-1000x-sd"
         }
       ],
       "faq": [
         {
+          "q": "What is the best CFexpress card for the Panasonic Lumix S1H?",
+          "a": "<b>The S1H has no CFexpress slot.</b> Both slots take SD cards, so buy a V60 or V90 UHS-II SD card instead. For 5.9K ProRes RAW, the S1H sends RAW over HDMI to an Atomos Ninja V, which records to its own SSD."
+        },
+        {
           "q": "Is V90 required for the Panasonic S1H?",
-          "a": "<b>For 6K and All-Intra modes, yes.</b> V60 cards handle lower-bitrate modes, but the camera blocks the high-bitrate ones without V90."
+          "a": "<b>No.</b> Panasonic's highest card requirement on the S1H is V60. A V90 card meets it with more margin, but a V60 UHS-II card records the same 400 Mbps footage."
+        },
+        {
+          "q": "How much 400 Mbps footage fits on a 128GB card in the S1H?",
+          "a": "<b>About 40 minutes.</b> 128,000 MB ÷ 50 MB/s is about 43 minutes, rounded down for formatting overhead. 6K at 200 Mbps lasts about 80 minutes on the same card."
+        },
+        {
+          "q": "Can the S1H record to both SD slots at once?",
+          "a": "<b>Yes, in backup mode.</b> It can also relay to slot 2 when slot 1 fills, or split files by type. In backup mode both cards must meet the speed class of the mode, so use two V60 cards for 400 Mbps."
         }
       ],
       "relatedDevices": [
@@ -2515,7 +2545,9 @@
         "nikon-z8"
       ],
       "notes": "A professional 6K hybrid camera. Now that Sony TOUGH G V90 has been added to your sdcards.json, it is the recommended card.",
-      "imageUrl": "/img/devices/cameras/panasonic-lumix-s1h.webp"
+      "imageUrl": "/img/devices/cameras/panasonic-lumix-s1h.webp",
+      "metaDescription": "The Panasonic Lumix S1H takes no CFexpress card. Both slots are SD UHS-II, and Panasonic requires V60 for 400 Mbps ALL-Intra, about 40 min per 128GB.",
+      "customTitle": "Panasonic S1H Memory Card: SD UHS-II Only, No CFexpress"
     },
     {
       "id": "fujifilm-x100vi",
@@ -2684,15 +2716,15 @@
       ],
       "sdCard": {
         "type": "SD UHS-II (UHS-I compatible)",
-        "minSpeed": "V30 (V60 recommended for 4K 60fps)",
-        "minWriteSpeed": "30 MB/s minimum, 60 MB/s for high frame rate",
+        "minSpeed": "V30 (V60 for 10-bit 4K/60)",
+        "minWriteSpeed": "30 MB/s, 60 MB/s for 10-bit 4K/60",
         "recommendedCapacity": [
           "128GB",
           "256GB"
         ],
         "maxCapacity": "No official limit"
       },
-      "whySpecs": "An entry-level APS-C mirrorless camera capable of 15fps burst shooting and 4K 60fps video. While V30 cards can handle standard recording, a V60 speed class card is recommended for consistent 4K 60fps performance and to prevent buffer issues during prolonged burst shooting.",
+      "whySpecs": "The R10's top bitrate is about 340 Mbps, or 42.5 MB/s (340 ÷ 8), in 4K Crop at 59.94p with HDR PQ (10-bit) on, and Canon requires a V60 card for that mode. The same 4K/60 Crop mode in 8-bit runs at 230 Mbps (28.75 MB/s), and uncropped 4K/30 at 120 Mbps (15 MB/s). Canon lists UHS Speed Class 3 for both, so a V30 card covers every mode except 10-bit 4K/60.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs2"
@@ -2706,12 +2738,20 @@
       ],
       "faq": [
         {
-          "q": "R10 vs R50 - do I need faster cards?",
-          "a": "<b>Yes, the R10 benefits more from V60 cards than the R50 due to its higher performance capabilities.</b> The R10's 15fps burst mode and 4K 60fps video generate more data, making V60 cards crucial for preventing the buffer from filling too quickly and maintaining smooth shooting, especially for action photography."
+          "q": "What memory card does the Canon R10 use?",
+          "a": "<b>One SD, SDHC or SDXC card. The slot supports UHS-II and also takes UHS-I cards.</b> Canon measures the R10's maximum burst with a UHS-II card, so a UHS-II card empties the buffer faster after a long 15 fps or 23 fps burst."
+        },
+        {
+          "q": "How much 4K video fits on a 128GB card in the Canon R10?",
+          "a": "<b>About 2 hours 21 minutes of uncropped 4K/30, per Canon's own table.</b> Canon lists 1 hour 14 minutes for 8-bit 4K/60 Crop at 230 Mbps and 50 minutes for 10-bit 4K/60 at 340 Mbps on the same card."
+        },
+        {
+          "q": "Why does my Canon R10 split videos into 4GB files?",
+          "a": "<b>The card is formatted FAT32, which is the default for SDHC cards of 32GB or less.</b> On a 64GB or larger SDXC card formatted in the camera as exFAT, each clip stays one file."
         },
         {
           "q": "Does the R10 have two SD card slots?",
-          "a": "<b>No, the Canon EOS R10 has only one SD card slot.</b> Unlike some professional cameras, there is no backup slot. Therefore, it's particularly important to use reliable, high-quality cards and regularly back up your footage to prevent potential data loss during critical shoots."
+          "a": "<b>No, one slot.</b> There is no backup card, so copy files off after each shoot."
         }
       ],
       "relatedDevices": [
@@ -2721,7 +2761,9 @@
         "fujifilm-x-s20"
       ],
       "notes": "Canon's APS-C mirrorless camera positioned for enthusiasts interested in sports and action photography. It offers strong performance at a competitive price point, with a single SD UHS-II card slot.",
-      "imageUrl": "/img/devices/cameras/canon-eos-r10.webp"
+      "imageUrl": "/img/devices/cameras/canon-eos-r10.webp",
+      "metaDescription": "Canon R10 memory card: one SD UHS-II slot. V30 covers 4K/30 and 8-bit 4K/60. Canon requires V60 for 10-bit 4K/60 at 340 Mbps, about 50 min per 128GB.",
+      "customTitle": "Canon R10 Memory Card: SD UHS-II, V60 for 10-bit 4K/60"
     },
     {
       "id": "canon-eos-r8",
@@ -2841,7 +2883,14 @@
         ],
         "maxCapacity": "No official limit"
       },
-      "whySpecs": "A highly popular vlogging compact camera featuring 4K 30fps video recording and a 20MP 1-inch sensor. A V30 speed class card is required for reliable 4K recording to prevent dropped frames. Its compact design and flip screen have made it a favorite among YouTube creators, driving significant search volume for SD card recommendations.",
+      "whySpecs": "The G7 X Mark III's top bitrate is about 120 Mbps, or 15 MB/s (120 ÷ 8), used for 4K at 29.97p and Full HD at 119.88p. That is above the 10 MB/s floor of a Class 10 or U1 card, so those two modes need U3 or V30 (30 MB/s). Full HD at 59.94p runs at 60 Mbps (7.5 MB/s) and 29.97p at 30 Mbps, which a U1 card handles.",
+      "realWorldEvidence": [
+        {
+          "claim": "In independent in-camera tests on the G7 X Mark III, the fastest card measured 72.6 MB/s write (Sony TOUGH G V90, running at UHS-I speed). The fastest UHS-I card, a Sony Professional U3, measured 69.3 MB/s, so UHS-II cards gained almost nothing in this slot.",
+          "sourceName": "Alik Griffin",
+          "url": "https://alikgriffin.com/memory-card-benchmarks-canon-g7x-iii/"
+        }
+      ],
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-sd-uhs1"
@@ -2855,8 +2904,20 @@
       ],
       "faq": [
         {
-          "q": "Why is the G7 X Mark III popular for YouTube?",
-          "a": "<b>It is pocket-sized, has a flip-up screen and a 1-inch sensor, and records 4K.</b> It also streams live to YouTube over Wi-Fi."
+          "q": "What SD card does the Canon G7 X Mark III use?",
+          "a": "<b>A full-size SD, SDHC or SDXC card in one UHS-I slot.</b> UHS-II cards fit and work at UHS-I speed. Canon also requires a UHS Speed Class 3 card for the 30 fps RAW burst mode."
+        },
+        {
+          "q": "What is the best SD card for the Canon G7 X Mark III?",
+          "a": "<b>A 128GB UHS-I V30 card such as the SanDisk Extreme or Lexar Professional 633x.</b> A UHS-II V90 card records the same 4K in this slot, so its higher price buys nothing for video."
+        },
+        {
+          "q": "How long can the G7 X Mark III record 4K in one clip?",
+          "a": "<b>9 minutes 59 seconds in 4K and 7 minutes 29 seconds in Full HD 120p.</b> Other modes stop at 29 minutes 59 seconds. A bigger card does not change these limits; press record again to start a new clip."
+        },
+        {
+          "q": "How much 4K video fits on a 128GB card in the G7 X Mark III?",
+          "a": "<b>About 2 hours 15 minutes at 120 Mbps.</b> 128,000 MB ÷ 15 MB/s is about 142 minutes, rounded down for formatting overhead. A 64GB card holds about 1 hour 5 minutes."
         },
         {
           "q": "Can I use my G7 X Mark II SD card in the Mark III?",
@@ -2869,7 +2930,8 @@
       ],
       "notes": "A go-to camera for vloggers and content creators. Its significant popularity, especially on social media platforms like YouTube, contributes to extremely high search volume for compatible SD cards.",
       "imageUrl": "/img/devices/cameras/canon-g7x-mark-iii.webp",
-      "metaDescription": "The Canon PowerShot G7 X Mark III is a favorite among YouTube vloggers. Its 4K/30 video needs a V30 SD card, minimum, to avoid dropped frames."
+      "metaDescription": "SD card for Canon G7X Mark III: UHS-I, U3 or V30 for its 120 Mbps 4K. 4K clips stop at 9 min 59 sec, and a 128GB card holds about 2 hours 15 minutes.",
+      "customTitle": "Best SD Card for Canon G7X Mark III: V30 for 4K, UHS-I"
     },
     {
       "id": "canon-g7x-mark-ii",
@@ -2932,15 +2994,15 @@
       ],
       "sdCard": {
         "type": "Dual SD UHS-II",
-        "minSpeed": "V60 (V90 recommended for high bitrate video)",
-        "minWriteSpeed": "60 MB/s minimum, 90 MB/s recommended",
+        "minSpeed": "V30 (V60 for 360 Mbps)",
+        "minWriteSpeed": "30 MB/s, 60 MB/s for 360 Mbps",
         "recommendedCapacity": [
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "No official limit"
+        "maxCapacity": "2TB"
       },
-      "whySpecs": "Fujifilm's flagship APS-C camera, featuring a 40MP sensor and capable of 6.2K 30fps video recording. A V60 card handles most photography and 4K video shooting, but a V90 card is recommended for the highest bitrate 6.2K recording and sustained 15fps RAW bursts. Its dual SD slots enable professional workflow options like backup recording and overflow.",
+      "whySpecs": "The X-T5's top bitrate is 360 Mbps, or 45 MB/s (360 ÷ 8), offered in 6.2K up to 29.97p, 4K up to 59.94p and Full HD. Fujifilm requires a V60 card for every 360 Mbps setting, which includes all H.265 ALL-Intra modes. The 100 and 200 Mbps settings (12.5 and 25 MB/s) need only a U3 or V30 card. Both slots are UHS-II.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs2"
@@ -2954,18 +3016,28 @@
       ],
       "faq": [
         {
-          "q": "Do I need V90 cards for the X-T5, or is V60 enough?",
-          "a": "<b>V60 cards are sufficient for most users and all typical photography needs on the X-T5.</b> V90 cards only provide a tangible benefit if you are consistently shooting 6.2K video at the highest bitrate settings or require extended RAW burst shooting with minimal buffer limitations. For general photo and 4K video work, V60 cards offer excellent performance."
+          "q": "Which SD card should I use with a Fujifilm X-T5?",
+          "a": "<b>A V60 UHS-II SDXC card in 128GB or 256GB covers every mode.</b> No X-T5 video setting needs a V90 card. Its faster write speed helps after long RAW bursts, where Fujifilm recommends UHS-II cards."
         },
         {
-          "q": "Should I use both SD card slots?",
-          "a": "<b>Yes, for professional work or any important photography/videography sessions, it is highly recommended to utilize both dual UHS-II card slots.</b> You can configure them for instant backup (simultaneous writing to both cards), overflow (recording continues to the second card when the first fills), or to separate file types (e.g., RAW files to one card, JPEGs to the other), which significantly enhances reliability and streamlines post-production workflow."
+          "q": "Should I use both SD card slots on the X-T5?",
+          "a": "<b>Use both if you want an instant backup.</b> The X-T5 can write each file to both cards, roll over to slot 2 when slot 1 fills, or send RAW to one card and JPEG to the other. In backup mode the slower card sets the limit, so pair two V60 cards for 360 Mbps."
+        },
+        {
+          "q": "How much video fits on a 256GB card in the X-T5?",
+          "a": "<b>About 90 minutes at 360 Mbps, or about 2 hours 45 minutes at 200 Mbps.</b> 256,000 MB ÷ 45 MB/s is about 95 minutes, and 256,000 MB ÷ 25 MB/s is about 170 minutes. Both are rounded down for formatting overhead."
+        },
+        {
+          "q": "What is the largest SD card the Fujifilm X-T5 supports?",
+          "a": "<b>2TB.</b> Fujifilm's X-T5 compatibility list includes the 2TB SanDisk Extreme PRO UHS-II V90 and the 2TB Delkin POWER V90."
         }
       ],
       "relatedDevices": [
         "sony-a6700"
       ],
-      "notes": "Fujifilm's current APS-C flagship camera. Extremely popular with enthusiast photographers and professionals due to its image quality and classic controls. Features dual SD UHS-II slots for robust media management."
+      "notes": "Fujifilm's current APS-C flagship camera. Extremely popular with enthusiast photographers and professionals due to its image quality and classic controls. Features dual SD UHS-II slots for robust media management.",
+      "metaDescription": "Fujifilm X-T5 SD card: two UHS-II slots, V30 for 200 Mbps video, V60 for 360 Mbps ALL-Intra. A 256GB card holds about 90 minutes at 360 Mbps.",
+      "customTitle": "Best SD Card for Fujifilm X-T5: Dual UHS-II, V60 for 360 Mbps"
     },
     {
       "id": "fujifilm-xm5",
@@ -2985,9 +3057,9 @@
           "64GB",
           "128GB"
         ],
-        "maxCapacity": "No official limit"
+        "maxCapacity": "2TB"
       },
-      "whySpecs": "A compact, vlogging-focused APS-C camera capable of 6.2K video recording. Despite its entry-level positioning, the high-resolution video output necessitates V30 cards for reliable recording without dropped frames. The use of a UHS-I slot helps keep the camera's size and cost down while still supporting advanced video features.",
+      "whySpecs": "The X-M5 records at most 200 Mbps, which is 25 MB/s (200 ÷ 8), in 6.2K 3:2 (6240 x 4160) up to 29.97p, 4K up to 59.94p and Full HD. Fujifilm recommends a UHS Speed Class 3 card for 4K and 6.2K, which is the same 30 MB/s floor as V30, and Class 10 for HD. No mode needs V60 or V90.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-sd-uhs1"
@@ -3001,8 +3073,16 @@
       ],
       "faq": [
         {
-          "q": "Is the Fujifilm X-M5 Fujifilm's cheapest X-mount camera?",
-          "a": "<b>Yes, the X-M5 is positioned as Fujifilm's most affordable interchangeable lens camera.</b> It is specifically designed to appeal to vloggers and first-time mirrorless camera buyers due to its compact form factor and advanced video capabilities. Despite its lower price point, it still requires V30 cards for stable video recording performance."
+          "q": "What SD card does the Fujifilm X-M5 use?",
+          "a": "<b>A full-size SD, SDHC or SDXC card in its single UHS-I slot.</b> Fujifilm's spec sheet lists cards up to 2TB, and Fujifilm has confirmed UHS-I cards from 4GB to 512GB in the camera."
+        },
+        {
+          "q": "Is a UHS-II SD card faster in the Fujifilm X-M5?",
+          "a": "<b>No.</b> Fujifilm states that UHS-II cards work in the X-M5 but read and write at UHS-I speed. A UHS-I V30 card gives the same result for less money."
+        },
+        {
+          "q": "How much 6.2K video fits on a 128GB card in the X-M5?",
+          "a": "<b>About 80 minutes at 200 Mbps.</b> 128,000 MB ÷ 25 MB/s is about 85 minutes, rounded down for formatting overhead. At 100 Mbps the same card holds about 2 hours 50 minutes."
         }
       ],
       "relatedDevices": [
@@ -3011,7 +3091,9 @@
         "canon-eos-r50"
       ],
       "notes": "Released late 2024 as Fujifilm's entry-level vlogging and creator-focused camera. High search volume is expected as it gains popularity within the content creation community due to its feature set and affordability.",
-      "imageUrl": "/img/devices/cameras/fujifilm-xm5.webp"
+      "imageUrl": "/img/devices/cameras/fujifilm-xm5.webp",
+      "metaDescription": "Fujifilm X-M5 SD card: one UHS-I slot, and a V30 or U3 card covers its 200 Mbps 6.2K video. Cards up to 2TB work. A 128GB card holds about 80 minutes.",
+      "customTitle": "Fujifilm X-M5 SD Card: UHS-I, V30 for 200 Mbps 6.2K"
     },
     {
       "id": "fujifilm-xt30-ii",
@@ -3072,15 +3154,15 @@
       ],
       "sdCard": {
         "type": "SD UHS-II",
-        "minSpeed": "V60",
-        "minWriteSpeed": "60 MB/s",
+        "minSpeed": "V30 (V60 for 360 Mbps)",
+        "minWriteSpeed": "30 MB/s, 60 MB/s for 360 Mbps",
         "recommendedCapacity": [
           "128GB",
           "256GB"
         ],
-        "maxCapacity": "No official limit"
+        "maxCapacity": "2TB"
       },
-      "whySpecs": "Fujifilm's latest mid-range APS-C camera, boasting a 40MP sensor and 6.2K video recording capabilities. A V60 speed class card is essential to ensure reliable performance for its high-resolution video and fast burst shooting modes. Its UHS-II slot provides faster data transfers and buffer clearing compared to models with only UHS-I slots.",
+      "whySpecs": "The X-T50 tops out at 360 Mbps, which is 45 MB/s (360 ÷ 8). Fujifilm requires a V60 card for any 360 Mbps setting: H.265 ALL-Intra in 6.2K, 4K or Full HD, and the 360 Mbps Long GOP option. At 200 Mbps (25 MB/s) and below, Fujifilm accepts any U3 or V30 card. The single slot is UHS-II, and Fujifilm recommends a UHS-II card for high-speed bursts so the buffer empties faster.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-sd-uhs2"
@@ -3096,6 +3178,18 @@
         {
           "q": "Is the Fujifilm X-T50 the X-T5 in a smaller body?",
           "a": "<b>Mostly.</b> It has the same 40MP sensor and processor, but one SD slot instead of two. The same V60 cards work in both."
+        },
+        {
+          "q": "What is the best SD card for Fujifilm X-T50 4K video?",
+          "a": "<b>A V60 UHS-II card, if you want every 4K setting.</b> 4K runs at up to 59.94p, and the 360 Mbps options are the ones that refuse slower cards. Fujifilm's X-T50 compatibility list includes V60 cards from SanDisk, OWC and SUNEAST."
+        },
+        {
+          "q": "How much 4K video fits on a 128GB card in the X-T50?",
+          "a": "<b>About 45 minutes at 360 Mbps, or about 80 minutes at 200 Mbps.</b> 360 Mbps is 45 MB/s, so 128,000 MB ÷ 45 MB/s is about 47 minutes; 200 Mbps is 25 MB/s, about 85 minutes. Both figures are rounded down because a formatted card holds less than its label."
+        },
+        {
+          "q": "What is the largest SD card the Fujifilm X-T50 supports?",
+          "a": "<b>2TB.</b> Fujifilm's spec sheet lists SDXC cards up to 2TB. The largest cards Fujifilm has checked in the X-T50 so far are 1TB."
         }
       ],
       "relatedDevices": [
@@ -3103,7 +3197,9 @@
         "fujifilm-xt30-ii",
         "fujifilm-xm5"
       ],
-      "notes": "Released in 2024 as a compact alternative to the X-T5, appealing to enthusiasts seeking top-tier image quality in a more portable form factor. It is gaining popularity and is expected to have high search volume."
+      "notes": "Released in 2024 as a compact alternative to the X-T5, appealing to enthusiasts seeking top-tier image quality in a more portable form factor. It is gaining popularity and is expected to have high search volume.",
+      "metaDescription": "Best SD card for the Fujifilm X-T50: UHS-II, V30 for 200 Mbps, V60 for 360 Mbps 6.2K and 4K. A 128GB card holds about 45 minutes at 360 Mbps.",
+      "customTitle": "Best SD Card for Fujifilm X-T50: V60 for 360 Mbps 4K"
     },
     {
       "id": "sony-fx30",
@@ -4734,7 +4830,7 @@
         ],
         "maxCapacity": "No official limit"
       },
-      "whySpecs": "Canon's updated 45MP flagship adds a new AI-driven processor and Eye Control AF, supporting 8K RAW video and 30fps burst shooting. Slot 1 is fixed CFexpress Type B (required for 8K RAW and the fastest bursts), while Slot 2 is a separate SD UHS-II slot. When writing to both slots simultaneously, the SD card becomes the bottleneck, so a V90 card is essential to avoid throttling the faster CFexpress card during backup recording.",
+      "whySpecs": "8K RAW runs at about 2,600 Mbps, or 325 MB/s (2,600 ÷ 8), and Canon requires a CFexpress 2.0 Type B card rated 400 MB/s or faster for it in slot 1. On the SD UHS-II slot, the top mode is 8K XF-HEVC S 4:2:2 10-bit Long GOP at 540 Mbps (67.5 MB/s), which needs V90; the 400 Mbps 4:2:0 version (50 MB/s) needs V60. Every RAW mode and every 8K Intra mode records to CFexpress only.",
       "recommendedBrands": [
         {
           "id": "sandisk-extreme-pro-cfexpress"
@@ -4748,16 +4844,20 @@
       ],
       "faq": [
         {
-          "q": "Why does my SD card slow down 8K recording on the R5 Mark II?",
-          "a": "<b>If you're recording to both slots simultaneously, the camera's overall write performance is limited by the slower SD card.</b> <b>For 8K RAW, record to the CFexpress Type B slot only</b>, or use a V90 SD card in the second slot to minimize the gap between the two media types when backup recording is enabled."
+          "q": "What is the best CFexpress card for the Canon EOS R5 Mark II?",
+          "a": "<b>A CFexpress 2.0 Type B card rated VPG400 or faster, such as the SanDisk Extreme PRO CFexpress Type B.</b> Canon lists 400 MB/s cards for all Standard RAW modes and Light RAW at 29.97p and above. Light RAW at 25p and 24p needs only a 200 MB/s card."
         },
         {
-          "q": "Is CFexpress Type B required for the R5 Mark II?",
-          "a": "<b>Yes, for 8K RAW video and the fastest electronic shutter burst rates, CFexpress Type B is required.</b> <b>For 4K video and most photography, the SD UHS-II slot with a V60 or V90 card is sufficient</b>, so casual shooters can save money by skipping CFexpress entirely."
+          "q": "How much 8K RAW fits on a CFexpress card in the R5 Mark II?",
+          "a": "<b>About 13 minutes on 256GB and 51 minutes on 1TB, per Canon's table for Standard RAW at 2,600 Mbps.</b> Light RAW at 29.97p (1,670 Mbps) stretches 256GB to about 20 minutes."
         },
         {
-          "q": "How is this different from the original EOS R5's SD card needs?",
-          "a": "<b>The Mark II carries over the same dual CFexpress Type B / SD UHS-II slot layout</b>, but its faster sensor readout and AI processing push more data per second in burst and video modes. <b>V90 SD cards are now the recommended baseline</b> rather than V60, to keep pace with the camera's higher-throughput shooting modes."
+          "q": "Can I use only an SD card in the R5 Mark II?",
+          "a": "<b>Yes, for stills and Long GOP video.</b> A V90 UHS-II card records every Long GOP mode up to 8K at 540 Mbps. You give up RAW video, the Intra codecs and the deeper still bursts Canon rates with CFexpress."
+        },
+        {
+          "q": "Can I mirror 8K RAW to the SD slot on the R5 Mark II?",
+          "a": "<b>No.</b> Canon lists RAW and Intra movie modes as CFexpress only, so the SD slot cannot hold a copy of those clips."
         }
       ],
       "relatedDevices": [
@@ -4765,8 +4865,10 @@
         "sony-a1-ii",
         "nikon-z9"
       ],
-      "notes": "Distinct page from the original Canon EOS R5 — the Mark II has a faster sensor, AI-driven autofocus, and higher burst/buffer demands that push SD card recommendations up to V90.",
-      "imageUrl": "/img/devices/cameras/canon-eos-r5-mark-ii.webp"
+      "notes": "Distinct page from the original Canon EOS R5. Per Canon's manual, 8K RAW needs CFexpress 2.0 Type B at 400 MB/s; SD tops out at 8K HEVC 4:2:2 540 Mbps (V90).",
+      "imageUrl": "/img/devices/cameras/canon-eos-r5-mark-ii.webp",
+      "metaDescription": "Best CFexpress card for the Canon EOS R5 Mark II: Type B, 400 MB/s (VPG400) for 2,600 Mbps 8K RAW. The SD slot needs V90 for 8K. 1TB holds 51 min of RAW.",
+      "customTitle": "Best CFexpress Card for Canon R5 Mark II: VPG400 for 8K RAW"
     },
     {
       "id": "canon-powershot-elph-100-hs",
@@ -5111,11 +5213,172 @@
         "fujifilm-x100vi",
         "fujifilm-xe5",
         "leica-q3",
-        "canon-g7x-mark-iii"
+        "canon-g7x-mark-iii",
+        "fujifilm-x-half"
       ],
       "notes": "Launched September 2025. Main search angle: SD to microSD change from GR III. Ricoh spec sheet: microSD/SDHC/SDXC UHS-I, approx. 53GB internal. Ricoh FAQ: Class 6+ for video; tested SDHC 32GB to SDXC 1TB (KIOXIA, SanDisk, Sept 2025). Ricoh does not explicitly ban UHS-II; it runs at UHS-I speed. Burst fps and video bitrate not published, so don't state them. HDF and Monochrome editions share the same card spec (covered via searchTerms).",
       "metaDescription": "The Ricoh GR IV uses microSD (UHS-I), not the full-size SD of the GR III. About 53GB built in, Class 6+ for video, tested to 1TB. Best cards and capacity.",
       "imageUrl": "/img/devices/cameras/ricoh-gr-iv.webp"
+    },
+    {
+      "id": "fujifilm-instax-mini-evo",
+      "name": "Fujifilm instax mini Evo",
+      "category": "Cameras",
+      "slug": "fujifilm-instax-mini-evo",
+      "searchTerms": [
+        "instax mini evo sd card",
+        "instax mini evo microsd card size",
+        "instax mini evo 64gb card not working",
+        "best microsd for instax mini evo",
+        "instax mini evo memory card"
+      ],
+      "sdCard": {
+        "type": "microSD / microSDHC (no microSDXC)",
+        "minSpeed": "Class 10 (Fujifilm sets no minimum)",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "16GB",
+          "32GB"
+        ],
+        "maxCapacity": "32GB (microSDHC only)"
+      },
+      "whySpecs": "The mini Evo stores about 45 shots in internal memory, so a card is what lets you keep a full day of shooting and choose what to print later. Fujifilm lists <b>microSD and microSDHC only</b>. microSDHC stops at 32GB, and every 64GB or larger card is microSDXC, which the spec sheet leaves out. Fujifilm rates the camera at about 850 images per 1GB, so a 32GB card holds roughly 27,000 photos. Fujifilm publishes no speed requirement and any Class 10 card keeps up, so pick a 16GB or 32GB microSDHC card and stop there.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-ultra-microsd"
+        },
+        {
+          "id": "kingston-canvas-select"
+        },
+        {
+          "id": "kioxia-exceria"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Will a 64GB microSD card work in the instax mini Evo?",
+          "a": "<b>Fujifilm doesn't support it.</b> The spec sheet lists microSD and microSDHC, and microSDHC stops at 32GB. A 64GB card is microSDXC. If a larger card isn't recognized, switch to a 32GB microSDHC card and format it in the camera."
+        },
+        {
+          "q": "Do I need a card to print from the instax mini Evo?",
+          "a": "<b>No.</b> The camera prints from internal memory or from the card. The card adds room beyond the roughly 45 internal shots and lets you copy files to a computer with a card reader."
+        }
+      ],
+      "relatedDevices": [
+        "fujifilm-x-half",
+        "ricoh-gr-iv",
+        "canon-g7x-mark-iii"
+      ],
+      "notes": "EN page added 2026-11-14. Source: instax.com/mini_evo/en/spec.html, recording media 'Internal memory, microSD/microSDHC memory card'; approx. 45 images internal, approx. 850 images per 1GB. No speed class or max capacity published; 32GB ceiling follows from microSDHC. microSDXC not listed. instax mini Evo Cinema is a separate product with different card support (not verified, not covered). Recommended cards all sold in 32GB.",
+      "metaDescription": "The instax mini Evo takes microSD and microSDHC only, so 32GB is the ceiling. Why 64GB cards may not be recognized, and which cards to buy.",
+      "imageUrl": "/img/devices/cameras/fujifilm-instax-mini-evo.webp"
+    },
+    {
+      "id": "fujifilm-x-half",
+      "name": "Fujifilm X half",
+      "category": "Cameras",
+      "slug": "fujifilm-x-half",
+      "searchTerms": [
+        "fujifilm x half sd card",
+        "x half memory card",
+        "x half microsd or sd",
+        "best sd card for fujifilm x half",
+        "x-hf1 sd card"
+      ],
+      "sdCard": {
+        "type": "SD (UHS-I)",
+        "minSpeed": "V10 / U1 (Fujifilm sets no minimum)",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "2TB (SDXC)"
+      },
+      "whySpecs": "The X half takes a <b>full-size SD card</b>. There is no microSD slot, despite the small body. Fujifilm lists SD, SDHC and SDXC up to 2TB with UHS-I support. Video tops out at 50 Mbps, about 6 MB/s, so a V10 card has headroom and a V30 card mainly writes stills to the card faster. A UHS-II card works but runs at UHS-I speed in this slot. Capacity matters more than speed: 64GB or 128GB leaves room for JPEGs and video clips without offloading every day.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-sd-uhs1"
+        },
+        {
+          "id": "lexar-professional-633x-sd"
+        },
+        {
+          "id": "sandisk-ultra-sd-uhs1"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does the Fujifilm X half use microSD or SD?",
+          "a": "<b>Full-size SD.</b> Fujifilm's spec sheet lists SD, SDHC and SDXC cards with UHS-I support. A microSD card works only in an SD adapter."
+        },
+        {
+          "q": "Do I need a V30 card for X half video?",
+          "a": "<b>No.</b> The X half records video at 10, 20 or 50 Mbps. 50 Mbps is about 6 MB/s, well inside what a V10 card sustains."
+        }
+      ],
+      "relatedDevices": [
+        "fujifilm-instax-mini-evo",
+        "fujifilm-x100vi",
+        "fujifilm-xm5",
+        "ricoh-gr-iv"
+      ],
+      "notes": "EN page added 2026-11-14. Source: fujifilm-x.com/en-ca/products/cameras/x-hf1/specifications/: storage media SD (-2GB) / SDHC (-32GB) / SDXC (-2TB), UHS-I; movie bitrates 50/20/10 Mbps. No speed class requirement published; V10 is derived from the 50 Mbps max. Internal memory not mentioned in spec, so not stated.",
+      "metaDescription": "The Fujifilm X half takes full-size SD (UHS-I, SDXC up to 2TB), not microSD. Video peaks at 50 Mbps, so V10 is enough. Best cards and sizes.",
+      "imageUrl": "/img/devices/cameras/fujifilm-x-half.webp"
+    },
+    {
+      "id": "om-system-tg-7",
+      "name": "OM SYSTEM Tough TG-7",
+      "category": "Cameras",
+      "slug": "om-system-tg-7",
+      "searchTerms": [
+        "om system tg-7 sd card",
+        "tg-7 sd card for 4k",
+        "olympus tg-7 memory card",
+        "best sd card for tg-7",
+        "does tg-7 come with sd card"
+      ],
+      "sdCard": {
+        "type": "SD (UHS-I)",
+        "minSpeed": "U3 / V30 (for 4K and High Speed movies)",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "64GB",
+          "128GB"
+        ],
+        "maxCapacity": "No published limit (SDXC supported)"
+      },
+      "whySpecs": "The TG-7 has <b>no internal memory and ships without a card</b>, so it can't take a photo until you add one. OM SYSTEM requires a UHS-I card rated U3 for 4K and High Speed movie modes, and Class 10 for other video. 4K at 30p records at about 102 Mbps, roughly 13 MB/s, which a U3 card sustains with margin. A faster card also clears the buffer sooner after a 20 fps burst in H mode, which runs to about 46 RAW frames. U3 cards cost little more than Class 10 cards, so buy one that covers every mode.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-sd-uhs1"
+        },
+        {
+          "id": "kingston-canvas-go-pro-sd"
+        },
+        {
+          "id": "lexar-professional-633x-sd"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does the OM SYSTEM TG-7 come with an SD card?",
+          "a": "<b>No.</b> OM SYSTEM confirms the TG-7 has no internal memory and no bundled card. Buy a U3 UHS-I SD card with the camera."
+        },
+        {
+          "q": "Can I use a UHS-II card in the TG-7?",
+          "a": "<b>Yes, at UHS-I speed.</b> The TG-7 slot is UHS-I, so a UHS-II card falls back to UHS-I rates. It costs more and adds no speed in this camera."
+        }
+      ],
+      "relatedDevices": [
+        "gopro-hero-13",
+        "canon-g7x-mark-iii",
+        "fujifilm-x-half"
+      ],
+      "notes": "EN page added 2026-11-14. Sources: OM SYSTEM support FAQ support.jp.omsystem.com/en/support/imsg/digicamera/qa/products/tg7/ (SD/SDHC/SDXC required; UHS-I U3 for 4K and HS movie; Class 10 for movie; no internal memory, no bundled card) and explore.omsystem.com/us/en/tg-7 (4K 30p/25p approx. 102 Mbps; H burst approx. 20 fps, approx. 46 RAW frames). Max capacity not published.",
+      "metaDescription": "The TG-7 has no internal memory and no card in the box. 4K (about 102 Mbps) needs the U3 UHS-I SD card OM SYSTEM specifies. Best cards and sizes.",
+      "imageUrl": "/img/devices/cameras/om-system-tg-7.webp"
     },
     {
       "id": "raspberry-pi-5",
@@ -7585,6 +7848,8 @@
       "name": "DJI Mini 5 Pro",
       "category": "Drones",
       "slug": "dji-mini-5-pro",
+      "customTitle": "Best SD Card for DJI Mini 5 Pro: V30 microSD, Up to 1TB",
+      "metaDescription": "DJI Mini 5 Pro SD card: UHS-I microSD rated U3/V30, up to 1TB. Its 150 Mbps 4K/120 mode fits about 4 hours on 256GB. Cards that meet the spec.",
       "searchTerms": [
         "dji mini 5 pro",
         "mini 5 pro",
@@ -8184,6 +8449,7 @@
       "name": "Nintendo 3DS / New 3DS XL",
       "category": "Gaming Handhelds",
       "slug": "nintendo-3ds-xl",
+      "metaDescription": "Nintendo 3DS SD card: SDHC up to 32GB officially, and 64GB or 128GB cards work once formatted FAT32. Which 3DS models take microSD, and how to format.",
       "searchTerms": [
         "3ds sd card",
         "new 3ds xl sd card",
@@ -9931,7 +10197,7 @@
         },
         {
           "q": "My Miyoo Flip stopped reading its SD card. Is the card the problem?",
-          "a": "<b>Often, yes.</b> The bundled card is the usual failure point; replace it with a brand-name A1 card and reformat to FAT32 or exFAT. If a new card is also not recognised, the reader itself may be faulty, which some early units suffered."
+          "a": "<b>Often, yes.</b> The bundled card is the usual failure point; replace it with a brand-name A1 card and reformat to FAT32 or exFAT. If a new card is also not recognized, the reader itself may be faulty, which some early units suffered."
         }
       ],
       "relatedDevices": [
@@ -10680,7 +10946,8 @@
       ],
       "relatedDevices": [
         "nextbase-622gw",
-        "eufy-solocam-s340"
+        "eufy-solocam-s340",
+        "tp-link-tapo-c200"
       ],
       "notes": "Extremely popular budget security camera with massive search volume. Wyze official documentation confirms microSD support up to 256GB (tested). Requires FAT32 for 32GB or smaller, exFAT for 64GB+."
     },
@@ -10767,9 +11034,64 @@
         }
       ],
       "relatedDevices": [
-        "wyze-cam-v3"
+        "wyze-cam-v3",
+        "tp-link-tapo-c200"
       ],
       "notes": "A best-selling indoor 2K camera from a major security brand. Reolink's focus on local storage drives high search volume for card recommendations. Official max capacity is 256GB."
+    },
+    {
+      "id": "tp-link-tapo-c200",
+      "name": "TP-Link Tapo C200 / C210",
+      "category": "Security Cameras",
+      "slug": "tp-link-tapo-c200",
+      "searchTerms": [
+        "tapo c200 sd card",
+        "tapo c210 sd card",
+        "tapo camera microsd max size",
+        "best sd card for tapo c200",
+        "tapo c210 512gb sd card",
+        "tapo sd card not recognized"
+      ],
+      "sdCard": {
+        "type": "microSD (microSDHC / microSDXC)",
+        "minSpeed": "Class 10 / U1 / V10",
+        "minWriteSpeed": "10 MB/s",
+        "recommendedCapacity": [
+          "128GB",
+          "256GB"
+        ],
+        "maxCapacity": "512GB"
+      },
+      "whySpecs": "The C200 and C210 can record around the clock to the card and overwrite the oldest footage once it fills. That constant rewriting wears out ordinary cards, and TP-Link recommends <b>High Endurance, Max Endurance or Pro Endurance</b> cards over regular camera cards. Speed is not the bottleneck: TP-Link's minimum is Class 10 / U1 / V10. TP-Link estimates 128GB holds about 384 hours of continuous 1080p recording at 15 fps from the C200, or about 256 hours at the C210's 2K (2304 x 1296) resolution. Both cameras accept cards up to 512GB.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-high-endurance-512"
+        },
+        {
+          "id": "sandisk-max-endurance"
+        },
+        {
+          "id": "samsung-pro-endurance"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which SD cards don't work in Tapo cameras?",
+          "a": "<b>TP-Link names two.</b> ADATA cards rated A1/V10 and the Samsung EVO Plus 256GB are confirmed incompatible with all Tapo and Kasa cameras in TP-Link's lab testing. Fake-capacity cards also fail to format, so buy from an authorized seller."
+        },
+        {
+          "q": "Do the Tapo C200 and C210 take the same SD card?",
+          "a": "<b>Yes.</b> Both take microSD cards up to 512GB with the same Class 10 / U1 minimum. The C210 records at 2K, so the same card holds about a third less footage than in the 1080p C200."
+        }
+      ],
+      "relatedDevices": [
+        "wyze-cam-v3",
+        "reolink-e1-pro",
+        "eufy-solocam-s340"
+      ],
+      "notes": "EN page added 2026-11-14. One page for C200 + C210 per ADD_A_DEVICE 3b: identical card spec, only resolution differs. Sources: tp-link.com/us/home-networking/cloud-camera/tapo-c200/ (microSD up to 512GB, 1080p, 15 fps) and /tapo-c210/ (microSD up to 512GB, 2304x1296); TP-Link FAQ 3048 tp-link.com/us/support/faq/3048/ (min Class 10/U1/V10, endurance cards recommended, Tapo 8GB to 512GB, ADATA A1/V10 and Samsung EVO Plus 256GB incompatible, recording-hours table: 2MP@15fps 128GB = 384h, 3MP@15fps 128GB = 256h). Do not recommend samsung-evo-plus here.",
+      "metaDescription": "The Tapo C200 and C210 take microSD cards up to 512GB. TP-Link asks for Class 10 / U1 and an endurance card for 24/7 recording. Cards that work and fail.",
+      "imageUrl": "/img/devices/security-cameras/tp-link-tapo-c200.webp"
     },
     {
       "id": "iphone-15",
@@ -11009,6 +11331,7 @@
       "name": "Samsung Galaxy S23 / S23+",
       "category": "Smartphones",
       "slug": "samsung-galaxy-s23",
+      "customTitle": "Does the Galaxy S23 Have an SD Card Slot? No, Use a USB-C Reader",
       "metaDescription": "The Samsung Galaxy S23 has no microSD slot. Samsung dropped expandable storage from the Galaxy S series starting with the S21.",
       "searchTerms": [
         "samsung galaxy s23",
@@ -11062,6 +11385,7 @@
       "name": "Google Pixel 8 / 8 Pro",
       "category": "Smartphones",
       "slug": "google-pixel-8",
+      "customTitle": "Does the Pixel 8 Have an SD Card Slot? No, Use a USB-C Reader",
       "metaDescription": "No Pixel phone has ever had a microSD slot, including the 8 and 8 Pro. Here's why Google leans on cloud backup, and how storage tiers differ.",
       "searchTerms": [
         "google pixel 8",
@@ -11149,10 +11473,65 @@
         }
       ],
       "relatedDevices": [
+        "sony-xperia-10-viii",
         "samsung-galaxy-a55-5g",
         "moto-g-stylus-5g-2025"
       ],
       "imageUrl": "/img/devices/smartphones/sony-xperia-1-vi.webp"
+    },
+    {
+      "id": "sony-xperia-10-viii",
+      "name": "Sony Xperia 10 VIII",
+      "category": "Smartphones",
+      "slug": "sony-xperia-10-viii",
+      "searchTerms": [
+        "xperia 10 viii sd card",
+        "xperia 10 viii microsd max size",
+        "xperia 10 viii 2tb microsd",
+        "best microsd for xperia 10 viii",
+        "xperia 10 viii expandable storage"
+      ],
+      "sdCard": {
+        "type": "microSDXC",
+        "minSpeed": "V30 / A2 (our pick; Sony sets no minimum)",
+        "minWriteSpeed": "30 MB/s",
+        "recommendedCapacity": [
+          "256GB",
+          "512GB"
+        ],
+        "maxCapacity": "2TB (microSDXC)",
+        "minAppPerformance": "A2 (recommended)"
+      },
+      "whySpecs": "The Xperia 10 VIII comes in one storage size, 128GB, and Sony supports microSDXC cards up to 2TB to make up for it. Sony publishes no speed requirement. A V30 card keeps up when the camera saves video straight to the card, and an A2 rating keeps apps and games moved to the card responsive. Set the camera to save to the card, and a 256GB or 512GB card gives you three to five times the built-in space.",
+      "recommendedBrands": [
+        {
+          "id": "sandisk-extreme-microsd"
+        },
+        {
+          "id": "samsung-pro-plus-microsd"
+        },
+        {
+          "id": "kingston-canvas-go-plus"
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the largest microSD card the Xperia 10 VIII supports?",
+          "a": "<b>2TB.</b> Sony's product page states support for microSDXC cards up to 2TB. Format a new card in the phone before saving photos to it."
+        },
+        {
+          "q": "Can I use a microSD card and two SIMs in the Xperia 10 VIII?",
+          "a": "<b>Yes, if one line is an eSIM.</b> The tray takes one nano SIM and one microSD card. Set up the second line as an eSIM to keep dual SIM and the card."
+        }
+      ],
+      "relatedDevices": [
+        "sony-xperia-1-vi",
+        "samsung-galaxy-a55-5g",
+        "google-pixel-8"
+      ],
+      "notes": "EN page added 2026-11-14. Sources: sony.jp/xperia/products/xperia10m8/ ('Xperia 10 VIIIは最大2TBのmicroSDXCカードに対応'; nano SIM + eSIM dual SIM) and Sony help guide helpguide.sony.net/mobile/xperia-10m8/ (XQ-GH54/XQ-GH74: one nano SIM, one microSD, eSIM). 128GB internal only. Sony publishes no card speed class; V30/A2 is our recommendation. 4K frame rates not verified, so not stated. Sony Asia lists some Dual SIM variants with a hybrid tray; FAQ follows the global help guide.",
+      "metaDescription": "The Xperia 10 VIII ships with 128GB only and takes microSDXC cards up to 2TB, per Sony. V30 for video, A2 for apps. Best cards and sizes.",
+      "imageUrl": "/img/devices/smartphones/sony-xperia-10-viii.webp"
     },
     {
       "id": "samsung-galaxy-a55-5g",
@@ -11413,6 +11792,7 @@
       "name": "Spypoint Flex",
       "category": "Trail Cameras",
       "slug": "spypoint-flex",
+      "metaDescription": "Spypoint Flex SD card requirements: Class 10 microSD, 16GB or 32GB. Spypoint lists 512GB support, but current firmware reformats bigger cards to 32GB.",
       "searchTerms": [
         "spypoint flex sd card",
         "spypoint flex memory card",
@@ -11494,8 +11874,8 @@
     }
   ],
   "metadata": {
-    "generated": "2026-11-11T01:31:10.621Z",
-    "totalDevices": 231,
+    "generated": "2026-11-14T09:30:55.404Z",
+    "totalDevices": 236,
     "categories": [
       "3D Printers & Fabrication",
       "Action Cameras",

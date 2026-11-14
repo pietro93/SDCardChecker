@@ -35,6 +35,14 @@ Owner tags: **(P)** Pietro, needs account access or a business decision. **(D)**
 - Niche pages convert better: Miyoo Mini Plus 2.6%, Retroid Pocket 4 Pro 1.2%, Raspberry Pi 5 1.1%, pro cameras about 1%.
 - Mass-market pages (Steam Deck, DJI Mini 4 Pro, Osmo Pocket 3) get high impressions and near-zero clicks.
 
+**Update, November 14, 2026 (GSC + Bing pulls pasted by Pietro):**
+
+- Bing, Oct 15 to Nov 11: 954 clicks, 37.1K impressions, 2.57% CTR, about 1.3K impressions/day. Bing CTR is several times Google's.
+- Google top queries: handheld pages earn the clicks. AYN Thor (all variants, about 1,800 impressions, 43 clicks), Retroid Pocket 6 (about 390, 37), Analogue Pocket (157, 8), card readers ("best sd card reader" 535, 6).
+- Zero-click clusters with the most impressions: DJI Osmo Pocket 3 (about 1,700 across variants, 7 clicks), Osmo Action 6 (about 1,100, 3), Action 4 (about 900, 1), Pocket 4/4P (about 900, 4), Mini 5 Pro (about 400, 0), Fujifilm X-T50/X-T5/X-M5 (about 560, 0), Canon G7 X III (about 325, 0), Galaxy S23 / Pixel 8 slot queries (about 440, 0).
+- Pattern: the clicked handheld pages have a `customTitle` with the key spec ("Best SD Card for AYN Thor: Up to 1TB, A2/V30 Speed"). The zero-click DJI pages used the generic template title, and their meta descriptions gave the whole answer (spec, capacity and recording time), so the snippet satisfied the search.
+- **CTR test started November 14:** spec-style `customTitle` plus a meta that ends on something only the page has, on `dji-osmo-pocket-3`, `dji-osmo-action-4`, `dji-osmo-action-6`, `dji-osmo-pocket-4`, `dji-osmo-pocket-4p`, `dji-mini-5-pro`, `gopro-hero-13`; slot-question titles on `samsung-galaxy-s23`, `google-pixel-8`; new metas on `nintendo-3ds-xl`, `spypoint-flex`. Camera pages (`fujifilm-xt50`, `fujifilm-xt5`, `fujifilm-xm5`, `canon-g7x-mark-iii`, `canon-eos-r10`) got a content refresh the same day. Compare clicks and CTR for these pages in GSC, Nov 17 to Dec 8 against Oct 20 to Nov 10. Black Friday lifts all traffic in the second window, so judge by CTR change relative to untreated action cam and drone pages over the same dates.
+
 ### Audit findings, ranked by money at stake
 
 | # | Finding | Evidence | Impact |
@@ -85,7 +93,7 @@ Owner tags: **(P)** Pietro, needs account access or a business decision. **(D)**
 - [ ] **(D)** Build a central link builder `scripts/lib/affiliate.js`, config in `data/affiliate-config.json`. Route all generators and data URLs through it. Strip UTMs from Amazon links (F3, F7).
 - [ ] **(D)** Per-locale store + tag from config. DE/FR/IT go to amazon.de/.fr/.it once tags exist. Until then they keep amazon.com (no worse than today) (F1).
 - [ ] **(D)** Per-section tracking IDs from config (F1, F2).
-- [x] **(D)** Remove or fix the fake `offers` in Product schema (F5). *Done Oct 12: `offers` removed from all three generators (device, car, reader pages); Product keeps name, image, description and brand. 924 pages → 0. See `HANDOFF_SEO_Q4_REFRESH.md`.*
+- [x] **(D)** Remove or fix the fake `offers` in Product schema (F5). *Done Oct 12: `offers` removed from all three generators (device, car, reader pages); Product keeps name, image, description and brand. 924 pages → 0. See `HANDOFF_SEO_Q4_REFRESH.md`.* *Follow-up Nov 14: GSC flagged 965 invalid Product items ("Either 'offers', 'review' or 'aggregateRating' should be specified"), because Product without an offer isn't valid. All Product schema is now removed (device, card, car and reader pages; templates and generators). Re-add only with real prices from the Creators API. Click "Validate fix" in GSC after deploy.*
 - [ ] **(D)** Add a build check that fails if any Amazon link in `dist/` lacks a tag or uses a store that doesn't match its locale.
 
 **Done when:** GA4 shows `affiliate_click` events by page type. Zero "(Mapped)" strings in `dist/`. No Product schema with invented prices. Changing a tag means editing one config file.
@@ -124,9 +132,9 @@ Still open, in this order:
 
 - [ ] **(D)** Link the new Comtec pages to and from the older ZDR035 / ZDR037 pages in `related devices`. Make sure the ZDR-251D and ZDR-101S copy says the box has no card.
 - [x] **(D)** EN: Ricoh GR IV. Done 2026-11-11: `/categories/cameras/ricoh-gr-iv/`, linked from the X100VI page. Reuses the existing hero image. Ricoh doesn't say UHS-II cards fail, only that the slot is UHS-I, so the copy says UHS-II runs at UHS-I speed. (The JA page says UHS-II is unusable; worth correcting.)
-- [ ] **(D)** EN: Sony Xperia 10 VIII (microSD up to 2TB, sold in the UK and parts of Europe). EN only has Xperia 1 VI.
-- [ ] **(D)** EN: Fujifilm instax mini Evo, Fujifilm X half, OM SYSTEM TG-7. Reuse the JA spec research, but check specs against the manufacturers' pages first.
-- [ ] **(D)** TP-Link Tapo cameras, EN and JA. EN has only 3 security cameras (Wyze Cam v3, Eufy SoloCam S340, Reolink E1 Pro), and Tapo sells well in Japan.
+- [x] **(D)** EN: Sony Xperia 10 VIII (microSD up to 2TB, sold in the UK and parts of Europe). EN only has Xperia 1 VI. Done 2026-11-14: `/categories/smartphones/sony-xperia-10-viii/`, linked both ways with Xperia 1 VI. 2TB confirmed on sony.jp; Sony gives no speed class, so V30/A2 is labeled as our pick.
+- [x] **(D)** EN: Fujifilm instax mini Evo, Fujifilm X half, OM SYSTEM TG-7. Reuse the JA spec research, but check specs against the manufacturers' pages first. Done 2026-11-14: all three under `/categories/cameras/`, reusing the JA hero images. Official pages match the JA research (mini Evo microSD/microSDHC only; X half SD UHS-I to 2TB, 50 Mbps max; TG-7 U3 for 4K/HS, no internal memory).
+- [ ] **(D)** TP-Link Tapo cameras, EN and JA. EN has only 3 security cameras (Wyze Cam v3, Eufy SoloCam S340, Reolink E1 Pro), and Tapo sells well in Japan. EN done 2026-11-14: one page for C200 + C210 (`/categories/security-cameras/tp-link-tapo-c200/`, same card spec: microSD to 512GB, Class 10/U1/V10, per TP-Link FAQ 3048), with a new hero image from tp-link.com. JA still open.
 - [ ] **(P)** Decide on car navigation (Carrozzeria, Panasonic Strada, Kenwood 彩速ナビ). "ナビ SDカード" gets a lot of searches, but much of it is about the maker's own map-update cards, which doesn't fit the format. Look at the GSC/keyword split before building anything.
 
 Walkman NW-A306 and NW-ZX707 are already in EN. Check whether newer models have replaced them before adding JA versions.
