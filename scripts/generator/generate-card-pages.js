@@ -14,7 +14,6 @@ const {
   generateBreadcrumbSchema,
   loadSDCardEnrichment,
   getCategorySlug,
-  cardBrand,
 } = require("./helpers");
 const { lastUpdatedHTML } = require("./freshness");
 
@@ -136,21 +135,6 @@ function generateRecommendedDevicesBlock(devices) {
     </section>`;
 }
 
-function generateProductSchema(card, cardUrl, heroImageAbs) {
-  return JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: card.name,
-    description: card.richDescription || card.pros,
-    image: heroImageAbs,
-    url: cardUrl,
-    brand: {
-      "@type": "Brand",
-      name: cardBrand(card),
-    },
-  });
-}
-
 function generateCardPage(card, template, devicesForCard) {
   const cardUrl = `${BASE_URL}/cards/${card.id}/`;
   const heroImage = heroImagePath(card.id) || card.imageUrl || getCardImageFallback(card);
@@ -196,7 +180,6 @@ function generateCardPage(card, template, devicesForCard) {
     { name: "SD Cards", url: "/cards/" },
     { name: card.name, url: `/cards/${card.id}/` },
   ]);
-  const productSchema = generateProductSchema(card, cardUrl, heroImageAbs);
 
   return template
     .replace(/{{CARD_TITLE}}/g, title)
@@ -218,7 +201,6 @@ function generateCardPage(card, template, devicesForCard) {
     .replace(/{{RECOMMENDED_DEVICES_BLOCK}}/g, generateRecommendedDevicesBlock(devicesForCard))
     .replace(/{{LAST_UPDATED}}/g, lastUpdatedHTML("en", "text-sm text-slate-500 mb-3"))
     .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
-    .replace(/{{PRODUCT_SCHEMA}}/g, productSchema)
     .replace(/{{SIDEBAR}}/g, generateSidebar())
     .replace(/{{HEADER}}/g, generateHeader())
     .replace(/{{FOOTER}}/g, generateFooter());

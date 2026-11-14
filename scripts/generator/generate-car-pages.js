@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { generateHeader, generateFooter, generateSidebar } = require('../../src/templates/components.js');
-const { writeFile, getCardImageFallback, getCarImageFallback, generateFAQHTML, generateFAQSchema, generateBreadcrumbSchema, cardBrand } = require('./helpers');
+const { writeFile, getCardImageFallback, getCarImageFallback, generateFAQHTML, generateFAQSchema, generateBreadcrumbSchema } = require('./helpers');
 
 const BASE_URL = 'https://sdcardchecker.com';
 
@@ -143,17 +143,6 @@ function generateCarPages(distPath) {
         { name: vehicle.carModel, url: `/cars/${vehicle.slug}/` }
      ]);
      const faqSchema = generateFAQSchema(carFaqs.length > 0 ? carFaqs : [{ q: `What SD card do I need for my ${vehicle.carModel}?`, a: vehicle.seoDescription || '' }]);
-     const productSchema = topCard ? JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": topCard.name,
-        "image": BASE_URL + (topCard.imageUrl || getCardImageFallback(topCard)),
-        "description": topCard.pros,
-        "brand": {
-          "@type": "Brand",
-          "name": cardBrand(topCard)
-        }
-     }) : '{}';
 
      // 4. Final Template Replacement (Note the NO semicolons between .replace calls)
      let html = template
@@ -181,8 +170,7 @@ function generateCarPages(distPath) {
        .replace(/{{COMPATIBILITY_HTML}}/g, compatHtml)
        .replace(/{{RELATED_LINKS}}/g, relatedVehiclesHtml)
        .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
-       .replace(/{{FAQ_SCHEMA}}/g, faqSchema)
-       .replace(/{{PRODUCT_SCHEMA}}/g, productSchema);
+       .replace(/{{FAQ_SCHEMA}}/g, faqSchema);
 
     const outDir = path.join(distPath, 'cars', vehicle.slug);
     writeFile(path.join(outDir, 'index.html'), html);

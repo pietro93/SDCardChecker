@@ -6,7 +6,7 @@
 
 const path = require("path");
 const fs = require("fs");
-const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateProductSchema, generateHreflangTags, truncateAtWord, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, jaMaxCapacityPhrase, loadSDCardData, loadSDCardEnrichment, mergeSDCardEnrichment, getCategorySlug, getCategoryLabel, getCategoryIconName, t } = require("./helpers");
+const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateHreflangTags, truncateAtWord, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, jaMaxCapacityPhrase, loadSDCardData, loadSDCardEnrichment, mergeSDCardEnrichment, getCategorySlug, getCategoryLabel, getCategoryIconName, t } = require("./helpers");
 const { generateFAQs, mergeFAQs } = require("./generateFAQs");
 const { generateAmazonBadgesSection } = require("./amazon-badges-generator");
 const { generatePromotedCardSection } = require("./promotion-generator");
@@ -665,7 +665,6 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
 
     const relatedDevicesSection = generateRelatedDevices(device, allDevices, locale);
     const faqSchema = generateFAQSchema(faqsWithFirstQuestion);
-    const productSchema = generateProductSchema(device.recommendedBrands, sdcardsMap);
     // Amazon PA-API badges are English/US-marketplace only for now (see JAPANESE_LOCALIZATION_MASTER.md)
     const amazonBadgesSection = locale === "en" ? generateAmazonBadgesSection() : "";
 
@@ -784,7 +783,6 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{FAQ_SCHEMA}}/g, faqSchema)
         .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
         .replace(/{{BRAND_BREADCRUMB_HTML}}/g, brandBreadcrumbHTML)
-        .replace(/{{PRODUCT_SCHEMA}}/g, productSchema)
         .replace(/{{SIDEBAR}}/g, components.generateSidebar(locale))
         .replace(/{{HEADER}}/g, components.generateHeader(locale))
         .replace(/{{FOOTER}}/g, components.generateFooter(locale))

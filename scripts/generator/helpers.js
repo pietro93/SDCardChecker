@@ -657,53 +657,6 @@ function generateBreadcrumbSchema(breadcrumbs, baseUrl = "https://sdcardchecker.
 }
 
 /**
- * Brand name for a card's Product schema: the explicit `brand` field when the card has one,
- * else the first word of its name (expanded for two-word brands).
- */
-const TWO_WORD_BRANDS = { Silicon: "Silicon Power", Amazon: "Amazon Basics" };
-function cardBrand(card) {
-  if (card.brand) return card.brand;
-  const first = card.name.split(" ")[0];
-  return TWO_WORD_BRANDS[first] || first;
-}
-
-/**
- * Generate Product schema for SD card recommendations.
- * No `offers`: the site sells nothing and has no live prices, so an Offer would invent a
- * price and stock status (against Google's structured data policies).
- */
-function generateProductSchema(brandReferences, sdcardsMap, baseUrl = "https://sdcardchecker.com") {
-  const products = brandReferences
-    .slice(0, 3) // Top 3 recommendations
-    .map((ref) => {
-      const card = sdcardsMap[ref.id];
-      if (!card) return null;
-
-      return {
-        "@type": "Product",
-        "name": card.name,
-        "image": baseUrl + (card.imageUrl || getCardImageFallback(card)),
-        "description": card.pros,
-        "brand": {
-          "@type": "Brand",
-          "name": cardBrand(card)
-        }
-      };
-    })
-    .filter(p => p !== null);
-  
-  return JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": products.map((product, index) => ({
-      "@type": "ListItem",
-      "position": index + 1,
-      "item": product
-    }))
-  });
-}
-
-/**
  * Generate specs HTML table
  */
 function generateSpecsHTML(device, isJapanese = false) {
@@ -1047,7 +1000,6 @@ function mergeSDCardEnrichment(cardMap, enrichmentData) {
 }
 
 module.exports = {
-  cardBrand,
   locales,
   t,
   loadStrings,
@@ -1064,7 +1016,6 @@ module.exports = {
   copyDir,
   generateFAQSchema,
   generateBreadcrumbSchema,
-  generateProductSchema,
   truncateAtWord,
   getDeviceImageFallback,
   getCardImageFallback,
