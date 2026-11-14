@@ -34,6 +34,7 @@ const { generateCarsIndex } = require("./generate-cars-index");
 const { generateCardPages } = require("./generate-card-pages");
 const { generateCardsIndex } = require("./generate-cards-index");
 const { generateComparePage } = require("./generate-compare");
+const { generateDealsPages } = require("./generate-deals-pages");
 
 // Paths
 const dataPath = path.join(__dirname, "../../data");
@@ -220,6 +221,11 @@ async function build() {
     console.log();
 
     generateComparePage(distPath);
+    console.log();
+
+    // Deals pages (EN + locales with a data/deals-{locale}.json); after card pages so
+    // their "Card details" links only point at built pages
+    generateDealsPages(distPath, devicesByLocale);
     console.log();
 
     await generateRedirects(allDevices, distPath);

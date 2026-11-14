@@ -247,6 +247,7 @@ function sourceFilesFor(locale, rest, ctx) {
   if (rest.startsWith("/cards/")) return ["data/sdcards.json", "data/sdcard-enrichment.json"];
   if (rest.startsWith("/cars/")) return ["data/cars-navigation.json"];
   if (rest.startsWith("/readers/")) return ["data/sdCardReaders.json"];
+  if (rest.startsWith("/deals/")) return [`data/deals${sfx}.json`, "src/templates/deals.html", "scripts/generator/generate-deals-pages.js"];
   if (rest === "/compare/") return ["src/templates/compare.html", "data/sdcards.json"];
   if (rest.startsWith("/tools/")) {
     return locale === "en"

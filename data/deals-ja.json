@@ -1,0 +1,332 @@
+{
+  "_comment": "/ja/deals/ ページの文言（scripts/generator/generate-deals-pages.js が生成）。おすすめカードはここに書かず、各カテゴリのデバイスの recommendedBrands から自動で選ぶ。tiers の1GB単価は目安であり実売価格ではない。セールごとに season と tiers を見直すこと。「○%オフ」などの割引表記は書かない。",
+  "season": "ブラックフライデー",
+  "priceGuideUpdated": "2026年11月14日",
+  "ui": {
+    "home": "ホーム",
+    "deals": "セールガイド",
+    "dealsHubName": "SDカードのセールガイド",
+    "updated": "{date}更新",
+    "priceTableHeading": "セールで狙いたい1GBあたりの価格",
+    "priceTableNote": "セール価格を見極めるための目安です（{date}時点）。実売価格ではありません。最終的にはAmazonの商品ページに表示される価格で判断してください。",
+    "colCardType": "カードの種類",
+    "colExamples": "代表的なカード",
+    "colRange": "お得な1GB単価",
+    "colNotes": "ポイント",
+    "picksHeading": "買うべきカード",
+    "picksIntro": "当サイトの{category}ページで推奨されることが多いカードから選んでいます。",
+    "tierLabels": {
+      "budget": "コスパ重視",
+      "recommended": "迷ったらこれ",
+      "professional": "プロ向け"
+    },
+    "recommendedOn": "{category}{total}機種中{n}機種で推奨",
+    "checkPrice": "Amazonで価格を見る",
+    "cardDetails": "詳細",
+    "capacityHeading": "選ぶべき容量",
+    "capacityData": "当サイトの{category}ページで推奨の多い容量：{list}",
+    "capacityItem": "{size}（{n}機種）",
+    "listSeparator": "、",
+    "avoidHeading": "避けたいカード",
+    "fakeGuideLink": "偽物SDカードの見分け方",
+    "devicesHeading": "機種別のおすすめカード",
+    "seeAll": "{category}をすべて見る",
+    "otherDealsHeading": "ほかのセールガイド",
+    "faqHeading": "よくある質問",
+    "hubCategoriesHeading": "機器別のセールガイド",
+    "categoryCallout": "セールで買う前に、1GBあたりの価格の目安をチェック："
+  },
+  "cardNotes": {
+    "samsung-p9-express-microsd": "Switch 2のゲーム保存に使えるmicroSD Express。読み込みは最大800MB/s。",
+    "sandisk-microsd-express-switch-2": "任天堂のライセンスを受けたSwitch 2用のmicroSD Express。読み込みは最大880MB/s。"
+  },
+  "tiers": {
+    "microsd-value": {
+      "label": "microSD（低価格なA1/A2、UHS-I）",
+      "exampleCards": ["samsung-evo-select-microsd", "sandisk-ultra-microsd", "amazon-basics-microsd"],
+      "range": "9〜15円",
+      "note": "ゲームの保存や1080p程度のカメラ向け。4Kで撮るならV30またはU3の表記を確認してください。"
+    },
+    "microsd-v30": {
+      "label": "microSD（V30・A2、UHS-I）",
+      "exampleCards": ["sandisk-extreme-microsd", "kingston-canvas-go-plus", "samsung-pro-plus-microsd"],
+      "range": "12〜20円",
+      "note": "ドローン、アクションカメラ、携帯ゲーム機の定番。"
+    },
+    "microsd-express": {
+      "label": "microSD Express",
+      "exampleCards": ["samsung-p9-express-microsd", "sandisk-microsd-express-switch-2"],
+      "range": "25〜45円",
+      "note": "Switch 2でゲームを保存するには必須。ほかの機器ではUHS-I相当の速度で動きます。"
+    },
+    "microsd-uhs2": {
+      "label": "microSD（UHS-II・V60）",
+      "exampleCards": ["sandisk-extreme-pro-microsd-v60", "lexar-professional-1000x-microsd"],
+      "range": "30〜60円",
+      "note": "速くなるのはUHS-II対応のスロットやリーダーだけ。UHS-I機器ではV30カードと同じ速度です。"
+    },
+    "sd-v30": {
+      "label": "SD（V30、UHS-I）",
+      "exampleCards": ["sandisk-extreme-sd-uhs1", "sandisk-extreme-pro-sd-uhs1", "lexar-professional-633x-sd"],
+      "range": "15〜30円",
+      "note": "Canon EOS R50やFujifilm X100VなどUHS-Iのカメラなら性能を出し切れます。"
+    },
+    "sd-v60": {
+      "label": "SD（UHS-II・V60）",
+      "exampleCards": ["lexar-professional-1000x-sd", "lexar-professional-silver-sd"],
+      "range": "40〜75円",
+      "note": "UHS-IIのカメラで連写後の書き込み待ちが短くなり、たいていの4K撮影に対応します。"
+    },
+    "sd-v90": {
+      "label": "SD（UHS-II・V90）",
+      "exampleCards": ["sandisk-extreme-pro-sd-uhs2", "sony-tough-g-v90"],
+      "range": "90〜180円",
+      "note": "高ビットレートの4K All-Iなど、カメラがV90を指定する動画モード向け。"
+    },
+    "cfexpress-b": {
+      "label": "CFexpress Type B",
+      "exampleCards": ["sandisk-extreme-pro-cfexpress", "prograde-digital-cfexpress-type-b-gold"],
+      "range": "60〜135円",
+      "note": "Canon EOS R5やNikon Z8など、Type Bスロットのあるカメラ専用。"
+    },
+    "cfexpress-a": {
+      "label": "CFexpress Type A",
+      "exampleCards": ["sony-tough-cfexpress-type-a", "sandisk-extreme-pro-cfexpress-type-a"],
+      "range": "150〜300円",
+      "note": "α7 IV、FX3、α1などType Aスロットのあるソニー機専用。Type Bは物理的に入りません。"
+    }
+  },
+  "hub": {
+    "title": "ブラックフライデーのSDカード選び｜1GB単価の目安",
+    "metaDescription": "セールでSDカードを買う前に。microSD、microSD Express、SD、CFexpressの1GBあたりの価格の目安と、Switch・ドローン・カメラ別のおすすめカードをまとめました。",
+    "h1": "SDカードのセールは1GBあたりの価格で判断",
+    "intro": [
+      "セール価格がお得かどうかは、1GBあたりの価格がふだんより安いかで決まります。価格を容量（GB）で割るだけです。512GBで6,000円なら、1GBあたり約11.7円です。",
+      "Amazonのブラックフライデーは例年11月下旬に始まります。セール中も価格は変わるので、購入前にもう一度1GBあたりの価格を確かめてください。"
+    ],
+    "tiers": ["microsd-value", "microsd-v30", "microsd-express", "microsd-uhs2", "sd-v30", "sd-v60", "sd-v90", "cfexpress-b", "cfexpress-a"],
+    "rulesHeading": "セール品を見極める5つのポイント",
+    "rules": [
+      "<b>同じ容量どうしで比べる。</b>1GB単価は容量が大きいほど下がりますが、1.5TBや2TBといった最新の大容量モデルは1TBより割高になりがちです。",
+      "<b>型番まで確認する。</b>SanDisk UltraはU1、SanDisk ExtremeはV30です。商品名が似ているので、安いUltraをExtremeのセールと取り違えないようにしましょう。",
+      "<b>「最大読み込み速度」に惑わされない。</b>「最大190MB/s」はピーク時の読み込み速度です。動画撮影に必要なのは、最低書き込み速度を示すスピードクラス（U3、V30、V60、V90）です。",
+      "<b>スロットが対応しない速度にお金を払わない。</b>UHS-IIカードもUHS-Iスロットでは、UHS-Iの速度（最大104MB/s）でしか動きません。",
+      "<b>販売元と「国内正規品」を確認する。</b>「出荷元・販売元：Amazon.co.jp」かメーカー公式ストアを選びましょう。並行輸入品は安くても、国内のメーカー保証が受けられないことがあります。"
+    ],
+    "avoidHeading": "セールで一番のリスクは偽物カード",
+    "avoid": [
+      "偽物カードは実際より大きな容量を装っています。本当の容量を超えると、警告なしに古いファイルから上書きされます。",
+      "有名ブランドの256GBより安い、無名ブランドの1TBや2TBのmicroSDは偽物です。",
+      "撮り直しのきかない撮影の前に、H2testw（Windows）やF3（Mac・Linux）で新しいカードを必ずテストしてください。"
+    ],
+    "faq": [
+      {
+        "q": "ブラックフライデーはSDカードの買い時ですか？",
+        "a": "<b>1GBあたりの価格が目安の範囲内なら買い時です。</b>参考価格に取り消し線が引かれているだけではお得とは限りません。同じ容量どうしで1GB単価を比べましょう。"
+      },
+      {
+        "q": "SDカードの1GBあたりの価格はどう計算しますか？",
+        "a": "<b>価格を容量（GB）で割ります。</b>1TBで12,000円なら1GBあたり12円です。カードの表記では1TBを1,000GBとして数えます。"
+      },
+      {
+        "q": "Amazonで安すぎる1TBや2TBのmicroSDは偽物ですか？",
+        "a": "<b>有名ブランドの256GBより安い無名ブランド品は偽物です。</b>SanDisk、Samsung、Lexar、Kingstonのカードを、Amazon.co.jpかメーカー公式ストアから買い、届いたらH2testwかF3でテストしましょう。"
+      },
+      {
+        "q": "セールでは大容量と高速、どちらを選ぶべきですか？",
+        "a": "<b>ゲーム機、ドローン、アクションカメラなら大容量です。</b>これらのスロットはUHS-Iで、速度の上限は104MB/sです。UHS-IIスロットのカメラは例外で、まずカメラが動画モードに求めるスピードクラスを満たすカードを選びます。"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "gaming-handhelds",
+      "category": "gaming-handhelds",
+      "deviceTypeExclude": "Express",
+      "cardExclude": "express",
+      "tiers": ["microsd-value", "microsd-v30", "microsd-uhs2"],
+      "hubTitle": "Switch・Steam Deck・携帯ゲーム機",
+      "hubBlurb": "ゲーム用はA2対応のmicroSD。セールでは速度より容量を優先しましょう。",
+      "title": "Switch・Steam DeckのmicroSDセール｜1GB単価の目安",
+      "metaDescription": "Switch、Steam Deck、ROG Ally、Legion Go向けmicroSDのセール攻略。A2カードのお得な1GB単価、選ぶべき容量、偽物を避けるコツを解説します。",
+      "h1": "携帯ゲーム機向けmicroSDのセールガイド",
+      "intro": [
+        "Steam Deck、Nintendo Switch、ROG Ally、Legion Goは、ゲームデータをmicroSDから細かいランダム読み込みで読み出します。そのため、有名ブランドのA2対応UHS-Iカードならほとんどの携帯ゲーム機で十分です。セールでは速度より容量にお金をかけましょう。512GBか1TBあれば、多くのゲームをまとめて入れておけます。",
+        "Switch 2用ならmicroSD Expressが必要です。<a href=\"/ja/deals/switch-2-microsd-express/\">Switch 2向けのセールガイド</a>をご覧ください。"
+      ],
+      "capacity": [
+        "<b>Steam Deck、ROG Ally、Legion Go：</b>512GBか1TB。大作PCゲームは1本50GB〜150GBあります。",
+        "<b>Nintendo Switch、有機ELモデル、Switch Lite：</b>256GBか512GB。Switchのゲームはほとんどが20GB未満です。",
+        "<b>レトロゲーム機（Anbernic、Miyoo、R36S）：</b>カートリッジ世代のROMなら64GB〜128GBで足ります。ディスク系のゲームを遊ぶRetroidなどは、1本1GB〜8GBあるので256GB以上を選びましょう。"
+      ],
+      "avoid": [
+        "Steam Deck、Switch、初代Legion Go向けのUHS-IIやV60カード。スロットがUHS-Iなので、使われない速度にお金を払うことになります。",
+        "Switch 2のゲーム保存用の通常のmicroSD。Switch 2はゲームの保存にmicroSD Expressしか使えません。",
+        "A1やA2の表記がないClass 10やU1のカード。ゲームの読み込み速度はA1・A2が示すランダム読み込み性能で決まります。",
+        "有名ブランドの256GBより安い、無名ブランドの1TBや2TBのカード。"
+      ],
+      "featuredDevices": ["steam-deck", "nintendo-switch-oled", "nintendo-switch", "nintendo-switch-lite", "asus-rog-ally-x", "asus-rog-ally", "lenovo-legion-go", "lenovo-legion-go-s", "msi-claw", "retroid-pocket-5", "anbernic-rg35xx-plus-h", "miyoo-mini-plus", "r36s"],
+      "faq": [
+        {
+          "q": "1TBのmicroSDはセールでいくらなら買いですか？",
+          "a": "<b>SanDisk ExtremeやSamsung PRO PlusなどV30・A2のカードなら、約12,000〜20,000円</b>（1GBあたり12〜20円）が目安です。Samsung EVO Plusのような低価格なA2カードなら、これより安く買えます。"
+        },
+        {
+          "q": "ROG AllyにUHS-IIのmicroSDは必要ですか？",
+          "a": "<b>必要ありません。</b>ROG AllyのスロットはUHS-IIに対応していてゲームの読み込みも少し速くなりますが、UHS-IIのmicroSDは1GBあたりの価格がUHS-Iの2〜3倍です。同じ予算なら1TBのA2カードのほうがお得です。"
+        },
+        {
+          "q": "SwitchのmicroSDはSteam Deckでも使えますか？",
+          "a": "<b>使えます。</b>どちらもUHS-IのmicroSDなので、同じA2カードが使えます。ただし機器ごとにデータの形式が違うため、差し替えたら新しい機器でフォーマットしてください。"
+        }
+      ]
+    },
+    {
+      "slug": "switch-2-microsd-express",
+      "category": "gaming-handhelds",
+      "deviceTypeMatch": "Express",
+      "cardMatch": "express",
+      "tiers": ["microsd-express", "microsd-v30"],
+      "hubTitle": "Switch 2・microSD Express",
+      "hubBlurb": "Switch 2のゲーム保存はmicroSD Expressのみ。お得な価格の目安を紹介します。",
+      "title": "Switch 2用microSD Expressセール｜1GB単価の目安",
+      "metaDescription": "Switch 2のゲーム保存に使えるのはmicroSD Expressだけ。セールで狙いたい1GB単価、選ぶべき容量、買ってはいけないカードをまとめました。",
+      "h1": "Switch 2用microSD Expressのセールガイド",
+      "intro": [
+        "Nintendo Switch 2でゲームを保存できるのはmicroSD Expressカードだけです。通常のmicroSDはUHS-IIの高速カードでもゲームの保存には使えないので、安いUHS-Iカードのセールは対象外です。",
+        "microSD ExpressはV30・A2カードに比べて1GBあたり約2倍の価格なので、買うならセールがおすすめです。カード本体と商品画像にmicroSD Expressのロゴがあるか確認しましょう。"
+      ],
+      "capacity": [
+        "<b>256GB：</b>Switch 2本体の256GBと合わせて容量が倍になります。",
+        "<b>512GB：</b>ゲームをほとんどダウンロード版で買う人向け。",
+        "<b>1TB以上：</b>Expressカードでは1GB単価が上がりがちです。512GBでも足りなくなってから検討しましょう。"
+      ],
+      "avoid": [
+        "「Switch対応」と書かれていても、microSD Expressのロゴがないカード。SanDiskのゼルダ、マリオ、ポケモンのデザインカードは初代Switch向けのUHS-Iカードです。",
+        "UHS-IIのmicroSD。高速ですが、Switch 2のゲーム保存には使えません。",
+        "カードにロゴのない無名ブランドの「Express」商品。新しい規格なので、名前だけ借りた偽物が出回っています。"
+      ],
+      "featuredDevices": ["nintendo-switch-2", "nintendo-switch-oled", "nintendo-switch"],
+      "faq": [
+        {
+          "q": "Switch 2用のmicroSD Expressはいくらなら買いですか？",
+          "a": "<b>セールなら1GBあたり25〜45円が目安</b>で、256GBなら約6,500〜11,500円です。512GBの1GB単価も確認しましょう。Expressカードは大容量ほど安いとは限りません。"
+        },
+        {
+          "q": "Switch 2で通常のmicroSDは使えますか？",
+          "a": "<b>ゲームの保存には使えません。</b>Switch 2がゲームを保存できるのはmicroSD Expressだけです。古いカードは、初代Switchの画面写真や動画を本体にコピーするときにだけ使えます。"
+        },
+        {
+          "q": "Switch 2用のmicroSD Expressは初代Switchでも使えますか？",
+          "a": "<b>使えます。速度はUHS-I相当です。</b>ExpressカードはUHS-Iスロットと互換性があるので、1枚を両方の本体で使い回せます。"
+        }
+      ]
+    },
+    {
+      "slug": "drones",
+      "category": "drones",
+      "tiers": ["microsd-v30", "microsd-uhs2", "microsd-value"],
+      "hubTitle": "ドローン",
+      "hubBlurb": "DJI Mini・Air・AvataならV30のmicroSDを128GBか256GBで。",
+      "title": "ドローン用microSDセール｜DJI向け1GB単価の目安",
+      "metaDescription": "DJI Mini、Air、Mavic、Avata向けmicroSDのセール攻略。V30カードを128GBか256GBで選ぶ理由、お得な1GB単価、避けたいカードを解説します。",
+      "h1": "ドローン用microSDのセールガイド",
+      "intro": [
+        "DJIのMini、Air、Avataシリーズをはじめ、ほとんどのドローンはUHS-IのmicroSDに記録し、4K撮影にはV30かU3のカードが必要です。SanDisk、Lexar、Kingston、SamsungのV30カードを128GBか256GBで選べば、ほぼすべての機種に対応できます。セールではこの2つの容量を狙いましょう。"
+      ],
+      "capacity": [
+        "<b>128GB：</b>100Mbpsの4Kで約2.5時間。DJI Miniのバッテリー3本分の飛行より長く撮れます。",
+        "<b>256GB：</b>DJI Mini 4 ProやAir 3Sなど150Mbps以上で記録する機種や、PCを持たない旅行向け。",
+        "<b>512GB：</b>割に合わないことが多いです。128GBをもう1枚買うほうが安く、1枚が壊れたときのリスクも分散できます。"
+      ],
+      "avoid": [
+        "V30やU3の表記がないカード。U1のカードでは4K撮影中にコマ落ちしたり、録画が止まったりします。",
+        "UHS-Iのドローン向けにUHS-IIの価格を払うこと。ドローン側の書き込みはUHS-Iの速度で、速くなるのはUHS-IIリーダーでの取り込みだけです。",
+        "DJI Neo用のカード。Neoは22GBの内蔵ストレージのみで、カードスロットがありません。",
+        "無名ブランドの大容量カード。偽物は本当の容量を超えると古い映像を上書きし、着陸するまで気づけません。"
+      ],
+      "featuredDevices": ["dji-mini-4-pro", "dji-mini-5-pro", "dji-mini-4k", "dji-mini-3", "dji-air-3s", "dji-air-3", "dji-mavic-3", "dji-avata-2", "hoverair-x1-pro", "potensic-atom", "holy-stone-hs720"],
+      "faq": [
+        {
+          "q": "DJIドローン用の256GBのmicroSDはいくらなら買いですか？",
+          "a": "<b>SanDisk ExtremeやKingston Canvas Go! PlusなどのV30カードなら約3,000〜5,000円</b>（1GBあたり12〜20円）が目安です。"
+        },
+        {
+          "q": "DJIのドローンにV60のmicroSDは必要ですか？",
+          "a": "<b>ほとんどの機種では不要です。</b>DJIはMiniやAirシリーズにUHS-Iスピードクラス3（U3）以上を指定しています。UHS-IのドローンではV60カードでも書き込みは速くならず、UHS-IIリーダーで取り込むときに時間が短くなるだけです。"
+        }
+      ]
+    },
+    {
+      "slug": "action-cameras",
+      "category": "action-cameras",
+      "tiers": ["microsd-v30", "microsd-uhs2", "microsd-value"],
+      "hubTitle": "GoPro・アクションカメラ",
+      "hubBlurb": "GoPro、DJI Osmo、Insta360にはV30のmicroSD。容量は256GBが基本です。",
+      "title": "GoPro・アクションカメラのmicroSDセール｜1GB単価",
+      "metaDescription": "GoPro、DJI Osmo Action、Osmo Pocket、Insta360向けmicroSDのセール攻略。V30カードのお得な1GB単価、選ぶべき容量、避けたいカードを解説します。",
+      "h1": "アクションカメラ用microSDのセールガイド",
+      "intro": [
+        "GoPro、DJI Osmo Action、Osmo Pocket、Insta360はUHS-IのmicroSDに記録し、最高画質の4Kや5KにはV30のカードが必要です。ほとんどの機種で、セールで買うなら256GBが基本です。"
+      ],
+      "capacity": [
+        "<b>256GB：</b>GoPro HERO13の最大ビットレート120Mbpsで約4.5時間撮れます。",
+        "<b>512GBか1TB：</b>Insta360 X4やX5などの360度カメラ向け。8Kのファイルはカードをすぐに埋めます。",
+        "<b>128GB：</b>1080pや4K30の短いクリップ中心なら十分です。"
+      ],
+      "avoid": [
+        "U1やClass 10の表記しかないカード。高ビットレートの撮影中に録画が止まることがあります。",
+        "UHS-IIカード。アクションカメラのスロットはUHS-Iなので、UHS-Iの価格で十分です。",
+        "Insta360 GO 3用のカード。GO 3は内蔵ストレージに記録し、カードスロットがありません。",
+        "有名ブランドの256GBより安い、無名ブランドの1TBや2TBのカード。"
+      ],
+      "featuredDevices": ["gopro-hero-13", "gopro-hero-12", "gopro-max-2", "gopro-hero-11-black", "dji-osmo-action-4", "dji-osmo-pocket-3", "insta360-x4", "insta360-x3", "insta360-ace-pro"],
+      "faq": [
+        {
+          "q": "GoPro用のmicroSDはセールで何GBを買うべきですか？",
+          "a": "<b>256GBです。</b>HERO13の最大ビットレートで約4.5時間撮れます。1GBあたり12〜20円なら、V30カードがセールで約3,000〜5,000円です。"
+        },
+        {
+          "q": "アクションカメラにV60のカードは必要ですか？",
+          "a": "<b>必要ありません。</b>GoPro、DJI、Insta360のカメラはUHS-Iスロットに記録するので、V30カードですべての撮影モードに対応できます。V60カードで速くなるのは、UHS-IIリーダーでの取り込みだけです。"
+        }
+      ]
+    },
+    {
+      "slug": "cameras",
+      "category": "cameras",
+      "tiers": ["sd-v30", "sd-v60", "sd-v90", "cfexpress-b", "cfexpress-a"],
+      "hubTitle": "カメラ",
+      "hubBlurb": "SD、UHS-II、CFexpress。買う前にカメラのスロットを確認しましょう。",
+      "title": "カメラ用SDカードのセール｜UHS-II・V90の1GB単価",
+      "metaDescription": "ミラーレスカメラ用SDカードのセール攻略。V30、V60、V90、CFexpressのお得な1GB単価と、自分のカメラに合うカードの選び方を解説します。",
+      "h1": "カメラ用SDカードのセールガイド",
+      "intro": [
+        "カメラは大きく2つに分かれます。Canon EOS R50、Fujifilm X100V、Nikon Z50 IIのようなUHS-I機はV30のSDカードで性能を出し切れます。ソニーα6700、Canon EOS R6 Mark II、Fujifilm X-T5のようなUHS-II機では、UHS-IIのV60かV90カードを使うと連写後の書き込みが速く終わります。",
+        "高価なカードをセールで買う前に、デバイスページでカメラのスロットの種類を確認してください。"
+      ],
+      "capacity": [
+        "<b>128GB：</b>2400万〜3300万画素クラスの静止画撮影向け。",
+        "<b>256GB：</b>4K動画や、4000万画素以上のRAW撮影向け。",
+        "<b>大容量1枚より2枚：</b>デュアルスロット機なら両方に同時記録すると、その場でバックアップになります。"
+      ],
+      "avoid": [
+        "UHS-IのカメラにV90カード。UHS-Iの上限は104MB/sなので、V30カードと速度は変わりません。",
+        "最高画質の動画モードにCFexpressが必要なカメラにSDカード。Canon EOS R5の8K RAWはCFexpress Type Bにしか記録できません。",
+        "ソニー機にCFexpress Type B。α7 IV、FX3、α1はType Aで、サイズが違います。",
+        "V30の値段で「V90」をうたう無名ブランドのカード。"
+      ],
+      "featuredDevices": ["sony-a6700", "sony-a7-iv", "sony-zv-e10", "canon-eos-r50", "canon-eos-r6-mark-ii", "canon-eos-r5", "fujifilm-x100vi", "fujifilm-xt5", "fujifilm-x-s20", "nikon-z50-ii", "nikon-z6-iii", "ricoh-gr-iv"],
+      "faq": [
+        {
+          "q": "128GBのV90 SDカードはセールでいくらなら買いですか？",
+          "a": "<b>SanDisk Extreme PRO UHS-IIやソニーTOUGH Gなら約11,500〜23,000円</b>（1GBあたり90〜180円）が目安です。Lexar Professional 1667xなどのV60カードはその半分ほどで、ほとんどのミラーレスの4K撮影に対応します。"
+        },
+        {
+          "q": "CFexpressカードはセールで買う価値がありますか？",
+          "a": "<b>CFexpressスロットがあり、それを必要とするモードを使う場合だけです。</b>Canon EOS R5の8K RAWがその例です。それ以外なら、UHS-IIのSDカードのほうが1GBあたり安く済みます。"
+        }
+      ]
+    }
+  ]
+}

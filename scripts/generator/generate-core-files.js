@@ -93,6 +93,9 @@ function generateSitemap(allDevices, allReaders, distPath, locale = "en", freshn
     }
   }
 
+  // Deals hub + category deal pages (built only for locales with a deals copy file)
+  Object.keys(freshness).filter((u) => u.startsWith(`${prefix}/deals/`)).sort().forEach(add);
+
   // Device + category pages
   const devicePaths = new Set(allDevices.map((device) => `${prefix}/categories/${getCategorySlug(device.category)}/${device.slug}/`));
   devicePaths.forEach(add);

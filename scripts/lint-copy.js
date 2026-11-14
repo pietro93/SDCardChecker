@@ -21,6 +21,7 @@ const ROOT = path.join(__dirname, '..');
 const JSON_SOURCES = [
   'data/categories',
   'data/sdcards.json',
+  'data/deals.json',
   'data/sdcard-enrichment.json',
   'data/device-enrichment.json',
   'data/calculator-content.json',
