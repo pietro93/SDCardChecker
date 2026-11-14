@@ -4,6 +4,7 @@ module.exports = {
     "./src/templates/**/*.html",
     "./src/templates/**/*.js",
     "./src/js/**/*.js",
+    "./scripts/generator/generate-deals-pages.js",
   ],
   safelist: [
     "md:min-w-[315px]",

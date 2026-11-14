@@ -9,6 +9,7 @@ const path = require("path");
 const fs = require("fs");
 const { readTemplate, processIncludes, writeFile, generateBreadcrumbSchema, truncateAtWord, getDeviceImageFallback, getCategorySlug, getCategoryLabel, getCategoryIconName, generateHreflangTags, t } = require("./helpers");
 const { generateHeader, generateFooter, generateAffiliateDisclosure, generateSidebar, generateGrowScript } = require("../../src/templates/components");
+const { dealsLinksHTML } = require("./generate-deals-pages");
 
 const srcPath = path.join(__dirname, "../../src");
 const locales = JSON.parse(fs.readFileSync(path.join(__dirname, "../../data/locales.json"), "utf8"));
@@ -251,6 +252,7 @@ function generateCategoryPage(category, devices, template, locale = "en", catego
     .replace(/{{HOME_LABEL}}/g, t("breadcrumbHome", locale))
     .replace(/{{SUBCATEGORY_LINKS}}/g, locale === "en" ? generateSubcategoryLinksHTML(category, devices) : "")
     .replace(/{{RELATED_CATEGORIES}}/g, generateRelatedCategoriesHTML(categorySlug, locale, categoryLocalesMap, dirPrefix))
+    .replace(/{{DEALS_LINK}}/g, dealsLinksHTML(categorySlug, locale))
     .replace(/{{DEVICE_CARDS_HTML}}/g, deviceCardsHTML)
     .replace(/{{BREADCRUMB_SCHEMA}}/g, breadcrumbSchema)
     .replace(/{{SIDEBAR}}/g, generateSidebar(locale))

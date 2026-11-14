@@ -1,0 +1,328 @@
+{
+  "_comment": "Copy for the English /deals/ pages (built by scripts/generator/generate-deals-pages.js). Card picks are not listed here: the generator derives them from the recommendedBrands of each category's devices, so they always match the device pages. Price-per-GB ranges in `tiers` are editorial guidance, not live prices: refresh them and `season` before each sale. Never add 'X% off' or sale-price claims.",
+  "season": "Black Friday 2026",
+  "priceGuideUpdated": "November 14, 2026",
+  "ui": {
+    "home": "Home",
+    "deals": "Deals",
+    "dealsHubName": "SD Card Deals",
+    "updated": "Updated {date}",
+    "priceTableHeading": "Good sale prices per GB",
+    "priceTableNote": "Guidance for spotting a good sale price, last set {date}. These are not live prices: the price on the Amazon product page is the one that counts.",
+    "colCardType": "Card type",
+    "colExamples": "Example cards",
+    "colRange": "Good sale price per GB",
+    "colNotes": "Notes",
+    "picksHeading": "Cards to buy",
+    "picksIntro": "Picked from the cards recommended most often on our {category} device pages.",
+    "tierLabels": {
+      "budget": "Budget pick",
+      "recommended": "Best for most",
+      "professional": "Pro pick"
+    },
+    "recommendedOn": "Recommended on {n} of {total} {category} device pages",
+    "checkPrice": "Check price on Amazon",
+    "cardDetails": "Card details",
+    "capacityHeading": "Which capacity to buy",
+    "capacityData": "Most recommended sizes across our {category} device pages: {list}.",
+    "capacityItem": "{size} ({n} devices)",
+    "listSeparator": ", ",
+    "avoidHeading": "What to avoid",
+    "fakeGuideLink": "How to check if an SD card is fake",
+    "devicesHeading": "Find the card for your device",
+    "seeAll": "See all {category}",
+    "otherDealsHeading": "More SD card deal guides",
+    "faqHeading": "Frequently asked questions",
+    "hubCategoriesHeading": "Deal guides by device",
+    "categoryCallout": "Before you buy on sale, check what a good price per GB looks like:"
+  },
+  "tiers": {
+    "microsd-value": {
+      "label": "microSD, budget A1/A2 (UHS-I)",
+      "exampleCards": ["samsung-evo-select-microsd", "sandisk-ultra-microsd", "amazon-basics-microsd"],
+      "range": "$0.06 to $0.10",
+      "note": "Fine for game libraries and basic 1080p cameras. Check for a V30 or U3 mark before using one in a 4K camera."
+    },
+    "microsd-v30": {
+      "label": "microSD, V30 A2 (UHS-I)",
+      "exampleCards": ["sandisk-extreme-microsd", "kingston-canvas-go-plus", "samsung-pro-plus-microsd"],
+      "range": "$0.08 to $0.13",
+      "note": "The default card for drones, action cameras and handhelds."
+    },
+    "microsd-express": {
+      "label": "microSD Express",
+      "exampleCards": ["samsung-p9-express-microsd", "sandisk-microsd-express-switch-2"],
+      "range": "$0.15 to $0.30",
+      "note": "Required for Switch 2 game storage. Runs at UHS-I speed in other devices."
+    },
+    "microsd-uhs2": {
+      "label": "microSD, UHS-II V60",
+      "exampleCards": ["sandisk-extreme-pro-microsd-v60", "lexar-professional-1000x-microsd"],
+      "range": "$0.20 to $0.40",
+      "note": "Only faster in a UHS-II slot or reader. In a UHS-I device it performs like a V30 card."
+    },
+    "sd-v30": {
+      "label": "SD, V30 (UHS-I)",
+      "exampleCards": ["sandisk-extreme-sd-uhs1", "sandisk-extreme-pro-sd-uhs1", "lexar-professional-633x-sd"],
+      "range": "$0.10 to $0.20",
+      "note": "Full speed in UHS-I cameras such as the Canon EOS R50 and Fujifilm X100V."
+    },
+    "sd-v60": {
+      "label": "SD, UHS-II V60",
+      "exampleCards": ["lexar-professional-1000x-sd", "lexar-professional-silver-sd"],
+      "range": "$0.25 to $0.50",
+      "note": "Clears burst buffers faster in UHS-II cameras and handles most 4K modes."
+    },
+    "sd-v90": {
+      "label": "SD, UHS-II V90",
+      "exampleCards": ["sandisk-extreme-pro-sd-uhs2", "sony-tough-g-v90"],
+      "range": "$0.60 to $1.20",
+      "note": "For cameras that list V90 for their top video modes, such as high-bitrate 4K All-I."
+    },
+    "cfexpress-b": {
+      "label": "CFexpress Type B",
+      "exampleCards": ["sandisk-extreme-pro-cfexpress", "prograde-digital-cfexpress-type-b-gold"],
+      "range": "$0.40 to $0.90",
+      "note": "Only for cameras with a Type B slot, such as the Canon EOS R5 and Nikon Z8."
+    },
+    "cfexpress-a": {
+      "label": "CFexpress Type A",
+      "exampleCards": ["sony-tough-cfexpress-type-a", "sandisk-extreme-pro-cfexpress-type-a"],
+      "range": "$1.00 to $2.00",
+      "note": "Only for Sony bodies with a Type A slot, such as the A7 IV, FX3 and A1. Type B cards do not fit."
+    }
+  },
+  "hub": {
+    "title": "SD Card Deals for Black Friday 2026: Price per GB | SD Card Checker",
+    "metaDescription": "What a good Black Friday price per GB looks like for microSD, microSD Express, SD and CFexpress cards, and which card to buy for your console, drone or camera.",
+    "h1": "SD card deals: what a good price per GB looks like",
+    "intro": [
+      "A sale price is a deal only when the price per GB beats what the card usually costs. Divide the price by the capacity in GB: a $40 512GB card costs $0.078 per GB.",
+      "Black Friday is November 27, 2026 and Cyber Monday is November 30. Amazon prices can change during the sale, so check the price per GB again at checkout."
+    ],
+    "tiers": ["microsd-value", "microsd-v30", "microsd-express", "microsd-uhs2", "sd-v30", "sd-v60", "sd-v90", "cfexpress-b", "cfexpress-a"],
+    "rulesHeading": "How to judge a memory card deal",
+    "rules": [
+      "<b>Compare at the same capacity.</b> Price per GB drops as capacity rises, then climbs again at the newest sizes: 1.5TB and 2TB cards usually cost more per GB than 1TB.",
+      "<b>Check the exact model.</b> SanDisk Ultra is rated U1 and SanDisk Extreme is rated V30. Listings look alike, so a cheap Ultra is not an Extreme deal.",
+      "<b>Ignore the headline read speed.</b> \"Up to 190 MB/s\" is a peak read figure. The speed class (U3, V30, V60, V90) is the minimum sustained write, which is what video recording needs.",
+      "<b>Don't pay for speed your slot can't use.</b> A UHS-II card runs at UHS-I speed in a UHS-I slot, and UHS-I tops out at 104 MB/s.",
+      "<b>Check the seller.</b> Buy cards shipped and sold by Amazon.com or by the brand's own Amazon store."
+    ],
+    "avoidHeading": "Fake cards are the main risk in a sale",
+    "avoid": [
+      "Fake cards report a capacity they don't have. Once the real capacity fills, they overwrite earlier files without a warning.",
+      "An unknown-brand 1TB or 2TB microSD priced below a name-brand 256GB card is a fake.",
+      "Test every new card with H2testw (Windows) or F3 (macOS and Linux) before you record anything you can't reshoot."
+    ],
+    "faq": [
+      {
+        "q": "Is Black Friday a good time to buy an SD card?",
+        "a": "<b>Yes, when the price per GB lands at or below the range for that card type.</b> A crossed-out list price on its own does not prove a deal, so compare price per GB at the same capacity."
+      },
+      {
+        "q": "How do I calculate SD card price per GB?",
+        "a": "<b>Divide the price by the capacity in GB.</b> $80 for a 1TB card is $0.08 per GB, since card labels count 1TB as 1,000GB."
+      },
+      {
+        "q": "Are cheap 1TB and 2TB microSD cards on Amazon fake?",
+        "a": "<b>Unknown-brand ones priced below a name-brand 256GB card are.</b> Buy SanDisk, Samsung, Lexar or Kingston cards shipped and sold by Amazon.com or the brand's store, and run H2testw or F3 on every new card."
+      },
+      {
+        "q": "Should I buy a bigger card on sale or a faster one?",
+        "a": "<b>Bigger, for consoles, handhelds, drones and action cameras.</b> Their slots are UHS-I, which caps speed at 104 MB/s. Cameras with UHS-II slots are the exception: buy the speed class the camera lists for its video modes first."
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "gaming-handhelds",
+      "category": "gaming-handhelds",
+      "deviceTypeExclude": "Express only",
+      "cardExclude": "express",
+      "tiers": ["microsd-value", "microsd-v30", "microsd-uhs2"],
+      "hubTitle": "Steam Deck, Switch and handhelds",
+      "hubBlurb": "A2 microSD cards for game libraries. Spend the sale money on capacity.",
+      "title": "Steam Deck and Switch SD Card Deals: Price per GB | SD Card Checker",
+      "metaDescription": "Black Friday microSD guide for Steam Deck, Switch, ROG Ally and Legion Go: a good price per GB for A2 cards, which size to buy, and how to avoid fake cards.",
+      "h1": "Gaming handheld microSD card deals",
+      "intro": [
+        "Steam Deck, Nintendo Switch, ROG Ally and Legion Go load games from microSD in small random reads, so an A2 UHS-I card from a known brand covers nearly every handheld. On sale, spend the money on capacity: 512GB or 1TB holds a large game library.",
+        "Buying for a Switch 2? It needs a microSD Express card, which has its own <a href=\"/deals/switch-2-microsd-express/\">Switch 2 deals guide</a>."
+      ],
+      "capacity": [
+        "<b>Steam Deck, ROG Ally and Legion Go:</b> 512GB or 1TB. Large PC games take 50GB to 150GB each.",
+        "<b>Nintendo Switch, Switch OLED and Switch Lite:</b> 256GB or 512GB. Most Switch games are under 20GB.",
+        "<b>Retro handhelds (Anbernic, Miyoo, R36S):</b> 64GB to 128GB holds cartridge-era ROM sets. Retroid and AYN devices that run disc-based games need 256GB or more, since each disc image takes 1GB to 8GB."
+      ],
+      "avoid": [
+        "UHS-II and V60 cards for a Steam Deck, Switch or original Legion Go. Those slots are UHS-I, so you pay for speed the device never uses.",
+        "Standard microSD cards for Switch 2 game storage. Switch 2 only accepts microSD Express for games.",
+        "Class 10 or U1 cards with no A1 or A2 rating. Game loading depends on random reads, which the A ratings cover.",
+        "Unknown-brand 1TB and 2TB cards priced below a name-brand 256GB card."
+      ],
+      "featuredDevices": ["steam-deck", "nintendo-switch-oled", "nintendo-switch", "nintendo-switch-lite", "asus-rog-ally-x", "asus-rog-ally", "rog-xbox-ally-x", "lenovo-legion-go-gen-2", "lenovo-legion-go", "msi-claw", "retroid-pocket-5", "anbernic-rg35xx-plus-h", "miyoo-mini-plus", "r36s"],
+      "faq": [
+        {
+          "q": "What is a good Black Friday price for a 1TB microSD card?",
+          "a": "<b>About $80 to $130 for a V30 A2 card</b> such as the SanDisk Extreme or Samsung PRO Plus, which is $0.08 to $0.13 per GB. Budget A2 cards such as the Samsung EVO Select should come in lower."
+        },
+        {
+          "q": "Do I need a UHS-II card for the ROG Ally or Legion Go 2?",
+          "a": "<b>No.</b> Both slots accept UHS-II and load games a little faster with it, but UHS-II microSD costs two to three times as much per GB. A 1TB A2 UHS-I card is the better buy for the same money."
+        },
+        {
+          "q": "Will a Switch microSD card work in a Steam Deck?",
+          "a": "<b>Yes.</b> Both use UHS-I microSD, so the same A2 card works in either. Format it in the device you move it to, since each console uses its own file layout."
+        }
+      ]
+    },
+    {
+      "slug": "switch-2-microsd-express",
+      "category": "gaming-handhelds",
+      "deviceTypeMatch": "Express",
+      "cardMatch": "express",
+      "tiers": ["microsd-express", "microsd-v30"],
+      "hubTitle": "Switch 2 and microSD Express",
+      "hubBlurb": "Switch 2 only takes microSD Express for games. What a good Express price looks like.",
+      "title": "Switch 2 microSD Express Card Deals: Price per GB | SD Card Checker",
+      "metaDescription": "Switch 2 only stores games on microSD Express cards. What a good Black Friday price per GB looks like for Express cards, which size to buy, and what to skip.",
+      "h1": "Switch 2 microSD Express card deals",
+      "intro": [
+        "Nintendo Switch 2 only stores games on microSD Express cards. A standard microSD card, even a UHS-II one, does not work for game storage, so a cheap UHS-I deal is the wrong card for this console.",
+        "Express cards cost about twice as much per GB as V30 A2 cards, so a sale is a good time to buy one. Look for the microSD Express logo on the card and in the listing photos."
+      ],
+      "capacity": [
+        "<b>256GB</b> doubles the Switch 2's 256GB of built-in storage.",
+        "<b>512GB</b> if you buy most games as digital downloads.",
+        "<b>1TB and up</b> costs more per GB at Express prices. Buy it only if you already fill 512GB."
+      ],
+      "avoid": [
+        "Cards labeled \"for Switch\" without the microSD Express logo. SanDisk's Zelda, Mario and Pokemon designs are UHS-I cards for the original Switch.",
+        "UHS-II microSD cards. They are fast, but Switch 2 does not accept them for games.",
+        "Express listings from unknown brands with no logo on the card. Express is new, so fake listings borrow the name."
+      ],
+      "featuredDevices": ["nintendo-switch-2", "msi-claw-8-ex-ai-plus", "nintendo-switch-oled", "nintendo-switch"],
+      "faq": [
+        {
+          "q": "What is a good price for a Switch 2 microSD Express card?",
+          "a": "<b>About $0.15 to $0.30 per GB on sale</b>, so roughly $40 to $75 for 256GB. Check the per-GB price at 512GB too: larger Express cards are not always cheaper per GB."
+        },
+        {
+          "q": "Can I use a regular microSD card in Switch 2?",
+          "a": "<b>Not for games.</b> Switch 2 stores games only on microSD Express cards. An old card can go in once to copy Switch screenshots and videos to the console."
+        },
+        {
+          "q": "Will a Switch 2 microSD Express card work in my original Switch?",
+          "a": "<b>Yes, at UHS-I speed.</b> Express cards are backward compatible with UHS-I slots, so one card can move between consoles."
+        }
+      ]
+    },
+    {
+      "slug": "drones",
+      "category": "drones",
+      "tiers": ["microsd-v30", "microsd-uhs2", "microsd-value"],
+      "hubTitle": "Drones",
+      "hubBlurb": "V30 microSD in 128GB or 256GB covers DJI Mini, Air and Avata.",
+      "title": "Drone SD Card Deals: microSD Price per GB for DJI | SD Card Checker",
+      "metaDescription": "Black Friday microSD guide for DJI Mini, Air, Mavic and Avata drones: V30 cards in 128GB or 256GB, a good price per GB, and which cards to skip.",
+      "h1": "Drone microSD card deals",
+      "intro": [
+        "Most consumer drones, including the DJI Mini, Air and Avata lines, record to a UHS-I microSD card and need a V30 or U3 rating for 4K. A V30 card from SanDisk, Lexar, Kingston or Samsung in 128GB or 256GB covers nearly all of them, so those are the two sizes to watch in a sale."
+      ],
+      "capacity": [
+        "<b>128GB</b> holds about 2.5 hours of 4K at 100 Mbps, more than three batteries of flying on a DJI Mini.",
+        "<b>256GB</b> for drones that record at 150 Mbps or more, such as the DJI Mini 4 Pro and Air 3S, or for a trip without a laptop to offload.",
+        "<b>512GB</b> rarely pays off. A second 128GB card costs less and splits the risk if one fails."
+      ],
+      "avoid": [
+        "Cards without a V30 or U3 rating. A U1 card can drop frames or stop recording in 4K.",
+        "Paying UHS-II prices for a UHS-I drone. The drone writes at UHS-I speed; UHS-II only speeds up offloading through a UHS-II reader.",
+        "A card for the DJI Neo. It has 22GB of internal storage and no card slot.",
+        "Unknown-brand high-capacity cards. A fake card overwrites earlier clips once its real capacity fills, and you won't know until you land."
+      ],
+      "featuredDevices": ["dji-mini-4-pro", "dji-mini-5-pro", "dji-mini-4k", "dji-mini-3", "dji-air-3s", "dji-air-3", "dji-mavic-4-pro", "dji-mavic-3", "dji-avata-2", "hoverair-x1-pro", "potensic-atom-2", "holy-stone-hs720"],
+      "faq": [
+        {
+          "q": "What is a good price for a 256GB microSD card for a DJI drone?",
+          "a": "<b>About $20 to $33 for a V30 card</b> such as the SanDisk Extreme or Kingston Canvas Go! Plus, which is $0.08 to $0.13 per GB."
+        },
+        {
+          "q": "Do DJI drones need a V60 microSD card?",
+          "a": "<b>Most don't.</b> DJI asks for UHS-I Speed Grade 3 (U3) or faster on the Mini and Air lines. A V60 card writes no faster in a UHS-I drone and only saves time when you offload through a UHS-II reader."
+        }
+      ]
+    },
+    {
+      "slug": "action-cameras",
+      "category": "action-cameras",
+      "tiers": ["microsd-v30", "microsd-uhs2", "microsd-value"],
+      "hubTitle": "GoPro and action cameras",
+      "hubBlurb": "V30 microSD for GoPro, DJI Osmo and Insta360. 256GB is the size to buy.",
+      "title": "GoPro and Action Camera SD Card Deals: Price per GB | SD Card Checker",
+      "metaDescription": "Black Friday microSD guide for GoPro, DJI Osmo Action, Osmo Pocket and Insta360: V30 cards, a good price per GB, which size to buy and what to avoid.",
+      "h1": "Action camera microSD card deals",
+      "intro": [
+        "GoPro, DJI Osmo Action, Osmo Pocket and Insta360 cameras record to UHS-I microSD and need a V30 card for their top 4K and 5K modes. 256GB is the size to buy on sale for most of them."
+      ],
+      "capacity": [
+        "<b>256GB</b> holds about 4.5 hours at the GoPro Hero 13's top 120 Mbps bitrate.",
+        "<b>512GB or 1TB</b> for 360 cameras such as the Insta360 X4 and X5, whose 8K files fill a card faster.",
+        "<b>128GB</b> is enough for short clips at 1080p or 4K30."
+      ],
+      "avoid": [
+        "Cards rated only U1 or Class 10. They can stop recording at high bitrates.",
+        "UHS-II cards. Action cameras use UHS-I slots, so pay UHS-I prices.",
+        "A card for the Insta360 GO 3. It records to internal storage and has no slot.",
+        "Unknown-brand 1TB and 2TB cards priced below a name-brand 256GB card."
+      ],
+      "featuredDevices": ["gopro-hero-13", "gopro-hero-12", "gopro-max-2", "gopro-mission-1-pro", "dji-osmo-action-5-pro", "dji-osmo-action-6", "dji-osmo-pocket-3", "dji-osmo-pocket-4", "dji-osmo-360-ii", "insta360-x5", "insta360-x4", "insta360-ace-pro-2"],
+      "faq": [
+        {
+          "q": "What size microSD card should I buy for a GoPro on sale?",
+          "a": "<b>256GB.</b> It holds about 4.5 hours at the Hero 13's top bitrate, and at $0.08 to $0.13 per GB a V30 card costs about $20 to $33 on sale."
+        },
+        {
+          "q": "Is a V60 card worth it for an action camera?",
+          "a": "<b>No.</b> GoPro, DJI and Insta360 cameras write to UHS-I slots, where a V30 card keeps up with every recording mode. A V60 card only speeds up offloading through a UHS-II reader."
+        }
+      ]
+    },
+    {
+      "slug": "cameras",
+      "category": "cameras",
+      "tiers": ["sd-v30", "sd-v60", "sd-v90", "cfexpress-b", "cfexpress-a"],
+      "hubTitle": "Cameras",
+      "hubBlurb": "SD, UHS-II and CFexpress. Match the card to your camera's slot before buying.",
+      "title": "Camera SD Card Deals: UHS-II and V90 Price per GB | SD Card Checker",
+      "metaDescription": "Black Friday SD card guide for mirrorless cameras: what a good price per GB looks like for V30, V60, V90 and CFexpress cards, and which one your camera uses.",
+      "h1": "Camera SD card deals",
+      "intro": [
+        "Cameras split into two groups. UHS-I bodies such as the Canon EOS R50, Fujifilm X100V and Nikon Z50 II run at full speed on a V30 SD card. UHS-II bodies such as the Sony A6700, Canon EOS R6 Mark II and Fujifilm X-T5 clear bursts faster with a UHS-II V60 or V90 card.",
+        "Check your camera's slot type on its device page before buying an expensive card on sale."
+      ],
+      "capacity": [
+        "<b>128GB</b> for stills on 24MP to 33MP cameras.",
+        "<b>256GB</b> for 4K video, or RAW files from 40MP and higher sensors.",
+        "<b>Two cards, not one big one,</b> in dual-slot bodies: record to both slots for an instant backup."
+      ],
+      "avoid": [
+        "V90 cards for a UHS-I camera. The UHS-I bus caps at 104 MB/s, so a V30 card performs the same.",
+        "SD cards when your camera's top video modes need CFexpress. The Canon EOS R5 records 8K RAW only to CFexpress Type B.",
+        "CFexpress Type B cards for Sony bodies. The A7 IV, FX3 and A1 take Type A, which is a different size.",
+        "Unknown-brand cards that claim V90 at V30 prices."
+      ],
+      "featuredDevices": ["sony-a6700", "sony-a7-iv", "sony-zv-e10-ii", "canon-eos-r50", "canon-eos-r6-mark-ii", "canon-eos-r5", "fujifilm-x100vi", "fujifilm-xt5", "fujifilm-x-s20", "nikon-z50-ii", "nikon-z6-iii", "ricoh-gr-iv"],
+      "faq": [
+        {
+          "q": "What is a good Black Friday price for a 128GB V90 SD card?",
+          "a": "<b>About $75 to $155</b> for a SanDisk Extreme PRO UHS-II or Sony TOUGH G, which is $0.60 to $1.20 per GB. V60 cards such as the Lexar Professional 1667x cost about half as much and handle 4K in most mirrorless cameras."
+        },
+        {
+          "q": "Is a CFexpress card worth buying on sale?",
+          "a": "<b>Only if your camera has a CFexpress slot</b> and you use the modes that need it, such as 8K RAW on the Canon EOS R5. For everything else, a UHS-II SD card costs less per GB."
+        }
+      ]
+    }
+  ]
+}
