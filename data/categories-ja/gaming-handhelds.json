@@ -172,28 +172,23 @@
     "sdCard": {
       "type": "microSD Expressのみ",
       "minSpeed": "microSD Express",
-      "minWriteSpeed": "30 MB/s",
+      "minWriteSpeed": "N/A",
       "recommendedCapacity": [
-        "512GB",
-        "1TB",
-        "2TB"
+        "256GB",
+        "512GB"
       ],
-      "maxCapacity": "2TB（microSDXC）/ 2TB以上（microSD Express SDUC）",
+      "maxCapacity": "2TB（microSD Express）",
       "testedMaxCapacity": "2TB"
     },
     "whySpecs": "任天堂はSwitch 2のソフト保存先にmicroSD Expressを必須としました。ExpressカードはPCIe接続で、読み込みは最大約800〜900MB/s、UHS-Iの約100MB/sを大きく上回ります。通常のmicroSD・microSDHC・microSDXCカードは、ソフトのデータ、ダウンロード、スクリーンショット、動画のいずれにも使えません。カードにmicroSD Expressのロゴがあるか確認しましょう。",
     "recommendedBrands": [
       {
-        "id": "samsung-evo-select-microsd",
-        "note": "標準microSDXC — Switch 2・旧型Switch両対応"
+        "id": "samsung-p9-express-microsd",
+        "note": "microSD Express、256GBまたは512GB、読み込み最大800MB/s"
       },
       {
-        "id": "sandisk-extreme-microsd",
-        "note": "UHS-I U3/A2 — 高速・信頼性が高く後方互換"
-      },
-      {
-        "id": "lexar-professional-1000x-microsd",
-        "note": "microSD Express — Switch 2の最大速度を引き出す"
+        "id": "sandisk-microsd-express-switch-2",
+        "note": "任天堂ライセンス品のmicroSD Express、256GB"
       }
     ],
     "faq": [
@@ -219,7 +214,7 @@
       "nintendo-switch-oled",
       "nintendo-switch-lite"
     ],
-    "notes": "Switch 2は標準的なUHS-I microSDカード（旧型Switch用）と完全に後方互換です。最大パフォーマンスを求めるならmicroSD Express（PCIe）が対応しており、最大8倍高速なロードが可能です。microSD ExpressカードはオリジナルのSwitchシリーズとは非互換です。"
+    "notes": "Switch 2のソフト保存に使えるのはmicroSD Expressカードだけです。通常のmicroSD（UHS-I/UHS-II）は、旧Switchの画面写真や動画を本体へ取り込む用途にしか使えません。microSD ExpressカードはUHS-I互換なので、初代Switchや有機ELモデルでもUHS-I相当の速度で使えます。"
   },
   {
     "id": "nintendo-3ds-xl",

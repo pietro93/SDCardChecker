@@ -762,6 +762,48 @@
       "pros": "真のUHS-II速度。8Kビデオやプロ用ドローンに最適。書き込みが非常に高速。",
       "cons": "GBあたりのコストが高い。カジュアル用途にはオーバースペック。",
       "tier": "professional"
+    },
+    {
+      "id": "samsung-p9-express-microsd",
+      "name": "Samsung P9 microSD Express",
+      "type": "microSD Express",
+      "specs": {
+        "uhs": "microSD Express (PCIe)",
+        "speedClass": "V30",
+        "appPerformance": "A2",
+        "readSpeed": "最大 800 MB/s",
+        "writeSpeed": "非公表",
+        "endurance": "標準"
+      },
+      "availableCapacities": [256, 512],
+      "priceSymbol": "$$",
+      "priceTier": "プレミアム",
+      "imageUrl": "/img/cards/micro-uhs2-generic.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=Samsung+P9+microSD+Express&tag=sdcc-22",
+      "pros": "Switch 2のソフト保存に使えるmicroSD Express。読み込みは最大800MB/s。",
+      "cons": "Expressスロットのない機器ではUHS-I相当の速度。GBあたりの価格はUHS-Iカードより高い。",
+      "tier": "recommended"
+    },
+    {
+      "id": "sandisk-microsd-express-switch-2",
+      "name": "SanDisk microSD Express for Nintendo Switch 2",
+      "type": "microSD Express",
+      "specs": {
+        "uhs": "microSD Express (PCIe)",
+        "speedClass": "非公表",
+        "appPerformance": "非公表",
+        "readSpeed": "最大 880 MB/s",
+        "writeSpeed": "非公表",
+        "endurance": "標準"
+      },
+      "availableCapacities": [256],
+      "priceSymbol": "$$",
+      "priceTier": "プレミアム",
+      "imageUrl": "/img/cards/micro-uhs2-generic.webp",
+      "amazonSearchUrl": "https://www.amazon.co.jp/s?k=SanDisk+microSD+Express+Nintendo+Switch+2&tag=sdcc-22",
+      "pros": "任天堂ライセンス取得のSwitch 2用microSD Expressカード。",
+      "cons": "容量は256GBのみ。Expressスロットのない機器ではUHS-I相当の速度。",
+      "tier": "recommended"
     }
   ]
 }
