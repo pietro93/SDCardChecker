@@ -7,6 +7,7 @@
 const path = require("path");
 const fs = require("fs");
 const { readTemplate, processIncludes, writeFile, generateFAQSchema, generateBreadcrumbSchema, generateHreflangTags, truncateAtWord, getDeviceImageFallback, getCardImageFallback, generateSpecsHTML, generateFAQHTML, generateRelatedDevices, jaMaxCapacityPhrase, loadSDCardData, loadSDCardEnrichment, mergeSDCardEnrichment, getCategorySlug, getCategoryLabel, getCategoryIconName, t } = require("./helpers");
+const { dealsLinksHTML } = require("./generate-deals-pages");
 const { generateFAQs, mergeFAQs } = require("./generateFAQs");
 const { generateAmazonBadgesSection } = require("./amazon-badges-generator");
 const { generatePromotedCardSection } = require("./promotion-generator");
@@ -774,6 +775,7 @@ function generateDevicePage(device, template, allDevices, sdcardsMap, deviceInde
         .replace(/{{COMPARE_WIDGET}}/g, compareWidgetHTML)
         .replace(/{{ALTERNATIVES_HTML}}/g, alternativesHTML)
         .replace(/{{AMAZON_BADGES_SECTION}}/g, amazonBadgesSection)
+        .replace(/{{DEALS_LINK}}/g, dealsLinksHTML(categorySlug, locale))
         .replace(/{{PROMOTED_CARDS_SECTION}}/g, promotedCardSection)
         .replace(/{{NINTENDO_BRANDED_CARDS_GRID}}/g, nintendoBrandedCardsGrid)
         .replace(/{{FAQ_HTML}}/g, faqHTML)

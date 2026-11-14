@@ -105,7 +105,7 @@ Owner tags: **(P)** Pietro, needs account access or a business decision. **(D)**
 **Why:** Black Friday is Friday November 27, 2026, Cyber Monday November 30. Pages need to be live and crawled by early November. Steam Deck, Switch 2, drones and action cams are gift-season products.
 
 - [x] **(D)** `/deals/` hub page plus 4 to 6 category deal pages (gaming handhelds, Switch 2 / microSD Express, drones, action cams, cameras). Content: what a good price per GB looks like for each card tier, which cards to buy at what capacity, what to avoid (fakes). Evergreen URL, refresh copy each sale. No fake "X% off" claims we can't verify live. *Done 2026-11-14 (branch `deals-pages`): hub + 5 pages from `data/deals.json` via `generate-deals-pages.js`; picks come from device `recommendedBrands`. The price-per-GB ranges are estimates: check them on Amazon and update `tiers` before Nov 27.*
-- [ ] **(D)** Link deal pages from the home page, relevant category pages and the top 20 device pages during the season. *Home and category pages done 2026-11-14 (EN and JA); device pages still open.*
+- [x] **(D)** Link deal pages from the home page, relevant category pages and the top 20 device pages during the season. *Done 2026-11-14 (EN and JA). Device pages: every device in a category with a deals page shows the callout under the recommendations table (`{{DEALS_LINK}}` in `device.html` / `device-ja.html`). To end the season, empty the `pages` list in `data/deals.json` or drop the placeholder.*
 - [ ] **(P)** Turn on Grow.me email capture (or equivalent) with a "deal alerts" sign-up on deal pages and top device pages.
 - [ ] **(P)** Send 2 to 3 deal emails between November 20 and December 2.
 - [ ] **(P/D)** Check whether there's an October Amazon Prime event this year and whether a light version of the deals pages can ship for it.
@@ -120,7 +120,7 @@ JP converts at 12% (17 items from 138 clicks, Oct 11 to Nov 9), but that's only 
 
 - [ ] **(D)** Switch the JA top cards from `amazonSearchUrl` to direct amazon.co.jp product links (F6, JA first). Today all 37 cards in `data/sdcards-ja.json` use search URLs and none has an ASIN or `amazonDirectUrl`. Start with the cards that appear most on top JA device pages. Check each ASIN on amazon.co.jp: JP listings often differ from US ones. Keep `sdcc-22` on every link.
 - [x] **(D)** Make JA versions of the deals pages (`/ja/deals/` plus the same category pages), linking to amazon.co.jp with `sdcc-22`. Amazon JP's Black Friday usually runs in late November, so JA ships alongside EN, not after. Copy covers price per GB for each tier on amazon.co.jp and how to spot fakes. No sale prices we can't check live. *Done 2026-11-14: `/ja/deals/` + 5 pages from `data/deals-ja.json`, hreflang-paired with EN. Yen ranges are estimates to check before the sale.*
-- [ ] **(D)** Link `/ja/deals/` from the JA home page and the top JA device pages during the sale. *JA home and category pages done 2026-11-14; device pages still open.*
+- [x] **(D)** Link `/ja/deals/` from the JA home page and the top JA device pages during the sale. *Done 2026-11-14: JA home, category and device pages.*
 
 **Done when:** The top JA cards link straight to product pages, and `/ja/deals/` is live and submitted in GSC before Amazon JP's Black Friday starts.
 
