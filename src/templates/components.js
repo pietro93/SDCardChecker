@@ -468,7 +468,7 @@ ${moreCategoryItems}
     const boardPromoBlock = generateBoardPromo(locale, { follow: followBoard });
 
      return `<!-- Right Sidebar Navigation -->
-<aside style="width: 100%; max-width: 380px; flex-shrink: 0; margin-top: 3rem; position: sticky; top: 80px; background: white; border-radius: 6px; border: 1px solid #e5e5e5; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<aside id="secondary" class="widget-area sidebar sidebar-primary" style="width: 100%; max-width: 380px; flex-shrink: 0; margin-top: 3rem; position: sticky; top: 80px; background: white; border-radius: 6px; border: 1px solid #e5e5e5; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
    <!-- Search Bar at Top -->
    <div x-data="deviceSearch()" x-init="init()" @click.outside="open = false" class="relative mb-6">
     <div class="relative">
