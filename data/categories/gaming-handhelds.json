@@ -1157,7 +1157,8 @@
       "retroid-pocket-5",
       "retroid-pocket-mini",
       "steam-deck",
-      "ayn-odin-3-odin-2-portal"
+      "ayn-odin-3-odin-2-portal",
+      "retroid-pocket-nova"
     ],
     "notes": "<b>Newest Retroid release (January 2026)—the current SEO king for Android-based emulation.</b> First handheld to reliably handle Switch/Windows emulation at high settings. A2 + U3 + V30 combination strongly recommended for optimal performance."
   },
@@ -1443,7 +1444,8 @@
     "relatedDevices": [
       "retroid-pocket-5",
       "retroid-pocket-6",
-      "miyoo-mini-plus"
+      "miyoo-mini-plus",
+      "retroid-pocket-nova"
     ],
     "notes": "Prized for its authentic 4:3 AMOLED display. High SEO value due to dedicated retro gaming community. A2 rating recommended for optimal performance."
   },
@@ -1686,7 +1688,8 @@
     "relatedDevices": [
       "miyoo-mini-plus",
       "anbernic-rg35xx-plus",
-      "r36s"
+      "r36s",
+      "trimui-brick-pro"
     ],
     "notes": "Also marketed as 'Brick Hammer.' Budget handheld where the microSD card runs the OS itself — slow or fake-capacity cards are a frequent cause of boot failures and firmware flash crashes.",
     "imageUrl": "/img/devices/gaming-consoles/trimui-brick.webp"
@@ -2216,5 +2219,181 @@
     ],
     "notes": "Ships October 15, 2026 at USD 1,299.99 (USD 2,499.99 anniversary bundle). Same Z2 Extreme, 24GB LPDDR5X, 1TB PCIe 4.0 SSD, 80Wh battery as the Ally X. No source explicitly lists the X20's card reader; the UHS-II/2TB claim rests on ASUS's 'internal hardware identical' statement (HotHardware, Tom's Guide). Re-verify when ASUS posts the full spec sheet.",
     "imageUrl": "/img/devices/gaming-consoles/rog-xbox-ally-x20.webp"
+  },
+  {
+    "id": "trimui-brick-pro",
+    "name": "TrimUI Brick Pro",
+    "category": "Gaming Handhelds",
+    "slug": "trimui-brick-pro",
+    "customTitle": "Best SD Card for TrimUI Brick Pro: A1 Speed, Up to 1TB",
+    "metaDescription": "The TrimUI Brick Pro takes microSD cards up to 1TB. Get a branded A1 or A2 card for NextUI or Spruce, and skip the bundled card. Best picks for 128GB and 256GB.",
+    "searchTerms": [
+      "trimui brick pro sd card",
+      "best sd card for trimui brick pro",
+      "trimui brick pro microsd size",
+      "trimui brick pro nextui sd card",
+      "trimui brick pro vs brick sd card"
+    ],
+    "sdCard": {
+      "type": "microSD (FAT32 recommended)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1 (A2 recommended)",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "The Brick Pro uses the same Allwinner A133P chip and 1GB of RAM as the original Brick, with a larger 3.95-inch 1024x768 screen and a 5,000mAh battery. The 8GB of internal storage holds the stock TrimUI OS. Your games, and custom firmware such as NextUI or Spruce, go on the microSD card. That means the card's small random reads set how fast menus open and games load, so an A1 or A2 card matters more than a big sequential speed. A dead or fake card is the most common reason a custom firmware install fails to boot.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd",
+        "note": "Reliable A1 card for games and custom firmware"
+      },
+      {
+        "id": "samsung-evo-select-microsd",
+        "note": "Good A2 alternative, often sold in 2-packs for a spare firmware card"
+      },
+      {
+        "id": "kingston-canvas-go-plus",
+        "note": "Fast A2 option if you also copy large PS1 libraries"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Should I buy the TrimUI Brick Pro with the bundled SD card?",
+        "a": "<b>No, buy the console alone and add a branded card.</b> TrimUI sells the Brick Pro with or without a card, and reviewers advise skipping the bundled one. A 128GB SanDisk or Samsung card costs about the same and is far less likely to fail."
+      },
+      {
+        "q": "Can I move my SD card from the original TrimUI Brick to the Brick Pro?",
+        "a": "<b>Your games and saves, yes.</b> Both use the same A133P chip, so ROMs and save files carry over. Custom firmware needs a build made for the Brick Pro, so reinstall that rather than copying the old system folders."
+      }
+    ],
+    "relatedDevices": [
+      "trimui-brick",
+      "trimui-smart-pro",
+      "miyoo-flip",
+      "anbernic-rg35xx-plus"
+    ],
+    "notes": "Released globally July 2026 ($89.99-99.99 base; 64/128/256GB card bundles). Sources: Notebookcheck (1TB microSD, 8GB eMMC, 5,000mAh) and Retro Handhelds review Aug 2026 (NextUI solid, Spruce stable build, muOS/Knulli in development; reviewer advised against the bundled card). CrossMix-OS support not confirmed, so not named. FAT32 follows TrimUI/NextUI convention, same as the trimui-brick page.",
+    "imageUrl": "/img/devices/gaming-consoles/trimui-brick-pro.webp"
+  },
+  {
+    "id": "trimui-smart-pro",
+    "name": "TrimUI Smart Pro / Smart Pro S",
+    "category": "Gaming Handhelds",
+    "slug": "trimui-smart-pro",
+    "customTitle": "Best SD Card for TrimUI Smart Pro: A1 Speed, Up to 1TB",
+    "metaDescription": "The TrimUI Smart Pro and Smart Pro S use the same microSD setup: games on the card, OS on 8GB internal. Best A1/A2 cards, FAT32 for CrossMix-OS, up to 1TB.",
+    "searchTerms": [
+      "trimui smart pro sd card",
+      "best sd card for trimui smart pro",
+      "trimui smart pro s sd card",
+      "trimui smart pro crossmix sd card",
+      "trimui smart pro sd card format"
+    ],
+    "sdCard": {
+      "type": "microSD (FAT32 for CrossMix-OS)",
+      "minSpeed": "Class 10 / U1",
+      "minWriteSpeed": "10 MB/s",
+      "minAppPerformance": "A1 (A2 recommended)",
+      "recommendedCapacity": [
+        "128GB",
+        "256GB"
+      ],
+      "maxCapacity": "1TB"
+    },
+    "whySpecs": "Both models keep the stock TrimUI OS on 8GB of internal eMMC and read games from one microSD slot. The original Smart Pro uses an Allwinner A133P. The Smart Pro S, released in late 2025, moves to a faster Allwinner A523 but keeps the same 4.96-inch 1280x720 screen and storage layout, so the card advice is the same. CrossMix-OS, the most popular custom firmware for the Smart Pro, installs onto the card and its guide calls for FAT32. Card quality matters more than speed here: the console mostly makes small reads, and an A1 or A2 branded card handles those well. Stock no-name cards are the usual reason saves vanish or the firmware stops booting.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-ultra-microsd",
+        "note": "Dependable A1 card for CrossMix-OS and ROMs"
+      },
+      {
+        "id": "samsung-evo-select-microsd",
+        "note": "A2 card that formats cleanly to FAT32"
+      },
+      {
+        "id": "kingston-canvas-go-plus",
+        "note": "Faster A2 pick for big PS1 and PSP libraries"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the SD card advice different for the TrimUI Smart Pro S?",
+        "a": "<b>No.</b> The Smart Pro S has a faster chip but the same layout: 8GB internal for the OS and one microSD slot for games, with cards up to 1TB. A 128GB or 256GB A1 or A2 card suits both models."
+      },
+      {
+        "q": "Why won't CrossMix-OS boot from my TrimUI Smart Pro SD card?",
+        "a": "<b>Usually the format or the card.</b> Format the card as FAT32 (cards over 32GB need a third-party formatter on Windows) and extract the full CrossMix zip to the root. If it still fails, test the card for fake capacity or switch to a SanDisk or Samsung card."
+      }
+    ],
+    "relatedDevices": [
+      "trimui-brick-pro",
+      "trimui-brick",
+      "retroid-pocket-mini",
+      "miyoo-flip"
+    ],
+    "notes": "One page for Smart Pro (2024, A133P, 1GB) and Smart Pro S (TrimUI blog Nov 13 2025: A523, 1GB LPDDR4, 8GB eMMC, TF up to 1TB, 4.96in 720x1280, 5000mAh). Same card slot/layout, so combined per ADD_A_DEVICE 3b. 1TB is confirmed for the S; the original shares the Brick Pro chip (1TB listed). CrossMix FAT32 from its install guides; CrossMix on Smart Pro S not confirmed, so the CrossMix FAQ names the Smart Pro only.",
+    "imageUrl": "/img/devices/gaming-consoles/trimui-smart-pro.webp"
+  },
+  {
+    "id": "retroid-pocket-nova",
+    "name": "Retroid Pocket Nova",
+    "category": "Gaming Handhelds",
+    "slug": "retroid-pocket-nova",
+    "customTitle": "Best SD Card for Retroid Pocket Nova: A2 Speed, 256GB+",
+    "metaDescription": "Every Retroid Pocket Nova has only 128GB built in, so a microSD card holds your PS2 and GameCube library. Get an A2/V30 card, 256GB or 512GB. Best picks.",
+    "searchTerms": [
+      "retroid pocket nova sd card",
+      "best microsd for retroid pocket nova",
+      "retroid pocket nova storage",
+      "retroid pocket nova ps2 storage",
+      "retroid pocket nova 128gb enough"
+    ],
+    "sdCard": {
+      "type": "microSDXC UHS-I",
+      "minSpeed": "U3 / V30",
+      "minWriteSpeed": "30 MB/s",
+      "minAppPerformance": "A2 (recommended)",
+      "recommendedCapacity": [
+        "256GB",
+        "512GB"
+      ],
+      "maxCapacity": "2TB (theoretical)"
+    },
+    "whySpecs": "The Nova is Retroid's 4:3 handheld: a 4.5-inch 1280x960 AMOLED screen at 120Hz on a Snapdragon 8 Gen 2 class chip (QCS8550). Both the 8GB and 12GB models come with <b>128GB of internal storage</b>, and Android plus emulator apps take a chunk of that. The Nova runs GameCube and PS2 well, and those games are 1GB to 4GB each, so the microSD card ends up holding your library. An A2 card speeds up the random reads emulators make when loading, and V30 keeps copy speeds steady when you transfer hundreds of gigabytes.",
+    "recommendedBrands": [
+      {
+        "id": "samsung-pro-plus-microsd",
+        "note": "Fast A2/V30 card for large PS2 and GameCube libraries"
+      },
+      {
+        "id": "sandisk-extreme-microsd",
+        "note": "A2/V30 with quick load times in Android emulators"
+      },
+      {
+        "id": "kingston-canvas-go-plus",
+        "note": "Cheaper A2/V30 option at 512GB"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much SD card storage do I need for the Retroid Pocket Nova?",
+        "a": "<b>256GB covers most libraries, 512GB if you collect PS2 games.</b> Retro systems up to PS1 fit easily, but PS2 and GameCube games are 1GB to 4GB each. Switch emulation is limited on the Nova, so you rarely need 1TB."
+      },
+      {
+        "q": "Does the 12GB Retroid Pocket Nova have more storage?",
+        "a": "<b>No.</b> The 12GB model adds RAM, not storage. Both versions have 128GB built in, so plan on a microSD card either way."
+      }
+    ],
+    "relatedDevices": [
+      "retroid-pocket-6",
+      "retroid-pocket-mini",
+      "retroid-pocket-5",
+      "ayn-thor"
+    ],
+    "notes": "Pre-orders June 26 2026, shipping from late July 2026; $229 (8GB) / $269-274 (12GB), both 128GB UFS 3.1. Sources: Held Games review (256GB \"sweet spot\", emulation table: GC very good, PS2 good, Switch lighter titles only), Retro Dodo review. microSD UHS class and max not published; maxCapacity mirrors retroid-pocket-6 convention."
   }
 ]

@@ -728,7 +728,8 @@
       }
     ],
     "relatedDevices": [
-      "insta360-ace-pro-2"
+      "insta360-ace-pro-2",
+      "insta360-x6"
     ],
     "notes": "Latest flagship Insta360 360-degree camera. 8K dual-lens recording pushes sustained write speeds to the limit — 'Card Too Slow' errors are the #1 support issue, always trace back to a card that only claims V30 speeds without actually sustaining them.",
     "imageUrl": "/img/devices/action-cameras/insta360-x5.webp",
@@ -1044,7 +1045,8 @@
       "gopro-max-2",
       "insta360-x5",
       "dji-osmo-action-6",
-      "dji-osmo-pocket-4"
+      "dji-osmo-pocket-4",
+      "insta360-x6"
     ],
     "notes": "Announced September 2026 at IFA. On sale in Europe (GBP 509 / EUR 589) and Asia; no US launch as of October 2026, so US search traffic is mostly curiosity. DJI official: microSD up to 1TB, exFAT; recommended list is Kingston Canvas Go! Plus (U3 A2 V30) and Lexar Silver Plus. 220 Mbps max regular bitrate, 600 Mbps only for 16K timelapse. Two 1/1.1-inch sensors. Original Osmo 360 is not in the dataset either.",
     "imageUrl": "/img/devices/action-cameras/dji-osmo-360-ii.webp"
@@ -1162,5 +1164,62 @@
     ],
     "notes": "Released 2026 as the dual-lens, higher-end sibling of the Pocket 4. DJI official: 103GB built in, microSD up to 1TB, recommended list Lexar Silver Plus and Kingston Canvas Go! Plus (U3 A2 V30). Max video bitrate 180 Mbps. Lexar's blog suggests V60 for 4K/240 but that is a vendor suggestion, not DJI's requirement.",
     "imageUrl": "/img/devices/action-cameras/dji-osmo-pocket-4p.webp"
+  },
+  {
+    "id": "insta360-x6",
+    "name": "Insta360 X6",
+    "category": "Action Cameras",
+    "slug": "insta360-x6",
+    "customTitle": "Best SD Card for Insta360 X6: V30 microSD, Up to 1TB",
+    "metaDescription": "The Insta360 X6 needs a V30 UHS-I microSD card, exFAT, up to 1TB. It records to 64GB built-in storage until you switch. Best cards and which to avoid.",
+    "searchTerms": [
+      "insta360 x6 sd card",
+      "best microsd for insta360 x6",
+      "insta360 x6 built-in storage vs sd card",
+      "insta360 x6 max sd card size",
+      "insta360 x6 uhs-ii card"
+    ],
+    "sdCard": {
+      "type": "microSDXC (UHS-I)",
+      "minSpeed": "V30 / U3",
+      "minWriteSpeed": "30 MB/s",
+      "recommendedCapacity": [
+        "512GB",
+        "1TB"
+      ],
+      "maxCapacity": "1TB (exFAT)"
+    },
+    "whySpecs": "The X6 shoots 8K 360 video from two 1/1.1-inch sensors, at up to 50fps per launch reviews. It also has <b>64GB of built-in storage</b>, about 47GB of it usable, and it records there by default. Insert a card and the camera asks whether to switch. Tap Confirm or your footage keeps going to internal memory. Insta360 requires a <b>UHS-I card rated V30 or faster</b>, formatted exFAT, up to 1TB. It says not to use UHS-II or UHS-III cards, because compatibility problems can stop a recording. 47GB is under an hour of 8K, so a 512GB or 1TB card is what makes a full day of shooting possible.",
+    "recommendedBrands": [
+      {
+        "id": "sandisk-extreme-microsd-action-cam",
+        "note": "SanDisk Extreme V30 A2 is on Insta360's tested card list for the X series"
+      },
+      {
+        "id": "sandisk-extreme-microsd",
+        "note": "Same Extreme line Insta360 tested, including the 1TB size"
+      },
+      {
+        "id": "samsung-pro-plus-microsd",
+        "note": "V30 UHS-I alternative with strong sustained writes"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the Insta360 X6 need an SD card if it has built-in storage?",
+        "a": "<b>For anything past a short outing, yes.</b> The 64GB built-in storage leaves about 47GB free, which fills in under an hour of 8K. A card also lets you swap media and keep shooting. After inserting one, confirm the storage switch on the camera, or it keeps recording internally."
+      },
+      {
+        "q": "Can I use a UHS-II or V60 card in the Insta360 X6?",
+        "a": "<b>Insta360 says no.</b> Its manual warns that UHS-II and UHS-III cards can stop recording because of compatibility issues, and it does not recommend V60 or V90 cards. A V30 UHS-I card is fast enough for every X6 mode."
+      }
+    ],
+    "relatedDevices": [
+      "insta360-x5",
+      "insta360-x4",
+      "dji-osmo-360-ii",
+      "gopro-max-2"
+    ],
+    "notes": "Launched Aug 12, 2026 (~$669-699). Sources: Insta360 online manual (file storage + X series card FAQ: UHS-I V30+, exFAT, 1TB, no UHS-II/III, V60/V90 not recommended; tested list is all SanDisk Extreme/Extreme Pro V30). 8K50 comes from reviews (Velo, Camera Jabber); the official spec page was not readable, so whySpecs hedges with \"per launch reviews\". Key angle vs X5: built-in storage is the default target, card must be confirmed."
   }
 ]
