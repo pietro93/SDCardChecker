@@ -185,6 +185,14 @@ entries for examples).
     white, then stage locally.
   - **GoPro** MISSION 1 Pro and **Canon** R6 Mark III were on Grover and went
     through the normal `fetch-device-image.js` path.
+  - **Insta360** (`insta360ksa.com`) and **Retroid** (`goretroid.com`) are in
+    `BRAND_REGISTRY` (added 2026-11-24). Insta360KSA lists cameras as
+    "Standard Bundle", which the "bundle" accessory token rejects, so the
+    matcher lands on accessories or FlexiCare plans: take the bundle's first
+    image (white studio shot) and use `stage-local-image.js`. Retroid galleries
+    are styled scenes with text, no white studio shot, so Retroid pages stay on
+    the placeholder. Shopify rate-limits `/products.json` per IP (429,
+    `local_rate_limited`) after a few calls; wait it out.
 - `compositeHero()` throws "Image to composite must have same dimensions or
   smaller" when `scale` is high enough that the glow (1.6x device height)
   exceeds the 800px canvas; for a tall device like the Pocket 4P, 0.62 is the

@@ -48,6 +48,8 @@ function salientTokens(name) {
 const ACCESSORY_TOKENS = new Set([
   "lens", "kit", "case", "strap", "tripod", "cap", "battery", "charger",
   "mount", "bundle", "cable", "adapter", "grip", "filter", "sticker",
+  "cover", "pouch", "bag", "sleeve", "protector", "skin", "shell", "housing",
+  "flexicare", "warranty", "insurance", "care+",
 ]);
 
 function isModelToken(t) {
@@ -347,6 +349,8 @@ const BRAND_REGISTRY = [
   // brand: matched case-insensitively against the start of the device name.
   { brand: "anbernic", source: shopifySource, config: { domain: "https://anbernic.com", productTypes: ["游戏机"] } },
   { brand: "trimui", source: shopifySource, config: { domain: "https://trimui.net" } },
+  { brand: "retroid", source: shopifySource, config: { domain: "https://www.goretroid.com" } },
+  { brand: "insta360", source: shopifySource, config: { domain: "https://insta360ksa.com" } },
   { brand: "analogue", source: shopifySource, config: { domain: "https://store.analogue.co", productTypes: ["Console"] } },
   { brand: "autel", source: shopifySource, config: { domain: "https://shop.autelrobotics.com", productTypes: ["drone"] } },
   { brand: "potensic", source: shopifySource, config: { domain: "https://store.potensic.com", productTypes: ["Drones"] } },
